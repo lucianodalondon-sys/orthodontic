@@ -68,12 +68,18 @@ def main():
         html = bloco + "\n" + html
         onde = "injetou no topo do arquivo"
 
-    saida = RAIZ/args.saida
+    saida = pathlib.Path(args.saida)
+    if not saida.is_absolute():
+        saida = RAIZ/saida
     saida.parent.mkdir(parents=True, exist_ok=True)
     saida.write_text(html, encoding="utf-8")
 
     corte = payload.get("manifest", {}).get("corte", "?")
-    print(f"{saida.relative_to(RAIZ)} · corte {corte} · {onde}")
+    try:
+        mostra = saida.relative_to(RAIZ)
+    except ValueError:
+        mostra = saida
+    print(f"{mostra} · corte {corte} · {onde}")
     print(f"payload: {len(bruto)/1024:.0f} KB · telas: {', '.join(k for k in payload if k != 'pracas')}"
           + (f" · praças: {', '.join(payload.get('pracas', {}))}" if payload.get("pracas") else ""))
 
