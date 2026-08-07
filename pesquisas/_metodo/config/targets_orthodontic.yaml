@@ -1,0 +1,85 @@
+# ============================================================================
+# ALVOS — Cliente ORTHODONTIC / Zona Norte de Londrina
+# Objetivo: entender o PACIENTE de ortodontia da ZN — por que procura aparelho,
+# linguagem, autoestima, medos, o que premia/detona em clínica popular.
+# O território ZN já está mapeado no estudo Fish King (data/) — reaproveitado.
+# Rodar: FK_CONFIG=config/targets_orthodontic.yaml FK_RAW=data_ortho/raw \
+#        FK_CORPUS=data_ortho/corpus python scripts/collect_*.py
+# ============================================================================
+
+targets:
+
+  # ==== PRÓPRIO — unidades OrthoDontic de Londrina ===========================
+  - name: ortho_souzanaves_google
+    layer: proprio
+    platform: google
+    query: "OrthoDontic Londrina Souza Naves"
+    enabled: true
+  - name: ortho_centro_google
+    layer: proprio
+    platform: google
+    query: "OrthoDontic Londrina Rua Sergipe Centro"
+    enabled: true
+  - name: ortho_souzanaves_ig
+    layer: proprio
+    platform: instagram
+    handle: "orthodontic.londrinasouzanaves"
+    max_posts: 15
+    comments_per_post: 30
+    enabled: true
+  - name: ortho_centro_ig
+    layer: proprio
+    platform: instagram
+    handle: "orthodontic.londrinacentro"
+    max_posts: 12
+    comments_per_post: 30
+    enabled: true
+
+  # ==== CONCORRENTE — odontologia popular na ZN / Londrina ===================
+  # (Oral Sin removida — especialista em IMPLANTE, não concorrente de ortodontia)
+  - name: odontoclinic_londrina_google
+    layer: concorrente
+    platform: google
+    query: "Odontoclinic Londrina"
+    enabled: true
+  # (Oralmed removida — vende PLANOS odontológicos, categoria errada)
+  - name: oliverodonto_google
+    layer: concorrente
+    platform: google
+    query: "Oliver Odonto Prime Londrina aparelho ortodôntico"
+    enabled: true
+  # (query "Ortodontic Center" devolvia a própria OrthoDontic — removida, duplicata)
+  - name: clinics_saul_google
+    layer: concorrente
+    platform: google
+    query: "Clinics Odontologia Premium Saul Elkind Londrina"
+    enabled: true
+  - name: dentel_saul_google
+    layer: concorrente
+    platform: google
+    query: "Clínica Dentel Saul Elkind Londrina"
+    enabled: true
+  - name: sorridents_londrina_google
+    layer: concorrente
+    platform: google
+    query: "Sorridents Londrina"
+    enabled: true
+  - name: odontocompany_londrina_google
+    layer: concorrente
+    platform: google
+    query: "OdontoCompany Londrina"
+    enabled: true
+  - name: odontoclinic_ig
+    layer: concorrente
+    platform: instagram
+    handle: "odontocliniclondrina"   # A LÍDER (4,9) — benchmark de comunicação
+    max_posts: 18
+    comments_per_post: 30
+    enabled: true
+  - name: clinics_saul_ig
+    layer: concorrente
+    platform: instagram
+    handle: "clinics.saulelkind"
+    max_posts: 10
+    comments_per_post: 30
+    enabled: true

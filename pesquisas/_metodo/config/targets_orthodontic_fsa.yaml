@@ -1,0 +1,96 @@
+# ============================================================================
+# ALVOS — Público de FEIRA DE SANTANA / clínica OrthoDontic Feira (Bahia)
+# "Princesa do Sertão" — praça-teste do método fora da região. Público popular
+# nordestino. Reviews + voz da cidade por segmento.
+# Rodar: FK_CONFIG=config/targets_orthodontic_fsa.yaml FK_RAW=data_ortho_fsa/raw \
+#        FK_CORPUS=data_ortho_fsa/corpus python scripts/collect_*.py
+# ============================================================================
+
+targets:
+
+  # ==== PRÓPRIO + CONCORRENTES (reviews Google — baratos) ====================
+  - name: ortho_fsa_google
+    layer: proprio
+    platform: google
+    query: "OrthoDontic Feira de Santana"
+    enabled: true
+  - name: odontocompany_fsa_google
+    layer: concorrente
+    platform: google
+    query: "OdontoCompany Feira de Santana"
+    enabled: true
+  - name: sorridents_fsa_google
+    layer: concorrente
+    platform: google
+    query: "Sorridents Feira de Santana"
+    enabled: true
+  - name: odontoclinic_fsa_google
+    layer: concorrente
+    platform: google
+    query: "Odontoclinic Feira de Santana"
+    enabled: true
+  - name: uefs_odonto_google
+    layer: concorrente
+    platform: google
+    query: "UEFS clínica odontológica Feira de Santana"
+    enabled: true
+
+  # ==== TERRITÓRIO / VOZ DO FEIRENSE (IG, por segmento) ======================
+  - name: acordacidade_ig        # A VOZ DA CIDADE — portal/notícia (294k)
+    layer: influencer
+    platform: instagram
+    handle: "acordacidade"
+    max_posts: 12
+    comments_per_post: 30
+    enabled: true
+  - name: guiasupermercados_ig   # OFERTA/MÃE POPULAR — "1º influencer de supermercado da BA" (48k)
+    layer: influencer
+    platform: instagram
+    handle: "oguiadesupermercadosfsa"
+    max_posts: 10
+    comments_per_post: 30
+    enabled: true
+  - name: feiraguay_ig           # CONSUMO POPULAR — "maior shopping popular de Feira" (42k)
+    layer: influencer
+    platform: instagram
+    handle: "feiraguayfs.oficial"
+    max_posts: 10
+    comments_per_post: 30
+    enabled: true
+  - name: prefeiturafeira_ig     # CIDADÃO — onde o feirense reclama/celebra
+    layer: influencer
+    platform: instagram
+    handle: "prefeituradefeira"
+    max_posts: 10
+    comments_per_post: 30
+    enabled: true
+
+  # ==== ENRIQUECIMENTO (chave 4): clínica + gigante local + humor ============
+  - name: ortho_feira_ig         # A voz da PRÓPRIA clínica
+    layer: proprio
+    platform: instagram
+    handle: "orthodontic.feira"
+    max_posts: 15
+    comments_per_post: 30
+    enabled: true
+  - name: moisessuzart_ig        # O GIGANTE (Odontoclinic personalizada no doutor)
+    layer: concorrente
+    platform: instagram
+    handle: "clinicamoises.suzart"
+    max_posts: 15
+    comments_per_post: 30
+    enabled: true
+  - name: humorfeirense_ig       # HUMOR/jovem — o registro que viraliza
+    layer: influencer
+    platform: instagram
+    handle: "humorfeirense"
+    max_posts: 10
+    comments_per_post: 30
+    enabled: true
+  - name: feirensesincero_ig
+    layer: influencer
+    platform: instagram
+    handle: "feirensesincero"
+    max_posts: 10
+    comments_per_post: 30
+    enabled: true

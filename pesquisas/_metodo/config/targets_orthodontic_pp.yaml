@@ -1,0 +1,138 @@
+# ============================================================================
+# ALVOS — Cliente ORTHODONTIC / PRESIDENTE PRUDENTE (SP)
+# A 1ª unidade franqueada da rede (20 anos) — a praça-símbolo do franchising.
+# Mesmo método de Londrina, para comparar praças e provar a tese
+# "inteligência por região". Recorte: ORTODONTIA (implante/planos fora).
+# Rodar: FK_CONFIG=config/targets_orthodontic_pp.yaml FK_RAW=data_ortho_pp/raw \
+#        FK_CORPUS=data_ortho_pp/corpus python scripts/collect_*.py
+# ============================================================================
+
+targets:
+
+  # ==== PRÓPRIO ==============================================================
+  - name: ortho_pp_google
+    layer: proprio
+    platform: google
+    query: "OrthoDontic Presidente Prudente"
+    enabled: true
+  - name: ortho_pp_ig
+    layer: proprio
+    platform: instagram
+    handle: "orthodontic.presidenteprudente"
+    max_posts: 15
+    comments_per_post: 30
+    enabled: true
+
+  # ==== CONCORRENTES (vendem ortodontia em PP) ===============================
+  - name: odontocompany_pp_google
+    layer: concorrente
+    platform: google
+    query: "OdontoCompany Presidente Prudente"
+    enabled: true
+  - name: sorrifacil_pp_google
+    layer: concorrente
+    platform: google
+    query: "Sorrifácil Presidente Prudente"
+    enabled: true
+  - name: croorto_pp_google
+    layer: concorrente
+    platform: google
+    query: "Croorto Odontologia Presidente Prudente"
+    enabled: true
+  - name: todossorrindo_pp_google
+    layer: concorrente
+    platform: google
+    query: "Todos Sorrindo Odontologia Presidente Prudente"
+    enabled: true
+  - name: odontoclinic_pp_google
+    layer: concorrente
+    platform: google
+    query: "Odontoclinic Presidente Prudente"
+    enabled: true
+
+  # ==== TERRITÓRIO / INFLUENCER — a voz do prudentino =========================
+  - name: guia_pp_ig
+    layer: influencer
+    platform: instagram
+    handle: "guia.presidenteprudente"    # 87k — a maior página da cidade
+    max_posts: 12
+    comments_per_post: 30
+    enabled: true
+  - name: gastronomia_pp_ig
+    layer: influencer
+    platform: instagram
+    handle: "gastronomiaprudente"        # 58k — o guia foodie local (desde 2015)
+    max_posts: 10
+    comments_per_post: 30
+    enabled: true
+
+  # ==== MAPA DE INFLUÊNCIA COMPLETO (público Orthodontic: mãe/jovem/adulto) ===
+  - name: maecoruja_pp_ig        # MÃE decisora — maternidade PP
+    layer: influencer
+    platform: instagram
+    handle: "espacomaecoruja"
+    max_posts: 10
+    comments_per_post: 30
+    enabled: true
+  - name: mulhermais_pp_ig       # MÃE/mulher 25-45 — autoestima/empreendedorismo
+    layer: influencer
+    platform: instagram
+    handle: "mulhermais.vc"
+    max_posts: 10
+    comments_per_post: 30
+    enabled: true
+  - name: precobaixo_pp_ig       # MÃE classe média — achadinhos/preço local
+    layer: influencer
+    platform: instagram
+    handle: "precobaixoprudente"
+    max_posts: 10
+    comments_per_post: 30
+    enabled: true
+  - name: akitembembarato_ig     # preço/consumo popular (450k, forte em PP)
+    layer: influencer
+    platform: instagram
+    handle: "akitembembarato"
+    max_posts: 10
+    comments_per_post: 30
+    enabled: true
+  - name: imparcial_pp_ig        # ADULTO — o jornal da cidade (desde 1939)
+    layer: influencer
+    platform: instagram
+    handle: "oimparcialsp"
+    max_posts: 10
+    comments_per_post: 30
+    enabled: true
+  - name: sescthermas_ig         # FAMÍLIA — lazer/esporte/cultura (50k)
+    layer: influencer
+    platform: instagram
+    handle: "sescthermas"
+    max_posts: 10
+    comments_per_post: 30
+    enabled: true
+  - name: nylounge_pp_ig         # JOVEM 16-28 — balada/rolê
+    layer: influencer
+    platform: instagram
+    handle: "nyloungeprudente"
+    max_posts: 10
+    comments_per_post: 30
+    enabled: true
+  - name: liveprudente_ig        # eventos da cidade — jovem/adulto
+    layer: influencer
+    platform: instagram
+    handle: "livepresidenteprudente"
+    max_posts: 10
+    comments_per_post: 30
+    enabled: true
+  - name: prefeitura_pp_ig       # voz CIDADÃ (58k — onde o morador reclama/celebra)
+    layer: influencer
+    platform: instagram
+    handle: "prefeituraprudente"
+    max_posts: 10
+    comments_per_post: 30
+    enabled: true
+  - name: lucascavalcanti_tiktok # HUMOR local (298k TikTok) — o registro do jovem
+    layer: influencer
+    platform: tiktok
+    handle: "olucascavalcanti"
+    max_posts: 12
+    enabled: true

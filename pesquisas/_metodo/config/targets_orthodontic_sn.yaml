@@ -1,0 +1,39 @@
+# ============================================================================
+# ALVOS — Público de LONDRINA / clínica OrthoDontic SOUZA NAVES (Vila Ipiranga)
+# A clínica-matriz, na cidade onde a marca nasceu. Público = londrinense central/
+# popular (NÃO o Cincão/ZN — clínica não fica lá). Reviews já em data_ortho/.
+# Rodar: FK_CONFIG=config/targets_orthodontic_sn.yaml FK_RAW=data_ortho_sn/raw \
+#        FK_CORPUS=data_ortho_sn/corpus python scripts/collect_*.py
+# ============================================================================
+
+targets:
+
+  # ==== TERRITÓRIO / INFLUÊNCIA — a voz do londrinense (por segmento) =========
+  - name: londrinenses_ig        # CIDADE — o maior guia de Londrina (272k)
+    layer: influencer
+    platform: instagram
+    handle: "londrinenses"
+    max_posts: 12
+    comments_per_post: 30
+    enabled: true
+  - name: pricylatotti_ig        # A MÃE — maternidade Londrina (110k)
+    layer: influencer
+    platform: instagram
+    handle: "pricylatotti"
+    max_posts: 12
+    comments_per_post: 30
+    enabled: true
+  - name: cidadeoferta_ig        # PREÇO/ACHADINHO — ofertas de Londrina (44k)
+    layer: influencer
+    platform: instagram
+    handle: "cidadeoferta"
+    max_posts: 10
+    comments_per_post: 30
+    enabled: true
+  - name: londrinero_ig          # CIDADE/OPINIÃO — Amanda Carelli (jovem-adulto)
+    layer: influencer
+    platform: instagram
+    handle: "londrinero"
+    max_posts: 10
+    comments_per_post: 30
+    enabled: true

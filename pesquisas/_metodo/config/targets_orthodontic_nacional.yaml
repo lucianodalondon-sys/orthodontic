@@ -1,0 +1,16 @@
+# ALVOS — camada NACIONAL OrthoDontic (parecer Teló)
+targets:
+  - name: orthodontic_br_ig      # a página nacional da marca
+    layer: proprio
+    platform: instagram
+    handle: "orthodontic.br"
+    max_posts: 20
+    comments_per_post: 40
+    enabled: true
+  - name: micheltelo_ig          # o embaixador (filtrar posts da marca depois)
+    layer: influencer
+    platform: instagram
+    handle: "micheltelo"
+    max_posts: 12
+    comments_per_post: 30
+    enabled: true

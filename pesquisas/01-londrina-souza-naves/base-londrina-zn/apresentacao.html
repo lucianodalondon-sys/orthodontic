@@ -1,0 +1,451 @@
+<title>Orthodontic — O Paciente da Zona Norte · Pesquisa de Público</title>
+<style>
+  :root{
+    --paper:#f8f5ef; --card:#fffdf8; --ink:#17333a; --ink-2:#4a6167; --line:#e2dccd;
+    --accent:#e14b64; --teal:#2e8c96; --teal-deep:#123f46; --gold:#d9a23c;
+    --ok:#2e7d5b; --bad:#b8434f;
+    --serif:Charter,'Bitstream Charter',Cambria,Georgia,'Times New Roman',serif;
+    --sans:'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;
+    --mono:Consolas,'Cascadia Mono',Menlo,monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --paper:#0e2227; --card:#14313a; --ink:#ece5d6; --ink-2:#a8bcbf; --line:#24444d;
+           --accent:#f06a80; --teal:#5cb8c2; --teal-deep:#9fd6dc; --gold:#e3b45f;
+           --ok:#67c29a; --bad:#f08a92; }
+  }
+  :root[data-theme="dark"]{ --paper:#0e2227; --card:#14313a; --ink:#ece5d6; --ink-2:#a8bcbf; --line:#24444d;
+           --accent:#f06a80; --teal:#5cb8c2; --teal-deep:#9fd6dc; --gold:#e3b45f;
+           --ok:#67c29a; --bad:#f08a92; }
+  :root[data-theme="light"]{ --paper:#f8f5ef; --card:#fffdf8; --ink:#17333a; --ink-2:#4a6167; --line:#e2dccd;
+           --accent:#e14b64; --teal:#2e8c96; --teal-deep:#123f46; --gold:#d9a23c;
+           --ok:#2e7d5b; --bad:#b8434f; }
+
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} *{animation:none!important;transition:none!important} }
+  body{ background:var(--paper); color:var(--ink); font-family:var(--sans);
+        line-height:1.62; margin:0; font-size:17px; }
+  main{ max-width:900px; margin:0 auto; padding:0 24px 96px; }
+  ::selection{ background:var(--accent); color:#fff; }
+
+  .eyebrow{ font-family:var(--sans); text-transform:uppercase; letter-spacing:.14em;
+            font-size:12px; font-weight:600; color:var(--teal); }
+  h1,h2,h3{ text-wrap:balance; }
+  h2{ font-family:var(--serif); font-weight:700; font-size:clamp(26px,3.6vw,34px);
+      line-height:1.18; margin:.35em 0 .5em; }
+  h3{ font-size:17px; margin:1.4em 0 .4em; }
+  p{ max-width:68ch; }
+  a{ color:var(--teal); }
+
+  /* ---------- hero ---------- */
+  header.hero{ padding:84px 24px 56px; max-width:900px; margin:0 auto; }
+  .hero .eyebrow{ display:block; margin-bottom:28px; }
+  .hero-quote{ font-family:var(--serif); font-style:italic; font-weight:700;
+    font-size:clamp(44px,8.4vw,86px); line-height:1.04; letter-spacing:-.015em; margin:0; }
+  .hero-quote .mark{ color:var(--accent); font-style:normal; }
+  .hero-attr{ margin-top:26px; font-size:15px; color:var(--ink-2); max-width:60ch; }
+  .hero-attr strong{ color:var(--ink); }
+  .hero-sub{ margin-top:34px; font-size:19px; max-width:62ch; }
+
+  /* divisor "borrachinhas" */
+  .elastics{ display:flex; gap:9px; align-items:center; margin:40px 0; }
+  .elastics i{ width:11px; height:11px; border-radius:50%; display:block; }
+  .elastics i:nth-child(5n+1){background:var(--accent)}
+  .elastics i:nth-child(5n+2){background:var(--teal)}
+  .elastics i:nth-child(5n+3){background:var(--gold)}
+  .elastics i:nth-child(5n+4){background:var(--ink-2)}
+  .elastics i:nth-child(5n+5){background:var(--ok)}
+  .elastics span{ font-size:12px; color:var(--ink-2); margin-left:8px; letter-spacing:.08em; text-transform:uppercase; }
+
+  section{ margin-top:72px; }
+  .chapter{ display:flex; align-items:baseline; gap:14px; border-top:2px solid var(--ink); padding-top:18px; }
+  .chapter .num{ font-family:var(--mono); font-size:14px; color:var(--accent); font-weight:700; }
+
+  /* ---------- stat band ---------- */
+  .stats{ display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:14px; margin-top:26px; }
+  .stat{ background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 20px 16px; }
+  .stat b{ display:block; font-family:var(--serif); font-size:clamp(30px,4vw,42px); line-height:1;
+           font-variant-numeric:tabular-nums; letter-spacing:-.02em; }
+  .stat small{ display:block; margin-top:8px; color:var(--ink-2); font-size:13.5px; line-height:1.45; }
+  .stat.hot b{ color:var(--accent); }
+
+  /* ---------- quotes ---------- */
+  blockquote{ margin:26px 0; padding:4px 0 4px 22px; border-left:3px solid var(--accent);
+    font-family:var(--serif); font-style:italic; font-size:20px; line-height:1.5; max-width:62ch; }
+  blockquote footer{ font-family:var(--sans); font-style:normal; font-size:13px; color:var(--ink-2); margin-top:8px; }
+  .quote-wall{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; margin-top:22px; }
+  .quote-wall figure{ margin:0; background:var(--card); border:1px solid var(--line); border-radius:10px; padding:18px 20px; }
+  .quote-wall blockquote{ border:0; padding:0; margin:0; font-size:17px; }
+  .quote-wall figcaption{ margin-top:10px; font-size:12.5px; color:var(--ink-2); }
+
+  /* ---------- personas ---------- */
+  .personas{ display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:16px; margin-top:24px; }
+  .persona{ background:var(--card); border:1px solid var(--line); border-radius:12px; padding:22px; }
+  .persona .tag{ display:inline-block; font-size:11.5px; font-weight:700; letter-spacing:.1em;
+     text-transform:uppercase; color:#fff; background:var(--teal); border-radius:99px; padding:3px 11px; }
+  .persona:first-child .tag{ background:var(--accent); }
+  .persona h3{ font-family:var(--serif); font-size:21px; margin:.7em 0 .3em; }
+  .persona p{ font-size:15px; color:var(--ink-2); margin:.4em 0; }
+  .persona p strong{ color:var(--ink); }
+
+  /* ---------- premia / detona ---------- */
+  .versus{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; margin-top:24px; }
+  .col{ border-radius:12px; padding:22px; background:var(--card); border:1px solid var(--line); }
+  .col h3{ margin-top:0; display:flex; align-items:center; gap:8px; font-size:15px; text-transform:uppercase; letter-spacing:.1em; }
+  .col.good h3{ color:var(--ok); } .col.bad h3{ color:var(--bad); }
+  .col ul{ padding-left:18px; margin:12px 0 0; }
+  .col li{ margin:10px 0; font-size:15.5px; }
+  .col li em{ font-family:var(--serif); }
+
+  /* ---------- ranking bars ---------- */
+  .bars{ margin-top:22px; display:flex; flex-direction:column; gap:10px; max-width:640px; }
+  .bar{ display:grid; grid-template-columns:150px 1fr 46px; gap:12px; align-items:center; font-size:14.5px; }
+  .bar .track{ background:var(--line); border-radius:99px; height:12px; overflow:hidden; }
+  .bar .fill{ height:100%; border-radius:99px; background:var(--teal); }
+  .bar:first-child .fill{ background:var(--accent); }
+  .bar b{ font-family:var(--mono); font-variant-numeric:tabular-nums; font-weight:600; text-align:right; }
+
+  /* ---------- territórios ---------- */
+  .terr{ background:var(--card); border:1px solid var(--line); border-left:4px solid var(--accent);
+         border-radius:10px; padding:22px 24px; margin-top:18px; }
+  .terr h3{ margin:0 0 4px; font-family:var(--serif); font-size:20px; }
+  .terr .for{ font-size:13px; color:var(--ink-2); text-transform:uppercase; letter-spacing:.08em; }
+  .script{ margin-top:14px; background:var(--paper); border:1px dashed var(--line); border-radius:8px;
+           padding:16px 18px; font-family:var(--serif); font-size:16.5px; line-height:1.65; }
+  .script .cta{ font-weight:700; color:var(--accent); font-style:normal; }
+
+  .note{ background:var(--card); border:1px solid var(--line); border-left:4px solid var(--gold);
+         border-radius:10px; padding:18px 22px; margin-top:20px; font-size:15.5px; }
+  .note strong{ color:var(--ink); }
+
+  table{ border-collapse:collapse; width:100%; margin-top:18px; font-size:15px; }
+  .tablewrap{ overflow-x:auto; }
+  th,td{ text-align:left; padding:10px 14px 10px 0; border-bottom:1px solid var(--line); vertical-align:top; }
+  th{ font-size:12.5px; text-transform:uppercase; letter-spacing:.08em; color:var(--ink-2); }
+  td b{ font-variant-numeric:tabular-nums; }
+
+  footer.end{ margin-top:88px; border-top:2px solid var(--ink); padding-top:22px;
+     font-size:13.5px; color:var(--ink-2); }
+  footer.end p{ margin:.4em 0; }
+</style>
+
+<header class="hero">
+  <span class="eyebrow">Pesquisa de público · Ortodontia · Zona Norte de Londrina · jul/2026</span>
+  <h1 class="hero-quote">“Consigo sorrir <span class="mark">novamente!!</span>”</h1>
+  <p class="hero-attr"><strong>Paciente real, avaliação no Google ao fim do tratamento.</strong><br>
+  “Foi muito gratificante, sempre me senti acolhido e hoje, ao fim do tratamento, me sinto muito realizado.”</p>
+  <p class="hero-sub">Fomos a campo digital ouvir quem realmente decide, paga e vive um tratamento
+  ortodôntico na Zona Norte de Londrina. Este relatório resume <strong>1.700+ vozes reais</strong> —
+  e mostra o que fazer com elas.</p>
+  <p class="hero-attr" style="margin-top:14px"><strong>Um detalhe importante:</strong> tudo aqui foi minerado
+  de fora — sem briefing, sem acesso a nenhum dado interno da Orthodontic. É a nossa visão de fora,
+  construída em dias. Com os seus dados, a precisão multiplica.</p>
+  <div class="elastics" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><span>uma cor de borrachinha por manutenção</span></div>
+</header>
+
+<main>
+
+<section id="metodo">
+  <div class="chapter"><span class="num">01</span><h2>O que ouvimos (método)</h2></div>
+  <p>Nenhuma opinião de gabinete: só voz espontânea de paciente e morador, coletada de fontes públicas
+  e cruzada com o estudo de território que já fizemos no mesmo bairro.</p>
+  <div class="stats">
+    <div class="stat hot"><b>615</b><small>avaliações reais de pacientes de clínicas que vendem ortodontia em Londrina (OrthoDontic + concorrentes de aparelho)</small></div>
+    <div class="stat"><b>949</b><small>vozes do território da Zona Norte (Cincão / Saul Elkind), do nosso estudo de campo anterior</small></div>
+    <div class="stat"><b>217</b><small>comentários da audiência nacional de aparelho (TikTok de ortodontia)</small></div>
+    <div class="stat"><b>8</b><small>clínicas de ortodontia mapeadas com nota e reclamações — o placar real da categoria (implante e planos ficaram de fora: outra categoria)</small></div>
+  </div>
+</section>
+
+<section id="fundo">
+  <div class="chapter"><span class="num">02</span><h2>O pano de fundo: no Brasil, dente é classe social</h2></div>
+  <div class="stats">
+    <div class="stat"><b>34 mi</b><small>de brasileiros já perderam 13 ou mais dentes (IBGE/PNS)</small></div>
+    <div class="stat"><b>20 mi</b><small>nunca foram ao dentista na vida</small></div>
+    <div class="stat hot"><b>≈16 mi</b><small>não têm nenhum dente — a “boca banguela” é o estigma visível da pobreza</small></div>
+  </div>
+  <p style="margin-top:22px">Por isso, na periferia, o aparelho virou <strong>símbolo de status</strong> — o
+  “aparelho chavoso” do funk chegou a ser vendido <em>falso</em> em camelô, só para exibir.
+  Leitura certa: <strong>aparelho não é constrangimento; é objeto de desejo.</strong> Quem usa está dizendo
+  “eu tenho condição de cuidar de mim”.</p>
+  <p>Na Zona Norte isso encontra um orgulho já documentado pela UEL: a região que <em>“venceu”</em> e
+  <em>“não depende do centro”</em>. Colocar aparelho no filho é a versão odontológica desse “venceu”.</p>
+  <div class="note">🎯 <strong>Trunfo de marca pronto:</strong> a OrthoDontic <strong>nasceu em Londrina</strong>
+  (2002, cinco amigos da odontologia da UEL) com a missão de democratizar o acesso — hoje é a maior rede do país.
+  <em>“A maior rede de ortodontia do Brasil nasceu aqui”</em> é orgulho territorial servido de bandeja.</div>
+</section>
+
+<section id="personas">
+  <div class="chapter"><span class="num">03</span><h2>Quem é o paciente (3 personas reais)</h2></div>
+  <div class="personas">
+    <div class="persona">
+      <span class="tag">Decisora nº 1</span>
+      <h3>A Mãe</h3>
+      <p>Trabalhadora da ZN. O aparelho do filho é <strong>projeto de família</strong>: 2 a 5 anos de
+      mensalidade paga com esforço — <em>“meu filho faz tratamento há 2 anos”</em>.</p>
+      <p><strong>Ela lê os reviews antes de escolher</strong> (“graças a Deus li os comentários!”), repara nas
+      “meninas da recepção” e foge de qualquer cheiro de golpe no boleto.</p>
+    </div>
+    <div class="persona">
+      <span class="tag">O beneficiário</span>
+      <h3>O Jovem da autoestima</h3>
+      <p>Quer o sorriso por <strong>status, paquera e emprego</strong>. Vive o tratamento como identidade:
+      escolhe a cor da borrachinha a cada manutenção, faz contagem regressiva pro dia de tirar.</p>
+      <p>Fala a língua do território: direta, com humor de uma linha, zero paciência com corporativês.</p>
+    </div>
+    <div class="persona">
+      <span class="tag">O que voltou</span>
+      <h3>O Adulto que adiou</h3>
+      <p>30–55 anos, nunca teve condição — agora tem. Carrega <strong>vergonha antiga de sorrir</strong>,
+      medo de dentista e medo de dívida.</p>
+      <p>Precisa de porta de entrada sem julgamento: avaliação gratuita, parcela que cabe, acolhimento.</p>
+    </div>
+  </div>
+</section>
+
+<section id="jornada">
+  <div class="chapter"><span class="num">04</span><h2>A jornada da mãe (onde se ganha e onde se perde)</h2></div>
+  <p>O caminho real, do primeiro incômodo ao review final — com os pontos em que a decisão
+  é ganha ou perdida:</p>
+  <div class="tablewrap"><table>
+    <tr><th>Etapa</th><th>O que acontece</th><th>Onde se ganha · onde se perde</th></tr>
+    <tr><td><b>1 · Disparo</b></td><td>O dentinho torto na foto da escola, o comentário da vizinha, o filho reclamando</td><td>Ganha quem já está na cabeça dela ANTES (awareness de território)</td></tr>
+    <tr><td><b>2 · Pesquisa</b></td><td>Ela pergunta no grupo de mães e <strong>lê os reviews do Google</strong> (“graças a Deus li os comentários!”)</td><td><strong>O jogo é decidido aqui.</strong> Nota, recência e resposta da clínica são a vitrine real</td></tr>
+    <tr><td><b>3 · Avaliação</b></td><td>Vai à avaliação gratuita — com medo de pressão de venda</td><td>Ganha o acolhimento sem empurrão; perde a “sala do financeiro” (reclamação real de concorrente)</td></tr>
+    <tr><td><b>4 · A conta</b></td><td>Aparelho em Londrina: <b>R$ 2.400–6.700</b> o tratamento — ela decide pela <strong>parcela mensal</strong>, não pelo total</td><td>Ganha a parcela redonda e transparente; perde o asterisco e a amarra de boletos</td></tr>
+    <tr><td><b>5 · Os 2–5 anos</b></td><td>Manutenção mensal — a relação de verdade (a cor da borrachinha, as meninas da recepção, o Whats que responde)</td><td>É AQUI que o setor inteiro perde (“só atendem bem na hora de contratar”). Reter = renovar + indicar</td></tr>
+    <tr><td><b>6 · A remoção</b></td><td>O dia mais feliz — “consigo sorrir novamente”</td><td>O pico de alegria é o momento de pedir o review e o depoimento — que alimenta a etapa 2 da próxima mãe</td></tr>
+  </table></div>
+  <p style="margin-top:16px"><strong>A leitura estratégica:</strong> o funil da categoria é um círculo —
+  o review pedido na etapa 6 é o que ganha a etapa 2 da próxima família. Quem opera esse círculo
+  domina a praça.</p>
+</section>
+
+<section id="porque">
+  <div class="chapter"><span class="num">05</span><h2>Por que ele procura aparelho (na ordem real)</h2></div>
+  <ol style="font-size:16.5px; line-height:2; max-width:64ch">
+    <li><strong>Autoestima / voltar a sorrir</strong> — libertação de uma vergonha antiga.</li>
+    <li><strong>Status e pertencimento</strong> — o aparelho em si sinaliza cuidado e condição.</li>
+    <li><strong>Projeto de família</strong> — a mãe dando ao filho o que ela não teve (a partir dos 7 anos).</li>
+    <li><strong>Emprego e apresentação</strong> — “confiança que abre portas”.</li>
+    <li>Correção funcional/dor — a justificativa racional, raramente o gatilho emocional.</li>
+  </ol>
+</section>
+
+<section id="confianca">
+  <div class="chapter"><span class="num">06</span><h2>Em quem ele confia — e o que ele avalia</h2></div>
+  <p>O paciente não sabe avaliar ortodontia. <strong>Ele avalia como foi tratado.</strong>
+  Nos reviews da categoria, os temas mais citados:</p>
+  <div class="bars" role="img" aria-label="Temas mais citados nos reviews">
+    <div class="bar"><span>Atendimento</span><div class="track"><div class="fill" style="width:100%"></div></div><b>54%</b></div>
+    <div class="bar"><span>Recepção “as meninas”</span><div class="track"><div class="fill" style="width:24%"></div></div><b>12%</b></div>
+    <div class="bar"><span>Doutor(a) com nome</span><div class="track"><div class="fill" style="width:22%"></div></div><b>11%</b></div>
+    <div class="bar"><span>Preço / parcela</span><div class="track"><div class="fill" style="width:20%"></div></div><b>10%</b></div>
+    <div class="bar"><span>Demora / espera</span><div class="track"><div class="fill" style="width:20%"></div></div><b>10%</b></div>
+    <div class="bar"><span>Tel/Whats sem resposta</span><div class="track"><div class="fill" style="width:11%"></div></div><b>6%</b></div>
+  </div>
+  <div class="quote-wall">
+    <figure><blockquote>“Dr. João nota 10, excelente doutor.”</blockquote><figcaption>A confiança é em pessoa com nome — não em marca.</figcaption></figure>
+    <figure><blockquote>“Graças a Deus li os comentários!!! Estou em busca de um dentista para colocação de aparelho!”</blockquote><figcaption>Os reviews do Google são o campo de batalha decisivo.</figcaption></figure>
+    <figure><blockquote>“Faço tratamento desde os meus 15 anos. Adoro o local, as recepcionistas, os especialistas!”</blockquote><figcaption>Relação de anos — o tratamento é um relacionamento mensal.</figcaption></figure>
+  </div>
+</section>
+
+<section id="medos">
+  <div class="chapter"><span class="num">07</span><h2>O que premia · o que detona (placar real de Londrina)</h2></div>
+  <div class="tablewrap"><table>
+    <tr><th>Clínica (categoria ortodontia)</th><th>Nota Google</th><th>Leitura</th></tr>
+    <tr><td><b>Odontoclinic Londrina</b></td><td><b>4,9</b> (533 aval.)</td><td><strong>A líder da categoria</strong> — vence por acolhimento (“carinho é competência”)</td></tr>
+    <tr><td><b>OrthoDontic Souza Naves</b></td><td><b>4,6</b> (561 aval.)</td><td>O modelo da casa que funciona: gente com nome + acolhimento</td></tr>
+    <tr><td>Dra. Aline Oliver (especialista em aparelho)</td><td><b>4,6</b></td><td>Doutora com nome + clareza (“não tem como sair com dúvida”)</td></tr>
+    <tr><td>Dentel ZN</td><td><b>4,2</b></td><td>—</td></tr>
+    <tr><td>Sorrifácil · OdontoCompany</td><td><b>3,9 · 3,9</b></td><td>Detonados por pós-venda e financeiro</td></tr>
+    <tr><td><b>OrthoDontic Centro</b> · Clinics Saul</td><td><b>3,5 · 3,5</b></td><td>Mesma marca, outra operação — o problema nunca é “a marca”</td></tr>
+  </table></div>
+  <div class="note">⚠️ <strong>A OrthoDontic não é a líder de nota na própria cidade natal.</strong>
+  A Odontoclinic (4,9) está na frente — e vence exatamente no eixo desta pesquisa. Um paciente dela
+  resumiu a categoria inteira: <em style="font-family:var(--serif)">“Nesta clínica eu aprendi que
+  <strong>carinho é competência</strong>.”</em> Essa é a barra a ser batida.</div>
+  <div class="versus">
+    <div class="col good">
+      <h3>✓ O que faz a nota subir</h3>
+      <ul>
+        <li>Atendimento caloroso <strong>com nome</strong> (doutor + recepção)</li>
+        <li>Medo acolhido — <em>“tava nervosa com medo, mas…”</em> vira elogio de 5 estrelas</li>
+        <li>O resultado celebrado — <em>“consigo sorrir novamente”</em></li>
+        <li>Anos de relação estável, criança bem cuidada</li>
+        <li>Parcela acessível e <strong>transparente</strong></li>
+      </ul>
+    </div>
+    <div class="col bad">
+      <h3>✗ O que destrói a confiança</h3>
+      <ul>
+        <li><strong>Pós-venda morto:</strong> <em>“só prestam bom atendimento na hora de contratar”</em>; telefone/Whats mudo, “cada mês um número diferente”</li>
+        <li><strong>Financeiro predatório:</strong> <em>“te amarram… te dão um monte de boletos”</em>, cobrança antes do vencimento</li>
+        <li>Venda que promete e não cumpre (“propaganda enganosa”)</li>
+        <li>Hora marcada que sempre atrasa</li>
+        <li>Dor evitável / “parece que só tem aprendizes”</li>
+      </ul>
+    </div>
+  </div>
+  <p style="margin-top:18px">Para quem paga o tratamento do filho com esforço, um boleto trocado não é
+  inconveniência — <strong>é traição</strong>. E o medo silencioso que ninguém escreve, mas o
+  “consigo sorrir novamente” revela: <strong>a vergonha de sorrir</strong>.</p>
+</section>
+
+<section id="benchmark">
+  <div class="chapter"><span class="num">08</span><h2>O playbook de quem está ganhando (benchmark Odontoclinic)</h2></div>
+  <p>Analisamos os 92 reviews com texto e o Instagram da líder (4,9). Ela vence exatamente
+  nos eixos desta pesquisa — e o jeito de comunicar é copiável:</p>
+  <div class="quote-wall">
+    <figure><blockquote>“Uma trend rápida pra você conhecer nossa equipe: recepção, administrativo, comercial…”</blockquote>
+      <figcaption><strong>A equipe é a protagonista do conteúdo.</strong> E a audiência responde às pessoas: “eu amo quando vocês fazem esses vídeos com as auxiliares 😂”, “equipe mais linda”.</figcaption></figure>
+    <figure><blockquote>“Agende sua limpeza… limpeza a jato GRATUITA” <em>(parceria com clube local)</em></blockquote>
+      <figcaption><strong>Porta de entrada barata e concreta.</strong> A limpeza traz o paciente pra cadeira; a avaliação vende o resto.</figcaption></figure>
+    <figure><blockquote>“Minha filha tinha muito medo de dentista, aqui conseguiu.” · “Muito atenciosos com minha criança autista ❤️”</blockquote>
+      <figcaption><strong>Acolher a criança que ninguém consegue atender</strong> gera o review mais emocional que existe.</figcaption></figure>
+  </div>
+  <div class="note"><strong>A ironia estratégica:</strong> a OrthoDontic Souza Naves <strong>já tem o ativo</strong> —
+  os pacientes nomeiam Dr. João, Dra. Tatiana, Dra. Bruna nos reviews — mas o Instagram das unidades esconde essas
+  pessoas atrás de posts genéricos. A líder faz o inverso: põe a equipe na frente.
+  <strong>O caminho não é inventar nada: é publicar o que os pacientes já amam.</strong>
+  E há espaço que a generalista não alcança: a OrthoDontic pode ser <em>A especialista</em> —
+  “só sorriso, a maior rede de ortodontia do Brasil, nascida em Londrina”.</div>
+</section>
+
+<section id="vida">
+  <div class="chapter"><span class="num">09</span><h2>A vida com aparelho (o que a audiência nacional mostra)</h2></div>
+  <p>Nos comentários dos vídeos de ortodontia mais virais do TikTok (426 mil likes no maior), três rituais
+  aparecem — prontos para virar conteúdo:</p>
+  <div class="quote-wall">
+    <figure><blockquote>“Próxima manutenção vou pôr cinza.” · “Eu só uso preto 💔”</blockquote>
+      <figcaption><strong>A manutenção é ritual mensal com momento de alegria:</strong> escolher a cor da borrachinha. Customização = identidade.</figcaption></figure>
+    <figure><blockquote>“Só descubro isso sabendo que vou tirar o aparelho provavelmente mês que vem.”</blockquote>
+      <figcaption><strong>“Tirar o aparelho” é contagem regressiva</strong> — o marco de vida da categoria.</figcaption></figure>
+    <figure><blockquote>“Eu não usando fio dental há 2 anos (faz 2 anos que botei o aparelho).”</blockquote>
+      <figcaption>66 mil likes. <strong>O registro que engaja é humor-confissão</strong> — cumplicidade, nunca bronca.</figcaption></figure>
+  </div>
+</section>
+
+<section id="territorios">
+  <div class="chapter"><span class="num">10</span><h2>Três territórios de campanha (com exemplo pronto)</h2></div>
+
+  <div class="terr">
+    <span class="for">Carro-chefe · captação · fala com a Mãe</span>
+    <h3>“O sorriso que você não teve, seu filho vai ter.”</h3>
+    <div class="script">
+      <em>(mãe e filho reais, rotina da ZN)</em><br>
+      “Sabe o sorriso que você não teve? Seu filho vai ter.<br>
+      A partir dos 7 anos já dá pra cuidar. Avaliação gratuita, parcela que cabe no bolso — e sem surpresa no boleto.<br>
+      Aqui quem cuida é a Dra. [nome], e a [nome] te recebe pelo nome.”<br>
+      <span class="cta">→ Agenda a avaliação. É de graça.</span>
+    </div>
+  </div>
+
+  <div class="terr">
+    <span class="for">Autoestima · jovem e adulto</span>
+    <h3>“Consigo sorrir novamente.”</h3>
+    <div class="script">
+      <em>(pessoa real escondendo o sorriso na foto → corte para o dia de tirar o aparelho)</em><br>
+      “Tem foto que a gente passou a vida evitando. Chega.<br>
+      Aparelho com parcela que cabe no bolso, com gente que te trata pelo nome.<br>
+      ‘Consigo sorrir novamente’ — frase de paciente nosso, não de propaganda.”<br>
+      <span class="cta">→ Vem sorrir também.</span>
+    </div>
+  </div>
+
+  <div class="terr">
+    <span class="for">Awareness · orgulho de território</span>
+    <h3>“A maior rede do Brasil não nasceu em São Paulo.”</h3>
+    <div class="script">
+      “A maior rede de ortodontia do Brasil não nasceu em São Paulo.<br>
+      Nasceu aqui, em Londrina — pra fazer o sorriso caber no bolso de todo mundo.<br>
+      Mais de 7 milhões de sorrisos depois, ela está aqui do teu lado.”<br>
+      <span class="cta">→ Avaliação gratuita. Agenda.</span>
+    </div>
+  </div>
+
+  <h3 style="margin-top:34px">Mais três alavancas de baixo custo</h3>
+  <ul style="font-size:16px; line-height:1.9; max-width:66ch">
+    <li><strong>O dia de tirar o aparelho como formato-assinatura:</strong> filmar (com autorização) a reação
+    do paciente — e pedir a avaliação do Google nesse pico de alegria.</li>
+    <li><strong>“Conheça quem vai cuidar do seu sorriso”:</strong> série dando nome e rosto aos doutores e às
+    meninas da recepção de cada unidade.</li>
+    <li><strong>Conteúdo “vida com aparelho”:</strong> cores de borrachinha, mitos da manutenção, humor-confissão
+    — o formato que já comprovadamente viraliza na categoria.</li>
+  </ul>
+</section>
+
+<section id="midia">
+  <div class="chapter"><span class="num">11</span><h2>Do anúncio ao review: mídia e funil completo — ZN de Londrina</h2></div>
+  <div class="tablewrap"><table>
+    <tr><th>Público</th><th>Quem</th><th>Quando</th><th>Herói criativo</th></tr>
+    <tr><td><b>Mães 25–45</b></td><td>pais de crianças 6–14 · Cinco Conjuntos + Saul Elkind (raio 4–6 km)</td><td>8–11h · 19–22h</td><td>“O sorriso que você não teve” + avaliação grátis</td></tr>
+    <tr><td><b>Jovens 16–28</b></td><td>autoestima/status · funk, moda, academia, perfis locais da ZN</td><td>noite · fim de semana</td><td>Dia de tirar o aparelho · borrachinha</td></tr>
+    <tr><td><b>Adultos 30–55</b></td><td>“nunca foi ao dentista” · emprego, crédito</td><td>almoço · noite</td><td>“Consigo sorrir novamente” + parcela transparente</td></tr>
+  </table></div>
+  <p style="font-size:15px; color:var(--ink-2)">Formato: vertical 9:16, gente real da ZN, legenda queimada,
+  1 CTA por peça. Lookalike da base de pacientes quando o cliente liberar a lista.</p>
+  <h3 style="margin-top:30px">A campanha como funil (não como peça solta)</h3>
+  <div class="tablewrap"><table>
+    <tr><th>Fase</th><th>Objetivo</th><th>Criativo</th><th>Métrica que importa</th></tr>
+    <tr><td><b>Awareness</b></td><td>Estar na cabeça antes do disparo</td><td>Território (“nasceu em Londrina”) + equipe com nome</td><td>Alcance no raio / recall</td></tr>
+    <tr><td><b>Captação</b></td><td>Agendamento da avaliação gratuita</td><td>“O sorriso que você não teve” + parcela transparente</td><td>Custo por avaliação agendada</td></tr>
+    <tr><td><b>Remarketing</b></td><td>Quem clicou e não agendou</td><td>Depoimento “consigo sorrir novamente” + medo acolhido</td><td>Taxa de recuperação</td></tr>
+    <tr><td><b>Reputação</b></td><td>Review no dia da remoção</td><td>Formato-assinatura “dia de tirar o aparelho”</td><td>Nota e nº de reviews/mês por unidade</td></tr>
+  </table></div>
+</section>
+
+<section id="alertas">
+  <div class="chapter"><span class="num">12</span><h2>Alertas honestos (antes de escalar mídia)</h2></div>
+  <div class="note"><strong>1 · Mesma marca, 4,6 × 3,5 entre unidades.</strong> O problema nunca é a marca — é a
+  operação de cada unidade. Marketing não conserta pós-venda: <strong>não prometa retorno rápido se o WhatsApp
+  da unidade não responde</strong>, ou a mídia fabrica reviews de 1 estrela.</div>
+  <div class="note"><strong>2 · Não localizamos unidade dentro da Zona Norte</strong> (Souza Naves é a mais
+  próxima). Se confirmado: são <strong>108 mil habitantes de mercado descoberto</strong> — decisão estratégica
+  entre campanha “puxa pra Souza Naves” ou tese de expansão.</div>
+  <div class="note"><strong>3 · Os reviews negativos ativos do Centro (3,5) precisam de gestão primeiro.</strong>
+  A mãe vai ler os comentários antes de agendar — é o comportamento nº 1 que encontramos.</div>
+</section>
+
+<section id="proposta">
+  <div class="chapter"><span class="num">13</span><h2>O que podemos fazer juntos</h2></div>
+  <p><strong>Tudo o que você acabou de ler foi construído de fora, em poucos dias, sem briefing e sem
+  um único dado interno.</strong> É o nosso ponto de partida — não o teto.</p>
+  <div class="terr">
+    <span class="for">Fase 0 · Prontidão (antes de 1 real de mídia)</span>
+    <h3>Arrumar a vitrine que a mãe lê</h3>
+    <p style="font-size:15.5px">Gestão dos reviews (responder tudo, meta de nota por unidade), régua de
+    prontidão por unidade (Whats que responde, agendamento), e o ritual do review no dia da remoção.
+    Souza Naves está pronta para mídia; o Centro precisa desta fase primeiro.</p>
+  </div>
+  <div class="terr">
+    <span class="for">Fase 1 · Campanha Zona Norte</span>
+    <h3>Os 3 territórios no ar</h3>
+    <p style="font-size:15.5px">Produção vertical com gente real (equipe com nome, pacientes reais),
+    funil completo no Meta (awareness → avaliação → remarketing → reputação), otimizado por custo por
+    avaliação agendada.</p>
+  </div>
+  <div class="terr">
+    <span class="for">Fase 2 · O método como produto</span>
+    <h3>Esta mesma inteligência, para cada praça da rede</h3>
+    <p style="font-size:15.5px">O que fizemos para a Zona Norte é replicável para qualquer cidade das
+    300 unidades: pesquisa de público por região + playbook de campanha por praça — inteligência local
+    que a franqueadora entrega ao franqueado. Ninguém no mercado oferece isso hoje.</p>
+  </div>
+  <div class="note" style="border-left-color:var(--accent)"><strong>E com os seus dados</strong> (base de
+  pacientes, motivos de cancelamento, conversas do WhatsApp), a precisão desta pesquisa multiplica —
+  personas viram segmentos reais, e o funil ganha números de verdade.
+  <br><br><strong>Vamos conversar sobre a Zona Norte — e sobre as outras 299.</strong></div>
+</section>
+
+<footer class="end">
+  <div class="elastics" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <p><strong>Método e fontes:</strong> avaliações públicas do Google de clínicas que vendem ortodontia (OrthoDontic Souza Naves e Centro, Odontoclinic, Dra. Aline Oliver, Sorrifácil,
+  OdontoCompany, Clinics e Dentel Saul Elkind — implante e planos excluídos por serem outra categoria); comentários públicos de Instagram e TikTok;
+  estudo de território da Zona Norte (feira do Cincão, Av. Saul Elkind, pesquisa UEL “Essa rua tem história”);
+  IBGE/PNS. Citações reais, anonimizadas. Nenhum dado privado foi coletado.</p>
+  <p>Pesquisa de campo digital · Zona Norte de Londrina · julho/2026 · preparado para apresentação à Orthodontic.</p>
+  <p>Metodologia replicável por região — este mesmo estudo pode ser repetido para qualquer praça da rede.</p>
+</footer>
+
+</main>

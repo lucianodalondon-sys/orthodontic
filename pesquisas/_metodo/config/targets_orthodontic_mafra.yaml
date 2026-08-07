@@ -1,0 +1,136 @@
+# ============================================================================
+# ALVOS — Público de MAFRA/SC + RIO NEGRO/PR (cidades gêmeas) / OrthoDontic Mafra
+# PILOTO VALENDO — estudo será aplicado na unidade. Profundidade máxima.
+# Rodar: FK_CONFIG=config/targets_orthodontic_mafra.yaml FK_RAW=data_ortho_mafra/raw \
+#        FK_CORPUS=data_ortho_mafra/corpus python scripts/collect_*.py
+# ============================================================================
+
+targets:
+
+  # ==== PRÓPRIO + CONCORRENTES (reviews Google — baratos, rodar primeiro) ====
+  - name: ortho_mafra_google
+    layer: proprio
+    platform: google
+    query: "OrthoDontic Mafra SC"
+    enabled: true
+  - name: odontocompany_mafra_google
+    layer: concorrente
+    platform: google
+    query: "OdontoCompany Mafra"
+    enabled: true
+  - name: odontocompany_rionegro_google
+    layer: concorrente
+    platform: google
+    query: "OdontoCompany Rio Negro PR"
+    enabled: true
+  - name: dentista_mafra_google        # descoberta: quem é o gigante local
+    layer: concorrente
+    platform: google
+    query: "ortodontia aparelho ortodôntico Mafra SC"
+    enabled: false
+  - name: dentista_rionegro_google
+    layer: concorrente
+    platform: google
+    query: "ortodontia aparelho ortodôntico Rio Negro PR"
+    enabled: false
+
+  # ==== TERRITÓRIO / VOZ DO RIOMAFRENSE (IG) =================================
+  # Identidade confirmada: a praça se chama "Riomafra" (Mafra+Rio Negro = UMA
+  # comunidade). Bio da maior página: "QUEM É DAQUI ACESSA!" — puro endogrupo.
+  - name: riomaframix_ig         # A MAIOR (53k > população de Mafra)
+    layer: influencer
+    platform: instagram
+    handle: "riomaframixoficial"
+    max_posts: 12
+    comments_per_post: 30
+    enabled: true
+  - name: diarioderiomafra_ig    # "o jornal do cidadão riomafrense" (23k)
+    layer: influencer
+    platform: instagram
+    handle: "diarioderiomafra"
+    max_posts: 10
+    comments_per_post: 30
+    enabled: true
+  - name: clickriomafra_ig       # o portal pioneiro (20k, desde 2007)
+    layer: influencer
+    platform: instagram
+    handle: "clickriomafra"
+    max_posts: 10
+    comments_per_post: 30
+    enabled: true
+
+  # ==== LOTE 2: os locais fortes (reviews c/ texto = o playbook deles) =======
+  - name: lumiere_google           # o gigante da porta (5,0×197, a 70m)
+    layer: concorrente
+    platform: google
+    query: "Instituto Lumière Odontologia Mafra SC"
+    enabled: true
+  - name: cuidadoprevencao_google  # o local de 20+ anos (4,9×135)
+    layer: concorrente
+    platform: google
+    query: "Clínica Cuidado e Prevenção Mafra SC"
+    enabled: true
+  - name: edgardgoes_google        # o gigante de Rio Negro (5,0×103)
+    layer: concorrente
+    platform: google
+    query: "Edgard Góes Odontologia Rio Negro PR"
+    enabled: true
+
+  # ==== A PRÓPRIA CLÍNICA ====================================================
+  - name: ortho_mafra_ig         # A voz da unidade (6 anos, ~2019)
+    layer: proprio
+    platform: instagram
+    handle: "orthodontic.mafra"
+    max_posts: 15
+    comments_per_post: 30
+    enabled: true
+
+  # CUIDADO: existe Mafra em PORTUGAL — "clínica dentária"/beclinique = PT.
+  # Filtrar tudo por SC/Brasil.
+  # (pendente pós-agentes: IG do gigante local, humor/achadinhos riomafra)
+
+  # ==== LOTE 3: playbooks de IG + voz da cidade aprofundada ==================
+  - name: odontocompany_riomafra_ig   # o concorrente das 2 margens
+    layer: concorrente
+    platform: instagram
+    handle: "odontocompanyriomafra"
+    max_posts: 15
+    comments_per_post: 30
+    enabled: true
+  - name: riomaframix_deep_ig         # aprofunda a voz da cidade (1º lote raso)
+    layer: influencer
+    platform: instagram
+    handle: "riomaframixoficial"
+    max_posts: 30
+    comments_per_post: 40
+    enabled: true
+
+  # ==== LOTE 4: segmentos do mapa de influência ==============================
+  - name: dicasriomafra_ig       # CONSUMO — o indicador neutro
+    layer: influencer
+    platform: instagram
+    handle: "dicasriomafra"
+    max_posts: 12
+    comments_per_post: 30
+    enabled: true
+  - name: vitorino_ig            # GASTRONOMIA — o + seguido da praça
+    layer: influencer
+    platform: instagram
+    handle: "restaurante.vitorino"
+    max_posts: 10
+    comments_per_post: 30
+    enabled: true
+  - name: mafrafutsal_ig         # JOVEM/FAMÍLIA — escolinha 9-15 = público orto
+    layer: influencer
+    platform: instagram
+    handle: "mafra_futsal_oficial"
+    max_posts: 10
+    comments_per_post: 30
+    enabled: true
+  - name: maternidade_ig         # MÃE — toda mãe da região passa lá
+    layer: influencer
+    platform: instagram
+    handle: "maternidadecatarinakuss"
+    max_posts: 10
+    comments_per_post: 30
+    enabled: true

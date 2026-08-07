@@ -1,0 +1,57 @@
+# ============================================================================
+# LÉXICO ORTHODONTIC v1.0 — temas específicos de odontologia/ortodontia (pt-BR)
+# Mesclado com metodologia/taxonomia.yaml pelo classify_corpus.py.
+# Estrutura idêntica à taxonomia base. Mudou? Suba a versão e registre.
+# ============================================================================
+versao: "1.1"
+# v1.1: auditoria da amostra (Mafra) pegou variantes femininas/nominais ausentes
+# na base → extensão do tema "atendimento" aqui (base intocada p/ não recontar
+# outros estudos; PROTOCOLO §4).
+temas:
+
+  atendimento:
+    descricao: "Extensão pt-BR: variantes femininas e nominais"
+    termos: [bem atendida, mal atendida, atencao, gentileza, gentil, querida,
+      queridos, querido, carinho, carinhosa, carinhoso, cuidadosa, cuidadoso,
+      prestativa, prestativo, receptiva, receptivo, humanizado, humanizada,
+      acolhimento, acolhedora, recepcao, recepcionista]
+
+  dor_medo_dentista:
+    descricao: "Dor, medo de dentista, ansiedade, trauma, 'nem doeu'"
+    termos: [dor, doi, doeu, doendo, medo, medinho, panico, trauma,
+      traumatizada, traumatizado, fobia, ansiedade, ansiosa, ansioso,
+      tranquilo, tranquila, "sem dor", "nem doeu", "não doeu", calma,
+      paciencia, cuidadoso, cuidadosa, delicada, delicado]
+
+  resultado_autoestima:
+    descricao: "Transformação, autoestima, voltar a sorrir, sonho realizado"
+    termos: [autoestima, resultado, resultados, transformacao, transformou,
+      sorriso novo, "sorrir novamente", "voltei a sorrir", "consigo sorrir",
+      sonho, realizado, realizada, "antes e depois", mudou minha vida,
+      vergonha, confiante, satisfeita, satisfeito, feliz, felicidade,
+      maravilhoso, maravilhosa, perfeito sorriso]
+
+  explicacao_clareza:
+    descricao: "Explicaram tudo, tiraram dúvidas, transparência"
+    termos: [explica, explicou, explicaram, explicacao, duvida, duvidas,
+      esclareceu, esclarecimento, transparente, transparencia, detalhou,
+      informou, orientou, orientacao, "entendi tudo", didatica, didatico]
+
+  aparelho_tratamento:
+    descricao: "Menções ao aparelho/tratamento ortodôntico em si"
+    termos: [aparelho, aparelhos, ortodontia, ortodontico, ortodontica,
+      ortodontista, manutencao, borrachinha, borrachinhas, alinhador,
+      alinhadores, invisalign, bracket, brackets, contencao, "tirar o aparelho",
+      documentacao, banda, fio]
+
+  familia_filhos:
+    descricao: "Mãe/pai falando de filho em tratamento (a decisora)"
+    termos: [filho, filha, filhos, filhas, meu menino, minha menina, crianca,
+      criancas, pequena, pequeno, adolescente, "minha pequena", odontopediatria,
+      odontopediatra, "meu piá", pia]
+
+  tempo_relacao:
+    descricao: "Anos de casa, gerações, cliente antigo, relação longa"
+    termos: [anos, "desde o inicio", "ha anos", geracao, geracoes, "cliente ha",
+      "faco tratamento desde", antiga, antigo, "toda a familia", "familia toda",
+      sempre fui, "acompanha desde"]
