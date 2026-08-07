@@ -1,0 +1,51 @@
+{
+  "gerado_de": "dados/serie + dados/conteudo + dados/identidade",
+  "corte": "2026-07-15",
+  "taxonomia_versao": "1.1",
+  "cobertura": {
+    "ouvidas": 4,
+    "total": 340
+  },
+  "pracas": [
+    {
+      "praca_id": "riomafra",
+      "nome": "Riomafra",
+      "cidades": [
+        "Mafra/SC",
+        "Rio Negro/PR"
+      ]
+    },
+    {
+      "praca_id": "londrina",
+      "nome": "Londrina",
+      "cidades": [
+        "Londrina/PR"
+      ]
+    },
+    {
+      "praca_id": "feira",
+      "nome": "Feira de Santana",
+      "cidades": [
+        "Feira de Santana/BA"
+      ]
+    },
+    {
+      "praca_id": "prudente",
+      "nome": "Presidente Prudente",
+      "cidades": [
+        "Presidente Prudente/SP"
+      ]
+    }
+  ],
+  "telas": [
+    "rede",
+    "achados",
+    "corretor",
+    "evidencias",
+    "pracas/riomafra",
+    "pracas/londrina",
+    "pracas/feira",
+    "pracas/prudente"
+  ],
+  "aviso": "O casco não calcula. Todo valor exibido sai deste diretório."
+}

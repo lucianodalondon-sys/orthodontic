@@ -1,0 +1,74 @@
+{
+  "praca_id": "riomafra",
+  "nome": "Riomafra",
+  "cidades": [
+    "Mafra/SC",
+    "Rio Negro/PR"
+  ],
+  "uf": [
+    "SC",
+    "PR"
+  ],
+  "populacao": 87000,
+  "renda_mediana_pessoa_mes": 1333,
+  "coortes": {
+    "9_15": 7700,
+    "30_45": 21000
+  },
+  "domicilios": 31000,
+  "nota_geografia": "A praça é uma colônia partida pela divisa dos estados. praca_id != municipio.",
+  "alerta_coleta": "Existe Mafra em PORTUGAL. Filtrar tudo por SC/Brasil. Descartar e logar qualquer resultado sem place_id da tabela.",
+  "locais": [
+    {
+      "local_id": "ortho_mafra",
+      "papel": "proprio",
+      "nome": "OrthoDontic Mafra",
+      "tipo": "franquia",
+      "abertura": "2019",
+      "place_id": null,
+      "cnpj": null,
+      "ig_handle": null,
+      "especialistas": 9,
+      "site_proprio": false
+    },
+    {
+      "local_id": "lumiere",
+      "papel": "concorrente",
+      "nome": "Instituto Lumière",
+      "tipo_concorrente": "startup_trafego",
+      "abertura": "2025-10",
+      "place_id": null,
+      "cnpj": null,
+      "nota_capital": "capital 28x maior que o da unidade (registro público)"
+    },
+    {
+      "local_id": "oc_mafra",
+      "papel": "concorrente",
+      "nome": "OdontoCompany Mafra",
+      "tipo_concorrente": "rede_popular",
+      "place_id": null
+    },
+    {
+      "local_id": "oc_rionegro",
+      "papel": "concorrente",
+      "nome": "OdontoCompany Rio Negro",
+      "tipo_concorrente": "rede_popular",
+      "place_id": null
+    },
+    {
+      "local_id": "cuidado_prevencao",
+      "papel": "concorrente",
+      "nome": "Cuidado e Prevenção",
+      "tipo_concorrente": "local_infantil",
+      "abertura": "2006",
+      "place_id": null
+    },
+    {
+      "local_id": "edgard_goes",
+      "papel": "concorrente",
+      "nome": "Edgard Góes Odontologia",
+      "tipo_concorrente": "doutor_pf",
+      "place_id": null
+    }
+  ]
+}

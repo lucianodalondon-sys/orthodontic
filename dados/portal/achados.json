@@ -1,0 +1,290 @@
+{
+  "estados": {
+    "hipotese": 0,
+    "candidata": 13,
+    "constante": 0,
+    "doutrina": 0,
+    "derrubada": 1
+  },
+  "nota_teto": "A amostra atual não cobre Norte, Centro-Oeste, capital nem unidade recém-aberta. Por isso o teto honesto hoje é candidata.",
+  "achados": [
+    {
+      "t": "O paciente não avalia ortodontia — avalia como foi tratado",
+      "n": "4/4",
+      "estado": "candidata",
+      "ev": [
+        [
+          "Prudente",
+          "47%"
+        ],
+        [
+          "Londrina",
+          "54%"
+        ],
+        [
+          "Feira",
+          "63%"
+        ],
+        [
+          "Riomafra",
+          "69%"
+        ]
+      ],
+      "ref": "atend_mafra"
+    },
+    {
+      "t": "A ferida é sempre operação — nunca o produto",
+      "n": "4/4",
+      "estado": "candidata",
+      "ev": [
+        [
+          "Londrina",
+          "pós-venda"
+        ],
+        [
+          "Prudente",
+          "agenda"
+        ],
+        [
+          "Feira",
+          "espera 2–4h"
+        ],
+        [
+          "Riomafra",
+          "manutenção"
+        ]
+      ]
+    },
+    {
+      "t": "A confiança é em gente com nome, não em marca",
+      "n": "4/4",
+      "estado": "candidata",
+      "ev": [
+        [
+          "Londrina",
+          "Dr. João, as meninas"
+        ],
+        [
+          "Feira",
+          "doutor 4,9 · 1.268"
+        ],
+        [
+          "Riomafra",
+          "concorrente sem ortodontista nomeado"
+        ]
+      ]
+    },
+    {
+      "t": "A porta de entrada é sempre “quanto custa / cabe na parcela?”, seguida de “dói?”",
+      "n": "4/4",
+      "estado": "candidata",
+      "ev": [
+        [
+          "Riomafra",
+          "extraído da busca real"
+        ],
+        [
+          "Prudente",
+          "âncora ~R$ 110/mês"
+        ]
+      ]
+    },
+    {
+      "t": "Julho é o pico da mãe-decisora",
+      "n": "4/4",
+      "estado": "candidata",
+      "ev": [
+        [
+          "Riomafra",
+          "índice 34 · 4.120 leads em jul/25"
+        ],
+        [
+          "demais",
+          "férias escolares"
+        ]
+      ]
+    },
+    {
+      "t": "O adulto 30+ é dinheiro na mesa e nenhuma praça fala com ele",
+      "n": "4/4",
+      "estado": "candidata",
+      "ev": [
+        [
+          "Riomafra",
+          "21.000 de 30–45 vs 7.700 de 9–15"
+        ],
+        [
+          "demais",
+          "~metade de quem usa aparelho"
+        ]
+      ]
+    },
+    {
+      "t": "A clínica-escola é fraca exatamente onde a rede é forte",
+      "n": "4/4",
+      "estado": "candidata",
+      "ev": [
+        [
+          "Feira",
+          "não faz aparelho de adolescente"
+        ],
+        [
+          "Prudente",
+          "cobre prevenção e infantil"
+        ]
+      ]
+    },
+    {
+      "t": "A joia local existe, é incopiável — e está enterrada",
+      "n": "3/4",
+      "estado": "candidata",
+      "ev": [
+        [
+          "Londrina",
+          "é a matriz"
+        ],
+        [
+          "Prudente",
+          "a 1ª franquia"
+        ],
+        [
+          "Riomafra",
+          "o casal que voltou"
+        ],
+        [
+          "Feira",
+          "nenhuma ainda"
+        ]
+      ]
+    },
+    {
+      "t": "A embalagem é a mesma nas quatro: feed institucional + anúncio de urgência",
+      "n": "4/4",
+      "estado": "candidata",
+      "ev": [
+        [
+          "Londrina",
+          "OPERAÇÃO ORTODONTIA"
+        ],
+        [
+          "Prudente",
+          "SEMANA DO APARELHO"
+        ],
+        [
+          "Feira",
+          "17 no coro"
+        ],
+        [
+          "Riomafra",
+          "feed sem a especialidade"
+        ]
+      ]
+    },
+    {
+      "t": "A prova social está parada em todas",
+      "n": "4/4",
+      "estado": "candidata",
+      "ev": [
+        [
+          "Prudente",
+          "4,9 · 582 fora das peças"
+        ],
+        [
+          "Riomafra",
+          "0,7 review/mês"
+        ]
+      ],
+      "ref": "velocity"
+    },
+    {
+      "t": "A mãe é a decisora — e lê os reviews antes de escolher",
+      "n": "4/4",
+      "estado": "candidata",
+      "ev": [
+        [
+          "Londrina",
+          "“graças a Deus li os comentários”"
+        ],
+        [
+          "Riomafra",
+          "medo duplo da mãe"
+        ]
+      ]
+    },
+    {
+      "t": "A ordem certa é blindar a operação antes de qualquer mídia nova",
+      "n": "4/4",
+      "estado": "candidata",
+      "ev": [
+        [
+          "as quatro",
+          "é a ação nº 1 dos quatro planos"
+        ]
+      ]
+    },
+    {
+      "t": "Os mesmos quatro formatos fixos de conteúdo emergem nas quatro",
+      "n": "4/4",
+      "estado": "candidata",
+      "ev": [
+        [
+          "as quatro",
+          "quem cuida · história local · tirar o aparelho · explica-tudo"
+        ]
+      ]
+    },
+    {
+      "t": "Dezembro e janeiro são pico nacional",
+      "n": "derrubada",
+      "estado": "derrubada",
+      "derrubada_por": "riomafra",
+      "ev": [
+        [
+          "Riomafra",
+          "índice 2,5–7,9 contra 34 em julho"
+        ],
+        [
+          "BI",
+          "494 e 78 leads contra 4.120"
+        ]
+      ]
+    }
+  ],
+  "variaveis": [
+    {
+      "dim": "A alavanca de preço",
+      "londrina": "confiança + preço justo — barato levanta suspeita",
+      "prudente": "clareza, não preço",
+      "feira": "preço como orgulho do batalhador",
+      "riomafra": "palavra cumprida"
+    },
+    {
+      "dim": "Posição no placar",
+      "londrina": "desafiante",
+      "prudente": "líder — joga defesa",
+      "feira": "desafiante, 7x atrás",
+      "riomafra": "melhor nota, 4ª em volume"
+    },
+    {
+      "dim": "O inimigo",
+      "londrina": "clínica geral bem avaliada",
+      "prudente": "vácuo competitivo",
+      "feira": "doutor pessoa física",
+      "riomafra": "rede popular + startup de tráfego"
+    },
+    {
+      "dim": "Mídia própria",
+      "londrina": "urgência genérica",
+      "prudente": "7 ativos, leilão dominado",
+      "feira": "17 ativos no coro",
+      "riomafra": "zero"
+    },
+    {
+      "dim": "Léxico proibido",
+      "londrina": "urgência de liquidação",
+      "prudente": "corporativês",
+      "feira": "axé litorâneo",
+      "riomafra": "gíria gaúcha, Oktoberfest"
+    }
+  ]
+}

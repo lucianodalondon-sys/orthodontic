@@ -1,0 +1,298 @@
+{
+  "praca_id": "riomafra",
+  "corte": "2026-07-15",
+  "identidade": {
+    "praca_id": "riomafra",
+    "nome": "Riomafra",
+    "cidades": [
+      "Mafra/SC",
+      "Rio Negro/PR"
+    ],
+    "uf": [
+      "SC",
+      "PR"
+    ],
+    "populacao": 87000,
+    "renda_mediana_pessoa_mes": 1333,
+    "coortes": {
+      "9_15": 7700,
+      "30_45": 21000
+    },
+    "domicilios": 31000,
+    "nota_geografia": "A praça é uma colônia partida pela divisa dos estados. praca_id != municipio.",
+    "alerta_coleta": "Existe Mafra em PORTUGAL. Filtrar tudo por SC/Brasil. Descartar e logar qualquer resultado sem place_id da tabela."
+  },
+  "eyebrow": "Praça · piloto aplicado · única com dado interno",
+  "papel": "franquia · 7 anos",
+  "tese_titulo": "A melhor clínica da cidade é a mais calada",
+  "tese": "Melhor reputação entre as grandes da praça, quase nenhuma ferida, e o ativo mais raro numa cidade de colônia: donos ortodontistas nascidos ali, com sobrenome da terra. E está em silêncio, no mês em que a região mais procura aparelho.",
+  "base": "452 vozes · corte 15/jul/2026",
+  "dna": [
+    {
+      "l": "A língua",
+      "t": "O falar do planalto — “piá”, chimarrão, inverno de verdade. E dizer <b>Riomafra</b>: a praça é uma colônia partida ao meio pela divisa, com ônibus urbano cruzando a ponte."
+    },
+    {
+      "l": "Temperamento",
+      "t": "Colônia discreta e comunitária. Desconfia de promessa grande; respeita trabalho, constância e palavra cumprida."
+    },
+    {
+      "l": "A alavanca",
+      "t": "Prova antes de promessa. Parcela clara que cabe no orçamento — nunca leilão de desconto."
+    },
+    {
+      "l": "A joia enterrada",
+      "t": "O casal de ortodontistas que voltou pra casa em 2019. De 2 para 9 especialistas. Sobrenome da colônia no mapa das duas cidades — e ausente do feed."
+    },
+    {
+      "l": "Jamais",
+      "t": "Hype, urgência de liquidação, “última chance” — o radar antivigarista da colônia queima a marca. Nunca gíria gaúcha nem estética de Oktoberfest.",
+      "proibicao": true
+    }
+  ],
+  "citacoes": [
+    {
+      "t": "A melhor clínica e os melhores dentistas!!!",
+      "c": "seguidor da unidade — comentário público espontâneo"
+    },
+    {
+      "t": "Ótimo atendimento, preço justo e lugar aconchegante.",
+      "c": "paciente — avaliação pública"
+    },
+    {
+      "t": "Clínica limpa e cheirosa, ambiente super agradável e profissionais mto atenciosos.",
+      "c": "paciente — avaliação pública"
+    },
+    {
+      "t": "falta de comunicação entre a equipe… fiquei 1 mês sem manutenção",
+      "c": "paciente — a única ferida da unidade, e é operacional"
+    }
+  ],
+  "plano": [
+    {
+      "n": "01",
+      "t": "Blindar manutenção e retenção",
+      "d": "protocolo de confirmação + régua de relacionamento nos meses 2–6 + alerta de paciente sumido",
+      "prazo": "15 dias",
+      "esforco": "baixo→ALTO"
+    },
+    {
+      "n": "02",
+      "t": "Ligar a máquina de avaliações",
+      "d": "pedir a cada paciente satisfeito, priorizando tratamento concluído · meta ≥15/mês",
+      "prazo": "15 dias",
+      "esforco": "baixo→alto"
+    },
+    {
+      "n": "03",
+      "t": "Destravar o rosto",
+      "d": "a história do casal no feed, na fachada e nos anúncios",
+      "prazo": "30 dias",
+      "esforco": "baixo→alto"
+    },
+    {
+      "n": "04",
+      "t": "Reocupar a especialidade",
+      "d": "80% do feed em ortodontia — hoje posta facetas, implante, canal e prótese",
+      "prazo": "30 dias",
+      "esforco": "baixo→alto"
+    },
+    {
+      "n": "05",
+      "t": "Entrar na mídia paga JÁ",
+      "d": "4–6 anúncios sempre-ativos, programados nas duas ondas de férias",
+      "prazo": "7–14 dias",
+      "esforco": "URGENTE"
+    },
+    {
+      "n": "06",
+      "t": "Reivindicar as duas margens",
+      "d": "geotargeting Rio Negro e interior, criativo por cidade",
+      "prazo": "60 dias",
+      "esforco": "médio"
+    },
+    {
+      "n": "07",
+      "t": "Parcerias de comunidade",
+      "d": "futsal 9–15 anos, maternidade, perfil-indicador, festa de setembro",
+      "prazo": "90 dias",
+      "esforco": "médio"
+    }
+  ],
+  "sazonalidade_nota": "Os pontos que a série de cinco anos publica. <b>Dezembro e janeiro são vale aqui</b> — a tese nacional de “férias de fim de ano” não vale no planalto, e foi esta praça que a derrubou.",
+  "placar_nota": "a OrthoDontic é a única clínica da praça especializada em ortodontia",
+  "placar": [
+    {
+      "local_id": "oc_mafra",
+      "nome": "OdontoCompany Mafra",
+      "tipo": "rede_popular",
+      "proprio": false,
+      "nota": 4.7,
+      "avaliacoes": 338,
+      "reviews_novos_mes": 13.0,
+      "anuncios_ativos": 7
+    },
+    {
+      "local_id": "lumiere",
+      "nome": "Instituto Lumière",
+      "tipo": "startup_trafego",
+      "proprio": false,
+      "nota": 5.0,
+      "avaliacoes": 197,
+      "reviews_novos_mes": 28.0,
+      "anuncios_ativos": 10
+    },
+    {
+      "local_id": "oc_rionegro",
+      "nome": "OdontoCompany Rio Negro",
+      "tipo": "rede_popular",
+      "proprio": false,
+      "nota": 4.7,
+      "avaliacoes": 188,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "ortho_mafra",
+      "nome": "OrthoDontic Mafra",
+      "tipo": "franquia",
+      "proprio": true,
+      "nota": 4.9,
+      "avaliacoes": 155,
+      "reviews_novos_mes": 0.7,
+      "anuncios_ativos": 0
+    },
+    {
+      "local_id": "cuidado_prevencao",
+      "nome": "Cuidado e Prevenção",
+      "tipo": "local_infantil",
+      "proprio": false,
+      "nota": 4.9,
+      "avaliacoes": 135,
+      "reviews_novos_mes": 9.0,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "edgard_goes",
+      "nome": "Edgard Góes Odontologia",
+      "tipo": "doutor_pf",
+      "proprio": false,
+      "nota": 5.0,
+      "avaliacoes": 103,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    }
+  ],
+  "funil": {
+    "estagios": [
+      {
+        "l": "Interessados",
+        "v": 5050,
+        "pct": null,
+        "regua": null
+      },
+      {
+        "l": "Agendamentos",
+        "v": 298,
+        "pct": 0.059,
+        "regua": 0.4
+      },
+      {
+        "l": "Comparecimentos",
+        "v": 147,
+        "pct": 0.493,
+        "regua": 0.5
+      },
+      {
+        "l": "Fechados",
+        "v": 110,
+        "pct": 0.748,
+        "regua": 0.8
+      },
+      {
+        "l": "Pagos",
+        "v": 109,
+        "pct": 0.991,
+        "regua": 0.9
+      }
+    ],
+    "base_ativa": 677,
+    "base_ativa_anterior": 875,
+    "contratos_mes": 28,
+    "contratos_mes_anterior": 43,
+    "meta_rede": 50,
+    "ressalva": "Denominador em aberto: 109 pagos no funil contra ~336 contratos/ano na mesma unidade. Multiplicador projetado não é publicado enquanto não reconciliar."
+  },
+  "temas": [
+    {
+      "tema": "atendimento",
+      "snapshot_date": "2026-07-15",
+      "praca_id": "riomafra",
+      "pct": 0.69,
+      "n": 224,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "1.1"
+    },
+    {
+      "tema": "qualidade_resultado",
+      "snapshot_date": "2026-07-15",
+      "praca_id": "riomafra",
+      "pct": 0.54,
+      "n": 224,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "1.1"
+    },
+    {
+      "tema": "recomendacao",
+      "snapshot_date": "2026-07-15",
+      "praca_id": "riomafra",
+      "pct": 0.3,
+      "n": 224,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "1.1"
+    },
+    {
+      "tema": "autoestima",
+      "snapshot_date": "2026-07-15",
+      "praca_id": "riomafra",
+      "pct": 0.12,
+      "n": 224,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "1.1"
+    }
+  ],
+  "sazonalidade": [
+    {
+      "snapshot_date": "2026-07-15",
+      "regiao": "SC",
+      "serie_anos": 5,
+      "mes": "JUL",
+      "indice": 34,
+      "pico": true
+    },
+    {
+      "snapshot_date": "2026-07-15",
+      "regiao": "SC",
+      "serie_anos": 5,
+      "mes": "AGO",
+      "indice": 23
+    },
+    {
+      "snapshot_date": "2026-07-15",
+      "regiao": "SC",
+      "serie_anos": 5,
+      "mes": "SET",
+      "indice": 22
+    },
+    {
+      "snapshot_date": "2026-07-15",
+      "regiao": "SC",
+      "serie_anos": 5,
+      "mes": "DEZ/JAN",
+      "indice_min": 2.5,
+      "indice_max": 7.9,
+      "vale": true
+    }
+  ],
+  "o_que_mudou": null
+}
