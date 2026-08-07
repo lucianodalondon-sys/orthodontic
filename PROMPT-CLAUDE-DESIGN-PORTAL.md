@@ -118,6 +118,71 @@ Profundo, calmo, e quando algo precisa de atenção, aquilo se destaca sozinho.
 - **Sparkline em tudo que tem série**, ao lado do número.
 - **Medidores radiais e trilhas de medição** no lugar de mais tabelas.
 
+### A ATMOSFERA — a referência visual exata
+
+A linguagem é a de uma **peça de engenharia flutuando no escuro, emitindo luz,
+com dados desenhados em linhas finas ao redor dela** — a estética de telemetria
+de alta performance. Escuridão quase total, um objeto luminoso, poucas palavras,
+tipografia fina e espaçada.
+
+Traduzido para os tokens da OrthoDontic:
+
+**O fundo nunca é chapado.** Um gradiente radial amplo: navy um pouco mais claro
+no alto e ao centro, escurecendo para `#000B24` nas bordas — vinheta suave. Por
+cima de tudo, uma camada de **grão** a 3–4% de opacidade. É o grão que tira o
+aspecto de "div preta" e dá material.
+
+**O objeto-herói flutua e emite luz.** O mapa do Brasil é desenhado como
+**wireframe/nuvem de pontos em cyan**, translúcido, como se fosse um modelo
+técnico — não um mapa chapado preenchido. Sob ele, uma **poça de luz radial**
+(cyan a ~12% de opacidade, muito difusa) como se o objeto iluminasse o chão. É
+esse pool de luz que faz o elemento parecer estar num espaço, não colado num
+fundo.
+
+**As linhas de dado atravessam o espaço.** Curvas de 1px, em cyan a 30–50% de
+opacidade, cruzando áreas vazias da tela com pontos de dado marcados e rotulados
+em texto minúsculo e espaçado. A curva de sazonalidade e a série de velocity
+devem viver assim — flutuando, não presas dentro de uma caixa de gráfico.
+
+**Tipografia com muito ar.** Rótulos em caixa alta, `--tracking-wider .14em`,
+peso `--fw-light` ou `--fw-book`, tamanho pequeno. Títulos em Gotham Black,
+grandes, em caixa alta, colados à esquerda. Coluna de texto estreita (máximo 40
+caracteres) para o parágrafo de apoio. **Contraste de escala é o efeito
+principal:** um título enorme ao lado de um rótulo minúsculo.
+
+**Numeração de capítulo.** No canto direito, número grande em peso leve com o
+total abaixo em corpo pequeno — `01 / 04` para as quatro praças, `01 / 07` para
+os sinais. Comunica "existe uma sequência" e ancora a leitura.
+
+**Réguas verticais finas** nas bordas da tela, com setas de navegação — o fio de
+1px em `rgba(255,255,255,.14)` que cria a moldura sem fechar caixa.
+
+**Botão circular com arco.** O botão de ação secundária é um círculo com arco
+parcial desenhado em volta — **em cyan, nunca em vermelho**. Ao passar o mouse o
+arco completa a volta.
+
+**90% da tela é escuro vazio.** O conteúdo é pontual e luminoso. Essa é a regra
+mais difícil de seguir e a que mais muda o resultado.
+
+> **A disciplina do vermelho:** na referência, o vermelho é acento decorativo.
+> **Aqui não.** Vermelho é exclusivamente crítico (`#FF5C5C`). Se aparecer em
+> botão, em detalhe ou em linha por estética, o portal perde a capacidade de
+> alarmar. O acento de ação é o cyan da marca.
+
+### Onde essa atmosfera vale — e onde não
+
+A referência é uma experiência de marketing: uma mensagem por tela, muito
+respiro. Um portal precisa segurar informação densa.
+
+- **Vale integralmente** na home, no topo de cada ficha de praça, na tela de
+  aprendizados e em toda transição. São os momentos-herói.
+- **Cede a densidade** nos painéis de trabalho — a fila de sinais, o plano de 90
+  dias, o placar. Ali o material continua o mesmo (navy, fio cyan, vidro,
+  grão), mas o respiro diminui e a informação aumenta.
+
+Um portal bonito e vazio não sobrevive à segunda reunião. A atmosfera é o que
+faz a diretoria prestar atenção; a densidade é o que a faz voltar.
+
 ### O que evitar
 
 - **Tabela como componente padrão.** Se a tela virou grade de linhas e colunas,
@@ -125,8 +190,8 @@ Profundo, calmo, e quando algo precisa de atenção, aquilo se destaca sozinho.
   com barra embutida, marca de estado e linhas grandes e clicáveis.
 - Magenta e as demais cores de campanha. Neon genérico de dashboard. Emoji como
   ícone. Cartão branco com sombra suave.
-- Densidade de planilha. **Respiro é sinal de confiança.** Menos elementos,
-  maiores.
+- **Fundo chapado sem gradiente e sem grão.** É o erro que mais derruba esta
+  estética.
 - Ficção científica literal: HUD, hexágono, linha de varredura, fonte angular.
 
 ---
@@ -153,17 +218,32 @@ período.
 
 ## 4 · TELA 1 — SALA DE CONTROLE
 
-**Herói:** mapa do Brasil ocupando a maior parte da primeira dobra. Fundo
-escuro, 340 pontos discretos, quatro acesos com halo pulsante nas cidades:
-**Londrina/PR · Presidente Prudente/SP · Feira de Santana/BA · Mafra/SC**.
-Passar o mouse num ponto aceso abre um cartão flutuante com nota, avaliações e
-sinais abertos.
+**Herói:** o mapa do Brasil ocupando a primeira dobra inteira, tratado como
+**modelo técnico luminoso** — malha wireframe em cyan translúcido e nuvem de
+pontos, flutuando no navy, com a poça de luz radial embaixo. Não é um mapa
+preenchido: é uma peça de engenharia acesa no escuro.
 
-Sobreposto ao mapa, canto superior esquerdo, texto grande:
+340 pontos. Quatro acesos em cyan com halo; **336 apagados** em
+`rgba(255,255,255,.14)` — as cidades que a rede ainda não ouviu. As quatro
+acesas: **Londrina/PR · Presidente Prudente/SP · Feira de Santana/BA ·
+Mafra/SC**. Passar o mouse num ponto aceso abre um cartão de vidro com nota,
+avaliações e sinais abertos.
 
-> **4 de 340 praças ouvidas.**
+**Linhas de dado atravessando o espaço vazio ao redor do mapa:** a curva de
+sazonalidade de uma das praças desenhada em 1px cyan translúcido, com o pico de
+julho marcado por um ponto e o rótulo minúsculo `JUL · ÍNDICE 34`. Solta no
+espaço, sem caixa.
+
+Alinhado à esquerda, sobre o vazio, em contraste extremo de escala:
+
+> `INTELIGÊNCIA DE REDE` *(rótulo minúsculo, caixa alta, muito espaçado)*
+>
+> # 4 DE 340 PRAÇAS OUVIDAS *(Gotham Black, enorme)*
+>
 > Sabemos o que acontece dentro das clínicas. Estamos começando a saber o que
-> acontece em volta delas.
+> acontece em volta delas. *(coluna estreita, peso leve)*
+
+No canto direito, a numeração de capítulo em peso leve: `01` sobre `04`.
 
 **Faixa de números-herói** logo abaixo (contagem animada):
 
