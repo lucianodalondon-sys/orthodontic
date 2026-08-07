@@ -21,62 +21,113 @@ consultores de campo, e os franqueados — cada um vendo o seu nível.
 
 ## 1 · SISTEMA DE DESIGN
 
-**Base:** use o design system da OrthoDontic que já está no projeto — logo,
-cores de marca, tipografia, tom.
+Invoque a skill **`orthodontic-design`**. Linke `styles.css` (traz todos os
+tokens e a Gotham). Use os arquivos reais de logo em `assets/logos/` — **nunca
+redesenhe a marca**.
 
-**O que evoluir:** o sistema de marca foi feito para comunicação de paciente.
-Este é um **produto de software para a diretoria**. Então:
+### Use exatamente como está
 
-- Mantenha a **cor de marca como identidade e como acento de ação** (botões
-  primários, estado ativo, marca d'água). Não pinte tudo com ela.
-- Construa um **modo escuro como padrão** — um centro de operações vive no
-  escuro. O fundo não é preto chapado: é um azul-petróleo muito profundo, com
-  camadas de superfície que se distinguem por luminosidade, não por borda.
-- Adicione uma **família neutra fria** (5 a 6 degraus) para superfícies e texto,
-  e uma **paleta de estado** separada da marca: bom / atenção / grave / crítico.
-  Estado nunca pode usar a cor da marca — senão o portal parece estar sempre
-  alarmado ou sempre bem.
-- **Tipografia:** o display da marca para títulos e números-herói. Uma
-  monoespaçada técnica para todo dado — valores, datas de corte, N, IDs, códigos.
-  É o mono que dá cara de instrumento; sem ele vira relatório.
+Gotham (300 Light · 400 Book · 500 Medium · 700 Bold · 900 Black) ·
+cyan `#00B9FF` + navy `#001E78` · botões pill · sombras com tinta navy, nunca
+cinza neutro · brilho cyan (`--shadow-cyan`) nos CTAs primários e no estado
+ativo · anel de foco cyan de 3px · o motivo dos anéis concêntricos ·
+superfícies de vidro (`--glass-fill`, `--glass-blur`).
+
+### O mundo escuro já existe dentro da marca — não invente outro
+
+O sistema já tem o gradiente `--grad-navy` (`#16307F → #001E78 → #001A5C`) e os
+tokens `--surface-inverse` e `--surface-inverse-deep`. **O portal mora ali.**
+Não construa uma paleta escura nova: estenda a ponta navy do gradiente da marca.
+
+- **Plano da página:** `#001433` — um degrau abaixo de `--od-navy-800 #001A5C`
+- **Superfície de painel:** `--od-navy-800 #001A5C`, com o painel elevado em
+  `#02205F`
+- **Fio de borda:** `rgba(255,255,255,.10)`; borda de destaque `rgba(0,185,255,.28)`
+- **Texto:** branco · `rgba(255,255,255,.72)` · `rgba(255,255,255,.48)`
+- **Logo:** `logo-horizontal-white.png` e `symbol-white.png` — existem
+  exatamente para isto
+
+O resultado não é "um dashboard escuro". É a OrthoDontic no fundo do próprio
+gradiente dela.
+
+### Os três conflitos do sistema — e como resolver
+
+O sistema foi desenhado para campanha de paciente em fundo claro. Três coisas
+quebram num produto de operação, e o próprio readme marca as cores de estado
+como *adições*, não como manual — então há licença para ajustar.
+
+**1. `--color-info` É o cyan da marca.** Neste produto o cyan é a cor da marca,
+do botão primário e do estado ativo. Se também for "informação", tudo na tela
+lê como informação.
+→ **O cyan fica reservado para marca, ação primária e estado ativo. Não é
+status.** Elimine o nível "info" do conjunto.
+
+**2. `--color-danger #E23D6D` está praticamente em cima do `--od-magenta
+#E8408D`.** Um alerta crítico ficaria com a mesma cor de um CTA de campanha.
+→ **O magenta não aparece no portal.** Ele pertence ao mundo de campanha. E o
+crítico sobe para um vermelho que soa alarme sobre navy.
+
+**3. Os quatro estados foram escolhidos para fundo branco.** Sobre `#001A5C`
+eles precisam de novo degrau para segurar contraste.
+
+**O conjunto de estado do portal, sobre navy:**
+
+| Nível | Hex | Origem |
+|---|---|---|
+| Bom | `#3ED6B8` | `--color-success #2FB39B` clareado para o fundo escuro |
+| Atenção | `#F8D65D` | `--od-yellow`, funciona como aviso e não colide com nada |
+| Grave | `#F5A057` | `--od-orange`, secundária da marca, intacta |
+| Crítico | `#FF5C5C` | `--color-danger` reescalonado — longe do magenta, alarme sobre navy |
+
+**Regra:** cor de estado nunca é cor de marca, e cor de marca nunca é estado.
+
+### Duas adaptações de registro
+
+**Arredondamento.** A marca arredonda tudo. Mantenha **pill nos botões** — é
+definidor da marca. Mas painéis de dado usam `--radius-md 16px`, nunca `xl` ou
+`2xl`: arredondamento generoso em painel de operação fica com cara de brinquedo.
+
+**Voz.** A voz de "você", calorosa, com chips de benefício e reações em emoji, é
+para **paciente**. Este portal é interno, para um conselho. Use o registro que o
+próprio readme define para documentação: **formal, preciso, instrucional.** Sem
+emoji, sem estrela de avaliação, sem bolha de benefício.
+
+**Tipografia de dado.** Gotham para títulos e números-herói. Some uma
+**monoespaçada** para valores, datas de corte, N, filtros e IDs — é o mono que
+dá cara de instrumento. Sem ele, vira relatório.
 
 ---
 
 ## 2 · DIREÇÃO VISUAL
 
-**A referência mental é sala de controle — não ficção científica, não Power BI.**
-Pense em painel de operações de missão: escuro, profundo, calmo, e quando algo
-precisa de atenção, aquilo **respira**.
+**A referência é sala de controle — não ficção científica, não Power BI.**
+Profundo, calmo, e quando algo precisa de atenção, aquilo se destaca sozinho.
 
 ### O que fazer
 
-- **Profundidade real.** Painéis flutuam sobre o fundo com brilho de borda de
-  1px, sombra difusa e um gradiente interno quase imperceptível. Vidro fosco
-  (blur) na barra superior e nas gavetas.
-- **Números-herói gigantes.** Os indicadores principais aparecem em tipografia
-  enorme, com contagem animada na entrada. `5,9%` do agendamento tem que doer
-  na tela.
-- **Grão sutil e um brilho radial** atrás do conteúdo principal — o suficiente
-  para o fundo não parecer chapado.
-- **O mapa é o herói da home.** Brasil escuro, 340 pontos. Quatro acesos e
-  pulsando; 336 apagados. Isso conta a história inteira do produto sem uma
-  palavra.
-- **Sparkline em tudo que tem série.** Toda métrica com histórico carrega uma
-  microlinha ao lado do número.
-- **Alertas críticos pulsam** — um halo lento, não um piscar.
+- **Profundidade real.** Painéis flutuam sobre o plano navy com fio de 1px,
+  sombra navy difusa (`--shadow-lg`) e um gradiente interno quase imperceptível.
+  Vidro fosco na barra superior e nas gavetas — a marca já tem esse material.
+- **Números-herói gigantes** em Gotham Black (`--fw-black`), até `--text-7xl`,
+  com contagem animada na entrada. O `5,9%` do agendamento tem que doer na tela.
+- **O motivo dos anéis concêntricos** (`--rings-soft`) como marca d'água enorme
+  atrás do mapa. É o elemento da marca que mais parece radar — use isso.
+- **O mapa é o herói da home.** Brasil em navy profundo, 340 pontos. Quatro
+  acesos em cyan com halo; 336 apagados em `rgba(255,255,255,.14)`. Conta a
+  história inteira do produto sem uma palavra.
+- **Sparkline em tudo que tem série**, ao lado do número.
 - **Medidores radiais e trilhas de medição** no lugar de mais tabelas.
 
-### O que evitar (importante)
+### O que evitar
 
 - **Tabela como componente padrão.** Se a tela virou grade de linhas e colunas,
   está errada. Tabela só onde comparação item a item é o conteúdo — e mesmo lá,
-  com barra embutida, avatar de estado e linhas grandes e clicáveis.
-- Gradiente roxo-para-azul, neon genérico de dashboard, emoji como ícone,
-  cartão branco com sombra suave, tudo com canto arredondado grande.
-- Densidade de planilha. **Respiro é sinal de confiança.** Prefira menos
-  elementos, maiores.
-- Ficção científica literal: HUD, hexágonos, linhas de varredura, fontes
-  angulares.
+  com barra embutida, marca de estado e linhas grandes e clicáveis.
+- Magenta e as demais cores de campanha. Neon genérico de dashboard. Emoji como
+  ícone. Cartão branco com sombra suave.
+- Densidade de planilha. **Respiro é sinal de confiança.** Menos elementos,
+  maiores.
+- Ficção científica literal: HUD, hexágono, linha de varredura, fonte angular.
 
 ---
 
@@ -444,15 +495,21 @@ Conteúdo da gaveta, no exemplo do agendamento de Riomafra:
 
 ## 9 · MOVIMENTO
 
-- **Entrada orquestrada:** o mapa acende primeiro, os quatro pontos pulsam em
+Use os tokens de movimento do sistema: `--dur-fast 120ms` · `--dur 200ms` ·
+`--dur-slow 360ms` · `--dur-slower 600ms`, com `--ease-out` nas entradas.
+
+- **Entrada orquestrada:** o mapa acende primeiro, os quatro pontos acendem em
   sequência, os números contam até o valor, os cartões de sinal sobem
   escalonados.
 - **Troca de tela:** deslize e fade curtos, nunca corte seco.
-- **Hover:** painéis ganham brilho de borda; barras clareiam; o ponto no mapa
-  expande o halo.
-- **Alertas críticos:** halo pulsando lento e contínuo.
+- **Hover:** painéis ganham brilho de borda cyan; barras clareiam; o ponto no
+  mapa expande o halo.
+- **Alertas críticos:** o halo respira **três vezes na entrada e para**. O
+  sistema proíbe movimento decorativo infinito — depois disso o estado é
+  carregado pela cor e pela faixa de severidade, não pela animação.
 - **Gráficos:** desenham na entrada — barras crescem, funil preenche de cima
   para baixo.
+- `--ease-bounce` só em botão. Nunca em dado.
 - Respeite `prefers-reduced-motion`.
 
 ---
