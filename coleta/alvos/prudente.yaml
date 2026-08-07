@@ -1,0 +1,518 @@
+# ALVOS DE COLETA — Presidente Prudente
+# Gerado de dados/identidade/prudente.json + os targets legados.
+# status: roda | construir | precisa_acesso   ·   chave: null = PENDENTE de descoberta
+# O que cada plataforma responde: coleta/FONTES.md
+
+praca_id: prudente
+nome: Presidente Prudente
+cidades:
+- Presidente Prudente/SP
+uf:
+- SP
+corte_ultimo: '2026-07-15'
+alvos:
+- name: ortho_pp_google
+  layer: proprio
+  platform: google
+  status: roda
+  freq: semanal
+  query: OrthoDontic Presidente Prudente
+- name: ortho_pp_ig
+  layer: proprio
+  platform: instagram
+  status: roda
+  freq: mensal
+  handle: orthodontic.presidenteprudente
+  max_posts: 15
+  comments_per_post: 30
+- name: odontocompany_pp_google
+  layer: concorrente
+  platform: google
+  status: roda
+  freq: semanal
+  query: OdontoCompany Presidente Prudente
+- name: sorrifacil_pp_google
+  layer: concorrente
+  platform: google
+  status: roda
+  freq: semanal
+  query: Sorrifácil Presidente Prudente
+- name: croorto_pp_google
+  layer: concorrente
+  platform: google
+  status: roda
+  freq: semanal
+  query: Croorto Odontologia Presidente Prudente
+- name: todossorrindo_pp_google
+  layer: concorrente
+  platform: google
+  status: roda
+  freq: semanal
+  query: Todos Sorrindo Odontologia Presidente Prudente
+- name: odontoclinic_pp_google
+  layer: concorrente
+  platform: google
+  status: roda
+  freq: semanal
+  query: Odontoclinic Presidente Prudente
+- name: guia_pp_ig
+  layer: influencer
+  platform: instagram
+  status: roda
+  freq: mensal
+  handle: guia.presidenteprudente
+  max_posts: 12
+  comments_per_post: 30
+- name: gastronomia_pp_ig
+  layer: influencer
+  platform: instagram
+  status: roda
+  freq: mensal
+  handle: gastronomiaprudente
+  max_posts: 10
+  comments_per_post: 30
+- name: maecoruja_pp_ig
+  layer: influencer
+  platform: instagram
+  status: roda
+  freq: mensal
+  handle: espacomaecoruja
+  max_posts: 10
+  comments_per_post: 30
+- name: mulhermais_pp_ig
+  layer: influencer
+  platform: instagram
+  status: roda
+  freq: mensal
+  handle: mulhermais.vc
+  max_posts: 10
+  comments_per_post: 30
+- name: precobaixo_pp_ig
+  layer: influencer
+  platform: instagram
+  status: roda
+  freq: mensal
+  handle: precobaixoprudente
+  max_posts: 10
+  comments_per_post: 30
+- name: akitembembarato_ig
+  layer: influencer
+  platform: instagram
+  status: roda
+  freq: mensal
+  handle: akitembembarato
+  max_posts: 10
+  comments_per_post: 30
+- name: imparcial_pp_ig
+  layer: influencer
+  platform: instagram
+  status: roda
+  freq: mensal
+  handle: oimparcialsp
+  max_posts: 10
+  comments_per_post: 30
+- name: sescthermas_ig
+  layer: influencer
+  platform: instagram
+  status: roda
+  freq: mensal
+  handle: sescthermas
+  max_posts: 10
+  comments_per_post: 30
+- name: nylounge_pp_ig
+  layer: influencer
+  platform: instagram
+  status: roda
+  freq: mensal
+  handle: nyloungeprudente
+  max_posts: 10
+  comments_per_post: 30
+- name: liveprudente_ig
+  layer: influencer
+  platform: instagram
+  status: roda
+  freq: mensal
+  handle: livepresidenteprudente
+  max_posts: 10
+  comments_per_post: 30
+- name: prefeitura_pp_ig
+  layer: influencer
+  platform: instagram
+  status: roda
+  freq: mensal
+  handle: prefeituraprudente
+  max_posts: 10
+  comments_per_post: 30
+- name: lucascavalcanti_tiktok
+  layer: influencer
+  platform: tiktok
+  status: roda
+  freq: mensal
+  handle: olucascavalcanti
+  max_posts: 12
+- name: ortho_pp_reclame_aqui
+  layer: proprio
+  platform: reclame_aqui
+  local_id: ortho_pp
+  chave_tipo: ra_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Histórico completo por CNPJ: volume, índice de resposta, tempo, solução.'
+- name: ortho_pp_doctoralia
+  layer: proprio
+  platform: doctoralia
+  local_id: ortho_pp
+  chave_tipo: slug
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Avaliação por PROFISSIONAL nomeado — mede a constante nº3 direto.
+- name: ortho_pp_google_qa
+  layer: proprio
+  platform: google_qa
+  local_id: ortho_pp
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Perguntas e respostas da ficha: a dúvida ANTES de decidir.'
+- name: ortho_pp_popular_times
+  layer: proprio
+  platform: popular_times
+  local_id: ortho_pp
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Movimento por hora e dia — a espera é pico ou é processo?
+- name: ortho_pp_whatsapp_teste
+  layer: proprio
+  platform: whatsapp_teste
+  local_id: ortho_pp
+  chave_tipo: telefone
+  chave: null
+  status: construir
+  freq: quinzenal
+  porque: Tempo até a primeira resposta. Roda na própria E nas concorrentes.
+- name: ortho_pp_gbp_insights
+  layer: proprio
+  platform: gbp_insights
+  local_id: ortho_pp
+  chave_tipo: place_id
+  chave: null
+  status: precisa_acesso
+  freq: mensal
+  porque: Buscas, visualizações, cliques e LIGAÇÕES. Precisa de acesso de parceiro.
+- name: ortho_pp_consumidor_gov
+  layer: proprio
+  platform: consumidor_gov
+  local_id: ortho_pp
+  chave_tipo: cnpj
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Reclamação oficial — base independente do Reclame Aqui.
+- name: ortho_pp_glassdoor
+  layer: proprio
+  platform: glassdoor
+  local_id: ortho_pp
+  chave_tipo: empresa
+  chave: null
+  status: construir
+  freq: trimestral
+  porque: Voz do funcionário da linha de frente. Só em agregado.
+- name: ortho_pp_conecta_funil
+  layer: proprio
+  platform: conecta_funil
+  local_id: ortho_pp
+  chave_tipo: unidade
+  chave: null
+  status: precisa_acesso
+  freq: mensal
+  porque: Funil, base ativa e safra. Depende da rede.
+- name: dentoclinic_pp_reclame_aqui
+  layer: concorrente
+  platform: reclame_aqui
+  local_id: dentoclinic_pp
+  chave_tipo: ra_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Histórico completo por CNPJ: volume, índice de resposta, tempo, solução.'
+- name: dentoclinic_pp_doctoralia
+  layer: concorrente
+  platform: doctoralia
+  local_id: dentoclinic_pp
+  chave_tipo: slug
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Avaliação por PROFISSIONAL nomeado — mede a constante nº3 direto.
+- name: dentoclinic_pp_google_qa
+  layer: concorrente
+  platform: google_qa
+  local_id: dentoclinic_pp
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Perguntas e respostas da ficha: a dúvida ANTES de decidir.'
+- name: dentoclinic_pp_popular_times
+  layer: concorrente
+  platform: popular_times
+  local_id: dentoclinic_pp
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Movimento por hora e dia — a espera é pico ou é processo?
+- name: dentoclinic_pp_whatsapp_teste
+  layer: concorrente
+  platform: whatsapp_teste
+  local_id: dentoclinic_pp
+  chave_tipo: telefone
+  chave: null
+  status: construir
+  freq: quinzenal
+  porque: Tempo até a primeira resposta. Roda na própria E nas concorrentes.
+- name: todos_sorrindo_pp_reclame_aqui
+  layer: concorrente
+  platform: reclame_aqui
+  local_id: todos_sorrindo_pp
+  chave_tipo: ra_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Histórico completo por CNPJ: volume, índice de resposta, tempo, solução.'
+- name: todos_sorrindo_pp_doctoralia
+  layer: concorrente
+  platform: doctoralia
+  local_id: todos_sorrindo_pp
+  chave_tipo: slug
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Avaliação por PROFISSIONAL nomeado — mede a constante nº3 direto.
+- name: todos_sorrindo_pp_google_qa
+  layer: concorrente
+  platform: google_qa
+  local_id: todos_sorrindo_pp
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Perguntas e respostas da ficha: a dúvida ANTES de decidir.'
+- name: todos_sorrindo_pp_popular_times
+  layer: concorrente
+  platform: popular_times
+  local_id: todos_sorrindo_pp
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Movimento por hora e dia — a espera é pico ou é processo?
+- name: todos_sorrindo_pp_whatsapp_teste
+  layer: concorrente
+  platform: whatsapp_teste
+  local_id: todos_sorrindo_pp
+  chave_tipo: telefone
+  chave: null
+  status: construir
+  freq: quinzenal
+  porque: Tempo até a primeira resposta. Roda na própria E nas concorrentes.
+- name: nexa_pp_reclame_aqui
+  layer: concorrente
+  platform: reclame_aqui
+  local_id: nexa_pp
+  chave_tipo: ra_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Histórico completo por CNPJ: volume, índice de resposta, tempo, solução.'
+- name: nexa_pp_doctoralia
+  layer: concorrente
+  platform: doctoralia
+  local_id: nexa_pp
+  chave_tipo: slug
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Avaliação por PROFISSIONAL nomeado — mede a constante nº3 direto.
+- name: nexa_pp_google_qa
+  layer: concorrente
+  platform: google_qa
+  local_id: nexa_pp
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Perguntas e respostas da ficha: a dúvida ANTES de decidir.'
+- name: nexa_pp_popular_times
+  layer: concorrente
+  platform: popular_times
+  local_id: nexa_pp
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Movimento por hora e dia — a espera é pico ou é processo?
+- name: nexa_pp_whatsapp_teste
+  layer: concorrente
+  platform: whatsapp_teste
+  local_id: nexa_pp
+  chave_tipo: telefone
+  chave: null
+  status: construir
+  freq: quinzenal
+  porque: Tempo até a primeira resposta. Roda na própria E nas concorrentes.
+- name: croorto_pp_reclame_aqui
+  layer: concorrente
+  platform: reclame_aqui
+  local_id: croorto_pp
+  chave_tipo: ra_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Histórico completo por CNPJ: volume, índice de resposta, tempo, solução.'
+- name: croorto_pp_doctoralia
+  layer: concorrente
+  platform: doctoralia
+  local_id: croorto_pp
+  chave_tipo: slug
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Avaliação por PROFISSIONAL nomeado — mede a constante nº3 direto.
+- name: croorto_pp_google_qa
+  layer: concorrente
+  platform: google_qa
+  local_id: croorto_pp
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Perguntas e respostas da ficha: a dúvida ANTES de decidir.'
+- name: croorto_pp_popular_times
+  layer: concorrente
+  platform: popular_times
+  local_id: croorto_pp
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Movimento por hora e dia — a espera é pico ou é processo?
+- name: croorto_pp_whatsapp_teste
+  layer: concorrente
+  platform: whatsapp_teste
+  local_id: croorto_pp
+  chave_tipo: telefone
+  chave: null
+  status: construir
+  freq: quinzenal
+  porque: Tempo até a primeira resposta. Roda na própria E nas concorrentes.
+- name: sorrifacil_pp_reclame_aqui
+  layer: concorrente
+  platform: reclame_aqui
+  local_id: sorrifacil_pp
+  chave_tipo: ra_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Histórico completo por CNPJ: volume, índice de resposta, tempo, solução.'
+- name: sorrifacil_pp_doctoralia
+  layer: concorrente
+  platform: doctoralia
+  local_id: sorrifacil_pp
+  chave_tipo: slug
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Avaliação por PROFISSIONAL nomeado — mede a constante nº3 direto.
+- name: sorrifacil_pp_google_qa
+  layer: concorrente
+  platform: google_qa
+  local_id: sorrifacil_pp
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Perguntas e respostas da ficha: a dúvida ANTES de decidir.'
+- name: sorrifacil_pp_popular_times
+  layer: concorrente
+  platform: popular_times
+  local_id: sorrifacil_pp
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Movimento por hora e dia — a espera é pico ou é processo?
+- name: sorrifacil_pp_whatsapp_teste
+  layer: concorrente
+  platform: whatsapp_teste
+  local_id: sorrifacil_pp
+  chave_tipo: telefone
+  chave: null
+  status: construir
+  freq: quinzenal
+  porque: Tempo até a primeira resposta. Roda na própria E nas concorrentes.
+- name: prudente_google_ads_transparency
+  layer: praca
+  platform: google_ads_transparency
+  status: construir
+  freq: semanal
+  porque: Quem compra a BUSCA. Toda a análise de mídia era só Meta.
+- name: prudente_mapa_diff
+  layer: praca
+  platform: mapa_diff
+  status: construir
+  freq: mensal
+  porque: Clínicas novas no raio desde a última coleta.
+- name: prudente_cnpj_novo
+  layer: praca
+  platform: cnpj_novo
+  status: construir
+  freq: mensal
+  porque: Clínica odontológica registrada na praça — vê o concorrente antes de ele abrir.
+- name: prudente_vagas
+  layer: praca
+  platform: vagas
+  status: construir
+  freq: mensal
+  porque: Concorrente contratando = expansão. Nossa vaga repetida de recepção = rotatividade.
+- name: prudente_cro_registro
+  layer: praca
+  platform: cro_registro
+  status: construir
+  freq: trimestral
+  porque: Quantos ortodontistas na cidade, e em qual clínica.
+- name: prudente_imprensa_rss
+  layer: praca
+  platform: imprensa_rss
+  status: construir
+  freq: semanal
+  porque: A joia enterrada sai daqui. Em Riomafra saiu.
+- name: prudente_grupos_facebook
+  layer: praca
+  platform: grupos_facebook
+  status: construir
+  freq: mensal
+  porque: 'A DECISÃO acontecendo: ''alguém indica ortodontista?''. Só grupo público.'
+- name: prudente_serp
+  layer: praca
+  platform: serp
+  status: roda
+  freq: mensal
+  porque: Quem aparece quando o paciente procura.
+- name: prudente_autocomplete
+  layer: praca
+  platform: autocomplete
+  status: construir
+  freq: mensal
+  porque: As dúvidas reais — pauta de conteúdo pronta.
+- name: prudente_trends
+  layer: praca
+  platform: trends
+  status: roda
+  freq: mensal
+  porque: Quando a praça procura.

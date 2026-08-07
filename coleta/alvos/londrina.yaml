@@ -1,0 +1,484 @@
+# ALVOS DE COLETA — Londrina
+# Gerado de dados/identidade/londrina.json + os targets legados.
+# status: roda | construir | precisa_acesso   ·   chave: null = PENDENTE de descoberta
+# O que cada plataforma responde: coleta/FONTES.md
+
+praca_id: londrina
+nome: Londrina
+cidades:
+- Londrina/PR
+uf:
+- PR
+corte_ultimo: '2026-07-15'
+nota_geografia: Zona Norte tem 108 mil hab. e nenhuma unidade OrthoDontic dentro — mercado descoberto
+  a confirmar.
+alvos:
+- name: ortho_souzanaves_google
+  layer: proprio
+  platform: google
+  status: roda
+  freq: semanal
+  query: OrthoDontic Londrina Souza Naves
+- name: ortho_centro_google
+  layer: proprio
+  platform: google
+  status: roda
+  freq: semanal
+  query: OrthoDontic Londrina Rua Sergipe Centro
+- name: ortho_souzanaves_ig
+  layer: proprio
+  platform: instagram
+  status: roda
+  freq: mensal
+  handle: orthodontic.londrinasouzanaves
+  max_posts: 15
+  comments_per_post: 30
+- name: ortho_centro_ig
+  layer: proprio
+  platform: instagram
+  status: roda
+  freq: mensal
+  handle: orthodontic.londrinacentro
+  max_posts: 12
+  comments_per_post: 30
+- name: odontoclinic_londrina_google
+  layer: concorrente
+  platform: google
+  status: roda
+  freq: semanal
+  query: Odontoclinic Londrina
+- name: oliverodonto_google
+  layer: concorrente
+  platform: google
+  status: roda
+  freq: semanal
+  query: Oliver Odonto Prime Londrina aparelho ortodôntico
+- name: clinics_saul_google
+  layer: concorrente
+  platform: google
+  status: roda
+  freq: semanal
+  query: Clinics Odontologia Premium Saul Elkind Londrina
+- name: dentel_saul_google
+  layer: concorrente
+  platform: google
+  status: roda
+  freq: semanal
+  query: Clínica Dentel Saul Elkind Londrina
+- name: sorridents_londrina_google
+  layer: concorrente
+  platform: google
+  status: roda
+  freq: semanal
+  query: Sorridents Londrina
+- name: odontocompany_londrina_google
+  layer: concorrente
+  platform: google
+  status: roda
+  freq: semanal
+  query: OdontoCompany Londrina
+- name: odontoclinic_ig
+  layer: concorrente
+  platform: instagram
+  status: roda
+  freq: mensal
+  handle: odontocliniclondrina
+  max_posts: 18
+  comments_per_post: 30
+- name: clinics_saul_ig
+  layer: concorrente
+  platform: instagram
+  status: roda
+  freq: mensal
+  handle: clinics.saulelkind
+  max_posts: 10
+  comments_per_post: 30
+- name: londrinenses_ig
+  layer: influencer
+  platform: instagram
+  status: roda
+  freq: mensal
+  handle: londrinenses
+  max_posts: 12
+  comments_per_post: 30
+- name: pricylatotti_ig
+  layer: influencer
+  platform: instagram
+  status: roda
+  freq: mensal
+  handle: pricylatotti
+  max_posts: 12
+  comments_per_post: 30
+- name: cidadeoferta_ig
+  layer: influencer
+  platform: instagram
+  status: roda
+  freq: mensal
+  handle: cidadeoferta
+  max_posts: 10
+  comments_per_post: 30
+- name: londrinero_ig
+  layer: influencer
+  platform: instagram
+  status: roda
+  freq: mensal
+  handle: londrinero
+  max_posts: 10
+  comments_per_post: 30
+- name: ortho_souza_naves_reclame_aqui
+  layer: proprio
+  platform: reclame_aqui
+  local_id: ortho_souza_naves
+  chave_tipo: ra_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Histórico completo por CNPJ: volume, índice de resposta, tempo, solução.'
+- name: ortho_souza_naves_doctoralia
+  layer: proprio
+  platform: doctoralia
+  local_id: ortho_souza_naves
+  chave_tipo: slug
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Avaliação por PROFISSIONAL nomeado — mede a constante nº3 direto.
+- name: ortho_souza_naves_google_qa
+  layer: proprio
+  platform: google_qa
+  local_id: ortho_souza_naves
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Perguntas e respostas da ficha: a dúvida ANTES de decidir.'
+- name: ortho_souza_naves_popular_times
+  layer: proprio
+  platform: popular_times
+  local_id: ortho_souza_naves
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Movimento por hora e dia — a espera é pico ou é processo?
+- name: ortho_souza_naves_whatsapp_teste
+  layer: proprio
+  platform: whatsapp_teste
+  local_id: ortho_souza_naves
+  chave_tipo: telefone
+  chave: null
+  status: construir
+  freq: quinzenal
+  porque: Tempo até a primeira resposta. Roda na própria E nas concorrentes.
+- name: ortho_souza_naves_gbp_insights
+  layer: proprio
+  platform: gbp_insights
+  local_id: ortho_souza_naves
+  chave_tipo: place_id
+  chave: null
+  status: precisa_acesso
+  freq: mensal
+  porque: Buscas, visualizações, cliques e LIGAÇÕES. Precisa de acesso de parceiro.
+- name: ortho_souza_naves_consumidor_gov
+  layer: proprio
+  platform: consumidor_gov
+  local_id: ortho_souza_naves
+  chave_tipo: cnpj
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Reclamação oficial — base independente do Reclame Aqui.
+- name: ortho_souza_naves_glassdoor
+  layer: proprio
+  platform: glassdoor
+  local_id: ortho_souza_naves
+  chave_tipo: empresa
+  chave: null
+  status: construir
+  freq: trimestral
+  porque: Voz do funcionário da linha de frente. Só em agregado.
+- name: ortho_souza_naves_conecta_funil
+  layer: proprio
+  platform: conecta_funil
+  local_id: ortho_souza_naves
+  chave_tipo: unidade
+  chave: null
+  status: precisa_acesso
+  freq: mensal
+  porque: Funil, base ativa e safra. Depende da rede.
+- name: ortho_centro_ldn_reclame_aqui
+  layer: proprio
+  platform: reclame_aqui
+  local_id: ortho_centro_ldn
+  chave_tipo: ra_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Histórico completo por CNPJ: volume, índice de resposta, tempo, solução.'
+- name: ortho_centro_ldn_doctoralia
+  layer: proprio
+  platform: doctoralia
+  local_id: ortho_centro_ldn
+  chave_tipo: slug
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Avaliação por PROFISSIONAL nomeado — mede a constante nº3 direto.
+- name: ortho_centro_ldn_google_qa
+  layer: proprio
+  platform: google_qa
+  local_id: ortho_centro_ldn
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Perguntas e respostas da ficha: a dúvida ANTES de decidir.'
+- name: ortho_centro_ldn_popular_times
+  layer: proprio
+  platform: popular_times
+  local_id: ortho_centro_ldn
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Movimento por hora e dia — a espera é pico ou é processo?
+- name: ortho_centro_ldn_whatsapp_teste
+  layer: proprio
+  platform: whatsapp_teste
+  local_id: ortho_centro_ldn
+  chave_tipo: telefone
+  chave: null
+  status: construir
+  freq: quinzenal
+  porque: Tempo até a primeira resposta. Roda na própria E nas concorrentes.
+- name: ortho_centro_ldn_gbp_insights
+  layer: proprio
+  platform: gbp_insights
+  local_id: ortho_centro_ldn
+  chave_tipo: place_id
+  chave: null
+  status: precisa_acesso
+  freq: mensal
+  porque: Buscas, visualizações, cliques e LIGAÇÕES. Precisa de acesso de parceiro.
+- name: ortho_centro_ldn_consumidor_gov
+  layer: proprio
+  platform: consumidor_gov
+  local_id: ortho_centro_ldn
+  chave_tipo: cnpj
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Reclamação oficial — base independente do Reclame Aqui.
+- name: ortho_centro_ldn_glassdoor
+  layer: proprio
+  platform: glassdoor
+  local_id: ortho_centro_ldn
+  chave_tipo: empresa
+  chave: null
+  status: construir
+  freq: trimestral
+  porque: Voz do funcionário da linha de frente. Só em agregado.
+- name: ortho_centro_ldn_conecta_funil
+  layer: proprio
+  platform: conecta_funil
+  local_id: ortho_centro_ldn
+  chave_tipo: unidade
+  chave: null
+  status: precisa_acesso
+  freq: mensal
+  porque: Funil, base ativa e safra. Depende da rede.
+- name: odontoclinic_ldn_reclame_aqui
+  layer: concorrente
+  platform: reclame_aqui
+  local_id: odontoclinic_ldn
+  chave_tipo: ra_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Histórico completo por CNPJ: volume, índice de resposta, tempo, solução.'
+- name: odontoclinic_ldn_doctoralia
+  layer: concorrente
+  platform: doctoralia
+  local_id: odontoclinic_ldn
+  chave_tipo: slug
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Avaliação por PROFISSIONAL nomeado — mede a constante nº3 direto.
+- name: odontoclinic_ldn_google_qa
+  layer: concorrente
+  platform: google_qa
+  local_id: odontoclinic_ldn
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Perguntas e respostas da ficha: a dúvida ANTES de decidir.'
+- name: odontoclinic_ldn_popular_times
+  layer: concorrente
+  platform: popular_times
+  local_id: odontoclinic_ldn
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Movimento por hora e dia — a espera é pico ou é processo?
+- name: odontoclinic_ldn_whatsapp_teste
+  layer: concorrente
+  platform: whatsapp_teste
+  local_id: odontoclinic_ldn
+  chave_tipo: telefone
+  chave: null
+  status: construir
+  freq: quinzenal
+  porque: Tempo até a primeira resposta. Roda na própria E nas concorrentes.
+- name: aline_oliver_reclame_aqui
+  layer: concorrente
+  platform: reclame_aqui
+  local_id: aline_oliver
+  chave_tipo: ra_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Histórico completo por CNPJ: volume, índice de resposta, tempo, solução.'
+- name: aline_oliver_doctoralia
+  layer: concorrente
+  platform: doctoralia
+  local_id: aline_oliver
+  chave_tipo: slug
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Avaliação por PROFISSIONAL nomeado — mede a constante nº3 direto.
+- name: aline_oliver_google_qa
+  layer: concorrente
+  platform: google_qa
+  local_id: aline_oliver
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Perguntas e respostas da ficha: a dúvida ANTES de decidir.'
+- name: aline_oliver_popular_times
+  layer: concorrente
+  platform: popular_times
+  local_id: aline_oliver
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Movimento por hora e dia — a espera é pico ou é processo?
+- name: aline_oliver_whatsapp_teste
+  layer: concorrente
+  platform: whatsapp_teste
+  local_id: aline_oliver
+  chave_tipo: telefone
+  chave: null
+  status: construir
+  freq: quinzenal
+  porque: Tempo até a primeira resposta. Roda na própria E nas concorrentes.
+- name: dentel_ldn_reclame_aqui
+  layer: concorrente
+  platform: reclame_aqui
+  local_id: dentel_ldn
+  chave_tipo: ra_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Histórico completo por CNPJ: volume, índice de resposta, tempo, solução.'
+- name: dentel_ldn_doctoralia
+  layer: concorrente
+  platform: doctoralia
+  local_id: dentel_ldn
+  chave_tipo: slug
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Avaliação por PROFISSIONAL nomeado — mede a constante nº3 direto.
+- name: dentel_ldn_google_qa
+  layer: concorrente
+  platform: google_qa
+  local_id: dentel_ldn
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Perguntas e respostas da ficha: a dúvida ANTES de decidir.'
+- name: dentel_ldn_popular_times
+  layer: concorrente
+  platform: popular_times
+  local_id: dentel_ldn
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Movimento por hora e dia — a espera é pico ou é processo?
+- name: dentel_ldn_whatsapp_teste
+  layer: concorrente
+  platform: whatsapp_teste
+  local_id: dentel_ldn
+  chave_tipo: telefone
+  chave: null
+  status: construir
+  freq: quinzenal
+  porque: Tempo até a primeira resposta. Roda na própria E nas concorrentes.
+- name: londrina_google_ads_transparency
+  layer: praca
+  platform: google_ads_transparency
+  status: construir
+  freq: semanal
+  porque: Quem compra a BUSCA. Toda a análise de mídia era só Meta.
+- name: londrina_mapa_diff
+  layer: praca
+  platform: mapa_diff
+  status: construir
+  freq: mensal
+  porque: Clínicas novas no raio desde a última coleta.
+- name: londrina_cnpj_novo
+  layer: praca
+  platform: cnpj_novo
+  status: construir
+  freq: mensal
+  porque: Clínica odontológica registrada na praça — vê o concorrente antes de ele abrir.
+- name: londrina_vagas
+  layer: praca
+  platform: vagas
+  status: construir
+  freq: mensal
+  porque: Concorrente contratando = expansão. Nossa vaga repetida de recepção = rotatividade.
+- name: londrina_cro_registro
+  layer: praca
+  platform: cro_registro
+  status: construir
+  freq: trimestral
+  porque: Quantos ortodontistas na cidade, e em qual clínica.
+- name: londrina_imprensa_rss
+  layer: praca
+  platform: imprensa_rss
+  status: construir
+  freq: semanal
+  porque: A joia enterrada sai daqui. Em Riomafra saiu.
+- name: londrina_grupos_facebook
+  layer: praca
+  platform: grupos_facebook
+  status: construir
+  freq: mensal
+  porque: 'A DECISÃO acontecendo: ''alguém indica ortodontista?''. Só grupo público.'
+- name: londrina_serp
+  layer: praca
+  platform: serp
+  status: roda
+  freq: mensal
+  porque: Quem aparece quando o paciente procura.
+- name: londrina_autocomplete
+  layer: praca
+  platform: autocomplete
+  status: construir
+  freq: mensal
+  porque: As dúvidas reais — pauta de conteúdo pronta.
+- name: londrina_trends
+  layer: praca
+  platform: trends
+  status: roda
+  freq: mensal
+  porque: Quando a praça procura.

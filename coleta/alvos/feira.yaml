@@ -1,0 +1,383 @@
+# ALVOS DE COLETA — Feira de Santana
+# Gerado de dados/identidade/feira.json + os targets legados.
+# status: roda | construir | precisa_acesso   ·   chave: null = PENDENTE de descoberta
+# O que cada plataforma responde: coleta/FONTES.md
+
+praca_id: feira
+nome: Feira de Santana
+cidades:
+- Feira de Santana/BA
+uf:
+- BA
+corte_ultimo: '2026-07-15'
+alvos:
+- name: ortho_fsa_google
+  layer: proprio
+  platform: google
+  status: roda
+  freq: semanal
+  query: OrthoDontic Feira de Santana
+- name: odontocompany_fsa_google
+  layer: concorrente
+  platform: google
+  status: roda
+  freq: semanal
+  query: OdontoCompany Feira de Santana
+- name: sorridents_fsa_google
+  layer: concorrente
+  platform: google
+  status: roda
+  freq: semanal
+  query: Sorridents Feira de Santana
+- name: odontoclinic_fsa_google
+  layer: concorrente
+  platform: google
+  status: roda
+  freq: semanal
+  query: Odontoclinic Feira de Santana
+- name: uefs_odonto_google
+  layer: concorrente
+  platform: google
+  status: roda
+  freq: semanal
+  query: UEFS clínica odontológica Feira de Santana
+- name: acordacidade_ig
+  layer: influencer
+  platform: instagram
+  status: roda
+  freq: mensal
+  handle: acordacidade
+  max_posts: 12
+  comments_per_post: 30
+- name: guiasupermercados_ig
+  layer: influencer
+  platform: instagram
+  status: roda
+  freq: mensal
+  handle: oguiadesupermercadosfsa
+  max_posts: 10
+  comments_per_post: 30
+- name: feiraguay_ig
+  layer: influencer
+  platform: instagram
+  status: roda
+  freq: mensal
+  handle: feiraguayfs.oficial
+  max_posts: 10
+  comments_per_post: 30
+- name: prefeiturafeira_ig
+  layer: influencer
+  platform: instagram
+  status: roda
+  freq: mensal
+  handle: prefeituradefeira
+  max_posts: 10
+  comments_per_post: 30
+- name: ortho_feira_ig
+  layer: proprio
+  platform: instagram
+  status: roda
+  freq: mensal
+  handle: orthodontic.feira
+  max_posts: 15
+  comments_per_post: 30
+- name: moisessuzart_ig
+  layer: concorrente
+  platform: instagram
+  status: roda
+  freq: mensal
+  handle: clinicamoises.suzart
+  max_posts: 15
+  comments_per_post: 30
+- name: humorfeirense_ig
+  layer: influencer
+  platform: instagram
+  status: roda
+  freq: mensal
+  handle: humorfeirense
+  max_posts: 10
+  comments_per_post: 30
+- name: feirensesincero_ig
+  layer: influencer
+  platform: instagram
+  status: roda
+  freq: mensal
+  handle: feirensesincero
+  max_posts: 10
+  comments_per_post: 30
+- name: ortho_fsa_reclame_aqui
+  layer: proprio
+  platform: reclame_aqui
+  local_id: ortho_fsa
+  chave_tipo: ra_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Histórico completo por CNPJ: volume, índice de resposta, tempo, solução.'
+- name: ortho_fsa_doctoralia
+  layer: proprio
+  platform: doctoralia
+  local_id: ortho_fsa
+  chave_tipo: slug
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Avaliação por PROFISSIONAL nomeado — mede a constante nº3 direto.
+- name: ortho_fsa_google_qa
+  layer: proprio
+  platform: google_qa
+  local_id: ortho_fsa
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Perguntas e respostas da ficha: a dúvida ANTES de decidir.'
+- name: ortho_fsa_popular_times
+  layer: proprio
+  platform: popular_times
+  local_id: ortho_fsa
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Movimento por hora e dia — a espera é pico ou é processo?
+- name: ortho_fsa_whatsapp_teste
+  layer: proprio
+  platform: whatsapp_teste
+  local_id: ortho_fsa
+  chave_tipo: telefone
+  chave: null
+  status: construir
+  freq: quinzenal
+  porque: Tempo até a primeira resposta. Roda na própria E nas concorrentes.
+- name: ortho_fsa_gbp_insights
+  layer: proprio
+  platform: gbp_insights
+  local_id: ortho_fsa
+  chave_tipo: place_id
+  chave: null
+  status: precisa_acesso
+  freq: mensal
+  porque: Buscas, visualizações, cliques e LIGAÇÕES. Precisa de acesso de parceiro.
+- name: ortho_fsa_consumidor_gov
+  layer: proprio
+  platform: consumidor_gov
+  local_id: ortho_fsa
+  chave_tipo: cnpj
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Reclamação oficial — base independente do Reclame Aqui.
+- name: ortho_fsa_glassdoor
+  layer: proprio
+  platform: glassdoor
+  local_id: ortho_fsa
+  chave_tipo: empresa
+  chave: null
+  status: construir
+  freq: trimestral
+  porque: Voz do funcionário da linha de frente. Só em agregado.
+- name: ortho_fsa_conecta_funil
+  layer: proprio
+  platform: conecta_funil
+  local_id: ortho_fsa
+  chave_tipo: unidade
+  chave: null
+  status: precisa_acesso
+  freq: mensal
+  porque: Funil, base ativa e safra. Depende da rede.
+- name: gigante_fsa_reclame_aqui
+  layer: concorrente
+  platform: reclame_aqui
+  local_id: gigante_fsa
+  chave_tipo: ra_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Histórico completo por CNPJ: volume, índice de resposta, tempo, solução.'
+- name: gigante_fsa_doctoralia
+  layer: concorrente
+  platform: doctoralia
+  local_id: gigante_fsa
+  chave_tipo: slug
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Avaliação por PROFISSIONAL nomeado — mede a constante nº3 direto.
+- name: gigante_fsa_google_qa
+  layer: concorrente
+  platform: google_qa
+  local_id: gigante_fsa
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Perguntas e respostas da ficha: a dúvida ANTES de decidir.'
+- name: gigante_fsa_popular_times
+  layer: concorrente
+  platform: popular_times
+  local_id: gigante_fsa
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Movimento por hora e dia — a espera é pico ou é processo?
+- name: gigante_fsa_whatsapp_teste
+  layer: concorrente
+  platform: whatsapp_teste
+  local_id: gigante_fsa
+  chave_tipo: telefone
+  chave: null
+  status: construir
+  freq: quinzenal
+  porque: Tempo até a primeira resposta. Roda na própria E nas concorrentes.
+- name: oc_fsa_reclame_aqui
+  layer: concorrente
+  platform: reclame_aqui
+  local_id: oc_fsa
+  chave_tipo: ra_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Histórico completo por CNPJ: volume, índice de resposta, tempo, solução.'
+- name: oc_fsa_doctoralia
+  layer: concorrente
+  platform: doctoralia
+  local_id: oc_fsa
+  chave_tipo: slug
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Avaliação por PROFISSIONAL nomeado — mede a constante nº3 direto.
+- name: oc_fsa_google_qa
+  layer: concorrente
+  platform: google_qa
+  local_id: oc_fsa
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Perguntas e respostas da ficha: a dúvida ANTES de decidir.'
+- name: oc_fsa_popular_times
+  layer: concorrente
+  platform: popular_times
+  local_id: oc_fsa
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Movimento por hora e dia — a espera é pico ou é processo?
+- name: oc_fsa_whatsapp_teste
+  layer: concorrente
+  platform: whatsapp_teste
+  local_id: oc_fsa
+  chave_tipo: telefone
+  chave: null
+  status: construir
+  freq: quinzenal
+  porque: Tempo até a primeira resposta. Roda na própria E nas concorrentes.
+- name: uefs_fsa_reclame_aqui
+  layer: concorrente
+  platform: reclame_aqui
+  local_id: uefs_fsa
+  chave_tipo: ra_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Histórico completo por CNPJ: volume, índice de resposta, tempo, solução.'
+- name: uefs_fsa_doctoralia
+  layer: concorrente
+  platform: doctoralia
+  local_id: uefs_fsa
+  chave_tipo: slug
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Avaliação por PROFISSIONAL nomeado — mede a constante nº3 direto.
+- name: uefs_fsa_google_qa
+  layer: concorrente
+  platform: google_qa
+  local_id: uefs_fsa
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: 'Perguntas e respostas da ficha: a dúvida ANTES de decidir.'
+- name: uefs_fsa_popular_times
+  layer: concorrente
+  platform: popular_times
+  local_id: uefs_fsa
+  chave_tipo: place_id
+  chave: null
+  status: construir
+  freq: mensal
+  porque: Movimento por hora e dia — a espera é pico ou é processo?
+- name: uefs_fsa_whatsapp_teste
+  layer: concorrente
+  platform: whatsapp_teste
+  local_id: uefs_fsa
+  chave_tipo: telefone
+  chave: null
+  status: construir
+  freq: quinzenal
+  porque: Tempo até a primeira resposta. Roda na própria E nas concorrentes.
+- name: feira_google_ads_transparency
+  layer: praca
+  platform: google_ads_transparency
+  status: construir
+  freq: semanal
+  porque: Quem compra a BUSCA. Toda a análise de mídia era só Meta.
+- name: feira_mapa_diff
+  layer: praca
+  platform: mapa_diff
+  status: construir
+  freq: mensal
+  porque: Clínicas novas no raio desde a última coleta.
+- name: feira_cnpj_novo
+  layer: praca
+  platform: cnpj_novo
+  status: construir
+  freq: mensal
+  porque: Clínica odontológica registrada na praça — vê o concorrente antes de ele abrir.
+- name: feira_vagas
+  layer: praca
+  platform: vagas
+  status: construir
+  freq: mensal
+  porque: Concorrente contratando = expansão. Nossa vaga repetida de recepção = rotatividade.
+- name: feira_cro_registro
+  layer: praca
+  platform: cro_registro
+  status: construir
+  freq: trimestral
+  porque: Quantos ortodontistas na cidade, e em qual clínica.
+- name: feira_imprensa_rss
+  layer: praca
+  platform: imprensa_rss
+  status: construir
+  freq: semanal
+  porque: A joia enterrada sai daqui. Em Riomafra saiu.
+- name: feira_grupos_facebook
+  layer: praca
+  platform: grupos_facebook
+  status: construir
+  freq: mensal
+  porque: 'A DECISÃO acontecendo: ''alguém indica ortodontista?''. Só grupo público.'
+- name: feira_serp
+  layer: praca
+  platform: serp
+  status: roda
+  freq: mensal
+  porque: Quem aparece quando o paciente procura.
+- name: feira_autocomplete
+  layer: praca
+  platform: autocomplete
+  status: construir
+  freq: mensal
+  porque: As dúvidas reais — pauta de conteúdo pronta.
+- name: feira_trends
+  layer: praca
+  platform: trends
+  status: roda
+  freq: mensal
+  porque: Quando a praça procura.
