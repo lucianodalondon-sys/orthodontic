@@ -1,0 +1,1151 @@
+<title>Orthodontic Intelligence — piloto</title>
+<style>
+:root{
+  color-scheme: light;
+  --plane:#eef1f1; --surface:#fbfcfc; --surface-2:#f5f7f7;
+  --ink:#0d1213; --ink-2:#5a6364; --ink-3:#8b9596;
+  --rule:rgba(13,18,19,.12); --rule-soft:rgba(13,18,19,.07);
+  --accent:#2a78d6; --accent-soft:rgba(42,120,214,.10);
+  --good:#0ca30c; --warn:#fab219; --serious:#ec835a; --crit:#d03b3b;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100;
+  --grid:#e1e5e5; --axis:#c3caca;
+  --shade:rgba(13,18,19,.045);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --plane:#0a0e0f; --surface:#151a1b; --surface-2:#1b2122;
+    --ink:#f2f5f5; --ink-2:#a8b3b4; --ink-3:#7d8889;
+    --rule:rgba(242,245,245,.14); --rule-soft:rgba(242,245,245,.07);
+    --accent:#3987e5; --accent-soft:rgba(57,135,229,.16);
+    --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500;
+    --grid:#252c2d; --axis:#333c3d;
+    --shade:rgba(242,245,245,.05);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --plane:#0a0e0f; --surface:#151a1b; --surface-2:#1b2122;
+  --ink:#f2f5f5; --ink-2:#a8b3b4; --ink-3:#7d8889;
+  --rule:rgba(242,245,245,.14); --rule-soft:rgba(242,245,245,.07);
+  --accent:#3987e5; --accent-soft:rgba(57,135,229,.16);
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500;
+  --grid:#252c2d; --axis:#333c3d;
+  --shade:rgba(242,245,245,.05);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--plane); color:var(--ink);
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:14px; line-height:1.5; -webkit-font-smoothing:antialiased;
+}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-variant-numeric:tabular-nums}
+
+/* ---------- shell ---------- */
+.shell{display:grid;grid-template-columns:200px 1fr;min-height:100vh}
+.rail{
+  background:var(--surface);border-right:1px solid var(--rule);
+  padding:0 0 24px;position:sticky;top:0;height:100vh;overflow-y:auto;
+  display:flex;flex-direction:column;gap:2px;
+}
+.brand{padding:18px 16px 16px;border-bottom:1px solid var(--rule-soft);margin-bottom:10px}
+.brand b{display:block;font-size:13px;letter-spacing:.02em}
+.brand span{display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-top:3px}
+.railgroup{font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);padding:14px 16px 6px}
+.navitem{
+  appearance:none;background:none;border:0;width:100%;text-align:left;
+  padding:8px 16px;font:inherit;color:var(--ink-2);cursor:pointer;
+  display:flex;align-items:center;gap:9px;border-left:2px solid transparent;
+}
+.navitem:hover{background:var(--shade);color:var(--ink)}
+.navitem[aria-current="true"]{color:var(--ink);border-left-color:var(--accent);background:var(--accent-soft);font-weight:550}
+.navitem .dot{width:6px;height:6px;border-radius:50%;flex:none}
+.navitem:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+
+.main{min-width:0;display:flex;flex-direction:column}
+.topbar{
+  display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+  padding:11px 22px;background:var(--surface);border-bottom:1px solid var(--rule);
+  position:sticky;top:0;z-index:20;
+}
+.topmeta{font-size:11px;color:var(--ink-3);display:flex;gap:6px;align-items:baseline}
+.topmeta b{color:var(--ink-2);font-weight:600}
+.cov{display:flex;align-items:center;gap:8px}
+.covbar{width:80px;height:5px;background:var(--grid);position:relative;overflow:hidden}
+.covbar i{position:absolute;inset:0 auto 0 0;width:1.2%;background:var(--accent);min-width:3px}
+.spacer{flex:1}
+.themetoggle{appearance:none;background:none;border:1px solid var(--rule);color:var(--ink-2);
+  padding:4px 10px;font:inherit;font-size:11px;cursor:pointer}
+.themetoggle:hover{background:var(--shade);color:var(--ink)}
+
+.view{padding:22px;display:none;flex-direction:column;gap:16px;max-width:1180px}
+.view[data-active="true"]{display:flex}
+
+/* ---------- panel ---------- */
+.panel{background:var(--surface);border:1px solid var(--rule);}
+.panelhead{
+  display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
+  padding:12px 16px;border-bottom:1px solid var(--rule-soft);
+}
+.panelhead h2{margin:0;font-size:13px;font-weight:600;letter-spacing:.01em}
+.panelhead .eyebrow{font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.panelhead .note{font-size:11px;color:var(--ink-3);margin-left:auto}
+.panelbody{padding:16px}
+.panelbody.flush{padding:0}
+
+h1{font-size:22px;margin:0;font-weight:620;letter-spacing:-.01em;text-wrap:balance}
+.sub{color:var(--ink-2);font-size:13px;margin:6px 0 0;max-width:62ch}
+
+/* ---------- signal rows ---------- */
+.sigrow{display:flex;gap:12px;padding:12px 16px;border-bottom:1px solid var(--rule-soft);align-items:flex-start}
+.sigrow:last-child{border-bottom:0}
+.sev{width:3px;align-self:stretch;flex:none;min-height:34px}
+.sev.crit{background:var(--crit)}.sev.serious{background:var(--serious)}
+.sev.warn{background:var(--warn)}.sev.good{background:var(--good)}
+.sigmain{flex:1;min-width:0}
+.sigtitle{font-size:13px;font-weight:560;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.sigtitle .where{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.sigbody{font-size:12.5px;color:var(--ink-2);margin-top:3px}
+.sigact{font-size:12px;margin-top:6px;color:var(--ink)}
+.sigact b{font-weight:600}
+.chip{
+  display:inline-flex;align-items:center;gap:5px;font-size:10px;letter-spacing:.06em;
+  text-transform:uppercase;padding:2px 7px;border:1px solid var(--rule);color:var(--ink-2);
+}
+.chip i{width:6px;height:6px;border-radius:50%;flex:none;display:block}
+
+/* ---------- praça table ---------- */
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{
+  text-align:left;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-3);font-weight:600;padding:9px 14px;border-bottom:1px solid var(--rule);white-space:nowrap;
+}
+td{padding:11px 14px;border-bottom:1px solid var(--rule-soft);vertical-align:middle}
+tr:last-child td{border-bottom:0}
+tbody tr:hover{background:var(--shade)}
+td.num{text-align:right}
+.tablewrap{overflow-x:auto}
+.rowbtn{appearance:none;background:none;border:0;padding:0;font:inherit;color:var(--accent);cursor:pointer;text-align:left;font-weight:560}
+.rowbtn:hover{text-decoration:underline}
+
+/* ---------- evidence affordance ---------- */
+.ev{
+  appearance:none;background:none;border:0;padding:0 0 0 3px;margin:0;cursor:pointer;
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:9px;color:var(--ink-3);vertical-align:super;line-height:1;
+}
+.ev:hover{color:var(--accent)}
+.ev::before{content:"◇"}
+.ev:focus-visible{outline:1px solid var(--accent);outline-offset:2px}
+
+/* ---------- régua ---------- */
+.regua{display:flex;flex-direction:column;gap:14px}
+.rline{display:grid;grid-template-columns:120px 1fr 96px;gap:12px;align-items:center}
+.rlabel{font-size:12px;color:var(--ink-2)}
+.rtrack{position:relative;height:26px}
+.rvals{font-size:12px;text-align:right;color:var(--ink-2)}
+.rvals b{color:var(--ink);font-weight:620}
+
+/* ---------- learning ---------- */
+.state{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--rule-soft)}
+.statecell{background:var(--surface);padding:12px 14px}
+.statecell .n{font-size:24px;font-weight:600;letter-spacing:-.02em}
+.statecell .l{font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-top:2px}
+.statecell .d{font-size:11.5px;color:var(--ink-2);margin-top:5px}
+.statecell.dead .n{color:var(--crit)}
+
+.finding{padding:13px 16px;border-bottom:1px solid var(--rule-soft)}
+.finding:last-child{border-bottom:0}
+.fhead{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.fstate{font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;padding:2px 6px;border:1px solid var(--rule);color:var(--ink-2);flex:none}
+.fstate.dead{border-color:var(--crit);color:var(--crit)}
+.ftitle{font-size:13px;font-weight:550;flex:1;min-width:200px}
+.fcount{font-size:11px;color:var(--ink-3)}
+.fev{font-size:12px;color:var(--ink-2);margin-top:6px;display:flex;gap:14px;flex-wrap:wrap}
+.fev span{display:inline-flex;gap:5px;align-items:baseline}
+.fev em{font-style:normal;color:var(--ink-3);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase}
+
+/* ---------- kit checker ---------- */
+.kitgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;background:var(--rule-soft)}
+.kitcell{background:var(--surface);padding:14px}
+.kitcell h4{margin:0 0 3px;font-size:12.5px;font-weight:600}
+.kitverdict{display:flex;align-items:center;gap:7px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin:8px 0}
+.kitverdict i{width:8px;height:8px;flex:none;display:block}
+.kitcell p{margin:0;font-size:12.5px;color:var(--ink-2)}
+.kitcell .lex{margin-top:9px;font-size:11px;color:var(--ink-3)}
+.kitinput{
+  width:100%;background:var(--surface-2);border:1px solid var(--rule);color:var(--ink);
+  font:inherit;font-size:13px;padding:10px 12px;resize:vertical;min-height:64px;
+}
+.kitinput:focus-visible{outline:2px solid var(--accent);outline-offset:-1px}
+
+/* ---------- quotes ---------- */
+.quotes{display:flex;flex-direction:column;gap:0}
+.q{padding:12px 16px;border-bottom:1px solid var(--rule-soft)}
+.q:last-child{border-bottom:0}
+.q p{margin:0;font-size:13.5px}
+.q cite{display:block;font-style:normal;font-size:11px;color:var(--ink-3);margin-top:5px}
+
+/* ---------- dna ---------- */
+.dna{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1px;background:var(--rule-soft)}
+.dnacell{background:var(--surface);padding:13px 15px}
+.dnacell .l{font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-bottom:6px}
+.dnacell p{margin:0;font-size:12.5px;color:var(--ink-2)}
+.dnacell.forbid .l{color:var(--crit)}
+
+/* ---------- actions ---------- */
+.act{display:grid;grid-template-columns:26px 1fr auto;gap:12px;padding:11px 16px;border-bottom:1px solid var(--rule-soft);align-items:baseline}
+.act:last-child{border-bottom:0}
+.actn{font-size:11px;color:var(--ink-3)}
+.actt{font-size:12.5px}
+.actt small{display:block;color:var(--ink-3);font-size:11px;margin-top:2px}
+.actstatus{font-size:10px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;color:var(--ink-2)}
+
+/* ---------- empty ---------- */
+.empty{padding:26px 16px;text-align:center;color:var(--ink-3);font-size:12.5px}
+.empty b{display:block;color:var(--ink-2);font-size:13px;margin-bottom:4px;font-weight:560}
+
+/* ---------- slide-over ---------- */
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.32);opacity:0;pointer-events:none;transition:opacity .16s;z-index:40}
+.scrim[data-open="true"]{opacity:1;pointer-events:auto}
+.drawer{
+  position:fixed;top:0;right:0;bottom:0;width:min(430px,92vw);background:var(--surface);
+  border-left:1px solid var(--rule);z-index:50;transform:translateX(100%);
+  transition:transform .18s ease;display:flex;flex-direction:column;
+}
+.drawer[data-open="true"]{transform:none}
+.drawerhead{padding:14px 18px;border-bottom:1px solid var(--rule);display:flex;align-items:flex-start;gap:12px}
+.drawerhead .eyebrow{font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.drawerhead h3{margin:4px 0 0;font-size:14px;font-weight:600}
+.closebtn{appearance:none;background:none;border:1px solid var(--rule);color:var(--ink-2);
+  width:26px;height:26px;cursor:pointer;flex:none;font-size:14px;line-height:1}
+.closebtn:hover{background:var(--shade);color:var(--ink)}
+.drawerbody{padding:16px 18px;overflow-y:auto;display:flex;flex-direction:column;gap:16px}
+.evfig{font-size:34px;font-weight:600;letter-spacing:-.02em}
+.evfig small{display:block;font-size:11.5px;font-weight:400;color:var(--ink-2);letter-spacing:0;margin-top:3px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:5px 14px;font-size:12px}
+.kv dt{color:var(--ink-3);font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding-top:1px}
+.kv dd{margin:0;color:var(--ink-2);word-break:break-word}
+.counter{border-left:2px solid var(--serious);padding:8px 0 8px 11px;font-size:12.5px;color:var(--ink-2);background:var(--surface-2)}
+.counter b{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--serious);margin-bottom:3px}
+.conf{display:inline-flex;align-items:center;gap:6px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+.conf i{width:7px;height:7px;flex:none;display:block}
+
+/* ---------- tooltip ---------- */
+.tip{
+  position:fixed;pointer-events:none;z-index:60;background:var(--surface);
+  border:1px solid var(--rule);padding:7px 10px;font-size:12px;color:var(--ink);
+  opacity:0;transition:opacity .1s;box-shadow:0 4px 14px rgba(0,0,0,.14);max-width:240px;
+}
+.tip[data-open="true"]{opacity:1}
+.tip b{display:block;font-size:11px;color:var(--ink-3);font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:2px}
+
+svg{display:block;max-width:100%}
+svg text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-variant-numeric:tabular-nums}
+.hitbar{cursor:pointer}
+.hitbar:hover rect.mark{opacity:.82}
+
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:11px;color:var(--ink-2);padding:0 16px 14px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:9px;height:9px;flex:none;display:block}
+
+.footnote{font-size:11px;color:var(--ink-3);padding:10px 16px;border-top:1px solid var(--rule-soft)}
+
+@media (max-width:820px){
+  .shell{grid-template-columns:1fr}
+  .rail{position:static;height:auto;flex-direction:row;flex-wrap:wrap;border-right:0;border-bottom:1px solid var(--rule);padding-bottom:8px}
+  .brand{width:100%;margin-bottom:0}
+  .railgroup{display:none}
+  .navitem{width:auto;border-left:0;border-bottom:2px solid transparent;padding:8px 12px}
+  .navitem[aria-current="true"]{border-left:0;border-bottom-color:var(--accent)}
+  .rline{grid-template-columns:1fr;gap:4px}
+  .rvals{text-align:left}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="shell">
+  <nav class="rail">
+    <div class="brand">
+      <b>Orthodontic Intelligence</b>
+      <span>piloto · 4 praças</span>
+    </div>
+    <div class="railgroup">Rede</div>
+    <button class="navitem" data-go="rede" aria-current="true"><span class="dot" style="background:var(--crit)"></span>Sinais</button>
+    <button class="navitem" data-go="achados"><span class="dot" style="background:var(--accent)"></span>O que aprendemos</button>
+    <button class="navitem" data-go="kit"><span class="dot" style="background:var(--warn)"></span>Corretor de campanha</button>
+    <div class="railgroup">Praças</div>
+    <button class="navitem" data-praca="riomafra"><span class="dot" style="background:var(--crit)"></span>Riomafra</button>
+    <button class="navitem" data-praca="londrina"><span class="dot" style="background:var(--serious)"></span>Londrina</button>
+    <button class="navitem" data-praca="feira"><span class="dot" style="background:var(--serious)"></span>Feira de Santana</button>
+    <button class="navitem" data-praca="prudente"><span class="dot" style="background:var(--good)"></span>Pres. Prudente</button>
+  </nav>
+
+  <div class="main">
+    <header class="topbar">
+      <div class="cov">
+        <span class="topmeta"><b class="mono">4</b>/<span class="mono">340</span> praças ouvidas</span>
+        <span class="covbar"><i></i></span>
+      </div>
+      <span class="topmeta">corte <b class="mono">15/jul/2026</b></span>
+      <span class="topmeta">taxonomia <b class="mono">v1.1</b></span>
+      <span class="topmeta">2ª coleta <b class="mono">pendente</b></span>
+      <span class="spacer"></span>
+      <button class="themetoggle" id="themebtn">tema</button>
+    </header>
+
+    <!-- ================= REDE ================= -->
+    <section class="view" data-view="rede" data-active="true">
+      <div>
+        <h1>Onde a rede precisa olhar hoje</h1>
+        <p class="sub">Sete sinais abertos nas quatro praças ouvidas. Cada um nasce com evidência e com o que fazer — alerta sem ação é ruído.</p>
+      </div>
+
+      <div class="panel">
+        <div class="panelhead">
+          <span class="eyebrow">Sinais abertos</span>
+          <h2>Fila por severidade</h2>
+          <span class="note">todos derivados da coleta de 15/jul/2026</span>
+        </div>
+        <div id="signals"></div>
+      </div>
+
+      <div class="panel">
+        <div class="panelhead">
+          <span class="eyebrow">Praças</span>
+          <h2>O placar da rede ouvida</h2>
+          <span class="note">clique na praça para abrir a ficha</span>
+        </div>
+        <div class="panelbody flush tablewrap">
+          <table>
+            <thead><tr>
+              <th>Praça</th><th>Papel na rede</th><th class="num">Nota</th><th class="num">Avaliações</th>
+              <th class="num">Novas/mês</th><th class="num">Anúncios</th><th>Atendimento nos reviews</th>
+            </tr></thead>
+            <tbody id="pracarows"></tbody>
+          </table>
+        </div>
+        <p class="footnote">“Atendimento” é o % dos reviews da categoria que fala de <em>como foi tratado</em>. A série sobe conforme a cidade encolhe — é a constante nº 1 do método.</p>
+      </div>
+
+      <div class="panel">
+        <div class="panelhead">
+          <span class="eyebrow">Velocidade de reputação</span>
+          <h2>Reviews novos por mês, Riomafra</h2>
+          <span class="note">série de 14 meses · corte 15/jul/2026</span>
+        </div>
+        <div class="panelbody" id="chart-velocity"></div>
+        <p class="footnote">A nota diz que a clínica é ótima. A velocidade diz que ela está parada: <b>10 avaliações em 14 meses</b> contra <b>72 num único mês</b> da vizinha de nove meses de vida.</p>
+      </div>
+    </section>
+
+    <!-- ================= PRAÇA ================= -->
+    <section class="view" data-view="praca">
+      <div>
+        <span class="eyebrow mono" id="p-eyebrow" style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)"></span>
+        <h1 id="p-title"></h1>
+        <p class="sub" id="p-thesis"></p>
+      </div>
+
+      <div class="panel">
+        <div class="panelhead"><span class="eyebrow">Bloco 2</span><h2>Onde ela está</h2><span class="note" id="p-basis"></span></div>
+        <div class="panelbody"><div class="regua" id="p-ponteiros"></div></div>
+      </div>
+
+      <div class="panel" id="p-funnel-panel">
+        <div class="panelhead">
+          <span class="eyebrow">Inside × Outside</span><h2>O funil contra a régua da rede</h2>
+          <span class="note">dado interno do Conecta · 12 meses</span>
+        </div>
+        <div class="panelbody"><div class="regua" id="p-funnel"></div></div>
+        <p class="footnote"><b>Quem chega, fecha. Quem chama, some.</b> Três dos quatro estágios batem ou superam a régua. O único quebrado é o primeiro — e é o mais barato de consertar.</p>
+      </div>
+
+      <div class="panel">
+        <div class="panelhead"><span class="eyebrow">Bloco 3</span><h2>Quem está em volta</h2><span class="note" id="p-placar-note"></span></div>
+        <div class="panelbody flush tablewrap">
+          <table>
+            <thead><tr><th>Clínica</th><th>Tipo</th><th class="num">Nota</th><th>Volume de avaliações</th><th class="num">Anúncios</th></tr></thead>
+            <tbody id="p-placar"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="panel" id="p-season-panel">
+        <div class="panelhead"><span class="eyebrow">Temporada</span><h2>Quando a praça procura aparelho</h2><span class="note">série de 5 anos de busca</span></div>
+        <div class="panelbody" id="chart-season"></div>
+        <p class="footnote" id="p-season-note"></p>
+      </div>
+
+      <div class="panel">
+        <div class="panelhead"><span class="eyebrow">Bloco 4</span><h2>Quem é a cidade</h2><span class="note">o DNA local — não nacionalizável</span></div>
+        <div class="dna" id="p-dna"></div>
+      </div>
+
+      <div class="panel">
+        <div class="panelhead"><span class="eyebrow">Vozes reais</span><h2>O que os pacientes escreveram</h2><span class="note">verbatim, anonimizado — nunca reescrito</span></div>
+        <div class="quotes" id="p-quotes"></div>
+      </div>
+
+      <div class="panel">
+        <div class="panelhead"><span class="eyebrow">Bloco 5</span><h2>O que fazer</h2><span class="note" id="p-plan-note"></span></div>
+        <div id="p-plan"></div>
+      </div>
+
+      <div class="panel">
+        <div class="panelhead"><span class="eyebrow">Bloco 6</span><h2>O que mudou</h2><span class="note">desde a última coleta</span></div>
+        <div class="empty">
+          <b>Sem segundo ponto de série.</b>
+          Este bloco nasce na próxima coleta. É ele que transforma o estudo em sensor —
+          e é por isso que recoletar Riomafra é a ação mais urgente do piloto.
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ACHADOS ================= -->
+    <section class="view" data-view="achados">
+      <div>
+        <h1>O que aprendemos — e o quanto ainda não sabemos</h1>
+        <p class="sub">Um achado só vira regra da rede quando praças <em>diversas</em> confirmam. Quatro praças parecidas não fazem constante. Nada aqui é doutrina.</p>
+      </div>
+
+      <div class="panel">
+        <div class="panelhead"><span class="eyebrow">Máquina de estados</span><h2>Onde os achados estão</h2></div>
+        <div class="state">
+          <div class="statecell"><div class="n mono">0</div><div class="l">Hipótese</div><div class="d">1–2 praças</div></div>
+          <div class="statecell"><div class="n mono">13</div><div class="l">Candidata</div><div class="d">3+ praças, mesma direção</div></div>
+          <div class="statecell"><div class="n mono">0</div><div class="l">Constante</div><div class="d">praças diversas em região, porte e idade</div></div>
+          <div class="statecell"><div class="n mono">0</div><div class="l">Doutrina</div><div class="d">a rede decidiu agir</div></div>
+          <div class="statecell dead"><div class="n mono">1</div><div class="l">Derrubada</div><div class="d">uma praça contradisse</div></div>
+        </div>
+        <p class="footnote">A amostra atual não cobre Norte, Centro-Oeste, capital nem unidade recém-aberta. Por isso o teto honesto hoje é <b>candidata</b>.</p>
+      </div>
+
+      <div class="panel">
+        <div class="panelhead"><span class="eyebrow">Achados</span><h2>Confirmação por praça</h2></div>
+        <div id="findings"></div>
+      </div>
+
+      <div class="panel">
+        <div class="panelhead"><span class="eyebrow">Variáveis</span><h2>O que muda de praça para praça</h2><span class="note">nacionalizar qualquer uma destas quebra a campanha</span></div>
+        <div class="panelbody flush tablewrap">
+          <table>
+            <thead><tr><th>Dimensão</th><th>Londrina</th><th>Prudente</th><th>Feira</th><th>Riomafra</th></tr></thead>
+            <tbody id="variaveis"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= KIT ================= -->
+    <section class="view" data-view="kit">
+      <div>
+        <h1>Corretor de campanha nacional</h1>
+        <p class="sub">A peça nacional entra aqui e sai com o risco praça a praça. Não impede campanha nacional — diz como fazê-la descer sem quebrar.</p>
+      </div>
+
+      <div class="panel">
+        <div class="panelhead"><span class="eyebrow">Entrada</span><h2>A peça</h2><span class="note">exemplo real: o padrão que está no ar hoje</span></div>
+        <div class="panelbody">
+          <textarea class="kitinput" id="kitinput" spellcheck="false">🚨 SEMANA DO APARELHO! Últimos dias com condição especial. Aparelho sem entrada — agende agora mesmo sua avaliação!</textarea>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panelhead"><span class="eyebrow">Veredito</span><h2>Como esta peça desce em cada praça</h2><span class="note">contra o DNA documentado de cada uma</span></div>
+        <div class="kitgrid" id="kitgrid"></div>
+        <p class="footnote">A alavanca de preço tem quatro significados opostos nas quatro praças. É o achado que mais economiza dinheiro — e o mais fácil de ignorar.</p>
+      </div>
+
+      <div class="panel">
+        <div class="panelhead"><span class="eyebrow">A outra medição</span><h2>A campanha nacional chega à cadeira?</h2><span class="note">parecer do embaixador · 8 anos</span></div>
+        <div class="panelbody">
+          <div class="regua" id="descida"></div>
+        </div>
+        <p class="footnote">Esta é a única tela que mede o trabalho da <b>franqueadora</b>, não o do franqueado. É por isso que ela é a primeira a ser comprada.</p>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawertitle" aria-hidden="true">
+  <div class="drawerhead">
+    <div style="flex:1">
+      <div class="eyebrow">Evidência</div>
+      <h3 id="drawertitle">—</h3>
+    </div>
+    <button class="closebtn" id="closedrawer" aria-label="Fechar">×</button>
+  </div>
+  <div class="drawerbody" id="drawerbody"></div>
+</aside>
+<div class="tip" id="tip" role="status"></div>
+
+<script>
+"use strict";
+
+/* ============================================================
+   DADOS — todos extraídos dos estudos de praça (julho/2026).
+   Nenhum número aqui é estimado.
+   ============================================================ */
+
+const EV = {
+  atend_mafra: {
+    titulo:"Atendimento nos reviews · Riomafra", valor:"69%",
+    legenda:"dos reviews da categoria falam de como o paciente foi tratado",
+    n:"224 reviews com texto", corte:"15/jul/2026", tax:"v1.1",
+    fonte:"reviews_classificados.jsonl", filtro:"praca=riomafra AND tem_texto=true",
+    conf:"alta",
+    leitura:"O índice mais alto das quatro praças. A série 47 · 54 · 63 · 69 sobe conforme a cidade encolhe — em comunidade densa a reputação tem memória e o erro não se dilui.",
+    contra:"A base inclui pacientes de toda a odontologia local, porque as clínicas da praça são multi-serviço. Nas praças anteriores, com recorte estrito de ortodontia, a mesma constante deu 54–63% — o achado não depende do recorte."
+  },
+  agendamento: {
+    titulo:"Agendamento · Riomafra", valor:"5,9%",
+    legenda:"dos interessados viram avaliação agendada — a régua da rede espera 40%",
+    n:"5.050 interessados · 298 agendamentos · 12 meses", corte:"jul/2026", tax:"—",
+    fonte:"funil.jsonl (Conecta)", filtro:"unidade=ortho_mafra",
+    conf:"média",
+    leitura:"O único estágio quebrado do funil. Comparecimento bate a régua (49% ≈ 50%); fechamento e pagamento estão acima dela (75% e 99%). A cadeira e o contrato funcionam — o vão está entre a primeira mensagem e a agenda.",
+    contra:"O denominador não reconcilia: 109 pagos no funil contra ~336 contratos/ano na mesma unidade. Enquanto a reconciliação não fechar, o multiplicador projetado não é publicado."
+  },
+  velocity: {
+    titulo:"Velocidade de reputação · Riomafra", valor:"0,7",
+    legenda:"reviews novos por mês, contra ~28/mês da vizinha de nove meses",
+    n:"série de 14 meses, todas as avaliações datadas", corte:"15/jul/2026", tax:"—",
+    fonte:"reviews.jsonl · first_seen_snapshot", filtro:"local_id=ortho_mafra",
+    conf:"alta",
+    leitura:"A unidade somou 10 avaliações em 14 meses. A vizinha fez 72 num único mês (mar/26). Volume de reputação não é função do tempo de casa — é função de PEDIR.",
+    contra:"As avaliações da vizinha são de primeira impressão (recepção, café, ambiente): zero menção a aparelho e zero tratamento longo concluído. Volume dela não é comparável em qualidade de prova."
+  },
+  anuncios: {
+    titulo:"Anúncios ativos · Riomafra", valor:"0",
+    legenda:"contra 10 do concorrente novo e 7 da rede popular, no pico anual",
+    n:"biblioteca de anúncios do Meta", corte:"15/jul/2026", tax:"—",
+    fonte:"anuncios.jsonl", filtro:"praca=riomafra AND ativo=true",
+    conf:"alta",
+    leitura:"Não é pausa — é ausência: zero também no histórico da biblioteca. E acontece no mês de índice 34, o pico da série de cinco anos da região.",
+    contra:"Ausência na biblioteca pública não prova ausência de mídia em canais fora do Meta (rádio, impresso, patrocínio local). O estudo registra patrocínio a escoteiros."
+  },
+  gap_londrina: {
+    titulo:"Gap de marca · Londrina", valor:"4,6 × 3,5",
+    legenda:"a mesma marca, na mesma cidade, com duas experiências diferentes",
+    n:"matriz Souza Naves (561 aval.) × filial Centro", corte:"jul/2026", tax:"—",
+    fonte:"places.jsonl", filtro:"praca=londrina AND papel=proprio",
+    conf:"alta",
+    leitura:"O paciente não distingue unidade — distingue marca. O gap entre a melhor e a pior unidade é o passivo de marca mais concreto que existe, e é responsabilidade da franqueadora.",
+    contra:"O ranking nominal entre unidades não é exposto na visão de rede. Aqui aparece porque são duas fichas da mesma praça, e a comparação é interna à cidade."
+  },
+  coro_feira: {
+    titulo:"Mídia ativa · Feira de Santana", valor:"59",
+    legenda:"anúncios no ar de 16 anunciantes, quase todos com o mesmo texto",
+    n:"biblioteca de anúncios do Meta", corte:"jul/2026", tax:"—",
+    fonte:"anuncios.jsonl", filtro:"praca=feira AND ativo=true",
+    conf:"alta",
+    leitura:"A OrthoDontic é quem mais anuncia — 17 ativos — e diz o que todos dizem. O líder da cidade se recusa a gritar e lidera: fala de acolhimento, planejamento e acompanhamento.",
+    contra:"Volume de anúncio ativo não é volume de verba: a biblioteca não publica investimento para anúncio comercial no Brasil."
+  },
+  telo: {
+    titulo:"Descida da campanha nacional", valor:"1/156",
+    legenda:"publicações de unidade que carregam o embaixador",
+    n:"29 unidades · 5 regiões · 161 posts", corte:"jul/2026", tax:"—",
+    fonte:"descida_nacional.jsonl", filtro:"palco=unidade",
+    conf:"alta",
+    leitura:"Oito anos de embaixador, 2.834 vozes analisadas e zero menções espontâneas. O jingle aparece em 1 de 34 criativos nacionais. Está subusado, não gasto.",
+    contra:"A medição é de presença pública, não de lembrança de marca. Pesquisa de recall nunca foi divulgada — esse dado só a rede possui."
+  }
+};
+
+const SIGNALS = [
+  {sev:"crit", praca:"Riomafra", t:"Concorrente invadiu a categoria",
+   b:"A clínica de nove meses ao lado — que só vendia prótese e implante — começou a anunciar aparelho em julho, no pico anual da região.",
+   a:"Subir 4–6 anúncios sempre-ativos com rosto e parcela clara. Prazo: 7–14 dias.", ev:"anuncios"},
+  {sev:"crit", praca:"Riomafra", t:"Silêncio no pico",
+   b:"Zero anúncios ativos — e zero no histórico — enquanto a busca da região está no índice 34, o topo da série de cinco anos.",
+   a:"Programar as duas ondas de férias: margem PR até 27/07, margem SC de 23/07 a 02/08. O criativo troca de margem no dia 23.", ev:"anuncios"},
+  {sev:"crit", praca:"Riomafra", t:"Agendamento a 5,9% contra régua de 40%",
+   b:"De cada 100 interessados, seis viram avaliação agendada. Comparecimento, fechamento e pagamento batem ou superam a régua.",
+   a:"Blindar a linha de frente: resposta em minutos, e trocar rajada de campanha por fluxo constante.", ev:"agendamento"},
+  {sev:"serious", praca:"Londrina", t:"Gap de marca dentro da mesma cidade",
+   b:"A matriz tem 4,6 e a filial do Centro tem 3,5. Para o paciente, as duas são OrthoDontic.",
+   a:"Tratar como passivo de marca da franqueadora, não como problema de uma unidade.", ev:"gap_londrina"},
+  {sev:"serious", praca:"Feira", t:"A unidade grita dentro do coro",
+   b:"17 anúncios ativos num mar de 59 anúncios de 16 anunciantes com texto quase idêntico. Quem lidera a cidade se recusa a gritar.",
+   a:"Trocar urgência por rosto, acolhimento e preço dito como orgulho do batalhador.", ev:"coro_feira"},
+  {sev:"warn", praca:"Riomafra", t:"Velocidade de reputação travada",
+   b:"0,7 review novo por mês. A vizinha faz ~28 pedindo a cada paciente na primeira visita.",
+   a:"Ligar a máquina de avaliações, priorizando review de tratamento CONCLUÍDO — o que a vizinha não consegue ter.", ev:"velocity"},
+  {sev:"warn", praca:"Prudente", t:"Claim sem validação",
+   b:"“A mais bem avaliada de Prudente” é sustentável pelos números (4,9 · 582), mas o próprio estudo marca o claim como pendente.",
+   a:"Validar a redação exata antes de publicar.", ev:null}
+];
+
+const PRACAS = {
+  riomafra: {
+    nome:"Riomafra", cidade:"Mafra/SC · Rio Negro/PR",
+    eyebrow:"Praça · piloto aplicado · única com dado interno",
+    titulo:"A melhor clínica da cidade é a mais calada",
+    tese:"Melhor reputação entre as grandes da praça, quase nenhuma ferida, e o ativo mais raro numa cidade de colônia: donos ortodontistas nascidos ali, com sobrenome da terra. E está em silêncio, no mês em que a região mais procura aparelho.",
+    base:"452 vozes · corte 15/jul/2026",
+    nota:4.9, aval:155, vel:0.7, ads:0, atend:"69%", atendN:"N=224", papel:"franquia · 7 anos",
+    ponteiros:[
+      {l:"Nota", v:4.9, max:5, meta:4.8, fmt:n=>n.toFixed(1), metaL:"meta 4,8"},
+      {l:"Avaliações novas/mês", v:0.7, max:30, meta:15, fmt:n=>n.toFixed(1), metaL:"meta 15", ev:"velocity"},
+      {l:"Anúncios ativos", v:0, max:12, meta:5, fmt:n=>String(n), metaL:"meta 4–6", ev:"anuncios"},
+      {l:"Volume vs líder", v:155, max:338, meta:338, fmt:n=>String(n), metaL:"líder 338"}
+    ],
+    funil:[
+      {l:"Interessados", v:5050, pct:null, regua:null, raw:"5.050"},
+      {l:"Agendamentos", v:298, pct:5.9, regua:40, raw:"298", ev:"agendamento"},
+      {l:"Comparecimentos", v:147, pct:49.3, regua:50, raw:"147"},
+      {l:"Fechados", v:110, pct:74.8, regua:80, raw:"110"},
+      {l:"Pagos", v:109, pct:99.1, regua:90, raw:"109"}
+    ],
+    placar:[
+      {n:"OdontoCompany Mafra", t:"rede popular", nota:4.7, vol:338, ads:7},
+      {n:"Instituto Lumière", t:"tráfego pago · 9 meses", nota:5.0, vol:197, ads:10},
+      {n:"OdontoCompany Rio Negro", t:"rede popular", nota:4.7, vol:188, ads:"—"},
+      {n:"OrthoDontic Mafra", t:"a nossa · especialista", nota:4.9, vol:155, ads:0, own:true},
+      {n:"Cuidado e Prevenção", t:"local · 20 anos · infantil", nota:4.9, vol:135, ads:"—"},
+      {n:"Edgard Góes", t:"consultório · margem PR", nota:5.0, vol:103, ads:"—"}
+    ],
+    placarNote:"a OrthoDontic é a única clínica da praça especializada em ortodontia",
+    season:[{m:"JUL",v:34,peak:true},{m:"AGO",v:23},{m:"SET",v:22},{m:"DEZ/JAN",v:5,low:true}],
+    seasonNote:"Os pontos que a série de cinco anos publica. <b>Dezembro e janeiro são vale aqui</b> — a tese nacional de “férias de fim de ano” não vale no planalto, e foi essa praça que a derrubou.",
+    dna:[
+      {l:"A língua", t:"O falar do planalto — “piá”, chimarrão, inverno de verdade. E dizer <b>Riomafra</b>: a praça é uma colônia partida ao meio pela divisa, com ônibus urbano cruzando a ponte."},
+      {l:"Temperamento", t:"Colônia discreta e comunitária. Desconfia de promessa grande; respeita trabalho, constância e palavra cumprida."},
+      {l:"A alavanca", t:"Prova antes de promessa. Parcela clara que cabe no orçamento — nunca leilão de desconto."},
+      {l:"A joia enterrada", t:"O casal de ortodontistas que voltou pra casa em 2019. De 2 para 9 especialistas. Sobrenome da colônia no mapa das duas cidades — e ausente do feed.", forbid:false},
+      {l:"Jamais", t:"Hype, urgência de liquidação, “última chance” — o radar antivigarista da colônia queima a marca. Nunca gíria gaúcha nem estética de Oktoberfest.", forbid:true}
+    ],
+    quotes:[
+      {t:"A melhor clínica e os melhores dentistas!!!", c:"seguidor da unidade — comentário público espontâneo"},
+      {t:"Ótimo atendimento, preço justo e lugar aconchegante.", c:"paciente — avaliação pública"},
+      {t:"Clínica limpa e cheirosa, ambiente super agradável e profissionais mto atenciosos.", c:"paciente — avaliação pública"},
+      {t:"falta de comunicação entre a equipe… fiquei 1 mês sem manutenção", c:"paciente — a única ferida da unidade, e é operacional"}
+    ],
+    plan:[
+      {n:"01",t:"Blindar manutenção e retenção",d:"protocolo de confirmação + régua de relacionamento nos meses 2–6 + alerta de paciente sumido",s:"15 dias · baixo→ALTO"},
+      {n:"02",t:"Ligar a máquina de avaliações",d:"pedir a cada paciente satisfeito, priorizando tratamento concluído · meta ≥15/mês",s:"15 dias · baixo→alto"},
+      {n:"03",t:"Destravar o rosto",d:"a história do casal no feed, na fachada e nos anúncios",s:"30 dias · baixo→alto"},
+      {n:"04",t:"Reocupar a especialidade",d:"80% do feed em ortodontia — hoje posta facetas, implante, canal e prótese",s:"30 dias · baixo→alto"},
+      {n:"05",t:"Entrar na mídia paga JÁ",d:"4–6 anúncios sempre-ativos, programados nas duas ondas de férias",s:"7–14 dias · URGENTE"},
+      {n:"06",t:"Reivindicar as duas margens",d:"geotargeting Rio Negro e interior, criativo por cidade",s:"60 dias · médio"},
+      {n:"07",t:"Parcerias de comunidade",d:"futsal 9–15 anos, maternidade, perfil-indicador, festa de setembro",s:"90 dias · médio"}
+    ],
+    planNote:"plano de 90 dias · construído com a unidade"
+  },
+  londrina: {
+    nome:"Londrina", cidade:"Londrina/PR — Souza Naves",
+    eyebrow:"Praça · a MATRIZ · onde a rede nasceu em 2002",
+    titulo:"A coroa que está escorregando",
+    tese:"A clínica que a franqueadora opera com o próprio nome, na cidade onde a marca nasceu, tem o maior volume de avaliações de Londrina — e não é a nº 1. Uma clínica geral leva 4,9 na mesma cidade.",
+    base:"1.400+ vozes · 615 reviews (438 com texto)",
+    nota:4.6, aval:561, vel:null, ads:null, atend:"54%", atendN:"237/438", papel:"matriz própria",
+    ponteiros:[
+      {l:"Nota", v:4.6, max:5, meta:4.8, fmt:n=>n.toFixed(1), metaL:"meta 4,8"},
+      {l:"Avaliações", v:561, max:600, meta:533, fmt:n=>String(n), metaL:"líder 533"},
+      {l:"Filial do Centro", v:3.5, max:5, meta:4.8, fmt:n=>n.toFixed(1), metaL:"meta 4,8", ev:"gap_londrina"}
+    ],
+    funil:null,
+    placar:[
+      {n:"Odontoclinic", t:"clínica geral · a líder de nota", nota:4.9, vol:533, ads:"7 (mix)"},
+      {n:"OrthoDontic Souza Naves", t:"a nossa · a matriz", nota:4.6, vol:561, ads:"urgência", own:true},
+      {n:"Especialista em aparelho", t:"doutora · nome próprio", nota:4.6, vol:116, ads:"—"},
+      {n:"Dentel", t:"clínica", nota:4.2, vol:null, ads:"—"},
+      {n:"Sorrifácil · OdontoCompany", t:"redes populares", nota:3.9, vol:null, ads:"—"},
+      {n:"OrthoDontic Centro", t:"a nossa · filial", nota:3.5, vol:null, ads:"—", own:true}
+    ],
+    placarNote:"a mesma marca ocupa o 2º e o último lugar do placar",
+    season:null,
+    dna:[
+      {l:"A língua", t:"Orgulho de raiz e tradição — “meu pai abriu esse restaurante em 1967”, “Ahhh, Londrina!”. Fé e família. Consumo por indicação."},
+      {l:"Temperamento", t:"Opinativo e exigente: comenta e cobra a cidade. Quem mora aqui tem orgulho e opinião."},
+      {l:"A alavanca", t:"Confiança + preço justo. Público de meio de funil — preço baixo levanta suspeita, não desejo."},
+      {l:"A joia enterrada", t:"É a matriz, tocada por quem fundou a rede, na cidade onde a maior rede de ortodontia do Brasil nasceu (2002, cinco amigos da UEL). Não aparece em lugar nenhum da comunicação — nem placa tem."},
+      {l:"Jamais", t:"Urgência de liquidação. A matriz não briga de igual para igual no preço — briga na autoridade e na relação.", forbid:true}
+    ],
+    quotes:[
+      {t:"sempre me senti acolhido e hoje, ao fim do tratamento, me sinto muito realizado. Consigo sorrir novamente", c:"paciente — fim de tratamento"},
+      {t:"Dr. João nota 10, excelente doutor", c:"paciente — a confiança é em gente com nome"},
+      {t:"faço tratamento desde os meus 15 anos, adoro as recepcionistas e os especialistas", c:"paciente — relação de anos"},
+      {t:"Graças a Deus li os comentários!!!", c:"mãe, buscando dentista para aparelho — o Google é o campo de batalha"}
+    ],
+    plan:[
+      {n:"01",t:"Blindar a operação",d:"WhatsApp, agenda, vencimento, contrato + rotina de resposta nas plataformas",s:"antes de mídia nova"},
+      {n:"02",t:"Desenterrar a história",d:"assumir publicamente o status de matriz e a origem londrinense",s:"a diferenciação mais barata que existe"},
+      {n:"03",t:"Virar o feed",d:"gente com nome, fundadores, gerações",s:"—"},
+      {n:"04",t:"Retomar a conversa com a mãe",d:"com autoridade, não com promoção genérica",s:"segmentar por férias e adulto 30+"},
+      {n:"05",t:"Medir",d:"custo por avaliação agendada · reviews novos/mês · nota rumo a 4,8+",s:"—"}
+    ],
+    planNote:"ordem de execução"
+  },
+  feira: {
+    nome:"Feira de Santana", cidade:"Feira de Santana/BA — Centro",
+    eyebrow:"Praça · a Princesa do Sertão · 616 mil hab.",
+    titulo:"Todos os caminhos levam à Feira. Menos o da própria clínica",
+    tese:"Bem avaliada, no calçadão mais movimentado do Centro, numa cidade maior que oito capitais. E fala como franquia de qualquer lugar do Brasil, numa praça que é puro orgulho local — enquanto um doutor com nome e rosto domina com 1.268 avaliações.",
+    base:"800+ vozes · 59 anúncios ativos da categoria",
+    nota:4.7, aval:173, vel:null, ads:17, atend:"63%", atendN:"reviews da categoria", papel:"franquia",
+    ponteiros:[
+      {l:"Nota", v:4.7, max:5, meta:4.8, fmt:n=>n.toFixed(1), metaL:"meta 4,8"},
+      {l:"Avaliações", v:173, max:1268, meta:1268, fmt:n=>String(n), metaL:"líder 1.268"},
+      {l:"Anúncios ativos", v:17, max:20, meta:null, fmt:n=>String(n), metaL:"", ev:"coro_feira"}
+    ],
+    funil:null,
+    placar:[
+      {n:"Clínica do doutor local", t:"pessoa física · o gigante", nota:4.9, vol:1268, ads:"acolhimento"},
+      {n:"OrthoDontic Feira", t:"a nossa", nota:4.7, vol:173, ads:17, own:true},
+      {n:"OdontoCompany", t:"rede popular · a 400 m", nota:4.4, vol:56, ads:"—"},
+      {n:"Faculdade", t:"clínica-escola", nota:4.4, vol:9, ads:"—"}
+    ],
+    placarNote:"nota alta, volume baixo — o oposto exato do líder",
+    season:null,
+    dna:[
+      {l:"A língua", t:"Baianês com pé no sertão — “oxe”, “meu rei / minha rainha”, “massa”, “arrochar”. Caloroso, direto, bem-humorado."},
+      {l:"Temperamento", t:"O orgulho é do trabalho e do movimento. O batalhador é o herói: “pagar menos e sair por cima” é virtude, não vergonha. Fareja oportunismo."},
+      {l:"A alavanca", t:"Preço como ORGULHO — “cabe no seu bolso, meu rei” — dito na língua da cidade, nunca como leilão da semana."},
+      {l:"A joia enterrada", t:"Nenhuma ainda. A unidade é invisível fora do Google: ~3 mil seguidores, nenhuma menção na imprensa local. Aqui a estratégia é CONSTRUIR pertencimento, não desenterrar patrimônio."},
+      {l:"Jamais", t:"Axé litorâneo de vitrine — soa a quem confundiu Feira com Salvador. Nem corporativês de franquia, nem grito de desconto da semana.", forbid:true}
+    ],
+    quotes:[
+      {t:"Preço acessível e me trataram como gente. Amei.", c:"paciente — o elogio já vem no idioma da cidade"},
+      {t:"AMEI o atendimento! Do comercial às dras, todo mundo gentil. Ambiente acolhedor e preço super acessível.", c:"paciente — avaliação pública"},
+      {t:"quando era menor eu tinha um problema na mandíbula… não tenho palavras para descrever o quão feliz estou.", c:"paciente — autoestima transformada"},
+      {t:"marca horário e atende 2, 3, 4 horas depois", c:"paciente — a ferida nº 1 da unidade"}
+    ],
+    plan:[
+      {n:"01",t:"Blindar a agenda",d:"a espera é a ferida nº 1 — e ligar a máquina de reviews",s:"antes de mídia nova"},
+      {n:"02",t:"Virar feirense",d:"feed com gente, rosto, baianês, orgulho de Feira",s:"—"},
+      {n:"03",t:"Construir prova social local",d:"depoimentos de pacientes da cidade, presença nas páginas e no humor feirense",s:"—"},
+      {n:"04",t:"Sair do coro no Meta",d:"trocar o grito de desconto por rosto + acolhimento + preço-orgulho; ocupar vídeo curto",s:"o líder não ocupa esse território"},
+      {n:"05",t:"Medir",d:"custo por avaliação agendada · reviews novos/mês · nota ≥ 4,8",s:"—"}
+    ],
+    planNote:"ordem de execução"
+  },
+  prudente: {
+    nome:"Presidente Prudente", cidade:"Presidente Prudente/SP",
+    eyebrow:"Praça · a 1ª franquia da rede · inaugurada em 02/05/2005",
+    titulo:"O tesouro que está guardado na gaveta",
+    tese:"Líder em nota E em volume da categoria, com histórias de duas gerações de pacientes e o elogio mais raro do setor. E quase nada disso aparece na comunicação — o feed é institucional e os anúncios gritam urgência.",
+    base:"1.400+ vozes · 930 comentários de 12 perfis · 454 avaliações",
+    nota:4.9, aval:582, vel:null, ads:7, atend:"47%", atendN:"reviews da categoria", papel:"1ª franquia · 20 anos",
+    ponteiros:[
+      {l:"Nota", v:4.9, max:5, meta:4.8, fmt:n=>n.toFixed(1), metaL:"meta 4,8"},
+      {l:"Avaliações", v:582, max:618, meta:null, fmt:n=>String(n), metaL:"líder da categoria"},
+      {l:"Anúncios ativos", v:7, max:10, meta:null, fmt:n=>String(n), metaL:"único no leilão"}
+    ],
+    funil:null,
+    placar:[
+      {n:"OrthoDontic PP", t:"a nossa · líder em nota e volume", nota:4.9, vol:582, ads:7, own:true},
+      {n:"Dentoclinic", t:"nicho", nota:5.0, vol:77, ads:"—"},
+      {n:"Todos Sorrindo", t:"clínica", nota:4.9, vol:34, ads:"—"},
+      {n:"NEXA Odonto", t:"clínica geral", nota:4.7, vol:618, ads:"—"},
+      {n:"Croorto", t:"especialista", nota:4.7, vol:52, ads:"—"},
+      {n:"Sorrifácil", t:"rede popular", nota:4.6, vol:31, ads:"—"}
+    ],
+    placarNote:"a OdontoCompany local migrou 100% dos anúncios para implante — o campo do aparelho está livre",
+    season:null,
+    dna:[
+      {l:"A língua", t:"Superlativo local — “o melhor da cidade” é a moldura mental. Capricho e seriedade. Humor de família. Oferta é “achado”, nunca desespero."},
+      {l:"A régua de tom", t:"A cidade entregou de presente: <b>“que tratem as pessoas com dignidade e humanismo”</b> — o comentário mais curtido do corpus."},
+      {l:"A alavanca", t:"CLAREZA, não preço. O que sustenta o 4,9 é “explicam tudo, não tive nenhuma dúvida”."},
+      {l:"A joia enterrada", t:"Foi a PRIMEIRA franquia de toda a rede, aberta por dois prudentinos. Vinte anos na mesma esquina, e a cidade lembra da inauguração."},
+      {l:"Jamais", t:"Urgência de liquidação. E cuidado com fila e espera — é o território que o prudentino vocaliza mais rápido.", forbid:true}
+    ],
+    quotes:[
+      {t:"Já passei por lá — e agora são meus filhos.", c:"paciente — duas gerações"},
+      {t:"explicam tudo direito", c:"paciente — o elogio-assinatura da unidade"},
+      {t:"não tive nenhuma dúvida, adorei", c:"paciente — a clareza que desarma"},
+      {t:"me lembro do dia 02/05/2005, dia da inauguração!! Deus continue abençoando.", c:"seguidora, no post dos 20 anos — a cidade lembra"}
+    ],
+    plan:[
+      {n:"01",t:"Blindar o agendamento",d:"o único 1★ entre 84 avaliações com texto é uma via-crúcis de remarcação",s:"antes de 1 real de mídia nova"},
+      {n:"02",t:"Virar o feed",d:"gente, gerações, depoimento, Prudente — quatro formatos fixos",s:"—"},
+      {n:"03",t:"Manter o leilão dominado",d:"com a nova mensagem: clareza e prova social no lugar de urgência",s:"—"},
+      {n:"04",t:"Somar as páginas locais",d:"a audiência delas comprovadamente vai atrás do que indicam",s:"—"},
+      {n:"05",t:"Medir",d:"custo por avaliação agendada · reviews novos/mês · nota ≥ 4,8",s:"—"}
+    ],
+    planNote:"ordem de execução"
+  }
+};
+
+const VELOCITY = [
+  {n:"Instituto Lumière", v:28, best:"72 em mar/26", c:"var(--s2)"},
+  {n:"OdontoCompany Mafra", v:13, best:"33 em mai/26", c:"var(--s4)"},
+  {n:"Cuidado e Prevenção", v:9, best:"10 no melhor mês", c:"var(--s3)"},
+  {n:"OrthoDontic Mafra", v:0.7, best:"4 no melhor mês", c:"var(--s1)", own:true}
+];
+
+const FINDINGS = [
+  {t:"O paciente não avalia ortodontia — avalia como foi tratado", n:"4/4",
+   ev:[["Prudente","47%"],["Londrina","54%"],["Feira","63%"],["Riomafra","69%"]], ref:"atend_mafra"},
+  {t:"A ferida é sempre operação — nunca o produto", n:"4/4",
+   ev:[["Londrina","pós-venda"],["Prudente","agenda"],["Feira","espera 2–4h"],["Riomafra","manutenção"]]},
+  {t:"A confiança é em gente com nome, não em marca", n:"4/4",
+   ev:[["Londrina","Dr. João, as meninas"],["Feira","doutor 4,9 · 1.268"],["Riomafra","concorrente sem ortodontista nomeado"]]},
+  {t:"A porta de entrada é sempre “quanto custa / cabe na parcela?”, seguida de “dói?”", n:"4/4",
+   ev:[["Riomafra","extraído da busca real"],["Prudente","âncora ~R$ 110/mês"]]},
+  {t:"Julho é o pico da mãe-decisora", n:"4/4",
+   ev:[["Riomafra","índice 34 · 4.120 leads em jul/25"],["demais","férias escolares"]]},
+  {t:"O adulto 30+ é dinheiro na mesa e nenhuma praça fala com ele", n:"4/4",
+   ev:[["Riomafra","21.000 de 30–45 vs 7.700 de 9–15"],["demais","~metade de quem usa aparelho"]]},
+  {t:"A clínica-escola é fraca exatamente onde a rede é forte", n:"4/4",
+   ev:[["Feira","não faz aparelho de adolescente"],["Prudente","cobre prevenção e infantil"]]},
+  {t:"A joia local existe, é incopiável — e está enterrada", n:"3/4",
+   ev:[["Londrina","é a matriz"],["Prudente","a 1ª franquia"],["Riomafra","o casal que voltou"],["Feira","nenhuma ainda"]]},
+  {t:"A embalagem é a mesma nas quatro: feed institucional + anúncio de urgência", n:"4/4",
+   ev:[["Londrina","OPERAÇÃO ORTODONTIA"],["Prudente","SEMANA DO APARELHO"],["Feira","17 no coro"],["Riomafra","feed sem a especialidade"]]},
+  {t:"A prova social está parada em todas", n:"4/4",
+   ev:[["Prudente","4,9 · 582 fora das peças"],["Riomafra","0,7 review/mês"]], ref:"velocity"},
+  {t:"A mãe é a decisora — e lê os reviews antes de escolher", n:"4/4",
+   ev:[["Londrina","“graças a Deus li os comentários”"],["Riomafra","medo duplo da mãe"]]},
+  {t:"A ordem certa é blindar a operação antes de qualquer mídia nova", n:"4/4",
+   ev:[["as quatro","é a ação nº 1 dos quatro planos"]]},
+  {t:"Os mesmos quatro formatos fixos de conteúdo emergem nas quatro", n:"4/4",
+   ev:[["as quatro","quem cuida · história local · tirar o aparelho · explica-tudo"]]},
+  {t:"Dezembro e janeiro são pico nacional", n:"derrubada", dead:true,
+   ev:[["Riomafra","índice 2,5–7,9 contra 34 em julho"],["BI","494 e 78 leads contra 4.120"]]}
+];
+
+const VARIAVEIS = [
+  ["A alavanca de preço","confiança + preço justo — barato levanta suspeita","clareza, não preço","preço como orgulho do batalhador","palavra cumprida, parcela sem surpresa"],
+  ["A posição no placar","desafiante (não é nº1)","líder — joga defesa","desafiante (7x atrás)","melhor nota, 4ª em volume"],
+  ["O inimigo","clínica geral bem avaliada","vácuo competitivo","doutor pessoa física","rede popular + startup de tráfego"],
+  ["Mídia própria","urgência genérica","7 ativos, leilão dominado","17 ativos dentro do coro","zero"],
+  ["Sazonalidade","jul + dez/jan","jul + dez/jan","jul + calendário cultural","jul–set · dez/jan é VALE"],
+  ["Léxico proibido","urgência de liquidação","corporativês","axé litorâneo de vitrine","gíria gaúcha, Oktoberfest"]
+];
+
+const KIT = [
+  {p:"Londrina", v:"risco", cor:"var(--serious)",
+   t:"Público de meio de funil: preço baixo levanta suspeita, não desejo. A matriz não briga de igual para igual no preço — briga na autoridade.",
+   lex:"trocar por: “tratado por quem criou o padrão”"},
+  {p:"Presidente Prudente", v:"adaptar", cor:"var(--warn)",
+   t:"A alavanca aqui é clareza, não desconto. O que sustenta o 4,9 é “explicam tudo, não tive nenhuma dúvida” — e a régua de tom que a cidade entregou foi “dignidade e humanismo”.",
+   lex:"trocar urgência por: “você entende tudo antes de decidir”"},
+  {p:"Feira de Santana", v:"funciona, com condição", cor:"var(--good)",
+   t:"Preço é orgulho aqui — “pagar menos e sair por cima” é virtude. Mas a peça precisa falar como Feira, e hoje ela está dentro de um coro de 59 anúncios quase idênticos.",
+   lex:"exige léxico local: “cabe no seu bolso, meu rei”"},
+  {p:"Riomafra", v:"conflito", cor:"var(--crit)",
+   t:"“Últimos dias” e “agora mesmo” acionam o radar antivigarista da colônia. A praça respeita palavra cumprida e desconfia de promessa grande.",
+   lex:"bloqueado: urgência de liquidação · prova antes de promessa"}
+];
+
+const DESCIDA = [
+  {l:"Publicações de unidade", v:1, max:156, raw:"1 de 156", ev:"telo"},
+  {l:"Criativos nacionais com o jingle", v:1, max:34, raw:"1 de 34"},
+  {l:"Menções espontâneas ao embaixador", v:0, max:2834, raw:"0 de 2.834 vozes"}
+];
+
+/* ============================================================
+   RENDER
+   ============================================================ */
+const $ = (s,r=document)=>r.querySelector(s);
+const $$ = (s,r=document)=>[...r.querySelectorAll(s)];
+const esc = s => String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const evBtn = k => k ? `<button class="ev" data-ev="${k}" aria-label="Ver evidência"></button>` : "";
+
+/* ---- sinais ---- */
+$("#signals").innerHTML = SIGNALS.map(s=>`
+  <div class="sigrow">
+    <span class="sev ${s.sev}"></span>
+    <div class="sigmain">
+      <div class="sigtitle"><span class="where mono">${esc(s.praca)}</span>${esc(s.t)}${evBtn(s.ev)}</div>
+      <div class="sigbody">${esc(s.b)}</div>
+      <div class="sigact"><b>Fazer:</b> ${esc(s.a)}</div>
+    </div>
+  </div>`).join("");
+
+/* ---- linhas de praça ---- */
+$("#pracarows").innerHTML = Object.entries(PRACAS).map(([k,p])=>`
+  <tr>
+    <td><button class="rowbtn" data-praca="${k}">${esc(p.nome)}</button><br><span class="mono" style="font-size:11px;color:var(--ink-3)">${esc(p.cidade)}</span></td>
+    <td style="font-size:12px;color:var(--ink-2)">${esc(p.papel)}</td>
+    <td class="num mono">${p.nota.toFixed(1)}</td>
+    <td class="num mono">${p.aval}</td>
+    <td class="num mono">${p.vel===null?'<span style="color:var(--ink-3)">—</span>':p.vel.toFixed(1)}</td>
+    <td class="num mono">${p.ads===null?'<span style="color:var(--ink-3)">—</span>':p.ads}</td>
+    <td class="mono">${p.atend} <span style="color:var(--ink-3);font-size:11px">${esc(p.atendN)}</span></td>
+  </tr>`).join("");
+
+/* ---- gráfico: velocity (barras horizontais, rótulo direto) ---- */
+function chartVelocity(){
+  const W=680, rowH=34, padL=168, padR=118, top=8;
+  const H = top + VELOCITY.length*rowH + 26;
+  const max = 30, plotW = W-padL-padR;
+  const x = v => (v/max)*plotW;
+  let g = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Reviews novos por mês por clínica em Riomafra">`;
+  // grid
+  for(let t=0;t<=30;t+=10){
+    g += `<line x1="${padL+x(t)}" y1="${top}" x2="${padL+x(t)}" y2="${top+VELOCITY.length*rowH}" stroke="var(--grid)" stroke-width="1"/>`;
+    g += `<text x="${padL+x(t)}" y="${H-8}" fill="var(--ink-3)" font-size="10" text-anchor="middle">${t}</text>`;
+  }
+  VELOCITY.forEach((d,i)=>{
+    const y = top + i*rowH + 7, h = 16, w = Math.max(x(d.v),2.5);
+    g += `<g class="hitbar" data-tip="${esc(d.n)}|${d.v} reviews novos por mês · melhor mês: ${esc(d.best)}">
+      <rect x="0" y="${y-7}" width="${W}" height="${rowH-2}" fill="transparent"/>
+      <text x="${padL-12}" y="${y+12}" fill="var(--ink-2)" font-size="11.5" text-anchor="end">${esc(d.n)}</text>
+      <rect class="mark" x="${padL}" y="${y}" width="${w}" height="${h}" rx="4" fill="${d.c}"/>
+      <text x="${padL+w+9}" y="${y+12.5}" fill="var(--ink)" font-size="12" font-weight="600">${String(d.v).replace('.',',')}</text>
+      <text x="${padL+w+9}" y="${y+12.5}" dx="${String(d.v).length*8+16}" fill="var(--ink-3)" font-size="10.5">${esc(d.best)}</text>
+    </g>`;
+  });
+  g += `<line x1="${padL}" y1="${top}" x2="${padL}" y2="${top+VELOCITY.length*rowH}" stroke="var(--axis)" stroke-width="1"/></svg>`;
+  $("#chart-velocity").innerHTML = g;
+}
+chartVelocity();
+
+/* ---- régua: trilha de medição com marca de meta ---- */
+function reguaLines(items){
+  return items.map(d=>{
+    const W=520,H=26, pct = Math.max(0, Math.min(1, d.v/d.max));
+    const metaPct = d.meta==null?null:Math.max(0,Math.min(1,d.meta/d.max));
+    const barW = Math.max(pct*W, d.v>0?3:0);
+    const below = d.meta!=null && d.v < d.meta;
+    const col = d.meta==null ? "var(--s1)" : (below ? "var(--crit)" : "var(--good)");
+    let ticks="";
+    for(let i=0;i<=4;i++) ticks += `<line x1="${i*W/4}" y1="20" x2="${i*W/4}" y2="24" stroke="var(--axis)" stroke-width="1"/>`;
+    const metaMark = metaPct==null ? "" :
+      `<line x1="${metaPct*W}" y1="2" x2="${metaPct*W}" y2="24" stroke="var(--ink)" stroke-width="1.5" stroke-dasharray="2 2"/>`;
+    return `<div class="rline">
+      <span class="rlabel">${d.l}${evBtn(d.ev)}</span>
+      <span class="rtrack">
+        <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" style="width:100%;height:${H}px" role="img" aria-label="${esc(d.l)}: ${esc(d.fmt(d.v))}${d.metaL?', '+esc(d.metaL):''}">
+          <rect x="0" y="4" width="${W}" height="14" fill="var(--grid)"/>
+          <rect x="0" y="4" width="${barW}" height="14" fill="${col}"/>
+          ${ticks}${metaMark}
+        </svg>
+      </span>
+      <span class="rvals"><b class="mono">${d.fmt(d.v)}</b> <span class="mono" style="font-size:11px;color:var(--ink-3)">${d.metaL||""}</span></span>
+    </div>`;
+  }).join("");
+}
+
+/* ---- funil contra a régua ---- */
+function funnelLines(f){
+  return f.map(d=>{
+    if(d.pct===null){
+      return `<div class="rline"><span class="rlabel">${d.l}</span>
+        <span class="rtrack"><svg viewBox="0 0 520 26" preserveAspectRatio="none" style="width:100%;height:26px" role="img" aria-label="${esc(d.l)}: ${esc(d.raw)}">
+        <rect x="0" y="4" width="520" height="14" fill="var(--s1)"/></svg></span>
+        <span class="rvals"><b class="mono">${d.raw}</b></span></div>`;
+    }
+    const W=520,H=26, pct=Math.min(1,d.pct/100), metaPct=Math.min(1,d.regua/100);
+    const below = d.pct < d.regua;
+    const col = below ? "var(--crit)" : "var(--good)";
+    let ticks="";
+    for(let i=0;i<=4;i++) ticks += `<line x1="${i*W/4}" y1="20" x2="${i*W/4}" y2="24" stroke="var(--axis)" stroke-width="1"/>`;
+    return `<div class="rline">
+      <span class="rlabel">${d.l}${evBtn(d.ev)}<br><span class="mono" style="font-size:11px;color:var(--ink-3)">${d.raw}</span></span>
+      <span class="rtrack">
+        <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" style="width:100%;height:${H}px" role="img" aria-label="${esc(d.l)}: ${d.pct}% contra régua de ${d.regua}%">
+          <rect x="0" y="4" width="${W}" height="14" fill="var(--grid)"/>
+          <rect x="0" y="4" width="${Math.max(pct*W,3)}" height="14" fill="${col}"/>
+          ${ticks}
+          <line x1="${metaPct*W}" y1="2" x2="${metaPct*W}" y2="24" stroke="var(--ink)" stroke-width="1.5" stroke-dasharray="2 2"/>
+        </svg>
+      </span>
+      <span class="rvals"><b class="mono">${String(d.pct).replace('.',',')}%</b> <span class="mono" style="font-size:11px;color:var(--ink-3)">régua ${d.regua}%</span></span>
+    </div>`;
+  }).join("");
+}
+
+/* ---- gráfico: temporada (colunas) ---- */
+function chartSeason(data){
+  const W=560,H=170,padB=34,padT=16,padL=8;
+  const bw = 62, gap = (W-padL*2 - data.length*bw)/(data.length-1||1);
+  const max = 40;
+  let g = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Índice de busca por mês, série de cinco anos">`;
+  for(let t=0;t<=40;t+=20){
+    const y = padT + (1-t/max)*(H-padT-padB);
+    g += `<line x1="${padL}" y1="${y}" x2="${W-padL}" y2="${y}" stroke="var(--grid)" stroke-width="1"/>`;
+    g += `<text x="${W-padL}" y="${y-4}" fill="var(--ink-3)" font-size="10" text-anchor="end">${t}</text>`;
+  }
+  data.forEach((d,i)=>{
+    const x = padL + i*(bw+gap);
+    const h = (d.v/max)*(H-padT-padB);
+    const y = H-padB-h;
+    const col = d.peak ? "var(--s2)" : d.low ? "var(--s1)" : "var(--s4)";
+    g += `<g class="hitbar" data-tip="${esc(d.m)}|índice de busca ${String(d.v).replace('.',',')}${d.peak?' · o pico do ano':''}${d.low?' · o vale — a tese nacional não vale aqui':''}">
+      <rect x="${x}" y="${padT}" width="${bw}" height="${H-padT-padB}" fill="transparent"/>
+      <rect class="mark" x="${x}" y="${y}" width="${bw}" height="${h}" rx="4" fill="${col}"/>
+      <text x="${x+bw/2}" y="${y-6}" fill="var(--ink)" font-size="12" font-weight="600" text-anchor="middle">${String(d.v).replace('.',',')}</text>
+      <text x="${x+bw/2}" y="${H-14}" fill="var(--ink-2)" font-size="10.5" text-anchor="middle">${esc(d.m)}</text>
+    </g>`;
+  });
+  g += `<line x1="${padL}" y1="${H-padB}" x2="${W-padL}" y2="${H-padB}" stroke="var(--axis)" stroke-width="1"/></svg>`;
+  return g;
+}
+
+/* ---- ficha da praça ---- */
+let currentPraca = "riomafra";
+function renderPraca(key){
+  currentPraca = key;
+  const p = PRACAS[key];
+  $("#p-eyebrow").textContent = p.eyebrow;
+  $("#p-title").textContent = p.titulo;
+  $("#p-thesis").textContent = p.tese;
+  $("#p-basis").textContent = p.base;
+  $("#p-ponteiros").innerHTML = reguaLines(p.ponteiros);
+
+  const fp = $("#p-funnel-panel");
+  if(p.funil){ fp.style.display=""; $("#p-funnel").innerHTML = funnelLines(p.funil); }
+  else fp.style.display="none";
+
+  $("#p-placar-note").textContent = p.placarNote;
+  const maxVol = Math.max(...p.placar.map(r=>r.vol||0),1);
+  $("#p-placar").innerHTML = p.placar.map(r=>`
+    <tr>
+      <td>${r.own?'<b>':''}${esc(r.n)}${r.own?'</b>':''}</td>
+      <td style="font-size:12px;color:var(--ink-2)">${esc(r.t)}</td>
+      <td class="num mono">${r.nota.toFixed(1)}</td>
+      <td>${r.vol==null?'<span class="mono" style="color:var(--ink-3)">—</span>':`
+        <span style="display:flex;align-items:center;gap:9px">
+          <span style="flex:1;max-width:170px;height:9px;background:var(--grid);position:relative;display:block">
+            <span style="position:absolute;inset:0 auto 0 0;width:${(r.vol/maxVol*100).toFixed(1)}%;background:${r.own?'var(--s1)':'var(--axis)'};display:block"></span>
+          </span>
+          <span class="mono" style="min-width:44px;text-align:right">${r.vol}</span>
+        </span>`}</td>
+      <td class="num mono" style="font-size:12px">${r.ads==null?'—':r.ads}</td>
+    </tr>`).join("");
+
+  const sp = $("#p-season-panel");
+  if(p.season){ sp.style.display=""; $("#chart-season").innerHTML = chartSeason(p.season); $("#p-season-note").innerHTML = p.seasonNote; }
+  else sp.style.display="none";
+
+  $("#p-dna").innerHTML = p.dna.map(d=>`
+    <div class="dnacell${d.forbid?' forbid':''}"><div class="l">${esc(d.l)}</div><p>${d.t}</p></div>`).join("");
+
+  $("#p-quotes").innerHTML = p.quotes.map(q=>`
+    <div class="q"><p>“${esc(q.t)}”</p><cite>${esc(q.c)}</cite></div>`).join("");
+
+  $("#p-plan-note").textContent = p.planNote;
+  $("#p-plan").innerHTML = p.plan.map(a=>`
+    <div class="act">
+      <span class="actn mono">${a.n}</span>
+      <span class="actt">${esc(a.t)}<small>${esc(a.d)}</small></span>
+      <span class="actstatus mono">${esc(a.s)}</span>
+    </div>`).join("");
+
+  window.scrollTo({top:0,behavior:"instant"});
+}
+
+/* ---- achados ---- */
+$("#findings").innerHTML = FINDINGS.map(f=>`
+  <div class="finding">
+    <div class="fhead">
+      <span class="fstate${f.dead?' dead':''}">${f.dead?'derrubada':'candidata'}</span>
+      <span class="ftitle">${esc(f.t)}${evBtn(f.ref)}</span>
+      <span class="fcount mono">${esc(f.n)}</span>
+    </div>
+    <div class="fev">${f.ev.map(([k,v])=>`<span><em>${esc(k)}</em> <span class="mono">${esc(v)}</span></span>`).join("")}</div>
+  </div>`).join("");
+
+$("#variaveis").innerHTML = VARIAVEIS.map(r=>`
+  <tr><td style="font-weight:560">${esc(r[0])}</td>${r.slice(1).map(c=>`<td style="font-size:12.5px;color:var(--ink-2)">${esc(c)}</td>`).join("")}</tr>`).join("");
+
+/* ---- kit ---- */
+$("#kitgrid").innerHTML = KIT.map(k=>`
+  <div class="kitcell">
+    <h4>${esc(k.p)}</h4>
+    <div class="kitverdict" style="color:${k.cor}"><i style="background:${k.cor}"></i>${esc(k.v)}</div>
+    <p>${esc(k.t)}</p>
+    <div class="lex mono">${esc(k.lex)}</div>
+  </div>`).join("");
+
+$("#descida").innerHTML = DESCIDA.map(d=>{
+  const W=520,H=26, pct = d.v/d.max;
+  return `<div class="rline">
+    <span class="rlabel">${esc(d.l)}${evBtn(d.ev)}</span>
+    <span class="rtrack"><svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" style="width:100%;height:${H}px" role="img" aria-label="${esc(d.l)}: ${esc(d.raw)}">
+      <rect x="0" y="4" width="${W}" height="14" fill="var(--grid)"/>
+      <rect x="0" y="4" width="${Math.max(pct*W,2)}" height="14" fill="var(--crit)"/>
+    </svg></span>
+    <span class="rvals"><b class="mono">${esc(d.raw)}</b></span>
+  </div>`;
+}).join("");
+
+/* ============================================================
+   NAVEGAÇÃO, EVIDÊNCIA, TOOLTIP, TEMA
+   ============================================================ */
+function show(view, pracaKey){
+  $$(".view").forEach(v=>v.dataset.active = String(v.dataset.view===view));
+  $$(".navitem").forEach(b=>{
+    const on = pracaKey ? b.dataset.praca===pracaKey : b.dataset.go===view;
+    b.setAttribute("aria-current", String(!!on));
+  });
+  if(view!=="praca") window.scrollTo({top:0,behavior:"instant"});
+}
+document.addEventListener("click", e=>{
+  const nav = e.target.closest("[data-go]");
+  if(nav){ show(nav.dataset.go); return; }
+  const pr = e.target.closest("[data-praca]");
+  if(pr){ renderPraca(pr.dataset.praca); show("praca", pr.dataset.praca); return; }
+  const ev = e.target.closest("[data-ev]");
+  if(ev){ openEv(ev.dataset.ev); return; }
+});
+
+/* ---- drawer de evidência ---- */
+const drawer=$("#drawer"), scrim=$("#scrim");
+let lastFocus=null;
+function openEv(key){
+  const d = EV[key]; if(!d) return;
+  lastFocus = document.activeElement;
+  $("#drawertitle").textContent = d.titulo;
+  const confCol = d.conf==="alta"?"var(--good)":d.conf==="média"?"var(--warn)":"var(--serious)";
+  $("#drawerbody").innerHTML = `
+    <div>
+      <div class="evfig mono">${esc(d.valor)}<small>${esc(d.legenda)}</small></div>
+    </div>
+    <div class="conf"><i style="background:${confCol}"></i>confiança ${esc(d.conf)}</div>
+    <p style="margin:0;font-size:13px;color:var(--ink-2)">${esc(d.leitura)}</p>
+    ${d.contra?`<div class="counter"><b>Contra-evidência</b>${esc(d.contra)}</div>`:""}
+    <dl class="kv mono">
+      <dt>N</dt><dd>${esc(d.n)}</dd>
+      <dt>corte</dt><dd>${esc(d.corte)}</dd>
+      <dt>taxonomia</dt><dd>${esc(d.tax)}</dd>
+      <dt>fonte</dt><dd>${esc(d.fonte)}</dd>
+      <dt>filtro</dt><dd>${esc(d.filtro)}</dd>
+    </dl>
+    <p style="margin:0;font-size:11.5px;color:var(--ink-3)">Se o número não pode ser reconstruído a partir destes campos, ele não entra no portal.</p>`;
+  drawer.dataset.open="true"; scrim.dataset.open="true";
+  drawer.setAttribute("aria-hidden","false");
+  $("#closedrawer").focus();
+}
+function closeEv(){
+  drawer.dataset.open="false"; scrim.dataset.open="false";
+  drawer.setAttribute("aria-hidden","true");
+  if(lastFocus) lastFocus.focus();
+}
+$("#closedrawer").addEventListener("click", closeEv);
+scrim.addEventListener("click", closeEv);
+document.addEventListener("keydown", e=>{ if(e.key==="Escape" && drawer.dataset.open==="true") closeEv(); });
+
+/* ---- tooltip ---- */
+const tip=$("#tip");
+document.addEventListener("mousemove", e=>{
+  const h = e.target.closest("[data-tip]");
+  if(!h){ tip.dataset.open="false"; return; }
+  const [head, body] = h.dataset.tip.split("|");
+  tip.innerHTML = `<b>${esc(head)}</b>${esc(body)}`;
+  tip.dataset.open="true";
+  const r = tip.getBoundingClientRect();
+  let x = e.clientX+14, y = e.clientY+14;
+  if(x + r.width > innerWidth-8) x = e.clientX - r.width - 14;
+  if(y + r.height > innerHeight-8) y = e.clientY - r.height - 14;
+  tip.style.left = x+"px"; tip.style.top = y+"px";
+});
+document.addEventListener("mouseleave", ()=>{ tip.dataset.open="false"; });
+
+/* ---- tema ---- */
+$("#themebtn").addEventListener("click", ()=>{
+  const cur = document.documentElement.getAttribute("data-theme");
+  const sysDark = matchMedia("(prefers-color-scheme: dark)").matches;
+  const next = cur ? (cur==="dark"?"light":"dark") : (sysDark?"light":"dark");
+  document.documentElement.setAttribute("data-theme", next);
+});
+
+renderPraca("riomafra");
+</script>
