@@ -6,6 +6,12 @@ reclame_aqui.py — reclamações da marca no Reclame Aqui, via Apify (REST dire
 de resposta, tempo e taxa de solução. Os quatro estudos concluíram que a ferida
 da rede é operação, e nenhuma outra fonte mede isso.
 
+O actor mudou em 08/08/2026, e a troca corrigiu um erro grave: o anterior
+(viralanalyzer) devolvia sempre 3 reclamações, e com 3 a gente concluiu que
+"a marca não responde". Os números reais são 3.133 reclamações, 98,6%
+respondidas e 63,3% que voltariam a fazer negócio. Amostra de três não
+descreve uma rede de 340 unidades.
+
 Duas armadilhas descobertas na construção:
   · o site é protegido por Cloudflare — acesso direto devolve 403. Precisa do
     actor com PROXY RESIDENCIAL declarado (o plano grátis tem 20 GB).
@@ -27,7 +33,7 @@ from collections import Counter
 RAIZ = pathlib.Path(__file__).resolve().parent.parent.parent
 SERIE = RAIZ/"dados"/"serie"
 BRUTO = RAIZ/"dados"/"bruto"
-ACTOR = "viralanalyzer~reclameaqui-scraper"
+ACTOR = "webdata_labs~reclameaqui-scraper"
 API = "https://api.apify.com/v2"
 
 

@@ -247,11 +247,15 @@ De cada 100 interessados, seis viram avaliação agendada. Comparecimento (49%),
 fechamento (75%) e pagamento (99%) batem ou superam a régua.
 *Fazer:* blindar a linha de frente — resposta em minutos, fluxo em vez de rajada.
 
-**CRÍTICO · Rede — A marca não responde**
-433 reclamações no Reclame Aqui, nota 7,01, e **5% dizem que voltariam a fazer
-negócio**. As três mais recentes, todas do mesmo dia, todas "Não respondida".
-*Fazer:* rotina de resposta em 48h, no Reclame Aqui e no Google. É decisão de
-franqueadora, não de unidade.
+**ATENÇÃO · Rede — Responde tudo, resolve menos**
+No Reclame Aqui a rede tem **3.133 reclamações**, responde **98,6%** e está com
+selo **GREAT**. Vai muito melhor que as gigantes: a OdontoCompany tem 23.283
+reclamações, responde 67,7% e está como **NÃO RECOMENDADA**; a Sorridents tem
+11.425 e responde 45%.
+O buraco não é responder, é **resolver**: 86,4% resolvidas e **63,3%** que
+voltariam a fazer negócio, contra 96,3% e 76,6% da Odontoclinic, que tem selo
+RA1000. Três redes menores têm RA1000 e a OrthoDontic não.
+*Fazer:* fechar a distância de resolução até o RA1000. Responder já está feito.
 
 **GRAVE · Londrina — A matriz perde o maior volume da cidade em ~2 meses**
 Odontoclinic +14/mês contra +4/mês da matriz. A distância caiu de 28 para 20
@@ -467,7 +471,7 @@ cobrem Norte, Centro-Oeste, capital nem unidade nova.
 1. **O paciente não avalia ortodontia — avalia como foi tratado.** 4/4 ·
    Riomafra 66% · Feira 65% · Londrina 65% · Prudente 58% *(847 avaliações com texto, as quatro medidas do mesmo jeito)*
 2. **A ferida é sempre operação, nunca o produto.** 4/4 · e o Reclame Aqui
-   confirma: 433 reclamações, as 3 mais recentes todas "Não respondida"
+   confirma: 3.133 reclamações, 98,6% respondidas, selo GREAT
 3. **A confiança é em gente com nome.** 4/4
 4. **A porta de entrada é "quanto custa / cabe na parcela?", depois "dói?".** 4/4
 5. **Julho é o pico da mãe-decisora.** 4/4

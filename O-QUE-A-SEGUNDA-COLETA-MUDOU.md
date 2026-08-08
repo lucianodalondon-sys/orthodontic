@@ -203,8 +203,14 @@ avaliações em três meses de 2022** (~16/mês) e 13 em quatro anos depois diss
 A ação nº 2 do plano não é *"ligar uma máquina"* — é **religar uma capacidade
 que a unidade já teve**. Argumento muito mais forte.
 
-**O agregado nacional do Reclame Aqui:** 433 reclamações, nota 7,01, e
-**5% diriam que voltariam a fazer negócio**.
+**O agregado nacional do Reclame Aqui:** 3.133 reclamações, nota 7,01, **98,6%
+respondidas** e **63,3% diriam que voltariam a fazer negócio**.
+
+> **CORRIGIDO em 08/08/2026.** Este texto dizia "433 reclamações e 5%
+> voltariam". Estava errado: o coletor devolvia só 3 reclamações e as 3 mais
+> recentes eram do dia anterior, ainda não respondidas — e a gente leu isso
+> como "a marca não responde". Com o coletor certo, a rede aparece com selo
+> GREAT e melhor que as duas maiores concorrentes.
 
 ---
 
