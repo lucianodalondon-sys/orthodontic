@@ -1,0 +1,91 @@
+# ============================================================================
+# TAXONOMIA BASE v1.0 — temas transversais a qualquer categoria/estudo
+# Usada por scripts/classify_corpus.py. Multi-idioma: pt/es/it/fr/en juntos
+# (o matching é por palavra, com acentos normalizados; um tema dispara se
+# qualquer termo aparecer como palavra inteira).
+# Léxico específico do estudo (temas do setor) vai em config/lexico_<estudo>.yaml
+# com a MESMA estrutura — os dois são mesclados na classificação.
+# Mudou a taxonomia? Suba a versão e registre no PROTOCOLO.md (o hash sai no
+# relatório de classificação).
+# ============================================================================
+versao: "1.0"
+temas:
+
+  atendimento:
+    descricao: "Como fui tratado — acolhimento, educação, grosseria, atenção"
+    termos: [atendimento, atencioso, atenciosa, educado, educada, grosseiro,
+      grosseira, mal atendido, bem atendido, simpatia, simpatico, simpatica,
+      cordial, acolhedor, acolhida, trato, atencion, amable, amabilidad,
+      maleducado, cortesia, gentile, gentilezza, scortese, accoglienza,
+      accueil, aimable, agreable, courtois, service client, friendly, rude,
+      welcoming, helpful]
+
+  preco_custo:
+    descricao: "Preço, valor, caro/barato, custo-benefício, desconto"
+    termos: [preco, precos, caro, cara, barato, barata, valor, desconto,
+      promocao, custo, orcamento, parcel, precio, caro, barata, descuento,
+      presupuesto, asequible, prezzo, prezzi, costoso, economico, sconto,
+      preventivo, prix, cher, chere, pas cher, remise, devis, cout, price,
+      expensive, cheap, discount, cost, affordable]
+
+  agenda_espera:
+    descricao: "Espera, demora, fila, atraso, remarcação, disponibilidade"
+    termos: [espera, esperar, demora, demorado, fila, atraso, atrasado,
+      remarca, horario, agenda, agendamento, disponibilidade, espera, tardanza,
+      retraso, cita, turno, attesa, ritardo, appuntamento, prenotazione,
+      attente, retard, rendez-vous, delai, wait, waiting, delay, queue,
+      appointment, reschedule]
+
+  comunicacao_resposta:
+    descricao: "Resposta a contato/mensagem, retorno, canal de comunicação"
+    termos: [whatsapp, resposta, responde, respondem, nao responde, retorno,
+      contato, mensagem, ligacao, telefone, respuesta, contestan, contacto,
+      mensaje, llamada, risposta, rispondono, contatto, messaggio, telefonata,
+      reponse, repondent, message, appel, reply, response, contact, unanswered]
+
+  qualidade_resultado:
+    descricao: "Eficácia, resultado, funciona/não funciona, qualidade percebida"
+    termos: [qualidade, resultado, resultados, funciona, funcionou, eficaz,
+      eficiente, excelente, otimo, otima, pessimo, pessima, ruim, perfeito,
+      calidad, resultado, funciona, eficaz, excelente, pesimo, qualita,
+      risultato, funziona, efficace, eccellente, pessimo, qualite, resultat,
+      efficace, marche, quality, result, works, effective, excellent]
+
+  confianca_medo:
+    descricao: "Confiança, medo, golpe, engano, segurança, desconfiança"
+    termos: [confianca, confiar, medo, golpe, enganacao, enganado, seguro,
+      seguranca, desconfianca, honesto, honestidade, mentira, confianza,
+      miedo, estafa, engano, seguridad, honesto, fiducia, paura, truffa,
+      inganno, sicurezza, onesto, confiance, peur, arnaque, tromperie,
+      securite, honnete, trust, scam, fear, safety, honest, fraud]
+
+  contrato_burocracia:
+    descricao: "Contrato, multa, cancelamento, burocracia, letra miúda"
+    termos: [contrato, multa, cancelamento, cancelar, burocracia, clausula,
+      taxa, cobranca, cobrar, reembolso, contrato, multa, cancelacion,
+      clausula, tasa, cobro, contratto, penale, disdetta, burocrazia,
+      clausola, rimborso, contrat, resiliation, clause, frais, remboursement,
+      contract, fee, cancellation, refund, fine print]
+
+  pessoas_nominais:
+    descricao: "Elogio/menção nominal a uma pessoa da equipe (dr., dra., prof.)"
+    termos: [doutor, doutora, "dr.", "dra.", professor, professora, enfermeira,
+      atendente, recepcionista, tecnico, tecnica, doctor, doctora, enfermera,
+      recepcionista, dottore, dottoressa, infermiera, docteur, infirmiere,
+      "mr.", "mrs.", nurse, receptionist]
+
+  localizacao_acesso:
+    descricao: "Localização, estacionamento, acesso, distância, estrutura física"
+    termos: [localizacao, estacionamento, perto, longe, acesso, endereco,
+      instalacao, instalacoes, estrutura, limpo, limpa, limpeza, ubicacion,
+      aparcamiento, cerca, lejos, acceso, instalaciones, limpio, posizione,
+      parcheggio, vicino, lontano, accesso, struttura, pulito, emplacement,
+      parking, proche, loin, acces, propre, location, clean, facilities]
+
+  recomendacao_lealdade:
+    descricao: "Recomendo, indico, volto sempre, virei cliente, nunca mais"
+    termos: [recomendo, recomendaria, indico, indicaria, volto, voltarei,
+      sempre, nunca mais, fidelidade, cliente ha, recomiendo, volvere,
+      "nunca mas", fiel, consiglio, raccomando, tornero, "mai piu",
+      recommande, reviendrai, "plus jamais", recommend, "never again",
+      loyal, "come back"]
