@@ -62,6 +62,39 @@ QUERIES = {
 }
 
 
+def alvos_da_praca(praca):
+    """De onde sai a lista de clínicas de uma praça.
+
+    Antes vinha do dicionário QUERIES, escrito a mão dentro deste arquivo.
+    Isso tinha dois defeitos: não escalava (340 unidades não cabem num dict) e
+    deixava praça de fora sem avisar — Cuiabá foi coletada inteira por script
+    descartável porque `--praca cuiaba` devolvia 0 locais.
+
+    Agora sai de dados/identidade/<praca>.json, que é a âncora do contrato.
+    Quando o local tem place_id, buscamos por ele: é exato, enquanto buscar
+    por nome já casou 'OrthoDontic Prudente' com a concorrente Bongiovanni.
+    """
+    arq = RAIZ/"dados"/"identidade"/f"{praca}.json"
+    if not arq.exists():
+        return {}
+    ident = json.loads(arq.read_text(encoding="utf-8"))
+    fora = {}
+    for loc in ident.get("locais", []):
+        lid = loc.get("local_id")
+        if not lid:
+            continue
+        pid = loc.get("place_id")
+        if pid:
+            fora[lid] = {"place_id": pid, "rotulo": loc.get("nome") or lid, "exigidos": []}
+        else:
+            legado = QUERIES.get(praca, {}).get(lid)
+            if legado:
+                fora[lid] = {"query": legado[0], "rotulo": legado[0], "exigidos": legado[1]}
+            else:
+                fora[lid] = {"pendente": True, "rotulo": loc.get("nome") or lid}
+    return fora
+
+
 def token():
     t = os.environ.get("APIFY_TOKEN", "").strip()
     if not t:
@@ -91,19 +124,22 @@ def get(url, tok, timeout=180):
         return json.loads(r.read())
 
 
-def roda(query, max_reviews, tok):
-    """Roda o actor e espera. run-sync-get-dataset-items devolve os itens direto."""
+def roda(alvo, max_reviews, tok):
+    """Roda o actor e espera. run-sync-get-dataset-items devolve os itens direto.
+
+    Por place_id quando existe (exato), por nome só como retaguarda.
+    """
     url = (f"{API}/acts/{ACTOR}/run-sync-get-dataset-items"
-           f"?token={tok}&timeout=600&memory=1024")
-    return post(url, {
-        "searchStringsArray": [query],
-        "maxCrawledPlacesPerSearch": 1,
-        "language": "pt-BR",
-        "reviewsSort": "newest",
-        "maxReviews": max_reviews,
-        "scrapeReviewsPersonalData": False,
-        "onlyDataFromSearchPage": False,
-    }, tok)
+           f"?token={tok}&timeout=900&memory=2048")
+    corpo = {"maxCrawledPlacesPerSearch": 1, "language": "pt-BR",
+             "reviewsSort": "newest", "maxReviews": max_reviews,
+             "scrapeReviewsPersonalData": False, "onlyDataFromSearchPage": False}
+    if alvo.get("place_id"):
+        corpo["startUrls"] = [{"url": "https://www.google.com/maps/place/?q=place_id:"
+                                      + alvo["place_id"]}]
+    else:
+        corpo["searchStringsArray"] = [alvo["query"]]
+    return post(url, corpo, tok)
 
 
 def jsonl_le(p):
@@ -139,16 +175,24 @@ def main():
     reviews = {r["chave"]: r for r in jsonl_le(SERIE/"reviews.jsonl")}
 
     for praca in pracas:
-        alvos = QUERIES.get(praca, {})
+        alvos = alvos_da_praca(praca)
         if args.so_local:
             alvos = {k: v for k, v in alvos.items() if k == args.so_local}
-        print(f"\n=== {praca} · {len(alvos)} locais · corte {hoje} ===")
-        for local_id, (query, exigidos) in alvos.items():
+        pend = [k for k, v in alvos.items() if v.get("pendente")]
+        alvos = {k: v for k, v in alvos.items() if not v.get("pendente")}
+        por_id = sum(1 for v in alvos.values() if v.get("place_id"))
+        print(f"\n=== {praca} · {len(alvos)} locais ({por_id} por place_id) · corte {hoje} ===")
+        if pend:
+            print(f"  ⚠ {len(pend)} sem place_id e sem query: {', '.join(pend)}")
+        for local_id, alvo in alvos.items():
+            query = alvo.get("query") or alvo.get("place_id")
+            exigidos = alvo.get("exigidos", [])
             if args.dry_run:
-                print(f"  [dry] {local_id:22s} '{query}'")
+                como = "place_id" if alvo.get("place_id") else "nome"
+                print(f"  [dry] {local_id:24s} por {como:8s} {alvo['rotulo'][:40]}")
                 continue
             try:
-                itens = roda(query, args.max_reviews, tok)
+                itens = roda(alvo, args.max_reviews, tok)
             except urllib.error.HTTPError as e:
                 corpo = e.read().decode()[:200]
                 print(f"  [ERRO] {local_id}: HTTP {e.code} · {corpo}")
