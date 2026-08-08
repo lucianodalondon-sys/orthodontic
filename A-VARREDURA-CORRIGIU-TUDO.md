@@ -128,7 +128,7 @@ Coletamos avaliação com data das 20 clínicas líderes que faltavam. O resulta
 |---|---|---:|---:|---:|
 | **Londrina** | Clínica Dentista do Povo | **158,6/mês** | 4,0 | **40×** |
 | **Prudente** | Bongiovanni | **68,8/mês** | 13,2 | 5× |
-| **Cuiabá** | ★ OrthoDontic Centro Norte | **45,6/mês** | — | lidera |
+| **Cuiabá** | ★ OrthoDontic Centro Norte | **43,8/mês** (12 meses) | — | lidera |
 | **Riomafra** | Instituto Lumière | **43,6/mês** | 0,0 | ∞ |
 | **Feira** | Central do Sorriso | **40,1/mês** | 0,0 | ∞ |
 
@@ -154,8 +154,12 @@ Eles só concordam quando a clínica é rápida de verdade (Lumière: 43,6 contr
 de Londrina a amostra dizia **51,7/mês** e o contador subiu **3 em 23 dias**.
 
 **O contador ficou como fonte oficial**, e o `inteligencia.py` marca `~estimado`
-quando só existe uma coleta. Cuiabá tem uma coleta só — os 45,6 são estimativa,
-e a segunda coleta em setembro confirma ou derruba.
+quando só existe uma coleta.
+
+Cuiabá tem uma coleta só, então os 45,6 eram estimativa. Em vez de esperar
+setembro, puxamos 600 avaliações e contamos mês a mês: **43,8/mês de média em
+doze meses, sem nenhum mês abaixo de 34.** A estimativa se sustenta, e agora
+por evidência direta em vez de extrapolação.
 
 ---
 
@@ -195,8 +199,9 @@ parada desde junho.
 **COP - Centro Odontológico do Povo**, também em Feira: **100 avaliações em
 5 dias** (3 a 8 de agosto). Campanha rodando agora, enquanto escrevemos.
 
-**Odontologia Prado**, em Cuiabá: 23 · 60 · 17 nos últimos três meses. Isso não
-é rajada, é máquina ligada.
+**Odontologia Prado**, em Cuiabá: 23 · 60 · 17 nos últimos três meses — o que
+parecia máquina ligada. A coleta funda mostrou que ela fazia **1 avaliação por
+mês até março de 2026**. É campanha de cinco meses, não operação.
 
 O `inteligencia.py` agora marca **⚡ RAJADA** quando um único mês concentra 60%
 ou mais das avaliações, e marca **amostra curta** quando o intervalo é menor que
