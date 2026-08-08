@@ -7,10 +7,15 @@ roda isto antes de virar dossiê. Não é opcional e não é etapa avulsa.
 
 O que ele faz, e por que cada coisa:
 
-  1. RITMO CERTO — avaliações novas por mês, medido no intervalo real da
-     amostra. Se a amostra bateu no teto da coleta, o ritmo ingênuo (n/12)
-     mente para baixo. Foi assim que Cuiabá quase virou "empata com os
-     líderes" quando na verdade lidera.
+  1. RITMO CERTO — avaliações novas por mês. Vem de DUAS fontes, e a ordem
+     importa:
+       · o contador do Google entre duas coletas — observação direta, é a que
+         vale. Precisa de duas coletas com 14+ dias de intervalo.
+       · o intervalo da amostra — estimativa, usada só quando não há duas
+         coletas. Marcada com ~estimado na tela.
+     As duas só concordam quando a clínica é rápida de verdade. Na matriz de
+     Londrina a amostra dizia 51,7/mês e o contador subiu 3 em 23 dias. Quando
+     divergem, o script mostra o contador e avisa o que a amostra dizia.
 
   2. O PLACAR — quem lidera em volume e em ritmo, e onde a unidade cai.
 
@@ -70,19 +75,42 @@ def carrega(praca):
     ident = json.loads((IDENT/f"{praca}.json").read_text(encoding="utf-8"))
     locais = {l["local_id"]: l for l in ident["locais"]}
     places = [p for p in jsonl(SERIE/"places.jsonl") if p.get("praca_id") == praca]
-    ult = {}
+    ult, hist = {}, defaultdict(dict)
     for p in places:                       # a coleta mais recente de cada local
         k = p["local_id"]
         if k not in ult or p["snapshot_date"] >= ult[k]["snapshot_date"]:
             ult[k] = p
+        v = p.get("avaliacoes", p.get("avaliacoes_total"))
+        if v is not None:
+            hist[k][p["snapshot_date"]] = v
     revs = defaultdict(list)
     for r in jsonl(SERIE/"reviews.jsonl"):
         if r.get("praca_id") == praca:
             revs[r["local_id"]].append(r)
-    return ident, locais, ult, revs
+    return ident, locais, ult, revs, hist
 
 
-def metricas(lid, loc, pl, rs):
+def ritmo_por_delta(hist):
+    """O ritmo confiável: quanto o contador do Google subiu entre duas coletas.
+
+    É observação direta, sem interpretar data de avaliação. Vale mais que a
+    conta pelo intervalo da amostra, que só bate com este quando a clínica é
+    rápida de verdade — na matriz de Londrina a conta por data dizia 51,7/mês
+    e o contador subiu 3 em 23 dias. Uma das duas está errada, e a que não
+    depende de parsing é a que fica.
+    """
+    ds = sorted(hist)
+    if len(ds) < 2:
+        return None, None
+    import datetime as dt
+    d0, d1 = ds[0], ds[-1]
+    dias = (dt.date.fromisoformat(d1) - dt.date.fromisoformat(d0)).days
+    if dias < 14:                       # janela curta demais: ruído vira sinal
+        return None, None
+    return round((hist[d1]-hist[d0])/(dias/30.4), 1), dias
+
+
+def metricas(lid, loc, pl, rs, hist=None):
     # As coletas antigas gravavam 'avaliacoes_total' e data com hora junto.
     # O esquema mudou; a leitura tem que aceitar os dois, senão a praça
     # antiga some do relatório sem avisar.
@@ -96,9 +124,14 @@ def metricas(lid, loc, pl, rs):
         import datetime as dt
         d0 = dt.date.fromisoformat(ds[0]); d1 = dt.date.fromisoformat(ds[-1])
         dias = max((d1-d0).days, 1)
-        m["ritmo"] = round(len(ds)/(dias/30.4), 1)     # o ritmo CERTO
-        m["ritmo_ingenuo"] = round(len(ds)/12, 1)      # o que enganaria
+        m["ritmo_data"] = round(len(ds)/(dias/30.4), 1)   # estimativa pela amostra
+        m["ritmo_ingenuo"] = round(len(ds)/12, 1)         # o que enganaria
+        m["ritmo"] = m["ritmo_data"]; m["ritmo_fonte"] = "amostra"
         m["primeira"], m["ultima"], m["dias"] = ds[0], ds[-1], dias
+    d_ritmo, d_dias = ritmo_por_delta(hist or {})
+    if d_ritmo is not None:                # o contador do Google manda
+        m["ritmo"] = max(d_ritmo, 0.0); m["ritmo_fonte"] = f"contador ({d_dias}d)"
+        m["ritmo_delta"] = d_ritmo
     m["responde_pct"] = round(100*sum(1 for r in rs if r.get("respondida"))/max(len(rs), 1))
     if txt:
         m["mediana_car"] = round(st.median(len(t) for t in txt))
@@ -109,8 +142,9 @@ def metricas(lid, loc, pl, rs):
 
 
 def roda(praca):
-    ident, locais, ult, revs = carrega(praca)
-    M = [metricas(k, locais[k], ult[k], revs.get(k, [])) for k in ult if k in locais]
+    ident, locais, ult, revs, hist = carrega(praca)
+    M = [metricas(k, locais[k], ult[k], revs.get(k, []), hist.get(k))
+         for k in ult if k in locais]
     M = [m for m in M if m.get("ritmo") is not None]
     M.sort(key=lambda x: -x["ritmo"])
     if not M:
@@ -122,9 +156,13 @@ def roda(praca):
     print(f"  {'ritmo':>6s} {'total':>6s} {'nota':>5s} {'resp':>5s}  clínica")
     for m in M:
         marca = "★" if m["papel"] == "proprio" else " "
-        alerta = "  ⚠ amostra no teto" if m.get("censurada") and m["ritmo"] > m["ritmo_ingenuo"]*1.5 else ""
+        fonte = m.get("ritmo_fonte", "amostra")
+        alerta = "" if fonte.startswith("contador") else "  ~estimado"
+        if m.get("ritmo_delta") is not None and m.get("ritmo_data") is not None \
+           and m["ritmo_data"] > max(m["ritmo_delta"], 0.5)*3:
+            alerta = "  ⚠ amostra dizia " + f"{m['ritmo_data']:.0f}"
         print(f"  {m['ritmo']:>6.1f} {str(m['total']):>6s} {str(m['nota']):>5s} "
-              f"{m['responde_pct']:>4d}% {marca} {(m['nome'] or '')[:38]}{alerta}")
+              f"{m['responde_pct']:>4d}% {marca} {(m['nome'] or '')[:34]}{alerta}")
 
     prop = [m for m in M if m["papel"] == "proprio"]
     if prop:

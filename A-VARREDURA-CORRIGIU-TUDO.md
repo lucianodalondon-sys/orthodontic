@@ -119,18 +119,80 @@ semanas de estudo por praça.
 
 ---
 
+## O RITMO DOS LÍDERES NOVOS — coletado
+
+Coletamos avaliação com data das 20 clínicas líderes que faltavam. O resultado
+é pior que o placar de volume:
+
+| Praça | Líder em ritmo | Faz | A unidade faz | Distância |
+|---|---|---:|---:|---:|
+| **Londrina** | Clínica Dentista do Povo | **158,6/mês** | 4,0 | **40×** |
+| **Prudente** | Bongiovanni | **68,8/mês** | 13,2 | 5× |
+| **Cuiabá** | ★ OrthoDontic Centro Norte | **45,6/mês** | — | lidera |
+| **Riomafra** | Instituto Lumière | **43,6/mês** | 0,0 | ∞ |
+| **Feira** | Central do Sorriso | **40,1/mês** | 0,0 | ∞ |
+
+Onde a unidade está, pelo contador do Google:
+
+- **Riomafra: 11ª de 11.** Última.
+- **Feira: 8ª de 9.**
+- **Londrina: matriz 6ª de 10; Centro 8ª.**
+- **Prudente: 4ª de 11** — era a "mais saudável" e está 5× atrás.
+- **Cuiabá: 1ª de 15** — a única que lidera.
+
+---
+
+## UMA CORREÇÃO DO NOSSO PRÓPRIO INSTRUMENTO
+
+Ritmo pode ser medido de dois jeitos, e eles discordam:
+
+1. **Pelo contador do Google** entre duas coletas. Observação direta.
+2. **Pelo intervalo da amostra** — quantas avaliações vieram e em quantos dias.
+
+Eles só concordam quando a clínica é rápida de verdade (Lumière: 43,6 contra
+46,8; gigante de Feira: 39,7 contra 41,9). Nas lentas divergem muito: na matriz
+de Londrina a amostra dizia **51,7/mês** e o contador subiu **3 em 23 dias**.
+
+**O contador ficou como fonte oficial**, e o `inteligencia.py` marca `~estimado`
+quando só existe uma coleta. Cuiabá tem uma coleta só — os 45,6 são estimativa,
+e a segunda coleta em setembro confirma ou derruba.
+
+---
+
+## E UMA CORREÇÃO MAIOR: A AMOSTRA ERRADA INVERTE O SINAL
+
+Com a lista antiga de concorrentes, "responder avaliação faz crescer" dava
+**negativo em quatro das cinco praças** — e a gente escreveu que responder era
+sintoma de clínica parada, contrariando a recomendação dos próprios estudos.
+
+Com a varredura completa, o sinal **inverteu**:
+
+| Praça | Lista feita a mão | Amostra completa |
+|---|---:|---:|
+| Feira | −0,27 | **+0,54** |
+| Londrina | −0,62 | **+0,49** |
+| Riomafra | +0,23 | **+0,39** |
+| Prudente | −0,29 | **+0,36** |
+| Cuiabá | −0,19 | −0,19 |
+
+**A recomendação original estava certa. O nosso "não" é que estava errado.**
+
+E fica a lição que vale para tudo o que este projeto vai produzir: **amostra de
+conveniência não erra pouco, erra de sinal.** O mesmo cálculo, na mesma cidade,
+deu +0,49 e −0,62 conforme quem estava na lista.
+
+---
+
 ## O QUE AINDA NÃO DÁ PARA DIZER
 
-A varredura traz **quem existe e qual o volume**. Não traz **ritmo** — a API do
-Google devolve no máximo 5 avaliações por clínica, e ritmo precisa de avaliação
-com data.
+**Reclame Aqui continua em 3 de 432 reclamações.** Não é crédito — testamos com
+conta nova e zerada, e o actor devolve 3 mesmo pedindo 40. É limite da
+ferramenta, não do dinheiro. Sem isso não dá para comparar a rede com as
+concorrentes, que é o que daria sentido ao número 432.
 
-Então dos 747 novos nomes, sabemos o tamanho, **não sabemos quem está
-correndo**. Susin pode ter 441 avaliações acumuladas em dez anos e estar parada,
-ou ter feito 300 no último ano. **Isso muda tudo e ainda não sabemos.**
-
-Para saber, é preciso coletar avaliação com data dos novos líderes de cada
-praça — o que depende de crédito na Apify, hoje esgotado.
+**As 727 clínicas restantes seguem sem ritmo.** Medimos as 20 maiores. As outras
+podem esconder alguém subindo rápido de base pequena — que é como o líder de
+hoje começou.
 
 ---
 

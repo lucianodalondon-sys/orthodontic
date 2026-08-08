@@ -101,11 +101,11 @@ E ela responde **0%** das avaliações — igual às duas que perdem.
 
 ## 4 · O QUE MORREU AQUI
 
-**"Quem responde avaliação é quem cresce" — enterrada, e virada do avesso.**
-Já estava fraca (r = +0,08 com quatro praças). Cuiabá acaba com ela: a nº 1 da
-cidade responde 0%, e as duas que mais respondem (Prime 100%, Open 95%) fazem
-25,2 e 6,6. Dentro da OrthoDontic, as três respondem 0% e fazem 45,6, 3,7 e 0,7.
-Rodando nas cinco praças, o sinal é **negativo em quatro** — ver seção 4c.
+**"Quem responde avaliação é quem cresce" — não morreu; em Cuiabá ela falha.**
+Aqui a nº 1 da cidade responde 0%, e as duas que mais respondem (Prime 100%,
+Open 95%) fazem 25,2 e 6,6. Dentro da OrthoDontic, as três respondem 0% e fazem
+45,6, 3,7 e 0,7. **Mas nas outras quatro praças o sinal é positivo** — ver a
+seção 4c, que conta como a gente errou o sinal e depois corrigiu.
 
 **"Seguidor no Instagram indica movimento" — invertida.**
 A unidade de 1.222 avaliações tem **390** seguidores. A de 78 tem **1.340**.
@@ -164,22 +164,33 @@ responder, vira procedimento para 340 unidades.
 
 ## 4c · O QUE A QUINTA PRAÇA FEZ COM AS HIPÓTESES
 
-`scripts/inteligencia.py` recalculou os padrões do projeto nas cinco praças:
+`scripts/inteligencia.py` recalculou os padrões do projeto nas cinco praças.
 
-| Praça | responder faz crescer | nota acompanha ritmo |
+**Esta seção já esteve errada, e vale contar como.** Com a lista antiga de
+concorrentes — 3 a 5 por praça, escolhidos a mão — o sinal de "responder
+avaliação faz crescer" deu **negativo em quatro das cinco praças**, e a gente
+chegou a escrever que responder era sintoma de clínica parada.
+
+Com a varredura completa (mais 20 clínicas líderes que faltavam) e com o ritmo
+medido pelo contador do Google em vez da amostra, o sinal **inverteu**:
+
+| Praça | Lista antiga | Amostra completa |
 |---|---:|---:|
-| Cuiabá | **−0,19** | +0,04 |
-| Feira | **−0,27** | +0,82 |
-| Londrina | **−0,62** | +0,72 |
-| Prudente | **−0,29** | +0,23 |
-| Riomafra | +0,23 | +0,22 |
+| Feira | −0,27 | **+0,54** |
+| Londrina | −0,62 | **+0,49** |
+| Riomafra | +0,23 | **+0,39** |
+| Prudente | −0,29 | **+0,36** |
+| Cuiabá | −0,19 | −0,19 |
 
-**"Responder avaliação faz crescer" está morta, e pior que morta.** O sinal é
-negativo em quatro das cinco praças. Não é que responder não ajude — é que
-**quem mais responde é quem menos cresce.** A leitura provável: responder é o
-que sobra para a clínica parada fazer. É sintoma, não remédio.
+**Positivo em quatro das cinco.** A recomendação original dos estudos — manter
+rotina de resposta — resiste. **Quem estava errado era o nosso "não".**
 
-Isso importa porque **era recomendação nossa em três dos cinco estudos.**
+E a lição vale mais que o número: **uma amostra de conveniência não erra pouco,
+erra de sinal.** O mesmo cálculo, na mesma cidade, deu +0,49 e −0,62 conforme
+quem estava na lista.
+
+Cuiabá continua sendo a exceção, e não é pouco: a unidade nº 1 da cidade
+responde 0%.
 
 ---
 
