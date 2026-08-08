@@ -110,6 +110,41 @@ def ritmo_por_delta(hist):
     return round((hist[d1]-hist[d0])/(dias/30.4), 1), dias
 
 
+def meses_sustentados(ds, hoje=None):
+    """Quantos meses seguidos a clínica manteve movimento até hoje.
+
+    É a métrica que separa operação de campanha, e ela só apareceu quando a
+    gente foi fundo: quase toda clínica que parecia rápida em Cuiabá, Feira e
+    Prudente é campanha de poucos meses. A Odontologia Prado fazia 1 avaliação
+    por mês até março e explodiu — pelo intervalo curto ela "ganhava" da
+    OrthoDontic; em doze meses faz 23,8 contra 43,8.
+
+    Velocidade responde "quanto"; isto responde "há quanto tempo" — e é o
+    segundo que diz se dá para copiar.
+    """
+    import datetime as dt
+    from collections import Counter
+    if not ds:
+        return 0
+    hoje = hoje or dt.date.today()
+    c = Counter(d[:7] for d in ds)
+    if not c:
+        return 0
+    tipico = st.median([v for v in c.values()]) or 1
+    seguidos, ano, mes = 0, hoje.year, hoje.month
+    mes -= 1                                   # o mês corrente está incompleto
+    if mes == 0:
+        ano, mes = ano-1, 12
+    for _ in range(36):
+        if c.get(f"{ano:04d}-{mes:02d}", 0) < max(2, tipico*0.3):
+            break
+        seguidos += 1
+        mes -= 1
+        if mes == 0:
+            ano, mes = ano-1, 12
+    return seguidos
+
+
 def perfil_mensal(ds):
     """Rajada ou ritmo? Um número de velocidade sozinho não distingue.
 
@@ -162,6 +197,7 @@ def metricas(lid, loc, pl, rs, hist=None):
         m["ritmo"] = max(d_ritmo, 0.0); m["ritmo_fonte"] = f"contador ({d_dias}d)"
         m["ritmo_delta"] = d_ritmo
     m["perfil"] = perfil_mensal(ds)
+    m["meses_sustentados"] = meses_sustentados(ds)
     m["responde_pct"] = round(100*sum(1 for r in rs if r.get("respondida"))/max(len(rs), 1))
     if txt:
         m["mediana_car"] = round(st.median(len(t) for t in txt))
@@ -183,7 +219,10 @@ def roda(praca):
     print(f"\n{'='*74}\n  INTELIGÊNCIA · {ident.get('nome', praca)}  ({len(M)} clínicas)\n{'='*74}")
 
     print("\n## 1 · O PLACAR PELO RITMO")
-    print(f"  {'ritmo':>6s} {'total':>6s} {'nota':>5s} {'resp':>5s}  clínica")
+    print("  'meses' = meses seguidos com movimento. Ritmo diz quanto; meses diz")
+    print("  se é operação ou campanha. Campanha não se copia.")
+    print("  O '+' quer dizer piso: a amostra encheu antes de alcançar o passado.")
+    print(f"  {'ritmo':>6s} {'meses':>6s} {'total':>6s} {'nota':>5s} {'resp':>5s}  clínica")
     for m in M:
         marca = "★" if m["papel"] == "proprio" else " "
         fonte = m.get("ritmo_fonte", "amostra")
@@ -196,8 +235,13 @@ def roda(praca):
         pf = m.get("perfil") or {}
         if pf.get("rajada"):
             alerta = f"  ⚡ RAJADA ({pf['concentracao_pico']:.0%} num mês só, pico {pf['pico_mes']})"
-        print(f"  {m['ritmo']:>6.1f} {str(m['total']):>6s} {str(m['nota']):>5s} "
-              f"{m['responde_pct']:>4d}% {marca} {(m['nome'] or '')[:34]}{alerta}")
+        ms = m.get("meses_sustentados", 0)
+        # Quando a amostra bateu no teto, ela não alcança o passado inteiro:
+        # a clínica rápida "perde" meses só porque enche a cota mais cedo.
+        # Por isso o número vira um piso, marcado com +.
+        msx = f"{ms}+" if m.get("censurada") and ms else str(ms)
+        print(f"  {m['ritmo']:>6.1f} {msx:>6s} {str(m['total']):>6s} {str(m['nota']):>5s} "
+              f"{m['responde_pct']:>4d}% {marca} {(m['nome'] or '')[:32]}{alerta}")
 
     prop = [m for m in M if m["papel"] == "proprio"]
     if prop:

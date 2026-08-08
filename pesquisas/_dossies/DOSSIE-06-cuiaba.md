@@ -74,6 +74,8 @@ continua desconhecida.
 ## 3 · O PLACAR DA CATEGORIA
 
 Ritmo medido pelo intervalo real das avaliações mais novas de cada clínica.
+Este placar é das 15 primeiras clínicas mapeadas; a varredura completa achou
+243 na praça, e o placar de 29 delas está em `A-VARREDURA-CORRIGIU-TUDO.md`.
 
 | Ritmo/mês | Total | Nota | Responde | Clínica |
 |---:|---:|---:|---:|---|
@@ -93,11 +95,15 @@ Ritmo medido pelo intervalo real das avaliações mais novas de cada clínica.
 | 2,7 | 222 | 5,0 | 52% | Myrelief |
 | **0,7** | 71 | 4,9 | 0% | **★ OrthoDontic Dom Bosco** |
 
-**CORRIGIDO:** este dossiê dizia que a unidade lidera a cidade. Ela é a
-**segunda**. A varredura do segundo escalão achou a **Odontologia Prado** —
-499 avaliações, ~60,8/mês — que não estava em lista nenhuma porque tem menos
-volume acumulado. Volume acumulado não é ritmo, e foi essa confusão que nos
-fez errar. A unidade é 2ª de 29.
+**A unidade lidera a cidade — e este dossiê já disse o contrário no meio do
+caminho.** Chegamos a corrigir para "segunda", porque a Odontologia Prado
+aparecia com 60,8/mês. Puxando 600 avaliações de cada uma e olhando mês a mês,
+a Prado fazia **1 avaliação por mês até março de 2026** e ligou a máquina há
+cinco meses; em doze meses ela faz 23,8 contra os **43,8** da unidade.
+
+Mais que liderar: **de tudo que medimos em cinco praças, só esta unidade e a
+Central do Sorriso de Feira mantêm volume alto mês após mês.** Treze meses
+seguidos entre 34 e 65. Todo o resto é campanha — sobe, brilha e cai.
 
 E ela responde **0%** das avaliações — igual às duas que perdem.
 
@@ -119,7 +125,7 @@ Quem tem quase quatro vezes mais seguidores faz doze vezes menos avaliação.
 para cinco clínicas ao mesmo tempo — inclusive a OrthoDontic. Era o teto de 150
 avaliações da coleta, não o ritmo. O número certo, medido pelo intervalo das
 150 mais novas, é 45,6. **Ficou registrado porque teria feito a gente dizer que
-a unidade empata com os líderes quando na verdade ela lidera.**
+a unidade empata com os líderes quando ela está bem acima da maioria deles.**
 
 ---
 

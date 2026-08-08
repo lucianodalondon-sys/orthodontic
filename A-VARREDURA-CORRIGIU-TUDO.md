@@ -220,18 +220,43 @@ fazer", e leva a um plano diferente.
 
 ---
 
-## UMA CORREÇÃO NO ACHADO PRINCIPAL
+## O ACHADO PRINCIPAL, CORRIGIDO DUAS VEZES — e o que sobrou é maior
 
-Escrevemos que a OrthoDontic Centro Norte era a primeira unidade da amostra a
-**liderar** a própria cidade. **Ela é a segunda.**
+Primeiro escrevemos que a unidade de Cuiabá **liderava** a cidade. Depois
+corrigimos para **segunda**, porque a Odontologia Prado aparecia com 60,8/mês
+contra 45,6. **Essa segunda correção estava errada**, e só deu para saber
+puxando 600 avaliações de cada uma e olhando mês a mês:
 
-A varredura do segundo escalão encontrou a **Odontologia Prado**, com 499
-avaliações e ~60,8/mês contra os 45,6 da unidade. Não estava em nenhuma lista
-porque tem menos avaliações acumuladas — e volume acumulado não é ritmo.
+| Clínica | Últimos 13 meses | Veredito |
+|---|---|---|
+| **★ OrthoDontic Centro Norte** | 65·48·43·43·44·34·55·48·45·37·40·46·46 | **máquina ligada** |
+| Odontologia Prado | 1·1·1·1·2·1·**33·70·57·44·60** | ligou em março/2026 |
+| Clínica Goya | 41·64·72·86·90·74·47·83·35·**4·2·1·1** | morreu em abril |
+| Bongiovanni (Prudente) | 16·60·42·10·2·0·2·8·**100·98·99·43** | ligou em abril |
+| REDEORTO (Várzea Grande) | quase nada, **105** em março, depois 45·34·22·**3** | campanha que acabou |
+| Instituto Lumière (Riomafra) | 19·5·**71**·14·38·37·46 | irregular |
+| Clínica Central do Sorriso (Feira) | 41·39·42·38·40·45·42·41·41·51·16·51 | **máquina ligada** |
 
-O que continua de pé, e é o que importa: **três unidades da mesma marca na
-mesma cidade fazendo 45,6 · 3,7 · 0,7.** A comparação que controla mercado,
-preço e marca não depende de quem está em primeiro.
+Em doze meses a Prado faz **23,8/mês**; a OrthoDontic faz **43,8**. O 60,8 era
+a janela da campanha dela, não o ritmo dela.
+
+**A unidade de Cuiabá lidera, e lidera fazendo o mais difícil:** de tudo que
+medimos em cinco praças, só ela e a Central do Sorriso mantêm volume alto mês
+após mês. Todo o resto é campanha — sobe, brilha e cai.
+
+Isso muda o argumento de novo, e para melhor. Não é "existe uma unidade boa".
+É **"existe uma unidade da rede que sustenta há mais de um ano o que os
+concorrentes só conseguem por três meses — e a 3 km dela outra unidade da
+mesma marca faz 0,7"**.
+
+### A métrica que faltava
+
+Velocidade responde *quanto*. **Meses seguidos** responde *há quanto tempo* — e
+é o segundo que diz se dá para copiar. Campanha não se copia; operação sim.
+
+O `inteligencia.py` agora mostra as duas, e marca com `+` quando a amostra
+encheu antes de alcançar o passado (clínica rápida "perde" meses só porque
+enche a cota mais cedo — outro jeito de o instrumento enganar).
 
 ---
 
