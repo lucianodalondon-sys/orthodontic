@@ -192,6 +192,69 @@ emissoras, uma da paróquia — e a unidade patrocina os escoteiros.
 
 ---
 
+## ETAPA 8 · A INTELIGÊNCIA (automático — e nunca opcional)
+
+```bash
+python3 scripts/inteligencia.py --praca <praca>
+```
+
+**Coleta sem inteligência é dado parado.** Esta etapa não é um extra que se
+faz quando sobra tempo: nenhuma praça vira dossiê sem passar por aqui.
+
+O que o script obriga a olhar:
+
+1. **O ritmo certo.** Se a amostra bateu no teto da coleta, a conta ingênua
+   (total ÷ 12) mente para baixo. Em Cuiabá o número ingênuo dizia 12,5/mês
+   para cinco clínicas ao mesmo tempo — o real era 45,6. **Teria feito a gente
+   escrever que a unidade empata com os líderes quando ela lidera.** O script
+   marca `⚠ amostra no teto` sozinho.
+
+2. **Mais de uma unidade da rede na mesma praça.** Quando existe, é a
+   comparação mais valiosa que o projeto tem: mercado, preço, marca e
+   concorrência ficam controlados de graça. O que sobra é a unidade.
+
+3. **As hipóteses vivas, recalculadas.** Toda praça nova pode matar um padrão
+   antigo. Isso é resultado, não problema.
+
+4. **O que pesa contra.** O script procura o contraexemplo de cada achado.
+   Achado sem contraexemplo procurado não é achado, é torcida.
+
+5. **Se a praça tem canais offline declarados.** Se não tem, ele avisa — porque
+   sem isso "a unidade está parada" pode ser mentira sobre uma clínica que está
+   no rádio da cidade toda semana.
+
+---
+
+## O QUE CUIABÁ ACRESCENTOU AO MÉTODO
+
+A quinta praça mudou cinco coisas. Todas viraram item de checklist:
+
+**Procure outras unidades da própria rede na praça.** Cuiabá tem três, e elas
+fazem 45,6 · 3,7 · 0,7 por mês. Sessenta e cinco vezes, mesma marca, mesma
+cidade. Nenhuma outra evidência chega perto disso — e a busca custa nada.
+
+**O código da unidade no site da rede diz a ordem de abertura.**
+`orthodonticbrasil.com.br/clinicas/...-478/` → unidade 478. Em Cuiabá a mais
+antiga (151) é a que menos cresce. Serve para testar safra sem pedir dado
+interno.
+
+**Procure o concorrente que não cobra.** A prefeitura de Cuiabá instala
+aparelho de graça pelo programa Siminina. Nenhuma das quatro praças anteriores
+tinha concorrente público. Busque `<cidade> aparelho ortodôntico gratuito
+prefeitura` e `programa municipal saúde bucal <cidade>`.
+
+**Procure rede franqueada concorrente na biblioteca de anúncios.** A REDEORTO
+apareceu com 37 anúncios em 16 cidades — uma rede inteira anunciando unidade
+por unidade. Isso é assunto de franqueadora, não de unidade, e só aparece
+quando se olha o anunciante e não a praça.
+
+**Canal que não aparece na busca não é canal que não existe.** Em Cuiabá a
+busca não achou perfil de mãe. Numa cidade de um milhão isso seria a maior
+brecha já vista — mas uma busca rasa não prova território vazio. **Marque como
+`nao_encontrado` e mande verificar à mão antes de virar conclusão.**
+
+---
+
 ## O CHECKLIST DE ENTREGA
 
 Uma praça só está pronta quando tem:
@@ -207,7 +270,11 @@ Uma praça só está pronta quando tem:
 - [ ] a unidade por dentro: anúncios, feed, resposta, rosto, engajamento
 - [ ] a joia enterrada — ou a declaração de que não tem
 - [ ] o calendário: férias escolares do estado + festas da cidade
+- [ ] **outras unidades da rede na mesma praça, comparadas entre si**
+- [ ] o concorrente que não cobra (programa público, clínica-escola)
+- [ ] rede franqueada concorrente na biblioteca de anúncios
 - [ ] **o que não estamos vendo, declarado**
+- [ ] **`scripts/inteligencia.py` rodado — sem isso não vira dossiê**
 - [ ] ponto de partida congelado com data, para a próxima coleta comparar
 
 ---

@@ -1,0 +1,167 @@
+# ALVOS DE COLETA — cuiaba
+# Praça: Cuiabá/MT + Várzea Grande/MT (conurbadas) · 1.010.797 habitantes
+# Levantado em 2026-08-08. Ver coleta/NOVA-PRACA.md
+#
+# Seguidores medidos em 2026-08-08.
+
+praca_id: cuiaba
+cidades: ["Cuiabá/MT", "Várzea Grande/MT"]
+
+# ---------------------------------------------------------------- os 9 canais
+canais:
+
+  # 1 · A VOZ DA CIDADE
+  - name: reels_cuiaba
+    tipo: voz_da_cidade
+    platform: instagram
+    handle: reels.cuiaba
+    seguidores: 86494
+    nota: "\"Tudo sobre Cuiabá\". O maior perfil não-institucional da praça."
+    status: roda
+
+  - name: cuiaba_das_antigas
+    tipo: voz_da_cidade
+    platform: instagram
+    handle: cuiabadasantigas
+    seguidores: 48826
+    nota: >-
+      Memória e nostalgia da cidade, 2.006 posts. Não existia equivalente em
+      nenhuma das quatro praças. Cuiabá tem 300 anos e se orgulha disso — é
+      uma porta de entrada de marca que nenhuma outra praça ofereceu.
+    status: roda
+
+  # 2 · A IMPRENSA LOCAL
+  - name: diario_de_cuiaba
+    tipo: imprensa
+    platform: instagram
+    handle: jornaldiariodecuiaba.oficial
+    seguidores: 12078
+    nota: "57 anos de casa."
+    status: roda
+  - name: imprensa_rss_cuiaba
+    tipo: imprensa
+    platform: rss
+    veiculos: [MidiaNews, Olhar Direto, RepórterMT, HiperNotícias, Gazeta Digital,
+               Primeira Página, vgnoticias, FOLHAMAX, Rdnews, Isso É Notícia]
+    status: roda
+
+  # 3 · A MÃE  ←—— NÃO ENCONTRADO
+  - name: mae_cuiaba
+    tipo: mae
+    platform: instagram
+    handle: null
+    status: nao_encontrado
+    nota: >-
+      A busca por "cuiaba maes" devolveu 2 perfis, e o maior (@mae_salmaa,
+      18 mil) é mãe de santo — religião, não maternidade. ATENÇÃO: uma busca
+      rasa não prova território vazio. Precisa de verificação humana antes de
+      virar conclusão. Se confirmar, é a maior brecha da praça: um milhão de
+      habitantes e nenhuma voz materna de escala, sendo que é a mãe quem
+      decide o aparelho.
+
+  # 4 · O PREÇO / ACHADINHO
+  - name: promofood_cuiaba
+    tipo: preco_achadinho
+    platform: instagram
+    handle: promofoodcuiaba
+    seguidores: 80293
+    nota: >-
+      "Aqui o seu dinheiro rende mais". Segundo maior perfil da praça inteira,
+      atrás só da prefeitura. Como a cidade fala de dinheiro.
+    status: roda
+  - name: rede_serve_mais
+    tipo: preco_achadinho
+    platform: instagram
+    handle: redeservemais
+    seguidores: 8380
+    nota: "17 lojas em Cuiabá e Várzea Grande — capilaridade de bairro."
+    status: roda
+
+  # 5 · O HUMOR LOCAL
+  - name: kauan_dodo
+    tipo: humor
+    platform: instagram
+    handle: kauandodo
+    seguidores: 42297
+    nota: "Se declara \"Cuiabano\". A língua solta da cidade."
+    status: roda
+
+  # 6 · O JOVEM
+  - name: university_beer
+    tipo: jovem
+    platform: instagram
+    handle: universitybeercuiaba
+    seguidores: 45650
+    nota: "\"A casa do universitário\" — o público de 18-25 num lugar só."
+    status: roda
+
+  # 7 · A GASTRONOMIA / CONSUMO
+  - name: pegue_e_monte
+    tipo: gastronomia
+    platform: instagram
+    handle: pegueemonte_cuiaba
+    seguidores: 8272
+    status: roda
+
+  # 8 · A PREFEITURA
+  - name: prefeitura_cuiaba
+    tipo: prefeitura
+    platform: instagram
+    handle: cuiabaprefeitura
+    seguidores: 164690
+    nota: >-
+      O MAIOR perfil da praça, com folga. E a prefeitura opera o Siminina,
+      que dá tratamento ortodôntico de graça — é canal e concorrente ao
+      mesmo tempo. Nunca vimos essa combinação nas outras quatro praças.
+    status: roda
+
+  # 9 · O ESPORTE DE BASE   ←—— o mais subestimado, e aqui ele é forte
+  - name: pes_de_ouro
+    tipo: esporte_base
+    platform: instagram
+    handle: associacaopesdeouro
+    seguidores: 8826
+    nota: >-
+      Sul-americano Sub-14 feminino, Brasileiro Escolar. Exatamente o público
+      de 9-15 com os pais na arquibancada — e feminino, que é onde o aparelho
+      é mais procurado.
+    status: roda
+  - name: escolinhas_ufmt
+    tipo: esporte_base
+    platform: instagram
+    handle: escolinhasesportivasufmt
+    seguidores: 7975
+    nota: "\"Escolinha GRATUITA para toda a comunidade\" — dentro da UFMT."
+    status: roda
+
+# ------------------------------------------------------- achados de contexto
+contexto:
+  - name: empregos_cuiaba
+    tipo: mercado_trabalho
+    platform: instagram
+    handle: empregosemcuiabamt
+    seguidores: 31102
+    nota: >-
+      "+30 mil candidatos". Serve para ver rotatividade das clínicas — se a
+      unidade publica vaga de recepção toda hora, o problema é gente, não verba.
+    status: pendente
+
+# --------------------------------------------- concorrentes que também são mídia
+# Em Cuiabá o dentista virou influenciador. Não vimos isso em nenhuma das
+# quatro praças anteriores, e muda o jogo: o concorrente não disputa só o
+# paciente, disputa a atenção.
+concorrentes_influenciadores:
+  - handle: dra.analuizapaz
+    seguidores: 10952
+  - handle: imo.cuiaba
+    seguidores: 7225
+    nota: "\"18 anos\" · \"a melhor experiência odontológica da sua vida\""
+  - handle: clinicaviottocuiaba
+    seguidores: 4745
+    nota: "Lente de contato dental — estética, ticket alto."
+  - handle: orthodontic.cbafernandocorrea
+    seguidores: 1340
+    nota: "A unidade com 78 avaliações tem MAIS seguidores que a de 1.222."
+  - handle: orthodontic.cbacentronorte
+    seguidores: 390
+    nota: "A unidade campeã em avaliações é a menor no Instagram."
