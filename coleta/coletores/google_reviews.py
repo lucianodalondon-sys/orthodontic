@@ -124,6 +124,28 @@ def get(url, tok, timeout=180):
         return json.loads(r.read())
 
 
+def roda_lote(alvos, max_reviews, tok):
+    """Manda TODAS as clínicas da praça numa corrida só.
+
+    Antes era uma corrida por clínica, sequencial: 15 clínicas estouravam
+    qualquer paciência e pagavam a taxa de início 15 vezes. O actor aceita
+    várias startUrls — e como agora temos place_id de todo mundo, dá para
+    mandar tudo junto.
+
+    Só serve para alvos com place_id. Quem ainda depende de busca por nome
+    continua indo um a um, porque searchStringsArray misturaria os resultados.
+    """
+    urls = [{"url": "https://www.google.com/maps/place/?q=place_id:" + a["place_id"]}
+            for a in alvos]
+    url = (f"{API}/acts/{ACTOR}/run-sync-get-dataset-items"
+           f"?token={tok}&timeout=2400&memory=8192")
+    return post(url, {
+        "startUrls": urls, "maxCrawledPlacesPerSearch": 1, "language": "pt-BR",
+        "reviewsSort": "newest", "maxReviews": max_reviews,
+        "scrapeReviewsPersonalData": False, "onlyDataFromSearchPage": False,
+    }, tok, timeout=2600)
+
+
 def roda(alvo, max_reviews, tok):
     """Roda o actor e espera. run-sync-get-dataset-items devolve os itens direto.
 
@@ -184,6 +206,20 @@ def main():
         print(f"\n=== {praca} · {len(alvos)} locais ({por_id} por place_id) · corte {hoje} ===")
         if pend:
             print(f"  ⚠ {len(pend)} sem place_id e sem query: {', '.join(pend)}")
+        # Uma corrida só para todo mundo que tem place_id; o resto vai um a um.
+        lote = {k: v for k, v in alvos.items() if v.get("place_id")}
+        avulsos = {k: v for k, v in alvos.items() if not v.get("place_id")}
+        colhido = {}
+        if lote and not args.dry_run:
+            print(f"  [lote] {len(lote)} clínicas numa corrida só...")
+            try:
+                for it in roda_lote(list(lote.values()), args.max_reviews, tok):
+                    if it.get("placeId"):
+                        colhido[it["placeId"]] = it
+                print(f"  [lote] voltaram {len(colhido)}")
+            except Exception as e:
+                print(f"  [lote FALHOU] {type(e).__name__} · {str(e)[:120]} — caindo para um a um")
+
         for local_id, alvo in alvos.items():
             query = alvo.get("query") or alvo.get("place_id")
             exigidos = alvo.get("exigidos", [])
@@ -191,13 +227,21 @@ def main():
                 como = "place_id" if alvo.get("place_id") else "nome"
                 print(f"  [dry] {local_id:24s} por {como:8s} {alvo['rotulo'][:40]}")
                 continue
-            try:
+            pronto = colhido.get(alvo.get("place_id"))
+            if pronto:
+                itens = [pronto]
+                try:
+                    pass
+                except Exception:
+                    pass
+            else:
+              try:
                 itens = roda(alvo, args.max_reviews, tok)
-            except urllib.error.HTTPError as e:
+              except urllib.error.HTTPError as e:
                 corpo = e.read().decode()[:200]
                 print(f"  [ERRO] {local_id}: HTTP {e.code} · {corpo}")
                 continue
-            except Exception as e:
+              except Exception as e:
                 print(f"  [ERRO] {local_id}: {type(e).__name__} · {str(e)[:150]}")
                 continue
 

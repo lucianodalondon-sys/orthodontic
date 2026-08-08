@@ -40,6 +40,10 @@ COLETORES = {
    cmd=["python3", "coleta/coletores/google_places.py", "--praca", "{praca}"],
    custo="~US$0,05/praça", da="a categoria INTEIRA — 747 clínicas onde a lista a mão tinha 36"),
 
+ "canais": dict(freq="mensal", status="pronto", por_praca=True,
+   cmd=["python3", "coleta/coletores/canais.py", "--praca", "{praca}"],
+   custo="~US$0,20/praça", da="os 9 canais da cidade — e os que NÃO existem, que é território vazio"),
+
  # --- a construir, na ordem de valor (ver coleta/FONTES.md) ---
  "reclame_aqui": dict(freq="mensal", status="pronto", por_praca=False,
    cmd=["python3", "coleta/coletores/reclame_aqui.py", "--empresa", "orthodontic", "--n", "20"],
@@ -47,7 +51,9 @@ COLETORES = {
  "google_ads": dict(freq="semanal", status="pronto", por_praca=True,
    cmd=["python3", "coleta/coletores/google_ads.py", "--praca", "{praca}"],
    custo="~US$0,20/praça", da="quem compra a BUSCA, e há quantos dias o anúncio está no ar"),
- "whatsapp_teste": dict(freq="quinzenal", status="construir", custo="manual",
+ "whatsapp_teste": dict(freq="mensal", status="pronto", por_praca=True, manual=True,
+   cmd=["python3", "coleta/coletores/whatsapp_teste.py", "--praca", "{praca}", "--preparar"],
+   custo="manual",
    da="tempo até a 1ª resposta — a ferida nº1 das 4 praças, sem medição"),
  "doctoralia":     dict(freq="mensal", status="construir", custo="baixo",
    da="avaliação por PROFISSIONAL nomeado — mede a constante nº3"),
