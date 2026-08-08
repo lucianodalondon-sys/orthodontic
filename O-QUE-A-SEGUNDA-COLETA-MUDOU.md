@@ -94,11 +94,27 @@ escrito: *"a unidade está muda no pico"*, *"o território de acolhimento está
 vago"*, *"a OrthoDontic é quem mais anuncia em Feira"*. Nenhuma errada — todas
 incompletas.
 
+**E a versão corrigida não pode trocar um implícito por outro.** A frase que
+sobrevive a qualquer contestação é: *"a OrthoDontic é a única rede da amostra
+ausente das duas mídias digitais rastreáveis"* — não *"ausente de todas as
+mídias"*.
+
 **Verificado.** A primeira leitura podia ser artefato de busca por nome, então
 rodei quatro variantes: `Orthodontic Brasil`, `OrthoDontic Center`,
 `orthodontic.com.br` e `Orthodontic Franchising`. **Zero anúncios da marca
-brasileira em todas.** A única franquia odontológica que apareceu de raspão foi
-a Maxi Odonto, com 3 anúncios — ou seja, até concorrente menor compra busca.
+brasileira em todas.** Nas quatro praças: OdontoCompany 35 anúncios,
+Odontoclinic 15, Sorrifácil 1, OrthoDontic **0**.
+
+**E o limite dessa leitura, que é grande.** Isto mede **busca paga**, não mídia.
+Rádio, TV, outdoor, panfleto, patrocínio e parceria com escola não deixam rastro
+público — e o estudo de Riomafra documenta que **o rádio é canal forte na praça**
+(três emissoras, uma da paróquia) e que a unidade **patrocina os escoteiros**.
+Existe atividade offline que não vemos, e ela está escrita no próprio material.
+
+Dois casos que provam o ponto: **Moisés Suzart cresce ~39 avaliações/mês em
+Feira sem comprar busca e sem responder avaliação**, e a **NEXA de Prudente**
+idem. Nas nossas fontes eles não fazem nada que explique o crescimento — o que
+não é paradoxo, é a medida do ponto cego. Ver `dados/O-QUE-NAO-VEMOS.md`.
 
 *(Ressalva que permanece: o Centro de Transparência cobre anunciante verificado,
 e uma conta com razão social sem relação com a marca não seria encontrada por
