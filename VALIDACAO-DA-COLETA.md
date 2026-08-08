@@ -123,15 +123,55 @@ diretoria com a mesma cara de confiança.
 
 ---
 
+## A PROVA: PALMAS/TO, DO ZERO, SÓ COM OS COLETORES
+
+O único teste que vale é entrar numa praça nova sem nenhum script auxiliar.
+Palmas foi escolhida por preencher o buraco do **Norte**, que não tinha praça
+nenhuma.
+
+| Passo | Comando | Resultado |
+|---|---|---|
+| Descobrir | `descobrir_praca.py --cidade "Palmas/TO"` | IBGE, imprensa, esqueleto |
+| Varrer | `google_places.py --praca palmas` | **137 clínicas** |
+| Avaliar | `google_reviews.py --praca palmas` | **2.064 avaliações**, 14 clínicas numa corrida só |
+| Escutar | `canais.py --praca palmas` | **13 canais**, humor declarado inexistente |
+| Separar | `classificar.py` | 16.157 avaliações classificadas na base |
+| Ler | `inteligencia.py --praca palmas` | placar, hipóteses e contraexemplos |
+
+**Nenhum script descartável.** Custo ~US$ 1,50, cerca de 40 minutos.
+
+### E Palmas já ensinou algo que nenhuma outra praça tinha ensinado
+
+| Clínica | Ritmo | Meses seguidos | Responde |
+|---|---:|---:|---:|
+| DenteClin | 33,8 | 5 | 51% |
+| Centro Integrado | 31,7 | 5 | 52% |
+| **★ OrthoDontic** | **14,0** | **11** | **0%** |
+
+A unidade é **3ª em ritmo mas 1ª em constância**. As duas que estão na frente
+são campanha de cinco meses; a unidade sustenta há onze.
+
+É a segunda vez que uma OrthoDontic aparece como a operação mais estável da
+praça — a primeira foi Cuiabá. **Começa a virar padrão: a rede não é a mais
+rápida, é a mais constante.** Com duas praças isso ainda é sinal isolado, mas é
+o tipo de coisa que muda o argumento de "vocês estão perdendo" para "vocês
+duram mais que os outros — falta acelerar".
+
+---
+
 ## O QUE FAZER A SEGUIR, EM ORDEM
 
-1. **Portar a coleta funda para coletor.** É a que produz o histograma mensal,
-   que é a métrica que separa operação de campanha. Sem ela, a próxima praça
-   volta a medir errado.
-2. **Escrever o teste de WhatsApp.** É a ferida nº 1 e ninguém mede.
-3. **Fechar os 4 locais pendentes**, à mão, olhando o endereço.
-4. **Rodar o ciclo inteiro numa praça, do zero**, sem script auxiliar — é o
-   único teste que prova que o processo está de pé.
+1. ✅ ~~Portar a coleta funda~~ — `google_reviews.py --max-reviews 600` já faz,
+   e o `inteligencia.py` monta o histograma mensal.
+2. ✅ ~~Escrever o teste de WhatsApp~~ — `whatsapp_teste.py`, testado.
+3. ✅ ~~Fechar os locais pendentes~~ — zero pendentes; um ficou marcado como
+   incerto de propósito.
+4. ✅ ~~Rodar o ciclo do zero~~ — Palmas, acima.
+5. **Rodar o teste de WhatsApp de verdade.** O coletor existe e nunca foi
+   usado com uma mensagem real. É a ferida nº 1 e continua sem um número.
+6. **Segunda coleta de Palmas em setembro**, para o ritmo sair do `~estimado`
+   e virar contador.
+7. Os dez coletores que faltam, na ordem do `coleta/FONTES.md`.
 
 ---
 

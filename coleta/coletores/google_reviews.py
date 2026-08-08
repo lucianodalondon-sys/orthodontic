@@ -196,7 +196,10 @@ def main():
     places = {(r["local_id"], r["snapshot_date"]): r for r in jsonl_le(SERIE/"places.jsonl")}
     reviews = {r["chave"]: r for r in jsonl_le(SERIE/"reviews.jsonl")}
 
+    sem_credito = False
     for praca in pracas:
+        if sem_credito:
+            break
         alvos = alvos_da_praca(praca)
         if args.so_local:
             alvos = {k: v for k, v in alvos.items() if k == args.so_local}
@@ -238,8 +241,18 @@ def main():
               try:
                 itens = roda(alvo, args.max_reviews, tok)
               except urllib.error.HTTPError as e:
-                corpo = e.read().decode()[:200]
-                print(f"  [ERRO] {local_id}: HTTP {e.code} · {corpo}")
+                corpo = e.read().decode()[:300]
+                # Crédito acabado não melhora na próxima clínica. Parar e dizer
+                # vale mais que repetir o mesmo 402 catorze vezes.
+                if e.code == 402 or "not-enough-usage" in corpo:
+                    print(f"\n  [PAROU] a conta da Apify acabou.")
+                    print(f"  {corpo[corpo.find('message'):][:150]}")
+                    print("  Troque APIFY_TOKEN em _pipeline/.env e rode de novo:")
+                    print(f"    python3 coleta/coletores/google_reviews.py --praca {praca}")
+                    print("  O que já foi coletado até aqui será gravado.")
+                    sem_credito = True
+                    break
+                print(f"  [ERRO] {local_id}: HTTP {e.code} · {corpo[:180]}")
                 continue
               except Exception as e:
                 print(f"  [ERRO] {local_id}: {type(e).__name__} · {str(e)[:150]}")
