@@ -1,328 +1,302 @@
 # PROMPT MESTRE — Claude Design
-## Portal de Inteligência OrthoDontic
+## Portal de Inteligência OrthoDontic · visão da FRANQUEADORA
 
-> Cole tudo abaixo no Claude Design, junto com o design system da OrthoDontic.
+> Cole tudo abaixo no Claude Design, junto com o design system da OrthoDontic
+> (skill `orthodontic-design`).
 
 ---
 
 Construa o **ORTHODONTIC INTELLIGENCE** — o portal de inteligência de rede da
-maior rede de ortodontia do Brasil (~340 unidades). Não é um dashboard de BI.
-É um **centro de operações**: a franqueadora abre isto e vê o que está
-acontecendo nas cidades onde suas unidades operam, em tempo quase real.
+maior rede de ortodontia do Brasil, ~340 unidades. Não é dashboard de BI. É um
+**centro de operações**: a franqueadora abre e vê o que está acontecendo nas
+cidades onde suas unidades operam.
 
-**Quem abre:** a CEO, a diretoria e o conselho (holding de private equity), os
-consultores de campo, e os franqueados — cada um vendo o seu nível.
-
-**A tese do produto, em uma frase:**
-> A rede sabe o que 340 unidades registraram no sistema dela. Não sabe o que
-> 340 cidades estão fazendo com a marca. Este portal é o segundo olho.
+**A tese, em uma frase:**
+> A rede sabe o que 340 unidades registraram no sistema dela. Não sabe o que 340
+> praças estão fazendo com a marca. Este portal é o segundo olho.
 
 ---
 
-## 1 · SISTEMA DE DESIGN
+## 0 · ESCOPO DESTA ENTREGA — leia antes de tudo
 
-Invoque a skill **`orthodontic-design`**. Linke `styles.css` (traz todos os
-tokens e a Gotham). Use os arquivos reais de logo em `assets/logos/` — **nunca
-redesenhe a marca**.
+**Construa APENAS a visão da FRANQUEADORA.** A diretoria, a CEO e o conselho
+(holding de private equity).
 
-### Use exatamente como está
+As visões do **consultor de campo** e do **franqueado** virão depois. Não as
+construa, não faça o seletor de perfil, não desenhe as telas delas.
 
-Gotham (300 Light · 400 Book · 500 Medium · 700 Bold · 900 Black) ·
-cyan `#00B9FF` + navy `#001E78` · botões pill · sombras com tinta navy, nunca
-cinza neutro · brilho cyan (`--shadow-cyan`) nos CTAs primários e no estado
-ativo · anel de foco cyan de 3px · o motivo dos anéis concêntricos ·
-superfícies de vidro (`--glass-fill`, `--glass-blur`).
+Mas **projete como se elas fossem existir**, porque vão:
+- nada na interface deve **ranquear franqueado nominalmente de forma humilhante**
+— o dado é frio, a comparação é entre unidades, e a linguagem nunca acusa;
+- todo número de unidade aparece **com a ação recomendada ao lado**, nunca
+  sozinho. Essa é a regra que vai permitir o franqueado entrar depois sem que o
+  produto seja lido como instrumento de cobrança.
 
-### O mundo escuro já existe dentro da marca — não invente outro
+---
 
-O sistema já tem o gradiente `--grad-navy` (`#16307F → #001E78 → #001A5C`) e os
-tokens `--surface-inverse` e `--surface-inverse-deep`. **O portal mora ali.**
-Não construa uma paleta escura nova: estenda a ponta navy do gradiente da marca.
+## 1 · DESENHAR PARA 340, MOSTRAR 4 — a decisão mais importante
 
-- **Plano da página:** `#001433` — um degrau abaixo de `--od-navy-800 #001A5C`
-- **Superfície de painel:** `--od-navy-800 #001A5C`, com o painel elevado em
-  `#02205F`
-- **Fio de borda:** `rgba(255,255,255,.10)`; borda de destaque `rgba(0,185,255,.28)`
-- **Texto:** branco · `rgba(255,255,255,.72)` · `rgba(255,255,255,.48)`
-- **Logo:** `logo-horizontal-white.png` e `symbol-white.png` — existem
-  exatamente para isto
+Hoje existem **4 praças com inteligência e 336 sem**. Uma tela desenhada para 4
+quebra quando chegar a 340; uma desenhada para 340 funciona com 4.
 
-O resultado não é "um dashboard escuro". É a OrthoDontic no fundo do próprio
-gradiente dela.
+### O que isso obriga
 
-### Os três conflitos do sistema — e como resolver
+**Nada é uma lista fixa.** Toda coleção de unidades é uma **grade filtrável, com
+busca e ordenação**, projetada para 340 linhas e exibindo 21. Se um componente
+só faz sentido com 4 itens, ele está errado.
 
-O sistema foi desenhado para campanha de paciente em fundo claro. Três coisas
-quebram num produto de operação, e o próprio readme marca as cores de estado
-como *adições*, não como manual — então há licença para ajustar.
+**A ficha da praça é ALCANÇADA, não navegada.** Ninguém vai rolar 340 fichas. Os
+caminhos até ela são três: um alerta, uma busca, ou um filtro de coorte. O trilho
+lateral tem **busca global (⌘K)** como elemento de primeira classe, não enfeite.
 
-**1. `--color-info` É o cyan da marca.** Neste produto o cyan é a cor da marca,
-do botão primário e do estado ativo. Se também for "informação", tudo na tela
-lê como informação.
-→ **O cyan fica reservado para marca, ação primária e estado ativo. Não é
-status.** Elimine o nível "info" do conjunto.
+**Filtros de coorte, sempre visíveis** — é assim que a diretoria pensa e é a
+língua da casa:
+`região` · `porte de cidade` · `safra` (ano de abertura) · `unidade madura` ·
+`status de inteligência` (estudada / em coleta / não ouvida)
 
-**2. `--color-danger #E23D6D` está praticamente em cima do `--od-magenta
-#E8408D`.** Um alerta crítico ficaria com a mesma cor de um CTA de campanha.
-→ **O magenta não aparece no portal.** Ele pertence ao mundo de campanha. E o
-crítico sobe para um vermelho que soa alarme sobre navy.
+**Alertas são AGRUPADOS por tipo, não empilhados.** Com 340 unidades, "silêncio
+no digital rastreável" vira 40 alertas iguais. O cartão diz **"12 unidades em
+silêncio no pico regional"** e abre a lista. Nunca 12 cartões idênticos.
+
+**Comparação é o verbo principal.** O número de uma unidade só significa alguma
+coisa contra a coorte dela. Toda métrica na ficha aparece com a referência ao
+lado: *"0,7 review/mês — mediana da coorte: 4,1"*.
+
+### O estado padrão é a ignorância — e isso é a história
+
+**336 de 340 praças não têm dado nenhum.** Não esconda, não preencha com cinza
+apagado envergonhado. É a narrativa de crescimento do produto e o argumento de
+venda mais forte que existe.
+
+Desenhe um **medidor de cobertura** persistente no topo:
+`4 / 340 praças ouvidas` com barra de progresso, sempre visível.
+
+E uma tela dedicada, **"A rede que ainda não ouvimos"**, com as 336 e um critério
+de priorização — qual praça estudar em seguida e por quê (região não coberta,
+porte não coberto, safra não coberta). Campo vazio declarado vale mais que
+suposição.
+
+---
+
+## 2 · SISTEMA DE DESIGN
+
+Invoque a skill **`orthodontic-design`**. Linke `styles.css`. Use os logos reais
+de `assets/logos/` — **nunca redesenhe a marca**.
+
+### Use como está
+Gotham (300/400/500/700/900) · cyan `#00B9FF` + navy `#001E78` · botões pill ·
+sombras com tinta navy · brilho cyan (`--shadow-cyan`) em CTA e estado ativo ·
+anel de foco cyan 3px · motivo dos anéis concêntricos · vidro (`--glass-fill`).
+
+### O mundo escuro já existe na marca — não invente outro
+O sistema tem `--grad-navy` (`#16307F → #001E78 → #001A5C`) e
+`--surface-inverse-deep`. **O portal mora ali.**
+
+- Plano da página `#001433` · superfície de painel `--od-navy-800 #001A5C` ·
+  painel elevado `#02205F`
+- Fio `rgba(255,255,255,.10)` · destaque `rgba(0,185,255,.28)`
+- Texto branco · `rgba(255,255,255,.72)` · `rgba(255,255,255,.48)`
+- Logo: `logo-horizontal-white.png` e `symbol-white.png`
+
+Não é "um dashboard escuro". É a OrthoDontic no fundo do próprio gradiente dela.
+
+### Os três conflitos do sistema — resolva assim
+
+O readme marca as cores de estado como *adições*, não como manual. Há licença.
+
+**1. `--color-info` É o cyan da marca.** Se o cyan for marca, ação primária,
+estado ativo **e** informação, tudo lê como informação.
+→ **Cyan é só marca, ação e estado ativo. Não é status.** Elimine "info".
+
+**2. `--color-danger #E23D6D` está em cima do `--od-magenta #E8408D`.** Alerta
+crítico ficaria com cor de CTA de campanha.
+→ **Magenta não entra no portal.** Crítico sobe para `#FF5C5C`.
 
 **3. Os quatro estados foram escolhidos para fundo branco.** Sobre `#001A5C`
-eles precisam de novo degrau para segurar contraste.
-
-**O conjunto de estado do portal, sobre navy:**
+precisam de novo degrau.
 
 | Nível | Hex | Origem |
 |---|---|---|
-| Bom | `#3ED6B8` | `--color-success #2FB39B` clareado para o fundo escuro |
-| Atenção | `#F8D65D` | `--od-yellow`, funciona como aviso e não colide com nada |
-| Grave | `#F5A057` | `--od-orange`, secundária da marca, intacta |
-| Crítico | `#FF5C5C` | `--color-danger` reescalonado — longe do magenta, alarme sobre navy |
+| Bom | `#3ED6B8` | `--color-success` clareado |
+| Atenção | `#F8D65D` | `--od-yellow` |
+| Grave | `#F5A057` | `--od-orange` |
+| Crítico | `#FF5C5C` | `--color-danger` reescalonado |
 
-**Regra:** cor de estado nunca é cor de marca, e cor de marca nunca é estado.
+**Regra: cor de estado nunca é cor de marca, e vice-versa.**
 
-### Duas adaptações de registro
+### Registro
+**Arredondamento:** pill nos botões (definidor da marca), mas painel de dado em
+`--radius-md 16px`. `xl`/`2xl` em painel de operação fica com cara de brinquedo.
 
-**Arredondamento.** A marca arredonda tudo. Mantenha **pill nos botões** — é
-definidor da marca. Mas painéis de dado usam `--radius-md 16px`, nunca `xl` ou
-`2xl`: arredondamento generoso em painel de operação fica com cara de brinquedo.
+**Voz:** o "você" caloroso com chips de benefício é para **paciente**. Aqui é
+conselho. Use o registro que o próprio readme define para documentação:
+**formal, preciso, instrucional.** Sem emoji, sem estrela, sem bolha.
 
-**Voz.** A voz de "você", calorosa, com chips de benefício e reações em emoji, é
-para **paciente**. Este portal é interno, para um conselho. Use o registro que o
-próprio readme define para documentação: **formal, preciso, instrucional.** Sem
-emoji, sem estrela de avaliação, sem bolha de benefício.
-
-**Tipografia de dado.** Gotham para títulos e números-herói. Some uma
-**monoespaçada** para valores, datas de corte, N, filtros e IDs — é o mono que
-dá cara de instrumento. Sem ele, vira relatório.
+**Tipografia de dado:** Gotham para títulos e números-herói. Uma **monoespaçada**
+para valores, datas de corte, N, filtros e IDs — é o mono que dá instrumento.
 
 ---
 
-## 2 · DIREÇÃO VISUAL
+## 3 · DIREÇÃO VISUAL E ATMOSFERA
 
-**A referência é sala de controle — não ficção científica, não Power BI.**
-Profundo, calmo, e quando algo precisa de atenção, aquilo se destaca sozinho.
+**Sala de controle — não ficção científica, não Power BI.**
 
-### O que fazer
+A linguagem é de **peça de engenharia flutuando no escuro, emitindo luz, com
+dados em linhas finas ao redor** — telemetria de alta performance.
 
-- **Profundidade real.** Painéis flutuam sobre o plano navy com fio de 1px,
-  sombra navy difusa (`--shadow-lg`) e um gradiente interno quase imperceptível.
-  Vidro fosco na barra superior e nas gavetas — a marca já tem esse material.
-- **Números-herói gigantes** em Gotham Black (`--fw-black`), até `--text-7xl`,
-  com contagem animada na entrada. O `5,9%` do agendamento tem que doer na tela.
+- **O fundo nunca é chapado.** Gradiente radial amplo, navy mais claro no alto e
+  ao centro, escurecendo para `#000B24` nas bordas. Por cima, **grão a 3-4%** —
+  é o grão que tira o aspecto de "div preta".
+- **O objeto-herói flutua e emite luz.** O mapa do Brasil em **wireframe/nuvem
+  de pontos cyan translúcido**, com **poça de luz radial** embaixo (cyan a ~12%,
+  muito difusa). Não é mapa preenchido: é modelo técnico aceso no escuro.
+- **Linhas de dado atravessam o espaço.** Curvas de 1px em cyan a 30-50%,
+  cruzando áreas vazias com pontos marcados e rótulos minúsculos. A curva de
+  sazonalidade vive assim — solta, não presa em caixa de gráfico.
+- **Tipografia com ar.** Rótulos em caixa alta, `--tracking-wider`, peso leve,
+  corpo pequeno. Títulos em Gotham Black, grandes, caixa alta, à esquerda.
+  **Contraste de escala é o efeito principal.**
+- **Numeração de capítulo** no canto direito, peso leve.
+- **Réguas verticais finas** de 1px `rgba(255,255,255,.14)` nas bordas.
+- **Botão circular com arco** parcial — **em cyan, nunca em vermelho**.
 - **O motivo dos anéis concêntricos** (`--rings-soft`) como marca d'água enorme
-  atrás do mapa. É o elemento da marca que mais parece radar — use isso.
-- **O mapa é o herói da home.** Brasil em navy profundo, 340 pontos. Quatro
-  acesos em cyan com halo; 336 apagados em `rgba(255,255,255,.14)`. Conta a
-  história inteira do produto sem uma palavra.
-- **Sparkline em tudo que tem série**, ao lado do número.
-- **Medidores radiais e trilhas de medição** no lugar de mais tabelas.
+  atrás do mapa. É o elemento da marca que mais parece radar.
 
-### A ATMOSFERA — a referência visual exata
+> **A disciplina do vermelho:** vermelho é **exclusivamente crítico** (`#FF5C5C`).
+> Se aparecer em botão ou detalhe por estética, o portal perde a capacidade de
+> alarmar.
 
-A linguagem é a de uma **peça de engenharia flutuando no escuro, emitindo luz,
-com dados desenhados em linhas finas ao redor dela** — a estética de telemetria
-de alta performance. Escuridão quase total, um objeto luminoso, poucas palavras,
-tipografia fina e espaçada.
+### Onde a atmosfera vale — e onde cede
+**Vale integral** na home, no topo da ficha e nas transições. **Cede densidade**
+nos painéis de trabalho — a fila de alertas, a grade das unidades, o placar. Um
+portal bonito e vazio não sobrevive à segunda reunião.
 
-Traduzido para os tokens da OrthoDontic:
-
-**O fundo nunca é chapado.** Um gradiente radial amplo: navy um pouco mais claro
-no alto e ao centro, escurecendo para `#000B24` nas bordas — vinheta suave. Por
-cima de tudo, uma camada de **grão** a 3–4% de opacidade. É o grão que tira o
-aspecto de "div preta" e dá material.
-
-**O objeto-herói flutua e emite luz.** O mapa do Brasil é desenhado como
-**wireframe/nuvem de pontos em cyan**, translúcido, como se fosse um modelo
-técnico — não um mapa chapado preenchido. Sob ele, uma **poça de luz radial**
-(cyan a ~12% de opacidade, muito difusa) como se o objeto iluminasse o chão. É
-esse pool de luz que faz o elemento parecer estar num espaço, não colado num
-fundo.
-
-**As linhas de dado atravessam o espaço.** Curvas de 1px, em cyan a 30–50% de
-opacidade, cruzando áreas vazias da tela com pontos de dado marcados e rotulados
-em texto minúsculo e espaçado. A curva de sazonalidade e a série de velocity
-devem viver assim — flutuando, não presas dentro de uma caixa de gráfico.
-
-**Tipografia com muito ar.** Rótulos em caixa alta, `--tracking-wider .14em`,
-peso `--fw-light` ou `--fw-book`, tamanho pequeno. Títulos em Gotham Black,
-grandes, em caixa alta, colados à esquerda. Coluna de texto estreita (máximo 40
-caracteres) para o parágrafo de apoio. **Contraste de escala é o efeito
-principal:** um título enorme ao lado de um rótulo minúsculo.
-
-**Numeração de capítulo.** No canto direito, número grande em peso leve com o
-total abaixo em corpo pequeno — `01 / 04` para as quatro praças, `01 / 07` para
-os sinais. Comunica "existe uma sequência" e ancora a leitura.
-
-**Réguas verticais finas** nas bordas da tela, com setas de navegação — o fio de
-1px em `rgba(255,255,255,.14)` que cria a moldura sem fechar caixa.
-
-**Botão circular com arco.** O botão de ação secundária é um círculo com arco
-parcial desenhado em volta — **em cyan, nunca em vermelho**. Ao passar o mouse o
-arco completa a volta.
-
-**90% da tela é escuro vazio.** O conteúdo é pontual e luminoso. Essa é a regra
-mais difícil de seguir e a que mais muda o resultado.
-
-> **A disciplina do vermelho:** na referência, o vermelho é acento decorativo.
-> **Aqui não.** Vermelho é exclusivamente crítico (`#FF5C5C`). Se aparecer em
-> botão, em detalhe ou em linha por estética, o portal perde a capacidade de
-> alarmar. O acento de ação é o cyan da marca.
-
-### Onde essa atmosfera vale — e onde não
-
-A referência é uma experiência de marketing: uma mensagem por tela, muito
-respiro. Um portal precisa segurar informação densa.
-
-- **Vale integralmente** na home, no topo de cada ficha de praça, na tela de
-  aprendizados e em toda transição. São os momentos-herói.
-- **Cede a densidade** nos painéis de trabalho — a fila de sinais, o plano de 90
-  dias, o placar. Ali o material continua o mesmo (navy, fio cyan, vidro,
-  grão), mas o respiro diminui e a informação aumenta.
-
-Um portal bonito e vazio não sobrevive à segunda reunião. A atmosfera é o que
-faz a diretoria prestar atenção; a densidade é o que a faz voltar.
-
-### O que evitar
-
-- **Tabela como componente padrão.** Se a tela virou grade de linhas e colunas,
-  está errada. Tabela só onde comparação item a item é o conteúdo — e mesmo lá,
-  com barra embutida, marca de estado e linhas grandes e clicáveis.
-- Magenta e as demais cores de campanha. Neon genérico de dashboard. Emoji como
-  ícone. Cartão branco com sombra suave.
-- **Fundo chapado sem gradiente e sem grão.** É o erro que mais derruba esta
-  estética.
-- Ficção científica literal: HUD, hexágono, linha de varredura, fonte angular.
+### Evitar
+Tabela como componente padrão · magenta e cores de campanha · neon genérico ·
+emoji como ícone · cartão branco com sombra suave · **fundo chapado sem gradiente
+e sem grão** · HUD, hexágono, linha de varredura.
 
 ---
 
-## 3 · ESTRUTURA E NAVEGAÇÃO
+## 4 · NAVEGAÇÃO
 
-Aplicativo de página única, quatro áreas, transição suave entre elas.
+Aplicativo de página única com transição suave.
 
-**Barra superior fixa (vidro fosco):** logo · busca global (`⌘K`) · pílula de
-cobertura `4 / 340 praças` com barra de progresso · data do corte · seletor de
-perfil (Franqueadora / Consultor / Franqueado) · avatar.
+**Barra superior fixa (vidro fosco):** logo · **busca global ⌘K** · pílula de
+cobertura `4 / 340` com barra · data do corte · versão da taxonomia.
 
-**Trilho lateral esquerdo, escuro, ícones + rótulo:**
-`Sala de Controle` · `Praças` (expande nas 4) · `O que Aprendemos` ·
-`Corretor de Campanha` · `Método e Cobertura`
+**Trilho lateral escuro:**
+`Sala de Controle` · `Praças` · `Rede não ouvida` · `O que Aprendemos` ·
+`Corretor de Campanha` · `Método`
 
-**Controles reais que precisam existir e funcionar visualmente:** botão primário
-e secundário, botão fantasma, pílulas de filtro selecionáveis, controle
-segmentado (períodos), busca com resultados ao vivo, alternador de tema,
-gaveta lateral, modal, abas, tooltip no gráfico, menu suspenso, seletor de
-período.
+**Controles que precisam existir e funcionar:** botão primário/secundário/
+fantasma · pílulas de filtro · controle segmentado · busca com resultado ao vivo ·
+gaveta lateral · modal · abas · tooltip em gráfico · seletor de período ·
+**ordenação e filtro em toda grade**.
 
 ---
 
-## 4 · TELA 1 — SALA DE CONTROLE
+## 5 · TELA 1 — SALA DE CONTROLE
 
-**Herói:** o mapa do Brasil ocupando a primeira dobra inteira, tratado como
-**modelo técnico luminoso** — malha wireframe em cyan translúcido e nuvem de
-pontos, flutuando no navy, com a poça de luz radial embaixo. Não é um mapa
-preenchido: é uma peça de engenharia acesa no escuro.
+**Herói:** o mapa do Brasil ocupando a primeira dobra, como modelo técnico
+luminoso. 340 pontos: **4 acesos em cyan com halo**, **336 apagados** em
+`rgba(255,255,255,.14)`. Acesas: **Londrina/PR · Presidente Prudente/SP · Feira
+de Santana/BA · Mafra/SC**. Hover num ponto aceso abre cartão de vidro.
 
-340 pontos. Quatro acesos em cyan com halo; **336 apagados** em
-`rgba(255,255,255,.14)` — as cidades que a rede ainda não ouviu. As quatro
-acesas: **Londrina/PR · Presidente Prudente/SP · Feira de Santana/BA ·
-Mafra/SC**. Passar o mouse num ponto aceso abre um cartão de vidro com nota,
-avaliações e sinais abertos.
+Ao redor, no vazio, uma curva de dado de 1px com o pico marcado:
+`JUL · ÍNDICE 34`.
 
-**Linhas de dado atravessando o espaço vazio ao redor do mapa:** a curva de
-sazonalidade de uma das praças desenhada em 1px cyan translúcido, com o pico de
-julho marcado por um ponto e o rótulo minúsculo `JUL · ÍNDICE 34`. Solta no
-espaço, sem caixa.
-
-Alinhado à esquerda, sobre o vazio, em contraste extremo de escala:
+À esquerda, contraste extremo de escala:
 
 > `INTELIGÊNCIA DE REDE` *(rótulo minúsculo, caixa alta, muito espaçado)*
 >
-> # 4 DE 340 PRAÇAS OUVIDAS *(Gotham Black, enorme)*
+> # 4 DE 340 PRAÇAS OUVIDAS
 >
 > Sabemos o que acontece dentro das clínicas. Estamos começando a saber o que
-> acontece em volta delas. *(coluna estreita, peso leve)*
+> acontece em volta delas.
 
-No canto direito, a numeração de capítulo em peso leve: `01` sobre `04`.
-
-**Faixa de números-herói** logo abaixo (contagem animada):
+**Faixa de números-herói** (contagem animada na entrada):
 
 | Valor | Rótulo |
 |---|---|
-| **7** | sinais abertos |
-| **4** | praças com inteligência ativa |
+| **8** | sinais abertos |
 | **336** | praças ainda não ouvidas |
-| **1** | crença da rede derrubada por dado |
+| **23** | dias entre a 1ª e a 2ª coleta |
+| **3** | conclusões do estudo corrigidas pela 2ª coleta |
 
-**Fila de sinais** — cartões grandes, não linhas de tabela. Cada cartão: faixa
-de severidade colorida, cidade, título, o que aconteceu, **o que fazer**, e um
-botão `Ver evidência`. Os três críticos pulsam.
+**Fila de alertas — cartões grandes, AGRUPADOS por tipo.** Cada um: faixa de
+severidade, o que aconteceu, **o que fazer**, botão `Ver evidência`. Com 340
+unidades cada cartão vira grupo; com 4, o grupo tem 1 ou 2 itens.
 
-Os sete sinais, com o texto exato:
+Os oito sinais, com o texto exato:
 
 **CRÍTICO · Riomafra — Concorrente invadiu a categoria**
 A clínica de nove meses ao lado, que só vendia prótese e implante, começou a
-anunciar aparelho em julho, no pico anual da região.
-*Fazer:* subir 4 a 6 anúncios sempre-ativos com rosto e parcela clara. 7 a 14 dias.
+anunciar aparelho em julho, no pico anual da região. Entre 15/jul e 07/ago ela
+foi de ~10 para 37 anúncios ativos.
+*Fazer:* subir 4 a 6 anúncios sempre-ativos com rosto e parcela clara.
 
-**CRÍTICO · Riomafra — Silêncio no pico**
-Zero anúncios ativos, e zero no histórico da biblioteca, enquanto a busca da
-região está no índice 34 — o topo da série de cinco anos.
-*Fazer:* programar as duas ondas de férias. Margem PR até 27/07, margem SC de
-23/07 a 02/08. O criativo troca de margem no dia 23.
+**CRÍTICO · Riomafra — A vizinha acelerou e a unidade ficou parada**
+Em 23 dias a Lumière fez +33 avaliações (~43/mês) e a OrthoDontic fez **zero**.
+A distância era 42; agora é 75.
+*Fazer:* religar a máquina de avaliações — a unidade já fez 47 em três meses de
+2022, sabe fazer.
 
 **CRÍTICO · Riomafra — Agendamento a 5,9% contra régua de 40%**
-De cada 100 interessados, seis viram avaliação agendada. Comparecimento,
-fechamento e pagamento batem ou superam a régua.
-*Fazer:* blindar a linha de frente — resposta em minutos, e trocar rajada de
-campanha por fluxo constante.
+De cada 100 interessados, seis viram avaliação agendada. Comparecimento (49%),
+fechamento (75%) e pagamento (99%) batem ou superam a régua.
+*Fazer:* blindar a linha de frente — resposta em minutos, fluxo em vez de rajada.
 
-**GRAVE · Londrina — Gap de marca dentro da mesma cidade**
-A matriz tem 4,6 e a filial do Centro tem 3,5. Para o paciente, as duas são
-OrthoDontic.
-*Fazer:* tratar como passivo de marca da franqueadora, não como problema de uma
-unidade.
+**CRÍTICO · Rede — A marca não responde**
+433 reclamações no Reclame Aqui, nota 7,01, e **5% dizem que voltariam a fazer
+negócio**. As três mais recentes, todas do mesmo dia, todas "Não respondida".
+*Fazer:* rotina de resposta em 48h, no Reclame Aqui e no Google. É decisão de
+franqueadora, não de unidade.
 
-**GRAVE · Feira de Santana — A unidade grita dentro do coro**
-17 anúncios ativos num mar de 59 anúncios de 16 anunciantes com texto quase
-idêntico. Quem lidera a cidade se recusa a gritar.
-*Fazer:* trocar urgência por rosto, acolhimento e preço dito como orgulho do
-batalhador.
+**GRAVE · Londrina — A matriz perde o maior volume da cidade em ~2 meses**
+Odontoclinic +14/mês contra +4/mês da matriz. A distância caiu de 28 para 20
+avaliações.
+*Fazer:* ligar a máquina de avaliações na matriz — hoje ela responde 0% das
+avaliações que recebe.
 
-**ATENÇÃO · Riomafra — Velocidade de reputação travada**
-0,7 review novo por mês. A vizinha faz cerca de 28, pedindo a cada paciente na
-primeira visita.
-*Fazer:* ligar a máquina de avaliações, priorizando review de tratamento
-concluído — o que a vizinha de nove meses não consegue ter.
+**GRAVE · Rede — A OrthoDontic é a única rede fora da busca paga**
+No Centro de Transparência do Google: OdontoCompany 35 anúncios (10 da própria
+franqueadora), Odontoclinic 15, Sorrifácil 1, **OrthoDontic 0** — em quatro
+variantes de nome. Persistência da concorrente: mediana de 104 dias no ar, um
+criativo com 864 dias.
+*Fazer:* decisão de franqueadora. Verificar a conta de Google Ads da rede antes
+de concluir.
 
-**ATENÇÃO · Presidente Prudente — Claim sem validação**
-"A mais bem avaliada de Prudente" é sustentável pelos números (4,9 · 582), mas o
-estudo marca o claim como pendente.
-*Fazer:* validar a redação exata antes de publicar.
+**GRAVE · Feira — O gigante corre, a unidade está estacionada**
+Moisés Suzart +30 em 23 dias (~39/mês) contra ~2/mês da unidade.
+*Fazer:* máquina de avaliações. A unidade já fez 17 num único mês em jul/2025.
+
+**ATENÇÃO · Rede — Três de cinco unidades respondem 0% das avaliações**
+Londrina matriz 0% · Prudente 0% · Feira 4% · Riomafra 52% · Londrina Centro 61%.
+*Fazer:* rotina de resposta. Custa zero e a unidade executa sozinha.
 
 ---
 
-## 5 · TELA 2 — FICHA DA PRAÇA
+## 6 · TELA 2 — FICHA DA PRAÇA
 
-Abre em **Riomafra**. Seletor no topo troca entre as quatro.
+Alcançada por alerta, busca ou filtro. **Nunca por rolagem de lista.**
 
-**Cabeçalho cinematográfico:** nome da praça grande, cidade em mono abaixo, a
-tese em destaque, e à direita quatro medidores radiais: nota, avaliações,
-reviews novos/mês, anúncios ativos. Cada um com o alvo marcado no arco.
+**Cabeçalho:** nome grande, cidade em mono, a tese em destaque, e à direita
+quatro medidores radiais — nota, avaliações, reviews novos/mês, anúncios ativos —
+**cada um com a mediana da coorte marcada no arco**.
+
+Abaixo do cabeçalho, um **controle segmentado de período**: `15/jul` · `07/ago` ·
+`comparar`.
 
 ### Riomafra — Mafra/SC · Rio Negro/PR
-**A tese:** *"A melhor clínica da cidade é a mais calada."*
-Melhor reputação entre as grandes da praça, quase nenhuma ferida, e o ativo mais
-raro numa cidade de colônia: donos ortodontistas nascidos ali, com sobrenome da
-terra. E está em silêncio, no mês em que a região mais procura aparelho.
+**Tese:** *"A melhor clínica da cidade é a mais calada."*
 
 **Ponteiros:** nota **4,9** (meta 4,8) · avaliações **155** · novas/mês **0,7**
-(meta 15) · anúncios ativos **0** (meta 4 a 6) · agendamento **5,9%** (régua 40%)
-Base: 452 vozes, corte 15/jul/2026, taxonomia v1.1.
+(meta 15) · anúncios **3** *(era 0 em 15/jul)* · agendamento **5,9%** (régua 40%)
+Base: 452 vozes + 2ª coleta em 07/ago · taxonomia v1.1.
 
-**O funil contra a régua** — a peça visual mais importante do portal. Cinco
-estágios em funil, cada um com o valor real e a régua da rede marcada. Os que
-batem a régua em verde, o que falha em vermelho e maior que os outros.
+**O funil contra a régua** — a peça visual mais importante. Cinco estágios, os
+que batem em verde, o quebrado em vermelho e maior:
 
 | Estágio | Real | Régua |
 |---|---|---|
@@ -332,286 +306,301 @@ batem a régua em verde, o que falha em vermelho e maior que os outros.
 | Fechados | 110 · 74,8% | 80% |
 | Pagos | 109 · 99,1% | 90% |
 
-Frase em destaque ao lado: **"Quem chega, fecha. Quem chama, some."**
-Três dos quatro estágios batem ou superam a régua. O único quebrado é o
-primeiro — e é o mais barato de consertar.
+Ao lado, em destaque: **"Quem chega, fecha. Quem chama, some."**
+*Ressalva obrigatória em nota:* o denominador não reconcilia — 109 pagos contra
+~336 contratos/ano na mesma unidade. O multiplicador projetado não é publicado.
 
-**Velocidade de reputação** — barras horizontais, a nossa em cor de marca e as
-outras em neutro:
-Instituto Lumière **28/mês** (melhor mês: 72 em mar/26) · OdontoCompany Mafra
-**13/mês** (33 em mai/26) · Cuidado e Prevenção **9/mês** · **OrthoDontic Mafra
-0,7/mês** (melhor mês: 4).
-Legenda: *a unidade somou 10 avaliações em 14 meses; a vizinha fez 72 num único mês.*
+**Velocidade de reputação** — barras horizontais, a nossa em cor de marca:
+Lumière **43/mês** · Edgard Góes **16** · Cuidado e Prevenção **4** ·
+OdontoCompany Mafra **1** · **OrthoDontic Mafra 0**
+*Legenda:* a unidade somou 10 avaliações em 14 meses; a vizinha fez 33 em 23 dias.
 
-**O placar da praça:**
-OdontoCompany Mafra 4,7 · 338 · rede popular
-Instituto Lumière 5,0 · 197 · tráfego pago, 9 meses de vida, capital 28x maior
-OdontoCompany Rio Negro 4,7 · 188
-**OrthoDontic Mafra 4,9 · 155 · a única especializada em ortodontia**
-Cuidado e Prevenção 4,9 · 135 · 20 anos, dona do infantil
-Edgard Góes 5,0 · 103 · consultório da margem paranaense
+**O placar (07/ago)** com a variação desde 15/jul:
+OdontoCompany Mafra 4,6 · 339 (+1, e a nota **caiu** de 4,7) ·
+Instituto Lumière 5,0 · 230 (**+33**) · OdontoCompany Rio Negro 4,7 · 188 (0) ·
+**OrthoDontic Mafra 4,9 · 155 (0)** · Cuidado e Prevenção 4,9 · 138 (+3) ·
+Edgard Góes 5,0 · 115 (+12)
 
-**A temporada:** colunas com JUL **34** (o pico, destacado) · AGO **23** ·
-SET **22** · DEZ/JAN **2,5 a 7,9** (o vale).
-Legenda: *dezembro e janeiro são vale aqui. A tese nacional de "férias de fim de
-ano" não vale no planalto — e foi esta praça que a derrubou.*
+**A temporada:** colunas JUL **34** (pico) · AGO **23** · SET **22** · DEZ/JAN
+**2,5-7,9** (vale).
+*Legenda:* dez/jan é vale aqui — a tese nacional não vale no planalto, e foi esta
+praça que a derrubou.
 
-**O DNA local** — cartões, um deles marcado como proibição:
-- **A língua:** o falar do planalto, "piá", chimarrão, inverno de verdade. E
-  dizer **Riomafra** — a praça é uma colônia partida ao meio pela divisa, com
-  ônibus urbano cruzando a ponte.
-- **Temperamento:** colônia discreta e comunitária. Desconfia de promessa
-  grande; respeita trabalho, constância e palavra cumprida.
-- **A alavanca:** prova antes de promessa. Parcela clara que cabe no orçamento.
+**A mídia da unidade** — os 3 anúncios que subiram desde 15/jul:
+um sem texto, um *"Se liga nessa novidade que preparamos pra você! 🩵"*, e um
+sobre manutenção de aparelho.
+*Leitura:* **nenhum tem rosto, nenhum tem parcela** — o plano pedia os dois. E o
+terceiro fala com quem **já é paciente**. Enquanto isso, 22 dos 27 anúncios da
+Lumière são de **acolhimento**, o registro que o estudo recomendou para nós.
+
+**O DNA local** — cartões, um marcado como proibição:
+- **A língua:** o falar do planalto — "piá", chimarrão, inverno de verdade. E
+  dizer **Riomafra**: a praça é uma colônia partida pela divisa, com ônibus
+  urbano cruzando a ponte.
+- **Temperamento:** colônia discreta. Desconfia de promessa grande; respeita
+  trabalho, constância e palavra cumprida.
+- **A alavanca:** prova antes de promessa. Parcela clara.
 - **A joia enterrada:** o casal de ortodontistas que voltou pra casa em 2019. De
   2 para 9 especialistas. Sobrenome da colônia no mapa das duas cidades — e
   ausente do feed.
-- **JAMAIS:** hype, urgência de liquidação, "última chance" — o radar
-  antivigarista da colônia queima a marca. Nunca gíria gaúcha nem estética de
-  Oktoberfest.
+- **JAMAIS:** hype, urgência de liquidação, "última chance". Nunca gíria gaúcha
+  nem estética de Oktoberfest.
 
-**Vozes reais** — carrossel de citações grandes, tipografia de destaque:
-> "A melhor clínica e os melhores dentistas!!!" — seguidor da unidade
+**Vozes reais** — carrossel, tipografia de destaque:
+> "A melhor clínica e os melhores dentistas!!!" — seguidor
 > "Ótimo atendimento, preço justo e lugar aconchegante." — paciente
-> "Clínica limpa e cheirosa, ambiente super agradável e profissionais mto atenciosos." — paciente
-> "falta de comunicação entre a equipe… fiquei 1 mês sem manutenção" — a única ferida, e é operacional
+> "falta de comunicação entre a equipe… fiquei 1 mês sem manutenção" — a única
+> ferida, e é operacional
 
-**O plano de 90 dias** — sete ações como cartões arrastáveis, com estado, prazo
-e esforço→impacto. A ação 05 marcada como URGENTE:
-1. Blindar manutenção e retenção — 15 dias — baixo→ALTO
-2. Ligar a máquina de avaliações (meta ≥15/mês) — 15 dias
-3. Destravar o rosto: a história do casal no feed e na fachada — 30 dias
-4. Reocupar a especialidade: 80% do feed em ortodontia — 30 dias
-5. **Entrar na mídia paga JÁ** — 7 a 14 dias — URGENTE
-6. Reivindicar as duas margens: geotargeting Rio Negro — 60 dias
-7. Parcerias de comunidade: futsal 9-15, maternidade, festa de setembro — 90 dias
+**O plano de 90 dias** — 7 ações com estado. Marque o que a 2ª coleta observou:
+1. Blindar manutenção e retenção — 15 dias — *sem sinal*
+2. Ligar a máquina de avaliações (≥15/mês) — 15 dias — **não executado** (0 em 23 dias)
+3. Destravar o rosto — 30 dias — *sem sinal nos anúncios*
+4. Reocupar a especialidade no feed — 30 dias — **rever: o feed já é 45% ortodontia**
+5. Entrar na mídia paga JÁ — 7-14 dias — **executado, conteúdo fora do briefing**
+6. Reivindicar as duas margens — 60 dias — *sem sinal*
+7. Parcerias de comunidade — 90 dias — *sem sinal*
 
-**O bloco final: "O que mudou"** — deliberadamente **vazio**, com estado de
-espera desenhado com capricho:
-> **Aguardando a segunda coleta.**
-> Este bloco nasce no próximo ciclo. É ele que transforma o estudo em sensor.
-> `Próxima coleta: pendente`
+### ⚠ BLOCO OBRIGATÓRIO EM TODA FICHA — "O que não estamos vendo aqui"
+
+Painel fixo, ao lado do placar de mídia. **Não é rodapé, é conteúdo.**
+
+> **A coleta só enxerga rastro público digital.** Não vemos:
+> **rádio** — em Riomafra são 3 emissoras fortes, uma da paróquia, e um único
+> balcão vende 3 das 4 frequências · **TV aberta** · **outdoor, panfleto,
+> fachada** · **patrocínio de comunidade** — a unidade patrocina os escoteiros ·
+> **parceria com escola e convênio** · **indicação e boca a boca**, que os quatro
+> estudos apontam como *o* canal de decisão.
+>
+> `Quem preenche: a unidade.` `Status: não medido.`
+
+E o rodapé do bloco:
+*"Moisés Suzart cresce ~39 avaliações/mês em Feira sem comprar busca e sem
+responder avaliação. Nas nossas fontes ele não faz nada que explique o
+crescimento. Isso não é paradoxo — é a medida do que não vemos."*
 
 ### As outras três praças (dados para as fichas)
 
-**Londrina/PR — Souza Naves, A MATRIZ.** Tese: *"A coroa que está escorregando."*
-Nota 4,6 · 561 avaliações (o maior volume da cidade) · atendimento em 54% dos
-reviews (237 de 438 com texto) · base 1.400+ vozes.
-Placar: Odontoclinic 4,9 · 533 (clínica geral, a líder) · **OrthoDontic Souza
-Naves 4,6 · 561** · especialista 4,6 · 116 · Dentel 4,2 · Sorrifácil e
-OdontoCompany 3,9 · **OrthoDontic Centro 3,5** (a mesma marca no último lugar).
-Língua: orgulho de raiz e tradição, "meu pai abriu esse restaurante em 1967",
-"Ahhh, Londrina!". Fé e família. Consumo por indicação.
-Alavanca: confiança + preço justo — preço baixo levanta suspeita.
-Joia: é a matriz, tocada por quem fundou a rede, na cidade onde a maior rede de
-ortodontia do Brasil nasceu em 2002, com cinco amigos da UEL. Não aparece em
-lugar nenhum da comunicação — nem placa tem.
-Citações: *"sempre me senti acolhido e hoje, ao fim do tratamento, me sinto
-muito realizado. Consigo sorrir novamente"* · *"Dr. João nota 10, excelente
-doutor"* · *"Graças a Deus li os comentários!!!"* (mãe buscando dentista).
+**Londrina — Souza Naves, a MATRIZ.** *"A coroa que está escorregando."*
+4,6 · **564** (+3 em 23 dias). Odontoclinic 4,9 · **544** (+11) — **a distância
+caiu de 28 para 20; ultrapassa em ~2 meses.** Filial do Centro: 3,8 · 76, **sem
+publicar desde março/2026**. Atendimento em 65% dos reviews. **A matriz responde
+0% das avaliações; a filial do Centro responde 61%** — a de pior nota é a que
+mais responde. Engajamento: **mediana de 1 curtida** por post, contra 15 da
+Odontoclinic. Feed: **93% ortodontia**. Joia: é a matriz, tocada por quem fundou
+a rede, na cidade onde a marca nasceu em 2002 — não aparece na comunicação.
+Língua: orgulho de raiz e tradição, fé e família, consumo por indicação.
+Alavanca: confiança + preço justo — barato levanta suspeita.
+Citações: *"sempre me senti acolhido e hoje, ao fim do tratamento, me sinto muito
+realizado. Consigo sorrir novamente"* · *"Dr. João nota 10, excelente doutor"* ·
+*"Graças a Deus li os comentários!!!"* (mãe buscando dentista).
+**Concorrente novo, nunca visto nos estudos: Classdent, 19 anúncios ativos.**
 
-**Feira de Santana/BA — Centro.** Tese: *"Todos os caminhos levam à Feira.
-Menos o da própria clínica."*
-Nota 4,7 · 173 avaliações · 17 anúncios ativos · atendimento em 63% dos reviews
-· base 800+ vozes e 59 anúncios da categoria mapeados.
-Placar: clínica do doutor local **4,9 · 1.268** (o gigante, pessoa física) ·
-**OrthoDontic Feira 4,7 · 173** · OdontoCompany 4,4 · 56 (a 400 m) ·
-faculdade 4,4 · 9.
-Língua: baianês com pé no sertão — "oxe", "meu rei", "minha rainha", "massa",
-"arrochar". 616 mil habitantes, maior que oito capitais, a Princesa do Sertão.
-Alavanca: preço como ORGULHO — "pagar menos e sair por cima é virtude".
-Joia: **nenhuma ainda** — a unidade é invisível fora do Google, cerca de 3 mil
-seguidores, nenhuma menção na imprensa local. Aqui a estratégia é construir
-pertencimento, não desenterrar patrimônio. *(Mostre esse campo vazio como
-informação, não como falha.)*
-JAMAIS: axé litorâneo de vitrine — soa a quem confundiu Feira com Salvador.
-Citações: *"Preço acessível e me trataram como gente. Amei."* · *"marca horário
-e atende 2, 3, 4 horas depois"*.
+**Feira de Santana — o Centro.** *"Todos os caminhos levam à Feira. Menos o da
+própria clínica."*
+4,7 · **170** (–3 · limpeza do Google, não represália; entraram 2 em julho).
+Ritmo: **~2/mês**. Moisés Suzart 4,9 · **1.298** (+30 · ~39/mês) — **e ele não
+compra busca nem responde avaliação**. Atendimento em 65%. Responde 4%. Feed 57%
+ortodontia, mediana 3 curtidas. Histórico: **17 avaliações em jul/2025**, pico
+isolado. 616 mil hab., maior que 8 capitais.
+Língua: baianês de sertão — "oxe", "meu rei", "massa", "arrochar".
+Alavanca: **preço como ORGULHO** — "pagar menos e sair por cima é virtude".
+**Joia: NENHUMA ainda** — a unidade é invisível fora do Google. *Mostre o campo
+vazio como informação, não como falha.*
+JAMAIS: axé litorâneo de vitrine.
+Citações: *"Preço acessível e me trataram como gente. Amei."* · *"marca horário e
+atende 2, 3, 4 horas depois"*.
 
-**Presidente Prudente/SP — a 1ª FRANQUIA da rede, 02/05/2005.**
-Tese: *"O tesouro que está guardado na gaveta."*
-Nota **4,9 · 582** — líder em nota e volume · 7 anúncios ativos, a única
-comprando mídia de ortodontia na cidade · atendimento em 47% dos reviews · base
-1.400+ vozes, 930 comentários de 12 perfis locais.
-Das 84 avaliações com texto: **83 de cinco estrelas, 1 de uma estrela, zero no
-meio.**
-Placar: **OrthoDontic PP 4,9 · 582** · Dentoclinic 5,0 · 77 · Todos Sorrindo
-4,9 · 34 · NEXA 4,7 · 618 (clínica geral) · Croorto 4,7 · 52 · Sorrifácil 4,6 · 31.
-Língua: superlativo local — "o melhor da cidade". A régua de tom foi a cidade
-que entregou: **"que tratem as pessoas com dignidade e humanismo"**, o
-comentário mais curtido do corpus.
-Alavanca: CLAREZA, não preço.
-Joia: foi a primeira franquia de toda a rede, aberta por dois prudentinos.
+**Presidente Prudente — a 1ª FRANQUIA da rede, 02/05/2005.** *"O tesouro guardado
+na gaveta."* **A praça mais saudável.**
+4,9 · **592** (+10 · ~13/mês, a melhor da rede) — **deve ultrapassar a NEXA (619)
+em volume em ~2 meses.** Das 84 avaliações com texto: **83 de cinco estrelas, 1
+de uma, zero no meio.** Atendimento em 58%. **Responde 0%.** Feed 71%
+ortodontia, mediana 2 curtidas. A NEXA responde 100% e cresce 1,3/mês.
+Língua: superlativo local. **A régua de tom a cidade entregou: "que tratem as
+pessoas com dignidade e humanismo"** — o comentário mais curtido do corpus.
+Alavanca: **CLAREZA, não preço.**
+Joia: a primeira franquia de toda a rede, aberta por dois prudentinos.
 Citações: *"Já passei por lá — e agora são meus filhos."* · *"explicam tudo
-direito"* · *"me lembro do dia 02/05/2005, dia da inauguração!! Deus continue
-abençoando."*
+direito"* · *"me lembro do dia 02/05/2005, dia da inauguração!!"*.
 
 ---
 
-## 6 · TELA 3 — O QUE APRENDEMOS
+## 7 · TELA 3 — A REDE QUE AINDA NÃO OUVIMOS
 
-A tela mais estratégica. Desenhe-a como **um laboratório**, não como lista.
+Tela dedicada às **336**. Grade filtrável projetada para 340 linhas.
 
-**Máquina de estados no topo**, como esteira horizontal com os achados fluindo
-entre os estágios:
+Topo: `4 / 340` com barra, e o texto:
+> **336 praças sem inteligência nenhuma.** Não sabemos quantas repetem o
+> vazamento de Riomafra, quantas estão em silêncio no pico, quantas têm uma
+> vizinha de nove meses ao lado.
+
+**Critério de próxima praça** — cartões com o que falta cobrir:
+`Norte: 0 praças` · `Centro-Oeste: 0` · `Capital: 0` · `Unidade recém-aberta: 0` ·
+`Sudeste: 1` · `Sul: 2` · `Nordeste: 1`
+
+*Legenda:* a amostra atual não cobre Norte, Centro-Oeste, capital nem unidade
+nova. **É por isso que nenhum achado pode virar doutrina ainda.**
+
+---
+
+## 8 · TELA 4 — O QUE APRENDEMOS
+
+Desenhe como **laboratório**, não como lista.
+
+**Máquina de estados no topo**, esteira horizontal:
 `HIPÓTESE (0)` → `CANDIDATA (13)` → `CONSTANTE (0)` → `DOUTRINA (0)` ·
-e fora da esteira, `❌ DERRUBADA (1)`
+fora da esteira: `❌ DERRUBADA (2)`
 
-Legenda: *um achado só vira regra da rede quando praças diversas confirmam.
-Quatro praças parecidas não fazem constante. A amostra atual não cobre Norte,
-Centro-Oeste, capital nem unidade recém-aberta — por isso o teto honesto hoje é
-candidata.*
+*Legenda:* um achado só vira regra quando praças **diversas** confirmam. Quatro
+praças parecidas não fazem constante.
 
-**Os 13 achados candidatos**, cada um como cartão com o placar de confirmação
-(4/4, 3/4) e as evidências por praça:
+**Os achados candidatos** — cada um com placar de confirmação e evidência:
 
 1. **O paciente não avalia ortodontia — avalia como foi tratado.** 4/4 ·
-   Prudente 47% · Londrina 54% · Feira 63% · Riomafra 69% *(mostre a série
-   subindo — o índice cresce conforme a cidade encolhe)*
-2. **A ferida é sempre operação, nunca o produto.** 4/4 · pós-venda · agenda ·
-   espera de 2 a 4 horas · manutenção
-3. **A confiança é em gente com nome, não em marca.** 4/4
-4. **A porta de entrada é sempre "quanto custa / cabe na parcela?", seguida de
-   "dói?".** 4/4
-5. **Julho é o pico da mãe-decisora.** 4/4 · Riomafra índice 34, 4.120 leads em jul/25
-6. **O adulto 30+ é dinheiro na mesa e nenhuma praça fala com ele.** 4/4 ·
-   Riomafra tem 21.000 adultos de 30-45 contra 7.700 jovens de 9-15
-7. **A clínica-escola é fraca exatamente onde a rede é forte.** 4/4
+   Riomafra 66% · Feira 65% · Londrina 65% · Prudente 58% *(N=847, método
+   uniforme, taxonomia v1.1)*
+2. **A ferida é sempre operação, nunca o produto.** 4/4 · e o Reclame Aqui
+   confirma: 433 reclamações, as 3 mais recentes todas "Não respondida"
+3. **A confiança é em gente com nome.** 4/4
+4. **A porta de entrada é "quanto custa / cabe na parcela?", depois "dói?".** 4/4
+5. **Julho é o pico da mãe-decisora.** 4/4
+6. **O adulto 30+ é dinheiro na mesa e nenhuma praça fala com ele.** 4/4
+7. **A clínica-escola é fraca onde a rede é forte.** 4/4
 8. **A joia local existe, é incopiável — e está enterrada.** 3/4 *(Feira não tem)*
-9. **A embalagem é a mesma nas quatro: feed institucional + anúncio de urgência.** 4/4
-10. **A prova social está parada em todas.** 4/4
-11. **A mãe é a decisora — e lê os reviews antes de escolher.** 4/4
-12. **A ordem certa é blindar a operação antes de qualquer mídia nova.** 4/4
-13. **Os mesmos quatro formatos fixos de conteúdo emergem nas quatro.** 4/4
+9. **A prova social está parada em todas.** 4/4
+10. **A mãe é a decisora — e lê os reviews antes de escolher.** 4/4
+11. **A ordem certa é blindar a operação antes de mídia nova.** 4/4
+12. **A rede não responde.** 4/4 · 0% · 0% · 4% · 52%
+13. **As unidades sabem fazer campanha de avaliação — e não sustentam.**
+    Riomafra fez 47 em 3 meses de 2022; Feira fez 17 em jul/2025. Depois, quase
+    nada.
 
-**A derrubada, em destaque especial** — cartão maior, tratamento gráfico de
-"crença que caiu":
+**As duas derrubadas, em tratamento gráfico de "crença que caiu":**
+
 > ❌ **"Dezembro e janeiro são pico nacional"**
-> Derrubada por Riomafra. Série de 5 anos: julho índice 34, dez/jan entre 2,5 e
-> 7,9. Confirmado pelo dado interno: 494 e 78 interessados contra 4.120 em
-> julho/25.
-> *Custou centavos de coleta e evitou verba nacional programada para o mês
-> errado em parte do país.*
+> Derrubada por Riomafra. Série de 5 anos: julho 34, dez/jan 2,5-7,9. Confirmado
+> pelo BI: 494 e 78 interessados contra 4.120 em julho/25.
+> *Custou centavos de coleta e evitou verba nacional no mês errado.*
 
-**As variáveis — o que jamais pode ser nacionalizado.** Comparação lado a lado
-das quatro praças, mas **não como tabela**: como quatro colunas visuais, uma por
-praça, cada uma com sua cor de acento:
+> ❌ **"O índice de atendimento sobe quanto menor a cidade"**
+> Derrubada pelo próprio método. A série 47·54·63·69 media **corpora
+> diferentes, não cidades**. Com método uniforme a faixa fecha em 58-66 e a
+> ordem por porte se desfaz.
+
+E um cartão menor, de rodapé da tela:
+> ❌ **"Quem responde avaliação é quem cresce"** — hipótese levantada e derrubada
+> no mesmo dia. Correlação **r = +0,08**. Moisés Suzart cresce ~39/mês
+> respondendo 0%; a NEXA responde 100% e cresce 1,3/mês.
+
+**As variáveis — o que jamais pode ser nacionalizado.** Quatro colunas visuais,
+uma por praça:
 
 | | Londrina | Prudente | Feira | Riomafra |
 |---|---|---|---|---|
-| Alavanca de preço | confiança + preço justo — barato levanta suspeita | clareza, não preço | preço como orgulho do batalhador | palavra cumprida |
-| Posição no placar | desafiante | líder — joga defesa | desafiante, 7x atrás | melhor nota, 4ª em volume |
-| O inimigo | clínica geral bem avaliada | vácuo competitivo | doutor pessoa física | rede popular + startup de tráfego |
-| Mídia própria | urgência genérica | 7 ativos, leilão dominado | 17 ativos no coro | zero |
+| Alavanca de preço | confiança + preço justo | clareza | preço como orgulho | palavra cumprida |
+| Posição | desafiante | **líder** | desafiante, 7x atrás | melhor nota, 4ª em volume |
+| O inimigo | clínica geral | vácuo competitivo | doutor pessoa física | rede popular + startup |
 | Léxico proibido | urgência de liquidação | corporativês | axé litorâneo | gíria gaúcha, Oktoberfest |
 
 ---
 
-## 7 · TELA 4 — CORRETOR DE CAMPANHA
+## 9 · TELA 5 — CORRETOR DE CAMPANHA
 
 **A tela que a franqueadora compra primeiro**, porque mede o trabalho dela.
 
-Campo grande de texto no topo, com uma peça real já dentro:
+Campo de texto grande com uma peça real dentro:
 > 🚨 SEMANA DO APARELHO! Últimos dias com condição especial. Aparelho sem
 > entrada — agende agora mesmo sua avaliação!
 
-Botão primário grande: **`Analisar contra as 4 praças`**. Ao clicar, os quatro
-resultados entram em sequência animada.
+Botão primário: **`Analisar contra as praças ouvidas`**. Resultados entram em
+sequência animada. *(Com 340 praças, o resultado seria agrupado por perfil de
+praça, não 340 cartões — desenhe já pensando nisso.)*
 
-**Os quatro vereditos:**
+**Londrina — ⚠️ RISCO.** Meio de funil: preço baixo levanta suspeita. A matriz
+briga na autoridade, não no preço. → *"tratado por quem criou o padrão"*
 
-**Londrina — ⚠️ RISCO**
-Público de meio de funil: preço baixo levanta suspeita, não desejo. A matriz não
-briga de igual para igual no preço — briga na autoridade.
-*Sugestão:* "tratado por quem criou o padrão".
+**Prudente — 🟡 ADAPTAR.** A alavanca é clareza. A régua de tom que a cidade
+entregou foi "dignidade e humanismo". → *"você entende tudo antes de decidir"*
 
-**Presidente Prudente — 🟡 ADAPTAR**
-A alavanca aqui é clareza, não desconto. O que sustenta o 4,9 é "explicam tudo,
-não tive nenhuma dúvida", e a régua de tom que a cidade entregou foi "dignidade
-e humanismo".
-*Sugestão:* "você entende tudo antes de decidir".
+**Feira — 🟢 FUNCIONA, COM CONDIÇÃO.** Preço é orgulho. Mas precisa falar como
+Feira, e a unidade já está num coro de 59 anúncios quase idênticos. →
+*"cabe no seu bolso, meu rei"*
 
-**Feira de Santana — 🟢 FUNCIONA, COM CONDIÇÃO**
-Preço é orgulho aqui. Mas a peça precisa falar como Feira, e hoje está dentro de
-um coro de 59 anúncios quase idênticos.
-*Sugestão:* "cabe no seu bolso, meu rei".
+**Riomafra — 🔴 CONFLITO.** "Últimos dias" aciona o radar antivigarista da
+colônia. → *bloqueado: urgência de liquidação*
 
-**Riomafra — 🔴 CONFLITO**
-"Últimos dias" e "agora mesmo" acionam o radar antivigarista da colônia. A praça
-respeita palavra cumprida e desconfia de promessa grande.
-*Bloqueado:* urgência de liquidação.
-
-**Abaixo, o painel "A campanha nacional chega à cadeira?"** — três barras longas
-e quase vazias, com o número enorme ao lado:
-- Publicações de unidade que carregam o embaixador: **1 de 156**
+**Abaixo, "A campanha nacional chega à cadeira?"** — três barras longas e quase
+vazias, número enorme ao lado:
+- Publicações de unidade com o embaixador: **1 de 156**
 - Criativos nacionais com o jingle: **1 de 34**
 - Menções espontâneas ao embaixador: **0 de 2.834 vozes**
 
-Legenda: *oito anos de embaixador. O jingle está subusado, não gasto.*
+*Legenda:* oito anos de embaixador. O jingle está **subusado, não gasto**.
 
 ---
 
-## 8 · A GAVETA DE EVIDÊNCIA
+## 10 · A GAVETA DE EVIDÊNCIA
 
-Todo número no portal tem um botão discreto que abre uma **gaveta lateral com
-vidro fosco**. É o que separa isto de um dashboard: um dashboard afirma, um
-portal de inteligência mostra de onde tirou e o que ainda não sabe.
+Todo número abre uma **gaveta lateral com vidro fosco**. É o que separa isto de
+um dashboard: um dashboard afirma; um portal de inteligência mostra de onde
+tirou e o que ainda não sabe.
 
-Conteúdo da gaveta, no exemplo do agendamento de Riomafra:
+Exemplo, o agendamento de Riomafra:
 - **5,9%** em tipografia enorme
-- *dos interessados viram avaliação agendada — a régua da rede espera 40%*
-- Selo de **confiança: média**
-- **A leitura:** o único estágio quebrado do funil. Comparecimento bate a régua,
-  fechamento e pagamento estão acima dela. A cadeira e o contrato funcionam — o
-  vão está entre a primeira mensagem e a agenda.
-- **Contra-evidência** (bloco destacado em cor de atenção): o denominador não
-  reconcilia — 109 pagos no funil contra cerca de 336 contratos/ano na mesma
-  unidade. Enquanto a reconciliação não fechar, o multiplicador projetado não é
-  publicado.
-- Ficha técnica em mono: `N 5.050 interessados · 298 agendamentos` ·
-  `corte jul/2026` · `fonte funil.jsonl (Conecta)` · `filtro unidade=ortho_mafra`
+- *dos interessados viram avaliação agendada — a régua espera 40%*
+- Selo **confiança: média**
+- **A leitura:** o único estágio quebrado. Comparecimento bate a régua;
+  fechamento e pagamento estão acima. A cadeira e o contrato funcionam — o vão
+  está entre a primeira mensagem e a agenda.
+- **Contra-evidência** (bloco em cor de atenção): o denominador não reconcilia —
+  109 pagos contra ~336 contratos/ano na mesma unidade. Enquanto não fechar, o
+  multiplicador projetado não é publicado.
+- Ficha técnica em mono: `N 5.050 · 298` · `corte jul/2026` ·
+  `fonte dados/serie/funil.jsonl` · `filtro local_id=ortho_mafra`
 
 ---
 
-## 9 · MOVIMENTO
+## 11 · MOVIMENTO
 
-Use os tokens de movimento do sistema: `--dur-fast 120ms` · `--dur 200ms` ·
-`--dur-slow 360ms` · `--dur-slower 600ms`, com `--ease-out` nas entradas.
+Tokens do sistema: `--dur-fast 120ms` · `--dur 200ms` · `--dur-slow 360ms` ·
+`--dur-slower 600ms`, com `--ease-out` nas entradas.
 
-- **Entrada orquestrada:** o mapa acende primeiro, os quatro pontos acendem em
-  sequência, os números contam até o valor, os cartões de sinal sobem
-  escalonados.
+- **Entrada orquestrada:** o mapa acende, os quatro pontos acendem em sequência,
+  os números contam, os cartões sobem escalonados.
 - **Troca de tela:** deslize e fade curtos, nunca corte seco.
-- **Hover:** painéis ganham brilho de borda cyan; barras clareiam; o ponto no
-  mapa expande o halo.
-- **Alertas críticos:** o halo respira **três vezes na entrada e para**. O
-  sistema proíbe movimento decorativo infinito — depois disso o estado é
-  carregado pela cor e pela faixa de severidade, não pela animação.
-- **Gráficos:** desenham na entrada — barras crescem, funil preenche de cima
-  para baixo.
+- **Hover:** brilho de borda cyan; barras clareiam; o ponto expande o halo.
+- **Alertas críticos:** o halo respira **três vezes e para**. O sistema proíbe
+  movimento decorativo infinito.
+- **Gráficos:** desenham na entrada.
 - `--ease-bounce` só em botão. Nunca em dado.
 - Respeite `prefers-reduced-motion`.
 
 ---
 
-## 10 · TRAVAS
+## 12 · TRAVAS
 
-1. **Não invente número.** Todo dado está neste documento. Se faltar, mostre o
-   estado vazio — o bloco "O que mudou" vazio é uma decisão de produto, não uma
-   pendência.
-2. **Não reescreva citação de paciente.** São verbatim. A imperfeição é a prova.
-3. **Não ranqueie franqueado nominalmente** na visão de rede.
-4. **Toda recomendação carrega evidência.** Nenhuma afirmação solta.
+1. **Não invente número.** Todo dado está aqui. Se faltar, mostre o estado
+   vazio — as 336 praças sem dado e a joia inexistente de Feira são decisões de
+   produto, não pendências.
+2. **Não reescreva citação de paciente.** São verbatim.
+3. **Nenhum número de unidade sem a ação ao lado.**
+4. **Não ranqueie franqueado de forma humilhante.** O tom nunca acusa.
 5. **Cor de estado nunca é cor de marca.**
-6. **Se a tela virou tabela, refaça.**
+6. **Toda afirmação de mídia diz onde foi medida.** Nunca "a unidade está muda" —
+   sempre **"ausente do digital rastreável"**. Nunca "cresce porque anuncia" —
+   sempre "cresce; anuncia".
+7. **Se a tela virou tabela sem filtro, busca e ordenação, refaça.**
+8. **Se um componente só funciona com 4 itens, refaça para 340.**
 
 ---
 
-## 11 · O TESTE FINAL
+## 13 · O TESTE FINAL
 
 A diretoria abre isto numa reunião de conselho e a primeira reação tem que ser
 **"como a gente não tinha isso?"** — não "que dashboard bonito".
 
-A diferença está em três coisas: o mapa que mostra 336 cidades apagadas, o funil
-que mostra onde o dinheiro vaza, e a gaveta que prova cada número — inclusive
-dizendo onde ele ainda não fecha.
+A diferença está em quatro coisas: o mapa com **336 cidades apagadas**; o funil
+que mostra onde o dinheiro vaza; a gaveta que prova cada número **inclusive
+dizendo onde ele não fecha**; e o bloco que declara, em toda ficha, **o que não
+estamos vendo**.
