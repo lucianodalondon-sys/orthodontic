@@ -29,7 +29,8 @@ de fora **sem avisar**.
 | Londrina | 24 | 23 |
 | Feira | 21 | 20 |
 | Riomafra | 15 | 15 |
-| **Total** | **114** | **111** |
+| Palmas | 14 | 14 |
+| **Total** | **128** | **128** |
 
 Antes eram 21 escritos a mão. E buscar por `place_id` não é só mais cômodo: é
 **exato**. Buscar por nome já casou "OrthoDontic Prudente" com a Bongiovanni,
@@ -39,7 +40,7 @@ que é a concorrente nº 1 da praça.
 
 Dizia "3 de 19 coletores prontos" quando 7 rodam. `google_places`,
 `reclame_aqui`, `google_ads` e `instagram` estavam marcados como "a construir"
-e já funcionavam. **Corrigido: 7 de 20.**
+e já funcionavam. Com `canais` e `whatsapp_teste` escritos hoje: **9 de 21.**
 
 ### O coletor de reclamação usava um actor quebrado
 
@@ -53,13 +54,15 @@ Trocado por `webdata_labs~reclameaqui-scraper`, que traz a ficha completa.
 
 | Coletor | Frequência | Custo | Validado em |
 |---|---|---|---|
-| `google_places` | mensal | ~US$0,05/praça | 5 praças, 747 clínicas |
-| `google_reviews` | semanal | ~US$0,04/praça | 5 praças, 20.961 avaliações |
+| `google_places` | mensal | ~US$0,05/praça | 6 praças, 884 clínicas |
+| `google_reviews` | semanal | ~US$0,04/praça | 6 praças, 23.025 avaliações |
+| `canais` | mensal | ~US$0,20/praça | 6 praças, 148 canais |
 | `meta_ads` | semanal | ~US$0,10/praça | 5 praças, 324 anúncios |
 | `google_ads` | semanal | ~US$0,20/praça | rede nacional |
-| `instagram` | mensal | ~US$0,40/praça | 5 praças, 350 posts, 135 canais |
-| `imprensa_rss` | semanal | grátis | 4 praças, 202 matérias |
+| `instagram` | mensal | ~US$0,40/praça | 5 praças, 350 posts |
+| `imprensa_rss` | semanal | grátis | 5 praças, 202 matérias |
 | `reclame_aqui` | mensal | ~US$1/marca | 7 redes, 140 reclamações |
+| `whatsapp_teste` | mensal | manual | **escrito, nunca usado de verdade** |
 
 **Custo de uma volta completa: ~US$ 1 por praça.**
 
@@ -67,34 +70,31 @@ Trocado por `webdata_labs~reclameaqui-scraper`, que traz a ficha completa.
 
 ## O QUE AINDA NÃO ESTÁ VALIDADO
 
-### Coisas que fizemos hoje e não viraram coletor
+### O teste de WhatsApp existe, mas nunca foi usado de verdade
 
-Três análises que produziram os achados mais fortes rodaram em script
-descartável e **não se repetem sozinhas**:
+`whatsapp_teste.py` está escrito e testado ponta a ponta — com dados
+fictícios, que foram apagados. **A ferida nº 1 dos cinco estudos continua sem
+um único número real**, porque a etapa que falta é humana: alguém precisa
+mandar a mensagem e anotar a hora.
 
-- **a coleta funda** (400 a 600 avaliações) que revelou rajada contra ritmo e
-  mostrou que a matriz de Londrina fez 180 avaliações em maio
-- **a busca de canais da cidade** (os 9 tipos), que achou o vazio do canal da mãe
-- **a varredura do 2º escalão**, que achou a Odontologia Prado
+É a coisa mais barata e mais valiosa da lista inteira.
 
-Enquanto forem script solto, **a próxima praça não terá isso.**
+### Dez coletores nunca escritos
 
-### Onze coletores nunca escritos
+Doctoralia (avaliação por profissional), grupos de Facebook (a decisão
+acontecendo), CNPJ novo (o concorrente antes de abrir), vagas (rotatividade da
+recepção), Google Q&A, SERP, CRO, Glassdoor, YouTube, mapa-diff.
 
-O mais caro deles é o **teste de WhatsApp** — tempo até a primeira resposta.
-Os cinco estudos apontam isso como a ferida nº 1, e é a única das treze
-constantes que **nenhuma fonte pública mede**. Continua sem medição.
+### Um local com âncora incerta
 
-Depois vêm: Doctoralia (avaliação por profissional), grupos de Facebook (a
-decisão acontecendo), CNPJ novo (o concorrente antes de abrir), vagas
-(rotatividade da recepção), Google Q&A, SERP, CRO, Glassdoor, YouTube,
-mapa-diff.
+De 128, um só: a clínica-escola da UEFS, em Feira, tem duas fichas disputando
+e ficou marcada como `chave_incerta`. Ambas são minúsculas e não mudam placar
+nenhum — mas fica declarado em vez de silenciosamente resolvido.
 
-### Quatro locais sem âncora
+### O ritmo de Palmas e de Cuiabá é estimativa
 
-De 114, quatro seguem sem `place_id` confirmado e ficam de fora dos placares.
-São casos que o casamento automático recusou de propósito — melhor ficar
-pendente que ficar errado.
+As duas têm uma coleta só. O `~estimado` sai quando a segunda coleta chegar e
+o contador do Google puder ser comparado. Setembro.
 
 ### O que depende da rede
 
@@ -175,5 +175,5 @@ duram mais que os outros — falta acelerar".
 
 ---
 
-_A coleta de hoje: 20.961 avaliações, 747 clínicas, 350 posts, 135 canais,
-324 anúncios, 140 reclamações e 202 matérias, em 5 praças. Custo ~US$ 12._
+_A coleta de hoje: 23.025 avaliações, 884 clínicas, 350 posts, 148 canais,
+324 anúncios, 140 reclamações e 202 matérias, em **6 praças**. Custo ~US$ 14._
