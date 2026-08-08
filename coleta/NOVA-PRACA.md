@@ -233,10 +233,14 @@ A quinta praça mudou cinco coisas. Todas viraram item de checklist:
 fazem 45,6 · 3,7 · 0,7 por mês. Sessenta e cinco vezes, mesma marca, mesma
 cidade. Nenhuma outra evidência chega perto disso — e a busca custa nada.
 
-**O código da unidade no site da rede diz a ordem de abertura.**
-`orthodonticbrasil.com.br/clinicas/...-478/` → unidade 478. Em Cuiabá a mais
-antiga (151) é a que menos cresce. Serve para testar safra sem pedir dado
-interno.
+**O site da rede dá o código da unidade — mas ele NÃO diz a idade.**
+`orthodonticbrasil.com.br/clinicas/...-478/` → unidade 478, e o e-mail
+`oc478@` confirma. Serve para identificar a unidade com certeza.
+**Não serve para estimar safra:** em Cuiabá a unidade 562 tem avaliação desde
+2018, mais antiga que unidades de código menor. Chegamos a escrever que "a mais
+antiga é a que menos cresce" — era falso, e veio de um resultado de busca
+desatualizado que apontava um código que hoje dá 404. **Confira o código na
+página da própria unidade, e não conclua idade a partir dele.**
 
 **Procure o concorrente que não cobra.** A prefeitura de Cuiabá instala
 aparelho de graça pelo programa Siminina. Nenhuma das quatro praças anteriores

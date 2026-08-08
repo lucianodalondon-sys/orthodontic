@@ -17,7 +17,10 @@
       "nome": "OrthoDontic Souza Naves",
       "tipo": "matriz_propria",
       "regiao": "Vila Ipiranga / Av. Souza Naves — polo médico",
-      "place_id": null
+      "place_id": "ChIJ1cPTd2tD65QRmNxXEvCwjCY",
+      "place_id_origem": "google places api 2026-08-08 (endereço)",
+      "avaliacoes_google": 566,
+      "nota_google": 4.6
     },
     {
       "local_id": "ortho_centro_ldn",
@@ -25,30 +28,39 @@
       "nome": "OrthoDontic Centro",
       "tipo": "filial",
       "regiao": "Rua Sergipe",
-      "place_id": null
+      "place_id": "ChIJ7ZkuVKBE65QRA7aQcukfYDE",
+      "place_id_origem": "google places api 2026-08-08 (endereço)",
+      "avaliacoes_google": 76,
+      "nota_google": 3.8
     },
     {
       "local_id": "odontoclinic_ldn",
       "papel": "concorrente",
       "nome": "Odontoclinic Londrina",
       "tipo_concorrente": "clinica_geral",
-      "place_id": null
+      "place_id": "ChIJ1bDr02BD65QRTqiOqexcry8",
+      "place_id_origem": "google places api 2026-08-08 (nome)",
+      "avaliacoes_google": 544,
+      "nota_google": 4.9
     },
     {
       "local_id": "aline_oliver",
       "papel": "concorrente",
       "nome": "Especialista em aparelho",
       "tipo_concorrente": "doutor_pf",
-      "place_id": null
+      "place_id": null,
+      "chave_pendente": true
     },
     {
       "local_id": "dentel_ldn",
       "papel": "concorrente",
       "nome": "Dentel",
       "tipo_concorrente": "clinica",
-      "place_id": null,
-      "chave_pendente": true,
-      "nota_amarracao": "A coleta de 07/ago retornou 'Dentel Zona Norte' com 5 avaliações; o estudo descreve outra unidade (4,2). Falha de amarração — resolver com o place_id correto antes de usar em placar."
+      "place_id": "ChIJhcTL_aBE65QRIS7K8dte0_o",
+      "nota_amarracao": "A coleta de 07/ago retornou 'Dentel Zona Norte' com 5 avaliações; o estudo descreve outra unidade (4,2). Falha de amarração — resolver com o place_id correto antes de usar em placar.",
+      "place_id_origem": "google places api 2026-08-08 (nome)",
+      "avaliacoes_google": 22,
+      "nota_google": 3.6
     }
   ]
 }

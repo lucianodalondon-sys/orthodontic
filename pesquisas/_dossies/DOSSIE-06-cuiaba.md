@@ -48,23 +48,25 @@ mesmo calendário escolar, mesma concorrência.
 |---|---:|---:|---:|---:|---:|---|
 | **Centro Norte** (Barão de Melgaço) | 478 | **1.222** | 5,0 | **45,6** | 0% | 07/ago |
 | **Fernando Corrêa** (Pico do Amor) | 490 | 78 | 4,9 | **3,7** | 0% | 13/mai |
-| **Dom Bosco** (Centro Sul) | 151 | 71 | 4,9 | **0,7** | 0% | 28/jul |
+| **Dom Bosco** (Centro Sul) | 562 | 71 | 4,9 | **0,7** | 0% | 28/jul |
 
 **Sessenta e cinco vezes de diferença dentro da mesma marca e da mesma cidade.**
 
-Três leituras que só essa comparação permite:
+Duas leituras que só essa comparação permite:
 
 **O mercado não explica.** Tudo que é externo está controlado. O que sobra é a
 unidade.
-
-**A idade não explica.** O código 151 é uma das unidades mais antigas da rede e
-faz 0,7/mês. O 478 é bem mais novo e faz 45,6. A antiguidade joga contra, não
-a favor.
 
 **0,7 é o número de Riomafra.** Riomafra fazia 0,7/mês e a gente atribuiu à
 cidade pequena, ao mercado apertado, à concorrente agressiva. Numa capital de
 um milhão de habitantes, uma unidade faz exatamente o mesmo 0,7. **0,7 é o que
 uma unidade produz quando não faz nada** — não é característica de praça.
+
+**Sobre a idade, não sabemos.** Uma versão anterior deste dossiê dizia que a
+unidade mais antiga era a que menos crescia. Era falso: o código da Dom Bosco é
+562 e não 151, e ela tem avaliação desde 2018 — código maior, unidade antiga.
+**O código identifica a unidade, mas não mede idade.** A safra de cada uma
+continua desconhecida.
 
 ---
 
