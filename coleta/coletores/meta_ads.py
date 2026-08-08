@@ -80,6 +80,31 @@ def jsonl_le(p):
     return [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()] if p.exists() else []
 
 
+def buscas_da_identidade(praca):
+    """Monta as buscas de anúncio a partir da identidade da praça.
+
+    Mesmo defeito dos outros coletores: a lista de termos ficava escrita aqui
+    dentro, e praça nova rodava devolvendo zero sem dizer que não sabia
+    atender. Zero silencioso é pior que erro.
+    """
+    arq = RAIZ/"dados"/"identidade"/f"{praca}.json"
+    if not arq.exists():
+        return []
+    ident = json.loads(arq.read_text(encoding="utf-8"))
+    cidades = [c.split("/")[0] for c in (ident.get("cidades") or [])]
+    if not cidades:
+        return []
+    c0 = cidades[0]
+    q = [(f"OrthoDontic {c0}", 40), (f"aparelho ortodôntico {c0}", 40),
+         (f"ortodontia {c0}", 40), (f"dentista {c0}", 40)]
+    # os três maiores concorrentes, que é onde mora a peça que funciona
+    for l in sorted(ident.get("locais", []),
+                    key=lambda x: -(x.get("avaliacoes_google") or 0))[:3]:
+        if l.get("papel") == "concorrente" and l.get("nome"):
+            q.append((l["nome"][:48], 30))
+    return q
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--praca"); ap.add_argument("--todas", action="store_true")
@@ -94,7 +119,11 @@ def main():
 
     for praca in pracas:
         print(f"\n=== {praca} · corte {hoje} ===")
-        for q, n in BUSCAS.get(praca, []):
+        buscas = BUSCAS.get(praca) or buscas_da_identidade(praca)
+        if not buscas:
+            print(f"  [SEM BUSCA] {praca}: nem no dicionário nem na identidade.")
+            continue
+        for q, n in buscas:
             try:
                 itens = roda(q, n, tok)
             except urllib.error.HTTPError as e:

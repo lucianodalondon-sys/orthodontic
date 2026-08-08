@@ -80,6 +80,26 @@ def jsonl_le(p):
     return [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()] if p.exists() else []
 
 
+def perfis_da_identidade(praca):
+    """Tenta adivinhar o @ da unidade a partir do nome da praça.
+
+    É palpite, e palpite marcado como tal: os @ da rede seguem o padrão
+    'orthodontic.<cidade><bairro>', mas não há regra garantida. O que não
+    existir volta como not_found, e aí alguém procura à mão uma vez só.
+    """
+    arq = RAIZ/"dados"/"identidade"/f"{praca}.json"
+    if not arq.exists():
+        return []
+    ident = json.loads(arq.read_text(encoding="utf-8"))
+    import unicodedata, re
+    fora = []
+    for c in (ident.get("cidades") or []):
+        n = unicodedata.normalize("NFKD", c.split("/")[0])
+        n = re.sub(r"[^a-z0-9]", "", "".join(x for x in n if not unicodedata.combining(x)).lower())
+        fora += [f"orthodontic.{n}", f"orthodontic{n}", f"orthodontic.{n[:3]}"]
+    return fora
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--praca"); ap.add_argument("--todas", action="store_true")
@@ -94,7 +114,11 @@ def main():
     posts = {r["chave"]: r for r in jsonl_le(SERIE/"posts.jsonl")}
 
     for praca in pracas:
-        alvos = PERFIS.get(praca, [])
+        alvos = PERFIS.get(praca) or perfis_da_identidade(praca)
+        if not alvos:
+            print(f"  [SEM PERFIL] {praca}: nenhum perfil conhecido. "
+                  f"Procure o @ da unidade e acrescente em PERFIS.")
+            continue
         if not alvos:
             continue
         handles = [h for h, _, _ in alvos]

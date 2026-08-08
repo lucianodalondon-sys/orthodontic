@@ -25,6 +25,40 @@ UA = "Mozilla/5.0 (compatible; OrthoIntel/1.0; pesquisa de mercado)"
 #   marca      → a rede aparece na imprensa local?
 #   categoria  → quem mais aparece (o concorrente com assessoria)
 #   cidade     → o que a praça noticia (contexto e calendário)
+def consultas_da_identidade(praca):
+    """Monta as buscas a partir de dados/identidade/<praca>.json.
+
+    Antes as consultas ficavam escritas neste arquivo, praça por praça. Palmas
+    entrou na base e a imprensa dela nunca foi coletada — o comando rodava,
+    dizia "0 itens" e ninguém percebia. Coletor que não sabe atender uma praça
+    precisa DIZER, não devolver zero.
+
+    Quatro camadas, e cada uma responde uma coisa: a marca (o que falam da
+    unidade), a categoria (o que falam de ortodontia na cidade), o concorrente
+    (o que o líder anda fazendo) e a cidade (a joia enterrada — foi de lá que
+    saiu o casal de ortodontistas de Riomafra).
+    """
+    arq = RAIZ/"dados"/"identidade"/f"{praca}.json"
+    if not arq.exists():
+        return []
+    ident = json.loads(arq.read_text(encoding="utf-8"))
+    cidades = ident.get("cidades") or []
+    if not cidades:
+        return []
+    nomes = [c.split("/")[0] for c in cidades]
+    uf = (cidades[0].split("/") + [""])[1]
+    ou = " OR ".join(f'"{n}"' for n in nomes)
+    lider = next((l.get("nome") for l in sorted(
+        ident.get("locais", []), key=lambda x: -(x.get("avaliacoes_google") or 0))
+        if l.get("papel") == "concorrente" and l.get("nome")), None)
+    q = [("marca", f'"OrthoDontic" {ou}'),
+         ("categoria", f'ortodontia OR "aparelho ortodôntico" OR odontologia {ou}'),
+         ("cidade", f'{ou} {uf}')]
+    if lider:
+        q.insert(2, ("concorrente", f'"{lider}" {ou}'))
+    return q
+
+
 CONSULTAS = {
   "riomafra": [
     ("marca",     'OrthoDontic Mafra OR "OrthoDontic" "Rio Negro"'),
@@ -93,7 +127,12 @@ def main():
     novos, revistos = [], 0
 
     for praca in pracas:
-        for camada, q in CONSULTAS.get(praca, []):
+        consultas = CONSULTAS.get(praca) or consultas_da_identidade(praca)
+        if not consultas:
+            print(f"  [SEM CONSULTA] {praca}: nem no dicionário nem na identidade.",
+                  file=sys.stderr)
+            continue
+        for camada, q in consultas:
             try:
                 itens = busca(q)
             except Exception as e:

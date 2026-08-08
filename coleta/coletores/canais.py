@@ -93,10 +93,67 @@ def marcas(cidades):
     return m
 
 
-def da_cidade(perfil, marcas_praca):
-    blob = sa(" ".join([perfil.get("username") or "", perfil.get("fullName") or "",
-                        perfil.get("biography") or ""]))
-    return any(m in blob for m in marcas_praca if len(m) > 4)
+# O que um canal de cada tipo PRECISA dizer de si. Sem isso a busca casa por
+# pedaço de palavra e entrega qualquer coisa: em Palmas, "maes" casou dentro
+# de "maestra" e trouxe uma pizzaria como canal da mãe.
+EXIGE = {
+ "mae":             ["mae", "maes", "mamae", "materni", "gestante", "gravid", "filho", "familia"],
+ "humor":           ["humor", "meme", "comed", "risada", "piada", "engracad"],
+ "esporte_base":    ["futsal", "futebol", "esport", "escolinha", "atleta", "sub-", "sub ", "volei"],
+ "prefeitura":      ["prefeitura", "oficial", "municip"],
+ "imprensa":        ["noticia", "jornal", "informa", "portal", "reporta"],
+ "preco_achadinho": ["oferta", "promo", "desconto", "barato", "achadinho", "vitrine", "cupom"],
+ "jovem":           ["universi", "faculdade", "estudante", "campus", "festa", "calour"],
+ "gastronomia":     ["restaurante", "delivery", "sabor", "comida", "gastronom", "almoc", "pizza"],
+}
+# Se a bio cita OUTRA cidade ou outro país, não é da praça — foi assim que a
+# prefeitura de "Palmas de Monte Alto", da Bahia, entrou como Palmas/TO.
+CONFLITO = ["monte alto", "portugal", "italia", "espanha", "argentina", "brasilia df"]
+UFS = ["ac", "al", "am", "ap", "ba", "ce", "df", "es", "go", "ma", "mg", "ms", "mt",
+       "pa", "pb", "pe", "pi", "pr", "rj", "rn", "ro", "rr", "rs", "sc", "se", "sp", "to"]
+# Nome de cidade se repete pelo Brasil: existe Palmas no TO e no PR, e a
+# prefeitura de Palmas/PR entrou como se fosse a nossa. A UF desempata.
+UF_NO_HANDLE = None
+
+
+def uf_conflita(blob, uf):
+    """O handle ou a bio apontam para OUTRO estado?
+
+    @prefeituradepalmas_pr entrou como Palmas/TO. Existe Palmas no Tocantins e
+    no Paraná, e sem checar a UF os dois viram a mesma cidade.
+    """
+    if not uf:
+        return False
+    uf = uf.lower()
+    for outra in UFS:
+        if outra == uf:
+            continue
+        if re.search(rf"[_\-. ]{outra}\b", blob) or f"-{outra}" in blob or f"/{outra}" in blob:
+            return True
+    return False
+
+
+def da_cidade(perfil, marcas_praca, tipo=None, uf=None):
+    """O perfil é MESMO da praça, e é MESMO deste tipo?
+
+    Duas checagens, e as duas vieram de erro real em Palmas:
+      · 31% dos canais achados eram de outro lugar ou de outro assunto
+      · a maior 'voz da cidade' era uma italiana de cosméticos de sobrenome
+        Palmas, com 1,8 milhão de seguidores — número grande parece dado bom
+    """
+    nome = sa(perfil.get("username") or "")
+    bio = sa(" ".join([perfil.get("fullName") or "", perfil.get("biography") or ""]))
+    blob = nome + " " + bio
+    if not any(m in blob for m in marcas_praca if len(m) > 4):
+        return False
+    if any(c in bio for c in CONFLITO):
+        return False
+    if uf_conflita(blob, uf):
+        return False
+    exigidas = EXIGE.get(tipo or "")
+    if exigidas and not any(w in blob for w in exigidas):
+        return False
+    return True
 
 
 def busca(termo, tok):
@@ -113,6 +170,7 @@ def roda(praca, tok, dry=False):
     cidades = ident.get("cidades") or []
     mk = marcas(cidades)
     principal = cidades[0].split("/")[0] if cidades else praca
+    uf = (cidades[0].split("/") + [""])[1] if cidades else ""
     hoje = dt.date.today().isoformat()
 
     print(f"\n{'='*72}\n  CANAIS · {ident.get('nome', praca)}  ({', '.join(cidades)})\n{'='*72}")
@@ -124,7 +182,7 @@ def roda(praca, tok, dry=False):
             continue
         res = busca(termo, tok)
         bruto += [{**r, "_tipo": tipo, "_termo": termo} for r in res]
-        cand = [r for r in res if r.get("username") and da_cidade(r, mk)
+        cand = [r for r in res if r.get("username") and da_cidade(r, mk, tipo, uf)
                 and (r.get("followersCount") or 0) >= PISO_SEGUIDORES]
         cand.sort(key=lambda x: -(x.get("followersCount") or 0))
         if not cand:

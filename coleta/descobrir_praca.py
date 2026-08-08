@@ -87,6 +87,38 @@ def serie(agregado, variavel, mid, periodo="-1"):
     return None, None, None, erro
 
 
+# Censo 2022 por faixa de idade. Os códigos são do agregado 9514.
+FAIXAS = {"93070":"0a4","93084":"5a9","93085":"10a14","93086":"15a19","93087":"20a24",
+          "93088":"25a29","93089":"30a34","93090":"35a39","93091":"40a44","93092":"45a49",
+          "93093":"50a54","93094":"55a59","93095":"60a64"}
+
+
+def idades(mid):
+    """O tamanho REAL do alvo, que o processo mandava buscar à mão.
+
+    São dois públicos e eles não se parecem: o adolescente de 9-15, que usa o
+    aparelho, e o adulto de 30-45, que é o alvo maior e o menos falado. Em
+    Riomafra são ~7.700 contra ~21.000 — foi esse número que mostrou que a
+    comunicação estava mirando o menor dos dois.
+    """
+    cods = ",".join(FAIXAS)
+    try:
+        d = jget(f"{IBGE}/api/v3/agregados/9514/periodos/2022/variaveis/93"
+                 f"?localidades=N6%5B{mid}%5D&classificacao=287%5B{cods}%5D")
+        fora = {}
+        for r in d[0]["resultados"]:
+            cat = r.get("classificacoes", [{}])[0].get("categoria", {})
+            for cod in cat:
+                val = list(r["series"][0]["serie"].values())[0]
+                fora[FAIXAS.get(cod, cod)] = int(val)
+        # 9-15 é metade de 5-9 mais 10-14 mais um quinto de 15-19
+        jovem = round(fora.get("5a9", 0)*0.2 + fora.get("10a14", 0) + fora.get("15a19", 0)*0.2)
+        adulto = fora.get("30a34", 0) + fora.get("35a39", 0) + fora.get("40a44", 0)
+        return {"por_faixa": fora, "alvo_9_15": jovem, "alvo_30_45": adulto}
+    except Exception:
+        return None
+
+
 def numeros_da_cidade(m):
     mid = m["id"]
     uf = m["microrregiao"]["mesorregiao"]["UF"]
@@ -103,6 +135,9 @@ def numeros_da_cidade(m):
             faltou.append((chave, erro or "não veio"))
     if faltou:
         out["nao_veio"] = {k: v for k, v in faltou}
+    idd = idades(mid)
+    if idd:
+        out["idades"] = idd
     return out
 
 
@@ -220,7 +255,14 @@ def main():
     total = sum(int((n.get("populacao_estimada") or {}).get("valor") or 0) for n in nums)
     if len(cidades) > 1:
         print(f"  → praça somada: {total} habitantes")
-    print("  FALTA À MÃO: quantos de 9-15 e de 30-45 anos. É o tamanho real do alvo.")
+    j = sum((n.get("idades") or {}).get("alvo_9_15", 0) for n in nums)
+    a = sum((n.get("idades") or {}).get("alvo_30_45", 0) for n in nums)
+    if j or a:
+        print(f"  ALVO REAL: {j} de 9-15 anos · {a} de 30-45 anos"
+              + (f" — o adulto é {a/j:.1f}× maior" if j else ""))
+        print("  Os dois públicos não se parecem, e o maior costuma ser o menos falado.")
+    else:
+        print("  FALTA À MÃO: quantos de 9-15 e de 30-45 anos. É o tamanho real do alvo.")
 
     # ---- imprensa
     print("\n## 2 · QUEM NOTICIA A CIDADE")
@@ -270,9 +312,19 @@ def main():
                  "place_id": p["place_id"], "cidade": p["cidade"]}
                 for p in clin[:8]]}
 
+    # --sobrescrever refaz os números da cidade, NÃO apaga as clínicas já
+    # ancoradas. Aprendido do jeito difícil: rodar de novo em Palmas só para
+    # atualizar a idade apagou os 14 locais com place_id.
+    arq = d/f"{praca_id}.json"
+    if arq.exists():
+        antigo = json.loads(arq.read_text(encoding="utf-8"))
+        ancorados = [l for l in antigo.get("locais", []) if l.get("place_id")]
+        if ancorados:
+            ident["locais"] = ancorados
+            ident["nota_geografia"] = antigo.get("nota_geografia", ident["nota_geografia"])
+            print(f"  (mantidos {len(ancorados)} locais já ancorados)")
     d.mkdir(parents=True, exist_ok=True)
-    (d/f"{praca_id}.json").write_text(json.dumps(ident, ensure_ascii=False, indent=2)+"\n",
-                                      encoding="utf-8")
+    arq.write_text(json.dumps(ident, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
 
 
     linhas = [f"# ALVOS DE COLETA — {praca_id}",
