@@ -183,6 +183,58 @@ deu +0,49 e −0,62 conforme quem estava na lista.
 
 ---
 
+## RAJADA NÃO É RITMO — a distinção que faltava
+
+Medimos mais 60 clínicas do segundo escalão (5.818 avaliações) e apareceu um
+padrão que um número de velocidade sozinho esconde.
+
+**Centro Odontológico COP Tomba**, em Feira: **95 avaliações em maio de 2026**,
+depois 4 em junho e 1 em julho. A média mensal parece saudável. A clínica está
+parada desde junho.
+
+**COP - Centro Odontológico do Povo**, também em Feira: **100 avaliações em
+5 dias** (3 a 8 de agosto). Campanha rodando agora, enquanto escrevemos.
+
+**Odontologia Prado**, em Cuiabá: 23 · 60 · 17 nos últimos três meses. Isso não
+é rajada, é máquina ligada.
+
+O `inteligencia.py` agora marca **⚡ RAJADA** quando um único mês concentra 60%
+ou mais das avaliações, e marca **amostra curta** quando o intervalo é menor que
+21 dias — porque 100 avaliações em 5 dias não vira taxa mensal, vira "está em
+campanha e não sabemos o ritmo".
+
+**Onde isso muda o placar:**
+
+| Praça | Clínicas em rajada entre as maiores |
+|---|---|
+| Feira | 5 — inclusive Odonto Marco (76% num mês) e Ortocentro (87%) |
+| Londrina | 2 — Central Norte (60%) e Odontoclinic (68%) |
+| Cuiabá | 3 — inclusive a própria OrthoDontic Dom Bosco (69%) |
+| Prudente | 1 |
+
+**E vale para a rede também:** a OrthoDontic Dom Bosco, de Cuiabá, tem 69% das
+avaliações num mês só. Riomafra fez 47 em três meses de 2022 e parou. Feira fez
+17 em julho de 2025 e parou. **As unidades sabem fazer campanha de avaliação.
+Elas não sabem sustentar.** Essa é uma frase diferente de "elas não sabem
+fazer", e leva a um plano diferente.
+
+---
+
+## UMA CORREÇÃO NO ACHADO PRINCIPAL
+
+Escrevemos que a OrthoDontic Centro Norte era a primeira unidade da amostra a
+**liderar** a própria cidade. **Ela é a segunda.**
+
+A varredura do segundo escalão encontrou a **Odontologia Prado**, com 499
+avaliações e ~60,8/mês contra os 45,6 da unidade. Não estava em nenhuma lista
+porque tem menos avaliações acumuladas — e volume acumulado não é ritmo.
+
+O que continua de pé, e é o que importa: **três unidades da mesma marca na
+mesma cidade fazendo 45,6 · 3,7 · 0,7.** A comparação que controla mercado,
+preço e marca não depende de quem está em primeiro.
+
+---
+
 ## O QUE AINDA NÃO DÁ PARA DIZER
 
 **Reclame Aqui continua em 3 de 432 reclamações.** Não é crédito — testamos com

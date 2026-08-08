@@ -110,6 +110,31 @@ def ritmo_por_delta(hist):
     return round((hist[d1]-hist[d0])/(dias/30.4), 1), dias
 
 
+def perfil_mensal(ds):
+    """Rajada ou ritmo? Um número de velocidade sozinho não distingue.
+
+    O COP Tomba, em Feira, fez 95 avaliações em maio e 5 nos dois meses
+    seguintes. A média mensal dele parece saudável; a clínica está parada
+    desde junho. Já a Odontologia Prado, em Cuiabá, faz 23 · 60 · 17 —
+    isso é máquina ligada.
+
+    Devolve quantos meses tiveram movimento, e o quanto o maior mês pesa
+    sobre o total. Um mês concentrando mais de 60% é rajada.
+    """
+    from collections import Counter
+    if len(ds) < 8:
+        return None
+    c = Counter(d[:7] for d in ds)
+    meses = sorted(c)
+    pico = max(c.values())
+    concentracao = pico/len(ds)
+    ativos = sum(1 for m in meses if c[m] >= max(2, pico*0.15))
+    return {"meses": len(meses), "meses_ativos": ativos,
+            "concentracao_pico": round(concentracao, 2),
+            "rajada": concentracao >= 0.6 and len(meses) > 1,
+            "ultimo_mes": meses[-1], "pico_mes": max(c, key=c.get)}
+
+
 def metricas(lid, loc, pl, rs, hist=None):
     # As coletas antigas gravavam 'avaliacoes_total' e data com hora junto.
     # O esquema mudou; a leitura tem que aceitar os dois, senão a praça
@@ -125,6 +150,10 @@ def metricas(lid, loc, pl, rs, hist=None):
         d0 = dt.date.fromisoformat(ds[0]); d1 = dt.date.fromisoformat(ds[-1])
         dias = max((d1-d0).days, 1)
         m["ritmo_data"] = round(len(ds)/(dias/30.4), 1)   # estimativa pela amostra
+        # Amostra de poucos dias não vira taxa mensal. O COP de Feira devolveu
+        # 100 avaliações em 5 dias e a conta deu 608/mês, número que nenhuma
+        # clínica sustenta. Sabemos que está numa campanha; não sabemos o ritmo.
+        m["amostra_curta"] = dias < 21
         m["ritmo_ingenuo"] = round(len(ds)/12, 1)         # o que enganaria
         m["ritmo"] = m["ritmo_data"]; m["ritmo_fonte"] = "amostra"
         m["primeira"], m["ultima"], m["dias"] = ds[0], ds[-1], dias
@@ -132,6 +161,7 @@ def metricas(lid, loc, pl, rs, hist=None):
     if d_ritmo is not None:                # o contador do Google manda
         m["ritmo"] = max(d_ritmo, 0.0); m["ritmo_fonte"] = f"contador ({d_dias}d)"
         m["ritmo_delta"] = d_ritmo
+    m["perfil"] = perfil_mensal(ds)
     m["responde_pct"] = round(100*sum(1 for r in rs if r.get("respondida"))/max(len(rs), 1))
     if txt:
         m["mediana_car"] = round(st.median(len(t) for t in txt))
@@ -158,9 +188,14 @@ def roda(praca):
         marca = "★" if m["papel"] == "proprio" else " "
         fonte = m.get("ritmo_fonte", "amostra")
         alerta = "" if fonte.startswith("contador") else "  ~estimado"
+        if m.get("amostra_curta") and not fonte.startswith("contador"):
+            alerta = f"  ⚠ amostra de {m.get('dias')}d — em campanha, ritmo desconhecido"
         if m.get("ritmo_delta") is not None and m.get("ritmo_data") is not None \
            and m["ritmo_data"] > max(m["ritmo_delta"], 0.5)*3:
             alerta = "  ⚠ amostra dizia " + f"{m['ritmo_data']:.0f}"
+        pf = m.get("perfil") or {}
+        if pf.get("rajada"):
+            alerta = f"  ⚡ RAJADA ({pf['concentracao_pico']:.0%} num mês só, pico {pf['pico_mes']})"
         print(f"  {m['ritmo']:>6.1f} {str(m['total']):>6s} {str(m['nota']):>5s} "
               f"{m['responde_pct']:>4d}% {marca} {(m['nome'] or '')[:34]}{alerta}")
 
@@ -209,6 +244,19 @@ def roda(praca):
             contra.append(f"{m['nome'][:30]} responde {m['responde_pct']}% e faz só {m['ritmo']:.1f}/mês")
     for c in (contra or ["(nada encontrado — o que é motivo de desconfiança, não de comemoração)"]):
         print(f"  · {c}")
+
+    # A âncora é o place_id. Se dois local_id apontam para o mesmo lugar, a
+    # clínica aparece duas vezes no placar e as contas saem erradas sem avisar.
+    vistos = {}
+    for m in M:
+        pid = (ult.get(m["local_id"]) or {}).get("place_id")
+        if pid:
+            vistos.setdefault(pid, []).append(m["local_id"])
+    dobrados = {k: v for k, v in vistos.items() if len(v) > 1}
+    if dobrados:
+        print("\n  ⚠ MESMO LUGAR EM DOIS REGISTROS — o placar está contando duplicado:")
+        for pid, lids in dobrados.items():
+            print(f"    {pid} → {', '.join(lids)}")
 
     print("\n## 5 · O QUE ISSO NÃO VÊ")
     off = [o for o in jsonl(SERIE/"midia_offline.jsonl") if o.get("praca_id") == praca]

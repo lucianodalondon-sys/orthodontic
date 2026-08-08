@@ -16,7 +16,8 @@ agora: **todas eram casos de unidade perdendo.** A gente vinha escrevendo
 padrões de rede em cima de quatro derrotas.
 
 Cuiabá preenche quatro buracos de uma vez — Centro-Oeste, capital, praça de
-mais de um milhão, e **a primeira unidade da amostra que está ganhando.**
+mais de um milhão, e **a primeira unidade da amostra que está indo bem** (2ª de
+29 em ritmo, contra última ou penúltima nas outras praças).
 
 E entrega de brinde algo que nenhuma outra praça podia entregar: **três
 unidades da mesma marca na mesma cidade.**
@@ -92,8 +93,11 @@ Ritmo medido pelo intervalo real das avaliações mais novas de cada clínica.
 | 2,7 | 222 | 5,0 | 52% | Myrelief |
 | **0,7** | 71 | 4,9 | 0% | **★ OrthoDontic Dom Bosco** |
 
-**A unidade campeã da rede lidera a cidade inteira em ritmo.** É a primeira vez
-em cinco praças que uma OrthoDontic aparece em primeiro lugar.
+**CORRIGIDO:** este dossiê dizia que a unidade lidera a cidade. Ela é a
+**segunda**. A varredura do segundo escalão achou a **Odontologia Prado** —
+499 avaliações, ~60,8/mês — que não estava em lista nenhuma porque tem menos
+volume acumulado. Volume acumulado não é ritmo, e foi essa confusão que nos
+fez errar. A unidade é 2ª de 29.
 
 E ela responde **0%** das avaliações — igual às duas que perdem.
 
