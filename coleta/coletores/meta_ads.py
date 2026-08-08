@@ -138,9 +138,12 @@ def main():
                   + " · ".join(f"{k[:22]}({v})" for k, v in top))
             time.sleep(1)
 
-    # marca como inativo o que não apareceu nesta coleta
+    # Marca inativo SÓ nas praças que esta execução visitou. Anúncio de praça
+    # não recoletada não é anúncio derrubado — é anúncio não verificado, e
+    # tratar um como o outro inventa uma queda que não aconteceu.
+    visitadas = set(pracas)
     for r in ads.values():
-        if r["last_seen_snapshot"] != hoje and r.get("ativo"):
+        if r["praca_id"] in visitadas and r["last_seen_snapshot"] != hoje and r.get("ativo"):
             r["ativo"] = False
     for r in ads.values():
         a, b = r["first_seen_snapshot"], r["last_seen_snapshot"]
