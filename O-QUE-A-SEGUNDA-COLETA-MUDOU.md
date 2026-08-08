@@ -94,10 +94,16 @@ escrito: *"a unidade está muda no pico"*, *"o território de acolhimento está
 vago"*, *"a OrthoDontic é quem mais anuncia em Feira"*. Nenhuma errada — todas
 incompletas.
 
-*(Ressalva: ausência no Centro de Transparência não prova ausência de mídia. O
-índice cobre anunciante verificado e a busca por nome pode perder variantes. A
-assimetria é grande demais para ser ruído, mas vale verificação direta antes de
-virar slide.)*
+**Verificado.** A primeira leitura podia ser artefato de busca por nome, então
+rodei quatro variantes: `Orthodontic Brasil`, `OrthoDontic Center`,
+`orthodontic.com.br` e `Orthodontic Franchising`. **Zero anúncios da marca
+brasileira em todas.** A única franquia odontológica que apareceu de raspão foi
+a Maxi Odonto, com 3 anúncios — ou seja, até concorrente menor compra busca.
+
+*(Ressalva que permanece: o Centro de Transparência cobre anunciante verificado,
+e uma conta com razão social sem relação com a marca não seria encontrada por
+nenhuma dessas buscas. A confirmação definitiva é olhar o Google Ads da própria
+rede — pedido que cabe na escada.)*
 
 ---
 
@@ -127,10 +133,19 @@ A distância caiu de **28 para 20**. No ritmo atual, a Odontoclinic ultrapassa e
 **cerca de dois meses**. O estudo dizia *"a coroa está escorregando"* — agora
 tem data.
 
-### Feira encolheu
+### Feira: o gigante corre, a unidade está estacionada
 
 O gigante local fez **+30 em 23 dias** (~39/mês). A OrthoDontic foi de 173 para
-**170** — perdeu três avaliações.
+**170**.
+
+**Verificado — e a leitura muda.** A queda não é paciente apagando avaliação em
+represália: entraram 2 avaliações novas em julho e a última é de 31/07. Saíram
+~5, o que tem cara de limpeza de spam do próprio Google. O problema real não é
+a perda de três, é o ritmo: **~2 avaliações por mês.**
+
+E o histórico mostra o mesmo padrão de Riomafra — **17 avaliações em julho de
+2025**, um pico isolado seguido de quase nada. As unidades sabem fazer campanha
+de avaliação; elas simplesmente não sustentam.
 
 ### Prudente é a praça saudável
 
@@ -213,10 +228,14 @@ praças, o que está acontecendo nas outras 336 que ninguém olha há nunca?**
 
 ## 7 · O QUE AINDA FALTA
 
-**Verificar antes de virar slide:** a ausência da OrthoDontic no Google Ads
-(checar variantes de nome do anunciante) · o `place_id` do Dentel em Londrina,
-que voltou com 5 avaliações e é provavelmente outra unidade · por que Feira
-perdeu três avaliações.
+**Verificado nesta rodada:** a ausência da OrthoDontic no Google Ads (quatro
+variantes de nome, zero em todas) · a perda de avaliações em Feira (é limpeza do
+Google, não represália de paciente — o problema é o ritmo de ~2/mês).
+
+**Ainda a verificar:** o `place_id` do Dentel em Londrina, que voltou com 5
+avaliações e é provavelmente outra unidade — falha de amarração de chave, o
+risco que a tabela de identidade existe para eliminar. Enquanto não for
+resolvido, a linha do Dentel não entra em nenhum placar.
 
 **Coletar:** o tempo de resposta no WhatsApp (a ferida nº 1 e ninguém mede) ·
 Doctoralia (avaliação por profissional nomeado) · grupos públicos da cidade ·
