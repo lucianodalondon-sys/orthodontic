@@ -138,10 +138,66 @@ def varre(praca, key, dry=False):
     return ident, list(achados.values()), erros
 
 
+def ancora(praca, achados, quantos=14):
+    """Escreve as maiores clínicas na identidade da praça.
+
+    Era o elo que faltava: a varredura enchia categoria.jsonl e a identidade
+    continuava vazia, então o coletor de avaliação devolvia zero locais. Em
+    Palmas isso foi feito por script solto — praça nova ficaria sem.
+
+    A unidade da rede entra como 'proprio' e é reconhecida pelo nome. O resto
+    entra como concorrente com o tipo em branco, porque tipar é humano.
+    """
+    import re, unicodedata
+    arq = IDENT/f"{praca}.json"
+    ident = json.loads(arq.read_text(encoding="utf-8"))
+    ja = {l.get("place_id") for l in ident.get("locais", []) if l.get("place_id")}
+    ordenados = sorted(achados, key=lambda p: -(p.get("userRatingCount") or 0))
+    hoje = dt.date.today().isoformat()
+
+    def slug(s):
+        s = unicodedata.normalize("NFKD", s or "")
+        s = "".join(c for c in s if not unicodedata.combining(c)).lower()
+        return re.sub(r"[^a-z0-9]+", "_", s).strip("_")[:26]
+
+    nossos = [p for p in ordenados if "orthodontic" in
+              (p.get("displayName", {}).get("text") or "").lower()]
+    outros = [p for p in ordenados if p not in nossos][:quantos]
+    novos = 0
+    for p in nossos + outros:
+        pid = p.get("id")
+        if not pid or pid in ja:
+            continue
+        nome = p.get("displayName", {}).get("text") or ""
+        eh_nosso = p in nossos
+        # a unidade sem place_id que o esqueleto criou recebe o dela
+        vazio = next((l for l in ident["locais"]
+                      if l.get("papel") == "proprio" and not l.get("place_id")), None)
+        alvo = vazio if (eh_nosso and vazio) else None
+        dados = {"place_id": pid, "nome": nome,
+                 "avaliacoes_google": p.get("userRatingCount"),
+                 "nota_google": p.get("rating"),
+                 "endereco": p.get("formattedAddress"),
+                 "place_id_origem": f"varredura google places {hoje}"}
+        if alvo:
+            alvo.update(dados); alvo.pop("chave_pendente", None)
+        else:
+            ident["locais"].append({
+                "local_id": slug(nome) or f"local_{len(ident['locais'])}",
+                "papel": "proprio" if eh_nosso else "concorrente",
+                **({"tipo": "franquia"} if eh_nosso else {"tipo_concorrente": "PREENCHER"}),
+                **dados, "descoberto_em": hoje})
+        ja.add(pid); novos += 1
+    arq.write_text(json.dumps(ident, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
+    return novos, sum(1 for l in ident["locais"] if l.get("papel") == "proprio")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--praca")
     ap.add_argument("--todas", action="store_true")
+    ap.add_argument("--sem-ancorar", action="store_true",
+                    help="só varre, não escreve na identidade")
     ap.add_argument("--dry-run", action="store_true", help="mostra e não grava")
     a = ap.parse_args()
     pracas = ([p.stem for p in sorted(IDENT.glob("*.json"))] if a.todas
@@ -189,6 +245,9 @@ def main():
                     "filtro": "|".join(TERMOS), "first_seen_snapshot": hoje},
                     ensure_ascii=False)+"\n")
         print(f"  → categoria.jsonl +{len(achados)}")
+        if not a.sem_ancorar:
+            n, prop = ancora(praca, achados)
+            print(f"  → identidade +{n} locais ({prop} da rede) — pronta para o coletor de avaliação")
     print()
 
 

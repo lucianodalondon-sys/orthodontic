@@ -255,11 +255,11 @@ def main():
     total = sum(int((n.get("populacao_estimada") or {}).get("valor") or 0) for n in nums)
     if len(cidades) > 1:
         print(f"  → praça somada: {total} habitantes")
-    j = sum((n.get("idades") or {}).get("alvo_9_15", 0) for n in nums)
-    a = sum((n.get("idades") or {}).get("alvo_30_45", 0) for n in nums)
-    if j or a:
-        print(f"  ALVO REAL: {j} de 9-15 anos · {a} de 30-45 anos"
-              + (f" — o adulto é {a/j:.1f}× maior" if j else ""))
+    jovens = sum((n.get("idades") or {}).get("alvo_9_15", 0) for n in nums)
+    adultos = sum((n.get("idades") or {}).get("alvo_30_45", 0) for n in nums)
+    if jovens or adultos:
+        print(f"  ALVO REAL: {jovens} de 9-15 anos · {adultos} de 30-45 anos"
+              + (f" — o adulto é {adultos/jovens:.1f}× maior" if jovens else ""))
         print("  Os dois públicos não se parecem, e o maior costuma ser o menos falado.")
     else:
         print("  FALTA À MÃO: quantos de 9-15 e de 30-45 anos. É o tamanho real do alvo.")
