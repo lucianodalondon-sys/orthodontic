@@ -46,21 +46,21 @@ busca e ordenação**, projetada para 340 linhas e exibindo 21. Se um componente
 só faz sentido com 4 itens, ele está errado.
 
 **A ficha da praça é ALCANÇADA, não navegada.** Ninguém vai rolar 340 fichas. Os
-caminhos até ela são três: um alerta, uma busca, ou um filtro de coorte. O trilho
+caminhos até ela são três: um alerta, uma busca, ou um filtro. O trilho
 lateral tem **busca global (⌘K)** como elemento de primeira classe, não enfeite.
 
-**Filtros de coorte, sempre visíveis** — é assim que a diretoria pensa e é a
+**Filtros sempre visíveis** — é assim que a diretoria pensa e é a
 língua da casa:
 `região` · `porte de cidade` · `safra` (ano de abertura) · `unidade madura` ·
 `status de inteligência` (estudada / em coleta / não ouvida)
 
 **Alertas são AGRUPADOS por tipo, não empilhados.** Com 340 unidades, "silêncio
-no digital rastreável" vira 40 alertas iguais. O cartão diz **"12 unidades em
+no o que dá para ver na internet" vira 40 alertas iguais. O cartão diz **"12 unidades em
 silêncio no pico regional"** e abre a lista. Nunca 12 cartões idênticos.
 
 **Comparação é o verbo principal.** O número de uma unidade só significa alguma
-coisa contra a coorte dela. Toda métrica na ficha aparece com a referência ao
-lado: *"0,7 review/mês — mediana da coorte: 4,1"*.
+coisa contra as unidades parecidas com ela. Toda métrica na ficha aparece com a referência ao
+lado: *"0,7 review/mês — mediana das unidades parecidas: 4,1"*.
 
 ### O estado padrão é a ignorância — e isso é a história
 
@@ -183,14 +183,14 @@ e sem grão** · HUD, hexágono, linha de varredura.
 Aplicativo de página única com transição suave.
 
 **Barra superior fixa (vidro fosco):** logo · **busca global ⌘K** · pílula de
-cobertura `4 / 340` com barra · data do corte · versão da taxonomia.
+cobertura `4 / 340` com barra · data da última coleta.
 
 **Trilho lateral escuro:**
 `Sala de Controle` · `Praças` · `Rede não ouvida` · `O que Aprendemos` ·
 `Corretor de Campanha` · `Método`
 
 **Controles que precisam existir e funcionar:** botão primário/secundário/
-fantasma · pílulas de filtro · controle segmentado · busca com resultado ao vivo ·
+fantasma · pílulas de filtro · botões de escolha · busca com resultado ao vivo ·
 gaveta lateral · modal · abas · tooltip em gráfico · seletor de período ·
 **ordenação e filtro em toda grade**.
 
@@ -262,7 +262,7 @@ avaliações que recebe.
 **GRAVE · Rede — A OrthoDontic é a única rede fora da busca paga**
 No Centro de Transparência do Google: OdontoCompany 35 anúncios (10 da própria
 franqueadora), Odontoclinic 15, Sorrifácil 1, **OrthoDontic 0** — em quatro
-variantes de nome. Persistência da concorrente: mediana de 104 dias no ar, um
+variantes de nome. Quanto tempo os anúncios dela ficam no ar: mediana de 104 dias no ar, um
 criativo com 864 dias.
 *Fazer:* decisão de franqueadora. Verificar a conta de Google Ads da rede antes
 de concluir.
@@ -282,10 +282,10 @@ Londrina matriz 0% · Prudente 0% · Feira 4% · Riomafra 52% · Londrina Centro
 Alcançada por alerta, busca ou filtro. **Nunca por rolagem de lista.**
 
 **Cabeçalho:** nome grande, cidade em mono, a tese em destaque, e à direita
-quatro medidores radiais — nota, avaliações, reviews novos/mês, anúncios ativos —
-**cada um com a mediana da coorte marcada no arco**.
+quatro medidores redondos — nota, avaliações, reviews novos/mês, anúncios ativos —
+**cada um com a mediana das unidades parecidas marcada no arco**.
 
-Abaixo do cabeçalho, um **controle segmentado de período**: `15/jul` · `07/ago` ·
+Abaixo do cabeçalho, um **botões para trocar o período**: `15/jul` · `07/ago` ·
 `comparar`.
 
 ### Riomafra — Mafra/SC · Rio Negro/PR
@@ -293,7 +293,7 @@ Abaixo do cabeçalho, um **controle segmentado de período**: `15/jul` · `07/ag
 
 **Ponteiros:** nota **4,9** (meta 4,8) · avaliações **155** · novas/mês **0,7**
 (meta 15) · anúncios **3** *(era 0 em 15/jul)* · agendamento **5,9%** (régua 40%)
-Base: 452 vozes + 2ª coleta em 07/ago · taxonomia v1.1.
+Base: 452 vozes + 2ª coleta em 07/ago.
 
 **O funil contra a régua** — a peça visual mais importante. Cinco estágios, os
 que batem em verde, o quebrado em vermelho e maior:
@@ -307,7 +307,7 @@ que batem em verde, o quebrado em vermelho e maior:
 | Pagos | 109 · 99,1% | 90% |
 
 Ao lado, em destaque: **"Quem chega, fecha. Quem chama, some."**
-*Ressalva obrigatória em nota:* o denominador não reconcilia — 109 pagos contra
+*Ressalva obrigatória em nota:* as contas não fecham — 109 pagos contra
 ~336 contratos/ano na mesma unidade. O multiplicador projetado não é publicado.
 
 **Velocidade de reputação** — barras horizontais, a nossa em cor de marca:
@@ -343,7 +343,7 @@ Lumière são de **acolhimento**, o registro que o estudo recomendou para nós.
 - **A joia enterrada:** o casal de ortodontistas que voltou pra casa em 2019. De
   2 para 9 especialistas. Sobrenome da colônia no mapa das duas cidades — e
   ausente do feed.
-- **JAMAIS:** hype, urgência de liquidação, "última chance". Nunca gíria gaúcha
+- **NUNCA DIZER:** hype, urgência de liquidação, "última chance". Nunca gíria gaúcha
   nem estética de Oktoberfest.
 
 **Vozes reais** — carrossel, tipografia de destaque:
@@ -365,7 +365,7 @@ Lumière são de **acolhimento**, o registro que o estudo recomendou para nós.
 
 Painel fixo, ao lado do placar de mídia. **Não é rodapé, é conteúdo.**
 
-> **A coleta só enxerga rastro público digital.** Não vemos:
+> **A coleta só enxerga o que fica público na internet.** Não vemos:
 > **rádio** — em Riomafra são 3 emissoras fortes, uma da paróquia, e um único
 > balcão vende 3 das 4 frequências · **TV aberta** · **outdoor, panfleto,
 > fachada** · **patrocínio de comunidade** — a unidade patrocina os escoteiros ·
@@ -448,18 +448,24 @@ nova. **É por isso que nenhum achado pode virar doutrina ainda.**
 
 Desenhe como **laboratório**, não como lista.
 
-**Máquina de estados no topo**, esteira horizontal:
-`HIPÓTESE (0)` → `CANDIDATA (13)` → `CONSTANTE (0)` → `DOUTRINA (0)` ·
-fora da esteira: `❌ DERRUBADA (2)`
+**A escada dos achados no topo**, esteira horizontal. Use exatamente estas
+palavras — ninguém precisa de legenda para entender:
 
-*Legenda:* um achado só vira regra quando praças **diversas** confirmam. Quatro
-praças parecidas não fazem constante.
+`SINAL ISOLADO (0)` → `SE REPETE (13)` → `VALE PARA A REDE (0)` →
+`VIROU REGRA (0)` · fora da esteira: `❌ CAIU (2)`
 
-**Os achados candidatos** — cada um com placar de confirmação e evidência:
+Com a explicação de cada degrau em letra pequena embaixo:
+*sinal isolado = vimos em 1 ou 2 praças · se repete = vimos em 3 ou mais ·
+vale para a rede = vimos em praças bem diferentes entre si · virou regra = a
+rede decidiu agir · caiu = uma praça mostrou o contrário*
+
+*Legenda da tela:* nada aqui virou regra ainda. Só ouvimos 4 praças, e elas não
+cobrem Norte, Centro-Oeste, capital nem unidade nova.
+
+**Os treze achados que se repetem** — cada um com quantas praças confirmam:
 
 1. **O paciente não avalia ortodontia — avalia como foi tratado.** 4/4 ·
-   Riomafra 66% · Feira 65% · Londrina 65% · Prudente 58% *(N=847, método
-   uniforme, taxonomia v1.1)*
+   Riomafra 66% · Feira 65% · Londrina 65% · Prudente 58% *(847 avaliações com texto, as quatro medidas do mesmo jeito)*
 2. **A ferida é sempre operação, nunca o produto.** 4/4 · e o Reclame Aqui
    confirma: 433 reclamações, as 3 mais recentes todas "Não respondida"
 3. **A confiança é em gente com nome.** 4/4
@@ -479,19 +485,19 @@ praças parecidas não fazem constante.
 **As duas derrubadas, em tratamento gráfico de "crença que caiu":**
 
 > ❌ **"Dezembro e janeiro são pico nacional"**
-> Derrubada por Riomafra. Série de 5 anos: julho 34, dez/jan 2,5-7,9. Confirmado
+> Caiu por causa de Riomafra. Série de 5 anos: julho 34, dez/jan 2,5-7,9. Confirmado
 > pelo BI: 494 e 78 interessados contra 4.120 em julho/25.
 > *Custou centavos de coleta e evitou verba nacional no mês errado.*
 
-> ❌ **"O índice de atendimento sobe quanto menor a cidade"**
-> Derrubada pelo próprio método. A série 47·54·63·69 media **corpora
-> diferentes, não cidades**. Com método uniforme a faixa fecha em 58-66 e a
-> ordem por porte se desfaz.
+> ❌ **"Quanto menor a cidade, mais o paciente fala de atendimento"**
+> Caiu quando medimos as quatro do mesmo jeito. A sequência 47·54·63·69
+> comparava **coletas de tamanhos diferentes, não cidades diferentes**. Medindo
+> igual, todas ficam entre 58% e 66% e a ordem por tamanho de cidade some.
 
 E um cartão menor, de rodapé da tela:
-> ❌ **"Quem responde avaliação é quem cresce"** — hipótese levantada e derrubada
-> no mesmo dia. Correlação **r = +0,08**. Moisés Suzart cresce ~39/mês
-> respondendo 0%; a NEXA responde 100% e cresce 1,3/mês.
+> ❌ **"Quem responde avaliação é quem cresce"** — a gente levantou e derrubou no
+> mesmo dia. **Não tem relação nenhuma:** Moisés Suzart cresce ~39/mês
+> respondendo **0%**; a NEXA responde **100%** e cresce 1,3/mês.
 
 **As variáveis — o que jamais pode ser nacionalizado.** Quatro colunas visuais,
 uma por praça:
@@ -501,7 +507,7 @@ uma por praça:
 | Alavanca de preço | confiança + preço justo | clareza | preço como orgulho | palavra cumprida |
 | Posição | desafiante | **líder** | desafiante, 7x atrás | melhor nota, 4ª em volume |
 | O inimigo | clínica geral | vácuo competitivo | doutor pessoa física | rede popular + startup |
-| Léxico proibido | urgência de liquidação | corporativês | axé litorâneo | gíria gaúcha, Oktoberfest |
+| O que nunca dizer | urgência de liquidação | corporativês | axé litorâneo | gíria gaúcha, Oktoberfest |
 
 ---
 
@@ -553,7 +559,7 @@ Exemplo, o agendamento de Riomafra:
 - **A leitura:** o único estágio quebrado. Comparecimento bate a régua;
   fechamento e pagamento estão acima. A cadeira e o contrato funcionam — o vão
   está entre a primeira mensagem e a agenda.
-- **Contra-evidência** (bloco em cor de atenção): o denominador não reconcilia —
+- **O que pesa contra** (bloco em cor de atenção): as contas não fecham —
   109 pagos contra ~336 contratos/ano na mesma unidade. Enquanto não fechar, o
   multiplicador projetado não é publicado.
 - Ficha técnica em mono: `N 5.050 · 298` · `corte jul/2026` ·
@@ -588,7 +594,7 @@ Tokens do sistema: `--dur-fast 120ms` · `--dur 200ms` · `--dur-slow 360ms` ·
 4. **Não ranqueie franqueado de forma humilhante.** O tom nunca acusa.
 5. **Cor de estado nunca é cor de marca.**
 6. **Toda afirmação de mídia diz onde foi medida.** Nunca "a unidade está muda" —
-   sempre **"ausente do digital rastreável"**. Nunca "cresce porque anuncia" —
+   sempre **"ausente do o que dá para ver na internet"**. Nunca "cresce porque anuncia" —
    sempre "cresce; anuncia".
 7. **Se a tela virou tabela sem filtro, busca e ordenação, refaça.**
 8. **Se um componente só funciona com 4 itens, refaça para 340.**
