@@ -4,7 +4,7 @@
 
 > ## A sua clínica aparece em 0 das 20 buscas que testamos na sua cidade.
 
-São **3 tarefas**, e **3 delas custam R$ 0**. A ordem é de propósito: o que é grátis vem antes do que custa.
+São **5 tarefas**, e **4 delas custam R$ 0**. A ordem é de propósito: o que é grátis vem antes do que custa.
 
 ---
 
@@ -75,6 +75,51 @@ Isso quer dizer que o paciente da sua cidade procura por perto de casa, não pel
 3. Se a clínica atende gente de mais de um bairro, cite os dois ou três de onde vem mais paciente — a recepção sabe quais são.
 
 **Como saber que funcionou:** Na próxima medição a gente testa a busca com o nome do bairro e vê se a clínica passou a aparecer.
+
+---
+
+## 4. O que o paciente da sua cidade diz que foi buscar
+
+`R$ 0` · `meia hora, uma vez` · `você e quem escreve`
+
+Lemos **1.032 avaliações escritas por pacientes das clínicas concorrentes** da sua cidade. Eles contam o que foram fazer:
+
+· criança — 25 menções
+
+· aparelho — 9 menções
+
+· implante — 7 menções
+
+· extração / siso — 7 menções
+
+E as palavras que eles usam para elogiar são sempre as mesmas: experiência, ambiente, tratamento, maraba, recepção, excelencia e mais 2.
+
+**Ninguém elogia equipamento. Todo mundo elogia gente.** Anúncio e post que falam de tecnologia estão falando sozinhos.
+
+**O que fazer:**
+
+1. Escreva com as palavras que eles usam, não com as suas.
+2. Mostre pessoas: quem atende, quem recebe, o nome de cada um.
+3. Se dor e criança estão no topo, é por ali que o paciente entra — e o aparelho vem na conversa depois, não no anúncio.
+
+**Como saber que funcionou:** Não tem número de posição. O sinal é a avaliação nova começar a repetir as mesmas palavras.
+
+---
+
+## 5. Quem está anunciando na sua praça agora
+
+`depende` · `—` · `você e a agência`
+
+**57 anúncios ativos** de ABO PARÁ, Dr. Douglas Luz , Dr. Marco Aurélio, Dra. Lara Rafaela, Fadesa.Marabáa e mais 8.
+
+Anúncio é a última coisa da lista de propósito. As tarefas de cima custam zero e resolvem a maior parte. Verba de anúncio antes disso é pagar por um clique que o perfil daria de graça.
+
+**O que fazer:**
+
+1. Faça primeiro as tarefas grátis desta lista.
+2. Só depois, se quiser anunciar, comece pelas buscas onde o concorrente é forte e a intenção é de compra.
+
+**Como saber que funcionou:** A gente acompanha quem liga e quem desliga campanha, mês a mês.
 
 ---
 

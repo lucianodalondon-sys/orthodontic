@@ -4,7 +4,7 @@
 
 > ## A sua clínica aparece em 0 das 20 buscas que testamos na sua cidade.
 
-São **4 tarefas**, e **4 delas custam R$ 0**. A ordem é de propósito: o que é grátis vem antes do que custa.
+São **5 tarefas**, e **5 delas custam R$ 0**. A ordem é de propósito: o que é grátis vem antes do que custa.
 
 ---
 
@@ -93,6 +93,34 @@ O Google completa a busca da sua cidade com nome de plano: Hapvida e Unimed.
 3. Se não aceita nenhum, isso também é informação: a conversa passa a ser sobre parcelamento, não sobre plano.
 
 **Como saber que funcionou:** Não é medição de posição: é a pergunta que a recepção passa a ouvir menos, porque a resposta já está escrita.
+
+---
+
+## 5. O que o paciente da sua cidade diz que foi buscar
+
+`R$ 0` · `meia hora, uma vez` · `você e quem escreve`
+
+Lemos **1.301 avaliações escritas por pacientes das clínicas concorrentes** da sua cidade. Eles contam o que foram fazer:
+
+· criança — 54 menções
+
+· implante — 37 menções
+
+· aparelho — 11 menções
+
+· extração / siso — 5 menções
+
+E as palavras que eles usam para elogiar são sempre as mesmas: qualidade, gostei, trabalho, amei, experiência, tratamento e mais 2.
+
+**Ninguém elogia equipamento. Todo mundo elogia gente.** Anúncio e post que falam de tecnologia estão falando sozinhos.
+
+**O que fazer:**
+
+1. Escreva com as palavras que eles usam, não com as suas.
+2. Mostre pessoas: quem atende, quem recebe, o nome de cada um.
+3. Se dor e criança estão no topo, é por ali que o paciente entra — e o aparelho vem na conversa depois, não no anúncio.
+
+**Como saber que funcionou:** Não tem número de posição. O sinal é a avaliação nova começar a repetir as mesmas palavras.
 
 ---
 
