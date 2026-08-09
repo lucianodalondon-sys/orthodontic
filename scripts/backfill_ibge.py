@@ -3,14 +3,14 @@
 backfill_ibge.py — põe os números do IBGE nas praças que entraram antes do
 coletor existir.
 
-Quatro das sete praças da base — Feira, Londrina, Prudente e Riomafra — não
+Quatro das sete praças da base — Feira, Londrina, Prudente e Mafra — não
 tinham bloco `ibge` nenhum: nasceram antes do `descobrir_praca.py`. Cuiabá
 tinha população e massa salarial, mas não as faixas etárias.
 
 Isso passou despercebido enquanto ninguém precisava comparar praça com praça.
 Na primeira vez que precisou — a gêmea da praça de oportunidade — o estrago
 apareceu inteiro: **Juazeiro do Norte, com 305 mil habitantes, casou com
-Riomafra, que tem 89 mil**, porque Riomafra só tinha dois dos seis eixos e
+Mafra, que tem 89 mil**, porque Mafra só tinha dois dos seis eixos e
 praça com menos eixo é mais fácil de casar. Amostra incompleta não erra o
 número, erra o SINAL.
 

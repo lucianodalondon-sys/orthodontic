@@ -1,5 +1,5 @@
 # Piloto Orthodontic · Camada 1 — DADOS E COLETA
-### 4 praças · Londrina (Souza Naves) · Presidente Prudente · Feira de Santana · Mafra/Riomafra
+### 4 praças · Londrina (Souza Naves) · Presidente Prudente · Feira de Santana · Mafra/Mafra
 
 > Esta é a primeira das três camadas. Aqui não há tela, não há IA e não há
 > insight. Só a pergunta: **o que entra, com que chave, com que frequência, e
@@ -55,7 +55,7 @@ Um arquivo por praça, mantido à mão, revisado a cada coleta:
 
 ```yaml
 # identidade/mafra.yaml
-praca_id: riomafra
+praca_id: mafra
 cidades: [Mafra/SC, Rio Negro/PR]
 locais:
   - local_id: ortho_mafra
@@ -89,7 +89,7 @@ trabalho, uma vez.
 - **A mesma marca com duas fichas na mesma cidade** (Souza Naves 4,6 × Centro
   3,5, Londrina). São dois `local_id` distintos, ambos `papel: proprio`. Nunca
   agregar sem separar.
-- **Riomafra é uma praça em dois estados.** `praca_id` ≠ município. A praça é o
+- **Mafra é uma praça em dois estados.** `praca_id` ≠ município. A praça é o
   raio de captação, e é ela que agrega.
 
 ---
@@ -140,7 +140,7 @@ sem depender do Conecta.
 | **Registro do CRO** | quantos ortodontistas na cidade, em qual clínica | trimestral |
 | **Imprensa local (RSS)** | menções à unidade, à marca, aos concorrentes | semanal |
 
-*A joia de Riomafra — o casal que voltou pra casa — saiu de matéria em jornal
+*A joia de Mafra — o casal que voltou pra casa — saiu de matéria em jornal
 local. Não foi sorte: foi busca documental. Vira rotina.*
 
 ### Bloco D — o dado de dentro (não depende de nós)
@@ -150,7 +150,7 @@ local. Não foi sorte: foi busca documental. Vira rotina.*
 | **Conecta — funil** | interessados → agendados → comparecidos → fechados → pagos | **CSV mensal das 4** |
 | **Conecta — base e safra** | base ativa, contratos pagos/mês, safra de pagamento | mesmo CSV |
 
-Riomafra já entregou isso uma vez, via print de tela. **Pedir das quatro, em
+Mafra já entregou isso uma vez, via print de tela. **Pedir das quatro, em
 CSV, é a menor escada possível** — e o precedente já existe.
 
 ---
@@ -183,7 +183,7 @@ TRIMESTRAL
 
 **Por que reviews e anúncios são semanais:** são os dois únicos sinais que se
 movem rápido o suficiente para virar alerta. Concorrente que começa a anunciar
-no pico da temporada — o que aconteceu em Riomafra em julho — precisa ser
+no pico da temporada — o que aconteceu em Mafra em julho — precisa ser
 detectado em dias, não em meses.
 
 ---
@@ -217,13 +217,13 @@ dados/
 **`first_seen_snapshot`** — a data da primeira coleta em que aquele review
 apareceu. Com isso, **velocity sai de graça**: quantos reviews novos por mês,
 por clínica, sem depender de a plataforma informar nada. Foi o dado mais forte
-do estudo de Riomafra (0,7/mês contra 72 num mês) e foi calculado à mão. Agora
+do estudo de Mafra (0,7/mês contra 72 num mês) e foi calculado à mão. Agora
 é subproduto.
 
 **`last_seen_snapshot`** — a última coleta em que apareceu. Para anúncios,
 `last_seen − first_seen` = **dias no ar**, que é o melhor proxy grátis de
 performance que existe. *"Quem paga o mesmo anúncio por 2 meses está tendo
-retorno"* — o estudo de Riomafra usou isso, agora vira coluna.
+retorno"* — o estudo de Mafra usou isso, agora vira coluna.
 
 Para reviews, `last_seen` também detecta **review apagado** — que é sinal.
 
@@ -268,11 +268,11 @@ vai citar a fonte errada com confiança total.
   "metrica": "atendimento_pct",
   "valor": 0.69,
   "n": 224,
-  "praca_id": "riomafra",
+  "praca_id": "mafra",
   "snapshot_date": "2026-07-15",
   "taxonomia_versao": "1.1",
   "fonte": "reviews_classificados.jsonl",
-  "filtro": "praca=riomafra AND tem_texto=true",
+  "filtro": "praca=mafra AND tem_texto=true",
   "calculado_em": "2026-07-15T17:03:58Z"
 }
 ```
@@ -326,12 +326,12 @@ começa do zero; começa da segunda coleta.
 
 | # | O quê | Por quê |
 |---|---|---|
-| 1 | **Recoletar Riomafra agora** | o baseline congelou em 15/jul; um mês depois é a primeira medição de movimento do projeto inteiro |
+| 1 | **Recoletar Mafra agora** | o baseline congelou em 15/jul; um mês depois é a primeira medição de movimento do projeto inteiro |
 | 2 | Montar as 4 tabelas de identidade | sem isso nada amarra |
 | 3 | Rodar as outras 3 praças com os targets que já existem | dá o segundo ponto da série nas quatro |
 | 4 | **Pedir acesso de parceiro às 4 fichas do Google** | o pedido de maior retorno e menor custo político do projeto |
 | 5 | Rodar o 1º teste de WhatsApp nas 4 + concorrentes | o número que ninguém tem |
-| 6 | Pedir o CSV do Conecta das 4 | precedente já existe (Riomafra) |
+| 6 | Pedir o CSV do Conecta das 4 | precedente já existe (Mafra) |
 | 7 | Congelar `taxonomia v1.1` e reprocessar as 4 | para os 54/47/63/69 ficarem comparáveis de verdade |
 
 **O item 1 é o mais urgente e o mais barato.** Custa cerca de um dólar e é a

@@ -12,7 +12,7 @@ Grava em dados/serie/anuncios.jsonl, o mesmo arquivo do Meta, com o campo
 precisar de outra tela.
 
 Uso:
-    python3 coleta/coletores/google_ads.py --praca riomafra
+    python3 coleta/coletores/google_ads.py --praca mafra
     python3 coleta/coletores/google_ads.py --todas
 """
 import argparse, json, os, pathlib, re, sys, time, urllib.error, urllib.request
@@ -26,7 +26,7 @@ ACTOR = "solidcode~ads-transparency-scraper"
 API = "https://api.apify.com/v2"
 
 BUSCAS = {
- "riomafra": ["OrthoDontic", "Instituto Lumière", "OdontoCompany"],
+ "mafra": ["OrthoDontic", "Instituto Lumière", "OdontoCompany"],
  "londrina": ["OrthoDontic", "Odontoclinic", "Classdent"],
  "feira":    ["OrthoDontic", "Moisés Suzart", "OdontoCompany"],
  "prudente": ["OrthoDontic", "NEXA Odonto", "Sorrifácil"],

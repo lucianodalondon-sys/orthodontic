@@ -36,8 +36,8 @@ agente-mercado-unidade). Entregável futuro: output_ortho_mafra/.
 
 ACHADO-MESTRE 1 — A PRAÇA É "RIOMAFRA": Mafra(SC,55k)+Rio Negro(PR,31k) = UMA
 colônia de 1829 partida pela divisa pós-Contestado; ~87k hab, mesmo DDD 47,
-mídia toda se chama Riomafra (@riomaframixoficial 53k "QUEM É DAQUI ACESSA!",
-@diarioderiomafra, @clickriomafra). Falar "Riomafra" = de dentro.
+mídia toda se chama Mafra (@riomaframixoficial 53k "QUEM É DAQUI ACESSA!",
+@diarioderiomafra, @clickriomafra). Falar "Mafra" = de dentro.
 
 ACHADO-MESTRE 2 — A PEPITA: donos da unidade = CASAL DE ORTODONTISTAS MAFRENSES
 que voltaram pra cidade natal (Dra. Vanessa STOEBERL Gomes CRO12379/SC
@@ -52,7 +52,7 @@ DIAGNÓSTICO (o problema é PRESENÇA, não reputação):
 2. MUDA na mídia: 0 ads Meta ativos vs OC 6 + Lumière 8 ("avaliação gratuita").
 3. IG 2,1k fraco: feed ABANDONOU a ortodontia (posta faceta/implante/canal =
    território da Lumière) e ZERO rosto — audiência ama as pessoas ("os melhores
-   dentistas!!! Saudades"). Já usa "Riomafra" e #riomafra (instinto local ok).
+   dentistas!!! Saudades"). Já usa "Mafra" e #mafra (instinto local ok).
 4. Vazamentos: Dra. Rubia Lenz (equipe) tem clínica própria Invisalign (LENZ
    4,9×52); UnC abriu odonto em Mafra 2022 (clínica-escola, SEM orto); Odonto
    Excellence chegando. CEO/SUS sem orto; planos populares não cobrem aparelho.
@@ -63,7 +63,7 @@ DIAGNÓSTICO (o problema é PRESENÇA, não reputação):
 CIÊNCIA (agente, com fontes): Coleman/Gluckman (rede fechada tem memória, fofoca
 = SO da cidade; 50 primeiros pacientes definem 5 anos), só 7% dos brasileiros
 confiam em desconhecido, prova social PROVINCIANA (Cialdini: "neste quarto" >
-genérico → "300 sorrisos em Riomafra" > "milhões no Brasil"), aversão à perda
+genérico → "300 sorrisos em Mafra" > "milhões no Brasil"), aversão à perda
 dupla (dinheiro+reputação: "a mãe que caiu no golpe"), evasão jovem → argumento
 "aparelho = futuro do filho + continua em qualquer unidade da rede se ele for
 estudar fora". Inverno: decisão dentro de casa (SAD subclínico 20%).
@@ -100,7 +100,7 @@ BOMBAS DO APROFUNDAMENTO:
   DERRUBOU a candidata "férias dez/jan" (sazonalidade é VARIÁVEL por UF).
   Pico é AGORA e a unidade está muda → rec. mídia = URGENTE 7-14 dias.
 - HISTÓRIA (agente-historia-unidade.md): "casal voltou pra casa" PUBLICADO
-  (Riomafra Mix 6 anos); Dra. Vanessa CRO12379/SC especialista ORTO, RT+CNES;
+  (Mafra Mix 6 anos); Dra. Vanessa CRO12379/SC especialista ORTO, RT+CNES;
   Stoeberl = sobrenome bucovino c/ RUAS nas 2 cidades (⚠️ validar parentesco);
   de 2 p/ 9 especialistas; ⚠️ marido pode ser RT da OrthoDontic RIO NEGRINHO
   (Luis Henrique de Abreu Gomes CRO8682 endodontia — validar).

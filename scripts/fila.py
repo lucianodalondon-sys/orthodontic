@@ -64,7 +64,7 @@ GATILHOS = {
 FAIXA = [(60, "vermelha"), (30, "amarela"), (0, "verde")]
 
 # Quando um leilão tem menos anunciantes que isto, não estar nele não é
-# silêncio — é praça vazia, que é oportunidade e não ameaça. Riomafra tem
+# silêncio — é praça vazia, que é oportunidade e não ameaça. Mafra tem
 # ZERO anunciantes: cobrar campanha lá seria inventar um problema.
 LEILAO_CHEIO = 5
 

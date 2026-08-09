@@ -4,7 +4,7 @@
 ensina a ler **todas juntas** — e é aqui que o projeto deixa de ser consultoria
 e vira sistema.
 
-> Um estudo diz *"sua unidade de Riomafra está parada"*.
+> Um estudo diz *"sua unidade de Mafra está parada"*.
 > Um sistema diz *"trinta e sete unidades pararam este mês, e as sete que não
 > pararam fazem a mesma coisa"*.
 >
@@ -57,13 +57,13 @@ cidade dela** — e é a única leitura justa.
 | 18,1 | 5 | 2º de 25 | SP · Presidente Prudente | campanha |
 | 14,0 | 11 | 3º de 14 | TO · Palmas | **OPERAÇÃO** |
 | 3,7 | 0 | 16º de 29 | MT · Cuiabá · Fernando Corrêa | parada |
-| 3,3 | 0 | 8º de 15 | SC · Mafra + PR · Rio Negro | parada |
+| 3,3 | 0 | 8º de 15 | SC · Mafra | parada |
 | 3,2 | 1 | 17º de 22 | BA · Feira de Santana | parada |
 | 0,8 | 2 | 23º de 24 | PR · Londrina · Centro | parada |
 | 0,7 | 2 | 29º de 29 | MT · Cuiabá · Dom Bosco | parada |
 
 **Estar em 1º numa cidade fraca não é o mesmo que estar em 3º numa cidade
-brigada.** Contagem é 3ª de 15 fazendo 50/mês; Riomafra é 8ª de 15 fazendo 3,3.
+brigada.** Contagem é 3ª de 15 fazendo 50/mês; Mafra é 8ª de 15 fazendo 3,3.
 Sem a coluna de posição, a segunda pareceria só "um pouco pior".
 
 **Leia sempre as três colunas juntas.** Uma unidade que sobe de posição sem
@@ -149,7 +149,7 @@ tráfego pago.
 
 ## 5 · AS UNIDADES PARECIDAS — comparar com quem é comparável
 
-Comparar a unidade de Riomafra (89 mil habitantes) com a de Cuiabá (1 milhão)
+Comparar a unidade de Mafra (89 mil habitantes) com a de Cuiabá (1 milhão)
 não ensina nada e ainda ofende o franqueado.
 
 O cruzamento agrupa por **porte da praça** e mostra a mediana do grupo:

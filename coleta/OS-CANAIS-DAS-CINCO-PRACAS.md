@@ -17,12 +17,12 @@
 | Praça | Canal da mãe | Seguidores |
 |---|---|---:|
 | **Feira de Santana** | **@sambademaes** | **31.606** |
-| Riomafra | não existe | — |
+| Mafra | não existe | — |
 | Londrina | não existe | — |
 | Presidente Prudente | não existe | — |
 | Cuiabá | não existe | — |
 
-Riomafra e Londrina devolveram perfis que a busca classificou como "mães" e não
+Mafra e Londrina devolveram perfis que a busca classificou como "mães" e não
 são: `@riomafra.milgrau` é entretenimento, `@belcon.semijoias` vende semijoia.
 **Contar esses como canal da mãe seria pior que não ter achado nada.**
 
@@ -52,7 +52,7 @@ mídia entrega decisor e paciente no mesmo lugar, toda semana.
 | Cuiabá | @associacaopesdeouro — Sul-americano Sub-14 feminino | 8.826 |
 | Cuiabá | @escolinhasesportivasufmt — gratuita, na UFMT | 7.975 |
 | Feira | @zero75esportes | 3.399 |
-| Riomafra | não encontrado | — |
+| Mafra | não encontrado | — |
 
 Chama atenção que dois dos maiores sejam **futsal feminino** — e é no público
 feminino que o aparelho é mais procurado.
@@ -61,12 +61,12 @@ feminino que o aparelho é mais procurado.
 
 ## OS OUTROS CANAIS, POR PRAÇA
 
-### Riomafra
+### Mafra
 `@riomaframixoficial` 54.032 — a imprensa local, "de Rio Negro e Mafra pro
 mundo" · `@prefeiturademafra` 25.397 · `@crescieperdi_mafra` 22.464 ·
 `@riomafra.milgrau` 20.307 (entretenimento).
 **Sem humor local verificável, sem esporte de base, sem canal de mãe.** O estudo
-original já dizia que Riomafra é território vazio; a varredura confirma.
+original já dizia que Mafra é território vazio; a varredura confirma.
 
 ### Londrina
 `@iamlondrinakelly` 527.898 · `@prefeituralondrina` 144.269 ·

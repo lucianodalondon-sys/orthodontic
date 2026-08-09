@@ -1,6 +1,6 @@
 # Como entrar numa cidade nova
 
-**O processo, exato.** Escrito depois de oito praças — Riomafra, Londrina,
+**O processo, exato.** Escrito depois de oito praças — Mafra, Londrina,
 Feira, Prudente, Cuiabá, Palmas e Contagem — e corrigido por cada erro que
 elas custaram.
 
@@ -72,9 +72,9 @@ achados mais fortes do projeto.** Não são opcionais e não são automatizávei
 
 **A praça não é o município. É o raio real de onde vem o paciente.**
 
-Riomafra ensinou do jeito difícil: Mafra/SC e Rio Negro/PR são **uma cidade
+Mafra ensinou do jeito difícil: Mafra/SC e Rio Negro/PR são **uma cidade
 partida pela divisa dos estados** — mesmo DDD, ônibus urbano cruzando a ponte,
-mídia local que se chama "Riomafra". Tratar como duas era erro de forasteiro.
+mídia local que se chama "Mafra". Tratar como duas era erro de forasteiro.
 
 Cuiabá repetiu: conurbada com Várzea Grande, 1.010.797 habitantes somados.
 
@@ -103,7 +103,7 @@ relatório e no e-mail.
 | Praça | Como escreve |
 |---|---|
 | Contagem | `MG · Contagem` |
-| Riomafra | `SC · Mafra + PR · Rio Negro` |
+| Mafra | `SC · Mafra` |
 | Cuiabá | `MT · Cuiabá + MT · Várzea Grande` |
 
 Com a UF na frente, a cidade errada salta aos olhos antes de virar dado; numa
@@ -143,7 +143,7 @@ o raio, e **quantas unidades da rede a lista oficial diz que existem ali**.
 
 ```bash
 python3 coleta/descobrir_praca.py --cidade "Contagem/MG"
-python3 coleta/descobrir_praca.py --cidade "Mafra/SC" --mais "Rio Negro/PR" --id riomafra
+python3 coleta/descobrir_praca.py --cidade "Mafra/SC" --mais "Rio Negro/PR" --id mafra
 ```
 
 Traz do IBGE:
@@ -162,7 +162,7 @@ parecem:
 |---|---:|---:|---:|
 | Contagem | 52.795 | 155.079 | **2,9× maior** |
 | Palmas | 32.089 | 78.759 | 2,5× maior |
-| Riomafra | ~7.700 | ~21.000 | 2,7× maior |
+| Mafra | ~7.700 | ~21.000 | 2,7× maior |
 
 **Em todas as praças o adulto é 2,5 a 3 vezes maior — e é o menos falado.**
 A comunicação da rede mira o adolescente; o mercado é do adulto.
@@ -203,7 +203,7 @@ São **nove tipos de canal**, e cada um responde uma pergunta diferente:
 ### Os três achados que essa etapa já deu
 
 **O canal da mãe existe em 1 de 7 praças.** Só Feira tem (@sambademaes,
-31.606). Riomafra, Londrina, Prudente, Cuiabá, Palmas e Contagem não têm
+31.606). Mafra, Londrina, Prudente, Cuiabá, Palmas e Contagem não têm
 nenhuma voz materna de escala. **É a maior brecha que este projeto encontrou**,
 e como se repete em praças que não têm nada a ver entre si, é decisão de
 franqueadora.
@@ -256,7 +256,7 @@ O que sai daqui e não sai de nenhuma outra fonte:
   (171); preço é o mais fraco (7). Em Contagem, a voz da cidade **é uma página
   de memes** com 164 mil seguidores
 - **o que nunca dizer** — o "axé litorâneo" que soaria falso em Feira, a gíria
-  gaúcha que queimaria em Riomafra
+  gaúcha que queimaria em Mafra
 
 > A escuta é o único jeito de auditar a etapa 2. Foi lendo as palavras — 
 > "maestra", "pizza", "cirurgiaplastica" — que os canais falsos apareceram.
@@ -301,7 +301,7 @@ montadas com 3 a 5 concorrentes escolhidos a mão. Quando varremos:
 
 | Praça | Na lista | Reais | Posição no estudo | Posição real |
 |---|---:|---:|---:|---:|
-| Riomafra | 5 | 87 | 2ª | **7ª** |
+| Mafra | 5 | 87 | 2ª | **7ª** |
 | Feira | 3 | 144 | 2ª | **20ª** |
 | Londrina | 3 | 151 | 1ª | **5ª** |
 | Prudente | 5 | 121 | 2ª | **3ª** |
@@ -450,7 +450,7 @@ respondida.
 |---|---|
 | Londrina | **é a matriz** da rede |
 | Prudente | foi a **primeira franquia** |
-| Riomafra | **o casal de ortodontistas que voltou pra casa** |
+| Mafra | **o casal de ortodontistas que voltou pra casa** |
 | Contagem | a voz da cidade é uma **página de memes** de 164 mil |
 | Feira, Palmas, Contagem | **a unidade não tem nenhuma** |
 
@@ -481,7 +481,7 @@ com escola e convênio · **indicação boca a boca**, que os estudos apontam co
 > **"O que vocês fazem de mídia que não está na internet?"**
 
 Sem isso, a gente escreve "a unidade está muda" sobre uma clínica que pode
-estar no rádio da cidade toda semana. Em Riomafra o rádio é canal forte — três
+estar no rádio da cidade toda semana. Em Mafra o rádio é canal forte — três
 emissoras, uma da paróquia — e a unidade patrocina os escoteiros.
 
 **Sai:** `dados/serie/midia_offline.jsonl` preenchido, com status
@@ -571,7 +571,7 @@ concorrência ficam controlados de graça.** O que sobra é a unidade.
 
 Em Cuiabá: **45,6 · 3,7 · 0,7 por mês.** Sessenta e cinco vezes de diferença.
 
-E 0,7 é exatamente o número de Riomafra — que a gente tinha atribuído à cidade
+E 0,7 é exatamente o número de Mafra — que a gente tinha atribuído à cidade
 pequena. Numa capital de um milhão, a mesma marca produz o mesmo 0,7.
 **0,7 é o que uma unidade produz quando não faz nada. Não é característica de
 praça.**
@@ -948,7 +948,7 @@ Onde estamos, com 7 praças de 340:
 
 | Região | Praças |
 |---|---|
-| Sul | 2 (Londrina, Riomafra) |
+| Sul | 2 (Londrina, Mafra) |
 | Sudeste | 2 (Prudente, Contagem) |
 | Centro-Oeste | 1 (Cuiabá) |
 | Norte | 1 (Palmas) |

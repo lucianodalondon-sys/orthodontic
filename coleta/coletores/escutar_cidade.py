@@ -11,7 +11,7 @@ O que sai daqui, e não sai de nenhuma outra fonte:
   · as palavras da cidade — como ela fala, não como a gente escreve
   · o que ela premia e o que ela detesta
   · o QUE NUNCA DIZER: o "axé litorâneo" que soaria falso em Feira, a gíria
-    gaúcha que queimaria em Riomafra
+    gaúcha que queimaria em Mafra
 
 Meta: 800 a 1.400 vozes por praça. Foi o que as quatro primeiras renderam.
 

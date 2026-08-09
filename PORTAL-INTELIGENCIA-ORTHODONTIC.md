@@ -18,7 +18,7 @@
 5. [Ficha 01 · Londrina/PR](#ficha-01--londrinapr--souza-naves-a-matriz)
 6. [Ficha 02 · Presidente Prudente/SP](#ficha-02--presidente-prudentesp--a-1ª-franquia)
 7. [Ficha 03 · Feira de Santana/BA](#ficha-03--feira-de-santanaba--o-centro)
-8. [Ficha 04 · Mafra/SC](#ficha-04--mafrasc--riomafra-o-piloto-aplicado)
+8. [Ficha 04 · Mafra/SC](#ficha-04--mafrasc--mafra-o-piloto-aplicado)
 9. [Ficha 05 · Rede franqueadora + embaixador](#ficha-05--rede-franqueadora--o-parecer-do-embaixador)
 10. [Tabela comparativa](#10--tabela-comparativa-das-4-praças)
 11. [Modelo de dados do portal](#11--modelo-de-dados-do-portal)
@@ -34,7 +34,7 @@
 | 01 | Londrina/PR | Souza Naves — **a MATRIZ** | 4,6 · 561 | 1.400+ vozes | não |
 | 02 | Presidente Prudente/SP | **a 1ª franquia** (02/05/2005) | 4,9 · 582 | 1.400+ vozes | não |
 | 03 | Feira de Santana/BA | Centro (calçadão) | 4,7 · 173 | 800+ vozes + 59 anúncios | não |
-| 04 | Mafra/SC | Riomafra — **o piloto** | 4,9 · 155 | 452 vozes (corte 15/jul/2026) | **sim — BI da rede** |
+| 04 | Mafra/SC | Mafra — **o piloto** | 4,9 · 155 | 452 vozes (corte 15/jul/2026) | **sim — BI da rede** |
 | 05 | Nacional | rede franqueadora + parecer Teló | — | corpus nacional | parcial |
 
 Todos os estudos foram construídos **de fora**, sem briefing e sem dado interno
@@ -77,7 +77,7 @@ quanto menor a cidade:**
 | Presidente Prudente | 234 mil | **47%** (base 454 avaliações) |
 | Londrina | 556 mil | **54%** (237 de 438 com texto) |
 | Feira de Santana | 616 mil | **63%** |
-| Riomafra | 87 mil | **69%** (N=224, corte 15/jul/2026) |
+| Mafra | 87 mil | **69%** (N=224, corte 15/jul/2026) |
 
 A série **47 · 54 · 63 · 69** é a prova visual da constante. Em comunidade
 densa, a reputação tem memória — o erro não se dilui na multidão.
@@ -120,7 +120,7 @@ BI: julho/25 foi o maior mês de interessados do ano — 4.120, quatro vezes a
 média.
 
 ### C6 · O adulto 30+ é dinheiro na mesa e nenhuma praça fala com ele
-Hoje quase metade de quem usa aparelho. Em Riomafra são **~21.000 adultos de
+Hoje quase metade de quem usa aparelho. Em Mafra são **~21.000 adultos de
 30-45** contra **~7.700 jovens de 9-15** (Censo 2022) — o alvo maior é o menos
 falado. É lacuna nacional, não esquecimento local.
 
@@ -184,7 +184,7 @@ A moldura é nacional; quem aparece dentro dela é local.
 | Londrina | orgulho de raiz e tradição, fé e família, consumo por indicação | urgência de liquidação |
 | Prudente | superlativo local ("o melhor da cidade"), capricho, humor de família | corporativês |
 | Feira | baianês de sertão — "oxe", "meu rei/minha rainha", "massa", "arrochar" | **axé litorâneo de vitrine** (soa a quem confundiu Feira com Salvador) |
-| Riomafra | falar do planalto — "piá", chimarrão, sóbrio, de colônia | **gíria gaúcha e estética de Oktoberfest**; e dizer só "Mafra" |
+| Mafra | falar do planalto — "piá", chimarrão, sóbrio, de colônia | **gíria gaúcha e estética de Oktoberfest**; e dizer só "Mafra" |
 
 Uma peça nacional escrita numa dessas línguas **morre** nas outras três.
 
@@ -192,7 +192,7 @@ Uma peça nacional escrita numa dessas línguas **morre** nas outras três.
 - **Feira:** preço baixo é **orgulho** — "pagar menos e sair por cima é virtude"
 - **Londrina:** preço baixo levanta **suspeita** — a alavanca é confiança + preço justo
 - **Prudente:** preço nem é a alavanca — é **clareza** ("explicam tudo, não tive nenhuma dúvida")
-- **Riomafra:** é **palavra cumprida** — prova antes de promessa
+- **Mafra:** é **palavra cumprida** — prova antes de promessa
 
 A mesma oferta de desconto produz quatro efeitos diferentes. **Desconto nunca
 pode ser nacionalizado.**
@@ -230,7 +230,7 @@ distingue unidade — distingue **marca**. O gap entre a melhor e a pior unidade
 o passivo de marca mais concreto que existe.
 
 ### D8 · A geografia da praça nem sempre coincide com a cidade
-**Riomafra é uma praça em dois estados**, com duas redes escolares de calendários
+**Mafra é uma praça em dois estados**, com duas redes escolares de calendários
 diferentes (férias PR 13/07–27/07, SC 23/07–03/08 — o criativo troca de margem no
 dia 23). **Londrina tem uma Zona Norte de 108 mil habitantes sem unidade
 OrthoDontic dentro.** A unidade de análise é a **praça** (o raio real de
@@ -565,11 +565,11 @@ ponteiros e a única praça cruzada com os dados internos do BI.
 **A praça não é "Mafra" — é RIOMAFRA.** Mafra (SC) e Rio Negro (PR) nasceram
 como UMA colônia em 1829 e foram partidas pela divisa dos estados. Hoje: mesmo
 DDD, ônibus urbano que cruza a ponte, **~87 mil pessoas numa malha urbana
-contínua** — e a mídia local inteira se chama "Riomafra". **Falar "Riomafra" é
+contínua** — e a mídia local inteira se chama "Mafra". **Falar "Mafra" é
 falar de dentro; tratar Rio Negro como outra cidade é o erro do forasteiro.**
 
 ### Quem é o riomafrense
-- **Colônia-mosaico** de alemães-boêmios (bucovinos — Riomafra é a **maior
+- **Colônia-mosaico** de alemães-boêmios (bucovinos — Mafra é a **maior
   colônia bucovina do mundo**), poloneses e ucranianos. Sobrenome aqui é
   identidade: a cidade tem ruas com nomes de famílias da colônia
 - **Temperamento de colônia:** discreto, comunitário, de tradição. **Desconfia de
@@ -811,7 +811,7 @@ aparelho; as conversas nos grupos fechados; o share real de receita.
 em público — o silêncio digital daqui é característica, não ausência de opinião.
 
 ### Tom
-Sóbrio, concreto, **prova antes de promessa**. Riomafra sempre. O frio como
+Sóbrio, concreto, **prova antes de promessa**. Mafra sempre. O frio como
 cúmplice. **Jamais:** hype, urgência de liquidação, "última chance" (o radar
 antivigarista da colônia queima a marca), gíria gaúcha, estética de Oktoberfest.
 
@@ -907,7 +907,7 @@ Entidades derivadas do que **já existe** nos estudos:
 
 | Entidade | Campos principais | Origem |
 |---|---|---|
-| **Praça** | id, cidades que a compõem (Riomafra = Mafra+Rio Negro), UF(s), população, renda mediana, classes dominantes, coortes (9-15, 30-45), data do estudo, nº de vozes, data de corte, status | cabeçalhos e cap. "tamanho do jogo" |
+| **Praça** | id, cidades que a compõem (Mafra = Mafra+Rio Negro), UF(s), população, renda mediana, classes dominantes, coortes (9-15, 30-45), data do estudo, nº de vozes, data de corte, status | cabeçalhos e cap. "tamanho do jogo" |
 | **Unidade** | praça_id, tipo (matriz própria/franquia), ano de abertura, idade, nota, volume de avaliações, posição no placar, nº de especialistas, tem site (s/n), seguidores, anúncios ativos, joia local + status de validação, ferida principal | raio-X e placar |
 | **Concorrente** | praça_id, **tipo** (rede/clínica geral/doutor PF/clínica-escola/startup de tráfego), nota, volume, **velocidade de reviews** (média e melhor mês), idade, capital registrado, anúncios ativos, território que domina, forças, brechas, feridas públicas, disputa ortodontia (s/n) | placares + playbooks |
 | **Review** | clínica_id, nota, texto, data, temas classificados, cita profissional pelo nome (s/n), é de tratamento CONCLUÍDO (s/n), respondida (s/n) | 615 (LDN) + 454 (PP) + FSA + 224 c/ texto (MAF) |

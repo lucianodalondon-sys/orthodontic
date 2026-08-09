@@ -128,7 +128,7 @@ De tudo que medimos, **quase ninguém sustenta**:
 | Bongiovanni (Prudente) | ligou em abril | campanha |
 | Clínica Goya (Cuiabá) | morreu em abril | campanha morta |
 | REDEORTO (Várzea Grande) | 105 em março, 3 em julho | campanha morta |
-| Instituto Lumière (Riomafra) | irregular | campanha |
+| Instituto Lumière (Mafra) | irregular | campanha |
 | COP Tomba (Feira) | 95 em maio, 5 depois | campanha |
 
 **Quatro operações em 130 clínicas medidas. Uma delas é da OrthoDontic.**

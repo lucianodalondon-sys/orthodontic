@@ -32,12 +32,12 @@ Tudo abaixo sai da série da camada 1. Nenhum item precisa de modelo.
 | Métrica | Como | Por que importa |
 |---|---|---|
 | **Velocity** — reviews novos/mês por local | `COUNT` por `first_seen_snapshot` | foi o dado mais forte do projeto: 0,7/mês contra 72 num mês |
-| **Velocity normalizada por idade** | velocity ÷ meses de operação | Prudente fez 582 em 20 anos; a vizinha de Riomafra fez 197 em 9 meses. Comparar volume bruto engana |
-| **Gap de volume vs líder da praça** | `volume_lider ÷ volume_proprio` | 3,4x em Riomafra, 7x em Feira |
+| **Velocity normalizada por idade** | velocity ÷ meses de operação | Prudente fez 582 em 20 anos; a vizinha de Mafra fez 197 em 9 meses. Comparar volume bruto engana |
+| **Gap de volume vs líder da praça** | `volume_lider ÷ volume_proprio` | 3,4x em Mafra, 7x em Feira |
 | **Meses para ultrapassar o líder** | gap ÷ (velocity própria − velocity líder) | transforma o gap em prazo. Se der negativo, o gap está **crescendo** — e isso é o alerta |
 | **% respondidos e tempo de resposta** | da coleta semanal | o líder de Rio Negro vence respondendo cada avaliação |
 | **Distribuição de estrelas** | histograma | Prudente: 83×5★, 1×1★, zero no meio — consistência é sinal |
-| **% que cita profissional pelo nome** | léxico | 9% na clínica infantil de Riomafra, o dobro da unidade |
+| **% que cita profissional pelo nome** | léxico | 9% na clínica infantil de Mafra, o dobro da unidade |
 | **% por tema** | léxico + `taxonomia_versao` | os 54 · 47 · 63 · 69 |
 
 ### Presença e mídia
@@ -61,7 +61,7 @@ Tudo abaixo sai da série da camada 1. Nenhum item precisa de modelo.
 | **Desvio da régua** por estágio | funil ÷ (40 · 50 · 80 · 90) |
 | **Concentração de lead** (rajada × fluxo) | desvio-padrão de interessados/dia |
 
-Essa última merece nota: o estudo de Riomafra achou que os interessados chegam
+Essa última merece nota: o estudo de Mafra achou que os interessados chegam
 em **rajadas** e que na rajada o agendamento desaba. Se isso se confirmar nas
 outras três, deixa de ser característica local e vira **defeito de desenho de
 campanha da rede** — um dos achados mais caros que o piloto pode produzir.
@@ -77,7 +77,7 @@ produziram.
 | Alerta | Regra | Origem do limiar |
 |---|---|---|
 | 🔴 **Concorrente invadiu a categoria** | anunciante que nunca falou de aparelho publica criativo com termo de ortodontia | a Lumière entrou em ortodontia em julho, no pico |
-| 🔴 **Silêncio no pico** | anúncios = 0 **E** mês no quartil superior de busca | Riomafra: 0 contra 10 e 7, em julho |
+| 🔴 **Silêncio no pico** | anúncios = 0 **E** mês no quartil superior de busca | Mafra: 0 contra 10 e 7, em julho |
 | 🔴 **Review negativo sem resposta** | ≤3★ e sem resposta em 48h | a mãe lê os comentários antes de escolher |
 | 🟠 **Velocity travada** | < 2 reviews/mês por 2 meses seguidos | 0,7/mês é o caso patológico documentado |
 | 🟠 **Gap crescendo** | meses-para-ultrapassar piora 2 meses seguidos | — |
@@ -85,7 +85,7 @@ produziram.
 | 🟠 **WhatsApp lento** | mediana > 30 min em horário comercial | a ferida nº 1 das quatro praças |
 | 🟡 **Clínica nova no raio** | CNPJ novo ou local novo no diff do mapa | a Lumière apareceu a 70 m |
 | 🟡 **Vaga repetida de recepção** | 2ª publicação em 6 meses | rotatividade na linha de frente = onde o funil quebra |
-| 🔴 **Agendamento fora da régua** | < 20% (metade da régua) | Riomafra: 6% contra 40% |
+| 🔴 **Agendamento fora da régua** | < 20% (metade da régua) | Mafra: 6% contra 40% |
 
 **Cada alerta nasce com três coisas ou não nasce:** o que aconteceu, a evidência
 clicável, e o que fazer. Alerta sem ação vira ruído, e ruído vira portal que
@@ -105,7 +105,7 @@ Não é promessa. Cada item abaixo já rodou nesta base:
 | **Ler o playbook de um concorrente** a partir dos posts públicos dele | os 4 movimentos do gigante de Feira; a receita da Lumière |
 | **Sintetizar corpus em diagnóstico** | os quatro estudos |
 | **Auditar documento contra a fonte** | a auditoria adversarial dos dossiês achou 58 erros de procedência |
-| **Escrever na língua de uma praça, com as proibições** | o kit de execução de Riomafra |
+| **Escrever na língua de uma praça, com as proibições** | o kit de execução de Mafra |
 | **Extrair pauta do autocomplete** | *"é normal ficar 7 anos de aparelho?"* |
 
 Essa lista é o argumento de venda mais honesto do projeto: **não estamos
@@ -148,7 +148,7 @@ verificável na série — não uma paráfrase.
   "afirmacao": "O gargalo está entre o interesse e a agenda, não no fechamento.",
   "confianca": "alta",
   "evidencias": [
-    {"tipo":"funil","praca":"riomafra","campo":"agendamento_pct","valor":0.059,
+    {"tipo":"funil","praca":"mafra","campo":"agendamento_pct","valor":0.059,
      "n":5050,"snapshot":"2026-07-15","fonte":"funil.jsonl"},
     {"tipo":"regua","campo":"agendamento_meta","valor":0.40},
     {"tipo":"funil","campo":"fechamento_pct","valor":0.748,"comparado_a":0.80}
@@ -198,7 +198,7 @@ Norte, Centro-Oeste, capital, nem unidade recém-aberta. Nenhuma é doutrina.
 
 **E já existe uma derrubada** — a mais valiosa do projeto:
 
-> *"Dez/jan é pico nacional"* → ❌ **DERRUBADA** por Riomafra.
+> *"Dez/jan é pico nacional"* → ❌ **DERRUBADA** por Mafra.
 > Série de 5 anos: julho índice 34, dez/jan 2,5–7,9. Confirmado pelo BI: 4.120
 > interessados em julho/25 contra 494 e 78.
 
@@ -225,7 +225,7 @@ Entrada: peça nacional. Saída, por praça:
 | Londrina | ⚠️ risco | preço baixo levanta **suspeita**; a alavanca é confiança + preço justo |
 | Prudente | 🟡 adaptar | a alavanca é **clareza**, não desconto |
 | Feira | 🟢 funciona | preço é **orgulho** — mas tem que falar como Feira |
-| Riomafra | 🔴 conflito | "última chance" queima no radar antivigarista da colônia |
+| Mafra | 🔴 conflito | "última chance" queima no radar antivigarista da colônia |
 
 **Isto é real hoje.** As proibições de tom estão documentadas praça a praça nos
 quatro estudos. É consulta a uma tabela + geração — não previsão.
@@ -238,7 +238,7 @@ não o do franqueado. Custo político zero.
 Antes de qualquer peça sair, passa por seis checagens:
 
 1. Usa léxico proibido da praça? *(axé litorâneo em Feira, gíria gaúcha em
-   Riomafra)*
+   Mafra)*
 2. Promete resultado clínico? *(compliance CFO)*
 3. Tem antes/depois sem CRO e consentimento?
 4. Expõe número interno em peça pública?
@@ -279,7 +279,7 @@ pequena, com unidade líder em nota e velocity travada, ligar a máquina de
 reviews levou X para Y em 90 dias."* Isso é o que se vende para a unidade 341.
 
 **Primeiro registro possível: meados de outubro/2026**, o review de 90 dias de
-Riomafra.
+Mafra.
 
 ---
 
@@ -289,7 +289,7 @@ Perguntas que o sistema responde **por consulta** (sem IA): qual unidade tem a
 pior velocity · quem está anunciando em Feira · quantos reviews sem resposta ·
 qual praça está no pico.
 
-Perguntas que precisam de IA (leitura, não cálculo): *por que* Riomafra está
+Perguntas que precisam de IA (leitura, não cálculo): *por que* Mafra está
 perdendo pacientes · o que o playbook do concorrente tem que a gente não tem ·
 essa campanha nacional desce bem em Prudente · o que mudou desde a última coleta
 e o que isso significa.

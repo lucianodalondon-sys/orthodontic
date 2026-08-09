@@ -1,25 +1,25 @@
 {
-  "praca_id": "riomafra",
+  "praca_id": "mafra",
   "corte": "2026-08-09",
-  "rotulo": "SC · Mafra + PR · Rio Negro",
+  "rotulo": "SC · Mafra",
   "uf": [
-    "PR",
-    "SC"
+    "SC",
+    "PR"
   ],
   "cidades": [
     "SC · Mafra",
     "PR · Rio Negro"
   ],
   "identidade": {
-    "praca_id": "riomafra",
-    "nome": "Riomafra",
+    "praca_id": "mafra",
+    "nome": "Mafra",
     "cidades": [
       "Mafra/SC",
       "Rio Negro/PR"
     ],
     "uf": [
-      "PR",
-      "SC"
+      "SC",
+      "PR"
     ],
     "populacao": 87000,
     "renda_mediana_pessoa_mes": 1333,
@@ -30,7 +30,7 @@
     "domicilios": 31000,
     "nota_geografia": "A praça é uma colônia partida pela divisa dos estados. praca_id != municipio.",
     "alerta_coleta": "Existe Mafra em PORTUGAL. Filtrar tudo por SC/Brasil. Descartar e logar qualquer resultado sem place_id da tabela.",
-    "rotulo": "SC · Mafra + PR · Rio Negro",
+    "rotulo": "SC · Mafra",
     "cidades_rotulo": [
       "SC · Mafra",
       "PR · Rio Negro"
@@ -118,6 +118,19 @@
           "alvo_30_45": 7015
         }
       }
+    ],
+    "cidade_sede": "SC · Mafra",
+    "vizinhas_medidas": [
+      {
+        "rotulo": "PR · Rio Negro",
+        "por_que": "cidade conurbada com Mafra, do outro lado do rio; os concorrentes de lá disputam o mesmo paciente",
+        "concorrentes_medidos": [
+          "OdontoCompany Rio Negro",
+          "Odontoimagem Rio Negro"
+        ],
+        "populacao_somada_no_estudo": true,
+        "se_abrir_unidade_la": "vira praça própria (praca_id rio_negro); esta praça não muda"
+      }
     ]
   },
   "eyebrow": "Praça · piloto aplicado · única com dado interno",
@@ -128,7 +141,7 @@
   "dna": [
     {
       "l": "A língua",
-      "t": "O falar do planalto — “piá”, chimarrão, inverno de verdade. E dizer <b>Riomafra</b>: a praça é uma colônia partida ao meio pela divisa, com ônibus urbano cruzando a ponte."
+      "t": "O falar do planalto — “piá”, chimarrão, inverno de verdade. E dizer <b>Mafra</b>: a praça é uma colônia partida ao meio pela divisa, com ônibus urbano cruzando a ponte."
     },
     {
       "l": "Temperamento",
@@ -415,7 +428,7 @@
     {
       "tema": "atendimento",
       "snapshot_date": "2026-08-09",
-      "praca_id": "riomafra",
+      "praca_id": "mafra",
       "pct": 0.7205,
       "n": 991,
       "base": "reviews_com_texto",
@@ -426,7 +439,7 @@
     {
       "tema": "qualidade_resultado",
       "snapshot_date": "2026-08-09",
-      "praca_id": "riomafra",
+      "praca_id": "mafra",
       "pct": 0.555,
       "n": 991,
       "base": "reviews_com_texto",
@@ -437,7 +450,7 @@
     {
       "tema": "recomendacao",
       "snapshot_date": "2026-07-15",
-      "praca_id": "riomafra",
+      "praca_id": "mafra",
       "pct": 0.3,
       "n": 224,
       "base": "reviews_com_texto",
@@ -446,7 +459,7 @@
     {
       "tema": "autoestima",
       "snapshot_date": "2026-07-15",
-      "praca_id": "riomafra",
+      "praca_id": "mafra",
       "pct": 0.12,
       "n": 224,
       "base": "reviews_com_texto",
@@ -455,7 +468,7 @@
     {
       "tema": "preco_custo",
       "snapshot_date": "2026-08-09",
-      "praca_id": "riomafra",
+      "praca_id": "mafra",
       "pct": 0.0303,
       "n": 991,
       "base": "reviews_com_texto",
@@ -466,7 +479,7 @@
     {
       "tema": "agenda_espera",
       "snapshot_date": "2026-08-09",
-      "praca_id": "riomafra",
+      "praca_id": "mafra",
       "pct": 0.0222,
       "n": 991,
       "base": "reviews_com_texto",
@@ -477,7 +490,7 @@
     {
       "tema": "comunicacao_resposta",
       "snapshot_date": "2026-08-09",
-      "praca_id": "riomafra",
+      "praca_id": "mafra",
       "pct": 0.0151,
       "n": 991,
       "base": "reviews_com_texto",
@@ -488,7 +501,7 @@
     {
       "tema": "confianca_medo",
       "snapshot_date": "2026-08-09",
-      "praca_id": "riomafra",
+      "praca_id": "mafra",
       "pct": 0.0424,
       "n": 991,
       "base": "reviews_com_texto",
@@ -499,7 +512,7 @@
     {
       "tema": "contrato_burocracia",
       "snapshot_date": "2026-08-09",
-      "praca_id": "riomafra",
+      "praca_id": "mafra",
       "pct": 0.002,
       "n": 991,
       "base": "reviews_com_texto",
@@ -510,7 +523,7 @@
     {
       "tema": "pessoas_nominais",
       "snapshot_date": "2026-08-09",
-      "praca_id": "riomafra",
+      "praca_id": "mafra",
       "pct": 0.0343,
       "n": 991,
       "base": "reviews_com_texto",
@@ -521,7 +534,7 @@
     {
       "tema": "localizacao_acesso",
       "snapshot_date": "2026-08-09",
-      "praca_id": "riomafra",
+      "praca_id": "mafra",
       "pct": 0.0323,
       "n": 991,
       "base": "reviews_com_texto",
@@ -532,7 +545,7 @@
     {
       "tema": "recomendacao_lealdade",
       "snapshot_date": "2026-08-09",
-      "praca_id": "riomafra",
+      "praca_id": "mafra",
       "pct": 0.333,
       "n": 991,
       "base": "reviews_com_texto",
@@ -543,7 +556,7 @@
     {
       "tema": "dor_medo_dentista",
       "snapshot_date": "2026-08-09",
-      "praca_id": "riomafra",
+      "praca_id": "mafra",
       "pct": 0.0484,
       "n": 991,
       "base": "reviews_com_texto",
@@ -554,7 +567,7 @@
     {
       "tema": "resultado_autoestima",
       "snapshot_date": "2026-08-09",
-      "praca_id": "riomafra",
+      "praca_id": "mafra",
       "pct": 0.1332,
       "n": 991,
       "base": "reviews_com_texto",
@@ -565,7 +578,7 @@
     {
       "tema": "explicacao_clareza",
       "snapshot_date": "2026-08-09",
-      "praca_id": "riomafra",
+      "praca_id": "mafra",
       "pct": 0.0414,
       "n": 991,
       "base": "reviews_com_texto",
@@ -576,7 +589,7 @@
     {
       "tema": "aparelho_tratamento",
       "snapshot_date": "2026-08-09",
-      "praca_id": "riomafra",
+      "praca_id": "mafra",
       "pct": 0.0151,
       "n": 991,
       "base": "reviews_com_texto",
@@ -587,7 +600,7 @@
     {
       "tema": "familia_filhos",
       "snapshot_date": "2026-08-09",
-      "praca_id": "riomafra",
+      "praca_id": "mafra",
       "pct": 0.0838,
       "n": 991,
       "base": "reviews_com_texto",
@@ -598,7 +611,7 @@
     {
       "tema": "tempo_relacao",
       "snapshot_date": "2026-08-09",
-      "praca_id": "riomafra",
+      "praca_id": "mafra",
       "pct": 0.0252,
       "n": 991,
       "base": "reviews_com_texto",

@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-08-09T22:23:32",
+  "gerado_em": "2026-08-09T22:29:45",
   "gerado_de": "dados/serie + dados/conteudo + dados/identidade",
   "corte": "2026-08-09",
   "taxonomia_versao": "1.1",
@@ -75,6 +75,24 @@
       ]
     },
     {
+      "praca_id": "mafra",
+      "nome": "Mafra",
+      "rotulo": "SC · Mafra",
+      "uf": [
+        "SC",
+        "PR"
+      ],
+      "cidades": [
+        "SC · Mafra",
+        "PR · Rio Negro"
+      ],
+      "tem": [
+        "praca",
+        "captacao",
+        "plano"
+      ]
+    },
+    {
       "praca_id": "palmas",
       "nome": "Palmas",
       "rotulo": "TO · Palmas",
@@ -105,24 +123,6 @@
         "captacao",
         "plano"
       ]
-    },
-    {
-      "praca_id": "riomafra",
-      "nome": "Riomafra",
-      "rotulo": "SC · Mafra + PR · Rio Negro",
-      "uf": [
-        "PR",
-        "SC"
-      ],
-      "cidades": [
-        "SC · Mafra",
-        "PR · Rio Negro"
-      ],
-      "tem": [
-        "praca",
-        "captacao",
-        "plano"
-      ]
     }
   ],
   "arquivos": {
@@ -140,9 +140,9 @@
       "cuiaba",
       "feira",
       "londrina",
+      "mafra",
       "palmas",
-      "prudente",
-      "riomafra"
+      "prudente"
     ],
     "captacao": [
       "contagem",
@@ -152,21 +152,21 @@
       "juazeiro_do_norte",
       "londrina",
       "macapa",
+      "mafra",
       "maraba",
       "palmas",
       "parauapebas",
       "prudente",
-      "rio_branco",
-      "riomafra"
+      "rio_branco"
     ],
     "planos": [
       "contagem",
       "cuiaba",
       "feira",
       "londrina",
+      "mafra",
       "palmas",
-      "prudente",
-      "riomafra"
+      "prudente"
     ],
     "oportunidade": [
       "imperatriz",
@@ -186,12 +186,12 @@
     "captacao/juazeiro_do_norte",
     "captacao/londrina",
     "captacao/macapa",
+    "captacao/mafra",
     "captacao/maraba",
     "captacao/palmas",
     "captacao/parauapebas",
     "captacao/prudente",
     "captacao/rio_branco",
-    "captacao/riomafra",
     "corretor",
     "evidencias",
     "franqueadora",
@@ -205,16 +205,16 @@
     "planos/cuiaba",
     "planos/feira",
     "planos/londrina",
+    "planos/mafra",
     "planos/palmas",
     "planos/prudente",
-    "planos/riomafra",
     "pracas/contagem",
     "pracas/cuiaba",
     "pracas/feira",
     "pracas/londrina",
+    "pracas/mafra",
     "pracas/palmas",
     "pracas/prudente",
-    "pracas/riomafra",
     "radar",
     "rede"
   ],

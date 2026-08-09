@@ -20,7 +20,7 @@ import datetime as dt
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 ESTADO = RAIZ/"dados"/"serie"/"_ciclo.json"
 LOG = RAIZ/"dados"/"serie"/"_ciclo.log"
-PRACAS = ["riomafra", "londrina", "feira", "prudente"]
+PRACAS = ["mafra", "londrina", "feira", "prudente"]
 DIAS = {"semanal": 7, "quinzenal": 14, "mensal": 30, "trimestral": 90, "anual": 365}
 
 # ---------------------------------------------------------------- catálogo

@@ -6,13 +6,13 @@
 
 ## 1 · A TESE, EM UMA FRASE
 
-**A rede sabe o que 340 unidades registraram no Conecta; não sabe o que 340 praças estão fazendo com a marca — e o piloto de Riomafra provou que é exatamente no vão entre as duas coisas que mora o ativo mais caro e menos colhido do negócio: interessados que a rede já pagou para gerar e que evaporam antes da agenda.**
+**A rede sabe o que 340 unidades registraram no Conecta; não sabe o que 340 praças estão fazendo com a marca — e o piloto de Mafra provou que é exatamente no vão entre as duas coisas que mora o ativo mais caro e menos colhido do negócio: interessados que a rede já pagou para gerar e que evaporam antes da agenda.**
 
 O portal é a máquina que fecha esse vão em escala: coleta de fora todo mês por centavos de dólar por praça, cruza com o Conecta, e responde uma pergunta de milhões que hoje **ninguém na rede consegue formular com número** — *quais unidades vazam, em que estágio, quanto vale consertar cada uma, e em que ordem o consultor deve ir.*
 
 ### O número que vende o projeto
 
-Riomafra, funil de 12 meses, dado do BI da própria rede:
+Mafra, funil de 12 meses, dado do BI da própria rede:
 
 | Estágio | Real | A régua |
 |---|---|---|
@@ -126,7 +126,7 @@ Não compra dezoito módulos. Compra: **F1 · F2 · F3 · A2 · A3 · D1 · D4**
 ### FUNDAÇÃO (sem tela, sem a qual nada existe)
 
 **F1 · CADASTRO DE PRAÇAS — o mapa real da rede**
-Resolve a identidade das 340: CNPJ ↔ Google Place ID ↔ handle do Instagram ↔ Page ID do Meta ↔ CEP e raio de captação ↔ safra ↔ consultor ↔ vencimento de contrato. E define a **praça**, não o município do CNPJ: **Riomafra é Mafra + Rio Negro** (duas UFs, dois calendários escolares); **Londrina tem uma Zona Norte de 108 mil habitantes sem unidade dentro**.
+Resolve a identidade das 340: CNPJ ↔ Google Place ID ↔ handle do Instagram ↔ Page ID do Meta ↔ CEP e raio de captação ↔ safra ↔ consultor ↔ vencimento de contrato. E define a **praça**, não o município do CNPJ: **Mafra é Mafra + Rio Negro** (duas UFs, dois calendários escolares); **Londrina tem uma Zona Norte de 108 mil habitantes sem unidade dentro**.
 *Dado:* cadastro da rede + Google Places + registro público de empresas + Censo/SIDRA. *Decisão:* qual é o **peer group** de cada unidade (região × porte de praça × safra × posição no placar). Sem F1, "média da rede" é média de coisas incomparáveis, e a fila do consultor vira ranking de tamanho de cidade.
 
 **F2 · O COLETOR — escuta pública contínua**
@@ -150,7 +150,7 @@ A franqueadora está comprando **um sensor em cada praça**. O único cabo que c
 *Decisão:* entrar na mídia, trocar criativo, defender a especialidade. **É o que faz o franqueado abrir sem ninguém pedir — e é o único módulo pelo qual ele pagaria do próprio bolso.**
 
 **A3 · O ATLAS DA LÍNGUA + A FÁBRICA DE PEÇAS**
-Por praça: léxico permitido, **léxico proibido**, personas com as citações reais que as sustentam, alavanca correta (preço-orgulho em Feira · clareza em Prudente · confiança em Londrina · **palavra cumprida** em Riomafra), joia local, inimigo, mapa da atenção com **forma de compra** ("o rádio da praça se compra num telefonema; um balcão vende 3 das 4 frequências"). Em cima disso: resposta a review, script de WhatsApp, variações dos **4 formatos fixos**, spot de rádio — com as proibições embutidas como **trava**, não como recomendação.
+Por praça: léxico permitido, **léxico proibido**, personas com as citações reais que as sustentam, alavanca correta (preço-orgulho em Feira · clareza em Prudente · confiança em Londrina · **palavra cumprida** em Mafra), joia local, inimigo, mapa da atenção com **forma de compra** ("o rádio da praça se compra num telefonema; um balcão vende 3 das 4 frequências"). Em cima disso: resposta a review, script de WhatsApp, variações dos **4 formatos fixos**, spot de rádio — com as proibições embutidas como **trava**, não como recomendação.
 *Por que atlas e não peça pronta:* peça pronta o franqueado adapta mal ou ignora; **mapa do próprio público ele usa**. Saída obrigatória também em PDF de 2 páginas — ele precisa de algo para **mostrar** (à equipe, à rádio, ao parceiro do futsal).
 
 **A4 · A MÁQUINA DE PROVA SOCIAL**
@@ -159,7 +159,7 @@ Fila diária de quem pedir avaliação, com **prioridade máxima para tratamento
 
 **A5 · A LINHA DE FRENTE — o módulo dos 6%, na versão que existe**
 Mede o estágio quebrado. Duas fontes, em ordem de realismo:
-- **Cliente-oculto instrumentado (o principal, hoje):** 3 mensagens em horários aleatórios por semana para uma amostra rotativa de unidades. Mede **tempo de primeira resposta** e taxa de abandono **sem WhatsApp API, sem consentimento de gravação e sem tocar no sistema de ninguém**. O roteiro já existe, com a pergunta-armadilha *"e se meu filho for estudar fora, dá problema?"* — e **nunca foi rodado**. Rodar em Riomafra antes de qualquer venda de plataforma é a maior lacuna de credibilidade do piloto e custa quase nada.
+- **Cliente-oculto instrumentado (o principal, hoje):** 3 mensagens em horários aleatórios por semana para uma amostra rotativa de unidades. Mede **tempo de primeira resposta** e taxa de abandono **sem WhatsApp API, sem consentimento de gravação e sem tocar no sistema de ninguém**. O roteiro já existe, com a pergunta-armadilha *"e se meu filho for estudar fora, dá problema?"* — e **nunca foi rodado**. Rodar em Mafra antes de qualquer venda de plataforma é a maior lacuna de credibilidade do piloto e custa quase nada.
 - **TMPR automático (onde houver inbox de provedor):** a recepção de clínica pequena usa o app do WhatsApp Business no celular, não a Cloud API. Migrar 340 números é projeto de operação, não integração de dados. **Portanto o portal não promete isso em escala** — promete onde já houver, e cliente-oculto no resto.
 
 **A6 · O ESPELHO — benchmark de não-culpa**
@@ -191,12 +191,12 @@ E então o registro que os três rascunhos anteriores trataram como higiene e qu
 
 **D3 · CARTEIRA, SAFRA E PREVISIBILIDADE DE SELL-OUT** — curva de retenção por safra de contrato (% pagando no m3/m6/m12/m24) por unidade e por coorte; projeção de sell-out de 12 meses a partir das safras vivas, com intervalo; e o efeito de +10 pontos de retenção no m6.
 **Validação obrigatória antes de qualquer projeção:** separar **abandono × inadimplência × quitação antecipada**. Hoje o mix é desconhecido e a curva sozinha superestima o problema.
-*Decisão:* previsibilidade de receita recorrente para o conselho — a métrica que a tese de PE precisa e que hoje sai por estimativa. **Este módulo sobe na prioridade em relação ao que qualquer versão anterior deste projeto propôs, porque numa praça finita (~7.700 jovens de 9-15 em Riomafra; cada 1% = ~77 pacientes) reter vale mais que adquirir.**
+*Decisão:* previsibilidade de receita recorrente para o conselho — a métrica que a tese de PE precisa e que hoje sai por estimativa. **Este módulo sobe na prioridade em relação ao que qualquer versão anterior deste projeto propôs, porque numa praça finita (~7.700 jovens de 9-15 em Mafra; cada 1% = ~77 pacientes) reter vale mais que adquirir.**
 
 **D4 · O PASSIVO DE MARCA** — nota, volume, **velocidade de avaliações normalizada por idade da unidade**, % de reviews respondidos, e o **gap entre a melhor e a pior unidade**: hoje **4,9 × 3,5 dentro da mesma cidade**. Cada review negativo classificado por ferida (espera · remarcação · contrato/financeiro · pós-venda · comunicação) e ligado ao estágio de funil correspondente em D2.
 *Dado:* 100% público, 100% disponível hoje. **É o módulo que prova o portal antes de qualquer conversa de TI.**
 
-**D5 · TEMPORADA, VERBA E A DESCIDA DO KIT** — a curva de busca **por UF** (Trends não tem granularidade confiável para malha urbana de 87 mil habitantes — isso está declarado na tela) sobreposta ao calendário de cada rede estadual de ensino e ao calendário cultural. Emite a janela por praça com data: em Riomafra, **13/07 a 02/08, e o criativo troca de margem no dia 23**. Mais a auditoria do fundo: quantas unidades publicaram o formato do mês, quantos criativos locais carregam o jingle (hoje **1 em 34**), mediana de engajamento por palco.
+**D5 · TEMPORADA, VERBA E A DESCIDA DO KIT** — a curva de busca **por UF** (Trends não tem granularidade confiável para malha urbana de 87 mil habitantes — isso está declarado na tela) sobreposta ao calendário de cada rede estadual de ensino e ao calendário cultural. Emite a janela por praça com data: em Mafra, **13/07 a 02/08, e o criativo troca de margem no dia 23**. Mais a auditoria do fundo: quantas unidades publicaram o formato do mês, quantos criativos locais carregam o jingle (hoje **1 em 34**), mediana de engajamento por palco.
 *Decisão:* impedir que uma planilha nacional compre o mês errado, e dar ao fundo de propaganda a prestação de contas que oito anos de embaixador nunca tiveram.
 
 **D6 · PADRÃO-OURO E A FRONTEIRA CONSTANTE × VARIÁVEL** — dentro de cada peer group, quem está no topo por ponteiro e **o que ele faz de diferente**, com dado observável (TMPR, reviews pedidos/mês, % de posts com rosto e nome, criativos sempre-ativos, % de reviews respondidos em 48h). Cada prática vira item candidato ao manual, com a unidade-fonte e a evidência. E o ledger da doutrina: cada constante com **status (hipótese → candidata → doutrina → DERRUBADA)**, placar por praça com N e data, e a **proibição associada** a cada variável.
@@ -247,11 +247,11 @@ A arquitetura correta, e a que este projeto adota:
 
 ### Detecção de anomalia — estatística para detectar, IA para explicar
 
-A **detecção não é LLM**: taxa esperada de reviews/mês modelada contra o próprio histórico e o peer group; nota como média móvel com intervalo; anúncios contra a janela de temporada da praça. **Por que não limiar fixo:** 15 avaliações/mês é meta ambiciosa em Riomafra e é fracasso numa praça de 600 mil. Limiar único gera 340 alarmes falsos e mata o produto na segunda semana. **A explicação é IA:** o agente lê as evidências do mês e escreve o alerta em três frases, com os links.
+A **detecção não é LLM**: taxa esperada de reviews/mês modelada contra o próprio histórico e o peer group; nota como média móvel com intervalo; anúncios contra a janela de temporada da praça. **Por que não limiar fixo:** 15 avaliações/mês é meta ambiciosa em Mafra e é fracasso numa praça de 600 mil. Limiar único gera 340 alarmes falsos e mata o produto na segunda semana. **A explicação é IA:** o agente lê as evidências do mês e escreve o alerta em três frases, com os links.
 
 ### Os dois linters — a diferença entre IA brinquedo e IA produto
 
-- **Linter de tom:** classificador que **bloqueia antes de publicar**. Riomafra: hype, "última chance", urgência de liquidação, gíria gaúcha, estética de Oktoberfest. Feira: axé litorâneo de vitrine. Londrina: urgência de liquidação. Prudente: corporativês.
+- **Linter de tom:** classificador que **bloqueia antes de publicar**. Mafra: hype, "última chance", urgência de liquidação, gíria gaúcha, estética de Oktoberfest. Feira: axé litorâneo de vitrine. Londrina: urgência de liquidação. Prudente: corporativês.
 - **Linter de claim:** todo superlativo e todo dado factual precisam de fonte no portal ou de item marcado no checklist de validação. *"A mais bem avaliada da cidade"* fica bloqueado até o claim ser validado; *"casal de ortodontistas"* fica bloqueado até o CRO ser confirmado. **O checklist do KIT-MAFRA já é um linter escrito à mão. O portal apenas o executa.**
 - **O log de rejeição dos dois linters** — toda peça bloqueada e o motivo, por praça — **é um ativo**: um conjunto de treino que só existe para quem operou de verdade e que nenhum concorrente reconstitui.
 
@@ -427,7 +427,7 @@ Havia uma incoerência a ser corrigida: prometer que "o portal não ingere dado 
 ## 11 · ROADMAP — cada fase tem uma trava, não uma meta
 
 ### FASE 0 · O PILOTO VIRA PRODUTO E O DENOMINADOR FECHA — 45 dias
-**Escopo:** ingerir os corpora das 6 pesquisas; Mafra ao vivo com o Bloco A recoletando sozinho; Londrina, Prudente e Feira com baseline congelado retroativo; F1–F3, A2, D4 e a página de método de pé. **Rodar o cliente-oculto de Riomafra pela primeira vez.** Pedir o arquivo nº 1 da escada.
+**Escopo:** ingerir os corpora das 6 pesquisas; Mafra ao vivo com o Bloco A recoletando sozinho; Londrina, Prudente e Feira com baseline congelado retroativo; F1–F3, A2, D4 e a página de método de pé. **Rodar o cliente-oculto de Mafra pela primeira vez.** Pedir o arquivo nº 1 da escada.
 **Critério de passagem (três travas, todas obrigatórias):**
 1. O número gerado pelo pipeline automático **bate com o número publicado** (reconciliação de "atendimento = 69%, N=224").
 2. **A reconciliação do funil de Mafra está fechada** — sabemos exatamente o que são os 5.050 e o que são os 109, e como isso se relaciona com os ~28 contratos pagos/mês.
@@ -470,11 +470,11 @@ Um projeto que publica o próprio custo com precisão e o preço com zero não �
 
 **3 · Programa — assinatura por unidade em intervenção.** Tudo do Radar + atlas da língua + fábrica de peças + briefing do consultor + cliente-oculto + acompanhamento e review de 90 dias.
 → **R$ 650–950/unidade/mês** · 40 unidades = **~R$ 32 mil/mês**.
-*A âncora:* precisa de **+3 contratos/mês** naquela unidade para se pagar. O cenário conservador de Riomafra entrega +5,5/mês; o central, +12.
+*A âncora:* precisa de **+3 contratos/mês** naquela unidade para se pagar. O cenário conservador de Mafra entrega +5,5/mês; o central, +12.
 
 **4 · Estudo de praça profundo, sob demanda.** O que a London já entregou seis vezes, agora com metade do trabalho pré-executado e **priorizado pelo portal**: a fila diz quais praças pagam pelo próprio estudo, com o prêmio calculado.
 → **R$ 28–45 mil por praça** · 3 a 5 praças/mês.
-*Ponto importante:* a automação **não derruba o preço do estudo** — ela multiplica quantas praças cabem no mês. O que o portal industrializa é a camada mensurável; a leitura que descobriu Riomafra, a joia do casal e o rádio que se compra num telefonema continua sendo humana, e continua sendo o que se cobra caro.
+*Ponto importante:* a automação **não derruba o preço do estudo** — ela multiplica quantas praças cabem no mês. O que o portal industrializa é a camada mensurável; a leitura que descobriu Mafra, a joia do casal e o rádio que se compra num telefonema continua sendo humana, e continua sendo o que se cobra caro.
 
 **5 · Produção e intervenção.** As peças que saem do portal viram vídeo, spot e campanha. **Cobrado por pacote, e com a declaração de conflito na página 1 do contrato** (seção 14).
 
@@ -499,7 +499,7 @@ Um projeto que publica o próprio custo com precisão e o preço com zero não �
 - **R$ 2,3 milhões/ano ÷ 340 unidades = R$ 6.700/unidade/ano.**
 - **1% de same store sobre o sell-out da rede** *(referência pública levantada no dossiê: R$ 525 mi em 2024 — confirmar antes de virar slide)* **= R$ 5,25 milhões.** O portal se paga em meio ponto de same store.
 - A **linha Radar sozinha** (R$ 612 mil/ano) consome ~6% de um fundo de marketing de 2% — e é a única linha do fundo que **mede** as outras. O conjunto completo, 15–25% do fundo, com o restante do custo distribuído entre franqueadora e unidades em programa.
-- **O que está do outro lado:** nas unidades que repetirem o padrão de Riomafra, o cenário conservador vale +66 contratos/ano cada. Trinta unidades corrigidas = ~2.000 contratos incrementais/ano, sem ponto novo, sem CAPEX, sem franqueado novo.
+- **O que está do outro lado:** nas unidades que repetirem o padrão de Mafra, o cenário conservador vale +66 contratos/ano cada. Trinta unidades corrigidas = ~2.000 contratos incrementais/ano, sem ponto novo, sem CAPEX, sem franqueado novo.
 
 ---
 
@@ -532,7 +532,7 @@ Esta seção existe porque um comprador de private equity vai testar cada afirma
 | Alternativa | O que ela faz melhor | O que ela não faz |
 |---|---|---|
 | **Time interno de dados (SMZTO)** | SQL sobre o Conecta, mais barato no ano 2 | Não pode ser o operador neutro do sensor da ponta (§7); não tem o corpus, o gold set, o ledger de doutrina nem a camada criativa; e não consegue fazer o franqueado abrir a ferramenta de quem assina a renovação dele |
-| **Consultoria grande** | escala de gente, marca para o board | Entrega recomendação e para. Não escreve na língua de Riomafra, não vira spot de rádio, e **não pode publicar o próprio buraco de cobertura sem se desqualificar comercialmente** |
+| **Consultoria grande** | escala de gente, marca para o board | Entrega recomendação e para. Não escreve na língua de Mafra, não vira spot de rádio, e **não pode publicar o próprio buraco de cobertura sem se desqualificar comercialmente** |
 | **Agência de mídia** | tráfego | Não faz escuta comparável entre praças nem doutrina de rede |
 | **SaaS de inteligência de mercado** | dashboard | Não conhece a praça, não classifica em português de quatro regiões, não gera peça |
 | **London** | integração vertical: **evidência → decisão → peça → medição**, e o corpus/método acumulado em 6 estudos | não é fábrica de software (por isso a engenharia é contratada e declarada) |
@@ -574,7 +574,7 @@ Não pedimos aprovação de um projeto de 18 meses. Pedimos cinco coisas que cus
 1. **Um CSV.** A tabela de funil (interessados → agendados → comparecidos → fechados → pagos) das 340 unidades, de **um mês só**. Se sai, o mapa do vazamento existe em uma semana. Se não sai, sabemos no dia 5.
 2. **A reconciliação do denominador de Mafra**, com uma pessoa do BI numa call de uma hora — o que são os 5.050, o que são os 109, e como se relacionam com os ~28 contratos pagos/mês.
 3. **Acesso de parceiro ao Google Business Profile** das unidades. É dado da própria rede, e destrava metade do módulo de reputação por via oficial.
-4. **Autorização para rodar o cliente-oculto em Riomafra** — o roteiro está pronto desde julho, com a pergunta-armadilha, e nunca foi aplicado. É a maior lacuna de credibilidade do piloto e custa quase nada.
+4. **Autorização para rodar o cliente-oculto em Mafra** — o roteiro está pronto desde julho, com a pergunta-armadilha, e nunca foi aplicado. É a maior lacuna de credibilidade do piloto e custa quase nada.
 5. **Um dono nomeado dentro da franqueadora** e um consultor de campo designado para validar alertas na Fase 1.
 
 E entregamos, em 45 dias, sem depender de nenhuma integração: **o censo de presença das 340 unidades, com baseline congelado, data de corte publicada, e o gap entre a melhor e a pior unidade da rede medido pela primeira vez na história da marca.**

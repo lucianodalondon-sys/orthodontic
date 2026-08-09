@@ -280,7 +280,7 @@ def pracas_da_rede():
 def ajusta_fortes(fortes, varridas, varridas_ref):
     """Comparar 'clínicas fortes' entre praças varridas com profundidades
     diferentes engana. As praças da base foram varridas com o mesmo método,
-    mas trazem números de clínicas diferentes (87 em Riomafra, 243 em Cuiabá)
+    mas trazem números de clínicas diferentes (87 em Mafra, 243 em Cuiabá)
     porque a cidade tem o que tem. Aqui a conta vira DENSIDADE — fortes por
     cem clínicas varridas — e volta à escala da praça de referência."""
     if not varridas:
@@ -303,8 +303,8 @@ def gemea(perfil, base):
 
     ⚠ E aqui mora a armadilha que já mordeu: **praça com eixo faltando é mais
     fácil de casar.** Quatro das sete praças da base não tinham nada do IBGE, e
-    Juazeiro do Norte (305 mil habitantes) casou com Riomafra (89 mil) porque
-    Riomafra só tinha dois dos seis eixos — média de dois números pequenos é
+    Juazeiro do Norte (305 mil habitantes) casou com Mafra (89 mil) porque
+    Mafra só tinha dois dos seis eixos — média de dois números pequenos é
     menor que média de seis. Agora quem não tem os três eixos obrigatórios
     (habitantes, adultos de 30-45 e volume do líder) sai da disputa com o
     motivo escrito, em vez de vencer por falta de dado."""
@@ -354,7 +354,7 @@ def frase_da_gemea(g, perfil):
     """A frase que o time de expansão leva. Sem ela, os seis eixos são planilha.
 
     E ela muda conforme o que a unidade da gêmea está fazendo. Dizer "tem
-    capacidade de performar como Riomafra" quando a unidade de Riomafra está
+    capacidade de performar como Mafra" quando a unidade de Mafra está
     parada há meses seria vender um número que ninguém está entregando."""
     p = g["perfil"]
     us = [u for u in p["unidades"] if u.get("total")]
@@ -384,7 +384,7 @@ def frase_da_gemea(g, perfil):
 def faixa_das_parecidas(gs, quantas=3):
     """O que as praças parecidas entregam, da pior à melhor.
 
-    Uma gêmea só é um caso. Riomafra está parada e Palmas sustenta há onze
+    Uma gêmea só é um caso. Mafra está parada e Palmas sustenta há onze
     meses — as duas parecem com Juazeiro. Mostrar a faixa evita que a escolha
     do vizinho mais próximo vire a previsão inteira."""
     fora = []
@@ -575,7 +575,7 @@ def dossie(e):
     L += PREENCHER("o raio real da praça",
                    "Até onde vem o paciente? Tem cidade grudada do outro lado de "
                    "rio, divisa ou rodovia? O ônibus urbano sai do município? "
-                   "Riomafra ensinou que duas cidades podem ser uma praça só, e "
+                   "Mafra ensinou que duas cidades podem ser uma praça só, e "
                    "Londrina que uma cidade pode ser duas.")
 
     L += ["---", "", "## 2 · COLETA E MÉTODO", "",

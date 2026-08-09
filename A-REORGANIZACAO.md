@@ -59,7 +59,7 @@ Três travas que evitam alerta falso:
   A data da primeira avaliação separa os dois.
 - **Diferença de nota abaixo de 0,3 não é achado, é arredondamento.** Sem essa
   trava, 4,9 contra mediana 5,0 vira alerta e o consultor perde a viagem.
-- **Leilão vazio não é silêncio.** Riomafra tem *zero* anunciantes na praça
+- **Leilão vazio não é silêncio.** Mafra tem *zero* anunciantes na praça
   inteira. Cobrar campanha lá seria inventar um problema.
 
 ### A fila de hoje

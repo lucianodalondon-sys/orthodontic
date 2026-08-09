@@ -193,7 +193,7 @@ def monta(praca):
               if l.get("papel") == "proprio"}
 
     portas = ultimo(jsonl("portas"), praca)
-    # o filtro de lugar mudou depois de coletar Riomafra, onde 'dentista em
+    # o filtro de lugar mudou depois de coletar Mafra, onde 'dentista em
     # mafra portugal' passou. Aplicar na leitura também evita ter de recoletar
     # só por causa de uma linha de regex.
     ufs = ident.get("uf") or []

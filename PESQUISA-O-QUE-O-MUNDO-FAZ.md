@@ -147,7 +147,7 @@ coletamos:** quanto da reputação da cidade pertence à rede.
 |---:|---:|---:|---|
 | **7,9%** | 1.371 | 17.338 | MT · Cuiabá |
 | 7,8% | 592 | 7.596 | SP · Presidente Prudente |
-| 5,7% | 155 | 2.725 | SC · Mafra + PR · Rio Negro |
+| 5,7% | 155 | 2.725 | SC · Mafra |
 | 4,8% | 304 | 6.289 | TO · Palmas |
 | 4,7% | 642 | 13.683 | PR · Londrina |
 | 3,5% | 855 | 24.546 | MG · Contagem |

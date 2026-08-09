@@ -107,7 +107,7 @@ E dentro dele:
 ```
 DADOS.manifest              corte, cobertura, taxonomia, índice de telas
 DADOS.rede                  sinais + linhas das praças
-DADOS.pracas.riomafra       ficha completa de uma praça
+DADOS.pracas.mafra       ficha completa de uma praça
 DADOS.achados               constantes, variáveis, a derrubada
 DADOS.corretor              vereditos por praça + a descida nacional
 DADOS.evidencias            o conteúdo da gaveta, por chave

@@ -14,7 +14,7 @@ coleta/NOVA-PRACA.md e continua sendo humano — é onde o método ganha ou perd
 
 Uso:
     python3 coleta/descobrir_praca.py --cidade "Bauru/SP"
-    python3 coleta/descobrir_praca.py --cidade "Mafra/SC" --mais "Rio Negro/PR" --id riomafra
+    python3 coleta/descobrir_praca.py --cidade "Mafra/SC" --mais "Rio Negro/PR" --id mafra
     python3 coleta/descobrir_praca.py --cidade "Bauru/SP" --sem-clinicas   # só IBGE, custo zero
 """
 import argparse, json, os, pathlib, re, subprocess, sys, time, unicodedata, urllib.parse
@@ -98,7 +98,7 @@ def idades(mid):
 
     São dois públicos e eles não se parecem: o adolescente de 9-15, que usa o
     aparelho, e o adulto de 30-45, que é o alvo maior e o menos falado. Em
-    Riomafra são ~7.700 contra ~21.000 — foi esse número que mostrou que a
+    Mafra são ~7.700 contra ~21.000 — foi esse número que mostrou que a
     comunicação estava mirando o menor dos dois.
     """
     cods = ",".join(FAIXAS)
@@ -351,7 +351,7 @@ def main():
         print(f"    {i}. {tipo:18s} {oque}")
         print(f"       {como}")
     print("\n  E ANOTE OS QUE NÃO EXISTEM. Canal que falta é território vazio —")
-    print("  quem chegar primeiro fala sozinho. Em Riomafra faltam três.")
+    print("  quem chegar primeiro fala sozinho. Em Mafra faltam três.")
     print(f"{'='*66}\n")
 
 

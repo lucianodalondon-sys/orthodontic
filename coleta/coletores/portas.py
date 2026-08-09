@@ -95,7 +95,7 @@ NAO_E_BAIRRO = {"abertos", "aberto", "avaliados", "avaliado", "rua", "avenida",
 
 
 # Existe Mafra em Portugal, e "dentista em mafra portugal" entrou na coleta de
-# Riomafra. Existe rua Conselheiro Mafra em Joinville. Nome de cidade brasileira
+# Mafra. Existe rua Conselheiro Mafra em Joinville. Nome de cidade brasileira
 # repete e cruza fronteira — é a mesma armadilha que contaminou Cuiabá com
 # Várzea Paulista, e ela volta em toda fonte nova.
 OUTRO_LUGAR = (r"\b(portugal|lisboa|coimbra|braga|espanha|argentina|paraguai|"

@@ -11,7 +11,7 @@
 
 ## O QUE MUDOU EM CADA PRAÇA
 
-### Riomafra — a concorrente do estudo não é a líder
+### Mafra — a concorrente do estudo não é a líder
 
 | | Estudo dizia | Varredura mostra |
 |---|---|---|
@@ -71,7 +71,7 @@ Foi a única praça já montada por varredura. Três OrthoDontic: **3ª, 45ª e 
 
 | Praça | Concorrentes na lista | Clínicas reais | Posição do estudo | Posição real |
 |---|---:|---:|---:|---:|
-| Riomafra | 5 | 87 | 2ª | **7ª** |
+| Mafra | 5 | 87 | 2ª | **7ª** |
 | Feira | 3 | 144 | 2ª | **20ª** |
 | Londrina | 3 | 151 | 1ª | **5ª** |
 | Prudente | 5 | 121 | 2ª | **3ª** |
@@ -129,12 +129,12 @@ Coletamos avaliação com data das 20 clínicas líderes que faltavam. O resulta
 | **Londrina** | Clínica Dentista do Povo | **158,6/mês** | 4,0 | **40×** |
 | **Prudente** | Bongiovanni | **68,8/mês** | 13,2 | 5× |
 | **Cuiabá** | ★ OrthoDontic Centro Norte | **43,8/mês** (12 meses) | — | lidera |
-| **Riomafra** | Instituto Lumière | **43,6/mês** | 0,0 | ∞ |
+| **Mafra** | Instituto Lumière | **43,6/mês** | 0,0 | ∞ |
 | **Feira** | Central do Sorriso | **40,1/mês** | 0,0 | ∞ |
 
 Onde a unidade está, pelo contador do Google:
 
-- **Riomafra: 11ª de 11.** Última.
+- **Mafra: 11ª de 11.** Última.
 - **Feira: 8ª de 9.**
 - **Londrina: matriz 6ª de 10; Centro 8ª.**
 - **Prudente: 4ª de 11** — era a "mais saudável" e está 5× atrás.
@@ -175,7 +175,7 @@ Com a varredura completa, o sinal **inverteu**:
 |---|---:|---:|
 | Feira | −0,27 | **+0,54** |
 | Londrina | −0,62 | **+0,49** |
-| Riomafra | +0,23 | **+0,39** |
+| Mafra | +0,23 | **+0,39** |
 | Prudente | −0,29 | **+0,36** |
 | Cuiabá | −0,19 | −0,19 |
 
@@ -218,7 +218,7 @@ campanha e não sabemos o ritmo".
 | Prudente | 1 |
 
 **E vale para a rede também:** a OrthoDontic Dom Bosco, de Cuiabá, tem 69% das
-avaliações num mês só. Riomafra fez 47 em três meses de 2022 e parou. Feira fez
+avaliações num mês só. Mafra fez 47 em três meses de 2022 e parou. Feira fez
 17 em julho de 2025 e parou. **As unidades sabem fazer campanha de avaliação.
 Elas não sabem sustentar.** Essa é uma frase diferente de "elas não sabem
 fazer", e leva a um plano diferente.
@@ -239,7 +239,7 @@ puxando 600 avaliações de cada uma e olhando mês a mês:
 | Clínica Goya | 41·64·72·86·90·74·47·83·35·**4·2·1·1** | morreu em abril |
 | Bongiovanni (Prudente) | 16·60·42·10·2·0·2·8·**100·98·99·43** | ligou em abril |
 | REDEORTO (Várzea Grande) | quase nada, **105** em março, depois 45·34·22·**3** | campanha que acabou |
-| Instituto Lumière (Riomafra) | 19·5·**71**·14·38·37·46 | irregular |
+| Instituto Lumière (Mafra) | 19·5·**71**·14·38·37·46 | irregular |
 | Clínica Central do Sorriso (Feira) | 41·39·42·38·40·45·42·41·41·51·16·51 | **máquina ligada** |
 
 Em doze meses a Prado faz **23,8/mês**; a OrthoDontic faz **43,8**. O 60,8 era

@@ -9,7 +9,7 @@ share de post com rosto — em vez de impressão de quem olhou o perfil.
 Grava em dados/serie/posts.jsonl (append-only, first_seen/last_seen).
 
 Uso:
-    python3 coleta/coletores/instagram.py --praca riomafra
+    python3 coleta/coletores/instagram.py --praca mafra
     python3 coleta/coletores/instagram.py --todas --posts 15
 """
 import argparse, json, os, pathlib, re, sys, time, urllib.error, urllib.request
@@ -24,7 +24,7 @@ API = "https://api.apify.com/v2"
 # só própria e concorrente direto — os perfis de território ficam para a coleta
 # de vozes, que é outra pergunta e outro custo.
 PERFIS = {
- "riomafra": [("orthodontic.mafra", "proprio", "ortho_mafra"),
+ "mafra": [("orthodontic.mafra", "proprio", "ortho_mafra"),
               ("odontocompanyriomafra", "concorrente", "oc_mafra")],
  "londrina": [("orthodontic.londrinasouzanaves", "proprio", "ortho_souza_naves"),
               ("orthodontic.londrinacentro", "proprio", "ortho_centro_ldn"),

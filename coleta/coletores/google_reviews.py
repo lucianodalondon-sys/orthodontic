@@ -11,11 +11,11 @@ Grava DOIS níveis, conforme dados/CONTRATO.md:
   dados/serie/reviews.jsonl                               append-only, com first_seen
 
 De first_seen sai a VELOCITY de graça — reviews novos por mês, por clínica.
-Era o dado mais forte do estudo de Riomafra e era calculado à mão.
+Era o dado mais forte do estudo de Mafra e era calculado à mão.
 
 Uso:
-    python3 coleta/coletores/google_reviews.py --praca riomafra
-    python3 coleta/coletores/google_reviews.py --praca riomafra --max-reviews 150
+    python3 coleta/coletores/google_reviews.py --praca mafra
+    python3 coleta/coletores/google_reviews.py --praca mafra --max-reviews 150
     python3 coleta/coletores/google_reviews.py --todas --dry-run
 """
 import argparse, json, os, pathlib, sys, time, urllib.error, urllib.request
@@ -30,7 +30,7 @@ API = "https://api.apify.com/v2"
 
 # query por local — o que o actor busca. Sem isso ele acha o lugar errado.
 QUERIES = {
- "riomafra": {
+ "mafra": {
    "ortho_mafra": ("OrthoDontic Mafra SC", ["orthodontic"]),
    "lumiere": ("Instituto Lumière Odontologia Mafra SC", ["lumi"]),
    "oc_mafra": ("OdontoCompany Mafra SC", ["odontocompany"]),

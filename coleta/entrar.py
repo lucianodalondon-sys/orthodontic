@@ -8,7 +8,7 @@ devolve zero, sem canal não há o que escutar. Errar a ordem não dá erro —
 dá praça pela metade, silenciosamente.
 
     python3 coleta/entrar.py --cidade "Ribeirão Preto/SP"
-    python3 coleta/entrar.py --cidade "Mafra/SC" --mais "Rio Negro/PR" --id riomafra
+    python3 coleta/entrar.py --cidade "Mafra/SC" --mais "Rio Negro/PR" --id mafra
     python3 coleta/entrar.py --praca palmas --continuar    # retoma de onde parou
     python3 coleta/entrar.py --cidade "Bauru/SP" --simular # mostra o plano, não gasta
 

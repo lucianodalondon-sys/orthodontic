@@ -1,4 +1,4 @@
-# O seu plano — SC · Mafra + PR · Rio Negro
+# O seu plano — SC · Mafra
 
 **09/08/2026**
 

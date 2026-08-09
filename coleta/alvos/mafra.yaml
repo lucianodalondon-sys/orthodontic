@@ -1,10 +1,10 @@
-# ALVOS DE COLETA — Riomafra
-# Gerado de dados/identidade/riomafra.json + os targets legados.
+# ALVOS DE COLETA — Mafra
+# Gerado de dados/identidade/mafra.json + os targets legados.
 # status: roda | construir | precisa_acesso   ·   chave: null = PENDENTE de descoberta
 # O que cada plataforma responde: coleta/FONTES.md
 
-praca_id: riomafra
-nome: Riomafra
+praca_id: mafra
+nome: Mafra
 cidades:
 - Mafra/SC
 - Rio Negro/PR
@@ -442,61 +442,61 @@ alvos:
   status: construir
   freq: quinzenal
   porque: Tempo até a primeira resposta. Roda na própria E nas concorrentes.
-- name: riomafra_google_ads_transparency
+- name: mafra_google_ads_transparency
   layer: praca
   platform: google_ads_transparency
   status: construir
   freq: semanal
   porque: Quem compra a BUSCA. Toda a análise de mídia era só Meta.
-- name: riomafra_mapa_diff
+- name: mafra_mapa_diff
   layer: praca
   platform: mapa_diff
   status: construir
   freq: mensal
   porque: Clínicas novas no raio desde a última coleta.
-- name: riomafra_cnpj_novo
+- name: mafra_cnpj_novo
   layer: praca
   platform: cnpj_novo
   status: construir
   freq: mensal
   porque: Clínica odontológica registrada na praça — vê o concorrente antes de ele abrir.
-- name: riomafra_vagas
+- name: mafra_vagas
   layer: praca
   platform: vagas
   status: construir
   freq: mensal
   porque: Concorrente contratando = expansão. Nossa vaga repetida de recepção = rotatividade.
-- name: riomafra_cro_registro
+- name: mafra_cro_registro
   layer: praca
   platform: cro_registro
   status: construir
   freq: trimestral
   porque: Quantos ortodontistas na cidade, e em qual clínica.
-- name: riomafra_imprensa_rss
+- name: mafra_imprensa_rss
   layer: praca
   platform: imprensa_rss
   status: construir
   freq: semanal
-  porque: A joia enterrada sai daqui. Em Riomafra saiu.
-- name: riomafra_grupos_facebook
+  porque: A joia enterrada sai daqui. Em Mafra saiu.
+- name: mafra_grupos_facebook
   layer: praca
   platform: grupos_facebook
   status: construir
   freq: mensal
   porque: 'A DECISÃO acontecendo: ''alguém indica ortodontista?''. Só grupo público.'
-- name: riomafra_serp
+- name: mafra_serp
   layer: praca
   platform: serp
   status: roda
   freq: mensal
   porque: Quem aparece quando o paciente procura.
-- name: riomafra_autocomplete
+- name: mafra_autocomplete
   layer: praca
   platform: autocomplete
   status: construir
   freq: mensal
   porque: As dúvidas reais — pauta de conteúdo pronta.
-- name: riomafra_trends
+- name: mafra_trends
   layer: praca
   platform: trends
   status: roda

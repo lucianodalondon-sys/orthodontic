@@ -28,7 +28,7 @@ de fora **sem avisar**.
 | Prudente | 25 | 24 |
 | Londrina | 24 | 23 |
 | Feira | 21 | 20 |
-| Riomafra | 15 | 15 |
+| Mafra | 15 | 15 |
 | Palmas | 14 | 14 |
 | **Total** | **128** | **128** |
 

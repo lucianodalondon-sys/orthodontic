@@ -52,7 +52,7 @@ reais como se fossem tudo.
 **`MG · Contagem`**, nunca `Contagem/MG`.
 
 Vale no título da ficha, no cartão de alerta, no resultado da busca, no filtro
-e na lista. Praça com duas cidades repete: **`SC · Mafra + PR · Rio Negro`**.
+e na lista. Praça com duas cidades repete: **`SC · Mafra`**.
 
 Três motivos:
 

@@ -134,7 +134,7 @@ piores e as melhores, porque é o contraste que ensina. Entrega:
 quem faz o piloto e continua paga R$ 132 mil de implantação, não R$ 210 mil.
 
 **Por que 90 dias e não 30.** Com uma coleta só, tudo é foto. A segunda coleta
-é o produto — e o Riomafra prova: a unidade fez zero avaliação em 23 dias, e
+é o produto — e o Mafra prova: a unidade fez zero avaliação em 23 dias, e
 esse zero só existe porque houve uma primeira medição para comparar.
 
 ### O gatilho comercial

@@ -1,4 +1,4 @@
-# DOSSIÊ — Mafra/SC — Riomafra, o piloto aplicado (único com dados internos do BI)
+# DOSSIÊ — Mafra/SC — Mafra, o piloto aplicado (único com dados internos do BI)
 
 _Extraído dos arquivos-fonte e auditado contra eles. London Creative, julho/2026._
 
@@ -12,7 +12,7 @@ _Extraído dos arquivos-fonte e auditado contra eles. London Creative, julho/202
 - **Unidade:** **OrthoDontic Mafra** (grafada "OrthoDontic" no conteúdo; "Orthodontic" no nome da rede).
 - **Endereço / região:** **Rua Felipe Schmidt, Alto de Mafra** (spot de rádio 4b: *"Rua Felipe Schmidt, Alto de Mafra"*). A memória de projeto registra: *"Corredor odonto = R. Felipe Schmidt (4 clínicas)"*. O Instituto Lumière fica **a 70 metros da porta**, em **F. Schmidt 1204**.
 - **População:** **~87 mil pessoas numa malha urbana contínua** (memória: *"Mafra(SC,55k)+Rio Negro(PR,31k) = UMA colônia de 1829 partida pela divisa pós-Contestado; ~87k hab, mesmo DDD 47"*). A margem paranaense (Rio Negro) é citada no cap. 07 como **~31 mil hab**.
-- **Apelido da cidade:** **"Riomafra"** — *"a mídia local inteira se chama "Riomafra". Falar "Riomafra" é falar de dentro; tratar Rio Negro como outra cidade é o erro do forasteiro."*
+- **Apelido da cidade:** **"Mafra"** — *"a mídia local inteira se chama "Mafra". Falar "Mafra" é falar de dentro; tratar Rio Negro como outra cidade é o erro do forasteiro."*
 - **Papel na rede:** **piloto aplicado e pago**, único com dados internos do BI. Memória: *"PILOTO PAGO (2026-07-15): Paula (decisora OrthoDontic) gostou do material e pediu piloto em MAFRA/SC — "agora é valendo", porta de entrada na rede (~350 unidades)."* No BI Conecta a rede aparece com **340 unidades ativas**; a unidade é classificada como **"Madura", safra 2019**. Camada política: *"A UNIDADE DE MAFRA ESTÁ EM NEGOCIAÇÃO DE RENOVAÇÃO DE CONTRATO de franquia e "precisa virar alguns ponteiros de resultado" — o piloto não é aleatório: é ferramenta da renovação"*. Fecho do estudo: *"Mafra — o piloto — vira o primeiro cérebro vivo da rede: o que funcionar aqui vira aprendizado testável nas outras centenas de unidades."*
 - **Ano de abertura:** **2019** (safra 2019). *"em 2019, os dois decidiram voltar à cidade natal para abrir a clínica."* O estudo fala de **7 anos de casa** ("há 7 anos no mesmo endereço", "7 anos de sorrisos concluídos"); o comentário do YAML sobre o Instagram diz *"A voz da unidade (6 anos, ~2019)"*.
 - **Donos / operadores:** **um casal de ortodontistas mafrenses que voltou para a cidade natal.** A memória de projeto nomeia: *"donos da unidade = CASAL DE ORTODONTISTAS MAFRENSES que voltaram pra cidade natal (Dra. Vanessa STOEBERL Gomes CRO12379/SC especialista + Dr. Luiz Henrique Gomes; Stoeberl = sobrenome da colônia). 2019, 7 anos, FICHA LIMPA no RA, 4,9/155 Google."* Dossiê de história: *"Dra. Vanessa CRO12379/SC especialista ORTO, RT+CNES; Stoeberl = sobrenome bucovino c/ RUAS nas 2 cidades (⚠️ validar parentesco); de 2 p/ 9 especialistas; ⚠️ marido pode ser RT da OrthoDontic RIO NEGRINHO (Luis Henrique de Abreu Gomes CRO8682 endodontia — validar)."* — a grafia do nome do marido diverge entre os dois trechos do mesmo arquivo ("Luiz Henrique Gomes" × "Luis Henrique de Abreu Gomes") e o checklist do kit exige validação: *"O Dr. é ortodontista ou endodontista de registro? (peça A1 cita "casal de ortodontistas" só se confirmado)"*.
@@ -73,7 +73,7 @@ Cabeçalho do arquivo: *"ALVOS — Público de MAFRA/SC + RIO NEGRO/PR (cidades 
 | `dentista_mafra_google` | concorrente | google | "ortodontia aparelho ortodôntico Mafra SC" | **false** | *"descoberta: quem é o gigante local"* |
 | `dentista_rionegro_google` | concorrente | google | "ortodontia aparelho ortodôntico Rio Negro PR" | **false** | — |
 
-**Bloco 2 — TERRITÓRIO / VOZ DO RIOMAFRENSE (IG)** — comentário do bloco: *"Identidade confirmada: a praça se chama "Riomafra" (Mafra+Rio Negro = UMA comunidade). Bio da maior página: "QUEM É DAQUI ACESSA!" — puro endogrupo."*
+**Bloco 2 — TERRITÓRIO / VOZ DO RIOMAFRENSE (IG)** — comentário do bloco: *"Identidade confirmada: a praça se chama "Mafra" (Mafra+Rio Negro = UMA comunidade). Bio da maior página: "QUEM É DAQUI ACESSA!" — puro endogrupo."*
 | name | layer | handle | max_posts / comments_per_post | enabled | papel |
 |---|---|---|---|---|---|
 | `riomaframix_ig` | influencer | `riomaframixoficial` | 12 / 30 | true | *"A MAIOR (53k > população de Mafra)"* |
@@ -92,7 +92,7 @@ Cabeçalho do arquivo: *"ALVOS — Público de MAFRA/SC + RIO NEGRO/PR (cidades 
 |---|---|---|---|---|---|
 | `ortho_mafra_ig` | proprio | `orthodontic.mafra` | 15 / 30 | true | *"A voz da unidade (6 anos, ~2019)"* |
 
-*Nota do arquivo neste ponto:* *"(pendente pós-agentes: IG do gigante local, humor/achadinhos riomafra)"*
+*Nota do arquivo neste ponto:* *"(pendente pós-agentes: IG do gigante local, humor/achadinhos mafra)"*
 
 **Bloco 5 — LOTE 3: playbooks de IG + voz da cidade aprofundada**
 | name | layer | handle | max_posts / comments | enabled | papel |
@@ -182,7 +182,7 @@ E a consequência estratégica: *"a assinatura do líder de volume é exatamente
 *"Mafra (SC) e Rio Negro (PR) nasceram como UMA colônia em 1829 e foram partidas ao meio pela divisa dos estados. Hoje: mesmo DDD, ônibus urbano que cruza a ponte, ~87 mil pessoas numa malha urbana contínua"*. Memória: *"UMA colônia de 1829 partida pela divisa pós-Contestado; ~87k hab, mesmo DDD 47"*.
 
 ### Temperamento
-- **Colônia-mosaico:** *"de alemães-boêmios (bucovinos — Riomafra é a maior colônia bucovina do mundo), poloneses e ucranianos. Sobrenome aqui é identidade: a cidade tem ruas com nomes de famílias da colônia."* Memória: *"colônia mosaico eslavo-germânico (BUCOVINOS raros no mundo, poloneses, ucranianos)"*.
+- **Colônia-mosaico:** *"de alemães-boêmios (bucovinos — Mafra é a maior colônia bucovina do mundo), poloneses e ucranianos. Sobrenome aqui é identidade: a cidade tem ruas com nomes de famílias da colônia."* Memória: *"colônia mosaico eslavo-germânico (BUCOVINOS raros no mundo, poloneses, ucranianos)"*.
 - **Temperamento de colônia:** *"discreto, comunitário, de tradição. Desconfia de promessa grande; respeita trabalho, constância e palavra cumprida. A voz pública da cidade é vigilante e sarcástica com quem decepciona — e calorosa com o que é de família"*.
 - **Comenta pouco em público:** *"cidade comenta POUCO — engajamento baixo é característica da praça"* / *"o silêncio digital daqui é característica, não ausência de opinião."*
 - **Endogrupo declarado:** bio da maior página da região — *"QUEM É DAQUI ACESSA!"* — descrita no YAML como *"puro endogrupo"*.
@@ -191,7 +191,7 @@ E a consequência estratégica: *"a assinatura do líder de volume é exatamente
 - **"piá"** (e a variante coletiva **"piazada"**, usada no kit: *"quem cuida do aparelho da piazada é ortodontista especialista, gente daqui"*; *"o esporte que forma a piazada das duas cidades"*). No léxico de classificação aparece como termo: `"meu piá"`, `pia`.
 - **"vina"** (memória: *"língua curitibana-planaltense (piá, vina; JAMAIS bah/tchê nem Blumenau-genérico)"*).
 - **"chimarrão"** — inclusive como nome de programa de rádio: *"Cablocão/Hora do Chimarrão p/ testemunhal"*, *"o programa da hora do chimarrão"*.
-- **"Riomafra"** — o gentílico/topônimo de dentro; a unidade *"já usa o nome da praça na comunicação ("Riomafra")"* e *"#riomafra (instinto local ok)"*.
+- **"Mafra"** — o gentílico/topônimo de dentro; a unidade *"já usa o nome da praça na comunicação ("Mafra")"* e *"#mafra (instinto local ok)"*.
 - **"geia"** (do calendário editorial: *"cuidar de você enquanto lá fora geia"*).
 - **"inverno de verdade"**, *"o falar do planalto"*.
 - A frase-afeto do corpus, para um comércio local: *"Loja linda, família linda, equipe linda!"*
@@ -288,7 +288,7 @@ Do "People Also Ask" da busca — *"as perguntas que o público faz junto com es
 
 ### Gatilhos de decisão
 - **Indicação:** *"Indicação não é um canal de marketing: é O canal de decisão."* / *"aqui, o marketing mais eficiente é engenharia de indicação."*
-- **Prova social provinciana:** *""Sorrisos de Mafra e Rio Negro" vale mais que "milhões no Brasil""* (memória: *""300 sorrisos em Riomafra" > "milhões no Brasil""*).
+- **Prova social provinciana:** *""Sorrisos de Mafra e Rio Negro" vale mais que "milhões no Brasil""* (memória: *""300 sorrisos em Mafra" > "milhões no Brasil""*).
 - **Sobrenome conhecido / rosto local:** *"a confiança real é na família, no vizinho, no sobrenome conhecido"*; *"O antídoto documentado: um rosto local na frente, a rede como garantia atrás."*
 - **Clareza e garantia > desconto:** *"O medo da mãe é duplo: perder dinheiro E ser vista como "a mãe que caiu no golpe" (aversão à perda + custo social do erro). Clareza e garantia valem mais que desconto."*
 - **Parcela que cabe:** *"praça de aparelho parcelado (entrada baixa, parcela pequena)"*.
@@ -302,7 +302,7 @@ Do "People Also Ask" da busca — *"as perguntas que o público faz junto com es
 ## 7 · RAIO-X DA UNIDADE
 
 ### ✅ O QUE FAZ CERTO (verbatim)
-*"a melhor reputação entre as grandes (4,9×155, 97 de 5 estrelas nos últimos 100) · atendimento e ambiente que viram elogio · preço justo reconhecido · aparece em 1º na busca local da categoria · patrocina a comunidade (escoteiros) · já usa o nome da praça na comunicação ("Riomafra")."*
+*"a melhor reputação entre as grandes (4,9×155, 97 de 5 estrelas nos últimos 100) · atendimento e ambiente que viram elogio · preço justo reconhecido · aparece em 1º na busca local da categoria · patrocina a comunidade (escoteiros) · já usa o nome da praça na comunicação ("Mafra")."*
 
 Complementos: *"quase nenhuma ferida"*; *"FICHA LIMPA no RA"*; *"a OrthoDontic é a ÚNICA clínica da praça especializada em ortodontia"*; comparecimento na régua e fechamento/pagamento acima dela (cap. 14); *"Sem agendamento futuro só 17 (higiene de agenda ok)"*.
 
@@ -414,7 +414,7 @@ Série de 5 anos do comportamento de busca da região (estado de SC):
 - **Pico anual: JULHO (índice 34)**, seguido de **agosto (23)** e **setembro (22)**. *"Férias + volta às aulas + a grande festa da cidade em setembro."*
 - **Vale: dezembro e janeiro (2,5–7,9)** — *"a tese "férias de fim de ano" que vale em outras regiões NÃO vale aqui. O verão do litoral não é o verão do planalto."* Memória: *"DERRUBOU a candidata "férias dez/jan" (sazonalidade é VARIÁVEL por UF)."*
 - **Confirmação por dentro:** *"julho/25 foi o maior mês de interessados do ano (4.120 — quatro vezes a média), batendo com a curva de busca de 5 anos. Julho/26, até o dia 12: 69. A torneira está desligada no pico. Os dados internos também confirmam que dez/jan não é temporada aqui (494 e 78)."*
-- **A urgência:** *"a temporada de captação de Riomafra é JUL-SET — e este estudo foi entregue em julho. Cada semana de silêncio agora é a temporada inteira escapando."*
+- **A urgência:** *"a temporada de captação de Mafra é JUL-SET — e este estudo foi entregue em julho. Cada semana de silêncio agora é a temporada inteira escapando."*
 - **As DUAS ONDAS de férias (detalhe tático):** *"as duas margens entram de férias em datas DIFERENTES (calendários oficiais das duas redes estaduais): a margem paranaense sai dia 13/07 e volta 27/07; a catarinense sai 23/07 e volta 03/08. A janela combinada da praça vai de 13/07 a 02/08 — e o criativo troca de margem no dia 23. Quem programa uma janela única desperdiça metade da cidade."* — **divergência entre arquivos:** a memória registra *"DUAS ONDAS de férias (PR 13-24/07, SC 23/07-02/08, criativo troca margem dia 23!)"* e o kit registra *"Férias PR: até 27/07 · férias SC: 23/07-02/08"*. As três versões estão nos arquivos; a data de volta do PR diverge (27/07 × 24/07).
 
 ### Âncora de preço
@@ -438,7 +438,7 @@ Série de 5 anos do comportamento de busca da região (estado de SC):
 
 *"A joia enterrada (a história que ninguém pode copiar)"* — cap. 08, verbatim:
 
-- **"O casal de ortodontistas que voltou pra casa."** *"Já publicado na imprensa local: em 2019, os dois decidiram voltar à cidade natal para abrir a clínica. De 2 dentistas para 9 especialistas — crescimento paciente a paciente, o oposto exato do foguete de capital da porta ao lado."* (memória: publicado pelo Riomafra Mix, matéria dos 6 anos.)
+- **"O casal de ortodontistas que voltou pra casa."** *"Já publicado na imprensa local: em 2019, os dois decidiram voltar à cidade natal para abrir a clínica. De 2 dentistas para 9 especialistas — crescimento paciente a paciente, o oposto exato do foguete de capital da porta ao lado."* (memória: publicado pelo Mafra Mix, matéria dos 6 anos.)
 - **"A especialista assina com nome e registro."** *"Responsável técnica com especialidade em Ortodontia registrada — num raio de 70 metros onde se vende aparelho sem nenhum ortodontista nomeado."* (memória: Dra. Vanessa, CRO12379/SC, especialista ORTO, RT + CNES.)
 - **"O sobrenome está no mapa."** *"A família é da colônia que fundou a região — há ruas com o sobrenome nas DUAS cidades (validar a linha familiar com a clínica antes de publicar)."* (memória: *"Stoeberl = sobrenome bucovino c/ RUAS nas 2 cidades (⚠️ validar parentesco)"*; checklist: *"Genealogia Stoeberl (só usar "família da colônia" com confirmação)"*.)
 - **"A rede como garantia, não como fachada:"** *""clínica de gente daqui, com a segurança de uma rede nacional — e se seu filho for estudar fora, o tratamento continua em qualquer unidade do Brasil." Nenhum vizinho pode dizer nenhuma das duas metades dessa frase."*
@@ -454,11 +454,11 @@ Série de 5 anos do comportamento de busca da região (estado de SC):
 ### Os 4 territórios de campanha (cap. 13, verbatim)
 1. **"A especialista daqui"** — *"o casal que voltou pra casa, o nome, o registro, os 7 anos, os 9 especialistas. A resposta estrutural à vizinha sem rosto e à rede sem alma."*
 2. **"Aparelho é com especialista"** — *"reocupar o nome da casa: quem acompanha um tratamento de anos é ortodontista com registro, não "nossos especialistas" genérico."*
-3. **"Nas duas margens da ponte"** — *"Riomafra inteira: geotargeting incluindo Rio Negro e o interior (a geografia que a vizinha ensinou, com a mensagem que ela não tem)."*
+3. **"Nas duas margens da ponte"** — *"Mafra inteira: geotargeting incluindo Rio Negro e o interior (a geografia que a vizinha ensinou, com a mensagem que ela não tem)."*
 4. **"O dia de tirar o aparelho"** — *"o review de RESULTADO: 7 anos de sorrisos concluídos, o único conteúdo que a vizinha de 9 meses não consegue ter."*
 
 ### O tom
-*"**Tom:** sóbrio, concreto, de palavra cumprida — prova antes de promessa. Riomafra sempre (as duas margens). O frio como cúmplice, não como piada."*
+*"**Tom:** sóbrio, concreto, de palavra cumprida — prova antes de promessa. Mafra sempre (as duas margens). O frio como cúmplice, não como piada."*
 Kit: *"Tom obrigatório da praça: sóbrio, concreto, palavra cumprida."*
 Registro do documento (prompt de design): *"consultoria sênior, analítica, com calor humano. Documento de inteligência — não é peça de venda."*
 Proibições: ver seção 5.
@@ -471,14 +471,14 @@ Os formatos nomeados no calendário de 30 dias:
 - **"Conheça quem cuida #N"** — #1 *"[DRA. NOME], especialista em ortodontia (CRO/SC [nº]) — 3 perguntas rápidas em vídeo (por que ortodontia? o que mais gosta? um conselho pra quem tem medo)"*; #2 *"a recepção pelo nome (as pessoas que a audiência já ama)"*.
 - **"O dia de tirar o aparelho"** — *"primeiro depoimento de resultado [paciente com autorização]. Formato-âncora — repetir todo mês."*
 - **"Bastidor"** — *"a manutenção mensal como ritual (a cor da borrachinha do mês — cumplicidade com o adolescente, nunca bronca)."*
-- **"Prova social do mês"** — *"print de 3 reviews reais (anonimizados) + o número do mês ("X famílias avaliaram a gente em julho — obrigado, Riomafra")."*
-- **Posts de território/comunidade:** *"Viemos pra casa"* (post-manifesto), *"Riomafra é uma cidade só"*, o patrocínio/comunidade (*"sem autoelogio, só presença"*), *"O inverno como cúmplice"*.
+- **"Prova social do mês"** — *"print de 3 reviews reais (anonimizados) + o número do mês ("X famílias avaliaram a gente em julho — obrigado, Mafra")."*
+- **Posts de território/comunidade:** *"Viemos pra casa"* (post-manifesto), *"Mafra é uma cidade só"*, o patrocínio/comunidade (*"sem autoelogio, só presença"*), *"O inverno como cúmplice"*.
 - **Stories diários (rodízio simples):** *"bastidor da manhã · enquete boba ("borrachinha azul ou verde?") · resposta a 1 dúvida · repost de marcação."*
 
 ### O calendário editorial de 30 dias (estrutura literal)
 - **SEMANA 1 — A HISTÓRIA (o destravamento do rosto):** S1P1 *"Viemos pra casa"* · S1P2 *Conheça quem cuida #1* · S1P3 *Explica-tudo #1*.
 - **SEMANA 2 — A ESPECIALIDADE:** S2P1 *O dia de tirar o aparelho* · S2P2 *Explica-tudo #2* · S2P3 *Bastidor*.
-- **SEMANA 3 — AS DUAS MARGENS:** S3P1 *"Riomafra é uma cidade só"* · S3P2 *Conheça quem cuida #2* · S3P3 *Explica-tudo #3*.
+- **SEMANA 3 — AS DUAS MARGENS:** S3P1 *"Mafra é uma cidade só"* · S3P2 *Conheça quem cuida #2* · S3P3 *Explica-tudo #3*.
 - **SEMANA 4 — A COMUNIDADE:** S4P1 *O patrocínio dos escoteiros* · S4P2 *O inverno como cúmplice* · S4P3 *Prova social do mês*.
 
 ### Os 6 anúncios do kit (ação 5 — clique-WhatsApp)
@@ -651,13 +651,13 @@ No painel (Bloco C), o baseline registrado é **~40-55% ainda pagando no 6º mê
 ### D · FRASES-ÂNCORA DO PRÓPRIO ESTUDO (London Creative)
 30. **"A melhor clínica da cidade é a mais calada."** — a tese; título da capa: **"A Melhor Clínica da Cidade É a Mais Calada"**.
 31. **"O problema da unidade não é qualidade. É presença. E presença se resolve."**
-32. **"Falar "Riomafra" é falar de dentro; tratar Rio Negro como outra cidade é o erro do forasteiro."**
+32. **"Falar "Mafra" é falar de dentro; tratar Rio Negro como outra cidade é o erro do forasteiro."**
 33. **"Desconfia de promessa grande; respeita trabalho, constância e palavra cumprida."**
 34. **"esperar, viajar ou desistir"** — a ferida da cidade. (Memória: *"SAÚDE = "esperar, viajar (Curitiba 115km) ou desistir""*.)
 35. **"Os primeiros pacientes definem a reputação dos próximos anos; um paciente mal atendido é uma emissora de rádio."**
 36. **"Indicação não é um canal de marketing: é O canal de decisão."**
 37. **"O antídoto documentado: um rosto local na frente, a rede como garantia atrás."**
-38. **"Sorrisos de Mafra e Rio Negro"** vale mais que **"milhões no Brasil"**. (Memória: **"300 sorrisos em Riomafra" > "milhões no Brasil"**.)
+38. **"Sorrisos de Mafra e Rio Negro"** vale mais que **"milhões no Brasil"**. (Memória: **"300 sorrisos em Mafra" > "milhões no Brasil"**.)
 39. **"a mãe que caiu no golpe"** — o custo social do erro. *"Clareza e garantia valem mais que desconto."*
 40. **"se o seu filho for estudar fora, o tratamento continua em qualquer unidade do Brasil."**
 41. **"clínica de gente daqui, com a segurança de uma rede nacional — e se seu filho for estudar fora, o tratamento continua em qualquer unidade do Brasil."** — *"Nenhum vizinho pode dizer nenhuma das duas metades dessa frase."*
@@ -705,27 +705,27 @@ No painel (Bloco C), o baseline registrado é **~40-55% ainda pagando no 6º mê
 83. **"o triplo de contratos com os mesmos interessados."**
 
 ### E · COPY PRODUZIDA PELA LONDON PARA A UNIDADE (kit de execução — peças, não vozes coletadas)
-84. QR na recepção: *"Gostou de como te tratamos hoje? Conta pra Riomafra — leva 1 minuto e ajuda outra família a escolher com confiança."*
+84. QR na recepção: *"Gostou de como te tratamos hoje? Conta pra Mafra — leva 1 minuto e ajuda outra família a escolher com confiança."*
 85. Pós-manutenção: *"Oi, [NOME]! Aqui é a [RECEPCIONISTA], da OrthoDontic. Obrigada pela visita de hoje 💙 Se puder, deixa sua avaliação aqui — pra gente é o maior obrigado que existe, e ajuda outras famílias de Mafra e Rio Negro: [link curto]"*
 86. Review de resultado: *"Hoje é o seu dia! Se quiser contar como foi o tratamento inteiro — do primeiro dia até hoje — sua história vale ouro pra quem ainda tem medo de começar."* — *"É o único review que uma clínica de 9 meses não consegue pedir."*
 87. Resposta a review positivo: *"Obrigado, [NOME]! Cuidar de você é um orgulho pra nossa equipe. Um abraço da [DRA. NOME] e de todos aqui. 💙"*
 88. Resposta a review negativo: *"Sentimos muito, [NOME] — não é o padrão que a gente promete. A [RESPONSÁVEL] vai te chamar hoje pra resolver. Obrigado por nos avisar."* — *"(e LIGAR de verdade — em cidade pequena, a resolução vira contra-história)"*
 89. **A1 · O ROSTO:** *"Aparelho é um tratamento de anos. Por isso, aqui em Mafra, quem acompanha o seu filho do primeiro ao último dia é ortodontista especialista de verdade: a [DRA. NOME] (CRO/SC [nº]) — mafrense, há 7 anos no mesmo endereço. Avaliação com a especialista: agende pelo WhatsApp."*
-90. **A2 · AS DUAS MARGENS:** *"Do lado de lá da ponte também é Riomafra. A clínica especializada em aparelho do Alto de Mafra atende as duas margens — com hora marcada e a mesma especialista do início ao fim. Agende pelo WhatsApp."*
+90. **A2 · AS DUAS MARGENS:** *"Do lado de lá da ponte também é Mafra. A clínica especializada em aparelho do Alto de Mafra atende as duas margens — com hora marcada e a mesma especialista do início ao fim. Agende pelo WhatsApp."*
 91. **A3 · O PREÇO CLARO:** *"Quanto custa um aparelho? Aqui a resposta é clara antes de você assinar qualquer coisa: parcelas que cabem no orçamento, no boleto, sem surpresa no contrato e sem taxa escondida. Avaliação com a especialista — agende."*
 92. **A4 · O FILHO QUE VAI EMBORA:** *"Seu filho começou o aparelho e vai estudar fora? Aqui o tratamento não para: a OrthoDontic tem centenas de unidades no Brasil — ele continua de onde parou, em qualquer cidade. Só uma rede pode prometer isso. E só a nossa tem uma especialista mafrense cuidando do começo."*
 93. **A5 · O INTERIOR:** *"[CIDADE], o aparelho do seu filho não precisa de aventura: no Alto de Mafra, com ortodontista especialista, hora marcada e parcelamento no boleto. Vale a viagem — uma vez por mês, com dia e hora respeitados."*
 94. **A6 · A AVALIAÇÃO COM A ESPECIALISTA:** *"Avaliação ortodôntica com a especialista + plano de tratamento explicado por inteiro: o que precisa, quanto tempo leva, quanto custa por mês. Você sai sabendo tudo — e decide em casa, sem pressão. Agende pelo WhatsApp."*
-95. **Rádio 4a (testemunhal 30s):** *"Ó, gente… sabe aquela história de marcar dentista e esperar uma hora? Na OrthoDontic, no Alto de Mafra, é hora marcada DE VERDADE — e quem cuida do aparelho da piazada é ortodontista especialista, gente daqui. Das duas margens, todo mundo é bem recebido. Liga lá ou chama no WhatsApp: [fone]. OrthoDontic — a especialista em aparelho de Riomafra."*
+95. **Rádio 4a (testemunhal 30s):** *"Ó, gente… sabe aquela história de marcar dentista e esperar uma hora? Na OrthoDontic, no Alto de Mafra, é hora marcada DE VERDADE — e quem cuida do aparelho da piazada é ortodontista especialista, gente daqui. Das duas margens, todo mundo é bem recebido. Liga lá ou chama no WhatsApp: [fone]. OrthoDontic — a especialista em aparelho de Mafra."*
 96. **Rádio 4b (spot 15s):** *"Aparelho é com especialista. OrthoDontic Mafra: ortodontista de verdade, hora marcada, parcela que cabe no bolso. Rua Felipe Schmidt, Alto de Mafra. WhatsApp [fone]."*
 97. **WhatsApp 5a (preço):** *"Oi, [NOME]! Boa pergunta — e a gente responde de verdade: o tratamento com aparelho fixo fica entre R$ [X] e R$ [Y] por mês, dependendo do caso, no boleto, sem entrada obrigatória e sem surpresa no contrato. O valor exato sai na avaliação com a Dra. [NOME], que te explica tudo antes de qualquer assinatura. Quer que eu veja um horário pra você?"*
 98. **WhatsApp 5b ("é pra meu filho"):** *"Que bom que você está cuidando disso agora — a avaliação certa na idade certa evita tratamento maior depois. Aqui quem avalia é a própria especialista, e a primeira consulta é pra explicar tudo pra VOCÊ, sem compromisso. Prefere de tarde ou sábado de manhã?"*
 99. **WhatsApp 5c (a pergunta-armadilha):** *"Pode ficar tranquila: a OrthoDontic tem centenas de unidades no Brasil. Se ele for estudar em outra cidade, o tratamento continua de onde parou, sem começar do zero e sem pagar de novo. É a única clínica da região que pode garantir isso."*
 100. **WhatsApp 5d (véspera da manutenção):** *"Oi [NOME]! Lembrete da manutenção de amanhã às [hora]. Confirma pra gente? Se precisar mudar, a gente já encaixa outro dia — sem buraco no seu tratamento. 💙"*
 101. **Post-manifesto S1P1:** *"Viemos pra casa"* … *"Mafra e Rio Negro: obrigado por esses 7 anos."*
-102. **S3P1:** *"Riomafra é uma cidade só"*
+102. **S3P1:** *"Mafra é uma cidade só"*
 103. **S4P2:** *"cuidar de você enquanto lá fora geia"*
-104. **S4P3:** *"X famílias avaliaram a gente em julho — obrigado, Riomafra"*
+104. **S4P3:** *"X famílias avaliaram a gente em julho — obrigado, Mafra"*
 105. **Stories:** *"borrachinha azul ou verde?"*
 106. **Parceria futsal:** *"Sorriso do Atleta do Mês"* · abordagem: *"queremos apoiar o esporte que forma a piazada das duas cidades."*
 107. **Parceria maternidade:** *"saúde bucal do bebê"* — *"(a Dra. em pessoa — é semear confiança 10 anos antes da venda)"*.
@@ -915,9 +915,9 @@ No painel (Bloco C), o baseline registrado é **~40-55% ainda pagando no 6º mê
 
 ## 18 · ACHADOS ÚNICOS DESTA PRAÇA
 
-1. **O nome do estudo estava errado.** *"O primeiro achado corrige o próprio nome do estudo: a praça não é "Mafra" — é RIOMAFRA."* Uma colônia de 1829 partida ao meio pela divisa dos estados; mesmo DDD 47, ônibus urbano cruzando a ponte, ~87 mil pessoas, mídia local inteira chamada Riomafra. **Nenhuma outra praça do método teve o próprio recorte geográfico reescrito pelo achado.**
+1. **O nome do estudo estava errado.** *"O primeiro achado corrige o próprio nome do estudo: a praça não é "Mafra" — é RIOMAFRA."* Uma colônia de 1829 partida ao meio pela divisa dos estados; mesmo DDD 47, ônibus urbano cruzando a ponte, ~87 mil pessoas, mídia local inteira chamada Mafra. **Nenhuma outra praça do método teve o próprio recorte geográfico reescrito pelo achado.**
 2. **69% de atendimento — o recorde das 4 praças estudadas** (as anteriores: 54%, 47%, 63%). *"Aqui, mais que em qualquer lugar, o paciente avalia COMO FOI TRATADO."*
-3. **A maior colônia bucovina do mundo.** *"alemães-boêmios (bucovinos — Riomafra é a maior colônia bucovina do mundo)"* — e a proibição de tom que decorre disso: *"Jamais gíria gaúcha, jamais estética de Oktoberfest — aqui a colônia é outra."*
+3. **A maior colônia bucovina do mundo.** *"alemães-boêmios (bucovinos — Mafra é a maior colônia bucovina do mundo)"* — e a proibição de tom que decorre disso: *"Jamais gíria gaúcha, jamais estética de Oktoberfest — aqui a colônia é outra."*
 4. **A sazonalidade invertida.** *"Dezembro e janeiro são VALE (2,5–7,9) — a tese "férias de fim de ano" que vale em outras regiões NÃO vale aqui. O verão do litoral não é o verão do planalto."* Memória: *"DERRUBOU a candidata "férias dez/jan" (sazonalidade é VARIÁVEL por UF)."* — **um achado que corrige a metodologia da rede inteira, não só esta praça.**
 5. **As DUAS ONDAS de férias.** Duas redes estaduais, dois calendários, uma cidade — *"o criativo troca de margem no dia 23. Quem programa uma janela única desperdiça metade da cidade."* Só existe porque a praça é interestadual.
 6. **A vizinha de 9 meses a 70 metros que fez 72 avaliações num único mês** enquanto a unidade fazia 10 em 14 meses — e que *"acabou de invadir a ortodontia"* no pico da temporada.

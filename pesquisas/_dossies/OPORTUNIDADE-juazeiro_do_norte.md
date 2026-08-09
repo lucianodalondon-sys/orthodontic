@@ -15,7 +15,7 @@
 
 > ⬜ **PREENCHER — o raio real da praça**
 >
-> Até onde vem o paciente? Tem cidade grudada do outro lado de rio, divisa ou rodovia? O ônibus urbano sai do município? Riomafra ensinou que duas cidades podem ser uma praça só, e Londrina que uma cidade pode ser duas.
+> Até onde vem o paciente? Tem cidade grudada do outro lado de rio, divisa ou rodovia? O ônibus urbano sai do município? Mafra ensinou que duas cidades podem ser uma praça só, e Londrina que uma cidade pode ser duas.
 
 ---
 
@@ -226,7 +226,7 @@ Seis eixos comparados ao mesmo tempo (distância 0,23):
 
 | Ritmo/mês | Meses | Selo | Unidade | Praça | De onde vem |
 |---:|---:|---|---|---|---|
-| 0,0 | 0 | parada | OrthoDontic Mafra | SC · Mafra + PR · Rio Negro | contador do Google em 23 dias |
+| 0,0 | 0 | parada | OrthoDontic Mafra | SC · Mafra | contador do Google em 23 dias |
 | 13,2 | 5 | campanha | OrthoDontic Presidente Prudente | SP · Presidente Prudente | contador do Google em 23 dias |
 | 14,0 | 11 | OPERAÇÃO | OrthoDontic | TO · Palmas | intervalo da amostra (~estimado) |
 

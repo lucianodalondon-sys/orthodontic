@@ -10,7 +10,7 @@ gaúcha, estética Blumenau._
 ═══════════════════════════════════════════════════════════════════
 
 **1a. QR na recepção** (display de balcão, arte com o rosto da equipe):
-> "Gostou de como te tratamos hoje? Conta pra Riomafra — leva 1 minuto e ajuda
+> "Gostou de como te tratamos hoje? Conta pra Mafra — leva 1 minuto e ajuda
 > outra família a escolher com confiança." [QR → link direto de avaliação]
 
 **1b. Mensagem pós-manutenção** (WhatsApp, até 2h depois da consulta, enviar
@@ -52,7 +52,7 @@ _Janela de lançamento: AGORA (pico jul-set). Férias PR: até 27/07 · férias 
 > Avaliação com a especialista: agende pelo WhatsApp.
 
 **A2 · AS DUAS MARGENS (Rio Negro + interior PR)** — [FOTO ponte/equipe]
-> Do lado de lá da ponte também é Riomafra. A clínica especializada em
+> Do lado de lá da ponte também é Mafra. A clínica especializada em
 > aparelho do Alto de Mafra atende as duas margens — com hora marcada e a
 > mesma especialista do início ao fim. Agende pelo WhatsApp.
 
@@ -105,7 +105,7 @@ _4 formatos fixos em rodízio. 3 posts/semana + stories diários simples._
   mês — cumplicidade com o adolescente, nunca bronca).
 
 **SEMANA 3 — AS DUAS MARGENS**
-- S3P1 · "Riomafra é uma cidade só": post das duas margens (a ponte, os
+- S3P1 · "Mafra é uma cidade só": post das duas margens (a ponte, os
   pacientes que vêm de Rio Negro e do interior; hora marcada respeitada).
 - S3P2 · Conheça quem cuida #2: a recepção pelo nome (as pessoas que a
   audiência já ama — "a melhor clínica e os melhores dentistas!!!").
@@ -118,7 +118,7 @@ _4 formatos fixos em rodízio. 3 posts/semana + stories diários simples._
 - S4P2 · O inverno como cúmplice: post leve de estação (chimarrão, frio do
   planalto, "cuidar de você enquanto lá fora geia") — nunca piada COM o frio.
 - S4P3 · Prova social do mês: print de 3 reviews reais (anonimizados) + o
-  número do mês ("X famílias avaliaram a gente em julho — obrigado, Riomafra").
+  número do mês ("X famílias avaliaram a gente em julho — obrigado, Mafra").
 
 _Stories diários (rodízio simples): bastidor da manhã · enquete boba
 ("borrachinha azul ou verde?") · resposta a 1 dúvida · repost de marcação._
@@ -131,7 +131,7 @@ _Stories diários (rodízio simples): bastidor da manhã · enquete boba
 > OrthoDontic, no Alto de Mafra, é hora marcada DE VERDADE — e quem cuida do
 > aparelho da piazada é ortodontista especialista, gente daqui. Das duas
 > margens, todo mundo é bem recebido. Liga lá ou chama no WhatsApp: [fone].
-> OrthoDontic — a especialista em aparelho de Riomafra."
+> OrthoDontic — a especialista em aparelho de Mafra."
 (deixar o locutor falar do jeito DELE — testemunhal engessado morre no ar)
 
 **4b. Spot 15s — FM principal (rotativo, manhã + fim de tarde):**

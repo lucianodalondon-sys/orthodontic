@@ -27,7 +27,7 @@ unidades da mesma marca na mesma cidade.**
 ## 1 · A PRAÇA
 
 Cuiabá e Várzea Grande são conurbadas, separadas pelo rio Cuiabá, com
-transporte e mercado de trabalho integrados. Mesma lição de Riomafra: a praça
+transporte e mercado de trabalho integrados. Mesma lição de Mafra: a praça
 não é o município.
 
 | | Cuiabá | Várzea Grande | Praça |
@@ -36,7 +36,7 @@ não é o município.
 | Censo 2022 | 650.877 | 300.078 | 950.955 |
 | Massa salarial (2023, mil R$) | 39.050.753 | 13.984.218 | **53.034.971** |
 
-Onze vezes Riomafra. Maior que as quatro praças anteriores somadas.
+Onze vezes Mafra. Maior que as quatro praças anteriores somadas.
 
 ---
 
@@ -58,7 +58,7 @@ Duas leituras que só essa comparação permite:
 **O mercado não explica.** Tudo que é externo está controlado. O que sobra é a
 unidade.
 
-**0,7 é o número de Riomafra.** Riomafra fazia 0,7/mês e a gente atribuiu à
+**0,7 é o número de Mafra.** Mafra fazia 0,7/mês e a gente atribuiu à
 cidade pequena, ao mercado apertado, à concorrente agressiva. Numa capital de
 um milhão de habitantes, uma unidade faz exatamente o mesmo 0,7. **0,7 é o que
 uma unidade produz quando não faz nada** — não é característica de praça.
@@ -188,7 +188,7 @@ medido pelo contador do Google em vez da amostra, o sinal **inverteu**:
 |---|---:|---:|
 | Feira | −0,27 | **+0,54** |
 | Londrina | −0,62 | **+0,49** |
-| Riomafra | +0,23 | **+0,39** |
+| Mafra | +0,23 | **+0,39** |
 | Prudente | −0,29 | **+0,36** |
 | Cuiabá | −0,19 | −0,19 |
 
@@ -278,7 +278,7 @@ sendo que é a mãe quem decide o aparelho.
 **Duas coisas que nenhuma praça anterior tinha:**
 
 **@cuiabadasantigas** — memória da cidade, 48 mil seguidores, 2.006 posts.
-Cuiabá tem 300 anos e se orgulha. É uma porta de entrada de marca que Riomafra,
+Cuiabá tem 300 anos e se orgulha. É uma porta de entrada de marca que Mafra,
 Feira, Londrina e Prudente não ofereciam.
 
 **O dentista virou influenciador.** @dra.analuizapaz (10.952), @imo.cuiaba

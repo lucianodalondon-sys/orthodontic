@@ -3,7 +3,7 @@
 whatsapp_teste.py — quanto tempo a clínica leva para responder.
 
 É a ferida nº 1 dos cinco estudos e a ÚNICA das constantes que nenhuma fonte
-pública mede. Riomafra converte 5,9% dos interessados em agendamento contra uma
+pública mede. Mafra converte 5,9% dos interessados em agendamento contra uma
 régua de 40% — quem chega, fecha; quem chama, some. E ninguém sabe quanto tempo
 o "some" leva, porque esse número não existe em lugar nenhum.
 
@@ -22,7 +22,7 @@ e calcula. A pessoa manda a mensagem.
 COMO USAR
 
   1. Preparar a rodada (imprime as clínicas, a mensagem e o horário):
-        python3 coleta/coletores/whatsapp_teste.py --praca riomafra --preparar
+        python3 coleta/coletores/whatsapp_teste.py --praca mafra --preparar
 
   2. Mandar as mensagens à mão, na ordem sorteada, anotando a hora de envio.
 
@@ -36,7 +36,7 @@ COMO USAR
             --enviado "2026-08-09 14:05" --sem-resposta
 
   4. Ler o placar:
-        python3 coleta/coletores/whatsapp_teste.py --praca riomafra --placar
+        python3 coleta/coletores/whatsapp_teste.py --praca mafra --placar
 
 REGRAS DA MEDIÇÃO, para o número valer alguma coisa
 

@@ -61,7 +61,7 @@ ordenar nada.
 estado. Ordem alfabética de `Contagem/MG` é ordem por acaso.
 
 Praça com mais de uma cidade repete a UF em cada uma:
-**`SC · Mafra + PR · Rio Negro`** — porque é exatamente isso que ela é, uma
+**`SC · Mafra`** — porque é exatamente isso que ela é, uma
 cidade partida pela divisa.
 
 O rótulo pronto está em `dados/identidade/<praca>.json`, campo `rotulo`, e o

@@ -5,13 +5,13 @@ imprensa_rss.py — coletor de imprensa local por praça. Sem credencial, sem cu
 Lê o Google News RSS por consulta e grava em dados/serie/imprensa.jsonl,
 append-only, com snapshot_date · first_seen · last_seen (contrato da camada 1).
 
-Por que importa: a joia enterrada de Riomafra — o casal de ortodontistas que
+Por que importa: a joia enterrada de Mafra — o casal de ortodontistas que
 voltou pra casa — saiu de matéria em jornal local. Não foi sorte, foi busca
 documental. Este coletor transforma isso em rotina semanal.
 
 Uso:
     python3 coleta/coletores/imprensa_rss.py
-    python3 coleta/coletores/imprensa_rss.py --praca riomafra
+    python3 coleta/coletores/imprensa_rss.py --praca mafra
 """
 import argparse, json, pathlib, sys, time, urllib.parse, urllib.request
 import datetime as dt
@@ -36,7 +36,7 @@ def consultas_da_identidade(praca):
     Quatro camadas, e cada uma responde uma coisa: a marca (o que falam da
     unidade), a categoria (o que falam de ortodontia na cidade), o concorrente
     (o que o líder anda fazendo) e a cidade (a joia enterrada — foi de lá que
-    saiu o casal de ortodontistas de Riomafra).
+    saiu o casal de ortodontistas de Mafra).
     """
     arq = RAIZ/"dados"/"identidade"/f"{praca}.json"
     if not arq.exists():
@@ -60,11 +60,11 @@ def consultas_da_identidade(praca):
 
 
 CONSULTAS = {
-  "riomafra": [
+  "mafra": [
     ("marca",     'OrthoDontic Mafra OR "OrthoDontic" "Rio Negro"'),
     ("categoria", 'ortodontia OR dentista OR odontologia Mafra OR "Rio Negro" Paraná'),
     ("concorrente", '"Instituto Lumière" OR OdontoCompany Mafra'),
-    ("cidade",    'Mafra Santa Catarina OR Riomafra'),
+    ("cidade",    'Mafra Santa Catarina OR Mafra'),
   ],
   "londrina": [
     ("marca",     '"OrthoDontic" Londrina'),

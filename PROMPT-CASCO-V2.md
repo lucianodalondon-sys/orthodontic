@@ -77,7 +77,7 @@ existe — pergunte ao manifesto.**
   ],
   "arquivos": {
     "rede":         ["rede", "rede_cruzamento", "achados", "corretor", "evidencias", "radar"],
-    "pracas":       ["contagem", "cuiaba", "feira", "londrina", "palmas", "prudente", "riomafra"],
+    "pracas":       ["contagem", "cuiaba", "feira", "londrina", "palmas", "prudente", "mafra"],
     "captacao":     ["contagem", "…"],
     "planos":       ["contagem", "…"],
     "oportunidade": ["imperatriz", "juazeiro_do_norte", "macapa", "maraba", "parauapebas", "rio_branco"]
@@ -283,7 +283,7 @@ na exportação.
 | Praça | Como aparece |
 |---|---|
 | Contagem | `MG · Contagem` |
-| Riomafra | `SC · Mafra + PR · Rio Negro` |
+| Mafra | `SC · Mafra` |
 | Cuiabá | `MT · Cuiabá + MT · Várzea Grande` |
 
 **O casco não monta esse texto.** Ele vem pronto no campo `rotulo`. Se você

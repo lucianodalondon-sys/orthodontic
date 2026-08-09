@@ -173,7 +173,7 @@ def nomes_de_bairro(c, portas, praca=None):
                        + r"|".join(re.escape(w) for w in cidade.split()) + r")\b")
     # Um nome de bairro tem cara de nome de lugar. "Edificio", "Center" e
     # "Alameda 503" não têm — são pedaço de endereço que o autocompletar colou.
-    # Em Riomafra os SEIS "bairros" que foram para o plano do franqueado eram
+    # Em Mafra os SEIS "bairros" que foram para o plano do franqueado eram
     # lixo, e o plano é o entregável mais lido do sistema. Um bairro inventado
     # queima a confiança mais rápido do que dez acertos a constroem.
     GENERICO = {"alameda", "avenida", "rua", "travessa", "rodovia", "estrada",

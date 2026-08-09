@@ -276,7 +276,7 @@ svg text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-v
     <button class="navitem" data-go="achados"><span class="dot" style="background:var(--accent)"></span>O que aprendemos</button>
     <button class="navitem" data-go="kit"><span class="dot" style="background:var(--warn)"></span>Corretor de campanha</button>
     <div class="railgroup">Praças</div>
-    <button class="navitem" data-praca="riomafra"><span class="dot" style="background:var(--crit)"></span>Riomafra</button>
+    <button class="navitem" data-praca="mafra"><span class="dot" style="background:var(--crit)"></span>Mafra</button>
     <button class="navitem" data-praca="londrina"><span class="dot" style="background:var(--serious)"></span>Londrina</button>
     <button class="navitem" data-praca="feira"><span class="dot" style="background:var(--serious)"></span>Feira de Santana</button>
     <button class="navitem" data-praca="prudente"><span class="dot" style="background:var(--good)"></span>Pres. Prudente</button>
@@ -332,7 +332,7 @@ svg text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-v
       <div class="panel">
         <div class="panelhead">
           <span class="eyebrow">Velocidade de reputação</span>
-          <h2>Reviews novos por mês, Riomafra</h2>
+          <h2>Reviews novos por mês, Mafra</h2>
           <span class="note">série de 14 meses · corte 15/jul/2026</span>
         </div>
         <div class="panelbody" id="chart-velocity"></div>
@@ -398,7 +398,7 @@ svg text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-v
         <div class="empty">
           <b>Sem segundo ponto de série.</b>
           Este bloco nasce na próxima coleta. É ele que transforma o estudo em sensor —
-          e é por isso que recoletar Riomafra é a ação mais urgente do piloto.
+          e é por isso que recoletar Mafra é a ação mais urgente do piloto.
         </div>
       </div>
     </section>
@@ -431,7 +431,7 @@ svg text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-v
         <div class="panelhead"><span class="eyebrow">Variáveis</span><h2>O que muda de praça para praça</h2><span class="note">nacionalizar qualquer uma destas quebra a campanha</span></div>
         <div class="panelbody flush tablewrap">
           <table>
-            <thead><tr><th>Dimensão</th><th>Londrina</th><th>Prudente</th><th>Feira</th><th>Riomafra</th></tr></thead>
+            <thead><tr><th>Dimensão</th><th>Londrina</th><th>Prudente</th><th>Feira</th><th>Mafra</th></tr></thead>
             <tbody id="variaveis"></tbody>
           </table>
         </div>
@@ -492,16 +492,16 @@ svg text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-v
 
 const EV = {
   atend_mafra: {
-    titulo:"Atendimento nos reviews · Riomafra", valor:"69%",
+    titulo:"Atendimento nos reviews · Mafra", valor:"69%",
     legenda:"dos reviews da categoria falam de como o paciente foi tratado",
     n:"224 reviews com texto", corte:"15/jul/2026", tax:"v1.1",
-    fonte:"reviews_classificados.jsonl", filtro:"praca=riomafra AND tem_texto=true",
+    fonte:"reviews_classificados.jsonl", filtro:"praca=mafra AND tem_texto=true",
     conf:"alta",
     leitura:"O índice mais alto das quatro praças. A série 47 · 54 · 63 · 69 sobe conforme a cidade encolhe — em comunidade densa a reputação tem memória e o erro não se dilui.",
     contra:"A base inclui pacientes de toda a odontologia local, porque as clínicas da praça são multi-serviço. Nas praças anteriores, com recorte estrito de ortodontia, a mesma constante deu 54–63% — o achado não depende do recorte."
   },
   agendamento: {
-    titulo:"Agendamento · Riomafra", valor:"5,9%",
+    titulo:"Agendamento · Mafra", valor:"5,9%",
     legenda:"dos interessados viram avaliação agendada — a régua da rede espera 40%",
     n:"5.050 interessados · 298 agendamentos · 12 meses", corte:"jul/2026", tax:"—",
     fonte:"funil.jsonl (Conecta)", filtro:"unidade=ortho_mafra",
@@ -510,7 +510,7 @@ const EV = {
     contra:"O denominador não reconcilia: 109 pagos no funil contra ~336 contratos/ano na mesma unidade. Enquanto a reconciliação não fechar, o multiplicador projetado não é publicado."
   },
   velocity: {
-    titulo:"Velocidade de reputação · Riomafra", valor:"0,7",
+    titulo:"Velocidade de reputação · Mafra", valor:"0,7",
     legenda:"reviews novos por mês, contra ~28/mês da vizinha de nove meses",
     n:"série de 14 meses, todas as avaliações datadas", corte:"15/jul/2026", tax:"—",
     fonte:"reviews.jsonl · first_seen_snapshot", filtro:"local_id=ortho_mafra",
@@ -519,10 +519,10 @@ const EV = {
     contra:"As avaliações da vizinha são de primeira impressão (recepção, café, ambiente): zero menção a aparelho e zero tratamento longo concluído. Volume dela não é comparável em qualidade de prova."
   },
   anuncios: {
-    titulo:"Anúncios ativos · Riomafra", valor:"0",
+    titulo:"Anúncios ativos · Mafra", valor:"0",
     legenda:"contra 10 do concorrente novo e 7 da rede popular, no pico anual",
     n:"biblioteca de anúncios do Meta", corte:"15/jul/2026", tax:"—",
-    fonte:"anuncios.jsonl", filtro:"praca=riomafra AND ativo=true",
+    fonte:"anuncios.jsonl", filtro:"praca=mafra AND ativo=true",
     conf:"alta",
     leitura:"Não é pausa — é ausência: zero também no histórico da biblioteca. E acontece no mês de índice 34, o pico da série de cinco anos da região.",
     contra:"Ausência na biblioteca pública não prova ausência de mídia em canais fora do Meta (rádio, impresso, patrocínio local). O estudo registra patrocínio a escoteiros."
@@ -557,13 +557,13 @@ const EV = {
 };
 
 const SIGNALS = [
-  {sev:"crit", praca:"Riomafra", t:"Concorrente invadiu a categoria",
+  {sev:"crit", praca:"Mafra", t:"Concorrente invadiu a categoria",
    b:"A clínica de nove meses ao lado — que só vendia prótese e implante — começou a anunciar aparelho em julho, no pico anual da região.",
    a:"Subir 4–6 anúncios sempre-ativos com rosto e parcela clara. Prazo: 7–14 dias.", ev:"anuncios"},
-  {sev:"crit", praca:"Riomafra", t:"Silêncio no pico",
+  {sev:"crit", praca:"Mafra", t:"Silêncio no pico",
    b:"Zero anúncios ativos — e zero no histórico — enquanto a busca da região está no índice 34, o topo da série de cinco anos.",
    a:"Programar as duas ondas de férias: margem PR até 27/07, margem SC de 23/07 a 02/08. O criativo troca de margem no dia 23.", ev:"anuncios"},
-  {sev:"crit", praca:"Riomafra", t:"Agendamento a 5,9% contra régua de 40%",
+  {sev:"crit", praca:"Mafra", t:"Agendamento a 5,9% contra régua de 40%",
    b:"De cada 100 interessados, seis viram avaliação agendada. Comparecimento, fechamento e pagamento batem ou superam a régua.",
    a:"Blindar a linha de frente: resposta em minutos, e trocar rajada de campanha por fluxo constante.", ev:"agendamento"},
   {sev:"serious", praca:"Londrina", t:"Gap de marca dentro da mesma cidade",
@@ -572,7 +572,7 @@ const SIGNALS = [
   {sev:"serious", praca:"Feira", t:"A unidade grita dentro do coro",
    b:"17 anúncios ativos num mar de 59 anúncios de 16 anunciantes com texto quase idêntico. Quem lidera a cidade se recusa a gritar.",
    a:"Trocar urgência por rosto, acolhimento e preço dito como orgulho do batalhador.", ev:"coro_feira"},
-  {sev:"warn", praca:"Riomafra", t:"Velocidade de reputação travada",
+  {sev:"warn", praca:"Mafra", t:"Velocidade de reputação travada",
    b:"0,7 review novo por mês. A vizinha faz ~28 pedindo a cada paciente na primeira visita.",
    a:"Ligar a máquina de avaliações, priorizando review de tratamento CONCLUÍDO — o que a vizinha não consegue ter.", ev:"velocity"},
   {sev:"warn", praca:"Prudente", t:"Claim sem validação",
@@ -581,8 +581,8 @@ const SIGNALS = [
 ];
 
 const PRACAS = {
-  riomafra: {
-    nome:"Riomafra", cidade:"Mafra/SC · Rio Negro/PR",
+  mafra: {
+    nome:"Mafra", cidade:"Mafra/SC · Rio Negro/PR",
     eyebrow:"Praça · piloto aplicado · única com dado interno",
     titulo:"A melhor clínica da cidade é a mais calada",
     tese:"Melhor reputação entre as grandes da praça, quase nenhuma ferida, e o ativo mais raro numa cidade de colônia: donos ortodontistas nascidos ali, com sobrenome da terra. E está em silêncio, no mês em que a região mais procura aparelho.",
@@ -613,7 +613,7 @@ const PRACAS = {
     season:[{m:"JUL",v:34,peak:true},{m:"AGO",v:23},{m:"SET",v:22},{m:"DEZ/JAN",v:5,low:true}],
     seasonNote:"Os pontos que a série de cinco anos publica. <b>Dezembro e janeiro são vale aqui</b> — a tese nacional de “férias de fim de ano” não vale no planalto, e foi essa praça que a derrubou.",
     dna:[
-      {l:"A língua", t:"O falar do planalto — “piá”, chimarrão, inverno de verdade. E dizer <b>Riomafra</b>: a praça é uma colônia partida ao meio pela divisa, com ônibus urbano cruzando a ponte."},
+      {l:"A língua", t:"O falar do planalto — “piá”, chimarrão, inverno de verdade. E dizer <b>Mafra</b>: a praça é uma colônia partida ao meio pela divisa, com ônibus urbano cruzando a ponte."},
       {l:"Temperamento", t:"Colônia discreta e comunitária. Desconfia de promessa grande; respeita trabalho, constância e palavra cumprida."},
       {l:"A alavanca", t:"Prova antes de promessa. Parcela clara que cabe no orçamento — nunca leilão de desconto."},
       {l:"A joia enterrada", t:"O casal de ortodontistas que voltou pra casa em 2019. De 2 para 9 especialistas. Sobrenome da colônia no mapa das duas cidades — e ausente do feed.", forbid:false},
@@ -780,33 +780,33 @@ const VELOCITY = [
 
 const FINDINGS = [
   {t:"O paciente não avalia ortodontia — avalia como foi tratado", n:"4/4",
-   ev:[["Prudente","47%"],["Londrina","54%"],["Feira","63%"],["Riomafra","69%"]], ref:"atend_mafra"},
+   ev:[["Prudente","47%"],["Londrina","54%"],["Feira","63%"],["Mafra","69%"]], ref:"atend_mafra"},
   {t:"A ferida é sempre operação — nunca o produto", n:"4/4",
-   ev:[["Londrina","pós-venda"],["Prudente","agenda"],["Feira","espera 2–4h"],["Riomafra","manutenção"]]},
+   ev:[["Londrina","pós-venda"],["Prudente","agenda"],["Feira","espera 2–4h"],["Mafra","manutenção"]]},
   {t:"A confiança é em gente com nome, não em marca", n:"4/4",
-   ev:[["Londrina","Dr. João, as meninas"],["Feira","doutor 4,9 · 1.268"],["Riomafra","concorrente sem ortodontista nomeado"]]},
+   ev:[["Londrina","Dr. João, as meninas"],["Feira","doutor 4,9 · 1.268"],["Mafra","concorrente sem ortodontista nomeado"]]},
   {t:"A porta de entrada é sempre “quanto custa / cabe na parcela?”, seguida de “dói?”", n:"4/4",
-   ev:[["Riomafra","extraído da busca real"],["Prudente","âncora ~R$ 110/mês"]]},
+   ev:[["Mafra","extraído da busca real"],["Prudente","âncora ~R$ 110/mês"]]},
   {t:"Julho é o pico da mãe-decisora", n:"4/4",
-   ev:[["Riomafra","índice 34 · 4.120 leads em jul/25"],["demais","férias escolares"]]},
+   ev:[["Mafra","índice 34 · 4.120 leads em jul/25"],["demais","férias escolares"]]},
   {t:"O adulto 30+ é dinheiro na mesa e nenhuma praça fala com ele", n:"4/4",
-   ev:[["Riomafra","21.000 de 30–45 vs 7.700 de 9–15"],["demais","~metade de quem usa aparelho"]]},
+   ev:[["Mafra","21.000 de 30–45 vs 7.700 de 9–15"],["demais","~metade de quem usa aparelho"]]},
   {t:"A clínica-escola é fraca exatamente onde a rede é forte", n:"4/4",
    ev:[["Feira","não faz aparelho de adolescente"],["Prudente","cobre prevenção e infantil"]]},
   {t:"A joia local existe, é incopiável — e está enterrada", n:"3/4",
-   ev:[["Londrina","é a matriz"],["Prudente","a 1ª franquia"],["Riomafra","o casal que voltou"],["Feira","nenhuma ainda"]]},
+   ev:[["Londrina","é a matriz"],["Prudente","a 1ª franquia"],["Mafra","o casal que voltou"],["Feira","nenhuma ainda"]]},
   {t:"A embalagem é a mesma nas quatro: feed institucional + anúncio de urgência", n:"4/4",
-   ev:[["Londrina","OPERAÇÃO ORTODONTIA"],["Prudente","SEMANA DO APARELHO"],["Feira","17 no coro"],["Riomafra","feed sem a especialidade"]]},
+   ev:[["Londrina","OPERAÇÃO ORTODONTIA"],["Prudente","SEMANA DO APARELHO"],["Feira","17 no coro"],["Mafra","feed sem a especialidade"]]},
   {t:"A prova social está parada em todas", n:"4/4",
-   ev:[["Prudente","4,9 · 582 fora das peças"],["Riomafra","0,7 review/mês"]], ref:"velocity"},
+   ev:[["Prudente","4,9 · 582 fora das peças"],["Mafra","0,7 review/mês"]], ref:"velocity"},
   {t:"A mãe é a decisora — e lê os reviews antes de escolher", n:"4/4",
-   ev:[["Londrina","“graças a Deus li os comentários”"],["Riomafra","medo duplo da mãe"]]},
+   ev:[["Londrina","“graças a Deus li os comentários”"],["Mafra","medo duplo da mãe"]]},
   {t:"A ordem certa é blindar a operação antes de qualquer mídia nova", n:"4/4",
    ev:[["as quatro","é a ação nº 1 dos quatro planos"]]},
   {t:"Os mesmos quatro formatos fixos de conteúdo emergem nas quatro", n:"4/4",
    ev:[["as quatro","quem cuida · história local · tirar o aparelho · explica-tudo"]]},
   {t:"Dezembro e janeiro são pico nacional", n:"derrubada", dead:true,
-   ev:[["Riomafra","índice 2,5–7,9 contra 34 em julho"],["BI","494 e 78 leads contra 4.120"]]}
+   ev:[["Mafra","índice 2,5–7,9 contra 34 em julho"],["BI","494 e 78 leads contra 4.120"]]}
 ];
 
 const VARIAVEIS = [
@@ -828,7 +828,7 @@ const KIT = [
   {p:"Feira de Santana", v:"funciona, com condição", cor:"var(--good)",
    t:"Preço é orgulho aqui — “pagar menos e sair por cima” é virtude. Mas a peça precisa falar como Feira, e hoje ela está dentro de um coro de 59 anúncios quase idênticos.",
    lex:"exige léxico local: “cabe no seu bolso, meu rei”"},
-  {p:"Riomafra", v:"conflito", cor:"var(--crit)",
+  {p:"Mafra", v:"conflito", cor:"var(--crit)",
    t:"“Últimos dias” e “agora mesmo” acionam o radar antivigarista da colônia. A praça respeita palavra cumprida e desconfia de promessa grande.",
    lex:"bloqueado: urgência de liquidação · prova antes de promessa"}
 ];
@@ -876,7 +876,7 @@ function chartVelocity(){
   const H = top + VELOCITY.length*rowH + 26;
   const max = 30, plotW = W-padL-padR;
   const x = v => (v/max)*plotW;
-  let g = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Reviews novos por mês por clínica em Riomafra">`;
+  let g = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Reviews novos por mês por clínica em Mafra">`;
   // grid
   for(let t=0;t<=30;t+=10){
     g += `<line x1="${padL+x(t)}" y1="${top}" x2="${padL+x(t)}" y2="${top+VELOCITY.length*rowH}" stroke="var(--grid)" stroke-width="1"/>`;
@@ -980,7 +980,7 @@ function chartSeason(data){
 }
 
 /* ---- ficha da praça ---- */
-let currentPraca = "riomafra";
+let currentPraca = "mafra";
 function renderPraca(key){
   currentPraca = key;
   const p = PRACAS[key];
@@ -1147,5 +1147,5 @@ $("#themebtn").addEventListener("click", ()=>{
   document.documentElement.setAttribute("data-theme", next);
 });
 
-renderPraca("riomafra");
+renderPraca("mafra");
 </script>

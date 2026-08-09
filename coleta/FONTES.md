@@ -50,7 +50,7 @@ clínica. É a única plataforma que mede diretamente a constante — e ficou de
 
 ### Saída → `serie/reviews.jsonl`
 ```json
-{"snapshot_date":"2026-08-12","praca_id":"riomafra","local_id":"ortho_mafra",
+{"snapshot_date":"2026-08-12","praca_id":"mafra","local_id":"ortho_mafra",
  "plataforma":"google","review_id":"…","nota":5,"texto":"…","data":"2026-07-30",
  "respondida":true,"resposta_em_dias":2,"cita_profissional":true,
  "first_seen_snapshot":"2026-08-12","last_seen_snapshot":"2026-08-12"}
@@ -58,7 +58,7 @@ clínica. É a única plataforma que mede diretamente a constante — e ficou de
 
 ### Saída → `serie/reclamacoes.jsonl`
 ```json
-{"snapshot_date":"2026-08-12","praca_id":"riomafra","local_id":"ortho_mafra",
+{"snapshot_date":"2026-08-12","praca_id":"mafra","local_id":"ortho_mafra",
  "plataforma":"reclame_aqui","total":12,"respondidas":3,"indice_resposta":0.25,
  "tempo_medio_resposta_dias":9,"taxa_solucao":0.18,
  "temas":{"financeiro_contrato":0.83,"atendimento":0.17}}
@@ -82,14 +82,14 @@ do consumo. O grupo de bairro captura **a escolha em tempo real**: a mãe
 perguntando, os vizinhos indicando, e as objeções aparecendo na mesma conversa.
 Não existe fonte melhor para entender por que o paciente escolhe.
 
-**Por que 13 não é decoração.** A joia de Riomafra — o casal que voltou pra
+**Por que 13 não é decoração.** A joia de Mafra — o casal que voltou pra
 casa — saiu de matéria em jornal local. Não foi sorte: foi busca documental.
 Vira rotina.
 
 ### Saída → `serie/vozes.jsonl`
 ```json
-{"snapshot_date":"2026-08-12","praca_id":"riomafra","plataforma":"facebook_grupo",
- "origem":"grupo-classificados-riomafra","camada":"territorio",
+{"snapshot_date":"2026-08-12","praca_id":"mafra","plataforma":"facebook_grupo",
+ "origem":"grupo-classificados-mafra","camada":"territorio",
  "segmento":"mae","texto":"…","curtidas":14,"data":"2026-08-03",
  "temas":["indicacao","preco"],"taxonomia_versao":"1.1"}
 ```
@@ -116,7 +116,7 @@ Centro de Transparência de Anúncios do Google é público.
 
 ### Saída → `serie/anuncios.jsonl`
 ```json
-{"snapshot_date":"2026-08-12","praca_id":"riomafra","anunciante":"lumiere",
+{"snapshot_date":"2026-08-12","praca_id":"mafra","anunciante":"lumiere",
  "plataforma":"meta","ad_id":"…","texto":"…","produto":"aparelho",
  "registro":"urgencia_desconto","geo_declarada":["Mafra","Itaiópolis"],
  "first_seen_snapshot":"2026-07-15","last_seen_snapshot":"2026-08-12","dias_no_ar":28}
@@ -149,12 +149,12 @@ própria unidade **e nas concorrentes** — o comparativo é o que dá o argumen
 
 ### Saída → `serie/operacao.jsonl`
 ```json
-{"snapshot_date":"2026-08-01","praca_id":"riomafra","local_id":"ortho_mafra",
+{"snapshot_date":"2026-08-01","praca_id":"mafra","local_id":"ortho_mafra",
  "fonte":"gbp_insights","mes":"2026-07",
  "buscas":3120,"visualizacoes":8940,"cliques_site":210,"ligacoes":186,"rotas":94}
 ```
 ```json
-{"snapshot_date":"2026-08-12","praca_id":"riomafra","local_id":"ortho_mafra",
+{"snapshot_date":"2026-08-12","praca_id":"mafra","local_id":"ortho_mafra",
  "fonte":"whatsapp_teste","enviado_em":"2026-08-12T10:14",
  "primeira_resposta_min":47,"horario_comercial":true,"respondeu":true}
 ```
@@ -184,7 +184,7 @@ capital 28x maior. Vira rotina e você vê o concorrente **antes de ele abrir**.
 
 ### Saída → `serie/concorrentes.jsonl`
 ```json
-{"snapshot_date":"2026-08-12","praca_id":"riomafra","evento":"novo_cnpj",
+{"snapshot_date":"2026-08-12","praca_id":"mafra","evento":"novo_cnpj",
  "razao_social":"…","cnae":"8630-5/04","capital":150000,"abertura":"2026-07-28",
  "distancia_km":1.2,"fonte":"junta_comercial"}
 ```
@@ -208,7 +208,7 @@ capital 28x maior. Vira rotina e você vê o concorrente **antes de ele abrir**.
 | 32 | **Conecta — funil** | onde o interessado evapora | mensal | 🔑 |
 | 33 | **Conecta — base e safra** | a base derrete? a safra para de pagar? | mensal | 🔑 |
 
-Riomafra já entregou uma vez, via print de tela. **Pedir das quatro, em CSV, é
+Mafra já entregou uma vez, via print de tela. **Pedir das quatro, em CSV, é
 a menor escada possível** — o precedente existe.
 
 ---
@@ -276,7 +276,7 @@ ANUAL     · IBGE/SIDRA · calendários escolares · calendário cultural
 
 **Por que reviews e anúncios são semanais:** são os únicos sinais que se movem
 rápido o bastante para virar alerta. Concorrente que começa a anunciar no pico
-— o que aconteceu em Riomafra em julho — precisa ser detectado em dias.
+— o que aconteceu em Mafra em julho — precisa ser detectado em dias.
 
 ---
 

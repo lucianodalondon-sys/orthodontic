@@ -21,7 +21,7 @@ texto nas quatro praças. Não é tendência: é lei da categoria.
 
 | Praça | agora | estudo |
 |---|---|---|
-| Riomafra | 66% | 69% |
+| Mafra | 66% | 69% |
 | Feira | 65% | 63% |
 | Londrina | 65% | 54% |
 | Prudente | 58% | 47% |
@@ -43,7 +43,7 @@ entre 1 e 4 posts com pessoas — e entre 1 e 7 curtidas de mediana.
 
 ### Correção 1 · O feed NÃO abandonou a especialidade
 
-O dossiê de Riomafra afirma que a clínica *"posta facetas, implante, canal e
+O dossiê de Mafra afirma que a clínica *"posta facetas, implante, canal e
 prótese — brigando no território dos vizinhos"*. A contagem post a post:
 
 | Unidade | Posts de ortodontia |
@@ -51,7 +51,7 @@ prótese — brigando no território dos vizinhos"*. A contagem post a post:
 | Londrina Souza Naves | **93%** |
 | Prudente | 71% |
 | Feira | 57% |
-| Riomafra | 45% |
+| Mafra | 45% |
 
 **Nenhuma unidade está no território do vizinho.** A caracterização era
 impressão de quem olhou o perfil, não contagem.
@@ -66,7 +66,7 @@ não é mudar de tema, é ganhar rosto e engajamento.
 O estudo da rede usa a série **47 · 54 · 63 · 69** como prova visual de que a
 constante do atendimento cresce conforme a praça encolhe. Com método uniforme a
 faixa fecha em **58-66** e a ordem por porte se desfaz: Prudente (234 mil hab.)
-tem o menor índice; Riomafra (87 mil) e Feira (616 mil) empatam.
+tem o menor índice; Mafra (87 mil) e Feira (616 mil) empatam.
 
 A série original media **corpora diferentes, não cidades diferentes** — cada
 praça foi coletada com recorte e volume distintos, e a diferença virou "efeito".
@@ -107,7 +107,7 @@ Odontoclinic 15, Sorrifácil 1, OrthoDontic **0**.
 
 **E o limite dessa leitura, que é grande.** Isto mede **busca paga**, não mídia.
 Rádio, TV, outdoor, panfleto, patrocínio e parceria com escola não deixam rastro
-público — e o estudo de Riomafra documenta que **o rádio é canal forte na praça**
+público — e o estudo de Mafra documenta que **o rádio é canal forte na praça**
 (três emissoras, uma da paróquia) e que a unidade **patrocina os escoteiros**.
 Existe atividade offline que não vemos, e ela está escrita no próprio material.
 
@@ -125,7 +125,7 @@ rede — pedido que cabe na escada.)*
 
 ## 3 · O QUE MUDOU NO MUNDO EM 23 DIAS
 
-### A vizinha de Riomafra acelerou, e a unidade ficou parada
+### A vizinha de Mafra acelerou, e a unidade ficou parada
 
 | Clínica | 15/jul | 07/ago | Δ | → /mês |
 |---|---|---|---|---|
@@ -159,7 +159,7 @@ represália: entraram 2 avaliações novas em julho e a última é de 31/07. Sa�
 ~5, o que tem cara de limpeza de spam do próprio Google. O problema real não é
 a perda de três, é o ritmo: **~2 avaliações por mês.**
 
-E o histórico mostra o mesmo padrão de Riomafra — **17 avaliações em julho de
+E o histórico mostra o mesmo padrão de Mafra — **17 avaliações em julho de
 2025**, um pico isolado seguido de quase nada. As unidades sabem fazer campanha
 de avaliação; elas simplesmente não sustentam.
 
@@ -168,7 +168,7 @@ de avaliação; elas simplesmente não sustentam.
 **+10 em 23 dias (~13/mês)**, a melhor da rede. E deve ultrapassar a NEXA (619)
 em volume total em cerca de dois meses.
 
-### Riomafra saiu do zero na mídia — mas errou o conteúdo
+### Mafra saiu do zero na mídia — mas errou o conteúdo
 
 O estudo registrou **zero anúncios e zero no histórico**. Agora são **3**. A
 ação nº 5 do plano (prazo 7-14 dias, marcada URGENTE) foi executada — a primeira
@@ -198,7 +198,7 @@ responde no Reclame Aqui. Não é uma unidade desatenta — é padrão.
 **A filial do Centro de Londrina não publica desde março de 2026.** Cinco meses
 de silêncio numa unidade com nota 3,8.
 
-**Riomafra já operou uma máquina de avaliações.** O histograma mostra **47
+**Mafra já operou uma máquina de avaliações.** O histograma mostra **47
 avaliações em três meses de 2022** (~16/mês) e 13 em quatro anos depois disso.
 A ação nº 2 do plano não é *"ligar uma máquina"* — é **religar uma capacidade
 que a unidade já teve**. Argumento muito mais forte.
@@ -216,7 +216,7 @@ respondidas** e **63,3% diriam que voltariam a fazer negócio**.
 
 ## 5 · UMA HIPÓTESE MINHA, DERRUBADA NO MESMO DIA
 
-Depois das duas primeiras clínicas de Riomafra eu propus: *"quem responde
+Depois das duas primeiras clínicas de Mafra eu propus: *"quem responde
 avaliação é quem cresce"*. Com as quatro praças na mesa:
 
 ```
@@ -266,7 +266,7 @@ Google Ads nas outras três praças.
 **Pedir à rede:** acesso de parceiro às 4 fichas do Google (ligações e cliques
 por unidade) e o CSV de funil das 4 unidades.
 
-**Esperar:** o review de 90 dias de Riomafra, meados de outubro. É o que
+**Esperar:** o review de 90 dias de Mafra, meados de outubro. É o que
 transforma tudo isto de diagnóstico em resultado.
 
 ---

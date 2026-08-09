@@ -27,7 +27,7 @@ Veja o contraste nas 6 que medimos:
 | Londrina | 144 | 10 | 1.073 | brigado |
 | Prudente | 119 | 4 | 1.071 | um gigante e o resto |
 | **Palmas** | 133 | **2** | 368 | **categoria fraca** |
-| **Riomafra** | 62 | **2** | 441 | **categoria fraca** |
+| **Mafra** | 62 | **2** | 441 | **categoria fraca** |
 
 **Palmas tem 300 mil habitantes, 133 clínicas e só duas passam de 300
 avaliações.** É praça de categoria fraca com público grande — 32 mil
@@ -187,7 +187,7 @@ Mapeamos os nove tipos de canal em 6 praças e conferimos com filtro rígido. O
 resultado é um padrão forte:
 
 **O canal da mãe — quem decide o aparelho — existe em 1 de 6 praças.**
-Só Feira tem (@sambademaes, 31,6 mil). Riomafra, Londrina, Prudente, Cuiabá e
+Só Feira tem (@sambademaes, 31,6 mil). Mafra, Londrina, Prudente, Cuiabá e
 Palmas não têm nenhuma voz materna de escala.
 
 **O esporte de base existe em 4 de 6, e nenhuma unidade OrthoDontic aparece

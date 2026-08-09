@@ -18,7 +18,7 @@ categoria → raio-X da unidade → mídia ativa dos concorrentes → mercado/cu
 | 01 | **Londrina/PR** | Souza Naves (a MATRIZ) | 4,6 · 561 | 1.400+ | "A coroa que está escorregando" — a casa que criou o padrão não é a nº1 da própria cidade (Odontoclinic leva 4,9) |
 | 02 | **Presidente Prudente/SP** | 1ª franquia da rede (2005) | 4,9 · 582 | 1.400+ | "O tesouro guardado na gaveta" — líder em nota E volume, 2 gerações de pacientes, e não conta a história |
 | 03 | **Feira de Santana/BA** | Centro (calçadão) | 4,7 · 173 | 800+ · 59 anúncios | "Todos os caminhos levam à Feira. Menos o da própria clínica" — bem avaliada, fala como forasteira |
-| 04 | **Mafra/SC (Riomafra)** | piloto aplicado | 4,9 · 155 | 452 + dados internos | "A melhor clínica da cidade é a mais calada" — reputação de líder, zero anúncios no pico da temporada |
+| 04 | **Mafra/SC (Mafra)** | piloto aplicado | 4,9 · 155 | 452 + dados internos | "A melhor clínica da cidade é a mais calada" — reputação de líder, zero anúncios no pico da temporada |
 
 ### 01 · Londrina — Souza Naves (matriz)
 - `01-londrina-souza-naves/CONTEUDO-SN.md` — a apresentação da matriz
@@ -41,11 +41,11 @@ categoria → raio-X da unidade → mídia ativa dos concorrentes → mercado/cu
   1.268 avaliações) e a **guerra de anúncios** (59 ativos, 16 anunciantes)
 
 ### 04 · Mafra/SC — o piloto aplicado
-- `04-mafra-riomafra/CONTEUDO-MAFRA.md` — o estudo mais completo da série:
+- `04-mafra-mafra/CONTEUDO-MAFRA.md` — o estudo mais completo da série:
   18 capítulos, plano de 90 dias, painel de ponteiros, e a **"prova dos nove"**
   (o estudo de fora × os dados internos do BI: funil 5.050→298→147→110, o
   agendamento a 6% contra a régua de 40%, a base caindo 875→677)
-- `04-mafra-riomafra/KIT-EXECUCAO-MAFRA.md` — o kit de execução
+- `04-mafra-mafra/KIT-EXECUCAO-MAFRA.md` — o kit de execução
 
 ### 05 · Rede franqueadora (não é praça — é o nível nacional)
 - `05-rede-franqueadora/CONTEUDO-REDE.md` — o estudo da rede

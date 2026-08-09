@@ -15,7 +15,7 @@
 
 > ⬜ **PREENCHER — o raio real da praça**
 >
-> Até onde vem o paciente? Tem cidade grudada do outro lado de rio, divisa ou rodovia? O ônibus urbano sai do município? Riomafra ensinou que duas cidades podem ser uma praça só, e Londrina que uma cidade pode ser duas.
+> Até onde vem o paciente? Tem cidade grudada do outro lado de rio, divisa ou rodovia? O ônibus urbano sai do município? Mafra ensinou que duas cidades podem ser uma praça só, e Londrina que uma cidade pode ser duas.
 
 ---
 

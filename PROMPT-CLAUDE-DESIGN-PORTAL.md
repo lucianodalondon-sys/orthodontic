@@ -1,7 +1,7 @@
 > **REGRA DE ESCRITA QUE VALE PARA A TELA INTEIRA**
 > A UF vem **antes** do nome da cidade: **`MG · Contagem`**, nunca
 > `Contagem/MG`. Praça com duas cidades repete a UF em cada uma:
-> `SC · Mafra + PR · Rio Negro`. Existe Palmas no TO e no PR — com a UF na
+> `SC · Mafra`. Existe Palmas no TO e no PR — com a UF na
 > frente o erro salta aos olhos, e numa lista de 340 o olho agrupa por estado
 > sozinho. O JSON entrega pronto no campo `rotulo`.
 
@@ -237,19 +237,19 @@ unidades cada cartão vira grupo; com 4, o grupo tem 1 ou 2 itens.
 
 Os oito sinais, com o texto exato:
 
-**CRÍTICO · Riomafra — Concorrente invadiu a categoria**
+**CRÍTICO · Mafra — Concorrente invadiu a categoria**
 A clínica de nove meses ao lado, que só vendia prótese e implante, começou a
 anunciar aparelho em julho, no pico anual da região. Entre 15/jul e 07/ago ela
 foi de ~10 para 37 anúncios ativos.
 *Fazer:* subir 4 a 6 anúncios sempre-ativos com rosto e parcela clara.
 
-**CRÍTICO · Riomafra — A vizinha acelerou e a unidade ficou parada**
+**CRÍTICO · Mafra — A vizinha acelerou e a unidade ficou parada**
 Em 23 dias a Lumière fez +33 avaliações (~43/mês) e a OrthoDontic fez **zero**.
 A distância era 42; agora é 75.
 *Fazer:* religar a máquina de avaliações — a unidade já fez 47 em três meses de
 2022, sabe fazer.
 
-**CRÍTICO · Riomafra — Agendamento a 5,9% contra régua de 40%**
+**CRÍTICO · Mafra — Agendamento a 5,9% contra régua de 40%**
 De cada 100 interessados, seis viram avaliação agendada. Comparecimento (49%),
 fechamento (75%) e pagamento (99%) batem ou superam a régua.
 *Fazer:* blindar a linha de frente — resposta em minutos, fluxo em vez de rajada.
@@ -283,7 +283,7 @@ Moisés Suzart +30 em 23 dias (~39/mês) contra ~2/mês da unidade.
 *Fazer:* máquina de avaliações. A unidade já fez 17 num único mês em jul/2025.
 
 **ATENÇÃO · Rede — Três de cinco unidades respondem 0% das avaliações**
-Londrina matriz 0% · Prudente 0% · Feira 4% · Riomafra 52% · Londrina Centro 61%.
+Londrina matriz 0% · Prudente 0% · Feira 4% · Mafra 52% · Londrina Centro 61%.
 *Fazer:* rotina de resposta. Custa zero e a unidade executa sozinha.
 
 ---
@@ -299,7 +299,7 @@ quatro medidores redondos — nota, avaliações, reviews novos/mês, anúncios 
 Abaixo do cabeçalho, um **botões para trocar o período**: `15/jul` · `07/ago` ·
 `comparar`.
 
-### Riomafra — Mafra/SC · Rio Negro/PR
+### Mafra — Mafra/SC · Rio Negro/PR
 **Tese:** *"A melhor clínica da cidade é a mais calada."*
 
 **Ponteiros:** nota **4,9** (meta 4,8) · avaliações **155** · novas/mês **0,7**
@@ -346,7 +346,7 @@ Lumière são de **acolhimento**, o registro que o estudo recomendou para nós.
 
 **O DNA local** — cartões, um marcado como proibição:
 - **A língua:** o falar do planalto — "piá", chimarrão, inverno de verdade. E
-  dizer **Riomafra**: a praça é uma colônia partida pela divisa, com ônibus
+  dizer **Mafra**: a praça é uma colônia partida pela divisa, com ônibus
   urbano cruzando a ponte.
 - **Temperamento:** colônia discreta. Desconfia de promessa grande; respeita
   trabalho, constância e palavra cumprida.
@@ -377,7 +377,7 @@ Lumière são de **acolhimento**, o registro que o estudo recomendou para nós.
 Painel fixo, ao lado do placar de mídia. **Não é rodapé, é conteúdo.**
 
 > **A coleta só enxerga o que fica público na internet.** Não vemos:
-> **rádio** — em Riomafra são 3 emissoras fortes, uma da paróquia, e um único
+> **rádio** — em Mafra são 3 emissoras fortes, uma da paróquia, e um único
 > balcão vende 3 das 4 frequências · **TV aberta** · **outdoor, panfleto,
 > fachada** · **patrocínio de comunidade** — a unidade patrocina os escoteiros ·
 > **parceria com escola e convênio** · **indicação e boca a boca**, que os quatro
@@ -443,7 +443,7 @@ Tela dedicada às **336**. Grade filtrável projetada para 340 linhas.
 
 Topo: `4 / 340` com barra, e o texto:
 > **336 praças sem inteligência nenhuma.** Não sabemos quantas repetem o
-> vazamento de Riomafra, quantas estão em silêncio no pico, quantas têm uma
+> vazamento de Mafra, quantas estão em silêncio no pico, quantas têm uma
 > vizinha de nove meses ao lado.
 
 **Critério de próxima praça** — cartões com o que falta cobrir:
@@ -476,7 +476,7 @@ cobrem Norte, Centro-Oeste, capital nem unidade nova.
 **Os treze achados que se repetem** — cada um com quantas praças confirmam:
 
 1. **O paciente não avalia ortodontia — avalia como foi tratado.** 4/4 ·
-   Riomafra 66% · Feira 65% · Londrina 65% · Prudente 58% *(847 avaliações com texto, as quatro medidas do mesmo jeito)*
+   Mafra 66% · Feira 65% · Londrina 65% · Prudente 58% *(847 avaliações com texto, as quatro medidas do mesmo jeito)*
 2. **A ferida é sempre operação, nunca o produto.** 4/4 · e o Reclame Aqui
    confirma: 3.133 reclamações, 98,6% respondidas, selo GREAT
 3. **A confiança é em gente com nome.** 4/4
@@ -490,13 +490,13 @@ cobrem Norte, Centro-Oeste, capital nem unidade nova.
 11. **A ordem certa é blindar a operação antes de mídia nova.** 4/4
 12. **A rede não responde.** 4/4 · 0% · 0% · 4% · 52%
 13. **As unidades sabem fazer campanha de avaliação — e não sustentam.**
-    Riomafra fez 47 em 3 meses de 2022; Feira fez 17 em jul/2025. Depois, quase
+    Mafra fez 47 em 3 meses de 2022; Feira fez 17 em jul/2025. Depois, quase
     nada.
 
 **As duas derrubadas, em tratamento gráfico de "crença que caiu":**
 
 > ❌ **"Dezembro e janeiro são pico nacional"**
-> Caiu por causa de Riomafra. Série de 5 anos: julho 34, dez/jan 2,5-7,9. Confirmado
+> Caiu por causa de Mafra. Série de 5 anos: julho 34, dez/jan 2,5-7,9. Confirmado
 > pelo BI: 494 e 78 interessados contra 4.120 em julho/25.
 > *Custou centavos de coleta e evitou verba nacional no mês errado.*
 
@@ -513,7 +513,7 @@ E um cartão menor, de rodapé da tela:
 **As variáveis — o que jamais pode ser nacionalizado.** Quatro colunas visuais,
 uma por praça:
 
-| | Londrina | Prudente | Feira | Riomafra |
+| | Londrina | Prudente | Feira | Mafra |
 |---|---|---|---|---|
 | Alavanca de preço | confiança + preço justo | clareza | preço como orgulho | palavra cumprida |
 | Posição | desafiante | **líder** | desafiante, 7x atrás | melhor nota, 4ª em volume |
@@ -544,7 +544,7 @@ entregou foi "dignidade e humanismo". → *"você entende tudo antes de decidir"
 Feira, e a unidade já está num coro de 59 anúncios quase idênticos. →
 *"cabe no seu bolso, meu rei"*
 
-**Riomafra — 🔴 CONFLITO.** "Últimos dias" aciona o radar antivigarista da
+**Mafra — 🔴 CONFLITO.** "Últimos dias" aciona o radar antivigarista da
 colônia. → *bloqueado: urgência de liquidação*
 
 **Abaixo, "A campanha nacional chega à cadeira?"** — três barras longas e quase
@@ -563,7 +563,7 @@ Todo número abre uma **gaveta lateral com vidro fosco**. É o que separa isto d
 um dashboard: um dashboard afirma; um portal de inteligência mostra de onde
 tirou e o que ainda não sabe.
 
-Exemplo, o agendamento de Riomafra:
+Exemplo, o agendamento de Mafra:
 - **5,9%** em tipografia enorme
 - *dos interessados viram avaliação agendada — a régua espera 40%*
 - Selo **confiança: média**

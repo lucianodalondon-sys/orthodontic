@@ -7,7 +7,7 @@ Grava em dados/serie/anuncios.jsonl, append-only. De first_seen/last_seen sai
 sobrevive dois meses está performando.
 
 Uso:
-    python3 coleta/coletores/meta_ads.py --praca riomafra
+    python3 coleta/coletores/meta_ads.py --praca mafra
     python3 coleta/coletores/meta_ads.py --todas
 """
 import argparse, json, os, pathlib, re, sys, time, urllib.error, urllib.parse, urllib.request
@@ -19,10 +19,10 @@ BRUTO = RAIZ/"dados"/"bruto"
 ACTOR = "curious_coder~facebook-ads-library-scraper"
 API = "https://api.apify.com/v2"
 
-# Busca por palavra-chave na praça. A ausência também é dado: em Riomafra a
+# Busca por palavra-chave na praça. A ausência também é dado: em Mafra a
 # unidade tinha ZERO anúncios no pico da temporada, e isso virou o alerta nº1.
 BUSCAS = {
- "riomafra":  [("aparelho ortodôntico Mafra", 60), ("OrthoDontic Mafra", 40),
+ "mafra":  [("aparelho ortodôntico Mafra", 60), ("OrthoDontic Mafra", 40),
                ("Instituto Lumière", 40), ("OdontoCompany Mafra", 40)],
  "londrina":  [("aparelho ortodôntico Londrina", 60), ("OrthoDontic Londrina", 40),
                ("Odontoclinic Londrina", 40)],

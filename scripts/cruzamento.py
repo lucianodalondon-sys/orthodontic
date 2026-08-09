@@ -6,7 +6,7 @@ O inteligencia.py lê uma praça. Este lê todas juntas, e responde uma pergunta
 diferente: **o que vale para a rede e o que vale só para uma cidade?**
 
 É a diferença entre consultoria e sistema. Um estudo diz "sua unidade de
-Riomafra está parada". Um sistema diz "trinta e sete unidades pararam este mês,
+Mafra está parada". Um sistema diz "trinta e sete unidades pararam este mês,
 e as sete que não pararam fazem a mesma coisa".
 
 Seis leituras:

@@ -17,11 +17,11 @@ post, comentário, matéria de portal.
 
 | Canal | Por que importa aqui |
 |---|---|
-| **Rádio** | Em Riomafra o estudo documenta 3 emissoras fortes, uma da paróquia, e que **um único balcão comercial vende 3 das 4 frequências**. Descrito como "a mídia da mãe e da avó". |
+| **Rádio** | Em Mafra o estudo documenta 3 emissoras fortes, uma da paróquia, e que **um único balcão comercial vende 3 das 4 frequências**. Descrito como "a mídia da mãe e da avó". |
 | **TV aberta** | O dossiê da rede registra que a **OdontoCompany usa TV aberta para volume**. |
 | **Outdoor, panfleto, fachada** | Sem rastro nenhum. |
-| **Patrocínio de comunidade** | A unidade de Riomafra **patrocina os escoteiros** — está no estudo. Não sabemos valor, alcance, nem se há outros. |
-| **Prêmio e circuito local** | Um concorrente de Riomafra foi "eleito ortodontista destaque do ano" por circuito comercialmente acessível. |
+| **Patrocínio de comunidade** | A unidade de Mafra **patrocina os escoteiros** — está no estudo. Não sabemos valor, alcance, nem se há outros. |
+| **Prêmio e circuito local** | Um concorrente de Mafra foi "eleito ortodontista destaque do ano" por circuito comercialmente acessível. |
 | **Parceria com escola e convênio** | Relevante porque a decisora é a mãe e o público-alvo está na escola. |
 | **Indicação / boca a boca** | Os quatro estudos apontam como **O canal de decisão**. Nenhuma fonte pública mede. |
 
@@ -38,7 +38,7 @@ em quatro variantes de nome.
 **O que dá para afirmar:** a OrthoDontic não está na busca paga.
 
 **O que NÃO dá para afirmar:** que a OrthoDontic "não está em nenhuma mídia".
-Ela pode estar no rádio de Riomafra, num outdoor em Feira, patrocinando o time
+Ela pode estar no rádio de Mafra, num outdoor em Feira, patrocinando o time
 da escola. Não sabemos.
 
 ### O caso do Moisés Suzart
