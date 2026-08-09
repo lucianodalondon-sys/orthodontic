@@ -2,8 +2,11 @@
 
 > Cole daqui para baixo. É só esta tela. Nenhuma outra.
 >
-> **Anexe junto os dois JSON:** `franqueadora.json` e `manifest.json`.
-> Eles vão em `dados/portal/` dentro do projeto.
+> **Os dados já estão no design system**, na pasta `dados/`:
+> `franqueadora.json`, `manifest.json` e `CONTRATO.md`.
+> Leia o `CONTRATO.md` antes de escrever a primeira linha — ele explica campo
+> a campo e traz as regras que não podem ser quebradas.
+> No projeto do portal eles ficam em `dados/portal/`.
 
 ---
 
