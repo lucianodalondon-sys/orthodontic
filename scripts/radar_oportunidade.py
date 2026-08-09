@@ -236,15 +236,30 @@ def rotulo_da_praca(praca_id):
 
 
 def referencias():
-    """Líder de cada praça já medida — é com elas que a cidade nova é comparada."""
+    """Líder de cada praça DA REDE — é com elas que a cidade nova é comparada.
+
+    ⚠ Desde que praça de oportunidade virou praça de verdade, ela também
+    escreve em categoria.jsonl. Sem filtrar por quem tem unidade, Macapá
+    entraria como referência da própria Macapá — a cidade comparada consigo
+    mesma, e a defesa sairia dizendo que a categoria dela é igual à dela.
+    Comparação circular não dá erro: dá número plausível."""
     arq = SERIE/"categoria.jsonl"
     if not arq.exists():
         return {}
+    da_rede = set()
+    for a in sorted((RAIZ/"dados"/"identidade").glob("*.json")):
+        try:
+            if not json.loads(a.read_text(encoding="utf-8")).get("sem_unidade"):
+                da_rede.add(a.stem)
+        except Exception:
+            pass
     por = {}
     for l in arq.read_text(encoding="utf-8").splitlines():
         if not l.strip():
             continue
         r = json.loads(l)
+        if r.get("praca_id") not in da_rede:
+            continue
         por.setdefault(r.get("praca_id"), []).append(r)
     fora = {}
     for p, rs in por.items():
