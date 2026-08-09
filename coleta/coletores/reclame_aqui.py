@@ -62,91 +62,96 @@ def jsonl(p):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--empresa", default="orthodontic", help="slug no Reclame Aqui")
-    ap.add_argument("--n", type=int, default=25, help="máx. reclamações (US$ 0,09 cada)")
+    ap.add_argument("--n", type=int, default=20, help="máx. reclamações por empresa (teto 20)")
+    ap.add_argument("--tambem", action="append", default=[],
+                    help="outra empresa na mesma corrida (comparar sem comparar é inútil)")
     args = ap.parse_args()
 
     hoje = dt.date.today().isoformat()
     tok = token()
-    print(f"empresa '{args.empresa}' · até {args.n} reclamações · custo estimado US$ {args.n*0.09:.2f}")
+    empresas = [args.empresa] + args.tambem
+    print(f"{len(empresas)} empresa(s): {', '.join(empresas)} · até {args.n} reclamações cada")
 
-    url = f"{API}/acts/{ACTOR}/run-sync-get-dataset-items?token={tok}&timeout=700&memory=1024"
+    # maxItems é obrigatório: o actor cobra por resultado e recusa rodar sem teto.
+    teto = len(empresas) * (min(args.n, 20) + 1)
+    url = (f"{API}/acts/{ACTOR}/run-sync-get-dataset-items"
+           f"?token={tok}&timeout=900&memory=2048&maxItems={teto}")
+    # O formato é do webdata_labs, que substituiu o viralanalyzer em 08/08/2026.
+    # Trocar o actor sem trocar o pedido devolve HTTP 400 — aconteceu.
     req = urllib.request.Request(url, data=json.dumps({
-        "companies": [args.empresa], "maxComplaints": args.n,
-        "includeCompanyStats": True,
-        "proxyConfiguration": {"useApifyProxy": True, "apifyProxyGroups": ["RESIDENTIAL"]},
+        "companies": empresas,
+        "maxComplaintsPerCompany": min(args.n, 20),
+        "includeCompanyRecord": True, "includeBreakdowns": True, "delayMs": 1200,
     }).encode(), headers={"Content-Type": "application/json"}, method="POST")
     try:
         itens = json.loads(urllib.request.urlopen(req, timeout=900).read())
     except Exception as e:
         sys.exit(f"falhou: {type(e).__name__} · {str(e)[:200]}")
 
-    reais = [i for i in itens if i.get("complaint_id")]
-    if not reais:
-        print("nenhuma reclamação — retorno de diagnóstico:")
-        print(json.dumps(itens[:1], ensure_ascii=False, indent=1)[:800])
+    # O webdata_labs devolve um registro por EMPRESA (recordType=company) e um
+    # por reclamação. O actor anterior devolvia tudo achatado — reaproveitar o
+    # parsing antigo fazia o dado chegar e não ser gravado, calado.
+    fichas = [i for i in itens if i.get("recordType") == "company"]
+    reclam = [i for i in itens if i.get("recordType") != "company" and i.get("id")]
+    if not fichas:
+        print("nenhuma ficha de empresa — retorno:")
+        print(json.dumps(itens[:1], ensure_ascii=False, indent=1)[:600])
         return
 
     d = BRUTO/"_rede"/"reclame_aqui"/hoje
     d.mkdir(parents=True, exist_ok=True)
-    (d/f"{args.empresa}.json").write_text(json.dumps(itens, ensure_ascii=False, indent=1), encoding="utf-8")
+    (d/f"{'_'.join(empresas)[:60]}.json").write_text(
+        json.dumps(itens, ensure_ascii=False, indent=1), encoding="utf-8")
 
-    # agregado da empresa — vem repetido em cada reclamação
-    a = reais[0]
-    agregado = {
-        "snapshot_date": hoje, "escopo": "marca", "empresa": args.empresa,
-        "nome": a.get("company_name"), "nota_ra": a.get("company_score"),
-        "reclamacoes_total": a.get("company_total_complaints"),
-        "voltaria_a_fazer_negocio_pct": a.get("company_would_buy_again"),
-        "indice_resposta_declarado": a.get("company_response_rate"),
-        "taxa_solucao_declarada": a.get("company_resolve_rate"),
-        "amostra_n": len(reais),
-        "amostra_nao_respondidas": sum(1 for r in reais if (r.get("status") or "").lower().startswith("não resp")),
-        "amostra_resolvidas": sum(1 for r in reais if r.get("is_resolved")),
-        "categorias": dict(Counter(r.get("category") or "?" for r in reais)),
-        "fonte": "apify/viralanalyzer-reclameaqui",
-    }
-
-    recs = {r["chave"]: r for r in jsonl(SERIE/"reclamacoes.jsonl")}
+    # append-only, como manda o contrato. Reescrever o arquivo já apagou dado
+    # do mesmo dia uma vez.
+    vistas = {r.get("chave") for r in jsonl(SERIE/"reclamacoes.jsonl")}
     novas = 0
-    for r in reais:
-        chave = f"{args.empresa}|{r['complaint_id']}"
-        if chave in recs:
-            recs[chave]["last_seen_snapshot"] = hoje
-            recs[chave]["status"] = r.get("status")
-            recs[chave]["resolvida"] = bool(r.get("is_resolved"))
-            continue
-        recs[chave] = {
-            "chave": chave, "snapshot_date": hoje, "empresa": args.empresa,
-            "complaint_id": r["complaint_id"], "titulo": r.get("title"),
-            "descricao": limpa(r.get("description"))[:900],
-            "categoria": r.get("category"), "status": r.get("status"),
-            "resolvida": bool(r.get("is_resolved")),
-            "respondida": bool(r.get("company_response")),
-            "criada_em": r.get("created_at"), "url": r.get("url"),
-            "first_seen_snapshot": hoje, "last_seen_snapshot": hoje,
-        }
-        novas += 1
+    with (SERIE/"reclamacoes.jsonl").open("a", encoding="utf-8") as f:
+        for r in reclam:
+            chave = f"{r.get('companySlug')}|{r.get('id')}"
+            if chave in vistas:
+                continue
+            vistas.add(chave)
+            f.write(json.dumps({
+                "chave": chave, "snapshot_date": hoje, "empresa": r.get("companySlug"),
+                "complaint_id": r.get("id"), "titulo": r.get("title"),
+                "descricao": limpa(r.get("description"))[:1500],
+                "status": r.get("status"), "resolvida": r.get("solved"),
+                "avaliada": r.get("evaluated"), "criada_em": r.get("created"),
+                "url": r.get("url"),
+                "first_seen_snapshot": hoje, "last_seen_snapshot": hoje,
+            }, ensure_ascii=False) + "\n")
+            novas += 1
 
-    with (SERIE/"reclamacoes.jsonl").open("w", encoding="utf-8") as f:
-        for r in sorted(recs.values(), key=lambda r: r.get("criada_em") or ""):
-            f.write(json.dumps(r, ensure_ascii=False) + "\n")
+    with (SERIE/"reclamacoes_agregado.jsonl").open("a", encoding="utf-8") as f:
+        for e in fichas:
+            i12 = e.get("companyIndex12Months") or {}
+            f.write(json.dumps({
+                "snapshot_date": hoje, "escopo": "marca",
+                "empresa": e.get("companySlug"), "nome": e.get("companyName"),
+                "nota_ra": e.get("consumerScore"), "nota_12m": i12.get("finalScore"),
+                "selo_12m": i12.get("status"),
+                "reclamacoes_total": e.get("complaintsTotal"),
+                "reclamacoes_12m": i12.get("totalComplains"),
+                "reclamacoes_30d": i12.get("totalComplains30"),
+                "respondidas_pct": i12.get("answeredPercentual"),
+                "resolvidas_pct": i12.get("solvedPercentual"),
+                "voltaria_pct": i12.get("dealAgainPercentual"),
+                "tempo_resposta_h": round((i12.get("averageAnswerTime") or 0)/3600, 1),
+                "nao_respondidas_12m": i12.get("totalNotAnswered"),
+                "segmento": e.get("mainSegment"), "amostra_n": min(args.n, 20),
+                "fonte": f"apify {ACTOR}",
+                "filtro": f"maxComplaintsPerCompany={min(args.n,20)} includeBreakdowns",
+            }, ensure_ascii=False) + "\n")
 
-    ag = [x for x in jsonl(SERIE/"reclamacoes_agregado.jsonl") if x.get("snapshot_date") != hoje]
-    with (SERIE/"reclamacoes_agregado.jsonl").open("w", encoding="utf-8") as f:
-        for x in ag + [agregado]:
-            f.write(json.dumps(x, ensure_ascii=False) + "\n")
-
-    print(f"\n{agregado['nome']} · nota {agregado['nota_ra']} · "
-          f"{agregado['reclamacoes_total']} reclamações no total")
-    print(f"voltaria a fazer negócio: {agregado['voltaria_a_fazer_negocio_pct']}%")
-    print(f"amostra: {len(reais)} · não respondidas {agregado['amostra_nao_respondidas']} · "
-          f"resolvidas {agregado['amostra_resolvidas']} · {novas} novas na série")
-    print("\ncategorias:")
-    for k, v in Counter(r.get("category") or "?" for r in reais).most_common():
-        print(f"  {k:34s} {v:3d}  {round(100*v/len(reais)):3d}%")
-    print("\nas mais recentes:")
-    for r in sorted(reais, key=lambda r: r.get("created_at") or "", reverse=True)[:6]:
-        print(f"  [{(r.get('status') or '?')[:16]:16s}] {(r.get('created_at') or '')[:10]} {r.get('title','')[:78]}")
+    print(f"\n{'nota':>5s} {'total':>7s} {'resp':>6s} {'resolv':>7s} {'volta':>6s}  selo · empresa")
+    for e in sorted(fichas, key=lambda x: -(x.get("complaintsTotal") or 0)):
+        i12 = e.get("companyIndex12Months") or {}
+        print(f"{str(e.get('consumerScore')):>5s} {str(e.get('complaintsTotal')):>7s} "
+              f"{str(i12.get('answeredPercentual')):>5s}% {str(i12.get('solvedPercentual')):>6s}% "
+              f"{str(i12.get('dealAgainPercentual')):>5s}%  {i12.get('status')} · {e.get('companyName')}")
+    print(f"\n{novas} reclamações novas na série · {len(fichas)} fichas de empresa")
 
 
 if __name__ == "__main__":

@@ -2,7 +2,8 @@
 
 **Coleta:** 08/08/2026 · **Praça:** 651.718 habitantes · **Custo:** ~US$ 2,80
 **Base:** 4.102 avaliações com data · 135 clínicas varridas · 12 canais ·
-710 vozes da cidade · 42 anúncios · 50 matérias
+710 vozes da cidade · 42 anúncios · 50 matérias · 15 posts da unidade ·
+2 redes concorrentes no Reclame Aqui
 
 > **A frase da praça:** *"A líder da cidade fez 463 avaliações em quatro meses
 > e não existia antes disso. A unidade faz o mesmo há treze."*
@@ -138,6 +139,43 @@ não tem voz de escala em nenhuma cidade além de Feira.
 
 **A escola de futsal é da prefeitura** — o que torna a parceria mais fácil e
 mais barata que uma escolinha privada.
+
+---
+
+## 5b · O RECLAME AQUI DOS CONCORRENTES DA PRAÇA
+
+Duas redes concorrentes de Contagem têm ficha no Reclame Aqui, e o contraste
+entre elas é útil:
+
+| Rede | Reclamações | Respondidas | Resolvidas | Voltaria | Selo |
+|---|---:|---:|---:|---:|---|
+| **Orthopride** | **6.670** | **100%** | 88,5% | 59,8% | GREAT |
+| **OrthoDontic** (rede) | 3.133 | 98,6% | **86,4%** | **63,3%** | GREAT |
+| **Oral Unic** | 34 | **0%** | 25% | 12,5% | **NÃO RECOMENDADA** |
+
+**A Orthopride é a concorrente séria.** Rede franqueada de ortodontia, presente
+em Contagem, com o dobro das reclamações da OrthoDontic mas **100% respondidas**
+e nota 7,52 contra 7,01. Ela responde tudo e resolve mais.
+
+A vantagem que resta à OrthoDontic é a que mais importa: **63,3% dizem que
+voltariam a fazer negócio, contra 59,8%**. Resolver é processo; fazer o cliente
+querer voltar é experiência.
+
+**A Oral Unic acabou de inaugurar em Contagem e já está NÃO RECOMENDADA** — 34
+reclamações, nenhuma respondida. É concorrente novo que chega frágil, e isso é
+informação de curto prazo: a praça vai ouvir falar mal dela.
+
+---
+
+## 5c · O FEED DA UNIDADE
+
+`@orthodontic.contagem` — **15 posts, mediana de 8 curtidas.** Sessenta por
+cento falam de aparelho, e três mostram gente.
+
+É o mesmo padrão de Cuiabá, onde a unidade que faz 43,8/mês tem mediana de **1**
+curtida. **O que sustenta as avaliações não é o Instagram.** Nas duas praças a
+máquina roda com o feed praticamente parado — o que reforça que ela roda no
+balcão, na hora do atendimento.
 
 ---
 

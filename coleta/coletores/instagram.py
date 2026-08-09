@@ -92,11 +92,15 @@ def perfis_da_identidade(praca):
         return []
     ident = json.loads(arq.read_text(encoding="utf-8"))
     import unicodedata, re
+    # mesma forma de PERFIS: (handle, papel, local_id)
+    proprio = next((l["local_id"] for l in ident.get("locais", [])
+                    if l.get("papel") == "proprio"), f"ortho_{praca}")
     fora = []
     for c in (ident.get("cidades") or []):
         n = unicodedata.normalize("NFKD", c.split("/")[0])
         n = re.sub(r"[^a-z0-9]", "", "".join(x for x in n if not unicodedata.combining(x)).lower())
-        fora += [f"orthodontic.{n}", f"orthodontic{n}", f"orthodontic.{n[:3]}"]
+        for h in (f"orthodontic.{n}", f"orthodontic{n}", f"orthodonticbrasil{n}"):
+            fora.append((h, "proprio", proprio))
     return fora
 
 
