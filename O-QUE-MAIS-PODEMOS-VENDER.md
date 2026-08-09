@@ -34,12 +34,43 @@ avaliações.** É praça de categoria fraca com público grande — 32 mil
 adolescentes e 78 mil adultos na faixa. Isso é argumento de venda de franquia,
 com número.
 
-**O que entregamos:** ranking de cidades brasileiras por oportunidade, cruzando
-população por faixa de idade, renda, número de clínicas e força do líder. A
-mesma varredura que custa US$ 0,05 por cidade.
+### Já rodou, e devolveu seis cidades
+
+Oito cidades varridas em 09/08. **Duas saíram porque a rede já está lá** —
+Santarém e Petrolina, que entraram de propósito como controle. Sobraram seis:
+
+| Praça | Habitantes | Adultos 30-45 | Passam de 300 | Líder |
+|---|---:|---:|---:|---:|
+| AP · Macapá | 489.676 | 104.811 | **1** | 427 |
+| AC · Rio Branco | 389.001 | 88.887 | **1** | 619 |
+| PA · Parauapebas | 305.771 | 75.937 | 4 | 1.055 |
+| CE · Juazeiro do Norte | 305.531 | 69.988 | 3 | 356 |
+| MA · Imperatriz | 285.806 | 67.291 | **0** | 291 |
+| PA · Marabá | 290.975 | 65.866 | 3 | 583 |
+
+E a lista oficial de unidades, que o radar passou a conferir, devolveu de
+quebra o fato que sozinho já vale a conversa:
+
+> **Quatro estados não têm uma única unidade OrthoDontic: AC, AP, MA e RN.**
+> Três das seis cidades acima estão exatamente neles.
+
+**O que entregamos:** por cidade, a **defesa escrita** — não uma nota. População
+e os dois alvos por faixa etária, o líder local comparado com o líder de uma
+praça que a rede já opera, habitantes por clínica forte contra a faixa real da
+rede (34.300 em Contagem a 164.249 em Palmas), contra quem se entra, e o que o
+número não prova. US$ 0,60 por cidade.
+
+**A checagem que faz isso valer:** "cidade livre" exige **duas fontes
+independentes** concordando — a lista oficial do site da rede (374 unidades,
+inclusive as 26 em implantação) e uma busca por nome no Google. Se uma delas
+não responder, a cidade sai como não conferida e não vira recomendação.
+Recomendar abertura onde já existe unidade queimaria a ferramenta inteira na
+primeira reunião.
 
 **Por que vale:** um contrato de franquia vale muito mais que um ano de portal.
 Se o radar ajudar a fechar **uma** unidade a mais, pagou o sistema inteiro.
+
+**O relatório completo está em `RADAR-DE-OPORTUNIDADE.md`.**
 
 ---
 

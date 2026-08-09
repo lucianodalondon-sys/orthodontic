@@ -175,6 +175,78 @@ def main():
         })
         escritos.append(f"pracas/{p}")
 
+    # ---------- radar de oportunidade ----------
+    # A única tela que fala com o time de EXPANSÃO, não com o de marketing.
+    # Entra no portal com a defesa escrita, não com nota: a decisão de abrir
+    # unidade é cara e ninguém assina por causa de um número de 0 a 100.
+    # Cidade que o radar não conseguiu conferir contra a lista oficial de
+    # unidades NÃO entra — sugerir praça onde já existe clínica é o erro que
+    # quebraria a confiança na ferramenta inteira.
+    op = jsonl("oportunidade")
+    if op:
+        corte_op = max(r["snapshot_date"] for r in op)
+        atual = ultimo_por([r for r in op if r["snapshot_date"] == corte_op],
+                           lambda r: r.get("cidade"))
+        cidades_radar, ocupadas, nao_conferidas = [], [], []
+        for r in atual.values():
+            if r.get("erro"):
+                continue
+            pres = r.get("presenca") or {}
+            linha = {k: r.get(k) for k in (
+                "rotulo", "cidade", "uf", "populacao", "alvo_9_15", "alvo_30_45",
+                "clinicas_amostradas", "clinicas_fortes", "lider_avaliacoes",
+                "avaliacoes_somadas", "hab_por_clinica_forte",
+                "uf_sem_nenhuma_unidade", "leitura", "maiores", "defesa")}
+            linha["conferencia"] = {
+                "conferida": pres.get("conferida"),
+                "livre": pres.get("livre"),
+                "motivo": pres.get("motivo"),
+                "unidades_da_rede": r.get("unidades_da_rede"),
+                "nomes_da_rede": r.get("nomes_da_rede"),
+                "fontes": ["lista oficial orthodonticbrasil.com.br",
+                           "busca por nome no Google Places"],
+            }
+            if not pres.get("conferida"):
+                nao_conferidas.append(linha)
+            elif not pres.get("livre"):
+                ocupadas.append(linha)
+            elif str(r.get("leitura", "")).startswith("OPORTUNIDADE"):
+                cidades_radar.append(linha)
+        cidades_radar.sort(key=lambda r: -(r.get("alvo_30_45") or 0))
+
+        unids = jsonl("unidades_rede")
+        rede_corte = max((u["snapshot_date"] for u in unids), default=None)
+        atuais = [u for u in unids if u["snapshot_date"] == rede_corte]
+        ufs_com = {u["uf"].upper() for u in atuais}
+        TODAS_UF = {"AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA",
+                    "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN",
+                    "RS", "RO", "RR", "SC", "SP", "SE", "TO"}
+        escritos.append(escreve("radar", {
+            "corte": corte_op,
+            "oportunidades": cidades_radar,
+            "ja_tem_unidade": ocupadas,
+            "nao_conferidas": nao_conferidas,
+            "rede_hoje": {
+                "corte": rede_corte,
+                "unidades": len(atuais),
+                "abertas": sum(1 for u in atuais if u["situacao"] == "aberta"),
+                "em_implantacao": sum(1 for u in atuais if u["situacao"] != "aberta"),
+                "cidades": len({u["cidade"] for u in atuais}),
+                "ufs_sem_nenhuma_unidade": sorted(TODAS_UF - ufs_com),
+                "fonte": "orthodonticbrasil.com.br/encontre-uma-unidade",
+            },
+            "ressalvas": [
+                "População residente, não a diurna — a literatura de território "
+                "diz que a diurna prevê melhor, e o IBGE não a publica de graça.",
+                "A praça é o município inteiro, não o raio de deslocamento real.",
+                "Mede a categoria pública do Google: volume e nota, não "
+                "faturamento nem ticket.",
+                "'Praça livre' é a lista oficial da rede mais a busca por nome "
+                "no Google. Uma unidade aberta ontem e ainda não publicada no "
+                "site é o furo que resta.",
+            ],
+        }))
+
     # ---------- achados, corretor, evidências ----------
     escritos.append(escreve("achados", carrega(CONT, "achados")))
     corr = carrega(CONT, "corretor")

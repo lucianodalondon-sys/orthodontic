@@ -113,8 +113,29 @@ alfabética vira ordem por estado de graça.
 O rótulo sai pronto no campo `rotulo` de `dados/identidade/<praca>.json`, e o
 código está em `scripts/rotulo.py`. **Ninguém monta isso à mão.**
 
-**Sai:** `praca_id`, lista de cidades com UF, o `rotulo`, e uma linha
-explicando o raio.
+### Antes de qualquer coisa: a rede está lá?
+
+```bash
+python3 coleta/coletores/unidades_da_rede.py --tem "Contagem/MG"
+```
+
+A lista oficial do site da rede — **374 unidades, 348 abertas e 26 em
+implantação, em 306 cidades** — é a única fonte que responde isso sem chute.
+Ela vale para os dois lados do trabalho:
+
+- **entrando numa praça da rede**, diz quantas unidades existem ali antes de a
+  varredura começar. Em Cuiabá são três; se a varredura achar duas, faltou uma.
+- **procurando praça nova** (etapa 14), diz que a cidade está livre. E "em
+  implantação" conta como ocupada: praça vendida não se vende de novo.
+
+> ⚠ **Não confie no site da ficha do Google para isso.** Era assim que o radar
+> media, e a conta só funciona quando o franqueado põe `orthodonticbrasil.com.br`
+> na ficha. Quem não pôs vira "cidade livre" — e a franqueadora recebe uma
+> recomendação de abrir onde já tem unidade. É o pior erro que este projeto
+> pode cometer, e ele estava a uma rodada de acontecer.
+
+**Sai:** `praca_id`, lista de cidades com UF, o `rotulo`, uma linha explicando
+o raio, e **quantas unidades da rede a lista oficial diz que existem ali**.
 
 ---
 
@@ -720,6 +741,62 @@ o que vale só para uma cidade.** Com 7 praças já mostrou que a rede sustenta
 
 ---
 
+## ETAPA 14 · O RADAR DE OPORTUNIDADE — onde a rede NÃO está
+
+**As treze etapas anteriores olham para dentro. Esta olha para fora**, e é a
+única que fala com o time de expansão em vez do de marketing — o único produto
+do projeto que entra na receita da franqueadora.
+
+```bash
+python3 scripts/radar_oportunidade.py --cidade "Macapá/AP" --salvar
+python3 scripts/radar_oportunidade.py --lista cidades.txt --salvar
+```
+
+Roda a mesma varredura da ETAPA 5 — **os mesmos seis termos, as mesmas três
+páginas** — numa cidade onde a rede não tem unidade. Isso não é detalhe: varrer
+mais raso faria a cidade parecer fraca só porque foi olhada com menos cuidado,
+e a comparação com Contagem seria mentira.
+
+### A regra dura: só sai "praça livre" com duas fontes concordando
+
+| Fonte | O que pega | O que deixa passar |
+|---|---|---|
+| lista oficial do site da rede | tudo que a rede publica, inclusive "em implantação" | unidade aberta ontem, ainda não publicada |
+| busca por nome no Google | a unidade nova e a que não usa o site da rede na ficha | unidade cadastrada com outro nome |
+
+**Se a lista oficial não responder, a cidade sai como NÃO CONFERIDA e não entra
+em recomendação nenhuma.** Devolver menos cidade é barato; recomendar abertura
+onde já existe unidade quebra a confiança na ferramenta inteira.
+
+### O que o radar devolve é um ARGUMENTO, não uma nota
+
+Nota de 0 a 100 não faz ninguém assinar contrato de franquia. Cada praça sai
+com cinco parágrafos, todos com número atrás:
+
+1. **Praça livre** — as duas fontes, ditas com nome. E, quando for o caso, o
+   fato que vale mais que a cidade: *"AP não tem uma única unidade da rede"*
+2. **Tamanho** — população e os dois alvos por faixa etária, com o adulto de
+   30-45 na frente, porque é 2 a 3× o adolescente e decide sozinho
+3. **A categoria é fraca, e dá para medir** — o líder da cidade contra o líder
+   de uma praça que a rede já opera, varridos do mesmo jeito
+4. **Tem espaço** — habitantes por clínica forte, contra a faixa real da rede:
+   de **34.300** (MG · Contagem, a mais disputada) a **164.249** (TO · Palmas,
+   a mais folgada)
+5. **Contra quem se entra** — os três maiores, com volume e nota
+6. **O que isto não prova** — e essa sai sempre
+
+### As ressalvas, que vão no relatório e não no rodapé
+
+- população **residente**, não a diurna — a literatura de território diz que a
+  diurna prevê melhor, e o IBGE não a publica de graça
+- a praça é o **município inteiro**, não o raio de deslocamento real
+- mede a **categoria pública do Google**: volume e nota, não faturamento
+
+**Custo:** ~US$ 0,60 por cidade. Uma unidade a mais vendida paga o sistema
+inteiro.
+
+---
+
 # O CHECKLIST DE ENTREGA
 
 Uma praça só está pronta quando tem:
@@ -742,6 +819,8 @@ Uma praça só está pronta quando tem:
 - [ ] `inteligencia.py` rodado — **as 8 leituras, não só as 5 automáticas**
 - [ ] o dossiê escrito
 - [ ] **`cruzamento.py` rodado — a praça nova muda a leitura da rede**
+- [ ] **a lista oficial de unidades conferida** — a varredura achou tantas
+      unidades quanto o site da rede publica para a cidade
 - [ ] ponto de partida congelado com data, para a próxima coleta comparar
 
 ---

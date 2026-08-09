@@ -146,6 +146,40 @@ Velocidade sozinha engana. Ao lado de "43,8/mês" vem sempre:
 De 130 clínicas que medimos, **só quatro sustentam.** É a informação mais rara
 que o portal tem, e hoje não aparece.
 
+### Uma tela nova: RADAR DE OPORTUNIDADE
+
+É a única tela que fala com o time de **expansão**, não com o de marketing —
+e a única que aparece como receita da franqueadora, não como custo. Lê
+`dados/portal/radar.json`.
+
+**Não é um ranking com nota.** Nota de 0 a 100 não faz ninguém assinar
+contrato de franquia. Cada cidade abre com **a defesa escrita**, e a defesa
+já vem pronta no JSON, no campo `defesa` — uma lista de parágrafos em ordem.
+O casco só renderiza; **não escreve frase e não calcula nada.**
+
+A tela tem três blocos, nesta ordem:
+
+**1 · A rede hoje** (`rede_hoje`) — 374 unidades, 348 abertas, 26 **em
+implantação**, 304 cidades. E, com destaque, `ufs_sem_nenhuma_unidade`:
+**AC, AP, MA e RN não têm uma única unidade.** Esse é o número que abre a
+conversa.
+
+**2 · As oportunidades** (`oportunidades`, já em ordem) — um cartão por
+cidade com o rótulo `UF · Cidade`, população, os dois alvos etários, quantas
+clínicas passam de 300 avaliações, o líder local, e habitantes por clínica
+forte. Clicou, abre a defesa inteira e a lista `maiores` (contra quem se
+entra).
+
+**3 · Fora do radar** (`ja_tem_unidade` e `nao_conferidas`) — e este bloco
+**não pode ser escondido**. É o que mostra que a checagem funciona: Santarém
+e Petrolina entraram como controle e saíram sozinhas, com o motivo escrito.
+Cidade em `nao_conferidas` aparece em cinza, com a frase *"não deu para
+conferir contra a lista oficial"* — nunca como recomendação.
+
+Em cada cartão, o selo de procedência: **conferido em duas fontes** — a lista
+oficial da rede e a busca por nome no Google (`conferencia.fontes`). E as
+`ressalvas` ficam **no topo da tela, não no rodapé**.
+
 ### O aviso de dado estimado
 
 Quando a praça só tem uma coleta, o número é estimativa. Marque com `~` e um
@@ -175,3 +209,6 @@ e não relatório.** A correção é de funcionamento e de escala, não de esté
 - [ ] a ficha abre com o histograma de 12 meses, não com o funil
 - [ ] todo ritmo tem selo de constância do lado
 - [ ] apagar o JSON não quebra o portal — ele mostra "sem dado"
+- [ ] a tela do Radar mostra as praças **fora** do radar, com o motivo, e não só
+      as recomendadas
+- [ ] nenhuma frase da defesa foi escrita pelo casco — todas saem de `radar.json`

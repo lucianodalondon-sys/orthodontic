@@ -37,7 +37,7 @@ Uso:
     python3 scripts/inteligencia.py --praca cuiaba
     python3 scripts/inteligencia.py --todas
 """
-import argparse, json, math, pathlib, re, statistics as st, unicodedata
+import argparse, json, math, pathlib, re, statistics as st, sys, unicodedata
 from collections import defaultdict, Counter
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
@@ -303,6 +303,25 @@ def roda(praca):
         print("\n  ⚠ MESMO LUGAR EM DOIS REGISTROS — o placar está contando duplicado:")
         for pid, lids in dobrados.items():
             print(f"    {pid} → {', '.join(lids)}")
+
+    # A varredura pode perder uma unidade da própria rede — foi assim que
+    # Feira ficou com uma ficha fantasma solta e Contagem quase ganhou uma
+    # unidade que não era nossa. A lista oficial do site é a conferência.
+    try:
+        sys.path.insert(0, str(RAIZ/"coleta"/"coletores"))
+        import unidades_da_rede as _rede
+        oficiais, quando = _rede.carregar()
+        cidades = (json.loads((RAIZ/"dados"/"identidade"/f"{praca}.json")
+                              .read_text(encoding="utf-8")).get("cidades") or [])
+        esperadas = [u for c in cidades for u in _rede.tem_unidade(c, oficiais)]
+        nossos = [m for m in M if m["papel"] == "proprio"]
+        if oficiais and len(esperadas) != len(nossos):
+            print(f"\n  ⚠ A REDE PUBLICA {len(esperadas)} UNIDADE(S) NESTA PRAÇA "
+                  f"e o placar tem {len(nossos)} (lista de {quando}):")
+            for u in esperadas:
+                print(f"    {u['unidade']} — {u['endereco'] or u['situacao']}")
+    except Exception as e:
+        print(f"\n  ⚠ não consegui conferir com a lista oficial de unidades: {e}")
 
     print("\n## 5 · O QUE ISSO NÃO VÊ")
     off = [o for o in jsonl(SERIE/"midia_offline.jsonl") if o.get("praca_id") == praca]
