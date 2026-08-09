@@ -144,7 +144,13 @@ def da_cidade(perfil, marcas_praca, tipo=None, uf=None):
     nome = sa(perfil.get("username") or "")
     bio = sa(" ".join([perfil.get("fullName") or "", perfil.get("biography") or ""]))
     blob = nome + " " + bio
-    if not any(m in blob for m in marcas_praca if len(m) > 4):
+    # Casa por BORDA DE PALAVRA, não por "contém". Buscar Macapá trouxe
+    # @prefeitura.macaparana — Macaparana é cidade de Pernambuco, e "macapa"
+    # é prefixo dela. É a mesma família de erro de 'orthodontics' contendo
+    # 'orthodontic' e de 'odontoclinic' engolindo 'Odontoclínica': comparar
+    # nome por substring erra calado, e sempre para o lado de incluir demais.
+    if not any(re.search(rf"\b{re.escape(m)}(?![a-z])", blob)
+               for m in marcas_praca if len(m) > 4):
         return False
     if any(c in bio for c in CONFLITO):
         return False

@@ -1,7 +1,9 @@
 # Prompt para o Claude Design — a SALA DE COMANDO da franqueadora
 
-> Cole daqui para baixo. Anexe junto o zip **OrthoDontic Design System**.
-> É só esta tela. Nenhuma outra.
+> Cole daqui para baixo. É só esta tela. Nenhuma outra.
+>
+> **Anexe junto os dois JSON:** `franqueadora.json` e `manifest.json`.
+> Eles vão em `dados/portal/` dentro do projeto.
 
 ---
 
@@ -36,11 +38,16 @@ E uma quarta, que é a estrutural:
 
 ---
 
-## 1 · A MARCA — use o design system anexo, não invente
+## 1 · A MARCA — use a skill `orthodontic-design`, não invente
 
-O zip **OrthoDontic Design System** é a marca real, reconstruída do Manual de
-Marca oficial. **Ele manda.** Não invente paleta, não escolha outra fonte, não
-redesenhe o logo.
+**Você já tem a skill `orthodontic-design`.** Carregue ela antes de escrever a
+primeira linha. É a marca real, reconstruída do Manual de Marca oficial —
+**ela manda.** Não invente paleta, não escolha outra fonte, não redesenhe o
+logo.
+
+Leia o `readme.md` da skill primeiro; ele traz o guia completo da marca. Se por
+algum motivo a skill não estiver disponível, peça o zip
+`OrthoDontic Design System` antes de começar — **não improvise a marca.**
 
 | | |
 |---|---|
@@ -53,7 +60,8 @@ redesenhe o logo.
 | **Anéis concêntricos** | o motivo da marca — anéis brancos, sólidos e em contorno, sangrando de um campo ciano. É a assinatura visual, use no cabeçalho |
 | **Ícones** | Lucide, traço médio, ponta arredondada |
 
-Ligue `styles.css` do system e herde os tokens. Use `assets/logos/` como está.
+Ligue o `styles.css` da skill e herde os tokens. Use `assets/logos/` como
+está — os arquivos foram extraídos do PDF do manual, nunca redesenhados.
 
 **Uma decisão que você precisa tomar com cuidado:** a marca é clara, alegre e
 azul; uma sala de comando pede densidade e foco. **Não escureça tudo** — isso
@@ -274,7 +282,7 @@ precisa funcionar com as duas escalas.
 - [ ] tem **mapa do Brasil por estado**, em SVG inline, com os 4 estados vazios marcados
 - [ ] tem **barra esquerda navy com as 13 ferramentas**, em 4 grupos
 - [ ] o Radar de Oportunidade é **um item da barra**, não a tela
-- [ ] usa **Gotham, ciano `#00B9FF` e navy `#001E78`** do design system anexo
+- [ ] usa **Gotham, ciano `#00B9FF` e navy `#001E78`** da skill `orthodontic-design`
 - [ ] o **motivo dos anéis concêntricos** aparece no cabeçalho
 - [ ] sombra com tinta navy, canto arredondado, botão pill
 - [ ] `7 praças medidas de 340` visível sem precisar procurar
@@ -289,12 +297,17 @@ precisa funcionar com as duas escalas.
 
 ## 7 · OS ARQUIVOS
 
-No repositório:
+Vão anexados a este briefing, e no projeto ficam assim:
 
 ```
-dados/portal/manifest.json        ← o índice
+index.html
+assets/…                          (css e js, sem CDN)
+dados/portal/manifest.json        ← o índice, primeiro fetch
 dados/portal/franqueadora.json    ← esta tela inteira
 ```
+
+A estrutura de pasta importa: o casco busca por **caminho relativo**, então
+`./dados/portal/…` precisa existir a partir do `index.html`.
 
 Use os arquivos reais. Não invente exemplo — exemplo sempre sai mais
 bem-comportado que o dado.
