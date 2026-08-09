@@ -1,0 +1,1540 @@
+{
+ "gerado_em": "2026-08-09",
+ "regua": "mafra",
+ "etapas": [
+  {
+   "etapa": 0,
+   "nome": "A praça definida",
+   "quem": "humano",
+   "so_para": null
+  },
+  {
+   "etapa": 0.5,
+   "nome": "A rede está lá?",
+   "quem": "auto",
+   "so_para": null
+  },
+  {
+   "etapa": 1,
+   "nome": "A cidade em números",
+   "quem": "auto",
+   "so_para": null
+  },
+  {
+   "etapa": 2,
+   "nome": "Quem fala com a cidade",
+   "quem": "auto+humano",
+   "so_para": null
+  },
+  {
+   "etapa": 3,
+   "nome": "Escutar a cidade",
+   "quem": "auto",
+   "so_para": null
+  },
+  {
+   "etapa": 5,
+   "nome": "Varrer a categoria",
+   "quem": "auto",
+   "so_para": null
+  },
+  {
+   "etapa": 6,
+   "nome": "Ritmo e meses seguidos",
+   "quem": "auto",
+   "so_para": null
+  },
+  {
+   "etapa": 7,
+   "nome": "A unidade por dentro",
+   "quem": "auto",
+   "so_para": "rede"
+  },
+  {
+   "etapa": 9,
+   "nome": "A joia enterrada",
+   "quem": "auto+humano",
+   "so_para": null
+  },
+  {
+   "etapa": 10,
+   "nome": "O que não vamos ver",
+   "quem": "humano",
+   "so_para": "rede"
+  },
+  {
+   "etapa": 11,
+   "nome": "A inteligência",
+   "quem": "humano",
+   "so_para": "rede"
+  },
+  {
+   "etapa": 13,
+   "nome": "Cruzar com as outras",
+   "quem": "auto",
+   "so_para": null
+  },
+  {
+   "etapa": 14,
+   "nome": "As portas da cidade",
+   "quem": "auto",
+   "so_para": null
+  },
+  {
+   "etapa": 15,
+   "nome": "O estudo de oportunidade",
+   "quem": "auto",
+   "so_para": "oportunidade"
+  },
+  {
+   "etapa": 16,
+   "nome": "O plano do franqueado",
+   "quem": "auto",
+   "so_para": "rede"
+  }
+ ],
+ "pracas": [
+  {
+   "praca_id": "contagem",
+   "rotulo": "MG · Contagem",
+   "tipo": "rede",
+   "feitas": 13,
+   "de": 14,
+   "completa": false,
+   "etapas": [
+    {
+     "etapa": 0,
+     "nome": "A praça definida",
+     "quem": "humano",
+     "ok": true,
+     "estado": "MG · Contagem · 16 locais",
+     "comando": null
+    },
+    {
+     "etapa": 0.5,
+     "nome": "A rede está lá?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 unidade(s) própria(s), 1 com ficha do Google identificada",
+     "comando": null
+    },
+    {
+     "etapa": 1,
+     "nome": "A cidade em números",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 município(s) com população do IBGE",
+     "comando": null
+    },
+    {
+     "etapa": 2,
+     "nome": "Quem fala com a cidade",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "9 canais com handle (mínimo 8)",
+     "comando": null
+    },
+    {
+     "etapa": 3,
+     "nome": "Escutar a cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "22803 vozes (mínimo 1000) — 2284 avaliações com texto, 725 posts",
+     "comando": null
+    },
+    {
+     "etapa": 5,
+     "nome": "Varrer a categoria",
+     "quem": "auto",
+     "ok": true,
+     "estado": "135 clínicas varridas (mínimo 80)",
+     "comando": null
+    },
+    {
+     "etapa": 6,
+     "nome": "Ritmo e meses seguidos",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3501 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 7,
+     "nome": "A unidade por dentro",
+     "quem": "auto",
+     "ok": true,
+     "estado": "500 avaliações da unidade · 42 anúncios da praça",
+     "comando": null
+    },
+    {
+     "etapa": 9,
+     "nome": "A joia enterrada",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "50 matérias de imprensa (mínimo 20)",
+     "comando": null
+    },
+    {
+     "etapa": 10,
+     "nome": "O que não vamos ver",
+     "quem": "humano",
+     "ok": true,
+     "estado": "8 canais offline declarados (rádio, outdoor, escola…)",
+     "comando": null
+    },
+    {
+     "etapa": 11,
+     "nome": "A inteligência",
+     "quem": "humano",
+     "ok": false,
+     "estado": "falta tese, dna (0/5), citações (0/4), plano (0/5)",
+     "comando": "escrever tese, dna, citações e plano em dados/conteudo/contagem.json"
+    },
+    {
+     "etapa": 13,
+     "nome": "Cruzar com as outras",
+     "quem": "auto",
+     "ok": true,
+     "estado": "16 temas classificados",
+     "comando": null
+    },
+    {
+     "etapa": 14,
+     "nome": "As portas da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "147 portas de busca · 3 leitura(s) de captação",
+     "comando": null
+    },
+    {
+     "etapa": 16,
+     "nome": "O plano do franqueado",
+     "quem": "auto",
+     "ok": true,
+     "estado": "plano do franqueado escrito",
+     "comando": null
+    }
+   ]
+  },
+  {
+   "praca_id": "cuiaba",
+   "rotulo": "MT · Cuiabá + MT · Várzea Grande",
+   "tipo": "rede",
+   "feitas": 11,
+   "de": 14,
+   "completa": false,
+   "etapas": [
+    {
+     "etapa": 0,
+     "nome": "A praça definida",
+     "quem": "humano",
+     "ok": true,
+     "estado": "MT · Cuiabá + MT · Várzea Grande · 29 locais",
+     "comando": null
+    },
+    {
+     "etapa": 0.5,
+     "nome": "A rede está lá?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 unidade(s) própria(s), 3 com ficha do Google identificada",
+     "comando": null
+    },
+    {
+     "etapa": 1,
+     "nome": "A cidade em números",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2 município(s) com população do IBGE",
+     "comando": null
+    },
+    {
+     "etapa": 2,
+     "nome": "Quem fala com a cidade",
+     "quem": "auto+humano",
+     "ok": false,
+     "estado": "0 canais com handle (mínimo 8)",
+     "comando": "python3 coleta/coletores/canais.py --praca cuiaba  (handle null = achar na mão)"
+    },
+    {
+     "etapa": 3,
+     "nome": "Escutar a cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "5147 vozes (mínimo 1000) — 4884 avaliações com texto, 240 posts",
+     "comando": null
+    },
+    {
+     "etapa": 5,
+     "nome": "Varrer a categoria",
+     "quem": "auto",
+     "ok": true,
+     "estado": "243 clínicas varridas (mínimo 80)",
+     "comando": null
+    },
+    {
+     "etapa": 6,
+     "nome": "Ritmo e meses seguidos",
+     "quem": "auto",
+     "ok": true,
+     "estado": "6854 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 7,
+     "nome": "A unidade por dentro",
+     "quem": "auto",
+     "ok": true,
+     "estado": "749 avaliações da unidade · 48 anúncios da praça",
+     "comando": null
+    },
+    {
+     "etapa": 9,
+     "nome": "A joia enterrada",
+     "quem": "auto+humano",
+     "ok": false,
+     "estado": "0 matérias de imprensa (mínimo 20)",
+     "comando": "python3 coleta/coletores/imprensa_rss.py --praca cuiaba"
+    },
+    {
+     "etapa": 10,
+     "nome": "O que não vamos ver",
+     "quem": "humano",
+     "ok": true,
+     "estado": "8 canais offline declarados (rádio, outdoor, escola…)",
+     "comando": null
+    },
+    {
+     "etapa": 11,
+     "nome": "A inteligência",
+     "quem": "humano",
+     "ok": false,
+     "estado": "falta tese, dna (0/5), citações (0/4), plano (0/5)",
+     "comando": "escrever tese, dna, citações e plano em dados/conteudo/cuiaba.json"
+    },
+    {
+     "etapa": 13,
+     "nome": "Cruzar com as outras",
+     "quem": "auto",
+     "ok": true,
+     "estado": "16 temas classificados",
+     "comando": null
+    },
+    {
+     "etapa": 14,
+     "nome": "As portas da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "157 portas de busca · 3 leitura(s) de captação",
+     "comando": null
+    },
+    {
+     "etapa": 16,
+     "nome": "O plano do franqueado",
+     "quem": "auto",
+     "ok": true,
+     "estado": "plano do franqueado escrito",
+     "comando": null
+    }
+   ]
+  },
+  {
+   "praca_id": "feira",
+   "rotulo": "BA · Feira de Santana",
+   "tipo": "rede",
+   "feitas": 13,
+   "de": 14,
+   "completa": false,
+   "etapas": [
+    {
+     "etapa": 0,
+     "nome": "A praça definida",
+     "quem": "humano",
+     "ok": true,
+     "estado": "BA · Feira de Santana · 22 locais",
+     "comando": null
+    },
+    {
+     "etapa": 0.5,
+     "nome": "A rede está lá?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 unidade(s) própria(s), 1 com ficha do Google identificada",
+     "comando": null
+    },
+    {
+     "etapa": 1,
+     "nome": "A cidade em números",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 município(s) com população do IBGE",
+     "comando": null
+    },
+    {
+     "etapa": 2,
+     "nome": "Quem fala com a cidade",
+     "quem": "auto+humano",
+     "ok": false,
+     "estado": "6 canais com handle (mínimo 8)",
+     "comando": "python3 coleta/coletores/canais.py --praca feira  (handle null = achar na mão)"
+    },
+    {
+     "etapa": 3,
+     "nome": "Escutar a cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3312 vozes (mínimo 1000) — 3233 avaliações com texto, 28 posts",
+     "comando": null
+    },
+    {
+     "etapa": 5,
+     "nome": "Varrer a categoria",
+     "quem": "auto",
+     "ok": true,
+     "estado": "145 clínicas varridas (mínimo 80)",
+     "comando": null
+    },
+    {
+     "etapa": 6,
+     "nome": "Ritmo e meses seguidos",
+     "quem": "auto",
+     "ok": true,
+     "estado": "4170 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 7,
+     "nome": "A unidade por dentro",
+     "quem": "auto",
+     "ok": true,
+     "estado": "80 avaliações da unidade · 63 anúncios da praça",
+     "comando": null
+    },
+    {
+     "etapa": 9,
+     "nome": "A joia enterrada",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "51 matérias de imprensa (mínimo 20)",
+     "comando": null
+    },
+    {
+     "etapa": 10,
+     "nome": "O que não vamos ver",
+     "quem": "humano",
+     "ok": true,
+     "estado": "1 canais offline declarados (rádio, outdoor, escola…)",
+     "comando": null
+    },
+    {
+     "etapa": 11,
+     "nome": "A inteligência",
+     "quem": "humano",
+     "ok": true,
+     "estado": "completa",
+     "comando": null
+    },
+    {
+     "etapa": 13,
+     "nome": "Cruzar com as outras",
+     "quem": "auto",
+     "ok": true,
+     "estado": "16 temas classificados",
+     "comando": null
+    },
+    {
+     "etapa": 14,
+     "nome": "As portas da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "131 portas de busca · 3 leitura(s) de captação",
+     "comando": null
+    },
+    {
+     "etapa": 16,
+     "nome": "O plano do franqueado",
+     "quem": "auto",
+     "ok": true,
+     "estado": "plano do franqueado escrito",
+     "comando": null
+    }
+   ]
+  },
+  {
+   "praca_id": "imperatriz",
+   "rotulo": "MA · Imperatriz",
+   "tipo": "oportunidade",
+   "feitas": 10,
+   "de": 11,
+   "completa": false,
+   "etapas": [
+    {
+     "etapa": 0,
+     "nome": "A praça definida",
+     "quem": "humano",
+     "ok": true,
+     "estado": "MA · Imperatriz · 14 locais",
+     "comando": null
+    },
+    {
+     "etapa": 0.5,
+     "nome": "A rede está lá?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "6 fontes independentes concordam que a rede não está lá",
+     "comando": null
+    },
+    {
+     "etapa": 1,
+     "nome": "A cidade em números",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 município(s) com população do IBGE",
+     "comando": null
+    },
+    {
+     "etapa": 2,
+     "nome": "Quem fala com a cidade",
+     "quem": "auto+humano",
+     "ok": false,
+     "estado": "2 canais com handle (mínimo 8)",
+     "comando": "python3 coleta/coletores/canais.py --praca imperatriz  (handle null = achar na mão)"
+    },
+    {
+     "etapa": 3,
+     "nome": "Escutar a cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1159 vozes (mínimo 1000) — 774 avaliações com texto, 159 posts",
+     "comando": null
+    },
+    {
+     "etapa": 5,
+     "nome": "Varrer a categoria",
+     "quem": "auto",
+     "ok": true,
+     "estado": "116 clínicas varridas (mínimo 80)",
+     "comando": null
+    },
+    {
+     "etapa": 6,
+     "nome": "Ritmo e meses seguidos",
+     "quem": "auto",
+     "ok": true,
+     "estado": "989 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 9,
+     "nome": "A joia enterrada",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "50 matérias de imprensa (mínimo 20)",
+     "comando": null
+    },
+    {
+     "etapa": 13,
+     "nome": "Cruzar com as outras",
+     "quem": "auto",
+     "ok": true,
+     "estado": "16 temas classificados",
+     "comando": null
+    },
+    {
+     "etapa": 14,
+     "nome": "As portas da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "44 portas de busca · 2 leitura(s) de captação",
+     "comando": null
+    },
+    {
+     "etapa": 15,
+     "nome": "O estudo de oportunidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "gêmea: TO · Palmas",
+     "comando": null
+    }
+   ]
+  },
+  {
+   "praca_id": "juazeiro_do_norte",
+   "rotulo": "CE · Juazeiro do Norte",
+   "tipo": "oportunidade",
+   "feitas": 10,
+   "de": 11,
+   "completa": false,
+   "etapas": [
+    {
+     "etapa": 0,
+     "nome": "A praça definida",
+     "quem": "humano",
+     "ok": true,
+     "estado": "CE · Juazeiro do Norte · 14 locais",
+     "comando": null
+    },
+    {
+     "etapa": 0.5,
+     "nome": "A rede está lá?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "6 fontes independentes concordam que a rede não está lá",
+     "comando": null
+    },
+    {
+     "etapa": 1,
+     "nome": "A cidade em números",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 município(s) com população do IBGE",
+     "comando": null
+    },
+    {
+     "etapa": 2,
+     "nome": "Quem fala com a cidade",
+     "quem": "auto+humano",
+     "ok": false,
+     "estado": "0 canais com handle (mínimo 8)",
+     "comando": "python3 coleta/coletores/canais.py --praca juazeiro_do_norte  (handle null = achar na mão)"
+    },
+    {
+     "etapa": 3,
+     "nome": "Escutar a cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1301 vozes (mínimo 1000) — 1301 avaliações com texto, 0 posts",
+     "comando": null
+    },
+    {
+     "etapa": 5,
+     "nome": "Varrer a categoria",
+     "quem": "auto",
+     "ok": true,
+     "estado": "124 clínicas varridas (mínimo 80)",
+     "comando": null
+    },
+    {
+     "etapa": 6,
+     "nome": "Ritmo e meses seguidos",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1976 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 9,
+     "nome": "A joia enterrada",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "50 matérias de imprensa (mínimo 20)",
+     "comando": null
+    },
+    {
+     "etapa": 13,
+     "nome": "Cruzar com as outras",
+     "quem": "auto",
+     "ok": true,
+     "estado": "16 temas classificados",
+     "comando": null
+    },
+    {
+     "etapa": 14,
+     "nome": "As portas da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "75 portas de busca · 2 leitura(s) de captação",
+     "comando": null
+    },
+    {
+     "etapa": 15,
+     "nome": "O estudo de oportunidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "gêmea: TO · Palmas",
+     "comando": null
+    }
+   ]
+  },
+  {
+   "praca_id": "londrina",
+   "rotulo": "PR · Londrina",
+   "tipo": "rede",
+   "feitas": 13,
+   "de": 14,
+   "completa": false,
+   "etapas": [
+    {
+     "etapa": 0,
+     "nome": "A praça definida",
+     "quem": "humano",
+     "ok": true,
+     "estado": "PR · Londrina · 24 locais",
+     "comando": null
+    },
+    {
+     "etapa": 0.5,
+     "nome": "A rede está lá?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2 unidade(s) própria(s), 2 com ficha do Google identificada",
+     "comando": null
+    },
+    {
+     "etapa": 1,
+     "nome": "A cidade em números",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 município(s) com população do IBGE",
+     "comando": null
+    },
+    {
+     "etapa": 2,
+     "nome": "Quem fala com a cidade",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "14 canais com handle (mínimo 8)",
+     "comando": null
+    },
+    {
+     "etapa": 3,
+     "nome": "Escutar a cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3255 vozes (mínimo 1000) — 3189 avaliações com texto, 42 posts",
+     "comando": null
+    },
+    {
+     "etapa": 5,
+     "nome": "Varrer a categoria",
+     "quem": "auto",
+     "ok": true,
+     "estado": "151 clínicas varridas (mínimo 80)",
+     "comando": null
+    },
+    {
+     "etapa": 6,
+     "nome": "Ritmo e meses seguidos",
+     "quem": "auto",
+     "ok": true,
+     "estado": "4324 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 7,
+     "nome": "A unidade por dentro",
+     "quem": "auto",
+     "ok": true,
+     "estado": "476 avaliações da unidade · 88 anúncios da praça",
+     "comando": null
+    },
+    {
+     "etapa": 9,
+     "nome": "A joia enterrada",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "56 matérias de imprensa (mínimo 20)",
+     "comando": null
+    },
+    {
+     "etapa": 10,
+     "nome": "O que não vamos ver",
+     "quem": "humano",
+     "ok": false,
+     "estado": "0 canais offline declarados (rádio, outdoor, escola…)",
+     "comando": "declarar canais offline em dados/serie/midia_offline.jsonl"
+    },
+    {
+     "etapa": 11,
+     "nome": "A inteligência",
+     "quem": "humano",
+     "ok": true,
+     "estado": "completa",
+     "comando": null
+    },
+    {
+     "etapa": 13,
+     "nome": "Cruzar com as outras",
+     "quem": "auto",
+     "ok": true,
+     "estado": "16 temas classificados",
+     "comando": null
+    },
+    {
+     "etapa": 14,
+     "nome": "As portas da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "180 portas de busca · 3 leitura(s) de captação",
+     "comando": null
+    },
+    {
+     "etapa": 16,
+     "nome": "O plano do franqueado",
+     "quem": "auto",
+     "ok": true,
+     "estado": "plano do franqueado escrito",
+     "comando": null
+    }
+   ]
+  },
+  {
+   "praca_id": "macapa",
+   "rotulo": "AP · Macapá",
+   "tipo": "oportunidade",
+   "feitas": 11,
+   "de": 11,
+   "completa": true,
+   "etapas": [
+    {
+     "etapa": 0,
+     "nome": "A praça definida",
+     "quem": "humano",
+     "ok": true,
+     "estado": "AP · Macapá · 14 locais",
+     "comando": null
+    },
+    {
+     "etapa": 0.5,
+     "nome": "A rede está lá?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "6 fontes independentes concordam que a rede não está lá",
+     "comando": null
+    },
+    {
+     "etapa": 1,
+     "nome": "A cidade em números",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 município(s) com população do IBGE",
+     "comando": null
+    },
+    {
+     "etapa": 2,
+     "nome": "Quem fala com a cidade",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "8 canais com handle (mínimo 8)",
+     "comando": null
+    },
+    {
+     "etapa": 3,
+     "nome": "Escutar a cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "12983 vozes (mínimo 1000) — 1134 avaliações com texto, 636 posts",
+     "comando": null
+    },
+    {
+     "etapa": 5,
+     "nome": "Varrer a categoria",
+     "quem": "auto",
+     "ok": true,
+     "estado": "135 clínicas varridas (mínimo 80)",
+     "comando": null
+    },
+    {
+     "etapa": 6,
+     "nome": "Ritmo e meses seguidos",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1608 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 9,
+     "nome": "A joia enterrada",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "50 matérias de imprensa (mínimo 20)",
+     "comando": null
+    },
+    {
+     "etapa": 13,
+     "nome": "Cruzar com as outras",
+     "quem": "auto",
+     "ok": true,
+     "estado": "16 temas classificados",
+     "comando": null
+    },
+    {
+     "etapa": 14,
+     "nome": "As portas da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "47 portas de busca · 2 leitura(s) de captação",
+     "comando": null
+    },
+    {
+     "etapa": 15,
+     "nome": "O estudo de oportunidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "gêmea: TO · Palmas",
+     "comando": null
+    }
+   ]
+  },
+  {
+   "praca_id": "mafra",
+   "rotulo": "SC · Mafra",
+   "tipo": "rede",
+   "feitas": 13,
+   "de": 14,
+   "completa": false,
+   "etapas": [
+    {
+     "etapa": 0,
+     "nome": "A praça definida",
+     "quem": "humano",
+     "ok": true,
+     "estado": "SC · Mafra · 15 locais",
+     "comando": null
+    },
+    {
+     "etapa": 0.5,
+     "nome": "A rede está lá?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 unidade(s) própria(s), 1 com ficha do Google identificada",
+     "comando": null
+    },
+    {
+     "etapa": 1,
+     "nome": "A cidade em números",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2 município(s) com população do IBGE",
+     "comando": null
+    },
+    {
+     "etapa": 2,
+     "nome": "Quem fala com a cidade",
+     "quem": "auto+humano",
+     "ok": false,
+     "estado": "4 canais com handle (mínimo 8)",
+     "comando": "python3 coleta/coletores/canais.py --praca mafra  (handle null = achar na mão)"
+    },
+    {
+     "etapa": 3,
+     "nome": "Escutar a cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1046 vozes (mínimo 1000) — 991 avaliações com texto, 26 posts",
+     "comando": null
+    },
+    {
+     "etapa": 5,
+     "nome": "Varrer a categoria",
+     "quem": "auto",
+     "ok": true,
+     "estado": "87 clínicas varridas (mínimo 80)",
+     "comando": null
+    },
+    {
+     "etapa": 6,
+     "nome": "Ritmo e meses seguidos",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1866 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 7,
+     "nome": "A unidade por dentro",
+     "quem": "auto",
+     "ok": true,
+     "estado": "155 avaliações da unidade · 93 anúncios da praça",
+     "comando": null
+    },
+    {
+     "etapa": 9,
+     "nome": "A joia enterrada",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "44 matérias de imprensa (mínimo 20)",
+     "comando": null
+    },
+    {
+     "etapa": 10,
+     "nome": "O que não vamos ver",
+     "quem": "humano",
+     "ok": true,
+     "estado": "3 canais offline declarados (rádio, outdoor, escola…)",
+     "comando": null
+    },
+    {
+     "etapa": 11,
+     "nome": "A inteligência",
+     "quem": "humano",
+     "ok": true,
+     "estado": "completa",
+     "comando": null
+    },
+    {
+     "etapa": 13,
+     "nome": "Cruzar com as outras",
+     "quem": "auto",
+     "ok": true,
+     "estado": "18 temas classificados",
+     "comando": null
+    },
+    {
+     "etapa": 14,
+     "nome": "As portas da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "64 portas de busca · 3 leitura(s) de captação",
+     "comando": null
+    },
+    {
+     "etapa": 16,
+     "nome": "O plano do franqueado",
+     "quem": "auto",
+     "ok": true,
+     "estado": "plano do franqueado escrito",
+     "comando": null
+    }
+   ]
+  },
+  {
+   "praca_id": "maraba",
+   "rotulo": "PA · Marabá",
+   "tipo": "oportunidade",
+   "feitas": 9,
+   "de": 11,
+   "completa": false,
+   "etapas": [
+    {
+     "etapa": 0,
+     "nome": "A praça definida",
+     "quem": "humano",
+     "ok": true,
+     "estado": "PA · Marabá · 14 locais",
+     "comando": null
+    },
+    {
+     "etapa": 0.5,
+     "nome": "A rede está lá?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "6 fontes independentes concordam que a rede não está lá",
+     "comando": null
+    },
+    {
+     "etapa": 1,
+     "nome": "A cidade em números",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 município(s) com população do IBGE",
+     "comando": null
+    },
+    {
+     "etapa": 2,
+     "nome": "Quem fala com a cidade",
+     "quem": "auto+humano",
+     "ok": false,
+     "estado": "0 canais com handle (mínimo 8)",
+     "comando": "python3 coleta/coletores/canais.py --praca maraba  (handle null = achar na mão)"
+    },
+    {
+     "etapa": 3,
+     "nome": "Escutar a cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1032 vozes (mínimo 1000) — 1032 avaliações com texto, 0 posts",
+     "comando": null
+    },
+    {
+     "etapa": 5,
+     "nome": "Varrer a categoria",
+     "quem": "auto",
+     "ok": true,
+     "estado": "90 clínicas varridas (mínimo 80)",
+     "comando": null
+    },
+    {
+     "etapa": 6,
+     "nome": "Ritmo e meses seguidos",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1417 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 9,
+     "nome": "A joia enterrada",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "50 matérias de imprensa (mínimo 20)",
+     "comando": null
+    },
+    {
+     "etapa": 13,
+     "nome": "Cruzar com as outras",
+     "quem": "auto",
+     "ok": true,
+     "estado": "16 temas classificados",
+     "comando": null
+    },
+    {
+     "etapa": 14,
+     "nome": "As portas da cidade",
+     "quem": "auto",
+     "ok": false,
+     "estado": "39 portas de busca · 2 leitura(s) de captação",
+     "comando": "python3 coleta/coletores/portas.py --praca maraba && python3 scripts/oportunidades_franqueado.py --praca maraba --salvar"
+    },
+    {
+     "etapa": 15,
+     "nome": "O estudo de oportunidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "gêmea: TO · Palmas",
+     "comando": null
+    }
+   ]
+  },
+  {
+   "praca_id": "palmas",
+   "rotulo": "TO · Palmas",
+   "tipo": "rede",
+   "feitas": 13,
+   "de": 14,
+   "completa": false,
+   "etapas": [
+    {
+     "etapa": 0,
+     "nome": "A praça definida",
+     "quem": "humano",
+     "ok": true,
+     "estado": "TO · Palmas · 14 locais",
+     "comando": null
+    },
+    {
+     "etapa": 0.5,
+     "nome": "A rede está lá?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 unidade(s) própria(s), 1 com ficha do Google identificada",
+     "comando": null
+    },
+    {
+     "etapa": 1,
+     "nome": "A cidade em números",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 município(s) com população do IBGE",
+     "comando": null
+    },
+    {
+     "etapa": 2,
+     "nome": "Quem fala com a cidade",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "9 canais com handle (mínimo 8)",
+     "comando": null
+    },
+    {
+     "etapa": 3,
+     "nome": "Escutar a cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "18121 vozes (mínimo 1000) — 1485 avaliações com texto, 725 posts",
+     "comando": null
+    },
+    {
+     "etapa": 5,
+     "nome": "Varrer a categoria",
+     "quem": "auto",
+     "ok": true,
+     "estado": "137 clínicas varridas (mínimo 80)",
+     "comando": null
+    },
+    {
+     "etapa": 6,
+     "nome": "Ritmo e meses seguidos",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2064 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 7,
+     "nome": "A unidade por dentro",
+     "quem": "auto",
+     "ok": true,
+     "estado": "150 avaliações da unidade · 26 anúncios da praça",
+     "comando": null
+    },
+    {
+     "etapa": 9,
+     "nome": "A joia enterrada",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "52 matérias de imprensa (mínimo 20)",
+     "comando": null
+    },
+    {
+     "etapa": 10,
+     "nome": "O que não vamos ver",
+     "quem": "humano",
+     "ok": true,
+     "estado": "7 canais offline declarados (rádio, outdoor, escola…)",
+     "comando": null
+    },
+    {
+     "etapa": 11,
+     "nome": "A inteligência",
+     "quem": "humano",
+     "ok": false,
+     "estado": "falta tese, dna (0/5), citações (0/4), plano (0/5)",
+     "comando": "escrever tese, dna, citações e plano em dados/conteudo/palmas.json"
+    },
+    {
+     "etapa": 13,
+     "nome": "Cruzar com as outras",
+     "quem": "auto",
+     "ok": true,
+     "estado": "16 temas classificados",
+     "comando": null
+    },
+    {
+     "etapa": 14,
+     "nome": "As portas da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "122 portas de busca · 3 leitura(s) de captação",
+     "comando": null
+    },
+    {
+     "etapa": 16,
+     "nome": "O plano do franqueado",
+     "quem": "auto",
+     "ok": true,
+     "estado": "plano do franqueado escrito",
+     "comando": null
+    }
+   ]
+  },
+  {
+   "praca_id": "parauapebas",
+   "rotulo": "PA · Parauapebas",
+   "tipo": "oportunidade",
+   "feitas": 10,
+   "de": 11,
+   "completa": false,
+   "etapas": [
+    {
+     "etapa": 0,
+     "nome": "A praça definida",
+     "quem": "humano",
+     "ok": true,
+     "estado": "PA · Parauapebas · 14 locais",
+     "comando": null
+    },
+    {
+     "etapa": 0.5,
+     "nome": "A rede está lá?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "6 fontes independentes concordam que a rede não está lá",
+     "comando": null
+    },
+    {
+     "etapa": 1,
+     "nome": "A cidade em números",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 município(s) com população do IBGE",
+     "comando": null
+    },
+    {
+     "etapa": 2,
+     "nome": "Quem fala com a cidade",
+     "quem": "auto+humano",
+     "ok": false,
+     "estado": "0 canais com handle (mínimo 8)",
+     "comando": "python3 coleta/coletores/canais.py --praca parauapebas  (handle null = achar na mão)"
+    },
+    {
+     "etapa": 3,
+     "nome": "Escutar a cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1290 vozes (mínimo 1000) — 1290 avaliações com texto, 0 posts",
+     "comando": null
+    },
+    {
+     "etapa": 5,
+     "nome": "Varrer a categoria",
+     "quem": "auto",
+     "ok": true,
+     "estado": "93 clínicas varridas (mínimo 80)",
+     "comando": null
+    },
+    {
+     "etapa": 6,
+     "nome": "Ritmo e meses seguidos",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1612 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 9,
+     "nome": "A joia enterrada",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "38 matérias de imprensa (mínimo 20)",
+     "comando": null
+    },
+    {
+     "etapa": 13,
+     "nome": "Cruzar com as outras",
+     "quem": "auto",
+     "ok": true,
+     "estado": "16 temas classificados",
+     "comando": null
+    },
+    {
+     "etapa": 14,
+     "nome": "As portas da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "44 portas de busca · 2 leitura(s) de captação",
+     "comando": null
+    },
+    {
+     "etapa": 15,
+     "nome": "O estudo de oportunidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "gêmea: SP · Presidente Prudente",
+     "comando": null
+    }
+   ]
+  },
+  {
+   "praca_id": "prudente",
+   "rotulo": "SP · Presidente Prudente",
+   "tipo": "rede",
+   "feitas": 12,
+   "de": 14,
+   "completa": false,
+   "etapas": [
+    {
+     "etapa": 0,
+     "nome": "A praça definida",
+     "quem": "humano",
+     "ok": true,
+     "estado": "SP · Presidente Prudente · 25 locais",
+     "comando": null
+    },
+    {
+     "etapa": 0.5,
+     "nome": "A rede está lá?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 unidade(s) própria(s), 1 com ficha do Google identificada",
+     "comando": null
+    },
+    {
+     "etapa": 1,
+     "nome": "A cidade em números",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 município(s) com população do IBGE",
+     "comando": null
+    },
+    {
+     "etapa": 2,
+     "nome": "Quem fala com a cidade",
+     "quem": "auto+humano",
+     "ok": false,
+     "estado": "3 canais com handle (mínimo 8)",
+     "comando": "python3 coleta/coletores/canais.py --praca prudente  (handle null = achar na mão)"
+    },
+    {
+     "etapa": 3,
+     "nome": "Escutar a cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2172 vozes (mínimo 1000) — 2154 avaliações com texto, 14 posts",
+     "comando": null
+    },
+    {
+     "etapa": 5,
+     "nome": "Varrer a categoria",
+     "quem": "auto",
+     "ok": true,
+     "estado": "121 clínicas varridas (mínimo 80)",
+     "comando": null
+    },
+    {
+     "etapa": 6,
+     "nome": "Ritmo e meses seguidos",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3367 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 7,
+     "nome": "A unidade por dentro",
+     "quem": "auto",
+     "ok": true,
+     "estado": "80 avaliações da unidade · 20 anúncios da praça",
+     "comando": null
+    },
+    {
+     "etapa": 9,
+     "nome": "A joia enterrada",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "51 matérias de imprensa (mínimo 20)",
+     "comando": null
+    },
+    {
+     "etapa": 10,
+     "nome": "O que não vamos ver",
+     "quem": "humano",
+     "ok": false,
+     "estado": "0 canais offline declarados (rádio, outdoor, escola…)",
+     "comando": "declarar canais offline em dados/serie/midia_offline.jsonl"
+    },
+    {
+     "etapa": 11,
+     "nome": "A inteligência",
+     "quem": "humano",
+     "ok": true,
+     "estado": "completa",
+     "comando": null
+    },
+    {
+     "etapa": 13,
+     "nome": "Cruzar com as outras",
+     "quem": "auto",
+     "ok": true,
+     "estado": "16 temas classificados",
+     "comando": null
+    },
+    {
+     "etapa": 14,
+     "nome": "As portas da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "109 portas de busca · 3 leitura(s) de captação",
+     "comando": null
+    },
+    {
+     "etapa": 16,
+     "nome": "O plano do franqueado",
+     "quem": "auto",
+     "ok": true,
+     "estado": "plano do franqueado escrito",
+     "comando": null
+    }
+   ]
+  },
+  {
+   "praca_id": "rio_branco",
+   "rotulo": "AC · Rio Branco",
+   "tipo": "oportunidade",
+   "feitas": 10,
+   "de": 11,
+   "completa": false,
+   "etapas": [
+    {
+     "etapa": 0,
+     "nome": "A praça definida",
+     "quem": "humano",
+     "ok": true,
+     "estado": "AC · Rio Branco · 14 locais",
+     "comando": null
+    },
+    {
+     "etapa": 0.5,
+     "nome": "A rede está lá?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "6 fontes independentes concordam que a rede não está lá",
+     "comando": null
+    },
+    {
+     "etapa": 1,
+     "nome": "A cidade em números",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 município(s) com população do IBGE",
+     "comando": null
+    },
+    {
+     "etapa": 2,
+     "nome": "Quem fala com a cidade",
+     "quem": "auto+humano",
+     "ok": false,
+     "estado": "5 canais com handle (mínimo 8)",
+     "comando": "python3 coleta/coletores/canais.py --praca rio_branco  (handle null = achar na mão)"
+    },
+    {
+     "etapa": 3,
+     "nome": "Escutar a cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "9364 vozes (mínimo 1000) — 1279 avaliações com texto, 398 posts",
+     "comando": null
+    },
+    {
+     "etapa": 5,
+     "nome": "Varrer a categoria",
+     "quem": "auto",
+     "ok": true,
+     "estado": "118 clínicas varridas (mínimo 80)",
+     "comando": null
+    },
+    {
+     "etapa": 6,
+     "nome": "Ritmo e meses seguidos",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1790 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 9,
+     "nome": "A joia enterrada",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "50 matérias de imprensa (mínimo 20)",
+     "comando": null
+    },
+    {
+     "etapa": 13,
+     "nome": "Cruzar com as outras",
+     "quem": "auto",
+     "ok": true,
+     "estado": "16 temas classificados",
+     "comando": null
+    },
+    {
+     "etapa": 14,
+     "nome": "As portas da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "95 portas de busca · 2 leitura(s) de captação",
+     "comando": null
+    },
+    {
+     "etapa": 15,
+     "nome": "O estudo de oportunidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "gêmea: TO · Palmas",
+     "comando": null
+    }
+   ]
+  }
+ ]
+}

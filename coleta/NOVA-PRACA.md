@@ -1,5 +1,18 @@
 # Como entrar numa cidade nova
 
+> **Antes de usar este documento, rode a checagem:**
+> ```bash
+> python3 scripts/padrao.py            # todas as praças, etapa por etapa
+> python3 scripts/padrao.py --praca mafra
+> ```
+> Ela lê o disco e diz o que cada praça tem, o que falta e **o comando que
+> preenche**. Este texto ensina o processo; `scripts/padrao.py` cobra o
+> processo. Quando os dois divergirem, o script é a verdade — ele olha os
+> arquivos, o texto olha a intenção.
+>
+> A régua é **SC · Mafra**: a praça que foi até o fim e cujo relatório a
+> diretoria usou para decidir.
+
 **O processo, exato.** Escrito depois de oito praças — Mafra, Londrina,
 Feira, Prudente, Cuiabá, Palmas e Contagem — e corrigido por cada erro que
 elas custaram.
