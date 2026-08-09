@@ -193,7 +193,15 @@ def main():
     PLANOS = RAIZ/"dados"/"planos"
     if PLANOS.exists():
         (OUT/"planos").mkdir(parents=True, exist_ok=True)
+        # Só publica plano de praça que TEM unidade. As seis de oportunidade
+        # geraram plano por engano e o texto falava com um franqueado que não
+        # existe ("a SUA clínica aparece em 0 das 20 buscas", em Macapá, onde
+        # a rede não tem unidade). O estudo daquelas cidades é outro arquivo,
+        # em oportunidade/, e continua publicado. A trava fica aqui além de no
+        # gerador porque o arquivo órfão pode sobreviver no disco.
         for arq in sorted(PLANOS.glob("*.json")):
+            if arq.stem in PRACAS_OPORTUNIDADE:
+                continue
             escreve(f"planos/{arq.stem}", json.loads(arq.read_text(encoding="utf-8")))
             escritos.append(f"planos/{arq.stem}")
 

@@ -540,6 +540,24 @@ def main():
     if not pracas:
         sys.exit("use --praca <id> ou --todas")
 
+    # --todas rodava na pasta de identidade inteira, e lá dentro estão também
+    # as seis praças de OPORTUNIDADE — cidades onde a rede NÃO tem unidade.
+    # Saíram seis planos escritos na segunda pessoa ("a SUA clínica aparece em
+    # 0 das 20 buscas", "abra o SEU perfil do Google") para um franqueado que
+    # não existe. O estudo daquelas cidades é outro arquivo, em
+    # dados/portal/oportunidade/, e continua valendo: lá a pergunta é se vale
+    # abrir, não o que o dono deve fazer na semana.
+    def tem_dono(praca):
+        p = IDENT/f"{praca}.json"
+        return not (json.loads(p.read_text(encoding="utf-8")).get("sem_unidade")
+                    if p.exists() else False)
+
+    sem_dono = [p for p in pracas if not tem_dono(p)]
+    if sem_dono and not a.praca:
+        print(f"  pulando {len(sem_dono)} praça(s) sem unidade — plano de "
+              f"franqueado precisa de franqueado: {', '.join(sem_dono)}")
+        pracas = [p for p in pracas if tem_dono(p)]
+
     for praca in pracas:
         p = monta(praca)
         if not p:
