@@ -4,7 +4,7 @@
 
 > ## A sua clínica aparece em 0 das 20 buscas que testamos na sua cidade.
 
-São **4 tarefas**, e **4 delas custam R$ 0**. A ordem é de propósito: o que é grátis vem antes do que custa.
+São **5 tarefas**, e **4 delas custam R$ 0**. A ordem é de propósito: o que é grátis vem antes do que custa.
 
 ---
 
@@ -62,11 +62,11 @@ Passar essas não é questão de verba. É questão de aparecer.
 
 `R$ 0` · `1 hora` · `você ou quem cuida do site`
 
-Quando alguém começa a digitar “dentista imperatriz”, o próprio Google completa com o nome de um bairro ou de um ponto conhecido da cidade. Encontramos **4**: Av Leopoldina, Imperial Ma, Santo Amaro e Trabalhador.
+Quando alguém começa a digitar “dentista imperatriz”, o próprio Google completa com o nome de um bairro ou de um ponto conhecido da cidade. Estes são os **4 candidatos** que a busca devolveu: Av Leopoldina, Imperial, Santo Amaro e Trabalhador.
 
 Isso quer dizer que o paciente da sua cidade procura por perto de casa, não pela cidade inteira. Quem escreve o nome do bairro aparece; quem não escreve, não.
 
-**Confira a lista antes de usar — dois minutos.** A máquina pega o que o Google completa e às vezes vem um nome de rua, de faculdade ou de cidade parecida no meio. Você conhece a sua cidade melhor que ela.
+**São candidatos, não uma lista pronta. Confira antes de usar — dois minutos.** A máquina pega o que o Google completa, e no meio vem nome de rua, de faculdade e até de clínica concorrente. Você conhece a sua cidade melhor que ela: risque os que não são bairro e fique com os que são.
 
 **O que fazer:**
 
@@ -103,6 +103,23 @@ E as palavras que eles usam para elogiar são sempre as mesmas: experiência, re
 3. Se dor e criança estão no topo, é por ali que o paciente entra — e o aparelho vem na conversa depois, não no anúncio.
 
 **Como saber que funcionou:** Não tem número de posição. O sinal é a avaliação nova começar a repetir as mesmas palavras.
+
+---
+
+## 5. Quem está anunciando na sua praça agora
+
+`depende` · `—` · `você e a agência`
+
+**69 anúncios ativos** de Clinica Ampla, Clinica do Sorriso Imp, Clínica Sorria, Dentista Imperial, Dentistas do Trabalhador - Imperatriz e mais 19.
+
+Anúncio é a última coisa da lista de propósito. As tarefas de cima custam zero e resolvem a maior parte. Verba de anúncio antes disso é pagar por um clique que o perfil daria de graça.
+
+**O que fazer:**
+
+1. Faça primeiro as tarefas grátis desta lista.
+2. Só depois, se quiser anunciar, comece pelas buscas onde o concorrente é forte e a intenção é de compra.
+
+**Como saber que funcionou:** A gente acompanha quem liga e quem desliga campanha, mês a mês.
 
 ---
 

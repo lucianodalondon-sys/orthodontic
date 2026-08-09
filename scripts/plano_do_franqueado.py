@@ -140,7 +140,25 @@ def tarefa_dentista(c):
     }
 
 
-def nomes_de_bairro(c, portas):
+def nomes_de_clinicas(praca):
+    """Todo nome de clínica da praça, em pedaços.
+
+    O detector de bairro estava devolvendo "Amor Saude", "Dntbras Buritizal",
+    "Avaliacoes Sobre Naila Vivianne" — nomes de clínica e sobras do
+    autocompletar. A varredura da praça já tem os nomes de TODAS as clínicas;
+    é ela que separa o que é bairro do que é concorrente. O dado para
+    consertar isso já estava na casa."""
+    palavras = set()
+    for f in ("categoria", "categoria_oportunidade"):
+        for r in jsonl(f):
+            if r.get("praca_id") != praca:
+                continue
+            for w in re.findall(r"[a-zà-úç]{3,}", sem_acento(r.get("nome"))):
+                palavras.add(w)
+    return palavras
+
+
+def nomes_de_bairro(c, portas, praca=None):
     """Mostrar 'elkind, luzia, dumont' não ajuda ninguém.
 
     O bairro é 'Saul Elkind', 'Santa Luzia', 'Santos Dumont' — a palavra
@@ -153,15 +171,53 @@ def nomes_de_bairro(c, portas):
                        r"telefone|endereco|numero|whatsapp|contato|dr|dra|doutor|"
                        r"doutora|especializada|especializado|infantil|preco|valor|"
                        + r"|".join(re.escape(w) for w in cidade.split()) + r")\b")
+    # Um nome de bairro tem cara de nome de lugar. "Edificio", "Center" e
+    # "Alameda 503" não têm — são pedaço de endereço que o autocompletar colou.
+    # Em Riomafra os SEIS "bairros" que foram para o plano do franqueado eram
+    # lixo, e o plano é o entregável mais lido do sistema. Um bairro inventado
+    # queima a confiança mais rápido do que dez acertos a constroem.
+    GENERICO = {"alameda", "avenida", "rua", "travessa", "rodovia", "estrada",
+                "edificio", "edifício", "center", "centro comercial", "shopping",
+                "galeria", "condominio", "condomínio", "predio", "prédio",
+                "sala", "loja", "andar", "bloco", "quadra", "lote", "km",
+                "clinica", "clínica", "consultorio", "consultório", "hospital",
+                "posto", "unidade", "sc", "pr", "sp", "mg", "ba", "to", "ce",
+                "ap", "ac", "ma", "pa", "pe"}
+
+    def parece_bairro(nome):
+        ws = [w for w in sem_acento(nome).split() if w]
+        if not ws or any(any(c.isdigit() for c in w) for w in ws):
+            return False           # "Alameda 503", "307 Norte"
+        if len(ws) == 1 and ws[0] in GENERICO:
+            return False           # "Center", "Edificio"
+        if ws[0] in GENERICO and len(ws) < 3:
+            return False           # "Alameda X", "Rua Y"
+        if ws[-1] in GENERICO:
+            return False           # "Fabiano Mafra Sc"
+        return True
+
+    # sobras do autocompletar que nunca são bairro
+    LIXO = re.compile(r"\b(fotos?|avaliacoes?|avaliacao|sobre|telefone|preco|"
+                      r"precos|valores|horario|whatsapp|contato|imagens?|"
+                      r"encontrado|morto|reclame|aqui)\b")
     fora = []
     for d in portas:
         if not d.get("bairro_palavras"):
             continue
         resto = corta.sub(" ", sem_acento(d["frase"]))
         resto = re.sub(r"\s+", " ", resto).strip()
-        if resto and len(resto) > 2 and not any(
-                w in NAO_E_BAIRRO for w in resto.split()):
-            fora.append(resto.title())
+        if not resto or len(resto) <= 2:
+            continue
+        if LIXO.search(resto) or any(w in NAO_E_BAIRRO for w in resto.split()):
+            continue
+        if not parece_bairro(resto):
+            continue
+        # ⚠ Não dá para descartar pelo nome das clínicas: em Londrina a
+        # clínica se chama "Odonto Excellence Gleba Palhano" e Gleba Palhano é
+        # o bairro. Cortar por essa regra apagou TODOS os bairros de verdade
+        # das treze praças. O que separa clínica de bairro é humano, e é por
+        # isso que a lista sai como CANDIDATOS com pedido de conferência.
+        fora.append(resto.title())
     # 'Leonor' e 'Jardim Leonor' são o mesmo bairro; fica o nome inteiro.
     unicos = sorted(set(fora), key=len, reverse=True)
     fica = []
@@ -171,9 +227,11 @@ def nomes_de_bairro(c, portas):
     return sorted(fica)
 
 
-def tarefa_bairros(c, portas):
+def tarefa_bairros(c, portas, praca):
     b = nomes_de_bairro(c, portas)
-    if not b:
+    # Menos de dois nomes confiáveis não sustenta a tarefa. Melhor a tarefa não
+    # existir do que existir com um nome que o franqueado sabe que está errado.
+    if len(b) < 2:
         return None
     return {
         "titulo": "A sua cidade procura dentista por bairro — e o seu bairro "
@@ -182,14 +240,16 @@ def tarefa_bairros(c, portas):
         "o_que_esta_acontecendo": [
             f"Quando alguém começa a digitar “dentista {c['rotulo'].split('· ')[-1].lower()}”, "
             f"o próprio Google completa com o nome de um bairro ou de um ponto "
-            f"conhecido da cidade. Encontramos **{len(b)}**: {lista(b, 8)}.",
+            f"conhecido da cidade. Estes são os **{len(b)} candidatos** que a "
+            f"busca devolveu: {lista(b, 8)}.",
             "Isso quer dizer que o paciente da sua cidade procura por perto de "
             "casa, não pela cidade inteira. Quem escreve o nome do bairro "
             "aparece; quem não escreve, não.",
-            "**Confira a lista antes de usar — dois minutos.** A máquina pega o "
-            "que o Google completa e às vezes vem um nome de rua, de faculdade "
-            "ou de cidade parecida no meio. Você conhece a sua cidade melhor "
-            "que ela.",
+            "**São candidatos, não uma lista pronta. Confira antes de usar — "
+            "dois minutos.** A máquina pega o que o Google completa, e no meio "
+            "vem nome de rua, de faculdade e até de clínica concorrente. Você "
+            "conhece a sua cidade melhor que ela: risque os que não são bairro "
+            "e fique com os que são.",
         ],
         "o_que_fazer": [
             "No perfil do Google, cite o bairro na descrição e nas publicações.",
@@ -371,7 +431,7 @@ def monta(praca):
     portas = [d for d in ultimo(jsonl("portas"), praca)
               if d.get("intencao") != "RUÍDO" and frase_util(d["frase"], ufs)]
     tarefas = [t for t in (tarefa_dentista(c), tarefa_ficha_dobrada(praca, ident),
-                           tarefa_bairros(c, portas), tarefa_sem_dono(c),
+                           tarefa_bairros(c, portas, praca), tarefa_sem_dono(c),
                            tarefa_convenios(c), tarefa_palavras(c),
                            tarefa_anuncio(c)) if t]
     tarefas.sort(key=lambda t: -t["peso"])

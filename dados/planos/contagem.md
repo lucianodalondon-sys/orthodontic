@@ -62,11 +62,11 @@ Cadastro repetido **divide a avaliação e a nota**. O paciente que avalia no pe
 
 `R$ 0` · `1 hora` · `você ou quem cuida do site`
 
-Quando alguém começa a digitar “dentista contagem”, o próprio Google completa com o nome de um bairro ou de um ponto conhecido da cidade. Encontramos **23**: Alvorada, Amor Saude, Angela Nova, Av Agua Branca, Av Santa Ines, Av Tiradentes, Centro, Eldorado Mg e mais 15.
+Quando alguém começa a digitar “dentista contagem”, o próprio Google completa com o nome de um bairro ou de um ponto conhecido da cidade. Estes são os **21 candidatos** que a busca devolveu: Alvorada, Amor Saude, Angela Nova, Av Agua Branca, Av Santa Ines, Av Tiradentes, Centro, Implantar e mais 13.
 
 Isso quer dizer que o paciente da sua cidade procura por perto de casa, não pela cidade inteira. Quem escreve o nome do bairro aparece; quem não escreve, não.
 
-**Confira a lista antes de usar — dois minutos.** A máquina pega o que o Google completa e às vezes vem um nome de rua, de faculdade ou de cidade parecida no meio. Você conhece a sua cidade melhor que ela.
+**São candidatos, não uma lista pronta. Confira antes de usar — dois minutos.** A máquina pega o que o Google completa, e no meio vem nome de rua, de faculdade e até de clínica concorrente. Você conhece a sua cidade melhor que ela: risque os que não são bairro e fique com os que são.
 
 **O que fazer:**
 

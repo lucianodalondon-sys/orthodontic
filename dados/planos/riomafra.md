@@ -33,27 +33,7 @@ Quem aparece no seu lugar: Clinica Simsmile Mafra (69 avaliações), Centro Odon
 
 ---
 
-## 2. A sua cidade procura dentista por bairro — e o seu bairro não está escrito em lugar nenhum
-
-`R$ 0` · `1 hora` · `você ou quem cuida do site`
-
-Quando alguém começa a digitar “dentista rio negro”, o próprio Google completa com o nome de um bairro ou de um ponto conhecido da cidade. Encontramos **6**: Alameda 503, Alameda 911, Alphaville, Center, Edificio e Fabiano Mafra Sc.
-
-Isso quer dizer que o paciente da sua cidade procura por perto de casa, não pela cidade inteira. Quem escreve o nome do bairro aparece; quem não escreve, não.
-
-**Confira a lista antes de usar — dois minutos.** A máquina pega o que o Google completa e às vezes vem um nome de rua, de faculdade ou de cidade parecida no meio. Você conhece a sua cidade melhor que ela.
-
-**O que fazer:**
-
-1. No perfil do Google, cite o bairro na descrição e nas publicações.
-2. No site, tenha uma página que diga o bairro e as referências de quem chega (a rua, o ponto conhecido do lado, onde estacionar).
-3. Se a clínica atende gente de mais de um bairro, cite os dois ou três de onde vem mais paciente — a recepção sabe quais são.
-
-**Como saber que funcionou:** Na próxima medição a gente testa a busca com o nome do bairro e vê se a clínica passou a aparecer.
-
----
-
-## 3. Tem busca importante onde o primeiro colocado é fraco
+## 2. Tem busca importante onde o primeiro colocado é fraco
 
 `R$ 0` · `junto com a primeira tarefa` · `você`
 
@@ -75,6 +55,26 @@ Passar essas não é questão de verba. É questão de aparecer.
 2. Continue pedindo avaliação no balcão. É o que sustenta a posição depois que ela chega.
 
 **Como saber que funcionou:** São as buscas que mudam primeiro. Se alguma coisa vai aparecer em 30 dias, é aqui.
+
+---
+
+## 3. A sua cidade procura dentista por bairro — e o seu bairro não está escrito em lugar nenhum
+
+`R$ 0` · `1 hora` · `você ou quem cuida do site`
+
+Quando alguém começa a digitar “dentista rio negro”, o próprio Google completa com o nome de um bairro ou de um ponto conhecido da cidade. Estes são os **2 candidatos** que a busca devolveu: Alphaville e Fabiano Mafra.
+
+Isso quer dizer que o paciente da sua cidade procura por perto de casa, não pela cidade inteira. Quem escreve o nome do bairro aparece; quem não escreve, não.
+
+**São candidatos, não uma lista pronta. Confira antes de usar — dois minutos.** A máquina pega o que o Google completa, e no meio vem nome de rua, de faculdade e até de clínica concorrente. Você conhece a sua cidade melhor que ela: risque os que não são bairro e fique com os que são.
+
+**O que fazer:**
+
+1. No perfil do Google, cite o bairro na descrição e nas publicações.
+2. No site, tenha uma página que diga o bairro e as referências de quem chega (a rua, o ponto conhecido do lado, onde estacionar).
+3. Se a clínica atende gente de mais de um bairro, cite os dois ou três de onde vem mais paciente — a recepção sabe quais são.
+
+**Como saber que funcionou:** Na próxima medição a gente testa a busca com o nome do bairro e vê se a clínica passou a aparecer.
 
 ---
 

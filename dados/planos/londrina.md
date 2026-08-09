@@ -39,11 +39,11 @@ Quem aparece no seu lugar: Dentista 24 horas Londrina - Dr. Alessandro Morais (4
 
 `R$ 0` · `1 hora` · `você ou quem cuida do site`
 
-Quando alguém começa a digitar “dentista londrina”, o próprio Google completa com o nome de um bairro ou de um ponto conhecido da cidade. Encontramos **15**: Av Santos Dumont, Central Saul Elkind, Centro, Gilmar Nova, Gleba Palhano, Hugo Simas, Jardim Leonor, Norte Shopping e mais 7.
+Quando alguém começa a digitar “dentista londrina”, o próprio Google completa com o nome de um bairro ou de um ponto conhecido da cidade. Estes são os **13 candidatos** que a busca devolveu: Av Santos Dumont, Central Saul Elkind, Centro, Gilmar Nova, Gleba Palhano, Hugo Simas, Jardim Leonor, Santa Luzia e mais 5.
 
 Isso quer dizer que o paciente da sua cidade procura por perto de casa, não pela cidade inteira. Quem escreve o nome do bairro aparece; quem não escreve, não.
 
-**Confira a lista antes de usar — dois minutos.** A máquina pega o que o Google completa e às vezes vem um nome de rua, de faculdade ou de cidade parecida no meio. Você conhece a sua cidade melhor que ela.
+**São candidatos, não uma lista pronta. Confira antes de usar — dois minutos.** A máquina pega o que o Google completa, e no meio vem nome de rua, de faculdade e até de clínica concorrente. Você conhece a sua cidade melhor que ela: risque os que não são bairro e fique com os que são.
 
 **O que fazer:**
 

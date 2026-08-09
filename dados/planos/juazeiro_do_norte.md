@@ -37,11 +37,11 @@ Quem aparece no seu lugar: Clínica Dentista Para Todos - Dentista Popular - Tra
 
 `R$ 0` · `1 hora` · `você ou quem cuida do site`
 
-Quando alguém começa a digitar “dentista juazeiro do norte”, o próprio Google completa com o nome de um bairro ou de um ponto conhecido da cidade. Encontramos **10**: Ana Ruth, Avaliacoes Sobre Naila Vivianne, Cariri Especializados, Gisele Estima -, Neta, Odontomedical Cariri Ce, Para Todos, Pelo Issec e mais 2.
+Quando alguém começa a digitar “dentista juazeiro do norte”, o próprio Google completa com o nome de um bairro ou de um ponto conhecido da cidade. Estes são os **9 candidatos** que a busca devolveu: Ana Ruth, Cariri Especializados, Gisele Estima -, Naila Vivianne, Neta, Para Todos, Pelo Issec, Renata Natalia e mais 1.
 
 Isso quer dizer que o paciente da sua cidade procura por perto de casa, não pela cidade inteira. Quem escreve o nome do bairro aparece; quem não escreve, não.
 
-**Confira a lista antes de usar — dois minutos.** A máquina pega o que o Google completa e às vezes vem um nome de rua, de faculdade ou de cidade parecida no meio. Você conhece a sua cidade melhor que ela.
+**São candidatos, não uma lista pronta. Confira antes de usar — dois minutos.** A máquina pega o que o Google completa, e no meio vem nome de rua, de faculdade e até de clínica concorrente. Você conhece a sua cidade melhor que ela: risque os que não são bairro e fique com os que são.
 
 **O que fazer:**
 

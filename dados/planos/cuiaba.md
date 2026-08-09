@@ -35,27 +35,7 @@ Quem aparece no seu lugar: Centro Odontológico Mato Grosso (49 avaliações), D
 
 ---
 
-## 2. A sua cidade procura dentista por bairro — e o seu bairro não está escrito em lugar nenhum
-
-`R$ 0` · `1 hora` · `você ou quem cuida do site`
-
-Quando alguém começa a digitar “dentista várzea grande”, o próprio Google completa com o nome de um bairro ou de um ponto conhecido da cidade. Encontramos **32**: Biologico Cuiaba, Coife, Costela -, Couto Magalhaes, Cristo Rei, Cuiaba Centro, Cuiaba Cpa, Cuiaba Juliana e mais 24.
-
-Isso quer dizer que o paciente da sua cidade procura por perto de casa, não pela cidade inteira. Quem escreve o nome do bairro aparece; quem não escreve, não.
-
-**Confira a lista antes de usar — dois minutos.** A máquina pega o que o Google completa e às vezes vem um nome de rua, de faculdade ou de cidade parecida no meio. Você conhece a sua cidade melhor que ela.
-
-**O que fazer:**
-
-1. No perfil do Google, cite o bairro na descrição e nas publicações.
-2. No site, tenha uma página que diga o bairro e as referências de quem chega (a rua, o ponto conhecido do lado, onde estacionar).
-3. Se a clínica atende gente de mais de um bairro, cite os dois ou três de onde vem mais paciente — a recepção sabe quais são.
-
-**Como saber que funcionou:** Na próxima medição a gente testa a busca com o nome do bairro e vê se a clínica passou a aparecer.
-
----
-
-## 3. Existe mais de um cadastro da sua clínica no Google
+## 2. Existe mais de um cadastro da sua clínica no Google
 
 `R$ 0` · `15 minutos + a espera do Google` · `você`
 
@@ -75,6 +55,26 @@ Cadastro repetido **divide a avaliação e a nota**. O paciente que avalia no pe
 2. Se o cadastro extra não for seu, marque como duplicado mesmo assim — o Google avalia.
 
 **Como saber que funcionou:** Na próxima medição os dois viram um só, e a contagem de avaliações soma em vez de dividir.
+
+---
+
+## 3. A sua cidade procura dentista por bairro — e o seu bairro não está escrito em lugar nenhum
+
+`R$ 0` · `1 hora` · `você ou quem cuida do site`
+
+Quando alguém começa a digitar “dentista várzea grande”, o próprio Google completa com o nome de um bairro ou de um ponto conhecido da cidade. Estes são os **28 candidatos** que a busca devolveu: Biologico Cuiaba, Coife, Costela -, Couto Magalhaes, Cristo Rei, Cuiaba Centro, Cuiaba Cpa, Cuiaba Juliana e mais 20.
+
+Isso quer dizer que o paciente da sua cidade procura por perto de casa, não pela cidade inteira. Quem escreve o nome do bairro aparece; quem não escreve, não.
+
+**São candidatos, não uma lista pronta. Confira antes de usar — dois minutos.** A máquina pega o que o Google completa, e no meio vem nome de rua, de faculdade e até de clínica concorrente. Você conhece a sua cidade melhor que ela: risque os que não são bairro e fique com os que são.
+
+**O que fazer:**
+
+1. No perfil do Google, cite o bairro na descrição e nas publicações.
+2. No site, tenha uma página que diga o bairro e as referências de quem chega (a rua, o ponto conhecido do lado, onde estacionar).
+3. Se a clínica atende gente de mais de um bairro, cite os dois ou três de onde vem mais paciente — a recepção sabe quais são.
+
+**Como saber que funcionou:** Na próxima medição a gente testa a busca com o nome do bairro e vê se a clínica passou a aparecer.
 
 ---
 

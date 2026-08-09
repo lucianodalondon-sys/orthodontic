@@ -439,10 +439,19 @@ def main():
                        a.stem for a in (OUT/"planos").glob("*.json"))
                        if (OUT/"planos").exists() else []),
                    f"{len(presentes_planos)} planos escritos"),
+        # "4 regiões" era leitura errada do próprio arquivo: são 4 PONTOS de
+        # uma região só (SC). Contar linha como se fosse região publicou como
+        # fato uma coisa que o arquivo nunca disse — o tipo de erro que, se o
+        # cliente acha antes da gente, contamina todo o resto da tela.
         ferramenta("sazonalidade", "Calendário da rede",
                    "quando a procura sobe em cada região",
-                   "sazonalidade", bool(sazon),
-                   f"{len(sazon)} regiões com curva de sazonalidade"),
+                   "sazonalidade", len({r.get("regiao") for r in sazon}) > 1,
+                   (f"{len({r.get('regiao') for r in sazon})} regiões · "
+                    f"{len(sazon)} pontos de curva" if sazon else "sem curva ainda"),
+                   ("só há curva de uma região ("
+                    + ", ".join(sorted({r.get("regiao") for r in sazon}))
+                    + f"), com {len(sazon)} pontos. Uma região não é calendário "
+                      f"da rede." if sazon else "nenhuma curva coletada")),
         ferramenta("evidencias", "Biblioteca de evidências",
                    "a citação por trás de cada afirmação",
                    "evidencias", (OUT/"evidencias.json").exists(),
