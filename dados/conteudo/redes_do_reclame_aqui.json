@@ -1,0 +1,26 @@
+{
+  "_por_que_este_arquivo_existe": "O Reclame Aqui não tem recorte por cidade: é nota de MARCA, nacional. Isso não o torna irrelevante — a franqueadora é dona da marca, e a nota nacional é responsabilidade dela, não do franqueado. Mas a coleta trouxe redes que não disputam o mesmo paciente. Quem quer aparelho não escolhe entre OrthoDontic e uma rede de implante. Comparar com elas infla a lista e enfraquece a comparação que importa.",
+  "_como_usar": "O portal mostra por padrão apenas foco 'ortodontia' e 'odontologia_popular'. As de foco 'implante' ficam na base, coletadas, mas fora da tela — e o arquivo diz que ficaram de fora e por quê. Se alguém discordar de uma classificação, muda aqui, não no código.",
+  "_criterio": "ortodontia = a rede se apresenta como rede de ortodontia/aparelho. odontologia_popular = rede de odontologia popular que vende aparelho junto com o resto, e disputa o mesmo paciente na mesma rua. implante = a venda principal é implante ou prótese; é outro tratamento, outro ticket, outra decisão.",
+  "redes": [
+    { "empresa": "orthodontic",  "foco": "ortodontia",          "nossa": true,
+      "nota": "a nossa" },
+    { "empresa": "orthopride",   "foco": "ortodontia",          "nossa": false,
+      "nota": "franquia de aparelho popular — a concorrente mais direta em modelo" },
+    { "empresa": "redeorto-franquia-em-clinica-de-ortodontia", "foco": "ortodontia", "nossa": false,
+      "nota": "o próprio nome declara franquia de clínica de ortodontia" },
+    { "empresa": "sorridents",   "foco": "odontologia_popular", "nossa": false,
+      "nota": "odontologia popular com aparelho no mix; disputa o mesmo paciente" },
+    { "empresa": "odonto-company", "foco": "odontologia_popular", "nossa": false,
+      "nota": "maior volume de reclamações da lista; vende aparelho no mix" },
+    { "empresa": "odontoclinic", "foco": "odontologia_popular", "nossa": false,
+      "nota": "aparece como concorrente de rua nas praças medidas" },
+    { "empresa": "sorrifacil",   "foco": "odontologia_popular", "nossa": false,
+      "nota": "franquia de odontologia popular" },
+    { "empresa": "oral-sin",     "foco": "implante",            "nossa": false,
+      "nota": "rede de implante — outro tratamento, outro ticket. Fora da tela." },
+    { "empresa": "oral-unic",    "foco": "implante",            "nossa": false,
+      "nota": "rede de implante. Fora da tela." }
+  ],
+  "focos_na_tela": ["ortodontia", "odontologia_popular"]
+}

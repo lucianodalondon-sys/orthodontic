@@ -362,12 +362,34 @@ def main():
     marcas = {}
     for r in sorted(jsonl("reclamacoes_agregado"), key=lambda x: x["snapshot_date"]):
         marcas[r.get("empresa")] = r
-    reputacao = sorted(
-        [{"marca": r.get("nome"), "reclamacoes": r.get("reclamacoes_total"),
-          "selo": r.get("selo_12m") or r.get("selo"), "nota": r.get("nota_12m"),
-          "nossa": (r.get("empresa") == "orthodontic"),
-          "medido_em": r["snapshot_date"]} for r in marcas.values()],
-        key=lambda x: -(x["reclamacoes"] or 0))
+
+    # Quem entra na comparação de marca. O Reclame Aqui é nacional e não tem
+    # recorte por cidade — e é exatamente por isso que ele é da franqueadora:
+    # a nota da marca é responsabilidade dela, não do franqueado. Mas a coleta
+    # trouxe rede de implante junto, e quem quer aparelho não escolhe entre
+    # OrthoDontic e uma rede de implante. A classificação mora em
+    # dados/conteudo/redes_do_reclame_aqui.json para poder ser contestada sem
+    # mexer em código.
+    cfg = carrega(CONT, "redes_do_reclame_aqui")
+    foco = {x["empresa"]: x for x in cfg.get("redes", [])}
+    na_tela = set(cfg.get("focos_na_tela") or ["ortodontia", "odontologia_popular"])
+
+    def linha_rep(r):
+        c = foco.get(r.get("empresa"), {})
+        return {"marca": r.get("nome"), "empresa": r.get("empresa"),
+                "reclamacoes": r.get("reclamacoes_total"),
+                "selo": r.get("selo_12m") or r.get("selo"), "nota": r.get("nota_12m"),
+                "nossa": (r.get("empresa") == "orthodontic"),
+                "foco": c.get("foco"), "nota_de_classificacao": c.get("nota"),
+                "medido_em": r["snapshot_date"]}
+
+    todas_rep = [linha_rep(r) for r in marcas.values()]
+    reputacao = sorted([x for x in todas_rep if x["foco"] in na_tela],
+                       key=lambda x: -(x["reclamacoes"] or 0))
+    # As que ficaram de fora aparecem nomeadas, com o motivo. Cortar em
+    # silêncio é como o "4 de 340" sobreviveu quatro semanas.
+    fora_da_rep = sorted([x for x in todas_rep if x["foco"] not in na_tela],
+                         key=lambda x: -(x["reclamacoes"] or 0))
 
     # a ficha do Google das unidades: o achado de categoria, agregado
     cat_ult = ultimo_por(jsonl("categoria"), lambda r: (r.get("praca_id"), r.get("place_id")))
@@ -463,7 +485,11 @@ def main():
         ferramenta("reputacao", "Reputação: rede contra rede",
                    "como a marca se compara com as concorrentes",
                    "reputacao", bool(reputacao),
-                   f"{len(reputacao)} redes medidas no Reclame Aqui", andar="decidir"),
+                   f"{len(reputacao)} redes de ortodontia e odontologia popular · "
+                   f"nota {next((x['nota'] for x in reputacao if x['nossa']), '?')} "
+                   f"contra {min((x['nota'] for x in reputacao if not x['nossa'] and x['nota']), default='?')} "
+                   f"a {max((x['nota'] for x in reputacao if not x['nossa'] and x['nota']), default='?')} delas",
+                   andar="decidir"),
         ferramenta("territorio", "Território vazio",
                    "que canal falta em cada praça, e ninguém ocupou",
                    "territorio", bool(cruz.get("territorio_vazio")),
@@ -543,6 +569,10 @@ def main():
         ],
         "ferramentas": ferramentas,
         "reputacao_das_redes": reputacao,
+        "reputacao_fora_da_tela": {
+            "redes": fora_da_rep,
+            "por_que": cfg.get("_por_que_este_arquivo_existe"),
+            "criterio": cfg.get("_criterio")},
         "fichas_da_rede": {"conferidas": len(fichas),
                            "por_categoria": dict(por_tipo),
                            "sem_site": sem_site},

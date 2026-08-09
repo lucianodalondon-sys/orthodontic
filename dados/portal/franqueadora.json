@@ -1,6 +1,6 @@
 {
   "corte": "2026-08-09",
-  "gerado_em": "2026-08-09T22:11:22",
+  "gerado_em": "2026-08-09T22:23:32",
   "rede": {
     "unidades": 374,
     "abertas": 348,
@@ -398,7 +398,7 @@
       "o_que_responde": "como a marca se compara com as concorrentes",
       "tela": "reputacao",
       "disponivel": true,
-      "resumo": "9 redes medidas no Reclame Aqui",
+      "resumo": "7 redes de ortodontia e odontologia popular · nota 8 contra 3 a 8.7 delas",
       "indisponivel_porque": null,
       "andar": "decidir"
     },
@@ -466,77 +466,110 @@
   "reputacao_das_redes": [
     {
       "marca": "Odontocompany",
+      "empresa": "odonto-company",
       "reclamacoes": 23283,
       "selo": "NOT_RECOMMENDED",
       "nota": 3.8,
       "nossa": false,
+      "foco": "odontologia_popular",
+      "nota_de_classificacao": "maior volume de reclamações da lista; vende aparelho no mix",
       "medido_em": "2026-08-08"
     },
     {
       "marca": "Sorridents Clínicas Odontológicas",
+      "empresa": "sorridents",
       "reclamacoes": 11425,
       "selo": "NOT_RECOMMENDED",
       "nota": 3,
       "nossa": false,
+      "foco": "odontologia_popular",
+      "nota_de_classificacao": "odontologia popular com aparelho no mix; disputa o mesmo paciente",
       "medido_em": "2026-08-08"
     },
     {
       "marca": "Orthopride",
+      "empresa": "orthopride",
       "reclamacoes": 6670,
       "selo": "GREAT",
       "nota": 8.1,
       "nossa": false,
+      "foco": "ortodontia",
+      "nota_de_classificacao": "franquia de aparelho popular — a concorrente mais direta em modelo",
       "medido_em": "2026-08-09"
     },
     {
       "marca": "OrthoDontic",
+      "empresa": "orthodontic",
       "reclamacoes": 3133,
       "selo": "GREAT",
       "nota": 8,
       "nossa": true,
+      "foco": "ortodontia",
+      "nota_de_classificacao": "a nossa",
       "medido_em": "2026-08-08"
     },
     {
       "marca": "Odontoclinic",
+      "empresa": "odontoclinic",
       "reclamacoes": 2457,
       "selo": "RA1000",
       "nota": 8.7,
       "nossa": false,
-      "medido_em": "2026-08-08"
-    },
-    {
-      "marca": "Oral Sin",
-      "reclamacoes": 1585,
-      "selo": "RA1000",
-      "nota": 9.1,
-      "nossa": false,
+      "foco": "odontologia_popular",
+      "nota_de_classificacao": "aparece como concorrente de rua nas praças medidas",
       "medido_em": "2026-08-08"
     },
     {
       "marca": "Sorrifácil",
+      "empresa": "sorrifacil",
       "reclamacoes": 939,
       "selo": "RA1000",
       "nota": 8.6,
       "nossa": false,
+      "foco": "odontologia_popular",
+      "nota_de_classificacao": "franquia de odontologia popular",
       "medido_em": "2026-08-08"
     },
     {
       "marca": "RedeOrto Franquia em Clinica de Ortodontia",
+      "empresa": "redeorto-franquia-em-clinica-de-ortodontia",
       "reclamacoes": 236,
       "selo": "REGULAR",
       "nota": 6,
       "nossa": false,
+      "foco": "ortodontia",
+      "nota_de_classificacao": "o próprio nome declara franquia de clínica de ortodontia",
       "medido_em": "2026-08-08"
-    },
-    {
-      "marca": "ORAL UNIC",
-      "reclamacoes": 34,
-      "selo": "NOT_RECOMMENDED",
-      "nota": 1.6,
-      "nossa": false,
-      "medido_em": "2026-08-09"
     }
   ],
+  "reputacao_fora_da_tela": {
+    "redes": [
+      {
+        "marca": "Oral Sin",
+        "empresa": "oral-sin",
+        "reclamacoes": 1585,
+        "selo": "RA1000",
+        "nota": 9.1,
+        "nossa": false,
+        "foco": "implante",
+        "nota_de_classificacao": "rede de implante — outro tratamento, outro ticket. Fora da tela.",
+        "medido_em": "2026-08-08"
+      },
+      {
+        "marca": "ORAL UNIC",
+        "empresa": "oral-unic",
+        "reclamacoes": 34,
+        "selo": "NOT_RECOMMENDED",
+        "nota": 1.6,
+        "nossa": false,
+        "foco": "implante",
+        "nota_de_classificacao": "rede de implante. Fora da tela.",
+        "medido_em": "2026-08-09"
+      }
+    ],
+    "por_que": "O Reclame Aqui não tem recorte por cidade: é nota de MARCA, nacional. Isso não o torna irrelevante — a franqueadora é dona da marca, e a nota nacional é responsabilidade dela, não do franqueado. Mas a coleta trouxe redes que não disputam o mesmo paciente. Quem quer aparelho não escolhe entre OrthoDontic e uma rede de implante. Comparar com elas infla a lista e enfraquece a comparação que importa.",
+    "criterio": "ortodontia = a rede se apresenta como rede de ortodontia/aparelho. odontologia_popular = rede de odontologia popular que vende aparelho junto com o resto, e disputa o mesmo paciente na mesma rua. implante = a venda principal é implante ou prótese; é outro tratamento, outro ticket, outra decisão."
+  },
   "fichas_da_rede": {
     "conferidas": 10,
     "por_categoria": {
