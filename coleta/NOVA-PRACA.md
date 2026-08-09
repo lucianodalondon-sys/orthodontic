@@ -41,14 +41,28 @@ elas custaram.
    └───────────────────────────┬─────────────────────────────────┘
                                ▼
    ┌─────────────────────────────────────────────────────────────┐
-   │ 10  O QUE NÃO VAMOS VER ........... declarado, obrigatório  │
-   │ 11  A LEITURA ..................... inteligencia.py         │
-   │ 12  O DOSSIÊ ...................... o que fica              │
+   │  PARTE 4 · A INTELIGÊNCIA    (sem isto, é dado parado)      │
+   ├─────────────────────────────────────────────────────────────┤
+   │ 10  o que não vamos ver ........... declarado, obrigatório  │
+   │ 11  a inteligência ................ 8 leituras:             │
+   │       11.1 o placar: ritmo E meses seguidos                 │
+   │       11.2 o histograma de 12 meses ..... quem desligou     │
+   │       11.3 mesma marca, mesma cidade .... controla tudo     │
+   │       11.4 as hipóteses recalculadas                        │
+   │       11.5 o que pesa contra ............ obrigatório       │
+   │       11.6 a leitura dos textos ......... humano            │
+   │       11.7 a resposta por eliminação .... humano            │
+   │       11.8 o degrau na escada do achado                     │
+   │ 12  o dossiê ...................... o que fica              │
    └─────────────────────────────────────────────────────────────┘
 ```
 
 **O atalho:** `python3 coleta/entrar.py --cidade "Contagem/MG"` faz as etapas
-1, 2, 3, 5, 6, 7 e 11 sozinho, em 14 minutos. As humanas ele lista no fim.
+1, 2, 3, 5, 6, 7 e as cinco primeiras leituras da 11, em 14 minutos. As
+humanas — a 0, a 4, a 9, a 10, a 11.6, a 11.7 e a 12 — ele lista no fim.
+
+**As duas leituras humanas da inteligência (11.6 e 11.7) foram as que deram os
+achados mais fortes do projeto.** Não são opcionais e não são automatizáveis.
 
 ---
 
@@ -435,23 +449,228 @@ emissoras, uma da paróquia — e a unidade patrocina os escoteiros.
 
 ---
 
-## ETAPA 11 · A leitura — automático, e nunca opcional
+## ETAPA 11 · A INTELIGÊNCIA — automático + humano, e nunca opcional
 
 ```bash
 python3 scripts/inteligencia.py --praca contagem
+python3 scripts/inteligencia.py --todas      # para ver o que a praça nova mudou
 ```
 
 **Coleta sem inteligência é dado parado.** Nenhuma praça vira dossiê sem passar
-por aqui. O script obriga a olhar:
+por aqui, e não é etapa que se faz quando sobra tempo.
 
-1. o placar pelo ritmo **e pelos meses seguidos**
-2. as unidades da mesma rede na praça, quando há mais de uma
-3. as hipóteses do projeto, recalculadas com o dado novo
-4. **o contraexemplo de cada achado** — achado sem contraexemplo procurado não
-   é achado, é torcida
-5. se a praça tem canais offline declarados
+São **sete leituras**. As cinco primeiras o script faz sozinho; as duas últimas
+são humanas e é onde estão os achados que mais valeram.
 
 ---
+
+### 11.1 · O placar pelo ritmo — e pelos meses seguidos
+
+Duas colunas, e a segunda é a que quase ninguém tem:
+
+```
+ ritmo  meses  total  nota  resp  clínica
+  250.1     3   3837   4.4   35%   Vitae Center            ⚡ RAJADA
+   54.4    12   1727   4.8    0%   Odonto Art 24 Horas
+   50.3    13    855   4.6    0% ★ OrthoDontic
+```
+
+O script marca sozinho quatro coisas que já enganaram a gente:
+
+| Marca | Quer dizer |
+|---|---|
+| `~estimado` | só há uma coleta; o número vem do intervalo da amostra |
+| `⚠ amostra dizia N` | o contador do Google e a amostra discordam — vale o contador |
+| `⚠ amostra de Nd` | intervalo curto demais para virar taxa mensal |
+| `⚡ RAJADA` | um único mês concentra 60% ou mais |
+| `N+` | a amostra encheu antes de alcançar o passado: é piso, não medida |
+
+**Leia nesta ordem:**
+
+1. **Quem lidera em VOLUME**, não em nota. Nota alta com volume baixo é o
+   padrão da rede — e é o problema, não a virtude.
+2. **Quem lidera em RITMO.**
+3. **Quem lidera em MESES SEGUIDOS.** Quase nunca é o mesmo dos dois primeiros.
+4. **Que tipo de concorrente é cada um** — rede popular, clínica geral bem
+   avaliada, **doutor com nome próprio**, clínica-escola, startup de tráfego
+   pago, especialista de nicho. Muda tudo o que vem depois.
+5. **A clínica-escola** — ela quase nunca faz aparelho de adolescente e adulto.
+   É a brecha que apareceu em todas as praças.
+
+---
+
+### 11.2 · O histograma de doze meses — a leitura que decide
+
+**O número de ritmo sozinho não distingue operação de campanha.** Só o mês a
+mês distingue, e é onde estão os três achados mais fortes do projeto:
+
+```
+★ OrthoDontic Cuiabá    65 48 43 43 44 34 55 48 45 37 40 46 46   MÁQUINA
+  Odontologia Prado      1  1  1  1  2  1 33 70 57 44 60         ligou em março
+  Clínica Goya          41 64 72 86 90 74 47 83 35  4  2  1  1   morreu em abril
+★ OrthoDontic Londrina  18  7  6 48 180 93 35  9                 FEZ E DESLIGOU
+```
+
+**Três perguntas, sempre:**
+
+- **quem sustenta?** dez meses ou mais com movimento
+- **quem acabou de ligar?** os líderes de hoje costumam ter três a cinco meses
+- **quem desligou?** é o achado mais valioso, porque é o mais fácil de resolver
+
+A matriz de Londrina saiu de ~170 para 566 avaliações em seis meses — a maior
+campanha da cidade — **e desligou**. Ninguém percebeu, porque ninguém media.
+A conversa que sai disso é outra: não é *"você vai mal"*, é ***"você fez melhor
+que todo mundo. Por que parou?"***
+
+---
+
+### 11.3 · Mesma marca, mesma cidade — quando existe, é a leitura mais forte
+
+Quando a praça tem mais de uma unidade da rede, **mercado, preço, marca e
+concorrência ficam controlados de graça.** O que sobra é a unidade.
+
+Em Cuiabá: **45,6 · 3,7 · 0,7 por mês.** Sessenta e cinco vezes de diferença.
+
+E 0,7 é exatamente o número de Riomafra — que a gente tinha atribuído à cidade
+pequena. Numa capital de um milhão, a mesma marca produz o mesmo 0,7.
+**0,7 é o que uma unidade produz quando não faz nada. Não é característica de
+praça.**
+
+Sempre procure outra unidade da rede na praça. A busca custa nada.
+
+---
+
+### 11.4 · As hipóteses, recalculadas
+
+O script recalcula, com o dado novo, os padrões que o projeto já levantou:
+
+```
+responder avaliação faz crescer      r = +0.54  → separa um pouco
+nota alta acompanha ritmo            r = +0.74  → separa bem
+avaliação curta acompanha ritmo      r = -0.25  → quase não separa
+```
+
+Ele traduz o coeficiente para português, porque ninguém na diretoria lê `r`.
+
+**Uma praça nova pode matar um padrão antigo, e isso é resultado, não
+problema.** Mas atenção ao que já aconteceu: com a lista de concorrentes feita
+a mão, "responder avaliação faz crescer" dava **negativo em quatro de cinco
+praças**. Com a varredura completa, **inverteu para positivo em quatro de
+cinco**.
+
+> **Amostra de conveniência não erra pouco. Erra de sinal.**
+
+---
+
+### 11.5 · O que pesa contra
+
+O script procura o contraexemplo de cada achado e imprime junto:
+
+```
+· Sorrize tem 70% de avaliação curta e ritmo 4,9 — curta não produz ritmo sozinha
+· OrthoDontic Centro Norte lidera em ritmo respondendo 0% das avaliações
+· Open Odonto responde 95% e faz só 6,6/mês
+```
+
+**Achado sem contraexemplo procurado não é achado, é torcida.**
+
+E se ele não encontrar nenhum contraexemplo, isso é motivo de desconfiança —
+não de comemoração.
+
+Ele também avisa duas coisas que já corromperam placar:
+
+- **dois registros apontando para o mesmo lugar** — em Feira, Moisés Suzart
+  estava contado duas vezes e o placar somava duplicado, calado
+- **praça sem canais offline declarados** — sem isso, "a unidade está parada"
+  pode ser mentira sobre uma clínica que está no rádio toda semana
+
+---
+
+### 11.6 · A leitura dos textos — humano, e é onde estava a resposta
+
+**O script conta assunto. Ele não lê.** E foi lendo que apareceu o achado
+principal do projeto.
+
+Três coisas para fazer à mão, comparando a unidade que vai bem com as que vão
+mal na mesma praça:
+
+**Procure a palavra que separa.** Em Cuiabá, procuramos termos que aparecessem
+muito mais nas avaliações da campeã. **Não existe nenhum.** O paciente descreve
+exatamente a mesma coisa nas três unidades. **A diferença não está na
+experiência.**
+
+**Olhe a FORMA, não o conteúdo.** A campeã tem mediana de **22 caracteres** por
+avaliação e 72% com até 40 — *"Ótimo atendimento 😍😍"*. Isso é assinatura de
+avaliação **pedida na hora**, no balcão. A que perde tem 126 caracteres, com
+elogio detalhado e reclamação de espera: avaliação espontânea.
+
+**Conte quem é citado pelo nome.** Zero por cento na campeã. Se ninguém é
+citado, a relação não é com uma pessoa.
+
+---
+
+### 11.7 · A resposta por eliminação — humano
+
+**Quando uma unidade vai muito melhor que as outras, descubra de onde isso vem
+riscando as fontes uma a uma.** Foi assim que a pergunta mais cara do projeto
+foi respondida:
+
+| Fonte | O que achamos |
+|---|---|
+| Instagram | mediana de **1 curtida**, e ficou 4 meses sem postar enquanto as avaliações continuavam a 45/mês |
+| Anúncio no Meta | **nenhum** — nem ela, nem as concorrentes de Cuiabá |
+| Anúncio no Google | **zero** em todo o Brasil, em 4 variantes de nome |
+| Responder avaliação | **0%**, igual às que perdem |
+| Texto das avaliações | **nenhuma palavra** separa das que perdem |
+
+**Sobrou o balcão.**
+
+E essa é a melhor notícia possível para a rede: **o que funciona não custa
+verba, não depende de agência, não precisa de aprovação de mídia e não some
+quando o orçamento aperta. É procedimento** — e procedimento se escreve, se
+treina e se cobra em 340 unidades.
+
+**O que pesa contra, e precisa ser dito junto:** avaliação curta sozinha não
+produz ritmo (a Sorrize tem 70% de curtas e faz 4,9/mês). Então isto é **sinal
+forte, não prova** — e a prova custa uma visita e uma pergunta: *quem pede a
+avaliação, em que momento, com que frase?*
+
+---
+
+### 11.8 · Onde o achado entra na escada
+
+Todo achado sai da inteligência com um degrau declarado:
+
+| Degrau | Quer dizer |
+|---|---|
+| **SINAL ISOLADO** | vimos em 1 ou 2 praças |
+| **SE REPETE** | vimos em 3 ou mais |
+| **VALE PARA A REDE** | vimos em praças bem diferentes entre si |
+| **VIROU REGRA** | a rede decidiu agir com base nisso |
+| **❌ CAIU** | uma praça mostrou o contrário |
+
+**Exemplo de promoção:** *"a rede não é a mais rápida, é a mais constante"*
+nasceu SINAL ISOLADO em Cuiabá, virou SE REPETE com Palmas e Contagem — três
+regiões diferentes.
+
+**Exemplo de queda e ressurreição:** *"responder avaliação faz crescer"* foi
+dado como ❌ CAIU com a amostra errada, e voltou a SE REPETE quando a amostra
+ficou completa. **Registre as duas coisas.** Um método que só guarda os
+acertos não é método.
+
+---
+
+### O QUE A INTELIGÊNCIA PRECISA DEVOLVER, SEMPRE
+
+- [ ] o placar com ritmo **e** meses seguidos
+- [ ] o histograma de 12 meses da unidade e do líder
+- [ ] quem sustenta, quem ligou agora, **quem desligou**
+- [ ] a comparação entre unidades da mesma rede, se houver
+- [ ] as hipóteses recalculadas, em português
+- [ ] **o contraexemplo de cada achado**
+- [ ] a leitura dos textos: a palavra que separa, a forma, quem é citado
+- [ ] o degrau de cada achado na escada
+- [ ] o que a coleta não viu
 
 ## ETAPA 12 · O dossiê
 
@@ -483,7 +702,7 @@ Uma praça só está pronta quando tem:
 - [ ] a joia enterrada — ou a declaração de que não tem
 - [ ] o calendário: férias escolares do estado + festas da cidade
 - [ ] **o que não estamos vendo, declarado**
-- [ ] `inteligencia.py` rodado
+- [ ] `inteligencia.py` rodado — **as 8 leituras, não só as 5 automáticas**
 - [ ] o dossiê escrito
 - [ ] ponto de partida congelado com data, para a próxima coleta comparar
 
