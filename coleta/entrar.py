@@ -151,15 +151,27 @@ def main():
 
         print(f"\n  {i}/{len(ETAPAS)} {nome} — {oque}")
         ok, saida = roda(linha)
+        # Etapa que devia gravar e gravou ZERO não é sucesso. O coletor sai com
+        # código 0 mesmo quando todo alvo devolveu 403, e "ok · +0 registros"
+        # passou despercebido em cinco cidades — a conta da Apify tinha estourado
+        # o limite mensal e a coleta seguiu fingindo que rodou.
+        # Zero silencioso é pior que erro: erro a gente conserta, zero a gente
+        # publica.
+        novos = (ja_tem(arq, praca) - tem) if arq else None
+        if ok and arq and novos == 0:
+            ok = False
+            saida = (saida or "") + "\n[vazio] a etapa rodou e não gravou nada"
         if ok:
-            depois = ja_tem(arq, praca)
-            print(f"      ok" + (f" · +{depois-tem} registros" if arq else ""))
+            print(f"      ok" + (f" · +{novos} registros" if arq else ""))
             feitas.append(nome)
         else:
             print(f"      FALHOU: {saida.strip().splitlines()[-1][:120] if saida.strip() else '?'}")
             falhas.append(nome)
-            if "not-enough-usage" in saida or "402" in saida:
-                print("\n  A conta da Apify acabou. Troque APIFY_TOKEN em _pipeline/.env e rode:")
+            if ("not-enough-usage" in saida or "402" in saida
+                    or "hard limit exceeded" in saida
+                    or "platform-feature-disabled" in saida):
+                print("\n  A conta da Apify acabou (crédito ou limite mensal).")
+                print("  Troque APIFY_TOKEN em _pipeline/.env e rode:")
                 print(f"    python3 coleta/entrar.py --praca {praca} --continuar\n")
                 return
 
