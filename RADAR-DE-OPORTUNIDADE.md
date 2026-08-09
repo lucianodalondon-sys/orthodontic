@@ -73,11 +73,17 @@ cuidado, e a comparação com Contagem seria mentira.
 | Praça | Habitantes | 30-45 anos | Clínicas varridas | Passam de 300 | Líder | Hab. por clínica forte |
 |---|---:|---:|---:|---:|---:|---:|
 | **AP · Macapá** | 489.676 | 104.811 | 133 | **1** | 427 | **489.676** |
-| **AC · Rio Branco** | 389.001 | 88.887 | 128 | **1** | 619 | **389.001** |
+| **AC · Rio Branco** | 389.001 | 88.887 | 120 | **1** | 619 | **389.001** |
 | **PA · Parauapebas** | 305.771 | 75.937 | 93 | 4 | 1.055 | 76.443 |
-| **CE · Juazeiro do Norte** | 305.531 | 69.988 | 122 | 3 | 356 | 101.844 |
-| **MA · Imperatriz** | 285.806 | 67.291 | 118 | **0** | 291 | — |
+| **CE · Juazeiro do Norte** | 305.531 | 69.988 | 124 | 3 | 356 | 101.844 |
+| **MA · Imperatriz** | 285.806 | 67.291 | 117 | **0** | 291 | — |
 | **PA · Marabá** | 290.975 | 65.866 | 92 | 3 | 583 | 96.992 |
+
+> O número de clínicas varridas oscila 2 a 4 entre duas varreduras do mesmo dia
+> — o Google devolve conjuntos ligeiramente diferentes para a mesma busca. Os
+> números acima são os da varredura que ficou gravada clínica por clínica em
+> `dados/serie/categoria_oportunidade.jsonl`. **As clínicas fortes e o líder não
+> mudaram em nenhuma cidade**, que é o que a leitura usa.
 
 **A régua.** Nas sete praças que a rede opera, habitantes por clínica forte vai
 de **34.300** (MG · Contagem, a mais disputada) a **164.249** (TO · Palmas, a
@@ -115,7 +121,7 @@ uma para cada 489.676 habitantes, mais folgada que qualquer praça da rede.
 **Praça livre**, e **AC também não tem nenhuma unidade da rede.**
 
 389.001 habitantes, **88.887 adultos de 30 a 45**. Líder com 619 avaliações —
-6 vezes menos que o de Contagem. De 128 clínicas varridas, **uma** passa de
+6 vezes menos que o de Contagem. De 120 clínicas varridas, **uma** passa de
 300: uma clínica forte para cada 389 mil habitantes.
 
 **Contra quem se entra.** Ortho Life (619, 4,9) · Laís Bittencourt (235, 5,0)
@@ -133,8 +139,8 @@ escolher o ponto.
 285.806 habitantes, 67.291 adultos de 30 a 45. E o número que não aparece em
 nenhuma outra cidade deste relatório:
 
-> **Nenhuma clínica de Imperatriz passa de 300 avaliações.** As 118 varridas
-> somam 3.220 no total — menos do que a maior clínica de MG · Contagem sozinha.
+> **Nenhuma clínica de Imperatriz passa de 300 avaliações.** As 117 varridas
+> somam 3.219 no total — menos do que a maior clínica de MG · Contagem sozinha.
 
 É a praça mais vazia que o radar já mediu. Também é a que exige mais cuidado:
 categoria fraca desse jeito pode significar mercado disponível **ou** hábito
@@ -190,6 +196,87 @@ duas ao mesmo tempo**. Abrir nas duas é uma aposta só, não duas.
 
 ---
 
+## A GÊMEA — "essa cidade dá quanto?"
+
+Achar a cidade é metade. A outra metade é a pergunta que vem em seguida na
+reunião de expansão, e ela não se responde com folga de mercado.
+
+Cada uma das seis foi comparada com as sete praças que a rede opera, em **seis
+eixos ao mesmo tempo** — habitantes, adultos de 30-45, jovens de 9-15, massa
+salarial por pessoa, clínicas fortes e volume do líder. A distância é a média
+das diferenças em log, com peso maior no público adulto e na força do líder.
+
+| Praça | Gêmea | Distância | O que a unidade faz lá |
+|---|---|---:|---|
+| AP · Macapá | **TO · Palmas** | 0,31 | 14,0/mês há 11 meses — OPERAÇÃO |
+| AC · Rio Branco | **TO · Palmas** | 0,30 | 14,0/mês há 11 meses — OPERAÇÃO |
+| CE · Juazeiro do Norte | **TO · Palmas** | 0,23 | 14,0/mês há 11 meses — OPERAÇÃO |
+| MA · Imperatriz | **TO · Palmas** | 0,43 | 14,0/mês há 11 meses — OPERAÇÃO |
+| PA · Marabá | **TO · Palmas** | 0,31 | 14,0/mês há 11 meses — OPERAÇÃO |
+| PA · Parauapebas | **SP · Presidente Prudente** | 0,31 | 13,2/mês há 5 meses — campanha |
+
+**Parauapebas foi a única que fugiu**, e por um motivo que aparece no dado:
+**R$ 7.201 de massa salarial por habitante/mês** — o dobro das outras cinco, e
+o mais parecido com Prudente. É a economia do minério.
+
+### Uma gêmea é um caso; três são uma faixa
+
+Cada estudo mostra o que as unidades das **três praças mais parecidas** fazem
+hoje — e a faixa é larga:
+
+| Ritmo/mês | Meses | Selo | Unidade | De onde vem o número |
+|---:|---:|---|---|---|
+| 0,0 | 0 | parada | OrthoDontic Mafra | contador do Google, 23 dias |
+| 0,8 | 2 | parada | OrthoDontic Londrina Centro | intervalo da amostra |
+| 4,0 | 7 | campanha | OrthoDontic Souza Naves | contador do Google, 23 dias |
+| 13,2 | 5 | campanha | OrthoDontic Presidente Prudente | contador do Google, 23 dias |
+| 14,0 | 11 | **OPERAÇÃO** | OrthoDontic Palmas | intervalo da amostra |
+
+**A diferença entre as pontas não é a cidade — é a operação.** É o mesmo achado
+de Cuiabá, onde três unidades da mesma marca, na mesma cidade, fazem 46,4 ·
+3,7 · 0,7 por mês.
+
+### Duas coisas honestas sobre a gêmea
+
+**A âncora é uma só.** Cinco das seis casaram com Palmas, e isso diz mais sobre
+a rede do que sobre as cidades: **a rede quase não opera praça deste perfil** —
+300 a 500 mil habitantes com categoria fraca. Palmas é o único caso. Vale
+entrar numa praça assim na próxima rodada de coleta, para a comparação deixar
+de depender de um exemplo.
+
+**A gêmea compara perfil, não gestão.** Ela diz que uma unidade OrthoDontic
+numa cidade deste tamanho, com esta renda e esta categoria, chegou a esse
+patamar. Não diz que esta chegará.
+
+---
+
+## O QUE A CONCORRÊNCIA TEM EM COMUM NAS SEIS
+
+Não foi procurado; apareceu quando as seis ficaram lado a lado.
+
+| Praça | Varridas | Fortes | Top 5 concentra | De rede nacional | Sem site | Fichas dobradas |
+|---|---:|---:|---:|---:|---:|---:|
+| AP · Macapá | 133 | 1 | 28% | 8 | 56% | 26 |
+| AC · Rio Branco | 120 | 1 | 33% | 4 | 51% | 22 |
+| CE · Juazeiro do Norte | 124 | 3 | 30% | 4 | 50% | 17 |
+| MA · Imperatriz | 117 | 0 | 30% | 4 | 45% | 21 |
+| PA · Marabá | 92 | 3 | 51% | 1 | 47% | 14 |
+| PA · Parauapebas | 93 | 4 | 54% | 3 | 39% | 17 |
+
+Três leituras saem daí:
+
+1. **Metade das clínicas não tem nem site na ficha** — de 39% a 56%. É uma
+   categoria digitalmente desarrumada, e quem chega organizado larga na frente
+   sem gastar em mídia.
+2. **A rede nacional quase não chegou.** De 1 a 8 clínicas por praça, contra
+   dezenas em Contagem ou Londrina. **A OdontoCompany, principal rival na
+   captação de franqueado, está presente mas pequena.**
+3. **As duas do Pará são diferentes das outras quatro:** o topo concentra
+   metade das avaliações (51% e 54%), contra ~30% nas demais. Lá existe um
+   dono do mercado; nas outras quatro não existe ninguém.
+
+---
+
 ## A ORDEM QUE EU RECOMENDARIA
 
 Não é a ordem de tamanho. É a ordem de **quanto o número está seguro**:
@@ -240,7 +327,7 @@ O processo completo está em `coleta/NOVA-PRACA.md`, ETAPA 14.
 
 ---
 
-_Varredura de 09/08/2026: 8 cidades, 906 clínicas, Google Places API. População
+_Varredura de 09/08/2026: 8 cidades pelo radar e 6 estudadas por inteiro (679 clínicas gravadas uma a uma), Google Places API. População
 e faixas etárias do IBGE (agregados 6579 e 9514, Censo 2022). Lista de unidades
 de orthodonticbrasil.com.br. Tudo em `dados/serie/oportunidade.jsonl` e
 `dados/serie/unidades_rede.jsonl`._

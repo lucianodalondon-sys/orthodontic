@@ -323,6 +323,19 @@ def roda(praca):
     except Exception as e:
         print(f"\n  ⚠ não consegui conferir com a lista oficial de unidades: {e}")
 
+    # Contador que CAI é avaliação removida — pelo Google ou por alguém. Não é
+    # ritmo negativo e não pode virar "-4,0/mês" numa tabela. A unidade de Feira
+    # foi de 173 para 170 em 23 dias e ninguém tinha percebido.
+    for lid, h in (hist or {}).items():
+        ds = sorted(h)
+        if len(ds) > 1 and h[ds[-1]] < h[ds[0]]:
+            import datetime as _dt
+            dias = (_dt.date.fromisoformat(ds[-1]) - _dt.date.fromisoformat(ds[0])).days
+            print(f"\n  ⚠ O CONTADOR CAIU em {locais.get(lid, {}).get('nome', lid)}: "
+                  f"{h[ds[0]]} → {h[ds[-1]]} em {dias} dias.")
+            print("    Avaliação removida, ficha mexida ou fusão de fichas. Não é "
+                  "ritmo negativo — é fato para conferir na ficha.")
+
     print("\n## 5 · O QUE ISSO NÃO VÊ")
     off = [o for o in jsonl(SERIE/"midia_offline.jsonl") if o.get("praca_id") == praca]
     if off:

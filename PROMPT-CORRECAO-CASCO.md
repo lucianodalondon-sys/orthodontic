@@ -180,6 +180,23 @@ Em cada cartão, o selo de procedência: **conferido em duas fontes** — a list
 oficial da rede e a busca por nome no Google (`conferencia.fontes`). E as
 `ressalvas` ficam **no topo da tela, não no rodapé**.
 
+**A GÊMEA é o que fecha o cartão.** Cada oportunidade traz `gemea` — a praça da
+rede com o mesmo perfil — e é ela que responde *"essa cidade dá quanto?"*.
+Mostre, em destaque, `gemea.frase`:
+
+> *"MA · Imperatriz tem capacidade de performar como TO · Palmas. Lá a unidade
+> OrthoDontic faz 14,0 avaliações por mês há 11 meses seguidos, tem 304
+> avaliações e nota 5,0."*
+
+Abaixo dela, `gemea.unidades_de_la` (o que a unidade faz lá, com o selo de
+constância) e **`gemea.onde_difere`, que não pode ser escondido** — é onde os
+eixos não batem, e é a parte honesta do cartão.
+
+Clicando, abre o estudo completo em `dados/portal/oportunidade/<id>.json`:
+a cidade (IBGE e imprensa), a concorrência inteira (quantas fortes, quanto o
+topo concentra, quantas de rede nacional, quantas sem site, fichas duplicadas)
+e os seis eixos da comparação lado a lado.
+
 ### O aviso de dado estimado
 
 Quando a praça só tem uma coleta, o número é estimativa. Marque com `~` e um

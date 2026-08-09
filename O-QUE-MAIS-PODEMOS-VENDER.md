@@ -70,7 +70,28 @@ primeira reunião.
 **Por que vale:** um contrato de franquia vale muito mais que um ano de portal.
 Se o radar ajudar a fechar **uma** unidade a mais, pagou o sistema inteiro.
 
-**O relatório completo está em `RADAR-DE-OPORTUNIDADE.md`.**
+### E a pergunta que vem depois: "essa cidade dá quanto?"
+
+Achar a praça é metade. Cada uma das seis foi comparada com as sete praças que
+a rede opera, em **seis eixos ao mesmo tempo** — habitantes, adultos de 30-45,
+jovens de 9-15, massa salarial por pessoa, clínicas fortes e volume do líder.
+Sai daí uma frase, não uma nota:
+
+> **AP · Macapá tem o perfil de TO · Palmas.** Lá a unidade OrthoDontic tem 304
+> avaliações, nota 5,0 e faz 14,0 avaliações por mês **há 11 meses seguidos** —
+> é operação, não campanha.
+
+Cinco das seis casaram com Palmas; **Parauapebas foi a exceção**, e o dado
+explica: R$ 7.201 de massa salarial por habitante/mês, o dobro das outras. É a
+economia do minério, e a gêmea dela virou Presidente Prudente.
+
+Cada estudo entrega ainda a **estrutura da concorrência**: quantas clínicas
+existem, quantas são fortes, quanto o topo concentra, quantas são de rede
+nacional, **quantas nem site têm** (39% a 56% nas seis) e quantos endereços
+aparecem com ficha duplicada (14 a 26 por praça).
+
+**O relatório completo está em `RADAR-DE-OPORTUNIDADE.md`, e cada praça tem o
+dossiê dela em `pesquisas/_dossies/OPORTUNIDADE-*.md`.**
 
 ---
 

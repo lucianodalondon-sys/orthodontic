@@ -214,6 +214,41 @@ def main():
                 cidades_radar.append(linha)
         cidades_radar.sort(key=lambda r: -(r.get("alvo_30_45") or 0))
 
+        # O estudo completo da praça de oportunidade — cidade, concorrência e a
+        # praça gêmea onde a rede já opera. É o que responde a segunda pergunta
+        # do time de expansão: "essa cidade dá quanto?". Sem a gêmea, o radar
+        # diz onde e não diz quanto.
+        EST = RAIZ/"dados"/"oportunidade"
+        estudos = {}
+        if EST.exists():
+            for arq in sorted(EST.glob("*.json")):
+                estudos[arq.stem] = json.loads(arq.read_text(encoding="utf-8"))
+        if estudos:
+            (OUT/"oportunidade").mkdir(parents=True, exist_ok=True)
+            for pid, est in estudos.items():
+                escreve(f"oportunidade/{pid}", est)
+                escritos.append(f"oportunidade/{pid}")
+            for linha in cidades_radar:
+                pid = next((k for k, v in estudos.items()
+                            if v.get("cidade") == linha.get("cidade")), None)
+                est = estudos.get(pid)
+                if not est:
+                    linha["estudo"] = None
+                    continue
+                g = est.get("gemea") or {}
+                linha["estudo"] = f"oportunidade/{pid}"
+                linha["gemea"] = {
+                    "rotulo": g.get("rotulo"), "praca_id": g.get("praca_id"),
+                    "distancia": g.get("distancia"), "frase": g.get("frase"),
+                    "unidades_de_la": g.get("unidades_de_la"),
+                    "onde_difere": g.get("onde_difere"),
+                }
+                linha["concorrencia"] = {
+                    k: est["concorrencia"].get(k) for k in
+                    ("varridas", "fortes", "medias", "fracas", "concentracao_top5",
+                     "de_rede_nacional", "sem_site_pct",
+                     "enderecos_com_ficha_dobrada", "nota_mediana")}
+
         unids = jsonl("unidades_rede")
         rede_corte = max((u["snapshot_date"] for u in unids), default=None)
         atuais = [u for u in unids if u["snapshot_date"] == rede_corte]

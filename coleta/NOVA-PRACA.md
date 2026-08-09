@@ -797,6 +797,82 @@ inteiro.
 
 ---
 
+## ETAPA 15 · O ESTUDO DA PRAÇA DE OPORTUNIDADE — e a GÊMEA
+
+O radar diz **onde**. Esta etapa diz **o que tem lá** e responde a pergunta que
+o time de expansão faz em seguida: **essa cidade dá quanto?**
+
+```bash
+python3 scripts/estudar_oportunidade.py --todas --salvar --dossie
+```
+
+Ninguém assina franquia por causa de *"1 clínica forte para cada 490 mil
+habitantes"*. Assina quando alguém diz: *"esta cidade se parece com Palmas, e
+em Palmas a unidade faz 14 avaliações por mês há onze meses seguidos."*
+
+### 15.1 · A cidade
+
+IBGE inteiro — população estimada, censo, massa salarial e as **treze faixas
+etárias**. Daí saem os dois alvos, que não se parecem: o adolescente de 9-15,
+que usa o aparelho, e o adulto de 30-45, que é 2 a 3× maior e decide sozinho.
+Mais **quem cobre a cidade** na imprensa, pelo RSS do Google Notícias.
+
+Custo zero. É a mesma coleta da ETAPA 1, só que sem unidade dentro.
+
+### 15.2 · A concorrência — estrutura, não lista de nomes
+
+A categoria varrida inteira, com os mesmos seis termos e três páginas. O que
+importa não é o número de clínicas, é o **desenho**:
+
+| O que se mede | O que decide |
+|---|---|
+| quantas passam de 300 avaliações | se dá para entrar sem brigar |
+| quanto as 5 maiores concentram | se é um gigante ou muitos médios |
+| quantas são de **rede nacional** | se o rival tem verba e time de vendas |
+| quantas **não têm site** na ficha | o quanto a praça está desarrumada |
+| **endereços com ficha duplicada** | o conserto mais barato que existe |
+
+### 15.3 · A GÊMEA — a praça da rede com o mesmo perfil
+
+Seis eixos comparados **ao mesmo tempo**, com peso maior no que muda o tamanho
+do negócio:
+
+| Eixo | Peso | Por quê |
+|---|---:|---|
+| adultos de 30 a 45 | 1,5 | é o alvo que paga |
+| volume do líder | 1,5 | mede o custo de entrar |
+| clínicas fortes | 1,2 | mede a folga |
+| habitantes | 1,0 | tamanho bruto |
+| massa salarial por pessoa | 1,0 | separa Parauapebas de Imperatriz |
+| jovens de 9 a 15 | 0,8 | descreve, não decide |
+
+A distância é a média das diferenças **em log** — porque o que importa é a
+razão, não a diferença: 400 mil contra 500 mil habitantes é quase igual, 30 mil
+contra 130 mil não é. **Eixo que falta é dito, nunca chutado**, e "zero clínicas
+fortes" entra na conta com meio ponto dos dois lados em vez de sumir.
+
+**A saída é uma frase, e ela vem com o contraexemplo colado:**
+
+> *"MA · Imperatriz tem capacidade de performar como TO · Palmas. Lá a unidade
+> faz 14,0 avaliações por mês há 11 meses seguidos, tem 304 avaliações e nota
+> 5,0 — 3ª em ritmo entre as 14 clínicas acompanhadas da praça."*
+
+E logo abaixo, **onde NÃO bate** — que vale mais que onde bate.
+
+> ⚠ **A gêmea é âncora, não promessa.** Ela diz que uma unidade OrthoDontic
+> numa cidade deste tamanho, com esta renda e esta categoria, chegou a esse
+> patamar. Não diz que esta chegará. **Em MT · Cuiabá três unidades da mesma
+> marca, na mesma cidade, fazem 46,4 · 3,7 · 0,7 por mês** — metade da conta é
+> o franqueado, o ponto e a operação, e essa metade nenhum dado público mede.
+
+**Sai:** `dados/oportunidade/<id>.json`, o dossiê em
+`pesquisas/_dossies/OPORTUNIDADE-<id>.md`, e a varredura inteira em
+`dados/serie/categoria_oportunidade.jsonl` — **arquivo separado de propósito**,
+porque misturar cidade sem unidade em `categoria.jsonl` estragaria o cruzamento
+da rede.
+
+---
+
 # O CHECKLIST DE ENTREGA
 
 Uma praça só está pronta quando tem:
