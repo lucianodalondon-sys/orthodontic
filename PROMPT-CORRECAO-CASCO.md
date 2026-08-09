@@ -197,6 +197,34 @@ a cidade (IBGE e imprensa), a concorrência inteira (quantas fortes, quanto o
 topo concentra, quantas de rede nacional, quantas sem site, fichas duplicadas)
 e os seis eixos da comparação lado a lado.
 
+### Outra tela nova: ONDE CAPTAR (a do franqueado)
+
+O Radar de Oportunidade fala com expansão. **Esta fala com o franqueado**, e é
+a única tela do portal que existe para ele AGIR, não para se comparar. Lê
+`dados/portal/captacao/<praca>.json`.
+
+Cinco blocos, e a ordem é a do custo — **do que é de graça para o que custa
+verba**, nunca o contrário:
+
+1. **As portas onde a unidade não aparece** (`fora`) — a frase que a cidade
+   digita, quem está no topo, e quantas avaliações esse tem. Mostre o resumo
+   por família (`por_familia`): em Londrina a unidade aparece em 5 de 5 portas
+   de "aparelho" e em **0 de 11** portas de "dentista". Esse contraste é a tela.
+2. **Portas sem dono** (`sem_dono`) — quem lidera tem menos de 300 avaliações.
+3. **Os bairros que a cidade digita** (`bairros`).
+4. **Os convênios procurados** (`convenios`) — com o aviso de que o dado
+   público não diz se a unidade aceita. **É pergunta, não afirmação.**
+5. **A palavra do paciente** (`vocabulario_da_praca`, `servicos_citados`) — é a
+   redação do anúncio, tirada das avaliações dos concorrentes.
+
+Cada porta precisa terminar em **um dos quatro destinos**, e o destino é o que
+o franqueado lê primeiro: `cadastro` (R$ 0) · `conteúdo` (R$ 0) · `decisão`
+(R$ 0) · `anúncio` (R$). Porta sem destino não entra na tela.
+
+⚠ **Nunca sugerir palavra-chave no nome da ficha.** É contra as diretrizes do
+Google e derruba a ficha. Se a tela tiver dica de cadastro, ela fala de
+categoria, serviços e descrição — nunca de nome.
+
 ### O aviso de dado estimado
 
 Quando a praça só tem uma coleta, o número é estimativa. Marque com `~` e um

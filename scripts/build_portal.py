@@ -175,6 +175,19 @@ def main():
         })
         escritos.append(f"pracas/{p}")
 
+    # ---------- radar do franqueado: onde captar ----------
+    # A única tela que o FRANQUEADO abre para agir, não para se comparar. Sai
+    # de dados/serie/captacao.jsonl, que já vem com a leitura pronta — o casco
+    # não classifica porta nem decide o que é conserto de ficha.
+    cap = jsonl("captacao")
+    if cap:
+        (OUT/"captacao").mkdir(parents=True, exist_ok=True)
+        corte_cap = max(r["snapshot_date"] for r in cap)
+        for r in ultimo_por([c for c in cap if c["snapshot_date"] == corte_cap],
+                            lambda c: c["praca_id"]).values():
+            escreve(f"captacao/{r['praca_id']}", r)
+            escritos.append(f"captacao/{r['praca_id']}")
+
     # ---------- radar de oportunidade ----------
     # A única tela que fala com o time de EXPANSÃO, não com o de marketing.
     # Entra no portal com a defesa escrita, não com nota: a decisão de abrir

@@ -49,10 +49,16 @@ ETAPAS = [
   ["python3", "coleta/coletores/meta_ads.py", "--praca", "{p}"], "anuncios", 0.40),
  ("imprensa", "a notícia local e a pista da joia enterrada",
   ["python3", "coleta/coletores/imprensa_rss.py", "--praca", "{p}"], "imprensa", 0.00),
+ ("portas", "as frases que a cidade digita, e onde a unidade some",
+  ["python3", "coleta/coletores/portas.py", "--praca", "{p}", "--quantas", "20",
+   "--salvar"], "portas", 0.64),
  ("separar", "as vozes por assunto",
   ["python3", "scripts/classificar.py"], None, 0.00),
  ("ler", "o placar, as hipóteses e o que pesa contra",
   ["python3", "scripts/inteligencia.py", "--praca", "{p}"], None, 0.00),
+ ("captar", "as oportunidades de captação do franqueado",
+  ["python3", "scripts/oportunidades_franqueado.py", "--praca", "{p}", "--salvar"],
+  None, 0.00),
 ]
 
 A_MAO = [
