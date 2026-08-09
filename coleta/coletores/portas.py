@@ -117,7 +117,26 @@ UFS = ("ac al ap am ba ce df es go ma mt ms mg pa pb pr pe pi rj rn rs ro rr "
 ESTRANGEIRO = (r"\b(las|los|del|abierto|colegio|adeslas|cerca|dottor|"
                r"recensioni|sardo|moldavia|romania|bergamo|canaria|triana|"
                r"tijuana|juarez|ixtapaluca|dentist|dentists|clinic|near|best|"
-               r"cheap|smile care|mesa y lopez|prezzi|studio dentistico)\b")
+               r"cheap|smile care|mesa y lopez|prezzi|studio dentistico|"
+               r"en allen|en catriel|allen|catriel|adeslas|conselheiro mafra|"
+               r"en viedma|viedma|young|rosario|neuquen|cordoba|mendoza)\b"
+               r"|\ben\s")
+
+
+def frase_util(frase, ufs):
+    """O filtro único, usado na coleta E na leitura.
+
+    Estava em três lugares e os três divergiram: a coleta filtrava uma coisa,
+    o radar do franqueado outra, e o plano do franqueado nenhuma — então a
+    lista de bairros de Palmas saía com Ixtapaluca e Las Adeslas dentro. Uma
+    regra só, num lugar só."""
+    f = sem_acento(frase)
+    if re.search(OUTRO_LUGAR, f) or re.search(ESTRANGEIRO, f):
+        return False
+    ufs = [u for u in (ufs or []) if u]
+    if ufs and all(uf_errada(frase, u) for u in ufs):
+        return False
+    return True
 
 
 def uf_errada(frase, uf):

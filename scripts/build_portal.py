@@ -188,6 +188,18 @@ def main():
             escreve(f"captacao/{r['praca_id']}", r)
             escritos.append(f"captacao/{r['praca_id']}")
 
+    # ---------- o plano do franqueado ----------
+    # A mesma medição da captação, escrita para quem vai fazer: um número no
+    # topo, cinco tarefas, grátis primeiro, cada uma com "como saber que
+    # funcionou". O casco não reescreve nada — o texto já vem pronto, porque
+    # é ele que decide se o franqueado age ou arquiva.
+    PLANOS = RAIZ/"dados"/"planos"
+    if PLANOS.exists():
+        (OUT/"planos").mkdir(parents=True, exist_ok=True)
+        for arq in sorted(PLANOS.glob("*.json")):
+            escreve(f"planos/{arq.stem}", json.loads(arq.read_text(encoding="utf-8")))
+            escritos.append(f"planos/{arq.stem}")
+
     # ---------- radar de oportunidade ----------
     # A única tela que fala com o time de EXPANSÃO, não com o de marketing.
     # Entra no portal com a defesa escrita, não com nota: a decisão de abrir

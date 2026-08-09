@@ -37,8 +37,7 @@ SERIE = RAIZ/"dados"/"serie"
 IDENT = RAIZ/"dados"/"identidade"
 FRACO = 300      # abaixo disso, quem está no topo da porta não tem fortaleza
 sys.path.insert(0, str(RAIZ/"coleta"/"coletores"))
-from portas import (OUTRO_LUGAR, ESTRANGEIRO, NAO_E_BAIRRO,   # noqa: E402
-                    uf_errada)                                # as mesmas regras dos dois lados
+from portas import NAO_E_BAIRRO, frase_util   # noqa: E402  uma regra só, num lugar só
 
 # Palavras que aparecem em toda avaliação de dentista e não distinguem nada.
 # Sem cortar, o "vocabulário do paciente" vira 'muito, ótimo, atendimento'.
@@ -49,7 +48,23 @@ aqui onde quando quem qual esse essa este aquele nao não sim tambem também
 super otimo ótimo otima ótima excelente bom boa melhor maravilhoso maravilhosa
 recomendo indico parabens parabéns nota atendimento clinica clínica equipe
 profissional profissionais lugar local pessoal gente vez vezes dia dias hoje
-tempo sempre agora antes depois toda todas ai aí so só pra pro num numa""".split())
+tempo sempre agora antes depois toda todas ai aí so só pra pro num numa
+desde ainda aqui entao então porem porém pois cada outro outra outros outras
+fui fiz fazer faz feito dar dei deu ter tem tinha estava estao estão sendo
+dentista dentistas dentaria dentário dentaria consulta consultas
+estou estava estamos vou vai foram eram""".split())
+
+# A contagem tira o acento para não separar "recepção" de "recepcao". Na hora
+# de MOSTRAR, o acento volta — palavra sem acento num relatório que vai para o
+# franqueado parece erro nosso, não escolha de método.
+ACENTOS = {"recepcao": "recepção", "experiencia": "experiência",
+           "atencao": "atenção", "educacao": "educação", "paciencia": "paciência",
+           "explicacao": "explicação", "avaliacao": "avaliação",
+           "orcamento": "orçamento", "criancas": "crianças", "crianca": "criança",
+           "otimo": "ótimo", "otima": "ótima", "simpatico": "simpático",
+           "simpatica": "simpática", "rapido": "rápido", "rapida": "rápida",
+           "confianca": "confiança", "seguranca": "segurança", "familia": "família",
+           "sorriso": "sorriso", "atendimentos": "atendimentos"}
 
 
 def sem_acento(s):
@@ -141,7 +156,8 @@ def vocabulario(revs, minimo=4):
         for w in re.findall(r"[a-zà-úç]{4,}", sem_acento(t)):
             if w not in VAZIAS:
                 conta[w] += 1
-    return [(w, n) for w, n in conta.most_common(40) if n >= minimo], len(txt)
+    return ([(ACENTOS.get(w, w), n) for w, n in conta.most_common(40) if n >= minimo],
+            len(txt))
 
 
 def servicos_citados(revs):
@@ -181,10 +197,8 @@ def monta(praca):
     # mafra portugal' passou. Aplicar na leitura também evita ter de recoletar
     # só por causa de uma linha de regex.
     ufs = ident.get("uf") or []
-    portas = [d for d in portas if d.get("intencao") != "RUÍDO"
-              and not re.search(OUTRO_LUGAR, sem_acento(d["frase"]))
-              and not all(uf_errada(d["frase"], u) for u in ufs or [""])
-              and not re.search(ESTRANGEIRO, sem_acento(d["frase"]))]
+    portas = [d for d in portas
+              if d.get("intencao") != "RUÍDO" and frase_util(d["frase"], ufs)]
     revs = [r for r in jsonl("reviews") if r.get("praca_id") == praca
             and r.get("local_id") not in nossos]
     revs_nossas = [r for r in jsonl("reviews") if r.get("praca_id") == praca

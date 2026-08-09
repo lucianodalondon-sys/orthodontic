@@ -294,14 +294,57 @@ Vai na frente, não no rodapé.
 
 ---
 
+## 8 · COMO ISSO CHEGA AO FRANQUEADO
+
+Tudo acima é linguagem de analista: porta, família, intenção, posição no mapa.
+**O franqueado é dentista.** Tem quarenta pacientes na agenda e quinze minutos
+entre um e outro. Se não entender na primeira leitura, não faz — e achado que
+ninguém executa não vale nada.
+
+Por isso a mesma medição sai duas vezes. A segunda, `plano_do_franqueado.py`,
+tem regras próprias:
+
+| Regra | Por quê |
+|---|---|
+| **um número no topo, e só um** | *"Você aparece em 5 das 20 buscas da sua cidade."* É o que ele repete para a recepcionista |
+| **no máximo cinco tarefas** | com dez, ninguém faz nenhuma |
+| **grátis primeiro** | anúncio antes do cadastro é pagar por um clique que o perfil daria de graça |
+| **três perguntas por tarefa** | o que está acontecendo (com o número), o que fazer (em passos), e **como saber que funcionou** |
+| **zero jargão** | não existe "porta", "intenção", "SEO local". Existe "busca", "seu perfil do Google", "seu site" |
+| **o que a máquina não sabe vira pergunta** | *"o dado público não diz quais convênios você aceita — isso só você sabe"* |
+
+E o placar das sete, que é o mesmo número escrito de outro jeito:
+
+| Praça | Aparece em |
+|---|---|
+| **SC · Mafra** | **10 de 19** — 53% |
+| PR · Londrina | 5 de 20 — 25% |
+| MT · Cuiabá | 4 de 20 — 20% |
+| BA · Feira de Santana | 4 de 20 — 20% |
+| SP · Presidente Prudente | 4 de 20 — 20% |
+| TO · Palmas | 3 de 16 — 19% |
+| MG · Contagem | 3 de 20 — 15% |
+
+**Mafra aparece em mais que o dobro de todas as outras.** É o mesmo achado da
+categoria, dito no número que o franqueado entende sem explicação.
+
+O plano sai em `dados/planos/<praca>.md` (para mandar por WhatsApp ou imprimir)
+e em `dados/planos/<praca>.json` (para a tela do portal).
+
+---
+
 ## COMO RODAR
 
 ```bash
-python3 coleta/coletores/portas.py --praca londrina --salvar
-python3 scripts/oportunidades_franqueado.py --praca londrina --salvar
+python3 coleta/coletores/portas.py --praca londrina --salvar          # a medição
+python3 scripts/oportunidades_franqueado.py --praca londrina --salvar # a leitura
+python3 scripts/plano_do_franqueado.py --praca londrina --salvar --md # o plano
 ```
 
-Dados em `dados/serie/portas.jsonl` e `dados/serie/captacao.jsonl`.
+Ou tudo junto, quando a praça entra: `python3 coleta/entrar.py --cidade "…"`.
+
+Dados em `dados/serie/portas.jsonl`, `dados/serie/captacao.jsonl` e
+`dados/planos/`.
 
 ---
 

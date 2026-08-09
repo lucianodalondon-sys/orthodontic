@@ -59,6 +59,9 @@ ETAPAS = [
  ("captar", "as oportunidades de captação do franqueado",
   ["python3", "scripts/oportunidades_franqueado.py", "--praca", "{p}", "--salvar"],
   None, 0.00),
+ ("plano", "o mesmo, escrito para o franqueado fazer",
+  ["python3", "scripts/plano_do_franqueado.py", "--praca", "{p}", "--salvar", "--md"],
+  None, 0.00),
 ]
 
 A_MAO = [
