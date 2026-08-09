@@ -1,4 +1,5 @@
 {
+  "gerado_em": "2026-08-09T02:29:11",
   "gerado_de": "dados/serie + dados/conteudo + dados/identidade",
   "corte": "2026-08-08",
   "taxonomia_versao": "1.1",
@@ -16,6 +17,11 @@
       ],
       "cidades": [
         "MG · Contagem"
+      ],
+      "tem": [
+        "praca",
+        "captacao",
+        "plano"
       ]
     },
     {
@@ -28,6 +34,11 @@
       "cidades": [
         "MT · Cuiabá",
         "MT · Várzea Grande"
+      ],
+      "tem": [
+        "praca",
+        "captacao",
+        "plano"
       ]
     },
     {
@@ -39,6 +50,11 @@
       ],
       "cidades": [
         "BA · Feira de Santana"
+      ],
+      "tem": [
+        "praca",
+        "captacao",
+        "plano"
       ]
     },
     {
@@ -50,6 +66,11 @@
       ],
       "cidades": [
         "PR · Londrina"
+      ],
+      "tem": [
+        "praca",
+        "captacao",
+        "plano"
       ]
     },
     {
@@ -61,6 +82,11 @@
       ],
       "cidades": [
         "TO · Palmas"
+      ],
+      "tem": [
+        "praca",
+        "captacao",
+        "plano"
       ]
     },
     {
@@ -72,6 +98,11 @@
       ],
       "cidades": [
         "SP · Presidente Prudente"
+      ],
+      "tem": [
+        "praca",
+        "captacao",
+        "plano"
       ]
     },
     {
@@ -85,21 +116,92 @@
       "cidades": [
         "SC · Mafra",
         "PR · Rio Negro"
+      ],
+      "tem": [
+        "praca",
+        "captacao",
+        "plano"
       ]
     }
   ],
+  "arquivos": {
+    "rede": [
+      "rede",
+      "rede_cruzamento",
+      "achados",
+      "corretor",
+      "evidencias",
+      "radar"
+    ],
+    "pracas": [
+      "contagem",
+      "cuiaba",
+      "feira",
+      "londrina",
+      "palmas",
+      "prudente",
+      "riomafra"
+    ],
+    "captacao": [
+      "contagem",
+      "cuiaba",
+      "feira",
+      "londrina",
+      "palmas",
+      "prudente",
+      "riomafra"
+    ],
+    "planos": [
+      "contagem",
+      "cuiaba",
+      "feira",
+      "londrina",
+      "palmas",
+      "prudente",
+      "riomafra"
+    ],
+    "oportunidade": [
+      "imperatriz",
+      "juazeiro_do_norte",
+      "macapa",
+      "maraba",
+      "parauapebas",
+      "rio_branco"
+    ]
+  },
   "telas": [
-    "rede",
     "achados",
+    "captacao/contagem",
+    "captacao/cuiaba",
+    "captacao/feira",
+    "captacao/londrina",
+    "captacao/palmas",
+    "captacao/prudente",
+    "captacao/riomafra",
     "corretor",
     "evidencias",
+    "oportunidade/imperatriz",
+    "oportunidade/juazeiro_do_norte",
+    "oportunidade/macapa",
+    "oportunidade/maraba",
+    "oportunidade/parauapebas",
+    "oportunidade/rio_branco",
+    "planos/contagem",
+    "planos/cuiaba",
+    "planos/feira",
+    "planos/londrina",
+    "planos/palmas",
+    "planos/prudente",
+    "planos/riomafra",
     "pracas/contagem",
     "pracas/cuiaba",
     "pracas/feira",
     "pracas/londrina",
     "pracas/palmas",
     "pracas/prudente",
-    "pracas/riomafra"
+    "pracas/riomafra",
+    "radar",
+    "rede"
   ],
   "aviso": "O casco não calcula. Todo valor exibido sai deste diretório."
 }

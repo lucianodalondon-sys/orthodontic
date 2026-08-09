@@ -13,6 +13,7 @@ Regra: todo número carrega procedência. Sem procedência, não entra.
 Uso:  python3 scripts/build_portal.py [--corte AAAA-MM-DD]
 """
 import json, argparse, pathlib, sys
+import datetime as dt
 from collections import defaultdict
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
@@ -80,21 +81,6 @@ def main():
     escritos = []
 
     # ---------- manifest ----------
-    escritos.append(escreve("manifest", {
-        "gerado_de": "dados/serie + dados/conteudo + dados/identidade",
-        "corte": corte,
-        "taxonomia_versao": next((r.get("taxonomia_versao") for r in temas if r.get("taxonomia_versao")), None),
-        "cobertura": carrega(CONT, "rede").get("cobertura", {}),
-        # o casco NÃO monta rótulo de cidade — recebe pronto, com a UF na frente
-        "pracas": [{"praca_id": p, "nome": ident[p].get("nome"),
-                    "rotulo": ident[p].get("rotulo") or ident[p].get("nome"),
-                    "uf": ident[p].get("uf", []),
-                    "cidades": ident[p].get("cidades_rotulo") or ident[p].get("cidades", [])}
-                   for p in PRACAS],
-        "telas": ["rede", "achados", "corretor", "evidencias"] + [f"pracas/{p}" for p in PRACAS],
-        "aviso": "O casco não calcula. Todo valor exibido sai deste diretório.",
-    }))
-
     # ---------- rede ----------
     rede = carrega(CONT, "rede")
     linhas = []
@@ -313,6 +299,47 @@ def main():
     corr["descida"] = descida
     escritos.append(escreve("corretor", corr))
     escritos.append(escreve("evidencias", carrega(CONT, "evidencias")))
+
+    # ---------- manifest, POR ÚLTIMO ----------
+    # Ele é o índice que o casco lê antes de qualquer outra coisa: diz quais
+    # telas existem e onde estão. Escrever no começo era mentira — listava
+    # quatro telas enquanto o build produzia trinta, e o casco nunca soube que
+    # o radar, os planos e a captação existiam.
+    def presentes(pasta):
+        d = OUT/pasta
+        return sorted(a.stem for a in d.glob("*.json")) if d.exists() else []
+
+    escreve("manifest", {
+        "gerado_em": dt.datetime.now().isoformat(timespec="seconds"),
+        "gerado_de": "dados/serie + dados/conteudo + dados/identidade",
+        "corte": corte,
+        "taxonomia_versao": next((r.get("taxonomia_versao") for r in temas
+                                  if r.get("taxonomia_versao")), None),
+        "cobertura": carrega(CONT, "rede").get("cobertura", {}),
+        # o casco NÃO monta rótulo de cidade — recebe pronto, com a UF na frente
+        "pracas": [{"praca_id": p, "nome": ident[p].get("nome"),
+                    "rotulo": ident[p].get("rotulo") or ident[p].get("nome"),
+                    "uf": ident[p].get("uf", []),
+                    "cidades": ident[p].get("cidades_rotulo") or ident[p].get("cidades", []),
+                    "tem": [k for k, v in (("praca", f"pracas/{p}"),
+                                           ("captacao", f"captacao/{p}"),
+                                           ("plano", f"planos/{p}"))
+                            if (OUT/f"{v}.json").exists()]}
+                   for p in PRACAS],
+        # o índice de verdade: o que existe, agora, nesta pasta
+        "arquivos": {
+            "rede": [x for x in ("rede", "rede_cruzamento", "achados", "corretor",
+                                 "evidencias", "radar")
+                     if (OUT/f"{x}.json").exists()],
+            "pracas": presentes("pracas"),
+            "captacao": presentes("captacao"),
+            "planos": presentes("planos"),
+            "oportunidade": presentes("oportunidade"),
+        },
+        "telas": sorted(escritos),
+        "aviso": "O casco não calcula. Todo valor exibido sai deste diretório.",
+    })
+    escritos.append("manifest")
 
     print(f"corte {corte} · {len(escritos)} arquivos em dados/portal/")
     for e in escritos:
