@@ -136,7 +136,11 @@ def _e1(b, p):
 
 def _e2(b, p):
     ch = b.serie["canais"].get(p, [])
-    achados = [c for c in ch if c.get("handle")]
+    # `rejeitado` marca homônimo conferido na bio: Rio Branco Atlético Clube
+    # do ES, Prefeitura de Rio Branco do SUL, o restaurante em Mafra/Portugal,
+    # o professor Guilherme Prudente. Contar isso é inflar a etapa justamente
+    # onde a praça parecia melhor.
+    achados = [c for c in ch if c.get("handle") and not c.get("rejeitado")]
     return (len(achados) >= MIN_CANAIS,
             f"{len(achados)} canais com handle (mínimo {MIN_CANAIS})")
 

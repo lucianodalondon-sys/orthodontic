@@ -220,7 +220,7 @@
    "praca_id": "cuiaba",
    "rotulo": "MT · Cuiabá + MT · Várzea Grande",
    "tipo": "rede",
-   "feitas": 11,
+   "feitas": 12,
    "de": 14,
    "completa": false,
    "etapas": [
@@ -252,9 +252,9 @@
      "etapa": 2,
      "nome": "Quem fala com a cidade",
      "quem": "auto+humano",
-     "ok": false,
-     "estado": "0 canais com handle (mínimo 8)",
-     "comando": "python3 coleta/coletores/canais.py --praca cuiaba  (handle null = achar na mão)"
+     "ok": true,
+     "estado": "12 canais com handle (mínimo 8)",
+     "comando": null
     },
     {
      "etapa": 3,
@@ -342,9 +342,9 @@
    "praca_id": "feira",
    "rotulo": "BA · Feira de Santana",
    "tipo": "rede",
-   "feitas": 13,
+   "feitas": 14,
    "de": 14,
-   "completa": false,
+   "completa": true,
    "etapas": [
     {
      "etapa": 0,
@@ -374,9 +374,9 @@
      "etapa": 2,
      "nome": "Quem fala com a cidade",
      "quem": "auto+humano",
-     "ok": false,
-     "estado": "6 canais com handle (mínimo 8)",
-     "comando": "python3 coleta/coletores/canais.py --praca feira  (handle null = achar na mão)"
+     "ok": true,
+     "estado": "12 canais com handle (mínimo 8)",
+     "comando": null
     },
     {
      "etapa": 3,
@@ -497,7 +497,7 @@
      "nome": "Quem fala com a cidade",
      "quem": "auto+humano",
      "ok": false,
-     "estado": "2 canais com handle (mínimo 8)",
+     "estado": "3 canais com handle (mínimo 8)",
      "comando": "python3 coleta/coletores/canais.py --praca imperatriz  (handle null = achar na mão)"
     },
     {
@@ -693,7 +693,7 @@
      "nome": "Quem fala com a cidade",
      "quem": "auto+humano",
      "ok": true,
-     "estado": "14 canais com handle (mínimo 8)",
+     "estado": "15 canais com handle (mínimo 8)",
      "comando": null
     },
     {
@@ -880,9 +880,9 @@
    "praca_id": "mafra",
    "rotulo": "SC · Mafra",
    "tipo": "rede",
-   "feitas": 13,
+   "feitas": 14,
    "de": 14,
-   "completa": false,
+   "completa": true,
    "etapas": [
     {
      "etapa": 0,
@@ -912,9 +912,9 @@
      "etapa": 2,
      "nome": "Quem fala com a cidade",
      "quem": "auto+humano",
-     "ok": false,
-     "estado": "4 canais com handle (mínimo 8)",
-     "comando": "python3 coleta/coletores/canais.py --praca mafra  (handle null = achar na mão)"
+     "ok": true,
+     "estado": "9 canais com handle (mínimo 8)",
+     "comando": null
     },
     {
      "etapa": 3,
@@ -1035,7 +1035,7 @@
      "nome": "Quem fala com a cidade",
      "quem": "auto+humano",
      "ok": false,
-     "estado": "0 canais com handle (mínimo 8)",
+     "estado": "1 canais com handle (mínimo 8)",
      "comando": "python3 coleta/coletores/canais.py --praca maraba  (handle null = achar na mão)"
     },
     {
@@ -1255,7 +1255,7 @@
      "nome": "Quem fala com a cidade",
      "quem": "auto+humano",
      "ok": false,
-     "estado": "0 canais com handle (mínimo 8)",
+     "estado": "2 canais com handle (mínimo 8)",
      "comando": "python3 coleta/coletores/canais.py --praca parauapebas  (handle null = achar na mão)"
     },
     {
@@ -1320,7 +1320,7 @@
    "praca_id": "prudente",
    "rotulo": "SP · Presidente Prudente",
    "tipo": "rede",
-   "feitas": 12,
+   "feitas": 13,
    "de": 14,
    "completa": false,
    "etapas": [
@@ -1352,9 +1352,9 @@
      "etapa": 2,
      "nome": "Quem fala com a cidade",
      "quem": "auto+humano",
-     "ok": false,
-     "estado": "3 canais com handle (mínimo 8)",
-     "comando": "python3 coleta/coletores/canais.py --praca prudente  (handle null = achar na mão)"
+     "ok": true,
+     "estado": "10 canais com handle (mínimo 8)",
+     "comando": null
     },
     {
      "etapa": 3,
@@ -1475,7 +1475,7 @@
      "nome": "Quem fala com a cidade",
      "quem": "auto+humano",
      "ok": false,
-     "estado": "5 canais com handle (mínimo 8)",
+     "estado": "4 canais com handle (mínimo 8)",
      "comando": "python3 coleta/coletores/canais.py --praca rio_branco  (handle null = achar na mão)"
     },
     {
