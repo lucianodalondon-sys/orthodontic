@@ -127,7 +127,7 @@ def separar(bruto):
 def carregar():
     """Lê o último snapshot salvo. Se não houver, baixa."""
     if ARQ.exists():
-        linhas = [json.loads(l) for l in ARQ.read_text(encoding="utf-8").splitlines() if l.strip()]
+        linhas = [json.loads(l) for l in ARQ.read_text(encoding="utf-8").split("\n") if l.strip()]
         if linhas:
             ultimo = max(l["snapshot_date"] for l in linhas)
             return [l for l in linhas if l["snapshot_date"] == ultimo], ultimo
@@ -169,7 +169,7 @@ def salvar(unidades):
     SERIE.mkdir(parents=True, exist_ok=True)
     ja = set()
     if ARQ.exists():
-        for l in ARQ.read_text(encoding="utf-8").splitlines():
+        for l in ARQ.read_text(encoding="utf-8").split("\n"):
             if l.strip():
                 ja.add(_chave(json.loads(l)))
     novos = 0

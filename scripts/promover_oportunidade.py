@@ -47,7 +47,7 @@ def varredura(praca_id):
     arq = SERIE/"categoria_oportunidade.jsonl"
     if not arq.exists():
         return []
-    linhas = [json.loads(l) for l in arq.read_text(encoding="utf-8").splitlines()
+    linhas = [json.loads(l) for l in arq.read_text(encoding="utf-8").split("\n")
               if l.strip()]
     minhas = [r for r in linhas if r.get("praca_id") == praca_id]
     if not minhas:

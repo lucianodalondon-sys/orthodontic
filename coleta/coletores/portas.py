@@ -166,7 +166,7 @@ def chave():
     if not k:
         env = RAIZ/"_pipeline"/".env"
         if env.exists():
-            for l in env.read_text(encoding="utf-8").splitlines():
+            for l in env.read_text(encoding="utf-8").split("\n"):
                 if l.strip().startswith("GOOGLE_API_KEY="):
                     k = l.split("=", 1)[1].strip().replace("\r", "")
     return k

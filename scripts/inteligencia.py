@@ -48,7 +48,7 @@ NOMES = re.compile(r'\b(?:dr|dra|doutor|doutora)\.?\s+([A-ZÁÉÍÓÚÂÊÔÃÕ�
 
 
 def jsonl(p):
-    return [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()] if p.exists() else []
+    return [json.loads(l) for l in p.read_text(encoding="utf-8").split("\n") if l.strip()] if p.exists() else []
 
 
 def correl(xs, ys):

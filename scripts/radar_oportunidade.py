@@ -84,7 +84,7 @@ def chave():
     if not k:
         env = RAIZ/"_pipeline"/".env"
         if env.exists():
-            for l in env.read_text(encoding="utf-8").splitlines():
+            for l in env.read_text(encoding="utf-8").split("\n"):
                 l = l.strip().replace("\r", "")
                 if l.startswith("GOOGLE_API_KEY="):
                     k = l.split("=", 1)[1].strip()
@@ -254,7 +254,7 @@ def referencias():
         except Exception:
             pass
     por = {}
-    for l in arq.read_text(encoding="utf-8").splitlines():
+    for l in arq.read_text(encoding="utf-8").split("\n"):
         if not l.strip():
             continue
         r = json.loads(l)
@@ -432,7 +432,7 @@ def refazer_texto(salvar):
     muda — só o texto que ele sustenta. Grava uma linha nova na série, com a
     medição original preservada e a data de hoje."""
     arq = SERIE/"oportunidade.jsonl"
-    rows = [json.loads(l) for l in arq.read_text(encoding="utf-8").splitlines() if l.strip()]
+    rows = [json.loads(l) for l in arq.read_text(encoding="utf-8").split("\n") if l.strip()]
     rows = [r for r in rows if r.get("presenca")]
     if not rows:
         sys.exit("nenhuma medição com conferência de unidade na série — rode o "
@@ -483,7 +483,7 @@ def main():
 
     cidades = list(a.cidade)
     if a.lista:
-        cidades += [l.strip() for l in pathlib.Path(a.lista).read_text(encoding="utf-8").splitlines()
+        cidades += [l.strip() for l in pathlib.Path(a.lista).read_text(encoding="utf-8").split("\n")
                     if l.strip() and "/" in l]
     if not cidades:
         sys.exit('use --cidade "Marabá/PA" (pode repetir) ou --lista arquivo.txt')

@@ -168,7 +168,7 @@ def salvar_categoria(praca_id, cidade, cs):
     arq = SERIE/"categoria_oportunidade.jsonl"
     ja = set()
     if arq.exists():
-        for l in arq.read_text(encoding="utf-8").splitlines():
+        for l in arq.read_text(encoding="utf-8").split("\n"):
             if l.strip():
                 r = json.loads(l)
                 ja.add((r["snapshot_date"], r["praca_id"], r["place_id"]))
@@ -526,7 +526,7 @@ def serie(nome, praca):
     arq = SERIE/f"{nome}.jsonl"
     if not arq.exists():
         return []
-    rs = [json.loads(l) for l in arq.read_text(encoding="utf-8").splitlines()
+    rs = [json.loads(l) for l in arq.read_text(encoding="utf-8").split("\n")
           if l.strip() and f'"{praca}"' in l]
     rs = [r for r in rs if r.get("praca_id") == praca]
     if not rs:
@@ -850,7 +850,7 @@ def refazer(salvar, escrever_dossie):
     varridas = {}
     arqv = SERIE/"categoria_oportunidade.jsonl"
     if arqv.exists():
-        for l in arqv.read_text(encoding="utf-8").splitlines():
+        for l in arqv.read_text(encoding="utf-8").split("\n"):
             if l.strip():
                 r = json.loads(l)
                 varridas.setdefault(r["praca_id"], {})[r["place_id"]] = r
@@ -930,7 +930,7 @@ def main():
     cidades = list(a.cidade)
     if a.todas:
         arq = SERIE/"oportunidade.jsonl"
-        rows = [json.loads(l) for l in arq.read_text(encoding="utf-8").splitlines()
+        rows = [json.loads(l) for l in arq.read_text(encoding="utf-8").split("\n")
                 if l.strip()]
         rows = [r for r in rows if r.get("presenca", {}).get("livre")
                 and str(r.get("leitura", "")).startswith("OPORTUNIDADE")]

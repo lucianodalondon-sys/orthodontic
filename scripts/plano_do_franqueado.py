@@ -44,7 +44,7 @@ def sem_acento(s):
 
 def jsonl(nome):
     p = SERIE/f"{nome}.jsonl"
-    return [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()] \
+    return [json.loads(l) for l in p.read_text(encoding="utf-8").split("\n") if l.strip()] \
         if p.exists() else []
 
 

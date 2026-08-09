@@ -36,7 +36,7 @@ def token():
     if not t:
         env = RAIZ/"_pipeline"/".env"
         if env.exists():
-            for l in env.read_text(encoding="utf-8").splitlines():
+            for l in env.read_text(encoding="utf-8").split("\n"):
                 l = l.strip().replace("\r", "")
                 if l.startswith("APIFY_TOKEN="):
                     t = l.split("=", 1)[1].strip()
@@ -62,7 +62,7 @@ def canais(praca):
     arq = SERIE/"canais.jsonl"
     if not arq.exists():
         return []
-    linhas = [json.loads(l) for l in arq.read_text(encoding="utf-8").splitlines() if l.strip()]
+    linhas = [json.loads(l) for l in arq.read_text(encoding="utf-8").split("\n") if l.strip()]
     da_praca = [c for c in linhas if c.get("praca_id") == praca and c.get("handle")]
     if not da_praca:
         return []

@@ -108,7 +108,7 @@ def carrega_existentes():
     if not SAIDA.exists():
         return {}
     fora = {}
-    for l in SAIDA.read_text(encoding="utf-8").splitlines():
+    for l in SAIDA.read_text(encoding="utf-8").split("\n"):
         if not l.strip():
             continue
         r = json.loads(l)

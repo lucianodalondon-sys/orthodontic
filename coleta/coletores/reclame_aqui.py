@@ -42,7 +42,7 @@ def token():
     if not t:
         env = RAIZ/"_pipeline"/".env"
         if env.exists():
-            for l in env.read_text(encoding="utf-8").splitlines():
+            for l in env.read_text(encoding="utf-8").split("\n"):
                 l = l.strip().replace("\r", "")
                 if l.startswith("APIFY_TOKEN="):
                     t = l.split("=", 1)[1].strip()
@@ -56,7 +56,7 @@ def limpa(h):
 
 
 def jsonl(p):
-    return [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()] if p.exists() else []
+    return [json.loads(l) for l in p.read_text(encoding="utf-8").split("\n") if l.strip()] if p.exists() else []
 
 
 def main():
