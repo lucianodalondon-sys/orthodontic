@@ -1,0 +1,107 @@
+# ALVOS DE COLETA — juazeiro_do_norte  (PRAÇA DE OPORTUNIDADE)
+# Esqueleto gerado em 2026-08-09.
+# A etapa 2 (os canais da cidade) é HUMANA e é onde o estudo se decide.
+# Ver coleta/NOVA-PRACA.md
+
+praca_id: juazeiro_do_norte
+cidades: ["Juazeiro do Norte/CE"]
+sem_unidade: true
+alvos:
+  - name: clinica_dentista_para_todo_google
+    layer: concorrente
+    platform: google
+    query: "Clínica Dentista Para Todos - Dentista Popular - Tratamento Acessível"
+    place_id: ChIJV1GqZtZ5oQcR0Mf9HWFrpig
+    status: roda
+  - name: ortovital_dentistas_especi_google
+    layer: concorrente
+    platform: google
+    query: "Ortovital Dentistas Especializados"
+    place_id: ChIJyRK9lZF5oQcReNry87EiIi8
+    status: roda
+  - name: sorrisokids_family_google
+    layer: concorrente
+    platform: google
+    query: "Sorrisokids family"
+    place_id: ChIJh95gGVV_oQcRv7vsAmUGHqw
+    status: roda
+  - name: life_odonto_clinica_odonto_google
+    layer: concorrente
+    platform: google
+    query: "Life Odonto | Clinica Odontológica"
+    place_id: ChIJvcY_izx5oQcRVG0uZthWyQ4
+    status: roda
+  - name: odontocompany_cariri_google
+    layer: concorrente
+    platform: google
+    query: "OdontoCompany Cariri"
+    place_id: ChIJ98Zl_OB5oQcRih3Pw09K8Fk
+    status: roda
+  - name: dr_absalao_maia_consultori_google
+    layer: concorrente
+    platform: google
+    query: "Dr. Absalão Maia - Consultório Odontológico"
+    place_id: ChIJw_gX5Fd5oQcRm_mcyLa6n4w
+    status: roda
+  - name: consultorio_odontologico_d_google
+    layer: concorrente
+    platform: google
+    query: "Consultório Odontológico - Dra Maria Regilânia Oliveira Almeida e Dr Matheus Oliveira Almeida"
+    place_id: ChIJuxU7KnSCoQcRThmCFS3KlFw
+    status: roda
+  - name: odontopediatra_dr_adolfo_a_google
+    layer: concorrente
+    platform: google
+    query: "Odontopediatra Dr Adolfo Alencar"
+    place_id: ChIJhQt5GVV_oQcRO_3hu0jSpdE
+    status: roda
+
+# ---- PREENCHER À MÃO: os canais da cidade ----
+  # - name: voz_da_cidade_ig            # o perfil que a cidade inteira segue
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: jornal_local_ig            # o portal/jornal que pauta a conversa
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: prefeitura_ig            # a agenda pública
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: mae_ig            # a mãe-influencer — a decisora do aparelho
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: humor_ig            # a página de humor, que é a voz afetiva
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: esporte_base_ig            # a escolinha de 9-15 — o público exato, com os pais na arquibancada
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: gastronomia_ig            # o perfil-indicador de consumo
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: radio_ig            # a mídia da mãe e da avó
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: classificados_ig            # onde o povão compra e comenta
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+
+# E ANOTE OS QUE NÃO EXISTEM. Canal que falta é território vago —
+# em Mafra faltavam três, e é o achado mais acionável do dossiê.

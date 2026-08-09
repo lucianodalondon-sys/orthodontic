@@ -1,0 +1,107 @@
+# ALVOS DE COLETA — parauapebas  (PRAÇA DE OPORTUNIDADE)
+# Esqueleto gerado em 2026-08-09.
+# A etapa 2 (os canais da cidade) é HUMANA e é onde o estudo se decide.
+# Ver coleta/NOVA-PRACA.md
+
+praca_id: parauapebas
+cidades: ["Parauapebas/PA"]
+sem_unidade: true
+alvos:
+  - name: brink_dentista_google
+    layer: concorrente
+    platform: google
+    query: "Brink Dentista"
+    place_id: ChIJKSmlWsJR3ZIR2Da6P1jOlsE
+    status: roda
+  - name: odonto_minas_parauapebas_u_google
+    layer: concorrente
+    platform: google
+    query: "Odonto Minas Parauapebas - Unidade Bairro da Paz"
+    place_id: ChIJleAL6nlR3ZIRKkO7aTrvnkk
+    status: roda
+  - name: clinica_volte_a_sorrir_google
+    layer: concorrente
+    platform: google
+    query: "Clínica Volte a Sorrir"
+    place_id: ChIJm37GxihR3ZIRQLp_1BdeEw8
+    status: roda
+  - name: odonto_minas_cidade_nova_google
+    layer: concorrente
+    platform: google
+    query: "Odonto Minas Cidade Nova"
+    place_id: ChIJG-H8zV1R3ZIROQosmogb9A4
+    status: roda
+  - name: odonto_minas_parauapebas_u_google
+    layer: concorrente
+    platform: google
+    query: "Odonto Minas Parauapebas - Unidade Rio Verde"
+    place_id: ChIJpz3BNphR3ZIR2qdZlYFGkyg
+    status: roda
+  - name: clinface_implantes_avancad_google
+    layer: concorrente
+    platform: google
+    query: "Clinface Implantes Avançados - Clínica Odontológica"
+    place_id: ChIJsVCMFANR3ZIREr-gsppcWYY
+    status: roda
+  - name: ideal_clinic_google
+    layer: concorrente
+    platform: google
+    query: "Ideal Clinic"
+    place_id: ChIJcQGGXoNR3ZIRVb-aa4iVwMk
+    status: roda
+  - name: clinica_odontologica_odont_google
+    layer: concorrente
+    platform: google
+    query: "Clínica odontológica Odontoline - Dentista em Parauapebas | prótese, implante, Aparelhos,clear correct e Clareamento"
+    place_id: ChIJs9PN3VVQ3ZIREg4B6QhU1ts
+    status: roda
+
+# ---- PREENCHER À MÃO: os canais da cidade ----
+  # - name: voz_da_cidade_ig            # o perfil que a cidade inteira segue
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: jornal_local_ig            # o portal/jornal que pauta a conversa
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: prefeitura_ig            # a agenda pública
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: mae_ig            # a mãe-influencer — a decisora do aparelho
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: humor_ig            # a página de humor, que é a voz afetiva
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: esporte_base_ig            # a escolinha de 9-15 — o público exato, com os pais na arquibancada
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: gastronomia_ig            # o perfil-indicador de consumo
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: radio_ig            # a mídia da mãe e da avó
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: classificados_ig            # onde o povão compra e comenta
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+
+# E ANOTE OS QUE NÃO EXISTEM. Canal que falta é território vago —
+# em Mafra faltavam três, e é o achado mais acionável do dossiê.

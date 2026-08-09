@@ -522,40 +522,176 @@ def imprime(e):
                                for d in e["gemeas_descartadas"]))
 
 
+def serie(nome, praca):
+    arq = SERIE/f"{nome}.jsonl"
+    if not arq.exists():
+        return []
+    rs = [json.loads(l) for l in arq.read_text(encoding="utf-8").splitlines()
+          if l.strip() and f'"{praca}"' in l]
+    rs = [r for r in rs if r.get("praca_id") == praca]
+    if not rs:
+        return []
+    corte = max(r["snapshot_date"] for r in rs)
+    return [r for r in rs if r["snapshot_date"] == corte]
+
+
+def PREENCHER(pergunta, porque):
+    return [f"> ⬜ **PREENCHER — {pergunta}**", ">",
+            f"> {porque}", ""]
+
+
 def dossie(e):
-    """O documento que vai para o time de expansão."""
+    """As dezoito seções do dossiê de Mafra, menos a de dados internos.
+
+    O erro que isto conserta: o estudo de oportunidade saía com três seções —
+    IBGE, concorrência e a gêmea. O dossiê de Mafra tem dezoito, e o que
+    faltava era justamente a metade que decide a entrada: quem fala com a
+    cidade, o que a cidade diz com as palavras dela, qual é a ferida da praça,
+    que canal está vago e o que jamais dizer ali.
+
+    O que a máquina mede, ela preenche. O que é leitura humana entra como
+    PREENCHER com a pergunta exata — nunca como texto plausível inventado,
+    que é o jeito de um dossiê parecer completo e não ser."""
     g, c, n = e.get("gemea"), e["concorrencia"], e["cidade_numeros"]
-    L = [f"# {e['rotulo']} — praça de oportunidade", "",
-         f"**{dt.date.today().strftime('%d/%m/%Y')}** · Estudo completo da cidade, "
-         f"da concorrência, e a praça da rede com o mesmo perfil.", ""]
+    praca = e["praca_id"]
+    canais = serie("canais", praca)
+    posts = serie("posts", praca)
+    imprensa = serie("imprensa", praca)
+    ads = [a for a in serie("anuncios", praca) if a.get("ativo")]
+    revs = serie("reviews", praca)
+    hoje = dt.date.today().strftime("%d/%m/%Y")
+
+    L = [f"# DOSSIÊ — {e['rotulo']} — praça de oportunidade (sem unidade)", "",
+         f"**{hoje}** · Mesmo processo das praças da rede, menos a parte que "
+         f"depende de unidade: aqui não existe unidade ainda.", ""]
     if g:
-        L += ["> " + g["frase"].replace("**", "**"), ""]
-    L += ["---", "", "## A REDE NÃO ESTÁ LÁ", "",
-          f"{e['conferencia']['motivo'].capitalize()}. Conferido em duas fontes "
-          f"independentes: a lista oficial do site da rede e uma busca por nome "
-          f"no Google dentro da cidade.", "",
-          "---", "", "## 1 · A CIDADE", "",
+        L += ["> " + g["frase"], ""]
+    L += ["---", "", "## 1 · IDENTIDADE", "",
+          f"- **Praça:** {e['rotulo']}",
+          f"- **Município:** {e['cidade']} · {n.get('mesorregiao')}",
+          f"- **Unidade da rede:** nenhuma. {e['conferencia']['motivo'].capitalize()}, "
+          f"conferido em duas fontes independentes.",
+          f"- **Por que esta praça:** {(g or {}).get('frase', '—')}", ""]
+    L += PREENCHER("o raio real da praça",
+                   "Até onde vem o paciente? Tem cidade grudada do outro lado de "
+                   "rio, divisa ou rodovia? O ônibus urbano sai do município? "
+                   "Riomafra ensinou que duas cidades podem ser uma praça só, e "
+                   "Londrina que uma cidade pode ser duas.")
+
+    L += ["---", "", "## 2 · COLETA E MÉTODO", "",
+          "| Fonte | O que rendeu |", "|---|---:|",
+          f"| Varredura da categoria (Google Places) | {c['varridas']} clínicas |",
+          f"| Avaliações com data | {len(revs)} |",
+          f"| Canais da cidade mapeados | {len(canais)} |",
+          f"| Vozes coletadas (posts e comentários) | {len(posts)} |",
+          f"| Matérias de imprensa | {len(imprensa)} |",
+          f"| Anúncios ativos na praça | {len(ads)} |", ""]
+    if len(posts) < 800:
+        L += [f"> ⚠ **{len(posts)} vozes.** O método pede 800+ para a persona da "
+              f"cidade sustentar. Abaixo disso, o que sair da seção 5 é hipótese, "
+              f"não leitura.", ""]
+
+    L += ["---", "", "## 3 · A CIDADE EM NÚMEROS", "",
           "| | |", "|---|---:|",
           f"| Habitantes | **{num(e['populacao'])}** |",
           f"| Adultos de 30 a 45 | **{num(e['alvo_30_45'])}** |",
           f"| Jovens de 9 a 15 | {num(e['alvo_9_15'])} |",
-          f"| Massa salarial por habitante/mês | R$ {num(e.get('renda_per_capita'))} |",
-          f"| Mesorregião | {n.get('mesorregiao')} |", "",
+          f"| Massa salarial por habitante/mês | R$ {num(e.get('renda_per_capita'))} |", "",
           f"O alvo adulto é **{dec((e['alvo_30_45'] or 0)/(e['alvo_9_15'] or 1))}× "
-          f"maior que o adolescente** — e é ele que decide sozinho, sem passar "
-          f"pela mãe. Em todas as sete praças que medimos a proporção se repete.", ""]
-    if n.get("imprensa"):
-        L += ["**Quem cobre a cidade:** "
-              + ", ".join(f"{i['veiculo']} ({i['materias']} matérias)"
-                          for i in n["imprensa"][:8]) + ".", ""]
-    if n.get("nao_veio"):
-        L += ["**Não veio do IBGE:** "
-              + "; ".join(f"{k} ({v})" for k, v in n["nao_veio"].items())
-              + ". Número que some calado é pior que número errado.", ""]
+          f"maior que o adolescente** — e decide sozinho. A proporção se repete "
+          f"nas sete praças medidas.", ""]
 
-    L += ["---", "", "## 2 · A CONCORRÊNCIA", "",
-          f"Varredura com os mesmos seis termos e três páginas usados nas praças "
-          f"da rede: **{c['varridas']} clínicas**, {num(c['avaliacoes_somadas'])} "
+    L += ["---", "", "## 4 · QUEM FALA COM A CIDADE", ""]
+    if canais:
+        L += ["| Tipo | Canal | Seguidores |", "|---|---|---:|"]
+        for x in sorted(canais, key=lambda r: -(r.get("seguidores") or 0))[:14]:
+            L.append(f"| {x.get('tipo')} | @{x.get('handle')} — {x.get('nome')} "
+                     f"| {num(x.get('seguidores'))} |")
+        L.append("")
+        tipos = {x.get("tipo") for x in canais}
+        NOVE = ["voz_da_cidade", "jornal_local", "prefeitura", "mae", "humor",
+                "esporte_base", "gastronomia", "radio", "classificados"]
+        faltam = [t for t in NOVE if t not in tipos]
+        if faltam:
+            L += [f"**As lacunas — {len(faltam)} dos nove tipos não existem nesta "
+                  f"praça:** {', '.join(faltam)}.", "",
+                  "Canal que falta é **território vago**: quem chegar primeiro fala "
+                  "sozinho. Em Mafra faltavam três, e foi o achado mais acionável "
+                  "do dossiê.", ""]
+    else:
+        L += ["⚠ Nenhum canal mapeado ainda.", ""]
+    L += PREENCHER("conferir os canais à mão — 1h",
+                   "Em Palmas, 31% do que a busca automática achou era de outra "
+                   "cidade ou outro assunto. A máquina propõe; quem conhece a "
+                   "praça confirma. E ANOTE OS QUE NÃO EXISTEM.")
+
+    L += ["---", "", "## 5 · PERSONA DA CIDADE", ""]
+    L += PREENCHER("identidade de base",
+                   "A história que a cidade conta de si. Mafra: 'uma colônia de "
+                   "1829 partida pela divisa dos estados, a maior colônia bucovina "
+                   "do mundo'. Sai da imprensa e do que a cidade repete.")
+    L += PREENCHER("temperamento",
+                   "Como a cidade se comporta em público. Mafra: 'discreto, "
+                   "comunitário, desconfia de promessa grande; comenta pouco — o "
+                   "silêncio digital é característica, não ausência de opinião'.")
+    L += PREENCHER("léxico real — as palavras da praça",
+                   "As gírias e expressões que só existem ali. Mafra: piá, "
+                   "piazada, vina, chimarrão, geia. Sai dos posts e das "
+                   "avaliações, nunca de suposição regional.")
+    L += PREENCHER("valores, orgulhos e A FERIDA da cidade",
+                   "A ferida é o que mais decide comunicação. Em Mafra é SAÚDE: "
+                   "'esperar, viajar 2h ou desistir' — e a unidade que resolve "
+                   "isso fala com a cidade inteira.")
+    L += PREENCHER("sub-segmentos e como cada um fala",
+                   "A mãe decisora, o adolescente, o trabalhador, o interior "
+                   "rural, o idoso. Em Mafra cada um tem canal e linguagem "
+                   "próprios, e a concorrência já anuncia por cidade do interior.")
+    L += PREENCHER("calendário cultural",
+                   "As festas e as férias escolares do estado. Mafra: Bucovina "
+                   "Fest em julho, Mafra Fest de 5 a 8 de setembro com 18 mil "
+                   "pessoas. É onde a unidade nova aparece antes de existir.")
+    L += PREENCHER("PROIBIÇÕES DE TOM — o que JAMAIS dizer aqui",
+                   "A seção mais valiosa do dossiê de Mafra: 'jamais gíria "
+                   "gaúcha, jamais estética de Oktoberfest, jamais urgência de "
+                   "liquidação — o radar antivigarista da colônia queima a marca'.")
+
+    if posts:
+        L += ["### O que a cidade publicou (amostra da coleta)", ""]
+        for x in sorted(posts, key=lambda r: -((r.get("curtidas") or 0)))[:6]:
+            t = re.sub(r"\s+", " ", (x.get("legenda") or ""))[:150]
+            if t:
+                L.append(f"- *\"{t}…\"* — @{x.get('handle')} "
+                         f"({num(x.get('curtidas'))} curtidas)")
+        L.append("")
+
+    L += ["---", "", "## 6 · PERSONA DO PACIENTE", ""]
+    if revs:
+        L += [f"De **{num(len(revs))} avaliações** escritas por pacientes das "
+              f"clínicas desta praça.", ""]
+    L += PREENCHER("quem decide",
+                   "Em todas as praças medidas é a mãe. Confirme aqui: as "
+                   "avaliações falam de filho, ou de si?")
+    L += PREENCHER("elogios-assinatura — verbatim",
+                   "As frases que a praça repete quando elogia. São a redação do "
+                   "anúncio, e não se inventam: se colhem das avaliações.")
+    L += PREENCHER("dores → antídotos",
+                   "O que a praça reclama, e o que a unidade nova faz em resposta. "
+                   "Uma linha para cada.")
+    L += PREENCHER("objeções reais",
+                   "As perguntas que a praça faz antes de fechar. Preço, tempo, "
+                   "dor, convênio — na ordem em que aparecem ali.")
+
+    L += ["---", "", "## 7 · O QUE A UNIDADE NOVA VAI ENCONTRAR", "",
+          "*(nas praças da rede esta seção é o raio-x da unidade; aqui não há "
+          "unidade, então é o que ela encontraria no primeiro dia)*", ""]
+    L += PREENCHER("o ponto",
+                   "Onde abrir dentro da cidade. O dossiê mede o município "
+                   "inteiro; a escolha do ponto é outro trabalho, e a seção 4 "
+                   "dos bairros do plano de captação é a pista.")
+
+    L += ["---", "", "## 8 · CONCORRÊNCIA", "",
+          f"Varredura com os mesmos seis termos e três páginas das praças da "
+          f"rede: **{c['varridas']} clínicas**, {num(c['avaliacoes_somadas'])} "
           f"avaliações somadas, nota mediana {c['nota_mediana']}.", "",
           "| | |", "|---|---:|",
           f"| Passam de {FORTE} avaliações | **{c['fortes']}** |",
@@ -566,87 +702,138 @@ def dossie(e):
           f"| De rede nacional | {c['de_rede_nacional']} |",
           f"| Sem site na ficha | {c['sem_site_pct']}% |",
           f"| Endereços com ficha duplicada | {c['enderecos_com_ficha_dobrada']} |", "",
-          "**Contra quem se entra:**", "",
+          "### O líder e quem vem atrás", "",
           "| Clínica | Avaliações | Nota |", "|---|---:|---:|"]
-    for m in c["maiores"][:8]:
+    for m in c["maiores"][:10]:
         L.append(f"| {m['nome']} | {num(m['avaliacoes'])} | {m['nota']} |")
     L.append("")
-    if c["exemplos_dobrados"]:
-        L += ["**Fichas duplicadas encontradas** — ficha repetida divide avaliação "
-              "e reputação, e é a coisa mais barata de consertar numa praça nova:", ""]
-        for d in c["exemplos_dobrados"]:
-            L.append(f"- `{d['endereco']}` → {' · '.join(d['fichas'])}")
+    L += PREENCHER("o playbook do líder, passo a passo",
+                   "Como o líder ganhou a praça. Em Mafra o líder vence 'com o "
+                   "dono respondendo cada avaliação e carinho com idosos' — isso "
+                   "não sai de número, sai de ler o que ele faz.")
+    L += PREENCHER("o tipo de cada concorrente",
+                   "Rede popular, doutor com nome próprio, clínica-escola, "
+                   "startup de tráfego. Muda toda a estratégia de entrada.")
+    L += PREENCHER("a concorrência gratuita",
+                   "Tem clínica-escola ou atendimento público na cidade? A brecha "
+                   "de sempre: quase nunca fazem aparelho de adolescente e "
+                   "adulto. Confirmar por telefone antes de usar.")
+    if ads:
+        L += ["### A mídia ativa na praça", "",
+              f"**{len(ads)} anúncios ativos** de "
+              + ", ".join(sorted({a['anunciante'] for a in ads})[:6]) + ".", ""]
+        for a in ads[:5]:
+            t = re.sub(r"\s+", " ", (a.get("texto") or ""))[:130]
+            if t:
+                L.append(f"- **{a['anunciante']}**: *\"{t}…\"*")
         L.append("")
+    else:
+        L += ["### A mídia ativa na praça", "",
+              "Nenhum anúncio ativo encontrado na biblioteca pública. "
+              "**Território de mídia paga vazio** — ou a coleta não alcançou.", ""]
 
+    L += ["---", "", "## 9 · MERCADO", "",
+          f"- **Renda:** R$ {num(e.get('renda_per_capita'))} de massa salarial por "
+          f"habitante/mês.",
+          f"- **Público-alvo:** {num(e['alvo_30_45'])} adultos de 30-45 e "
+          f"{num(e['alvo_9_15'])} jovens de 9-15.",
+          f"- **Folga da categoria:** "
+          + (f"uma clínica forte para cada {num(e['hab_por_clinica_forte'])} habitantes."
+             if e.get("hab_por_clinica_forte") else
+             f"nenhuma clínica passa de {FORTE} avaliações."), ""]
+    L += PREENCHER("âncora de preço da praça",
+                   "Quanto custa aparelho nesta cidade, hoje, segundo os "
+                   "diretórios e sites locais. É o número que define se a rede "
+                   "entra por preço ou por reputação.")
+    L += PREENCHER("sazonalidade",
+                   "As férias escolares do estado e as duas ondas de matrícula. "
+                   "Sai do calendário oficial da secretaria de educação.")
+
+    L += ["---", "", "## 10 · A JOIA ENTERRADA", ""]
+    if imprensa:
+        L += [f"{len(imprensa)} matérias coletadas. Os veículos que cobrem a cidade:",
+              "", ", ".join(sorted({x.get("veiculo") for x in imprensa if x.get("veiculo")})[:10]), ""]
+        L += ["Títulos recentes, para garimpo:", ""]
+        for x in imprensa[:8]:
+            L.append(f"- {x.get('titulo')} — *{x.get('veiculo')}*")
+        L.append("")
+    L += PREENCHER("a joia — ou a declaração de que não tem",
+                   "O ativo local que ninguém copia. Em Mafra, o prêmio de "
+                   "melhores do ano é por ADESÃO e um concorrente já foi 'eleito "
+                   "ortodontista destaque' por essa via — se a especialista de "
+                   "verdade não ocupa o título, ele fica com quem chegar primeiro. "
+                   "A imprensa costuma ter a pista.")
+
+    L += ["---", "", "## 11 · TERRITÓRIOS DE CAMPANHA E TOM", ""]
+    L += PREENCHER("os territórios de campanha",
+                   "Três ou quatro ideias que cabem nesta praça e em nenhuma "
+                   "outra. Saem do cruzamento entre a ferida da cidade, as "
+                   "lacunas de canal e o que o líder não faz.")
+
+    L += ["---", "", "## 12 · PLANO DE ENTRADA", ""]
+    L += PREENCHER("o que fazer nos primeiros 90 dias",
+                   "Em ordem, do que custa zero para o que custa verba. A ficha "
+                   "do Google e os canais vagos vêm antes de qualquer anúncio.")
+
+    L += ["---", "", "## 13 · A GÊMEA — quanto esta praça pode entregar", ""]
     if g:
-        L += ["---", "", f"## 3 · A GÊMEA — {g['rotulo']}", "",
-              g["frase"], "",
-              f"Seis eixos comparados ao mesmo tempo (distância {dec(g['distancia'], 2)} "
-              f"— quanto menor, mais parecidas):", "",
+        L += [g["frase"], "",
+              f"Seis eixos comparados ao mesmo tempo (distância "
+              f"{dec(g['distancia'], 2)}):", "",
               f"| Eixo | {e['rotulo']} | {g['rotulo']} | Razão |", "|---|---:|---:|---:|"]
         for x in e["_gs"][0]["eixos"]:
             if x.get("razao"):
                 L.append(f"| {x['eixo']} | {num(x['aqui'])} | {num(x['la'])} "
                          f"| {dec(x['razao'], 2)}× |")
         L.append("")
-        if g["unidades_de_la"]:
-            L += [f"**O que a unidade faz em {g['rotulo']}:**", "",
-                  "| Unidade | Avaliações | Nota | Ritmo/mês | Meses seguidos | Selo |",
-                  "|---|---:|---:|---:|---:|---|"]
-            for u in g["unidades_de_la"]:
-                L.append(f"| {u['nome']} | {num(u['total'])} | {u['nota']} "
-                         f"| {dec(u['ritmo']) if u.get('ritmo') else '—'} "
-                         f"| {u.get('meses') or 0} | {u['selo']} |")
-            L.append("")
-        if g["onde_difere"]:
-            L += ["**Onde NÃO bate** — e isto vale mais que onde bate:", ""]
-            L += [f"- {d}" for d in g["onde_difere"]]
-            L.append("")
         faixa = e.get("faixa_das_parecidas") or []
         if len(faixa) > 1:
-            L += ["**Uma gêmea é um caso; três são uma faixa.** O que as unidades "
-                  "das três praças mais parecidas entregam hoje:", "",
-                  "| Ritmo/mês | Meses seguidos | Selo | Unidade | Praça | De onde vem o ritmo |",
+            L += ["**Uma gêmea é um caso; três são uma faixa.**", "",
+                  "| Ritmo/mês | Meses | Selo | Unidade | Praça | De onde vem |",
                   "|---:|---:|---|---|---|---|"]
             for f in faixa:
                 L.append(f"| {dec(f['ritmo'])} | {f['meses']} | {f['selo']} "
                          f"| {f['unidade']} | {f['praca']} | {f.get('fonte') or '—'} |")
             L += ["", f"A faixa vai de **{dec(faixa[0]['ritmo'])}** a "
-                      f"**{dec(faixa[-1]['ritmo'])} avaliações por mês** em praças de "
-                      f"perfil parecido. A diferença entre as pontas não é a cidade "
-                      f"— é a operação.", ""]
-        if e.get("gemeas_descartadas"):
-            L += ["**Fora da comparação por falta de dado:** "
-                  + "; ".join(f"{d['rotulo']} (sem {', '.join(d['sem'])})"
-                              for d in e["gemeas_descartadas"])
-                  + ". Praça com eixo faltando é mais fácil de casar, então ela "
-                    "sai da disputa em vez de vencer por falta de número.", ""]
-        L += [f"As outras duas mais parecidas: "
-              + " · ".join(f"**{x['rotulo']}** ({dec(x['distancia'], 2)})"
-                           for x in e["gemeas"][1:3]) + ".", "",
-              "**A gêmea é âncora, não promessa.** Ela diz que uma unidade "
-              "OrthoDontic numa cidade deste tamanho, com esta renda e esta "
-              "categoria, chegou a esse patamar. Não diz que esta chegará: o "
-              "franqueado, o ponto e a operação são outra metade da conta — e "
-              "essa metade a gente mediu em Cuiabá, onde três unidades da mesma "
-              "marca, na mesma cidade, fazem 46,4 · 3,7 · 0,7 avaliações por mês.", ""]
+                      f"**{dec(faixa[-1]['ritmo'])} por mês** em praças de perfil "
+                      f"parecido. **A diferença entre as pontas não é a cidade — é "
+                      f"a operação.**", ""]
+        if g["onde_difere"]:
+            L += ["**Onde NÃO bate** — e isto vale mais que onde bate:", ""]
+            L += [f"- {d}" for d in g["onde_difere"]] + [""]
 
-    L += ["---", "", "## O QUE ISTO NÃO PROVA", "",
+    L += ["---", "", "## 14 · O QUE NÃO ESTAMOS VENDO", "",
+          "- **A coleta enxerga o digital público.** Não vê rádio, TV, outdoor, "
+          "patrocínio de escolinha, parceria com escola nem indicação boca a "
+          "boca — que os estudos apontam como *o* canal de decisão.",
           "- **População residente, não diurna.** A literatura de território diz "
-          "que a diurna prevê melhor a demanda de varejo de serviço; o IBGE não "
-          "a publica de graça.",
-          "- **A praça é o município inteiro**, não o raio real de deslocamento. "
-          "Escolher o ponto dentro da cidade é outro trabalho.",
-          "- **Mede a categoria pública do Google** — volume de avaliação e nota. "
-          "Não vê faturamento, ticket, convênio nem consultório sem ficha.",
-          "- **A gêmea compara perfil, não gestão.** Duas cidades iguais com "
-          "franqueados diferentes dão resultados diferentes.", "",
+          "que a diurna prevê melhor; o IBGE não a publica de graça.",
+          "- **A praça é o município inteiro**, não o raio real de deslocamento.",
+          "- **Mede a categoria pública do Google** — volume e nota, não "
+          "faturamento, ticket nem convênio.",
+          "- **A gêmea compara perfil, não gestão.** Em MT · Cuiabá três unidades "
+          "da mesma marca, na mesma cidade, fazem 46,4 · 3,7 · 0,7 por mês.", "",
+          "**A pergunta que fecha o buraco custa nada:** *o que se faz de mídia "
+          "nesta cidade que não está na internet?*", ""]
+
+    L += ["---", "", "## 15 · O CHECKLIST DESTA PRAÇA", "",
+          f"- [{'x' if canais else ' '}] canais da cidade mapeados ({len(canais)})",
+          "- [ ] canais **conferidos à mão**, e os que NÃO existem anotados",
+          f"- [{'x' if len(posts) >= 800 else ' '}] 800+ vozes coletadas ({len(posts)})",
+          f"- [{'x' if revs else ' '}] avaliações com data ({len(revs)})",
+          "- [ ] o tipo de cada concorrente preenchido",
+          "- [ ] a ferida da cidade escrita",
+          "- [ ] as proibições de tom escritas",
+          "- [ ] a joia enterrada — ou a declaração de que não tem",
+          "- [ ] o calendário: férias escolares do estado + festas da cidade",
+          f"- [{'x' if imprensa else ' '}] imprensa local ({len(imprensa)} matérias)",
+          f"- [{'x' if ads else ' '}] mídia ativa dos concorrentes ({len(ads)})",
+          "- [ ] o plano de entrada dos 90 dias", "",
           "---", "",
-          f"_Varredura de {dt.date.today().strftime('%d/%m/%Y')}: {c['varridas']} "
-          f"clínicas pela Google Places API. População, renda e faixas etárias do "
-          f"IBGE (agregados 6579, 4709, 5938 e 9514). Unidades da rede de "
-          f"orthodonticbrasil.com.br. Dados em `dados/oportunidade/{e['praca_id']}.json` "
-          f"e `dados/serie/categoria_oportunidade.jsonl`._", ""]
+          f"_Coletado até {hoje}. Radar de Oportunidade + o mesmo processo de "
+          f"`coleta/NOVA-PRACA.md` usado nas praças da rede, menos o que depende "
+          f"de unidade. Dados em `dados/oportunidade/{praca}.json` e "
+          f"`dados/serie/`._", ""]
     return "\n".join(L)
 
 

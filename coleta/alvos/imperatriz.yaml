@@ -1,0 +1,107 @@
+# ALVOS DE COLETA — imperatriz  (PRAÇA DE OPORTUNIDADE)
+# Esqueleto gerado em 2026-08-09.
+# A etapa 2 (os canais da cidade) é HUMANA e é onde o estudo se decide.
+# Ver coleta/NOVA-PRACA.md
+
+praca_id: imperatriz
+cidades: ["Imperatriz/MA"]
+sem_unidade: true
+alvos:
+  - name: goncalves_odontologia_dent_google
+    layer: concorrente
+    platform: google
+    query: "Gonçalves Odontologia | Dentista em Imperatriz - Especialista em Implantes, Aparelhos, Clareamento e Facetas Dentais"
+    place_id: ChIJWZ1cPDlfxZIR8lMYJdE5D9o
+    status: roda
+  - name: happyclin_google
+    layer: concorrente
+    platform: google
+    query: "HappyClin"
+    place_id: ChIJ66CWbuBfxZIRo3mLFJR8ACQ
+    status: roda
+  - name: smile_odontologia_google
+    layer: concorrente
+    platform: google
+    query: "Smile Odontologia"
+    place_id: ChIJW_FePjVfxZIR1MT3Z51_wYk
+    status: roda
+  - name: odontomob_dentista_em_impe_google
+    layer: concorrente
+    platform: google
+    query: "OdontoMob | Dentista em Imperatriz"
+    place_id: ChIJ-fLTB41fxZIRRywhBBCcOZU
+    status: roda
+  - name: dr_henrique_dr_shaymon_odo_google
+    layer: concorrente
+    platform: google
+    query: "Dr Henrique | Dr Shaymon - Odontologia Avançada"
+    place_id: ChIJV8WVCfhfxZIRn24xhHQUhhs
+    status: roda
+  - name: unique_smile_clin_clinica__google
+    layer: concorrente
+    platform: google
+    query: "Unique Smile Clin - Clínica Odontológica em Imperatriz"
+    place_id: ChIJkX5-ZCRfxZIRe9p-LjuQPWg
+    status: roda
+  - name: consultorio_odontologico_d_google
+    layer: concorrente
+    platform: google
+    query: "Consultório odontológico Dra Laís Santos"
+    place_id: ChIJ1WJ4yK1fxZIR_QPN-TDZslQ
+    status: roda
+  - name: clinica_mae_google
+    layer: concorrente
+    platform: google
+    query: "Clínica Mãe"
+    place_id: ChIJX0kfwilexZIR4RqC8xAILqA
+    status: roda
+
+# ---- PREENCHER À MÃO: os canais da cidade ----
+  # - name: voz_da_cidade_ig            # o perfil que a cidade inteira segue
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: jornal_local_ig            # o portal/jornal que pauta a conversa
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: prefeitura_ig            # a agenda pública
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: mae_ig            # a mãe-influencer — a decisora do aparelho
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: humor_ig            # a página de humor, que é a voz afetiva
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: esporte_base_ig            # a escolinha de 9-15 — o público exato, com os pais na arquibancada
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: gastronomia_ig            # o perfil-indicador de consumo
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: radio_ig            # a mídia da mãe e da avó
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: classificados_ig            # onde o povão compra e comenta
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+
+# E ANOTE OS QUE NÃO EXISTEM. Canal que falta é território vago —
+# em Mafra faltavam três, e é o achado mais acionável do dossiê.

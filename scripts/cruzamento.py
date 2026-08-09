@@ -49,8 +49,18 @@ def jsonl(nome):
         if p.exists() else []
 
 
-def identidades():
-    return {p.stem: json.loads(p.read_text(encoding="utf-8")) for p in sorted(IDENT.glob("*.json"))}
+def identidades(com_unidade=True):
+    """As praças da REDE. Praça de oportunidade (sem unidade) fica de fora.
+
+    Sem esta trava, as seis praças que o Radar encontrou entrariam no placar
+    como unidades sem movimento — e o "3 de 10 sustentam, 5 pararam" viraria
+    "3 de 16, 11 pararam". Seria mentira em cima do número que a franqueadora
+    mais olha."""
+    todas = {p.stem: json.loads(p.read_text(encoding="utf-8"))
+             for p in sorted(IDENT.glob("*.json"))}
+    if not com_unidade:
+        return todas
+    return {k: v for k, v in todas.items() if not v.get("sem_unidade")}
 
 
 def ritmo_e_meses(datas, hoje=None):

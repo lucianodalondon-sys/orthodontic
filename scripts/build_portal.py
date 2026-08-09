@@ -14,15 +14,25 @@ Uso:  python3 scripts/build_portal.py [--corte AAAA-MM-DD]
 """
 import json, argparse, pathlib, sys
 import datetime as dt
-from collections import defaultdict
+from collections import defaultdict, Counter
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 SERIE, CONT, IDENT, OUT = (RAIZ/"dados"/x for x in ("serie","conteudo","identidade","portal"))
 # A lista de praças SAI da pasta de identidade, não do código. Escrever aqui
 # foi o mesmo defeito dos coletores: praça nova entrava na base e nunca chegava
 # ao portal, calada. Cuiabá, Palmas e Contagem ficaram três semanas de fora.
-PRACAS = sorted(p.stem for p in (pathlib.Path(__file__).resolve().parent.parent
-                                 / "dados" / "identidade").glob("*.json"))
+def _ident_todas():
+    d = pathlib.Path(__file__).resolve().parent.parent/"dados"/"identidade"
+    return {a.stem: json.loads(a.read_text(encoding="utf-8"))
+            for a in sorted(d.glob("*.json"))}
+
+
+_TODAS = _ident_todas()
+# PRACAS = as praças da REDE, com unidade dentro. As de oportunidade têm
+# identidade igual e passam pelos mesmos coletores, mas não entram no placar
+# da rede — praça sem unidade não é unidade parada.
+PRACAS = [k for k, v in _TODAS.items() if not v.get("sem_unidade")]
+PRACAS_OPORTUNIDADE = [k for k, v in _TODAS.items() if v.get("sem_unidade")]
 
 
 def jsonl(nome):
@@ -299,6 +309,172 @@ def main():
     corr["descida"] = descida
     escritos.append(escreve("corretor", corr))
     escritos.append(escreve("evidencias", carrega(CONT, "evidencias")))
+
+    # ---------- FRANQUEADORA: a sala de comando ----------
+    # É a tela do login inicial da franqueadora, e ela não é um relatório: é o
+    # painel de onde a rede inteira se enxerga e de onde se escolhe a
+    # ferramenta. O Radar de Oportunidade é UMA das ferramentas, não a tela.
+    #
+    # Cada ferramenta abaixo só entra se tiver dado atrás. Ferramenta sem dado
+    # entra com `disponivel: false` e o motivo — o casco mostra apagada, porque
+    # esconder o que falta é o que faz a diretoria achar que mede tudo.
+    unids = jsonl("unidades_rede")
+    rede_corte = max((u["snapshot_date"] for u in unids), default=None)
+    atuais = [u for u in unids if u["snapshot_date"] == rede_corte]
+    por_uf = defaultdict(lambda: {"unidades": 0, "abertas": 0, "implantando": 0,
+                                  "cidades": set(), "medidas": 0})
+    for u in atuais:
+        d = por_uf[u["uf"].upper()]
+        d["unidades"] += 1
+        d["abertas" if u["situacao"] == "aberta" else "implantando"] += 1
+        d["cidades"].add(u["cidade"])
+    ufs_medidas = {uf for p in PRACAS for uf in (ident[p].get("uf") or [])}
+    for uf in ufs_medidas:
+        if uf in por_uf:
+            por_uf[uf]["medidas"] = sum(
+                1 for p in PRACAS if uf in (ident[p].get("uf") or []))
+    TODAS_UF = ["AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA",
+                "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN",
+                "RS", "RO", "RR", "SC", "SP", "SE", "TO"]
+    mapa = [{"uf": uf,
+             "unidades": por_uf.get(uf, {}).get("unidades", 0),
+             "abertas": por_uf.get(uf, {}).get("abertas", 0),
+             "em_implantacao": por_uf.get(uf, {}).get("implantando", 0),
+             "cidades": len(por_uf.get(uf, {}).get("cidades", ())),
+             "pracas_medidas": por_uf.get(uf, {}).get("medidas", 0)}
+            for uf in TODAS_UF]
+
+    cruz = carrega(CONT, "rede_cruzamento") or {}
+    if (OUT/"rede_cruzamento.json").exists():
+        cruz = json.loads((OUT/"rede_cruzamento.json").read_text(encoding="utf-8"))
+
+    # reputação de rede contra rede: o último registro de CADA marca, não o
+    # último dia — as marcas foram coletadas em dias diferentes.
+    marcas = {}
+    for r in sorted(jsonl("reclamacoes_agregado"), key=lambda x: x["snapshot_date"]):
+        marcas[r.get("empresa")] = r
+    reputacao = sorted(
+        [{"marca": r.get("nome"), "reclamacoes": r.get("reclamacoes_total"),
+          "selo": r.get("selo_12m") or r.get("selo"), "nota": r.get("nota_12m"),
+          "nossa": (r.get("empresa") == "orthodontic"),
+          "medido_em": r["snapshot_date"]} for r in marcas.values()],
+        key=lambda x: -(x["reclamacoes"] or 0))
+
+    # a ficha do Google das unidades: o achado de categoria, agregado
+    cat_ult = ultimo_por(jsonl("categoria"), lambda r: (r.get("praca_id"), r.get("place_id")))
+    nossos_ids = {l.get("place_id") for p in PRACAS
+                  for l in ident[p].get("locais", [])
+                  if l.get("papel") == "proprio" and l.get("place_id")}
+    fichas = [r for r in cat_ult.values() if r.get("place_id") in nossos_ids]
+    por_tipo = Counter(r.get("tipo") for r in fichas)
+    sem_site = sum(1 for r in fichas if not (r.get("site") or "").strip())
+
+    # presença na busca, somada na rede
+    caps = ultimo_por(jsonl("captacao"), lambda r: r.get("praca_id"))
+    fam = defaultdict(lambda: {"dentro": 0, "fora": 0})
+    for c in caps.values():
+        for k, v in (c.get("por_familia") or {}).items():
+            fam[k]["dentro"] += v.get("dentro", 0)
+            fam[k]["fora"] += v.get("fora", 0)
+
+    rad = json.loads((OUT/"radar.json").read_text(encoding="utf-8")) \
+        if (OUT/"radar.json").exists() else {}
+
+    def ferramenta(chave, nome, oque, tela, disponivel, resumo, motivo=None):
+        return {"chave": chave, "nome": nome, "o_que_responde": oque,
+                "tela": tela, "disponivel": disponivel, "resumo": resumo,
+                "indisponivel_porque": motivo}
+
+    ferramentas = [
+        ferramenta("mapa", "Mapa da rede",
+                   "onde a rede está, estado por estado",
+                   "mapa", True,
+                   f"{len(atuais)} unidades em {len({u['cidade'] for u in atuais})} "
+                   f"cidades · {len([m for m in mapa if not m['unidades']])} estados sem nenhuma"),
+        ferramenta("radar", "Radar de Oportunidade",
+                   "onde vale abrir a próxima unidade",
+                   "radar", bool(rad.get("oportunidades")),
+                   f"{len(rad.get('oportunidades', []))} praças livres estudadas · "
+                   f"{len(rad.get('ja_tem_unidade', []))} descartadas por já ter unidade"),
+        ferramenta("constancia", "Quem sustenta, quem parou",
+                   "quais unidades operam e quais só fizeram campanha",
+                   "constancia", bool(cruz.get("unidades")),
+                   f"{cruz.get('sustentam', 0)} de {cruz.get('unidades', 0)} sustentam · "
+                   f"{cruz.get('paradas', 0)} pararam · {cruz.get('campanha', 0)} em campanha"),
+        ferramenta("busca", "Presença na busca",
+                   "a rede aparece quando a cidade procura dentista?",
+                   "busca", bool(fam),
+                   f"{fam['dentista']['dentro']} aparições contra "
+                   f"{fam['dentista']['fora']} ausências na busca por 'dentista'"
+                   if fam.get("dentista") else "sem medição"),
+        ferramenta("fichas", "Auditoria de ficha do Google",
+                   "o cadastro das unidades está certo?",
+                   "fichas", bool(fichas),
+                   f"{len(fichas)} fichas conferidas · "
+                   + " · ".join(f"{n} como '{t}'" for t, n in por_tipo.most_common(2))
+                   + f" · {sem_site} sem site"),
+        ferramenta("reputacao", "Reputação: rede contra rede",
+                   "como a marca se compara com as concorrentes",
+                   "reputacao", bool(reputacao),
+                   f"{len(reputacao)} redes medidas no Reclame Aqui"),
+        ferramenta("territorio", "Território vazio",
+                   "que canal falta em cada praça, e ninguém ocupou",
+                   "territorio", bool(cruz.get("territorio_vazio")),
+                   "canais mapeados por praça, com os que não existem"),
+        ferramenta("achados", "A escada dos achados",
+                   "o que já vale para a rede e o que caiu",
+                   "achados", (OUT/"achados.json").exists(),
+                   "de sinal isolado a regra da rede — inclusive o que foi derrubado"),
+        ferramenta("consultor", "Carteira do consultor",
+                   "quem visitar primeiro, e por quê",
+                   "consultor", (OUT/"corretor.json").exists(),
+                   "prioridade de visita por unidade"),
+        ferramenta("pracas", "As praças medidas",
+                   "a ficha completa de cada praça",
+                   "pracas", bool(PRACAS),
+                   f"{len(PRACAS)} praças com estudo completo"),
+        ferramenta("planos", "O plano de cada franqueado",
+                   "o que cada unidade tem para fazer nesta semana",
+                   "planos", bool(presentes_planos := sorted(
+                       a.stem for a in (OUT/"planos").glob("*.json"))
+                       if (OUT/"planos").exists() else []),
+                   f"{len(presentes_planos)} planos escritos"),
+        ferramenta("sazonalidade", "Calendário da rede",
+                   "quando a procura sobe em cada região",
+                   "sazonalidade", bool(sazon),
+                   f"{len(sazon)} regiões com curva de sazonalidade"),
+        ferramenta("evidencias", "Biblioteca de evidências",
+                   "a citação por trás de cada afirmação",
+                   "evidencias", (OUT/"evidencias.json").exists(),
+                   "as vozes e provas que sustentam os achados"),
+    ]
+
+    escritos.append(escreve("franqueadora", {
+        "corte": corte,
+        "gerado_em": dt.datetime.now().isoformat(timespec="seconds"),
+        "rede": {
+            "unidades": len(atuais),
+            "abertas": sum(1 for u in atuais if u["situacao"] == "aberta"),
+            "em_implantacao": sum(1 for u in atuais if u["situacao"] != "aberta"),
+            "cidades": len({u["cidade"] for u in atuais}),
+            "ufs_com_unidade": sum(1 for m in mapa if m["unidades"]),
+            "ufs_sem_unidade": [m["uf"] for m in mapa if not m["unidades"]],
+            "medido_em": rede_corte,
+            "fonte": "orthodonticbrasil.com.br/encontre-uma-unidade",
+        },
+        "cobertura": {**carrega(CONT, "rede").get("cobertura", {}),
+                      "pracas_medidas": len(PRACAS),
+                      "aviso": "A medição cobre uma amostra da rede. Todo número "
+                               "desta tela vale para as praças medidas, não para "
+                               "as 340."},
+        "mapa": mapa,
+        "ferramentas": ferramentas,
+        "reputacao_das_redes": reputacao,
+        "fichas_da_rede": {"conferidas": len(fichas),
+                           "por_categoria": dict(por_tipo),
+                           "sem_site": sem_site},
+        "presenca_na_busca": {k: dict(v) for k, v in fam.items()},
+    }))
 
     # ---------- manifest, POR ÚLTIMO ----------
     # Ele é o índice que o casco lê antes de qualquer outra coisa: diz quais

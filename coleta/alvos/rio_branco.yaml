@@ -1,0 +1,107 @@
+# ALVOS DE COLETA — rio_branco  (PRAÇA DE OPORTUNIDADE)
+# Esqueleto gerado em 2026-08-09.
+# A etapa 2 (os canais da cidade) é HUMANA e é onde o estudo se decide.
+# Ver coleta/NOVA-PRACA.md
+
+praca_id: rio_branco
+cidades: ["Rio Branco/AC"]
+sem_unidade: true
+alvos:
+  - name: ortho_life_consultorio_odo_google
+    layer: concorrente
+    platform: google
+    query: "Ortho Life Consultório Odontológico"
+    place_id: ChIJNwXdO0iMf5ERLMpTr-FaM-U
+    status: roda
+  - name: lais_bittencourt_endodonti_google
+    layer: concorrente
+    platform: google
+    query: "Laís Bittencourt | Endodontista | Tratamento de Canal"
+    place_id: ChIJ8wSYXv-Mf5ERHJ8F4EbEO7M
+    status: roda
+  - name: mouzari_odonto_clinic_mouz_google
+    layer: concorrente
+    platform: google
+    query: "Mouzari Odonto Clinic & Mouzari Kids Odontopediatria"
+    place_id: ChIJT2gUTQ-Nf5ER8rOvWZ8YHaw
+    status: roda
+  - name: clin_saude_google
+    layer: concorrente
+    platform: google
+    query: "Clin Saúde"
+    place_id: ChIJOZqZGk6Mf5ERGNiEKdxRD88
+    status: roda
+  - name: studio_ricci_odontologia_google
+    layer: concorrente
+    platform: google
+    query: "Studio RICCI Odontologia"
+    place_id: ChIJHdnr_EWNf5ERNzpR5lZFkmk
+    status: roda
+  - name: cliniodonto_implantes_dent_google
+    layer: concorrente
+    platform: google
+    query: "Cliniodonto | Implantes Dentários Rio Branco-Dra Carla Santana CRO/AC 307"
+    place_id: ChIJAWCwE_-Mf5ERnDUS9vhBp_c
+    status: roda
+  - name: dra_yana_paiva_clinica_odo_google
+    layer: concorrente
+    platform: google
+    query: "Dra Yana Paiva - Clínica Odontológica em Rio Branco"
+    place_id: ChIJ8yWOH8SNf5ERq3E_L2lV4WM
+    status: roda
+  - name: clinica_mediolins_google
+    layer: concorrente
+    platform: google
+    query: "Clinica Mediolins"
+    place_id: ChIJH5oXl1mNf5ER7TTLjrKOtFI
+    status: roda
+
+# ---- PREENCHER À MÃO: os canais da cidade ----
+  # - name: voz_da_cidade_ig            # o perfil que a cidade inteira segue
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: jornal_local_ig            # o portal/jornal que pauta a conversa
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: prefeitura_ig            # a agenda pública
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: mae_ig            # a mãe-influencer — a decisora do aparelho
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: humor_ig            # a página de humor, que é a voz afetiva
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: esporte_base_ig            # a escolinha de 9-15 — o público exato, com os pais na arquibancada
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: gastronomia_ig            # o perfil-indicador de consumo
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: radio_ig            # a mídia da mãe e da avó
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+  # - name: classificados_ig            # onde o povão compra e comenta
+  #   layer: territorio
+  #   platform: instagram
+  #   handle: ""
+  #   status: pendente
+
+# E ANOTE OS QUE NÃO EXISTEM. Canal que falta é território vago —
+# em Mafra faltavam três, e é o achado mais acionável do dossiê.

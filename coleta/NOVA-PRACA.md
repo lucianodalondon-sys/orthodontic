@@ -871,6 +871,44 @@ E logo abaixo, **onde NÃO bate** — que vale mais que onde bate.
 porque misturar cidade sem unidade em `categoria.jsonl` estragaria o cruzamento
 da rede.
 
+### ⚠ E a etapa 15 NÃO TERMINA AQUI
+
+Isto foi um erro real e caro de entender: por um tempo o estudo de oportunidade
+parou nas três seções acima — IBGE, concorrência e a gêmea. **O dossiê de Mafra
+tem dezoito.** O que faltava não era detalhe, era a metade que decide a entrada:
+
+- quem fala com a cidade, com nome e número de seguidores
+- o que a cidade diz, com as palavras dela
+- **a ferida da praça** — em Mafra é saúde: *"esperar, viajar 2h ou desistir"*
+- que canal **não existe** e portanto está vago — em Mafra faltavam três
+- **o que jamais dizer ali** — *"jamais gíria gaúcha, jamais estética de
+  Oktoberfest, jamais urgência de liquidação"*
+
+Nada disso sai de população e nota do Google.
+
+### A correção: praça de oportunidade é PRAÇA SEM UNIDADE
+
+Não é um produto mais raso. É a mesma coisa, sem unidade dentro.
+
+```bash
+python3 scripts/promover_oportunidade.py --todas   # vira praça de verdade
+python3 coleta/entrar.py --praca macapa --continuar # o MESMO processo
+```
+
+`promover_oportunidade.py` aproveita a varredura que já foi paga e ancora os
+14 maiores concorrentes por `place_id`, para o coletor de avaliação não começar
+do zero. A identidade nasce com `"sem_unidade": true`, e é essa marca que faz o
+resto do sistema não contar praça sem unidade como unidade parada — sem ela, o
+`3 de 10 sustentam, 5 pararam` viraria `3 de 16, 11 pararam`.
+
+**Daí em diante são as ETAPAS 1 a 12, iguais.** Só a 7 muda de nome: em vez de
+"a unidade por dentro", vira "o que a unidade nova vai encontrar".
+
+E o dossiê sai com as quinze seções, com as medidas preenchidas e as humanas
+marcadas `PREENCHER` — **com a pergunta exata e o exemplo de Mafra do lado**.
+Seção humana em branco é honesta; seção humana preenchida com texto plausível
+é o jeito de um dossiê parecer completo e não ser.
+
 ---
 
 # O CHECKLIST DE ENTREGA
