@@ -216,7 +216,9 @@ def roda(praca):
     if not M:
         print(f"  {praca}: sem avaliação com data — nada a ler."); return None
 
-    print(f"\n{'='*74}\n  INTELIGÊNCIA · {ident.get('nome', praca)}  ({len(M)} clínicas)\n{'='*74}")
+    # a UF vem antes do nome: existe Palmas no TO e no PR
+    rot = ident.get("rotulo") or ident.get("nome", praca)
+    print(f"\n{'='*74}\n  INTELIGÊNCIA — {rot}  ({len(M)} clínicas)\n{'='*74}")
 
     print("\n## 1 · O PLACAR PELO RITMO")
     print("  'meses' = meses seguidos com movimento. Ritmo diz quanto; meses diz")

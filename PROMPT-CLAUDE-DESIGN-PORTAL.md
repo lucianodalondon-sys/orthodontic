@@ -1,3 +1,10 @@
+> **REGRA DE ESCRITA QUE VALE PARA A TELA INTEIRA**
+> A UF vem **antes** do nome da cidade: **`MG · Contagem`**, nunca
+> `Contagem/MG`. Praça com duas cidades repete a UF em cada uma:
+> `SC · Mafra + PR · Rio Negro`. Existe Palmas no TO e no PR — com a UF na
+> frente o erro salta aos olhos, e numa lista de 340 o olho agrupa por estado
+> sozinho. O JSON entrega pronto no campo `rotulo`.
+
 # PROMPT MESTRE — Claude Design
 ## Portal de Inteligência OrthoDontic · visão da FRANQUEADORA
 

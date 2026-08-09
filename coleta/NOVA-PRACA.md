@@ -95,7 +95,26 @@ Quatro perguntas fecham:
 > Alto na BA. **Sempre escreva a UF** — e a coleta já entrou contaminada por
 > isso uma vez.
 
-**Sai:** `praca_id`, lista de cidades com UF, e uma linha explicando por quê.
+### A UF vem ANTES do nome, em tudo que alguém lê
+
+**`MG · Contagem`**, nunca `Contagem/MG`. Vale na tela do portal, no dossiê, no
+relatório e no e-mail.
+
+| Praça | Como escreve |
+|---|---|
+| Contagem | `MG · Contagem` |
+| Riomafra | `SC · Mafra + PR · Rio Negro` |
+| Cuiabá | `MT · Cuiabá + MT · Várzea Grande` |
+
+Com a UF na frente, a cidade errada salta aos olhos antes de virar dado; numa
+lista de 340 unidades o olho agrupa por estado sem coluna extra; e a ordem
+alfabética vira ordem por estado de graça.
+
+O rótulo sai pronto no campo `rotulo` de `dados/identidade/<praca>.json`, e o
+código está em `scripts/rotulo.py`. **Ninguém monta isso à mão.**
+
+**Sai:** `praca_id`, lista de cidades com UF, o `rotulo`, e uma linha
+explicando o raio.
 
 ---
 
@@ -687,7 +706,7 @@ não estamos vendo · o que fazer, em ordem.
 
 Uma praça só está pronta quando tem:
 
-- [ ] a praça definida, com a justificativa do raio **e a UF escrita**
+- [ ] a praça definida, com a justificativa do raio e o `rotulo` no formato **`UF · Cidade`**
 - [ ] população, renda e **o tamanho dos dois alvos** (9-15 e 30-45)
 - [ ] 8 a 14 canais mapeados, com o tipo de cada um, **conferidos à mão**
 - [ ] **os canais que NÃO existem, anotados**

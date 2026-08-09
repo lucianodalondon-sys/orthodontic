@@ -1,6 +1,6 @@
 {
   "gerado_de": "dados/serie + dados/conteudo + dados/identidade",
-  "corte": "2026-08-07",
+  "corte": "2026-08-08",
   "taxonomia_versao": "1.1",
   "cobertura": {
     "ouvidas": 4,
@@ -8,32 +8,83 @@
   },
   "pracas": [
     {
-      "praca_id": "riomafra",
-      "nome": "Riomafra",
+      "praca_id": "contagem",
+      "nome": "Contagem",
+      "rotulo": "MG · Contagem",
+      "uf": [
+        "MG"
+      ],
       "cidades": [
-        "Mafra/SC",
-        "Rio Negro/PR"
+        "MG · Contagem"
       ]
     },
     {
-      "praca_id": "londrina",
-      "nome": "Londrina",
+      "praca_id": "cuiaba",
+      "nome": "Cuiabá",
+      "rotulo": "MT · Cuiabá + MT · Várzea Grande",
+      "uf": [
+        "MT"
+      ],
       "cidades": [
-        "Londrina/PR"
+        "MT · Cuiabá",
+        "MT · Várzea Grande"
       ]
     },
     {
       "praca_id": "feira",
       "nome": "Feira de Santana",
+      "rotulo": "BA · Feira de Santana",
+      "uf": [
+        "BA"
+      ],
       "cidades": [
-        "Feira de Santana/BA"
+        "BA · Feira de Santana"
+      ]
+    },
+    {
+      "praca_id": "londrina",
+      "nome": "Londrina",
+      "rotulo": "PR · Londrina",
+      "uf": [
+        "PR"
+      ],
+      "cidades": [
+        "PR · Londrina"
+      ]
+    },
+    {
+      "praca_id": "palmas",
+      "nome": "Palmas",
+      "rotulo": "TO · Palmas",
+      "uf": [
+        "TO"
+      ],
+      "cidades": [
+        "TO · Palmas"
       ]
     },
     {
       "praca_id": "prudente",
       "nome": "Presidente Prudente",
+      "rotulo": "SP · Presidente Prudente",
+      "uf": [
+        "SP"
+      ],
       "cidades": [
-        "Presidente Prudente/SP"
+        "SP · Presidente Prudente"
+      ]
+    },
+    {
+      "praca_id": "riomafra",
+      "nome": "Riomafra",
+      "rotulo": "SC · Mafra + PR · Rio Negro",
+      "uf": [
+        "PR",
+        "SC"
+      ],
+      "cidades": [
+        "SC · Mafra",
+        "PR · Rio Negro"
       ]
     }
   ],
@@ -42,10 +93,13 @@
     "achados",
     "corretor",
     "evidencias",
-    "pracas/riomafra",
-    "pracas/londrina",
+    "pracas/contagem",
+    "pracas/cuiaba",
     "pracas/feira",
-    "pracas/prudente"
+    "pracas/londrina",
+    "pracas/palmas",
+    "pracas/prudente",
+    "pracas/riomafra"
   ],
   "aviso": "O casco não calcula. Todo valor exibido sai deste diretório."
 }

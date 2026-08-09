@@ -17,7 +17,11 @@ from collections import defaultdict
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 SERIE, CONT, IDENT, OUT = (RAIZ/"dados"/x for x in ("serie","conteudo","identidade","portal"))
-PRACAS = ["riomafra", "londrina", "feira", "prudente"]
+# A lista de praças SAI da pasta de identidade, não do código. Escrever aqui
+# foi o mesmo defeito dos coletores: praça nova entrava na base e nunca chegava
+# ao portal, calada. Cuiabá, Palmas e Contagem ficaram três semanas de fora.
+PRACAS = sorted(p.stem for p in (pathlib.Path(__file__).resolve().parent.parent
+                                 / "dados" / "identidade").glob("*.json"))
 
 
 def jsonl(nome):
@@ -81,7 +85,11 @@ def main():
         "corte": corte,
         "taxonomia_versao": next((r.get("taxonomia_versao") for r in temas if r.get("taxonomia_versao")), None),
         "cobertura": carrega(CONT, "rede").get("cobertura", {}),
-        "pracas": [{"praca_id": p, "nome": ident[p].get("nome"), "cidades": ident[p].get("cidades", [])}
+        # o casco NÃO monta rótulo de cidade — recebe pronto, com a UF na frente
+        "pracas": [{"praca_id": p, "nome": ident[p].get("nome"),
+                    "rotulo": ident[p].get("rotulo") or ident[p].get("nome"),
+                    "uf": ident[p].get("uf", []),
+                    "cidades": ident[p].get("cidades_rotulo") or ident[p].get("cidades", [])}
                    for p in PRACAS],
         "telas": ["rede", "achados", "corretor", "evidencias"] + [f"pracas/{p}" for p in PRACAS],
         "aviso": "O casco não calcula. Todo valor exibido sai deste diretório.",
@@ -98,7 +106,9 @@ def main():
         linhas.append({
             "praca_id": p,
             "nome": ident[p].get("nome"),
-            "cidades": ident[p].get("cidades", []),
+            "rotulo": ident[p].get("rotulo") or ident[p].get("nome"),
+            "uf": ident[p].get("uf", []),
+            "cidades": ident[p].get("cidades_rotulo") or ident[p].get("cidades", []),
             "papel": carrega(CONT, p).get("papel"),
             "nota": pl.get("nota"),
             "avaliacoes": pl.get("avaliacoes_total"),
@@ -153,6 +163,10 @@ def main():
 
         escreve(f"pracas/{p}", {
             "praca_id": p, "corte": corte,
+            # o casco não monta rótulo: recebe pronto, com a UF na frente
+            "rotulo": ident[p].get("rotulo") or ident[p].get("nome"),
+            "uf": ident[p].get("uf", []),
+            "cidades": ident[p].get("cidades_rotulo") or ident[p].get("cidades", []),
             "identidade": {k: v for k, v in ident[p].items() if k != "locais"},
             **{k: v for k, v in c.items() if k != "praca_id"},
             "placar": placar, "funil": funil, "temas": temas_p,

@@ -41,6 +41,34 @@
 
 ---
 
+## A UF vem antes do nome da cidade. Sempre.
+
+**`MG · Contagem`**, nunca `Contagem/MG` nem `Contagem - MG`.
+
+Vale na tela do portal, no relatório, no e-mail e no nome de arquivo. Três
+motivos, e o primeiro já custou caro:
+
+**Cidade homônima é armadilha real.** Existe Palmas no Tocantins e no Paraná.
+Existe Palmas de Monte Alto na Bahia. A coleta já entrou contaminada por isso
+— a prefeitura de Palmas/PR foi tratada como se fosse a nossa. **Com a UF na
+frente, o erro salta aos olhos antes de virar dado.**
+
+**Numa lista de 340 unidades, a leitura agrupa sozinha.** `MG ·`, `MG ·`,
+`MG ·`, `MT ·` — o olho separa por estado sem precisar de coluna extra e sem
+ordenar nada.
+
+**Ordena certo por padrão.** Ordem alfabética de `MG · Contagem` já é ordem por
+estado. Ordem alfabética de `Contagem/MG` é ordem por acaso.
+
+Praça com mais de uma cidade repete a UF em cada uma:
+**`SC · Mafra + PR · Rio Negro`** — porque é exatamente isso que ela é, uma
+cidade partida pela divisa.
+
+O rótulo pronto está em `dados/identidade/<praca>.json`, campo `rotulo`, e o
+código está em `scripts/rotulo.py`. **Ninguém deve montar isso à mão.**
+
+---
+
 ## O que a gente NÃO troca
 
 São as palavras da própria rede. Usar elas é falar de dentro:

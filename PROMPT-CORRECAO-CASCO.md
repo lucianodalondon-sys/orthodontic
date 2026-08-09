@@ -47,7 +47,26 @@ no placar. Tudo vem pronto no JSON. Se um número não está lá, a tela mostra
 unidades fictícias**, para provar que a tela aguenta lista longa. Não use as 4
 reais como se fossem tudo.
 
-### 3 · Ainda tem palavra difícil na tela.
+### 3 · A UF vem ANTES do nome da cidade, em toda a tela.
+
+**`MG · Contagem`**, nunca `Contagem/MG`.
+
+Vale no título da ficha, no cartão de alerta, no resultado da busca, no filtro
+e na lista. Praça com duas cidades repete: **`SC · Mafra + PR · Rio Negro`**.
+
+Três motivos:
+
+- **cidade homônima é armadilha real** — existe Palmas no TO e no PR, e a
+  coleta já entrou contaminada por isso uma vez
+- **numa lista de 340, o olho agrupa por estado sozinho**, sem coluna extra
+- **ordem alfabética vira ordem por estado**, de graça
+
+O JSON já entrega pronto, no campo `rotulo` de cada praça. **O casco não monta
+esse texto** — ele mostra o que vem.
+
+---
+
+### 4 · Ainda tem palavra difícil na tela.
 
 `velocity` aparece 13 vezes e `baseline` 4. Troque:
 
@@ -147,6 +166,7 @@ e não relatório.** A correção é de funcionamento e de escala, não de esté
 ## COMO SABER QUE FICOU PRONTO
 
 - [ ] buscar `{{` no arquivo dá **zero**
+- [ ] toda cidade na tela aparece como `UF · Cidade`, e o casco não monta esse texto
 - [ ] buscar `velocity` e `baseline` dá **zero**
 - [ ] existe **um** `<script id="dados-portal">` e nenhum dado no código
 - [ ] o exemplo tem 12 praças e 30 unidades, e a tela aguenta

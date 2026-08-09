@@ -173,7 +173,8 @@ def roda(praca, tok, dry=False):
     uf = (cidades[0].split("/") + [""])[1] if cidades else ""
     hoje = dt.date.today().isoformat()
 
-    print(f"\n{'='*72}\n  CANAIS · {ident.get('nome', praca)}  ({', '.join(cidades)})\n{'='*72}")
+    rot = ident.get("rotulo") or ident.get("nome", praca)
+    print(f"\n{'='*72}\n  CANAIS · {rot}\n{'='*72}")
     achados, vazios, bruto = {}, [], []
     for tipo, sufixo, oque in TIPOS:
         termo = f"{principal} {sufixo}".strip()

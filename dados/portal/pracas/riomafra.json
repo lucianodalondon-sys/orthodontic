@@ -1,6 +1,15 @@
 {
   "praca_id": "riomafra",
-  "corte": "2026-08-07",
+  "corte": "2026-08-08",
+  "rotulo": "SC · Mafra + PR · Rio Negro",
+  "uf": [
+    "PR",
+    "SC"
+  ],
+  "cidades": [
+    "SC · Mafra",
+    "PR · Rio Negro"
+  ],
   "identidade": {
     "praca_id": "riomafra",
     "nome": "Riomafra",
@@ -9,8 +18,8 @@
       "Rio Negro/PR"
     ],
     "uf": [
-      "SC",
-      "PR"
+      "PR",
+      "SC"
     ],
     "populacao": 87000,
     "renda_mediana_pessoa_mes": 1333,
@@ -20,7 +29,12 @@
     },
     "domicilios": 31000,
     "nota_geografia": "A praça é uma colônia partida pela divisa dos estados. praca_id != municipio.",
-    "alerta_coleta": "Existe Mafra em PORTUGAL. Filtrar tudo por SC/Brasil. Descartar e logar qualquer resultado sem place_id da tabela."
+    "alerta_coleta": "Existe Mafra em PORTUGAL. Filtrar tudo por SC/Brasil. Descartar e logar qualquer resultado sem place_id da tabela.",
+    "rotulo": "SC · Mafra + PR · Rio Negro",
+    "cidades_rotulo": [
+      "SC · Mafra",
+      "PR · Rio Negro"
+    ]
   },
   "eyebrow": "Praça · piloto aplicado · única com dado interno",
   "papel": "franquia · 7 anos",
@@ -181,6 +195,96 @@
       "avaliacoes": 115,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
+    },
+    {
+      "local_id": "susin_odontologia_dentista",
+      "nome": "Susin Odontologia | Dentista Mafra | Lente de contato | Implante | Periodontia | Tratamento de canal",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": null,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "clinica_viver_bem",
+      "nome": "Clínica Viver Bem",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": null,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "dra_jessica_marcondes",
+      "nome": "Dra Jéssica Marcondes",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": null,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "odontoimagem_rio_negro",
+      "nome": "Odontoimagem Rio Negro",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": null,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "uniduni_clinica_integrada",
+      "nome": "Uniduni - Clínica Integrada",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": null,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "centro_odontologico_dr_fab",
+      "nome": "Centro Odontológico Dr. Fabiano Grahl de Souza",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.7,
+      "avaliacoes": null,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "casarotti_odontologia_dent",
+      "nome": "CASAROTTI Odontologia - Dentista em Mafra",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": null,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "lenz_odontologia_especiali",
+      "nome": "LENZ - Odontologia Especializada/Invisalign Doctor",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.9,
+      "avaliacoes": null,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "instituto_ana_carolina_wos",
+      "nome": "Instituto Ana Carolina Wosny",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": null,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
     }
   ],
   "funil": {
@@ -226,21 +330,25 @@
   "temas": [
     {
       "tema": "atendimento",
-      "snapshot_date": "2026-07-15",
+      "snapshot_date": "2026-08-08",
       "praca_id": "riomafra",
-      "pct": 0.69,
-      "n": 224,
+      "pct": 0.7142,
+      "n": 1095,
       "base": "reviews_com_texto",
-      "taxonomia_versao": "1.1"
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
     },
     {
       "tema": "qualidade_resultado",
-      "snapshot_date": "2026-07-15",
+      "snapshot_date": "2026-08-08",
       "praca_id": "riomafra",
-      "pct": 0.54,
-      "n": 224,
+      "pct": 0.5598,
+      "n": 1095,
       "base": "reviews_com_texto",
-      "taxonomia_versao": "1.1"
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
     },
     {
       "tema": "recomendacao",
@@ -259,6 +367,160 @@
       "n": 224,
       "base": "reviews_com_texto",
       "taxonomia_versao": "1.1"
+    },
+    {
+      "tema": "preco_custo",
+      "snapshot_date": "2026-08-08",
+      "praca_id": "riomafra",
+      "pct": 0.0311,
+      "n": 1095,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "agenda_espera",
+      "snapshot_date": "2026-08-08",
+      "praca_id": "riomafra",
+      "pct": 0.0228,
+      "n": 1095,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "comunicacao_resposta",
+      "snapshot_date": "2026-08-08",
+      "praca_id": "riomafra",
+      "pct": 0.0164,
+      "n": 1095,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "confianca_medo",
+      "snapshot_date": "2026-08-08",
+      "praca_id": "riomafra",
+      "pct": 0.0411,
+      "n": 1095,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "contrato_burocracia",
+      "snapshot_date": "2026-08-08",
+      "praca_id": "riomafra",
+      "pct": 0.0027,
+      "n": 1095,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "pessoas_nominais",
+      "snapshot_date": "2026-08-08",
+      "praca_id": "riomafra",
+      "pct": 0.0329,
+      "n": 1095,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "localizacao_acesso",
+      "snapshot_date": "2026-08-08",
+      "praca_id": "riomafra",
+      "pct": 0.0347,
+      "n": 1095,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "recomendacao_lealdade",
+      "snapshot_date": "2026-08-08",
+      "praca_id": "riomafra",
+      "pct": 0.3297,
+      "n": 1095,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "dor_medo_dentista",
+      "snapshot_date": "2026-08-08",
+      "praca_id": "riomafra",
+      "pct": 0.0447,
+      "n": 1095,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "resultado_autoestima",
+      "snapshot_date": "2026-08-08",
+      "praca_id": "riomafra",
+      "pct": 0.1297,
+      "n": 1095,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "explicacao_clareza",
+      "snapshot_date": "2026-08-08",
+      "praca_id": "riomafra",
+      "pct": 0.0393,
+      "n": 1095,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "aparelho_tratamento",
+      "snapshot_date": "2026-08-08",
+      "praca_id": "riomafra",
+      "pct": 0.0164,
+      "n": 1095,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "familia_filhos",
+      "snapshot_date": "2026-08-08",
+      "praca_id": "riomafra",
+      "pct": 0.0767,
+      "n": 1095,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "tempo_relacao",
+      "snapshot_date": "2026-08-08",
+      "praca_id": "riomafra",
+      "pct": 0.0237,
+      "n": 1095,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
     }
   ],
   "sazonalidade": [

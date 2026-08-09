@@ -224,7 +224,8 @@ def main():
         achados.sort(key=lambda p: -(p.get("userRatingCount") or 0))
         novos = [p for p in achados if p.get("id") not in conhecidos]
 
-        print(f"\n{'='*72}\n  {ident.get('nome', praca)} · {len(achados)} clínicas · "
+        rot = ident.get("rotulo") or ident.get("nome", praca)
+        print(f"\n{'='*72}\n  {rot} · {len(achados)} clínicas · "
               f"{len(novos)} NÃO estavam na nossa lista\n{'='*72}")
         for p in achados[:26]:
             marca = "NOVO" if p.get("id") not in conhecidos else "    "

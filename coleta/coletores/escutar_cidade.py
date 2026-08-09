@@ -81,7 +81,9 @@ def roda(praca, n_posts, tok, dry=False):
         print(f"  {praca}: nenhum canal mapeado. Rode canais.py --praca {praca} antes.")
         return
     hoje = dt.date.today().isoformat()
-    print(f"\n{'='*70}\n  ESCUTANDO {praca.upper()} · {len(cs)} canais · {n_posts} posts cada\n{'='*70}")
+    ident = json.loads((IDENT/f"{praca}.json").read_text(encoding="utf-8"))
+    rot = ident.get("rotulo") or praca.upper()
+    print(f"\n{'='*70}\n  ESCUTANDO {rot} · {len(cs)} canais · {n_posts} posts cada\n{'='*70}")
     for c in cs:
         print(f"  @{c['handle'][:28]:28s} {str(c.get('tipo') or '?'):16s} {c.get('seguidores') or 0:>8}")
     if dry:
