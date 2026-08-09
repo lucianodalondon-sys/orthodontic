@@ -13,24 +13,10 @@
    "papel": "proprio",
    "total": 564,
    "nota": 4.6,
-   "ritmo": 57.7,
+   "ritmo": 48.1,
    "meses": 7,
-   "posicao": 2,
-   "de": 24
-  },
-  {
-   "praca": "contagem",
-   "rotulo": "MG · Contagem",
-   "uf": "MG",
-   "local_id": "ortho_contagem",
-   "nome": "OrthoDontic",
-   "papel": "proprio",
-   "total": 855,
-   "nota": 4.6,
-   "ritmo": 50.3,
-   "meses": 13,
    "posicao": 3,
-   "de": 15
+   "de": 24
   },
   {
    "praca": "cuiaba",
@@ -45,6 +31,20 @@
    "meses": 13,
    "posicao": 2,
    "de": 29
+  },
+  {
+   "praca": "contagem",
+   "rotulo": "MG · Contagem",
+   "uf": "MG",
+   "local_id": "ortho_contagem",
+   "nome": "OrthoDontic",
+   "papel": "proprio",
+   "total": 855,
+   "nota": 4.6,
+   "ritmo": 38.7,
+   "meses": 13,
+   "posicao": 4,
+   "de": 15
   },
   {
    "praca": "prudente",
@@ -89,20 +89,6 @@
    "de": 29
   },
   {
-   "praca": "riomafra",
-   "rotulo": "SC · Mafra + PR · Rio Negro",
-   "uf": "PR",
-   "local_id": "ortho_mafra",
-   "nome": "OrthoDontic Mafra",
-   "papel": "proprio",
-   "total": 155,
-   "nota": 4.9,
-   "ritmo": 3.3,
-   "meses": 0,
-   "posicao": 8,
-   "de": 15
-  },
-  {
    "praca": "feira",
    "rotulo": "BA · Feira de Santana",
    "uf": "BA",
@@ -115,6 +101,20 @@
    "meses": 1,
    "posicao": 17,
    "de": 22
+  },
+  {
+   "praca": "riomafra",
+   "rotulo": "SC · Mafra + PR · Rio Negro",
+   "uf": "PR",
+   "local_id": "ortho_mafra",
+   "nome": "OrthoDontic Mafra",
+   "papel": "proprio",
+   "total": 155,
+   "nota": 4.9,
+   "ritmo": 2.4,
+   "meses": 0,
+   "posicao": 9,
+   "de": 15
   },
   {
    "praca": "londrina",
@@ -151,43 +151,90 @@
  "territorio_vazio": {
   "imprensa": [
    "feira",
+   "imperatriz",
+   "juazeiro_do_norte",
+   "maraba",
+   "parauapebas",
    "prudente",
+   "rio_branco",
    "riomafra"
   ],
   "preco_achadinho": [
    "contagem",
+   "imperatriz",
+   "juazeiro_do_norte",
+   "macapa",
+   "maraba",
+   "parauapebas",
    "prudente",
    "riomafra"
   ],
   "jovem": [
    "feira",
+   "imperatriz",
+   "juazeiro_do_norte",
+   "maraba",
+   "parauapebas",
+   "rio_branco",
    "riomafra"
   ],
   "gastronomia": [
    "feira",
-   "prudente"
+   "imperatriz",
+   "juazeiro_do_norte",
+   "macapa",
+   "maraba",
+   "parauapebas",
+   "prudente",
+   "rio_branco"
+  ],
+  "prefeitura": [
+   "imperatriz",
+   "juazeiro_do_norte",
+   "maraba",
+   "parauapebas"
   ],
   "esporte_base": [
    "feira",
+   "imperatriz",
+   "juazeiro_do_norte",
+   "maraba",
+   "parauapebas",
    "prudente",
    "riomafra"
   ],
   "mae": [
    "contagem",
+   "imperatriz",
+   "juazeiro_do_norte",
    "londrina",
+   "maraba",
    "palmas",
+   "parauapebas",
    "prudente",
+   "rio_branco",
    "riomafra"
   ],
   "humor": [
    "contagem",
    "feira",
+   "imperatriz",
+   "juazeiro_do_norte",
+   "macapa",
+   "maraba",
    "palmas",
+   "parauapebas",
    "prudente",
+   "rio_branco",
    "riomafra"
+  ],
+  "voz_da_cidade": [
+   "juazeiro_do_norte",
+   "maraba",
+   "parauapebas"
   ]
  },
  "pesa_contra": [
-  "10 concorrentes sustentam E correm mais que a mediana da rede"
+  "9 concorrentes sustentam E correm mais que a mediana da rede"
  ]
 }

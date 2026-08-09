@@ -1,6 +1,6 @@
 {
   "corte": "2026-08-09",
-  "gerado_em": "2026-08-09T11:29:47",
+  "gerado_em": "2026-08-09T11:48:36",
   "rede": {
     "unidades": 374,
     "abertas": 348,
@@ -240,7 +240,107 @@
       "pracas_medidas": 1
     }
   ],
+  "agora": {
+    "pergunta": "Em quais unidades a OrthoDontic está perdendo atenção local, para qual concorrente, e onde intervir primeiro neste mês?",
+    "manchete": "4 de 10 unidades medidas estão em faixa vermelha. A primeira é PR · Londrina.",
+    "em_risco": 4,
+    "unidades": 10,
+    "o_que_e_atencao": "participação observável em busca, avaliações, publicidade e atividade digital. Não é faturamento — nenhum número desta tela vem de dado interno da rede.",
+    "primeiras": [
+      {
+        "pos": 1,
+        "rotulo": "PR · Londrina",
+        "unidade_curta": "Centro",
+        "urgencia": 90,
+        "faixa": "vermelha",
+        "quem_avanca": {
+          "nome": "Vittallon Odontologia",
+          "ritmo": 35.6,
+          "meses": 11,
+          "nota": 5,
+          "posicao": 4
+        },
+        "acao": {
+          "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+          "prazo": "14 dias",
+          "dono": "franqueado",
+          "custo": "sem custo de mídia",
+          "por_causa_de": "parada"
+        }
+      },
+      {
+        "pos": 2,
+        "rotulo": "MT · Cuiabá + MT · Várzea Grande",
+        "unidade_curta": "Cuiabá Dom Bosco (Centro Sul)",
+        "urgencia": 75,
+        "faixa": "vermelha",
+        "quem_avanca": {
+          "nome": "ODONTO MEDICINA 🦷",
+          "ritmo": 31.4,
+          "meses": 19,
+          "nota": 5,
+          "posicao": 3
+        },
+        "acao": {
+          "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+          "prazo": "14 dias",
+          "dono": "franqueado",
+          "custo": "sem custo de mídia",
+          "por_causa_de": "parada"
+        }
+      },
+      {
+        "pos": 3,
+        "rotulo": "BA · Feira de Santana",
+        "unidade_curta": "Feira de Santana",
+        "urgencia": 75,
+        "faixa": "vermelha",
+        "quem_avanca": {
+          "nome": "Clínica Central do Sorriso - Dentista Particular Feira de Santana",
+          "ritmo": 38.9,
+          "meses": 12,
+          "nota": 5,
+          "posicao": 2
+        },
+        "acao": {
+          "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+          "prazo": "14 dias",
+          "dono": "franqueado",
+          "custo": "sem custo de mídia",
+          "por_causa_de": "parada"
+        }
+      }
+    ],
+    "tela": "fila"
+  },
+  "andares": [
+    {
+      "chave": "agora",
+      "nome": "Agora",
+      "explica": "onde intervir primeiro neste mês"
+    },
+    {
+      "chave": "decidir",
+      "nome": "Decidir",
+      "explica": "as quatro que mudam uma decisão de franqueadora"
+    },
+    {
+      "chave": "consultar",
+      "nome": "Consultar",
+      "explica": "de onde veio cada número"
+    }
+  ],
   "ferramentas": [
+    {
+      "chave": "fila",
+      "nome": "A fila de intervenção",
+      "o_que_responde": "onde intervir primeiro neste mês, e por quê",
+      "tela": "fila",
+      "disponivel": true,
+      "resumo": "4 de 10 unidades medidas estão em faixa vermelha. A primeira é PR · Londrina.",
+      "indisponivel_porque": null,
+      "andar": "agora"
+    },
     {
       "chave": "mapa",
       "nome": "Mapa da rede",
@@ -248,7 +348,8 @@
       "tela": "mapa",
       "disponivel": true,
       "resumo": "374 unidades em 304 cidades · 4 estados sem nenhuma",
-      "indisponivel_porque": null
+      "indisponivel_porque": null,
+      "andar": "consultar"
     },
     {
       "chave": "radar",
@@ -257,7 +358,8 @@
       "tela": "radar",
       "disponivel": true,
       "resumo": "6 praças livres estudadas · 2 descartadas por já ter unidade",
-      "indisponivel_porque": null
+      "indisponivel_porque": null,
+      "andar": "decidir"
     },
     {
       "chave": "constancia",
@@ -266,7 +368,8 @@
       "tela": "constancia",
       "disponivel": true,
       "resumo": "3 de 10 sustentam · 5 pararam · 2 em campanha",
-      "indisponivel_porque": null
+      "indisponivel_porque": null,
+      "andar": "decidir"
     },
     {
       "chave": "busca",
@@ -275,7 +378,8 @@
       "tela": "busca",
       "disponivel": true,
       "resumo": "13 aparições contra 198 ausências na busca por 'dentista'",
-      "indisponivel_porque": null
+      "indisponivel_porque": null,
+      "andar": "consultar"
     },
     {
       "chave": "fichas",
@@ -284,7 +388,8 @@
       "tela": "fichas",
       "disponivel": true,
       "resumo": "10 fichas conferidas · 9 como 'Clínica odontológica' · 1 como 'Dentista' · 0 sem site",
-      "indisponivel_porque": null
+      "indisponivel_porque": null,
+      "andar": "consultar"
     },
     {
       "chave": "reputacao",
@@ -293,7 +398,8 @@
       "tela": "reputacao",
       "disponivel": true,
       "resumo": "9 redes medidas no Reclame Aqui",
-      "indisponivel_porque": null
+      "indisponivel_porque": null,
+      "andar": "decidir"
     },
     {
       "chave": "territorio",
@@ -302,7 +408,8 @@
       "tela": "territorio",
       "disponivel": true,
       "resumo": "canais mapeados por praça, com os que não existem",
-      "indisponivel_porque": null
+      "indisponivel_porque": null,
+      "andar": "decidir"
     },
     {
       "chave": "achados",
@@ -311,16 +418,8 @@
       "tela": "achados",
       "disponivel": true,
       "resumo": "de sinal isolado a regra da rede — inclusive o que foi derrubado",
-      "indisponivel_porque": null
-    },
-    {
-      "chave": "consultor",
-      "nome": "Carteira do consultor",
-      "o_que_responde": "quem visitar primeiro, e por quê",
-      "tela": "consultor",
-      "disponivel": true,
-      "resumo": "prioridade de visita por unidade",
-      "indisponivel_porque": null
+      "indisponivel_porque": null,
+      "andar": "consultar"
     },
     {
       "chave": "pracas",
@@ -329,7 +428,8 @@
       "tela": "pracas",
       "disponivel": true,
       "resumo": "7 praças com estudo completo",
-      "indisponivel_porque": null
+      "indisponivel_porque": null,
+      "andar": "consultar"
     },
     {
       "chave": "planos",
@@ -338,7 +438,8 @@
       "tela": "planos",
       "disponivel": true,
       "resumo": "13 planos escritos",
-      "indisponivel_porque": null
+      "indisponivel_porque": null,
+      "andar": "consultar"
     },
     {
       "chave": "sazonalidade",
@@ -347,7 +448,8 @@
       "tela": "sazonalidade",
       "disponivel": false,
       "resumo": "1 regiões · 4 pontos de curva",
-      "indisponivel_porque": "só há curva de uma região (SC), com 4 pontos. Uma região não é calendário da rede."
+      "indisponivel_porque": "só há curva de uma região (SC), com 4 pontos. Uma região não é calendário da rede.",
+      "andar": "consultar"
     },
     {
       "chave": "evidencias",
@@ -356,7 +458,8 @@
       "tela": "evidencias",
       "disponivel": true,
       "resumo": "as vozes e provas que sustentam os achados",
-      "indisponivel_porque": null
+      "indisponivel_porque": null,
+      "andar": "consultar"
     }
   ],
   "reputacao_das_redes": [

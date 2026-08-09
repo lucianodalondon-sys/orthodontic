@@ -1,0 +1,538 @@
+{
+ "gerado_em": "2026-08-09",
+ "corte": "2026-08-09",
+ "pergunta": "Em quais unidades a OrthoDontic está perdendo atenção local, para qual concorrente, e onde intervir primeiro neste mês?",
+ "o_que_e_atencao": "participação observável em busca, avaliações, publicidade e atividade digital. Não é faturamento — nenhum número desta tela vem de dado interno da rede.",
+ "unidades": 10,
+ "em_risco": 4,
+ "manchete": "4 de 10 unidades medidas estão em faixa vermelha. A primeira é PR · Londrina.",
+ "criterio": [
+  {
+   "chave": "parada",
+   "peso": 30,
+   "titulo": "O contador de avaliações parou"
+  },
+  {
+   "chave": "rival",
+   "peso": 25,
+   "titulo": "Um concorrente sustenta e corre mais"
+  },
+  {
+   "chave": "nao_engatou",
+   "peso": 20,
+   "titulo": "Unidade nova que ainda não engatou"
+  },
+  {
+   "chave": "posicao",
+   "peso": 20,
+   "titulo": "Está na metade de baixo da própria praça"
+  },
+  {
+   "chave": "nota",
+   "peso": 15,
+   "titulo": "Nota abaixo da mediana da praça"
+  },
+  {
+   "chave": "silencio",
+   "peso": 15,
+   "titulo": "Silêncio publicitário com leilão cheio"
+  }
+ ],
+ "faixas": [
+  {
+   "de": 60,
+   "nome": "vermelha"
+  },
+  {
+   "de": 30,
+   "nome": "amarela"
+  },
+  {
+   "de": 0,
+   "nome": "verde"
+  }
+ ],
+ "fila": [
+  {
+   "local_id": "ortho_centro_ldn",
+   "praca_id": "londrina",
+   "rotulo": "PR · Londrina",
+   "unidade": "OrthoDontic Centro",
+   "unidade_curta": "Centro",
+   "idade_meses": 99,
+   "urgencia": 90,
+   "faixa": "vermelha",
+   "ritmo": 0.8,
+   "meses": 2,
+   "nota": 3.8,
+   "avaliacoes": 76,
+   "posicao": 23,
+   "de": 24,
+   "quem_avanca": {
+    "nome": "Vittallon Odontologia",
+    "ritmo": 35.6,
+    "meses": 11,
+    "nota": 5,
+    "posicao": 4
+   },
+   "gatilhos": [
+    {
+     "peso": 30,
+     "titulo": "O contador de avaliações parou",
+     "chave": "parada",
+     "fato": "apenas 2 mês(es) seguidos com movimento acima do típico da própria unidade; o ritmo medido é 0.8 avaliações/mês",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "peso": 25,
+     "titulo": "Um concorrente sustenta e corre mais",
+     "chave": "rival",
+     "fato": "Vittallon Odontologia sustenta há 11 meses a 35.6/mês, contra 0.8/mês desta unidade",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "peso": 20,
+     "titulo": "Está na metade de baixo da própria praça",
+     "chave": "posicao",
+     "fato": "23º lugar de 24 clínicas medidas na praça",
+     "fonte": "dados/portal/rede_cruzamento.json"
+    },
+    {
+     "peso": 15,
+     "titulo": "Nota abaixo da mediana da praça",
+     "chave": "nota",
+     "fato": "nota 3.8 contra mediana 5.0 das 24 clínicas medidas na praça",
+     "fonte": "dados/serie/places.jsonl"
+    }
+   ],
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "ciclo": {
+    "alertado_em": "2026-08-09",
+    "acao_confirmada": null,
+    "confirmada_em": null,
+    "resultado": null,
+    "medido_em": null
+   },
+   "pos": 1
+  },
+  {
+   "local_id": "ortho_cba_dom_bosco",
+   "praca_id": "cuiaba",
+   "rotulo": "MT · Cuiabá + MT · Várzea Grande",
+   "unidade": "OrthoDontic Cuiabá Dom Bosco (Centro Sul)",
+   "unidade_curta": "Cuiabá Dom Bosco (Centro Sul)",
+   "idade_meses": 100,
+   "urgencia": 75,
+   "faixa": "vermelha",
+   "ritmo": 0.7,
+   "meses": 2,
+   "nota": 4.9,
+   "avaliacoes": 71,
+   "posicao": 29,
+   "de": 29,
+   "quem_avanca": {
+    "nome": "ODONTO MEDICINA 🦷",
+    "ritmo": 31.4,
+    "meses": 19,
+    "nota": 5,
+    "posicao": 3
+   },
+   "gatilhos": [
+    {
+     "peso": 30,
+     "titulo": "O contador de avaliações parou",
+     "chave": "parada",
+     "fato": "apenas 2 mês(es) seguidos com movimento acima do típico da própria unidade; o ritmo medido é 0.7 avaliações/mês",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "peso": 25,
+     "titulo": "Um concorrente sustenta e corre mais",
+     "chave": "rival",
+     "fato": "ODONTO MEDICINA 🦷 sustenta há 19 meses a 31.4/mês, contra 0.7/mês desta unidade",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "peso": 20,
+     "titulo": "Está na metade de baixo da própria praça",
+     "chave": "posicao",
+     "fato": "29º lugar de 29 clínicas medidas na praça",
+     "fonte": "dados/portal/rede_cruzamento.json"
+    }
+   ],
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "ciclo": {
+    "alertado_em": "2026-08-09",
+    "acao_confirmada": null,
+    "confirmada_em": null,
+    "resultado": null,
+    "medido_em": null
+   },
+   "pos": 2
+  },
+  {
+   "local_id": "ortho_fsa",
+   "praca_id": "feira",
+   "rotulo": "BA · Feira de Santana",
+   "unidade": "OrthoDontic Feira de Santana",
+   "unidade_curta": "Feira de Santana",
+   "idade_meses": 26,
+   "urgencia": 75,
+   "faixa": "vermelha",
+   "ritmo": 3.2,
+   "meses": 1,
+   "nota": 4.7,
+   "avaliacoes": 170,
+   "posicao": 17,
+   "de": 22,
+   "quem_avanca": {
+    "nome": "Clínica Central do Sorriso - Dentista Particular Feira de Santana",
+    "ritmo": 38.9,
+    "meses": 12,
+    "nota": 5,
+    "posicao": 2
+   },
+   "gatilhos": [
+    {
+     "peso": 30,
+     "titulo": "O contador de avaliações parou",
+     "chave": "parada",
+     "fato": "apenas 1 mês(es) seguidos com movimento acima do típico da própria unidade; o ritmo medido é 3.2 avaliações/mês",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "peso": 25,
+     "titulo": "Um concorrente sustenta e corre mais",
+     "chave": "rival",
+     "fato": "Clínica Central do Sorriso - Dentista Particular Feira de Santana sustenta há 12 meses a 38.9/mês, contra 3.2/mês desta unidade",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "peso": 20,
+     "titulo": "Está na metade de baixo da própria praça",
+     "chave": "posicao",
+     "fato": "17º lugar de 22 clínicas medidas na praça",
+     "fonte": "dados/portal/rede_cruzamento.json"
+    }
+   ],
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "ciclo": {
+    "alertado_em": "2026-08-09",
+    "acao_confirmada": null,
+    "confirmada_em": null,
+    "resultado": null,
+    "medido_em": null
+   },
+   "pos": 3
+  },
+  {
+   "local_id": "ortho_cba_fernando_correa",
+   "praca_id": "cuiaba",
+   "rotulo": "MT · Cuiabá + MT · Várzea Grande",
+   "unidade": "OrthoDontic Cuiabá Fernando Corrêa",
+   "unidade_curta": "Cuiabá Fernando Corrêa",
+   "idade_meses": 24,
+   "urgencia": 75,
+   "faixa": "vermelha",
+   "ritmo": 3.7,
+   "meses": 0,
+   "nota": 4.9,
+   "avaliacoes": 78,
+   "posicao": 16,
+   "de": 29,
+   "quem_avanca": {
+    "nome": "ODONTO MEDICINA 🦷",
+    "ritmo": 31.4,
+    "meses": 19,
+    "nota": 5,
+    "posicao": 3
+   },
+   "gatilhos": [
+    {
+     "peso": 30,
+     "titulo": "O contador de avaliações parou",
+     "chave": "parada",
+     "fato": "apenas 0 mês(es) seguidos com movimento acima do típico da própria unidade; o ritmo medido é 3.7 avaliações/mês",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "peso": 25,
+     "titulo": "Um concorrente sustenta e corre mais",
+     "chave": "rival",
+     "fato": "ODONTO MEDICINA 🦷 sustenta há 19 meses a 31.4/mês, contra 3.7/mês desta unidade",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "peso": 20,
+     "titulo": "Está na metade de baixo da própria praça",
+     "chave": "posicao",
+     "fato": "16º lugar de 29 clínicas medidas na praça",
+     "fonte": "dados/portal/rede_cruzamento.json"
+    }
+   ],
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "ciclo": {
+    "alertado_em": "2026-08-09",
+    "acao_confirmada": null,
+    "confirmada_em": null,
+    "resultado": null,
+    "medido_em": null
+   },
+   "pos": 4
+  },
+  {
+   "local_id": "ortho_mafra",
+   "praca_id": "riomafra",
+   "rotulo": "SC · Mafra + PR · Rio Negro",
+   "unidade": "OrthoDontic Mafra",
+   "unidade_curta": "Mafra",
+   "idade_meses": 67,
+   "urgencia": 50,
+   "faixa": "amarela",
+   "ritmo": 2.4,
+   "meses": 0,
+   "nota": 4.9,
+   "avaliacoes": 155,
+   "posicao": 9,
+   "de": 15,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 30,
+     "titulo": "O contador de avaliações parou",
+     "chave": "parada",
+     "fato": "apenas 0 mês(es) seguidos com movimento acima do típico da própria unidade; o ritmo medido é 2.4 avaliações/mês",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "peso": 20,
+     "titulo": "Está na metade de baixo da própria praça",
+     "chave": "posicao",
+     "fato": "9º lugar de 15 clínicas medidas na praça",
+     "fonte": "dados/portal/rede_cruzamento.json"
+    }
+   ],
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "ciclo": {
+    "alertado_em": "2026-08-09",
+    "acao_confirmada": null,
+    "confirmada_em": null,
+    "resultado": null,
+    "medido_em": null
+   },
+   "pos": 5
+  },
+  {
+   "local_id": "ortho_contagem",
+   "praca_id": "contagem",
+   "rotulo": "MG · Contagem",
+   "unidade": "OrthoDontic",
+   "unidade_curta": null,
+   "idade_meses": 13,
+   "urgencia": 15,
+   "faixa": "verde",
+   "ritmo": 38.7,
+   "meses": 13,
+   "nota": 4.6,
+   "avaliacoes": 855,
+   "posicao": 4,
+   "de": 15,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 15,
+     "titulo": "Nota abaixo da mediana da praça",
+     "chave": "nota",
+     "fato": "nota 4.6 contra mediana 4.9 das 15 clínicas medidas na praça",
+     "fonte": "dados/serie/places.jsonl"
+    }
+   ],
+   "acao": {
+    "o_que": "Ler as avaliações negativas do trimestre com o franqueado e responder todas",
+    "prazo": "10 dias",
+    "dono": "consultor de campo",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "nota"
+   },
+   "ciclo": {
+    "alertado_em": "2026-08-09",
+    "acao_confirmada": null,
+    "confirmada_em": null,
+    "resultado": null,
+    "medido_em": null
+   },
+   "pos": 6
+  },
+  {
+   "local_id": "ortho_souza_naves",
+   "praca_id": "londrina",
+   "rotulo": "PR · Londrina",
+   "unidade": "OrthoDontic Souza Naves",
+   "unidade_curta": "Souza Naves",
+   "idade_meses": 8,
+   "urgencia": 15,
+   "faixa": "verde",
+   "ritmo": 48.1,
+   "meses": 7,
+   "nota": 4.6,
+   "avaliacoes": 564,
+   "posicao": 3,
+   "de": 24,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 15,
+     "titulo": "Nota abaixo da mediana da praça",
+     "chave": "nota",
+     "fato": "nota 4.6 contra mediana 5.0 das 24 clínicas medidas na praça",
+     "fonte": "dados/serie/places.jsonl"
+    }
+   ],
+   "acao": {
+    "o_que": "Ler as avaliações negativas do trimestre com o franqueado e responder todas",
+    "prazo": "10 dias",
+    "dono": "consultor de campo",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "nota"
+   },
+   "ciclo": {
+    "alertado_em": "2026-08-09",
+    "acao_confirmada": null,
+    "confirmada_em": null,
+    "resultado": null,
+    "medido_em": null
+   },
+   "pos": 7
+  },
+  {
+   "local_id": "ortho_palmas",
+   "praca_id": "palmas",
+   "rotulo": "TO · Palmas",
+   "unidade": "OrthoDontic",
+   "unidade_curta": null,
+   "idade_meses": 11,
+   "urgencia": 15,
+   "faixa": "verde",
+   "ritmo": 14.0,
+   "meses": 11,
+   "nota": 5,
+   "avaliacoes": 304,
+   "posicao": 3,
+   "de": 14,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 15,
+     "titulo": "Silêncio publicitário com leilão cheio",
+     "chave": "silencio",
+     "fato": "22 anúncios no ar de 16 anunciantes, e nenhum é da rede",
+     "fonte": "dados/serie/captacao.jsonl"
+    }
+   ],
+   "acao": {
+    "o_que": "Entrar no leilão com as frases que a cidade digita — a lista está na praça",
+    "prazo": "30 dias",
+    "dono": "franqueado",
+    "custo": "verba de mídia",
+    "por_causa_de": "silencio"
+   },
+   "ciclo": {
+    "alertado_em": "2026-08-09",
+    "acao_confirmada": null,
+    "confirmada_em": null,
+    "resultado": null,
+    "medido_em": null
+   },
+   "pos": 8
+  },
+  {
+   "local_id": "ortho_cba_centro_norte",
+   "praca_id": "cuiaba",
+   "rotulo": "MT · Cuiabá + MT · Várzea Grande",
+   "unidade": "OrthoDontic Cuiabá Centro Norte",
+   "unidade_curta": "Cuiabá Centro Norte",
+   "idade_meses": 13,
+   "urgencia": 0,
+   "faixa": "verde",
+   "ritmo": 46.4,
+   "meses": 13,
+   "nota": 5,
+   "avaliacoes": 1222,
+   "posicao": 2,
+   "de": 29,
+   "quem_avanca": null,
+   "gatilhos": [],
+   "acao": null,
+   "ciclo": {
+    "alertado_em": "2026-08-09",
+    "acao_confirmada": null,
+    "confirmada_em": null,
+    "resultado": null,
+    "medido_em": null
+   },
+   "pos": 9
+  },
+  {
+   "local_id": "ortho_pp",
+   "praca_id": "prudente",
+   "rotulo": "SP · Presidente Prudente",
+   "unidade": "OrthoDontic Presidente Prudente",
+   "unidade_curta": "Presidente Prudente",
+   "idade_meses": 4,
+   "urgencia": 0,
+   "faixa": "verde",
+   "ritmo": 18.1,
+   "meses": 5,
+   "nota": 4.9,
+   "avaliacoes": 592,
+   "posicao": 2,
+   "de": 25,
+   "quem_avanca": null,
+   "gatilhos": [],
+   "acao": null,
+   "ciclo": {
+    "alertado_em": "2026-08-09",
+    "acao_confirmada": null,
+    "confirmada_em": null,
+    "resultado": null,
+    "medido_em": null
+   },
+   "pos": 10
+  }
+ ],
+ "o_que_isso_nao_ve": [
+  "A rede tem 374 unidades e esta fila mede 10. É 2% da rede.",
+  "Nenhum contrato, lead, agendamento ou receita entra aqui. A fila diz onde a atenção está escorrendo, não quanto isso custou.",
+  "O ciclo (ação confirmada, resultado) nasce vazio. Ele só vale a partir do segundo mês, quando houver o que comparar."
+ ]
+}

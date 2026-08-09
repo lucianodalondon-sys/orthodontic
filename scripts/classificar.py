@@ -68,7 +68,12 @@ def main():
     print(f"taxonomia: {versao} · hash {hsh}")
     print("temas: " + " · ".join(f"{k}({len(v)})" for k, v in temas.items()))
 
-    R = jsonl(SERIE/"reviews.jsonl")
+    # A MESMA avaliação foi gravada por dois coletores com chaves de formatos
+    # diferentes, então ler o arquivo cru conta 981 linhas em dobro. Sem esta
+    # passagem, dez clínicas entram com peso duplo na porcentagem de cada tema.
+    import sys as _s; _s.path.insert(0, str(RAIZ/"scripts"))
+    from cruzamento import reviews_unicos
+    R = reviews_unicos()
     com_texto = [r for r in R if r.get("tem_texto")]
     if not com_texto:
         sys.exit("nenhuma avaliação com texto em dados/serie/reviews.jsonl")

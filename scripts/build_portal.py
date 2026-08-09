@@ -380,12 +380,35 @@ def main():
     rad = json.loads((OUT/"radar.json").read_text(encoding="utf-8")) \
         if (OUT/"radar.json").exists() else {}
 
-    def ferramenta(chave, nome, oque, tela, disponivel, resumo, motivo=None):
+    fila = json.loads((OUT/"fila.json").read_text(encoding="utf-8")) \
+        if (OUT/"fila.json").exists() else {}
+
+    # --------------------------------------------------------------- os andares
+    #
+    # Treze ferramentas lado a lado é um armário, não uma sala de comando. Quem
+    # abre não sabe por onde começar, e uma ferramenta que muda uma decisão fica
+    # do lado de uma que só se consulta. São três andares, e a ordem importa:
+    #
+    #   AGORA     — uma tela só. A fila de intervenção. É o que abre.
+    #   DECIDIR   — as quatro que mudam uma decisão de franqueadora neste mês.
+    #   CONSULTAR — o acervo. Ninguém abre o portal para ver isto; abre para
+    #               conferir de onde veio um número da fila.
+    #
+    # A "Carteira do consultor" sai da lista. Ela prometia "quem visitar
+    # primeiro, e por quê" e entregava quatro pareceres sobre uma peça de
+    # anúncio. Quem entrega essa promessa é a fila — e agora com o número, o
+    # concorrente nomeado, o prazo e o dono.
+    def ferramenta(chave, nome, oque, tela, disponivel, resumo, motivo=None,
+                   andar="consultar"):
         return {"chave": chave, "nome": nome, "o_que_responde": oque,
                 "tela": tela, "disponivel": disponivel, "resumo": resumo,
-                "indisponivel_porque": motivo}
+                "indisponivel_porque": motivo, "andar": andar}
 
     ferramentas = [
+        ferramenta("fila", "A fila de intervenção",
+                   "onde intervir primeiro neste mês, e por quê",
+                   "fila", bool(fila.get("fila")),
+                   fila.get("manchete", ""), andar="agora"),
         ferramenta("mapa", "Mapa da rede",
                    "onde a rede está, estado por estado",
                    "mapa", True,
@@ -395,12 +418,12 @@ def main():
                    "onde vale abrir a próxima unidade",
                    "radar", bool(rad.get("oportunidades")),
                    f"{len(rad.get('oportunidades', []))} praças livres estudadas · "
-                   f"{len(rad.get('ja_tem_unidade', []))} descartadas por já ter unidade"),
+                   f"{len(rad.get('ja_tem_unidade', []))} descartadas por já ter unidade", andar="decidir"),
         ferramenta("constancia", "Quem sustenta, quem parou",
                    "quais unidades operam e quais só fizeram campanha",
                    "constancia", bool(cruz.get("unidades")),
                    f"{cruz.get('sustentam', 0)} de {cruz.get('unidades', 0)} sustentam · "
-                   f"{cruz.get('paradas', 0)} pararam · {cruz.get('campanha', 0)} em campanha"),
+                   f"{cruz.get('paradas', 0)} pararam · {cruz.get('campanha', 0)} em campanha", andar="decidir"),
         ferramenta("busca", "Presença na busca",
                    "a rede aparece quando a cidade procura dentista?",
                    "busca", bool(fam),
@@ -416,19 +439,15 @@ def main():
         ferramenta("reputacao", "Reputação: rede contra rede",
                    "como a marca se compara com as concorrentes",
                    "reputacao", bool(reputacao),
-                   f"{len(reputacao)} redes medidas no Reclame Aqui"),
+                   f"{len(reputacao)} redes medidas no Reclame Aqui", andar="decidir"),
         ferramenta("territorio", "Território vazio",
                    "que canal falta em cada praça, e ninguém ocupou",
                    "territorio", bool(cruz.get("territorio_vazio")),
-                   "canais mapeados por praça, com os que não existem"),
+                   "canais mapeados por praça, com os que não existem", andar="decidir"),
         ferramenta("achados", "A escada dos achados",
                    "o que já vale para a rede e o que caiu",
                    "achados", (OUT/"achados.json").exists(),
                    "de sinal isolado a regra da rede — inclusive o que foi derrubado"),
-        ferramenta("consultor", "Carteira do consultor",
-                   "quem visitar primeiro, e por quê",
-                   "consultor", (OUT/"corretor.json").exists(),
-                   "prioridade de visita por unidade"),
         ferramenta("pracas", "As praças medidas",
                    "a ficha completa de cada praça",
                    "pracas", bool(PRACAS),
@@ -477,6 +496,26 @@ def main():
                                "desta tela vale para as praças medidas, não para "
                                "as 340."},
         "mapa": mapa,
+        # A porta de entrada. O casco desenha isto ANTES do menu, e o menu vira
+        # o que sempre deveria ter sido: o que fazer depois de olhar a fila.
+        "agora": ({"pergunta": fila.get("pergunta"),
+                   "manchete": fila.get("manchete"),
+                   "em_risco": fila.get("em_risco"),
+                   "unidades": fila.get("unidades"),
+                   "o_que_e_atencao": fila.get("o_que_e_atencao"),
+                   "primeiras": [{k: x[k] for k in
+                                  ("pos", "rotulo", "unidade_curta", "urgencia",
+                                   "faixa", "quem_avanca", "acao")}
+                                 for x in fila.get("fila", [])[:3]],
+                   "tela": "fila"} if fila.get("fila") else None),
+        "andares": [
+            {"chave": "agora", "nome": "Agora",
+             "explica": "onde intervir primeiro neste mês"},
+            {"chave": "decidir", "nome": "Decidir",
+             "explica": "as quatro que mudam uma decisão de franqueadora"},
+            {"chave": "consultar", "nome": "Consultar",
+             "explica": "de onde veio cada número"},
+        ],
         "ferramentas": ferramentas,
         "reputacao_das_redes": reputacao,
         "fichas_da_rede": {"conferidas": len(fichas),
@@ -513,8 +552,8 @@ def main():
                    for p in PRACAS],
         # o índice de verdade: o que existe, agora, nesta pasta
         "arquivos": {
-            "rede": [x for x in ("rede", "rede_cruzamento", "achados", "corretor",
-                                 "evidencias", "radar")
+            "rede": [x for x in ("fila", "rede", "rede_cruzamento", "achados",
+                                 "corretor", "evidencias", "radar")
                      if (OUT/f"{x}.json").exists()],
             "pracas": presentes("pracas"),
             "captacao": presentes("captacao"),

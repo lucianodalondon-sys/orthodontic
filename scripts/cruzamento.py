@@ -35,7 +35,7 @@ Uso:
     python3 scripts/cruzamento.py
     python3 scripts/cruzamento.py --salvar     # grava em dados/portal/rede.json
 """
-import argparse, json, math, pathlib, statistics as st
+import argparse, json, math, pathlib, re, statistics as st
 from collections import defaultdict, Counter
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
@@ -47,6 +47,42 @@ def jsonl(nome):
     p = SERIE/f"{nome}.jsonl"
     return [json.loads(l) for l in p.read_text(encoding="utf-8").split("\n") if l.strip()] \
         if p.exists() else []
+
+
+def id_da_avaliacao(chave):
+    """O identificador que o Google dá à avaliação, seja qual for o coletor.
+
+    Em 07/08 um coletor gravou `local_id|<id>`; em 08/08 outro gravou
+    `google:<place_id>:<id>`. As chaves nunca casaram, então a deduplicação
+    por chave não pegou nada e cinco clínicas ficaram com as MESMAS avaliações
+    gravadas duas vezes — 981 linhas, 2,7% da base, concentradas justamente em
+    Souza Naves e Mafra, que abrem e fecham o placar. O `<id>` é o último
+    pedaço nos dois formatos, e é ele que identifica a avaliação de verdade."""
+    return re.split(r"[|:]", chave or "")[-1] or None
+
+
+def reviews_unicos():
+    """As avaliações sem a contagem em dobro. Todo cálculo de ritmo passa aqui.
+
+    Mantém a linha mais recente de cada avaliação — a do coletor novo, que traz
+    data em formato ISO limpo — e preserva o primeiro snapshot em que ela
+    apareceu, senão a série perde o histórico de quando a avaliação entrou."""
+    vistos = {}
+    for r in jsonl("reviews"):
+        rid = id_da_avaliacao(r.get("chave"))
+        k = (r.get("local_id"), rid) if rid else (r.get("chave"), id(r))
+        ant = vistos.get(k)
+        if ant is None:
+            vistos[k] = r
+        else:
+            novo = r if r.get("snapshot_date", "") >= ant.get("snapshot_date", "") else ant
+            velho = ant if novo is r else r
+            novo = dict(novo)
+            novo["first_seen_snapshot"] = min(
+                x for x in (novo.get("first_seen_snapshot"), velho.get("first_seen_snapshot"),
+                            novo.get("snapshot_date"), velho.get("snapshot_date")) if x)
+            vistos[k] = novo
+    return list(vistos.values())
 
 
 def identidades(com_unidade=True):
@@ -90,7 +126,7 @@ def ritmo_e_meses(datas, hoje=None):
 def coleta():
     ident = identidades()
     revs = defaultdict(list)
-    for r in jsonl("reviews"):
+    for r in reviews_unicos():
         if r.get("data"):
             revs[(r.get("praca_id"), r.get("local_id"))].append(str(r["data"])[:10])
     places = {}

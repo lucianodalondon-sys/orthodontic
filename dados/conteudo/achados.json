@@ -1,320 +1,324 @@
 {
-  "estados": {
-    "hipotese": 0,
-    "candidata": 13,
-    "constante": 0,
-    "doutrina": 0,
-    "derrubada": 1
+ "estados": {
+  "hipotese": 0,
+  "candidata": 13,
+  "constante": 0,
+  "doutrina": 0,
+  "derrubada": 1
+ },
+ "nota_teto": "A amostra cobre hoje 13 praças em 6 regiões — Norte, Nordeste, Centro-Oeste, Sudeste, Sul e capital — com 25.030 avaliações lidas. O número caiu de 25.652 para 25.030 porque dois coletores gravaram as mesmas avaliações com chaves de formatos diferentes e 981 linhas estavam contadas em dobro, em dez clínicas. A correção derrubou o topo da banda de 71,4% para 72,0% e não mexeu no achado: 13 de 13. O achado do atendimento segue CONSTANTE. Os demais seguem em CANDIDATA porque foram medidos em 4 praças e ainda não foram retestados contra as nove que entraram depois. Retestar é a próxima tarefa, e é ela que decide quais sobem e quais caem.",
+ "achados": [
+  {
+   "t": "O paciente não avalia ortodontia — avalia como foi tratado",
+   "n": "13/13",
+   "estado": "constante",
+   "ev": [
+    [
+     "Riomafra",
+     "72,0%"
+    ],
+    [
+     "Londrina",
+     "69,8%"
+    ],
+    [
+     "Parauapebas",
+     "69,1%"
+    ],
+    [
+     "Contagem",
+     "68,1%"
+    ],
+    [
+     "Prudente",
+     "67,7%"
+    ],
+    [
+     "Cuiabá",
+     "65,6%"
+    ],
+    [
+     "Feira",
+     "61,3%"
+    ],
+    [
+     "Juazeiro do Norte",
+     "53,8%"
+    ]
+   ],
+   "ref": "atend_mafra",
+   "leitura": "Em 13 praças e 25.030 avaliações lidas, entre 53,8% e 72,0% do que o paciente escreve é sobre atendimento, não sobre tratamento. Mediana 67,7%. Cobre Norte, Nordeste, Centro-Oeste, Sudeste, Sul e capital."
   },
-  "nota_teto": "A amostra cobre hoje 13 praças em 6 regiões — Norte, Nordeste, Centro-Oeste, Sudeste, Sul e capital — com 25.652 avaliações lidas. O achado do atendimento subiu para CONSTANTE. Os demais seguem em CANDIDATA porque foram medidos em 4 praças e ainda não foram retestados contra as nove que entraram depois. Retestar é a próxima tarefa, e é ela que decide quais sobem e quais caem.",
-  "achados": [
-    {
-      "t": "O paciente não avalia ortodontia — avalia como foi tratado",
-      "n": "13/13",
-      "estado": "constante",
-      "ev": [
-        [
-          "Riomafra",
-          "71,4%"
-        ],
-        [
-          "Londrina",
-          "69,6%"
-        ],
-        [
-          "Contagem",
-          "68,3%"
-        ],
-        [
-          "Prudente",
-          "67,7%"
-        ],
-        [
-          "Cuiabá",
-          "65,6%"
-        ],
-        [
-          "Feira",
-          "61,6%"
-        ],
-        [
-          "Juazeiro do Norte",
-          "53,8%"
-        ]
-      ],
-      "ref": "atend_mafra",
-      "leitura": "Em 13 praças e 25.652 avaliações lidas, entre 53,8% e 71,4% do que o paciente escreve é sobre atendimento, não sobre tratamento. Mediana 67,7%. Cobre Norte, Nordeste, Centro-Oeste, Sudeste, Sul e capital."
-    },
-    {
-      "t": "❌ CAIU — a proporção subia conforme a cidade encolhia",
-      "n": "4/4 em julho · não se sustentou em 13",
-      "estado": "derrubada",
-      "ev": [
-        [
-          "julho, amostra pequena",
-          "47 · 54 · 63 · 69"
-        ],
-        [
-          "agosto, amostra 5 a 10× maior",
-          "67,7 · 69,6 · 61,6 · 71,4"
-        ]
-      ],
-      "leitura": "A escada era um artefato de amostra. Em julho, Prudente tinha 454 avaliações lidas e Riomafra 224; em agosto são 2.154 e 1.095. Com a base cheia os quatro valores se juntam entre 61,6% e 71,4% e a ordem se embaralha. Pior: dois dos quatro números de julho vinham de outra base (reviews_categoria, não reviews_com_texto) — nunca foram comparáveis entre si.",
-      "por_que_importa": "É a quinta vez neste projeto que amostra pequena erra de SINAL, e a primeira que passou publicada. O que sobrevive é melhor que a escada: uma constante nacional em 13 praças."
-    },
-    {
-      "t": "A ferida é sempre operação — nunca o produto",
-      "n": "4/4",
-      "estado": "candidata",
-      "ev": [
-        [
-          "Londrina",
-          "pós-venda"
-        ],
-        [
-          "Prudente",
-          "agenda"
-        ],
-        [
-          "Feira",
-          "espera 2–4h"
-        ],
-        [
-          "Riomafra",
-          "manutenção"
-        ]
-      ]
-    },
-    {
-      "t": "A confiança é em gente com nome, não em marca",
-      "n": "4/4",
-      "estado": "candidata",
-      "ev": [
-        [
-          "Londrina",
-          "Dr. João, as meninas"
-        ],
-        [
-          "Feira",
-          "doutor 4,9 · 1.268"
-        ],
-        [
-          "Riomafra",
-          "concorrente sem ortodontista nomeado"
-        ]
-      ]
-    },
-    {
-      "t": "A porta de entrada é sempre “quanto custa / cabe na parcela?”, seguida de “dói?”",
-      "n": "4/4",
-      "estado": "candidata",
-      "ev": [
-        [
-          "Riomafra",
-          "extraído da busca real"
-        ],
-        [
-          "Prudente",
-          "âncora ~R$ 110/mês"
-        ]
-      ]
-    },
-    {
-      "t": "Julho é o pico da mãe-decisora",
-      "n": "4/4",
-      "estado": "candidata",
-      "ev": [
-        [
-          "Riomafra",
-          "índice 34 · 4.120 leads em jul/25"
-        ],
-        [
-          "demais",
-          "férias escolares"
-        ]
-      ]
-    },
-    {
-      "t": "O adulto 30+ é dinheiro na mesa e nenhuma praça fala com ele",
-      "n": "4/4",
-      "estado": "candidata",
-      "ev": [
-        [
-          "Riomafra",
-          "21.000 de 30–45 vs 7.700 de 9–15"
-        ],
-        [
-          "demais",
-          "~metade de quem usa aparelho"
-        ]
-      ]
-    },
-    {
-      "t": "A clínica-escola é fraca exatamente onde a rede é forte",
-      "n": "4/4",
-      "estado": "candidata",
-      "ev": [
-        [
-          "Feira",
-          "não faz aparelho de adolescente"
-        ],
-        [
-          "Prudente",
-          "cobre prevenção e infantil"
-        ]
-      ]
-    },
-    {
-      "t": "A joia local existe, é incopiável — e está enterrada",
-      "n": "3/4",
-      "estado": "candidata",
-      "ev": [
-        [
-          "Londrina",
-          "é a matriz"
-        ],
-        [
-          "Prudente",
-          "a 1ª franquia"
-        ],
-        [
-          "Riomafra",
-          "o casal que voltou"
-        ],
-        [
-          "Feira",
-          "nenhuma ainda"
-        ]
-      ]
-    },
-    {
-      "t": "A embalagem é a mesma nas quatro: feed institucional + anúncio de urgência",
-      "n": "4/4",
-      "estado": "candidata",
-      "ev": [
-        [
-          "Londrina",
-          "OPERAÇÃO ORTODONTIA"
-        ],
-        [
-          "Prudente",
-          "SEMANA DO APARELHO"
-        ],
-        [
-          "Feira",
-          "17 no coro"
-        ],
-        [
-          "Riomafra",
-          "feed sem a especialidade"
-        ]
-      ]
-    },
-    {
-      "t": "A prova social está parada em todas",
-      "n": "4/4",
-      "estado": "candidata",
-      "ev": [
-        [
-          "Prudente",
-          "4,9 · 582 fora das peças"
-        ],
-        [
-          "Riomafra",
-          "0,7 review/mês"
-        ]
-      ],
-      "ref": "velocity"
-    },
-    {
-      "t": "A mãe é a decisora — e lê os reviews antes de escolher",
-      "n": "4/4",
-      "estado": "candidata",
-      "ev": [
-        [
-          "Londrina",
-          "“graças a Deus li os comentários”"
-        ],
-        [
-          "Riomafra",
-          "medo duplo da mãe"
-        ]
-      ]
-    },
-    {
-      "t": "A ordem certa é blindar a operação antes de qualquer mídia nova",
-      "n": "4/4",
-      "estado": "candidata",
-      "ev": [
-        [
-          "as quatro",
-          "é a ação nº 1 dos quatro planos"
-        ]
-      ]
-    },
-    {
-      "t": "Os mesmos quatro formatos fixos de conteúdo emergem nas quatro",
-      "n": "4/4",
-      "estado": "candidata",
-      "ev": [
-        [
-          "as quatro",
-          "quem cuida · história local · tirar o aparelho · explica-tudo"
-        ]
-      ]
-    },
-    {
-      "t": "Dezembro e janeiro são pico nacional",
-      "n": "derrubada",
-      "estado": "derrubada",
-      "derrubada_por": "riomafra",
-      "ev": [
-        [
-          "Riomafra",
-          "índice 2,5–7,9 contra 34 em julho"
-        ],
-        [
-          "BI",
-          "494 e 78 leads contra 4.120"
-        ]
-      ]
-    }
-  ],
-  "variaveis": [
-    {
-      "dim": "A alavanca de preço",
-      "londrina": "confiança + preço justo — barato levanta suspeita",
-      "prudente": "clareza, não preço",
-      "feira": "preço como orgulho do batalhador",
-      "riomafra": "palavra cumprida"
-    },
-    {
-      "dim": "Posição no placar",
-      "londrina": "desafiante",
-      "prudente": "líder — joga defesa",
-      "feira": "desafiante, 7x atrás",
-      "riomafra": "melhor nota, 4ª em volume"
-    },
-    {
-      "dim": "O inimigo",
-      "londrina": "clínica geral bem avaliada",
-      "prudente": "vácuo competitivo",
-      "feira": "doutor pessoa física",
-      "riomafra": "rede popular + startup de tráfego"
-    },
-    {
-      "dim": "Mídia própria",
-      "londrina": "urgência genérica",
-      "prudente": "7 ativos, leilão dominado",
-      "feira": "17 ativos no coro",
-      "riomafra": "zero"
-    },
-    {
-      "dim": "Léxico proibido",
-      "londrina": "urgência de liquidação",
-      "prudente": "corporativês",
-      "feira": "axé litorâneo",
-      "riomafra": "gíria gaúcha, Oktoberfest"
-    }
-  ]
+  {
+   "t": "❌ CAIU — a proporção subia conforme a cidade encolhia",
+   "n": "4/4 em julho · não se sustentou em 13",
+   "estado": "derrubada",
+   "ev": [
+    [
+     "julho, amostra pequena",
+     "47 · 54 · 63 · 69"
+    ],
+    [
+     "agosto, amostra 5 a 10× maior",
+     "67,7 · 69,6 · 61,6 · 71,4"
+    ]
+   ],
+   "leitura": "A escada era um artefato de amostra. Em julho, Prudente tinha 454 avaliações lidas e Riomafra 224; em agosto são 2.154 e 1.095. Com a base cheia os quatro valores se juntam entre 61,6% e 71,4% e a ordem se embaralha. Pior: dois dos quatro números de julho vinham de outra base (reviews_categoria, não reviews_com_texto) — nunca foram comparáveis entre si.",
+   "por_que_importa": "É a quinta vez neste projeto que amostra pequena erra de SINAL, e a primeira que passou publicada. O que sobrevive é melhor que a escada: uma constante nacional em 13 praças."
+  },
+  {
+   "t": "A ferida é sempre operação — nunca o produto",
+   "n": "4/4",
+   "estado": "candidata",
+   "ev": [
+    [
+     "Londrina",
+     "pós-venda"
+    ],
+    [
+     "Prudente",
+     "agenda"
+    ],
+    [
+     "Feira",
+     "espera 2–4h"
+    ],
+    [
+     "Riomafra",
+     "manutenção"
+    ]
+   ]
+  },
+  {
+   "t": "A confiança é em gente com nome, não em marca",
+   "n": "4/4",
+   "estado": "candidata",
+   "ev": [
+    [
+     "Londrina",
+     "Dr. João, as meninas"
+    ],
+    [
+     "Feira",
+     "doutor 4,9 · 1.268"
+    ],
+    [
+     "Riomafra",
+     "concorrente sem ortodontista nomeado"
+    ]
+   ]
+  },
+  {
+   "t": "A porta de entrada é sempre “quanto custa / cabe na parcela?”, seguida de “dói?”",
+   "n": "4/4",
+   "estado": "candidata",
+   "ev": [
+    [
+     "Riomafra",
+     "extraído da busca real"
+    ],
+    [
+     "Prudente",
+     "âncora ~R$ 110/mês"
+    ]
+   ]
+  },
+  {
+   "t": "Julho é o pico da mãe-decisora",
+   "n": "4/4",
+   "estado": "candidata",
+   "ev": [
+    [
+     "Riomafra",
+     "índice 34 · 4.120 leads em jul/25"
+    ],
+    [
+     "demais",
+     "férias escolares"
+    ]
+   ]
+  },
+  {
+   "t": "O adulto 30+ é dinheiro na mesa e nenhuma praça fala com ele",
+   "n": "4/4",
+   "estado": "candidata",
+   "ev": [
+    [
+     "Riomafra",
+     "21.000 de 30–45 vs 7.700 de 9–15"
+    ],
+    [
+     "demais",
+     "~metade de quem usa aparelho"
+    ]
+   ]
+  },
+  {
+   "t": "A clínica-escola é fraca exatamente onde a rede é forte",
+   "n": "4/4",
+   "estado": "candidata",
+   "ev": [
+    [
+     "Feira",
+     "não faz aparelho de adolescente"
+    ],
+    [
+     "Prudente",
+     "cobre prevenção e infantil"
+    ]
+   ]
+  },
+  {
+   "t": "A joia local existe, é incopiável — e está enterrada",
+   "n": "3/4",
+   "estado": "candidata",
+   "ev": [
+    [
+     "Londrina",
+     "é a matriz"
+    ],
+    [
+     "Prudente",
+     "a 1ª franquia"
+    ],
+    [
+     "Riomafra",
+     "o casal que voltou"
+    ],
+    [
+     "Feira",
+     "nenhuma ainda"
+    ]
+   ]
+  },
+  {
+   "t": "A embalagem é a mesma nas quatro: feed institucional + anúncio de urgência",
+   "n": "4/4",
+   "estado": "candidata",
+   "ev": [
+    [
+     "Londrina",
+     "OPERAÇÃO ORTODONTIA"
+    ],
+    [
+     "Prudente",
+     "SEMANA DO APARELHO"
+    ],
+    [
+     "Feira",
+     "17 no coro"
+    ],
+    [
+     "Riomafra",
+     "feed sem a especialidade"
+    ]
+   ]
+  },
+  {
+   "t": "A prova social está parada em todas",
+   "n": "4/4",
+   "estado": "candidata",
+   "ev": [
+    [
+     "Prudente",
+     "4,9 · 582 fora das peças"
+    ],
+    [
+     "Riomafra",
+     "0,7 review/mês"
+    ]
+   ],
+   "ref": "velocity"
+  },
+  {
+   "t": "A mãe é a decisora — e lê os reviews antes de escolher",
+   "n": "4/4",
+   "estado": "candidata",
+   "ev": [
+    [
+     "Londrina",
+     "“graças a Deus li os comentários”"
+    ],
+    [
+     "Riomafra",
+     "medo duplo da mãe"
+    ]
+   ]
+  },
+  {
+   "t": "A ordem certa é blindar a operação antes de qualquer mídia nova",
+   "n": "4/4",
+   "estado": "candidata",
+   "ev": [
+    [
+     "as quatro",
+     "é a ação nº 1 dos quatro planos"
+    ]
+   ]
+  },
+  {
+   "t": "Os mesmos quatro formatos fixos de conteúdo emergem nas quatro",
+   "n": "4/4",
+   "estado": "candidata",
+   "ev": [
+    [
+     "as quatro",
+     "quem cuida · história local · tirar o aparelho · explica-tudo"
+    ]
+   ]
+  },
+  {
+   "t": "Dezembro e janeiro são pico nacional",
+   "n": "derrubada",
+   "estado": "derrubada",
+   "derrubada_por": "riomafra",
+   "ev": [
+    [
+     "Riomafra",
+     "índice 2,5–7,9 contra 34 em julho"
+    ],
+    [
+     "BI",
+     "494 e 78 leads contra 4.120"
+    ]
+   ]
+  }
+ ],
+ "variaveis": [
+  {
+   "dim": "A alavanca de preço",
+   "londrina": "confiança + preço justo — barato levanta suspeita",
+   "prudente": "clareza, não preço",
+   "feira": "preço como orgulho do batalhador",
+   "riomafra": "palavra cumprida"
+  },
+  {
+   "dim": "Posição no placar",
+   "londrina": "desafiante",
+   "prudente": "líder — joga defesa",
+   "feira": "desafiante, 7x atrás",
+   "riomafra": "melhor nota, 4ª em volume"
+  },
+  {
+   "dim": "O inimigo",
+   "londrina": "clínica geral bem avaliada",
+   "prudente": "vácuo competitivo",
+   "feira": "doutor pessoa física",
+   "riomafra": "rede popular + startup de tráfego"
+  },
+  {
+   "dim": "Mídia própria",
+   "londrina": "urgência genérica",
+   "prudente": "7 ativos, leilão dominado",
+   "feira": "17 ativos no coro",
+   "riomafra": "zero"
+  },
+  {
+   "dim": "Léxico proibido",
+   "londrina": "urgência de liquidação",
+   "prudente": "corporativês",
+   "feira": "axé litorâneo",
+   "riomafra": "gíria gaúcha, Oktoberfest"
+  }
+ ]
 }
