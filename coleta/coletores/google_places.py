@@ -160,8 +160,19 @@ def ancora(praca, achados, quantos=14):
         s = "".join(c for c in s if not unicodedata.combining(c)).lower()
         return re.sub(r"[^a-z0-9]+", "_", s).strip("_")[:26]
 
-    nossos = [p for p in ordenados if "orthodontic" in
-              (p.get("displayName", {}).get("text") or "").lower()]
+    # Reconhecer a unidade pelo NOME é armadilha: "You Align Orthodontics",
+    # em Contagem, entrou como unidade da rede porque 'orthodontics' contém
+    # 'orthodontic'. O site é exato — a rede toda usa orthodonticbrasil.com.br.
+    def e_da_rede(p):
+        site = (p.get("websiteUri") or "").lower()
+        if "orthodonticbrasil.com.br" in site:
+            return True
+        if site:                       # tem site e não é o da rede: não é nossa
+            return False
+        nome = (p.get("displayName", {}).get("text") or "").lower()
+        return re.search(r"\borthodontic\b", nome) is not None
+
+    nossos = [p for p in ordenados if e_da_rede(p)]
     outros = [p for p in ordenados if p not in nossos][:quantos]
     novos = 0
     for p in nossos + outros:
