@@ -13,6 +13,7 @@ Regra: todo número carrega procedência. Sem procedência, não entra.
 Uso:  python3 scripts/build_portal.py [--corte AAAA-MM-DD]
 """
 import json, argparse, pathlib, sys
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import datetime as dt
 from collections import defaultdict, Counter
 
@@ -383,6 +384,21 @@ def main():
     fila = json.loads((OUT/"fila.json").read_text(encoding="utf-8")) \
         if (OUT/"fila.json").exists() else {}
 
+    # --------------------------------------------------------------- cobertura
+    #
+    # "4 praças ouvidas de 340 unidades" ficou escrito à mão em
+    # dados/conteudo/rede.json e nunca mais foi tocado. Nove praças entraram
+    # depois e o número não mexeu — o portal abria dizendo 4 enquanto o bloco
+    # ao lado, na MESMA tela, dizia 374 unidades. Quem lê acha que o produto
+    # encolheu, e tem razão de achar: o número estava mentindo.
+    #
+    # Agora ele sai do dado. Ouvida = praça com avaliação lida, seja da rede ou
+    # de oportunidade — em praça de oportunidade a gente ouve o mercado, que é
+    # exatamente o que justifica abrir lá.
+    from cruzamento import reviews_unicos as _revs
+    cobertura = {"ouvidas": len({r.get("praca_id") for r in _revs() if r.get("praca_id")}),
+                 "total": len(atuais)}
+
     # --------------------------------------------------------------- os andares
     #
     # Treze ferramentas lado a lado é um armário, não uma sala de comando. Quem
@@ -491,10 +507,11 @@ def main():
             "fonte": "orthodonticbrasil.com.br/encontre-uma-unidade",
         },
         "cobertura": {**carrega(CONT, "rede").get("cobertura", {}),
+                      **cobertura,
                       "pracas_medidas": len(PRACAS),
-                      "aviso": "A medição cobre uma amostra da rede. Todo número "
-                               "desta tela vale para as praças medidas, não para "
-                               "as 340."},
+                      "aviso": f"A medição cobre uma amostra da rede. Todo número "
+                               f"desta tela vale para as {cobertura['ouvidas']} praças "
+                               f"ouvidas, não para as {cobertura['total']} unidades."},
         "mapa": mapa,
         # A porta de entrada. O casco desenha isto ANTES do menu, e o menu vira
         # o que sempre deveria ter sido: o que fazer depois de olhar a fila.
@@ -539,7 +556,7 @@ def main():
         "corte": corte,
         "taxonomia_versao": next((r.get("taxonomia_versao") for r in temas
                                   if r.get("taxonomia_versao")), None),
-        "cobertura": carrega(CONT, "rede").get("cobertura", {}),
+        "cobertura": {**carrega(CONT, "rede").get("cobertura", {}), **cobertura},
         # o casco NÃO monta rótulo de cidade — recebe pronto, com a UF na frente
         "pracas": [{"praca_id": p, "nome": ident[p].get("nome"),
                     "rotulo": ident[p].get("rotulo") or ident[p].get("nome"),

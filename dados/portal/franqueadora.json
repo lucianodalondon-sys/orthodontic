@@ -1,6 +1,6 @@
 {
   "corte": "2026-08-09",
-  "gerado_em": "2026-08-09T11:48:36",
+  "gerado_em": "2026-08-09T21:43:37",
   "rede": {
     "unidades": 374,
     "abertas": 348,
@@ -17,10 +17,11 @@
     "fonte": "orthodonticbrasil.com.br/encontre-uma-unidade"
   },
   "cobertura": {
-    "ouvidas": 4,
-    "total": 340,
+    "_nota": "Este bloco NÃO é mais a fonte de 'ouvidas' e 'total'. Os dois saem do dado em build_portal.py (praças com avaliação lida, e unidades na lista oficial da rede). Ficaram escritos à mão aqui por quatro semanas dizendo 4 de 340, enquanto a mesma tela já mostrava 374 unidades ao lado. Não volte a escrever número aqui.",
+    "ouvidas": 13,
+    "total": 374,
     "pracas_medidas": 7,
-    "aviso": "A medição cobre uma amostra da rede. Todo número desta tela vale para as praças medidas, não para as 340."
+    "aviso": "A medição cobre uma amostra da rede. Todo número desta tela vale para as 13 praças ouvidas, não para as 374 unidades."
   },
   "mapa": [
     {
