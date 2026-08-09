@@ -702,6 +702,24 @@ não estamos vendo · o que fazer, em ordem.
 
 ---
 
+## ETAPA 13 · CRUZAR COM AS OUTRAS CIDADES
+
+**A praça pronta não é o fim.** Toda vez que uma cidade nova entra, a leitura
+da REDE muda — e é ela que a franqueadora compra.
+
+```bash
+python3 scripts/cruzamento.py --salvar
+```
+
+Ela responde o que nenhuma praça sozinha responde: **o que vale para a rede e
+o que vale só para uma cidade.** Com 7 praças já mostrou que a rede sustenta
+30% contra 13% do mercado, e que o canal da mãe falta em 5 de 7.
+
+**O processo inteiro está em `coleta/CRUZAMENTO-DA-REDE.md`.** Pular esta etapa
+é entregar sete estudos em vez de um sistema.
+
+---
+
 # O CHECKLIST DE ENTREGA
 
 Uma praça só está pronta quando tem:
@@ -723,6 +741,7 @@ Uma praça só está pronta quando tem:
 - [ ] **o que não estamos vendo, declarado**
 - [ ] `inteligencia.py` rodado — **as 8 leituras, não só as 5 automáticas**
 - [ ] o dossiê escrito
+- [ ] **`cruzamento.py` rodado — a praça nova muda a leitura da rede**
 - [ ] ponto de partida congelado com data, para a próxima coleta comparar
 
 ---
