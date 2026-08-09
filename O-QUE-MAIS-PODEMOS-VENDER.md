@@ -9,7 +9,7 @@ com os coletores que existem hoje.
 
 ---
 
-## 1 · RADAR DE EXPANSÃO — o único que dá dinheiro direto
+## 1 · RADAR DE OPORTUNIDADE — o único que dá dinheiro direto
 
 **A franqueadora vive de vender franquia.** É o único produto desta lista que
 entra na receita dela, não na despesa.
@@ -181,9 +181,9 @@ Nem tudo vira produto separado. A recomendação:
 | Território vazio | dentro da ficha da praça | incluso |
 | **Auditoria de ficha** | entrega única, na implantação | **incluso — é o que prova o portal na primeira semana** |
 | **Placar de rede** | relatório trimestral | **incluso** |
-| **Radar de expansão** | **produto separado** | **R$ 4.500 por cidade estudada** |
+| **Radar de oportunidade** | **produto separado** | **R$ 4.500 por cidade estudada** |
 
-O **radar de expansão fica de fora do portal de propósito**: quem compra é
+O **radar de oportunidade fica de fora do portal de propósito**: quem compra é
 outro time (expansão, não marketing), o uso é pontual e o valor por decisão é
 muito maior. Vender junto é subprecificar.
 
