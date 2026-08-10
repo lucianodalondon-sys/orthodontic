@@ -126,11 +126,20 @@ ordem:
    (`o_que_e` + `pct`), barras finas.
 5. **avaliações esperando resposta** — `sem_resposta.itens[]` (nota,
    data, texto do paciente).
-6. **o rival de aparelho** — `rival.vantagens_deles[]` OU
+6. **quem anuncia aparelho na cidade** — `anuncios_da_cidade` (payload
+   novo). `manchete` pronta, depois a lista de `anunciantes[]`: nome,
+   quantos anúncios, plataforma (Meta · Google), há quantos dias no ar e
+   um `exemplo` do texto. O nosso vem primeiro, marcado `nosso: true`.
+   O bloco é **de CIDADE, não de loja** (`e_da_cidade: true`) — três
+   lojas de Cuiabá disputam o mesmo leilão; diga isso na tela. Os
+   descartados aparecem como `fora_do_produto` (número + motivo): 134
+   anúncios de aparelho estavam no ar e o portal mostrava só um contador
+   escondido dentro da captação.
+7. **o rival de aparelho** — `rival.vantagens_deles[]` OU
    `sem_comparacao_porque`; `rival.fora[]` numa lista recolhida "fora da
    comparação — outro produto", cada um com `por_que_fora`. Uma linha
    fixa: só quem vende aparelho entra na comparação.
-7. **a linha do tempo** — `eventos[]` (data, `quem`: nossa · paciente ·
+8. **a linha do tempo** — `eventos[]` (data, `quem`: nossa · paciente ·
    fila · rival, texto pronto), linha vertical fina, cor por `quem`.
 
 ## 3 · Mudanças de dado que as telas precisam refletir

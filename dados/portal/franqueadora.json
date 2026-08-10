@@ -1,6 +1,6 @@
 {
   "corte": "2026-08-10",
-  "gerado_em": "2026-08-10T23:45:43",
+  "gerado_em": "2026-08-10T23:54:14",
   "rede": {
     "unidades": 374,
     "abertas": 348,
@@ -603,6 +603,17 @@
       "grupo": "lojas",
       "disponivel": true,
       "indisponivel_porque": null
+    },
+    {
+      "chave": "anuncios",
+      "titulo": "Quem anuncia aparelho na cidade",
+      "pergunta": "Quem está comprando mídia de aparelho na praça, agora?",
+      "numero": 134,
+      "frase": "anúncios de aparelho no ar, de 59 anunciantes nas praças medidas — e ninguém anuncia em SC · Mafra.",
+      "tela": "anuncios",
+      "grupo": "lojas",
+      "disponivel": true,
+      "indisponivel_porque": "rode scripts/quem_anuncia_aparelho.py --salvar"
     },
     {
       "chave": "padroes",

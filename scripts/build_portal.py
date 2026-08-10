@@ -169,6 +169,29 @@ def main():
             **{k: v for k, v in c.items() if k != "praca_id"},
             "placar": placar, "funil": funil, "temas": temas_p,
             "sazonalidade": saz,
+            # O PICO DA PRAÇA é buraco de coleta, e buraco calado é o pior
+            # tipo. A série tem 4 pontos, todos de SC, vindos do estudo de
+            # Mafra — e foi justamente ela que derrubou a tese nacional de
+            # "dezembro e janeiro são pico" (lá é vale). Ou seja: não dá
+            # para herdar a curva de uma região para as outras. Enquanto
+            # não houver coleta por cidade, a praça diz isso na tela.
+            "sazonalidade_estado": ({
+                "tem": True,
+                "regiao": saz[0].get("regiao"),
+                "pontos": len(saz),
+                "anos_da_serie": saz[0].get("serie_anos"),
+            } if saz else {
+                "tem": False,
+                "por_que": ("ainda não medimos a curva de procura desta "
+                            "cidade — a única série que existe é de SC, com "
+                            f"{conta(len(sazon), 'ponto')}, e Mafra provou "
+                            "que a curva de uma região não vale para a "
+                            "outra: lá dezembro e janeiro são VALE, não pico"),
+                "o_que_preenche": ("uma coleta de índice de busca mensal por "
+                                   "cidade — nenhum coletor do projeto faz "
+                                   "isso hoje"),
+                "quem_responde": "coleta externa, não a rede",
+            }),
             # A 2ª coleta chegou: o movimento sai de o_que_mudou.json, gerado
             # por scripts/o_que_mudou.py a partir da série de places. O build
             # LÊ o payload em vez de esperar injeção externa — senão a ordem
@@ -613,6 +636,18 @@ def main():
              "clínicas que vendem APARELHO nas praças acompanhadas. Clínica "
              "geral e implante não entram: é outro tratamento, outro paciente.",
              "rival", "lojas", (OUT/"rival.json").exists()),
+        card("anuncios", "Quem anuncia aparelho na cidade",
+             "Quem está comprando mídia de aparelho na praça, agora?",
+             _json("anuncios").get("anuncios_ativos"),
+             (lambda a: (f"anúncios de aparelho no ar, de "
+                         f"{a.get('anunciantes_total')} anunciantes nas praças "
+                         f"medidas" +
+                         (f" — e ninguém anuncia em "
+                          f"{', '.join(a['pracas_sem_ninguem'])}."
+                          if a.get("pracas_sem_ninguem") else ".")))(
+                 _json("anuncios")),
+             "anuncios", "lojas", (OUT/"anuncios.json").exists(),
+             "rode scripts/quem_anuncia_aparelho.py --salvar"),
         card("padroes", "O que faz uma loja crescer",
              "Por que umas lojas crescem e outras param?",
              len(_json("padroes").get("hipoteses_testadas", [])),
@@ -806,6 +841,10 @@ def main():
     _cx_por = {u.get("local_id"): u for u in _cx.get("unidades", [])}
     _rv_por = {p.get("local_id"): p for p in _rv.get("pracas", [])}
     _fl_por = {x["local_id"]: x for x in _fl.get("fila", [])}
+    # A mídia é da CIDADE, não da loja: três lojas de Cuiabá disputam o
+    # mesmo leilão. Vai na página de cada uma, declarada como leitura de
+    # cidade — é análise de mercado, e mercado é por cidade.
+    _an_por = {x["praca_id"]: x for x in carrega(OUT, "anuncios").get("pracas", [])}
     _md_por = {}
     for _pd in _md.get("pracas", {}).values():
         for _ln in _pd.get("nossas", []):
@@ -839,6 +878,16 @@ def main():
                       "fora": rv.get("rivais_fora") or [],
                       "fora_total": len(rv.get("rivais_fora") or []),
                       "sem_comparacao_porque": rv.get("sem_comparacao_porque")},
+            "anuncios_da_cidade": (lambda a: a and {
+                "e_da_cidade": True,
+                "rotulo": a["rotulo"], "manchete": a["manchete"],
+                "anuncios_ativos": a["anuncios_ativos"],
+                "anunciantes_total": a["anunciantes_total"],
+                "somos_um_deles": a["somos_um_deles"],
+                "anunciantes": a["anunciantes"],
+                "fora_do_produto": a["fora_do_produto"],
+                "fora_do_produto_porque": a["fora_do_produto_porque"],
+            })(_an_por.get(l.get("praca_id"))),
             "eventos": l.get("eventos") or [],
         }))
         n_cli += 1
@@ -878,7 +927,7 @@ def main():
         "pracas": [_ficha_praca(p) for p in PRACAS],
         # o índice de verdade: o que existe, agora, nesta pasta
         "arquivos": {
-            "rede": [x for x in ("fila", "timeline", "caixa_de_respostas", "padroes", "o_que_mudou", "rede_inteira", "rival", "voz_da_cidade", "rede", "rede_cruzamento", "achados",
+            "rede": [x for x in ("fila", "timeline", "caixa_de_respostas", "padroes", "o_que_mudou", "rede_inteira", "rival", "anuncios", "voz_da_cidade", "rede", "rede_cruzamento", "achados",
                                  "corretor", "evidencias", "radar", "funil_nacional")
                      if (OUT/f"{x}.json").exists()],
             "clinicas": presentes("clinicas"),
