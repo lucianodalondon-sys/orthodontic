@@ -434,8 +434,20 @@ def main():
     # de oportunidade — em praça de oportunidade a gente ouve o mercado, que é
     # exatamente o que justifica abrir lá.
     from cruzamento import reviews_unicos as _revs
-    cobertura = {"ouvidas": len({r.get("praca_id") for r in _revs() if r.get("praca_id")}),
-                 "total": len(atuais)}
+    # "13 de 374 praças ouvidas" misturava maçã com laranja DUAS vezes:
+    # comparava PRAÇAS com UNIDADES na mesma fração, e o 13 incluía as seis
+    # cidades de oportunidade — que são estudo de expansão, não rede. Cada
+    # número agora é da sua própria espécie, e a fração só existe entre
+    # unidades: 10 acompanhadas de 374.
+    _unidades_acompanhadas = sum(
+        1 for pp in PRACAS for l in ident[pp].get("locais", [])
+        if l.get("papel") == "proprio")
+    cobertura = {
+        "unidades_total": len(atuais),
+        "unidades_acompanhadas": _unidades_acompanhadas,
+        "pracas_da_rede_estudadas": len(PRACAS),
+        "cidades_de_oportunidade_estudadas": len(PRACAS_OPORTUNIDADE),
+    }
 
     # --------------------------------------------------------------- os andares
     #
@@ -598,10 +610,14 @@ def main():
         },
         "cobertura": {**carrega(CONT, "rede").get("cobertura", {}),
                       **cobertura,
-                      "pracas_medidas": len(PRACAS),
-                      "aviso": f"A medição cobre uma amostra da rede. Todo número "
-                               f"desta tela vale para as {cobertura['ouvidas']} praças "
-                               f"ouvidas, não para as {cobertura['total']} unidades."},
+                      "aviso": f"As leituras de rede valem para as "
+                               f"{cobertura['unidades_acompanhadas']} unidades "
+                               f"acompanhadas, em "
+                               f"{cobertura['pracas_da_rede_estudadas']} praças — "
+                               f"não para as {cobertura['unidades_total']}. As "
+                               f"{cobertura['cidades_de_oportunidade_estudadas']} "
+                               f"cidades de oportunidade são estudo de expansão e "
+                               f"não entram em nenhuma conta da rede."},
         "mapa": mapa,
         # A porta de entrada. O casco desenha isto ANTES do menu, e o menu vira
         # o que sempre deveria ter sido: o que fazer depois de olhar a fila.

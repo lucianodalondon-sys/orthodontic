@@ -1,6 +1,6 @@
 {
   "corte": "2026-08-10",
-  "gerado_em": "2026-08-10T14:49:38",
+  "gerado_em": "2026-08-10T15:22:22",
   "rede": {
     "unidades": 374,
     "abertas": 348,
@@ -18,10 +18,11 @@
   },
   "cobertura": {
     "_nota": "Este bloco NÃO é mais a fonte de 'ouvidas' e 'total'. Os dois saem do dado em build_portal.py (praças com avaliação lida, e unidades na lista oficial da rede). Ficaram escritos à mão aqui por quatro semanas dizendo 4 de 340, enquanto a mesma tela já mostrava 374 unidades ao lado. Não volte a escrever número aqui.",
-    "ouvidas": 13,
-    "total": 374,
-    "pracas_medidas": 7,
-    "aviso": "A medição cobre uma amostra da rede. Todo número desta tela vale para as 13 praças ouvidas, não para as 374 unidades."
+    "unidades_total": 374,
+    "unidades_acompanhadas": 10,
+    "pracas_da_rede_estudadas": 7,
+    "cidades_de_oportunidade_estudadas": 6,
+    "aviso": "As leituras de rede valem para as 10 unidades acompanhadas, em 7 praças — não para as 374. As 6 cidades de oportunidade são estudo de expansão e não entram em nenhuma conta da rede."
   },
   "mapa": [
     {
