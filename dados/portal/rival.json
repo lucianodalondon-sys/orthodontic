@@ -42,71 +42,39 @@
    "eixo": "gente_com_nome",
    "o_que_e": "Tem profissional que o paciente chama pelo nome",
    "perde_em": 6,
-   "de": 6,
-   "pior_razao": 5.1,
-   "nosso_pior": 5.1,
-   "nosso_melhor": 10.3,
+   "de": 10,
+   "pior_razao": 6.1,
+   "nosso_pior": 4.3,
+   "nosso_melhor": 9.5,
    "pracas": [
     {
-     "rotulo": "MG · Contagem",
+     "rotulo": "MG · Contagem · OrthoDontic",
      "razao": 4.2,
      "quem": "ODONTO ART DENTISTA 24 HORAS CONTAGEM"
     },
     {
-     "rotulo": "MT · Cuiabá + MT · Várzea Grande",
-     "razao": 5.1,
+     "rotulo": "MT · Cuiabá + MT · Várzea Grande · OrthoDontic Cuiabá Centro Norte",
+     "razao": 6.1,
      "quem": "Clínica Goya"
     },
     {
-     "rotulo": "BA · Feira de Santana",
+     "rotulo": "BA · Feira de Santana · OrthoDontic Feira de Santana",
      "razao": 1.7,
      "quem": "Moisés Suzart | Odontologia Especializada"
     },
     {
-     "rotulo": "PR · Londrina",
-     "razao": 2.2,
+     "rotulo": "PR · Londrina · OrthoDontic Souza Naves",
+     "razao": 2.4,
      "quem": "Clínica Dentista do Povo - Unidade Mais Sorriso - Londrina"
     },
     {
-     "rotulo": "TO · Palmas",
+     "rotulo": "TO · Palmas · OrthoDontic",
      "razao": 3.4,
      "quem": "Dente Mais"
     },
     {
-     "rotulo": "SP · Presidente Prudente",
+     "rotulo": "SP · Presidente Prudente · OrthoDontic Presidente Prudente",
      "razao": 4.5,
-     "quem": "Turminha da Dra Bia - Ortodontia e Odontopediatria para família."
-    }
-   ],
-   "de_quem_e_a_decisao": "franqueadora"
-  },
-  {
-   "eixo": "acolhimento_do_medo",
-   "o_que_e": "Cuida de quem tem medo de dentista",
-   "perde_em": 4,
-   "de": 6,
-   "pior_razao": 34.4,
-   "nosso_pior": 0.0,
-   "nosso_melhor": 1.8,
-   "pracas": [
-    {
-     "rotulo": "MG · Contagem",
-     "razao": 6.5,
-     "quem": "ODONTO ART DENTISTA 24 HORAS CONTAGEM"
-    },
-    {
-     "rotulo": "MT · Cuiabá + MT · Várzea Grande",
-     "razao": 9.6,
-     "quem": "Clínica Goya"
-    },
-    {
-     "rotulo": "PR · Londrina",
-     "razao": 5.2,
-     "quem": "Clínica Dentista do Povo - Unidade Mais Sorriso - Londrina"
-    },
-    {
-     "rotulo": "SP · Presidente Prudente",
-     "razao": 34.4,
      "quem": "Turminha da Dra Bia - Ortodontia e Odontopediatria para família."
     }
    ],
@@ -116,29 +84,56 @@
    "eixo": "trata_crianca",
    "o_que_e": "Sabe atender criança",
    "perde_em": 4,
-   "de": 6,
+   "de": 10,
    "pior_razao": 25.6,
    "nosso_pior": 0.7,
    "nosso_melhor": 6.6,
    "pracas": [
     {
-     "rotulo": "MG · Contagem",
+     "rotulo": "MG · Contagem · OrthoDontic",
      "razao": 1.7,
      "quem": "Multiodonto Contagem"
     },
     {
-     "rotulo": "MT · Cuiabá + MT · Várzea Grande",
-     "razao": 3.3,
+     "rotulo": "MT · Cuiabá + MT · Várzea Grande · OrthoDontic Cuiabá Centro Norte",
+     "razao": 3.6,
      "quem": "IODONTO CENTRO - MIRANDA REIS"
     },
     {
-     "rotulo": "TO · Palmas",
+     "rotulo": "TO · Palmas · OrthoDontic",
      "razao": 2.0,
      "quem": "Inovar - Rad Odonto"
     },
     {
-     "rotulo": "SP · Presidente Prudente",
+     "rotulo": "SP · Presidente Prudente · OrthoDontic Presidente Prudente",
      "razao": 25.6,
+     "quem": "Turminha da Dra Bia - Ortodontia e Odontopediatria para família."
+    }
+   ],
+   "de_quem_e_a_decisao": "unidade"
+  },
+  {
+   "eixo": "acolhimento_do_medo",
+   "o_que_e": "Cuida de quem tem medo de dentista",
+   "perde_em": 3,
+   "de": 10,
+   "pior_razao": 34.4,
+   "nosso_pior": 0.0,
+   "nosso_melhor": 1.8,
+   "pracas": [
+    {
+     "rotulo": "MG · Contagem · OrthoDontic",
+     "razao": 6.5,
+     "quem": "ODONTO ART DENTISTA 24 HORAS CONTAGEM"
+    },
+    {
+     "rotulo": "PR · Londrina · OrthoDontic Souza Naves",
+     "razao": 7.5,
+     "quem": "Clínica Dentista do Povo - Unidade Mais Sorriso - Londrina"
+    },
+    {
+     "rotulo": "SP · Presidente Prudente · OrthoDontic Presidente Prudente",
+     "razao": 34.4,
      "quem": "Turminha da Dra Bia - Ortodontia e Odontopediatria para família."
     }
    ],
@@ -148,23 +143,23 @@
    "eixo": "hora_marcada_e_hora",
    "o_que_e": "Atende na hora marcada",
    "perde_em": 3,
-   "de": 6,
+   "de": 10,
    "pior_razao": 10.6,
    "nosso_pior": 1.8,
    "nosso_melhor": 4.8,
    "pracas": [
     {
-     "rotulo": "MG · Contagem",
+     "rotulo": "MG · Contagem · OrthoDontic",
      "razao": 4.3,
      "quem": "ODONTO ART DENTISTA 24 HORAS CONTAGEM"
     },
     {
-     "rotulo": "MT · Cuiabá + MT · Várzea Grande",
-     "razao": 4.7,
+     "rotulo": "MT · Cuiabá + MT · Várzea Grande · OrthoDontic Cuiabá Centro Norte",
+     "razao": 5.2,
      "quem": "IODONTO CENTRO - MIRANDA REIS"
     },
     {
-     "rotulo": "TO · Palmas",
+     "rotulo": "TO · Palmas · OrthoDontic",
      "razao": 10.6,
      "quem": "Inovar - Rad Odonto"
     }
@@ -175,23 +170,23 @@
    "eixo": "pos_venda",
    "o_que_e": "Continua presente depois que vendeu",
    "perde_em": 3,
-   "de": 6,
+   "de": 10,
    "pior_razao": 5.8,
    "nosso_pior": 0.6,
    "nosso_melhor": 7.3,
    "pracas": [
     {
-     "rotulo": "MT · Cuiabá + MT · Várzea Grande",
-     "razao": 1.5,
+     "rotulo": "MT · Cuiabá + MT · Várzea Grande · OrthoDontic Cuiabá Centro Norte",
+     "razao": 3.7,
      "quem": "ODONTO MEDICINA 🦷"
     },
     {
-     "rotulo": "TO · Palmas",
+     "rotulo": "TO · Palmas · OrthoDontic",
      "razao": 3.5,
      "quem": "Dente Mais"
     },
     {
-     "rotulo": "SP · Presidente Prudente",
+     "rotulo": "SP · Presidente Prudente · OrthoDontic Presidente Prudente",
      "razao": 5.8,
      "quem": "CORE Odontologia Presidente Prudente"
     }
@@ -202,23 +197,23 @@
    "eixo": "explica_o_tratamento",
    "o_que_e": "Explica o que vai fazer, antes de fazer",
    "perde_em": 3,
-   "de": 6,
+   "de": 10,
    "pior_razao": 4.2,
-   "nosso_pior": 1.3,
+   "nosso_pior": 1.0,
    "nosso_melhor": 5.3,
    "pracas": [
     {
-     "rotulo": "MG · Contagem",
+     "rotulo": "MG · Contagem · OrthoDontic",
      "razao": 4.2,
      "quem": "ODONTO ART DENTISTA 24 HORAS CONTAGEM"
     },
     {
-     "rotulo": "MT · Cuiabá + MT · Várzea Grande",
-     "razao": 1.5,
+     "rotulo": "MT · Cuiabá + MT · Várzea Grande · OrthoDontic Cuiabá Centro Norte",
+     "razao": 1.9,
      "quem": "Clínica Goya"
     },
     {
-     "rotulo": "PR · Londrina",
+     "rotulo": "PR · Londrina · OrthoDontic Souza Naves",
      "razao": 1.8,
      "quem": "Vittallon Odontologia"
     }
@@ -229,18 +224,18 @@
    "eixo": "resolve_no_mesmo_dia",
    "o_que_e": "Resolve no mesmo dia",
    "perde_em": 2,
-   "de": 6,
-   "pior_razao": 3.3,
+   "de": 10,
+   "pior_razao": 3.0,
    "nosso_pior": 0.0,
-   "nosso_melhor": 1.4,
+   "nosso_melhor": 1.0,
    "pracas": [
     {
-     "rotulo": "MT · Cuiabá + MT · Várzea Grande",
-     "razao": 3.3,
+     "rotulo": "MT · Cuiabá + MT · Várzea Grande · OrthoDontic Cuiabá Centro Norte",
+     "razao": 2.9,
      "quem": "IODONTO CENTRO - MIRANDA REIS"
     },
     {
-     "rotulo": "TO · Palmas",
+     "rotulo": "TO · Palmas · OrthoDontic",
      "razao": 3.0,
      "quem": "Inovar - Rad Odonto"
     }
@@ -251,19 +246,19 @@
    "eixo": "preco_claro",
    "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
    "perde_em": 2,
-   "de": 6,
-   "pior_razao": 1.9,
+   "de": 10,
+   "pior_razao": 2.3,
    "nosso_pior": 1.1,
    "nosso_melhor": 3.6,
    "pracas": [
     {
-     "rotulo": "MG · Contagem",
+     "rotulo": "MG · Contagem · OrthoDontic",
      "razao": 1.5,
      "quem": "Odonto Prime São Caetano"
     },
     {
-     "rotulo": "PR · Londrina",
-     "razao": 1.9,
+     "rotulo": "PR · Londrina · OrthoDontic Souza Naves",
+     "razao": 2.3,
      "quem": "Vittallon Odontologia"
     }
    ],
@@ -274,6 +269,8 @@
   {
    "praca_id": "contagem",
    "rotulo": "MG · Contagem",
+   "local_id": "ortho_contagem",
+   "unidade": "OrthoDontic",
    "nossas_avaliacoes_lidas": 621,
    "rivais_comparados": [
     "ODONTO ART DENTISTA 24 HORAS CONTAGEM",
@@ -356,7 +353,9 @@
   {
    "praca_id": "cuiaba",
    "rotulo": "MT · Cuiabá + MT · Várzea Grande",
-   "nossas_avaliacoes_lidas": 704,
+   "local_id": "ortho_cba_centro_norte",
+   "unidade": "OrthoDontic Cuiabá Centro Norte",
+   "nossas_avaliacoes_lidas": 610,
    "rivais_comparados": [
     "Clínica Goya",
     "ODONTO MEDICINA 🦷",
@@ -365,36 +364,28 @@
    "rivais_fora": [],
    "vantagens_deles": [
     {
-     "eixo": "acolhimento_do_medo",
-     "o_que_e": "Cuida de quem tem medo de dentista",
-     "quem": "Clínica Goya",
-     "eles": 1.4,
-     "nos": 0.1,
-     "razao": 9.6
-    },
-    {
      "eixo": "gente_com_nome",
      "o_que_e": "Tem profissional que o paciente chama pelo nome",
      "quem": "Clínica Goya",
      "eles": 26.0,
-     "nos": 5.1,
-     "razao": 5.1
+     "nos": 4.3,
+     "razao": 6.1
     },
     {
      "eixo": "hora_marcada_e_hora",
      "o_que_e": "Atende na hora marcada",
      "quem": "IODONTO CENTRO - MIRANDA REIS",
      "eles": 12.7,
-     "nos": 2.7,
-     "razao": 4.7
+     "nos": 2.5,
+     "razao": 5.2
     },
     {
-     "eixo": "resolve_no_mesmo_dia",
-     "o_que_e": "Resolve no mesmo dia",
-     "quem": "IODONTO CENTRO - MIRANDA REIS",
-     "eles": 0.5,
-     "nos": 0.1,
-     "razao": 3.3
+     "eixo": "pos_venda",
+     "o_que_e": "Continua presente depois que vendeu",
+     "quem": "ODONTO MEDICINA 🦷",
+     "eles": 2.4,
+     "nos": 0.7,
+     "razao": 3.7
     },
     {
      "eixo": "trata_crianca",
@@ -402,39 +393,57 @@
      "quem": "IODONTO CENTRO - MIRANDA REIS",
      "eles": 2.3,
      "nos": 0.7,
-     "razao": 3.3
+     "razao": 3.6
+    },
+    {
+     "eixo": "resolve_no_mesmo_dia",
+     "o_que_e": "Resolve no mesmo dia",
+     "quem": "IODONTO CENTRO - MIRANDA REIS",
+     "eles": 0.5,
+     "nos": 0.2,
+     "razao": 2.9
     },
     {
      "eixo": "explica_o_tratamento",
      "o_que_e": "Explica o que vai fazer, antes de fazer",
      "quem": "Clínica Goya",
      "eles": 1.9,
-     "nos": 1.3,
-     "razao": 1.5
-    },
-    {
-     "eixo": "pos_venda",
-     "o_que_e": "Continua presente depois que vendeu",
-     "quem": "ODONTO MEDICINA 🦷",
-     "eles": 2.4,
-     "nos": 1.6,
-     "razao": 1.5
+     "nos": 1.0,
+     "razao": 1.9
     }
    ],
    "nosso_perfil": {
-    "explica_o_tratamento": 1.3,
-    "hora_marcada_e_hora": 2.7,
-    "preco_claro": 1.3,
-    "acolhimento_do_medo": 0.1,
-    "resolve_no_mesmo_dia": 0.1,
+    "explica_o_tratamento": 1.0,
+    "hora_marcada_e_hora": 2.5,
+    "preco_claro": 1.1,
+    "acolhimento_do_medo": 0.0,
+    "resolve_no_mesmo_dia": 0.2,
     "trata_crianca": 0.7,
-    "pos_venda": 1.6,
-    "gente_com_nome": 5.1
+    "pos_venda": 0.7,
+    "gente_com_nome": 4.3
    }
+  },
+  {
+   "praca_id": "cuiaba",
+   "rotulo": "MT · Cuiabá + MT · Várzea Grande",
+   "local_id": "ortho_cba_fernando_correa",
+   "unidade": "OrthoDontic Cuiabá Fernando Corrêa",
+   "sem_comparacao_porque": "só 56 avaliações com texto — abaixo do mínimo de 60",
+   "vantagens_deles": []
+  },
+  {
+   "praca_id": "cuiaba",
+   "rotulo": "MT · Cuiabá + MT · Várzea Grande",
+   "local_id": "ortho_cba_dom_bosco",
+   "unidade": "OrthoDontic Cuiabá Dom Bosco (Centro Sul)",
+   "sem_comparacao_porque": "só 38 avaliações com texto — abaixo do mínimo de 60",
+   "vantagens_deles": []
   },
   {
    "praca_id": "feira",
    "rotulo": "BA · Feira de Santana",
+   "local_id": "ortho_fsa",
+   "unidade": "OrthoDontic Feira de Santana",
    "nossas_avaliacoes_lidas": 110,
    "rivais_comparados": [
     "Centro Odontológico COP Tomba",
@@ -466,7 +475,9 @@
   {
    "praca_id": "londrina",
    "rotulo": "PR · Londrina",
-   "nossas_avaliacoes_lidas": 438,
+   "local_id": "ortho_souza_naves",
+   "unidade": "OrthoDontic Souza Naves",
+   "nossas_avaliacoes_lidas": 379,
    "rivais_comparados": [
     "Clínica Dentista do Povo - Unidade Mais Sorriso - Londrina",
     "Vittallon Odontologia",
@@ -479,48 +490,66 @@
      "o_que_e": "Cuida de quem tem medo de dentista",
      "quem": "Clínica Dentista do Povo - Unidade Mais Sorriso - Londrina",
      "eles": 6.0,
-     "nos": 1.1,
-     "razao": 5.2
+     "nos": 0.8,
+     "razao": 7.5
     },
     {
      "eixo": "gente_com_nome",
      "o_que_e": "Tem profissional que o paciente chama pelo nome",
      "quem": "Clínica Dentista do Povo - Unidade Mais Sorriso - Londrina",
      "eles": 22.4,
-     "nos": 10.3,
-     "razao": 2.2
+     "nos": 9.5,
+     "razao": 2.4
     },
     {
      "eixo": "preco_claro",
      "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
      "quem": "Vittallon Odontologia",
      "eles": 3.1,
-     "nos": 1.6,
-     "razao": 1.9
+     "nos": 1.3,
+     "razao": 2.3
     },
     {
      "eixo": "explica_o_tratamento",
      "o_que_e": "Explica o que vai fazer, antes de fazer",
      "quem": "Vittallon Odontologia",
      "eles": 4.2,
-     "nos": 2.3,
+     "nos": 2.4,
      "razao": 1.8
     }
    ],
    "nosso_perfil": {
-    "explica_o_tratamento": 2.3,
-    "hora_marcada_e_hora": 3.7,
-    "preco_claro": 1.6,
-    "acolhimento_do_medo": 1.1,
-    "resolve_no_mesmo_dia": 1.4,
+    "explica_o_tratamento": 2.4,
+    "hora_marcada_e_hora": 4.0,
+    "preco_claro": 1.3,
+    "acolhimento_do_medo": 0.8,
+    "resolve_no_mesmo_dia": 0.5,
     "trata_crianca": 6.6,
-    "pos_venda": 5.5,
-    "gente_com_nome": 10.3
+    "pos_venda": 4.5,
+    "gente_com_nome": 9.5
    }
+  },
+  {
+   "praca_id": "londrina",
+   "rotulo": "PR · Londrina",
+   "local_id": "ortho_centro_ldn",
+   "unidade": "OrthoDontic Centro",
+   "sem_comparacao_porque": "só 59 avaliações com texto — abaixo do mínimo de 60",
+   "vantagens_deles": []
+  },
+  {
+   "praca_id": "mafra",
+   "rotulo": "SC · Mafra",
+   "local_id": "ortho_mafra",
+   "unidade": "OrthoDontic Mafra",
+   "sem_comparacao_porque": "só 55 avaliações com texto — abaixo do mínimo de 60",
+   "vantagens_deles": []
   },
   {
    "praca_id": "palmas",
    "rotulo": "TO · Palmas",
+   "local_id": "ortho_palmas",
+   "unidade": "OrthoDontic",
    "nossas_avaliacoes_lidas": 227,
    "rivais_comparados": [
     "DenteClin - Clínicas Odontológicas - JK | Palmas",
@@ -595,6 +624,8 @@
   {
    "praca_id": "prudente",
    "rotulo": "SP · Presidente Prudente",
+   "local_id": "ortho_pp",
+   "unidade": "OrthoDontic Presidente Prudente",
    "nossas_avaliacoes_lidas": 523,
    "rivais_comparados": [
     "CORE Odontologia Presidente Prudente",

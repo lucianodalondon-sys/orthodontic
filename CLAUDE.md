@@ -34,6 +34,13 @@ script cobra. Quando os dois divergirem, o script é a verdade.
 - **Duas fontes independentes** antes de dizer que a rede não está numa
   cidade: a lista oficial e a busca por nome. Se a lista oficial não
   responder, a cidade sai como NÃO CONFERIDA e não entra em recomendação.
+- **A UNIDADE é a menor conta, e loja não se funde com loja.** Cuiabá tem
+  três lojas e Londrina duas, e nem sempre é o mesmo dono. Toda leitura que
+  fala com franqueado (rival, fila, caixa de respostas, plano) é POR
+  `local_id` — a média das lojas de uma cidade não diz nada para nenhum dos
+  donos. Análise de MERCADO (tese da praça, portas, canais) pode ser por
+  cidade, porque a cidade é uma só.
+
 - **Praça de oportunidade não é praça da rede.** Ela tem identidade igual e
   passa pelos mesmos coletores, mas não entra no placar, não gera plano de
   franqueado e não conta como unidade parada.

@@ -130,12 +130,12 @@ def main():
         if not nossas:
             continue
 
-        # o nosso perfil: todas as nossas unidades da praça somadas
-        meus = [r for lid in locais if locais[lid].get("papel") == "proprio"
-                for r in revs.get((p, lid), [])]
-        meu, meu_n = perfil(meus)
-        if not meu or meu_n < MIN_AVALIACOES:
-            continue
+        # UMA LINHA POR UNIDADE, nunca a praça somada. Cuiabá tem três lojas
+        # e Londrina duas, e nem sempre é o mesmo dono — a média das três
+        # não diz nada para nenhum dos três franqueados. A comparação certa
+        # é a loja DELE contra o rival da cidade dele.
+        proprias = [(lid, l) for lid, l in locais.items()
+                    if l.get("papel") == "proprio"]
 
         # os rivais que valem comparação
         rivais = []
@@ -176,31 +176,45 @@ def main():
         if not dentro:
             continue
 
-        # onde eles ganham de nós, por proporção
-        vantagens = []
-        for k, (nome, _) in EIXOS.items():
-            melhor = max(dentro, key=lambda r: r["perfil"][k])
-            if meu[k] <= 0:
+        for lid, l in proprias:
+            meu, meu_n = perfil(revs.get((p, lid), []))
+            if not meu or meu_n < MIN_AVALIACOES:
+                if meu_n:
+                    saida.append({"praca_id": p, "rotulo": d.get("rotulo"),
+                                  "local_id": lid, "unidade": l.get("nome"),
+                                  "sem_comparacao_porque":
+                                      f"só {meu_n} avaliações com texto — abaixo "
+                                      f"do mínimo de {MIN_AVALIACOES}",
+                                  "vantagens_deles": []})
                 continue
-            razao = melhor["perfil"][k]/meu[k]
-            if razao >= MIN_DIFERENCA:
-                vantagens.append({
-                    "eixo": k, "o_que_e": nome, "quem": melhor["nome"],
-                    "eles": round(100*melhor["perfil"][k], 1),
-                    "nos": round(100*meu[k], 1), "razao": round(razao, 1)})
-        vantagens.sort(key=lambda x: -x["razao"])
-
-        saida.append({"praca_id": p, "rotulo": d.get("rotulo"),
-                      "nossas_avaliacoes_lidas": meu_n,
-                      "rivais_comparados": [r["nome"] for r in dentro],
-                      "rivais_fora": [r for r in rivais if r["fora"]],
-                      "vantagens_deles": vantagens,
-                      "nosso_perfil": {k: round(100*v, 1) for k, v in meu.items()}})
+            vantagens = []
+            for k, (nome, _) in EIXOS.items():
+                melhor = max(dentro, key=lambda r: r["perfil"][k])
+                if meu[k] <= 0:
+                    continue
+                razao = melhor["perfil"][k]/meu[k]
+                if razao >= MIN_DIFERENCA:
+                    vantagens.append({
+                        "eixo": k, "o_que_e": nome, "quem": melhor["nome"],
+                        "eles": round(100*melhor["perfil"][k], 1),
+                        "nos": round(100*meu[k], 1), "razao": round(razao, 1)})
+            vantagens.sort(key=lambda x: -x["razao"])
+            saida.append({"praca_id": p, "rotulo": d.get("rotulo"),
+                          "local_id": lid, "unidade": l.get("nome"),
+                          "nossas_avaliacoes_lidas": meu_n,
+                          "rivais_comparados": [r["nome"] for r in dentro],
+                          "rivais_fora": [r for r in rivais if r["fora"]],
+                          "vantagens_deles": vantagens,
+                          "nosso_perfil": {k: round(100*v, 1) for k, v in meu.items()}})
 
     print(f"\n{'='*80}\n  O QUE O RIVAL FAZ QUE DÁ CERTO — na voz do paciente dele"
           f"\n{'='*80}")
     for s in saida:
-        print(f"\n  {s['rotulo']}   ({s['nossas_avaliacoes_lidas']} avaliações nossas "
+        etiq = s["rotulo"] + (" · " + s["unidade"] if s.get("unidade") else "")
+        if s.get("sem_comparacao_porque"):
+            print(f"\n  {etiq}  — sem comparação: {s['sem_comparacao_porque']}")
+            continue
+        print(f"\n  {etiq}   ({s['nossas_avaliacoes_lidas']} avaliações nossas "
               f"contra {', '.join(s['rivais_comparados'][:3])})")
         for f in s["rivais_fora"]:
             print(f"     ⊘ fora da comparação: {f['nome'][:44]} — {f['por_que_fora']}")
@@ -218,11 +232,12 @@ def main():
     # treinamento, roteiro de atendimento, protocolo — não visita.
     rede = []
     for k, (nome, _) in EIXOS.items():
-        onde = [(x["rotulo"], v) for x in saida
-                for v in x["vantagens_deles"] if v["eixo"] == k]
+        onde = [((x["rotulo"] + " · " + (x.get("unidade") or "")), v)
+                for x in saida for v in x.get("vantagens_deles", [])
+                if v["eixo"] == k]
         if not onde:
             continue
-        nossos = [x["nosso_perfil"][k] for x in saida]
+        nossos = [x["nosso_perfil"][k] for x in saida if x.get("nosso_perfil")]
         rede.append({
             "eixo": k, "o_que_e": nome,
             "perde_em": len(onde), "de": len(saida),
