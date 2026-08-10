@@ -459,6 +459,12 @@ def main():
                     )(json.loads((OUT/"voz_da_cidade.json").read_text(encoding="utf-8"))
                       if (OUT/"voz_da_cidade.json").exists() else {}),
                    andar="consultar"),
+        ferramenta("padroes", "Os padrões da rede",
+                   "o que as dez lojas ensinam lidas juntas — e o que o dado derrubou",
+                   "padroes", (OUT/"padroes.json").exists(),
+                   "a satisfação é igual nas dez; a constância não — e 4 "
+                   "explicações confortáveis caíram no teste",
+                   andar="decidir"),
         ferramenta("caixa", "A caixa de respostas",
                    "as negativas sem resposta, uma a uma, por loja",
                    "caixa", (OUT/"caixa_de_respostas.json").exists(),
@@ -639,7 +645,7 @@ def main():
                    for p in PRACAS],
         # o índice de verdade: o que existe, agora, nesta pasta
         "arquivos": {
-            "rede": [x for x in ("fila", "caixa_de_respostas", "rede_inteira", "rival", "voz_da_cidade", "rede", "rede_cruzamento", "achados",
+            "rede": [x for x in ("fila", "caixa_de_respostas", "padroes", "rede_inteira", "rival", "voz_da_cidade", "rede", "rede_cruzamento", "achados",
                                  "corretor", "evidencias", "radar")
                      if (OUT/f"{x}.json").exists()],
             "pracas": presentes("pracas"),
