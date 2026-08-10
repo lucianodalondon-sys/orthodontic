@@ -1,0 +1,515 @@
+{
+  "local_id": "ortho_souza_naves",
+  "praca_id": "londrina",
+  "rotulo": "PR · Londrina",
+  "unidade": "OrthoDontic Souza Naves",
+  "cabecalho": {
+    "nota": 4.6,
+    "avaliacoes": 566,
+    "ritmo": 3.3,
+    "meses_seguidos": 9,
+    "posicao": 13,
+    "de": 24
+  },
+  "faixa": "amarela",
+  "urgencia": 35,
+  "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-10",
+    "dias_aberta": 0,
+    "prazo_dias": 7,
+    "vence_em": "2026-08-17"
+  },
+  "acao": {
+    "o_que": "Auditar a ficha do Google — foto, horário, serviços, resposta a avaliação",
+    "prazo": "7 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "posicao"
+  },
+  "gatilhos": [
+    {
+      "peso": 20,
+      "titulo": "Está na metade de baixo da própria praça",
+      "chave": "posicao",
+      "fato": "13º lugar de 24 clínicas medidas na praça",
+      "fonte": "dados/portal/rede_cruzamento.json"
+    },
+    {
+      "peso": 15,
+      "titulo": "Nota abaixo da mediana da praça",
+      "chave": "nota",
+      "fato": "nota 4.6 contra mediana 5.0 das 24 clínicas medidas na praça",
+      "fonte": "dados/serie/places.jsonl"
+    }
+  ],
+  "quem_avanca": null,
+  "o_que_mudou": {
+    "local_id": "ortho_souza_naves",
+    "nome": "OrthoDontic Souza Naves",
+    "proprio": true,
+    "aparelho": true,
+    "de": "2026-08-07",
+    "ate": "2026-08-10",
+    "dias": 3,
+    "antes": 564,
+    "agora": 566,
+    "delta": 2,
+    "nota_antes": 4.6,
+    "nota_agora": 4.6,
+    "ritmo_do_periodo": 20.3,
+    "eventos": [
+      "ganhou 2 avaliações em 3 dia(s)"
+    ],
+    "aviso": "período de só 3 dia(s) — o delta ainda diz pouco; a leitura engorda a cada medição"
+  },
+  "sem_resposta": {
+    "abertas": 34,
+    "com_texto": 22,
+    "itens": [
+      {
+        "nota": 3,
+        "data": "2026-07-29",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 3,
+        "data": "2026-06-13",
+        "texto": "Muito bom atendimento da recepção, porém é um pouco demorado para ser  atendido pelo médico\nJá que sempre fica estipulado um horário de atendimento sempre passa da hora marcada",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-06-09",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 3,
+        "data": "2026-06-09",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 2,
+        "data": "2026-06-02",
+        "texto": "Atendimento pessoal bom, atendimento pelo wats lixo, nao serve pra nada, app tambem, recentemente eles trocaram o vencimento das minhas parcelas do dia 10 de cada mes para o dia 01, nem o presidente recebe dia 01, qual a intençao da mudançao sem meu consentimento nao sei, se hoje for pra indicar uma clinica a alguem nao seria a OrthoDontic .\nRepito atendimento pelos canais é decepcionante.",
+        "tem_texto": true
+      },
+      {
+        "nota": 3,
+        "data": "2026-04-29",
+        "texto": "Está sendo muito bom até agora!",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-04-15",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 1,
+        "data": "2026-04-15",
+        "texto": "Tive uma experiência negativa em relação ao atendimento administrativo da clínica. Houve falhas de comunicação no processo de cancelamento do contrato, o que gerou bastante desgaste e necessidade de insistência para resolver a situação.\nDurante o atendimento, não me senti confortável com a forma como fui tratada, especialmente em relação à condução das informações e ao tom utilizado em alguns momentos. Além disso, o processo de devolução e encerramento contratual demorou mais do que o esperado, exigindo acompanhamento constante da minha parte.\nApós a devolução do valor, fui orientada a remover uma avaliação anterior, o que considerei inadequado. Também enfrentei demora no envio do contrato de encerramento, mesmo após diversas solicitações.\nDeixo esse relato como forma de feedback para que a clínica possa melhorar a comunicação, a organização dos processos e o atendimento ao cliente.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-04-07",
+        "texto": "Não está sendo nada bom falta de profissionalismo falta de horário correto hoje fui tive q esperar por demorou demais vim pra casa sem atendimento não recomendo essa clínica pra ninguém",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-03-20",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 1,
+        "data": "2026-03-09",
+        "texto": "Esta sendo péssima  o telefone disponivel nunca atende  deixa a desejar.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-11-28",
+        "texto": "Uma estrela por que não tem como avaliar sem dar nenhuma, confesso que tive o azar de pegar um dentista que não estava dando a mínima pro meu tratamento, por que sim tem dentistas bons lá, mas infelizmente o meu prazo lá se estendeu pela falta de atenção que ele teve, eu usava contenção nos dentes inferiores e ele conseguiu tirar a contenção e entortar meus dentes, sim isso mesmo entrei lá querendo apenas alinhar e ele ia me dar alta com meus dentes piores… enfim, são profissionais e profissionais infelizmente eu não tive sorte, mas acho a clínica péssima, pois mesmo explicando a minha situação o setor comercial não se importou e queria continuar cobrando meu tratamento, mesmo as minhas parcelas do contrato já estarem pagas, queriam me cobrar taxa de cancelamento e tudo mais, é triste isso perdi um ano de tratamento, dinheiro, esperança e agora vou pra outra clínica, mas finalmente achei uma clínica honesta .",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-11-21",
+        "texto": "Você precisa ligar pra tirar dúvida esquece liga o dia inteiro ninguém atende atendimento em si é bom mais tem esses pontos negativos pra resolver algo só indo pessoalmente se precisar de suporte ninguém atende telefone",
+        "tem_texto": true
+      },
+      {
+        "nota": 3,
+        "data": "2025-11-06",
+        "texto": "Sou cliente, gosto muito d dentista mas se a gente precisa falar é quase impossível. Raramente atendem.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-09-09",
+        "texto": "Não são pontuais, não respondem por WhatsApp, não tiram as dúvidas, não recomendo. São péssimos.",
+        "tem_texto": true
+      },
+      {
+        "nota": 3,
+        "data": "2025-07-04",
+        "texto": "Prestam um bom atendimento presencial mas se precisarem falar com eles por telefone esqueçam pois nunca consegui falar com ninguém lá esse é um ponto que deveriam pensar pois pelo menos no número que disponibilizam tanto no site como nas redes sociais nunca atendem e não é sempre que podemos ir até lá para falar com eles",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-05-22",
+        "texto": "Toda vez que precisa reagendar ou tirar qualquer dúvida que seja, pelo telefone ou WhatsApp, eles não atendem. Mil números de telefone e nenhum pra atender. Minha filha faz tratamento a mais de 2 anos e sempre que precisa ligar lá, nunca da certo. Hoje mesmo perdi a conta de quantas vezes eu liguei, para remarcar uma extração. Infelizmente não tive retorno de ninguém. Agora vou ter que ir na clínica, sabe Deus quando pra remarcar. Infelizmente o atendimento deixa a desejar.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-05-21",
+        "texto": "Olhei várias avaliações dizendo sobre a espera mesmo com horário agendado pois bem, marquei uma avaliação para as 8 e as 9 ainda não tinha sido atendido fui embora fazer o que!",
+        "tem_texto": true
+      },
+      {
+        "nota": 3,
+        "data": "2025-05-15",
+        "texto": "Atendimento presencial é bom, mas se precisar tirar dúvidas ou agendar algo por telefone esquece fica muito tempo na ligação e muito mais aguardando retorno no WhatsApp.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-04-16",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 1,
+        "data": "2024-12-26",
+        "texto": "Péssimos!\nFalta de comunicação total dos profissionais, avisei que não poderia ir á consulta e reagendei para o próximo mês e mesmo assim me cobraram por um atendimento não prestado! Sem nem terem me avisado antes, quando remarcaram para o outro mês, que o valor daquele mês seria cobrado independente se eu realizasse ou não á manutenção. Falta de Ética com o cliente!\nDecepcionadíssima com essa clínica e não recomendo para ninguém!",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2024-04-19",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 2,
+        "data": "2022-02-08",
+        "texto": "A clínica é bacana, os profissionais são simpáticos, mas os atrasos são frequentes. Eles sempre tem uma \"desculpa\", mas eu mudei de dentista justamente pq o anterior atrasava... Meu tempo tb importa sabe?",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2021-06-10",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 1,
+        "data": "2019-07-11",
+        "texto": "Demora muito atender os pacientes , horrível isso ! Não tem organização",
+        "tem_texto": true
+      },
+      {
+        "nota": 2,
+        "data": "2019-06-17",
+        "texto": "Só acho que deveria atender quando ligamos, não sei quantos atendentes tem mais, desligar a ligação para não atender acho exagero...no mais depois de chegar aí por enquanto tá padrão, nem ruím nem bom, normal como deve ser.",
+        "tem_texto": true
+      },
+      {
+        "nota": 3,
+        "data": "2018-11-06",
+        "texto": "Demora no atendimento mesmo com horário marcado tirando isso está tudo ok",
+        "tem_texto": true
+      },
+      {
+        "nota": 3,
+        "data": "2018-01-25",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 2,
+        "data": "2018-01-11",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 1,
+        "data": "2017-07-10",
+        "texto": "Pessimo, nunca fui tão humilhado, todos funcionários com boa vontade, mas a estrutura o  pos venda, inútil, parece inss, implantodotia, sem garantias, não acreditem no que eles dizem , pois parece que não sabem o que fazem. Horrivel",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2017-05-21",
+        "texto": "MUDEI PARA SÃO PAULO E NÃO POSSO VOLTAR AGORA PARA ASSINAR A TRANSFERÊNCIA...SOLICITEI A MESMA POR EMAIL(INTERNET TA AI PRA ISSO)...E ME FALARAM QUE NÃO E POSSÍVEL. SÓ QUERO AVISAR QUE NÃO VOU SAIR NO PREJUÍZO E NEM VOU PERDER DIAS DE TRABALHO POR UMA TRANSFERÊNCIA.\n##RIDICULOISSO\n##COMEÇOUMEDEIXARNAMAO",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2017-02-10",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 2,
+        "data": "2016-05-16",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 1,
+        "data": "2015-03-13",
+        "texto": "PÉSSIMO. Quando você vai PAGAR E AGENDAR CONSULTAS R$ você fica esperando até 1:30 hora e meia em alguns casos 2:00 de espera, eles pensam que não precisamo trabalhar para sustentar nossa família TOTAL DESRESPEITO COM O CONSUMIDOR, não tem boleto, nem débito automático para facilitar para o cliente, se você levar sorte vai chegar e vai pagar imediatamente, mas é um fato raro de acontecer. Os Seviços prestados pela clínica são Bons, mas toda as vezes que vou fazer o pagamento mensal PRECISO FAZER UM BARRACO para ser atendido em 40 minutos mais ou menos. ÁREA DE PAGAMENTOS É PÉSSIMO!!!!",
+        "tem_texto": true
+      }
+    ]
+  },
+  "voz_do_paciente": [
+    {
+      "o_que_e": "Explica o que vai fazer, antes de fazer",
+      "pct": 2.4
+    },
+    {
+      "o_que_e": "Atende na hora marcada",
+      "pct": 4.0
+    },
+    {
+      "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
+      "pct": 1.3
+    },
+    {
+      "o_que_e": "Cuida de quem tem medo de dentista",
+      "pct": 0.8
+    },
+    {
+      "o_que_e": "Resolve no mesmo dia",
+      "pct": 0.5
+    },
+    {
+      "o_que_e": "Sabe atender criança",
+      "pct": 6.6
+    },
+    {
+      "o_que_e": "Continua presente depois que vendeu",
+      "pct": 4.5
+    },
+    {
+      "o_que_e": "Tem profissional que o paciente chama pelo nome",
+      "pct": 9.5
+    }
+  ],
+  "rival": {
+    "comparados": [
+      "Odontologia Peixoto | Implante Dentário | Invisalign | Centro | Londrina - PR",
+      "Crol Odontologia by Dra. Rosemary Carneiro | Ortodontia I Implante Dentário I Estética",
+      "Dra. Suéllen Priscilla - Odontopediatria e Ortodontia"
+    ],
+    "vantagens_deles": [
+      {
+        "eixo": "acolhimento_do_medo",
+        "o_que_e": "Cuida de quem tem medo de dentista",
+        "quem": "Dra. Suéllen Priscilla - Odontopediatria e Ortodontia",
+        "eles": 16.9,
+        "nos": 0.8,
+        "razao": 21.3
+      },
+      {
+        "eixo": "trata_crianca",
+        "o_que_e": "Sabe atender criança",
+        "quem": "Dra. Suéllen Priscilla - Odontopediatria e Ortodontia",
+        "eles": 71.4,
+        "nos": 6.6,
+        "razao": 10.8
+      },
+      {
+        "eixo": "explica_o_tratamento",
+        "o_que_e": "Explica o que vai fazer, antes de fazer",
+        "quem": "Dra. Suéllen Priscilla - Odontopediatria e Ortodontia",
+        "eles": 16.9,
+        "nos": 2.4,
+        "razao": 7.1
+      },
+      {
+        "eixo": "gente_com_nome",
+        "o_que_e": "Tem profissional que o paciente chama pelo nome",
+        "quem": "Dra. Suéllen Priscilla - Odontopediatria e Ortodontia",
+        "eles": 41.6,
+        "nos": 9.5,
+        "razao": 4.4
+      },
+      {
+        "eixo": "pos_venda",
+        "o_que_e": "Continua presente depois que vendeu",
+        "quem": "Crol Odontologia by Dra. Rosemary Carneiro | Ortodontia I Implante Dentário I Estética",
+        "eles": 10.7,
+        "nos": 4.5,
+        "razao": 2.4
+      },
+      {
+        "eixo": "resolve_no_mesmo_dia",
+        "o_que_e": "Resolve no mesmo dia",
+        "quem": "Crol Odontologia by Dra. Rosemary Carneiro | Ortodontia I Implante Dentário I Estética",
+        "eles": 1.2,
+        "nos": 0.5,
+        "razao": 2.3
+      }
+    ],
+    "fora": [
+      {
+        "nome": "Clínica Dentista do Povo - Unidade Mais Sorriso - Londrina",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 67 avaliações citam aparelho"
+      },
+      {
+        "nome": "Odontoclinic Londrina",
+        "fora": true,
+        "por_que_fora": "zona cinzenta: 3 de 54 avaliações citam aparelho (6%) — faz aparelho, mas não é o negócio principal"
+      },
+      {
+        "nome": "Vittallon Odontologia",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 261 avaliações citam aparelho"
+      },
+      {
+        "nome": "Clínica Dentária Central Norte",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 5 de 272 avaliações citam aparelho"
+      },
+      {
+        "nome": "Odontologia Vila Real",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 80 avaliações citam aparelho"
+      },
+      {
+        "nome": "Clínica Ichiban",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 78 avaliações citam aparelho"
+      },
+      {
+        "nome": "Maximus Odontologia Avançada - Lentes de contato, Facetas e Implantes dentários",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 86 avaliações citam aparelho"
+      },
+      {
+        "nome": "Yamar Odontologia - Clinica Odontológica - Implantes",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 3 de 325 avaliações citam aparelho"
+      },
+      {
+        "nome": "Odonto Excellence Gleba Palhano",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 3 de 225 avaliações citam aparelho"
+      },
+      {
+        "nome": "Dentista 24 horas Londrina - Dr. Alessandro Morais",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 89 avaliações citam aparelho"
+      },
+      {
+        "nome": "Torres Odontologia Especializada",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 1 de 76 avaliações citam aparelho"
+      },
+      {
+        "nome": "STAR CLIN SORRISOS",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 81 avaliações citam aparelho"
+      },
+      {
+        "nome": "Parmagnani e Ramos Odontologia",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 80 avaliações citam aparelho"
+      },
+      {
+        "nome": "Plenitá Odontologia e Saúde Integrada",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 86 avaliações citam aparelho"
+      },
+      {
+        "nome": "Dra. Aline Oliver Odonto",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 69 avaliações citam aparelho"
+      },
+      {
+        "nome": "CliniMax Clínica Odontológica",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 52 avaliações citam aparelho"
+      }
+    ],
+    "sem_comparacao_porque": null
+  },
+  "eventos": [
+    {
+      "data": "2026-08-10",
+      "tipo": "contador",
+      "quem": "nossa",
+      "texto": "ganhou 2 avaliações (564 → 566)",
+      "fonte": "dados/serie/places.jsonl"
+    },
+    {
+      "data": "2026-08-10",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Está na metade de baixo da própria praça",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-10",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Nota abaixo da mediana da praça",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-07",
+      "tipo": "contador",
+      "quem": "nossa",
+      "texto": "ganhou 3 avaliações (561 → 564)",
+      "fonte": "dados/serie/places.jsonl"
+    },
+    {
+      "data": "2026-07-29",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 3★ · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "data": "2026-06-13",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 3★: “Muito bom atendimento da recepção, porém é um pouco demorado para ser  atendido pelo médic…” · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "data": "2026-06-09",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 1★ · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "data": "2026-06-09",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 3★ · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "data": "2026-06-02",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 2★: “Atendimento pessoal bom, atendimento pelo wats lixo, nao serve pra nada, app tambem, recen…” · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "local_id": "ortho_cba_fernando_correa",
+  "praca_id": "cuiaba",
+  "rotulo": "MT · Cuiabá",
+  "unidade": "OrthoDontic Cuiabá Fernando Corrêa",
+  "cabecalho": {
+    "nota": 4.9,
+    "avaliacoes": 78,
+    "ritmo": 3.7,
+    "meses_seguidos": 0,
+    "posicao": 16,
+    "de": 27
+  },
+  "faixa": "amarela",
+  "urgencia": 50,
+  "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-10",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-24"
+  },
+  "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+  },
+  "gatilhos": [
+    {
+      "peso": 30,
+      "titulo": "O contador de avaliações parou",
+      "chave": "parada",
+      "fato": "apenas 0 mês(es) seguidos com movimento acima do típico da própria unidade; o ritmo medido é 3.7 avaliações/mês",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "peso": 20,
+      "titulo": "Está na metade de baixo da própria praça",
+      "chave": "posicao",
+      "fato": "16º lugar de 27 clínicas medidas na praça",
+      "fonte": "dados/portal/rede_cruzamento.json"
+    }
+  ],
+  "quem_avanca": null,
+  "o_que_mudou": {
+    "local_id": "ortho_cba_fernando_correa",
+    "nome": "OrthoDontic Cuiabá Fernando Corrêa",
+    "proprio": true,
+    "aparelho": true,
+    "de": "2026-08-08",
+    "ate": "2026-08-10",
+    "dias": 2,
+    "antes": 78,
+    "agora": 78,
+    "delta": 0,
+    "nota_antes": 4.9,
+    "nota_agora": 4.9,
+    "ritmo_do_periodo": 0.0,
+    "eventos": [],
+    "aviso": "período de só 2 dia(s) — o delta ainda diz pouco; a leitura engorda a cada medição"
+  },
+  "sem_resposta": {
+    "abertas": 2,
+    "com_texto": 2,
+    "itens": [
+      {
+        "nota": 1,
+        "data": "2026-04-29",
+        "texto": "Esperei muito para ser atendida pela dentista e depois novamente para receber um orçamento, só fui chamada após perguntar na recepção. O orçamento veio com uma observação dizendo que não era necessário mexer nas coroas, mas eu mesma havia solicitado a troca delas, ciente de que seria particular e pago à parte, não pelo plano. Achei confuso e pouco claro🤡.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-03-05",
+        "texto": "Não tem lógica os comentários que vi pelo Google! Fui na clínica e me fizeram pouco caso, 1h aguardando e sai de lá frustrado td pq o meu atendimento e Convênio péssimo atendimento avaliações nao condi!",
+        "tem_texto": true
+      }
+    ]
+  },
+  "voz_do_paciente": null,
+  "rival": {
+    "comparados": [],
+    "vantagens_deles": [],
+    "fora": [],
+    "sem_comparacao_porque": "só 56 avaliações com texto — abaixo do mínimo de 60"
+  },
+  "eventos": [
+    {
+      "data": "2026-08-10",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: O contador de avaliações parou",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-10",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Está na metade de baixo da própria praça",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    }
+  ]
+}

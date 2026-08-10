@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sala de Comando — OrthoDontic</title>
+<meta name="description" content="A sala de comando da franqueadora OrthoDontic: onde a rede inteira se enxerga e de onde se escolhe a ferramenta.">
+
+<link rel="stylesheet" href="_ds/orthodontic-design-system-7aecc444-be3e-43c0-829c-5e7c82118198/fonts.css">
+<link rel="stylesheet" href="_ds/orthodontic-design-system-7aecc444-be3e-43c0-829c-5e7c82118198/tokens/colors.css">
+<link rel="stylesheet" href="_ds/orthodontic-design-system-7aecc444-be3e-43c0-829c-5e7c82118198/tokens/typography.css">
+<link rel="stylesheet" href="_ds/orthodontic-design-system-7aecc444-be3e-43c0-829c-5e7c82118198/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/orthodontic-design-system-7aecc444-be3e-43c0-829c-5e7c82118198/tokens/radii.css">
+<link rel="stylesheet" href="_ds/orthodontic-design-system-7aecc444-be3e-43c0-829c-5e7c82118198/tokens/shadows.css">
+<link rel="stylesheet" href="_ds/orthodontic-design-system-7aecc444-be3e-43c0-829c-5e7c82118198/tokens/motion.css">
+<link rel="stylesheet" href="_ds/orthodontic-design-system-7aecc444-be3e-43c0-829c-5e7c82118198/tokens/gradients.css">
+<link rel="stylesheet" href="assets/franqueadora.css">
+</head>
+<body aria-busy="true">
+
+<nav class="barra" aria-label="As ferramentas da rede">
+  <div class="barra-topo">
+    <img src="assets/logo-horizontal-white.png" alt="OrthoDontic">
+    <div class="assinatura">Sala de Comando</div>
+  </div>
+  <div class="barra-lista" id="barra-lista"></div>
+  <div class="barra-rodape">
+    <div class="n" id="cobertura-n"></div>
+    <div class="trilho"><i id="cobertura-barra"></i></div>
+    <div class="d" id="cobertura-d"></div>
+  </div>
+</nav>
+
+<header class="cabecalho">
+  <div class="aneis" aria-hidden="true"></div>
+
+  <div class="cabecalho-linha">
+    <button type="button" class="busca-botao" id="busca">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.6-3.6"></path></svg>
+      <span class="rot">Buscar praça, cidade, estado, ferramenta…</span>
+      <kbd>/</kbd>
+    </button>
+    <span class="espaco"></span>
+    <span class="proveniencia" id="corte"></span>
+    <button type="button" class="tema-botao" id="tema" title="Alternar tema claro e escuro" aria-label="Alternar tema claro e escuro">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="8"></circle><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor" stroke="none"></path></svg>
+    </button>
+  </div>
+
+  <div class="rede-numeros" id="rede-numeros"></div>
+  <div class="proveniencia" id="proveniencia"></div>
+</header>
+
+<main class="trabalho" id="trabalho">
+
+  <section class="painel" id="painel-mapa">
+    <div class="painel-cab">
+      <h2>Onde a rede está</h2>
+      <span class="aux">cada estado colorido pela quantidade de unidades, do mais claro ao mais cheio</span>
+    </div>
+    <div class="vazios-aviso" id="vazios-aviso"></div>
+    <div class="mapa-painel">
+      <div>
+        <div class="mapa-caixa" id="mapa-caixa"></div>
+        <div class="mapa-legenda" id="mapa-legenda"></div>
+      </div>
+      <div class="ranking" id="ranking"></div>
+    </div>
+    <div class="pracas-tira" id="pracas-tira"></div>
+  </section>
+
+  <section>
+    <div class="painel-cab">
+      <h2>O que exige olhar hoje</h2>
+      <span class="aux">agrupado por causa, não por unidade</span>
+    </div>
+    <div class="mudou" id="mudou"></div>
+  </section>
+
+  <section>
+    <div class="painel-cab">
+      <h2>As ferramentas</h2>
+      <span class="aux">cada uma responde uma pergunta, e traz o número que já vem medido</span>
+    </div>
+    <div class="grade-ferramentas" id="grade-ferramentas"></div>
+  </section>
+
+</main>
+
+<script src="assets/brasil-ufs.js"></script>
+<script src="assets/franqueadora.js"></script>
+</body>
+</html>

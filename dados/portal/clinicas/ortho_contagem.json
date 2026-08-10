@@ -1,0 +1,526 @@
+{
+  "local_id": "ortho_contagem",
+  "praca_id": "contagem",
+  "rotulo": "MG · Contagem",
+  "unidade": "OrthoDontic",
+  "cabecalho": {
+    "nota": 4.6,
+    "avaliacoes": 856,
+    "ritmo": 10.6,
+    "meses_seguidos": 23,
+    "posicao": 9,
+    "de": 14
+  },
+  "faixa": "amarela",
+  "urgencia": 35,
+  "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-10",
+    "dias_aberta": 0,
+    "prazo_dias": 7,
+    "vence_em": "2026-08-17"
+  },
+  "acao": {
+    "o_que": "Auditar a ficha do Google — foto, horário, serviços, resposta a avaliação",
+    "prazo": "7 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "posicao"
+  },
+  "gatilhos": [
+    {
+      "peso": 20,
+      "titulo": "Está na metade de baixo da própria praça",
+      "chave": "posicao",
+      "fato": "9º lugar de 14 clínicas medidas na praça",
+      "fonte": "dados/portal/rede_cruzamento.json"
+    },
+    {
+      "peso": 15,
+      "titulo": "Nota abaixo da mediana da praça",
+      "chave": "nota",
+      "fato": "nota 4.6 contra mediana 4.9 das 14 clínicas medidas na praça",
+      "fonte": "dados/serie/places.jsonl"
+    }
+  ],
+  "quem_avanca": null,
+  "o_que_mudou": {
+    "local_id": "ortho_contagem",
+    "nome": "OrthoDontic",
+    "proprio": true,
+    "aparelho": true,
+    "de": "2026-08-08",
+    "ate": "2026-08-10",
+    "dias": 2,
+    "antes": 855,
+    "agora": 856,
+    "delta": 1,
+    "nota_antes": 4.6,
+    "nota_agora": 4.6,
+    "ritmo_do_periodo": 15.2,
+    "eventos": [
+      "ganhou 1 avaliações em 2 dia(s)"
+    ],
+    "aviso": "período de só 2 dia(s) — o delta ainda diz pouco; a leitura engorda a cada medição"
+  },
+  "sem_resposta": {
+    "abertas": 39,
+    "com_texto": 30,
+    "itens": [
+      {
+        "nota": 1,
+        "data": "2026-08-09",
+        "texto": "Péssimo atendimento da recepção, estão sempre com a cara fechada ,os médicos não perguntam se está machucando o aparelho você fala que resta machucando e eles falam que é normal .\nNão recomendo ninguém , vou trocar de dentista, toda vez troca o médico e não comunicam ao paciente...",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-07-18",
+        "texto": "Horrível, demora muito, a manutenção da contenção é rápida, tive q espera 2 horas para ser atendida",
+        "tem_texto": true
+      },
+      {
+        "nota": 2,
+        "data": "2026-07-08",
+        "texto": "Nunca atendem no horário marcado.Passa pessoas na frente..A consulta marcada para 15:30.Sao quase 16hs e não atenderam",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-06-19",
+        "texto": "Atendimento péssimo nunca atende no horário, se vc precisa falar no WhatsApp não respondem so mensagem de IA . Pior fornecedor de serviço",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-06-10",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 1,
+        "data": "2026-06-07",
+        "texto": "Não recomendo!! Péssimo.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-06-02",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 1,
+        "data": "2026-05-19",
+        "texto": "Pessima !\nDemora atender, eles marcam horário, mais nunca cumpre, parece mais ordem de chegada, sempre muito atrasados.\n\nTodo mês é um dentista diferente no tratamento e cada um fala uma coisa, parece que fica so trocando as borrachinhas e os brequetes.\n\nas dentista ficam na recepção conversando e elas mal mal te dão um boa tarde, boa noite. Atendimento horrível.\n\nAtendimento horrível, vou trocar o meu filho de dentista.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-05-12",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 1,
+        "data": "2026-04-22",
+        "texto": "Péssimo atendimento, você marca um horário e só é atendido quase duas horas depois. Tratamento em si não é bom, pois, só se importam com a mensalidade paga, não se importam em apresentar qualidade no tratamento do cliente. Além disso, colocam uma multa absurda, justamente para não podermos cancelar o tratamento e iniciar um novo em outro local. Simplesmente pessimo!",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-04-17",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 1,
+        "data": "2026-04-09",
+        "texto": "Péssimo, nas primeiras consultas, são marcadas direitinhos só pra ganhar clientes, depois enrolam, marca um horário e ficamos esperamos por horas, nunca atende o horário marcado, não indico ninguém",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-03-28",
+        "texto": "Horrível muito sem compromisso essa empresa colocando todo mundo no mesmo horário horrível",
+        "tem_texto": true
+      },
+      {
+        "nota": 3,
+        "data": "2026-02-26",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 3,
+        "data": "2026-02-19",
+        "texto": "Demora ao atendimento",
+        "tem_texto": true
+      },
+      {
+        "nota": 3,
+        "data": "2026-02-14",
+        "texto": "Tudo é realmente bem limpo e os dentistas são profissionais, mas uma coisa que falta é o compromisso com o horário! Muitas das vezes fico esperando até 1 hora a mais do que deveria esperar.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-01-15",
+        "texto": "Péssimo em todos os sentidos, não existe respeito ao cliente. Tem alguns bons profissionais mas infelizmente não indico",
+        "tem_texto": true
+      },
+      {
+        "nota": 2,
+        "data": "2026-01-15",
+        "texto": "Os dentista são ótimos\nÓtimo atendimentos\nPorém a recepção deixa a desejar .principalmente se precisar fala na clinica,o watts nao responden..fiquei um dia todos tentando . E nao conseguir pq nao responde as msg ..entao nao e bom a recepção",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-01-12",
+        "texto": "Péssimo atendimento em questão de demora, cheguei aqui as 14:00, sao 17:20 e ate agora nada, muita falta de respeito com o cliente",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-01-07",
+        "texto": "Péssimo atendimento",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-12-23",
+        "texto": "Péssimo atendimento minha filha agendada as 17h foi atendida depois das 18h mais de uma hora de atraso se fosse eu atrasar poderia o horário, respeito e bom .",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-12-08",
+        "texto": "Atrasam muito",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-11-19",
+        "texto": "Sou nao dou zero porque não tem essa opção.\nEstou 3 anos presa em um contrato no qual quando iniciamos a agarraria era de 1 ano a 1 ano e meio de aparelho.\nAgora depois de muita pressão e ter um dentista fixo o tratamento andou. O tratamento so andou depois que um dentista mais experiente deu sequência no tratamento do meu filho.\nHoje quando fomos fazer o kolde contenção veio a notícia que ele precisa continuar o tratamento na clínica por mais um ano e pagando. Depois de durabte dois anos ter pago e ter um atendimento péssimo.\nO claramente que também tínhamos direito nao vai ser feito, pois so seria feito so se fazermos a contenção.\nOu seja, se puderem nao iniciem o tratamento aqui, pois nao vale a pena.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-11-14",
+        "texto": "Vocês são horríveis de todas as formas , falta de consideração com os clientes",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-11-05",
+        "texto": "Atendimento péssimo corram desse lugar",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-10-25",
+        "texto": "Aqui é sempre assim: se a gente não correr atrás, nada anda. Parece que o cliente tem que ficar lembrando e cobrando o tempo todo pra conseguir algo que já foi pago.\nUm verdadeiro descaso e falta de organização. Depois que recebem o pagamento, o atendimento simplesmente desaparece. Muito decepcionada com a falta de responsabilidade e respeito com o paciente.\nNão recomendo a ninguém, pois esse não é o único problema dessa clínica. Sem contar a falta de compromisso com horário — raramente atendem no horário marcado, e às vezes a espera passa de uma hora mesmo com agendamento.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-10-22",
+        "texto": "El servicio de atención es muy irregular, el proceso lo hacen muy mal llegue con un tratamiento a terminar y ellos lo que hicieron fue descudrar todo el proceso, no se si por hacer mas dinero, pero la verdad desepcionado del sérvio, no lo recomiendo.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-10-21",
+        "texto": "Péssimo , horrível, sem condições. Minha pior experiência com atendimento ao cliente .  Até q as dentistas que me atenderam ( no caso 3 pq até os profissionais da clínica são trocados com frequentes) não tenho que reclamar. Mais recepção e gerência só pela misericórdia msm. Não tem empatia, desorganizados demais com os valores já pagos , cobranças indevidas e abusivas. Atendimento só presencial pq telefone parece q não funciona . Watzap sem resposta. Arrependimento de um dia ter entrado na clínica.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-10-06",
+        "texto": "Não muito boa, muita demora nas consultas para ser atendido, dificuldades em geral para falar com a clínica",
+        "tem_texto": true
+      },
+      {
+        "nota": 3,
+        "data": "2025-10-06",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 1,
+        "data": "2025-09-30",
+        "texto": "El servicio prestado por los dentistas es satisfactorio. Sin embargo, se observan deficiencias en el servicio de recepción.\n\nEs importante resaltar el incumplimiento de los horarios programados. La situación evidencia una falta de organización en la unidad OrthoDontic del Eldorado.\n\nManifiesto mi insatisfacción respecto a un incidente específico con una colaboradora que se identificó como gerente de la unidad, quien trató a mi madre de manera inapropiada.\n\nAdicionalmente, es relevante mencionar que otras personas ya han presentado quejas en la recepción anteriormente, llegando, en algunos casos, a manifestaciones de impaciencia y discusiones debido a la calidad del servicio.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-09-18",
+        "texto": "Péssimo, não dou zero porque não tem jeito. Por questões de saúde não pude comparecer a manutenção e quando fui agendar para dar seguimento me cobraram um serviço que não foi realizado. Sem contar o descaso que tiveram comigo, mais de 3 semanas ligando para falar com alguém responsável e sempre diziam que iriam retornar e nada ate que compareci na data do dia 06/09/25  depois de 2h e 30 esperando fui embora porque vi que não iriam me atender agendei para o dia 13/09 primeiro horário e ainda sim fiquei mais de uma hora esperando outras pessoas porque segundo eles estavam antes de mim, e continuaram o descaso e não obtive solução com o consultor responsável pelos contratos (João). Para piorar ele simplesmente minimizou a situação e assim sai com cara de trouxa. Conselho para quem quer começar tratamento lá? Não vá porque se acontecer qualquer coisa o interesse deles é zero e ainda dizem que a sua pendencia irar para SPC, caso  não pague a multa sendo que não utilizei o serviço .",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-07-15",
+        "texto": "Péssima, não recomendo pra ninguém!\nEstou há dois meses utilizando peças que não são do plano que eu pago que é o mais caro porque a clínica simplesmente não compra. Não respondem no WhatsApp quando queremos fazer uma reclamação, estou tentando cancelar e dificultam ao máximo.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-07-10",
+        "texto": "Fiquei uma hora esperando",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-02-25",
+        "texto": "Esse lugar é uma vergonha , n valoriza os clientes , para todos que pagam no dinheiro tomem cuidado , porque smp acontece um fato de vc pagar e n consta no aplicativo deles que vc pagou e desandar seu tratamento",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2024-03-04",
+        "texto": "O nível do atendimento é baixíssimo.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2024-02-20",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 1,
+        "data": "2024-02-20",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 1,
+        "data": "2024-02-20",
+        "texto": null,
+        "tem_texto": false
+      }
+    ]
+  },
+  "voz_do_paciente": [
+    {
+      "o_que_e": "Explica o que vai fazer, antes de fazer",
+      "pct": 1.3
+    },
+    {
+      "o_que_e": "Atende na hora marcada",
+      "pct": 3.1
+    },
+    {
+      "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
+      "pct": 1.9
+    },
+    {
+      "o_que_e": "Cuida de quem tem medo de dentista",
+      "pct": 0.5
+    },
+    {
+      "o_que_e": "Resolve no mesmo dia",
+      "pct": 1.0
+    },
+    {
+      "o_que_e": "Sabe atender criança",
+      "pct": 2.4
+    },
+    {
+      "o_que_e": "Continua presente depois que vendeu",
+      "pct": 5.2
+    },
+    {
+      "o_que_e": "Tem profissional que o paciente chama pelo nome",
+      "pct": 7.1
+    }
+  ],
+  "rival": {
+    "comparados": [
+      "ODONTOMAX - Nathália Duarte (CRO-40548) - Implante, Aparelho, Clareamento, Prótese",
+      "Oral Clin Odontologia - Dentista em Contagem | Alinhador Invisível | DTM e Bruxismo | Implantes | Canal com Microscópio",
+      "Orthopride Contagem"
+    ],
+    "vantagens_deles": [
+      {
+        "eixo": "gente_com_nome",
+        "o_que_e": "Tem profissional que o paciente chama pelo nome",
+        "quem": "Orthopride Contagem",
+        "eles": 61.9,
+        "nos": 7.1,
+        "razao": 8.7
+      },
+      {
+        "eixo": "explica_o_tratamento",
+        "o_que_e": "Explica o que vai fazer, antes de fazer",
+        "quem": "Oral Clin Odontologia - Dentista em Contagem | Alinhador Invisível | DTM e Bruxismo | Implantes | Canal com Microscópio",
+        "eles": 5.9,
+        "nos": 1.3,
+        "razao": 4.6
+      },
+      {
+        "eixo": "trata_crianca",
+        "o_que_e": "Sabe atender criança",
+        "quem": "Orthopride Contagem",
+        "eles": 8.6,
+        "nos": 2.4,
+        "razao": 3.6
+      },
+      {
+        "eixo": "acolhimento_do_medo",
+        "o_que_e": "Cuida de quem tem medo de dentista",
+        "quem": "Oral Clin Odontologia - Dentista em Contagem | Alinhador Invisível | DTM e Bruxismo | Implantes | Canal com Microscópio",
+        "eles": 1.2,
+        "nos": 0.5,
+        "razao": 2.4
+      },
+      {
+        "eixo": "resolve_no_mesmo_dia",
+        "o_que_e": "Resolve no mesmo dia",
+        "quem": "Orthopride Contagem",
+        "eles": 2.2,
+        "nos": 1.0,
+        "razao": 2.2
+      },
+      {
+        "eixo": "pos_venda",
+        "o_que_e": "Continua presente depois que vendeu",
+        "quem": "Orthopride Contagem",
+        "eles": 8.6,
+        "nos": 5.2,
+        "razao": 1.7
+      }
+    ],
+    "fora": [
+      {
+        "nome": "Vitae Center Clínica Médica e Odontológica",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 376 avaliações citam aparelho"
+      },
+      {
+        "nome": "ODONTO ART DENTISTA 24 HORAS CONTAGEM",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 384 avaliações citam aparelho"
+      },
+      {
+        "nome": "Multiodonto Contagem",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 99 avaliações citam aparelho"
+      },
+      {
+        "nome": "Odonto Prime São Caetano",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 2 de 245 avaliações citam aparelho"
+      },
+      {
+        "nome": "Clínica Elevata - Rede Odonto Eldorado",
+        "fora": true,
+        "por_que_fora": "zona cinzenta: 3 de 49 avaliações citam aparelho (6%) — faz aparelho, mas não é o negócio principal"
+      },
+      {
+        "nome": "In Siso",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 2 de 133 avaliações citam aparelho"
+      },
+      {
+        "nome": "Oral Unic Implantes Contagem",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 86 avaliações citam aparelho"
+      },
+      {
+        "nome": "IPPO Odontologia Integrada",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 111 avaliações citam aparelho"
+      }
+    ],
+    "sem_comparacao_porque": null
+  },
+  "eventos": [
+    {
+      "data": "2026-08-10",
+      "tipo": "contador",
+      "quem": "nossa",
+      "texto": "ganhou 1 avaliações (855 → 856)",
+      "fonte": "dados/serie/places.jsonl"
+    },
+    {
+      "data": "2026-08-10",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Está na metade de baixo da própria praça",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-10",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Nota abaixo da mediana da praça",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-09",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 1★: “Péssimo atendimento da recepção, estão sempre com a cara fechada ,os médicos não perguntam…” · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "data": "2026-07-18",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 1★: “Horrível, demora muito, a manutenção da contenção é rápida, tive q espera 2 horas para ser…” · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "data": "2026-07-08",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 2★: “Nunca atendem no horário marcado.Passa pessoas na frente..A consulta marcada para 15:30.Sa…” · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "data": "2026-06-19",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 1★: “Atendimento péssimo nunca atende no horário, se vc precisa falar no WhatsApp não respondem…” · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "data": "2026-06-10",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 1★ · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "data": "2026-06-07",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 1★: “Não recomendo!! Péssimo.” · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "data": "2026-06-02",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 1★ · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "data": "2026-05-19",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 1★: “Pessima ! Demora atender, eles marcam horário, mais nunca cumpre, parece mais ordem de che…” · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "data": "2026-05-12",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 1★ · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    }
+  ]
+}

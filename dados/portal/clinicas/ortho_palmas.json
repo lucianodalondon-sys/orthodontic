@@ -1,0 +1,211 @@
+{
+  "local_id": "ortho_palmas",
+  "praca_id": "palmas",
+  "rotulo": "TO · Palmas",
+  "unidade": "OrthoDontic",
+  "cabecalho": {
+    "nota": 5,
+    "avaliacoes": 305,
+    "ritmo": 7.8,
+    "meses_seguidos": 15,
+    "posicao": 4,
+    "de": 14
+  },
+  "faixa": "verde",
+  "urgencia": 15,
+  "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-10",
+    "dias_aberta": 0,
+    "prazo_dias": 30,
+    "vence_em": "2026-09-09"
+  },
+  "acao": {
+    "o_que": "Entrar no leilão com as frases que a cidade digita — a lista está na praça",
+    "prazo": "30 dias",
+    "dono": "franqueado",
+    "custo": "verba de mídia",
+    "por_causa_de": "silencio"
+  },
+  "gatilhos": [
+    {
+      "peso": 15,
+      "titulo": "Silêncio publicitário com leilão cheio",
+      "chave": "silencio",
+      "fato": "22 anúncios no ar de 16 anunciantes, e nenhum é da rede",
+      "fonte": "dados/serie/captacao.jsonl"
+    }
+  ],
+  "quem_avanca": null,
+  "o_que_mudou": {
+    "local_id": "ortho_palmas",
+    "nome": "OrthoDontic",
+    "proprio": true,
+    "aparelho": true,
+    "de": "2026-08-08",
+    "ate": "2026-08-10",
+    "dias": 2,
+    "antes": 304,
+    "agora": 305,
+    "delta": 1,
+    "nota_antes": 5,
+    "nota_agora": 5,
+    "ritmo_do_periodo": 15.2,
+    "eventos": [
+      "ganhou 1 avaliações em 2 dia(s)"
+    ],
+    "aviso": "período de só 2 dia(s) — o delta ainda diz pouco; a leitura engorda a cada medição"
+  },
+  "sem_resposta": {
+    "abertas": 1,
+    "com_texto": 1,
+    "itens": [
+      {
+        "nota": 3,
+        "data": "2025-09-24",
+        "texto": "Tem muitas pontos a melhorar.",
+        "tem_texto": true
+      }
+    ]
+  },
+  "voz_do_paciente": [
+    {
+      "o_que_e": "Explica o que vai fazer, antes de fazer",
+      "pct": 5.3
+    },
+    {
+      "o_que_e": "Atende na hora marcada",
+      "pct": 1.8
+    },
+    {
+      "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
+      "pct": 2.2
+    },
+    {
+      "o_que_e": "Cuida de quem tem medo de dentista",
+      "pct": 0.0
+    },
+    {
+      "o_que_e": "Resolve no mesmo dia",
+      "pct": 0.4
+    },
+    {
+      "o_que_e": "Sabe atender criança",
+      "pct": 1.3
+    },
+    {
+      "o_que_e": "Continua presente depois que vendeu",
+      "pct": 2.2
+    },
+    {
+      "o_que_e": "Tem profissional que o paciente chama pelo nome",
+      "pct": 6.6
+    }
+  ],
+  "rival": {
+    "comparados": [
+      "ImplantCenter | Clínica Odontológica e Invisalign",
+      "Vivati Odontologia"
+    ],
+    "vantagens_deles": [
+      {
+        "eixo": "pos_venda",
+        "o_que_e": "Continua presente depois que vendeu",
+        "quem": "ImplantCenter | Clínica Odontológica e Invisalign",
+        "eles": 13.2,
+        "nos": 2.2,
+        "razao": 6.0
+      },
+      {
+        "eixo": "gente_com_nome",
+        "o_que_e": "Tem profissional que o paciente chama pelo nome",
+        "quem": "ImplantCenter | Clínica Odontológica e Invisalign",
+        "eles": 23.1,
+        "nos": 6.6,
+        "razao": 3.5
+      },
+      {
+        "eixo": "trata_crianca",
+        "o_que_e": "Sabe atender criança",
+        "quem": "Vivati Odontologia",
+        "eles": 2.4,
+        "nos": 1.3,
+        "razao": 1.8
+      }
+    ],
+    "fora": [
+      {
+        "nome": "DenteClin - Clínicas Odontológicas - JK | Palmas",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 78 avaliações citam aparelho"
+      },
+      {
+        "nome": "Centro Integrado de Odontologia - CIOT",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 122 avaliações citam aparelho"
+      },
+      {
+        "nome": "Clínica Goen Odontologia | Implante Dentário e Dentista em Palmas",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 113 avaliações citam aparelho"
+      },
+      {
+        "nome": "Dente Mais",
+        "fora": true,
+        "por_que_fora": "zona cinzenta: 4 de 129 avaliações citam aparelho (3%) — faz aparelho, mas não é o negócio principal"
+      },
+      {
+        "nome": "Inovar - Rad Odonto",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 75 avaliações citam aparelho"
+      },
+      {
+        "nome": "AmorSaúde Palmas",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 108 avaliações citam aparelho"
+      },
+      {
+        "nome": "CLIO - Clínica de Imagem Odontológica",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 99 avaliações citam aparelho"
+      },
+      {
+        "nome": "Clínicas Zanetti - Odontologia Estética e Reabilitação Oral | Palmas | Tocantins TO |",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 130 avaliações citam aparelho"
+      },
+      {
+        "nome": "Clínica Hardencor Odontologia",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 122 avaliações citam aparelho"
+      },
+      {
+        "nome": "Dra. Luiza Diel - Odontopediatra",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 76 avaliações citam aparelho"
+      },
+      {
+        "nome": "Palmas Bucal - Consultório Odontológico",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 103 avaliações citam aparelho"
+      }
+    ],
+    "sem_comparacao_porque": null
+  },
+  "eventos": [
+    {
+      "data": "2026-08-10",
+      "tipo": "contador",
+      "quem": "nossa",
+      "texto": "ganhou 1 avaliações (304 → 305)",
+      "fonte": "dados/serie/places.jsonl"
+    },
+    {
+      "data": "2026-08-10",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Silêncio publicitário com leilão cheio",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    }
+  ]
+}

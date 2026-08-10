@@ -1,0 +1,174 @@
+{
+  "local_id": "ortho_centro_ldn",
+  "praca_id": "londrina",
+  "rotulo": "PR · Londrina",
+  "unidade": "OrthoDontic Centro",
+  "cabecalho": {
+    "nota": 3.8,
+    "avaliacoes": 76,
+    "ritmo": 0.8,
+    "meses_seguidos": 2,
+    "posicao": 23,
+    "de": 24
+  },
+  "faixa": "vermelha",
+  "urgencia": 65,
+  "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-10",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-24"
+  },
+  "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+  },
+  "gatilhos": [
+    {
+      "peso": 30,
+      "titulo": "O contador de avaliações parou",
+      "chave": "parada",
+      "fato": "apenas 2 mês(es) seguidos com movimento acima do típico da própria unidade; o ritmo medido é 0.8 avaliações/mês",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "peso": 20,
+      "titulo": "Está na metade de baixo da própria praça",
+      "chave": "posicao",
+      "fato": "23º lugar de 24 clínicas medidas na praça",
+      "fonte": "dados/portal/rede_cruzamento.json"
+    },
+    {
+      "peso": 15,
+      "titulo": "Nota abaixo da mediana da praça",
+      "chave": "nota",
+      "fato": "nota 3.8 contra mediana 5.0 das 24 clínicas medidas na praça",
+      "fonte": "dados/serie/places.jsonl"
+    }
+  ],
+  "quem_avanca": null,
+  "o_que_mudou": {
+    "local_id": "ortho_centro_ldn",
+    "nome": "OrthoDontic Centro",
+    "proprio": true,
+    "aparelho": true,
+    "de": "2026-08-07",
+    "ate": "2026-08-10",
+    "dias": 3,
+    "antes": 76,
+    "agora": 76,
+    "delta": 0,
+    "nota_antes": 3.8,
+    "nota_agora": 3.8,
+    "ritmo_do_periodo": 0.0,
+    "eventos": [],
+    "aviso": "período de só 3 dia(s) — o delta ainda diz pouco; a leitura engorda a cada medição"
+  },
+  "sem_resposta": {
+    "abertas": 10,
+    "com_texto": 8,
+    "itens": [
+      {
+        "nota": 1,
+        "data": "2026-07-10",
+        "texto": "Pessimo atendimento, tanto na recepção como no financeiro ! So prestam bom atendimento na hora de contratar",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-02-04",
+        "texto": "Não tem um telefone pra contato, cada mês enviavam mensagem de um número diferente. Ninguem atende, ninguem informa. Um desgaste absurdo.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-01-29",
+        "texto": "Atendimento horrível não indico pra ninguém,falta de responsabilidade com horários,marca e não registra no sistema. Não tem um sistema eficaz no recebimento dos pagamentos. Recebe e não marca,depois fica cobrando e ainda pede pra mostrar o comprovante.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-12-17",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 1,
+        "data": "2025-12-09",
+        "texto": "Péssima experiência minha filha fez um tratamento colocou aparelho ficou dois anos com o aparelho o vencimento era todo dia 15 porém no quinto dia útil já está sendo pago todo mês a secretária manda mensagem cobrando o que já foi pago agora minha filha tirou o aparelho fixo e colocou o móvel que foi pago junto com o outro no boleto porém no sábado ela foi no shopping e tirou pra comer e esqueceu em cima da mesa falei com a secretária que é sempre bem antipática pra fazer outro e parcelar no boleto porque não trabalho com cartão de crédito inclusive foi uma informação que passei no início do tratamento e me disseram que não tinha problema tudo seria feito no boleto agora não pode ser estou decepcionada com a clínica sem o uso desse aparelho o tratamento vai ser perdido é uma forma de dificultar as coisas para o cliente quando querem vender é uma coisa depois é outra 😔o atendimento da recepção é péssimo não vou recomendar a ninguém",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-06-02",
+        "texto": "Ninguém atende no telefone fixo",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2024-07-06",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 1,
+        "data": "2019-07-05",
+        "texto": "Alguém pode me passar o telefonede contato  correto pois o postado não tem existe.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2018-08-10",
+        "texto": "Péssimo!",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2018-05-29",
+        "texto": "Além de ter um péssimo e demorado atendimento, nao fazem a manutenção direito, só querem seu dinheiro. Dentistas similares a manicure, só conversas paralelas. O contrato é de 3 anos sem choro nem vela, se estão procurando coisa barata e de qualidade não é o lugar correto!!",
+        "tem_texto": true
+      }
+    ]
+  },
+  "voz_do_paciente": null,
+  "rival": {
+    "comparados": [],
+    "vantagens_deles": [],
+    "fora": [],
+    "sem_comparacao_porque": "só 59 avaliações com texto — abaixo do mínimo de 60"
+  },
+  "eventos": [
+    {
+      "data": "2026-08-10",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: O contador de avaliações parou",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-10",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Está na metade de baixo da própria praça",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-10",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Nota abaixo da mediana da praça",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-07-10",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 1★: “Pessimo atendimento, tanto na recepção como no financeiro ! So prestam bom atendimento na …” · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    }
+  ]
+}

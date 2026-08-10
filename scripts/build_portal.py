@@ -700,6 +700,57 @@ def main():
         "presenca_na_busca": {k: dict(v) for k, v in fam.items()},
     }))
 
+    # ---------- as páginas de clínica ----------
+    #
+    # O coração do portal (PROJETO §3): UMA página por unidade, composta
+    # aqui no build juntando fila + timeline + caixa + rival + o que mudou
+    # por local_id — o casco só desenha. A voz já sai com o rótulo de
+    # balcão resolvido: chave interna nunca chega na tela.
+    (OUT/"clinicas").mkdir(parents=True, exist_ok=True)
+    _tl = carrega(OUT, "timeline")
+    _cx = carrega(OUT, "caixa_de_respostas")
+    _rv = carrega(OUT, "rival")
+    _md = carrega(OUT, "o_que_mudou")
+    _fl = carrega(OUT, "fila")
+    _eixos = {e["chave"]: e["o_que_e"] for e in _rv.get("eixos", [])}
+    _cx_por = {u.get("local_id"): u for u in _cx.get("unidades", [])}
+    _rv_por = {p.get("local_id"): p for p in _rv.get("pracas", [])}
+    _fl_por = {x["local_id"]: x for x in _fl.get("fila", [])}
+    _md_por = {}
+    for _pd in _md.get("pracas", {}).values():
+        for _ln in _pd.get("nossas", []):
+            _md_por[_ln["local_id"]] = dict(_ln, dias=_pd.get("dias_medidos"),
+                                            aviso=_pd.get("aviso"))
+    n_cli = 0
+    for l in _tl.get("lojas", []):
+        lid = l["local_id"]
+        cx = _cx_por.get(lid) or {}
+        rv = _rv_por.get(lid) or {}
+        fl = _fl_por.get(lid) or {}
+        voz = ([{"o_que_e": _eixos.get(k, k), "pct": v}
+                for k, v in (rv.get("nosso_perfil") or {}).items()]
+               if rv.get("nosso_perfil") else None)
+        escritos.append(escreve(f"clinicas/{lid}", {
+            "local_id": lid, "praca_id": l.get("praca_id"),
+            "rotulo": l.get("rotulo"), "unidade": l.get("unidade"),
+            "cabecalho": l.get("cabecalho"),
+            "faixa": fl.get("faixa"), "urgencia": fl.get("urgencia"),
+            "tarefa": fl.get("tarefa"), "acao": fl.get("acao"),
+            "gatilhos": fl.get("gatilhos") or [],
+            "quem_avanca": fl.get("quem_avanca"),
+            "o_que_mudou": _md_por.get(lid),
+            "sem_resposta": {"abertas": cx.get("abertas"),
+                             "com_texto": cx.get("com_texto"),
+                             "itens": cx.get("itens") or []},
+            "voz_do_paciente": voz,
+            "rival": {"comparados": rv.get("rivais_comparados") or [],
+                      "vantagens_deles": rv.get("vantagens_deles") or [],
+                      "fora": rv.get("rivais_fora") or [],
+                      "sem_comparacao_porque": rv.get("sem_comparacao_porque")},
+            "eventos": l.get("eventos") or [],
+        }))
+        n_cli += 1
+
     # ---------- manifest, POR ÚLTIMO ----------
     # Ele é o índice que o casco lê antes de qualquer outra coisa: diz quais
     # telas existem e onde estão. Escrever no começo era mentira — listava
@@ -731,6 +782,7 @@ def main():
             "rede": [x for x in ("fila", "timeline", "caixa_de_respostas", "padroes", "o_que_mudou", "rede_inteira", "rival", "voz_da_cidade", "rede", "rede_cruzamento", "achados",
                                  "corretor", "evidencias", "radar", "funil_nacional")
                      if (OUT/f"{x}.json").exists()],
+            "clinicas": presentes("clinicas"),
             "pracas": presentes("pracas"),
             "captacao": presentes("captacao"),
             "planos": presentes("planos"),
