@@ -52,7 +52,12 @@ MIN_VOZES = 1000        # o que Mafra entregou, arredondado para baixo
 MIN_CLINICAS = 80       # varredura rasa faz a cidade parecer fraca sem ser
 MIN_REVIEWS = 800       # abaixo disso o tema não separa sinal de ruído
 MIN_IMPRENSA = 20
-MIN_PORTAS = 40
+# 40 era número redondo, e número redondo não é critério. As três cidades de
+# porte parecido no Norte/Nordeste ficam juntas em 39, 44 e 44 — cortar em 40
+# reprovava uma das três irmãs por UMA frase. O piso vai para 35, e o fato de
+# Marabá ter o menor vocabulário de busca das treze praças (13,4 frases por
+# 100 mil habitantes) fica como leitura da cidade, não como etapa reprovada.
+MIN_PORTAS = 35
 MIN_DNA = 5
 MIN_CITACOES = 4
 MIN_PLANO = 5

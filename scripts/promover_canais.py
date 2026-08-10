@@ -66,6 +66,11 @@ REJEITAR = {
     ("imperatriz", "imperatriz_natal"): "loja de uma vendedora; não é canal da cidade",
     ("feira", "prefsantanaba"): "Prefeitura de Santana/BA, outro município",
     ("feira", "santacasafsa"): "hospital local — é da cidade, mas não é voz_da_cidade",
+    # homônimos que a busca na web trouxe e NÃO entraram
+    ("juazeiro_do_norte", "prefeituradejuazeiro"): "é Juazeiro/BA, não Juazeiro do Norte/CE",
+    ("maraba", "prefeituramarabapaulista"): "é Marabá Paulista, em São Paulo",
+    ("rio_branco", "prefeiturariobrancomt"): "é Rio Branco do Mato Grosso",
+    ("juazeiro_do_norte", "achadinhosde.promo"): "conta nacional de promoção, não da cidade",
 }
 
 # ------------------------------------------------- o que entra, e de onde vem
@@ -114,6 +119,71 @@ PROMOVER = [
     ("maraba", "prefeitura", "web", "maraba.pa.gov.br", "dados/serie/imprensa.jsonl"),
     ("parauapebas", "prefeitura", "web", "parauapebas.pa.gov.br", "dados/serie/imprensa.jsonl"),
     ("parauapebas", "imprensa",   "web", "zedudu.com.br",         "dados/serie/imprensa.jsonl"),
+]
+
+# ------------------------------------------- achados em busca na web, ago/2026
+#
+# A busca automática do Instagram devolveu lista VAZIA nestas praças, e o
+# garimpo no disco esgotou o que havia. Estes vieram de busca na web, um a um,
+# com o número de seguidores conferido na própria página do perfil.
+#
+# A busca trouxe a armadilha de homônimo de novo, e três vezes:
+#   @prefeituradejuazeiro      é Juazeiro/BA, não Juazeiro do NORTE/CE
+#   @prefeituramarabapaulista  é Marabá Paulista/SP
+#   @prefeiturariobrancomt     é Rio Branco do MATO GROSSO
+# Nenhum entrou. O certo de cada praça está abaixo.
+#
+# E um caso diferente, que também ficou de fora: @achadinhosde.promo tem 511 mil
+# seguidores e apareceu na busca de Juazeiro, mas é conta NACIONAL de promoção.
+# Seguidor grande não faz canal ser local.
+DA_WEB = [
+    # CE · Juazeiro do Norte
+    ("juazeiro_do_norte", "prefeitura",    "instagram", "prefjuazeirodonorte", 93000),
+    ("juazeiro_do_norte", "voz_da_cidade", "instagram", "juazeirodonorte.ce", 315000),
+    ("juazeiro_do_norte", "voz_da_cidade", "instagram", "juazeiroemfotos", 338000),
+    ("juazeiro_do_norte", "imprensa",      "instagram", "jornaldocariri", 19000),
+    ("juazeiro_do_norte", "humor",         "instagram", "juazeiromemes", None),
+    ("juazeiro_do_norte", "gastronomia",   "instagram", "poraoburger", 165000),
+    ("juazeiro_do_norte", "gastronomia",   "instagram", "monsieur.creme", 34000),
+    ("juazeiro_do_norte", "gastronomia",   "instagram", "pointdacomidacaseiraoficiall", 32000),
+
+    # PA · Marabá
+    ("maraba", "prefeitura",    "instagram", "prefeituramaraba", 139000),
+    ("maraba", "voz_da_cidade", "instagram", "notificamaraba", 146000),
+    ("maraba", "voz_da_cidade", "instagram", "marabaurgente", 94000),
+    ("maraba", "voz_da_cidade", "instagram", "bodimdemaraba", 115000),
+    ("maraba", "imprensa",      "instagram", "tvcorreiomaraba", 29000),
+    # página de torcedor do Águia, não veículo de imprensa
+    ("maraba", "esporte_base",  "instagram", "aguia_de_mab_inf", 5843),
+
+    # PA · Parauapebas
+    ("parauapebas", "voz_da_cidade", "instagram", "parauapebas", 227000),
+    ("parauapebas", "imprensa",      "instagram", "pebasnoticias1", 100000),
+    ("parauapebas", "imprensa",      "instagram", "noticiasdeparauapebas", 75000),
+    ("parauapebas", "prefeitura",    "instagram", "camaradeparauapebas", 16000),
+    ("parauapebas", "gastronomia",   "instagram", "containers.pbs", 5722),
+    ("parauapebas", "jovem",         "instagram", "uepa.parauapebas", 6830),
+
+    # PA · Marabá (segunda rodada)
+    ("maraba", "jovem",         "instagram", "unamamaraba", 21000),
+    # @aguiademarabafc é o handle do X, não do Instagram. Eu tinha escrito o
+    # do X vindo de um artigo da Wikipédia — handle não conferido é handle
+    # inventado, e inventado entra na base como fato.
+    ("maraba", "esporte_base",  "instagram", "aguiademaraba", 150000),
+
+    # MA · Imperatriz
+    ("imperatriz", "prefeitura",    "instagram", "prefeituradeimperatriz", 149000),
+    ("imperatriz", "voz_da_cidade", "instagram", "imperatrizonline", 379000),
+    ("imperatriz", "imprensa",      "instagram", "imperatriznoticias", 59000),
+    ("imperatriz", "imprensa",      "instagram", "jornalimperatriz", 16000),
+    ("imperatriz", "esporte_base",  "instagram", "escolaoficialgremio_itz", None),
+
+    # AC · Rio Branco
+    ("rio_branco", "prefeitura",    "instagram", "prefriobranco", 62000),
+    ("rio_branco", "imprensa",      "instagram", "alertacidadeac", 129000),
+    ("rio_branco", "imprensa",      "instagram", "acreemnoticia", 27000),
+    ("rio_branco", "voz_da_cidade", "instagram", "alertariobranco", None),
+    ("rio_branco", "imprensa",      "instagram", "cidadeacnews", 4620),
 ]
 
 
@@ -178,6 +248,9 @@ def main():
 
     for praca, tipo, plat, handle, fonte in PROMOVER:
         junta(praca, tipo, plat, handle, fonte)
+
+    for praca, tipo, plat, handle, seg in DA_WEB:
+        junta(praca, tipo, plat, handle, "busca na web · ago/2026", seg=seg)
 
     # Percorre a pasta de IDENTIDADE, não as praças que já têm linha em
     # canais.jsonl. Cuiabá tem zero linhas — era a pior praça da ETAPA 2 — e

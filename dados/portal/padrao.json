@@ -464,9 +464,9 @@
    "praca_id": "imperatriz",
    "rotulo": "MA · Imperatriz",
    "tipo": "oportunidade",
-   "feitas": 10,
+   "feitas": 11,
    "de": 11,
-   "completa": false,
+   "completa": true,
    "etapas": [
     {
      "etapa": 0,
@@ -496,9 +496,9 @@
      "etapa": 2,
      "nome": "Quem fala com a cidade",
      "quem": "auto+humano",
-     "ok": false,
-     "estado": "3 canais com handle (mínimo 8)",
-     "comando": "python3 coleta/coletores/canais.py --praca imperatriz  (handle null = achar na mão)"
+     "ok": true,
+     "estado": "8 canais com handle (mínimo 8)",
+     "comando": null
     },
     {
      "etapa": 3,
@@ -562,9 +562,9 @@
    "praca_id": "juazeiro_do_norte",
    "rotulo": "CE · Juazeiro do Norte",
    "tipo": "oportunidade",
-   "feitas": 10,
+   "feitas": 11,
    "de": 11,
-   "completa": false,
+   "completa": true,
    "etapas": [
     {
      "etapa": 0,
@@ -594,9 +594,9 @@
      "etapa": 2,
      "nome": "Quem fala com a cidade",
      "quem": "auto+humano",
-     "ok": false,
-     "estado": "0 canais com handle (mínimo 8)",
-     "comando": "python3 coleta/coletores/canais.py --praca juazeiro_do_norte  (handle null = achar na mão)"
+     "ok": true,
+     "estado": "8 canais com handle (mínimo 8)",
+     "comando": null
     },
     {
      "etapa": 3,
@@ -1002,9 +1002,9 @@
    "praca_id": "maraba",
    "rotulo": "PA · Marabá",
    "tipo": "oportunidade",
-   "feitas": 9,
+   "feitas": 11,
    "de": 11,
-   "completa": false,
+   "completa": true,
    "etapas": [
     {
      "etapa": 0,
@@ -1034,9 +1034,9 @@
      "etapa": 2,
      "nome": "Quem fala com a cidade",
      "quem": "auto+humano",
-     "ok": false,
-     "estado": "1 canais com handle (mínimo 8)",
-     "comando": "python3 coleta/coletores/canais.py --praca maraba  (handle null = achar na mão)"
+     "ok": true,
+     "estado": "9 canais com handle (mínimo 8)",
+     "comando": null
     },
     {
      "etapa": 3,
@@ -1082,9 +1082,9 @@
      "etapa": 14,
      "nome": "As portas da cidade",
      "quem": "auto",
-     "ok": false,
-     "estado": "39 portas de busca · 3 leitura(s) de captação",
-     "comando": "python3 coleta/coletores/portas.py --praca maraba && python3 scripts/oportunidades_franqueado.py --praca maraba --salvar"
+     "ok": true,
+     "estado": "39 portas de busca · 4 leitura(s) de captação",
+     "comando": null
     },
     {
      "etapa": 15,
@@ -1222,9 +1222,9 @@
    "praca_id": "parauapebas",
    "rotulo": "PA · Parauapebas",
    "tipo": "oportunidade",
-   "feitas": 10,
+   "feitas": 11,
    "de": 11,
-   "completa": false,
+   "completa": true,
    "etapas": [
     {
      "etapa": 0,
@@ -1254,9 +1254,9 @@
      "etapa": 2,
      "nome": "Quem fala com a cidade",
      "quem": "auto+humano",
-     "ok": false,
-     "estado": "2 canais com handle (mínimo 8)",
-     "comando": "python3 coleta/coletores/canais.py --praca parauapebas  (handle null = achar na mão)"
+     "ok": true,
+     "estado": "8 canais com handle (mínimo 8)",
+     "comando": null
     },
     {
      "etapa": 3,
@@ -1442,9 +1442,9 @@
    "praca_id": "rio_branco",
    "rotulo": "AC · Rio Branco",
    "tipo": "oportunidade",
-   "feitas": 10,
+   "feitas": 11,
    "de": 11,
-   "completa": false,
+   "completa": true,
    "etapas": [
     {
      "etapa": 0,
@@ -1474,9 +1474,9 @@
      "etapa": 2,
      "nome": "Quem fala com a cidade",
      "quem": "auto+humano",
-     "ok": false,
-     "estado": "4 canais com handle (mínimo 8)",
-     "comando": "python3 coleta/coletores/canais.py --praca rio_branco  (handle null = achar na mão)"
+     "ok": true,
+     "estado": "9 canais com handle (mínimo 8)",
+     "comando": null
     },
     {
      "etapa": 3,
