@@ -33,7 +33,8 @@ A REDE                    mapa · alertas nas fichas · Reclame Aqui
 AS 10 LOJAS ACOMPANHADAS  o que mudou · onde agir · avaliações sem resposta ·
                           concorrentes de ortodontia · o que faz crescer ·
                           a vida de cada loja · quem mantém o ritmo
-EXPANSÃO                  onde abrir a próxima · as praças estudadas
+EXPANSÃO                  as melhores cidades do Brasil · onde abrir a
+                          próxima · as praças estudadas
 ARQUIVO                   (gaveta recolhida) voz da cidade · busca · cadastro ·
                           canais · regras · planos · evidências
 ```
@@ -97,6 +98,14 @@ Cada card leva à sua tela (campo `tela`). As mais importantes:
   "NÃO SEPARA" grande, depois `conclusao`, depois a tabela `lojas[]`.
 - **rede_inteira** (`rede_inteira.json`) — `alertas[]` por gravidade com
   `por_que` e `de_quem_e`; `por_uf[]` casa com o mapa.
+- **funil** (`funil_nacional.json`) — o funil de expansão em duas partes:
+  1) `candidatas[]` — o top 50 do Brasil, tabela fina com rótulo pronto,
+  população, alvos, renda relativa e score; `ja_estudada: true` ganha um
+  selo (liga com o radar). O `metodo` aparece aberto (score + régua
+  hab/unidade da rede) — a régua é o argumento, não rodapé. 2)
+  `onde_cabem_mais[]` — as NOSSAS cidades com folga de 2+ unidades pela
+  régua da própria rede, com a `leitura` pronta. `o_que_isso_nao_ve`
+  fecha a tela: score é prioridade, não promessa.
 - **radar** (`radar.json` + `oportunidade/*.json`) — as cidades de
   expansão. Sempre com a frase: estudo de oportunidade, fora das contas
   da rede.

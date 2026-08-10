@@ -562,6 +562,20 @@ def main():
              f"{cruz.get('campanha', 0)} só tiveram picos de campanha.",
              "constancia", "lojas", bool(cruz.get("unidades"))),
         # ----------------------------------------------------------- EXPANSÃO
+        card("funil", "As melhores cidades do Brasil",
+             "Onde vale estudar a próxima cidade?",
+             len(_json("funil_nacional").get("candidatas", [])),
+             (lambda fn: (f"candidatas rankeadas entre os 5.570 municípios "
+                          f"(população-alvo × renda, IBGE)"
+                          + (f" — a primeira é "
+                             f"{fn['candidatas'][0]['rotulo']}."
+                             if fn.get("candidatas") else ".")
+                          + (f" E pela régua da própria rede, "
+                             f"{fn['onde_cabem_mais'][0]['rotulo']} comporta "
+                             f"mais {fn['onde_cabem_mais'][0]['folga']} "
+                             f"unidades." if fn.get("onde_cabem_mais") else "")
+                          ))(_json("funil_nacional")),
+             "funil", "expansao", (OUT/"funil_nacional.json").exists()),
         card("radar", "Onde abrir a próxima franquia",
              "Quais cidades estão prontas para receber uma unidade?",
              len(rad.get("oportunidades", [])),
@@ -715,7 +729,7 @@ def main():
         # o índice de verdade: o que existe, agora, nesta pasta
         "arquivos": {
             "rede": [x for x in ("fila", "timeline", "caixa_de_respostas", "padroes", "o_que_mudou", "rede_inteira", "rival", "voz_da_cidade", "rede", "rede_cruzamento", "achados",
-                                 "corretor", "evidencias", "radar")
+                                 "corretor", "evidencias", "radar", "funil_nacional")
                      if (OUT/f"{x}.json").exists()],
             "pracas": presentes("pracas"),
             "captacao": presentes("captacao"),
