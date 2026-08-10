@@ -125,4 +125,14 @@ padrões → caixa → padrao → build. Períodos curtos são declarados na tel
   o conserto é separar as lojas (identidade + série), nunca afrouxar o guarda.
 - **O casco fala língua de balcão.** Palavras internas (casco, escada, ponta,
   andar, régua) nunca aparecem na tela. A home é `franqueadora.json → cards`
-  (pergunta + número + frase, 4 grupos); prompt vigente: `PROMPT-CASCO-V5.md`.
+  (pergunta + número + frase, 4 grupos); prompt vigente: `PROMPT-CASCO-V6.md`.
+
+- **Design se faz no Claude Design — aqui não.** Este repositório guarda a
+  referência aprovada (`referencia-aprovada/OrthoDontic Intelligence.dc.html`,
+  o PRIMEIRO design), os dados e o prompt. Nenhum HTML de portal é escrito
+  aqui. Quando o zip voltar do Design, o trabalho é conferir a fiação dos
+  dados — nunca o visual.
+
+- **Todo arquivo criado ou mudado vai para o chat, sempre.** Commit e push
+  não bastam: o arquivo tem de chegar na mão, na conversa, no mesmo turno.
+  Isso vale para prompt, payload, relatório e captura de tela.
