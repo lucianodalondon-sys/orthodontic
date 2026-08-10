@@ -211,6 +211,38 @@ def main():
             print(f"        {v['quem'][:44]}: {v['eles']}% contra {v['nos']}% nossos "
                   f"({v['razao']}x)")
 
+    # ------------------------------------------------------ a leitura de REDE
+    #
+    # Perder num eixo numa praça é problema daquela unidade. Perder no MESMO
+    # eixo em cinco praças de cinco estados é decisão de franqueadora: vira
+    # treinamento, roteiro de atendimento, protocolo — não visita.
+    rede = []
+    for k, (nome, _) in EIXOS.items():
+        onde = [(x["rotulo"], v) for x in saida
+                for v in x["vantagens_deles"] if v["eixo"] == k]
+        if not onde:
+            continue
+        nossos = [x["nosso_perfil"][k] for x in saida]
+        rede.append({
+            "eixo": k, "o_que_e": nome,
+            "perde_em": len(onde), "de": len(saida),
+            "pior_razao": max(v["razao"] for _, v in onde),
+            "nosso_pior": min(nossos), "nosso_melhor": max(nossos),
+            "pracas": [{"rotulo": r, "razao": v["razao"], "quem": v["quem"]}
+                       for r, v in onde],
+            "de_quem_e_a_decisao": ("franqueadora" if len(onde) >= len(saida)-1
+                                    else "unidade"),
+        })
+    rede.sort(key=lambda x: (-x["perde_em"], -x["pior_razao"]))
+
+    print(f"\n{'='*80}\n  O PADRÃO DA REDE — onde perdemos em QUANTAS praças"
+          f"\n{'='*80}\n")
+    for r in rede:
+        dono = ("← DECISÃO DE FRANQUEADORA" if r["de_quem_e_a_decisao"] == "franqueadora"
+                else "")
+        print(f"  {r['perde_em']}/{r['de']}  {r['o_que_e']:44s} até {r['pior_razao']}x  {dono}")
+        print(f"        nós vamos de {r['nosso_pior']}% a {r['nosso_melhor']}% entre as praças")
+
     if a.salvar:
         PORTAL.mkdir(parents=True, exist_ok=True)
         (PORTAL/"rival.json").write_text(json.dumps({
@@ -221,6 +253,7 @@ def main():
                            "o paciente dele escolheu escrever.",
             "corte_amostra": MIN_AVALIACOES, "corte_diferenca": MIN_DIFERENCA,
             "eixos": [{"chave": k, "o_que_e": v[0]} for k, v in EIXOS.items()],
+            "padrao_da_rede": rede,
             "pracas": saida,
         }, ensure_ascii=False, indent=1), encoding="utf-8")
         print(f"\n  → dados/portal/rival.json ({len(saida)} praças)")
