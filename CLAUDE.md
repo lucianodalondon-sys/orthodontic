@@ -42,8 +42,21 @@ script cobra. Quando os dois divergirem, o script é a verdade.
 - **Estado vazio é conteúdo.** Ferramenta sem dado aparece apagada com o
   motivo. Esconder o que falta é o que faz a diretoria achar que medimos
   tudo.
-- **Nada de dado interno.** Nenhum número vem do CRM da rede. Toda tela que
-  fala de desempenho precisa dizer isso.
+- **ODONTOLOGIA NÃO É ORTODONTIA.** O negócio da OrthoDontic é **aparelho**.
+  Universidade que faz limpeza, extração e canal de graça **não** disputa
+  paciente de aparelho — é outro tratamento, outro ticket, outra decisão.
+  Rede de implante idem. Só conta como concorrência do mesmo produto quando
+  o texto diz aparelho, ortodontia, bráquete, alinhador ou contenção.
+  ⚠ Uma exceção importante: **`dentista` importa como PORTA**, não como
+  concorrente. O paciente que digita "dentista" é quem marca a avaliação e
+  sai com aparelho. As duas coisas convivem e não podem ser fundidas.
+
+- **Nada de dado interno, e isso é permanente.** O portal é feito
+  **inteiramente com informação externa**. Não temos CRM, contrato,
+  faturamento, lead, nem o franqueado ao telefone — e não vamos ter. Campo
+  que só a rede pode responder não é pendência: é **teto do produto**, e tem
+  de aparecer na tela declarado como teto (`scripts/pontos_cegos.py`).
+  Nunca escreva ferramenta que espere alguém de dentro preencher.
 
 ## Onde as coisas moram
 
