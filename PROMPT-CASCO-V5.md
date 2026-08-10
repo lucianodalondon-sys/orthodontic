@@ -32,7 +32,7 @@ também (`tokens/`, `assets/`, `guidelines/`).
 A REDE                    mapa · alertas nas fichas · Reclame Aqui
 AS 10 LOJAS ACOMPANHADAS  o que mudou · onde agir · avaliações sem resposta ·
                           concorrentes de ortodontia · o que faz crescer ·
-                          quem mantém o ritmo
+                          a vida de cada loja · quem mantém o ritmo
 EXPANSÃO                  onde abrir a próxima · as praças estudadas
 ARQUIVO                   (gaveta recolhida) voz da cidade · busca · cadastro ·
                           canais · regras · planos · evidências
@@ -69,8 +69,19 @@ Cada card leva à sua tela (campo `tela`). As mais importantes:
   mapa`. Estado sem unidade fica só contorno. Aqui dentro, não na home.
 - **fila** (`fila.json`) — a lista de lojas por urgência. Cada linha:
   faixa (dot), rótulo pronto (`rotulo` + `unidade_curta` se não-nulo),
-  gatilhos com fonte, ação com prazo·dono·custo. O `ciclo` nasce nulo:
-  desenhe travessões com "começa na próxima coleta".
+  gatilhos com fonte, ação com prazo·dono·custo, e a **`tarefa`** — o
+  estado dela: `aberta` (dentro do prazo) ou `vencida` (chip discreto em
+  destaque; `dias_aberta` e `vence_em` vêm prontos). `tarefa: null` →
+  sem tarefa, loja saudável. No fim da tela, `tarefas_resolvidas[]`: os
+  gatilhos que SUMIRAM numa medição nova — desenhe como lista de vitórias
+  ("o dado externo fechou o loop"), é a prova de resultado do portal.
+- **timeline** (`timeline.json`) — a vida de cada loja, uma "página de
+  conta" por `local_id`. Cabeçalho fixo (`rotulo`, `unidade`, nota,
+  avaliações, ritmo, posição, `tarefa` + `faixa`), depois `eventos[]` em
+  ordem cronológica inversa: cada evento tem `data`, `quem` (nossa ·
+  paciente · fila · rival) e `texto` pronto. Desenhe como linha do tempo
+  vertical fina; o `quem` vira um dot/etiqueta por cor discreta. Avaliação
+  "SEM RESPOSTA" ganha destaque. `sem_resposta` mostra o saldo da loja.
 - **rival** (`rival.json`) — POR LOJA. Cada loja: OU `vantagens_deles[]`
   OU `sem_comparacao_porque` (linha apagada com o motivo). Os
   `rivais_fora[]` aparecem numa lista discreta "fora da comparação — outro

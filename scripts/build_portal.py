@@ -547,6 +547,13 @@ def main():
              "as lojas que crescem é manter viva a rotina de pedir avaliação "
              "no balcão — e isso é treinável.",
              "padroes", "lojas", (OUT/"padroes.json").exists()),
+        card("timeline", "A vida de cada loja",
+             "O que aconteceu em cada loja, em ordem?",
+             sum(len(l.get("eventos", [])) for l in _json("timeline").get("lojas", [])),
+             "eventos observáveis — avaliações, contadores, alertas e rivais "
+             "de aparelho — numa linha do tempo por loja, com o estado da "
+             "tarefa de cada uma.",
+             "timeline", "lojas", (OUT/"timeline.json").exists()),
         card("constancia", "Quem mantém o ritmo",
              "Quais lojas seguem ganhando avaliações todo mês?",
              cruz.get("sustentam", 0),
@@ -707,7 +714,7 @@ def main():
                    for p in PRACAS],
         # o índice de verdade: o que existe, agora, nesta pasta
         "arquivos": {
-            "rede": [x for x in ("fila", "caixa_de_respostas", "padroes", "o_que_mudou", "rede_inteira", "rival", "voz_da_cidade", "rede", "rede_cruzamento", "achados",
+            "rede": [x for x in ("fila", "timeline", "caixa_de_respostas", "padroes", "o_que_mudou", "rede_inteira", "rival", "voz_da_cidade", "rede", "rede_cruzamento", "achados",
                                  "corretor", "evidencias", "radar")
                      if (OUT/f"{x}.json").exists()],
             "pracas": presentes("pracas"),

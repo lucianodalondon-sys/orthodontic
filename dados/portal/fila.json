@@ -99,14 +99,14 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "ciclo": {
-    "alertado_em": "2026-08-10",
-    "acao_confirmada": null,
-    "confirmada_em": null,
-    "resultado": null,
-    "medido_em": null
-   },
-   "pos": 1
+   "pos": 1,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-10",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-24"
+   }
   },
   {
    "local_id": "ortho_cba_dom_bosco",
@@ -147,14 +147,14 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "ciclo": {
-    "alertado_em": "2026-08-10",
-    "acao_confirmada": null,
-    "confirmada_em": null,
-    "resultado": null,
-    "medido_em": null
-   },
-   "pos": 2
+   "pos": 2,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-10",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-24"
+   }
   },
   {
    "local_id": "ortho_fsa",
@@ -195,14 +195,14 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "ciclo": {
-    "alertado_em": "2026-08-10",
-    "acao_confirmada": null,
-    "confirmada_em": null,
-    "resultado": null,
-    "medido_em": null
-   },
-   "pos": 3
+   "pos": 3,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-10",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-24"
+   }
   },
   {
    "local_id": "ortho_cba_fernando_correa",
@@ -243,14 +243,14 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "ciclo": {
-    "alertado_em": "2026-08-10",
-    "acao_confirmada": null,
-    "confirmada_em": null,
-    "resultado": null,
-    "medido_em": null
-   },
-   "pos": 4
+   "pos": 4,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-10",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-24"
+   }
   },
   {
    "local_id": "ortho_mafra",
@@ -291,14 +291,14 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "ciclo": {
-    "alertado_em": "2026-08-10",
-    "acao_confirmada": null,
-    "confirmada_em": null,
-    "resultado": null,
-    "medido_em": null
-   },
-   "pos": 5
+   "pos": 5,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-10",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-24"
+   }
   },
   {
    "local_id": "ortho_souza_naves",
@@ -339,14 +339,14 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "posicao"
    },
-   "ciclo": {
-    "alertado_em": "2026-08-10",
-    "acao_confirmada": null,
-    "confirmada_em": null,
-    "resultado": null,
-    "medido_em": null
-   },
-   "pos": 6
+   "pos": 6,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-10",
+    "dias_aberta": 0,
+    "prazo_dias": 7,
+    "vence_em": "2026-08-17"
+   }
   },
   {
    "local_id": "ortho_contagem",
@@ -387,14 +387,14 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "posicao"
    },
-   "ciclo": {
-    "alertado_em": "2026-08-10",
-    "acao_confirmada": null,
-    "confirmada_em": null,
-    "resultado": null,
-    "medido_em": null
-   },
-   "pos": 7
+   "pos": 7,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-10",
+    "dias_aberta": 0,
+    "prazo_dias": 7,
+    "vence_em": "2026-08-17"
+   }
   },
   {
    "local_id": "ortho_palmas",
@@ -428,14 +428,14 @@
     "custo": "verba de mídia",
     "por_causa_de": "silencio"
    },
-   "ciclo": {
-    "alertado_em": "2026-08-10",
-    "acao_confirmada": null,
-    "confirmada_em": null,
-    "resultado": null,
-    "medido_em": null
-   },
-   "pos": 8
+   "pos": 8,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-10",
+    "dias_aberta": 0,
+    "prazo_dias": 30,
+    "vence_em": "2026-09-09"
+   }
   },
   {
    "local_id": "ortho_pp",
@@ -455,14 +455,8 @@
    "quem_avanca": null,
    "gatilhos": [],
    "acao": null,
-   "ciclo": {
-    "alertado_em": "2026-08-10",
-    "acao_confirmada": null,
-    "confirmada_em": null,
-    "resultado": null,
-    "medido_em": null
-   },
-   "pos": 9
+   "pos": 9,
+   "tarefa": null
   },
   {
    "local_id": "ortho_cba_centro_norte",
@@ -482,19 +476,15 @@
    "quem_avanca": null,
    "gatilhos": [],
    "acao": null,
-   "ciclo": {
-    "alertado_em": "2026-08-10",
-    "acao_confirmada": null,
-    "confirmada_em": null,
-    "resultado": null,
-    "medido_em": null
-   },
-   "pos": 10
+   "pos": 10,
+   "tarefa": null
   }
  ],
+ "tarefas_vencidas": 0,
+ "tarefas_resolvidas": [],
  "o_que_isso_nao_ve": [
   "A rede tem 374 unidades e esta fila mede 10. É 2% da rede.",
   "Nenhum contrato, lead, agendamento ou receita entra aqui. A fila diz onde a atenção está escorrendo, não quanto isso custou.",
-  "O ciclo (ação confirmada, resultado) nasce vazio. Ele só vale a partir do segundo mês, quando houver o que comparar."
+  "O status da tarefa (aberta → vencida → resolvida) vem do próprio dado: 'resolvida' é gatilho que sumiu na medição seguinte. Ninguém de dentro confirma nada — e é por isso que vale."
  ]
 }

@@ -1,0 +1,629 @@
+{
+ "o_que_e": "A linha do tempo de cada loja: tudo que aconteceu de observável, em ordem, num lugar só — avaliações, contadores, alertas e os rivais de aparelho da praça.",
+ "como_ler": "Cada evento tem data, fonte e de quem é (nossa · paciente · fila · rival). Rival aqui é só quem disputa APARELHO. Avaliações entram na janela de 90 dias; medições e alertas entram inteiros.",
+ "lojas": [
+  {
+   "local_id": "ortho_fsa",
+   "praca_id": "feira",
+   "rotulo": "BA · Feira de Santana",
+   "unidade": "OrthoDontic Feira de Santana",
+   "cabecalho": {
+    "nota": 4.7,
+    "avaliacoes": 170,
+    "ritmo": 2.8,
+    "meses_seguidos": 1,
+    "posicao": 17,
+    "de": 22
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-10",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-24"
+   },
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "faixa": "amarela",
+   "sem_resposta": {
+    "abertas": 10,
+    "com_texto": 8
+   },
+   "eventos": [
+    {
+     "data": "2026-08-10",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: O contador de avaliações parou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-10",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-07",
+     "tipo": "queda",
+     "quem": "nossa",
+     "texto": "o contador CAIU 3 (173 → 170) — avaliação apagada",
+     "fonte": "dados/serie/places.jsonl"
+    },
+    {
+     "data": "2026-07-31",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Além da pessoa pagar caro, marco o horário pra ser atendido 1 a 2 horas depois, colocam pe…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-07-18",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Atendimento horrível, péssimo, perdi um dia de trabalho por irresponsabilidade do dentista…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-06-29",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Hoje dia 29 de junho de 2026 fui para o atendimento de manutenção,e fui destratada pela dr…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_contagem",
+   "praca_id": "contagem",
+   "rotulo": "MG · Contagem",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 4.6,
+    "avaliacoes": 856,
+    "ritmo": 10.6,
+    "meses_seguidos": 23,
+    "posicao": 9,
+    "de": 14
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-10",
+    "dias_aberta": 0,
+    "prazo_dias": 7,
+    "vence_em": "2026-08-17"
+   },
+   "acao": {
+    "o_que": "Auditar a ficha do Google — foto, horário, serviços, resposta a avaliação",
+    "prazo": "7 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "posicao"
+   },
+   "faixa": "amarela",
+   "sem_resposta": {
+    "abertas": 39,
+    "com_texto": 30
+   },
+   "eventos": [
+    {
+     "data": "2026-08-10",
+     "tipo": "contador",
+     "quem": "nossa",
+     "texto": "ganhou 1 avaliações (855 → 856)",
+     "fonte": "dados/serie/places.jsonl"
+    },
+    {
+     "data": "2026-08-10",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-10",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Nota abaixo da mediana da praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-09",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Péssimo atendimento da recepção, estão sempre com a cara fechada ,os médicos não perguntam…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-07-18",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Horrível, demora muito, a manutenção da contenção é rápida, tive q espera 2 horas para ser…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-07-08",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 2★: “Nunca atendem no horário marcado.Passa pessoas na frente..A consulta marcada para 15:30.Sa…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-06-19",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Atendimento péssimo nunca atende no horário, se vc precisa falar no WhatsApp não respondem…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-06-10",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★ · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-06-07",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Não recomendo!! Péssimo.” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-06-02",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★ · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-05-19",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Pessima ! Demora atender, eles marcam horário, mais nunca cumpre, parece mais ordem de che…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-05-12",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★ · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_cba_centro_norte",
+   "praca_id": "cuiaba",
+   "rotulo": "MT · Cuiabá + MT · Várzea Grande",
+   "unidade": "OrthoDontic Cuiabá Centro Norte",
+   "cabecalho": {
+    "nota": 5,
+    "avaliacoes": 1222,
+    "ritmo": 48.1,
+    "meses_seguidos": 26,
+    "posicao": 2,
+    "de": 29
+   },
+   "tarefa": null,
+   "acao": null,
+   "faixa": "verde",
+   "sem_resposta": {
+    "abertas": 6,
+    "com_texto": 3
+   },
+   "eventos": [],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_cba_dom_bosco",
+   "praca_id": "cuiaba",
+   "rotulo": "MT · Cuiabá + MT · Várzea Grande",
+   "unidade": "OrthoDontic Cuiabá Dom Bosco (Centro Sul)",
+   "cabecalho": {
+    "nota": 4.9,
+    "avaliacoes": 71,
+    "ritmo": 0.7,
+    "meses_seguidos": 2,
+    "posicao": 29,
+    "de": 29
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-10",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-24"
+   },
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "faixa": "amarela",
+   "sem_resposta": {
+    "abertas": 2,
+    "com_texto": 1
+   },
+   "eventos": [
+    {
+     "data": "2026-08-10",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: O contador de avaliações parou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-10",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_cba_fernando_correa",
+   "praca_id": "cuiaba",
+   "rotulo": "MT · Cuiabá + MT · Várzea Grande",
+   "unidade": "OrthoDontic Cuiabá Fernando Corrêa",
+   "cabecalho": {
+    "nota": 4.9,
+    "avaliacoes": 78,
+    "ritmo": 3.7,
+    "meses_seguidos": 0,
+    "posicao": 16,
+    "de": 29
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-10",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-24"
+   },
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "faixa": "amarela",
+   "sem_resposta": {
+    "abertas": 2,
+    "com_texto": 2
+   },
+   "eventos": [
+    {
+     "data": "2026-08-10",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: O contador de avaliações parou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-10",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_centro_ldn",
+   "praca_id": "londrina",
+   "rotulo": "PR · Londrina",
+   "unidade": "OrthoDontic Centro",
+   "cabecalho": {
+    "nota": 3.8,
+    "avaliacoes": 76,
+    "ritmo": 0.8,
+    "meses_seguidos": 2,
+    "posicao": 23,
+    "de": 24
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-10",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-24"
+   },
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "faixa": "vermelha",
+   "sem_resposta": {
+    "abertas": 10,
+    "com_texto": 8
+   },
+   "eventos": [
+    {
+     "data": "2026-08-10",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: O contador de avaliações parou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-10",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-10",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Nota abaixo da mediana da praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-07-10",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Pessimo atendimento, tanto na recepção como no financeiro ! So prestam bom atendimento na …” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_souza_naves",
+   "praca_id": "londrina",
+   "rotulo": "PR · Londrina",
+   "unidade": "OrthoDontic Souza Naves",
+   "cabecalho": {
+    "nota": 4.6,
+    "avaliacoes": 566,
+    "ritmo": 3.3,
+    "meses_seguidos": 9,
+    "posicao": 13,
+    "de": 24
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-10",
+    "dias_aberta": 0,
+    "prazo_dias": 7,
+    "vence_em": "2026-08-17"
+   },
+   "acao": {
+    "o_que": "Auditar a ficha do Google — foto, horário, serviços, resposta a avaliação",
+    "prazo": "7 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "posicao"
+   },
+   "faixa": "amarela",
+   "sem_resposta": {
+    "abertas": 34,
+    "com_texto": 22
+   },
+   "eventos": [
+    {
+     "data": "2026-08-10",
+     "tipo": "contador",
+     "quem": "nossa",
+     "texto": "ganhou 2 avaliações (564 → 566)",
+     "fonte": "dados/serie/places.jsonl"
+    },
+    {
+     "data": "2026-08-10",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-10",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Nota abaixo da mediana da praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-07",
+     "tipo": "contador",
+     "quem": "nossa",
+     "texto": "ganhou 3 avaliações (561 → 564)",
+     "fonte": "dados/serie/places.jsonl"
+    },
+    {
+     "data": "2026-07-29",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 3★ · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-06-13",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 3★: “Muito bom atendimento da recepção, porém é um pouco demorado para ser  atendido pelo médic…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-06-09",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★ · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-06-09",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 3★ · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-06-02",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 2★: “Atendimento pessoal bom, atendimento pelo wats lixo, nao serve pra nada, app tambem, recen…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_mafra",
+   "praca_id": "mafra",
+   "rotulo": "SC · Mafra",
+   "unidade": "OrthoDontic Mafra",
+   "cabecalho": {
+    "nota": 4.9,
+    "avaliacoes": 155,
+    "ritmo": 2.4,
+    "meses_seguidos": 0,
+    "posicao": 9,
+    "de": 15
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-10",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-24"
+   },
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "faixa": "amarela",
+   "sem_resposta": {
+    "abertas": 2,
+    "com_texto": 1
+   },
+   "eventos": [
+    {
+     "data": "2026-08-10",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: O contador de avaliações parou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-10",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_pp",
+   "praca_id": "prudente",
+   "rotulo": "SP · Presidente Prudente",
+   "unidade": "OrthoDontic Presidente Prudente",
+   "cabecalho": {
+    "nota": 4.9,
+    "avaliacoes": 592,
+    "ritmo": 3.6,
+    "meses_seguidos": 13,
+    "posicao": 8,
+    "de": 25
+   },
+   "tarefa": null,
+   "acao": null,
+   "faixa": "verde",
+   "sem_resposta": {
+    "abertas": 10,
+    "com_texto": 10
+   },
+   "eventos": [
+    {
+     "data": "2026-08-07",
+     "tipo": "contador",
+     "quem": "nossa",
+     "texto": "ganhou 10 avaliações (582 → 592)",
+     "fonte": "dados/serie/places.jsonl"
+    },
+    {
+     "data": "2026-08-07",
+     "tipo": "rival_contador",
+     "quem": "rival",
+     "nome": "Croorto",
+     "texto": "Croorto: ganhou 1 avaliações (52 → 53)",
+     "fonte": "dados/serie/places.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_palmas",
+   "praca_id": "palmas",
+   "rotulo": "TO · Palmas",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 5,
+    "avaliacoes": 305,
+    "ritmo": 7.8,
+    "meses_seguidos": 15,
+    "posicao": 4,
+    "de": 14
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-10",
+    "dias_aberta": 0,
+    "prazo_dias": 30,
+    "vence_em": "2026-09-09"
+   },
+   "acao": {
+    "o_que": "Entrar no leilão com as frases que a cidade digita — a lista está na praça",
+    "prazo": "30 dias",
+    "dono": "franqueado",
+    "custo": "verba de mídia",
+    "por_causa_de": "silencio"
+   },
+   "faixa": "verde",
+   "sem_resposta": {
+    "abertas": 1,
+    "com_texto": 1
+   },
+   "eventos": [
+    {
+     "data": "2026-08-10",
+     "tipo": "contador",
+     "quem": "nossa",
+     "texto": "ganhou 1 avaliações (304 → 305)",
+     "fonte": "dados/serie/places.jsonl"
+    },
+    {
+     "data": "2026-08-10",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Silêncio publicitário com leilão cheio",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  }
+ ]
+}

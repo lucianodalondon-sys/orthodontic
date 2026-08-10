@@ -77,6 +77,8 @@ A ponta barata roda **toda semana** e é o que alimenta "O que mudou":
 ```bash
 python3 coleta/coletores/ponta.py --salvar        # 229 fichas, API do Google
 python3 scripts/o_que_mudou.py --salvar
+python3 scripts/fila.py --salvar                  # grava o histórico → status
+python3 scripts/timeline_da_loja.py --salvar      # a vida de cada loja
 python3 scripts/build_portal.py
 ```
 

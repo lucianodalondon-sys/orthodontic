@@ -112,6 +112,12 @@ def ultimo_por(nome, chave="praca_id"):
 # A ação vem do gatilho que pesa mais, não de um texto genérico. Prazo e dono
 # são obrigatórios — alerta sem dono é boletim, e boletim ninguém executa.
 #
+# O prazo de cada gatilho em dias — é dele que nasce o status da tarefa
+# (aberta → vencida). "rival" não tem prazo em dias: o prazo é a próxima
+# visita do consultor, e cobrar calendário aí seria inventar precisão.
+PRAZO_DIAS = {"parada": 14, "nao_engatou": 60, "rival": None,
+              "posicao": 7, "nota": 10, "silencio": 30}
+
 ACAO = {
     "parada": ("Religar a rotina de pedido de avaliação no fim do atendimento",
                "14 dias", "franqueado", "sem custo de mídia"),
@@ -250,14 +256,62 @@ def monta():
             "gatilhos": gat,
             "acao": ({"o_que": o_que, "prazo": prazo, "dono": dono, "custo": custo,
                       "por_causa_de": dom} if o_que else None),
-            # o ativo que não existia: o ciclo fechado.
-            "ciclo": {"alertado_em": hoje, "acao_confirmada": None,
-                      "confirmada_em": None, "resultado": None, "medido_em": None},
         })
 
     fila.sort(key=lambda x: (-x["urgencia"], -(x["posicao"] or 0)))
     for i, x in enumerate(fila, 1):
         x["pos"] = i
+
+    # ------------------------------------------------- o ciclo de vida (tarefa)
+    #
+    # A disciplina que veio da Salesforce: alerta não é boletim, é TAREFA com
+    # dono, prazo e estado. O histórico é append-only (dados/serie/
+    # fila_historico.jsonl): cada rodada grava os gatilhos abertos, e o
+    # status nasce da comparação entre rodadas — ninguém preenche nada:
+    #
+    #   aberta     o gatilho está ativo e dentro do prazo da ação
+    #   vencida    o prazo passou e o gatilho segue ativo
+    #   resolvida  o gatilho sumiu numa medição nova — o dado EXTERNO
+    #              fechou o loop, sem depender de ninguém confirmar
+    hist = jsonl("fila_historico")
+    visto = defaultdict(list)              # (local_id, gatilho) -> [datas]
+    for h in hist:
+        visto[(h["local_id"], h["gatilho"])].append(h["snapshot_date"])
+
+    abertos_hoje = set()
+    for x in fila:
+        for g in x["gatilhos"]:
+            abertos_hoje.add((x["local_id"], g["chave"]))
+        dom = x["acao"]["por_causa_de"] if x["acao"] else None
+        if not dom:
+            x["tarefa"] = None
+            continue
+        datas = visto.get((x["local_id"], dom), [])
+        aberta_em = min(datas) if datas else hoje
+        dias = (dt.date.fromisoformat(hoje) - dt.date.fromisoformat(aberta_em)).days
+        prazo = PRAZO_DIAS.get(dom)
+        x["tarefa"] = {
+            "status": "vencida" if prazo is not None and dias > prazo else "aberta",
+            "aberta_em": aberta_em, "dias_aberta": dias, "prazo_dias": prazo,
+            "vence_em": ((dt.date.fromisoformat(aberta_em)
+                          + dt.timedelta(days=prazo)).isoformat()
+                         if prazo is not None else None),
+        }
+
+    # resolvidas: estavam no histórico e não voltaram nesta rodada. É a única
+    # prova de resultado que dado público consegue dar — e é a que vale.
+    rotulos = {x["local_id"]: x["rotulo"] for x in fila}
+    resolvidas = []
+    for (lid, g), datas in sorted(visto.items()):
+        if (lid, g) in abertos_hoje or lid not in rotulos:
+            continue
+        resolvidas.append({
+            "local_id": lid, "rotulo": rotulos[lid], "gatilho": g,
+            "titulo": GATILHOS.get(g, {}).get("titulo", g),
+            "aberta_em": min(datas), "ultima_vez_ativa": max(datas),
+            "leitura": f"o gatilho não voltou na medição de {hoje} — "
+                       f"o dado externo fechou o loop",
+        })
 
     vermelhas = [x for x in fila if x["faixa"] == "vermelha"]
     return {
@@ -278,13 +332,17 @@ def monta():
                      sorted(GATILHOS.items(), key=lambda x: -x[1]["peso"])],
         "faixas": [{"de": c, "nome": n} for c, n in FAIXA],
         "fila": fila,
+        "tarefas_vencidas": sum(1 for x in fila
+                                if (x.get("tarefa") or {}).get("status") == "vencida"),
+        "tarefas_resolvidas": resolvidas,
         "o_que_isso_nao_ve": [
             f"A rede tem 374 unidades e esta fila mede {len(fila)}. É "
             f"{100*len(fila)//374}% da rede.",
             "Nenhum contrato, lead, agendamento ou receita entra aqui. A fila diz "
             "onde a atenção está escorrendo, não quanto isso custou.",
-            "O ciclo (ação confirmada, resultado) nasce vazio. Ele só vale a partir "
-            "do segundo mês, quando houver o que comparar.",
+            "O status da tarefa (aberta → vencida → resolvida) vem do próprio "
+            "dado: 'resolvida' é gatilho que sumiu na medição seguinte. Ninguém "
+            "de dentro confirma nada — e é por isso que vale.",
         ],
     }
 
@@ -320,7 +378,24 @@ def main():
         PORTAL.mkdir(parents=True, exist_ok=True)
         (PORTAL/"fila.json").write_text(json.dumps(d, ensure_ascii=False, indent=1),
                                         encoding="utf-8")
-        print(f"  → dados/portal/fila.json  ({len(d['fila'])} unidades)\n")
+        print(f"  → dados/portal/fila.json  ({len(d['fila'])} unidades)")
+        # o histórico que dá vida ao status: grava os gatilhos abertos de hoje
+        # (append-only; rodar duas vezes no dia não duplica)
+        ja = {(h["local_id"], h["gatilho"]) for h in jsonl("fila_historico")
+              if h["snapshot_date"] == d["gerado_em"]}
+        n = 0
+        with (SERIE/"fila_historico.jsonl").open("a", encoding="utf-8") as f:
+            for x in d["fila"]:
+                for g in x["gatilhos"]:
+                    if (x["local_id"], g["chave"]) in ja:
+                        continue
+                    f.write(json.dumps(
+                        {"snapshot_date": d["gerado_em"],
+                         "local_id": x["local_id"], "praca_id": x["praca_id"],
+                         "gatilho": g["chave"], "fato": g["fato"]},
+                        ensure_ascii=False) + "\n")
+                    n += 1
+        print(f"  → dados/serie/fila_historico.jsonl (+{n})\n")
 
 
 if __name__ == "__main__":
