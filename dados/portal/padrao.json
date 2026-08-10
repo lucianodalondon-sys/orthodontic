@@ -98,9 +98,9 @@
    "praca_id": "contagem",
    "rotulo": "MG · Contagem",
    "tipo": "rede",
-   "feitas": 13,
+   "feitas": 14,
    "de": 14,
-   "completa": false,
+   "completa": true,
    "etapas": [
     {
      "etapa": 0,
@@ -186,9 +186,9 @@
      "etapa": 11,
      "nome": "A inteligência",
      "quem": "humano",
-     "ok": false,
-     "estado": "falta tese, dna (0/5), citações (0/4), plano (0/5)",
-     "comando": "escrever tese, dna, citações e plano em dados/conteudo/contagem.json"
+     "ok": true,
+     "estado": "completa",
+     "comando": null
     },
     {
      "etapa": 13,
@@ -220,9 +220,9 @@
    "praca_id": "cuiaba",
    "rotulo": "MT · Cuiabá + MT · Várzea Grande",
    "tipo": "rede",
-   "feitas": 12,
+   "feitas": 14,
    "de": 14,
-   "completa": false,
+   "completa": true,
    "etapas": [
     {
      "etapa": 0,
@@ -292,9 +292,9 @@
      "etapa": 9,
      "nome": "A joia enterrada",
      "quem": "auto+humano",
-     "ok": false,
-     "estado": "0 matérias de imprensa (mínimo 20)",
-     "comando": "python3 coleta/coletores/imprensa_rss.py --praca cuiaba"
+     "ok": true,
+     "estado": "52 matérias de imprensa (mínimo 20)",
+     "comando": null
     },
     {
      "etapa": 10,
@@ -308,9 +308,9 @@
      "etapa": 11,
      "nome": "A inteligência",
      "quem": "humano",
-     "ok": false,
-     "estado": "falta tese, dna (0/5), citações (0/4), plano (0/5)",
-     "comando": "escrever tese, dna, citações e plano em dados/conteudo/cuiaba.json"
+     "ok": true,
+     "estado": "completa",
+     "comando": null
     },
     {
      "etapa": 13,
@@ -1083,7 +1083,7 @@
      "nome": "As portas da cidade",
      "quem": "auto",
      "ok": false,
-     "estado": "39 portas de busca · 2 leitura(s) de captação",
+     "estado": "39 portas de busca · 3 leitura(s) de captação",
      "comando": "python3 coleta/coletores/portas.py --praca maraba && python3 scripts/oportunidades_franqueado.py --praca maraba --salvar"
     },
     {
@@ -1100,9 +1100,9 @@
    "praca_id": "palmas",
    "rotulo": "TO · Palmas",
    "tipo": "rede",
-   "feitas": 13,
+   "feitas": 14,
    "de": 14,
-   "completa": false,
+   "completa": true,
    "etapas": [
     {
      "etapa": 0,
@@ -1188,9 +1188,9 @@
      "etapa": 11,
      "nome": "A inteligência",
      "quem": "humano",
-     "ok": false,
-     "estado": "falta tese, dna (0/5), citações (0/4), plano (0/5)",
-     "comando": "escrever tese, dna, citações e plano em dados/conteudo/palmas.json"
+     "ok": true,
+     "estado": "completa",
+     "comando": null
     },
     {
      "etapa": 13,
