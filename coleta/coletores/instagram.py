@@ -115,7 +115,15 @@ def main():
 
     hoje = dt.date.today().isoformat()
     tok = token()
-    posts = {r["chave"]: r for r in jsonl_le(SERIE/"posts.jsonl")}
+    # `chave` faltava em 1.193 linhas — Macapá, Rio Branco e Imperatriz foram
+    # gravadas por outro coletor, com `fonte` escrita de outro jeito e sem a
+    # chave. É a MESMA falha das avaliações: dois coletores, formatos
+    # incompatíveis, dedup que não pega nada. Aqui ela derrubava o coletor
+    # inteiro com KeyError. Reconstrói em vez de estourar.
+    def _chave(r):
+        return r.get("chave") or (f"{r.get('plataforma','instagram')}:"
+                                  f"{r.get('handle')}:{r.get('post_id')}")
+    posts = {_chave(r): r for r in jsonl_le(SERIE/"posts.jsonl")}
 
     for praca in pracas:
         alvos = PERFIS.get(praca) or perfis_da_identidade(praca)

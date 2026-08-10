@@ -451,6 +451,15 @@ def main():
                 "indisponivel_porque": motivo, "andar": andar}
 
     ferramentas = [
+        ferramenta("rede_inteira", "A rede inteira",
+                   "onde a marca está mal na rua, nas 374",
+                   "rede_inteira", (OUT/"rede_inteira.json").exists(),
+                   (lambda r: f"{r.get('confirmadas')} de {r.get('na_lista_oficial')} "
+                    f"fichas conferidas · {len([a for a in r.get('alertas',[]) if a['gravidade']=='vermelha'])} "
+                    f"alertas vermelhos · nota mediana {r.get('nota_mediana')}"
+                    )(json.loads((OUT/"rede_inteira.json").read_text(encoding="utf-8"))
+                      if (OUT/"rede_inteira.json").exists() else {}),
+                   andar="decidir"),
         ferramenta("rival", "O que o rival faz que dá certo",
                    "o que o concorrente vencedor faz, na voz do paciente dele",
                    "rival", (OUT/"rival.json").exists(),
@@ -615,7 +624,7 @@ def main():
                    for p in PRACAS],
         # o índice de verdade: o que existe, agora, nesta pasta
         "arquivos": {
-            "rede": [x for x in ("fila", "rival", "rede", "rede_cruzamento", "achados",
+            "rede": [x for x in ("fila", "rede_inteira", "rival", "rede", "rede_cruzamento", "achados",
                                  "corretor", "evidencias", "radar")
                      if (OUT/f"{x}.json").exists()],
             "pracas": presentes("pracas"),

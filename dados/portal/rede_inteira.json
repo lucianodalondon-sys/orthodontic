@@ -1,0 +1,994 @@
+{
+ "corte": "2026-08-10",
+ "o_que_e": "A ficha pública de cada unidade da rede, pela API do Google. Uma chamada por unidade.",
+ "o_que_nao_e": "Não é ritmo nem voz do paciente — para isso é a varredura completa, que hoje cobre 13 praças. Aqui é retrato: como a unidade aparece agora para quem procura.",
+ "na_lista_oficial": 374,
+ "confirmadas": 326,
+ "nao_confirmadas": 48,
+ "por_que_nao_confirma": "a busca só aceita ficha cujo NOME contenha 'orthodontic' e cujo ENDEREÇO seja da cidade procurada. Devolver menos e certo é melhor que devolver tudo com lixo dentro.",
+ "nota_mediana": 4.8,
+ "nota_pior": 2.7,
+ "avaliacoes_somadas": 83062,
+ "avaliacoes_medianas": 161,
+ "abaixo_de_4": 13,
+ "alertas": [
+  {
+   "cidade": "São Paulo",
+   "uf": "SP",
+   "unidade": "São Paulo - Santana",
+   "nome_no_google": "OrthoDontic",
+   "nota": 2.7,
+   "avaliacoes": 12,
+   "endereco": "R. Leite de Morais, 42 - Santana, São Paulo - SP, 02034-020",
+   "mapa": "https://maps.google.com/?cid=7104306993321834883&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "nota 2.7 na ficha pública, e com base fina, o que ainda dá conserto rápido",
+   "gravidade": "vermelha",
+   "chave": "nota_baixa",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Ribeirão Preto",
+   "uf": "SP",
+   "unidade": "Ribeirão Preto (Centro)",
+   "nome_no_google": "OrthoDontic",
+   "nota": 3,
+   "avaliacoes": 14,
+   "endereco": "R. Florêncio de Abreu, 621 - Centro, Ribeirão Preto - SP, 14015-060",
+   "mapa": "https://maps.google.com/?cid=11480576223313131991&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "nota 3 na ficha pública, e com base fina, o que ainda dá conserto rápido",
+   "gravidade": "vermelha",
+   "chave": "nota_baixa",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Salvador",
+   "uf": "BA",
+   "unidade": "Salvador - Centro",
+   "nome_no_google": "OrthoDontic",
+   "nota": 3.1,
+   "avaliacoes": 158,
+   "endereco": "Centro Edifício Hotel Granada - Av. Sete de Setembro, 512 - Sala 02 - Centro, Salvador - BA, 40020-455",
+   "mapa": "https://maps.google.com/?cid=14367931975217138847&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "nota 3.1 na ficha pública, sobre 158 avaliações, o que já é reputação firmada",
+   "gravidade": "vermelha",
+   "chave": "nota_baixa",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Dourados",
+   "uf": "MS",
+   "unidade": "Dourados",
+   "nome_no_google": "OrthoDontic",
+   "nota": 3.3,
+   "avaliacoes": 9,
+   "endereco": "Av. Marcelino Pires, 1435 - Centro, Dourados - MS, 79800-004",
+   "mapa": "https://maps.google.com/?cid=15064777602769435759&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "nota 3.3 na ficha pública, e com base fina, o que ainda dá conserto rápido",
+   "gravidade": "vermelha",
+   "chave": "nota_baixa",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Patrocinio",
+   "uf": "MG",
+   "unidade": "Patrocinio",
+   "nome_no_google": "OrthoDontic",
+   "nota": 4.6,
+   "avaliacoes": 62,
+   "endereco": "Edificio Mansur - Av. Rui Barbosa, 192 - Centro, Patrocínio - MG, 38740-034",
+   "mapa": "https://maps.google.com/?cid=14775674156183168691&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "CLOSED_PERMANENTLY",
+   "por_que": "o Google marca esta ficha como FECHADA PERMANENTEMENTE, e a lista oficial da rede diz que a unidade está aberta",
+   "gravidade": "vermelha",
+   "chave": "fechada_no_google",
+   "de_quem_e": "franqueadora"
+  },
+  {
+   "cidade": "Piraju",
+   "uf": "SP",
+   "unidade": "Piraju",
+   "nome_no_google": "OrthoDontic",
+   "nota": null,
+   "avaliacoes": null,
+   "endereco": "Praça Ataliba Leonel, 270 - Centro, Piraju - SP, 18800-020",
+   "mapa": "https://maps.google.com/?cid=2903097433523700722&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "unidade aberta sem NENHUMA avaliação: existe no papel e não existe para quem procura",
+   "gravidade": "vermelha",
+   "chave": "sem_nenhuma_avaliacao",
+   "de_quem_e": "franqueadora"
+  },
+  {
+   "cidade": "Alagoinhas",
+   "uf": "BA",
+   "unidade": "Alagoinhas",
+   "nome_no_google": "OrthoDontic",
+   "nota": null,
+   "avaliacoes": null,
+   "endereco": "R. Dom Pedro II, 191 - Centro, Alagoinhas - BA, 48010-050",
+   "mapa": "https://maps.google.com/?cid=10704924771698697267&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "unidade aberta sem NENHUMA avaliação: existe no papel e não existe para quem procura",
+   "gravidade": "vermelha",
+   "chave": "sem_nenhuma_avaliacao",
+   "de_quem_e": "franqueadora"
+  },
+  {
+   "cidade": "Birigui",
+   "uf": "SP",
+   "unidade": "Birigui",
+   "nome_no_google": "OrthoDontic",
+   "nota": null,
+   "avaliacoes": null,
+   "endereco": "R. Barão do Rio Branco, 1099 - Centro, Birigui - SP, 16200-001",
+   "mapa": "https://maps.google.com/?cid=11742842241597025105&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "unidade aberta sem NENHUMA avaliação: existe no papel e não existe para quem procura",
+   "gravidade": "vermelha",
+   "chave": "sem_nenhuma_avaliacao",
+   "de_quem_e": "franqueadora"
+  },
+  {
+   "cidade": "Pindamonhangaba",
+   "uf": "SP",
+   "unidade": "Pindamonhangaba",
+   "nome_no_google": "OrthoDontic",
+   "nota": null,
+   "avaliacoes": null,
+   "endereco": "R. Dep. Claro César, 52 - Centro, Pindamonhangaba - SP, 12400-220",
+   "mapa": "https://maps.google.com/?cid=6994308186073042750&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "unidade aberta sem NENHUMA avaliação: existe no papel e não existe para quem procura",
+   "gravidade": "vermelha",
+   "chave": "sem_nenhuma_avaliacao",
+   "de_quem_e": "franqueadora"
+  },
+  {
+   "cidade": "Cascavel",
+   "uf": "PR",
+   "unidade": "Cascavel - Rua Sete de Setembro",
+   "nome_no_google": "OrthoDontic",
+   "nota": 3.5,
+   "avaliacoes": 29,
+   "endereco": "Rua Sete de Setembro, 3034 Térreo - Sala 05 - Centro, Cascavel - PR, 85810-090",
+   "mapa": "https://maps.google.com/?cid=5517252131252367754&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "nota 3.5 na ficha pública, sobre 29 avaliações, o que já é reputação firmada",
+   "gravidade": "amarela",
+   "chave": "nota_baixa",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Itapema",
+   "uf": "SC",
+   "unidade": "Itapema",
+   "nome_no_google": "OrthoDontic Clinica Odontológica",
+   "nota": 3.6,
+   "avaliacoes": 34,
+   "endereco": "Av. Nereu Ramos, 800 - Sl Térrea - Centro, Itapema - SC, 88220-000",
+   "mapa": "https://maps.google.com/?cid=6834537592968015773&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "nota 3.6 na ficha pública, sobre 34 avaliações, o que já é reputação firmada",
+   "gravidade": "amarela",
+   "chave": "nota_baixa",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Uberlândia",
+   "uf": "MG",
+   "unidade": "Uberlândia - Praca Adolfo Fonseca",
+   "nome_no_google": "OrthoDontic",
+   "nota": 3.7,
+   "avaliacoes": 127,
+   "endereco": "Praça Adolfo Fonseca, 138 - Centro, Uberlândia - MG, 38400-152",
+   "mapa": "https://maps.google.com/?cid=7697359775053120296&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "nota 3.7 na ficha pública, sobre 127 avaliações, o que já é reputação firmada",
+   "gravidade": "amarela",
+   "chave": "nota_baixa",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Osasco",
+   "uf": "SP",
+   "unidade": "Osasco",
+   "nome_no_google": "OrthoDontic",
+   "nota": 3.7,
+   "avaliacoes": 35,
+   "endereco": "R. Dona Primitiva Vianco, 353 - Centro, Osasco - SP, 06010-000",
+   "mapa": "https://maps.google.com/?cid=9064532303500290543&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "nota 3.7 na ficha pública, sobre 35 avaliações, o que já é reputação firmada",
+   "gravidade": "amarela",
+   "chave": "nota_baixa",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Londrina",
+   "uf": "PR",
+   "unidade": "Londrina - Rua Sergipe",
+   "nome_no_google": "OrthoDontic",
+   "nota": 3.8,
+   "avaliacoes": 76,
+   "endereco": "Edifício Baldan - R. Sergipe, 829 - 1º Andar - Centro, Londrina - PR, 86010-380",
+   "mapa": "https://maps.google.com/?cid=3557878793132619267&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "nota 3.8 na ficha pública, sobre 76 avaliações, o que já é reputação firmada",
+   "gravidade": "amarela",
+   "chave": "nota_baixa",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Limeira",
+   "uf": "SP",
+   "unidade": "Limeira",
+   "nome_no_google": "OrthoDontic",
+   "nota": 3.8,
+   "avaliacoes": 32,
+   "endereco": "R. Treze de Maio, 515 - Centro, Limeira - SP, 13480-171",
+   "mapa": "https://maps.google.com/?cid=15199467633524469894&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "nota 3.8 na ficha pública, sobre 32 avaliações, o que já é reputação firmada",
+   "gravidade": "amarela",
+   "chave": "nota_baixa",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Ribeirão Preto",
+   "uf": "SP",
+   "unidade": "Ribeirão Preto (Alto da Boa Vista)",
+   "nome_no_google": "OrthoDontic",
+   "nota": 3.8,
+   "avaliacoes": 52,
+   "endereco": "R. Inácio Luíz Pinto, 250 - Alto da Boa Vista, Ribeirão Preto - SP, 14025-680",
+   "mapa": "https://maps.google.com/?cid=14918022739974469400&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "nota 3.8 na ficha pública, sobre 52 avaliações, o que já é reputação firmada",
+   "gravidade": "amarela",
+   "chave": "nota_baixa",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Araucaria",
+   "uf": "PR",
+   "unidade": "Araucaria",
+   "nome_no_google": "OrthoDontic",
+   "nota": 3.8,
+   "avaliacoes": 23,
+   "endereco": "R. Maj. Sezino Pereira de Souza, 591 - Centro, Araucária - PR, 83702-420",
+   "mapa": "https://maps.google.com/?cid=14365242878770529557&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "nota 3.8 na ficha pública, sobre 23 avaliações, o que já é reputação firmada",
+   "gravidade": "amarela",
+   "chave": "nota_baixa",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Tramandai",
+   "uf": "RS",
+   "unidade": "Tramandai",
+   "nome_no_google": "OrthoDontic",
+   "nota": 3.9,
+   "avaliacoes": 18,
+   "endereco": "Av. Emancipação, 1242 - Centro, Tramandaí - RS, 95590-000",
+   "mapa": "https://maps.google.com/?cid=5072253577807617390&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "nota 3.9 na ficha pública, e com base fina, o que ainda dá conserto rápido",
+   "gravidade": "amarela",
+   "chave": "nota_baixa",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Carazinho",
+   "uf": "RS",
+   "unidade": "Carazinho",
+   "nome_no_google": "OrthoDontic",
+   "nota": 4.4,
+   "avaliacoes": 57,
+   "endereco": "Edifício Royal Palace - R. Pedro Vargas, 908 - Sl 104 - Centro, Carazinho - RS, 99500-000",
+   "mapa": "https://maps.google.com/?cid=12388072300665860048&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+   "gravidade": "amarela",
+   "chave": "categoria_divergente",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Vicente Pires",
+   "uf": "DF",
+   "unidade": "Vicente Pires",
+   "nome_no_google": "OrthoDontic",
+   "nota": 4.6,
+   "avaliacoes": 252,
+   "endereco": "St. Hab. Vicente Pires Chácara 01 Lote 05 Sala 101 - Vicente Pires, Brasília - DF, 72006-200",
+   "mapa": "https://maps.google.com/?cid=2004332728131553780&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+   "gravidade": "amarela",
+   "chave": "categoria_divergente",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Sapucaia do Sul",
+   "uf": "RS",
+   "unidade": "Sapucaia do Sul",
+   "nome_no_google": "OrthoDontic",
+   "nota": 4.6,
+   "avaliacoes": 413,
+   "endereco": "Rua Coronel João Correa, 123 2º Andar - Salas 201 - Centro, Sapucaia do Sul - RS, 93220-100",
+   "mapa": "https://maps.google.com/?cid=8937044645851495857&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+   "gravidade": "amarela",
+   "chave": "categoria_divergente",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Barbacena",
+   "uf": "MG",
+   "unidade": "Barbacena",
+   "nome_no_google": "OrthoDontic",
+   "nota": 4.7,
+   "avaliacoes": 53,
+   "endereco": "R. Teobaldo Tolendal, 31 - Centro, Barbacena - MG, 36200-010",
+   "mapa": "https://maps.google.com/?cid=81832231979047175&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+   "gravidade": "amarela",
+   "chave": "categoria_divergente",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Bom Jesus da Lapa",
+   "uf": "BA",
+   "unidade": "Bom Jesus da Lapa",
+   "nome_no_google": "OrthoDontic",
+   "nota": 4.7,
+   "avaliacoes": 30,
+   "endereco": "Av. Duque de Caxias, 716 - Centro, Bom Jesus da Lapa - BA, 47600-000",
+   "mapa": "https://maps.google.com/?cid=7079204760418957645&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+   "gravidade": "amarela",
+   "chave": "categoria_divergente",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Caxias do Sul",
+   "uf": "RS",
+   "unidade": "Caxias do Sul - Kayser",
+   "nome_no_google": "OrthoDontic",
+   "nota": 4.8,
+   "avaliacoes": 89,
+   "endereco": "Av. Bom Pastor, 738 - Lj 04 - Kayser, Caxias do Sul - RS, 95096-150",
+   "mapa": "https://maps.google.com/?cid=8262299344390025075&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+   "gravidade": "amarela",
+   "chave": "categoria_divergente",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Rio de Janeiro",
+   "uf": "RJ",
+   "unidade": "Rio de Janeiro - Campo Grande",
+   "nome_no_google": "OrthoDontic",
+   "nota": 4.8,
+   "avaliacoes": 297,
+   "endereco": "Av. Cesário de Melo, 2890 - sobreloja - Campo Grande, Rio de Janeiro - RJ, 23050-102",
+   "mapa": "https://maps.google.com/?cid=5604463345343337018&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+   "gravidade": "amarela",
+   "chave": "categoria_divergente",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Florianopolis",
+   "uf": "SC",
+   "unidade": "Florianopolis - Ingleses",
+   "nome_no_google": "OrthoDontic - Florianópolis Ingleses",
+   "nota": 4.8,
+   "avaliacoes": 267,
+   "endereco": "Rod. Armando Calil Bulos, 6288 - Sl 02 - Ingleses do Rio Vermelho, Florianópolis - SC, 88058-001",
+   "mapa": "https://maps.google.com/?cid=6905470614701923863&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+   "gravidade": "amarela",
+   "chave": "categoria_divergente",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Paranavai",
+   "uf": "PR",
+   "unidade": "Paranavai",
+   "nome_no_google": "OrthoDontic - Clínica Odontológica em Paranavaí PR - Tratamento de Canal - Implante - Restauração Dental - Prótese - Clareamento e Limpeza Dental - Aparelho Ortodôntico Metálico e Estético - Emergência - Extração do Siso - Faceta de Porcelana",
+   "nota": 4.9,
+   "avaliacoes": 7,
+   "endereco": "Rua Dr - R. Silvio Vidal, 2190 - Centro, Paranavaí - PR, 87701-130",
+   "mapa": "https://maps.google.com/?cid=9895150379897010304&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+   "gravidade": "amarela",
+   "chave": "categoria_divergente",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Sete Lagoas",
+   "uf": "MG",
+   "unidade": "Sete Lagoas",
+   "nome_no_google": "OrthoDontic",
+   "nota": 4.9,
+   "avaliacoes": 895,
+   "endereco": "R. Teófilo Otoni, 818 - Centro, Sete Lagoas - MG, 35700-007",
+   "mapa": "https://maps.google.com/?cid=6314520714977829414&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+   "gravidade": "amarela",
+   "chave": "categoria_divergente",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Florianopolis",
+   "uf": "SC",
+   "unidade": "Florianopolis - Rua Deodoro",
+   "nome_no_google": "OrthoDontic Florianópolis - Rua Deodoro, Centro.",
+   "nota": 4.9,
+   "avaliacoes": 259,
+   "endereco": "R. Deodoro, 157 - Centro, Florianópolis - SC, 88010-020",
+   "mapa": "https://maps.google.com/?cid=8919295141871047659&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+   "gravidade": "amarela",
+   "chave": "categoria_divergente",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Gama",
+   "uf": "DF",
+   "unidade": "Gama",
+   "nome_no_google": "OrthoDontic",
+   "nota": 4.9,
+   "avaliacoes": 316,
+   "endereco": "02 - Ssu Q 1 Cl, 1 - Sala 01, Sobreloja - Gama, Brasília - DF, 72410-100",
+   "mapa": "https://maps.google.com/?cid=13961686551889486388&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+   "gravidade": "amarela",
+   "chave": "categoria_divergente",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Mafra",
+   "uf": "SC",
+   "unidade": "Mafra",
+   "nome_no_google": "OrthoDontic - Clinica Odontológica Especializada em Aparelho Ortodôntico - Mafra SC",
+   "nota": 4.9,
+   "avaliacoes": 155,
+   "endereco": "Centro II - R. Felipe Schmidt, 1136 - Centro II Alto de Mafra, Mafra - SC, 89300-074",
+   "mapa": "https://maps.google.com/?cid=6161719758715199259&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+   "gravidade": "amarela",
+   "chave": "categoria_divergente",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Concordia",
+   "uf": "SC",
+   "unidade": "Concordia",
+   "nome_no_google": "OrthoDontic",
+   "nota": 4.9,
+   "avaliacoes": 203,
+   "endereco": "R. do Comércio, 180 - 2º andar - Centro, Concórdia - SC, 89700-083",
+   "mapa": "https://maps.google.com/?cid=5110849242355265547&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+   "gravidade": "amarela",
+   "chave": "categoria_divergente",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Campina Grande",
+   "uf": "PB",
+   "unidade": "Campina Grande",
+   "nome_no_google": "OrthoDontic Campina Grande",
+   "nota": 4.9,
+   "avaliacoes": 400,
+   "endereco": "R. Maciel Pinheiro, 171 - 1° Andar - Centro, Campina Grande - PB, 58400-100",
+   "mapa": "https://maps.google.com/?cid=12717806731402305322&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+   "gravidade": "amarela",
+   "chave": "categoria_divergente",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Teixeira de Freitas",
+   "uf": "BA",
+   "unidade": "Teixeira de Freitas",
+   "nome_no_google": "OrthoDontic",
+   "nota": 4.9,
+   "avaliacoes": 455,
+   "endereco": "Rua Pedro Álvares Cabral, 26 - Centro, Teixeira de Freitas - BA, 45985-172",
+   "mapa": "https://maps.google.com/?cid=6959471329166258927&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+   "gravidade": "amarela",
+   "chave": "categoria_divergente",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Santa Maria",
+   "uf": "RS",
+   "unidade": "Santa Maria/RS",
+   "nome_no_google": "OrthoDontic",
+   "nota": 5,
+   "avaliacoes": 338,
+   "endereco": "R. do Acampamento, 159 - 2° Andar - Centro, Santa Maria - RS, 97050-001",
+   "mapa": "https://maps.google.com/?cid=6758002855844809232&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+   "gravidade": "amarela",
+   "chave": "categoria_divergente",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Boituva",
+   "uf": "SP",
+   "unidade": "Boituva",
+   "nome_no_google": "OrthoDontic Boituva",
+   "nota": 5,
+   "avaliacoes": 40,
+   "endereco": "Rua Expedicionário Souza Filho, 470 - Jardim Nova Boituva, Boituva - SP, 18550-000",
+   "mapa": "https://maps.google.com/?cid=18125132579521352759&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+   "gravidade": "amarela",
+   "chave": "categoria_divergente",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Bauru",
+   "uf": "SP",
+   "unidade": "Bauru Mary Dota",
+   "nome_no_google": "OrthoDontic",
+   "nota": 5,
+   "avaliacoes": 325,
+   "endereco": "R. Venâncio Ramalho Guedes de Azevedo, 1-11 - Núcleo Habitacional Mary Dota, Bauru - SP, 17026-590",
+   "mapa": "https://maps.google.com/?cid=15628629950310938274&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+   "gravidade": "amarela",
+   "chave": "categoria_divergente",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Passos",
+   "uf": "MG",
+   "unidade": "Passos",
+   "nome_no_google": "OrthoDontic",
+   "nota": 5,
+   "avaliacoes": 293,
+   "endereco": "R. Dr. Carvalho, 1254 - Centro, Passos - MG, 37900-101",
+   "mapa": "https://maps.google.com/?cid=14646603457829635697&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+   "gravidade": "amarela",
+   "chave": "categoria_divergente",
+   "de_quem_e": "unidade"
+  },
+  {
+   "cidade": "Venancio Aires",
+   "uf": "RS",
+   "unidade": "Venancio Aires",
+   "nome_no_google": "OrthoDontic",
+   "nota": 5,
+   "avaliacoes": 1,
+   "endereco": "R. Júlio de Castilhos, 1066 - Centro, Venâncio Aires - RS, 95800-000",
+   "mapa": "https://maps.google.com/?cid=11098926575928285384&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "situacao_na_lista": "aberta",
+   "situacao_google": "OPERATIONAL",
+   "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+   "gravidade": "amarela",
+   "chave": "categoria_divergente",
+   "de_quem_e": "unidade"
+  }
+ ],
+ "por_uf": [
+  {
+   "uf": "SP",
+   "unidades": 65,
+   "nota_mediana": 4.8
+  },
+  {
+   "uf": "PR",
+   "unidades": 52,
+   "nota_mediana": 4.8
+  },
+  {
+   "uf": "SC",
+   "unidades": 47,
+   "nota_mediana": 4.8
+  },
+  {
+   "uf": "RS",
+   "unidades": 46,
+   "nota_mediana": 4.8
+  },
+  {
+   "uf": "MG",
+   "unidades": 32,
+   "nota_mediana": 4.8
+  },
+  {
+   "uf": "GO",
+   "unidades": 18,
+   "nota_mediana": 4.8
+  },
+  {
+   "uf": "BA",
+   "unidades": 18,
+   "nota_mediana": 4.8
+  },
+  {
+   "uf": "DF",
+   "unidades": 10,
+   "nota_mediana": 4.8
+  },
+  {
+   "uf": "MT",
+   "unidades": 7,
+   "nota_mediana": 4.9
+  },
+  {
+   "uf": "ES",
+   "unidades": 5,
+   "nota_mediana": 4.9
+  },
+  {
+   "uf": "RJ",
+   "unidades": 5,
+   "nota_mediana": 4.8
+  },
+  {
+   "uf": "MS",
+   "unidades": 4,
+   "nota_mediana": 4.3
+  },
+  {
+   "uf": "PE",
+   "unidades": 3,
+   "nota_mediana": 5
+  },
+  {
+   "uf": "AM",
+   "unidades": 2,
+   "nota_mediana": 4.7
+  },
+  {
+   "uf": "PA",
+   "unidades": 2,
+   "nota_mediana": 4.8
+  },
+  {
+   "uf": "PI",
+   "unidades": 2,
+   "nota_mediana": 5.0
+  },
+  {
+   "uf": "PB",
+   "unidades": 2,
+   "nota_mediana": 4.9
+  },
+  {
+   "uf": "RO",
+   "unidades": 2,
+   "nota_mediana": 4.8
+  },
+  {
+   "uf": "CE",
+   "unidades": 1,
+   "nota_mediana": 4.4
+  },
+  {
+   "uf": "AL",
+   "unidades": 1,
+   "nota_mediana": 4.9
+  },
+  {
+   "uf": "TO",
+   "unidades": 1,
+   "nota_mediana": 5
+  },
+  {
+   "uf": "RR",
+   "unidades": 1,
+   "nota_mediana": 5
+  }
+ ],
+ "nao_confirmadas_lista": [
+  {
+   "cidade": "Presidente Prudente",
+   "uf": "SP",
+   "por_que": "'OrthoDontic' fica em outra cidade: R. Djalma Dutra, 234 - Centro, Pres. Prudente - SP"
+  },
+  {
+   "cidade": "Montes Claros",
+   "uf": "MG",
+   "por_que": "a busca devolveu a MESMA ficha de 'Montes Claros - Rua Coronel Prates' — cidade com mais de uma unidade e nomes que não desempatam"
+  },
+  {
+   "cidade": "Coronel Fabriciano",
+   "uf": "MG",
+   "por_que": "'Orthodontic' fica em outra cidade: R. Pedro Nolasco, 63 - Centro, Cel. Fabriciano - M"
+  },
+  {
+   "cidade": "São Sebastiao",
+   "uf": "DF",
+   "por_que": "o topo é 'Ponto do Sorriso', que não é da marca"
+  },
+  {
+   "cidade": "Guaiba",
+   "uf": "RS",
+   "por_que": "a busca devolveu a MESMA ficha de 'Guaiba' — cidade com mais de uma unidade e nomes que não desempatam"
+  },
+  {
+   "cidade": "Sorocaba",
+   "uf": "SP",
+   "por_que": "a busca devolveu a MESMA ficha de 'Sorocaba - Rua Eulalia Silva' — cidade com mais de uma unidade e nomes que não desempatam"
+  },
+  {
+   "cidade": "Porto Alegre",
+   "uf": "RS",
+   "por_que": "a busca devolveu a MESMA ficha de 'Porto Alegre - Av. Borges' — cidade com mais de uma unidade e nomes que não desempatam"
+  },
+  {
+   "cidade": "Fortaleza",
+   "uf": "CE",
+   "por_que": "a busca devolveu a MESMA ficha de 'Fortaleza - Centro' — cidade com mais de uma unidade e nomes que não desempatam"
+  },
+  {
+   "cidade": "Goiânia",
+   "uf": "GO",
+   "por_que": "a busca devolveu a MESMA ficha de 'Goiânia - Centro' — cidade com mais de uma unidade e nomes que não desempatam"
+  },
+  {
+   "cidade": "Ceilândia - Metro",
+   "uf": "DF",
+   "por_que": "'OrthoDontic' fica em outra cidade: Q. 29, Lote 09 ANDAR 4 CONJ 21 - Paranoá, Brasília"
+  },
+  {
+   "cidade": "Itatiba",
+   "uf": "SP",
+   "por_que": "o topo é 'REDEORTO Itatiba', que não é da marca"
+  },
+  {
+   "cidade": "Vitoria da Conquista",
+   "uf": "BA",
+   "por_que": "a busca devolveu a MESMA ficha de 'Vitoria da Conquista' — cidade com mais de uma unidade e nomes que não desempatam"
+  },
+  {
+   "cidade": "Santa Barbara DOeste",
+   "uf": "SP",
+   "por_que": "'OrthoDontic' fica em outra cidade: R. General Osório, 410 - Centro, Santa Bárbara d'O"
+  },
+  {
+   "cidade": "Sertaozinho",
+   "uf": "SP",
+   "por_que": "o topo é 'Nino Odontologia', que não é da marca"
+  },
+  {
+   "cidade": "Senador Canedo",
+   "uf": "GO",
+   "por_que": "'OrthoDontic' fica em outra cidade: Av. Dr. José Carneiro, SN - Quadra 43 Lote 17 - Re"
+  },
+  {
+   "cidade": "Cuiaba",
+   "uf": "MT",
+   "por_que": "a busca devolveu a MESMA ficha de 'Cuiaba - Centro Norte' — cidade com mais de uma unidade e nomes que não desempatam"
+  },
+  {
+   "cidade": "Uberlândia",
+   "uf": "MG",
+   "por_que": "a busca devolveu a MESMA ficha de 'Uberlândia - Av. Floriano Peixoto' — cidade com mais de uma unidade e nomes que não desempatam"
+  },
+  {
+   "cidade": "Porto Alegre",
+   "uf": "RS",
+   "por_que": "a busca devolveu a MESMA ficha de 'Porto Alegre - Av. Borges' — cidade com mais de uma unidade e nomes que não desempatam"
+  },
+  {
+   "cidade": "Valparaiso de Goias",
+   "uf": "GO",
+   "por_que": "o topo é 'OdontoCompany Valparaíso', que não é da marca"
+  },
+  {
+   "cidade": "Aparecida de Goiânia",
+   "uf": "GO",
+   "por_que": "a busca devolveu a MESMA ficha de 'Aparecida de Goiânia' — cidade com mais de uma unidade e nomes que não desempatam"
+  },
+  {
+   "cidade": "Porto Alegre",
+   "uf": "RS",
+   "por_que": "a busca devolveu a MESMA ficha de 'Porto Alegre - Av. Borges' — cidade com mais de uma unidade e nomes que não desempatam"
+  },
+  {
+   "cidade": "Senhor do Bonfim",
+   "uf": "BA",
+   "por_que": "'OrthoDontic' fica em outra cidade: R. Mariano Ventura, 123 - Centro, Sr. do Bonfim - "
+  },
+  {
+   "cidade": "São Carlos",
+   "uf": "SP",
+   "por_que": "o topo é 'X-Dent', que não é da marca"
+  },
+  {
+   "cidade": "Ferraz de Vasconcelos",
+   "uf": "SP",
+   "por_que": "o topo é 'Sorridents Ferraz de Vasconcelos: Dentis', que não é da marca"
+  },
+  {
+   "cidade": "Aracaju",
+   "uf": "SE",
+   "por_que": "o topo é 'Odonto Ortoplan', que não é da marca"
+  },
+  {
+   "cidade": "Cidade Ocidental",
+   "uf": "GO",
+   "por_que": "o topo é 'Odontoclinica', que não é da marca"
+  },
+  {
+   "cidade": "Blumenau",
+   "uf": "SC",
+   "por_que": "a busca devolveu a MESMA ficha de 'Blumenau - Centro' — cidade com mais de uma unidade e nomes que não desempatam"
+  },
+  {
+   "cidade": "Itapoa",
+   "uf": "SC",
+   "por_que": "o topo é 'Dentalclin Clínica', que não é da marca"
+  },
+  {
+   "cidade": "Canela",
+   "uf": "RS",
+   "por_que": "o topo é 'Méca Odontologia: Dentista Clínica Odont', que não é da marca"
+  },
+  {
+   "cidade": "Bebedouro",
+   "uf": "SP",
+   "por_que": "o topo é 'Clínicas Sempre Sorrindo - Implantes den', que não é da marca"
+  },
+  {
+   "cidade": "Aguas Claras",
+   "uf": "DF",
+   "por_que": "o topo é 'Oral Unic Implantes - Águas Claras', que não é da marca"
+  },
+  {
+   "cidade": "Mandaguari",
+   "uf": "PR",
+   "por_que": "o topo é 'Odontologia Brianez Dr. Ronaldo Brianez', que não é da marca"
+  },
+  {
+   "cidade": "Pouso Alegre",
+   "uf": "MG",
+   "por_que": "o topo é 'Ortopress', que não é da marca"
+  },
+  {
+   "cidade": "São Francisco do Sul",
+   "uf": "SC",
+   "por_que": "o topo é 'Odonto Excellence São Francisco do Sul', que não é da marca"
+  },
+  {
+   "cidade": "Cuiaba",
+   "uf": "MT",
+   "por_que": "a busca devolveu a MESMA ficha de 'Cuiaba - Centro Norte' — cidade com mais de uma unidade e nomes que não desempatam"
+  },
+  {
+   "cidade": "Itupeva",
+   "uf": "SP",
+   "por_que": "'Orthodontic' fica em outra cidade: R. Baronesa do Japi, 243 - Piso Superior - Bela Vi"
+  },
+  {
+   "cidade": "Matinhos",
+   "uf": "PR",
+   "por_que": "o topo é 'Ortovips Clinica Odontológica Matinhos', que não é da marca"
+  },
+  {
+   "cidade": "Camaqua",
+   "uf": "RS",
+   "por_que": "o topo é 'Sorrifácil Camaquã - Implantes Dentários', que não é da marca"
+  },
+  {
+   "cidade": "Indaiatuba",
+   "uf": "SP",
+   "por_que": "a busca devolveu a MESMA ficha de 'Indaiatuba' — cidade com mais de uma unidade e nomes que não desempatam"
+  },
+  {
+   "cidade": "Jaboticabal",
+   "uf": "SP",
+   "por_que": "o topo é 'Centro de Especializações Odontológicas ', que não é da marca"
+  },
+  {
+   "cidade": "Ituiutaba",
+   "uf": "MG",
+   "por_que": "o topo é 'Clínica Campos - Referência em Implantes', que não é da marca"
+  },
+  {
+   "cidade": "Taquaritinga",
+   "uf": "SP",
+   "por_que": "o topo é 'Dental Line - Clínica Odontológica', que não é da marca"
+  },
+  {
+   "cidade": "Planaltina",
+   "uf": "DF",
+   "por_que": "o topo é 'UpDent Planaltina', que não é da marca"
+  },
+  {
+   "cidade": "Paranagua",
+   "uf": "PR",
+   "por_que": "a busca devolveu a MESMA ficha de 'Paranagua' — cidade com mais de uma unidade e nomes que não desempatam"
+  },
+  {
+   "cidade": "Lapa",
+   "uf": "PR",
+   "por_que": "o topo é 'Instituto de Odontologia Vetor', que não é da marca"
+  },
+  {
+   "cidade": "São Joaquim da Barra",
+   "uf": "SP",
+   "por_que": "o topo é 'Segatto Clínica | Odontologia e Fisioter', que não é da marca"
+  },
+  {
+   "cidade": "Ilheus",
+   "uf": "BA",
+   "por_que": "o topo é 'Interface Odontomédica Ilhéus', que não é da marca"
+  },
+  {
+   "cidade": "Marechal Candido Rondon",
+   "uf": "PR",
+   "por_que": "'OrthoDontic Center' fica em outra cidade: R. 7 de Setembro, 2806-2876 - Centro, Mal. Cândido"
+  }
+ ]
+}

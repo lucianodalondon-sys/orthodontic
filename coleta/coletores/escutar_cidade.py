@@ -63,16 +63,24 @@ def canais(praca):
     if not arq.exists():
         return []
     linhas = [json.loads(l) for l in arq.read_text(encoding="utf-8").split("\n") if l.strip()]
-    da_praca = [c for c in linhas if c.get("praca_id") == praca and c.get("handle")]
+    # Dois consertos aqui, e o segundo evitava coletar o concorrente errado.
+    #
+    # 1 · Era "só o snapshot mais recente". Canal promovido num dia diferente
+    #     sumia calado — e os canais entraram na série em três datas, conforme
+    #     iam sendo achados. Agora vale o registro mais recente DE CADA handle.
+    #
+    # 2 · Não filtrava `rejeitado`. Iria escutar o Rio Branco Atlético Clube do
+    #     Espírito Santo, a Prefeitura de Rio Branco do SUL e o restaurante de
+    #     Mafra/Portugal — todos conferidos como homônimo de outra cidade.
+    da_praca = [c for c in linhas
+                if c.get("praca_id") == praca and c.get("handle")
+                and not c.get("rejeitado")]
     if not da_praca:
         return []
-    ultimo = max(c["snapshot_date"] for c in da_praca)
-    vistos, fora = set(), []
-    for c in da_praca:
-        if c["snapshot_date"] == ultimo and c["handle"] not in vistos:
-            vistos.add(c["handle"])
-            fora.append(c)
-    return fora
+    por_handle = {}
+    for c in sorted(da_praca, key=lambda x: x.get("snapshot_date", "")):
+        por_handle[c["handle"]] = c
+    return list(por_handle.values())
 
 
 def roda(praca, n_posts, tok, dry=False):

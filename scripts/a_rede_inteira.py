@@ -1,0 +1,182 @@
+#!/usr/bin/env python3
+"""
+a_rede_inteira.py — as 374 unidades, não as 10 medidas.
+
+Por que existe
+--------------
+A crítica mais dura que o produto recebeu foi justa: "uma fila que ignora
+97,3% da rede não prioriza a rede". Toda tela falava de 10 unidades.
+
+A varredura completa continua sendo 13 praças — é ela que dá voz do paciente,
+concorrência e portas de busca. Mas a ficha pública das 374 saiu por uma
+chamada por unidade na API do Google, e ela responde o que a franqueadora
+pergunta primeiro: **onde a marca está mal na rua, agora.**
+
+O que ele acha e ninguém achava
+--------------------------------
+  · a unidade que o Google marca como FECHADA PERMANENTEMENTE enquanto a
+    lista oficial da rede diz que está aberta — isso é risco de marca, e só
+    a franqueadora resolve
+  · a unidade com nota abaixo de 4,0, nomeada
+  · a unidade aberta sem NENHUMA avaliação: existe no papel e não existe
+    para quem procura
+  · a ficha cadastrada na categoria errada
+
+O que ele NÃO faz, e está escrito na tela
+------------------------------------------
+Não mede ritmo. Ritmo exige a data de cada avaliação, e isso é a varredura
+cara. Aqui é retrato: como a unidade aparece hoje. Nota alta com 9 avaliações
+não é o mesmo que nota alta com 686 — por isso o volume anda junto da nota
+em toda linha.
+
+Uso:
+    python3 scripts/a_rede_inteira.py
+    python3 scripts/a_rede_inteira.py --salvar
+"""
+import argparse, json, pathlib, statistics as st, sys
+from collections import Counter, defaultdict
+
+RAIZ = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(RAIZ/"scripts"))
+from cruzamento import jsonl
+
+PORTAL = RAIZ/"dados"/"portal"
+
+NOTA_RUIM = 4.0        # abaixo disso a ficha pública trabalha contra a marca
+POUCA_VOZ = 20         # com menos que isto, a nota não sustenta leitura
+
+
+def monta():
+    F = jsonl("rede_fichas")
+    if not F:
+        sys.exit("dados/serie/rede_fichas.jsonl vazio — rode "
+                 "coleta/coletores/rede_inteira.py --todas --salvar")
+    corte = max(x["snapshot_date"] for x in F)
+    F = [x for x in F if x["snapshot_date"] == corte]
+    ok = [x for x in F if x.get("confirmada")]
+    nao = [x for x in F if not x.get("confirmada")]
+
+    notas = [x["nota"] for x in ok if x.get("nota")]
+    avs = [x.get("avaliacoes") or 0 for x in ok]
+
+    def linha(x, por_que):
+        return {"cidade": x["cidade"], "uf": x["uf"],
+                "unidade": x.get("unidade_na_lista"),
+                "nome_no_google": x.get("nome"),
+                "nota": x.get("nota"), "avaliacoes": x.get("avaliacoes"),
+                "endereco": x.get("endereco"), "mapa": x.get("mapa"),
+                "situacao_na_lista": x.get("situacao_na_lista"),
+                "situacao_google": x.get("situacao_google"),
+                "por_que": por_que}
+
+    # ---------------------------------------------------------- os alertas
+    alertas = []
+
+    fechadas = [x for x in ok if x.get("situacao_google") != "OPERATIONAL"]
+    for x in fechadas:
+        alertas.append({**linha(x, "o Google marca esta ficha como FECHADA "
+                                   "PERMANENTEMENTE, e a lista oficial da rede "
+                                   "diz que a unidade está aberta"),
+                        "gravidade": "vermelha", "chave": "fechada_no_google",
+                        "de_quem_e": "franqueadora"})
+
+    sem_voz = [x for x in ok if not x.get("avaliacoes")
+               and x.get("situacao_na_lista") == "aberta"]
+    for x in sem_voz:
+        alertas.append({**linha(x, "unidade aberta sem NENHUMA avaliação: "
+                                   "existe no papel e não existe para quem procura"),
+                        "gravidade": "vermelha", "chave": "sem_nenhuma_avaliacao",
+                        "de_quem_e": "franqueadora"})
+
+    ruins = sorted([x for x in ok if x.get("nota") and x["nota"] < NOTA_RUIM],
+                   key=lambda x: x["nota"])
+    for x in ruins:
+        base = ("e com base fina, o que ainda dá conserto rápido"
+                if (x.get("avaliacoes") or 0) < POUCA_VOZ
+                else f"sobre {x['avaliacoes']} avaliações, o que já é reputação firmada")
+        alertas.append({**linha(x, f"nota {x['nota']} na ficha pública, {base}"),
+                        "gravidade": "vermelha" if x["nota"] < 3.5 else "amarela",
+                        "chave": "nota_baixa", "de_quem_e": "unidade"})
+
+    tipos = Counter(x.get("tipo") for x in ok)
+    fora_de_categoria = [x for x in ok if x.get("tipo") != tipos.most_common(1)[0][0]]
+    for x in fora_de_categoria:
+        alertas.append({**linha(x, f"ficha cadastrada como '{x.get('tipo')}' enquanto "
+                                   f"{tipos.most_common(1)[0][1]} unidades da rede usam "
+                                   f"'{tipos.most_common(1)[0][0]}'"),
+                        "gravidade": "amarela", "chave": "categoria_divergente",
+                        "de_quem_e": "unidade"})
+
+    ordem = {"vermelha": 0, "amarela": 1}
+    alertas.sort(key=lambda x: (ordem.get(x["gravidade"], 9), x.get("nota") or 9))
+
+    por_uf = defaultdict(lambda: {"unidades": 0, "notas": []})
+    for x in ok:
+        d = por_uf[x["uf"]]
+        d["unidades"] += 1
+        if x.get("nota"):
+            d["notas"].append(x["nota"])
+
+    return {
+        "corte": corte,
+        "o_que_e": "A ficha pública de cada unidade da rede, pela API do Google. "
+                   "Uma chamada por unidade.",
+        "o_que_nao_e": "Não é ritmo nem voz do paciente — para isso é a varredura "
+                       "completa, que hoje cobre 13 praças. Aqui é retrato: como a "
+                       "unidade aparece agora para quem procura.",
+        "na_lista_oficial": len(F),
+        "confirmadas": len(ok),
+        "nao_confirmadas": len(nao),
+        "por_que_nao_confirma": "a busca só aceita ficha cujo NOME contenha "
+                                "'orthodontic' e cujo ENDEREÇO seja da cidade "
+                                "procurada. Devolver menos e certo é melhor que "
+                                "devolver tudo com lixo dentro.",
+        "nota_mediana": round(st.median(notas), 1) if notas else None,
+        "nota_pior": min(notas) if notas else None,
+        "avaliacoes_somadas": sum(avs),
+        "avaliacoes_medianas": int(st.median(avs)) if avs else None,
+        "abaixo_de_4": len(ruins),
+        "alertas": alertas,
+        "por_uf": sorted([{"uf": k, "unidades": v["unidades"],
+                           "nota_mediana": round(st.median(v["notas"]), 1)
+                                           if v["notas"] else None}
+                          for k, v in por_uf.items()],
+                         key=lambda x: -x["unidades"]),
+        "nao_confirmadas_lista": [{"cidade": x["cidade"], "uf": x["uf"],
+                                   "por_que": x.get("nao_confirmada_porque")}
+                                  for x in nao],
+    }
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--salvar", action="store_true")
+    a = ap.parse_args()
+    d = monta()
+
+    print(f"\n{'='*78}\n  A REDE INTEIRA — {d['confirmadas']} de "
+          f"{d['na_lista_oficial']} fichas conferidas\n{'='*78}\n")
+    print(f"  nota mediana {d['nota_mediana']} · pior {d['nota_pior']} · "
+          f"{d['avaliacoes_somadas']:,} avaliações somadas".replace(",", "."))
+    print(f"  {d['abaixo_de_4']} unidades com nota abaixo de 4,0\n")
+
+    verm = [x for x in d["alertas"] if x["gravidade"] == "vermelha"]
+    print(f"  {len(verm)} ALERTA(S) VERMELHO(S)\n")
+    for x in verm:
+        print(f"   ● {x['cidade']}/{x['uf']:2s} · {x.get('unidade') or ''}")
+        print(f"     {x['por_que']}")
+        print(f"     nota {x.get('nota')} · {x.get('avaliacoes')} aval · "
+              f"resolve: {x['de_quem_e']}\n")
+
+    print(f"  amarelos: {len([x for x in d['alertas'] if x['gravidade']=='amarela'])}")
+    print(f"\n  {d['nao_confirmadas']} não confirmadas — {d['por_que_nao_confirma'][:70]}…")
+
+    if a.salvar:
+        PORTAL.mkdir(parents=True, exist_ok=True)
+        (PORTAL/"rede_inteira.json").write_text(
+            json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
+        print(f"\n  → dados/portal/rede_inteira.json")
+
+
+if __name__ == "__main__":
+    main()
