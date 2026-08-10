@@ -31,18 +31,42 @@ ACTOR = "apify~instagram-scraper"
 API = "https://api.apify.com/v2"
 
 
+# As contas são FREE, US$ 5/mês cada. Uma só não atravessa uma rodada: a
+# coleta de Parauapebas morreu na metade dos canais com "Monthly usage hard
+# limit exceeded", e antes disso cinco cidades saíram como "ok · +0 registros".
+# Agora a lista inteira fica na mão e o coletor troca de token quando estoura,
+# em vez de morrer calado.
+sys.path.insert(0, str(RAIZ/"coleta"))
+from tokens import vivos as _vivos, resumo as _resumo
+
+
+class Cota:
+    """A fila de tokens. `atual()` dá o de agora; `queimou()` passa ao próximo."""
+
+    def __init__(self):
+        self.fila = _vivos(quieto=True)
+        if not self.fila:
+            sys.exit("nenhum token Apify com cota — rode python3 coleta/tokens.py")
+        self.i = 0
+
+    def atual(self):
+        return self.fila[self.i]["token"]
+
+    def queimou(self):
+        self.i += 1
+        if self.i >= len(self.fila):
+            return False
+        print(f"  ↻ token estourado, trocando para o {self.i+1}º de "
+              f"{len(self.fila)} (US$ {self.fila[self.i]['livre']:.2f} livres)")
+        return True
+
+
+def sem_cota(d):
+    return isinstance(d, dict) and "hard limit" in str(d.get("error", {}))
+
+
 def token():
-    t = os.environ.get("APIFY_TOKEN", "").strip()
-    if not t:
-        env = RAIZ/"_pipeline"/".env"
-        if env.exists():
-            for l in env.read_text(encoding="utf-8").split("\n"):
-                l = l.strip().replace("\r", "")
-                if l.startswith("APIFY_TOKEN="):
-                    t = l.split("=", 1)[1].strip()
-    if not t:
-        sys.exit("APIFY_TOKEN ausente")
-    return t
+    return Cota().atual()
 
 
 def curl(u, *a, tent=4):
@@ -99,10 +123,18 @@ def roda(praca, n_posts, tok, dry=False):
 
     corpo = {"directUrls": [f"https://www.instagram.com/{c['handle']}/" for c in cs],
              "resultsType": "posts", "resultsLimit": n_posts, "addParentData": True}
-    d = curl(f"{API}/acts/{ACTOR}/run-sync-get-dataset-items?token={tok}&timeout=1800&memory=4096",
-             "-X", "POST", "-H", "Content-Type: application/json",
-             "-d", json.dumps(corpo, ensure_ascii=False))
-    if not isinstance(d, list):
+    cota = tok if isinstance(tok, Cota) else None
+    d = None
+    while True:
+        t = cota.atual() if cota else tok
+        d = curl(f"{API}/acts/{ACTOR}/run-sync-get-dataset-items?token={t}"
+                 f"&timeout=1800&memory=4096",
+                 "-X", "POST", "-H", "Content-Type: application/json",
+                 "-d", json.dumps(corpo, ensure_ascii=False))
+        if isinstance(d, list):
+            break
+        if cota and sem_cota(d) and cota.queimou():
+            continue
         print(f"  [FALHOU] {str(d)[:180]}")
         return
 

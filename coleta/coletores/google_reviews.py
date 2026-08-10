@@ -95,18 +95,37 @@ def alvos_da_praca(praca):
     return fora
 
 
+# Contas FREE de US$ 5 não atravessam uma varredura de avaliações — a de
+# Prudente sozinha tem 592 para ler. A lista de tokens fica na mão e o coletor
+# troca quando um estoura, em vez de parar no meio e gravar meia unidade.
+sys.path.insert(0, str(RAIZ/"coleta"))
+from tokens import vivos as _vivos
+
+
+class Cota:
+    def __init__(self):
+        self.fila = _vivos(quieto=True)
+        if not self.fila:
+            sys.exit("nenhum token Apify com cota — rode python3 coleta/tokens.py")
+        self.i = 0
+
+    def atual(self):
+        return self.fila[self.i]["token"]
+
+    def queimou(self):
+        self.i += 1
+        if self.i >= len(self.fila):
+            return False
+        print(f"    ↻ token estourado, indo para o {self.i+1}º de {len(self.fila)}")
+        return True
+
+
+def sem_cota(d):
+    return "hard limit" in str(d)
+
+
 def token():
-    t = os.environ.get("APIFY_TOKEN", "").strip()
-    if not t:
-        env = RAIZ/"_pipeline"/".env"
-        if env.exists():
-            for l in env.read_text(encoding="utf-8").split("\n"):
-                l = l.strip().replace("\r", "")
-                if l.startswith("APIFY_TOKEN="):
-                    t = l.split("=", 1)[1].strip()
-    if not t:
-        sys.exit("APIFY_TOKEN ausente (env ou _pipeline/.env)")
-    return t
+    return Cota().atual()
 
 
 def post(url, body, tok, timeout=900):
@@ -147,6 +166,16 @@ def roda_lote(alvos, max_reviews, tok):
 
 
 def roda(alvo, max_reviews, tok):
+    """Com rotação: se o token estourar no meio, troca e refaz a chamada."""
+    if isinstance(tok, Cota):
+        while True:
+            d = _roda_uma(alvo, max_reviews, tok.atual())
+            if isinstance(d, list) or not sem_cota(d) or not tok.queimou():
+                return d
+    return _roda_uma(alvo, max_reviews, tok)
+
+
+def _roda_uma(alvo, max_reviews, tok):
     """Roda o actor e espera. run-sync-get-dataset-items devolve os itens direto.
 
     Por place_id quando existe (exato), por nome só como retaguarda.
@@ -191,7 +220,7 @@ def main():
         sys.exit("use --praca <id> ou --todas")
 
     hoje = dt.date.today().isoformat()
-    tok = token()
+    tok = Cota()
 
     places = {(r["local_id"], r["snapshot_date"]): r for r in jsonl_le(SERIE/"places.jsonl")}
     reviews = {r["chave"]: r for r in jsonl_le(SERIE/"reviews.jsonl")}
