@@ -164,3 +164,73 @@ praça — só não é mais ferramenta de primeiro nível.
   Escreva o travessão e a legenda, e pronto.
 - Não some com as oito ferramentas de CONSULTAR. Elas ficam — recolhidas,
   não deletadas.
+
+---
+
+# ADENDO v3.1 — a tela do rival, e o que mudou no payload
+
+Três coisas novas desde o v3. O design continua aprovado; nada de redesenhar.
+
+## A · Ferramenta nova no andar DECIDIR: `dados/portal/rival.json`
+
+**"O que o rival faz que dá certo"** — a leitura das 33.348 avaliações de
+concorrente. É a única tela do portal que dá instrução em vez de diagnóstico.
+
+Duas camadas, e a ordem importa:
+
+**1 · `padrao_da_rede`** — desenhe primeiro. É a leitura da franqueadora:
+
+```json
+{ "o_que_e": "Tem profissional que o paciente chama pelo nome",
+  "perde_em": 5, "de": 5, "pior_razao": 5.0,
+  "nosso_pior": 6.0, "nosso_melhor": 10.9,
+  "de_quem_e_a_decisao": "franqueadora",
+  "pracas": [{"rotulo": "MG · Contagem", "razao": 5.0, "quem": "ODONTO ART…"}] }
+```
+
+Quando `de_quem_e_a_decisao` for `"franqueadora"`, marque a linha. É o que
+separa "visita do consultor" de "treinamento de rede" — e é a frase que a
+diretoria compra.
+
+**2 · `pracas[]`** — o detalhe por cidade, com `vantagens_deles` ordenadas
+por `razao`. Cada linha diz: o que o rival faz, quem é ele, a proporção
+dele contra a nossa, e quantas vezes.
+
+**Obrigatório na tela:** `rivais_fora` — quem foi tirado da comparação e
+**por quê**. A Vitae Center é "1ª de Contagem" e é um centro médico; se ela
+não aparecer explicada, alguém vai perguntar por que sumiu. Cada exclusão
+traz o motivo escrito, e ele diz se cortou pela categoria ou pelo nome.
+
+E o rodapé fixo: *"não é o que ele fatura nem o que ele gasta; é o que o
+paciente dele escolheu escrever"*.
+
+## B · A escada dos achados mudou de forma
+
+`achados.json` agora carrega, por achado:
+
+- `como_se_mede` — a frase que explica o método. **Desenhe visível**, não em
+  tooltip: é ela que sustenta o número numa reunião.
+- `excecoes[]` — as praças que contrariam, nomeadas. **Nunca esconda.** Um
+  padrão sem exceção soa a curadoria; com a exceção nomeada, aguenta pergunta.
+- `sem_amostra[]` — praças que não votaram, e por isso o denominador é menor.
+- `estado: "nao_testavel"` + `por_que_nao` — seis achados são leitura humana
+  e estão declarados. Desenhe-os apagados, com o motivo, no fim da escada.
+
+Os degraus agora são: `constante` · `vale_para_a_rede` · `se_repete` ·
+`candidata` · `derrubada` · `nao_testavel`.
+
+## C · O padrão da praça: `dados/portal/padrao.json`
+
+Quinze etapas × treze praças, com `ok`, `estado` e o comando que preenche
+cada buraco. Serve de tela de bastidor — quem duvida de uma praça abre e vê
+o que foi feito nela. Não precisa ir para o menu principal; um link no rodapé
+da ficha de praça basta.
+
+## D · Números que mudaram e estão em tela
+
+| | |
+|---|---|
+| cobertura | **13 praças ouvidas · 374 unidades** (era "4 de 340", escrito à mão) |
+| planos de franqueado | **7** — só praça com unidade |
+| reputação | **7 redes** de ortodontia e odontologia popular; implante fora, nomeado |
+| praças com estudo completo | **7 de 7** da rede |
