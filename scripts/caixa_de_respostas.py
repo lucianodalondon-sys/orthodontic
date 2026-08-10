@@ -83,7 +83,11 @@ def monta():
         "com_texto": com_texto,
         "manchete": (f"{total} avaliações negativas sem resposta na rede medida — "
                      f"{com_texto} delas com o paciente explicando o motivo."),
-        "unidades": unidades,
+        # a tela não conta lista: "lojas com fila" e o tamanho de cada fila
+        # saem contados daqui
+        "lojas_com_fila": len(unidades),
+        "unidades": [dict(u, itens_total=len(u.get("itens") or []))
+                     for u in unidades],
     }
 
 

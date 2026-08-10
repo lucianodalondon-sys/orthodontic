@@ -115,6 +115,31 @@ ordem:
 
 - **O casco NUNCA calcula** — nenhuma soma, média, %, ordenação por
   valor, montagem de rótulo. Falta número? Conserto é no build.
+- **`.length` na tela é conta na tela.** Todo "quantos itens tem aqui"
+  já vem contado ao lado da lista. Use o campo, nunca conte o array:
+
+  | em vez de contar | use |
+  |---|---|
+  | `manifest.pracas[].tem` | `.estudos` |
+  | `franqueadora.rede.ufs_sem_unidade` | `.ufs_sem_unidade_total` |
+  | `caixa.unidades` | `caixa.lojas_com_fila` |
+  | `caixa.unidades[].itens` | `.itens_total` |
+  | `padroes.hipoteses_testadas` | `.hipoteses_testadas_total` |
+  | `funil_nacional.candidatas` | `.candidatas_total` |
+  | `rede_inteira.alertas` | `.alertas_total` |
+  | `rival.pracas[].rivais_fora` | `.rivais_fora_total` |
+  | `clinicas/*.sem_resposta.itens` | `.itens_total` |
+  | `clinicas/*.rival.fora` | `.fora_total` |
+  | `captacao/*.fora` `.sem_dono` `.dentro` | `.fora_total` `.sem_dono_total` `.dentro_total` |
+
+  E quando a lista for cortada para caber ("mostrar 8, esconder o
+  resto"), o rótulo é **"ver todas as N"** com o total pronto — nunca
+  `total − 8`, que é subtração na tela.
+- **Nenhum número no HTML.** `374`, `348`, `10 lojas`, `340` não se
+  escrevem: todos mudam a cada coleta. Rótulo de menu e sobrelinha de
+  tela saem de `franqueadora.json → grupos[]` e `cobertura`. Um `374`
+  cravado sobrevive à coleta que o desmente — já aconteceu, ficou quatro
+  semanas na tela ao lado de um bloco que dizia outro número.
 - **Rótulo com a UF na frente**, recebido pronto.
 - **Loja não se funde com loja** — Cuiabá são três páginas, Londrina duas.
 - **Estado vazio é conteúdo** — ferramenta apagada mostra o porquê;

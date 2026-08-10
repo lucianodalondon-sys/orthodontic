@@ -187,9 +187,15 @@ def main():
     cap = jsonl("captacao")
     if cap:
         (OUT/"captacao").mkdir(parents=True, exist_ok=True)
-        corte_cap = max(r["snapshot_date"] for r in cap)
-        for r in ultimo_por([c for c in cap if c["snapshot_date"] == corte_cap],
-                            lambda c: c["praca_id"]).values():
+        # A ÚLTIMA medição DE CADA PRAÇA, não as da última data do arquivo.
+        # Filtrar pela data máxima global só reescrevia a praça medida naquele
+        # dia (1 de 13); as outras 12 telas eram sobra de um build anterior —
+        # apagar dados/portal/captacao/ fazia doze telas sumirem sem erro.
+        # Cada arquivo carrega o próprio snapshot_date, que é o que a tela lê.
+        for r in ultimo_por(cap, lambda c: c["praca_id"]).values():
+            # os três grupos de frases vão com o tamanho contado ao lado
+            r = dict(r, **{f"{g}_total": len(r.get(g) or [])
+                           for g in ("fora", "sem_dono", "dentro")})
             escreve(f"captacao/{r['praca_id']}", r)
             escritos.append(f"captacao/{r['praca_id']}")
 
@@ -642,6 +648,7 @@ def main():
              "evidencias", "arquivo", (OUT/"evidencias.json").exists()),
     ]
 
+    sem_unidade = [m["uf"] for m in mapa if not m["unidades"]]
     escritos.append(escreve("franqueadora", {
         "corte": corte,
         "gerado_em": dt.datetime.now().isoformat(timespec="seconds"),
@@ -651,7 +658,8 @@ def main():
             "em_implantacao": sum(1 for u in atuais if u["situacao"] != "aberta"),
             "cidades": len({u["cidade"] for u in atuais}),
             "ufs_com_unidade": sum(1 for m in mapa if m["unidades"]),
-            "ufs_sem_unidade": [m["uf"] for m in mapa if not m["unidades"]],
+            "ufs_sem_unidade": sem_unidade,
+            "ufs_sem_unidade_total": len(sem_unidade),
             "medido_em": rede_corte,
             "fonte": "orthodonticbrasil.com.br/encontre-uma-unidade",
         },
@@ -679,9 +687,13 @@ def main():
                                  for x in fila.get("fila", [])[:3]],
                    "tela": "fila"} if fila.get("fila") else None),
         "grupos": [
+            # Nunca escrever "374" nem "10" aqui: os dois números mudam a cada
+            # coleta, e um rótulo cravado à mão sobrevive à mudança mentindo.
             {"chave": "rede", "nome": "A rede",
-             "explica": "as 374 unidades: mapa, alertas e reputação da marca"},
-            {"chave": "lojas", "nome": "As 10 lojas acompanhadas",
+             "explica": f"as {cobertura['unidades_total']} unidades: mapa, "
+                        f"alertas e reputação da marca"},
+            {"chave": "lojas",
+             "nome": f"As {cobertura['unidades_acompanhadas']} lojas acompanhadas",
              "explica": "as unidades medidas de perto, loja por loja"},
             {"chave": "expansao", "nome": "Expansão",
              "explica": "onde abrir a próxima franquia"},
@@ -741,11 +753,13 @@ def main():
             "o_que_mudou": _md_por.get(lid),
             "sem_resposta": {"abertas": cx.get("abertas"),
                              "com_texto": cx.get("com_texto"),
-                             "itens": cx.get("itens") or []},
+                             "itens": cx.get("itens") or [],
+                             "itens_total": len(cx.get("itens") or [])},
             "voz_do_paciente": voz,
             "rival": {"comparados": rv.get("rivais_comparados") or [],
                       "vantagens_deles": rv.get("vantagens_deles") or [],
                       "fora": rv.get("rivais_fora") or [],
+                      "fora_total": len(rv.get("rivais_fora") or []),
                       "sem_comparacao_porque": rv.get("sem_comparacao_porque")},
             "eventos": l.get("eventos") or [],
         }))
@@ -760,6 +774,21 @@ def main():
         d = OUT/pasta
         return sorted(a.stem for a in d.glob("*.json")) if d.exists() else []
 
+    # O casco não conta lista: quando um número da tela é "quantos itens tem
+    # aqui", ele sai contado daqui, ao lado da lista. Foi assim que "estudos
+    # nesta praça" virou len() na tela — e len() na tela é conta na tela.
+    def _ficha_praca(p):
+        tem = [k for k, v in (("praca", f"pracas/{p}"),
+                              ("captacao", f"captacao/{p}"),
+                              ("plano", f"planos/{p}"))
+               if (OUT/f"{v}.json").exists()]
+        return {"praca_id": p, "nome": ident[p].get("nome"),
+                "rotulo": ident[p].get("rotulo") or ident[p].get("nome"),
+                "uf": ident[p].get("uf", []),
+                "cidades": (ident[p].get("cidades_rotulo")
+                            or ident[p].get("cidades", [])),
+                "tem": tem, "estudos": len(tem)}
+
     escreve("manifest", {
         "gerado_em": dt.datetime.now().isoformat(timespec="seconds"),
         "gerado_de": "dados/serie + dados/conteudo + dados/identidade",
@@ -768,15 +797,7 @@ def main():
                                   if r.get("taxonomia_versao")), None),
         "cobertura": {**carrega(CONT, "rede").get("cobertura", {}), **cobertura},
         # o casco NÃO monta rótulo de cidade — recebe pronto, com a UF na frente
-        "pracas": [{"praca_id": p, "nome": ident[p].get("nome"),
-                    "rotulo": ident[p].get("rotulo") or ident[p].get("nome"),
-                    "uf": ident[p].get("uf", []),
-                    "cidades": ident[p].get("cidades_rotulo") or ident[p].get("cidades", []),
-                    "tem": [k for k, v in (("praca", f"pracas/{p}"),
-                                           ("captacao", f"captacao/{p}"),
-                                           ("plano", f"planos/{p}"))
-                            if (OUT/f"{v}.json").exists()]}
-                   for p in PRACAS],
+        "pracas": [_ficha_praca(p) for p in PRACAS],
         # o índice de verdade: o que existe, agora, nesta pasta
         "arquivos": {
             "rede": [x for x in ("fila", "timeline", "caixa_de_respostas", "padroes", "o_que_mudou", "rede_inteira", "rival", "voz_da_cidade", "rede", "rede_cruzamento", "achados",

@@ -176,6 +176,8 @@ def main():
                                   "suficiente na praça — as clínicas medidas "
                                   "aqui são de outro produto",
                               "rivais_fora": [r for r in rivais if r["fora"]],
+                              "rivais_fora_total":
+                                  sum(1 for r in rivais if r["fora"]),
                               "vantagens_deles": []})
             continue
 
@@ -188,6 +190,9 @@ def main():
                                   "sem_comparacao_porque":
                                       f"só {meu_n} avaliações com texto — abaixo "
                                       f"do mínimo de {MIN_AVALIACOES}",
+                                  "rivais_fora": [r for r in rivais if r["fora"]],
+                                  "rivais_fora_total":
+                                      sum(1 for r in rivais if r["fora"]),
                                   "vantagens_deles": []})
                 continue
             vantagens = []
@@ -207,6 +212,8 @@ def main():
                           "nossas_avaliacoes_lidas": meu_n,
                           "rivais_comparados": [r["nome"] for r in dentro],
                           "rivais_fora": [r for r in rivais if r["fora"]],
+                          "rivais_fora_total":
+                              sum(1 for r in rivais if r["fora"]),
                           "vantagens_deles": vantagens,
                           "nosso_perfil": {k: round(100*v, 1) for k, v in meu.items()}})
 

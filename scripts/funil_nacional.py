@@ -178,6 +178,7 @@ def monta():
                      "unidades",
         },
         "candidatas": cands,
+        "candidatas_total": len(cands),
         "onde_cabem_mais": sub[:20],
         "o_que_isso_nao_ve": [
             "Score é régua de PRIORIDADE, não promessa de faturamento. Quem "

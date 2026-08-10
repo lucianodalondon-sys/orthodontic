@@ -127,6 +127,7 @@ def monta():
                   "resultados opostos.",
         "lojas": lojas,
         "hipoteses_testadas": hipoteses,
+        "hipoteses_testadas_total": len(hipoteses),
         "conclusao": conclusao,
         "o_que_isso_nao_ve": [
             "A rotina de balcão em si — nenhuma fonte pública grava se a "

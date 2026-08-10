@@ -137,6 +137,7 @@ def monta():
         "avaliacoes_medianas": int(st.median(avs)) if avs else None,
         "abaixo_de_4": len(ruins),
         "alertas": alertas,
+        "alertas_total": len(alertas),
         "por_uf": sorted([{"uf": k, "unidades": v["unidades"],
                            "nota_mediana": round(st.median(v["notas"]), 1)
                                            if v["notas"] else None}
