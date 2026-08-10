@@ -51,9 +51,9 @@ O produto foi reorganizado (dois gols: performance das clínicas e vender
 mais clínicas). A estrutura agora é:
 
 ```
-INÍCIO      os ALERTAS DAS CLÍNICAS na frente (fila.json) + o mapa do
-            Brasil + a régua da rede (374 · 348 · 26 · 304). Clicar num
-            alerta abre a PÁGINA DA CLÍNICA.
+PAINEL DE   o MAPA DO BRASIL bem na frente, pintado por PROBLEMA — e só
+CONTROLE    embaixo dele os cartões de problema (fila.json). Clicar num
+            cartão abre a PÁGINA DA CLÍNICA.
 CLÍNICAS    uma página POR UNIDADE (clinicas/<local_id>.json) — o coração
             do portal e a futura visão do franqueado.
 PRAÇAS      o mercado de cada cidade (pracas/<id>.json) — tese, placar,
@@ -69,8 +69,33 @@ ARQUIVO     franqueadora.json → cards (grupo "arquivo") — de onde vem
 ```
 
 As abas do topo da referência ("Rede · Radar · Praça · Plano") viram:
-**Início · Clínicas · Praças · O que a rede ensina · Radar de cidades ·
-A marca · Arquivo**.
+**Painel de Controle · Clínicas · Praças · O que a rede ensina · Radar de
+cidades · A marca · Arquivo**.
+
+### 1.1 · O Painel de Controle, na ordem exata
+
+A primeira tela não abre com texto nem com número solto. Abre com o mapa.
+
+1. **O MAPA DO BRASIL, grande, na frente de tudo** — não é enfeite de
+   canto nem bloco no fim da página: é a primeira coisa que a diretoria
+   vê. Pintado por PROBLEMA, não por tamanho. Cada estado em
+   `franqueadora.json → mapa[]` traz `tom` pronto:
+
+   | `tom` | o que é | como pintar |
+   |---|---|---|
+   | `crit` | unidade em faixa vermelha **ou** alerta grave na ficha | vermelho `#FF5C5C` |
+   | `warn` | unidade em faixa amarela | amarelo `#F8D65D` |
+   | `ok` | acompanhada, sem alerta aberto | verde `#3ED6B8` |
+   | `sem_escuta` | tem unidade, ainda não é medida | ciano apagado |
+   | `sem_unidade` | a rede não está no estado | só o contorno |
+
+   `motivo` é a frase pronta do estado ("1 em faixa vermelha · 1 em faixa
+   amarela") — use no hover e ao lado da sigla. `mapa_legenda[]` traz a
+   legenda pronta, na ordem. Hoje: **BA, MS, MG, PR e SP em `crit`**;
+   MT e SC em `warn`. Clicar num estado filtra os cartões debaixo.
+2. **A tira de números** (`tiras_do_inicio`) logo abaixo do mapa.
+3. **Os cartões de problema** (`fila.fila[]`), na ordem que vêm.
+4. **A régua da rede e a cobertura** por último — contexto, não manchete.
 
 ## 2 · A página da clínica (o coração — payload novo)
 
@@ -82,9 +107,21 @@ ordem:
    vencida, com `vence_em`).
 2. **o que fazer agora** — `gatilhos[]` (com `fonte` em pé de linha),
    `quem_avanca` e `acao` (o quê · prazo · dono · custo) em destaque.
-3. **o que mudou entre as coletas** — `o_que_mudou` (antes → agora,
-   delta, nota, `aviso` visível quando o período é curto). Se null:
-   "ainda só uma medição — a comparação nasce na próxima coleta".
+3. **o que mudou entre as coletas** — `o_que_mudou` traz DUAS janelas, e
+   as duas aparecem:
+   - o **delta curto** (`antes → agora`, `delta`, `dias`), que é o que
+     mudou entre as duas últimas medições;
+   - o **período inteiro** (`historico`: `desde`, `dias`, `medicoes`,
+     `delta`, `ritmo_do_periodo`), que é desde a primeira medição.
+
+   Isso importa: **Mafra, Londrina, Feira de Santana e Presidente
+   Prudente são medidas desde 15/jul — 26 dias, 3 e 4 medições** — e a
+   tela vinha dizendo "período de só 3 dias" justamente para elas, as
+   quatro praças com mais histórico da rede. Escreva "medida desde
+   15/jul · 26 dias · 3 medições" e mostre o movimento do período todo ao
+   lado do da semana. O `aviso` só aparece onde o HISTÓRICO é curto.
+   Se `o_que_mudou` for null: "ainda só uma medição — a comparação nasce
+   na próxima coleta".
 4. **a voz do paciente** — `voz_do_paciente[]` já com rótulo de balcão
    (`o_que_e` + `pct`), barras finas.
 5. **avaliações esperando resposta** — `sem_resposta.itens[]` (nota,

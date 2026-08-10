@@ -16,6 +16,7 @@ import json, argparse, pathlib, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import datetime as dt
 from collections import defaultdict, Counter
+from cruzamento import conta          # número e nome sempre concordando
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 SERIE, CONT, IDENT, OUT = (RAIZ/"dados"/x for x in ("serie","conteudo","identidade","portal"))
@@ -493,6 +494,61 @@ def main():
                  if a.get("gravidade") == "vermelha"]
     caixa = _json("caixa_de_respostas")
     voz = _json("voz_da_cidade")
+
+    # ---------- o mapa PINTADO POR PROBLEMA ----------
+    # O mapa vinha só com a contagem de unidades, e mapa de contagem responde
+    # "onde a rede é grande" — pergunta que ninguém faz na primeira tela. O
+    # Painel de Controle abre com o mapa, e mapa de painel responde ONDE DÓI.
+    # O tom sai pronto daqui; o casco só pinta o que recebe.
+    uf_da_praca = {p: (ident[p].get("uf") or [None])[0] for p in PRACAS}
+    risco_uf = defaultdict(lambda: {"vermelha": 0, "amarela": 0, "verde": 0,
+                                    "acompanhadas": 0})
+    for x in fila.get("fila", []):
+        uf = uf_da_praca.get(x.get("praca_id"))
+        if not uf:
+            continue
+        risco_uf[uf]["acompanhadas"] += 1
+        risco_uf[uf][x.get("faixa", "verde")] = \
+            risco_uf[uf].get(x.get("faixa", "verde"), 0) + 1
+    graves_uf = Counter(a["uf"] for a in vermelhos if a.get("uf"))
+
+    for m in mapa:
+        r = risco_uf.get(m["uf"], {})
+        graves = graves_uf.get(m["uf"], 0)
+        m["acompanhadas"] = r.get("acompanhadas", 0)
+        m["em_faixa_vermelha"] = r.get("vermelha", 0)
+        m["em_faixa_amarela"] = r.get("amarela", 0)
+        m["alertas_graves"] = graves
+        if m["em_faixa_vermelha"] or graves:
+            m["tom"] = "crit"
+        elif m["em_faixa_amarela"]:
+            m["tom"] = "warn"
+        elif m["acompanhadas"]:
+            m["tom"] = "ok"
+        elif m["unidades"]:
+            m["tom"] = "sem_escuta"
+        else:
+            m["tom"] = "sem_unidade"
+        partes = []
+        if m["em_faixa_vermelha"]:
+            partes.append(f"{m['em_faixa_vermelha']} em faixa vermelha")
+        if m["em_faixa_amarela"]:
+            partes.append(f"{m['em_faixa_amarela']} em faixa amarela")
+        if graves:
+            partes.append(f"{conta(graves, 'alerta grave', 'alertas graves')} "
+                          f"na ficha do Google")
+        if not partes:
+            partes.append(f"{conta(m['unidades'], 'unidade')} · "
+                          f"{'ainda sem escuta' if m['unidades'] else 'sem unidade'}")
+        m["motivo"] = " · ".join(partes)
+
+    mapa_legenda = [
+        {"tom": "crit", "o_que_e": "unidade em faixa vermelha ou alerta grave na ficha"},
+        {"tom": "warn", "o_que_e": "unidade em faixa amarela"},
+        {"tom": "ok", "o_que_e": "acompanhada, sem alerta aberto"},
+        {"tom": "sem_escuta", "o_que_e": "tem unidade, ainda não é medida"},
+        {"tom": "sem_unidade", "o_que_e": "a rede não está no estado"},
+    ]
     # rivais do PRODUTO: só quem disputa aparelho (odontologia não é ortodontia)
     rivais_aparelho = sum(
         1 for p in PRACAS for l in ident[p].get("locais", [])
@@ -681,6 +737,7 @@ def main():
                                f"cidades de oportunidade são estudo de expansão e "
                                f"não entram em nenhuma conta da rede."},
         "mapa": mapa,
+        "mapa_legenda": mapa_legenda,
         "tiras_do_inicio": [
             tira(fila.get("em_risco"), "unidade em faixa vermelha",
                  "unidades em faixa vermelha", "crit"),

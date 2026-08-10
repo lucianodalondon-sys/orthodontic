@@ -66,6 +66,26 @@ def monta():
         a, b = snaps[ds[-2]], snaps[ds[-1]]
         dias = max((dt.date.fromisoformat(ds[-1]) -
                     dt.date.fromisoformat(ds[-2])).days, 1)
+        # O delta curto compara as DUAS ÚLTIMAS medições — é o que a semana
+        # mudou. Mas quatro praças (Mafra, Londrina, Feira, Prudente) são
+        # medidas desde 15/jul, e comparar só as duas últimas apagava esse
+        # histórico: a tela chamava de "período de só 3 dias" justamente as
+        # praças com mais tempo de medição. O período inteiro vai junto.
+        primeiro = snaps[ds[0]]
+        dias_hist = max((dt.date.fromisoformat(ds[-1]) -
+                         dt.date.fromisoformat(ds[0])).days, 1)
+        delta_hist = ((b["avaliacoes_total"] or 0) -
+                      (primeiro["avaliacoes_total"] or 0))
+        historico = {
+            "desde": ds[0], "ate": ds[-1], "dias": dias_hist,
+            "medicoes": len(ds),
+            "antes": primeiro["avaliacoes_total"],
+            "agora": b["avaliacoes_total"],
+            "delta": delta_hist,
+            "ritmo_do_periodo": (round(delta_hist/(dias_hist/30.4), 1)
+                                 if delta_hist > 0 else 0.0),
+            "nota_antes": primeiro.get("nota"), "nota_agora": b.get("nota"),
+        }
         delta = (b["avaliacoes_total"] or 0) - (a["avaliacoes_total"] or 0)
         dnota = round((b.get("nota") or 0) - (a.get("nota") or 0), 1)
         p, rotulo, nome, proprio, aparelho = nomes[lid]
@@ -88,6 +108,7 @@ def monta():
             "antes": a["avaliacoes_total"], "agora": b["avaliacoes_total"],
             "delta": delta, "nota_antes": a.get("nota"), "nota_agora": b.get("nota"),
             "ritmo_do_periodo": round(delta/(dias/30.4), 1) if delta > 0 else 0.0,
+            "historico": historico,
             "eventos": ev,
         })
 
@@ -97,12 +118,25 @@ def monta():
         nossos = [x for x in linhas if x["proprio"]]
         quedas = [x for x in linhas if x["delta"] < 0]
         dias = max(d["dias"]) if d["dias"] else 0
+        hs = [x["historico"] for x in linhas if x.get("historico")]
+        desde = min((h["desde"] for h in hs), default=None)
+        dias_hist = max((h["dias"] for h in hs), default=0)
+        medicoes = max((h["medicoes"] for h in hs), default=0)
         fora[p] = {
             "praca_id": p, "rotulo": d["rotulo"], "dias_medidos": dias,
-            "aviso": (f"período de só {conta(dias, 'dia')} — o delta ainda "
-                      f"diz pouco; "
-                      f"a leitura engorda a cada medição"
-                      if dias < 14 else None),
+            # o que a praça tem de histórico, que não é a janela do delta
+            "medida_desde": desde,
+            "dias_de_historico": dias_hist,
+            "medicoes": medicoes,
+            "janela_do_delta": (f"o delta compara as duas últimas medições "
+                                f"({conta(dias, 'dia')})"),
+            # O aviso é sobre o HISTÓRICO da praça, não sobre a janela curta.
+            # Antes ele dizia "período de só 3 dias" para praça medida desde
+            # 15/jul — a mais medida da rede aparecia como a menos medida.
+            "aviso": (f"a praça é medida há {conta(dias_hist, 'dia')} "
+                      f"({conta(medicoes, 'medição', 'medições')}) — a leitura "
+                      f"ainda diz pouco e engorda a cada coleta"
+                      if dias_hist < 14 else None),
             "nossas": nossos,
             # Destaque de confronto é só entre quem disputa APARELHO — a
             # clínica geral que ganhou avaliações é movimento da rua, não
