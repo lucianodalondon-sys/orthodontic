@@ -56,7 +56,7 @@ from cruzamento import coleta, jsonl, reviews_unicos   # mesma conta, mesmos nú
 GATILHOS = {
     "parada":   {"peso": 30, "titulo": "O contador de avaliações parou"},
     "nao_engatou": {"peso": 20, "titulo": "Unidade nova que ainda não engatou"},
-    "rival":    {"peso": 25, "titulo": "Um concorrente sustenta e corre mais"},
+    "rival":    {"peso": 25, "titulo": "Um rival de aparelho sustenta e corre mais"},
     "posicao":  {"peso": 20, "titulo": "Está na metade de baixo da própria praça"},
     "nota":     {"peso": 15, "titulo": "Nota abaixo da mediana da praça"},
     "silencio": {"peso": 15, "titulo": "Silêncio publicitário com leilão cheio"},
@@ -153,7 +153,10 @@ def monta():
 
     for u in nossas:
         vizinhos = por_praca[u["praca"]]
-        conc = [x for x in vizinhos if x["papel"] != "proprio"]
+        # Rival nomeado é só quem disputa APARELHO. Posição e nota continuam
+        # contra a praça inteira — ali a conta é de visibilidade na porta
+        # ("dentista" é o que o paciente digita), não de produto.
+        conc = [x for x in vizinhos if x["papel"] != "proprio" and x.get("aparelho")]
         gat, urg = [], 0
 
         def marca(chave, fato, fonte, extra=None):

@@ -34,7 +34,7 @@ from collections import defaultdict
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RAIZ/"scripts"))
-from cruzamento import jsonl, identidades
+from cruzamento import jsonl, identidades, disputa_aparelho
 
 PORTAL = RAIZ/"dados"/"portal"
 
@@ -42,7 +42,7 @@ PORTAL = RAIZ/"dados"/"portal"
 def monta():
     ident = identidades(com_unidade=False)
     nomes = {l["local_id"]: (p, d.get("rotulo"), l.get("nome"),
-                             l.get("papel") == "proprio")
+                             l.get("papel") == "proprio", disputa_aparelho(l))
              for p, d in ident.items() for l in d.get("locais", [])}
 
     # O total mora em DOIS nomes de campo: `avaliacoes_total` num coletor e
@@ -68,7 +68,7 @@ def monta():
                     dt.date.fromisoformat(ds[-2])).days, 1)
         delta = (b["avaliacoes_total"] or 0) - (a["avaliacoes_total"] or 0)
         dnota = round((b.get("nota") or 0) - (a.get("nota") or 0), 1)
-        p, rotulo, nome, proprio = nomes[lid]
+        p, rotulo, nome, proprio, aparelho = nomes[lid]
         ev = []
         if delta > 0:
             ev.append(f"ganhou {delta} avaliações em {dias} dia(s)")
@@ -82,6 +82,7 @@ def monta():
         pracas[p]["dias"].add(dias)
         pracas[p]["linhas"].append({
             "local_id": lid, "nome": nome, "proprio": proprio,
+            "aparelho": aparelho,
             "de": ds[-2], "ate": ds[-1], "dias": dias,
             "antes": a["avaliacoes_total"], "agora": b["avaliacoes_total"],
             "delta": delta, "nota_antes": a.get("nota"), "nota_agora": b.get("nota"),
@@ -101,7 +102,11 @@ def monta():
                       f"a leitura engorda a cada medição"
                       if dias < 14 else None),
             "nossas": nossos,
-            "quem_mais_ganhou": [x for x in linhas if x["delta"] > 0][:5],
+            # Destaque de confronto é só entre quem disputa APARELHO — a
+            # clínica geral que ganhou avaliações é movimento da rua, não
+            # ameaça ao produto. Ela segue nas `linhas`, marcada.
+            "quem_mais_ganhou": [x for x in linhas
+                                 if x["delta"] > 0 and x["aparelho"]][:5],
             "contador_caiu": quedas,
             "linhas": linhas,
         }

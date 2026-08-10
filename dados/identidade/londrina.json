@@ -1,324 +1,456 @@
 {
-  "praca_id": "londrina",
-  "nome": "Londrina",
-  "cidades": [
-    "Londrina/PR"
-  ],
-  "uf": [
-    "PR"
-  ],
-  "populacao": 556000,
-  "renda_nota": "renda média da cidade de 1-2 salários mínimos",
-  "nota_geografia": "Zona Norte tem 108 mil hab. e nenhuma unidade OrthoDontic dentro — mercado descoberto a confirmar.",
-  "locais": [
-    {
-      "local_id": "ortho_souza_naves",
-      "papel": "proprio",
-      "nome": "OrthoDontic Souza Naves",
-      "tipo": "matriz_propria",
-      "regiao": "Vila Ipiranga / Av. Souza Naves — polo médico",
-      "place_id": "ChIJ1cPTd2tD65QRmNxXEvCwjCY",
-      "place_id_origem": "google places api 2026-08-08 (endereço)",
-      "avaliacoes_google": 566,
-      "nota_google": 4.6
+ "praca_id": "londrina",
+ "nome": "Londrina",
+ "cidades": [
+  "Londrina/PR"
+ ],
+ "uf": [
+  "PR"
+ ],
+ "populacao": 556000,
+ "renda_nota": "renda média da cidade de 1-2 salários mínimos",
+ "nota_geografia": "Zona Norte tem 108 mil hab. e nenhuma unidade OrthoDontic dentro — mercado descoberto a confirmar.",
+ "locais": [
+  {
+   "local_id": "ortho_souza_naves",
+   "papel": "proprio",
+   "nome": "OrthoDontic Souza Naves",
+   "tipo": "matriz_propria",
+   "regiao": "Vila Ipiranga / Av. Souza Naves — polo médico",
+   "place_id": "ChIJ1cPTd2tD65QRmNxXEvCwjCY",
+   "place_id_origem": "google places api 2026-08-08 (endereço)",
+   "avaliacoes_google": 566,
+   "nota_google": 4.6
+  },
+  {
+   "local_id": "ortho_centro_ldn",
+   "papel": "proprio",
+   "nome": "OrthoDontic Centro",
+   "tipo": "filial",
+   "regiao": "Rua Sergipe",
+   "place_id": "ChIJ7ZkuVKBE65QRA7aQcukfYDE",
+   "place_id_origem": "google places api 2026-08-08 (endereço)",
+   "avaliacoes_google": 76,
+   "nota_google": 3.8
+  },
+  {
+   "local_id": "odontoclinic_ldn",
+   "papel": "concorrente",
+   "nome": "Odontoclinic Londrina",
+   "tipo_concorrente": "clinica_geral",
+   "place_id": "ChIJ1bDr02BD65QRTqiOqexcry8",
+   "place_id_origem": "google places api 2026-08-08 (nome)",
+   "avaliacoes_google": 544,
+   "nota_google": 4.9,
+   "produto": {
+    "disputa_aparelho": "sem_evidencia",
+    "porque": "zona cinzenta: 3 de 54 avaliações citam aparelho (6%) — faz aparelho, mas não é o negócio principal",
+    "menciona_aparelho": 3,
+    "avaliacoes_com_texto": 54
+   }
+  },
+  {
+   "local_id": "aline_oliver",
+   "papel": "concorrente",
+   "nome": "Dra. Aline Oliver Odonto",
+   "tipo_concorrente": "doutor_pf",
+   "place_id": "ChIJnWF001hD65QRsQYwLi1UhT0",
+   "avaliacoes_google": 116,
+   "nota_google": 4.6,
+   "place_id_origem": "google places api 2026-08-08 (nome, casamento único)",
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 1 de 69 avaliações citam aparelho",
+    "menciona_aparelho": 1,
+    "avaliacoes_com_texto": 69
+   }
+  },
+  {
+   "local_id": "dentel_ldn",
+   "papel": "concorrente",
+   "nome": "Dentel",
+   "tipo_concorrente": "clinica",
+   "place_id": "ChIJhcTL_aBE65QRIS7K8dte0_o",
+   "nota_amarracao": "A coleta de 07/ago retornou 'Dentel Zona Norte' com 5 avaliações; o estudo descreve outra unidade (4,2). Falha de amarração — resolver com o place_id correto antes de usar em placar.",
+   "place_id_origem": "google places api 2026-08-08 (nome)",
+   "avaliacoes_google": 22,
+   "nota_google": 3.6,
+   "produto": {
+    "disputa_aparelho": "sem_evidencia",
+    "porque": "amostra pequena (5 avaliações com texto) — não dá para afirmar o produto",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 5
+   }
+  },
+  {
+   "local_id": "vittallon_odontologia",
+   "papel": "concorrente",
+   "nome": "Vittallon Odontologia",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJw6KiaAlD65QRYY65hgpBoKM",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places",
+   "avaliacoes_google": 1073,
+   "nota_google": 5,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 1 de 261 avaliações citam aparelho",
+    "menciona_aparelho": 1,
+    "avaliacoes_com_texto": 261
+   }
+  },
+  {
+   "local_id": "clinica_dentista_do_povo_u",
+   "papel": "concorrente",
+   "nome": "Clínica Dentista do Povo - Unidade Mais Sorriso - Londrina",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJA92EdaVF65QRxyLe3c-NzFs",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places",
+   "avaliacoes_google": 946,
+   "nota_google": 5,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de implante: só 0 de 67 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 67
+   }
+  },
+  {
+   "local_id": "star_clin_sorrisos",
+   "papel": "concorrente",
+   "nome": "STAR CLIN SORRISOS",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJsyY7saFE65QRP67plWfTY_U",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places",
+   "avaliacoes_google": 462,
+   "nota_google": 4.6,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de implante: só 0 de 81 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 81
+   }
+  },
+  {
+   "local_id": "clinica_dentaria_central_n",
+   "papel": "concorrente",
+   "nome": "Clínica Dentária Central Norte",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJ9SeV7BBF65QRtrsMV3dWS9k",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places",
+   "avaliacoes_google": 732,
+   "nota_google": 4.9,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 5 de 272 avaliações citam aparelho",
+    "menciona_aparelho": 5,
+    "avaliacoes_com_texto": 272
+   }
+  },
+  {
+   "local_id": "odontologia_peixoto_implan",
+   "papel": "concorrente",
+   "nome": "Odontologia Peixoto | Implante Dentário | Invisalign | Centro | Londrina - PR",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJy6DEjmdD65QRYXTSNJWp0IY",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places",
+   "avaliacoes_google": 570,
+   "nota_google": 4.8,
+   "produto": {
+    "disputa_aparelho": "sim",
+    "porque": "o nome declara aparelho/ortodontia",
+    "menciona_aparelho": 1,
+    "avaliacoes_com_texto": 305
+   }
+  },
+  {
+   "local_id": "dentista_24_horas_londrina",
+   "papel": "concorrente",
+   "nome": "Dentista 24 horas Londrina - Dr. Alessandro Morais",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJVZufvl5D65QRXDXJh6VCS4A",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 456,
+   "nota_google": 5,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 1 de 89 avaliações citam aparelho",
+    "menciona_aparelho": 1,
+    "avaliacoes_com_texto": 89
+   }
+  },
+  {
+   "local_id": "yamar_odontologia_clinica_",
+   "papel": "concorrente",
+   "nome": "Yamar Odontologia - Clinica Odontológica - Implantes",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJiz_3oyVD65QR6OqYKksVqcg",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 438,
+   "nota_google": 5,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de implante: só 3 de 325 avaliações citam aparelho",
+    "menciona_aparelho": 3,
+    "avaliacoes_com_texto": 325
+   }
+  },
+  {
+   "local_id": "odontologia_vila_real",
+   "papel": "concorrente",
+   "nome": "Odontologia Vila Real",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJfcf9oPhD65QRpWVB-0-4a48",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 323,
+   "nota_google": 5,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 1 de 80 avaliações citam aparelho",
+    "menciona_aparelho": 1,
+    "avaliacoes_com_texto": 80
+   }
+  },
+  {
+   "local_id": "odonto_excellence_gleba_pa",
+   "papel": "concorrente",
+   "nome": "Odonto Excellence Gleba Palhano",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJeYluPBdD65QRyNUlDvlxQx0",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 262,
+   "nota_google": 5,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 3 de 225 avaliações citam aparelho",
+    "menciona_aparelho": 3,
+    "avaliacoes_com_texto": 225
+   }
+  },
+  {
+   "local_id": "clinica_ichiban",
+   "papel": "concorrente",
+   "nome": "Clínica Ichiban",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJ7yJo1FxD65QR4UIBQ75IyLI",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 258,
+   "nota_google": 5,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 1 de 78 avaliações citam aparelho",
+    "menciona_aparelho": 1,
+    "avaliacoes_com_texto": 78
+   }
+  },
+  {
+   "local_id": "torres_odontologia_especia",
+   "papel": "concorrente",
+   "nome": "Torres Odontologia Especializada",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJ_00U00xb65QRiOnXUEQXZ_E",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 234,
+   "nota_google": 5,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de implante: só 1 de 76 avaliações citam aparelho",
+    "menciona_aparelho": 1,
+    "avaliacoes_com_texto": 76
+   }
+  },
+  {
+   "local_id": "plenita_odontologia_e_saud",
+   "papel": "concorrente",
+   "nome": "Plenitá Odontologia e Saúde Integrada",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJ4VV5oWdD65QROxc7COjdVfU",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 227,
+   "nota_google": 5,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 1 de 86 avaliações citam aparelho",
+    "menciona_aparelho": 1,
+    "avaliacoes_com_texto": 86
+   }
+  },
+  {
+   "local_id": "parmagnani_e_ramos_odontol",
+   "papel": "concorrente",
+   "nome": "Parmagnani e Ramos Odontologia",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJ4c1YYmpD65QRsGg4Wp6_xPo",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 299,
+   "nota_google": 5,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 0 de 80 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 80
+   }
+  },
+  {
+   "local_id": "dr_claudio_romagnoli",
+   "papel": "concorrente",
+   "nome": "Dr. Claudio Romagnoli",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJK5h0DKhE65QR6mZjfms1Zok",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 149,
+   "nota_google": 4.9,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 1 de 88 avaliações citam aparelho",
+    "menciona_aparelho": 1,
+    "avaliacoes_com_texto": 88
+   }
+  },
+  {
+   "local_id": "maximus_odontologia_avanca",
+   "papel": "concorrente",
+   "nome": "Maximus Odontologia Avançada - Lentes de contato, Facetas e Implantes dentários",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJVVWZMUND65QR6IPm9VMGuQo",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 229,
+   "nota_google": 4.6,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de implante: só 0 de 86 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 86
+   }
+  },
+  {
+   "local_id": "dra_suellen_priscilla_odon",
+   "papel": "concorrente",
+   "nome": "Dra. Suéllen Priscilla - Odontopediatria e Ortodontia",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJk7kQKWFD65QRWXMVsFC5ofY",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 146,
+   "nota_google": 5,
+   "produto": {
+    "disputa_aparelho": "sim",
+    "porque": "o nome declara aparelho/ortodontia",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 77
+   }
+  },
+  {
+   "local_id": "monet_odontologia",
+   "papel": "concorrente",
+   "nome": "Monet Odontologia",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJfwMK5UxD65QR6-_UHay7Kr4",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 145,
+   "nota_google": 5,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 1 de 67 avaliações citam aparelho",
+    "menciona_aparelho": 1,
+    "avaliacoes_com_texto": 67
+   }
+  },
+  {
+   "local_id": "crol_odontologia_by_dra_ro",
+   "papel": "concorrente",
+   "nome": "Crol Odontologia by Dra. Rosemary Carneiro | Ortodontia I Implante Dentário I Estética",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJe_16QmlD65QRJZeUXbCdzhY",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 138,
+   "nota_google": 4.9,
+   "produto": {
+    "disputa_aparelho": "sim",
+    "porque": "o nome declara aparelho/ortodontia",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 84
+   }
+  },
+  {
+   "local_id": "clinimax_clinica_odontolog",
+   "papel": "concorrente",
+   "nome": "CliniMax Clínica Odontológica",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJnQAqKwBF65QR_g1sXzwnSTs",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 144,
+   "nota_google": 4.8,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 0 de 52 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 52
+   }
+  }
+ ],
+ "rotulo": "PR · Londrina",
+ "cidades_rotulo": [
+  "PR · Londrina"
+ ],
+ "ibge": [
+  {
+   "municipio": "Londrina",
+   "uf": "PR",
+   "uf_nome": "Paraná",
+   "ibge_id": 4113700,
+   "mesorregiao": "Norte Central Paranaense",
+   "populacao_estimada": {
+    "ano": "2025",
+    "valor": "581382",
+    "unidade": "Pessoas"
+   },
+   "populacao_censo_2022": {
+    "ano": "2022",
+    "valor": "555965",
+    "unidade": "Pessoas"
+   },
+   "massa_salarial_mil_reais": {
+    "ano": "2023",
+    "valor": "27999537",
+    "unidade": "Mil Reais"
+   },
+   "idades": {
+    "por_faixa": {
+     "0a4": 30194,
+     "5a9": 33759,
+     "10a14": 33061,
+     "15a19": 35377,
+     "20a24": 42012,
+     "25a29": 44196,
+     "30a34": 42573,
+     "35a39": 41684,
+     "40a44": 43308,
+     "45a49": 36590,
+     "50a54": 36273,
+     "55a59": 34990,
+     "60a64": 29691
     },
-    {
-      "local_id": "ortho_centro_ldn",
-      "papel": "proprio",
-      "nome": "OrthoDontic Centro",
-      "tipo": "filial",
-      "regiao": "Rua Sergipe",
-      "place_id": "ChIJ7ZkuVKBE65QRA7aQcukfYDE",
-      "place_id_origem": "google places api 2026-08-08 (endereço)",
-      "avaliacoes_google": 76,
-      "nota_google": 3.8
-    },
-    {
-      "local_id": "odontoclinic_ldn",
-      "papel": "concorrente",
-      "nome": "Odontoclinic Londrina",
-      "tipo_concorrente": "clinica_geral",
-      "place_id": "ChIJ1bDr02BD65QRTqiOqexcry8",
-      "place_id_origem": "google places api 2026-08-08 (nome)",
-      "avaliacoes_google": 544,
-      "nota_google": 4.9
-    },
-    {
-      "local_id": "aline_oliver",
-      "papel": "concorrente",
-      "nome": "Dra. Aline Oliver Odonto",
-      "tipo_concorrente": "doutor_pf",
-      "place_id": "ChIJnWF001hD65QRsQYwLi1UhT0",
-      "avaliacoes_google": 116,
-      "nota_google": 4.6,
-      "place_id_origem": "google places api 2026-08-08 (nome, casamento único)"
-    },
-    {
-      "local_id": "dentel_ldn",
-      "papel": "concorrente",
-      "nome": "Dentel",
-      "tipo_concorrente": "clinica",
-      "place_id": "ChIJhcTL_aBE65QRIS7K8dte0_o",
-      "nota_amarracao": "A coleta de 07/ago retornou 'Dentel Zona Norte' com 5 avaliações; o estudo descreve outra unidade (4,2). Falha de amarração — resolver com o place_id correto antes de usar em placar.",
-      "place_id_origem": "google places api 2026-08-08 (nome)",
-      "avaliacoes_google": 22,
-      "nota_google": 3.6
-    },
-    {
-      "local_id": "vittallon_odontologia",
-      "papel": "concorrente",
-      "nome": "Vittallon Odontologia",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJw6KiaAlD65QRYY65hgpBoKM",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places",
-      "avaliacoes_google": 1073,
-      "nota_google": 5
-    },
-    {
-      "local_id": "clinica_dentista_do_povo_u",
-      "papel": "concorrente",
-      "nome": "Clínica Dentista do Povo - Unidade Mais Sorriso - Londrina",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJA92EdaVF65QRxyLe3c-NzFs",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places",
-      "avaliacoes_google": 946,
-      "nota_google": 5
-    },
-    {
-      "local_id": "star_clin_sorrisos",
-      "papel": "concorrente",
-      "nome": "STAR CLIN SORRISOS",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJsyY7saFE65QRP67plWfTY_U",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places",
-      "avaliacoes_google": 462,
-      "nota_google": 4.6
-    },
-    {
-      "local_id": "clinica_dentaria_central_n",
-      "papel": "concorrente",
-      "nome": "Clínica Dentária Central Norte",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJ9SeV7BBF65QRtrsMV3dWS9k",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places",
-      "avaliacoes_google": 732,
-      "nota_google": 4.9
-    },
-    {
-      "local_id": "odontologia_peixoto_implan",
-      "papel": "concorrente",
-      "nome": "Odontologia Peixoto | Implante Dentário | Invisalign | Centro | Londrina - PR",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJy6DEjmdD65QRYXTSNJWp0IY",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places",
-      "avaliacoes_google": 570,
-      "nota_google": 4.8
-    },
-    {
-      "local_id": "dentista_24_horas_londrina",
-      "papel": "concorrente",
-      "nome": "Dentista 24 horas Londrina - Dr. Alessandro Morais",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJVZufvl5D65QRXDXJh6VCS4A",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 456,
-      "nota_google": 5
-    },
-    {
-      "local_id": "yamar_odontologia_clinica_",
-      "papel": "concorrente",
-      "nome": "Yamar Odontologia - Clinica Odontológica - Implantes",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJiz_3oyVD65QR6OqYKksVqcg",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 438,
-      "nota_google": 5
-    },
-    {
-      "local_id": "odontologia_vila_real",
-      "papel": "concorrente",
-      "nome": "Odontologia Vila Real",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJfcf9oPhD65QRpWVB-0-4a48",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 323,
-      "nota_google": 5
-    },
-    {
-      "local_id": "odonto_excellence_gleba_pa",
-      "papel": "concorrente",
-      "nome": "Odonto Excellence Gleba Palhano",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJeYluPBdD65QRyNUlDvlxQx0",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 262,
-      "nota_google": 5
-    },
-    {
-      "local_id": "clinica_ichiban",
-      "papel": "concorrente",
-      "nome": "Clínica Ichiban",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJ7yJo1FxD65QR4UIBQ75IyLI",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 258,
-      "nota_google": 5
-    },
-    {
-      "local_id": "torres_odontologia_especia",
-      "papel": "concorrente",
-      "nome": "Torres Odontologia Especializada",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJ_00U00xb65QRiOnXUEQXZ_E",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 234,
-      "nota_google": 5
-    },
-    {
-      "local_id": "plenita_odontologia_e_saud",
-      "papel": "concorrente",
-      "nome": "Plenitá Odontologia e Saúde Integrada",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJ4VV5oWdD65QROxc7COjdVfU",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 227,
-      "nota_google": 5
-    },
-    {
-      "local_id": "parmagnani_e_ramos_odontol",
-      "papel": "concorrente",
-      "nome": "Parmagnani e Ramos Odontologia",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJ4c1YYmpD65QRsGg4Wp6_xPo",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 299,
-      "nota_google": 5
-    },
-    {
-      "local_id": "dr_claudio_romagnoli",
-      "papel": "concorrente",
-      "nome": "Dr. Claudio Romagnoli",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJK5h0DKhE65QR6mZjfms1Zok",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 149,
-      "nota_google": 4.9
-    },
-    {
-      "local_id": "maximus_odontologia_avanca",
-      "papel": "concorrente",
-      "nome": "Maximus Odontologia Avançada - Lentes de contato, Facetas e Implantes dentários",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJVVWZMUND65QR6IPm9VMGuQo",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 229,
-      "nota_google": 4.6
-    },
-    {
-      "local_id": "dra_suellen_priscilla_odon",
-      "papel": "concorrente",
-      "nome": "Dra. Suéllen Priscilla - Odontopediatria e Ortodontia",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJk7kQKWFD65QRWXMVsFC5ofY",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 146,
-      "nota_google": 5
-    },
-    {
-      "local_id": "monet_odontologia",
-      "papel": "concorrente",
-      "nome": "Monet Odontologia",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJfwMK5UxD65QR6-_UHay7Kr4",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 145,
-      "nota_google": 5
-    },
-    {
-      "local_id": "crol_odontologia_by_dra_ro",
-      "papel": "concorrente",
-      "nome": "Crol Odontologia by Dra. Rosemary Carneiro | Ortodontia I Implante Dentário I Estética",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJe_16QmlD65QRJZeUXbCdzhY",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 138,
-      "nota_google": 4.9
-    },
-    {
-      "local_id": "clinimax_clinica_odontolog",
-      "papel": "concorrente",
-      "nome": "CliniMax Clínica Odontológica",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJnQAqKwBF65QR_g1sXzwnSTs",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 144,
-      "nota_google": 4.8
-    }
-  ],
-  "rotulo": "PR · Londrina",
-  "cidades_rotulo": [
-    "PR · Londrina"
-  ],
-  "ibge": [
-    {
-      "municipio": "Londrina",
-      "uf": "PR",
-      "uf_nome": "Paraná",
-      "ibge_id": 4113700,
-      "mesorregiao": "Norte Central Paranaense",
-      "populacao_estimada": {
-        "ano": "2025",
-        "valor": "581382",
-        "unidade": "Pessoas"
-      },
-      "populacao_censo_2022": {
-        "ano": "2022",
-        "valor": "555965",
-        "unidade": "Pessoas"
-      },
-      "massa_salarial_mil_reais": {
-        "ano": "2023",
-        "valor": "27999537",
-        "unidade": "Mil Reais"
-      },
-      "idades": {
-        "por_faixa": {
-          "0a4": 30194,
-          "5a9": 33759,
-          "10a14": 33061,
-          "15a19": 35377,
-          "20a24": 42012,
-          "25a29": 44196,
-          "30a34": 42573,
-          "35a39": 41684,
-          "40a44": 43308,
-          "45a49": 36590,
-          "50a54": 36273,
-          "55a59": 34990,
-          "60a64": 29691
-        },
-        "alvo_9_15": 46888,
-        "alvo_30_45": 127565
-      }
-    }
-  ]
+    "alvo_9_15": 46888,
+    "alvo_30_45": 127565
+   }
+  }
+ ]
 }

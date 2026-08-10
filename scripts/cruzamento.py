@@ -94,9 +94,32 @@ def identidades(com_unidade=True):
     mais olha."""
     todas = {p.stem: json.loads(p.read_text(encoding="utf-8"))
              for p in sorted(IDENT.glob("*.json"))}
+    # local_id repetido dentro da praça funde loja com loja — foi assim que
+    # duas ODONTOMAX de Contagem viraram uma só e a série misturou os
+    # contadores. Corromper calado é pior que parar: falha alto.
+    for k, v in todas.items():
+        ids = [l["local_id"] for l in v.get("locais", [])]
+        rep = {i for i in ids if ids.count(i) > 1}
+        if rep:
+            raise ValueError(f"local_id duplicado em {k}: {sorted(rep)} — "
+                             f"duas lojas não dividem identidade")
     if not com_unidade:
         return todas
     return {k: v for k, v in todas.items() if not v.get("sem_unidade")}
+
+
+def disputa_aparelho(local):
+    """Se este local disputa o NOSSO produto — aparelho.
+
+    A regra que o cliente já corrigiu duas vezes: ODONTOLOGIA NÃO É
+    ORTODONTIA. Clínica geral e rede de implante dividem a rua, não o
+    paciente de aparelho. O veredito vem carimbado na identidade por
+    `produto_do_concorrente.py` (nome + voz do cliente); toda ferramenta
+    de CONFRONTO (rival, fila, quem avança) filtra por aqui. Quem não
+    disputa continua medido, mas fora de qualquer conta de concorrência."""
+    if local.get("papel") == "proprio":
+        return True
+    return (local.get("produto") or {}).get("disputa_aparelho") == "sim"
 
 
 def ritmo_e_meses(datas, hoje=None):
@@ -146,6 +169,7 @@ def coleta():
                 "uf": (d.get("uf") or [None])[0],
                 "local_id": l["local_id"], "nome": l.get("nome"),
                 "papel": l.get("papel"),
+                "aparelho": disputa_aparelho(l),
                 "total": pl.get("avaliacoes", pl.get("avaliacoes_total")) or l.get("avaliacoes_google"),
                 "nota": pl.get("nota") or l.get("nota_google"),
                 "ritmo": ritmo, "meses": meses,
@@ -213,10 +237,12 @@ def main():
         print(f"  ⚫ PARADA (menos de 3 meses): {len(par)}")
         for x in par:
             print(f"    {etiqueta(x):38s} {x['ritmo']:>5.1f}/mês · {x['posicao']}º de {x['de']}")
-    # e o mercado?
-    conc = [x for x in todas if x["papel"] != "proprio"]
+    # e o mercado? — só quem disputa APARELHO; clínica geral e implante
+    # dividem a rua, não o paciente (regra: odontologia não é ortodontia)
+    conc = [x for x in todas if x["papel"] != "proprio" and x.get("aparelho")]
     op_c = sum(1 for x in conc if x["meses"] >= 10)
-    print(f"\n  Na concorrência: {op_c} de {len(conc)} sustentam ({100*op_c//max(len(conc),1)}%)")
+    print(f"\n  Nos rivais de aparelho: {op_c} de {len(conc)} sustentam "
+          f"({100*op_c//max(len(conc),1)}%)")
     print(f"  Na rede:         {len(op)} de {len(nossas)} sustentam "
           f"({100*len(op)//max(len(nossas),1)}%)")
     if len(nossas) and len(conc):
@@ -285,7 +311,7 @@ def main():
                           "o problema não é falta de base")
     fortes = [x for x in conc if x["meses"] >= 10 and x["ritmo"] > (st.median([y['ritmo'] for y in nossas]) if nossas else 0)]
     if fortes:
-        contra.append(f"{len(fortes)} concorrentes sustentam E correm mais que a mediana da rede")
+        contra.append(f"{len(fortes)} rivais de aparelho sustentam E correm mais que a mediana da rede")
     for c in (contra or ["(nada encontrado — o que é motivo de desconfiança, não de comemoração)"]):
         print(f"  · {c}")
 
@@ -296,8 +322,9 @@ def main():
     sem = set(ident) - com
     if sem:
         print(f"  ⚠ {len(sem)} praças sem canal offline declarado: {', '.join(sorted(sem))}")
-    print(f"  A rede tem 340 unidades e esta leitura vê {len(nossas)}. "
-          f"Tudo aqui é {100*len(nossas)//340}% da rede.")
+    tot_rede = len(jsonl("unidades_rede")) or len(nossas)
+    print(f"  A rede tem {tot_rede} unidades e esta leitura vê {len(nossas)}. "
+          f"Tudo aqui é {100*len(nossas)//tot_rede}% da rede.")
     print("  Nenhum número aqui vem de dado interno.\n")
 
     if a.salvar:

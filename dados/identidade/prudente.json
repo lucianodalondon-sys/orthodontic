@@ -1,335 +1,479 @@
 {
-  "praca_id": "prudente",
-  "nome": "Presidente Prudente",
-  "cidades": [
-    "Presidente Prudente/SP"
-  ],
-  "uf": [
-    "SP"
-  ],
-  "populacao": 234000,
-  "populacao_nota": "+400 mil flutuantes; cidade universitária",
-  "renda_nota": "~25% abaixo da média de SP; mais da metade das remunerações em D/E",
-  "ancora_preco": "plano odontológico com ortodontia na cidade parte de ~R$ 110/mês",
-  "locais": [
-    {
-      "local_id": "ortho_pp",
-      "papel": "proprio",
-      "nome": "OrthoDontic Presidente Prudente",
-      "tipo": "franquia",
-      "abertura": "2005-05-02",
-      "nota_papel": "a 1ª franquia de toda a rede",
-      "place_id": "ChIJgZOIQkv0k5QRsl2QfqSQM7s",
-      "place_id_origem": "google places api 2026-08-08 (endereço)",
-      "avaliacoes_google": 592,
-      "nota_google": 4.9
+ "praca_id": "prudente",
+ "nome": "Presidente Prudente",
+ "cidades": [
+  "Presidente Prudente/SP"
+ ],
+ "uf": [
+  "SP"
+ ],
+ "populacao": 234000,
+ "populacao_nota": "+400 mil flutuantes; cidade universitária",
+ "renda_nota": "~25% abaixo da média de SP; mais da metade das remunerações em D/E",
+ "ancora_preco": "plano odontológico com ortodontia na cidade parte de ~R$ 110/mês",
+ "locais": [
+  {
+   "local_id": "ortho_pp",
+   "papel": "proprio",
+   "nome": "OrthoDontic Presidente Prudente",
+   "tipo": "franquia",
+   "abertura": "2005-05-02",
+   "nota_papel": "a 1ª franquia de toda a rede",
+   "place_id": "ChIJgZOIQkv0k5QRsl2QfqSQM7s",
+   "place_id_origem": "google places api 2026-08-08 (endereço)",
+   "avaliacoes_google": 592,
+   "nota_google": 4.9
+  },
+  {
+   "local_id": "dentoclinic_pp",
+   "papel": "concorrente",
+   "nome": "Dentoclinic",
+   "tipo_concorrente": "nicho",
+   "place_id": "ChIJ17pf1sr1k5QR8gVL-rTnPkc",
+   "place_id_origem": "google places api 2026-08-08 (nome)",
+   "avaliacoes_google": 77,
+   "nota_google": 5,
+   "produto": {
+    "disputa_aparelho": "sem_evidencia",
+    "porque": "amostra pequena (33 avaliações com texto) — não dá para afirmar o produto",
+    "menciona_aparelho": 1,
+    "avaliacoes_com_texto": 33
+   }
+  },
+  {
+   "local_id": "todos_sorrindo_pp",
+   "papel": "concorrente",
+   "nome": "Todos Sorrindo Odontologia",
+   "tipo_concorrente": "clinica",
+   "place_id": "ChIJgWue7az1k5QROX2joSxY8Y0",
+   "avaliacoes_google": 40,
+   "nota_google": 4.9,
+   "place_id_origem": "google places api 2026-08-08 (nome; unidade maior)",
+   "nota": "Existe uma segunda ficha, 'Clínica Odontológica Todos Sorrindo' (17 aval., R. Siqueira Campos). Pode ser filial ou ficha duplicada — não confirmado.",
+   "produto": {
+    "disputa_aparelho": "sem_evidencia",
+    "porque": "amostra pequena (29 avaliações com texto) — não dá para afirmar o produto",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 29
+   }
+  },
+  {
+   "local_id": "nexa_pp",
+   "papel": "concorrente",
+   "nome": "NEXA Odonto",
+   "tipo_concorrente": "clinica_geral",
+   "place_id": "ChIJ6wqJAzb0k5QRAZNlRRIJuRI",
+   "place_id_origem": "google places api 2026-08-08 (nome)",
+   "avaliacoes_google": 619,
+   "nota_google": 4.7,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 1 de 43 avaliações citam aparelho",
+    "menciona_aparelho": 1,
+    "avaliacoes_com_texto": 43
+   }
+  },
+  {
+   "local_id": "croorto_pp",
+   "papel": "concorrente",
+   "nome": "Croorto",
+   "tipo_concorrente": "especialista",
+   "place_id": "ChIJT_oDsbT1k5QRGl-L-Ffjwc4",
+   "place_id_origem": "google places api 2026-08-08 (nome)",
+   "avaliacoes_google": 53,
+   "nota_google": 4.7,
+   "produto": {
+    "disputa_aparelho": "sim",
+    "porque": "o nome declara aparelho/ortodontia",
+    "menciona_aparelho": 1,
+    "avaliacoes_com_texto": 39
+   }
+  },
+  {
+   "local_id": "sorrifacil_pp",
+   "papel": "concorrente",
+   "nome": "Sorrifácil",
+   "tipo_concorrente": "rede_popular",
+   "place_id": "ChIJzcw6QKn1k5QRze42WL6VVkI",
+   "place_id_origem": "google places api 2026-08-08 (nome)",
+   "avaliacoes_google": 31,
+   "nota_google": 4.6,
+   "produto": {
+    "disputa_aparelho": "sem_evidencia",
+    "porque": "amostra pequena (19 avaliações com texto) — não dá para afirmar o produto",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 19
+   }
+  },
+  {
+   "local_id": "bongiovanni_odontologia_im",
+   "papel": "concorrente",
+   "nome": "Bongiovanni Odontologia | Implante Dentário | Dentista | Bairro do Bosque | Presidente Prudente - SP",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJwcrLwLP1k5QROIlrY0yRJhU",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places",
+   "avaliacoes_google": 1071,
+   "nota_google": 4.9,
+   "produto": {
+    "disputa_aparelho": "sem_evidencia",
+    "porque": "amostra pequena (31 avaliações com texto) — não dá para afirmar o produto",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 31
+   }
+  },
+  {
+   "local_id": "unisorrir_clinica_odontolo",
+   "papel": "concorrente",
+   "nome": "Unisorrir Clínica Odontológica | Implantes Dentários | Invisalign",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJ_VhmYy31k5QRjvcHzqJ2An8",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places",
+   "avaliacoes_google": 495,
+   "nota_google": 5,
+   "produto": {
+    "disputa_aparelho": "sim",
+    "porque": "o nome declara aparelho/ortodontia",
+    "menciona_aparelho": 5,
+    "avaliacoes_com_texto": 318
+   }
+  },
+  {
+   "local_id": "core_odontologia_president",
+   "papel": "concorrente",
+   "nome": "CORE Odontologia Presidente Prudente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJIw5wpF71k5QRcjC5f-ATyrY",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places",
+   "avaliacoes_google": 291,
+   "nota_google": 5,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 2 de 90 avaliações citam aparelho",
+    "menciona_aparelho": 2,
+    "avaliacoes_com_texto": 90
+   }
+  },
+  {
+   "local_id": "dia_do_sorriso",
+   "papel": "concorrente",
+   "nome": "Dia Do Sorriso",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJ4ZTMQ7L1k5QRoCzQHEwPEo4",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places",
+   "avaliacoes_google": 212,
+   "nota_google": 4.9,
+   "produto": {
+    "disputa_aparelho": "sem_evidencia",
+    "porque": "zona cinzenta: 2 de 51 avaliações citam aparelho (4%) — faz aparelho, mas não é o negócio principal",
+    "menciona_aparelho": 2,
+    "avaliacoes_com_texto": 51
+   }
+  },
+  {
+   "local_id": "clinica_oral_vida",
+   "papel": "concorrente",
+   "nome": "Clínica Oral Vida",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJ1QKIXxv1k5QRCz4Youh_Fgo",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places",
+   "avaliacoes_google": 216,
+   "nota_google": 5,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 0 de 166 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 166
+   }
+  },
+  {
+   "local_id": "glied_odontologia",
+   "papel": "concorrente",
+   "nome": "Glied Odontologia",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJRV-hjGr1k5QR4SW0V7zj7kg",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 175,
+   "nota_google": 5,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 2 de 117 avaliações citam aparelho",
+    "menciona_aparelho": 2,
+    "avaliacoes_com_texto": 117
+   }
+  },
+  {
+   "local_id": "crop_radiologia_odontologi",
+   "papel": "concorrente",
+   "nome": "CROP - Radiologia Odontológica Presidente Prudente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJW2qqD8f1k5QRLLDtAQtQ5Cg",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 167,
+   "nota_google": 4.9,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 0 de 68 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 68
+   }
+  },
+  {
+   "local_id": "odonto_clarity_clinica_odo",
+   "papel": "concorrente",
+   "nome": "Odonto Clarity | Clínica Odontológica | Implantes dentarios | Estetica | Cecap | Presidente Prudente SP",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJSS2eZVXxk5QRMTT5dnePlnc",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 183,
+   "nota_google": 4.9,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de implante: só 1 de 115 avaliações citam aparelho",
+    "menciona_aparelho": 1,
+    "avaliacoes_com_texto": 115
+   }
+  },
+  {
+   "local_id": "dra_luciane_canci_odontope",
+   "papel": "concorrente",
+   "nome": "Dra. Luciane Canci | Odontopediatra em Presidente Prudente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJpyFX3Vf0k5QRzWZwP0pVYXw",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 130,
+   "nota_google": 5,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 0 de 74 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 74
+   }
+  },
+  {
+   "local_id": "oral_unic_implantes_presid",
+   "papel": "concorrente",
+   "nome": "Oral Unic Implantes Presidente Prudente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJ_b3lOjb1k5QR3j68GvlF4z0",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 192,
+   "nota_google": 5,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de implante: só 0 de 75 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 75
+   }
+  },
+  {
+   "local_id": "odontologia_amada_dra_isab",
+   "papel": "concorrente",
+   "nome": "Odontologia Amada | Dra Isabella Amada",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJ6bOqk1P1k5QR2JSgThqT9fA",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 144,
+   "nota_google": 4.9,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 0 de 59 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 59
+   }
+  },
+  {
+   "local_id": "oral_clinic_odontologia",
+   "papel": "concorrente",
+   "nome": "Oral Clinic Odontologia",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJY8TV1Oj1k5QRObBWoPtEfX8",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 166,
+   "nota_google": 5,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 0 de 74 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 74
+   }
+  },
+  {
+   "local_id": "turminha_da_dra_bia_ortodo",
+   "papel": "concorrente",
+   "nome": "Turminha da Dra Bia - Ortodontia e Odontopediatria para família.",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJ_RQJWk30k5QRwC_M0XgQf3c",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 125,
+   "nota_google": 5,
+   "produto": {
+    "disputa_aparelho": "sim",
+    "porque": "o nome declara aparelho/ortodontia",
+    "menciona_aparelho": 1,
+    "avaliacoes_com_texto": 76
+   }
+  },
+  {
+   "local_id": "instituto_odontologico_drs",
+   "papel": "concorrente",
+   "nome": "Instituto Odontológico Drs. Flavio e Silvana Menezes",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJ4dc3_FL0k5QRc1HEzZM_4ss",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 123,
+   "nota_google": 5,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de implante: só 0 de 84 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 84
+   }
+  },
+  {
+   "local_id": "odontolog_odontologia_e_es",
+   "papel": "concorrente",
+   "nome": "ODONTOLOG - Odontologia e Estética",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJLyD3hO31k5QRWiL5azYgnW4",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 118,
+   "nota_google": 5,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de implante: só 0 de 85 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 85
+   }
+  },
+  {
+   "local_id": "centro_odontologico_diaman",
+   "papel": "concorrente",
+   "nome": "Centro odontológico Diamante",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJEcZua7P1k5QRynJmfdFPoJI",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 100,
+   "nota_google": 4.9,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 1 de 58 avaliações citam aparelho",
+    "menciona_aparelho": 1,
+    "avaliacoes_com_texto": 58
+   }
+  },
+  {
+   "local_id": "rehabilitar_odontologia_co",
+   "papel": "concorrente",
+   "nome": "Rehabilitar Odontologia - Consultório odontológico - Dr. Pablo Enrico",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJdyWR6TX0k5QR5igorscBZkY",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 112,
+   "nota_google": 5,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de implante: só 0 de 93 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 93
+   }
+  },
+  {
+   "local_id": "odontocompany_cohab",
+   "papel": "concorrente",
+   "nome": "Odontocompany Cohab",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJG1MZjMH1k5QRi6ISDaRnGqE",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 122,
+   "nota_google": 4.9,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 0 de 52 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 52
+   }
+  },
+  {
+   "local_id": "rotta_instituto_de_odontol",
+   "papel": "concorrente",
+   "nome": "Rotta Instituto de Odontologia | Invisalign",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJs-m49Vn1k5QR-B1G3fcrtRU",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 107,
+   "nota_google": 5,
+   "produto": {
+    "disputa_aparelho": "sim",
+    "porque": "o nome declara aparelho/ortodontia",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 54
+   }
+  }
+ ],
+ "rotulo": "SP · Presidente Prudente",
+ "cidades_rotulo": [
+  "SP · Presidente Prudente"
+ ],
+ "ibge": [
+  {
+   "municipio": "Presidente Prudente",
+   "uf": "SP",
+   "uf_nome": "São Paulo",
+   "ibge_id": 3541406,
+   "mesorregiao": "Presidente Prudente",
+   "populacao_estimada": {
+    "ano": "2025",
+    "valor": "234706",
+    "unidade": "Pessoas"
+   },
+   "populacao_censo_2022": {
+    "ano": "2022",
+    "valor": "225668",
+    "unidade": "Pessoas"
+   },
+   "massa_salarial_mil_reais": {
+    "ano": "2023",
+    "valor": "11617599",
+    "unidade": "Mil Reais"
+   },
+   "idades": {
+    "por_faixa": {
+     "0a4": 12259,
+     "5a9": 13040,
+     "10a14": 12736,
+     "15a19": 13661,
+     "20a24": 15811,
+     "25a29": 16463,
+     "30a34": 16484,
+     "35a39": 16980,
+     "40a44": 17625,
+     "45a49": 15699,
+     "50a54": 15762,
+     "55a59": 14919,
+     "60a64": 13126
     },
-    {
-      "local_id": "dentoclinic_pp",
-      "papel": "concorrente",
-      "nome": "Dentoclinic",
-      "tipo_concorrente": "nicho",
-      "place_id": "ChIJ17pf1sr1k5QR8gVL-rTnPkc",
-      "place_id_origem": "google places api 2026-08-08 (nome)",
-      "avaliacoes_google": 77,
-      "nota_google": 5
-    },
-    {
-      "local_id": "todos_sorrindo_pp",
-      "papel": "concorrente",
-      "nome": "Todos Sorrindo Odontologia",
-      "tipo_concorrente": "clinica",
-      "place_id": "ChIJgWue7az1k5QROX2joSxY8Y0",
-      "avaliacoes_google": 40,
-      "nota_google": 4.9,
-      "place_id_origem": "google places api 2026-08-08 (nome; unidade maior)",
-      "nota": "Existe uma segunda ficha, 'Clínica Odontológica Todos Sorrindo' (17 aval., R. Siqueira Campos). Pode ser filial ou ficha duplicada — não confirmado."
-    },
-    {
-      "local_id": "nexa_pp",
-      "papel": "concorrente",
-      "nome": "NEXA Odonto",
-      "tipo_concorrente": "clinica_geral",
-      "place_id": "ChIJ6wqJAzb0k5QRAZNlRRIJuRI",
-      "place_id_origem": "google places api 2026-08-08 (nome)",
-      "avaliacoes_google": 619,
-      "nota_google": 4.7
-    },
-    {
-      "local_id": "croorto_pp",
-      "papel": "concorrente",
-      "nome": "Croorto",
-      "tipo_concorrente": "especialista",
-      "place_id": "ChIJT_oDsbT1k5QRGl-L-Ffjwc4",
-      "place_id_origem": "google places api 2026-08-08 (nome)",
-      "avaliacoes_google": 53,
-      "nota_google": 4.7
-    },
-    {
-      "local_id": "sorrifacil_pp",
-      "papel": "concorrente",
-      "nome": "Sorrifácil",
-      "tipo_concorrente": "rede_popular",
-      "place_id": "ChIJzcw6QKn1k5QRze42WL6VVkI",
-      "place_id_origem": "google places api 2026-08-08 (nome)",
-      "avaliacoes_google": 31,
-      "nota_google": 4.6
-    },
-    {
-      "local_id": "bongiovanni_odontologia_im",
-      "papel": "concorrente",
-      "nome": "Bongiovanni Odontologia | Implante Dentário | Dentista | Bairro do Bosque | Presidente Prudente - SP",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJwcrLwLP1k5QROIlrY0yRJhU",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places",
-      "avaliacoes_google": 1071,
-      "nota_google": 4.9
-    },
-    {
-      "local_id": "unisorrir_clinica_odontolo",
-      "papel": "concorrente",
-      "nome": "Unisorrir Clínica Odontológica | Implantes Dentários | Invisalign",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJ_VhmYy31k5QRjvcHzqJ2An8",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places",
-      "avaliacoes_google": 495,
-      "nota_google": 5
-    },
-    {
-      "local_id": "core_odontologia_president",
-      "papel": "concorrente",
-      "nome": "CORE Odontologia Presidente Prudente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJIw5wpF71k5QRcjC5f-ATyrY",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places",
-      "avaliacoes_google": 291,
-      "nota_google": 5
-    },
-    {
-      "local_id": "dia_do_sorriso",
-      "papel": "concorrente",
-      "nome": "Dia Do Sorriso",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJ4ZTMQ7L1k5QRoCzQHEwPEo4",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places",
-      "avaliacoes_google": 212,
-      "nota_google": 4.9
-    },
-    {
-      "local_id": "clinica_oral_vida",
-      "papel": "concorrente",
-      "nome": "Clínica Oral Vida",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJ1QKIXxv1k5QRCz4Youh_Fgo",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places",
-      "avaliacoes_google": 216,
-      "nota_google": 5
-    },
-    {
-      "local_id": "glied_odontologia",
-      "papel": "concorrente",
-      "nome": "Glied Odontologia",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJRV-hjGr1k5QR4SW0V7zj7kg",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 175,
-      "nota_google": 5
-    },
-    {
-      "local_id": "crop_radiologia_odontologi",
-      "papel": "concorrente",
-      "nome": "CROP - Radiologia Odontológica Presidente Prudente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJW2qqD8f1k5QRLLDtAQtQ5Cg",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 167,
-      "nota_google": 4.9
-    },
-    {
-      "local_id": "odonto_clarity_clinica_odo",
-      "papel": "concorrente",
-      "nome": "Odonto Clarity | Clínica Odontológica | Implantes dentarios | Estetica | Cecap | Presidente Prudente SP",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJSS2eZVXxk5QRMTT5dnePlnc",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 183,
-      "nota_google": 4.9
-    },
-    {
-      "local_id": "dra_luciane_canci_odontope",
-      "papel": "concorrente",
-      "nome": "Dra. Luciane Canci | Odontopediatra em Presidente Prudente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJpyFX3Vf0k5QRzWZwP0pVYXw",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 130,
-      "nota_google": 5
-    },
-    {
-      "local_id": "oral_unic_implantes_presid",
-      "papel": "concorrente",
-      "nome": "Oral Unic Implantes Presidente Prudente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJ_b3lOjb1k5QR3j68GvlF4z0",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 192,
-      "nota_google": 5
-    },
-    {
-      "local_id": "odontologia_amada_dra_isab",
-      "papel": "concorrente",
-      "nome": "Odontologia Amada | Dra Isabella Amada",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJ6bOqk1P1k5QR2JSgThqT9fA",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 144,
-      "nota_google": 4.9
-    },
-    {
-      "local_id": "oral_clinic_odontologia",
-      "papel": "concorrente",
-      "nome": "Oral Clinic Odontologia",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJY8TV1Oj1k5QRObBWoPtEfX8",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 166,
-      "nota_google": 5
-    },
-    {
-      "local_id": "turminha_da_dra_bia_ortodo",
-      "papel": "concorrente",
-      "nome": "Turminha da Dra Bia - Ortodontia e Odontopediatria para família.",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJ_RQJWk30k5QRwC_M0XgQf3c",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 125,
-      "nota_google": 5
-    },
-    {
-      "local_id": "instituto_odontologico_drs",
-      "papel": "concorrente",
-      "nome": "Instituto Odontológico Drs. Flavio e Silvana Menezes",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJ4dc3_FL0k5QRc1HEzZM_4ss",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 123,
-      "nota_google": 5
-    },
-    {
-      "local_id": "odontolog_odontologia_e_es",
-      "papel": "concorrente",
-      "nome": "ODONTOLOG - Odontologia e Estética",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJLyD3hO31k5QRWiL5azYgnW4",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 118,
-      "nota_google": 5
-    },
-    {
-      "local_id": "centro_odontologico_diaman",
-      "papel": "concorrente",
-      "nome": "Centro odontológico Diamante",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJEcZua7P1k5QRynJmfdFPoJI",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 100,
-      "nota_google": 4.9
-    },
-    {
-      "local_id": "rehabilitar_odontologia_co",
-      "papel": "concorrente",
-      "nome": "Rehabilitar Odontologia - Consultório odontológico - Dr. Pablo Enrico",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJdyWR6TX0k5QR5igorscBZkY",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 112,
-      "nota_google": 5
-    },
-    {
-      "local_id": "odontocompany_cohab",
-      "papel": "concorrente",
-      "nome": "Odontocompany Cohab",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJG1MZjMH1k5QRi6ISDaRnGqE",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 122,
-      "nota_google": 4.9
-    },
-    {
-      "local_id": "rotta_instituto_de_odontol",
-      "papel": "concorrente",
-      "nome": "Rotta Instituto de Odontologia | Invisalign",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJs-m49Vn1k5QR-B1G3fcrtRU",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 107,
-      "nota_google": 5
-    }
-  ],
-  "rotulo": "SP · Presidente Prudente",
-  "cidades_rotulo": [
-    "SP · Presidente Prudente"
-  ],
-  "ibge": [
-    {
-      "municipio": "Presidente Prudente",
-      "uf": "SP",
-      "uf_nome": "São Paulo",
-      "ibge_id": 3541406,
-      "mesorregiao": "Presidente Prudente",
-      "populacao_estimada": {
-        "ano": "2025",
-        "valor": "234706",
-        "unidade": "Pessoas"
-      },
-      "populacao_censo_2022": {
-        "ano": "2022",
-        "valor": "225668",
-        "unidade": "Pessoas"
-      },
-      "massa_salarial_mil_reais": {
-        "ano": "2023",
-        "valor": "11617599",
-        "unidade": "Mil Reais"
-      },
-      "idades": {
-        "por_faixa": {
-          "0a4": 12259,
-          "5a9": 13040,
-          "10a14": 12736,
-          "15a19": 13661,
-          "20a24": 15811,
-          "25a29": 16463,
-          "30a34": 16484,
-          "35a39": 16980,
-          "40a44": 17625,
-          "45a49": 15699,
-          "50a54": 15762,
-          "55a59": 14919,
-          "60a64": 13126
-        },
-        "alvo_9_15": 18076,
-        "alvo_30_45": 51089
-      }
-    }
-  ]
+    "alvo_9_15": 18076,
+    "alvo_30_45": 51089
+   }
+  }
+ ]
 }

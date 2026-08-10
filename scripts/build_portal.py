@@ -449,150 +449,176 @@ def main():
         "cidades_de_oportunidade_estudadas": len(PRACAS_OPORTUNIDADE),
     }
 
-    # --------------------------------------------------------------- os andares
+    # ----------------------------------------------------------------- os cards
     #
-    # Treze ferramentas lado a lado é um armário, não uma sala de comando. Quem
-    # abre não sabe por onde começar, e uma ferramenta que muda uma decisão fica
-    # do lado de uma que só se consulta. São três andares, e a ordem importa:
+    # O cliente pediu de volta o primeiro desenho: TUDO EM CARDS, linguagem
+    # simples, fácil de entender. Cada card é UMA pergunta em português de
+    # balcão, UM número grande e UMA frase — o detalhe mora na tela que o
+    # card abre. Quatro grupos com nome de gente:
     #
-    #   AGORA     — uma tela só. A fila de intervenção. É o que abre.
-    #   DECIDIR   — as quatro que mudam uma decisão de franqueadora neste mês.
-    #   CONSULTAR — o acervo. Ninguém abre o portal para ver isto; abre para
-    #               conferir de onde veio um número da fila.
+    #   A REDE      as 374 unidades — marca, mapa, alertas, reputação
+    #   AS 10 LOJAS as acompanhadas de perto — movimento, rivais, respostas
+    #   EXPANSÃO    onde abrir a próxima
+    #   ARQUIVO     de onde veio cada número (gaveta recolhida)
     #
-    # A "Carteira do consultor" sai da lista. Ela prometia "quem visitar
-    # primeiro, e por quê" e entregava quatro pareceres sobre uma peça de
-    # anúncio. Quem entrega essa promessa é a fila — e agora com o número, o
-    # concorrente nomeado, o prazo e o dono.
-    def ferramenta(chave, nome, oque, tela, disponivel, resumo, motivo=None,
-                   andar="consultar"):
-        return {"chave": chave, "nome": nome, "o_que_responde": oque,
-                "tela": tela, "disponivel": disponivel, "resumo": resumo,
-                "indisponivel_porque": motivo, "andar": andar}
+    def _json(nome):
+        arq = OUT/f"{nome}.json"
+        return json.loads(arq.read_text(encoding="utf-8")) if arq.exists() else {}
 
-    ferramentas = [
-        ferramenta("voz_da_cidade", "A voz da cidade",
-                   "o que a cidade comenta nos canais locais, antes de ser paciente",
-                   "voz_da_cidade", (OUT/"voz_da_cidade.json").exists(),
-                   (lambda r: f"{sum(x.get('comentarios_lidos', 0) for x in r.get('pracas', []))} "
-                    f"comentários lidos em {len(r.get('pracas', []))} praças"
-                    )(json.loads((OUT/"voz_da_cidade.json").read_text(encoding="utf-8"))
-                      if (OUT/"voz_da_cidade.json").exists() else {}),
-                   andar="consultar"),
-        ferramenta("mudou", "O que mudou",
-                   "o movimento desde a última medição, ficha a ficha",
-                   "mudou", (OUT/"o_que_mudou.json").exists(),
-                   (lambda m: (lambda ps: f"{len(ps)} praças medidas · "
-                    f"{sum(len(d.get('contador_caiu', [])) for d in ps.values())} "
-                    f"contador(es) caíram · períodos ainda curtos, engordam a "
-                    f"cada medição")(m.get("pracas", {})))(
-                       json.loads((OUT/"o_que_mudou.json").read_text(encoding="utf-8"))
-                       if (OUT/"o_que_mudou.json").exists() else {}),
-                   andar="agora"),
-        ferramenta("padroes", "Os padrões da rede",
-                   "o que as dez lojas ensinam lidas juntas — e o que o dado derrubou",
-                   "padroes", (OUT/"padroes.json").exists(),
-                   "a satisfação é igual nas dez; a constância não — e 4 "
-                   "explicações confortáveis caíram no teste",
-                   andar="decidir"),
-        ferramenta("caixa", "A caixa de respostas",
-                   "as negativas sem resposta, uma a uma, por loja",
-                   "caixa", (OUT/"caixa_de_respostas.json").exists(),
-                   (lambda c: c.get("manchete", ""))(
-                       json.loads((OUT/"caixa_de_respostas.json").read_text(encoding="utf-8"))
-                       if (OUT/"caixa_de_respostas.json").exists() else {}),
-                   andar="agora"),
-        ferramenta("rede_inteira", "A rede inteira",
-                   "onde a marca está mal na rua, nas 374",
-                   "rede_inteira", (OUT/"rede_inteira.json").exists(),
-                   (lambda r: f"{r.get('confirmadas')} de {r.get('na_lista_oficial')} "
-                    f"fichas conferidas · {len([a for a in r.get('alertas',[]) if a['gravidade']=='vermelha'])} "
-                    f"alertas vermelhos · nota mediana {r.get('nota_mediana')}"
-                    )(json.loads((OUT/"rede_inteira.json").read_text(encoding="utf-8"))
-                      if (OUT/"rede_inteira.json").exists() else {}),
-                   andar="decidir"),
-        ferramenta("rival", "O que o rival faz que dá certo",
-                   "o que o concorrente vencedor faz, na voz do paciente dele",
-                   "rival", (OUT/"rival.json").exists(),
-                   (lambda r: f"{len(r.get('pracas', []))} praças comparadas · "
-                    f"33.348 avaliações de concorrente lidas"
-                    )(json.loads((OUT/"rival.json").read_text(encoding="utf-8"))
-                      if (OUT/"rival.json").exists() else {}),
-                   andar="decidir"),
-        ferramenta("fila", "A fila de intervenção",
-                   "onde intervir primeiro neste mês, e por quê",
-                   "fila", bool(fila.get("fila")),
-                   fila.get("manchete", ""), andar="agora"),
-        ferramenta("mapa", "Mapa da rede",
-                   "onde a rede está, estado por estado",
-                   "mapa", True,
-                   f"{len(atuais)} unidades em {len({u['cidade'] for u in atuais})} "
-                   f"cidades · {len([m for m in mapa if not m['unidades']])} estados sem nenhuma"),
-        ferramenta("radar", "Radar de Oportunidade",
-                   "onde vale abrir a próxima unidade",
-                   "radar", bool(rad.get("oportunidades")),
-                   f"{len(rad.get('oportunidades', []))} praças livres estudadas · "
-                   f"{len(rad.get('ja_tem_unidade', []))} descartadas por já ter unidade", andar="decidir"),
-        ferramenta("constancia", "Quem sustenta, quem parou",
-                   "quais unidades operam e quais só fizeram campanha",
-                   "constancia", bool(cruz.get("unidades")),
-                   f"{cruz.get('sustentam', 0)} de {cruz.get('unidades', 0)} sustentam · "
-                   f"{cruz.get('paradas', 0)} pararam · {cruz.get('campanha', 0)} em campanha", andar="decidir"),
-        ferramenta("busca", "Presença na busca",
-                   "a rede aparece quando a cidade procura dentista?",
-                   "busca", bool(fam),
-                   f"{fam['dentista']['dentro']} aparições contra "
-                   f"{fam['dentista']['fora']} ausências na busca por 'dentista'"
-                   if fam.get("dentista") else "sem medição"),
-        ferramenta("fichas", "Auditoria de ficha do Google",
-                   "o cadastro das unidades está certo?",
-                   "fichas", bool(fichas),
-                   f"{len(fichas)} fichas conferidas · "
-                   + " · ".join(f"{n} como '{t}'" for t, n in por_tipo.most_common(2))
-                   + f" · {sem_site} sem site"),
-        ferramenta("reputacao", "Reputação: rede contra rede",
-                   "como a marca se compara com as concorrentes",
-                   "reputacao", bool(reputacao),
-                   f"{len(reputacao)} redes de ortodontia e odontologia popular · "
-                   f"nota {next((x['nota'] for x in reputacao if x['nossa']), '?')} "
-                   f"contra {min((x['nota'] for x in reputacao if not x['nossa'] and x['nota']), default='?')} "
-                   f"a {max((x['nota'] for x in reputacao if not x['nossa'] and x['nota']), default='?')} delas",
-                   andar="decidir"),
-        ferramenta("territorio", "Território vazio",
-                   "que canal falta em cada praça, e ninguém ocupou",
-                   "territorio", bool(cruz.get("territorio_vazio")),
-                   "canais mapeados por praça, com os que não existem", andar="decidir"),
-        ferramenta("achados", "A escada dos achados",
-                   "o que já vale para a rede e o que caiu",
-                   "achados", (OUT/"achados.json").exists(),
-                   "de sinal isolado a regra da rede — inclusive o que foi derrubado"),
-        ferramenta("pracas", "As praças medidas",
-                   "a ficha completa de cada praça",
-                   "pracas", bool(PRACAS),
-                   f"{len(PRACAS)} praças com estudo completo"),
-        ferramenta("planos", "O plano de cada franqueado",
-                   "o que cada unidade tem para fazer nesta semana",
-                   "planos", bool(presentes_planos := sorted(
-                       a.stem for a in (OUT/"planos").glob("*.json"))
-                       if (OUT/"planos").exists() else []),
-                   f"{len(presentes_planos)} planos escritos"),
+    def card(chave, titulo, pergunta, numero, frase, tela, grupo,
+             disponivel=True, motivo=None):
+        return {"chave": chave, "titulo": titulo, "pergunta": pergunta,
+                "numero": numero, "frase": frase, "tela": tela,
+                "grupo": grupo, "disponivel": disponivel,
+                "indisponivel_porque": motivo}
+
+    mud = _json("o_que_mudou")
+    quedas = sum(len(d.get("contador_caiu", []))
+                 for d in mud.get("pracas", {}).values())
+    rede_i = _json("rede_inteira")
+    vermelhos = [a for a in rede_i.get("alertas", [])
+                 if a.get("gravidade") == "vermelha"]
+    caixa = _json("caixa_de_respostas")
+    voz = _json("voz_da_cidade")
+    # rivais do PRODUTO: só quem disputa aparelho (odontologia não é ortodontia)
+    rivais_aparelho = sum(
+        1 for p in PRACAS for l in ident[p].get("locais", [])
+        if l.get("papel") != "proprio"
+        and (l.get("produto") or {}).get("disputa_aparelho") == "sim")
+    planos_prontos = (sorted(a.stem for a in (OUT/"planos").glob("*.json"))
+                      if (OUT/"planos").exists() else [])
+
+    cards = [
+        # ------------------------------------------------------------ A REDE
+        card("mapa", "A rede no Brasil", "Onde a OrthoDontic está hoje?",
+             len(atuais),
+             f"{sum(1 for u in atuais if u['situacao'] == 'aberta')} abertas e "
+             f"{sum(1 for u in atuais if u['situacao'] != 'aberta')} em "
+             f"implantação, em {len({u['cidade'] for u in atuais})} cidades. "
+             f"{len([m for m in mapa if not m['unidades']])} estados ainda sem "
+             f"unidade.",
+             "mapa", "rede"),
+        card("alertas", "Alertas nas fichas do Google",
+             "Alguma unidade está mal na rua?",
+             len(vermelhos),
+             (f"{len(vermelhos)} alertas graves nas {rede_i.get('confirmadas', 0)} "
+              f"fichas conferidas — o primeiro: "
+              f"{vermelhos[0].get('por_que', '')}" if vermelhos else
+              "nenhum alerta grave nas fichas conferidas"),
+             "rede_inteira", "rede", bool(rede_i)),
+        card("reputacao", "A marca no Reclame Aqui",
+             "Como a OrthoDontic se compara com as outras redes?",
+             next((x["nota"] for x in reputacao if x["nossa"]), None),
+             (f"nota da OrthoDontic contra "
+              f"{min((x['nota'] for x in reputacao if not x['nossa'] and x['nota']), default='?')} a "
+              f"{max((x['nota'] for x in reputacao if not x['nossa'] and x['nota']), default='?')} "
+              f"das outras {sum(1 for x in reputacao if not x['nossa'])} redes "
+              f"comparadas — só ortodontia e odontologia popular entram."),
+             "reputacao", "rede", bool(reputacao)),
+        # -------------------------------------------------------- AS 10 LOJAS
+        card("mudou", "O que mudou na semana",
+             "O que aconteceu desde a última medição?",
+             quedas,
+             f"contadores de avaliação CAÍRAM — queda é avaliação apagada, "
+             f"evento raro. {len(mud.get('pracas', {}))} praças medidas de novo; "
+             f"o período ainda é curto e engorda a cada semana.",
+             "mudou", "lojas", bool(mud)),
+        card("fila", "Onde agir primeiro",
+             "Qual loja precisa de ajuda neste mês?",
+             fila.get("em_risco"),
+             fila.get("manchete", ""),
+             "fila", "lojas", bool(fila.get("fila"))),
+        card("caixa", "Avaliações sem resposta",
+             "Quantos pacientes reclamaram e ninguém respondeu?",
+             caixa.get("total_abertas"),
+             f"{caixa.get('com_texto', 0)} delas com o paciente explicando o "
+             f"motivo, loja por loja. Responder é higiene da marca.",
+             "caixa", "lojas", bool(caixa)),
+        card("rival", "Os concorrentes de ortodontia",
+             "Quem disputa o paciente de aparelho, e o que fazem melhor?",
+             rivais_aparelho,
+             "clínicas que vendem APARELHO nas praças acompanhadas. Clínica "
+             "geral e implante não entram: é outro tratamento, outro paciente.",
+             "rival", "lojas", (OUT/"rival.json").exists()),
+        card("padroes", "O que faz uma loja crescer",
+             "Por que umas lojas crescem e outras param?",
+             len(_json("padroes").get("hipoteses_testadas", [])),
+             "explicações confortáveis foram testadas e caíram. O que separa "
+             "as lojas que crescem é manter viva a rotina de pedir avaliação "
+             "no balcão — e isso é treinável.",
+             "padroes", "lojas", (OUT/"padroes.json").exists()),
+        card("constancia", "Quem mantém o ritmo",
+             "Quais lojas seguem ganhando avaliações todo mês?",
+             cruz.get("sustentam", 0),
+             f"de {cruz.get('unidades', 0)} lojas acompanhadas mantêm o ritmo. "
+             f"{cruz.get('paradas', 0)} pararam e "
+             f"{cruz.get('campanha', 0)} só tiveram picos de campanha.",
+             "constancia", "lojas", bool(cruz.get("unidades"))),
+        # ----------------------------------------------------------- EXPANSÃO
+        card("radar", "Onde abrir a próxima franquia",
+             "Quais cidades estão prontas para receber uma unidade?",
+             len(rad.get("oportunidades", [])),
+             f"cidades estudadas a fundo, todas sem OrthoDontic hoje — "
+             f"{len(rad.get('ja_tem_unidade', []))} outras foram descartadas "
+             f"por já ter unidade. Estudo de expansão: não entra em nenhuma "
+             f"conta da rede.",
+             "radar", "expansao", bool(rad.get("oportunidades"))),
+        card("pracas", "As praças estudadas",
+             "O que já sabemos de cada praça, em detalhe?",
+             len(PRACAS),
+             "praças da rede com estudo completo — concorrência, canais, "
+             "imprensa, busca e avaliações, no mesmo padrão de SC · Mafra.",
+             "pracas", "expansao", bool(PRACAS)),
+        # ------------------------------------------------------------ ARQUIVO
+        card("voz_da_cidade", "A voz da cidade",
+             "O que a cidade comenta, antes de virar paciente?",
+             sum(x.get("comentarios_lidos", 0) for x in voz.get("pracas", [])),
+             f"comentários lidos nos canais locais de "
+             f"{len(voz.get('pracas', []))} praças.",
+             "voz_da_cidade", "arquivo", (OUT/"voz_da_cidade.json").exists()),
+        card("busca", "A rede aparece na busca?",
+             "Quando a cidade procura 'dentista', a OrthoDontic aparece?",
+             fam.get("dentista", {}).get("dentro") if fam.get("dentista") else None,
+             (f"aparições contra {fam['dentista']['fora']} ausências na busca "
+              f"por 'dentista' — é essa palavra que traz o paciente de "
+              f"aparelho." if fam.get("dentista") else "sem medição"),
+             "busca", "arquivo", bool(fam)),
+        card("fichas", "O cadastro das unidades",
+             "As fichas do Google estão certas?",
+             len(fichas),
+             f"fichas conferidas · {sem_site} sem site na ficha.",
+             "fichas", "arquivo", bool(fichas)),
+        card("territorio", "Canais que ninguém ocupou",
+             "Que canal falta em cada praça?",
+             None, "canais mapeados por praça, com os que não existem.",
+             "territorio", "arquivo", bool(cruz.get("territorio_vazio"))),
+        card("achados", "O que já virou regra",
+             "O que se repete em todas as praças — e o que caiu no teste?",
+             None,
+             "cada achado com o degrau dele: de sinal isolado a regra da "
+             "rede, inclusive os derrubados.",
+             "achados", "arquivo", (OUT/"achados.json").exists()),
+        card("planos", "O plano de cada loja",
+             "O que cada franqueado tem para fazer nesta semana?",
+             len(planos_prontos),
+             "planos escritos, um por loja — só para praça com unidade.",
+             "planos", "arquivo", bool(planos_prontos)),
         # "4 regiões" era leitura errada do próprio arquivo: são 4 PONTOS de
         # uma região só (SC). Contar linha como se fosse região publicou como
-        # fato uma coisa que o arquivo nunca disse — o tipo de erro que, se o
-        # cliente acha antes da gente, contamina todo o resto da tela.
-        ferramenta("sazonalidade", "Calendário da rede",
-                   "quando a procura sobe em cada região",
-                   "sazonalidade", len({r.get("regiao") for r in sazon}) > 1,
-                   (f"{len({r.get('regiao') for r in sazon})} regiões · "
-                    f"{len(sazon)} pontos de curva" if sazon else "sem curva ainda"),
-                   ("só há curva de uma região ("
-                    + ", ".join(sorted({r.get("regiao") for r in sazon}))
-                    + f"), com {len(sazon)} pontos. Uma região não é calendário "
-                      f"da rede." if sazon else "nenhuma curva coletada")),
-        ferramenta("evidencias", "Biblioteca de evidências",
-                   "a citação por trás de cada afirmação",
-                   "evidencias", (OUT/"evidencias.json").exists(),
-                   "as vozes e provas que sustentam os achados"),
+        # fato uma coisa que o arquivo nunca disse.
+        card("sazonalidade", "Quando a procura sobe",
+             "Existe época certa para campanha?",
+             None, "sem curva suficiente ainda.",
+             "sazonalidade", "arquivo",
+             len({r.get("regiao") for r in sazon}) > 1,
+             ("só há curva de uma região ("
+              + ", ".join(sorted({r.get("regiao") for r in sazon}))
+              + f"), com {len(sazon)} pontos. Uma região não é calendário "
+                f"da rede." if sazon else "nenhuma curva coletada")),
+        card("evidencias", "De onde veio cada número",
+             "Qual é a prova por trás de cada afirmação?",
+             None, "as citações e fontes que sustentam os achados.",
+             "evidencias", "arquivo", (OUT/"evidencias.json").exists()),
     ]
 
     escritos.append(escreve("franqueadora", {
@@ -631,15 +657,17 @@ def main():
                                    "faixa", "quem_avanca", "acao")}
                                  for x in fila.get("fila", [])[:3]],
                    "tela": "fila"} if fila.get("fila") else None),
-        "andares": [
-            {"chave": "agora", "nome": "Agora",
-             "explica": "onde intervir primeiro neste mês"},
-            {"chave": "decidir", "nome": "Decidir",
-             "explica": "as quatro que mudam uma decisão de franqueadora"},
-            {"chave": "consultar", "nome": "Consultar",
+        "grupos": [
+            {"chave": "rede", "nome": "A rede",
+             "explica": "as 374 unidades: mapa, alertas e reputação da marca"},
+            {"chave": "lojas", "nome": "As 10 lojas acompanhadas",
+             "explica": "as unidades medidas de perto, loja por loja"},
+            {"chave": "expansao", "nome": "Expansão",
+             "explica": "onde abrir a próxima franquia"},
+            {"chave": "arquivo", "nome": "Arquivo",
              "explica": "de onde veio cada número"},
         ],
-        "ferramentas": ferramentas,
+        "cards": cards,
         "reputacao_das_redes": reputacao,
         "reputacao_fora_da_tela": {
             "redes": fora_da_rep,

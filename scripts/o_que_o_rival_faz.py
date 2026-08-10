@@ -143,21 +143,13 @@ def main():
                          and y["papel"] != "proprio" and y["ritmo"]],
                         key=lambda y: -y["ritmo"]):
             l = locais.get(x["local_id"], {})
-            tipo = (cat.get(l.get("place_id")) or {}).get("tipo") or \
-                   l.get("tipo_concorrente") or ""
-            # Dizer QUAL dos dois disparou. A versão anterior sempre imprimia
-            # a categoria, e assim "ODONTOMAX ... Implante" saía como excluído
-            # por ser 'Dentista' — que é justamente a categoria que NÃO exclui
-            # ninguém, porque 'dentista' é a porta de entrada do nosso paciente.
-            m_tipo = FORA.search(tipo)
-            m_nome = FORA.search(x["nome"] or "")
-            if m_tipo or m_nome:
-                if m_nome:
-                    porque = (f"o nome traz '{m_nome.group()}' — é outro "
-                              f"tratamento, não aparelho")
-                else:
-                    porque = (f"categoria '{tipo}' não disputa paciente de "
-                              f"aparelho")
+            # O veredito de produto vem carimbado na identidade por
+            # produto_do_concorrente.py (nome + voz do cliente). É mais forte
+            # que o regex de nome/categoria que morava aqui: clínica geral e
+            # implante dividem a rua, não o paciente de aparelho.
+            prod = l.get("produto") or {}
+            if prod.get("disputa_aparelho") != "sim":
+                porque = prod.get("porque") or "sem veredito de produto"
                 if not any(r.get("fora") and r["nome"] == x["nome"] for r in rivais):
                     rivais.append({"nome": x["nome"], "fora": True,
                                    "por_que_fora": porque})
@@ -174,6 +166,17 @@ def main():
 
         dentro = [r for r in rivais if not r["fora"]]
         if not dentro:
+            # Estado vazio é conteúdo: praça sem rival de aparelho comparável
+            # não some da tela — ela diz isso, que é leitura por si só.
+            for lid, l in proprias:
+                saida.append({"praca_id": p, "rotulo": d.get("rotulo"),
+                              "local_id": lid, "unidade": l.get("nome"),
+                              "sem_comparacao_porque":
+                                  "nenhum rival de APARELHO com amostra "
+                                  "suficiente na praça — as clínicas medidas "
+                                  "aqui são de outro produto",
+                              "rivais_fora": [r for r in rivais if r["fora"]],
+                              "vantagens_deles": []})
             continue
 
         for lid, l in proprias:

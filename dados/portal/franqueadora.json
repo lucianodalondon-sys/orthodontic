@@ -1,6 +1,6 @@
 {
   "corte": "2026-08-10",
-  "gerado_em": "2026-08-10T15:22:22",
+  "gerado_em": "2026-08-10T15:41:13",
   "rede": {
     "unidades": 374,
     "abertas": 348,
@@ -244,8 +244,8 @@
   ],
   "agora": {
     "pergunta": "Em quais unidades a OrthoDontic está perdendo atenção local, para qual concorrente, e onde intervir primeiro neste mês?",
-    "manchete": "6 de 10 unidades medidas estão em faixa vermelha. A primeira é PR · Londrina.",
-    "em_risco": 6,
+    "manchete": "1 de 10 unidades medidas estão em faixa vermelha. A primeira é PR · Londrina.",
+    "em_risco": 1,
     "unidades": 10,
     "o_que_e_atencao": "participação observável em busca, avaliações, publicidade e atividade digital. Não é faturamento — nenhum número desta tela vem de dado interno da rede.",
     "primeiras": [
@@ -253,15 +253,9 @@
         "pos": 1,
         "rotulo": "PR · Londrina",
         "unidade_curta": "Centro",
-        "urgencia": 90,
+        "urgencia": 65,
         "faixa": "vermelha",
-        "quem_avanca": {
-          "nome": "Vittallon Odontologia",
-          "ritmo": 35.6,
-          "meses": 11,
-          "nota": 5,
-          "posicao": 3
-        },
+        "quem_avanca": null,
         "acao": {
           "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
           "prazo": "14 dias",
@@ -274,15 +268,9 @@
         "pos": 2,
         "rotulo": "MT · Cuiabá + MT · Várzea Grande",
         "unidade_curta": "Cuiabá Dom Bosco (Centro Sul)",
-        "urgencia": 75,
-        "faixa": "vermelha",
-        "quem_avanca": {
-          "nome": "ODONTO MEDICINA 🦷",
-          "ritmo": 31.4,
-          "meses": 19,
-          "nota": 5,
-          "posicao": 3
-        },
+        "urgencia": 50,
+        "faixa": "amarela",
+        "quem_avanca": null,
         "acao": {
           "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
           "prazo": "14 dias",
@@ -295,15 +283,9 @@
         "pos": 3,
         "rotulo": "BA · Feira de Santana",
         "unidade_curta": "Feira de Santana",
-        "urgencia": 75,
-        "faixa": "vermelha",
-        "quem_avanca": {
-          "nome": "Clínica Central do Sorriso - Dentista Particular Feira de Santana",
-          "ritmo": 38.9,
-          "meses": 12,
-          "nota": 5,
-          "posicao": 2
-        },
+        "urgencia": 50,
+        "faixa": "amarela",
+        "quem_avanca": null,
         "acao": {
           "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
           "prazo": "14 dias",
@@ -315,213 +297,237 @@
     ],
     "tela": "fila"
   },
-  "andares": [
+  "grupos": [
     {
-      "chave": "agora",
-      "nome": "Agora",
-      "explica": "onde intervir primeiro neste mês"
+      "chave": "rede",
+      "nome": "A rede",
+      "explica": "as 374 unidades: mapa, alertas e reputação da marca"
     },
     {
-      "chave": "decidir",
-      "nome": "Decidir",
-      "explica": "as quatro que mudam uma decisão de franqueadora"
+      "chave": "lojas",
+      "nome": "As 10 lojas acompanhadas",
+      "explica": "as unidades medidas de perto, loja por loja"
     },
     {
-      "chave": "consultar",
-      "nome": "Consultar",
+      "chave": "expansao",
+      "nome": "Expansão",
+      "explica": "onde abrir a próxima franquia"
+    },
+    {
+      "chave": "arquivo",
+      "nome": "Arquivo",
       "explica": "de onde veio cada número"
     }
   ],
-  "ferramentas": [
-    {
-      "chave": "voz_da_cidade",
-      "nome": "A voz da cidade",
-      "o_que_responde": "o que a cidade comenta nos canais locais, antes de ser paciente",
-      "tela": "voz_da_cidade",
-      "disponivel": true,
-      "resumo": "1380 comentários lidos em 13 praças",
-      "indisponivel_porque": null,
-      "andar": "consultar"
-    },
-    {
-      "chave": "mudou",
-      "nome": "O que mudou",
-      "o_que_responde": "o movimento desde a última medição, ficha a ficha",
-      "tela": "mudou",
-      "disponivel": true,
-      "resumo": "13 praças medidas · 6 contador(es) caíram · períodos ainda curtos, engordam a cada medição",
-      "indisponivel_porque": null,
-      "andar": "agora"
-    },
-    {
-      "chave": "padroes",
-      "nome": "Os padrões da rede",
-      "o_que_responde": "o que as dez lojas ensinam lidas juntas — e o que o dado derrubou",
-      "tela": "padroes",
-      "disponivel": true,
-      "resumo": "a satisfação é igual nas dez; a constância não — e 4 explicações confortáveis caíram no teste",
-      "indisponivel_porque": null,
-      "andar": "decidir"
-    },
-    {
-      "chave": "caixa",
-      "nome": "A caixa de respostas",
-      "o_que_responde": "as negativas sem resposta, uma a uma, por loja",
-      "tela": "caixa",
-      "disponivel": true,
-      "resumo": "116 avaliações negativas sem resposta na rede medida — 86 delas com o paciente explicando o motivo.",
-      "indisponivel_porque": null,
-      "andar": "agora"
-    },
-    {
-      "chave": "rede_inteira",
-      "nome": "A rede inteira",
-      "o_que_responde": "onde a marca está mal na rua, nas 374",
-      "tela": "rede_inteira",
-      "disponivel": true,
-      "resumo": "326 de 374 fichas conferidas · 9 alertas vermelhos · nota mediana 4.8",
-      "indisponivel_porque": null,
-      "andar": "decidir"
-    },
-    {
-      "chave": "rival",
-      "nome": "O que o rival faz que dá certo",
-      "o_que_responde": "o que o concorrente vencedor faz, na voz do paciente dele",
-      "tela": "rival",
-      "disponivel": true,
-      "resumo": "10 praças comparadas · 33.348 avaliações de concorrente lidas",
-      "indisponivel_porque": null,
-      "andar": "decidir"
-    },
-    {
-      "chave": "fila",
-      "nome": "A fila de intervenção",
-      "o_que_responde": "onde intervir primeiro neste mês, e por quê",
-      "tela": "fila",
-      "disponivel": true,
-      "resumo": "6 de 10 unidades medidas estão em faixa vermelha. A primeira é PR · Londrina.",
-      "indisponivel_porque": null,
-      "andar": "agora"
-    },
+  "cards": [
     {
       "chave": "mapa",
-      "nome": "Mapa da rede",
-      "o_que_responde": "onde a rede está, estado por estado",
+      "titulo": "A rede no Brasil",
+      "pergunta": "Onde a OrthoDontic está hoje?",
+      "numero": 374,
+      "frase": "348 abertas e 26 em implantação, em 304 cidades. 4 estados ainda sem unidade.",
       "tela": "mapa",
+      "grupo": "rede",
       "disponivel": true,
-      "resumo": "374 unidades em 304 cidades · 4 estados sem nenhuma",
-      "indisponivel_porque": null,
-      "andar": "consultar"
+      "indisponivel_porque": null
     },
     {
-      "chave": "radar",
-      "nome": "Radar de Oportunidade",
-      "o_que_responde": "onde vale abrir a próxima unidade",
-      "tela": "radar",
+      "chave": "alertas",
+      "titulo": "Alertas nas fichas do Google",
+      "pergunta": "Alguma unidade está mal na rua?",
+      "numero": 9,
+      "frase": "9 alertas graves nas 326 fichas conferidas — o primeiro: nota 2.7 na ficha pública, e com base fina, o que ainda dá conserto rápido",
+      "tela": "rede_inteira",
+      "grupo": "rede",
       "disponivel": true,
-      "resumo": "6 praças livres estudadas · 2 descartadas por já ter unidade",
-      "indisponivel_porque": null,
-      "andar": "decidir"
-    },
-    {
-      "chave": "constancia",
-      "nome": "Quem sustenta, quem parou",
-      "o_que_responde": "quais unidades operam e quais só fizeram campanha",
-      "tela": "constancia",
-      "disponivel": true,
-      "resumo": "4 de 10 sustentam · 5 pararam · 1 em campanha",
-      "indisponivel_porque": null,
-      "andar": "decidir"
-    },
-    {
-      "chave": "busca",
-      "nome": "Presença na busca",
-      "o_que_responde": "a rede aparece quando a cidade procura dentista?",
-      "tela": "busca",
-      "disponivel": true,
-      "resumo": "13 aparições contra 198 ausências na busca por 'dentista'",
-      "indisponivel_porque": null,
-      "andar": "consultar"
-    },
-    {
-      "chave": "fichas",
-      "nome": "Auditoria de ficha do Google",
-      "o_que_responde": "o cadastro das unidades está certo?",
-      "tela": "fichas",
-      "disponivel": true,
-      "resumo": "10 fichas conferidas · 9 como 'Clínica odontológica' · 1 como 'Dentista' · 0 sem site",
-      "indisponivel_porque": null,
-      "andar": "consultar"
+      "indisponivel_porque": null
     },
     {
       "chave": "reputacao",
-      "nome": "Reputação: rede contra rede",
-      "o_que_responde": "como a marca se compara com as concorrentes",
+      "titulo": "A marca no Reclame Aqui",
+      "pergunta": "Como a OrthoDontic se compara com as outras redes?",
+      "numero": 8,
+      "frase": "nota da OrthoDontic contra 3 a 8.7 das outras 6 redes comparadas — só ortodontia e odontologia popular entram.",
       "tela": "reputacao",
+      "grupo": "rede",
       "disponivel": true,
-      "resumo": "7 redes de ortodontia e odontologia popular · nota 8 contra 3 a 8.7 delas",
-      "indisponivel_porque": null,
-      "andar": "decidir"
+      "indisponivel_porque": null
     },
     {
-      "chave": "territorio",
-      "nome": "Território vazio",
-      "o_que_responde": "que canal falta em cada praça, e ninguém ocupou",
-      "tela": "territorio",
+      "chave": "mudou",
+      "titulo": "O que mudou na semana",
+      "pergunta": "O que aconteceu desde a última medição?",
+      "numero": 6,
+      "frase": "contadores de avaliação CAÍRAM — queda é avaliação apagada, evento raro. 13 praças medidas de novo; o período ainda é curto e engorda a cada semana.",
+      "tela": "mudou",
+      "grupo": "lojas",
       "disponivel": true,
-      "resumo": "canais mapeados por praça, com os que não existem",
-      "indisponivel_porque": null,
-      "andar": "decidir"
+      "indisponivel_porque": null
     },
     {
-      "chave": "achados",
-      "nome": "A escada dos achados",
-      "o_que_responde": "o que já vale para a rede e o que caiu",
-      "tela": "achados",
+      "chave": "fila",
+      "titulo": "Onde agir primeiro",
+      "pergunta": "Qual loja precisa de ajuda neste mês?",
+      "numero": 1,
+      "frase": "1 de 10 unidades medidas estão em faixa vermelha. A primeira é PR · Londrina.",
+      "tela": "fila",
+      "grupo": "lojas",
       "disponivel": true,
-      "resumo": "de sinal isolado a regra da rede — inclusive o que foi derrubado",
-      "indisponivel_porque": null,
-      "andar": "consultar"
+      "indisponivel_porque": null
+    },
+    {
+      "chave": "caixa",
+      "titulo": "Avaliações sem resposta",
+      "pergunta": "Quantos pacientes reclamaram e ninguém respondeu?",
+      "numero": 116,
+      "frase": "86 delas com o paciente explicando o motivo, loja por loja. Responder é higiene da marca.",
+      "tela": "caixa",
+      "grupo": "lojas",
+      "disponivel": true,
+      "indisponivel_porque": null
+    },
+    {
+      "chave": "rival",
+      "titulo": "Os concorrentes de ortodontia",
+      "pergunta": "Quem disputa o paciente de aparelho, e o que fazem melhor?",
+      "numero": 22,
+      "frase": "clínicas que vendem APARELHO nas praças acompanhadas. Clínica geral e implante não entram: é outro tratamento, outro paciente.",
+      "tela": "rival",
+      "grupo": "lojas",
+      "disponivel": true,
+      "indisponivel_porque": null
+    },
+    {
+      "chave": "padroes",
+      "titulo": "O que faz uma loja crescer",
+      "pergunta": "Por que umas lojas crescem e outras param?",
+      "numero": 4,
+      "frase": "explicações confortáveis foram testadas e caíram. O que separa as lojas que crescem é manter viva a rotina de pedir avaliação no balcão — e isso é treinável.",
+      "tela": "padroes",
+      "grupo": "lojas",
+      "disponivel": true,
+      "indisponivel_porque": null
+    },
+    {
+      "chave": "constancia",
+      "titulo": "Quem mantém o ritmo",
+      "pergunta": "Quais lojas seguem ganhando avaliações todo mês?",
+      "numero": 4,
+      "frase": "de 10 lojas acompanhadas mantêm o ritmo. 5 pararam e 1 só tiveram picos de campanha.",
+      "tela": "constancia",
+      "grupo": "lojas",
+      "disponivel": true,
+      "indisponivel_porque": null
+    },
+    {
+      "chave": "radar",
+      "titulo": "Onde abrir a próxima franquia",
+      "pergunta": "Quais cidades estão prontas para receber uma unidade?",
+      "numero": 6,
+      "frase": "cidades estudadas a fundo, todas sem OrthoDontic hoje — 2 outras foram descartadas por já ter unidade. Estudo de expansão: não entra em nenhuma conta da rede.",
+      "tela": "radar",
+      "grupo": "expansao",
+      "disponivel": true,
+      "indisponivel_porque": null
     },
     {
       "chave": "pracas",
-      "nome": "As praças medidas",
-      "o_que_responde": "a ficha completa de cada praça",
+      "titulo": "As praças estudadas",
+      "pergunta": "O que já sabemos de cada praça, em detalhe?",
+      "numero": 7,
+      "frase": "praças da rede com estudo completo — concorrência, canais, imprensa, busca e avaliações, no mesmo padrão de SC · Mafra.",
       "tela": "pracas",
+      "grupo": "expansao",
       "disponivel": true,
-      "resumo": "7 praças com estudo completo",
-      "indisponivel_porque": null,
-      "andar": "consultar"
+      "indisponivel_porque": null
+    },
+    {
+      "chave": "voz_da_cidade",
+      "titulo": "A voz da cidade",
+      "pergunta": "O que a cidade comenta, antes de virar paciente?",
+      "numero": 1380,
+      "frase": "comentários lidos nos canais locais de 13 praças.",
+      "tela": "voz_da_cidade",
+      "grupo": "arquivo",
+      "disponivel": true,
+      "indisponivel_porque": null
+    },
+    {
+      "chave": "busca",
+      "titulo": "A rede aparece na busca?",
+      "pergunta": "Quando a cidade procura 'dentista', a OrthoDontic aparece?",
+      "numero": 13,
+      "frase": "aparições contra 198 ausências na busca por 'dentista' — é essa palavra que traz o paciente de aparelho.",
+      "tela": "busca",
+      "grupo": "arquivo",
+      "disponivel": true,
+      "indisponivel_porque": null
+    },
+    {
+      "chave": "fichas",
+      "titulo": "O cadastro das unidades",
+      "pergunta": "As fichas do Google estão certas?",
+      "numero": 10,
+      "frase": "fichas conferidas · 0 sem site na ficha.",
+      "tela": "fichas",
+      "grupo": "arquivo",
+      "disponivel": true,
+      "indisponivel_porque": null
+    },
+    {
+      "chave": "territorio",
+      "titulo": "Canais que ninguém ocupou",
+      "pergunta": "Que canal falta em cada praça?",
+      "numero": null,
+      "frase": "canais mapeados por praça, com os que não existem.",
+      "tela": "territorio",
+      "grupo": "arquivo",
+      "disponivel": true,
+      "indisponivel_porque": null
+    },
+    {
+      "chave": "achados",
+      "titulo": "O que já virou regra",
+      "pergunta": "O que se repete em todas as praças — e o que caiu no teste?",
+      "numero": null,
+      "frase": "cada achado com o degrau dele: de sinal isolado a regra da rede, inclusive os derrubados.",
+      "tela": "achados",
+      "grupo": "arquivo",
+      "disponivel": true,
+      "indisponivel_porque": null
     },
     {
       "chave": "planos",
-      "nome": "O plano de cada franqueado",
-      "o_que_responde": "o que cada unidade tem para fazer nesta semana",
+      "titulo": "O plano de cada loja",
+      "pergunta": "O que cada franqueado tem para fazer nesta semana?",
+      "numero": 7,
+      "frase": "planos escritos, um por loja — só para praça com unidade.",
       "tela": "planos",
+      "grupo": "arquivo",
       "disponivel": true,
-      "resumo": "7 planos escritos",
-      "indisponivel_porque": null,
-      "andar": "consultar"
+      "indisponivel_porque": null
     },
     {
       "chave": "sazonalidade",
-      "nome": "Calendário da rede",
-      "o_que_responde": "quando a procura sobe em cada região",
+      "titulo": "Quando a procura sobe",
+      "pergunta": "Existe época certa para campanha?",
+      "numero": null,
+      "frase": "sem curva suficiente ainda.",
       "tela": "sazonalidade",
+      "grupo": "arquivo",
       "disponivel": false,
-      "resumo": "1 regiões · 4 pontos de curva",
-      "indisponivel_porque": "só há curva de uma região (SC), com 4 pontos. Uma região não é calendário da rede.",
-      "andar": "consultar"
+      "indisponivel_porque": "só há curva de uma região (SC), com 4 pontos. Uma região não é calendário da rede."
     },
     {
       "chave": "evidencias",
-      "nome": "Biblioteca de evidências",
-      "o_que_responde": "a citação por trás de cada afirmação",
+      "titulo": "De onde veio cada número",
+      "pergunta": "Qual é a prova por trás de cada afirmação?",
+      "numero": null,
+      "frase": "as citações e fontes que sustentam os achados.",
       "tela": "evidencias",
+      "grupo": "arquivo",
       "disponivel": true,
-      "resumo": "as vozes e provas que sustentam os achados",
-      "indisponivel_porque": null,
-      "andar": "consultar"
+      "indisponivel_porque": null
     }
   ],
   "reputacao_das_redes": [

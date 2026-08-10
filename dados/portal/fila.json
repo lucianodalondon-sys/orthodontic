@@ -4,8 +4,8 @@
  "pergunta": "Em quais unidades a OrthoDontic está perdendo atenção local, para qual concorrente, e onde intervir primeiro neste mês?",
  "o_que_e_atencao": "participação observável em busca, avaliações, publicidade e atividade digital. Não é faturamento — nenhum número desta tela vem de dado interno da rede.",
  "unidades": 10,
- "em_risco": 6,
- "manchete": "6 de 10 unidades medidas estão em faixa vermelha. A primeira é PR · Londrina.",
+ "em_risco": 1,
+ "manchete": "1 de 10 unidades medidas estão em faixa vermelha. A primeira é PR · Londrina.",
  "criterio": [
   {
    "chave": "parada",
@@ -15,7 +15,7 @@
   {
    "chave": "rival",
    "peso": 25,
-   "titulo": "Um concorrente sustenta e corre mais"
+   "titulo": "Um rival de aparelho sustenta e corre mais"
   },
   {
    "chave": "nao_engatou",
@@ -60,7 +60,7 @@
    "unidade": "OrthoDontic Centro",
    "unidade_curta": "Centro",
    "idade_meses": 99,
-   "urgencia": 90,
+   "urgencia": 65,
    "faixa": "vermelha",
    "ritmo": 0.8,
    "meses": 2,
@@ -68,26 +68,13 @@
    "avaliacoes": 76,
    "posicao": 23,
    "de": 24,
-   "quem_avanca": {
-    "nome": "Vittallon Odontologia",
-    "ritmo": 35.6,
-    "meses": 11,
-    "nota": 5,
-    "posicao": 3
-   },
+   "quem_avanca": null,
    "gatilhos": [
     {
      "peso": 30,
      "titulo": "O contador de avaliações parou",
      "chave": "parada",
      "fato": "apenas 2 mês(es) seguidos com movimento acima do típico da própria unidade; o ritmo medido é 0.8 avaliações/mês",
-     "fonte": "dados/serie/reviews.jsonl"
-    },
-    {
-     "peso": 25,
-     "titulo": "Um concorrente sustenta e corre mais",
-     "chave": "rival",
-     "fato": "Vittallon Odontologia sustenta há 11 meses a 35.6/mês, contra 0.8/mês desta unidade",
      "fonte": "dados/serie/reviews.jsonl"
     },
     {
@@ -128,34 +115,21 @@
    "unidade": "OrthoDontic Cuiabá Dom Bosco (Centro Sul)",
    "unidade_curta": "Cuiabá Dom Bosco (Centro Sul)",
    "idade_meses": 100,
-   "urgencia": 75,
-   "faixa": "vermelha",
+   "urgencia": 50,
+   "faixa": "amarela",
    "ritmo": 0.7,
    "meses": 2,
    "nota": 4.9,
    "avaliacoes": 71,
    "posicao": 29,
    "de": 29,
-   "quem_avanca": {
-    "nome": "ODONTO MEDICINA 🦷",
-    "ritmo": 31.4,
-    "meses": 19,
-    "nota": 5,
-    "posicao": 3
-   },
+   "quem_avanca": null,
    "gatilhos": [
     {
      "peso": 30,
      "titulo": "O contador de avaliações parou",
      "chave": "parada",
      "fato": "apenas 2 mês(es) seguidos com movimento acima do típico da própria unidade; o ritmo medido é 0.7 avaliações/mês",
-     "fonte": "dados/serie/reviews.jsonl"
-    },
-    {
-     "peso": 25,
-     "titulo": "Um concorrente sustenta e corre mais",
-     "chave": "rival",
-     "fato": "ODONTO MEDICINA 🦷 sustenta há 19 meses a 31.4/mês, contra 0.7/mês desta unidade",
      "fonte": "dados/serie/reviews.jsonl"
     },
     {
@@ -189,34 +163,21 @@
    "unidade": "OrthoDontic Feira de Santana",
    "unidade_curta": "Feira de Santana",
    "idade_meses": 62,
-   "urgencia": 75,
-   "faixa": "vermelha",
+   "urgencia": 50,
+   "faixa": "amarela",
    "ritmo": 2.8,
    "meses": 1,
    "nota": 4.7,
    "avaliacoes": 170,
    "posicao": 17,
    "de": 22,
-   "quem_avanca": {
-    "nome": "Clínica Central do Sorriso - Dentista Particular Feira de Santana",
-    "ritmo": 38.9,
-    "meses": 12,
-    "nota": 5,
-    "posicao": 2
-   },
+   "quem_avanca": null,
    "gatilhos": [
     {
      "peso": 30,
      "titulo": "O contador de avaliações parou",
      "chave": "parada",
      "fato": "apenas 1 mês(es) seguidos com movimento acima do típico da própria unidade; o ritmo medido é 2.8 avaliações/mês",
-     "fonte": "dados/serie/reviews.jsonl"
-    },
-    {
-     "peso": 25,
-     "titulo": "Um concorrente sustenta e corre mais",
-     "chave": "rival",
-     "fato": "Clínica Central do Sorriso - Dentista Particular Feira de Santana sustenta há 12 meses a 38.9/mês, contra 2.8/mês desta unidade",
      "fonte": "dados/serie/reviews.jsonl"
     },
     {
@@ -250,34 +211,21 @@
    "unidade": "OrthoDontic Cuiabá Fernando Corrêa",
    "unidade_curta": "Cuiabá Fernando Corrêa",
    "idade_meses": 24,
-   "urgencia": 75,
-   "faixa": "vermelha",
+   "urgencia": 50,
+   "faixa": "amarela",
    "ritmo": 3.7,
    "meses": 0,
    "nota": 4.9,
    "avaliacoes": 78,
    "posicao": 16,
    "de": 29,
-   "quem_avanca": {
-    "nome": "ODONTO MEDICINA 🦷",
-    "ritmo": 31.4,
-    "meses": 19,
-    "nota": 5,
-    "posicao": 3
-   },
+   "quem_avanca": null,
    "gatilhos": [
     {
      "peso": 30,
      "titulo": "O contador de avaliações parou",
      "chave": "parada",
      "fato": "apenas 0 mês(es) seguidos com movimento acima do típico da própria unidade; o ritmo medido é 3.7 avaliações/mês",
-     "fonte": "dados/serie/reviews.jsonl"
-    },
-    {
-     "peso": 25,
-     "titulo": "Um concorrente sustenta e corre mais",
-     "chave": "rival",
-     "fato": "ODONTO MEDICINA 🦷 sustenta há 19 meses a 31.4/mês, contra 3.7/mês desta unidade",
      "fonte": "dados/serie/reviews.jsonl"
     },
     {
@@ -303,128 +251,6 @@
     "medido_em": null
    },
    "pos": 4
-  },
-  {
-   "local_id": "ortho_souza_naves",
-   "praca_id": "londrina",
-   "rotulo": "PR · Londrina",
-   "unidade": "OrthoDontic Souza Naves",
-   "unidade_curta": "Souza Naves",
-   "idade_meses": 172,
-   "urgencia": 60,
-   "faixa": "vermelha",
-   "ritmo": 3.3,
-   "meses": 9,
-   "nota": 4.6,
-   "avaliacoes": 566,
-   "posicao": 13,
-   "de": 24,
-   "quem_avanca": {
-    "nome": "Vittallon Odontologia",
-    "ritmo": 35.6,
-    "meses": 11,
-    "nota": 5,
-    "posicao": 3
-   },
-   "gatilhos": [
-    {
-     "peso": 25,
-     "titulo": "Um concorrente sustenta e corre mais",
-     "chave": "rival",
-     "fato": "Vittallon Odontologia sustenta há 11 meses a 35.6/mês, contra 3.3/mês desta unidade",
-     "fonte": "dados/serie/reviews.jsonl"
-    },
-    {
-     "peso": 20,
-     "titulo": "Está na metade de baixo da própria praça",
-     "chave": "posicao",
-     "fato": "13º lugar de 24 clínicas medidas na praça",
-     "fonte": "dados/portal/rede_cruzamento.json"
-    },
-    {
-     "peso": 15,
-     "titulo": "Nota abaixo da mediana da praça",
-     "chave": "nota",
-     "fato": "nota 4.6 contra mediana 5.0 das 24 clínicas medidas na praça",
-     "fonte": "dados/serie/places.jsonl"
-    }
-   ],
-   "acao": {
-    "o_que": "Levar a comparação impressa com Vittallon Odontologia para a visita e combinar a resposta",
-    "prazo": "próxima visita",
-    "dono": "consultor de campo",
-    "custo": "sem custo de mídia",
-    "por_causa_de": "rival"
-   },
-   "ciclo": {
-    "alertado_em": "2026-08-10",
-    "acao_confirmada": null,
-    "confirmada_em": null,
-    "resultado": null,
-    "medido_em": null
-   },
-   "pos": 5
-  },
-  {
-   "local_id": "ortho_contagem",
-   "praca_id": "contagem",
-   "rotulo": "MG · Contagem",
-   "unidade": "OrthoDontic",
-   "unidade_curta": null,
-   "idade_meses": 81,
-   "urgencia": 60,
-   "faixa": "vermelha",
-   "ritmo": 10.6,
-   "meses": 23,
-   "nota": 4.6,
-   "avaliacoes": 856,
-   "posicao": 10,
-   "de": 15,
-   "quem_avanca": {
-    "nome": "Odonto Prime São Caetano",
-    "ritmo": 23.6,
-    "meses": 21,
-    "nota": 4.9,
-    "posicao": 6
-   },
-   "gatilhos": [
-    {
-     "peso": 25,
-     "titulo": "Um concorrente sustenta e corre mais",
-     "chave": "rival",
-     "fato": "Odonto Prime São Caetano sustenta há 21 meses a 23.6/mês, contra 10.6/mês desta unidade",
-     "fonte": "dados/serie/reviews.jsonl"
-    },
-    {
-     "peso": 20,
-     "titulo": "Está na metade de baixo da própria praça",
-     "chave": "posicao",
-     "fato": "10º lugar de 15 clínicas medidas na praça",
-     "fonte": "dados/portal/rede_cruzamento.json"
-    },
-    {
-     "peso": 15,
-     "titulo": "Nota abaixo da mediana da praça",
-     "chave": "nota",
-     "fato": "nota 4.6 contra mediana 4.9 das 15 clínicas medidas na praça",
-     "fonte": "dados/serie/places.jsonl"
-    }
-   ],
-   "acao": {
-    "o_que": "Levar a comparação impressa com Odonto Prime São Caetano para a visita e combinar a resposta",
-    "prazo": "próxima visita",
-    "dono": "consultor de campo",
-    "custo": "sem custo de mídia",
-    "por_causa_de": "rival"
-   },
-   "ciclo": {
-    "alertado_em": "2026-08-10",
-    "acao_confirmada": null,
-    "confirmada_em": null,
-    "resultado": null,
-    "medido_em": null
-   },
-   "pos": 6
   },
   {
    "local_id": "ortho_mafra",
@@ -472,6 +298,102 @@
     "resultado": null,
     "medido_em": null
    },
+   "pos": 5
+  },
+  {
+   "local_id": "ortho_souza_naves",
+   "praca_id": "londrina",
+   "rotulo": "PR · Londrina",
+   "unidade": "OrthoDontic Souza Naves",
+   "unidade_curta": "Souza Naves",
+   "idade_meses": 172,
+   "urgencia": 35,
+   "faixa": "amarela",
+   "ritmo": 3.3,
+   "meses": 9,
+   "nota": 4.6,
+   "avaliacoes": 566,
+   "posicao": 13,
+   "de": 24,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 20,
+     "titulo": "Está na metade de baixo da própria praça",
+     "chave": "posicao",
+     "fato": "13º lugar de 24 clínicas medidas na praça",
+     "fonte": "dados/portal/rede_cruzamento.json"
+    },
+    {
+     "peso": 15,
+     "titulo": "Nota abaixo da mediana da praça",
+     "chave": "nota",
+     "fato": "nota 4.6 contra mediana 5.0 das 24 clínicas medidas na praça",
+     "fonte": "dados/serie/places.jsonl"
+    }
+   ],
+   "acao": {
+    "o_que": "Auditar a ficha do Google — foto, horário, serviços, resposta a avaliação",
+    "prazo": "7 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "posicao"
+   },
+   "ciclo": {
+    "alertado_em": "2026-08-10",
+    "acao_confirmada": null,
+    "confirmada_em": null,
+    "resultado": null,
+    "medido_em": null
+   },
+   "pos": 6
+  },
+  {
+   "local_id": "ortho_contagem",
+   "praca_id": "contagem",
+   "rotulo": "MG · Contagem",
+   "unidade": "OrthoDontic",
+   "unidade_curta": null,
+   "idade_meses": 81,
+   "urgencia": 35,
+   "faixa": "amarela",
+   "ritmo": 10.6,
+   "meses": 23,
+   "nota": 4.6,
+   "avaliacoes": 856,
+   "posicao": 9,
+   "de": 14,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 20,
+     "titulo": "Está na metade de baixo da própria praça",
+     "chave": "posicao",
+     "fato": "9º lugar de 14 clínicas medidas na praça",
+     "fonte": "dados/portal/rede_cruzamento.json"
+    },
+    {
+     "peso": 15,
+     "titulo": "Nota abaixo da mediana da praça",
+     "chave": "nota",
+     "fato": "nota 4.6 contra mediana 4.9 das 14 clínicas medidas na praça",
+     "fonte": "dados/serie/places.jsonl"
+    }
+   ],
+   "acao": {
+    "o_que": "Auditar a ficha do Google — foto, horário, serviços, resposta a avaliação",
+    "prazo": "7 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "posicao"
+   },
+   "ciclo": {
+    "alertado_em": "2026-08-10",
+    "acao_confirmada": null,
+    "confirmada_em": null,
+    "resultado": null,
+    "medido_em": null
+   },
    "pos": 7
   },
   {
@@ -481,29 +403,16 @@
    "unidade": "OrthoDontic",
    "unidade_curta": null,
    "idade_meses": 39,
-   "urgencia": 40,
-   "faixa": "amarela",
+   "urgencia": 15,
+   "faixa": "verde",
    "ritmo": 7.8,
    "meses": 15,
    "nota": 5,
    "avaliacoes": 305,
    "posicao": 4,
    "de": 14,
-   "quem_avanca": {
-    "nome": "Clínica Goen Odontologia | Implante Dentário e Dentista em Palmas",
-    "ritmo": 9.8,
-    "meses": 11,
-    "nota": 4.9,
-    "posicao": 3
-   },
+   "quem_avanca": null,
    "gatilhos": [
-    {
-     "peso": 25,
-     "titulo": "Um concorrente sustenta e corre mais",
-     "chave": "rival",
-     "fato": "Clínica Goen Odontologia | Implante Dentário e Dentista em Palmas sustenta há 11 meses a 9.8/mês, contra 7.8/mês desta unidade",
-     "fonte": "dados/serie/reviews.jsonl"
-    },
     {
      "peso": 15,
      "titulo": "Silêncio publicitário com leilão cheio",
@@ -513,11 +422,11 @@
     }
    ],
    "acao": {
-    "o_que": "Levar a comparação impressa com Clínica Goen Odontologia | Implante Dentário e Dentista em Palmas para a visita e combinar a resposta",
-    "prazo": "próxima visita",
-    "dono": "consultor de campo",
-    "custo": "sem custo de mídia",
-    "por_causa_de": "rival"
+    "o_que": "Entrar no leilão com as frases que a cidade digita — a lista está na praça",
+    "prazo": "30 dias",
+    "dono": "franqueado",
+    "custo": "verba de mídia",
+    "por_causa_de": "silencio"
    },
    "ciclo": {
     "alertado_em": "2026-08-10",
@@ -535,7 +444,7 @@
    "unidade": "OrthoDontic Presidente Prudente",
    "unidade_curta": "Presidente Prudente",
    "idade_meses": 167,
-   "urgencia": 25,
+   "urgencia": 0,
    "faixa": "verde",
    "ritmo": 3.6,
    "meses": 13,
@@ -543,29 +452,9 @@
    "avaliacoes": 592,
    "posicao": 8,
    "de": 25,
-   "quem_avanca": {
-    "nome": "CROP - Radiologia Odontológica Presidente Prudente",
-    "ritmo": 5.5,
-    "meses": 19,
-    "nota": 4.9,
-    "posicao": 6
-   },
-   "gatilhos": [
-    {
-     "peso": 25,
-     "titulo": "Um concorrente sustenta e corre mais",
-     "chave": "rival",
-     "fato": "CROP - Radiologia Odontológica Presidente Prudente sustenta há 19 meses a 5.5/mês, contra 3.6/mês desta unidade",
-     "fonte": "dados/serie/reviews.jsonl"
-    }
-   ],
-   "acao": {
-    "o_que": "Levar a comparação impressa com CROP - Radiologia Odontológica Presidente Prudente para a visita e combinar a resposta",
-    "prazo": "próxima visita",
-    "dono": "consultor de campo",
-    "custo": "sem custo de mídia",
-    "por_causa_de": "rival"
-   },
+   "quem_avanca": null,
+   "gatilhos": [],
+   "acao": null,
    "ciclo": {
     "alertado_em": "2026-08-10",
     "acao_confirmada": null,

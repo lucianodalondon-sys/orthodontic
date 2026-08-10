@@ -84,7 +84,10 @@ def main():
                   f"{str(d.get('error', {}).get('status', 'sem resposta'))[:30]}")
             continue
         novas.append({
+            # o place_id vai junto: sem ele, duas lojas que um dia dividirem
+            # local_id por engano ficam impossíveis de separar depois
             "snapshot_date": hoje, "praca_id": p, "local_id": l["local_id"],
+            "place_id": l["place_id"],
             "nota": d.get("rating"), "avaliacoes_total": d.get("userRatingCount"),
             "situacao_google": d.get("businessStatus"),
             "first_seen_snapshot": hoje, "last_seen_snapshot": hoje,

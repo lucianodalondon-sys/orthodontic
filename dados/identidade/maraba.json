@@ -1,318 +1,402 @@
 {
-  "praca_id": "maraba",
-  "nome": "Marabá",
-  "cidades": [
-    "Marabá/PA"
-  ],
-  "uf": [
-    "PA"
-  ],
-  "rotulo": "PA · Marabá",
-  "cidades_rotulo": [
-    "PA · Marabá"
-  ],
-  "criada_em": "2026-08-09",
-  "tipo": "oportunidade",
-  "sem_unidade": true,
-  "conferencia_de_unidade": {
-    "conferida": true,
-    "livre": true,
-    "motivo": "lista oficial e busca por nome, as duas, não acham unidade",
-    "unidades_da_rede": 0,
-    "nomes_da_rede": [],
-    "achadas_no_google": []
-  },
-  "ibge": [
+ "praca_id": "maraba",
+ "nome": "Marabá",
+ "cidades": [
+  "Marabá/PA"
+ ],
+ "uf": [
+  "PA"
+ ],
+ "rotulo": "PA · Marabá",
+ "cidades_rotulo": [
+  "PA · Marabá"
+ ],
+ "criada_em": "2026-08-09",
+ "tipo": "oportunidade",
+ "sem_unidade": true,
+ "conferencia_de_unidade": {
+  "conferida": true,
+  "livre": true,
+  "motivo": "lista oficial e busca por nome, as duas, não acham unidade",
+  "unidades_da_rede": 0,
+  "nomes_da_rede": [],
+  "achadas_no_google": []
+ },
+ "ibge": [
+  {
+   "municipio": "Marabá",
+   "uf": "PA",
+   "uf_nome": "Pará",
+   "ibge_id": 1504208,
+   "mesorregiao": "Sudeste Paraense",
+   "populacao_estimada": {
+    "ano": "2025",
+    "valor": "290975",
+    "unidade": "Pessoas"
+   },
+   "populacao_censo_2022": {
+    "ano": "2022",
+    "valor": "266533",
+    "unidade": "Pessoas"
+   },
+   "massa_salarial_mil_reais": {
+    "ano": "2023",
+    "valor": "9748965",
+    "unidade": "Mil Reais"
+   },
+   "idades": {
+    "por_faixa": {
+     "0a4": 21413,
+     "5a9": 22679,
+     "10a14": 23000,
+     "15a19": 24479,
+     "20a24": 24047,
+     "25a29": 22629,
+     "30a34": 22477,
+     "35a39": 23265,
+     "40a44": 20124,
+     "45a49": 15586,
+     "50a54": 12613,
+     "55a59": 10511,
+     "60a64": 8597
+    },
+    "alvo_9_15": 32432,
+    "alvo_30_45": 65866
+   },
+   "imprensa": [
     {
-      "municipio": "Marabá",
-      "uf": "PA",
-      "uf_nome": "Pará",
-      "ibge_id": 1504208,
-      "mesorregiao": "Sudeste Paraense",
-      "populacao_estimada": {
-        "ano": "2025",
-        "valor": "290975",
-        "unidade": "Pessoas"
-      },
-      "populacao_censo_2022": {
-        "ano": "2022",
-        "valor": "266533",
-        "unidade": "Pessoas"
-      },
-      "massa_salarial_mil_reais": {
-        "ano": "2023",
-        "valor": "9748965",
-        "unidade": "Mil Reais"
-      },
-      "idades": {
-        "por_faixa": {
-          "0a4": 21413,
-          "5a9": 22679,
-          "10a14": 23000,
-          "15a19": 24479,
-          "20a24": 24047,
-          "25a29": 22629,
-          "30a34": 22477,
-          "35a39": 23265,
-          "40a44": 20124,
-          "45a49": 15586,
-          "50a54": 12613,
-          "55a59": 10511,
-          "60a64": 8597
-        },
-        "alvo_9_15": 32432,
-        "alvo_30_45": 65866
-      },
-      "imprensa": [
-        {
-          "veiculo": "REDE BRASIL DE TELEVISÃO",
-          "materias": 15
-        },
-        {
-          "veiculo": "maraba.pa.gov.br",
-          "materias": 3
-        },
-        {
-          "veiculo": "mpf.mp.br",
-          "materias": 3
-        },
-        {
-          "veiculo": "estadomaior.com.br",
-          "materias": 2
-        },
-        {
-          "veiculo": "Radio Quarteto",
-          "materias": 2
-        },
-        {
-          "veiculo": "giroes.com.br",
-          "materias": 2
-        },
-        {
-          "veiculo": "Portal Guarany Júnior",
-          "materias": 1
-        },
-        {
-          "veiculo": "O TEMPO",
-          "materias": 1
-        },
-        {
-          "veiculo": "IFPA",
-          "materias": 1
-        },
-        {
-          "veiculo": "CBF",
-          "materias": 1
-        },
-        {
-          "veiculo": "Jornal do Tocantins",
-          "materias": 1
-        },
-        {
-          "veiculo": "Jornal Folha do Progresso",
-          "materias": 1
-        }
-      ],
-      "renda_per_capita": 2792,
-      "populacao": 290975
+     "veiculo": "REDE BRASIL DE TELEVISÃO",
+     "materias": 15
+    },
+    {
+     "veiculo": "maraba.pa.gov.br",
+     "materias": 3
+    },
+    {
+     "veiculo": "mpf.mp.br",
+     "materias": 3
+    },
+    {
+     "veiculo": "estadomaior.com.br",
+     "materias": 2
+    },
+    {
+     "veiculo": "Radio Quarteto",
+     "materias": 2
+    },
+    {
+     "veiculo": "giroes.com.br",
+     "materias": 2
+    },
+    {
+     "veiculo": "Portal Guarany Júnior",
+     "materias": 1
+    },
+    {
+     "veiculo": "O TEMPO",
+     "materias": 1
+    },
+    {
+     "veiculo": "IFPA",
+     "materias": 1
+    },
+    {
+     "veiculo": "CBF",
+     "materias": 1
+    },
+    {
+     "veiculo": "Jornal do Tocantins",
+     "materias": 1
+    },
+    {
+     "veiculo": "Jornal Folha do Progresso",
+     "materias": 1
     }
+   ],
+   "renda_per_capita": 2792,
+   "populacao": 290975
+  }
+ ],
+ "nota_geografia": "PREENCHER: por que esta cidade é uma praça só, e até onde vai o raio real de onde viria o paciente.",
+ "por_que_esta_praca": "**PA · Marabá tem o perfil de TO · Palmas.** Lá a unidade OrthoDontic tem 304 avaliações, nota 5,0 e faz 14,0 avaliações por mês **há 11 meses seguidos**, 3ª em ritmo entre as 14 clínicas acompanhadas na praça — é operação, não campanha, e é o tipo de resultado que se copia.",
+ "gemea": {
+  "rotulo": "TO · Palmas",
+  "praca_id": "palmas",
+  "distancia": 0.309,
+  "eixos_usados": 6,
+  "frase": "**PA · Marabá tem o perfil de TO · Palmas.** Lá a unidade OrthoDontic tem 304 avaliações, nota 5,0 e faz 14,0 avaliações por mês **há 11 meses seguidos**, 3ª em ritmo entre as 14 clínicas acompanhadas na praça — é operação, não campanha, e é o tipo de resultado que se copia.",
+  "unidades_de_la": [
+   {
+    "nome": "OrthoDontic",
+    "total": 304,
+    "nota": 5,
+    "ritmo": 14.0,
+    "meses": 11,
+    "ritmo_fonte": "intervalo da amostra (~estimado)",
+    "ritmo_estimado": 14.0,
+    "selo": "OPERAÇÃO",
+    "posicao": 3,
+    "de": 14
+   }
   ],
-  "nota_geografia": "PREENCHER: por que esta cidade é uma praça só, e até onde vai o raio real de onde viria o paciente.",
-  "por_que_esta_praca": "**PA · Marabá tem o perfil de TO · Palmas.** Lá a unidade OrthoDontic tem 304 avaliações, nota 5,0 e faz 14,0 avaliações por mês **há 11 meses seguidos**, 3ª em ritmo entre as 14 clínicas acompanhadas na praça — é operação, não campanha, e é o tipo de resultado que se copia.",
-  "gemea": {
-    "rotulo": "TO · Palmas",
-    "praca_id": "palmas",
-    "distancia": 0.309,
-    "eixos_usados": 6,
-    "frase": "**PA · Marabá tem o perfil de TO · Palmas.** Lá a unidade OrthoDontic tem 304 avaliações, nota 5,0 e faz 14,0 avaliações por mês **há 11 meses seguidos**, 3ª em ritmo entre as 14 clínicas acompanhadas na praça — é operação, não campanha, e é o tipo de resultado que se copia.",
-    "unidades_de_la": [
-      {
-        "nome": "OrthoDontic",
-        "total": 304,
-        "nota": 5,
-        "ritmo": 14.0,
-        "meses": 11,
-        "ritmo_fonte": "intervalo da amostra (~estimado)",
-        "ritmo_estimado": 14.0,
-        "selo": "OPERAÇÃO",
-        "posicao": 3,
-        "de": 14
-      }
-    ],
-    "onde_difere": [
-      "massa salarial por pessoa: 1,3× menor aqui (2.792 contra 3.594)",
-      "clínicas fortes: 2,0× maior aqui (4 contra 2)",
-      "volume do líder: 1,6× maior aqui (583 contra 368)"
-    ]
-  },
-  "locais": [
-    {
-      "local_id": "odonto_excellence_maraba",
-      "papel": "concorrente",
-      "nome": "Odonto Excellence - Marabá",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJ-xcxQUanw5IRNp8UAPplD6s",
-      "avaliacoes_google": 583,
-      "nota_google": 5,
-      "endereco": "R. Carajás, 1684 - Cidade Nova, Marabá - PA, 68502-540, Brasil",
-      "site": "https://odontoexcellencemaraba.com.br/",
-      "place_id_origem": "varredura do radar 2026-08-09"
-    },
-    {
-      "local_id": "instituto_barros_e_bosi_od",
-      "papel": "concorrente",
-      "nome": "Instituto Barros e Bosi Odontologia | Marabá",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJlUt8Aa2nw5IRS0X65zm0uXQ",
-      "avaliacoes_google": 342,
-      "nota_google": 5,
-      "endereco": "R. Afro Sampaio, 432 - Cidade Nova, Marabá - PA, 68501-560, Brasil",
-      "site": "https://lp.institutobarrosebosi.com.br/",
-      "place_id_origem": "varredura do radar 2026-08-09"
-    },
-    {
-      "local_id": "clinica_odonto_minas_marab",
-      "papel": "concorrente",
-      "nome": "Clínica Odonto Minas Marabá",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJ__9jayWnw5IRhufPSI-FA5I",
-      "avaliacoes_google": 309,
-      "nota_google": 4.9,
-      "endereco": "Av. Antônio Maia, 1324 - Velha Marabá, Marabá - PA, 68500-005, Brasil",
-      "site": "http://www.clinicasodontominas.com.br/",
-      "place_id_origem": "varredura do radar 2026-08-09"
-    },
-    {
-      "local_id": "ryso_odonto_premium",
-      "papel": "concorrente",
-      "nome": "Ryso Odonto Premium",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJYaFzwR6hw5IReCt3Ac7W6zk",
-      "avaliacoes_google": 177,
-      "nota_google": 5,
-      "endereco": "Folha 20 Quadra Quatro Lote 23 - Av. Vp- Sete - Vila Militar Pres. Medice, Marabá - PA, 68505-070, Brasil",
-      "site": "https://instagram.com/rysodontopremium?igshid=NTc4MTIwNjQ2YQ==",
-      "place_id_origem": "varredura do radar 2026-08-09"
-    },
-    {
-      "local_id": "clinica_odontologica_orto_",
-      "papel": "concorrente",
-      "nome": "Clínica Odontológica Orto Prime Estética",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJ1e1LgH-hw5IR8M7HLl9MeiA",
-      "avaliacoes_google": 132,
-      "nota_google": 4.9,
-      "endereco": "Folha 32, Quadra 12 Lote 1 B Sala II - Nova Marabá, Marabá - PA, 68508-000, Brasil",
-      "site": "https://wa.me/ortoprimeestetica",
-      "place_id_origem": "varredura do radar 2026-08-09"
-    },
-    {
-      "local_id": "rx_digital_radiologia_odon",
-      "papel": "concorrente",
-      "nome": "RX digital - Radiologia Odontológica - Unidade Novo Horizonte",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJ5eN-ZByhw5IRJHOWcfStwVs",
-      "avaliacoes_google": 97,
-      "nota_google": 5,
-      "endereco": "Av. Tocantins, 611 - B - Novo Horizonte, Marabá - PA, 68503-660, Brasil",
-      "site": "http://diagxradiologia.com.br/",
-      "place_id_origem": "varredura do radar 2026-08-09"
-    },
-    {
-      "local_id": "maforte_odontologia_maraba",
-      "papel": "concorrente",
-      "nome": "Maforte Odontologia| Marabá",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJ8yETJimnw5IRLAGA7ueAe3o",
-      "avaliacoes_google": 95,
-      "nota_google": 5,
-      "endereco": "Av. Castelo Branco, 2153B - Cidade Nova, Marabá - PA, 68501-700, Brasil",
-      "site": "https://linktr.ee/maforte.odontologia",
-      "place_id_origem": "varredura do radar 2026-08-09"
-    },
-    {
-      "local_id": "dv_odonto_dentista_implant",
-      "papel": "concorrente",
-      "nome": "DV ODONTO - Dentista, implante dentário, prótese protocolo, lentes dentárias, botox, preenchimento, harmonização facial",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJtc_pRyWnw5IR6Bj8anksHOY",
-      "avaliacoes_google": 94,
-      "nota_google": 5,
-      "endereco": "Travessa Santa Teresinha, 441 (rua dos ourives - Tv. Santa Teresinha, 441 - Velha Marabá, Marabá - PA, 68500-440, Brasil",
-      "site": "https://c2tiapps.com/sites/032/index.aspx?emp=13778",
-      "place_id_origem": "varredura do radar 2026-08-09"
-    },
-    {
-      "local_id": "clinica_nosso_dentista_cid",
-      "papel": "concorrente",
-      "nome": "Clinica Nosso Dentista Cidade Nova",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJgTxI8lOnw5IRutMs7GJgrCw",
-      "avaliacoes_google": 77,
-      "nota_google": 3.9,
-      "endereco": "Av. Nagib Mutran, 75 b - Cidade Nova, Marabá - PA, 68501-570, Brasil",
-      "site": "",
-      "place_id_origem": "varredura do radar 2026-08-09"
-    },
-    {
-      "local_id": "eb_odontologia_maraba_pa",
-      "papel": "concorrente",
-      "nome": "EB ODONTOLOGIA - MARABÁ-PA",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJe2Mf_fuhw5IRWDq7Nbz2M5Q",
-      "avaliacoes_google": 71,
-      "nota_google": 4.6,
-      "endereco": "FL 12 - em frente posto de gasolina da folha 12 - Q. Vinte Seis Fl 17, QD 04 - LT. 2 B - Nova Marabá, Marabá - PA, 68510-120, Brasil",
-      "site": "https://instagram.com/ebodontologiaoficial?igshid=YmMyMTA2M2Y=",
-      "place_id_origem": "varredura do radar 2026-08-09"
-    },
-    {
-      "local_id": "harmonizacao_facial_maraba",
-      "papel": "concorrente",
-      "nome": "Harmonização Facial Marabá Dra Simone Oliveira",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJW6NOQOehw5IRYgFBpfmyiBc",
-      "avaliacoes_google": 71,
-      "nota_google": 4.9,
-      "endereco": "Folha 26 qd 7 lt 12 sala 102 ed Medical Center Sem numero - Nova Marabá, Marabá - PA, 68509-060, Brasil",
-      "site": "http://www.drasimoneoliveira.com.br/",
-      "place_id_origem": "varredura do radar 2026-08-09"
-    },
-    {
-      "local_id": "odonto_mais",
-      "papel": "concorrente",
-      "nome": "Odonto Mais",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJY1Iwl0miw5IRk2eaMiAwwqc",
-      "avaliacoes_google": 63,
-      "nota_google": 5,
-      "endereco": "Rodovia BR-222, km 02 São Félix II - São Félix, Marabá - PA, 68513-751, Brasil",
-      "site": "https://instagram.com/clinicaodontomaismaraba?utm_medium=copy_link",
-      "place_id_origem": "varredura do radar 2026-08-09"
-    },
-    {
-      "local_id": "vivare_odontologia_maraba_",
-      "papel": "concorrente",
-      "nome": "Vivare Odontologia - Marabá/PA",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJbxTWCyqhw5IR__z_zazYsts",
-      "avaliacoes_google": 61,
-      "nota_google": 5,
-      "endereco": "Av. Vp- Oito, Quadra 03 - Lote 12, Sala 101 - Nova Marabá, Marabá - PA, 68508-030, Brasil",
-      "site": "https://www.odontovivare.com.br/",
-      "place_id_origem": "varredura do radar 2026-08-09"
-    },
-    {
-      "local_id": "coi_clident_odontologia_in",
-      "papel": "concorrente",
-      "nome": "COI Clident Odontologia Integrada",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJEYGay_Ogw5IR4_EyGAQ-ZII",
-      "avaliacoes_google": 56,
-      "nota_google": 4.6,
-      "endereco": "Folha 28 QD 42 LT 15 - Nova Marabá, Marabá - PA, 68506-420, Brasil",
-      "site": "https://instagram.com/coi_odontomaraba?utm_medium=copy_link",
-      "place_id_origem": "varredura do radar 2026-08-09"
-    }
+  "onde_difere": [
+   "massa salarial por pessoa: 1,3× menor aqui (2.792 contra 3.594)",
+   "clínicas fortes: 2,0× maior aqui (4 contra 2)",
+   "volume do líder: 1,6× maior aqui (583 contra 368)"
   ]
+ },
+ "locais": [
+  {
+   "local_id": "odonto_excellence_maraba",
+   "papel": "concorrente",
+   "nome": "Odonto Excellence - Marabá",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJ-xcxQUanw5IRNp8UAPplD6s",
+   "avaliacoes_google": 583,
+   "nota_google": 5,
+   "endereco": "R. Carajás, 1684 - Cidade Nova, Marabá - PA, 68502-540, Brasil",
+   "site": "https://odontoexcellencemaraba.com.br/",
+   "place_id_origem": "varredura do radar 2026-08-09",
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de implante: só 0 de 143 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 143
+   }
+  },
+  {
+   "local_id": "instituto_barros_e_bosi_od",
+   "papel": "concorrente",
+   "nome": "Instituto Barros e Bosi Odontologia | Marabá",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJlUt8Aa2nw5IRS0X65zm0uXQ",
+   "avaliacoes_google": 342,
+   "nota_google": 5,
+   "endereco": "R. Afro Sampaio, 432 - Cidade Nova, Marabá - PA, 68501-560, Brasil",
+   "site": "https://lp.institutobarrosebosi.com.br/",
+   "place_id_origem": "varredura do radar 2026-08-09",
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 1 de 108 avaliações citam aparelho",
+    "menciona_aparelho": 1,
+    "avaliacoes_com_texto": 108
+   }
+  },
+  {
+   "local_id": "clinica_odonto_minas_marab",
+   "papel": "concorrente",
+   "nome": "Clínica Odonto Minas Marabá",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJ__9jayWnw5IRhufPSI-FA5I",
+   "avaliacoes_google": 309,
+   "nota_google": 4.9,
+   "endereco": "Av. Antônio Maia, 1324 - Velha Marabá, Marabá - PA, 68500-005, Brasil",
+   "site": "http://www.clinicasodontominas.com.br/",
+   "place_id_origem": "varredura do radar 2026-08-09",
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 2 de 144 avaliações citam aparelho",
+    "menciona_aparelho": 2,
+    "avaliacoes_com_texto": 144
+   }
+  },
+  {
+   "local_id": "ryso_odonto_premium",
+   "papel": "concorrente",
+   "nome": "Ryso Odonto Premium",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJYaFzwR6hw5IReCt3Ac7W6zk",
+   "avaliacoes_google": 177,
+   "nota_google": 5,
+   "endereco": "Folha 20 Quadra Quatro Lote 23 - Av. Vp- Sete - Vila Militar Pres. Medice, Marabá - PA, 68505-070, Brasil",
+   "site": "https://instagram.com/rysodontopremium?igshid=NTc4MTIwNjQ2YQ==",
+   "place_id_origem": "varredura do radar 2026-08-09",
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de implante: só 0 de 104 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 104
+   }
+  },
+  {
+   "local_id": "clinica_odontologica_orto_",
+   "papel": "concorrente",
+   "nome": "Clínica Odontológica Orto Prime Estética",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJ1e1LgH-hw5IR8M7HLl9MeiA",
+   "avaliacoes_google": 132,
+   "nota_google": 4.9,
+   "endereco": "Folha 32, Quadra 12 Lote 1 B Sala II - Nova Marabá, Marabá - PA, 68508-000, Brasil",
+   "site": "https://wa.me/ortoprimeestetica",
+   "place_id_origem": "varredura do radar 2026-08-09",
+   "produto": {
+    "disputa_aparelho": "sim",
+    "porque": "o nome declara aparelho/ortodontia",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 98
+   }
+  },
+  {
+   "local_id": "rx_digital_radiologia_odon",
+   "papel": "concorrente",
+   "nome": "RX digital - Radiologia Odontológica - Unidade Novo Horizonte",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJ5eN-ZByhw5IRJHOWcfStwVs",
+   "avaliacoes_google": 97,
+   "nota_google": 5,
+   "endereco": "Av. Tocantins, 611 - B - Novo Horizonte, Marabá - PA, 68503-660, Brasil",
+   "site": "http://diagxradiologia.com.br/",
+   "place_id_origem": "varredura do radar 2026-08-09",
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 1 de 51 avaliações citam aparelho",
+    "menciona_aparelho": 1,
+    "avaliacoes_com_texto": 51
+   }
+  },
+  {
+   "local_id": "maforte_odontologia_maraba",
+   "papel": "concorrente",
+   "nome": "Maforte Odontologia| Marabá",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJ8yETJimnw5IRLAGA7ueAe3o",
+   "avaliacoes_google": 95,
+   "nota_google": 5,
+   "endereco": "Av. Castelo Branco, 2153B - Cidade Nova, Marabá - PA, 68501-700, Brasil",
+   "site": "https://linktr.ee/maforte.odontologia",
+   "place_id_origem": "varredura do radar 2026-08-09",
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 1 de 62 avaliações citam aparelho",
+    "menciona_aparelho": 1,
+    "avaliacoes_com_texto": 62
+   }
+  },
+  {
+   "local_id": "dv_odonto_dentista_implant",
+   "papel": "concorrente",
+   "nome": "DV ODONTO - Dentista, implante dentário, prótese protocolo, lentes dentárias, botox, preenchimento, harmonização facial",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJtc_pRyWnw5IR6Bj8anksHOY",
+   "avaliacoes_google": 94,
+   "nota_google": 5,
+   "endereco": "Travessa Santa Teresinha, 441 (rua dos ourives - Tv. Santa Teresinha, 441 - Velha Marabá, Marabá - PA, 68500-440, Brasil",
+   "site": "https://c2tiapps.com/sites/032/index.aspx?emp=13778",
+   "place_id_origem": "varredura do radar 2026-08-09",
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de implante: só 0 de 57 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 57
+   }
+  },
+  {
+   "local_id": "clinica_nosso_dentista_cid",
+   "papel": "concorrente",
+   "nome": "Clinica Nosso Dentista Cidade Nova",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJgTxI8lOnw5IRutMs7GJgrCw",
+   "avaliacoes_google": 77,
+   "nota_google": 3.9,
+   "endereco": "Av. Nagib Mutran, 75 b - Cidade Nova, Marabá - PA, 68501-570, Brasil",
+   "site": "",
+   "place_id_origem": "varredura do radar 2026-08-09",
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 1 de 41 avaliações citam aparelho",
+    "menciona_aparelho": 1,
+    "avaliacoes_com_texto": 41
+   }
+  },
+  {
+   "local_id": "eb_odontologia_maraba_pa",
+   "papel": "concorrente",
+   "nome": "EB ODONTOLOGIA - MARABÁ-PA",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJe2Mf_fuhw5IRWDq7Nbz2M5Q",
+   "avaliacoes_google": 71,
+   "nota_google": 4.6,
+   "endereco": "FL 12 - em frente posto de gasolina da folha 12 - Q. Vinte Seis Fl 17, QD 04 - LT. 2 B - Nova Marabá, Marabá - PA, 68510-120, Brasil",
+   "site": "https://instagram.com/ebodontologiaoficial?igshid=YmMyMTA2M2Y=",
+   "place_id_origem": "varredura do radar 2026-08-09",
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 0 de 40 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 40
+   }
+  },
+  {
+   "local_id": "harmonizacao_facial_maraba",
+   "papel": "concorrente",
+   "nome": "Harmonização Facial Marabá Dra Simone Oliveira",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJW6NOQOehw5IRYgFBpfmyiBc",
+   "avaliacoes_google": 71,
+   "nota_google": 4.9,
+   "endereco": "Folha 26 qd 7 lt 12 sala 102 ed Medical Center Sem numero - Nova Marabá, Marabá - PA, 68509-060, Brasil",
+   "site": "http://www.drasimoneoliveira.com.br/",
+   "place_id_origem": "varredura do radar 2026-08-09",
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de implante: só 0 de 47 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 47
+   }
+  },
+  {
+   "local_id": "odonto_mais",
+   "papel": "concorrente",
+   "nome": "Odonto Mais",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJY1Iwl0miw5IRk2eaMiAwwqc",
+   "avaliacoes_google": 63,
+   "nota_google": 5,
+   "endereco": "Rodovia BR-222, km 02 São Félix II - São Félix, Marabá - PA, 68513-751, Brasil",
+   "site": "https://instagram.com/clinicaodontomaismaraba?utm_medium=copy_link",
+   "place_id_origem": "varredura do radar 2026-08-09",
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 0 de 61 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 61
+   }
+  },
+  {
+   "local_id": "vivare_odontologia_maraba_",
+   "papel": "concorrente",
+   "nome": "Vivare Odontologia - Marabá/PA",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJbxTWCyqhw5IR__z_zazYsts",
+   "avaliacoes_google": 61,
+   "nota_google": 5,
+   "endereco": "Av. Vp- Oito, Quadra 03 - Lote 12, Sala 101 - Nova Marabá, Marabá - PA, 68508-030, Brasil",
+   "site": "https://www.odontovivare.com.br/",
+   "place_id_origem": "varredura do radar 2026-08-09",
+   "produto": {
+    "disputa_aparelho": "sem_evidencia",
+    "porque": "amostra pequena (29 avaliações com texto) — não dá para afirmar o produto",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 29
+   }
+  },
+  {
+   "local_id": "coi_clident_odontologia_in",
+   "papel": "concorrente",
+   "nome": "COI Clident Odontologia Integrada",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJEYGay_Ogw5IR4_EyGAQ-ZII",
+   "avaliacoes_google": 56,
+   "nota_google": 4.6,
+   "endereco": "Folha 28 QD 42 LT 15 - Nova Marabá, Marabá - PA, 68506-420, Brasil",
+   "site": "https://instagram.com/coi_odontomaraba?utm_medium=copy_link",
+   "place_id_origem": "varredura do radar 2026-08-09",
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 0 de 47 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 47
+   }
+  }
+ ]
 }

@@ -1,319 +1,404 @@
 {
-  "praca_id": "macapa",
-  "nome": "Macapá",
-  "cidades": [
-    "Macapá/AP"
-  ],
-  "uf": [
-    "AP"
-  ],
-  "rotulo": "AP · Macapá",
-  "cidades_rotulo": [
-    "AP · Macapá"
-  ],
-  "criada_em": "2026-08-09",
-  "tipo": "oportunidade",
-  "sem_unidade": true,
-  "conferencia_de_unidade": {
-    "conferida": true,
-    "livre": true,
-    "motivo": "lista oficial e busca por nome, as duas, não acham unidade",
-    "unidades_da_rede": 0,
-    "nomes_da_rede": [],
-    "achadas_no_google": []
-  },
-  "ibge": [
+ "praca_id": "macapa",
+ "nome": "Macapá",
+ "cidades": [
+  "Macapá/AP"
+ ],
+ "uf": [
+  "AP"
+ ],
+ "rotulo": "AP · Macapá",
+ "cidades_rotulo": [
+  "AP · Macapá"
+ ],
+ "criada_em": "2026-08-09",
+ "tipo": "oportunidade",
+ "sem_unidade": true,
+ "conferencia_de_unidade": {
+  "conferida": true,
+  "livre": true,
+  "motivo": "lista oficial e busca por nome, as duas, não acham unidade",
+  "unidades_da_rede": 0,
+  "nomes_da_rede": [],
+  "achadas_no_google": []
+ },
+ "ibge": [
+  {
+   "municipio": "Macapá",
+   "uf": "AP",
+   "uf_nome": "Amapá",
+   "ibge_id": 1600303,
+   "mesorregiao": "Sul do Amapá",
+   "populacao_estimada": {
+    "ano": "2025",
+    "valor": "489676",
+    "unidade": "Pessoas"
+   },
+   "populacao_censo_2022": {
+    "ano": "2022",
+    "valor": "442933",
+    "unidade": "Pessoas"
+   },
+   "massa_salarial_mil_reais": {
+    "ano": "2023",
+    "valor": "18470858",
+    "unidade": "Mil Reais"
+   },
+   "idades": {
+    "por_faixa": {
+     "0a4": 36948,
+     "5a9": 38551,
+     "10a14": 37375,
+     "15a19": 39023,
+     "20a24": 42092,
+     "25a29": 39558,
+     "30a34": 36284,
+     "35a39": 35969,
+     "40a44": 32558,
+     "45a49": 26874,
+     "50a54": 22425,
+     "55a59": 17105,
+     "60a64": 13424
+    },
+    "alvo_9_15": 52890,
+    "alvo_30_45": 104811
+   },
+   "imprensa": [
     {
-      "municipio": "Macapá",
-      "uf": "AP",
-      "uf_nome": "Amapá",
-      "ibge_id": 1600303,
-      "mesorregiao": "Sul do Amapá",
-      "populacao_estimada": {
-        "ano": "2025",
-        "valor": "489676",
-        "unidade": "Pessoas"
-      },
-      "populacao_censo_2022": {
-        "ano": "2022",
-        "valor": "442933",
-        "unidade": "Pessoas"
-      },
-      "massa_salarial_mil_reais": {
-        "ano": "2023",
-        "valor": "18470858",
-        "unidade": "Mil Reais"
-      },
-      "idades": {
-        "por_faixa": {
-          "0a4": 36948,
-          "5a9": 38551,
-          "10a14": 37375,
-          "15a19": 39023,
-          "20a24": 42092,
-          "25a29": 39558,
-          "30a34": 36284,
-          "35a39": 35969,
-          "40a44": 32558,
-          "45a49": 26874,
-          "50a54": 22425,
-          "55a59": 17105,
-          "60a64": 13424
-        },
-        "alvo_9_15": 52890,
-        "alvo_30_45": 104811
-      },
-      "imprensa": [
-        {
-          "veiculo": "G1",
-          "materias": 17
-        },
-        {
-          "veiculo": "Terra",
-          "materias": 4
-        },
-        {
-          "veiculo": "SelesNafes.com",
-          "materias": 4
-        },
-        {
-          "veiculo": "MINISTÉRIO PÚBLICO MILITAR",
-          "materias": 2
-        },
-        {
-          "veiculo": "Ministério Público do Amapá (MPAP)",
-          "materias": 2
-        },
-        {
-          "veiculo": "Metrópoles",
-          "materias": 1
-        },
-        {
-          "veiculo": "diariodotransporte.com.br",
-          "materias": 1
-        },
-        {
-          "veiculo": "Blog Gran Cursos Online",
-          "materias": 1
-        },
-        {
-          "veiculo": "JOTA Info",
-          "materias": 1
-        },
-        {
-          "veiculo": "Mochileiros.com",
-          "materias": 1
-        },
-        {
-          "veiculo": "Sala da Notícia",
-          "materias": 1
-        },
-        {
-          "veiculo": "atlaspublico.com.br",
-          "materias": 1
-        }
-      ],
-      "renda_per_capita": 3143,
-      "populacao": 489676
+     "veiculo": "G1",
+     "materias": 17
+    },
+    {
+     "veiculo": "Terra",
+     "materias": 4
+    },
+    {
+     "veiculo": "SelesNafes.com",
+     "materias": 4
+    },
+    {
+     "veiculo": "MINISTÉRIO PÚBLICO MILITAR",
+     "materias": 2
+    },
+    {
+     "veiculo": "Ministério Público do Amapá (MPAP)",
+     "materias": 2
+    },
+    {
+     "veiculo": "Metrópoles",
+     "materias": 1
+    },
+    {
+     "veiculo": "diariodotransporte.com.br",
+     "materias": 1
+    },
+    {
+     "veiculo": "Blog Gran Cursos Online",
+     "materias": 1
+    },
+    {
+     "veiculo": "JOTA Info",
+     "materias": 1
+    },
+    {
+     "veiculo": "Mochileiros.com",
+     "materias": 1
+    },
+    {
+     "veiculo": "Sala da Notícia",
+     "materias": 1
+    },
+    {
+     "veiculo": "atlaspublico.com.br",
+     "materias": 1
     }
+   ],
+   "renda_per_capita": 3143,
+   "populacao": 489676
+  }
+ ],
+ "nota_geografia": "PREENCHER: por que esta cidade é uma praça só, e até onde vai o raio real de onde viria o paciente.",
+ "por_que_esta_praca": "**AP · Macapá tem o perfil de TO · Palmas.** Lá a unidade OrthoDontic tem 304 avaliações, nota 5,0 e faz 14,0 avaliações por mês **há 11 meses seguidos**, 3ª em ritmo entre as 14 clínicas acompanhadas na praça — é operação, não campanha, e é o tipo de resultado que se copia.",
+ "gemea": {
+  "rotulo": "TO · Palmas",
+  "praca_id": "palmas",
+  "distancia": 0.311,
+  "eixos_usados": 6,
+  "frase": "**AP · Macapá tem o perfil de TO · Palmas.** Lá a unidade OrthoDontic tem 304 avaliações, nota 5,0 e faz 14,0 avaliações por mês **há 11 meses seguidos**, 3ª em ritmo entre as 14 clínicas acompanhadas na praça — é operação, não campanha, e é o tipo de resultado que se copia.",
+  "unidades_de_la": [
+   {
+    "nome": "OrthoDontic",
+    "total": 304,
+    "nota": 5,
+    "ritmo": 14.0,
+    "meses": 11,
+    "ritmo_fonte": "intervalo da amostra (~estimado)",
+    "ritmo_estimado": 14.0,
+    "selo": "OPERAÇÃO",
+    "posicao": 3,
+    "de": 14
+   }
   ],
-  "nota_geografia": "PREENCHER: por que esta cidade é uma praça só, e até onde vai o raio real de onde viria o paciente.",
-  "por_que_esta_praca": "**AP · Macapá tem o perfil de TO · Palmas.** Lá a unidade OrthoDontic tem 304 avaliações, nota 5,0 e faz 14,0 avaliações por mês **há 11 meses seguidos**, 3ª em ritmo entre as 14 clínicas acompanhadas na praça — é operação, não campanha, e é o tipo de resultado que se copia.",
-  "gemea": {
-    "rotulo": "TO · Palmas",
-    "praca_id": "palmas",
-    "distancia": 0.311,
-    "eixos_usados": 6,
-    "frase": "**AP · Macapá tem o perfil de TO · Palmas.** Lá a unidade OrthoDontic tem 304 avaliações, nota 5,0 e faz 14,0 avaliações por mês **há 11 meses seguidos**, 3ª em ritmo entre as 14 clínicas acompanhadas na praça — é operação, não campanha, e é o tipo de resultado que se copia.",
-    "unidades_de_la": [
-      {
-        "nome": "OrthoDontic",
-        "total": 304,
-        "nota": 5,
-        "ritmo": 14.0,
-        "meses": 11,
-        "ritmo_fonte": "intervalo da amostra (~estimado)",
-        "ritmo_estimado": 14.0,
-        "selo": "OPERAÇÃO",
-        "posicao": 3,
-        "de": 14
-      }
-    ],
-    "onde_difere": [
-      "habitantes: 1,5× maior aqui (489.676 contra 328.499)",
-      "adultos de 30 a 45: 1,3× maior aqui (104.811 contra 78.759)",
-      "jovens de 9 a 15: 1,6× maior aqui (52.890 contra 32.089)",
-      "clínicas fortes: 1,6× menor aqui (1 contra 2)"
-    ]
-  },
-  "locais": [
-    {
-      "local_id": "vamos_sorrir_odontologia_d",
-      "papel": "concorrente",
-      "nome": "Vamos Sorrir - Odontologia, Dentista em Macapá",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJE-1mYJHhYY0RGjHh-c1SJoI",
-      "avaliacoes_google": 427,
-      "nota_google": 4.9,
-      "endereco": "R. São José, 2342 - Central, Macapá - AP, 68908-015, Brasil",
-      "site": "",
-      "place_id_origem": "varredura do radar 2026-08-09"
-    },
-    {
-      "local_id": "odonto_advance_dr_decio_bi",
-      "papel": "concorrente",
-      "nome": "Odonto Advance - Dr Decio Bisognin e Equipe",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJAaHVqgfhYY0RhOBC2k8GX7E",
-      "avaliacoes_google": 249,
-      "nota_google": 4.9,
-      "endereco": "Av. Ataíde Teive, 1217 - Centro, Macapá - AP, 68900-095, Brasil",
-      "site": "https://odontoadvance.com.br/#sobre",
-      "place_id_origem": "varredura do radar 2026-08-09"
-    },
-    {
-      "local_id": "clinica_odontologica_dente",
-      "papel": "concorrente",
-      "nome": "Clínica Odontológica DENTEBRAS Macapá Centro",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJj4xTIdnhYY0RCHP-snFMfvA",
-      "avaliacoes_google": 226,
-      "nota_google": 5,
-      "endereco": "Av. Coaraci Nunes, 208 - Central, Macapá - AP, 68900-010, Brasil",
-      "site": "",
-      "place_id_origem": "varredura do radar 2026-08-09"
-    },
-    {
-      "local_id": "amorsaude_macapa",
-      "papel": "concorrente",
-      "nome": "AmorSaúde Macapá",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJlTdm7JHhYY0R5SVoQqmGyEk",
-      "avaliacoes_google": 166,
-      "nota_google": 3.6,
-      "endereco": "Av. Antônio Coelho de Carvalho, 1399 - Santa Rita, Macapá - AP, 68900-015, Brasil",
-      "site": "https://amorsaude.com.br/",
-      "place_id_origem": "varredura do radar 2026-08-09"
-    },
-    {
-      "local_id": "clinica_perfetha_odontolog",
-      "papel": "concorrente",
-      "nome": "Clinica Perfetha Odontologia Especializada",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJ0-Z_bB3hYY0RC2qAF3NTMNw",
-      "avaliacoes_google": 150,
-      "nota_google": 5,
-      "endereco": "Av. Felíciano Coelho, 1438 - Trem, Macapá - AP, 68900-220, Brasil",
-      "site": "http://www.perfethaodontologia.com.br/",
-      "place_id_origem": "varredura do radar 2026-08-09"
-    },
-    {
-      "local_id": "clinica_odontologica_dente",
-      "papel": "concorrente",
-      "nome": "Clínica Odontológica DENTEBRAS Macapá Buritizal",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJnYnFqDPhYY0ROzzKm6NLAY4",
-      "avaliacoes_google": 149,
-      "nota_google": 4.8,
-      "endereco": "Av. 13 de Setembro, 1913 - Buritizal, Macapá - AP, 68902-865, Brasil",
-      "site": "https://api.whatsapp.com/send?phone=5596984018105&text=Ol%C3%A1%20vim%20pelo%20Google,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.",
-      "place_id_origem": "varredura do radar 2026-08-09"
-    },
-    {
-      "local_id": "odontoimperium_odontologia",
-      "papel": "concorrente",
-      "nome": "OdontoImperium Odontologia Integrada",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJG50_l6ThYY0RLoqqLSKpBFc",
-      "avaliacoes_google": 143,
-      "nota_google": 5,
-      "endereco": "Avenida 13 de Setembro, 1278 - A Entre as Ruas Manoel Eudóxio - R. Prof. Tostes, e - Buritizal, Macapá - AP, 68902-865, Brasil",
-      "site": "http://odontoimperium.com.br/",
-      "place_id_origem": "varredura do radar 2026-08-09"
-    },
-    {
-      "local_id": "dra_adriana_gato_implantes",
-      "papel": "concorrente",
-      "nome": "Dra Adriana Gato Implantes",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJty-LzWrhYY0RQftZctk-rR8",
-      "avaliacoes_google": 135,
-      "nota_google": 5,
-      "endereco": "R. Gen. Rondon, 1385 - Sl 707 - Centro, Macapá - AP, 68900-082, Brasil",
-      "site": "http://adrianagatoimplantes.com.br/bio",
-      "place_id_origem": "varredura do radar 2026-08-09"
-    },
-    {
-      "local_id": "happy_odontopediatria_enca",
-      "papel": "concorrente",
-      "nome": "Happy - odontopediatria encantada",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJi281ZajhYY0ROeEZGLzI0cg",
-      "avaliacoes_google": 128,
-      "nota_google": 5,
-      "endereco": "R. Hildemar Maia, 1621 - Santa Rita, Macapá - AP, 68901-271, Brasil",
-      "site": "http://www.kellensanches.com.br/",
-      "place_id_origem": "varredura do radar 2026-08-09"
-    },
-    {
-      "local_id": "clinica_odontologica_cente",
-      "papel": "concorrente",
-      "nome": "Clínica Odontológica Centerclin",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJIcqw5BvhYY0ROQSUTaYjxJk",
-      "avaliacoes_google": 105,
-      "nota_google": 4.8,
-      "endereco": "R. Jovino Dinoá, 1396 - Centro, Macapá - AP, 68900-075, Brasil",
-      "site": "https://centerclinsaude.com.br/",
-      "place_id_origem": "varredura do radar 2026-08-09"
-    },
-    {
-      "local_id": "dr_amigo_praca_macapa_ap",
-      "papel": "concorrente",
-      "nome": "Dr. Amigo Praça - Macapá/AP",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJ9a67wyThYY0R_cpFKPCRyBI",
-      "avaliacoes_google": 101,
-      "nota_google": 4.7,
-      "endereco": "R. São José, 1692 - Central, Macapá - AP, 68900-110, Brasil",
-      "site": "https://clinicadramigo.com.br/",
-      "place_id_origem": "varredura do radar 2026-08-09"
-    },
-    {
-      "local_id": "clinica_odonto_quality_mac",
-      "papel": "concorrente",
-      "nome": "Clínica Odonto Quality Macapá- Zona Norte",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJP1U12eHnYY0Rpk7rddFFGbY",
-      "avaliacoes_google": 85,
-      "nota_google": 5,
-      "endereco": "Av. Álvaro Carvalho Barbosa, 2277 - Novo Horizonte, Macapá - AP, 68909-812, Brasil",
-      "site": "",
-      "place_id_origem": "varredura do radar 2026-08-09"
-    },
-    {
-      "local_id": "uniodonto_amapa_sistema_de",
-      "papel": "concorrente",
-      "nome": "Uniodonto Amapá Sistema de Cooperativas Odontológicas",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJjzjNLSHhYY0RwCLPfcyl24E",
-      "avaliacoes_google": 84,
-      "nota_google": 4.9,
-      "endereco": "Rua Dr. Marcelo Cândia, 925 - Santa Rita, Macapá - AP, 68901-341, Brasil",
-      "site": "http://www.uniodontoap.com.br/",
-      "place_id_origem": "varredura do radar 2026-08-09"
-    },
-    {
-      "local_id": "clinica_dra_andrielle_rama",
-      "papel": "concorrente",
-      "nome": "Clínica Dra Andrielle Ramalho | Odontologia Estética Orofacial e Medicina Capilar",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJ20gUcXPhYY0RlWYotPCaA9s",
-      "avaliacoes_google": 78,
-      "nota_google": 5,
-      "endereco": "Anexo ao Office Araguary Business Center - Av. Duque de Caxias, 1129 - Sl 1101 - Central, Macapá - AP, 68900-071, Brasil",
-      "site": "https://www.draandrielleramalho.com.br/",
-      "place_id_origem": "varredura do radar 2026-08-09"
-    }
+  "onde_difere": [
+   "habitantes: 1,5× maior aqui (489.676 contra 328.499)",
+   "adultos de 30 a 45: 1,3× maior aqui (104.811 contra 78.759)",
+   "jovens de 9 a 15: 1,6× maior aqui (52.890 contra 32.089)",
+   "clínicas fortes: 1,6× menor aqui (1 contra 2)"
   ]
+ },
+ "locais": [
+  {
+   "local_id": "vamos_sorrir_odontologia_d",
+   "papel": "concorrente",
+   "nome": "Vamos Sorrir - Odontologia, Dentista em Macapá",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJE-1mYJHhYY0RGjHh-c1SJoI",
+   "avaliacoes_google": 427,
+   "nota_google": 4.9,
+   "endereco": "R. São José, 2342 - Central, Macapá - AP, 68908-015, Brasil",
+   "site": "",
+   "place_id_origem": "varredura do radar 2026-08-09",
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 2 de 129 avaliações citam aparelho",
+    "menciona_aparelho": 2,
+    "avaliacoes_com_texto": 129
+   }
+  },
+  {
+   "local_id": "odonto_advance_dr_decio_bi",
+   "papel": "concorrente",
+   "nome": "Odonto Advance - Dr Decio Bisognin e Equipe",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJAaHVqgfhYY0RhOBC2k8GX7E",
+   "avaliacoes_google": 249,
+   "nota_google": 4.9,
+   "endereco": "Av. Ataíde Teive, 1217 - Centro, Macapá - AP, 68900-095, Brasil",
+   "site": "https://odontoadvance.com.br/#sobre",
+   "place_id_origem": "varredura do radar 2026-08-09",
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 2 de 98 avaliações citam aparelho",
+    "menciona_aparelho": 2,
+    "avaliacoes_com_texto": 98
+   }
+  },
+  {
+   "local_id": "clinica_odontologica_dente",
+   "papel": "concorrente",
+   "nome": "Clínica Odontológica DENTEBRAS Macapá Centro",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJj4xTIdnhYY0RCHP-snFMfvA",
+   "avaliacoes_google": 226,
+   "nota_google": 5,
+   "endereco": "Av. Coaraci Nunes, 208 - Central, Macapá - AP, 68900-010, Brasil",
+   "site": "",
+   "place_id_origem": "varredura do radar 2026-08-09",
+   "produto": {
+    "disputa_aparelho": "sem_evidencia",
+    "porque": "amostra pequena (0 avaliações com texto) — não dá para afirmar o produto",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 0
+   }
+  },
+  {
+   "local_id": "amorsaude_macapa",
+   "papel": "concorrente",
+   "nome": "AmorSaúde Macapá",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJlTdm7JHhYY0R5SVoQqmGyEk",
+   "avaliacoes_google": 166,
+   "nota_google": 3.6,
+   "endereco": "Av. Antônio Coelho de Carvalho, 1399 - Santa Rita, Macapá - AP, 68900-015, Brasil",
+   "site": "https://amorsaude.com.br/",
+   "place_id_origem": "varredura do radar 2026-08-09",
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 0 de 85 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 85
+   }
+  },
+  {
+   "local_id": "clinica_perfetha_odontolog",
+   "papel": "concorrente",
+   "nome": "Clinica Perfetha Odontologia Especializada",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJ0-Z_bB3hYY0RC2qAF3NTMNw",
+   "avaliacoes_google": 150,
+   "nota_google": 5,
+   "endereco": "Av. Felíciano Coelho, 1438 - Trem, Macapá - AP, 68900-220, Brasil",
+   "site": "http://www.perfethaodontologia.com.br/",
+   "place_id_origem": "varredura do radar 2026-08-09",
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 1 de 128 avaliações citam aparelho",
+    "menciona_aparelho": 1,
+    "avaliacoes_com_texto": 128
+   }
+  },
+  {
+   "local_id": "clinica_odontologica_dentebras_buritizal",
+   "papel": "concorrente",
+   "nome": "Clínica Odontológica DENTEBRAS Macapá Buritizal",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJnYnFqDPhYY0ROzzKm6NLAY4",
+   "avaliacoes_google": 149,
+   "nota_google": 4.8,
+   "endereco": "Av. 13 de Setembro, 1913 - Buritizal, Macapá - AP, 68902-865, Brasil",
+   "site": "https://api.whatsapp.com/send?phone=5596984018105&text=Ol%C3%A1%20vim%20pelo%20Google,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.",
+   "place_id_origem": "varredura do radar 2026-08-09",
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 3 de 125 avaliações citam aparelho",
+    "menciona_aparelho": 3,
+    "avaliacoes_com_texto": 125
+   },
+   "nota_separacao": "duas lojas dividiam um local_id truncado; separadas pelo place_id"
+  },
+  {
+   "local_id": "odontoimperium_odontologia",
+   "papel": "concorrente",
+   "nome": "OdontoImperium Odontologia Integrada",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJG50_l6ThYY0RLoqqLSKpBFc",
+   "avaliacoes_google": 143,
+   "nota_google": 5,
+   "endereco": "Avenida 13 de Setembro, 1278 - A Entre as Ruas Manoel Eudóxio - R. Prof. Tostes, e - Buritizal, Macapá - AP, 68902-865, Brasil",
+   "site": "http://odontoimperium.com.br/",
+   "place_id_origem": "varredura do radar 2026-08-09",
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 0 de 115 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 115
+   }
+  },
+  {
+   "local_id": "dra_adriana_gato_implantes",
+   "papel": "concorrente",
+   "nome": "Dra Adriana Gato Implantes",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJty-LzWrhYY0RQftZctk-rR8",
+   "avaliacoes_google": 135,
+   "nota_google": 5,
+   "endereco": "R. Gen. Rondon, 1385 - Sl 707 - Centro, Macapá - AP, 68900-082, Brasil",
+   "site": "http://adrianagatoimplantes.com.br/bio",
+   "place_id_origem": "varredura do radar 2026-08-09",
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de implante: só 0 de 85 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 85
+   }
+  },
+  {
+   "local_id": "happy_odontopediatria_enca",
+   "papel": "concorrente",
+   "nome": "Happy - odontopediatria encantada",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJi281ZajhYY0ROeEZGLzI0cg",
+   "avaliacoes_google": 128,
+   "nota_google": 5,
+   "endereco": "R. Hildemar Maia, 1621 - Santa Rita, Macapá - AP, 68901-271, Brasil",
+   "site": "http://www.kellensanches.com.br/",
+   "place_id_origem": "varredura do radar 2026-08-09",
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 1 de 83 avaliações citam aparelho",
+    "menciona_aparelho": 1,
+    "avaliacoes_com_texto": 83
+   }
+  },
+  {
+   "local_id": "clinica_odontologica_cente",
+   "papel": "concorrente",
+   "nome": "Clínica Odontológica Centerclin",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJIcqw5BvhYY0ROQSUTaYjxJk",
+   "avaliacoes_google": 105,
+   "nota_google": 4.8,
+   "endereco": "R. Jovino Dinoá, 1396 - Centro, Macapá - AP, 68900-075, Brasil",
+   "site": "https://centerclinsaude.com.br/",
+   "place_id_origem": "varredura do radar 2026-08-09",
+   "produto": {
+    "disputa_aparelho": "sem_evidencia",
+    "porque": "zona cinzenta: 2 de 49 avaliações citam aparelho (4%) — faz aparelho, mas não é o negócio principal",
+    "menciona_aparelho": 2,
+    "avaliacoes_com_texto": 49
+   }
+  },
+  {
+   "local_id": "dr_amigo_praca_macapa_ap",
+   "papel": "concorrente",
+   "nome": "Dr. Amigo Praça - Macapá/AP",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJ9a67wyThYY0R_cpFKPCRyBI",
+   "avaliacoes_google": 101,
+   "nota_google": 4.7,
+   "endereco": "R. São José, 1692 - Central, Macapá - AP, 68900-110, Brasil",
+   "site": "https://clinicadramigo.com.br/",
+   "place_id_origem": "varredura do radar 2026-08-09",
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 0 de 69 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 69
+   }
+  },
+  {
+   "local_id": "clinica_odonto_quality_mac",
+   "papel": "concorrente",
+   "nome": "Clínica Odonto Quality Macapá- Zona Norte",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJP1U12eHnYY0Rpk7rddFFGbY",
+   "avaliacoes_google": 85,
+   "nota_google": 5,
+   "endereco": "Av. Álvaro Carvalho Barbosa, 2277 - Novo Horizonte, Macapá - AP, 68909-812, Brasil",
+   "site": "",
+   "place_id_origem": "varredura do radar 2026-08-09",
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de implante: só 0 de 52 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 52
+   }
+  },
+  {
+   "local_id": "uniodonto_amapa_sistema_de",
+   "papel": "concorrente",
+   "nome": "Uniodonto Amapá Sistema de Cooperativas Odontológicas",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJjzjNLSHhYY0RwCLPfcyl24E",
+   "avaliacoes_google": 84,
+   "nota_google": 4.9,
+   "endereco": "Rua Dr. Marcelo Cândia, 925 - Santa Rita, Macapá - AP, 68901-341, Brasil",
+   "site": "http://www.uniodontoap.com.br/",
+   "place_id_origem": "varredura do radar 2026-08-09",
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 0 de 58 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 58
+   }
+  },
+  {
+   "local_id": "clinica_dra_andrielle_rama",
+   "papel": "concorrente",
+   "nome": "Clínica Dra Andrielle Ramalho | Odontologia Estética Orofacial e Medicina Capilar",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJ20gUcXPhYY0RlWYotPCaA9s",
+   "avaliacoes_google": 78,
+   "nota_google": 5,
+   "endereco": "Anexo ao Office Araguary Business Center - Av. Duque de Caxias, 1129 - Sl 1101 - Central, Macapá - AP, 68900-071, Brasil",
+   "site": "https://www.draandrielleramalho.com.br/",
+   "place_id_origem": "varredura do radar 2026-08-09",
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de implante: só 0 de 58 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 58
+   }
+  }
+ ]
 }

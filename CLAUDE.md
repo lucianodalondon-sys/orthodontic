@@ -49,6 +49,11 @@ script cobra. Quando os dois divergirem, o script é a verdade.
 - **Estado vazio é conteúdo.** Ferramenta sem dado aparece apagada com o
   motivo. Esconder o que falta é o que faz a diretoria achar que medimos
   tudo.
+- **O veredito de quem disputa aparelho é carimbado, não improvisado.**
+  `scripts/produto_do_concorrente.py --salvar` classifica cada concorrente
+  (nome + voz do cliente) e grava `produto.disputa_aparelho` na identidade.
+  Toda ferramenta de confronto filtra por `cruzamento.disputa_aparelho()`.
+  Dos 219 concorrentes medidos, só ~27 disputam aparelho.
 - **ODONTOLOGIA NÃO É ORTODONTIA.** O negócio da OrthoDontic é **aparelho**.
   Universidade que faz limpeza, extração e canal de graça **não** disputa
   paciente de aparelho — é outro tratamento, outro ticket, outra decisão.
@@ -111,3 +116,11 @@ padrões → caixa → padrao → build. Períodos curtos são declarados na tel
 - **`ortho` solto marca concorrente como nosso.** "Clínica Ortho Mais" não é
   nossa. Use `orthodontic` sem espaços e sem acento.
 - **U+2028 quebra `.splitlines()` do Python.** Leia por `\n`.
+- **`local_id` truncado fundiu lojas.** Quatro pares de lojas (ODONTOMAX,
+  Vamos Sorrir, DENTEBRAS, Odonto Minas) dividiram o mesmo `local_id` porque
+  o id era o nome truncado. `cruzamento.identidades()` agora FALHA ALTO em
+  duplicata, e a ponta grava `place_id` em cada medição. Se o guarda gritar,
+  o conserto é separar as lojas (identidade + série), nunca afrouxar o guarda.
+- **O casco fala língua de balcão.** Palavras internas (casco, escada, ponta,
+  andar, régua) nunca aparecem na tela. A home é `franqueadora.json → cards`
+  (pergunta + número + frase, 4 grupos); prompt vigente: `PROMPT-CASCO-V5.md`.

@@ -215,6 +215,16 @@
       "anuncios_ativos": null
     },
     {
+      "local_id": "vamos_sorrir_odontologia",
+      "nome": "Vamos Sorrir Odontologia",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.8,
+      "avaliacoes": 562,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
       "local_id": "acesse_saude_dentista_e_me",
       "nome": "ACESSE SAUDE | Dentista e Médicos em feira de santana | Clinica Odontologica e Médica",
       "tipo": "PREENCHER",
@@ -265,17 +275,7 @@
       "anuncios_ativos": null
     },
     {
-      "local_id": "vamos_sorrir_odontologia",
-      "nome": "Vamos Sorrir Odontologia",
-      "tipo": "PREENCHER",
-      "proprio": false,
-      "nota": 4.8,
-      "avaliacoes": 364,
-      "reviews_novos_mes": null,
-      "anuncios_ativos": null
-    },
-    {
-      "local_id": "vamos_sorrir_odontologia",
+      "local_id": "vamos_sorrir_odontologia_b",
       "nome": "Vamos Sorrir Odontologia",
       "tipo": "PREENCHER",
       "proprio": false,
@@ -563,6 +563,7 @@
         "local_id": "ortho_fsa",
         "nome": "OrthoDontic Feira de Santana",
         "proprio": true,
+        "aparelho": true,
         "de": "2026-08-07",
         "ate": "2026-08-10",
         "dias": 3,
@@ -575,64 +576,13 @@
         "eventos": []
       }
     ],
-    "quem_mais_ganhou": [
-      {
-        "local_id": "cop_centro_odontologico_do",
-        "nome": "COP - Centro Odontológico do Povo",
-        "proprio": false,
-        "de": "2026-08-08",
-        "ate": "2026-08-10",
-        "dias": 2,
-        "antes": 302,
-        "agora": 312,
-        "delta": 10,
-        "nota_antes": 4.7,
-        "nota_agora": 4.7,
-        "ritmo_do_periodo": 152.0,
-        "eventos": [
-          "ganhou 10 avaliações em 2 dia(s)"
-        ]
-      },
-      {
-        "local_id": "clinica_central_do_sorriso",
-        "nome": "Clínica Central do Sorriso - Dentista Particular Feira de Santana",
-        "proprio": false,
-        "de": "2026-08-08",
-        "ate": "2026-08-10",
-        "dias": 2,
-        "antes": 960,
-        "agora": 961,
-        "delta": 1,
-        "nota_antes": 5,
-        "nota_agora": 5,
-        "ritmo_do_periodo": 15.2,
-        "eventos": [
-          "ganhou 1 avaliações em 2 dia(s)"
-        ]
-      },
-      {
-        "local_id": "clinica_meu_dente_sampaio",
-        "nome": "Clinica Meu Dente - Sampaio",
-        "proprio": false,
-        "de": "2026-08-08",
-        "ate": "2026-08-10",
-        "dias": 2,
-        "antes": 372,
-        "agora": 373,
-        "delta": 1,
-        "nota_antes": 4,
-        "nota_agora": 4,
-        "ritmo_do_periodo": 15.2,
-        "eventos": [
-          "ganhou 1 avaliações em 2 dia(s)"
-        ]
-      }
-    ],
+    "quem_mais_ganhou": [],
     "contador_caiu": [
       {
         "local_id": "uefs_fsa",
         "nome": "Clínica Odontológica da UEFS",
         "proprio": false,
+        "aparelho": false,
         "de": "2026-08-07",
         "ate": "2026-08-10",
         "dias": 3,
