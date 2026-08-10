@@ -35,7 +35,7 @@ from collections import Counter, defaultdict
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RAIZ/"scripts"))
-from cruzamento import jsonl
+from cruzamento import jsonl, conta
 
 PORTAL = RAIZ/"dados"/"portal"
 
@@ -122,7 +122,8 @@ def monta():
                 "populacao": x["populacao"], "faixa": f,
                 "unidades_hoje": n, "comporta_pela_regua": comporta,
                 "folga": folga, "renda_relativa": renda_rel(x),
-                "leitura": (f"{n} unidade(s) para {x['populacao']:,} habitantes; "
+                "leitura": (f"{conta(n, 'unidade')} para {x['populacao']:,} "
+                            f"habitantes; "
                             f"a régua da rede nessa faixa é 1 para "
                             f"{regua[f]:,}").replace(",", "."),
             })
@@ -189,8 +190,10 @@ def monta():
             "Fluxo de pessoas e dados de transação não existem em fonte "
             "aberta — o proxy de movimento continua sendo avaliações e "
             "anúncios, medidos só nas cidades estudadas.",
-            f"{len(sem_ibge)} cidade(s) da rede não casaram com o IBGE pelo "
-            f"nome e ficaram fora da régua." if sem_ibge else
+            f"{conta(len(sem_ibge), 'cidade')} da rede não "
+            f"{'casou' if len(sem_ibge) == 1 else 'casaram'} com o IBGE pelo "
+            f"nome e {'ficou' if len(sem_ibge) == 1 else 'ficaram'} fora da "
+            f"régua." if sem_ibge else
             "Todas as cidades da rede casaram com o IBGE.",
         ],
     }

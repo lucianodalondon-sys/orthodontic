@@ -135,6 +135,12 @@ ordem:
   E quando a lista for cortada para caber ("mostrar 8, esconder o
   resto"), o rótulo é **"ver todas as N"** com o total pronto — nunca
   `total − 8`, que é subtração na tela.
+- **O casco não junta número com palavra.** A tira do Início vem pronta em
+  `franqueadora.json → tiras_do_inicio`: cada item traz `numero`, `rotulo`
+  (já no singular ou no plural que combina com o número) e `tom`
+  (`crit` · `warn` · `marca` · `bad`). Desenhe os quatro na ordem em que
+  vêm. Colar um rótulo fixo ao lado do número é o que escreveu
+  **"1 unidades em faixa vermelha"** na primeira tela do portal.
 - **Nenhum número no HTML.** `374`, `348`, `10 lojas`, `340` não se
   escrevem: todos mudam a cada coleta. Rótulo de menu e sobrelinha de
   tela saem de `franqueadora.json → grupos[]` e `cobertura`. Um `374`

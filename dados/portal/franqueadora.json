@@ -1,6 +1,6 @@
 {
   "corte": "2026-08-10",
-  "gerado_em": "2026-08-10T22:31:13",
+  "gerado_em": "2026-08-10T23:32:50",
   "rede": {
     "unidades": 374,
     "abertas": 348,
@@ -243,9 +243,31 @@
       "pracas_medidas": 1
     }
   ],
+  "tiras_do_inicio": [
+    {
+      "numero": 1,
+      "tom": "crit",
+      "rotulo": "unidade em faixa vermelha"
+    },
+    {
+      "numero": 0,
+      "tom": "warn",
+      "rotulo": "tarefas fora do prazo"
+    },
+    {
+      "numero": 116,
+      "tom": "marca",
+      "rotulo": "avaliações esperando resposta"
+    },
+    {
+      "numero": 9,
+      "tom": "bad",
+      "rotulo": "alertas graves nas fichas da rede"
+    }
+  ],
   "agora": {
     "pergunta": "Em quais unidades a OrthoDontic está perdendo atenção local, para qual concorrente, e onde intervir primeiro neste mês?",
-    "manchete": "1 de 10 unidades medidas estão em faixa vermelha. A primeira é PR · Londrina.",
+    "manchete": "1 de 10 unidades medidas está em faixa vermelha. A primeira é PR · Londrina.",
     "em_risco": 1,
     "unidades": 10,
     "o_que_e_atencao": "participação observável em busca, avaliações, publicidade e atividade digital. Não é faturamento — nenhum número desta tela vem de dado interno da rede.",
@@ -370,7 +392,7 @@
       "titulo": "Onde agir primeiro",
       "pergunta": "Qual loja precisa de ajuda neste mês?",
       "numero": 1,
-      "frase": "1 de 10 unidades medidas estão em faixa vermelha. A primeira é PR · Londrina.",
+      "frase": "1 de 10 unidades medidas está em faixa vermelha. A primeira é PR · Londrina.",
       "tela": "fila",
       "grupo": "lojas",
       "disponivel": true,

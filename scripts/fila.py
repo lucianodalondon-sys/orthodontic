@@ -44,7 +44,7 @@ PORTAL = RAIZ/"dados"/"portal"
 
 import sys
 sys.path.insert(0, str(RAIZ/"scripts"))
-from cruzamento import coleta, jsonl, reviews_unicos   # mesma conta, mesmos números
+from cruzamento import coleta, jsonl, reviews_unicos, conta   # mesma conta, mesmos números
 
 
 # --------------------------------------------------------------- os gatilhos
@@ -187,9 +187,10 @@ def monta():
                       "dados/serie/reviews.jsonl")
             else:
                 marca("parada",
-                      f"apenas {u['meses']} mês(es) seguidos com movimento acima do "
-                      f"típico da própria unidade; o ritmo medido é "
-                      f"{u['ritmo']:.1f} avaliações/mês",
+                      f"apenas {conta(u['meses'], 'mês', 'meses')} "
+                      f"{'seguido' if u['meses'] == 1 else 'seguidos'} com "
+                      f"movimento acima do típico da própria unidade; o ritmo "
+                      f"medido é {u['ritmo']:.1f} avaliações/mês",
                       "dados/serie/reviews.jsonl")
 
         # 2 · o rival que avança, nomeado
@@ -333,7 +334,8 @@ def monta():
                            "tela vem de dado interno da rede.",
         "unidades": len(fila),
         "em_risco": len(vermelhas),
-        "manchete": (f"{len(vermelhas)} de {len(fila)} unidades medidas estão em faixa "
+        "manchete": (f"{len(vermelhas)} de {len(fila)} unidades medidas "
+                     f"{'está' if len(vermelhas) == 1 else 'estão'} em faixa "
                      f"vermelha. A primeira é {vermelhas[0]['rotulo']}."
                      if vermelhas else
                      f"Nenhuma das {len(fila)} unidades medidas está em faixa vermelha."),

@@ -184,6 +184,17 @@ def coleta():
     return ident, linhas
 
 
+def conta(n, singular, plural=None):
+    """'1 avaliação', '2 avaliações' — o número junto com o nome certo.
+
+    O portal é lido por diretoria e franqueado, e "ganhou 1 avaliações em
+    2 dia(s)" é a frase que faz o leitor desconfiar de todo o resto. O
+    `(s)` era a muleta: some. Quem escreve rótulo é quem tem o número na
+    mão, e isso é aqui — a tela recebe a frase pronta e certa.
+    """
+    return f"{n} {singular if abs(n) == 1 else (plural or singular + 's')}"
+
+
 def selo(m):
     if m is None:
         return "?"

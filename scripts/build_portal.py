@@ -478,6 +478,13 @@ def main():
                 "grupo": grupo, "disponivel": disponivel,
                 "indisponivel_porque": motivo}
 
+    # A tira de números do INÍCIO, pronta: número + o nome que combina com
+    # ele. O casco vinha juntando o número com um rótulo fixo e escrevia
+    # "1 unidades em faixa vermelha" na primeira tela do portal.
+    def tira(numero, singular, plural, tom):
+        return {"numero": numero, "tom": tom,
+                "rotulo": singular if numero == 1 else plural}
+
     mud = _json("o_que_mudou")
     quedas = sum(len(d.get("contador_caiu", []))
                  for d in mud.get("pracas", {}).values())
@@ -674,6 +681,16 @@ def main():
                                f"cidades de oportunidade são estudo de expansão e "
                                f"não entram em nenhuma conta da rede."},
         "mapa": mapa,
+        "tiras_do_inicio": [
+            tira(fila.get("em_risco"), "unidade em faixa vermelha",
+                 "unidades em faixa vermelha", "crit"),
+            tira(fila.get("tarefas_vencidas"), "tarefa fora do prazo",
+                 "tarefas fora do prazo", "warn"),
+            tira(caixa.get("total_abertas"), "avaliação esperando resposta",
+                 "avaliações esperando resposta", "marca"),
+            tira(len(vermelhos), "alerta grave na ficha da rede",
+                 "alertas graves nas fichas da rede", "bad"),
+        ],
         # A porta de entrada. O casco desenha isto ANTES do menu, e o menu vira
         # o que sempre deveria ter sido: o que fazer depois de olhar a fila.
         "agora": ({"pergunta": fila.get("pergunta"),

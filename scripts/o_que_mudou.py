@@ -34,7 +34,7 @@ from collections import defaultdict
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RAIZ/"scripts"))
-from cruzamento import jsonl, identidades, disputa_aparelho
+from cruzamento import jsonl, identidades, disputa_aparelho, conta
 
 PORTAL = RAIZ/"dados"/"portal"
 
@@ -71,7 +71,8 @@ def monta():
         p, rotulo, nome, proprio, aparelho = nomes[lid]
         ev = []
         if delta > 0:
-            ev.append(f"ganhou {delta} avaliações em {dias} dia(s)")
+            ev.append(f"ganhou {conta(delta, 'avaliação', 'avaliações')} "
+                      f"em {conta(dias, 'dia')}")
         elif delta < 0:
             ev.append(f"o contador CAIU {-delta} — avaliação removida")
         if dnota:
@@ -98,7 +99,8 @@ def monta():
         dias = max(d["dias"]) if d["dias"] else 0
         fora[p] = {
             "praca_id": p, "rotulo": d["rotulo"], "dias_medidos": dias,
-            "aviso": (f"período de só {dias} dia(s) — o delta ainda diz pouco; "
+            "aviso": (f"período de só {conta(dias, 'dia')} — o delta ainda "
+                      f"diz pouco; "
                       f"a leitura engorda a cada medição"
                       if dias < 14 else None),
             "nossas": nossos,

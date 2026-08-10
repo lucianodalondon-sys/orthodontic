@@ -29,7 +29,7 @@ import argparse, json, pathlib, sys
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RAIZ/"scripts"))
-from cruzamento import jsonl, reviews_unicos
+from cruzamento import jsonl, reviews_unicos, conta
 
 IDENT = RAIZ/"dados"/"identidade"
 CONT = RAIZ/"dados"/"conteudo"
@@ -123,7 +123,8 @@ def _e0b(b, p):
         nossos = [l for l in d.get("locais", []) if l.get("papel") == "proprio"]
         com_id = [l for l in nossos if l.get("place_id")]
         return (bool(com_id),
-                f"{len(nossos)} unidade(s) própria(s), {len(com_id)} com ficha "
+                f"{conta(len(nossos), 'unidade própria', 'unidades próprias')}, "
+                f"{len(com_id)} com ficha "
                 f"do Google identificada")
     c = d.get("conferencia_de_unidade") or d.get("conferencia") or {}
     if not c:
@@ -136,7 +137,8 @@ def _e0b(b, p):
 def _e1(b, p):
     ib = b.ident[p].get("ibge") or []
     com_pop = [x for x in ib if (x.get("populacao_estimada") or {}).get("valor")]
-    return bool(com_pop), f"{len(com_pop)} município(s) com população do IBGE"
+    return bool(com_pop), (f"{conta(len(com_pop), 'município')} com população "
+                           f"do IBGE")
 
 
 def _e2(b, p):
@@ -218,7 +220,7 @@ def _e14(b, p):
     n = b.n("portas", p)
     cap = b.n("captacao", p)
     return (n >= MIN_PORTAS and cap > 0,
-            f"{n} portas de busca · {cap} leitura(s) de captação")
+            f"{n} portas de busca · {conta(cap, 'leitura')} de captação")
 
 
 def _e15(b, p):

@@ -23,7 +23,7 @@ from collections import defaultdict
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RAIZ/"scripts"))
-from cruzamento import coleta, jsonl, reviews_unicos, disputa_aparelho
+from cruzamento import coleta, jsonl, reviews_unicos, disputa_aparelho, conta
 
 PORTAL = RAIZ/"dados"/"portal"
 
@@ -51,8 +51,8 @@ def eventos_de_places(rows_por_ficha):
             dnota = round((b.get("nota") or 0) - (a.get("nota") or 0), 1)
             if delta > 0:
                 fora[(praca, lid)].append((b_d, "contador",
-                    f"ganhou {delta} avaliações ({a['avaliacoes_total']} → "
-                    f"{b['avaliacoes_total']})"))
+                    f"ganhou {conta(delta, 'avaliação', 'avaliações')} "
+                    f"({a['avaliacoes_total']} → {b['avaliacoes_total']})"))
             elif delta < 0:
                 fora[(praca, lid)].append((b_d, "queda",
                     f"o contador CAIU {-delta} ({a['avaliacoes_total']} → "
