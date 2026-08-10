@@ -249,6 +249,132 @@
    "sem_amostra": []
   },
   {
+   "t": "A confiança é em gente com nome, não em marca",
+   "n": "13/13",
+   "estado": "constante",
+   "como_se_mede": "mede quanto das avaliações cita uma pessoa pelo nome próprio.",
+   "ev": [
+    [
+     "MG · Contagem",
+     "10% das avaliações citam alguém pelo nome"
+    ],
+    [
+     "MT · Cuiabá + MT · Várzea Grande",
+     "5% das avaliações citam alguém pelo nome"
+    ],
+    [
+     "BA · Feira de Santana",
+     "5% das avaliações citam alguém pelo nome"
+    ],
+    [
+     "MA · Imperatriz",
+     "3% das avaliações citam alguém pelo nome"
+    ],
+    [
+     "CE · Juazeiro do Norte",
+     "3% das avaliações citam alguém pelo nome"
+    ],
+    [
+     "PR · Londrina",
+     "5% das avaliações citam alguém pelo nome"
+    ],
+    [
+     "AP · Macapá",
+     "4% das avaliações citam alguém pelo nome"
+    ],
+    [
+     "SC · Mafra",
+     "3% das avaliações citam alguém pelo nome"
+    ]
+   ],
+   "excecoes": [],
+   "sem_amostra": []
+  },
+  {
+   "t": "A porta de entrada é 'dentista', não 'aparelho'",
+   "n": "13/13",
+   "estado": "constante",
+   "como_se_mede": "compara quantas frases que a cidade digita são da família 'dentista' contra a família 'aparelho'. Quem digita 'dentista' é quem marca a avaliação e sai com aparelho.",
+   "ev": [
+    [
+     "MG · Contagem",
+     "porta 'dentista' 17 frases contra 'aparelho' 1"
+    ],
+    [
+     "MT · Cuiabá + MT · Várzea Grande",
+     "porta 'dentista' 16 frases contra 'aparelho' 1"
+    ],
+    [
+     "BA · Feira de Santana",
+     "porta 'dentista' 17 frases contra 'aparelho' 1"
+    ],
+    [
+     "MA · Imperatriz",
+     "porta 'dentista' 17 frases contra 'aparelho' 0"
+    ],
+    [
+     "CE · Juazeiro do Norte",
+     "porta 'dentista' 11 frases contra 'aparelho' 7"
+    ],
+    [
+     "PR · Londrina",
+     "porta 'dentista' 13 frases contra 'aparelho' 2"
+    ],
+    [
+     "AP · Macapá",
+     "porta 'dentista' 17 frases contra 'aparelho' 0"
+    ],
+    [
+     "SC · Mafra",
+     "porta 'dentista' 18 frases contra 'aparelho' 0"
+    ]
+   ],
+   "excecoes": [],
+   "sem_amostra": []
+  },
+  {
+   "t": "O adulto 30+ é dinheiro na mesa e nenhuma praça fala com ele",
+   "n": "13/13",
+   "estado": "constante",
+   "como_se_mede": "compara a população de 30 a 45 anos com a de 9 a 15, pelo IBGE.",
+   "ev": [
+    [
+     "MG · Contagem",
+     "155.079 adultos de 30-45 contra 52.795 de 9-15 — 2.9x"
+    ],
+    [
+     "MT · Cuiabá + MT · Várzea Grande",
+     "240.202 adultos de 30-45 contra 93.821 de 9-15 — 2.6x"
+    ],
+    [
+     "BA · Feira de Santana",
+     "156.142 adultos de 30-45 contra 61.014 de 9-15 — 2.6x"
+    ],
+    [
+     "MA · Imperatriz",
+     "67.291 adultos de 30-45 contra 28.561 de 9-15 — 2.4x"
+    ],
+    [
+     "CE · Juazeiro do Norte",
+     "69.988 adultos de 30-45 contra 29.033 de 9-15 — 2.4x"
+    ],
+    [
+     "PR · Londrina",
+     "127.565 adultos de 30-45 contra 46.888 de 9-15 — 2.7x"
+    ],
+    [
+     "AP · Macapá",
+     "104.811 adultos de 30-45 contra 52.890 de 9-15 — 2.0x"
+    ],
+    [
+     "SC · Mafra",
+     "19.745 adultos de 30-45 contra 7.715 de 9-15 — 2.6x"
+    ]
+   ],
+   "excecoes": [],
+   "sem_amostra": []
+  },
+  {
    "t": "A ferida é sempre operação — nunca o produto",
    "n": "7/7",
    "estado": "se_repete",
@@ -268,7 +394,7 @@
     ],
     [
      "PR · Londrina",
-     "operação 70% contra produto 43% em 81 negativas"
+     "operação 74% contra produto 43% em 118 negativas"
     ],
     [
      "AP · Macapá",

@@ -4,8 +4,8 @@
  "pergunta": "Em quais unidades a OrthoDontic está perdendo atenção local, para qual concorrente, e onde intervir primeiro neste mês?",
  "o_que_e_atencao": "participação observável em busca, avaliações, publicidade e atividade digital. Não é faturamento — nenhum número desta tela vem de dado interno da rede.",
  "unidades": 10,
- "em_risco": 5,
- "manchete": "5 de 10 unidades medidas estão em faixa vermelha. A primeira é PR · Londrina.",
+ "em_risco": 6,
+ "manchete": "6 de 10 unidades medidas estão em faixa vermelha. A primeira é PR · Londrina.",
  "criterio": [
   {
    "chave": "parada",
@@ -73,7 +73,7 @@
     "ritmo": 35.6,
     "meses": 11,
     "nota": 5,
-    "posicao": 4
+    "posicao": 3
    },
    "gatilhos": [
     {
@@ -305,6 +305,67 @@
    "pos": 4
   },
   {
+   "local_id": "ortho_souza_naves",
+   "praca_id": "londrina",
+   "rotulo": "PR · Londrina",
+   "unidade": "OrthoDontic Souza Naves",
+   "unidade_curta": "Souza Naves",
+   "idade_meses": 172,
+   "urgencia": 60,
+   "faixa": "vermelha",
+   "ritmo": 3.3,
+   "meses": 9,
+   "nota": 4.6,
+   "avaliacoes": 566,
+   "posicao": 13,
+   "de": 24,
+   "quem_avanca": {
+    "nome": "Vittallon Odontologia",
+    "ritmo": 35.6,
+    "meses": 11,
+    "nota": 5,
+    "posicao": 3
+   },
+   "gatilhos": [
+    {
+     "peso": 25,
+     "titulo": "Um concorrente sustenta e corre mais",
+     "chave": "rival",
+     "fato": "Vittallon Odontologia sustenta há 11 meses a 35.6/mês, contra 3.3/mês desta unidade",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "peso": 20,
+     "titulo": "Está na metade de baixo da própria praça",
+     "chave": "posicao",
+     "fato": "13º lugar de 24 clínicas medidas na praça",
+     "fonte": "dados/portal/rede_cruzamento.json"
+    },
+    {
+     "peso": 15,
+     "titulo": "Nota abaixo da mediana da praça",
+     "chave": "nota",
+     "fato": "nota 4.6 contra mediana 5.0 das 24 clínicas medidas na praça",
+     "fonte": "dados/serie/places.jsonl"
+    }
+   ],
+   "acao": {
+    "o_que": "Levar a comparação impressa com Vittallon Odontologia para a visita e combinar a resposta",
+    "prazo": "próxima visita",
+    "dono": "consultor de campo",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "rival"
+   },
+   "ciclo": {
+    "alertado_em": "2026-08-10",
+    "acao_confirmada": null,
+    "confirmada_em": null,
+    "resultado": null,
+    "medido_em": null
+   },
+   "pos": 5
+  },
+  {
    "local_id": "ortho_contagem",
    "praca_id": "contagem",
    "rotulo": "MG · Contagem",
@@ -363,7 +424,7 @@
     "resultado": null,
     "medido_em": null
    },
-   "pos": 5
+   "pos": 6
   },
   {
    "local_id": "ortho_mafra",
@@ -411,7 +472,7 @@
     "resultado": null,
     "medido_em": null
    },
-   "pos": 6
+   "pos": 7
   },
   {
    "local_id": "ortho_palmas",
@@ -465,7 +526,7 @@
     "resultado": null,
     "medido_em": null
    },
-   "pos": 7
+   "pos": 8
   },
   {
    "local_id": "ortho_pp",
@@ -504,47 +565,6 @@
     "dono": "consultor de campo",
     "custo": "sem custo de mídia",
     "por_causa_de": "rival"
-   },
-   "ciclo": {
-    "alertado_em": "2026-08-10",
-    "acao_confirmada": null,
-    "confirmada_em": null,
-    "resultado": null,
-    "medido_em": null
-   },
-   "pos": 8
-  },
-  {
-   "local_id": "ortho_souza_naves",
-   "praca_id": "londrina",
-   "rotulo": "PR · Londrina",
-   "unidade": "OrthoDontic Souza Naves",
-   "unidade_curta": "Souza Naves",
-   "idade_meses": 8,
-   "urgencia": 15,
-   "faixa": "verde",
-   "ritmo": 48.1,
-   "meses": 7,
-   "nota": 4.6,
-   "avaliacoes": 564,
-   "posicao": 3,
-   "de": 24,
-   "quem_avanca": null,
-   "gatilhos": [
-    {
-     "peso": 15,
-     "titulo": "Nota abaixo da mediana da praça",
-     "chave": "nota",
-     "fato": "nota 4.6 contra mediana 5.0 das 24 clínicas medidas na praça",
-     "fonte": "dados/serie/places.jsonl"
-    }
-   ],
-   "acao": {
-    "o_que": "Ler as avaliações negativas do trimestre com o franqueado e responder todas",
-    "prazo": "10 dias",
-    "dono": "consultor de campo",
-    "custo": "sem custo de mídia",
-    "por_causa_de": "nota"
    },
    "ciclo": {
     "alertado_em": "2026-08-10",
