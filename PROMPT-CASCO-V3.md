@@ -234,3 +234,81 @@ da ficha de praça basta.
 | planos de franqueado | **7** — só praça com unidade |
 | reputação | **7 redes** de ortodontia e odontologia popular; implante fora, nomeado |
 | praças com estudo completo | **7 de 7** da rede |
+
+---
+
+# ADENDO v3.2 — as ferramentas que nasceram depois, e um formato que mudou
+
+O design segue aprovado. Cinco telas novas, um formato alterado, e o menu
+agora tem TRÊS entradas no andar AGORA. Tudo já está em `dados/`.
+
+## A · O andar AGORA agora tem três entradas, nesta ordem
+
+```
+O que mudou            → dados/portal/o_que_mudou.json
+A caixa de respostas   → dados/portal/caixa_de_respostas.json
+A fila de intervenção  → dados/portal/fila.json  (inalterada)
+```
+
+## B · Tela nova: "O que mudou" — `o_que_mudou.json`
+
+A resposta à pergunta que abre a semana. Por praça:
+
+- `dias_medidos` e `aviso` — quando o período é curto, o aviso vem escrito
+  ("o delta ainda diz pouco…"). **Desenhe o aviso visível.** Ele morre
+  sozinho quando o ciclo engorda; não o esconda para a tela parecer melhor.
+- `nossas[]` — cada loja nossa com `antes → agora (delta)`. Use ▲ ▼ ·.
+- `quem_mais_ganhou[]` — rivais em movimento. O caso-exemplo real: Dentel,
+  Londrina, 5 → 22 em 3 dias. É a linha que vende a assinatura.
+- `contador_caiu[]` — **destaque**: contador que cai é avaliação removida,
+  evento raro e auditável.
+
+Cada ficha de praça (`pracas/*.json`) também traz agora o bloco
+`o_que_mudou` preenchido — a mesma estrutura, local.
+
+## C · Tela nova: "A caixa de respostas" — `caixa_de_respostas.json`
+
+Lista de trabalho, POR LOJA: `manchete`, e `unidades[]` com `abertas`,
+`com_texto`, `ja_respondidas` e `itens[]` (nota, data, texto). Ordene como
+vem. Desenhe `a_regra` visível: responder é higiene de reputação, não motor
+de ritmo — a tela não pode prometer o que o dado desmentiu.
+
+## D · Tela nova: "Os padrões da rede" — `padroes.json`
+
+A tela mais importante do andar DECIDIR. Ordem de leitura:
+
+1. `hipoteses_testadas[]` — quatro cartões com veredito `NAO SEPARA` e a
+   `prova`. O valor da tela é o que CAIU; desenhe os vereditos grandes.
+2. `conclusao` — `t`, `leitura`, `consequencia` e `controle` (Cuiabá, as
+   três lojas). É a única conclusão, e é por eliminação — o texto diz isso.
+3. `lojas[]` — a tabela por loja (meses_seguidos, selo, pct_5_estrelas…).
+4. `o_que_isso_nao_ve` — fechado e legível, como sempre.
+
+## E · Tela nova: "A rede inteira" — `rede_inteira.json`
+
+As 374. `alertas[]` ordenados por gravidade, cada um com `por_que` e
+`de_quem_e` (franqueadora | unidade) — **marque visualmente os de
+franqueadora**: Patrocínio fechada no Google é o primeiro. Depois
+`por_uf[]`, e `nao_confirmadas_lista[]` com o motivo de cada uma — as 48
+que ficaram fora aparecem nomeadas.
+
+## F · Tela nova: "A voz da cidade" — `voz_da_cidade.json`
+
+1.380 comentários dos canais locais, por praça. É CONSULTAR: contexto de
+briefing, não decisão.
+
+## G · FORMATO MUDOU: o rival agora é POR LOJA — `rival.json`
+
+`pracas[]` virou lista de LOJAS: cada item tem `local_id`, `unidade`, e ou
+`vantagens_deles[]` ou `sem_comparacao_porque` (string). **Quando vier
+`sem_comparacao_porque`, desenhe a linha apagada com o motivo** — quatro
+lojas ficam fora por amostra pequena e isso aparece, não some. O rótulo é
+`rotulo · unidade`; o casco nunca monta, recebe pronto. `padrao_da_rede`
+segue igual, mas `pracas[]` de cada eixo agora nomeia a LOJA.
+
+## H · A escada mudou os degraus — `achados.json`
+
+Degraus agora: `constante` · `vale_para_a_rede` · `se_repete` · `candidata`
+· `derrubada` · `nao_testavel`. Cada achado pode trazer `como_se_mede`
+(desenhe visível), `excecoes[]` (nomeadas, nunca escondidas) e
+`sem_amostra[]`.
