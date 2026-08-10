@@ -249,6 +249,12 @@ def main():
 
     places = {(r["local_id"], r["snapshot_date"]): r for r in jsonl_le(SERIE/"places.jsonl")}
     reviews = {r["chave"]: r for r in jsonl_le(SERIE/"reviews.jsonl")}
+    # A foto que este processo tirou do arquivo, para detectar corrida na hora
+    # de gravar. Dois coletores rodaram em paralelo e o segundo REGRAVOU o
+    # arquivo por cima do primeiro: as 592 avaliações de Prudente sumiram
+    # porque Feira, que leu o arquivo antes de Prudente gravar, escreveu a
+    # visão velha por cima. 267 linhas perdidas sem nenhum erro na tela.
+    _linhas_no_inicio = sum(1 for _ in (SERIE/"reviews.jsonl").open())         if (SERIE/"reviews.jsonl").exists() else 0
 
     sem_credito = False
     for praca in pracas:
@@ -364,6 +370,17 @@ def main():
 
     if args.dry_run:
         return
+    # Se o arquivo cresceu desde que este processo o leu, OUTRO processo gravou
+    # no meio — regravar agora apagaria o trabalho dele. Relê e funde antes.
+    agora = sum(1 for _ in (SERIE/"reviews.jsonl").open())         if (SERIE/"reviews.jsonl").exists() else 0
+    if agora > _linhas_no_inicio:
+        print(f"  ⚠ reviews.jsonl cresceu de {_linhas_no_inicio} para {agora} "
+              f"linhas durante a coleta — outro processo gravou junto. "
+              f"Relendo e fundindo antes de gravar.")
+        for r in jsonl_le(SERIE/"reviews.jsonl"):
+            reviews.setdefault(r["chave"], r)
+        for r in jsonl_le(SERIE/"places.jsonl"):
+            places.setdefault((r["local_id"], r["snapshot_date"]), r)
     jsonl_grava(SERIE/"places.jsonl", sorted(places.values(), key=lambda r: (r["snapshot_date"], r["local_id"])))
     jsonl_grava(SERIE/"reviews.jsonl", sorted(reviews.values(), key=lambda r: (r["local_id"], r.get("data") or "")))
     print(f"\nplaces.jsonl: {len(places)} linhas · reviews.jsonl: {len(reviews)} linhas")
