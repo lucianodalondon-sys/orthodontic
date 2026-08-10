@@ -270,8 +270,12 @@ def main():
                 estudos[arq.stem] = json.loads(arq.read_text(encoding="utf-8"))
         if estudos:
             (OUT/"oportunidade").mkdir(parents=True, exist_ok=True)
+            # A leitura autorada entra JUNTO com os números, como em toda
+            # praça da rede. Sem isso a cidade do Radar abria com 20 campos
+            # de número e nenhuma manchete — não era o mesmo estudo.
             for pid, est in estudos.items():
-                escreve(f"oportunidade/{pid}", est)
+                texto = carrega(CONT/"oportunidade", pid)
+                escreve(f"oportunidade/{pid}", {**est, **texto})
                 escritos.append(f"oportunidade/{pid}")
             for linha in cidades_radar:
                 pid = next((k for k, v in estudos.items()

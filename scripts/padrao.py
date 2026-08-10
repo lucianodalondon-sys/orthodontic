@@ -237,6 +237,24 @@ def _e16(b, p):
     return a.exists(), "plano do franqueado escrito" if a.exists() else "sem plano"
 
 
+def _e15b(b, p):
+    """A leitura escrita da cidade de oportunidade.
+
+    A régua só cobrava tese de praça COM unidade, então as seis cidades do
+    Radar passavam como "completa" abrindo com vinte campos de número e
+    nenhuma manchete — enquanto toda praça da rede abre com uma. Não era o
+    mesmo estudo, e a régua não via.
+    """
+    a = RAIZ/"dados"/"conteudo"/"oportunidade"/f"{p}.json"
+    if not a.exists():
+        return False, "sem leitura escrita — a cidade abre sem manchete"
+    d = json.loads(a.read_text(encoding="utf-8"))
+    falta = [k for k in ("eyebrow", "tese_titulo", "tese", "base")
+             if not d.get(k)]
+    return (not falta), ("leitura escrita" if not falta
+                         else "falta " + ", ".join(falta))
+
+
 ETAPAS = [
     (0,  "A praça definida",          "humano", None,          _e0,
      "editar dados/identidade/<praça>.json — rótulo com UF na frente"),
@@ -267,6 +285,8 @@ ETAPAS = [
      "python3 scripts/oportunidades_franqueado.py --praca <praça> --salvar"),
     (15, "O estudo de oportunidade",  "auto",   "oportunidade", _e15,
      "python3 scripts/estudar_oportunidade.py --praca <praça> --salvar"),
+    (15.5, "A leitura da cidade",     "humano", "oportunidade", _e15b,
+     "python3 scripts/escreve_tese_oportunidade.py --salvar"),
     (16, "O plano do franqueado",     "auto",   "rede",        _e16,
      "python3 scripts/plano_do_franqueado.py --praca <praça> --salvar"),
 ]

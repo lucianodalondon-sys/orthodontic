@@ -137,6 +137,13 @@ ordem:
 
 - **Praça = UMA cidade.** `riomafra` não existe mais (é `mafra`); Cuiabá
   não soma mais Várzea Grande. Rótulos vêm prontos (`MT · Cuiabá`).
+- **A cidade do Radar abre igual à praça da rede.** Os seis estudos em
+  `oportunidade/<id>.json` agora trazem `eyebrow`, `tese_titulo`, `tese`
+  e `base` — os mesmos quatro campos com que uma praça abre. Desenhe o
+  mesmo bloco de abertura nas duas telas: sobrelinha em mono, título
+  grande, o parágrafo da tese, e a base em pé de linha. Antes elas
+  abriam com vinte campos de número e nenhuma manchete, e a diferença
+  saltava na tela.
 - **Concorrente é só quem disputa aparelho.** Toda tela de confronto já
   recebe filtrado; os excluídos vêm nomeados com o motivo — a tela mostra.
 - **fila.json ganhou `tarefa`** (status aberta/vencida, `vence_em`,
