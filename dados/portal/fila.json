@@ -1,11 +1,11 @@
 {
- "gerado_em": "2026-08-09",
- "corte": "2026-08-09",
+ "gerado_em": "2026-08-10",
+ "corte": "2026-08-10",
  "pergunta": "Em quais unidades a OrthoDontic está perdendo atenção local, para qual concorrente, e onde intervir primeiro neste mês?",
  "o_que_e_atencao": "participação observável em busca, avaliações, publicidade e atividade digital. Não é faturamento — nenhum número desta tela vem de dado interno da rede.",
  "unidades": 10,
- "em_risco": 4,
- "manchete": "4 de 10 unidades medidas estão em faixa vermelha. A primeira é PR · Londrina.",
+ "em_risco": 5,
+ "manchete": "5 de 10 unidades medidas estão em faixa vermelha. A primeira é PR · Londrina.",
  "criterio": [
   {
    "chave": "parada",
@@ -113,7 +113,7 @@
     "por_causa_de": "parada"
    },
    "ciclo": {
-    "alertado_em": "2026-08-09",
+    "alertado_em": "2026-08-10",
     "acao_confirmada": null,
     "confirmada_em": null,
     "resultado": null,
@@ -174,7 +174,7 @@
     "por_causa_de": "parada"
    },
    "ciclo": {
-    "alertado_em": "2026-08-09",
+    "alertado_em": "2026-08-10",
     "acao_confirmada": null,
     "confirmada_em": null,
     "resultado": null,
@@ -188,10 +188,10 @@
    "rotulo": "BA · Feira de Santana",
    "unidade": "OrthoDontic Feira de Santana",
    "unidade_curta": "Feira de Santana",
-   "idade_meses": 26,
+   "idade_meses": 62,
    "urgencia": 75,
    "faixa": "vermelha",
-   "ritmo": 3.2,
+   "ritmo": 2.8,
    "meses": 1,
    "nota": 4.7,
    "avaliacoes": 170,
@@ -209,14 +209,14 @@
      "peso": 30,
      "titulo": "O contador de avaliações parou",
      "chave": "parada",
-     "fato": "apenas 1 mês(es) seguidos com movimento acima do típico da própria unidade; o ritmo medido é 3.2 avaliações/mês",
+     "fato": "apenas 1 mês(es) seguidos com movimento acima do típico da própria unidade; o ritmo medido é 2.8 avaliações/mês",
      "fonte": "dados/serie/reviews.jsonl"
     },
     {
      "peso": 25,
      "titulo": "Um concorrente sustenta e corre mais",
      "chave": "rival",
-     "fato": "Clínica Central do Sorriso - Dentista Particular Feira de Santana sustenta há 12 meses a 38.9/mês, contra 3.2/mês desta unidade",
+     "fato": "Clínica Central do Sorriso - Dentista Particular Feira de Santana sustenta há 12 meses a 38.9/mês, contra 2.8/mês desta unidade",
      "fonte": "dados/serie/reviews.jsonl"
     },
     {
@@ -235,7 +235,7 @@
     "por_causa_de": "parada"
    },
    "ciclo": {
-    "alertado_em": "2026-08-09",
+    "alertado_em": "2026-08-10",
     "acao_confirmada": null,
     "confirmada_em": null,
     "resultado": null,
@@ -296,13 +296,74 @@
     "por_causa_de": "parada"
    },
    "ciclo": {
-    "alertado_em": "2026-08-09",
+    "alertado_em": "2026-08-10",
     "acao_confirmada": null,
     "confirmada_em": null,
     "resultado": null,
     "medido_em": null
    },
    "pos": 4
+  },
+  {
+   "local_id": "ortho_contagem",
+   "praca_id": "contagem",
+   "rotulo": "MG · Contagem",
+   "unidade": "OrthoDontic",
+   "unidade_curta": null,
+   "idade_meses": 81,
+   "urgencia": 60,
+   "faixa": "vermelha",
+   "ritmo": 10.6,
+   "meses": 23,
+   "nota": 4.6,
+   "avaliacoes": 856,
+   "posicao": 10,
+   "de": 15,
+   "quem_avanca": {
+    "nome": "Odonto Prime São Caetano",
+    "ritmo": 23.6,
+    "meses": 21,
+    "nota": 4.9,
+    "posicao": 6
+   },
+   "gatilhos": [
+    {
+     "peso": 25,
+     "titulo": "Um concorrente sustenta e corre mais",
+     "chave": "rival",
+     "fato": "Odonto Prime São Caetano sustenta há 21 meses a 23.6/mês, contra 10.6/mês desta unidade",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "peso": 20,
+     "titulo": "Está na metade de baixo da própria praça",
+     "chave": "posicao",
+     "fato": "10º lugar de 15 clínicas medidas na praça",
+     "fonte": "dados/portal/rede_cruzamento.json"
+    },
+    {
+     "peso": 15,
+     "titulo": "Nota abaixo da mediana da praça",
+     "chave": "nota",
+     "fato": "nota 4.6 contra mediana 4.9 das 15 clínicas medidas na praça",
+     "fonte": "dados/serie/places.jsonl"
+    }
+   ],
+   "acao": {
+    "o_que": "Levar a comparação impressa com Odonto Prime São Caetano para a visita e combinar a resposta",
+    "prazo": "próxima visita",
+    "dono": "consultor de campo",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "rival"
+   },
+   "ciclo": {
+    "alertado_em": "2026-08-10",
+    "acao_confirmada": null,
+    "confirmada_em": null,
+    "resultado": null,
+    "medido_em": null
+   },
+   "pos": 5
   },
   {
    "local_id": "ortho_mafra",
@@ -344,54 +405,114 @@
     "por_causa_de": "parada"
    },
    "ciclo": {
-    "alertado_em": "2026-08-09",
-    "acao_confirmada": null,
-    "confirmada_em": null,
-    "resultado": null,
-    "medido_em": null
-   },
-   "pos": 5
-  },
-  {
-   "local_id": "ortho_contagem",
-   "praca_id": "contagem",
-   "rotulo": "MG · Contagem",
-   "unidade": "OrthoDontic",
-   "unidade_curta": null,
-   "idade_meses": 13,
-   "urgencia": 15,
-   "faixa": "verde",
-   "ritmo": 38.7,
-   "meses": 13,
-   "nota": 4.6,
-   "avaliacoes": 855,
-   "posicao": 4,
-   "de": 15,
-   "quem_avanca": null,
-   "gatilhos": [
-    {
-     "peso": 15,
-     "titulo": "Nota abaixo da mediana da praça",
-     "chave": "nota",
-     "fato": "nota 4.6 contra mediana 4.9 das 15 clínicas medidas na praça",
-     "fonte": "dados/serie/places.jsonl"
-    }
-   ],
-   "acao": {
-    "o_que": "Ler as avaliações negativas do trimestre com o franqueado e responder todas",
-    "prazo": "10 dias",
-    "dono": "consultor de campo",
-    "custo": "sem custo de mídia",
-    "por_causa_de": "nota"
-   },
-   "ciclo": {
-    "alertado_em": "2026-08-09",
+    "alertado_em": "2026-08-10",
     "acao_confirmada": null,
     "confirmada_em": null,
     "resultado": null,
     "medido_em": null
    },
    "pos": 6
+  },
+  {
+   "local_id": "ortho_palmas",
+   "praca_id": "palmas",
+   "rotulo": "TO · Palmas",
+   "unidade": "OrthoDontic",
+   "unidade_curta": null,
+   "idade_meses": 39,
+   "urgencia": 40,
+   "faixa": "amarela",
+   "ritmo": 7.8,
+   "meses": 15,
+   "nota": 5,
+   "avaliacoes": 305,
+   "posicao": 4,
+   "de": 14,
+   "quem_avanca": {
+    "nome": "Clínica Goen Odontologia | Implante Dentário e Dentista em Palmas",
+    "ritmo": 9.8,
+    "meses": 11,
+    "nota": 4.9,
+    "posicao": 3
+   },
+   "gatilhos": [
+    {
+     "peso": 25,
+     "titulo": "Um concorrente sustenta e corre mais",
+     "chave": "rival",
+     "fato": "Clínica Goen Odontologia | Implante Dentário e Dentista em Palmas sustenta há 11 meses a 9.8/mês, contra 7.8/mês desta unidade",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "peso": 15,
+     "titulo": "Silêncio publicitário com leilão cheio",
+     "chave": "silencio",
+     "fato": "22 anúncios no ar de 16 anunciantes, e nenhum é da rede",
+     "fonte": "dados/serie/captacao.jsonl"
+    }
+   ],
+   "acao": {
+    "o_que": "Levar a comparação impressa com Clínica Goen Odontologia | Implante Dentário e Dentista em Palmas para a visita e combinar a resposta",
+    "prazo": "próxima visita",
+    "dono": "consultor de campo",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "rival"
+   },
+   "ciclo": {
+    "alertado_em": "2026-08-10",
+    "acao_confirmada": null,
+    "confirmada_em": null,
+    "resultado": null,
+    "medido_em": null
+   },
+   "pos": 7
+  },
+  {
+   "local_id": "ortho_pp",
+   "praca_id": "prudente",
+   "rotulo": "SP · Presidente Prudente",
+   "unidade": "OrthoDontic Presidente Prudente",
+   "unidade_curta": "Presidente Prudente",
+   "idade_meses": 167,
+   "urgencia": 25,
+   "faixa": "verde",
+   "ritmo": 3.6,
+   "meses": 13,
+   "nota": 4.9,
+   "avaliacoes": 592,
+   "posicao": 8,
+   "de": 25,
+   "quem_avanca": {
+    "nome": "CROP - Radiologia Odontológica Presidente Prudente",
+    "ritmo": 5.5,
+    "meses": 19,
+    "nota": 4.9,
+    "posicao": 6
+   },
+   "gatilhos": [
+    {
+     "peso": 25,
+     "titulo": "Um concorrente sustenta e corre mais",
+     "chave": "rival",
+     "fato": "CROP - Radiologia Odontológica Presidente Prudente sustenta há 19 meses a 5.5/mês, contra 3.6/mês desta unidade",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "acao": {
+    "o_que": "Levar a comparação impressa com CROP - Radiologia Odontológica Presidente Prudente para a visita e combinar a resposta",
+    "prazo": "próxima visita",
+    "dono": "consultor de campo",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "rival"
+   },
+   "ciclo": {
+    "alertado_em": "2026-08-10",
+    "acao_confirmada": null,
+    "confirmada_em": null,
+    "resultado": null,
+    "medido_em": null
+   },
+   "pos": 8
   },
   {
    "local_id": "ortho_souza_naves",
@@ -426,75 +547,7 @@
     "por_causa_de": "nota"
    },
    "ciclo": {
-    "alertado_em": "2026-08-09",
-    "acao_confirmada": null,
-    "confirmada_em": null,
-    "resultado": null,
-    "medido_em": null
-   },
-   "pos": 7
-  },
-  {
-   "local_id": "ortho_palmas",
-   "praca_id": "palmas",
-   "rotulo": "TO · Palmas",
-   "unidade": "OrthoDontic",
-   "unidade_curta": null,
-   "idade_meses": 11,
-   "urgencia": 15,
-   "faixa": "verde",
-   "ritmo": 14.0,
-   "meses": 11,
-   "nota": 5,
-   "avaliacoes": 304,
-   "posicao": 3,
-   "de": 14,
-   "quem_avanca": null,
-   "gatilhos": [
-    {
-     "peso": 15,
-     "titulo": "Silêncio publicitário com leilão cheio",
-     "chave": "silencio",
-     "fato": "22 anúncios no ar de 16 anunciantes, e nenhum é da rede",
-     "fonte": "dados/serie/captacao.jsonl"
-    }
-   ],
-   "acao": {
-    "o_que": "Entrar no leilão com as frases que a cidade digita — a lista está na praça",
-    "prazo": "30 dias",
-    "dono": "franqueado",
-    "custo": "verba de mídia",
-    "por_causa_de": "silencio"
-   },
-   "ciclo": {
-    "alertado_em": "2026-08-09",
-    "acao_confirmada": null,
-    "confirmada_em": null,
-    "resultado": null,
-    "medido_em": null
-   },
-   "pos": 8
-  },
-  {
-   "local_id": "ortho_cba_centro_norte",
-   "praca_id": "cuiaba",
-   "rotulo": "MT · Cuiabá + MT · Várzea Grande",
-   "unidade": "OrthoDontic Cuiabá Centro Norte",
-   "unidade_curta": "Cuiabá Centro Norte",
-   "idade_meses": 13,
-   "urgencia": 0,
-   "faixa": "verde",
-   "ritmo": 46.4,
-   "meses": 13,
-   "nota": 5,
-   "avaliacoes": 1222,
-   "posicao": 2,
-   "de": 29,
-   "quem_avanca": null,
-   "gatilhos": [],
-   "acao": null,
-   "ciclo": {
-    "alertado_em": "2026-08-09",
+    "alertado_em": "2026-08-10",
     "acao_confirmada": null,
     "confirmada_em": null,
     "resultado": null,
@@ -503,25 +556,25 @@
    "pos": 9
   },
   {
-   "local_id": "ortho_pp",
-   "praca_id": "prudente",
-   "rotulo": "SP · Presidente Prudente",
-   "unidade": "OrthoDontic Presidente Prudente",
-   "unidade_curta": "Presidente Prudente",
-   "idade_meses": 4,
+   "local_id": "ortho_cba_centro_norte",
+   "praca_id": "cuiaba",
+   "rotulo": "MT · Cuiabá + MT · Várzea Grande",
+   "unidade": "OrthoDontic Cuiabá Centro Norte",
+   "unidade_curta": "Cuiabá Centro Norte",
+   "idade_meses": 25,
    "urgencia": 0,
    "faixa": "verde",
-   "ritmo": 18.1,
-   "meses": 5,
-   "nota": 4.9,
-   "avaliacoes": 592,
+   "ritmo": 48.1,
+   "meses": 26,
+   "nota": 5,
+   "avaliacoes": 1222,
    "posicao": 2,
-   "de": 25,
+   "de": 29,
    "quem_avanca": null,
    "gatilhos": [],
    "acao": null,
    "ciclo": {
-    "alertado_em": "2026-08-09",
+    "alertado_em": "2026-08-10",
     "acao_confirmada": null,
     "confirmada_em": null,
     "resultado": null,
