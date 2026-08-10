@@ -175,13 +175,38 @@ def roda(alvo, max_reviews, tok):
     return _roda_uma(alvo, max_reviews, tok)
 
 
+def roda_async(corpo, tok, espera=1800):
+    """Dispara o run e busca o resultado em chamadas CURTAS, para o proxy não cortar.
+
+    O run-sync-get-dataset-items segura a conexão aberta pelo tempo inteiro do
+    actor — minutos — e o proxy derruba com RemoteDisconnected. Prudente caiu
+    DUAS vezes assim, com 600 e com 300 avaliações. Aqui são três chamadas
+    pequenas: inicia, consulta o status a cada 15 s, baixa o dataset no fim."""
+    import time as _t
+    d = post(f"{API}/acts/{ACTOR}/runs?token={tok}&memory=4096", corpo, tok,
+             timeout=120)
+    run = (d.get("data") or {})
+    rid, did = run.get("id"), run.get("defaultDatasetId")
+    if not rid:
+        return d
+    gasto = 0
+    while gasto < espera:
+        _t.sleep(15); gasto += 15
+        st = get(f"{API}/actor-runs/{rid}?token={tok}", tok, timeout=60)
+        status = (st.get("data") or {}).get("status")
+        if status in ("SUCCEEDED", "FAILED", "ABORTED", "TIMED-OUT"):
+            break
+    if status != "SUCCEEDED":
+        return {"error": f"run {status}"}
+    return get(f"{API}/datasets/{did}/items?token={tok}&clean=true", tok,
+               timeout=300)
+
+
 def _roda_uma(alvo, max_reviews, tok):
     """Roda o actor e espera. run-sync-get-dataset-items devolve os itens direto.
 
     Por place_id quando existe (exato), por nome só como retaguarda.
     """
-    url = (f"{API}/acts/{ACTOR}/run-sync-get-dataset-items"
-           f"?token={tok}&timeout=900&memory=2048")
     corpo = {"maxCrawledPlacesPerSearch": 1, "language": "pt-BR",
              "reviewsSort": "newest", "maxReviews": max_reviews,
              "scrapeReviewsPersonalData": False, "onlyDataFromSearchPage": False}
@@ -190,7 +215,7 @@ def _roda_uma(alvo, max_reviews, tok):
                                       + alvo["place_id"]}]
     else:
         corpo["searchStringsArray"] = [alvo["query"]]
-    return post(url, corpo, tok)
+    return roda_async(corpo, tok)
 
 
 def jsonl_le(p):
