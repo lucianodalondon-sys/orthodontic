@@ -168,7 +168,15 @@ def main():
             **{k: v for k, v in c.items() if k != "praca_id"},
             "placar": placar, "funil": funil, "temas": temas_p,
             "sazonalidade": saz,
-            "o_que_mudou": None,  # nasce na 2ª coleta — estado vazio é decisão de produto
+            # A 2ª coleta chegou: o movimento sai de o_que_mudou.json, gerado
+            # por scripts/o_que_mudou.py a partir da série de places. O build
+            # LÊ o payload em vez de esperar injeção externa — senão a ordem
+            # dos scripts importa e um rebuild apagava o bloco calado.
+            "o_que_mudou": (lambda m: (
+                {"dias_medidos": m["dias_medidos"], "aviso": m["aviso"],
+                 "nossas": m["nossas"], "quem_mais_ganhou": m["quem_mais_ganhou"],
+                 "contador_caiu": m["contador_caiu"]} if m else None))(
+                (carrega(OUT, "o_que_mudou").get("pracas") or {}).get(p)),
         })
         escritos.append(f"pracas/{p}")
 
@@ -459,6 +467,16 @@ def main():
                     )(json.loads((OUT/"voz_da_cidade.json").read_text(encoding="utf-8"))
                       if (OUT/"voz_da_cidade.json").exists() else {}),
                    andar="consultar"),
+        ferramenta("mudou", "O que mudou",
+                   "o movimento desde a última medição, ficha a ficha",
+                   "mudou", (OUT/"o_que_mudou.json").exists(),
+                   (lambda m: (lambda ps: f"{len(ps)} praças medidas · "
+                    f"{sum(len(d.get('contador_caiu', [])) for d in ps.values())} "
+                    f"contador(es) caíram · períodos ainda curtos, engordam a "
+                    f"cada medição")(m.get("pracas", {})))(
+                       json.loads((OUT/"o_que_mudou.json").read_text(encoding="utf-8"))
+                       if (OUT/"o_que_mudou.json").exists() else {}),
+                   andar="agora"),
         ferramenta("padroes", "Os padrões da rede",
                    "o que as dez lojas ensinam lidas juntas — e o que o dado derrubou",
                    "padroes", (OUT/"padroes.json").exists(),
@@ -645,7 +663,7 @@ def main():
                    for p in PRACAS],
         # o índice de verdade: o que existe, agora, nesta pasta
         "arquivos": {
-            "rede": [x for x in ("fila", "caixa_de_respostas", "padroes", "rede_inteira", "rival", "voz_da_cidade", "rede", "rede_cruzamento", "achados",
+            "rede": [x for x in ("fila", "caixa_de_respostas", "padroes", "o_que_mudou", "rede_inteira", "rival", "voz_da_cidade", "rede", "rede_cruzamento", "achados",
                                  "corretor", "evidencias", "radar")
                      if (OUT/f"{x}.json").exists()],
             "pracas": presentes("pracas"),

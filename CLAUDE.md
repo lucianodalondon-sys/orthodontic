@@ -65,6 +65,22 @@ script cobra. Quando os dois divergirem, o script é a verdade.
   de aparecer na tela declarado como teto (`scripts/pontos_cegos.py`).
   Nunca escreva ferramenta que espere alguém de dentro preencher.
 
+## O ciclo — a coleta que se repete
+
+A ponta barata roda **toda semana** e é o que alimenta "O que mudou":
+
+```bash
+python3 coleta/coletores/ponta.py --salvar        # 229 fichas, API do Google
+python3 scripts/o_que_mudou.py --salvar
+python3 scripts/build_portal.py
+```
+
+A varredura profunda (texto das avaliações, Apify) roda **por mês** e só nas
+lojas onde a ponta acusou movimento — o contador barato decide onde gastar o
+caro. Depois dela: classificar → cruzamento → fila → reteste → rival →
+padrões → caixa → padrao → build. Períodos curtos são declarados na tela
+("o delta ainda diz pouco"); o aviso morre sozinho quando o ciclo engorda.
+
 ## Onde as coisas moram
 
 | pasta | o que é |

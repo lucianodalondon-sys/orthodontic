@@ -174,7 +174,7 @@
       "tipo": "clínica grande sem marca nacional",
       "proprio": false,
       "nota": 5,
-      "avaliacoes": 368,
+      "avaliacoes": 367,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -289,21 +289,21 @@
       "anuncios_ativos": null
     },
     {
-      "local_id": "implantcenter_clinica_odon",
-      "nome": "ImplantCenter | Clínica Odontológica e Invisalign",
-      "tipo": "clínica de implante",
-      "proprio": false,
-      "nota": 5,
-      "avaliacoes": 132,
-      "reviews_novos_mes": null,
-      "anuncios_ativos": null
-    },
-    {
       "local_id": "inovar_rad_odonto",
       "nome": "Inovar - Rad Odonto",
       "tipo": "radiologia odontológica",
       "proprio": false,
       "nota": 4.9,
+      "avaliacoes": 133,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "implantcenter_clinica_odon",
+      "nome": "ImplantCenter | Clínica Odontológica e Invisalign",
+      "tipo": "clínica de implante",
+      "proprio": false,
+      "nota": 5,
       "avaliacoes": 132,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
@@ -489,5 +489,82 @@
     }
   ],
   "sazonalidade": [],
-  "o_que_mudou": null
+  "o_que_mudou": {
+    "dias_medidos": 2,
+    "aviso": "período de só 2 dia(s) — o delta ainda diz pouco; a leitura engorda a cada medição",
+    "nossas": [
+      {
+        "local_id": "ortho_palmas",
+        "nome": "OrthoDontic",
+        "proprio": true,
+        "de": "2026-08-08",
+        "ate": "2026-08-10",
+        "dias": 2,
+        "antes": 304,
+        "agora": 305,
+        "delta": 1,
+        "nota_antes": 5,
+        "nota_agora": 5,
+        "ritmo_do_periodo": 15.2,
+        "eventos": [
+          "ganhou 1 avaliações em 2 dia(s)"
+        ]
+      }
+    ],
+    "quem_mais_ganhou": [
+      {
+        "local_id": "inovar_rad_odonto",
+        "nome": "Inovar - Rad Odonto",
+        "proprio": false,
+        "de": "2026-08-08",
+        "ate": "2026-08-10",
+        "dias": 2,
+        "antes": 132,
+        "agora": 133,
+        "delta": 1,
+        "nota_antes": 4.9,
+        "nota_agora": 4.9,
+        "ritmo_do_periodo": 15.2,
+        "eventos": [
+          "ganhou 1 avaliações em 2 dia(s)"
+        ]
+      },
+      {
+        "local_id": "ortho_palmas",
+        "nome": "OrthoDontic",
+        "proprio": true,
+        "de": "2026-08-08",
+        "ate": "2026-08-10",
+        "dias": 2,
+        "antes": 304,
+        "agora": 305,
+        "delta": 1,
+        "nota_antes": 5,
+        "nota_agora": 5,
+        "ritmo_do_periodo": 15.2,
+        "eventos": [
+          "ganhou 1 avaliações em 2 dia(s)"
+        ]
+      }
+    ],
+    "contador_caiu": [
+      {
+        "local_id": "centro_integrado_de_odonto",
+        "nome": "Centro Integrado de Odontologia - CIOT",
+        "proprio": false,
+        "de": "2026-08-08",
+        "ate": "2026-08-10",
+        "dias": 2,
+        "antes": 368,
+        "agora": 367,
+        "delta": -1,
+        "nota_antes": 5,
+        "nota_agora": 5,
+        "ritmo_do_periodo": 0.0,
+        "eventos": [
+          "o contador CAIU 1 — avaliação removida"
+        ]
+      }
+    ]
+  }
 }

@@ -234,12 +234,32 @@
   "placar_nota": "a OrthoDontic é a única clínica da praça especializada em ortodontia",
   "placar": [
     {
+      "local_id": "susin_odontologia_dentista",
+      "nome": "Susin Odontologia | Dentista Mafra | Lente de contato | Implante | Periodontia | Tratamento de canal",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": 441,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
       "local_id": "oc_mafra",
       "nome": "OdontoCompany Mafra",
       "tipo": "rede_popular",
       "proprio": false,
       "nota": 4.6,
       "avaliacoes": 339,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "clinica_viver_bem",
+      "nome": "Clínica Viver Bem",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": 246,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -260,6 +280,16 @@
       "proprio": false,
       "nota": 4.7,
       "avaliacoes": 188,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "uniduni_clinica_integrada",
+      "nome": "Uniduni - Clínica Integrada",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": 158,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -294,22 +324,12 @@
       "anuncios_ativos": null
     },
     {
-      "local_id": "susin_odontologia_dentista",
-      "nome": "Susin Odontologia | Dentista Mafra | Lente de contato | Implante | Periodontia | Tratamento de canal",
+      "local_id": "odontoimagem_rio_negro",
+      "nome": "Odontoimagem Rio Negro",
       "tipo": "PREENCHER",
       "proprio": false,
       "nota": 5,
-      "avaliacoes": null,
-      "reviews_novos_mes": null,
-      "anuncios_ativos": null
-    },
-    {
-      "local_id": "clinica_viver_bem",
-      "nome": "Clínica Viver Bem",
-      "tipo": "PREENCHER",
-      "proprio": false,
-      "nota": 5,
-      "avaliacoes": null,
+      "avaliacoes": 105,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -319,27 +339,7 @@
       "tipo": "PREENCHER",
       "proprio": false,
       "nota": 5,
-      "avaliacoes": null,
-      "reviews_novos_mes": null,
-      "anuncios_ativos": null
-    },
-    {
-      "local_id": "odontoimagem_rio_negro",
-      "nome": "Odontoimagem Rio Negro",
-      "tipo": "PREENCHER",
-      "proprio": false,
-      "nota": 5,
-      "avaliacoes": null,
-      "reviews_novos_mes": null,
-      "anuncios_ativos": null
-    },
-    {
-      "local_id": "uniduni_clinica_integrada",
-      "nome": "Uniduni - Clínica Integrada",
-      "tipo": "PREENCHER",
-      "proprio": false,
-      "nota": 5,
-      "avaliacoes": null,
+      "avaliacoes": 93,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -349,7 +349,7 @@
       "tipo": "PREENCHER",
       "proprio": false,
       "nota": 4.7,
-      "avaliacoes": null,
+      "avaliacoes": 69,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -359,7 +359,7 @@
       "tipo": "PREENCHER",
       "proprio": false,
       "nota": 5,
-      "avaliacoes": null,
+      "avaliacoes": 54,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -369,7 +369,7 @@
       "tipo": "PREENCHER",
       "proprio": false,
       "nota": 4.9,
-      "avaliacoes": null,
+      "avaliacoes": 52,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -379,7 +379,7 @@
       "tipo": "PREENCHER",
       "proprio": false,
       "nota": 5,
-      "avaliacoes": null,
+      "avaliacoes": 43,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     }
@@ -653,5 +653,45 @@
       "vale": true
     }
   ],
-  "o_que_mudou": null
+  "o_que_mudou": {
+    "dias_medidos": 3,
+    "aviso": "período de só 3 dia(s) — o delta ainda diz pouco; a leitura engorda a cada medição",
+    "nossas": [
+      {
+        "local_id": "ortho_mafra",
+        "nome": "OrthoDontic Mafra",
+        "proprio": true,
+        "de": "2026-08-07",
+        "ate": "2026-08-10",
+        "dias": 3,
+        "antes": 155,
+        "agora": 155,
+        "delta": 0,
+        "nota_antes": 4.9,
+        "nota_agora": 4.9,
+        "ritmo_do_periodo": 0.0,
+        "eventos": []
+      }
+    ],
+    "quem_mais_ganhou": [],
+    "contador_caiu": [
+      {
+        "local_id": "uniduni_clinica_integrada",
+        "nome": "Uniduni - Clínica Integrada",
+        "proprio": false,
+        "de": "2026-08-08",
+        "ate": "2026-08-10",
+        "dias": 2,
+        "antes": 159,
+        "agora": 158,
+        "delta": -1,
+        "nota_antes": 5,
+        "nota_agora": 5,
+        "ritmo_do_periodo": 0.0,
+        "eventos": [
+          "o contador CAIU 1 — avaliação removida"
+        ]
+      }
+    ]
+  }
 }

@@ -194,7 +194,7 @@
       "tipo": "clínica odontológica (a classificar em visita)",
       "proprio": false,
       "nota": 4.4,
-      "avaliacoes": 3837,
+      "avaliacoes": 3836,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -204,7 +204,7 @@
       "tipo": "clínica odontológica (a classificar em visita)",
       "proprio": false,
       "nota": 4.8,
-      "avaliacoes": 1727,
+      "avaliacoes": 1729,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -529,5 +529,82 @@
     }
   ],
   "sazonalidade": [],
-  "o_que_mudou": null
+  "o_que_mudou": {
+    "dias_medidos": 2,
+    "aviso": "período de só 2 dia(s) — o delta ainda diz pouco; a leitura engorda a cada medição",
+    "nossas": [
+      {
+        "local_id": "ortho_contagem",
+        "nome": "OrthoDontic",
+        "proprio": true,
+        "de": "2026-08-08",
+        "ate": "2026-08-10",
+        "dias": 2,
+        "antes": 855,
+        "agora": 856,
+        "delta": 1,
+        "nota_antes": 4.6,
+        "nota_agora": 4.6,
+        "ritmo_do_periodo": 15.2,
+        "eventos": [
+          "ganhou 1 avaliações em 2 dia(s)"
+        ]
+      }
+    ],
+    "quem_mais_ganhou": [
+      {
+        "local_id": "odonto_art_dentista_24_hor",
+        "nome": "ODONTO ART DENTISTA 24 HORAS CONTAGEM",
+        "proprio": false,
+        "de": "2026-08-08",
+        "ate": "2026-08-10",
+        "dias": 2,
+        "antes": 1727,
+        "agora": 1729,
+        "delta": 2,
+        "nota_antes": 4.8,
+        "nota_agora": 4.8,
+        "ritmo_do_periodo": 30.4,
+        "eventos": [
+          "ganhou 2 avaliações em 2 dia(s)"
+        ]
+      },
+      {
+        "local_id": "ortho_contagem",
+        "nome": "OrthoDontic",
+        "proprio": true,
+        "de": "2026-08-08",
+        "ate": "2026-08-10",
+        "dias": 2,
+        "antes": 855,
+        "agora": 856,
+        "delta": 1,
+        "nota_antes": 4.6,
+        "nota_agora": 4.6,
+        "ritmo_do_periodo": 15.2,
+        "eventos": [
+          "ganhou 1 avaliações em 2 dia(s)"
+        ]
+      }
+    ],
+    "contador_caiu": [
+      {
+        "local_id": "vitae_center_clinica_medic",
+        "nome": "Vitae Center Clínica Médica e Odontológica",
+        "proprio": false,
+        "de": "2026-08-08",
+        "ate": "2026-08-10",
+        "dias": 2,
+        "antes": 3837,
+        "agora": 3836,
+        "delta": -1,
+        "nota_antes": 4.4,
+        "nota_agora": 4.4,
+        "ritmo_do_periodo": 0.0,
+        "eventos": [
+          "o contador CAIU 1 — avaliação removida"
+        ]
+      }
+    ]
+  }
 }
