@@ -1,0 +1,28 @@
+/* ============================================================
+   OrthoDontic — Gradients & Effects
+   The campaign world is built on blue gradients (cyan → navy),
+   with saturated accent gradients on CTAs. The concentric-ring
+   motif from the cover is provided as a repeatable pattern.
+   ============================================================ */
+:root {
+  /* Blue brand gradients */
+  --grad-cyan: linear-gradient(135deg, #2CCBFF 0%, #00B9FF 45%, #00A2E0 100%); /* @kind color */
+  --grad-hero: linear-gradient(160deg, #00B9FF 0%, #0072C6 55%, #001E78 100%); /* @kind color */
+  --grad-navy: linear-gradient(160deg, #16307F 0%, #001E78 60%, #001A5C 100%); /* @kind color */
+  --grad-sky: linear-gradient(180deg, #F3F7FC 0%, #DFEAF8 100%); /* @kind color */
+
+  /* Accent CTA gradients */
+  --grad-magenta: linear-gradient(135deg, #F368AB 0%, #E8408D 100%); /* @kind color */
+  --grad-yellow: linear-gradient(135deg, #FCE585 0%, #F8D65D 100%); /* @kind color */
+  --grad-teal: linear-gradient(135deg, #5FD0D6 0%, #46BBC2 100%); /* @kind color */
+
+  /* Glass surface (bubble callouts) */
+  --glass-fill: rgba(255, 255, 255, 0.72);   /* @kind color */
+  --glass-border: rgba(255, 255, 255, 0.65); /* @kind color */
+  --glass-blur: blur(14px);                  /* @kind other */
+
+  /* Concentric-ring brand motif — drop onto a cyan/navy block.
+     Solid outer ring + thin outline rings, echoing the symbol. */
+  --rings-white: radial-gradient(circle at 82% 12%, #ffffff 0 14%, transparent 14.4% 22%, #ffffff 22% 26%, transparent 26.4% 100%); /* @kind other */
+  --rings-soft: radial-gradient(circle at 82% 12%, rgba(255,255,255,0.16) 0 26%, transparent 26.4%); /* @kind other */
+}

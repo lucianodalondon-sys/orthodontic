@@ -1,0 +1,22 @@
+/* ============================================================
+   OrthoDontic — Elevation
+   Shadows are navy-tinted (never neutral gray) so elevation feels
+   part of the blue brand world. Cyan glow is reserved for primary
+   CTAs and active states.
+   ============================================================ */
+:root {
+  --shadow-xs: 0 1px 2px rgba(0, 30, 120, 0.06);
+  --shadow-sm: 0 2px 6px rgba(0, 30, 120, 0.08);
+  --shadow-md: 0 8px 22px rgba(0, 30, 120, 0.10);
+  --shadow-lg: 0 18px 44px rgba(0, 30, 120, 0.14);
+  --shadow-xl: 0 30px 70px rgba(0, 30, 120, 0.18);
+
+  /* Colored glows for CTAs / focus */
+  --shadow-cyan: 0 10px 26px rgba(0, 185, 255, 0.38);
+  --shadow-magenta: 0 10px 26px rgba(232, 64, 141, 0.34);
+  --shadow-yellow: 0 10px 26px rgba(248, 214, 93, 0.45);
+
+  /* Focus ring */
+  --ring: 0 0 0 3px rgba(0, 185, 255, 0.45);  /* @kind shadow */
+  --ring-inset: inset 0 0 0 2px var(--od-cyan); /* @kind shadow */
+}

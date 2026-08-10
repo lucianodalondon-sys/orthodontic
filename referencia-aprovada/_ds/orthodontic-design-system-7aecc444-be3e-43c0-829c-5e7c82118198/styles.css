@@ -1,0 +1,14 @@
+/* ============================================================
+   OrthoDontic Design System — global entry point
+   Consumers link THIS one file. It is an import list only.
+   Everything it reaches (tokens + @font-face) ships to consumers.
+   ============================================================ */
+@import "fonts.css";
+@import "tokens/colors.css";
+@import "tokens/typography.css";
+@import "tokens/spacing.css";
+@import "tokens/radii.css";
+@import "tokens/shadows.css";
+@import "tokens/motion.css";
+@import "tokens/gradients.css";
+@import "tokens/base.css";

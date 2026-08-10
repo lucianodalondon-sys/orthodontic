@@ -1,0 +1,50 @@
+/* ============================================================
+   OrthoDontic — Typography
+   Manual p.06: "Família Gotham — Light, Book, Bold e Black".
+   Licensed Gotham is shipped in fonts.css; Montserrat is a fallback only.
+   ============================================================ */
+:root {
+  /* Families */
+  --font-sans: "Gotham", "Montserrat", "Helvetica Neue", Arial, system-ui, sans-serif;
+  --font-display: "Gotham", "Montserrat", "Helvetica Neue", Arial, sans-serif; /* headlines */
+
+  /* Weights (map to Gotham: Light=300, Book=400, Bold=700, Black=900) */
+  --fw-light: 300;      /* @kind font */
+  --fw-book: 400;       /* @kind font */
+  --fw-medium: 500;     /* @kind font */
+  --fw-semibold: 600;   /* @kind font */
+  --fw-bold: 700;       /* @kind font */
+  --fw-extrabold: 800;  /* @kind font */
+  --fw-black: 900;      /* @kind font */
+
+  /* Type scale (px) — UI through campaign display */
+  --text-xs: 0.75rem;    /* 12 */
+  --text-sm: 0.875rem;   /* 14 */
+  --text-base: 1rem;     /* 16 */
+  --text-lg: 1.125rem;   /* 18 */
+  --text-xl: 1.25rem;    /* 20 */
+  --text-2xl: 1.5rem;    /* 24 */
+  --text-3xl: 1.875rem;  /* 30 */
+  --text-4xl: 2.375rem;  /* 38 */
+  --text-5xl: 3rem;      /* 48 */
+  --text-6xl: 4rem;      /* 64 */
+  --text-7xl: 5rem;      /* 80 — hero KV */
+
+  /* Line heights */
+  --leading-tight: 1.05;   /* display headlines @kind other */
+  --leading-snug: 1.2;     /* headings @kind other */
+  --leading-normal: 1.5;   /* body @kind other */
+  --leading-relaxed: 1.65; /* long-form @kind other */
+
+  /* Letter spacing */
+  --tracking-tight: -0.02em;  /* large display @kind other */
+  --tracking-normal: 0;       /* @kind other */
+  --tracking-wide: 0.06em;    /* buttons / labels @kind other */
+  --tracking-wider: 0.14em;   /* uppercase eyebrows @kind other */
+
+  /* Semantic roles */
+  --font-heading: var(--font-display);
+  --weight-heading: var(--fw-black);  /* @kind font */
+  --weight-body: var(--fw-book);      /* @kind font */
+  --weight-label: var(--fw-bold);     /* @kind font */
+}

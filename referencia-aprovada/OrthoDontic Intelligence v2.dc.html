@@ -1,0 +1,1839 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/orthodontic-design-system-7aecc444-be3e-43c0-829c-5e7c82118198/fonts.css">
+<link rel="stylesheet" href="_ds/orthodontic-design-system-7aecc444-be3e-43c0-829c-5e7c82118198/tokens/colors.css">
+<link rel="stylesheet" href="_ds/orthodontic-design-system-7aecc444-be3e-43c0-829c-5e7c82118198/tokens/typography.css">
+<link rel="stylesheet" href="_ds/orthodontic-design-system-7aecc444-be3e-43c0-829c-5e7c82118198/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/orthodontic-design-system-7aecc444-be3e-43c0-829c-5e7c82118198/tokens/radii.css">
+<link rel="stylesheet" href="_ds/orthodontic-design-system-7aecc444-be3e-43c0-829c-5e7c82118198/tokens/shadows.css">
+<link rel="stylesheet" href="_ds/orthodontic-design-system-7aecc444-be3e-43c0-829c-5e7c82118198/tokens/motion.css">
+<link rel="stylesheet" href="_ds/orthodontic-design-system-7aecc444-be3e-43c0-829c-5e7c82118198/tokens/gradients.css">
+<link rel="stylesheet" href="_ds/orthodontic-design-system-7aecc444-be3e-43c0-829c-5e7c82118198/tokens/base.css">
+<link rel="stylesheet" href="_ds/orthodontic-design-system-7aecc444-be3e-43c0-829c-5e7c82118198/styles.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js" integrity="sha384-Ukv1p/xTma6P4/2bY5KzWBw+ydSpXmhCMtyciIQVDJ1RmOxtCYNMF1uXT9T63H67" crossorigin="anonymous"></script>
+<script src="_ds/orthodontic-design-system-7aecc444-be3e-43c0-829c-5e7c82118198/_ds_bundle.js"></script>
+<style>
+  html, body { margin:0; padding:0; background:#000B24; }
+  body { -webkit-font-smoothing:antialiased; }
+  a { color:#00B9FF; text-decoration:none; }
+  a:hover { color:#7FDCFF; }
+  ::selection { background:rgba(0,185,255,.32); }
+  @keyframes odHalo { 0%{ transform:scale(.72); opacity:.9 } 70%{ transform:scale(1.5); opacity:0 } 100%{ transform:scale(1.5); opacity:0 } }
+  .od-map-halo { animation:odHalo 2.2s cubic-bezier(.2,.7,.3,1) 3; transform-origin:center; transform-box:fill-box; }
+  @keyframes odRise { from{ opacity:0; transform:translateY(14px) } to{ opacity:1; transform:none } }
+  @keyframes odIn { from{ opacity:0 } to{ opacity:1 } }
+  @keyframes odDotsIn { 0%,32%{ opacity:0 } 100%{ opacity:1 } }
+  @keyframes odLitIn { 0%,62%{ opacity:0 } 100%{ opacity:1 } }
+  @keyframes odCurveIn { 0%,60%{ opacity:0 } 100%{ opacity:1 } }
+  @keyframes odSlideIn { from{ transform:translateX(36px); opacity:0 } to{ transform:none; opacity:1 } }
+  @keyframes odFade { from{ opacity:0 } to{ opacity:1 } }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; } }
+</style>
+</helmet>
+
+<div style="--panel:#001A5C; --panel-2:#02205F; --hair:rgba(255,255,255,.10); --hair-lit:rgba(0,185,255,.28); --t1:#fff; --t2:rgba(255,255,255,.72); --t3:rgba(255,255,255,.48); --ok:#3ED6B8; --warn:#F8D65D; --bad:#F5A057; --crit:#FF5C5C; --mono:'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace; min-height:100vh; background:radial-gradient(130% 95% at 50% 0%, #16307F 0%, #001E78 26%, #001A5C 52%, #000B24 100%); color:var(--t1); font-family:var(--font-sans); font-weight:400; position:relative">
+
+  <div style="position:fixed; inset:0; z-index:1; pointer-events:none; opacity:.035; background-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E&quot;)"></div>
+  <div style="position:fixed; top:64px; bottom:0; left:240px; width:1px; z-index:2; pointer-events:none; background:rgba(255,255,255,.14)"></div>
+  <div style="position:fixed; top:64px; bottom:0; right:0; width:1px; z-index:2; pointer-events:none; background:rgba(255,255,255,.14)"></div>
+
+  <header style="position:fixed; top:0; left:0; right:0; height:64px; z-index:40; display:flex; align-items:center; gap:16px; padding:0 22px; background:rgba(0,26,92,.74); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-bottom:1px solid var(--hair)">
+    <div style="display:flex; align-items:center; gap:12px; flex:0 0 auto">
+      <x-import component-from-global-scope="OrthoDonticDesignSystem_7aecc4.Logo" variant="horizontal-white" height="{{ logoH }}" hint-size="128px,22px"></x-import>
+      <span style="width:1px; height:20px; background:rgba(255,255,255,.18)"></span>
+      <span style="font-family:var(--mono); font-size:11px; letter-spacing:.18em; color:var(--t2); text-transform:uppercase; white-space:nowrap">Intelligence</span>
+    </div>
+
+    <button type="button" onClick="{{ openSearch }}" style="flex:1 1 120px; min-width:44px; display:flex; align-items:center; gap:10px; height:36px; padding:0 12px; border-radius:999px; border:1px solid var(--hair); background:rgba(255,255,255,.05); color:var(--t3); font-family:var(--font-sans); font-size:13px; cursor:pointer; text-align:left" style-hover="border-color:var(--hair-lit); color:var(--t2)">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.6-3.6"></path></svg>
+      <span style="flex:1; white-space:nowrap; overflow:hidden; text-overflow:ellipsis">Buscar praça, sinal, achado…</span>
+      <span style="flex:0 0 auto; font-family:var(--mono); font-size:11px; padding:2px 6px; border-radius:5px; background:rgba(255,255,255,.08)">⌘K</span>
+    </button>
+
+    <div style="flex:0 0 auto; display:flex; align-items:center; gap:10px; padding:6px 14px; border-radius:999px; border:1px solid var(--hair-lit); background:rgba(0,185,255,.07); white-space:nowrap">
+      <span style="font-family:var(--mono); font-size:12px; color:#fff; letter-spacing:.02em">4 / 340</span>
+      <span style="font-size:12px; color:var(--t2)">praças ouvidas</span>
+      <span style="width:64px; height:4px; border-radius:2px; background:rgba(255,255,255,.14); overflow:hidden; display:block"><span style="display:block; width:1.2%; min-width:3px; height:100%; background:var(--od-cyan); box-shadow:0 0 8px rgba(0,185,255,.8)"></span></span>
+    </div>
+
+    <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+      <span style="flex:0 0 auto; white-space:nowrap; font-family:var(--mono); font-size:12px; color:var(--t3)">última coleta 07/ago/2026</span>
+    </sc-if>
+  </header>
+
+  <aside style="position:fixed; top:64px; bottom:0; left:0; width:240px; z-index:30; padding:20px 14px; background:rgba(0,11,36,.34); border-right:1px solid var(--hair); display:flex; flex-direction:column; gap:4px; overflow-y:auto">
+    <sc-for list="{{ nav }}" as="n" hint-placeholder-count="6">
+      <button type="button" onClick="{{ n.go }}" style="display:flex; align-items:center; gap:11px; width:100%; padding:11px 12px; border:0; border-radius:12px; background:{{ n.bg }}; color:{{ n.fg }}; font-family:var(--font-sans); font-size:13.5px; font-weight:{{ n.fw }}; text-align:left; cursor:pointer; transition:background .2s ease, color .2s ease" style-hover="background:rgba(255,255,255,.07)">
+        <span style="display:flex; width:18px; height:18px; flex:0 0 18px; color:{{ n.ic }}">
+          <x-import component-from-global-scope="OrthoDonticDesignSystem_7aecc4.Icon" name="{{ n.icon }}" size="{{ icSize }}" hint-size="18px,18px"></x-import>
+        </span>
+        <span style="flex:1">{{ n.label }}</span>
+        <sc-if value="{{ n.count }}" hint-placeholder-val="{{ false }}">
+          <span style="font-family:var(--mono); font-size:11px; color:var(--t3)">{{ n.count }}</span>
+        </sc-if>
+      </button>
+      <sc-if value="{{ n.children }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex; flex-direction:column; gap:2px; margin:2px 0 6px 30px; padding-left:12px; border-left:1px solid var(--hair)">
+          <sc-for list="{{ pracaNav }}" as="p" hint-placeholder-count="4">
+            <button type="button" onClick="{{ p.go }}" style="display:flex; align-items:center; gap:8px; padding:7px 10px; border:0; border-radius:9px; background:{{ p.bg }}; color:{{ p.fg }}; font-family:var(--font-sans); font-size:12.5px; font-weight:{{ p.fw }}; text-align:left; cursor:pointer" style-hover="background:rgba(255,255,255,.06)">
+              <span style="width:6px; height:6px; border-radius:50%; background:{{ p.dot }}; flex:0 0 6px"></span>
+              <span>{{ p.label }}</span>
+            </button>
+          </sc-for>
+        </div>
+      </sc-if>
+    </sc-for>
+
+    <div style="flex:1"></div>
+    <div style="padding:14px 12px; border-radius:14px; border:1px solid var(--hair); background:rgba(255,255,255,.03)">
+      <div style="font-family:var(--mono); font-size:10px; letter-spacing:.16em; color:var(--t3); text-transform:uppercase; margin-bottom:9px">Coletas</div>
+      <div style="display:flex; gap:6px">
+        <span style="flex:1; text-align:center; padding:6px 4px; border-radius:8px; background:rgba(255,255,255,.05); color:var(--t2); font-family:var(--mono); font-size:11px">15/jul</span>
+        <span style="flex:1; text-align:center; padding:6px 4px; border-radius:8px; background:rgba(0,185,255,.16); border:1px solid var(--hair-lit); color:#fff; font-family:var(--mono); font-size:11px">07/ago</span>
+      </div>
+      <div style="font-family:var(--mono); font-size:10.5px; color:var(--t3); margin-top:9px; line-height:1.4">23 dias entre as duas</div>
+    </div>
+  </aside>
+
+  <main style="position:relative; z-index:3; margin-left:240px; padding:64px 0 0 0; min-height:100vh">
+
+    <sc-if value="{{ isControl }}" hint-placeholder-val="{{ true }}">
+      <div style="padding:28px 34px 80px; display:flex; flex-direction:column; gap:26px">
+
+        <section style="position:relative; border-radius:16px; border:1px solid var(--hair); background:linear-gradient(168deg, rgba(22,48,127,.42) 0%, rgba(0,26,92,.30) 60%, rgba(0,11,36,.20) 100%); box-shadow:var(--shadow-lg); overflow:hidden; min-height:560px; display:flex; flex-direction:column">
+          <div style="position:absolute; inset:0; background:var(--rings-soft); opacity:.5; pointer-events:none"></div>
+          <span style="position:absolute; top:26px; right:30px; z-index:4; font-family:var(--mono); font-size:11px; font-weight:400; letter-spacing:.18em; color:var(--t3)">01</span>
+
+          <div style="{{ heroTextStyle }}">
+            <div style="font-family:var(--mono); font-size:10.5px; font-weight:400; letter-spacing:.24em; color:var(--od-cyan); text-transform:uppercase; margin-bottom:18px">Inteligência de rede</div>
+            <h1 style="margin:0; font-size:54px; line-height:.98; font-weight:900; letter-spacing:-.03em; color:#fff; text-transform:uppercase; text-wrap:balance">4 de 340 praças ouvidas</h1>
+            <p style="margin:20px 0 0; font-size:16px; line-height:1.6; color:var(--t2); text-wrap:pretty">Sabemos o que acontece dentro das clínicas. Estamos começando a saber o que acontece em volta delas.</p>
+            <div style="display:flex; align-items:center; gap:10px; margin-top:22px; flex-wrap:wrap">
+              <span style="width:9px; height:9px; border-radius:50%; background:var(--od-cyan); box-shadow:0 0 10px rgba(0,185,255,.9)"></span>
+              <span style="font-size:12.5px; color:var(--t2)">praça ouvida</span>
+              <span style="width:9px; height:9px; border-radius:50%; background:rgba(255,255,255,.16); margin-left:14px"></span>
+              <span style="font-size:12.5px; color:var(--t3)">praça sem inteligência</span>
+            </div>
+          </div>
+
+          <div style="{{ heroMapStyle }}">
+            <x-import component-from-global-scope="BrazilMap2" from="./brazil-map2.js" live="{{ mapCities }}" on-hover="{{ onMapHover }}" on-select="{{ onMapSelect }}" reduced="{{ reduced }}" hint-size="100%,100%"></x-import>
+
+            <sc-if value="{{ hover }}" hint-placeholder-val="{{ false }}">
+              <div style="{{ hoverStyle }}">
+                <div style="width:296px; padding:16px 18px; border-radius:16px; border:1px solid var(--hair-lit); background:rgba(2,32,95,.92); backdrop-filter:blur(14px); box-shadow:0 24px 60px rgba(0,8,32,.7); animation:odFade .14s ease-out">
+                  <div style="font-size:17px; font-weight:900; letter-spacing:-.01em; color:#fff">{{ hover.name }}</div>
+                  <div style="font-family:var(--mono); font-size:11px; color:var(--t3); margin-top:3px">{{ hover.uf }}</div>
+                  <div style="display:flex; gap:18px; margin-top:14px">
+                    <div><div style="font-size:22px; font-weight:900; color:#fff">{{ hover.nota }}</div><div style="font-size:10.5px; color:var(--t3); letter-spacing:.04em; text-transform:uppercase">nota</div></div>
+                    <div><div style="font-size:22px; font-weight:900; color:#fff">{{ hover.reviews }}</div><div style="font-size:10.5px; color:var(--t3); letter-spacing:.04em; text-transform:uppercase">avaliações</div></div>
+                    <div><div style="font-size:22px; font-weight:900; color:{{ hover.sigColor }}">{{ hover.sinais }}</div><div style="font-size:10.5px; color:var(--t3); letter-spacing:.04em; text-transform:uppercase">sinais</div></div>
+                  </div>
+                  <div style="margin-top:13px; padding-top:12px; border-top:1px solid var(--hair); font-size:12.5px; line-height:1.5; color:var(--t2)">{{ hover.tese }}</div>
+                </div>
+              </div>
+            </sc-if>
+          </div>
+        </section>
+
+        <section style="display:grid; grid-template-columns:repeat(auto-fit, minmax(210px, 1fr)); gap:18px">
+          <sc-for list="{{ heroStats }}" as="h" hint-placeholder-count="4">
+            <div style="padding:26px 26px 24px; border-radius:16px; border:1px solid var(--hair); background:linear-gradient(165deg, rgba(2,32,95,.72) 0%, rgba(0,26,92,.55) 100%); box-shadow:var(--shadow-lg); transition:border-color .2s ease" style-hover="border-color:var(--hair-lit)">
+              <div style="font-size:72px; line-height:.9; font-weight:900; letter-spacing:-.04em; color:{{ h.color }}">{{ h.value }}</div>
+              <div style="margin-top:14px; font-size:13.5px; line-height:1.45; color:var(--t2); max-width:200px; text-wrap:pretty">{{ h.label }}</div>
+            </div>
+          </sc-for>
+        </section>
+
+        <section style="display:flex; flex-direction:column; gap:18px">
+          <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:24px; flex-wrap:wrap">
+            <div>
+              <h2 style="margin:0; font-size:26px; font-weight:900; letter-spacing:-.01em; color:#fff">Fila de sinais</h2>
+              <p style="margin:6px 0 0; font-size:13.5px; color:var(--t3); text-wrap:pretty">Agrupados por tipo, ordenados por severidade. Cada sinal carrega o que fazer e de onde veio o número.</p>
+            </div>
+            <div style="display:flex; gap:16px; flex-wrap:wrap">
+              <div style="display:flex; gap:8px; flex-wrap:wrap">
+                <sc-for list="{{ sevFilters }}" as="f" hint-placeholder-count="4">
+                  <button type="button" onClick="{{ f.pick }}" style="display:flex; align-items:center; gap:8px; padding:8px 15px; border-radius:999px; border:1px solid {{ f.border }}; background:{{ f.bg }}; color:{{ f.fg }}; font-family:var(--font-sans); font-size:12.5px; font-weight:700; cursor:pointer; transition:all .2s ease">
+                    <span style="width:7px; height:7px; border-radius:50%; background:{{ f.dot }}; flex:0 0 7px"></span>
+                    <span>{{ f.label }}</span>
+                    <span style="font-family:var(--mono); font-size:11px; opacity:.7">{{ f.n }}</span>
+                  </button>
+                </sc-for>
+              </div>
+              <div style="display:flex; gap:4px; padding:4px; border-radius:999px; background:rgba(0,0,0,.28)">
+                <sc-for list="{{ scopeFilters }}" as="f" hint-placeholder-count="3">
+                  <button type="button" onClick="{{ f.pick }}" style="padding:6px 14px; border-radius:999px; border:0; background:{{ f.bg }}; color:{{ f.fg }}; font-family:var(--font-sans); font-size:12px; font-weight:700; cursor:pointer; transition:all .2s ease">{{ f.label }}</button>
+                </sc-for>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(430px, 1fr)); gap:18px">
+            <sc-for list="{{ signals }}" as="s" hint-placeholder-count="8">
+              <article style="position:relative; display:flex; flex-direction:column; border-radius:16px; border:1px solid var(--hair); background:linear-gradient(168deg, rgba(2,32,95,.78) 0%, rgba(0,26,92,.58) 100%); box-shadow:var(--shadow-lg); overflow:hidden; animation:odRise .42s cubic-bezier(.2,.7,.3,1) both; animation-delay:{{ s.delay }}; transition:border-color .2s ease" style-hover="border-color:var(--hair-lit)">
+                <span style="position:absolute; left:0; top:0; bottom:0; width:4px; background:{{ s.color }}"></span>
+                <div style="padding:22px 24px 18px 26px">
+                  <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px; flex-wrap:wrap">
+                    <span style="padding:4px 10px; border-radius:999px; background:{{ s.chipBg }}; color:{{ s.color }}; font-family:var(--mono); font-size:10.5px; font-weight:600; letter-spacing:.12em">{{ s.sev }}</span>
+                    <span style="font-family:var(--mono); font-size:11.5px; color:var(--t3); letter-spacing:.04em">{{ s.tipo }}</span>
+                    <span style="flex:1"></span>
+                    <span style="padding:4px 10px; border-radius:999px; border:1px solid var(--hair); font-family:var(--mono); font-size:10.5px; color:var(--t2)">{{ s.escopo }}</span>
+                  </div>
+                  <h3 style="margin:0 0 10px; font-size:21px; line-height:1.2; font-weight:900; letter-spacing:-.01em; color:#fff; text-wrap:balance">{{ s.title }}</h3>
+                  <p style="margin:0; font-size:14px; line-height:1.6; color:var(--t2); text-wrap:pretty">{{ s.what }}</p>
+                </div>
+
+                <sc-if value="{{ s.metric }}" hint-placeholder-val="{{ false }}">
+                  <div style="margin:0 24px 0 26px; padding:14px 16px; border-radius:12px; background:rgba(0,0,0,.26); display:flex; align-items:center; gap:16px; flex-wrap:wrap">
+                    <span style="font-family:var(--mono); font-size:19px; font-weight:600; color:{{ s.color }}">{{ s.metric.value }}</span>
+                    <span style="flex:1 1 120px; min-width:100px; display:block; height:6px; border-radius:3px; background:rgba(255,255,255,.10); position:relative; overflow:hidden">
+                      <span style="position:absolute; left:0; top:0; bottom:0; width:{{ s.metric.pct }}; background:{{ s.color }}; border-radius:3px"></span>
+                      <sc-if value="{{ s.metric.mark }}" hint-placeholder-val="{{ false }}">
+                        <span style="position:absolute; top:-3px; bottom:-3px; left:{{ s.metric.mark }}; width:2px; background:rgba(255,255,255,.6)"></span>
+                      </sc-if>
+                    </span>
+                    <span style="font-family:var(--mono); font-size:11px; color:var(--t3)">{{ s.metric.label }}</span>
+                  </div>
+                </sc-if>
+
+                <sc-if value="{{ s.group }}" hint-placeholder-val="{{ false }}">
+                  <div style="margin:16px 24px 0 26px; border-top:1px solid var(--hair)">
+                    <button type="button" onClick="{{ s.toggle }}" style="display:flex; align-items:center; gap:9px; width:100%; padding:14px 0 12px; border:0; background:transparent; color:var(--od-cyan); font-family:var(--font-sans); font-size:12.5px; font-weight:700; cursor:pointer; text-align:left">
+                      <span style="flex:1">{{ s.groupLabel }}</span>
+                      <span style="font-family:var(--mono); font-size:15px; line-height:1">{{ s.groupSign }}</span>
+                    </button>
+                    <sc-if value="{{ s.open }}" hint-placeholder-val="{{ false }}">
+                      <div style="display:flex; flex-direction:column; gap:8px; padding-bottom:14px; animation:odFade .2s ease-out">
+                        <sc-for list="{{ s.group }}" as="g" hint-placeholder-count="5">
+                          <div style="display:flex; align-items:center; gap:14px; padding:10px 13px; border-radius:10px; background:rgba(0,0,0,.24)">
+                            <span style="flex:1; font-size:13px; color:var(--t1)">{{ g.name }}</span>
+                            <span style="flex:0 0 auto; font-family:var(--mono); font-size:13px; font-weight:600; color:{{ g.color }}">{{ g.value }}</span>
+                          </div>
+                        </sc-for>
+                      </div>
+                    </sc-if>
+                  </div>
+                </sc-if>
+
+                <div style="margin:16px 24px 0 26px; padding-top:16px; border-top:1px solid var(--hair)">
+                  <div style="font-family:var(--mono); font-size:10px; letter-spacing:.18em; color:var(--od-cyan); text-transform:uppercase; margin-bottom:7px">O que fazer</div>
+                  <p style="margin:0; font-size:13.5px; line-height:1.55; color:var(--t1); text-wrap:pretty">{{ s.todo }}</p>
+                </div>
+
+                <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; padding:16px 24px 20px 26px; flex-wrap:wrap">
+                  <span style="font-family:var(--mono); font-size:11px; color:var(--t3)">{{ s.window }}</span>
+                  <x-import component-from-global-scope="OrthoDonticDesignSystem_7aecc4.Button" variant="ghost" size="sm" on-click="{{ s.openEv }}" hint-size="142px,38px">Ver evidência</x-import>
+                </div>
+              </article>
+            </sc-for>
+          </div>
+        </section>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isPraca }}" hint-placeholder-val="{{ false }}">
+      <div style="padding:28px 34px 80px; display:flex; flex-direction:column; gap:26px">
+
+        <section style="position:relative; border-radius:16px; border:1px solid var(--hair); background:linear-gradient(150deg, rgba(22,48,127,.40) 0%, rgba(0,26,92,.34) 62%); box-shadow:var(--shadow-lg); overflow:hidden; padding:30px 34px 34px">
+          <div style="position:absolute; inset:0; background:var(--rings-soft); opacity:.36; pointer-events:none"></div>
+          <span style="position:absolute; top:26px; right:30px; font-family:var(--mono); font-size:11px; letter-spacing:.18em; color:var(--t3)">02</span>
+
+          <div style="position:relative; display:flex; gap:14px; margin-bottom:26px; flex-wrap:wrap">
+            <sc-for list="{{ pracaTabs }}" as="t" hint-placeholder-count="4">
+              <button type="button" onClick="{{ t.go }}" style="padding:9px 18px; border-radius:999px; border:1px solid {{ t.border }}; background:{{ t.bg }}; color:{{ t.fg }}; font-family:var(--font-sans); font-size:13px; font-weight:700; cursor:pointer; transition:all .2s ease">{{ t.label }}</button>
+            </sc-for>
+          </div>
+
+          <div style="position:relative; display:flex; gap:40px; align-items:flex-start; flex-wrap:wrap">
+            <div style="flex:1 1 440px; min-width:340px">
+              <h1 style="margin:0; font-size:56px; line-height:.98; font-weight:900; letter-spacing:-.03em; color:#fff; text-wrap:balance">{{ p.name }}</h1>
+              <div style="font-family:var(--mono); font-size:13px; color:var(--od-cyan); margin-top:12px; letter-spacing:.04em">{{ p.sub }}</div>
+              <p style="margin:24px 0 0; font-size:26px; line-height:1.28; font-weight:900; letter-spacing:-.015em; color:#fff; max-width:640px; text-wrap:balance">“{{ p.tese }}”</p>
+              <p style="margin:16px 0 0; font-size:14.5px; line-height:1.65; color:var(--t2); max-width:620px; text-wrap:pretty">{{ p.lead }}</p>
+
+              <div style="display:flex; align-items:center; gap:10px; margin-top:24px; flex-wrap:wrap">
+                <span style="font-family:var(--mono); font-size:10.5px; letter-spacing:.16em; color:var(--t3); text-transform:uppercase">Período</span>
+                <div style="display:flex; gap:4px; padding:4px; border-radius:999px; background:rgba(0,0,0,.30)">
+                  <sc-for list="{{ snapTabs }}" as="s" hint-placeholder-count="3">
+                    <button type="button" onClick="{{ s.pick }}" style="padding:7px 15px; border-radius:999px; border:0; background:{{ s.bg }}; color:{{ s.fg }}; font-family:var(--mono); font-size:11.5px; font-weight:500; cursor:pointer; transition:all .2s ease">{{ s.label }}</button>
+                  </sc-for>
+                </div>
+              </div>
+
+              <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:20px">
+                <sc-for list="{{ p.ponteiros }}" as="pt" hint-placeholder-count="5">
+                  <span style="display:inline-flex; align-items:center; gap:8px; padding:7px 13px; border-radius:999px; border:1px solid var(--hair); background:rgba(0,0,0,.22); font-family:var(--mono); font-size:11.5px; color:var(--t2)">
+                    <span style="color:var(--t3)">{{ pt.k }}</span>
+                    <span style="color:{{ pt.color }}; font-weight:600">{{ pt.v }}</span>
+                    <sc-if value="{{ pt.delta }}" hint-placeholder-val="{{ false }}">
+                      <span style="color:{{ pt.deltaColor }}">{{ pt.delta }}</span>
+                    </sc-if>
+                  </span>
+                </sc-for>
+              </div>
+              <div style="font-family:var(--mono); font-size:11px; color:var(--t3); margin-top:18px">{{ p.base }}</div>
+            </div>
+
+            <div style="flex:0 1 auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(148px, 1fr)); gap:22px; min-width:320px">
+              <sc-for list="{{ gauges }}" as="g" hint-placeholder-count="4">
+                <div style="display:flex; flex-direction:column; align-items:center; gap:10px">
+                  <div style="position:relative; width:130px; height:130px">
+                    <svg width="130" height="130" viewBox="0 0 120 120" style="display:block; transform:rotate(-90deg)">
+                      <circle cx="60" cy="60" r="46" fill="none" stroke="rgba(255,255,255,.09)" stroke-width="9"></circle>
+                      <circle cx="60" cy="60" r="46" fill="none" stroke="{{ g.color }}" stroke-width="9" stroke-linecap="round" stroke-dasharray="{{ g.dash }}" style="transition:stroke-dasharray .8s cubic-bezier(.2,.7,.3,1)"></circle>
+                      <sc-if value="{{ g.hasTick }}" hint-placeholder-val="{{ false }}">
+                        <line x1="60" y1="7" x2="60" y2="21" stroke="rgba(255,255,255,.78)" stroke-width="2.5" stroke-linecap="round" transform="rotate({{ g.tick }} 60 60)"></line>
+                      </sc-if>
+                    </svg>
+                    <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:2px">
+                      <span style="font-size:26px; font-weight:900; letter-spacing:-.02em; color:#fff">{{ g.value }}</span>
+                      <sc-if value="{{ g.delta }}" hint-placeholder-val="{{ false }}">
+                        <span style="font-family:var(--mono); font-size:10px; color:{{ g.deltaColor }}">{{ g.delta }}</span>
+                      </sc-if>
+                    </div>
+                  </div>
+                  <span style="font-size:11.5px; font-weight:700; letter-spacing:.04em; color:var(--t2); text-align:center; text-transform:uppercase; text-wrap:balance">{{ g.label }}</span>
+                  <span style="font-family:var(--mono); font-size:10px; color:{{ g.refColor }}; text-align:center; text-wrap:pretty">{{ g.ref }}</span>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </section>
+
+        <sc-if value="{{ p.funnel }}" hint-placeholder-val="{{ false }}">
+          <section style="display:grid; grid-template-columns:repeat(auto-fit, minmax(430px, 1fr)); gap:20px; align-items:stretch">
+            <div style="padding:28px 30px 30px; border-radius:16px; border:1px solid var(--hair); background:linear-gradient(168deg, rgba(2,32,95,.72) 0%, rgba(0,26,92,.55) 100%); box-shadow:var(--shadow-lg)">
+              <div style="display:flex; align-items:baseline; justify-content:space-between; gap:16px; margin-bottom:26px; flex-wrap:wrap">
+                <h2 style="margin:0; font-size:24px; font-weight:900; letter-spacing:-.01em; color:#fff">O funil contra a régua</h2>
+                <span style="font-family:var(--mono); font-size:11px; color:var(--t3)">real · régua da rede</span>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:14px">
+                <sc-for list="{{ p.funnel }}" as="f" hint-placeholder-count="5">
+                  <div style="display:flex; align-items:center; gap:18px; flex-wrap:wrap; padding:{{ f.pad }}; border-radius:12px; background:{{ f.rowBg }}; border:1px solid {{ f.rowBorder }}">
+                    <div style="flex:1 1 150px; min-width:0">
+                      <div style="font-size:{{ f.nameSize }}; font-weight:700; color:#fff; letter-spacing:-.01em">{{ f.stage }}</div>
+                      <div style="font-family:var(--mono); font-size:11.5px; color:var(--t3); margin-top:3px">N {{ f.n }}</div>
+                    </div>
+                    <div style="flex:3 1 190px; min-width:150px; position:relative; height:{{ f.barH }}; border-radius:6px; background:rgba(255,255,255,.07)">
+                      <span style="position:absolute; left:0; top:0; bottom:0; width:{{ f.w }}; border-radius:6px; background:{{ f.color }}; transition:width .9s cubic-bezier(.2,.7,.3,1)"></span>
+                      <sc-if value="{{ f.hasRule }}" hint-placeholder-val="{{ false }}">
+                        <span style="position:absolute; top:-6px; bottom:-6px; left:{{ f.rule }}; width:2px; background:rgba(255,255,255,.7)"></span>
+                        <span style="position:absolute; top:-24px; left:{{ f.rule }}; transform:translateX(-50%); font-family:var(--mono); font-size:10px; color:rgba(255,255,255,.7); white-space:nowrap">régua {{ f.ruleLabel }}</span>
+                      </sc-if>
+                    </div>
+                    <div style="flex:0 0 auto; min-width:92px; text-align:right">
+                      <div style="font-family:var(--mono); font-size:{{ f.pctSize }}; font-weight:600; color:{{ f.color }}">{{ f.pct }}</div>
+                      <div style="font-size:10.5px; color:var(--t3); margin-top:2px">{{ f.verdict }}</div>
+                    </div>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+
+            <div style="display:flex; flex-direction:column; justify-content:space-between; gap:22px; padding:30px; border-radius:16px; border:1px solid var(--hair-lit); background:linear-gradient(168deg, rgba(0,185,255,.10) 0%, rgba(0,26,92,.55) 70%); box-shadow:var(--shadow-lg)">
+              <div>
+                <div style="font-family:var(--mono); font-size:10px; letter-spacing:.18em; color:var(--od-cyan); text-transform:uppercase; margin-bottom:16px">A leitura</div>
+                <p style="margin:0; font-size:34px; line-height:1.12; font-weight:900; letter-spacing:-.025em; color:#fff; text-wrap:balance">Quem chega, fecha. Quem chama, some.</p>
+                <p style="margin:20px 0 0; font-size:14px; line-height:1.6; color:var(--t2); text-wrap:pretty">Três dos quatro estágios batem ou superam a régua. O único quebrado é o primeiro — e é o mais barato de consertar.</p>
+                <p style="margin:16px 0 0; padding:14px 16px; border-radius:12px; border:1px solid rgba(248,214,93,.34); background:rgba(248,214,93,.07); font-size:13px; line-height:1.55; color:var(--t1); text-wrap:pretty">As contas não fecham: 109 pagos contra ~336 contratos/ano na mesma unidade. O multiplicador projetado não é publicado.</p>
+              </div>
+              <x-import component-from-global-scope="OrthoDonticDesignSystem_7aecc4.Button" variant="primary" size="md" block="{{ yes }}" on-click="{{ openFunnelEv }}" hint-size="100%,48px">Ver evidência do agendamento</x-import>
+            </div>
+          </section>
+        </sc-if>
+
+        <section style="display:grid; grid-template-columns:repeat(auto-fit, minmax(430px, 1fr)); gap:20px; align-items:start">
+          <div style="padding:28px 30px 30px; border-radius:16px; border:1px solid var(--hair); background:linear-gradient(168deg, rgba(2,32,95,.72) 0%, rgba(0,26,92,.55) 100%); box-shadow:var(--shadow-lg)">
+            <h2 style="margin:0 0 6px; font-size:24px; font-weight:900; letter-spacing:-.01em; color:#fff">Ritmo de avaliações novas</h2>
+            <p style="margin:0 0 24px; font-size:13.5px; color:var(--t3)">avaliações novas por mês, na praça</p>
+            <div style="display:flex; flex-direction:column; gap:16px">
+              <sc-for list="{{ p.velocity }}" as="v" hint-placeholder-count="5">
+                <div style="display:flex; align-items:center; gap:16px; flex-wrap:wrap">
+                  <span style="flex:1 1 160px; min-width:0; font-size:14px; font-weight:{{ v.fw }}; color:{{ v.fg }}">{{ v.name }}</span>
+                  <span style="flex:2 1 140px; min-width:110px; position:relative; height:24px; border-radius:6px; background:rgba(255,255,255,.05); display:block">
+                    <span style="position:absolute; left:0; top:0; bottom:0; width:{{ v.w }}; border-radius:6px; background:{{ v.color }}; transition:width .9s cubic-bezier(.2,.7,.3,1)"></span>
+                  </span>
+                  <span style="flex:0 0 auto; min-width:78px; font-family:var(--mono); font-size:12.5px; color:{{ v.fg }}; text-align:right">{{ v.val }}</span>
+                </div>
+              </sc-for>
+            </div>
+            <p style="margin:22px 0 0; font-size:13px; line-height:1.6; color:var(--t3); text-wrap:pretty">{{ p.velocityNote }}</p>
+          </div>
+
+          <div style="padding:28px 30px 30px; border-radius:16px; border:1px solid var(--hair); background:linear-gradient(168deg, rgba(2,32,95,.72) 0%, rgba(0,26,92,.55) 100%); box-shadow:var(--shadow-lg)">
+            <div style="display:flex; align-items:baseline; justify-content:space-between; gap:14px; margin-bottom:22px; flex-wrap:wrap">
+              <h2 style="margin:0; font-size:24px; font-weight:900; letter-spacing:-.01em; color:#fff">O placar da praça</h2>
+              <span style="font-family:var(--mono); font-size:11px; color:var(--t3)">{{ p.placarCorte }}</span>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:10px">
+              <sc-for list="{{ p.placar }}" as="c" hint-placeholder-count="6">
+                <div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap; padding:14px 16px; border-radius:12px; background:{{ c.bg }}; border:1px solid {{ c.border }}">
+                  <span style="flex:0 0 auto; min-width:40px; font-family:var(--mono); font-size:18px; font-weight:600; color:{{ c.noteColor }}">{{ c.nota }}</span>
+                  <div style="flex:1 1 150px; min-width:0">
+                    <div style="font-size:14px; font-weight:{{ c.fw }}; color:{{ c.fg }}">{{ c.name }}</div>
+                    <div style="font-size:11.5px; color:var(--t3); margin-top:3px; text-wrap:pretty">{{ c.note }}</div>
+                  </div>
+                  <div style="flex:1 1 140px; min-width:120px; display:flex; align-items:center; gap:10px">
+                    <span style="flex:1; height:8px; border-radius:4px; background:rgba(255,255,255,.06); display:block; position:relative">
+                      <span style="position:absolute; left:0; top:0; bottom:0; width:{{ c.w }}; border-radius:4px; background:{{ c.barColor }}"></span>
+                    </span>
+                    <span style="flex:0 0 auto; min-width:40px; font-family:var(--mono); font-size:12px; color:var(--t2); text-align:right">{{ c.n }}</span>
+                    <sc-if value="{{ c.showDelta }}" hint-placeholder-val="{{ false }}">
+                      <span style="flex:0 0 auto; min-width:34px; font-family:var(--mono); font-size:12px; color:{{ c.deltaColor }}; text-align:right">{{ c.delta }}</span>
+                    </sc-if>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+            <sc-if value="{{ p.placarNote }}" hint-placeholder-val="{{ false }}">
+              <p style="margin:20px 0 0; font-size:13px; line-height:1.6; color:var(--t3); text-wrap:pretty">{{ p.placarNote }}</p>
+            </sc-if>
+          </div>
+        </section>
+
+        <section style="display:grid; grid-template-columns:repeat(auto-fit, minmax(400px, 1fr)); gap:20px; align-items:start">
+          <sc-if value="{{ p.season }}" hint-placeholder-val="{{ false }}">
+            <div style="padding:28px 30px 30px; border-radius:16px; border:1px solid var(--hair); background:linear-gradient(168deg, rgba(2,32,95,.72) 0%, rgba(0,26,92,.55) 100%); box-shadow:var(--shadow-lg)">
+              <h2 style="margin:0 0 6px; font-size:24px; font-weight:900; letter-spacing:-.01em; color:#fff">A temporada</h2>
+              <p style="margin:0 0 26px; font-size:13.5px; color:var(--t3)">índice de busca por aparelho · série de 5 anos</p>
+              <div style="display:flex; align-items:flex-end; gap:16px; padding-bottom:2px">
+                <sc-for list="{{ p.season }}" as="m" hint-placeholder-count="4">
+                  <div title="{{ m.tip }}" style="flex:1 1 0; min-width:0; display:flex; flex-direction:column; align-items:center; gap:10px">
+                    <span style="flex:0 0 auto; font-family:var(--mono); font-size:14px; font-weight:600; color:{{ m.color }}">{{ m.label }}</span>
+                    <span style="flex:0 0 auto; position:relative; display:block; width:100%; height:150px">
+                      <span style="position:absolute; left:0; right:0; bottom:0; height:{{ m.h }}; border-radius:8px 8px 3px 3px; background:{{ m.bg }}; border:{{ m.border }}; display:block; transition:height .9s cubic-bezier(.2,.7,.3,1)"></span>
+                    </span>
+                    <span style="flex:0 0 auto; font-size:11.5px; font-weight:700; letter-spacing:.08em; color:var(--t3)">{{ m.month }}</span>
+                  </div>
+                </sc-for>
+              </div>
+              <p style="margin:22px 0 0; font-size:13px; line-height:1.6; color:var(--t3); text-wrap:pretty">Dezembro e janeiro são vale aqui. A tese nacional não vale no planalto — e foi esta praça que a derrubou.</p>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ p.midia }}" hint-placeholder-val="{{ false }}">
+            <div style="padding:28px 30px 30px; border-radius:16px; border:1px solid var(--hair); background:linear-gradient(168deg, rgba(2,32,95,.72) 0%, rgba(0,26,92,.55) 100%); box-shadow:var(--shadow-lg)">
+              <h2 style="margin:0 0 6px; font-size:24px; font-weight:900; letter-spacing:-.01em; color:#fff">A mídia da unidade</h2>
+              <p style="margin:0 0 22px; font-size:13.5px; color:var(--t3)">os 3 anúncios que subiram desde 15/jul</p>
+              <div style="display:flex; flex-direction:column; gap:10px">
+                <sc-for list="{{ p.midia }}" as="a" hint-placeholder-count="3">
+                  <div style="padding:14px 16px; border-radius:12px; background:rgba(0,0,0,.24); border:1px solid var(--hair)">
+                    <div style="font-family:var(--mono); font-size:10px; letter-spacing:.14em; color:var(--t3); text-transform:uppercase; margin-bottom:7px">{{ a.k }}</div>
+                    <div style="font-size:13.5px; line-height:1.5; color:var(--t1); text-wrap:pretty">{{ a.v }}</div>
+                  </div>
+                </sc-for>
+              </div>
+              <div style="margin-top:20px; padding-top:18px; border-top:1px solid var(--hair)">
+                <div style="font-family:var(--mono); font-size:10px; letter-spacing:.18em; color:var(--crit); text-transform:uppercase; margin-bottom:9px">A leitura</div>
+                <p style="margin:0; font-size:13.5px; line-height:1.6; color:var(--t1); text-wrap:pretty">Nenhum tem rosto, nenhum tem parcela — o plano pedia os dois. E o terceiro fala com quem já é paciente. Enquanto isso, 22 dos 27 anúncios da Lumière são de acolhimento, o jeito de falar que o estudo recomendou para nós.</p>
+              </div>
+            </div>
+          </sc-if>
+        </section>
+
+        <section style="padding:32px 34px 34px; border-radius:16px; border:1px dashed rgba(255,255,255,.20); background:rgba(255,255,255,.025)">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:18px; flex-wrap:wrap">
+            <h2 style="margin:0; font-size:24px; font-weight:900; letter-spacing:-.01em; color:#fff">O que não estamos vendo aqui</h2>
+            <span style="padding:4px 11px; border-radius:999px; border:1px solid var(--hair); font-family:var(--mono); font-size:10.5px; color:var(--t2)">não medido</span>
+          </div>
+          <p style="margin:0 0 22px; font-size:14.5px; line-height:1.65; color:var(--t2); max-width:820px; text-wrap:pretty">A coleta só enxerga o que fica público na internet. Não vemos:</p>
+          <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(250px, 1fr)); gap:14px">
+            <sc-for list="{{ p.naoVemos }}" as="v" hint-placeholder-count="6">
+              <div style="padding:18px 20px; border-radius:12px; background:rgba(0,0,0,.22); border:1px solid var(--hair)">
+                <div style="font-size:14px; font-weight:700; color:#fff; margin-bottom:{{ v.gap }}">{{ v.k }}</div>
+                <sc-if value="{{ v.v }}" hint-placeholder-val="{{ false }}">
+                  <div style="font-size:12.5px; line-height:1.5; color:var(--t2); text-wrap:pretty">{{ v.v }}</div>
+                </sc-if>
+              </div>
+            </sc-for>
+          </div>
+          <div style="display:flex; gap:20px; margin-top:22px; flex-wrap:wrap; font-family:var(--mono); font-size:11.5px; color:var(--t3)">
+            <span>quem preenche: a unidade</span>
+            <span>status: não medido</span>
+          </div>
+          <p style="margin:22px 0 0; padding-top:20px; border-top:1px solid var(--hair); font-size:13.5px; line-height:1.65; color:var(--t2); max-width:820px; text-wrap:pretty">Moisés Suzart cresce ~39 avaliações/mês em Feira sem comprar busca e sem responder avaliação. Nas nossas fontes ele não faz nada que explique o crescimento. Isso não é paradoxo — é a medida do que não vemos.</p>
+        </section>
+
+        <section>
+          <h2 style="margin:0 0 18px; font-size:24px; font-weight:900; letter-spacing:-.01em; color:#fff">O DNA local</h2>
+          <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)); gap:18px">
+            <sc-for list="{{ p.dna }}" as="d" hint-placeholder-count="5">
+              <div style="padding:24px 26px 26px; border-radius:16px; border:1px solid {{ d.border }}; background:{{ d.bg }}; box-shadow:var(--shadow-lg)">
+                <div style="font-family:var(--mono); font-size:10px; letter-spacing:.18em; color:{{ d.accent }}; text-transform:uppercase; margin-bottom:12px">{{ d.k }}</div>
+                <p style="margin:0; font-size:14.5px; line-height:1.6; color:{{ d.fg }}; text-wrap:pretty">{{ d.v }}</p>
+              </div>
+            </sc-for>
+          </div>
+        </section>
+
+        <section style="padding:34px 38px 38px; border-radius:16px; border:1px solid var(--hair); background:linear-gradient(150deg, rgba(0,185,255,.07) 0%, rgba(0,26,92,.55) 60%); box-shadow:var(--shadow-lg)">
+          <div style="display:flex; align-items:center; justify-content:space-between; gap:20px; margin-bottom:26px; flex-wrap:wrap">
+            <h2 style="margin:0; font-size:24px; font-weight:900; letter-spacing:-.01em; color:#fff">Vozes reais</h2>
+            <div style="display:flex; gap:8px">
+              <button type="button" onClick="{{ prevVoice }}" style="display:flex; align-items:center; justify-content:center; width:38px; height:38px; border-radius:50%; border:1px solid var(--hair); background:transparent; color:var(--t2); cursor:pointer" style-hover="border-color:var(--hair-lit); color:#fff">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"></path></svg>
+              </button>
+              <button type="button" onClick="{{ nextVoice }}" style="display:flex; align-items:center; justify-content:center; width:38px; height:38px; border-radius:50%; border:1px solid var(--hair); background:transparent; color:var(--t2); cursor:pointer" style-hover="border-color:var(--hair-lit); color:#fff">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"></path></svg>
+              </button>
+            </div>
+          </div>
+          <blockquote style="margin:0; font-size:34px; line-height:1.26; font-weight:900; letter-spacing:-.02em; color:#fff; max-width:1020px; text-wrap:pretty">“{{ voice.q }}”</blockquote>
+          <div style="display:flex; align-items:center; gap:14px; margin-top:22px; flex-wrap:wrap">
+            <span style="font-family:var(--mono); font-size:12px; color:var(--od-cyan)">{{ voice.who }}</span>
+            <span style="flex:1; min-width:40px; height:1px; background:var(--hair); display:block"></span>
+            <span style="font-family:var(--mono); font-size:11.5px; color:var(--t3)">{{ voice.idx }}</span>
+          </div>
+        </section>
+
+        <sc-if value="{{ plan }}" hint-placeholder-val="{{ false }}">
+          <section>
+            <div style="margin-bottom:18px">
+              <h2 style="margin:0; font-size:24px; font-weight:900; letter-spacing:-.01em; color:#fff">O plano de 90 dias</h2>
+              <p style="margin:6px 0 0; font-size:13.5px; color:var(--t3); text-wrap:pretty">O que a 2ª coleta observou em cada ação. Arraste para repriorizar.</p>
+            </div>
+            <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(330px, 1fr)); gap:16px">
+              <sc-for list="{{ plan }}" as="a" hint-placeholder-count="7">
+                <div draggable="true" onDragStart="{{ a.dragStart }}" onDragOver="{{ a.dragOver }}" onDrop="{{ a.drop }}" style="display:flex; flex-direction:column; gap:14px; padding:20px 22px; border-radius:16px; border:1px solid {{ a.border }}; background:{{ a.bg }}; box-shadow:var(--shadow-md); cursor:grab; transition:border-color .2s ease, transform .2s ease" style-hover="border-color:var(--hair-lit); transform:translateY(-2px)">
+                  <div style="display:flex; align-items:center; gap:11px; flex-wrap:wrap">
+                    <span style="font-family:var(--mono); font-size:12px; color:var(--t3)">{{ a.num }}</span>
+                    <span style="flex:1"></span>
+                    <span style="padding:5px 11px; border-radius:999px; border:1px solid {{ a.stateBorder }}; background:{{ a.stateBg }}; color:{{ a.stateFg }}; font-family:var(--mono); font-size:10px; letter-spacing:.1em">{{ a.state }}</span>
+                  </div>
+                  <div style="font-size:16px; line-height:1.35; font-weight:700; color:#fff; letter-spacing:-.01em; text-wrap:pretty">{{ a.title }}</div>
+                  <sc-if value="{{ a.obs }}" hint-placeholder-val="{{ false }}">
+                    <div style="font-size:12.5px; line-height:1.5; color:var(--t2); text-wrap:pretty">{{ a.obs }}</div>
+                  </sc-if>
+                  <div style="display:flex; align-items:center; gap:14px; padding-top:12px; border-top:1px solid var(--hair); flex-wrap:wrap">
+                    <span style="font-family:var(--mono); font-size:11px; color:var(--t3)">{{ a.prazo }}</span>
+                    <span style="flex:1"></span>
+                    <span style="font-family:var(--mono); font-size:11px; color:{{ a.effColor }}">{{ a.eff }}</span>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+          </section>
+        </sc-if>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isUnheard }}" hint-placeholder-val="{{ false }}">
+      <div style="padding:28px 34px 80px; display:flex; flex-direction:column; gap:26px">
+
+        <section style="position:relative; padding:38px 40px 40px; border-radius:16px; border:1px solid var(--hair); background:linear-gradient(150deg, rgba(22,48,127,.40) 0%, rgba(0,26,92,.34) 62%); box-shadow:var(--shadow-lg); overflow:hidden">
+          <div style="position:absolute; inset:0; background:var(--rings-soft); opacity:.4; pointer-events:none"></div>
+          <span style="position:absolute; top:26px; right:30px; font-family:var(--mono); font-size:11px; letter-spacing:.18em; color:var(--t3)">03</span>
+          <div style="position:relative; display:flex; align-items:flex-end; gap:20px; flex-wrap:wrap">
+            <div style="font-size:92px; line-height:.86; font-weight:900; letter-spacing:-.05em; color:#fff">4</div>
+            <div style="font-size:34px; line-height:1; font-weight:900; letter-spacing:-.03em; color:var(--t3); padding-bottom:8px">/ 340 praças ouvidas</div>
+          </div>
+          <div style="position:relative; margin-top:26px; height:16px; border-radius:8px; background:rgba(255,255,255,.06); overflow:hidden">
+            <span style="position:absolute; left:0; top:0; bottom:0; width:1.2%; min-width:5px; background:var(--grad-cyan); border-radius:8px; box-shadow:0 0 16px rgba(0,185,255,.7)"></span>
+          </div>
+          <p style="position:relative; margin:26px 0 0; font-size:17px; line-height:1.6; color:var(--t2); max-width:780px; text-wrap:pretty">336 praças sem inteligência nenhuma. Não sabemos quantas repetem o vazamento de Riomafra, quantas estão em silêncio no pico, quantas têm uma vizinha de nove meses ao lado.</p>
+        </section>
+
+        <section>
+          <div style="margin-bottom:18px">
+            <h2 style="margin:0; font-size:24px; font-weight:900; letter-spacing:-.01em; color:#fff">Critério de próxima praça</h2>
+            <p style="margin:6px 0 0; font-size:13.5px; color:var(--t3)">o que a amostra atual ainda não cobre</p>
+          </div>
+          <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(190px, 1fr)); gap:14px">
+            <sc-for list="{{ coverage }}" as="c" hint-placeholder-count="7">
+              <div style="padding:22px 22px 20px; border-radius:14px; border:1px solid {{ c.border }}; background:{{ c.bg }}">
+                <div style="font-size:42px; line-height:.9; font-weight:900; letter-spacing:-.03em; color:{{ c.color }}">{{ c.n }}</div>
+                <div style="margin-top:12px; font-size:13px; font-weight:700; color:var(--t1)">{{ c.k }}</div>
+                <div style="margin-top:5px; font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; color:{{ c.color }}; text-transform:uppercase">{{ c.tag }}</div>
+              </div>
+            </sc-for>
+          </div>
+          <p style="margin:22px 0 0; font-size:14px; line-height:1.65; color:var(--t2); max-width:820px; text-wrap:pretty">A amostra atual não cobre Norte, Centro-Oeste, capital nem unidade recém-aberta. É por isso que nenhum achado pode virar regra ainda.</p>
+        </section>
+
+        <section style="padding:26px 28px 28px; border-radius:16px; border:1px solid var(--hair); background:linear-gradient(168deg, rgba(2,32,95,.72) 0%, rgba(0,26,92,.55) 100%); box-shadow:var(--shadow-lg)">
+          <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:20px; margin-bottom:20px; flex-wrap:wrap">
+            <div>
+              <h2 style="margin:0; font-size:24px; font-weight:900; letter-spacing:-.01em; color:#fff">A grade da rede</h2>
+              <p style="margin:6px 0 0; font-size:13.5px; color:var(--t3)">filtro, busca e ordenação · projetada para 340 linhas</p>
+            </div>
+            <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap">
+              <x-import component-from-global-scope="OrthoDonticDesignSystem_7aecc4.Input" placeholder="filtrar por praça…" value="{{ gridQuery }}" on-change="{{ onGridQuery }}" hint-size="200px,40px"></x-import>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px">
+            <sc-for list="{{ gridFilters }}" as="f" hint-placeholder-count="8">
+              <button type="button" onClick="{{ f.pick }}" style="display:flex; align-items:center; gap:8px; padding:7px 14px; border-radius:999px; border:1px solid {{ f.border }}; background:{{ f.bg }}; color:{{ f.fg }}; font-family:var(--font-sans); font-size:12px; font-weight:700; cursor:pointer; transition:all .2s ease">
+                <span style="font-family:var(--mono); font-size:9.5px; letter-spacing:.12em; color:var(--t3); text-transform:uppercase">{{ f.dim }}</span>
+                <span>{{ f.label }}</span>
+              </button>
+            </sc-for>
+          </div>
+
+          <div style="display:grid; grid-template-columns:2fr 1fr 1fr .8fr 1.2fr; gap:12px; padding:0 14px 12px; border-bottom:1px solid var(--hair)">
+            <sc-for list="{{ gridCols }}" as="c" hint-placeholder-count="5">
+              <button type="button" onClick="{{ c.sort }}" style="display:flex; align-items:center; gap:6px; border:0; background:transparent; padding:0; color:{{ c.fg }}; font-family:var(--mono); font-size:10px; letter-spacing:.14em; text-transform:uppercase; cursor:pointer; text-align:left" style-hover="color:#fff">
+                <span>{{ c.label }}</span>
+                <span style="font-size:9px">{{ c.arrow }}</span>
+              </button>
+            </sc-for>
+          </div>
+
+          <div style="display:flex; flex-direction:column">
+            <sc-for list="{{ gridRows }}" as="r" hint-placeholder-count="4">
+              <button type="button" onClick="{{ r.go }}" style="display:grid; grid-template-columns:2fr 1fr 1fr .8fr 1.2fr; gap:12px; align-items:center; padding:15px 14px; border:0; border-bottom:1px solid rgba(255,255,255,.05); background:transparent; color:var(--t1); font-family:var(--font-sans); text-align:left; cursor:pointer; transition:background .2s ease" style-hover="background:rgba(255,255,255,.05)">
+                <span style="display:flex; align-items:center; gap:10px; min-width:0">
+                  <span style="width:7px; height:7px; border-radius:50%; background:var(--od-cyan); box-shadow:0 0 8px rgba(0,185,255,.7); flex:0 0 7px"></span>
+                  <span style="font-size:14px; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis">{{ r.name }}</span>
+                </span>
+                <span style="font-family:var(--mono); font-size:12.5px; color:var(--t2)">{{ r.regiao }}</span>
+                <span style="font-family:var(--mono); font-size:12.5px; color:var(--t2)">{{ r.porte }}</span>
+                <span style="font-family:var(--mono); font-size:12.5px; color:var(--t2)">{{ r.safra }}</span>
+                <span style="display:flex; align-items:center; gap:8px">
+                  <span style="font-family:var(--mono); font-size:12.5px; font-weight:600; color:{{ r.sinaisColor }}">{{ r.sinais }}</span>
+                  <span style="font-size:11.5px; color:var(--t3)">sinais abertos</span>
+                </span>
+              </button>
+            </sc-for>
+          </div>
+
+          <div style="display:flex; align-items:center; gap:16px; padding:20px 14px 4px; flex-wrap:wrap">
+            <span style="font-family:var(--mono); font-size:11.5px; color:var(--t3)">{{ gridCount }}</span>
+            <span style="flex:1; min-width:40px; height:1px; background:var(--hair); display:block"></span>
+          </div>
+
+          <div style="margin-top:16px; padding:24px 26px; border-radius:14px; border:1px dashed rgba(255,255,255,.18); background:rgba(255,255,255,.02)">
+            <div style="font-size:15px; font-weight:700; color:#fff; margin-bottom:8px">336 linhas aguardando dado</div>
+            <p style="margin:0 0 14px; font-size:13.5px; line-height:1.6; color:var(--t2); max-width:700px; text-wrap:pretty">A grade não inventa linha. Cada praça entra aqui quando a primeira coleta dela existir — com região, porte, safra e sinais, do mesmo jeito que as quatro acima.</p>
+            <div style="display:flex; gap:20px; flex-wrap:wrap; font-family:var(--mono); font-size:11.5px; color:var(--t3)">
+              <span>quem preenche: o cadastro da rede</span>
+              <span>status: não carregado</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isLearned }}" hint-placeholder-val="{{ false }}">
+      <div style="padding:28px 34px 80px; display:flex; flex-direction:column; gap:26px">
+        <div style="position:relative">
+          <span style="position:absolute; top:4px; right:0; font-family:var(--mono); font-size:11px; letter-spacing:.18em; color:var(--t3)">04</span>
+          <h1 style="margin:0; font-size:44px; line-height:1.02; font-weight:900; letter-spacing:-.03em; color:#fff">O que aprendemos</h1>
+          <p style="margin:12px 0 0; font-size:15.5px; line-height:1.6; color:var(--t2); max-width:760px; text-wrap:pretty">Nada aqui virou regra ainda. Só ouvimos 4 praças, e elas não cobrem Norte, Centro-Oeste, capital nem unidade nova.</p>
+        </div>
+
+        <section style="padding:30px 32px 32px; border-radius:16px; border:1px solid var(--hair); background:linear-gradient(168deg, rgba(2,32,95,.72) 0%, rgba(0,26,92,.55) 100%); box-shadow:var(--shadow-lg)">
+          <div style="display:flex; align-items:stretch; gap:14px; flex-wrap:wrap">
+            <sc-for list="{{ stages }}" as="s" hint-placeholder-count="4">
+              <div style="flex:1 1 150px; min-width:150px; display:flex; align-items:center; gap:0">
+                <div style="flex:1; min-width:0; padding:22px 16px; border-radius:14px; border:1px solid {{ s.border }}; background:{{ s.bg }}; text-align:center">
+                  <div style="font-size:42px; line-height:.9; font-weight:900; letter-spacing:-.03em; color:{{ s.color }}">{{ s.n }}</div>
+                  <div style="font-family:var(--mono); font-size:10px; letter-spacing:.14em; color:{{ s.labelColor }}; margin-top:9px">{{ s.label }}</div>
+                  <div style="font-size:10.5px; line-height:1.4; color:var(--t3); margin-top:8px; text-wrap:pretty">{{ s.hint }}</div>
+                </div>
+                <sc-if value="{{ s.arrow }}" hint-placeholder-val="{{ false }}">
+                  <span style="flex:0 0 24px; display:flex; align-items:center; justify-content:center; margin-left:8px; margin-right:-8px; color:rgba(255,255,255,.24)">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 12h15"></path><path d="M13 6l6 6-6 6"></path></svg>
+                  </span>
+                </sc-if>
+              </div>
+            </sc-for>
+
+            <div style="flex:1 1 150px; min-width:150px; padding:22px 16px; border-radius:14px; border:1px solid rgba(255,92,92,.34); background:rgba(255,92,92,.07); text-align:center">
+              <div style="font-size:42px; line-height:.9; font-weight:900; letter-spacing:-.03em; color:var(--crit)">2</div>
+              <div style="font-family:var(--mono); font-size:10px; letter-spacing:.14em; color:var(--crit); margin-top:9px">CAIU</div>
+              <div style="font-size:10.5px; line-height:1.4; color:var(--t3); margin-top:8px; text-wrap:pretty">uma praça mostrou o contrário</div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 style="margin:0 0 18px; font-size:24px; font-weight:900; letter-spacing:-.01em; color:#fff">Os treze achados que se repetem</h2>
+          <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(390px, 1fr)); gap:16px">
+            <sc-for list="{{ findings }}" as="f" hint-placeholder-count="13">
+              <article style="display:flex; flex-direction:column; gap:12px; padding:22px 24px; border-radius:16px; border:1px solid var(--hair); background:linear-gradient(168deg, rgba(2,32,95,.72) 0%, rgba(0,26,92,.55) 100%); box-shadow:var(--shadow-md); transition:border-color .2s ease" style-hover="border-color:var(--hair-lit)">
+                <div style="display:flex; align-items:center; gap:12px">
+                  <span style="font-family:var(--mono); font-size:12px; color:var(--t3)">{{ f.num }}</span>
+                  <span style="flex:1"></span>
+                  <span style="display:flex; gap:4px">
+                    <sc-for list="{{ f.dots }}" as="d" hint-placeholder-count="4">
+                      <span title="{{ d.title }}" style="width:9px; height:9px; border-radius:50%; background:{{ d.bg }}; border:1px solid {{ d.border }}"></span>
+                    </sc-for>
+                  </span>
+                  <span style="font-family:var(--mono); font-size:11.5px; font-weight:600; color:{{ f.scoreColor }}">{{ f.score }}</span>
+                </div>
+                <h3 style="margin:0; font-size:17px; line-height:1.32; font-weight:700; color:#fff; letter-spacing:-.01em; text-wrap:pretty">{{ f.t }}</h3>
+                <sc-if value="{{ f.ev }}" hint-placeholder-val="{{ false }}">
+                  <p style="margin:0; font-family:var(--mono); font-size:12.5px; line-height:1.55; color:var(--t2); text-wrap:pretty">{{ f.ev }}</p>
+                </sc-if>
+                <sc-if value="{{ f.series }}" hint-placeholder-val="{{ false }}">
+                  <div style="display:flex; align-items:flex-end; gap:10px; margin-top:4px">
+                    <sc-for list="{{ f.series }}" as="b" hint-placeholder-count="4">
+                      <div style="flex:1 1 0; min-width:0; display:flex; flex-direction:column; align-items:center; gap:6px">
+                        <span style="flex:0 0 auto; font-family:var(--mono); font-size:11px; color:var(--od-cyan)">{{ b.v }}</span>
+                        <span style="flex:0 0 auto; position:relative; display:block; width:100%; height:56px">
+                          <span style="position:absolute; left:0; right:0; bottom:0; height:{{ b.h }}; border-radius:4px 4px 2px 2px; background:rgba(0,185,255,.42); display:block"></span>
+                        </span>
+                        <span style="flex:0 0 auto; font-size:9.5px; letter-spacing:.06em; color:var(--t3)">{{ b.k }}</span>
+                      </div>
+                    </sc-for>
+                  </div>
+                </sc-if>
+              </article>
+            </sc-for>
+          </div>
+        </section>
+
+        <section style="display:grid; grid-template-columns:repeat(auto-fit, minmax(420px, 1fr)); gap:20px">
+          <sc-for list="{{ fallen }}" as="d" hint-placeholder-count="2">
+            <div style="position:relative; padding:34px 36px 36px; border-radius:16px; border:1px solid rgba(255,92,92,.34); background:linear-gradient(150deg, rgba(255,92,92,.10) 0%, rgba(0,26,92,.55) 62%); box-shadow:var(--shadow-lg); overflow:hidden">
+              <div style="display:flex; align-items:center; gap:13px; margin-bottom:18px">
+                <span style="display:flex; align-items:center; justify-content:center; width:30px; height:30px; border-radius:50%; border:1.5px solid var(--crit); color:var(--crit); flex:0 0 30px">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+                </span>
+                <span style="font-family:var(--mono); font-size:10.5px; letter-spacing:.20em; color:var(--crit); text-transform:uppercase">Caiu</span>
+              </div>
+              <h2 style="margin:0; font-size:{{ d.size }}; line-height:1.1; font-weight:900; letter-spacing:-.03em; color:#fff; text-decoration:line-through; text-decoration-color:rgba(255,92,92,.6); text-decoration-thickness:4px; text-wrap:balance">“{{ d.claim }}”</h2>
+              <p style="margin:22px 0 0; font-size:14.5px; line-height:1.65; color:var(--t2); text-wrap:pretty">{{ d.why }}</p>
+              <sc-if value="{{ d.facts }}" hint-placeholder-val="{{ false }}">
+                <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:22px">
+                  <sc-for list="{{ d.facts }}" as="x" hint-placeholder-count="3">
+                    <div style="padding:14px 18px; border-radius:12px; background:rgba(0,0,0,.26); border:1px solid var(--hair)">
+                      <div style="font-family:var(--mono); font-size:20px; font-weight:600; color:{{ x.color }}">{{ x.v }}</div>
+                      <div style="font-size:11.5px; color:var(--t3); margin-top:5px; text-wrap:pretty">{{ x.k }}</div>
+                    </div>
+                  </sc-for>
+                </div>
+              </sc-if>
+              <sc-if value="{{ d.kicker }}" hint-placeholder-val="{{ false }}">
+                <p style="margin:22px 0 0; font-size:14px; line-height:1.6; color:var(--t1); text-wrap:pretty">{{ d.kicker }}</p>
+              </sc-if>
+            </div>
+          </sc-for>
+        </section>
+
+        <section style="padding:26px 30px 28px; border-radius:16px; border:1px solid rgba(255,92,92,.24); background:rgba(255,92,92,.05)">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:14px; flex-wrap:wrap">
+            <span style="display:flex; align-items:center; justify-content:center; width:24px; height:24px; border-radius:50%; border:1.5px solid var(--crit); color:var(--crit); flex:0 0 24px">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+            </span>
+            <span style="font-size:19px; font-weight:900; letter-spacing:-.01em; color:#fff; text-decoration:line-through; text-decoration-color:rgba(255,92,92,.55); text-decoration-thickness:2px">“Quem responde avaliação é quem cresce”</span>
+          </div>
+          <p style="margin:0; font-size:14px; line-height:1.65; color:var(--t2); max-width:900px; text-wrap:pretty">A gente levantou e derrubou no mesmo dia. Não tem relação nenhuma: Moisés Suzart cresce ~39/mês respondendo 0%; a NEXA responde 100% e cresce 1,3/mês.</p>
+        </section>
+
+        <section>
+          <div style="margin-bottom:18px">
+            <h2 style="margin:0; font-size:24px; font-weight:900; letter-spacing:-.01em; color:#fff">As variáveis</h2>
+            <p style="margin:6px 0 0; font-size:13.5px; color:var(--t3)">o que jamais pode ser nacionalizado</p>
+          </div>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:16px">
+            <sc-for list="{{ variables }}" as="v" hint-placeholder-count="4">
+              <div style="display:flex; flex-direction:column; border-radius:16px; border:1px solid var(--hair); background:linear-gradient(180deg, rgba(2,32,95,.72) 0%, rgba(0,26,92,.55) 100%); box-shadow:var(--shadow-md); overflow:hidden">
+                <div style="padding:20px 22px 18px; border-bottom:1px solid var(--hair); background:rgba(255,255,255,.03)">
+                  <div style="font-size:19px; font-weight:900; letter-spacing:-.01em; color:{{ v.accent }}">{{ v.city }}</div>
+                </div>
+                <div style="display:flex; flex-direction:column; flex:1">
+                  <sc-for list="{{ v.rows }}" as="r" hint-placeholder-count="4">
+                    <div style="padding:16px 22px; border-bottom:1px solid rgba(255,255,255,.05)">
+                      <div style="font-family:var(--mono); font-size:9.5px; letter-spacing:.14em; color:var(--t3); text-transform:uppercase; margin-bottom:7px">{{ r.k }}</div>
+                      <div style="font-size:13.5px; line-height:1.5; color:{{ r.fg }}; text-wrap:pretty">{{ r.v }}</div>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+        </section>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isCorrector }}" hint-placeholder-val="{{ false }}">
+      <div style="padding:28px 34px 80px; display:flex; flex-direction:column; gap:26px">
+        <div style="position:relative">
+          <span style="position:absolute; top:4px; right:0; font-family:var(--mono); font-size:11px; letter-spacing:.18em; color:var(--t3)">05</span>
+          <h1 style="margin:0; font-size:44px; line-height:1.02; font-weight:900; letter-spacing:-.03em; color:#fff">Corretor de campanha</h1>
+          <p style="margin:12px 0 0; font-size:15.5px; line-height:1.6; color:var(--t2); max-width:760px; text-wrap:pretty">Cole uma peça nacional. O corretor confronta a redação com a alavanca, o placar e o que nunca dizer de cada praça ouvida.</p>
+        </div>
+
+        <section style="padding:28px 30px 30px; border-radius:16px; border:1px solid var(--hair); background:linear-gradient(168deg, rgba(2,32,95,.72) 0%, rgba(0,26,92,.55) 100%); box-shadow:var(--shadow-lg)">
+          <div style="font-family:var(--mono); font-size:10px; letter-spacing:.18em; color:var(--od-cyan); text-transform:uppercase; margin-bottom:14px">Peça em análise</div>
+          <textarea value="{{ piece }}" onChange="{{ onPiece }}" rows="3" style="width:100%; box-sizing:border-box; padding:22px 24px; border-radius:14px; border:1px solid var(--hair); background:rgba(0,0,0,.26); color:#fff; font-family:var(--font-sans); font-size:19px; line-height:1.5; font-weight:500; outline:none; resize:vertical" style-focus="border-color:var(--od-cyan); box-shadow:var(--ring)"></textarea>
+          <div style="display:flex; align-items:center; gap:18px; margin-top:20px; flex-wrap:wrap">
+            <x-import component-from-global-scope="OrthoDonticDesignSystem_7aecc4.Button" variant="primary" size="lg" on-click="{{ analyze }}" hint-size="300px,54px">Analisar contra as praças ouvidas</x-import>
+            <x-import component-from-global-scope="OrthoDonticDesignSystem_7aecc4.Button" variant="ghost" size="lg" on-click="{{ resetAnalysis }}" hint-size="110px,54px">Limpar</x-import>
+            <span style="font-family:var(--mono); font-size:11.5px; color:var(--t3)">{{ analysisStatus }}</span>
+          </div>
+          <p style="margin:18px 0 0; font-size:12.5px; line-height:1.55; color:var(--t3); max-width:720px; text-wrap:pretty">Com 340 praças o resultado vem agrupado por perfil de praça, não em 340 cartões.</p>
+        </section>
+
+        <section style="display:grid; grid-template-columns:repeat(auto-fit, minmax(290px, 1fr)); gap:16px">
+          <sc-for list="{{ verdicts }}" as="v" hint-placeholder-count="4">
+            <article style="display:flex; flex-direction:column; gap:14px; padding:24px 26px 26px; border-radius:16px; border:1px solid {{ v.border }}; background:{{ v.bg }}; box-shadow:var(--shadow-lg); opacity:{{ v.opacity }}; transform:{{ v.transform }}; transition:opacity .4s cubic-bezier(.2,.7,.3,1), transform .4s cubic-bezier(.2,.7,.3,1)">
+              <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap">
+                <span style="font-size:17px; font-weight:900; letter-spacing:-.01em; color:#fff">{{ v.city }}</span>
+                <span style="display:inline-flex; align-items:center; gap:8px; padding:5px 12px; border-radius:999px; background:rgba(255,255,255,.06); color:{{ v.color }}; font-family:var(--mono); font-size:10px; font-weight:600; letter-spacing:.12em">
+                  <span style="width:7px; height:7px; border-radius:50%; background:{{ v.color }}; flex:0 0 7px"></span>
+                  {{ v.verdict }}
+                </span>
+              </div>
+              <p style="margin:0; font-size:13.5px; line-height:1.6; color:var(--t2); text-wrap:pretty">{{ v.why }}</p>
+              <div style="margin-top:auto; padding-top:16px; border-top:1px solid var(--hair)">
+                <div style="font-family:var(--mono); font-size:9.5px; letter-spacing:.16em; color:{{ v.color }}; text-transform:uppercase; margin-bottom:8px">{{ v.suggestLabel }}</div>
+                <p style="margin:0; font-size:15px; line-height:1.45; font-weight:700; color:#fff; text-wrap:pretty">“{{ v.suggest }}”</p>
+              </div>
+            </article>
+          </sc-for>
+        </section>
+
+        <section style="padding:32px 34px 34px; border-radius:16px; border:1px solid var(--hair); background:linear-gradient(168deg, rgba(2,32,95,.72) 0%, rgba(0,26,92,.55) 100%); box-shadow:var(--shadow-lg)">
+          <h2 style="margin:0 0 6px; font-size:24px; font-weight:900; letter-spacing:-.01em; color:#fff">A campanha nacional chega à cadeira?</h2>
+          <p style="margin:0 0 30px; font-size:13.5px; color:var(--t3)">quanto do embaixador e do jingle aparece no que a rede publica</p>
+          <div style="display:flex; flex-direction:column; gap:26px">
+            <sc-for list="{{ reach }}" as="r" hint-placeholder-count="3">
+              <div style="display:flex; align-items:center; gap:28px; flex-wrap:wrap">
+                <div style="flex:1 1 260px; min-width:0">
+                  <div style="font-size:15px; font-weight:500; color:var(--t2); margin-bottom:12px; text-wrap:pretty">{{ r.label }}</div>
+                  <span style="display:block; height:12px; border-radius:6px; background:rgba(255,255,255,.06); position:relative; overflow:hidden">
+                    <span style="position:absolute; left:0; top:0; bottom:0; width:{{ r.w }}; min-width:3px; background:var(--grad-cyan); border-radius:6px"></span>
+                  </span>
+                </div>
+                <div style="flex:0 0 auto; min-width:180px; text-align:right">
+                  <span style="font-size:48px; font-weight:900; letter-spacing:-.04em; color:{{ r.color }}">{{ r.n }}</span>
+                  <span style="font-family:var(--mono); font-size:15px; color:var(--t3)"> de {{ r.total }}</span>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+          <p style="margin:30px 0 0; font-size:14px; line-height:1.6; color:var(--t1)">Oito anos de embaixador. O jingle está subusado, não gasto.</p>
+        </section>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isMethod }}" hint-placeholder-val="{{ false }}">
+      <div style="padding:28px 34px 80px; display:flex; flex-direction:column; gap:26px">
+        <div style="position:relative">
+          <span style="position:absolute; top:4px; right:0; font-family:var(--mono); font-size:11px; letter-spacing:.18em; color:var(--t3)">06</span>
+          <h1 style="margin:0; font-size:44px; line-height:1.02; font-weight:900; letter-spacing:-.03em; color:#fff">Método</h1>
+          <p style="margin:12px 0 0; font-size:15.5px; line-height:1.6; color:var(--t2); max-width:760px; text-wrap:pretty">Um painel afirma. Um portal de inteligência mostra de onde tirou o número — e o que ainda não sabe.</p>
+        </div>
+
+        <section style="display:grid; grid-template-columns:repeat(auto-fit, minmax(290px, 1fr)); gap:16px">
+          <sc-for list="{{ methodCards }}" as="m" hint-placeholder-count="4">
+            <div style="padding:26px 28px 28px; border-radius:16px; border:1px solid {{ m.border }}; background:{{ m.bg }}; box-shadow:var(--shadow-md)">
+              <div style="font-family:var(--mono); font-size:10px; letter-spacing:.18em; color:{{ m.accent }}; text-transform:uppercase; margin-bottom:14px">{{ m.k }}</div>
+              <div style="display:flex; flex-direction:column; gap:11px">
+                <sc-for list="{{ m.items }}" as="i" hint-placeholder-count="5">
+                  <div style="display:flex; align-items:baseline; gap:11px">
+                    <span style="width:5px; height:5px; border-radius:50%; background:{{ m.accent }}; flex:0 0 5px; opacity:.7"></span>
+                    <span style="font-size:13.5px; line-height:1.5; color:var(--t2); text-wrap:pretty">{{ i }}</span>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+          </sc-for>
+        </section>
+
+        <section>
+          <h2 style="margin:0 0 18px; font-size:24px; font-weight:900; letter-spacing:-.01em; color:#fff">As travas do portal</h2>
+          <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(330px, 1fr)); gap:14px">
+            <sc-for list="{{ travas }}" as="t" hint-placeholder-count="8">
+              <div style="display:flex; align-items:flex-start; gap:16px; padding:20px 22px; border-radius:14px; border:1px solid var(--hair); background:rgba(255,255,255,.02)">
+                <span style="font-family:var(--mono); font-size:12px; color:var(--od-cyan); flex:0 0 auto">{{ t.n }}</span>
+                <span style="font-size:14px; line-height:1.55; color:var(--t1); text-wrap:pretty">{{ t.v }}</span>
+              </div>
+            </sc-for>
+          </div>
+        </section>
+      </div>
+    </sc-if>
+
+  </main>
+
+  <sc-if value="{{ drawer }}" hint-placeholder-val="{{ false }}">
+    <div onClick="{{ closeDrawer }}" style="position:fixed; inset:0; z-index:50; background:rgba(0,8,32,.55); backdrop-filter:blur(2px); animation:odFade .2s ease-out"></div>
+    <aside style="position:fixed; top:0; right:0; bottom:0; width:540px; max-width:92vw; z-index:51; overflow-y:auto; background:rgba(2,32,95,.86); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px); border-left:1px solid var(--hair-lit); box-shadow:-40px 0 90px rgba(0,8,32,.6); animation:odSlideIn .32s cubic-bezier(.2,.7,.3,1)">
+      <div style="display:flex; align-items:center; justify-content:space-between; padding:22px 26px; border-bottom:1px solid var(--hair); position:sticky; top:0; background:rgba(2,32,95,.72); backdrop-filter:blur(14px)">
+        <span style="font-family:var(--mono); font-size:11px; letter-spacing:.18em; color:var(--od-cyan); text-transform:uppercase">De onde veio o número</span>
+        <button type="button" onClick="{{ closeDrawer }}" style="display:flex; align-items:center; justify-content:center; width:32px; height:32px; border-radius:50%; border:1px solid var(--hair); background:transparent; color:var(--t2); cursor:pointer; flex:0 0 32px" style-hover="color:#fff; border-color:var(--hair-lit)">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+        </button>
+      </div>
+      <div style="padding:30px 26px 60px">
+        <div style="font-family:var(--mono); font-size:11.5px; color:var(--t3); letter-spacing:.04em">{{ drawer.city }}</div>
+        <div style="font-size:78px; line-height:.92; font-weight:900; letter-spacing:-.04em; color:{{ drawer.color }}; margin-top:10px">{{ drawer.value }}</div>
+        <p style="margin:14px 0 0; font-size:15px; line-height:1.55; color:var(--t2); text-wrap:pretty">{{ drawer.caption }}</p>
+
+        <div style="display:inline-flex; align-items:center; gap:9px; margin-top:20px; padding:7px 14px; border-radius:999px; border:1px solid var(--hair); background:rgba(255,255,255,.04); flex-wrap:wrap">
+          <span style="font-size:11px; color:var(--t3); letter-spacing:.06em; text-transform:uppercase">confiança</span>
+          <span style="display:flex; gap:3px">
+            <sc-for list="{{ drawer.conf }}" as="c" hint-placeholder-count="3">
+              <span style="width:16px; height:5px; border-radius:2px; background:{{ c.bg }}"></span>
+            </sc-for>
+          </span>
+          <span style="font-size:12px; font-weight:700; color:#fff">{{ drawer.confLabel }}</span>
+        </div>
+
+        <div style="margin-top:28px">
+          <div style="font-family:var(--mono); font-size:10px; letter-spacing:.18em; color:var(--od-cyan); text-transform:uppercase; margin-bottom:9px">A leitura</div>
+          <p style="margin:0; font-size:14.5px; line-height:1.65; color:var(--t1); text-wrap:pretty">{{ drawer.reading }}</p>
+        </div>
+
+        <sc-if value="{{ drawer.counter }}" hint-placeholder-val="{{ false }}">
+          <div style="margin-top:26px; padding:20px 22px; border-radius:16px; border:1px solid rgba(248,214,93,.34); background:rgba(248,214,93,.07)">
+            <div style="font-family:var(--mono); font-size:10px; letter-spacing:.18em; color:var(--warn); text-transform:uppercase; margin-bottom:9px">O que pesa contra</div>
+            <p style="margin:0; font-size:14px; line-height:1.6; color:var(--t1); text-wrap:pretty">{{ drawer.counter }}</p>
+          </div>
+        </sc-if>
+
+        <div style="margin-top:28px; padding-top:20px; border-top:1px solid var(--hair); display:flex; flex-direction:column; gap:9px">
+          <div style="font-family:var(--mono); font-size:10px; letter-spacing:.18em; color:var(--t3); text-transform:uppercase; margin-bottom:2px">Ficha técnica</div>
+          <sc-for list="{{ drawer.meta }}" as="m" hint-placeholder-count="4">
+            <div style="display:flex; gap:14px; align-items:baseline; font-family:var(--mono); font-size:12px">
+              <span style="width:92px; flex:0 0 92px; color:var(--t3)">{{ m.k }}</span>
+              <span style="flex:1; color:var(--t1)">{{ m.v }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </aside>
+  </sc-if>
+
+  <sc-if value="{{ searchOpen }}" hint-placeholder-val="{{ false }}">
+    <div onClick="{{ closeSearch }}" style="position:fixed; inset:0; z-index:60; background:rgba(0,8,32,.62); backdrop-filter:blur(3px); display:flex; align-items:flex-start; justify-content:center; padding-top:14vh; animation:odFade .16s ease-out">
+      <div onClick="{{ stop }}" style="width:640px; max-width:92vw; border-radius:18px; border:1px solid var(--hair-lit); background:rgba(2,32,95,.94); backdrop-filter:blur(18px); box-shadow:0 40px 100px rgba(0,8,32,.7); overflow:hidden">
+        <div style="display:flex; align-items:center; gap:12px; padding:18px 22px; border-bottom:1px solid var(--hair)">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.6-3.6"></path></svg>
+          <input type="text" autofocus placeholder="praça, sinal, achado, concorrente…" value="{{ query }}" onChange="{{ onQuery }}" style="flex:1; min-width:0; border:0; outline:none; background:transparent; color:#fff; font-family:var(--font-sans); font-size:16px">
+          <span style="font-family:var(--mono); font-size:11px; color:var(--t3)">esc</span>
+        </div>
+        <div style="max-height:52vh; overflow-y:auto; padding:8px">
+          <sc-for list="{{ results }}" as="r" hint-placeholder-count="5">
+            <button type="button" onClick="{{ r.go }}" style="display:flex; align-items:center; gap:14px; width:100%; padding:13px 14px; border:0; border-radius:12px; background:transparent; color:var(--t1); font-family:var(--font-sans); text-align:left; cursor:pointer" style-hover="background:rgba(255,255,255,.07)">
+              <span style="font-family:var(--mono); font-size:9.5px; letter-spacing:.14em; color:var(--t3); width:70px; flex:0 0 70px; text-transform:uppercase">{{ r.kind }}</span>
+              <span style="flex:1; min-width:0; font-size:14px; font-weight:500">{{ r.label }}</span>
+              <span style="flex:0 0 auto; font-family:var(--mono); font-size:11px; color:{{ r.tagColor }}">{{ r.tag }}</span>
+            </button>
+          </sc-for>
+          <sc-if value="{{ noResults }}" hint-placeholder-val="{{ false }}">
+            <div style="padding:34px 16px; text-align:center; color:var(--t3); font-size:13.5px">Nada no que foi coletado até aqui. A cobertura é de 4 praças.</div>
+          </sc-if>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1600,&quot;height&quot;:1000},&quot;startScreen&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;control&quot;,&quot;praca&quot;,&quot;unheard&quot;,&quot;learned&quot;,&quot;corrector&quot;,&quot;method&quot;],&quot;default&quot;:&quot;control&quot;,&quot;tsType&quot;:&quot;'control' | 'praca' | 'unheard' | 'learned' | 'corrector' | 'method'&quot;,&quot;section&quot;:&quot;Portal&quot;},&quot;intro&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Portal&quot;}}">
+class Component extends DCLogic {
+  state = {
+    screen: null, praca: "riomafra", snap: "ago", drawer: null,
+    searchOpen: false, query: "", sev: "Todos", escopo: "Todos",
+    counts: [0, 0, 0, 0], hover: null, hx: 0, hy: 0, step: 0,
+    voiceIdx: 0, planOrder: null, openGroup: null,
+    gridQuery: "", gridSort: "sinais", gridDir: -1, gridFilter: null,
+    vw: typeof window !== "undefined" ? window.innerWidth : 1600
+  };
+
+  reduced = typeof window !== "undefined" && window.matchMedia
+    ? window.matchMedia("(prefers-reduced-motion: reduce)").matches : false;
+
+  scr() { return this.state.screen || this.props.startScreen || "control"; }
+  noMotion() { return this.reduced || this.props.intro === false; }
+
+  MAP = [
+    { id: "londrina", short: "Londrina", name: "Londrina — Souza Naves", uf: "PR · a matriz", lon: -51.1628, lat: -23.3103, nota: "4,6", reviews: "564", sinais: 1, tese: "A coroa que está escorregando." },
+    { id: "prudente", short: "Pres. Prudente", name: "Presidente Prudente", uf: "SP · 1ª franquia da rede", lon: -51.3889, lat: -22.1256, nota: "4,9", reviews: "592", sinais: 0, tese: "O tesouro guardado na gaveta.", ly: -12 },
+    { id: "feira", short: "Feira de Santana", name: "Feira de Santana", uf: "BA · Centro", lon: -38.9663, lat: -12.2664, nota: "4,7", reviews: "170", sinais: 1, tese: "Todos os caminhos levam à Feira. Menos o da própria clínica." },
+    { id: "riomafra", short: "Riomafra", name: "Riomafra", uf: "Mafra/SC · Rio Negro/PR", lon: -49.8058, lat: -26.1119, nota: "4,9", reviews: "155", sinais: 3, tese: "A melhor clínica da cidade é a mais calada." }
+  ];
+
+  SIGNALS = [
+    { id: "s1", sev: "CRÍTICO", tipo: "Concorrência", city: "Riomafra", escopo: "1 unidade", ev: "invasao",
+      window: "janela 7 a 14 dias",
+      title: "Concorrente invadiu a categoria",
+      what: "A clínica de nove meses ao lado, que só vendia prótese e implante, começou a anunciar aparelho em julho, no pico anual da região. Entre 15/jul e 07/ago ela foi de ~10 para 37 anúncios ativos.",
+      todo: "Subir 4 a 6 anúncios sempre-ativos com rosto e parcela clara.",
+      metric: { value: "37", pct: "100%", mark: "27%", label: "anúncios ativos · era ~10 em 15/jul" } },
+
+    { id: "s2", sev: "CRÍTICO", tipo: "Ritmo de avaliações novas", city: "Riomafra", escopo: "1 unidade", ev: "ritmo_rmf",
+      window: "meta ≥15/mês",
+      title: "A vizinha acelerou e a unidade ficou parada",
+      what: "Em 23 dias a Lumière fez +33 avaliações (~43/mês) e a OrthoDontic fez zero. A distância era 42; agora é 75.",
+      todo: "Religar a máquina de avaliações — a unidade já fez 47 em três meses de 2022, sabe fazer.",
+      metric: { value: "0", pct: "0%", mark: "77%", label: "novas em 23 dias · vizinha +33" } },
+
+    { id: "s3", sev: "CRÍTICO", tipo: "Funil", city: "Riomafra", escopo: "1 unidade", ev: "agendamento",
+      window: "prioridade máxima do ciclo",
+      title: "Agendamento a 5,9% contra régua de 40%",
+      what: "De cada 100 interessados, seis viram avaliação agendada. Comparecimento (49%), fechamento (75%) e pagamento (99%) batem ou superam a régua.",
+      todo: "Blindar a linha de frente — resposta em minutos, fluxo em vez de rajada.",
+      metric: { value: "5,9%", pct: "14.7%", mark: "40%", label: "régua da rede 40%" } },
+
+    { id: "s4", sev: "CRÍTICO", tipo: "Reputação", city: "Rede", escopo: "decisão de franqueadora", ev: "reclame",
+      window: "rotina de resposta em 48h",
+      title: "A marca não responde",
+      what: "433 reclamações no Reclame Aqui, nota 7,01, e 5% dizem que voltariam a fazer negócio. As três mais recentes, todas do mesmo dia, todas “Não respondida”.",
+      todo: "Rotina de resposta em 48h, no Reclame Aqui e no Google. É decisão de franqueadora, não de unidade.",
+      metric: { value: "5%", pct: "5%", mark: null, label: "voltariam a fazer negócio" } },
+
+    { id: "s5", sev: "GRAVE", tipo: "Ritmo de avaliações novas", city: "Londrina", escopo: "1 unidade", ev: "ritmo_lda",
+      window: "ultrapassagem em ~2 meses",
+      title: "A matriz perde o maior volume da cidade em ~2 meses",
+      what: "Odontoclinic +14/mês contra +4/mês da matriz. A distância caiu de 28 para 20 avaliações.",
+      todo: "Ligar a máquina de avaliações na matriz — hoje ela responde 0% das avaliações que recebe.",
+      metric: { value: "20", pct: "71%", mark: "100%", label: "avaliações de distância · era 28" } },
+
+    { id: "s6", sev: "GRAVE", tipo: "Mídia paga", city: "Rede", escopo: "decisão de franqueadora", ev: "busca_paga",
+      window: "verificar a conta antes de concluir",
+      title: "A OrthoDontic é a única rede fora da busca paga",
+      what: "No Centro de Transparência do Google: OdontoCompany 35 anúncios (10 da própria franqueadora), Odontoclinic 15, Sorrifácil 1, OrthoDontic 0 — em quatro variantes de nome.",
+      todo: "Decisão de franqueadora. Verificar a conta de Google Ads da rede antes de concluir.",
+      metric: { value: "0", pct: "0%", mark: "100%", label: "anúncios · OdontoCompany 35" },
+      group: [["OdontoCompany", "35", "#F5A057"], ["Odontoclinic", "15", "#F8D65D"], ["Sorrifácil", "1", "rgba(255,255,255,.72)"], ["OrthoDontic", "0", "#FF5C5C"]],
+      groupLabel: "Ver as quatro redes na busca paga" },
+
+    { id: "s7", sev: "GRAVE", tipo: "Ritmo de avaliações novas", city: "Feira de Santana", escopo: "1 unidade", ev: "ritmo_fsa",
+      window: "meta: sustentar o que já sabe fazer",
+      title: "O gigante corre, a unidade está estacionada",
+      what: "Moisés Suzart +30 em 23 dias (~39/mês) contra ~2/mês da unidade.",
+      todo: "Máquina de avaliações. A unidade já fez 17 num único mês em jul/2025.",
+      metric: { value: "2", pct: "5%", mark: "100%", label: "por mês · Suzart ~39" } },
+
+    { id: "s8", sev: "ATENÇÃO", tipo: "Resposta a avaliações", city: "Rede", escopo: "3 de 5 unidades", ev: "resposta",
+      window: "custa zero · a unidade executa sozinha",
+      title: "Três de cinco unidades respondem 0% das avaliações",
+      what: "O índice de resposta varia de 0% a 61% dentro da mesma marca, e a unidade de pior nota é justamente a que mais responde.",
+      todo: "Rotina de resposta. Custa zero e a unidade executa sozinha.",
+      group: [["Londrina matriz", "0%", "#FF5C5C"], ["Presidente Prudente", "0%", "#FF5C5C"], ["Feira de Santana", "4%", "#F5A057"], ["Riomafra", "52%", "#F8D65D"], ["Londrina Centro", "61%", "#3ED6B8"]],
+      groupLabel: "Ver as 5 unidades medidas" }
+  ];
+
+  EVIDENCE = {
+    invasao: {
+      city: "Riomafra · biblioteca de anúncios", value: "37", color: "#FF5C5C", conf: 3, confLabel: "alta",
+      caption: "anúncios ativos da vizinha em 07/ago — eram ~10 em 15/jul",
+      reading: "Instituto Lumière opera há nove meses com tráfego pago e capital estimado 28x maior, e passou a anunciar aparelho em julho — o pico anual da região. A categoria deixou de ser exclusiva da unidade, e a unidade tinha zero anúncios quando isso aconteceu.",
+      counter: "",
+      meta: [["N", "37 ativos · era ~10"], ["corte", "07/ago/2026"], ["fonte", "biblioteca de anúncios"], ["palavras", "lista de palavras · versão 1.1"]]
+    },
+    ritmo_rmf: {
+      city: "Riomafra · ritmo de avaliações novas", value: "0", color: "#FF5C5C", conf: 3, confLabel: "alta",
+      caption: "avaliações novas da unidade em 23 dias, contra +33 da vizinha",
+      reading: "A distância era 42 avaliações em 15/jul e virou 75 em 07/ago. A nota 4,9 é a melhor da praça e não está sendo alimentada. A unidade já fez 47 avaliações em três meses de 2022 — sabe fazer, e parou.",
+      counter: "",
+      meta: [["N", "155 avaliações · nota 4,9"], ["janela", "15/jul a 07/ago · 23 dias"], ["vizinha", "+33 · ~43/mês"], ["corte", "07/ago/2026"]]
+    },
+    agendamento: {
+      city: "Riomafra · funil de conversão", value: "5,9%", color: "#FF5C5C", conf: 2, confLabel: "média",
+      caption: "dos interessados viram avaliação agendada — a régua espera 40%",
+      reading: "O único estágio quebrado. Comparecimento bate a régua; fechamento e pagamento estão acima. A cadeira e o contrato funcionam — o vão está entre a primeira mensagem e a agenda.",
+      counter: "As contas não fecham: 109 pagos contra ~336 contratos/ano na mesma unidade. Enquanto não fechar, o multiplicador projetado não é publicado.",
+      meta: [["N", "5.050 · 298"], ["corte", "jul/2026"], ["fonte", "dados/serie/funil.jsonl"], ["filtro", "local_id=ortho_mafra"]]
+    },
+    reclame: {
+      city: "Rede · Reclame Aqui", value: "5%", color: "#FF5C5C", conf: 3, confLabel: "alta",
+      caption: "dizem que voltariam a fazer negócio com a marca",
+      reading: "433 reclamações e nota 7,01. As três mais recentes são do mesmo dia e todas estão “Não respondida”. O achado da operação como ferida aparece aqui em escala de rede, não de unidade.",
+      counter: "",
+      meta: [["N", "433 reclamações"], ["nota", "7,01"], ["fonte", "Reclame Aqui"], ["corte", "07/ago/2026"]]
+    },
+    ritmo_lda: {
+      city: "Londrina · ritmo de avaliações novas", value: "20", color: "#F5A057", conf: 3, confLabel: "alta",
+      caption: "avaliações de distância entre a matriz e a Odontoclinic — eram 28",
+      reading: "Matriz 564 (+3 em 23 dias, ~4/mês) contra Odontoclinic 544 (+11, ~14/mês). No ritmo atual a matriz perde o maior volume da cidade em cerca de dois meses. A matriz responde 0% das avaliações que recebe.",
+      counter: "",
+      meta: [["N", "564 · 544"], ["janela", "15/jul a 07/ago · 23 dias"], ["engajamento", "mediana 1 curtida · Odontoclinic 15"], ["corte", "07/ago/2026"]]
+    },
+    busca_paga: {
+      city: "Rede · Centro de Transparência do Google", value: "0", color: "#F5A057", conf: 2, confLabel: "média",
+      caption: "anúncios de busca da OrthoDontic, em quatro variantes de nome",
+      reading: "OdontoCompany 35 anúncios, sendo 10 da própria franqueadora; Odontoclinic 15; Sorrifácil 1. Quanto tempo os anúncios delas ficam no ar: mediana de 104 dias, com um criativo de 864 dias. A OrthoDontic é a única rede ausente do que dá para ver na internet nesse canal.",
+      counter: "Verificar a conta de Google Ads da rede antes de concluir. Ausência na fonte pública não é prova de ausência de investimento.",
+      meta: [["N", "4 redes · 4 variantes de nome"], ["mediana no ar", "104 dias · máx 864"], ["fonte", "Centro de Transparência"], ["corte", "07/ago/2026"]]
+    },
+    ritmo_fsa: {
+      city: "Feira de Santana · ritmo de avaliações novas", value: "39", color: "#F5A057", conf: 3, confLabel: "alta",
+      caption: "avaliações novas por mês do líder da praça, contra ~2 da unidade",
+      reading: "Moisés Suzart somou +30 em 23 dias e chegou a 1.298 avaliações. A unidade fez ~2/mês e caiu de 173 para 170 — a queda é limpeza do Google, não represália; entraram 2 avaliações em julho.",
+      counter: "Suzart não compra busca e não responde avaliação. Nas nossas fontes ele não faz nada que explique o crescimento — é a medida do que não vemos.",
+      meta: [["N", "1.298 · 170"], ["janela", "15/jul a 07/ago · 23 dias"], ["pico da unidade", "17 em jul/2025"], ["corte", "07/ago/2026"]]
+    },
+    resposta: {
+      city: "Rede · índice de resposta", value: "0%", color: "#F8D65D", conf: 3, confLabel: "alta",
+      caption: "em três das cinco unidades medidas",
+      reading: "Londrina matriz 0%, Presidente Prudente 0%, Feira 4%, Riomafra 52%, Londrina Centro 61%. A unidade de pior nota da rede é a que mais responde — o que derruba, no mesmo dia, a ideia de que responder é o que faz crescer.",
+      counter: "Responder não se correlaciona com crescer: Suzart cresce ~39/mês respondendo 0%; a NEXA responde 100% e cresce 1,3/mês.",
+      meta: [["N", "5 unidades medidas"], ["faixa", "0% a 61%"], ["corte", "07/ago/2026"], ["palavras", "lista de palavras · versão 1.1"]]
+    }
+  };
+
+  NAV = [
+    { id: "control", label: "Sala de Controle", count: "8", icon: "radar" },
+    { id: "praca", label: "Praças", children: true, icon: "map-pin" },
+    { id: "unheard", label: "Rede não ouvida", count: "336", icon: "circle-dashed" },
+    { id: "learned", label: "O que Aprendemos", count: "13", icon: "lightbulb" },
+    { id: "corrector", label: "Corretor de Campanha", icon: "pen-line" },
+    { id: "method", label: "Método", icon: "list-checks" }
+  ];
+
+  PRACAS = [
+    { id: "riomafra", label: "Riomafra", dot: "#FF5C5C" },
+    { id: "londrina", label: "Londrina", dot: "#F5A057" },
+    { id: "feira", label: "Feira de Santana", dot: "#F5A057" },
+    { id: "prudente", label: "Pres. Prudente", dot: "#3ED6B8" }
+  ];
+
+  GRID = [
+    { id: "riomafra", name: "Riomafra — Mafra/SC", regiao: "Sul", porte: "média", safra: "2019", sinais: 3 },
+    { id: "londrina", name: "Londrina — Souza Naves", regiao: "Sul", porte: "grande", safra: "2002", sinais: 1 },
+    { id: "feira", name: "Feira de Santana — Centro", regiao: "Nordeste", porte: "grande", safra: "—", sinais: 1 },
+    { id: "prudente", name: "Presidente Prudente", regiao: "Sudeste", porte: "média", safra: "2005", sinais: 0 }
+  ];
+
+  COVERAGE = [
+    { k: "Norte", n: 0, tag: "não coberto" },
+    { k: "Centro-Oeste", n: 0, tag: "não coberto" },
+    { k: "Capital", n: 0, tag: "não coberto" },
+    { k: "Unidade recém-aberta", n: 0, tag: "não coberto" },
+    { k: "Sudeste", n: 1, tag: "coberto" },
+    { k: "Sul", n: 2, tag: "coberto" },
+    { k: "Nordeste", n: 1, tag: "coberto" }
+  ];
+
+  FINDINGS = [
+    { t: "O paciente não avalia ortodontia — avalia como foi tratado.", score: "4/4",
+      series: [["RMF", 66], ["FSA", 65], ["LDA", 65], ["PRU", 58]],
+      ev: "847 avaliações com texto, as quatro medidas do mesmo jeito" },
+    { t: "A ferida é sempre operação, nunca o produto.", score: "4/4",
+      ev: "e o Reclame Aqui confirma: 433 reclamações, as 3 mais recentes todas “Não respondida”" },
+    { t: "A confiança é em gente com nome.", score: "4/4" },
+    { t: "A porta de entrada é “quanto custa / cabe na parcela?”, depois “dói?”.", score: "4/4" },
+    { t: "Julho é o pico da mãe-decisora.", score: "4/4", ev: "Riomafra índice 34 · 4.120 interessados em jul/25" },
+    { t: "O adulto 30+ é dinheiro na mesa e nenhuma praça fala com ele.", score: "4/4" },
+    { t: "A clínica-escola é fraca onde a rede é forte.", score: "4/4" },
+    { t: "A joia local existe, é incopiável — e está enterrada.", score: "3/4", miss: 1, ev: "Feira não tem" },
+    { t: "A prova social está parada em todas.", score: "4/4" },
+    { t: "A mãe é a decisora — e lê os reviews antes de escolher.", score: "4/4" },
+    { t: "A ordem certa é blindar a operação antes de mídia nova.", score: "4/4" },
+    { t: "A rede não responde.", score: "4/4", ev: "0% · 0% · 4% · 52%" },
+    { t: "As unidades sabem fazer campanha de avaliação — e não sustentam.", score: "4/4",
+      ev: "Riomafra 47 em 3 meses de 2022; Feira 17 em jul/2025. Depois, quase nada." }
+  ];
+
+  FALLEN = [
+    { claim: "Dezembro e janeiro são pico nacional", size: "38px",
+      why: "Caiu por causa de Riomafra. Série de 5 anos: julho 34, dez/jan 2,5-7,9. Confirmado pelo BI: 494 e 78 interessados contra 4.120 em julho/25.",
+      facts: [["34", "julho · topo da série de 5 anos", "#00B9FF"], ["2,5 – 7,9", "dez/jan · o vale", "#FF5C5C"], ["4.120", "interessados em jul/25 · contra 494 e 78", "#fff"]],
+      kicker: "Custou centavos de coleta e evitou verba nacional no mês errado." },
+    { claim: "Quanto menor a cidade, mais o paciente fala de atendimento", size: "32px",
+      why: "Caiu quando medimos as quatro do mesmo jeito. A sequência 47·54·63·69 comparava coletas de tamanhos diferentes, não cidades diferentes. Medindo igual, todas ficam entre 58% e 66% e a ordem por tamanho de cidade some.",
+      facts: [["58% – 66%", "a faixa real das quatro praças", "#00B9FF"], ["847", "avaliações com texto, medidas do mesmo jeito", "#fff"]],
+      kicker: "" }
+  ];
+
+  VARIABLES = [
+    { city: "Londrina", accent: "#00B9FF", rows: [["Alavanca de preço", "confiança + preço justo"], ["Posição", "desafiante"], ["O inimigo", "clínica geral"], ["O que nunca dizer", "urgência de liquidação"]] },
+    { city: "Prudente", accent: "#7FD8FF", rows: [["Alavanca de preço", "clareza"], ["Posição", "líder"], ["O inimigo", "vácuo competitivo"], ["O que nunca dizer", "corporativês"]] },
+    { city: "Feira", accent: "#5FA9B2", rows: [["Alavanca de preço", "preço como orgulho"], ["Posição", "desafiante, 7x atrás"], ["O inimigo", "doutor pessoa física"], ["O que nunca dizer", "axé litorâneo"]] },
+    { city: "Riomafra", accent: "#C9DDF5", rows: [["Alavanca de preço", "palavra cumprida"], ["Posição", "melhor nota, 4ª em volume"], ["O inimigo", "rede popular + startup"], ["O que nunca dizer", "gíria gaúcha, Oktoberfest"]] }
+  ];
+
+  DEFAULT_PIECE = "SEMANA DO APARELHO! Últimos dias com condição especial. Aparelho sem entrada — agende agora mesmo sua avaliação!";
+
+  VERDICTS = [
+    { city: "Londrina", verdict: "RISCO", color: "#F5A057",
+      why: "Meio de funil: preço baixo levanta suspeita. A matriz briga na autoridade, não no preço.",
+      suggestLabel: "sugestão", suggest: "tratado por quem criou o padrão" },
+    { city: "Presidente Prudente", verdict: "ADAPTAR", color: "#F8D65D",
+      why: "A alavanca é clareza. A régua de tom que a cidade entregou foi “dignidade e humanismo”.",
+      suggestLabel: "sugestão", suggest: "você entende tudo antes de decidir" },
+    { city: "Feira de Santana", verdict: "FUNCIONA, COM CONDIÇÃO", color: "#3ED6B8",
+      why: "Preço é orgulho. Mas precisa falar como Feira, e a unidade já está num coro de 59 anúncios quase idênticos.",
+      suggestLabel: "sugestão", suggest: "cabe no seu bolso, meu rei" },
+    { city: "Riomafra", verdict: "CONFLITO", color: "#FF5C5C",
+      why: "“Últimos dias” aciona o radar antivigarista da colônia. A praça respeita palavra cumprida e desconfia de promessa grande.",
+      suggestLabel: "bloqueado", suggest: "urgência de liquidação" }
+  ];
+
+  METHOD = [
+    { k: "As duas coletas", accent: "#00B9FF", items: ["1ª coleta — 15/jul/2026", "2ª coleta — 07/ago/2026", "23 dias entre as duas", "3 conclusões do estudo corrigidas pela 2ª coleta"] },
+    { k: "O que foi coletado", accent: "#00B9FF", items: ["Riomafra — 452 vozes + 2ª coleta", "Londrina — 1.400+ vozes · 438 avaliações com texto", "Feira de Santana — 800+ vozes · 59 anúncios da categoria", "Presidente Prudente — 1.400+ vozes · 930 comentários de 12 perfis locais", "847 avaliações com texto, as quatro medidas do mesmo jeito"] },
+    { k: "De onde vêm os números", accent: "#00B9FF", items: ["Avaliações e placar de reputação por praça", "Biblioteca de anúncios da categoria", "Centro de Transparência do Google", "Reclame Aqui", "Comentários e seguidores de perfis locais", "dados/serie/funil.jsonl — dado interno da unidade", "Série de busca de 5 anos"] },
+    { k: "O que a amostra não cobre", accent: "#F8D65D", warn: true, items: ["Norte", "Centro-Oeste", "Capital", "Unidade recém-aberta", "Rádio, TV aberta, outdoor, panfleto e fachada", "Patrocínio de comunidade, escola e convênio", "Indicação e boca a boca"] }
+  ];
+
+  TRAVAS = [
+    "Não inventar número. Onde falta dado, a tela mostra o campo vazio.",
+    "Citação de paciente é verbatim. A imperfeição é a prova.",
+    "Nenhum número de unidade sem a ação ao lado.",
+    "Não ranquear franqueado de forma humilhante. O tom nunca acusa.",
+    "Cor de estado nunca é cor de marca.",
+    "Toda afirmação de mídia diz onde foi medida — “ausente do que dá para ver na internet”, nunca “a unidade está muda”.",
+    "Se a tela virou tabela sem filtro, busca e ordenação, refaz.",
+    "Se um componente só funciona com 4 itens, refaz para 340."
+  ];
+
+  NAO_VEMOS_BASE = [
+    { k: "TV aberta" },
+    { k: "Outdoor, panfleto, fachada" },
+    { k: "Parceria com escola e convênio" },
+    { k: "Indicação e boca a boca", v: "os quatro estudos apontam como o canal de decisão" }
+  ];
+
+  P = {
+    riomafra: {
+      name: "Riomafra", sub: "Mafra/SC · Rio Negro/PR",
+      tese: "A melhor clínica da cidade é a mais calada.",
+      lead: "Melhor reputação entre as grandes da praça, quase nenhuma ferida, e o ativo mais raro numa cidade de colônia: donos ortodontistas nascidos ali. Entrou na mídia paga depois da 1ª coleta — com conteúdo fora do que o plano pedia.",
+      base: "Base: 452 vozes + 2ª coleta em 07/ago",
+      snaps: {
+        jul: { nota: "4,9", aval: 155, ritmo: "0,7", anuncios: "0", agendamento: "5,9%" },
+        ago: { nota: "4,9", aval: 155, ritmo: "0", anuncios: "3", agendamento: "5,9%" }
+      },
+      deltas: { aval: "0", anuncios: "+3", ritmo: "−0,7" },
+      gauges: [
+        { key: "nota", label: "nota", pct: 0.98, tick: 0.96, color: "#3ED6B8", ref: "meta 4,8" },
+        { key: "aval", label: "avaliações", pct: 0.459, color: "#00B9FF", ref: "líder da praça 339" },
+        { key: "ritmo", label: "ritmo de avaliações novas", pct: 0.02, tick: 0.273, color: "#FF5C5C", ref: "mediana das unidades parecidas 4,1" },
+        { key: "anuncios", label: "anúncios ativos", pct: 0.5, tick: 0.667, color: "#F8D65D", ref: "meta 4 a 6" }
+      ],
+      funnel: [
+        { stage: "Interessados", n: "5.050", pct: "—", w: "100%", verdict: "topo do funil", neutral: true },
+        { stage: "Agendamentos", n: "298", pct: "5,9%", w: "5.9%", rule: "40%", verdict: "quebrado", ok: false, big: true },
+        { stage: "Comparecimentos", n: "147", pct: "49,3%", w: "49.3%", rule: "50%", verdict: "na régua", ok: true },
+        { stage: "Fechados", n: "110", pct: "74,8%", w: "74.8%", rule: "80%", verdict: "na régua", ok: true },
+        { stage: "Pagos", n: "109", pct: "99,1%", w: "99.1%", rule: "90%", verdict: "acima da régua", ok: true }
+      ],
+      velocity: [
+        { name: "Instituto Lumière", val: "43 / mês", v: 43 },
+        { name: "Edgard Góes", val: "16 / mês", v: 16 },
+        { name: "Cuidado e Prevenção", val: "4 / mês", v: 4 },
+        { name: "OdontoCompany Mafra", val: "1 / mês", v: 1 },
+        { name: "OrthoDontic Mafra", val: "0", v: 0, ours: true }
+      ],
+      velocityNote: "A unidade somou 10 avaliações em 14 meses; a vizinha fez 33 em 23 dias.",
+      placar: [
+        { name: "OdontoCompany Mafra", nota: "4,6", n: 339, delta: "+1", note: "rede popular · a nota caiu de 4,7" },
+        { name: "Instituto Lumière", nota: "5,0", n: 230, delta: "+33", note: "tráfego pago · 9 meses de vida" },
+        { name: "OdontoCompany Rio Negro", nota: "4,7", n: 188, delta: "0", note: "" },
+        { name: "OrthoDontic Mafra", nota: "4,9", n: 155, delta: "0", note: "a única especializada em ortodontia", ours: true },
+        { name: "Cuidado e Prevenção", nota: "4,9", n: 138, delta: "+3", note: "20 anos · dona do infantil" },
+        { name: "Edgard Góes", nota: "5,0", n: 115, delta: "+12", note: "consultório da margem paranaense" }
+      ],
+      season: [
+        { month: "JUL", label: "34", v: 34, peak: true },
+        { month: "AGO", label: "23", v: 23 },
+        { month: "SET", label: "22", v: 22 },
+        { month: "DEZ/JAN", label: "2,5–7,9", v: 7.9, band: true }
+      ],
+      midia: [
+        { k: "anúncio 1", v: "Sem texto." },
+        { k: "anúncio 2", v: "“Se liga nessa novidade que preparamos pra você! 🩵”" },
+        { k: "anúncio 3", v: "Manutenção de aparelho — fala com quem já é paciente." }
+      ],
+      dna: [
+        { k: "A língua", v: "O falar do planalto — “piá”, chimarrão, inverno de verdade. E dizer Riomafra: a praça é uma colônia partida pela divisa, com ônibus urbano cruzando a ponte." },
+        { k: "Temperamento", v: "Colônia discreta. Desconfia de promessa grande; respeita trabalho, constância e palavra cumprida." },
+        { k: "A alavanca", v: "Prova antes de promessa. Parcela clara." },
+        { k: "A joia enterrada", v: "O casal de ortodontistas que voltou pra casa em 2019. De 2 para 9 especialistas. Sobrenome da colônia no mapa das duas cidades — e ausente do feed." },
+        { k: "Nunca dizer", v: "Hype, urgência de liquidação, “última chance”. Nunca gíria gaúcha nem estética de Oktoberfest.", ban: true }
+      ],
+      vozes: [
+        { q: "A melhor clínica e os melhores dentistas!!!", who: "seguidor" },
+        { q: "Ótimo atendimento, preço justo e lugar aconchegante.", who: "paciente" },
+        { q: "falta de comunicação entre a equipe… fiquei 1 mês sem manutenção", who: "a única ferida, e é operacional" }
+      ],
+      naoVemosLocal: [
+        { k: "Rádio", v: "3 emissoras fortes, uma da paróquia, e um único balcão vende 3 das 4 frequências" },
+        { k: "Patrocínio de comunidade", v: "a unidade patrocina os escoteiros" }
+      ],
+      plan: [
+        { id: "a1", title: "Blindar manutenção e retenção", prazo: "15 dias", eff: "baixo → ALTO", state: "sem sinal" },
+        { id: "a2", title: "Ligar a máquina de avaliações (≥15/mês)", prazo: "15 dias", eff: "baixo → ALTO", state: "não executado", obs: "0 avaliações novas em 23 dias." },
+        { id: "a3", title: "Destravar o rosto", prazo: "30 dias", eff: "médio → ALTO", state: "sem sinal", obs: "Nenhum dos 3 anúncios tem rosto." },
+        { id: "a4", title: "Reocupar a especialidade no feed", prazo: "30 dias", eff: "médio → médio", state: "rever", obs: "O feed já é 45% ortodontia." },
+        { id: "a5", title: "Entrar na mídia paga JÁ", prazo: "7 a 14 dias", eff: "médio → ALTO", state: "executado", obs: "3 anúncios no ar, conteúdo fora do briefing." },
+        { id: "a6", title: "Reivindicar as duas margens: mostrar o anúncio só em Rio Negro", prazo: "60 dias", eff: "médio → médio", state: "sem sinal" },
+        { id: "a7", title: "Parcerias de comunidade: futsal 9-15, maternidade, festa de setembro", prazo: "90 dias", eff: "alto → médio", state: "sem sinal" }
+      ]
+    },
+
+    londrina: {
+      name: "Londrina — Souza Naves", sub: "PR · a matriz da rede",
+      tese: "A coroa que está escorregando.",
+      lead: "O maior volume de avaliações da cidade e a casa onde a rede nasceu em 2002. A Odontoclinic cresce três vezes mais rápido: no ritmo atual, a matriz perde o primeiro lugar em volume em cerca de dois meses.",
+      base: "Base: 1.400+ vozes · 438 avaliações com texto · 2ª coleta em 07/ago",
+      snaps: {
+        jul: { nota: "4,6", aval: 561, ritmo: "4", resposta: "0%" },
+        ago: { nota: "4,6", aval: 564, ritmo: "4", resposta: "0%" }
+      },
+      deltas: { aval: "+3" },
+      gauges: [
+        { key: "nota", label: "nota", pct: 0.92, tick: 0.96, color: "#F5A057", ref: "meta 4,8" },
+        { key: "aval", label: "avaliações", pct: 1, color: "#00B9FF", ref: "maior volume da cidade" },
+        { key: "ritmo", label: "ritmo de avaliações novas", pct: 0.093, tick: 0.273, color: "#F5A057", ref: "mediana das unidades parecidas 4,1" },
+        { key: "resposta", label: "responde avaliações", pct: 0, color: "#FF5C5C", ref: "a filial do Centro responde 61%" }
+      ],
+      velocity: [
+        { name: "Odontoclinic", val: "14 / mês", v: 14 },
+        { name: "OrthoDontic Souza Naves", val: "4 / mês", v: 4, ours: true }
+      ],
+      velocityNote: "A distância caiu de 28 para 20 avaliações em 23 dias. Engajamento: mediana de 1 curtida por post, contra 15 da Odontoclinic.",
+      placar: [
+        { name: "OrthoDontic Souza Naves", nota: "4,6", n: 564, delta: "+3", note: "a matriz · feed 93% ortodontia", ours: true },
+        { name: "Odontoclinic", nota: "4,9", n: 544, delta: "+11", note: "clínica geral · ultrapassa em ~2 meses" },
+        { name: "Especialista em ortodontia", nota: "4,6", n: 116, note: "" },
+        { name: "OrthoDontic Centro", nota: "3,8", n: 76, note: "a mesma marca · sem publicar desde março/2026 · responde 61%", ours: true, alert: true },
+        { name: "Classdent", nota: "—", note: "concorrente novo, nunca visto nos estudos · 19 anúncios ativos" }
+      ],
+      placarNote: "Atendimento aparece em 65% das avaliações com texto. A matriz responde 0% das avaliações; a filial do Centro, de pior nota, responde 61%.",
+      dna: [
+        { k: "A língua", v: "Orgulho de raiz e tradição, fé e família. Consumo por indicação." },
+        { k: "A alavanca", v: "Confiança + preço justo — barato levanta suspeita." },
+        { k: "A joia enterrada", v: "É a matriz, tocada por quem fundou a rede, na cidade onde a marca nasceu em 2002. Não aparece na comunicação." },
+        { k: "Nunca dizer", v: "Urgência de liquidação. O público de meio de funil lê desconto como suspeita.", ban: true }
+      ],
+      vozes: [
+        { q: "sempre me senti acolhido e hoje, ao fim do tratamento, me sinto muito realizado. Consigo sorrir novamente", who: "paciente" },
+        { q: "Dr. João nota 10, excelente doutor", who: "paciente" },
+        { q: "Graças a Deus li os comentários!!!", who: "mãe buscando dentista" }
+      ]
+    },
+
+    feira: {
+      name: "Feira de Santana — Centro", sub: "BA · a Princesa do Sertão",
+      tese: "Todos os caminhos levam à Feira. Menos o da própria clínica.",
+      lead: "616 mil habitantes, maior que oito capitais. A unidade tem a segunda melhor nota da praça e ficou estacionada enquanto o líder somou 30 avaliações em 23 dias.",
+      base: "Base: 800+ vozes · 59 anúncios da categoria · 2ª coleta em 07/ago",
+      snaps: {
+        jul: { nota: "4,7", aval: 173, ritmo: "2", resposta: "4%" },
+        ago: { nota: "4,7", aval: 170, ritmo: "2", resposta: "4%" }
+      },
+      deltas: { aval: "−3" },
+      gauges: [
+        { key: "nota", label: "nota", pct: 0.94, tick: 0.96, color: "#3ED6B8", ref: "meta 4,8" },
+        { key: "aval", label: "avaliações", pct: 0.131, color: "#F5A057", ref: "líder da praça 1.298" },
+        { key: "ritmo", label: "ritmo de avaliações novas", pct: 0.047, tick: 0.273, color: "#F5A057", ref: "mediana das unidades parecidas 4,1" },
+        { key: "resposta", label: "responde avaliações", pct: 0.04, color: "#F5A057", ref: "líder responde 0% e cresce ~39/mês" }
+      ],
+      velocity: [
+        { name: "Moisés Suzart", val: "39 / mês", v: 39 },
+        { name: "OrthoDontic Feira", val: "2 / mês", v: 2, ours: true }
+      ],
+      velocityNote: "A queda de 173 para 170 é limpeza do Google, não represália: entraram 2 avaliações em julho. A unidade já fez 17 num único mês, em jul/2025.",
+      placar: [
+        { name: "Moisés Suzart", nota: "4,9", n: 1298, delta: "+30", note: "doutor pessoa física · não compra busca, não responde avaliação" },
+        { name: "OrthoDontic Feira", nota: "4,7", n: 170, delta: "−3", note: "feed 57% ortodontia · mediana 3 curtidas", ours: true },
+        { name: "OdontoCompany", nota: "4,4", n: 56, note: "a 400 m" },
+        { name: "Faculdade", nota: "4,4", n: 9, note: "clínica-escola" }
+      ],
+      placarNote: "Atendimento aparece em 65% das avaliações com texto. A unidade responde 4%.",
+      dna: [
+        { k: "A língua", v: "Baianês de sertão — “oxe”, “meu rei”, “massa”, “arrochar”. Feira é a Princesa do Sertão, não litoral." },
+        { k: "A alavanca", v: "Preço como orgulho: pagar menos e sair por cima é virtude." },
+        { k: "A joia enterrada", v: "Nenhuma ainda. A unidade é invisível fora do Google. Aqui a estratégia é construir pertencimento, não desenterrar patrimônio.", empty: true },
+        { k: "Nunca dizer", v: "Axé litorâneo de vitrine — soa a quem confundiu Feira com Salvador.", ban: true }
+      ],
+      vozes: [
+        { q: "Preço acessível e me trataram como gente. Amei.", who: "paciente" },
+        { q: "marca horário e atende 2, 3, 4 horas depois", who: "paciente · a ferida é operacional" }
+      ]
+    },
+
+    prudente: {
+      name: "Presidente Prudente", sub: "SP · 1ª franquia da rede · 02/05/2005",
+      tese: "O tesouro guardado na gaveta.",
+      lead: "A praça mais saudável da amostra. Cresce ~13 avaliações por mês, o melhor ritmo da rede, e deve ultrapassar a NEXA em volume em cerca de dois meses. Das 84 avaliações com texto: 83 de cinco estrelas, 1 de uma, zero no meio.",
+      base: "Base: 1.400+ vozes · 930 comentários de 12 perfis locais · 2ª coleta em 07/ago",
+      snaps: {
+        jul: { nota: "4,9", aval: 582, ritmo: "13", resposta: "0%" },
+        ago: { nota: "4,9", aval: 592, ritmo: "13", resposta: "0%" }
+      },
+      deltas: { aval: "+10" },
+      gauges: [
+        { key: "nota", label: "nota", pct: 0.98, tick: 0.96, color: "#3ED6B8", ref: "meta 4,8" },
+        { key: "aval", label: "avaliações", pct: 0.956, color: "#3ED6B8", ref: "NEXA 619 · ultrapassa em ~2 meses" },
+        { key: "ritmo", label: "ritmo de avaliações novas", pct: 0.302, tick: 0.273, color: "#3ED6B8", ref: "mediana das unidades parecidas 4,1" },
+        { key: "resposta", label: "responde avaliações", pct: 0, color: "#FF5C5C", ref: "a NEXA responde 100% e cresce 1,3/mês" }
+      ],
+      velocity: [
+        { name: "OrthoDontic Prudente", val: "13 / mês", v: 13, ours: true },
+        { name: "NEXA", val: "1,3 / mês", v: 1.3 }
+      ],
+      velocityNote: "O melhor ritmo da rede — e a única praça onde a unidade corre mais que o líder de volume.",
+      placar: [
+        { name: "NEXA", nota: "4,7", n: 619, delta: "+1", note: "clínica geral · responde 100%" },
+        { name: "OrthoDontic Prudente", nota: "4,9", n: 592, delta: "+10", note: "líder em nota · feed 71% ortodontia", ours: true },
+        { name: "Dentoclinic", nota: "5,0", n: 77, note: "" },
+        { name: "Croorto", nota: "4,7", n: 52, note: "" },
+        { name: "Todos Sorrindo", nota: "4,9", n: 34, note: "" },
+        { name: "Sorrifácil", nota: "4,6", n: 31, note: "" }
+      ],
+      placarNote: "Atendimento aparece em 58% das avaliações com texto. A unidade responde 0%.",
+      dna: [
+        { k: "A língua", v: "Superlativo local. A régua de tom a cidade entregou: “que tratem as pessoas com dignidade e humanismo” — o comentário mais curtido do que foi coletado." },
+        { k: "A alavanca", v: "Clareza, não preço. O que sustenta o 4,9 é “explicam tudo direito”." },
+        { k: "A joia enterrada", v: "A primeira franquia de toda a rede, aberta por dois prudentinos em 02/05/2005." },
+        { k: "Nunca dizer", v: "Corporativês.", ban: true }
+      ],
+      vozes: [
+        { q: "Já passei por lá — e agora são meus filhos.", who: "paciente" },
+        { q: "explicam tudo direito", who: "paciente" },
+        { q: "me lembro do dia 02/05/2005, dia da inauguração!!", who: "moradora · 21 anos depois" }
+      ]
+    }
+  };
+
+  sevColor(s) { return s === "CRÍTICO" ? "#FF5C5C" : s === "GRAVE" ? "#F5A057" : "#F8D65D"; }
+
+  componentDidMount() {
+    this.animateCounts();
+    this._key = (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") { e.preventDefault(); this.setState({ searchOpen: true }); }
+      if (e.key === "Escape") this.setState({ searchOpen: false, drawer: null });
+    };
+    window.addEventListener("keydown", this._key);
+    this._rs = () => this.setState({ vw: window.innerWidth });
+    window.addEventListener("resize", this._rs);
+  }
+  componentWillUnmount() {
+    window.removeEventListener("keydown", this._key);
+    window.removeEventListener("resize", this._rs);
+  }
+
+  animateCounts() {
+    const targets = [8, 336, 23, 3];
+    if (this.noMotion()) { this.setState({ counts: targets }); return; }
+    const t0 = performance.now(), dur = 1100;
+    const tick = (t) => {
+      const p = Math.min(1, (t - t0) / dur);
+      const e = 1 - Math.pow(1 - p, 3);
+      this.setState({ counts: targets.map((v) => Math.round(v * e)) });
+      if (p < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }
+
+  go(screen, praca) {
+    this.setState((s) => ({ screen, praca: praca || s.praca, searchOpen: false }));
+    if (screen === "control") setTimeout(() => this.animateCounts(), 30);
+    window.scrollTo(0, 0);
+  }
+
+  buildDrawer(key) {
+    const e = this.EVIDENCE[key];
+    if (!e) return null;
+    return {
+      city: e.city, value: e.value, color: e.color, caption: e.caption, reading: e.reading,
+      counter: e.counter || "", confLabel: e.confLabel,
+      conf: [0, 1, 2].map((i) => ({ bg: i < e.conf ? e.color : "rgba(255,255,255,.14)" })),
+      meta: e.meta.map((m) => ({ k: m[0], v: m[1] }))
+    };
+  }
+
+  searchIndex() {
+    const out = [];
+    this.MAP.forEach((m) => out.push({ kind: "praça", label: m.name, tag: m.nota, tagColor: "rgba(255,255,255,.72)", go: () => this.go("praca", m.id) }));
+    this.SIGNALS.forEach((s) => out.push({
+      kind: "sinal", label: s.city + " — " + s.title, tag: s.sev, tagColor: this.sevColor(s.sev),
+      go: () => this.setState({ screen: "control", searchOpen: false, drawer: this.buildDrawer(s.ev) })
+    }));
+    this.FINDINGS.forEach((f) => out.push({ kind: "achado", label: f.t, tag: f.score, tagColor: f.score === "4/4" ? "#3ED6B8" : "#F8D65D", go: () => this.go("learned") }));
+    this.FALLEN.forEach((d) => out.push({ kind: "caiu", label: d.claim, tag: "caiu", tagColor: "#FF5C5C", go: () => this.go("learned") }));
+    return out;
+  }
+
+  pracaVals() {
+    const st = this.state;
+    const p = this.P[st.praca];
+    const C = 2 * Math.PI * 46;
+    const cmp = st.snap === "cmp";
+    const cur = st.snap === "jul" ? p.snaps.jul : p.snaps.ago;
+    const showDelta = st.snap !== "jul";
+
+    const maxVel = Math.max.apply(null, p.velocity.map((v) => v.v)) || 1;
+    const maxN = Math.max.apply(null, p.placar.map((c) => c.n || 0)) || 1;
+
+    const dcolor = (d) => !d ? "var(--t3)" : d.indexOf("−") === 0 ? "#F5A057" : d === "0" ? "var(--t3)" : "#3ED6B8";
+
+    const ponteiros = [];
+    ponteiros.push({ k: "nota", v: cur.nota, color: "#fff" });
+    ponteiros.push({ k: "avaliações", v: String(cur.aval), color: "#fff", delta: showDelta ? p.deltas.aval : "", deltaColor: dcolor(p.deltas.aval) });
+    ponteiros.push({ k: "novas/mês", v: cur.ritmo, color: cur.ritmo === "0" || cur.ritmo === "0,7" ? "#FF5C5C" : "#F8D65D" });
+    if (cur.anuncios !== undefined) ponteiros.push({ k: "anúncios ativos", v: cur.anuncios, color: cur.anuncios === "0" ? "#FF5C5C" : "#F8D65D", delta: showDelta ? p.deltas.anuncios : "", deltaColor: dcolor(p.deltas.anuncios) });
+    if (cur.agendamento) ponteiros.push({ k: "agendamento", v: cur.agendamento + " · régua 40%", color: "#FF5C5C" });
+    if (cur.resposta !== undefined) ponteiros.push({ k: "responde", v: cur.resposta, color: cur.resposta === "0%" ? "#FF5C5C" : "#F5A057" });
+
+    const gauges = p.gauges.map((g) => {
+      const val = g.key === "aval" ? String(cur.aval) : cur[g.key];
+      const jul = g.key === "aval" ? String(p.snaps.jul.aval) : p.snaps.jul[g.key];
+      const pct = (st.snap === "jul" && g.key === "aval") ? (p.snaps.jul.aval / (cur.aval || 1)) * g.pct : g.pct;
+      return {
+        label: g.label, value: val === undefined ? "—" : val, color: g.color, ref: g.ref,
+        refColor: g.ref.indexOf("mediana") === 0 ? "var(--t2)" : "var(--t3)",
+        dash: (Math.max(0, Math.min(1, pct)) * C).toFixed(1) + " " + C.toFixed(1),
+        hasTick: g.tick !== undefined, tick: g.tick !== undefined ? (g.tick * 360).toFixed(1) : 0,
+        delta: (cmp && g.key === "aval" && p.deltas.aval) ? p.deltas.aval + " desde 15/jul" : "",
+        deltaColor: dcolor(p.deltas.aval)
+      };
+    });
+
+    const STATE_COLOR = {
+      "não executado": ["#FF5C5C", "rgba(255,92,92,.14)", "rgba(255,92,92,.4)"],
+      "executado": ["#3ED6B8", "rgba(62,214,184,.14)", "rgba(62,214,184,.4)"],
+      "rever": ["#F8D65D", "rgba(248,214,93,.14)", "rgba(248,214,93,.4)"],
+      "sem sinal": ["rgba(255,255,255,.6)", "rgba(255,255,255,.04)", "rgba(255,255,255,.12)"]
+    };
+
+    const planIds = p.plan ? (st.planOrder || p.plan.map((a) => a.id)) : null;
+    const planList = planIds ? planIds.map((id) => p.plan.filter((a) => a.id === id)[0]).filter(Boolean) : null;
+
+    const voices = p.vozes;
+    const vi = ((st.voiceIdx % voices.length) + voices.length) % voices.length;
+
+    return {
+      p: {
+        name: p.name, sub: p.sub, tese: p.tese, lead: p.lead, base: p.base,
+        ponteiros: ponteiros,
+        placarCorte: st.snap === "jul" ? "corte 15/jul" : "corte 07/ago · variação desde 15/jul",
+        placarNote: p.placarNote || "",
+        velocityNote: p.velocityNote,
+        funnel: p.funnel ? p.funnel.map((f) => ({
+          stage: f.stage, n: f.n, pct: f.pct, w: f.w, verdict: f.verdict,
+          color: f.neutral ? "rgba(255,255,255,.22)" : f.ok ? "#3ED6B8" : "#FF5C5C",
+          hasRule: !!f.rule, rule: f.rule, ruleLabel: f.rule,
+          pad: f.big ? "24px 22px" : "14px 20px", barH: f.big ? "20px" : "10px",
+          nameSize: f.big ? "20px" : "15px", pctSize: f.big ? "26px" : "15px",
+          rowBg: f.big ? "rgba(255,92,92,.09)" : "rgba(255,255,255,.02)",
+          rowBorder: f.big ? "rgba(255,92,92,.32)" : "rgba(255,255,255,.06)"
+        })) : null,
+        velocity: p.velocity.map((v) => ({
+          name: v.name, val: v.val, w: Math.max(1.2, (v.v / maxVel) * 100) + "%",
+          color: v.ours ? "var(--od-cyan)" : "rgba(255,255,255,.20)",
+          fg: v.ours ? "#fff" : "rgba(255,255,255,.62)", fw: v.ours ? 700 : 500
+        })),
+        placar: p.placar.map((c) => {
+          const n = st.snap === "jul" && c.delta ? c.n - Number(String(c.delta).replace("−", "-").replace("+", "")) : c.n;
+          return {
+            name: c.name, nota: c.nota, note: c.note,
+            n: n ? n.toLocaleString("pt-BR") : "—",
+            w: c.n ? (n / maxN) * 100 + "%" : "0%",
+            showDelta: showDelta && !!c.delta, delta: c.delta || "", deltaColor: dcolor(c.delta),
+            bg: c.ours ? "rgba(0,185,255,.09)" : "rgba(255,255,255,.02)",
+            border: c.alert ? "rgba(255,92,92,.34)" : c.ours ? "var(--hair-lit)" : "rgba(255,255,255,.06)",
+            fg: c.ours ? "#fff" : "rgba(255,255,255,.78)", fw: c.ours ? 700 : 500,
+            noteColor: c.alert ? "#FF5C5C" : c.ours ? "var(--od-cyan)" : "rgba(255,255,255,.62)",
+            barColor: c.ours ? "var(--od-cyan)" : "rgba(255,255,255,.18)"
+          };
+        }),
+        season: p.season ? p.season.map((m) => ({
+          month: m.month, label: m.label, h: Math.max(6, (m.v / 34) * 100) + "%",
+          bg: m.band ? "repeating-linear-gradient(135deg, rgba(255,255,255,.10) 0 6px, transparent 6px 12px)" : m.peak ? "var(--grad-cyan)" : "rgba(255,255,255,.16)",
+          border: m.band ? "1px dashed rgba(255,255,255,.24)" : "0",
+          color: m.peak ? "var(--od-cyan)" : "rgba(255,255,255,.72)",
+          tip: m.band ? "faixa dez/jan: índice 2,5 a 7,9" : "índice " + m.label
+        })) : null,
+        midia: p.midia || null,
+        dna: p.dna.map((d) => ({
+          k: d.k, v: d.v,
+          accent: d.ban ? "#FF5C5C" : d.empty ? "rgba(255,255,255,.48)" : "var(--od-cyan)",
+          fg: d.empty ? "rgba(255,255,255,.72)" : "#fff",
+          bg: d.ban ? "rgba(255,92,92,.06)" : d.empty ? "rgba(255,255,255,.02)" : "linear-gradient(168deg, rgba(2,32,95,.72) 0%, rgba(0,26,92,.55) 100%)",
+          border: d.ban ? "rgba(255,92,92,.30)" : d.empty ? "rgba(255,255,255,.16)" : "var(--hair)"
+        })),
+        naoVemos: (p.naoVemosLocal || []).concat(this.NAO_VEMOS_BASE).map((v) => ({ k: v.k, v: v.v || "", gap: v.v ? "8px" : "0px" }))
+      },
+      gauges: gauges,
+      snapTabs: [["jul", "15/jul"], ["ago", "07/ago"], ["cmp", "comparar"]].map((s) => {
+        const on = st.snap === s[0];
+        return {
+          label: s[1], pick: () => this.setState({ snap: s[0] }),
+          bg: on ? "rgba(0,185,255,.18)" : "transparent",
+          fg: on ? "#fff" : "rgba(255,255,255,.55)"
+        };
+      }),
+      pracaTabs: this.PRACAS.map((x) => {
+        const on = st.praca === x.id;
+        return {
+          label: x.label, go: () => this.setState({ praca: x.id, voiceIdx: 0, planOrder: null }),
+          bg: on ? "rgba(0,185,255,.14)" : "rgba(255,255,255,.03)",
+          border: on ? "rgba(0,185,255,.44)" : "rgba(255,255,255,.10)",
+          fg: on ? "#fff" : "rgba(255,255,255,.62)"
+        };
+      }),
+      voice: { q: voices[vi].q, who: voices[vi].who, idx: (vi + 1) + " / " + voices.length },
+      prevVoice: () => this.setState((s) => ({ voiceIdx: s.voiceIdx - 1 })),
+      nextVoice: () => this.setState((s) => ({ voiceIdx: s.voiceIdx + 1 })),
+      openFunnelEv: () => this.setState({ drawer: this.buildDrawer("agendamento") }),
+      plan: planList ? planList.map((a, i) => {
+        const c = STATE_COLOR[a.state] || STATE_COLOR["sem sinal"];
+        return {
+          num: String(i + 1).padStart(2, "0"), title: a.title, prazo: a.prazo, eff: a.eff,
+          obs: a.obs || "", state: a.state,
+          effColor: a.eff.indexOf("ALTO") > -1 ? "#3ED6B8" : "rgba(255,255,255,.48)",
+          border: a.state === "não executado" ? "rgba(255,92,92,.34)" : "var(--hair)",
+          bg: a.state === "não executado" ? "linear-gradient(168deg, rgba(255,92,92,.10) 0%, rgba(0,26,92,.55) 70%)" : "linear-gradient(168deg, rgba(2,32,95,.72) 0%, rgba(0,26,92,.55) 100%)",
+          stateFg: c[0], stateBg: c[1], stateBorder: c[2],
+          dragStart: () => { this._drag = a.id; },
+          dragOver: (e) => e.preventDefault(),
+          drop: () => this.setState((s) => {
+            const order = (s.planOrder || p.plan.map((x) => x.id)).slice();
+            const from = order.indexOf(this._drag), to = order.indexOf(a.id);
+            if (from < 0 || to < 0 || from === to) return {};
+            order.splice(to, 0, order.splice(from, 1)[0]);
+            return { planOrder: order };
+          })
+        };
+      }) : null
+    };
+  }
+
+  gridVals() {
+    const st = this.state;
+    const q = st.gridQuery.trim().toLowerCase();
+    let rows = this.GRID.slice();
+    if (st.gridFilter) rows = rows.filter((r) => r[st.gridFilter[0]] === st.gridFilter[1]);
+    if (q) rows = rows.filter((r) => (r.name + " " + r.regiao + " " + r.porte + " " + r.safra).toLowerCase().indexOf(q) > -1);
+    rows.sort((a, b) => {
+      const k = st.gridSort;
+      const av = a[k], bv = b[k];
+      if (typeof av === "number") return (av - bv) * st.gridDir;
+      return String(av).localeCompare(String(bv)) * st.gridDir;
+    });
+
+    const dims = [["regiao", "Sul"], ["regiao", "Sudeste"], ["regiao", "Nordeste"], ["porte", "grande"], ["porte", "média"]];
+    const cols = [["name", "praça"], ["regiao", "região"], ["porte", "porte de cidade"], ["safra", "safra"], ["sinais", "sinais abertos"]];
+
+    return {
+      gridQuery: st.gridQuery,
+      onGridQuery: (e) => this.setState({ gridQuery: e.target.value }),
+      gridFilters: [["", "todas"]].concat(dims).map((d) => {
+        const on = d[0] === "" ? !st.gridFilter : (st.gridFilter && st.gridFilter[0] === d[0] && st.gridFilter[1] === d[1]);
+        return {
+          dim: d[0] === "" ? "filtro" : d[0] === "regiao" ? "região" : "porte", label: d[1],
+          pick: () => this.setState({ gridFilter: d[0] === "" ? null : [d[0], d[1]] }),
+          border: on ? "rgba(0,185,255,.44)" : "rgba(255,255,255,.10)",
+          bg: on ? "rgba(0,185,255,.12)" : "rgba(255,255,255,.03)",
+          fg: on ? "#fff" : "rgba(255,255,255,.62)"
+        };
+      }),
+      gridCols: cols.map((c) => ({
+        label: c[1],
+        arrow: st.gridSort === c[0] ? (st.gridDir === 1 ? "▲" : "▼") : "",
+        fg: st.gridSort === c[0] ? "#fff" : "rgba(255,255,255,.48)",
+        sort: () => this.setState((s) => ({ gridSort: c[0], gridDir: s.gridSort === c[0] ? -s.gridDir : -1 }))
+      })),
+      gridRows: rows.map((r) => ({
+        name: r.name, regiao: r.regiao, porte: r.porte, safra: r.safra, sinais: r.sinais,
+        sinaisColor: r.sinais > 2 ? "#FF5C5C" : r.sinais > 0 ? "#F5A057" : "#3ED6B8",
+        go: () => this.go("praca", r.id)
+      })),
+      gridCount: rows.length + " de 340 linhas · " + (340 - this.GRID.length) + " aguardando a primeira coleta",
+      coverage: this.COVERAGE.map((c) => ({
+        k: c.k, n: c.n, tag: c.tag,
+        color: c.n === 0 ? "#F8D65D" : "#00B9FF",
+        border: c.n === 0 ? "rgba(248,214,93,.30)" : "var(--hair)",
+        bg: c.n === 0 ? "rgba(248,214,93,.06)" : "rgba(255,255,255,.03)"
+      }))
+    };
+  }
+
+  libVals() {
+    const st = this.state;
+    const cities = ["Riomafra", "Feira de Santana", "Londrina", "Presidente Prudente"];
+    return {
+      stages: [
+        { label: "SINAL ISOLADO", n: 0, hint: "vimos em 1 ou 2 praças", arrow: true },
+        { label: "SE REPETE", n: 13, hint: "vimos em 3 ou mais", arrow: true, on: true },
+        { label: "VALE PARA A REDE", n: 0, hint: "vimos em praças bem diferentes entre si", arrow: true },
+        { label: "VIROU REGRA", n: 0, hint: "a rede decidiu agir" }
+      ].map((s) => ({
+        arrow: s.arrow && st.vw >= 1180,
+        label: s.label, n: s.n, hint: s.hint,
+        color: s.on ? "#00B9FF" : "rgba(255,255,255,.26)",
+        labelColor: s.on ? "#fff" : "rgba(255,255,255,.42)",
+        bg: s.on ? "rgba(0,185,255,.10)" : "rgba(255,255,255,.02)",
+        border: s.on ? "var(--hair-lit)" : "var(--hair)"
+      })),
+      findings: this.FINDINGS.map((f, i) => ({
+        num: String(i + 1).padStart(2, "0"), t: f.t, ev: f.ev || "", score: f.score,
+        scoreColor: f.score === "4/4" ? "#3ED6B8" : "#F8D65D",
+        dots: cities.map((c, j) => ({
+          title: c, bg: f.miss === j ? "transparent" : "rgba(62,214,184,.75)",
+          border: f.miss === j ? "rgba(255,255,255,.30)" : "rgba(62,214,184,.75)"
+        })),
+        series: f.series ? f.series.map((s) => ({ k: s[0], v: s[1] + "%", h: (s[1] / 70) * 100 + "%" })) : null
+      })),
+      fallen: this.FALLEN.map((d) => ({
+        claim: d.claim, why: d.why, size: d.size, kicker: d.kicker || "",
+        facts: d.facts.map((x) => ({ v: x[0], k: x[1], color: x[2] }))
+      })),
+      variables: this.VARIABLES.map((v) => ({
+        city: v.city, accent: v.accent,
+        rows: v.rows.map((r) => ({ k: r[0], v: r[1], fg: r[0] === "O que nunca dizer" ? "#FF9C9C" : "#fff" }))
+      })),
+      piece: st.piece === undefined ? this.DEFAULT_PIECE : st.piece,
+      onPiece: (e) => this.setState({ piece: e.target.value }),
+      analyze: () => {
+        this.setState({ step: 0 });
+        [1, 2, 3, 4].forEach((n, i) => setTimeout(() => this.setState({ step: n }), this.noMotion() ? 0 : 260 + i * 320));
+      },
+      resetAnalysis: () => this.setState({ step: 0 }),
+      analysisStatus: st.step === 0 ? "nenhuma análise nesta sessão" : st.step < 4 ? "confrontando praça " + st.step + " de 4…" : "4 praças confrontadas · corte 07/ago/2026",
+      verdicts: this.VERDICTS.map((v, i) => {
+        const on = st.step > i;
+        return {
+          city: v.city, verdict: v.verdict, why: v.why, suggest: v.suggest, suggestLabel: v.suggestLabel,
+          color: v.color, opacity: on ? 1 : 0.14, transform: on ? "none" : "translateY(12px)",
+          border: on ? "rgba(255,255,255,.16)" : "var(--hair)",
+          bg: on ? "linear-gradient(168deg, rgba(2,32,95,.78) 0%, rgba(0,26,92,.58) 100%)" : "rgba(255,255,255,.02)"
+        };
+      }),
+      reach: [
+        { label: "Publicações de unidade com o embaixador", n: "1", total: "156", w: "0.64%", color: "#F5A057" },
+        { label: "Criativos nacionais com o jingle", n: "1", total: "34", w: "2.9%", color: "#F5A057" },
+        { label: "Menções espontâneas ao embaixador", n: "0", total: "2.834 vozes", w: "0%", color: "#FF5C5C" }
+      ],
+      methodCards: this.METHOD.map((m) => ({
+        k: m.k, accent: m.accent, items: m.items,
+        border: m.warn ? "rgba(248,214,93,.30)" : "var(--hair)",
+        bg: m.warn ? "rgba(248,214,93,.05)" : "linear-gradient(168deg, rgba(2,32,95,.72) 0%, rgba(0,26,92,.55) 100%)"
+      })),
+      travas: this.TRAVAS.map((t, i) => ({ n: String(i + 1).padStart(2, "0"), v: t }))
+    };
+  }
+
+  renderVals() {
+    const st = this.state;
+    const screen = this.scr();
+    const heroColors = ["#FF5C5C", "rgba(255,255,255,.34)", "var(--od-cyan)", "#3ED6B8"];
+    const heroLabels = ["sinais abertos", "praças ainda não ouvidas", "dias entre a 1ª e a 2ª coleta", "conclusões do estudo corrigidas pela 2ª coleta"];
+
+    let sig = this.SIGNALS;
+    if (st.escopo === "Unidade") sig = sig.filter((s) => s.city !== "Rede");
+    if (st.escopo === "Rede") sig = sig.filter((s) => s.city === "Rede");
+    const filtered = st.sev === "Todos" ? sig : sig.filter((s) => s.sev === st.sev);
+
+    const sevCounts = { "Todos": sig.length };
+    ["CRÍTICO", "GRAVE", "ATENÇÃO"].forEach((k) => { sevCounts[k] = sig.filter((s) => s.sev === k).length; });
+
+    const q = st.query.trim().toLowerCase();
+    const idx = this.searchIndex();
+    const results = q ? idx.filter((r) => (r.label + " " + r.kind).toLowerCase().indexOf(q) > -1).slice(0, 8) : idx.slice(0, 6);
+
+    const hoverCity = st.hover ? this.MAP.filter((m) => m.id === st.hover)[0] : null;
+
+    return {
+      logoH: 22, icSize: 18, yes: true,
+      wide: st.vw >= 1200,
+      reduced: this.noMotion(),
+      isControl: screen === "control",
+      isPraca: screen === "praca",
+      isUnheard: screen === "unheard",
+      isLearned: screen === "learned",
+      isCorrector: screen === "corrector",
+      isMethod: screen === "method",
+
+      heroTextStyle: st.vw >= 1200
+        ? { position: "absolute", top: "36px", left: "38px", zIndex: 3, maxWidth: "430px" }
+        : { position: "relative", zIndex: 3, padding: "32px 30px 0", maxWidth: "620px" },
+      heroMapStyle: st.vw >= 1200
+        ? { position: "absolute", inset: 0, zIndex: 2 }
+        : { position: "relative", zIndex: 2, height: "440px", marginTop: "12px" },
+
+      nav: this.NAV.map((n) => {
+        const on = screen === n.id;
+        return {
+          label: n.label, count: n.count || "", icon: n.icon, children: !!n.children,
+          go: () => this.go(n.id),
+          bg: on ? "rgba(0,185,255,.13)" : "transparent",
+          fg: on ? "#fff" : "rgba(255,255,255,.72)",
+          ic: on ? "#00B9FF" : "rgba(255,255,255,.48)",
+          fw: on ? 700 : 500
+        };
+      }),
+      pracaNav: this.PRACAS.map((p) => {
+        const on = screen === "praca" && st.praca === p.id;
+        return {
+          label: p.label, dot: p.dot, go: () => this.go("praca", p.id),
+          bg: on ? "rgba(0,185,255,.13)" : "transparent",
+          fg: on ? "#fff" : "rgba(255,255,255,.62)", fw: on ? 700 : 500
+        };
+      }),
+
+      mapCities: this.MAP,
+      onMapHover: (id, x, y) => this.setState({ hover: id, hx: x, hy: y }),
+      onMapSelect: (id) => this.go("praca", id),
+      hover: hoverCity ? Object.assign({}, hoverCity, { sigColor: hoverCity.sinais > 2 ? "#FF5C5C" : hoverCity.sinais > 0 ? "#F5A057" : "#3ED6B8" }) : null,
+      hoverStyle: { position: "absolute", left: st.hx + 26 + "px", top: st.hy - 40 + "px", zIndex: 6, pointerEvents: "none" },
+
+      heroStats: st.counts.map((v, i) => ({ value: v.toLocaleString("pt-BR"), label: heroLabels[i], color: heroColors[i] })),
+
+      sevFilters: ["Todos", "CRÍTICO", "GRAVE", "ATENÇÃO"].map((k) => {
+        const on = st.sev === k;
+        return {
+          label: k === "Todos" ? "Todos" : k.charAt(0) + k.slice(1).toLowerCase(), n: sevCounts[k],
+          pick: () => this.setState({ sev: k }),
+          dot: k === "Todos" ? "#FFFFFF" : this.sevColor(k),
+          border: on ? "rgba(0,185,255,.44)" : "rgba(255,255,255,.10)",
+          bg: on ? "rgba(0,185,255,.12)" : "rgba(255,255,255,.03)",
+          fg: on ? "#fff" : "rgba(255,255,255,.62)"
+        };
+      }),
+      scopeFilters: ["Todos", "Unidade", "Rede"].map((k) => {
+        const on = st.escopo === k;
+        return {
+          label: k, pick: () => this.setState({ escopo: k }),
+          bg: on ? "rgba(0,185,255,.18)" : "transparent",
+          fg: on ? "#fff" : "rgba(255,255,255,.55)"
+        };
+      }),
+
+      signals: filtered.map((s, i) => ({
+        sev: s.sev, tipo: s.tipo, escopo: s.escopo, title: s.title, what: s.what, todo: s.todo,
+        window: s.window, metric: s.metric || null,
+        color: this.sevColor(s.sev),
+        chipBg: s.sev === "CRÍTICO" ? "rgba(255,92,92,.14)" : s.sev === "GRAVE" ? "rgba(245,160,87,.14)" : "rgba(248,214,93,.14)",
+        delay: (i * 70) + "ms",
+        group: s.group ? s.group.map((g) => ({ name: g[0], value: g[1], color: g[2] })) : null,
+        groupLabel: s.groupLabel || "",
+        groupSign: st.openGroup === s.id ? "−" : "+",
+        open: st.openGroup === s.id,
+        toggle: () => this.setState((x) => ({ openGroup: x.openGroup === s.id ? null : s.id })),
+        openEv: () => this.setState({ drawer: this.buildDrawer(s.ev) })
+      })),
+
+      drawer: st.drawer,
+      closeDrawer: () => this.setState({ drawer: null }),
+
+      searchOpen: st.searchOpen, query: st.query,
+      openSearch: () => this.setState({ searchOpen: true }),
+      closeSearch: () => this.setState({ searchOpen: false }),
+      stop: (e) => e.stopPropagation(),
+      onQuery: (e) => this.setState({ query: e.target.value }),
+      results: results, noResults: results.length === 0,
+
+      ...this.pracaVals(),
+      ...this.gridVals(),
+      ...this.libVals()
+    };
+  }
+}
+
+</script>
+</body>
+</html>

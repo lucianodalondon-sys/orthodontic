@@ -1,0 +1,27 @@
+/* ============================================================
+   OrthoDontic — Webfonts
+   Manual p.06: "Família Gotham — Light, Book, Bold e Black".
+   Licensed Gotham files supplied by the brand and shipped here.
+   Weight map: 300 Light · 400 Book · 500 Medium · 700 Bold · 900 Black.
+   Montserrat remains only as a system fallback in the font stack.
+   ============================================================ */
+@font-face {
+  font-family: "Gotham"; font-style: normal; font-weight: 300;
+  font-display: swap; src: url("assets/fonts/gotham-300.otf") format("opentype");
+}
+@font-face {
+  font-family: "Gotham"; font-style: normal; font-weight: 400;
+  font-display: swap; src: url("assets/fonts/gotham-400.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gotham"; font-style: normal; font-weight: 500;
+  font-display: swap; src: url("assets/fonts/gotham-500.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gotham"; font-style: normal; font-weight: 700;
+  font-display: swap; src: url("assets/fonts/gotham-700.otf") format("opentype");
+}
+@font-face {
+  font-family: "Gotham"; font-style: normal; font-weight: 900;
+  font-display: swap; src: url("assets/fonts/gotham-900.otf") format("opentype");
+}

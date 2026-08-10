@@ -4,19 +4,46 @@ Este prompt substitui TODOS os anteriores (v2 a v5).
 
 ## 0 · A decisão mais importante: a identidade JÁ EXISTE
 
-O cliente aprovou o design da pasta **`referencia-aprovada/`** deste
-projeto — o portal escuro com o logo + INTELIGÊNCIA espaçado no topo, a
-busca, as abas, os números em fonte mono, o placar com links em ciano e
-os selos (OPERAÇÃO · CAMPANHA · RAJADA · PARADA). Tudo que veio depois
-dele foi rejeitado.
+O cliente aprovou **o PRIMEIRO design**, o arquivo
+**`referencia-aprovada/OrthoDontic Intelligence.dc.html`** — foi sobre
+ele que ele disse "tô gostando do design". Tudo que veio depois foi
+rejeitado, inclusive o `v2` (que está na pasta só para comparação) e
+qualquer casco montado fora do Claude Design.
 
-**NÃO redesenhe. NÃO invente identidade nova.** O trabalho é EVOLUIR a
-referência aprovada para a arquitetura e os dados novos descritos abaixo,
-mantendo: o fundo navy escuro, o topo com logo | INTELIGÊNCIA | busca,
-a tipografia (Gotham + mono nos números), os cartões escuros com borda
-sutil, os selos, os links ciano, os rodapés "fonte: … · gerado em …".
+**NÃO redesenhe. NÃO invente identidade nova.** O trabalho é EVOLUIR
+esse arquivo para a arquitetura e os dados novos descritos abaixo.
+
+O que é a identidade aprovada, exatamente (está no arquivo, e a captura
+`PRIMEIRO-DESIGN.png` mostra):
+
+- **Plano navy** `#001433`, painéis `#001A5C`/`#02205F`, fio
+  `rgba(255,255,255,.10)`, fio aceso ciano `rgba(0,185,255,.28)`.
+- **Barra fixa no topo (64px, vidro fosco):** logo horizontal branco ·
+  filete · `INTELLIGENCE` em mono espaçado · busca em pílula
+  ("Buscar praça, sinal, achado…" + `⌘K`) · pílula de cobertura
+  (`4 / 340 praças` com barra) · `corte 15/jul/2026` · seletor de
+  perfil (Franqueadora) · troca de tema · avatar.
+- **Menu na lateral esquerda**, não em abas: item ativo em pílula
+  ciano com contador, praças listadas abaixo com bolinha de severidade.
+- **Herói**: painel grande com sobrelinha em mono ciano
+  (`SALA DE CONTROLE · REDE NACIONAL`), número-frase gigante em Gotham
+  ("4 de 340 praças ouvidas."), sublinha em cinza-claro, legenda de
+  bolinhas, e o globo/mapa em ciano translúcido à direita.
+- **Tira de números**: cartões escuros com o número gigante colorido
+  (vermelho `#FF5C5C` = crítico, ciano `#00B9FF`, cinza, verde
+  `#3ED6B8`) e o rótulo em duas linhas embaixo.
+- **Cartão de sinal**: barra de severidade na borda esquerda, selo
+  `CRÍTICO`/`GRAVE`/`ATENÇÃO`, praça em mono, título forte, o texto do
+  fato, uma **barra de medida** com o número em mono à esquerda, o bloco
+  `O QUE FAZER` (rótulo em mono ciano) e o rodapé com a janela de tempo
+  + `Ver evidência` em ciano.
+- **Tipografia**: Gotham no texto; **IBM Plex Mono em TODO número,
+  rótulo de sistema e data**. Cantos ~14–16px, animação de entrada
+  discreta, `prefers-reduced-motion` respeitado.
+
 Componentes novos (página da clínica, linha do tempo) se desenham com as
-MESMAS peças visuais da referência.
+MESMAS peças: cartão escuro, selo, barra de medida, rótulo em mono,
+`Ver evidência` em ciano.
 
 ## 1 · O que mudou desde a referência (a arquitetura nova)
 

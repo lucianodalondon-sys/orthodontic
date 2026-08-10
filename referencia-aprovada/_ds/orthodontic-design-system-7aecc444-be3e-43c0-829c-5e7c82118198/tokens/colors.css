@@ -1,0 +1,75 @@
+/* ============================================================
+   OrthoDontic — Color System
+   Source of truth: "Manual de Marca — OrthoDontic" p.07 (Código de Cores)
+   Primary + Secondary hexes are taken verbatim from the manual.
+   Campaign accents were sampled from the KV pages (p.16–20) and are
+   approximate — flagged in readme.md.
+   ============================================================ */
+:root {
+  /* ---- Primary (manual p.07) ---- */
+  --od-cyan: #00B9FF;          /* Pantone 298 C · CMYK 65/5/0/0  · primary brand */
+  --od-navy: #001E78;          /* Pantone 287 C · CMYK 100/90/25/10 · primary dark */
+
+  /* ---- Secondary (manual p.07) ---- */
+  --od-gray: #706F6E;          /* Pantone 424 C */
+  --od-cream: #FEF6F2;         /* Pantone 475 C (20%) — warm off-white */
+  --od-teal: #36767E;          /* Pantone 2213 C */
+  --od-sky: #DFEAF8;           /* Pantone 649 C — pale blue tint */
+  --od-orange: #F5A057;        /* Pantone 714 C */
+  --od-pink: #E885B0;          /* Pantone 204 C — soft pink */
+
+  /* ---- Campaign accents (sampled from KV pages, approx.) ---- */
+  --od-magenta: #E8408D;       /* hero "SORRISO" / campaign CTAs */
+  --od-yellow: #F8D65D;        /* golden CTA / highlight */
+  --od-teal-bright: #46BBC2;   /* turquoise CTA */
+  --od-purple: #5B4B9A;        /* KV gradient accent */
+
+  /* ---- Extended blues (derived from primaries for depth & states) ---- */
+  --od-cyan-600: #00A2E0;      /* cyan hover / pressed */
+  --od-cyan-050: #E6F7FF;      /* faint cyan wash */
+  --od-navy-800: #001A5C;      /* deep navy — gradient end, dark surfaces */
+  --od-navy-600: #16307F;      /* navy hover */
+
+  /* ---- Neutral ramp (cool, navy-tinted) ---- */
+  --od-white:  #FFFFFF;
+  --od-mist:   #F3F7FC;        /* app / page background */
+  --od-line:   #DCE6F2;        /* hairline borders */
+  --od-gray-300: #B7BDC7;      /* disabled text / icons */
+  --od-gray-500: #706F6E;      /* = --od-gray, muted text */
+  --od-gray-700: #3F4657;      /* strong body ink */
+  --od-ink:    #14213D;        /* near-black navy — default text */
+
+  /* ============ Semantic aliases ============ */
+  --color-primary: var(--od-cyan);
+  --color-primary-hover: var(--od-cyan-600);
+  --color-primary-ink: var(--od-navy);         /* text/detail that pairs with cyan */
+  --color-accent: var(--od-magenta);
+
+  --surface-page: var(--od-mist);
+  --surface-card: var(--od-white);
+  --surface-tint: var(--od-sky);
+  --surface-cream: var(--od-cream);
+  --surface-inverse: var(--od-navy);
+  --surface-inverse-deep: var(--od-navy-800);
+
+  --text-strong: var(--od-navy);               /* headings */
+  --text-default: var(--od-ink);               /* body */
+  --text-muted: var(--od-gray-500);            /* secondary / captions */
+  --text-on-primary: var(--od-white);          /* text on cyan */
+  --text-on-inverse: var(--od-white);          /* text on navy */
+  --text-link: var(--od-cyan-600);
+
+  --border-default: var(--od-line);
+  --border-strong: #C2D0E4;
+  --border-focus: var(--od-cyan);
+
+  /* ---- Functional / status (additions — see readme) ---- */
+  --color-info: var(--od-cyan);
+  --color-success: #2FB39B;    /* teal-green, brand-adjacent */
+  --color-warning: var(--od-orange);
+  --color-danger: #E23D6D;     /* magenta-red */
+  --color-info-bg: #E6F7FF;
+  --color-success-bg: #E4F6F1;
+  --color-warning-bg: #FDEFE0;
+  --color-danger-bg: #FCE7EE;
+}
