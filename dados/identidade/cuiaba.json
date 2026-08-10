@@ -2,8 +2,7 @@
  "praca_id": "cuiaba",
  "nome": "Cuiabá",
  "cidades": [
-  "Cuiabá/MT",
-  "Várzea Grande/MT"
+  "Cuiabá/MT"
  ],
  "uf": [
   "MT"
@@ -140,26 +139,6 @@
    "papel": "proprio",
    "codigo_unidade": 151,
    "tipo": "franquia"
-  },
-  {
-   "place_id": "ChIJw5GGvOmtnZMREVt1LELUQHw",
-   "nome": "REDEORTO Várzea Grande",
-   "cidade": "Várzea Grande",
-   "endereco": "R. Salim Nadaf, 525 - Centro Norte, Várzea Grande - MT, 78110-430, Brasil",
-   "categoria": "Clínica odontológica",
-   "avaliacoes": 290,
-   "nota": 4.8,
-   "ritmo_mes": 36.8,
-   "responde_pct": 1,
-   "local_id": "redeorto_varzea_grande",
-   "papel": "concorrente",
-   "tipo_concorrente": "PREENCHER",
-   "produto": {
-    "disputa_aparelho": "sim",
-    "porque": "o nome declara aparelho/ortodontia",
-    "menciona_aparelho": 7,
-    "avaliacoes_com_texto": 226
-   }
   },
   {
    "place_id": "ChIJnSIud5OxnZMREC7mF4Sf3HM",
@@ -484,23 +463,6 @@
    }
   },
   {
-   "local_id": "amorsaude_varzea_grande",
-   "papel": "concorrente",
-   "nome": "AmorSaúde Várzea Grande",
-   "tipo_concorrente": "PREENCHER",
-   "place_id": "ChIJn2qhljqtnZMR2X_ExrCxOKc",
-   "descoberto_em": "2026-08-08",
-   "descoberto_por": "varredura google places (2º escalão)",
-   "avaliacoes_google": 160,
-   "nota_google": 2.5,
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de odontologia geral: só 0 de 82 avaliações citam aparelho",
-    "menciona_aparelho": 0,
-    "avaliacoes_com_texto": 82
-   }
-  },
-  {
    "local_id": "centro_odontologico_person",
    "papel": "concorrente",
    "nome": "Centro odontológico Personal",
@@ -620,9 +582,59 @@
    }
   }
  ],
- "rotulo": "MT · Cuiabá + MT · Várzea Grande",
+ "rotulo": "MT · Cuiabá",
  "cidades_rotulo": [
-  "MT · Cuiabá",
-  "MT · Várzea Grande"
+  "MT · Cuiabá"
+ ],
+ "vizinhos": [
+  {
+   "place_id": "ChIJw5GGvOmtnZMREVt1LELUQHw",
+   "nome": "REDEORTO Várzea Grande",
+   "cidade": "Várzea Grande/MT",
+   "endereco": "R. Salim Nadaf, 525 - Centro Norte, Várzea Grande - MT, 78110-430, Brasil",
+   "categoria": "Clínica odontológica",
+   "avaliacoes": 290,
+   "nota": 4.8,
+   "ritmo_mes": 36.8,
+   "responde_pct": 1,
+   "local_id": "redeorto_varzea_grande",
+   "papel": "concorrente",
+   "tipo_concorrente": "PREENCHER",
+   "produto": {
+    "disputa_aparelho": "sim",
+    "porque": "o nome declara aparelho/ortodontia",
+    "menciona_aparelho": 7,
+    "avaliacoes_com_texto": 226
+   }
+  },
+  {
+   "local_id": "amorsaude_varzea_grande",
+   "papel": "concorrente",
+   "nome": "AmorSaúde Várzea Grande",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJn2qhljqtnZMR2X_ExrCxOKc",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 160,
+   "nota_google": 2.5,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 0 de 82 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 82
+   },
+   "cidade": "Várzea Grande/MT"
+  }
+ ],
+ "vizinhas_medidas": [
+  {
+   "rotulo": "MT · Várzea Grande",
+   "por_que": "cidade conurbada com Cuiabá; medida porque disputa atenção na região, mas praça não mistura cidade — os locais de lá ficam em `vizinhos` e fora de toda conta da praça",
+   "concorrentes_medidos": [
+    "REDEORTO Várzea Grande",
+    "AmorSaúde Várzea Grande"
+   ],
+   "se_abrir_unidade_la": "vira praça própria (praca_id varzea_grande); esta praça não muda"
+  }
  ]
 }

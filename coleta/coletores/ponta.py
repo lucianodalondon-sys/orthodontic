@@ -68,8 +68,11 @@ def main():
 
     ja_hoje = {x["local_id"] for x in jsonl("places") if x["snapshot_date"] == hoje}
     novas, erros = [], 0
+    # locais da praça + vizinhos (cidade colada, medida mas fora das contas):
+    # a série deles continua viva mesmo sem entrarem em nenhuma análise
     alvos = [(p, l) for p, d in sorted(ident.items())
-             for l in d.get("locais", []) if l.get("place_id")
+             for l in d.get("locais", []) + d.get("vizinhos", [])
+             if l.get("place_id")
              if not a.praca or p == a.praca]
     print(f"\n  {len(alvos)} fichas · corte {hoje} · "
           f"{len(ja_hoje)} já medidas hoje (puladas)\n")

@@ -7,21 +7,19 @@
     "PR"
   ],
   "cidades": [
-    "SC · Mafra",
-    "PR · Rio Negro"
+    "SC · Mafra"
   ],
   "identidade": {
     "praca_id": "mafra",
     "nome": "Mafra",
     "cidades": [
-      "Mafra/SC",
-      "Rio Negro/PR"
+      "Mafra/SC"
     ],
     "uf": [
       "SC",
       "PR"
     ],
-    "populacao": 87000,
+    "populacao": 57262,
     "renda_mediana_pessoa_mes": 1333,
     "coortes": {
       "9_15": 7700,
@@ -32,8 +30,7 @@
     "alerta_coleta": "Existe Mafra em PORTUGAL. Filtrar tudo por SC/Brasil. Descartar e logar qualquer resultado sem place_id da tabela.",
     "rotulo": "SC · Mafra",
     "cidades_rotulo": [
-      "SC · Mafra",
-      "PR · Rio Negro"
+      "SC · Mafra"
     ],
     "ibge": [
       {
@@ -123,13 +120,49 @@
     "vizinhas_medidas": [
       {
         "rotulo": "PR · Rio Negro",
-        "por_que": "cidade conurbada com Mafra, do outro lado do rio; os concorrentes de lá disputam o mesmo paciente",
+        "por_que": "cidade conurbada com Mafra, do outro lado do rio; medida porque disputa o mesmo paciente, mas praça não mistura cidade — os locais de lá ficam em `vizinhos` e fora de toda conta da praça",
         "concorrentes_medidos": [
           "OdontoCompany Rio Negro",
           "Odontoimagem Rio Negro"
         ],
-        "populacao_somada_no_estudo": true,
         "se_abrir_unidade_la": "vira praça própria (praca_id rio_negro); esta praça não muda"
+      }
+    ],
+    "vizinhos": [
+      {
+        "local_id": "oc_rionegro",
+        "papel": "concorrente",
+        "nome": "OdontoCompany Rio Negro",
+        "tipo_concorrente": "rede_popular",
+        "place_id": "ChIJRRoo99yT3ZQRlFqwMb-NSI4",
+        "place_id_origem": "google places api 2026-08-08 (nome)",
+        "avaliacoes_google": 188,
+        "nota_google": 4.7,
+        "produto": {
+          "disputa_aparelho": "sem_evidencia",
+          "porque": "amostra pequena (35 avaliações com texto) — não dá para afirmar o produto",
+          "menciona_aparelho": 0,
+          "avaliacoes_com_texto": 35
+        },
+        "cidade": "Rio Negro/PR"
+      },
+      {
+        "local_id": "odontoimagem_rio_negro",
+        "papel": "concorrente",
+        "nome": "Odontoimagem Rio Negro",
+        "tipo_concorrente": "PREENCHER",
+        "place_id": "ChIJl7fipfeT3ZQRR_xJdZLW0GE",
+        "descoberto_em": "2026-08-08",
+        "descoberto_por": "varredura google places",
+        "avaliacoes_google": 105,
+        "nota_google": 5,
+        "produto": {
+          "disputa_aparelho": "nao",
+          "porque": "a voz do cliente é de odontologia geral: só 0 de 59 avaliações citam aparelho",
+          "menciona_aparelho": 0,
+          "avaliacoes_com_texto": 59
+        },
+        "cidade": "Rio Negro/PR"
       }
     ]
   },
@@ -274,16 +307,6 @@
       "anuncios_ativos": null
     },
     {
-      "local_id": "oc_rionegro",
-      "nome": "OdontoCompany Rio Negro",
-      "tipo": "rede_popular",
-      "proprio": false,
-      "nota": 4.7,
-      "avaliacoes": 188,
-      "reviews_novos_mes": null,
-      "anuncios_ativos": null
-    },
-    {
       "local_id": "uniduni_clinica_integrada",
       "nome": "Uniduni - Clínica Integrada",
       "tipo": "PREENCHER",
@@ -320,16 +343,6 @@
       "proprio": false,
       "nota": 5,
       "avaliacoes": 115,
-      "reviews_novos_mes": null,
-      "anuncios_ativos": null
-    },
-    {
-      "local_id": "odontoimagem_rio_negro",
-      "nome": "Odontoimagem Rio Negro",
-      "tipo": "PREENCHER",
-      "proprio": false,
-      "nota": 5,
-      "avaliacoes": 105,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },

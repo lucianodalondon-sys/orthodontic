@@ -1,20 +1,18 @@
 {
   "praca_id": "cuiaba",
   "corte": "2026-08-10",
-  "rotulo": "MT · Cuiabá + MT · Várzea Grande",
+  "rotulo": "MT · Cuiabá",
   "uf": [
     "MT"
   ],
   "cidades": [
-    "MT · Cuiabá",
-    "MT · Várzea Grande"
+    "MT · Cuiabá"
   ],
   "identidade": {
     "praca_id": "cuiaba",
     "nome": "Cuiabá",
     "cidades": [
-      "Cuiabá/MT",
-      "Várzea Grande/MT"
+      "Cuiabá/MT"
     ],
     "uf": [
       "MT"
@@ -106,10 +104,60 @@
       }
     ],
     "por_que_esta_praca": "Preenche quatro buracos de uma vez: Centro-Oeste, capital, praça com mais de um milhão, e — o mais importante — a primeira unidade da amostra que está GANHANDO. E traz três unidades da mesma marca na mesma cidade, o que controla mercado, preço e marca de uma vez só.",
-    "rotulo": "MT · Cuiabá + MT · Várzea Grande",
+    "rotulo": "MT · Cuiabá",
     "cidades_rotulo": [
-      "MT · Cuiabá",
-      "MT · Várzea Grande"
+      "MT · Cuiabá"
+    ],
+    "vizinhos": [
+      {
+        "place_id": "ChIJw5GGvOmtnZMREVt1LELUQHw",
+        "nome": "REDEORTO Várzea Grande",
+        "cidade": "Várzea Grande/MT",
+        "endereco": "R. Salim Nadaf, 525 - Centro Norte, Várzea Grande - MT, 78110-430, Brasil",
+        "categoria": "Clínica odontológica",
+        "avaliacoes": 290,
+        "nota": 4.8,
+        "ritmo_mes": 36.8,
+        "responde_pct": 1,
+        "local_id": "redeorto_varzea_grande",
+        "papel": "concorrente",
+        "tipo_concorrente": "PREENCHER",
+        "produto": {
+          "disputa_aparelho": "sim",
+          "porque": "o nome declara aparelho/ortodontia",
+          "menciona_aparelho": 7,
+          "avaliacoes_com_texto": 226
+        }
+      },
+      {
+        "local_id": "amorsaude_varzea_grande",
+        "papel": "concorrente",
+        "nome": "AmorSaúde Várzea Grande",
+        "tipo_concorrente": "PREENCHER",
+        "place_id": "ChIJn2qhljqtnZMR2X_ExrCxOKc",
+        "descoberto_em": "2026-08-08",
+        "descoberto_por": "varredura google places (2º escalão)",
+        "avaliacoes_google": 160,
+        "nota_google": 2.5,
+        "produto": {
+          "disputa_aparelho": "nao",
+          "porque": "a voz do cliente é de odontologia geral: só 0 de 82 avaliações citam aparelho",
+          "menciona_aparelho": 0,
+          "avaliacoes_com_texto": 82
+        },
+        "cidade": "Várzea Grande/MT"
+      }
+    ],
+    "vizinhas_medidas": [
+      {
+        "rotulo": "MT · Várzea Grande",
+        "por_que": "cidade conurbada com Cuiabá; medida porque disputa atenção na região, mas praça não mistura cidade — os locais de lá ficam em `vizinhos` e fora de toda conta da praça",
+        "concorrentes_medidos": [
+          "REDEORTO Várzea Grande",
+          "AmorSaúde Várzea Grande"
+        ],
+        "se_abrir_unidade_la": "vira praça própria (praca_id varzea_grande); esta praça não muda"
+      }
     ]
   },
   "eyebrow": "Praça · a maior da amostra · três unidades da mesma marca",
@@ -298,16 +346,6 @@
       "anuncios_ativos": null
     },
     {
-      "local_id": "redeorto_varzea_grande",
-      "nome": "REDEORTO Várzea Grande",
-      "tipo": "PREENCHER",
-      "proprio": false,
-      "nota": 4.8,
-      "avaliacoes": 290,
-      "reviews_novos_mes": null,
-      "anuncios_ativos": null
-    },
-    {
       "local_id": "sorrize_clinicas_odontologic",
       "nome": "Sorrize Clínicas Odontológicas | Dentista CPA IV",
       "tipo": "PREENCHER",
@@ -414,16 +452,6 @@
       "proprio": false,
       "nota": 4.8,
       "avaliacoes": 164,
-      "reviews_novos_mes": null,
-      "anuncios_ativos": null
-    },
-    {
-      "local_id": "amorsaude_varzea_grande",
-      "nome": "AmorSaúde Várzea Grande",
-      "tipo": "PREENCHER",
-      "proprio": false,
-      "nota": 2.5,
-      "avaliacoes": 160,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
