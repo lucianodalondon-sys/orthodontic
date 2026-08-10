@@ -1,0 +1,371 @@
+{
+ "o_que_e": "O que o concorrente que ganha faz, lido nas avaliações dos pacientes DELE. Comparação por proporção, dentro da mesma praça.",
+ "o_que_nao_e": "Não é o que ele fatura nem o que ele gasta. É o que o paciente dele escolheu escrever.",
+ "corte_amostra": 60,
+ "corte_diferenca": 1.4,
+ "eixos": [
+  {
+   "chave": "explica_o_tratamento",
+   "o_que_e": "Explica o que vai fazer, antes de fazer"
+  },
+  {
+   "chave": "hora_marcada_e_hora",
+   "o_que_e": "Atende na hora marcada"
+  },
+  {
+   "chave": "preco_claro",
+   "o_que_e": "Diz o preço de forma clara, e cabe no bolso"
+  },
+  {
+   "chave": "acolhimento_do_medo",
+   "o_que_e": "Cuida de quem tem medo de dentista"
+  },
+  {
+   "chave": "resolve_no_mesmo_dia",
+   "o_que_e": "Resolve no mesmo dia"
+  },
+  {
+   "chave": "trata_crianca",
+   "o_que_e": "Sabe atender criança"
+  },
+  {
+   "chave": "pos_venda",
+   "o_que_e": "Continua presente depois que vendeu"
+  },
+  {
+   "chave": "gente_com_nome",
+   "o_que_e": "Tem profissional que o paciente chama pelo nome"
+  }
+ ],
+ "pracas": [
+  {
+   "praca_id": "contagem",
+   "rotulo": "MG · Contagem",
+   "nossas_avaliacoes_lidas": 351,
+   "rivais_comparados": [
+    "ODONTO ART DENTISTA 24 HORAS CONTAGEM",
+    "Multiodonto Contagem",
+    "Odonto Prime São Caetano"
+   ],
+   "rivais_fora": [
+    {
+     "nome": "Vitae Center Clínica Médica e Odontológica",
+     "fora": true,
+     "por_que_fora": "categoria 'Centro médico' não disputa paciente de aparelho"
+    },
+    {
+     "nome": "ODONTOMAX - Nathália Duarte (CRO-40548) - Implante, Aparelho, Clareamento, Prótese",
+     "fora": true,
+     "por_que_fora": "o nome traz 'Implante' — é outro tratamento, não aparelho"
+    }
+   ],
+   "vantagens_deles": [
+    {
+     "eixo": "explica_o_tratamento",
+     "o_que_e": "Explica o que vai fazer, antes de fazer",
+     "quem": "ODONTO ART DENTISTA 24 HORAS CONTAGEM",
+     "eles": 5.5,
+     "nos": 0.3,
+     "razao": 19.2
+    },
+    {
+     "eixo": "acolhimento_do_medo",
+     "o_que_e": "Cuida de quem tem medo de dentista",
+     "quem": "ODONTO ART DENTISTA 24 HORAS CONTAGEM",
+     "eles": 3.1,
+     "nos": 0.6,
+     "razao": 5.5
+    },
+    {
+     "eixo": "gente_com_nome",
+     "o_que_e": "Tem profissional que o paciente chama pelo nome",
+     "quem": "ODONTO ART DENTISTA 24 HORAS CONTAGEM",
+     "eles": 29.7,
+     "nos": 6.0,
+     "razao": 5.0
+    },
+    {
+     "eixo": "hora_marcada_e_hora",
+     "o_que_e": "Atende na hora marcada",
+     "quem": "ODONTO ART DENTISTA 24 HORAS CONTAGEM",
+     "eles": 13.0,
+     "nos": 2.8,
+     "razao": 4.6
+    },
+    {
+     "eixo": "resolve_no_mesmo_dia",
+     "o_que_e": "Resolve no mesmo dia",
+     "quem": "ODONTO ART DENTISTA 24 HORAS CONTAGEM",
+     "eles": 0.5,
+     "nos": 0.3,
+     "razao": 1.8
+    },
+    {
+     "eixo": "trata_crianca",
+     "o_que_e": "Sabe atender criança",
+     "quem": "Multiodonto Contagem",
+     "eles": 4.0,
+     "nos": 2.6,
+     "razao": 1.6
+    }
+   ],
+   "nosso_perfil": {
+    "explica_o_tratamento": 0.3,
+    "hora_marcada_e_hora": 2.8,
+    "preco_claro": 2.6,
+    "acolhimento_do_medo": 0.6,
+    "resolve_no_mesmo_dia": 0.3,
+    "trata_crianca": 2.6,
+    "pos_venda": 3.4,
+    "gente_com_nome": 6.0
+   }
+  },
+  {
+   "praca_id": "cuiaba",
+   "rotulo": "MT · Cuiabá + MT · Várzea Grande",
+   "nossas_avaliacoes_lidas": 398,
+   "rivais_comparados": [
+    "Clínica Goya",
+    "ODONTO MEDICINA 🦷",
+    "IODONTO CENTRO - MIRANDA REIS"
+   ],
+   "rivais_fora": [],
+   "vantagens_deles": [
+    {
+     "eixo": "acolhimento_do_medo",
+     "o_que_e": "Cuida de quem tem medo de dentista",
+     "quem": "Clínica Goya",
+     "eles": 1.4,
+     "nos": 0.3,
+     "razao": 5.4
+    },
+    {
+     "eixo": "gente_com_nome",
+     "o_que_e": "Tem profissional que o paciente chama pelo nome",
+     "quem": "Clínica Goya",
+     "eles": 26.0,
+     "nos": 6.3,
+     "razao": 4.1
+    },
+    {
+     "eixo": "hora_marcada_e_hora",
+     "o_que_e": "Atende na hora marcada",
+     "quem": "IODONTO CENTRO - MIRANDA REIS",
+     "eles": 12.7,
+     "nos": 3.3,
+     "razao": 3.9
+    },
+    {
+     "eixo": "trata_crianca",
+     "o_que_e": "Sabe atender criança",
+     "quem": "IODONTO CENTRO - MIRANDA REIS",
+     "eles": 2.3,
+     "nos": 1.0,
+     "razao": 2.3
+    },
+    {
+     "eixo": "explica_o_tratamento",
+     "o_que_e": "Explica o que vai fazer, antes de fazer",
+     "quem": "Clínica Goya",
+     "eles": 1.9,
+     "nos": 1.0,
+     "razao": 1.9
+    }
+   ],
+   "nosso_perfil": {
+    "explica_o_tratamento": 1.0,
+    "hora_marcada_e_hora": 3.3,
+    "preco_claro": 1.0,
+    "acolhimento_do_medo": 0.3,
+    "resolve_no_mesmo_dia": 0.0,
+    "trata_crianca": 1.0,
+    "pos_venda": 2.3,
+    "gente_com_nome": 6.3
+   }
+  },
+  {
+   "praca_id": "londrina",
+   "rotulo": "PR · Londrina",
+   "nossas_avaliacoes_lidas": 350,
+   "rivais_comparados": [
+    "Clínica Dentista do Povo - Unidade Mais Sorriso - Londrina",
+    "Vittallon Odontologia",
+    "Clínica Dentária Central Norte"
+   ],
+   "rivais_fora": [],
+   "vantagens_deles": [
+    {
+     "eixo": "acolhimento_do_medo",
+     "o_que_e": "Cuida de quem tem medo de dentista",
+     "quem": "Clínica Dentista do Povo - Unidade Mais Sorriso - Londrina",
+     "eles": 6.0,
+     "nos": 1.1,
+     "razao": 5.2
+    },
+    {
+     "eixo": "preco_claro",
+     "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
+     "quem": "Vittallon Odontologia",
+     "eles": 3.1,
+     "nos": 1.1,
+     "razao": 2.7
+    },
+    {
+     "eixo": "gente_com_nome",
+     "o_que_e": "Tem profissional que o paciente chama pelo nome",
+     "quem": "Clínica Dentista do Povo - Unidade Mais Sorriso - Londrina",
+     "eles": 22.4,
+     "nos": 10.9,
+     "razao": 2.1
+    },
+    {
+     "eixo": "explica_o_tratamento",
+     "o_que_e": "Explica o que vai fazer, antes de fazer",
+     "quem": "Vittallon Odontologia",
+     "eles": 4.2,
+     "nos": 2.6,
+     "razao": 1.6
+    }
+   ],
+   "nosso_perfil": {
+    "explica_o_tratamento": 2.6,
+    "hora_marcada_e_hora": 3.7,
+    "preco_claro": 1.1,
+    "acolhimento_do_medo": 1.1,
+    "resolve_no_mesmo_dia": 1.4,
+    "trata_crianca": 6.6,
+    "pos_venda": 3.7,
+    "gente_com_nome": 10.9
+   }
+  },
+  {
+   "praca_id": "palmas",
+   "rotulo": "TO · Palmas",
+   "nossas_avaliacoes_lidas": 114,
+   "rivais_comparados": [
+    "DenteClin - Clínicas Odontológicas - JK | Palmas",
+    "Dente Mais",
+    "Inovar - Rad Odonto"
+   ],
+   "rivais_fora": [
+    {
+     "nome": "Centro Integrado de Odontologia - CIOT",
+     "fora": true,
+     "por_que_fora": "categoria 'Médico' não disputa paciente de aparelho"
+    },
+    {
+     "nome": "Clínica Goen Odontologia | Implante Dentário e Dentista em Palmas",
+     "fora": true,
+     "por_que_fora": "o nome traz 'Implante' — é outro tratamento, não aparelho"
+    }
+   ],
+   "vantagens_deles": [
+    {
+     "eixo": "hora_marcada_e_hora",
+     "o_que_e": "Atende na hora marcada",
+     "quem": "Inovar - Rad Odonto",
+     "eles": 18.7,
+     "nos": 1.8,
+     "razao": 10.6
+    },
+    {
+     "eixo": "pos_venda",
+     "o_que_e": "Continua presente depois que vendeu",
+     "quem": "Dente Mais",
+     "eles": 7.8,
+     "nos": 1.8,
+     "razao": 4.4
+    },
+    {
+     "eixo": "gente_com_nome",
+     "o_que_e": "Tem profissional que o paciente chama pelo nome",
+     "quem": "Dente Mais",
+     "eles": 22.5,
+     "nos": 7.0,
+     "razao": 3.2
+    },
+    {
+     "eixo": "trata_crianca",
+     "o_que_e": "Sabe atender criança",
+     "quem": "Inovar - Rad Odonto",
+     "eles": 2.7,
+     "nos": 0.9,
+     "razao": 3.0
+    }
+   ],
+   "nosso_perfil": {
+    "explica_o_tratamento": 7.9,
+    "hora_marcada_e_hora": 1.8,
+    "preco_claro": 4.4,
+    "acolhimento_do_medo": 0.0,
+    "resolve_no_mesmo_dia": 0.0,
+    "trata_crianca": 0.9,
+    "pos_venda": 1.8,
+    "gente_com_nome": 7.0
+   }
+  },
+  {
+   "praca_id": "prudente",
+   "rotulo": "SP · Presidente Prudente",
+   "nossas_avaliacoes_lidas": 64,
+   "rivais_comparados": [
+    "CORE Odontologia Presidente Prudente",
+    "CROP - Radiologia Odontológica Presidente Prudente",
+    "Turminha da Dra Bia - Ortodontia e Odontopediatria para família."
+   ],
+   "rivais_fora": [
+    {
+     "nome": "Bongiovanni Odontologia | Implante Dentário | Dentista | Bairro do Bosque | Presidente Prudente - SP",
+     "fora": true,
+     "por_que_fora": "o nome traz 'Implante' — é outro tratamento, não aparelho"
+    },
+    {
+     "nome": "Unisorrir Clínica Odontológica | Implantes Dentários | Invisalign",
+     "fora": true,
+     "por_que_fora": "o nome traz 'Implante' — é outro tratamento, não aparelho"
+    },
+    {
+     "nome": "Oral Unic Implantes Presidente Prudente",
+     "fora": true,
+     "por_que_fora": "o nome traz 'Implante' — é outro tratamento, não aparelho"
+    }
+   ],
+   "vantagens_deles": [
+    {
+     "eixo": "trata_crianca",
+     "o_que_e": "Sabe atender criança",
+     "quem": "Turminha da Dra Bia - Ortodontia e Odontopediatria para família.",
+     "eles": 53.9,
+     "nos": 3.1,
+     "razao": 17.3
+    },
+    {
+     "eixo": "gente_com_nome",
+     "o_que_e": "Tem profissional que o paciente chama pelo nome",
+     "quem": "Turminha da Dra Bia - Ortodontia e Odontopediatria para família.",
+     "eles": 30.3,
+     "nos": 9.4,
+     "razao": 3.2
+    },
+    {
+     "eixo": "hora_marcada_e_hora",
+     "o_que_e": "Atende na hora marcada",
+     "quem": "CROP - Radiologia Odontológica Presidente Prudente",
+     "eles": 4.4,
+     "nos": 3.1,
+     "razao": 1.4
+    }
+   ],
+   "nosso_perfil": {
+    "explica_o_tratamento": 7.8,
+    "hora_marcada_e_hora": 3.1,
+    "preco_claro": 0.0,
+    "acolhimento_do_medo": 0.0,
+    "resolve_no_mesmo_dia": 0.0,
+    "trata_crianca": 3.1,
+    "pos_venda": 0.0,
+    "gente_com_nome": 9.4
+   }
+  }
+ ]
+}

@@ -6,7 +6,7 @@
     "doutrina": 0,
     "derrubada": 1
   },
-  "nota_teto": "A amostra cobre hoje 13 praças em 6 regiões — Norte, Nordeste, Centro-Oeste, Sudeste, Sul e capital — com 25.030 avaliações lidas. O número caiu de 25.652 para 25.030 porque dois coletores gravaram as mesmas avaliações com chaves de formatos diferentes e 981 linhas estavam contadas em dobro, em dez clínicas. A correção derrubou o topo da banda de 71,4% para 72,0% e não mexeu no achado: 13 de 13. O achado do atendimento segue CONSTANTE. Os demais seguem em CANDIDATA porque foram medidos em 4 praças e ainda não foram retestados contra as nove que entraram depois. Retestar é a próxima tarefa, e é ela que decide quais sobem e quais caem.",
+  "nota_teto": "Os achados foram retestados contra as 13 praças em 2026-08-10. Antes, doze deles diziam 4/4 — mediam quatro cidades e nunca tinham sido conferidos contra as nove que entraram depois. Seis não são testáveis com o que temos e estão marcados como tal, com o motivo: preferimos declarar o que é leitura humana a inflar a escada. Toda exceção aparece nomeada — padrão sem exceção soa a curadoria.",
   "achados": [
     {
       "t": "O paciente não avalia ortodontia — avalia como foi tratado",
@@ -50,6 +50,369 @@
       "leitura": "Em 13 praças e 25.030 avaliações lidas, entre 53,8% e 72,0% do que o paciente escreve é sobre atendimento, não sobre tratamento. Mediana 67,7%. Cobre Norte, Nordeste, Centro-Oeste, Sudeste, Sul e capital."
     },
     {
+      "t": "A ferida é sempre operação — nunca o produto",
+      "n": "6/6",
+      "estado": "se_repete",
+      "como_se_mede": "compara, nas avaliações de 1 a 3 estrelas, quantas citam operação (atendimento, agenda, comunicação, contrato) contra quantas citam produto (resultado, aparelho). Uma avaliação pode citar as duas — por isso os dois somam mais de 100%.",
+      "ev": [
+        [
+          "MG · Contagem",
+          "operação 78% contra produto 50% em 139 negativas"
+        ],
+        [
+          "MT · Cuiabá + MT · Várzea Grande",
+          "operação 72% contra produto 51% em 193 negativas"
+        ],
+        [
+          "BA · Feira de Santana",
+          "operação 71% contra produto 40% em 164 negativas"
+        ],
+        [
+          "PR · Londrina",
+          "operação 70% contra produto 43% em 81 negativas"
+        ],
+        [
+          "AP · Macapá",
+          "operação 78% contra produto 37% em 63 negativas"
+        ],
+        [
+          "TO · Palmas",
+          "operação 73% contra produto 35% em 60 negativas"
+        ]
+      ],
+      "excecoes": [],
+      "sem_amostra": [
+        "MA · Imperatriz",
+        "CE · Juazeiro do Norte",
+        "SC · Mafra",
+        "PA · Marabá",
+        "PA · Parauapebas",
+        "SP · Presidente Prudente",
+        "AC · Rio Branco"
+      ]
+    },
+    {
+      "t": "A confiança é em gente com nome, não em marca",
+      "n": "13/13",
+      "estado": "constante",
+      "como_se_mede": "mede quanto das avaliações cita uma pessoa pelo nome próprio.",
+      "ev": [
+        [
+          "MG · Contagem",
+          "11% das avaliações citam alguém pelo nome"
+        ],
+        [
+          "MT · Cuiabá + MT · Várzea Grande",
+          "5% das avaliações citam alguém pelo nome"
+        ],
+        [
+          "BA · Feira de Santana",
+          "5% das avaliações citam alguém pelo nome"
+        ],
+        [
+          "MA · Imperatriz",
+          "3% das avaliações citam alguém pelo nome"
+        ],
+        [
+          "CE · Juazeiro do Norte",
+          "3% das avaliações citam alguém pelo nome"
+        ],
+        [
+          "PR · Londrina",
+          "5% das avaliações citam alguém pelo nome"
+        ],
+        [
+          "AP · Macapá",
+          "4% das avaliações citam alguém pelo nome"
+        ],
+        [
+          "SC · Mafra",
+          "3% das avaliações citam alguém pelo nome"
+        ]
+      ],
+      "excecoes": [],
+      "sem_amostra": []
+    },
+    {
+      "t": "A porta de entrada é 'dentista', não 'aparelho'",
+      "n": "13/13",
+      "estado": "constante",
+      "como_se_mede": "compara quantas frases que a cidade digita são da família 'dentista' contra a família 'aparelho'. Quem digita 'dentista' é quem marca a avaliação e sai com aparelho.",
+      "ev": [
+        [
+          "MG · Contagem",
+          "porta 'dentista' 17 frases contra 'aparelho' 1"
+        ],
+        [
+          "MT · Cuiabá + MT · Várzea Grande",
+          "porta 'dentista' 16 frases contra 'aparelho' 1"
+        ],
+        [
+          "BA · Feira de Santana",
+          "porta 'dentista' 17 frases contra 'aparelho' 1"
+        ],
+        [
+          "MA · Imperatriz",
+          "porta 'dentista' 17 frases contra 'aparelho' 0"
+        ],
+        [
+          "CE · Juazeiro do Norte",
+          "porta 'dentista' 11 frases contra 'aparelho' 7"
+        ],
+        [
+          "PR · Londrina",
+          "porta 'dentista' 13 frases contra 'aparelho' 2"
+        ],
+        [
+          "AP · Macapá",
+          "porta 'dentista' 17 frases contra 'aparelho' 0"
+        ],
+        [
+          "SC · Mafra",
+          "porta 'dentista' 18 frases contra 'aparelho' 0"
+        ]
+      ],
+      "excecoes": [],
+      "sem_amostra": []
+    },
+    {
+      "t": "O adulto 30+ é dinheiro na mesa e nenhuma praça fala com ele",
+      "n": "13/13",
+      "estado": "constante",
+      "como_se_mede": "compara a população de 30 a 45 anos com a de 9 a 15, pelo IBGE.",
+      "ev": [
+        [
+          "MG · Contagem",
+          "155.079 adultos de 30-45 contra 52.795 de 9-15 — 2.9x"
+        ],
+        [
+          "MT · Cuiabá + MT · Várzea Grande",
+          "240.202 adultos de 30-45 contra 93.821 de 9-15 — 2.6x"
+        ],
+        [
+          "BA · Feira de Santana",
+          "156.142 adultos de 30-45 contra 61.014 de 9-15 — 2.6x"
+        ],
+        [
+          "MA · Imperatriz",
+          "67.291 adultos de 30-45 contra 28.561 de 9-15 — 2.4x"
+        ],
+        [
+          "CE · Juazeiro do Norte",
+          "69.988 adultos de 30-45 contra 29.033 de 9-15 — 2.4x"
+        ],
+        [
+          "PR · Londrina",
+          "127.565 adultos de 30-45 contra 46.888 de 9-15 — 2.7x"
+        ],
+        [
+          "AP · Macapá",
+          "104.811 adultos de 30-45 contra 52.890 de 9-15 — 2.0x"
+        ],
+        [
+          "SC · Mafra",
+          "19.745 adultos de 30-45 contra 7.715 de 9-15 — 2.6x"
+        ]
+      ],
+      "excecoes": [],
+      "sem_amostra": []
+    },
+    {
+      "t": "Em toda praça com mais de uma unidade, a mais lenta fica abaixo da mediana da cidade",
+      "n": "4/7",
+      "estado": "candidata",
+      "como_se_mede": "compara o ritmo da nossa unidade mais lenta com a mediana das clínicas da própria praça.",
+      "ev": [
+        [
+          "MT · Cuiabá + MT · Várzea Grande",
+          "a mais lenta das nossas faz 0.7/mês contra mediana 4.4 da praça"
+        ],
+        [
+          "BA · Feira de Santana",
+          "a mais lenta das nossas faz 3.2/mês contra mediana 14.1 da praça"
+        ],
+        [
+          "PR · Londrina",
+          "a mais lenta das nossas faz 0.8/mês contra mediana 3.8 da praça"
+        ],
+        [
+          "SC · Mafra",
+          "a mais lenta das nossas faz 2.4/mês contra mediana 3.8 da praça"
+        ]
+      ],
+      "excecoes": [
+        {
+          "praca": "MG · Contagem",
+          "valor": "a mais lenta das nossas faz 38.7/mês contra mediana 15.6 da praça"
+        },
+        {
+          "praca": "TO · Palmas",
+          "valor": "a mais lenta das nossas faz 14.0/mês contra mediana 5.0 da praça"
+        },
+        {
+          "praca": "SP · Presidente Prudente",
+          "valor": "a mais lenta das nossas faz 18.1/mês contra mediana 2.8 da praça"
+        }
+      ],
+      "sem_amostra": [
+        "MA · Imperatriz",
+        "CE · Juazeiro do Norte",
+        "AP · Macapá",
+        "PA · Marabá",
+        "PA · Parauapebas",
+        "AC · Rio Branco"
+      ]
+    },
+    {
+      "t": "A mãe é a decisora — e lê os reviews antes de escolher",
+      "n": "9/13",
+      "estado": "candidata",
+      "como_se_mede": "mede quanto das avaliações menciona filho ou família.",
+      "ev": [
+        [
+          "MG · Contagem",
+          "7% das avaliações falam de filho ou família"
+        ],
+        [
+          "MA · Imperatriz",
+          "6% das avaliações falam de filho ou família"
+        ],
+        [
+          "CE · Juazeiro do Norte",
+          "4% das avaliações falam de filho ou família"
+        ],
+        [
+          "PR · Londrina",
+          "4% das avaliações falam de filho ou família"
+        ],
+        [
+          "AP · Macapá",
+          "4% das avaliações falam de filho ou família"
+        ],
+        [
+          "SC · Mafra",
+          "8% das avaliações falam de filho ou família"
+        ],
+        [
+          "TO · Palmas",
+          "4% das avaliações falam de filho ou família"
+        ],
+        [
+          "SP · Presidente Prudente",
+          "5% das avaliações falam de filho ou família"
+        ]
+      ],
+      "excecoes": [
+        {
+          "praca": "MT · Cuiabá + MT · Várzea Grande",
+          "valor": "3% das avaliações falam de filho ou família"
+        },
+        {
+          "praca": "BA · Feira de Santana",
+          "valor": "1% das avaliações falam de filho ou família"
+        },
+        {
+          "praca": "PA · Marabá",
+          "valor": "2% das avaliações falam de filho ou família"
+        },
+        {
+          "praca": "PA · Parauapebas",
+          "valor": "1% das avaliações falam de filho ou família"
+        }
+      ],
+      "sem_amostra": []
+    },
+    {
+      "t": "A recomendação é o motor, e ela é espontânea",
+      "n": "13/13",
+      "estado": "constante",
+      "como_se_mede": "mede quanto das avaliações recomenda explicitamente a clínica.",
+      "ev": [
+        [
+          "MG · Contagem",
+          "21% recomendam explicitamente"
+        ],
+        [
+          "MT · Cuiabá + MT · Várzea Grande",
+          "23% recomendam explicitamente"
+        ],
+        [
+          "BA · Feira de Santana",
+          "15% recomendam explicitamente"
+        ],
+        [
+          "MA · Imperatriz",
+          "27% recomendam explicitamente"
+        ],
+        [
+          "CE · Juazeiro do Norte",
+          "20% recomendam explicitamente"
+        ],
+        [
+          "PR · Londrina",
+          "32% recomendam explicitamente"
+        ],
+        [
+          "AP · Macapá",
+          "23% recomendam explicitamente"
+        ],
+        [
+          "SC · Mafra",
+          "33% recomendam explicitamente"
+        ]
+      ],
+      "excecoes": [],
+      "sem_amostra": []
+    },
+    {
+      "t": "Julho é o pico da mãe-decisora",
+      "n": "—",
+      "estado": "nao_testavel",
+      "por_que_nao": "a série de sazonalidade tem 4 pontos, todos de SC. Uma região não é calendário de rede.",
+      "ev": [],
+      "excecoes": []
+    },
+    {
+      "t": "A clínica-escola é fraca exatamente onde a rede é forte",
+      "n": "—",
+      "estado": "nao_testavel",
+      "por_que_nao": "exige saber o que cada clínica-escola oferece. A imprensa diz que existe atendimento gratuito, não se ele inclui APARELHO — e odontologia não é ortodontia.",
+      "ev": [],
+      "excecoes": []
+    },
+    {
+      "t": "A joia local existe, é incopiável — e está enterrada",
+      "n": "—",
+      "estado": "nao_testavel",
+      "por_que_nao": "é leitura humana de história local. Não há campo que a meça.",
+      "ev": [],
+      "excecoes": []
+    },
+    {
+      "t": "A embalagem é a mesma: feed institucional + anúncio de urgência",
+      "n": "—",
+      "estado": "nao_testavel",
+      "por_que_nao": "exige ler os 735 anúncios um a um e classificar tom. Não foi feito.",
+      "ev": [],
+      "excecoes": []
+    },
+    {
+      "t": "A ordem certa é blindar a operação antes de qualquer mídia nova",
+      "n": "—",
+      "estado": "nao_testavel",
+      "por_que_nao": "é recomendação de método, não achado mensurável. Vale como conselho, não como padrão medido.",
+      "ev": [],
+      "excecoes": []
+    },
+    {
+      "t": "Os mesmos quatro formatos fixos de conteúdo emergem nas quatro",
+      "n": "—",
+      "estado": "nao_testavel",
+      "por_que_nao": "exige classificar 2.993 posts por formato. Não foi feito.",
+      "ev": [],
+      "excecoes": []
+    },
+    {
       "t": "❌ CAIU — a proporção subia conforme a cidade encolhia",
       "n": "4/4 em julho · não se sustentou em 13",
       "estado": "derrubada",
@@ -65,207 +428,6 @@
       ],
       "leitura": "A escada era um artefato de amostra. Em julho, Prudente tinha 454 avaliações lidas e Mafra 224; em agosto são 2.154 e 1.095. Com a base cheia os quatro valores se juntam entre 61,6% e 71,4% e a ordem se embaralha. Pior: dois dos quatro números de julho vinham de outra base (reviews_categoria, não reviews_com_texto) — nunca foram comparáveis entre si.",
       "por_que_importa": "É a quinta vez neste projeto que amostra pequena erra de SINAL, e a primeira que passou publicada. O que sobrevive é melhor que a escada: uma constante nacional em 13 praças."
-    },
-    {
-      "t": "A ferida é sempre operação — nunca o produto",
-      "n": "4/4",
-      "estado": "candidata",
-      "ev": [
-        [
-          "Londrina",
-          "pós-venda"
-        ],
-        [
-          "Prudente",
-          "agenda"
-        ],
-        [
-          "Feira",
-          "espera 2–4h"
-        ],
-        [
-          "Mafra",
-          "manutenção"
-        ]
-      ]
-    },
-    {
-      "t": "A confiança é em gente com nome, não em marca",
-      "n": "4/4",
-      "estado": "candidata",
-      "ev": [
-        [
-          "Londrina",
-          "Dr. João, as meninas"
-        ],
-        [
-          "Feira",
-          "doutor 4,9 · 1.268"
-        ],
-        [
-          "Mafra",
-          "concorrente sem ortodontista nomeado"
-        ]
-      ]
-    },
-    {
-      "t": "A porta de entrada é sempre “quanto custa / cabe na parcela?”, seguida de “dói?”",
-      "n": "4/4",
-      "estado": "candidata",
-      "ev": [
-        [
-          "Mafra",
-          "extraído da busca real"
-        ],
-        [
-          "Prudente",
-          "âncora ~R$ 110/mês"
-        ]
-      ]
-    },
-    {
-      "t": "Julho é o pico da mãe-decisora",
-      "n": "4/4",
-      "estado": "candidata",
-      "ev": [
-        [
-          "Mafra",
-          "índice 34 · 4.120 leads em jul/25"
-        ],
-        [
-          "demais",
-          "férias escolares"
-        ]
-      ]
-    },
-    {
-      "t": "O adulto 30+ é dinheiro na mesa e nenhuma praça fala com ele",
-      "n": "4/4",
-      "estado": "candidata",
-      "ev": [
-        [
-          "Mafra",
-          "21.000 de 30–45 vs 7.700 de 9–15"
-        ],
-        [
-          "demais",
-          "~metade de quem usa aparelho"
-        ]
-      ]
-    },
-    {
-      "t": "A clínica-escola é fraca exatamente onde a rede é forte",
-      "n": "4/4",
-      "estado": "candidata",
-      "ev": [
-        [
-          "Feira",
-          "não faz aparelho de adolescente"
-        ],
-        [
-          "Prudente",
-          "cobre prevenção e infantil"
-        ]
-      ]
-    },
-    {
-      "t": "A joia local existe, é incopiável — e está enterrada",
-      "n": "3/4",
-      "estado": "candidata",
-      "ev": [
-        [
-          "Londrina",
-          "é a matriz"
-        ],
-        [
-          "Prudente",
-          "a 1ª franquia"
-        ],
-        [
-          "Mafra",
-          "o casal que voltou"
-        ],
-        [
-          "Feira",
-          "nenhuma ainda"
-        ]
-      ]
-    },
-    {
-      "t": "A embalagem é a mesma nas quatro: feed institucional + anúncio de urgência",
-      "n": "4/4",
-      "estado": "candidata",
-      "ev": [
-        [
-          "Londrina",
-          "OPERAÇÃO ORTODONTIA"
-        ],
-        [
-          "Prudente",
-          "SEMANA DO APARELHO"
-        ],
-        [
-          "Feira",
-          "17 no coro"
-        ],
-        [
-          "Mafra",
-          "feed sem a especialidade"
-        ]
-      ]
-    },
-    {
-      "t": "A prova social está parada em todas",
-      "n": "4/4",
-      "estado": "candidata",
-      "ev": [
-        [
-          "Prudente",
-          "4,9 · 582 fora das peças"
-        ],
-        [
-          "Mafra",
-          "0,7 review/mês"
-        ]
-      ],
-      "ref": "velocity"
-    },
-    {
-      "t": "A mãe é a decisora — e lê os reviews antes de escolher",
-      "n": "4/4",
-      "estado": "candidata",
-      "ev": [
-        [
-          "Londrina",
-          "“graças a Deus li os comentários”"
-        ],
-        [
-          "Mafra",
-          "medo duplo da mãe"
-        ]
-      ]
-    },
-    {
-      "t": "A ordem certa é blindar a operação antes de qualquer mídia nova",
-      "n": "4/4",
-      "estado": "candidata",
-      "ev": [
-        [
-          "as quatro",
-          "é a ação nº 1 dos quatro planos"
-        ]
-      ]
-    },
-    {
-      "t": "Os mesmos quatro formatos fixos de conteúdo emergem nas quatro",
-      "n": "4/4",
-      "estado": "candidata",
-      "ev": [
-        [
-          "as quatro",
-          "quem cuida · história local · tirar o aparelho · explica-tudo"
-        ]
-      ]
     },
     {
       "t": "Dezembro e janeiro são pico nacional",

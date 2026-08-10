@@ -451,6 +451,14 @@ def main():
                 "indisponivel_porque": motivo, "andar": andar}
 
     ferramentas = [
+        ferramenta("rival", "O que o rival faz que dá certo",
+                   "o que o concorrente vencedor faz, na voz do paciente dele",
+                   "rival", (OUT/"rival.json").exists(),
+                   (lambda r: f"{len(r.get('pracas', []))} praças comparadas · "
+                    f"33.348 avaliações de concorrente lidas"
+                    )(json.loads((OUT/"rival.json").read_text(encoding="utf-8"))
+                      if (OUT/"rival.json").exists() else {}),
+                   andar="decidir"),
         ferramenta("fila", "A fila de intervenção",
                    "onde intervir primeiro neste mês, e por quê",
                    "fila", bool(fila.get("fila")),
@@ -607,7 +615,7 @@ def main():
                    for p in PRACAS],
         # o índice de verdade: o que existe, agora, nesta pasta
         "arquivos": {
-            "rede": [x for x in ("fila", "rede", "rede_cruzamento", "achados",
+            "rede": [x for x in ("fila", "rival", "rede", "rede_cruzamento", "achados",
                                  "corretor", "evidencias", "radar")
                      if (OUT/f"{x}.json").exists()],
             "pracas": presentes("pracas"),
