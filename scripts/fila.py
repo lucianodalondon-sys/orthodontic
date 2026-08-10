@@ -236,6 +236,15 @@ def monta():
             o_que = o_que.format(rival=rival["nome"])
 
         nome_curto = (u["nome"] or "").replace("OrthoDontic", "").strip(" -–—")
+        # "OrthoDontic Feira de Santana" numa praça de uma unidade só vira
+        # "BA · Feira de Santana · Feira de Santana" na tela — repetir a
+        # cidade ao lado dela mesma é ruído. E "Cuiabá Dom Bosco" começa
+        # com a cidade: fica só o que distingue a loja ("Dom Bosco").
+        cidade = (u["rotulo"] or "").split("·")[-1].strip()
+        if nome_curto.lower() == cidade.lower():
+            nome_curto = ""
+        elif nome_curto.lower().startswith(cidade.lower() + " "):
+            nome_curto = nome_curto[len(cidade):].strip(" -–—")
         fila.append({
             "local_id": u["local_id"],
             "praca_id": u["praca"],
