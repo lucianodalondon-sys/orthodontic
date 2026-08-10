@@ -156,13 +156,16 @@ def roda_lote(alvos, max_reviews, tok):
     """
     urls = [{"url": "https://www.google.com/maps/place/?q=place_id:" + a["place_id"]}
             for a in alvos]
-    url = (f"{API}/acts/{ACTOR}/run-sync-get-dataset-items"
-           f"?token={tok}&timeout=2400&memory=8192")
-    return post(url, {
+    # `tok` virou um objeto Cota e era interpolado direto na URL:
+    # token=<__main__.Cota object> → InvalidURL. O lote falhava SEMPRE, caía
+    # para o um-a-um, e enquanto o um-a-um era síncrono morria no proxy —
+    # dupla falha que rendeu "+0 registros" sem nenhum erro legível no tail.
+    t = tok.atual() if hasattr(tok, "atual") else tok
+    return roda_async({
         "startUrls": urls, "maxCrawledPlacesPerSearch": 1, "language": "pt-BR",
         "reviewsSort": "newest", "maxReviews": max_reviews,
         "scrapeReviewsPersonalData": False, "onlyDataFromSearchPage": False,
-    }, tok, timeout=2600)
+    }, t, espera=2400)
 
 
 def roda(alvo, max_reviews, tok):
@@ -176,6 +179,8 @@ def roda(alvo, max_reviews, tok):
 
 
 def roda_async(corpo, tok, espera=1800):
+    if hasattr(tok, "atual"):
+        tok = tok.atual()
     """Dispara o run e busca o resultado em chamadas CURTAS, para o proxy não cortar.
 
     O run-sync-get-dataset-items segura a conexão aberta pelo tempo inteiro do
