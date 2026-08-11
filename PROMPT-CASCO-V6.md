@@ -287,3 +287,125 @@ Londrina dois, nas outras um. Se a lista vier vazia, não desenhe o bloco.
 E apague do projeto os arquivos que o build não produz mais: os 14
 `planos/<cidade>.json`, `pracas/riomafra.json` e `captacao/riomafra.json`
 (`riomafra` é o nome local da região; a praça é `mafra`).
+
+## 6 · A SEGUNDA RODADA DE AJUSTES (depois de ver o portal rodando)
+
+### 6.1 · O portal é de 374 unidades, não de 10
+
+Hoje dez lojas têm estudo. A rede tem **374 unidades em 304 cidades**, e 46
+dessas cidades têm mais de uma loja. Uma grade de cartões que funciona com
+dez vira uma parede inútil na centésima — e some com a informação de que
+364 unidades ainda não foram escutadas.
+
+Payload novo: **`clinicas_indice.json`**, com tudo contado no build.
+
+```json
+{"unidades_total": 374, "com_estudo": 10, "sem_escuta": 364,
+ "cidades_total": 304, "cidades_com_mais_de_uma_loja": 46,
+ "manchete": "10 de 374 unidades com estudo — as outras 364 ainda não foram escutadas",
+ "ufs": [{"uf": "SP", "unidades_total": 78, "cidades_total": 65,
+          "com_estudo": 0, "sem_escuta": 78,
+          "frase": "78 unidades em 65 cidades · nenhuma escutada",
+          "cidades": [{"rotulo": "SP · Bauru", "unidades_total": 2,
+                       "mais_de_uma_loja": true, "unidades": [ ... ]}]}]}
+```
+
+A tela de **Clínicas** deixa de ser lista e vira **triagem**, nesta ordem:
+
+1. **A manchete** (`manchete`) — o tamanho do que falta, em primeiro lugar.
+2. **As que pedem ação agora** — as com `faixa`/`tarefa` na fila, poucas,
+   em cartão grande. É isto que alguém abre o portal para ver.
+3. **Busca e filtros** — por unidade, cidade ou UF; filtros por faixa,
+   tarefa aberta/vencida, invisível na busca, com/sem estudo.
+4. **O mapa de cobertura por UF** — sanfona fechada por padrão, uma linha
+   por estado com a `frase` pronta ("78 unidades em 65 cidades · nenhuma
+   escutada"). Abrir mostra as cidades; abrir a cidade mostra as unidades.
+   Estado sem nenhuma escutada aparece apagado, não some.
+
+Regras que não podem ser quebradas nesta tela:
+
+- **Cidade com mais de uma loja nunca vira uma linha só.** `mais_de_uma_loja`
+  vem pronto. Cuiabá tem três lojas e podem ser três donos; Londrina tem
+  duas. A cidade agrupa, mas quem abre é a UNIDADE.
+- Unidade sem estudo **aparece** — apagada, com "ainda não escutada", e sem
+  link. Esconder faz a diretoria achar que medimos tudo.
+- Alguns estudos vêm em `estudos_sem_linha_oficial`, no nível da cidade,
+  com `porque_sem_linha` escrito: a lista oficial não confirmou a linha
+  daquelas lojas. Mostre a frase; não invente a qual linha cada uma
+  corresponde.
+
+### 6.2 · Os nomes das seções
+
+| era | fica |
+|---|---|
+| O que a rede ensina | **Benchmarks** |
+| A marca | **Brand Watch** |
+
+"O que a rede ensina" descreve o arquivo, não o que a pessoa ganha ao
+clicar: ali está o que se repete entre as unidades, o bom e o ruim, para
+comparar a sua com a rede. **Benchmarks** diz isso em uma palavra. (Se
+preferir uma palavra de ação em vez de comparação, a alternativa é
+*Playbook* — mas escolha uma e mantenha.)
+
+"A marca" é vago: a seção monitora as 374 fichas do Google e a reputação no
+Reclame Aqui. **Brand Watch** diz que é vigilância, e vigilância contínua.
+
+O menu fica: **Painel de Controle · Clínicas · Praças · Benchmarks · Radar
+de cidades · Brand Watch · Arquivo**.
+
+### 6.3 · A frase das praças perdeu a régua interna
+
+O cartão "As praças estudadas" dizia "...no mesmo padrão de SC · Mafra".
+Mafra ser a régua é decisão interna nossa; para quem lê a tela isso não
+quer dizer nada. Já corrigido no build — a frase agora é "cidades onde a
+rede está e que já foram estudadas por inteiro — concorrência, canais,
+imprensa, busca e avaliações". Nenhuma tela cita praça como parâmetro de
+outra.
+
+### 6.4 · A clínica se apresenta antes de se medir
+
+Hoje a página abre com a nota, como boletim. Quem chega precisa saber de
+que loja se trata. Campo novo em cada `clinicas/<local_id>.json`:
+
+```json
+"apresentacao": {
+  "unidade": "OrthoDontic Cuiabá Dom Bosco (Centro Sul)",
+  "cidade": "MT · Cuiabá",
+  "endereco": "R. Barão de Melgaço, 3429 - Centro Norte, Cuiabá - MT",
+  "desde": "8/ago", "medicoes": 2,
+  "lojas_irmas": [{"local_id": "...", "unidade": "..."}],
+  "frase": "OrthoDontic Cuiabá Dom Bosco (Centro Sul) é escutada desde 8/ago, em 2 medições, e divide Cuiabá com mais 2 lojas da rede."
+}
+```
+
+A abertura passa a ser um **bloco de apresentação**: nome da unidade em
+tamanho grande, cidade e endereço em linha discreta, a `frase` pronta como
+sublinha, e as `lojas_irmas` como pastilhas clicáveis ("as outras lojas
+desta cidade" — reforçando que são casos separados). A nota e o número de
+avaliações descem para a tira de números logo abaixo. Em três das dez o
+`endereco` vem null: escreva "endereço não confirmado na lista oficial",
+não esconda a linha.
+
+### 6.5 · A página da clínica está pobre visualmente
+
+Tudo azul com letra branca, num plano só. O problema não é a paleta — é a
+falta de hierarquia. Use as peças que a referência aprovada já tem, que
+hoje aparecem só no Painel de Controle:
+
+- **Três alturas de superfície**, não uma: o plano `#001433` ao fundo, o
+  painel `#001A5C` para cada capítulo, e um cartão mais claro (ou com fio
+  ciano aceso) para o que exige ação.
+- **A cor tem significado e é escassa.** Vermelho `#FF5C5C` só em faixa
+  crítica e loja invisível; ciano `#00B9FF` só no que é clicável e no
+  rótulo de sistema; verde `#3ED6B8` só no que melhorou. O resto é cinza
+  sobre navy. Se tudo é ciano, nada chama.
+- **A tira de números** (mesma peça do painel) logo abaixo da apresentação:
+  nota, avaliações, ritmo, posição na cidade — número gigante em mono,
+  rótulo em duas linhas.
+- **Capítulo é painel com cabeçalho**, não parágrafo solto. Cada um com
+  sobrelinha em mono ciano (`PRESENÇA NA BUSCA`, `A VOZ DO PACIENTE`).
+- **Respiro.** O que pesa hoje é densidade sem pausa: dobre o espaço entre
+  capítulos e deixe a coluna de texto estreita (~70 caracteres).
+- **A ação em destaque**, uma só, no alto: o cartão de "o que fazer agora"
+  com a barra de severidade na borda esquerda, como o cartão de sinal da
+  referência.

@@ -12,7 +12,7 @@ Regra: todo número carrega procedência. Sem procedência, não entra.
 
 Uso:  python3 scripts/build_portal.py [--corte AAAA-MM-DD]
 """
-import json, argparse, pathlib, sys
+import json, argparse, pathlib, sys, unicodedata
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import datetime as dt
 from collections import defaultdict, Counter
@@ -86,12 +86,154 @@ def main():
 
     ult_place = ultimo_por([r for r in places if r["snapshot_date"] <= corte],
                            lambda r: r["local_id"])
+    # A ficha oficial guarda o endereço; a série de places, não. Sem isto a
+    # apresentação da clínica abre sem dizer ONDE a loja fica.
+    _fichas = jsonl("rede_fichas")
+    _ficha_por_place = {}
+    if _fichas:
+        _u = max(r["snapshot_date"] for r in _fichas)
+        for r in _fichas:
+            if r["snapshot_date"] == _u and r.get("place_id"):
+                _ficha_por_place[r["place_id"]] = r
+
+    _MES = ["jan", "fev", "mar", "abr", "mai", "jun",
+            "jul", "ago", "set", "out", "nov", "dez"]
+
+    def _data(iso):
+        """15/jul — a tela não fala ISO."""
+        if not iso or len(str(iso)) < 10:
+            return iso
+        a, m, d = str(iso)[:10].split("-")
+        return f"{int(d)}/{_MES[int(m)-1]}"
     ult_tema = ultimo_por([r for r in temas if r["snapshot_date"] <= corte],
                           lambda r: (r["praca_id"], r["tema"]))
     ult_funil = ultimo_por([r for r in funis if r["snapshot_date"] <= corte],
                            lambda r: r["local_id"])
 
     escritos = []
+
+    # ---------- o índice das clínicas (as 374, não as 10) ----------
+    # O PORTAL NÃO É DE DEZ LOJAS. Hoje dez têm estudo, mas a lista oficial
+    # tem 374 em 304 cidades, e uma tela que lista dez em grade vira uma
+    # parede inútil na centésima. O índice sai daqui pronto: agrupado por UF
+    # e por cidade, com TODOS os contadores calculados — a tela nunca conta.
+    # E as que não têm estudo aparecem, porque esconder o não medido é o que
+    # faz a diretoria achar que medimos tudo.
+    _lojas_medidas = {}
+    for _p in PRACAS:
+        for _l in ident[_p].get("locais", []):
+            if _l.get("papel") == "proprio" and _l.get("place_id"):
+                _lojas_medidas[_l["place_id"]] = _l["local_id"]
+    _fl_ix = {x["local_id"]: x for x in carrega(OUT, "fila").get("fila", [])}
+
+    _por_uf = defaultdict(lambda: defaultdict(list))
+    _fichas_hoje = [r for r in _fichas
+                    if _fichas and r["snapshot_date"] == max(
+                        x["snapshot_date"] for x in _fichas)]
+    for r in _fichas_hoje:
+        uf = r.get("uf") or "—"
+        lid = _lojas_medidas.get(r.get("place_id"))
+        fl = _fl_ix.get(lid) or {}
+        _por_uf[uf][r.get("cidade") or "—"].append({
+            "unidade": r.get("unidade_na_lista") or r.get("nome"),
+            "rotulo": f"{uf} · {r.get('cidade')}",
+            "situacao": r.get("situacao_na_lista"),
+            "nota": r.get("nota"), "avaliacoes": r.get("avaliacoes"),
+            "confirmada": bool(r.get("confirmada")),
+            "com_estudo": bool(lid),
+            "local_id": lid,
+            "arquivo": f"clinicas/{lid}" if lid else None,
+            "faixa": fl.get("faixa"), "urgencia": fl.get("urgencia"),
+            "tarefa": (fl.get("tarefa") or {}).get("estado") if fl else None,
+        })
+
+    # A LOJA QUE MEDIMOS E A LISTA OFICIAL NÃO CONFIRMOU. Das 374 linhas, 326
+    # têm place_id; 48 a varredura não confirmou, e três lojas nossas caem aí
+    # (duas de Cuiabá e Prudente). Elas JÁ ESTÃO entre as 374 — só não se sabe
+    # em qual linha, porque a lista grava a cidade sem acento e não distingue
+    # lojas da mesma cidade. Então NÃO se cria unidade nova (isso inflaria a
+    # rede para 377) e NÃO se escolhe uma linha a dedo: a cidade passa a
+    # carregar quais estudos são dela, com a ambiguidade escrita.
+    _sem_acento = lambda t: "".join(
+        c for c in unicodedata.normalize("NFD", str(t or ""))
+        if unicodedata.category(c) != "Mn").lower().strip()
+    _casadas = {x["local_id"] for uf in _por_uf for c in _por_uf[uf].values()
+                for x in c if x.get("local_id")}
+    _estudo_solto = defaultdict(list)
+    for _p in PRACAS:
+        for _l in ident[_p].get("locais", []):
+            lid = _l.get("local_id")
+            if (_l.get("papel") != "proprio" or lid in _casadas
+                    or not (OUT/f"clinicas/{lid}.json").exists()):
+                continue
+            uf = (ident[_p].get("uf") or ["—"])[0]
+            cid = str((ident[_p].get("cidades_rotulo")
+                       or ident[_p].get("cidades") or ["—"])[0]).split(" · ")[-1]
+            fl = _fl_ix.get(lid) or {}
+            _estudo_solto[(uf, _sem_acento(cid))].append({
+                "local_id": lid,
+                "unidade": _l.get("unidade") or _l.get("nome"),
+                "arquivo": f"clinicas/{lid}",
+                "faixa": fl.get("faixa"),
+                "tarefa": (fl.get("tarefa") or {}).get("estado") if fl else None,
+            })
+
+    _ufs = []
+    for uf in sorted(_por_uf):
+        cidades = []
+        for cid in sorted(_por_uf[uf]):
+            us = _por_uf[uf][cid]
+            soltos = _estudo_solto.get((uf, _sem_acento(cid)), [])
+            cidades.append({
+                "cidade": cid, "rotulo": f"{uf} · {cid}",
+                "unidades": us,
+                "unidades_total": len(us),
+                "com_estudo": sum(1 for x in us if x["com_estudo"]) + len(soltos),
+                # estudos desta cidade que a lista oficial não confirmou linha
+                "estudos_sem_linha_oficial": soltos,
+                "porque_sem_linha": ("a lista oficial não confirmou a linha "
+                                     "destas lojas, e como a cidade tem mais "
+                                     "de uma não dá para dizer qual é qual"
+                                     if soltos else None),
+                # cidade com mais de uma loja é o caso que a média mentia:
+                # a tela precisa saber para nunca fundir
+                "mais_de_uma_loja": len(us) > 1,
+                "frase": conta(len(us), "unidade") + " nesta cidade",
+            })
+        n = sum(c["unidades_total"] for c in cidades)
+        e = sum(c["com_estudo"] for c in cidades)
+        _ufs.append({
+            "uf": uf, "cidades": cidades,
+            "cidades_total": len(cidades),
+            "unidades_total": n, "com_estudo": e, "sem_escuta": n - e,
+            "frase": (conta(n, "unidade") + " em "
+                      + conta(len(cidades), "cidade")
+                      + (f" · {e} com estudo" if e else " · nenhuma escutada")),
+        })
+    _n_tot = sum(u["unidades_total"] for u in _ufs)
+    _n_est = sum(u["com_estudo"] for u in _ufs)
+    escritos.append(escreve("clinicas_indice", {
+        "o_que_e": "Todas as unidades da lista oficial da rede, por estado e "
+                   "cidade. As que já têm estudo abrem a página da clínica; "
+                   "as outras aparecem para que o tamanho do que falta seja "
+                   "visível.",
+        "corte": corte,
+        "unidades_total": _n_tot,
+        "com_estudo": _n_est,
+        "sem_escuta": _n_tot - _n_est,
+        "ufs_total": len(_ufs),
+        "cidades_total": sum(u["cidades_total"] for u in _ufs),
+        "manchete": (f"{_n_est} de " + conta(_n_tot, "unidade")
+                     + " com estudo — as outras "
+                     + conta(_n_tot - _n_est, "ainda não foi escutada",
+                             "ainda não foram escutadas")),
+        "com_estudo_sem_linha_oficial": sum(
+            1 for u in _ufs for c in u["cidades"] for x in c["unidades"]
+            if x.get("sem_linha_oficial")),
+        "cidades_com_mais_de_uma_loja": sum(
+            1 for u in _ufs for c in u["cidades"] if c["mais_de_uma_loja"]),
+        "ufs": _ufs,
+    }))
 
     # ---------- manifest ----------
     # ---------- rede ----------
@@ -727,8 +869,11 @@ def main():
         card("pracas", "As praças estudadas",
              "O que já sabemos de cada praça, em detalhe?",
              len(PRACAS),
-             "praças da rede com estudo completo — concorrência, canais, "
-             "imprensa, busca e avaliações, no mesmo padrão de SC · Mafra.",
+             # "no mesmo padrão de SC · Mafra" saiu daqui: a régua interna
+             # não é assunto de quem lê a tela. A frase diz o que a praça
+             # tem, não contra quem foi comparada.
+             "cidades onde a rede está e que já foram estudadas por inteiro "
+             "— concorrência, canais, imprensa, busca e avaliações.",
              "pracas", "expansao", bool(PRACAS)),
         # ------------------------------------------------------------ ARQUIVO
         card("voz_da_cidade", "A voz da cidade",
@@ -893,8 +1038,47 @@ def main():
         voz = ([{"o_que_e": _eixos.get(k, k), "pct": v}
                 for k, v in (rv.get("nosso_perfil") or {}).items()]
                if rv.get("nosso_perfil") else None)
+        # A CLÍNICA SE APRESENTA ANTES DE SE MEDIR. A tela abria com a nota
+        # em cima do nome, como um boletim. Quem chega precisa saber PRIMEIRO
+        # de que loja se trata: onde fica, desde quando escutamos, que lugar
+        # ela ocupa na cidade e quantas lojas da rede dividem essa cidade.
+        _pl = ult_place.get(lid) or {}
+        _mud = _md_por.get(lid) or {}
+        _irmas = [x for x in ident[l["praca_id"]].get("locais", [])
+                  if x.get("papel") == "proprio" and x["local_id"] != lid] \
+            if l.get("praca_id") in ident else []
+        _hist = (_mud.get("historico") or {})
+        _apresentacao = {
+            "unidade": l.get("unidade"),
+            "cidade": l.get("rotulo"),
+            # o place_id mora na IDENTIDADE, não na série de places — foi a
+            # identidade que virou a chave depois que local_id truncado fundiu
+            # quatro pares de lojas
+            "endereco": (_ficha_por_place.get(
+                (nome_local.get(lid) or {}).get("place_id")) or {}
+            ).get("endereco"),
+            "desde": _data(_hist.get("desde")),
+            "medicoes": _hist.get("medicoes"),
+            "posicao_na_cidade": _pl.get("posicao_na_cidade"),
+            "clinicas_na_cidade": _pl.get("clinicas_na_cidade"),
+            "lojas_irmas": [{"local_id": x["local_id"],
+                             "unidade": x.get("unidade") or x.get("nome")}
+                            for x in _irmas],
+            # a frase de abertura sai PRONTA daqui — o casco não redige
+            "frase": None,
+        }
+        if _apresentacao["desde"]:
+            _apresentacao["frase"] = (
+                f"{l.get('unidade') or l.get('rotulo')} é escutada desde "
+                f"{_data(_hist.get('desde'))}, em "
+                + conta(_apresentacao["medicoes"] or 0, "medição", "medições")
+                + (f", e divide {l.get('rotulo','a cidade').split(' · ')[-1]} "
+                   + f"com mais {conta(len(_irmas), 'loja')} da rede"
+                   if _irmas else "")
+                + ".")
         escritos.append(escreve(f"clinicas/{lid}", {
             "local_id": lid, "praca_id": l.get("praca_id"),
+            "apresentacao": _apresentacao,
             "rotulo": l.get("rotulo"), "unidade": l.get("unidade"),
             "cabecalho": l.get("cabecalho"),
             "faixa": fl.get("faixa"), "urgencia": fl.get("urgencia"),
