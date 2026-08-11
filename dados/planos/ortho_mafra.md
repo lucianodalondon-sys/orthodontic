@@ -1,26 +1,24 @@
-# O seu plano — TO · Palmas
+# O seu plano — SC · Mafra
 
 **09/08/2026**
 
-> ## A sua clínica aparece em 3 das 16 buscas que testamos na sua cidade.
+> ## A sua clínica aparece em 5 das 64 buscas que testamos na sua cidade.
 
-São **5 tarefas**, e **5 delas custam R$ 0**. A ordem é de propósito: o que é grátis vem antes do que custa.
+São **4 tarefas**, e **4 delas custam R$ 0**. A ordem é de propósito: o que é grátis vem antes do que custa.
 
 ---
 
-## 1. Você não aparece quando alguém procura “dentista” na sua cidade
+## 1. Você aparece em 10 das 18 buscas por “dentista” — dá para subir
 
 `R$ 0` · `30 minutos` · `você mesmo`
 
-Testamos 13 buscas da sua cidade com a palavra *dentista* — “dentista palmas”, “dentista 24 horas”, “dentista perto de mim”, e assim por diante.
+Testamos 18 buscas da sua cidade com a palavra *dentista* — “dentista mafra”, “dentista 24 horas”, “dentista perto de mim”, e assim por diante.
 
-**Em 13 delas a sua clínica não apareceu entre as dez primeiras do mapa do Google.**
+**A sua clínica aparece em 10 e fica de fora em 8** — nessas, quem procura não te encontra.
 
-Nas buscas com a palavra *aparelho* você aparece em 3 de 3. Quem já sabe que quer aparelho te encontra.
+São dois pacientes diferentes. Um já decidiu que quer aparelho e procura por isso. O outro só sabe que está com dor, ou que o filho precisa de dentista — e é ele que marca a avaliação.
 
-São dois pacientes diferentes. Um já decidiu que quer aparelho e procura por isso. O outro só sabe que está com dor, ou que o filho precisa de dentista — e é ele que marca a avaliação. **Hoje só o primeiro te encontra.**
-
-Quem aparece no seu lugar: Dentista 24hs Dra. Renata Sardinha (64 avaliações), Plano SERVIR - Unidade Administrativa (165 avaliações) e Clinica Aprimore (7 avaliações).
+Quem aparece no seu lugar: Clinica Simsmile Mafra (69 avaliações), Centro Odontológico Dr. Fabiano Grahl de Souza (69 avaliações) e FB - Odontologia Especializada (0 avaliações).
 
 **O que fazer:**
 
@@ -31,7 +29,7 @@ Quem aparece no seu lugar: Dentista 24hs Dra. Renata Sardinha (64 avaliações),
 
 > ⚠ **Não faça:** Não coloque palavra de busca no NOME da clínica no Google. As regras do Google exigem o nome real, e perfil com nome inflado é suspenso. Perder o perfil custa muito mais do que qualquer busca que ele ganharia.
 
-**Como saber que funcionou:** Daqui a 30 dias a gente refaz exatamente as mesmas 13 buscas. Hoje você aparece em 0 delas — é esse número que tem de subir.
+**Como saber que funcionou:** Daqui a 30 dias a gente refaz exatamente as mesmas 18 buscas. Hoje você aparece em 10 delas — é esse número que tem de subir.
 
 ---
 
@@ -39,7 +37,7 @@ Quem aparece no seu lugar: Dentista 24hs Dra. Renata Sardinha (64 avaliações),
 
 `R$ 0` · `1 hora` · `você ou quem cuida do site`
 
-Quando alguém começa a digitar “dentista palmas”, o próprio Google completa com o nome de um bairro ou de um ponto conhecido da cidade. Estes são os **5 candidatos** que a busca devolveu: Aurea, Regiao Norte, Taquaralto, Tocantins e Ulbra.
+Quando alguém começa a digitar “dentista mafra”, o próprio Google completa com o nome de um bairro ou de um ponto conhecido da cidade. Estes são os **4 candidatos** que a busca devolveu: Alameda Rio Negro, Alphaville Rio Negro, Edificio Rio Negro e Fabiano.
 
 Isso quer dizer que o paciente da sua cidade procura por perto de casa, não pela cidade inteira. Quem escreve o nome do bairro aparece; quem não escreve, não.
 
@@ -59,15 +57,15 @@ Isso quer dizer que o paciente da sua cidade procura por perto de casa, não pel
 
 `R$ 0` · `junto com a primeira tarefa` · `você`
 
-Em **12 buscas** da sua cidade, quem está em primeiro lugar tem menos de 300 avaliações.
+Em **13 buscas** da sua cidade, quem está em primeiro lugar tem menos de 300 avaliações.
 
-· “dentista palmas” — quem está em 1º tem 64 avaliações
+· “dentista mafra” — quem está em 1º tem 69 avaliações
 
-· “dentista palmas tocantins” — quem está em 1º tem 64 avaliações
+· “dentista mafra adse” — quem está em 1º tem 69 avaliações
 
-· “dentista palmas 24 horas” — quem está em 1º tem 64 avaliações
+· “dentista fabiano mafra sc” — quem está em 1º tem 69 avaliações
 
-· “dentista palmas servir” — quem está em 1º tem 165 avaliações
+· “dentista fabio mafra sc” — quem está em 1º tem 0 avaliações
 
 Passar essas não é questão de verba. É questão de aparecer.
 
@@ -80,39 +78,21 @@ Passar essas não é questão de verba. É questão de aparecer.
 
 ---
 
-## 4. A cidade procura dentista por nome de convênio
-
-`R$ 0` · `15 minutos` · `você`
-
-O Google completa a busca da sua cidade com nome de plano: Bradesco, Odontoprev, Servir e Unimed.
-
-**O dado público não diz quais a sua clínica aceita** — isso só você sabe. Mas diz que a cidade procura assim.
-
-**O que fazer:**
-
-1. Liste os convênios que a clínica aceita.
-2. Se aceita algum dos que a cidade procura, escreva no perfil do Google e no site. Aceitar e não dizer é perder paciente de graça.
-3. Se não aceita nenhum, isso também é informação: a conversa passa a ser sobre parcelamento, não sobre plano.
-
-**Como saber que funcionou:** Não é medição de posição: é a pergunta que a recepção passa a ouvir menos, porque a resposta já está escrita.
-
----
-
-## 5. O que o paciente da sua cidade diz que foi buscar
+## 4. O que o paciente da sua cidade diz que foi buscar
 
 `R$ 0` · `meia hora, uma vez` · `você e quem escreve`
 
-Lemos **1.371 avaliações escritas por pacientes das clínicas concorrentes** da sua cidade. Eles contam o que foram fazer:
+Lemos **1.013 avaliações escritas por pacientes das clínicas concorrentes** da sua cidade. Eles contam o que foram fazer:
 
-· criança — 60 menções
+· criança — 97 menções
 
-· urgência / dor — 37 menções
+· implante — 42 menções
 
-· implante — 29 menções
+· aparelho — 10 menções
 
-· aparelho — 16 menções
+· urgência / dor — 7 menções
 
-E as palavras que eles usam para elogiar são sempre as mesmas: excelencia, qualidade, tratamento, ambiente, experiência, atenciosa e mais 2.
+E as palavras que eles usam para elogiar são sempre as mesmas: ambiente, atenciosa, excelentes, qualidade, recepção, trabalho e mais 2.
 
 **Ninguém elogia equipamento. Todo mundo elogia gente.** Anúncio e post que falam de tecnologia estão falando sozinhos.
 

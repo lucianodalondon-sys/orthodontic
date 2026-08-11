@@ -237,8 +237,15 @@ def main():
         # a rede não tem unidade). O estudo daquelas cidades é outro arquivo,
         # em oportunidade/, e continua publicado. A trava fica aqui além de no
         # gerador porque o arquivo órfão pode sobreviver no disco.
+        # O plano agora é POR LOJA (dados/planos/<local_id>.json): eram sete
+        # planos para dez lojas, e as três de Cuiabá liam o mesmo texto como
+        # se fossem o mesmo negócio. A trava também virou por loja: só
+        # publica plano de local_id que é unidade PRÓPRIA de praça da rede.
+        nossas = {l["local_id"] for pp in PRACAS
+                  for l in ident[pp].get("locais", [])
+                  if l.get("papel") == "proprio"}
         for arq in sorted(PLANOS.glob("*.json")):
-            if arq.stem in PRACAS_OPORTUNIDADE:
+            if arq.stem not in nossas:
                 continue
             escreve(f"planos/{arq.stem}", json.loads(arq.read_text(encoding="utf-8")))
             escritos.append(f"planos/{arq.stem}")
@@ -845,6 +852,8 @@ def main():
     # mesmo leilão. Vai na página de cada uma, declarada como leitura de
     # cidade — é análise de mercado, e mercado é por cidade.
     _an_por = {x["praca_id"]: x for x in carrega(OUT, "anuncios").get("pracas", [])}
+    _pres_por = {x["local_id"]: x
+                 for x in carrega(OUT, "presenca_por_loja").get("lojas", [])}
     _md_por = {}
     for _pd in _md.get("pracas", {}).values():
         for _ln in _pd.get("nossas", []):
@@ -878,6 +887,10 @@ def main():
                       "fora": rv.get("rivais_fora") or [],
                       "fora_total": len(rv.get("rivais_fora") or []),
                       "sem_comparacao_porque": rv.get("sem_comparacao_porque")},
+            # a presença na busca É DESTA LOJA, não a média da cidade
+            "presenca_na_busca": _pres_por.get(lid),
+            "plano": (f"planos/{lid}" if (OUT/f"planos/{lid}.json").exists()
+                      else None),
             "anuncios_da_cidade": (lambda a: a and {
                 "e_da_cidade": True,
                 "rotulo": a["rotulo"], "manchete": a["manchete"],
@@ -906,9 +919,12 @@ def main():
     # nesta praça" virou len() na tela — e len() na tela é conta na tela.
     def _ficha_praca(p):
         tem = [k for k, v in (("praca", f"pracas/{p}"),
-                              ("captacao", f"captacao/{p}"),
-                              ("plano", f"planos/{p}"))
+                              ("captacao", f"captacao/{p}"))
                if (OUT/f"{v}.json").exists()]
+        # plano não é mais da praça: existe se alguma LOJA dela tem o seu
+        if any((OUT/f"planos/{l['local_id']}.json").exists()
+               for l in ident[p].get("locais", []) if l.get("papel") == "proprio"):
+            tem.append("plano")
         return {"praca_id": p, "nome": ident[p].get("nome"),
                 "rotulo": ident[p].get("rotulo") or ident[p].get("nome"),
                 "uf": ident[p].get("uf", []),
@@ -927,7 +943,7 @@ def main():
         "pracas": [_ficha_praca(p) for p in PRACAS],
         # o índice de verdade: o que existe, agora, nesta pasta
         "arquivos": {
-            "rede": [x for x in ("fila", "timeline", "caixa_de_respostas", "padroes", "o_que_mudou", "rede_inteira", "rival", "anuncios", "voz_da_cidade", "rede", "rede_cruzamento", "achados",
+            "rede": [x for x in ("fila", "timeline", "caixa_de_respostas", "padroes", "o_que_mudou", "rede_inteira", "rival", "anuncios", "presenca_por_loja", "voz_da_cidade", "rede", "rede_cruzamento", "achados",
                                  "corretor", "evidencias", "radar", "funil_nacional")
                      if (OUT/f"{x}.json").exists()],
             "clinicas": presentes("clinicas"),

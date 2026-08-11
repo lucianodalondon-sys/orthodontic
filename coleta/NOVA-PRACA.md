@@ -67,6 +67,15 @@ elas custaram.
    │       11.7 a resposta por eliminação .... humano            │
    │       11.8 o degrau na escada do achado                     │
    │ 12  o dossiê ...................... o que fica              │
+   └───────────────────────────┬─────────────────────────────────┘
+                               ▼
+   ┌─────────────────────────────────────────────────────────────┐
+   │  PARTE 5 · A LOJA, UMA A UMA  (a cidade é uma; a loja não)  │
+   ├─────────────────────────────────────────────────────────────┤
+   │ 17  a presença de CADA loja ....... plano por local_id      │
+   │ 18  quem anuncia aparelho ......... 134 de 677 ativos       │
+   │ 19  o histórico, não só o delta ... duas janelas, sempre    │
+   │ 20  o pico da praça ............... buraco DECLARADO        │
    └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -1003,6 +1012,137 @@ Cada uma custou alguma coisa de verdade.
 > **A lição que resume todas:** amostra de conveniência não erra pouco, **erra
 > de sinal**. E o erro chega à diretoria com a mesma cara de confiança que o
 > acerto.
+
+
+---
+
+# PARTE 5 · A LOJA, UMA A UMA
+
+> Escrito em 11/08/2026, depois que o portal ficou de pé e a diretoria
+> olhou. Tudo aqui nasceu de um defeito que a cidade escondia.
+
+## ETAPA 17 · A PRESENÇA DE CADA LOJA — automático, grátis
+
+**A cidade é uma; a loja não.** Cuiabá tem três unidades e Londrina duas,
+e nem sempre é o mesmo dono. Tudo que fala COM o franqueado — plano,
+fila, rival, caixa de respostas — é por `local_id`. Era assim na regra e
+não era assim no arquivo: a captação media "a sua clínica aparece em N
+das M buscas" somando a cidade, e o plano repetia essa frase para as três
+lojas de Cuiabá.
+
+**Como separar sem coletar nada de novo.** O mapa do Google devolve, em
+cada busca, o nome E o contador de avaliações de quem apareceu. O
+contador é a impressão digital da loja: em Cuiabá as três OrthoDontic têm
+1.222, 78 e 71 avaliações. Casando o contador do resultado com o da
+ficha, cada aparição vira de uma unidade.
+
+```bash
+python3 scripts/onde_cada_loja_aparece.py --salvar
+python3 scripts/plano_do_franqueado.py --todas --salvar --md   # 1 por loja
+```
+
+**O que apareceu no primeiro dia:**
+
+| loja | aparece em | |
+|---|---|---|
+| MT · Cuiabá Dom Bosco | **0 de 151** | invisível |
+| MT · Cuiabá Fernando Corrêa | 1 de 151 | |
+| MT · Cuiabá Centro Norte | 4 de 151 | |
+| SC · Mafra | 5 de 64 | a melhor da rede, com 8% |
+
+A loja Dom Bosco não aparece em NENHUMA busca da própria cidade, e o
+plano da cidade dizia a ela "a sua clínica aparece". A média escondia uma
+loja invisível — e o dono dela estava lendo o resultado do vizinho.
+
+⚠ **A tolerância do casamento é de 6 avaliações.** Ficha e mapa podem ter
+sido lidos em dias diferentes e o contador anda. Aparição com nome
+OrthoDontic que não casa com ficha nenhuma vira `aviso` no arquivo, com o
+motivo — nunca é atribuída "no chute" à loja mais próxima.
+
+## ETAPA 18 · QUEM ANUNCIA APARELHO — automático, já coletado
+
+735 anúncios ficaram três semanas coletados e invisíveis: o portal
+mostrava disso um contador dentro da captação. A régua do produto vale
+aqui igual à dos concorrentes — **odontologia não é ortodontia**.
+
+```bash
+python3 scripts/quem_anuncia_aparelho.py --salvar
+```
+
+Dos 677 ativos, **134 falam de aparelho**. Os outros 543 são implante,
+clareamento, lente de contato — e um advogado tributarista que a
+varredura de Contagem trouxe junto. Os descartados aparecem CONTADOS,
+com o motivo.
+
+⚠ **Duas páginas do Meta podem ter o mesmo nome.** Em Juazeiro do Norte
+há duas chamadas "OrthoDontic" numa cidade onde a lista oficial não tem
+unidade. Agrupar por nome escondia uma. Conte por `page_id`, e a leitura
+vira BANDEIRA com as duas explicações possíveis (unidade nova fora da
+lista · unidade vizinha comprando a praça) — nunca uma frase de certeza,
+porque fonte externa não separa as duas.
+
+## ETAPA 19 · O HISTÓRICO, NÃO SÓ O DELTA
+
+`o_que_mudou` compara as duas últimas medições — é o que a semana mudou.
+Mas Mafra, Londrina, Feira e Prudente são medidas desde **15/jul**, e
+comparar só as duas últimas jogava fora um mês de série: a tela chamava
+de "período de só 3 dias" justamente as quatro praças com mais
+histórico.
+
+Toda leitura de movimento carrega as DUAS janelas: o delta curto e o
+período inteiro (`historico`: desde, dias, medições, delta, ritmo). O
+aviso de amostra curta olha o HISTÓRICO, nunca a janela do delta.
+
+**A primeira leitura que isso destravou:** a loja de Mafra ganhou ZERO
+avaliação em 26 dias.
+
+## ETAPA 20 · O PICO DA PRAÇA — buraco declarado, não preenchido
+
+A série de sazonalidade tem **4 pontos, todos de SC**, vindos do estudo
+de Mafra. Nenhum coletor lê índice de busca mensal por cidade.
+
+**E não se herda curva de região.** Foi Mafra que derrubou a tese
+nacional de "dezembro e janeiro são pico": lá é VALE. Copiar a curva de
+SC para Palmas seria inventar.
+
+Enquanto não houver coleta, cada praça publica `sazonalidade_estado` com
+o motivo e o que preencheria. Buraco calado é o que faz a diretoria achar
+que medimos tudo.
+
+## ETAPA 15.5 · A LEITURA ESCRITA DA CIDADE DE OPORTUNIDADE
+
+As seis cidades do Radar abriam com vinte campos de número e nenhuma
+manchete, enquanto toda praça da rede abre com uma tese. E o `padrao.py`
+dizia "completa", porque a régua só cobrava tese de praça COM unidade.
+
+```bash
+python3 scripts/escreve_tese_oportunidade.py --salvar
+```
+
+O script **confere cada número citado na tese contra o estudo** e falha
+se algum não bater. Adjetivo sem conta atrás não passa.
+
+---
+
+# O QUE O PORTAL EXIGE DA COLETA
+
+Três regras que nasceram do portal e voltam para cá, porque quem coleta
+decide se elas são possíveis.
+
+**1 · Todo número da tela sai pronto do build.** Inclusive "quantos itens
+tem nesta lista": `estudos`, `itens_total`, `fora_total`, `alertas_total`,
+`candidatas_total`, `lojas_com_fila`. `.length` na tela é conta na tela.
+
+**2 · Número e nome concordam, sempre.** `cruzamento.conta(n, singular,
+plural)` é o único jeito de juntar os dois. A muleta `(s)` — "1 mês(es)",
+"2 dia(s)" — está proibida: é a marca de que ninguém leu a frase em voz
+alta. O portal já escreveu "1 unidades em faixa vermelha" na primeira
+tela.
+
+**3 · O mapa responde ONDE DÓI, não onde a rede é grande.** Cada UF sai
+com `tom` (crítico · atenção · ok · sem escuta · sem unidade) cruzando a
+faixa de cada unidade com os alertas das fichas. Mapa de contagem
+responde pergunta que ninguém faz na primeira tela.
 
 ---
 

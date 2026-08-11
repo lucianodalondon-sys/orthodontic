@@ -1,26 +1,42 @@
 {
-  "praca_id": "contagem",
-  "rotulo": "MG · Contagem",
+  "praca_id": "feira",
+  "rotulo": "BA · Feira de Santana",
+  "local_id": "ortho_fsa",
+  "unidade": "OrthoDontic Feira de Santana",
   "snapshot_date": "2026-08-09",
   "placar": {
     "aparece_em": 3,
-    "de": 20,
-    "pct": 15
+    "de": 123,
+    "pct": 2,
+    "melhor_posicao": 1,
+    "invisivel": false,
+    "e_desta_loja": true
   },
-  "frase_do_topo": "A sua clínica aparece em **3 das 20 buscas** que testamos na sua cidade.",
+  "frase_do_topo": "A sua clínica aparece em **3 das 123 buscas** que testamos na cidade.",
+  "o_que_e_da_loja": [
+    "o placar de presença",
+    "a ficha do Google",
+    "as avaliações e as respostas"
+  ],
+  "o_que_e_da_cidade": [
+    "os bairros que a cidade escreve",
+    "os convênios citados",
+    "as palavras da praça",
+    "quem anuncia aparelho"
+  ],
   "gratis": 5,
   "tarefas": [
     {
-      "titulo": "Você não aparece quando alguém procura “dentista” na sua cidade",
+      "titulo": "Você aparece em 1 das 17 buscas por “dentista” — dá para subir",
       "custo": "R$ 0",
       "tempo": "30 minutos",
       "quem": "você mesmo",
       "o_que_esta_acontecendo": [
-        "Testamos 17 buscas da sua cidade com a palavra *dentista* — “dentista contagem”, “dentista 24 horas”, “dentista perto de mim”, e assim por diante.",
-        "**Em 17 delas a sua clínica não apareceu entre as dez primeiras do mapa do Google.**",
+        "Testamos 17 buscas da sua cidade com a palavra *dentista* — “dentista feira de santana”, “dentista 24 horas”, “dentista perto de mim”, e assim por diante.",
+        "**A sua clínica aparece em 1 e fica de fora em 16** — nessas, quem procura não te encontra.",
         "Nas buscas com a palavra *aparelho* você aparece em 3 de 3. Quem já sabe que quer aparelho te encontra.",
-        "São dois pacientes diferentes. Um já decidiu que quer aparelho e procura por isso. O outro só sabe que está com dor, ou que o filho precisa de dentista — e é ele que marca a avaliação. **Hoje só o primeiro te encontra.**",
-        "Quem aparece no seu lugar: ODONTO ART DENTISTA 24 HORAS CONTAGEM (1.728 avaliações) e Pronto Atendimento Unimed - Unidade Contagem (804 avaliações)."
+        "São dois pacientes diferentes. Um já decidiu que quer aparelho e procura por isso. O outro só sabe que está com dor, ou que o filho precisa de dentista — e é ele que marca a avaliação.",
+        "Quem aparece no seu lugar: Instituto Integrale 24 Horas - Dentista 24 Horas (375 avaliações), Dents clínica odontológica (376 avaliações) e Policlínica do George Américo (43 avaliações)."
       ],
       "o_que_fazer": [
         "Abra o seu perfil do Google (o mesmo que mostra a nota e as fotos da clínica).",
@@ -29,8 +45,8 @@
         "Na **descrição**, diga em uma frase o que a clínica faz e em que bairro fica."
       ],
       "nao_faca": "Não coloque palavra de busca no NOME da clínica no Google. As regras do Google exigem o nome real, e perfil com nome inflado é suspenso. Perder o perfil custa muito mais do que qualquer busca que ele ganharia.",
-      "como_saber": "Daqui a 30 dias a gente refaz exatamente as mesmas 17 buscas. Hoje você aparece em 0 delas — é esse número que tem de subir.",
-      "peso": 117
+      "como_saber": "Daqui a 30 dias a gente refaz exatamente as mesmas 17 buscas. Hoje você aparece em 1 delas — é esse número que tem de subir.",
+      "peso": 116
     },
     {
       "titulo": "Existe mais de um cadastro da sua clínica no Google",
@@ -39,9 +55,7 @@
       "quem": "você",
       "o_que_esta_acontecendo": [
         "Encontramos outro cadastro no mesmo endereço ou com o nome da marca:",
-        "· ODONTO ART DENTISTA 24 HORAS CONTAGEM — 1.727 avaliação",
-        "· Clínica Elevata - Rede Odonto Eldorado — 1.292 avaliação",
-        "· Orthopride Contagem — 875 avaliação",
+        "· Aparelho Dental - Orthodontic Feira de Santana — nenhuma avaliação",
         "Cadastro repetido **divide a avaliação e a nota**. O paciente que avalia no perfil errado some do perfil certo."
       ],
       "o_que_fazer": [
@@ -57,7 +71,7 @@
       "tempo": "1 hora",
       "quem": "você ou quem cuida do site",
       "o_que_esta_acontecendo": [
-        "Quando alguém começa a digitar “dentista contagem”, o próprio Google completa com o nome de um bairro ou de um ponto conhecido da cidade. Estes são os **21 candidatos** que a busca devolveu: Alvorada, Amor Saude, Angela Nova, Av Agua Branca, Av Santa Ines, Av Tiradentes, Centro, Implantar e mais 13.",
+        "Quando alguém começa a digitar “dentista feira de santana”, o próprio Google completa com o nome de um bairro ou de um ponto conhecido da cidade. Estes são os **9 candidatos** que a busca devolveu: Centro, Clinwit Harmonizacao Botox, Fatima Mascarenhas, Gente, Luciana Lacerda, Mariana Cruz, Robson Reis, Sim e mais 1.",
         "Isso quer dizer que o paciente da sua cidade procura por perto de casa, não pela cidade inteira. Quem escreve o nome do bairro aparece; quem não escreve, não.",
         "**São candidatos, não uma lista pronta. Confira antes de usar — dois minutos.** A máquina pega o que o Google completa, e no meio vem nome de rua, de faculdade e até de clínica concorrente. Você conhece a sua cidade melhor que ela: risque os que não são bairro e fique com os que são."
       ],
@@ -67,7 +81,27 @@
         "Se a clínica atende gente de mais de um bairro, cite os dois ou três de onde vem mais paciente — a recepção sabe quais são."
       ],
       "como_saber": "Na próxima medição a gente testa a busca com o nome do bairro e vê se a clínica passou a aparecer.",
-      "peso": 81
+      "peso": 69
+    },
+    {
+      "titulo": "Tem busca importante onde o primeiro colocado é fraco",
+      "custo": "R$ 0",
+      "tempo": "junto com a primeira tarefa",
+      "quem": "você",
+      "o_que_esta_acontecendo": [
+        "Em **8 buscas** da sua cidade, quem está em primeiro lugar tem menos de 300 avaliações.",
+        "· “ortodontista feira de santana” — quem está em 1º tem 170 avaliações",
+        "· “ortodontista em feira de santana” — quem está em 1º tem 7 avaliações",
+        "· “dentista feira de santana sus” — quem está em 1º tem 43 avaliações",
+        "· “dentista feira de santana tomba” — quem está em 1º tem 14 avaliações",
+        "Passar essas não é questão de verba. É questão de aparecer."
+      ],
+      "o_que_fazer": [
+        "Faça a primeira tarefa (categorias e serviços) — ela sozinha já coloca a clínica na disputa dessas buscas.",
+        "Continue pedindo avaliação no balcão. É o que sustenta a posição depois que ela chega."
+      ],
+      "como_saber": "São as buscas que mudam primeiro. Se alguma coisa vai aparecer em 30 dias, é aqui.",
+      "peso": 58
     },
     {
       "titulo": "A cidade procura dentista por nome de convênio",
@@ -75,7 +109,7 @@
       "tempo": "15 minutos",
       "quem": "você",
       "o_que_esta_acontecendo": [
-        "O Google completa a busca da sua cidade com nome de plano: Amil, Bradesco, Hapvida, Metlife, Odontoprev e Unimed.",
+        "O Google completa a busca da sua cidade com nome de plano: Bradesco, Hapvida e Unimed.",
         "**O dado público não diz quais a sua clínica aceita** — isso só você sabe. Mas diz que a cidade procura assim."
       ],
       "o_que_fazer": [
@@ -84,29 +118,7 @@
         "Se não aceita nenhum, isso também é informação: a conversa passa a ser sobre parcelamento, não sobre plano."
       ],
       "como_saber": "Não é medição de posição: é a pergunta que a recepção passa a ouvir menos, porque a resposta já está escrita.",
-      "peso": 46
-    },
-    {
-      "titulo": "O que o paciente da sua cidade diz que foi buscar",
-      "custo": "R$ 0",
-      "tempo": "meia hora, uma vez",
-      "quem": "você e quem escreve",
-      "o_que_esta_acontecendo": [
-        "Lemos **2.226 avaliações escritas por pacientes das clínicas concorrentes** da sua cidade. Eles contam o que foram fazer:",
-        "· criança — 218 menções",
-        "· urgência / dor — 129 menções",
-        "· extração / siso — 43 menções",
-        "· limpeza / profilaxia — 32 menções",
-        "E as palavras que eles usam para elogiar são sempre as mesmas: recepção, center, tratamento, atenciosa, atendida, call e mais 2.",
-        "**Ninguém elogia equipamento. Todo mundo elogia gente.** Anúncio e post que falam de tecnologia estão falando sozinhos."
-      ],
-      "o_que_fazer": [
-        "Escreva com as palavras que eles usam, não com as suas.",
-        "Mostre pessoas: quem atende, quem recebe, o nome de cada um.",
-        "Se dor e criança estão no topo, é por ali que o paciente entra — e o aparelho vem na conversa depois, não no anúncio."
-      ],
-      "como_saber": "Não tem número de posição. O sinal é a avaliação nova começar a repetir as mesmas palavras.",
-      "peso": 30
+      "peso": 43
     }
   ],
   "ressalvas": [

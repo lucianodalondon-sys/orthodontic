@@ -1,13 +1,29 @@
 {
   "praca_id": "mafra",
   "rotulo": "SC · Mafra",
+  "local_id": "ortho_mafra",
+  "unidade": "OrthoDontic Mafra",
   "snapshot_date": "2026-08-09",
   "placar": {
-    "aparece_em": 10,
-    "de": 18,
-    "pct": 56
+    "aparece_em": 5,
+    "de": 64,
+    "pct": 8,
+    "melhor_posicao": 2,
+    "invisivel": false,
+    "e_desta_loja": true
   },
-  "frase_do_topo": "A sua clínica aparece em **10 das 18 buscas** que testamos na sua cidade.",
+  "frase_do_topo": "A sua clínica aparece em **5 das 64 buscas** que testamos na cidade.",
+  "o_que_e_da_loja": [
+    "o placar de presença",
+    "a ficha do Google",
+    "as avaliações e as respostas"
+  ],
+  "o_que_e_da_cidade": [
+    "os bairros que a cidade escreve",
+    "os convênios citados",
+    "as palavras da praça",
+    "quem anuncia aparelho"
+  ],
   "gratis": 4,
   "tarefas": [
     {
@@ -16,7 +32,7 @@
       "tempo": "30 minutos",
       "quem": "você mesmo",
       "o_que_esta_acontecendo": [
-        "Testamos 18 buscas da sua cidade com a palavra *dentista* — “dentista rio negro”, “dentista 24 horas”, “dentista perto de mim”, e assim por diante.",
+        "Testamos 18 buscas da sua cidade com a palavra *dentista* — “dentista mafra”, “dentista 24 horas”, “dentista perto de mim”, e assim por diante.",
         "**A sua clínica aparece em 10 e fica de fora em 8** — nessas, quem procura não te encontra.",
         "",
         "São dois pacientes diferentes. Um já decidiu que quer aparelho e procura por isso. O outro só sabe que está com dor, ou que o filho precisa de dentista — e é ele que marca a avaliação.",
@@ -31,6 +47,24 @@
       "nao_faca": "Não coloque palavra de busca no NOME da clínica no Google. As regras do Google exigem o nome real, e perfil com nome inflado é suspenso. Perder o perfil custa muito mais do que qualquer busca que ele ganharia.",
       "como_saber": "Daqui a 30 dias a gente refaz exatamente as mesmas 18 buscas. Hoje você aparece em 10 delas — é esse número que tem de subir.",
       "peso": 108
+    },
+    {
+      "titulo": "A sua cidade procura dentista por bairro — e o seu bairro não está escrito em lugar nenhum",
+      "custo": "R$ 0",
+      "tempo": "1 hora",
+      "quem": "você ou quem cuida do site",
+      "o_que_esta_acontecendo": [
+        "Quando alguém começa a digitar “dentista mafra”, o próprio Google completa com o nome de um bairro ou de um ponto conhecido da cidade. Estes são os **4 candidatos** que a busca devolveu: Alameda Rio Negro, Alphaville Rio Negro, Edificio Rio Negro e Fabiano.",
+        "Isso quer dizer que o paciente da sua cidade procura por perto de casa, não pela cidade inteira. Quem escreve o nome do bairro aparece; quem não escreve, não.",
+        "**São candidatos, não uma lista pronta. Confira antes de usar — dois minutos.** A máquina pega o que o Google completa, e no meio vem nome de rua, de faculdade e até de clínica concorrente. Você conhece a sua cidade melhor que ela: risque os que não são bairro e fique com os que são."
+      ],
+      "o_que_fazer": [
+        "No perfil do Google, cite o bairro na descrição e nas publicações.",
+        "No site, tenha uma página que diga o bairro e as referências de quem chega (a rua, o ponto conhecido do lado, onde estacionar).",
+        "Se a clínica atende gente de mais de um bairro, cite os dois ou três de onde vem mais paciente — a recepção sabe quais são."
+      ],
+      "como_saber": "Na próxima medição a gente testa a busca com o nome do bairro e vê se a clínica passou a aparecer.",
+      "peso": 64
     },
     {
       "titulo": "Tem busca importante onde o primeiro colocado é fraco",
@@ -51,24 +85,6 @@
       ],
       "como_saber": "São as buscas que mudam primeiro. Se alguma coisa vai aparecer em 30 dias, é aqui.",
       "peso": 63
-    },
-    {
-      "titulo": "A sua cidade procura dentista por bairro — e o seu bairro não está escrito em lugar nenhum",
-      "custo": "R$ 0",
-      "tempo": "1 hora",
-      "quem": "você ou quem cuida do site",
-      "o_que_esta_acontecendo": [
-        "Quando alguém começa a digitar “dentista rio negro”, o próprio Google completa com o nome de um bairro ou de um ponto conhecido da cidade. Estes são os **2 candidatos** que a busca devolveu: Alphaville e Fabiano Mafra.",
-        "Isso quer dizer que o paciente da sua cidade procura por perto de casa, não pela cidade inteira. Quem escreve o nome do bairro aparece; quem não escreve, não.",
-        "**São candidatos, não uma lista pronta. Confira antes de usar — dois minutos.** A máquina pega o que o Google completa, e no meio vem nome de rua, de faculdade e até de clínica concorrente. Você conhece a sua cidade melhor que ela: risque os que não são bairro e fique com os que são."
-      ],
-      "o_que_fazer": [
-        "No perfil do Google, cite o bairro na descrição e nas publicações.",
-        "No site, tenha uma página que diga o bairro e as referências de quem chega (a rua, o ponto conhecido do lado, onde estacionar).",
-        "Se a clínica atende gente de mais de um bairro, cite os dois ou três de onde vem mais paciente — a recepção sabe quais são."
-      ],
-      "como_saber": "Na próxima medição a gente testa a busca com o nome do bairro e vê se a clínica passou a aparecer.",
-      "peso": 62
     },
     {
       "titulo": "O que o paciente da sua cidade diz que foi buscar",

@@ -1,8 +1,8 @@
-# O seu plano — MG · Contagem
+# O seu plano — MT · Cuiabá + MT · Várzea Grande
 
 **09/08/2026**
 
-> ## A sua clínica aparece em 3 das 20 buscas que testamos na sua cidade.
+> ## A sua clínica aparece em 4 das 151 buscas que testamos na sua cidade.
 
 São **5 tarefas**, e **5 delas custam R$ 0**. A ordem é de propósito: o que é grátis vem antes do que custa.
 
@@ -12,15 +12,15 @@ São **5 tarefas**, e **5 delas custam R$ 0**. A ordem é de propósito: o que �
 
 `R$ 0` · `30 minutos` · `você mesmo`
 
-Testamos 17 buscas da sua cidade com a palavra *dentista* — “dentista contagem”, “dentista 24 horas”, “dentista perto de mim”, e assim por diante.
+Testamos 16 buscas da sua cidade com a palavra *dentista* — “dentista várzea grande”, “dentista 24 horas”, “dentista perto de mim”, e assim por diante.
 
-**Em 17 delas a sua clínica não apareceu entre as dez primeiras do mapa do Google.**
+**Em 16 delas a sua clínica não apareceu entre as dez primeiras do mapa do Google.**
 
-Nas buscas com a palavra *aparelho* você aparece em 3 de 3. Quem já sabe que quer aparelho te encontra.
+Nas buscas com a palavra *aparelho* você aparece em 4 de 4. Quem já sabe que quer aparelho te encontra.
 
 São dois pacientes diferentes. Um já decidiu que quer aparelho e procura por isso. O outro só sabe que está com dor, ou que o filho precisa de dentista — e é ele que marca a avaliação. **Hoje só o primeiro te encontra.**
 
-Quem aparece no seu lugar: ODONTO ART DENTISTA 24 HORAS CONTAGEM (1.728 avaliações) e Pronto Atendimento Unimed - Unidade Contagem (804 avaliações).
+Quem aparece no seu lugar: Centro Odontológico Mato Grosso (49 avaliações), Dentista em Cuiabá - Dra Mariana Lima Pereira (189 avaliações) e Pronto Atendimento Adulto e Infantil Unimed (276 avaliações).
 
 **O que fazer:**
 
@@ -31,7 +31,7 @@ Quem aparece no seu lugar: ODONTO ART DENTISTA 24 HORAS CONTAGEM (1.728 avaliaç
 
 > ⚠ **Não faça:** Não coloque palavra de busca no NOME da clínica no Google. As regras do Google exigem o nome real, e perfil com nome inflado é suspenso. Perder o perfil custa muito mais do que qualquer busca que ele ganharia.
 
-**Como saber que funcionou:** Daqui a 30 dias a gente refaz exatamente as mesmas 17 buscas. Hoje você aparece em 0 delas — é esse número que tem de subir.
+**Como saber que funcionou:** Daqui a 30 dias a gente refaz exatamente as mesmas 16 buscas. Hoje você aparece em 0 delas — é esse número que tem de subir.
 
 ---
 
@@ -41,11 +41,11 @@ Quem aparece no seu lugar: ODONTO ART DENTISTA 24 HORAS CONTAGEM (1.728 avaliaç
 
 Encontramos outro cadastro no mesmo endereço ou com o nome da marca:
 
-· ODONTO ART DENTISTA 24 HORAS CONTAGEM — 1.727 avaliação
+· OdontoCompany Boa Esperança — 122 avaliação
 
-· Clínica Elevata - Rede Odonto Eldorado — 1.292 avaliação
+· OdontoCenter Cuiabá - Coxipó — 61 avaliação
 
-· Orthopride Contagem — 875 avaliação
+· Dentizy — 45 avaliação
 
 Cadastro repetido **divide a avaliação e a nota**. O paciente que avalia no perfil errado some do perfil certo.
 
@@ -62,7 +62,7 @@ Cadastro repetido **divide a avaliação e a nota**. O paciente que avalia no pe
 
 `R$ 0` · `1 hora` · `você ou quem cuida do site`
 
-Quando alguém começa a digitar “dentista contagem”, o próprio Google completa com o nome de um bairro ou de um ponto conhecido da cidade. Estes são os **21 candidatos** que a busca devolveu: Alvorada, Amor Saude, Angela Nova, Av Agua Branca, Av Santa Ines, Av Tiradentes, Centro, Implantar e mais 13.
+Quando alguém começa a digitar “dentista várzea grande”, o próprio Google completa com o nome de um bairro ou de um ponto conhecido da cidade. Estes são os **28 candidatos** que a busca devolveu: Biologico Cuiaba, Coife, Costela -, Couto Magalhaes, Cristo Rei, Cuiaba Centro, Cuiaba Cpa, Cuiaba Juliana e mais 20.
 
 Isso quer dizer que o paciente da sua cidade procura por perto de casa, não pela cidade inteira. Quem escreve o nome do bairro aparece; quem não escreve, não.
 
@@ -78,11 +78,36 @@ Isso quer dizer que o paciente da sua cidade procura por perto de casa, não pel
 
 ---
 
-## 4. A cidade procura dentista por nome de convênio
+## 4. Tem busca importante onde o primeiro colocado é fraco
+
+`R$ 0` · `junto com a primeira tarefa` · `você`
+
+Em **16 buscas** da sua cidade, quem está em primeiro lugar tem menos de 300 avaliações.
+
+· “ortodontista em cuiaba” — quem está em 1º tem 32 avaliações
+
+· “dentista cuiabá centro” — quem está em 1º tem 49 avaliações
+
+· “dentista cuiabá” — quem está em 1º tem 189 avaliações
+
+· “dentista cuiabá perto de mim” — quem está em 1º tem 189 avaliações
+
+Passar essas não é questão de verba. É questão de aparecer.
+
+**O que fazer:**
+
+1. Faça a primeira tarefa (categorias e serviços) — ela sozinha já coloca a clínica na disputa dessas buscas.
+2. Continue pedindo avaliação no balcão. É o que sustenta a posição depois que ela chega.
+
+**Como saber que funcionou:** São as buscas que mudam primeiro. Se alguma coisa vai aparecer em 30 dias, é aqui.
+
+---
+
+## 5. A cidade procura dentista por nome de convênio
 
 `R$ 0` · `15 minutos` · `você`
 
-O Google completa a busca da sua cidade com nome de plano: Amil, Bradesco, Hapvida, Metlife, Odontoprev e Unimed.
+O Google completa a busca da sua cidade com nome de plano: Bradesco, Hapvida, Odontoprev, Unimed e Uniodonto.
 
 **O dado público não diz quais a sua clínica aceita** — isso só você sabe. Mas diz que a cidade procura assim.
 
@@ -93,34 +118,6 @@ O Google completa a busca da sua cidade com nome de plano: Amil, Bradesco, Hapvi
 3. Se não aceita nenhum, isso também é informação: a conversa passa a ser sobre parcelamento, não sobre plano.
 
 **Como saber que funcionou:** Não é medição de posição: é a pergunta que a recepção passa a ouvir menos, porque a resposta já está escrita.
-
----
-
-## 5. O que o paciente da sua cidade diz que foi buscar
-
-`R$ 0` · `meia hora, uma vez` · `você e quem escreve`
-
-Lemos **2.226 avaliações escritas por pacientes das clínicas concorrentes** da sua cidade. Eles contam o que foram fazer:
-
-· criança — 218 menções
-
-· urgência / dor — 129 menções
-
-· extração / siso — 43 menções
-
-· limpeza / profilaxia — 32 menções
-
-E as palavras que eles usam para elogiar são sempre as mesmas: recepção, center, tratamento, atenciosa, atendida, call e mais 2.
-
-**Ninguém elogia equipamento. Todo mundo elogia gente.** Anúncio e post que falam de tecnologia estão falando sozinhos.
-
-**O que fazer:**
-
-1. Escreva com as palavras que eles usam, não com as suas.
-2. Mostre pessoas: quem atende, quem recebe, o nome de cada um.
-3. Se dor e criança estão no topo, é por ali que o paciente entra — e o aparelho vem na conversa depois, não no anúncio.
-
-**Como saber que funcionou:** Não tem número de posição. O sinal é a avaliação nova começar a repetir as mesmas palavras.
 
 ---
 

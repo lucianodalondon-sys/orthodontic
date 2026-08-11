@@ -33,6 +33,7 @@ RAIZ = pathlib.Path(__file__).resolve().parent.parent
 SERIE = RAIZ/"dados"/"serie"
 IDENT = RAIZ/"dados"/"identidade"
 PLANOS = RAIZ/"dados"/"planos"
+PORTAL = RAIZ/"dados"/"portal"
 sys.path.insert(0, str(RAIZ/"coleta"/"coletores"))
 from portas import NAO_E_BAIRRO, frase_util     # noqa: E402  o mesmo filtro da coleta
 
@@ -420,7 +421,23 @@ def tarefa_anuncio(c):
 
 # ──────────────────────────────── o plano ───────────────────────────────────
 
-def monta(praca):
+def presenca_da_loja(local_id):
+    """Em quantas buscas ESTA loja aparece — não a cidade.
+
+    O plano é a única peça que fala na segunda pessoa com o dono, e o
+    dono é de UMA loja. Cuiabá tem três, que podem nem ser do mesmo
+    dono, e o plano da cidade dizia a todas "a sua clínica aparece em N
+    das M buscas" usando a conta somada. Para a loja Dom Bosco, que não
+    aparece em NENHUMA das 151 buscas, essa frase era falsa.
+    """
+    a = PORTAL/"presenca_por_loja.json"
+    if not a.exists():
+        return None
+    d = json.loads(a.read_text(encoding="utf-8"))
+    return next((x for x in d.get("lojas", []) if x["local_id"] == local_id), None)
+
+
+def monta(praca, local_id=None, unidade=None):
     caps = ultimo(jsonl("captacao"), praca)
     if not caps:
         return None
@@ -437,15 +454,38 @@ def monta(praca):
     tarefas.sort(key=lambda t: -t["peso"])
     tarefas = tarefas[:5]        # com dez, ninguém faz nenhuma
 
-    total = c["portas_medidas"]
-    dentro = len(c["dentro"])
+    pres = presenca_da_loja(local_id) if local_id else None
+    if pres:
+        total, dentro = pres["de"], pres["aparece_em"]
+        placar = {"aparece_em": dentro, "de": total, "pct": pres["pct"],
+                  "melhor_posicao": pres.get("melhor_posicao"),
+                  "invisivel": pres["invisivel"],
+                  "e_desta_loja": True}
+        frase = (f"A sua clínica **não aparece em nenhuma** das "
+                 f"{total} buscas que testamos na cidade."
+                 if pres["invisivel"] else
+                 f"A sua clínica aparece em **{dentro} das {total} buscas** "
+                 f"que testamos na cidade.")
+    else:
+        total = c["portas_medidas"]
+        dentro = len(c["dentro"])
+        placar = {"aparece_em": dentro, "de": total,
+                  "pct": round(100*dentro/total) if total else None,
+                  "e_desta_loja": False}
+        frase = (f"A rede aparece em **{dentro} das {total} buscas** "
+                 f"que testamos na cidade.")
     return {
         "praca_id": praca, "rotulo": c["rotulo"],
+        "local_id": local_id, "unidade": unidade,
         "snapshot_date": c["snapshot_date"],
-        "placar": {"aparece_em": dentro, "de": total,
-                   "pct": round(100*dentro/total) if total else None},
-        "frase_do_topo": (f"A sua clínica aparece em **{dentro} das {total} buscas** "
-                          f"que testamos na sua cidade."),
+        "placar": placar,
+        "frase_do_topo": frase,
+        # o que vale para a loja e o que vale para a cidade inteira
+        "o_que_e_da_loja": ["o placar de presença", "a ficha do Google",
+                            "as avaliações e as respostas"],
+        "o_que_e_da_cidade": ["os bairros que a cidade escreve",
+                              "os convênios citados", "as palavras da praça",
+                              "quem anuncia aparelho"],
         "gratis": sum(1 for t in tarefas if t["custo"] == "R$ 0"),
         "tarefas": tarefas,
         "ressalvas": [
@@ -461,10 +501,14 @@ def monta(praca):
 
 
 def imprime(p):
-    print(f"\n{'='*78}\n  O SEU PLANO · {p['rotulo']}\n{'='*78}")
+    print(f"\n{'='*78}\n  O SEU PLANO · {p['rotulo']}"
+          f"{' · ' + p['unidade'] if p.get('unidade') else ''}\n{'='*78}")
     pl = p["placar"]
-    linhas = [f"A sua clínica aparece em {pl['aparece_em']} das {pl['de']} buscas",
-              f"que testamos na sua cidade.  ({pl['pct']}%)"]
+    linhas = ([f"A sua clínica NÃO APARECE em nenhuma das {pl['de']} buscas",
+               "que testamos na cidade."]
+              if pl.get("invisivel") else
+              [f"A sua clínica aparece em {pl['aparece_em']} das {pl['de']} buscas",
+               f"que testamos na cidade.  ({pl['pct']}%)"])
     largura = 70
     print(f"\n  ┌{'─'*largura}┐")
     for l in linhas:
@@ -558,22 +602,34 @@ def main():
               f"franqueado precisa de franqueado: {', '.join(sem_dono)}")
         pracas = [p for p in pracas if tem_dono(p)]
 
+    # UM PLANO POR LOJA. Eram sete planos para dez lojas: as três de Cuiabá
+    # liam o mesmo texto, e as duas de Londrina também — donos possivelmente
+    # diferentes recebendo a conta somada do vizinho como se fosse a sua.
     for praca in pracas:
-        p = monta(praca)
-        if not p:
-            print(f"  {praca}: sem captação coletada — rode "
-                  f"`python3 scripts/oportunidades_franqueado.py --praca {praca} --salvar`")
+        ident = json.loads((IDENT/f"{praca}.json").read_text(encoding="utf-8"))
+        lojas = [l for l in ident.get("locais", []) if l.get("papel") == "proprio"]
+        if not lojas:
+            print(f"  {praca}: sem unidade própria na identidade")
             continue
-        imprime(p)
-        if a.salvar:
-            PLANOS.mkdir(parents=True, exist_ok=True)
-            (PLANOS/f"{praca}.json").write_text(
-                json.dumps(p, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
-            print(f"  → dados/planos/{praca}.json")
-        if a.md:
-            PLANOS.mkdir(parents=True, exist_ok=True)
-            (PLANOS/f"{praca}.md").write_text(markdown(p), encoding="utf-8")
-            print(f"  → dados/planos/{praca}.md")
+        for l in lojas:
+            p = monta(praca, l["local_id"], l.get("nome"))
+            if not p:
+                print(f"  {praca}: sem captação coletada — rode "
+                      f"`python3 scripts/oportunidades_franqueado.py "
+                      f"--praca {praca} --salvar`")
+                break
+            imprime(p)
+            if a.salvar:
+                PLANOS.mkdir(parents=True, exist_ok=True)
+                (PLANOS/f"{l['local_id']}.json").write_text(
+                    json.dumps(p, ensure_ascii=False, indent=2)+"\n",
+                    encoding="utf-8")
+                print(f"  → dados/planos/{l['local_id']}.json")
+            if a.md:
+                PLANOS.mkdir(parents=True, exist_ok=True)
+                (PLANOS/f"{l['local_id']}.md").write_text(markdown(p),
+                                                          encoding="utf-8")
+                print(f"  → dados/planos/{l['local_id']}.md")
 
 
 if __name__ == "__main__":

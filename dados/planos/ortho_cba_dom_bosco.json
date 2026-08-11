@@ -1,13 +1,29 @@
 {
-  "praca_id": "londrina",
-  "rotulo": "PR · Londrina",
+  "praca_id": "cuiaba",
+  "rotulo": "MT · Cuiabá + MT · Várzea Grande",
+  "local_id": "ortho_cba_dom_bosco",
+  "unidade": "OrthoDontic Cuiabá Dom Bosco (Centro Sul)",
   "snapshot_date": "2026-08-09",
   "placar": {
-    "aparece_em": 5,
-    "de": 20,
-    "pct": 25
+    "aparece_em": 0,
+    "de": 151,
+    "pct": 0,
+    "melhor_posicao": null,
+    "invisivel": true,
+    "e_desta_loja": true
   },
-  "frase_do_topo": "A sua clínica aparece em **5 das 20 buscas** que testamos na sua cidade.",
+  "frase_do_topo": "A sua clínica **não aparece em nenhuma** das 151 buscas que testamos na cidade.",
+  "o_que_e_da_loja": [
+    "o placar de presença",
+    "a ficha do Google",
+    "as avaliações e as respostas"
+  ],
+  "o_que_e_da_cidade": [
+    "os bairros que a cidade escreve",
+    "os convênios citados",
+    "as palavras da praça",
+    "quem anuncia aparelho"
+  ],
   "gratis": 5,
   "tarefas": [
     {
@@ -16,11 +32,11 @@
       "tempo": "30 minutos",
       "quem": "você mesmo",
       "o_que_esta_acontecendo": [
-        "Testamos 13 buscas da sua cidade com a palavra *dentista* — “dentista londrina”, “dentista 24 horas”, “dentista perto de mim”, e assim por diante.",
-        "**Em 13 delas a sua clínica não apareceu entre as dez primeiras do mapa do Google.**",
-        "Nas buscas com a palavra *aparelho* você aparece em 5 de 7. Quem já sabe que quer aparelho te encontra.",
+        "Testamos 16 buscas da sua cidade com a palavra *dentista* — “dentista várzea grande”, “dentista 24 horas”, “dentista perto de mim”, e assim por diante.",
+        "**Em 16 delas a sua clínica não apareceu entre as dez primeiras do mapa do Google.**",
+        "Nas buscas com a palavra *aparelho* você aparece em 4 de 4. Quem já sabe que quer aparelho te encontra.",
         "São dois pacientes diferentes. Um já decidiu que quer aparelho e procura por isso. O outro só sabe que está com dor, ou que o filho precisa de dentista — e é ele que marca a avaliação. **Hoje só o primeiro te encontra.**",
-        "Quem aparece no seu lugar: Dentista 24 horas Londrina - Dr. Alessandro Morais (456 avaliações), Clínica Dentária Central do Centro (126 avaliações) e Odontoclinic Londrina (544 avaliações)."
+        "Quem aparece no seu lugar: Centro Odontológico Mato Grosso (49 avaliações), Dentista em Cuiabá - Dra Mariana Lima Pereira (189 avaliações) e Pronto Atendimento Adulto e Infantil Unimed (276 avaliações)."
       ],
       "o_que_fazer": [
         "Abra o seu perfil do Google (o mesmo que mostra a nota e as fotos da clínica).",
@@ -29,8 +45,27 @@
         "Na **descrição**, diga em uma frase o que a clínica faz e em que bairro fica."
       ],
       "nao_faca": "Não coloque palavra de busca no NOME da clínica no Google. As regras do Google exigem o nome real, e perfil com nome inflado é suspenso. Perder o perfil custa muito mais do que qualquer busca que ele ganharia.",
-      "como_saber": "Daqui a 30 dias a gente refaz exatamente as mesmas 13 buscas. Hoje você aparece em 0 delas — é esse número que tem de subir.",
-      "peso": 113
+      "como_saber": "Daqui a 30 dias a gente refaz exatamente as mesmas 16 buscas. Hoje você aparece em 0 delas — é esse número que tem de subir.",
+      "peso": 116
+    },
+    {
+      "titulo": "Existe mais de um cadastro da sua clínica no Google",
+      "custo": "R$ 0",
+      "tempo": "15 minutos + a espera do Google",
+      "quem": "você",
+      "o_que_esta_acontecendo": [
+        "Encontramos outro cadastro no mesmo endereço ou com o nome da marca:",
+        "· OdontoCompany Boa Esperança — 122 avaliação",
+        "· OdontoCenter Cuiabá - Coxipó — 61 avaliação",
+        "· Dentizy — 45 avaliação",
+        "Cadastro repetido **divide a avaliação e a nota**. O paciente que avalia no perfil errado some do perfil certo."
+      ],
+      "o_que_fazer": [
+        "Entre no perfil do Google e peça a fusão dos cadastros duplicados.",
+        "Se o cadastro extra não for seu, marque como duplicado mesmo assim — o Google avalia."
+      ],
+      "como_saber": "Na próxima medição os dois viram um só, e a contagem de avaliações soma em vez de dividir.",
+      "peso": 90
     },
     {
       "titulo": "A sua cidade procura dentista por bairro — e o seu bairro não está escrito em lugar nenhum",
@@ -38,7 +73,7 @@
       "tempo": "1 hora",
       "quem": "você ou quem cuida do site",
       "o_que_esta_acontecendo": [
-        "Quando alguém começa a digitar “dentista londrina”, o próprio Google completa com o nome de um bairro ou de um ponto conhecido da cidade. Estes são os **13 candidatos** que a busca devolveu: Av Santos Dumont, Central Saul Elkind, Centro, Gilmar Nova, Gleba Palhano, Hugo Simas, Jardim Leonor, Santa Luzia e mais 5.",
+        "Quando alguém começa a digitar “dentista várzea grande”, o próprio Google completa com o nome de um bairro ou de um ponto conhecido da cidade. Estes são os **28 candidatos** que a busca devolveu: Biologico Cuiaba, Coife, Costela -, Couto Magalhaes, Cristo Rei, Cuiaba Centro, Cuiaba Cpa, Cuiaba Juliana e mais 20.",
         "Isso quer dizer que o paciente da sua cidade procura por perto de casa, não pela cidade inteira. Quem escreve o nome do bairro aparece; quem não escreve, não.",
         "**São candidatos, não uma lista pronta. Confira antes de usar — dois minutos.** A máquina pega o que o Google completa, e no meio vem nome de rua, de faculdade e até de clínica concorrente. Você conhece a sua cidade melhor que ela: risque os que não são bairro e fique com os que são."
       ],
@@ -48,7 +83,7 @@
         "Se a clínica atende gente de mais de um bairro, cite os dois ou três de onde vem mais paciente — a recepção sabe quais são."
       ],
       "como_saber": "Na próxima medição a gente testa a busca com o nome do bairro e vê se a clínica passou a aparecer.",
-      "peso": 73
+      "peso": 88
     },
     {
       "titulo": "Tem busca importante onde o primeiro colocado é fraco",
@@ -56,11 +91,11 @@
       "tempo": "junto com a primeira tarefa",
       "quem": "você",
       "o_que_esta_acontecendo": [
-        "Em **7 buscas** da sua cidade, quem está em primeiro lugar tem menos de 300 avaliações.",
-        "· “ortodontista londrina” — quem está em 1º tem 38 avaliações",
-        "· “ortodontista infantil londrina” — quem está em 1º tem 146 avaliações",
-        "· “ortodontista em londrina” — quem está em 1º tem 38 avaliações",
-        "· “melhor ortodontista de londrina” — quem está em 1º tem 38 avaliações",
+        "Em **16 buscas** da sua cidade, quem está em primeiro lugar tem menos de 300 avaliações.",
+        "· “ortodontista em cuiaba” — quem está em 1º tem 32 avaliações",
+        "· “dentista cuiabá centro” — quem está em 1º tem 49 avaliações",
+        "· “dentista cuiabá” — quem está em 1º tem 189 avaliações",
+        "· “dentista cuiabá perto de mim” — quem está em 1º tem 189 avaliações",
         "Passar essas não é questão de verba. É questão de aparecer."
       ],
       "o_que_fazer": [
@@ -68,7 +103,7 @@
         "Continue pedindo avaliação no balcão. É o que sustenta a posição depois que ela chega."
       ],
       "como_saber": "São as buscas que mudam primeiro. Se alguma coisa vai aparecer em 30 dias, é aqui.",
-      "peso": 57
+      "peso": 66
     },
     {
       "titulo": "A cidade procura dentista por nome de convênio",
@@ -76,7 +111,7 @@
       "tempo": "15 minutos",
       "quem": "você",
       "o_que_esta_acontecendo": [
-        "O Google completa a busca da sua cidade com nome de plano: Amil, Bradesco, Metlife, Odontoprev, Sulamerica, Unimed e mais 1.",
+        "O Google completa a busca da sua cidade com nome de plano: Bradesco, Hapvida, Odontoprev, Unimed e Uniodonto.",
         "**O dado público não diz quais a sua clínica aceita** — isso só você sabe. Mas diz que a cidade procura assim."
       ],
       "o_que_fazer": [
@@ -85,29 +120,7 @@
         "Se não aceita nenhum, isso também é informação: a conversa passa a ser sobre parcelamento, não sobre plano."
       ],
       "como_saber": "Não é medição de posição: é a pergunta que a recepção passa a ouvir menos, porque a resposta já está escrita.",
-      "peso": 47
-    },
-    {
-      "titulo": "O que o paciente da sua cidade diz que foi buscar",
-      "custo": "R$ 0",
-      "tempo": "meia hora, uma vez",
-      "quem": "você e quem escreve",
-      "o_que_esta_acontecendo": [
-        "Lemos **2.839 avaliações escritas por pacientes das clínicas concorrentes** da sua cidade. Eles contam o que foram fazer:",
-        "· urgência / dor — 175 menções",
-        "· criança — 152 menções",
-        "· implante — 95 menções",
-        "· extração / siso — 89 menções",
-        "E as palavras que eles usam para elogiar são sempre as mesmas: tratamento, recepção, atenciosa, atenciosos, experiência, trabalho e mais 2.",
-        "**Ninguém elogia equipamento. Todo mundo elogia gente.** Anúncio e post que falam de tecnologia estão falando sozinhos."
-      ],
-      "o_que_fazer": [
-        "Escreva com as palavras que eles usam, não com as suas.",
-        "Mostre pessoas: quem atende, quem recebe, o nome de cada um.",
-        "Se dor e criança estão no topo, é por ali que o paciente entra — e o aparelho vem na conversa depois, não no anúncio."
-      ],
-      "como_saber": "Não tem número de posição. O sinal é a avaliação nova começar a repetir as mesmas palavras.",
-      "peso": 30
+      "peso": 45
     }
   ],
   "ressalvas": [
