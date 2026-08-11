@@ -296,6 +296,102 @@ def _e15b(b, p):
                          else "falta " + ", ".join(falta))
 
 
+def _e17(b, p):
+    """A loja aparece na busca da própria cidade? UMA A UMA.
+
+    Cobrado porque a Dom Bosco não aparece em NENHUMA das 151 buscas de
+    Cuiabá e ninguém sabia: o portal mostrava a média da cidade, e a média
+    escondia a loja invisível. Presença é por `local_id`, sempre.
+    """
+    a = RAIZ/"dados"/"portal"/"presenca_por_loja.json"
+    if not a.exists():
+        return False, "nunca medimos presença por loja"
+    d = json.loads(a.read_text(encoding="utf-8"))
+    medidas = {x.get("local_id") for x in (d.get("lojas") or [])}
+    ident = json.loads((IDENT/f"{p}.json").read_text(encoding="utf-8"))
+    lojas = [l for l in ident.get("locais", []) if l.get("papel") == "proprio"]
+    faltam = [l["local_id"] for l in lojas if l["local_id"] not in medidas]
+    if faltam:
+        return False, "sem medição em " + ", ".join(faltam)
+    invisiveis = [x["local_id"] for x in (d.get("lojas") or [])
+                  if x.get("local_id") in medidas - set(faltam)
+                  and x.get("local_id") in {l["local_id"] for l in lojas}
+                  and not x.get("aparece_em")]
+    return True, (conta(len(lojas), "loja") + " medida"
+                  + (f" · {conta(len(invisiveis), 'invisível', 'invisíveis')}"
+                     if invisiveis else ""))
+
+
+def _e18(b, p):
+    """Quem compra mídia de aparelho nesta cidade.
+
+    Vale para praça da rede e para cidade do Radar: saber quem já paga
+    para aparecer é leitura de mercado, e mercado é por cidade.
+    """
+    a = RAIZ/"dados"/"portal"/"anuncios.json"
+    if not a.exists():
+        return False, "nunca rodamos a leitura de anúncios"
+    d = json.loads(a.read_text(encoding="utf-8"))
+    cid = next((x for x in (d.get("pracas") or [])
+                if x.get("praca_id") == p), None)
+    if cid is None:
+        return False, "cidade fora da varredura de anúncios"
+    n = len(cid.get("anunciantes") or [])
+    # zero aqui é MEDIDO, não silencioso: a varredura passou pela cidade e
+    # não achou ninguém comprando mídia de aparelho — e isso é achado
+    return True, (conta(n, "anunciante") + " de aparelho" if n
+                  else "ninguém anuncia aparelho nesta cidade (medido)")
+
+
+def _e19(b, p):
+    """As DUAS janelas na tela: o delta curto e o período inteiro.
+
+    Cobrado porque a tela dizia "período de só 3 dias" justamente para
+    Mafra, Londrina, Feira e Prudente — as quatro praças com MAIS
+    histórico da rede, medidas desde 15/jul. Delta curto não é histórico
+    curto, e confundir os dois faz a praça mais medida parecer a menos.
+    """
+    ident = json.loads((IDENT/f"{p}.json").read_text(encoding="utf-8"))
+    lojas = [l for l in ident.get("locais", []) if l.get("papel") == "proprio"]
+    faltam = []
+    for l in lojas:
+        a = RAIZ/"dados"/"portal"/"clinicas"/f"{l['local_id']}.json"
+        if not a.exists():
+            faltam.append(l["local_id"])
+            continue
+        d = json.loads(a.read_text(encoding="utf-8"))
+        mud = d.get("o_que_mudou")
+        if mud is not None and not mud.get("historico"):
+            faltam.append(l["local_id"])
+    if faltam:
+        return False, "sem o período inteiro em " + ", ".join(faltam)
+    return True, conta(len(lojas), "loja") + " com as duas janelas"
+
+
+def _e20(b, p):
+    """A curva de procura: MEDIDA, e a resposta foi não.
+
+    Esta etapa fica ✓ quando existe VEREDITO para a UF da praça — não
+    quando existe curva. Medimos 12 UFs no Google Trends e nenhuma passou
+    nas duas travas. Sem esta linha, a próxima sessão olha a tela apagada,
+    acha que falta coletar, e refaz uma coleta cujo resultado já sabemos.
+    """
+    a = RAIZ/"dados"/"portal"/"sazonalidade.json"
+    if not a.exists():
+        return False, "a curva de procura nunca foi medida"
+    d = json.loads(a.read_text(encoding="utf-8"))
+    ident = json.loads((IDENT/f"{p}.json").read_text(encoding="utf-8"))
+    ufs = ident.get("uf") or []
+    medidas = {v["regiao"] for v in (d.get("veredito") or [])}
+    faltam = [u for u in ufs if u not in medidas]
+    if faltam:
+        return False, "UF não medida: " + ", ".join(faltam)
+    pub = [v["regiao"] for v in (d.get("veredito") or [])
+           if v["regiao"] in ufs and v.get("publicavel")]
+    return True, ("curva publicável em " + ", ".join(pub) if pub
+                  else "medida · sem curva publicável (não refazer)")
+
+
 ETAPAS = [
     (0,  "A praça definida",          "humano", None,          _e0,
      "editar dados/identidade/<praça>.json — rótulo com UF na frente"),
@@ -330,6 +426,15 @@ ETAPAS = [
      "python3 scripts/escreve_tese_oportunidade.py --salvar"),
     (16, "O plano do franqueado",     "auto",   "rede",        _e16,
      "python3 scripts/plano_do_franqueado.py --praca <praça> --salvar"),
+    (17, "Onde cada loja aparece",    "auto",   "rede",        _e17,
+     "python3 scripts/onde_cada_loja_aparece.py --salvar"),
+    (18, "Quem anuncia aparelho",     "auto",   None,          _e18,
+     "python3 scripts/quem_anuncia_aparelho.py --salvar"),
+    (19, "O histórico, não só o delta", "auto", "rede",        _e19,
+     "python3 scripts/o_que_mudou.py --salvar && python3 scripts/build_portal.py"),
+    (20, "A curva de procura",        "auto",   None,          _e20,
+     "python3 coleta/coletores/sazonalidade.py --todas   "
+     "(JÁ RODOU: 12 UFs, nenhuma publicável — não refaça)"),
 ]
 
 

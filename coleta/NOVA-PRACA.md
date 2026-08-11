@@ -1096,33 +1096,46 @@ aviso de amostra curta olha o HISTÓRICO, nunca a janela do delta.
 **A primeira leitura que isso destravou:** a loja de Mafra ganhou ZERO
 avaliação em 26 dias.
 
-## ETAPA 20 · O PICO DA PRAÇA — buraco declarado, não preenchido
+## ETAPA 20 · A CURVA DE PROCURA — MEDIDA, e a resposta foi NÃO
 
-A série de sazonalidade tem **4 pontos, todos de SC**, vindos do estudo
-de Mafra. Nenhum coletor lê índice de busca mensal por cidade.
+**Esta etapa já foi feita. Não refaça.**
 
-**E não se herda curva de região.** Foi Mafra que derrubou a tese
-nacional de "dezembro e janeiro são pico": lá é VALE. Copiar a curva de
-SC para Palmas seria inventar.
+O coletor existe (`coleta/coletores/sazonalidade.py`), rodou nas 12 UFs
+onde a rede opera ou estuda, com o termo "aparelho ortodôntico" e 5 anos
+de série. **Nenhuma passou.** O veredito de cada UF está gravado em
+`dados/portal/sazonalidade.json`.
 
-Enquanto não houver coleta, cada praça publica `sazonalidade_estado` com
-o motivo e o que preencheria. Buraco calado é o que faz a diretoria achar
-que medimos tudo.
+Por que não dá, com o número na mão:
 
-## ETAPA 15.5 · A LEITURA ESCRITA DA CIDADE DE OPORTUNIDADE
+**Por cidade não existe.** O Google Trends lista 124 cidades em SC e 186
+no PR, e todas voltam com índice 0 — Mafra e Londrina inclusas. Com o
+termo mais largo "ortodontista", igual. O Trends zera o que é pequeno
+demais para publicar, e a nossa categoria é pequena demais em toda cidade
+onde a rede está.
 
-As seis cidades do Radar abriam com vinte campos de número e nenhuma
-manchete, enquanto toda praça da rede abre com uma tese. E o `padrao.py`
-dizia "completa", porque a régua só cobrava tese de praça COM unidade.
+**Por estado é volátil.** A média de 5 anos dá um pico bonito, e ele é
+falso. Ano a ano, o pico do Paraná foi ABR, JAN, JUN, MAR e JUL — um mês
+diferente a cada ano. Só SC repete (AGO em 4 dos 5 anos), e mesmo lá só
+60 das 261 semanas têm volume.
+
+Por isso o coletor tem duas travas, e as duas são para não publicar
+estação inventada:
+
+| trava | o que exige | quem reprova |
+|---|---|---|
+| VOLUME | 55% das semanas com busca, em 9 meses | TO (4 semanas de 261), MT (9), PA, MA, CE, PR, SC |
+| ESTABILIDADE | o pico repetido em 3 dos anos medidos | BA, MG, SP |
+
+Na tela, isto **não** é ferramenta pendente nem card cinza com "em
+breve". É pergunta respondida: a praça leva `sazonalidade_estado` com
+`medimos: true`, o veredito da própria UF, e `quem_responde: "só a rede,
+por dentro"` — porque a única fonte que diria quando a procura sobe é a
+agenda da clínica, e dado interno é teto do produto, não pendência.
 
 ```bash
-python3 scripts/escreve_tese_oportunidade.py --salvar
+# só se um dia o termo ou a fonte mudar — o resultado de hoje já está gravado
+python3 coleta/coletores/sazonalidade.py --todas
 ```
-
-O script **confere cada número citado na tese contra o estudo** e falha
-se algum não bater. Adjetivo sem conta atrás não passa.
-
----
 
 # O QUE O PORTAL EXIGE DA COLETA
 
