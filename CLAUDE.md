@@ -192,6 +192,17 @@ padrões → caixa → padrao → build. Períodos curtos são declarados na tel
   andar, régua) nunca aparecem na tela. A home é `franqueadora.json → cards`
   (pergunta + número + frase, 4 grupos); prompt vigente: `PROMPT-CASCO-V6.md`.
 
+- **A tela da CLÍNICA e a tela da PRAÇA respondem perguntas diferentes.**
+  Praça = mercado da cidade (tese, temas, portas, quem anuncia): 7 telas.
+  Clínica = a unidade (presença na busca, plano, fila, rival, respostas,
+  linha do tempo): 10 telas. Bloco de cidade dentro da página da clínica
+  vai com `e_da_cidade: true` e é escrito como tal na tela.
+- **Quem anuncia aparelho tem tela, e a régua do produto vale ali também.**
+  `scripts/quem_anuncia_aparelho.py` → `dados/portal/anuncios.json`. Dos
+  677 anúncios ativos coletados, 134 falam de aparelho; os outros 543 são
+  implante, clareamento, lente — e um advogado tributarista. Os
+  descartados aparecem contados, com o motivo.
+
 - **Design se faz no Claude Design — aqui não.** Este repositório guarda a
   referência aprovada (`referencia-aprovada/OrthoDontic Intelligence.dc.html`,
   o PRIMEIRO design), os dados e o prompt. Nenhum HTML de portal é escrito

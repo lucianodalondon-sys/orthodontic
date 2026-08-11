@@ -105,6 +105,14 @@ ordem:
 1. **cabeçalho** — rótulo (`UF · Cidade` + unidade), nota, avaliações,
    ritmo, posição na cidade, `faixa` (selo de cor) e `tarefa` (aberta /
    vencida, com `vence_em`).
+1.5. **onde esta loja aparece na busca** — `presenca_na_busca`, campo
+   novo e o mais duro do portal. Traz `frase_do_topo` pronta,
+   `aparece_em` de `de`, `pct`, `melhor_posicao` e as
+   `frases_onde_aparece[]`. Quando `invisivel` for true, a tela diz
+   isso com peso: **a loja Dom Bosco não aparece em NENHUMA das 151
+   buscas de Cuiabá**, e a loja ao lado aparece em 4. É POR LOJA, nunca
+   a média da cidade — três lojas de Cuiabá podem ter donos diferentes.
+   O botão "o meu plano" abre `plano` (`planos/<local_id>`).
 2. **o que fazer agora** — `gatilhos[]` (com `fonte` em pé de linha),
    `quem_avanca` e `acao` (o quê · prazo · dono · custo) em destaque.
 3. **o que mudou entre as coletas** — `o_que_mudou` traz DUAS janelas, e
@@ -135,6 +143,11 @@ ordem:
    descartados aparecem como `fora_do_produto` (número + motivo): 134
    anúncios de aparelho estavam no ar e o portal mostrava só um contador
    escondido dentro da captação.
+6.5. **o anúncio que não é da praça** — `anuncio_de_outra_unidade[]`.
+   Quando aparece, mostre em pé de linha com o motivo: a busca da
+   Biblioteca casa por palavra, e "juazeiro do NORTE" trouxe a
+   "Orthodontic Braço do NORTE", unidade de SC a 3 mil km. Some da
+   contagem de "a rede está no ar aqui".
 7. **o rival de aparelho** — `rival.vantagens_deles[]` OU
    `sem_comparacao_porque`; `rival.fora[]` numa lista recolhida "fora da
    comparação — outro produto", cada um com `por_que_fora`. Uma linha
@@ -142,10 +155,39 @@ ordem:
 8. **a linha do tempo** — `eventos[]` (data, `quem`: nossa · paciente ·
    fila · rival, texto pronto), linha vertical fina, cor por `quem`.
 
+### 2.1 · O que é da LOJA e o que é da CIDADE
+
+A aba **Praças** mostra 7 cidades e continua certa — tese, concorrência,
+temas e portas são leitura de MERCADO, e mercado é por cidade. Mas o
+estudo da unidade é outro, e é a aba **Clínicas**: são 10, não 7.
+
+| por LOJA (`local_id`) | por CIDADE |
+|---|---|
+| presença na busca, plano, fila e tarefa | tese e DNA da praça |
+| avaliações, nota, ritmo, respostas | temas das avaliações |
+| rival medido contra ESTA unidade | quem anuncia aparelho |
+| linha do tempo da loja | portas de busca, bairros, convênios |
+
+Onde o bloco for de cidade dentro da página da clínica, ele vem com
+`e_da_cidade: true` — escreva na tela ("leitura da cidade, vale para as
+3 lojas de Cuiabá"). Nunca apresente número de cidade como se fosse da
+loja: foi assim que um plano disse "a sua clínica aparece em N buscas"
+para a única loja que não aparece em nenhuma.
+
 ## 3 · Mudanças de dado que as telas precisam refletir
 
 - **Praça = UMA cidade.** `riomafra` não existe mais (é `mafra`); Cuiabá
   não soma mais Várzea Grande. Rótulos vêm prontos (`MT · Cuiabá`).
+- **"Quando a procura sobe" não é ferramenta pendente: é pergunta
+  RESPONDIDA COM NÃO.** `sazonalidade.json` guarda a medição de 12 UFs
+  no Google Trends, 5 anos. Nenhuma passou. A tela não fica cinza com
+  "em breve" — ela conta o resultado: por cidade o Trends devolve zero
+  em todas as 124 cidades de SC e 186 do PR (Mafra e Londrina inclusas);
+  por estado, onde há volume o pico muda de mês todo ano (o do Paraná
+  foi ABR, JAN, JUN, MAR e JUL em cinco anos). Cada praça leva
+  `sazonalidade_estado` com `medimos: true`, o veredito da própria UF e
+  `quem_responde: "só a rede, por dentro"` — é teto de produto, e teto
+  declarado é conteúdo.
 - **A cidade do Radar abre igual à praça da rede.** Os seis estudos em
   `oportunidade/<id>.json` agora trazem `eyebrow`, `tese_titulo`, `tese`
   e `base` — os mesmos quatro campos com que uma praça abre. Desenhe o
