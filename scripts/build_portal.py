@@ -168,6 +168,17 @@ def main():
             "cidades": ident[p].get("cidades_rotulo") or ident[p].get("cidades", []),
             "identidade": {k: v for k, v in ident[p].items() if k != "locais"},
             **{k: v for k, v in c.items() if k != "praca_id"},
+            # OS PLANOS DA PRAÇA SÃO OS DAS LOJAS, no plural. O casco pedia
+            # `planos/<praca_id>` — um plano por cidade — e isso 404 desde que
+            # o plano passou a ser por `local_id`. Cuiabá tem três, e podem
+            # ser três donos: a praça oferece os três, nomeados.
+            "planos_das_lojas": [
+                {"local_id": l["local_id"],
+                 "unidade": l.get("unidade") or l.get("nome"),
+                 "rotulo": ident[p].get("rotulo") or ident[p].get("nome"),
+                 "arquivo": f"planos/{l['local_id']}"}
+                for l in locais if l.get("papel") == "proprio"
+                and (RAIZ/"dados"/"planos"/f"{l['local_id']}.json").exists()],
             "placar": placar, "funil": funil, "temas": temas_p,
             "sazonalidade": saz,
             # O PICO DA PRAÇA é buraco de coleta, e buraco calado é o pior

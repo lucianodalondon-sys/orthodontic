@@ -248,3 +248,42 @@ para a única loja que não aparece em nenhuma.
 - **Nada de dado interno**, e toda tela de desempenho diz isso.
 - **Linguagem de balcão** — palavra interna (casco, escada, ponta, andar)
   nunca aparece na tela.
+
+## 5 · O CONSERTO DO ZIP QUE VOLTOU (leia antes de mexer)
+
+O casco entregue está certo em quase tudo: os totais saem de campo pronto,
+não há número escrito à mão no HTML, a loja invisível já aparece com peso,
+e a tabela nova de sazonalidade já lê `pico_repete_em` e `porque`. Há **um
+defeito**, e ele quebra 7 telas.
+
+**`assets/portal.js`, linha 835.** A tela da praça oferece:
+
+```js
+'<button ... data-ir="planos/' + esc(d.praca_id) + '">O plano do franqueado</button>'
+```
+
+Isso pede `planos/<praça>.json` — **um plano por cidade**. Não existe mais.
+O plano é por `local_id` desde que se descobriu que Cuiabá tem três lojas
+que podem ter três donos, e que a média da cidade mentia para todos. Com o
+payload de hoje, esse botão dá 404 nas sete praças: `planos/mafra.json`,
+`planos/cuiaba.json`, `planos/londrina.json` e as outras quatro. Ele só
+funcionava no zip porque o zip ainda carregava 14 planos velhos, de quando
+o plano era por cidade — inclusive planos para as seis cidades do Radar,
+que **não têm franqueado nenhum**.
+
+O payload agora traz a lista certa. Cada `pracas/<id>.json` tem:
+
+```json
+"planos_das_lojas": [
+  {"local_id": "ortho_cba_centro_norte", "unidade": "Centro Norte",
+   "rotulo": "MT · Cuiabá", "arquivo": "planos/ortho_cba_centro_norte"}
+]
+```
+
+Troque o botão único por **um botão por item da lista**, nomeando a
+unidade: "O plano da unidade Centro Norte". Em Cuiabá saem três, em
+Londrina dois, nas outras um. Se a lista vier vazia, não desenhe o bloco.
+
+E apague do projeto os arquivos que o build não produz mais: os 14
+`planos/<cidade>.json`, `pracas/riomafra.json` e `captacao/riomafra.json`
+(`riomafra` é o nome local da região; a praça é `mafra`).
