@@ -169,6 +169,15 @@ padrões → caixa → padrao → build. Períodos curtos são declarados na tel
   sobra de um build anterior: apagar a pasta fazia doze sumirem sem erro. É
   sempre a última medição DE CADA praça, e cada arquivo carrega o próprio
   `snapshot_date`.
+- **O pico de procura NÃO EXISTE como dado externo, e isso está medido.**
+  12 UFs no Google Trends, 5 anos, termo "aparelho ortodôntico": nenhuma
+  passou nas duas travas (volume e repetição do pico). Por cidade é pior —
+  das 124 cidades de SC e das 186 do PR, ZERO têm volume publicável,
+  Londrina e Mafra inclusas; com o termo mais largo "ortodontista", igual.
+  E onde há volume (BA, MG, SP) o mês de pico muda todo ano, então a média
+  de 5 anos publicaria uma estação que não existe. `dados/portal/sazonalidade.json`
+  guarda o veredito por UF — **não refaça esta coleta** achando que falta;
+  ela foi feita, e o resultado é que o Trends não responde nesta escala.
 - **A curva de uma região não vale para outra.** A sazonalidade tem 4 pontos,
   todos de SC, e foi Mafra que derrubou a tese nacional de "dezembro e
   janeiro são pico" — lá é vale. Enquanto não houver coleta por cidade, cada

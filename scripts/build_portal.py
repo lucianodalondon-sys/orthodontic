@@ -73,6 +73,7 @@ def main():
     funis = jsonl("funil")
     regua = (jsonl("regua") or [{}])[-1]
     sazon = jsonl("sazonalidade")
+    _saz_med = carrega(OUT, "sazonalidade")     # o veredito da medição
     temas = jsonl("temas")
     descida = jsonl("descida_nacional")
 
@@ -182,15 +183,28 @@ def main():
                 "anos_da_serie": saz[0].get("serie_anos"),
             } if saz else {
                 "tem": False,
-                "por_que": ("ainda não medimos a curva de procura desta "
-                            "cidade — a única série que existe é de SC, com "
-                            f"{conta(len(sazon), 'ponto')}, e Mafra provou "
-                            "que a curva de uma região não vale para a "
-                            "outra: lá dezembro e janeiro são VALE, não pico"),
-                "o_que_preenche": ("uma coleta de índice de busca mensal por "
-                                   "cidade — nenhum coletor do projeto faz "
-                                   "isso hoje"),
-                "quem_responde": "coleta externa, não a rede",
+                # Já NÃO é mais "ainda não medimos": medimos as 12 UFs no
+                # Google Trends, 5 anos, e nenhuma passou. Isso é resultado,
+                # não pendência — e some da lista de tarefas.
+                "medimos": True,
+                "por_que": ((_saz_med.get("manchete") or "").strip() + " " +
+                            (_saz_med.get("por_que_nao_e_por_cidade") or "")
+                            ).strip(),
+                "as_duas_travas": _saz_med.get("as_duas_travas"),
+                "veredito_por_uf": [
+                    {"regiao": v["regiao"], "porque": v.get("porque"),
+                     "semanas_com_busca": v.get("semanas_com_busca"),
+                     "semanas": v.get("semanas"),
+                     "pico_repete_em": v.get("pico_repete_em"),
+                     "anos_medidos": v.get("anos_medidos")}
+                    for v in (_saz_med.get("veredito") or [])
+                    if v["regiao"] in (ident[p].get("uf") or [])],
+                "o_que_preenche": ("nada que seja fonte externa: o Trends não "
+                                   "publica índice para este termo nesta "
+                                   "escala. Só dado interno da rede (agenda, "
+                                   "contratos) diria quando a procura sobe — "
+                                   "e isso é teto do produto"),
+                "quem_responde": "só a rede, por dentro",
             }),
             # A 2ª coleta chegou: o movimento sai de o_que_mudou.json, gerado
             # por scripts/o_que_mudou.py a partir da série de places. O build
