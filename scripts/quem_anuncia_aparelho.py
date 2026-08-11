@@ -23,7 +23,7 @@ Uso:
     python3 scripts/quem_anuncia_aparelho.py
     python3 scripts/quem_anuncia_aparelho.py --salvar   # → dados/portal/anuncios.json
 """
-import argparse, json, pathlib, re, sys
+import argparse, json, pathlib, re, sys, unicodedata
 from collections import defaultdict
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
@@ -41,6 +41,15 @@ APARELHO = re.compile(r"aparelho|ortodont|ortodôntic|bráquete|braquete|"
 NOSSO = re.compile(r"orthodontic", re.I)
 
 PLATAFORMA = {"meta_ad_library": "Meta", "google_ads_transparency": "Google"}
+OFICIAIS = {}
+
+
+def sem_acento(x):
+    """A lista oficial grava "Braco do Norte"; o anúncio escreve "Braço".
+    Sem tirar o acento dos dois lados, o casamento não acontece — e foi
+    exatamente esse par que levantou uma bandeira falsa."""
+    x = unicodedata.normalize("NFKD", (x or "").lower())
+    return "".join(c for c in x if not unicodedata.combining(c))
 
 
 def plataforma_de(r):
@@ -51,12 +60,36 @@ def plataforma_de(r):
     return "Meta" if "facebook" in f or "apify" in f else "outra"
 
 
+def unidades_oficiais():
+    """As cidades da lista oficial, para saber de QUEM é o anúncio.
+
+    A busca da Biblioteca do Meta casa por palavra: procurando
+    "juazeiro do norte" ela devolveu um anúncio da "Orthodontic Braço do
+    Norte" — unidade real, de Braço do Norte/SC, a 3 mil km. Sem esta
+    conferência o portal ia dizer que a rede anuncia numa cidade onde
+    não tem unidade, e a bandeira já tinha sido levantada.
+    """
+    fora, corte = {}, None
+    for r in jsonl("unidades_rede"):
+        if corte is None or r["snapshot_date"] > corte:
+            corte = r["snapshot_date"]
+    for r in jsonl("unidades_rede"):
+        if r["snapshot_date"] != corte:
+            continue
+        cidade = (r.get("cidade") or "").split("/")[0].strip()
+        if cidade:
+            fora[sem_acento(cidade)] = r.get("rotulo") or r.get("cidade")
+    return fora
+
+
 def monta():
     linhas = jsonl("anuncios")
     if not linhas:
         sys.exit("dados/serie/anuncios.jsonl vazio — rode "
                  "coleta/coletores/meta_ads.py e google_ads.py")
     ident = identidades(com_unidade=False)
+    global OFICIAIS
+    OFICIAIS = unidades_oficiais()
 
     por_praca = defaultdict(list)
     for r in linhas:
@@ -97,8 +130,38 @@ def monta():
                 "exemplo": (textos[0][:280] + "…") if textos and len(textos[0]) > 280
                            else (textos[0] if textos else None),
             })
+        # De qual unidade é este anúncio nosso? Se o NOME ou o TEXTO citam
+        # outra cidade da lista oficial, o anúncio é de lá — a busca da
+        # Biblioteca casa por palavra, e "juazeiro do NORTE" trouxe a
+        # "Orthodontic Braço do NORTE", unidade real de SC a 3 mil km.
+        cidade_da_praca = sem_acento(
+            ((ident[p].get("cidades") or [""])[0]).split("/")[0].strip())
+        for a in anunciantes:
+            a["de_outra_unidade"] = None
+            if not a["nosso"]:
+                continue
+            # A cidade só conta quando vem COLADA na marca — "Orthodontic
+            # Braço do Norte". Procurar o nome solto no texto casa
+            # "sorriso" (cidade de MT e palavra do anúncio) e "centro" em
+            # qualquer endereço: um erro trocado por outro.
+            achado = None
+            for r in agrupado[a["nome"]]:
+                alvo = sem_acento((r.get("anunciante") or "") + " " +
+                                  (r.get("texto") or ""))
+                for cid, rot in OFICIAIS.items():
+                    if cid == cidade_da_praca or len(cid) < 5:
+                        continue
+                    if re.search(r"ortho?dontic\s+(?:de\s+|da\s+|do\s+)?"
+                                 + re.escape(cid), alvo):
+                        achado = rot
+                        break
+                if achado:
+                    break
+            a["de_outra_unidade"] = achado
         anunciantes.sort(key=lambda a: (not a["nosso"], -a["anuncios"]))
-        nossos = [a for a in anunciantes if a["nosso"]]
+        nossos = [a for a in anunciantes
+                  if a["nosso"] and not a["de_outra_unidade"]]
+        de_fora = [a for a in anunciantes if a.get("de_outra_unidade")]
 
         rotulo = ident[p].get("rotulo") or p
         if not anunciantes:
@@ -148,6 +211,11 @@ def monta():
             "anunciantes_total": len(anunciantes),
             "nossos_total": len(nossos),
             "somos_um_deles": bool(nossos),
+            "anuncio_de_outra_unidade": [
+                {"nome": a["nome"], "e_de": a["de_outra_unidade"],
+                 "por_que": ("a busca casou por palavra no nome; a unidade "
+                             "é de outra cidade da lista oficial")}
+                for a in de_fora],
             "anunciantes": anunciantes,
             "fora_do_produto": len(fora),
             "fora_do_produto_porque": ("anúncio ativo na cidade que não fala de "

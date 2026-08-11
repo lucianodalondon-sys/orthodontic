@@ -63,6 +63,13 @@ MIN_CITACOES = 4
 MIN_PLANO = 5
 
 
+def _norm(x):
+    import unicodedata, re as _re
+    x = unicodedata.normalize("NFKD", (x or "").lower())
+    x = "".join(c for c in x if not unicodedata.combining(c))
+    return _re.sub(r"[^a-z0-9]+", " ", x).strip()
+
+
 def carrega(d, p):
     a = d/f"{p}.json"
     return json.loads(a.read_text(encoding="utf-8")) if a.exists() else {}
@@ -130,8 +137,28 @@ def _e0b(b, p):
     if not c:
         return False, "praça sem unidade e sem conferência de duas fontes"
     fontes = [k for k in c if k not in ("_nota", "conclusao", "veredito")]
-    return (len(fontes) >= 2,
-            f"{len(fontes)} fontes independentes concordam que a rede não está lá")
+    # NOME PARECIDO NA LISTA OFICIAL. A rede tem unidade em Juazeiro/BA, e o
+    # Radar estuda Juazeiro do Norte/CE — outra cidade, outro estado, 500 km.
+    # É a mesma família de "Palmas/TO virou Palmas/PR". A conferência continua
+    # válida (a lista oficial não tem a cidade do estudo), mas o parecido vai
+    # DECLARADO na tela: quem lê "Juazeiro" na diretoria não vai perguntar
+    # qual dos dois.
+    cidade = ((d.get("cidades") or [d.get("nome") or ""])[0]).split("/")[0].strip()
+    alvo = _norm(cidade)
+    parecidas = []
+    for u in jsonl("unidades_rede"):
+        nome = (u.get("cidade") or "").split("/")[0].strip()
+        k = _norm(nome)
+        if not k or k == alvo:
+            continue
+        if (k in alvo or alvo in k) and abs(len(k) - len(alvo)) <= 12:
+            parecidas.append(u.get("rotulo") or u.get("cidade"))
+    frase = (f"{len(fontes)} fontes independentes concordam que a rede não "
+             f"está lá")
+    if parecidas:
+        frase += (" · ⚠ nome parecido com unidade da rede: "
+                  + ", ".join(sorted(set(parecidas))[:3]))
+    return len(fontes) >= 2, frase
 
 
 def _e1(b, p):
@@ -233,8 +260,22 @@ def _e15(b, p):
 
 
 def _e16(b, p):
-    a = (RAIZ/"dados"/"planos"/f"{p}.json")
-    return a.exists(), "plano do franqueado escrito" if a.exists() else "sem plano"
+    """UM PLANO POR LOJA, não por cidade.
+
+    A régua cobrava `planos/<praça>.json` e dava ✓ com um plano só para
+    as três lojas de Cuiabá. O plano é a única peça que fala na segunda
+    pessoa com o dono, e o dono é de UMA loja — a de Dom Bosco estava
+    lendo o placar do vizinho.
+    """
+    ident = json.loads((IDENT/f"{p}.json").read_text(encoding="utf-8"))
+    lojas = [l for l in ident.get("locais", []) if l.get("papel") == "proprio"]
+    if not lojas:
+        return False, "praça da rede sem unidade própria na identidade"
+    faltam = [l["local_id"] for l in lojas
+              if not (RAIZ/"dados"/"planos"/f"{l['local_id']}.json").exists()]
+    return (not faltam), (conta(len(lojas), "plano") + " de loja"
+                          if not faltam else
+                          "sem plano em " + ", ".join(faltam))
 
 
 def _e15b(b, p):
