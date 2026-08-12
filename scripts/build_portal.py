@@ -95,6 +95,10 @@ def main():
     _ac_por = defaultdict(list)
     for _x in _ac.get("arcos", []):
         _ac_por[_x["local_id"]].append(_x)
+    # A CIDADE POR DENTRO. Cidade com mais de uma unidade não é um mercado
+    # só: Porto Alegre tem 9 unidades, Curitiba 8. O bairro é a menor conta
+    # de MERCADO, como a loja é a menor conta de operação.
+    _ba_por = {x["praca_id"]: x for x in carrega(OUT, "bairros").get("pracas", [])}
     _pub_por = {x["praca_id"]: x
                 for x in carrega(OUT, "o_que_a_cidade_publica").get("pracas", [])}
     ult_place = ultimo_por([r for r in places if r["snapshot_date"] <= corte],
@@ -379,6 +383,7 @@ def main():
                 for l in locais if l.get("papel") == "proprio"
                 and (RAIZ/"dados"/"planos"/f"{l['local_id']}.json").exists()],
             "oferta": _of_por.get(p),
+            "bairros": _ba_por.get(p),
             "imprensa": (_pub_por.get(p) or {}).get("imprensa"),
             "ritmo_de_publicacao": (_pub_por.get(p) or {}).get("ritmo"),
             "placar": placar, "funil": funil, "temas": temas_p,
@@ -1211,6 +1216,12 @@ def main():
                 fonte="dados/serie/reviews.jsonl",
                 o_que_aumentaria="mais avaliações com texto nesta loja"))
                 if lid in _jor_por else None),
+            "meu_bairro": next(
+                ({"bairro": b["bairro"], "clinicas": b["clinicas"],
+                  "vizinhos_fortes": b["vizinhos_fortes"],
+                  "frase": b["frase"], "e_da_cidade": False}
+                 for b in ((_ba_por.get(l.get("praca_id")) or {}).get("bairros") or [])
+                 if lid in (b.get("nossas") or [])), None),
             "acoes": {"arcos": _ac_por.get(lid, []),
                       "total": len(_ac_por.get(lid, [])),
                       "aviso": _ac.get("aviso_de_juventude")},

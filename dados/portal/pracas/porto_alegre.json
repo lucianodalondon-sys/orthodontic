@@ -1,0 +1,70 @@
+{
+  "praca_id": "porto_alegre",
+  "corte": "2026-08-12",
+  "rotulo": "RS · Porto Alegre",
+  "uf": [
+    "RS"
+  ],
+  "cidades": [
+    "RS · Porto Alegre"
+  ],
+  "identidade": {
+    "praca_id": "porto_alegre",
+    "nome": "Porto Alegre",
+    "cidades": [
+      "Porto Alegre/RS"
+    ],
+    "uf": [
+      "RS"
+    ],
+    "rotulo": "RS · Porto Alegre",
+    "cidades_rotulo": [
+      "RS · Porto Alegre"
+    ],
+    "criada_em": "2026-08-12",
+    "por_que_esta_praca": "cidade onde a rede já tem unidade e que ainda não tinha estudo — escolhida por concentração de unidades, para subir a cobertura da rede medida",
+    "ibge": [
+      {
+        "municipio": "Porto Alegre",
+        "uf": "RS",
+        "ibge_id": 4314902,
+        "populacao_estimada": {
+          "ano": "2025",
+          "valor": "1388794",
+          "unidade": "Pessoas"
+        },
+        "massa_salarial_mil_reais": {
+          "ano": "2023",
+          "valor": "104743272",
+          "unidade": "Mil Reais"
+        },
+        "alvo_9_15": 103302,
+        "alvo_30_45": 304982,
+        "fonte": "ibge agregados 6579/5938/9514",
+        "de": "dados/serie/ibge_municipios.jsonl"
+      }
+    ]
+  },
+  "planos_das_lojas": [],
+  "oferta": null,
+  "bairros": null,
+  "imprensa": null,
+  "ritmo_de_publicacao": null,
+  "placar": [],
+  "funil": null,
+  "temas": [],
+  "sazonalidade": [],
+  "sazonalidade_estado": {
+    "tem": false,
+    "medimos": true,
+    "por_que": "Medimos as 12 UFs onde a rede opera ou estuda, e NENHUMA tem curva publicável de procura por aparelho. o Trends não publica índice de cidade para este termo: das 124 cidades de SC e das 186 do PR, NENHUMA teve volume — Londrina e Mafra incluídas, com valor 0. Com o termo mais largo \"ortodontista\" o resultado foi o mesmo.",
+    "as_duas_travas": {
+      "volume": "pelo menos 55% das semanas com busca e 9 meses do ano",
+      "estabilidade": "o mês de pico repetido em pelo menos 3 dos anos medidos"
+    },
+    "veredito_por_uf": [],
+    "o_que_preenche": "nada que seja fonte externa: o Trends não publica índice para este termo nesta escala. Só dado interno da rede (agenda, contratos) diria quando a procura sobe — e isso é teto do produto",
+    "quem_responde": "só a rede, por dentro"
+  },
+  "o_que_mudou": null
+}

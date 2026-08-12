@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-08-12T17:47:54",
+  "gerado_em": "2026-08-12T18:38:54",
   "gerado_de": "dados/serie + dados/conteudo + dados/identidade",
   "corte": "2026-08-12",
   "taxonomia_versao": "1.1",
@@ -7,7 +7,7 @@
     "_nota": "Este bloco NÃO é mais a fonte de 'ouvidas' e 'total'. Os dois saem do dado em build_portal.py (praças com avaliação lida, e unidades na lista oficial da rede). Ficaram escritos à mão aqui por quatro semanas dizendo 4 de 340, enquanto a mesma tela já mostrava 374 unidades ao lado. Não volte a escrever número aqui.",
     "unidades_total": 373,
     "unidades_acompanhadas": 10,
-    "pracas_da_rede_estudadas": 7,
+    "pracas_da_rede_estudadas": 12,
     "cidades_de_oportunidade_estudadas": 6
   },
   "pracas": [
@@ -46,6 +46,21 @@
       "estudos": 3
     },
     {
+      "praca_id": "curitiba",
+      "nome": "Curitiba",
+      "rotulo": "PR · Curitiba",
+      "uf": [
+        "PR"
+      ],
+      "cidades": [
+        "PR · Curitiba"
+      ],
+      "tem": [
+        "praca"
+      ],
+      "estudos": 1
+    },
+    {
       "praca_id": "feira",
       "nome": "Feira de Santana",
       "rotulo": "BA · Feira de Santana",
@@ -61,6 +76,36 @@
         "plano"
       ],
       "estudos": 3
+    },
+    {
+      "praca_id": "goiania",
+      "nome": "Goiânia",
+      "rotulo": "GO · Goiânia",
+      "uf": [
+        "GO"
+      ],
+      "cidades": [
+        "GO · Goiânia"
+      ],
+      "tem": [
+        "praca"
+      ],
+      "estudos": 1
+    },
+    {
+      "praca_id": "joinville",
+      "nome": "Joinville",
+      "rotulo": "SC · Joinville",
+      "uf": [
+        "SC"
+      ],
+      "cidades": [
+        "SC · Joinville"
+      ],
+      "tem": [
+        "praca"
+      ],
+      "estudos": 1
     },
     {
       "praca_id": "londrina",
@@ -115,6 +160,21 @@
       "estudos": 3
     },
     {
+      "praca_id": "porto_alegre",
+      "nome": "Porto Alegre",
+      "rotulo": "RS · Porto Alegre",
+      "uf": [
+        "RS"
+      ],
+      "cidades": [
+        "RS · Porto Alegre"
+      ],
+      "tem": [
+        "praca"
+      ],
+      "estudos": 1
+    },
+    {
       "praca_id": "prudente",
       "nome": "Presidente Prudente",
       "rotulo": "SP · Presidente Prudente",
@@ -130,6 +190,21 @@
         "plano"
       ],
       "estudos": 3
+    },
+    {
+      "praca_id": "sorocaba",
+      "nome": "Sorocaba",
+      "rotulo": "SP · Sorocaba",
+      "uf": [
+        "SP"
+      ],
+      "cidades": [
+        "SP · Sorocaba"
+      ],
+      "tem": [
+        "praca"
+      ],
+      "estudos": 1
     }
   ],
   "arquivos": {
@@ -167,11 +242,16 @@
     "pracas": [
       "contagem",
       "cuiaba",
+      "curitiba",
       "feira",
+      "goiania",
+      "joinville",
       "londrina",
       "mafra",
       "palmas",
-      "prudente"
+      "porto_alegre",
+      "prudente",
+      "sorocaba"
     ],
     "captacao": [
       "contagem",
@@ -256,11 +336,16 @@
     "planos/ortho_souza_naves",
     "pracas/contagem",
     "pracas/cuiaba",
+    "pracas/curitiba",
     "pracas/feira",
+    "pracas/goiania",
+    "pracas/joinville",
     "pracas/londrina",
     "pracas/mafra",
     "pracas/palmas",
+    "pracas/porto_alegre",
     "pracas/prudente",
+    "pracas/sorocaba",
     "radar",
     "rede"
   ],

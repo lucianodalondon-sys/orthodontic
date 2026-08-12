@@ -1,0 +1,79 @@
+{
+  "praca_id": "sorocaba",
+  "corte": "2026-08-12",
+  "rotulo": "SP · Sorocaba",
+  "uf": [
+    "SP"
+  ],
+  "cidades": [
+    "SP · Sorocaba"
+  ],
+  "identidade": {
+    "praca_id": "sorocaba",
+    "nome": "Sorocaba",
+    "cidades": [
+      "Sorocaba/SP"
+    ],
+    "uf": [
+      "SP"
+    ],
+    "rotulo": "SP · Sorocaba",
+    "cidades_rotulo": [
+      "SP · Sorocaba"
+    ],
+    "criada_em": "2026-08-12",
+    "por_que_esta_praca": "cidade onde a rede já tem unidade e que ainda não tinha estudo — escolhida por concentração de unidades, para subir a cobertura da rede medida",
+    "ibge": [
+      {
+        "municipio": "Sorocaba",
+        "uf": "SP",
+        "ibge_id": 3552205,
+        "populacao_estimada": {
+          "ano": "2025",
+          "valor": "762172",
+          "unidade": "Pessoas"
+        },
+        "massa_salarial_mil_reais": {
+          "ano": "2023",
+          "valor": "58816286",
+          "unidade": "Mil Reais"
+        },
+        "alvo_9_15": 62365,
+        "alvo_30_45": 183072,
+        "fonte": "ibge agregados 6579/5938/9514",
+        "de": "dados/serie/ibge_municipios.jsonl"
+      }
+    ]
+  },
+  "planos_das_lojas": [],
+  "oferta": null,
+  "bairros": null,
+  "imprensa": null,
+  "ritmo_de_publicacao": null,
+  "placar": [],
+  "funil": null,
+  "temas": [],
+  "sazonalidade": [],
+  "sazonalidade_estado": {
+    "tem": false,
+    "medimos": true,
+    "por_que": "Medimos as 12 UFs onde a rede opera ou estuda, e NENHUMA tem curva publicável de procura por aparelho. o Trends não publica índice de cidade para este termo: das 124 cidades de SC e das 186 do PR, NENHUMA teve volume — Londrina e Mafra incluídas, com valor 0. Com o termo mais largo \"ortodontista\" o resultado foi o mesmo.",
+    "as_duas_travas": {
+      "volume": "pelo menos 55% das semanas com busca e 9 meses do ano",
+      "estabilidade": "o mês de pico repetido em pelo menos 3 dos anos medidos"
+    },
+    "veredito_por_uf": [
+      {
+        "regiao": "SP",
+        "porque": "pico_nao_repete",
+        "semanas_com_busca": 261,
+        "semanas": 261,
+        "pico_repete_em": 2,
+        "anos_medidos": 5
+      }
+    ],
+    "o_que_preenche": "nada que seja fonte externa: o Trends não publica índice para este termo nesta escala. Só dado interno da rede (agenda, contratos) diria quando a procura sobe — e isso é teto do produto",
+    "quem_responde": "só a rede, por dentro"
+  },
+  "o_que_mudou": null
+}
