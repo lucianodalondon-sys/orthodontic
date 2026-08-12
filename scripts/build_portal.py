@@ -84,6 +84,10 @@ def main():
     ident = {p: carrega(IDENT, p) for p in PRACAS}
     nome_local = {l["local_id"]: l for p in PRACAS for l in ident[p].get("locais", [])}
 
+    # O QUE O RIVAL VENDE é leitura de CIDADE — três lojas de Cuiabá
+    # disputam o mesmo leilão e leem a mesma guerra comercial. Carregado
+    # aqui em cima porque a praça é montada antes da clínica.
+    _of_por = {x["praca_id"]: x for x in carrega(OUT, "oferta").get("pracas", [])}
     ult_place = ultimo_por([r for r in places if r["snapshot_date"] <= corte],
                            lambda r: r["local_id"])
     # A ficha oficial guarda o endereço; a série de places, não. Sem isto a
@@ -321,6 +325,7 @@ def main():
                  "arquivo": f"planos/{l['local_id']}"}
                 for l in locais if l.get("papel") == "proprio"
                 and (RAIZ/"dados"/"planos"/f"{l['local_id']}.json").exists()],
+            "oferta": _of_por.get(p),
             "placar": placar, "funil": funil, "temas": temas_p,
             "sazonalidade": saz,
             # O PICO DA PRAÇA é buraco de coleta, e buraco calado é o pior
@@ -1130,6 +1135,8 @@ def main():
             "presenca_na_busca": _pres_por.get(lid),
             # em QUE MOMENTO da jornada esta loja dói — capítulo, não tela
             "jornada": _jor_por.get(lid),
+            "oferta_da_cidade": (dict(_of_por[l["praca_id"]], e_da_cidade=True)
+                                 if l.get("praca_id") in _of_por else None),
             "plano": (f"planos/{lid}" if (OUT/f"planos/{lid}.json").exists()
                       else None),
             "anuncios_da_cidade": (lambda a: a and {

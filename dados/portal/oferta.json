@@ -1,0 +1,1770 @@
+{
+ "o_que_e": "O que os anúncios de aparelho de cada cidade estão vendendo, lido no texto do próprio anúncio.",
+ "o_que_nao_e": "Não é investimento. A Biblioteca do Meta não publica verba, e quantidade de anúncio não é dinheiro gasto.",
+ "medido_em": "2026-08-12",
+ "minimo_para_tese": 4,
+ "eixos": [
+  {
+   "eixo": "preco",
+   "rotulo": "Preço na frente",
+   "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara"
+  },
+  {
+   "eixo": "sem_entrada",
+   "rotulo": "Sem entrada",
+   "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva"
+  },
+  {
+   "eixo": "parcelamento",
+   "rotulo": "Parcelamento",
+   "o_que_significa": "vende a mensalidade, não o tratamento"
+  },
+  {
+   "eixo": "avaliacao_gratis",
+   "rotulo": "Avaliação grátis",
+   "o_que_significa": "compra a visita, não a venda — é isca de agenda"
+  },
+  {
+   "eixo": "alinhador",
+   "rotulo": "Alinhador invisível",
+   "o_que_significa": "produto de ticket alto e público adulto"
+  },
+  {
+   "eixo": "estetico",
+   "rotulo": "Aparelho estético",
+   "o_que_significa": "vende discrição — público que trabalha de frente"
+  },
+  {
+   "eixo": "publico_adulto",
+   "rotulo": "Falado para adulto",
+   "o_que_significa": "disputa o adulto que adiou o tratamento"
+  },
+  {
+   "eixo": "publico_infantil",
+   "rotulo": "Falado para criança e adolescente",
+   "o_que_significa": "disputa a decisão da mãe, não a do paciente"
+  },
+  {
+   "eixo": "urgencia",
+   "rotulo": "Urgência e escassez",
+   "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada"
+  },
+  {
+   "eixo": "prova_social",
+   "rotulo": "Prova social",
+   "o_que_significa": "vende confiança em vez de preço"
+  },
+  {
+   "eixo": "autoridade",
+   "rotulo": "Autoridade técnica",
+   "o_que_significa": "vende o profissional — difícil de copiar, caro de construir"
+  },
+  {
+   "eixo": "rapidez",
+   "rotulo": "Rapidez do resultado",
+   "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho"
+  }
+ ],
+ "pracas": [
+  {
+   "praca_id": "londrina",
+   "rotulo": "PR · Londrina",
+   "anuncios_de_aparelho": 45,
+   "anunciantes": 10,
+   "fora_do_produto": 13,
+   "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
+   "sem_texto": 30,
+   "amostra_curta": false,
+   "tese": "A disputa desta cidade é por urgência e escassez — 24 dos 45 anúncios de aparelho medidos falam disso, seguido de avaliação grátis.",
+   "posicao_vaga": "Ninguém está falando de sem entrada — tira a barreira do primeiro pagamento — ataca quem não tem reserva.",
+   "eixos": [
+    {
+     "eixo": "urgencia",
+     "rotulo": "Urgência e escassez",
+     "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+     "anuncios": 24,
+     "pct": 53,
+     "frase": "24 anúncios de aparelho falam disso"
+    },
+    {
+     "eixo": "avaliacao_gratis",
+     "rotulo": "Avaliação grátis",
+     "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+     "anuncios": 10,
+     "pct": 22,
+     "frase": "10 anúncios de aparelho falam disso"
+    },
+    {
+     "eixo": "estetico",
+     "rotulo": "Aparelho estético",
+     "o_que_significa": "vende discrição — público que trabalha de frente",
+     "anuncios": 9,
+     "pct": 20,
+     "frase": "9 anúncios de aparelho falam disso"
+    },
+    {
+     "eixo": "parcelamento",
+     "rotulo": "Parcelamento",
+     "o_que_significa": "vende a mensalidade, não o tratamento",
+     "anuncios": 6,
+     "pct": 13,
+     "frase": "6 anúncios de aparelho falam disso"
+    },
+    {
+     "eixo": "autoridade",
+     "rotulo": "Autoridade técnica",
+     "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+     "anuncios": 4,
+     "pct": 9,
+     "frase": "4 anúncios de aparelho falam disso"
+    },
+    {
+     "eixo": "preco",
+     "rotulo": "Preço na frente",
+     "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
+     "anuncios": 3,
+     "pct": 7,
+     "frase": "3 anúncios de aparelho falam disso"
+    },
+    {
+     "eixo": "publico_infantil",
+     "rotulo": "Falado para criança e adolescente",
+     "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+     "anuncios": 1,
+     "pct": 2,
+     "frase": "1 anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "sem_entrada",
+     "rotulo": "Sem entrada",
+     "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "alinhador",
+     "rotulo": "Alinhador invisível",
+     "o_que_significa": "produto de ticket alto e público adulto",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "publico_adulto",
+     "rotulo": "Falado para adulto",
+     "o_que_significa": "disputa o adulto que adiou o tratamento",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "prova_social",
+     "rotulo": "Prova social",
+     "o_que_significa": "vende confiança em vez de preço",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "rapidez",
+     "rotulo": "Rapidez do resultado",
+     "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    }
+   ],
+   "por_anunciante": [
+    {
+     "anunciante": "Classdent",
+     "eixos": [
+      "urgencia"
+     ]
+    },
+    {
+     "anunciante": "Sorria Sempre - Londrina-PR",
+     "eixos": [
+      "preco",
+      "parcelamento",
+      "avaliacao_gratis"
+     ]
+    },
+    {
+     "anunciante": "Odontoclinic Londrina",
+     "eixos": [
+      "estetico",
+      "publico_infantil"
+     ]
+    },
+    {
+     "anunciante": "OrthoDontic",
+     "eixos": [
+      "avaliacao_gratis",
+      "autoridade"
+     ]
+    },
+    {
+     "anunciante": "Carretero Odontologia Especializada",
+     "eixos": [
+      "avaliacao_gratis",
+      "estetico",
+      "urgencia"
+     ]
+    },
+    {
+     "anunciante": "Gou Odonto_Londrina",
+     "eixos": [
+      "parcelamento",
+      "urgencia"
+     ]
+    },
+    {
+     "anunciante": "Clinica Dentista do Povo - Londrina",
+     "eixos": [
+      "avaliacao_gratis"
+     ]
+    }
+   ]
+  },
+  {
+   "praca_id": "feira",
+   "rotulo": "BA · Feira de Santana",
+   "anuncios_de_aparelho": 14,
+   "anunciantes": 5,
+   "fora_do_produto": 13,
+   "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
+   "sem_texto": 36,
+   "amostra_curta": false,
+   "tese": "A disputa desta cidade é por urgência e escassez — 4 dos 14 anúncios de aparelho medidos falam disso, seguido de autoridade técnica.",
+   "posicao_vaga": "Ninguém está falando de preço na frente — a cidade disputa por número; entrar aqui é entrar na briga mais cara.",
+   "eixos": [
+    {
+     "eixo": "urgencia",
+     "rotulo": "Urgência e escassez",
+     "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+     "anuncios": 4,
+     "pct": 29,
+     "frase": "4 anúncios de aparelho falam disso"
+    },
+    {
+     "eixo": "autoridade",
+     "rotulo": "Autoridade técnica",
+     "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+     "anuncios": 3,
+     "pct": 21,
+     "frase": "3 anúncios de aparelho falam disso"
+    },
+    {
+     "eixo": "preco",
+     "rotulo": "Preço na frente",
+     "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "sem_entrada",
+     "rotulo": "Sem entrada",
+     "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "parcelamento",
+     "rotulo": "Parcelamento",
+     "o_que_significa": "vende a mensalidade, não o tratamento",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "avaliacao_gratis",
+     "rotulo": "Avaliação grátis",
+     "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "alinhador",
+     "rotulo": "Alinhador invisível",
+     "o_que_significa": "produto de ticket alto e público adulto",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "estetico",
+     "rotulo": "Aparelho estético",
+     "o_que_significa": "vende discrição — público que trabalha de frente",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "publico_adulto",
+     "rotulo": "Falado para adulto",
+     "o_que_significa": "disputa o adulto que adiou o tratamento",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "publico_infantil",
+     "rotulo": "Falado para criança e adolescente",
+     "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "prova_social",
+     "rotulo": "Prova social",
+     "o_que_significa": "vende confiança em vez de preço",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "rapidez",
+     "rotulo": "Rapidez do resultado",
+     "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    }
+   ],
+   "por_anunciante": [
+    {
+     "anunciante": "Clínica Vamos Sorrir",
+     "eixos": [
+      "urgencia",
+      "autoridade"
+     ]
+    },
+    {
+     "anunciante": "COSB",
+     "eixos": [
+      "urgencia"
+     ]
+    }
+   ]
+  },
+  {
+   "praca_id": "maraba",
+   "rotulo": "PA · Marabá",
+   "anuncios_de_aparelho": 12,
+   "anunciantes": 5,
+   "fora_do_produto": 45,
+   "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
+   "sem_texto": 0,
+   "amostra_curta": false,
+   "tese": "A disputa desta cidade é por urgência e escassez — 7 dos 12 anúncios de aparelho medidos falam disso, seguido de preço na frente.",
+   "posicao_vaga": "Ninguém está falando de sem entrada — tira a barreira do primeiro pagamento — ataca quem não tem reserva.",
+   "eixos": [
+    {
+     "eixo": "urgencia",
+     "rotulo": "Urgência e escassez",
+     "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+     "anuncios": 7,
+     "pct": 58,
+     "frase": "7 anúncios de aparelho falam disso"
+    },
+    {
+     "eixo": "preco",
+     "rotulo": "Preço na frente",
+     "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
+     "anuncios": 6,
+     "pct": 50,
+     "frase": "6 anúncios de aparelho falam disso"
+    },
+    {
+     "eixo": "avaliacao_gratis",
+     "rotulo": "Avaliação grátis",
+     "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+     "anuncios": 6,
+     "pct": 50,
+     "frase": "6 anúncios de aparelho falam disso"
+    },
+    {
+     "eixo": "alinhador",
+     "rotulo": "Alinhador invisível",
+     "o_que_significa": "produto de ticket alto e público adulto",
+     "anuncios": 1,
+     "pct": 8,
+     "frase": "1 anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "estetico",
+     "rotulo": "Aparelho estético",
+     "o_que_significa": "vende discrição — público que trabalha de frente",
+     "anuncios": 1,
+     "pct": 8,
+     "frase": "1 anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "autoridade",
+     "rotulo": "Autoridade técnica",
+     "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+     "anuncios": 1,
+     "pct": 8,
+     "frase": "1 anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "sem_entrada",
+     "rotulo": "Sem entrada",
+     "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "parcelamento",
+     "rotulo": "Parcelamento",
+     "o_que_significa": "vende a mensalidade, não o tratamento",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "publico_adulto",
+     "rotulo": "Falado para adulto",
+     "o_que_significa": "disputa o adulto que adiou o tratamento",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "publico_infantil",
+     "rotulo": "Falado para criança e adolescente",
+     "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "prova_social",
+     "rotulo": "Prova social",
+     "o_que_significa": "vende confiança em vez de preço",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "rapidez",
+     "rotulo": "Rapidez do resultado",
+     "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    }
+   ],
+   "por_anunciante": [
+    {
+     "anunciante": "Happy Dent Marabá",
+     "eixos": [
+      "preco",
+      "urgencia",
+      "avaliacao_gratis"
+     ]
+    },
+    {
+     "anunciante": "Orto Prime Estética",
+     "eixos": [
+      "avaliacao_gratis",
+      "alinhador",
+      "estetico"
+     ]
+    },
+    {
+     "anunciante": "Instituto Mariano",
+     "eixos": [
+      "urgencia",
+      "autoridade"
+     ]
+    },
+    {
+     "anunciante": "Odonto Excellence - Marabá",
+     "eixos": [
+      "avaliacao_gratis"
+     ]
+    }
+   ]
+  },
+  {
+   "praca_id": "imperatriz",
+   "rotulo": "MA · Imperatriz",
+   "anuncios_de_aparelho": 9,
+   "anunciantes": 4,
+   "fora_do_produto": 65,
+   "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
+   "sem_texto": 1,
+   "amostra_curta": false,
+   "tese": "A disputa desta cidade é por falado para criança e adolescente — 7 dos 9 anúncios de aparelho medidos falam disso, seguido de autoridade técnica.",
+   "posicao_vaga": "Ninguém está falando de preço na frente — a cidade disputa por número; entrar aqui é entrar na briga mais cara.",
+   "eixos": [
+    {
+     "eixo": "publico_infantil",
+     "rotulo": "Falado para criança e adolescente",
+     "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+     "anuncios": 7,
+     "pct": 78,
+     "frase": "7 anúncios de aparelho falam disso"
+    },
+    {
+     "eixo": "autoridade",
+     "rotulo": "Autoridade técnica",
+     "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+     "anuncios": 6,
+     "pct": 67,
+     "frase": "6 anúncios de aparelho falam disso"
+    },
+    {
+     "eixo": "alinhador",
+     "rotulo": "Alinhador invisível",
+     "o_que_significa": "produto de ticket alto e público adulto",
+     "anuncios": 5,
+     "pct": 56,
+     "frase": "5 anúncios de aparelho falam disso"
+    },
+    {
+     "eixo": "preco",
+     "rotulo": "Preço na frente",
+     "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "sem_entrada",
+     "rotulo": "Sem entrada",
+     "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "parcelamento",
+     "rotulo": "Parcelamento",
+     "o_que_significa": "vende a mensalidade, não o tratamento",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "avaliacao_gratis",
+     "rotulo": "Avaliação grátis",
+     "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "estetico",
+     "rotulo": "Aparelho estético",
+     "o_que_significa": "vende discrição — público que trabalha de frente",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "publico_adulto",
+     "rotulo": "Falado para adulto",
+     "o_que_significa": "disputa o adulto que adiou o tratamento",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "urgencia",
+     "rotulo": "Urgência e escassez",
+     "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "prova_social",
+     "rotulo": "Prova social",
+     "o_que_significa": "vende confiança em vez de preço",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "rapidez",
+     "rotulo": "Rapidez do resultado",
+     "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    }
+   ],
+   "por_anunciante": [
+    {
+     "anunciante": "aaamulticlin",
+     "eixos": [
+      "alinhador",
+      "publico_infantil",
+      "autoridade"
+     ]
+    },
+    {
+     "anunciante": "Clinica do Sorriso Imp",
+     "eixos": [
+      "publico_infantil"
+     ]
+    },
+    {
+     "anunciante": "Odonto Excellence Imperatriz",
+     "eixos": [
+      "autoridade"
+     ]
+    }
+   ]
+  },
+  {
+   "praca_id": "contagem",
+   "rotulo": "MG · Contagem",
+   "anuncios_de_aparelho": 8,
+   "anunciantes": 5,
+   "fora_do_produto": 33,
+   "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
+   "sem_texto": 1,
+   "amostra_curta": false,
+   "tese": "A disputa desta cidade é por avaliação grátis — 5 dos 8 anúncios de aparelho medidos falam disso, seguido de urgência e escassez.",
+   "posicao_vaga": "Ninguém está falando de preço na frente — a cidade disputa por número; entrar aqui é entrar na briga mais cara.",
+   "eixos": [
+    {
+     "eixo": "avaliacao_gratis",
+     "rotulo": "Avaliação grátis",
+     "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+     "anuncios": 5,
+     "pct": 62,
+     "frase": "5 anúncios de aparelho falam disso"
+    },
+    {
+     "eixo": "urgencia",
+     "rotulo": "Urgência e escassez",
+     "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+     "anuncios": 2,
+     "pct": 25,
+     "frase": "2 anúncios de aparelho falam disso"
+    },
+    {
+     "eixo": "preco",
+     "rotulo": "Preço na frente",
+     "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "sem_entrada",
+     "rotulo": "Sem entrada",
+     "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "parcelamento",
+     "rotulo": "Parcelamento",
+     "o_que_significa": "vende a mensalidade, não o tratamento",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "alinhador",
+     "rotulo": "Alinhador invisível",
+     "o_que_significa": "produto de ticket alto e público adulto",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "estetico",
+     "rotulo": "Aparelho estético",
+     "o_que_significa": "vende discrição — público que trabalha de frente",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "publico_adulto",
+     "rotulo": "Falado para adulto",
+     "o_que_significa": "disputa o adulto que adiou o tratamento",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "publico_infantil",
+     "rotulo": "Falado para criança e adolescente",
+     "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "prova_social",
+     "rotulo": "Prova social",
+     "o_que_significa": "vende confiança em vez de preço",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "autoridade",
+     "rotulo": "Autoridade técnica",
+     "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "rapidez",
+     "rotulo": "Rapidez do resultado",
+     "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    }
+   ],
+   "por_anunciante": [
+    {
+     "anunciante": "Rirás Odontologia - Cidade Industrial",
+     "eixos": [
+      "avaliacao_gratis",
+      "urgencia"
+     ]
+    },
+    {
+     "anunciante": "Aparelho Dental no mesmo dia",
+     "eixos": [
+      "avaliacao_gratis"
+     ]
+    },
+    {
+     "anunciante": "OdontoCompany Contagem - Tropical",
+     "eixos": [
+      "avaliacao_gratis"
+     ]
+    }
+   ]
+  },
+  {
+   "praca_id": "juazeiro_do_norte",
+   "rotulo": "CE · Juazeiro do Norte",
+   "anuncios_de_aparelho": 8,
+   "anunciantes": 4,
+   "fora_do_produto": 58,
+   "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
+   "sem_texto": 0,
+   "amostra_curta": false,
+   "tese": "A disputa desta cidade é por falado para criança e adolescente — 4 dos 8 anúncios de aparelho medidos falam disso, seguido de autoridade técnica.",
+   "posicao_vaga": "Ninguém está falando de preço na frente — a cidade disputa por número; entrar aqui é entrar na briga mais cara.",
+   "eixos": [
+    {
+     "eixo": "publico_infantil",
+     "rotulo": "Falado para criança e adolescente",
+     "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+     "anuncios": 4,
+     "pct": 50,
+     "frase": "4 anúncios de aparelho falam disso"
+    },
+    {
+     "eixo": "autoridade",
+     "rotulo": "Autoridade técnica",
+     "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+     "anuncios": 4,
+     "pct": 50,
+     "frase": "4 anúncios de aparelho falam disso"
+    },
+    {
+     "eixo": "publico_adulto",
+     "rotulo": "Falado para adulto",
+     "o_que_significa": "disputa o adulto que adiou o tratamento",
+     "anuncios": 2,
+     "pct": 25,
+     "frase": "2 anúncios de aparelho falam disso"
+    },
+    {
+     "eixo": "alinhador",
+     "rotulo": "Alinhador invisível",
+     "o_que_significa": "produto de ticket alto e público adulto",
+     "anuncios": 1,
+     "pct": 12,
+     "frase": "1 anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "preco",
+     "rotulo": "Preço na frente",
+     "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "sem_entrada",
+     "rotulo": "Sem entrada",
+     "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "parcelamento",
+     "rotulo": "Parcelamento",
+     "o_que_significa": "vende a mensalidade, não o tratamento",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "avaliacao_gratis",
+     "rotulo": "Avaliação grátis",
+     "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "estetico",
+     "rotulo": "Aparelho estético",
+     "o_que_significa": "vende discrição — público que trabalha de frente",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "urgencia",
+     "rotulo": "Urgência e escassez",
+     "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "prova_social",
+     "rotulo": "Prova social",
+     "o_que_significa": "vende confiança em vez de preço",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "rapidez",
+     "rotulo": "Rapidez do resultado",
+     "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    }
+   ],
+   "por_anunciante": [
+    {
+     "anunciante": "Sorrisokids",
+     "eixos": [
+      "publico_infantil",
+      "autoridade",
+      "alinhador"
+     ]
+    },
+    {
+     "anunciante": "Ana Beatriz",
+     "eixos": [
+      "publico_adulto",
+      "publico_infantil",
+      "autoridade"
+     ]
+    },
+    {
+     "anunciante": "OrthoDontic",
+     "eixos": [
+      "autoridade"
+     ]
+    }
+   ]
+  },
+  {
+   "praca_id": "parauapebas",
+   "rotulo": "PA · Parauapebas",
+   "anuncios_de_aparelho": 8,
+   "anunciantes": 4,
+   "fora_do_produto": 73,
+   "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
+   "sem_texto": 0,
+   "amostra_curta": false,
+   "tese": "A disputa desta cidade é por avaliação grátis — 4 dos 8 anúncios de aparelho medidos falam disso, seguido de urgência e escassez.",
+   "posicao_vaga": "Ninguém está falando de preço na frente — a cidade disputa por número; entrar aqui é entrar na briga mais cara.",
+   "eixos": [
+    {
+     "eixo": "avaliacao_gratis",
+     "rotulo": "Avaliação grátis",
+     "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+     "anuncios": 4,
+     "pct": 50,
+     "frase": "4 anúncios de aparelho falam disso"
+    },
+    {
+     "eixo": "urgencia",
+     "rotulo": "Urgência e escassez",
+     "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+     "anuncios": 3,
+     "pct": 38,
+     "frase": "3 anúncios de aparelho falam disso"
+    },
+    {
+     "eixo": "autoridade",
+     "rotulo": "Autoridade técnica",
+     "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+     "anuncios": 1,
+     "pct": 12,
+     "frase": "1 anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "preco",
+     "rotulo": "Preço na frente",
+     "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "sem_entrada",
+     "rotulo": "Sem entrada",
+     "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "parcelamento",
+     "rotulo": "Parcelamento",
+     "o_que_significa": "vende a mensalidade, não o tratamento",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "alinhador",
+     "rotulo": "Alinhador invisível",
+     "o_que_significa": "produto de ticket alto e público adulto",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "estetico",
+     "rotulo": "Aparelho estético",
+     "o_que_significa": "vende discrição — público que trabalha de frente",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "publico_adulto",
+     "rotulo": "Falado para adulto",
+     "o_que_significa": "disputa o adulto que adiou o tratamento",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "publico_infantil",
+     "rotulo": "Falado para criança e adolescente",
+     "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "prova_social",
+     "rotulo": "Prova social",
+     "o_que_significa": "vende confiança em vez de preço",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "rapidez",
+     "rotulo": "Rapidez do resultado",
+     "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    }
+   ],
+   "por_anunciante": [
+    {
+     "anunciante": "Ortomedic Center Odontologia",
+     "eixos": [
+      "avaliacao_gratis",
+      "urgencia"
+     ]
+    },
+    {
+     "anunciante": "Dentista Vs10",
+     "eixos": [
+      "avaliacao_gratis"
+     ]
+    },
+    {
+     "anunciante": "Odontocop Clínica Dentária",
+     "eixos": [
+      "autoridade"
+     ]
+    }
+   ]
+  },
+  {
+   "praca_id": "mafra",
+   "rotulo": "SC · Mafra",
+   "anuncios_de_aparelho": 6,
+   "anunciantes": 4,
+   "fora_do_produto": 51,
+   "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
+   "sem_texto": 36,
+   "amostra_curta": false,
+   "tese": "A disputa desta cidade é por avaliação grátis — 5 dos 6 anúncios de aparelho medidos falam disso, seguido de rapidez do resultado.",
+   "posicao_vaga": "Ninguém está falando de preço na frente — a cidade disputa por número; entrar aqui é entrar na briga mais cara.",
+   "eixos": [
+    {
+     "eixo": "avaliacao_gratis",
+     "rotulo": "Avaliação grátis",
+     "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+     "anuncios": 5,
+     "pct": 83,
+     "frase": "5 anúncios de aparelho falam disso"
+    },
+    {
+     "eixo": "rapidez",
+     "rotulo": "Rapidez do resultado",
+     "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+     "anuncios": 2,
+     "pct": 33,
+     "frase": "2 anúncios de aparelho falam disso"
+    },
+    {
+     "eixo": "alinhador",
+     "rotulo": "Alinhador invisível",
+     "o_que_significa": "produto de ticket alto e público adulto",
+     "anuncios": 1,
+     "pct": 17,
+     "frase": "1 anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "autoridade",
+     "rotulo": "Autoridade técnica",
+     "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+     "anuncios": 1,
+     "pct": 17,
+     "frase": "1 anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "preco",
+     "rotulo": "Preço na frente",
+     "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "sem_entrada",
+     "rotulo": "Sem entrada",
+     "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "parcelamento",
+     "rotulo": "Parcelamento",
+     "o_que_significa": "vende a mensalidade, não o tratamento",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "estetico",
+     "rotulo": "Aparelho estético",
+     "o_que_significa": "vende discrição — público que trabalha de frente",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "publico_adulto",
+     "rotulo": "Falado para adulto",
+     "o_que_significa": "disputa o adulto que adiou o tratamento",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "publico_infantil",
+     "rotulo": "Falado para criança e adolescente",
+     "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "urgencia",
+     "rotulo": "Urgência e escassez",
+     "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "prova_social",
+     "rotulo": "Prova social",
+     "o_que_significa": "vende confiança em vez de preço",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    }
+   ],
+   "por_anunciante": [
+    {
+     "anunciante": "OdontoCompany Mafra SC/PR",
+     "eixos": [
+      "avaliacao_gratis",
+      "rapidez"
+     ]
+    },
+    {
+     "anunciante": "SM Odontologia",
+     "eixos": [
+      "avaliacao_gratis",
+      "alinhador",
+      "autoridade"
+     ]
+    },
+    {
+     "anunciante": "Mafra Odontologia ",
+     "eixos": [
+      "avaliacao_gratis"
+     ]
+    }
+   ]
+  },
+  {
+   "praca_id": "rio_branco",
+   "rotulo": "AC · Rio Branco",
+   "anuncios_de_aparelho": 6,
+   "anunciantes": 5,
+   "fora_do_produto": 42,
+   "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
+   "sem_texto": 0,
+   "amostra_curta": false,
+   "tese": "A disputa desta cidade é por avaliação grátis — 3 dos 6 anúncios de aparelho medidos falam disso, seguido de autoridade técnica.",
+   "posicao_vaga": "Ninguém está falando de preço na frente — a cidade disputa por número; entrar aqui é entrar na briga mais cara.",
+   "eixos": [
+    {
+     "eixo": "avaliacao_gratis",
+     "rotulo": "Avaliação grátis",
+     "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+     "anuncios": 3,
+     "pct": 50,
+     "frase": "3 anúncios de aparelho falam disso"
+    },
+    {
+     "eixo": "autoridade",
+     "rotulo": "Autoridade técnica",
+     "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+     "anuncios": 2,
+     "pct": 33,
+     "frase": "2 anúncios de aparelho falam disso"
+    },
+    {
+     "eixo": "alinhador",
+     "rotulo": "Alinhador invisível",
+     "o_que_significa": "produto de ticket alto e público adulto",
+     "anuncios": 1,
+     "pct": 17,
+     "frase": "1 anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "urgencia",
+     "rotulo": "Urgência e escassez",
+     "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+     "anuncios": 1,
+     "pct": 17,
+     "frase": "1 anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "preco",
+     "rotulo": "Preço na frente",
+     "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "sem_entrada",
+     "rotulo": "Sem entrada",
+     "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "parcelamento",
+     "rotulo": "Parcelamento",
+     "o_que_significa": "vende a mensalidade, não o tratamento",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "estetico",
+     "rotulo": "Aparelho estético",
+     "o_que_significa": "vende discrição — público que trabalha de frente",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "publico_adulto",
+     "rotulo": "Falado para adulto",
+     "o_que_significa": "disputa o adulto que adiou o tratamento",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "publico_infantil",
+     "rotulo": "Falado para criança e adolescente",
+     "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "prova_social",
+     "rotulo": "Prova social",
+     "o_que_significa": "vende confiança em vez de preço",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "rapidez",
+     "rotulo": "Rapidez do resultado",
+     "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    }
+   ],
+   "por_anunciante": [
+    {
+     "anunciante": "ODC Araras - SP",
+     "eixos": [
+      "urgencia",
+      "autoridade"
+     ]
+    },
+    {
+     "anunciante": "OdontoCenter - Unidade Barão do Rio Branco, 1121",
+     "eixos": [
+      "avaliacao_gratis"
+     ]
+    },
+    {
+     "anunciante": "Scalla Odonto",
+     "eixos": [
+      "alinhador",
+      "autoridade"
+     ]
+    },
+    {
+     "anunciante": "OdontoCompany Itajaí - Barra do Rio",
+     "eixos": [
+      "avaliacao_gratis"
+     ]
+    }
+   ]
+  },
+  {
+   "praca_id": "macapa",
+   "rotulo": "AP · Macapá",
+   "anuncios_de_aparelho": 5,
+   "anunciantes": 4,
+   "fora_do_produto": 23,
+   "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
+   "sem_texto": 0,
+   "amostra_curta": false,
+   "tese": "A disputa desta cidade é por avaliação grátis — 3 dos 5 anúncios de aparelho medidos falam disso, seguido de preço na frente.",
+   "posicao_vaga": "Ninguém está falando de sem entrada — tira a barreira do primeiro pagamento — ataca quem não tem reserva.",
+   "eixos": [
+    {
+     "eixo": "avaliacao_gratis",
+     "rotulo": "Avaliação grátis",
+     "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+     "anuncios": 3,
+     "pct": 60,
+     "frase": "3 anúncios de aparelho falam disso"
+    },
+    {
+     "eixo": "preco",
+     "rotulo": "Preço na frente",
+     "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
+     "anuncios": 2,
+     "pct": 40,
+     "frase": "2 anúncios de aparelho falam disso"
+    },
+    {
+     "eixo": "parcelamento",
+     "rotulo": "Parcelamento",
+     "o_que_significa": "vende a mensalidade, não o tratamento",
+     "anuncios": 2,
+     "pct": 40,
+     "frase": "2 anúncios de aparelho falam disso"
+    },
+    {
+     "eixo": "sem_entrada",
+     "rotulo": "Sem entrada",
+     "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "alinhador",
+     "rotulo": "Alinhador invisível",
+     "o_que_significa": "produto de ticket alto e público adulto",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "estetico",
+     "rotulo": "Aparelho estético",
+     "o_que_significa": "vende discrição — público que trabalha de frente",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "publico_adulto",
+     "rotulo": "Falado para adulto",
+     "o_que_significa": "disputa o adulto que adiou o tratamento",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "publico_infantil",
+     "rotulo": "Falado para criança e adolescente",
+     "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "urgencia",
+     "rotulo": "Urgência e escassez",
+     "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "prova_social",
+     "rotulo": "Prova social",
+     "o_que_significa": "vende confiança em vez de preço",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "autoridade",
+     "rotulo": "Autoridade técnica",
+     "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "rapidez",
+     "rotulo": "Rapidez do resultado",
+     "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    }
+   ],
+   "por_anunciante": [
+    {
+     "anunciante": "Coife Macapá",
+     "eixos": [
+      "preco",
+      "parcelamento",
+      "avaliacao_gratis"
+     ]
+    },
+    {
+     "anunciante": "Dr. Amigo - Macapá 2",
+     "eixos": [
+      "avaliacao_gratis"
+     ]
+    }
+   ]
+  },
+  {
+   "praca_id": "palmas",
+   "rotulo": "TO · Palmas",
+   "anuncios_de_aparelho": 2,
+   "anunciantes": 2,
+   "fora_do_produto": 23,
+   "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
+   "sem_texto": 1,
+   "amostra_curta": true,
+   "tese": "Ainda não dá para descrever a disputa desta cidade: só 2 anúncios de aparelho com texto medido.",
+   "posicao_vaga": null,
+   "eixos": [
+    {
+     "eixo": "avaliacao_gratis",
+     "rotulo": "Avaliação grátis",
+     "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+     "anuncios": 1,
+     "pct": 50,
+     "frase": "1 anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "alinhador",
+     "rotulo": "Alinhador invisível",
+     "o_que_significa": "produto de ticket alto e público adulto",
+     "anuncios": 1,
+     "pct": 50,
+     "frase": "1 anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "preco",
+     "rotulo": "Preço na frente",
+     "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "sem_entrada",
+     "rotulo": "Sem entrada",
+     "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "parcelamento",
+     "rotulo": "Parcelamento",
+     "o_que_significa": "vende a mensalidade, não o tratamento",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "estetico",
+     "rotulo": "Aparelho estético",
+     "o_que_significa": "vende discrição — público que trabalha de frente",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "publico_adulto",
+     "rotulo": "Falado para adulto",
+     "o_que_significa": "disputa o adulto que adiou o tratamento",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "publico_infantil",
+     "rotulo": "Falado para criança e adolescente",
+     "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "urgencia",
+     "rotulo": "Urgência e escassez",
+     "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "prova_social",
+     "rotulo": "Prova social",
+     "o_que_significa": "vende confiança em vez de preço",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "autoridade",
+     "rotulo": "Autoridade técnica",
+     "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "rapidez",
+     "rotulo": "Rapidez do resultado",
+     "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    }
+   ],
+   "por_anunciante": [
+    {
+     "anunciante": "drasorrisoperfeitto",
+     "eixos": [
+      "avaliacao_gratis",
+      "alinhador"
+     ]
+    }
+   ]
+  },
+  {
+   "praca_id": "cuiaba",
+   "rotulo": "MT · Cuiabá",
+   "anuncios_de_aparelho": 1,
+   "anunciantes": 1,
+   "fora_do_produto": 0,
+   "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
+   "sem_texto": 0,
+   "amostra_curta": true,
+   "tese": "Ainda não dá para descrever a disputa desta cidade: só 1 anúncio de aparelho com texto medido.",
+   "posicao_vaga": null,
+   "eixos": [
+    {
+     "eixo": "urgencia",
+     "rotulo": "Urgência e escassez",
+     "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+     "anuncios": 1,
+     "pct": 100,
+     "frase": "1 anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "preco",
+     "rotulo": "Preço na frente",
+     "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "sem_entrada",
+     "rotulo": "Sem entrada",
+     "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "parcelamento",
+     "rotulo": "Parcelamento",
+     "o_que_significa": "vende a mensalidade, não o tratamento",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "avaliacao_gratis",
+     "rotulo": "Avaliação grátis",
+     "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "alinhador",
+     "rotulo": "Alinhador invisível",
+     "o_que_significa": "produto de ticket alto e público adulto",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "estetico",
+     "rotulo": "Aparelho estético",
+     "o_que_significa": "vende discrição — público que trabalha de frente",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "publico_adulto",
+     "rotulo": "Falado para adulto",
+     "o_que_significa": "disputa o adulto que adiou o tratamento",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "publico_infantil",
+     "rotulo": "Falado para criança e adolescente",
+     "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "prova_social",
+     "rotulo": "Prova social",
+     "o_que_significa": "vende confiança em vez de preço",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "autoridade",
+     "rotulo": "Autoridade técnica",
+     "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "rapidez",
+     "rotulo": "Rapidez do resultado",
+     "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    }
+   ],
+   "por_anunciante": [
+    {
+     "anunciante": "Závia Odontologia inteligente - Várzea Grande São Matheus",
+     "eixos": [
+      "urgencia"
+     ]
+    }
+   ]
+  },
+  {
+   "praca_id": "prudente",
+   "rotulo": "SP · Presidente Prudente",
+   "anuncios_de_aparelho": 1,
+   "anunciantes": 1,
+   "fora_do_produto": 3,
+   "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
+   "sem_texto": 16,
+   "amostra_curta": true,
+   "tese": "Ainda não dá para descrever a disputa desta cidade: só 1 anúncio de aparelho com texto medido.",
+   "posicao_vaga": null,
+   "eixos": [
+    {
+     "eixo": "preco",
+     "rotulo": "Preço na frente",
+     "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "sem_entrada",
+     "rotulo": "Sem entrada",
+     "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "parcelamento",
+     "rotulo": "Parcelamento",
+     "o_que_significa": "vende a mensalidade, não o tratamento",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "avaliacao_gratis",
+     "rotulo": "Avaliação grátis",
+     "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "alinhador",
+     "rotulo": "Alinhador invisível",
+     "o_que_significa": "produto de ticket alto e público adulto",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "estetico",
+     "rotulo": "Aparelho estético",
+     "o_que_significa": "vende discrição — público que trabalha de frente",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "publico_adulto",
+     "rotulo": "Falado para adulto",
+     "o_que_significa": "disputa o adulto que adiou o tratamento",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "publico_infantil",
+     "rotulo": "Falado para criança e adolescente",
+     "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "urgencia",
+     "rotulo": "Urgência e escassez",
+     "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "prova_social",
+     "rotulo": "Prova social",
+     "o_que_significa": "vende confiança em vez de preço",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "autoridade",
+     "rotulo": "Autoridade técnica",
+     "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    },
+    {
+     "eixo": "rapidez",
+     "rotulo": "Rapidez do resultado",
+     "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+     "anuncios": 0,
+     "pct": 0,
+     "frase": "nenhum anúncio de aparelho fala disso"
+    }
+   ],
+   "por_anunciante": []
+  }
+ ]
+}

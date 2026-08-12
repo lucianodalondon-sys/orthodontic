@@ -239,7 +239,7 @@ def main():
                 "frase": (
                     conta(n, "avaliação fala", "avaliações falam")
                     + " deste momento"
-                    + (f", {conta(b['dor'], 'com nota baixa')}"
+                    + (f", {conta(b['dor'], 'com nota baixa', 'com notas baixas')}"
                        if b and b["dor"] else ", nenhuma com nota baixa")
                     if n else None),
                 "porque_vazio": (None if n else
