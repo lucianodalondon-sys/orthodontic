@@ -153,6 +153,15 @@ padrões → caixa → padrao → build. Períodos curtos são declarados na tel
 - **`ortho` solto marca concorrente como nosso.** "Clínica Ortho Mais" não é
   nossa. Use `orthodontic` sem espaços e sem acento.
 - **U+2028 quebra `.splitlines()` do Python.** Leia por `\n`.
+- **TODA UNIDADE DA REDE SE CHAMA "ORTHODONTIC" — e o id não pode sair do
+  nome.** Ao abrir Porto Alegre (7 unidades), Curitiba (5), Goiânia (4),
+  Sorocaba e Joinville (3 cada), a varredura gerou `local_id` a partir do
+  nome e as 22 viraram 8 ids. A coleta de avaliações mediu UMA loja por
+  cidade: 152 avaliações onde deviam ser sete. O id agora é
+  `ortho_<abrev_da_praca>_<bairro>` — a abreviação entra porque a série é
+  chaveada por `local_id` no projeto INTEIRO, e "orthodontic" em Porto
+  Alegre e em Curitiba são lojas diferentes. Concorrente de rede colide
+  igual: `odontocompany` existia em Goiânia e Joinville.
 - **`local_id` truncado fundiu lojas.** Quatro pares de lojas (ODONTOMAX,
   Vamos Sorrir, DENTEBRAS, Odonto Minas) dividiram o mesmo `local_id` porque
   o id era o nome truncado. `cruzamento.identidades()` agora FALHA ALTO em

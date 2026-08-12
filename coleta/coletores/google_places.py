@@ -155,6 +155,39 @@ def ancora(praca, achados, quantos=14):
     ordenados = sorted(achados, key=lambda p: -(p.get("userRatingCount") or 0))
     hoje = dt.date.today().isoformat()
 
+    def bairro_do_endereco(e):
+        """O bairro é o último trecho antes de ', Cidade - UF'."""
+        partes = [x.strip() for x in str(e or "").split(",")]
+        for i, x in enumerate(partes):
+            if re.fullmatch(r".+ - [A-Z]{2}", x) and i > 0:
+                b = partes[i-1].split(" - ")[-1].strip()
+                return b if len(b) >= 3 and not re.fullmatch(r"[\d\s\-]+", b) else ""
+        return ""
+
+    def id_unico(nome, endereco, place_id, ident, praca):
+        """UM ID POR LOJA, SEMPRE — e nunca o nome truncado.
+
+        Toda unidade da rede se chama "OrthoDontic". Com o id saindo do
+        nome, as 7 de Porto Alegre viraram `orthodontic` e a coleta de
+        avaliações mediu UMA — 152 avaliações onde deviam ser sete lojas.
+        É a mesma armadilha que já fundiu ODONTOMAX, Vamos Sorrir,
+        DENTEBRAS e Odonto Minas, e o guarda de `cruzamento.identidades()`
+        existe justamente para gritar quando ela volta.
+
+        A ordem de desempate: nome, depois BAIRRO (que é o que distingue
+        duas lojas da mesma marca na mesma cidade e é legível para quem
+        lê a tela), e por último um pedaço do place_id, que é único por
+        definição.
+        """
+        usados = {l.get("local_id") for l in ident.get("locais", [])}
+        base = slug(nome) or f"local_{len(ident.get('locais', []))}"
+        if base not in usados:
+            return base
+        b = slug(bairro_do_endereco(endereco))
+        if b and f"{base}_{b}"[:40] not in usados:
+            return f"{base}_{b}"[:40]
+        return f"{base}_{slug(place_id)[-6:]}"[:40]
+
     def slug(s):
         s = unicodedata.normalize("NFKD", s or "")
         s = "".join(c for c in s if not unicodedata.combining(c)).lower()
@@ -194,7 +227,8 @@ def ancora(praca, achados, quantos=14):
             alvo.update(dados); alvo.pop("chave_pendente", None)
         else:
             ident["locais"].append({
-                "local_id": slug(nome) or f"local_{len(ident['locais'])}",
+                "local_id": id_unico(nome, p.get("formattedAddress"), pid,
+                                     ident, praca),
                 "papel": "proprio" if eh_nosso else "concorrente",
                 **({"tipo": "franquia"} if eh_nosso else {"tipo_concorrente": "PREENCHER"}),
                 **dados, "descoberto_em": hoje})
