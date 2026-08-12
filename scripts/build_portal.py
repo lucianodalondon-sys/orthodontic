@@ -1049,6 +1049,9 @@ def main():
     # mesmo leilão. Vai na página de cada uma, declarada como leitura de
     # cidade — é análise de mercado, e mercado é por cidade.
     _an_por = {x["praca_id"]: x for x in carrega(OUT, "anuncios").get("pracas", [])}
+    # A JORNADA É POR LOJA e responde "o problema é clínico ou é de balcão".
+    _jor_por = {x["local_id"]: x
+                for x in carrega(OUT, "jornada").get("lojas", [])}
     _pres_por = {x["local_id"]: x
                  for x in carrega(OUT, "presenca_por_loja").get("lojas", [])}
     _md_por = {}
@@ -1125,6 +1128,8 @@ def main():
                       "sem_comparacao_porque": rv.get("sem_comparacao_porque")},
             # a presença na busca É DESTA LOJA, não a média da cidade
             "presenca_na_busca": _pres_por.get(lid),
+            # em QUE MOMENTO da jornada esta loja dói — capítulo, não tela
+            "jornada": _jor_por.get(lid),
             "plano": (f"planos/{lid}" if (OUT/f"planos/{lid}.json").exists()
                       else None),
             "anuncios_da_cidade": (lambda a: a and {
