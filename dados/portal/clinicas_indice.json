@@ -5,12 +5,12 @@
   "fichas_medidas_em": "2026-08-10",
   "porque_duas_datas": "o cadastro vem do site da rede e é lido todo dia; nota e avaliações vêm de uma varredura do Google que custa cota e roda de vez em quando",
   "unidades_total": 373,
-  "com_estudo": 30,
-  "sem_escuta": 343,
+  "com_estudo": 32,
+  "sem_escuta": 341,
   "ufs_total": 23,
   "cidades_total": 303,
-  "manchete": "30 de 373 unidades com estudo — as outras 343 ainda não foram escutadas",
-  "com_estudo_sem_linha_oficial": 3,
+  "manchete": "32 de 373 unidades com estudo — as outras 341 ainda não foram escutadas",
+  "com_estudo_sem_linha_oficial": 5,
   "cidades_com_mais_de_uma_loja": 44,
   "ufs": [
     {
@@ -6073,9 +6073,17 @@
             }
           ],
           "unidades_total": 9,
-          "com_estudo": 6,
-          "estudos_sem_linha_oficial": [],
-          "porque_sem_linha": null,
+          "com_estudo": 7,
+          "estudos_sem_linha_oficial": [
+            {
+              "local_id": "ortho_poa_rio_branco",
+              "unidade": "OrthoDontic Rio Branco",
+              "arquivo": "clinicas/ortho_poa_rio_branco",
+              "faixa": "verde",
+              "tarefa": null
+            }
+          ],
+          "porque_sem_linha": "a lista oficial não confirmou a linha destas lojas, e como a cidade tem mais de uma não dá para dizer qual é qual",
           "mais_de_uma_loja": true,
           "frase": "9 unidades nesta cidade"
         },
@@ -6418,9 +6426,9 @@
       ],
       "cidades_total": 39,
       "unidades_total": 52,
-      "com_estudo": 6,
-      "sem_escuta": 46,
-      "frase": "52 unidades em 39 cidades · 6 com estudo"
+      "com_estudo": 7,
+      "sem_escuta": 45,
+      "frase": "52 unidades em 39 cidades · 7 com estudo"
     },
     {
       "uf": "SC",
@@ -9275,9 +9283,17 @@
             }
           ],
           "unidades_total": 3,
-          "com_estudo": 2,
-          "estudos_sem_linha_oficial": [],
-          "porque_sem_linha": null,
+          "com_estudo": 3,
+          "estudos_sem_linha_oficial": [
+            {
+              "local_id": "ortho_soro_vila_formosa",
+              "unidade": "OrthoDontic Vila Formosa",
+              "arquivo": "clinicas/ortho_soro_vila_formosa",
+              "faixa": "amarela",
+              "tarefa": null
+            }
+          ],
+          "porque_sem_linha": "a lista oficial não confirmou a linha destas lojas, e como a cidade tem mais de uma não dá para dizer qual é qual",
           "mais_de_uma_loja": true,
           "frase": "3 unidades nesta cidade"
         },
@@ -9828,9 +9844,9 @@
       ],
       "cidades_total": 65,
       "unidades_total": 78,
-      "com_estudo": 3,
-      "sem_escuta": 75,
-      "frase": "78 unidades em 65 cidades · 3 com estudo"
+      "com_estudo": 4,
+      "sem_escuta": 74,
+      "frase": "78 unidades em 65 cidades · 4 com estudo"
     },
     {
       "uf": "TO",
