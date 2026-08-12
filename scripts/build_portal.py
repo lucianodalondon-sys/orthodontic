@@ -88,6 +88,9 @@ def main():
     # disputam o mesmo leilão e leem a mesma guerra comercial. Carregado
     # aqui em cima porque a praça é montada antes da clínica.
     _of_por = {x["praca_id"]: x for x in carrega(OUT, "oferta").get("pracas", [])}
+    # imprensa e ritmo de publicação: leitura de CIDADE, com manchete pronta
+    _pub_por = {x["praca_id"]: x
+                for x in carrega(OUT, "o_que_a_cidade_publica").get("pracas", [])}
     ult_place = ultimo_por([r for r in places if r["snapshot_date"] <= corte],
                            lambda r: r["local_id"])
     # A ficha oficial guarda o endereço; a série de places, não. Sem isto a
@@ -326,6 +329,8 @@ def main():
                 for l in locais if l.get("papel") == "proprio"
                 and (RAIZ/"dados"/"planos"/f"{l['local_id']}.json").exists()],
             "oferta": _of_por.get(p),
+            "imprensa": (_pub_por.get(p) or {}).get("imprensa"),
+            "ritmo_de_publicacao": (_pub_por.get(p) or {}).get("ritmo"),
             "placar": placar, "funil": funil, "temas": temas_p,
             "sazonalidade": saz,
             # O PICO DA PRAÇA é buraco de coleta, e buraco calado é o pior
