@@ -409,3 +409,35 @@ hoje aparecem só no Painel de Controle:
 - **A ação em destaque**, uma só, no alto: o cartão de "o que fazer agora"
   com a barra de severidade na borda esquerda, como o cartão de sinal da
   referência.
+
+## 7 · A CONFERÊNCIA DA SEGUNDA VOLTA (o que passou e o que falta)
+
+O casco foi rodado num navegador com o payload real, doze rotas, e o
+resultado é bom: **zero 404 nos dados**, todas as telas com conteúdo, e
+tudo que a seção 6 pediu está no ar — o índice das 374 com a manchete do
+que falta, a triagem "as que pedem ação agora", a apresentação da clínica
+antes da nota, as lojas irmãs em pastilha, os planos por loja, Benchmarks
+e Brand Watch no menu. A frase que citava Mafra sumiu.
+
+Faltam três coisas, todas pequenas.
+
+**7.1 · A fonte dos números vem de fora.** `index.html` linha 9 carrega o
+IBM Plex Mono do `fonts.googleapis.com`. O Gotham vai empacotado em
+`assets/fonts/` — o mono, não. Como TODO número do portal é mono, uma rede
+com bloqueio de CDN (ou o portal aberto sem internet, que é o caso de uma
+apresentação em sala de reunião) derruba a identidade inteira dos números.
+Empacote o IBM Plex Mono junto, como o Gotham.
+
+**7.2 · Rota desconhecida abre tela vazia.** `#qualquercoisa` renderiza só
+a moldura. Mande o que não casar para o Painel de Controle.
+
+**7.3 · Os 16 arquivos velhos continuam no projeto.** `planos/<cidade>.json`
+(14), `pracas/riomafra.json` e `captacao/riomafra.json`. O casco já não os
+pede — mas quem publicar o projeto sem trocar a pasta `dados/portal` pelo
+payload novo vai servir plano de cidade para franqueado. Apague.
+
+**Uma coisa que está certa e não deve ser "consertada":** o contador de
+resultado da busca usa `lista.length`. É a única contagem legítima no
+casco, porque depende do que a pessoa digitou e o build não tem como
+saber. A regra de que todo total sai pronto do build continua valendo
+para tudo o mais.

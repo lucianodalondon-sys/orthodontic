@@ -155,6 +155,11 @@ padrões → caixa → padrao → build. Períodos curtos são declarados na tel
   contado do build, ao lado da lista (`estudos`, `itens_total`, `fora_total`,
   `alertas_total`, `candidatas_total`, `lojas_com_fila`). Lista cortada usa
   "ver todas as N" com o total pronto — nunca `total − 8`.
+- **A única contagem legítima no casco é a da BUSCA.** `.length` na tela é
+  conta na tela e continua proibido — com uma exceção: o "mostrando as 30
+  primeiras de N que casam" depende do que a pessoa digitou, e o build não
+  tem como precomputar. Está declarado aqui para ninguém "consertar" isso
+  nem usar como brecha para o resto.
 - **Número e nome concordam, sempre.** `cruzamento.conta(n, singular, plural)`
   é o único jeito de juntar os dois. A muleta `(s)` está proibida: o portal
   já escreveu "1 unidades em faixa vermelha" na primeira tela e "ganhou 1
