@@ -89,6 +89,11 @@ def main():
     # aqui em cima porque a praça é montada antes da clínica.
     _of_por = {x["praca_id"]: x for x in carrega(OUT, "oferta").get("pracas", [])}
     # imprensa e ritmo de publicação: leitura de CIDADE, com manchete pronta
+    # o ciclo de cada problema, por LOJA — vai na linha do tempo da unidade
+    _ac = carrega(OUT, "acoes")
+    _ac_por = defaultdict(list)
+    for _x in _ac.get("arcos", []):
+        _ac_por[_x["local_id"]].append(_x)
     _pub_por = {x["praca_id"]: x
                 for x in carrega(OUT, "o_que_a_cidade_publica").get("pracas", [])}
     ult_place = ultimo_por([r for r in places if r["snapshot_date"] <= corte],
@@ -1140,6 +1145,9 @@ def main():
             "presenca_na_busca": _pres_por.get(lid),
             # em QUE MOMENTO da jornada esta loja dói — capítulo, não tela
             "jornada": _jor_por.get(lid),
+            "acoes": {"arcos": _ac_por.get(lid, []),
+                      "total": len(_ac_por.get(lid, [])),
+                      "aviso": _ac.get("aviso_de_juventude")},
             "oferta_da_cidade": (dict(_of_por[l["praca_id"]], e_da_cidade=True)
                                  if l.get("praca_id") in _of_por else None),
             "plano": (f"planos/{lid}" if (OUT/f"planos/{lid}.json").exists()

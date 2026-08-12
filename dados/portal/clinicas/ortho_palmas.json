@@ -425,6 +425,29 @@
     "quem_resolve": null,
     "e_clinico": null
   },
+  "acoes": {
+    "arcos": [
+      {
+        "arco_id": "ortho_palmas|silencio",
+        "local_id": "ortho_palmas",
+        "praca_id": "palmas",
+        "gatilho": "silencio",
+        "problema": "22 anúncios no ar de 16 anunciantes, e nenhum é da rede",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-10",
+        "metrica": null,
+        "antes": null,
+        "acao_recomendada": "sem ação padrão para este gatilho",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": "2026-08-12",
+        "veredito": "cedo_demais",
+        "dias": 2
+      }
+    ],
+    "total": 1,
+    "aviso": "O livro nasceu hoje. Nenhum arco completou 21 dias, então ainda não há veredito para ninguém — a primeira resposta vem na coleta seguinte."
+  },
   "oferta_da_cidade": {
     "praca_id": "palmas",
     "rotulo": "TO · Palmas",

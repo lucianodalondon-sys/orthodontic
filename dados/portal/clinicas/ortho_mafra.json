@@ -385,6 +385,46 @@
     "quem_resolve": null,
     "e_clinico": null
   },
+  "acoes": {
+    "arcos": [
+      {
+        "arco_id": "ortho_mafra|parada",
+        "local_id": "ortho_mafra",
+        "praca_id": "mafra",
+        "gatilho": "parada",
+        "problema": "apenas 0 mês(es) seguidos com movimento acima do típico da própria unidade; o ritmo medido é 2.4 avaliações/mês",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-10",
+        "metrica": "ritmo",
+        "antes": 2.4,
+        "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": 2.4,
+        "medido_em": "2026-08-12",
+        "veredito": "cedo_demais",
+        "dias": 2
+      },
+      {
+        "arco_id": "ortho_mafra|posicao",
+        "local_id": "ortho_mafra",
+        "praca_id": "mafra",
+        "gatilho": "posicao",
+        "problema": "9º lugar de 15 clínicas medidas na praça",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-10",
+        "metrica": "posicao",
+        "antes": 7.0,
+        "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": 7.0,
+        "medido_em": "2026-08-12",
+        "veredito": "cedo_demais",
+        "dias": 2
+      }
+    ],
+    "total": 2,
+    "aviso": "O livro nasceu hoje. Nenhum arco completou 21 dias, então ainda não há veredito para ninguém — a primeira resposta vem na coleta seguinte."
+  },
   "oferta_da_cidade": {
     "praca_id": "mafra",
     "rotulo": "SC · Mafra",

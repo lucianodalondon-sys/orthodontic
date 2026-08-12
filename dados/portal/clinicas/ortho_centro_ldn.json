@@ -569,6 +569,63 @@
     "quem_resolve": "recepção",
     "e_clinico": false
   },
+  "acoes": {
+    "arcos": [
+      {
+        "arco_id": "ortho_centro_ldn|nota",
+        "local_id": "ortho_centro_ldn",
+        "praca_id": "londrina",
+        "gatilho": "nota",
+        "problema": "nota 3.8 contra mediana 5.0 das 24 clínicas medidas na praça",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-10",
+        "metrica": "nota",
+        "antes": 3.8,
+        "acao_recomendada": "responder as avaliações abertas e tratar o motivo",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": 3.8,
+        "medido_em": "2026-08-12",
+        "veredito": "cedo_demais",
+        "dias": 2
+      },
+      {
+        "arco_id": "ortho_centro_ldn|parada",
+        "local_id": "ortho_centro_ldn",
+        "praca_id": "londrina",
+        "gatilho": "parada",
+        "problema": "apenas 2 mês(es) seguidos com movimento acima do típico da própria unidade; o ritmo medido é 0.8 avaliações/mês",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-10",
+        "metrica": "ritmo",
+        "antes": 0.8,
+        "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": 0.8,
+        "medido_em": "2026-08-12",
+        "veredito": "cedo_demais",
+        "dias": 2
+      },
+      {
+        "arco_id": "ortho_centro_ldn|posicao",
+        "local_id": "ortho_centro_ldn",
+        "praca_id": "londrina",
+        "gatilho": "posicao",
+        "problema": "23º lugar de 24 clínicas medidas na praça",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-10",
+        "metrica": "posicao",
+        "antes": 23.0,
+        "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": 23.0,
+        "medido_em": "2026-08-12",
+        "veredito": "cedo_demais",
+        "dias": 2
+      }
+    ],
+    "total": 3,
+    "aviso": "O livro nasceu hoje. Nenhum arco completou 21 dias, então ainda não há veredito para ninguém — a primeira resposta vem na coleta seguinte."
+  },
   "oferta_da_cidade": {
     "praca_id": "londrina",
     "rotulo": "PR · Londrina",
