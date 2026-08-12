@@ -103,9 +103,15 @@
     "aviso": "a praça é medida há 4 dias (3 medições) — a leitura ainda diz pouco e engorda a cada coleta"
   },
   "sem_resposta": {
-    "abertas": 39,
+    "abertas": 40,
     "com_texto": 30,
     "itens": [
+      {
+        "nota": 1,
+        "data": "2026-08-11",
+        "texto": null,
+        "tem_texto": false
+      },
       {
         "nota": 1,
         "data": "2026-08-09",
@@ -341,7 +347,7 @@
         "tem_texto": false
       }
     ],
-    "itens_total": 39
+    "itens_total": 40
   },
   "voz_do_paciente": [
     {
@@ -1153,6 +1159,13 @@
       "nome": "Dra. Samila Resende - Invisalign Doctor",
       "texto": "Dra. Samila Resende - Invisalign Doctor: ganhou 1 avaliação (515 → 516)",
       "fonte": "dados/serie/places.jsonl"
+    },
+    {
+      "data": "2026-08-11",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 1★ · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
     },
     {
       "data": "2026-08-10",

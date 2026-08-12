@@ -108,9 +108,15 @@
     "aviso": null
   },
   "sem_resposta": {
-    "abertas": 34,
-    "com_texto": 22,
+    "abertas": 35,
+    "com_texto": 23,
     "itens": [
+      {
+        "nota": 1,
+        "data": "2026-08-10",
+        "texto": "Os dentistão são otimos mas o atendimento inicial é um lixo",
+        "tem_texto": true
+      },
       {
         "nota": 3,
         "data": "2026-07-29",
@@ -316,7 +322,7 @@
         "tem_texto": true
       }
     ],
-    "itens_total": 34
+    "itens_total": 35
   },
   "voz_do_paciente": [
     {
@@ -550,8 +556,8 @@
     "local_id": "ortho_souza_naves",
     "unidade": "OrthoDontic Souza Naves",
     "rotulo": "PR · Londrina",
-    "com_texto": 379,
-    "sem_estagio": 241,
+    "com_texto": 381,
+    "sem_estagio": 243,
     "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
     "estagios": [
       {
@@ -847,14 +853,14 @@
       "natureza": "fato",
       "confianca": "alta",
       "medido": true,
-      "amostra": 379,
+      "amostra": 381,
       "janela_dias": 28,
       "medicoes": 4,
       "fonte": "dados/serie/reviews.jsonl",
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": "mais avaliações com texto nesta loja",
-      "procedencia": "medido em 379 avaliações, 4 medições, 28 dias de janela"
+      "procedencia": "medido em 381 avaliações, 4 medições, 28 dias de janela"
     }
   },
   "acoes": {
@@ -1236,6 +1242,13 @@
       "quem": "nossa",
       "texto": "ganhou 2 avaliações (564 → 566)",
       "fonte": "dados/serie/places.jsonl"
+    },
+    {
+      "data": "2026-08-10",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 1★: “Os dentistão são otimos mas o atendimento inicial é um lixo” · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
     },
     {
       "data": "2026-08-10",
