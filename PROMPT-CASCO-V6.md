@@ -473,3 +473,94 @@ O `escopo` continua na tela, mas **como nota de pé do bloco**, discreta —
 não como a manchete densa que abria o portal hoje. A honestidade sobre o
 que ainda não medimos permanece; ela só deixa de ser a primeira coisa que
 a diretoria lê.
+
+## 8 · O ACABAMENTO (a identidade fica; o craft muda)
+
+O cliente gosta da distribuição, da estrutura e da paleta. **Não redesenhe
+nada disso.** O que falta é acabamento, e ele é medível — os números
+abaixo saíram do `portal.css` entregue.
+
+### 8.1 · A escala de tipo é um borrão
+
+Hoje existem **14 tamanhos entre 9px e 15,5px**, de meio em meio pixel:
+9 · 9,5 · 10 · 10,5 · 11 · 11,5 · 12 · 12,5 · 13 · 13,5 · 14 · 14,5 · 15 ·
+15,5. Isso não é escala — é um contínuo. Nada parece mais importante que
+nada, porque nada é visivelmente maior que nada. É a causa número um da
+sensação de tela datada.
+
+Troque por **seis degraus, sem meio pixel**, e use só esses:
+
+| papel | tamanho | peso | entrelinha | espaçamento |
+|---|---|---|---|---|
+| rótulo de sistema (mono) | 11px | 500 | 1.2 | +0.08em |
+| apoio / pé de linha | 13px | 400 | 1.5 | 0 |
+| corpo | 15px | 400 | 1.6 | 0 |
+| título de painel | 20px | 700 | 1.3 | −0.01em |
+| número da tira (mono) | 34px | 500 | 1 | −0.02em |
+| manchete | 44px | 900 | 1.05 | −0.03em |
+
+A regra: **se dois textos têm papéis diferentes, a diferença de tamanho
+entre eles é de pelo menos um degrau inteiro.** Nunca 13 ao lado de 13,5.
+
+### 8.2 · Caixa demais, elevação de menos
+
+O CSS tem **21 bordas `1px solid var(--hair)`** e **3 sombras**. Tudo é
+retângulo contornado, e é isso que dá o ar de painel administrativo antigo.
+
+- Tire a borda da maioria dos painéis. Separe por **espaço** e por **um
+  degrau de fundo** (o plano `#001433`; o painel `#001A5C`; o cartão que
+  pede ação um pouco mais claro ou com o fio ciano aceso).
+- Guarde a borda para o que precisa de contorno semântico: cartão crítico,
+  item selecionado, foco.
+- Onde hoje há fio, use uma sombra baixa e larga
+  (`0 1px 2px rgba(0,0,0,.30), 0 8px 24px rgba(0,0,0,.18)`). Sombra em
+  fundo escuro tem de ser sutil; se aparecer, está forte demais.
+
+### 8.3 · Três raios, não seis
+
+Hoje há 3, 6, 7, 8, 10 e 999px. Fique com **três**: `6px` (pastilha,
+selo, campo), `14px` (painel e cartão — o valor da referência aprovada) e
+`999px` (só pílula e chip). Um raio por papel.
+
+### 8.4 · Movimento: hoje é zero
+
+Nenhum `@keyframes`, oito transições. Movimento é o que mais separa uma
+tela de 2019 de uma de hoje — e tem de ser quase invisível.
+
+- **Entrada de conteúdo:** ao trocar de tela, os blocos entram com
+  `opacity 0→1` e `translateY(8px→0)`, `220ms`,
+  `cubic-bezier(.2,.7,.3,1)`, escalonados de **40ms** entre blocos, no
+  máximo os seis primeiros. Nada de bounce, nada de escala.
+- **Hover:** só em coisa clicável, `140ms ease-out` — o fundo sobe um
+  degrau e a borda acende; nunca mova o elemento.
+- **Press:** `transform: scale(.985)` por `90ms`. É o detalhe que faz a
+  interface parecer responsiva ao toque.
+- **Números que mudam entre coletas** podem contar de → para em `600ms`,
+  uma vez só, quando o bloco entra na tela. Só os da tira.
+- `@media (prefers-reduced-motion: reduce)` zera tudo isso. Obrigatório.
+
+### 8.5 · Foco e teclado
+
+Só há dois `focus-visible` no arquivo inteiro. Todo elemento clicável
+precisa de anel visível: `outline: 2px solid var(--cyan); outline-offset:
+2px`. O portal tem busca com `⌘K` — quem usa atalho navega por teclado.
+
+### 8.6 · Respiro e ritmo
+
+As telas empilham painéis de largura total, todos com o mesmo espaço entre
+si. Dá monotonia.
+
+- Espaço entre painéis: **40px**; dentro do painel: **20px**; entre rótulo
+  e valor: **6px**. Três medidas, não dez.
+- Largura máxima do texto corrido: **70 caracteres**. Hoje a frase de
+  apresentação atravessa a tela inteira.
+- Cabeçalho de seção **grudado no topo** (`position: sticky`) quando a
+  lista for longa — vale para a triagem das 374.
+
+### 8.7 · O que NÃO mudar
+
+Paleta, logo, Gotham no texto, mono em todo número e rótulo de sistema, a
+estrutura de menu lateral, a ordem das telas e a linguagem de balcão. O
+pedido do cliente foi explícito: **gosta de como está distribuído e do
+estilo — quer só mais moderno.** Modernidade aqui é acabamento, não
+identidade nova.
