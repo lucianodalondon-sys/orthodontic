@@ -1,38 +1,291 @@
 {
- "praca_id": "porto_alegre",
- "nome": "Porto Alegre",
- "cidades": [
-  "Porto Alegre/RS"
- ],
- "uf": [
-  "RS"
- ],
- "rotulo": "RS · Porto Alegre",
- "cidades_rotulo": [
-  "RS · Porto Alegre"
- ],
- "criada_em": "2026-08-12",
- "por_que_esta_praca": "cidade onde a rede já tem unidade e que ainda não tinha estudo — escolhida por concentração de unidades, para subir a cobertura da rede medida",
- "locais": [],
- "ibge": [
-  {
-   "municipio": "Porto Alegre",
-   "uf": "RS",
-   "ibge_id": 4314902,
-   "populacao_estimada": {
-    "ano": "2025",
-    "valor": "1388794",
-    "unidade": "Pessoas"
-   },
-   "massa_salarial_mil_reais": {
-    "ano": "2023",
-    "valor": "104743272",
-    "unidade": "Mil Reais"
-   },
-   "alvo_9_15": 103302,
-   "alvo_30_45": 304982,
-   "fonte": "ibge agregados 6579/5938/9514",
-   "de": "dados/serie/ibge_municipios.jsonl"
-  }
- ]
+  "praca_id": "porto_alegre",
+  "nome": "Porto Alegre",
+  "cidades": [
+    "Porto Alegre/RS"
+  ],
+  "uf": [
+    "RS"
+  ],
+  "rotulo": "RS · Porto Alegre",
+  "cidades_rotulo": [
+    "RS · Porto Alegre"
+  ],
+  "criada_em": "2026-08-12",
+  "por_que_esta_praca": "cidade onde a rede já tem unidade e que ainda não tinha estudo — escolhida por concentração de unidades, para subir a cobertura da rede medida",
+  "locais": [
+    {
+      "local_id": "orthodontic",
+      "papel": "proprio",
+      "tipo": "franquia",
+      "place_id": "ChIJDcSuZt95GZURz2DRgPWray8",
+      "nome": "OrthoDontic",
+      "avaliacoes_google": 433,
+      "nota_google": 4.8,
+      "endereco": "Av. Borges de Medeiros, 308 - Sl 11 - Centro Histórico, Porto Alegre - RS, 90020-020, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "orthodontic",
+      "papel": "proprio",
+      "tipo": "franquia",
+      "place_id": "ChIJM9DnHfV3GZURGTIFJ5B6utc",
+      "nome": "OrthoDontic",
+      "avaliacoes_google": 245,
+      "nota_google": 4.7,
+      "endereco": "Av. Assis Brasil, 2553 - Cristo Redentor, Porto Alegre - RS, 91010-006, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "orthodontic",
+      "papel": "proprio",
+      "tipo": "franquia",
+      "place_id": "ChIJbcaugyh5GZURUmBYxurQzLQ",
+      "nome": "OrthoDontic",
+      "avaliacoes_google": 209,
+      "nota_google": 4.9,
+      "endereco": "R. Vig. José Inácio, 399 - Sl 506 - Centro Histórico, Porto Alegre - RS, 90020-110, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "orthodontic_clinica_odonto",
+      "papel": "proprio",
+      "tipo": "franquia",
+      "place_id": "ChIJFdeQ6v6DGZUR_mFPapNfBQg",
+      "nome": "OrthoDontic Clínica Odontológica em Porto Alegre RS",
+      "avaliacoes_google": 207,
+      "nota_google": 4.6,
+      "endereco": "Av. Otto Niemeyer, 2700 - Sl 201 - Cavalhada, Porto Alegre - RS, 91910-200, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "orthodontic",
+      "papel": "proprio",
+      "tipo": "franquia",
+      "place_id": "ChIJdbnhuw95GZUR3qs7peW8f7g",
+      "nome": "OrthoDontic",
+      "avaliacoes_google": 176,
+      "nota_google": 4.4,
+      "endereco": "R. dos Andradas, 1155 - Conj 201 - Centro Histórico, Porto Alegre - RS, 90020-015, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "orthodontic_clinica_odonto",
+      "papel": "proprio",
+      "tipo": "franquia",
+      "place_id": "ChIJgbU8qgh5GZURnZ2GKGy899A",
+      "nome": "OrthoDontic - Clínica Odontológica Centro Porto Alegre - Tratamento de Canal - Periodontia - Restauração Dental - Prótese - Clareamento e Limpeza Dental - Aparelho Ortodôntico Metálico e Estético - Emergência - Extração do Siso - Faceta de Porcelana",
+      "avaliacoes_google": 162,
+      "nota_google": 4.6,
+      "endereco": "R. Gen. Vitorino, 77 - Sl 703 - Centro Histórico, Porto Alegre - RS, 90020-171, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "orthodontic",
+      "papel": "proprio",
+      "tipo": "franquia",
+      "place_id": "ChIJwaMZNjp5GZURHrDRR0IOFg8",
+      "nome": "OrthoDontic",
+      "avaliacoes_google": 32,
+      "nota_google": 4.5,
+      "endereco": "R. Miguel Tostes, 998 - 4° Andar - Rio Branco, Porto Alegre - RS, 90430-061, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "sorridents_porto_alegre_cl",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJVy7Ohj15GZURMN_ceTGQSUk",
+      "nome": "Sorridents Porto Alegre Clinica Odontológica / Dentista",
+      "avaliacoes_google": 1104,
+      "nota_google": 4.9,
+      "endereco": "R. dos Andradas, 1745 - Centro Histórico, Porto Alegre - RS, 90020-013, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "odonto_clin",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJEzKzV5qDGZURMA970IoQ1RA",
+      "nome": "Odonto Clin",
+      "avaliacoes_google": 893,
+      "nota_google": 5,
+      "endereco": "Av. Otto Niemeyer, 2344 - Cavalhada, Porto Alegre - RS, 91910-180, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "integrare_odontologia",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJTQmC7iSCGZUReW8KRAFa_KI",
+      "nome": "Integrare Odontologia",
+      "avaliacoes_google": 769,
+      "nota_google": 5,
+      "endereco": "Av. Wenceslau Escobar, 3033 - Lj 208 - Tristeza, Porto Alegre - RS, 91900-000, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "dentista_legal",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJ-aX7uGF4GZURau2QjEB1amM",
+      "nome": "Dentista Legal",
+      "avaliacoes_google": 736,
+      "nota_google": 5,
+      "endereco": "Av. Getúlio Vargas, 1644 - Sl 904 - Menino Deus, Porto Alegre - RS, 90150-004, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "clinica_bela_vista_odontol",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJ42S47Ah5GZURWsqeiZuUg2w",
+      "nome": "Clínica Bela Vista Odontologia",
+      "avaliacoes_google": 702,
+      "nota_google": 5,
+      "endereco": "Av. Otávio Rocha, 179 - Sl 31 - Centro Histórico, Porto Alegre - RS, 90020-151, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "clinica_koelsch",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJ0w4pDa55GZUR1YTu8BxCBb4",
+      "nome": "Clinica Koelsch",
+      "avaliacoes_google": 419,
+      "nota_google": 4.6,
+      "endereco": "Condom Edifício Bahamas - Rua General João Telles, 53 - Sala 402 - B Fim, Porto Alegre - RS, 90035-121, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "integrar_odontologia",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJpUEyOwh5GZURmQubWZfJKiU",
+      "nome": "Integrar Odontologia",
+      "avaliacoes_google": 364,
+      "nota_google": 4.9,
+      "endereco": "Av. João Wallig, 119 - Passo d'Areia, Porto Alegre - RS, 91340-000, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "da_vinci_odontologia",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJ2SwDboh3GZURv6KKHriz0l0",
+      "nome": "Da Vinci Odontologia",
+      "avaliacoes_google": 356,
+      "nota_google": 4.9,
+      "endereco": "Av. Carlos Gomes, 1492/1303 - Três Figueiras, Porto Alegre - RS, 90470-282, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "sorrir_bem_clinica_odontol",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJtaQ7OwZ5GZURDO1WicmIZxY",
+      "nome": "Sorrir Bem Clínica Odontológica",
+      "avaliacoes_google": 350,
+      "nota_google": 4.8,
+      "endereco": "R. Dr. Flores, 383/601 - Centro Histórico, Porto Alegre - RS, 90020-123, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "dentista_porto_alegre_clin",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJvfT1ywd5GZURWIDdnpwhUIM",
+      "nome": "Dentista Porto Alegre | Clínica Dental Center",
+      "avaliacoes_google": 347,
+      "nota_google": 4.9,
+      "endereco": "R. Gen. Vitorino, 305 - 7 andar - Centro Histórico, Porto Alegre - RS, 90020-171, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "odontologia_dr_rm",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJn5JJWs55GZUR1LpwGHrYtjE",
+      "nome": "Odontologia Dr. RM",
+      "avaliacoes_google": 337,
+      "nota_google": 4.2,
+      "endereco": "R. 24 de Outubro, 1651 - Auxiliadora, Porto Alegre - RS, 90510-003, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "clinica_odontologica_denti",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJ_4XO6wh5GZUR98zKvFSg3Tc",
+      "nome": "Clinica Odontológica | Dentista | Próteses | Implantes | Clareamento | Clinodente Porto Alegre",
+      "avaliacoes_google": 336,
+      "nota_google": 4,
+      "endereco": "R. Uruguai, 300 - Centro Histórico, Porto Alegre - RS, 90010-140, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "pronto_socorro_dentario_cl",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJM--HmU14GZURmB1tz4cQrLs",
+      "nome": "Pronto Socorro Dentário - Clínica Odontológica 24 Horas",
+      "avaliacoes_google": 323,
+      "nota_google": 4.5,
+      "endereco": "Av. Venâncio Aires, 1111 - Farroupilha, Porto Alegre - RS, 90040-193, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "lar_odontologia_reabilitac",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJ8_uYTKppGZUR43gnfMwk_PE",
+      "nome": "LAR Odontologia - Reabilitação Oral e Implantes Dentários. Ortodontia convencional e Alinhadores Transparentes.",
+      "avaliacoes_google": 294,
+      "nota_google": 4.9,
+      "endereco": "Av. Cristóvão Colombo, 1081 - sala 403 - Moinhos de Vento, Porto Alegre - RS, 90560-004, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    }
+  ],
+  "ibge": [
+    {
+      "municipio": "Porto Alegre",
+      "uf": "RS",
+      "ibge_id": 4314902,
+      "populacao_estimada": {
+        "ano": "2025",
+        "valor": "1388794",
+        "unidade": "Pessoas"
+      },
+      "massa_salarial_mil_reais": {
+        "ano": "2023",
+        "valor": "104743272",
+        "unidade": "Mil Reais"
+      },
+      "alvo_9_15": 103302,
+      "alvo_30_45": 304982,
+      "fonte": "ibge agregados 6579/5938/9514",
+      "de": "dados/serie/ibge_municipios.jsonl"
+    }
+  ]
 }

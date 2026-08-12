@@ -1,38 +1,267 @@
 {
- "praca_id": "curitiba",
- "nome": "Curitiba",
- "cidades": [
-  "Curitiba/PR"
- ],
- "uf": [
-  "PR"
- ],
- "rotulo": "PR · Curitiba",
- "cidades_rotulo": [
-  "PR · Curitiba"
- ],
- "criada_em": "2026-08-12",
- "por_que_esta_praca": "cidade onde a rede já tem unidade e que ainda não tinha estudo — escolhida por concentração de unidades, para subir a cobertura da rede medida",
- "locais": [],
- "ibge": [
-  {
-   "municipio": "Curitiba",
-   "uf": "PR",
-   "ibge_id": 4106902,
-   "populacao_estimada": {
-    "ano": "2025",
-    "valor": "1830795",
-    "unidade": "Pessoas"
-   },
-   "massa_salarial_mil_reais": {
-    "ano": "2023",
-    "valor": "120065276",
-    "unidade": "Mil Reais"
-   },
-   "alvo_9_15": 143327,
-   "alvo_30_45": 427841,
-   "fonte": "ibge agregados 6579/5938/9514",
-   "de": "dados/serie/ibge_municipios.jsonl"
-  }
- ]
+  "praca_id": "curitiba",
+  "nome": "Curitiba",
+  "cidades": [
+    "Curitiba/PR"
+  ],
+  "uf": [
+    "PR"
+  ],
+  "rotulo": "PR · Curitiba",
+  "cidades_rotulo": [
+    "PR · Curitiba"
+  ],
+  "criada_em": "2026-08-12",
+  "por_que_esta_praca": "cidade onde a rede já tem unidade e que ainda não tinha estudo — escolhida por concentração de unidades, para subir a cobertura da rede medida",
+  "locais": [
+    {
+      "local_id": "orthodontic",
+      "papel": "proprio",
+      "tipo": "franquia",
+      "place_id": "ChIJodcurGzk3JQRCMdyyRTteYs",
+      "nome": "OrthoDontic",
+      "avaliacoes_google": 1012,
+      "nota_google": 4.6,
+      "endereco": "R. XV de Novembro, 467 - 3º Andar - Centro, Curitiba - PR, 80020-310, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "orthodontic",
+      "papel": "proprio",
+      "tipo": "franquia",
+      "place_id": "ChIJfZQ1mMfl3JQR9EAkRV-aaqI",
+      "nome": "OrthoDontic",
+      "avaliacoes_google": 718,
+      "nota_google": 4.7,
+      "endereco": "Av. Mal. Floriano Peixoto, 366 - Lj 1 Sobreloja - Centro, Curitiba - PR, 80010-130, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "orthodontic",
+      "papel": "proprio",
+      "tipo": "franquia",
+      "place_id": "ChIJ0aFSpbLl3JQRqIq4BbXmFd8",
+      "nome": "OrthoDontic",
+      "avaliacoes_google": 491,
+      "nota_google": 4.9,
+      "endereco": "Galeria Tijucas - Av. Luiz Xavier, 68 - Sl 224 - Centro, Curitiba - PR, 80020-020, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "orthodontic",
+      "papel": "proprio",
+      "tipo": "franquia",
+      "place_id": "ChIJhapRWv_j3JQRLhtDAuDd5xM",
+      "nome": "OrthoDontic",
+      "avaliacoes_google": 270,
+      "nota_google": 4.8,
+      "endereco": "R. Maranhão, 2286 - Portão, Curitiba - PR, 80610-001, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "orthodontic",
+      "papel": "proprio",
+      "tipo": "franquia",
+      "place_id": "ChIJycB87Njl3JQRkLO7DqzsDq8",
+      "nome": "OrthoDontic",
+      "avaliacoes_google": 126,
+      "nota_google": 4.7,
+      "endereco": "Edifício Odin do Amaral - R. Mal. Deodoro, 220 - Conj 701, Andar 7 - Centro, Curitiba - PR, 80010-010, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "centro_odontologico_pio_xi",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJzZlNT2Xk3JQROKZuNQY2Fac",
+      "nome": "Centro Odontológico Pio XII - Dentista 24h",
+      "avaliacoes_google": 1843,
+      "nota_google": 4.6,
+      "endereco": "Av. Silva Jardim, 1347 - Rebouças, Curitiba - PR, 80250-200, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "julio_cavichiolo_ortodonti",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJRU3K-FDj3JQRGd9wgiWE3ns",
+      "nome": "Julio Cavichiolo | Ortodontia | Estética | Implante Dentário | Dentista em Novo Mundo | Curitiba PR",
+      "avaliacoes_google": 1196,
+      "nota_google": 4.8,
+      "endereco": "Travessa Augusto Marach, 227 - Novo Mundo, Curitiba - PR, 81020-220, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "dental_curitibana",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJ14ovMG3k3JQR5BT6jeAWCGE",
+      "nome": "Dental Curitibana",
+      "avaliacoes_google": 1097,
+      "nota_google": 4.9,
+      "endereco": "Galeria Ritz - R. XV de Novembro, 172 - Lojas f,i,j,k - Centro, Curitiba - PR, 80020-310, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "clinica_castell",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJp6esVH_k3JQRe0M11gDO54M",
+      "nome": "Clínica Castell",
+      "avaliacoes_google": 1070,
+      "nota_google": 5,
+      "endereco": "Av. Pres. Getúlio Vargas, 2561 - Água Verde, Curitiba - PR, 80240-040, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "clinica_you_odonto",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJmymYG3Pk3JQRUoBS8_P4qx0",
+      "nome": "Clínica You Odonto",
+      "avaliacoes_google": 1012,
+      "nota_google": 5,
+      "endereco": "R. Brig. Franco, 3323 - Rebouças, Curitiba - PR, 80220-100, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "iorc_instituto_de_ortodont",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJW66UK6_73JQRRoi5JMM67vg",
+      "nome": "IORC Instituto de Ortodontia de Curitiba",
+      "avaliacoes_google": 743,
+      "nota_google": 4.5,
+      "endereco": "R. Francisco Derosso, 4567 - Boqueirão, Curitiba - PR, 81770-000, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "dra_vladja_torno_facetas_e",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJHc8bA-jv3JQR38D6NMsdEq8",
+      "nome": "Dra. Vladja Torno | Facetas em Resina Composta em Curitiba",
+      "avaliacoes_google": 661,
+      "nota_google": 4.9,
+      "endereco": "R. Mauá, 219 - Alto da Glória, Curitiba - PR, 80030-200, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "clinica_physalis",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJUdccLfTj3JQRBSq8S0NdtBs",
+      "nome": "Clínica Physalis",
+      "avaliacoes_google": 656,
+      "nota_google": 4.7,
+      "endereco": "Alameda Princesa Izabel, 964 - Bigorrilho, Curitiba - PR, 80730-080, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "clinica_premium_curitiba",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJq4hIiCbk3JQRT17lYKFG7yg",
+      "nome": "Clínica Premium Curitiba",
+      "avaliacoes_google": 652,
+      "nota_google": 4.9,
+      "endereco": "R. Bom Jesus, 82 - Juvevê, Curitiba - PR, 80035-010, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "instituto_mass_odontologia",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJy-Ma8ZLj3JQR4RNANiyzOm0",
+      "nome": "Instituto Mass Odontologia",
+      "avaliacoes_google": 629,
+      "nota_google": 5,
+      "endereco": "Av. Vicente Machado, 2079 - Batel, Curitiba - PR, 80440-020, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "dental_uni_clinica_de_urge",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJByuUqS_j3JQRwXZxv-3kiNg",
+      "nome": "Dental Uni - Clínica de Urgência Odontológica",
+      "avaliacoes_google": 581,
+      "nota_google": 4.5,
+      "endereco": "R. Silveira Peixoto, 1040 - Sobreloja - Loja 4 - Batel, Curitiba - PR, 80240-120, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "redeorto_curitiba_centro",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJH5WWsc_l3JQRYLsdAuIeUmU",
+      "nome": "REDEORTO Curitiba - Centro",
+      "avaliacoes_google": 515,
+      "nota_google": 4.9,
+      "endereco": "R. XV de Novembro, 177 - Centro, Curitiba - PR, 80020-310, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "clinica_vita_sorriso_impla",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJ_yYjYWzk3JQRYWSFYRbZ4G8",
+      "nome": "Clínica Vita Sorriso Implantes - Especialista em Prótese Protocolo",
+      "avaliacoes_google": 514,
+      "nota_google": 4.6,
+      "endereco": "R. José Loureiro, 268 - Centro, Curitiba - PR, 80010-000, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    },
+    {
+      "local_id": "clifame",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJy4fDGBXk3JQRevT6VwxgrtA",
+      "nome": "Clifame",
+      "avaliacoes_google": 490,
+      "nota_google": 4.7,
+      "endereco": "R. Conselheiro Laurindo, 73 - Centro, Curitiba - PR, 80060-100, Brasil",
+      "place_id_origem": "varredura google places 2026-08-12",
+      "descoberto_em": "2026-08-12"
+    }
+  ],
+  "ibge": [
+    {
+      "municipio": "Curitiba",
+      "uf": "PR",
+      "ibge_id": 4106902,
+      "populacao_estimada": {
+        "ano": "2025",
+        "valor": "1830795",
+        "unidade": "Pessoas"
+      },
+      "massa_salarial_mil_reais": {
+        "ano": "2023",
+        "valor": "120065276",
+        "unidade": "Mil Reais"
+      },
+      "alvo_9_15": 143327,
+      "alvo_30_45": 427841,
+      "fonte": "ibge agregados 6579/5938/9514",
+      "de": "dados/serie/ibge_municipios.jsonl"
+    }
+  ]
 }
