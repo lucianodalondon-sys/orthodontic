@@ -6,7 +6,7 @@
     "cidade": "PR · Londrina",
     "endereco": "Edifício Baldan - R. Sergipe, 829 - 1º Andar - Centro, Londrina - PR, 86010-380",
     "desde": "7/ago",
-    "medicoes": 2,
+    "medicoes": 3,
     "posicao_na_cidade": null,
     "clinicas_na_cidade": null,
     "lojas_irmas": [
@@ -15,13 +15,13 @@
         "unidade": "OrthoDontic Souza Naves"
       }
     ],
-    "frase": "OrthoDontic Centro é escutada desde 7/ago, em 2 medições, e divide Londrina com mais 1 loja da rede."
+    "frase": "OrthoDontic Centro é escutada desde 7/ago, em 3 medições, e divide Londrina com mais 1 loja da rede."
   },
   "rotulo": "PR · Londrina",
   "unidade": "OrthoDontic Centro",
   "cabecalho": {
     "nota": 3.8,
-    "avaliacoes": 76,
+    "avaliacoes": 77,
     "ritmo": 0.8,
     "meses_seguidos": 2,
     "posicao": 23,
@@ -32,7 +32,7 @@
   "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
-    "dias_aberta": 0,
+    "dias_aberta": 2,
     "prazo_dias": 14,
     "vence_em": "2026-08-24"
   },
@@ -89,28 +89,30 @@
     "nome": "OrthoDontic Centro",
     "proprio": true,
     "aparelho": true,
-    "de": "2026-08-07",
-    "ate": "2026-08-10",
-    "dias": 3,
+    "de": "2026-08-10",
+    "ate": "2026-08-12",
+    "dias": 2,
     "antes": 76,
-    "agora": 76,
-    "delta": 0,
+    "agora": 77,
+    "delta": 1,
     "nota_antes": 3.8,
     "nota_agora": 3.8,
-    "ritmo_do_periodo": 0.0,
+    "ritmo_do_periodo": 15.2,
     "historico": {
       "desde": "2026-08-07",
-      "ate": "2026-08-10",
-      "dias": 3,
-      "medicoes": 2,
+      "ate": "2026-08-12",
+      "dias": 5,
+      "medicoes": 3,
       "antes": 76,
-      "agora": 76,
-      "delta": 0,
-      "ritmo_do_periodo": 0.0,
+      "agora": 77,
+      "delta": 1,
+      "ritmo_do_periodo": 6.1,
       "nota_antes": 3.8,
       "nota_agora": 3.8
     },
-    "eventos": [],
+    "eventos": [
+      "ganhou 1 avaliação em 2 dias"
+    ],
     "aviso": null
   },
   "sem_resposta": {
@@ -274,7 +276,7 @@
     "praca_id": "londrina",
     "rotulo": "PR · Londrina",
     "unidade": "OrthoDontic Centro",
-    "avaliacoes_da_ficha": 76,
+    "avaliacoes_da_ficha": 77,
     "aparece_em": 4,
     "de": 176,
     "pct": 2,
@@ -603,13 +605,13 @@
       "confianca": "alta",
       "medido": true,
       "amostra": 59,
-      "janela_dias": 3,
-      "medicoes": 2,
+      "janela_dias": 5,
+      "medicoes": 3,
       "fonte": "dados/serie/reviews.jsonl",
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": "mais avaliações com texto nesta loja",
-      "procedencia": "medido em 59 avaliações, 2 medições, 3 dias de janela"
+      "procedencia": "medido em 59 avaliações, 3 medições, 5 dias de janela"
     }
   },
   "acoes": {
@@ -995,6 +997,13 @@
     "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
   },
   "eventos": [
+    {
+      "data": "2026-08-12",
+      "tipo": "contador",
+      "quem": "nossa",
+      "texto": "ganhou 1 avaliação (76 → 77)",
+      "fonte": "dados/serie/places.jsonl"
+    },
     {
       "data": "2026-08-10",
       "tipo": "alerta",

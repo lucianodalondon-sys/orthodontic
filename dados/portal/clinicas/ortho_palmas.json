@@ -6,17 +6,17 @@
     "cidade": "TO · Palmas",
     "endereco": "Quadra ACNE (01 - Rua NE1, 20 - CJ 19, lote 19 - Plano Diretor Norte, Palmas - TO, 77006-016",
     "desde": "8/ago",
-    "medicoes": 2,
+    "medicoes": 3,
     "posicao_na_cidade": null,
     "clinicas_na_cidade": null,
     "lojas_irmas": [],
-    "frase": "OrthoDontic é escutada desde 8/ago, em 2 medições."
+    "frase": "OrthoDontic é escutada desde 8/ago, em 3 medições."
   },
   "rotulo": "TO · Palmas",
   "unidade": "OrthoDontic",
   "cabecalho": {
     "nota": 5,
-    "avaliacoes": 305,
+    "avaliacoes": 306,
     "ritmo": 7.8,
     "meses_seguidos": 15,
     "posicao": 4,
@@ -27,7 +27,7 @@
   "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
-    "dias_aberta": 0,
+    "dias_aberta": 2,
     "prazo_dias": 30,
     "vence_em": "2026-09-09"
   },
@@ -68,23 +68,23 @@
     "nome": "OrthoDontic",
     "proprio": true,
     "aparelho": true,
-    "de": "2026-08-08",
-    "ate": "2026-08-10",
+    "de": "2026-08-10",
+    "ate": "2026-08-12",
     "dias": 2,
-    "antes": 304,
-    "agora": 305,
+    "antes": 305,
+    "agora": 306,
     "delta": 1,
     "nota_antes": 5,
     "nota_agora": 5,
     "ritmo_do_periodo": 15.2,
     "historico": {
       "desde": "2026-08-08",
-      "ate": "2026-08-10",
-      "dias": 2,
-      "medicoes": 2,
+      "ate": "2026-08-12",
+      "dias": 4,
+      "medicoes": 3,
       "antes": 304,
-      "agora": 305,
-      "delta": 1,
+      "agora": 306,
+      "delta": 2,
       "ritmo_do_periodo": 15.2,
       "nota_antes": 5,
       "nota_agora": 5
@@ -92,7 +92,7 @@
     "eventos": [
       "ganhou 1 avaliação em 2 dias"
     ],
-    "aviso": "a praça é medida há 2 dias (2 medições) — a leitura ainda diz pouco e engorda a cada coleta"
+    "aviso": "a praça é medida há 4 dias (3 medições) — a leitura ainda diz pouco e engorda a cada coleta"
   },
   "sem_resposta": {
     "abertas": 1,
@@ -237,7 +237,7 @@
     "praca_id": "palmas",
     "rotulo": "TO · Palmas",
     "unidade": "OrthoDontic",
-    "avaliacoes_da_ficha": 305,
+    "avaliacoes_da_ficha": 306,
     "aparece_em": 3,
     "de": 120,
     "pct": 2,
@@ -457,13 +457,13 @@
       "confianca": "alta",
       "medido": true,
       "amostra": 227,
-      "janela_dias": 2,
-      "medicoes": 2,
+      "janela_dias": 4,
+      "medicoes": 3,
       "fonte": "dados/serie/reviews.jsonl",
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": "mais avaliações com texto nesta loja",
-      "procedencia": "medido em 227 avaliações, 2 medições, 2 dias de janela"
+      "procedencia": "medido em 227 avaliações, 3 medições, 4 dias de janela"
     }
   },
   "acoes": {
@@ -653,6 +653,21 @@
     "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
   },
   "eventos": [
+    {
+      "data": "2026-08-12",
+      "tipo": "contador",
+      "quem": "nossa",
+      "texto": "ganhou 1 avaliação (305 → 306)",
+      "fonte": "dados/serie/places.jsonl"
+    },
+    {
+      "data": "2026-08-12",
+      "tipo": "rival_contador",
+      "quem": "rival",
+      "nome": "ImplantCenter | Clínica Odontológica e Invisalign",
+      "texto": "ImplantCenter | Clínica Odontológica e Invisalign: ganhou 1 avaliação (132 → 133)",
+      "fonte": "dados/serie/places.jsonl"
+    },
     {
       "data": "2026-08-10",
       "tipo": "contador",

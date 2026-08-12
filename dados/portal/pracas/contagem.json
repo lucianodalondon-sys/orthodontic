@@ -1,6 +1,6 @@
 {
   "praca_id": "contagem",
-  "corte": "2026-08-10",
+  "corte": "2026-08-12",
   "rotulo": "MG · Contagem",
   "uf": [
     "MG"
@@ -572,7 +572,7 @@
       "tipo": "clínica odontológica (a classificar em visita)",
       "proprio": false,
       "nota": 4.4,
-      "avaliacoes": 3836,
+      "avaliacoes": 3859,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -592,7 +592,7 @@
       "tipo": "clínica odontológica (a classificar em visita)",
       "proprio": false,
       "nota": 4.9,
-      "avaliacoes": 1292,
+      "avaliacoes": 1294,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -612,7 +612,7 @@
       "tipo": "rede franqueada concorrente",
       "proprio": false,
       "nota": 4.4,
-      "avaliacoes": 875,
+      "avaliacoes": 876,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -622,7 +622,7 @@
       "tipo": "franquia",
       "proprio": true,
       "nota": 4.6,
-      "avaliacoes": 856,
+      "avaliacoes": 857,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -632,7 +632,7 @@
       "tipo": "especialista de nicho (siso)",
       "proprio": false,
       "nota": 4.9,
-      "avaliacoes": 681,
+      "avaliacoes": 686,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -652,7 +652,7 @@
       "tipo": "clínica odontológica (a classificar em visita)",
       "proprio": false,
       "nota": 5,
-      "avaliacoes": 596,
+      "avaliacoes": 598,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -662,7 +662,7 @@
       "tipo": "clínica odontológica (a classificar em visita)",
       "proprio": false,
       "nota": 5,
-      "avaliacoes": 581,
+      "avaliacoes": 580,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -682,7 +682,7 @@
       "tipo": "clínica odontológica (a classificar em visita)",
       "proprio": false,
       "nota": 5,
-      "avaliacoes": 515,
+      "avaliacoes": 516,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -692,7 +692,7 @@
       "tipo": "rede regional",
       "proprio": false,
       "nota": 4.9,
-      "avaliacoes": 481,
+      "avaliacoes": 484,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -712,7 +712,7 @@
       "tipo": "clínica odontológica (a classificar em visita)",
       "proprio": false,
       "nota": 5,
-      "avaliacoes": 411,
+      "avaliacoes": 412,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -930,30 +930,30 @@
   },
   "o_que_mudou": {
     "dias_medidos": 2,
-    "aviso": "a praça é medida há 2 dias (2 medições) — a leitura ainda diz pouco e engorda a cada coleta",
+    "aviso": "a praça é medida há 4 dias (3 medições) — a leitura ainda diz pouco e engorda a cada coleta",
     "nossas": [
       {
         "local_id": "ortho_contagem",
         "nome": "OrthoDontic",
         "proprio": true,
         "aparelho": true,
-        "de": "2026-08-08",
-        "ate": "2026-08-10",
+        "de": "2026-08-10",
+        "ate": "2026-08-12",
         "dias": 2,
-        "antes": 855,
-        "agora": 856,
+        "antes": 856,
+        "agora": 857,
         "delta": 1,
         "nota_antes": 4.6,
         "nota_agora": 4.6,
         "ritmo_do_periodo": 15.2,
         "historico": {
           "desde": "2026-08-08",
-          "ate": "2026-08-10",
-          "dias": 2,
-          "medicoes": 2,
+          "ate": "2026-08-12",
+          "dias": 4,
+          "medicoes": 3,
           "antes": 855,
-          "agora": 856,
-          "delta": 1,
+          "agora": 857,
+          "delta": 2,
           "ritmo_do_periodo": 15.2,
           "nota_antes": 4.6,
           "nota_agora": 4.6
@@ -965,30 +965,90 @@
     ],
     "quem_mais_ganhou": [
       {
+        "local_id": "dra_samila_resende_invisal",
+        "nome": "Dra. Samila Resende - Invisalign Doctor",
+        "proprio": false,
+        "aparelho": true,
+        "de": "2026-08-10",
+        "ate": "2026-08-12",
+        "dias": 2,
+        "antes": 515,
+        "agora": 516,
+        "delta": 1,
+        "nota_antes": 5,
+        "nota_agora": 5,
+        "ritmo_do_periodo": 15.2,
+        "historico": {
+          "desde": "2026-08-08",
+          "ate": "2026-08-12",
+          "dias": 4,
+          "medicoes": 3,
+          "antes": 515,
+          "agora": 516,
+          "delta": 1,
+          "ritmo_do_periodo": 7.6,
+          "nota_antes": 5,
+          "nota_agora": 5
+        },
+        "eventos": [
+          "ganhou 1 avaliação em 2 dias"
+        ]
+      },
+      {
         "local_id": "ortho_contagem",
         "nome": "OrthoDontic",
         "proprio": true,
         "aparelho": true,
-        "de": "2026-08-08",
-        "ate": "2026-08-10",
+        "de": "2026-08-10",
+        "ate": "2026-08-12",
         "dias": 2,
-        "antes": 855,
-        "agora": 856,
+        "antes": 856,
+        "agora": 857,
         "delta": 1,
         "nota_antes": 4.6,
         "nota_agora": 4.6,
         "ritmo_do_periodo": 15.2,
         "historico": {
           "desde": "2026-08-08",
-          "ate": "2026-08-10",
-          "dias": 2,
-          "medicoes": 2,
+          "ate": "2026-08-12",
+          "dias": 4,
+          "medicoes": 3,
           "antes": 855,
-          "agora": 856,
-          "delta": 1,
+          "agora": 857,
+          "delta": 2,
           "ritmo_do_periodo": 15.2,
           "nota_antes": 4.6,
           "nota_agora": 4.6
+        },
+        "eventos": [
+          "ganhou 1 avaliação em 2 dias"
+        ]
+      },
+      {
+        "local_id": "orthopride_contagem",
+        "nome": "Orthopride Contagem",
+        "proprio": false,
+        "aparelho": true,
+        "de": "2026-08-10",
+        "ate": "2026-08-12",
+        "dias": 2,
+        "antes": 875,
+        "agora": 876,
+        "delta": 1,
+        "nota_antes": 4.4,
+        "nota_agora": 4.4,
+        "ritmo_do_periodo": 15.2,
+        "historico": {
+          "desde": "2026-08-08",
+          "ate": "2026-08-12",
+          "dias": 4,
+          "medicoes": 3,
+          "antes": 875,
+          "agora": 876,
+          "delta": 1,
+          "ritmo_do_periodo": 7.6,
+          "nota_antes": 4.4,
+          "nota_agora": 4.4
         },
         "eventos": [
           "ganhou 1 avaliação em 2 dias"
@@ -997,30 +1057,30 @@
     ],
     "contador_caiu": [
       {
-        "local_id": "vitae_center_clinica_medic",
-        "nome": "Vitae Center Clínica Médica e Odontológica",
+        "local_id": "odontomax_nathalia_duarte_b",
+        "nome": "ODONTOMAX - Nathália Duarte (CRO-40548) - Implante, Aparelho, Clareamento, Prótese",
         "proprio": false,
-        "aparelho": false,
-        "de": "2026-08-08",
-        "ate": "2026-08-10",
+        "aparelho": true,
+        "de": "2026-08-10",
+        "ate": "2026-08-12",
         "dias": 2,
-        "antes": 3837,
-        "agora": 3836,
+        "antes": 581,
+        "agora": 580,
         "delta": -1,
-        "nota_antes": 4.4,
-        "nota_agora": 4.4,
+        "nota_antes": 5,
+        "nota_agora": 5,
         "ritmo_do_periodo": 0.0,
         "historico": {
-          "desde": "2026-08-08",
-          "ate": "2026-08-10",
+          "desde": "2026-08-10",
+          "ate": "2026-08-12",
           "dias": 2,
           "medicoes": 2,
-          "antes": 3837,
-          "agora": 3836,
+          "antes": 581,
+          "agora": 580,
           "delta": -1,
           "ritmo_do_periodo": 0.0,
-          "nota_antes": 4.4,
-          "nota_agora": 4.4
+          "nota_antes": 5,
+          "nota_agora": 5
         },
         "eventos": [
           "o contador CAIU 1 — avaliação removida"

@@ -6,11 +6,11 @@
     "cidade": "SP · Presidente Prudente",
     "endereco": null,
     "desde": "15/jul",
-    "medicoes": 3,
+    "medicoes": 4,
     "posicao_na_cidade": null,
     "clinicas_na_cidade": null,
     "lojas_irmas": [],
-    "frase": "OrthoDontic Presidente Prudente é escutada desde 15/jul, em 3 medições."
+    "frase": "OrthoDontic Presidente Prudente é escutada desde 15/jul, em 4 medições."
   },
   "rotulo": "SP · Presidente Prudente",
   "unidade": "OrthoDontic Presidente Prudente",
@@ -33,9 +33,9 @@
     "nome": "OrthoDontic Presidente Prudente",
     "proprio": true,
     "aparelho": true,
-    "de": "2026-08-07",
-    "ate": "2026-08-10",
-    "dias": 3,
+    "de": "2026-08-10",
+    "ate": "2026-08-12",
+    "dias": 2,
     "antes": 592,
     "agora": 592,
     "delta": 0,
@@ -44,13 +44,13 @@
     "ritmo_do_periodo": 0.0,
     "historico": {
       "desde": "2026-07-15",
-      "ate": "2026-08-10",
-      "dias": 26,
-      "medicoes": 3,
+      "ate": "2026-08-12",
+      "dias": 28,
+      "medicoes": 4,
       "antes": 582,
       "agora": 592,
       "delta": 10,
-      "ritmo_do_periodo": 11.7,
+      "ritmo_do_periodo": 10.9,
       "nota_antes": 4.9,
       "nota_agora": 4.9
     },
@@ -568,13 +568,13 @@
       "confianca": "alta",
       "medido": true,
       "amostra": 523,
-      "janela_dias": 26,
-      "medicoes": 3,
+      "janela_dias": 28,
+      "medicoes": 4,
       "fonte": "dados/serie/reviews.jsonl",
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": "mais avaliações com texto nesta loja",
-      "procedencia": "medido em 523 avaliações, 3 medições, 26 dias de janela"
+      "procedencia": "medido em 523 avaliações, 4 medições, 28 dias de janela"
     }
   },
   "acoes": {
@@ -723,6 +723,22 @@
     "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
   },
   "eventos": [
+    {
+      "data": "2026-08-12",
+      "tipo": "rival_contador",
+      "quem": "rival",
+      "nome": "Unisorrir Clínica Odontológica | Implantes Dentários | Invisalign",
+      "texto": "Unisorrir Clínica Odontológica | Implantes Dentários | Invisalign: ganhou 1 avaliação (495 → 496)",
+      "fonte": "dados/serie/places.jsonl"
+    },
+    {
+      "data": "2026-08-12",
+      "tipo": "rival_contador",
+      "quem": "rival",
+      "nome": "Rotta Instituto de Odontologia | Invisalign",
+      "texto": "Rotta Instituto de Odontologia | Invisalign: ganhou 2 avaliações (107 → 109)",
+      "fonte": "dados/serie/places.jsonl"
+    },
     {
       "data": "2026-08-07",
       "tipo": "contador",

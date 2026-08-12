@@ -18,7 +18,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
-    "dias_aberta": 0,
+    "dias_aberta": 2,
     "prazo_dias": 14,
     "vence_em": "2026-08-24"
    },
@@ -87,7 +87,7 @@
    "unidade": "OrthoDontic",
    "cabecalho": {
     "nota": 4.6,
-    "avaliacoes": 856,
+    "avaliacoes": 857,
     "ritmo": 10.6,
     "meses_seguidos": 23,
     "posicao": 9,
@@ -96,7 +96,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
-    "dias_aberta": 0,
+    "dias_aberta": 2,
     "prazo_dias": 7,
     "vence_em": "2026-08-17"
    },
@@ -113,6 +113,37 @@
     "com_texto": 30
    },
    "eventos": [
+    {
+     "data": "2026-08-12",
+     "tipo": "contador",
+     "quem": "nossa",
+     "texto": "ganhou 1 avaliação (856 → 857)",
+     "fonte": "dados/serie/places.jsonl"
+    },
+    {
+     "data": "2026-08-12",
+     "tipo": "rival_contador",
+     "quem": "rival",
+     "nome": "Orthopride Contagem",
+     "texto": "Orthopride Contagem: ganhou 1 avaliação (875 → 876)",
+     "fonte": "dados/serie/places.jsonl"
+    },
+    {
+     "data": "2026-08-12",
+     "tipo": "rival_queda",
+     "quem": "rival",
+     "nome": "ODONTOMAX - Nathália Duarte (CRO-40548) - Implante, Aparelho, Clareamento, Prótese",
+     "texto": "ODONTOMAX - Nathália Duarte (CRO-40548) - Implante, Aparelho, Clareamento, Prótese: o contador CAIU 1 (581 → 580) — avaliação apagada",
+     "fonte": "dados/serie/places.jsonl"
+    },
+    {
+     "data": "2026-08-12",
+     "tipo": "rival_contador",
+     "quem": "rival",
+     "nome": "Dra. Samila Resende - Invisalign Doctor",
+     "texto": "Dra. Samila Resende - Invisalign Doctor: ganhou 1 avaliação (515 → 516)",
+     "fonte": "dados/serie/places.jsonl"
+    },
     {
      "data": "2026-08-10",
      "tipo": "contador",
@@ -189,13 +220,6 @@
      "quem": "paciente",
      "texto": "avaliação de 1★: “Pessima ! Demora atender, eles marcam horário, mais nunca cumpre, parece mais ordem de che…” · SEM RESPOSTA",
      "fonte": "dados/serie/reviews.jsonl"
-    },
-    {
-     "data": "2026-05-12",
-     "tipo": "avaliacao_negativa",
-     "quem": "paciente",
-     "texto": "avaliação de 1★ · SEM RESPOSTA",
-     "fonte": "dados/serie/reviews.jsonl"
     }
    ],
    "eventos_alem_da_janela": 0
@@ -207,7 +231,7 @@
    "unidade": "OrthoDontic Cuiabá Centro Norte",
    "cabecalho": {
     "nota": 5,
-    "avaliacoes": 1222,
+    "avaliacoes": 1223,
     "ritmo": 48.1,
     "meses_seguidos": 26,
     "posicao": 2,
@@ -220,7 +244,15 @@
     "abertas": 6,
     "com_texto": 3
    },
-   "eventos": [],
+   "eventos": [
+    {
+     "data": "2026-08-12",
+     "tipo": "contador",
+     "quem": "nossa",
+     "texto": "ganhou 1 avaliação (1222 → 1223)",
+     "fonte": "dados/serie/places.jsonl"
+    }
+   ],
    "eventos_alem_da_janela": 0
   },
   {
@@ -239,7 +271,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
-    "dias_aberta": 0,
+    "dias_aberta": 2,
     "prazo_dias": 14,
     "vence_em": "2026-08-24"
    },
@@ -289,7 +321,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
-    "dias_aberta": 0,
+    "dias_aberta": 2,
     "prazo_dias": 14,
     "vence_em": "2026-08-24"
    },
@@ -330,7 +362,7 @@
    "unidade": "OrthoDontic Centro",
    "cabecalho": {
     "nota": 3.8,
-    "avaliacoes": 76,
+    "avaliacoes": 77,
     "ritmo": 0.8,
     "meses_seguidos": 2,
     "posicao": 23,
@@ -339,7 +371,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
-    "dias_aberta": 0,
+    "dias_aberta": 2,
     "prazo_dias": 14,
     "vence_em": "2026-08-24"
    },
@@ -356,6 +388,13 @@
     "com_texto": 8
    },
    "eventos": [
+    {
+     "data": "2026-08-12",
+     "tipo": "contador",
+     "quem": "nossa",
+     "texto": "ganhou 1 avaliação (76 → 77)",
+     "fonte": "dados/serie/places.jsonl"
+    },
     {
      "data": "2026-08-10",
      "tipo": "alerta",
@@ -394,7 +433,7 @@
    "unidade": "OrthoDontic Souza Naves",
    "cabecalho": {
     "nota": 4.6,
-    "avaliacoes": 566,
+    "avaliacoes": 568,
     "ritmo": 3.3,
     "meses_seguidos": 9,
     "posicao": 13,
@@ -403,7 +442,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
-    "dias_aberta": 0,
+    "dias_aberta": 2,
     "prazo_dias": 7,
     "vence_em": "2026-08-17"
    },
@@ -420,6 +459,13 @@
     "com_texto": 22
    },
    "eventos": [
+    {
+     "data": "2026-08-12",
+     "tipo": "contador",
+     "quem": "nossa",
+     "texto": "ganhou 2 avaliações (566 → 568)",
+     "fonte": "dados/serie/places.jsonl"
+    },
     {
      "data": "2026-08-10",
      "tipo": "contador",
@@ -502,7 +548,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
-    "dias_aberta": 0,
+    "dias_aberta": 2,
     "prazo_dias": 14,
     "vence_em": "2026-08-24"
    },
@@ -558,6 +604,22 @@
    },
    "eventos": [
     {
+     "data": "2026-08-12",
+     "tipo": "rival_contador",
+     "quem": "rival",
+     "nome": "Unisorrir Clínica Odontológica | Implantes Dentários | Invisalign",
+     "texto": "Unisorrir Clínica Odontológica | Implantes Dentários | Invisalign: ganhou 1 avaliação (495 → 496)",
+     "fonte": "dados/serie/places.jsonl"
+    },
+    {
+     "data": "2026-08-12",
+     "tipo": "rival_contador",
+     "quem": "rival",
+     "nome": "Rotta Instituto de Odontologia | Invisalign",
+     "texto": "Rotta Instituto de Odontologia | Invisalign: ganhou 2 avaliações (107 → 109)",
+     "fonte": "dados/serie/places.jsonl"
+    },
+    {
      "data": "2026-08-07",
      "tipo": "contador",
      "quem": "nossa",
@@ -582,7 +644,7 @@
    "unidade": "OrthoDontic",
    "cabecalho": {
     "nota": 5,
-    "avaliacoes": 305,
+    "avaliacoes": 306,
     "ritmo": 7.8,
     "meses_seguidos": 15,
     "posicao": 4,
@@ -591,7 +653,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
-    "dias_aberta": 0,
+    "dias_aberta": 2,
     "prazo_dias": 30,
     "vence_em": "2026-09-09"
    },
@@ -608,6 +670,21 @@
     "com_texto": 1
    },
    "eventos": [
+    {
+     "data": "2026-08-12",
+     "tipo": "contador",
+     "quem": "nossa",
+     "texto": "ganhou 1 avaliação (305 → 306)",
+     "fonte": "dados/serie/places.jsonl"
+    },
+    {
+     "data": "2026-08-12",
+     "tipo": "rival_contador",
+     "quem": "rival",
+     "nome": "ImplantCenter | Clínica Odontológica e Invisalign",
+     "texto": "ImplantCenter | Clínica Odontológica e Invisalign: ganhou 1 avaliação (132 → 133)",
+     "fonte": "dados/serie/places.jsonl"
+    },
     {
      "data": "2026-08-10",
      "tipo": "contador",

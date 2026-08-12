@@ -139,20 +139,59 @@ def main():
                 _lojas_medidas[_l["place_id"]] = _l["local_id"]
     _fl_ix = {x["local_id"]: x for x in carrega(OUT, "fila").get("fila", [])}
 
+    # A LISTA OFICIAL DO SITE É O CADASTRO; A VARREDURA DE FICHAS É O
+    # ENRIQUECIMENTO. Elas têm datas diferentes: o site é lido todo dia e
+    # custa zero; a varredura do Google custa cota e roda de vez em quando.
+    # Montar o índice sobre a varredura fez o portal dizer 374 numa tela e
+    # 373 noutra — duas unidades abriram e uma saiu no dia seguinte à
+    # varredura. O cadastro manda; nota e avaliações entram quando casam,
+    # e a data da varredura vai declarada em cada linha.
+    _sem_acento = lambda t: "".join(
+        c for c in unicodedata.normalize("NFD", str(t or ""))
+        if unicodedata.category(c) != "Mn").lower().strip()
+    _oficial = jsonl("unidades_rede")
+    _dia_oficial = max((r["snapshot_date"] for r in _oficial), default=None)
+    _oficial = [r for r in _oficial if r["snapshot_date"] == _dia_oficial]
+    _dia_ficha = max((r["snapshot_date"] for r in _fichas), default=None)
+    _fichas_hoje = [r for r in _fichas if r["snapshot_date"] == _dia_ficha]
+
+    def _chave_un(uf, cidade, unidade):
+        return (str(uf or "").upper(),
+                _sem_acento(str(cidade or "").split("/")[0]),
+                _sem_acento(unidade))
+
+    _ficha_por_chave = {
+        _chave_un(r.get("uf"), r.get("cidade"),
+                  r.get("unidade_na_lista") or r.get("nome")): r
+        for r in _fichas_hoje}
+
+    # O SITE OFICIAL GRAVA SEM ACENTO ("Cuiaba", "Braco do Norte"). Onde
+    # temos identidade da praça, o rótulo bonito é o nosso; onde não temos,
+    # fica o do site, porque inventar acento em nome de cidade que não
+    # estudamos é chutar.
+    _rotulo_bonito = {}
+    for _pid, _pr in _TODAS.items():
+        for _cid in (_pr.get("cidades_rotulo") or _pr.get("cidades") or []):
+            _nome = str(_cid).split(" · ")[-1]
+            for _uf in (_pr.get("uf") or []):
+                _rotulo_bonito[(_uf, _sem_acento(_nome))] = _nome
+
     _por_uf = defaultdict(lambda: defaultdict(list))
-    _fichas_hoje = [r for r in _fichas
-                    if _fichas and r["snapshot_date"] == max(
-                        x["snapshot_date"] for x in _fichas)]
-    for r in _fichas_hoje:
+    for r in _oficial:
         uf = r.get("uf") or "—"
-        lid = _lojas_medidas.get(r.get("place_id"))
+        cidade = str(r.get("cidade") or "—").split("/")[0]
+        cidade = _rotulo_bonito.get((uf, _sem_acento(cidade)), cidade)
+        f = _ficha_por_chave.get(_chave_un(uf, cidade, r.get("unidade"))) or {}
+        lid = _lojas_medidas.get(f.get("place_id"))
         fl = _fl_ix.get(lid) or {}
-        _por_uf[uf][r.get("cidade") or "—"].append({
-            "unidade": r.get("unidade_na_lista") or r.get("nome"),
-            "rotulo": f"{uf} · {r.get('cidade')}",
-            "situacao": r.get("situacao_na_lista"),
-            "nota": r.get("nota"), "avaliacoes": r.get("avaliacoes"),
-            "confirmada": bool(r.get("confirmada")),
+        _por_uf[uf][cidade].append({
+            "unidade": r.get("unidade"),
+            "rotulo": r.get("rotulo") or f"{uf} · {cidade}",
+            "situacao": r.get("situacao"),
+            "endereco": r.get("endereco"),
+            "nota": f.get("nota"), "avaliacoes": f.get("avaliacoes"),
+            "ficha_medida_em": _dia_ficha if f else None,
+            "confirmada": bool(f.get("place_id")),
             "com_estudo": bool(lid),
             "local_id": lid,
             "arquivo": f"clinicas/{lid}" if lid else None,
@@ -167,9 +206,6 @@ def main():
     # lojas da mesma cidade. Então NÃO se cria unidade nova (isso inflaria a
     # rede para 377) e NÃO se escolhe uma linha a dedo: a cidade passa a
     # carregar quais estudos são dela, com a ambiguidade escrita.
-    _sem_acento = lambda t: "".join(
-        c for c in unicodedata.normalize("NFD", str(t or ""))
-        if unicodedata.category(c) != "Mn").lower().strip()
     _casadas = {x["local_id"] for uf in _por_uf for c in _por_uf[uf].values()
                 for x in c if x.get("local_id")}
     _estudo_solto = defaultdict(list)
@@ -231,6 +267,12 @@ def main():
                    "as outras aparecem para que o tamanho do que falta seja "
                    "visível.",
         "corte": corte,
+        "cadastro_lido_em": _dia_oficial,
+        "fichas_medidas_em": _dia_ficha,
+        "porque_duas_datas": ("o cadastro vem do site da rede e é lido todo "
+                              "dia; nota e avaliações vêm de uma varredura "
+                              "do Google que custa cota e roda de vez em "
+                              "quando"),
         "unidades_total": _n_tot,
         "com_estudo": _n_est,
         "sem_escuta": _n_tot - _n_est,
@@ -240,9 +282,11 @@ def main():
                      + " com estudo — as outras "
                      + conta(_n_tot - _n_est, "ainda não foi escutada",
                              "ainda não foram escutadas")),
+        # os estudos sem linha casada passaram a viver no nível da cidade;
+        # o contador continuava olhando o nível da unidade e dizia 0
         "com_estudo_sem_linha_oficial": sum(
-            1 for u in _ufs for c in u["cidades"] for x in c["unidades"]
-            if x.get("sem_linha_oficial")),
+            len(c.get("estudos_sem_linha_oficial") or [])
+            for u in _ufs for c in u["cidades"]),
         "cidades_com_mais_de_uma_loja": sum(
             1 for u in _ufs for c in u["cidades"] if c["mais_de_uma_loja"]),
         "ufs": _ufs,

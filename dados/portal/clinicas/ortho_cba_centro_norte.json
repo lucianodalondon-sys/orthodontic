@@ -6,7 +6,7 @@
     "cidade": "MT · Cuiabá",
     "endereco": "R. Barão de Melgaço, 3429 - Centro Norte, Cuiabá - MT, 78005-300",
     "desde": "8/ago",
-    "medicoes": 2,
+    "medicoes": 3,
     "posicao_na_cidade": null,
     "clinicas_na_cidade": null,
     "lojas_irmas": [
@@ -19,13 +19,13 @@
         "unidade": "OrthoDontic Cuiabá Dom Bosco (Centro Sul)"
       }
     ],
-    "frase": "OrthoDontic Cuiabá Centro Norte é escutada desde 8/ago, em 2 medições, e divide Cuiabá com mais 2 lojas da rede."
+    "frase": "OrthoDontic Cuiabá Centro Norte é escutada desde 8/ago, em 3 medições, e divide Cuiabá com mais 2 lojas da rede."
   },
   "rotulo": "MT · Cuiabá",
   "unidade": "OrthoDontic Cuiabá Centro Norte",
   "cabecalho": {
     "nota": 5,
-    "avaliacoes": 1222,
+    "avaliacoes": 1223,
     "ritmo": 48.1,
     "meses_seguidos": 26,
     "posicao": 2,
@@ -42,29 +42,31 @@
     "nome": "OrthoDontic Cuiabá Centro Norte",
     "proprio": true,
     "aparelho": true,
-    "de": "2026-08-08",
-    "ate": "2026-08-10",
+    "de": "2026-08-10",
+    "ate": "2026-08-12",
     "dias": 2,
     "antes": 1222,
-    "agora": 1222,
-    "delta": 0,
+    "agora": 1223,
+    "delta": 1,
     "nota_antes": 5,
     "nota_agora": 5,
-    "ritmo_do_periodo": 0.0,
+    "ritmo_do_periodo": 15.2,
     "historico": {
       "desde": "2026-08-08",
-      "ate": "2026-08-10",
-      "dias": 2,
-      "medicoes": 2,
+      "ate": "2026-08-12",
+      "dias": 4,
+      "medicoes": 3,
       "antes": 1222,
-      "agora": 1222,
-      "delta": 0,
-      "ritmo_do_periodo": 0.0,
+      "agora": 1223,
+      "delta": 1,
+      "ritmo_do_periodo": 7.6,
       "nota_antes": 5,
       "nota_agora": 5
     },
-    "eventos": [],
-    "aviso": "a praça é medida há 2 dias (2 medições) — a leitura ainda diz pouco e engorda a cada coleta"
+    "eventos": [
+      "ganhou 1 avaliação em 2 dias"
+    ],
+    "aviso": "a praça é medida há 4 dias (3 medições) — a leitura ainda diz pouco e engorda a cada coleta"
   },
   "sem_resposta": {
     "abertas": 6,
@@ -294,7 +296,7 @@
     "praca_id": "cuiaba",
     "rotulo": "MT · Cuiabá",
     "unidade": "OrthoDontic Cuiabá Centro Norte",
-    "avaliacoes_da_ficha": 1222,
+    "avaliacoes_da_ficha": 1223,
     "aparece_em": 4,
     "de": 151,
     "pct": 3,
@@ -537,13 +539,13 @@
       "confianca": "alta",
       "medido": true,
       "amostra": 610,
-      "janela_dias": 2,
-      "medicoes": 2,
+      "janela_dias": 4,
+      "medicoes": 3,
       "fonte": "dados/serie/reviews.jsonl",
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": "mais avaliações com texto nesta loja",
-      "procedencia": "medido em 610 avaliações, 2 medições, 2 dias de janela"
+      "procedencia": "medido em 610 avaliações, 3 medições, 4 dias de janela"
     }
   },
   "acoes": {
@@ -813,5 +815,13 @@
     "fora_do_produto": 33,
     "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
   },
-  "eventos": []
+  "eventos": [
+    {
+      "data": "2026-08-12",
+      "tipo": "contador",
+      "quem": "nossa",
+      "texto": "ganhou 1 avaliação (1222 → 1223)",
+      "fonte": "dados/serie/places.jsonl"
+    }
+  ]
 }

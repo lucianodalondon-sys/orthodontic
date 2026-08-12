@@ -1,11 +1,11 @@
 {
-  "corte": "2026-08-10",
-  "gerado_em": "2026-08-12T16:37:47",
+  "corte": "2026-08-12",
+  "gerado_em": "2026-08-12T17:21:11",
   "rede": {
-    "unidades": 374,
-    "abertas": 348,
-    "em_implantacao": 26,
-    "cidades": 304,
+    "unidades": 373,
+    "abertas": 350,
+    "em_implantacao": 23,
+    "cidades": 303,
     "ufs_com_unidade": 23,
     "ufs_sem_unidade": [
       "AC",
@@ -14,22 +14,22 @@
       "RN"
     ],
     "ufs_sem_unidade_total": 4,
-    "medido_em": "2026-08-11",
+    "medido_em": "2026-08-12",
     "fonte": "orthodonticbrasil.com.br/encontre-uma-unidade"
   },
   "cobertura": {
     "_nota": "Este bloco NÃO é mais a fonte de 'ouvidas' e 'total'. Os dois saem do dado em build_portal.py (praças com avaliação lida, e unidades na lista oficial da rede). Ficaram escritos à mão aqui por quatro semanas dizendo 4 de 340, enquanto a mesma tela já mostrava 374 unidades ao lado. Não volte a escrever número aqui.",
-    "unidades_total": 374,
+    "unidades_total": 373,
     "unidades_acompanhadas": 10,
     "pracas_da_rede_estudadas": 7,
     "cidades_de_oportunidade_estudadas": 6,
-    "aviso": "As leituras de rede valem para as 10 unidades acompanhadas, em 7 praças — não para as 374. As 6 cidades de oportunidade são estudo de expansão e não entram em nenhuma conta da rede."
+    "aviso": "As leituras de rede valem para as 10 unidades acompanhadas, em 7 praças — não para as 373. As 6 cidades de oportunidade são estudo de expansão e não entram em nenhuma conta da rede."
   },
   "abertura": {
     "sobrelinha": "SALA DE CONTROLE · REDE NACIONAL",
     "titulo": "A inteligência que faz cada clínica crescer.",
     "sublinha": "10 unidades escutadas de perto, em 7 cidades estudadas por inteiro — e, para cada uma, o que fazer nesta semana.",
-    "escopo": "As leituras valem para estas 10 unidades, não para as 374 da rede. As 6 cidades de oportunidade são estudo de expansão e não entram em nenhuma conta da rede."
+    "escopo": "As leituras valem para estas 10 unidades, não para as 373 da rede. As 6 cidades de oportunidade são estudo de expansão e não entram em nenhuma conta da rede."
   },
   "mapa": [
     {
@@ -118,17 +118,17 @@
     },
     {
       "uf": "DF",
-      "unidades": 14,
+      "unidades": 13,
       "abertas": 12,
-      "em_implantacao": 2,
-      "cidades": 14,
+      "em_implantacao": 1,
+      "cidades": 13,
       "pracas_medidas": 0,
       "acompanhadas": 0,
       "em_faixa_vermelha": 0,
       "em_faixa_amarela": 0,
       "alertas_graves": 0,
       "tom": "sem_escuta",
-      "motivo": "14 unidades · ainda sem escuta"
+      "motivo": "13 unidades · ainda sem escuta"
     },
     {
       "uf": "ES",
@@ -245,8 +245,8 @@
     {
       "uf": "PR",
       "unidades": 57,
-      "abertas": 54,
-      "em_implantacao": 3,
+      "abertas": 55,
+      "em_implantacao": 2,
       "cidades": 43,
       "pracas_medidas": 2,
       "acompanhadas": 2,
@@ -371,8 +371,8 @@
     {
       "uf": "SP",
       "unidades": 78,
-      "abertas": 70,
-      "em_implantacao": 8,
+      "abertas": 71,
+      "em_implantacao": 7,
       "cidades": 65,
       "pracas_medidas": 1,
       "acompanhadas": 1,
@@ -514,7 +514,7 @@
     {
       "chave": "rede",
       "nome": "A rede",
-      "explica": "as 374 unidades: mapa, alertas e reputação da marca"
+      "explica": "as 373 unidades: mapa, alertas e reputação da marca"
     },
     {
       "chave": "lojas",
@@ -537,8 +537,8 @@
       "chave": "mapa",
       "titulo": "A rede no Brasil",
       "pergunta": "Onde a OrthoDontic está hoje?",
-      "numero": 374,
-      "frase": "348 abertas e 26 em implantação, em 304 cidades. 4 estados ainda sem unidade.",
+      "numero": 373,
+      "frase": "350 abertas e 23 em implantação, em 303 cidades. 4 estados ainda sem unidade.",
       "tela": "mapa",
       "grupo": "rede",
       "disponivel": true,
@@ -570,7 +570,7 @@
       "chave": "mudou",
       "titulo": "O que mudou na semana",
       "pergunta": "O que aconteceu desde a última medição?",
-      "numero": 6,
+      "numero": 3,
       "frase": "contadores de avaliação CAÍRAM — queda é avaliação apagada, evento raro. 13 praças medidas de novo; o período ainda é curto e engorda a cada semana.",
       "tela": "mudou",
       "grupo": "lojas",
@@ -636,7 +636,7 @@
       "chave": "timeline",
       "titulo": "A vida de cada loja",
       "pergunta": "O que aconteceu em cada loja, em ordem?",
-      "numero": 41,
+      "numero": 51,
       "frase": "eventos observáveis — avaliações, contadores, alertas e rivais de aparelho — numa linha do tempo por loja, com o estado da tarefa de cada uma.",
       "tela": "timeline",
       "grupo": "lojas",
