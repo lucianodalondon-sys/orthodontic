@@ -2,7 +2,12 @@
 
 Este documento existe porque o projeto cresceu ferramenta a ferramenta e
 ficou bagunçado: 19 telas, praça misturando cidade, layout indo e voltando.
-Aqui está o pensamento inteiro, numa página. Quando uma decisão nova
+Aqui está o pensamento inteiro, numa página.
+
+**Este arquivo diz o que o produto É** — o modelo, as definições, os dois
+gols. **O estado de hoje, o que existe medido e o roadmap estão em
+`AUDITORIA-E-ARQUITETURA.md`.** Os dois não se repetem: um define, o
+outro presta contas. Histórico encerrado está em `/legacy`. Quando uma decisão nova
 contrariar este documento, ou a decisão está errada ou este documento
 precisa mudar — nunca os dois ao mesmo tempo em silêncio.
 

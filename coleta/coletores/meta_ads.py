@@ -40,17 +40,22 @@ REGISTROS = [
 
 
 def token():
-    t = os.environ.get("APIFY_TOKEN", "").strip()
-    if not t:
-        env = RAIZ/"_pipeline"/".env"
-        if env.exists():
-            for l in env.read_text(encoding="utf-8").split("\n"):
-                l = l.strip().replace("\r", "")
-                if l.startswith("APIFY_TOKEN="):
-                    t = l.split("=", 1)[1].strip()
-    if not t:
-        sys.exit("APIFY_TOKEN ausente")
-    return t
+    """A credencial sai do rodízio COM CHECAGEM DE SAÚDE (coleta/tokens.py).
+
+    Antes cada coletor lia a primeira linha `APIFY_TOKEN=` do arquivo — e
+    justamente as duas primeiras estão mortas (401 e 403). O módulo
+    `tokens.vivos()` pergunta ao Apify quanto resta em cada conta e
+    devolve da mais folgada para a mais apertada; já era usado só pelo
+    coletor de avaliações. Agora vale para todos.
+    """
+    import sys as _s, pathlib as _p
+    _s.path.insert(0, str(_p.Path(__file__).resolve().parent.parent))
+    from tokens import vivos as _v
+    fila = _v(quieto=True)
+    if not fila:
+        _s.exit("nenhum token Apify com cota — rode python3 coleta/tokens.py")
+    return fila[0]["token"]
+
 
 
 def url_busca(q):

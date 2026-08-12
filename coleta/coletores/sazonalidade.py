@@ -45,23 +45,16 @@ MESES = ["JAN", "FEV", "MAR", "ABR", "MAI", "JUN",
 
 
 def tokens():
-    """Todos os tokens do arquivo, na ordem. A cota gratuita é pequena e o
-    projeto já paga rotação: token que estoura passa a vez para o próximo."""
-    fora = []
-    env = RAIZ/"_pipeline"/".env"
-    if env.exists():
-        for l in env.read_text(encoding="utf-8").split("\n"):
-            l = l.strip().replace("\r", "")
-            if l.startswith("APIFY_TOKEN") and "=" in l:
-                v = l.split("=", 1)[1].strip()
-                if v:
-                    fora.append(v)
-    t = os.environ.get("APIFY_TOKEN", "").strip()
-    if t:
-        fora.insert(0, t)
-    if not fora:
-        sys.exit("nenhum APIFY_TOKEN em _pipeline/.env")
-    return fora
+    """O rodízio com checagem de saúde, da conta mais folgada para a mais
+    apertada. Ver coleta/tokens.py — as duas credenciais do topo do .env
+    estão mortas, e testar antes evita queimar duas tentativas por coleta."""
+    sys.path.insert(0, str(RAIZ/"coleta"))
+    from tokens import vivos
+    fila = vivos(quieto=True)
+    if not fila:
+        sys.exit("nenhum token Apify com cota — rode python3 coleta/tokens.py")
+    return [t["token"] for t in fila]
+
 
 
 def ctx():

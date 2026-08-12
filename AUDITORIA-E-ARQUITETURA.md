@@ -4,6 +4,8 @@ Escrito em 12/ago/2026, com o disco na mão. Todo número aqui foi contado
 do repositório, não lembrado. Onde eu não sei, está escrito que não sei.
 
 Este documento é canônico para **o que existe hoje e para onde vai**.
+O que o produto **é** — modelo, definições e os dois gols — está em
+`PROJETO.md`, e os dois não se repetem.
 Quando ele divergir de qualquer `.md` da raiz, ele vence — os outros são
 histórico (ver §4, redundâncias).
 
@@ -190,8 +192,16 @@ vez de recalcular.
 
 **Técnicos:**
 
-5. Rotação de tokens Apify com dois tokens mortos no topo da lista —
-   cada coleta desperdiça duas tentativas.
+5. **A COLETA ESTÁ PARADA POR FALTA DE CRÉDITO — verificado em 12/ago.**
+   `python3 coleta/tokens.py` responde **0 de 12 credenciais com cota**.
+   As contas são plano gratuito de US$ 5/mês; a coleta de sazonalidade
+   nas 12 UFs consumiu o resto. Toda fonte que depende da Apify
+   (avaliações, Instagram, Meta Ads, Google Ads, Reclame Aqui, canais)
+   está bloqueada até entrar crédito novo. As fontes sem Apify continuam:
+   lista oficial da rede, IBGE, imprensa por RSS e Places.
+   *Consequência de produto:* o portal continua inteiro, porque tudo que
+   está publicado veio de dado já medido — mas o "O que mudou desde
+   ontem" não muda enquanto não houver coleta nova.
 6. 48 das 374 fichas sem `place_id`; 3 lojas nossas entre elas.
 7. O HTML do portal vive fora do repositório (Claude Design). O
    repositório não consegue rodar o produto sozinho — só o payload.
