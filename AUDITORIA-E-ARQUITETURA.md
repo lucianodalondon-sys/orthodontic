@@ -350,3 +350,44 @@ de Benchmarks quando houver amostra.
 
 A primeira métrica honesta hoje é **10 de 374**. Enquanto ela não subir,
 qualquer outra fala de uma amostra pequena — e o portal deve dizer isso.
+
+---
+
+## 14 · O QUE FOI FEITO NESTE DIA (12/ago)
+
+O roadmap acima foi escrito de manhã. À tarde, P0 e os cinco quick wins
+do §9 saíram. Fica registrado para a próxima sessão não refazer.
+
+| item | estado | onde |
+|---|---|---|
+| P0 · `/legacy` com 20 documentos | ✅ | raiz tem 5 canônicos |
+| P0 · rodízio único de credenciais | ✅ | 7 coletores → `coleta/tokens.py` |
+| P0 · motor de confiança | ✅ | `cruzamento.confianca()` |
+| P1 · jornada do paciente | ✅ | `jornada_do_paciente.py` |
+| P1 · oferta do rival | ✅ | `a_oferta_do_rival.py` |
+| P1 · imprensa e ritmo | ✅ | `o_que_a_cidade_publica.py` |
+| P1 · livro de ações | ✅ | `livro_de_acoes.py` + `acoes.jsonl` |
+| régua cobrando os quatro | ✅ | `padrao.py`, 24 etapas |
+
+**Três achados que a rede não tinha:**
+
+1. **As duas lojas de Londrina têm a mesma dor, e é contato.** Na Centro,
+   8 das 10 avaliações que falam de telefone ou WhatsApp são de 1 ou 2
+   estrelas; na Souza Naves, 12 de 16. Lojas diferentes, possivelmente
+   donos diferentes, mesmo gargalo — é o primeiro sinal de padrão de rede
+   que não veio de opinião.
+2. **Londrina disputa por escassez e ninguém fala de "sem entrada".**
+   24 dos 45 anúncios de aparelho gritam "últimas vagas"; a barreira do
+   primeiro pagamento está desocupada.
+3. **Imperatriz e Juazeiro do Norte falam com a mãe, não com o paciente.**
+   7 de 9 e 4 de 8 anúncios miram criança e adolescente — informação de
+   posicionamento para quem for abrir lá.
+
+**O que ficou de fora, e por quê:** geo-grid (P2) precisa de coleta nova
+e a Apify está sem crédito; comparação entre redes rivais (P2) idem;
+INEP e CNES continuam sem decisão associada.
+
+**O bloqueio que apareceu:** `coleta/tokens.py` responde 0 de 12
+credenciais com cota. Enquanto não entrar crédito, o portal continua
+inteiro mas parado — nenhuma leitura nova entra, e o "o que mudou" não
+muda. É a primeira coisa a resolver amanhã.
