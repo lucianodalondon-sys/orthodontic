@@ -522,22 +522,65 @@ Hoje há 3, 6, 7, 8, 10 e 999px. Fique com **três**: `6px` (pastilha,
 selo, campo), `14px` (painel e cartão — o valor da referência aprovada) e
 `999px` (só pílula e chip). Um raio por papel.
 
-### 8.4 · Movimento: hoje é zero
+### 8.4 · Movimento (revisto — a versão anterior desta seção tinha erros)
 
-Nenhum `@keyframes`, oito transições. Movimento é o que mais separa uma
-tela de 2019 de uma de hoje — e tem de ser quase invisível.
+Auditei o `portal.css` entregue contra o checklist de motion. **O que já
+está certo:** não há `transition: all`, não há `ease-in` (que deixa a
+interface lenta justamente no instante em que o olho está olhando), só se
+anima cor/transform, e as transições de hover usam `.15s ease` — que é
+exatamente a curva certa para mudança de cor. Não mexa nisso.
 
-- **Entrada de conteúdo:** ao trocar de tela, os blocos entram com
-  `opacity 0→1` e `translateY(8px→0)`, `220ms`,
-  `cubic-bezier(.2,.7,.3,1)`, escalonados de **40ms** entre blocos, no
-  máximo os seis primeiros. Nada de bounce, nada de escala.
-- **Hover:** só em coisa clicável, `140ms ease-out` — o fundo sobe um
-  degrau e a borda acende; nunca mova o elemento.
-- **Press:** `transform: scale(.985)` por `90ms`. É o detalhe que faz a
-  interface parecer responsiva ao toque.
-- **Números que mudam entre coletas** podem contar de → para em `600ms`,
-  uma vez só, quando o bloco entra na tela. Só os da tira.
-- `@media (prefers-reduced-motion: reduce)` zera tudo isso. Obrigatório.
+**O que falta:**
+
+- **Zero `:active` no arquivo inteiro.** Nenhum botão responde ao clique.
+  É a falha mais sentida e a mais barata de consertar: todo elemento
+  clicável ganha `transform: scale(0.97)` em `:active`, com
+  `transition: transform 160ms ease-out`. Escala abaixo de 0.95 exagera;
+  acima de 0.98 não se percebe.
+- **Zero `@media (hover: hover) and (pointer: fine)`.** No celular, tocar
+  dispara o hover e o estado fica grudado. Todo `:hover` vai dentro dessa
+  media query.
+- **Zero animação de entrada.**
+
+**A entrada de conteúdo,** ao trocar de tela:
+
+```css
+opacity: 0 → 1;  transform: translateY(8px) → none;
+transition: opacity 220ms cubic-bezier(0.23, 1, 0.32, 1),
+            transform 220ms cubic-bezier(0.23, 1, 0.32, 1);
+```
+
+Escalonada em **50ms** entre blocos, no máximo os seis primeiros. Use
+**transição com `@starting-style`**, não `@keyframes`: keyframes reiniciam
+do zero quando interrompidos, e aqui a pessoa troca de tela no meio da
+animação o tempo todo. Nada de bounce. Nada de `scale(0)` — nada no mundo
+real aparece do nada.
+
+A curva `cubic-bezier(0.23, 1, 0.32, 1)` é um ease-out forte; as curvas
+nativas do CSS são fracas demais para dar a sensação de intenção.
+
+**Saída mais rápida que a entrada:** entra em 220ms, sai em 120ms. O
+usuário decide devagar e o sistema responde rápido.
+
+**O ⌘K NÃO ANIMA.** A busca é aberta por atalho de teclado, dezenas de
+vezes por dia. Ação repetida por teclado nunca anima — qualquer transição
+ali faz o portal parecer lento e desconectado do comando. Abre e fecha
+seco. Vale para qualquer atalho que venha depois.
+
+**Nada de contador subindo nos números.** Cogitei e está fora: quem abre o
+portal todo dia veria a mesma animação todo dia, e o que é visto todo dia
+tem de ser instantâneo. Animação decorativa só onde é rara.
+
+**`prefers-reduced-motion` NÃO é desligar tudo** — esta parte da versão
+anterior estava errada. Movimento reduzido significa manter o que ajuda a
+entender (opacidade, cor) e remover o que se desloca:
+
+```css
+@media (prefers-reduced-motion: reduce) {
+  /* mantém: opacity e color */
+  /* remove: translateY, scale */
+}
+```
 
 ### 8.5 · Foco e teclado
 
@@ -564,3 +607,24 @@ estrutura de menu lateral, a ordem das telas e a linguagem de balcão. O
 pedido do cliente foi explícito: **gosta de como está distribuído e do
 estilo — quer só mais moderno.** Modernidade aqui é acabamento, não
 identidade nova.
+
+### 8.8 · A auditoria, linha a linha
+
+| antes | depois | por quê |
+| --- | --- | --- |
+| nenhum `:active` no arquivo | `transform: scale(0.97)` com `transition: transform 160ms ease-out` | botão precisa responder ao toque; é o que faz a interface parecer viva |
+| `:hover` solto | dentro de `@media (hover: hover) and (pointer: fine)` | no celular o toque dispara hover e o estado fica preso |
+| 14 tamanhos de fonte entre 9 e 15,5px | 6 degraus: 11 · 13 · 15 · 20 · 34 · 44 | meio pixel de diferença não é hierarquia, é ruído |
+| 21 bordas de 1px, 3 sombras | espaço + um degrau de fundo; borda só no que é crítico ou selecionado | contorno em tudo é o que dá ar de painel administrativo antigo |
+| 6 raios de canto | 3: `6px` · `14px` · `999px` | um raio por papel |
+| sem animação de entrada | `opacity` + `translateY(8px)`, 220ms, `cubic-bezier(0.23, 1, 0.32, 1)`, escalonado 50ms | conteúdo que aparece seco parece quebrado |
+| (se usar) `@keyframes` na entrada | transição com `@starting-style` | keyframes reiniciam do zero ao ser interrompidos; troca de tela interrompe o tempo todo |
+| entrada e saída na mesma duração | entra 220ms, sai 120ms | o sistema responde mais rápido do que a pessoa decide |
+| `transition: transform .15s ease` no que entra | `cubic-bezier(0.23, 1, 0.32, 1)` | as curvas nativas são fracas; `ease` fica só em cor e hover, onde está certo |
+| ⌘K com transição | sem animação nenhuma | ação de teclado repetida dezenas de vezes por dia nunca anima |
+| 2 `focus-visible` no arquivo | anel em todo elemento clicável | quem usa ⌘K navega por teclado |
+
+**O que já está certo e não deve ser tocado:** não há `transition: all`,
+não há `ease-in`, só se anima cor e transform (nada de `height`, `width`,
+`padding` — essas passam por layout e paint e derrubam quadro), e o
+`.15s ease` das mudanças de cor está na curva correta.
