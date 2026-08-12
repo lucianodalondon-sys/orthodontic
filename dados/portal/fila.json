@@ -3,9 +3,9 @@
  "corte": "2026-08-12",
  "pergunta": "Em quais unidades a OrthoDontic está perdendo atenção local, para qual concorrente, e onde intervir primeiro neste mês?",
  "o_que_e_atencao": "participação observável em busca, avaliações, publicidade e atividade digital. Não é faturamento — nenhum número desta tela vem de dado interno da rede.",
- "unidades": 10,
- "em_risco": 1,
- "manchete": "1 de 10 unidades medidas está em faixa vermelha. A primeira é PR · Londrina.",
+ "unidades": 32,
+ "em_risco": 3,
+ "manchete": "3 de 32 unidades medidas estão em faixa vermelha. A primeira é PR · Londrina.",
  "criterio": [
   {
    "chave": "parada",
@@ -109,6 +109,116 @@
    }
   },
   {
+   "local_id": "ortho_soro_jardim_faculdade",
+   "praca_id": "sorocaba",
+   "rotulo": "SP · Sorocaba",
+   "unidade": "OrthoDontic",
+   "unidade_curta": null,
+   "idade_meses": 108,
+   "urgencia": 65,
+   "faixa": "vermelha",
+   "ritmo": 1.0,
+   "meses": 1,
+   "nota": 4.3,
+   "avaliacoes": 111,
+   "posicao": 17,
+   "de": 17,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 30,
+     "titulo": "O contador de avaliações parou",
+     "chave": "parada",
+     "fato": "apenas 1 mês seguido com movimento acima do típico da própria unidade; o ritmo medido é 1.0 avaliações/mês",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "peso": 20,
+     "titulo": "Está na metade de baixo da própria praça",
+     "chave": "posicao",
+     "fato": "17º lugar de 17 clínicas medidas na praça",
+     "fonte": "dados/portal/rede_cruzamento.json"
+    },
+    {
+     "peso": 15,
+     "titulo": "Nota abaixo da mediana da praça",
+     "chave": "nota",
+     "fato": "nota 4.3 contra mediana 4.9 das 17 clínicas medidas na praça",
+     "fonte": "dados/serie/places.jsonl"
+    }
+   ],
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "pos": 2,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-26"
+   }
+  },
+  {
+   "local_id": "ortho_gyn_st_oeste",
+   "praca_id": "goiania",
+   "rotulo": "GO · Goiânia",
+   "unidade": "OrthoDontic",
+   "unidade_curta": null,
+   "idade_meses": 30,
+   "urgencia": 65,
+   "faixa": "vermelha",
+   "ritmo": 4.3,
+   "meses": 0,
+   "nota": 4.2,
+   "avaliacoes": 270,
+   "posicao": 16,
+   "de": 18,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 30,
+     "titulo": "O contador de avaliações parou",
+     "chave": "parada",
+     "fato": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 4.3 avaliações/mês",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "peso": 20,
+     "titulo": "Está na metade de baixo da própria praça",
+     "chave": "posicao",
+     "fato": "16º lugar de 18 clínicas medidas na praça",
+     "fonte": "dados/portal/rede_cruzamento.json"
+    },
+    {
+     "peso": 15,
+     "titulo": "Nota abaixo da mediana da praça",
+     "chave": "nota",
+     "fato": "nota 4.2 contra mediana 4.9 das 18 clínicas medidas na praça",
+     "fonte": "dados/serie/places.jsonl"
+    }
+   ],
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "pos": 3,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-26"
+   }
+  },
+  {
    "local_id": "ortho_cba_dom_bosco",
    "praca_id": "cuiaba",
    "rotulo": "MT · Cuiabá",
@@ -147,13 +257,61 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 2,
+   "pos": 4,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
     "dias_aberta": 2,
     "prazo_dias": 14,
     "vence_em": "2026-08-24"
+   }
+  },
+  {
+   "local_id": "ortho_cwb_centro_4",
+   "praca_id": "curitiba",
+   "rotulo": "PR · Curitiba",
+   "unidade": "OrthoDontic",
+   "unidade_curta": null,
+   "idade_meses": 78,
+   "urgencia": 50,
+   "faixa": "amarela",
+   "ritmo": 1.6,
+   "meses": 0,
+   "nota": 4.7,
+   "avaliacoes": 126,
+   "posicao": 19,
+   "de": 19,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 30,
+     "titulo": "O contador de avaliações parou",
+     "chave": "parada",
+     "fato": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 1.6 avaliações/mês",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "peso": 20,
+     "titulo": "Está na metade de baixo da própria praça",
+     "chave": "posicao",
+     "fato": "19º lugar de 19 clínicas medidas na praça",
+     "fonte": "dados/portal/rede_cruzamento.json"
+    }
+   ],
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "pos": 5,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-26"
    }
   },
   {
@@ -195,7 +353,7 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 3,
+   "pos": 6,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
@@ -243,13 +401,205 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 4,
+   "pos": 7,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
     "dias_aberta": 2,
     "prazo_dias": 14,
     "vence_em": "2026-08-24"
+   }
+  },
+  {
+   "local_id": "ortho_gyn_st_morada_do_sol",
+   "praca_id": "goiania",
+   "rotulo": "GO · Goiânia",
+   "unidade": "OrthoDontic Mangalô",
+   "unidade_curta": "Mangalô",
+   "idade_meses": 27,
+   "urgencia": 50,
+   "faixa": "amarela",
+   "ritmo": 4.4,
+   "meses": 1,
+   "nota": 5,
+   "avaliacoes": 124,
+   "posicao": 15,
+   "de": 18,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 30,
+     "titulo": "O contador de avaliações parou",
+     "chave": "parada",
+     "fato": "apenas 1 mês seguido com movimento acima do típico da própria unidade; o ritmo medido é 4.4 avaliações/mês",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "peso": 20,
+     "titulo": "Está na metade de baixo da própria praça",
+     "chave": "posicao",
+     "fato": "15º lugar de 18 clínicas medidas na praça",
+     "fonte": "dados/portal/rede_cruzamento.json"
+    }
+   ],
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "pos": 8,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-26"
+   }
+  },
+  {
+   "local_id": "ortho_gyn_jardim_tropical",
+   "praca_id": "goiania",
+   "rotulo": "GO · Goiânia",
+   "unidade": "OrthoDontic",
+   "unidade_curta": null,
+   "idade_meses": 18,
+   "urgencia": 50,
+   "faixa": "amarela",
+   "ritmo": 6.8,
+   "meses": 0,
+   "nota": 4.7,
+   "avaliacoes": 152,
+   "posicao": 14,
+   "de": 18,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 30,
+     "titulo": "O contador de avaliações parou",
+     "chave": "parada",
+     "fato": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 6.8 avaliações/mês",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "peso": 20,
+     "titulo": "Está na metade de baixo da própria praça",
+     "chave": "posicao",
+     "fato": "14º lugar de 18 clínicas medidas na praça",
+     "fonte": "dados/portal/rede_cruzamento.json"
+    }
+   ],
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "pos": 9,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-26"
+   }
+  },
+  {
+   "local_id": "ortho_joi_aventureiro",
+   "praca_id": "joinville",
+   "rotulo": "SC · Joinville",
+   "unidade": "OrthoDontic",
+   "unidade_curta": null,
+   "idade_meses": 20,
+   "urgencia": 50,
+   "faixa": "amarela",
+   "ritmo": 5.9,
+   "meses": 2,
+   "nota": 4.9,
+   "avaliacoes": 170,
+   "posicao": 13,
+   "de": 17,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 30,
+     "titulo": "O contador de avaliações parou",
+     "chave": "parada",
+     "fato": "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 5.9 avaliações/mês",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "peso": 20,
+     "titulo": "Está na metade de baixo da própria praça",
+     "chave": "posicao",
+     "fato": "13º lugar de 17 clínicas medidas na praça",
+     "fonte": "dados/portal/rede_cruzamento.json"
+    }
+   ],
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "pos": 10,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-26"
+   }
+  },
+  {
+   "local_id": "ortho_poa_cristo_redentor",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic",
+   "unidade_curta": null,
+   "idade_meses": 16,
+   "urgencia": 50,
+   "faixa": "amarela",
+   "ritmo": 7.5,
+   "meses": 2,
+   "nota": 4.7,
+   "avaliacoes": 245,
+   "posicao": 12,
+   "de": 21,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 30,
+     "titulo": "O contador de avaliações parou",
+     "chave": "parada",
+     "fato": "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 7.5 avaliações/mês",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "peso": 20,
+     "titulo": "Está na metade de baixo da própria praça",
+     "chave": "posicao",
+     "fato": "12º lugar de 21 clínicas medidas na praça",
+     "fonte": "dados/portal/rede_cruzamento.json"
+    }
+   ],
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "pos": 11,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-26"
    }
   },
   {
@@ -291,13 +641,157 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 5,
+   "pos": 12,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
     "dias_aberta": 2,
     "prazo_dias": 14,
     "vence_em": "2026-08-24"
+   }
+  },
+  {
+   "local_id": "ortho_soro_vila_formosa",
+   "praca_id": "sorocaba",
+   "rotulo": "SP · Sorocaba",
+   "unidade": "OrthoDontic",
+   "unidade_curta": null,
+   "idade_meses": 10,
+   "urgencia": 40,
+   "faixa": "amarela",
+   "ritmo": 11.4,
+   "meses": 2,
+   "nota": 4.9,
+   "avaliacoes": 161,
+   "posicao": 10,
+   "de": 17,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 20,
+     "titulo": "Unidade nova que ainda não engatou",
+     "chave": "nao_engatou",
+     "fato": "a primeira avaliação é de 2025-09-19, há 10 meses, e o ritmo medido é 11.4/mês — a unidade ainda não engatou",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "peso": 20,
+     "titulo": "Está na metade de baixo da própria praça",
+     "chave": "posicao",
+     "fato": "10º lugar de 17 clínicas medidas na praça",
+     "fonte": "dados/portal/rede_cruzamento.json"
+    }
+   ],
+   "acao": {
+    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
+    "prazo": "60 dias",
+    "dono": "consultor de campo",
+    "custo": "verba de abertura",
+    "por_causa_de": "nao_engatou"
+   },
+   "pos": 13,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 60,
+    "vence_em": "2026-10-11"
+   }
+  },
+  {
+   "local_id": "ortho_soro_centro",
+   "praca_id": "sorocaba",
+   "rotulo": "SP · Sorocaba",
+   "unidade": "OrthoDontic",
+   "unidade_curta": null,
+   "idade_meses": 92,
+   "urgencia": 35,
+   "faixa": "amarela",
+   "ritmo": 1.3,
+   "meses": 3,
+   "nota": 4.5,
+   "avaliacoes": 116,
+   "posicao": 16,
+   "de": 17,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 20,
+     "titulo": "Está na metade de baixo da própria praça",
+     "chave": "posicao",
+     "fato": "16º lugar de 17 clínicas medidas na praça",
+     "fonte": "dados/portal/rede_cruzamento.json"
+    },
+    {
+     "peso": 15,
+     "titulo": "Nota abaixo da mediana da praça",
+     "chave": "nota",
+     "fato": "nota 4.5 contra mediana 4.9 das 17 clínicas medidas na praça",
+     "fonte": "dados/serie/places.jsonl"
+    }
+   ],
+   "acao": {
+    "o_que": "Auditar a ficha do Google — foto, horário, serviços, resposta a avaliação",
+    "prazo": "7 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "posicao"
+   },
+   "pos": 14,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 7,
+    "vence_em": "2026-08-19"
+   }
+  },
+  {
+   "local_id": "ortho_gyn_st_central",
+   "praca_id": "goiania",
+   "rotulo": "GO · Goiânia",
+   "unidade": "OrthoDontic",
+   "unidade_curta": null,
+   "idade_meses": 17,
+   "urgencia": 35,
+   "faixa": "amarela",
+   "ritmo": 6.9,
+   "meses": 3,
+   "nota": 4.6,
+   "avaliacoes": 268,
+   "posicao": 13,
+   "de": 18,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 20,
+     "titulo": "Está na metade de baixo da própria praça",
+     "chave": "posicao",
+     "fato": "13º lugar de 18 clínicas medidas na praça",
+     "fonte": "dados/portal/rede_cruzamento.json"
+    },
+    {
+     "peso": 15,
+     "titulo": "Nota abaixo da mediana da praça",
+     "chave": "nota",
+     "fato": "nota 4.6 contra mediana 4.9 das 18 clínicas medidas na praça",
+     "fonte": "dados/serie/places.jsonl"
+    }
+   ],
+   "acao": {
+    "o_que": "Auditar a ficha do Google — foto, horário, serviços, resposta a avaliação",
+    "prazo": "7 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "posicao"
+   },
+   "pos": 15,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 7,
+    "vence_em": "2026-08-19"
    }
   },
   {
@@ -339,13 +833,109 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "posicao"
    },
-   "pos": 6,
+   "pos": 16,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
     "dias_aberta": 2,
     "prazo_dias": 7,
     "vence_em": "2026-08-17"
+   }
+  },
+  {
+   "local_id": "ortho_joi_centro",
+   "praca_id": "joinville",
+   "rotulo": "SC · Joinville",
+   "unidade": "OrthoDontic",
+   "unidade_curta": null,
+   "idade_meses": 11,
+   "urgencia": 35,
+   "faixa": "amarela",
+   "ritmo": 10.9,
+   "meses": 3,
+   "nota": 4.6,
+   "avaliacoes": 513,
+   "posicao": 11,
+   "de": 17,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 20,
+     "titulo": "Está na metade de baixo da própria praça",
+     "chave": "posicao",
+     "fato": "11º lugar de 17 clínicas medidas na praça",
+     "fonte": "dados/portal/rede_cruzamento.json"
+    },
+    {
+     "peso": 15,
+     "titulo": "Nota abaixo da mediana da praça",
+     "chave": "nota",
+     "fato": "nota 4.6 contra mediana 4.9 das 17 clínicas medidas na praça",
+     "fonte": "dados/serie/places.jsonl"
+    }
+   ],
+   "acao": {
+    "o_que": "Auditar a ficha do Google — foto, horário, serviços, resposta a avaliação",
+    "prazo": "7 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "posicao"
+   },
+   "pos": 17,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 7,
+    "vence_em": "2026-08-19"
+   }
+  },
+  {
+   "local_id": "ortho_poa_centro_historico_3",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic",
+   "unidade_curta": null,
+   "idade_meses": 15,
+   "urgencia": 35,
+   "faixa": "amarela",
+   "ritmo": 8.2,
+   "meses": 3,
+   "nota": 4.4,
+   "avaliacoes": 176,
+   "posicao": 11,
+   "de": 21,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 20,
+     "titulo": "Está na metade de baixo da própria praça",
+     "chave": "posicao",
+     "fato": "11º lugar de 21 clínicas medidas na praça",
+     "fonte": "dados/portal/rede_cruzamento.json"
+    },
+    {
+     "peso": 15,
+     "titulo": "Nota abaixo da mediana da praça",
+     "chave": "nota",
+     "fato": "nota 4.4 contra mediana 4.8 das 21 clínicas medidas na praça",
+     "fonte": "dados/serie/places.jsonl"
+    }
+   ],
+   "acao": {
+    "o_que": "Auditar a ficha do Google — foto, horário, serviços, resposta a avaliação",
+    "prazo": "7 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "posicao"
+   },
+   "pos": 18,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 7,
+    "vence_em": "2026-08-19"
    }
   },
   {
@@ -387,13 +977,348 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "posicao"
    },
-   "pos": 7,
+   "pos": 19,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
     "dias_aberta": 2,
     "prazo_dias": 7,
     "vence_em": "2026-08-17"
+   }
+  },
+  {
+   "local_id": "ortho_joi_america",
+   "praca_id": "joinville",
+   "rotulo": "SC · Joinville",
+   "unidade": "OrthoDontic Sorria Sempre",
+   "unidade_curta": "Sorria Sempre",
+   "idade_meses": 6,
+   "urgencia": 35,
+   "faixa": "amarela",
+   "ritmo": 19.2,
+   "meses": 2,
+   "nota": 4.3,
+   "avaliacoes": 377,
+   "posicao": 7,
+   "de": 17,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 20,
+     "titulo": "Unidade nova que ainda não engatou",
+     "chave": "nao_engatou",
+     "fato": "a primeira avaliação é de 2026-02-02, há 6 meses, e o ritmo medido é 19.2/mês — a unidade ainda não engatou",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "peso": 15,
+     "titulo": "Nota abaixo da mediana da praça",
+     "chave": "nota",
+     "fato": "nota 4.3 contra mediana 4.9 das 17 clínicas medidas na praça",
+     "fonte": "dados/serie/places.jsonl"
+    }
+   ],
+   "acao": {
+    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
+    "prazo": "60 dias",
+    "dono": "consultor de campo",
+    "custo": "verba de abertura",
+    "por_causa_de": "nao_engatou"
+   },
+   "pos": 20,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 60,
+    "vence_em": "2026-10-11"
+   }
+  },
+  {
+   "local_id": "ortho_poa_rio_branco",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic",
+   "unidade_curta": null,
+   "idade_meses": 10,
+   "urgencia": 20,
+   "faixa": "verde",
+   "ritmo": 3.0,
+   "meses": 3,
+   "nota": 4.5,
+   "avaliacoes": 32,
+   "posicao": 21,
+   "de": 21,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 20,
+     "titulo": "Está na metade de baixo da própria praça",
+     "chave": "posicao",
+     "fato": "21º lugar de 21 clínicas medidas na praça",
+     "fonte": "dados/portal/rede_cruzamento.json"
+    }
+   ],
+   "acao": {
+    "o_que": "Auditar a ficha do Google — foto, horário, serviços, resposta a avaliação",
+    "prazo": "7 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "posicao"
+   },
+   "pos": 21,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 7,
+    "vence_em": "2026-08-19"
+   }
+  },
+  {
+   "local_id": "ortho_cwb_portao",
+   "praca_id": "curitiba",
+   "rotulo": "PR · Curitiba",
+   "unidade": "OrthoDontic",
+   "unidade_curta": null,
+   "idade_meses": 8,
+   "urgencia": 20,
+   "faixa": "verde",
+   "ritmo": 13.7,
+   "meses": 7,
+   "nota": 4.8,
+   "avaliacoes": 270,
+   "posicao": 12,
+   "de": 19,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 20,
+     "titulo": "Está na metade de baixo da própria praça",
+     "chave": "posicao",
+     "fato": "12º lugar de 19 clínicas medidas na praça",
+     "fonte": "dados/portal/rede_cruzamento.json"
+    }
+   ],
+   "acao": {
+    "o_que": "Auditar a ficha do Google — foto, horário, serviços, resposta a avaliação",
+    "prazo": "7 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "posicao"
+   },
+   "pos": 22,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 7,
+    "vence_em": "2026-08-19"
+   }
+  },
+  {
+   "local_id": "ortho_poa_cavalhada",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic Clínica Odontológica em Porto Alegre RS",
+   "unidade_curta": "Clínica Odontológica em Porto Alegre RS",
+   "idade_meses": 11,
+   "urgencia": 20,
+   "faixa": "verde",
+   "ritmo": 10.8,
+   "meses": 2,
+   "nota": 4.6,
+   "avaliacoes": 207,
+   "posicao": 9,
+   "de": 21,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 20,
+     "titulo": "Unidade nova que ainda não engatou",
+     "chave": "nao_engatou",
+     "fato": "a primeira avaliação é de 2025-09-09, há 11 meses, e o ritmo medido é 10.8/mês — a unidade ainda não engatou",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "acao": {
+    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
+    "prazo": "60 dias",
+    "dono": "consultor de campo",
+    "custo": "verba de abertura",
+    "por_causa_de": "nao_engatou"
+   },
+   "pos": 23,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 60,
+    "vence_em": "2026-10-11"
+   }
+  },
+  {
+   "local_id": "ortho_cwb_centro_3",
+   "praca_id": "curitiba",
+   "rotulo": "PR · Curitiba",
+   "unidade": "OrthoDontic",
+   "unidade_curta": null,
+   "idade_meses": 7,
+   "urgencia": 20,
+   "faixa": "verde",
+   "ritmo": 15.5,
+   "meses": 0,
+   "nota": 4.9,
+   "avaliacoes": 491,
+   "posicao": 8,
+   "de": 19,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 20,
+     "titulo": "Unidade nova que ainda não engatou",
+     "chave": "nao_engatou",
+     "fato": "a primeira avaliação é de 2025-12-20, há 7 meses, e o ritmo medido é 15.5/mês — a unidade ainda não engatou",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "acao": {
+    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
+    "prazo": "60 dias",
+    "dono": "consultor de campo",
+    "custo": "verba de abertura",
+    "por_causa_de": "nao_engatou"
+   },
+   "pos": 24,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 60,
+    "vence_em": "2026-10-11"
+   }
+  },
+  {
+   "local_id": "ortho_poa_centro_historico",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic",
+   "unidade_curta": null,
+   "idade_meses": 8,
+   "urgencia": 20,
+   "faixa": "verde",
+   "ritmo": 15.1,
+   "meses": 2,
+   "nota": 4.8,
+   "avaliacoes": 433,
+   "posicao": 6,
+   "de": 21,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 20,
+     "titulo": "Unidade nova que ainda não engatou",
+     "chave": "nao_engatou",
+     "fato": "a primeira avaliação é de 2025-12-11, há 8 meses, e o ritmo medido é 15.1/mês — a unidade ainda não engatou",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "acao": {
+    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
+    "prazo": "60 dias",
+    "dono": "consultor de campo",
+    "custo": "verba de abertura",
+    "por_causa_de": "nao_engatou"
+   },
+   "pos": 25,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 60,
+    "vence_em": "2026-10-11"
+   }
+  },
+  {
+   "local_id": "ortho_cwb_centro_2",
+   "praca_id": "curitiba",
+   "rotulo": "PR · Curitiba",
+   "unidade": "OrthoDontic",
+   "unidade_curta": null,
+   "idade_meses": 2,
+   "urgencia": 20,
+   "faixa": "verde",
+   "ritmo": 57.9,
+   "meses": 2,
+   "nota": 4.7,
+   "avaliacoes": 719,
+   "posicao": 4,
+   "de": 19,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 20,
+     "titulo": "Unidade nova que ainda não engatou",
+     "chave": "nao_engatou",
+     "fato": "a primeira avaliação é de 2026-06-10, há 2 meses, e o ritmo medido é 57.9/mês — a unidade ainda não engatou",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "acao": {
+    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
+    "prazo": "60 dias",
+    "dono": "consultor de campo",
+    "custo": "verba de abertura",
+    "por_causa_de": "nao_engatou"
+   },
+   "pos": 26,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 60,
+    "vence_em": "2026-10-11"
+   }
+  },
+  {
+   "local_id": "ortho_cwb_centro",
+   "praca_id": "curitiba",
+   "rotulo": "PR · Curitiba",
+   "unidade": "OrthoDontic",
+   "unidade_curta": null,
+   "idade_meses": 1,
+   "urgencia": 20,
+   "faixa": "verde",
+   "ritmo": 82.9,
+   "meses": 2,
+   "nota": 4.6,
+   "avaliacoes": 1012,
+   "posicao": 2,
+   "de": 19,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 20,
+     "titulo": "Unidade nova que ainda não engatou",
+     "chave": "nao_engatou",
+     "fato": "a primeira avaliação é de 2026-06-23, há 1 meses, e o ritmo medido é 82.9/mês — a unidade ainda não engatou",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "acao": {
+    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
+    "prazo": "60 dias",
+    "dono": "consultor de campo",
+    "custo": "verba de abertura",
+    "por_causa_de": "nao_engatou"
+   },
+   "pos": 27,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 60,
+    "vence_em": "2026-10-11"
    }
   },
   {
@@ -428,7 +1353,7 @@
     "custo": "verba de mídia",
     "por_causa_de": "silencio"
    },
-   "pos": 8,
+   "pos": 28,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
@@ -436,6 +1361,27 @@
     "prazo_dias": 30,
     "vence_em": "2026-09-09"
    }
+  },
+  {
+   "local_id": "ortho_poa_centro_historico_4",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic - Clínica Odontológica Centro Porto Alegre - Tratamento de Canal - Periodontia - Restauração Dental - Prótese - Clareamento e Limpeza Dental - Aparelho Ortodôntico Metálico e Estético - Emergência - Extração do Siso - Faceta de Porcelana",
+   "unidade_curta": "Clínica Odontológica Centro Porto Alegre - Tratamento de Canal - Periodontia - Restauração Dental - Prótese - Clareamento e Limpeza Dental - Aparelho Ortodôntico Metálico e Estético - Emergência - Extração do Siso - Faceta de Porcelana",
+   "idade_meses": 13,
+   "urgencia": 0,
+   "faixa": "verde",
+   "ritmo": 9.1,
+   "meses": 3,
+   "nota": 4.6,
+   "avaliacoes": 162,
+   "posicao": 10,
+   "de": 21,
+   "quem_avanca": null,
+   "gatilhos": [],
+   "acao": null,
+   "pos": 29,
+   "tarefa": null
   },
   {
    "local_id": "ortho_pp",
@@ -455,7 +1401,28 @@
    "quem_avanca": null,
    "gatilhos": [],
    "acao": null,
-   "pos": 9,
+   "pos": 30,
+   "tarefa": null
+  },
+  {
+   "local_id": "ortho_poa_centro_historico_2",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic",
+   "unidade_curta": null,
+   "idade_meses": 8,
+   "urgencia": 0,
+   "faixa": "verde",
+   "ritmo": 14.4,
+   "meses": 3,
+   "nota": 4.9,
+   "avaliacoes": 209,
+   "posicao": 7,
+   "de": 21,
+   "quem_avanca": null,
+   "gatilhos": [],
+   "acao": null,
+   "pos": 31,
    "tarefa": null
   },
   {
@@ -476,14 +1443,14 @@
    "quem_avanca": null,
    "gatilhos": [],
    "acao": null,
-   "pos": 10,
+   "pos": 32,
    "tarefa": null
   }
  ],
  "tarefas_vencidas": 0,
  "tarefas_resolvidas": [],
  "o_que_isso_nao_ve": [
-  "A rede tem 374 unidades e esta fila mede 10. É 2% da rede.",
+  "A rede tem 374 unidades e esta fila mede 32. É 8% da rede.",
   "Nenhum contrato, lead, agendamento ou receita entra aqui. A fila diz onde a atenção está escorrendo, não quanto isso custou.",
   "O status da tarefa (aberta → vencida → resolvida) vem do próprio dado: 'resolvida' é gatilho que sumiu na medição seguinte. Ninguém de dentro confirma nada — e é por isso que vale."
  ]

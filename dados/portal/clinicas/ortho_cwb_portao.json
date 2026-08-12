@@ -1,0 +1,921 @@
+{
+  "local_id": "ortho_cwb_portao",
+  "praca_id": "curitiba",
+  "apresentacao": {
+    "unidade": "OrthoDontic",
+    "cidade": "PR · Curitiba",
+    "endereco": "R. Maranhão, 2286 - Portão, Curitiba - PR, 80610-001",
+    "desde": null,
+    "medicoes": null,
+    "posicao_na_cidade": null,
+    "clinicas_na_cidade": null,
+    "lojas_irmas": [
+      {
+        "local_id": "ortho_cwb_centro",
+        "unidade": "OrthoDontic Centro"
+      },
+      {
+        "local_id": "ortho_cwb_centro_2",
+        "unidade": "OrthoDontic Centro"
+      },
+      {
+        "local_id": "ortho_cwb_centro_3",
+        "unidade": "OrthoDontic Centro"
+      },
+      {
+        "local_id": "ortho_cwb_centro_4",
+        "unidade": "OrthoDontic Centro"
+      }
+    ],
+    "frase": null
+  },
+  "rotulo": "PR · Curitiba",
+  "unidade": "OrthoDontic",
+  "cabecalho": {
+    "nota": 4.8,
+    "avaliacoes": 270,
+    "ritmo": 13.7,
+    "meses_seguidos": 7,
+    "posicao": 12,
+    "de": 19
+  },
+  "faixa": "verde",
+  "urgencia": 20,
+  "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 7,
+    "vence_em": "2026-08-19"
+  },
+  "acao": {
+    "o_que": "Auditar a ficha do Google — foto, horário, serviços, resposta a avaliação",
+    "prazo": "7 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "posicao",
+    "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": null,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "scripts/fila.py",
+      "a_favor": [
+        "12º lugar de 19 clínicas medidas na praça"
+      ],
+      "contra": [],
+      "o_que_aumentaria": "o resultado medido na coleta seguinte (dados/serie/acoes.jsonl)",
+      "procedencia": "sem amostra declarada"
+    }
+  },
+  "gatilhos": [
+    {
+      "peso": 20,
+      "titulo": "Está na metade de baixo da própria praça",
+      "chave": "posicao",
+      "fato": "12º lugar de 19 clínicas medidas na praça",
+      "fonte": "dados/portal/rede_cruzamento.json"
+    }
+  ],
+  "quem_avanca": null,
+  "o_que_mudou": null,
+  "sem_resposta": {
+    "abertas": null,
+    "com_texto": null,
+    "itens": [],
+    "itens_total": 0
+  },
+  "voz_do_paciente": null,
+  "rival": {
+    "comparados": [],
+    "vantagens_deles": [],
+    "fora": [],
+    "fora_total": 0,
+    "sem_comparacao_porque": null
+  },
+  "presenca_na_busca": {
+    "local_id": "ortho_cwb_portao",
+    "praca_id": "curitiba",
+    "rotulo": "PR · Curitiba",
+    "unidade": "OrthoDontic",
+    "avaliacoes_da_ficha": 270,
+    "aparece_em": 1,
+    "de": 213,
+    "pct": 0,
+    "melhor_posicao": 3,
+    "frases_onde_aparece": [
+      {
+        "frase": "aparelho ortodôntico curitiba preços",
+        "posicao": 3,
+        "intencao": "PREÇO"
+      }
+    ],
+    "invisivel": false,
+    "frase_do_topo": "Esta loja aparece em **1 das 213 buscas** que testamos na cidade.",
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 213,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/portas.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+      "procedencia": "medido em 213 buscas testadas, 1 medição"
+    }
+  },
+  "jornada": {
+    "local_id": "ortho_cwb_portao",
+    "unidade": "OrthoDontic Portão",
+    "rotulo": "PR · Curitiba",
+    "com_texto": 95,
+    "sem_estagio": 55,
+    "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
+    "estagios": [
+      {
+        "estagio": "descoberta",
+        "rotulo": "Descoberta",
+        "o_que_e": "como me acharam",
+        "quem_resolve": "marketing e ficha do Google",
+        "medido": true,
+        "avaliacoes": 12,
+        "dor": 0,
+        "elogio": 12,
+        "pct_dor": 0,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": "12 avaliações falam deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "contato",
+        "rotulo": "Contato",
+        "o_que_e": "telefone e WhatsApp",
+        "quem_resolve": "recepção",
+        "medido": false,
+        "avaliacoes": 0,
+        "dor": 0,
+        "elogio": 0,
+        "pct_dor": null,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": null,
+        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+      },
+      {
+        "estagio": "agendamento",
+        "rotulo": "Agendamento",
+        "o_que_e": "marcar e remarcar",
+        "quem_resolve": "recepção",
+        "medido": false,
+        "avaliacoes": 0,
+        "dor": 0,
+        "elogio": 0,
+        "pct_dor": null,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": null,
+        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+      },
+      {
+        "estagio": "recepcao",
+        "rotulo": "Recepção",
+        "o_que_e": "chegar e esperar",
+        "quem_resolve": "recepção",
+        "medido": true,
+        "avaliacoes": 18,
+        "dor": 0,
+        "elogio": 18,
+        "pct_dor": 0,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": "18 avaliações falam deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "avaliacao",
+        "rotulo": "Avaliação",
+        "o_que_e": "a primeira consulta",
+        "quem_resolve": "clínica",
+        "medido": false,
+        "avaliacoes": 0,
+        "dor": 0,
+        "elogio": 0,
+        "pct_dor": null,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": null,
+        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+      },
+      {
+        "estagio": "contratacao",
+        "rotulo": "Contratação",
+        "o_que_e": "preço, contrato e entrada",
+        "quem_resolve": "franqueado",
+        "medido": false,
+        "avaliacoes": 0,
+        "dor": 0,
+        "elogio": 0,
+        "pct_dor": null,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": null,
+        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+      },
+      {
+        "estagio": "clinico",
+        "rotulo": "Atendimento clínico",
+        "o_que_e": "a cadeira",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 23,
+        "dor": 0,
+        "elogio": 23,
+        "pct_dor": 0,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": "23 avaliações falam deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "manutencao",
+        "rotulo": "Manutenção",
+        "o_que_e": "as voltas de cada mês",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 3,
+        "dor": 0,
+        "elogio": 3,
+        "pct_dor": 0,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "3 avaliações falam deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "cobranca",
+        "rotulo": "Cobrança",
+        "o_que_e": "mensalidade e multa",
+        "quem_resolve": "franqueado",
+        "medido": false,
+        "avaliacoes": 0,
+        "dor": 0,
+        "elogio": 0,
+        "pct_dor": null,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": null,
+        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+      },
+      {
+        "estagio": "suporte",
+        "rotulo": "Suporte",
+        "o_que_e": "quando algo dá errado",
+        "quem_resolve": "franqueado",
+        "medido": true,
+        "avaliacoes": 2,
+        "dor": 0,
+        "elogio": 2,
+        "pct_dor": 0,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "2 avaliações falam deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "contencao",
+        "rotulo": "Fim e contenção",
+        "o_que_e": "alta e depois dela",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 5,
+        "dor": 0,
+        "elogio": 5,
+        "pct_dor": 0,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "5 avaliações falam deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      }
+    ],
+    "manchete": "Nenhum momento da jornada concentra dor com amostra suficiente para virar manchete.",
+    "quem_resolve": null,
+    "e_clinico": null,
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 95,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/serie/reviews.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "mais avaliações com texto nesta loja",
+      "procedencia": "medido em 95 avaliações"
+    }
+  },
+  "meu_bairro": {
+    "bairro": "Portão",
+    "clinicas": 3,
+    "vizinhos_fortes": [
+      {
+        "nome": "New Life Odontologia",
+        "nota": 4.8,
+        "avaliacoes": 432
+      },
+      {
+        "nome": "ADEROSSO Odontologia e Estética",
+        "nota": 4.9,
+        "avaliacoes": 173
+      }
+    ],
+    "frase": "3 clínicas varridas, e a unidade da rede está aqui",
+    "e_da_cidade": false
+  },
+  "acoes": {
+    "arcos": [
+      {
+        "arco_id": "ortho_cwb_portao|posicao",
+        "local_id": "ortho_cwb_portao",
+        "praca_id": "curitiba",
+        "gatilho": "posicao",
+        "problema": "12º lugar de 19 clínicas medidas na praça",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-12",
+        "metrica": "posicao",
+        "antes": 12.0,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      }
+    ],
+    "total": 1,
+    "aviso": "O livro nasceu hoje. Nenhum arco completou 21 dias, então ainda não há veredito para ninguém — a primeira resposta vem na coleta seguinte."
+  },
+  "oferta_da_cidade": {
+    "praca_id": "curitiba",
+    "rotulo": "PR · Curitiba",
+    "anuncios_de_aparelho": 38,
+    "anunciantes": 22,
+    "fora_do_produto": 47,
+    "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
+    "sem_texto": 2,
+    "amostra_curta": false,
+    "tese": "A disputa desta cidade é por avaliação grátis — 18 dos 38 anúncios de aparelho medidos falam disso, seguido de alinhador invisível.",
+    "posicao_vaga": "Ninguém está falando de sem entrada — tira a barreira do primeiro pagamento — ataca quem não tem reserva.",
+    "eixos": [
+      {
+        "eixo": "avaliacao_gratis",
+        "rotulo": "Avaliação grátis",
+        "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+        "anuncios": 18,
+        "pct": 47,
+        "frase": "18 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "alinhador",
+        "rotulo": "Alinhador invisível",
+        "o_que_significa": "produto de ticket alto e público adulto",
+        "anuncios": 11,
+        "pct": 29,
+        "frase": "11 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "preco",
+        "rotulo": "Preço na frente",
+        "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
+        "anuncios": 7,
+        "pct": 18,
+        "frase": "7 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "autoridade",
+        "rotulo": "Autoridade técnica",
+        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+        "anuncios": 5,
+        "pct": 13,
+        "frase": "5 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "parcelamento",
+        "rotulo": "Parcelamento",
+        "o_que_significa": "vende a mensalidade, não o tratamento",
+        "anuncios": 4,
+        "pct": 11,
+        "frase": "4 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "estetico",
+        "rotulo": "Aparelho estético",
+        "o_que_significa": "vende discrição — público que trabalha de frente",
+        "anuncios": 4,
+        "pct": 11,
+        "frase": "4 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "publico_infantil",
+        "rotulo": "Falado para criança e adolescente",
+        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+        "anuncios": 3,
+        "pct": 8,
+        "frase": "3 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "publico_adulto",
+        "rotulo": "Falado para adulto",
+        "o_que_significa": "disputa o adulto que adiou o tratamento",
+        "anuncios": 1,
+        "pct": 3,
+        "frase": "1 anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "urgencia",
+        "rotulo": "Urgência e escassez",
+        "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+        "anuncios": 1,
+        "pct": 3,
+        "frase": "1 anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "rapidez",
+        "rotulo": "Rapidez do resultado",
+        "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+        "anuncios": 1,
+        "pct": 3,
+        "frase": "1 anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "sem_entrada",
+        "rotulo": "Sem entrada",
+        "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "prova_social",
+        "rotulo": "Prova social",
+        "o_que_significa": "vende confiança em vez de preço",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      }
+    ],
+    "por_anunciante": [
+      {
+        "anunciante": "FCL Odontologia",
+        "eixos": [
+          "preco",
+          "avaliacao_gratis",
+          "alinhador"
+        ]
+      },
+      {
+        "anunciante": "Odonto Excellence Apucarana - PR",
+        "eixos": [
+          "avaliacao_gratis",
+          "autoridade",
+          "parcelamento"
+        ]
+      },
+      {
+        "anunciante": "Sorria Mais - Curitiba",
+        "eixos": [
+          "preco",
+          "parcelamento",
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "Dr. Gustavo Pimpão Vianna",
+        "eixos": [
+          "rapidez",
+          "avaliacao_gratis",
+          "alinhador"
+        ]
+      },
+      {
+        "anunciante": "Dra. Adriana Bueno Batista",
+        "eixos": [
+          "avaliacao_gratis",
+          "alinhador",
+          "estetico"
+        ]
+      },
+      {
+        "anunciante": "Dr. Julio Cavichiolo",
+        "eixos": [
+          "avaliacao_gratis",
+          "alinhador",
+          "estetico"
+        ]
+      },
+      {
+        "anunciante": "Prestes Odontologia & Ortodontia",
+        "eixos": [
+          "alinhador",
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "Clínica Dream",
+        "eixos": [
+          "publico_adulto",
+          "publico_infantil"
+        ]
+      }
+    ],
+    "e_da_cidade": true
+  },
+  "plano": null,
+  "anuncios_da_cidade": {
+    "e_da_cidade": true,
+    "rotulo": "PR · Curitiba",
+    "manchete": "24 anunciantes compram aparelho em PR · Curitiba, e nenhum é da rede.",
+    "anuncios_ativos": 47,
+    "anunciantes_total": 24,
+    "somos_um_deles": false,
+    "anunciantes": [
+      {
+        "nome": "Prestes Odontologia & Ortodontia",
+        "nosso": false,
+        "anuncios": 10,
+        "paginas": [
+          "1753008324913272"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Quanto custa o alinhador invisível? 👀🦷\n\n📍Atenção Curitiba e região!📍\n\nMuitas pessoas acham que um sorriso alinhado com placas transparentes é algo inacessível. \n\nA verdade é que o valor do alinhador inclui a economia do seu ativo mais precioso: o tempo. ⏰\n\nChega de consultas mens…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odonto Excellence Apucarana - PR",
+        "nosso": false,
+        "anuncios": 4,
+        "paginas": [
+          "332648849934160"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Muito além da estética: a importância de restaurar um dente quebrado. 🦷\n\nUm dente lascado ou quebrado não prejudica apenas a aparência. Ele pode:\n\n➡Causar sensibilidade e dor;\n➡Acumular mais placa bacteriana;\n➡Dificultar a mastigação correta.\n\nA boa notícia é que a restauração de…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Aparelho Dental no mesmo dia",
+        "nosso": false,
+        "anuncios": 3,
+        "paginas": [
+          "311839715342597"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "🦷 CURITIBA!\nQuanto tempo você vai esperar para ter o sorriso que sempre desejou? ✨\n\nComece seu tratamento ortodôntico agora e dê o primeiro passo para dentes mais alinhados, mais confiança e mais autoestima.",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "FCL Odontologia",
+        "nosso": false,
+        "anuncios": 3,
+        "paginas": [
+          "108906650935786"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Aparelho que ninguém vê. \n📍 (Curitiba/PR) \n\nO alinhador invisível é transparente e removível, você tira pra comer e pra escovar os dentes, sem ninguém perceber que está tratando o sorriso. \n\nAqui em Curitiba, a partir de R$ 349. \n\n📍 Centro, R. Lourenço Pinto, 196 - sala 808. \n\nAg…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Sorria Mais - Curitiba",
+        "nosso": false,
+        "anuncios": 3,
+        "paginas": [
+          "792216200649831"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "⚠️Começou a MUTIRÃO do sorriso perfeito em Curitiba!!\n\n✔️Temos 7 vagas disponíveis somente!\nAproveite a chance de receber em nossa clínica:\n\n✅ Avaliação Gratuita\n✅ Instalação do aparelho \n✅ Documentação Grátis\n✅ Clareamento Grátis\n\nVocê pagará apenas uma Pequena Mensalidade com u…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dr. Gustavo Pimpão Vianna",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "230216154194092"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Diga adeus às massinhas e àquelas moldagens desconfortáveis que causam náuseas! 🙅‍♂️✨\n\nAqui na clínica, utilizamos a tecnologia do Scanner Intraoral iTero. Com ele, criamos um mapa digital 3D completo da sua boca em poucos minutos, com precisão absoluta e total conforto.\n\nAlém de…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dra. Mona Marino Dentista Estética e Invisalign",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "587141174478059"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Se você está em Curitiba, talvez seja a hora de acabar com o ronco. 😴✨\n\nO ronco não é apenas um incômodo. Ele pode estar relacionado a alterações respiratórias e impactar diretamente a qualidade do seu sono e da sua saúde.\n\nCansaço ao acordar, sono não reparador e até dores de ca…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Katia",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "1169881759545527"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "O verdadeiro procedimento de sucesso é aquele que ninguém diz que foi feito — apenas elogiam o seu sorriso! ✨\n\nA ortodontia valoriza os seus traços únicos, unindo estética e saúde para que o seu sorriso continue sendo a sua maior marca.\n\nAgende sua avaliação em Curitiba e venha c…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odonto Baron",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "1586886148227349"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Olá Papais e Mamães! Sabemos que uma das maiores dúvidas é qual dentista vai ser melhor para atender seu filho\n\nLembra daquela época em que criança indo ao dentista era sempre uma experiência traumatizante para ele? Por isso, nós da Odonto Baron temos o melhor atendimento especia…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "OdontoCompany Curitiba - Pinheirinho Umbará",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "104486469246658"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "😁✨ Transforme o seu sorriso com o aparelho ortodôntico! ✨😁\n\nChegou a hora de conquistar o sorriso que você sempre sonhou! Na OdontoCompany Pinheirinho, você encontra um tratamento ortodôntico completo para alinhar seus dentes com segurança, conforto e acompanhamento especializado…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Centro Especializado em Aparelhos",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "1169936589532790"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "📍 CURITIBA\n\n🦷 O sorriso que você sempre quis está mais perto do que imagina!\n\nChegou a hora de alinhar seus dentes e recuperar a confiança para sorrir. Conheça nossas opções de aparelho ortodôntico e fale com nossa equipe.\n\n📲 Clique em Enviar mensagem e saiba mais.",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Clínica Dream",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "101626436276508"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "REABILITAÇÃO PARA ADULTOS E CRIANÇAS EM BRUSQUE\n\nVOCÊ está realmente fazendo de tudo pela saúde do seu filho? ❤️\n\n🚶‍♂️ Indo para mais um curso aqui em Curitiba, e me perguntaram se eu ainda fazia Ortodontia e Ortopedia! Faço há 22 anos e nunca vou parar!!\n\nMas existe algo que pou…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dentprime",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "109571392082550"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Você já foi em um dentista que te ouve de verdade? 👂🦷\nAqui na DentPrime, a gente trata seu sorriso com atenção, cuidado e um plano que cabe na sua rotina e no seu bolso 💙\n\nAmbiente acolhedor, profissionais incríveis e um atendimento que vai te surpreender!\n\n📲 Me chame no whats e …",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dr. Julio Cavichiolo",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "962393817233385"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Quem tem uma rotina intensa também pode transformar o sorriso sem comprometer o dia a dia.\n\nO Invisalign permite um tratamento discreto, confortável e planejado para quem precisa estar em reuniões, falar em público e manter sua rotina normalmente.\n\nO resultado do Eduardo mostra e…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dr. Nathan Ferreira Fonseca",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "111543868045099"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Morador de Piraí do Sul, você ainda acha que precisa ir para outra cidade para colocar aparelho?\n\nO Dr. Nathan Fonseca trouxe experiências, técnicas e recursos que conheceu em Curitiba para oferecer um atendimento ortodôntico moderno aqui mesmo na cidade.\n\nQuer saber mais? Clique…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dra. Adriana Bueno Batista",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "555615887631128"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Quem disse que fazer tratamento ortodôntico significa abrir mão das comidas que você ama?\n\nCom os alinhadores invisíveis, você remove o aparelho para comer, aproveita cada momento com mais conforto e depois é só higienizar e recolocá-lo. Simples assim. \n\nMais liberdade para a sua…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dra. Flavia Barboza",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "105627365112142"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Se você está procurando dentista em Curitiba e dentista em Santa Felicidade, não deixe de conhecer nossa clínica e nosso atendimento.\n\n#dentistaemcuritiba #invisaligncuritiba #odontologiacuritiba #santafelicidadecuritiba #esteticacuritiba",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Faculdade Ippeo",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "646419652039310"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "🦷 Especialização em Ortodontia – IPPEO\n\nQuer se tornar um ortodontista completo, atualizado e seguro na prática clínica?\nA Especialização em Ortodontia da Faculdade IPPEO une base científica sólida, muita prática clínica e as tecnologias mais modernas, incluindo alinhadores ortod…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Maxiclin Odontologia",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "245644808916512"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "🦷 Sorriso alinhado, conforto no dia a dia e mais liberdade\ndurante o tratamento.\n\nO Invisalign® é um alinhador transparente que corrige o\nposicionamento dos dentes de forma discreta e confortável,\nsem os fios e bráquetes dos aparelhos convencionais.\n\nAlém da estética, ele oferece…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Meirihellen Cinelli",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "587317351791883"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Invisalign em Curitiba",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Sorria Curitiba - Curitiba",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "1138638462655934"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "🚨 APARELHO GRÁTIS\n\nChegou a oportunidade de começar seu tratamento com mais facilidade.\n\nAparelho incluso\nInstalação inclusa\nAvaliação facilitada\n\nPagando apenas a manutenção mensal.\n\nVagas limitadas por tempo limitado.\n\n📲 Clique e saiba mais.",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Stories Odontologia Curitiba",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "116168374799783"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "🦷 SÍTIO CERCADO!\n\nSeu sorriso dos sonhos não precisa esperar. ✨\n\nComece seu tratamento ortodôntico agora e dê o primeiro passo para conquistar mais confiança, autoestima e um sorriso alinhado.\n\n📲 Clique em Enviar Mensagem e saiba como começar hoje mesmo!",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Vita Sorriso Ortodontia",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "1483602365232943"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "😷 Você evita sorrir nas fotos por causa da falta de um ou mais dentes?\n\nRecupere a segurança para sorrir, falar e mastigar com mais conforto.\n\nNa Vita Sorriso, você faz uma avaliação completa para descobrir a melhor solução para o seu caso.\n\n📲 Clique em Saiba Mais e agende sua av…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "dra.viviane.malfatti",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "881807951674133"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "“Meu filho precisa de aparelho?” Essa dúvida é muito mais comum do que parece 🦷 A resposta depende da fase de desenvolvimento — e quanto antes você souber, melhor para o sorriso dele. Nesse carrossel eu explico:\n✔ O que é dentição mista e por que ela importa\n✔ Quando fazer a prim…",
+        "de_outra_unidade": null
+      }
+    ],
+    "fora_do_produto": 40,
+    "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
+  },
+  "eventos": [
+    {
+      "data": "2026-08-12",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Está na metade de baixo da própria praça",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    }
+  ]
+}

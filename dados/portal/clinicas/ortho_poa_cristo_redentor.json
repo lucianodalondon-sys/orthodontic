@@ -1,0 +1,857 @@
+{
+  "local_id": "ortho_poa_cristo_redentor",
+  "praca_id": "porto_alegre",
+  "apresentacao": {
+    "unidade": "OrthoDontic",
+    "cidade": "RS · Porto Alegre",
+    "endereco": "Av. Assis Brasil, 2553 - Cristo Redentor, Porto Alegre - RS, 91010-006",
+    "desde": null,
+    "medicoes": null,
+    "posicao_na_cidade": null,
+    "clinicas_na_cidade": null,
+    "lojas_irmas": [
+      {
+        "local_id": "ortho_poa_centro_historico",
+        "unidade": "OrthoDontic Centro Histórico"
+      },
+      {
+        "local_id": "ortho_poa_centro_historico_2",
+        "unidade": "OrthoDontic Centro Histórico"
+      },
+      {
+        "local_id": "ortho_poa_cavalhada",
+        "unidade": "OrthoDontic Cavalhada"
+      },
+      {
+        "local_id": "ortho_poa_centro_historico_3",
+        "unidade": "OrthoDontic Centro Histórico"
+      },
+      {
+        "local_id": "ortho_poa_centro_historico_4",
+        "unidade": "OrthoDontic Centro Histórico"
+      },
+      {
+        "local_id": "ortho_poa_rio_branco",
+        "unidade": "OrthoDontic Rio Branco"
+      }
+    ],
+    "frase": null
+  },
+  "rotulo": "RS · Porto Alegre",
+  "unidade": "OrthoDontic",
+  "cabecalho": {
+    "nota": 4.7,
+    "avaliacoes": 245,
+    "ritmo": 7.5,
+    "meses_seguidos": 2,
+    "posicao": 12,
+    "de": 21
+  },
+  "faixa": "amarela",
+  "urgencia": 50,
+  "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-26"
+  },
+  "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada",
+    "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": null,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "scripts/fila.py",
+      "a_favor": [
+        "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 7.5 avaliações/mês",
+        "12º lugar de 21 clínicas medidas na praça"
+      ],
+      "contra": [],
+      "o_que_aumentaria": "o resultado medido na coleta seguinte (dados/serie/acoes.jsonl)",
+      "procedencia": "sem amostra declarada"
+    }
+  },
+  "gatilhos": [
+    {
+      "peso": 30,
+      "titulo": "O contador de avaliações parou",
+      "chave": "parada",
+      "fato": "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 7.5 avaliações/mês",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "peso": 20,
+      "titulo": "Está na metade de baixo da própria praça",
+      "chave": "posicao",
+      "fato": "12º lugar de 21 clínicas medidas na praça",
+      "fonte": "dados/portal/rede_cruzamento.json"
+    }
+  ],
+  "quem_avanca": null,
+  "o_que_mudou": null,
+  "sem_resposta": {
+    "abertas": 2,
+    "com_texto": 2,
+    "itens": [
+      {
+        "nota": 1,
+        "data": "2026-02-08",
+        "texto": "Não recomendo,  fiquei alguns anos em tratamento ortodontico,  não resolveu a mordida profunda, foi apenas gasto e tempo perdido.\nAgora vou ter que fazer tudo de novo em outro lugar.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-10-06",
+        "texto": "Meu filho está com aparelho ortodôntico e cada vez que ele vai fazer manutenção , se tem que trocar ou repor qualquer coisa tipo os braquetes é cobrado um valor extra. O material que eles utilizam é pessimo, sempre cai e tem sempre valor extra p pagar, se continuar assim vou cancelar o contrato e entrar com uma ação p devolução de valores.",
+        "tem_texto": true
+      }
+    ],
+    "itens_total": 2
+  },
+  "voz_do_paciente": null,
+  "rival": {
+    "comparados": [],
+    "vantagens_deles": [],
+    "fora": [],
+    "fora_total": 0,
+    "sem_comparacao_porque": null
+  },
+  "presenca_na_busca": {
+    "local_id": "ortho_poa_cristo_redentor",
+    "praca_id": "porto_alegre",
+    "rotulo": "RS · Porto Alegre",
+    "unidade": "OrthoDontic",
+    "avaliacoes_da_ficha": 245,
+    "aparece_em": 7,
+    "de": 196,
+    "pct": 4,
+    "melhor_posicao": 2,
+    "frases_onde_aparece": [
+      {
+        "frase": "aparelho ortodôntico porto alegre",
+        "posicao": 2,
+        "intencao": "GENÉRICO"
+      },
+      {
+        "frase": "aparelho ortodôntico porto alegre preço",
+        "posicao": 2,
+        "intencao": "PREÇO"
+      },
+      {
+        "frase": "aparelho ortodôntico em porto alegre",
+        "posicao": 2,
+        "intencao": "GENÉRICO"
+      },
+      {
+        "frase": "dentista porto alegre aparelho",
+        "posicao": 3,
+        "intencao": "GENÉRICO"
+      },
+      {
+        "frase": "dentista porto alegre assis brasil",
+        "posicao": 4,
+        "intencao": "BAIRRO"
+      },
+      {
+        "frase": "ortodontista porto alegre",
+        "posicao": 5,
+        "intencao": "GENÉRICO"
+      },
+      {
+        "frase": "dentista 24 horas porto alegre assis brasil",
+        "posicao": 5,
+        "intencao": "URGÊNCIA"
+      }
+    ],
+    "invisivel": false,
+    "frase_do_topo": "Esta loja aparece em **7 das 196 buscas** que testamos na cidade.",
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 196,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/portas.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+      "procedencia": "medido em 196 buscas testadas, 1 medição"
+    }
+  },
+  "jornada": {
+    "local_id": "ortho_poa_cristo_redentor",
+    "unidade": "OrthoDontic Cristo Redentor",
+    "rotulo": "RS · Porto Alegre",
+    "com_texto": 85,
+    "sem_estagio": 44,
+    "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
+    "estagios": [
+      {
+        "estagio": "descoberta",
+        "rotulo": "Descoberta",
+        "o_que_e": "como me acharam",
+        "quem_resolve": "marketing e ficha do Google",
+        "medido": true,
+        "avaliacoes": 12,
+        "dor": 1,
+        "elogio": 11,
+        "pct_dor": 8,
+        "amostra_curta": false,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2026-02-08",
+            "texto": "Não recomendo,  fiquei alguns anos em tratamento ortodontico,  não resolveu a mordida profunda, foi apenas gasto e tempo perdido.\nAgora vou ter que fazer tudo de novo em outro lugar."
+          }
+        ],
+        "frase": "12 avaliações falam deste momento, 1 com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "contato",
+        "rotulo": "Contato",
+        "o_que_e": "telefone e WhatsApp",
+        "quem_resolve": "recepção",
+        "medido": false,
+        "avaliacoes": 0,
+        "dor": 0,
+        "elogio": 0,
+        "pct_dor": null,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": null,
+        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+      },
+      {
+        "estagio": "agendamento",
+        "rotulo": "Agendamento",
+        "o_que_e": "marcar e remarcar",
+        "quem_resolve": "recepção",
+        "medido": true,
+        "avaliacoes": 1,
+        "dor": 0,
+        "elogio": 1,
+        "pct_dor": 0,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "recepcao",
+        "rotulo": "Recepção",
+        "o_que_e": "chegar e esperar",
+        "quem_resolve": "recepção",
+        "medido": true,
+        "avaliacoes": 19,
+        "dor": 0,
+        "elogio": 19,
+        "pct_dor": 0,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": "19 avaliações falam deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "avaliacao",
+        "rotulo": "Avaliação",
+        "o_que_e": "a primeira consulta",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 5,
+        "dor": 0,
+        "elogio": 5,
+        "pct_dor": 0,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "5 avaliações falam deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "contratacao",
+        "rotulo": "Contratação",
+        "o_que_e": "preço, contrato e entrada",
+        "quem_resolve": "franqueado",
+        "medido": true,
+        "avaliacoes": 4,
+        "dor": 1,
+        "elogio": 3,
+        "pct_dor": 25,
+        "amostra_curta": true,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2025-10-06",
+            "texto": "Meu filho está com aparelho ortodôntico e cada vez que ele vai fazer manutenção , se tem que trocar ou repor qualquer coisa tipo os braquetes é cobrado um valor extra. O material que eles utilizam é pessimo, sempre cai e tem sempre valor extra p pagar, se continuar assim vou cancelar o contrato e entrar com uma ação p devolução de valores."
+          }
+        ],
+        "frase": "4 avaliações falam deste momento, 1 com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "clinico",
+        "rotulo": "Atendimento clínico",
+        "o_que_e": "a cadeira",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 17,
+        "dor": 0,
+        "elogio": 17,
+        "pct_dor": 0,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": "17 avaliações falam deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "manutencao",
+        "rotulo": "Manutenção",
+        "o_que_e": "as voltas de cada mês",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 1,
+        "dor": 1,
+        "elogio": 0,
+        "pct_dor": 100,
+        "amostra_curta": true,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2025-10-06",
+            "texto": "Meu filho está com aparelho ortodôntico e cada vez que ele vai fazer manutenção , se tem que trocar ou repor qualquer coisa tipo os braquetes é cobrado um valor extra. O material que eles utilizam é pessimo, sempre cai e tem sempre valor extra p pagar, se continuar assim vou cancelar o contrato e entrar com uma ação p devolução de valores."
+          }
+        ],
+        "frase": "1 avaliação fala deste momento, 1 com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "cobranca",
+        "rotulo": "Cobrança",
+        "o_que_e": "mensalidade e multa",
+        "quem_resolve": "franqueado",
+        "medido": true,
+        "avaliacoes": 1,
+        "dor": 0,
+        "elogio": 1,
+        "pct_dor": 0,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "suporte",
+        "rotulo": "Suporte",
+        "o_que_e": "quando algo dá errado",
+        "quem_resolve": "franqueado",
+        "medido": false,
+        "avaliacoes": 0,
+        "dor": 0,
+        "elogio": 0,
+        "pct_dor": null,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": null,
+        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+      },
+      {
+        "estagio": "contencao",
+        "rotulo": "Fim e contenção",
+        "o_que_e": "alta e depois dela",
+        "quem_resolve": "clínica",
+        "medido": false,
+        "avaliacoes": 0,
+        "dor": 0,
+        "elogio": 0,
+        "pct_dor": null,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": null,
+        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+      }
+    ],
+    "manchete": "Nenhum momento da jornada concentra dor com amostra suficiente para virar manchete.",
+    "quem_resolve": null,
+    "e_clinico": null,
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 85,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/serie/reviews.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "mais avaliações com texto nesta loja",
+      "procedencia": "medido em 85 avaliações"
+    }
+  },
+  "meu_bairro": {
+    "bairro": "Cristo Redentor",
+    "clinicas": 1,
+    "vizinhos_fortes": [],
+    "frase": "1 clínica varrida, e a unidade da rede está aqui",
+    "e_da_cidade": false
+  },
+  "acoes": {
+    "arcos": [
+      {
+        "arco_id": "ortho_poa_cristo_redentor|parada",
+        "local_id": "ortho_poa_cristo_redentor",
+        "praca_id": "porto_alegre",
+        "gatilho": "parada",
+        "problema": "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 7.5 avaliações/mês",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-12",
+        "metrica": "ritmo",
+        "antes": 7.5,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      },
+      {
+        "arco_id": "ortho_poa_cristo_redentor|posicao",
+        "local_id": "ortho_poa_cristo_redentor",
+        "praca_id": "porto_alegre",
+        "gatilho": "posicao",
+        "problema": "12º lugar de 21 clínicas medidas na praça",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-12",
+        "metrica": "posicao",
+        "antes": 12.0,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      }
+    ],
+    "total": 2,
+    "aviso": "O livro nasceu hoje. Nenhum arco completou 21 dias, então ainda não há veredito para ninguém — a primeira resposta vem na coleta seguinte."
+  },
+  "oferta_da_cidade": {
+    "praca_id": "porto_alegre",
+    "rotulo": "RS · Porto Alegre",
+    "anuncios_de_aparelho": 41,
+    "anunciantes": 14,
+    "fora_do_produto": 117,
+    "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
+    "sem_texto": 2,
+    "amostra_curta": false,
+    "tese": "A disputa desta cidade é por alinhador invisível — 19 dos 41 anúncios de aparelho medidos falam disso, seguido de avaliação grátis.",
+    "posicao_vaga": "Ninguém está falando de sem entrada — tira a barreira do primeiro pagamento — ataca quem não tem reserva.",
+    "eixos": [
+      {
+        "eixo": "alinhador",
+        "rotulo": "Alinhador invisível",
+        "o_que_significa": "produto de ticket alto e público adulto",
+        "anuncios": 19,
+        "pct": 46,
+        "frase": "19 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "avaliacao_gratis",
+        "rotulo": "Avaliação grátis",
+        "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+        "anuncios": 6,
+        "pct": 15,
+        "frase": "6 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "urgencia",
+        "rotulo": "Urgência e escassez",
+        "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+        "anuncios": 5,
+        "pct": 12,
+        "frase": "5 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "autoridade",
+        "rotulo": "Autoridade técnica",
+        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+        "anuncios": 5,
+        "pct": 12,
+        "frase": "5 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "preco",
+        "rotulo": "Preço na frente",
+        "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
+        "anuncios": 3,
+        "pct": 7,
+        "frase": "3 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "parcelamento",
+        "rotulo": "Parcelamento",
+        "o_que_significa": "vende a mensalidade, não o tratamento",
+        "anuncios": 3,
+        "pct": 7,
+        "frase": "3 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "publico_infantil",
+        "rotulo": "Falado para criança e adolescente",
+        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+        "anuncios": 1,
+        "pct": 2,
+        "frase": "1 anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "rapidez",
+        "rotulo": "Rapidez do resultado",
+        "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+        "anuncios": 1,
+        "pct": 2,
+        "frase": "1 anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "sem_entrada",
+        "rotulo": "Sem entrada",
+        "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "estetico",
+        "rotulo": "Aparelho estético",
+        "o_que_significa": "vende discrição — público que trabalha de frente",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "publico_adulto",
+        "rotulo": "Falado para adulto",
+        "o_que_significa": "disputa o adulto que adiou o tratamento",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "prova_social",
+        "rotulo": "Prova social",
+        "o_que_significa": "vende confiança em vez de preço",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      }
+    ],
+    "por_anunciante": [
+      {
+        "anunciante": "OrthoDontic Porto Alegre",
+        "eixos": [
+          "alinhador",
+          "urgencia"
+        ]
+      },
+      {
+        "anunciante": "Odontik Premium Odontologia ",
+        "eixos": [
+          "preco",
+          "avaliacao_gratis",
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "Rafael D'Avila",
+        "eixos": [
+          "parcelamento",
+          "alinhador",
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "Integrare - Clínicas Odontológicas",
+        "eixos": [
+          "avaliacao_gratis",
+          "alinhador",
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "Dra. Roberta Schaffer",
+        "eixos": [
+          "avaliacao_gratis",
+          "alinhador"
+        ]
+      },
+      {
+        "anunciante": "Hodos Odontologia Rio Grande do Sul",
+        "eixos": [
+          "urgencia"
+        ]
+      },
+      {
+        "anunciante": "Premier Clínica Odontológica",
+        "eixos": [
+          "avaliacao_gratis",
+          "alinhador"
+        ]
+      },
+      {
+        "anunciante": "Clinica Geremia",
+        "eixos": [
+          "publico_infantil"
+        ]
+      }
+    ],
+    "e_da_cidade": true
+  },
+  "plano": null,
+  "anuncios_da_cidade": {
+    "e_da_cidade": true,
+    "rotulo": "RS · Porto Alegre",
+    "manchete": "14 anunciantes disputam aparelho em RS · Porto Alegre, e a rede é 1 deles.",
+    "anuncios_ativos": 41,
+    "anunciantes_total": 14,
+    "somos_um_deles": true,
+    "anunciantes": [
+      {
+        "nome": "OrthoDontic Porto Alegre",
+        "nosso": true,
+        "anuncios": 17,
+        "paginas": [
+          "106390259174920"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "OPORTUNIDADE ÚNICA EM PORTO ALEGRE\n\n💥Chegou a hora de transformar seu sorriso com um super COMBO ORTODÔNTICO!\n\n✅ Aparelho fixo\n✅ Toda a documentação\n✅ Condições exclusivas e facilitadas\n✅ Pagamento no Carnê\n\n✨Ainda INCLUI um CLAREAMENTO no final do tratamento!\n\n📲 Chame agora e ga…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odontik Premium Odontologia ",
+        "nosso": false,
+        "anuncios": 4,
+        "paginas": [
+          "602060466320675"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Seu tratamento ortodôntico precisa ter começo, meio e fim.\n\nAqui você não começa algo sem saber quando vai terminar.\n\nNosso Sistema de Tratamento Ortodôntico Completo foi pensado pra te dar segurança, previsibilidade e acompanhamento de verdade do início ao fim.\n\n✔ Documentação i…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odonto Excellence Porto Alegre",
+        "nosso": false,
+        "anuncios": 4,
+        "paginas": [
+          "142150759251617"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "📢 PORTO ALEGRE 📢\n\nNa Odonto Excellence, entendemos o impacto profundo que um sorriso pode ter em sua vida. Não é apenas sobre estética; é sobre recuperar a confiança perdida e a qualidade de não sentir dores! ⚜️\n\nAqui você encontra:\n\n✅ Soluções completas em Ortodontia, Implantes,…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Clinica Geremia",
+        "nosso": false,
+        "anuncios": 3,
+        "paginas": [
+          "944211922118098"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Ortodontia não é apenas sobre deixar os dentes alinhados.\n\nQuando os dentes estão fora de posição, isso pode afetar a mordida, a mastigação, a higiene e até provocar desgastes ao longo do tempo.\n\nPor isso, o tratamento ortodôntico também tem um papel funcional: ajudar a distribui…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Sorridents Clínicas Odontológicas Porto Alegre Centro",
+        "nosso": false,
+        "anuncios": 3,
+        "paginas": [
+          "103510302093820"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Que tal uma clínica completa com especialistas de todas as áreas que realizam todos os serviços em um só lugar?\nDesde a limpeza, clareamento, aparelho ortodôntico, restaurações, próteses dentárias , implantes dentários e muito mais!! 🔝\n\nVem pra Sorridents, aqui no centro de POA!\n…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Hodos Odontologia Rio Grande do Sul",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "1443286005957979"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "🎓 AGENDA DE ESPECIALIZAÇÕES | PÓS-GRADUAÇÃO HPG\n\nPorto Alegre já tem agenda definida para os próximos cursos de especialização! 📚🦷\n\nConfira as próximas datas:\n\n📌 Ortodontia — 20/08\n📌 Harmonização Orofacial — 09/09\n📌 Dupla Especialização: Implante + Prótese — 24/09\n📌 Endodontia — …",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dra. Roberta Schaffer",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "1167550926440951"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Seu novo sorriso pode começar agora. ✨\n\nA Lumina Studio Dental está com 50% OFF no planejamento de Invisalign para você descobrir o tratamento mais indicado para alinhar seus dentes com conforto, discrição e acompanhamento profissional.\n\n📍 Av. Porto Alegre, Chapecó\nClique abaixo …",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "HPG Clinica Odontologica Porto Alegre",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "1045511338650185"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "✨ Seja paciente modelo em Porto Alegre! ✨\n\nQuer cuidar da sua saúde bucal ou estética facial com profissionais em formação supervisionados por especialistas? A HPG Pós-Graduação oferece atendimentos em todas as nossas especializações, incluindo:\n\n🦷 Ortodontia – correção e alinham…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Integrare - Clínicas Odontológicas",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "220402174486910"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "😄 Seu sorriso pode mudar sem aparelhos metálicos!\n\nOs alinhadores invisíveis são uma opção moderna, confortável e discreta para corrigir o alinhamento dos dentes sem comprometer a sua rotina.\n\n✔️ Quase imperceptíveis\n✔️ Removíveis para comer e escovar os dentes\n✔️ Mais conforto d…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odonto Alegre",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "101571763038087"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Você ainda faz manutenção de aparelho e paga tudo separado no dentista?\n\nTroca borrachinha, cola peça, faz limpeza…\ne quando precisa de algo a mais, lá vem custo extra.\n\nAgora imagina ter:\n✔️ Manutenção do aparelho\n✔️ Limpeza\n✔️ Restauração\n✔️ Extração\n✔️ Até tratamento de canal\n…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Premier Clínica Odontológica",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "260101824091739"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Darla de Procurando Nemo mandou avisar: aquele trauma de infância ficou no passado! \n\nA Ortodontia evoluiu. Chega de fios de metal machucando sua boca e atrapalhando a sua rotina.\n\nCom os alinhadores invisíveis da Premier, você alinha seu sorriso com tecnologia 3D, conforto absol…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Rafael D'Avila",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "349814562178444"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Você evita sorrir em fotos ou conversar por causa dos dentes?\n\nNada de aparelhos metálicos. Com Invisalign, você corrige seu sorriso sem que ninguém perceba.\n\n✅ Alinhamento até 2x mais rápido\n✅ Tecnologia invisível e removível\n✅ Conforto para o seu dia a dia\n\nEu sou o Dr. Rafael …",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Sorridents Clínicas Odontológicas",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "103510302093820"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Que tal uma clínica completa com especialistas de todas as áreas que realizam todos os serviços em um só lugar?\nDesde a limpeza, clareamento, aparelho ortodôntico, restaurações, próteses dentárias , implantes dentários e muito mais!! 🔝\n\nVem pra Sorridents, aqui no centro de POA!\n…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Zênite Reabilitação Oral",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "105854441779923"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Quer transformar seu sorriso com segurança e conforto? Na Zênite Reabilitação Oral, cada detalhe do consultório foi pensado para você se sentir em casa enquanto cuida da sua saúde bucal.\nnossa equipe reúne especialistas de diversas áreas para resolver tudo o que você precisa em u…",
+        "de_outra_unidade": null
+      }
+    ],
+    "fora_do_produto": 119,
+    "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
+  },
+  "eventos": [
+    {
+      "data": "2026-08-12",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: O contador de avaliações parou",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-12",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Está na metade de baixo da própria praça",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    }
+  ]
+}

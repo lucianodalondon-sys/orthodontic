@@ -81,6 +81,222 @@
    "eventos_alem_da_janela": 0
   },
   {
+   "local_id": "ortho_gyn_jardim_tropical",
+   "praca_id": "goiania",
+   "rotulo": "GO · Goiânia",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 4.7,
+    "avaliacoes": 152,
+    "ritmo": 6.8,
+    "meses_seguidos": 0,
+    "posicao": 14,
+    "de": 18
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-26"
+   },
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "faixa": "amarela",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: O contador de avaliações parou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-07-16",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Muito insatisfeito. Com atendimento da clínica. Fiz dois contrato na clínica quase r$ 7000…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_gyn_st_central",
+   "praca_id": "goiania",
+   "rotulo": "GO · Goiânia",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 4.6,
+    "avaliacoes": 268,
+    "ritmo": 6.9,
+    "meses_seguidos": 3,
+    "posicao": 13,
+    "de": 18
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 7,
+    "vence_em": "2026-08-19"
+   },
+   "acao": {
+    "o_que": "Auditar a ficha do Google — foto, horário, serviços, resposta a avaliação",
+    "prazo": "7 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "posicao"
+   },
+   "faixa": "amarela",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Nota abaixo da mediana da praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_gyn_st_morada_do_sol",
+   "praca_id": "goiania",
+   "rotulo": "GO · Goiânia",
+   "unidade": "OrthoDontic Mangalô",
+   "cabecalho": {
+    "nota": 5,
+    "avaliacoes": 124,
+    "ritmo": 4.4,
+    "meses_seguidos": 1,
+    "posicao": 15,
+    "de": 18
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-26"
+   },
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "faixa": "amarela",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: O contador de avaliações parou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_gyn_st_oeste",
+   "praca_id": "goiania",
+   "rotulo": "GO · Goiânia",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 4.2,
+    "avaliacoes": 270,
+    "ritmo": 4.3,
+    "meses_seguidos": 0,
+    "posicao": 16,
+    "de": 18
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-26"
+   },
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "faixa": "vermelha",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: O contador de avaliações parou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Nota abaixo da mediana da praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-06-15",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★ · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-06-08",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “O atendimento é extremamente insatisfatório. Estou há semanas tentando contato pelos canai…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
    "local_id": "ortho_contagem",
    "praca_id": "contagem",
    "rotulo": "MG · Contagem",
@@ -109,7 +325,7 @@
    },
    "faixa": "amarela",
    "sem_resposta": {
-    "abertas": 39,
+    "abertas": 40,
     "com_texto": 30
    },
    "eventos": [
@@ -363,6 +579,269 @@
    "eventos_alem_da_janela": 0
   },
   {
+   "local_id": "ortho_cwb_centro",
+   "praca_id": "curitiba",
+   "rotulo": "PR · Curitiba",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 4.6,
+    "avaliacoes": 1012,
+    "ritmo": 82.9,
+    "meses_seguidos": 2,
+    "posicao": 2,
+    "de": 19
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 60,
+    "vence_em": "2026-10-11"
+   },
+   "acao": {
+    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
+    "prazo": "60 dias",
+    "dono": "consultor de campo",
+    "custo": "verba de abertura",
+    "por_causa_de": "nao_engatou"
+   },
+   "faixa": "verde",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Unidade nova que ainda não engatou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-04",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Negativa,meu filho colocou aparelho fixo no ceu da boca com 10 dias caiu vim pra dra ver m…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-07-19",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Péssimo,não indico ! Pior lugar,só enrolação! Ficam enrolando para retirar o aparelho ,sem…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_cwb_centro_2",
+   "praca_id": "curitiba",
+   "rotulo": "PR · Curitiba",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 4.7,
+    "avaliacoes": 719,
+    "ritmo": 57.9,
+    "meses_seguidos": 2,
+    "posicao": 4,
+    "de": 19
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 60,
+    "vence_em": "2026-10-11"
+   },
+   "acao": {
+    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
+    "prazo": "60 dias",
+    "dono": "consultor de campo",
+    "custo": "verba de abertura",
+    "por_causa_de": "nao_engatou"
+   },
+   "faixa": "verde",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Unidade nova que ainda não engatou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-07-16",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Nao passam informação completa fazem você entender algo pra quando chega a hora fazerem ou…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-06-29",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “O atendimento desse lugar é horroroso, NUNCA atendem o telefone, a pessoa que responde no …” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-06-12",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Péssimo atendimento da recepção dessa unidade. os valores mt alto td uma enrolação.” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-06-12",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★ · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_cwb_centro_3",
+   "praca_id": "curitiba",
+   "rotulo": "PR · Curitiba",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 4.9,
+    "avaliacoes": 491,
+    "ritmo": 15.5,
+    "meses_seguidos": 0,
+    "posicao": 8,
+    "de": 19
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 60,
+    "vence_em": "2026-10-11"
+   },
+   "acao": {
+    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
+    "prazo": "60 dias",
+    "dono": "consultor de campo",
+    "custo": "verba de abertura",
+    "por_causa_de": "nao_engatou"
+   },
+   "faixa": "verde",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Unidade nova que ainda não engatou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-05-25",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Claro, aqui está um texto mais organizado, forte e grande para você enviar para a clínica:…” · respondida",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_cwb_centro_4",
+   "praca_id": "curitiba",
+   "rotulo": "PR · Curitiba",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 4.7,
+    "avaliacoes": 126,
+    "ritmo": 1.6,
+    "meses_seguidos": 0,
+    "posicao": 19,
+    "de": 19
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-26"
+   },
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "faixa": "amarela",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: O contador de avaliações parou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-05-28",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “O telefone está incompleto vc não consegue contato” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_cwb_portao",
+   "praca_id": "curitiba",
+   "rotulo": "PR · Curitiba",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 4.8,
+    "avaliacoes": 270,
+    "ritmo": 13.7,
+    "meses_seguidos": 7,
+    "posicao": 12,
+    "de": 19
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 7,
+    "vence_em": "2026-08-19"
+   },
+   "acao": {
+    "o_que": "Auditar a ficha do Google — foto, horário, serviços, resposta a avaliação",
+    "prazo": "7 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "posicao"
+   },
+   "faixa": "verde",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
    "local_id": "ortho_centro_ldn",
    "praca_id": "londrina",
    "rotulo": "PR · Londrina",
@@ -462,8 +941,8 @@
    },
    "faixa": "amarela",
    "sem_resposta": {
-    "abertas": 34,
-    "com_texto": 22
+    "abertas": 35,
+    "com_texto": 23
    },
    "eventos": [
     {
@@ -541,6 +1020,528 @@
      "tipo": "avaliacao_negativa",
      "quem": "paciente",
      "texto": "avaliação de 2★: “Atendimento pessoal bom, atendimento pelo wats lixo, nao serve pra nada, app tambem, recen…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_poa_cavalhada",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic Clínica Odontológica em Porto Alegre RS",
+   "cabecalho": {
+    "nota": 4.6,
+    "avaliacoes": 207,
+    "ritmo": 10.8,
+    "meses_seguidos": 2,
+    "posicao": 9,
+    "de": 21
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 60,
+    "vence_em": "2026-10-11"
+   },
+   "acao": {
+    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
+    "prazo": "60 dias",
+    "dono": "consultor de campo",
+    "custo": "verba de abertura",
+    "por_causa_de": "nao_engatou"
+   },
+   "faixa": "verde",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Unidade nova que ainda não engatou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_poa_centro_historico",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 4.8,
+    "avaliacoes": 433,
+    "ritmo": 15.1,
+    "meses_seguidos": 2,
+    "posicao": 6,
+    "de": 21
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 60,
+    "vence_em": "2026-10-11"
+   },
+   "acao": {
+    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
+    "prazo": "60 dias",
+    "dono": "consultor de campo",
+    "custo": "verba de abertura",
+    "por_causa_de": "nao_engatou"
+   },
+   "faixa": "verde",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Unidade nova que ainda não engatou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_poa_centro_historico_2",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 4.9,
+    "avaliacoes": 209,
+    "ritmo": 14.4,
+    "meses_seguidos": 3,
+    "posicao": 7,
+    "de": 21
+   },
+   "tarefa": null,
+   "acao": null,
+   "faixa": "verde",
+   "sem_resposta": null,
+   "eventos": [],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_poa_centro_historico_3",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 4.4,
+    "avaliacoes": 176,
+    "ritmo": 8.2,
+    "meses_seguidos": 3,
+    "posicao": 11,
+    "de": 21
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 7,
+    "vence_em": "2026-08-19"
+   },
+   "acao": {
+    "o_que": "Auditar a ficha do Google — foto, horário, serviços, resposta a avaliação",
+    "prazo": "7 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "posicao"
+   },
+   "faixa": "amarela",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Nota abaixo da mediana da praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-07-22",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Atendimento pelo WhatsApp horrível, só é respondido por uma Ia (ou até um próprio atendent…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-07-15",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Não entendo esta unidade, O valor da mensalidade é mais caro do que praticamente todas out…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-05-23",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Marcam horario, so para marcar msm toda vez tem que esperar uma hora a mais do que o combi…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_poa_centro_historico_4",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic - Clínica Odontológica Centro Porto Alegre - Tratamento de Canal - Periodontia - Restauração Dental - Prótese - Clareamento e Limpeza Dental - Aparelho Ortodôntico Metálico e Estético - Emergência - Extração do Siso - Faceta de Porcelana",
+   "cabecalho": {
+    "nota": 4.6,
+    "avaliacoes": 162,
+    "ritmo": 9.1,
+    "meses_seguidos": 3,
+    "posicao": 10,
+    "de": 21
+   },
+   "tarefa": null,
+   "acao": null,
+   "faixa": "verde",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-07-07",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “É impossível conseguir ser atendida pelo whatsapp, por ligação no telefone fixo então… E n…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_poa_cristo_redentor",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 4.7,
+    "avaliacoes": 245,
+    "ritmo": 7.5,
+    "meses_seguidos": 2,
+    "posicao": 12,
+    "de": 21
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-26"
+   },
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "faixa": "amarela",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: O contador de avaliações parou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_poa_rio_branco",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 4.5,
+    "avaliacoes": 32,
+    "ritmo": 3.0,
+    "meses_seguidos": 3,
+    "posicao": 21,
+    "de": 21
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 7,
+    "vence_em": "2026-08-19"
+   },
+   "acao": {
+    "o_que": "Auditar a ficha do Google — foto, horário, serviços, resposta a avaliação",
+    "prazo": "7 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "posicao"
+   },
+   "faixa": "verde",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_joi_america",
+   "praca_id": "joinville",
+   "rotulo": "SC · Joinville",
+   "unidade": "OrthoDontic Sorria Sempre",
+   "cabecalho": {
+    "nota": 4.3,
+    "avaliacoes": 377,
+    "ritmo": 19.2,
+    "meses_seguidos": 2,
+    "posicao": 7,
+    "de": 17
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 60,
+    "vence_em": "2026-10-11"
+   },
+   "acao": {
+    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
+    "prazo": "60 dias",
+    "dono": "consultor de campo",
+    "custo": "verba de abertura",
+    "por_causa_de": "nao_engatou"
+   },
+   "faixa": "amarela",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Unidade nova que ainda não engatou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Nota abaixo da mediana da praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-10",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Foi a primeira clínica de joinville que eu fui que cobra pela avaliação. Me cobraram 70 re…” · respondida",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-07-23",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★ · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-07-06",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 2★: “Minha experiência com a clínica tem sido bastante frustrante devido à falta de pontualidad…” · respondida",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-06-18",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★ · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-06-17",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Gerente dessa unidade pessoa super mal educada e despreparada para atender as pessoas e co…” · respondida",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-06-13",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Já foi boa no atendimento e no horário marcado,hoje marcam o horário pra ser feita manuten…” · respondida",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-05-23",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Problema com horários . Vc agenda um horário e eles atendem no mínimo 30 minutos depois qu…” · respondida",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_joi_aventureiro",
+   "praca_id": "joinville",
+   "rotulo": "SC · Joinville",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 4.9,
+    "avaliacoes": 170,
+    "ritmo": 5.9,
+    "meses_seguidos": 2,
+    "posicao": 13,
+    "de": 17
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-26"
+   },
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "faixa": "amarela",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: O contador de avaliações parou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-07-21",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Nunca atendem o telefone , muito difícil remarca uma consulta” · respondida",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_joi_centro",
+   "praca_id": "joinville",
+   "rotulo": "SC · Joinville",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 4.6,
+    "avaliacoes": 513,
+    "ritmo": 10.9,
+    "meses_seguidos": 3,
+    "posicao": 11,
+    "de": 17
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 7,
+    "vence_em": "2026-08-19"
+   },
+   "acao": {
+    "o_que": "Auditar a ficha do Google — foto, horário, serviços, resposta a avaliação",
+    "prazo": "7 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "posicao"
+   },
+   "faixa": "amarela",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Nota abaixo da mediana da praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-07-16",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Sou cliente há mais de três anos, mas infelizmente nos últimos atendimentos está terrível,…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-06-26",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Vamos falar referente o aparelho não parte trabalhos são ótimos agora questão aparelhos ba…” · respondida",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-06-01",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Atendimento pessoal e bom!!  mas ZAP virtual e péssimo deixa a desejar não resolve nada só…” · respondida",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-05-24",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 3★ · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-05-22",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Atendimento horrível! Péssima experiência no final do tratamento.” · respondida",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-05-16",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “🚫 NÃO RECOMENDO! Péssima clínica! A falta de organização com agendamentos e atendimento é …” · respondida",
      "fonte": "dados/serie/reviews.jsonl"
     }
    ],
@@ -647,6 +1648,182 @@
      "nome": "Croorto",
      "texto": "Croorto: ganhou 1 avaliação (52 → 53)",
      "fonte": "dados/serie/places.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_soro_centro",
+   "praca_id": "sorocaba",
+   "rotulo": "SP · Sorocaba",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 4.5,
+    "avaliacoes": 116,
+    "ritmo": 1.3,
+    "meses_seguidos": 3,
+    "posicao": 16,
+    "de": 17
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 7,
+    "vence_em": "2026-08-19"
+   },
+   "acao": {
+    "o_que": "Auditar a ficha do Google — foto, horário, serviços, resposta a avaliação",
+    "prazo": "7 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "posicao"
+   },
+   "faixa": "amarela",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Nota abaixo da mediana da praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-06-17",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 3★: “Poderia ter sido melhor, tem dentistas que são competentes porém é uma enrolação em questã…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_soro_jardim_faculdade",
+   "praca_id": "sorocaba",
+   "rotulo": "SP · Sorocaba",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 4.3,
+    "avaliacoes": 111,
+    "ritmo": 1.0,
+    "meses_seguidos": 1,
+    "posicao": 17,
+    "de": 17
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-26"
+   },
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "faixa": "vermelha",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: O contador de avaliações parou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Nota abaixo da mediana da praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-11",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “O atendimento inicial é satisfatório e os dentistas são competentes, mas encerrar o contra…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-07-08",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 3★: “Legal” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-06-26",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Falta de comprometimento com os pacientes, por falta de profissionais minha filha está com…” · respondida",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_soro_vila_formosa",
+   "praca_id": "sorocaba",
+   "rotulo": "SP · Sorocaba",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 4.9,
+    "avaliacoes": 161,
+    "ritmo": 11.4,
+    "meses_seguidos": 2,
+    "posicao": 10,
+    "de": 17
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 60,
+    "vence_em": "2026-10-11"
+   },
+   "acao": {
+    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
+    "prazo": "60 dias",
+    "dono": "consultor de campo",
+    "custo": "verba de abertura",
+    "por_causa_de": "nao_engatou"
+   },
+   "faixa": "amarela",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Unidade nova que ainda não engatou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-12",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
     }
    ],
    "eventos_alem_da_janela": 0

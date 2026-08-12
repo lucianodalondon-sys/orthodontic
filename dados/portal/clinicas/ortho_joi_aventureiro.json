@@ -1,0 +1,845 @@
+{
+  "local_id": "ortho_joi_aventureiro",
+  "praca_id": "joinville",
+  "apresentacao": {
+    "unidade": "OrthoDontic",
+    "cidade": "SC · Joinville",
+    "endereco": "R. Tuiuti, 2236 - Aventureiro, Joinville - SC, 89226-000",
+    "desde": null,
+    "medicoes": null,
+    "posicao_na_cidade": null,
+    "clinicas_na_cidade": null,
+    "lojas_irmas": [
+      {
+        "local_id": "ortho_joi_centro",
+        "unidade": "OrthoDontic Centro"
+      },
+      {
+        "local_id": "ortho_joi_america",
+        "unidade": "OrthoDontic América"
+      }
+    ],
+    "frase": null
+  },
+  "rotulo": "SC · Joinville",
+  "unidade": "OrthoDontic",
+  "cabecalho": {
+    "nota": 4.9,
+    "avaliacoes": 170,
+    "ritmo": 5.9,
+    "meses_seguidos": 2,
+    "posicao": 13,
+    "de": 17
+  },
+  "faixa": "amarela",
+  "urgencia": 50,
+  "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-26"
+  },
+  "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada",
+    "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": null,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "scripts/fila.py",
+      "a_favor": [
+        "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 5.9 avaliações/mês",
+        "13º lugar de 17 clínicas medidas na praça"
+      ],
+      "contra": [],
+      "o_que_aumentaria": "o resultado medido na coleta seguinte (dados/serie/acoes.jsonl)",
+      "procedencia": "sem amostra declarada"
+    }
+  },
+  "gatilhos": [
+    {
+      "peso": 30,
+      "titulo": "O contador de avaliações parou",
+      "chave": "parada",
+      "fato": "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 5.9 avaliações/mês",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "peso": 20,
+      "titulo": "Está na metade de baixo da própria praça",
+      "chave": "posicao",
+      "fato": "13º lugar de 17 clínicas medidas na praça",
+      "fonte": "dados/portal/rede_cruzamento.json"
+    }
+  ],
+  "quem_avanca": null,
+  "o_que_mudou": null,
+  "sem_resposta": {
+    "abertas": null,
+    "com_texto": null,
+    "itens": [],
+    "itens_total": 0
+  },
+  "voz_do_paciente": null,
+  "rival": {
+    "comparados": [],
+    "vantagens_deles": [],
+    "fora": [],
+    "fora_total": 0,
+    "sem_comparacao_porque": null
+  },
+  "presenca_na_busca": {
+    "local_id": "ortho_joi_aventureiro",
+    "praca_id": "joinville",
+    "rotulo": "SC · Joinville",
+    "unidade": "OrthoDontic",
+    "avaliacoes_da_ficha": 170,
+    "aparece_em": 2,
+    "de": 157,
+    "pct": 1,
+    "melhor_posicao": 4,
+    "frases_onde_aparece": [
+      {
+        "frase": "dentista joinville aventureiro",
+        "posicao": 4,
+        "intencao": "BAIRRO"
+      },
+      {
+        "frase": "ortodontista em joinville",
+        "posicao": 5,
+        "intencao": "GENÉRICO"
+      }
+    ],
+    "invisivel": false,
+    "frase_do_topo": "Esta loja aparece em **2 das 157 buscas** que testamos na cidade.",
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 157,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/portas.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+      "procedencia": "medido em 157 buscas testadas, 1 medição"
+    }
+  },
+  "jornada": {
+    "local_id": "ortho_joi_aventureiro",
+    "unidade": "OrthoDontic Aventureiro",
+    "rotulo": "SC · Joinville",
+    "com_texto": 94,
+    "sem_estagio": 63,
+    "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
+    "estagios": [
+      {
+        "estagio": "descoberta",
+        "rotulo": "Descoberta",
+        "o_que_e": "como me acharam",
+        "quem_resolve": "marketing e ficha do Google",
+        "medido": true,
+        "avaliacoes": 9,
+        "dor": 0,
+        "elogio": 9,
+        "pct_dor": 0,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": "9 avaliações falam deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "contato",
+        "rotulo": "Contato",
+        "o_que_e": "telefone e WhatsApp",
+        "quem_resolve": "recepção",
+        "medido": true,
+        "avaliacoes": 2,
+        "dor": 2,
+        "elogio": 0,
+        "pct_dor": 100,
+        "amostra_curta": true,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2026-07-21",
+            "texto": "Nunca atendem o telefone , muito difícil remarca uma consulta"
+          }
+        ],
+        "frase": "2 avaliações falam deste momento, 2 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "agendamento",
+        "rotulo": "Agendamento",
+        "o_que_e": "marcar e remarcar",
+        "quem_resolve": "recepção",
+        "medido": true,
+        "avaliacoes": 2,
+        "dor": 2,
+        "elogio": 0,
+        "pct_dor": 100,
+        "amostra_curta": true,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2026-07-21",
+            "texto": "Nunca atendem o telefone , muito difícil remarca uma consulta"
+          }
+        ],
+        "frase": "2 avaliações falam deste momento, 2 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "recepcao",
+        "rotulo": "Recepção",
+        "o_que_e": "chegar e esperar",
+        "quem_resolve": "recepção",
+        "medido": true,
+        "avaliacoes": 8,
+        "dor": 1,
+        "elogio": 7,
+        "pct_dor": 12,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": "8 avaliações falam deste momento, 1 com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "avaliacao",
+        "rotulo": "Avaliação",
+        "o_que_e": "a primeira consulta",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 4,
+        "dor": 0,
+        "elogio": 4,
+        "pct_dor": 0,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "4 avaliações falam deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "contratacao",
+        "rotulo": "Contratação",
+        "o_que_e": "preço, contrato e entrada",
+        "quem_resolve": "franqueado",
+        "medido": true,
+        "avaliacoes": 2,
+        "dor": 0,
+        "elogio": 2,
+        "pct_dor": 0,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "2 avaliações falam deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "clinico",
+        "rotulo": "Atendimento clínico",
+        "o_que_e": "a cadeira",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 11,
+        "dor": 0,
+        "elogio": 11,
+        "pct_dor": 0,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": "11 avaliações falam deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "manutencao",
+        "rotulo": "Manutenção",
+        "o_que_e": "as voltas de cada mês",
+        "quem_resolve": "clínica",
+        "medido": false,
+        "avaliacoes": 0,
+        "dor": 0,
+        "elogio": 0,
+        "pct_dor": null,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": null,
+        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+      },
+      {
+        "estagio": "cobranca",
+        "rotulo": "Cobrança",
+        "o_que_e": "mensalidade e multa",
+        "quem_resolve": "franqueado",
+        "medido": true,
+        "avaliacoes": 1,
+        "dor": 1,
+        "elogio": 0,
+        "pct_dor": 100,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "1 avaliação fala deste momento, 1 com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "suporte",
+        "rotulo": "Suporte",
+        "o_que_e": "quando algo dá errado",
+        "quem_resolve": "franqueado",
+        "medido": true,
+        "avaliacoes": 1,
+        "dor": 1,
+        "elogio": 0,
+        "pct_dor": 100,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "1 avaliação fala deste momento, 1 com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "contencao",
+        "rotulo": "Fim e contenção",
+        "o_que_e": "alta e depois dela",
+        "quem_resolve": "clínica",
+        "medido": false,
+        "avaliacoes": 0,
+        "dor": 0,
+        "elogio": 0,
+        "pct_dor": null,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": null,
+        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+      }
+    ],
+    "manchete": "Nenhum momento da jornada concentra dor com amostra suficiente para virar manchete.",
+    "quem_resolve": null,
+    "e_clinico": null,
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 94,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/serie/reviews.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "mais avaliações com texto nesta loja",
+      "procedencia": "medido em 94 avaliações"
+    }
+  },
+  "meu_bairro": {
+    "bairro": "Aventureiro",
+    "clinicas": 3,
+    "vizinhos_fortes": [
+      {
+        "nome": "ODONTOCOT",
+        "nota": 4.8,
+        "avaliacoes": 493
+      },
+      {
+        "nome": "Dra. Daniele Sodré Consultório Odontológico",
+        "nota": 5,
+        "avaliacoes": 50
+      }
+    ],
+    "frase": "3 clínicas varridas, e a unidade da rede está aqui",
+    "e_da_cidade": false
+  },
+  "acoes": {
+    "arcos": [
+      {
+        "arco_id": "ortho_joi_aventureiro|parada",
+        "local_id": "ortho_joi_aventureiro",
+        "praca_id": "joinville",
+        "gatilho": "parada",
+        "problema": "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 5.9 avaliações/mês",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-12",
+        "metrica": "ritmo",
+        "antes": 5.9,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      },
+      {
+        "arco_id": "ortho_joi_aventureiro|posicao",
+        "local_id": "ortho_joi_aventureiro",
+        "praca_id": "joinville",
+        "gatilho": "posicao",
+        "problema": "13º lugar de 17 clínicas medidas na praça",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-12",
+        "metrica": "posicao",
+        "antes": 13.0,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      }
+    ],
+    "total": 2,
+    "aviso": "O livro nasceu hoje. Nenhum arco completou 21 dias, então ainda não há veredito para ninguém — a primeira resposta vem na coleta seguinte."
+  },
+  "oferta_da_cidade": {
+    "praca_id": "joinville",
+    "rotulo": "SC · Joinville",
+    "anuncios_de_aparelho": 34,
+    "anunciantes": 16,
+    "fora_do_produto": 68,
+    "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
+    "sem_texto": 0,
+    "amostra_curta": false,
+    "tese": "A disputa desta cidade é por autoridade técnica — 23 dos 34 anúncios de aparelho medidos falam disso, seguido de avaliação grátis.",
+    "posicao_vaga": "Ninguém está falando de preço na frente — a cidade disputa por número; entrar aqui é entrar na briga mais cara.",
+    "eixos": [
+      {
+        "eixo": "autoridade",
+        "rotulo": "Autoridade técnica",
+        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+        "anuncios": 23,
+        "pct": 68,
+        "frase": "23 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "avaliacao_gratis",
+        "rotulo": "Avaliação grátis",
+        "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+        "anuncios": 9,
+        "pct": 26,
+        "frase": "9 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "alinhador",
+        "rotulo": "Alinhador invisível",
+        "o_que_significa": "produto de ticket alto e público adulto",
+        "anuncios": 5,
+        "pct": 15,
+        "frase": "5 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "estetico",
+        "rotulo": "Aparelho estético",
+        "o_que_significa": "vende discrição — público que trabalha de frente",
+        "anuncios": 4,
+        "pct": 12,
+        "frase": "4 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "publico_infantil",
+        "rotulo": "Falado para criança e adolescente",
+        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+        "anuncios": 2,
+        "pct": 6,
+        "frase": "2 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "urgencia",
+        "rotulo": "Urgência e escassez",
+        "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+        "anuncios": 2,
+        "pct": 6,
+        "frase": "2 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "parcelamento",
+        "rotulo": "Parcelamento",
+        "o_que_significa": "vende a mensalidade, não o tratamento",
+        "anuncios": 1,
+        "pct": 3,
+        "frase": "1 anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "publico_adulto",
+        "rotulo": "Falado para adulto",
+        "o_que_significa": "disputa o adulto que adiou o tratamento",
+        "anuncios": 1,
+        "pct": 3,
+        "frase": "1 anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "rapidez",
+        "rotulo": "Rapidez do resultado",
+        "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+        "anuncios": 1,
+        "pct": 3,
+        "frase": "1 anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "preco",
+        "rotulo": "Preço na frente",
+        "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "sem_entrada",
+        "rotulo": "Sem entrada",
+        "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "prova_social",
+        "rotulo": "Prova social",
+        "o_que_significa": "vende confiança em vez de preço",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      }
+    ],
+    "por_anunciante": [
+      {
+        "anunciante": "Odonto Excellence Joinville - Aventureiro",
+        "eixos": [
+          "autoridade",
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "Clínica Colzani Odontologia Avançada",
+        "eixos": [
+          "alinhador",
+          "estetico"
+        ]
+      },
+      {
+        "anunciante": "Dra. Emanoela Volles de Souza",
+        "eixos": [
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "Odonto Excellence Boa Vista",
+        "eixos": [
+          "avaliacao_gratis",
+          "autoridade",
+          "parcelamento"
+        ]
+      },
+      {
+        "anunciante": "Mappi Odontologia Joinville",
+        "eixos": [
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "Odonto Excellence Joinville - Paranaguamirim",
+        "eixos": [
+          "avaliacao_gratis",
+          "publico_adulto",
+          "publico_infantil"
+        ]
+      },
+      {
+        "anunciante": "Odonto Excellence Joinville Itaum",
+        "eixos": [
+          "autoridade",
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "Clínica Odonto 4D - Belo Horizonte",
+        "eixos": [
+          "avaliacao_gratis",
+          "alinhador",
+          "rapidez"
+        ]
+      }
+    ],
+    "e_da_cidade": true
+  },
+  "plano": null,
+  "anuncios_da_cidade": {
+    "e_da_cidade": true,
+    "rotulo": "SC · Joinville",
+    "manchete": "16 anunciantes disputam aparelho em SC · Joinville, e a rede é 1 deles.",
+    "anuncios_ativos": 34,
+    "anunciantes_total": 16,
+    "somos_um_deles": true,
+    "anunciantes": [
+      {
+        "nome": "OrthoDontic",
+        "nosso": true,
+        "anuncios": 2,
+        "paginas": [
+          "1696651100653080"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "👉CHEGA DE ESCONDER O SEU SORRISO!!😁🦷\n⚠️ Descontos imperdíveis. \n\nAgende uma avaliação agora na Melhor Rede de Clínicas Especializadas em Ortodontia do Brasil!\n\nJá transformamos mais de 7 milhões de sorrisos, agora é sua vez.\n\n✅ Estamos pertinho de você.\n\nResponsável Técnico:\nFeli…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dra. Emanoela Volles de Souza",
+        "nosso": false,
+        "anuncios": 5,
+        "paginas": [
+          "1093829847151456"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Cada caso ortodôntico tem suas particularidades, e talvez seja justamente isso que torne a ortodontia tão fascinante para mim.\n\nDepois de 23 anos de experiência clínica, cada vez mais percebo que grandes resultados começam muito antes do aparelho. Eles começam em um diagnóstico c…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Mappi Odontologia Joinville",
+        "nosso": false,
+        "anuncios": 4,
+        "paginas": [
+          "832438203296549"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "✨ Do escaneamento ao sorriso novo! ✨\nPrimeiro fazemos os escaneamentos intra e extra orais, depois o nosso especialista em ortodontia cria a simulação do seu novo sorriso 😍.\nAs placas chegam na clínica prontinhas para serem instaladas e, no conforto da sua casa, você vai trocando…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odonto Excellence Joinville - Aventureiro",
+        "nosso": false,
+        "anuncios": 4,
+        "paginas": [
+          "108727444007543"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Na Odonto Excellence, o tratamento ortodôntico vai muito além da estética. Com o uso de aparelhos modernos, é possível corrigir o alinhamento dos dentes, melhorar a mordida e transformar seu sorriso com segurança e eficiência.\n\nUm sorriso alinhado facilita a higienização, melhora…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Clínica Colzani Odontologia Avançada",
+        "nosso": false,
+        "anuncios": 3,
+        "paginas": [
+          "258697887319790"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "🦷✨ O sorriso que você sempre quis ficou mais discreto, confortável e tecnológico.\n\nOs alinhadores invisíveis estão transformando a ortodontia, corrigindo o posicionamento dos dentes sem os incômodos dos aparelhos convencionais.\n\n✅ Quase imperceptível no dia a dia\n✅ Mais conforto …",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odonto Excellence Joinville Itaum",
+        "nosso": false,
+        "anuncios": 3,
+        "paginas": [
+          "554659881068247"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "O tratamento ortodôntico ajuda a corrigir o posicionamento dos dentes, melhorar a mordida e proporcionar mais saúde e qualidade de vida. E o mais importante: cada tratamento é planejado de forma individual, respeitando as necessidades de cada paciente.\n\n🎁 Agende sua avaliação gra…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dr. Rodrigo de Faria Correa",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "249419488244426"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Atualmente uma das formas de se alterar a aparência do sorriso é com laminados cerâmicos / lentes de contato dentais. Essas finas estruturas de porcelana/cerâmica quando bem indicadas servem para corrigir forma, cor e restaurar o dente com um perfil mais agradável dentro de conce…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odonto Centro Sergipe",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "310633408790829"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "🌟 Quer transformar seu sorriso e recuperar a confiança? 🌟\n\nDê adeus à vergonha e descubra um novo sorriso com a Odonto Centro! 🦷💙\n\n✅ Tratamentos de alta qualidade, com tecnologia de ponta e sem dor!\n✅ Dentistas experientes e sempre prontos para cuidar de você.\n\nOferecemos uma var…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odonto Excellence Boa Vista",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "101251676265469"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "✨🦷 Chegou a hora de transformar o seu sorriso!\n Com o tratamento ortodôntico ideal, você conquista mais confiança, saúde e autoestima 😁\n ✅ Avaliação personalizada\n ✅ Condições facilitadas\n ✅ Parcelas que cabem no seu bolso\nNão deixe para depois o sorriso que você pode começar hoj…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Clínica Odonto 4D - Belo Horizonte",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "502827666255276"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Você não precisa mais passar anos com metal na boca para conquistar o sorriso que sempre quis.\nCom Invisalign®, o alinhamento dos dentes é feito com placas transparentes e removíveis, praticamente invisíveis, que não machucam, não atrapalham ao comer e permitem que você veja a ev…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Clínica Odontológica Bello Riso - Joinville - SC",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "635915603221259"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "A ortodontia não começa na adolescência, ela começa quando a face ainda está se formando.\n\nNa infância, o corpo ainda está desenhando o rosto do seu filho, e é justamente aí que os sinais aparecem. Uma mordida que não encaixa, um desvio, uma respiração pela boca, nada disso preci…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Like Odonto",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "113615803414972"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "🌟 Quer transformar seu sorriso e recuperar a confiança? 🌟\n\nDê adeus à vergonha e descubra um novo sorriso com a LikeOdonto! 🦷💙\n\n✅ Tratamentos de alta qualidade, com tecnologia de ponta e sem dor!\n✅ Dentistas experientes e sempre prontos para cuidar de você.\n\nOferecemos uma varied…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odonto Excellence Comasa",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "111344425236342"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Na Odonto Excellence Comasa, o tratamento ortodôntico vai muito além da estética. Com o uso de aparelhos modernos, é possível corrigir o alinhamento dos dentes, melhorar a mordida e transformar seu sorriso com segurança e eficiência.\n\nUm sorriso alinhado facilita a higienização, …",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odonto Excellence Joinville - Paranaguamirim",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "103660537691838"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "✨ Nunca é tarde para transformar o seu sorriso! 😁\n\nO aparelho ortodôntico é para todas as idades. Seja criança, adolescente ou adulto, sempre é tempo de conquistar um sorriso mais bonito e saudável.\n\n📅 Agende sua avaliação e dê o primeiro passo para o sorriso dos seus sonhos!⤵️\n📲…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odonto Excellence Manaus-AM",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "1007662175756301"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Com o aparelho dentário, você pode alinhar seus dentes e conquistar o sorriso dos seus sonhos.\n\nToque no botão abaixo, preencha seus dados e agende uma avaliação conosco.👇\n\n_\n\nManaus, AM.\n\nWhatsApp: (92) 99240-4044\n\nHorário de atendimento:\nSeg a Sex: das 09:00 às 20:00\nSáb: das 0…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "OdontoTop Joinville",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "102674512452778"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Já imaginou alinhar seu sorriso sem fios e sem brackets? ✨\nO Invisalign é um tratamento ortodôntico moderno que utiliza alinhadores transparentes para corrigir seus dentes com discrição e conforto 🦷💙\n\nAlém de serem praticamente invisíveis, os alinhadores podem ser removidos para …",
+        "de_outra_unidade": null
+      }
+    ],
+    "fora_do_produto": 68,
+    "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
+  },
+  "eventos": [
+    {
+      "data": "2026-08-12",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: O contador de avaliações parou",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-12",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Está na metade de baixo da própria praça",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-07-21",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 1★: “Nunca atendem o telefone , muito difícil remarca uma consulta” · respondida",
+      "fonte": "dados/serie/reviews.jsonl"
+    }
+  ]
+}

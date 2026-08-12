@@ -1,0 +1,1006 @@
+{
+  "local_id": "ortho_soro_jardim_faculdade",
+  "praca_id": "sorocaba",
+  "apresentacao": {
+    "unidade": "OrthoDontic",
+    "cidade": "SP · Sorocaba",
+    "endereco": "R. Eulália Silva, 53 - Jardim Faculdade, Sorocaba - SP, 18030-230",
+    "desde": null,
+    "medicoes": null,
+    "posicao_na_cidade": null,
+    "clinicas_na_cidade": null,
+    "lojas_irmas": [
+      {
+        "local_id": "ortho_soro_vila_formosa",
+        "unidade": "OrthoDontic Vila Formosa"
+      },
+      {
+        "local_id": "ortho_soro_centro",
+        "unidade": "OrthoDontic Centro"
+      }
+    ],
+    "frase": null
+  },
+  "rotulo": "SP · Sorocaba",
+  "unidade": "OrthoDontic",
+  "cabecalho": {
+    "nota": 4.3,
+    "avaliacoes": 111,
+    "ritmo": 1.0,
+    "meses_seguidos": 1,
+    "posicao": 17,
+    "de": 17
+  },
+  "faixa": "vermelha",
+  "urgencia": 65,
+  "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-26"
+  },
+  "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada",
+    "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": null,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "scripts/fila.py",
+      "a_favor": [
+        "apenas 1 mês seguido com movimento acima do típico da própria unidade; o ritmo medido é 1.0 avaliações/mês",
+        "17º lugar de 17 clínicas medidas na praça",
+        "nota 4.3 contra mediana 4.9 das 17 clínicas medidas na praça"
+      ],
+      "contra": [],
+      "o_que_aumentaria": "o resultado medido na coleta seguinte (dados/serie/acoes.jsonl)",
+      "procedencia": "sem amostra declarada"
+    }
+  },
+  "gatilhos": [
+    {
+      "peso": 30,
+      "titulo": "O contador de avaliações parou",
+      "chave": "parada",
+      "fato": "apenas 1 mês seguido com movimento acima do típico da própria unidade; o ritmo medido é 1.0 avaliações/mês",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "peso": 20,
+      "titulo": "Está na metade de baixo da própria praça",
+      "chave": "posicao",
+      "fato": "17º lugar de 17 clínicas medidas na praça",
+      "fonte": "dados/portal/rede_cruzamento.json"
+    },
+    {
+      "peso": 15,
+      "titulo": "Nota abaixo da mediana da praça",
+      "chave": "nota",
+      "fato": "nota 4.3 contra mediana 4.9 das 17 clínicas medidas na praça",
+      "fonte": "dados/serie/places.jsonl"
+    }
+  ],
+  "quem_avanca": null,
+  "o_que_mudou": null,
+  "sem_resposta": {
+    "abertas": 3,
+    "com_texto": 3,
+    "itens": [
+      {
+        "nota": 1,
+        "data": "2026-08-11",
+        "texto": "O atendimento inicial é satisfatório e os dentistas são competentes, mas encerrar o contrato ou obter alta é uma dor de cabeça enorme. Existe uma clara estratégia para prender o cliente e continuar cobrando mensalidades.\nO problema é ainda mais grave com clientes idosos, que são facilmente ludibriados. Mesmo após a fase final do tratamento com aparelho, a clínica cria pretextos para estender os pagamentos. Prometem uma \"limpeza gratuita de encerramento\" que nunca acontece: agendam a consulta para esse fim, realizam outro procedimento sem aviso prévio e cobram mais uma mensalidade.\nÉ uma conduta recorrente, de extrema falta de ética e respeito com o consumidor. Então tomem muito cuidado!",
+        "tem_texto": true
+      },
+      {
+        "nota": 3,
+        "data": "2026-07-08",
+        "texto": "Legal",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2018-01-06",
+        "texto": "Eles nao limpam o lugar onde cospem,vai fazer 3 anos que estou com o aparelho e mudou várias vezes a DR. que me atente,sem contar que a última doutora afastou meu dente que estava retinho já pronto para tirar o aparelho,e além de entortar meus dentes fica entolando para não tirar,não recomendo esse dentista para ninguém!",
+        "tem_texto": true
+      }
+    ],
+    "itens_total": 3
+  },
+  "voz_do_paciente": null,
+  "rival": {
+    "comparados": [],
+    "vantagens_deles": [],
+    "fora": [],
+    "fora_total": 0,
+    "sem_comparacao_porque": null
+  },
+  "presenca_na_busca": {
+    "local_id": "ortho_soro_jardim_faculdade",
+    "praca_id": "sorocaba",
+    "rotulo": "SP · Sorocaba",
+    "unidade": "OrthoDontic",
+    "avaliacoes_da_ficha": 111,
+    "aparece_em": 3,
+    "de": 195,
+    "pct": 2,
+    "melhor_posicao": 3,
+    "frases_onde_aparece": [
+      {
+        "frase": "aparelho ortodôntico sorocaba",
+        "posicao": 3,
+        "intencao": "GENÉRICO"
+      },
+      {
+        "frase": "dentista sorocaba aparelho",
+        "posicao": 3,
+        "intencao": "GENÉRICO"
+      },
+      {
+        "frase": "aparelho ortodontico em sorocaba",
+        "posicao": 4,
+        "intencao": "GENÉRICO"
+      }
+    ],
+    "invisivel": false,
+    "frase_do_topo": "Esta loja aparece em **3 das 195 buscas** que testamos na cidade.",
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 195,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/portas.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+      "procedencia": "medido em 195 buscas testadas, 1 medição"
+    }
+  },
+  "jornada": {
+    "local_id": "ortho_soro_jardim_faculdade",
+    "unidade": "OrthoDontic Jardim Faculdade",
+    "rotulo": "SP · Sorocaba",
+    "com_texto": 74,
+    "sem_estagio": 45,
+    "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
+    "estagios": [
+      {
+        "estagio": "descoberta",
+        "rotulo": "Descoberta",
+        "o_que_e": "como me acharam",
+        "quem_resolve": "marketing e ficha do Google",
+        "medido": true,
+        "avaliacoes": 12,
+        "dor": 4,
+        "elogio": 8,
+        "pct_dor": 33,
+        "amostra_curta": false,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2018-01-06",
+            "texto": "Eles nao limpam o lugar onde cospem,vai fazer 3 anos que estou com o aparelho e mudou várias vezes a DR. que me atente,sem contar que a última doutora afastou meu dente que estava retinho já pronto para tirar o aparelho,e além de entortar meus dentes fica entolando para não tirar,não recomendo esse dentista para ninguém!"
+          }
+        ],
+        "frase": "12 avaliações falam deste momento, 4 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "contato",
+        "rotulo": "Contato",
+        "o_que_e": "telefone e WhatsApp",
+        "quem_resolve": "recepção",
+        "medido": true,
+        "avaliacoes": 2,
+        "dor": 1,
+        "elogio": 1,
+        "pct_dor": 50,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "2 avaliações falam deste momento, 1 com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "agendamento",
+        "rotulo": "Agendamento",
+        "o_que_e": "marcar e remarcar",
+        "quem_resolve": "recepção",
+        "medido": true,
+        "avaliacoes": 2,
+        "dor": 2,
+        "elogio": 0,
+        "pct_dor": 100,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "2 avaliações falam deste momento, 2 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "recepcao",
+        "rotulo": "Recepção",
+        "o_que_e": "chegar e esperar",
+        "quem_resolve": "recepção",
+        "medido": true,
+        "avaliacoes": 6,
+        "dor": 3,
+        "elogio": 3,
+        "pct_dor": 50,
+        "amostra_curta": true,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2026-06-26",
+            "texto": "Falta de comprometimento com os pacientes, por falta de profissionais minha filha está com a gengiva extremamente inflamada por aguardar três meses pela dentista responsável por essa parte de limpeza, fomos atendidos com extremo pouco caso e arrogância pela moça que estava na recepção\nLamentável e não indico"
+          }
+        ],
+        "frase": "6 avaliações falam deste momento, 3 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "avaliacao",
+        "rotulo": "Avaliação",
+        "o_que_e": "a primeira consulta",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 1,
+        "dor": 0,
+        "elogio": 1,
+        "pct_dor": 0,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "contratacao",
+        "rotulo": "Contratação",
+        "o_que_e": "preço, contrato e entrada",
+        "quem_resolve": "franqueado",
+        "medido": true,
+        "avaliacoes": 5,
+        "dor": 5,
+        "elogio": 0,
+        "pct_dor": 100,
+        "amostra_curta": true,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2023-07-07",
+            "texto": "Fiz o cancelamento do plano e não foi dado baixa, meu nome se encontra em protesto pois alegam que fiz renegociação de parcelas coisa que nunca ocorreu"
+          }
+        ],
+        "frase": "5 avaliações falam deste momento, 5 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "clinico",
+        "rotulo": "Atendimento clínico",
+        "o_que_e": "a cadeira",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 13,
+        "dor": 7,
+        "elogio": 6,
+        "pct_dor": 54,
+        "amostra_curta": false,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2018-01-06",
+            "texto": "Eles nao limpam o lugar onde cospem,vai fazer 3 anos que estou com o aparelho e mudou várias vezes a DR. que me atente,sem contar que a última doutora afastou meu dente que estava retinho já pronto para tirar o aparelho,e além de entortar meus dentes fica entolando para não tirar,não recomendo esse dentista para ninguém!"
+          },
+          {
+            "nota": 2,
+            "data": "2019-07-25",
+            "texto": "A Dentista que cuida dos dentes do meu filho, deixou juntar 4 cáries para dps avisá-lo..... não gostei😠"
+          },
+          {
+            "nota": 1,
+            "data": "2021-09-08",
+            "texto": "Dentista está me enrolando há 3 anos, sendo que a previsão para o término do tratamento era de 6 messes há 1 ano."
+          }
+        ],
+        "frase": "13 avaliações falam deste momento, 7 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "manutencao",
+        "rotulo": "Manutenção",
+        "o_que_e": "as voltas de cada mês",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 5,
+        "dor": 4,
+        "elogio": 1,
+        "pct_dor": 80,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "5 avaliações falam deste momento, 4 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "cobranca",
+        "rotulo": "Cobrança",
+        "o_que_e": "mensalidade e multa",
+        "quem_resolve": "franqueado",
+        "medido": true,
+        "avaliacoes": 5,
+        "dor": 5,
+        "elogio": 0,
+        "pct_dor": 100,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "5 avaliações falam deste momento, 5 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "suporte",
+        "rotulo": "Suporte",
+        "o_que_e": "quando algo dá errado",
+        "quem_resolve": "franqueado",
+        "medido": true,
+        "avaliacoes": 3,
+        "dor": 2,
+        "elogio": 1,
+        "pct_dor": 67,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "3 avaliações falam deste momento, 2 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "contencao",
+        "rotulo": "Fim e contenção",
+        "o_que_e": "alta e depois dela",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 2,
+        "dor": 2,
+        "elogio": 0,
+        "pct_dor": 100,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "2 avaliações falam deste momento, 2 com notas baixas",
+        "porque_vazio": null
+      }
+    ],
+    "manchete": "A dor pública desta unidade aparece em atendimento clínico — 7 avaliações de 1 ou 2 estrelas de 13 que falam desse momento.",
+    "quem_resolve": "clínica",
+    "e_clinico": true,
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 74,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/serie/reviews.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "mais avaliações com texto nesta loja",
+      "procedencia": "medido em 74 avaliações"
+    }
+  },
+  "meu_bairro": {
+    "bairro": "Jardim Faculdade",
+    "clinicas": 5,
+    "vizinhos_fortes": [
+      {
+        "nome": "OR2U Dental Studio - Dentistas em Sorocaba",
+        "nota": 4.9,
+        "avaliacoes": 746
+      },
+      {
+        "nome": "Dinâmica da Face",
+        "nota": 5,
+        "avaliacoes": 122
+      },
+      {
+        "nome": "Dra Daniela Pellegrini - Ortodontia e Invisalign Sorocaba",
+        "nota": 5,
+        "avaliacoes": 35
+      }
+    ],
+    "frase": "5 clínicas varridas, e a unidade da rede está aqui",
+    "e_da_cidade": false
+  },
+  "acoes": {
+    "arcos": [
+      {
+        "arco_id": "ortho_soro_jardim_faculdade|nota",
+        "local_id": "ortho_soro_jardim_faculdade",
+        "praca_id": "sorocaba",
+        "gatilho": "nota",
+        "problema": "nota 4.3 contra mediana 4.9 das 17 clínicas medidas na praça",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-12",
+        "metrica": "nota",
+        "antes": 4.3,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "responder as avaliações abertas e tratar o motivo",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      },
+      {
+        "arco_id": "ortho_soro_jardim_faculdade|parada",
+        "local_id": "ortho_soro_jardim_faculdade",
+        "praca_id": "sorocaba",
+        "gatilho": "parada",
+        "problema": "apenas 1 mês seguido com movimento acima do típico da própria unidade; o ritmo medido é 1.0 avaliações/mês",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-12",
+        "metrica": "ritmo",
+        "antes": 1.0,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      },
+      {
+        "arco_id": "ortho_soro_jardim_faculdade|posicao",
+        "local_id": "ortho_soro_jardim_faculdade",
+        "praca_id": "sorocaba",
+        "gatilho": "posicao",
+        "problema": "17º lugar de 17 clínicas medidas na praça",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-12",
+        "metrica": "posicao",
+        "antes": 17.0,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      }
+    ],
+    "total": 3,
+    "aviso": "O livro nasceu hoje. Nenhum arco completou 21 dias, então ainda não há veredito para ninguém — a primeira resposta vem na coleta seguinte."
+  },
+  "oferta_da_cidade": {
+    "praca_id": "sorocaba",
+    "rotulo": "SP · Sorocaba",
+    "anuncios_de_aparelho": 67,
+    "anunciantes": 19,
+    "fora_do_produto": 67,
+    "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
+    "sem_texto": 1,
+    "amostra_curta": false,
+    "tese": "A disputa desta cidade é por alinhador invisível — 21 dos 67 anúncios de aparelho medidos falam disso, seguido de avaliação grátis.",
+    "posicao_vaga": "Ninguém está falando de sem entrada — tira a barreira do primeiro pagamento — ataca quem não tem reserva.",
+    "eixos": [
+      {
+        "eixo": "alinhador",
+        "rotulo": "Alinhador invisível",
+        "o_que_significa": "produto de ticket alto e público adulto",
+        "anuncios": 21,
+        "pct": 31,
+        "frase": "21 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "avaliacao_gratis",
+        "rotulo": "Avaliação grátis",
+        "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+        "anuncios": 16,
+        "pct": 24,
+        "frase": "16 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "urgencia",
+        "rotulo": "Urgência e escassez",
+        "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+        "anuncios": 13,
+        "pct": 19,
+        "frase": "13 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "autoridade",
+        "rotulo": "Autoridade técnica",
+        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+        "anuncios": 7,
+        "pct": 10,
+        "frase": "7 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "preco",
+        "rotulo": "Preço na frente",
+        "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
+        "anuncios": 5,
+        "pct": 7,
+        "frase": "5 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "estetico",
+        "rotulo": "Aparelho estético",
+        "o_que_significa": "vende discrição — público que trabalha de frente",
+        "anuncios": 5,
+        "pct": 7,
+        "frase": "5 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "publico_infantil",
+        "rotulo": "Falado para criança e adolescente",
+        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+        "anuncios": 5,
+        "pct": 7,
+        "frase": "5 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "rapidez",
+        "rotulo": "Rapidez do resultado",
+        "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+        "anuncios": 4,
+        "pct": 6,
+        "frase": "4 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "parcelamento",
+        "rotulo": "Parcelamento",
+        "o_que_significa": "vende a mensalidade, não o tratamento",
+        "anuncios": 3,
+        "pct": 4,
+        "frase": "3 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "publico_adulto",
+        "rotulo": "Falado para adulto",
+        "o_que_significa": "disputa o adulto que adiou o tratamento",
+        "anuncios": 2,
+        "pct": 3,
+        "frase": "2 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "sem_entrada",
+        "rotulo": "Sem entrada",
+        "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "prova_social",
+        "rotulo": "Prova social",
+        "o_que_significa": "vende confiança em vez de preço",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      }
+    ],
+    "por_anunciante": [
+      {
+        "anunciante": "Odontoclinic - Sorocaba Júlio de Mesquita ",
+        "eixos": [
+          "urgencia",
+          "preco",
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "Dr Alexandre Nelissen - Ortodontia             -  Estetica Bucal",
+        "eixos": [
+          "alinhador",
+          "avaliacao_gratis",
+          "publico_infantil"
+        ]
+      },
+      {
+        "anunciante": "Dr. Leonardo Mello - Oral Unic Sorocaba - CROSP 100.795",
+        "eixos": [
+          "alinhador",
+          "rapidez",
+          "publico_adulto"
+        ]
+      },
+      {
+        "anunciante": "OdontoCompany Sorocaba - Vila Helena",
+        "eixos": [
+          "alinhador"
+        ]
+      },
+      {
+        "anunciante": "OdontoCompany Sorocaba Zona Norte / Implantes",
+        "eixos": [
+          "urgencia",
+          "parcelamento",
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "Sorocaba - Centro",
+        "eixos": [
+          "avaliacao_gratis",
+          "estetico",
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "ABO Sorocaba Acadêmico",
+        "eixos": [
+          "estetico",
+          "publico_infantil",
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "OdontoCompany Sorocaba - Parque São Bento ",
+        "eixos": [
+          "urgencia"
+        ]
+      }
+    ],
+    "e_da_cidade": true
+  },
+  "plano": null,
+  "anuncios_da_cidade": {
+    "e_da_cidade": true,
+    "rotulo": "SP · Sorocaba",
+    "manchete": "20 anunciantes compram aparelho em SP · Sorocaba, e nenhum é da rede.",
+    "anuncios_ativos": 68,
+    "anunciantes_total": 20,
+    "somos_um_deles": false,
+    "anunciantes": [
+      {
+        "nome": "Dr Alexandre Nelissen - Ortodontia             -  Estetica Bucal",
+        "nosso": false,
+        "anuncios": 10,
+        "paginas": [
+          "1555298544749523"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "📍 Tratamento ortodôntico em Sorocaba \n\n**Por que meu sorriso pode voltar a mudar depois do aparelho?**\n\nQuando falamos de ortodontia, o alinhamento dos dentes é só parte do processo. Os dentes vivem dentro de um sistema vivo: ligamentos, ossos e músculos que se adaptam às transfo…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "OdontoCompany Sorocaba - Vila Helena",
+        "nosso": false,
+        "anuncios": 9,
+        "paginas": [
+          "691206417414732"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "🦷✨ Seu sorriso merece mais confiança!\n\nChegou a hora de alinhar seus dentes e transformar sua autoestima com conforto, tecnologia e segurança 😁💚\n\nNa Odonto Company você encontra o tratamento ortodôntico ideal para conquistar o sorriso que sempre sonhou! ✨\n\n✅ Mais harmonia no sorr…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "ABO Sorocaba Acadêmico",
+        "nosso": false,
+        "anuncios": 8,
+        "paginas": [
+          "109035108628569"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Você sente que, mesmo executando bem a prótese, algo ainda não encaixa como deveria?​\n​\nA verdade é que muitos resultados limitados começam antes da reabilitação.​\n​\nA ortodontia pré-protética é o que separa um tratamento “aceitável” de um resultado realmente preciso, funcional e…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Facop Sorocaba",
+        "nosso": false,
+        "anuncios": 5,
+        "paginas": [
+          "191413011043615"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Conheça a FACOP Sorocaba, onde sua carreira vira destaque!\n\nA FACOP Sorocaba oferece uma estrutura pensada para formar especialistas de alto nível: Com laboratórios modernos e clínica para prática intensiva, corpo docente com professores renomados e ampla carga prática para você …",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odontoclinic - Sorocaba Júlio de Mesquita ",
+        "nosso": false,
+        "anuncios": 5,
+        "paginas": [
+          "561313803730519"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "ATENÇÃO JÚLIO DE MESQUITA E REGIÃO!\nComece o Ano com o Sorriso Alinhado\n\nCom o tratamento ortodôntico, você tem:\n✔️ Correção de Dentes Tortos e Desalinhamentos\n✔️ Opções de Aparelhos Metálico, Estético ou Alinhadores\n✔️ Conforto, Segurança e Acompanhamento Profissional\n✔️ Evoluçã…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "OdontoCompany Sorocaba - Parque São Bento ",
+        "nosso": false,
+        "anuncios": 4,
+        "paginas": [
+          "691206417414732"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "🚨 Inauguração imperdível!\nA nova OdontoCompany na Vila Helena está de portas ABERTAS! \nE os 20 primeiros pacientes que iniciarem o tratamento ortodôntico com a gente vão ganhar um presente especial!\n\nGaranta seu lugar: Só nós chamar no WhatsApp!\n\nVagas limitadas. Não fique de for…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "OdontoCompany Sorocaba Zona Norte / Implantes",
+        "nosso": false,
+        "anuncios": 4,
+        "paginas": [
+          "102370012167213"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "🚨 INSTALAÇÃO DE APARELHO NO MESMO DIA!\n\n✅ Ganhe o aparelho\n✅ Ganhe a documentação\n✅ Saia sorrindo no mesmo dia\n\nVocê paga apenas a manutenção.\n\n⚠️ Vagas limitadas\n\nClique abaixo e garanta a sua!\n\n📲(19) 99018-0507 - WhatsApp\n\n📍Rua Atanázio Soares 2660, Sorocaba, SP, 18076-141",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "ABO Sorocaba para Pacientes",
+        "nosso": false,
+        "anuncios": 3,
+        "paginas": [
+          "312531045594254"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Se você ainda pensa em aparelho como dor constante, desconforto e aparência incômoda, está olhando para um cenário que já ficou no passado.​\n​\nOs tratamentos evoluíram. ​\n​\nHoje existem opções mais discretas, mais leves e planejadas para reduzir ao máximo o incômodo no dia a dia.…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dr. Guilherme Scheibel",
+        "nosso": false,
+        "anuncios": 3,
+        "paginas": [
+          "1511920399076213"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Imagina o que aconteceria com a carreira de um artista se ele subisse no palco com o nariz obviamente artificial.\nQuem trabalha com a própria imagem vive sob duas pressões que o paciente comum não sente com a mesma intensidade. A primeira é o tempo. Cantor tem show, ator tem grav…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dr. Leonardo Mello - Oral Unic Sorocaba - CROSP 100.795",
+        "nosso": false,
+        "anuncios": 3,
+        "paginas": [
+          "103532419171642"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "⚠️Moradores de Sorocaba, nosso foco é você!\n\nAparelho de ferrinho ❌ NUNCA MAIS! \n\nSó quem já usou aqueles aparelhos fixos convencionais, com braquetes e borrachinhas, sabe o alívio e a felicidade que é poder removê-los ao final do tratamento, né? 🙏\n\nAfinal, além de ser um tratame…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Sorocaba - Centro",
+        "nosso": false,
+        "anuncios": 3,
+        "paginas": [
+          "733827463137851"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Quer colocar aparelho, mas ainda está em dúvida entre o modelo comum ou o estético? \n\nAqui na OdontoClinic, além de facilidade no acesso, você conta com orientação especializada para fazer a melhor escolha pro seu sorriso! 😁\n\n🦷 Ortodontia com conforto, praticidade e condição aces…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odonto Excellence Sorocaba - Éden",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "184405561414479"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "🦷 Sorrir sem travar é um privilégio que você também merece.\n\nVocê sente vergonha de sorrir em fotos? Evita dar risada em público por causa dos dentes tortos?\nNão deixe que a aparência do seu sorriso limite sua confiança!\n\nNa Odonto Excellence – Éden, temos o tratamento ortodôntic…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Orthopride Sorocaba",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "1057515330776356"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "BRINDE: AVALIAÇÃO+LIMPEZA DE PROFILAXIA\n\n🦷 A clínica está com uma condição especial para você começar seu tratamento ortodôntico! ✨\n\n✅ Até 60% de desconto\n✅ Documentação inclusa\n✅ Raio X incluso\n✅ Limpeza de profilaxia inclusa\n\nTudo isso com profissionais qualificados, estrutura …",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dr. Alexandre Tabai Coelho",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "100387389624933"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "📍 Quer alinhar o sorriso, mas não se imagina usando aparelho metálico?\n\nOs alinhadores invisíveis podem ajudar a corrigir a posição dos dentes de forma mais discreta, confortável e prática.\n\nPor serem transparentes e removíveis, eles combinam melhor com a rotina de quem não quer …",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odonto BAMO",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "860955127092037"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Volte a sorrir com confiança🌟🪄\n\nNa Clínica BAMO, cuidamos do seu sorriso com carinho e atendimento humanizado.\n\nOferecemos diversos tratamentos:\n\n• Odontopediatria ( criança ) \n• Implantes\n• Próteses ( dentaduras )\n• Limpeza\n• Clareamento \n• Aparelho invisível\n• Restauração \n\n📍Ru…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odonto Excellence Sorocaba Centro",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "104384471919728"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Agende agora mesmo a sua avaliação clicando em \"CADASTRE-SE\"!\n\n🦷 Na Odonto Excellence Sorocaba Centro você encontra os melhores especialistas 🦷\n\n✅ Ortodontia\n✅ Implante\n✅ Prótese\n✅ Clínico Geral\n\nE muito mais...\n\nResponsável Técnico: Dr. Joseph Young Hyo Kim - CROSP-CL 24.605 CRO…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odonto Excellence Sorocaba Vila Formosa",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "561063240934872"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Imagina você que precisa ir ao dentista, encontrar uma clínica onde você pode escolher o valor que vai pagar por mês, o melhor dia para o seu pagamento, ganhar descontos exclusivos e tudo isso com um carnê próprio, SEM precisar de cartão?\n\nAqui você encontra tudo isso e muito mai…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odonto Excellence Sorocaba Zona Leste",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "333321087196346"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Coloque seu aparelho dental AGORA e comece a pagar só daqui a 30 dias! 🎉\n\nAqui, você também conta com facilidades que fazem a diferença:\n❤️ Avaliação cortesia\n💳 Parcelamento no carnê (boleto) próprio da clínica\n📅 Você escolhe a data de vencimento da sua parcela\n⏰ Primeira parcela…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Sorridents Sorocaba Itavuvu",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "102632898653351"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Aparelho Ortodôntico em SOROCABA!  💙💚🤍❤️\n\nAgende a sua consulta\n\nClique e saiba mais.",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Sorrile Ortodontia",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "732716190107558"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "🦷 Cuidar do seu sorriso começa com a informação certa.\n\nAqui você encontra dicas, transformações reais e conteúdos para manter a sua saúde bucal sempre em dia.\n\n✨ Clique em seguir e acompanhe a Sorrile!",
+        "de_outra_unidade": null
+      }
+    ],
+    "fora_do_produto": 67,
+    "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
+  },
+  "eventos": [
+    {
+      "data": "2026-08-12",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: O contador de avaliações parou",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-12",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Está na metade de baixo da própria praça",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-12",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Nota abaixo da mediana da praça",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-11",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 1★: “O atendimento inicial é satisfatório e os dentistas são competentes, mas encerrar o contra…” · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "data": "2026-07-08",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 3★: “Legal” · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "data": "2026-06-26",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 1★: “Falta de comprometimento com os pacientes, por falta de profissionais minha filha está com…” · respondida",
+      "fonte": "dados/serie/reviews.jsonl"
+    }
+  ]
+}

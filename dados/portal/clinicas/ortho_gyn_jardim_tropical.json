@@ -1,0 +1,734 @@
+{
+  "local_id": "ortho_gyn_jardim_tropical",
+  "praca_id": "goiania",
+  "apresentacao": {
+    "unidade": "OrthoDontic",
+    "cidade": "GO · Goiânia",
+    "endereco": "Avenida Tropical - Esquina com - Av. Lago das Rosas, Q. 25 - LT 01 - Jardim Tropical, Aparecida de Goiânia - GO, 74946-500",
+    "desde": null,
+    "medicoes": null,
+    "posicao_na_cidade": null,
+    "clinicas_na_cidade": null,
+    "lojas_irmas": [
+      {
+        "local_id": "ortho_gyn_st_oeste",
+        "unidade": "OrthoDontic St. Oeste"
+      },
+      {
+        "local_id": "ortho_gyn_st_central",
+        "unidade": "OrthoDontic St. Central"
+      },
+      {
+        "local_id": "ortho_gyn_st_morada_do_sol",
+        "unidade": "OrthoDontic St. Morada do Sol"
+      }
+    ],
+    "frase": null
+  },
+  "rotulo": "GO · Goiânia",
+  "unidade": "OrthoDontic",
+  "cabecalho": {
+    "nota": 4.7,
+    "avaliacoes": 152,
+    "ritmo": 6.8,
+    "meses_seguidos": 0,
+    "posicao": 14,
+    "de": 18
+  },
+  "faixa": "amarela",
+  "urgencia": 50,
+  "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-26"
+  },
+  "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada",
+    "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": null,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "scripts/fila.py",
+      "a_favor": [
+        "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 6.8 avaliações/mês",
+        "14º lugar de 18 clínicas medidas na praça"
+      ],
+      "contra": [],
+      "o_que_aumentaria": "o resultado medido na coleta seguinte (dados/serie/acoes.jsonl)",
+      "procedencia": "sem amostra declarada"
+    }
+  },
+  "gatilhos": [
+    {
+      "peso": 30,
+      "titulo": "O contador de avaliações parou",
+      "chave": "parada",
+      "fato": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 6.8 avaliações/mês",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "peso": 20,
+      "titulo": "Está na metade de baixo da própria praça",
+      "chave": "posicao",
+      "fato": "14º lugar de 18 clínicas medidas na praça",
+      "fonte": "dados/portal/rede_cruzamento.json"
+    }
+  ],
+  "quem_avanca": null,
+  "o_que_mudou": null,
+  "sem_resposta": {
+    "abertas": 8,
+    "com_texto": 6,
+    "itens": [
+      {
+        "nota": 1,
+        "data": "2026-07-16",
+        "texto": "Muito insatisfeito. Com atendimento da clínica. Fiz dois contrato na clínica quase r$ 7000 em tratamento de aparelho odontológico. Porém só querem fechar a pasta. Porque você marca o horário eles nunca compre sabendo que cada um tem seu jeito de viver trabalho estuda e etc. Só tem no horário deles não no que marca. Porque é importante deles é fechar pasta com os clientes não atender adequadamente. Fiz uma reclamação já tem alguns dias até hoje nenhuma pessoa responsável para atender corretamente. Irei fazer o cancelamento do contrato via e-mail caso venha alguma negativação irei entrar com processo judicial porque eu conheço das leis",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-02-23",
+        "texto": "A gente nunca consegue falar no telefone com ninguém muito difícil a comunicação de vcs",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-02-11",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 1,
+        "data": "2025-11-19",
+        "texto": "Péssimo atendimento, minha filha está aqui tem mais de 4 anos, ela colocou aparelho, aí depois disseram que colocaram muito cedo pois ainda tinha dente de leite, mas quem começou o tratamento foi com eles, a dentista não tem um bom atendimento, o administrativo é péssimo, só serve para cobrar, e quando a gente liga, pedindo auxílio só serve para pagar, pq pra resolver não serve! Minha filha ainda está em tratamento dizendo que vão retirar o aparelho, enfim péssimo, não recomendo mesmo",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-06-27",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 1,
+        "data": "2025-04-15",
+        "texto": "Péssimo atendimento, pedem para vc assinar um contrato de e passam um carnê com 24 parcelas sujeito a protesto. Fiz uma manutenção em um dia e no outro dia o aparelho quebrou, tive voltar lá para corrigir e no outro dia quebrou de novo.... enfim dentistas novos e talvez inexperientes ou simplesmente não fazem questão de fazer um trabalho bem feito. Enfim não recomendo de jeito nenhum. Sem falar que vive lotado esse lugar. Recisão de contrato e retirada do aparelho R$450.00.",
+        "tem_texto": true
+      },
+      {
+        "nota": 3,
+        "data": "2025-03-10",
+        "texto": "Atendimento perfeito,\nPorém tem que melhorar no requisito horário,\nMarca um\nVc chega e demora pra ser atendido.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-02-26",
+        "texto": "Toda vez que eu vou, sempre demora não adianta marca que demora, toda vez falo que tenho que ir mais cedo por conta que trabalho",
+        "tem_texto": true
+      }
+    ],
+    "itens_total": 8
+  },
+  "voz_do_paciente": null,
+  "rival": {
+    "comparados": [],
+    "vantagens_deles": [],
+    "fora": [],
+    "fora_total": 0,
+    "sem_comparacao_porque": null
+  },
+  "presenca_na_busca": {
+    "local_id": "ortho_gyn_jardim_tropical",
+    "praca_id": "goiania",
+    "rotulo": "GO · Goiânia",
+    "unidade": "OrthoDontic",
+    "avaliacoes_da_ficha": 152,
+    "aparece_em": 1,
+    "de": 196,
+    "pct": 1,
+    "melhor_posicao": 1,
+    "frases_onde_aparece": [
+      {
+        "frase": "ortodontista aparecida de goiania",
+        "posicao": 1,
+        "intencao": "BAIRRO"
+      }
+    ],
+    "invisivel": false,
+    "frase_do_topo": "Esta loja aparece em **1 das 196 buscas** que testamos na cidade.",
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 196,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/portas.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+      "procedencia": "medido em 196 buscas testadas, 1 medição"
+    }
+  },
+  "jornada": {
+    "local_id": "ortho_gyn_jardim_tropical",
+    "unidade": "OrthoDontic Jardim Tropical",
+    "rotulo": "GO · Goiânia",
+    "com_texto": 89,
+    "sem_estagio": 47,
+    "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
+    "estagios": [
+      {
+        "estagio": "descoberta",
+        "rotulo": "Descoberta",
+        "o_que_e": "como me acharam",
+        "quem_resolve": "marketing e ficha do Google",
+        "medido": true,
+        "avaliacoes": 8,
+        "dor": 2,
+        "elogio": 6,
+        "pct_dor": 25,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": "8 avaliações falam deste momento, 2 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "contato",
+        "rotulo": "Contato",
+        "o_que_e": "telefone e WhatsApp",
+        "quem_resolve": "recepção",
+        "medido": true,
+        "avaliacoes": 1,
+        "dor": 1,
+        "elogio": 0,
+        "pct_dor": 100,
+        "amostra_curta": true,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2026-02-23",
+            "texto": "A gente nunca consegue falar no telefone com ninguém muito difícil a comunicação de vcs"
+          }
+        ],
+        "frase": "1 avaliação fala deste momento, 1 com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "agendamento",
+        "rotulo": "Agendamento",
+        "o_que_e": "marcar e remarcar",
+        "quem_resolve": "recepção",
+        "medido": true,
+        "avaliacoes": 2,
+        "dor": 1,
+        "elogio": 0,
+        "pct_dor": 50,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "2 avaliações falam deste momento, 1 com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "recepcao",
+        "rotulo": "Recepção",
+        "o_que_e": "chegar e esperar",
+        "quem_resolve": "recepção",
+        "medido": true,
+        "avaliacoes": 23,
+        "dor": 0,
+        "elogio": 23,
+        "pct_dor": 0,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": "23 avaliações falam deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "avaliacao",
+        "rotulo": "Avaliação",
+        "o_que_e": "a primeira consulta",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 1,
+        "dor": 0,
+        "elogio": 1,
+        "pct_dor": 0,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "contratacao",
+        "rotulo": "Contratação",
+        "o_que_e": "preço, contrato e entrada",
+        "quem_resolve": "franqueado",
+        "medido": true,
+        "avaliacoes": 4,
+        "dor": 2,
+        "elogio": 2,
+        "pct_dor": 50,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "4 avaliações falam deste momento, 2 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "clinico",
+        "rotulo": "Atendimento clínico",
+        "o_que_e": "a cadeira",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 16,
+        "dor": 1,
+        "elogio": 15,
+        "pct_dor": 6,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": "16 avaliações falam deste momento, 1 com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "manutencao",
+        "rotulo": "Manutenção",
+        "o_que_e": "as voltas de cada mês",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 2,
+        "dor": 1,
+        "elogio": 1,
+        "pct_dor": 50,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "2 avaliações falam deste momento, 1 com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "cobranca",
+        "rotulo": "Cobrança",
+        "o_que_e": "mensalidade e multa",
+        "quem_resolve": "franqueado",
+        "medido": true,
+        "avaliacoes": 1,
+        "dor": 1,
+        "elogio": 0,
+        "pct_dor": 100,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "1 avaliação fala deste momento, 1 com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "suporte",
+        "rotulo": "Suporte",
+        "o_que_e": "quando algo dá errado",
+        "quem_resolve": "franqueado",
+        "medido": true,
+        "avaliacoes": 3,
+        "dor": 3,
+        "elogio": 0,
+        "pct_dor": 100,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "3 avaliações falam deste momento, 3 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "contencao",
+        "rotulo": "Fim e contenção",
+        "o_que_e": "alta e depois dela",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 2,
+        "dor": 1,
+        "elogio": 1,
+        "pct_dor": 50,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "2 avaliações falam deste momento, 1 com nota baixa",
+        "porque_vazio": null
+      }
+    ],
+    "manchete": "Nenhum momento da jornada concentra dor com amostra suficiente para virar manchete.",
+    "quem_resolve": null,
+    "e_clinico": null,
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 89,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/serie/reviews.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "mais avaliações com texto nesta loja",
+      "procedencia": "medido em 89 avaliações"
+    }
+  },
+  "meu_bairro": {
+    "bairro": "Jardim Tropical",
+    "clinicas": 1,
+    "vizinhos_fortes": [],
+    "frase": "1 clínica varrida, e a unidade da rede está aqui",
+    "e_da_cidade": false
+  },
+  "acoes": {
+    "arcos": [
+      {
+        "arco_id": "ortho_gyn_jardim_tropical|parada",
+        "local_id": "ortho_gyn_jardim_tropical",
+        "praca_id": "goiania",
+        "gatilho": "parada",
+        "problema": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 6.8 avaliações/mês",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-12",
+        "metrica": "ritmo",
+        "antes": 6.8,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      },
+      {
+        "arco_id": "ortho_gyn_jardim_tropical|posicao",
+        "local_id": "ortho_gyn_jardim_tropical",
+        "praca_id": "goiania",
+        "gatilho": "posicao",
+        "problema": "14º lugar de 18 clínicas medidas na praça",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-12",
+        "metrica": "posicao",
+        "antes": 14.0,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      }
+    ],
+    "total": 2,
+    "aviso": "O livro nasceu hoje. Nenhum arco completou 21 dias, então ainda não há veredito para ninguém — a primeira resposta vem na coleta seguinte."
+  },
+  "oferta_da_cidade": {
+    "praca_id": "goiania",
+    "rotulo": "GO · Goiânia",
+    "anuncios_de_aparelho": 15,
+    "anunciantes": 7,
+    "fora_do_produto": 94,
+    "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
+    "sem_texto": 0,
+    "amostra_curta": false,
+    "tese": "A disputa desta cidade é por alinhador invisível — 11 dos 15 anúncios de aparelho medidos falam disso, seguido de avaliação grátis.",
+    "posicao_vaga": "Ninguém está falando de sem entrada — tira a barreira do primeiro pagamento — ataca quem não tem reserva.",
+    "eixos": [
+      {
+        "eixo": "alinhador",
+        "rotulo": "Alinhador invisível",
+        "o_que_significa": "produto de ticket alto e público adulto",
+        "anuncios": 11,
+        "pct": 73,
+        "frase": "11 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "avaliacao_gratis",
+        "rotulo": "Avaliação grátis",
+        "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+        "anuncios": 10,
+        "pct": 67,
+        "frase": "10 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "autoridade",
+        "rotulo": "Autoridade técnica",
+        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+        "anuncios": 6,
+        "pct": 40,
+        "frase": "6 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "rapidez",
+        "rotulo": "Rapidez do resultado",
+        "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+        "anuncios": 3,
+        "pct": 20,
+        "frase": "3 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "preco",
+        "rotulo": "Preço na frente",
+        "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
+        "anuncios": 2,
+        "pct": 13,
+        "frase": "2 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "parcelamento",
+        "rotulo": "Parcelamento",
+        "o_que_significa": "vende a mensalidade, não o tratamento",
+        "anuncios": 2,
+        "pct": 13,
+        "frase": "2 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "estetico",
+        "rotulo": "Aparelho estético",
+        "o_que_significa": "vende discrição — público que trabalha de frente",
+        "anuncios": 2,
+        "pct": 13,
+        "frase": "2 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "urgencia",
+        "rotulo": "Urgência e escassez",
+        "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+        "anuncios": 2,
+        "pct": 13,
+        "frase": "2 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "sem_entrada",
+        "rotulo": "Sem entrada",
+        "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "publico_adulto",
+        "rotulo": "Falado para adulto",
+        "o_que_significa": "disputa o adulto que adiou o tratamento",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "publico_infantil",
+        "rotulo": "Falado para criança e adolescente",
+        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "prova_social",
+        "rotulo": "Prova social",
+        "o_que_significa": "vende confiança em vez de preço",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      }
+    ],
+    "por_anunciante": [
+      {
+        "anunciante": "Crool Centro Odontológico",
+        "eixos": [
+          "avaliacao_gratis",
+          "alinhador"
+        ]
+      },
+      {
+        "anunciante": "Camargo Odontologia",
+        "eixos": [
+          "preco",
+          "avaliacao_gratis",
+          "alinhador"
+        ]
+      },
+      {
+        "anunciante": "OrthoDontic",
+        "eixos": [
+          "parcelamento",
+          "urgencia"
+        ]
+      },
+      {
+        "anunciante": "Orofacci",
+        "eixos": [
+          "alinhador",
+          "autoridade",
+          "rapidez"
+        ]
+      },
+      {
+        "anunciante": "Espaço Cavasi Odontologia - Rio Pomba/MG ",
+        "eixos": [
+          "alinhador",
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "Odonto Excellence Aparecida de Goiânia",
+        "eixos": [
+          "avaliacao_gratis",
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "SALUD Odontologia - Porto Ferreira",
+        "eixos": [
+          "autoridade"
+        ]
+      }
+    ],
+    "e_da_cidade": true
+  },
+  "plano": null,
+  "anuncios_da_cidade": {
+    "e_da_cidade": true,
+    "rotulo": "GO · Goiânia",
+    "manchete": "7 anunciantes disputam aparelho em GO · Goiânia, e a rede é 1 deles.",
+    "anuncios_ativos": 15,
+    "anunciantes_total": 7,
+    "somos_um_deles": true,
+    "anunciantes": [
+      {
+        "nome": "OrthoDontic",
+        "nosso": true,
+        "anuncios": 2,
+        "paginas": [
+          "676533102219286"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Combos de aparelho ortodontico em Aparecida de Goiania.\n\nA OrthoDontic Buriti abriu um COMBO especial para você transformar seu sorriso:\n\n🦷 Aparelho ortodôntico incluso\n📄 Documentação completa\n⚡ Instalação rápida\n💳 Pague apenas a mensalidade!\n\nTudo com profissionais experientes e…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Crool Centro Odontológico",
+        "nosso": false,
+        "anuncios": 7,
+        "paginas": [
+          "1476054779285422"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Quer alinhar os dentes sem precisar usar aparelho metálico?\n\nO Invisalign utiliza alinhadores transparentes, removíveis e discretos para transformar o seu sorriso com mais conforto no dia a dia.\n\n📲 Agende sua avaliação no Crool",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Camargo Odontologia",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "111033664547426"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Na Camargo Odontologia, você transforma o seu sorriso com alinhadores invisíveis pagando até 45% ABAIXO do preço de mercado! \n\nDiga adeus aos aparelhos metálicos e descubra a evolução da ortodontia: \n\n✔️ Super discreto: Totalmente transparente. \n\n✔️ Conforto total: Feito sob medi…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Espaço Cavasi Odontologia - Rio Pomba/MG ",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "696208656917655"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "VOCÊ PODE CONQUISTAR ALINHADORES AINDA HOJE.\n\nDesconforto, aparência e dificuldade no dia a dia fazem muita gente adiar o tratamento…\n\nMas hoje existe uma alternativa muito mais moderna.\n\nCom os alinhadores invisíveis, você corrige seu sorriso de forma discreta, confortável e sem…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odonto Excellence Aparecida de Goiânia",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "105021882211434"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "A restauração dental é indicada para reparar dentes danificados por cárie ou trauma, devolvendo a forma, a função e a estética do sorriso. Quanto mais cedo é feita, mais simples e conservador é o tratamento.\n\nIgnorar pequenas lesões pode levar à necessidade de procedimentos mais …",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Orofacci",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "102944177916741"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "✨ Alinhadores Invisíveis!\n\nUm modelo de placa transparente, SUPER CONFORTÁVEL e DISCRETA, capaz de corrigir o seu sorriso em muito menos tempo e com uso quase imperceptível! 😮\n\nVocê nem vai sentir que está usando. 😁\n\nO Alinhador Invisível é muito mais ✅ Prático e eficiente!\n\nEntã…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "SALUD Odontologia - Porto Ferreira",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "314210465648186"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "📢 ATENÇÃO MORADORES DE PORTO FERREIRA E REGIÃO\n\nVocê está adiando o seu tratamento ortodôntico? A hora de cuidar de você é agora! Nossa equipe de especialistas está pronta para cuidar do seu sorriso com as melhores condições e tecnologias do mercado.\n\n📲 WhatsApp: 19 99693-0658\n🏁 …",
+        "de_outra_unidade": null
+      }
+    ],
+    "fora_do_produto": 94,
+    "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
+  },
+  "eventos": [
+    {
+      "data": "2026-08-12",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: O contador de avaliações parou",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-12",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Está na metade de baixo da própria praça",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-07-16",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 1★: “Muito insatisfeito. Com atendimento da clínica. Fiz dois contrato na clínica quase r$ 7000…” · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    }
+  ]
+}

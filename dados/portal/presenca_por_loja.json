@@ -2,317 +2,781 @@
  "o_que_e": "Em quantas buscas da cidade CADA LOJA aparece no mapa do Google — separado por unidade, porque loja não se funde com loja.",
  "como_separa": "O mapa devolve o contador de avaliações de cada resultado, e o contador é a impressão digital da loja. Casando com a ficha, a aparição vira de uma unidade.",
  "o_que_nao_e": "Não é volume de busca. É em quantas das frases testadas a loja apareceu no mapa.",
- "corte": "2026-08-09",
- "lojas_medidas": 10,
- "lojas_invisiveis": 1,
- "manchete": "1 loja não aparece em nenhuma busca da própria cidade.",
+ "corte": "2026-08-12",
+ "lojas_medidas": 22,
+ "lojas_invisiveis": 2,
+ "manchete": "2 lojas não aparecem em nenhuma busca da própria cidade.",
  "avisos": [
   {
-   "praca_id": "feira",
-   "rotulo": "BA · Feira de Santana",
+   "praca_id": "goiania",
+   "rotulo": "GO · Goiânia",
    "aparicoes_sem_dono": 1,
    "por_que": "resultado com nome OrthoDontic cujo contador de avaliações não casa com nenhuma ficha da praça — pode ser loja fora da nossa lista, ou ficha lida em outro dia"
   }
  ],
  "lojas": [
   {
-   "local_id": "ortho_cba_dom_bosco",
-   "praca_id": "cuiaba",
-   "rotulo": "MT · Cuiabá",
-   "unidade": "OrthoDontic Cuiabá Dom Bosco (Centro Sul)",
-   "avaliacoes_da_ficha": 71,
+   "local_id": "ortho_cwb_portao",
+   "praca_id": "curitiba",
+   "rotulo": "PR · Curitiba",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": 270,
+   "aparece_em": 1,
+   "de": 213,
+   "pct": 0,
+   "melhor_posicao": 3,
+   "frases_onde_aparece": [
+    {
+     "frase": "aparelho ortodôntico curitiba preços",
+     "posicao": 3,
+     "intencao": "PREÇO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **1 das 213 buscas** que testamos na cidade."
+  },
+  {
+   "local_id": "ortho_cwb_centro_4",
+   "praca_id": "curitiba",
+   "rotulo": "PR · Curitiba",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": 126,
+   "aparece_em": 1,
+   "de": 213,
+   "pct": 0,
+   "melhor_posicao": 4,
+   "frases_onde_aparece": [
+    {
+     "frase": "aparelho ortodôntico curitiba preços",
+     "posicao": 4,
+     "intencao": "PREÇO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **1 das 213 buscas** que testamos na cidade."
+  },
+  {
+   "local_id": "ortho_gyn_st_morada_do_sol",
+   "praca_id": "goiania",
+   "rotulo": "GO · Goiânia",
+   "unidade": "OrthoDontic Mangalô",
+   "avaliacoes_da_ficha": 124,
    "aparece_em": 0,
-   "de": 151,
+   "de": 196,
    "pct": 0,
    "melhor_posicao": null,
    "frases_onde_aparece": [],
    "invisivel": true,
-   "frase_do_topo": "Esta loja **não aparece em nenhuma** das 151 buscas que testamos na cidade."
+   "frase_do_topo": "Esta loja **não aparece em nenhuma** das 196 buscas que testamos na cidade."
   },
   {
-   "local_id": "ortho_cba_fernando_correa",
-   "praca_id": "cuiaba",
-   "rotulo": "MT · Cuiabá",
-   "unidade": "OrthoDontic Cuiabá Fernando Corrêa",
-   "avaliacoes_da_ficha": 78,
-   "aparece_em": 1,
-   "de": 151,
-   "pct": 1,
-   "melhor_posicao": 3,
-   "frases_onde_aparece": [
-    {
-     "frase": "aparelho ortodôntico cuiaba",
-     "posicao": 3,
-     "intencao": "GENÉRICO"
-    }
-   ],
-   "invisivel": false,
-   "frase_do_topo": "Esta loja aparece em **1 das 151 buscas** que testamos na cidade."
-  },
-  {
-   "local_id": "ortho_contagem",
-   "praca_id": "contagem",
-   "rotulo": "MG · Contagem",
+   "local_id": "ortho_poa_rio_branco",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
    "unidade": "OrthoDontic",
-   "avaliacoes_da_ficha": 857,
-   "aparece_em": 3,
-   "de": 140,
-   "pct": 2,
-   "melhor_posicao": 1,
-   "frases_onde_aparece": [
-    {
-     "frase": "aparelho ortodôntico contagem",
-     "posicao": 1,
-     "intencao": "GENÉRICO"
-    },
-    {
-     "frase": "ortodontista contagem",
-     "posicao": 1,
-     "intencao": "GENÉRICO"
-    },
-    {
-     "frase": "ortodontista em contagem",
-     "posicao": 1,
-     "intencao": "GENÉRICO"
-    }
-   ],
-   "invisivel": false,
-   "frase_do_topo": "Esta loja aparece em **3 das 140 buscas** que testamos na cidade."
+   "avaliacoes_da_ficha": 32,
+   "aparece_em": 0,
+   "de": 196,
+   "pct": 0,
+   "melhor_posicao": null,
+   "frases_onde_aparece": [],
+   "invisivel": true,
+   "frase_do_topo": "Esta loja **não aparece em nenhuma** das 196 buscas que testamos na cidade."
   },
   {
-   "local_id": "ortho_fsa",
-   "praca_id": "feira",
-   "rotulo": "BA · Feira de Santana",
-   "unidade": "OrthoDontic Feira de Santana",
-   "avaliacoes_da_ficha": 170,
+   "local_id": "ortho_cwb_centro_3",
+   "praca_id": "curitiba",
+   "rotulo": "PR · Curitiba",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": 491,
    "aparece_em": 3,
-   "de": 123,
-   "pct": 2,
-   "melhor_posicao": 1,
+   "de": 213,
+   "pct": 1,
+   "melhor_posicao": 4,
    "frases_onde_aparece": [
     {
-     "frase": "ortodontista feira de santana",
-     "posicao": 1,
-     "intencao": "GENÉRICO"
-    },
-    {
-     "frase": "aparelho ortodôntico feira de santana",
-     "posicao": 2,
-     "intencao": "GENÉRICO"
-    },
-    {
-     "frase": "ortodontista em feira de santana",
-     "posicao": 3,
-     "intencao": "GENÉRICO"
-    }
-   ],
-   "invisivel": false,
-   "frase_do_topo": "Esta loja aparece em **3 das 123 buscas** que testamos na cidade."
-  },
-  {
-   "local_id": "ortho_centro_ldn",
-   "praca_id": "londrina",
-   "rotulo": "PR · Londrina",
-   "unidade": "OrthoDontic Centro",
-   "avaliacoes_da_ficha": 77,
-   "aparece_em": 4,
-   "de": 176,
-   "pct": 2,
-   "melhor_posicao": 2,
-   "frases_onde_aparece": [
-    {
-     "frase": "aparelho ortodôntico londrina",
-     "posicao": 2,
-     "intencao": "GENÉRICO"
-    },
-    {
-     "frase": "aparelho ortodôntico em londrina",
-     "posicao": 2,
-     "intencao": "GENÉRICO"
-    },
-    {
-     "frase": "ortodontista londrina",
-     "posicao": 3,
-     "intencao": "GENÉRICO"
-    },
-    {
-     "frase": "ortodontista em londrina",
+     "frase": "aparelho ortodôntico curitiba",
      "posicao": 4,
      "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista centro curitiba",
+     "posicao": 4,
+     "intencao": "BAIRRO"
+    },
+    {
+     "frase": "aparelho ortodôntico curitiba preços",
+     "posicao": 5,
+     "intencao": "PREÇO"
     }
    ],
    "invisivel": false,
-   "frase_do_topo": "Esta loja aparece em **4 das 176 buscas** que testamos na cidade."
+   "frase_do_topo": "Esta loja aparece em **3 das 213 buscas** que testamos na cidade."
   },
   {
-   "local_id": "ortho_palmas",
-   "praca_id": "palmas",
-   "rotulo": "TO · Palmas",
+   "local_id": "ortho_gyn_jardim_tropical",
+   "praca_id": "goiania",
+   "rotulo": "GO · Goiânia",
    "unidade": "OrthoDontic",
-   "avaliacoes_da_ficha": 306,
-   "aparece_em": 3,
-   "de": 120,
-   "pct": 2,
+   "avaliacoes_da_ficha": 152,
+   "aparece_em": 1,
+   "de": 196,
+   "pct": 1,
    "melhor_posicao": 1,
    "frases_onde_aparece": [
     {
-     "frase": "aparelho ortodôntico palmas",
+     "frase": "ortodontista aparecida de goiania",
      "posicao": 1,
-     "intencao": "GENÉRICO"
-    },
-    {
-     "frase": "ortodontista palmas",
-     "posicao": 1,
-     "intencao": "GENÉRICO"
-    },
-    {
-     "frase": "ortodontista em palmas",
-     "posicao": 1,
-     "intencao": "GENÉRICO"
+     "intencao": "BAIRRO"
     }
    ],
    "invisivel": false,
-   "frase_do_topo": "Esta loja aparece em **3 das 120 buscas** que testamos na cidade."
+   "frase_do_topo": "Esta loja aparece em **1 das 196 buscas** que testamos na cidade."
   },
   {
-   "local_id": "ortho_pp",
-   "praca_id": "prudente",
-   "rotulo": "SP · Presidente Prudente",
-   "unidade": "OrthoDontic Presidente Prudente",
-   "avaliacoes_da_ficha": 592,
+   "local_id": "ortho_joi_aventureiro",
+   "praca_id": "joinville",
+   "rotulo": "SC · Joinville",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": 170,
    "aparece_em": 2,
-   "de": 106,
-   "pct": 2,
-   "melhor_posicao": 1,
+   "de": 157,
+   "pct": 1,
+   "melhor_posicao": 4,
    "frases_onde_aparece": [
     {
-     "frase": "ortodontista presidente prudente",
-     "posicao": 1,
-     "intencao": "GENÉRICO"
+     "frase": "dentista joinville aventureiro",
+     "posicao": 4,
+     "intencao": "BAIRRO"
     },
     {
-     "frase": "ortodontista em presidente prudente",
-     "posicao": 2,
+     "frase": "ortodontista em joinville",
+     "posicao": 5,
      "intencao": "GENÉRICO"
     }
    ],
    "invisivel": false,
-   "frase_do_topo": "Esta loja aparece em **2 das 106 buscas** que testamos na cidade."
+   "frase_do_topo": "Esta loja aparece em **2 das 157 buscas** que testamos na cidade."
   },
   {
-   "local_id": "ortho_cba_centro_norte",
-   "praca_id": "cuiaba",
-   "rotulo": "MT · Cuiabá",
-   "unidade": "OrthoDontic Cuiabá Centro Norte",
-   "avaliacoes_da_ficha": 1223,
-   "aparece_em": 4,
-   "de": 151,
-   "pct": 3,
-   "melhor_posicao": 1,
-   "frases_onde_aparece": [
-    {
-     "frase": "aparelho ortodôntico cuiaba",
-     "posicao": 1,
-     "intencao": "GENÉRICO"
-    },
-    {
-     "frase": "ortodontista cuiabá",
-     "posicao": 1,
-     "intencao": "GENÉRICO"
-    },
-    {
-     "frase": "ortodontista em cuiabá",
-     "posicao": 1,
-     "intencao": "GENÉRICO"
-    },
-    {
-     "frase": "ortodontista em cuiaba",
-     "posicao": 2,
-     "intencao": "GENÉRICO"
-    }
-   ],
-   "invisivel": false,
-   "frase_do_topo": "Esta loja aparece em **4 das 151 buscas** que testamos na cidade."
-  },
-  {
-   "local_id": "ortho_souza_naves",
-   "praca_id": "londrina",
-   "rotulo": "PR · Londrina",
-   "unidade": "OrthoDontic Souza Naves",
-   "avaliacoes_da_ficha": 568,
-   "aparece_em": 5,
-   "de": 176,
-   "pct": 3,
-   "melhor_posicao": 1,
-   "frases_onde_aparece": [
-    {
-     "frase": "aparelho ortodôntico londrina",
-     "posicao": 1,
-     "intencao": "GENÉRICO"
-    },
-    {
-     "frase": "aparelho ortodôntico em londrina",
-     "posicao": 1,
-     "intencao": "GENÉRICO"
-    },
-    {
-     "frase": "ortodontista londrina",
-     "posicao": 2,
-     "intencao": "GENÉRICO"
-    },
-    {
-     "frase": "ortodontista em londrina",
-     "posicao": 2,
-     "intencao": "GENÉRICO"
-    },
-    {
-     "frase": "melhor ortodontista de londrina",
-     "posicao": 2,
-     "intencao": "REPUTAÇÃO"
-    }
-   ],
-   "invisivel": false,
-   "frase_do_topo": "Esta loja aparece em **5 das 176 buscas** que testamos na cidade."
-  },
-  {
-   "local_id": "ortho_mafra",
-   "praca_id": "mafra",
-   "rotulo": "SC · Mafra",
-   "unidade": "OrthoDontic Mafra",
-   "avaliacoes_da_ficha": 155,
-   "aparece_em": 5,
-   "de": 64,
-   "pct": 8,
+   "local_id": "ortho_poa_cavalhada",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic Clínica Odontológica em Porto Alegre RS",
+   "avaliacoes_da_ficha": 207,
+   "aparece_em": 2,
+   "de": 196,
+   "pct": 1,
    "melhor_posicao": 2,
    "frases_onde_aparece": [
     {
-     "frase": "dentista rio mafra",
+     "frase": "ortodontista zona sul porto alegre",
      "posicao": 2,
      "intencao": "BAIRRO"
     },
     {
-     "frase": "dentista em mafra",
+     "frase": "dentista porto alegre zona sul cavalhada",
+     "posicao": 4,
+     "intencao": "BAIRRO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **2 das 196 buscas** que testamos na cidade."
+  },
+  {
+   "local_id": "ortho_poa_centro_historico_3",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": 176,
+   "aparece_em": 2,
+   "de": 196,
+   "pct": 1,
+   "melhor_posicao": 3,
+   "frases_onde_aparece": [
+    {
+     "frase": "dentista porto alegre andradas",
+     "posicao": 3,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "aparelho ortodôntico no centro de porto alegre",
+     "posicao": 4,
+     "intencao": "BAIRRO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **2 das 196 buscas** que testamos na cidade."
+  },
+  {
+   "local_id": "ortho_soro_centro",
+   "praca_id": "sorocaba",
+   "rotulo": "SP · Sorocaba",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": 116,
+   "aparece_em": 2,
+   "de": 195,
+   "pct": 1,
+   "melhor_posicao": 3,
+   "frases_onde_aparece": [
+    {
+     "frase": "aparelho ortodontico em sorocaba",
+     "posicao": 3,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "aparelho ortodôntico sorocaba",
+     "posicao": 4,
+     "intencao": "GENÉRICO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **2 das 195 buscas** que testamos na cidade."
+  },
+  {
+   "local_id": "ortho_joi_america",
+   "praca_id": "joinville",
+   "rotulo": "SC · Joinville",
+   "unidade": "OrthoDontic Sorria Sempre",
+   "avaliacoes_da_ficha": 377,
+   "aparece_em": 3,
+   "de": 157,
+   "pct": 2,
+   "melhor_posicao": 3,
+   "frases_onde_aparece": [
+    {
+     "frase": "dentista joinville aparelho",
+     "posicao": 3,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "dentista joinville america",
+     "posicao": 3,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "aparelho ortodontico joinville",
+     "posicao": 4,
+     "intencao": "GENÉRICO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **3 das 157 buscas** que testamos na cidade."
+  },
+  {
+   "local_id": "ortho_soro_jardim_faculdade",
+   "praca_id": "sorocaba",
+   "rotulo": "SP · Sorocaba",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": 111,
+   "aparece_em": 3,
+   "de": 195,
+   "pct": 2,
+   "melhor_posicao": 3,
+   "frases_onde_aparece": [
+    {
+     "frase": "aparelho ortodôntico sorocaba",
+     "posicao": 3,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "dentista sorocaba aparelho",
+     "posicao": 3,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "aparelho ortodontico em sorocaba",
+     "posicao": 4,
+     "intencao": "GENÉRICO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **3 das 195 buscas** que testamos na cidade."
+  },
+  {
+   "local_id": "ortho_cwb_centro_2",
+   "praca_id": "curitiba",
+   "rotulo": "PR · Curitiba",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": 719,
+   "aparece_em": 7,
+   "de": 213,
+   "pct": 3,
+   "melhor_posicao": 2,
+   "frases_onde_aparece": [
+    {
+     "frase": "aparelho ortodôntico curitiba",
      "posicao": 2,
      "intencao": "GENÉRICO"
     },
     {
-     "frase": "melhor dentista em mafra",
+     "frase": "aparelho ortodôntico curitiba preços",
+     "posicao": 2,
+     "intencao": "PREÇO"
+    },
+    {
+     "frase": "aparelho ortodôntico em curitiba",
+     "posicao": 2,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista curitiba bem avaliados",
      "posicao": 2,
      "intencao": "REPUTAÇÃO"
     },
     {
-     "frase": "dentista infantil em mafra",
-     "posicao": 4,
-     "intencao": "CRIANÇA"
+     "frase": "ortodontista centro curitiba",
+     "posicao": 2,
+     "intencao": "BAIRRO"
     },
     {
-     "frase": "dentista infantil mafra",
-     "posicao": 5,
-     "intencao": "CRIANÇA"
+     "frase": "dentista curitiba aparelho",
+     "posicao": 2,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista curitiba",
+     "posicao": 3,
+     "intencao": "GENÉRICO"
     }
    ],
    "invisivel": false,
-   "frase_do_topo": "Esta loja aparece em **5 das 64 buscas** que testamos na cidade."
+   "frase_do_topo": "Esta loja aparece em **7 das 213 buscas** que testamos na cidade."
+  },
+  {
+   "local_id": "ortho_gyn_st_oeste",
+   "praca_id": "goiania",
+   "rotulo": "GO · Goiânia",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": 270,
+   "aparece_em": 6,
+   "de": 196,
+   "pct": 3,
+   "melhor_posicao": 1,
+   "frases_onde_aparece": [
+    {
+     "frase": "aparelho ortodôntico goiânia",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "aparelho ortodôntico em goiania",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "dentista goiania aparelho",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista em goiania",
+     "posicao": 2,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista goiânia",
+     "posicao": 4,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista em goiânia",
+     "posicao": 4,
+     "intencao": "GENÉRICO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **6 das 196 buscas** que testamos na cidade."
+  },
+  {
+   "local_id": "ortho_gyn_st_central",
+   "praca_id": "goiania",
+   "rotulo": "GO · Goiânia",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": 268,
+   "aparece_em": 6,
+   "de": 196,
+   "pct": 3,
+   "melhor_posicao": 2,
+   "frases_onde_aparece": [
+    {
+     "frase": "aparelho ortodôntico em goiania",
+     "posicao": 2,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "aparelho ortodôntico goiânia",
+     "posicao": 3,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista goiânia",
+     "posicao": 3,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista em goiânia",
+     "posicao": 3,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista em goiania",
+     "posicao": 3,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "dentista goiania aparelho",
+     "posicao": 3,
+     "intencao": "GENÉRICO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **6 das 196 buscas** que testamos na cidade."
+  },
+  {
+   "local_id": "ortho_joi_centro",
+   "praca_id": "joinville",
+   "rotulo": "SC · Joinville",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": 513,
+   "aparece_em": 4,
+   "de": 157,
+   "pct": 3,
+   "melhor_posicao": 1,
+   "frases_onde_aparece": [
+    {
+     "frase": "aparelho ortodontico joinville",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "dentista joinville aparelho",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista joinville",
+     "posicao": 3,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista em joinville",
+     "posicao": 4,
+     "intencao": "GENÉRICO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **4 das 157 buscas** que testamos na cidade."
+  },
+  {
+   "local_id": "ortho_poa_centro_historico_2",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": 209,
+   "aparece_em": 5,
+   "de": 196,
+   "pct": 3,
+   "melhor_posicao": 2,
+   "frases_onde_aparece": [
+    {
+     "frase": "ortodontista em porto alegre",
+     "posicao": 2,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "aparelho ortodôntico porto alegre preço",
+     "posicao": 3,
+     "intencao": "PREÇO"
+    },
+    {
+     "frase": "aparelho ortodôntico no centro de porto alegre",
+     "posicao": 3,
+     "intencao": "BAIRRO"
+    },
+    {
+     "frase": "aparelho ortodôntico porto alegre",
+     "posicao": 5,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "aparelho ortodôntico em porto alegre",
+     "posicao": 5,
+     "intencao": "GENÉRICO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **5 das 196 buscas** que testamos na cidade."
+  },
+  {
+   "local_id": "ortho_poa_centro_historico_4",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic - Clínica Odontológica Centro Porto Alegre - Tratamento de Canal - Periodontia - Restauração Dental - Prótese - Clareamento e Limpeza Dental - Aparelho Ortodôntico Metálico e Estético - Emergência - Extração do Siso - Faceta de Porcelana",
+   "avaliacoes_da_ficha": 162,
+   "aparece_em": 5,
+   "de": 196,
+   "pct": 3,
+   "melhor_posicao": 2,
+   "frases_onde_aparece": [
+    {
+     "frase": "aparelho ortodôntico no centro de porto alegre",
+     "posicao": 2,
+     "intencao": "BAIRRO"
+    },
+    {
+     "frase": "aparelho ortodôntico porto alegre",
+     "posicao": 4,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "aparelho ortodôntico em porto alegre",
+     "posicao": 4,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "aparelho ortodôntico porto alegre preço",
+     "posicao": 5,
+     "intencao": "PREÇO"
+    },
+    {
+     "frase": "dentista porto alegre aparelho",
+     "posicao": 5,
+     "intencao": "GENÉRICO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **5 das 196 buscas** que testamos na cidade."
+  },
+  {
+   "local_id": "ortho_soro_vila_formosa",
+   "praca_id": "sorocaba",
+   "rotulo": "SP · Sorocaba",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": 161,
+   "aparece_em": 6,
+   "de": 195,
+   "pct": 3,
+   "melhor_posicao": 1,
+   "frases_onde_aparece": [
+    {
+     "frase": "aparelho ortodôntico sorocaba",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "aparelho ortodontico em sorocaba",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista sorocaba sp",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "dentista ortodontista sorocaba",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista sorocaba",
+     "posicao": 2,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista em sorocaba",
+     "posicao": 2,
+     "intencao": "GENÉRICO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **6 das 195 buscas** que testamos na cidade."
+  },
+  {
+   "local_id": "ortho_poa_cristo_redentor",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": 245,
+   "aparece_em": 7,
+   "de": 196,
+   "pct": 4,
+   "melhor_posicao": 2,
+   "frases_onde_aparece": [
+    {
+     "frase": "aparelho ortodôntico porto alegre",
+     "posicao": 2,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "aparelho ortodôntico porto alegre preço",
+     "posicao": 2,
+     "intencao": "PREÇO"
+    },
+    {
+     "frase": "aparelho ortodôntico em porto alegre",
+     "posicao": 2,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "dentista porto alegre aparelho",
+     "posicao": 3,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "dentista porto alegre assis brasil",
+     "posicao": 4,
+     "intencao": "BAIRRO"
+    },
+    {
+     "frase": "ortodontista porto alegre",
+     "posicao": 5,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "dentista 24 horas porto alegre assis brasil",
+     "posicao": 5,
+     "intencao": "URGÊNCIA"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **7 das 196 buscas** que testamos na cidade."
+  },
+  {
+   "local_id": "ortho_cwb_centro",
+   "praca_id": "curitiba",
+   "rotulo": "PR · Curitiba",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": 1012,
+   "aparece_em": 11,
+   "de": 213,
+   "pct": 5,
+   "melhor_posicao": 1,
+   "frases_onde_aparece": [
+    {
+     "frase": "aparelho ortodôntico curitiba",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "aparelho ortodôntico curitiba preços",
+     "posicao": 1,
+     "intencao": "PREÇO"
+    },
+    {
+     "frase": "aparelho ortodôntico em curitiba",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista curitiba bem avaliados",
+     "posicao": 1,
+     "intencao": "REPUTAÇÃO"
+    },
+    {
+     "frase": "ortodontista centro curitiba",
+     "posicao": 1,
+     "intencao": "BAIRRO"
+    },
+    {
+     "frase": "dentista curitiba aparelho",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista curitiba",
+     "posicao": 2,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista em curitiba",
+     "posicao": 2,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "melhor ortodontista de curitiba",
+     "posicao": 2,
+     "intencao": "REPUTAÇÃO"
+    },
+    {
+     "frase": "dentista curitiba centro",
+     "posicao": 3,
+     "intencao": "BAIRRO"
+    },
+    {
+     "frase": "dentista em curitiba centro",
+     "posicao": 3,
+     "intencao": "BAIRRO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **11 das 213 buscas** que testamos na cidade."
+  },
+  {
+   "local_id": "ortho_poa_centro_historico",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": 433,
+   "aparece_em": 10,
+   "de": 196,
+   "pct": 5,
+   "melhor_posicao": 1,
+   "frases_onde_aparece": [
+    {
+     "frase": "aparelho ortodôntico porto alegre",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "aparelho ortodôntico porto alegre preço",
+     "posicao": 1,
+     "intencao": "PREÇO"
+    },
+    {
+     "frase": "aparelho ortodôntico no centro de porto alegre",
+     "posicao": 1,
+     "intencao": "BAIRRO"
+    },
+    {
+     "frase": "aparelho ortodôntico em porto alegre",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista porto alegre",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "melhor ortodontista porto alegre",
+     "posicao": 1,
+     "intencao": "REPUTAÇÃO"
+    },
+    {
+     "frase": "ortodontista em porto alegre",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "dentista porto alegre aparelho",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "dentista porto alegre centro",
+     "posicao": 3,
+     "intencao": "BAIRRO"
+    },
+    {
+     "frase": "dentista em porto alegre centro",
+     "posicao": 3,
+     "intencao": "BAIRRO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **10 das 196 buscas** que testamos na cidade."
   }
  ]
 }

@@ -6,6 +6,2268 @@
  "minimo_por_bairro": 3,
  "pracas": [
   {
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "bairros_medidos": 33,
+   "clinicas_medidas": 184,
+   "sem_bairro_no_endereco": 0,
+   "unidades_da_rede": 7,
+   "unidades_localizadas": 7,
+   "onde_estamos": [
+    {
+     "local_id": "ortho_poa_cavalhada",
+     "bairro": "Cavalhada",
+     "unidade": "OrthoDontic Cavalhada"
+    },
+    {
+     "local_id": "ortho_poa_centro_historico",
+     "bairro": "Centro Histórico",
+     "unidade": "OrthoDontic Centro Histórico"
+    },
+    {
+     "local_id": "ortho_poa_centro_historico_2",
+     "bairro": "Centro Histórico",
+     "unidade": "OrthoDontic Centro Histórico"
+    },
+    {
+     "local_id": "ortho_poa_centro_historico_3",
+     "bairro": "Centro Histórico",
+     "unidade": "OrthoDontic Centro Histórico"
+    },
+    {
+     "local_id": "ortho_poa_centro_historico_4",
+     "bairro": "Centro Histórico",
+     "unidade": "OrthoDontic Centro Histórico"
+    },
+    {
+     "local_id": "ortho_poa_cristo_redentor",
+     "bairro": "Cristo Redentor",
+     "unidade": "OrthoDontic Cristo Redentor"
+    },
+    {
+     "local_id": "ortho_poa_rio_branco",
+     "bairro": "Rio Branco",
+     "unidade": "OrthoDontic Rio Branco"
+    }
+   ],
+   "bairros": [
+    {
+     "bairro": "Centro Histórico",
+     "clinicas": 32,
+     "avaliacoes_somadas": 5641,
+     "temos_unidade": true,
+     "nossas": [
+      "ortho_poa_centro_historico",
+      "ortho_poa_centro_historico_2",
+      "ortho_poa_centro_historico_3",
+      "ortho_poa_centro_historico_4"
+     ],
+     "vizinhos_fortes": [
+      {
+       "nome": "Sorridents Porto Alegre Clinica Odontológica / Dentista",
+       "nota": 4.9,
+       "avaliacoes": 1104
+      },
+      {
+       "nome": "Clínica Bela Vista Odontologia",
+       "nota": 5,
+       "avaliacoes": 702
+      },
+      {
+       "nome": "Sorrir Bem Clínica Odontológica",
+       "nota": 4.8,
+       "avaliacoes": 350
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "32 clínicas varridas, e a unidade da rede está aqui"
+    },
+    {
+     "bairro": "Moinhos de Vento",
+     "clinicas": 22,
+     "avaliacoes_somadas": 1406,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "LAR Odontologia - Reabilitação Oral e Implantes Dentários. Ortodontia convencional e Alinhadores Transparentes.",
+       "nota": 4.9,
+       "avaliacoes": 294
+      },
+      {
+       "nome": "Classic Saúde Bucal",
+       "nota": 5,
+       "avaliacoes": 218
+      },
+      {
+       "nome": "Clínica Brinker",
+       "nota": 5,
+       "avaliacoes": 177
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "22 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Rio Branco",
+     "clinicas": 15,
+     "avaliacoes_somadas": 784,
+     "temos_unidade": true,
+     "nossas": [
+      "ortho_poa_rio_branco"
+     ],
+     "vizinhos_fortes": [
+      {
+       "nome": "Sorrifácil Porto Alegre I Dentista em Rio Branco - Av. Mariante I Implantes, Prótese Protocolo e Clínico geral",
+       "nota": 4.4,
+       "avaliacoes": 176
+      },
+      {
+       "nome": "Dr. Rafael Pocztaruk - Implante Dentário Porto Alegre l Lentes em Resina Premium l Faceta Porcelana l Protocolo de Implante",
+       "nota": 5,
+       "avaliacoes": 164
+      },
+      {
+       "nome": "Dra Rosane Kolberg",
+       "nota": 5,
+       "avaliacoes": 135
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "15 clínicas varridas, e a unidade da rede está aqui"
+    },
+    {
+     "bairro": "Independência",
+     "clinicas": 13,
+     "avaliacoes_somadas": 939,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Vitah Odontologia - Dra. Márcia de Fernandes | Ortodontia Invisalign Top Doctor em Porto Alegre",
+       "nota": 5,
+       "avaliacoes": 244
+      },
+      {
+       "nome": "Uniodonto Porto Alegre",
+       "nota": 3.6,
+       "avaliacoes": 198
+      },
+      {
+       "nome": "Dr. Vicente Piccoli",
+       "nota": 5,
+       "avaliacoes": 140
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "13 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Petrópolis",
+     "clinicas": 12,
+     "avaliacoes_somadas": 504,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clinica Stocker",
+       "nota": 5,
+       "avaliacoes": 113
+      },
+      {
+       "nome": "Clínica Kok Odontologia Especializada",
+       "nota": 4.9,
+       "avaliacoes": 90
+      },
+      {
+       "nome": "LARS CLÍNICA - Dentista Porto Alegre | Harmonização Facial - Implante Dentário - Lentes de Contato Dentais",
+       "nota": 5,
+       "avaliacoes": 84
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "12 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Bom Fim",
+     "clinicas": 11,
+     "avaliacoes_somadas": 774,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra Carina Cigolini - Cirurgiã-dentista",
+       "nota": 5,
+       "avaliacoes": 225
+      },
+      {
+       "nome": "Dr. Ricardo Dallegrave | Cirurgião Dentista",
+       "nota": 5,
+       "avaliacoes": 179
+      },
+      {
+       "nome": "Dra Jéssica Soares | Consulta | Bruxismo | Facetas | Clareamento | Restauração | Revisão | Periodontia DENTISTA PORTO ALEGRE",
+       "nota": 5,
+       "avaliacoes": 163
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "11 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Santana",
+     "clinicas": 10,
+     "avaliacoes_somadas": 641,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Labbro Clínica Odontológica (LabbroKids)",
+       "nota": 4.9,
+       "avaliacoes": 247
+      },
+      {
+       "nome": "Dra. Vanessa Freitas",
+       "nota": 5,
+       "avaliacoes": 175
+      },
+      {
+       "nome": "MarquesOdonto.com",
+       "nota": 5,
+       "avaliacoes": 83
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "10 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Menino Deus",
+     "clinicas": 8,
+     "avaliacoes_somadas": 876,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dentista Legal",
+       "nota": 5,
+       "avaliacoes": 736
+      },
+      {
+       "nome": "Odontologia Especializada Dr. Flávio Cunha e Dra. Letícia Feix Cunha | Dentista Menino Deus | Implante Dentário | Invisalign",
+       "nota": 5,
+       "avaliacoes": 54
+      },
+      {
+       "nome": "Stern Tovo Odontologia - Dra Aline Stern - Ortodontia e Ortopedia Facial - Menino Deus",
+       "nota": 5,
+       "avaliacoes": 54
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "8 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Auxiliadora",
+     "clinicas": 8,
+     "avaliacoes_somadas": 963,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odontologia Dr. RM",
+       "nota": 4.2,
+       "avaliacoes": 337
+      },
+      {
+       "nome": "Dentista Sorridere Porto Alegre",
+       "nota": 5,
+       "avaliacoes": 176
+      },
+      {
+       "nome": "Clínica Giselle Gianichini - Invisalign Emerald Porto Alegre",
+       "nota": 5,
+       "avaliacoes": 105
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "8 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Floresta",
+     "clinicas": 7,
+     "avaliacoes_somadas": 588,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dental Arte Clínicas Odontológicas - Cristóvão",
+       "nota": 4.9,
+       "avaliacoes": 198
+      },
+      {
+       "nome": "Clinica Odontológica Biehl",
+       "nota": 4.9,
+       "avaliacoes": 142
+      },
+      {
+       "nome": "Dalí Odontologia",
+       "nota": 5,
+       "avaliacoes": 121
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "7 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Cidade Baixa",
+     "clinicas": 5,
+     "avaliacoes_somadas": 319,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "OdontoOrto",
+       "nota": 5,
+       "avaliacoes": 139
+      },
+      {
+       "nome": "Odontologia Integrada RS",
+       "nota": 4.9,
+       "avaliacoes": 103
+      },
+      {
+       "nome": "Jung & Michels Odontologia e Harmonização Orofacial",
+       "nota": 5,
+       "avaliacoes": 46
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "5 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Tristeza",
+     "clinicas": 4,
+     "avaliacoes_somadas": 1174,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Integrare Odontologia",
+       "nota": 5,
+       "avaliacoes": 769
+      },
+      {
+       "nome": "Dentista Dra. Mariana Canal - Ortodontia - Zona Sul de Porto Alegre",
+       "nota": 5,
+       "avaliacoes": 226
+      },
+      {
+       "nome": "ODONTIK PREMIUM ODONTOLOGIA - Implantes dentários",
+       "nota": 4.9,
+       "avaliacoes": 168
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "4 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "São João",
+     "clinicas": 4,
+     "avaliacoes_somadas": 134,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra. Luciane Closs",
+       "nota": 5,
+       "avaliacoes": 59
+      },
+      {
+       "nome": "ALMUS Odontologia | Clínica Odontológica | Dentista | Invisalign",
+       "nota": 5,
+       "avaliacoes": 41
+      },
+      {
+       "nome": "Dra. Débora Tedesco l Odontologia e Ortodontia",
+       "nota": 5,
+       "avaliacoes": 32
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "4 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Três Figueiras",
+     "clinicas": 3,
+     "avaliacoes_somadas": 403,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Da Vinci Odontologia",
+       "nota": 4.9,
+       "avaliacoes": 356
+      },
+      {
+       "nome": "Dra. Mariana Moschetti - Ortodontia Estética",
+       "nota": 5,
+       "avaliacoes": 37
+      },
+      {
+       "nome": "Dra Caroline Weirich - Ortodontia | Invisalign Doctor",
+       "nota": 5,
+       "avaliacoes": 10
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "3 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Farroupilha",
+     "clinicas": 3,
+     "avaliacoes_somadas": 675,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Pronto Socorro Dentário - Clínica Odontológica 24 Horas",
+       "nota": 4.5,
+       "avaliacoes": 323
+      },
+      {
+       "nome": "Oral Sin Porto Alegre | Avenida João Pessoa",
+       "nota": 4.8,
+       "avaliacoes": 190
+      },
+      {
+       "nome": "HPS Dentário",
+       "nota": 3.5,
+       "avaliacoes": 162
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "3 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Higienópolis",
+     "clinicas": 3,
+     "avaliacoes_somadas": 138,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Hera Odontologia Integrada",
+       "nota": 4.9,
+       "avaliacoes": 74
+      },
+      {
+       "nome": "Dra. Carla Picon - Dentista em Porto Alegre. Ortodontia e Odontopediatria",
+       "nota": 5,
+       "avaliacoes": 33
+      },
+      {
+       "nome": "Dra. Mariana Póvoa",
+       "nota": 4.9,
+       "avaliacoes": 31
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "3 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Praia de Belas",
+     "clinicas": 3,
+     "avaliacoes_somadas": 77,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra. Mariana Klein, Dentista",
+       "nota": 5,
+       "avaliacoes": 44
+      },
+      {
+       "nome": "Rita Geske Ortodontia e Odontologia do Sono",
+       "nota": 5,
+       "avaliacoes": 27
+      },
+      {
+       "nome": "Lupa Odontologia",
+       "nota": 5,
+       "avaliacoes": 6
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "3 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Cavalhada",
+     "clinicas": 2,
+     "avaliacoes_somadas": 1100,
+     "temos_unidade": true,
+     "nossas": [
+      "ortho_poa_cavalhada"
+     ],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odonto Clin",
+       "nota": 5,
+       "avaliacoes": 893
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a unidade da rede está aqui"
+    },
+    {
+     "bairro": "Passo d'Areia",
+     "clinicas": 2,
+     "avaliacoes_somadas": 388,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Integrar Odontologia",
+       "nota": 4.9,
+       "avaliacoes": 364
+      },
+      {
+       "nome": "Dra. Rafaela Hainzenreder - Ortodontista Infantil",
+       "nota": 5,
+       "avaliacoes": 24
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Cristal",
+     "clinicas": 2,
+     "avaliacoes_somadas": 74,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clínica Ortodontia Prietsch",
+       "nota": 5,
+       "avaliacoes": 63
+      },
+      {
+       "nome": "Dr. Gabriel Dias - Dentista em Porto Alegre",
+       "nota": 5,
+       "avaliacoes": 11
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Jardim Europa",
+     "clinicas": 2,
+     "avaliacoes_somadas": 51,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Felipe Giacomet",
+       "nota": 4.9,
+       "avaliacoes": 48
+      },
+      {
+       "nome": "Dr. Thiago Grossi Ortodontia",
+       "nota": 5,
+       "avaliacoes": 3
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Bela Vista",
+     "clinicas": 2,
+     "avaliacoes_somadas": 40,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odonto Center RS",
+       "nota": 4.9,
+       "avaliacoes": 38
+      },
+      {
+       "nome": "Clínica MY - Diosport",
+       "nota": 5,
+       "avaliacoes": 2
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "B Fim",
+     "clinicas": 1,
+     "avaliacoes_somadas": 419,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clinica Koelsch",
+       "nota": 4.6,
+       "avaliacoes": 419
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Cristo Redentor",
+     "clinicas": 1,
+     "avaliacoes_somadas": 245,
+     "temos_unidade": true,
+     "nossas": [
+      "ortho_poa_cristo_redentor"
+     ],
+     "vizinhos_fortes": [],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a unidade da rede está aqui"
+    },
+    {
+     "bairro": "Centro",
+     "clinicas": 1,
+     "avaliacoes_somadas": 160,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Três Odontologia",
+       "nota": 4.6,
+       "avaliacoes": 160
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    }
+   ],
+   "bairros_sem_a_rede": [
+    {
+     "bairro": "Moinhos de Vento",
+     "clinicas": 22,
+     "avaliacoes_somadas": 1406,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "LAR Odontologia - Reabilitação Oral e Implantes Dentários. Ortodontia convencional e Alinhadores Transparentes.",
+       "nota": 4.9,
+       "avaliacoes": 294
+      },
+      {
+       "nome": "Classic Saúde Bucal",
+       "nota": 5,
+       "avaliacoes": 218
+      },
+      {
+       "nome": "Clínica Brinker",
+       "nota": 5,
+       "avaliacoes": 177
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "22 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Independência",
+     "clinicas": 13,
+     "avaliacoes_somadas": 939,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Vitah Odontologia - Dra. Márcia de Fernandes | Ortodontia Invisalign Top Doctor em Porto Alegre",
+       "nota": 5,
+       "avaliacoes": 244
+      },
+      {
+       "nome": "Uniodonto Porto Alegre",
+       "nota": 3.6,
+       "avaliacoes": 198
+      },
+      {
+       "nome": "Dr. Vicente Piccoli",
+       "nota": 5,
+       "avaliacoes": 140
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "13 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Petrópolis",
+     "clinicas": 12,
+     "avaliacoes_somadas": 504,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clinica Stocker",
+       "nota": 5,
+       "avaliacoes": 113
+      },
+      {
+       "nome": "Clínica Kok Odontologia Especializada",
+       "nota": 4.9,
+       "avaliacoes": 90
+      },
+      {
+       "nome": "LARS CLÍNICA - Dentista Porto Alegre | Harmonização Facial - Implante Dentário - Lentes de Contato Dentais",
+       "nota": 5,
+       "avaliacoes": 84
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "12 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Bom Fim",
+     "clinicas": 11,
+     "avaliacoes_somadas": 774,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra Carina Cigolini - Cirurgiã-dentista",
+       "nota": 5,
+       "avaliacoes": 225
+      },
+      {
+       "nome": "Dr. Ricardo Dallegrave | Cirurgião Dentista",
+       "nota": 5,
+       "avaliacoes": 179
+      },
+      {
+       "nome": "Dra Jéssica Soares | Consulta | Bruxismo | Facetas | Clareamento | Restauração | Revisão | Periodontia DENTISTA PORTO ALEGRE",
+       "nota": 5,
+       "avaliacoes": 163
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "11 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Santana",
+     "clinicas": 10,
+     "avaliacoes_somadas": 641,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Labbro Clínica Odontológica (LabbroKids)",
+       "nota": 4.9,
+       "avaliacoes": 247
+      },
+      {
+       "nome": "Dra. Vanessa Freitas",
+       "nota": 5,
+       "avaliacoes": 175
+      },
+      {
+       "nome": "MarquesOdonto.com",
+       "nota": 5,
+       "avaliacoes": 83
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "10 clínicas varridas, e a rede não está aqui"
+    }
+   ],
+   "manchete": "33 bairros medidos · a rede está em 4 deles",
+   "leitura": "O bairro com mais clínicas é Centro Histórico, com 32 clínicas varridas, e a rede está lá.",
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "media",
+    "medido": true,
+    "amostra": 184,
+    "janela_dias": null,
+    "medicoes": 1,
+    "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
+    "procedencia": "medido em 184 clínicas varridas, 1 medição"
+   }
+  },
+  {
+   "praca_id": "curitiba",
+   "rotulo": "PR · Curitiba",
+   "bairros_medidos": 27,
+   "clinicas_medidas": 179,
+   "sem_bairro_no_endereco": 0,
+   "unidades_da_rede": 5,
+   "unidades_localizadas": 5,
+   "onde_estamos": [
+    {
+     "local_id": "ortho_cwb_centro",
+     "bairro": "Centro",
+     "unidade": "OrthoDontic Centro"
+    },
+    {
+     "local_id": "ortho_cwb_centro_2",
+     "bairro": "Centro",
+     "unidade": "OrthoDontic Centro"
+    },
+    {
+     "local_id": "ortho_cwb_centro_3",
+     "bairro": "Centro",
+     "unidade": "OrthoDontic Centro"
+    },
+    {
+     "local_id": "ortho_cwb_centro_4",
+     "bairro": "Centro",
+     "unidade": "OrthoDontic Centro"
+    },
+    {
+     "local_id": "ortho_cwb_portao",
+     "bairro": "Portão",
+     "unidade": "OrthoDontic Portão"
+    }
+   ],
+   "bairros": [
+    {
+     "bairro": "Centro",
+     "clinicas": 74,
+     "avaliacoes_somadas": 10342,
+     "temos_unidade": true,
+     "nossas": [
+      "ortho_cwb_centro",
+      "ortho_cwb_centro_2",
+      "ortho_cwb_centro_3",
+      "ortho_cwb_centro_4"
+     ],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dental Curitibana",
+       "nota": 4.9,
+       "avaliacoes": 1097
+      },
+      {
+       "nome": "REDEORTO Curitiba - Centro",
+       "nota": 4.9,
+       "avaliacoes": 515
+      },
+      {
+       "nome": "Clínica Vita Sorriso Implantes - Especialista em Prótese Protocolo",
+       "nota": 4.6,
+       "avaliacoes": 514
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "74 clínicas varridas, e a unidade da rede está aqui"
+    },
+    {
+     "bairro": "Batel",
+     "clinicas": 16,
+     "avaliacoes_somadas": 1682,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Instituto Mass Odontologia",
+       "nota": 5,
+       "avaliacoes": 629
+      },
+      {
+       "nome": "Dental Uni - Clínica de Urgência Odontológica",
+       "nota": 4.5,
+       "avaliacoes": 581
+      },
+      {
+       "nome": "Dra Juliana Fauri",
+       "nota": 5,
+       "avaliacoes": 87
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "16 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Centro Cívico",
+     "clinicas": 12,
+     "avaliacoes_somadas": 904,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Mussi Liu",
+       "nota": 5,
+       "avaliacoes": 318
+      },
+      {
+       "nome": "Beyond Odontologia",
+       "nota": 4.9,
+       "avaliacoes": 271
+      },
+      {
+       "nome": "Clínica iDent",
+       "nota": 4.2,
+       "avaliacoes": 129
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "12 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Alto da XV",
+     "clinicas": 9,
+     "avaliacoes_somadas": 630,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "ALLDENTAL - Odontologia Integrada",
+       "nota": 4.9,
+       "avaliacoes": 419
+      },
+      {
+       "nome": "Dra Ana Lorenzon e Dra Karin Freund Ortodontia",
+       "nota": 5,
+       "avaliacoes": 52
+      },
+      {
+       "nome": "BellOdont",
+       "nota": 4.9,
+       "avaliacoes": 39
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "9 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Juvevê",
+     "clinicas": 8,
+     "avaliacoes_somadas": 1031,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clínica Premium Curitiba",
+       "nota": 4.9,
+       "avaliacoes": 652
+      },
+      {
+       "nome": "Dr. Luís Francisco Reis Dentista",
+       "nota": 5,
+       "avaliacoes": 159
+      },
+      {
+       "nome": "Dra. Eliane Vitoria Lanzarini",
+       "nota": 5,
+       "avaliacoes": 90
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "8 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Bigorrilho",
+     "clinicas": 7,
+     "avaliacoes_somadas": 1593,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clínica Physalis",
+       "nota": 4.7,
+       "avaliacoes": 656
+      },
+      {
+       "nome": "Dr. Roger Hurtado Dentista Curitiba | Hurtado Dental Prîme",
+       "nota": 5,
+       "avaliacoes": 352
+      },
+      {
+       "nome": "Dr Bruno Pinho Schüller Dentista",
+       "nota": 5,
+       "avaliacoes": 291
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "7 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Rebouças",
+     "clinicas": 6,
+     "avaliacoes_somadas": 3396,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Centro Odontológico Pio XII - Dentista 24h",
+       "nota": 4.6,
+       "avaliacoes": 1843
+      },
+      {
+       "nome": "Clínica You Odonto",
+       "nota": 5,
+       "avaliacoes": 1012
+      },
+      {
+       "nome": "Realclin Clinica Odontologica em Curitiba | Dentista Emergência",
+       "nota": 4.7,
+       "avaliacoes": 312
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "6 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Água Verde",
+     "clinicas": 6,
+     "avaliacoes_somadas": 1732,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clínica Castell",
+       "nota": 5,
+       "avaliacoes": 1070
+      },
+      {
+       "nome": "Delatorre Odontologia - Invisalign em Curitiba",
+       "nota": 5,
+       "avaliacoes": 228
+      },
+      {
+       "nome": "Ortoestética Odontologia Invisalign",
+       "nota": 4.7,
+       "avaliacoes": 136
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "6 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Mercês",
+     "clinicas": 6,
+     "avaliacoes_somadas": 570,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Yoshi Odontologia | Implante Dentário | Faceta Dentária | Invisalign - Curitiba, Paraná",
+       "nota": 5,
+       "avaliacoes": 372
+      },
+      {
+       "nome": "Aligner Odontologia Dra Alessandra Haliski (implante ) e Dra Sidia Coser (ortodontia)",
+       "nota": 5,
+       "avaliacoes": 81
+      },
+      {
+       "nome": "Samanta Nigro Ortodontia Estética",
+       "nota": 4.9,
+       "avaliacoes": 58
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "6 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Cabral",
+     "clinicas": 5,
+     "avaliacoes_somadas": 289,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "SV Odontologia Invisalign • Dr. Alexandre Varnier",
+       "nota": 5,
+       "avaliacoes": 93
+      },
+      {
+       "nome": "Dra Aline de Avila | Odontologia em Curitiba | Dentista no Cabral",
+       "nota": 5,
+       "avaliacoes": 84
+      },
+      {
+       "nome": "Dra. Thamires Gomes Prodocimo | Dentista em Curitiba | Aparelho dentário",
+       "nota": 5,
+       "avaliacoes": 75
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "5 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Alto da Glória",
+     "clinicas": 4,
+     "avaliacoes_somadas": 912,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra. Vladja Torno | Facetas em Resina Composta em Curitiba",
+       "nota": 4.9,
+       "avaliacoes": 661
+      },
+      {
+       "nome": "Clinicare Centro de Atendimento a Saúde",
+       "nota": 3.6,
+       "avaliacoes": 136
+      },
+      {
+       "nome": "Odonto Brasil Prime",
+       "nota": 4.5,
+       "avaliacoes": 101
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "4 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Cristo Rei",
+     "clinicas": 4,
+     "avaliacoes_somadas": 252,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clínica Odontowicz",
+       "nota": 4.3,
+       "avaliacoes": 123
+      },
+      {
+       "nome": "Dra. Carolina Dreher - Dentista em Curitiba",
+       "nota": 5,
+       "avaliacoes": 51
+      },
+      {
+       "nome": "Dra Claudia Stadler - Dentista em Curitiba",
+       "nota": 5,
+       "avaliacoes": 41
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "4 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Portão",
+     "clinicas": 3,
+     "avaliacoes_somadas": 875,
+     "temos_unidade": true,
+     "nossas": [
+      "ortho_cwb_portao"
+     ],
+     "vizinhos_fortes": [
+      {
+       "nome": "New Life Odontologia",
+       "nota": 4.8,
+       "avaliacoes": 432
+      },
+      {
+       "nome": "ADEROSSO Odontologia e Estética",
+       "nota": 4.9,
+       "avaliacoes": 173
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "3 clínicas varridas, e a unidade da rede está aqui"
+    },
+    {
+     "bairro": "São Francisco",
+     "clinicas": 3,
+     "avaliacoes_somadas": 668,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "DentPrime",
+       "nota": 4.9,
+       "avaliacoes": 407
+      },
+      {
+       "nome": "CEOPAR Odontologia",
+       "nota": 4.8,
+       "avaliacoes": 199
+      },
+      {
+       "nome": "Dr. Gilson Clazer Moraes",
+       "nota": 5,
+       "avaliacoes": 62
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "3 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Novo Mundo",
+     "clinicas": 2,
+     "avaliacoes_somadas": 1291,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Julio Cavichiolo | Ortodontia | Estética | Implante Dentário | Dentista em Novo Mundo | Curitiba PR",
+       "nota": 4.8,
+       "avaliacoes": 1196
+      },
+      {
+       "nome": "Ortototal Curitiba",
+       "nota": 5,
+       "avaliacoes": 95
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Boqueirão",
+     "clinicas": 2,
+     "avaliacoes_somadas": 752,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "IORC Instituto de Ortodontia de Curitiba",
+       "nota": 4.5,
+       "avaliacoes": 743
+      },
+      {
+       "nome": "TG Odontologia - Clínica Especializada",
+       "nota": 4.6,
+       "avaliacoes": 9
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Seminário",
+     "clinicas": 2,
+     "avaliacoes_somadas": 276,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "OralClin - Clínica Odontológica em Curitiba",
+       "nota": 4.4,
+       "avaliacoes": 208
+      },
+      {
+       "nome": "Dra Ana Paula Tuleski - Invisalign Doctor",
+       "nota": 5,
+       "avaliacoes": 68
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Cajuru",
+     "clinicas": 1,
+     "avaliacoes_somadas": 411,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "OralClick Odontologia Curitiba",
+       "nota": 4.9,
+       "avaliacoes": 411
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Fazendinha",
+     "clinicas": 1,
+     "avaliacoes_somadas": 329,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Maxiclin ODONTOLOGIA I Implantes | Ortodontia | DTM | Facetas | Odontopediatria | Invisalign | Clínica Geral | Clareamento",
+       "nota": 4.9,
+       "avaliacoes": 329
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Bacacheri",
+     "clinicas": 1,
+     "avaliacoes_somadas": 160,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra Sybelly Baron - Ortodontia, Ortopedia e Odontopediatria",
+       "nota": 5,
+       "avaliacoes": 160
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Sítio Cercado",
+     "clinicas": 1,
+     "avaliacoes_somadas": 148,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dentista Sitio Cercado Odontlux | Sitio Cercado e Bairro Novo",
+       "nota": 5,
+       "avaliacoes": 148
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Matriz",
+     "clinicas": 1,
+     "avaliacoes_somadas": 94,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Ortodontia Curitiba - Arnaldo Hayashi",
+       "nota": 5,
+       "avaliacoes": 94
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Vila Izabel",
+     "clinicas": 1,
+     "avaliacoes_somadas": 93,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dentista - Lidery Odontologia",
+       "nota": 4.9,
+       "avaliacoes": 93
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Bom Retiro",
+     "clinicas": 1,
+     "avaliacoes_somadas": 77,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra Marcia Cristina Zonatto | Dentista | Curitiba | Odontologia Bom Retiro",
+       "nota": 5,
+       "avaliacoes": 77
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Boa Vista",
+     "clinicas": 1,
+     "avaliacoes_somadas": 20,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra. Camille Broocke - Odontologia",
+       "nota": 5,
+       "avaliacoes": 20
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    }
+   ],
+   "bairros_sem_a_rede": [
+    {
+     "bairro": "Batel",
+     "clinicas": 16,
+     "avaliacoes_somadas": 1682,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Instituto Mass Odontologia",
+       "nota": 5,
+       "avaliacoes": 629
+      },
+      {
+       "nome": "Dental Uni - Clínica de Urgência Odontológica",
+       "nota": 4.5,
+       "avaliacoes": 581
+      },
+      {
+       "nome": "Dra Juliana Fauri",
+       "nota": 5,
+       "avaliacoes": 87
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "16 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Centro Cívico",
+     "clinicas": 12,
+     "avaliacoes_somadas": 904,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Mussi Liu",
+       "nota": 5,
+       "avaliacoes": 318
+      },
+      {
+       "nome": "Beyond Odontologia",
+       "nota": 4.9,
+       "avaliacoes": 271
+      },
+      {
+       "nome": "Clínica iDent",
+       "nota": 4.2,
+       "avaliacoes": 129
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "12 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Alto da XV",
+     "clinicas": 9,
+     "avaliacoes_somadas": 630,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "ALLDENTAL - Odontologia Integrada",
+       "nota": 4.9,
+       "avaliacoes": 419
+      },
+      {
+       "nome": "Dra Ana Lorenzon e Dra Karin Freund Ortodontia",
+       "nota": 5,
+       "avaliacoes": 52
+      },
+      {
+       "nome": "BellOdont",
+       "nota": 4.9,
+       "avaliacoes": 39
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "9 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Juvevê",
+     "clinicas": 8,
+     "avaliacoes_somadas": 1031,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clínica Premium Curitiba",
+       "nota": 4.9,
+       "avaliacoes": 652
+      },
+      {
+       "nome": "Dr. Luís Francisco Reis Dentista",
+       "nota": 5,
+       "avaliacoes": 159
+      },
+      {
+       "nome": "Dra. Eliane Vitoria Lanzarini",
+       "nota": 5,
+       "avaliacoes": 90
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "8 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Bigorrilho",
+     "clinicas": 7,
+     "avaliacoes_somadas": 1593,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clínica Physalis",
+       "nota": 4.7,
+       "avaliacoes": 656
+      },
+      {
+       "nome": "Dr. Roger Hurtado Dentista Curitiba | Hurtado Dental Prîme",
+       "nota": 5,
+       "avaliacoes": 352
+      },
+      {
+       "nome": "Dr Bruno Pinho Schüller Dentista",
+       "nota": 5,
+       "avaliacoes": 291
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "7 clínicas varridas, e a rede não está aqui"
+    }
+   ],
+   "manchete": "27 bairros medidos · a rede está em 2 deles",
+   "leitura": "O bairro com mais clínicas é Centro, com 74 clínicas varridas, e a rede está lá.",
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "media",
+    "medido": true,
+    "amostra": 179,
+    "janela_dias": null,
+    "medicoes": 1,
+    "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
+    "procedencia": "medido em 179 clínicas varridas, 1 medição"
+   }
+  },
+  {
+   "praca_id": "goiania",
+   "rotulo": "GO · Goiânia",
+   "bairros_medidos": 36,
+   "clinicas_medidas": 161,
+   "sem_bairro_no_endereco": 0,
+   "unidades_da_rede": 4,
+   "unidades_localizadas": 4,
+   "onde_estamos": [
+    {
+     "local_id": "ortho_gyn_jardim_tropical",
+     "bairro": "Jardim Tropical",
+     "unidade": "OrthoDontic Jardim Tropical"
+    },
+    {
+     "local_id": "ortho_gyn_st_central",
+     "bairro": "St. Central",
+     "unidade": "OrthoDontic St. Central"
+    },
+    {
+     "local_id": "ortho_gyn_st_morada_do_sol",
+     "bairro": "St. Morada do Sol",
+     "unidade": "OrthoDontic St. Morada do Sol"
+    },
+    {
+     "local_id": "ortho_gyn_st_oeste",
+     "bairro": "St. Oeste",
+     "unidade": "OrthoDontic St. Oeste"
+    }
+   ],
+   "bairros": [
+    {
+     "bairro": "St. Marista",
+     "clinicas": 25,
+     "avaliacoes_somadas": 6282,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Crool Centro Odontológico",
+       "nota": 4.9,
+       "avaliacoes": 4915
+      },
+      {
+       "nome": "Dr. Henrique Taniguchi",
+       "nota": 5,
+       "avaliacoes": 341
+      },
+      {
+       "nome": "Máximo Odontologia",
+       "nota": 4.5,
+       "avaliacoes": 182
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "25 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "St. Oeste",
+     "clinicas": 25,
+     "avaliacoes_somadas": 4294,
+     "temos_unidade": true,
+     "nossas": [
+      "ortho_gyn_st_oeste"
+     ],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra. Letícia Candini e equipe | Lev Odontologia",
+       "nota": 5,
+       "avaliacoes": 1145
+      },
+      {
+       "nome": "Iceokids | Odontopediatria",
+       "nota": 4.9,
+       "avaliacoes": 865
+      },
+      {
+       "nome": "Centro Odontológico Dra. Renata Taborda",
+       "nota": 4.6,
+       "avaliacoes": 510
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "25 clínicas varridas, e a unidade da rede está aqui"
+    },
+    {
+     "bairro": "St. Bueno",
+     "clinicas": 19,
+     "avaliacoes_somadas": 2159,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Condé Clínica",
+       "nota": 5,
+       "avaliacoes": 826
+      },
+      {
+       "nome": "CD3 Odontologia",
+       "nota": 4.9,
+       "avaliacoes": 449
+      },
+      {
+       "nome": "Uniodonto Goiânia - Planos Odontológicos",
+       "nota": 3.8,
+       "avaliacoes": 270
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "19 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "St. Sul",
+     "clinicas": 16,
+     "avaliacoes_somadas": 2289,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Afeto Odontologia Goiânia",
+       "nota": 5,
+       "avaliacoes": 696
+      },
+      {
+       "nome": "Odontto Centro - Odontologia Especializada",
+       "nota": 4.3,
+       "avaliacoes": 539
+      },
+      {
+       "nome": "Pronto Socorro em Odontologia 24h",
+       "nota": 3.9,
+       "avaliacoes": 244
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "16 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "St. Central",
+     "clinicas": 16,
+     "avaliacoes_somadas": 2717,
+     "temos_unidade": true,
+     "nossas": [
+      "ortho_gyn_st_central"
+     ],
+     "vizinhos_fortes": [
+      {
+       "nome": "Expodonto Odontologia",
+       "nota": 4.8,
+       "avaliacoes": 573
+      },
+      {
+       "nome": "OdontoSin | Implantes Dentários | Dentista | Goiânia",
+       "nota": 4.9,
+       "avaliacoes": 487
+      },
+      {
+       "nome": "Studio Dental Odontologia",
+       "nota": 5,
+       "avaliacoes": 324
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "16 clínicas varridas, e a unidade da rede está aqui"
+    },
+    {
+     "bairro": "St. Campinas",
+     "clinicas": 6,
+     "avaliacoes_somadas": 1022,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Sorria Goiás - Campinas",
+       "nota": 4.6,
+       "avaliacoes": 427
+      },
+      {
+       "nome": "Iso Campinas",
+       "nota": 4.9,
+       "avaliacoes": 353
+      },
+      {
+       "nome": "Clínica Lizza",
+       "nota": 4.7,
+       "avaliacoes": 106
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "6 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Jardim Goiás",
+     "clinicas": 5,
+     "avaliacoes_somadas": 929,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Vintage Odontologia",
+       "nota": 4.8,
+       "avaliacoes": 625
+      },
+      {
+       "nome": "Clínica Palato Odontologia",
+       "nota": 5,
+       "avaliacoes": 197
+      },
+      {
+       "nome": "Dra. Aretha Bruna Gonzaga | Dentista Goiânia",
+       "nota": 5,
+       "avaliacoes": 52
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "5 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Jardim América",
+     "clinicas": 5,
+     "avaliacoes_somadas": 464,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Novo Sorriso",
+       "nota": 4.7,
+       "avaliacoes": 234
+      },
+      {
+       "nome": "VIVAZ ODONTOLOGIA",
+       "nota": 4.9,
+       "avaliacoes": 107
+      },
+      {
+       "nome": "Bello Sorriso Clinic",
+       "nota": 4.9,
+       "avaliacoes": 78
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "5 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "St. Aeroporto",
+     "clinicas": 4,
+     "avaliacoes_somadas": 278,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dental Adelar",
+       "nota": 4.8,
+       "avaliacoes": 240
+      },
+      {
+       "nome": "Dental Sorriso",
+       "nota": 4.3,
+       "avaliacoes": 24
+      },
+      {
+       "nome": "Dental Goiânia",
+       "nota": 4.3,
+       "avaliacoes": 9
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "4 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "St. Coimbra",
+     "clinicas": 4,
+     "avaliacoes_somadas": 79,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dental Coimbra Produtos Odontológicos",
+       "nota": 4.5,
+       "avaliacoes": 46
+      },
+      {
+       "nome": "Viva Odontologia e Saúde",
+       "nota": 4.4,
+       "avaliacoes": 26
+      },
+      {
+       "nome": "PRODENTE SETOR COIMBRA-DENTISTA,PRÓTESE, IMPLANTE, FACETA, APARELHO ORTODÔNTICO",
+       "nota": 5,
+       "avaliacoes": 5
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "4 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "St. Sudoeste",
+     "clinicas": 3,
+     "avaliacoes_somadas": 273,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Natus Odontologia - Dentista em Goiânia | Aparelhos Transparentes",
+       "nota": 5,
+       "avaliacoes": 137
+      },
+      {
+       "nome": "Rir Odontologia | Dentista em Goiânia",
+       "nota": 4.8,
+       "avaliacoes": 110
+      },
+      {
+       "nome": "CORUS Odontologia - Implante, Aparelho Ortodontico, Harmonizacao Facial, Dentista, Facetas",
+       "nota": 4.8,
+       "avaliacoes": 26
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "3 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Centro",
+     "clinicas": 3,
+     "avaliacoes_somadas": 262,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Novo Sorriso - Odontologia",
+       "nota": 4.9,
+       "avaliacoes": 136
+      },
+      {
+       "nome": "Odontoclinic - Goiânia Centro",
+       "nota": 4.9,
+       "avaliacoes": 119
+      },
+      {
+       "nome": "Dra. Tatiana Vieira - Ortodontia",
+       "nota": 5,
+       "avaliacoes": 7
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "3 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Jardim Nova Esperanca",
+     "clinicas": 3,
+     "avaliacoes_somadas": 125,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clínica Odontológica - Instituto Correia",
+       "nota": 4.7,
+       "avaliacoes": 55
+      },
+      {
+       "nome": "Sorridents Clinica Odontológica",
+       "nota": 4.2,
+       "avaliacoes": 45
+      },
+      {
+       "nome": "Dr. Sorriso Goiânia",
+       "nota": 3.4,
+       "avaliacoes": 25
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "3 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Campinas",
+     "clinicas": 2,
+     "avaliacoes_somadas": 1614,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Camargo Odontologia",
+       "nota": 5,
+       "avaliacoes": 1252
+      },
+      {
+       "nome": "Sorridents Clínicas Odontológicas Campinas Goiânia",
+       "nota": 4.9,
+       "avaliacoes": 362
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Parque Amazonia",
+     "clinicas": 2,
+     "avaliacoes_somadas": 988,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Vita Implantes - Clínica Odontológica",
+       "nota": 4.9,
+       "avaliacoes": 881
+      },
+      {
+       "nome": "Odonto Rassi",
+       "nota": 4.5,
+       "avaliacoes": 107
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "St. dos Funcionários",
+     "clinicas": 2,
+     "avaliacoes_somadas": 242,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clínica Infinity Dental e Facial",
+       "nota": 5,
+       "avaliacoes": 234
+      },
+      {
+       "nome": "Dra. Aline Carneiro - Ortodontista - Especialista em Pacientes Especiais",
+       "nota": 5,
+       "avaliacoes": 8
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Bueno",
+     "clinicas": 2,
+     "avaliacoes_somadas": 21,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Renato Andrade Ortodontia",
+       "nota": 5,
+       "avaliacoes": 19
+      },
+      {
+       "nome": "Dra. Tainá Morais Ortodontia e Alinhadores Estéticos",
+       "nota": 5,
+       "avaliacoes": 2
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Vila Concórdia",
+     "clinicas": 1,
+     "avaliacoes_somadas": 505,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "OdontoCompany",
+       "nota": 4.7,
+       "avaliacoes": 505
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Setor Leste Universitário",
+     "clinicas": 1,
+     "avaliacoes_somadas": 495,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "CGO - Centro Goiano de Odontologia",
+       "nota": 5,
+       "avaliacoes": 495
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Conj. Vera Cruz",
+     "clinicas": 1,
+     "avaliacoes_somadas": 465,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Amo Odontologia - Unid. Vera Cruz II",
+       "nota": 4.9,
+       "avaliacoes": 465
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Capuava",
+     "clinicas": 1,
+     "avaliacoes_somadas": 244,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "OdontoCompany Goiânia Portal Shopping",
+       "nota": 4.5,
+       "avaliacoes": 244
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Setor Negrão de Lima",
+     "clinicas": 1,
+     "avaliacoes_somadas": 242,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clínica Ego I Negrão de Lima | Implante Dentário | Facetas de Porcelana | Clínica Odontológica | Dentista em Goiânia GO",
+       "nota": 5,
+       "avaliacoes": 242
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "St. Bela Vista",
+     "clinicas": 1,
+     "avaliacoes_somadas": 223,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clínica Luz",
+       "nota": 4.3,
+       "avaliacoes": 223
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Jardim da Luz",
+     "clinicas": 1,
+     "avaliacoes_somadas": 221,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odonto Company Goiânia - Jardim da Luz",
+       "nota": 5,
+       "avaliacoes": 221
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Jardim Tropical",
+     "clinicas": 1,
+     "avaliacoes_somadas": 152,
+     "temos_unidade": true,
+     "nossas": [
+      "ortho_gyn_jardim_tropical"
+     ],
+     "vizinhos_fortes": [],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a unidade da rede está aqui"
+    }
+   ],
+   "bairros_sem_a_rede": [
+    {
+     "bairro": "St. Marista",
+     "clinicas": 25,
+     "avaliacoes_somadas": 6282,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Crool Centro Odontológico",
+       "nota": 4.9,
+       "avaliacoes": 4915
+      },
+      {
+       "nome": "Dr. Henrique Taniguchi",
+       "nota": 5,
+       "avaliacoes": 341
+      },
+      {
+       "nome": "Máximo Odontologia",
+       "nota": 4.5,
+       "avaliacoes": 182
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "25 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "St. Bueno",
+     "clinicas": 19,
+     "avaliacoes_somadas": 2159,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Condé Clínica",
+       "nota": 5,
+       "avaliacoes": 826
+      },
+      {
+       "nome": "CD3 Odontologia",
+       "nota": 4.9,
+       "avaliacoes": 449
+      },
+      {
+       "nome": "Uniodonto Goiânia - Planos Odontológicos",
+       "nota": 3.8,
+       "avaliacoes": 270
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "19 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "St. Sul",
+     "clinicas": 16,
+     "avaliacoes_somadas": 2289,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Afeto Odontologia Goiânia",
+       "nota": 5,
+       "avaliacoes": 696
+      },
+      {
+       "nome": "Odontto Centro - Odontologia Especializada",
+       "nota": 4.3,
+       "avaliacoes": 539
+      },
+      {
+       "nome": "Pronto Socorro em Odontologia 24h",
+       "nota": 3.9,
+       "avaliacoes": 244
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "16 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "St. Campinas",
+     "clinicas": 6,
+     "avaliacoes_somadas": 1022,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Sorria Goiás - Campinas",
+       "nota": 4.6,
+       "avaliacoes": 427
+      },
+      {
+       "nome": "Iso Campinas",
+       "nota": 4.9,
+       "avaliacoes": 353
+      },
+      {
+       "nome": "Clínica Lizza",
+       "nota": 4.7,
+       "avaliacoes": 106
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "6 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Jardim Goiás",
+     "clinicas": 5,
+     "avaliacoes_somadas": 929,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Vintage Odontologia",
+       "nota": 4.8,
+       "avaliacoes": 625
+      },
+      {
+       "nome": "Clínica Palato Odontologia",
+       "nota": 5,
+       "avaliacoes": 197
+      },
+      {
+       "nome": "Dra. Aretha Bruna Gonzaga | Dentista Goiânia",
+       "nota": 5,
+       "avaliacoes": 52
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "5 clínicas varridas, e a rede não está aqui"
+    }
+   ],
+   "manchete": "36 bairros medidos · a rede está em 4 deles",
+   "leitura": "O bairro com mais clínicas é St. Marista, com 25 clínicas varridas, e a rede NÃO está lá.",
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "media",
+    "medido": true,
+    "amostra": 161,
+    "janela_dias": null,
+    "medicoes": 1,
+    "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
+    "procedencia": "medido em 161 clínicas varridas, 1 medição"
+   }
+  },
+  {
    "praca_id": "cuiaba",
    "rotulo": "MT · Cuiabá",
    "bairros_medidos": 65,
@@ -791,6 +3053,1432 @@
     ],
     "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
     "procedencia": "medido em 242 clínicas varridas, 1 medição"
+   }
+  },
+  {
+   "praca_id": "joinville",
+   "rotulo": "SC · Joinville",
+   "bairros_medidos": 24,
+   "clinicas_medidas": 148,
+   "sem_bairro_no_endereco": 0,
+   "unidades_da_rede": 3,
+   "unidades_localizadas": 3,
+   "onde_estamos": [
+    {
+     "local_id": "ortho_joi_america",
+     "bairro": "América",
+     "unidade": "OrthoDontic América"
+    },
+    {
+     "local_id": "ortho_joi_aventureiro",
+     "bairro": "Aventureiro",
+     "unidade": "OrthoDontic Aventureiro"
+    },
+    {
+     "local_id": "ortho_joi_centro",
+     "bairro": "Centro",
+     "unidade": "OrthoDontic Centro"
+    }
+   ],
+   "bairros": [
+    {
+     "bairro": "Centro",
+     "clinicas": 48,
+     "avaliacoes_somadas": 6565,
+     "temos_unidade": true,
+     "nossas": [
+      "ortho_joi_centro"
+     ],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odonto e Você",
+       "nota": 4.9,
+       "avaliacoes": 695
+      },
+      {
+       "nome": "DoctorÁgape",
+       "nota": 4.7,
+       "avaliacoes": 686
+      },
+      {
+       "nome": "Odontocompany",
+       "nota": 4,
+       "avaliacoes": 568
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "48 clínicas varridas, e a unidade da rede está aqui"
+    },
+    {
+     "bairro": "América",
+     "clinicas": 21,
+     "avaliacoes_somadas": 4224,
+     "temos_unidade": true,
+     "nossas": [
+      "ortho_joi_america"
+     ],
+     "vizinhos_fortes": [
+      {
+       "nome": "Contraste Radiologia Odontológica | Joinville Centro",
+       "nota": 4.9,
+       "avaliacoes": 2298
+      },
+      {
+       "nome": "CLÍNICA MONET | Odontologia",
+       "nota": 4.9,
+       "avaliacoes": 262
+      },
+      {
+       "nome": "Prime Lentes Dentais",
+       "nota": 4.7,
+       "avaliacoes": 187
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "21 clínicas varridas, e a unidade da rede está aqui"
+    },
+    {
+     "bairro": "Anita Garibaldi",
+     "clinicas": 17,
+     "avaliacoes_somadas": 1615,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Uniclass Odontologia Estética",
+       "nota": 5,
+       "avaliacoes": 379
+      },
+      {
+       "nome": "G7 Odontologia",
+       "nota": 5,
+       "avaliacoes": 332
+      },
+      {
+       "nome": "Oral Prime",
+       "nota": 4.5,
+       "avaliacoes": 301
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "17 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Saguaçu",
+     "clinicas": 14,
+     "avaliacoes_somadas": 1249,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Duo Oral Care",
+       "nota": 5,
+       "avaliacoes": 304
+      },
+      {
+       "nome": "Clínica Ateliê Odonto",
+       "nota": 4.5,
+       "avaliacoes": 243
+      },
+      {
+       "nome": "Moreira Odontologia e Medicina",
+       "nota": 5,
+       "avaliacoes": 181
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "14 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Bucarein",
+     "clinicas": 9,
+     "avaliacoes_somadas": 915,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clínica Oral Unic",
+       "nota": 4.5,
+       "avaliacoes": 266
+      },
+      {
+       "nome": "Clínica Orthos",
+       "nota": 5,
+       "avaliacoes": 236
+      },
+      {
+       "nome": "Reidente Clínica Odontológica",
+       "nota": 4.6,
+       "avaliacoes": 150
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "9 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Costa e Silva",
+     "clinicas": 6,
+     "avaliacoes_somadas": 697,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra. Rosângela Farias",
+       "nota": 5,
+       "avaliacoes": 199
+      },
+      {
+       "nome": "Odontoart",
+       "nota": 5,
+       "avaliacoes": 173
+      },
+      {
+       "nome": "Clínica Odontológica Dra. Caroline Nessler | Invisalign Doctor | Dentista em Joinville/SC",
+       "nota": 4.9,
+       "avaliacoes": 170
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "6 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Iririú",
+     "clinicas": 5,
+     "avaliacoes_somadas": 339,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Sorria Studio Odontologia - Unidade Iririú",
+       "nota": 4.6,
+       "avaliacoes": 227
+      },
+      {
+       "nome": "Instituto Odontológico Toscano",
+       "nota": 4.4,
+       "avaliacoes": 76
+      },
+      {
+       "nome": "Dentic Odontologia Especializada | Invisalign | Iririú Joinville SC",
+       "nota": 4.9,
+       "avaliacoes": 34
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "5 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Aventureiro",
+     "clinicas": 3,
+     "avaliacoes_somadas": 713,
+     "temos_unidade": true,
+     "nossas": [
+      "ortho_joi_aventureiro"
+     ],
+     "vizinhos_fortes": [
+      {
+       "nome": "ODONTOCOT",
+       "nota": 4.8,
+       "avaliacoes": 493
+      },
+      {
+       "nome": "Dra. Daniele Sodré Consultório Odontológico",
+       "nota": 5,
+       "avaliacoes": 50
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "3 clínicas varridas, e a unidade da rede está aqui"
+    },
+    {
+     "bairro": "Floresta",
+     "clinicas": 3,
+     "avaliacoes_somadas": 585,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Via Odonto Floresta",
+       "nota": 4.7,
+       "avaliacoes": 375
+      },
+      {
+       "nome": "Clínica Dentária May",
+       "nota": 5,
+       "avaliacoes": 181
+      },
+      {
+       "nome": "OdontoCompany Floresta",
+       "nota": 4.9,
+       "avaliacoes": 29
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "3 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Glória",
+     "clinicas": 3,
+     "avaliacoes_somadas": 314,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "VF Odontologia",
+       "nota": 4.6,
+       "avaliacoes": 290
+      },
+      {
+       "nome": "Dra. Juliana Costenaro Sato",
+       "nota": 5,
+       "avaliacoes": 15
+      },
+      {
+       "nome": "Arnã Ariel | Dental Art",
+       "nota": 5,
+       "avaliacoes": 9
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "3 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Boa Vista",
+     "clinicas": 3,
+     "avaliacoes_somadas": 345,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Sorria Studio Odontologia - Unidade Boa Vista",
+       "nota": 4.8,
+       "avaliacoes": 181
+      },
+      {
+       "nome": "Odonto Excellence",
+       "nota": 4.8,
+       "avaliacoes": 131
+      },
+      {
+       "nome": "Esthetic Odontologia",
+       "nota": 4.2,
+       "avaliacoes": 33
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "3 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Santo Antônio",
+     "clinicas": 2,
+     "avaliacoes_somadas": 306,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dr. Pablo Sandoval | Dentista 24 horas | Joinville",
+       "nota": 4.9,
+       "avaliacoes": 296
+      },
+      {
+       "nome": "Mariana Saraiva Ortodontista",
+       "nota": 5,
+       "avaliacoes": 10
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Bom Retiro",
+     "clinicas": 2,
+     "avaliacoes_somadas": 207,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clínica Nova Odontologia",
+       "nota": 5,
+       "avaliacoes": 192
+      },
+      {
+       "nome": "Dra. Larissa Godoi Debetio",
+       "nota": 5,
+       "avaliacoes": 15
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Boehmerwald",
+     "clinicas": 2,
+     "avaliacoes_somadas": 191,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra Marilene de Vicente",
+       "nota": 4.9,
+       "avaliacoes": 186
+      },
+      {
+       "nome": "AB Odontoclinic",
+       "nota": 4.2,
+       "avaliacoes": 5
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Atiradores",
+     "clinicas": 1,
+     "avaliacoes_somadas": 307,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Sorria Studio Odontologia - Unidade Atiradores",
+       "nota": 4.7,
+       "avaliacoes": 307
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "João Costa",
+     "clinicas": 1,
+     "avaliacoes_somadas": 138,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Espaço Dental",
+       "nota": 4.8,
+       "avaliacoes": 138
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Paranaguamirim",
+     "clinicas": 1,
+     "avaliacoes_somadas": 94,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dr. Fabrício Vianna | Dentista em Joinville",
+       "nota": 4.9,
+       "avaliacoes": 94
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Itaum",
+     "clinicas": 1,
+     "avaliacoes_somadas": 76,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odonto Excellence ITAUM",
+       "nota": 4.9,
+       "avaliacoes": 76
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Vila Nova",
+     "clinicas": 1,
+     "avaliacoes_somadas": 58,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra. Aline Luquini Hiebl",
+       "nota": 5,
+       "avaliacoes": 58
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Comasa",
+     "clinicas": 1,
+     "avaliacoes_somadas": 54,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odonto Excellence Comasa",
+       "nota": 4.6,
+       "avaliacoes": 54
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Jardim Paraíso",
+     "clinicas": 1,
+     "avaliacoes_somadas": 47,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dents Ortodontia e Clínica Geral",
+       "nota": 3.6,
+       "avaliacoes": 47
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Nova Brasília",
+     "clinicas": 1,
+     "avaliacoes_somadas": 27,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odonto Excellence",
+       "nota": 3.4,
+       "avaliacoes": 27
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Fátima",
+     "clinicas": 1,
+     "avaliacoes_somadas": 23,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dudents",
+       "nota": 5,
+       "avaliacoes": 23
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Guanabara",
+     "clinicas": 1,
+     "avaliacoes_somadas": 19,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dr. Igor Oliveira - Cirurgião Dentista",
+       "nota": 5,
+       "avaliacoes": 19
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    }
+   ],
+   "bairros_sem_a_rede": [
+    {
+     "bairro": "Anita Garibaldi",
+     "clinicas": 17,
+     "avaliacoes_somadas": 1615,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Uniclass Odontologia Estética",
+       "nota": 5,
+       "avaliacoes": 379
+      },
+      {
+       "nome": "G7 Odontologia",
+       "nota": 5,
+       "avaliacoes": 332
+      },
+      {
+       "nome": "Oral Prime",
+       "nota": 4.5,
+       "avaliacoes": 301
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "17 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Saguaçu",
+     "clinicas": 14,
+     "avaliacoes_somadas": 1249,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Duo Oral Care",
+       "nota": 5,
+       "avaliacoes": 304
+      },
+      {
+       "nome": "Clínica Ateliê Odonto",
+       "nota": 4.5,
+       "avaliacoes": 243
+      },
+      {
+       "nome": "Moreira Odontologia e Medicina",
+       "nota": 5,
+       "avaliacoes": 181
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "14 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Bucarein",
+     "clinicas": 9,
+     "avaliacoes_somadas": 915,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clínica Oral Unic",
+       "nota": 4.5,
+       "avaliacoes": 266
+      },
+      {
+       "nome": "Clínica Orthos",
+       "nota": 5,
+       "avaliacoes": 236
+      },
+      {
+       "nome": "Reidente Clínica Odontológica",
+       "nota": 4.6,
+       "avaliacoes": 150
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "9 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Costa e Silva",
+     "clinicas": 6,
+     "avaliacoes_somadas": 697,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra. Rosângela Farias",
+       "nota": 5,
+       "avaliacoes": 199
+      },
+      {
+       "nome": "Odontoart",
+       "nota": 5,
+       "avaliacoes": 173
+      },
+      {
+       "nome": "Clínica Odontológica Dra. Caroline Nessler | Invisalign Doctor | Dentista em Joinville/SC",
+       "nota": 4.9,
+       "avaliacoes": 170
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "6 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Iririú",
+     "clinicas": 5,
+     "avaliacoes_somadas": 339,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Sorria Studio Odontologia - Unidade Iririú",
+       "nota": 4.6,
+       "avaliacoes": 227
+      },
+      {
+       "nome": "Instituto Odontológico Toscano",
+       "nota": 4.4,
+       "avaliacoes": 76
+      },
+      {
+       "nome": "Dentic Odontologia Especializada | Invisalign | Iririú Joinville SC",
+       "nota": 4.9,
+       "avaliacoes": 34
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "5 clínicas varridas, e a rede não está aqui"
+    }
+   ],
+   "manchete": "24 bairros medidos · a rede está em 3 deles",
+   "leitura": "O bairro com mais clínicas é Centro, com 48 clínicas varridas, e a rede está lá.",
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "media",
+    "medido": true,
+    "amostra": 148,
+    "janela_dias": null,
+    "medicoes": 1,
+    "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
+    "procedencia": "medido em 148 clínicas varridas, 1 medição"
+   }
+  },
+  {
+   "praca_id": "sorocaba",
+   "rotulo": "SP · Sorocaba",
+   "bairros_medidos": 42,
+   "clinicas_medidas": 143,
+   "sem_bairro_no_endereco": 0,
+   "unidades_da_rede": 3,
+   "unidades_localizadas": 3,
+   "onde_estamos": [
+    {
+     "local_id": "ortho_soro_centro",
+     "bairro": "Centro",
+     "unidade": "OrthoDontic Centro"
+    },
+    {
+     "local_id": "ortho_soro_jardim_faculdade",
+     "bairro": "Jardim Faculdade",
+     "unidade": "OrthoDontic Jardim Faculdade"
+    },
+    {
+     "local_id": "ortho_soro_vila_formosa",
+     "bairro": "Vila Formosa",
+     "unidade": "OrthoDontic Vila Formosa"
+    }
+   ],
+   "bairros": [
+    {
+     "bairro": "Centro",
+     "clinicas": 35,
+     "avaliacoes_somadas": 7916,
+     "temos_unidade": true,
+     "nossas": [
+      "ortho_soro_centro"
+     ],
+     "vizinhos_fortes": [
+      {
+       "nome": "OdontoHills - Dentistas de Urgência",
+       "nota": 4.9,
+       "avaliacoes": 1408
+      },
+      {
+       "nome": "OdontoCompany - Sorocaba Centro / Implantes e Ortodontia",
+       "nota": 4.4,
+       "avaliacoes": 974
+      },
+      {
+       "nome": "CROCO Odontologia Sorocaba",
+       "nota": 5,
+       "avaliacoes": 638
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "35 clínicas varridas, e a unidade da rede está aqui"
+    },
+    {
+     "bairro": "Jardim Vergueiro",
+     "clinicas": 15,
+     "avaliacoes_somadas": 2101,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "FP Prime Odontologia Sorocaba",
+       "nota": 4.8,
+       "avaliacoes": 428
+      },
+      {
+       "nome": "Clínica Caroline Bianchi",
+       "nota": 4.8,
+       "avaliacoes": 372
+      },
+      {
+       "nome": "Uniodonto",
+       "nota": 4.7,
+       "avaliacoes": 368
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "15 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Jardim Emilia",
+     "clinicas": 8,
+     "avaliacoes_somadas": 1062,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "HARMODONT Clínica Orofacial",
+       "nota": 5,
+       "avaliacoes": 452
+      },
+      {
+       "nome": "Dr. Alexandre Nelissen | Dentista | Ortodontia| Alinhadores Invisíveis Sousmile Invisalign",
+       "nota": 5,
+       "avaliacoes": 214
+      },
+      {
+       "nome": "Conceito Odontologia - Dentista",
+       "nota": 4.9,
+       "avaliacoes": 182
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "8 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Parque Campolim",
+     "clinicas": 8,
+     "avaliacoes_somadas": 414,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra Cristiane Muscari - Invisalign - Tratamento de Ronco e Apneia - Sorocaba SP",
+       "nota": 5,
+       "avaliacoes": 114
+      },
+      {
+       "nome": "Dra. Bruna Nunes Dentista / Ortodontista - BN Odontologia Especializada",
+       "nota": 4.9,
+       "avaliacoes": 95
+      },
+      {
+       "nome": "Dra Gabriela Lima",
+       "nota": 5,
+       "avaliacoes": 67
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "8 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Vila Trujillo",
+     "clinicas": 7,
+     "avaliacoes_somadas": 1991,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Emergência Odontológica Sorocaba - Consultório de Dentista 24hs",
+       "nota": 5,
+       "avaliacoes": 762
+      },
+      {
+       "nome": "ABO Sorocaba - Clínica Odontológica e Cursos Profissionalizantes",
+       "nota": 4.7,
+       "avaliacoes": 705
+      },
+      {
+       "nome": "Lodonto Sorocaba - Unidade Trujilo",
+       "nota": 4.2,
+       "avaliacoes": 143
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "7 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Jardim Paulistano",
+     "clinicas": 7,
+     "avaliacoes_somadas": 839,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Oral Unic Implantes Sorocaba",
+       "nota": 4.7,
+       "avaliacoes": 688
+      },
+      {
+       "nome": "COES - Centro de Odontologia Especializada de Sorocaba | Dentistas Especializados",
+       "nota": 4.4,
+       "avaliacoes": 46
+      },
+      {
+       "nome": "Instituto Dilene Matielli | Clínica Odontológica em Sorocaba",
+       "nota": 4.9,
+       "avaliacoes": 40
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "7 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Jardim Santa Rosália",
+     "clinicas": 6,
+     "avaliacoes_somadas": 952,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "OdontoCompany - Jardim Santa Rosália / Implantes e Ortodontia",
+       "nota": 4.8,
+       "avaliacoes": 281
+      },
+      {
+       "nome": "Orodent Clínica Odontologica",
+       "nota": 4.8,
+       "avaliacoes": 260
+      },
+      {
+       "nome": "Dentista Dra. Ana Lúcia Domingues",
+       "nota": 5,
+       "avaliacoes": 224
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "6 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Jardim Faculdade",
+     "clinicas": 5,
+     "avaliacoes_somadas": 1030,
+     "temos_unidade": true,
+     "nossas": [
+      "ortho_soro_jardim_faculdade"
+     ],
+     "vizinhos_fortes": [
+      {
+       "nome": "OR2U Dental Studio - Dentistas em Sorocaba",
+       "nota": 4.9,
+       "avaliacoes": 746
+      },
+      {
+       "nome": "Dinâmica da Face",
+       "nota": 5,
+       "avaliacoes": 122
+      },
+      {
+       "nome": "Dra Daniela Pellegrini - Ortodontia e Invisalign Sorocaba",
+       "nota": 5,
+       "avaliacoes": 35
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "5 clínicas varridas, e a unidade da rede está aqui"
+    },
+    {
+     "bairro": "Vila Hortência",
+     "clinicas": 4,
+     "avaliacoes_somadas": 543,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Instituto Vicentim Maekawa - Dentista Sorocaba",
+       "nota": 4.9,
+       "avaliacoes": 418
+      },
+      {
+       "nome": "Dra. Dafne Momberg - Dentista em Sorocaba",
+       "nota": 5,
+       "avaliacoes": 47
+      },
+      {
+       "nome": "Vita Odontologia Especializada",
+       "nota": 5,
+       "avaliacoes": 42
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "4 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Wanel Ville",
+     "clinicas": 3,
+     "avaliacoes_somadas": 501,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odontológica - Dentistas em Sorocaba",
+       "nota": 5,
+       "avaliacoes": 286
+      },
+      {
+       "nome": "Odontologia Ortoville",
+       "nota": 5,
+       "avaliacoes": 210
+      },
+      {
+       "nome": "GOU ODONTO SOROCABA",
+       "nota": 5,
+       "avaliacoes": 5
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "3 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Vila Leao",
+     "clinicas": 3,
+     "avaliacoes_somadas": 136,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odonto Armoni I Especialista em Lentes de Contato Dental | Implantes | Ortodôntia",
+       "nota": 5,
+       "avaliacoes": 86
+      },
+      {
+       "nome": "Dra. Carina Garcia",
+       "nota": 4.8,
+       "avaliacoes": 37
+      },
+      {
+       "nome": "Dr. Diana Urbano",
+       "nota": 5,
+       "avaliacoes": 13
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "3 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Vila Carvalho",
+     "clinicas": 3,
+     "avaliacoes_somadas": 184,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra. Giovanna Loratto - Odontopediatra Sorocaba",
+       "nota": 5,
+       "avaliacoes": 80
+      },
+      {
+       "nome": "Roma Clinic Odontológica | Dentista Sorocaba",
+       "nota": 5,
+       "avaliacoes": 68
+      },
+      {
+       "nome": "Clinica do sorriso",
+       "nota": 4.3,
+       "avaliacoes": 36
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "3 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Jardim America",
+     "clinicas": 3,
+     "avaliacoes_somadas": 96,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dr. Thiago Massini - Massini Odontologia & Reabilitação Oral",
+       "nota": 4.9,
+       "avaliacoes": 73
+      },
+      {
+       "nome": "Dra. Rosangela Fujinami Umekita Miyasawa CRO 60053",
+       "nota": 5,
+       "avaliacoes": 14
+      },
+      {
+       "nome": "Dra. Ana Cecília Massa - Facetas em Resina | Botox | Clareamento | Alinhadores estéticos invisíveis | Ortodontia",
+       "nota": 5,
+       "avaliacoes": 9
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "3 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Jardim Ana Maria",
+     "clinicas": 2,
+     "avaliacoes_somadas": 1161,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Pró Clínica Sorocaba",
+       "nota": 4.7,
+       "avaliacoes": 1055
+      },
+      {
+       "nome": "Dra. Larissa Castilho - Ortodontia",
+       "nota": 4.7,
+       "avaliacoes": 106
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Vila Lucy",
+     "clinicas": 2,
+     "avaliacoes_somadas": 616,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Cois-Clínica Odontológica Integrada de Sorocaba",
+       "nota": 4.9,
+       "avaliacoes": 461
+      },
+      {
+       "nome": "Dra Stephanie Oliveira",
+       "nota": 4.9,
+       "avaliacoes": 155
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Vila Formosa",
+     "clinicas": 2,
+     "avaliacoes_somadas": 615,
+     "temos_unidade": true,
+     "nossas": [
+      "ortho_soro_vila_formosa"
+     ],
+     "vizinhos_fortes": [
+      {
+       "nome": "Sorridents Clínicas Odontológicas Itavuvu Sorocaba",
+       "nota": 4.9,
+       "avaliacoes": 454
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a unidade da rede está aqui"
+    },
+    {
+     "bairro": "Jardim Maria Antônia Prado",
+     "clinicas": 2,
+     "avaliacoes_somadas": 380,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odontoclinic - Sorocaba Itavuvu",
+       "nota": 4.8,
+       "avaliacoes": 311
+      },
+      {
+       "nome": "Dra Larissa Pauletti - Dentista Sorocaba",
+       "nota": 5,
+       "avaliacoes": 69
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Éden",
+     "clinicas": 2,
+     "avaliacoes_somadas": 201,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odontoclinic - Sorocaba Éden",
+       "nota": 4.9,
+       "avaliacoes": 200
+      },
+      {
+       "nome": "Clínica de Odontologia UNIP Sorocaba",
+       "nota": 2,
+       "avaliacoes": 1
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Jardim Sao Guilherme",
+     "clinicas": 2,
+     "avaliacoes_somadas": 324,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Consultório Odontológico WM | Ortodontia | Implantes | Tratamento de Canal | Zona Norte Sorocaba",
+       "nota": 5,
+       "avaliacoes": 172
+      },
+      {
+       "nome": "Sorrile Ortodontia | Dentista em Sorocaba",
+       "nota": 4.8,
+       "avaliacoes": 152
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Vila Santana",
+     "clinicas": 2,
+     "avaliacoes_somadas": 280,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odontologia Giordano | Dr. Fernando Giordano",
+       "nota": 5,
+       "avaliacoes": 140
+      },
+      {
+       "nome": "Clinica Bem Mais Odontologia - Dentista Sorocaba",
+       "nota": 5,
+       "avaliacoes": 140
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Trujillo",
+     "clinicas": 1,
+     "avaliacoes_somadas": 429,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Oesp Prime Sorocaba - Ortodontia SouSmile - Invisalign Sorocaba - Top Doctor - Implantes Dentários - Aparelho Invisível",
+       "nota": 5,
+       "avaliacoes": 429
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Jardim Maria Eugenia",
+     "clinicas": 1,
+     "avaliacoes_somadas": 417,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "OdontoCompany Sorocaba - Zona Norte / Implantes e Ortodontia",
+       "nota": 4.4,
+       "avaliacoes": 417
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Jardim Santa Cecilia",
+     "clinicas": 1,
+     "avaliacoes_somadas": 399,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clínica de Radiologia Odontológica Sorocaba - ROS - Unidade Zona Norte",
+       "nota": 4.9,
+       "avaliacoes": 399
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Julio de Mesquita",
+     "clinicas": 1,
+     "avaliacoes_somadas": 387,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odontoclinic Júlio de Mesquita",
+       "nota": 4.9,
+       "avaliacoes": 387
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Jardim Novo Horizonte",
+     "clinicas": 1,
+     "avaliacoes_somadas": 354,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odonto Mais Premium",
+       "nota": 5,
+       "avaliacoes": 354
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    }
+   ],
+   "bairros_sem_a_rede": [
+    {
+     "bairro": "Jardim Vergueiro",
+     "clinicas": 15,
+     "avaliacoes_somadas": 2101,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "FP Prime Odontologia Sorocaba",
+       "nota": 4.8,
+       "avaliacoes": 428
+      },
+      {
+       "nome": "Clínica Caroline Bianchi",
+       "nota": 4.8,
+       "avaliacoes": 372
+      },
+      {
+       "nome": "Uniodonto",
+       "nota": 4.7,
+       "avaliacoes": 368
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "15 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Jardim Emilia",
+     "clinicas": 8,
+     "avaliacoes_somadas": 1062,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "HARMODONT Clínica Orofacial",
+       "nota": 5,
+       "avaliacoes": 452
+      },
+      {
+       "nome": "Dr. Alexandre Nelissen | Dentista | Ortodontia| Alinhadores Invisíveis Sousmile Invisalign",
+       "nota": 5,
+       "avaliacoes": 214
+      },
+      {
+       "nome": "Conceito Odontologia - Dentista",
+       "nota": 4.9,
+       "avaliacoes": 182
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "8 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Parque Campolim",
+     "clinicas": 8,
+     "avaliacoes_somadas": 414,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra Cristiane Muscari - Invisalign - Tratamento de Ronco e Apneia - Sorocaba SP",
+       "nota": 5,
+       "avaliacoes": 114
+      },
+      {
+       "nome": "Dra. Bruna Nunes Dentista / Ortodontista - BN Odontologia Especializada",
+       "nota": 4.9,
+       "avaliacoes": 95
+      },
+      {
+       "nome": "Dra Gabriela Lima",
+       "nota": 5,
+       "avaliacoes": 67
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "8 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Vila Trujillo",
+     "clinicas": 7,
+     "avaliacoes_somadas": 1991,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Emergência Odontológica Sorocaba - Consultório de Dentista 24hs",
+       "nota": 5,
+       "avaliacoes": 762
+      },
+      {
+       "nome": "ABO Sorocaba - Clínica Odontológica e Cursos Profissionalizantes",
+       "nota": 4.7,
+       "avaliacoes": 705
+      },
+      {
+       "nome": "Lodonto Sorocaba - Unidade Trujilo",
+       "nota": 4.2,
+       "avaliacoes": 143
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "7 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Jardim Paulistano",
+     "clinicas": 7,
+     "avaliacoes_somadas": 839,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Oral Unic Implantes Sorocaba",
+       "nota": 4.7,
+       "avaliacoes": 688
+      },
+      {
+       "nome": "COES - Centro de Odontologia Especializada de Sorocaba | Dentistas Especializados",
+       "nota": 4.4,
+       "avaliacoes": 46
+      },
+      {
+       "nome": "Instituto Dilene Matielli | Clínica Odontológica em Sorocaba",
+       "nota": 4.9,
+       "avaliacoes": 40
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "7 clínicas varridas, e a rede não está aqui"
+    }
+   ],
+   "manchete": "42 bairros medidos · a rede está em 3 deles",
+   "leitura": "O bairro com mais clínicas é Centro, com 35 clínicas varridas, e a rede está lá.",
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "media",
+    "medido": true,
+    "amostra": 143,
+    "janela_dias": null,
+    "medicoes": 1,
+    "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
+    "procedencia": "medido em 143 clínicas varridas, 1 medição"
    }
   },
   {
