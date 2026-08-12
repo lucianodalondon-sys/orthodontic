@@ -687,3 +687,39 @@ número medido é o que destrói a confiança no produto inteiro.
 `procedencia` é frase pronta, para pé de bloco. `sem_medicao` significa
 "não perguntamos" — diferente de zero, que significa "perguntamos e não
 há". A tela precisa distinguir os dois.
+
+## 10 · O ESTADO DA CONFERÊNCIA (medido no casco entregue)
+
+Conferi o zip 3 campo a campo contra o payload. **Não refaça o que já
+está pronto:**
+
+| item | estado |
+|---|---|
+| 7.1 · IBM Plex Mono empacotado | ✅ feito, zero pedido externo |
+| 7.3 · arquivos velhos apagados | ✅ feito, nenhum plano de cidade sobrando |
+| 7.4 · `abertura` vinda do dado | ✅ feito |
+| 8.1 · escala de tipo em 6 degraus | ✅ 11 · 13 · 15 · 20 · 34 · 44 |
+| 8.3 · três raios | ✅ 6 · 14 · 999 |
+| 8.4 · `:active`, hover gating, `@starting-style` | ✅ feito |
+| 8.5 · foco visível | ✅ de 2 para 8 |
+| `estudos_sem_linha_oficial` | ✅ lido |
+
+**O que falta, em ordem de importância:**
+
+1. **Os capítulos da seção 9** — `jornada`, `acoes`, `oferta`,
+   `oferta_da_cidade`, `imprensa`, `ritmo_de_publicacao` e o carimbo
+   `confianca`. Nenhum deles é lido hoje. É a maior parte do trabalho, e
+   é onde está a inteligência nova.
+2. **8.2 · as bordas** — continuam 23 contra 8 sombras. Era o único item
+   do acabamento que não andou: painel ainda é caixa contornada.
+3. **7.2 · rota desconhecida** — `#qualquercoisa` ainda abre a moldura
+   vazia; mande para o Painel de Controle.
+4. **As duas datas do índice**, campo novo: `clinicas_indice.json` agora
+   traz `cadastro_lido_em` (a lista do site, lida todo dia) e
+   `fichas_medidas_em` (a varredura do Google, que custa cota e roda de
+   vez em quando). **Elas são diferentes de propósito.** Cada unidade
+   traz `ficha_medida_em`; quando for null, nota e avaliações não foram
+   medidas para aquela unidade — apague o campo, não escreva zero.
+   Mostre as duas datas no cabeçalho da tela de Clínicas: foi a
+   divergência entre elas que fez o portal dizer 374 numa tela e 373
+   noutra.
