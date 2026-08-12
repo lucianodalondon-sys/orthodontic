@@ -36,7 +36,23 @@
     "prazo": "7 dias",
     "dono": "franqueado",
     "custo": "sem custo de mídia",
-    "por_causa_de": "posicao"
+    "por_causa_de": "posicao",
+    "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": null,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "scripts/fila.py",
+      "a_favor": [
+        "9º lugar de 14 clínicas medidas na praça",
+        "nota 4.6 contra mediana 4.9 das 14 clínicas medidas na praça"
+      ],
+      "contra": [],
+      "o_que_aumentaria": "o resultado medido na coleta seguinte (dados/serie/acoes.jsonl)",
+      "procedencia": "sem amostra declarada"
+    }
   },
   "gatilhos": [
     {
@@ -490,7 +506,20 @@
       }
     ],
     "invisivel": false,
-    "frase_do_topo": "Esta loja aparece em **3 das 140 buscas** que testamos na cidade."
+    "frase_do_topo": "Esta loja aparece em **3 das 140 buscas** que testamos na cidade.",
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 140,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/portas.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+      "procedencia": "medido em 140 buscas testadas, 1 medição"
+    }
   },
   "jornada": {
     "local_id": "ortho_contagem",
@@ -818,7 +847,20 @@
     ],
     "manchete": "A dor pública desta unidade aparece em atendimento clínico — 19 avaliações de 1 ou 2 estrelas de 57 que falam desse momento.",
     "quem_resolve": "clínica",
-    "e_clinico": true
+    "e_clinico": true,
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "alta",
+      "medido": true,
+      "amostra": 621,
+      "janela_dias": 2,
+      "medicoes": 2,
+      "fonte": "dados/serie/reviews.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "mais avaliações com texto nesta loja",
+      "procedencia": "medido em 621 avaliações, 2 medições, 2 dias de janela"
+    }
   },
   "acoes": {
     "arcos": [

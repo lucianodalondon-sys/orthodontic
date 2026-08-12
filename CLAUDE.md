@@ -63,6 +63,33 @@ script cobra. Quando os dois divergirem, o script é a verdade.
   concorrente. O paciente que digita "dentista" é quem marca a avaliação e
   sai com aparelho. As duas coisas convivem e não podem ser fundidas.
 
+- **FATO, INFERÊNCIA E RECOMENDAÇÃO NÃO PODEM PARECER A MESMA COISA.**
+  `cruzamento.confianca()` carimba toda leitura com natureza, grau,
+  amostra, janela, medições e procedência pronta. O portal já escreveu,
+  no mesmo tamanho e na mesma cor, "não recebe avaliação há 26 dias"
+  (medido), "a rotina de pedir avaliação parou" (deduzido) e "retome o
+  pedido" (opinião). `medido: false` é diferente de amostra zero: um é
+  "não perguntamos", o outro é "perguntamos e não há".
+- **O CICLO DA AÇÃO É O ÚNICO ATIVO QUE NÃO SE COPIA.** Qualquer um
+  coleta o Google; ninguém tem o que a rede fez depois.
+  `dados/serie/acoes.jsonl` guarda um arco por (loja, gatilho) com
+  métrica antes, ação recomendada, métrica depois e veredito — e o
+  veredito sai de margem declarada por métrica, nunca de opinião. Ele
+  NÃO prova causa: não há grupo de controle e ninguém de dentro confirma
+  execução.
+- **TEMA NÃO É MOMENTO.** 17.358 avaliações falam de "atendimento", e
+  atendimento na recepção, na cadeira e no telefone são três problemas de
+  três donos diferentes. `jornada_do_paciente.py` classifica nos onze
+  momentos, POR LOJA. O sentimento sai da NOTA, que é medida — ler
+  sentimento do texto seria inferência publicada como fato. E as duas
+  lojas de Londrina têm a mesma dor: contato.
+- **CONTAR ANÚNCIO NÃO É LER A OFERTA.** `a_oferta_do_rival.py` lê o
+  texto e diz qual é a guerra comercial da cidade e qual posição está
+  vaga. Cuidado com palavra banal: "agora" e "hoje" ficaram fora do eixo
+  de urgência porque "agende agora" inflou Londrina para 80%.
+- **DATA DE RSS NÃO É ISO.** A imprensa vem como
+  `Fri, 11 Oct 2024 07:00:00 GMT`; ler os dez primeiros caracteres fez as
+  treze cidades dizerem "0 matérias em 30 dias" no dia seguinte à coleta.
 - **Nada de dado interno, e isso é permanente.** O portal é feito
   **inteiramente com informação externa**. Não temos CRM, contrato,
   faturamento, lead, nem o franqueado ao telefone — e não vamos ter. Campo
@@ -83,6 +110,10 @@ python3 scripts/timeline_da_loja.py --salvar      # a vida de cada loja
 python3 scripts/onde_cada_loja_aparece.py --salvar        # presença POR LOJA
 python3 scripts/plano_do_franqueado.py --todas --salvar --md   # 1 por local_id
 python3 scripts/quem_anuncia_aparelho.py --salvar # quem compra mídia de aparelho
+python3 scripts/jornada_do_paciente.py --salvar   # onde a loja dói
+python3 scripts/a_oferta_do_rival.py --salvar     # o que o rival vende
+python3 scripts/o_que_a_cidade_publica.py --salvar
+python3 scripts/livro_de_acoes.py --salvar        # o ciclo, antes e depois
 python3 scripts/build_portal.py
 ```
 

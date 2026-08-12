@@ -41,7 +41,24 @@
     "prazo": "14 dias",
     "dono": "franqueado",
     "custo": "sem custo de mídia",
-    "por_causa_de": "parada"
+    "por_causa_de": "parada",
+    "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": null,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "scripts/fila.py",
+      "a_favor": [
+        "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 0.8 avaliações/mês",
+        "23º lugar de 24 clínicas medidas na praça",
+        "nota 3.8 contra mediana 5.0 das 24 clínicas medidas na praça"
+      ],
+      "contra": [],
+      "o_que_aumentaria": "o resultado medido na coleta seguinte (dados/serie/acoes.jsonl)",
+      "procedencia": "sem amostra declarada"
+    }
   },
   "gatilhos": [
     {
@@ -285,7 +302,20 @@
       }
     ],
     "invisivel": false,
-    "frase_do_topo": "Esta loja aparece em **4 das 176 buscas** que testamos na cidade."
+    "frase_do_topo": "Esta loja aparece em **4 das 176 buscas** que testamos na cidade.",
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 176,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/portas.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+      "procedencia": "medido em 176 buscas testadas, 1 medição"
+    }
   },
   "jornada": {
     "local_id": "ortho_centro_ldn",
@@ -567,7 +597,20 @@
     ],
     "manchete": "A dor pública desta unidade aparece em contato — 8 avaliações de 1 ou 2 estrelas de 10 que falam desse momento.",
     "quem_resolve": "recepção",
-    "e_clinico": false
+    "e_clinico": false,
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "alta",
+      "medido": true,
+      "amostra": 59,
+      "janela_dias": 3,
+      "medicoes": 2,
+      "fonte": "dados/serie/reviews.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "mais avaliações com texto nesta loja",
+      "procedencia": "medido em 59 avaliações, 2 medições, 3 dias de janela"
+    }
   },
   "acoes": {
     "arcos": [

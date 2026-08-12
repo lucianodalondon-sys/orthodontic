@@ -17,6 +17,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import datetime as dt
 from collections import defaultdict, Counter
 from cruzamento import conta          # número e nome sempre concordando
+from cruzamento import confianca      # fato, inferência, hipótese, recomendação
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 SERIE, CONT, IDENT, OUT = (RAIZ/"dados"/x for x in ("serie","conteudo","identidade","portal"))
@@ -1127,7 +1128,14 @@ def main():
             "rotulo": l.get("rotulo"), "unidade": l.get("unidade"),
             "cabecalho": l.get("cabecalho"),
             "faixa": fl.get("faixa"), "urgencia": fl.get("urgencia"),
-            "tarefa": fl.get("tarefa"), "acao": fl.get("acao"),
+            "tarefa": fl.get("tarefa"),
+            "acao": (dict(fl["acao"], confianca=confianca(
+                "recomendacao",
+                fonte="scripts/fila.py",
+                a_favor=[g.get("fato") for g in (fl.get("gatilhos") or [])][:3],
+                o_que_aumentaria="o resultado medido na coleta seguinte "
+                                 "(dados/serie/acoes.jsonl)"))
+                     if fl.get("acao") else None),
             "gatilhos": fl.get("gatilhos") or [],
             "quem_avanca": fl.get("quem_avanca"),
             "o_que_mudou": _md_por.get(lid),
@@ -1142,9 +1150,23 @@ def main():
                       "fora_total": len(rv.get("rivais_fora") or []),
                       "sem_comparacao_porque": rv.get("sem_comparacao_porque")},
             # a presença na busca É DESTA LOJA, não a média da cidade
-            "presenca_na_busca": _pres_por.get(lid),
+            "presenca_na_busca": (dict(_pres_por[lid], confianca=confianca(
+                "fato",
+                amostra=_pres_por[lid].get("de"),
+                unidade_amostra=("busca testada", "buscas testadas"),
+                medicoes=1,
+                fonte="dados/serie/portas.jsonl",
+                o_que_aumentaria="repetir a varredura de buscas noutra data"))
+                if lid in _pres_por else None),
             # em QUE MOMENTO da jornada esta loja dói — capítulo, não tela
-            "jornada": _jor_por.get(lid),
+            "jornada": (dict(_jor_por[lid], confianca=confianca(
+                "fato",
+                amostra=_jor_por[lid].get("com_texto"),
+                medicoes=_hist.get("medicoes"),
+                janela_dias=_hist.get("dias"),
+                fonte="dados/serie/reviews.jsonl",
+                o_que_aumentaria="mais avaliações com texto nesta loja"))
+                if lid in _jor_por else None),
             "acoes": {"arcos": _ac_por.get(lid, []),
                       "total": len(_ac_por.get(lid, [])),
                       "aviso": _ac.get("aviso_de_juventude")},

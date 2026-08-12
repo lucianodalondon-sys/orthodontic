@@ -392,6 +392,79 @@ def _e20(b, p):
                   else "medida · sem curva publicável (não refazer)")
 
 
+def _e21(b, p):
+    """A jornada: em que momento a unidade dói.
+
+    Cobrado porque tema não diz onde agir — 17.358 avaliações falam de
+    "atendimento", e atendimento na recepção, na cadeira e no telefone
+    são três problemas de três donos diferentes.
+    """
+    a = RAIZ/"dados"/"portal"/"jornada.json"
+    if not a.exists():
+        return False, "a jornada nunca foi classificada"
+    d = json.loads(a.read_text(encoding="utf-8"))
+    tem = {x["local_id"] for x in d.get("lojas", [])}
+    ident = json.loads((IDENT/f"{p}.json").read_text(encoding="utf-8"))
+    lojas = [l for l in ident.get("locais", []) if l.get("papel") == "proprio"]
+    faltam = [l["local_id"] for l in lojas if l["local_id"] not in tem]
+    if faltam:
+        return False, "sem jornada em " + ", ".join(faltam)
+    meus = {l["local_id"] for l in lojas}
+    com = [x for x in d["lojas"] if x["local_id"] in meus
+           and x.get("quem_resolve")]
+    return True, (conta(len(lojas), "loja")
+                  + (f" · {len(com)} com dor concentrada" if com
+                     else " · nenhuma com dor concentrada"))
+
+
+def _e22(b, p):
+    """O que o rival VENDE, não quantos anúncios ele tem."""
+    a = RAIZ/"dados"/"portal"/"oferta.json"
+    if not a.exists():
+        return False, "nunca lemos o texto dos anúncios"
+    d = json.loads(a.read_text(encoding="utf-8"))
+    x = next((c for c in d.get("pracas", []) if c.get("praca_id") == p), None)
+    if x is None:
+        return False, "cidade fora da leitura de oferta"
+    if x.get("amostra_curta"):
+        return True, (conta(x["anuncios_de_aparelho"], "anúncio de aparelho",
+                            "anúncios de aparelho") + " — amostra curta, "
+                      "sem tese")
+    return True, x["tese"][:64]
+
+
+def _e23(b, p):
+    """Imprensa e ritmo de publicação como conteúdo, não como contador."""
+    a = RAIZ/"dados"/"portal"/"o_que_a_cidade_publica.json"
+    if not a.exists():
+        return False, "imprensa e posts seguem só como contador"
+    d = json.loads(a.read_text(encoding="utf-8"))
+    x = next((c for c in d.get("pracas", []) if c.get("praca_id") == p), None)
+    if x is None:
+        return False, "cidade fora da leitura"
+    i, r = x["imprensa"], x["ritmo"]
+    return True, (conta(i["recentes_30d"], "matéria", "matérias")
+                  + " em 30 dias · "
+                  + conta(r["vivos"], "perfil vivo", "perfis vivos") + ", "
+                  + conta(r["parados"], "parado"))
+
+
+def _e24(b, p):
+    """O ciclo: o problema virou arco com métrica antes e depois."""
+    a = RAIZ/"dados"/"portal"/"acoes.json"
+    if not a.exists():
+        return False, "o livro de ações não existe"
+    d = json.loads(a.read_text(encoding="utf-8"))
+    meus = [x for x in d.get("arcos", []) if x.get("praca_id") == p]
+    if not meus:
+        return True, "nenhum problema aberto nesta praça"
+    fechados = [x for x in meus if x["veredito"] in
+                ("resolvido", "melhorou", "piorou", "sem_mudanca")]
+    return True, (conta(len(meus), "arco") + " no livro · "
+                  + (f"{len(fechados)} já com veredito" if fechados
+                     else "nenhum com 21 dias ainda"))
+
+
 ETAPAS = [
     (0,  "A praça definida",          "humano", None,          _e0,
      "editar dados/identidade/<praça>.json — rótulo com UF na frente"),
@@ -435,6 +508,14 @@ ETAPAS = [
     (20, "A curva de procura",        "auto",   None,          _e20,
      "python3 coleta/coletores/sazonalidade.py --todas   "
      "(JÁ RODOU: 12 UFs, nenhuma publicável — não refaça)"),
+    (21, "A jornada do paciente",     "auto",   "rede",        _e21,
+     "python3 scripts/jornada_do_paciente.py --salvar"),
+    (22, "O que o rival vende",        "auto",   None,          _e22,
+     "python3 scripts/a_oferta_do_rival.py --salvar"),
+    (23, "Imprensa e ritmo da cidade", "auto",   None,          _e23,
+     "python3 scripts/o_que_a_cidade_publica.py --salvar"),
+    (24, "O ciclo da ação",            "auto",   "rede",        _e24,
+     "python3 scripts/livro_de_acoes.py --salvar"),
 ]
 
 

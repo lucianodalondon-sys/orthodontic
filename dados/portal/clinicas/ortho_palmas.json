@@ -36,7 +36,22 @@
     "prazo": "30 dias",
     "dono": "franqueado",
     "custo": "verba de mídia",
-    "por_causa_de": "silencio"
+    "por_causa_de": "silencio",
+    "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": null,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "scripts/fila.py",
+      "a_favor": [
+        "22 anúncios no ar de 16 anunciantes, e nenhum é da rede"
+      ],
+      "contra": [],
+      "o_que_aumentaria": "o resultado medido na coleta seguinte (dados/serie/acoes.jsonl)",
+      "procedencia": "sem amostra declarada"
+    }
   },
   "gatilhos": [
     {
@@ -245,7 +260,20 @@
       }
     ],
     "invisivel": false,
-    "frase_do_topo": "Esta loja aparece em **3 das 120 buscas** que testamos na cidade."
+    "frase_do_topo": "Esta loja aparece em **3 das 120 buscas** que testamos na cidade.",
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 120,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/portas.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+      "procedencia": "medido em 120 buscas testadas, 1 medição"
+    }
   },
   "jornada": {
     "local_id": "ortho_palmas",
@@ -423,7 +451,20 @@
     ],
     "manchete": "Nenhum momento da jornada concentra dor com amostra suficiente para virar manchete.",
     "quem_resolve": null,
-    "e_clinico": null
+    "e_clinico": null,
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "alta",
+      "medido": true,
+      "amostra": 227,
+      "janela_dias": 2,
+      "medicoes": 2,
+      "fonte": "dados/serie/reviews.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "mais avaliações com texto nesta loja",
+      "procedencia": "medido em 227 avaliações, 2 medições, 2 dias de janela"
+    }
   },
   "acoes": {
     "arcos": [

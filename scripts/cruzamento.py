@@ -195,6 +195,79 @@ def conta(n, singular, plural=None):
     return f"{n} {singular if abs(n) == 1 else (plural or singular + 's')}"
 
 
+# ---------------------------------------------------------------- CONFIANÇA
+#
+# TRÊS COISAS QUE NÃO PODEM PARECER A MESMA NA TELA.
+#
+# O portal já escreveu, no mesmo tamanho e na mesma cor: "a unidade não
+# recebe avaliação há 26 dias" (medido), "a rotina de pedir avaliação
+# parou" (deduzido) e "retome o pedido ao fim do atendimento" (sugerido).
+# A primeira é verificável, a segunda é uma explicação entre várias
+# possíveis, e a terceira é opinião. Publicar as três iguais é o jeito
+# mais rápido de perder a credibilidade do produto inteiro — e a rede não
+# tem como nos corrigir, porque nenhum dado interno entra aqui.
+#
+# `confianca()` carimba qualquer leitura com o que a sustenta. A tela
+# desenha cada natureza de um jeito; o build nunca deixa passar nada sem
+# carimbo.
+NATUREZAS = ("fato", "inferencia", "hipotese", "recomendacao")
+
+
+def confianca(natureza, *, amostra=None, unidade_amostra=("avaliação",
+                                                          "avaliações"),
+              janela_dias=None, medicoes=None,
+              fonte=None, a_favor=None, contra=None, o_que_aumentaria=None,
+              medido=True):
+    """O carimbo de credibilidade de uma leitura.
+
+    `medido=False` é diferente de amostra zero: um é "não perguntamos",
+    o outro é "perguntamos e não há". A tela precisa dizer qual dos dois.
+
+    O grau sai da própria evidência, não do gosto de quem escreve:
+
+        alta    fato medido, com amostra e mais de uma medição
+        média   fato com amostra curta, ou inferência bem sustentada
+        baixa   hipótese, ou qualquer coisa com uma medição só
+    """
+    if natureza not in NATUREZAS:
+        raise ValueError(f"natureza desconhecida: {natureza!r} "
+                         f"— use uma de {NATUREZAS}")
+    if not medido:
+        grau = "sem_medicao"
+    elif natureza == "fato":
+        grau = ("alta" if (amostra or 0) >= 30 and (medicoes or 0) >= 2
+                else "media" if (amostra or 0) >= 8
+                else "baixa")
+    elif natureza == "inferencia":
+        grau = ("media" if (amostra or 0) >= 30 and (medicoes or 0) >= 2
+                else "baixa")
+    else:                       # hipótese e recomendação nunca são altas
+        grau = "baixa"
+    return {
+        "natureza": natureza,
+        "confianca": grau,
+        "medido": bool(medido),
+        "amostra": amostra,
+        "janela_dias": janela_dias,
+        "medicoes": medicoes,
+        "fonte": fonte,
+        "a_favor": a_favor or [],
+        "contra": contra or [],
+        "o_que_aumentaria": o_que_aumentaria,
+        # a frase de rodapé sai pronta: o casco não redige procedência
+        "procedencia": (
+            "não medido" if not medido else
+            # a unidade da amostra vem de fora: 176 BUSCAS não são 176
+            # avaliações, e a procedência escrita errada mina justamente a
+            # confiança que este carimbo existe para sustentar
+            ("medido em " + conta(amostra, unidade_amostra[0],
+                                  unidade_amostra[1])
+             if amostra else "sem amostra declarada")
+            + (f", {conta(medicoes, 'medição', 'medições')}" if medicoes else "")
+            + (f", {conta(janela_dias, 'dia')} de janela" if janela_dias else "")),
+    }
+
+
 def selo(m):
     if m is None:
         return "?"

@@ -628,3 +628,62 @@ identidade nova.
 não há `ease-in`, só se anima cor e transform (nada de `height`, `width`,
 `padding` — essas passam por layout e paint e derrubam quadro), e o
 `.15s ease` das mudanças de cor está na curva correta.
+
+## 9 · OS CAPÍTULOS NOVOS (payload já pronto)
+
+Nenhum destes vira item de menu. São **capítulos** — a regra continua:
+sete áreas profundas, não vinte e cinco rasas.
+
+### 9.1 · Na clínica
+
+**`jornada`** — em que momento a unidade dói, nos onze estágios que o
+paciente vive. Traz `manchete` pronta, `quem_resolve` e `e_clinico`
+(booleano que responde "é problema de cadeira ou de balcão?"). Cada
+estágio tem `frase` pronta, `pct_dor`, `amostra_curta` e — quando não há
+nada — `medido: false` com `porque_vazio` escrito. Desenhe como uma
+linha do tempo horizontal, com a dor em vermelho sobre cada estágio.
+**As duas lojas de Londrina têm a mesma dor: contato.** Isso precisa
+saltar da tela.
+
+**`acoes`** — o ciclo de cada problema: `problema`, `acao_recomendada`,
+`antes`, `depois`, `dias` e `veredito` (resolvido, melhorou,
+sem_mudanca, piorou, cedo_demais, aberto). Hoje todos os 16 arcos estão
+em `cedo_demais`, e o payload traz `aviso` explicando por quê — mostre o
+aviso, não esconda a tabela vazia.
+
+**`oferta_da_cidade`** — vem com `e_da_cidade: true`, escreva assim.
+
+### 9.2 · Na praça
+
+**`oferta`** — `tese` ("a disputa desta cidade é por escassez — 24 dos
+45 anúncios de aparelho medidos falam disso") e `posicao_vaga` ("ninguém
+está falando de sem entrada"). Os doze eixos vêm com `o_que_significa`,
+que é a razão de negócio de cada um. A posição vaga merece destaque:
+é ali que o franqueado tem chance sem brigar de frente.
+
+**`imprensa`** — manchetes com data, veículo e link. Era um contador.
+
+**`ritmo_de_publicacao`** — quem publica e há quantos dias parou.
+Perfil `parado: true` aparece apagado.
+
+### 9.3 · O carimbo de confiança, em todo lugar
+
+Vários blocos agora trazem `confianca`:
+
+```json
+{"natureza": "fato|inferencia|hipotese|recomendacao",
+ "confianca": "alta|media|baixa|sem_medicao",
+ "medido": true, "amostra": 64, "medicoes": 1, "janela_dias": 26,
+ "procedencia": "medido em 64 buscas testadas, 1 medição",
+ "o_que_aumentaria": "repetir a varredura noutra data"}
+```
+
+**Desenhe cada natureza diferente.** Fato pode ser número grande e
+sólido. Inferência precisa de marca visual que a separe do fato —
+mesmo tamanho, cor mais fria, ou um rótulo em mono. Recomendação nunca
+com cara de medição: ela é conselho, e conselho errado com aparência de
+número medido é o que destrói a confiança no produto inteiro.
+
+`procedencia` é frase pronta, para pé de bloco. `sem_medicao` significa
+"não perguntamos" — diferente de zero, que significa "perguntamos e não
+há". A tela precisa distinguir os dois.
