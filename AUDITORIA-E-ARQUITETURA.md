@@ -192,8 +192,12 @@ vez de recalcular.
 
 **Técnicos:**
 
-5. **A COLETA ESTÁ PARADA POR FALTA DE CRÉDITO — verificado em 12/ago.**
-   `python3 coleta/tokens.py` responde **0 de 12 credenciais com cota**.
+5. ~~A coleta está parada por falta de crédito~~ **RESOLVIDO em 12/ago:**
+   cinco credenciais novas, US$ 25 de cota. `coleta/tokens.py` responde
+   5 de 17 com cota — as 12 antigas seguem mortas e podem sair do
+   arquivo. A cota é finita e de plano gratuito: a varredura profunda
+   (avaliações via Apify) é o que consome, e a ponta semanal não usa
+   Apify nenhum. O histórico do problema:
    As contas são plano gratuito de US$ 5/mês; a coleta de sazonalidade
    nas 12 UFs consumiu o resto. Toda fonte que depende da Apify
    (avaliações, Instagram, Meta Ads, Google Ads, Reclame Aqui, canais)
@@ -387,7 +391,17 @@ do §9 saíram. Fica registrado para a próxima sessão não refazer.
 e a Apify está sem crédito; comparação entre redes rivais (P2) idem;
 INEP e CNES continuam sem decisão associada.
 
-**O bloqueio que apareceu:** `coleta/tokens.py` responde 0 de 12
-credenciais com cota. Enquanto não entrar crédito, o portal continua
-inteiro mas parado — nenhuma leitura nova entra, e o "o que mudou" não
-muda. É a primeira coisa a resolver amanhã.
+**O bloqueio apareceu e foi resolvido no mesmo dia.** Entraram cinco
+credenciais (US$ 25). A coleta rodou e a rede já tinha mudado:
+
+- **Marechal Cândido Rondon/PR e Jaboticabal/SP abriram** — saíram de
+  "em implantação" e passaram a constar com nome próprio.
+- **Águas Claras/DF sumiu da lista**, sem virar unidade aberta.
+- São **373 unidades, 350 abertas, 303 cidades** (eram 374 e 348).
+- Cinco lojas ganharam avaliação nova na ponta.
+
+E a coleta fresca expôs um defeito de coerência: o índice das clínicas
+era montado sobre a varredura de fichas (que custa cota e é de anteontem)
+enquanto o resto do portal usava a lista do site (grátis, de hoje) — 374
+numa tela, 373 noutra. Agora o cadastro manda e as duas datas vão
+declaradas.
