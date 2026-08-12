@@ -49,8 +49,21 @@ def monta():
         ult[r["local_id"]] = r
 
     portas = jsonl("portas")
-    corte = max((r["snapshot_date"] for r in portas), default=None)
-    portas = [r for r in portas if r["snapshot_date"] == corte]
+    # É A ÚLTIMA MEDIÇÃO DE CADA PRAÇA, NÃO A ÚLTIMA DO ARQUIVO. Cortar
+    # pela data global apaga toda praça que não foi medida hoje: ao abrir
+    # as cinco cidades novas, as dez lojas antigas sumiram da presença —
+    # Mafra inclusa — e o portal passou a dizer "sem medição" para quem
+    # tinha medição. É o mesmo defeito que a captação já teve, quando
+    # escreveu só para 1 das 13 praças.
+    por_praca = {}
+    for r in portas:
+        d = r.get("snapshot_date")
+        p_ = r.get("praca_id")
+        if d and (p_ not in por_praca or d > por_praca[p_]):
+            por_praca[p_] = d
+    portas = [r for r in portas
+              if r.get("snapshot_date") == por_praca.get(r.get("praca_id"))]
+    corte = max(por_praca.values(), default=None)
     por_praca = defaultdict(list)
     for r in portas:
         por_praca[r.get("praca_id")].append(r)

@@ -183,7 +183,59 @@
     "fora_total": 11,
     "sem_comparacao_porque": "nenhum rival de APARELHO com amostra suficiente na praça — as clínicas medidas aqui são de outro produto"
   },
-  "presenca_na_busca": null,
+  "presenca_na_busca": {
+    "local_id": "ortho_mafra",
+    "praca_id": "mafra",
+    "rotulo": "SC · Mafra",
+    "unidade": "OrthoDontic Mafra",
+    "avaliacoes_da_ficha": 155,
+    "aparece_em": 5,
+    "de": 64,
+    "pct": 8,
+    "melhor_posicao": 2,
+    "frases_onde_aparece": [
+      {
+        "frase": "dentista rio mafra",
+        "posicao": 2,
+        "intencao": "BAIRRO"
+      },
+      {
+        "frase": "dentista em mafra",
+        "posicao": 2,
+        "intencao": "GENÉRICO"
+      },
+      {
+        "frase": "melhor dentista em mafra",
+        "posicao": 2,
+        "intencao": "REPUTAÇÃO"
+      },
+      {
+        "frase": "dentista infantil em mafra",
+        "posicao": 4,
+        "intencao": "CRIANÇA"
+      },
+      {
+        "frase": "dentista infantil mafra",
+        "posicao": 5,
+        "intencao": "CRIANÇA"
+      }
+    ],
+    "invisivel": false,
+    "frase_do_topo": "Esta loja aparece em **5 das 64 buscas** que testamos na cidade.",
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 64,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/portas.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+      "procedencia": "medido em 64 buscas testadas, 1 medição"
+    }
+  },
   "jornada": {
     "local_id": "ortho_mafra",
     "unidade": "OrthoDontic Mafra",

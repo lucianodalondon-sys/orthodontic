@@ -2,7 +2,7 @@
 
 **09/08/2026**
 
-> ## A sua clínica aparece em 5 das 20 buscas que testamos na sua cidade.
+> ## A sua clínica aparece em 4 das 176 buscas que testamos na sua cidade.
 
 São **5 tarefas**, e **5 delas custam R$ 0**. A ordem é de propósito: o que é grátis vem antes do que custa.
 

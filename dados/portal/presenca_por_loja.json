@@ -3,10 +3,16 @@
  "como_separa": "O mapa devolve o contador de avaliações de cada resultado, e o contador é a impressão digital da loja. Casando com a ficha, a aparição vira de uma unidade.",
  "o_que_nao_e": "Não é volume de busca. É em quantas das frases testadas a loja apareceu no mapa.",
  "corte": "2026-08-12",
- "lojas_medidas": 22,
- "lojas_invisiveis": 2,
- "manchete": "2 lojas não aparecem em nenhuma busca da própria cidade.",
+ "lojas_medidas": 32,
+ "lojas_invisiveis": 3,
+ "manchete": "3 lojas não aparecem em nenhuma busca da própria cidade.",
  "avisos": [
+  {
+   "praca_id": "feira",
+   "rotulo": "BA · Feira de Santana",
+   "aparicoes_sem_dono": 1,
+   "por_que": "resultado com nome OrthoDontic cujo contador de avaliações não casa com nenhuma ficha da praça — pode ser loja fora da nossa lista, ou ficha lida em outro dia"
+  },
   {
    "praca_id": "goiania",
    "rotulo": "GO · Goiânia",
@@ -15,6 +21,20 @@
   }
  ],
  "lojas": [
+  {
+   "local_id": "ortho_cba_dom_bosco",
+   "praca_id": "cuiaba",
+   "rotulo": "MT · Cuiabá",
+   "unidade": "OrthoDontic Cuiabá Dom Bosco (Centro Sul)",
+   "avaliacoes_da_ficha": 71,
+   "aparece_em": 0,
+   "de": 151,
+   "pct": 0,
+   "melhor_posicao": null,
+   "frases_onde_aparece": [],
+   "invisivel": true,
+   "frase_do_topo": "Esta loja **não aparece em nenhuma** das 151 buscas que testamos na cidade."
+  },
   {
    "local_id": "ortho_cwb_portao",
    "praca_id": "curitiba",
@@ -82,6 +102,26 @@
    "frases_onde_aparece": [],
    "invisivel": true,
    "frase_do_topo": "Esta loja **não aparece em nenhuma** das 196 buscas que testamos na cidade."
+  },
+  {
+   "local_id": "ortho_cba_fernando_correa",
+   "praca_id": "cuiaba",
+   "rotulo": "MT · Cuiabá",
+   "unidade": "OrthoDontic Cuiabá Fernando Corrêa",
+   "avaliacoes_da_ficha": 78,
+   "aparece_em": 1,
+   "de": 151,
+   "pct": 1,
+   "melhor_posicao": 3,
+   "frases_onde_aparece": [
+    {
+     "frase": "aparelho ortodôntico cuiaba",
+     "posicao": 3,
+     "intencao": "GENÉRICO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **1 das 151 buscas** que testamos na cidade."
   },
   {
    "local_id": "ortho_cwb_centro_3",
@@ -234,6 +274,66 @@
    "frase_do_topo": "Esta loja aparece em **2 das 195 buscas** que testamos na cidade."
   },
   {
+   "local_id": "ortho_contagem",
+   "praca_id": "contagem",
+   "rotulo": "MG · Contagem",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": 857,
+   "aparece_em": 3,
+   "de": 140,
+   "pct": 2,
+   "melhor_posicao": 1,
+   "frases_onde_aparece": [
+    {
+     "frase": "aparelho ortodôntico contagem",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista contagem",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista em contagem",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **3 das 140 buscas** que testamos na cidade."
+  },
+  {
+   "local_id": "ortho_fsa",
+   "praca_id": "feira",
+   "rotulo": "BA · Feira de Santana",
+   "unidade": "OrthoDontic Feira de Santana",
+   "avaliacoes_da_ficha": 170,
+   "aparece_em": 3,
+   "de": 123,
+   "pct": 2,
+   "melhor_posicao": 1,
+   "frases_onde_aparece": [
+    {
+     "frase": "ortodontista feira de santana",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "aparelho ortodôntico feira de santana",
+     "posicao": 2,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista em feira de santana",
+     "posicao": 3,
+     "intencao": "GENÉRICO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **3 das 123 buscas** que testamos na cidade."
+  },
+  {
    "local_id": "ortho_joi_america",
    "praca_id": "joinville",
    "rotulo": "SC · Joinville",
@@ -264,6 +364,96 @@
    "frase_do_topo": "Esta loja aparece em **3 das 157 buscas** que testamos na cidade."
   },
   {
+   "local_id": "ortho_centro_ldn",
+   "praca_id": "londrina",
+   "rotulo": "PR · Londrina",
+   "unidade": "OrthoDontic Centro",
+   "avaliacoes_da_ficha": 77,
+   "aparece_em": 4,
+   "de": 176,
+   "pct": 2,
+   "melhor_posicao": 2,
+   "frases_onde_aparece": [
+    {
+     "frase": "aparelho ortodôntico londrina",
+     "posicao": 2,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "aparelho ortodôntico em londrina",
+     "posicao": 2,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista londrina",
+     "posicao": 3,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista em londrina",
+     "posicao": 4,
+     "intencao": "GENÉRICO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **4 das 176 buscas** que testamos na cidade."
+  },
+  {
+   "local_id": "ortho_palmas",
+   "praca_id": "palmas",
+   "rotulo": "TO · Palmas",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": 306,
+   "aparece_em": 3,
+   "de": 120,
+   "pct": 2,
+   "melhor_posicao": 1,
+   "frases_onde_aparece": [
+    {
+     "frase": "aparelho ortodôntico palmas",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista palmas",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista em palmas",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **3 das 120 buscas** que testamos na cidade."
+  },
+  {
+   "local_id": "ortho_pp",
+   "praca_id": "prudente",
+   "rotulo": "SP · Presidente Prudente",
+   "unidade": "OrthoDontic Presidente Prudente",
+   "avaliacoes_da_ficha": 592,
+   "aparece_em": 2,
+   "de": 106,
+   "pct": 2,
+   "melhor_posicao": 1,
+   "frases_onde_aparece": [
+    {
+     "frase": "ortodontista presidente prudente",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista em presidente prudente",
+     "posicao": 2,
+     "intencao": "GENÉRICO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **2 das 106 buscas** que testamos na cidade."
+  },
+  {
    "local_id": "ortho_soro_jardim_faculdade",
    "praca_id": "sorocaba",
    "rotulo": "SP · Sorocaba",
@@ -292,6 +482,41 @@
    ],
    "invisivel": false,
    "frase_do_topo": "Esta loja aparece em **3 das 195 buscas** que testamos na cidade."
+  },
+  {
+   "local_id": "ortho_cba_centro_norte",
+   "praca_id": "cuiaba",
+   "rotulo": "MT · Cuiabá",
+   "unidade": "OrthoDontic Cuiabá Centro Norte",
+   "avaliacoes_da_ficha": 1223,
+   "aparece_em": 4,
+   "de": 151,
+   "pct": 3,
+   "melhor_posicao": 1,
+   "frases_onde_aparece": [
+    {
+     "frase": "aparelho ortodôntico cuiaba",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista cuiabá",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista em cuiabá",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista em cuiaba",
+     "posicao": 2,
+     "intencao": "GENÉRICO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **4 das 151 buscas** que testamos na cidade."
   },
   {
    "local_id": "ortho_cwb_centro_2",
@@ -467,6 +692,46 @@
    ],
    "invisivel": false,
    "frase_do_topo": "Esta loja aparece em **4 das 157 buscas** que testamos na cidade."
+  },
+  {
+   "local_id": "ortho_souza_naves",
+   "praca_id": "londrina",
+   "rotulo": "PR · Londrina",
+   "unidade": "OrthoDontic Souza Naves",
+   "avaliacoes_da_ficha": 568,
+   "aparece_em": 5,
+   "de": 176,
+   "pct": 3,
+   "melhor_posicao": 1,
+   "frases_onde_aparece": [
+    {
+     "frase": "aparelho ortodôntico londrina",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "aparelho ortodôntico em londrina",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista londrina",
+     "posicao": 2,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista em londrina",
+     "posicao": 2,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "melhor ortodontista de londrina",
+     "posicao": 2,
+     "intencao": "REPUTAÇÃO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **5 das 176 buscas** que testamos na cidade."
   },
   {
    "local_id": "ortho_poa_centro_historico_2",
@@ -777,6 +1042,46 @@
    ],
    "invisivel": false,
    "frase_do_topo": "Esta loja aparece em **10 das 196 buscas** que testamos na cidade."
+  },
+  {
+   "local_id": "ortho_mafra",
+   "praca_id": "mafra",
+   "rotulo": "SC · Mafra",
+   "unidade": "OrthoDontic Mafra",
+   "avaliacoes_da_ficha": 155,
+   "aparece_em": 5,
+   "de": 64,
+   "pct": 8,
+   "melhor_posicao": 2,
+   "frases_onde_aparece": [
+    {
+     "frase": "dentista rio mafra",
+     "posicao": 2,
+     "intencao": "BAIRRO"
+    },
+    {
+     "frase": "dentista em mafra",
+     "posicao": 2,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "melhor dentista em mafra",
+     "posicao": 2,
+     "intencao": "REPUTAÇÃO"
+    },
+    {
+     "frase": "dentista infantil em mafra",
+     "posicao": 4,
+     "intencao": "CRIANÇA"
+    },
+    {
+     "frase": "dentista infantil mafra",
+     "posicao": 5,
+     "intencao": "CRIANÇA"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **5 das 64 buscas** que testamos na cidade."
   }
  ]
 }

@@ -291,7 +291,54 @@
     "fora_total": 17,
     "sem_comparacao_porque": null
   },
-  "presenca_na_busca": null,
+  "presenca_na_busca": {
+    "local_id": "ortho_cba_centro_norte",
+    "praca_id": "cuiaba",
+    "rotulo": "MT · Cuiabá",
+    "unidade": "OrthoDontic Cuiabá Centro Norte",
+    "avaliacoes_da_ficha": 1223,
+    "aparece_em": 4,
+    "de": 151,
+    "pct": 3,
+    "melhor_posicao": 1,
+    "frases_onde_aparece": [
+      {
+        "frase": "aparelho ortodôntico cuiaba",
+        "posicao": 1,
+        "intencao": "GENÉRICO"
+      },
+      {
+        "frase": "ortodontista cuiabá",
+        "posicao": 1,
+        "intencao": "GENÉRICO"
+      },
+      {
+        "frase": "ortodontista em cuiabá",
+        "posicao": 1,
+        "intencao": "GENÉRICO"
+      },
+      {
+        "frase": "ortodontista em cuiaba",
+        "posicao": 2,
+        "intencao": "GENÉRICO"
+      }
+    ],
+    "invisivel": false,
+    "frase_do_topo": "Esta loja aparece em **4 das 151 buscas** que testamos na cidade.",
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 151,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/portas.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+      "procedencia": "medido em 151 buscas testadas, 1 medição"
+    }
+  },
   "jornada": {
     "local_id": "ortho_cba_centro_norte",
     "unidade": "OrthoDontic Cuiabá Centro Norte",

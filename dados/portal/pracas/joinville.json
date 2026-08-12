@@ -90,7 +90,26 @@
       "fonte": "avaliação pública no Google"
     }
   ],
-  "planos_das_lojas": [],
+  "planos_das_lojas": [
+    {
+      "local_id": "ortho_joi_centro",
+      "unidade": "OrthoDontic Centro",
+      "rotulo": "SC · Joinville",
+      "arquivo": "planos/ortho_joi_centro"
+    },
+    {
+      "local_id": "ortho_joi_america",
+      "unidade": "OrthoDontic América",
+      "rotulo": "SC · Joinville",
+      "arquivo": "planos/ortho_joi_america"
+    },
+    {
+      "local_id": "ortho_joi_aventureiro",
+      "unidade": "OrthoDontic Aventureiro",
+      "rotulo": "SC · Joinville",
+      "arquivo": "planos/ortho_joi_aventureiro"
+    }
+  ],
   "oferta": {
     "praca_id": "joinville",
     "rotulo": "SC · Joinville",
@@ -1040,13 +1059,149 @@
     ]
   },
   "ritmo_de_publicacao": {
-    "medido": false,
-    "perfis": 0,
-    "vivos": 0,
-    "parados": 0,
-    "manchete": null,
-    "porque_vazio": "nenhum perfil medido nesta cidade",
-    "lista": []
+    "medido": true,
+    "perfis": 38,
+    "vivos": 27,
+    "parados": 11,
+    "manchete": "27 perfis publicando nos últimos 60 dias, 11 parados",
+    "porque_vazio": null,
+    "lista": [
+      {
+        "handle": "orthodontic.joinville",
+        "posts_medidos": 15,
+        "ultimo_post": "2026-08-12",
+        "dias_sem_publicar": 0,
+        "parado": false,
+        "curtidas_medianas": 1,
+        "frase": "15 posts medidos, último há 0 dias"
+      },
+      {
+        "handle": "alinefernandeshahn",
+        "posts_medidos": 38,
+        "ultimo_post": "2026-08-12",
+        "dias_sem_publicar": 0,
+        "parado": false,
+        "curtidas_medianas": 596,
+        "frase": "38 posts medidos, último há 0 dias"
+      },
+      {
+        "handle": "catolicasc",
+        "posts_medidos": 40,
+        "ultimo_post": "2026-08-12",
+        "dias_sem_publicar": 0,
+        "parado": false,
+        "curtidas_medianas": 199,
+        "frase": "40 posts medidos, último há 0 dias"
+      },
+      {
+        "handle": "vizinhao.atacarejo",
+        "posts_medidos": 30,
+        "ultimo_post": "2026-08-12",
+        "dias_sem_publicar": 0,
+        "parado": false,
+        "curtidas_medianas": 57,
+        "frase": "30 posts medidos, último há 0 dias"
+      },
+      {
+        "handle": "explorejlle",
+        "posts_medidos": 40,
+        "ultimo_post": "2026-08-12",
+        "dias_sem_publicar": 0,
+        "parado": false,
+        "curtidas_medianas": 3370,
+        "frase": "40 posts medidos, último há 0 dias"
+      },
+      {
+        "handle": "olajoinville",
+        "posts_medidos": 40,
+        "ultimo_post": "2026-08-12",
+        "dias_sem_publicar": 0,
+        "parado": false,
+        "curtidas_medianas": 320,
+        "frase": "40 posts medidos, último há 0 dias"
+      },
+      {
+        "handle": "rhbrasil.joinville",
+        "posts_medidos": 40,
+        "ultimo_post": "2026-08-12",
+        "dias_sem_publicar": 0,
+        "parado": false,
+        "curtidas_medianas": 7,
+        "frase": "40 posts medidos, último há 0 dias"
+      },
+      {
+        "handle": "prefeituradejoinvilleoficial",
+        "posts_medidos": 40,
+        "ultimo_post": "2026-08-12",
+        "dias_sem_publicar": 0,
+        "parado": false,
+        "curtidas_medianas": 377,
+        "frase": "40 posts medidos, último há 0 dias"
+      },
+      {
+        "handle": "spacomaeebebe",
+        "posts_medidos": 19,
+        "ultimo_post": "2026-08-11",
+        "dias_sem_publicar": 1,
+        "parado": false,
+        "curtidas_medianas": -1,
+        "frase": "19 posts medidos, último há 1 dia"
+      },
+      {
+        "handle": "unisociesc.joinville",
+        "posts_medidos": 13,
+        "ultimo_post": "2026-08-11",
+        "dias_sem_publicar": 1,
+        "parado": false,
+        "curtidas_medianas": -1,
+        "frase": "13 posts medidos, último há 1 dia"
+      },
+      {
+        "handle": "unisociesc",
+        "posts_medidos": 18,
+        "ultimo_post": "2026-08-11",
+        "dias_sem_publicar": 1,
+        "parado": false,
+        "curtidas_medianas": 38,
+        "frase": "18 posts medidos, último há 1 dia"
+      },
+      {
+        "handle": "karinasanyy",
+        "posts_medidos": 12,
+        "ultimo_post": "2026-08-09",
+        "dias_sem_publicar": 3,
+        "parado": false,
+        "curtidas_medianas": 310,
+        "frase": "12 posts medidos, último há 3 dias"
+      },
+      {
+        "handle": "pedunisociesc",
+        "posts_medidos": 1,
+        "ultimo_post": "2026-08-09",
+        "dias_sem_publicar": 3,
+        "parado": false,
+        "curtidas_medianas": 47,
+        "frase": "1 post medido, último há 3 dias"
+      },
+      {
+        "handle": "psi_unisociesc",
+        "posts_medidos": 2,
+        "ultimo_post": "2026-08-09",
+        "dias_sem_publicar": 3,
+        "parado": false,
+        "curtidas_medianas": 95,
+        "frase": "2 posts medidos, último há 3 dias"
+      },
+      {
+        "handle": "dra.veridiana.freitas",
+        "posts_medidos": 1,
+        "ultimo_post": "2026-08-07",
+        "dias_sem_publicar": 5,
+        "parado": false,
+        "curtidas_medianas": 41,
+        "frase": "1 post medido, último há 5 dias"
+      }
+    ]
   },
   "placar": [
     {

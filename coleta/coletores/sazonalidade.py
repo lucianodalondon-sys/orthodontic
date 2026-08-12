@@ -317,8 +317,23 @@ def main():
     # O VEREDITO SE GRAVA MESMO QUANDO NADA PASSA. Etapa que mede e não
     # escreve é etapa perdida: sem este arquivo, a próxima sessão refaz a
     # coleta inteira para redescobrir que não dá. Zero silencioso é falha.
+    # O VEREDITO ACUMULA. Rodar uma UF sozinha e reescrever o arquivo
+    # apagou as 12 medidas antes — e o portal passou a dizer "UF não
+    # medida" para doze estados que já tinham resposta. O arquivo é um
+    # registro do que já se perguntou, não do que se perguntou hoje.
     (RAIZ/"dados"/"portal").mkdir(parents=True, exist_ok=True)
-    (RAIZ/"dados"/"portal"/"sazonalidade.json").write_text(json.dumps({
+    _arq = RAIZ/"dados"/"portal"/"sazonalidade.json"
+    _antes = {}
+    if _arq.exists():
+        try:
+            for x in json.loads(_arq.read_text(encoding="utf-8")).get("veredito", []):
+                _antes[x["regiao"]] = x
+        except Exception:
+            pass
+    for x in veredito:
+        _antes[x["regiao"]] = x          # a medição de hoje manda
+    veredito = [_antes[k] for k in sorted(_antes)]
+    _arq.write_text(json.dumps({
         "o_que_e": "A curva de procura por aparelho, medida no Google Trends "
                    "por UF, 5 anos.",
         "medido_em": hoje, "termo": TERMO, "janela": JANELA,

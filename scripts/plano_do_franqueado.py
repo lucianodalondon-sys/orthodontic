@@ -446,7 +446,8 @@ def monta(praca, local_id=None, unidade=None):
 
     ufs = ident.get("uf") or []
     portas = [d for d in ultimo(jsonl("portas"), praca)
-              if d.get("intencao") != "RUÍDO" and frase_util(d["frase"], ufs)]
+              if d.get("intencao") != "RUÍDO"
+              and frase_util(d["frase"], ufs, ident.get("cidades"))]
     tarefas = [t for t in (tarefa_dentista(c), tarefa_ficha_dobrada(praca, ident),
                            tarefa_bairros(c, portas, praca), tarefa_sem_dono(c),
                            tarefa_convenios(c), tarefa_palavras(c),

@@ -90,7 +90,26 @@
       "fonte": "avaliação pública no Google"
     }
   ],
-  "planos_das_lojas": [],
+  "planos_das_lojas": [
+    {
+      "local_id": "ortho_soro_vila_formosa",
+      "unidade": "OrthoDontic Vila Formosa",
+      "rotulo": "SP · Sorocaba",
+      "arquivo": "planos/ortho_soro_vila_formosa"
+    },
+    {
+      "local_id": "ortho_soro_centro",
+      "unidade": "OrthoDontic Centro",
+      "rotulo": "SP · Sorocaba",
+      "arquivo": "planos/ortho_soro_centro"
+    },
+    {
+      "local_id": "ortho_soro_jardim_faculdade",
+      "unidade": "OrthoDontic Jardim Faculdade",
+      "rotulo": "SP · Sorocaba",
+      "arquivo": "planos/ortho_soro_jardim_faculdade"
+    }
+  ],
   "oferta": {
     "praca_id": "sorocaba",
     "rotulo": "SP · Sorocaba",
@@ -1099,13 +1118,149 @@
     ]
   },
   "ritmo_de_publicacao": {
-    "medido": false,
-    "perfis": 0,
-    "vivos": 0,
-    "parados": 0,
-    "manchete": null,
-    "porque_vazio": "nenhum perfil medido nesta cidade",
-    "lista": []
+    "medido": true,
+    "perfis": 36,
+    "vivos": 26,
+    "parados": 10,
+    "manchete": "26 perfis publicando nos últimos 60 dias, 10 parados",
+    "porque_vazio": null,
+    "lista": [
+      {
+        "handle": "sorocabanices",
+        "posts_medidos": 34,
+        "ultimo_post": "2026-08-12",
+        "dias_sem_publicar": 0,
+        "parado": false,
+        "curtidas_medianas": 3625,
+        "frase": "34 posts medidos, último há 0 dias"
+      },
+      {
+        "handle": "sorocaba",
+        "posts_medidos": 11,
+        "ultimo_post": "2026-08-12",
+        "dias_sem_publicar": 0,
+        "parado": false,
+        "curtidas_medianas": 5809,
+        "frase": "11 posts medidos, último há 0 dias"
+      },
+      {
+        "handle": "bompreco.sorocaba",
+        "posts_medidos": 40,
+        "ultimo_post": "2026-08-12",
+        "dias_sem_publicar": 0,
+        "parado": false,
+        "curtidas_medianas": 3,
+        "frase": "40 posts medidos, último há 0 dias"
+      },
+      {
+        "handle": "fernandoesorocaba",
+        "posts_medidos": 50,
+        "ultimo_post": "2026-08-11",
+        "dias_sem_publicar": 1,
+        "parado": false,
+        "curtidas_medianas": 5554,
+        "frase": "50 posts medidos, último há 1 dia"
+      },
+      {
+        "handle": "ofertasorocabaoficial",
+        "posts_medidos": 40,
+        "ultimo_post": "2026-08-11",
+        "dias_sem_publicar": 1,
+        "parado": false,
+        "curtidas_medianas": 3,
+        "frase": "40 posts medidos, último há 1 dia"
+      },
+      {
+        "handle": "tvitapetininga",
+        "posts_medidos": 4,
+        "ultimo_post": "2026-08-10",
+        "dias_sem_publicar": 2,
+        "parado": false,
+        "curtidas_medianas": 48,
+        "frase": "4 posts medidos, último há 2 dias"
+      },
+      {
+        "handle": "churrascoonfire",
+        "posts_medidos": 1,
+        "ultimo_post": "2026-08-10",
+        "dias_sem_publicar": 2,
+        "parado": false,
+        "curtidas_medianas": -1,
+        "frase": "1 post medido, último há 2 dias"
+      },
+      {
+        "handle": "manchestersorocaba",
+        "posts_medidos": 32,
+        "ultimo_post": "2026-08-09",
+        "dias_sem_publicar": 3,
+        "parado": false,
+        "curtidas_medianas": 19,
+        "frase": "32 posts medidos, último há 3 dias"
+      },
+      {
+        "handle": "edir_caio_onzefutsal",
+        "posts_medidos": 27,
+        "ultimo_post": "2026-08-08",
+        "dias_sem_publicar": 4,
+        "parado": false,
+        "curtidas_medianas": 54,
+        "frase": "27 posts medidos, último há 4 dias"
+      },
+      {
+        "handle": "__caaiohenrique",
+        "posts_medidos": 2,
+        "ultimo_post": "2026-08-08",
+        "dias_sem_publicar": 4,
+        "parado": false,
+        "curtidas_medianas": 108,
+        "frase": "2 posts medidos, último há 4 dias"
+      },
+      {
+        "handle": "piunti",
+        "posts_medidos": 1,
+        "ultimo_post": "2026-08-02",
+        "dias_sem_publicar": 10,
+        "parado": false,
+        "curtidas_medianas": -1,
+        "frase": "1 post medido, último há 10 dias"
+      },
+      {
+        "handle": "biahrodriguesz",
+        "posts_medidos": 3,
+        "ultimo_post": "2026-08-01",
+        "dias_sem_publicar": 11,
+        "parado": false,
+        "curtidas_medianas": 25064,
+        "frase": "3 posts medidos, último há 11 dias"
+      },
+      {
+        "handle": "omarcelomesquita",
+        "posts_medidos": 1,
+        "ultimo_post": "2026-07-28",
+        "dias_sem_publicar": 15,
+        "parado": false,
+        "curtidas_medianas": -1,
+        "frase": "1 post medido, último há 15 dias"
+      },
+      {
+        "handle": "ligafutebolsorocaba",
+        "posts_medidos": 1,
+        "ultimo_post": "2026-07-18",
+        "dias_sem_publicar": 25,
+        "parado": false,
+        "curtidas_medianas": 38,
+        "frase": "1 post medido, último há 25 dias"
+      },
+      {
+        "handle": "prietoiam",
+        "posts_medidos": 10,
+        "ultimo_post": "2026-07-17",
+        "dias_sem_publicar": 26,
+        "parado": false,
+        "curtidas_medianas": 24,
+        "frase": "10 posts medidos, último há 26 dias"
+      }
+    ]
   },
   "placar": [
     {
@@ -1462,7 +1617,7 @@
   "sazonalidade_estado": {
     "tem": false,
     "medimos": true,
-    "por_que": "Medimos as 12 UFs onde a rede opera ou estuda, e NENHUMA tem curva publicável de procura por aparelho. o Trends não publica índice de cidade para este termo: das 124 cidades de SC e das 186 do PR, NENHUMA teve volume — Londrina e Mafra incluídas, com valor 0. Com o termo mais largo \"ortodontista\" o resultado foi o mesmo.",
+    "por_que": "o Trends não publica índice de cidade para este termo: das 124 cidades de SC, das 186 do PR e das 108 do PR com o termo mais largo 'ortodontista', NENHUMA teve volume — Londrina e Mafra incluídas, com valor 0",
     "as_duas_travas": {
       "volume": "pelo menos 55% das semanas com busca e 9 meses do ano",
       "estabilidade": "o mês de pico repetido em pelo menos 3 dos anos medidos"

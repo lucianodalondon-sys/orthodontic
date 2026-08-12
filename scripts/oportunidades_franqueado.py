@@ -197,8 +197,10 @@ def monta(praca):
     # mafra portugal' passou. Aplicar na leitura também evita ter de recoletar
     # só por causa de uma linha de regex.
     ufs = ident.get("uf") or []
+    # a cidade da praça vai junto: sem ela, o filtro reprova a própria cidade
     portas = [d for d in portas
-              if d.get("intencao") != "RUÍDO" and frase_util(d["frase"], ufs)]
+              if d.get("intencao") != "RUÍDO"
+              and frase_util(d["frase"], ufs, ident.get("cidades"))]
     revs = [r for r in jsonl("reviews") if r.get("praca_id") == praca
             and r.get("local_id") not in nossos]
     revs_nossas = [r for r in jsonl("reviews") if r.get("praca_id") == praca

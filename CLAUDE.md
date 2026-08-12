@@ -209,6 +209,20 @@ padrões → caixa → padrao → build. Períodos curtos são declarados na tel
   tela as chamava de "período de só 3 dias" — as quatro praças com MAIS
   histórico apareciam como as menos medidas. Toda leitura de movimento leva
   as duas janelas, e o aviso de amostra curta olha o histórico.
+- **CIDADE GRANDE VIRA PRAÇA, E O FILTRO DE "OUTRO LUGAR" VIRA CONTRA.**
+  `portas.frase_util()` tinha uma lista fixa de cidades a rejeitar — nascida
+  para tirar "dentista São Paulo" de dentro da coleta de Mafra — e ela
+  continha joinville, curitiba, goiania e porto alegre. No dia em que essas
+  cidades viraram praça, o filtro reprovou as 160 portas de Joinville,
+  inclusive "aparelho ortodontico joinville", e a captação saiu vazia nas
+  cinco. Cidade só é OUTRO lugar quando não é a NOSSA: o filtro recebe
+  `cidades` da identidade.
+- **Leitura que corta pela ÚLTIMA DATA DO ARQUIVO apaga quem não foi medido
+  hoje.** Ao abrir cinco praças, `onde_cada_loja_aparece` passou a listar 22
+  lojas em vez de 32 — as dez antigas sumiram, Mafra inclusa, e o portal
+  dizia "sem medição" para quem tinha. É sempre a última medição DE CADA
+  praça. O mesmo vale para arquivo de veredito: `sazonalidade.json`
+  acumula, senão medir uma UF apaga as outras doze.
 - **Build que não reproduz é build quebrado.** A captação era escrita só para
   a praça medida na última data do arquivo — 1 de 13. As outras 12 telas eram
   sobra de um build anterior: apagar a pasta fazia doze sumirem sem erro. É

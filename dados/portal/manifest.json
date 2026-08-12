@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-08-12T21:30:25",
+  "gerado_em": "2026-08-12T22:27:34",
   "gerado_de": "dados/serie + dados/conteudo + dados/identidade",
   "corte": "2026-08-12",
   "taxonomia_versao": "1.1",
@@ -56,9 +56,11 @@
         "PR · Curitiba"
       ],
       "tem": [
-        "praca"
+        "praca",
+        "captacao",
+        "plano"
       ],
-      "estudos": 1
+      "estudos": 3
     },
     {
       "praca_id": "feira",
@@ -88,9 +90,11 @@
         "GO · Goiânia"
       ],
       "tem": [
-        "praca"
+        "praca",
+        "captacao",
+        "plano"
       ],
-      "estudos": 1
+      "estudos": 3
     },
     {
       "praca_id": "joinville",
@@ -103,9 +107,11 @@
         "SC · Joinville"
       ],
       "tem": [
-        "praca"
+        "praca",
+        "captacao",
+        "plano"
       ],
-      "estudos": 1
+      "estudos": 3
     },
     {
       "praca_id": "londrina",
@@ -170,9 +176,11 @@
         "RS · Porto Alegre"
       ],
       "tem": [
-        "praca"
+        "praca",
+        "captacao",
+        "plano"
       ],
-      "estudos": 1
+      "estudos": 3
     },
     {
       "praca_id": "prudente",
@@ -202,9 +210,11 @@
         "SP · Sorocaba"
       ],
       "tem": [
-        "praca"
+        "praca",
+        "captacao",
+        "plano"
       ],
-      "estudos": 1
+      "estudos": 3
     }
   ],
   "arquivos": {
@@ -278,8 +288,11 @@
     "captacao": [
       "contagem",
       "cuiaba",
+      "curitiba",
       "feira",
+      "goiania",
       "imperatriz",
+      "joinville",
       "juazeiro_do_norte",
       "londrina",
       "macapa",
@@ -287,8 +300,10 @@
       "maraba",
       "palmas",
       "parauapebas",
+      "porto_alegre",
       "prudente",
-      "rio_branco"
+      "rio_branco",
+      "sorocaba"
     ],
     "planos": [
       "ortho_cba_centro_norte",
@@ -296,10 +311,32 @@
       "ortho_cba_fernando_correa",
       "ortho_centro_ldn",
       "ortho_contagem",
+      "ortho_cwb_centro",
+      "ortho_cwb_centro_2",
+      "ortho_cwb_centro_3",
+      "ortho_cwb_centro_4",
+      "ortho_cwb_portao",
       "ortho_fsa",
+      "ortho_gyn_jardim_tropical",
+      "ortho_gyn_st_central",
+      "ortho_gyn_st_morada_do_sol",
+      "ortho_gyn_st_oeste",
+      "ortho_joi_america",
+      "ortho_joi_aventureiro",
+      "ortho_joi_centro",
       "ortho_mafra",
       "ortho_palmas",
+      "ortho_poa_cavalhada",
+      "ortho_poa_centro_historico",
+      "ortho_poa_centro_historico_2",
+      "ortho_poa_centro_historico_3",
+      "ortho_poa_centro_historico_4",
+      "ortho_poa_cristo_redentor",
+      "ortho_poa_rio_branco",
       "ortho_pp",
+      "ortho_soro_centro",
+      "ortho_soro_jardim_faculdade",
+      "ortho_soro_vila_formosa",
       "ortho_souza_naves"
     ],
     "oportunidade": [
@@ -315,8 +352,11 @@
     "achados",
     "captacao/contagem",
     "captacao/cuiaba",
+    "captacao/curitiba",
     "captacao/feira",
+    "captacao/goiania",
     "captacao/imperatriz",
+    "captacao/joinville",
     "captacao/juazeiro_do_norte",
     "captacao/londrina",
     "captacao/macapa",
@@ -324,8 +364,10 @@
     "captacao/maraba",
     "captacao/palmas",
     "captacao/parauapebas",
+    "captacao/porto_alegre",
     "captacao/prudente",
     "captacao/rio_branco",
+    "captacao/sorocaba",
     "clinicas/ortho_cba_centro_norte",
     "clinicas/ortho_cba_dom_bosco",
     "clinicas/ortho_cba_fernando_correa",
@@ -373,10 +415,32 @@
     "planos/ortho_cba_fernando_correa",
     "planos/ortho_centro_ldn",
     "planos/ortho_contagem",
+    "planos/ortho_cwb_centro",
+    "planos/ortho_cwb_centro_2",
+    "planos/ortho_cwb_centro_3",
+    "planos/ortho_cwb_centro_4",
+    "planos/ortho_cwb_portao",
     "planos/ortho_fsa",
+    "planos/ortho_gyn_jardim_tropical",
+    "planos/ortho_gyn_st_central",
+    "planos/ortho_gyn_st_morada_do_sol",
+    "planos/ortho_gyn_st_oeste",
+    "planos/ortho_joi_america",
+    "planos/ortho_joi_aventureiro",
+    "planos/ortho_joi_centro",
     "planos/ortho_mafra",
     "planos/ortho_palmas",
+    "planos/ortho_poa_cavalhada",
+    "planos/ortho_poa_centro_historico",
+    "planos/ortho_poa_centro_historico_2",
+    "planos/ortho_poa_centro_historico_3",
+    "planos/ortho_poa_centro_historico_4",
+    "planos/ortho_poa_cristo_redentor",
+    "planos/ortho_poa_rio_branco",
     "planos/ortho_pp",
+    "planos/ortho_soro_centro",
+    "planos/ortho_soro_jardim_faculdade",
+    "planos/ortho_soro_vila_formosa",
     "planos/ortho_souza_naves",
     "pracas/contagem",
     "pracas/cuiaba",

@@ -123,15 +123,31 @@ ESTRANGEIRO = (r"\b(las|los|del|abierto|colegio|adeslas|cerca|dottor|"
                r"|\ben\s")
 
 
-def frase_util(frase, ufs):
+def frase_util(frase, ufs, cidades=None):
     """O filtro único, usado na coleta E na leitura.
 
     Estava em três lugares e os três divergiram: a coleta filtrava uma coisa,
     o radar do franqueado outra, e o plano do franqueado nenhuma — então a
     lista de bairros de Palmas saía com Ixtapaluca e Las Adeslas dentro. Uma
-    regra só, num lugar só."""
+    regra só, num lugar só.
+
+    `cidades` É OBRIGATÓRIO QUANDO A PRAÇA É CIDADE GRANDE. A lista
+    OUTRO_LUGAR nasceu para tirar "dentista São Paulo" de dentro da coleta
+    de Mafra, e traz joinville, curitiba, goiania e porto alegre. No dia em
+    que essas cidades viraram praça, o filtro passou a reprovar as 160
+    portas de Joinville — inclusive "aparelho ortodontico joinville" — e a
+    captação saiu vazia nas cinco. Cidade só é OUTRO lugar quando não é a
+    NOSSA."""
     f = sem_acento(frase)
-    if re.search(OUTRO_LUGAR, f) or re.search(ESTRANGEIRO, f):
+    proprias = {sem_acento(str(c).split("/")[0]).strip()
+                for c in (cidades or []) if c}
+    fora = OUTRO_LUGAR
+    for c in proprias:
+        if c and c in fora:
+            # tira a própria cidade da lista de "outro lugar", com as
+            # barras de palavra intactas
+            fora = fora.replace(f"{c}|", "").replace(f"|{c}", "")
+    if re.search(fora, f) or re.search(ESTRANGEIRO, f):
         return False
     ufs = [u for u in (ufs or []) if u]
     if ufs and all(uf_errada(frase, u) for u in ufs):
