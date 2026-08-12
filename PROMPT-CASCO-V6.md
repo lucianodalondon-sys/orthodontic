@@ -441,3 +441,35 @@ resultado da busca usa `lista.length`. É a única contagem legítima no
 casco, porque depende do que a pessoa digitou e o build não tem como
 saber. A regra de que todo total sai pronto do build continua valendo
 para tudo o mais.
+
+### 7.4 · A abertura do portal vem do dado, e mudou
+
+`portal.js` linha 265 tem o título escrito à mão:
+
+```js
+"<h1>Onde a rede está perdendo terreno.</h1>"
+```
+
+Duas coisas erradas. **Texto na tela dentro do casco** ninguém consegue
+mudar pelo dado — foi preciso editar o JavaScript para trocar uma frase. E
+o portal abria pela derrota: ele existe para a rede crescer, e o que está
+ruim já tem tela própria logo abaixo, na tira de números e nos cartões de
+problema. A primeira frase não precisa ser essa.
+
+Agora vem pronto em `franqueadora.json → abertura`:
+
+```json
+{"sobrelinha": "SALA DE CONTROLE · REDE NACIONAL",
+ "titulo": "A inteligência que faz cada clínica crescer.",
+ "sublinha": "10 unidades escutadas de perto, em 7 cidades estudadas por inteiro — e, para cada uma, o que fazer nesta semana.",
+ "escopo": "As leituras valem para estas 10 unidades, não para as 374 da rede. As 6 cidades de oportunidade são estudo de expansão e não entram em nenhuma conta da rede."}
+```
+
+Troque o `<h1>` fixo por `abertura.titulo`, use `sobrelinha` na linha em
+mono ciano acima (como na referência aprovada) e `sublinha` logo abaixo do
+título, em cinza-claro.
+
+O `escopo` continua na tela, mas **como nota de pé do bloco**, discreta —
+não como a manchete densa que abria o portal hoje. A honestidade sobre o
+que ainda não medimos permanece; ela só deixa de ser a primeira coisa que
+a diretoria lê.

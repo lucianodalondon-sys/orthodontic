@@ -952,6 +952,33 @@ def main():
                                f"{cobertura['cidades_de_oportunidade_estudadas']} "
                                f"cidades de oportunidade são estudo de expansão e "
                                f"não entram em nenhuma conta da rede."},
+        # A ABERTURA DO PORTAL SAI DAQUI, não do casco. Estava escrita à mão
+        # dentro do portal.js ("Onde a rede está perdendo terreno") — texto
+        # na tela que ninguém conseguia mudar pelo dado, e que abria o
+        # produto pela derrota. O portal existe para a rede crescer; o que
+        # está ruim tem tela própria, logo abaixo, e não precisa ser a
+        # primeira frase. Os números da sublinha vêm da medição.
+        "abertura": {
+            "sobrelinha": "SALA DE CONTROLE · REDE NACIONAL",
+            "titulo": "A inteligência que faz cada clínica crescer.",
+            "sublinha": (
+                conta(cobertura["unidades_acompanhadas"],
+                      "unidade escutada de perto", "unidades escutadas de perto")
+                + ", em " + conta(cobertura["pracas_da_rede_estudadas"],
+                                  "cidade estudada por inteiro",
+                                  "cidades estudadas por inteiro")
+                + " — e, para cada uma, o que fazer nesta semana."),
+            # o escopo continua declarado, mas como nota de pé, não como
+            # manchete: quem chega precisa saber o que o portal faz antes de
+            # saber o que ele ainda não cobre
+            "escopo": (f"As leituras valem para estas "
+                       f"{cobertura['unidades_acompanhadas']} unidades, não "
+                       f"para as {cobertura['unidades_total']} da rede. As "
+                       + conta(cobertura['cidades_de_oportunidade_estudadas'],
+                               "cidade de oportunidade", "cidades de oportunidade")
+                       + " são estudo de expansão e não entram em nenhuma "
+                         "conta da rede."),
+        },
         "mapa": mapa,
         "mapa_legenda": mapa_legenda,
         "tiras_do_inicio": [
