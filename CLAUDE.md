@@ -117,6 +117,7 @@ python3 scripts/jornada_do_paciente.py --salvar   # onde a loja dói
 python3 scripts/a_oferta_do_rival.py --salvar     # o que o rival vende
 python3 scripts/o_que_a_cidade_publica.py --salvar
 python3 scripts/livro_de_acoes.py --salvar        # o ciclo, antes e depois
+python3 scripts/confere_tese.py                   # número da tese ainda existe?
 python3 scripts/build_portal.py
 ```
 
