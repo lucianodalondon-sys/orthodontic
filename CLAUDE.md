@@ -256,6 +256,26 @@ padrões → caixa → padrao → build. Períodos curtos são declarados na tel
   todos de SC, e foi Mafra que derrubou a tese nacional de "dezembro e
   janeiro são pico" — lá é vale. Enquanto não houver coleta por cidade, cada
   praça publica `sazonalidade_estado` com o motivo. Herdar curva é inventar.
+- **AMOSTRA TRUNCADA VIRA RANKING FALSO.** `google_reviews.py` puxa as N
+  avaliações MAIS NOVAS (`--max-reviews`, padrão **120**). Numa loja
+  pequena essas N cobrem a vida inteira; numa loja grande cobrem poucas
+  semanas — e o ritmo sai das duas do mesmo jeito. Curitiba · XV de
+  Novembro tinha 120 avaliações em **44 dias** (82,9/mês) ao lado do
+  Edifício Odin com 120 em **2.324 dias** (1,6/mês): "cinquenta vezes de
+  diferença" que é artefato de coleta. Florianópolis · Ingleses publicava
+  **260,6 avaliações por mês numa loja que tem 267 no total**, e era a
+  "1ª de 17" da praça. `cruzamento.coleta()` agora carrega
+  `amostra_truncada` e `ritmo_comparavel`, e a posição sai só entre os
+  comparáveis. A régua cobra na **etapa 6.5**: contador da ficha do Google
+  contra o que foi lido, por `local_id`.
+- **A ETAPA 6 CONTA A PRAÇA, NÃO A NOSSA LOJA.** Ela passa com folga numa
+  cidade onde a nossa unidade foi lida pela metade — as avaliações dos
+  concorrentes enchem a conta. Quem cobra a nossa é a 6.5.
+- **CONTAR ITEM NÃO É CONFERIR FORMATO.** A etapa 11 contava 5 itens de
+  `dna` e passava com cinco frases soltas; a referência aprovada desenha
+  rótulo e corpo separados (`l`/`t`), plano `n`/`t`/`d` e citação `t`/`c`.
+  Dez praças passariam na régua e desenhariam cartão em branco. A etapa
+  confere as chaves agora.
 - **DOIS COLETORES IGUAIS RODANDO JUNTOS GRAVAM TUDO EM DOBRO — e a régua
   passa a ser cumprida por duplicata.** Florianópolis ficou com 18 linhas
   de canal onde existem 10, porque duas execuções de `canais.py`
