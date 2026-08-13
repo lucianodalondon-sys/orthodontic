@@ -4,15 +4,9 @@
  "o_que_nao_e": "Não é volume de busca. É em quantas das frases testadas a loja apareceu no mapa.",
  "corte": "2026-08-13",
  "lojas_medidas": 45,
- "lojas_invisiveis": 11,
- "manchete": "11 lojas não aparecem em nenhuma busca da própria cidade.",
+ "lojas_invisiveis": 8,
+ "manchete": "8 lojas não aparecem em nenhuma busca da própria cidade.",
  "avisos": [
-  {
-   "praca_id": "caxias_do_sul",
-   "rotulo": "RS · Caxias do Sul",
-   "aparicoes_sem_dono": 9,
-   "por_que": "resultado com nome OrthoDontic cujo contador de avaliações não casa com nenhuma ficha da praça — pode ser loja fora da nossa lista, ou ficha lida em outro dia"
-  },
   {
    "praca_id": "feira",
    "rotulo": "BA · Feira de Santana",
@@ -24,43 +18,9 @@
    "rotulo": "GO · Goiânia",
    "aparicoes_sem_dono": 1,
    "por_que": "resultado com nome OrthoDontic cujo contador de avaliações não casa com nenhuma ficha da praça — pode ser loja fora da nossa lista, ou ficha lida em outro dia"
-  },
-  {
-   "praca_id": "rio_de_janeiro",
-   "rotulo": "RJ · Rio de Janeiro",
-   "aparicoes_sem_dono": 1,
-   "por_que": "resultado com nome OrthoDontic cujo contador de avaliações não casa com nenhuma ficha da praça — pode ser loja fora da nossa lista, ou ficha lida em outro dia"
   }
  ],
  "lojas": [
-  {
-   "local_id": "caxias_do_su_orthodontic",
-   "praca_id": "caxias_do_sul",
-   "rotulo": "RS · Caxias do Sul",
-   "unidade": "OrthoDontic",
-   "avaliacoes_da_ficha": null,
-   "aparece_em": 0,
-   "de": 167,
-   "pct": 0,
-   "melhor_posicao": null,
-   "frases_onde_aparece": [],
-   "invisivel": true,
-   "frase_do_topo": "Esta loja **não aparece em nenhuma** das 167 buscas que testamos na cidade."
-  },
-  {
-   "local_id": "caxias_do_su_orthodontic_centro",
-   "praca_id": "caxias_do_sul",
-   "rotulo": "RS · Caxias do Sul",
-   "unidade": "OrthoDontic",
-   "avaliacoes_da_ficha": null,
-   "aparece_em": 0,
-   "de": 167,
-   "pct": 0,
-   "melhor_posicao": null,
-   "frases_onde_aparece": [],
-   "invisivel": true,
-   "frase_do_topo": "Esta loja **não aparece em nenhuma** das 167 buscas que testamos na cidade."
-  },
   {
    "local_id": "ortho_cba_dom_bosco",
    "praca_id": "cuiaba",
@@ -144,20 +104,6 @@
    "frase_do_topo": "Esta loja **não aparece em nenhuma** das 196 buscas que testamos na cidade."
   },
   {
-   "local_id": "rio_de_janei_orthodontic",
-   "praca_id": "rio_de_janeiro",
-   "rotulo": "RJ · Rio de Janeiro",
-   "unidade": "OrthoDontic",
-   "avaliacoes_da_ficha": null,
-   "aparece_em": 0,
-   "de": 197,
-   "pct": 0,
-   "melhor_posicao": null,
-   "frases_onde_aparece": [],
-   "invisivel": true,
-   "frase_do_topo": "Esta loja **não aparece em nenhuma** das 197 buscas que testamos na cidade."
-  },
-  {
    "local_id": "sao_paulo_orthodontic",
    "praca_id": "sao_paulo",
    "rotulo": "SP · São Paulo",
@@ -218,7 +164,7 @@
    "praca_id": "uberlandia",
    "rotulo": "MG · Uberlândia",
    "unidade": "OrthoDontic",
-   "avaliacoes_da_ficha": null,
+   "avaliacoes_da_ficha": 127,
    "aparece_em": 0,
    "de": 164,
    "pct": 0,
@@ -367,7 +313,7 @@
    "praca_id": "porto_alegre",
    "rotulo": "RS · Porto Alegre",
    "unidade": "OrthoDontic Clínica Odontológica em Porto Alegre RS",
-   "avaliacoes_da_ficha": 207,
+   "avaliacoes_da_ficha": 208,
    "aparece_em": 2,
    "de": 196,
    "pct": 1,
@@ -411,6 +357,26 @@
    ],
    "invisivel": false,
    "frase_do_topo": "Esta loja aparece em **2 das 196 buscas** que testamos na cidade."
+  },
+  {
+   "local_id": "rio_de_janei_orthodontic",
+   "praca_id": "rio_de_janeiro",
+   "rotulo": "RJ · Rio de Janeiro",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": 308,
+   "aparece_em": 1,
+   "de": 197,
+   "pct": 1,
+   "melhor_posicao": 2,
+   "frases_onde_aparece": [
+    {
+     "frase": "ortodontista campo grande rio de janeiro",
+     "posicao": 2,
+     "intencao": "BAIRRO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **1 das 197 buscas** que testamos na cidade."
   },
   {
    "local_id": "ortho_soro_centro",
@@ -458,11 +424,46 @@
    "frase_do_topo": "Esta loja aparece em **1 das 164 buscas** que testamos na cidade."
   },
   {
+   "local_id": "caxias_do_su_orthodontic_centro",
+   "praca_id": "caxias_do_sul",
+   "rotulo": "RS · Caxias do Sul",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": 172,
+   "aparece_em": 4,
+   "de": 167,
+   "pct": 2,
+   "melhor_posicao": 2,
+   "frases_onde_aparece": [
+    {
+     "frase": "aparelho ortodontico caxias do sul",
+     "posicao": 2,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista caxias do sul",
+     "posicao": 2,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista em caxias do sul",
+     "posicao": 3,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "dentista aparelho caxias do sul",
+     "posicao": 3,
+     "intencao": "GENÉRICO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **4 das 167 buscas** que testamos na cidade."
+  },
+  {
    "local_id": "ortho_contagem",
    "praca_id": "contagem",
    "rotulo": "MG · Contagem",
    "unidade": "OrthoDontic",
-   "avaliacoes_da_ficha": 857,
+   "avaliacoes_da_ficha": 859,
    "aparece_em": 3,
    "de": 140,
    "pct": 2,
@@ -698,6 +699,46 @@
    "frase_do_topo": "Esta loja aparece em **3 das 195 buscas** que testamos na cidade."
   },
   {
+   "local_id": "caxias_do_su_orthodontic",
+   "praca_id": "caxias_do_sul",
+   "rotulo": "RS · Caxias do Sul",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": 362,
+   "aparece_em": 5,
+   "de": 167,
+   "pct": 3,
+   "melhor_posicao": 1,
+   "frases_onde_aparece": [
+    {
+     "frase": "aparelho ortodontico caxias do sul",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista caxias do sul",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista em caxias do sul",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "dentista aparelho caxias do sul",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "dentista caxias do sul dentro de 800 m",
+     "posicao": 4,
+     "intencao": "GENÉRICO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **5 das 167 buscas** que testamos na cidade."
+  },
+  {
    "local_id": "ortho_cba_centro_norte",
    "praca_id": "cuiaba",
    "rotulo": "MT · Cuiabá",
@@ -912,7 +953,7 @@
    "praca_id": "londrina",
    "rotulo": "PR · Londrina",
    "unidade": "OrthoDontic Souza Naves",
-   "avaliacoes_da_ficha": 568,
+   "avaliacoes_da_ficha": 569,
    "aparece_em": 5,
    "de": 176,
    "pct": 3,

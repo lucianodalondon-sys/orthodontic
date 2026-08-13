@@ -1455,6 +1455,42 @@
   "movimentos_do_mercado": {
     "eventos": [
       {
+        "evento_id": "curitiba|concorrente_acelerou|ChIJHc8bA-jv3JQR38D6NMsdEq8",
+        "data": "2026-08-13",
+        "praca_id": "curitiba",
+        "rotulo": "PR · Curitiba",
+        "local_id": null,
+        "entidade_id": "ChIJHc8bA-jv3JQR38D6NMsdEq8",
+        "tipo": "concorrente_acelerou",
+        "natureza": "fato",
+        "severidade": "alta",
+        "titulo": "Dra. Vladja Torno | Facetas em Resina Composta em Curitiba acelerou",
+        "fato": "ganhou 15 avaliações entre 2026-08-12 e 2026-08-13 — de 662 para 677",
+        "por_que_importa": "rival de aparelho ganhando atenção no mesmo mercado",
+        "decisao": "ver o que ele está publicando e anunciando",
+        "fonte": "dados/serie/categoria.jsonl",
+        "evidencia": {
+          "place_id": "ChIJHc8bA-jv3JQR38D6NMsdEq8",
+          "antes": 662,
+          "agora": 677
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "alta",
+          "medido": true,
+          "amostra": 677,
+          "janela_dias": 1,
+          "medicoes": 2,
+          "fonte": "dados/serie/categoria.jsonl (2026-08-12 → 2026-08-13)",
+          "a_favor": [
+            "19 clínicas medidas nas duas rodadas"
+          ],
+          "contra": [],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 677 avaliações nesta clínica, 2 medições, 1 dia de janela"
+        }
+      },
+      {
         "evento_id": "curitiba|linha_de_base_anuncios|-",
         "data": "2026-08-13",
         "praca_id": "curitiba",
@@ -1488,100 +1524,106 @@
     "resumo": {
       "praca_id": "curitiba",
       "rotulo": "PR · Curitiba",
-      "eventos": 1,
-      "estado": "linha_de_base",
-      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+      "eventos": 2,
+      "estado": "medido",
+      "janela": "2026-08-12 → 2026-08-13",
+      "medicoes_da_praca": 2,
+      "clinicas_antes": 19,
+      "clinicas_agora": 19,
+      "comparaveis": 19,
+      "estabilidade_pct": 100,
+      "aviso_de_metodo": "a varredura devolveu 19 clínicas em 2026-08-12 e 19 em 2026-08-13, com 19 em comum (100%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
     }
   },
   "imprensa": {
     "medido": true,
-    "total": 57,
+    "total": 76,
     "mostrando": 12,
-    "recentes_30d": 28,
-    "manchete": "28 matérias sobre a cidade nos últimos 30 dias, de 57 já lidas",
+    "recentes_30d": 36,
+    "manchete": "36 matérias sobre a cidade nos últimos 30 dias, de 76 já lidas",
     "porque_vazio": null,
     "materias": [
+      {
+        "titulo": "Feira gratuita reunirá 170 empreendedores, oficinas e atrações culturais em Curitiba - g1.globo.com",
+        "veiculo": "g1.globo.com",
+        "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPSlRLbHU4MkhtUUxYZmxIOERERF8tazVVRkNGM0FIaEp2NEcwcWdRTUdka2tHWngzMVRVS2hJNXdLU0Q2a253S2ZvSTNSTS1lVW16SXZNM3pfQ1BQbmZYRWk0Z2hfdGh3SW1paS1BY0hHOWU1R012cjBqbzdjWElhSVVUMlkySXNNT1B4TlhxeklwbVk1elViXzRwLTZjdUFhYkdXU2VGc2ZiYS1OU2FTREk2dUl2WUpVWk5aZXUwN1JRbGJSRGNHSnM5Q1AwQ2VEX0ROLTJGOXQtSHpWZU1zTC1mVdIB8gFBVV95cUxQTkNjVFhHbndBYTJOMzFDSGZZVHloelVyaXlrdTJIcmlDbjlQRFJEeTJmRkpPVkJya2pUN3hUS1ZkZlFqUzZ2QS1semx2N0hOYWwxMzJYbU5MRWxqT3dNdE9zN1JSUWZmRjd2bTJNdW1JX1duNVhzbktvRk13SlhDS1hmUm9YeTB0cVZZbDEzcnVfQkVpem5oelZHcFhOYTNJRzRpQndOdmJZdFFwTTNHM180eTZxbFlGb0UzcHNjMzJ3YTAwTHNvWENkSDRnZnY2c2RoWUxBM0NGUmtyTE9Ed2J5Tmtqc0l0YzNSYk8yUHMzQQ?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
+      },
+      {
+        "titulo": "Falecimentos desta quarta, 12 de agosto, em Curitiba - Bem Paraná",
+        "veiculo": "Bem Paraná",
+        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOckFmblk3SjhZQ3FMUkZsUGlWYVZNNmt4UlRUWHRBLXhVbVYyZmxlb0ZYYUtZekUtbTNXRklqaUM0ZTI3ZHBtNzdWcGYzc0ZWdFYwQXNvMEw1dWozLXRFMzRtSGdiNmpKV1E0Tjc5SnB4ZlpOd0lqWDFjTDRVZWhNNlpVb2tsQm56TVMzNzdaMmtuUW5QQnNMZlRlUHfSAaIBQVVfeXFMTVREQWh2UWJlcWxIU0E1MUVXVktKTEE0Y3pJd1FNcWw1Uk1RM3UyQ1lNQmhkS3lEOEk3QXU5NERhZmpmV3g2a0xaXzlaYUhCZlNiVVhuMFZlaHZ0dS1CdXVNQVZ5aVVlTTItblpOTnUzSUlUTHdLZlV6UGdDWXJBTUNwamFUakRTT2pERXg2SDU3SnNXMkFLYVA4bXZvNUk3S1BR?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
+      },
+      {
+        "titulo": "Homem morre após ser atingido por trem na madrugada em Curitiba - Tribuna do Paraná",
+        "veiculo": "Tribuna do Paraná",
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOZXBKc3dqLW80RTFUS0RkekNCZVU5eERoSkdMcDN2TGJUVkFvT19RM1E1VmVWZGhfRWFqeFdtSG9VUF9lUWI2ODc2YThqcU5Hb3VvOThrdUJMUTdKWkZXbzNaYXZFalpDQzFONEw5RDN3NHIyMklCVGhTV0FTT0c5OXFwQy1iS05HYVBmeTR3V1BlSXfSAZgBQVVfeXFMTVFXMVpsZWRJQ1RpZ0hrazFja0FsUmdKMjRLSXhoSndJZGRrSnVmMndQWnBqeVpiU2hXN2JEb3p6ZTIxUkxMNGdWdmRrNGJDSE1UYlpjMXdWcU1ubEV6aTZpQXFHM3ZvYXQ0bkdfb0pQVnVqYklMbEtFc3AwN2F4X3FSUmllV1B5dS1uTnkwSEZLMXgxd0VoNWs?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
+      },
+      {
+        "titulo": "Frota cresce e trânsito fica mais lento em Curitiba - g1.globo.com",
+        "veiculo": "g1.globo.com",
+        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOeTRnajFsMlg4eXhiandtajhlMFVsRmVhcWNPLUFyeVU5MXBUaGpGNjZlNEFUQ1hCZmZJR3RkcjI1SEM4MEhPNG9lUFJlQmk2V29jSklLWEJNTUlTd05FR2R3dmJjbUZKYkh0aC1zUHlBM0NVSUFoaV9kZU1aaUI3YXozbGRrVFE1VGRyczBnQ3FIMGRFVnJSNVVVMWVOWHNlWjJIS3BFdklGR1g2Nk5vZWljbkdtNElXdVpGMU9Ub2kzNE3SAdIBQVVfeXFMUEN2eEU4TW5uRG81V05TRlBLUklNVTNybjBuNGtjOEI0T1ZKREhrZ2JmQkZucDdVcDNWWGdzaXRnYmNvYXJwR2F0Zk54ZjVIbnFhRExsVXB1dld4a0JSTEpFZ2lsSlllbXR6T1VKYkVPbzdCWHlzZHFsYnBzMEtxNGpHTEludmdTM09na0psVDd3bkpxdk5qb1psSHNhZGJrRlRYSHliMlo3WXdKOE1FWld2aEt2WWtIQ0wwdDZSWDVTY3dQcnZpYjUyWUJhYXNOYWln?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
+      },
+      {
+        "titulo": "Acusado de agredir recepcionista em hotel de Curitiba vai a júri popular por tentativa de feminicídio - g1.globo.com",
+        "veiculo": "g1.globo.com",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQZ0QwZHZ4Rkhsb1lRX3RheW1xNUk4NkV1eE9WYTUzRmJuUmRsVy1RTHVVYUEyTEFkbmZJLUNIRXQyanhmT1RYR2ltcUhsX1hhUmVuUmFQX3VXZjhsLUZNS2tOMERMZzlrUURrOHlBQ1o3U3FZM0tUNEhQY0hYLUtqNDI3bWV2UzE3QnhndlBWQnV3QlBhVXFRcFVGNVpBVDFL0gGvAUFVX3lxTFAwSndQSk1xWjF0SXowRldZTFZqYzNEdk5kUkFCRW5ZLXg1aVc3eEZKenlvX2RpWUNKVnIwMWhNY2c1RzB5UzJqbmI0VDJrT19sOWstMy00b0xFdWtpY0dYcVdJUVptWEFNdlIyalZseURsZERBaUlFMjdWQzdzR2hWbmk3SWJPQ0UzeVhGbDZWYTBTZXcwWUlDQ3Zka1JNY0pFVE5JbUtGc2tPOV9SYUE?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
+      },
+      {
+        "titulo": "Jornal Midiamax. . Em Curitiba (PR), a gatinha Milk divertiu os internautas ao ser flagrada pela tutora escalando uma cortina poucos dias após passar por uma cirurgia. No vídeo, a gata sobe até o ferro que sustenta a estrutura e permanece equilibrada no loc - facebook.com",
+        "veiculo": "facebook.com",
+        "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPQXVGQWJYX3FqSXNEOFJjdXlTaGpwRHo5ejlVa1lyU3JpbkFYMWFfdDU5NWNZQWczc3dub3pZbnQ0V3FWcDdOM2VRVjNvTmRQcXNXY1BOOFhZTDl3VEFVMkZrR0QtdHV6MG14NUlORE52ME1fbmZVbFdVY2FROG9mbFZGN2pCM3RFbEQyYXlOaFlQc2QyN1NiVVRickZtaUdPMXlxZHJXUkRfTzNPTlhMaUFBczFIeDFlVlY4enhGd0l0TmY4S2ZnMmpKNzQxSVBhWEpSZEJn?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
+      },
+      {
+        "titulo": "TBO e Radisson Hotel capacitam agentes em Curitiba - Brasilturis",
+        "veiculo": "Brasilturis",
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNTEw5MjNXbmFnLXdUVmZXSGVPVkZzREcxb2R0UDIyb29ZN29OR2JDclFUSndJZEU5ZUhfM1RhUmdCYUJoSzMxbHJZaUpCdWNXTWxoRWpuZnY2YTJ0T1BpLXU3amFMOG5qNjhzN3BFeFBiNUdMZ1E3MUxtX0l1Q2xGRTRRbzZtY3laYWpHZS1xQTR6Vzg?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
+      },
+      {
+        "titulo": "Temperaturas aumentam, mas Curitiba e boa parte do PR entram em alerta laranja para tempestades e ventos de 100 km/h - Banda B",
+        "veiculo": "Banda B",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWExDaXFzUFBna1N5aldWVkpwa2doR0JiT0l1S1pGZVZITjZfNUVQeVZ1RTEydnBob2xJV3hoTXAtWUU1czZpMHBFVUluZURDUjBlMmdWazNpRlVLeXdaOUJSZ3ZaRGZwSFo0Y1FqMFlPQXJBUzB3cEo0TVp3V1R6ZmwteFNIbS0xa21SVGZiWFQ5NnpacnRSSXpjNFBZWUI00gGmAUFVX3lxTE4xUDVoUEdERjlFZ3haQThPelhMRkRJZUR3VkpHVE5OcGJOSFR6b2ZHeHdRaTFfd1JSbDFscmloRG5XWTdIc0pSMnBWcUIwQTRRc2NZOElVMnpHa1RHR2oyc19WNC0zUjBOY1laYklCdU1ZWE5FU3BXemVYelFzeV9IUDBrcVJ5WDRTWUhteUFyYUdWWXhfVk82OFI4dFAwaDBGQy1sbUE?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
+      },
+      {
+        "titulo": "Comissão decide se denúncia contra vereador de Curitiba avança - Tribuna do Paraná",
+        "veiculo": "Tribuna do Paraná",
+        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNQW9lZTJwWGp3Q0RQNzQ3amkyTS13RHc5WWFsaDh5LVo0V01EY1BfaUhfYVNIb0JVVzFtbUdmVktkY0N4X1ZQMXlzOUNJTnBMaEZySktfUkd2TjhNV2pUVlVGSjYxWDhBZUxzQVlZRXRhSUE0cjNHbXd1LWJSQzltN3hwMThkMVpxekh4bThVdXh4TVRuUHZaRHVGc21kdWZjTWxfY1JCRHVDdGVLQnR0eUJHSlFudDF4Q3BCQUhSY2JIWTlISmJneW8yNNIB0AFBVV95cUxPMTFVQ2NUcGw2TEhHQ1ZHcTJPX2J6RUhnRU1KSWN4UG8zdHlaa0owRFZyN1Utd2Fma2ExbzJpZnpLbVpiY2V2T0dQZjluYmRhYkpJV2dEU3g1X3NMUTNyTjdBa1JxODFqYmVXRFJjeUJlZUNMdzFSRG5BN0xITmRTend5UWIwMHVfVWFvUEJuTFdlSGNnT0wzTHhiam9XUDRKMzBrMU5lbmZXbkxHWkNheUlEdXZ4TWlZWjVyNUV5MFhzWElXR1R4Vy1QY3EzSHBo?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
+      },
+      {
+        "titulo": "Tempo 'vira' e parte do Paraná recebe novo alerta de tempestades intensas; veja onde e a previsão do tempo - g1.globo.com",
+        "veiculo": "g1.globo.com",
+        "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNenJHRk9vaUdFbWZyNEdGQmZCVHYyVzVWc1Z0WnZ0dklyU0JpblR2UWI4b3N3NFNVdXhrOGZxeHZSQTJRWklWMjY1dEtXWUJZNWlBQUsydTZ3bTJ1Y0tNNGswUTJfMXZja0hERzM4ZkdiYTNpcWFnTHY0YnNlcml2VlFoMHdoU193ZHMxZE5LaVByN0JVdTQwRTV0Z2h2MFp1TzdSVm51NVNER3JmRW5kNTNmTEJpVTZ1S0VfbnRsSWZSVUVQcmpXTU81Sk5HLXZ0RWtjVXZ2YWdJZlJ4SWUyeWlLWGJpTFJFRVlLVWx2VFZ5eWZCYTlVcmZOVjR1QVXSAY4CQVVfeXFMUGxnNXA3VEJwcTNmUzBZTUZWcWNET1lVbnBGbU5xaV9yN0g2UlRWcm1IRjBaSkJ1Y2VVRTVvcEN6LThHcUNoNlNDMUExS09leHhaZXdHbHVEWEJMR1locHVGZnZaaXZWbHpHSGFtckl3QkhmWDFrX1BjeWtlM25HYlhCRllhMmNKSmU3Vmw3czRPZ0ZYTzB1Ni1TMzdzbjVyMHlMamZIVUFaVEZmR0JSR3Z2T1B4N0VXUXppamx2b0NjV3N6U3ZheXVuTkhHeHdlWHZIWXZSQWE2SEtaQzEzazVVUGFTVlZsRkc0ZUpjRHB5Qi1OY3pEbXpDTnU5RC1vMjhObXEtTHJrUmJzbThR?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
+      },
+      {
+        "titulo": "O que fazer em Curitiba hoje? PC Silva, stand-up comedy e mais 13 opções culturais - Tribuna do Paraná",
+        "veiculo": "Tribuna do Paraná",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNRkJDZklZY0FKZnBfSHp3ejBTUENQQW50YkpjYzFlUF9CNk4zZHlhdjludlBTblFKQ1RmZGNNOE9nMGpDMnBxVVVabUd3VlFISVVuazZtcmp0RGUtV01tcXR4a1g0aHRQTFkxSm5rNzU3NjNES1JkUlVHQmhlb2JDMUVoRkY2MmV6NUE3S2E0d3d0WFJBQW1FYzZR0gGfAUFVX3lxTE1OTWRvVTZ6R0Z2UnJxTHVnbkFWUlBPazZZS2ZkVWlsY2JBVGlMYjhVUWcxNXQ1YjVZQW4zU3FIOVNTTFZvdGFWb0JBRU9udkF5TlQyd0VWVHMtcVVDR0VoODlQMndOWTBzQTJyeTllbWtoS2Y2TmtVUW5fVWpuV1FncFNRU2NQdER3cHZKZVJjd0ViZXFzVENhdUtIeGdnQQ?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
+      },
       {
         "titulo": "Semana Literária Sesc movimenta o MON em Curitiba - G1",
         "veiculo": "G1",
         "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNYWpfQi02c0s4emVJRUR2aGVZang0VGxFcVBvZDBSSGNIYkNwVGpERFd6LVgyTEdpSFFwN1BfOVNrZ0dwSlFqNmU4T0dpY2E1alN6SnRyazJiRzNiT1Rsc05Rd29OdFIzTW9rbG5STmVCYjVGbGROMmFMOVZkck5IQVlweHI5cExmc2RpUk1qVzhRaXo4MHpZaC1hTks2VUNkQTBjVFhvQkoxRklTOEU2ZTBJc2pKWTU5LWJNcFlkYXFOQdIB0AFBVV95cUxQM2VvRDJkSnV3UE8xcE9SellSNEw4TnNMamx2NFdnUEJCNXlmenQ5YWQ0MFprbWRtTm5rQ0UzQjJqLTZpNlpzRWxXUkl4czlJSXpKVGJUTzN4Y3JwR25tYUt5RnRyQnM1RjU3ZGxRZ2JIR2VMVGVWdXBLVHIxdzdLRWpQZVBCckFsTzBnSjB6ZFA1Q05sUXBCSXEyblBOQ2pfUWRmblRKbHFVVTNnbHJaSzdPMTVtcGo3TWRTMHJKWlYtbTFXUnRzV1RtdWtOREE0?oc=5",
-        "publicado": "2026-08-12",
-        "dias": 1
-      },
-      {
-        "titulo": "Guarda Municipal de Curitiba vai ganhar museu para preservar a memória da instituição - Prefeitura de Curitiba",
-        "veiculo": "Prefeitura de Curitiba",
-        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPWVFFbUgxbHlSRHVnOTRvVm5WeGNsWGFPbGJ4UHFqQ190QU91Z0tXWGI0eXZEVEVCdGZEeGNmazBob3AxQTVtSzhVWElHS2Zvb2V1OHJKcERYbFZjX0dZUkJ4MUlhQTVkeWFNTDd5RFlHVWs1cjl2TnNFbHFMVFN4ZElxY0ZTN2QtY2RDYll3aXF2TmVPZHNxcGlQMWlNa3ZfNjBwcGNfbUxncXhFenNqWGhnYm41QkFrdllzNUdHSDRMRktKczU5cmdMVQ?oc=5",
-        "publicado": "2026-08-12",
-        "dias": 1
-      },
-      {
-        "titulo": "Disney Celebra chega a Curitiba em dezembro com ingressos a partir de R$ 25; vendas começam em agosto - G1",
-        "veiculo": "G1",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQzBELXBveVEyV0lWTDR2blJLZHFLM3ZRYm1Uc29VWUFjaWx4Z2tfLTg0UDVTYWFWbF9QOHFIQWozMVdJaWhNVFJJMTNhNkdnV2tMT3dFUVdXbEZ1MHRabUlndEZtbHFoT0ZYVklOZk55YTZPTEx5cjJGOXBicDh6WVh3UVhFaFBNV05YZHRjYWJqNGtTZml4NWxGYjN5aFFjXzJJekttdUgzS3PSAboBQVVfeXFMTlZMTUE2SDR4bVhla0h2bDZoQV9nTk9pYng4T2NCcndmT0hjLXItYjZ1WWJ6NFg2NkRUcWJ4V2JHQjJPTGVTc1F2YjFMNkdjdFdXYXRBMTVfc0ZqeFBwcjFMS1Y4UThIWngyVC1aV2YzaEVGSjdSR2t0TXpaNk9HQnk1ajRlMUtMMWRWTkpMYjdabFVKWXVKUlJCaEJkS1N4MVRaRzdBTWtjMF9NZFdsTHNEQWJ4NFp0U1VR?oc=5",
-        "publicado": "2026-08-12",
-        "dias": 1
-      },
-      {
-        "titulo": "Justiça aceita denúncia, e vereadora de Curitiba vira ré por xenofobia contra colega nascida no Ceará - G1",
-        "veiculo": "G1",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPOXBjcW9KOUJZZjJUeTFSQVVfeV8wOHpVejAtZkJsSU01SmN5enAzV2ZfY1otT2xhX1BNQjlZVU03bFhSZS1sUnRwa1V4UkI0Wl9UNUNWTVJNaFRJQ2lrS1VRSFJ2ZGhNVEVpN1BiS0dIenJ2Z25yRGx2azdQcFZRUjFWUDVjSy1NdFF5cXVpY2ZXTUd2Y3huNTlwYURwSy1MXzhUWmoyNmhxZTF40gG7AUFVX3lxTE8zRFRKWExZVXRyU3p5RC1tRzdqTjlhSzVsaGdUQVppSnM5Z0NaR2IxclZaSTlKcHpoVmVkcC1qM19SRUJKNXh6ZUJ1cnVWM2U2aWd0Y2VFMDU0NW1GVlZ3b2UySkxzcEs0eFNvc01mR0ZXSXZ1RkdLcWExX1J6d0tjdW0xQlp0dkVLTFhDbGJMNWloblIwbHRMeW83UmdkNWpXV2hkTFZnUzQ0Z0NUblpwVXI4bUJ4ckJqTFk?oc=5",
-        "publicado": "2026-08-12",
-        "dias": 1
-      },
-      {
-        "titulo": "Com investimento de R$ 50 milhões, supermercado é inaugurado em Curitiba e amplia geração de empregos - Prefeitura de Curitiba",
-        "veiculo": "Prefeitura de Curitiba",
-        "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQRHRfYV9lRzRtMWppQ1JnUHROYkQwcXAyU3UteWpqRjlWVVRHUHBJdnpyMzJwSVlXWG1MZ2V6eVYtNUNBa0pEWkY5cURzN29OcjB0WVVhSU5VSFhvZE9WcTh6SWtBeTJvUlhuUDgzbDNsWjI2cnRPMWY3M3pYTDM1aldsbjFHYlFRLXdtcEFrYkMyVlZ2RDBpNndrZkRaNEpBNWc1Njc2Z1ZTdS1zLUVjSUpIcHhRVHctaFFYaHQzNUdwSFFKdGVPXzB1OGdLSlJlLU5GOHhNOVU1d20tSWc?oc=5",
-        "publicado": "2026-08-12",
-        "dias": 1
-      },
-      {
-        "titulo": "Polícia prende suspeito de homicídio após agressão com madeira em Curitiba - G1",
-        "veiculo": "G1",
-        "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOWnNieHVhcm9LbHhXWV8zdDNLT0FqOG85TzVkYnAxYlRDd3VORC0tendvYlMzb0lvcWJ2d1JFYUdtbHJVRlBOVGFHd0h0SlZkTTZRRVZZVmIwZHhSbDdNVUFSU1k2YnRYZVh6VmlGUzRhek5QWVhRR2NmYmJhdnlsRWpnXzRXUC1EX0xTWl9Zenk2SWpodEdhcTFJdXBZWDJQRGVNaE1yYXY2aWFfclplZzg5WDdmcXhnV1V2MEVJS21tZkNCbUI1M3RqV0JqR0lDR3BDRzFPaHRiNE1FQjdFdE10NNIB8gFBVV95cUxQZExOc291Ry1RdGFLdjZObWVqUl9kRW5HR09ya3RLQ240b3RxN05iaU5HUVQyaWw1bG03Z1Frc3VNR0VqLTRxQzNkTFQ5eGZwWEpzNU53dC1uMFg0U0NHY3hUNy1BTjNaOXQzUlc0azB2RjNvYV9yZ1UwQ3RkcTkxUmcwOXYwd3JZOXRjZzVRMFNWa3VRWXNMS3ZYQzgyYW5YYmpaaXpMLXNwLUxNU2FBWXlLS0dqejhoT3hfREVIUzIzOEZHYU1KOXdjelVZTXBDNUkzQ2UyME9pNXQ0WE9SYVZlckkzeEpXQ00yc0NjM3h4QQ?oc=5",
-        "publicado": "2026-08-12",
-        "dias": 1
-      },
-      {
-        "titulo": "Câmara de Curitiba empossa a 8ª “legislatura” do Parlamento Jovem - Câmara de Curitiba",
-        "veiculo": "Câmara de Curitiba",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOVzEtMzlUamtIX1VpcFhsbG5KWlRPNmlOdjY1SjhkUTl2TVNHM3ljNGh1ZmxvUW1TTHBFMnVyOEdiVnJRM0phZ2hseDNGTzl6QVlVeWxEcHhiVGRQQ3k3bzRrVjBkQ2trcTZrYmZIVUw4aHZqcjlsUlNZN3dRUVZGTVg0b3o2VHlnSjJPNzl5MjVkUU1rZ05wTnZMbS1wYW5KY1hSVTJkS2hDNXgybjNUc09YU1RnWXhYUmc?oc=5",
-        "publicado": "2026-08-12",
-        "dias": 1
-      },
-      {
-        "titulo": "Prefeitura de Curitiba amplia forma de agendamento da aplicação de ferro endovenoso - Prefeitura de Curitiba",
-        "veiculo": "Prefeitura de Curitiba",
-        "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQNFh1Zk9aaWpUOVVBS0RlOWNRZ3JvNV9CdjNYWE5xN0RFdVRrOG9JZ1JocFhZNkdSa3VPWjhSN2V2dmVMbHYtNU1hYXVOSVU2YVhnZ3JjYVUxcXIweHNrSHhHbFlVVXl1UEpKRTdVTGtmanROaUh3RGljRlMxWDZWZ05vTDBlLVo1V3FTRHRCeExXVUd5MWlBTFVDSnQyWGotU1U0U3NtRHhTejBaVFJxclRwMUpmbGd6TE9wMGJ4RlE4c1BpMVF4WQ?oc=5",
-        "publicado": "2026-08-12",
-        "dias": 1
-      },
-      {
-        "titulo": "Quem são os candidatos ao Senado pelo Paraná (PR) nas eleições de 2026 - JOTA Info",
-        "veiculo": "JOTA Info",
-        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQTFJIbS1wTjVCdVlhWUhKU0V5ZjFQUnMtSmJVRDZjMnFNWVZfdmwxSWwwZU1YaGotUXJSdGM1bFNFNF9PeU1QUzl1Y0hBdlh0NkJKUWMzZnJUSXlWMkpmM2E0MkRXdWNjazI2cC1ldDczdHNaLWxpYllPdmV4aHh5cnB0Uko2Vklad3g1WXZXWlFVOGM3UXl4dVh6bjNQZnYxVm9DMk83LWtoSGtJdEh3aWIyZGJ6S1JjV1BYOQ?oc=5",
-        "publicado": "2026-08-12",
-        "dias": 1
-      },
-      {
-        "titulo": "Trânsito em Curitiba hoje: Portão tem rua interditada por 60 dias e mais 3 bairros com obras - Tribuna do Paraná",
-        "veiculo": "Tribuna do Paraná",
-        "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQeFp3R0dkVTNCbWpkN3RvNXRQOWpZRWFVUjV1bVF0VWtYMTNXcHhaRzcycG53QTJIaDBna0NFR1FvM3ZuMlBDMHczNElVOTE2cERITXJHbnVLbjN4bDNEYkNnYW9tYy1mY0NBalkxU08tT1pZVWxYSUZFeURmQWxnc1MtY054Yk5zWDVFTGNZSXJzOW52c00wMDJ6X2JxQ3FTNEJ0WkRaNVVjSENtTVZOVGtTWjVyQ0oyZENwTnZNQWkwVFZ4QzF3U05R0gHPAUFVX3lxTE53V3J1cTJKWkpDVjJGR0VjNTM1MWFBUjdJU2V0WWUxYUZsSkZWSFRHUW1QSEt3ZzFRalkyUHhzSWxOX0d0NGsyT2JXT2xJQXBSdnNWZl8yR3ZwVDJhLTNvTU5ham1lc1pvaTlyM2VKTHptdzNtUEZNRE5vZG1HaUlJWks4VV9Yb2N4eTJ6dS1JcVJpRW44MllxN2pLQWhRWEZ3b1RjMUotbUxyUzNrWDNIWVJGdWdrSnVWVEFqcE9GUW1WQmJGNVFmblljbW5RUQ?oc=5",
-        "publicado": "2026-08-12",
-        "dias": 1
-      },
-      {
-        "titulo": "Semana Literária Sesc começa em Curitiba e no PR - O Paraná",
-        "veiculo": "O Paraná",
-        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNQnJEZWVnMnVXMmsyQ3ZBdEJWV0tMaTB0RXlLUVlhQTJBd1ZJZHBETS15RmZpeXd1aU9MRFIyRGpyS0RxMFVjSTJhS0tER2xaNEJXc0luVzBzY2hqbkpwQktpRkR4QU5MVllTN19feEpwdHlSSVM4TVhlZTJZa3dZVlRwem9nRUMwSnZVNEdzV0NHV3E1RzBpd253TQ?oc=5",
-        "publicado": "2026-08-12",
-        "dias": 1
-      },
-      {
-        "titulo": "Megaoperação da PM mira tráfico e roubos no Centro de Curitiba - Tribuna do Paraná",
-        "veiculo": "Tribuna do Paraná",
-        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOOEt0OVZIaFhFaGhFM1VxVXFtLXZYMVlvTGlEUHhJZ09QcFBPOVBKSjZDQVBlcE82bk5JcU9ROVlma3VYOXpvVFRCNzB6S1ZSRFFNVFowcTRqXzlUdFVHRzNWM3Q0dkhLZFg0Z1ZsZng4dVlGM2xQbXlzemtLQjBOMFNSVHQ3bVlYbTNYV3M5VGlpNTDSAZgBQVVfeXFMTy1nSzd6RC01XzFhdDNHSy1WN0RXYjhscDBlSnJZdUtKRDdNTUl5cXRzblNIcTlzMUdEUmhBbF9Bc0FQT3d1bndfSXhzblZqaENMWVdIenluUlZwTFBHcnZYcDZmOEVuNGFNZHBDelQzR1c2dWNweFNvSk9qVE1jRDRiQk5ycDU1dDFuV0d4aHc4ejBPUHZaOTA?oc=5",
         "publicado": "2026-08-12",
         "dias": 1
       }
@@ -1749,7 +1791,7 @@
       "tipo": "PREENCHER",
       "proprio": false,
       "nota": 4.8,
-      "avaliacoes": 1196,
+      "avaliacoes": 1195,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -1819,7 +1861,7 @@
       "tipo": "PREENCHER",
       "proprio": false,
       "nota": 4.9,
-      "avaliacoes": 662,
+      "avaliacoes": 677,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -1859,7 +1901,7 @@
       "tipo": "PREENCHER",
       "proprio": false,
       "nota": 4.5,
-      "avaliacoes": 583,
+      "avaliacoes": 586,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -2271,6 +2313,37 @@
       }
     ],
     "quem_mais_ganhou": [],
-    "contador_caiu": []
+    "contador_caiu": [
+      {
+        "local_id": "julio_cavichiolo_ortodonti",
+        "nome": "Julio Cavichiolo | Ortodontia | Estética | Implante Dentário | Dentista em Novo Mundo | Curitiba PR",
+        "proprio": false,
+        "aparelho": true,
+        "de": "2026-08-12",
+        "ate": "2026-08-13",
+        "dias": 1,
+        "antes": 1196,
+        "agora": 1195,
+        "delta": -1,
+        "nota_antes": 4.8,
+        "nota_agora": 4.8,
+        "ritmo_do_periodo": 0.0,
+        "historico": {
+          "desde": "2026-08-12",
+          "ate": "2026-08-13",
+          "dias": 1,
+          "medicoes": 2,
+          "antes": 1196,
+          "agora": 1195,
+          "delta": -1,
+          "ritmo_do_periodo": 0.0,
+          "nota_antes": 4.8,
+          "nota_agora": 4.8
+        },
+        "eventos": [
+          "o contador CAIU 1 — avaliação removida"
+        ]
+      }
+    ]
   }
 }

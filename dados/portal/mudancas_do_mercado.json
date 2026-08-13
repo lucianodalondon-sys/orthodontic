@@ -8,10 +8,10 @@
   "salto_nota": 0.2,
   "base_minima": 20
  },
- "eventos_total": 25,
+ "eventos_total": 24,
  "por_tipo": {
   "linha_de_base_anuncios": 22,
-  "concorrente_acelerou": 2,
+  "concorrente_acelerou": 1,
   "rodadas_nao_comparaveis": 1
  },
  "por_praca": [
@@ -25,42 +25,54 @@
   {
    "praca_id": "contagem",
    "rotulo": "MG · Contagem",
-   "eventos": 2,
+   "eventos": 1,
    "estado": "medido",
-   "janela": "2026-08-08 → 2026-08-13",
-   "medicoes_da_praca": 2,
-   "clinicas_antes": 135,
-   "clinicas_agora": 135,
-   "comparaveis": 134,
-   "estabilidade_pct": 99,
-   "aviso_de_metodo": "a varredura devolveu 135 clínicas em 2026-08-08 e 135 em 2026-08-13, com 134 em comum (99%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
+   "janela": "2026-08-12 → 2026-08-13",
+   "medicoes_da_praca": 4,
+   "clinicas_antes": 16,
+   "clinicas_agora": 16,
+   "comparaveis": 16,
+   "estabilidade_pct": 100,
+   "aviso_de_metodo": "a varredura devolveu 16 clínicas em 2026-08-12 e 16 em 2026-08-13, com 16 em comum (100%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
   },
   {
    "praca_id": "cuiaba",
    "rotulo": "MT · Cuiabá",
-   "eventos": 2,
+   "eventos": 1,
    "estado": "medido",
-   "janela": "2026-08-08 → 2026-08-13",
-   "medicoes_da_praca": 2,
-   "clinicas_antes": 243,
-   "clinicas_agora": 145,
-   "comparaveis": 130,
-   "estabilidade_pct": 53,
-   "aviso_de_metodo": "a varredura devolveu 243 clínicas em 2026-08-08 e 145 em 2026-08-13, com 130 em comum (53%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
+   "janela": "2026-08-12 → 2026-08-13",
+   "medicoes_da_praca": 4,
+   "clinicas_antes": 29,
+   "clinicas_agora": 29,
+   "comparaveis": 29,
+   "estabilidade_pct": 100,
+   "aviso_de_metodo": "a varredura devolveu 29 clínicas em 2026-08-12 e 29 em 2026-08-13, com 29 em comum (100%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
   },
   {
    "praca_id": "curitiba",
    "rotulo": "PR · Curitiba",
-   "eventos": 1,
-   "estado": "linha_de_base",
-   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+   "eventos": 2,
+   "estado": "medido",
+   "janela": "2026-08-12 → 2026-08-13",
+   "medicoes_da_praca": 2,
+   "clinicas_antes": 19,
+   "clinicas_agora": 19,
+   "comparaveis": 19,
+   "estabilidade_pct": 100,
+   "aviso_de_metodo": "a varredura devolveu 19 clínicas em 2026-08-12 e 19 em 2026-08-13, com 19 em comum (100%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
   },
   {
    "praca_id": "feira",
    "rotulo": "BA · Feira de Santana",
    "eventos": 1,
-   "estado": "linha_de_base",
-   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+   "estado": "medido",
+   "janela": "2026-08-12 → 2026-08-13",
+   "medicoes_da_praca": 6,
+   "clinicas_antes": 22,
+   "clinicas_agora": 22,
+   "comparaveis": 22,
+   "estabilidade_pct": 100,
+   "aviso_de_metodo": "a varredura devolveu 22 clínicas em 2026-08-12 e 22 em 2026-08-13, com 22 em comum (100%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
   },
   {
    "praca_id": "florianopolis",
@@ -73,92 +85,170 @@
    "praca_id": "goiania",
    "rotulo": "GO · Goiânia",
    "eventos": 1,
-   "estado": "linha_de_base",
-   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+   "estado": "medido",
+   "janela": "2026-08-12 → 2026-08-13",
+   "medicoes_da_praca": 2,
+   "clinicas_antes": 18,
+   "clinicas_agora": 18,
+   "comparaveis": 18,
+   "estabilidade_pct": 100,
+   "aviso_de_metodo": "a varredura devolveu 18 clínicas em 2026-08-12 e 18 em 2026-08-13, com 18 em comum (100%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
   },
   {
    "praca_id": "imperatriz",
    "rotulo": "MA · Imperatriz",
    "eventos": 1,
-   "estado": "linha_de_base",
-   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+   "estado": "medido",
+   "janela": "2026-08-12 → 2026-08-13",
+   "medicoes_da_praca": 4,
+   "clinicas_antes": 13,
+   "clinicas_agora": 14,
+   "comparaveis": 13,
+   "estabilidade_pct": 93,
+   "aviso_de_metodo": "a varredura devolveu 13 clínicas em 2026-08-12 e 14 em 2026-08-13, com 13 em comum (93%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
   },
   {
    "praca_id": "joinville",
    "rotulo": "SC · Joinville",
    "eventos": 1,
-   "estado": "linha_de_base",
-   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+   "estado": "medido",
+   "janela": "2026-08-12 → 2026-08-13",
+   "medicoes_da_praca": 2,
+   "clinicas_antes": 16,
+   "clinicas_agora": 17,
+   "comparaveis": 16,
+   "estabilidade_pct": 94,
+   "aviso_de_metodo": "a varredura devolveu 16 clínicas em 2026-08-12 e 17 em 2026-08-13, com 16 em comum (94%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
   },
   {
    "praca_id": "juazeiro_do_norte",
    "rotulo": "CE · Juazeiro do Norte",
    "eventos": 1,
-   "estado": "linha_de_base",
-   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+   "estado": "medido",
+   "janela": "2026-08-12 → 2026-08-13",
+   "medicoes_da_praca": 4,
+   "clinicas_antes": 14,
+   "clinicas_agora": 14,
+   "comparaveis": 14,
+   "estabilidade_pct": 100,
+   "aviso_de_metodo": "a varredura devolveu 14 clínicas em 2026-08-12 e 14 em 2026-08-13, com 14 em comum (100%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
   },
   {
    "praca_id": "londrina",
    "rotulo": "PR · Londrina",
    "eventos": 1,
-   "estado": "linha_de_base",
-   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+   "estado": "medido",
+   "janela": "2026-08-12 → 2026-08-13",
+   "medicoes_da_praca": 6,
+   "clinicas_antes": 24,
+   "clinicas_agora": 24,
+   "comparaveis": 24,
+   "estabilidade_pct": 100,
+   "aviso_de_metodo": "a varredura devolveu 24 clínicas em 2026-08-12 e 24 em 2026-08-13, com 24 em comum (100%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
   },
   {
    "praca_id": "macapa",
    "rotulo": "AP · Macapá",
    "eventos": 1,
-   "estado": "linha_de_base",
-   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+   "estado": "medido",
+   "janela": "2026-08-12 → 2026-08-13",
+   "medicoes_da_praca": 4,
+   "clinicas_antes": 14,
+   "clinicas_agora": 14,
+   "comparaveis": 14,
+   "estabilidade_pct": 100,
+   "aviso_de_metodo": "a varredura devolveu 14 clínicas em 2026-08-12 e 14 em 2026-08-13, com 14 em comum (100%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
   },
   {
    "praca_id": "mafra",
    "rotulo": "SC · Mafra",
    "eventos": 1,
-   "estado": "linha_de_base",
-   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+   "estado": "medido",
+   "janela": "2026-08-12 → 2026-08-13",
+   "medicoes_da_praca": 6,
+   "clinicas_antes": 15,
+   "clinicas_agora": 15,
+   "comparaveis": 15,
+   "estabilidade_pct": 100,
+   "aviso_de_metodo": "a varredura devolveu 15 clínicas em 2026-08-12 e 15 em 2026-08-13, com 15 em comum (100%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
   },
   {
    "praca_id": "maraba",
    "rotulo": "PA · Marabá",
    "eventos": 1,
-   "estado": "linha_de_base",
-   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+   "estado": "medido",
+   "janela": "2026-08-12 → 2026-08-13",
+   "medicoes_da_praca": 4,
+   "clinicas_antes": 14,
+   "clinicas_agora": 14,
+   "comparaveis": 14,
+   "estabilidade_pct": 100,
+   "aviso_de_metodo": "a varredura devolveu 14 clínicas em 2026-08-12 e 14 em 2026-08-13, com 14 em comum (100%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
   },
   {
    "praca_id": "palmas",
    "rotulo": "TO · Palmas",
    "eventos": 1,
-   "estado": "linha_de_base",
-   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+   "estado": "medido",
+   "janela": "2026-08-12 → 2026-08-13",
+   "medicoes_da_praca": 4,
+   "clinicas_antes": 14,
+   "clinicas_agora": 14,
+   "comparaveis": 14,
+   "estabilidade_pct": 100,
+   "aviso_de_metodo": "a varredura devolveu 14 clínicas em 2026-08-12 e 14 em 2026-08-13, com 14 em comum (100%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
   },
   {
    "praca_id": "parauapebas",
    "rotulo": "PA · Parauapebas",
    "eventos": 1,
-   "estado": "linha_de_base",
-   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+   "estado": "medido",
+   "janela": "2026-08-12 → 2026-08-13",
+   "medicoes_da_praca": 4,
+   "clinicas_antes": 14,
+   "clinicas_agora": 14,
+   "comparaveis": 14,
+   "estabilidade_pct": 100,
+   "aviso_de_metodo": "a varredura devolveu 14 clínicas em 2026-08-12 e 14 em 2026-08-13, com 14 em comum (100%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
   },
   {
    "praca_id": "porto_alegre",
    "rotulo": "RS · Porto Alegre",
    "eventos": 1,
-   "estado": "linha_de_base",
-   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+   "estado": "medido",
+   "janela": "2026-08-12 → 2026-08-13",
+   "medicoes_da_praca": 2,
+   "clinicas_antes": 21,
+   "clinicas_agora": 21,
+   "comparaveis": 21,
+   "estabilidade_pct": 100,
+   "aviso_de_metodo": "a varredura devolveu 21 clínicas em 2026-08-12 e 21 em 2026-08-13, com 21 em comum (100%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
   },
   {
    "praca_id": "prudente",
    "rotulo": "SP · Presidente Prudente",
    "eventos": 1,
-   "estado": "linha_de_base",
-   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+   "estado": "medido",
+   "janela": "2026-08-12 → 2026-08-13",
+   "medicoes_da_praca": 6,
+   "clinicas_antes": 25,
+   "clinicas_agora": 25,
+   "comparaveis": 25,
+   "estabilidade_pct": 100,
+   "aviso_de_metodo": "a varredura devolveu 25 clínicas em 2026-08-12 e 25 em 2026-08-13, com 25 em comum (100%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
   },
   {
    "praca_id": "rio_branco",
    "rotulo": "AC · Rio Branco",
    "eventos": 1,
-   "estado": "linha_de_base",
-   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+   "estado": "medido",
+   "janela": "2026-08-12 → 2026-08-13",
+   "medicoes_da_praca": 4,
+   "clinicas_antes": 14,
+   "clinicas_agora": 14,
+   "comparaveis": 14,
+   "estabilidade_pct": 100,
+   "aviso_de_metodo": "a varredura devolveu 14 clínicas em 2026-08-12 e 14 em 2026-08-13, com 14 em comum (100%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
   },
   {
    "praca_id": "rio_de_janeiro",
@@ -178,8 +268,14 @@
    "praca_id": "sorocaba",
    "rotulo": "SP · Sorocaba",
    "eventos": 1,
-   "estado": "linha_de_base",
-   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+   "estado": "medido",
+   "janela": "2026-08-12 → 2026-08-13",
+   "medicoes_da_praca": 2,
+   "clinicas_antes": 17,
+   "clinicas_agora": 17,
+   "comparaveis": 17,
+   "estabilidade_pct": 100,
+   "aviso_de_metodo": "a varredura devolveu 17 clínicas em 2026-08-12 e 17 em 2026-08-13, com 17 em comum (100%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
   },
   {
    "praca_id": "uberlandia",
@@ -221,42 +317,6 @@
    }
   },
   {
-   "evento_id": "contagem|concorrente_acelerou|ChIJV6ERtJKVpgARt5eabTvQZ3Y",
-   "data": "2026-08-13",
-   "praca_id": "contagem",
-   "rotulo": "MG · Contagem",
-   "local_id": null,
-   "entidade_id": "ChIJV6ERtJKVpgARt5eabTvQZ3Y",
-   "tipo": "concorrente_acelerou",
-   "natureza": "fato",
-   "severidade": "alta",
-   "titulo": "Vitae Center Clínica Médica e Odontológica acelerou",
-   "fato": "ganhou 26 avaliações entre 2026-08-08 e 2026-08-13 — de 3837 para 3863",
-   "por_que_importa": "rival de aparelho ganhando atenção no mesmo mercado",
-   "decisao": "ver o que ele está publicando e anunciando",
-   "fonte": "dados/serie/categoria.jsonl",
-   "evidencia": {
-    "place_id": "ChIJV6ERtJKVpgARt5eabTvQZ3Y",
-    "antes": 3837,
-    "agora": 3863
-   },
-   "confianca": {
-    "natureza": "fato",
-    "confianca": "alta",
-    "medido": true,
-    "amostra": 3863,
-    "janela_dias": 5,
-    "medicoes": 2,
-    "fonte": "dados/serie/categoria.jsonl (2026-08-08 → 2026-08-13)",
-    "a_favor": [
-     "135 clínicas medidas nas duas rodadas"
-    ],
-    "contra": [],
-    "o_que_aumentaria": null,
-    "procedencia": "medido em 3863 avaliações nesta clínica, 2 medições, 5 dias de janela"
-   }
-  },
-  {
    "evento_id": "contagem|linha_de_base_anuncios|-",
    "data": "2026-08-13",
    "praca_id": "contagem",
@@ -287,42 +347,6 @@
    }
   },
   {
-   "evento_id": "cuiaba|concorrente_acelerou|ChIJ69guJYixnZMRnsvy09GVFEg",
-   "data": "2026-08-13",
-   "praca_id": "cuiaba",
-   "rotulo": "MT · Cuiabá",
-   "local_id": null,
-   "entidade_id": "ChIJ69guJYixnZMRnsvy09GVFEg",
-   "tipo": "concorrente_acelerou",
-   "natureza": "fato",
-   "severidade": "media",
-   "titulo": "Odonto Alfa - Clínica Odontológica em Cuiabá acelerou",
-   "fato": "ganhou 36 avaliações entre 2026-08-08 e 2026-08-13 — de 75 para 111",
-   "por_que_importa": "clínica odontológica ganhando atenção; nem toda disputa aparelho",
-   "decisao": "ver o que ele está publicando e anunciando",
-   "fonte": "dados/serie/categoria.jsonl",
-   "evidencia": {
-    "place_id": "ChIJ69guJYixnZMRnsvy09GVFEg",
-    "antes": 75,
-    "agora": 111
-   },
-   "confianca": {
-    "natureza": "fato",
-    "confianca": "alta",
-    "medido": true,
-    "amostra": 111,
-    "janela_dias": 5,
-    "medicoes": 2,
-    "fonte": "dados/serie/categoria.jsonl (2026-08-08 → 2026-08-13)",
-    "a_favor": [
-     "145 clínicas medidas nas duas rodadas"
-    ],
-    "contra": [],
-    "o_que_aumentaria": null,
-    "procedencia": "medido em 111 avaliações nesta clínica, 2 medições, 5 dias de janela"
-   }
-  },
-  {
    "evento_id": "cuiaba|linha_de_base_anuncios|-",
    "data": "2026-08-13",
    "praca_id": "cuiaba",
@@ -350,6 +374,42 @@
     "contra": [],
     "o_que_aumentaria": null,
     "procedencia": "medido em 48 anúncios no ar, 1 medição"
+   }
+  },
+  {
+   "evento_id": "curitiba|concorrente_acelerou|ChIJHc8bA-jv3JQR38D6NMsdEq8",
+   "data": "2026-08-13",
+   "praca_id": "curitiba",
+   "rotulo": "PR · Curitiba",
+   "local_id": null,
+   "entidade_id": "ChIJHc8bA-jv3JQR38D6NMsdEq8",
+   "tipo": "concorrente_acelerou",
+   "natureza": "fato",
+   "severidade": "alta",
+   "titulo": "Dra. Vladja Torno | Facetas em Resina Composta em Curitiba acelerou",
+   "fato": "ganhou 15 avaliações entre 2026-08-12 e 2026-08-13 — de 662 para 677",
+   "por_que_importa": "rival de aparelho ganhando atenção no mesmo mercado",
+   "decisao": "ver o que ele está publicando e anunciando",
+   "fonte": "dados/serie/categoria.jsonl",
+   "evidencia": {
+    "place_id": "ChIJHc8bA-jv3JQR38D6NMsdEq8",
+    "antes": 662,
+    "agora": 677
+   },
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "alta",
+    "medido": true,
+    "amostra": 677,
+    "janela_dias": 1,
+    "medicoes": 2,
+    "fonte": "dados/serie/categoria.jsonl (2026-08-12 → 2026-08-13)",
+    "a_favor": [
+     "19 clínicas medidas nas duas rodadas"
+    ],
+    "contra": [],
+    "o_que_aumentaria": null,
+    "procedencia": "medido em 677 avaliações nesta clínica, 2 medições, 1 dia de janela"
    }
   },
   {

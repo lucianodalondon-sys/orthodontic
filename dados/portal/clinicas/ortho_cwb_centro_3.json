@@ -737,6 +737,42 @@
   "movimentos": {
     "eventos": [
       {
+        "evento_id": "curitiba|concorrente_acelerou|ChIJHc8bA-jv3JQR38D6NMsdEq8",
+        "data": "2026-08-13",
+        "praca_id": "curitiba",
+        "rotulo": "PR · Curitiba",
+        "local_id": null,
+        "entidade_id": "ChIJHc8bA-jv3JQR38D6NMsdEq8",
+        "tipo": "concorrente_acelerou",
+        "natureza": "fato",
+        "severidade": "alta",
+        "titulo": "Dra. Vladja Torno | Facetas em Resina Composta em Curitiba acelerou",
+        "fato": "ganhou 15 avaliações entre 2026-08-12 e 2026-08-13 — de 662 para 677",
+        "por_que_importa": "rival de aparelho ganhando atenção no mesmo mercado",
+        "decisao": "ver o que ele está publicando e anunciando",
+        "fonte": "dados/serie/categoria.jsonl",
+        "evidencia": {
+          "place_id": "ChIJHc8bA-jv3JQR38D6NMsdEq8",
+          "antes": 662,
+          "agora": 677
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "alta",
+          "medido": true,
+          "amostra": 677,
+          "janela_dias": 1,
+          "medicoes": 2,
+          "fonte": "dados/serie/categoria.jsonl (2026-08-12 → 2026-08-13)",
+          "a_favor": [
+            "19 clínicas medidas nas duas rodadas"
+          ],
+          "contra": [],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 677 avaliações nesta clínica, 2 medições, 1 dia de janela"
+        }
+      },
+      {
         "evento_id": "curitiba|linha_de_base_anuncios|-",
         "data": "2026-08-13",
         "praca_id": "curitiba",
@@ -771,9 +807,15 @@
     "resumo": {
       "praca_id": "curitiba",
       "rotulo": "PR · Curitiba",
-      "eventos": 1,
-      "estado": "linha_de_base",
-      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+      "eventos": 2,
+      "estado": "medido",
+      "janela": "2026-08-12 → 2026-08-13",
+      "medicoes_da_praca": 2,
+      "clinicas_antes": 19,
+      "clinicas_agora": 19,
+      "comparaveis": 19,
+      "estabilidade_pct": 100,
+      "aviso_de_metodo": "a varredura devolveu 19 clínicas em 2026-08-12 e 19 em 2026-08-13, com 19 em comum (100%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
     }
   },
   "execucao": null,
@@ -802,24 +844,6 @@
   },
   "acoes": {
     "arcos": [
-      {
-        "arco_id": "ortho_cwb_centro_3|posicao",
-        "local_id": "ortho_cwb_centro_3",
-        "praca_id": "curitiba",
-        "gatilho": "posicao",
-        "problema": "3º lugar de 5 clínicas medidas na praça",
-        "evidencia": "dados/serie/fila_historico.jsonl",
-        "aberto_em": "2026-08-13",
-        "metrica": "posicao",
-        "antes": 3.0,
-        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
-        "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
-        "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": null,
-        "medido_em": null,
-        "veredito": "aberto",
-        "dias": 0
-      },
       {
         "arco_id": "ortho_cwb_centro_3|nao_engatou",
         "local_id": "ortho_cwb_centro_3",
@@ -852,6 +876,24 @@
         "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": 5.3,
+        "medido_em": "2026-08-13",
+        "veredito": "cedo_demais",
+        "dias": 0
+      },
+      {
+        "arco_id": "ortho_cwb_centro_3|posicao",
+        "local_id": "ortho_cwb_centro_3",
+        "praca_id": "curitiba",
+        "gatilho": "posicao",
+        "problema": "3º lugar de 5 clínicas medidas na praça",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": "posicao",
+        "antes": 3.0,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": 3.0,
         "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
         "dias": 0
@@ -1447,6 +1489,14 @@
       "quem": "fila",
       "texto": "alerta aberto: Está na metade de baixo da própria praça",
       "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-13",
+      "tipo": "rival_queda",
+      "quem": "rival",
+      "nome": "Julio Cavichiolo | Ortodontia | Estética | Implante Dentário | Dentista em Novo Mundo | Curitiba PR",
+      "texto": "Julio Cavichiolo | Ortodontia | Estética | Implante Dentário | Dentista em Novo Mundo | Curitiba PR: o contador CAIU 1 (1196 → 1195) — avaliação apagada",
+      "fonte": "dados/serie/places.jsonl"
     },
     {
       "data": "2026-08-12",

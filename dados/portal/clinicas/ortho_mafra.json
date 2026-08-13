@@ -6,11 +6,11 @@
     "cidade": "SC · Mafra",
     "endereco": "Centro II - R. Felipe Schmidt, 1136 - Centro II Alto de Mafra, Mafra - SC, 89300-074",
     "desde": "15/jul",
-    "medicoes": 4,
+    "medicoes": 5,
     "posicao_na_cidade": null,
     "clinicas_na_cidade": null,
     "lojas_irmas": [],
-    "frase": "OrthoDontic é escutada desde 15/jul, em 4 medições."
+    "frase": "OrthoDontic é escutada desde 15/jul, em 5 medições."
   },
   "rotulo": "SC · Mafra",
   "unidade": "OrthoDontic",
@@ -84,9 +84,9 @@
     "nome": "OrthoDontic Mafra",
     "proprio": true,
     "aparelho": true,
-    "de": "2026-08-10",
-    "ate": "2026-08-12",
-    "dias": 2,
+    "de": "2026-08-12",
+    "ate": "2026-08-13",
+    "dias": 1,
     "antes": 155,
     "agora": 155,
     "delta": 0,
@@ -95,9 +95,9 @@
     "ritmo_do_periodo": 0.0,
     "historico": {
       "desde": "2026-07-15",
-      "ate": "2026-08-12",
-      "dias": 28,
-      "medicoes": 4,
+      "ate": "2026-08-13",
+      "dias": 29,
+      "medicoes": 5,
       "antes": 155,
       "agora": 155,
       "delta": 0,
@@ -521,13 +521,13 @@
       "confianca": "alta",
       "medido": true,
       "amostra": 55,
-      "janela_dias": 28,
-      "medicoes": 4,
+      "janela_dias": 29,
+      "medicoes": 5,
       "fonte": "dados/serie/reviews.jsonl",
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": "mais avaliações com texto nesta loja",
-      "procedencia": "medido em 55 avaliações com texto, 4 medições, 28 dias de janela"
+      "procedencia": "medido em 55 avaliações com texto, 5 medições, 29 dias de janela"
     }
   },
   "meu_territorio": {
@@ -640,8 +640,14 @@
       "praca_id": "mafra",
       "rotulo": "SC · Mafra",
       "eventos": 1,
-      "estado": "linha_de_base",
-      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+      "estado": "medido",
+      "janela": "2026-08-12 → 2026-08-13",
+      "medicoes_da_praca": 6,
+      "clinicas_antes": 15,
+      "clinicas_agora": 15,
+      "comparaveis": 15,
+      "estabilidade_pct": 100,
+      "aviso_de_metodo": "a varredura devolveu 15 clínicas em 2026-08-12 e 15 em 2026-08-13, com 15 em comum (100%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
     }
   },
   "execucao": null,

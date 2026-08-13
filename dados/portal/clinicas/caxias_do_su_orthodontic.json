@@ -250,14 +250,40 @@
     "praca_id": "caxias_do_sul",
     "rotulo": "RS · Caxias do Sul",
     "unidade": "OrthoDontic",
-    "avaliacoes_da_ficha": null,
-    "aparece_em": 0,
+    "avaliacoes_da_ficha": 362,
+    "aparece_em": 5,
     "de": 167,
-    "pct": 0,
-    "melhor_posicao": null,
-    "frases_onde_aparece": [],
-    "invisivel": true,
-    "frase_do_topo": "Esta loja **não aparece em nenhuma** das 167 buscas que testamos na cidade.",
+    "pct": 3,
+    "melhor_posicao": 1,
+    "frases_onde_aparece": [
+      {
+        "frase": "aparelho ortodontico caxias do sul",
+        "posicao": 1,
+        "intencao": "GENÉRICO"
+      },
+      {
+        "frase": "ortodontista caxias do sul",
+        "posicao": 1,
+        "intencao": "GENÉRICO"
+      },
+      {
+        "frase": "ortodontista em caxias do sul",
+        "posicao": 1,
+        "intencao": "GENÉRICO"
+      },
+      {
+        "frase": "dentista aparelho caxias do sul",
+        "posicao": 1,
+        "intencao": "GENÉRICO"
+      },
+      {
+        "frase": "dentista caxias do sul dentro de 800 m",
+        "posicao": 4,
+        "intencao": "GENÉRICO"
+      }
+    ],
+    "invisivel": false,
+    "frase_do_topo": "Esta loja aparece em **5 das 167 buscas** que testamos na cidade.",
     "confianca": {
       "natureza": "fato",
       "confianca": "media",
@@ -355,7 +381,7 @@
       "procedencia": "medido em 5 buscas testadas, 1 medição"
     },
     "na_cidade": {
-      "aparece_em": 0,
+      "aparece_em": 5,
       "de": 167
     }
   },
@@ -827,30 +853,6 @@
         }
       },
       {
-        "problema": "a leitura da cidade diz 0 de 167, e ela não vale nesta escala",
-        "e_marketing": true,
-        "execucao": {
-          "necessaria": false,
-          "tipo": "seo_local",
-          "porque_nao": "medida a partir do endereço da própria clínica, ela aparece em 3 buscas de 5, em 2 vezes em 1º lugar. Ninguém disputa o nome do município inteiro numa cidade deste tamanho: o paciente busca de onde está.",
-          "metrica_de_validacao": "a mesma grade de buscas, a partir do mesmo endereço",
-          "recoletar_em_dias": 60
-        },
-        "confianca": {
-          "natureza": "fato",
-          "confianca": "baixa",
-          "medido": true,
-          "amostra": 5,
-          "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/serie/perto_da_loja.jsonl",
-          "a_favor": [],
-          "contra": [],
-          "o_que_aumentaria": "mais frases por loja na próxima grade",
-          "procedencia": "medido em 5 buscas testadas, 1 medição"
-        }
-      },
-      {
         "problema": "8 avaliações negativas abertas sem resposta",
         "e_marketing": false,
         "execucao": {
@@ -878,7 +880,7 @@
     ],
     "de_marketing": 0,
     "de_operacao": 2,
-    "descartados": 1
+    "descartados": 0
   },
   "meu_bairro": {
     "bairro": "Centro",
@@ -905,24 +907,6 @@
   },
   "acoes": {
     "arcos": [
-      {
-        "arco_id": "caxias_do_su_orthodontic|posicao",
-        "local_id": "caxias_do_su_orthodontic",
-        "praca_id": "caxias_do_sul",
-        "gatilho": "posicao",
-        "problema": "2º lugar de 3 clínicas medidas na praça",
-        "evidencia": "dados/serie/fila_historico.jsonl",
-        "aberto_em": "2026-08-13",
-        "metrica": "posicao",
-        "antes": 2.0,
-        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
-        "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
-        "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": null,
-        "medido_em": null,
-        "veredito": "aberto",
-        "dias": 0
-      },
       {
         "arco_id": "orthodontic|nao_engatou",
         "local_id": "caxias_do_su_orthodontic",
@@ -955,6 +939,24 @@
         "acao_recomendada": "sem ação padrão para este gatilho",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": null,
+        "medido_em": "2026-08-13",
+        "veredito": "cedo_demais",
+        "dias": 0
+      },
+      {
+        "arco_id": "caxias_do_su_orthodontic|posicao",
+        "local_id": "caxias_do_su_orthodontic",
+        "praca_id": "caxias_do_sul",
+        "gatilho": "posicao",
+        "problema": "2º lugar de 3 clínicas medidas na praça",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": "posicao",
+        "antes": 2.0,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": 2.0,
         "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
         "dias": 0

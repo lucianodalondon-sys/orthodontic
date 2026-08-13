@@ -781,8 +781,14 @@
       "praca_id": "goiania",
       "rotulo": "GO · Goiânia",
       "eventos": 1,
-      "estado": "linha_de_base",
-      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+      "estado": "medido",
+      "janela": "2026-08-12 → 2026-08-13",
+      "medicoes_da_praca": 2,
+      "clinicas_antes": 18,
+      "clinicas_agora": 18,
+      "comparaveis": 18,
+      "estabilidade_pct": 100,
+      "aviso_de_metodo": "a varredura devolveu 18 clínicas em 2026-08-12 e 18 em 2026-08-13, com 18 em comum (100%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
     }
   },
   "execucao": {
@@ -1152,6 +1158,14 @@
     "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
   },
   "eventos": [
+    {
+      "data": "2026-08-13",
+      "tipo": "rival_contador",
+      "quem": "rival",
+      "nome": "Condé Clínica",
+      "texto": "Condé Clínica: ganhou 2 avaliações (826 → 828)",
+      "fonte": "dados/serie/places.jsonl"
+    },
     {
       "data": "2026-08-12",
       "tipo": "alerta",

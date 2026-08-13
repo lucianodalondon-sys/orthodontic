@@ -6,17 +6,17 @@
     "cidade": "MG · Contagem",
     "endereco": "Av. João César de Oliveira, 3239 - Eldorado, Contagem - MG, 32340-001",
     "desde": "8/ago",
-    "medicoes": 3,
+    "medicoes": 4,
     "posicao_na_cidade": null,
     "clinicas_na_cidade": null,
     "lojas_irmas": [],
-    "frase": "OrthoDontic é escutada desde 8/ago, em 3 medições."
+    "frase": "OrthoDontic é escutada desde 8/ago, em 4 medições."
   },
   "rotulo": "MG · Contagem",
   "unidade": "OrthoDontic",
   "cabecalho": {
     "nota": 4.6,
-    "avaliacoes": 857,
+    "avaliacoes": 859,
     "ritmo": 10.6,
     "meses_seguidos": 23,
     "posicao": 1,
@@ -76,31 +76,31 @@
     "nome": "OrthoDontic",
     "proprio": true,
     "aparelho": true,
-    "de": "2026-08-10",
-    "ate": "2026-08-12",
-    "dias": 2,
-    "antes": 856,
-    "agora": 857,
-    "delta": 1,
+    "de": "2026-08-12",
+    "ate": "2026-08-13",
+    "dias": 1,
+    "antes": 857,
+    "agora": 859,
+    "delta": 2,
     "nota_antes": 4.6,
     "nota_agora": 4.6,
-    "ritmo_do_periodo": 15.2,
+    "ritmo_do_periodo": 60.8,
     "historico": {
       "desde": "2026-08-08",
-      "ate": "2026-08-12",
-      "dias": 4,
-      "medicoes": 3,
+      "ate": "2026-08-13",
+      "dias": 5,
+      "medicoes": 4,
       "antes": 855,
-      "agora": 857,
-      "delta": 2,
-      "ritmo_do_periodo": 15.2,
+      "agora": 859,
+      "delta": 4,
+      "ritmo_do_periodo": 24.3,
       "nota_antes": 4.6,
       "nota_agora": 4.6
     },
     "eventos": [
-      "ganhou 1 avaliação em 2 dias"
+      "ganhou 2 avaliações em 1 dia"
     ],
-    "aviso": "a praça é medida há 4 dias (3 medições) — a leitura ainda diz pouco e engorda a cada coleta"
+    "aviso": "a praça é medida há 5 dias (4 medições) — a leitura ainda diz pouco e engorda a cada coleta"
   },
   "sem_resposta": {
     "abertas": 40,
@@ -489,7 +489,7 @@
     "praca_id": "contagem",
     "rotulo": "MG · Contagem",
     "unidade": "OrthoDontic",
-    "avaliacoes_da_ficha": 857,
+    "avaliacoes_da_ficha": 859,
     "aparece_em": 3,
     "de": 140,
     "pct": 2,
@@ -954,13 +954,13 @@
       "confianca": "alta",
       "medido": true,
       "amostra": 621,
-      "janela_dias": 4,
-      "medicoes": 3,
+      "janela_dias": 5,
+      "medicoes": 4,
       "fonte": "dados/serie/reviews.jsonl",
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": "mais avaliações com texto nesta loja",
-      "procedencia": "medido em 621 avaliações com texto, 3 medições, 4 dias de janela"
+      "procedencia": "medido em 621 avaliações com texto, 4 medições, 5 dias de janela"
     }
   },
   "meu_territorio": {
@@ -1025,42 +1025,6 @@
   "movimentos": {
     "eventos": [
       {
-        "evento_id": "contagem|concorrente_acelerou|ChIJV6ERtJKVpgARt5eabTvQZ3Y",
-        "data": "2026-08-13",
-        "praca_id": "contagem",
-        "rotulo": "MG · Contagem",
-        "local_id": null,
-        "entidade_id": "ChIJV6ERtJKVpgARt5eabTvQZ3Y",
-        "tipo": "concorrente_acelerou",
-        "natureza": "fato",
-        "severidade": "alta",
-        "titulo": "Vitae Center Clínica Médica e Odontológica acelerou",
-        "fato": "ganhou 26 avaliações entre 2026-08-08 e 2026-08-13 — de 3837 para 3863",
-        "por_que_importa": "rival de aparelho ganhando atenção no mesmo mercado",
-        "decisao": "ver o que ele está publicando e anunciando",
-        "fonte": "dados/serie/categoria.jsonl",
-        "evidencia": {
-          "place_id": "ChIJV6ERtJKVpgARt5eabTvQZ3Y",
-          "antes": 3837,
-          "agora": 3863
-        },
-        "confianca": {
-          "natureza": "fato",
-          "confianca": "alta",
-          "medido": true,
-          "amostra": 3863,
-          "janela_dias": 5,
-          "medicoes": 2,
-          "fonte": "dados/serie/categoria.jsonl (2026-08-08 → 2026-08-13)",
-          "a_favor": [
-            "135 clínicas medidas nas duas rodadas"
-          ],
-          "contra": [],
-          "o_que_aumentaria": null,
-          "procedencia": "medido em 3863 avaliações nesta clínica, 2 medições, 5 dias de janela"
-        }
-      },
-      {
         "evento_id": "contagem|linha_de_base_anuncios|-",
         "data": "2026-08-13",
         "praca_id": "contagem",
@@ -1095,15 +1059,15 @@
     "resumo": {
       "praca_id": "contagem",
       "rotulo": "MG · Contagem",
-      "eventos": 2,
+      "eventos": 1,
       "estado": "medido",
-      "janela": "2026-08-08 → 2026-08-13",
-      "medicoes_da_praca": 2,
-      "clinicas_antes": 135,
-      "clinicas_agora": 135,
-      "comparaveis": 134,
-      "estabilidade_pct": 99,
-      "aviso_de_metodo": "a varredura devolveu 135 clínicas em 2026-08-08 e 135 em 2026-08-13, com 134 em comum (99%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
+      "janela": "2026-08-12 → 2026-08-13",
+      "medicoes_da_praca": 4,
+      "clinicas_antes": 16,
+      "clinicas_agora": 16,
+      "comparaveis": 16,
+      "estabilidade_pct": 100,
+      "aviso_de_metodo": "a varredura devolveu 16 clínicas em 2026-08-12 e 16 em 2026-08-13, com 16 em comum (100%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
     }
   },
   "execucao": {
@@ -1459,6 +1423,13 @@
     "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
   },
   "eventos": [
+    {
+      "data": "2026-08-13",
+      "tipo": "contador",
+      "quem": "nossa",
+      "texto": "ganhou 2 avaliações (857 → 859)",
+      "fonte": "dados/serie/places.jsonl"
+    },
     {
       "data": "2026-08-12",
       "tipo": "contador",

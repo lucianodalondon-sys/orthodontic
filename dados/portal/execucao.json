@@ -44,30 +44,6 @@
      }
     },
     {
-     "problema": "a leitura da cidade diz 0 de 167, e ela não vale nesta escala",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": false,
-      "tipo": "seo_local",
-      "porque_nao": "medida a partir do endereço da própria clínica, ela aparece em 3 buscas de 5, em 2 vezes em 1º lugar. Ninguém disputa o nome do município inteiro numa cidade deste tamanho: o paciente busca de onde está.",
-      "metrica_de_validacao": "a mesma grade de buscas, a partir do mesmo endereço",
-      "recoletar_em_dias": 60
-     },
-     "confianca": {
-      "natureza": "fato",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 5,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/serie/perto_da_loja.jsonl",
-      "a_favor": [],
-      "contra": [],
-      "o_que_aumentaria": "mais frases por loja na próxima grade",
-      "procedencia": "medido em 5 buscas testadas, 1 medição"
-     }
-    },
-    {
      "problema": "8 avaliações negativas abertas sem resposta",
      "e_marketing": false,
      "execucao": {
@@ -95,7 +71,7 @@
    ],
    "de_marketing": 0,
    "de_operacao": 2,
-   "descartados": 1
+   "descartados": 0
   },
   {
    "local_id": "caxias_do_su_orthodontic_centro",
@@ -103,30 +79,6 @@
    "rotulo": "RS · Caxias do Sul",
    "unidade": "OrthoDontic · Av. Júlio de Castilhos",
    "itens": [
-    {
-     "problema": "a leitura da cidade diz 0 de 167, e ela não vale nesta escala",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": false,
-      "tipo": "seo_local",
-      "porque_nao": "medida a partir do endereço da própria clínica, ela aparece em 3 buscas de 5. Ninguém disputa o nome do município inteiro numa cidade deste tamanho: o paciente busca de onde está.",
-      "metrica_de_validacao": "a mesma grade de buscas, a partir do mesmo endereço",
-      "recoletar_em_dias": 60
-     },
-     "confianca": {
-      "natureza": "fato",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 5,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/serie/perto_da_loja.jsonl",
-      "a_favor": [],
-      "contra": [],
-      "o_que_aumentaria": "mais frases por loja na próxima grade",
-      "procedencia": "medido em 5 buscas testadas, 1 medição"
-     }
-    },
     {
      "problema": "6 avaliações negativas abertas sem resposta",
      "e_marketing": false,
@@ -155,7 +107,7 @@
    ],
    "de_marketing": 0,
    "de_operacao": 1,
-   "descartados": 1
+   "descartados": 0
   },
   {
    "local_id": "ortho_contagem",
@@ -1336,30 +1288,6 @@
    "unidade": "OrthoDontic",
    "itens": [
     {
-     "problema": "a leitura da cidade diz 0 de 197, e ela não vale nesta escala",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": false,
-      "tipo": "seo_local",
-      "porque_nao": "medida a partir do endereço da própria clínica, ela aparece em 4 buscas de 5, em 1 vez em 1º lugar. Ninguém disputa o nome do município inteiro numa cidade deste tamanho: o paciente busca de onde está.",
-      "metrica_de_validacao": "a mesma grade de buscas, a partir do mesmo endereço",
-      "recoletar_em_dias": 60
-     },
-     "confianca": {
-      "natureza": "fato",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 5,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/serie/perto_da_loja.jsonl",
-      "a_favor": [],
-      "contra": [],
-      "o_que_aumentaria": "mais frases por loja na próxima grade",
-      "procedencia": "medido em 5 buscas testadas, 1 medição"
-     }
-    },
-    {
      "problema": "8 avaliações negativas abertas sem resposta",
      "e_marketing": false,
      "execucao": {
@@ -1387,7 +1315,7 @@
    ],
    "de_marketing": 0,
    "de_operacao": 1,
-   "descartados": 1
+   "descartados": 0
   },
   {
    "local_id": "sao_paulo_orthodontic",

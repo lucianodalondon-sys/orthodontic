@@ -249,14 +249,20 @@
     "praca_id": "rio_de_janeiro",
     "rotulo": "RJ · Rio de Janeiro",
     "unidade": "OrthoDontic",
-    "avaliacoes_da_ficha": null,
-    "aparece_em": 0,
+    "avaliacoes_da_ficha": 308,
+    "aparece_em": 1,
     "de": 197,
-    "pct": 0,
-    "melhor_posicao": null,
-    "frases_onde_aparece": [],
-    "invisivel": true,
-    "frase_do_topo": "Esta loja **não aparece em nenhuma** das 197 buscas que testamos na cidade.",
+    "pct": 1,
+    "melhor_posicao": 2,
+    "frases_onde_aparece": [
+      {
+        "frase": "ortodontista campo grande rio de janeiro",
+        "posicao": 2,
+        "intencao": "BAIRRO"
+      }
+    ],
+    "invisivel": false,
+    "frase_do_topo": "Esta loja aparece em **1 das 197 buscas** que testamos na cidade.",
     "confianca": {
       "natureza": "fato",
       "confianca": "media",
@@ -362,7 +368,7 @@
       "procedencia": "medido em 5 buscas testadas, 1 medição"
     },
     "na_cidade": {
-      "aparece_em": 0,
+      "aparece_em": 1,
       "de": 197
     }
   },
@@ -711,30 +717,6 @@
     "unidade": "OrthoDontic",
     "itens": [
       {
-        "problema": "a leitura da cidade diz 0 de 197, e ela não vale nesta escala",
-        "e_marketing": true,
-        "execucao": {
-          "necessaria": false,
-          "tipo": "seo_local",
-          "porque_nao": "medida a partir do endereço da própria clínica, ela aparece em 4 buscas de 5, em 1 vez em 1º lugar. Ninguém disputa o nome do município inteiro numa cidade deste tamanho: o paciente busca de onde está.",
-          "metrica_de_validacao": "a mesma grade de buscas, a partir do mesmo endereço",
-          "recoletar_em_dias": 60
-        },
-        "confianca": {
-          "natureza": "fato",
-          "confianca": "baixa",
-          "medido": true,
-          "amostra": 5,
-          "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/serie/perto_da_loja.jsonl",
-          "a_favor": [],
-          "contra": [],
-          "o_que_aumentaria": "mais frases por loja na próxima grade",
-          "procedencia": "medido em 5 buscas testadas, 1 medição"
-        }
-      },
-      {
         "problema": "8 avaliações negativas abertas sem resposta",
         "e_marketing": false,
         "execucao": {
@@ -762,7 +744,7 @@
     ],
     "de_marketing": 0,
     "de_operacao": 1,
-    "descartados": 1
+    "descartados": 0
   },
   "meu_bairro": {
     "bairro": "Campo Grande",

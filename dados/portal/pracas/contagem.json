@@ -1069,42 +1069,6 @@
   "movimentos_do_mercado": {
     "eventos": [
       {
-        "evento_id": "contagem|concorrente_acelerou|ChIJV6ERtJKVpgARt5eabTvQZ3Y",
-        "data": "2026-08-13",
-        "praca_id": "contagem",
-        "rotulo": "MG · Contagem",
-        "local_id": null,
-        "entidade_id": "ChIJV6ERtJKVpgARt5eabTvQZ3Y",
-        "tipo": "concorrente_acelerou",
-        "natureza": "fato",
-        "severidade": "alta",
-        "titulo": "Vitae Center Clínica Médica e Odontológica acelerou",
-        "fato": "ganhou 26 avaliações entre 2026-08-08 e 2026-08-13 — de 3837 para 3863",
-        "por_que_importa": "rival de aparelho ganhando atenção no mesmo mercado",
-        "decisao": "ver o que ele está publicando e anunciando",
-        "fonte": "dados/serie/categoria.jsonl",
-        "evidencia": {
-          "place_id": "ChIJV6ERtJKVpgARt5eabTvQZ3Y",
-          "antes": 3837,
-          "agora": 3863
-        },
-        "confianca": {
-          "natureza": "fato",
-          "confianca": "alta",
-          "medido": true,
-          "amostra": 3863,
-          "janela_dias": 5,
-          "medicoes": 2,
-          "fonte": "dados/serie/categoria.jsonl (2026-08-08 → 2026-08-13)",
-          "a_favor": [
-            "135 clínicas medidas nas duas rodadas"
-          ],
-          "contra": [],
-          "o_que_aumentaria": null,
-          "procedencia": "medido em 3863 avaliações nesta clínica, 2 medições, 5 dias de janela"
-        }
-      },
-      {
         "evento_id": "contagem|linha_de_base_anuncios|-",
         "data": "2026-08-13",
         "praca_id": "contagem",
@@ -1138,108 +1102,108 @@
     "resumo": {
       "praca_id": "contagem",
       "rotulo": "MG · Contagem",
-      "eventos": 2,
+      "eventos": 1,
       "estado": "medido",
-      "janela": "2026-08-08 → 2026-08-13",
-      "medicoes_da_praca": 2,
-      "clinicas_antes": 135,
-      "clinicas_agora": 135,
-      "comparaveis": 134,
-      "estabilidade_pct": 99,
-      "aviso_de_metodo": "a varredura devolveu 135 clínicas em 2026-08-08 e 135 em 2026-08-13, com 134 em comum (99%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
+      "janela": "2026-08-12 → 2026-08-13",
+      "medicoes_da_praca": 4,
+      "clinicas_antes": 16,
+      "clinicas_agora": 16,
+      "comparaveis": 16,
+      "estabilidade_pct": 100,
+      "aviso_de_metodo": "a varredura devolveu 16 clínicas em 2026-08-12 e 16 em 2026-08-13, com 16 em comum (100%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
     }
   },
   "imprensa": {
     "medido": true,
-    "total": 50,
+    "total": 68,
     "mostrando": 12,
-    "recentes_30d": 25,
-    "manchete": "25 matérias sobre a cidade nos últimos 30 dias, de 50 já lidas",
+    "recentes_30d": 37,
+    "manchete": "37 matérias sobre a cidade nos últimos 30 dias, de 68 já lidas",
     "porque_vazio": null,
     "materias": [
       {
-        "titulo": "Previsão do tempo hoje para Contagem (MG): dia de sol com aumento de nuvens a partir da tarde; não chove - g1.globo.com",
+        "titulo": "Previsão do tempo hoje para Contagem (MG): dia de sol, com nevoeiro ao amanhecer; as nuvens aumentam no decorrer da tarde - g1.globo.com",
         "veiculo": "g1.globo.com",
-        "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPa1I1OF92dU1SMlpJc0IxUk1ScmVIUFpMMHpia2FfSm1vdUloXzVSTDJwaDl0VVd5dUVZSjliV0lPblNFN0tSWFdmNk5ESzh0MWFEUHNWekNOMlVJdE5UdWgtSGloS2x3dmVkNnVzZnVwU09zT3ZtWWJjYzFULWtSMURWcUxmUEMwbThiU2M0MGhQVS1RYnFXVWthUjlOWkMyeUwtZWJqZEc2RFExMm1peXJKd1lIOVVzeWp6UmNQc05OeDJldzNuRlg2X3l6NmVWdmZQcHdZaENCNlowRXZHRVBUV3A4ZURpQUtvRXBpUFFKWTZzdjNTZUlhVVlSUmpPWEg3bG1tUng2TFZn0gGbAkFVX3lxTFBsM2o2cjhLbDY4XzlsdE51a2ZQUUdNdW9GSS1oSDdfYWlVZ1lBSVo2bThjbTZYWnBvcFFiWmZoTnlrX2JwbWpnRnFxNmVLRHpka0tSZnlJZTNoREFzTnRzYnNSdVF3YUpndHo5QzBNOGlPWXVDMGF0blg3aWxtczF1V0tsb2p0U1Zzd01hV05nRzBXa3pLRmx0WjFNRE1YRWJIakVEWGdCVWR5ekU3UzJ0bEJiMEVZVDA1NFZzY0gyampDVjFDSmp1TlBtY0JpclZBYm9QQ3dYS2lQRlV5NnV2dUJMN0p0Nmk2NXhCYms2SUsxVS1KT05VSkN6UGJSQkRjYlBDMVdvNFVEclVCLWtnTElPekZUajhqdFE?oc=5",
-        "publicado": "2026-08-08",
-        "dias": 5
+        "link": "https://news.google.com/rss/articles/CBMiogJBVV95cUxNLXExdGVDX2lDWl8tTGdsaVA5eFczSi1LdTZieEpqMFBDRWRGNW5BYTFGdmJPdGM0WF9kVjdLTExuNG51T1U5OUp3VC16ZGJHOVlUSlVUR3FubmRHb2lWZUlUZUppYVdua3Y3UU5vQXFOX3ZuTm5fQ21hclRuQkpqZ01Ea0ZRZW80V20tTHN2OFlDZ2JDejVzYUU3bGowZW14a2ZjZms2ZHAyNWhBb2dKM0dEa0xlT0hSYmxFeU1ZR1pPem9Jb0FWdkp5VlZRdUloQTNrWE0wRF9jU2RJTXU2UWtjVzg5dml5SVRyZWpzTFhoSXF3Y1BUSi1KMmNBRVc0ZHozVGZKdGtQbUFuVGhQOVJlNUk4ZHFxNnBBMWhUT3lWd9IBsAJBVV95cUxNQy1mUFdmSF9mYTVOcWZNMnhvZlpaSDl3Mmx2N1FiZHB4cVEyb1FLVDI5NWZOa2pVVGZDUlp0ZjRmSkVaVzlWckE3SjByeU85MFdpNUJuTlF4azFfOGhQWnVocFV5cVgwTDRBRGNkZ3VSQVNWZlFYR3NKTGU3eGJCd0dNREd6YXQ5NzQ4ZG1oam9GUWlmSVNPQi0zYzF2Rm5BOC1Sak5fSldqVzBNX2FBTnZreE1BMGtrUlhCWDBpd3IybURUOFhZS3c1c25IN2lwdDFZenBvTXBRZ0FfV0c4U3JSVXkxOEEyYjd1alRFa3Y4eDBsWEFMbnMweVpQbzR2WjJ5dDl4ZWYxYjBsekhVYjg5VEhFSWJPd2dZQnpsbGlycVBJOEItSTBxcFRQOWJr?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
       },
       {
-        "titulo": "Bandidos envolvidos em guerra de facções são alvo da polícia em Contagem - Rádio Itatiaia",
-        "veiculo": "Rádio Itatiaia",
-        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZkdEZFBsekRJOHVkUi11OHpGTFA3b3dPM1k4VlVfOEVJTXQ3Z3ppOEhYQzJSbkNfY0Q0bXRKcGh0Wkgzb3lydW0tR1FoRmU5RWZ4WXNMQXU3V1ZZb21ZMVc0X3RYQUtQSjZRSGVmdEl3blAxV2hHWUhvV2xhLUlrSHdCTTFWMlAzRGRISkFPV21IRWZmX2tGbmxaUkh3RGhvVEJ4clpkSU9EaW1YNWlVbkFPbTlPZDVqM3FR?oc=5",
-        "publicado": "2026-08-07",
-        "dias": 6
-      },
-      {
-        "titulo": "Previsão do tempo hoje para Contagem (MG): muitas nuvens o dia todo, com aberturas de sol - g1.globo.com",
+        "titulo": "Homem morre durante incêndio em apartamento na Grande BH - g1.globo.com",
         "veiculo": "g1.globo.com",
-        "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPNzAzVkp2UFljbDM3LXpiLXpUblZ4WGhSTHBIeGZsT1NSTG1RWGVVUzEzXy1vZkNoYUo3b0tOdkJzTWY0ZnFiRzJ5dGlsUnd3RmQteDduWnlaUnI5V3dib3d4Yy1tUUdnb04yLWVGVHVjLTg3OURteDlXYzRoVDVzMUlEcEROVUs2cWRuS09UX2M3Rno1QXVtNVhrWlIxcTRuQjdRdGFvZEtyaHVoRWJJV1ozaGVRaVAwcE1FX1NscFdYeHA5aERqZmUzU0J3LWtiRVl3bk1Db0hpWFJmUzRBMTVDT0NobXPSAfYBQVVfeXFMT2ZiVE1tUUk1UTh2RzJLbkcxVEdtSGVVc2RwcGp6bVN3cmlrcHpEVkc4Um5KeVVLa0pxUmZNLVA2N1ZsbFg0OVJLM0d5NTI4SmVmV3lfSWo2UHhpbXBuaUotc0M1TVF5b3pwTUFBa2RPZ00yV2FuWE5LLUZkRDYwVGQtR3Z3d1IwdDRONkU0VUFVc2dKSzg0THhlUDA2Y184ei1fSTRfLVlvNE5wclREVHNBcV9fYUdOS3VtOFQ2MHg2SHM3cHpnUXlTcTItWmRwYW00cWFYUUczR0cwYkppc0p5LW4yY1p4VDFESk1lRmktZ0dBS29n?oc=5",
-        "publicado": "2026-08-07",
-        "dias": 6
-      },
-      {
-        "titulo": "Homem é morto por traficantes após aplicar golpe no momento de pagar a droga em Contagem, Grande BH - R7",
-        "veiculo": "R7",
-        "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNTl8yUlZyMlFnblRBLUdxeHQ2MmxUX2pwbmlfeVZldF9FY3FNbnJuUldEQjM2LTFZR3plRlpkaGdKc0ZuYXU0ZVFTTWRTNGpKQWZTd0I1UFk2SXdxZHhLb1QyQ2lqdzVzRUZNdFZuQTg3YThQcXB3akFQWnhKOERaVzkxSGNBZ0U2akZabFZNREZnUHNRSFhLV25ReEZtRFBfa0o3Mk9HUTNvbi1ZNDhLYVhoWGZKdzRqMF8ydjJ6UHBJTjRCWURIRVlWNG9NdXBPTjdxOWVqTTZQX0lib0Etc3Z4Y1NzOW1iVEFDc0tfYzdKUQ?oc=5",
-        "publicado": "2026-08-06",
-        "dias": 7
-      },
-      {
-        "titulo": "Previsão do tempo hoje para Contagem (MG): dia de sol com névoa fraca ao amanhecer e à noite - g1.globo.com",
-        "veiculo": "g1.globo.com",
-        "link": "https://news.google.com/rss/articles/CBMipAJBVV95cUxNZk1kbl9XenB5OXZGVHNueHZFTDB6aktXa3dGMFBjRm1nbHQ4bXZTanY1MlVjT1Bxdk55TlNzZXVHOVhBMXpMcDhGR01QR1k3c1NzTFg2OHFkYWY1eGk4dkxqVVdGaTR4RHBRUldtVWhaUU8xdUJRMjl0WUtaN0gzMkRIM29YcmtmVjgzUmU0RWY1M2ljU29hSFJmQ0VMV1VQNHFNNGZkcDdzMGh0LWFqRDBHZlQ4bnRFd2Nfa1g2YTQxcS1aczVhSHVfVnNYTmRMSHhhUnFlLTMxc09ZRXRNdGkxRHBjZDl3UEctR3hkSXJUR21McmxadS1USl9Pb1htSFY1R2xqTVM0TnBhZVlNcXdHWTlKNmF6aGRsRmxabmlRT0J40gGzAkFVX3lxTE90cTJLOU05SDNHWDdta0dkM1dpQVMzVEJ4bEJzNndmOHdVQWJjdUppcVRQQzhrMjY4TUVaMml3X2dnRlpIaVpIRnNzU1IwSGpsVFpscy1fOUFnSV9qTWpJcVZTUVNNeTRLQWRkSG1BUTRqMWk3NXNsSEpoV3BmWUpxazc3UDdlQUlHUVhqaEZGNHBMX1ozQko2UVYyX1p5ZTN4NXpmVFRac1JXdFNIWUhZZlpkTmRSTVgzbC13SkhURUJ3c1FxdzQ2Y1Nqa2VHTVBlUmRBX3RxTWd6YmREVUFxbFJTYl91OTU2TnAtZzVHdElMWkpjUks4Rk92R1NiT3ZOR3NpNzc5UlI0SWZuNUI3d3V3Z1o4V0RDVGZmVTFycjAxV2I4Nmtzckk1Ym9xckhjSnM?oc=5",
-        "publicado": "2026-08-06",
-        "dias": 7
-      },
-      {
-        "titulo": "Previsão do tempo hoje para Contagem (MG): dia de sol com algumas nuvens e névoa ao amanhecer; noite com poucas nuvens - g1.globo.com",
-        "veiculo": "g1.globo.com",
-        "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOcXFzZVY4ZHZIQk54WUlKMmo2V2tQNGozSW9qZ2t3RGFKZVAwekhQLXZPUlhtREtZUkZad0VCYS1neEk4OVE5Wk9ZbHE4VEFDakRrbWZIUTVzZmh6U0o0eDZlNXVURFVyWFdVRi1lcFo0OHRkNk5wTm1JYzVVYkV3NlpYRFdiZEJMZFJEVC02S1RoMzc3OFRSWmlTWTYzYy1jbWF2TkxncTRzRzhSeEZicHpoQVNqQTJvYUVBN2FNNzVJVnNOMWk2NW04NzdhaW9aeEplZXNHR2hWdndaYnFsNzZURWFMdnV1dlVfMXNoX3FDcnFYSnl5S9IBhwJBVV95cUxPV1lLb0lwaFRvWFMwWk9xU2VLV2hpTG5iUGJNVkZQX1hRV1huVDdJTzBCaENTTkQxSDg5Y0JpNklKVk12WGNDV2pOSW5hNXp2QUJTaE9fTEZTN3VGR2c1Zi1YaWw2SU1DUGdtQTloWmY2S3NyT0VtYXFyQlV4MVpOTGRDNjZZLXBpMnd2ZFNySWVLcnRxZVFrU25pNzZ5cmdFcnRic1FNMmRHa1VqaEFpY0UtMVJUMEwzMFlCdGVNckx2dlJnSll1TTdETFBpR3RmR0lYQVlFZTJ1M2dHc3BSWnBmd2tVVmVUT3RkTzRqbUs3TnVsaDFLRGxIR3g1UXd3WXlWN3Fudw?oc=5",
-        "publicado": "2026-08-05",
-        "dias": 8
+        "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPZXRnRXJBSjJtX2QtQ0tlLV83RnpBUjhDdGdFcUVGbUVRRDg3YkdVeHEtV0dPMzZhcm0yUTU3VjB0NEtIcWY1RWNUaGVtR2VyVEtiYURzTDlaWXNrUVVFRGs2Q0xReUthUlhGazhxYW1uNk9FRERSbU13QkZOYlh2cHZYOTlLdWo2aTl6a1ZLZWtkcVVBYTUtaW9aN1Q2VjV2cXZhNUVITUY4LV9fY1ZCUEtmMFRiMmlDdHpMdlcxdTJJRDNaNGZUOERzakLSAdsBQVVfeXFMUE9aeUFzYTYyZUVtUmhIelZHb29TV2VUNVNvU1lvUWVpWk5KWU5aVmFkdjNUemY4MTFHMTRpNFAtcjhZcUVMV0lHbjB5eFFBakprZFVxNzd2YVBwbTdqMjZ1OU10MGZQVjJNNEIwdDdoejhqc01BZjJ6cEx1LUlENlJuYXBCdlFmWUdSSmxnOXM5ZWF3Zk1tQ1VhTXZBelh2eV9NaWpWSkZCR0lnUUcwNnYxSWJsNGVEemwyQzFXdGhaYVpEQ25fZmx1NjlpRDhZVHg1QkZUTTN5OVZF?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
       },
       {
         "titulo": "Previsão do tempo hoje para Contagem (MG): sol com muitas nuvens durante o dia e períodos de céu nublado; noite com muitas nuvens - g1.globo.com",
         "veiculo": "g1.globo.com",
-        "link": "https://news.google.com/rss/articles/CBMirgJBVV95cUxNbWdjdG5PcUJ4bVppWVZEeGhNRXhneGV3cmFzRHNLUXBLWWwxa3hma0MtdGlyVjF3RWE1Z0U2WkhSMXRzYk1PVUtrcEtId05acVhIeHRoZWJHUExWVXlBeEVQVWRXaDhLNjd3MjNMVzJmS0dRRDJ2dkFoZnlBa1FrSDdqcXp1TzNRS25yNjlQUHJsaDhqUEFpMjJxR0JSek1NMzNKWVlDWlNfUVJTaEZNLVpfa0ZJUDk3cG5ZVTd4Y214bXZxWFE1MzlUZHVlMUtOT2FFOF8yR19aeHI5Q19BOEtfSEVpN3hNNkFCakIwVXA0ei1lS1h0aVVkY3l1bW1saEdpeEw4cWFBLXBDZVNVWjBuanc2TWVfQk9vUVhrTTFlRkVjWHo2RHJWcThzQdIBvAJBVV95cUxOX2tUaXBmNEg1UWhiYWdTUkdocnFLZzgwekR6c3lGR3dXLTJQdk4td1NSQXRpeTlLUkx3eXE5ZWJ4MkthNkc2TzBJS1JiZnMxencyb05lN0REMV9idkZkX1JXTF9vTDNPRlE1THBrdzZ3MFFPbkEtMWhMWGJna1hZM00zUUV6NFFfVWlhUnY1NkYzTDRJTEZDbmIyMWVobjdKSXdlU29NWFVIOVhLN29haGV1Q3pvLTdQSjA4NmVFMC0tRmFYM0oxbGpuVXNZLXc0MXdpY0dqSkpXaHZTVjRQQzItUTlSTkI1WE5oZGJCcFNwWDl4THZyS09DX3BpeUQ4ay1qbXBPSnRnN1hvY2ItNTlFNzlOcDN3LVdSVjg2Q240UTB3TUVKX0NBckZRMm5RaVFwaWpVVVoxTEpD?oc=5",
-        "publicado": "2026-08-04",
-        "dias": 9
+        "link": "https://news.google.com/rss/articles/CBMirgJBVV95cUxPZ0lsQzdRZDYwbVRtaUJnVGtmNW1SaHdmYms1b21RRXVCX1NVd0hMYVBtVExDS2V4SEJOUVZ3NlFOa213OXVCUlVjcnlIOENmeWJwN2xSOGxzSGNDWWZnY2VFd2hrUGJRc2ViemJqWWhydDZrWGo1RS13QjN4VkpjY0l0Slh1SFVEcF90TTgwTEVfVE5tYjlab01oOEJsQjNqWG9LZVNRTkNac0NoVldIaFJLLVFWZXNrbk9McDZXWUE5VVBEZjZnLUswV0xMMEZiZldvRGYwN1RmY0RFUV9JZjdhMlpBWmxXUjdoSGlEcGUtQ3M1ejh5ZnFHWWduV3NhOXZFVHM3UUFCZ2RobGQzYlAyNWFieDZPOFlHQVdiNTFqamVncTJoaENabVlqZ9IBvAJBVV95cUxQQ2tUMzlOUTJDTnd1Sjczc0VOTjdCNkllY3VTRGNjWV9WQ2M4X0dPRGg3RWEzeHRNaFM0d1FBWkVUckJlTUhsN2U0YTIwQmhBNXFjdkQ1OTN4eFFERGhsZWtEY21hdmx5bG5DZVVEaU9pT2dpNjM3bzBGQ3BhVk15OWl3ekNnMXRQNGRrcV8xUzNrNjltTW9fclVvSW9yeDlTX3BWdFRZQ2NDWjk5TjV5aVRGT0V6MlItcGk4NTBOMjQ3TjVHNGtKelAyNTlGNGw3Zm45djNnU2FnU3BxNFlqUl9BbVJzcHNBNF96bS1QV0p1S1lCckwxNk5BUGpDV2xUQmZMTmltcnNuVWI1VVlqVzJTRkxIdV8wQUwwYXhacWVOMFdJaFNmUk1BR1k1OVBHZHRycmx4U3VGR0Rz?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
       },
       {
-        "titulo": "'Todo mundo vai me tratar bem': a história do ex-faxineiro de hospital que virou médico - g1.globo.com",
-        "veiculo": "g1.globo.com",
-        "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQcG1SMVpVdHU4bjlRRW1FTXY4bXpFUG14aUlZSGt6cDVKNjM3QkVvRmZuWHI3VTUzTVBXeXdmV1FtNzlPNnZUS3FKOWtlcEZHVUlRODRTQjNiR3BadHdtMFVFNHNiSG1iTHNQc2RmQi1yX3JlSUFUV0k0VVdzR0pDRGtNbzdDUEgwcVBBcmhOZmgtcWh5bl9WeG9lWGtiM2I5WVpGUmxiUjdZMzl3Y2N4SHgxTExNNGdncndNNjVWYnhNeER6Sm1xdFdXOGRzZjdkR0hkbUhUZVXSAecBQVVfeXFMTjFWaTZKeGVCbkRjTGdKc0w2bHhSTjFaak41elk5ejBqcTZHZXMtWk9pNm9MQ2RWMGFxNTNsMF9lNEFQLUxIY25zOGw2dndLXzNBNVRwWXNjY1cxZllYNUZyalJWTTJtQ2ItbWdISmpYOG1oNVlFVlpDRDQxVC1IVFhDXzdHclRSOGZDdTlZU2V3NWpKVGcxMnRMRlhnbWNUdmY4VzR5Qkc2eTFiMm1KVS1ucTVUY1JKYTB1VWp3aFhmOFUtWEhkcDZRWlNNSWhSdHpvRzhDM01wNmJ2X0VlQmpoY3VyaUlR?oc=5",
-        "publicado": "2026-08-04",
-        "dias": 9
+        "titulo": "Mulher mata homem para defender amiga de tentativa de feminicídio e é presa em Contagem - Rádio Itatiaia",
+        "veiculo": "Rádio Itatiaia",
+        "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPeV9wS3hkLTA5Rk5TMlMtSVhvdGEyYXVnNzloVHVjZFh1YmtyNmt3Sk1xX3NvUE5iUlVrOUxqeXFDRkh4SGIxdEYyWVhMOHdwOEczWnU4dzg2MjNEbFVGcXZxTExuV0lxTG1HdGRUMVU5WjdOYTdfb3J6SEE0bnJGdnJ5RFJBeGVHWlUtZmZPeFZvQUVtX0lmRFpHQkZROWlxU1ZLTm1BN1lrNDg0UE9TTEJTV0dFRWUtRncyVTdFOU90alp2RzJZNFBSWTJqTHM?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
       },
       {
-        "titulo": "Previsão do tempo hoje para Contagem (MG): dia de sol com muitas nuvens à tarde e à noite, mas sem chuva - g1.globo.com",
+        "titulo": "Previsão do tempo hoje para Contagem (MG): sol com muitas nuvens durante o dia e períodos de céu nublado; noite com muitas nuvens - g1.globo.com",
         "veiculo": "g1.globo.com",
-        "link": "https://news.google.com/rss/articles/CBMiswJBVV95cUxNVjc4aGdhRTQ3SFhVOHhJcGlObHlkdktmbno5M3J6bGZqbjJuYnlMUktpd0d3Y2lmd0ZDT2tGQnZpRTU0ZDliRXhmM0lVT1N5MjVqR1ZXb0U1N1VoMlJfM2VCWWxLTHFuT21rN0w0RVRBQzgzY1F1ZENlbUdOSDVkVkJaNHBxWEdJczZ5LXM4Ym5SR3ZzXzBDd2N6WEc2Y2VMZ0NVeVpKclRkMjRGUWJVWlNBUEVKNUZXV3NPMGhEX0lvMTc4TVJlOUhwN296by14dzZaZTV3RnE0X3hEeXlGVkNXb052QnRGUVpzSVBPQ3VLQmt1N3pxbjRPU0pVRlRmZEVTTTlVTTY3ZVh3M0pNOFZ4eTdrVDg0MVRWTTNNWmlFZTV2Z0YtUmFJQ0xJNU9uMFow0gHCAkFVX3lxTE9CRU4zZVBGcDlPOWRYSFpkUGJCc2ptTzhMY3VMXy1VakUydDllX05tMmRZWHFGdVAxSFVhb3dGYTh2cHhKRHgzWFpzWWYzQndPLVA3SnBlUFNiWVlSdTIzdGM4NlhyTDJ6aHdHT2ZQclRtVVlhdnVvdnFZZU9qckVnS2k1NzdxbGJIdVdFbGNYOHBXM21KVUstT2hWeE1SVS1KVGVWNXJ6dDMyZFVYcnVBQUEtZzU4aUpBMEpRWVgzaHRldXFZM0d0TUlSYWQyekpjVlNJY3lrZ2pFLTV0bmlFVk53Ukt3MXFYZEpQRDFrRGE4T3dxajBEeDVnOUZ4bWFqcDJVNGJnSnI5Uk1CeW5kVWJrT1JxZTNVbzdDczBHYWRCWUQzakhGZ0NON0QyUUtqZF94emtUWlVYSjBJVFdfNFE?oc=5",
-        "publicado": "2026-08-03",
-        "dias": 10
+        "link": "https://news.google.com/rss/articles/CBMirgJBVV95cUxOdUZTNncxYVdoa19Jdmx6WDhoQURmdDNEM0diQm81VUlhZGxGcEg2SjZicGFwdnJIRHRkckN3OVN5Z1I0WVRDMXF4TjNrTkhrdXpOTEgtZHJCVlNBYnhpbGFxZmpDR0FyckhLX25iblJyYnpFZV9mYVR3VFprNTYxZFBkWDU2bXdtNU5KSWc5dXhFMGllUzB4N0MzQ25tNFR1N24ySF9qWXgwdGlZRDV3ajg2ZGVtdm5DTzh3TWdCQlRmZ1J0a3FiS2ptVURUMnZRSDlyeDNLTDhxby1aUkFjb1VQQURMM0N2d19oNklWd1EwRktrRncwTElkbjNVUlR4ZmpyaTcxVTFHdWlidnpRenpBYlREMnpqZ3RJSDFvOWpFNGlMQXZ5Mkd5X0VqQdIBvAJBVV95cUxPQlRDNXMtTEM0S0ZZeE1NUnpnNUhnMjR3cUtmeVhkZXlMRm5HN0dBa0doaVhFQ1ctcUxnVVNnMG5SQVZWT2V1V3JMTXhpNEZNTVg0UkJROEE0OGZCOXhJUFFMZlFsNER3Q1AwUnFab2NuSDFycGNSblNVQ0ZEcnF2Ym5jRjJFeno3MFlyZUc1cGN0b3lxS2R6SGN3bWhjazBicmVXT0NxS1hNZUFhanNCOUNnUklndURMNFRHYmcxUU1NN2NLaFBoSHhnTFFibGNTd0taeDcwVWZJakFDVkgydXVzVkY3TXdkamhMWFBlZU1QVlVGazQzMlZXQmR3eVZabTgyZWl5dWtFTWd1eUg1U3NlMnRPM0xTajBJT09LRkFoMlBZcnphanFUczZiU1dDY0dKbmlGWEZHc2hN?oc=5",
+        "publicado": "2026-08-11",
+        "dias": 2
       },
       {
-        "titulo": "Previsão do tempo hoje para Contagem (MG): sol o dia todo sem nuvens no céu; noite de tempo aberto ainda sem nuvens - g1.globo.com",
-        "veiculo": "g1.globo.com",
-        "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxQckczRmR6YjZUanlpZHN5YWc3SUdFWVZYUW1HdVZ4d1FjS0l5OFNwNi1rcnlfaFRqRE1tZXNxS0tXWlpnQS1QM0pEMlFhcHZkUTd3Sm1lU2tIOS0ySDUzdFhYOGIyN0hocGNzVTdsRXRUM0NWNGd3RUlERFJzY1J4b1pxNko0R1RBbWhzbGlQcVVreWhKWjBtMnI2VjR5dGdnOGl5QkpYVlNPelVkMTlKVVJEWWVqUTdySmg4Q3FEWlQtR2lxdDNvSXd4SW9LcmtLYlVOdk43OXhwM0tzdzd2VWdWbkJBalIzREw4VEtOdEx1S0lmWm4zWkJ0alR0OXFsUEhZNDF3dVBsT3NVTXFEbGFjR08xRlpkbHRZ0gGqAkFVX3lxTE5JWm54dUFjLWtNQkxjWk9IQUh1SGUwVTJBU0o3QkZyc3E4ZEVHb1p3c3RpVm5GSVdYOUJmMldPM0lmVko5TXNzaV9RNmpaMlJtbzdLcjNIeU9iSXRfYW5DRVhMN3N5M09GREU2WUlaYXg2ZEVkN2p6cnJpSXcwemlGNHdYZjJCcnMtdFJPSm1zVTVsMHBuYXlvUUZNeDZmU0xHX2FhZTBFdXg1S25aUmVMelFZWFZRa3JNQkRJZjJZTXF6bHBzOXVfdmNLaDBIUWRhMWJlaW1ucVB2OV9yTWlyNUZaWWZSWXhqd1dVcFMxd2g2VFpGMExXWWRtaHVtd0w2OFZPNVE4RFhNX3NYeGdmejlNUW1DZ05PYnJxS01YZThud0FLMEtkcWc?oc=5",
-        "publicado": "2026-08-02",
-        "dias": 11
+        "titulo": "Contagem Geek reúne cultura pop no Parque Cataguás - Culturadoria",
+        "veiculo": "Culturadoria",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9vLUljYjhZRHlQbTFpclA4S0lnLVFlQTVTUUw3eXQ0MEtLci1fbGFFZ3hObFhCUXdwdGVJalMtYWFDX2dMSVJ0N2p1SUcwaTZ4U0JxMkloSVhkYnlwU2hWQmo3Unlfdw?oc=5",
+        "publicado": "2026-08-11",
+        "dias": 2
       },
       {
-        "titulo": "Previsão do tempo hoje para Contagem (MG): sol com muitas nuvens durante o dia e períodos de céu nublado; noite de céu limpo - g1.globo.com",
-        "veiculo": "g1.globo.com",
-        "link": "https://news.google.com/rss/articles/CBMipwJBVV95cUxNYjJ3ZkFzRWRzTHVTUUdXWlVuaTZ3NjFjN2ZOV2Zjem9hYW9lMlFJYTJQYzBxTjBOVEdLbDg5WmRLeFRtZjBtalhVN1Frb1NFa09iWHRvMTZXQUo1TnhVV1JXR1lIaEhxUTBXMEdWWng3MmY5aUZnRnhieVBZbnRoQ0tuVGZVaVUxNlYtc2d3eDBTS2wzdVBxUlh4cnY3YW1laUVOMFY3NkFMMy1RaUozQnVsUXBwNVZUUDc4NXdhWGV4djFpSWFUTGhlcDFSeWczOUEyeHNBYVZTbFV6RHY0QVpWbW1CS1ZselUyOTREODRsZTJhU0JLbzhwNUVQalItdTNjQmpaYUFzTlV1T0M0MVE0LUFjR25WYmFNUTU3ZWRLV2RlaHh30gG2AkFVX3lxTE0zQy1raVlQaW01UXpLaFNYR1lwOWJVUjN1cnVoS0pDVGFIVzlfaUZwMmlDdnBobUVGa2xuOEtDbkhJdlcxWFJlMF9MeGZ1SVR1NnR1bDR0R1FlV2xPdnB2WUNaTVgxNVhNQm9HVk1UZG13bkllMHRueG94RUh4SVVvLU9SM0VUUkNyV3lpZXJYYXEwdkJ5dEZCYlZJVFVXZ2JDOVVILTlHYXlPTW5ROHVQdmFyRHZGY3dtNDFJRjBiOEpxdHNFaEozOWVXRXpBWFd5UUNEeTBPb2d2aDJPLUh6MWhfNzdHME13X3JWdEtBb2xkRnRoU3hpVmdJaU9xSzRlVmp2dTBUWFlfXzRqbGp4N3VEYlFDRmJBS2V4dnJhVnVBcGRxTnZsYTNnUWFXZVRjaEF6OWc?oc=5",
-        "publicado": "2026-08-01",
-        "dias": 12
+        "titulo": "Quem são os candidatos ao Senado por Minas Gerais (MG) nas eleições de 2026 - JOTA Info",
+        "veiculo": "JOTA Info",
+        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPejdEd3RuSVp0X3RCXzNoalZqSkJmREJxamV6Y3ZSR3lxellLSkUyWUR5cW1NcG5kXzJkajJXc2tFMjlKZ0ZFZmpVMVNsYlluT0MwY21wWWFKWHhLWU02RzQzNFRvVTViN0JwMmZQeUw4R0VTb3E2dldXOWZYY0hRMEZJSU91UklmVnQyR2RKWDlKeG1nLXlBbjhhSkVBb3g3VWNDTDVDYnllNDNGNmhhWHdoNnVjR0lFMXE0b09IeTAtekU?oc=5",
+        "publicado": "2026-08-11",
+        "dias": 2
       },
       {
-        "titulo": "Previsão do tempo hoje para Contagem (MG): sol com diminuição de nuvens de manhã; tarde ensolarada e noite de céu limpo - g1.globo.com",
+        "titulo": "Homem é morto a tiros dentro de bar e dois ficam feridos em Contagem - Rádio Itatiaia",
+        "veiculo": "Rádio Itatiaia",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOYm1tRkY1bjJKRExtRHZSbTJBTHhoVE9vblZKeUV0MkFhNmlYMVJHVUZGd1VsYzA2Z2NySk5Mekg2VTlJeW9UMERDMFlUMDB6c0I5a1ZZRkUwMGpQdS1PWk05am1OYndaNkZQbFZmaFBKU2k0SENVMDZvc044NzZaSlNVa0lxRF9WTC02b05fR3BvcDVHYnBEWUVjSlFvZFA2T2xWUC1NSlV2NVY1MEVFWGg1ZWVQZw?oc=5",
+        "publicado": "2026-08-10",
+        "dias": 3
+      },
+      {
+        "titulo": "Trecho de avenida na Grande BH é interditado a partir desta segunda-feira; veja o que muda - g1.globo.com",
         "veiculo": "g1.globo.com",
-        "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPaVZvSUstWjBsR3NoM1lobUVrNVNfS2RTcVlUUnJQSXVndVU4ZlhJY09yU3lEeF8wNTVfQzZWUjNaZFNBM3FoQk83aVpCZVBMSl9vUmdaSGdGQjFzMlZab2xTVTlub3lQU3Zla2lDbl9XZHdoTDYtWHRXYkJLVWpURWV0NjJjTnFvT2FhLWtpMllCVElBRlU3aGdtZVROclhESVcxdjd6VVZiTmpYNkV3ekIxRC11U0loSmdYTndiQWRxTjdaRmpKcG5yeHRrU0tZa09aMnRSeUZVWFpzOVpKVENmeDhHRThuZ2JUVEtLQl_SAf8BQVVfeXFMTVhTVnJXT2ZuRUtvTG84Nkc2ZXpLQnBCY3cweUx6bjRuUVg5UUNCUHJjZm4zS05Hd0VSSnlycWNBZ2xabjdIaGZrb3BXeUZnNzdHY1cwTXRfbFV3TndnbFNpRE5lNHEwQzJuMTlMcFZuemdza0pOLUZUd1lGbUgyRXVKRTFKdGVJaWJxYThsNUJTYjV2VE9FZjZQOUFkR0U4VFhlZFBRQ0lJYzQ2TVhzOVJvbjVhNzI2cHVoTG1jMHZMVDhQeU5PTjNLT1ctR19IeUxoLXYtcVh1OW0xUktPdlg5SDNsTUV6bHFvMHhLVGQ5YzlfakZiT3lfUEY0U0xF?oc=5",
-        "publicado": "2026-07-31",
-        "dias": 13
+        "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPX1dGNnJlNVl6QWxLZ0Nid1pPVUdRdk54Tnkzd2JGSFRuaXdEa2pXTWs5ZHZUbnNzM0VqUWRsWWFOd29yWHdIekhtMjRSZGtob0E2eHV3bHRBNVFhSVMxYkFYMzljYnBRdWRSOFc5M20tYzRhd3l6cE5SVC1QY09vYS1vTjR4MUlCVXVBOWJ3aG8wVmd6MlVXWXFsa3ZTdnhLR2pkU0hQOUFYckM5YmNJRmtudEZsMXF3SnhMem5sV3VwdGhWTTZ1bmE4aDJKak9jc2lZcU5qVWVaS2tkWnlWMUZJY0xqZ9IB9AFBVV95cUxOUnZFVlpSSHk3VVpHWGUxQldlWTk3UzY3RnVfaEVXc082YkIzS2FCQlF2bVVkQ2d4LWFLcmpOMXRLdGRKWGl4SkRnRUQ4NzNkOHU3dHFQTDFrUjBONHctWHZrODdxODU3Q1B4QnpmSTVYa1JGUzFTUnhGYjNzUmtSbThhYzlsQUY3dDNLeHlWcWV6aHZtaUNIdjhMZEt3TkFZcnZpLUJpZTZlMUJwTkZpUkg2OU5ucGtPREpKeUM1ZU5pUGE3NWE3UDRQdkx2cU10ekc2Rmdpbk5ENHpRcUNvY1prN0E2d3V5TkxNODdYaUw4U0pN?oc=5",
+        "publicado": "2026-08-10",
+        "dias": 3
+      },
+      {
+        "titulo": "Homem é morto a tiros após discussão em bar em Contagem; dois ficam feridos - g1.globo.com",
+        "veiculo": "g1.globo.com",
+        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOOXQ1WGN3VWxVU29KOGRYSFh4bmxXcWFuQmlHZUhYN0RxQ0syRHpaWUhBQUV6MmhWbmVxZ29McXN6dlN4RVFmWWozUldfMGtXMFlLUWNuMGYxdkVCbkZfTUlyUTJXWnF5YzM1SE11ZzN5cER5TW9ta2NqTDFlYmxlSXN4Y1FZNDBZWkxPSlBNeWh1Vl9USTRaMloxVFNpb0dhcHR5RDVjM0FlV016LWZfdk92V0RVTFFKOUtNeS01M1dmWHNldDd5MGRjXzhMYTJFckHSAeABQVVfeXFMTW12UDBvQnplTllpbmppMXNydWRMWnNpbkhWbjA3RXlsWjcwc1M4MFhmWmdGVXRZcER5VDBDWHR2Zzk1UUhZSXh0SW1Sc0txLWdtblg0S2FsUFo0UFNhQWVJME5jZ0dnWmpRTG9WMG9wdkdfMV8zYUVQdldldVpMU0ZyeG5LZkQ4ZnB4bjJkQU1yNTlZYTFjeV9KZnV4NldxNWlzTlhMYm5yaTFjNnNwSkpacXR1OTQwdDlGSnFNU2pDbkVhcE5WNnJQUkZxU0N5em1IU09RdW5aNU1IREhTVGc?oc=5",
+        "publicado": "2026-08-10",
+        "dias": 3
+      },
+      {
+        "titulo": "Previsão do tempo hoje para Contagem (MG): dia de sol com aumento de nuvens a partir da tarde; não chove - g1.globo.com",
+        "veiculo": "g1.globo.com",
+        "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOaHFyTEdBQ1N6NTAwSTBPVmJVemlvUUNNR0ZQM3FVVVR6X0pUVnQ3cTB4SWd3S0RtaUdTa0tTeXRuWnRqX0tFVFNhejdkNnV3Xy1YMW04MzNSSkNJNnRYQnJMZFk5Q0w0TXlCaFNPWnF2ZWZLQlY0bzdILWpNdmZ3cHRiMU80QVRkTFdkc1FjRDhiNC1TOUoyWW5hVlA2THY0NVdrNmFhanFRMno2b3NyOHF1TTFFRzFvTmFJU0Nzak9NNkFCQ2pPQ2NOd3ZEUHV3Yk5VakhJZWNSdFhReVRNRTBORndHZ3ZBVmljVzdmOVYwLWNNMHF6adIBhwJBVV95cUxPYjBqT2pkd01sOHdZbG1xZUIyeUpVTHFXb3U5bk1sRllGeTlZMm9rNVZuSWtjLWdabEM1TlB2cEt5dFZtNnh5WVZmeUstVXYtMXp5ZjE3Uk1VYVdTUGtCVGNQcmEwVjRWZ0dlR0NIbEpCY3pPdDJOaHZLN2xTVFZjWTRmdzRLZEJiQ0Y1V3lBZFFNdmR0eno3Tkdza3VLTEQ5WC1hVS1BMUpmMElTeWh1SExoYkxWa00tYnBWOThQNW1KOHNxRWFZdUxfUi0wMWNWYVgtRko4RnNmVWpsOUVxYmtOTkEtSkh2dFMtY1FValE1OWl2ZncxSWN0Y3FEcnR0dmFkZUdVTQ?oc=5",
+        "publicado": "2026-08-10",
+        "dias": 3
+      },
+      {
+        "titulo": "Começa Semana D de vacinação contra a raiva para cães e gatos em Contagem; confira locais - g1.globo.com",
+        "veiculo": "g1.globo.com",
+        "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPcTlvaHFmZXZ2ellYd0xEVlBTb3d1V1QtbEtabmM1QURyYWVubTNTeHVWRGs3a0ZqQzZpWTVWamVoUmN1NEdfbm9GaExwb2lJX2dORlN1Tll0WmVCTlRfV2dENC1HQzFHd2xLY1pHY1FHdjJ0dDZLTnZ5d1RKcnJPTXBhQ0lKdkw2RXN3d09CeVFoSFRodEFmeHVGODA2S3B2UTdWYzk5SFNNNTF1ZDJDRHBydk1TY1hjbmVid0NYUUwzd2dyS2hfd0FNR1ZYNFllT0MwODF2V1phRHBQZDB0N1QzaXJBaXJ6OHd4LVZUTXFTMzY0UWZn?oc=5",
+        "publicado": "2026-08-10",
+        "dias": 3
       }
     ]
   },
@@ -1395,7 +1359,7 @@
       "tipo": "clínica odontológica (a classificar em visita)",
       "proprio": false,
       "nota": 4.4,
-      "avaliacoes": 3859,
+      "avaliacoes": 3864,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -1445,7 +1409,7 @@
       "tipo": "franquia",
       "proprio": true,
       "nota": 4.6,
-      "avaliacoes": 857,
+      "avaliacoes": 859,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -1455,7 +1419,7 @@
       "tipo": "especialista de nicho (siso)",
       "proprio": false,
       "nota": 4.9,
-      "avaliacoes": 686,
+      "avaliacoes": 687,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -1475,7 +1439,7 @@
       "tipo": "clínica odontológica (a classificar em visita)",
       "proprio": false,
       "nota": 5,
-      "avaliacoes": 598,
+      "avaliacoes": 599,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -1515,7 +1479,7 @@
       "tipo": "rede regional",
       "proprio": false,
       "nota": 4.9,
-      "avaliacoes": 484,
+      "avaliacoes": 486,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -1752,163 +1716,72 @@
     "quem_responde": "só a rede, por dentro"
   },
   "o_que_mudou": {
-    "dias_medidos": 2,
-    "aviso": "a praça é medida há 4 dias (3 medições) — a leitura ainda diz pouco e engorda a cada coleta",
+    "dias_medidos": 1,
+    "aviso": "a praça é medida há 5 dias (4 medições) — a leitura ainda diz pouco e engorda a cada coleta",
     "nossas": [
       {
         "local_id": "ortho_contagem",
         "nome": "OrthoDontic",
         "proprio": true,
         "aparelho": true,
-        "de": "2026-08-10",
-        "ate": "2026-08-12",
-        "dias": 2,
-        "antes": 856,
-        "agora": 857,
-        "delta": 1,
+        "de": "2026-08-12",
+        "ate": "2026-08-13",
+        "dias": 1,
+        "antes": 857,
+        "agora": 859,
+        "delta": 2,
         "nota_antes": 4.6,
         "nota_agora": 4.6,
-        "ritmo_do_periodo": 15.2,
+        "ritmo_do_periodo": 60.8,
         "historico": {
           "desde": "2026-08-08",
-          "ate": "2026-08-12",
-          "dias": 4,
-          "medicoes": 3,
+          "ate": "2026-08-13",
+          "dias": 5,
+          "medicoes": 4,
           "antes": 855,
-          "agora": 857,
-          "delta": 2,
-          "ritmo_do_periodo": 15.2,
+          "agora": 859,
+          "delta": 4,
+          "ritmo_do_periodo": 24.3,
           "nota_antes": 4.6,
           "nota_agora": 4.6
         },
         "eventos": [
-          "ganhou 1 avaliação em 2 dias"
+          "ganhou 2 avaliações em 1 dia"
         ]
       }
     ],
     "quem_mais_ganhou": [
       {
-        "local_id": "dra_samila_resende_invisal",
-        "nome": "Dra. Samila Resende - Invisalign Doctor",
-        "proprio": false,
-        "aparelho": true,
-        "de": "2026-08-10",
-        "ate": "2026-08-12",
-        "dias": 2,
-        "antes": 515,
-        "agora": 516,
-        "delta": 1,
-        "nota_antes": 5,
-        "nota_agora": 5,
-        "ritmo_do_periodo": 15.2,
-        "historico": {
-          "desde": "2026-08-08",
-          "ate": "2026-08-12",
-          "dias": 4,
-          "medicoes": 3,
-          "antes": 515,
-          "agora": 516,
-          "delta": 1,
-          "ritmo_do_periodo": 7.6,
-          "nota_antes": 5,
-          "nota_agora": 5
-        },
-        "eventos": [
-          "ganhou 1 avaliação em 2 dias"
-        ]
-      },
-      {
         "local_id": "ortho_contagem",
         "nome": "OrthoDontic",
         "proprio": true,
         "aparelho": true,
-        "de": "2026-08-10",
-        "ate": "2026-08-12",
-        "dias": 2,
-        "antes": 856,
-        "agora": 857,
-        "delta": 1,
+        "de": "2026-08-12",
+        "ate": "2026-08-13",
+        "dias": 1,
+        "antes": 857,
+        "agora": 859,
+        "delta": 2,
         "nota_antes": 4.6,
         "nota_agora": 4.6,
-        "ritmo_do_periodo": 15.2,
+        "ritmo_do_periodo": 60.8,
         "historico": {
           "desde": "2026-08-08",
-          "ate": "2026-08-12",
-          "dias": 4,
-          "medicoes": 3,
+          "ate": "2026-08-13",
+          "dias": 5,
+          "medicoes": 4,
           "antes": 855,
-          "agora": 857,
-          "delta": 2,
-          "ritmo_do_periodo": 15.2,
+          "agora": 859,
+          "delta": 4,
+          "ritmo_do_periodo": 24.3,
           "nota_antes": 4.6,
           "nota_agora": 4.6
         },
         "eventos": [
-          "ganhou 1 avaliação em 2 dias"
-        ]
-      },
-      {
-        "local_id": "orthopride_contagem",
-        "nome": "Orthopride Contagem",
-        "proprio": false,
-        "aparelho": true,
-        "de": "2026-08-10",
-        "ate": "2026-08-12",
-        "dias": 2,
-        "antes": 875,
-        "agora": 876,
-        "delta": 1,
-        "nota_antes": 4.4,
-        "nota_agora": 4.4,
-        "ritmo_do_periodo": 15.2,
-        "historico": {
-          "desde": "2026-08-08",
-          "ate": "2026-08-12",
-          "dias": 4,
-          "medicoes": 3,
-          "antes": 875,
-          "agora": 876,
-          "delta": 1,
-          "ritmo_do_periodo": 7.6,
-          "nota_antes": 4.4,
-          "nota_agora": 4.4
-        },
-        "eventos": [
-          "ganhou 1 avaliação em 2 dias"
+          "ganhou 2 avaliações em 1 dia"
         ]
       }
     ],
-    "contador_caiu": [
-      {
-        "local_id": "odontomax_nathalia_duarte_b",
-        "nome": "ODONTOMAX - Nathália Duarte (CRO-40548) - Implante, Aparelho, Clareamento, Prótese",
-        "proprio": false,
-        "aparelho": true,
-        "de": "2026-08-10",
-        "ate": "2026-08-12",
-        "dias": 2,
-        "antes": 581,
-        "agora": 580,
-        "delta": -1,
-        "nota_antes": 5,
-        "nota_agora": 5,
-        "ritmo_do_periodo": 0.0,
-        "historico": {
-          "desde": "2026-08-10",
-          "ate": "2026-08-12",
-          "dias": 2,
-          "medicoes": 2,
-          "antes": 581,
-          "agora": 580,
-          "delta": -1,
-          "ritmo_do_periodo": 0.0,
-          "nota_antes": 5,
-          "nota_agora": 5
-        },
-        "eventos": [
-          "o contador CAIU 1 — avaliação removida"
-        ]
-      }
-    ]
+    "contador_caiu": []
   }
 }

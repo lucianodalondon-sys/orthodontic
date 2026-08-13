@@ -1674,18 +1674,87 @@
       "praca_id": "porto_alegre",
       "rotulo": "RS · Porto Alegre",
       "eventos": 1,
-      "estado": "linha_de_base",
-      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+      "estado": "medido",
+      "janela": "2026-08-12 → 2026-08-13",
+      "medicoes_da_praca": 2,
+      "clinicas_antes": 21,
+      "clinicas_agora": 21,
+      "comparaveis": 21,
+      "estabilidade_pct": 100,
+      "aviso_de_metodo": "a varredura devolveu 21 clínicas em 2026-08-12 e 21 em 2026-08-13, com 21 em comum (100%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
     }
   },
   "imprensa": {
     "medido": true,
-    "total": 54,
+    "total": 67,
     "mostrando": 12,
-    "recentes_30d": 27,
-    "manchete": "27 matérias sobre a cidade nos últimos 30 dias, de 54 já lidas",
+    "recentes_30d": 29,
+    "manchete": "29 matérias sobre a cidade nos últimos 30 dias, de 67 já lidas",
     "porque_vazio": null,
     "materias": [
+      {
+        "titulo": "Mau tempo fecha aeroporto no RS e voos são direcionados para Porto Alegre - gauchazh.clicrbs.com.br",
+        "veiculo": "gauchazh.clicrbs.com.br",
+        "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOUTRsX2ZXNFNKNERXLTRFWUxpLU5HQVVFOE1oSVZMVFVtX0p5S3hCRmlzRGIxLUhlaGhjZ04wN1VHTEV6MmxwOUR1R0dtRHFhRGcxVzZXaklpSm15czZwZ1U4Z0RmSU16ZHZ6VmJRU0VtRW50S1M1cHJJcEw0cDM0czdGeENoTWVzTnRQN1FhdUVuSmlkcGFOdTEzZC1jdnV0N2NRZkhSX3IxWFZaeDdDY1NvWWN3SmhEdVJaN1BNbEVZT25mM1hKSThmUkxJc0JsMmdCZ0xabVVwcWpJY1NMVGhaRU9HaG9IcWtwdVBQX2VMOTRXaXVwM0xVZ284UVAyQ21SaU5tdWFsdw?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
+      },
+      {
+        "titulo": "MuleBule resgata sabores que marcaram Porto Alegre durante a CASACOR RS 2026 - Rádio Guaíba",
+        "veiculo": "Rádio Guaíba",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPUmt0UkRTSkRNSlo4cm5hbTh3Q1BTcE1aZG9hN2dOMGZBZVZkelVwTDRMa3lvaGdNNDBwY0U3Y0hIZW1VVlE4SFNvYlhyODgwWFZNRVctNFdaeEROTlhHdEVGVHFuSkZtaHI5Z2pydk9BR2pKSk0zM3c1OGRvWDBxeGpEbFI2YWlyZ2dxNUNuVDBYXzhtRUw1VGI4VGdqM0pS?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
+      },
+      {
+        "titulo": "Dia do Patrimônio Cultural no RS tem mais de 200 atrações gratuitas neste fim de semana; veja a programação - Correio do Povo",
+        "veiculo": "Correio do Povo",
+        "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPaGFoYjduLUNWRjQ4czdWUmYwTGl6Q1l6NjJvMG1qbW9BU0JicUxydmFrTDVnYjFWa2VmZUwwNTJUMXhkTDk1azluLVlxWEM2RU9kMmhaZXRWRHB2R2FURlM1dDlJZjRBbDFkX01kaWhlOTZwZlZBeFdXaENUS2JjYmY0b0c2ZnZFdU1xZlpQQ3dVRHkwUzAwN0dNSlJKblNuaVJ0ZjdkSnc5NXFjZlZtUllJeFY3Zm5mMk9QaF8yaFdER3BaRVB6UEw4aHplb2Vhc0VRZ0U0RDVYVE9VN3Q4VFlZT0IxWU9MaVVBX1dlZWxsUQ?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
+      },
+      {
+        "titulo": "Tempestade, granizo e até 100 mm de chuva: confira a previsão do tempo para o RS - g1.globo.com",
+        "veiculo": "g1.globo.com",
+        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQRVl3VDdTYVptM2xyTVNycEJkX2NpNUxzZzVvUlljMGRrMlU2ZGJ1Y1VMZDY3el8yLWdDUHJvbTdvZU9KeG5BUEszS2JwZlprLXNaM0lOSlNBUjNZTnBKTVVLR1kyeFpBT2tCeXFJMG1SVTNUOU5TUkVnZnZHV09BNjdRN0ZIeVYxVHl2a0VWRmNPYVQtR2xxSnFYakFYZWhaWWpyejgzMi1OYU5DdkJiQXhiZktXd282TVhiMTd4RkNGZ0ozWEHSAdQBQVVfeXFMT0FNYmNqRUUycU5LcXhWWmJMSlJuX1NuZUNWTzh1RElhUzVOczctNlVyUC1SRDJrMjFVSkZKRnhsNmxvdlVCZzJMV0RyTnVKclNpN0xLckpxS0NNSjljamNiVFhUOGtwT1JPcGpXckdHWng4NVl6R1JqckNXcDZYRFpVYktHcUFKd21yZlRreDhnbkh0UUFZMF8zT1RUcEtmZUNBLWRZZEtiV1lhNzVXMjI4Mm5kY2lsNDduQWswVHBqMUpMVzJFc3ZfN3d0eTVwY3NZc3c?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
+      },
+      {
+        "titulo": "Vítima do RS perdeu R$ 37 milhões em golpe do falso investimento; grupo que esvazia contas é alvo de operação em três Estados - gauchazh.clicrbs.com.br",
+        "veiculo": "gauchazh.clicrbs.com.br",
+        "link": "https://news.google.com/rss/articles/CBMitwJBVV95cUxNUTVzNFZXaUcySmwxYWh0ajRxc21vX2k4NjN0Z1J0OThKaU5hc2ZNMzZ0R2lVQlhDNFc2TmhtbmEyWFNlSHFYc0VCN3Z0TmxNanJuSFNTUktlQTZZU3hIYlpKWDcyTVRVc1BucVU5eks1cjdDQzR2Q05HVlJNb3dETXN2TDZrRlJqdjFqU0pjcDdUb19UZEUwaWo5UGJfX1lLMGdwaElKTFdrN2hSRFo2dzhRZVFvakFKYWpsT09FOHhDQ2VKVWtHUk1tcll5VDJsV0w2eDVGb3NFS2JST2R4X3lQSHF0UTFPQnlxeVZENnd6LTJ3aW1KcDdoRVYteHhESzdpU0RnU1R1VWhOUEtLdFZwb0dNdW01d3ZCRVNBYnhvX2RKLVI3ZjFKRThieDVGRndVd2JPYw?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
+      },
+      {
+        "titulo": "Varejo do RS, voo para Montevidéu, dólar, Ibovespa, mais agenda e pílulas da economia 13.08 - gauchazh.clicrbs.com.br",
+        "veiculo": "gauchazh.clicrbs.com.br",
+        "link": "https://news.google.com/rss/articles/CBMimgJBVV95cUxQMkRBNnhXUkdMYU1vSnBFMk1CX1ZJWFhIcGZzLTlXNGNNaG9randjZzdvODV0dWhXcFVFRHpjRnMyMmQ3aFBJVVluZjE3TEtudFBNSUZrZmxxZHowbDZsZGtOUFlPM25oSC10bmN3VE15MHdkZlNtSmdzaWlWTkxUeDZsMkZUVjNheUdtLXI0aWJaVEV6ajl2ZnJyaS1tMUFycU5KOURtSGdyeEEzdkJGbGI4WnFZWDBETExrZDZIcmhnY2cyazZkV0dvUVlteDNJT3lJVmg3WTZ2ZDBnRHVvRGZpdy1wMWdENHd0SERhRXI2R3JYUEEzVnRLOFpyOVd4V09ma0w0eEx2dDNDcTNVQzhLSkRUNTJPRnc?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
+      },
+      {
+        "titulo": "Torcedores do Inter são presos por tentativa de homicídio contra gremista antes de Grenal; VÍDEO mostra agressão - g1.globo.com",
+        "veiculo": "g1.globo.com",
+        "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxObGg1WjJBMzdBNUJFMEZab0ZXeU1mdzlpX215QmFkWU1ZQW5qNGUyUEtyeDdjeU54Ylo1OEdycFZNcXQyd1hlZTUwRTk2bUhVcFk1aVdoMTdCNnpxUHVvc05xcWdOUTQxUkFETno1bEZQcWdYQXRITGJDLVpBRnJEQ2I1SW43VXAzVXFnb2pEbjl2dW41eF82NkFfTGFEdzdSRy1YUmdTM19yMy10MjJuYWlwT2g4S0cyUGVyQmxreWdwbFFKSHhDRtIB1wFBVV95cUxNRi1qSko3NHdGM2tzdnVGdnRZNXlqOEJOMlVkOW81T25zU2wyR2ZOc3NpTFV6T0lIS2ktdHd2R0lGZFdGVGJnYWpMM3lsOEN3Z0doblhwZDlwZXVBSjRyNktfY0xlMUdBWjZsN2RaTWw2dDJPbHpFX2Z4eG1kVE5qMndWcVJJd044Y3h3UDlVT2xSV1dJczZJQUtyTzFnOUMwZHFqYkQtNm9OSkFXWGFscHlQRVQ4TXJ3d0dEeWhwTTQ4RWNVdGk1aVZqVVBFekkxUkxzVlNMYw?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
+      },
+      {
+        "titulo": "IBM projeta crescimento de dois dígitos no Sul e amplia operação em Porto Alegre - Jornal do Comércio",
+        "veiculo": "Jornal do Comércio",
+        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOdGhpT3IwZV96ZHllaHRVczNwNFExaVVMSkw1Y3VJQjM1LURuWmJyellqLVE0Q252WlByOVBabkJROThxaW81WHRMZnlCaC1uLS1YdlFIeE1RQ05ORGwwZVh5cWduNHluRVJFMmExQ1Z5VmY2ZUZ4azVkX3I0UkVGckxPbC1ScE5VS3loZElqLXRONk5leFpGcERwUEI2LUlJV0NRVGYwWS1NTFFOalBTRHZ2SnYyX05MMHFEc1RJSGN2b0NjekJkUjJYYU9hUlREWGtabGZSLXZvQU0?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
+      },
+      {
+        "titulo": "Aposentada perde R$ 37 milhões em golpe de falsa plataforma de investimentos; polícia faz operação no RS e em SP - g1.globo.com",
+        "veiculo": "g1.globo.com",
+        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxONXNZbEEwUHFlR3c3Ukx5SU94UXVxTzhxRDZ1VVpzaXVGa0RSWHZ6b25DVkRaQVF2OGxuNmI5ZWFCTmJRZVFtY1hDTzJqcGRCWlhLbVFWWWo0TXpQZlA0a1doZ3kxc2lISTZCOUJKTzNrLVl0VURIeEZhQk4tWDBqNjZJaTI3SF94QU1sd0VtR2ZvZG5KLVNEWnpjUEVhcWdVSUNNc0ZDUFRzRlJveEdKNmc5T3Z5cDdsZkpUZ0JYeHRYQ1ZY0gHTAUFVX3lxTE5NQ2I3Q1BRa2tPWlNySUtQUGt5MktQenMzekhDQjV4ZEFROGd2MU5oXzZ2dmdXeVNSOXRGWDdELXN3cmQ1RG42N2F0WDhDYXNNbVl2R19odDEzeVFLV25RelZZZmxlLXhSZmRkU19hcGJIYkRod1FQRHVIMkxLMWdlX3Y4UVd3ckxUdHlJQm9IdWhvNS10Yk9VR1o2cl9NM3dSbHFuTmNDemIxb1hxN0l6bExLdE1NdWtodnBrWEJMSng4QllWUnFWVGRxeHhvSHZjTzg?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
+      },
       {
         "titulo": "Carro bate em poste e motorista é preso após polícia encontrar drogas dentro do veículo em Porto Alegre - G1",
         "veiculo": "G1",
@@ -1706,69 +1775,6 @@
         "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWk5RcWpWXzZ1Z21TR3VEb212ZzFBb0huTElVcGRaM1BVcVNZSFU3YklXbDg4aVcxdE9zM2hSeEl1Q3VhdlNONGFFNFRhMjd1SmVfQkVDbVlkWnhNTkotLWdKYkcxN0RiYWJXOWJHYjlUZ3ZQUF9ZTkQ2MjBfNXJMbUhCV1NyVnc0b0JOa2RQbXlyZ2xqT3RmZkVxZVliVWpHUl9Idm45TlJIZDIzUGlCWA?oc=5",
         "publicado": "2026-08-12",
         "dias": 1
-      },
-      {
-        "titulo": "Porto Alegre: moradores relatam alteração na cor da água no Centro e na Zona Sul - Agora RS",
-        "veiculo": "Agora RS",
-        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOUmZXOVFvZF96dGxCVUxNdmZiYXlnelJRZkZ3dWE0cmlvS2o2NVM2N2pMYVRkTENIV0twbFdadTFtSGdBWTZGY2NsanRDZVFuUVZwYVkzeFktLUFUTERteGNoUS1KUTd3aXBKbTJURGJVM3NkX3pUd3gxOVlQWHV6SHhka3I2eHlX?oc=5",
-        "publicado": "2026-08-12",
-        "dias": 1
-      },
-      {
-        "titulo": "Tarifas de embarque internacional sobem em Fortaleza e Porto Alegre - Portal BE News",
-        "veiculo": "Portal BE News",
-        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNYlYzZlVPc3NzMFFJTU03eGZBcHh6d3gxeEVDWkEzSHFLVWlpRG5GaExMTWd4WGEtQUlZUGFTcFl2bEhjSHJtM3JGdFhyR1Vld091U2E1UlM4Y0FZMlFkN3RPR21XdFpDdmFTVXFLYlJCc1JWN2lTczE3SWJBbE9DbnJybWFmSFRRNHAyVnQzVWVreDh0TDc1amNmTFA?oc=5",
-        "publicado": "2026-08-12",
-        "dias": 1
-      },
-      {
-        "titulo": "Quem são os candidatos a governador do Rio Grande do Sul (RS) nas eleições 2026 - JOTA Info",
-        "veiculo": "JOTA Info",
-        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOS0dPdkE1V204bVkwb1pDX1dHUm1vVjhtdlNwcmdpb05qQ0ZJaGU2YldqZktuSnd3Y3JsMWltYlJEbXJMcjV4Qjc3ZlRMZjdOVTdqYlFUVVhDTy10Q2gyZVFSMFdwVEJPS0E4NWFEa2JZU29sTEhKT2N5d1Z6ZU9URk51QzRxQVpZdy1fam5OdjBDdWtXZGlLaGNXQnlYTTFVRmdRVFVtNEVZMEltSXMxTEgyenk4bjdvcEs5bVlfNllkQ28?oc=5",
-        "publicado": "2026-08-12",
-        "dias": 1
-      },
-      {
-        "titulo": "Grupo Press desiste de abrir loja no Mercado Público de Porto Alegre - Jornal do Comércio",
-        "veiculo": "Jornal do Comércio",
-        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPdEdncy1PWTNIckJHUDVFVXRVNnhtb2p2c2xBMnlZUjdmUXRIXzZ5OWhUX21Gc0hUeFF2UTZrWlc0ZEg2TkctSFNIYkNJNHhkc1VNQjlidXZvMVo1Q1dLN2laZlF5c3BJZlRFenB1VjB0d2JhNXhEZFowM0xWaW5CNEJ1RHQ0UlFEU25GMU9rSDhKTTBkcFZfbWlLVUtRUTNqejY4ODNPSklpOEhwT1BYNTNHOHUtV1FhVXhQQ3RESHgzYlA1UTRKU2RHSQ?oc=5",
-        "publicado": "2026-08-12",
-        "dias": 1
-      },
-      {
-        "titulo": "Prefeitura homologa empresa para gerir Usina do Gasômetro por 20 anos - Agora RS",
-        "veiculo": "Agora RS",
-        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPaVFmZXJfaXhSV05fWWlRLVg3UjBFb1pyTlJGQ3RNX2wydjdrOXdYMHBSRkpWbVRBdUhhanphOWRZd2c0T0JBZTRUVWtBZ0dWaF9naDRfd3MwN0Y2ZTBxaGNaS25GLTdmbHc1S0xWOHFrZTVlMFo1SHc1aGdfWE81Y1BZNW40OWtVNE02VA?oc=5",
-        "publicado": "2026-08-12",
-        "dias": 1
-      },
-      {
-        "titulo": "Justiça manda vereador de Porto Alegre remover vídeo em que acusa governo do RS de chantagem eleitoral - GZH",
-        "veiculo": "GZH",
-        "link": "https://news.google.com/rss/articles/CBMitgJBVV95cUxPYzAxUEt3ZGpJbDNqaWF6YlZmdTd5ei02WEtYTld3WkliV09jUlhFc0pBakJ3TTRjaGd1Q1ZTcDViek4xSVE0UXlhNHFrN2lJMG5IYjQzTVYzVG5UOUJteTVFN1dPOC1JS1JvVFZ5X1NsSE5DbG8zT0NwYmRpa0hOZHRCSzZXbXN1ay1tM1B2NnF1WE55eFAtVUJwa3FWb1JILU1saGlCSElXQU1iNTdJWUMtMmJWRUVGMmJ4b2lrVlZYR05EMDBpajBrQXRXUHZLWkkweHZfT1oybDFVdWxmWVAwX3ZJVGRNZ2JObHhqcjBSYWpLSHUzbjZtUk9qVllMWExrQVdOeUJmZHJaY0RDbVJHbWdYeGYzeFRmOTIxMU4xU1RpZzNTTFFxYnN6LUxfY0szUFJR?oc=5",
-        "publicado": "2026-08-11",
-        "dias": 2
-      },
-      {
-        "titulo": "Previsão do tempo em Porto Alegre (RS) hoje: veja como fica o clima nesta terça-feira - Terra",
-        "veiculo": "Terra",
-        "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQYVgyelFLa2dnRmxDd1l2al9zejVDRXJtSmM2bTQ2YUdCQ1MxTDZ0QWRLTi1ERS1Ldjg3TVpRYW1BQU1ZOEpVZjRYeEkxMFgtTzFKZFpnRk5IU29BLWFoU1UtMHVXTlhPRFRMQzNpd3pCUVkzd3BDcEpIalBMRWZBR0xfNmJlZDNTOUYxYzAzVlhfNTZyZkRVU2EwS2REOXBsalNyTl9mYzlrdVphU0V1aWl6SjRjMGdBdEFBdXVrWlpaNllGQjJDR2RiRkMtVHNTa2l4b0F2Z18tMFRFQnp4WUZFRFJzaGtTaGpacF84X2VXaEJaZ3IyMVRQT3dIWldwWDRHSUUtOXM?oc=5",
-        "publicado": "2026-08-11",
-        "dias": 2
-      },
-      {
-        "titulo": "Porto Alegre registra a terceira temperatura mais baixa do RS nesta terça - CNN Brasil",
-        "veiculo": "CNN Brasil",
-        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZjJHVTlYWFRzbUFBSjFzZmo0NFljbllFRXJ2QTl3V1pZaC1WNWFPbnJSWV9TTjFSOFJ1UHpkdXJxYWxMM05qX2FJTXJuNTlfTWloUVFheTBjV2VqUktKek1lVHBDMVhydXVVRTZjWHVZQ3N1WnFZVUVnMWdrMnVVRktuZndnMnpQTmFmYnM4MHRpYnF5cnozSmh2TzM4Q3Nndl9WendnSWgtMkxhbHdETTVzRVJYREdvb1Vj?oc=5",
-        "publicado": "2026-08-11",
-        "dias": 2
-      },
-      {
-        "titulo": "Após sugestão de músico, Fabio Porchat registra tour gastronômico por Porto Alegre: 'Tive que desenvolver um novo estômago' - G1",
-        "veiculo": "G1",
-        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPVmJUX0F3ZFR3TWtQUW5PU29QamQxaXVObG1ESjlDVHlGRnVoRnNBdG56dk5mbTc3N25CUDZ6NVg1bGxJeGpTdlJ5eTRKNm1TNHRnNkNVVUVnakFoeVpsQnB5LVFkWGRLd2xySnZJWHNiNmhTbldyT1RmODJiY0FTS0l2VDJHQWNDZkJoMzdveUxHa2xPN0h3dGJaY2paRlZpdnFhUGlQaVduS0tXaGhrMUtJVHVLRWJlb2lz0gHKAUFVX3lxTE1NS203MlMtN1R1STFjaGFaWXdGU1NhU2tsYXRqc1FKallPdThabjdmTksxbWV4elgtRUhpeWVQdTA2X2RndWVUSGc4ZkZEWm52RkdjU0FIa3NmZ1pIM0FhOGNIa0xSUlJnWEpaU3Q3bG8yZXFlRG83VmFxWkV3ZEVzQ0NkbUJveExSMktlNnd5NFA1YjhUX09UVEh2eUttMHhrT0FXRkJEMXBtd3pYODVUay1PR1FDNXZpX2FoNDcxTUVsQk4tT244TEE?oc=5",
-        "publicado": "2026-08-10",
-        "dias": 3
       }
     ]
   },

@@ -5,8 +5,8 @@
     "unidade": "OrthoDontic · Centro",
     "cidade": "SP · Sorocaba",
     "endereco": "R. da Penha, 426 - Apto 12 - Centro, Sorocaba - SP, 18010-000",
-    "desde": null,
-    "medicoes": null,
+    "desde": "12/ago",
+    "medicoes": 2,
     "posicao_na_cidade": null,
     "clinicas_na_cidade": null,
     "lojas_irmas": [
@@ -19,7 +19,7 @@
         "unidade": "OrthoDontic · Jardim Faculdade"
       }
     ],
-    "frase": "OrthoDontic · Centro está entre as 35 clínicas mapeadas de Centro e divide Sorocaba com mais 2 lojas da rede."
+    "frase": "OrthoDontic · Centro é escutada desde 12/ago, em 2 medições e divide Sorocaba com mais 2 lojas da rede."
   },
   "rotulo": "SP · Sorocaba",
   "unidade": "OrthoDontic · Centro",
@@ -96,7 +96,35 @@
     }
   ],
   "quem_avanca": null,
-  "o_que_mudou": null,
+  "o_que_mudou": {
+    "local_id": "ortho_soro_centro",
+    "nome": "OrthoDontic",
+    "proprio": true,
+    "aparelho": true,
+    "de": "2026-08-12",
+    "ate": "2026-08-13",
+    "dias": 1,
+    "antes": 116,
+    "agora": 116,
+    "delta": 0,
+    "nota_antes": 4.5,
+    "nota_agora": 4.5,
+    "ritmo_do_periodo": 0.0,
+    "historico": {
+      "desde": "2026-08-12",
+      "ate": "2026-08-13",
+      "dias": 1,
+      "medicoes": 2,
+      "antes": 116,
+      "agora": 116,
+      "delta": 0,
+      "ritmo_do_periodo": 0.0,
+      "nota_antes": 4.5,
+      "nota_agora": 4.5
+    },
+    "eventos": [],
+    "aviso": "a praça é medida há 1 dia (2 medições) — a leitura ainda diz pouco e engorda a cada coleta"
+  },
   "sem_resposta": {
     "abertas": 5,
     "com_texto": 5,
@@ -717,16 +745,16 @@
     "e_clinico": false,
     "confianca": {
       "natureza": "fato",
-      "confianca": "media",
+      "confianca": "alta",
       "medido": true,
       "amostra": 88,
-      "janela_dias": null,
-      "medicoes": null,
+      "janela_dias": 1,
+      "medicoes": 2,
       "fonte": "dados/serie/reviews.jsonl",
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": "mais avaliações com texto nesta loja",
-      "procedencia": "medido em 88 avaliações com texto"
+      "procedencia": "medido em 88 avaliações com texto, 2 medições, 1 dia de janela"
     }
   },
   "meu_territorio": {
@@ -837,8 +865,14 @@
       "praca_id": "sorocaba",
       "rotulo": "SP · Sorocaba",
       "eventos": 1,
-      "estado": "linha_de_base",
-      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+      "estado": "medido",
+      "janela": "2026-08-12 → 2026-08-13",
+      "medicoes_da_praca": 2,
+      "clinicas_antes": 17,
+      "clinicas_agora": 17,
+      "comparaveis": 17,
+      "estabilidade_pct": 100,
+      "aviso_de_metodo": "a varredura devolveu 17 clínicas em 2026-08-12 e 17 em 2026-08-13, com 17 em comum (100%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
     }
   },
   "execucao": {

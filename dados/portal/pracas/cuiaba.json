@@ -1402,42 +1402,6 @@
   "movimentos_do_mercado": {
     "eventos": [
       {
-        "evento_id": "cuiaba|concorrente_acelerou|ChIJ69guJYixnZMRnsvy09GVFEg",
-        "data": "2026-08-13",
-        "praca_id": "cuiaba",
-        "rotulo": "MT · Cuiabá",
-        "local_id": null,
-        "entidade_id": "ChIJ69guJYixnZMRnsvy09GVFEg",
-        "tipo": "concorrente_acelerou",
-        "natureza": "fato",
-        "severidade": "media",
-        "titulo": "Odonto Alfa - Clínica Odontológica em Cuiabá acelerou",
-        "fato": "ganhou 36 avaliações entre 2026-08-08 e 2026-08-13 — de 75 para 111",
-        "por_que_importa": "clínica odontológica ganhando atenção; nem toda disputa aparelho",
-        "decisao": "ver o que ele está publicando e anunciando",
-        "fonte": "dados/serie/categoria.jsonl",
-        "evidencia": {
-          "place_id": "ChIJ69guJYixnZMRnsvy09GVFEg",
-          "antes": 75,
-          "agora": 111
-        },
-        "confianca": {
-          "natureza": "fato",
-          "confianca": "alta",
-          "medido": true,
-          "amostra": 111,
-          "janela_dias": 5,
-          "medicoes": 2,
-          "fonte": "dados/serie/categoria.jsonl (2026-08-08 → 2026-08-13)",
-          "a_favor": [
-            "145 clínicas medidas nas duas rodadas"
-          ],
-          "contra": [],
-          "o_que_aumentaria": null,
-          "procedencia": "medido em 111 avaliações nesta clínica, 2 medições, 5 dias de janela"
-        }
-      },
-      {
         "evento_id": "cuiaba|linha_de_base_anuncios|-",
         "data": "2026-08-13",
         "praca_id": "cuiaba",
@@ -1471,108 +1435,108 @@
     "resumo": {
       "praca_id": "cuiaba",
       "rotulo": "MT · Cuiabá",
-      "eventos": 2,
+      "eventos": 1,
       "estado": "medido",
-      "janela": "2026-08-08 → 2026-08-13",
-      "medicoes_da_praca": 2,
-      "clinicas_antes": 243,
-      "clinicas_agora": 145,
-      "comparaveis": 130,
-      "estabilidade_pct": 53,
-      "aviso_de_metodo": "a varredura devolveu 243 clínicas em 2026-08-08 e 145 em 2026-08-13, com 130 em comum (53%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
+      "janela": "2026-08-12 → 2026-08-13",
+      "medicoes_da_praca": 4,
+      "clinicas_antes": 29,
+      "clinicas_agora": 29,
+      "comparaveis": 29,
+      "estabilidade_pct": 100,
+      "aviso_de_metodo": "a varredura devolveu 29 clínicas em 2026-08-12 e 29 em 2026-08-13, com 29 em comum (100%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
     }
   },
   "imprensa": {
     "medido": true,
-    "total": 52,
+    "total": 85,
     "mostrando": 12,
-    "recentes_30d": 30,
-    "manchete": "30 matérias sobre a cidade nos últimos 30 dias, de 52 já lidas",
+    "recentes_30d": 49,
+    "manchete": "49 matérias sobre a cidade nos últimos 30 dias, de 85 já lidas",
     "porque_vazio": null,
     "materias": [
       {
-        "titulo": "Drones reforçam fiscalização de terrenos para prevenir queimadas em Cuiabá - Prefeitura de Cuiabá",
-        "veiculo": "Prefeitura de Cuiabá",
-        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPMmZzd0R0dXJSa0pRc3VvcFprNnhYTHI0N0ZfZHFQa0cweFpYZVFkOUJhcmQ1RzdhczM5ejRJenE5WDI1ZFVHZTJMMUs5cW1FRGU2MnRTbDFzeTVZdTQ0VG5GU1BCaV9QQnJYZ3diOVljT2VEVzE4Mm5jaVRmRkRGQmgxOFVqMzlRdF9fMDNYZVQ3dkN6LTdoajdKbDhwQWpuZ2xyM3RzZzljNzVIR2tKREV6VU9XWWlOVHJEUi14YmpiODA?oc=5",
-        "publicado": "2026-08-09",
-        "dias": 4
+        "titulo": "Câmara de Cuiabá aprova auxílio e passagem de graça para retorno à cidade de origem - g1.globo.com",
+        "veiculo": "g1.globo.com",
+        "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQUkVyLUJPalpicklhdk8ydGlBYVNDQ2xOLWRaWkU2TkJ3U2IzQmF5YWJzMm43aG9oZ3FsTGtTMFNRY2kzVXhyZWNkTGRrZ0N3TmI1WjN1Q25kMHVVUmZSWUxtcmN4VnJKbXdzY3I5aUpoTk4tYzhBckE4cjhjc2QwMlZ5VlFEVE1RNllaMjU0OE1HTUpTOWphODhacVVtYkd4UWpuelZoNU9XWVVMdjR5T1hhdGJGblk5ejhDT0hJN21KeEZpendaNGlFX3d6dldCb2FqWGFPckVHemF1ekF5ZXhhdE9DdE5rcnVKZjBqY9IB_gFBVV95cUxPWFdCSFVBWHgzbzNTbmQ1aDJaYkpkNlpzXzRHNXBpVS10YmRVaTA1T29IendGUHF4ZU03cEdtSE5BUjVYRVNsQVhxRlVTTVdmMVFWNk1lNzRtWHM5SUJxandMdk1JWDB5QjdpakRhY3JuZUtXSUpaSmYtSlJEQUNzazNzclBjXzMxLWl4WXRvZ25lazNQX25YUVRoWkRrVnlHUlBIYlpvTEZ3X0szRVNXQ1ZwR3M0eDhtNE5LLWNmR3BiaVpoUDU4X3pZeUFNX09UbzRHcFBHdWRRaExfbFpCTk54RF9oOUpxLUl4TkFqcDlaQ1phdlVMZWF5QTd0dw?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
       },
       {
-        "titulo": "Cuiabá x Fortaleza na Série B: onde assistir ao vivo, horário e escalação - Estadão",
-        "veiculo": "Estadão",
-        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPdmZWVmtrUzJnNnlEWnhTTXVtVWZiQTNjMFFXVWxKZU5qV29oZW5adW1YZWdxRWkxSXVNY0V1bmV3cGZ1blZzRkxSaWNOZ1AyTHZ5V3pqc1pseWxYTnpDVHZVeGczR2h2VzB5QkZ0RU56ZGxkMGM4UVBQNnNtek1Ua0tySTQ4UDZTSVh4S181bDNGT3VnazVXQTlYY0Z6enQ1RVJyNGJYRHhyd0JfMVpGX05SSnQ3U0xs0gG-AUFVX3lxTE5zZkIxMzV5bG1WakZubVhmQzRTcjBSWlpaVVJaZ0pxMzVRNkVsQzJuMm80WVFDbk04cE12NnRRMmxVXzFCWDJDMkNZOGtPVnl4WXhmWXA5VXpyb0V6MGozQzF1WVk0dnZGa3dDS3lqMUNxcDI1VFZLNWhEcktlbF90MXJYZDlKUE1MUXZxaW9FTEpPdXpnUkZwNjJUOEF3eUR2MzZvNGtMRXNQYWloQUQxMFgwUEFFVkFIekJmN2c?oc=5",
-        "publicado": "2026-08-09",
-        "dias": 4
+        "titulo": "Horto Florestal recebe 1,5 mil mudas do Programa Verde Novo para arborização de Cuiabá - Prefeitura de Cuiabá",
+        "veiculo": "Prefeitura de Cuiabá",
+        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQSFdzbDVodGJ6VEhTZGhiNUtfRmttTEpzM19zWm8wbUV5N1A0WUpkQ1g1MEE1eDUwU1Y5UUZPdS05b3E5cGQyR1NKZHp0LVZpLWNudWRyZlpYb29OZ2tVZmp5S3B3N2lqb1l0QWNoTDZEaWxEa1duQWdJYXAzSzBHRURQUVZrTnVTbkQzVDlwNWh0czdCaDMwZ0tkbGd5cktvMlMwZ3hiT21GaGRRVk45Ty1leFV0dk9DNzNOOUNlZ1JFUQ?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
       },
       {
-        "titulo": "Missa campal reúne caminhoneiros e marca momento de fé no Mato Grosso AgroFestival - Prefeitura de Cuiabá",
-        "veiculo": "Prefeitura de Cuiabá",
-        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPUzhpanB2cC1yT2VJdXFKeFRsLXNpMG5HdEJSTGNRcmxIOEZaV3A2Y2FiTWt5Rjg3QXo5MnFJMmdiUnI3YkY3UTFraE5ocjNRTXhabklSNkc4XzdOcTEyTzBHX1hEZFJ2MlZURmxPblZyWHNYWVppc2lrazdIbmpCQW14eFE2cmZRNUdIdW5fQ0ZhUE1RVnpJOE4wY29mX2k1bVN3T2dHM1BSUmRYei1fb2hnTG8zVkw2WXlDVQ?oc=5",
-        "publicado": "2026-08-09",
-        "dias": 4
+        "titulo": "TRE-MT fecha ciclo de audiências públicas sobre Eleições de 2026 em Cuiabá - Tribunal Regional Eleitoral de Mato Grosso",
+        "veiculo": "Tribunal Regional Eleitoral de Mato Grosso",
+        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPSVhqRlpsY3Y5NkdlWUJwd2E3SUZObDlhSXI1OHc4alNaWXJSS0dkRjZVaHk3UEpvSVVjMFlSMkZJMjJBcjdIVnNpeHdwM01qNERWZVpCSUZIemxaaUM3eVpjbWpkY29VVEJla19xbkcxc3VPVnpHZ2ZHZE5kMllUZlZLMmFLSmIzZWp4cTB1TUc2d2o2VnRUTEc5UEZibWltUU95MjI1NmhvemJEUDdoT1JqX0NNcFIycGNadGhaRVg0MDNqekpLdTJUYmcwZw?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
       },
       {
-        "titulo": "Cavalgada e procissão de caminhoneiros marcam último dia do Mato Grosso AgroFestival - Prefeitura de Cuiabá",
-        "veiculo": "Prefeitura de Cuiabá",
-        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPMjdzRHZlQnRNTkk0eVI5N2pGOW84SGlYNTh3UXFyZTdIdTZfc2M3d2FGal9ZTzROMjlHM1hpTVUzWS1BNGR0blJqUGxRcEkwNTVkMVpveEw3eVYzaGp2Z1lSVzJ4LUVNcnFOQTJ1eVZJdDdibEdLWVdsQzhHR0pCVkZrUjJ1cXFRUFY0dDI4WlhJaG9TMzE3RlprZlVOM3pOZEFkNnc3YURlMWc2T1pUZE00WU1NZ0pPT1JmTTNOMA?oc=5",
-        "publicado": "2026-08-09",
-        "dias": 4
+        "titulo": "INMET emite alerta laranja de baixa umidade em Cuiabá e Região - O TEMPO",
+        "veiculo": "O TEMPO",
+        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNbDNXSUl6SVRkQ0xVQ0xydU9zQUV2ZkZDNTFzUU5MU1lUQllUakRxS0k5dzVyM1ViLXgxNTQ2NXl5YVJnYUx2cE5aQlhPWFhFT0dia015R1FiamwzX2xYVXlCS2VKc3RNd0g4YmlOTDMzbG8xUTVZUS1KUzFWbW1iY2NrTDMzRHVPOTlCNlRXR2ZJNVZfNUhDc3ViTlpOdEZNMTJueWQ2a9IBrAFBVV95cUxQYXRTSHE5U2QwTExlTS1GOFhRYWx4WGJGVDZLTjFvUk42Yl9aSm5SeFNzMEEtMjI2bWJvdVdzSTg3aUZtN0VWMTlVd1ctSEIwZjZoMXA2TGdQSnpVN2hlVm8zYXJfS3ZxV1dQZU0xcnJSTWt0ZldlUW90aEIzSFpmQ2htVC1EVW9tS3RoNlVWOGV1VExMVkF5T2h4MElDdGRXZ2RZdjJSLUNnMWlI?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
       },
       {
-        "titulo": "Projeto Escola da Comunidade ajuda moradores a vencer o sedentarismo, ansiedade e recuperar a autoestima - Prefeitura de Cuiabá",
+        "titulo": "Prefeitura de Cuiabá investe mais de R$ 27 milhões em infraestrutura no primeiro semestre - Prefeitura de Cuiabá",
         "veiculo": "Prefeitura de Cuiabá",
-        "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOREcyS1RCU3lPODQ0dlUwZWc3cjljV19wWkVCSDZjdUFwbElIUzZncFdmSGRpRndnYS12YWlGc25FemVQc3VUVUdoZ05SSmJnTm5fRi1uVm9mUGdYeXRoWEVrQmVlbE5LOUZHQl9LajZsS2ZkQ0g0UC0yUDRXa3Jxb0RBeFhqUDV3emVyMi1lVzJyQTFqTlh2Q1R5ZlRha21wWFRwNk1jZlJtSEZYYk1ZZUdpWTVvZGo4STBIUmpRaF81Wlp0RmFha0Jsd0N2Zk9icDdnUnp4M3Y?oc=5",
-        "publicado": "2026-08-09",
-        "dias": 4
+        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxONHFNQXh0Z1BRbVJCQ1JFUldLU3R4T0lEdFdJWFR5VWl3TTRwNmpVbmRMV1U0aHpQaEYtMFhrd0ljU01YVGlpTEZVVUpEbmFpendUMW1YaDdSZHhFaTRDTXAwbzd1RmVxWGdBVjg3NExWMFRzeFRSbU82ZjIzb18yQmVMalpOYUEyTGxqcDdURHN4V0I3Y08wa05kVGFpUHd0TGR4WEJzRlBQZm5UMmpYZzQ4OG9ycDNaaXZkQ2xBRmEtMGho?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
       },
       {
-        "titulo": "Segundo dia do Mato Grosso AgroFestival reúne cerca de 70 mil pessoas no Parque Novo Mato Grosso - Prefeitura de Cuiabá",
-        "veiculo": "Prefeitura de Cuiabá",
-        "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQaWEzYjdMYmxUNnlaUmlsZFJ6dzdDaEZBVzVCVUp1cVZvMWtWaGxyMEptVkM2Qm1wZGJCeFc0X05LZEJsMnZjZV9ZT3FveVkwdkYwNFRWTGQ2Ulc0cS1FSmo0aHNCWXNHZlFWbExiQkZ0VFVvaldnV2VKdmNpbXdSemJyWjR3S1ZSaEx1WWJRREVSSHhLQXdINUZhQVNfVmdKNDRKUWNGWFBlUHd4OWdoWjBWTkp5aFlNbnhsdGNiNHNhUEZTbUszekpoOWdkYTg?oc=5",
-        "publicado": "2026-08-09",
-        "dias": 4
+        "titulo": "Tutores poderão levar cães e gatos para vacinação antirrábica gratuita neste sábado (15) em Cuiabá; veja locais - g1.globo.com",
+        "veiculo": "g1.globo.com",
+        "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNc0ZNRVVLdFJXcDkwd0pqZUxhWlBRX3liQVJ6Si1obFh0R2UwOTFBRmtLdV9sNVlJSkRfT1lwT256T0xOeTR2d04tVnk1b3QtQlMtSlJNRXlVbVpGSkRTdTZUN2xjeVJSS29oRWtjWldOaFpvdVU4czVTaTlJeHZDQ092bTdtajlydUZUU20tT3ZDdVdiUGxvMElOVWJQenhuWXFOc3dMRF9ESHBQa1FCLU1GdHZTZHJ6M2tiUzRUakthVWlPUVdpRFlWT09hb1dhd09KZEF3NFN3Rzd3MFkzQlJGb3FJT0xNUHVNS0RlbTN4cTZMaU1RX2JZUzBrQdIBjAJBVV95cUxPbmFIaUNrSWhFdkVoWjdzV0pjbTZQZnlad0NlUm1MaVdONzUtd3lzZmFQa0U5bFRuUnpqVTNpNGt2dFIzN2FSdGNNcThHM01sUXp0d2Z2dEwwZ0JKQXJ2Z09IT0tidFZfVTFNQlJjcmNhMnBqakkwYlFDZDVBa2JWb0o0b2MwSXNvUkVFX0RLb2lHNFY0aDlZS1hxLTcwTTVwS2I1N055LWo5NDhXYmFmX0lCVHdUbEppMDRZaFpEZXQybEk4eURJem1VNkhoWnd2QkttM0g4QXlwaUd4YVN4UUlPZS1KVllObENlQ2ZxMk5wTlVnNUdzT0RFc0NodEkxam1Pb3FoMlhXVG1i?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
       },
       {
-        "titulo": "“Será a primeira vez que o Praeirinho terá um espaço apropriado”, destaca prefeito sobre nova Feira do Peixe - Prefeitura de Cuiabá",
+        "titulo": "Cuiabá sai do Alto Risco, mas sete regiões mantêm alerta contra o Aedes - Prefeitura de Cuiabá",
         "veiculo": "Prefeitura de Cuiabá",
-        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQVmgxZUhxWU9zeEliWFJVbUNTSmtveklFODJHWmJtakdrbEtmczBLal8zWkRkWWhKb3lRREF5Yzc5QTVyYlNlX1RsVEV2ZWEzZlZMcjJnY1VwQ0VPdlFvQXBjMjBqTkY3dktkcjVrRUFQN19nUktxd25sU2tlS3o3NWF5c245NXY5WmktcTNBUWptWjFNc2NuRll4eDVEc2s0QTRzT2VJLWVCS1ljLVdsQnJfdlpqN1ZyRC1FV1dOTHFlSTdXcmw2ZUY0R1VuMVVqM21mb0tEVVZVSjg?oc=5",
-        "publicado": "2026-08-09",
-        "dias": 4
+        "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQQ3h6SzVUdnpfaDBLU1JkanpoVzV0amZmbFJuSjVPZFRfdjdLSlpNZEQ0MDdxYmxQZnZTTzZmSFNLWjRIX1ZSNlJ5OWpRYmdsX3h3Z0gyVXhpVmQweHVRZnVXUlY1UUUwSHVmYlAtcjBoZXRkeHl0LU1XS0FkZEZtVS0wcmpoRjRqcGJ3aHlzOUE3ZXpQWk9HOFp3bDR3UERQZDBoYktXWEtfOVlHWGpuSWpDV1pyR0V5R2RCQV9tbm1pVGcyN2VjcXIycTR0WDZvVVdrNXh6ekJ6UWVrd1NRTE9HLWstcjFp?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
       },
       {
-        "titulo": "Exposição “Pantanal em Mim” reúne arte, memória e reflexão ambiental em Cuiabá - Prefeitura de Cuiabá",
-        "veiculo": "Prefeitura de Cuiabá",
-        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQQnVLY3h0QWpGMmM5dnVMa2VHNHBaTlBIUm1JTEViYzFJMzBHMWN6Z0FJdzRZbE5EdTc4cmRGYjdYNWZWbzlCazJ0OC14OGo1dDFLU1JrUjhpTkxVVmpLeHFSVVFJNnVDVUpMWlp6NjJTd0thZWJRN3RrUm5kUk81Zm14eE9aZFpicUFPSnMxRF9XekQ5TFBnU0lFMmFYRnNoQXJkcXpHRVJzUEp4WTF4TU1zbTlGNGdXc3BlSFY1d3FBM2JRbXc?oc=5",
-        "publicado": "2026-08-09",
-        "dias": 4
+        "titulo": "Bairros de Cuiabá têm alto risco de infestação pelo Aedes aegypti; veja regiões - g1.globo.com",
+        "veiculo": "g1.globo.com",
+        "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOVktuRXhqNmM5Y01LSGt0UnlMLUJqUkd0d21ZdWlGZHVlbGdCRWpKRzdscUZTdW5UNlVLY05PQks4QzhYd3lPZEU0NzczU0lZZUxITUJDNWRFbHdIdFplTEF5X3ZhdXViN1Y1TVAzVV9NOEhsdjhSZ0lqWU1TdUxFRnZnVW1YZ2ZRbzhYa21QSnAzaEtCVnFqc0RlNl9JTG9qQ0JXUUp1RG5Yc1FiQ1FlU2liazk5SE1uWE92Y0ktb2tDZ0ItdTg3SGsyc1g4Z2tzXzc4OHBR?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
       },
       {
-        "titulo": "Semob instala novos bancos no Terminal do CPA 3 e prepara melhorias estruturais - Prefeitura de Cuiabá",
-        "veiculo": "Prefeitura de Cuiabá",
-        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNQWtWWWFxdS1fRHRfMUZ1a2tEczlpN3JOcXlkMU1QR09DaFVuZy1idkdZVVp1dGdEd2VtM1pvaDg2OVd1U3JiZUdjUVRIZThjVWxPTTNmMUtCcWpIY0wtWVlMY3ItMllsU0xsZXhmUUZNMTRlT0RzRFRsRklhdDBjbWd1MTJXXzYxMlIteUZwUHJZem9Xcmh3NjVoWTFEVU9TeEV1OUE5YlF0X3lSd2lobWFZSTEweEtw?oc=5",
-        "publicado": "2026-08-08",
-        "dias": 5
+        "titulo": "Câmara de Cuiabá aprova concessão de área do Shopping Popular por 30 anos - Gazeta Digital",
+        "veiculo": "Gazeta Digital",
+        "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZDVodi02S2RucXNOQTIwV0RaVW41WVV3TEhOa21CUWpDZjhieEZrYk5aUVpudEdYaDlwdFRXbXBBekE3eU1vNUlzWmNpanZ5RGNEN2FFTXo0cG4tNTJSRVNkLVZvNVVzd3NOMEFpbjJNT0l2QzR2RFBveVJJaXdfVEpid3dsUzY2dUMyTnZvUl9SOVgxZ2p2M2JVRmZPeGVnYUpqdUt1dk1pdE96WGNnbFZmV1U1U2Q5b3RLQU9PX0xMSTdyMDRxc2t0SHEyanFYMXRhTg?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
       },
       {
-        "titulo": "Prefeito Abilio defende solução técnica para estacionamento central Av. das Torres - Prefeitura de Cuiabá",
-        "veiculo": "Prefeitura de Cuiabá",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQYXFhbDZUUmFBVXcwLUEwNFlmb0xYaWNQYl94UWg3b1FsVktTbEQ5RjlKX0RrclR2UjVVVGh3LVk5dmFpSjlwZlR5TGRzTjllV0ZxS2h0b0hPQ0xJOWwxR01HYzRWLVhYdDZyX01ndHBUQUgyT01uWkxmWUp5Ylk4MWY2RU5ZMFYwMFB2eVg0RWZvMERjRmhRenZRZ3E5cGJMY3MtOEItUnc0RkZkVVk5M0JSOE5DRWc4SGc?oc=5",
-        "publicado": "2026-08-08",
-        "dias": 5
+        "titulo": "TCE-MT suspende processo seletivo para diretor e coordenador das escolas de Cuiabá - midiajur.com.br",
+        "veiculo": "midiajur.com.br",
+        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNRGZmMG1ReWZWcXZKdEdrMVJqNkZkZC1BNkd3SlJCQWpmY0s1RnhjNll1eGx5NmIwdURrdTlSakI3eS1jbVFNT2tSeFlUOTU5TmUtaEZxYVZFSUVSbFBLT1p4ZEJWbkpWWV9mQmVEbU4yZ1IwOTFWU0FiWERkVnFzbVlseEdsVFMyeEpwU0RlRkhuYWFUdUVKeHhpX2h5ZkdlYlg3Z2dhRnVUem91amxUWnlqMmlqMzhIbWJSa1FtM2c5dw?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
       },
       {
-        "titulo": "Com apoio da Prefeitura de Cuiabá, Grupo Flor Serrana lança primeiro álbum - Prefeitura de Cuiabá",
-        "veiculo": "Prefeitura de Cuiabá",
-        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPQ3RnYS1uYjlmVXVQUEh3NVpzVUVXT2FtZkNmb1VnWnFQWkwzYml4OHNOWlllcExpdkpJU2tJbXQ2ZmVrd0cyQjRtZDNPVlBCSUZpNUptUUVwYlQtTmJzbktNaDNMTnZjLXdZOXAxYk94ZEpKT2sxZ2NzdTF1U3dITFVIN3lQbE9mdmdxZEZqSmRERmwtT1FlUXhYR0tTbVJUV2huQklfQ2p2TjRwMjMxSw?oc=5",
-        "publicado": "2026-08-08",
-        "dias": 5
+        "titulo": "Boneco “panhôzinho” vai ganhar as ruas de Cuiabá e VG - O Documento",
+        "veiculo": "O Documento",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRE5iWEtzZE4yU0pEZVBQT1doSjZlenRzMVp5SW8tN3U4bV9mTnQ5TnAzR0lqNFZCakh1bmRPVDEzVjFiVTJJNmRaQ0FIWlZnZnc3RExtYlZja3BZVmJJNmxHb2FWeFZrYTJfRHgzanR1SlNVLU9EanZwYVBWM1JIMVRySDI?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
       },
       {
-        "titulo": "Mato Grosso AgroFestival reúne 50 mil pessoas no primeiro dia com rodeio e shows em Cuiabá - Prefeitura de Cuiabá",
-        "veiculo": "Prefeitura de Cuiabá",
-        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQTjdqNUtYcVBxMVJ5eU12SEJ0RTlwUmVoWVNROXpvM1g1UFVEcGFwWGVEVl94Yl9aOVFSWjNXZHlFOFNqR0xEYTUzUDlhbFlDanRza3FHMHg1Y1VMRDM4bE5VZGxjR0k0bHFndzJGNWFCX3dhMUlWSkkxWEl6VTZDazMyamQwLVNBVU5tTjdRVTVNWTlCUkQ0RDFGZmFBSGsyZWhXUTRFOHhWdWpQbzhhZWNUTG1QdTVTN1R3U1lDbjRfNF9fNDZF?oc=5",
-        "publicado": "2026-08-08",
-        "dias": 5
+        "titulo": "Time de Cuiabá conquista vaga inédita na Copa São Paulo de Futebol Júnior - RepórterMT",
+        "veiculo": "RepórterMT",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWGd0VTU5WjVua0J0VTJGVURBYWF2QmR3d05DS1VGaW43cGVSMGlpMjA3TzVZVUhrTDUxWTU4N1ZqcllGSEZNY29GTDhrSlJyZTZTNk1GYXRPMEt2OFFnMHhsTUVwMXhsQWZvN1FZRXdWTUhWNGFVWUx5WTFud1pvbWZwWm1aQmIyVVVxYkRhZW5XVHpLdDlDNFd4dXljMElJSlA3RnpDSXM0MGtHcU5CY3RydVJudw?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
       }
     ]
   },
@@ -2078,47 +2042,45 @@
     "quem_responde": "só a rede, por dentro"
   },
   "o_que_mudou": {
-    "dias_medidos": 2,
-    "aviso": "a praça é medida há 4 dias (3 medições) — a leitura ainda diz pouco e engorda a cada coleta",
+    "dias_medidos": 1,
+    "aviso": "a praça é medida há 5 dias (4 medições) — a leitura ainda diz pouco e engorda a cada coleta",
     "nossas": [
       {
         "local_id": "ortho_cba_centro_norte",
         "nome": "OrthoDontic Cuiabá Centro Norte",
         "proprio": true,
         "aparelho": true,
-        "de": "2026-08-10",
-        "ate": "2026-08-12",
-        "dias": 2,
-        "antes": 1222,
+        "de": "2026-08-12",
+        "ate": "2026-08-13",
+        "dias": 1,
+        "antes": 1223,
         "agora": 1223,
-        "delta": 1,
+        "delta": 0,
         "nota_antes": 5,
         "nota_agora": 5,
-        "ritmo_do_periodo": 15.2,
+        "ritmo_do_periodo": 0.0,
         "historico": {
           "desde": "2026-08-08",
-          "ate": "2026-08-12",
-          "dias": 4,
-          "medicoes": 3,
+          "ate": "2026-08-13",
+          "dias": 5,
+          "medicoes": 4,
           "antes": 1222,
           "agora": 1223,
           "delta": 1,
-          "ritmo_do_periodo": 7.6,
+          "ritmo_do_periodo": 6.1,
           "nota_antes": 5,
           "nota_agora": 5
         },
-        "eventos": [
-          "ganhou 1 avaliação em 2 dias"
-        ]
+        "eventos": []
       },
       {
         "local_id": "ortho_cba_dom_bosco",
         "nome": "OrthoDontic Cuiabá Dom Bosco (Centro Sul)",
         "proprio": true,
         "aparelho": true,
-        "de": "2026-08-10",
-        "ate": "2026-08-12",
-        "dias": 2,
+        "de": "2026-08-12",
+        "ate": "2026-08-13",
+        "dias": 1,
         "antes": 71,
         "agora": 71,
         "delta": 0,
@@ -2127,9 +2089,9 @@
         "ritmo_do_periodo": 0.0,
         "historico": {
           "desde": "2026-08-08",
-          "ate": "2026-08-12",
-          "dias": 4,
-          "medicoes": 3,
+          "ate": "2026-08-13",
+          "dias": 5,
+          "medicoes": 4,
           "antes": 71,
           "agora": 71,
           "delta": 0,
@@ -2144,9 +2106,9 @@
         "nome": "OrthoDontic Cuiabá Fernando Corrêa",
         "proprio": true,
         "aparelho": true,
-        "de": "2026-08-10",
-        "ate": "2026-08-12",
-        "dias": 2,
+        "de": "2026-08-12",
+        "ate": "2026-08-13",
+        "dias": 1,
         "antes": 78,
         "agora": 78,
         "delta": 0,
@@ -2155,9 +2117,9 @@
         "ritmo_do_periodo": 0.0,
         "historico": {
           "desde": "2026-08-08",
-          "ate": "2026-08-12",
-          "dias": 4,
-          "medicoes": 3,
+          "ate": "2026-08-13",
+          "dias": 5,
+          "medicoes": 4,
           "antes": 78,
           "agora": 78,
           "delta": 0,
@@ -2168,69 +2130,7 @@
         "eventos": []
       }
     ],
-    "quem_mais_ganhou": [
-      {
-        "local_id": "ortho_cba_centro_norte",
-        "nome": "OrthoDontic Cuiabá Centro Norte",
-        "proprio": true,
-        "aparelho": true,
-        "de": "2026-08-10",
-        "ate": "2026-08-12",
-        "dias": 2,
-        "antes": 1222,
-        "agora": 1223,
-        "delta": 1,
-        "nota_antes": 5,
-        "nota_agora": 5,
-        "ritmo_do_periodo": 15.2,
-        "historico": {
-          "desde": "2026-08-08",
-          "ate": "2026-08-12",
-          "dias": 4,
-          "medicoes": 3,
-          "antes": 1222,
-          "agora": 1223,
-          "delta": 1,
-          "ritmo_do_periodo": 7.6,
-          "nota_antes": 5,
-          "nota_agora": 5
-        },
-        "eventos": [
-          "ganhou 1 avaliação em 2 dias"
-        ]
-      }
-    ],
-    "contador_caiu": [
-      {
-        "local_id": "aube_odontologia_jardim_ital",
-        "nome": "Aube Odontologia Jardim Itália - Cuiabá",
-        "proprio": false,
-        "aparelho": false,
-        "de": "2026-08-10",
-        "ate": "2026-08-12",
-        "dias": 2,
-        "antes": 198,
-        "agora": 197,
-        "delta": -1,
-        "nota_antes": 4.9,
-        "nota_agora": 4.9,
-        "ritmo_do_periodo": 0.0,
-        "historico": {
-          "desde": "2026-08-08",
-          "ate": "2026-08-12",
-          "dias": 4,
-          "medicoes": 3,
-          "antes": 199,
-          "agora": 197,
-          "delta": -2,
-          "ritmo_do_periodo": 0.0,
-          "nota_antes": 4.9,
-          "nota_agora": 4.9
-        },
-        "eventos": [
-          "o contador CAIU 1 — avaliação removida"
-        ]
-      }
-    ]
+    "quem_mais_ganhou": [],
+    "contador_caiu": []
   }
 }

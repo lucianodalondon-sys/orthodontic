@@ -289,7 +289,9 @@ def main():
             f"cidades e nunca tinham sido conferidos contra as nove que "
             f"entraram depois. Seis não são testáveis com o que temos e estão "
             f"marcados como tal, com o motivo: preferimos declarar o que é "
-            f"leitura humana a inflar a escada. Toda exceção aparece nomeada — "
+            # "escada" é palavra de dentro do projeto: o franqueado e a
+            # diretoria não sabem o que é, e o lint semântico cobra isso.
+            f"leitura humana a inflar a lista. Toda exceção aparece nomeada — "
             f"padrão sem exceção soa a curadoria.")
         p.write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
         print(f"\n  → dados/conteudo/achados.json ({len(d['achados'])} achados)")

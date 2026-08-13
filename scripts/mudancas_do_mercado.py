@@ -206,6 +206,35 @@ def main():
         ident.setdefault(arq.stem, json.loads(arq.read_text(encoding="utf-8")))
 
     cat = linhas("categoria")
+    # AS DUAS VELOCIDADES, AGORA NA LEITURA.
+    #
+    # `categoria.jsonl` é a varredura completa: cara, mensal, e — pior —
+    # instável. Cuiabá teve 53% das clínicas em comum entre duas rodadas.
+    # Ela serve para DESCOBRIR, e só 2 das 23 praças a têm duas vezes.
+    #
+    # `places.jsonl` é a ponta semanal: as MESMAS fichas, por `place_id`,
+    # medidas de novo. 18 das 23 praças já têm duas medições dela. É essa
+    # a lista estável sobre a qual o movimento de rival pode ser afirmado,
+    # e é ela que a watchlist consolida.
+    #
+    # A ponta não tem `nome` nem `endereco` — ela mede contador e nota. O
+    # nome vem da identidade, que é onde ele mora.
+    ponta = linhas("places")
+    nome_de = {}
+    for _p, _d in identidades(com_unidade=False).items():
+        for _l in _d.get("locais", []):
+            if _l.get("place_id"):
+                nome_de[_l["place_id"]] = _l.get("unidade") or _l.get("nome")
+    for r in ponta:
+        r.setdefault("nome", nome_de.get(r.get("place_id")))
+        r.setdefault("avaliacoes", r.get("avaliacoes_total"))
+    # a ponta manda onde ela existe; a varredura completa entra só para as
+    # praças que a ponta ainda não mediu duas vezes
+    _com_ponta = {x for x in {r.get("praca_id") for r in ponta}
+                  if len({r["snapshot_date"] for r in ponta
+                          if r.get("praca_id") == x}) >= 2}
+    cat = [r for r in cat if r.get("praca_id") not in _com_ponta] + \
+          [r for r in ponta if r.get("praca_id") in _com_ponta]
     ads = linhas("anuncios")
     obs = linhas("anuncios_observados")
     nossos_place, disputam = set(), set()

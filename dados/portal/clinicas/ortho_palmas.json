@@ -6,11 +6,11 @@
     "cidade": "TO · Palmas",
     "endereco": "Quadra ACNE (01 - Rua NE1, 20 - CJ 19, lote 19 - Plano Diretor Norte, Palmas - TO, 77006-016",
     "desde": "8/ago",
-    "medicoes": 3,
+    "medicoes": 4,
     "posicao_na_cidade": null,
     "clinicas_na_cidade": null,
     "lojas_irmas": [],
-    "frase": "OrthoDontic é escutada desde 8/ago, em 3 medições."
+    "frase": "OrthoDontic é escutada desde 8/ago, em 4 medições."
   },
   "rotulo": "TO · Palmas",
   "unidade": "OrthoDontic",
@@ -76,31 +76,29 @@
     "nome": "OrthoDontic",
     "proprio": true,
     "aparelho": true,
-    "de": "2026-08-10",
-    "ate": "2026-08-12",
-    "dias": 2,
-    "antes": 305,
+    "de": "2026-08-12",
+    "ate": "2026-08-13",
+    "dias": 1,
+    "antes": 306,
     "agora": 306,
-    "delta": 1,
+    "delta": 0,
     "nota_antes": 5,
     "nota_agora": 5,
-    "ritmo_do_periodo": 15.2,
+    "ritmo_do_periodo": 0.0,
     "historico": {
       "desde": "2026-08-08",
-      "ate": "2026-08-12",
-      "dias": 4,
-      "medicoes": 3,
+      "ate": "2026-08-13",
+      "dias": 5,
+      "medicoes": 4,
       "antes": 304,
       "agora": 306,
       "delta": 2,
-      "ritmo_do_periodo": 15.2,
+      "ritmo_do_periodo": 12.2,
       "nota_antes": 5,
       "nota_agora": 5
     },
-    "eventos": [
-      "ganhou 1 avaliação em 2 dias"
-    ],
-    "aviso": "a praça é medida há 4 dias (3 medições) — a leitura ainda diz pouco e engorda a cada coleta"
+    "eventos": [],
+    "aviso": "a praça é medida há 5 dias (4 medições) — a leitura ainda diz pouco e engorda a cada coleta"
   },
   "sem_resposta": {
     "abertas": 1,
@@ -560,13 +558,13 @@
       "confianca": "alta",
       "medido": true,
       "amostra": 228,
-      "janela_dias": 4,
-      "medicoes": 3,
+      "janela_dias": 5,
+      "medicoes": 4,
       "fonte": "dados/serie/reviews.jsonl",
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": "mais avaliações com texto nesta loja",
-      "procedencia": "medido em 228 avaliações com texto, 3 medições, 4 dias de janela"
+      "procedencia": "medido em 228 avaliações com texto, 4 medições, 5 dias de janela"
     }
   },
   "meu_territorio": {
@@ -666,8 +664,14 @@
       "praca_id": "palmas",
       "rotulo": "TO · Palmas",
       "eventos": 1,
-      "estado": "linha_de_base",
-      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+      "estado": "medido",
+      "janela": "2026-08-12 → 2026-08-13",
+      "medicoes_da_praca": 4,
+      "clinicas_antes": 14,
+      "clinicas_agora": 14,
+      "comparaveis": 14,
+      "estabilidade_pct": 100,
+      "aviso_de_metodo": "a varredura devolveu 14 clínicas em 2026-08-12 e 14 em 2026-08-13, com 14 em comum (100%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
     }
   },
   "execucao": null,

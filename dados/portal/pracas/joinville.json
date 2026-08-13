@@ -1275,18 +1275,52 @@
       "praca_id": "joinville",
       "rotulo": "SC · Joinville",
       "eventos": 1,
-      "estado": "linha_de_base",
-      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+      "estado": "medido",
+      "janela": "2026-08-12 → 2026-08-13",
+      "medicoes_da_praca": 2,
+      "clinicas_antes": 16,
+      "clinicas_agora": 17,
+      "comparaveis": 16,
+      "estabilidade_pct": 94,
+      "aviso_de_metodo": "a varredura devolveu 16 clínicas em 2026-08-12 e 17 em 2026-08-13, com 16 em comum (94%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
     }
   },
   "imprensa": {
     "medido": true,
-    "total": 53,
+    "total": 64,
     "mostrando": 12,
-    "recentes_30d": 25,
-    "manchete": "25 matérias sobre a cidade nos últimos 30 dias, de 53 já lidas",
+    "recentes_30d": 32,
+    "manchete": "32 matérias sobre a cidade nos últimos 30 dias, de 64 já lidas",
     "porque_vazio": null,
     "materias": [
+      {
+        "titulo": "Nova etapa do Método Wolbachia em Joinville - g1.globo.com",
+        "veiculo": "g1.globo.com",
+        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPR3pvckpROVFlMmdFaWpidFhpTzNXMEt2Sy05TWVUSUpJa2xzSzJ4VEFfRkwzbXhtdWVwaU5rLXZsaGJMUGpEWFpXaThPQkFyNWFINTRLcHVuSEN5bHpfVUs3WnhxYjFudU9uOVE0UWxYc0xISVFFcTBocV9KOTJRYjFYRnR6V3BZRGJFa2VLNmdiajhhUjdpZ2UxVWZ1Y3V1QUl6NlB1OGRIeWMxdXNOY0J3M3FkWXl3RlAyRENOMUwzdS1jYnVSb1p1ckl4d9IB3AFBVV95cUxPd0ZmWURQbURIZHFSa1VFR3R5SG5jbGRfUWdXZ0cyX1BWV2U3Vy13ak9ITlVYcnhRc0doLUg3QTZ3WFNtd3J1OFJjdThKekpOa0VnSWllM1hkMy14djczSEZCcmRHcVdsdTlTMEFxb1h4U3lhVTl2Y0J6UnlOMEpDVU10NEFuMjQyOFR6Rm1KYVFPRUwzcGFIUVhZNm94T1V1MW52NlEtZjJIRFlhZngxUDA3cVczbGFfakRZM0tXTENQLWkzdUxZd2U0VDBzR1I4Ml9BTTZBdzhwUFBK?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
+      },
+      {
+        "titulo": "Previsão do tempo em Joinville (SC) hoje: veja como fica o clima nesta quinta-feira - Terra",
+        "veiculo": "Terra",
+        "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOR09QeEMwYW5aZ3NGT0lTRktXdTZlWm5LWkxKZ2xXdVp0MnhyQlRMUTNHd21hOE44WmtYTGRnNXV6MzVBOS1qbkMzYVZqbVd2SV9WS1V4Si0tQ1FZemZXNjA0ZWZENGZmNC1xaEgxR2ZCemxzN0RWU2ZkcG5jYWNLcmstaEZrWkRJdFNnUlZCS2R1UWdrcEFPazNlZC1pa29hUGQ3V1lWWmZ0R24ycURvbTFjajlyMmQxWFdldm9IQUVta3JZbUM3Z2ZQQnFBaGZyMUIyMEMzMF82MWRGUExpODFndHRMRTZ0bFJOOFRmZkFPcWdyZ1UyOXNrRGtBSXZuX2N6dENn?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
+      },
+      {
+        "titulo": "Prefeitura de Joinville confirma realização do Desfile de 7 de Setembro - Prefeitura de Joinville",
+        "veiculo": "Prefeitura de Joinville",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdkRsak54M0JLMUptcWpjUW5SanNDV2Mta2c1ZkhfcDBBMGwycVRwRHlUNXhlQWlJc2M5X3NSc3Q4WklxVm05QVRseVppUUFLc00zeEVsamhUdDlFMk01RVcxNTgtcFNxbVRnYVFsQnFwT1FlVlI0U1U1YThrQUZvRlF4T0wwcUJPU0hZNTRRUEstMjFicWpPMzZDWUlTalRkVnVlbHRGOVhVTXBBZkRNS3JZNG50UQ?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
+      },
+      {
+        "titulo": "Cinema: confira os filmes em cartaz de 13/08 a 19/08 em SC - NSC Total",
+        "veiculo": "NSC Total",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNR0IxVWZJT3BLaGliQlNxUW9GLW4tNldqbTZ1VzZySUVlSzFpSGVrdjR4c3FVaFBkcy1xdERFdnpUVWNKbkFTTXhVNUo5ejlVMHlLTVNYM19aNjZQZE93THdab1dxZU45dWw1ZDV6T2FNZmtsMEFyOFhEemw4eHNuZHdoTEtiMXR0XzB2Q0tGSEQ2MktaZVRHUXU0S3M3dVgtNHc?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
+      },
       {
         "titulo": "‘A família já está com ela’: jovem desaparecida em Joinville é localizada e receberá apoio emocional - ndmais.com.br",
         "veiculo": "ndmais.com.br",
@@ -1340,34 +1374,6 @@
         "titulo": "Joinville se destaca na WorldSkills SC e nova biblioteca no Instituto Juarez Machado - Ponto Norte",
         "veiculo": "Ponto Norte",
         "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPdl9KRFNOMFJGZ1NROWdnOFZ6eENDZGlNd2Z5MThBZmhScTJjaDlldFRVbmZxV2RNdDZGNnJJVWR2YTJDa1dBZmlWQjRRSklBa2MxaHFaLTNzS2M3c21VaTVqcWExajNVbmVOeGJxZ1M1UktRTlJWZTJ1aWRPQ2FhancxNUVRNEJvTHBVYjEwU3ZHdzFUV29peHFydTQ2Q1VaMmU2YTVHbnZrUGdHeldCODU4R2l2Wmh3SDF0SDBOWTRzTEpsa2hzZEt3?oc=5",
-        "publicado": "2026-08-12",
-        "dias": 1
-      },
-      {
-        "titulo": "Expansão urbana de Joinville vai avançar na área que já foi a maior indústria de Joinville - Santa Catarina em Pauta",
-        "veiculo": "Santa Catarina em Pauta",
-        "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOeHZOUUZ5MllLUmZmWHBCX1dsNTBpWTloNzlWZHhiZnZQQkRXbEc2d0NId0F2V0dQaTdaMl9GamN3Zl9mVWxGSmxqY0RHdGhLMU1TQi05WXIzNERERzBpOHQta2N2dHE0cUt2VE1JUkRPWm5FY3FjUlZMbDlkdzhNbHRPMjlsN2VNeHRLMm1qQ0RkUEctdWNtWm9FVTJlbk1ZTnFlTXdHQXFoWnFITS1EdWRoX2wyWHBNU1Y5SGxZWllHN2xjMi01Z1NwanJHcF80SWpkbTctYzdlZw?oc=5",
-        "publicado": "2026-08-12",
-        "dias": 1
-      },
-      {
-        "titulo": "Trânsito parado: BR-101 é bloqueada em vias nos dois sentidos após colisão em SC - ndmais.com.br",
-        "veiculo": "ndmais.com.br",
-        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB1VVNrckRlLXlEcU5UWDlUaE9XdHpvcUt5NDJveldHYUhSaFlOSW0xMTZxUkx0Q3REZ0k2QkJwZHlSbWZ4Yk4zU3U1emFVS1BZT1MwOXhGUF9rQVM4d3dsc0NyOEhrNm4tbGRJUWx5VXdDOGtfcnJqcDlqN2Y2czg?oc=5",
-        "publicado": "2026-08-12",
-        "dias": 1
-      },
-      {
-        "titulo": "Porsche e GreenV abrem novo posto de recarga rápida em Joinville e fortalecem corredor elétrico no Sul do país - bra1.com.br",
-        "veiculo": "bra1.com.br",
-        "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPcUxfYWVRVWYtdDVPWmdPVXZURXkwa2VpMVZYdDBSY3kxdnNMTXYwQWE5MUl6NGt0YXhhU0NBR2JLQUpFZDBjd3FYdEpEdllIdkFsak9iVVprYWZyRXpiWDVsdUR5SDQtXzJEa2ZVSTJBdWRBRE9aSDNxQ0x3MmlqTXdLR1JBaGtYMjlVM0xJckZwQUhlY2hYSnlWX3NiWm5mMXU3TmdzMXNLcXc5dnN3VWhLY21wVVR6S2otM2FlRTJyc1FpRncxbk9zZU91UGpDQi0xOGRHZmc1S1A5dTRTLU9kNWJ2TnNP?oc=5",
-        "publicado": "2026-08-12",
-        "dias": 1
-      },
-      {
-        "titulo": "Escola municipal de Joinville alcança maior nota do Ideb entre unidades de SC - Santa Catarina em Pauta",
-        "veiculo": "Santa Catarina em Pauta",
-        "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOdkdnTThnLUI5OWtnMTc0VGxDc3E4VjhIN1Z6NEdaU0pELXhWR2wtUE9rT1N2MVNnaVZIcHFLczVhYl9JaC00Z2pfRWZCLU13NXhNN1VHWVBqb2ZLeFJzTkhZcnIzTE5STGtqX2NFOXh3S0ZuVVVZNTZIanZJS3NFenlQenhOUjlHSjJLVnhUeGlacFNHY091bVZzN3QzZ3p0RXgybmVQeFZ1OEhEWGxkNmZVenFkSlNvRERGbjR6TjZ2U3ZWcklWTA?oc=5",
         "publicado": "2026-08-12",
         "dias": 1
       }

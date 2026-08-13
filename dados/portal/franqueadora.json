@@ -1,6 +1,6 @@
 {
   "corte": "2026-08-13",
-  "gerado_em": "2026-08-13T15:30:58",
+  "gerado_em": "2026-08-13T15:39:33",
   "rede": {
     "unidades": 373,
     "abertas": 350,
@@ -14,7 +14,7 @@
       "RN"
     ],
     "ufs_sem_unidade_total": 4,
-    "medido_em": "2026-08-12",
+    "medido_em": "2026-08-13",
     "fonte": "orthodonticbrasil.com.br/encontre-uma-unidade"
   },
   "cobertura": {
@@ -29,64 +29,48 @@
     "o_que_e": "o que se moveu no mercado desde a última medição comparável, só o que muda decisão",
     "eventos": [
       {
-        "evento_id": "contagem|concorrente_acelerou|ChIJV6ERtJKVpgARt5eabTvQZ3Y",
+        "evento_id": "curitiba|concorrente_acelerou|ChIJHc8bA-jv3JQR38D6NMsdEq8",
         "data": "2026-08-13",
-        "praca_id": "contagem",
-        "rotulo": "MG · Contagem",
+        "praca_id": "curitiba",
+        "rotulo": "PR · Curitiba",
         "local_id": null,
-        "entidade_id": "ChIJV6ERtJKVpgARt5eabTvQZ3Y",
+        "entidade_id": "ChIJHc8bA-jv3JQR38D6NMsdEq8",
         "tipo": "concorrente_acelerou",
         "natureza": "fato",
         "severidade": "alta",
-        "titulo": "Vitae Center Clínica Médica e Odontológica acelerou",
-        "fato": "ganhou 26 avaliações entre 2026-08-08 e 2026-08-13 — de 3837 para 3863",
+        "titulo": "Dra. Vladja Torno | Facetas em Resina Composta em Curitiba acelerou",
+        "fato": "ganhou 15 avaliações entre 2026-08-12 e 2026-08-13 — de 662 para 677",
         "por_que_importa": "rival de aparelho ganhando atenção no mesmo mercado",
         "decisao": "ver o que ele está publicando e anunciando",
         "fonte": "dados/serie/categoria.jsonl",
         "evidencia": {
-          "place_id": "ChIJV6ERtJKVpgARt5eabTvQZ3Y",
-          "antes": 3837,
-          "agora": 3863
+          "place_id": "ChIJHc8bA-jv3JQR38D6NMsdEq8",
+          "antes": 662,
+          "agora": 677
         },
         "confianca": {
           "natureza": "fato",
           "confianca": "alta",
           "medido": true,
-          "amostra": 3863,
-          "janela_dias": 5,
+          "amostra": 677,
+          "janela_dias": 1,
           "medicoes": 2,
-          "fonte": "dados/serie/categoria.jsonl (2026-08-08 → 2026-08-13)",
+          "fonte": "dados/serie/categoria.jsonl (2026-08-12 → 2026-08-13)",
           "a_favor": [
-            "135 clínicas medidas nas duas rodadas"
+            "19 clínicas medidas nas duas rodadas"
           ],
           "contra": [],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 3863 avaliações nesta clínica, 2 medições, 5 dias de janela"
+          "procedencia": "medido em 677 avaliações nesta clínica, 2 medições, 1 dia de janela"
         }
       }
     ],
-    "total_no_periodo": 25,
+    "total_no_periodo": 24,
     "pracas_sem_delta": [
       "RS · Caxias do Sul",
-      "PR · Curitiba",
-      "BA · Feira de Santana",
       "SC · Florianópolis",
-      "GO · Goiânia",
-      "MA · Imperatriz",
-      "SC · Joinville",
-      "CE · Juazeiro do Norte",
-      "PR · Londrina",
-      "AP · Macapá",
-      "SC · Mafra",
-      "PA · Marabá",
-      "TO · Palmas",
-      "PA · Parauapebas",
-      "RS · Porto Alegre",
-      "SP · Presidente Prudente",
-      "AC · Rio Branco",
       "RJ · Rio de Janeiro",
       "SP · São Paulo",
-      "SP · Sorocaba",
       "MG · Uberlândia"
     ],
     "porque_algumas_nao_aparecem": "praça com uma medição só não tem movimento a declarar — tem linha de base criada, que é diferente de 'não mudou'"
@@ -642,8 +626,8 @@
       "chave": "mudou",
       "titulo": "O que mudou na semana",
       "pergunta": "O que aconteceu desde a última medição?",
-      "numero": 3,
-      "frase": "contadores de avaliação CAÍRAM — queda é avaliação apagada, evento raro. 17 praças medidas de novo; o período ainda é curto e engorda a cada semana.",
+      "numero": 2,
+      "frase": "contadores de avaliação CAÍRAM — queda é avaliação apagada, evento raro. 18 praças medidas de novo; o período ainda é curto e engorda a cada semana.",
       "tela": "mudou",
       "grupo": "lojas",
       "disponivel": true,
@@ -665,7 +649,7 @@
       "titulo": "A busca perto da clínica",
       "pergunta": "A clínica aparece para quem está perto dela?",
       "numero": 2,
-      "frase": "de 45 lojas medidas a partir do próprio endereço, essas não apareceram em nenhuma das buscas. Outras 9 lojas pareciam invisíveis pela busca da cidade inteira e aparecem aqui: numa cidade grande ninguém disputa o nome do município.",
+      "frase": "de 45 lojas medidas a partir do próprio endereço, essas não apareceram em nenhuma das buscas. Outras 6 lojas pareciam invisíveis pela busca da cidade inteira e aparecem aqui: numa cidade grande ninguém disputa o nome do município.",
       "tela": "perto",
       "grupo": "lojas",
       "disponivel": true,
@@ -719,7 +703,7 @@
       "chave": "timeline",
       "titulo": "A vida de cada loja",
       "pergunta": "O que aconteceu em cada loja, em ordem?",
-      "numero": 217,
+      "numero": 231,
       "frase": "eventos observáveis — avaliações, contadores, alertas e rivais de aparelho — numa linha do tempo por loja, com o estado da tarefa de cada uma.",
       "tela": "timeline",
       "grupo": "lojas",
