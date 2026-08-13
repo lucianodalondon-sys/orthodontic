@@ -45,6 +45,12 @@
    "so_para": null
   },
   {
+   "etapa": 6.5,
+   "nome": "A voz da própria unidade",
+   "quem": "auto",
+   "so_para": "rede"
+  },
+  {
    "etapa": 7,
    "nome": "A unidade por dentro",
    "quem": "auto",
@@ -158,8 +164,8 @@
    "praca_id": "caxias_do_sul",
    "rotulo": "RS · Caxias do Sul",
    "tipo": "rede",
-   "feitas": 23,
-   "de": 23,
+   "feitas": 24,
+   "de": 24,
    "completa": true,
    "etapas": [
     {
@@ -216,6 +222,14 @@
      "quem": "auto",
      "ok": true,
      "estado": "2011 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 6.5,
+     "nome": "A voz da própria unidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 unidades lidas até o fim · 331 avaliações próprias",
      "comando": null
     },
     {
@@ -352,8 +366,8 @@
    "praca_id": "contagem",
    "rotulo": "MG · Contagem",
    "tipo": "rede",
-   "feitas": 23,
-   "de": 23,
+   "feitas": 24,
+   "de": 24,
    "completa": true,
    "etapas": [
     {
@@ -410,6 +424,14 @@
      "quem": "auto",
      "ok": true,
      "estado": "3859 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 6.5,
+     "nome": "A voz da própria unidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 unidade lida até o fim · 858 avaliações próprias",
      "comando": null
     },
     {
@@ -546,8 +568,8 @@
    "praca_id": "cuiaba",
    "rotulo": "MT · Cuiabá",
    "tipo": "rede",
-   "feitas": 23,
-   "de": 23,
+   "feitas": 24,
+   "de": 24,
    "completa": true,
    "etapas": [
     {
@@ -604,6 +626,14 @@
      "quem": "auto",
      "ok": true,
      "estado": "7477 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 6.5,
+     "nome": "A voz da própria unidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 unidades lidas até o fim · 1372 avaliações próprias",
      "comando": null
     },
     {
@@ -741,8 +771,8 @@
    "rotulo": "PR · Curitiba",
    "tipo": "rede",
    "feitas": 23,
-   "de": 23,
-   "completa": true,
+   "de": 24,
+   "completa": false,
    "etapas": [
     {
      "etapa": 0,
@@ -799,6 +829,14 @@
      "ok": true,
      "estado": "2287 avaliações lidas (mínimo 800)",
      "comando": null
+    },
+    {
+     "etapa": 6.5,
+     "nome": "A voz da própria unidade",
+     "quem": "auto",
+     "ok": false,
+     "estado": "4 unidades lidas pela metade — 2012 avaliações nunca lidas (OrthoDontic · R. XV de Novembro: 120 de 1012; OrthoDontic · Av. Mal. Floriano Peixoto: 120 de 719; OrthoDontic · Galeria Tijucas - Av. Luiz Xavier: 120 de 491)",
+     "comando": "python3 coleta/coletores/google_reviews.py --praca curitiba --max-reviews 1200   (o padrão de 120 trunca a loja grande)"
     },
     {
      "etapa": 7,
@@ -934,8 +972,8 @@
    "praca_id": "feira",
    "rotulo": "BA · Feira de Santana",
    "tipo": "rede",
-   "feitas": 23,
-   "de": 23,
+   "feitas": 24,
+   "de": 24,
    "completa": true,
    "etapas": [
     {
@@ -992,6 +1030,14 @@
      "quem": "auto",
      "ok": true,
      "estado": "4260 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 6.5,
+     "nome": "A voz da própria unidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 unidade lida até o fim · 170 avaliações próprias",
      "comando": null
     },
     {
@@ -1129,7 +1175,7 @@
    "rotulo": "SC · Florianópolis",
    "tipo": "rede",
    "feitas": 22,
-   "de": 23,
+   "de": 24,
    "completa": false,
    "etapas": [
     {
@@ -1187,6 +1233,14 @@
      "ok": true,
      "estado": "2040 avaliações lidas (mínimo 800)",
      "comando": null
+    },
+    {
+     "etapa": 6.5,
+     "nome": "A voz da própria unidade",
+     "quem": "auto",
+     "ok": false,
+     "estado": "3 unidades lidas pela metade — 485 avaliações nunca lidas (OrthoDontic · Rua Sete de Setembro: 120 de 310; OrthoDontic · R. Deodoro: 120 de 268; OrthoDontic · Ingleses do Rio Vermelho: 120 de 267)",
+     "comando": "python3 coleta/coletores/google_reviews.py --praca florianopolis --max-reviews 1200   (o padrão de 120 trunca a loja grande)"
     },
     {
      "etapa": 7,
@@ -1323,8 +1377,8 @@
    "rotulo": "GO · Goiânia",
    "tipo": "rede",
    "feitas": 23,
-   "de": 23,
-   "completa": true,
+   "de": 24,
+   "completa": false,
    "etapas": [
     {
      "etapa": 0,
@@ -1381,6 +1435,14 @@
      "ok": true,
      "estado": "2163 avaliações lidas (mínimo 800)",
      "comando": null
+    },
+    {
+     "etapa": 6.5,
+     "nome": "A voz da própria unidade",
+     "quem": "auto",
+     "ok": false,
+     "estado": "2 unidades lidas pela metade — 298 avaliações nunca lidas (OrthoDontic · St. Oeste: 120 de 270; OrthoDontic · St. Central: 120 de 268)",
+     "comando": "python3 coleta/coletores/google_reviews.py --praca goiania --max-reviews 1200   (o padrão de 120 trunca a loja grande)"
     },
     {
      "etapa": 7,
@@ -1655,8 +1717,8 @@
    "rotulo": "SC · Joinville",
    "tipo": "rede",
    "feitas": 23,
-   "de": 23,
-   "completa": true,
+   "de": 24,
+   "completa": false,
    "etapas": [
     {
      "etapa": 0,
@@ -1713,6 +1775,14 @@
      "ok": true,
      "estado": "2042 avaliações lidas (mínimo 800)",
      "comando": null
+    },
+    {
+     "etapa": 6.5,
+     "nome": "A voz da própria unidade",
+     "quem": "auto",
+     "ok": false,
+     "estado": "2 unidades lidas pela metade — 650 avaliações nunca lidas (OrthoDontic · Centro: 120 de 513; OrthoDontic · América: 120 de 377)",
+     "comando": "python3 coleta/coletores/google_reviews.py --praca joinville --max-reviews 1200   (o padrão de 120 trunca a loja grande)"
     },
     {
      "etapa": 7,
@@ -1986,8 +2056,8 @@
    "praca_id": "londrina",
    "rotulo": "PR · Londrina",
    "tipo": "rede",
-   "feitas": 23,
-   "de": 23,
+   "feitas": 24,
+   "de": 24,
    "completa": true,
    "etapas": [
     {
@@ -2044,6 +2114,14 @@
      "quem": "auto",
      "ok": true,
      "estado": "4493 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 6.5,
+     "nome": "A voz da própria unidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2 unidades lidas até o fim · 645 avaliações próprias",
      "comando": null
     },
     {
@@ -2318,8 +2396,8 @@
    "praca_id": "mafra",
    "rotulo": "SC · Mafra",
    "tipo": "rede",
-   "feitas": 23,
-   "de": 23,
+   "feitas": 24,
+   "de": 24,
    "completa": true,
    "etapas": [
     {
@@ -2376,6 +2454,14 @@
      "quem": "auto",
      "ok": true,
      "estado": "1866 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 6.5,
+     "nome": "A voz da própria unidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 unidade lida até o fim · 155 avaliações próprias",
      "comando": null
     },
     {
@@ -2650,8 +2736,8 @@
    "praca_id": "palmas",
    "rotulo": "TO · Palmas",
    "tipo": "rede",
-   "feitas": 23,
-   "de": 23,
+   "feitas": 24,
+   "de": 24,
    "completa": true,
    "etapas": [
     {
@@ -2708,6 +2794,14 @@
      "quem": "auto",
      "ok": true,
      "estado": "2220 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 6.5,
+     "nome": "A voz da própria unidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 unidade lida até o fim · 306 avaliações próprias",
      "comando": null
     },
     {
@@ -2983,8 +3077,8 @@
    "rotulo": "RS · Porto Alegre",
    "tipo": "rede",
    "feitas": 23,
-   "de": 23,
-   "completa": true,
+   "de": 24,
+   "completa": false,
    "etapas": [
     {
      "etapa": 0,
@@ -3041,6 +3135,14 @@
      "ok": true,
      "estado": "2433 avaliações lidas (mínimo 800)",
      "comando": null
+    },
+    {
+     "etapa": 6.5,
+     "nome": "A voz da própria unidade",
+     "quem": "auto",
+     "ok": false,
+     "estado": "5 unidades lidas pela metade — 670 avaliações nunca lidas (OrthoDontic · Av. Borges de Medeiros: 120 de 433; OrthoDontic · Cristo Redentor: 120 de 245; OrthoDontic · R. Vig. José Inácio: 120 de 209)",
+     "comando": "python3 coleta/coletores/google_reviews.py --praca porto_alegre --max-reviews 1200   (o padrão de 120 trunca a loja grande)"
     },
     {
      "etapa": 7,
@@ -3176,8 +3278,8 @@
    "praca_id": "prudente",
    "rotulo": "SP · Presidente Prudente",
    "tipo": "rede",
-   "feitas": 23,
-   "de": 23,
+   "feitas": 24,
+   "de": 24,
    "completa": true,
    "etapas": [
     {
@@ -3234,6 +3336,14 @@
      "quem": "auto",
      "ok": true,
      "estado": "3879 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 6.5,
+     "nome": "A voz da própria unidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 unidade lida até o fim · 592 avaliações próprias",
      "comando": null
     },
     {
@@ -3508,8 +3618,8 @@
    "praca_id": "rio_de_janeiro",
    "rotulo": "RJ · Rio de Janeiro",
    "tipo": "rede",
-   "feitas": 23,
-   "de": 23,
+   "feitas": 24,
+   "de": 24,
    "completa": true,
    "etapas": [
     {
@@ -3566,6 +3676,14 @@
      "quem": "auto",
      "ok": true,
      "estado": "1800 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 6.5,
+     "nome": "A voz da própria unidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 unidade lida até o fim · 120 avaliações próprias",
      "comando": null
     },
     {
@@ -3703,8 +3821,8 @@
    "rotulo": "SP · São Paulo",
    "tipo": "rede",
    "feitas": 23,
-   "de": 23,
-   "completa": true,
+   "de": 24,
+   "completa": false,
    "etapas": [
     {
      "etapa": 0,
@@ -3761,6 +3879,14 @@
      "ok": true,
      "estado": "2050 avaliações lidas (mínimo 800)",
      "comando": null
+    },
+    {
+     "etapa": 6.5,
+     "nome": "A voz da própria unidade",
+     "quem": "auto",
+     "ok": false,
+     "estado": "1 unidade lida pela metade — 69 avaliações nunca lidas (OrthoDontic · Lapa: 120 de 189)",
+     "comando": "python3 coleta/coletores/google_reviews.py --praca sao_paulo --max-reviews 1200   (o padrão de 120 trunca a loja grande)"
     },
     {
      "etapa": 7,
@@ -3896,8 +4022,8 @@
    "praca_id": "sorocaba",
    "rotulo": "SP · Sorocaba",
    "tipo": "rede",
-   "feitas": 23,
-   "de": 23,
+   "feitas": 24,
+   "de": 24,
    "completa": true,
    "etapas": [
     {
@@ -3954,6 +4080,14 @@
      "quem": "auto",
      "ok": true,
      "estado": "2027 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 6.5,
+     "nome": "A voz da própria unidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 unidades lidas até o fim · 347 avaliações próprias",
      "comando": null
     },
     {
@@ -4090,8 +4224,8 @@
    "praca_id": "uberlandia",
    "rotulo": "MG · Uberlândia",
    "tipo": "rede",
-   "feitas": 23,
-   "de": 23,
+   "feitas": 24,
+   "de": 24,
    "completa": true,
    "etapas": [
     {
@@ -4148,6 +4282,14 @@
      "quem": "auto",
      "ok": true,
      "estado": "1801 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 6.5,
+     "nome": "A voz da própria unidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2 unidades lidas até o fim · 181 avaliações próprias",
      "comando": null
     },
     {

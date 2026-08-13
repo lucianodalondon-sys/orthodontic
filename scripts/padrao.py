@@ -243,17 +243,31 @@ def _e6b(b, p):
         if k not in ult or r["snapshot_date"] >= ult[k]["snapshot_date"]:
             ult[k] = r
     lidas = Counter(r.get("local_id") for r in b.reviews.get(p, []))
-    truncadas, falta_total = [], 0
+    truncadas, falta_total, sem_contador = [], 0, []
     for l in nossos:
         lid = l["local_id"]
-        g = (ult.get(lid) or {}).get("avaliacoes_total") \
-            or (ult.get(lid) or {}).get("avaliacoes") or 0
+        # O CONTADOR PODE ESTAR NA IDENTIDADE E NÃO NA SÉRIE. Duas unidades
+        # de Caxias não têm linha em `places.jsonl` — e, olhando só a série,
+        # a etapa passava por "não sei quantas são", que é o oposto do que
+        # ela existe para cobrar. `coleta()` já cai para `avaliacoes_google`
+        # da identidade; aqui também.
+        g = ((ult.get(lid) or {}).get("avaliacoes_total")
+             or (ult.get(lid) or {}).get("avaliacoes")
+             or l.get("avaliacoes_google") or 0)
         if not g:
-            continue          # sem ficha medida ainda: é a etapa 0.5 que cobra
+            sem_contador.append(l.get("unidade") or lid)
+            continue
         falta = g - lidas[lid]
         if falta > 50 and lidas[lid] / g < 0.75:
             truncadas.append((l.get("unidade") or lid, lidas[lid], g))
             falta_total += falta
+    if sem_contador:
+        # não saber quantas avaliações a própria unidade tem é pior do que
+        # saber que faltam: não dá nem para medir o buraco
+        return False, ("sem contador de avaliações em "
+                       + ", ".join(sem_contador[:3])
+                       + " — rode a ponta antes: "
+                         "python3 coleta/coletores/ponta.py --salvar")
     if truncadas:
         return False, (conta(len(truncadas), "unidade lida pela metade",
                              "unidades lidas pela metade")
