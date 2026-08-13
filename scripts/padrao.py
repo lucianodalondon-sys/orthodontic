@@ -294,6 +294,29 @@ def _e11(b, p):
         falta.append(f"citações ({len(c.get('citacoes') or [])}/{MIN_CITACOES})")
     if len(c.get("plano") or []) < MIN_PLANO:
         falta.append(f"plano ({len(c.get('plano') or [])}/{MIN_PLANO})")
+
+    # E O FORMATO, NÃO SÓ A QUANTIDADE.
+    #
+    # Contar cinco itens de DNA não diz nada se os cinco forem texto
+    # solto: a tela desenha rótulo e corpo separados (`l`/`t`), e string
+    # crua vira cinco cartões em branco. Dez praças abertas em agosto
+    # passaram nesta etapa com `dna` e `plano` como lista de frases — a
+    # contagem fechava, a tela não. O mesmo vale para citação, que a tela
+    # mostra como fala (`t`) e crédito (`c`).
+    FORMA = {"dna": ("l", "t"), "plano": ("n", "t", "d"), "citacoes": ("t", "c")}
+    for campo, chaves in FORMA.items():
+        itens = c.get(campo) or []
+        if not itens:
+            continue
+        cru = [x for x in itens if not isinstance(x, dict)]
+        se_falta = [x for x in itens
+                    if isinstance(x, dict) and not all(k in x for k in chaves)]
+        if cru:
+            falta.append(f"{campo}: {len(cru)} de {len(itens)} são texto solto, "
+                         f"a tela pede {'/'.join(chaves)}")
+        elif se_falta:
+            falta.append(f"{campo}: {len(se_falta)} de {len(itens)} sem "
+                         f"{'/'.join(chaves)}")
     return (not falta), ("completa" if not falta else "falta " + ", ".join(falta))
 
 
