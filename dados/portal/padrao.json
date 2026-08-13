@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-10",
+ "gerado_em": "2026-08-13",
  "regua": "mafra",
  "etapas": [
   {
@@ -97,15 +97,263 @@
    "nome": "O plano do franqueado",
    "quem": "auto",
    "so_para": "rede"
+  },
+  {
+   "etapa": 17,
+   "nome": "Onde cada loja aparece",
+   "quem": "auto",
+   "so_para": "rede"
+  },
+  {
+   "etapa": 17.5,
+   "nome": "E perto da própria loja?",
+   "quem": "auto",
+   "so_para": "rede"
+  },
+  {
+   "etapa": 18,
+   "nome": "Quem anuncia aparelho",
+   "quem": "auto",
+   "so_para": null
+  },
+  {
+   "etapa": 19,
+   "nome": "O histórico, não só o delta",
+   "quem": "auto",
+   "so_para": "rede"
+  },
+  {
+   "etapa": 20,
+   "nome": "A curva de procura",
+   "quem": "auto",
+   "so_para": null
+  },
+  {
+   "etapa": 21,
+   "nome": "A jornada do paciente",
+   "quem": "auto",
+   "so_para": "rede"
+  },
+  {
+   "etapa": 22,
+   "nome": "O que o rival vende",
+   "quem": "auto",
+   "so_para": null
+  },
+  {
+   "etapa": 23,
+   "nome": "Imprensa e ritmo da cidade",
+   "quem": "auto",
+   "so_para": null
+  },
+  {
+   "etapa": 24,
+   "nome": "O ciclo da ação",
+   "quem": "auto",
+   "so_para": "rede"
   }
  ],
  "pracas": [
   {
+   "praca_id": "caxias_do_sul",
+   "rotulo": "RS · Caxias do Sul",
+   "tipo": "rede",
+   "feitas": 23,
+   "de": 23,
+   "completa": true,
+   "etapas": [
+    {
+     "etapa": 0,
+     "nome": "A praça definida",
+     "quem": "humano",
+     "ok": true,
+     "estado": "RS · Caxias do Sul · 17 locais",
+     "comando": null
+    },
+    {
+     "etapa": 0.5,
+     "nome": "A rede está lá?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 unidades próprias, 3 com ficha do Google identificada",
+     "comando": null
+    },
+    {
+     "etapa": 1,
+     "nome": "A cidade em números",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 município com população do IBGE",
+     "comando": null
+    },
+    {
+     "etapa": 2,
+     "nome": "Quem fala com a cidade",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "8 canais com handle (mínimo 8)",
+     "comando": null
+    },
+    {
+     "etapa": 3,
+     "nome": "Escutar a cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1357 vozes (mínimo 1000) — 1357 avaliações com texto, 0 posts",
+     "comando": null
+    },
+    {
+     "etapa": 5,
+     "nome": "Varrer a categoria",
+     "quem": "auto",
+     "ok": true,
+     "estado": "115 clínicas varridas (mínimo 80)",
+     "comando": null
+    },
+    {
+     "etapa": 6,
+     "nome": "Ritmo e meses seguidos",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2011 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 7,
+     "nome": "A unidade por dentro",
+     "quem": "auto",
+     "ok": true,
+     "estado": "331 avaliações da unidade · 166 anúncios da praça",
+     "comando": null
+    },
+    {
+     "etapa": 9,
+     "nome": "A joia enterrada",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "50 matérias de imprensa (mínimo 20)",
+     "comando": null
+    },
+    {
+     "etapa": 10,
+     "nome": "O que não vamos ver",
+     "quem": "humano",
+     "ok": true,
+     "estado": "9 canais offline declarados (rádio, outdoor, escola…)",
+     "comando": null
+    },
+    {
+     "etapa": 11,
+     "nome": "A inteligência",
+     "quem": "humano",
+     "ok": true,
+     "estado": "completa",
+     "comando": null
+    },
+    {
+     "etapa": 13,
+     "nome": "Cruzar com as outras",
+     "quem": "auto",
+     "ok": true,
+     "estado": "16 temas classificados",
+     "comando": null
+    },
+    {
+     "etapa": 14,
+     "nome": "As portas da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "174 portas de busca · 1 leitura de captação",
+     "comando": null
+    },
+    {
+     "etapa": 16,
+     "nome": "O plano do franqueado",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 planos de loja",
+     "comando": null
+    },
+    {
+     "etapa": 17,
+     "nome": "Onde cada loja aparece",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 lojas medidas · 2 invisíveis",
+     "comando": null
+    },
+    {
+     "etapa": 17.5,
+     "nome": "E perto da própria loja?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 lojas medidas perto de si",
+     "comando": null
+    },
+    {
+     "etapa": 18,
+     "nome": "Quem anuncia aparelho",
+     "quem": "auto",
+     "ok": true,
+     "estado": "16 anunciantes de aparelho",
+     "comando": null
+    },
+    {
+     "etapa": 19,
+     "nome": "O histórico, não só o delta",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 lojas com as duas janelas",
+     "comando": null
+    },
+    {
+     "etapa": 20,
+     "nome": "A curva de procura",
+     "quem": "auto",
+     "ok": true,
+     "estado": "medida · sem curva publicável (não refazer)",
+     "comando": null
+    },
+    {
+     "etapa": 21,
+     "nome": "A jornada do paciente",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 lojas · nenhuma com dor concentrada",
+     "comando": null
+    },
+    {
+     "etapa": 22,
+     "nome": "O que o rival vende",
+     "quem": "auto",
+     "ok": true,
+     "estado": "A disputa desta cidade é por alinhador invisível — 12 dos 34 anú",
+     "comando": null
+    },
+    {
+     "etapa": 23,
+     "nome": "Imprensa e ritmo da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "23 matérias em 30 dias · 0 perfis vivos, 0 parados",
+     "comando": null
+    },
+    {
+     "etapa": 24,
+     "nome": "O ciclo da ação",
+     "quem": "auto",
+     "ok": true,
+     "estado": "6 arcos no livro · nenhum com 21 dias ainda",
+     "comando": null
+    }
+   ]
+  },
+  {
    "praca_id": "contagem",
    "rotulo": "MG · Contagem",
    "tipo": "rede",
-   "feitas": 14,
-   "de": 14,
+   "feitas": 23,
+   "de": 23,
    "completa": true,
    "etapas": [
     {
@@ -153,7 +401,7 @@
      "nome": "Varrer a categoria",
      "quem": "auto",
      "ok": true,
-     "estado": "135 clínicas varridas (mínimo 80)",
+     "estado": "270 clínicas varridas (mínimo 80)",
      "comando": null
     },
     {
@@ -161,7 +409,7 @@
      "nome": "Ritmo e meses seguidos",
      "quem": "auto",
      "ok": true,
-     "estado": "3858 avaliações lidas (mínimo 800)",
+     "estado": "3859 avaliações lidas (mínimo 800)",
      "comando": null
     },
     {
@@ -169,7 +417,7 @@
      "nome": "A unidade por dentro",
      "quem": "auto",
      "ok": true,
-     "estado": "857 avaliações da unidade · 42 anúncios da praça",
+     "estado": "858 avaliações da unidade · 42 anúncios da praça",
      "comando": null
     },
     {
@@ -185,7 +433,7 @@
      "nome": "O que não vamos ver",
      "quem": "humano",
      "ok": true,
-     "estado": "17 canais offline declarados (rádio, outdoor, escola…)",
+     "estado": "35 canais offline declarados (rádio, outdoor, escola…)",
      "comando": null
     },
     {
@@ -219,6 +467,78 @@
      "ok": true,
      "estado": "1 plano de loja",
      "comando": null
+    },
+    {
+     "etapa": 17,
+     "nome": "Onde cada loja aparece",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 loja medida",
+     "comando": null
+    },
+    {
+     "etapa": 17.5,
+     "nome": "E perto da própria loja?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 loja medida perto de si",
+     "comando": null
+    },
+    {
+     "etapa": 18,
+     "nome": "Quem anuncia aparelho",
+     "quem": "auto",
+     "ok": true,
+     "estado": "5 anunciantes de aparelho",
+     "comando": null
+    },
+    {
+     "etapa": 19,
+     "nome": "O histórico, não só o delta",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 loja com as duas janelas",
+     "comando": null
+    },
+    {
+     "etapa": 20,
+     "nome": "A curva de procura",
+     "quem": "auto",
+     "ok": true,
+     "estado": "medida · sem curva publicável (não refazer)",
+     "comando": null
+    },
+    {
+     "etapa": 21,
+     "nome": "A jornada do paciente",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 loja · 1 com dor concentrada",
+     "comando": null
+    },
+    {
+     "etapa": 22,
+     "nome": "O que o rival vende",
+     "quem": "auto",
+     "ok": true,
+     "estado": "A disputa desta cidade é por avaliação grátis — 5 dos 8 anúncios",
+     "comando": null
+    },
+    {
+     "etapa": 23,
+     "nome": "Imprensa e ritmo da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "25 matérias em 30 dias · 37 perfis vivos, 15 parados",
+     "comando": null
+    },
+    {
+     "etapa": 24,
+     "nome": "O ciclo da ação",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2 arcos no livro · nenhum com 21 dias ainda",
+     "comando": null
     }
    ]
   },
@@ -226,8 +546,8 @@
    "praca_id": "cuiaba",
    "rotulo": "MT · Cuiabá",
    "tipo": "rede",
-   "feitas": 14,
-   "de": 14,
+   "feitas": 23,
+   "de": 23,
    "completa": true,
    "etapas": [
     {
@@ -275,7 +595,7 @@
      "nome": "Varrer a categoria",
      "quem": "auto",
      "ok": true,
-     "estado": "243 clínicas varridas (mínimo 80)",
+     "estado": "388 clínicas varridas (mínimo 80)",
      "comando": null
     },
     {
@@ -283,7 +603,7 @@
      "nome": "Ritmo e meses seguidos",
      "quem": "auto",
      "ok": true,
-     "estado": "7476 avaliações lidas (mínimo 800)",
+     "estado": "7477 avaliações lidas (mínimo 800)",
      "comando": null
     },
     {
@@ -291,7 +611,7 @@
      "nome": "A unidade por dentro",
      "quem": "auto",
      "ok": true,
-     "estado": "1371 avaliações da unidade · 48 anúncios da praça",
+     "estado": "1372 avaliações da unidade · 48 anúncios da praça",
      "comando": null
     },
     {
@@ -307,7 +627,7 @@
      "nome": "O que não vamos ver",
      "quem": "humano",
      "ok": true,
-     "estado": "17 canais offline declarados (rádio, outdoor, escola…)",
+     "estado": "35 canais offline declarados (rádio, outdoor, escola…)",
      "comando": null
     },
     {
@@ -341,6 +661,272 @@
      "ok": true,
      "estado": "3 planos de loja",
      "comando": null
+    },
+    {
+     "etapa": 17,
+     "nome": "Onde cada loja aparece",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 lojas medidas · 1 invisível",
+     "comando": null
+    },
+    {
+     "etapa": 17.5,
+     "nome": "E perto da própria loja?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 lojas medidas perto de si",
+     "comando": null
+    },
+    {
+     "etapa": 18,
+     "nome": "Quem anuncia aparelho",
+     "quem": "auto",
+     "ok": true,
+     "estado": "10 anunciantes de aparelho",
+     "comando": null
+    },
+    {
+     "etapa": 19,
+     "nome": "O histórico, não só o delta",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 lojas com as duas janelas",
+     "comando": null
+    },
+    {
+     "etapa": 20,
+     "nome": "A curva de procura",
+     "quem": "auto",
+     "ok": true,
+     "estado": "medida · sem curva publicável (não refazer)",
+     "comando": null
+    },
+    {
+     "etapa": 21,
+     "nome": "A jornada do paciente",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 lojas · nenhuma com dor concentrada",
+     "comando": null
+    },
+    {
+     "etapa": 22,
+     "nome": "O que o rival vende",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 anúncio de aparelho — amostra curta, sem tese",
+     "comando": null
+    },
+    {
+     "etapa": 23,
+     "nome": "Imprensa e ritmo da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "30 matérias em 30 dias · 1 perfil vivo, 1 parado",
+     "comando": null
+    },
+    {
+     "etapa": 24,
+     "nome": "O ciclo da ação",
+     "quem": "auto",
+     "ok": true,
+     "estado": "4 arcos no livro · nenhum com 21 dias ainda",
+     "comando": null
+    }
+   ]
+  },
+  {
+   "praca_id": "curitiba",
+   "rotulo": "PR · Curitiba",
+   "tipo": "rede",
+   "feitas": 23,
+   "de": 23,
+   "completa": true,
+   "etapas": [
+    {
+     "etapa": 0,
+     "nome": "A praça definida",
+     "quem": "humano",
+     "ok": true,
+     "estado": "PR · Curitiba · 19 locais",
+     "comando": null
+    },
+    {
+     "etapa": 0.5,
+     "nome": "A rede está lá?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "5 unidades próprias, 5 com ficha do Google identificada",
+     "comando": null
+    },
+    {
+     "etapa": 1,
+     "nome": "A cidade em números",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 município com população do IBGE",
+     "comando": null
+    },
+    {
+     "etapa": 2,
+     "nome": "Quem fala com a cidade",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "16 canais com handle (mínimo 8)",
+     "comando": null
+    },
+    {
+     "etapa": 3,
+     "nome": "Escutar a cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "15801 vozes (mínimo 1000) — 1750 avaliações com texto, 547 posts",
+     "comando": null
+    },
+    {
+     "etapa": 5,
+     "nome": "Varrer a categoria",
+     "quem": "auto",
+     "ok": true,
+     "estado": "179 clínicas varridas (mínimo 80)",
+     "comando": null
+    },
+    {
+     "etapa": 6,
+     "nome": "Ritmo e meses seguidos",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2287 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 7,
+     "nome": "A unidade por dentro",
+     "quem": "auto",
+     "ok": true,
+     "estado": "600 avaliações da unidade · 87 anúncios da praça",
+     "comando": null
+    },
+    {
+     "etapa": 9,
+     "nome": "A joia enterrada",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "57 matérias de imprensa (mínimo 20)",
+     "comando": null
+    },
+    {
+     "etapa": 10,
+     "nome": "O que não vamos ver",
+     "quem": "humano",
+     "ok": true,
+     "estado": "17 canais offline declarados (rádio, outdoor, escola…)",
+     "comando": null
+    },
+    {
+     "etapa": 11,
+     "nome": "A inteligência",
+     "quem": "humano",
+     "ok": true,
+     "estado": "completa",
+     "comando": null
+    },
+    {
+     "etapa": 13,
+     "nome": "Cruzar com as outras",
+     "quem": "auto",
+     "ok": true,
+     "estado": "16 temas classificados",
+     "comando": null
+    },
+    {
+     "etapa": 14,
+     "nome": "As portas da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "224 portas de busca · 2 leituras de captação",
+     "comando": null
+    },
+    {
+     "etapa": 16,
+     "nome": "O plano do franqueado",
+     "quem": "auto",
+     "ok": true,
+     "estado": "5 planos de loja",
+     "comando": null
+    },
+    {
+     "etapa": 17,
+     "nome": "Onde cada loja aparece",
+     "quem": "auto",
+     "ok": true,
+     "estado": "5 lojas medidas",
+     "comando": null
+    },
+    {
+     "etapa": 17.5,
+     "nome": "E perto da própria loja?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "5 lojas medidas perto de si",
+     "comando": null
+    },
+    {
+     "etapa": 18,
+     "nome": "Quem anuncia aparelho",
+     "quem": "auto",
+     "ok": true,
+     "estado": "24 anunciantes de aparelho",
+     "comando": null
+    },
+    {
+     "etapa": 19,
+     "nome": "O histórico, não só o delta",
+     "quem": "auto",
+     "ok": true,
+     "estado": "5 lojas com as duas janelas",
+     "comando": null
+    },
+    {
+     "etapa": 20,
+     "nome": "A curva de procura",
+     "quem": "auto",
+     "ok": true,
+     "estado": "medida · sem curva publicável (não refazer)",
+     "comando": null
+    },
+    {
+     "etapa": 21,
+     "nome": "A jornada do paciente",
+     "quem": "auto",
+     "ok": true,
+     "estado": "5 lojas · nenhuma com dor concentrada",
+     "comando": null
+    },
+    {
+     "etapa": 22,
+     "nome": "O que o rival vende",
+     "quem": "auto",
+     "ok": true,
+     "estado": "A disputa desta cidade é por avaliação grátis — 18 dos 38 anúnci",
+     "comando": null
+    },
+    {
+     "etapa": 23,
+     "nome": "Imprensa e ritmo da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "28 matérias em 30 dias · 46 perfis vivos, 15 parados",
+     "comando": null
+    },
+    {
+     "etapa": 24,
+     "nome": "O ciclo da ação",
+     "quem": "auto",
+     "ok": true,
+     "estado": "11 arcos no livro · nenhum com 21 dias ainda",
+     "comando": null
     }
    ]
   },
@@ -348,8 +934,8 @@
    "praca_id": "feira",
    "rotulo": "BA · Feira de Santana",
    "tipo": "rede",
-   "feitas": 14,
-   "de": 14,
+   "feitas": 23,
+   "de": 23,
    "completa": true,
    "etapas": [
     {
@@ -429,7 +1015,7 @@
      "nome": "O que não vamos ver",
      "quem": "humano",
      "ok": true,
-     "estado": "9 canais offline declarados (rádio, outdoor, escola…)",
+     "estado": "25 canais offline declarados (rádio, outdoor, escola…)",
      "comando": null
     },
     {
@@ -463,6 +1049,466 @@
      "ok": true,
      "estado": "1 plano de loja",
      "comando": null
+    },
+    {
+     "etapa": 17,
+     "nome": "Onde cada loja aparece",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 loja medida",
+     "comando": null
+    },
+    {
+     "etapa": 17.5,
+     "nome": "E perto da própria loja?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 loja medida perto de si",
+     "comando": null
+    },
+    {
+     "etapa": 18,
+     "nome": "Quem anuncia aparelho",
+     "quem": "auto",
+     "ok": true,
+     "estado": "5 anunciantes de aparelho",
+     "comando": null
+    },
+    {
+     "etapa": 19,
+     "nome": "O histórico, não só o delta",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 loja com as duas janelas",
+     "comando": null
+    },
+    {
+     "etapa": 20,
+     "nome": "A curva de procura",
+     "quem": "auto",
+     "ok": true,
+     "estado": "medida · sem curva publicável (não refazer)",
+     "comando": null
+    },
+    {
+     "etapa": 21,
+     "nome": "A jornada do paciente",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 loja · nenhuma com dor concentrada",
+     "comando": null
+    },
+    {
+     "etapa": 22,
+     "nome": "O que o rival vende",
+     "quem": "auto",
+     "ok": true,
+     "estado": "A disputa desta cidade é por urgência e escassez — 4 dos 14 anún",
+     "comando": null
+    },
+    {
+     "etapa": 23,
+     "nome": "Imprensa e ritmo da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "25 matérias em 30 dias · 2 perfis vivos, 0 parados",
+     "comando": null
+    },
+    {
+     "etapa": 24,
+     "nome": "O ciclo da ação",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2 arcos no livro · nenhum com 21 dias ainda",
+     "comando": null
+    }
+   ]
+  },
+  {
+   "praca_id": "florianopolis",
+   "rotulo": "SC · Florianópolis",
+   "tipo": "rede",
+   "feitas": 22,
+   "de": 23,
+   "completa": false,
+   "etapas": [
+    {
+     "etapa": 0,
+     "nome": "A praça definida",
+     "quem": "humano",
+     "ok": true,
+     "estado": "SC · Florianópolis · 17 locais",
+     "comando": null
+    },
+    {
+     "etapa": 0.5,
+     "nome": "A rede está lá?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 unidades próprias, 3 com ficha do Google identificada",
+     "comando": null
+    },
+    {
+     "etapa": 1,
+     "nome": "A cidade em números",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 município com população do IBGE",
+     "comando": null
+    },
+    {
+     "etapa": 2,
+     "nome": "Quem fala com a cidade",
+     "quem": "auto+humano",
+     "ok": false,
+     "estado": "4 canais com handle (mínimo 8)",
+     "comando": "python3 coleta/coletores/canais.py --praca florianopolis  (handle null = achar na mão)"
+    },
+    {
+     "etapa": 3,
+     "nome": "Escutar a cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1415 vozes (mínimo 1000) — 1415 avaliações com texto, 0 posts",
+     "comando": null
+    },
+    {
+     "etapa": 5,
+     "nome": "Varrer a categoria",
+     "quem": "auto",
+     "ok": true,
+     "estado": "144 clínicas varridas (mínimo 80)",
+     "comando": null
+    },
+    {
+     "etapa": 6,
+     "nome": "Ritmo e meses seguidos",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2040 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 7,
+     "nome": "A unidade por dentro",
+     "quem": "auto",
+     "ok": true,
+     "estado": "360 avaliações da unidade · 116 anúncios da praça",
+     "comando": null
+    },
+    {
+     "etapa": 9,
+     "nome": "A joia enterrada",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "55 matérias de imprensa (mínimo 20)",
+     "comando": null
+    },
+    {
+     "etapa": 10,
+     "nome": "O que não vamos ver",
+     "quem": "humano",
+     "ok": true,
+     "estado": "9 canais offline declarados (rádio, outdoor, escola…)",
+     "comando": null
+    },
+    {
+     "etapa": 11,
+     "nome": "A inteligência",
+     "quem": "humano",
+     "ok": true,
+     "estado": "completa",
+     "comando": null
+    },
+    {
+     "etapa": 13,
+     "nome": "Cruzar com as outras",
+     "quem": "auto",
+     "ok": true,
+     "estado": "16 temas classificados",
+     "comando": null
+    },
+    {
+     "etapa": 14,
+     "nome": "As portas da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "140 portas de busca · 1 leitura de captação",
+     "comando": null
+    },
+    {
+     "etapa": 16,
+     "nome": "O plano do franqueado",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 planos de loja",
+     "comando": null
+    },
+    {
+     "etapa": 17,
+     "nome": "Onde cada loja aparece",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 lojas medidas",
+     "comando": null
+    },
+    {
+     "etapa": 17.5,
+     "nome": "E perto da própria loja?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 lojas medidas perto de si",
+     "comando": null
+    },
+    {
+     "etapa": 18,
+     "nome": "Quem anuncia aparelho",
+     "quem": "auto",
+     "ok": true,
+     "estado": "14 anunciantes de aparelho",
+     "comando": null
+    },
+    {
+     "etapa": 19,
+     "nome": "O histórico, não só o delta",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 lojas com as duas janelas",
+     "comando": null
+    },
+    {
+     "etapa": 20,
+     "nome": "A curva de procura",
+     "quem": "auto",
+     "ok": true,
+     "estado": "medida · sem curva publicável (não refazer)",
+     "comando": null
+    },
+    {
+     "etapa": 21,
+     "nome": "A jornada do paciente",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 lojas · nenhuma com dor concentrada",
+     "comando": null
+    },
+    {
+     "etapa": 22,
+     "nome": "O que o rival vende",
+     "quem": "auto",
+     "ok": true,
+     "estado": "A disputa desta cidade é por avaliação grátis — 9 dos 35 anúncio",
+     "comando": null
+    },
+    {
+     "etapa": 23,
+     "nome": "Imprensa e ritmo da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "27 matérias em 30 dias · 0 perfis vivos, 0 parados",
+     "comando": null
+    },
+    {
+     "etapa": 24,
+     "nome": "O ciclo da ação",
+     "quem": "auto",
+     "ok": true,
+     "estado": "5 arcos no livro · nenhum com 21 dias ainda",
+     "comando": null
+    }
+   ]
+  },
+  {
+   "praca_id": "goiania",
+   "rotulo": "GO · Goiânia",
+   "tipo": "rede",
+   "feitas": 23,
+   "de": 23,
+   "completa": true,
+   "etapas": [
+    {
+     "etapa": 0,
+     "nome": "A praça definida",
+     "quem": "humano",
+     "ok": true,
+     "estado": "GO · Goiânia · 18 locais",
+     "comando": null
+    },
+    {
+     "etapa": 0.5,
+     "nome": "A rede está lá?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "4 unidades próprias, 4 com ficha do Google identificada",
+     "comando": null
+    },
+    {
+     "etapa": 1,
+     "nome": "A cidade em números",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 município com população do IBGE",
+     "comando": null
+    },
+    {
+     "etapa": 2,
+     "nome": "Quem fala com a cidade",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "15 canais com handle (mínimo 8)",
+     "comando": null
+    },
+    {
+     "etapa": 3,
+     "nome": "Escutar a cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "26381 vozes (mínimo 1000) — 1757 avaliações com texto, 555 posts",
+     "comando": null
+    },
+    {
+     "etapa": 5,
+     "nome": "Varrer a categoria",
+     "quem": "auto",
+     "ok": true,
+     "estado": "161 clínicas varridas (mínimo 80)",
+     "comando": null
+    },
+    {
+     "etapa": 6,
+     "nome": "Ritmo e meses seguidos",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2163 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 7,
+     "nome": "A unidade por dentro",
+     "quem": "auto",
+     "ok": true,
+     "estado": "480 avaliações da unidade · 109 anúncios da praça",
+     "comando": null
+    },
+    {
+     "etapa": 9,
+     "nome": "A joia enterrada",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "64 matérias de imprensa (mínimo 20)",
+     "comando": null
+    },
+    {
+     "etapa": 10,
+     "nome": "O que não vamos ver",
+     "quem": "humano",
+     "ok": true,
+     "estado": "17 canais offline declarados (rádio, outdoor, escola…)",
+     "comando": null
+    },
+    {
+     "etapa": 11,
+     "nome": "A inteligência",
+     "quem": "humano",
+     "ok": true,
+     "estado": "completa",
+     "comando": null
+    },
+    {
+     "etapa": 13,
+     "nome": "Cruzar com as outras",
+     "quem": "auto",
+     "ok": true,
+     "estado": "16 temas classificados",
+     "comando": null
+    },
+    {
+     "etapa": 14,
+     "nome": "As portas da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "202 portas de busca · 1 leitura de captação",
+     "comando": null
+    },
+    {
+     "etapa": 16,
+     "nome": "O plano do franqueado",
+     "quem": "auto",
+     "ok": true,
+     "estado": "4 planos de loja",
+     "comando": null
+    },
+    {
+     "etapa": 17,
+     "nome": "Onde cada loja aparece",
+     "quem": "auto",
+     "ok": true,
+     "estado": "4 lojas medidas · 1 invisível",
+     "comando": null
+    },
+    {
+     "etapa": 17.5,
+     "nome": "E perto da própria loja?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "4 lojas medidas perto de si",
+     "comando": null
+    },
+    {
+     "etapa": 18,
+     "nome": "Quem anuncia aparelho",
+     "quem": "auto",
+     "ok": true,
+     "estado": "7 anunciantes de aparelho",
+     "comando": null
+    },
+    {
+     "etapa": 19,
+     "nome": "O histórico, não só o delta",
+     "quem": "auto",
+     "ok": true,
+     "estado": "4 lojas com as duas janelas",
+     "comando": null
+    },
+    {
+     "etapa": 20,
+     "nome": "A curva de procura",
+     "quem": "auto",
+     "ok": true,
+     "estado": "medida · sem curva publicável (não refazer)",
+     "comando": null
+    },
+    {
+     "etapa": 21,
+     "nome": "A jornada do paciente",
+     "quem": "auto",
+     "ok": true,
+     "estado": "4 lojas · 2 com dor concentrada",
+     "comando": null
+    },
+    {
+     "etapa": 22,
+     "nome": "O que o rival vende",
+     "quem": "auto",
+     "ok": true,
+     "estado": "A disputa desta cidade é por alinhador invisível — 11 dos 15 anú",
+     "comando": null
+    },
+    {
+     "etapa": 23,
+     "nome": "Imprensa e ritmo da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "29 matérias em 30 dias · 64 perfis vivos, 15 parados",
+     "comando": null
+    },
+    {
+     "etapa": 24,
+     "nome": "O ciclo da ação",
+     "quem": "auto",
+     "ok": true,
+     "estado": "9 arcos no livro · nenhum com 21 dias ainda",
+     "comando": null
     }
    ]
   },
@@ -470,8 +1516,8 @@
    "praca_id": "imperatriz",
    "rotulo": "MA · Imperatriz",
    "tipo": "oportunidade",
-   "feitas": 12,
-   "de": 12,
+   "feitas": 16,
+   "de": 16,
    "completa": true,
    "etapas": [
     {
@@ -569,6 +1615,232 @@
      "ok": true,
      "estado": "leitura escrita",
      "comando": null
+    },
+    {
+     "etapa": 18,
+     "nome": "Quem anuncia aparelho",
+     "quem": "auto",
+     "ok": true,
+     "estado": "4 anunciantes de aparelho",
+     "comando": null
+    },
+    {
+     "etapa": 20,
+     "nome": "A curva de procura",
+     "quem": "auto",
+     "ok": true,
+     "estado": "medida · sem curva publicável (não refazer)",
+     "comando": null
+    },
+    {
+     "etapa": 22,
+     "nome": "O que o rival vende",
+     "quem": "auto",
+     "ok": true,
+     "estado": "A disputa desta cidade é por falado para criança e adolescente —",
+     "comando": null
+    },
+    {
+     "etapa": 23,
+     "nome": "Imprensa e ritmo da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "20 matérias em 30 dias · 3 perfis vivos, 1 parado",
+     "comando": null
+    }
+   ]
+  },
+  {
+   "praca_id": "joinville",
+   "rotulo": "SC · Joinville",
+   "tipo": "rede",
+   "feitas": 23,
+   "de": 23,
+   "completa": true,
+   "etapas": [
+    {
+     "etapa": 0,
+     "nome": "A praça definida",
+     "quem": "humano",
+     "ok": true,
+     "estado": "SC · Joinville · 17 locais",
+     "comando": null
+    },
+    {
+     "etapa": 0.5,
+     "nome": "A rede está lá?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 unidades próprias, 3 com ficha do Google identificada",
+     "comando": null
+    },
+    {
+     "etapa": 1,
+     "nome": "A cidade em números",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 município com população do IBGE",
+     "comando": null
+    },
+    {
+     "etapa": 2,
+     "nome": "Quem fala com a cidade",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "13 canais com handle (mínimo 8)",
+     "comando": null
+    },
+    {
+     "etapa": 3,
+     "nome": "Escutar a cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "53194 vozes (mínimo 1000) — 1562 avaliações com texto, 530 posts",
+     "comando": null
+    },
+    {
+     "etapa": 5,
+     "nome": "Varrer a categoria",
+     "quem": "auto",
+     "ok": true,
+     "estado": "148 clínicas varridas (mínimo 80)",
+     "comando": null
+    },
+    {
+     "etapa": 6,
+     "nome": "Ritmo e meses seguidos",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2042 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 7,
+     "nome": "A unidade por dentro",
+     "quem": "auto",
+     "ok": true,
+     "estado": "360 avaliações da unidade · 102 anúncios da praça",
+     "comando": null
+    },
+    {
+     "etapa": 9,
+     "nome": "A joia enterrada",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "53 matérias de imprensa (mínimo 20)",
+     "comando": null
+    },
+    {
+     "etapa": 10,
+     "nome": "O que não vamos ver",
+     "quem": "humano",
+     "ok": true,
+     "estado": "17 canais offline declarados (rádio, outdoor, escola…)",
+     "comando": null
+    },
+    {
+     "etapa": 11,
+     "nome": "A inteligência",
+     "quem": "humano",
+     "ok": true,
+     "estado": "completa",
+     "comando": null
+    },
+    {
+     "etapa": 13,
+     "nome": "Cruzar com as outras",
+     "quem": "auto",
+     "ok": true,
+     "estado": "16 temas classificados",
+     "comando": null
+    },
+    {
+     "etapa": 14,
+     "nome": "As portas da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "160 portas de busca · 1 leitura de captação",
+     "comando": null
+    },
+    {
+     "etapa": 16,
+     "nome": "O plano do franqueado",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 planos de loja",
+     "comando": null
+    },
+    {
+     "etapa": 17,
+     "nome": "Onde cada loja aparece",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 lojas medidas",
+     "comando": null
+    },
+    {
+     "etapa": 17.5,
+     "nome": "E perto da própria loja?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 lojas medidas perto de si",
+     "comando": null
+    },
+    {
+     "etapa": 18,
+     "nome": "Quem anuncia aparelho",
+     "quem": "auto",
+     "ok": true,
+     "estado": "16 anunciantes de aparelho",
+     "comando": null
+    },
+    {
+     "etapa": 19,
+     "nome": "O histórico, não só o delta",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 lojas com as duas janelas",
+     "comando": null
+    },
+    {
+     "etapa": 20,
+     "nome": "A curva de procura",
+     "quem": "auto",
+     "ok": true,
+     "estado": "medida · sem curva publicável (não refazer)",
+     "comando": null
+    },
+    {
+     "etapa": 21,
+     "nome": "A jornada do paciente",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 lojas · nenhuma com dor concentrada",
+     "comando": null
+    },
+    {
+     "etapa": 22,
+     "nome": "O que o rival vende",
+     "quem": "auto",
+     "ok": true,
+     "estado": "A disputa desta cidade é por autoridade técnica — 23 dos 34 anún",
+     "comando": null
+    },
+    {
+     "etapa": 23,
+     "nome": "Imprensa e ritmo da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "25 matérias em 30 dias · 27 perfis vivos, 11 parados",
+     "comando": null
+    },
+    {
+     "etapa": 24,
+     "nome": "O ciclo da ação",
+     "quem": "auto",
+     "ok": true,
+     "estado": "6 arcos no livro · nenhum com 21 dias ainda",
+     "comando": null
     }
    ]
   },
@@ -576,8 +1848,8 @@
    "praca_id": "juazeiro_do_norte",
    "rotulo": "CE · Juazeiro do Norte",
    "tipo": "oportunidade",
-   "feitas": 12,
-   "de": 12,
+   "feitas": 16,
+   "de": 16,
    "completa": true,
    "etapas": [
     {
@@ -675,6 +1947,38 @@
      "ok": true,
      "estado": "leitura escrita",
      "comando": null
+    },
+    {
+     "etapa": 18,
+     "nome": "Quem anuncia aparelho",
+     "quem": "auto",
+     "ok": true,
+     "estado": "4 anunciantes de aparelho",
+     "comando": null
+    },
+    {
+     "etapa": 20,
+     "nome": "A curva de procura",
+     "quem": "auto",
+     "ok": true,
+     "estado": "medida · sem curva publicável (não refazer)",
+     "comando": null
+    },
+    {
+     "etapa": 22,
+     "nome": "O que o rival vende",
+     "quem": "auto",
+     "ok": true,
+     "estado": "A disputa desta cidade é por falado para criança e adolescente —",
+     "comando": null
+    },
+    {
+     "etapa": 23,
+     "nome": "Imprensa e ritmo da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "26 matérias em 30 dias · 9 perfis vivos, 2 parados",
+     "comando": null
     }
    ]
   },
@@ -682,8 +1986,8 @@
    "praca_id": "londrina",
    "rotulo": "PR · Londrina",
    "tipo": "rede",
-   "feitas": 14,
-   "de": 14,
+   "feitas": 23,
+   "de": 23,
    "completa": true,
    "etapas": [
     {
@@ -723,7 +2027,7 @@
      "nome": "Escutar a cidade",
      "quem": "auto",
      "ok": true,
-     "estado": "3343 vozes (mínimo 1000) — 3277 avaliações com texto, 42 posts",
+     "estado": "3346 vozes (mínimo 1000) — 3280 avaliações com texto, 42 posts",
      "comando": null
     },
     {
@@ -739,7 +2043,7 @@
      "nome": "Ritmo e meses seguidos",
      "quem": "auto",
      "ok": true,
-     "estado": "4490 avaliações lidas (mínimo 800)",
+     "estado": "4493 avaliações lidas (mínimo 800)",
      "comando": null
     },
     {
@@ -747,7 +2051,7 @@
      "nome": "A unidade por dentro",
      "quem": "auto",
      "ok": true,
-     "estado": "642 avaliações da unidade · 88 anúncios da praça",
+     "estado": "645 avaliações da unidade · 88 anúncios da praça",
      "comando": null
     },
     {
@@ -763,7 +2067,7 @@
      "nome": "O que não vamos ver",
      "quem": "humano",
      "ok": true,
-     "estado": "9 canais offline declarados (rádio, outdoor, escola…)",
+     "estado": "27 canais offline declarados (rádio, outdoor, escola…)",
      "comando": null
     },
     {
@@ -797,6 +2101,78 @@
      "ok": true,
      "estado": "2 planos de loja",
      "comando": null
+    },
+    {
+     "etapa": 17,
+     "nome": "Onde cada loja aparece",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2 lojas medidas",
+     "comando": null
+    },
+    {
+     "etapa": 17.5,
+     "nome": "E perto da própria loja?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2 lojas medidas perto de si",
+     "comando": null
+    },
+    {
+     "etapa": 18,
+     "nome": "Quem anuncia aparelho",
+     "quem": "auto",
+     "ok": true,
+     "estado": "10 anunciantes de aparelho",
+     "comando": null
+    },
+    {
+     "etapa": 19,
+     "nome": "O histórico, não só o delta",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2 lojas com as duas janelas",
+     "comando": null
+    },
+    {
+     "etapa": 20,
+     "nome": "A curva de procura",
+     "quem": "auto",
+     "ok": true,
+     "estado": "medida · sem curva publicável (não refazer)",
+     "comando": null
+    },
+    {
+     "etapa": 21,
+     "nome": "A jornada do paciente",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2 lojas · 2 com dor concentrada",
+     "comando": null
+    },
+    {
+     "etapa": 22,
+     "nome": "O que o rival vende",
+     "quem": "auto",
+     "ok": true,
+     "estado": "A disputa desta cidade é por urgência e escassez — 24 dos 45 anú",
+     "comando": null
+    },
+    {
+     "etapa": 23,
+     "nome": "Imprensa e ritmo da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 matérias em 30 dias · 2 perfis vivos, 1 parado",
+     "comando": null
+    },
+    {
+     "etapa": 24,
+     "nome": "O ciclo da ação",
+     "quem": "auto",
+     "ok": true,
+     "estado": "5 arcos no livro · nenhum com 21 dias ainda",
+     "comando": null
     }
    ]
   },
@@ -804,8 +2180,8 @@
    "praca_id": "macapa",
    "rotulo": "AP · Macapá",
    "tipo": "oportunidade",
-   "feitas": 12,
-   "de": 12,
+   "feitas": 16,
+   "de": 16,
    "completa": true,
    "etapas": [
     {
@@ -903,6 +2279,38 @@
      "ok": true,
      "estado": "leitura escrita",
      "comando": null
+    },
+    {
+     "etapa": 18,
+     "nome": "Quem anuncia aparelho",
+     "quem": "auto",
+     "ok": true,
+     "estado": "4 anunciantes de aparelho",
+     "comando": null
+    },
+    {
+     "etapa": 20,
+     "nome": "A curva de procura",
+     "quem": "auto",
+     "ok": true,
+     "estado": "medida · sem curva publicável (não refazer)",
+     "comando": null
+    },
+    {
+     "etapa": 22,
+     "nome": "O que o rival vende",
+     "quem": "auto",
+     "ok": true,
+     "estado": "A disputa desta cidade é por avaliação grátis — 3 dos 5 anúncios",
+     "comando": null
+    },
+    {
+     "etapa": 23,
+     "nome": "Imprensa e ritmo da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "27 matérias em 30 dias · 31 perfis vivos, 6 parados",
+     "comando": null
     }
    ]
   },
@@ -910,8 +2318,8 @@
    "praca_id": "mafra",
    "rotulo": "SC · Mafra",
    "tipo": "rede",
-   "feitas": 14,
-   "de": 14,
+   "feitas": 23,
+   "de": 23,
    "completa": true,
    "etapas": [
     {
@@ -991,7 +2399,7 @@
      "nome": "O que não vamos ver",
      "quem": "humano",
      "ok": true,
-     "estado": "12 canais offline declarados (rádio, outdoor, escola…)",
+     "estado": "30 canais offline declarados (rádio, outdoor, escola…)",
      "comando": null
     },
     {
@@ -1025,6 +2433,78 @@
      "ok": true,
      "estado": "1 plano de loja",
      "comando": null
+    },
+    {
+     "etapa": 17,
+     "nome": "Onde cada loja aparece",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 loja medida",
+     "comando": null
+    },
+    {
+     "etapa": 17.5,
+     "nome": "E perto da própria loja?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 loja medida perto de si",
+     "comando": null
+    },
+    {
+     "etapa": 18,
+     "nome": "Quem anuncia aparelho",
+     "quem": "auto",
+     "ok": true,
+     "estado": "ninguém anuncia aparelho nesta cidade (medido)",
+     "comando": null
+    },
+    {
+     "etapa": 19,
+     "nome": "O histórico, não só o delta",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 loja com as duas janelas",
+     "comando": null
+    },
+    {
+     "etapa": 20,
+     "nome": "A curva de procura",
+     "quem": "auto",
+     "ok": true,
+     "estado": "medida · sem curva publicável (não refazer)",
+     "comando": null
+    },
+    {
+     "etapa": 21,
+     "nome": "A jornada do paciente",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 loja · nenhuma com dor concentrada",
+     "comando": null
+    },
+    {
+     "etapa": 22,
+     "nome": "O que o rival vende",
+     "quem": "auto",
+     "ok": true,
+     "estado": "A disputa desta cidade é por avaliação grátis — 5 dos 6 anúncios",
+     "comando": null
+    },
+    {
+     "etapa": 23,
+     "nome": "Imprensa e ritmo da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "10 matérias em 30 dias · 2 perfis vivos, 0 parados",
+     "comando": null
+    },
+    {
+     "etapa": 24,
+     "nome": "O ciclo da ação",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2 arcos no livro · nenhum com 21 dias ainda",
+     "comando": null
     }
    ]
   },
@@ -1032,8 +2512,8 @@
    "praca_id": "maraba",
    "rotulo": "PA · Marabá",
    "tipo": "oportunidade",
-   "feitas": 12,
-   "de": 12,
+   "feitas": 16,
+   "de": 16,
    "completa": true,
    "etapas": [
     {
@@ -1131,6 +2611,38 @@
      "ok": true,
      "estado": "leitura escrita",
      "comando": null
+    },
+    {
+     "etapa": 18,
+     "nome": "Quem anuncia aparelho",
+     "quem": "auto",
+     "ok": true,
+     "estado": "5 anunciantes de aparelho",
+     "comando": null
+    },
+    {
+     "etapa": 20,
+     "nome": "A curva de procura",
+     "quem": "auto",
+     "ok": true,
+     "estado": "medida · sem curva publicável (não refazer)",
+     "comando": null
+    },
+    {
+     "etapa": 22,
+     "nome": "O que o rival vende",
+     "quem": "auto",
+     "ok": true,
+     "estado": "A disputa desta cidade é por urgência e escassez — 7 dos 12 anún",
+     "comando": null
+    },
+    {
+     "etapa": 23,
+     "nome": "Imprensa e ritmo da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "25 matérias em 30 dias · 38 perfis vivos, 3 parados",
+     "comando": null
     }
    ]
   },
@@ -1138,8 +2650,8 @@
    "praca_id": "palmas",
    "rotulo": "TO · Palmas",
    "tipo": "rede",
-   "feitas": 14,
-   "de": 14,
+   "feitas": 23,
+   "de": 23,
    "completa": true,
    "etapas": [
     {
@@ -1179,7 +2691,7 @@
      "nome": "Escutar a cidade",
      "quem": "auto",
      "ok": true,
-     "estado": "18234 vozes (mínimo 1000) — 1598 avaliações com texto, 725 posts",
+     "estado": "18235 vozes (mínimo 1000) — 1599 avaliações com texto, 725 posts",
      "comando": null
     },
     {
@@ -1195,7 +2707,7 @@
      "nome": "Ritmo e meses seguidos",
      "quem": "auto",
      "ok": true,
-     "estado": "2219 avaliações lidas (mínimo 800)",
+     "estado": "2220 avaliações lidas (mínimo 800)",
      "comando": null
     },
     {
@@ -1203,7 +2715,7 @@
      "nome": "A unidade por dentro",
      "quem": "auto",
      "ok": true,
-     "estado": "305 avaliações da unidade · 26 anúncios da praça",
+     "estado": "306 avaliações da unidade · 26 anúncios da praça",
      "comando": null
     },
     {
@@ -1219,7 +2731,7 @@
      "nome": "O que não vamos ver",
      "quem": "humano",
      "ok": true,
-     "estado": "16 canais offline declarados (rádio, outdoor, escola…)",
+     "estado": "34 canais offline declarados (rádio, outdoor, escola…)",
      "comando": null
     },
     {
@@ -1253,6 +2765,78 @@
      "ok": true,
      "estado": "1 plano de loja",
      "comando": null
+    },
+    {
+     "etapa": 17,
+     "nome": "Onde cada loja aparece",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 loja medida",
+     "comando": null
+    },
+    {
+     "etapa": 17.5,
+     "nome": "E perto da própria loja?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 loja medida perto de si",
+     "comando": null
+    },
+    {
+     "etapa": 18,
+     "nome": "Quem anuncia aparelho",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2 anunciantes de aparelho",
+     "comando": null
+    },
+    {
+     "etapa": 19,
+     "nome": "O histórico, não só o delta",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 loja com as duas janelas",
+     "comando": null
+    },
+    {
+     "etapa": 20,
+     "nome": "A curva de procura",
+     "quem": "auto",
+     "ok": true,
+     "estado": "medida · sem curva publicável (não refazer)",
+     "comando": null
+    },
+    {
+     "etapa": 21,
+     "nome": "A jornada do paciente",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 loja · nenhuma com dor concentrada",
+     "comando": null
+    },
+    {
+     "etapa": 22,
+     "nome": "O que o rival vende",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2 anúncios de aparelho — amostra curta, sem tese",
+     "comando": null
+    },
+    {
+     "etapa": 23,
+     "nome": "Imprensa e ritmo da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "19 matérias em 30 dias · 80 perfis vivos, 15 parados",
+     "comando": null
+    },
+    {
+     "etapa": 24,
+     "nome": "O ciclo da ação",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 arco no livro · nenhum com 21 dias ainda",
+     "comando": null
     }
    ]
   },
@@ -1260,8 +2844,8 @@
    "praca_id": "parauapebas",
    "rotulo": "PA · Parauapebas",
    "tipo": "oportunidade",
-   "feitas": 12,
-   "de": 12,
+   "feitas": 16,
+   "de": 16,
    "completa": true,
    "etapas": [
     {
@@ -1359,6 +2943,232 @@
      "ok": true,
      "estado": "leitura escrita",
      "comando": null
+    },
+    {
+     "etapa": 18,
+     "nome": "Quem anuncia aparelho",
+     "quem": "auto",
+     "ok": true,
+     "estado": "4 anunciantes de aparelho",
+     "comando": null
+    },
+    {
+     "etapa": 20,
+     "nome": "A curva de procura",
+     "quem": "auto",
+     "ok": true,
+     "estado": "medida · sem curva publicável (não refazer)",
+     "comando": null
+    },
+    {
+     "etapa": 22,
+     "nome": "O que o rival vende",
+     "quem": "auto",
+     "ok": true,
+     "estado": "A disputa desta cidade é por avaliação grátis — 4 dos 8 anúncios",
+     "comando": null
+    },
+    {
+     "etapa": 23,
+     "nome": "Imprensa e ritmo da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "17 matérias em 30 dias · 11 perfis vivos, 1 parado",
+     "comando": null
+    }
+   ]
+  },
+  {
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "tipo": "rede",
+   "feitas": 23,
+   "de": 23,
+   "completa": true,
+   "etapas": [
+    {
+     "etapa": 0,
+     "nome": "A praça definida",
+     "quem": "humano",
+     "ok": true,
+     "estado": "RS · Porto Alegre · 21 locais",
+     "comando": null
+    },
+    {
+     "etapa": 0.5,
+     "nome": "A rede está lá?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "7 unidades próprias, 7 com ficha do Google identificada",
+     "comando": null
+    },
+    {
+     "etapa": 1,
+     "nome": "A cidade em números",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 município com população do IBGE",
+     "comando": null
+    },
+    {
+     "etapa": 2,
+     "nome": "Quem fala com a cidade",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "8 canais com handle (mínimo 8)",
+     "comando": null
+    },
+    {
+     "etapa": 3,
+     "nome": "Escutar a cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "11635 vozes (mínimo 1000) — 1733 avaliações com texto, 326 posts",
+     "comando": null
+    },
+    {
+     "etapa": 5,
+     "nome": "Varrer a categoria",
+     "quem": "auto",
+     "ok": true,
+     "estado": "184 clínicas varridas (mínimo 80)",
+     "comando": null
+    },
+    {
+     "etapa": 6,
+     "nome": "Ritmo e meses seguidos",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2433 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 7,
+     "nome": "A unidade por dentro",
+     "quem": "auto",
+     "ok": true,
+     "estado": "752 avaliações da unidade · 160 anúncios da praça",
+     "comando": null
+    },
+    {
+     "etapa": 9,
+     "nome": "A joia enterrada",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "54 matérias de imprensa (mínimo 20)",
+     "comando": null
+    },
+    {
+     "etapa": 10,
+     "nome": "O que não vamos ver",
+     "quem": "humano",
+     "ok": true,
+     "estado": "18 canais offline declarados (rádio, outdoor, escola…)",
+     "comando": null
+    },
+    {
+     "etapa": 11,
+     "nome": "A inteligência",
+     "quem": "humano",
+     "ok": true,
+     "estado": "completa",
+     "comando": null
+    },
+    {
+     "etapa": 13,
+     "nome": "Cruzar com as outras",
+     "quem": "auto",
+     "ok": true,
+     "estado": "16 temas classificados",
+     "comando": null
+    },
+    {
+     "etapa": 14,
+     "nome": "As portas da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "204 portas de busca · 1 leitura de captação",
+     "comando": null
+    },
+    {
+     "etapa": 16,
+     "nome": "O plano do franqueado",
+     "quem": "auto",
+     "ok": true,
+     "estado": "7 planos de loja",
+     "comando": null
+    },
+    {
+     "etapa": 17,
+     "nome": "Onde cada loja aparece",
+     "quem": "auto",
+     "ok": true,
+     "estado": "7 lojas medidas · 1 invisível",
+     "comando": null
+    },
+    {
+     "etapa": 17.5,
+     "nome": "E perto da própria loja?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "7 lojas medidas perto de si · 1 não aparecem nem no próprio quarteirão",
+     "comando": null
+    },
+    {
+     "etapa": 18,
+     "nome": "Quem anuncia aparelho",
+     "quem": "auto",
+     "ok": true,
+     "estado": "14 anunciantes de aparelho",
+     "comando": null
+    },
+    {
+     "etapa": 19,
+     "nome": "O histórico, não só o delta",
+     "quem": "auto",
+     "ok": true,
+     "estado": "7 lojas com as duas janelas",
+     "comando": null
+    },
+    {
+     "etapa": 20,
+     "nome": "A curva de procura",
+     "quem": "auto",
+     "ok": true,
+     "estado": "medida · sem curva publicável (não refazer)",
+     "comando": null
+    },
+    {
+     "etapa": 21,
+     "nome": "A jornada do paciente",
+     "quem": "auto",
+     "ok": true,
+     "estado": "7 lojas · nenhuma com dor concentrada",
+     "comando": null
+    },
+    {
+     "etapa": 22,
+     "nome": "O que o rival vende",
+     "quem": "auto",
+     "ok": true,
+     "estado": "A disputa desta cidade é por alinhador invisível — 19 dos 41 anú",
+     "comando": null
+    },
+    {
+     "etapa": 23,
+     "nome": "Imprensa e ritmo da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "27 matérias em 30 dias · 26 perfis vivos, 11 parados",
+     "comando": null
+    },
+    {
+     "etapa": 24,
+     "nome": "O ciclo da ação",
+     "quem": "auto",
+     "ok": true,
+     "estado": "7 arcos no livro · nenhum com 21 dias ainda",
+     "comando": null
     }
    ]
   },
@@ -1366,8 +3176,8 @@
    "praca_id": "prudente",
    "rotulo": "SP · Presidente Prudente",
    "tipo": "rede",
-   "feitas": 14,
-   "de": 14,
+   "feitas": 23,
+   "de": 23,
    "completa": true,
    "etapas": [
     {
@@ -1447,7 +3257,7 @@
      "nome": "O que não vamos ver",
      "quem": "humano",
      "ok": true,
-     "estado": "8 canais offline declarados (rádio, outdoor, escola…)",
+     "estado": "24 canais offline declarados (rádio, outdoor, escola…)",
      "comando": null
     },
     {
@@ -1481,6 +3291,78 @@
      "ok": true,
      "estado": "1 plano de loja",
      "comando": null
+    },
+    {
+     "etapa": 17,
+     "nome": "Onde cada loja aparece",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 loja medida",
+     "comando": null
+    },
+    {
+     "etapa": 17.5,
+     "nome": "E perto da própria loja?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 loja medida perto de si",
+     "comando": null
+    },
+    {
+     "etapa": 18,
+     "nome": "Quem anuncia aparelho",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 anunciante de aparelho",
+     "comando": null
+    },
+    {
+     "etapa": 19,
+     "nome": "O histórico, não só o delta",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 loja com as duas janelas",
+     "comando": null
+    },
+    {
+     "etapa": 20,
+     "nome": "A curva de procura",
+     "quem": "auto",
+     "ok": true,
+     "estado": "medida · sem curva publicável (não refazer)",
+     "comando": null
+    },
+    {
+     "etapa": 21,
+     "nome": "A jornada do paciente",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 loja · nenhuma com dor concentrada",
+     "comando": null
+    },
+    {
+     "etapa": 22,
+     "nome": "O que o rival vende",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 anúncio de aparelho — amostra curta, sem tese",
+     "comando": null
+    },
+    {
+     "etapa": 23,
+     "nome": "Imprensa e ritmo da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "25 matérias em 30 dias · 1 perfil vivo, 0 parados",
+     "comando": null
+    },
+    {
+     "etapa": 24,
+     "nome": "O ciclo da ação",
+     "quem": "auto",
+     "ok": true,
+     "estado": "nenhum problema aberto nesta praça",
+     "comando": null
     }
    ]
   },
@@ -1488,8 +3370,8 @@
    "praca_id": "rio_branco",
    "rotulo": "AC · Rio Branco",
    "tipo": "oportunidade",
-   "feitas": 12,
-   "de": 12,
+   "feitas": 16,
+   "de": 16,
    "completa": true,
    "etapas": [
     {
@@ -1586,6 +3468,814 @@
      "quem": "humano",
      "ok": true,
      "estado": "leitura escrita",
+     "comando": null
+    },
+    {
+     "etapa": 18,
+     "nome": "Quem anuncia aparelho",
+     "quem": "auto",
+     "ok": true,
+     "estado": "5 anunciantes de aparelho",
+     "comando": null
+    },
+    {
+     "etapa": 20,
+     "nome": "A curva de procura",
+     "quem": "auto",
+     "ok": true,
+     "estado": "medida · sem curva publicável (não refazer)",
+     "comando": null
+    },
+    {
+     "etapa": 22,
+     "nome": "O que o rival vende",
+     "quem": "auto",
+     "ok": true,
+     "estado": "A disputa desta cidade é por avaliação grátis — 3 dos 6 anúncios",
+     "comando": null
+    },
+    {
+     "etapa": 23,
+     "nome": "Imprensa e ritmo da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "27 matérias em 30 dias · 18 perfis vivos, 8 parados",
+     "comando": null
+    }
+   ]
+  },
+  {
+   "praca_id": "rio_de_janeiro",
+   "rotulo": "RJ · Rio de Janeiro",
+   "tipo": "rede",
+   "feitas": 23,
+   "de": 23,
+   "completa": true,
+   "etapas": [
+    {
+     "etapa": 0,
+     "nome": "A praça definida",
+     "quem": "humano",
+     "ok": true,
+     "estado": "RJ · Rio de Janeiro · 15 locais",
+     "comando": null
+    },
+    {
+     "etapa": 0.5,
+     "nome": "A rede está lá?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 unidade própria, 1 com ficha do Google identificada",
+     "comando": null
+    },
+    {
+     "etapa": 1,
+     "nome": "A cidade em números",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 município com população do IBGE",
+     "comando": null
+    },
+    {
+     "etapa": 2,
+     "nome": "Quem fala com a cidade",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "8 canais com handle (mínimo 8)",
+     "comando": null
+    },
+    {
+     "etapa": 3,
+     "nome": "Escutar a cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1379 vozes (mínimo 1000) — 1379 avaliações com texto, 0 posts",
+     "comando": null
+    },
+    {
+     "etapa": 5,
+     "nome": "Varrer a categoria",
+     "quem": "auto",
+     "ok": true,
+     "estado": "186 clínicas varridas (mínimo 80)",
+     "comando": null
+    },
+    {
+     "etapa": 6,
+     "nome": "Ritmo e meses seguidos",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1800 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 7,
+     "nome": "A unidade por dentro",
+     "quem": "auto",
+     "ok": true,
+     "estado": "120 avaliações da unidade · 56 anúncios da praça",
+     "comando": null
+    },
+    {
+     "etapa": 9,
+     "nome": "A joia enterrada",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "59 matérias de imprensa (mínimo 20)",
+     "comando": null
+    },
+    {
+     "etapa": 10,
+     "nome": "O que não vamos ver",
+     "quem": "humano",
+     "ok": true,
+     "estado": "9 canais offline declarados (rádio, outdoor, escola…)",
+     "comando": null
+    },
+    {
+     "etapa": 11,
+     "nome": "A inteligência",
+     "quem": "humano",
+     "ok": true,
+     "estado": "completa",
+     "comando": null
+    },
+    {
+     "etapa": 13,
+     "nome": "Cruzar com as outras",
+     "quem": "auto",
+     "ok": true,
+     "estado": "16 temas classificados",
+     "comando": null
+    },
+    {
+     "etapa": 14,
+     "nome": "As portas da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "208 portas de busca · 1 leitura de captação",
+     "comando": null
+    },
+    {
+     "etapa": 16,
+     "nome": "O plano do franqueado",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 plano de loja",
+     "comando": null
+    },
+    {
+     "etapa": 17,
+     "nome": "Onde cada loja aparece",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 loja medida · 1 invisível",
+     "comando": null
+    },
+    {
+     "etapa": 17.5,
+     "nome": "E perto da própria loja?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 loja medida perto de si",
+     "comando": null
+    },
+    {
+     "etapa": 18,
+     "nome": "Quem anuncia aparelho",
+     "quem": "auto",
+     "ok": true,
+     "estado": "8 anunciantes de aparelho",
+     "comando": null
+    },
+    {
+     "etapa": 19,
+     "nome": "O histórico, não só o delta",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 loja com as duas janelas",
+     "comando": null
+    },
+    {
+     "etapa": 20,
+     "nome": "A curva de procura",
+     "quem": "auto",
+     "ok": true,
+     "estado": "medida · sem curva publicável (não refazer)",
+     "comando": null
+    },
+    {
+     "etapa": 21,
+     "nome": "A jornada do paciente",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 loja · nenhuma com dor concentrada",
+     "comando": null
+    },
+    {
+     "etapa": 22,
+     "nome": "O que o rival vende",
+     "quem": "auto",
+     "ok": true,
+     "estado": "A disputa desta cidade é por autoridade técnica — 7 dos 13 anúnc",
+     "comando": null
+    },
+    {
+     "etapa": 23,
+     "nome": "Imprensa e ritmo da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "31 matérias em 30 dias · 0 perfis vivos, 0 parados",
+     "comando": null
+    },
+    {
+     "etapa": 24,
+     "nome": "O ciclo da ação",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2 arcos no livro · nenhum com 21 dias ainda",
+     "comando": null
+    }
+   ]
+  },
+  {
+   "praca_id": "sao_paulo",
+   "rotulo": "SP · São Paulo",
+   "tipo": "rede",
+   "feitas": 23,
+   "de": 23,
+   "completa": true,
+   "etapas": [
+    {
+     "etapa": 0,
+     "nome": "A praça definida",
+     "quem": "humano",
+     "ok": true,
+     "estado": "SP · São Paulo · 18 locais",
+     "comando": null
+    },
+    {
+     "etapa": 0.5,
+     "nome": "A rede está lá?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "4 unidades próprias, 4 com ficha do Google identificada",
+     "comando": null
+    },
+    {
+     "etapa": 1,
+     "nome": "A cidade em números",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 município com população do IBGE",
+     "comando": null
+    },
+    {
+     "etapa": 2,
+     "nome": "Quem fala com a cidade",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "12 canais com handle (mínimo 8)",
+     "comando": null
+    },
+    {
+     "etapa": 3,
+     "nome": "Escutar a cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1495 vozes (mínimo 1000) — 1495 avaliações com texto, 0 posts",
+     "comando": null
+    },
+    {
+     "etapa": 5,
+     "nome": "Varrer a categoria",
+     "quem": "auto",
+     "ok": true,
+     "estado": "188 clínicas varridas (mínimo 80)",
+     "comando": null
+    },
+    {
+     "etapa": 6,
+     "nome": "Ritmo e meses seguidos",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2050 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 7,
+     "nome": "A unidade por dentro",
+     "quem": "auto",
+     "ok": true,
+     "estado": "370 avaliações da unidade · 171 anúncios da praça",
+     "comando": null
+    },
+    {
+     "etapa": 9,
+     "nome": "A joia enterrada",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "68 matérias de imprensa (mínimo 20)",
+     "comando": null
+    },
+    {
+     "etapa": 10,
+     "nome": "O que não vamos ver",
+     "quem": "humano",
+     "ok": true,
+     "estado": "9 canais offline declarados (rádio, outdoor, escola…)",
+     "comando": null
+    },
+    {
+     "etapa": 11,
+     "nome": "A inteligência",
+     "quem": "humano",
+     "ok": true,
+     "estado": "completa",
+     "comando": null
+    },
+    {
+     "etapa": 13,
+     "nome": "Cruzar com as outras",
+     "quem": "auto",
+     "ok": true,
+     "estado": "16 temas classificados",
+     "comando": null
+    },
+    {
+     "etapa": 14,
+     "nome": "As portas da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "204 portas de busca · 1 leitura de captação",
+     "comando": null
+    },
+    {
+     "etapa": 16,
+     "nome": "O plano do franqueado",
+     "quem": "auto",
+     "ok": true,
+     "estado": "4 planos de loja",
+     "comando": null
+    },
+    {
+     "etapa": 17,
+     "nome": "Onde cada loja aparece",
+     "quem": "auto",
+     "ok": true,
+     "estado": "4 lojas medidas · 4 invisíveis",
+     "comando": null
+    },
+    {
+     "etapa": 17.5,
+     "nome": "E perto da própria loja?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "4 lojas medidas perto de si",
+     "comando": null
+    },
+    {
+     "etapa": 18,
+     "nome": "Quem anuncia aparelho",
+     "quem": "auto",
+     "ok": true,
+     "estado": "49 anunciantes de aparelho",
+     "comando": null
+    },
+    {
+     "etapa": 19,
+     "nome": "O histórico, não só o delta",
+     "quem": "auto",
+     "ok": true,
+     "estado": "4 lojas com as duas janelas",
+     "comando": null
+    },
+    {
+     "etapa": 20,
+     "nome": "A curva de procura",
+     "quem": "auto",
+     "ok": true,
+     "estado": "medida · sem curva publicável (não refazer)",
+     "comando": null
+    },
+    {
+     "etapa": 21,
+     "nome": "A jornada do paciente",
+     "quem": "auto",
+     "ok": true,
+     "estado": "4 lojas · 1 com dor concentrada",
+     "comando": null
+    },
+    {
+     "etapa": 22,
+     "nome": "O que o rival vende",
+     "quem": "auto",
+     "ok": true,
+     "estado": "A disputa desta cidade é por avaliação grátis — 20 dos 71 anúnci",
+     "comando": null
+    },
+    {
+     "etapa": 23,
+     "nome": "Imprensa e ritmo da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "31 matérias em 30 dias · 0 perfis vivos, 0 parados",
+     "comando": null
+    },
+    {
+     "etapa": 24,
+     "nome": "O ciclo da ação",
+     "quem": "auto",
+     "ok": true,
+     "estado": "11 arcos no livro · nenhum com 21 dias ainda",
+     "comando": null
+    }
+   ]
+  },
+  {
+   "praca_id": "sorocaba",
+   "rotulo": "SP · Sorocaba",
+   "tipo": "rede",
+   "feitas": 23,
+   "de": 23,
+   "completa": true,
+   "etapas": [
+    {
+     "etapa": 0,
+     "nome": "A praça definida",
+     "quem": "humano",
+     "ok": true,
+     "estado": "SP · Sorocaba · 17 locais",
+     "comando": null
+    },
+    {
+     "etapa": 0.5,
+     "nome": "A rede está lá?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 unidades próprias, 3 com ficha do Google identificada",
+     "comando": null
+    },
+    {
+     "etapa": 1,
+     "nome": "A cidade em números",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 município com população do IBGE",
+     "comando": null
+    },
+    {
+     "etapa": 2,
+     "nome": "Quem fala com a cidade",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "11 canais com handle (mínimo 8)",
+     "comando": null
+    },
+    {
+     "etapa": 3,
+     "nome": "Escutar a cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "33575 vozes (mínimo 1000) — 1513 avaliações com texto, 413 posts",
+     "comando": null
+    },
+    {
+     "etapa": 5,
+     "nome": "Varrer a categoria",
+     "quem": "auto",
+     "ok": true,
+     "estado": "143 clínicas varridas (mínimo 80)",
+     "comando": null
+    },
+    {
+     "etapa": 6,
+     "nome": "Ritmo e meses seguidos",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2027 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 7,
+     "nome": "A unidade por dentro",
+     "quem": "auto",
+     "ok": true,
+     "estado": "347 avaliações da unidade · 135 anúncios da praça",
+     "comando": null
+    },
+    {
+     "etapa": 9,
+     "nome": "A joia enterrada",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "54 matérias de imprensa (mínimo 20)",
+     "comando": null
+    },
+    {
+     "etapa": 10,
+     "nome": "O que não vamos ver",
+     "quem": "humano",
+     "ok": true,
+     "estado": "18 canais offline declarados (rádio, outdoor, escola…)",
+     "comando": null
+    },
+    {
+     "etapa": 11,
+     "nome": "A inteligência",
+     "quem": "humano",
+     "ok": true,
+     "estado": "completa",
+     "comando": null
+    },
+    {
+     "etapa": 13,
+     "nome": "Cruzar com as outras",
+     "quem": "auto",
+     "ok": true,
+     "estado": "16 temas classificados",
+     "comando": null
+    },
+    {
+     "etapa": 14,
+     "nome": "As portas da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "198 portas de busca · 2 leituras de captação",
+     "comando": null
+    },
+    {
+     "etapa": 16,
+     "nome": "O plano do franqueado",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 planos de loja",
+     "comando": null
+    },
+    {
+     "etapa": 17,
+     "nome": "Onde cada loja aparece",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 lojas medidas",
+     "comando": null
+    },
+    {
+     "etapa": 17.5,
+     "nome": "E perto da própria loja?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 lojas medidas perto de si",
+     "comando": null
+    },
+    {
+     "etapa": 18,
+     "nome": "Quem anuncia aparelho",
+     "quem": "auto",
+     "ok": true,
+     "estado": "20 anunciantes de aparelho",
+     "comando": null
+    },
+    {
+     "etapa": 19,
+     "nome": "O histórico, não só o delta",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 lojas com as duas janelas",
+     "comando": null
+    },
+    {
+     "etapa": 20,
+     "nome": "A curva de procura",
+     "quem": "auto",
+     "ok": true,
+     "estado": "medida · sem curva publicável (não refazer)",
+     "comando": null
+    },
+    {
+     "etapa": 21,
+     "nome": "A jornada do paciente",
+     "quem": "auto",
+     "ok": true,
+     "estado": "3 lojas · 2 com dor concentrada",
+     "comando": null
+    },
+    {
+     "etapa": 22,
+     "nome": "O que o rival vende",
+     "quem": "auto",
+     "ok": true,
+     "estado": "A disputa desta cidade é por alinhador invisível — 21 dos 67 anú",
+     "comando": null
+    },
+    {
+     "etapa": 23,
+     "nome": "Imprensa e ritmo da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "27 matérias em 30 dias · 26 perfis vivos, 10 parados",
+     "comando": null
+    },
+    {
+     "etapa": 24,
+     "nome": "O ciclo da ação",
+     "quem": "auto",
+     "ok": true,
+     "estado": "10 arcos no livro · nenhum com 21 dias ainda",
+     "comando": null
+    }
+   ]
+  },
+  {
+   "praca_id": "uberlandia",
+   "rotulo": "MG · Uberlândia",
+   "tipo": "rede",
+   "feitas": 23,
+   "de": 23,
+   "completa": true,
+   "etapas": [
+    {
+     "etapa": 0,
+     "nome": "A praça definida",
+     "quem": "humano",
+     "ok": true,
+     "estado": "MG · Uberlândia · 16 locais",
+     "comando": null
+    },
+    {
+     "etapa": 0.5,
+     "nome": "A rede está lá?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2 unidades próprias, 2 com ficha do Google identificada",
+     "comando": null
+    },
+    {
+     "etapa": 1,
+     "nome": "A cidade em números",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1 município com população do IBGE",
+     "comando": null
+    },
+    {
+     "etapa": 2,
+     "nome": "Quem fala com a cidade",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "12 canais com handle (mínimo 8)",
+     "comando": null
+    },
+    {
+     "etapa": 3,
+     "nome": "Escutar a cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1400 vozes (mínimo 1000) — 1400 avaliações com texto, 0 posts",
+     "comando": null
+    },
+    {
+     "etapa": 5,
+     "nome": "Varrer a categoria",
+     "quem": "auto",
+     "ok": true,
+     "estado": "161 clínicas varridas (mínimo 80)",
+     "comando": null
+    },
+    {
+     "etapa": 6,
+     "nome": "Ritmo e meses seguidos",
+     "quem": "auto",
+     "ok": true,
+     "estado": "1801 avaliações lidas (mínimo 800)",
+     "comando": null
+    },
+    {
+     "etapa": 7,
+     "nome": "A unidade por dentro",
+     "quem": "auto",
+     "ok": true,
+     "estado": "181 avaliações da unidade · 118 anúncios da praça",
+     "comando": null
+    },
+    {
+     "etapa": 9,
+     "nome": "A joia enterrada",
+     "quem": "auto+humano",
+     "ok": true,
+     "estado": "52 matérias de imprensa (mínimo 20)",
+     "comando": null
+    },
+    {
+     "etapa": 10,
+     "nome": "O que não vamos ver",
+     "quem": "humano",
+     "ok": true,
+     "estado": "9 canais offline declarados (rádio, outdoor, escola…)",
+     "comando": null
+    },
+    {
+     "etapa": 11,
+     "nome": "A inteligência",
+     "quem": "humano",
+     "ok": true,
+     "estado": "completa",
+     "comando": null
+    },
+    {
+     "etapa": 13,
+     "nome": "Cruzar com as outras",
+     "quem": "auto",
+     "ok": true,
+     "estado": "16 temas classificados",
+     "comando": null
+    },
+    {
+     "etapa": 14,
+     "nome": "As portas da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "166 portas de busca · 1 leitura de captação",
+     "comando": null
+    },
+    {
+     "etapa": 16,
+     "nome": "O plano do franqueado",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2 planos de loja",
+     "comando": null
+    },
+    {
+     "etapa": 17,
+     "nome": "Onde cada loja aparece",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2 lojas medidas · 1 invisível",
+     "comando": null
+    },
+    {
+     "etapa": 17.5,
+     "nome": "E perto da própria loja?",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2 lojas medidas perto de si · 1 não aparecem nem no próprio quarteirão",
+     "comando": null
+    },
+    {
+     "etapa": 18,
+     "nome": "Quem anuncia aparelho",
+     "quem": "auto",
+     "ok": true,
+     "estado": "11 anunciantes de aparelho",
+     "comando": null
+    },
+    {
+     "etapa": 19,
+     "nome": "O histórico, não só o delta",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2 lojas com as duas janelas",
+     "comando": null
+    },
+    {
+     "etapa": 20,
+     "nome": "A curva de procura",
+     "quem": "auto",
+     "ok": true,
+     "estado": "medida · sem curva publicável (não refazer)",
+     "comando": null
+    },
+    {
+     "etapa": 21,
+     "nome": "A jornada do paciente",
+     "quem": "auto",
+     "ok": true,
+     "estado": "2 lojas · 1 com dor concentrada",
+     "comando": null
+    },
+    {
+     "etapa": 22,
+     "nome": "O que o rival vende",
+     "quem": "auto",
+     "ok": true,
+     "estado": "A disputa desta cidade é por avaliação grátis — 8 dos 18 anúncio",
+     "comando": null
+    },
+    {
+     "etapa": 23,
+     "nome": "Imprensa e ritmo da cidade",
+     "quem": "auto",
+     "ok": true,
+     "estado": "23 matérias em 30 dias · 0 perfis vivos, 0 parados",
+     "comando": null
+    },
+    {
+     "etapa": 24,
+     "nome": "O ciclo da ação",
+     "quem": "auto",
+     "ok": true,
+     "estado": "14 arcos no livro · nenhum com 21 dias ainda",
      "comando": null
     }
    ]

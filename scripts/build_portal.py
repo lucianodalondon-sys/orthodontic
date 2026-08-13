@@ -1272,15 +1272,51 @@ def main():
             # a frase de abertura sai PRONTA daqui — o casco não redige
             "frase": None,
         }
+        # A APRESENTAÇÃO SE MONTA DO QUE EXISTE, não de um campo só.
+        #
+        # Ela dependia de `desde`, que vem do histórico de medições — e só
+        # 10 das 45 lojas têm histórico. As outras 35 abriam a página sem
+        # nenhuma frase, que é exatamente a abertura pobre que a página da
+        # clínica existe para consertar. Loja nova não tem histórico, mas
+        # tem endereço, bairro, vizinhança medida e irmãs na mesma cidade —
+        # e isso já apresenta a clínica. Cada pedaço entra só se tiver
+        # número por trás; nenhum é inventado.
+        _cid = (l.get("rotulo") or "a cidade").split(" · ")[-1]
+        _b = next(({"bairro": b["bairro"], "clinicas": b["clinicas"]}
+                   for b in ((_ba_por.get(l.get("praca_id")) or {}).get("bairros") or [])
+                   if lid in (b.get("nossas") or [])), None)
+        _pedacos = []
         if _apresentacao["desde"]:
+            _pedacos.append(
+                f"é escutada desde {_apresentacao['desde']}, em "
+                + conta(_apresentacao["medicoes"] or 0, "medição", "medições"))
+        elif _b:
+            # o nome da unidade já costuma trazer o bairro
+            # ("OrthoDontic · Rio Branco"): repetir vira "Rio Branco fica em
+            # Rio Branco", que é o tipo de frase que faz a tela parecer
+            # gerada por máquina — e ela é, mas não precisa parecer
+            _ja_diz = _sem_acento(_b["bairro"]) in _sem_acento(
+                _nome_da_loja(lid, "") or "")
+            _pedacos.append(
+                ("está entre as " if _ja_diz else
+                 f"fica em {_b['bairro']}, onde estão ")
+                + conta(_b["clinicas"], "clínica mapeada", "clínicas mapeadas")
+                + (f" de {_b['bairro']}" if _ja_diz else ""))
+        elif _apresentacao["endereco"]:
+            _pedacos.append(f"fica em {_cid}")
+        if _apresentacao["posicao_na_cidade"] and _apresentacao["clinicas_na_cidade"]:
+            _pedacos.append(
+                f"é a {_apresentacao['posicao_na_cidade']}ª em avaliações "
+                f"entre as {_apresentacao['clinicas_na_cidade']} clínicas "
+                f"acompanhadas na cidade")
+        if _irmas:
+            _pedacos.append(f"divide {_cid} com mais "
+                            + conta(len(_irmas), "loja", "lojas") + " da rede")
+        if _pedacos:
             _apresentacao["frase"] = (
-                f"{_nome_da_loja(lid, l.get('rotulo'))} é escutada desde "
-                f"{_data(_hist.get('desde'))}, em "
-                + conta(_apresentacao["medicoes"] or 0, "medição", "medições")
-                + (f", e divide {l.get('rotulo','a cidade').split(' · ')[-1]} "
-                   + f"com mais {conta(len(_irmas), 'loja')} da rede"
-                   if _irmas else "")
-                + ".")
+                _nome_da_loja(lid, l.get("rotulo")) + " "
+                + ", ".join(_pedacos[:-1])
+                + (" e " if len(_pedacos) > 1 else "") + _pedacos[-1] + ".")
         escritos.append(escreve(f"clinicas/{lid}", {
             "local_id": lid, "praca_id": l.get("praca_id"),
             "apresentacao": _apresentacao,
