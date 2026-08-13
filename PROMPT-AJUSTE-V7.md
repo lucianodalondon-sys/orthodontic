@@ -355,3 +355,225 @@ tem **373** — e o portal mostra 373 porque conta o que está no arquivo. Os
 dois números não brigam: um é slide de agosto, o outro é a leitura de
 hoje. Só não copie o 374 para dentro do portal: **na tela, número vem
 sempre do payload.**
+
+---
+
+# Parte 3 — o portal deixa de ter 23 ferramentas e passa a ter 6 capacidades
+
+Esta parte é a maior das três, e ela **reduz** o portal em vez de aumentar.
+Nenhuma tela é apagada: o que muda é o que ganha protagonismo e o que passa
+a viver dentro de outra coisa.
+
+## 9 · A regra que vale para o portal inteiro
+
+> **Toda ferramenta termina respondendo cinco coisas:**
+> **O que aconteceu? → Por que importa? → Quem precisa agir? → O que
+> fazer? → Como encaminho isso?**
+>
+> Se não chega até a quinta, não é ferramenta: é dado, evidência ou
+> detalhe de outra — e o lugar dela é dentro dessa outra, não no menu.
+
+Isso agora existe no payload como um objeto só, e **todo cartão importante
+tem exatamente estes campos**:
+
+```json
+{
+  "insight_id": "agenda-3f2a91c4",
+  "titulo": "Religar a rotina de pedido de avaliação",
+  "onde": "SC · Joinville · América",
+  "fato": "O contador de avaliações parou: 2 meses seguidos…",
+  "por_que_importa": "esta unidade está na faixa vermelha…",
+  "quem_age": "franqueado",
+  "quem_age_rotulo": "Franqueado da unidade",
+  "acao": "Religar a rotina de pedido de avaliação no fim do atendimento",
+  "o_que_perguntar": "mudou alguma coisa na rotina…?",
+  "nao_faca": "não contratar mídia para corrigir isto…",
+  "revisar_em_dias": 14,
+  "gravidade": "alta",
+  "evidencias": [ {"o_que": "...", "texto": "..."} ],
+  "carimbo": { … natureza, confiança, amostra, procedência … },
+  "link": "clinicas/ortho_joi_america",
+  "encaminhamento": { … }
+}
+```
+
+### 9.1 · O cartão, desenhado
+
+```
+┌────────────────────────────────────────────────────────────┐
+│ ● alta            SC · Joinville · América                 │
+│ Religar a rotina de pedido de avaliação                    │
+│                                                            │
+│ FATO           O contador de avaliações parou: 2 meses…    │  ← ciano
+│ POR QUE IMPORTA  está na faixa vermelha da fila…           │  ← cinza
+│ AÇÃO           Religar a rotina no fim do atendimento      │  ← verde-água
+│ NÃO FAÇA       não contratar mídia para corrigir isto      │  ← vermelho fraco
+│ PARA           Franqueado da unidade         revisar em 14d│
+│                                                            │
+│ [ ver clínica ]                          [ ENCAMINHAR ▾ ]  │
+└────────────────────────────────────────────────────────────┘
+```
+
+Os rótulos `FATO`, `POR QUE IMPORTA`, `AÇÃO`, `PARA` são mono maiúsculo
+espaçado (a linguagem da apresentação). A cor não é decoração: **fato é
+medido, ação é recomendação**, e o carimbo do payload diz qual é qual.
+
+### 9.2 · O botão ENCAMINHAR
+
+Existe em todo cartão de insight. Ao clicar, abre:
+
+    Encaminhar para
+    ○ Franqueadora · diretoria      ○ Marketing e agência
+    ○ Consultor de campo            ○ Operações
+    ○ Franqueado da unidade         ○ Expansão e comercial
+    ─────────────────────────────────────────────────────
+    [ copiar ]   [ WhatsApp ]   [ e-mail ]   [ copiar link ]
+
+**O texto já vem pronto no payload**, um por destinatário, em
+`encaminhamento.texto.<publico>`. Não gere texto na tela, não chame API
+nenhuma. O destinatário sugerido vem em `encaminhamento.recomendado` —
+deixe-o pré-selecionado.
+
+O mesmo insight muda de abertura conforme o destinatário: *"Padrão
+observado na rede:"* para a diretoria, *"Para a próxima visita:"* para o
+consultor, *"Ponto de atenção na presença pública da sua unidade:"* para o
+franqueado. O corpo é o mesmo fato, a mesma evidência e a mesma ação.
+
+**O que ele NÃO é:** o portal não guarda para quem foi mandado, quem leu
+nem quem executou. Encaminhar é copiar um texto. Não desenhe estado de
+"enviado", "lido" ou "concluído" — isso seria inventar dado interno, que é
+justamente o que este produto não tem e não vai ter.
+
+---
+
+## 10 · As seis capacidades
+
+O menu continua com sete itens. O que muda é o que cada um é.
+
+| # | capacidade | payload | onde vive |
+|---|---|---|---|
+| 1 | **Inteligência da rede** (a home) | `inteligencia_da_rede.json` | PAINEL |
+| 2 | **Agenda do consultor** | `agenda.json` | dentro do PAINEL |
+| 3 | **O que a rede ensina** | `rede_aprende.json` | seção própria |
+| 4 | **Gêmeos e anomalias** | `gemeos.json` · `anomalias.json` | CLÍNICAS |
+| 5 | **Playbook competitivo** | `playbook.json` | seção própria |
+| 6 | **Radar de expansão** | `radar.json` · `funil_nacional.json` | RADAR |
+
+### 10.1 · A home vira INTELIGÊNCIA DA REDE
+
+O título **PAINEL DE CONTROLE** sai. Entra:
+
+    INTELIGÊNCIA DA REDE
+    O que a OrthoDontic precisa saber esta semana
+
+E abaixo, **cinco blocos e no máximo doze cartões** — o payload já vem
+cortado nesse teto:
+
+    3  O QUE A REDE APRENDEU        o que sabemos hoje que não sabíamos antes?
+    5  ONDE INTERVIR ESTA SEMANA    qual unidade não pode esperar?
+    1  O QUE O CONCORRENTE MEXEU    o que mudou na rua desde a última medição?
+    3  O QUE DÁ PARA TESTAR         onde há espaço que ninguém está ocupando?
+    2  ONDE CRESCER                 que cidade merece estudo antes das outras?
+
+`blocos[].quantos` e `blocos[].pergunta` vêm prontos. Bloco vazio **não
+some**: ele mostra `vazio_porque`.
+
+**Nenhum cartão da home repete uma ferramenta.** Cada um é um cruzamento —
+por isso a home e a página da clínica deixam de parecer a mesma coisa.
+
+### 10.2 · Agenda do consultor
+
+`agenda.json` → `esta_semana` (máx. 6), com `frase_ver_todas` pronta.
+
+Cada linha tem: `o_que_vimos`, `o_que_conversar`, `leve[]` (as evidências
+medidas para levar na visita), `nao_faca`, `revisar_em_dias`, e o
+`insight` completo com encaminhamento. Desenhe na ordem em que a conversa
+acontece — é uma pauta, não um ranking.
+
+### 10.3 · O que a rede ensina
+
+`rede_aprende.json` → `niveis[]` e `descobertas[]`. Quatro faixas, nesta
+ordem, com a cor semântica:
+
+    🟢 CONFIRMADO NA REDE        (6)   ciano/verde
+    🟡 PADRÃO GANHANDO FORÇA     (2)   amarelo
+    ⚪ HIPÓTESE EM TESTE         (7)   cinza
+    🔴 DERRUBADO PELO DADO       (2)   vermelho
+
+O nível **derrubado** é o que dá crédito aos outros três — desenhe-o com o
+mesmo peso, não escondido no fim. Cada descoberta traz `placar` ("23/23"),
+`porque_neste_nivel`, `evidencias[]`, e as confirmadas trazem
+`o_que_significa` + `decisao_sugerida` + `carimbo_da_decisao`.
+
+**A decisão é recomendação, o placar é fato.** Nunca desenhe os dois com a
+mesma cor.
+
+### 10.4 · Gêmeos e anomalias, dentro de CLÍNICAS
+
+Na página da clínica, um bloco novo:
+
+    MAIS PARECIDA COM ESTA
+    SP · Sorocaba · Jardim Faculdade      distância 0,09 · 4 de 4 eixos
+    cidades de 661 mil e 762 mil habitantes · 22 e 17 clínicas medidas
+
+    O QUE AS SEPARA
+    avaliações por mês         2,8 aqui contra 1,0 lá
+    buscas perto da loja       4 de 5 aqui contra 2 de 5 lá
+    avaliações já respondidas  29% aqui contra 85% lá
+
+E na rede, `anomalias.json` com duas listas: `anomalias_negativas`
+("deveria estar melhor") e `fora_da_curva` ("está fazendo algo que
+precisamos entender"). A segunda é a mais valiosa — é boa prática
+escondida na rede.
+
+### 10.5 · Playbook competitivo
+
+`playbook.json`. **Duas metades, e a segunda é obrigatória:**
+`o_que_os_vencedores_fazem` e **`testamos_e_nao_explicou`**. Uma lista só
+com o que funciona é palestra; uma que mostra o que foi testado e não
+separou nada é medição.
+
+Quando não há base (`base_suficiente: false`), a tela mostra o **funil**
+`funil_ate_a_comparacao` e o texto de `porque_sem_comparacao` — 271
+concorrentes medidos → 46 disputam aparelho → 16 com ritmo comparável →
+12 com texto suficiente. Isso é conteúdo, não erro.
+
+A parte que sempre tem base é `o_que_o_mercado_anuncia` (avaliação grátis
+em 21 de 23 praças, alinhador em 20) e `posicoes_vagas`.
+
+---
+
+## 11 · O que sai do protagonismo
+
+Nada é apagado. Estas telas passam a viver **dentro** de outra:
+
+| tela | passa a viver em |
+|---|---|
+| busca perto da clínica | Encontrabilidade, na página da clínica |
+| timeline | página da clínica |
+| voz da cidade | página da praça |
+| busca da cidade | praça + clínica |
+| fichas das unidades | problemas → Alertas; ficha completa → clínica |
+| canais e território | praça |
+| rival | Playbook competitivo |
+| anúncios | Playbook competitivo |
+| achados | O que a rede ensina |
+| funil nacional | primeira fase do Radar |
+| sazonalidade | sai da navegação — foi medida e não sustentou uso |
+| evidências | drawer "ver evidências" dentro de qualquer insight |
+
+E o **ARQUIVO** fica discreto: método, fontes, séries e estados vazios
+continuam existindo — é o que dá confiança —, mas o executivo não abre o
+portal para isso. Dentro de cada ferramenta, `ⓘ ver método` e `ver
+evidências` bastam.
+
+---
+
+## 12 · O que NÃO fazer nesta rodada
+
+- **Não** crie item novo no menu. Continuam sendo sete.
+- **Não** gere texto de encaminhamento na tela: ele vem pronto.
+- **Não** desenhe estado de envio, leitura ou execução.
+- **Não** invente orçamento, retorno financeiro ou prazo que não esteja no
+  payload.
+- **Não** conte nada na tela. Todo número, plural e frase vêm prontos.
