@@ -151,8 +151,13 @@ def main():
                     # "o raio não é área de captação" é exatamente a
                     # ressalva que queremos na tela; acusá-la faria o lint
                     # empurrar o texto para o lado errado.
-                    if m and re.search(r"\bn[ãa]o\s+(é|e|mede|significa|quer)\b",
-                                       txt[max(0, m.start()-46):m.start()+8], re.I):
+                    # "o portal não sabe se a ação foi executada" é a
+                    # ressalva certa, e a primeira versão desta janela
+                    # acusava justamente ela.
+                    if m and re.search(
+                            r"\bn[ãa]o\s+(é|e|mede|significa|quer|sabe|"
+                            r"prova|confirma|garante)\b|\bningu[ée]m\b",
+                            txt[max(0, m.start()-56):m.start()+8], re.I):
                         continue
                     if m:
                         achados.append((nome, rel, caminho, m.group(0)[:44],

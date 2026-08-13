@@ -1,976 +1,989 @@
 {
-  "corte": "2026-08-13",
-  "gerado_em": "2026-08-13T18:04:35",
-  "rede": {
-    "unidades": 373,
-    "abertas": 350,
-    "em_implantacao": 23,
-    "cidades": 303,
-    "ufs_com_unidade": 23,
-    "ufs_sem_unidade": [
-      "AC",
-      "AP",
-      "MA",
-      "RN"
-    ],
-    "ufs_sem_unidade_total": 4,
-    "medido_em": "2026-08-13",
-    "fonte": "orthodonticbrasil.com.br/encontre-uma-unidade"
-  },
-  "cobertura": {
-    "_nota": "Este bloco NÃO é mais a fonte de 'ouvidas' e 'total'. Os dois saem do dado em build_portal.py (praças com avaliação lida, e unidades na lista oficial da rede). Ficaram escritos à mão aqui por quatro semanas dizendo 4 de 340, enquanto a mesma tela já mostrava 374 unidades ao lado. Não volte a escrever número aqui.",
-    "unidades_total": 373,
-    "unidades_acompanhadas": 45,
-    "pracas_da_rede_estudadas": 17,
-    "cidades_de_oportunidade_estudadas": 6,
-    "aviso": "As leituras de rede valem para as 45 unidades acompanhadas, em 17 praças — não para as 373. As 6 cidades de oportunidade são estudo de expansão e não entram em nenhuma conta da rede."
-  },
-  "movimentos_prioritarios": {
-    "o_que_e": "o que se moveu no mercado desde a última medição comparável, só o que muda decisão",
-    "eventos": [
-      {
-        "evento_id": "curitiba|concorrente_acelerou|ChIJHc8bA-jv3JQR38D6NMsdEq8",
-        "data": "2026-08-13",
-        "praca_id": "curitiba",
-        "rotulo": "PR · Curitiba",
-        "local_id": null,
-        "entidade_id": "ChIJHc8bA-jv3JQR38D6NMsdEq8",
-        "tipo": "concorrente_acelerou",
-        "natureza": "fato",
-        "severidade": "alta",
-        "titulo": "Dra. Vladja Torno | Facetas em Resina Composta em Curitiba acelerou",
-        "fato": "ganhou 15 avaliações entre 2026-08-12 e 2026-08-13 — de 662 para 677",
-        "por_que_importa": "rival de aparelho ganhando atenção no mesmo mercado",
-        "decisao": "ver o que ele está publicando e anunciando",
-        "fonte": "dados/serie/categoria.jsonl",
-        "evidencia": {
-          "place_id": "ChIJHc8bA-jv3JQR38D6NMsdEq8",
-          "antes": 662,
-          "agora": 677
-        },
-        "confianca": {
-          "natureza": "fato",
-          "confianca": "alta",
-          "medido": true,
-          "amostra": 677,
-          "janela_dias": 1,
-          "medicoes": 2,
-          "fonte": "dados/serie/categoria.jsonl (2026-08-12 → 2026-08-13)",
-          "a_favor": [
-            "19 clínicas medidas nas duas rodadas"
-          ],
-          "contra": [],
-          "o_que_aumentaria": null,
-          "procedencia": "medido em 677 avaliações nesta clínica, 2 medições, 1 dia de janela"
-        }
-      }
-    ],
-    "total_no_periodo": 37,
-    "pracas_sem_delta": [
-      "RS · Caxias do Sul",
-      "SC · Florianópolis",
-      "RJ · Rio de Janeiro",
-      "SP · São Paulo",
-      "MG · Uberlândia"
-    ],
-    "titulo_sem_delta": "Ainda não dá para comparar",
-    "porque_algumas_nao_aparecem": "estas praças foram medidas pela primeira vez nesta rodada. Movimento precisa de duas medições — a primeira só cria a linha de base. Elas aparecem no próximo ciclo, e isso é diferente de 'não mudou'."
-  },
-  "abertura": {
-    "sobrelinha": "SALA DE CONTROLE · REDE NACIONAL",
-    "titulo": "A inteligência que faz cada clínica crescer.",
-    "sublinha": "45 unidades escutadas de perto, em 17 cidades estudadas por inteiro — e, para cada uma, o que fazer nesta semana.",
-    "escopo": "As leituras valem para estas 45 unidades, não para as 373 da rede. As 6 cidades de oportunidade são estudo de expansão e não entram em nenhuma conta da rede."
-  },
-  "mapa": [
-    {
-      "uf": "AC",
-      "unidades": 0,
-      "abertas": 0,
-      "em_implantacao": 0,
-      "cidades": 0,
-      "pracas_medidas": 0,
-      "acompanhadas": 0,
-      "em_faixa_vermelha": 0,
-      "em_faixa_amarela": 0,
-      "alertas_graves": 0,
-      "tom": "sem_unidade",
-      "motivo": "0 unidades · sem unidade"
-    },
-    {
-      "uf": "AL",
-      "unidades": 1,
-      "abertas": 1,
-      "em_implantacao": 0,
-      "cidades": 1,
-      "pracas_medidas": 0,
-      "acompanhadas": 0,
-      "em_faixa_vermelha": 0,
-      "em_faixa_amarela": 0,
-      "alertas_graves": 0,
-      "tom": "sem_escuta",
-      "motivo": "1 unidade · ainda sem escuta"
-    },
-    {
-      "uf": "AP",
-      "unidades": 0,
-      "abertas": 0,
-      "em_implantacao": 0,
-      "cidades": 0,
-      "pracas_medidas": 0,
-      "acompanhadas": 0,
-      "em_faixa_vermelha": 0,
-      "em_faixa_amarela": 0,
-      "alertas_graves": 0,
-      "tom": "sem_unidade",
-      "motivo": "0 unidades · sem unidade"
-    },
-    {
-      "uf": "AM",
-      "unidades": 2,
-      "abertas": 2,
-      "em_implantacao": 0,
-      "cidades": 1,
-      "pracas_medidas": 0,
-      "acompanhadas": 0,
-      "em_faixa_vermelha": 0,
-      "em_faixa_amarela": 0,
-      "alertas_graves": 0,
-      "tom": "sem_escuta",
-      "motivo": "2 unidades · ainda sem escuta"
-    },
-    {
-      "uf": "BA",
-      "unidades": 21,
-      "abertas": 20,
-      "em_implantacao": 1,
-      "cidades": 19,
-      "pracas_medidas": 1,
-      "acompanhadas": 1,
-      "em_faixa_vermelha": 0,
-      "em_faixa_amarela": 1,
-      "alertas_graves": 2,
-      "tom": "crit",
-      "motivo": "1 em faixa amarela · 2 alertas graves na ficha do Google"
-    },
-    {
-      "uf": "CE",
-      "unidades": 2,
-      "abertas": 2,
-      "em_implantacao": 0,
-      "cidades": 1,
-      "pracas_medidas": 0,
-      "acompanhadas": 0,
-      "em_faixa_vermelha": 0,
-      "em_faixa_amarela": 0,
-      "alertas_graves": 0,
-      "tom": "sem_escuta",
-      "motivo": "2 unidades · ainda sem escuta"
-    },
-    {
-      "uf": "DF",
-      "unidades": 13,
-      "abertas": 12,
-      "em_implantacao": 1,
-      "cidades": 13,
-      "pracas_medidas": 0,
-      "acompanhadas": 0,
-      "em_faixa_vermelha": 0,
-      "em_faixa_amarela": 0,
-      "alertas_graves": 0,
-      "tom": "sem_escuta",
-      "motivo": "13 unidades · ainda sem escuta"
-    },
-    {
-      "uf": "ES",
-      "unidades": 5,
-      "abertas": 5,
-      "em_implantacao": 0,
-      "cidades": 5,
-      "pracas_medidas": 0,
-      "acompanhadas": 0,
-      "em_faixa_vermelha": 0,
-      "em_faixa_amarela": 0,
-      "alertas_graves": 0,
-      "tom": "sem_escuta",
-      "motivo": "5 unidades · ainda sem escuta"
-    },
-    {
-      "uf": "GO",
-      "unidades": 23,
-      "abertas": 21,
-      "em_implantacao": 2,
-      "cidades": 17,
-      "pracas_medidas": 1,
-      "acompanhadas": 4,
-      "em_faixa_vermelha": 1,
-      "em_faixa_amarela": 2,
-      "alertas_graves": 0,
-      "tom": "crit",
-      "motivo": "1 em faixa vermelha · 2 em faixa amarela"
-    },
-    {
-      "uf": "MA",
-      "unidades": 0,
-      "abertas": 0,
-      "em_implantacao": 0,
-      "cidades": 0,
-      "pracas_medidas": 0,
-      "acompanhadas": 0,
-      "em_faixa_vermelha": 0,
-      "em_faixa_amarela": 0,
-      "alertas_graves": 0,
-      "tom": "sem_unidade",
-      "motivo": "0 unidades · sem unidade"
-    },
-    {
-      "uf": "MT",
-      "unidades": 9,
-      "abertas": 9,
-      "em_implantacao": 0,
-      "cidades": 7,
-      "pracas_medidas": 1,
-      "acompanhadas": 3,
-      "em_faixa_vermelha": 0,
-      "em_faixa_amarela": 2,
-      "alertas_graves": 0,
-      "tom": "warn",
-      "motivo": "2 em faixa amarela"
-    },
-    {
-      "uf": "MS",
-      "unidades": 4,
-      "abertas": 4,
-      "em_implantacao": 0,
-      "cidades": 3,
-      "pracas_medidas": 0,
-      "acompanhadas": 0,
-      "em_faixa_vermelha": 0,
-      "em_faixa_amarela": 0,
-      "alertas_graves": 1,
-      "tom": "crit",
-      "motivo": "1 alerta grave na ficha do Google"
-    },
-    {
-      "uf": "MG",
-      "unidades": 37,
-      "abertas": 34,
-      "em_implantacao": 3,
-      "cidades": 32,
-      "pracas_medidas": 2,
-      "acompanhadas": 3,
-      "em_faixa_vermelha": 2,
-      "em_faixa_amarela": 0,
-      "alertas_graves": 1,
-      "tom": "crit",
-      "motivo": "2 em faixa vermelha · 1 alerta grave na ficha do Google"
-    },
-    {
-      "uf": "PA",
-      "unidades": 2,
-      "abertas": 2,
-      "em_implantacao": 0,
-      "cidades": 1,
-      "pracas_medidas": 0,
-      "acompanhadas": 0,
-      "em_faixa_vermelha": 0,
-      "em_faixa_amarela": 0,
-      "alertas_graves": 0,
-      "tom": "sem_escuta",
-      "motivo": "2 unidades · ainda sem escuta"
-    },
-    {
-      "uf": "PB",
-      "unidades": 2,
-      "abertas": 2,
-      "em_implantacao": 0,
-      "cidades": 2,
-      "pracas_medidas": 0,
-      "acompanhadas": 0,
-      "em_faixa_vermelha": 0,
-      "em_faixa_amarela": 0,
-      "alertas_graves": 0,
-      "tom": "sem_escuta",
-      "motivo": "2 unidades · ainda sem escuta"
-    },
-    {
-      "uf": "PR",
-      "unidades": 57,
-      "abertas": 55,
-      "em_implantacao": 2,
-      "cidades": 43,
-      "pracas_medidas": 3,
-      "acompanhadas": 7,
-      "em_faixa_vermelha": 3,
-      "em_faixa_amarela": 1,
-      "alertas_graves": 0,
-      "tom": "crit",
-      "motivo": "3 em faixa vermelha · 1 em faixa amarela"
-    },
-    {
-      "uf": "PE",
-      "unidades": 3,
-      "abertas": 3,
-      "em_implantacao": 0,
-      "cidades": 2,
-      "pracas_medidas": 0,
-      "acompanhadas": 0,
-      "em_faixa_vermelha": 0,
-      "em_faixa_amarela": 0,
-      "alertas_graves": 0,
-      "tom": "sem_escuta",
-      "motivo": "3 unidades · ainda sem escuta"
-    },
-    {
-      "uf": "PI",
-      "unidades": 2,
-      "abertas": 2,
-      "em_implantacao": 0,
-      "cidades": 1,
-      "pracas_medidas": 0,
-      "acompanhadas": 0,
-      "em_faixa_vermelha": 0,
-      "em_faixa_amarela": 0,
-      "alertas_graves": 0,
-      "tom": "sem_escuta",
-      "motivo": "2 unidades · ainda sem escuta"
-    },
-    {
-      "uf": "RJ",
-      "unidades": 5,
-      "abertas": 5,
-      "em_implantacao": 0,
-      "cidades": 3,
-      "pracas_medidas": 1,
-      "acompanhadas": 1,
-      "em_faixa_vermelha": 0,
-      "em_faixa_amarela": 0,
-      "alertas_graves": 0,
-      "tom": "ok",
-      "motivo": "5 unidades · ainda sem escuta"
-    },
-    {
-      "uf": "RN",
-      "unidades": 0,
-      "abertas": 0,
-      "em_implantacao": 0,
-      "cidades": 0,
-      "pracas_medidas": 0,
-      "acompanhadas": 0,
-      "em_faixa_vermelha": 0,
-      "em_faixa_amarela": 0,
-      "alertas_graves": 0,
-      "tom": "sem_unidade",
-      "motivo": "0 unidades · sem unidade"
-    },
-    {
-      "uf": "RS",
-      "unidades": 52,
-      "abertas": 49,
-      "em_implantacao": 3,
-      "cidades": 39,
-      "pracas_medidas": 2,
-      "acompanhadas": 10,
-      "em_faixa_vermelha": 3,
-      "em_faixa_amarela": 5,
-      "alertas_graves": 0,
-      "tom": "crit",
-      "motivo": "3 em faixa vermelha · 5 em faixa amarela"
-    },
-    {
-      "uf": "RO",
-      "unidades": 2,
-      "abertas": 2,
-      "em_implantacao": 0,
-      "cidades": 2,
-      "pracas_medidas": 0,
-      "acompanhadas": 0,
-      "em_faixa_vermelha": 0,
-      "em_faixa_amarela": 0,
-      "alertas_graves": 0,
-      "tom": "sem_escuta",
-      "motivo": "2 unidades · ainda sem escuta"
-    },
-    {
-      "uf": "RR",
-      "unidades": 1,
-      "abertas": 1,
-      "em_implantacao": 0,
-      "cidades": 1,
-      "pracas_medidas": 0,
-      "acompanhadas": 0,
-      "em_faixa_vermelha": 0,
-      "em_faixa_amarela": 0,
-      "alertas_graves": 0,
-      "tom": "sem_escuta",
-      "motivo": "1 unidade · ainda sem escuta"
-    },
-    {
-      "uf": "SC",
-      "unidades": 50,
-      "abertas": 47,
-      "em_implantacao": 3,
-      "cidades": 43,
-      "pracas_medidas": 3,
-      "acompanhadas": 7,
-      "em_faixa_vermelha": 2,
-      "em_faixa_amarela": 5,
-      "alertas_graves": 0,
-      "tom": "crit",
-      "motivo": "2 em faixa vermelha · 5 em faixa amarela"
-    },
-    {
-      "uf": "SP",
-      "unidades": 78,
-      "abertas": 71,
-      "em_implantacao": 7,
-      "cidades": 65,
-      "pracas_medidas": 3,
-      "acompanhadas": 8,
-      "em_faixa_vermelha": 2,
-      "em_faixa_amarela": 4,
-      "alertas_graves": 5,
-      "tom": "crit",
-      "motivo": "2 em faixa vermelha · 4 em faixa amarela · 5 alertas graves na ficha do Google"
-    },
-    {
-      "uf": "SE",
-      "unidades": 1,
-      "abertas": 0,
-      "em_implantacao": 1,
-      "cidades": 1,
-      "pracas_medidas": 0,
-      "acompanhadas": 0,
-      "em_faixa_vermelha": 0,
-      "em_faixa_amarela": 0,
-      "alertas_graves": 0,
-      "tom": "sem_escuta",
-      "motivo": "1 unidade · ainda sem escuta"
-    },
-    {
-      "uf": "TO",
-      "unidades": 1,
-      "abertas": 1,
-      "em_implantacao": 0,
-      "cidades": 1,
-      "pracas_medidas": 1,
-      "acompanhadas": 1,
-      "em_faixa_vermelha": 0,
-      "em_faixa_amarela": 0,
-      "alertas_graves": 0,
-      "tom": "ok",
-      "motivo": "1 unidade · ainda sem escuta"
-    }
+ "corte": "2026-08-13",
+ "gerado_em": "2026-08-13T18:04:35",
+ "rede": {
+  "unidades": 373,
+  "abertas": 350,
+  "em_implantacao": 23,
+  "cidades": 303,
+  "ufs_com_unidade": 23,
+  "ufs_sem_unidade": [
+   "AC",
+   "AP",
+   "MA",
+   "RN"
   ],
-  "mapa_legenda": [
-    {
-      "tom": "crit",
-      "o_que_e": "unidade em faixa vermelha ou alerta grave na ficha"
+  "ufs_sem_unidade_total": 4,
+  "medido_em": "2026-08-13",
+  "fonte": "orthodonticbrasil.com.br/encontre-uma-unidade"
+ },
+ "cobertura": {
+  "_nota": "Este bloco NÃO é mais a fonte de 'ouvidas' e 'total'. Os dois saem do dado em build_portal.py (praças com avaliação lida, e unidades na lista oficial da rede). Ficaram escritos à mão aqui por quatro semanas dizendo 4 de 340, enquanto a mesma tela já mostrava 374 unidades ao lado. Não volte a escrever número aqui.",
+  "unidades_total": 373,
+  "unidades_acompanhadas": 45,
+  "pracas_da_rede_estudadas": 17,
+  "cidades_de_oportunidade_estudadas": 6,
+  "aviso": "As leituras de rede valem para as 45 unidades acompanhadas, em 17 praças — não para as 373. As 6 cidades de oportunidade são estudo de expansão e não entram em nenhuma conta da rede."
+ },
+ "movimentos_prioritarios": {
+  "o_que_e": "o que se moveu no mercado desde a última medição comparável, só o que muda decisão",
+  "eventos": [
+   {
+    "evento_id": "curitiba|concorrente_acelerou|ChIJHc8bA-jv3JQR38D6NMsdEq8",
+    "data": "2026-08-13",
+    "praca_id": "curitiba",
+    "rotulo": "PR · Curitiba",
+    "local_id": null,
+    "entidade_id": "ChIJHc8bA-jv3JQR38D6NMsdEq8",
+    "tipo": "concorrente_acelerou",
+    "natureza": "fato",
+    "severidade": "alta",
+    "titulo": "Dra. Vladja Torno | Facetas em Resina Composta em Curitiba acelerou",
+    "fato": "ganhou 15 avaliações entre 2026-08-12 e 2026-08-13 — de 662 para 677",
+    "por_que_importa": "rival de aparelho ganhando atenção no mesmo mercado",
+    "decisao": "ver o que ele está publicando e anunciando",
+    "fonte": "dados/serie/categoria.jsonl",
+    "evidencia": {
+     "place_id": "ChIJHc8bA-jv3JQR38D6NMsdEq8",
+     "antes": 662,
+     "agora": 677
     },
-    {
-      "tom": "warn",
-      "o_que_e": "unidade em faixa amarela"
-    },
-    {
-      "tom": "ok",
-      "o_que_e": "acompanhada, sem alerta aberto"
-    },
-    {
-      "tom": "sem_escuta",
-      "o_que_e": "tem unidade, ainda não é medida"
-    },
-    {
-      "tom": "sem_unidade",
-      "o_que_e": "a rede não está no estado"
+    "confianca": {
+     "natureza": "fato",
+     "confianca": "alta",
+     "medido": true,
+     "amostra": 677,
+     "janela_dias": 1,
+     "medicoes": 2,
+     "fonte": "dados/serie/categoria.jsonl (2026-08-12 → 2026-08-13)",
+     "a_favor": [
+      "19 clínicas medidas nas duas rodadas"
+     ],
+     "contra": [],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 677 avaliações nesta clínica, 2 medições, 1 dia de janela"
     }
+   }
   ],
-  "tiras_do_inicio": [
-    {
-      "numero": 13,
-      "tom": "crit",
-      "rotulo": "unidades em faixa vermelha"
-    },
-    {
-      "numero": 0,
-      "tom": "warn",
-      "rotulo": "tarefas fora do prazo"
-    },
-    {
-      "numero": 399,
-      "tom": "marca",
-      "rotulo": "avaliações esperando resposta"
-    },
-    {
-      "numero": 9,
-      "tom": "bad",
-      "rotulo": "alertas graves nas fichas da rede"
-    }
+  "total_no_periodo": 37,
+  "pracas_sem_delta": [
+   "RS · Caxias do Sul",
+   "SC · Florianópolis",
+   "RJ · Rio de Janeiro",
+   "SP · São Paulo",
+   "MG · Uberlândia"
   ],
-  "agora": {
-    "pergunta": "Em quais unidades a OrthoDontic está perdendo atenção local, para qual concorrente, e onde intervir primeiro neste mês?",
-    "manchete": "13 de 45 unidades medidas estão em faixa vermelha. A primeira é SC · Joinville.",
-    "em_risco": 13,
-    "unidades": 45,
-    "o_que_e_atencao": "participação observável em busca, avaliações, publicidade e atividade digital. Não é faturamento — nenhum número desta tela vem de dado interno da rede.",
-    "primeiras": [
-      {
-        "pos": 1,
-        "rotulo": "SC · Joinville",
-        "unidade_curta": "· América",
-        "urgencia": 90,
-        "faixa": "vermelha",
-        "quem_avanca": {
-          "nome": "Odonto e Você",
-          "ritmo": 4.9,
-          "meses": 14,
-          "nota": 4.9,
-          "posicao": 5
-        },
-        "acao": {
-          "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
-          "prazo": "14 dias",
-          "dono": "franqueado",
-          "custo": "sem custo de mídia",
-          "por_causa_de": "parada"
-        }
-      },
-      {
-        "pos": 2,
-        "rotulo": "SP · São Paulo",
-        "unidade_curta": "· República",
-        "urgencia": 80,
-        "faixa": "vermelha",
-        "quem_avanca": null,
-        "acao": {
-          "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
-          "prazo": "14 dias",
-          "dono": "franqueado",
-          "custo": "sem custo de mídia",
-          "por_causa_de": "parada"
-        }
-      },
-      {
-        "pos": 3,
-        "rotulo": "SP · Sorocaba",
-        "unidade_curta": "· Jardim Faculdade",
-        "urgencia": 80,
-        "faixa": "vermelha",
-        "quem_avanca": null,
-        "acao": {
-          "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
-          "prazo": "14 dias",
-          "dono": "franqueado",
-          "custo": "sem custo de mídia",
-          "por_causa_de": "parada"
-        }
-      }
-    ],
-    "tela": "fila"
+  "titulo_sem_delta": "Ainda não dá para comparar",
+  "porque_algumas_nao_aparecem": "estas praças foram medidas pela primeira vez nesta rodada. Movimento precisa de duas medições — a primeira só cria a linha de base. Elas aparecem no próximo ciclo, e isso é diferente de 'não mudou'."
+ },
+ "abertura": {
+  "sobrelinha": "SALA DE CONTROLE · REDE NACIONAL",
+  "titulo": "A inteligência que faz cada clínica crescer.",
+  "sublinha": "45 unidades escutadas de perto, em 17 cidades estudadas por inteiro — e, para cada uma, o que fazer nesta semana.",
+  "escopo": "As leituras valem para estas 45 unidades, não para as 373 da rede. As 6 cidades de oportunidade são estudo de expansão e não entram em nenhuma conta da rede."
+ },
+ "mapa": [
+  {
+   "uf": "AC",
+   "unidades": 0,
+   "abertas": 0,
+   "em_implantacao": 0,
+   "cidades": 0,
+   "pracas_medidas": 0,
+   "acompanhadas": 0,
+   "em_faixa_vermelha": 0,
+   "em_faixa_amarela": 0,
+   "alertas_graves": 0,
+   "tom": "sem_unidade",
+   "motivo": "0 unidades · sem unidade"
   },
-  "grupos": [
-    {
-      "chave": "rede",
-      "nome": "A rede",
-      "explica": "as 373 unidades: mapa, alertas e reputação da marca"
-    },
-    {
-      "chave": "lojas",
-      "nome": "As 45 lojas acompanhadas",
-      "explica": "as unidades medidas de perto, loja por loja"
-    },
-    {
-      "chave": "expansao",
-      "nome": "Expansão",
-      "explica": "onde abrir a próxima franquia"
-    },
-    {
-      "chave": "arquivo",
-      "nome": "Arquivo",
-      "explica": "de onde veio cada número"
-    }
-  ],
-  "cards": [
-    {
-      "chave": "mapa",
-      "titulo": "A rede no Brasil",
-      "pergunta": "Onde a OrthoDontic está hoje?",
-      "numero": 373,
-      "frase": "350 abertas e 23 em implantação, em 303 cidades. 4 estados ainda sem unidade.",
-      "tela": "mapa",
-      "grupo": "rede",
-      "disponivel": true,
-      "indisponivel_porque": null
-    },
-    {
-      "chave": "alertas",
-      "titulo": "Alertas nas fichas do Google",
-      "pergunta": "Alguma unidade está mal na rua?",
-      "numero": 9,
-      "frase": "9 alertas graves nas 326 fichas conferidas — o primeiro: nota 2.7 na ficha pública, e com base fina, o que ainda dá conserto rápido",
-      "tela": "rede_inteira",
-      "grupo": "rede",
-      "disponivel": true,
-      "indisponivel_porque": null
-    },
-    {
-      "chave": "reputacao",
-      "titulo": "A marca no Reclame Aqui",
-      "pergunta": "Como a OrthoDontic se compara com as outras redes?",
-      "numero": 8,
-      "frase": "nota da OrthoDontic contra 3 a 8.7 das outras 6 redes comparadas — só ortodontia e odontologia popular entram.",
-      "tela": "reputacao",
-      "grupo": "rede",
-      "disponivel": true,
-      "indisponivel_porque": null
-    },
-    {
-      "chave": "mudou",
-      "titulo": "O que mudou na semana",
-      "pergunta": "O que aconteceu desde a última medição?",
-      "numero": 2,
-      "frase": "contadores de avaliação CAÍRAM — queda é avaliação apagada, evento raro. 18 praças medidas de novo; o período ainda é curto e engorda a cada semana.",
-      "tela": "mudou",
-      "grupo": "lojas",
-      "disponivel": true,
-      "indisponivel_porque": null
-    },
-    {
-      "chave": "fila",
-      "titulo": "Onde agir primeiro",
-      "pergunta": "Qual loja precisa de ajuda neste mês?",
-      "numero": 13,
-      "frase": "13 de 45 unidades medidas estão em faixa vermelha. A primeira é SC · Joinville.",
-      "tela": "fila",
-      "grupo": "lojas",
-      "disponivel": true,
-      "indisponivel_porque": null
-    },
-    {
-      "chave": "perto",
-      "titulo": "A busca perto da clínica",
-      "pergunta": "A clínica aparece para quem está perto dela?",
-      "numero": 2,
-      "frase": "de 45 lojas medidas a partir do próprio endereço, essas não apareceram em nenhuma das buscas. Outras 6 lojas pareciam invisíveis pela busca da cidade inteira e aparecem aqui: numa cidade grande ninguém disputa o nome do município.",
-      "tela": "perto",
-      "grupo": "lojas",
-      "disponivel": true,
-      "indisponivel_porque": null
-    },
-    {
-      "chave": "caixa",
-      "titulo": "Avaliações sem resposta",
-      "pergunta": "Quantos pacientes reclamaram e ninguém respondeu?",
-      "numero": 399,
-      "frase": "321 delas com o paciente explicando o motivo, loja por loja. Responder é higiene da marca.",
-      "tela": "caixa",
-      "grupo": "lojas",
-      "disponivel": true,
-      "indisponivel_porque": null
-    },
-    {
-      "chave": "rival",
-      "titulo": "Os concorrentes de ortodontia",
-      "pergunta": "Quem disputa o paciente de aparelho, e o que fazem melhor?",
-      "numero": 46,
-      "frase": "clínicas que vendem APARELHO nas praças acompanhadas. Clínica geral e implante não entram: é outro tratamento, outro paciente.",
-      "tela": "rival",
-      "grupo": "lojas",
-      "disponivel": true,
-      "indisponivel_porque": null
-    },
-    {
-      "chave": "anuncios",
-      "titulo": "Quem anuncia aparelho na cidade",
-      "pergunta": "Quem está comprando mídia de aparelho na praça, agora?",
-      "numero": 636,
-      "frase": "anúncios de aparelho no ar, de 311 anunciantes nas praças medidas.",
-      "tela": "anuncios",
-      "grupo": "lojas",
-      "disponivel": true,
-      "indisponivel_porque": "rode scripts/quem_anuncia_aparelho.py --salvar"
-    },
-    {
-      "chave": "padroes",
-      "titulo": "O que faz uma loja crescer",
-      "pergunta": "Por que umas lojas crescem e outras param?",
-      "numero": 4,
-      "frase": "explicações confortáveis foram testadas e caíram. O que separa as lojas que crescem é manter viva a rotina de pedir avaliação no balcão — e isso é treinável.",
-      "tela": "padroes",
-      "grupo": "lojas",
-      "disponivel": true,
-      "indisponivel_porque": null
-    },
-    {
-      "chave": "timeline",
-      "titulo": "A vida de cada loja",
-      "pergunta": "O que aconteceu em cada loja, em ordem?",
-      "numero": 231,
-      "frase": "eventos observáveis — avaliações, contadores, alertas e rivais de aparelho — numa linha do tempo por loja, com o estado da tarefa de cada uma.",
-      "tela": "timeline",
-      "grupo": "lojas",
-      "disponivel": true,
-      "indisponivel_porque": null
-    },
-    {
-      "chave": "constancia",
-      "titulo": "Quem mantém o ritmo",
-      "pergunta": "Quais lojas seguem ganhando avaliações todo mês?",
-      "numero": 4,
-      "frase": "de 10 lojas acompanhadas mantêm o ritmo. 5 pararam e 1 só tiveram picos de campanha.",
-      "tela": "constancia",
-      "grupo": "lojas",
-      "disponivel": true,
-      "indisponivel_porque": null
-    },
-    {
-      "chave": "funil",
-      "titulo": "As melhores cidades do Brasil",
-      "pergunta": "Onde vale estudar a próxima cidade?",
-      "numero": 50,
-      "frase": "candidatas rankeadas entre os 5.570 municípios (população-alvo × renda, IBGE) — a primeira é DF · Brasília. E pela régua da própria rede, SP · São Paulo comporta mais 21 unidades.",
-      "tela": "funil",
-      "grupo": "expansao",
-      "disponivel": true,
-      "indisponivel_porque": null
-    },
-    {
-      "chave": "radar",
-      "titulo": "Onde abrir a próxima franquia",
-      "pergunta": "Quais cidades estão prontas para receber uma unidade?",
-      "numero": 6,
-      "frase": "cidades estudadas a fundo, todas sem OrthoDontic hoje — 7 outras foram descartadas por já ter unidade. Estudo de expansão: não entra em nenhuma conta da rede.",
-      "tela": "radar",
-      "grupo": "expansao",
-      "disponivel": true,
-      "indisponivel_porque": null
-    },
-    {
-      "chave": "pracas",
-      "titulo": "As praças estudadas",
-      "pergunta": "O que já sabemos de cada praça, em detalhe?",
-      "numero": 17,
-      "frase": "cidades onde a rede está e que já foram estudadas por inteiro — concorrência, canais, imprensa, busca e avaliações.",
-      "tela": "pracas",
-      "grupo": "expansao",
-      "disponivel": true,
-      "indisponivel_porque": null
-    },
-    {
-      "chave": "voz_da_cidade",
-      "titulo": "A voz da cidade",
-      "pergunta": "O que a cidade comenta, antes de virar paciente?",
-      "numero": 1380,
-      "frase": "comentários lidos nos canais locais de 13 praças.",
-      "tela": "voz_da_cidade",
-      "grupo": "arquivo",
-      "disponivel": true,
-      "indisponivel_porque": null
-    },
-    {
-      "chave": "busca",
-      "titulo": "A rede aparece na busca?",
-      "pergunta": "Quando a cidade procura 'dentista', a OrthoDontic aparece?",
-      "numero": 34,
-      "frase": "aparições contra 476 ausências na busca por 'dentista' — é essa palavra que traz o paciente de aparelho.",
-      "tela": "busca",
-      "grupo": "arquivo",
-      "disponivel": true,
-      "indisponivel_porque": null
-    },
-    {
-      "chave": "fichas",
-      "titulo": "O cadastro das unidades",
-      "pergunta": "As fichas do Google estão certas?",
-      "numero": 45,
-      "frase": "fichas conferidas · 0 sem site na ficha.",
-      "tela": "fichas",
-      "grupo": "arquivo",
-      "disponivel": true,
-      "indisponivel_porque": null
-    },
-    {
-      "chave": "territorio",
-      "titulo": "Canais que ninguém ocupou",
-      "pergunta": "Que canal falta em cada praça?",
-      "numero": null,
-      "frase": "canais mapeados por praça, com os que não existem.",
-      "tela": "territorio",
-      "grupo": "arquivo",
-      "disponivel": true,
-      "indisponivel_porque": null
-    },
-    {
-      "chave": "achados",
-      "titulo": "O que já virou regra",
-      "pergunta": "O que se repete em todas as praças — e o que caiu no teste?",
-      "numero": null,
-      "frase": "cada achado com o degrau dele: de sinal isolado a regra da rede, inclusive os derrubados.",
-      "tela": "achados",
-      "grupo": "arquivo",
-      "disponivel": true,
-      "indisponivel_porque": null
-    },
-    {
-      "chave": "planos",
-      "titulo": "O plano de cada loja",
-      "pergunta": "O que cada franqueado tem para fazer nesta semana?",
-      "numero": 45,
-      "frase": "planos escritos, um por loja — só para praça com unidade.",
-      "tela": "planos",
-      "grupo": "arquivo",
-      "disponivel": true,
-      "indisponivel_porque": null
-    },
-    {
-      "chave": "sazonalidade",
-      "titulo": "Quando a procura sobe",
-      "pergunta": "Existe época certa para campanha?",
-      "numero": null,
-      "frase": "sem curva suficiente ainda.",
-      "tela": "sazonalidade",
-      "grupo": "arquivo",
-      "disponivel": false,
-      "indisponivel_porque": "só há curva de uma região (SC), com 4 pontos. Uma região não é calendário da rede."
-    },
-    {
-      "chave": "evidencias",
-      "titulo": "De onde veio cada número",
-      "pergunta": "Qual é a prova por trás de cada afirmação?",
-      "numero": null,
-      "frase": "as citações e fontes que sustentam os achados.",
-      "tela": "evidencias",
-      "grupo": "arquivo",
-      "disponivel": true,
-      "indisponivel_porque": null
-    }
-  ],
-  "reputacao_das_redes": [
-    {
-      "marca": "Odontocompany",
-      "empresa": "odonto-company",
-      "reclamacoes": 23283,
-      "selo": "NOT_RECOMMENDED",
-      "nota": 3.8,
-      "nossa": false,
-      "foco": "odontologia_popular",
-      "nota_de_classificacao": "maior volume de reclamações da lista; vende aparelho no mix",
-      "medido_em": "2026-08-08"
-    },
-    {
-      "marca": "Sorridents Clínicas Odontológicas",
-      "empresa": "sorridents",
-      "reclamacoes": 11425,
-      "selo": "NOT_RECOMMENDED",
-      "nota": 3,
-      "nossa": false,
-      "foco": "odontologia_popular",
-      "nota_de_classificacao": "odontologia popular com aparelho no mix; disputa o mesmo paciente",
-      "medido_em": "2026-08-08"
-    },
-    {
-      "marca": "Orthopride",
-      "empresa": "orthopride",
-      "reclamacoes": 6670,
-      "selo": "GREAT",
-      "nota": 8.1,
-      "nossa": false,
-      "foco": "ortodontia",
-      "nota_de_classificacao": "franquia de aparelho popular — a concorrente mais direta em modelo",
-      "medido_em": "2026-08-09"
-    },
-    {
-      "marca": "OrthoDontic",
-      "empresa": "orthodontic",
-      "reclamacoes": 3133,
-      "selo": "GREAT",
-      "nota": 8,
-      "nossa": true,
-      "foco": "ortodontia",
-      "nota_de_classificacao": "a nossa",
-      "medido_em": "2026-08-08"
-    },
-    {
-      "marca": "Odontoclinic",
-      "empresa": "odontoclinic",
-      "reclamacoes": 2457,
-      "selo": "RA1000",
-      "nota": 8.7,
-      "nossa": false,
-      "foco": "odontologia_popular",
-      "nota_de_classificacao": "aparece como concorrente de rua nas praças medidas",
-      "medido_em": "2026-08-08"
-    },
-    {
-      "marca": "Sorrifácil",
-      "empresa": "sorrifacil",
-      "reclamacoes": 939,
-      "selo": "RA1000",
-      "nota": 8.6,
-      "nossa": false,
-      "foco": "odontologia_popular",
-      "nota_de_classificacao": "franquia de odontologia popular",
-      "medido_em": "2026-08-08"
-    },
-    {
-      "marca": "RedeOrto Franquia em Clinica de Ortodontia",
-      "empresa": "redeorto-franquia-em-clinica-de-ortodontia",
-      "reclamacoes": 236,
-      "selo": "REGULAR",
-      "nota": 6,
-      "nossa": false,
-      "foco": "ortodontia",
-      "nota_de_classificacao": "o próprio nome declara franquia de clínica de ortodontia",
-      "medido_em": "2026-08-08"
-    }
-  ],
-  "reputacao_fora_da_tela": {
-    "redes": [
-      {
-        "marca": "Oral Sin",
-        "empresa": "oral-sin",
-        "reclamacoes": 1585,
-        "selo": "RA1000",
-        "nota": 9.1,
-        "nossa": false,
-        "foco": "implante",
-        "nota_de_classificacao": "rede de implante — outro tratamento, outro ticket. Fora da tela.",
-        "medido_em": "2026-08-08"
-      },
-      {
-        "marca": "ORAL UNIC",
-        "empresa": "oral-unic",
-        "reclamacoes": 34,
-        "selo": "NOT_RECOMMENDED",
-        "nota": 1.6,
-        "nossa": false,
-        "foco": "implante",
-        "nota_de_classificacao": "rede de implante. Fora da tela.",
-        "medido_em": "2026-08-09"
-      }
-    ],
-    "por_que": "O Reclame Aqui não tem recorte por cidade: é nota de MARCA, nacional. Isso não o torna irrelevante — a franqueadora é dona da marca, e a nota nacional é responsabilidade dela, não do franqueado. Mas a coleta trouxe redes que não disputam o mesmo paciente. Quem quer aparelho não escolhe entre OrthoDontic e uma rede de implante. Comparar com elas infla a lista e enfraquece a comparação que importa.",
-    "criterio": "ortodontia = a rede se apresenta como rede de ortodontia/aparelho. odontologia_popular = rede de odontologia popular que vende aparelho junto com o resto, e disputa o mesmo paciente na mesma rua. implante = a venda principal é implante ou prótese; é outro tratamento, outro ticket, outra decisão."
+  {
+   "uf": "AL",
+   "unidades": 1,
+   "abertas": 1,
+   "em_implantacao": 0,
+   "cidades": 1,
+   "pracas_medidas": 0,
+   "acompanhadas": 0,
+   "em_faixa_vermelha": 0,
+   "em_faixa_amarela": 0,
+   "alertas_graves": 0,
+   "tom": "sem_escuta",
+   "motivo": "1 unidade · ainda sem escuta"
   },
-  "fichas_da_rede": {
-    "conferidas": 45,
-    "por_categoria": {
-      "Clínica odontológica": 39,
-      "Dentista": 6
-    },
-    "sem_site": 0
+  {
+   "uf": "AP",
+   "unidades": 0,
+   "abertas": 0,
+   "em_implantacao": 0,
+   "cidades": 0,
+   "pracas_medidas": 0,
+   "acompanhadas": 0,
+   "em_faixa_vermelha": 0,
+   "em_faixa_amarela": 0,
+   "alertas_graves": 0,
+   "tom": "sem_unidade",
+   "motivo": "0 unidades · sem unidade"
   },
-  "presenca_na_busca": {
-    "aparelho": {
-      "dentro": 29,
-      "fora": 14
-    },
-    "ortodontia": {
-      "dentro": 43,
-      "fora": 54
-    },
-    "dentista": {
-      "dentro": 34,
-      "fora": 476
-    }
+  {
+   "uf": "AM",
+   "unidades": 2,
+   "abertas": 2,
+   "em_implantacao": 0,
+   "cidades": 1,
+   "pracas_medidas": 0,
+   "acompanhadas": 0,
+   "em_faixa_vermelha": 0,
+   "em_faixa_amarela": 0,
+   "alertas_graves": 0,
+   "tom": "sem_escuta",
+   "motivo": "2 unidades · ainda sem escuta"
+  },
+  {
+   "uf": "BA",
+   "unidades": 21,
+   "abertas": 20,
+   "em_implantacao": 1,
+   "cidades": 19,
+   "pracas_medidas": 1,
+   "acompanhadas": 1,
+   "em_faixa_vermelha": 0,
+   "em_faixa_amarela": 1,
+   "alertas_graves": 2,
+   "tom": "crit",
+   "motivo": "1 em faixa amarela · 2 alertas graves na ficha do Google"
+  },
+  {
+   "uf": "CE",
+   "unidades": 2,
+   "abertas": 2,
+   "em_implantacao": 0,
+   "cidades": 1,
+   "pracas_medidas": 0,
+   "acompanhadas": 0,
+   "em_faixa_vermelha": 0,
+   "em_faixa_amarela": 0,
+   "alertas_graves": 0,
+   "tom": "sem_escuta",
+   "motivo": "2 unidades · ainda sem escuta"
+  },
+  {
+   "uf": "DF",
+   "unidades": 13,
+   "abertas": 12,
+   "em_implantacao": 1,
+   "cidades": 13,
+   "pracas_medidas": 0,
+   "acompanhadas": 0,
+   "em_faixa_vermelha": 0,
+   "em_faixa_amarela": 0,
+   "alertas_graves": 0,
+   "tom": "sem_escuta",
+   "motivo": "13 unidades · ainda sem escuta"
+  },
+  {
+   "uf": "ES",
+   "unidades": 5,
+   "abertas": 5,
+   "em_implantacao": 0,
+   "cidades": 5,
+   "pracas_medidas": 0,
+   "acompanhadas": 0,
+   "em_faixa_vermelha": 0,
+   "em_faixa_amarela": 0,
+   "alertas_graves": 0,
+   "tom": "sem_escuta",
+   "motivo": "5 unidades · ainda sem escuta"
+  },
+  {
+   "uf": "GO",
+   "unidades": 23,
+   "abertas": 21,
+   "em_implantacao": 2,
+   "cidades": 17,
+   "pracas_medidas": 1,
+   "acompanhadas": 4,
+   "em_faixa_vermelha": 1,
+   "em_faixa_amarela": 2,
+   "alertas_graves": 0,
+   "tom": "crit",
+   "motivo": "1 em faixa vermelha · 2 em faixa amarela"
+  },
+  {
+   "uf": "MA",
+   "unidades": 0,
+   "abertas": 0,
+   "em_implantacao": 0,
+   "cidades": 0,
+   "pracas_medidas": 0,
+   "acompanhadas": 0,
+   "em_faixa_vermelha": 0,
+   "em_faixa_amarela": 0,
+   "alertas_graves": 0,
+   "tom": "sem_unidade",
+   "motivo": "0 unidades · sem unidade"
+  },
+  {
+   "uf": "MT",
+   "unidades": 9,
+   "abertas": 9,
+   "em_implantacao": 0,
+   "cidades": 7,
+   "pracas_medidas": 1,
+   "acompanhadas": 3,
+   "em_faixa_vermelha": 0,
+   "em_faixa_amarela": 2,
+   "alertas_graves": 0,
+   "tom": "warn",
+   "motivo": "2 em faixa amarela"
+  },
+  {
+   "uf": "MS",
+   "unidades": 4,
+   "abertas": 4,
+   "em_implantacao": 0,
+   "cidades": 3,
+   "pracas_medidas": 0,
+   "acompanhadas": 0,
+   "em_faixa_vermelha": 0,
+   "em_faixa_amarela": 0,
+   "alertas_graves": 1,
+   "tom": "crit",
+   "motivo": "1 alerta grave na ficha do Google"
+  },
+  {
+   "uf": "MG",
+   "unidades": 37,
+   "abertas": 34,
+   "em_implantacao": 3,
+   "cidades": 32,
+   "pracas_medidas": 2,
+   "acompanhadas": 3,
+   "em_faixa_vermelha": 2,
+   "em_faixa_amarela": 0,
+   "alertas_graves": 1,
+   "tom": "crit",
+   "motivo": "2 em faixa vermelha · 1 alerta grave na ficha do Google"
+  },
+  {
+   "uf": "PA",
+   "unidades": 2,
+   "abertas": 2,
+   "em_implantacao": 0,
+   "cidades": 1,
+   "pracas_medidas": 0,
+   "acompanhadas": 0,
+   "em_faixa_vermelha": 0,
+   "em_faixa_amarela": 0,
+   "alertas_graves": 0,
+   "tom": "sem_escuta",
+   "motivo": "2 unidades · ainda sem escuta"
+  },
+  {
+   "uf": "PB",
+   "unidades": 2,
+   "abertas": 2,
+   "em_implantacao": 0,
+   "cidades": 2,
+   "pracas_medidas": 0,
+   "acompanhadas": 0,
+   "em_faixa_vermelha": 0,
+   "em_faixa_amarela": 0,
+   "alertas_graves": 0,
+   "tom": "sem_escuta",
+   "motivo": "2 unidades · ainda sem escuta"
+  },
+  {
+   "uf": "PR",
+   "unidades": 57,
+   "abertas": 55,
+   "em_implantacao": 2,
+   "cidades": 43,
+   "pracas_medidas": 3,
+   "acompanhadas": 7,
+   "em_faixa_vermelha": 3,
+   "em_faixa_amarela": 1,
+   "alertas_graves": 0,
+   "tom": "crit",
+   "motivo": "3 em faixa vermelha · 1 em faixa amarela"
+  },
+  {
+   "uf": "PE",
+   "unidades": 3,
+   "abertas": 3,
+   "em_implantacao": 0,
+   "cidades": 2,
+   "pracas_medidas": 0,
+   "acompanhadas": 0,
+   "em_faixa_vermelha": 0,
+   "em_faixa_amarela": 0,
+   "alertas_graves": 0,
+   "tom": "sem_escuta",
+   "motivo": "3 unidades · ainda sem escuta"
+  },
+  {
+   "uf": "PI",
+   "unidades": 2,
+   "abertas": 2,
+   "em_implantacao": 0,
+   "cidades": 1,
+   "pracas_medidas": 0,
+   "acompanhadas": 0,
+   "em_faixa_vermelha": 0,
+   "em_faixa_amarela": 0,
+   "alertas_graves": 0,
+   "tom": "sem_escuta",
+   "motivo": "2 unidades · ainda sem escuta"
+  },
+  {
+   "uf": "RJ",
+   "unidades": 5,
+   "abertas": 5,
+   "em_implantacao": 0,
+   "cidades": 3,
+   "pracas_medidas": 1,
+   "acompanhadas": 1,
+   "em_faixa_vermelha": 0,
+   "em_faixa_amarela": 0,
+   "alertas_graves": 0,
+   "tom": "ok",
+   "motivo": "5 unidades · ainda sem escuta"
+  },
+  {
+   "uf": "RN",
+   "unidades": 0,
+   "abertas": 0,
+   "em_implantacao": 0,
+   "cidades": 0,
+   "pracas_medidas": 0,
+   "acompanhadas": 0,
+   "em_faixa_vermelha": 0,
+   "em_faixa_amarela": 0,
+   "alertas_graves": 0,
+   "tom": "sem_unidade",
+   "motivo": "0 unidades · sem unidade"
+  },
+  {
+   "uf": "RS",
+   "unidades": 52,
+   "abertas": 49,
+   "em_implantacao": 3,
+   "cidades": 39,
+   "pracas_medidas": 2,
+   "acompanhadas": 10,
+   "em_faixa_vermelha": 3,
+   "em_faixa_amarela": 5,
+   "alertas_graves": 0,
+   "tom": "crit",
+   "motivo": "3 em faixa vermelha · 5 em faixa amarela"
+  },
+  {
+   "uf": "RO",
+   "unidades": 2,
+   "abertas": 2,
+   "em_implantacao": 0,
+   "cidades": 2,
+   "pracas_medidas": 0,
+   "acompanhadas": 0,
+   "em_faixa_vermelha": 0,
+   "em_faixa_amarela": 0,
+   "alertas_graves": 0,
+   "tom": "sem_escuta",
+   "motivo": "2 unidades · ainda sem escuta"
+  },
+  {
+   "uf": "RR",
+   "unidades": 1,
+   "abertas": 1,
+   "em_implantacao": 0,
+   "cidades": 1,
+   "pracas_medidas": 0,
+   "acompanhadas": 0,
+   "em_faixa_vermelha": 0,
+   "em_faixa_amarela": 0,
+   "alertas_graves": 0,
+   "tom": "sem_escuta",
+   "motivo": "1 unidade · ainda sem escuta"
+  },
+  {
+   "uf": "SC",
+   "unidades": 50,
+   "abertas": 47,
+   "em_implantacao": 3,
+   "cidades": 43,
+   "pracas_medidas": 3,
+   "acompanhadas": 7,
+   "em_faixa_vermelha": 2,
+   "em_faixa_amarela": 5,
+   "alertas_graves": 0,
+   "tom": "crit",
+   "motivo": "2 em faixa vermelha · 5 em faixa amarela"
+  },
+  {
+   "uf": "SP",
+   "unidades": 78,
+   "abertas": 71,
+   "em_implantacao": 7,
+   "cidades": 65,
+   "pracas_medidas": 3,
+   "acompanhadas": 8,
+   "em_faixa_vermelha": 2,
+   "em_faixa_amarela": 4,
+   "alertas_graves": 5,
+   "tom": "crit",
+   "motivo": "2 em faixa vermelha · 4 em faixa amarela · 5 alertas graves na ficha do Google"
+  },
+  {
+   "uf": "SE",
+   "unidades": 1,
+   "abertas": 0,
+   "em_implantacao": 1,
+   "cidades": 1,
+   "pracas_medidas": 0,
+   "acompanhadas": 0,
+   "em_faixa_vermelha": 0,
+   "em_faixa_amarela": 0,
+   "alertas_graves": 0,
+   "tom": "sem_escuta",
+   "motivo": "1 unidade · ainda sem escuta"
+  },
+  {
+   "uf": "TO",
+   "unidades": 1,
+   "abertas": 1,
+   "em_implantacao": 0,
+   "cidades": 1,
+   "pracas_medidas": 1,
+   "acompanhadas": 1,
+   "em_faixa_vermelha": 0,
+   "em_faixa_amarela": 0,
+   "alertas_graves": 0,
+   "tom": "ok",
+   "motivo": "1 unidade · ainda sem escuta"
   }
+ ],
+ "mapa_legenda": [
+  {
+   "tom": "crit",
+   "o_que_e": "unidade em faixa vermelha ou alerta grave na ficha"
+  },
+  {
+   "tom": "warn",
+   "o_que_e": "unidade em faixa amarela"
+  },
+  {
+   "tom": "ok",
+   "o_que_e": "acompanhada, sem alerta aberto"
+  },
+  {
+   "tom": "sem_escuta",
+   "o_que_e": "tem unidade, ainda não é medida"
+  },
+  {
+   "tom": "sem_unidade",
+   "o_que_e": "a rede não está no estado"
+  }
+ ],
+ "tiras_do_inicio": [
+  {
+   "numero": 13,
+   "tom": "crit",
+   "rotulo": "unidades em faixa vermelha"
+  },
+  {
+   "numero": 0,
+   "tom": "warn",
+   "rotulo": "tarefas fora do prazo"
+  },
+  {
+   "numero": 399,
+   "tom": "marca",
+   "rotulo": "avaliações esperando resposta"
+  },
+  {
+   "numero": 9,
+   "tom": "bad",
+   "rotulo": "alertas graves nas fichas da rede"
+  }
+ ],
+ "agora": {
+  "pergunta": "Em quais unidades a OrthoDontic está perdendo atenção local, para qual concorrente, e onde intervir primeiro neste mês?",
+  "manchete": "13 de 45 unidades medidas estão em faixa vermelha. A primeira é SC · Joinville.",
+  "em_risco": 13,
+  "unidades": 45,
+  "o_que_e_atencao": "participação observável em busca, avaliações, publicidade e atividade digital. Não é faturamento — nenhum número desta tela vem de dado interno da rede.",
+  "primeiras": [
+   {
+    "pos": 1,
+    "rotulo": "SC · Joinville",
+    "unidade_curta": "· América",
+    "urgencia": 90,
+    "faixa": "vermelha",
+    "quem_avanca": {
+     "nome": "Odonto e Você",
+     "ritmo": 4.9,
+     "meses": 14,
+     "nota": 4.9,
+     "posicao": 5
+    },
+    "acao": {
+     "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+     "prazo": "14 dias",
+     "dono": "franqueado",
+     "custo": "sem custo de mídia",
+     "por_causa_de": "parada"
+    }
+   },
+   {
+    "pos": 2,
+    "rotulo": "SP · São Paulo",
+    "unidade_curta": "· República",
+    "urgencia": 80,
+    "faixa": "vermelha",
+    "quem_avanca": null,
+    "acao": {
+     "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+     "prazo": "14 dias",
+     "dono": "franqueado",
+     "custo": "sem custo de mídia",
+     "por_causa_de": "parada"
+    }
+   },
+   {
+    "pos": 3,
+    "rotulo": "SP · Sorocaba",
+    "unidade_curta": "· Jardim Faculdade",
+    "urgencia": 80,
+    "faixa": "vermelha",
+    "quem_avanca": null,
+    "acao": {
+     "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+     "prazo": "14 dias",
+     "dono": "franqueado",
+     "custo": "sem custo de mídia",
+     "por_causa_de": "parada"
+    }
+   }
+  ],
+  "tela": "fila"
+ },
+ "grupos": [
+  {
+   "chave": "rede",
+   "nome": "A rede",
+   "explica": "as 373 unidades: mapa, alertas e reputação da marca"
+  },
+  {
+   "chave": "lojas",
+   "nome": "As 45 lojas acompanhadas",
+   "explica": "as unidades medidas de perto, loja por loja"
+  },
+  {
+   "chave": "expansao",
+   "nome": "Expansão",
+   "explica": "onde abrir a próxima franquia"
+  },
+  {
+   "chave": "arquivo",
+   "nome": "Arquivo",
+   "explica": "de onde veio cada número"
+  }
+ ],
+ "cards": [
+  {
+   "chave": "mapa",
+   "titulo": "A rede no Brasil",
+   "pergunta": "Onde a OrthoDontic está hoje?",
+   "numero": 373,
+   "frase": "350 abertas e 23 em implantação, em 303 cidades. 4 estados ainda sem unidade.",
+   "tela": "mapa",
+   "grupo": "rede",
+   "disponivel": true,
+   "indisponivel_porque": null
+  },
+  {
+   "chave": "alertas",
+   "titulo": "Alertas nas fichas do Google",
+   "pergunta": "Alguma unidade está mal na rua?",
+   "numero": 9,
+   "frase": "9 alertas graves nas 326 fichas conferidas — o primeiro: nota 2.7 na ficha pública, e com base fina, o que ainda dá conserto rápido",
+   "tela": "rede_inteira",
+   "grupo": "rede",
+   "disponivel": true,
+   "indisponivel_porque": null
+  },
+  {
+   "chave": "reputacao",
+   "titulo": "A marca no Reclame Aqui",
+   "pergunta": "Como a OrthoDontic se compara com as outras redes?",
+   "numero": 8,
+   "frase": "nota da OrthoDontic contra 3 a 8.7 das outras 6 redes comparadas — só ortodontia e odontologia popular entram.",
+   "tela": "reputacao",
+   "grupo": "rede",
+   "disponivel": true,
+   "indisponivel_porque": null
+  },
+  {
+   "chave": "mudou",
+   "titulo": "O que mudou na semana",
+   "pergunta": "O que aconteceu desde a última medição?",
+   "numero": 2,
+   "frase": "contadores de avaliação CAÍRAM — queda é avaliação apagada, evento raro. 18 praças medidas de novo; o período ainda é curto e engorda a cada semana.",
+   "tela": "mudou",
+   "grupo": "lojas",
+   "disponivel": true,
+   "indisponivel_porque": null
+  },
+  {
+   "chave": "fila",
+   "titulo": "Onde agir primeiro",
+   "pergunta": "Qual loja precisa de ajuda neste mês?",
+   "numero": 13,
+   "frase": "13 de 45 unidades medidas estão em faixa vermelha. A primeira é SC · Joinville.",
+   "tela": "fila",
+   "grupo": "lojas",
+   "disponivel": true,
+   "indisponivel_porque": null
+  },
+  {
+   "chave": "perto",
+   "titulo": "A busca perto da clínica",
+   "pergunta": "A clínica aparece para quem está perto dela?",
+   "numero": 2,
+   "frase": "de 45 lojas medidas a partir do próprio endereço, essas não apareceram em nenhuma das buscas. Outras 6 lojas pareciam invisíveis pela busca da cidade inteira e aparecem aqui: numa cidade grande ninguém disputa o nome do município.",
+   "tela": "perto",
+   "grupo": "lojas",
+   "disponivel": true,
+   "indisponivel_porque": null
+  },
+  {
+   "chave": "caixa",
+   "titulo": "Avaliações sem resposta",
+   "pergunta": "Quantos pacientes reclamaram e ninguém respondeu?",
+   "numero": 399,
+   "frase": "321 delas com o paciente explicando o motivo, loja por loja. Responder é higiene da marca.",
+   "tela": "caixa",
+   "grupo": "lojas",
+   "disponivel": true,
+   "indisponivel_porque": null
+  },
+  {
+   "chave": "rival",
+   "titulo": "Os concorrentes de ortodontia",
+   "pergunta": "Quem disputa o paciente de aparelho, e o que fazem melhor?",
+   "numero": 46,
+   "frase": "clínicas que vendem APARELHO nas praças acompanhadas. Clínica geral e implante não entram: é outro tratamento, outro paciente.",
+   "tela": "rival",
+   "grupo": "lojas",
+   "disponivel": true,
+   "indisponivel_porque": null
+  },
+  {
+   "chave": "anuncios",
+   "titulo": "Quem anuncia aparelho na cidade",
+   "pergunta": "Quem está comprando mídia de aparelho na praça, agora?",
+   "numero": 636,
+   "frase": "anúncios de aparelho no ar, de 311 anunciantes nas praças medidas.",
+   "tela": "anuncios",
+   "grupo": "lojas",
+   "disponivel": true,
+   "indisponivel_porque": "rode scripts/quem_anuncia_aparelho.py --salvar"
+  },
+  {
+   "chave": "padroes",
+   "titulo": "O que faz uma loja crescer",
+   "pergunta": "Por que umas lojas crescem e outras param?",
+   "numero": 4,
+   "frase": "explicações confortáveis foram testadas e caíram. O que separa as lojas que crescem é manter viva a rotina de pedir avaliação no balcão — e isso é treinável.",
+   "tela": "padroes",
+   "grupo": "lojas",
+   "disponivel": true,
+   "indisponivel_porque": null
+  },
+  {
+   "chave": "timeline",
+   "titulo": "A vida de cada loja",
+   "pergunta": "O que aconteceu em cada loja, em ordem?",
+   "numero": 231,
+   "frase": "eventos observáveis — avaliações, contadores, alertas e rivais de aparelho — numa linha do tempo por loja, com o estado da tarefa de cada uma.",
+   "tela": "timeline",
+   "grupo": "lojas",
+   "disponivel": true,
+   "indisponivel_porque": null
+  },
+  {
+   "chave": "constancia",
+   "titulo": "Quem mantém o ritmo",
+   "pergunta": "Quais lojas seguem ganhando avaliações todo mês?",
+   "numero": 4,
+   "frase": "de 10 lojas acompanhadas mantêm o ritmo. 5 pararam e 1 só tiveram picos de campanha.",
+   "tela": "constancia",
+   "grupo": "lojas",
+   "disponivel": true,
+   "indisponivel_porque": null
+  },
+  {
+   "chave": "funil",
+   "titulo": "As melhores cidades do Brasil",
+   "pergunta": "Onde vale estudar a próxima cidade?",
+   "numero": 50,
+   "frase": "candidatas rankeadas entre os 5.570 municípios (população-alvo × renda, IBGE) — a primeira é DF · Brasília. E pela régua da própria rede, SP · São Paulo comporta mais 21 unidades.",
+   "tela": "funil",
+   "grupo": "expansao",
+   "disponivel": true,
+   "indisponivel_porque": null
+  },
+  {
+   "chave": "radar",
+   "titulo": "Onde abrir a próxima franquia",
+   "pergunta": "Quais cidades estão prontas para receber uma unidade?",
+   "numero": 6,
+   "frase": "cidades estudadas a fundo, todas sem OrthoDontic hoje — 7 outras foram descartadas por já ter unidade. Estudo de expansão: não entra em nenhuma conta da rede.",
+   "tela": "radar",
+   "grupo": "expansao",
+   "disponivel": true,
+   "indisponivel_porque": null
+  },
+  {
+   "chave": "pracas",
+   "titulo": "As praças estudadas",
+   "pergunta": "O que já sabemos de cada praça, em detalhe?",
+   "numero": 17,
+   "frase": "cidades onde a rede está e que já foram estudadas por inteiro — concorrência, canais, imprensa, busca e avaliações.",
+   "tela": "pracas",
+   "grupo": "expansao",
+   "disponivel": true,
+   "indisponivel_porque": null
+  },
+  {
+   "chave": "voz_da_cidade",
+   "titulo": "A voz da cidade",
+   "pergunta": "O que a cidade comenta, antes de virar paciente?",
+   "numero": 1380,
+   "frase": "comentários lidos nos canais locais de 13 praças.",
+   "tela": "voz_da_cidade",
+   "grupo": "arquivo",
+   "disponivel": true,
+   "indisponivel_porque": null
+  },
+  {
+   "chave": "busca",
+   "titulo": "A rede aparece na busca?",
+   "pergunta": "Quando a cidade procura 'dentista', a OrthoDontic aparece?",
+   "numero": 34,
+   "frase": "aparições contra 476 ausências na busca por 'dentista' — é essa palavra que traz o paciente de aparelho.",
+   "tela": "busca",
+   "grupo": "arquivo",
+   "disponivel": true,
+   "indisponivel_porque": null
+  },
+  {
+   "chave": "fichas",
+   "titulo": "O cadastro das unidades",
+   "pergunta": "As fichas do Google estão certas?",
+   "numero": 45,
+   "frase": "fichas conferidas · 0 sem site na ficha.",
+   "tela": "fichas",
+   "grupo": "arquivo",
+   "disponivel": true,
+   "indisponivel_porque": null
+  },
+  {
+   "chave": "territorio",
+   "titulo": "Canais que ninguém ocupou",
+   "pergunta": "Que canal falta em cada praça?",
+   "numero": null,
+   "frase": "canais mapeados por praça, com os que não existem.",
+   "tela": "territorio",
+   "grupo": "arquivo",
+   "disponivel": true,
+   "indisponivel_porque": null
+  },
+  {
+   "chave": "achados",
+   "titulo": "O que já virou regra",
+   "pergunta": "O que se repete em todas as praças — e o que caiu no teste?",
+   "numero": null,
+   "frase": "cada achado com o degrau dele: de sinal isolado a regra da rede, inclusive os derrubados.",
+   "tela": "achados",
+   "grupo": "arquivo",
+   "disponivel": true,
+   "indisponivel_porque": null
+  },
+  {
+   "chave": "planos",
+   "titulo": "O plano de cada loja",
+   "pergunta": "O que cada franqueado tem para fazer nesta semana?",
+   "numero": 45,
+   "frase": "planos escritos, um por loja — só para praça com unidade.",
+   "tela": "planos",
+   "grupo": "arquivo",
+   "disponivel": true,
+   "indisponivel_porque": null
+  },
+  {
+   "chave": "sazonalidade",
+   "titulo": "Quando a procura sobe",
+   "pergunta": "Existe época certa para campanha?",
+   "numero": null,
+   "frase": "sem curva suficiente ainda.",
+   "tela": "sazonalidade",
+   "grupo": "arquivo",
+   "disponivel": false,
+   "indisponivel_porque": "só há curva de uma região (SC), com 4 pontos. Uma região não é calendário da rede."
+  },
+  {
+   "chave": "evidencias",
+   "titulo": "De onde veio cada número",
+   "pergunta": "Qual é a prova por trás de cada afirmação?",
+   "numero": null,
+   "frase": "as citações e fontes que sustentam os achados.",
+   "tela": "evidencias",
+   "grupo": "arquivo",
+   "disponivel": true,
+   "indisponivel_porque": null
+  }
+ ],
+ "reputacao_das_redes": [
+  {
+   "marca": "Odontocompany",
+   "empresa": "odonto-company",
+   "reclamacoes": 23283,
+   "selo": "NOT_RECOMMENDED",
+   "nota": 3.8,
+   "nossa": false,
+   "foco": "odontologia_popular",
+   "nota_de_classificacao": "maior volume de reclamações da lista; vende aparelho no mix",
+   "medido_em": "2026-08-08"
+  },
+  {
+   "marca": "Sorridents Clínicas Odontológicas",
+   "empresa": "sorridents",
+   "reclamacoes": 11425,
+   "selo": "NOT_RECOMMENDED",
+   "nota": 3,
+   "nossa": false,
+   "foco": "odontologia_popular",
+   "nota_de_classificacao": "odontologia popular com aparelho no mix; disputa o mesmo paciente",
+   "medido_em": "2026-08-08"
+  },
+  {
+   "marca": "Orthopride",
+   "empresa": "orthopride",
+   "reclamacoes": 6670,
+   "selo": "GREAT",
+   "nota": 8.1,
+   "nossa": false,
+   "foco": "ortodontia",
+   "nota_de_classificacao": "franquia de aparelho popular — a concorrente mais direta em modelo",
+   "medido_em": "2026-08-09"
+  },
+  {
+   "marca": "OrthoDontic",
+   "empresa": "orthodontic",
+   "reclamacoes": 3133,
+   "selo": "GREAT",
+   "nota": 8,
+   "nossa": true,
+   "foco": "ortodontia",
+   "nota_de_classificacao": "a nossa",
+   "medido_em": "2026-08-08"
+  },
+  {
+   "marca": "Odontoclinic",
+   "empresa": "odontoclinic",
+   "reclamacoes": 2457,
+   "selo": "RA1000",
+   "nota": 8.7,
+   "nossa": false,
+   "foco": "odontologia_popular",
+   "nota_de_classificacao": "aparece como concorrente de rua nas praças medidas",
+   "medido_em": "2026-08-08"
+  },
+  {
+   "marca": "Sorrifácil",
+   "empresa": "sorrifacil",
+   "reclamacoes": 939,
+   "selo": "RA1000",
+   "nota": 8.6,
+   "nossa": false,
+   "foco": "odontologia_popular",
+   "nota_de_classificacao": "franquia de odontologia popular",
+   "medido_em": "2026-08-08"
+  },
+  {
+   "marca": "RedeOrto Franquia em Clinica de Ortodontia",
+   "empresa": "redeorto-franquia-em-clinica-de-ortodontia",
+   "reclamacoes": 236,
+   "selo": "REGULAR",
+   "nota": 6,
+   "nossa": false,
+   "foco": "ortodontia",
+   "nota_de_classificacao": "o próprio nome declara franquia de clínica de ortodontia",
+   "medido_em": "2026-08-08"
+  }
+ ],
+ "reputacao_fora_da_tela": {
+  "redes": [
+   {
+    "marca": "Oral Sin",
+    "empresa": "oral-sin",
+    "reclamacoes": 1585,
+    "selo": "RA1000",
+    "nota": 9.1,
+    "nossa": false,
+    "foco": "implante",
+    "nota_de_classificacao": "rede de implante — outro tratamento, outro ticket. Fora da tela.",
+    "medido_em": "2026-08-08"
+   },
+   {
+    "marca": "ORAL UNIC",
+    "empresa": "oral-unic",
+    "reclamacoes": 34,
+    "selo": "NOT_RECOMMENDED",
+    "nota": 1.6,
+    "nossa": false,
+    "foco": "implante",
+    "nota_de_classificacao": "rede de implante. Fora da tela.",
+    "medido_em": "2026-08-09"
+   }
+  ],
+  "por_que": "O Reclame Aqui não tem recorte por cidade: é nota de MARCA, nacional. Isso não o torna irrelevante — a franqueadora é dona da marca, e a nota nacional é responsabilidade dela, não do franqueado. Mas a coleta trouxe redes que não disputam o mesmo paciente. Quem quer aparelho não escolhe entre OrthoDontic e uma rede de implante. Comparar com elas infla a lista e enfraquece a comparação que importa.",
+  "criterio": "ortodontia = a rede se apresenta como rede de ortodontia/aparelho. odontologia_popular = rede de odontologia popular que vende aparelho junto com o resto, e disputa o mesmo paciente na mesma rua. implante = a venda principal é implante ou prótese; é outro tratamento, outro ticket, outra decisão."
+ },
+ "fichas_da_rede": {
+  "conferidas": 45,
+  "por_categoria": {
+   "Clínica odontológica": 39,
+   "Dentista": 6
+  },
+  "sem_site": 0
+ },
+ "presenca_na_busca": {
+  "aparelho": {
+   "dentro": 29,
+   "fora": 14
+  },
+  "ortodontia": {
+   "dentro": 43,
+   "fora": 54
+  },
+  "dentista": {
+   "dentro": 34,
+   "fora": 476
+  }
+ },
+ "cabecalho": {
+  "sobrelinha": "DA REDE INTEIRA",
+  "titulo": "A rede inteira, lida por fora, todo dia",
+  "pergunta": "O que mudou no mercado das nossas clínicas desde a última vez que olhamos?",
+  "para_quem": [
+   "franqueadora",
+   "consultor de campo"
+  ],
+  "como_ler": "Cada bloco é uma pergunta de negócio com o número ao lado. Clique no número para ver de onde ele saiu.",
+  "o_que_nao_e": "Não é o resultado da rede. Nada aqui vem de contrato, lead ou faturamento — o portal só enxerga o que está publicado na rua.",
+  "metodo": "fontes públicas — ficha e busca do Google, avaliações de pacientes, biblioteca de anúncios, imprensa local e IBGE — coletadas sempre do mesmo jeito, semana após semana.",
+  "e_texto_autorado": true
+ }
 }

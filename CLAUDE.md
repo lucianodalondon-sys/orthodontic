@@ -126,6 +126,7 @@ python3 scripts/confere_tese.py                   # número da tese ainda existe
 python3 scripts/confere_carimbo.py                # amostra e unidade batem?
 python3 scripts/lint_semantico.py                 # frase que a medição já negou?
 python3 scripts/build_portal.py
+python3 scripts/cabecalhos.py --salvar   # toda tela explica o que faz
 ```
 
 **A varredura completa DESCOBRE; a watchlist ACOMPANHA.** A varredura da
@@ -433,3 +434,11 @@ padrões → caixa → padrao → build. Períodos curtos são declarados na tel
   (`piores_total`, `frase_ver_todas`), ou é grade de cards com filtro
   contado no build (`clinicas_indice.cards`, ordenada por alerta). O casco
   continua proibido de contar e de ordenar.
+- **FERRAMENTA QUE NÃO DIZ O QUE FAZ É PAINEL DE SISTEMA.** "Alertas nas
+  fichas do Google" foi para a tela com um rótulo, quatro números grandes e
+  a linha de método em mono embaixo do título — nenhuma frase dizendo que
+  pergunta aquilo responde nem para quem. `scripts/cabecalhos.py` guarda o
+  cabeçalho de cada tela (sobrelinha, título-frase, pergunta, para quem,
+  como ler, o que não é, método) e **falha alto** quando um payload de tela
+  não tem o seu; arquivo que não é tela se declara em `SEM_TELA` com o
+  motivo. O método vai no RODAPÉ, nunca embaixo do título.

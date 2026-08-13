@@ -181,8 +181,177 @@ Payload: `franqueadora.json` → bloco de mudanças do mercado.
 ## O que NÃO muda
 
 - Os sete itens do menu. Nenhum item novo.
-- O visual, a paleta, a tipografia, o estilo dos cards.
+- A identidade: azul-noite, o ciano da marca, a fonte, a grade.
+  (O acabamento muda — está na Parte 2 —, a identidade não.)
 - Todas as outras telas.
 - A regra de sempre: **o casco não calcula.** Todo número, rótulo, plural e
   frase saem prontos do payload. A única contagem permitida na tela
   continua sendo o "mostrando as 30 primeiras de N que casam" da busca.
+
+---
+
+# Parte 2 — o cabeçalho, e a linguagem da apresentação
+
+Esta parte veio de duas coisas: os cabeçalhos do portal estão pobres, e a
+apresentação que o Claude Design fez para a diretoria (`Orthodontic
+Intelligence`, 22 slides) está muito melhor. **O portal precisa falar a
+mesma língua daquele deck.** Não é trocar a paleta: é adotar a arquitetura
+de cabeçalho, a hierarquia de tipo e o hábito de explicar.
+
+## 5 · O problema, dito sem rodeio
+
+Hoje uma ferramenta abre assim:
+
+    A REDE INTEIRA
+    Alertas nas fichas do Google
+    A ficha pública de cada unidade da rede, pela API do Google. Uma chamada por unidade.
+    ┌ 374 ┐ ┌ 326 ┐ ┌ 4,8 ┐ ┌ 13 ┐
+    Não é ritmo nem voz do paciente — para isso é a varredura completa, que hoje cobre 13 praças…
+
+Quatro problemas em cinco linhas:
+
+1. **"Alertas nas fichas do Google" é rótulo de sistema, não frase.** Não
+   diz o que a ferramenta faz nem por que importa.
+2. **"pela API do Google. Uma chamada por unidade"** é conversa de quem
+   construiu, não de quem usa.
+3. **O método está em cima**, em mono minúsculo, ocupando a largura
+   inteira — a primeira coisa que a pessoa lê é metodologia.
+4. **Nenhuma linha diz para quem aquilo serve** nem o que fazer depois.
+
+O deck resolve os quatro em toda página. É isso que o portal precisa fazer.
+
+## 6 · A anatomia do cabeçalho (igual à do deck)
+
+```
+  DA REDE INTEIRA                                   ORTHODONTIC INTELLIGENCE
+  ──────────────────────────────────────────────────────────────────────────
+  A vitrine da marca na rua:
+  a ficha de cada unidade no Google
+  Quando alguém procura uma unidade da OrthoDontic, o que ele encontra —
+  e onde a marca está mal apresentada?
+
+  PARA  franqueadora · consultor de campo
+```
+
+| faixa | conteúdo | tipo |
+|---|---|---|
+| sobrelinha esquerda | `cabecalho.sobrelinha` | mono 11px, +0.18em, ciano |
+| sobrelinha direita | `ORTHODONTIC INTELLIGENCE` | mono 11px, +0.18em, 22% de opacidade |
+| régua | hairline 1px a 10% | — |
+| **título** | `cabecalho.titulo` | **44px / peso 900 / entrelinha 1.05 / −0.03em** |
+| subtítulo | `cabecalho.pergunta` | 15px, cinza-claro, máx. 62ch |
+| para quem | `cabecalho.para_quem` | chips mono 11px |
+
+O título **quebra em duas linhas** quando é longo, como no deck — não
+encolhe a fonte. Duas linhas de 44px valem mais que uma de 28px.
+
+### 6.1 · O método desce para o rodapé
+
+`cabecalho.metodo` e `cabecalho.o_que_nao_e` saem de cima e vão para o
+**pé da tela**, depois do conteúdo, separados por uma hairline:
+
+```
+  ──────────────────────────────────────────────────────────────────────────
+  COMO ISTO É MEDIDO   uma chamada por unidade à ficha pública do Google,
+                       para todas as unidades da lista oficial.
+  O QUE ISTO NÃO É     não é ritmo nem voz do paciente — aqui é retrato:
+                       como a unidade aparece agora para quem procura.
+```
+
+Continua sempre visível. Não vira tooltip, não vira modal, não vira "?".
+Esconder como se mede é o que faz o número virar palpite — mas ninguém
+precisa ler método para entender manchete.
+
+### 6.2 · O "como ler", quando existe
+
+`cabecalho.como_ler` vira uma faixa discreta **entre o cabeçalho e o
+conteúdo**, com barra ciano à esquerda — igual aos blocos de conclusão do
+deck. É a instrução de uso, e é o que impede a leitura errada.
+
+### 6.3 · O payload
+
+Tudo isto já está pronto em **todos** os arquivos de tela:
+
+```json
+"cabecalho": {
+  "sobrelinha": "DA REDE INTEIRA",
+  "titulo": "A vitrine da marca na rua: a ficha de cada unidade no Google",
+  "pergunta": "Quando alguém procura uma unidade da OrthoDontic, …",
+  "para_quem": ["franqueadora", "consultor de campo"],
+  "como_ler": "A ficha do Google é a fachada digital: …",
+  "o_que_nao_e": "Não é ritmo nem voz do paciente — …",
+  "metodo": "uma chamada por unidade à ficha pública do Google, …"
+}
+```
+
+E há um índice central, **`dados/portal/cabecalhos.json`**, com as 23
+ferramentas. Use-o na página da clínica, onde dez ferramentas convivem na
+mesma tela: cada bloco leva o cabeçalho da ferramenta de onde ele veio, em
+versão reduzida (sobrelinha + título + pergunta em uma linha).
+
+**Nunca escreva título na mão.** Se um título parece errado, ele se
+conserta em `scripts/cabecalhos.py`, não na tela.
+
+## 7 · O que mais o deck faz melhor, e o portal deve copiar
+
+### 7.1 · Números grandes como âncora, com legenda embaixo
+
+O deck usa `374 / unidades`, `~291 mil / habitantes`, `19 / anúncios
+ativos`. Número em mono, 34–56px, **legenda em 13px cinza embaixo, nunca
+ao lado**. O portal já faz isso nas tiras — falta usar a **cor
+semântica**.
+
+### 7.2 · A cor significa alguma coisa
+
+O deck tem quatro acentos e cada um quer dizer uma coisa. O portal está
+todo azul, e por isso tudo parece ter o mesmo peso.
+
+| cor | quando |
+|---|---|
+| **ciano** | medido, neutro, o padrão |
+| **verde-água** | resultado bom, oportunidade, ação recomendada |
+| **amarelo** | atenção, hipótese, "ainda não dá para afirmar" |
+| **vermelho** | risco aberto, faixa vermelha, alerta ativo |
+
+Isto casa com o carimbo de confiança que já vem no payload: **fato** →
+ciano sólido; **inferência** → amarelo; **recomendação** → verde-água,
+sempre em cartão de ação, nunca com cara de medição.
+
+### 7.3 · Toda tela termina com uma conclusão
+
+O deck fecha cada página com uma linha no rodapé: cinza → seta → **negrito
+branco**.
+
+    Hoje essas respostas estão espalhadas pela internet.  →  O portal organiza e interpreta.
+
+O portal termina no último gráfico e deixa a pessoa sozinha com o número.
+Toda ferramenta ganha essa linha final, tirada do payload: `manchete`,
+`conclusao` ou `frase_da_grade`, conforme a tela.
+
+### 7.4 · Cartão com fundo em degradê, não caixa com borda
+
+No deck os cartões têm degradê sutil no azul e borda quase invisível; a
+separação vem do **fundo**, não do contorno. O portal usa borda em tudo, e
+é isso que dá ar de painel administrativo antigo. Um degrau de fundo, raio
+14px, borda só no cartão selecionado ou crítico.
+
+### 7.5 · Mono para metadado, sans para conteúdo
+
+O deck é rigoroso: rótulo (`ANÚNCIOS ATIVOS`, `PRAZO`, `COMO SABEREMOS`) é
+sempre mono maiúsculo espaçado; o conteúdo é sempre sans. O portal mistura
+os dois e usa mono em texto corrido — foi assim que a linha de método
+virou aquele borrão cinza embaixo do título.
+
+### 7.6 · Antes → depois, quando houver os dois
+
+Duas colunas, `ANTES` cinza e `DEPOIS` ciano, como nos slides 12 e 14. O
+livro de ações (`acoes.json`) tem exatamente essa forma: métrica antes,
+ação, métrica depois, veredito. Hoje ele desenha como lista.
+
+## 8 · Um aviso sobre o deck
+
+A apresentação diz **374 unidades**. A lista oficial da rede, lida no dia,
+tem **373** — e o portal mostra 373 porque conta o que está no arquivo. Os
+dois números não brigam: um é slide de agosto, o outro é a leitura de
+hoje. Só não copie o 374 para dentro do portal: **na tela, número vem
+sempre do payload.**

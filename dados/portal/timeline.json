@@ -3582,5 +3582,18 @@
    ],
    "eventos_alem_da_janela": 0
   }
- ]
+ ],
+ "cabecalho": {
+  "sobrelinha": "DESTA CLÍNICA",
+  "titulo": "A vida da clínica, medição por medição",
+  "pergunta": "O que mudou nesta unidade desde que começamos a medir?",
+  "para_quem": [
+   "franqueado",
+   "consultor de campo"
+  ],
+  "como_ler": "Cada ponto é uma medição, com a data. O que não foi medido aparece como buraco, não como zero.",
+  "o_que_nao_e": "Não é histórico da clínica: começa no dia em que a medição começou, e não antes.",
+  "metodo": "a série append-only de cada loja, chaveada por local_id.",
+  "e_texto_autorado": true
+ }
 }
