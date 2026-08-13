@@ -303,7 +303,7 @@ def monta():
         if o_que and rival:
             o_que = o_que.format(rival=rival["nome"])
 
-        nome_curto = (u["nome"] or "").replace("OrthoDontic", "").strip(" -–—")
+        nome_curto = (u["nome"] or "").replace("OrthoDontic", "").strip(" ·-–—")
         # "OrthoDontic Feira de Santana" numa praça de uma unidade só vira
         # "BA · Feira de Santana · Feira de Santana" na tela — repetir a
         # cidade ao lado dela mesma é ruído. E "Cuiabá Dom Bosco" começa
@@ -312,7 +312,7 @@ def monta():
         if nome_curto.lower() == cidade.lower():
             nome_curto = ""
         elif nome_curto.lower().startswith(cidade.lower() + " "):
-            nome_curto = nome_curto[len(cidade):].strip(" -–—")
+            nome_curto = nome_curto[len(cidade):].strip(" ·-–—")
         # o número de HOJE de cada gatilho, na mesma escala em que ele foi
         # aberto. É o que permite dizer se um alerta que sumiu foi resolvido
         # ou apenas deixou de ser medido do mesmo jeito.

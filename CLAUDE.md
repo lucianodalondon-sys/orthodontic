@@ -125,9 +125,20 @@ python3 scripts/livro_de_acoes.py --salvar        # o ciclo, antes e depois
 python3 scripts/confere_tese.py                   # número da tese ainda existe?
 python3 scripts/confere_carimbo.py                # amostra e unidade batem?
 python3 scripts/lint_semantico.py                 # frase que a medição já negou?
+python3 scripts/reteste.py --salvar               # afirmação vs TODAS as praças
+python3 scripts/rede_aprende.py --salvar          # o que a rede descobriu
+python3 scripts/comparador_de_lojas.py --salvar   # os gêmeos
+python3 scripts/anomalias_da_rede.py --salvar     # depende dos gêmeos
+python3 scripts/playbook_do_concorrente.py --salvar
+python3 scripts/agenda_do_consultor.py --salvar   # depende de fila + gêmeos
+python3 scripts/resumo_executivo.py --salvar      # a home; por último dos motores
 python3 scripts/build_portal.py
 python3 scripts/cabecalhos.py --salvar   # toda tela explica o que faz
 ```
+
+**A ORDEM DOS SEIS MOTORES NÃO É NEGOCIÁVEL.** `anomalias` lê `gemeos`,
+`agenda` lê `fila` + `gemeos` + `jornada`, e `resumo_executivo` lê todos.
+Cada um FALHA ALTO com o comando que falta, em vez de publicar tela vazia.
 
 **A varredura completa DESCOBRE; a watchlist ACOMPANHA.** A varredura da
 categoria não devolve o mesmo universo duas vezes — Cuiabá teve 53% de
@@ -442,3 +453,37 @@ padrões → caixa → padrao → build. Períodos curtos são declarados na tel
   como ler, o que não é, método) e **falha alto** quando um payload de tela
   não tem o seu; arquivo que não é tela se declara em `SEM_TELA` com o
   motivo. O método vai no RODAPÉ, nunca embaixo do título.
+- **TODA FERRAMENTA TERMINA EM CINCO RESPOSTAS, OU NÃO É FERRAMENTA.**
+  O que aconteceu → por que importa → quem precisa agir → o que fazer →
+  como encaminho. Quem não chega na quinta é dado, evidência ou detalhe de
+  outra tela, e o lugar dele é dentro dela. `scripts/insight.py` é a peça
+  única que monta esse objeto, com o texto de encaminhamento pronto por
+  destinatário (diretoria, consultor, franqueado, marketing, operações,
+  expansão). **Encaminhar não é CRM**: o portal não guarda para quem foi
+  mandado nem se alguém executou — quem responde isso é a próxima medição.
+- **A HOME NÃO É O ÍNDICE DAS FERRAMENTAS.** Ela respondia com contagem
+  operacional ("13 vermelhas", "399 esperando resposta") e parecia a página
+  da clínica. A clínica responde "o que acontece com esta unidade"; a home
+  responde **"o que acontece na REDE que ninguém veria olhando loja por
+  loja"**. São cinco perguntas e no máximo doze cartões
+  (`resumo_executivo.py`), e nenhum deles repete uma ferramenta: todos são
+  cruzamento.
+- **RETESTE EMPILHAVA EM VEZ DE SUBSTITUIR.** `achados.json` tinha 39
+  linhas para 17 afirmações — "A confiança é em gente com nome" aparecia
+  SETE vezes, uma dizendo 13/13 e outra 23/23, que é a mesma frase em duas
+  bases. E o resumo no topo dizia `constante: 0` com 28 constantes abaixo.
+  A camada que deveria sintetizar estava repetindo. Agora o reteste
+  substitui por título, e `rede_aprende.py` CONTA os estados dos itens e
+  falha alto se uma afirmação voltar a se repetir.
+- **GRUPO DE DOIS NÃO É GRUPO.** O playbook separou 2 concorrentes que
+  avançam de 10 que não e publicou "aparece em 50% dos que avançam" — que
+  é UM concorrente. Toda comparação entre grupos tem tamanho mínimo, e
+  quando não há base o que se publica é o FUNIL (271 medidos → 46 disputam
+  aparelho → 16 com ritmo comparável → 12 com texto suficiente), dizendo
+  por que a comparação não saiu.
+- **GÊMEO SE ESCOLHE POR MERCADO, NUNCA POR RESULTADO.** A primeira versão
+  do comparador usou `meses` — que é quantos meses a loja teve movimento
+  acima do próprio típico, ou seja, resultado. Eixo de resultado dentro da
+  escolha do par torna a conta circular: as que crescem parecem com as que
+  crescem. Os eixos são população, público adulto, densidade da categoria e
+  meses desde a PRIMEIRA avaliação.

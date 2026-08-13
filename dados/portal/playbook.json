@@ -1,0 +1,413 @@
+{
+ "o_que_e": "O que separa o concorrente que avança do que não avança, somando todas as praças medidas — e o que o mercado inteiro está anunciando.",
+ "por_que_importa": "a tela do rival serve o franqueado, uma praça por vez. Esta serve a decisão nacional: o que vale virar padrão de rede e o que não vale",
+ "o_que_nao_e": "não é causa e não é receita. Frequência que anda junto com ritmo é pista; chamar de mecanismo seria inventar",
+ "quem_e_vencedor": {
+  "regra": "disputa aparelho, tem pelo menos 60 avaliações com texto lidas, sustenta movimento há 10 meses ou mais e corre acima da mediana da própria praça",
+  "porque_assim": "faturamento não entra: o portal é feito inteiramente de informação externa",
+  "vencedores": 2,
+  "resto": 10
+ },
+ "corte_de_diferenca_pp": 15,
+ "minimo_por_grupo": 6,
+ "base_suficiente": false,
+ "porque_sem_comparacao": "são 2 concorrentes que avançam contra 10 que não. Com grupo menor que 6, cada clínica vira dezenas de pontos percentuais e o resultado é ruído com cara de achado — a comparação não é publicada.",
+ "o_que_aumentaria_a_base": "classificar por produto os concorrentes que a varredura já mediu e ainda não estão na identidade, e ler as avaliações por inteiro nos que disputam aparelho",
+ "funil_ate_a_comparacao": [
+  {
+   "degrau": "concorrentes medidos",
+   "quantos": 271
+  },
+  {
+   "degrau": "disputam aparelho",
+   "quantos": 46,
+   "porque_caem": "odontologia não é ortodontia: clínica geral, implante e universidade dividem a rua, não o paciente de aparelho"
+  },
+  {
+   "degrau": "com ritmo comparável",
+   "quantos": 16,
+   "porque_caem": "a leitura de avaliações foi truncada — as N mais novas cobrem a vida inteira de uma loja pequena e poucas semanas de uma grande"
+  },
+  {
+   "degrau": "com avaliações de texto suficientes",
+   "quantos": 12,
+   "porque_caem": "abaixo de 60 avaliações com texto a clínica não define padrão"
+  }
+ ],
+ "manchete": "ainda não dá para comparar quem avança com quem não avança: 2 contra 10",
+ "o_que_os_vencedores_fazem": [],
+ "o_que_os_vencedores_fazem_total": 0,
+ "testamos_e_nao_explicou": [],
+ "testamos_e_nao_explicou_total": 0,
+ "o_que_o_mercado_anuncia": [
+  {
+   "eixo": "avaliacao_gratis",
+   "o_que_e": "Avaliação grátis",
+   "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+   "pracas": 21,
+   "anuncios": 205,
+   "frase": "21 praças de 23 medidas",
+   "onde_mais_pesa": [
+    {
+     "rotulo": "TO · Palmas",
+     "pct": 67
+    },
+    {
+     "rotulo": "SC · Mafra",
+     "pct": 62
+    },
+    {
+     "rotulo": "SP · Presidente Prudente",
+     "pct": 62
+    },
+    {
+     "rotulo": "PA · Marabá",
+     "pct": 54
+    },
+    {
+     "rotulo": "AP · Macapá",
+     "pct": 50
+    }
+   ],
+   "onde_mais_pesa_total": 21
+  },
+  {
+   "eixo": "alinhador",
+   "o_que_e": "Alinhador invisível",
+   "o_que_significa": "produto de ticket alto e público adulto",
+   "pracas": 20,
+   "anuncios": 171,
+   "frase": "20 praças de 23 medidas",
+   "onde_mais_pesa": [
+    {
+     "rotulo": "TO · Palmas",
+     "pct": 67
+    },
+    {
+     "rotulo": "RJ · Rio de Janeiro",
+     "pct": 52
+    },
+    {
+     "rotulo": "RS · Porto Alegre",
+     "pct": 50
+    },
+    {
+     "rotulo": "MA · Imperatriz",
+     "pct": 45
+    },
+    {
+     "rotulo": "GO · Goiânia",
+     "pct": 43
+    }
+   ],
+   "onde_mais_pesa_total": 20
+  },
+  {
+   "eixo": "autoridade",
+   "o_que_e": "Autoridade técnica",
+   "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+   "pracas": 20,
+   "anuncios": 162,
+   "frase": "20 praças de 23 medidas",
+   "onde_mais_pesa": [
+    {
+     "rotulo": "SP · Presidente Prudente",
+     "pct": 75
+    },
+    {
+     "rotulo": "MA · Imperatriz",
+     "pct": 73
+    },
+    {
+     "rotulo": "SC · Joinville",
+     "pct": 67
+    },
+    {
+     "rotulo": "CE · Juazeiro do Norte",
+     "pct": 50
+    },
+    {
+     "rotulo": "RJ · Rio de Janeiro",
+     "pct": 48
+    }
+   ],
+   "onde_mais_pesa_total": 20
+  },
+  {
+   "eixo": "urgencia",
+   "o_que_e": "Urgência e escassez",
+   "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+   "pracas": 17,
+   "anuncios": 94,
+   "frase": "17 praças de 23 medidas",
+   "onde_mais_pesa": [
+    {
+     "rotulo": "SP · Presidente Prudente",
+     "pct": 75
+    },
+    {
+     "rotulo": "PA · Marabá",
+     "pct": 62
+    },
+    {
+     "rotulo": "PR · Londrina",
+     "pct": 43
+    },
+    {
+     "rotulo": "PA · Parauapebas",
+     "pct": 27
+    },
+    {
+     "rotulo": "SP · Sorocaba",
+     "pct": 19
+    }
+   ],
+   "onde_mais_pesa_total": 17
+  },
+  {
+   "eixo": "publico_infantil",
+   "o_que_e": "Falado para criança e adolescente",
+   "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+   "pracas": 15,
+   "anuncios": 48,
+   "frase": "15 praças de 23 medidas",
+   "onde_mais_pesa": [
+    {
+     "rotulo": "MA · Imperatriz",
+     "pct": 64
+    },
+    {
+     "rotulo": "CE · Juazeiro do Norte",
+     "pct": 50
+    },
+    {
+     "rotulo": "MG · Contagem",
+     "pct": 27
+    },
+    {
+     "rotulo": "RJ · Rio de Janeiro",
+     "pct": 13
+    },
+    {
+     "rotulo": "PR · Curitiba",
+     "pct": 12
+    }
+   ],
+   "onde_mais_pesa_total": 15
+  },
+  {
+   "eixo": "estetico",
+   "o_que_e": "Aparelho estético",
+   "o_que_significa": "vende discrição — público que trabalha de frente",
+   "pracas": 14,
+   "anuncios": 61,
+   "frase": "14 praças de 23 medidas",
+   "onde_mais_pesa": [
+    {
+     "rotulo": "MG · Contagem",
+     "pct": 27
+    },
+    {
+     "rotulo": "BA · Feira de Santana",
+     "pct": 19
+    },
+    {
+     "rotulo": "PR · Londrina",
+     "pct": 17
+    },
+    {
+     "rotulo": "GO · Goiânia",
+     "pct": 16
+    },
+    {
+     "rotulo": "PA · Marabá",
+     "pct": 15
+    }
+   ],
+   "onde_mais_pesa_total": 14
+  },
+  {
+   "eixo": "preco",
+   "o_que_e": "Preço na frente",
+   "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
+   "pracas": 13,
+   "anuncios": 63,
+   "frase": "13 praças de 23 medidas",
+   "onde_mais_pesa": [
+    {
+     "rotulo": "PA · Marabá",
+     "pct": 46
+    },
+    {
+     "rotulo": "AP · Macapá",
+     "pct": 33
+    },
+    {
+     "rotulo": "RS · Caxias do Sul",
+     "pct": 29
+    },
+    {
+     "rotulo": "GO · Goiânia",
+     "pct": 20
+    },
+    {
+     "rotulo": "SP · São Paulo",
+     "pct": 17
+    }
+   ],
+   "onde_mais_pesa_total": 13
+  },
+  {
+   "eixo": "parcelamento",
+   "o_que_e": "Parcelamento",
+   "o_que_significa": "vende a mensalidade, não o tratamento",
+   "pracas": 12,
+   "anuncios": 37,
+   "frase": "12 praças de 23 medidas",
+   "onde_mais_pesa": [
+    {
+     "rotulo": "AP · Macapá",
+     "pct": 33
+    },
+    {
+     "rotulo": "MG · Uberlândia",
+     "pct": 14
+    },
+    {
+     "rotulo": "RS · Caxias do Sul",
+     "pct": 11
+    },
+    {
+     "rotulo": "PR · Curitiba",
+     "pct": 10
+    },
+    {
+     "rotulo": "PR · Londrina",
+     "pct": 9
+    }
+   ],
+   "onde_mais_pesa_total": 12
+  },
+  {
+   "eixo": "rapidez",
+   "o_que_e": "Rapidez do resultado",
+   "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+   "pracas": 12,
+   "anuncios": 32,
+   "frase": "12 praças de 23 medidas",
+   "onde_mais_pesa": [
+    {
+     "rotulo": "SC · Mafra",
+     "pct": 25
+    },
+    {
+     "rotulo": "GO · Goiânia",
+     "pct": 18
+    },
+    {
+     "rotulo": "RS · Caxias do Sul",
+     "pct": 11
+    },
+    {
+     "rotulo": "MT · Cuiabá",
+     "pct": 9
+    },
+    {
+     "rotulo": "SP · Sorocaba",
+     "pct": 6
+    }
+   ],
+   "onde_mais_pesa_total": 12
+  },
+  {
+   "eixo": "publico_adulto",
+   "o_que_e": "Falado para adulto",
+   "o_que_significa": "disputa o adulto que adiou o tratamento",
+   "pracas": 7,
+   "anuncios": 14,
+   "frase": "7 praças de 23 medidas",
+   "onde_mais_pesa": [
+    {
+     "rotulo": "CE · Juazeiro do Norte",
+     "pct": 25
+    },
+    {
+     "rotulo": "BA · Feira de Santana",
+     "pct": 10
+    },
+    {
+     "rotulo": "SP · São Paulo",
+     "pct": 6
+    },
+    {
+     "rotulo": "SP · Sorocaba",
+     "pct": 3
+    },
+    {
+     "rotulo": "SC · Joinville",
+     "pct": 3
+    }
+   ],
+   "onde_mais_pesa_total": 7
+  },
+  {
+   "eixo": "sem_entrada",
+   "o_que_e": "Sem entrada",
+   "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
+   "pracas": 1,
+   "anuncios": 1,
+   "frase": "1 praça de 23 medidas",
+   "onde_mais_pesa": [
+    {
+     "rotulo": "SP · São Paulo",
+     "pct": 1
+    }
+   ],
+   "onde_mais_pesa_total": 1
+  },
+  {
+   "eixo": "prova_social",
+   "o_que_e": "Prova social",
+   "o_que_significa": "vende confiança em vez de preço",
+   "pracas": 1,
+   "anuncios": 1,
+   "frase": "1 praça de 23 medidas",
+   "onde_mais_pesa": [
+    {
+     "rotulo": "MT · Cuiabá",
+     "pct": 3
+    }
+   ],
+   "onde_mais_pesa_total": 1
+  }
+ ],
+ "o_que_o_mercado_anuncia_total": 12,
+ "pracas_com_anuncio": 23,
+ "posicoes_vagas": [
+  {
+   "posicao": "Ninguém está falando de sem entrada — tira a barreira do primeiro pagamento — ataca quem não tem reserva.",
+   "pracas": 12
+  },
+  {
+   "posicao": "Ninguém está falando de preço na frente — a cidade disputa por número; entrar aqui é entrar na briga mais cara.",
+   "pracas": 9
+  },
+  {
+   "posicao": "Ninguém está falando de prova social — vende confiança em vez de preço.",
+   "pracas": 1
+  }
+ ],
+ "cabecalho": {
+  "sobrelinha": "DA REDE INTEIRA",
+  "titulo": "O que os concorrentes que avançam fazem — e o que testamos e não explicou nada",
+  "pergunta": "Somando todas as praças, o que separa o concorrente que avança do que não avança?",
+  "para_quem": [
+   "franqueadora",
+   "marketing e agência"
+  ],
+  "como_ler": "A segunda metade da tela é a que dá crédito à primeira: eixo testado que não separou nada fica publicado, com o número dos dois lados.",
+  "o_que_nao_e": "Não é receita. Frequência que anda junto com ritmo é pista, não mecanismo — e quando o grupo é pequeno demais, a comparação não é publicada.",
+  "metodo": "voz do paciente dos concorrentes que disputam aparelho, somada às ofertas anunciadas em cada praça.",
+  "e_texto_autorado": true
+ }
+}

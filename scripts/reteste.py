@@ -279,10 +279,31 @@ def main():
     if a.salvar:
         p = CONT/"achados.json"
         d = json.loads(p.read_text(encoding="utf-8"))
-        # o achado do atendimento já é 13/13 e foi retestado; fica no topo
-        topo = [x for x in d["achados"] if x.get("estado") == "constante"]
-        caidos = [x for x in d["achados"] if x.get("estado") == "derrubada"]
-        d["achados"] = topo + saida + caidos
+        # RETESTE NÃO EMPILHA — ELE SUBSTITUI.
+        #
+        # A primeira versão guardava TODOS os `constante` antigos e somava a
+        # rodada nova por cima. Cada execução duplicava o conjunto inteiro:
+        # 39 achados para 17 afirmações distintas, com "A confiança é em
+        # gente com nome" aparecendo SETE vezes — uma dizendo 13/13 e outra
+        # 23/23, que são a mesma frase medida em dois tamanhos de base. A
+        # camada que deveria sintetizar estava repetindo.
+        #
+        # Agora a chave é o TÍTULO: o que o reteste mediu nesta rodada
+        # substitui a medição anterior da mesma afirmação. O que ele não
+        # mede (achado antigo que saiu da bateria, derrubado histórico)
+        # sobrevive, uma vez só, na ordem em que estava.
+        novos = {x["t"]: x for x in saida}
+        antigos = []
+        vistos = set()
+        for x in d["achados"]:
+            t = x.get("t")
+            if t in novos or t in vistos:
+                continue
+            vistos.add(t)
+            antigos.append(x)
+        caidos = [x for x in antigos if x.get("estado") == "derrubada"]
+        ficam = [x for x in antigos if x.get("estado") != "derrubada"]
+        d["achados"] = ficam + saida + caidos
         d["nota_teto"] = (
             f"Os achados foram retestados contra as {len(pracas)} praças em "
             f"{'2026-08-10'}. Antes, doze deles diziam 4/4 — mediam quatro "

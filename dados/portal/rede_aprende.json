@@ -1,0 +1,1049 @@
+{
+ "o_que_e": "O que a OrthoDontic descobriu observando as praças medidas — e com quanta força cada descoberta se sustenta.",
+ "por_que_importa": "qualquer um coleta o Google. Isto é o cruzamento de 23 praças medidas do mesmo jeito, e é o que não se copia raspando fonte pública",
+ "o_que_nao_e": "não é causa. Nenhuma linha aqui prova que fazer X produz Y: são padrões observados, e um deles já caiu quando a base cresceu",
+ "como_o_nivel_e_calculado": {
+  "confirmado": "base ≥ 8 praças e 95% delas passando",
+  "ganhando_forca": "base ≥ 5 praças e 75% passando",
+  "em_teste": "base menor que isso, ou não testável com o que medimos hoje",
+  "derrubado": "a medição contradisse",
+  "quem_calcula": "o placar do reteste, nunca um rótulo escrito à mão"
+ },
+ "manchete": "6 padrões confirmados na rede, 2 explicações derrubadas pelo dado",
+ "niveis": [
+  {
+   "titulo": "Confirmado na rede",
+   "o_que_e": "passou em praticamente toda praça que teve amostra para votar, e a base é grande o bastante para não ser coincidência de amostra",
+   "peso": 0,
+   "chave": "confirmado",
+   "quantos": 6,
+   "frase": "6 descobertas"
+  },
+  {
+   "titulo": "Padrão ganhando força",
+   "o_que_e": "passa na maioria das praças, e a praça que contraria está nomeada — padrão sem exceção soa a curadoria",
+   "peso": 1,
+   "chave": "ganhando_forca",
+   "quantos": 2,
+   "frase": "2 descobertas"
+  },
+  {
+   "titulo": "Hipótese em teste",
+   "o_que_e": "ou a base ainda é pequena, ou a afirmação não é testável com o que medimos hoje. Fica na tela com o motivo, porque saber o que NÃO tem lastro também é informação",
+   "peso": 2,
+   "chave": "em_teste",
+   "quantos": 7,
+   "frase": "7 descobertas"
+  },
+  {
+   "titulo": "Derrubado pelo dado",
+   "o_que_e": "a medição contradisse a explicação. É o nível que dá crédito aos outros três",
+   "peso": 3,
+   "chave": "derrubado",
+   "quantos": 2,
+   "frase": "2 descobertas"
+  }
+ ],
+ "descobertas_total": 17,
+ "descobertas": [
+  {
+   "titulo": "A confiança é em gente com nome, não em marca",
+   "nivel": "confirmado",
+   "placar": "23/23",
+   "passou": 23,
+   "base": 23,
+   "porque_neste_nivel": "passou em 23 das 23 praças que votaram",
+   "leitura": null,
+   "como_se_mede": "mede quanto das avaliações cita uma pessoa pelo nome próprio.",
+   "evidencias": [
+    {
+     "onde": "RS · Caxias do Sul",
+     "valor": "4% das avaliações citam alguém pelo nome"
+    },
+    {
+     "onde": "MG · Contagem",
+     "valor": "10% das avaliações citam alguém pelo nome"
+    },
+    {
+     "onde": "MT · Cuiabá",
+     "valor": "5% das avaliações citam alguém pelo nome"
+    },
+    {
+     "onde": "PR · Curitiba",
+     "valor": "7% das avaliações citam alguém pelo nome"
+    },
+    {
+     "onde": "BA · Feira de Santana",
+     "valor": "5% das avaliações citam alguém pelo nome"
+    },
+    {
+     "onde": "SC · Florianópolis",
+     "valor": "6% das avaliações citam alguém pelo nome"
+    }
+   ],
+   "evidencias_total": 8,
+   "excecoes": [],
+   "sem_amostra": [],
+   "derrubada_por": null,
+   "o_que_significa": "A marca institucional pode estar forte, e ainda assim a confiança local estar sendo construída em PESSOAS. Onde o paciente cita um profissional pelo nome, ele está recomendando alguém, não uma placa.",
+   "decisao_sugerida": "Testar protagonismo dos ortodontistas em cinco unidades — nome e rosto na ficha do Google, na resposta às avaliações e no conteúdo local — e remedir em 60 dias.",
+   "dono_da_decisao": "franqueadora",
+   "carimbo_da_decisao": {
+    "natureza": "recomendacao",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": null,
+    "janela_dias": null,
+    "medicoes": null,
+    "fonte": null,
+    "a_favor": [
+     "o placar em cima é medido"
+    ],
+    "contra": [
+     "o que fazer com ele é opinião informada, e o portal não sabe se foi executado"
+    ],
+    "o_que_aumentaria": "remedir a mesma métrica depois do prazo, como no livro de ações",
+    "procedencia": "sem amostra declarada"
+   },
+   "carimbo": {
+    "natureza": "fato",
+    "confianca": "media",
+    "medido": true,
+    "amostra": 23,
+    "janela_dias": null,
+    "medicoes": 2,
+    "fonte": null,
+    "a_favor": [
+     "passou em 23 das 23 praças que votaram"
+    ],
+    "contra": [],
+    "o_que_aumentaria": "medir mais praças do mesmo jeito",
+    "procedencia": "medido em 23 praças, 2 medições"
+   }
+  },
+  {
+   "titulo": "A porta de entrada é 'dentista', não 'aparelho'",
+   "nivel": "confirmado",
+   "placar": "23/23",
+   "passou": 23,
+   "base": 23,
+   "porque_neste_nivel": "passou em 23 das 23 praças que votaram",
+   "leitura": null,
+   "como_se_mede": "compara quantas frases que a cidade digita são da família 'dentista' contra a família 'aparelho'. Quem digita 'dentista' é quem marca a avaliação e sai com aparelho.",
+   "evidencias": [
+    {
+     "onde": "RS · Caxias do Sul",
+     "valor": "porta 'dentista' 33 frases contra 'aparelho' 2"
+    },
+    {
+     "onde": "MG · Contagem",
+     "valor": "porta 'dentista' 17 frases contra 'aparelho' 1"
+    },
+    {
+     "onde": "MT · Cuiabá",
+     "valor": "porta 'dentista' 16 frases contra 'aparelho' 1"
+    },
+    {
+     "onde": "PR · Curitiba",
+     "valor": "porta 'dentista' 26 frases contra 'aparelho' 5"
+    },
+    {
+     "onde": "BA · Feira de Santana",
+     "valor": "porta 'dentista' 17 frases contra 'aparelho' 1"
+    },
+    {
+     "onde": "SC · Florianópolis",
+     "valor": "porta 'dentista' 31 frases contra 'aparelho' 3"
+    }
+   ],
+   "evidencias_total": 8,
+   "excecoes": [],
+   "sem_amostra": [],
+   "derrubada_por": null,
+   "o_que_significa": "O paciente que vira caso de aparelho quase nunca digita 'aparelho'. Ele digita 'dentista', marca uma avaliação e sai com aparelho. Comprar só a palavra do produto é disputar a menor das duas portas.",
+   "decisao_sugerida": "Revisar as frases de captação de cada praça: a lista de portas medidas da cidade está na tela da praça.",
+   "dono_da_decisao": "franqueadora",
+   "carimbo_da_decisao": {
+    "natureza": "recomendacao",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": null,
+    "janela_dias": null,
+    "medicoes": null,
+    "fonte": null,
+    "a_favor": [
+     "o placar em cima é medido"
+    ],
+    "contra": [
+     "o que fazer com ele é opinião informada, e o portal não sabe se foi executado"
+    ],
+    "o_que_aumentaria": "remedir a mesma métrica depois do prazo, como no livro de ações",
+    "procedencia": "sem amostra declarada"
+   },
+   "carimbo": {
+    "natureza": "fato",
+    "confianca": "media",
+    "medido": true,
+    "amostra": 23,
+    "janela_dias": null,
+    "medicoes": 2,
+    "fonte": null,
+    "a_favor": [
+     "passou em 23 das 23 praças que votaram"
+    ],
+    "contra": [],
+    "o_que_aumentaria": "medir mais praças do mesmo jeito",
+    "procedencia": "medido em 23 praças, 2 medições"
+   }
+  },
+  {
+   "titulo": "A recomendação é o motor, e ela é espontânea",
+   "nivel": "confirmado",
+   "placar": "22/23",
+   "passou": 22,
+   "base": 23,
+   "porque_neste_nivel": "passou em 22 das 23 praças que votaram",
+   "leitura": null,
+   "como_se_mede": "mede quanto das avaliações recomenda explicitamente a clínica.",
+   "evidencias": [
+    {
+     "onde": "RS · Caxias do Sul",
+     "valor": "28% recomendam explicitamente"
+    },
+    {
+     "onde": "MG · Contagem",
+     "valor": "21% recomendam explicitamente"
+    },
+    {
+     "onde": "MT · Cuiabá",
+     "valor": "22% recomendam explicitamente"
+    },
+    {
+     "onde": "PR · Curitiba",
+     "valor": "26% recomendam explicitamente"
+    },
+    {
+     "onde": "SC · Florianópolis",
+     "valor": "30% recomendam explicitamente"
+    },
+    {
+     "onde": "GO · Goiânia",
+     "valor": "26% recomendam explicitamente"
+    }
+   ],
+   "evidencias_total": 8,
+   "excecoes": [
+    {
+     "praca": "BA · Feira de Santana",
+     "valor": "15% recomendam explicitamente"
+    }
+   ],
+   "sem_amostra": [],
+   "derrubada_por": null,
+   "o_que_significa": null,
+   "decisao_sugerida": null,
+   "dono_da_decisao": null,
+   "carimbo_da_decisao": null,
+   "carimbo": {
+    "natureza": "fato",
+    "confianca": "media",
+    "medido": true,
+    "amostra": 23,
+    "janela_dias": null,
+    "medicoes": 2,
+    "fonte": null,
+    "a_favor": [
+     "passou em 22 das 23 praças que votaram"
+    ],
+    "contra": [
+     "1 praça(s) contrariam"
+    ],
+    "o_que_aumentaria": "medir mais praças do mesmo jeito",
+    "procedencia": "medido em 23 praças, 2 medições"
+   }
+  },
+  {
+   "titulo": "O adulto 30+ é dinheiro na mesa e nenhuma praça fala com ele",
+   "nivel": "confirmado",
+   "placar": "22/22",
+   "passou": 22,
+   "base": 22,
+   "porque_neste_nivel": "passou em 22 das 22 praças que votaram",
+   "leitura": null,
+   "como_se_mede": "compara a população de 30 a 45 anos com a de 9 a 15, pelo IBGE.",
+   "evidencias": [
+    {
+     "onde": "RS · Caxias do Sul",
+     "valor": "115.758 adultos de 30-45 contra 37.913 de 9-15 — 3.1x"
+    },
+    {
+     "onde": "MG · Contagem",
+     "valor": "155.079 adultos de 30-45 contra 52.795 de 9-15 — 2.9x"
+    },
+    {
+     "onde": "MT · Cuiabá",
+     "valor": "240.202 adultos de 30-45 contra 93.821 de 9-15 — 2.6x"
+    },
+    {
+     "onde": "PR · Curitiba",
+     "valor": "427.841 adultos de 30-45 contra 143.327 de 9-15 — 3.0x"
+    },
+    {
+     "onde": "BA · Feira de Santana",
+     "valor": "156.142 adultos de 30-45 contra 61.014 de 9-15 — 2.6x"
+    },
+    {
+     "onde": "SC · Florianópolis",
+     "valor": "144.371 adultos de 30-45 contra 39.488 de 9-15 — 3.7x"
+    }
+   ],
+   "evidencias_total": 8,
+   "excecoes": [],
+   "sem_amostra": [
+    "MG · Uberlândia"
+   ],
+   "derrubada_por": null,
+   "o_que_significa": "Nas cidades analisadas a população adulta de 30 a 45 anos é bem maior que a de 9 a 15 — e a comunicação da categoria inteira fala com a segunda.",
+   "decisao_sugerida": "Testar uma frente de comunicação para adulto em duas praças, e medir pela mesma régua: portas de busca e ritmo de avaliação.",
+   "dono_da_decisao": "franqueadora",
+   "carimbo_da_decisao": {
+    "natureza": "recomendacao",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": null,
+    "janela_dias": null,
+    "medicoes": null,
+    "fonte": null,
+    "a_favor": [
+     "o placar em cima é medido"
+    ],
+    "contra": [
+     "o que fazer com ele é opinião informada, e o portal não sabe se foi executado"
+    ],
+    "o_que_aumentaria": "remedir a mesma métrica depois do prazo, como no livro de ações",
+    "procedencia": "sem amostra declarada"
+   },
+   "carimbo": {
+    "natureza": "fato",
+    "confianca": "media",
+    "medido": true,
+    "amostra": 22,
+    "janela_dias": null,
+    "medicoes": 2,
+    "fonte": null,
+    "a_favor": [
+     "passou em 22 das 22 praças que votaram"
+    ],
+    "contra": [],
+    "o_que_aumentaria": "medir mais praças do mesmo jeito",
+    "procedencia": "medido em 22 praças, 2 medições"
+   }
+  },
+  {
+   "titulo": "A ferida é sempre operação — nunca o produto",
+   "nivel": "confirmado",
+   "placar": "17/17",
+   "passou": 17,
+   "base": 17,
+   "porque_neste_nivel": "passou em 17 das 17 praças que votaram",
+   "leitura": null,
+   "como_se_mede": "compara, nas avaliações de 1 a 3 estrelas, quantas citam operação (atendimento, agenda, comunicação, contrato) contra quantas citam produto (resultado, aparelho). Uma avaliação pode citar as duas — por isso os dois somam mais de 100%.",
+   "evidencias": [
+    {
+     "onde": "RS · Caxias do Sul",
+     "valor": "operação 65% contra produto 51% em 49 negativas"
+    },
+    {
+     "onde": "MG · Contagem",
+     "valor": "operação 77% contra produto 56% em 178 negativas"
+    },
+    {
+     "onde": "MT · Cuiabá",
+     "valor": "operação 72% contra produto 52% em 197 negativas"
+    },
+    {
+     "onde": "PR · Curitiba",
+     "valor": "operação 82% contra produto 61% em 243 negativas"
+    },
+    {
+     "onde": "BA · Feira de Santana",
+     "valor": "operação 70% contra produto 40% em 168 negativas"
+    },
+    {
+     "onde": "SC · Florianópolis",
+     "valor": "operação 77% contra produto 54% em 225 negativas"
+    }
+   ],
+   "evidencias_total": 8,
+   "excecoes": [],
+   "sem_amostra": [
+    "MA · Imperatriz",
+    "CE · Juazeiro do Norte",
+    "SC · Mafra",
+    "PA · Marabá",
+    "PA · Parauapebas",
+    "AC · Rio Branco"
+   ],
+   "derrubada_por": null,
+   "o_que_significa": "Ninguém reclama do aparelho. Reclama-se de como foi atendido — e isso é consertável sem verba de mídia.",
+   "decisao_sugerida": "Blindar a operação antes de aumentar aquisição nas unidades em faixa vermelha.",
+   "dono_da_decisao": "consultor de campo",
+   "carimbo_da_decisao": {
+    "natureza": "recomendacao",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": null,
+    "janela_dias": null,
+    "medicoes": null,
+    "fonte": null,
+    "a_favor": [
+     "o placar em cima é medido"
+    ],
+    "contra": [
+     "o que fazer com ele é opinião informada, e o portal não sabe se foi executado"
+    ],
+    "o_que_aumentaria": "remedir a mesma métrica depois do prazo, como no livro de ações",
+    "procedencia": "sem amostra declarada"
+   },
+   "carimbo": {
+    "natureza": "fato",
+    "confianca": "media",
+    "medido": true,
+    "amostra": 17,
+    "janela_dias": null,
+    "medicoes": 2,
+    "fonte": null,
+    "a_favor": [
+     "passou em 17 das 17 praças que votaram"
+    ],
+    "contra": [],
+    "o_que_aumentaria": "medir mais praças do mesmo jeito",
+    "procedencia": "medido em 17 praças, 2 medições"
+   }
+  },
+  {
+   "titulo": "O paciente não avalia ortodontia — avalia como foi tratado",
+   "nivel": "confirmado",
+   "placar": "13/13",
+   "passou": 13,
+   "base": 13,
+   "porque_neste_nivel": "passou em 13 das 13 praças que votaram",
+   "leitura": "Em 13 praças e 25.030 avaliações lidas, entre 53,8% e 72,0% do que o paciente escreve é sobre atendimento, não sobre tratamento. Mediana 67,7%. Cobre Norte, Nordeste, Centro-Oeste, Sudeste, Sul e capital.",
+   "como_se_mede": null,
+   "evidencias": [
+    {
+     "onde": "Mafra",
+     "valor": "72,0%"
+    },
+    {
+     "onde": "Londrina",
+     "valor": "69,8%"
+    },
+    {
+     "onde": "Parauapebas",
+     "valor": "69,1%"
+    },
+    {
+     "onde": "Contagem",
+     "valor": "68,1%"
+    },
+    {
+     "onde": "Prudente",
+     "valor": "67,7%"
+    },
+    {
+     "onde": "Cuiabá",
+     "valor": "65,6%"
+    }
+   ],
+   "evidencias_total": 8,
+   "excecoes": [],
+   "sem_amostra": [],
+   "derrubada_por": null,
+   "o_que_significa": "Problema recorrente de recepção, contato e agendamento deixa de ser caso isolado de franqueado quando aparece em toda praça medida: vira pauta de rede.",
+   "decisao_sugerida": "Tratar os momentos que mais doem como programa de rede, não como visita. A tela da jornada mostra qual momento dói em cada loja.",
+   "dono_da_decisao": "franqueadora",
+   "carimbo_da_decisao": {
+    "natureza": "recomendacao",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": null,
+    "janela_dias": null,
+    "medicoes": null,
+    "fonte": null,
+    "a_favor": [
+     "o placar em cima é medido"
+    ],
+    "contra": [
+     "o que fazer com ele é opinião informada, e o portal não sabe se foi executado"
+    ],
+    "o_que_aumentaria": "remedir a mesma métrica depois do prazo, como no livro de ações",
+    "procedencia": "sem amostra declarada"
+   },
+   "carimbo": {
+    "natureza": "fato",
+    "confianca": "media",
+    "medido": true,
+    "amostra": 13,
+    "janela_dias": null,
+    "medicoes": 2,
+    "fonte": null,
+    "a_favor": [
+     "passou em 13 das 13 praças que votaram"
+    ],
+    "contra": [],
+    "o_que_aumentaria": "medir mais praças do mesmo jeito",
+    "procedencia": "medido em 13 praças, 2 medições"
+   }
+  },
+  {
+   "titulo": "Em toda praça com mais de uma unidade, a mais lenta fica abaixo da mediana da cidade",
+   "nivel": "ganhando_forca",
+   "placar": "15/17",
+   "passou": 15,
+   "base": 17,
+   "porque_neste_nivel": "passou em 15 de 17 — 2 exceções nomeadas",
+   "leitura": null,
+   "como_se_mede": "compara o ritmo da nossa unidade mais lenta com a mediana das clínicas da própria praça.",
+   "evidencias": [
+    {
+     "onde": "RS · Caxias do Sul",
+     "valor": "a mais lenta das nossas faz 2.6/mês contra mediana 25.1 da praça"
+    },
+    {
+     "onde": "MG · Contagem",
+     "valor": "a mais lenta das nossas faz 10.6/mês contra mediana 13.2 da praça"
+    },
+    {
+     "onde": "MT · Cuiabá",
+     "valor": "a mais lenta das nossas faz 0.7/mês contra mediana 4.7 da praça"
+    },
+    {
+     "onde": "PR · Curitiba",
+     "valor": "a mais lenta das nossas faz 1.6/mês contra mediana 14.6 da praça"
+    },
+    {
+     "onde": "BA · Feira de Santana",
+     "valor": "a mais lenta das nossas faz 2.8/mês contra mediana 14.1 da praça"
+    },
+    {
+     "onde": "SC · Florianópolis",
+     "valor": "a mais lenta das nossas faz 3.6/mês contra mediana 7.5 da praça"
+    }
+   ],
+   "evidencias_total": 8,
+   "excecoes": [
+    {
+     "praca": "TO · Palmas",
+     "valor": "a mais lenta das nossas faz 7.8/mês contra mediana 5.0 da praça"
+    },
+    {
+     "praca": "SP · Presidente Prudente",
+     "valor": "a mais lenta das nossas faz 3.6/mês contra mediana 2.8 da praça"
+    }
+   ],
+   "sem_amostra": [
+    "MA · Imperatriz",
+    "CE · Juazeiro do Norte",
+    "AP · Macapá",
+    "PA · Marabá",
+    "PA · Parauapebas",
+    "AC · Rio Branco"
+   ],
+   "derrubada_por": null,
+   "o_que_significa": null,
+   "decisao_sugerida": null,
+   "dono_da_decisao": null,
+   "carimbo_da_decisao": null,
+   "carimbo": {
+    "natureza": "inferencia",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 17,
+    "janela_dias": null,
+    "medicoes": 1,
+    "fonte": null,
+    "a_favor": [
+     "passou em 15 de 17 — 2 exceções nomeadas"
+    ],
+    "contra": [
+     "2 praça(s) contrariam"
+    ],
+    "o_que_aumentaria": "medir mais praças do mesmo jeito",
+    "procedencia": "medido em 17 praças, 1 medição"
+   }
+  },
+  {
+   "titulo": "Perdemos para o rival no MESMO eixo em todas as praças: gente com nome",
+   "nivel": "ganhando_forca",
+   "placar": "5/5",
+   "passou": 5,
+   "base": 5,
+   "porque_neste_nivel": "passou em 5 de 5 — sem exceção nomeada",
+   "leitura": "O achado 13/13 diz que a confiança é em gente com nome, não em marca. Este diz onde isso nos custa: em 5 de 5 praças comparadas, o rival é citado pelo nome mais do que nós — de 2,1x em Londrina a 5,0x em Contagem. Nós ficamos entre 6,0% e 10,9% das avaliações; eles chegam a 29,7%. Perder no mesmo eixo em cinco estados não é problema de unidade: é decisão de franqueadora.",
+   "como_se_mede": "compara a proporção de avaliações que citam um profissional pelo nome, na nossa unidade e no concorrente que mais corre da MESMA praça. Comparação por proporção, nunca por volume.",
+   "evidencias": [
+    {
+     "onde": "MG · Contagem",
+     "valor": "ODONTO ART 29,7% contra 6,0% nossos — 5,0x"
+    },
+    {
+     "onde": "MT · Cuiabá",
+     "valor": "Clínica Goya 26,0% contra 6,3% nossos — 4,1x"
+    },
+    {
+     "onde": "TO · Palmas",
+     "valor": "Dente Mais 22,5% contra 7,0% nossos — 3,2x"
+    },
+    {
+     "onde": "SP · Presidente Prudente",
+     "valor": "Turminha da Dra Bia 30,3% contra 9,4% — 3,2x"
+    },
+    {
+     "onde": "PR · Londrina",
+     "valor": "Dentista do Povo 22,4% contra 10,9% nossos — 2,1x"
+    }
+   ],
+   "evidencias_total": 5,
+   "excecoes": [],
+   "sem_amostra": [],
+   "derrubada_por": null,
+   "o_que_significa": "Perder no mesmo eixo em cinco estados não é problema de unidade: unidade nenhuma escolhe isso sozinha. É decisão de rede.",
+   "decisao_sugerida": "Levar a comparação impressa para a visita das cinco praças e combinar a resposta com o franqueado. O concorrente e a proporção dele já estão medidos.",
+   "dono_da_decisao": "franqueadora",
+   "carimbo_da_decisao": {
+    "natureza": "recomendacao",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": null,
+    "janela_dias": null,
+    "medicoes": null,
+    "fonte": null,
+    "a_favor": [
+     "o placar em cima é medido"
+    ],
+    "contra": [
+     "o que fazer com ele é opinião informada, e o portal não sabe se foi executado"
+    ],
+    "o_que_aumentaria": "remedir a mesma métrica depois do prazo, como no livro de ações",
+    "procedencia": "sem amostra declarada"
+   },
+   "carimbo": {
+    "natureza": "inferencia",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": null,
+    "medicoes": 1,
+    "fonte": null,
+    "a_favor": [
+     "passou em 5 de 5 — sem exceção nomeada"
+    ],
+    "contra": [],
+    "o_que_aumentaria": "medir mais praças do mesmo jeito",
+    "procedencia": "medido em 5 praças, 1 medição"
+   }
+  },
+  {
+   "titulo": "A mãe é a decisora — e lê os reviews antes de escolher",
+   "nivel": "em_teste",
+   "placar": "14/23",
+   "passou": 14,
+   "base": 23,
+   "porque_neste_nivel": "passou em 14 de 23: base pequena ou taxa baixa demais para chamar de padrão",
+   "leitura": null,
+   "como_se_mede": "mede quanto das avaliações menciona filho ou família.",
+   "evidencias": [
+    {
+     "onde": "RS · Caxias do Sul",
+     "valor": "4% das avaliações falam de filho ou família"
+    },
+    {
+     "onde": "MG · Contagem",
+     "valor": "6% das avaliações falam de filho ou família"
+    },
+    {
+     "onde": "GO · Goiânia",
+     "valor": "7% das avaliações falam de filho ou família"
+    },
+    {
+     "onde": "MA · Imperatriz",
+     "valor": "6% das avaliações falam de filho ou família"
+    },
+    {
+     "onde": "SC · Joinville",
+     "valor": "7% das avaliações falam de filho ou família"
+    },
+    {
+     "onde": "CE · Juazeiro do Norte",
+     "valor": "4% das avaliações falam de filho ou família"
+    }
+   ],
+   "evidencias_total": 8,
+   "excecoes": [
+    {
+     "praca": "MT · Cuiabá",
+     "valor": "3% das avaliações falam de filho ou família"
+    },
+    {
+     "praca": "PR · Curitiba",
+     "valor": "3% das avaliações falam de filho ou família"
+    },
+    {
+     "praca": "BA · Feira de Santana",
+     "valor": "1% das avaliações falam de filho ou família"
+    },
+    {
+     "praca": "SC · Florianópolis",
+     "valor": "2% das avaliações falam de filho ou família"
+    },
+    {
+     "praca": "PA · Marabá",
+     "valor": "2% das avaliações falam de filho ou família"
+    },
+    {
+     "praca": "PA · Parauapebas",
+     "valor": "1% das avaliações falam de filho ou família"
+    },
+    {
+     "praca": "RJ · Rio de Janeiro",
+     "valor": "3% das avaliações falam de filho ou família"
+    },
+    {
+     "praca": "SP · São Paulo",
+     "valor": "2% das avaliações falam de filho ou família"
+    },
+    {
+     "praca": "SP · Sorocaba",
+     "valor": "2% das avaliações falam de filho ou família"
+    }
+   ],
+   "sem_amostra": [],
+   "derrubada_por": null,
+   "o_que_significa": null,
+   "decisao_sugerida": null,
+   "dono_da_decisao": null,
+   "carimbo_da_decisao": null,
+   "carimbo": {
+    "natureza": "hipotese",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 23,
+    "janela_dias": null,
+    "medicoes": 1,
+    "fonte": null,
+    "a_favor": [
+     "passou em 14 de 23: base pequena ou taxa baixa demais para chamar de padrão"
+    ],
+    "contra": [
+     "9 praça(s) contrariam"
+    ],
+    "o_que_aumentaria": "medir mais praças do mesmo jeito",
+    "procedencia": "medido em 23 praças, 1 medição"
+   }
+  },
+  {
+   "titulo": "Julho é o pico da mãe-decisora",
+   "nivel": "em_teste",
+   "placar": "—",
+   "passou": null,
+   "base": null,
+   "porque_neste_nivel": "a série de sazonalidade tem 4 pontos, todos de SC. Uma região não é calendário de rede.",
+   "leitura": null,
+   "como_se_mede": null,
+   "evidencias": [],
+   "evidencias_total": 0,
+   "excecoes": [],
+   "sem_amostra": [],
+   "derrubada_por": null,
+   "o_que_significa": null,
+   "decisao_sugerida": null,
+   "dono_da_decisao": null,
+   "carimbo_da_decisao": null,
+   "carimbo": {
+    "natureza": "hipotese",
+    "confianca": "sem_medicao",
+    "medido": false,
+    "amostra": null,
+    "janela_dias": null,
+    "medicoes": 1,
+    "fonte": null,
+    "a_favor": [
+     "a série de sazonalidade tem 4 pontos, todos de SC. Uma região não é calendário de rede."
+    ],
+    "contra": [],
+    "o_que_aumentaria": "criar a medição que testa esta afirmação",
+    "procedencia": "não medido"
+   }
+  },
+  {
+   "titulo": "A clínica-escola é fraca exatamente onde a rede é forte",
+   "nivel": "em_teste",
+   "placar": "—",
+   "passou": null,
+   "base": null,
+   "porque_neste_nivel": "exige saber o que cada clínica-escola oferece. A imprensa diz que existe atendimento gratuito, não se ele inclui APARELHO — e odontologia não é ortodontia.",
+   "leitura": null,
+   "como_se_mede": null,
+   "evidencias": [],
+   "evidencias_total": 0,
+   "excecoes": [],
+   "sem_amostra": [],
+   "derrubada_por": null,
+   "o_que_significa": null,
+   "decisao_sugerida": null,
+   "dono_da_decisao": null,
+   "carimbo_da_decisao": null,
+   "carimbo": {
+    "natureza": "hipotese",
+    "confianca": "sem_medicao",
+    "medido": false,
+    "amostra": null,
+    "janela_dias": null,
+    "medicoes": 1,
+    "fonte": null,
+    "a_favor": [
+     "exige saber o que cada clínica-escola oferece. A imprensa diz que existe atendimento gratuito, não se ele inclui APARELHO — e odontologia não é ortodontia."
+    ],
+    "contra": [],
+    "o_que_aumentaria": "criar a medição que testa esta afirmação",
+    "procedencia": "não medido"
+   }
+  },
+  {
+   "titulo": "A joia local existe, é incopiável — e está enterrada",
+   "nivel": "em_teste",
+   "placar": "—",
+   "passou": null,
+   "base": null,
+   "porque_neste_nivel": "é leitura humana de história local. Não há campo que a meça.",
+   "leitura": null,
+   "como_se_mede": null,
+   "evidencias": [],
+   "evidencias_total": 0,
+   "excecoes": [],
+   "sem_amostra": [],
+   "derrubada_por": null,
+   "o_que_significa": null,
+   "decisao_sugerida": null,
+   "dono_da_decisao": null,
+   "carimbo_da_decisao": null,
+   "carimbo": {
+    "natureza": "hipotese",
+    "confianca": "sem_medicao",
+    "medido": false,
+    "amostra": null,
+    "janela_dias": null,
+    "medicoes": 1,
+    "fonte": null,
+    "a_favor": [
+     "é leitura humana de história local. Não há campo que a meça."
+    ],
+    "contra": [],
+    "o_que_aumentaria": "criar a medição que testa esta afirmação",
+    "procedencia": "não medido"
+   }
+  },
+  {
+   "titulo": "A embalagem é a mesma: feed institucional + anúncio de urgência",
+   "nivel": "em_teste",
+   "placar": "—",
+   "passou": null,
+   "base": null,
+   "porque_neste_nivel": "exige ler os 735 anúncios um a um e classificar tom. Não foi feito.",
+   "leitura": null,
+   "como_se_mede": null,
+   "evidencias": [],
+   "evidencias_total": 0,
+   "excecoes": [],
+   "sem_amostra": [],
+   "derrubada_por": null,
+   "o_que_significa": null,
+   "decisao_sugerida": null,
+   "dono_da_decisao": null,
+   "carimbo_da_decisao": null,
+   "carimbo": {
+    "natureza": "hipotese",
+    "confianca": "sem_medicao",
+    "medido": false,
+    "amostra": null,
+    "janela_dias": null,
+    "medicoes": 1,
+    "fonte": null,
+    "a_favor": [
+     "exige ler os 735 anúncios um a um e classificar tom. Não foi feito."
+    ],
+    "contra": [],
+    "o_que_aumentaria": "criar a medição que testa esta afirmação",
+    "procedencia": "não medido"
+   }
+  },
+  {
+   "titulo": "A ordem certa é blindar a operação antes de qualquer mídia nova",
+   "nivel": "em_teste",
+   "placar": "—",
+   "passou": null,
+   "base": null,
+   "porque_neste_nivel": "é recomendação de método, não achado mensurável. Vale como conselho, não como padrão medido.",
+   "leitura": null,
+   "como_se_mede": null,
+   "evidencias": [],
+   "evidencias_total": 0,
+   "excecoes": [],
+   "sem_amostra": [],
+   "derrubada_por": null,
+   "o_que_significa": null,
+   "decisao_sugerida": null,
+   "dono_da_decisao": null,
+   "carimbo_da_decisao": null,
+   "carimbo": {
+    "natureza": "hipotese",
+    "confianca": "sem_medicao",
+    "medido": false,
+    "amostra": null,
+    "janela_dias": null,
+    "medicoes": 1,
+    "fonte": null,
+    "a_favor": [
+     "é recomendação de método, não achado mensurável. Vale como conselho, não como padrão medido."
+    ],
+    "contra": [],
+    "o_que_aumentaria": "criar a medição que testa esta afirmação",
+    "procedencia": "não medido"
+   }
+  },
+  {
+   "titulo": "Os mesmos quatro formatos fixos de conteúdo emergem nas quatro",
+   "nivel": "em_teste",
+   "placar": "—",
+   "passou": null,
+   "base": null,
+   "porque_neste_nivel": "exige classificar 2.993 posts por formato. Não foi feito.",
+   "leitura": null,
+   "como_se_mede": null,
+   "evidencias": [],
+   "evidencias_total": 0,
+   "excecoes": [],
+   "sem_amostra": [],
+   "derrubada_por": null,
+   "o_que_significa": null,
+   "decisao_sugerida": null,
+   "dono_da_decisao": null,
+   "carimbo_da_decisao": null,
+   "carimbo": {
+    "natureza": "hipotese",
+    "confianca": "sem_medicao",
+    "medido": false,
+    "amostra": null,
+    "janela_dias": null,
+    "medicoes": 1,
+    "fonte": null,
+    "a_favor": [
+     "exige classificar 2.993 posts por formato. Não foi feito."
+    ],
+    "contra": [],
+    "o_que_aumentaria": "criar a medição que testa esta afirmação",
+    "procedencia": "não medido"
+   }
+  },
+  {
+   "titulo": "❌ CAIU — a proporção subia conforme a cidade encolhia",
+   "nivel": "derrubado",
+   "placar": "4/4 em julho · não se sustentou em 13",
+   "passou": null,
+   "base": null,
+   "porque_neste_nivel": "a medição contradisse a explicação",
+   "leitura": "A diferença entre as praças era artefato de amostra. Em julho, Prudente tinha 454 avaliações lidas e Mafra 224; em agosto são 2.154 e 1.095. Com a base cheia os quatro valores se juntam entre 61,6% e 71,4% e a ordem se embaralha. Pior: dois dos quatro números de julho vinham de outra base (reviews_categoria, não reviews_com_texto) — nunca foram comparáveis entre si.",
+   "como_se_mede": null,
+   "evidencias": [
+    {
+     "onde": "julho, amostra pequena",
+     "valor": "47 · 54 · 63 · 69"
+    },
+    {
+     "onde": "agosto, amostra 5 a 10× maior",
+     "valor": "67,7 · 69,6 · 61,6 · 71,4"
+    }
+   ],
+   "evidencias_total": 2,
+   "excecoes": [],
+   "sem_amostra": [],
+   "derrubada_por": null,
+   "o_que_significa": null,
+   "decisao_sugerida": null,
+   "dono_da_decisao": null,
+   "carimbo_da_decisao": null,
+   "carimbo": {
+    "natureza": "fato",
+    "confianca": "sem_medicao",
+    "medido": false,
+    "amostra": null,
+    "janela_dias": null,
+    "medicoes": 1,
+    "fonte": null,
+    "a_favor": [
+     "a medição contradisse a explicação"
+    ],
+    "contra": [],
+    "o_que_aumentaria": "criar a medição que testa esta afirmação",
+    "procedencia": "não medido"
+   }
+  },
+  {
+   "titulo": "Dezembro e janeiro são pico nacional",
+   "nivel": "derrubado",
+   "placar": "derrubada",
+   "passou": null,
+   "base": null,
+   "porque_neste_nivel": "a medição contradisse a explicação",
+   "leitura": null,
+   "como_se_mede": null,
+   "evidencias": [
+    {
+     "onde": "Mafra",
+     "valor": "índice 2,5–7,9 contra 34 em julho"
+    },
+    {
+     "onde": "BI",
+     "valor": "494 e 78 leads contra 4.120"
+    }
+   ],
+   "evidencias_total": 2,
+   "excecoes": [],
+   "sem_amostra": [],
+   "derrubada_por": "mafra",
+   "o_que_significa": null,
+   "decisao_sugerida": null,
+   "dono_da_decisao": null,
+   "carimbo_da_decisao": null,
+   "carimbo": {
+    "natureza": "fato",
+    "confianca": "sem_medicao",
+    "medido": false,
+    "amostra": null,
+    "janela_dias": null,
+    "medicoes": 1,
+    "fonte": null,
+    "a_favor": [
+     "a medição contradisse a explicação"
+    ],
+    "contra": [],
+    "o_que_aumentaria": "criar a medição que testa esta afirmação",
+    "procedencia": "não medido"
+   }
+  }
+ ],
+ "nota_do_reteste": "Os achados foram retestados contra as 23 praças em 2026-08-10. Antes, doze deles diziam 4/4 — mediam quatro cidades e nunca tinham sido conferidos contra as nove que entraram depois. Seis não são testáveis com o que temos e estão marcados como tal, com o motivo: preferimos declarar o que é leitura humana a inflar a lista. Toda exceção aparece nomeada — padrão sem exceção soa a curadoria.",
+ "cabecalho": {
+  "sobrelinha": "O QUE A REDE ENSINA",
+  "titulo": "O que a rede descobriu, e com quanta força",
+  "pergunta": "Depois de observar dezenas de clínicas, milhares de pacientes e centenas de concorrentes, o que sabemos hoje que não sabíamos antes?",
+  "para_quem": [
+   "franqueadora"
+  ],
+  "como_ler": "Quatro níveis de força, calculados do próprio placar: confirmado, ganhando força, em teste e derrubado. O nível derrubado é o que dá crédito aos outros três.",
+  "o_que_nao_e": "Não é causa. Nenhuma linha prova que fazer X produz Y — são padrões observados, e um deles já caiu quando a base cresceu.",
+  "metodo": "cada afirmação é testada contra todas as praças com amostra para votar, e o nível sai do placar, nunca de rótulo escrito à mão.",
+  "e_texto_autorado": true
+ }
+}
