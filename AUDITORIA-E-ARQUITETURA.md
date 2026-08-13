@@ -1,9 +1,43 @@
 # Auditoria estratégica e arquitetura recomendada
 
+> ## ⚠ ESTE DOCUMENTO É UM RETRATO DE 12/ago/2026, NÃO O ESTADO DE HOJE
+>
+> Ele foi escrito quando o projeto tinha **7 praças e 10 lojas com estudo**,
+> e listava jornada, território, geo-grid e ação→resultado como
+> **inexistentes**. Todos os quatro existem desde 13/ago. Uma sessão que
+> ler isto como estado atual vai reconstruir o que já está pronto — que é
+> exatamente o erro que este arquivo foi criado para evitar.
+>
+> **O estado de hoje se lê com o disco na mão, não aqui:**
+>
+> ```bash
+> python3 scripts/padrao.py          # o que cada praça tem e o que falta
+> python3 scripts/confere_tese.py    # todo número citado existe?
+> python3 scripts/confere_carimbo.py # todo carimbo é coerente?
+> python3 scripts/lint_semantico.py  # alguma frase contradiz a medição?
+> ```
+>
+> | | 12/ago (este doc) | 13/ago (medido) |
+> |---|---|---|
+> | praças da rede | 7 | **17** |
+> | lojas com estudo | 10 | **45** |
+> | coletores | 17 | **18** |
+> | scripts | 30 | **45** |
+> | linhas de série | 84.049 | **165.043** |
+> | jornada do paciente | não existe | existe |
+> | território e distância | não existe | existe |
+> | geo-grid (busca perto da loja) | não existe | existe |
+> | ação → resultado | "o maior buraco" | existe, sem arco fechado ainda |
+>
+> O que continua valendo deste documento é o **diagnóstico** e a **ordem de
+> prioridade** — não os contadores.
+
+---
+
 Escrito em 12/ago/2026, com o disco na mão. Todo número aqui foi contado
 do repositório, não lembrado. Onde eu não sei, está escrito que não sei.
 
-Este documento é canônico para **o que existe hoje e para onde vai**.
+Este documento é canônico para **o que existia em 12/ago**.
 O que o produto **é** — modelo, definições e os dois gols — está em
 `PROJETO.md`, e os dois não se repetem.
 Quando ele divergir de qualquer `.md` da raiz, ele vence — os outros são

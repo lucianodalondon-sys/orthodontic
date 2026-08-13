@@ -1004,8 +1004,7 @@ def main():
              "A clínica aparece para quem está perto dela?",
              (_perto or {}).get("invisiveis_perto"),
              ((f"de {_perto['lojas_total']} lojas medidas a partir do próprio "
-               f"endereço, essas não aparecem nem para quem está a "
-               f"{(_perto['lojas'][0].get('raio_m') or 3000)//1000} km. Outras "
+               f"endereço, essas não apareceram em nenhuma das buscas. Outras "
                + conta(len(_perto.get('viradas_pela_leitura_de_perto') or []),
                        "loja parecia invisível", "lojas pareciam invisíveis")
                + " pela busca da cidade inteira e aparecem aqui: numa cidade "

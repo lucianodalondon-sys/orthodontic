@@ -90,7 +90,12 @@ script cobra. Quando os dois divergirem, o script é a verdade.
 - **DATA DE RSS NÃO É ISO.** A imprensa vem como
   `Fri, 11 Oct 2024 07:00:00 GMT`; ler os dez primeiros caracteres fez as
   treze cidades dizerem "0 matérias em 30 dias" no dia seguinte à coleta.
-- **Nada de dado interno, e isso é permanente.** O portal é feito
+- **Nada de dado interno, e isso é permanente — e agora há guarda.**
+  `cruzamento.jsonl()` RECUSA-SE a ler série proibida (`funil`, `regua`,
+  `contratos`, `faturamento`, `leads`). O funil do Conecta viveu quatro
+  semanas em `dados/serie/` e o build montava interessados,
+  agendamentos e meta da rede para Mafra, que abria com "única com
+  dado interno". Está em `legacy/dado_interno/` e não volta. O portal é feito
   **inteiramente com informação externa**. Não temos CRM, contrato,
   faturamento, lead, nem o franqueado ao telefone — e não vamos ter. Campo
   que só a rede pode responder não é pendência: é **teto do produto**, e tem
@@ -118,6 +123,8 @@ python3 scripts/a_oferta_do_rival.py --salvar     # o que o rival vende
 python3 scripts/o_que_a_cidade_publica.py --salvar
 python3 scripts/livro_de_acoes.py --salvar        # o ciclo, antes e depois
 python3 scripts/confere_tese.py                   # número da tese ainda existe?
+python3 scripts/confere_carimbo.py                # amostra e unidade batem?
+python3 scripts/lint_semantico.py                 # frase que a medição já negou?
 python3 scripts/build_portal.py
 ```
 
@@ -175,6 +182,25 @@ padrões → caixa → padrao → build. Períodos curtos são declarados na tel
   `python3 coleta/coletores/unidades_da_rede.py` baixa a lista oficial e
   compara com o número que o próprio site declara. Nenhuma frase sobre "a
   rede está / não está nessa cidade" sai sem essa lista do dia.
+- **BAIRRO É TEXTO DE ENDEREÇO, E TEXTO REPETE.** Mafra tinha 18
+  "bairros" onde existem 11: `Bairro Bom Jesus`, `Bom Jesus` e
+  `bom jesus` contados três vezes, `Jardim do Moinho` e `Jardim
+  Moinho` duas, mais `sala 6`, `numero 352` e uma rua inteira. Bairro
+  repetido divide a concentração e inventa espaço vago onde a rede já
+  está. Use `cruzamento.normaliza_bairro()`, que agrupa por chave e
+  exibe o rótulo que a cidade mais escreve — e NÃO funde `Centro I
+  Baixada` com `Centro`, porque são sub-bairros oficiais.
+- **AMOSTRA SEM UNIDADE PUBLICA O SUBSTANTIVO ERRADO.** `confianca()`
+  tinha `("avaliação","avaliações")` como padrão: o mapa de bairros
+  passou 184 CLÍNICAS e a tela disse "184 avaliações"; o detector
+  passou 3.863 avaliações de uma ficha e disse "3863 clínicas
+  medidas". Metadado errado é pior que ausente, porque parece rigor.
+  O padrão foi removido — quem declara amostra declara a unidade.
+- **RESSALVA QUE ENVELHECE VIRA DESINFORMAÇÃO.** `bairros.json` dizia
+  "não temos coordenada" com latitude e longitude no arquivo abaixo,
+  e o "perto da loja" dizia "nem para quem está a 3 km dela" quando
+  o que foi medido são CINCO buscas com viés de local — que é
+  preferência, não barreira. `lint_semantico.py` cobra isso.
 - **Cidade de nome parecido é cidade diferente.** A rede tem unidade em
   `Juazeiro/BA`; o Radar estuda `Juazeiro do Norte/CE` — outro estado, 500 km,
   e o CE inteiro só tem Fortaleza. É a mesma família de "Palmas/TO virou
