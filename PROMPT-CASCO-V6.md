@@ -952,3 +952,118 @@ Junto vão `medidas_na_praca` e `comparaveis_na_praca`, para quem quiser
 desenhar a proporção. Nunca componha "Nª de N" no casco a partir de
 `posicao` e `de` soltos: os dois existem, mas sozinhos eles mentem sobre
 o tamanho da praça.
+
+---
+
+## 14 · A REDE INTEIRA NA TELA — 373 UNIDADES, 45 COM ESTUDO
+
+Esta é a mudança de maior alcance desta rodada, e ela é sobre **o que o
+portal parece ser** para quem abre pela primeira vez.
+
+Hoje a seção CLÍNICAS mostra 45 unidades. A rede tem **373**. Quem abre
+vê um piloto. O que precisa ver é o contrário: **o portal já tem a rede
+inteira montada — o que falta é medição, não estrutura.**
+
+A unidade que ainda não foi estudada **aparece, com nome, cidade e
+estado**, apagada. Ela não é um buraco escondido: é o tamanho do trabalho,
+declarado.
+
+### 14.1 · O payload
+
+`dados/portal/clinicas_indice.json`, três níveis:
+
+    ufs[]  →  cidades[]  →  unidades[]
+
+Cabeçalho: `unidades_total` **373**, `com_estudo` **45**, `sem_escuta`
+**328**, `ufs_total` **23**, `cidades_total` **303**, e `manchete` pronta.
+As duas datas vêm separadas de propósito — `cadastro_lido_em` (a lista
+oficial da rede) e `fichas_medidas_em` (a varredura do Google) — com
+`porque_duas_datas` explicando. Mostre as duas; fundir seria dizer que a
+nota é de hoje quando ela é da última varredura paga.
+
+Por UF: `unidades_total`, `cidades_total`, `com_estudo`, `sem_escuta`,
+`frase`.
+Por cidade: `unidades_total`, `com_estudo`, `sem_estudo`, `frase`,
+`mais_de_uma_loja`, `linha_identifica_a_loja`.
+
+### 14.2 · Os quatro estados de um cartão de unidade
+
+**Não são dois.** Tratar como "tem estudo / não tem" produz cartão vazio
+onde há informação e cartão cheio onde não há.
+
+| estado | quantas | o que o cartão mostra |
+|---|---|---|
+| **com estudo** | 45 | nome, cidade, faixa, tarefa · **clicável**, abre `clinicas/<local_id>` |
+| **ficha medida, sem estudo** | 299 | nome, cidade, endereço, **nota e nº de avaliações do Google** · não clicável |
+| **só na lista oficial** | 35 | nome, cidade, endereço · nenhum número |
+| **em implantação** | 23 | nome e cidade · a unidade **ainda não abriu** |
+
+O terceiro estado é o único verdadeiramente vazio, e são 35 de 373. O
+segundo é o mais comum e é o que dá corpo à tela: 299 unidades já têm
+nota e volume de avaliações do Google — o portal sabe algo sobre elas,
+só não as escutou.
+
+"Em implantação" é um **eixo separado**, não um quarto grau de cinza: uma
+unidade em implantação não está atrasada em medição, ela não existe
+ainda. Use um selo, não a mesma opacidade.
+
+### 14.3 · Como o apagado deve se comportar
+
+- **Apagado, não quebrado.** Opacidade e contraste reduzidos, mesma
+  tipografia, mesmo espaçamento. Nada de tracejado, de ícone de alerta,
+  de "?" ou de skeleton animado — isso lê como erro de carregamento.
+- **Não clicável, e visivelmente não clicável.** Sem cursor de link, sem
+  hover. Um clique que não vai a lugar nenhum destrói a confiança no
+  resto da navegação.
+- **Com motivo, sempre.** Uma linha curta no cartão: *"ainda não
+  escutada"*. Estado vazio é conteúdo; cinza mudo é falha.
+- **Nunca "em breve".** Não há data prometida, e prometer é a única coisa
+  que este portal não faz.
+
+### 14.4 · Navegar 373 sem rolar 373
+
+- **UF como acordeão**, ordem alfabética (AL → TO), com a `frase` da UF
+  sempre visível fechada: *"78 unidades em 65 cidades · 8 com estudo"*.
+  SP tem 78, PR 57, RS 52, SC 50 — quatro estados são metade da rede.
+- Dentro da UF, **cidade como subgrupo**, alfabética. Cidade com uma
+  unidade só desenha a unidade direto, sem subtítulo redundante.
+- **Cidade com mais de uma loja** (`mais_de_uma_loja: true`) nunca colapsa
+  numa linha: foi a média por cidade que escondeu a loja invisível de
+  Cuiabá. Mostre as lojas separadas, sempre.
+- **Busca por nome de cidade e de unidade** no topo. É a única contagem
+  que o casco pode fazer (§4): "mostrando as 30 primeiras de N que
+  casam". O resto dos números vem pronto.
+- **Um filtro só**: "só as com estudo". Não construa filtro por UF, por
+  faixa ou por situação — a hierarquia já resolve, e filtro que ninguém
+  usa é peso.
+
+### 14.5 · Onde há estudo e a lista oficial não diz qual loja é qual
+
+Em **5 cidades** — Cuiabá, Porto Alegre, Presidente Prudente, Sorocaba e
+São Paulo — existe estudo que não casou com nenhuma linha da lista
+oficial: a cidade tem mais de uma loja e a lista não distingue "Sorocaba"
+de "Sorocaba - Rua da Penha".
+
+Nessas cidades, `linha_identifica_a_loja` vem **false**. Quando isso
+acontece:
+
+- **Não pinte linha por linha.** Em Presidente Prudente há 1 linha
+  oficial e 1 estudo que não casaram; pintar por linha desenharia a mesma
+  clínica duas vezes — uma cinza dizendo "não estudada" e uma verde ao
+  lado.
+- Mostre a cidade com `com_estudo` e `sem_estudo` (que já descontam esse
+  caso), a lista de `estudos_sem_linha_oficial[]` como cartões clicáveis
+  normais, e `porque_sem_linha` como nota da cidade.
+- `sem_estudo` por cidade sempre fecha: **45 + 328 = 373**.
+
+### 14.6 · A regra que não pode ser quebrada
+
+As 328 apagadas **não entram em conta nenhuma da rede**. Nota média,
+ritmo, fila, jornada, rival, território — tudo continua valendo para as
+45 escutadas, e `franqueadora.json → cobertura` já traz a frase pronta:
+
+> *"As leituras de rede valem para as 45 unidades acompanhadas, em 17
+> praças — não para as 373."*
+
+Essa frase precisa estar **visível na seção CLÍNICAS**, não só no painel.
+É o que impede alguém de olhar 373 nomes na tela e achar que medimos 373.

@@ -264,6 +264,19 @@ def main():
                 "unidades": us,
                 "unidades_total": len(us),
                 "com_estudo": sum(1 for x in us if x["com_estudo"]) + len(soltos),
+                # QUANTAS DESTA CIDADE AINDA NÃO FORAM ESCUTADAS.
+                #
+                # Não é "quantas linhas estão sem estudo": em Presidente
+                # Prudente há UMA linha oficial e UM estudo, e o estudo não
+                # casou com a linha. Contando por linha, a tela desenharia a
+                # mesma clínica duas vezes — uma cinza dizendo "não estudada"
+                # e uma verde ao lado. A conta é por SOBRA.
+                "sem_estudo": max(len(us)
+                                  - sum(1 for x in us if x["com_estudo"])
+                                  - len(soltos), 0),
+                # e quando há estudo solto, a linha oficial NÃO identifica a
+                # loja: a tela não pode pintar linha por linha nesta cidade
+                "linha_identifica_a_loja": not soltos,
                 # estudos desta cidade que a lista oficial não confirmou linha
                 "estudos_sem_linha_oficial": soltos,
                 "porque_sem_linha": ("a lista oficial não confirmou a linha "
