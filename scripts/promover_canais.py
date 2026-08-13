@@ -164,6 +164,31 @@ DA_WEB = [
     ("parauapebas", "gastronomia",   "instagram", "containers.pbs", 5722),
     ("parauapebas", "jovem",         "instagram", "uepa.parauapebas", 6830),
 
+    # SC · Florianópolis — busca na web, ago/2026
+    #
+    # A busca automática do coletor rodou TRÊS vezes nesta praça e convergiu em
+    # cinco canais. Não foi falta de cota: a terceira execução rodou com US$ 44
+    # livres e trouxe os mesmos. A capital tem imprensa e humor fortes que a
+    # busca por NOME não acha, porque nenhum deles tem "florianopolis" no
+    # handle — @agorafloripa, @tudixfloripa, @informe_floripa.
+    #
+    # Cada bio foi lida antes de entrar:
+    #   agorafloripa.com.br  "as últimas notícias da Grande Florianópolis"
+    #   informe_floripa      "jornal online — Grande Florianópolis"
+    #   tudixfloripa         "Humor, informação e peixe frito · Grande Floripa"
+    #   guiagourmetfloripa   "Guia da melhor #gastronomia de Florianópolis e região"
+    #   basedofigueira       perfil oficial das categorias de base do Figueirense
+    #   racadabase           categorias de base do Avaí F.C.
+    #
+    # Figueirense e Avaí são os dois clubes DA CIDADE — é o mesmo teste que
+    # reprovou @riobrancoes (Espírito Santo) e @caiquemafra (uma pessoa).
+    ("florianopolis", "imprensa",     "instagram", "agorafloripa.com.br", 200000),
+    ("florianopolis", "imprensa",     "instagram", "informe_floripa", 59000),
+    ("florianopolis", "humor",        "instagram", "tudixfloripa", 134000),
+    ("florianopolis", "gastronomia",  "instagram", "guiagourmetfloripa", 23000),
+    ("florianopolis", "esporte_base", "instagram", "basedofigueira", 7989),
+    ("florianopolis", "esporte_base", "instagram", "racadabase", 38000),
+
     # PA · Marabá (segunda rodada)
     ("maraba", "jovem",         "instagram", "unamamaraba", 21000),
     # @aguiademarabafc é o handle do X, não do Instagram. Eu tinha escrito o

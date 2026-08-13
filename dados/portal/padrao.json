@@ -1174,9 +1174,9 @@
    "praca_id": "florianopolis",
    "rotulo": "SC · Florianópolis",
    "tipo": "rede",
-   "feitas": 23,
+   "feitas": 24,
    "de": 24,
-   "completa": false,
+   "completa": true,
    "etapas": [
     {
      "etapa": 0,
@@ -1206,9 +1206,9 @@
      "etapa": 2,
      "nome": "Quem fala com a cidade",
      "quem": "auto+humano",
-     "ok": false,
-     "estado": "5 canais com handle (mínimo 8)",
-     "comando": "python3 coleta/coletores/canais.py --praca florianopolis  (handle null = achar na mão)"
+     "ok": true,
+     "estado": "11 canais com handle (mínimo 8)",
+     "comando": null
     },
     {
      "etapa": 3,
