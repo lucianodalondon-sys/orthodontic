@@ -241,13 +241,40 @@ def coleta():
                     if truncada else None),
             })
     # posição de cada um dentro da própria praça — SÓ ENTRE OS COMPARÁVEIS
+    #
+    # A CHAVE EXISTE SEMPRE, mesmo quando a posição não. Deixar `posicao` e
+    # `de` ausentes para quem ficou fora do ranking derrubou `fila.py` e
+    # `o_que_o_rival_faz.py` com KeyError: quem lê não tem como saber que a
+    # chave às vezes some. `None` diz "não tem posição, e isso é sabido";
+    # chave ausente diz "ninguém pensou nisso".
+    for x in linhas:
+        x.setdefault("posicao", None)
+        x.setdefault("de", None)
     for praca in ident:
-        na_praca = sorted([x for x in linhas
-                           if x["praca"] == praca and x["ritmo_comparavel"]],
+        todas_da_praca = [x for x in linhas if x["praca"] == praca]
+        na_praca = sorted([x for x in todas_da_praca if x["ritmo_comparavel"]],
                           key=lambda x: -x["ritmo"])
+        # "1ª DE 3" PRECISA DIZER DE QUE 3 SE TRATA.
+        #
+        # Quando quase toda a praça está lida pela metade, o grupo
+        # comparável encolhe — Caxias tem 1 de 17, o Rio tem 0 de 15 — e
+        # "1ª de 3" numa cidade onde medimos 17 clínicas lê-se como cidade
+        # pequena. O número da praça inteira anda junto, e a frase sai
+        # pronta daqui: o casco não redige.
+        for x in todas_da_praca:
+            x["medidas_na_praca"] = len(todas_da_praca)
+            x["comparaveis_na_praca"] = len(na_praca)
         for i, x in enumerate(na_praca, 1):
             x["posicao"] = i
             x["de"] = len(na_praca)
+            x["frase_da_posicao"] = (
+                f"{i}ª em ritmo entre as "
+                + conta(len(na_praca), "clínica lida por inteiro",
+                        "clínicas lidas por inteiro")
+                + (f", de {len(todas_da_praca)} medidas nesta praça"
+                   if len(na_praca) < len(todas_da_praca) else ""))
+    for x in linhas:
+        x.setdefault("frase_da_posicao", None)
     return ident, linhas
 
 

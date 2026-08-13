@@ -32,8 +32,13 @@
     "avaliacoes": 124,
     "ritmo": 4.4,
     "meses_seguidos": 1,
-    "posicao": 15,
-    "de": 18
+    "posicao": 2,
+    "de": 3,
+    "amostra_lida": 120,
+    "amostra_dias": 829,
+    "amostra_truncada": false,
+    "ritmo_comparavel": true,
+    "porque_fora_do_ranking": null
   },
   "faixa": "amarela",
   "urgencia": 50,
@@ -60,7 +65,7 @@
       "fonte": "scripts/fila.py",
       "a_favor": [
         "apenas 1 mês seguido com movimento acima do típico da própria unidade; o ritmo medido é 4.4 avaliações/mês",
-        "15º lugar de 18 clínicas medidas na praça"
+        "2º lugar de 3 clínicas medidas na praça"
       ],
       "contra": [],
       "o_que_aumentaria": "o resultado medido na coleta seguinte (dados/serie/acoes.jsonl)",
@@ -79,7 +84,7 @@
       "peso": 20,
       "titulo": "Está na metade de baixo da própria praça",
       "chave": "posicao",
-      "fato": "15º lugar de 18 clínicas medidas na praça",
+      "fato": "2º lugar de 3 clínicas medidas na praça",
       "fonte": "dados/portal/rede_cruzamento.json"
     }
   ],
@@ -710,7 +715,7 @@
         "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
         "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
         "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": 15.0,
+        "depois": 2.0,
         "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
         "dias": 1

@@ -19,8 +19,13 @@
     "avaliacoes": 308,
     "ritmo": 110.5,
     "meses_seguidos": 1,
-    "posicao": 1,
-    "de": 15
+    "posicao": null,
+    "de": null,
+    "amostra_lida": 120,
+    "amostra_dias": 33,
+    "amostra_truncada": true,
+    "ritmo_comparavel": false,
+    "porque_fora_do_ranking": "lemos 120 das 308 avaliações desta clínica, e as mais novas: o ritmo aqui é o dos últimos 33 dias, não o do histórico. Comparar com quem foi lido por inteiro compararia janelas diferentes."
   },
   "faixa": "amarela",
   "urgencia": 35,
@@ -615,11 +620,11 @@
   "acoes": {
     "arcos": [
       {
-        "arco_id": "rio_de_janei_orthodontic|silencio",
+        "arco_id": "rio_de_janei_orthodontic|nao_engatou",
         "local_id": "rio_de_janei_orthodontic",
         "praca_id": "rio_de_janeiro",
-        "gatilho": "silencio",
-        "problema": "47 anúncios no ar de 30 anunciantes, e nenhum é da rede",
+        "gatilho": "nao_engatou",
+        "problema": "a primeira avaliação é de 2026-07-10, há 1 meses, e o ritmo medido é 110.5/mês — a unidade ainda não engatou",
         "evidencia": "dados/serie/fila_historico.jsonl",
         "aberto_em": "2026-08-13",
         "metrica": null,
@@ -628,16 +633,16 @@
         "acao_recomendada": "sem ação padrão para este gatilho",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": null,
-        "medido_em": null,
-        "veredito": "aberto",
+        "medido_em": "2026-08-13",
+        "veredito": "cedo_demais",
         "dias": 0
       },
       {
-        "arco_id": "rio_de_janei_orthodontic|nao_engatou",
+        "arco_id": "rio_de_janei_orthodontic|silencio",
         "local_id": "rio_de_janei_orthodontic",
         "praca_id": "rio_de_janeiro",
-        "gatilho": "nao_engatou",
-        "problema": "a primeira avaliação é de 2026-07-10, há 1 meses, e o ritmo medido é 110.5/mês — a unidade ainda não engatou",
+        "gatilho": "silencio",
+        "problema": "47 anúncios no ar de 30 anunciantes, e nenhum é da rede",
         "evidencia": "dados/serie/fila_historico.jsonl",
         "aberto_em": "2026-08-13",
         "metrica": null,

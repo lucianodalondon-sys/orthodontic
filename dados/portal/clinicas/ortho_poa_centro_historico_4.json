@@ -5,8 +5,8 @@
     "unidade": "OrthoDontic · R. Gen. Vitorino",
     "cidade": "RS · Porto Alegre",
     "endereco": "R. Gen. Vitorino, 77 - Sl 703 - Centro Histórico, Porto Alegre - RS, 90020-171",
-    "desde": null,
-    "medicoes": null,
+    "desde": "12/ago",
+    "medicoes": 2,
     "posicao_na_cidade": null,
     "clinicas_na_cidade": null,
     "lojas_irmas": [
@@ -35,28 +35,110 @@
         "unidade": "OrthoDontic · Rio Branco"
       }
     ],
-    "frase": "OrthoDontic · R. Gen. Vitorino fica em Centro Histórico, onde estão 32 clínicas mapeadas e divide Porto Alegre com mais 6 lojas da rede."
+    "frase": "OrthoDontic · R. Gen. Vitorino é escutada desde 12/ago, em 2 medições e divide Porto Alegre com mais 6 lojas da rede."
   },
   "rotulo": "RS · Porto Alegre",
   "unidade": "OrthoDontic · R. Gen. Vitorino",
   "cabecalho": {
     "nota": 4.6,
     "avaliacoes": 162,
-    "ritmo": 9.1,
+    "ritmo": 1.3,
     "meses_seguidos": 3,
-    "posicao": 10,
-    "de": 21
+    "posicao": 21,
+    "de": 21,
+    "amostra_lida": 162,
+    "amostra_dias": 3760,
+    "amostra_truncada": false,
+    "ritmo_comparavel": true,
+    "porque_fora_do_ranking": null
   },
-  "faixa": "verde",
-  "urgencia": 0,
-  "tarefa": null,
-  "acao": null,
-  "gatilhos": [],
-  "quem_avanca": null,
-  "o_que_mudou": null,
+  "faixa": "amarela",
+  "urgencia": 45,
+  "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-13",
+    "dias_aberta": 0,
+    "prazo_dias": null,
+    "vence_em": null
+  },
+  "acao": {
+    "o_que": "Levar a comparação impressa com Sorridents Porto Alegre Clinica Odontológica / Dentista para a visita e combinar a resposta",
+    "prazo": "próxima visita",
+    "dono": "consultor de campo",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "rival",
+    "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": null,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "scripts/fila.py",
+      "a_favor": [
+        "Sorridents Porto Alegre Clinica Odontológica / Dentista sustenta há 20 meses a 19.2/mês, contra 1.3/mês desta unidade",
+        "21º lugar de 21 clínicas medidas na praça"
+      ],
+      "contra": [],
+      "o_que_aumentaria": "o resultado medido na coleta seguinte (dados/serie/acoes.jsonl)",
+      "procedencia": "sem amostra declarada"
+    }
+  },
+  "gatilhos": [
+    {
+      "peso": 25,
+      "titulo": "Um rival de aparelho sustenta e corre mais",
+      "chave": "rival",
+      "fato": "Sorridents Porto Alegre Clinica Odontológica / Dentista sustenta há 20 meses a 19.2/mês, contra 1.3/mês desta unidade",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "peso": 20,
+      "titulo": "Está na metade de baixo da própria praça",
+      "chave": "posicao",
+      "fato": "21º lugar de 21 clínicas medidas na praça",
+      "fonte": "dados/portal/rede_cruzamento.json"
+    }
+  ],
+  "quem_avanca": {
+    "nome": "Sorridents Porto Alegre Clinica Odontológica / Dentista",
+    "ritmo": 19.2,
+    "meses": 20,
+    "nota": 4.9,
+    "posicao": 1
+  },
+  "o_que_mudou": {
+    "local_id": "ortho_poa_centro_historico_4",
+    "nome": "OrthoDontic - Clínica Odontológica Centro Porto Alegre - Tratamento de Canal - Periodontia - Restauração Dental - Prótese - Clareamento e Limpeza Dental - Aparelho Ortodôntico Metálico e Estético - Emergência - Extração do Siso - Faceta de Porcelana",
+    "proprio": true,
+    "aparelho": true,
+    "de": "2026-08-12",
+    "ate": "2026-08-13",
+    "dias": 1,
+    "antes": 162,
+    "agora": 162,
+    "delta": 0,
+    "nota_antes": 4.6,
+    "nota_agora": 4.6,
+    "ritmo_do_periodo": 0.0,
+    "historico": {
+      "desde": "2026-08-12",
+      "ate": "2026-08-13",
+      "dias": 1,
+      "medicoes": 2,
+      "antes": 162,
+      "agora": 162,
+      "delta": 0,
+      "ritmo_do_periodo": 0.0,
+      "nota_antes": 4.6,
+      "nota_agora": 4.6
+    },
+    "eventos": [],
+    "aviso": "a praça é medida há 1 dia (2 medições) — a leitura ainda diz pouco e engorda a cada coleta"
+  },
   "sem_resposta": {
-    "abertas": 2,
-    "com_texto": 2,
+    "abertas": 5,
+    "com_texto": 3,
     "itens": [
       {
         "nota": 1,
@@ -69,18 +151,36 @@
         "data": "2026-02-21",
         "texto": "Atendimento pelo o whatsapp é péssimo, dificilmente conseguimos concluir,As vezes demoram mais de 2 dias para dar um retorno. Fora algumas situações desagradaveis que já passei dentro da clínica e acabei relevando.",
         "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-03-19",
+        "texto": "Péssimo atendimento não consigo expressar o quanto fiquei chateada com atendimento e a demora uma hora de espera a preferência é para quem vai iniciar para colocar o aparelho porque depois de umtempo o cliente que já está no fim do tratamento não tem mais o mesmo tipo de atendimento...",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2019-08-19",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 3,
+        "data": "2016-09-26",
+        "texto": null,
+        "tem_texto": false
       }
     ],
-    "itens_total": 2
+    "itens_total": 5
   },
   "voz_do_paciente": [
     {
       "o_que_e": "Explica o que vai fazer, antes de fazer",
-      "pct": 1.0
+      "pct": 0.8
     },
     {
       "o_que_e": "Atende na hora marcada",
-      "pct": 3.0
+      "pct": 3.3
     },
     {
       "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
@@ -88,75 +188,78 @@
     },
     {
       "o_que_e": "Cuida de quem tem medo de dentista",
-      "pct": 1.0
+      "pct": 0.8
     },
     {
       "o_que_e": "Resolve no mesmo dia",
-      "pct": 0.0
+      "pct": 0.8
     },
     {
       "o_que_e": "Sabe atender criança",
-      "pct": 4.0
+      "pct": 4.1
     },
     {
       "o_que_e": "Continua presente depois que vendeu",
-      "pct": 4.0
+      "pct": 4.9
     },
     {
       "o_que_e": "Tem profissional que o paciente chama pelo nome",
-      "pct": 16.0
+      "pct": 16.4
     }
   ],
   "rival": {
     "comparados": [
       "Sorridents Porto Alegre Clinica Odontológica / Dentista",
-      "Clinica Odontológica | Dentista | Próteses | Implantes | Clareamento | Clinodente Porto Alegre",
+      "LAR Odontologia - Reabilitação Oral e Implantes Dentários. Ortodontia convencional e Alinhadores Transparentes.",
       "Dentista Porto Alegre | Clínica Dental Center"
     ],
     "vantagens_deles": [
       {
         "eixo": "explica_o_tratamento",
         "o_que_e": "Explica o que vai fazer, antes de fazer",
-        "quem": "Sorridents Porto Alegre Clinica Odontológica / Dentista",
-        "eles": 4.8,
-        "nos": 1.0,
-        "razao": 4.8
-      },
-      {
-        "eixo": "hora_marcada_e_hora",
-        "o_que_e": "Atende na hora marcada",
-        "quem": "Clinica Odontológica | Dentista | Próteses | Implantes | Clareamento | Clinodente Porto Alegre",
-        "eles": 13.6,
-        "nos": 3.0,
-        "razao": 4.5
+        "quem": "LAR Odontologia - Reabilitação Oral e Implantes Dentários. Ortodontia convencional e Alinhadores Transparentes.",
+        "eles": 6.2,
+        "nos": 0.8,
+        "razao": 7.6
       },
       {
         "eixo": "acolhimento_do_medo",
         "o_que_e": "Cuida de quem tem medo de dentista",
+        "quem": "LAR Odontologia - Reabilitação Oral e Implantes Dentários. Ortodontia convencional e Alinhadores Transparentes.",
+        "eles": 4.5,
+        "nos": 0.8,
+        "razao": 5.5
+      },
+      {
+        "eixo": "resolve_no_mesmo_dia",
+        "o_que_e": "Resolve no mesmo dia",
         "quem": "Dentista Porto Alegre | Clínica Dental Center",
-        "eles": 3.4,
-        "nos": 1.0,
-        "razao": 3.4
+        "eles": 1.7,
+        "nos": 0.8,
+        "razao": 2.1
+      },
+      {
+        "eixo": "gente_com_nome",
+        "o_que_e": "Tem profissional que o paciente chama pelo nome",
+        "quem": "LAR Odontologia - Reabilitação Oral e Implantes Dentários. Ortodontia convencional e Alinhadores Transparentes.",
+        "eles": 34.1,
+        "nos": 16.4,
+        "razao": 2.1
       },
       {
         "eixo": "pos_venda",
         "o_que_e": "Continua presente depois que vendeu",
         "quem": "Dentista Porto Alegre | Clínica Dental Center",
-        "eles": 9.2,
-        "nos": 4.0,
-        "razao": 2.3
+        "eles": 7.7,
+        "nos": 4.9,
+        "razao": 1.6
       }
     ],
     "fora": [
       {
-        "nome": "Clinica Koelsch",
+        "nome": "Odonto Clin",
         "fora": true,
-        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 116 avaliações citam aparelho"
-      },
-      {
-        "nome": "Sorrir Bem Clínica Odontológica",
-        "fora": true,
-        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 93 avaliações citam aparelho"
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 68 avaliações citam aparelho"
       },
       {
         "nome": "Integrare Odontologia",
@@ -169,9 +272,9 @@
         "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 94 avaliações citam aparelho"
       },
       {
-        "nome": "Odonto Clin",
+        "nome": "Dentista Legal",
         "fora": true,
-        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 68 avaliações citam aparelho"
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 85 avaliações citam aparelho"
       },
       {
         "nome": "Integrar Odontologia",
@@ -179,17 +282,32 @@
         "por_que_fora": "a voz do cliente é de implante: só 1 de 94 avaliações citam aparelho"
       },
       {
+        "nome": "Clinica Koelsch",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 116 avaliações citam aparelho"
+      },
+      {
+        "nome": "Odontologia Dr. RM",
+        "fora": true,
+        "por_que_fora": "amostra pequena (38 avaliações com texto) — não dá para afirmar o produto"
+      },
+      {
         "nome": "Da Vinci Odontologia",
         "fora": true,
         "por_que_fora": "a voz do cliente é de odontologia geral: só 2 de 97 avaliações citam aparelho"
       },
       {
-        "nome": "Dentista Legal",
+        "nome": "Sorrir Bem Clínica Odontológica",
         "fora": true,
-        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 85 avaliações citam aparelho"
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 93 avaliações citam aparelho"
+      },
+      {
+        "nome": "Pronto Socorro Dentário - Clínica Odontológica 24 Horas",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 102 avaliações citam aparelho"
       }
     ],
-    "fora_total": 8,
+    "fora_total": 10,
     "sem_comparacao_porque": null
   },
   "presenca_na_busca": {
@@ -336,8 +454,8 @@
     "local_id": "ortho_poa_centro_historico_4",
     "unidade": "OrthoDontic · R. Gen. Vitorino",
     "rotulo": "RS · Porto Alegre",
-    "com_texto": 100,
-    "sem_estagio": 48,
+    "com_texto": 122,
+    "sem_estagio": 56,
     "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
     "estagios": [
       {
@@ -346,19 +464,50 @@
         "o_que_e": "como me acharam",
         "quem_resolve": "marketing e ficha do Google",
         "medido": true,
-        "avaliacoes": 15,
-        "dor": 0,
+        "avaliacoes": 16,
+        "dor": 1,
         "elogio": 15,
-        "pct_dor": 0,
+        "pct_dor": 6,
         "amostra_curta": false,
         "exemplos": [],
-        "frase": "15 avaliações falam deste momento, nenhuma com nota baixa",
+        "frase": "16 avaliações falam deste momento, 1 com nota baixa",
         "porque_vazio": null
       },
       {
         "estagio": "contato",
         "rotulo": "Contato",
         "o_que_e": "telefone e WhatsApp",
+        "quem_resolve": "recepção",
+        "medido": true,
+        "avaliacoes": 6,
+        "dor": 4,
+        "elogio": 2,
+        "pct_dor": 67,
+        "amostra_curta": true,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2023-12-06",
+            "texto": "Estou a dias tentando contato, é horrível o quanto o telefone deles não funciona, o quanto o WhatsApp respondem de 3 em 3 dias, para conseguir qualquer informação tem q esperar o tempo deles, já tentei contato em tudo que é lugar e inclusive todos que consultam no mesmo lugar falam do quão ruim é o atendimento.\nTEM MEIOS DE COMUNICAÇÃO PRA QUE SE NÃO VÃO RESPONDER? EU HEIN!"
+          },
+          {
+            "nota": 1,
+            "data": "2024-07-23",
+            "texto": "Uma demora pra responder no whatsapp!!!! Tem que tentar contato 10x pra tirarem todas as dúvidas e marcar a consulta. Logo estou trocando de clínica!"
+          },
+          {
+            "nota": 1,
+            "data": "2026-02-21",
+            "texto": "Atendimento pelo o whatsapp é péssimo, dificilmente conseguimos concluir,As vezes demoram mais de 2 dias para dar um retorno. Fora algumas situações desagradaveis que já passei dentro da clínica e acabei relevando."
+          }
+        ],
+        "frase": "6 avaliações falam deste momento, 4 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "agendamento",
+        "rotulo": "Agendamento",
+        "o_que_e": "marcar e remarcar",
         "quem_resolve": "recepção",
         "medido": true,
         "avaliacoes": 2,
@@ -369,27 +518,12 @@
         "exemplos": [
           {
             "nota": 1,
-            "data": "2026-02-21",
-            "texto": "Atendimento pelo o whatsapp é péssimo, dificilmente conseguimos concluir,As vezes demoram mais de 2 dias para dar um retorno. Fora algumas situações desagradaveis que já passei dentro da clínica e acabei relevando."
+            "data": "2024-07-23",
+            "texto": "Uma demora pra responder no whatsapp!!!! Tem que tentar contato 10x pra tirarem todas as dúvidas e marcar a consulta. Logo estou trocando de clínica!"
           }
         ],
         "frase": "2 avaliações falam deste momento, 2 com notas baixas",
         "porque_vazio": null
-      },
-      {
-        "estagio": "agendamento",
-        "rotulo": "Agendamento",
-        "o_que_e": "marcar e remarcar",
-        "quem_resolve": "recepção",
-        "medido": false,
-        "avaliacoes": 0,
-        "dor": 0,
-        "elogio": 0,
-        "pct_dor": null,
-        "amostra_curta": false,
-        "exemplos": [],
-        "frase": null,
-        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
       },
       {
         "estagio": "recepcao",
@@ -397,13 +531,24 @@
         "o_que_e": "chegar e esperar",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 32,
-        "dor": 1,
-        "elogio": 31,
-        "pct_dor": 3,
+        "avaliacoes": 39,
+        "dor": 4,
+        "elogio": 35,
+        "pct_dor": 10,
         "amostra_curta": false,
-        "exemplos": [],
-        "frase": "32 avaliações falam deste momento, 1 com nota baixa",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2023-09-11",
+            "texto": "Péssimo atendimento.\nRecepcionistas mal educadas, invasivas, horrível atendimento.\nLocal sujo, cuidado precário."
+          },
+          {
+            "nota": 1,
+            "data": "2025-03-19",
+            "texto": "Péssimo atendimento não consigo expressar o quanto fiquei chateada com atendimento e a demora uma hora de espera a preferência é para quem vai iniciar para colocar o aparelho porque depois de umtempo o cliente que já está no fim do tratamento não tem mais o mesmo tipo de atendimento..."
+          }
+        ],
+        "frase": "39 avaliações falam deste momento, 4 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -412,13 +557,13 @@
         "o_que_e": "a primeira consulta",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 5,
-        "dor": 0,
-        "elogio": 5,
-        "pct_dor": 0,
+        "avaliacoes": 7,
+        "dor": 1,
+        "elogio": 6,
+        "pct_dor": 14,
         "amostra_curta": true,
         "exemplos": [],
-        "frase": "5 avaliações falam deste momento, nenhuma com nota baixa",
+        "frase": "7 avaliações falam deste momento, 1 com nota baixa",
         "porque_vazio": null
       },
       {
@@ -427,13 +572,13 @@
         "o_que_e": "preço, contrato e entrada",
         "quem_resolve": "franqueado",
         "medido": true,
-        "avaliacoes": 2,
+        "avaliacoes": 3,
         "dor": 0,
-        "elogio": 2,
+        "elogio": 3,
         "pct_dor": 0,
         "amostra_curta": true,
         "exemplos": [],
-        "frase": "2 avaliações falam deste momento, nenhuma com nota baixa",
+        "frase": "3 avaliações falam deste momento, nenhuma com nota baixa",
         "porque_vazio": null
       },
       {
@@ -442,13 +587,13 @@
         "o_que_e": "a cadeira",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 6,
-        "dor": 0,
-        "elogio": 6,
-        "pct_dor": 0,
-        "amostra_curta": true,
+        "avaliacoes": 9,
+        "dor": 1,
+        "elogio": 8,
+        "pct_dor": 11,
+        "amostra_curta": false,
         "exemplos": [],
-        "frase": "6 avaliações falam deste momento, nenhuma com nota baixa",
+        "frase": "9 avaliações falam deste momento, 1 com nota baixa",
         "porque_vazio": null
       },
       {
@@ -457,10 +602,10 @@
         "o_que_e": "as voltas de cada mês",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 2,
+        "avaliacoes": 3,
         "dor": 1,
-        "elogio": 1,
-        "pct_dor": 50,
+        "elogio": 2,
+        "pct_dor": 33,
         "amostra_curta": true,
         "exemplos": [
           {
@@ -469,7 +614,7 @@
             "texto": "Atendimento pelo o whatsapp é péssimo, dificilmente conseguimos concluir,As vezes demoram mais de 2 dias para dar um retorno. Fora algumas situações desagradaveis que já passei dentro da clínica e acabei relevando."
           }
         ],
-        "frase": "2 avaliações falam deste momento, 1 com nota baixa",
+        "frase": "3 avaliações falam deste momento, 1 com nota baixa",
         "porque_vazio": null
       },
       {
@@ -493,13 +638,19 @@
         "o_que_e": "quando algo dá errado",
         "quem_resolve": "franqueado",
         "medido": true,
-        "avaliacoes": 2,
-        "dor": 0,
+        "avaliacoes": 3,
+        "dor": 1,
         "elogio": 2,
-        "pct_dor": 0,
+        "pct_dor": 33,
         "amostra_curta": true,
-        "exemplos": [],
-        "frase": "2 avaliações falam deste momento, nenhuma com nota baixa",
+        "exemplos": [
+          {
+            "nota": 2,
+            "data": "2022-08-22",
+            "texto": "Sempre  atrasa as consultas,30min.até mais tempo,Acho que isso falta de organização e desrespeito com paciente,espero que seja resolvido esse PROBLEMA."
+          }
+        ],
+        "frase": "3 avaliações falam deste momento, 1 com nota baixa",
         "porque_vazio": null
       },
       {
@@ -508,13 +659,19 @@
         "o_que_e": "alta e depois dela",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 1,
-        "dor": 0,
-        "elogio": 1,
-        "pct_dor": 0,
+        "avaliacoes": 3,
+        "dor": 1,
+        "elogio": 2,
+        "pct_dor": 33,
         "amostra_curta": true,
-        "exemplos": [],
-        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2025-03-19",
+            "texto": "Péssimo atendimento não consigo expressar o quanto fiquei chateada com atendimento e a demora uma hora de espera a preferência é para quem vai iniciar para colocar o aparelho porque depois de umtempo o cliente que já está no fim do tratamento não tem mais o mesmo tipo de atendimento..."
+          }
+        ],
+        "frase": "3 avaliações falam deste momento, 1 com nota baixa",
         "porque_vazio": null
       }
     ],
@@ -523,16 +680,16 @@
     "e_clinico": null,
     "confianca": {
       "natureza": "fato",
-      "confianca": "media",
+      "confianca": "alta",
       "medido": true,
-      "amostra": 100,
-      "janela_dias": null,
-      "medicoes": null,
+      "amostra": 122,
+      "janela_dias": 1,
+      "medicoes": 2,
       "fonte": "dados/serie/reviews.jsonl",
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": "mais avaliações com texto nesta loja",
-      "procedencia": "medido em 100 avaliações"
+      "procedencia": "medido em 122 avaliações, 2 medições, 1 dia de janela"
     }
   },
   "meu_territorio": {
@@ -616,7 +773,42 @@
       "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
     }
   },
-  "execucao": null,
+  "execucao": {
+    "local_id": "ortho_poa_centro_historico_4",
+    "praca_id": "porto_alegre",
+    "rotulo": "RS · Porto Alegre",
+    "unidade": "OrthoDontic · R. Gen. Vitorino",
+    "itens": [
+      {
+        "problema": "5 avaliações negativas abertas sem resposta",
+        "e_marketing": false,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "reputacao",
+          "especialidade": "a própria unidade",
+          "porque_nao_e_marketing": "responder paciente é trabalho de quem atende. Agência escrevendo resposta em nome da clínica é o caminho mais curto para uma resposta que o paciente percebe como automática.",
+          "metrica_de_validacao": "quantas seguem sem resposta na próxima coleta",
+          "recoletar_em_dias": 15
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 5,
+          "janela_dias": null,
+          "medicoes": null,
+          "fonte": "dados/portal/caixa_de_respostas.json",
+          "a_favor": [],
+          "contra": [],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 5 avaliações"
+        }
+      }
+    ],
+    "de_marketing": 0,
+    "de_operacao": 1,
+    "descartados": 0
+  },
   "meu_bairro": {
     "bairro": "Centro Histórico",
     "clinicas": 32,
@@ -641,8 +833,45 @@
     "e_da_cidade": false
   },
   "acoes": {
-    "arcos": [],
-    "total": 0,
+    "arcos": [
+      {
+        "arco_id": "ortho_poa_centro_historico_4|posicao",
+        "local_id": "ortho_poa_centro_historico_4",
+        "praca_id": "porto_alegre",
+        "gatilho": "posicao",
+        "problema": "21º lugar de 21 clínicas medidas na praça",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": "posicao",
+        "antes": 21.0,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      },
+      {
+        "arco_id": "ortho_poa_centro_historico_4|rival",
+        "local_id": "ortho_poa_centro_historico_4",
+        "praca_id": "porto_alegre",
+        "gatilho": "rival",
+        "problema": "Sorridents Porto Alegre Clinica Odontológica / Dentista sustenta há 20 meses a 19.2/mês, contra 1.3/mês desta unidade",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": null,
+        "antes": null,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "sem ação padrão para este gatilho",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      }
+    ],
+    "total": 2,
     "aviso": "O livro nasceu hoje. Nenhum arco completou 21 dias, então ainda não há veredito para ninguém — a primeira resposta vem na coleta seguinte."
   },
   "oferta_da_cidade": {
@@ -1039,6 +1268,20 @@
     "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
   },
   "eventos": [
+    {
+      "data": "2026-08-13",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Um rival de aparelho sustenta e corre mais",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-13",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Está na metade de baixo da própria praça",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
     {
       "data": "2026-07-07",
       "tipo": "avaliacao_negativa",

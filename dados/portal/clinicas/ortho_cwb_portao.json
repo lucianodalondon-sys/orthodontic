@@ -5,8 +5,8 @@
     "unidade": "OrthoDontic · Portão",
     "cidade": "PR · Curitiba",
     "endereco": "R. Maranhão, 2286 - Portão, Curitiba - PR, 80610-001",
-    "desde": null,
-    "medicoes": null,
+    "desde": "12/ago",
+    "medicoes": 2,
     "posicao_na_cidade": null,
     "clinicas_na_cidade": null,
     "lojas_irmas": [
@@ -27,17 +27,22 @@
         "unidade": "OrthoDontic · Edifício Odin do Amaral - R. Mal. Deodoro"
       }
     ],
-    "frase": "OrthoDontic · Portão está entre as 3 clínicas mapeadas de Portão e divide Curitiba com mais 4 lojas da rede."
+    "frase": "OrthoDontic · Portão é escutada desde 12/ago, em 2 medições e divide Curitiba com mais 4 lojas da rede."
   },
   "rotulo": "PR · Curitiba",
   "unidade": "OrthoDontic · Portão",
   "cabecalho": {
     "nota": 4.8,
     "avaliacoes": 270,
-    "ritmo": 13.7,
+    "ritmo": 3.1,
     "meses_seguidos": 7,
-    "posicao": 12,
-    "de": 19
+    "posicao": 3,
+    "de": 4,
+    "amostra_lida": 270,
+    "amostra_dias": 2664,
+    "amostra_truncada": false,
+    "ritmo_comparavel": true,
+    "porque_fora_do_ranking": null
   },
   "faixa": "amarela",
   "urgencia": 35,
@@ -63,7 +68,7 @@
       "medicoes": null,
       "fonte": "scripts/fila.py",
       "a_favor": [
-        "12º lugar de 19 clínicas medidas na praça",
+        "3º lugar de 4 clínicas medidas na praça",
         "85 anúncios no ar de 52 anunciantes, e nenhum é da rede"
       ],
       "contra": [],
@@ -76,7 +81,7 @@
       "peso": 20,
       "titulo": "Está na metade de baixo da própria praça",
       "chave": "posicao",
-      "fato": "12º lugar de 19 clínicas medidas na praça",
+      "fato": "3º lugar de 4 clínicas medidas na praça",
       "fonte": "dados/portal/rede_cruzamento.json"
     },
     {
@@ -88,7 +93,35 @@
     }
   ],
   "quem_avanca": null,
-  "o_que_mudou": null,
+  "o_que_mudou": {
+    "local_id": "ortho_cwb_portao",
+    "nome": "OrthoDontic",
+    "proprio": true,
+    "aparelho": true,
+    "de": "2026-08-12",
+    "ate": "2026-08-13",
+    "dias": 1,
+    "antes": 270,
+    "agora": 270,
+    "delta": 0,
+    "nota_antes": 4.8,
+    "nota_agora": 4.8,
+    "ritmo_do_periodo": 0.0,
+    "historico": {
+      "desde": "2026-08-12",
+      "ate": "2026-08-13",
+      "dias": 1,
+      "medicoes": 2,
+      "antes": 270,
+      "agora": 270,
+      "delta": 0,
+      "ritmo_do_periodo": 0.0,
+      "nota_antes": 4.8,
+      "nota_agora": 4.8
+    },
+    "eventos": [],
+    "aviso": "a praça é medida há 1 dia (2 medições) — a leitura ainda diz pouco e engorda a cada coleta"
+  },
   "sem_resposta": {
     "abertas": null,
     "com_texto": null,
@@ -98,19 +131,19 @@
   "voz_do_paciente": [
     {
       "o_que_e": "Explica o que vai fazer, antes de fazer",
-      "pct": 3.2
+      "pct": 2.4
     },
     {
       "o_que_e": "Atende na hora marcada",
-      "pct": 3.2
+      "pct": 2.9
     },
     {
       "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
-      "pct": 0.0
+      "pct": 2.9
     },
     {
       "o_que_e": "Cuida de quem tem medo de dentista",
-      "pct": 1.1
+      "pct": 1.0
     },
     {
       "o_que_e": "Resolve no mesmo dia",
@@ -118,15 +151,15 @@
     },
     {
       "o_que_e": "Sabe atender criança",
-      "pct": 1.1
+      "pct": 3.3
     },
     {
       "o_que_e": "Continua presente depois que vendeu",
-      "pct": 5.3
+      "pct": 6.7
     },
     {
       "o_que_e": "Tem profissional que o paciente chama pelo nome",
-      "pct": 23.2
+      "pct": 23.0
     }
   ],
   "rival": {
@@ -141,40 +174,40 @@
         "o_que_e": "Cuida de quem tem medo de dentista",
         "quem": "IORC Instituto de Ortodontia de Curitiba",
         "eles": 4.5,
-        "nos": 1.1,
-        "razao": 4.3
-      },
-      {
-        "eixo": "trata_crianca",
-        "o_que_e": "Sabe atender criança",
-        "quem": "IORC Instituto de Ortodontia de Curitiba",
-        "eles": 3.4,
-        "nos": 1.1,
-        "razao": 3.2
+        "nos": 1.0,
+        "razao": 4.7
       },
       {
         "eixo": "explica_o_tratamento",
         "o_que_e": "Explica o que vai fazer, antes de fazer",
         "quem": "REDEORTO Curitiba - Centro",
         "eles": 6.1,
-        "nos": 3.2,
-        "razao": 1.9
+        "nos": 2.4,
+        "razao": 2.5
       },
       {
         "eixo": "hora_marcada_e_hora",
         "o_que_e": "Atende na hora marcada",
         "quem": "IORC Instituto de Ortodontia de Curitiba",
         "eles": 5.6,
-        "nos": 3.2,
-        "razao": 1.8
+        "nos": 2.9,
+        "razao": 2.0
+      },
+      {
+        "eixo": "preco_claro",
+        "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
+        "quem": "Julio Cavichiolo | Ortodontia | Estética | Implante Dentário | Dentista em Novo Mundo | Curitiba PR",
+        "eles": 4.7,
+        "nos": 2.9,
+        "razao": 1.6
       },
       {
         "eixo": "pos_venda",
         "o_que_e": "Continua presente depois que vendeu",
         "quem": "Julio Cavichiolo | Ortodontia | Estética | Implante Dentário | Dentista em Novo Mundo | Curitiba PR",
         "eles": 9.4,
-        "nos": 5.3,
-        "razao": 1.8
+        "nos": 6.7,
+        "razao": 1.4
       }
     ],
     "fora": [
@@ -343,8 +376,8 @@
     "local_id": "ortho_cwb_portao",
     "unidade": "OrthoDontic · Portão",
     "rotulo": "PR · Curitiba",
-    "com_texto": 95,
-    "sem_estagio": 55,
+    "com_texto": 209,
+    "sem_estagio": 114,
     "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
     "estagios": [
       {
@@ -353,13 +386,13 @@
         "o_que_e": "como me acharam",
         "quem_resolve": "marketing e ficha do Google",
         "medido": true,
-        "avaliacoes": 12,
-        "dor": 0,
-        "elogio": 12,
-        "pct_dor": 0,
+        "avaliacoes": 42,
+        "dor": 1,
+        "elogio": 41,
+        "pct_dor": 2,
         "amostra_curta": false,
         "exemplos": [],
-        "frase": "12 avaliações falam deste momento, nenhuma com nota baixa",
+        "frase": "42 avaliações falam deste momento, 1 com nota baixa",
         "porque_vazio": null
       },
       {
@@ -367,30 +400,36 @@
         "rotulo": "Contato",
         "o_que_e": "telefone e WhatsApp",
         "quem_resolve": "recepção",
-        "medido": false,
-        "avaliacoes": 0,
-        "dor": 0,
-        "elogio": 0,
-        "pct_dor": null,
-        "amostra_curta": false,
+        "medido": true,
+        "avaliacoes": 6,
+        "dor": 1,
+        "elogio": 5,
+        "pct_dor": 17,
+        "amostra_curta": true,
         "exemplos": [],
-        "frase": null,
-        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+        "frase": "6 avaliações falam deste momento, 1 com nota baixa",
+        "porque_vazio": null
       },
       {
         "estagio": "agendamento",
         "rotulo": "Agendamento",
         "o_que_e": "marcar e remarcar",
         "quem_resolve": "recepção",
-        "medido": false,
-        "avaliacoes": 0,
-        "dor": 0,
-        "elogio": 0,
-        "pct_dor": null,
-        "amostra_curta": false,
-        "exemplos": [],
-        "frase": null,
-        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+        "medido": true,
+        "avaliacoes": 4,
+        "dor": 2,
+        "elogio": 2,
+        "pct_dor": 50,
+        "amostra_curta": true,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2025-05-15",
+            "texto": "Fui atendida fora de horário por erro do sistema e meu atendimento foi feito rápido e mal feito.\n\nPéssima experiência."
+          }
+        ],
+        "frase": "4 avaliações falam deste momento, 2 com notas baixas",
+        "porque_vazio": null
       },
       {
         "estagio": "recepcao",
@@ -398,13 +437,13 @@
         "o_que_e": "chegar e esperar",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 18,
-        "dor": 0,
-        "elogio": 18,
-        "pct_dor": 0,
+        "avaliacoes": 35,
+        "dor": 1,
+        "elogio": 34,
+        "pct_dor": 3,
         "amostra_curta": false,
         "exemplos": [],
-        "frase": "18 avaliações falam deste momento, nenhuma com nota baixa",
+        "frase": "35 avaliações falam deste momento, 1 com nota baixa",
         "porque_vazio": null
       },
       {
@@ -412,96 +451,21 @@
         "rotulo": "Avaliação",
         "o_que_e": "a primeira consulta",
         "quem_resolve": "clínica",
-        "medido": false,
-        "avaliacoes": 0,
+        "medido": true,
+        "avaliacoes": 1,
         "dor": 0,
-        "elogio": 0,
-        "pct_dor": null,
-        "amostra_curta": false,
+        "elogio": 1,
+        "pct_dor": 0,
+        "amostra_curta": true,
         "exemplos": [],
-        "frase": null,
-        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
       },
       {
         "estagio": "contratacao",
         "rotulo": "Contratação",
         "o_que_e": "preço, contrato e entrada",
         "quem_resolve": "franqueado",
-        "medido": false,
-        "avaliacoes": 0,
-        "dor": 0,
-        "elogio": 0,
-        "pct_dor": null,
-        "amostra_curta": false,
-        "exemplos": [],
-        "frase": null,
-        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
-      },
-      {
-        "estagio": "clinico",
-        "rotulo": "Atendimento clínico",
-        "o_que_e": "a cadeira",
-        "quem_resolve": "clínica",
-        "medido": true,
-        "avaliacoes": 23,
-        "dor": 0,
-        "elogio": 23,
-        "pct_dor": 0,
-        "amostra_curta": false,
-        "exemplos": [],
-        "frase": "23 avaliações falam deste momento, nenhuma com nota baixa",
-        "porque_vazio": null
-      },
-      {
-        "estagio": "manutencao",
-        "rotulo": "Manutenção",
-        "o_que_e": "as voltas de cada mês",
-        "quem_resolve": "clínica",
-        "medido": true,
-        "avaliacoes": 3,
-        "dor": 0,
-        "elogio": 3,
-        "pct_dor": 0,
-        "amostra_curta": true,
-        "exemplos": [],
-        "frase": "3 avaliações falam deste momento, nenhuma com nota baixa",
-        "porque_vazio": null
-      },
-      {
-        "estagio": "cobranca",
-        "rotulo": "Cobrança",
-        "o_que_e": "mensalidade e multa",
-        "quem_resolve": "franqueado",
-        "medido": false,
-        "avaliacoes": 0,
-        "dor": 0,
-        "elogio": 0,
-        "pct_dor": null,
-        "amostra_curta": false,
-        "exemplos": [],
-        "frase": null,
-        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
-      },
-      {
-        "estagio": "suporte",
-        "rotulo": "Suporte",
-        "o_que_e": "quando algo dá errado",
-        "quem_resolve": "franqueado",
-        "medido": true,
-        "avaliacoes": 2,
-        "dor": 0,
-        "elogio": 2,
-        "pct_dor": 0,
-        "amostra_curta": true,
-        "exemplos": [],
-        "frase": "2 avaliações falam deste momento, nenhuma com nota baixa",
-        "porque_vazio": null
-      },
-      {
-        "estagio": "contencao",
-        "rotulo": "Fim e contenção",
-        "o_que_e": "alta e depois dela",
-        "quem_resolve": "clínica",
         "medido": true,
         "avaliacoes": 5,
         "dor": 0,
@@ -511,6 +475,81 @@
         "exemplos": [],
         "frase": "5 avaliações falam deste momento, nenhuma com nota baixa",
         "porque_vazio": null
+      },
+      {
+        "estagio": "clinico",
+        "rotulo": "Atendimento clínico",
+        "o_que_e": "a cadeira",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 47,
+        "dor": 3,
+        "elogio": 44,
+        "pct_dor": 6,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": "47 avaliações falam deste momento, 3 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "manutencao",
+        "rotulo": "Manutenção",
+        "o_que_e": "as voltas de cada mês",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 6,
+        "dor": 1,
+        "elogio": 5,
+        "pct_dor": 17,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "6 avaliações falam deste momento, 1 com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "cobranca",
+        "rotulo": "Cobrança",
+        "o_que_e": "mensalidade e multa",
+        "quem_resolve": "franqueado",
+        "medido": true,
+        "avaliacoes": 1,
+        "dor": 1,
+        "elogio": 0,
+        "pct_dor": 100,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "1 avaliação fala deste momento, 1 com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "suporte",
+        "rotulo": "Suporte",
+        "o_que_e": "quando algo dá errado",
+        "quem_resolve": "franqueado",
+        "medido": true,
+        "avaliacoes": 3,
+        "dor": 1,
+        "elogio": 2,
+        "pct_dor": 33,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "3 avaliações falam deste momento, 1 com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "contencao",
+        "rotulo": "Fim e contenção",
+        "o_que_e": "alta e depois dela",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 6,
+        "dor": 0,
+        "elogio": 6,
+        "pct_dor": 0,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "6 avaliações falam deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
       }
     ],
     "manchete": "Nenhum momento da jornada concentra dor com amostra suficiente para virar manchete.",
@@ -518,16 +557,16 @@
     "e_clinico": null,
     "confianca": {
       "natureza": "fato",
-      "confianca": "media",
+      "confianca": "alta",
       "medido": true,
-      "amostra": 95,
-      "janela_dias": null,
-      "medicoes": null,
+      "amostra": 209,
+      "janela_dias": 1,
+      "medicoes": 2,
       "fonte": "dados/serie/reviews.jsonl",
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": "mais avaliações com texto nesta loja",
-      "procedencia": "medido em 95 avaliações"
+      "procedencia": "medido em 209 avaliações, 2 medições, 1 dia de janela"
     }
   },
   "meu_territorio": {
@@ -640,7 +679,7 @@
         "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
         "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
         "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": 12.0,
+        "depois": 3.0,
         "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
         "dias": 1

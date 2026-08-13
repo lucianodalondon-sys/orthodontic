@@ -1,6 +1,6 @@
 {
   "corte": "2026-08-13",
-  "gerado_em": "2026-08-13T03:09:18",
+  "gerado_em": "2026-08-13T11:10:03",
   "rede": {
     "unidades": 373,
     "abertas": 350,
@@ -216,11 +216,11 @@
       "cidades": 17,
       "pracas_medidas": 1,
       "acompanhadas": 4,
-      "em_faixa_vermelha": 1,
+      "em_faixa_vermelha": 0,
       "em_faixa_amarela": 3,
       "alertas_graves": 0,
-      "tom": "crit",
-      "motivo": "1 em faixa vermelha · 3 em faixa amarela"
+      "tom": "warn",
+      "motivo": "3 em faixa amarela"
     },
     {
       "uf": "MA",
@@ -273,10 +273,10 @@
       "pracas_medidas": 2,
       "acompanhadas": 3,
       "em_faixa_vermelha": 2,
-      "em_faixa_amarela": 1,
+      "em_faixa_amarela": 0,
       "alertas_graves": 1,
       "tom": "crit",
-      "motivo": "2 em faixa vermelha · 1 em faixa amarela · 1 alerta grave na ficha do Google"
+      "motivo": "2 em faixa vermelha · 1 alerta grave na ficha do Google"
     },
     {
       "uf": "PA",
@@ -315,10 +315,10 @@
       "pracas_medidas": 3,
       "acompanhadas": 7,
       "em_faixa_vermelha": 2,
-      "em_faixa_amarela": 5,
+      "em_faixa_amarela": 3,
       "alertas_graves": 0,
       "tom": "crit",
-      "motivo": "2 em faixa vermelha · 5 em faixa amarela"
+      "motivo": "2 em faixa vermelha · 3 em faixa amarela"
     },
     {
       "uf": "PE",
@@ -384,11 +384,11 @@
       "cidades": 39,
       "pracas_medidas": 2,
       "acompanhadas": 10,
-      "em_faixa_vermelha": 0,
-      "em_faixa_amarela": 4,
+      "em_faixa_vermelha": 3,
+      "em_faixa_amarela": 5,
       "alertas_graves": 0,
-      "tom": "warn",
-      "motivo": "4 em faixa amarela"
+      "tom": "crit",
+      "motivo": "3 em faixa vermelha · 5 em faixa amarela"
     },
     {
       "uf": "RO",
@@ -427,10 +427,10 @@
       "pracas_medidas": 3,
       "acompanhadas": 7,
       "em_faixa_vermelha": 1,
-      "em_faixa_amarela": 4,
+      "em_faixa_amarela": 6,
       "alertas_graves": 0,
       "tom": "crit",
-      "motivo": "1 em faixa vermelha · 4 em faixa amarela"
+      "motivo": "1 em faixa vermelha · 6 em faixa amarela"
     },
     {
       "uf": "SP",
@@ -440,11 +440,11 @@
       "cidades": 65,
       "pracas_medidas": 3,
       "acompanhadas": 8,
-      "em_faixa_vermelha": 3,
-      "em_faixa_amarela": 3,
+      "em_faixa_vermelha": 2,
+      "em_faixa_amarela": 4,
       "alertas_graves": 5,
       "tom": "crit",
-      "motivo": "3 em faixa vermelha · 3 em faixa amarela · 5 alertas graves na ficha do Google"
+      "motivo": "2 em faixa vermelha · 4 em faixa amarela · 5 alertas graves na ficha do Google"
     },
     {
       "uf": "SE",
@@ -499,7 +499,7 @@
   ],
   "tiras_do_inicio": [
     {
-      "numero": 9,
+      "numero": 10,
       "tom": "crit",
       "rotulo": "unidades em faixa vermelha"
     },
@@ -509,7 +509,7 @@
       "rotulo": "tarefas fora do prazo"
     },
     {
-      "numero": 262,
+      "numero": 346,
       "tom": "marca",
       "rotulo": "avaliações esperando resposta"
     },
@@ -521,13 +521,34 @@
   ],
   "agora": {
     "pergunta": "Em quais unidades a OrthoDontic está perdendo atenção local, para qual concorrente, e onde intervir primeiro neste mês?",
-    "manchete": "9 de 45 unidades medidas estão em faixa vermelha. A primeira é SP · São Paulo.",
-    "em_risco": 9,
+    "manchete": "10 de 45 unidades medidas estão em faixa vermelha. A primeira é SC · Joinville.",
+    "em_risco": 10,
     "unidades": 45,
     "o_que_e_atencao": "participação observável em busca, avaliações, publicidade e atividade digital. Não é faturamento — nenhum número desta tela vem de dado interno da rede.",
     "primeiras": [
       {
         "pos": 1,
+        "rotulo": "SC · Joinville",
+        "unidade_curta": "· América",
+        "urgencia": 90,
+        "faixa": "vermelha",
+        "quem_avanca": {
+          "nome": "Odonto e Você",
+          "ritmo": 4.9,
+          "meses": 14,
+          "nota": 4.9,
+          "posicao": 5
+        },
+        "acao": {
+          "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+          "prazo": "14 dias",
+          "dono": "franqueado",
+          "custo": "sem custo de mídia",
+          "por_causa_de": "parada"
+        }
+      },
+      {
+        "pos": 2,
         "rotulo": "SP · São Paulo",
         "unidade_curta": "· República",
         "urgencia": 80,
@@ -542,24 +563,9 @@
         }
       },
       {
-        "pos": 2,
+        "pos": 3,
         "rotulo": "SP · Sorocaba",
         "unidade_curta": "· Jardim Faculdade",
-        "urgencia": 80,
-        "faixa": "vermelha",
-        "quem_avanca": null,
-        "acao": {
-          "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
-          "prazo": "14 dias",
-          "dono": "franqueado",
-          "custo": "sem custo de mídia",
-          "por_causa_de": "parada"
-        }
-      },
-      {
-        "pos": 3,
-        "rotulo": "MG · Uberlândia",
-        "unidade_curta": "· Av. Floriano Peixoto",
         "urgencia": 80,
         "faixa": "vermelha",
         "quem_avanca": null,
@@ -635,7 +641,7 @@
       "titulo": "O que mudou na semana",
       "pergunta": "O que aconteceu desde a última medição?",
       "numero": 3,
-      "frase": "contadores de avaliação CAÍRAM — queda é avaliação apagada, evento raro. 13 praças medidas de novo; o período ainda é curto e engorda a cada semana.",
+      "frase": "contadores de avaliação CAÍRAM — queda é avaliação apagada, evento raro. 17 praças medidas de novo; o período ainda é curto e engorda a cada semana.",
       "tela": "mudou",
       "grupo": "lojas",
       "disponivel": true,
@@ -645,8 +651,8 @@
       "chave": "fila",
       "titulo": "Onde agir primeiro",
       "pergunta": "Qual loja precisa de ajuda neste mês?",
-      "numero": 9,
-      "frase": "9 de 45 unidades medidas estão em faixa vermelha. A primeira é SP · São Paulo.",
+      "numero": 10,
+      "frase": "10 de 45 unidades medidas estão em faixa vermelha. A primeira é SC · Joinville.",
       "tela": "fila",
       "grupo": "lojas",
       "disponivel": true,
@@ -667,8 +673,8 @@
       "chave": "caixa",
       "titulo": "Avaliações sem resposta",
       "pergunta": "Quantos pacientes reclamaram e ninguém respondeu?",
-      "numero": 262,
-      "frase": "206 delas com o paciente explicando o motivo, loja por loja. Responder é higiene da marca.",
+      "numero": 346,
+      "frase": "274 delas com o paciente explicando o motivo, loja por loja. Responder é higiene da marca.",
       "tela": "caixa",
       "grupo": "lojas",
       "disponivel": true,
@@ -711,7 +717,7 @@
       "chave": "timeline",
       "titulo": "A vida de cada loja",
       "pergunta": "O que aconteceu em cada loja, em ordem?",
-      "numero": 180,
+      "numero": 208,
       "frase": "eventos observáveis — avaliações, contadores, alertas e rivais de aparelho — numa linha do tempo por loja, com o estado da tarefa de cada uma.",
       "tela": "timeline",
       "grupo": "lojas",

@@ -5,8 +5,8 @@
     "unidade": "OrthoDontic · Galeria Tijucas - Av. Luiz Xavier",
     "cidade": "PR · Curitiba",
     "endereco": "Galeria Tijucas - Av. Luiz Xavier, 68 - Sl 224 - Centro, Curitiba - PR, 80020-020",
-    "desde": null,
-    "medicoes": null,
+    "desde": "12/ago",
+    "medicoes": 2,
     "posicao_na_cidade": null,
     "clinicas_na_cidade": null,
     "lojas_irmas": [
@@ -27,33 +27,38 @@
         "unidade": "OrthoDontic · Edifício Odin do Amaral - R. Mal. Deodoro"
       }
     ],
-    "frase": "OrthoDontic · Galeria Tijucas - Av. Luiz Xavier fica em Centro, onde estão 74 clínicas mapeadas e divide Curitiba com mais 4 lojas da rede."
+    "frase": "OrthoDontic · Galeria Tijucas - Av. Luiz Xavier é escutada desde 12/ago, em 2 medições e divide Curitiba com mais 4 lojas da rede."
   },
   "rotulo": "PR · Curitiba",
   "unidade": "OrthoDontic · Galeria Tijucas - Av. Luiz Xavier",
   "cabecalho": {
     "nota": 4.9,
     "avaliacoes": 491,
-    "ritmo": 15.5,
+    "ritmo": 5.3,
     "meses_seguidos": 0,
-    "posicao": 8,
-    "de": 19
+    "posicao": 2,
+    "de": 4,
+    "amostra_lida": 491,
+    "amostra_dias": 2800,
+    "amostra_truncada": false,
+    "ritmo_comparavel": true,
+    "porque_fora_do_ranking": null
   },
   "faixa": "amarela",
-  "urgencia": 35,
+  "urgencia": 45,
   "tarefa": {
     "status": "aberta",
-    "aberta_em": "2026-08-12",
-    "dias_aberta": 1,
-    "prazo_dias": 60,
-    "vence_em": "2026-10-11"
+    "aberta_em": "2026-08-13",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-27"
   },
   "acao": {
-    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
-    "prazo": "60 dias",
-    "dono": "consultor de campo",
-    "custo": "verba de abertura",
-    "por_causa_de": "nao_engatou",
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada",
     "confianca": {
       "natureza": "recomendacao",
       "confianca": "baixa",
@@ -63,7 +68,7 @@
       "medicoes": null,
       "fonte": "scripts/fila.py",
       "a_favor": [
-        "a primeira avaliação é de 2025-12-20, há 7 meses, e o ritmo medido é 15.5/mês — a unidade ainda não engatou",
+        "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 5.3 avaliações/mês",
         "85 anúncios no ar de 52 anunciantes, e nenhum é da rede"
       ],
       "contra": [],
@@ -73,10 +78,10 @@
   },
   "gatilhos": [
     {
-      "peso": 20,
-      "titulo": "Unidade nova que ainda não engatou",
-      "chave": "nao_engatou",
-      "fato": "a primeira avaliação é de 2025-12-20, há 7 meses, e o ritmo medido é 15.5/mês — a unidade ainda não engatou",
+      "peso": 30,
+      "titulo": "O contador de avaliações parou",
+      "chave": "parada",
+      "fato": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 5.3 avaliações/mês",
       "fonte": "dados/serie/reviews.jsonl"
     },
     {
@@ -88,45 +93,86 @@
     }
   ],
   "quem_avanca": null,
-  "o_que_mudou": null,
+  "o_que_mudou": {
+    "local_id": "ortho_cwb_centro_3",
+    "nome": "OrthoDontic",
+    "proprio": true,
+    "aparelho": true,
+    "de": "2026-08-12",
+    "ate": "2026-08-13",
+    "dias": 1,
+    "antes": 491,
+    "agora": 491,
+    "delta": 0,
+    "nota_antes": 4.9,
+    "nota_agora": 4.9,
+    "ritmo_do_periodo": 0.0,
+    "historico": {
+      "desde": "2026-08-12",
+      "ate": "2026-08-13",
+      "dias": 1,
+      "medicoes": 2,
+      "antes": 491,
+      "agora": 491,
+      "delta": 0,
+      "ritmo_do_periodo": 0.0,
+      "nota_antes": 4.9,
+      "nota_agora": 4.9
+    },
+    "eventos": [],
+    "aviso": "a praça é medida há 1 dia (2 medições) — a leitura ainda diz pouco e engorda a cada coleta"
+  },
   "sem_resposta": {
-    "abertas": null,
-    "com_texto": null,
-    "itens": [],
-    "itens_total": 0
+    "abertas": 2,
+    "com_texto": 2,
+    "itens": [
+      {
+        "nota": 1,
+        "data": "2022-04-23",
+        "texto": "Péssima. Minha filha usou aparelho 1 ano, e não resolveu nada. Pelo contrário. Piorou. Ao final de um ano, eu descobri que o contrato era de 2 anos e não de 1. Mas pra continuar mais um ano pra nada, resolvi não levar mais ela. Estão me\nCobrando quase 500 reais só porque eu não quis continuar o péssimo tratamento deles me ameaçando com advogado. Pior lugar que já conheci.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2020-06-03",
+        "texto": "Fiquei um tempão com o aparelho e simplesmente não alterou em nada nos meus dentes, a dentista havia me dito que iria me dar os elástiquinhos quando eu ja tivesse com o aparelho a uns 6 meses e nada, além do preço absurdo para retirar o aparelho 350 REAIS de multa e mais 100 REAIS para fazer a retirada. se puderem pesquisem outro lugar de melhor qualidade!!!!!",
+        "tem_texto": true
+      }
+    ],
+    "itens_total": 2
   },
   "voz_do_paciente": [
     {
       "o_que_e": "Explica o que vai fazer, antes de fazer",
-      "pct": 4.8
+      "pct": 2.3
     },
     {
       "o_que_e": "Atende na hora marcada",
-      "pct": 4.8
+      "pct": 4.3
     },
     {
       "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
-      "pct": 6.0
+      "pct": 2.8
     },
     {
       "o_que_e": "Cuida de quem tem medo de dentista",
-      "pct": 0.0
+      "pct": 1.4
     },
     {
       "o_que_e": "Resolve no mesmo dia",
-      "pct": 2.4
+      "pct": 0.6
     },
     {
       "o_que_e": "Sabe atender criança",
-      "pct": 7.2
+      "pct": 4.0
     },
     {
       "o_que_e": "Continua presente depois que vendeu",
-      "pct": 7.2
+      "pct": 4.5
     },
     {
       "o_que_e": "Tem profissional que o paciente chama pelo nome",
-      "pct": 14.5
+      "pct": 13.6
     }
   ],
   "rival": {
@@ -137,12 +183,44 @@
     ],
     "vantagens_deles": [
       {
+        "eixo": "acolhimento_do_medo",
+        "o_que_e": "Cuida de quem tem medo de dentista",
+        "quem": "IORC Instituto de Ortodontia de Curitiba",
+        "eles": 4.5,
+        "nos": 1.4,
+        "razao": 3.2
+      },
+      {
+        "eixo": "explica_o_tratamento",
+        "o_que_e": "Explica o que vai fazer, antes de fazer",
+        "quem": "REDEORTO Curitiba - Centro",
+        "eles": 6.1,
+        "nos": 2.3,
+        "razao": 2.7
+      },
+      {
         "eixo": "gente_com_nome",
         "o_que_e": "Tem profissional que o paciente chama pelo nome",
         "quem": "Julio Cavichiolo | Ortodontia | Estética | Implante Dentário | Dentista em Novo Mundo | Curitiba PR",
         "eles": 29.4,
-        "nos": 14.5,
-        "razao": 2.0
+        "nos": 13.6,
+        "razao": 2.2
+      },
+      {
+        "eixo": "pos_venda",
+        "o_que_e": "Continua presente depois que vendeu",
+        "quem": "Julio Cavichiolo | Ortodontia | Estética | Implante Dentário | Dentista em Novo Mundo | Curitiba PR",
+        "eles": 9.4,
+        "nos": 4.5,
+        "razao": 2.1
+      },
+      {
+        "eixo": "preco_claro",
+        "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
+        "quem": "Julio Cavichiolo | Ortodontia | Estética | Implante Dentário | Dentista em Novo Mundo | Curitiba PR",
+        "eles": 4.7,
+        "nos": 2.8,
+        "razao": 1.7
       }
     ],
     "fora": [
@@ -337,8 +415,8 @@
     "local_id": "ortho_cwb_centro_3",
     "unidade": "OrthoDontic · Galeria Tijucas - Av. Luiz Xavier",
     "rotulo": "PR · Curitiba",
-    "com_texto": 83,
-    "sem_estagio": 51,
+    "com_texto": 352,
+    "sem_estagio": 220,
     "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
     "estagios": [
       {
@@ -347,13 +425,13 @@
         "o_que_e": "como me acharam",
         "quem_resolve": "marketing e ficha do Google",
         "medido": true,
-        "avaliacoes": 11,
+        "avaliacoes": 51,
         "dor": 0,
-        "elogio": 11,
+        "elogio": 51,
         "pct_dor": 0,
         "amostra_curta": false,
         "exemplos": [],
-        "frase": "11 avaliações falam deste momento, nenhuma com nota baixa",
+        "frase": "51 avaliações falam deste momento, nenhuma com nota baixa",
         "porque_vazio": null
       },
       {
@@ -362,13 +440,13 @@
         "o_que_e": "telefone e WhatsApp",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 2,
+        "avaliacoes": 6,
         "dor": 0,
-        "elogio": 2,
+        "elogio": 6,
         "pct_dor": 0,
         "amostra_curta": true,
         "exemplos": [],
-        "frase": "2 avaliações falam deste momento, nenhuma com nota baixa",
+        "frase": "6 avaliações falam deste momento, nenhuma com nota baixa",
         "porque_vazio": null
       },
       {
@@ -377,13 +455,19 @@
         "o_que_e": "marcar e remarcar",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 3,
-        "dor": 0,
-        "elogio": 3,
-        "pct_dor": 0,
+        "avaliacoes": 5,
+        "dor": 1,
+        "elogio": 4,
+        "pct_dor": 20,
         "amostra_curta": true,
-        "exemplos": [],
-        "frase": "3 avaliações falam deste momento, nenhuma com nota baixa",
+        "exemplos": [
+          {
+            "nota": 2,
+            "data": "2021-11-16",
+            "texto": "Atendimento com horário marcado e mais de 30 minutos de atraso."
+          }
+        ],
+        "frase": "5 avaliações falam deste momento, 1 com nota baixa",
         "porque_vazio": null
       },
       {
@@ -392,13 +476,19 @@
         "o_que_e": "chegar e esperar",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 9,
-        "dor": 0,
-        "elogio": 9,
-        "pct_dor": 0,
+        "avaliacoes": 37,
+        "dor": 1,
+        "elogio": 36,
+        "pct_dor": 3,
         "amostra_curta": false,
-        "exemplos": [],
-        "frase": "9 avaliações falam deste momento, nenhuma com nota baixa",
+        "exemplos": [
+          {
+            "nota": 2,
+            "data": "2021-11-16",
+            "texto": "Atendimento com horário marcado e mais de 30 minutos de atraso."
+          }
+        ],
+        "frase": "37 avaliações falam deste momento, 1 com nota baixa",
         "porque_vazio": null
       },
       {
@@ -407,13 +497,13 @@
         "o_que_e": "a primeira consulta",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 2,
+        "avaliacoes": 6,
         "dor": 1,
-        "elogio": 1,
-        "pct_dor": 50,
+        "elogio": 5,
+        "pct_dor": 17,
         "amostra_curta": true,
         "exemplos": [],
-        "frase": "2 avaliações falam deste momento, 1 com nota baixa",
+        "frase": "6 avaliações falam deste momento, 1 com nota baixa",
         "porque_vazio": null
       },
       {
@@ -422,13 +512,24 @@
         "o_que_e": "preço, contrato e entrada",
         "quem_resolve": "franqueado",
         "medido": true,
-        "avaliacoes": 4,
-        "dor": 1,
-        "elogio": 3,
+        "avaliacoes": 12,
+        "dor": 3,
+        "elogio": 9,
         "pct_dor": 25,
-        "amostra_curta": true,
-        "exemplos": [],
-        "frase": "4 avaliações falam deste momento, 1 com nota baixa",
+        "amostra_curta": false,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2020-06-03",
+            "texto": "Fiquei um tempão com o aparelho e simplesmente não alterou em nada nos meus dentes, a dentista havia me dito que iria me dar os elástiquinhos quando eu ja tivesse com o aparelho a uns 6 meses e nada, além do preço absurdo para retirar o aparelho 350 REAIS de multa e mais 100 REAIS para fazer a retirada. se puderem pesquisem outro lugar de melhor qualidade!!!!!"
+          },
+          {
+            "nota": 1,
+            "data": "2022-04-23",
+            "texto": "Péssima. Minha filha usou aparelho 1 ano, e não resolveu nada. Pelo contrário. Piorou. Ao final de um ano, eu descobri que o contrato era de 2 anos e não de 1. Mas pra continuar mais um ano pra nada, resolvi não levar mais ela. Estão me\nCobrando quase 500 reais só porque eu não quis continuar o péssimo tratamento deles me ameaçando com advogado. Pior lugar que já conheci."
+          }
+        ],
+        "frase": "12 avaliações falam deste momento, 3 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -437,13 +538,24 @@
         "o_que_e": "a cadeira",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 11,
-        "dor": 1,
-        "elogio": 10,
-        "pct_dor": 9,
+        "avaliacoes": 39,
+        "dor": 3,
+        "elogio": 36,
+        "pct_dor": 8,
         "amostra_curta": false,
-        "exemplos": [],
-        "frase": "11 avaliações falam deste momento, 1 com nota baixa",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2020-06-03",
+            "texto": "Fiquei um tempão com o aparelho e simplesmente não alterou em nada nos meus dentes, a dentista havia me dito que iria me dar os elástiquinhos quando eu ja tivesse com o aparelho a uns 6 meses e nada, além do preço absurdo para retirar o aparelho 350 REAIS de multa e mais 100 REAIS para fazer a retirada. se puderem pesquisem outro lugar de melhor qualidade!!!!!"
+          },
+          {
+            "nota": 1,
+            "data": "2025-09-24",
+            "texto": "Eu reclamei dez começo\nUma dentista tava ainda espaço entre os dentes ai ela faltava trabalho  pra ir meso fora minha folga pa ela falar que eu tinha falado antes se que capacidade  pra isso nao fez o papell dela\nNao indico pra niinguem"
+          }
+        ],
+        "frase": "39 avaliações falam deste momento, 3 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -452,13 +564,13 @@
         "o_que_e": "as voltas de cada mês",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 3,
+        "avaliacoes": 8,
         "dor": 1,
-        "elogio": 2,
-        "pct_dor": 33,
-        "amostra_curta": true,
+        "elogio": 7,
+        "pct_dor": 12,
+        "amostra_curta": false,
         "exemplos": [],
-        "frase": "3 avaliações falam deste momento, 1 com nota baixa",
+        "frase": "8 avaliações falam deste momento, 1 com nota baixa",
         "porque_vazio": null
       },
       {
@@ -467,13 +579,24 @@
         "o_que_e": "mensalidade e multa",
         "quem_resolve": "franqueado",
         "medido": true,
-        "avaliacoes": 1,
-        "dor": 0,
+        "avaliacoes": 3,
+        "dor": 2,
         "elogio": 1,
-        "pct_dor": 0,
+        "pct_dor": 67,
         "amostra_curta": true,
-        "exemplos": [],
-        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2020-06-03",
+            "texto": "Fiquei um tempão com o aparelho e simplesmente não alterou em nada nos meus dentes, a dentista havia me dito que iria me dar os elástiquinhos quando eu ja tivesse com o aparelho a uns 6 meses e nada, além do preço absurdo para retirar o aparelho 350 REAIS de multa e mais 100 REAIS para fazer a retirada. se puderem pesquisem outro lugar de melhor qualidade!!!!!"
+          },
+          {
+            "nota": 1,
+            "data": "2022-04-23",
+            "texto": "Péssima. Minha filha usou aparelho 1 ano, e não resolveu nada. Pelo contrário. Piorou. Ao final de um ano, eu descobri que o contrato era de 2 anos e não de 1. Mas pra continuar mais um ano pra nada, resolvi não levar mais ela. Estão me\nCobrando quase 500 reais só porque eu não quis continuar o péssimo tratamento deles me ameaçando com advogado. Pior lugar que já conheci."
+          }
+        ],
+        "frase": "3 avaliações falam deste momento, 2 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -482,13 +605,19 @@
         "o_que_e": "quando algo dá errado",
         "quem_resolve": "franqueado",
         "medido": true,
-        "avaliacoes": 2,
-        "dor": 0,
-        "elogio": 2,
-        "pct_dor": 0,
-        "amostra_curta": true,
-        "exemplos": [],
-        "frase": "2 avaliações falam deste momento, nenhuma com nota baixa",
+        "avaliacoes": 10,
+        "dor": 1,
+        "elogio": 9,
+        "pct_dor": 10,
+        "amostra_curta": false,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2025-09-24",
+            "texto": "Eu reclamei dez começo\nUma dentista tava ainda espaço entre os dentes ai ela faltava trabalho  pra ir meso fora minha folga pa ela falar que eu tinha falado antes se que capacidade  pra isso nao fez o papell dela\nNao indico pra niinguem"
+          }
+        ],
+        "frase": "10 avaliações falam deste momento, 1 com nota baixa",
         "porque_vazio": null
       },
       {
@@ -497,13 +626,13 @@
         "o_que_e": "alta e depois dela",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 3,
+        "avaliacoes": 7,
         "dor": 0,
-        "elogio": 3,
+        "elogio": 7,
         "pct_dor": 0,
         "amostra_curta": true,
         "exemplos": [],
-        "frase": "3 avaliações falam deste momento, nenhuma com nota baixa",
+        "frase": "7 avaliações falam deste momento, nenhuma com nota baixa",
         "porque_vazio": null
       }
     ],
@@ -512,16 +641,16 @@
     "e_clinico": null,
     "confianca": {
       "natureza": "fato",
-      "confianca": "media",
+      "confianca": "alta",
       "medido": true,
-      "amostra": 83,
-      "janela_dias": null,
-      "medicoes": null,
+      "amostra": 352,
+      "janela_dias": 1,
+      "medicoes": 2,
       "fonte": "dados/serie/reviews.jsonl",
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": "mais avaliações com texto nesta loja",
-      "procedencia": "medido em 83 avaliações"
+      "procedencia": "medido em 352 avaliações, 2 medições, 1 dia de janela"
     }
   },
   "meu_territorio": {
@@ -632,6 +761,24 @@
   "acoes": {
     "arcos": [
       {
+        "arco_id": "ortho_cwb_centro_3|parada",
+        "local_id": "ortho_cwb_centro_3",
+        "praca_id": "curitiba",
+        "gatilho": "parada",
+        "problema": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 5.3 avaliações/mês",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": "ritmo",
+        "antes": 5.3,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      },
+      {
         "arco_id": "ortho_cwb_centro_3|nao_engatou",
         "local_id": "ortho_cwb_centro_3",
         "praca_id": "curitiba",
@@ -668,7 +815,7 @@
         "dias": 0
       }
     ],
-    "total": 2,
+    "total": 3,
     "aviso": "O livro nasceu hoje. Nenhum arco completou 21 dias, então ainda não há veredito para ninguém — a primeira resposta vem na coleta seguinte."
   },
   "oferta_da_cidade": {
@@ -1225,6 +1372,13 @@
       "tipo": "alerta",
       "quem": "fila",
       "texto": "alerta aberto: Silêncio publicitário com leilão cheio",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-13",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: O contador de avaliações parou",
       "fonte": "dados/serie/fila_historico.jsonl"
     },
     {

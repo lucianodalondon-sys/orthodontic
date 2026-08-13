@@ -5,8 +5,8 @@
     "unidade": "OrthoDontic · St. Central",
     "cidade": "GO · Goiânia",
     "endereco": "Av. Anhanguera, 5317 - Quadra 21, lote 38 - E - St. Central, Goiânia - GO, 74043-012",
-    "desde": null,
-    "medicoes": null,
+    "desde": "12/ago",
+    "medicoes": 2,
     "posicao_na_cidade": null,
     "clinicas_na_cidade": null,
     "lojas_irmas": [
@@ -23,33 +23,38 @@
         "unidade": "OrthoDontic · St. Morada do Sol"
       }
     ],
-    "frase": "OrthoDontic · St. Central está entre as 16 clínicas mapeadas de St. Central e divide Goiânia com mais 3 lojas da rede."
+    "frase": "OrthoDontic · St. Central é escutada desde 12/ago, em 2 medições e divide Goiânia com mais 3 lojas da rede."
   },
   "rotulo": "GO · Goiânia",
   "unidade": "OrthoDontic · St. Central",
   "cabecalho": {
     "nota": 4.6,
     "avaliacoes": 268,
-    "ritmo": 6.9,
+    "ritmo": 5.6,
     "meses_seguidos": 3,
-    "posicao": 13,
-    "de": 18
+    "posicao": 1,
+    "de": 3,
+    "amostra_lida": 268,
+    "amostra_dias": 1453,
+    "amostra_truncada": false,
+    "ritmo_comparavel": true,
+    "porque_fora_do_ranking": null
   },
-  "faixa": "amarela",
-  "urgencia": 35,
+  "faixa": "verde",
+  "urgencia": 15,
   "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
     "dias_aberta": 1,
-    "prazo_dias": 7,
-    "vence_em": "2026-08-19"
+    "prazo_dias": 10,
+    "vence_em": "2026-08-22"
   },
   "acao": {
-    "o_que": "Auditar a ficha do Google — foto, horário, serviços, resposta a avaliação",
-    "prazo": "7 dias",
-    "dono": "franqueado",
+    "o_que": "Ler as avaliações negativas do trimestre com o franqueado e responder todas",
+    "prazo": "10 dias",
+    "dono": "consultor de campo",
     "custo": "sem custo de mídia",
-    "por_causa_de": "posicao",
+    "por_causa_de": "nota",
     "confianca": {
       "natureza": "recomendacao",
       "confianca": "baixa",
@@ -59,7 +64,6 @@
       "medicoes": null,
       "fonte": "scripts/fila.py",
       "a_favor": [
-        "13º lugar de 18 clínicas medidas na praça",
         "nota 4.6 contra mediana 4.9 das 18 clínicas medidas na praça"
       ],
       "contra": [],
@@ -69,13 +73,6 @@
   },
   "gatilhos": [
     {
-      "peso": 20,
-      "titulo": "Está na metade de baixo da própria praça",
-      "chave": "posicao",
-      "fato": "13º lugar de 18 clínicas medidas na praça",
-      "fonte": "dados/portal/rede_cruzamento.json"
-    },
-    {
       "peso": 15,
       "titulo": "Nota abaixo da mediana da praça",
       "chave": "nota",
@@ -84,10 +81,38 @@
     }
   ],
   "quem_avanca": null,
-  "o_que_mudou": null,
+  "o_que_mudou": {
+    "local_id": "ortho_gyn_st_central",
+    "nome": "OrthoDontic",
+    "proprio": true,
+    "aparelho": true,
+    "de": "2026-08-12",
+    "ate": "2026-08-13",
+    "dias": 1,
+    "antes": 268,
+    "agora": 268,
+    "delta": 0,
+    "nota_antes": 4.6,
+    "nota_agora": 4.6,
+    "ritmo_do_periodo": 0.0,
+    "historico": {
+      "desde": "2026-08-12",
+      "ate": "2026-08-13",
+      "dias": 1,
+      "medicoes": 2,
+      "antes": 268,
+      "agora": 268,
+      "delta": 0,
+      "ritmo_do_periodo": 0.0,
+      "nota_antes": 4.6,
+      "nota_agora": 4.6
+    },
+    "eventos": [],
+    "aviso": "a praça é medida há 1 dia (2 medições) — a leitura ainda diz pouco e engorda a cada coleta"
+  },
   "sem_resposta": {
-    "abertas": 14,
-    "com_texto": 12,
+    "abertas": 19,
+    "com_texto": 16,
     "itens": [
       {
         "nota": 1,
@@ -172,26 +197,56 @@
         "data": "2025-02-27",
         "texto": "O atendimento presencial é excelente, mas o atendimento online é péssimo quando se trata de resolver algum tipo de problema, não respondem no whatsapp e não atendem o telefone a não ser que você insista em ligar  por várias vezes até dá certo ou não.\nSem tirar que qualquer imprevisto caso você queria marcar um o horário ou uma data diferente que você tinha marcado eles te cobram e também a taxa de cancelamento de contrato muito alta sem condições, poderia ser pelo menos mais acessível essa taxa.",
         "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-01-02",
+        "texto": "Péssimo atendimento por whatsapp",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-01-02",
+        "texto": "Péssimo para responder por WhatsApp demora dias pra responder",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2023-09-28",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 1,
+        "data": "2023-05-26",
+        "texto": "Achei bem enrolados para a tender, fui acompanhar uma pessoa na qual atendimento dela era as 08:20 ela foi atendida daí as 09:10, ou seja quase uma HR esperando.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2022-10-10",
+        "texto": "Troca muito de dentista, falta um número de telefone na página para entrar em contato.",
+        "tem_texto": true
       }
     ],
-    "itens_total": 14
+    "itens_total": 19
   },
   "voz_do_paciente": [
     {
       "o_que_e": "Explica o que vai fazer, antes de fazer",
-      "pct": 3.4
+      "pct": 3.7
     },
     {
       "o_que_e": "Atende na hora marcada",
-      "pct": 1.1
+      "pct": 2.3
     },
     {
       "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
-      "pct": 6.8
+      "pct": 3.7
     },
     {
       "o_que_e": "Cuida de quem tem medo de dentista",
-      "pct": 1.1
+      "pct": 0.9
     },
     {
       "o_que_e": "Resolve no mesmo dia",
@@ -199,15 +254,15 @@
     },
     {
       "o_que_e": "Sabe atender criança",
-      "pct": 1.1
+      "pct": 1.4
     },
     {
       "o_que_e": "Continua presente depois que vendeu",
-      "pct": 6.8
+      "pct": 5.1
     },
     {
       "o_que_e": "Tem profissional que o paciente chama pelo nome",
-      "pct": 27.3
+      "pct": 18.0
     }
   ],
   "rival": {
@@ -217,44 +272,52 @@
     ],
     "vantagens_deles": [
       {
-        "eixo": "trata_crianca",
-        "o_que_e": "Sabe atender criança",
-        "quem": "Afeto Odontologia Goiânia",
-        "eles": 8.6,
-        "nos": 1.1,
-        "razao": 7.5
-      },
-      {
-        "eixo": "hora_marcada_e_hora",
-        "o_que_e": "Atende na hora marcada",
-        "quem": "Afeto Odontologia Goiânia",
-        "eles": 5.7,
-        "nos": 1.1,
-        "razao": 5.0
-      },
-      {
         "eixo": "acolhimento_do_medo",
         "o_que_e": "Cuida de quem tem medo de dentista",
         "quem": "Afeto Odontologia Goiânia",
         "eles": 5.7,
-        "nos": 1.1,
-        "razao": 5.0
+        "nos": 0.9,
+        "razao": 6.2
       },
       {
-        "eixo": "explica_o_tratamento",
-        "o_que_e": "Explica o que vai fazer, antes de fazer",
+        "eixo": "trata_crianca",
+        "o_que_e": "Sabe atender criança",
         "quem": "Afeto Odontologia Goiânia",
-        "eles": 9.5,
-        "nos": 3.4,
-        "razao": 2.8
+        "eles": 8.6,
+        "nos": 1.4,
+        "razao": 6.2
       },
       {
         "eixo": "pos_venda",
         "o_que_e": "Continua presente depois que vendeu",
         "quem": "Afeto Odontologia Goiânia",
         "eles": 16.2,
-        "nos": 6.8,
-        "razao": 2.4
+        "nos": 5.1,
+        "razao": 3.2
+      },
+      {
+        "eixo": "explica_o_tratamento",
+        "o_que_e": "Explica o que vai fazer, antes de fazer",
+        "quem": "Afeto Odontologia Goiânia",
+        "eles": 9.5,
+        "nos": 3.7,
+        "razao": 2.6
+      },
+      {
+        "eixo": "hora_marcada_e_hora",
+        "o_que_e": "Atende na hora marcada",
+        "quem": "Afeto Odontologia Goiânia",
+        "eles": 5.7,
+        "nos": 2.3,
+        "razao": 2.5
+      },
+      {
+        "eixo": "gente_com_nome",
+        "o_que_e": "Tem profissional que o paciente chama pelo nome",
+        "quem": "Condé Clínica",
+        "eles": 35.5,
+        "nos": 18.0,
+        "razao": 2.0
       }
     ],
     "fora": [
@@ -479,8 +542,8 @@
     "local_id": "ortho_gyn_st_central",
     "unidade": "OrthoDontic · St. Central",
     "rotulo": "GO · Goiânia",
-    "com_texto": 88,
-    "sem_estagio": 38,
+    "com_texto": 217,
+    "sem_estagio": 133,
     "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
     "estagios": [
       {
@@ -489,24 +552,29 @@
         "o_que_e": "como me acharam",
         "quem_resolve": "marketing e ficha do Google",
         "medido": true,
-        "avaliacoes": 7,
-        "dor": 2,
-        "elogio": 5,
+        "avaliacoes": 21,
+        "dor": 6,
+        "elogio": 15,
         "pct_dor": 29,
-        "amostra_curta": true,
+        "amostra_curta": false,
         "exemplos": [
           {
             "nota": 1,
-            "data": "2026-01-21",
-            "texto": "Péssimo lugar péssimo de um atendimento, se você quiser ser enrolado por bastante tempo é só colocar o aparelho aí, não recomendo"
+            "data": "2023-10-27",
+            "texto": "Não indico pra ninguém. Péssimo atendimento. Quando você desisti de fazer o tratamento você tem que pagar uma multa de 350,00 mais o atendimento da dentista. Nunca vi isso. Clinica quer roubar de tudo que é jeito.\nQuer disser que você é obrigada a continuar o tratamento. Péssimo. Fica aqui meus esclarecimentos. NÃO RECOMENDO, PESSIMO NOTA 00 🏃‍♀️🏃‍♀️"
+          },
+          {
+            "nota": 1,
+            "data": "2023-11-27",
+            "texto": "Esse aqui eu não recomendo nem para meu pior inimigo,pq nem ele merece passar por onde estou passando,todas as vezes q fazia manutenção o aparelho começava a machucar,até o momento q não aguentei mais e estou desistindo só q o pessoal não quer marcar pra retirar o aparelho msm pagando 350,00 pra tira msm assim não quer vou procurar meus direitos:wislan ferreira aqui"
           },
           {
             "nota": 1,
             "data": "2026-01-21",
-            "texto": "Péssimo lugar, não recomendo"
+            "texto": "Péssimo lugar péssimo de um atendimento, se você quiser ser enrolado por bastante tempo é só colocar o aparelho aí, não recomendo"
           }
         ],
-        "frase": "7 avaliações falam deste momento, 2 com notas baixas",
+        "frase": "21 avaliações falam deste momento, 6 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -515,29 +583,29 @@
         "o_que_e": "telefone e WhatsApp",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 8,
-        "dor": 6,
+        "avaliacoes": 14,
+        "dor": 12,
         "elogio": 0,
-        "pct_dor": 75,
+        "pct_dor": 86,
         "amostra_curta": false,
         "exemplos": [
           {
             "nota": 1,
-            "data": "2025-09-01",
-            "texto": "Clínica não atende, nem recebe ligações. Alguém sabe como posso entrar em contato com essa unidade?"
-          },
-          {
-            "nota": 2,
-            "data": "2025-11-17",
-            "texto": "O lugar é tranquilo,mas é sempre muito difícil entrar em contato com eles eles demoram muito pra responder tem vezes q respondem dias depois,sem contar que varias vezes cheguei no horário marcado e fiquei esperando por bastante tempo pra ser atendida"
+            "data": "2022-10-10",
+            "texto": "Troca muito de dentista, falta um número de telefone na página para entrar em contato."
           },
           {
             "nota": 1,
-            "data": "2025-11-25",
-            "texto": "Fazia o acompanhamento na Bahia e tive que transferir pra Goiânia. O atendimento depois da saída do Vinicius o ex funcionário ta sendo péssimo, não respondem , não atendem o telefone é uma empresa invisível quando se trata de comunicação com o cliente."
+            "data": "2024-10-31",
+            "texto": "Pessoal muito ruim pra poder atender. Telefone fixo ou pelo o ZAP. Falam que vai entrar em contato no máximo em 30 minutos. Já tenho mais de 1 hora e 30 aguardando. Liga ninguém atende o telefone..."
+          },
+          {
+            "nota": 1,
+            "data": "2024-12-10",
+            "texto": "Muitooo ruimm ninguém atende telefone e nem responde no whatsapp tô quase desistindo de fazer manutenção laa 1ano pra poder atender nóis no celular"
           }
         ],
-        "frase": "8 avaliações falam deste momento, 6 com notas baixas",
+        "frase": "14 avaliações falam deste momento, 12 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -546,12 +614,17 @@
         "o_que_e": "marcar e remarcar",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 5,
-        "dor": 4,
-        "elogio": 0,
-        "pct_dor": 80,
+        "avaliacoes": 7,
+        "dor": 5,
+        "elogio": 1,
+        "pct_dor": 71,
         "amostra_curta": true,
         "exemplos": [
+          {
+            "nota": 1,
+            "data": "2023-11-27",
+            "texto": "Esse aqui eu não recomendo nem para meu pior inimigo,pq nem ele merece passar por onde estou passando,todas as vezes q fazia manutenção o aparelho começava a machucar,até o momento q não aguentei mais e estou desistindo só q o pessoal não quer marcar pra retirar o aparelho msm pagando 350,00 pra tira msm assim não quer vou procurar meus direitos:wislan ferreira aqui"
+          },
           {
             "nota": 1,
             "data": "2025-11-14",
@@ -563,7 +636,7 @@
             "texto": "O lugar é tranquilo,mas é sempre muito difícil entrar em contato com eles eles demoram muito pra responder tem vezes q respondem dias depois,sem contar que varias vezes cheguei no horário marcado e fiquei esperando por bastante tempo pra ser atendida"
           }
         ],
-        "frase": "5 avaliações falam deste momento, 4 com notas baixas",
+        "frase": "7 avaliações falam deste momento, 5 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -572,10 +645,10 @@
         "o_que_e": "chegar e esperar",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 18,
+        "avaliacoes": 23,
         "dor": 2,
-        "elogio": 16,
-        "pct_dor": 11,
+        "elogio": 21,
+        "pct_dor": 9,
         "amostra_curta": false,
         "exemplos": [
           {
@@ -584,7 +657,7 @@
             "texto": "Quando comecei o tratamento onde o colaborador Vinicius ainda fazia parte era até tranquilo hoje a clínica é pessima em comunicação as recepcionistas tudo sonsa n sabem nem o que está agendando , marca os procedimentos e n repassam pros profissionais, muito desagradável e incômodo e constrangedor vc chegar na clínica e te falarem que n tem nada agendado !"
           }
         ],
-        "frase": "18 avaliações falam deste momento, 2 com notas baixas",
+        "frase": "23 avaliações falam deste momento, 2 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -593,13 +666,13 @@
         "o_que_e": "a primeira consulta",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 1,
+        "avaliacoes": 2,
         "dor": 0,
-        "elogio": 1,
+        "elogio": 2,
         "pct_dor": 0,
         "amostra_curta": true,
         "exemplos": [],
-        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "frase": "2 avaliações falam deste momento, nenhuma com nota baixa",
         "porque_vazio": null
       },
       {
@@ -608,13 +681,13 @@
         "o_que_e": "preço, contrato e entrada",
         "quem_resolve": "franqueado",
         "medido": true,
-        "avaliacoes": 3,
-        "dor": 1,
-        "elogio": 2,
-        "pct_dor": 33,
+        "avaliacoes": 5,
+        "dor": 2,
+        "elogio": 3,
+        "pct_dor": 40,
         "amostra_curta": true,
         "exemplos": [],
-        "frase": "3 avaliações falam deste momento, 1 com nota baixa",
+        "frase": "5 avaliações falam deste momento, 2 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -623,19 +696,29 @@
         "o_que_e": "a cadeira",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 25,
-        "dor": 3,
-        "elogio": 22,
-        "pct_dor": 12,
+        "avaliacoes": 36,
+        "dor": 7,
+        "elogio": 29,
+        "pct_dor": 19,
         "amostra_curta": false,
         "exemplos": [
           {
             "nota": 1,
-            "data": "2025-11-14",
-            "texto": "Quando comecei o tratamento onde o colaborador Vinicius ainda fazia parte era até tranquilo hoje a clínica é pessima em comunicação as recepcionistas tudo sonsa n sabem nem o que está agendando , marca os procedimentos e n repassam pros profissionais, muito desagradável e incômodo e constrangedor vc chegar na clínica e te falarem que n tem nada agendado !"
+            "data": "2022-10-10",
+            "texto": "Troca muito de dentista, falta um número de telefone na página para entrar em contato."
+          },
+          {
+            "nota": 1,
+            "data": "2023-10-27",
+            "texto": "Não indico pra ninguém. Péssimo atendimento. Quando você desisti de fazer o tratamento você tem que pagar uma multa de 350,00 mais o atendimento da dentista. Nunca vi isso. Clinica quer roubar de tudo que é jeito.\nQuer disser que você é obrigada a continuar o tratamento. Péssimo. Fica aqui meus esclarecimentos. NÃO RECOMENDO, PESSIMO NOTA 00 🏃‍♀️🏃‍♀️"
+          },
+          {
+            "nota": 1,
+            "data": "2023-11-27",
+            "texto": "Esse aqui eu não recomendo nem para meu pior inimigo,pq nem ele merece passar por onde estou passando,todas as vezes q fazia manutenção o aparelho começava a machucar,até o momento q não aguentei mais e estou desistindo só q o pessoal não quer marcar pra retirar o aparelho msm pagando 350,00 pra tira msm assim não quer vou procurar meus direitos:wislan ferreira aqui"
           }
         ],
-        "frase": "25 avaliações falam deste momento, 3 com notas baixas",
+        "frase": "36 avaliações falam deste momento, 7 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -644,19 +727,29 @@
         "o_que_e": "as voltas de cada mês",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 2,
-        "dor": 2,
-        "elogio": 0,
-        "pct_dor": 100,
+        "avaliacoes": 5,
+        "dor": 4,
+        "elogio": 1,
+        "pct_dor": 80,
         "amostra_curta": true,
         "exemplos": [
+          {
+            "nota": 1,
+            "data": "2023-11-27",
+            "texto": "Esse aqui eu não recomendo nem para meu pior inimigo,pq nem ele merece passar por onde estou passando,todas as vezes q fazia manutenção o aparelho começava a machucar,até o momento q não aguentei mais e estou desistindo só q o pessoal não quer marcar pra retirar o aparelho msm pagando 350,00 pra tira msm assim não quer vou procurar meus direitos:wislan ferreira aqui"
+          },
+          {
+            "nota": 1,
+            "data": "2024-12-10",
+            "texto": "Muitooo ruimm ninguém atende telefone e nem responde no whatsapp tô quase desistindo de fazer manutenção laa 1ano pra poder atender nóis no celular"
+          },
           {
             "nota": 1,
             "data": "2025-11-25",
             "texto": "Fazia o acompanhamento na Bahia e tive que transferir pra Goiânia. O atendimento depois da saída do Vinicius o ex funcionário ta sendo péssimo, não respondem , não atendem o telefone é uma empresa invisível quando se trata de comunicação com o cliente."
           }
         ],
-        "frase": "2 avaliações falam deste momento, 2 com notas baixas",
+        "frase": "5 avaliações falam deste momento, 4 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -665,13 +758,19 @@
         "o_que_e": "mensalidade e multa",
         "quem_resolve": "franqueado",
         "medido": true,
-        "avaliacoes": 1,
-        "dor": 0,
+        "avaliacoes": 2,
+        "dor": 1,
         "elogio": 0,
-        "pct_dor": 0,
+        "pct_dor": 50,
         "amostra_curta": true,
-        "exemplos": [],
-        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2023-10-27",
+            "texto": "Não indico pra ninguém. Péssimo atendimento. Quando você desisti de fazer o tratamento você tem que pagar uma multa de 350,00 mais o atendimento da dentista. Nunca vi isso. Clinica quer roubar de tudo que é jeito.\nQuer disser que você é obrigada a continuar o tratamento. Péssimo. Fica aqui meus esclarecimentos. NÃO RECOMENDO, PESSIMO NOTA 00 🏃‍♀️🏃‍♀️"
+          }
+        ],
+        "frase": "2 avaliações falam deste momento, 1 com nota baixa",
         "porque_vazio": null
       },
       {
@@ -680,13 +779,19 @@
         "o_que_e": "quando algo dá errado",
         "quem_resolve": "franqueado",
         "medido": true,
-        "avaliacoes": 3,
-        "dor": 1,
+        "avaliacoes": 4,
+        "dor": 2,
         "elogio": 1,
-        "pct_dor": 33,
+        "pct_dor": 50,
         "amostra_curta": true,
-        "exemplos": [],
-        "frase": "3 avaliações falam deste momento, 1 com nota baixa",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2024-05-08",
+            "texto": "minha namorada está com o aparelho a quase dois anos e um problema que era pra ser 6 meses já está a quase dois anos, além do pessimo atendimento online, manda mensagens, liga, faz de tudo e ninguém responde"
+          }
+        ],
+        "frase": "4 avaliações falam deste momento, 2 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -705,21 +810,21 @@
         "porque_vazio": null
       }
     ],
-    "manchete": "A dor pública desta unidade aparece em contato — 6 avaliações de 1 ou 2 estrelas de 8 que falam desse momento.",
+    "manchete": "A dor pública desta unidade aparece em contato — 12 avaliações de 1 ou 2 estrelas de 14 que falam desse momento.",
     "quem_resolve": "recepção",
     "e_clinico": false,
     "confianca": {
       "natureza": "fato",
-      "confianca": "media",
+      "confianca": "alta",
       "medido": true,
-      "amostra": 88,
-      "janela_dias": null,
-      "medicoes": null,
+      "amostra": 217,
+      "janela_dias": 1,
+      "medicoes": 2,
       "fonte": "dados/serie/reviews.jsonl",
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": "mais avaliações com texto nesta loja",
-      "procedencia": "medido em 88 avaliações"
+      "procedencia": "medido em 217 avaliações, 2 medições, 1 dia de janela"
     }
   },
   "meu_territorio": {
@@ -810,7 +915,7 @@
     "unidade": "OrthoDontic · St. Central",
     "itens": [
       {
-        "problema": "A dor pública desta unidade aparece em contato — 6 avaliações de 1 ou 2 estrelas de 8 que falam desse momento.",
+        "problema": "A dor pública desta unidade aparece em contato — 12 avaliações de 1 ou 2 estrelas de 14 que falam desse momento.",
         "e_marketing": false,
         "execucao": {
           "necessaria": true,
@@ -822,9 +927,9 @@
           "recoletar_em_dias": 30
         },
         "evidencias": [
-          "7 avaliações falam deste momento, 2 com notas baixas",
-          "8 avaliações falam deste momento, 6 com notas baixas",
-          "5 avaliações falam deste momento, 4 com notas baixas"
+          "21 avaliações falam deste momento, 6 com notas baixas",
+          "14 avaliações falam deste momento, 12 com notas baixas",
+          "7 avaliações falam deste momento, 5 com notas baixas"
         ],
         "confianca": {
           "natureza": "recomendacao",
@@ -835,7 +940,7 @@
           "medicoes": null,
           "fonte": "dados/portal/jornada.json",
           "a_favor": [
-            "A dor pública desta unidade aparece em contato — 6 avaliações de 1 ou 2 estrelas de 8 que falam desse momento."
+            "A dor pública desta unidade aparece em contato — 12 avaliações de 1 ou 2 estrelas de 14 que falam desse momento."
           ],
           "contra": [],
           "o_que_aumentaria": "a próxima medição da jornada",
@@ -843,7 +948,7 @@
         }
       },
       {
-        "problema": "14 avaliações negativas abertas sem resposta",
+        "problema": "19 avaliações negativas abertas sem resposta",
         "e_marketing": false,
         "execucao": {
           "necessaria": true,
@@ -857,14 +962,14 @@
           "natureza": "recomendacao",
           "confianca": "baixa",
           "medido": true,
-          "amostra": 14,
+          "amostra": 19,
           "janela_dias": null,
           "medicoes": null,
           "fonte": "dados/portal/caixa_de_respostas.json",
           "a_favor": [],
           "contra": [],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 14 avaliações"
+          "procedencia": "medido em 19 avaliações"
         }
       }
     ],
@@ -928,7 +1033,7 @@
         "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
         "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
         "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": 13.0,
+        "depois": 1.0,
         "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
         "dias": 1

@@ -5,8 +5,8 @@
     "unidade": "OrthoDontic · Cristo Redentor",
     "cidade": "RS · Porto Alegre",
     "endereco": "Av. Assis Brasil, 2553 - Cristo Redentor, Porto Alegre - RS, 91010-006",
-    "desde": null,
-    "medicoes": null,
+    "desde": "12/ago",
+    "medicoes": 2,
     "posicao_na_cidade": null,
     "clinicas_na_cidade": null,
     "lojas_irmas": [
@@ -35,20 +35,25 @@
         "unidade": "OrthoDontic · Rio Branco"
       }
     ],
-    "frase": "OrthoDontic · Cristo Redentor está entre as 1 clínica mapeada de Cristo Redentor e divide Porto Alegre com mais 6 lojas da rede."
+    "frase": "OrthoDontic · Cristo Redentor é escutada desde 12/ago, em 2 medições e divide Porto Alegre com mais 6 lojas da rede."
   },
   "rotulo": "RS · Porto Alegre",
   "unidade": "OrthoDontic · Cristo Redentor",
   "cabecalho": {
     "nota": 4.7,
     "avaliacoes": 245,
-    "ritmo": 7.5,
+    "ritmo": 3.0,
     "meses_seguidos": 2,
-    "posicao": 12,
-    "de": 21
+    "posicao": 13,
+    "de": 21,
+    "amostra_lida": 245,
+    "amostra_dias": 2513,
+    "amostra_truncada": false,
+    "ritmo_comparavel": true,
+    "porque_fora_do_ranking": null
   },
-  "faixa": "amarela",
-  "urgencia": 50,
+  "faixa": "vermelha",
+  "urgencia": 75,
   "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
@@ -71,8 +76,9 @@
       "medicoes": null,
       "fonte": "scripts/fila.py",
       "a_favor": [
-        "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 7.5 avaliações/mês",
-        "12º lugar de 21 clínicas medidas na praça"
+        "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 3.0 avaliações/mês",
+        "Sorridents Porto Alegre Clinica Odontológica / Dentista sustenta há 20 meses a 19.2/mês, contra 3.0/mês desta unidade",
+        "13º lugar de 21 clínicas medidas na praça"
       ],
       "contra": [],
       "o_que_aumentaria": "o resultado medido na coleta seguinte (dados/serie/acoes.jsonl)",
@@ -84,22 +90,63 @@
       "peso": 30,
       "titulo": "O contador de avaliações parou",
       "chave": "parada",
-      "fato": "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 7.5 avaliações/mês",
+      "fato": "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 3.0 avaliações/mês",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "peso": 25,
+      "titulo": "Um rival de aparelho sustenta e corre mais",
+      "chave": "rival",
+      "fato": "Sorridents Porto Alegre Clinica Odontológica / Dentista sustenta há 20 meses a 19.2/mês, contra 3.0/mês desta unidade",
       "fonte": "dados/serie/reviews.jsonl"
     },
     {
       "peso": 20,
       "titulo": "Está na metade de baixo da própria praça",
       "chave": "posicao",
-      "fato": "12º lugar de 21 clínicas medidas na praça",
+      "fato": "13º lugar de 21 clínicas medidas na praça",
       "fonte": "dados/portal/rede_cruzamento.json"
     }
   ],
-  "quem_avanca": null,
-  "o_que_mudou": null,
+  "quem_avanca": {
+    "nome": "Sorridents Porto Alegre Clinica Odontológica / Dentista",
+    "ritmo": 19.2,
+    "meses": 20,
+    "nota": 4.9,
+    "posicao": 1
+  },
+  "o_que_mudou": {
+    "local_id": "ortho_poa_cristo_redentor",
+    "nome": "OrthoDontic",
+    "proprio": true,
+    "aparelho": true,
+    "de": "2026-08-12",
+    "ate": "2026-08-13",
+    "dias": 1,
+    "antes": 245,
+    "agora": 245,
+    "delta": 0,
+    "nota_antes": 4.7,
+    "nota_agora": 4.7,
+    "ritmo_do_periodo": 0.0,
+    "historico": {
+      "desde": "2026-08-12",
+      "ate": "2026-08-13",
+      "dias": 1,
+      "medicoes": 2,
+      "antes": 245,
+      "agora": 245,
+      "delta": 0,
+      "ritmo_do_periodo": 0.0,
+      "nota_antes": 4.7,
+      "nota_agora": 4.7
+    },
+    "eventos": [],
+    "aviso": "a praça é medida há 1 dia (2 medições) — a leitura ainda diz pouco e engorda a cada coleta"
+  },
   "sem_resposta": {
-    "abertas": 2,
-    "com_texto": 2,
+    "abertas": 4,
+    "com_texto": 3,
     "itens": [
       {
         "nota": 1,
@@ -112,18 +159,30 @@
         "data": "2025-10-06",
         "texto": "Meu filho está com aparelho ortodôntico e cada vez que ele vai fazer manutenção , se tem que trocar ou repor qualquer coisa tipo os braquetes é cobrado um valor extra. O material que eles utilizam é pessimo, sempre cai e tem sempre valor extra p pagar, se continuar assim vou cancelar o contrato e entrar com uma ação p devolução de valores.",
         "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2022-05-25",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 3,
+        "data": "2022-01-22",
+        "texto": "Minha filha está em tratamento a mais ou menos 3 anos já obteve um ótimo resultado , porém quando iniciamos o tratamento nos disseram que se indicassemos pessoas que dessem início ao tratamento ganhariamos descontos e que se pagassemos sempre em dia ganharíamos brindes , porém nunca ganhamos 1 real de desconto e tão pouco ganhamos brindes nunca fomos sorteadas em nada ...me venderam gato por lebre .",
+        "tem_texto": true
       }
     ],
-    "itens_total": 2
+    "itens_total": 4
   },
   "voz_do_paciente": [
     {
       "o_que_e": "Explica o que vai fazer, antes de fazer",
-      "pct": 4.7
+      "pct": 3.0
     },
     {
       "o_que_e": "Atende na hora marcada",
-      "pct": 0.0
+      "pct": 2.4
     },
     {
       "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
@@ -131,67 +190,78 @@
     },
     {
       "o_que_e": "Cuida de quem tem medo de dentista",
-      "pct": 2.4
+      "pct": 1.8
     },
     {
       "o_que_e": "Resolve no mesmo dia",
-      "pct": 1.2
+      "pct": 0.6
     },
     {
       "o_que_e": "Sabe atender criança",
-      "pct": 3.5
+      "pct": 4.2
     },
     {
       "o_que_e": "Continua presente depois que vendeu",
-      "pct": 2.4
+      "pct": 6.6
     },
     {
       "o_que_e": "Tem profissional que o paciente chama pelo nome",
-      "pct": 16.5
+      "pct": 12.7
     }
   ],
   "rival": {
     "comparados": [
       "Sorridents Porto Alegre Clinica Odontológica / Dentista",
-      "Clinica Odontológica | Dentista | Próteses | Implantes | Clareamento | Clinodente Porto Alegre",
+      "LAR Odontologia - Reabilitação Oral e Implantes Dentários. Ortodontia convencional e Alinhadores Transparentes.",
       "Dentista Porto Alegre | Clínica Dental Center"
     ],
     "vantagens_deles": [
       {
         "eixo": "resolve_no_mesmo_dia",
         "o_que_e": "Resolve no mesmo dia",
-        "quem": "Clinica Odontológica | Dentista | Próteses | Implantes | Clareamento | Clinodente Porto Alegre",
-        "eles": 10.6,
-        "nos": 1.2,
-        "razao": 9.0
+        "quem": "Dentista Porto Alegre | Clínica Dental Center",
+        "eles": 1.7,
+        "nos": 0.6,
+        "razao": 2.8
       },
       {
-        "eixo": "pos_venda",
-        "o_que_e": "Continua presente depois que vendeu",
-        "quem": "Dentista Porto Alegre | Clínica Dental Center",
-        "eles": 9.2,
-        "nos": 2.4,
-        "razao": 3.9
+        "eixo": "gente_com_nome",
+        "o_que_e": "Tem profissional que o paciente chama pelo nome",
+        "quem": "LAR Odontologia - Reabilitação Oral e Implantes Dentários. Ortodontia convencional e Alinhadores Transparentes.",
+        "eles": 34.1,
+        "nos": 12.7,
+        "razao": 2.7
       },
       {
         "eixo": "acolhimento_do_medo",
         "o_que_e": "Cuida de quem tem medo de dentista",
-        "quem": "Dentista Porto Alegre | Clínica Dental Center",
-        "eles": 3.4,
-        "nos": 2.4,
-        "razao": 1.5
+        "quem": "LAR Odontologia - Reabilitação Oral e Implantes Dentários. Ortodontia convencional e Alinhadores Transparentes.",
+        "eles": 4.5,
+        "nos": 1.8,
+        "razao": 2.5
+      },
+      {
+        "eixo": "explica_o_tratamento",
+        "o_que_e": "Explica o que vai fazer, antes de fazer",
+        "quem": "LAR Odontologia - Reabilitação Oral e Implantes Dentários. Ortodontia convencional e Alinhadores Transparentes.",
+        "eles": 6.2,
+        "nos": 3.0,
+        "razao": 2.1
+      },
+      {
+        "eixo": "preco_claro",
+        "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
+        "quem": "Sorridents Porto Alegre Clinica Odontológica / Dentista",
+        "eles": 2.6,
+        "nos": 1.2,
+        "razao": 2.1
       }
     ],
     "fora": [
       {
-        "nome": "Clinica Koelsch",
+        "nome": "Odonto Clin",
         "fora": true,
-        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 116 avaliações citam aparelho"
-      },
-      {
-        "nome": "Sorrir Bem Clínica Odontológica",
-        "fora": true,
-        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 93 avaliações citam aparelho"
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 68 avaliações citam aparelho"
       },
       {
         "nome": "Integrare Odontologia",
@@ -204,9 +274,9 @@
         "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 94 avaliações citam aparelho"
       },
       {
-        "nome": "Odonto Clin",
+        "nome": "Dentista Legal",
         "fora": true,
-        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 68 avaliações citam aparelho"
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 85 avaliações citam aparelho"
       },
       {
         "nome": "Integrar Odontologia",
@@ -214,17 +284,32 @@
         "por_que_fora": "a voz do cliente é de implante: só 1 de 94 avaliações citam aparelho"
       },
       {
+        "nome": "Clinica Koelsch",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 116 avaliações citam aparelho"
+      },
+      {
+        "nome": "Odontologia Dr. RM",
+        "fora": true,
+        "por_que_fora": "amostra pequena (38 avaliações com texto) — não dá para afirmar o produto"
+      },
+      {
         "nome": "Da Vinci Odontologia",
         "fora": true,
         "por_que_fora": "a voz do cliente é de odontologia geral: só 2 de 97 avaliações citam aparelho"
       },
       {
-        "nome": "Dentista Legal",
+        "nome": "Sorrir Bem Clínica Odontológica",
         "fora": true,
-        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 85 avaliações citam aparelho"
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 93 avaliações citam aparelho"
+      },
+      {
+        "nome": "Pronto Socorro Dentário - Clínica Odontológica 24 Horas",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 102 avaliações citam aparelho"
       }
     ],
-    "fora_total": 8,
+    "fora_total": 10,
     "sem_comparacao_porque": null
   },
   "presenca_na_busca": {
@@ -385,8 +470,8 @@
     "local_id": "ortho_poa_cristo_redentor",
     "unidade": "OrthoDontic · Cristo Redentor",
     "rotulo": "RS · Porto Alegre",
-    "com_texto": 85,
-    "sem_estagio": 44,
+    "com_texto": 166,
+    "sem_estagio": 85,
     "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
     "estagios": [
       {
@@ -395,19 +480,24 @@
         "o_que_e": "como me acharam",
         "quem_resolve": "marketing e ficha do Google",
         "medido": true,
-        "avaliacoes": 12,
-        "dor": 1,
-        "elogio": 11,
-        "pct_dor": 8,
+        "avaliacoes": 17,
+        "dor": 5,
+        "elogio": 12,
+        "pct_dor": 29,
         "amostra_curta": false,
         "exemplos": [
+          {
+            "nota": 1,
+            "data": "2023-03-07",
+            "texto": "Não recomendo para ninguém ,clínica da Assis brasil .só não cancelo por causa da multa .\nAtendente ruim,80%das vezes meu horário é às 18:00 horas eles me atendem 18:45.\nSempre quando reclamo pra atendente nem bola dá.\nNão recomendo pra ninguém.\nQue arrependimento horrível estar nessa clínica."
+          },
           {
             "nota": 1,
             "data": "2026-02-08",
             "texto": "Não recomendo,  fiquei alguns anos em tratamento ortodontico,  não resolveu a mordida profunda, foi apenas gasto e tempo perdido.\nAgora vou ter que fazer tudo de novo em outro lugar."
           }
         ],
-        "frase": "12 avaliações falam deste momento, 1 com nota baixa",
+        "frase": "17 avaliações falam deste momento, 5 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -415,15 +505,31 @@
         "rotulo": "Contato",
         "o_que_e": "telefone e WhatsApp",
         "quem_resolve": "recepção",
-        "medido": false,
-        "avaliacoes": 0,
-        "dor": 0,
-        "elogio": 0,
-        "pct_dor": null,
+        "medido": true,
+        "avaliacoes": 10,
+        "dor": 5,
+        "elogio": 3,
+        "pct_dor": 50,
         "amostra_curta": false,
-        "exemplos": [],
-        "frase": null,
-        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2021-04-14",
+            "texto": "Atendimento super mal das recepcionista, principalmente se for por whatsapp,visualizam as mensagens e não respondem nada,mesmo a pessoa pedindo por favor por uma resposta.\nE pessoalmente também ficam conversando entre elas enquanto o cliente fica esperando atendimento!"
+          },
+          {
+            "nota": 1,
+            "data": "2023-10-22",
+            "texto": "Péssimo atendimento não tem um telefone fixo direto p contato!!!\nProtelo o atendimento para almentar as parcelas.\n\nNão indico!!!!"
+          },
+          {
+            "nota": 1,
+            "data": "2024-05-07",
+            "texto": "Meu segundo mês na clínica e já me arrependo. Não respondem no whatsapp, mas pra primeira consulta respondiam ligeiro. Tive um problema com o pagamento, acabei dando mais dinheiro do que era a mensalidade, e simplesmente ignoraram"
+          }
+        ],
+        "frase": "10 avaliações falam deste momento, 5 com notas baixas",
+        "porque_vazio": null
       },
       {
         "estagio": "agendamento",
@@ -431,13 +537,24 @@
         "o_que_e": "marcar e remarcar",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 1,
-        "dor": 0,
-        "elogio": 1,
-        "pct_dor": 0,
-        "amostra_curta": true,
-        "exemplos": [],
-        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "avaliacoes": 8,
+        "dor": 4,
+        "elogio": 3,
+        "pct_dor": 50,
+        "amostra_curta": false,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2019-11-14",
+            "texto": "Avaliação marcada para as 14h, 10 mins depois pergunto se demoram e chamar, me informam que tem 3 pessoas na minha frente, demoraria em torno de 30 mins, então para que marcar horário?\nAlegam que minha confirmação não apareceu pelo totem na entrada."
+          },
+          {
+            "nota": 1,
+            "data": "2023-03-07",
+            "texto": "Não recomendo para ninguém ,clínica da Assis brasil .só não cancelo por causa da multa .\nAtendente ruim,80%das vezes meu horário é às 18:00 horas eles me atendem 18:45.\nSempre quando reclamo pra atendente nem bola dá.\nNão recomendo pra ninguém.\nQue arrependimento horrível estar nessa clínica."
+          }
+        ],
+        "frase": "8 avaliações falam deste momento, 4 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -446,13 +563,24 @@
         "o_que_e": "chegar e esperar",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 19,
-        "dor": 0,
-        "elogio": 19,
-        "pct_dor": 0,
+        "avaliacoes": 42,
+        "dor": 4,
+        "elogio": 37,
+        "pct_dor": 10,
         "amostra_curta": false,
-        "exemplos": [],
-        "frase": "19 avaliações falam deste momento, nenhuma com nota baixa",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2021-04-14",
+            "texto": "Atendimento super mal das recepcionista, principalmente se for por whatsapp,visualizam as mensagens e não respondem nada,mesmo a pessoa pedindo por favor por uma resposta.\nE pessoalmente também ficam conversando entre elas enquanto o cliente fica esperando atendimento!"
+          },
+          {
+            "nota": 1,
+            "data": "2023-03-07",
+            "texto": "Não recomendo para ninguém ,clínica da Assis brasil .só não cancelo por causa da multa .\nAtendente ruim,80%das vezes meu horário é às 18:00 horas eles me atendem 18:45.\nSempre quando reclamo pra atendente nem bola dá.\nNão recomendo pra ninguém.\nQue arrependimento horrível estar nessa clínica."
+          }
+        ],
+        "frase": "42 avaliações falam deste momento, 4 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -461,13 +589,29 @@
         "o_que_e": "a primeira consulta",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 5,
-        "dor": 0,
-        "elogio": 5,
-        "pct_dor": 0,
-        "amostra_curta": true,
-        "exemplos": [],
-        "frase": "5 avaliações falam deste momento, nenhuma com nota baixa",
+        "avaliacoes": 11,
+        "dor": 5,
+        "elogio": 6,
+        "pct_dor": 45,
+        "amostra_curta": false,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2019-11-14",
+            "texto": "Avaliação marcada para as 14h, 10 mins depois pergunto se demoram e chamar, me informam que tem 3 pessoas na minha frente, demoraria em torno de 30 mins, então para que marcar horário?\nAlegam que minha confirmação não apareceu pelo totem na entrada."
+          },
+          {
+            "nota": 1,
+            "data": "2020-05-18",
+            "texto": "Fiz a avaliação com um dr. e fui atendida por outro profissional. Avaliador disse que eu ficaria de 6 meses a 1 anos, pois fui com um propósito pois já usei aparelho antes. Já se passou 2 anos e ainda estou com o aparelho e não obtive o tratamento para a situação a qual procurei."
+          },
+          {
+            "nota": 1,
+            "data": "2024-05-07",
+            "texto": "Meu segundo mês na clínica e já me arrependo. Não respondem no whatsapp, mas pra primeira consulta respondiam ligeiro. Tive um problema com o pagamento, acabei dando mais dinheiro do que era a mensalidade, e simplesmente ignoraram"
+          }
+        ],
+        "frase": "11 avaliações falam deste momento, 5 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -476,19 +620,29 @@
         "o_que_e": "preço, contrato e entrada",
         "quem_resolve": "franqueado",
         "medido": true,
-        "avaliacoes": 4,
-        "dor": 1,
+        "avaliacoes": 7,
+        "dor": 3,
         "elogio": 3,
-        "pct_dor": 25,
+        "pct_dor": 43,
         "amostra_curta": true,
         "exemplos": [
+          {
+            "nota": 1,
+            "data": "2019-11-14",
+            "texto": "Avaliação marcada para as 14h, 10 mins depois pergunto se demoram e chamar, me informam que tem 3 pessoas na minha frente, demoraria em torno de 30 mins, então para que marcar horário?\nAlegam que minha confirmação não apareceu pelo totem na entrada."
+          },
+          {
+            "nota": 1,
+            "data": "2023-10-22",
+            "texto": "Péssimo atendimento não tem um telefone fixo direto p contato!!!\nProtelo o atendimento para almentar as parcelas.\n\nNão indico!!!!"
+          },
           {
             "nota": 1,
             "data": "2025-10-06",
             "texto": "Meu filho está com aparelho ortodôntico e cada vez que ele vai fazer manutenção , se tem que trocar ou repor qualquer coisa tipo os braquetes é cobrado um valor extra. O material que eles utilizam é pessimo, sempre cai e tem sempre valor extra p pagar, se continuar assim vou cancelar o contrato e entrar com uma ação p devolução de valores."
           }
         ],
-        "frase": "4 avaliações falam deste momento, 1 com nota baixa",
+        "frase": "7 avaliações falam deste momento, 3 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -497,13 +651,19 @@
         "o_que_e": "a cadeira",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 17,
-        "dor": 0,
-        "elogio": 17,
-        "pct_dor": 0,
+        "avaliacoes": 27,
+        "dor": 3,
+        "elogio": 24,
+        "pct_dor": 11,
         "amostra_curta": false,
-        "exemplos": [],
-        "frase": "17 avaliações falam deste momento, nenhuma com nota baixa",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2020-05-18",
+            "texto": "Fiz a avaliação com um dr. e fui atendida por outro profissional. Avaliador disse que eu ficaria de 6 meses a 1 anos, pois fui com um propósito pois já usei aparelho antes. Já se passou 2 anos e ainda estou com o aparelho e não obtive o tratamento para a situação a qual procurei."
+          }
+        ],
+        "frase": "27 avaliações falam deste momento, 3 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -512,19 +672,24 @@
         "o_que_e": "as voltas de cada mês",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 1,
-        "dor": 1,
-        "elogio": 0,
-        "pct_dor": 100,
+        "avaliacoes": 7,
+        "dor": 3,
+        "elogio": 3,
+        "pct_dor": 43,
         "amostra_curta": true,
         "exemplos": [
+          {
+            "nota": 1,
+            "data": "2024-05-07",
+            "texto": "Meu segundo mês na clínica e já me arrependo. Não respondem no whatsapp, mas pra primeira consulta respondiam ligeiro. Tive um problema com o pagamento, acabei dando mais dinheiro do que era a mensalidade, e simplesmente ignoraram"
+          },
           {
             "nota": 1,
             "data": "2025-10-06",
             "texto": "Meu filho está com aparelho ortodôntico e cada vez que ele vai fazer manutenção , se tem que trocar ou repor qualquer coisa tipo os braquetes é cobrado um valor extra. O material que eles utilizam é pessimo, sempre cai e tem sempre valor extra p pagar, se continuar assim vou cancelar o contrato e entrar com uma ação p devolução de valores."
           }
         ],
-        "frase": "1 avaliação fala deste momento, 1 com nota baixa",
+        "frase": "7 avaliações falam deste momento, 3 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -533,13 +698,24 @@
         "o_que_e": "mensalidade e multa",
         "quem_resolve": "franqueado",
         "medido": true,
-        "avaliacoes": 1,
-        "dor": 0,
+        "avaliacoes": 5,
+        "dor": 3,
         "elogio": 1,
-        "pct_dor": 0,
+        "pct_dor": 60,
         "amostra_curta": true,
-        "exemplos": [],
-        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2023-03-07",
+            "texto": "Não recomendo para ninguém ,clínica da Assis brasil .só não cancelo por causa da multa .\nAtendente ruim,80%das vezes meu horário é às 18:00 horas eles me atendem 18:45.\nSempre quando reclamo pra atendente nem bola dá.\nNão recomendo pra ninguém.\nQue arrependimento horrível estar nessa clínica."
+          },
+          {
+            "nota": 1,
+            "data": "2024-05-07",
+            "texto": "Meu segundo mês na clínica e já me arrependo. Não respondem no whatsapp, mas pra primeira consulta respondiam ligeiro. Tive um problema com o pagamento, acabei dando mais dinheiro do que era a mensalidade, e simplesmente ignoraram"
+          }
+        ],
+        "frase": "5 avaliações falam deste momento, 3 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -547,47 +723,58 @@
         "rotulo": "Suporte",
         "o_que_e": "quando algo dá errado",
         "quem_resolve": "franqueado",
-        "medido": false,
-        "avaliacoes": 0,
-        "dor": 0,
-        "elogio": 0,
-        "pct_dor": null,
-        "amostra_curta": false,
-        "exemplos": [],
-        "frase": null,
-        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+        "medido": true,
+        "avaliacoes": 4,
+        "dor": 2,
+        "elogio": 2,
+        "pct_dor": 50,
+        "amostra_curta": true,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2023-03-07",
+            "texto": "Não recomendo para ninguém ,clínica da Assis brasil .só não cancelo por causa da multa .\nAtendente ruim,80%das vezes meu horário é às 18:00 horas eles me atendem 18:45.\nSempre quando reclamo pra atendente nem bola dá.\nNão recomendo pra ninguém.\nQue arrependimento horrível estar nessa clínica."
+          },
+          {
+            "nota": 1,
+            "data": "2024-05-07",
+            "texto": "Meu segundo mês na clínica e já me arrependo. Não respondem no whatsapp, mas pra primeira consulta respondiam ligeiro. Tive um problema com o pagamento, acabei dando mais dinheiro do que era a mensalidade, e simplesmente ignoraram"
+          }
+        ],
+        "frase": "4 avaliações falam deste momento, 2 com notas baixas",
+        "porque_vazio": null
       },
       {
         "estagio": "contencao",
         "rotulo": "Fim e contenção",
         "o_que_e": "alta e depois dela",
         "quem_resolve": "clínica",
-        "medido": false,
-        "avaliacoes": 0,
+        "medido": true,
+        "avaliacoes": 2,
         "dor": 0,
-        "elogio": 0,
-        "pct_dor": null,
-        "amostra_curta": false,
+        "elogio": 2,
+        "pct_dor": 0,
+        "amostra_curta": true,
         "exemplos": [],
-        "frase": null,
-        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+        "frase": "2 avaliações falam deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
       }
     ],
-    "manchete": "Nenhum momento da jornada concentra dor com amostra suficiente para virar manchete.",
-    "quem_resolve": null,
-    "e_clinico": null,
+    "manchete": "A dor pública desta unidade aparece em descoberta — 5 avaliações de 1 ou 2 estrelas de 17 que falam desse momento.",
+    "quem_resolve": "marketing e ficha do Google",
+    "e_clinico": false,
     "confianca": {
       "natureza": "fato",
-      "confianca": "media",
+      "confianca": "alta",
       "medido": true,
-      "amostra": 85,
-      "janela_dias": null,
-      "medicoes": null,
+      "amostra": 166,
+      "janela_dias": 1,
+      "medicoes": 2,
       "fonte": "dados/serie/reviews.jsonl",
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": "mais avaliações com texto nesta loja",
-      "procedencia": "medido em 85 avaliações"
+      "procedencia": "medido em 166 avaliações, 2 medições, 1 dia de janela"
     }
   },
   "meu_territorio": {
@@ -677,6 +864,24 @@
   "acoes": {
     "arcos": [
       {
+        "arco_id": "ortho_poa_cristo_redentor|rival",
+        "local_id": "ortho_poa_cristo_redentor",
+        "praca_id": "porto_alegre",
+        "gatilho": "rival",
+        "problema": "Sorridents Porto Alegre Clinica Odontológica / Dentista sustenta há 20 meses a 19.2/mês, contra 3.0/mês desta unidade",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": null,
+        "antes": null,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "sem ação padrão para este gatilho",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      },
+      {
         "arco_id": "ortho_poa_cristo_redentor|parada",
         "local_id": "ortho_poa_cristo_redentor",
         "praca_id": "porto_alegre",
@@ -689,7 +894,7 @@
         "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
         "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
         "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": 7.5,
+        "depois": 3.0,
         "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
         "dias": 1
@@ -707,13 +912,13 @@
         "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
         "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
         "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": 12.0,
+        "depois": 13.0,
         "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
         "dias": 1
       }
     ],
-    "total": 2,
+    "total": 3,
     "aviso": "O livro nasceu hoje. Nenhum arco completou 21 dias, então ainda não há veredito para ninguém — a primeira resposta vem na coleta seguinte."
   },
   "oferta_da_cidade": {
@@ -1110,6 +1315,13 @@
     "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
   },
   "eventos": [
+    {
+      "data": "2026-08-13",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Um rival de aparelho sustenta e corre mais",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
     {
       "data": "2026-08-12",
       "tipo": "alerta",

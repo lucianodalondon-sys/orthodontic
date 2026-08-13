@@ -5,8 +5,8 @@
     "unidade": "OrthoDontic · R. dos Andradas",
     "cidade": "RS · Porto Alegre",
     "endereco": "R. dos Andradas, 1155 - Conj 201 - Centro Histórico, Porto Alegre - RS, 90020-015",
-    "desde": null,
-    "medicoes": null,
+    "desde": "12/ago",
+    "medicoes": 2,
     "posicao_na_cidade": null,
     "clinicas_na_cidade": null,
     "lojas_irmas": [
@@ -35,33 +35,38 @@
         "unidade": "OrthoDontic · Rio Branco"
       }
     ],
-    "frase": "OrthoDontic · R. dos Andradas fica em Centro Histórico, onde estão 32 clínicas mapeadas e divide Porto Alegre com mais 6 lojas da rede."
+    "frase": "OrthoDontic · R. dos Andradas é escutada desde 12/ago, em 2 medições e divide Porto Alegre com mais 6 lojas da rede."
   },
   "rotulo": "RS · Porto Alegre",
   "unidade": "OrthoDontic · R. dos Andradas",
   "cabecalho": {
     "nota": 4.4,
     "avaliacoes": 176,
-    "ritmo": 8.2,
+    "ritmo": 1.5,
     "meses_seguidos": 3,
-    "posicao": 11,
-    "de": 21
+    "posicao": 20,
+    "de": 21,
+    "amostra_lida": 176,
+    "amostra_dias": 3493,
+    "amostra_truncada": false,
+    "ritmo_comparavel": true,
+    "porque_fora_do_ranking": null
   },
-  "faixa": "amarela",
-  "urgencia": 35,
+  "faixa": "vermelha",
+  "urgencia": 60,
   "tarefa": {
     "status": "aberta",
-    "aberta_em": "2026-08-12",
-    "dias_aberta": 1,
-    "prazo_dias": 7,
-    "vence_em": "2026-08-19"
+    "aberta_em": "2026-08-13",
+    "dias_aberta": 0,
+    "prazo_dias": null,
+    "vence_em": null
   },
   "acao": {
-    "o_que": "Auditar a ficha do Google — foto, horário, serviços, resposta a avaliação",
-    "prazo": "7 dias",
-    "dono": "franqueado",
+    "o_que": "Levar a comparação impressa com Sorridents Porto Alegre Clinica Odontológica / Dentista para a visita e combinar a resposta",
+    "prazo": "próxima visita",
+    "dono": "consultor de campo",
     "custo": "sem custo de mídia",
-    "por_causa_de": "posicao",
+    "por_causa_de": "rival",
     "confianca": {
       "natureza": "recomendacao",
       "confianca": "baixa",
@@ -71,7 +76,8 @@
       "medicoes": null,
       "fonte": "scripts/fila.py",
       "a_favor": [
-        "11º lugar de 21 clínicas medidas na praça",
+        "Sorridents Porto Alegre Clinica Odontológica / Dentista sustenta há 20 meses a 19.2/mês, contra 1.5/mês desta unidade",
+        "20º lugar de 21 clínicas medidas na praça",
         "nota 4.4 contra mediana 4.8 das 21 clínicas medidas na praça"
       ],
       "contra": [],
@@ -81,10 +87,17 @@
   },
   "gatilhos": [
     {
+      "peso": 25,
+      "titulo": "Um rival de aparelho sustenta e corre mais",
+      "chave": "rival",
+      "fato": "Sorridents Porto Alegre Clinica Odontológica / Dentista sustenta há 20 meses a 19.2/mês, contra 1.5/mês desta unidade",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
       "peso": 20,
       "titulo": "Está na metade de baixo da própria praça",
       "chave": "posicao",
-      "fato": "11º lugar de 21 clínicas medidas na praça",
+      "fato": "20º lugar de 21 clínicas medidas na praça",
       "fonte": "dados/portal/rede_cruzamento.json"
     },
     {
@@ -95,11 +108,45 @@
       "fonte": "dados/serie/places.jsonl"
     }
   ],
-  "quem_avanca": null,
-  "o_que_mudou": null,
+  "quem_avanca": {
+    "nome": "Sorridents Porto Alegre Clinica Odontológica / Dentista",
+    "ritmo": 19.2,
+    "meses": 20,
+    "nota": 4.9,
+    "posicao": 1
+  },
+  "o_que_mudou": {
+    "local_id": "ortho_poa_centro_historico_3",
+    "nome": "OrthoDontic",
+    "proprio": true,
+    "aparelho": true,
+    "de": "2026-08-12",
+    "ate": "2026-08-13",
+    "dias": 1,
+    "antes": 176,
+    "agora": 176,
+    "delta": 0,
+    "nota_antes": 4.4,
+    "nota_agora": 4.4,
+    "ritmo_do_periodo": 0.0,
+    "historico": {
+      "desde": "2026-08-12",
+      "ate": "2026-08-13",
+      "dias": 1,
+      "medicoes": 2,
+      "antes": 176,
+      "agora": 176,
+      "delta": 0,
+      "ritmo_do_periodo": 0.0,
+      "nota_antes": 4.4,
+      "nota_agora": 4.4
+    },
+    "eventos": [],
+    "aviso": "a praça é medida há 1 dia (2 medições) — a leitura ainda diz pouco e engorda a cada coleta"
+  },
   "sem_resposta": {
-    "abertas": 7,
-    "com_texto": 7,
+    "abertas": 13,
+    "com_texto": 12,
     "itens": [
       {
         "nota": 1,
@@ -142,86 +189,141 @@
         "data": "2025-10-28",
         "texto": "Vou falar sobre a minha experiência, não retornarei a essa clínica nunca mais, se o atendimento começa mau na recepção tu já imagina o resto, recepcionista TAIENE, acredito que não tenha experiência para lidar com o público, fui para fazer uma avaliação clínica e ortho, ela só sabia falar que eu tinha quê fechar os procedimentos antes de colocar o aparelho dentário, eu cheguei com um orçamento antigo, e sem contar que só ficava no relógio dela acredito que conversando com alguém, esperei por mais de 30 minutos para ser chamada, ela o tempo inteiro falando com uma dentista que estava passando café kkkk pelo amor de Deus, fui no andar de baixo fechei o contrato para por o aparelho e fiz somente a limpeza antes de por o aparelho os outros procedimentos farei ao longo do tratamento, recomendo trocar a porta da entrada, obs eu não estou falando da porta !!!\n\nDr.Leandro tem que avaliar mais as suas funcionárias, eu fui uma indicação de uma paciente que fez todo o tratamento com você !!!",
         "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2023-01-20",
+        "texto": "Não recomendo esse lugar, péssimo atendimento!!!!!!!!",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2020-07-24",
+        "texto": "O atendimento do local é horrivel, as recepcionistas sao umas antipaticas, tratamento horrivel, pois nao vejo diferença alguma, ja faz mais de 2 meses que eles vem me enviando mensagens pra mim fazer um pagamento que eu ja quitei a divida, horrivel, nao indico para ninguem.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2020-06-22",
+        "texto": "Atendimento horrível em todos os sentidos, as recepcionistas estão sempre com cara fechada,o atendimento pelo wpp é horrível também, porque eles não te respondem mesmo estando online, não dá pra liga porque só aparece uma voz eletrônica e ninguém atende, fica um tempão na linha pra nada, tudo que vai fazer eles te cobram, mesmo sendo erro da má qualidade deles, única coisa que talvez seja boa é a mensalidade de 80 pila, de resto é horrível",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2020-03-21",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 1,
+        "data": "2019-10-26",
+        "texto": "Recepcionista loira antipática, não tem jeito pra falar com os cliente, tratando de assuntos financeiros na frente de todo mundo. Não recomendo esse lugar pelo atendimento.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2019-03-21",
+        "texto": "Não foi das melhores tem umas dentistas que acham que estão enchendo com bixos me queimarão a boca com aparelho conversavam na hora do atendimento não prestao atenção no que fazem .",
+        "tem_texto": true
       }
     ],
-    "itens_total": 7
+    "itens_total": 13
   },
   "voz_do_paciente": [
     {
       "o_que_e": "Explica o que vai fazer, antes de fazer",
-      "pct": 3.2
+      "pct": 2.4
     },
     {
       "o_que_e": "Atende na hora marcada",
-      "pct": 0.0
+      "pct": 0.8
     },
     {
       "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
-      "pct": 2.2
+      "pct": 2.4
     },
     {
       "o_que_e": "Cuida de quem tem medo de dentista",
-      "pct": 1.1
+      "pct": 0.8
     },
     {
       "o_que_e": "Resolve no mesmo dia",
-      "pct": 0.0
+      "pct": 0.8
     },
     {
       "o_que_e": "Sabe atender criança",
-      "pct": 0.0
+      "pct": 0.8
     },
     {
       "o_que_e": "Continua presente depois que vendeu",
-      "pct": 5.4
+      "pct": 5.6
     },
     {
       "o_que_e": "Tem profissional que o paciente chama pelo nome",
-      "pct": 24.7
+      "pct": 20.8
     }
   ],
   "rival": {
     "comparados": [
       "Sorridents Porto Alegre Clinica Odontológica / Dentista",
-      "Clinica Odontológica | Dentista | Próteses | Implantes | Clareamento | Clinodente Porto Alegre",
+      "LAR Odontologia - Reabilitação Oral e Implantes Dentários. Ortodontia convencional e Alinhadores Transparentes.",
       "Dentista Porto Alegre | Clínica Dental Center"
     ],
     "vantagens_deles": [
       {
         "eixo": "acolhimento_do_medo",
         "o_que_e": "Cuida de quem tem medo de dentista",
-        "quem": "Dentista Porto Alegre | Clínica Dental Center",
-        "eles": 3.4,
-        "nos": 1.1,
-        "razao": 3.2
+        "quem": "LAR Odontologia - Reabilitação Oral e Implantes Dentários. Ortodontia convencional e Alinhadores Transparentes.",
+        "eles": 4.5,
+        "nos": 0.8,
+        "razao": 5.7
       },
       {
-        "eixo": "pos_venda",
-        "o_que_e": "Continua presente depois que vendeu",
-        "quem": "Dentista Porto Alegre | Clínica Dental Center",
-        "eles": 9.2,
-        "nos": 5.4,
-        "razao": 1.7
+        "eixo": "trata_crianca",
+        "o_que_e": "Sabe atender criança",
+        "quem": "LAR Odontologia - Reabilitação Oral e Implantes Dentários. Ortodontia convencional e Alinhadores Transparentes.",
+        "eles": 4.0,
+        "nos": 0.8,
+        "razao": 5.0
+      },
+      {
+        "eixo": "hora_marcada_e_hora",
+        "o_que_e": "Atende na hora marcada",
+        "quem": "Sorridents Porto Alegre Clinica Odontológica / Dentista",
+        "eles": 2.4,
+        "nos": 0.8,
+        "razao": 3.0
       },
       {
         "eixo": "explica_o_tratamento",
         "o_que_e": "Explica o que vai fazer, antes de fazer",
-        "quem": "Sorridents Porto Alegre Clinica Odontológica / Dentista",
-        "eles": 4.8,
-        "nos": 3.2,
-        "razao": 1.5
+        "quem": "LAR Odontologia - Reabilitação Oral e Implantes Dentários. Ortodontia convencional e Alinhadores Transparentes.",
+        "eles": 6.2,
+        "nos": 2.4,
+        "razao": 2.6
+      },
+      {
+        "eixo": "resolve_no_mesmo_dia",
+        "o_que_e": "Resolve no mesmo dia",
+        "quem": "Dentista Porto Alegre | Clínica Dental Center",
+        "eles": 1.7,
+        "nos": 0.8,
+        "razao": 2.1
+      },
+      {
+        "eixo": "gente_com_nome",
+        "o_que_e": "Tem profissional que o paciente chama pelo nome",
+        "quem": "LAR Odontologia - Reabilitação Oral e Implantes Dentários. Ortodontia convencional e Alinhadores Transparentes.",
+        "eles": 34.1,
+        "nos": 20.8,
+        "razao": 1.6
       }
     ],
     "fora": [
       {
-        "nome": "Clinica Koelsch",
+        "nome": "Odonto Clin",
         "fora": true,
-        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 116 avaliações citam aparelho"
-      },
-      {
-        "nome": "Sorrir Bem Clínica Odontológica",
-        "fora": true,
-        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 93 avaliações citam aparelho"
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 68 avaliações citam aparelho"
       },
       {
         "nome": "Integrare Odontologia",
@@ -234,9 +336,9 @@
         "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 94 avaliações citam aparelho"
       },
       {
-        "nome": "Odonto Clin",
+        "nome": "Dentista Legal",
         "fora": true,
-        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 68 avaliações citam aparelho"
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 85 avaliações citam aparelho"
       },
       {
         "nome": "Integrar Odontologia",
@@ -244,17 +346,32 @@
         "por_que_fora": "a voz do cliente é de implante: só 1 de 94 avaliações citam aparelho"
       },
       {
+        "nome": "Clinica Koelsch",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 116 avaliações citam aparelho"
+      },
+      {
+        "nome": "Odontologia Dr. RM",
+        "fora": true,
+        "por_que_fora": "amostra pequena (38 avaliações com texto) — não dá para afirmar o produto"
+      },
+      {
         "nome": "Da Vinci Odontologia",
         "fora": true,
         "por_que_fora": "a voz do cliente é de odontologia geral: só 2 de 97 avaliações citam aparelho"
       },
       {
-        "nome": "Dentista Legal",
+        "nome": "Sorrir Bem Clínica Odontológica",
         "fora": true,
-        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 85 avaliações citam aparelho"
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 93 avaliações citam aparelho"
+      },
+      {
+        "nome": "Pronto Socorro Dentário - Clínica Odontológica 24 Horas",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 102 avaliações citam aparelho"
       }
     ],
-    "fora_total": 8,
+    "fora_total": 10,
     "sem_comparacao_porque": null
   },
   "presenca_na_busca": {
@@ -390,8 +507,8 @@
     "local_id": "ortho_poa_centro_historico_3",
     "unidade": "OrthoDontic · R. dos Andradas",
     "rotulo": "RS · Porto Alegre",
-    "com_texto": 93,
-    "sem_estagio": 39,
+    "com_texto": 125,
+    "sem_estagio": 56,
     "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
     "estagios": [
       {
@@ -400,19 +517,29 @@
         "o_que_e": "como me acharam",
         "quem_resolve": "marketing e ficha do Google",
         "medido": true,
-        "avaliacoes": 9,
-        "dor": 2,
-        "elogio": 7,
-        "pct_dor": 22,
+        "avaliacoes": 13,
+        "dor": 5,
+        "elogio": 8,
+        "pct_dor": 38,
         "amostra_curta": false,
         "exemplos": [
           {
             "nota": 1,
-            "data": "2025-11-20",
-            "texto": "Só tive prejuízo paguei todo o tratamento Orthodontic e não obtive resultado satisfatório continuo com os dentes tortos e desalinhados, além disso extraíram um dente sem necessidade e queriam colocar um dente e parafusado no lugar um absurdo, não recomendo!"
+            "data": "2019-10-26",
+            "texto": "Recepcionista loira antipática, não tem jeito pra falar com os cliente, tratando de assuntos financeiros na frente de todo mundo. Não recomendo esse lugar pelo atendimento."
+          },
+          {
+            "nota": 1,
+            "data": "2023-01-20",
+            "texto": "Não recomendo esse lugar, péssimo atendimento!!!!!!!!"
+          },
+          {
+            "nota": 1,
+            "data": "2023-01-20",
+            "texto": "Péssimo Lugar!! Não recomendo,Hoje minha filha foi na consulta,como de costume sempre pagamos antes e enviamos o comprovante de pagamento, chegando lá às atendente fizeram minha filha de 16 anos passar o maior constrangimento, dissendo que o comprovante estava estranho como se o comprovante fosse \"Calcificado\"Péssimo Lugar 😡"
           }
         ],
-        "frase": "9 avaliações falam deste momento, 2 com notas baixas",
+        "frase": "13 avaliações falam deste momento, 5 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -421,13 +548,24 @@
         "o_que_e": "telefone e WhatsApp",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 2,
-        "dor": 2,
+        "avaliacoes": 4,
+        "dor": 4,
         "elogio": 0,
         "pct_dor": 100,
         "amostra_curta": true,
-        "exemplos": [],
-        "frase": "2 avaliações falam deste momento, 2 com notas baixas",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2020-09-04",
+            "texto": "o atendimento é péssimo , as recepcionistas são mal educadas,cobram as mensalidades , mesmo pagando adiantado as mensalidades, nunca fui sorteado nos prêmios da clínica;somente trocam borrachinhas e não oferecem no pacote a limpeza grátis a cada 6 meses de tratamento e ainda tem o aumento de 10% a cada ano .\ncontato com o paciente em questão 51996584330"
+          },
+          {
+            "nota": 1,
+            "data": "2024-12-18",
+            "texto": "Que dificuldade pra agendar uma consulta, sem conta da dentista que colocaram pra me atender. Dentista horrível e sem profissionalismo, atendeu telefone no meio da minha consulta, sem contar a cara de mau humor que ficou só pq tiver que marca uma consulta de emergência por causa de uma coisa que ela mesma vez."
+          }
+        ],
+        "frase": "4 avaliações falam deste momento, 4 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -436,19 +574,24 @@
         "o_que_e": "marcar e remarcar",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 3,
-        "dor": 3,
+        "avaliacoes": 6,
+        "dor": 5,
         "elogio": 0,
-        "pct_dor": 100,
+        "pct_dor": 83,
         "amostra_curta": true,
         "exemplos": [
+          {
+            "nota": 1,
+            "data": "2024-12-18",
+            "texto": "Que dificuldade pra agendar uma consulta, sem conta da dentista que colocaram pra me atender. Dentista horrível e sem profissionalismo, atendeu telefone no meio da minha consulta, sem contar a cara de mau humor que ficou só pq tiver que marca uma consulta de emergência por causa de uma coisa que ela mesma vez."
+          },
           {
             "nota": 1,
             "data": "2026-05-23",
             "texto": "Marcam horario, so para marcar msm toda vez tem que esperar uma hora a mais do que o combinado!!"
           }
         ],
-        "frase": "3 avaliações falam deste momento, 3 com notas baixas",
+        "frase": "6 avaliações falam deste momento, 5 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -457,13 +600,29 @@
         "o_que_e": "chegar e esperar",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 33,
-        "dor": 2,
-        "elogio": 31,
-        "pct_dor": 6,
+        "avaliacoes": 41,
+        "dor": 8,
+        "elogio": 33,
+        "pct_dor": 20,
         "amostra_curta": false,
-        "exemplos": [],
-        "frase": "33 avaliações falam deste momento, 2 com notas baixas",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2019-10-26",
+            "texto": "Recepcionista loira antipática, não tem jeito pra falar com os cliente, tratando de assuntos financeiros na frente de todo mundo. Não recomendo esse lugar pelo atendimento."
+          },
+          {
+            "nota": 1,
+            "data": "2020-07-24",
+            "texto": "O atendimento do local é horrivel, as recepcionistas sao umas antipaticas, tratamento horrivel, pois nao vejo diferença alguma, ja faz mais de 2 meses que eles vem me enviando mensagens pra mim fazer um pagamento que eu ja quitei a divida, horrivel, nao indico para ninguem."
+          },
+          {
+            "nota": 1,
+            "data": "2020-09-04",
+            "texto": "o atendimento é péssimo , as recepcionistas são mal educadas,cobram as mensalidades , mesmo pagando adiantado as mensalidades, nunca fui sorteado nos prêmios da clínica;somente trocam borrachinhas e não oferecem no pacote a limpeza grátis a cada 6 meses de tratamento e ainda tem o aumento de 10% a cada ano .\ncontato com o paciente em questão 51996584330"
+          }
+        ],
+        "frase": "41 avaliações falam deste momento, 8 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -487,13 +646,13 @@
         "o_que_e": "preço, contrato e entrada",
         "quem_resolve": "franqueado",
         "medido": true,
-        "avaliacoes": 5,
+        "avaliacoes": 6,
         "dor": 3,
-        "elogio": 2,
-        "pct_dor": 60,
+        "elogio": 3,
+        "pct_dor": 50,
         "amostra_curta": true,
         "exemplos": [],
-        "frase": "5 avaliações falam deste momento, 3 com notas baixas",
+        "frase": "6 avaliações falam deste momento, 3 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -502,13 +661,24 @@
         "o_que_e": "a cadeira",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 24,
-        "dor": 2,
+        "avaliacoes": 26,
+        "dor": 4,
         "elogio": 22,
-        "pct_dor": 8,
+        "pct_dor": 15,
         "amostra_curta": false,
-        "exemplos": [],
-        "frase": "24 avaliações falam deste momento, 2 com notas baixas",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2023-04-25",
+            "texto": "horrível, mensalidade cara e as vezes cobram 2x o paciente. o dentista Rafael é um amor, o restante nem se fala."
+          },
+          {
+            "nota": 1,
+            "data": "2024-12-18",
+            "texto": "Que dificuldade pra agendar uma consulta, sem conta da dentista que colocaram pra me atender. Dentista horrível e sem profissionalismo, atendeu telefone no meio da minha consulta, sem contar a cara de mau humor que ficou só pq tiver que marca uma consulta de emergência por causa de uma coisa que ela mesma vez."
+          }
+        ],
+        "frase": "26 avaliações falam deste momento, 4 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -517,13 +687,29 @@
         "o_que_e": "as voltas de cada mês",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 3,
-        "dor": 2,
+        "avaliacoes": 9,
+        "dor": 7,
         "elogio": 1,
-        "pct_dor": 67,
-        "amostra_curta": true,
-        "exemplos": [],
-        "frase": "3 avaliações falam deste momento, 2 com notas baixas",
+        "pct_dor": 78,
+        "amostra_curta": false,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2020-09-04",
+            "texto": "o atendimento é péssimo , as recepcionistas são mal educadas,cobram as mensalidades , mesmo pagando adiantado as mensalidades, nunca fui sorteado nos prêmios da clínica;somente trocam borrachinhas e não oferecem no pacote a limpeza grátis a cada 6 meses de tratamento e ainda tem o aumento de 10% a cada ano .\ncontato com o paciente em questão 51996584330"
+          },
+          {
+            "nota": 1,
+            "data": "2023-04-25",
+            "texto": "horrível, mensalidade cara e as vezes cobram 2x o paciente. o dentista Rafael é um amor, o restante nem se fala."
+          },
+          {
+            "nota": 1,
+            "data": "2023-12-02",
+            "texto": "Além de ser mal atendida,paguei as mensalidades desde 2019 e o resultado do tratamento ortodôntico foi péssimo! Continuei com os dentes desalinhados e ainda extraíram um dente da frente que não era preciso ter extraído.Somente trocam os braquetes e pedem para escolher a cor da borrachinha!"
+          }
+        ],
+        "frase": "9 avaliações falam deste momento, 7 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -532,19 +718,29 @@
         "o_que_e": "mensalidade e multa",
         "quem_resolve": "franqueado",
         "medido": true,
-        "avaliacoes": 3,
-        "dor": 3,
+        "avaliacoes": 8,
+        "dor": 8,
         "elogio": 0,
         "pct_dor": 100,
-        "amostra_curta": true,
+        "amostra_curta": false,
         "exemplos": [
           {
             "nota": 1,
-            "data": "2025-11-20",
-            "texto": "Só tive prejuízo paguei todo o tratamento Orthodontic e não obtive resultado satisfatório continuo com os dentes tortos e desalinhados, além disso extraíram um dente sem necessidade e queriam colocar um dente e parafusado no lugar um absurdo, não recomendo!"
+            "data": "2020-07-24",
+            "texto": "O atendimento do local é horrivel, as recepcionistas sao umas antipaticas, tratamento horrivel, pois nao vejo diferença alguma, ja faz mais de 2 meses que eles vem me enviando mensagens pra mim fazer um pagamento que eu ja quitei a divida, horrivel, nao indico para ninguem."
+          },
+          {
+            "nota": 1,
+            "data": "2023-01-20",
+            "texto": "Péssimo Lugar!! Não recomendo,Hoje minha filha foi na consulta,como de costume sempre pagamos antes e enviamos o comprovante de pagamento, chegando lá às atendente fizeram minha filha de 16 anos passar o maior constrangimento, dissendo que o comprovante estava estranho como se o comprovante fosse \"Calcificado\"Péssimo Lugar 😡"
+          },
+          {
+            "nota": 1,
+            "data": "2023-04-25",
+            "texto": "horrível, mensalidade cara e as vezes cobram 2x o paciente. o dentista Rafael é um amor, o restante nem se fala."
           }
         ],
-        "frase": "3 avaliações falam deste momento, 3 com notas baixas",
+        "frase": "8 avaliações falam deste momento, 8 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -553,13 +749,19 @@
         "o_que_e": "quando algo dá errado",
         "quem_resolve": "franqueado",
         "medido": true,
-        "avaliacoes": 2,
-        "dor": 1,
+        "avaliacoes": 3,
+        "dor": 2,
         "elogio": 1,
-        "pct_dor": 50,
+        "pct_dor": 67,
         "amostra_curta": true,
-        "exemplos": [],
-        "frase": "2 avaliações falam deste momento, 1 com nota baixa",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2024-12-18",
+            "texto": "Que dificuldade pra agendar uma consulta, sem conta da dentista que colocaram pra me atender. Dentista horrível e sem profissionalismo, atendeu telefone no meio da minha consulta, sem contar a cara de mau humor que ficou só pq tiver que marca uma consulta de emergência por causa de uma coisa que ela mesma vez."
+          }
+        ],
+        "frase": "3 avaliações falam deste momento, 2 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -567,32 +769,32 @@
         "rotulo": "Fim e contenção",
         "o_que_e": "alta e depois dela",
         "quem_resolve": "clínica",
-        "medido": false,
-        "avaliacoes": 0,
-        "dor": 0,
+        "medido": true,
+        "avaliacoes": 1,
+        "dor": 1,
         "elogio": 0,
-        "pct_dor": null,
-        "amostra_curta": false,
+        "pct_dor": 100,
+        "amostra_curta": true,
         "exemplos": [],
-        "frase": null,
-        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+        "frase": "1 avaliação fala deste momento, 1 com nota baixa",
+        "porque_vazio": null
       }
     ],
-    "manchete": "Nenhum momento da jornada concentra dor com amostra suficiente para virar manchete.",
-    "quem_resolve": null,
-    "e_clinico": null,
+    "manchete": "A dor pública desta unidade aparece em recepção — 8 avaliações de 1 ou 2 estrelas de 41 que falam desse momento.",
+    "quem_resolve": "recepção",
+    "e_clinico": false,
     "confianca": {
       "natureza": "fato",
-      "confianca": "media",
+      "confianca": "alta",
       "medido": true,
-      "amostra": 93,
-      "janela_dias": null,
-      "medicoes": null,
+      "amostra": 125,
+      "janela_dias": 1,
+      "medicoes": 2,
       "fonte": "dados/serie/reviews.jsonl",
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": "mais avaliações com texto nesta loja",
-      "procedencia": "medido em 93 avaliações"
+      "procedencia": "medido em 125 avaliações, 2 medições, 1 dia de janela"
     }
   },
   "meu_territorio": {
@@ -683,7 +885,40 @@
     "unidade": "OrthoDontic · R. dos Andradas",
     "itens": [
       {
-        "problema": "7 avaliações negativas abertas sem resposta",
+        "problema": "A dor pública desta unidade aparece em recepção — 8 avaliações de 1 ou 2 estrelas de 41 que falam desse momento.",
+        "e_marketing": false,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "operacao",
+          "especialidade": "a própria unidade",
+          "porque_nao_e_marketing": "a dor pública está em chegada, espera e acolhimento. Campanha não conserta isso — mais mídia sobre um gargalo de balcão só aumenta o número de pessoas irritadas.",
+          "quem_resolve": "recepção",
+          "metrica_de_validacao": "as mesmas avaliações, reclassificadas na próxima coleta",
+          "recoletar_em_dias": 30
+        },
+        "evidencias": [
+          "13 avaliações falam deste momento, 5 com notas baixas",
+          "4 avaliações falam deste momento, 4 com notas baixas",
+          "6 avaliações falam deste momento, 5 com notas baixas"
+        ],
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": null,
+          "janela_dias": null,
+          "medicoes": null,
+          "fonte": "dados/portal/jornada.json",
+          "a_favor": [
+            "A dor pública desta unidade aparece em recepção — 8 avaliações de 1 ou 2 estrelas de 41 que falam desse momento."
+          ],
+          "contra": [],
+          "o_que_aumentaria": "a próxima medição da jornada",
+          "procedencia": "sem amostra declarada"
+        }
+      },
+      {
+        "problema": "13 avaliações negativas abertas sem resposta",
         "e_marketing": false,
         "execucao": {
           "necessaria": true,
@@ -697,19 +932,19 @@
           "natureza": "recomendacao",
           "confianca": "baixa",
           "medido": true,
-          "amostra": 7,
+          "amostra": 13,
           "janela_dias": null,
           "medicoes": null,
           "fonte": "dados/portal/caixa_de_respostas.json",
           "a_favor": [],
           "contra": [],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 7 avaliações"
+          "procedencia": "medido em 13 avaliações"
         }
       }
     ],
     "de_marketing": 0,
-    "de_operacao": 1,
+    "de_operacao": 2,
     "descartados": 0
   },
   "meu_bairro": {
@@ -737,6 +972,24 @@
   },
   "acoes": {
     "arcos": [
+      {
+        "arco_id": "ortho_poa_centro_historico_3|rival",
+        "local_id": "ortho_poa_centro_historico_3",
+        "praca_id": "porto_alegre",
+        "gatilho": "rival",
+        "problema": "Sorridents Porto Alegre Clinica Odontológica / Dentista sustenta há 20 meses a 19.2/mês, contra 1.5/mês desta unidade",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": null,
+        "antes": null,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "sem ação padrão para este gatilho",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      },
       {
         "arco_id": "ortho_poa_centro_historico_3|nota",
         "local_id": "ortho_poa_centro_historico_3",
@@ -768,13 +1021,13 @@
         "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
         "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
         "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": 11.0,
+        "depois": 20.0,
         "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
         "dias": 1
       }
     ],
-    "total": 2,
+    "total": 3,
     "aviso": "O livro nasceu hoje. Nenhum arco completou 21 dias, então ainda não há veredito para ninguém — a primeira resposta vem na coleta seguinte."
   },
   "oferta_da_cidade": {
@@ -1171,6 +1424,13 @@
     "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
   },
   "eventos": [
+    {
+      "data": "2026-08-13",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Um rival de aparelho sustenta e corre mais",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
     {
       "data": "2026-08-12",
       "tipo": "alerta",

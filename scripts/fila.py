@@ -206,7 +206,12 @@ def monta():
                   "dados/serie/reviews.jsonl")
 
         # 3 · a metade de baixo da própria praça
-        if u["de"] > 2 and u["posicao"] > u["de"]/2:
+        #
+        # Loja lida pela metade não tem posição, e não ter posição não é
+        # estar mal colocada: abrir alerta de "metade de baixo" para quem
+        # sequer entrou no ranking seria inventar o gatilho a partir de uma
+        # falha de coleta.
+        if u["de"] and u["posicao"] and u["de"] > 2 and u["posicao"] > u["de"]/2:
             marca("posicao",
                   f"{u['posicao']}º lugar de {u['de']} clínicas medidas na praça",
                   "dados/portal/rede_cruzamento.json")

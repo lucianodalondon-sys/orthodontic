@@ -32,8 +32,13 @@
     "avaliacoes": 22,
     "ritmo": 0.3,
     "meses_seguidos": 0,
-    "posicao": 18,
-    "de": 18
+    "posicao": 3,
+    "de": 3,
+    "amostra_lida": 22,
+    "amostra_dias": 2121,
+    "amostra_truncada": false,
+    "ritmo_comparavel": true,
+    "porque_fora_do_ranking": null
   },
   "faixa": "vermelha",
   "urgencia": 80,
@@ -60,7 +65,7 @@
       "fonte": "scripts/fila.py",
       "a_favor": [
         "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 0.3 avaliações/mês",
-        "18º lugar de 18 clínicas medidas na praça",
+        "3º lugar de 3 clínicas medidas na praça",
         "nota 3 contra mediana 4.8 das 18 clínicas medidas na praça"
       ],
       "contra": [],
@@ -80,7 +85,7 @@
       "peso": 20,
       "titulo": "Está na metade de baixo da própria praça",
       "chave": "posicao",
-      "fato": "18º lugar de 18 clínicas medidas na praça",
+      "fato": "3º lugar de 3 clínicas medidas na praça",
       "fonte": "dados/portal/rede_cruzamento.json"
     },
     {
@@ -798,24 +803,6 @@
   "acoes": {
     "arcos": [
       {
-        "arco_id": "orthodontic_republica|silencio",
-        "local_id": "orthodontic_republica",
-        "praca_id": "sao_paulo",
-        "gatilho": "silencio",
-        "problema": "155 anúncios no ar de 115 anunciantes, e nenhum é da rede",
-        "evidencia": "dados/serie/fila_historico.jsonl",
-        "aberto_em": "2026-08-13",
-        "metrica": null,
-        "antes": null,
-        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
-        "acao_recomendada": "sem ação padrão para este gatilho",
-        "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": null,
-        "medido_em": null,
-        "veredito": "aberto",
-        "dias": 0
-      },
-      {
         "arco_id": "orthodontic_republica|nota",
         "local_id": "orthodontic_republica",
         "praca_id": "sao_paulo",
@@ -864,7 +851,25 @@
         "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
         "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
         "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": 18.0,
+        "depois": 3.0,
+        "medido_em": "2026-08-13",
+        "veredito": "cedo_demais",
+        "dias": 0
+      },
+      {
+        "arco_id": "orthodontic_republica|silencio",
+        "local_id": "orthodontic_republica",
+        "praca_id": "sao_paulo",
+        "gatilho": "silencio",
+        "problema": "155 anúncios no ar de 115 anunciantes, e nenhum é da rede",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": null,
+        "antes": null,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "sem ação padrão para este gatilho",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
         "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
         "dias": 0

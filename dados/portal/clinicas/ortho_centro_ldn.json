@@ -24,8 +24,13 @@
     "avaliacoes": 77,
     "ritmo": 0.8,
     "meses_seguidos": 2,
-    "posicao": 23,
-    "de": 24
+    "posicao": 10,
+    "de": 11,
+    "amostra_lida": 77,
+    "amostra_dias": 2996,
+    "amostra_truncada": false,
+    "ritmo_comparavel": true,
+    "porque_fora_do_ranking": null
   },
   "faixa": "vermelha",
   "urgencia": 65,
@@ -52,7 +57,7 @@
       "fonte": "scripts/fila.py",
       "a_favor": [
         "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 0.8 avaliações/mês",
-        "23º lugar de 24 clínicas medidas na praça",
+        "10º lugar de 11 clínicas medidas na praça",
         "nota 3.8 contra mediana 5.0 das 24 clínicas medidas na praça"
       ],
       "contra": [],
@@ -72,7 +77,7 @@
       "peso": 20,
       "titulo": "Está na metade de baixo da própria praça",
       "chave": "posicao",
-      "fato": "23º lugar de 24 clínicas medidas na praça",
+      "fato": "10º lugar de 11 clínicas medidas na praça",
       "fonte": "dados/portal/rede_cruzamento.json"
     },
     {
@@ -1003,7 +1008,7 @@
         "antes": 23.0,
         "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
         "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": 23.0,
+        "depois": 10.0,
         "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
         "dias": 3

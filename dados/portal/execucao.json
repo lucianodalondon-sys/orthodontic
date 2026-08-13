@@ -240,6 +240,75 @@
    "descartados": 1
   },
   {
+   "local_id": "ortho_cwb_centro_2",
+   "praca_id": "curitiba",
+   "rotulo": "PR · Curitiba",
+   "unidade": "OrthoDontic · Av. Mal. Floriano Peixoto",
+   "itens": [
+    {
+     "problema": "A dor pública desta unidade aparece em contato — 28 avaliações de 1 ou 2 estrelas de 32 que falam desse momento.",
+     "e_marketing": false,
+     "execucao": {
+      "necessaria": true,
+      "tipo": "operacao",
+      "especialidade": "a própria unidade",
+      "porque_nao_e_marketing": "a dor pública está em telefone e WhatsApp sem resposta. Campanha não conserta isso — mais mídia sobre um gargalo de balcão só aumenta o número de pessoas irritadas.",
+      "quem_resolve": "recepção",
+      "metrica_de_validacao": "as mesmas avaliações, reclassificadas na próxima coleta",
+      "recoletar_em_dias": 30
+     },
+     "evidencias": [
+      "64 avaliações falam deste momento, 9 com notas baixas",
+      "32 avaliações falam deste momento, 28 com notas baixas",
+      "16 avaliações falam deste momento, 11 com notas baixas"
+     ],
+     "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": null,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/portal/jornada.json",
+      "a_favor": [
+       "A dor pública desta unidade aparece em contato — 28 avaliações de 1 ou 2 estrelas de 32 que falam desse momento."
+      ],
+      "contra": [],
+      "o_que_aumentaria": "a próxima medição da jornada",
+      "procedencia": "sem amostra declarada"
+     }
+    },
+    {
+     "problema": "31 avaliações negativas abertas sem resposta",
+     "e_marketing": false,
+     "execucao": {
+      "necessaria": true,
+      "tipo": "reputacao",
+      "especialidade": "a própria unidade",
+      "porque_nao_e_marketing": "responder paciente é trabalho de quem atende. Agência escrevendo resposta em nome da clínica é o caminho mais curto para uma resposta que o paciente percebe como automática.",
+      "metrica_de_validacao": "quantas seguem sem resposta na próxima coleta",
+      "recoletar_em_dias": 15
+     },
+     "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 31,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/portal/caixa_de_respostas.json",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": null,
+      "procedencia": "medido em 31 avaliações"
+     }
+    }
+   ],
+   "de_marketing": 0,
+   "de_operacao": 2,
+   "descartados": 0
+  },
+  {
    "local_id": "ortho_fsa",
    "praca_id": "feira",
    "rotulo": "BA · Feira de Santana",
@@ -351,7 +420,7 @@
    "unidade": "OrthoDontic · St. Central",
    "itens": [
     {
-     "problema": "A dor pública desta unidade aparece em contato — 6 avaliações de 1 ou 2 estrelas de 8 que falam desse momento.",
+     "problema": "A dor pública desta unidade aparece em contato — 12 avaliações de 1 ou 2 estrelas de 14 que falam desse momento.",
      "e_marketing": false,
      "execucao": {
       "necessaria": true,
@@ -363,9 +432,9 @@
       "recoletar_em_dias": 30
      },
      "evidencias": [
-      "7 avaliações falam deste momento, 2 com notas baixas",
-      "8 avaliações falam deste momento, 6 com notas baixas",
-      "5 avaliações falam deste momento, 4 com notas baixas"
+      "21 avaliações falam deste momento, 6 com notas baixas",
+      "14 avaliações falam deste momento, 12 com notas baixas",
+      "7 avaliações falam deste momento, 5 com notas baixas"
      ],
      "confianca": {
       "natureza": "recomendacao",
@@ -376,7 +445,7 @@
       "medicoes": null,
       "fonte": "dados/portal/jornada.json",
       "a_favor": [
-       "A dor pública desta unidade aparece em contato — 6 avaliações de 1 ou 2 estrelas de 8 que falam desse momento."
+       "A dor pública desta unidade aparece em contato — 12 avaliações de 1 ou 2 estrelas de 14 que falam desse momento."
       ],
       "contra": [],
       "o_que_aumentaria": "a próxima medição da jornada",
@@ -384,7 +453,7 @@
      }
     },
     {
-     "problema": "14 avaliações negativas abertas sem resposta",
+     "problema": "19 avaliações negativas abertas sem resposta",
      "e_marketing": false,
      "execucao": {
       "necessaria": true,
@@ -398,14 +467,14 @@
       "natureza": "recomendacao",
       "confianca": "baixa",
       "medido": true,
-      "amostra": 14,
+      "amostra": 19,
       "janela_dias": null,
       "medicoes": null,
       "fonte": "dados/portal/caixa_de_respostas.json",
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": null,
-      "procedencia": "medido em 14 avaliações"
+      "procedencia": "medido em 19 avaliações"
      }
     }
    ],
@@ -483,6 +552,144 @@
    "de_marketing": 0,
    "de_operacao": 0,
    "descartados": 1
+  },
+  {
+   "local_id": "ortho_joi_centro",
+   "praca_id": "joinville",
+   "rotulo": "SC · Joinville",
+   "unidade": "OrthoDontic · Centro",
+   "itens": [
+    {
+     "problema": "A dor pública desta unidade aparece em contato — 15 avaliações de 1 ou 2 estrelas de 22 que falam desse momento.",
+     "e_marketing": false,
+     "execucao": {
+      "necessaria": true,
+      "tipo": "operacao",
+      "especialidade": "a própria unidade",
+      "porque_nao_e_marketing": "a dor pública está em telefone e WhatsApp sem resposta. Campanha não conserta isso — mais mídia sobre um gargalo de balcão só aumenta o número de pessoas irritadas.",
+      "quem_resolve": "recepção",
+      "metrica_de_validacao": "as mesmas avaliações, reclassificadas na próxima coleta",
+      "recoletar_em_dias": 30
+     },
+     "evidencias": [
+      "41 avaliações falam deste momento, 3 com notas baixas",
+      "22 avaliações falam deste momento, 15 com notas baixas",
+      "14 avaliações falam deste momento, 8 com notas baixas"
+     ],
+     "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": null,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/portal/jornada.json",
+      "a_favor": [
+       "A dor pública desta unidade aparece em contato — 15 avaliações de 1 ou 2 estrelas de 22 que falam desse momento."
+      ],
+      "contra": [],
+      "o_que_aumentaria": "a próxima medição da jornada",
+      "procedencia": "sem amostra declarada"
+     }
+    },
+    {
+     "problema": "13 avaliações negativas abertas sem resposta",
+     "e_marketing": false,
+     "execucao": {
+      "necessaria": true,
+      "tipo": "reputacao",
+      "especialidade": "a própria unidade",
+      "porque_nao_e_marketing": "responder paciente é trabalho de quem atende. Agência escrevendo resposta em nome da clínica é o caminho mais curto para uma resposta que o paciente percebe como automática.",
+      "metrica_de_validacao": "quantas seguem sem resposta na próxima coleta",
+      "recoletar_em_dias": 15
+     },
+     "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 13,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/portal/caixa_de_respostas.json",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": null,
+      "procedencia": "medido em 13 avaliações"
+     }
+    }
+   ],
+   "de_marketing": 0,
+   "de_operacao": 2,
+   "descartados": 0
+  },
+  {
+   "local_id": "ortho_joi_america",
+   "praca_id": "joinville",
+   "rotulo": "SC · Joinville",
+   "unidade": "OrthoDontic · América",
+   "itens": [
+    {
+     "problema": "A dor pública desta unidade aparece em agendamento — 20 avaliações de 1 ou 2 estrelas de 24 que falam desse momento.",
+     "e_marketing": false,
+     "execucao": {
+      "necessaria": true,
+      "tipo": "operacao",
+      "especialidade": "a própria unidade",
+      "porque_nao_e_marketing": "a dor pública está em marcar, remarcar e encaixar. Campanha não conserta isso — mais mídia sobre um gargalo de balcão só aumenta o número de pessoas irritadas.",
+      "quem_resolve": "recepção",
+      "metrica_de_validacao": "as mesmas avaliações, reclassificadas na próxima coleta",
+      "recoletar_em_dias": 30
+     },
+     "evidencias": [
+      "32 avaliações falam deste momento, 8 com notas baixas",
+      "12 avaliações falam deste momento, 10 com notas baixas",
+      "24 avaliações falam deste momento, 20 com notas baixas"
+     ],
+     "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": null,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/portal/jornada.json",
+      "a_favor": [
+       "A dor pública desta unidade aparece em agendamento — 20 avaliações de 1 ou 2 estrelas de 24 que falam desse momento."
+      ],
+      "contra": [],
+      "o_que_aumentaria": "a próxima medição da jornada",
+      "procedencia": "sem amostra declarada"
+     }
+    },
+    {
+     "problema": "19 avaliações negativas abertas sem resposta",
+     "e_marketing": false,
+     "execucao": {
+      "necessaria": true,
+      "tipo": "reputacao",
+      "especialidade": "a própria unidade",
+      "porque_nao_e_marketing": "responder paciente é trabalho de quem atende. Agência escrevendo resposta em nome da clínica é o caminho mais curto para uma resposta que o paciente percebe como automática.",
+      "metrica_de_validacao": "quantas seguem sem resposta na próxima coleta",
+      "recoletar_em_dias": 15
+     },
+     "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 19,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/portal/caixa_de_respostas.json",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": null,
+      "procedencia": "medido em 19 avaliações"
+     }
+    }
+   ],
+   "de_marketing": 0,
+   "de_operacao": 2,
+   "descartados": 0
   },
   {
    "local_id": "ortho_souza_naves",
@@ -623,13 +830,46 @@
    "descartados": 0
   },
   {
-   "local_id": "ortho_poa_centro_historico_3",
+   "local_id": "ortho_poa_centro_historico",
    "praca_id": "porto_alegre",
    "rotulo": "RS · Porto Alegre",
-   "unidade": "OrthoDontic · R. dos Andradas",
+   "unidade": "OrthoDontic · Av. Borges de Medeiros",
    "itens": [
     {
-     "problema": "7 avaliações negativas abertas sem resposta",
+     "problema": "A dor pública desta unidade aparece em recepção — 11 avaliações de 1 ou 2 estrelas de 56 que falam desse momento.",
+     "e_marketing": false,
+     "execucao": {
+      "necessaria": true,
+      "tipo": "operacao",
+      "especialidade": "a própria unidade",
+      "porque_nao_e_marketing": "a dor pública está em chegada, espera e acolhimento. Campanha não conserta isso — mais mídia sobre um gargalo de balcão só aumenta o número de pessoas irritadas.",
+      "quem_resolve": "recepção",
+      "metrica_de_validacao": "as mesmas avaliações, reclassificadas na próxima coleta",
+      "recoletar_em_dias": 30
+     },
+     "evidencias": [
+      "18 avaliações falam deste momento, 2 com notas baixas",
+      "18 avaliações falam deste momento, 7 com notas baixas",
+      "25 avaliações falam deste momento, 10 com notas baixas"
+     ],
+     "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": null,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/portal/jornada.json",
+      "a_favor": [
+       "A dor pública desta unidade aparece em recepção — 11 avaliações de 1 ou 2 estrelas de 56 que falam desse momento."
+      ],
+      "contra": [],
+      "o_que_aumentaria": "a próxima medição da jornada",
+      "procedencia": "sem amostra declarada"
+     }
+    },
+    {
+     "problema": "9 avaliações negativas abertas sem resposta",
      "e_marketing": false,
      "execucao": {
       "necessaria": true,
@@ -643,14 +883,188 @@
       "natureza": "recomendacao",
       "confianca": "baixa",
       "medido": true,
-      "amostra": 7,
+      "amostra": 9,
       "janela_dias": null,
       "medicoes": null,
       "fonte": "dados/portal/caixa_de_respostas.json",
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": null,
-      "procedencia": "medido em 7 avaliações"
+      "procedencia": "medido em 9 avaliações"
+     }
+    }
+   ],
+   "de_marketing": 0,
+   "de_operacao": 2,
+   "descartados": 0
+  },
+  {
+   "local_id": "ortho_poa_cavalhada",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic · Cavalhada",
+   "itens": [
+    {
+     "problema": "A dor pública desta unidade aparece em agendamento — 8 avaliações de 1 ou 2 estrelas de 8 que falam desse momento.",
+     "e_marketing": false,
+     "execucao": {
+      "necessaria": true,
+      "tipo": "operacao",
+      "especialidade": "a própria unidade",
+      "porque_nao_e_marketing": "a dor pública está em marcar, remarcar e encaixar. Campanha não conserta isso — mais mídia sobre um gargalo de balcão só aumenta o número de pessoas irritadas.",
+      "quem_resolve": "recepção",
+      "metrica_de_validacao": "as mesmas avaliações, reclassificadas na próxima coleta",
+      "recoletar_em_dias": 30
+     },
+     "evidencias": [
+      "18 avaliações falam deste momento, 3 com notas baixas",
+      "6 avaliações falam deste momento, 4 com notas baixas",
+      "8 avaliações falam deste momento, 8 com notas baixas"
+     ],
+     "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": null,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/portal/jornada.json",
+      "a_favor": [
+       "A dor pública desta unidade aparece em agendamento — 8 avaliações de 1 ou 2 estrelas de 8 que falam desse momento."
+      ],
+      "contra": [],
+      "o_que_aumentaria": "a próxima medição da jornada",
+      "procedencia": "sem amostra declarada"
+     }
+    },
+    {
+     "problema": "10 avaliações negativas abertas sem resposta",
+     "e_marketing": false,
+     "execucao": {
+      "necessaria": true,
+      "tipo": "reputacao",
+      "especialidade": "a própria unidade",
+      "porque_nao_e_marketing": "responder paciente é trabalho de quem atende. Agência escrevendo resposta em nome da clínica é o caminho mais curto para uma resposta que o paciente percebe como automática.",
+      "metrica_de_validacao": "quantas seguem sem resposta na próxima coleta",
+      "recoletar_em_dias": 15
+     },
+     "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 10,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/portal/caixa_de_respostas.json",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": null,
+      "procedencia": "medido em 10 avaliações"
+     }
+    }
+   ],
+   "de_marketing": 0,
+   "de_operacao": 2,
+   "descartados": 0
+  },
+  {
+   "local_id": "ortho_poa_centro_historico_3",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic · R. dos Andradas",
+   "itens": [
+    {
+     "problema": "A dor pública desta unidade aparece em recepção — 8 avaliações de 1 ou 2 estrelas de 41 que falam desse momento.",
+     "e_marketing": false,
+     "execucao": {
+      "necessaria": true,
+      "tipo": "operacao",
+      "especialidade": "a própria unidade",
+      "porque_nao_e_marketing": "a dor pública está em chegada, espera e acolhimento. Campanha não conserta isso — mais mídia sobre um gargalo de balcão só aumenta o número de pessoas irritadas.",
+      "quem_resolve": "recepção",
+      "metrica_de_validacao": "as mesmas avaliações, reclassificadas na próxima coleta",
+      "recoletar_em_dias": 30
+     },
+     "evidencias": [
+      "13 avaliações falam deste momento, 5 com notas baixas",
+      "4 avaliações falam deste momento, 4 com notas baixas",
+      "6 avaliações falam deste momento, 5 com notas baixas"
+     ],
+     "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": null,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/portal/jornada.json",
+      "a_favor": [
+       "A dor pública desta unidade aparece em recepção — 8 avaliações de 1 ou 2 estrelas de 41 que falam desse momento."
+      ],
+      "contra": [],
+      "o_que_aumentaria": "a próxima medição da jornada",
+      "procedencia": "sem amostra declarada"
+     }
+    },
+    {
+     "problema": "13 avaliações negativas abertas sem resposta",
+     "e_marketing": false,
+     "execucao": {
+      "necessaria": true,
+      "tipo": "reputacao",
+      "especialidade": "a própria unidade",
+      "porque_nao_e_marketing": "responder paciente é trabalho de quem atende. Agência escrevendo resposta em nome da clínica é o caminho mais curto para uma resposta que o paciente percebe como automática.",
+      "metrica_de_validacao": "quantas seguem sem resposta na próxima coleta",
+      "recoletar_em_dias": 15
+     },
+     "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 13,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/portal/caixa_de_respostas.json",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": null,
+      "procedencia": "medido em 13 avaliações"
+     }
+    }
+   ],
+   "de_marketing": 0,
+   "de_operacao": 2,
+   "descartados": 0
+  },
+  {
+   "local_id": "ortho_poa_centro_historico_4",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic · R. Gen. Vitorino",
+   "itens": [
+    {
+     "problema": "5 avaliações negativas abertas sem resposta",
+     "e_marketing": false,
+     "execucao": {
+      "necessaria": true,
+      "tipo": "reputacao",
+      "especialidade": "a própria unidade",
+      "porque_nao_e_marketing": "responder paciente é trabalho de quem atende. Agência escrevendo resposta em nome da clínica é o caminho mais curto para uma resposta que o paciente percebe como automática.",
+      "metrica_de_validacao": "quantas seguem sem resposta na próxima coleta",
+      "recoletar_em_dias": 15
+     },
+     "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 5,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/portal/caixa_de_respostas.json",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": null,
+      "procedencia": "medido em 5 avaliações"
      }
     }
    ],
@@ -1290,5 +1704,5 @@
   }
  ],
  "de_marketing": 5,
- "de_operacao": 24
+ "de_operacao": 36
 }

@@ -5,8 +5,8 @@
     "unidade": "OrthoDontic · Av. Mal. Floriano Peixoto",
     "cidade": "PR · Curitiba",
     "endereco": "Av. Mal. Floriano Peixoto, 366 - Lj 1 Sobreloja - Centro, Curitiba - PR, 80010-130",
-    "desde": null,
-    "medicoes": null,
+    "desde": "12/ago",
+    "medicoes": 2,
     "posicao_na_cidade": null,
     "clinicas_na_cidade": null,
     "lojas_irmas": [
@@ -27,33 +27,38 @@
         "unidade": "OrthoDontic · Edifício Odin do Amaral - R. Mal. Deodoro"
       }
     ],
-    "frase": "OrthoDontic · Av. Mal. Floriano Peixoto fica em Centro, onde estão 74 clínicas mapeadas e divide Curitiba com mais 4 lojas da rede."
+    "frase": "OrthoDontic · Av. Mal. Floriano Peixoto é escutada desde 12/ago, em 2 medições e divide Curitiba com mais 4 lojas da rede."
   },
   "rotulo": "PR · Curitiba",
   "unidade": "OrthoDontic · Av. Mal. Floriano Peixoto",
   "cabecalho": {
     "nota": 4.7,
     "avaliacoes": 719,
-    "ritmo": 57.9,
-    "meses_seguidos": 2,
-    "posicao": 4,
-    "de": 19
+    "ritmo": 9.7,
+    "meses_seguidos": 22,
+    "posicao": 1,
+    "de": 4,
+    "amostra_lida": 719,
+    "amostra_dias": 2242,
+    "amostra_truncada": false,
+    "ritmo_comparavel": true,
+    "porque_fora_do_ranking": null
   },
-  "faixa": "amarela",
-  "urgencia": 35,
+  "faixa": "verde",
+  "urgencia": 15,
   "tarefa": {
     "status": "aberta",
-    "aberta_em": "2026-08-12",
-    "dias_aberta": 1,
-    "prazo_dias": 60,
-    "vence_em": "2026-10-11"
+    "aberta_em": "2026-08-13",
+    "dias_aberta": 0,
+    "prazo_dias": 30,
+    "vence_em": "2026-09-12"
   },
   "acao": {
-    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
-    "prazo": "60 dias",
-    "dono": "consultor de campo",
-    "custo": "verba de abertura",
-    "por_causa_de": "nao_engatou",
+    "o_que": "Entrar no leilão com as frases que a cidade digita — a lista está na praça",
+    "prazo": "30 dias",
+    "dono": "franqueado",
+    "custo": "verba de mídia",
+    "por_causa_de": "silencio",
     "confianca": {
       "natureza": "recomendacao",
       "confianca": "baixa",
@@ -63,7 +68,6 @@
       "medicoes": null,
       "fonte": "scripts/fila.py",
       "a_favor": [
-        "a primeira avaliação é de 2026-06-10, há 2 meses, e o ritmo medido é 57.9/mês — a unidade ainda não engatou",
         "85 anúncios no ar de 52 anunciantes, e nenhum é da rede"
       ],
       "contra": [],
@@ -73,13 +77,6 @@
   },
   "gatilhos": [
     {
-      "peso": 20,
-      "titulo": "Unidade nova que ainda não engatou",
-      "chave": "nao_engatou",
-      "fato": "a primeira avaliação é de 2026-06-10, há 2 meses, e o ritmo medido é 57.9/mês — a unidade ainda não engatou",
-      "fonte": "dados/serie/reviews.jsonl"
-    },
-    {
       "peso": 15,
       "titulo": "Silêncio publicitário com leilão cheio",
       "chave": "silencio",
@@ -88,10 +85,38 @@
     }
   ],
   "quem_avanca": null,
-  "o_que_mudou": null,
+  "o_que_mudou": {
+    "local_id": "ortho_cwb_centro_2",
+    "nome": "OrthoDontic",
+    "proprio": true,
+    "aparelho": true,
+    "de": "2026-08-12",
+    "ate": "2026-08-13",
+    "dias": 1,
+    "antes": 719,
+    "agora": 719,
+    "delta": 0,
+    "nota_antes": 4.7,
+    "nota_agora": 4.7,
+    "ritmo_do_periodo": 0.0,
+    "historico": {
+      "desde": "2026-08-12",
+      "ate": "2026-08-13",
+      "dias": 1,
+      "medicoes": 2,
+      "antes": 719,
+      "agora": 719,
+      "delta": 0,
+      "ritmo_do_periodo": 0.0,
+      "nota_antes": 4.7,
+      "nota_agora": 4.7
+    },
+    "eventos": [],
+    "aviso": "a praça é medida há 1 dia (2 medições) — a leitura ainda diz pouco e engorda a cada coleta"
+  },
   "sem_resposta": {
-    "abertas": 4,
-    "com_texto": 3,
+    "abertas": 31,
+    "com_texto": 27,
     "itens": [
       {
         "nota": 1,
@@ -116,42 +141,204 @@
         "data": "2026-06-12",
         "texto": null,
         "tem_texto": false
+      },
+      {
+        "nota": 1,
+        "data": "2026-06-09",
+        "texto": "Péssimo atendimento, de todas as partes inclusive do profissional. Duas semanas pra conseguir concluir um atendimento via Whatsapp e ainda não resolveram.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-05-27",
+        "texto": "“Segunda vez que minha esposa vem até a clínica e pedem para remarcar para outro dia com a doutora dela. Moramos longe e tivemos gasto de Uber, R$39 na ida e R$32 na volta, tudo isso sem conseguir atendimento. Falta mais organização e respeito com o paciente, porque ninguém sai de casa à toa ainda mais com bebê e compromissos.”",
+        "tem_texto": true
+      },
+      {
+        "nota": 3,
+        "data": "2026-05-21",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 1,
+        "data": "2026-05-07",
+        "texto": "Horrível, tem 7 meses que estou com aparelho deles , no dia da manutenção o cara não tem a capacidade de nem passar um jato de água para higienizar nosso dente , além  de  : de vez em quando cai um bracket ele reclama de cola reina\nNão recomendo pago 100 reais pra mês pra  apenas ser trocado o fio ainda reclama quando  cai bracket",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-05-07",
+        "texto": "Ruim demais, desde atendimento, ao financeiro até os dentistas, péssima qualidade de atendimento pelo dentista ela faz minha manutenção em 2 minutos não tem a capacidade de  verificar mordida profundidade, não vê nada , tem 1 ano 3 meses que estou indo e e sempre o mesmo procedimento\nTô quase abandonado e procurando outro lugar",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-05-04",
+        "texto": "Péssimo atendimento da recepção dessa unidade. Não entendem telefone, não respondem no whats, a recepcionista uma morena cabelo preto longo que usa óculos, não olha no olho do cliente para responder, sempre responde com tom de deboche e descaso, péssimo. Parece que está fazendo um favor ao tirar dúvidas dos clientes. Não sei pq colocam pessoa para captar na rua mais clientes se não tratam bem nem os que tem hoje. Só não mudei AINDA para a unidade de Pinhais que é mais perto de casa, por causa do ótimo atendimento, simpatia e profissionalismo da Dra Jéssica, que é uma excelente profissional... Pode ter certeza que se não fosse ela, já teria saído dessa unidade horrível de atendimento.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-04-15",
+        "texto": "Horrível o atendimento prestado! São super proativas antes de você fechar o contrato, depois é impossível a comunicação. Tentei remarcar a minha manutenção do apartamento 24 horas antes e não tive resposta de atendente. Vieram responder 24 horas depois e ainda não houve uma conversa, simplesmente estipularam uma data: dia 30/04. Disse que não poderia por conta do trabalho e não tive mais resposta. Falta de profissionalismo! Mando mensagem, porém não tenho mais resposta.\nNão indico esse serviço prestado.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-04-14",
+        "texto": "Infelizmente a recepção da clínica é péssima, recepcionista extremamente arrogantes, não respondem as perguntas pessoalmente e muito menos pelo WhatsApp,  os dentistas são ótimos com uma bagagem e conhecimento muito bom. Porém a recepção que é a primeira impressão do cliente é uma porcaria, diversas vezes deixei de realizar procedimentos com a clínica, mesmo sendo mais barato,  por conta do atendimento que recebi na recepção.",
+        "tem_texto": true
+      },
+      {
+        "nota": 2,
+        "data": "2026-03-10",
+        "texto": "O trabalho é bom, mas não atendem ligações e demora mil anos pra responder o whatsapp! Nós pagamos caro no plano pra isso?",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-03-06",
+        "texto": "Gerente extremamente grosseira, se eu estou pagando o mínimo é ser bem tratado, minha filha faz tratamento aí a muito tempo",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-02-10",
+        "texto": "Péssimo atendimento estou com duas faturas em aberto sendo que não existe a Maria Eduarda atendente pelo whatsapp se fazendo de desentendida.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-12-20",
+        "texto": "Atendimento ruim, é sempre um tempo absurdo de espera mesmo com horário agendado. Minha filha foi sozinha um dia e ficou mais de 1 hora aguardando. Ninguém sabe explicar direito sobre o tratamento. Uma dentista inclusive falou que estava aguardando um “milagre” para evolução no tratamento. Um arrependimento imenso de ter feito contrato.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-12-10",
+        "texto": "Uma porcaria de atendimento parece que estamos ali de graça não respondem o whats já é a segunda vez que tenho problema com atendentes segunda e última pois não vou mais, clínicas tem várias por aí por mim passaram fome mas não verão mais do meu dinheiro nunca atrasei uma pena por ter perdido uma dentista muito boa que é a dra Camila hoje fiz um barraco mas nada vai resolver em quanto tiver gente incompetente atendendo",
+        "tem_texto": true
+      },
+      {
+        "nota": 2,
+        "data": "2025-11-28",
+        "texto": "Minha filha está fazendo o tratamento nunca reclamou mais hoje uma situação ela não pode ir ontem na manutenção pois estava cuidando da vó q está doente ,pediu pra remarca para hoje marcaram para hoje e para dia 5/12 chegando lá a querida recepcionista falou q n tinha nenhuma consulta agendada ,minha filha mostrou o aplicativo q tinha sim ,não podia voltar outro dia ,gastou cm Uber,e tmb foi falado q ela n podia passar cm outra dentista não sendo a dela,pois bem deviam ver bem oq tão fazendo ,tenta acorda pra vida na hora de marca as coisas falta de atenção ,parece q n tem ninguém pra vê isso\nIrresponsabilidade",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-11-07",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 3,
+        "data": "2025-11-04",
+        "texto": "A empresa não é ruim. Só que demora muito para atender. Eles tem q se atendar na agenda pois acho que Marcão muitos pacientes para o mesmo horário. Tem. Um rapaz na recepção que, gosta de ficar flertando com as mulheres sozinhas que estão esperando atendimento, muito constrangedor, tirando isso a clínica é boa. Tem que Melhora a agilidade no atendimento clínico. Não na recepção.\nComo eu disse não agendar  pacientes para o mesmo horário. Fiquei 40 minutos esperando. Para um primeira fixação.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-10-27",
+        "texto": "Nunca atendem o telefone",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-09-22",
+        "texto": "Péssima a experiência que tive com a Orthodontic, é muito difícil a comunicação, elas não atendem o telefone sempre recusam a ligação e as mensagens fica por horas a gente fica a espera de alguém responder, muito estressante tenho 50 anos e tenho que passar por isso paguei mais de um ano e estou sendo muito mal tratada estou quase uma hora esperando alguém me responder e as minhas ligações não atende de propósito pura maldade",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-08-20",
+        "texto": "O atendimento é péssimo, as meninas que atendem, se é que são especializadas, ficam batendo papo, como se você não estivesse sendo atendida.\nFora o programa de descontos, que dizem que tem prazo pra acabar e todas as vezes que vou a clinica estão ofertando o mesmo plano pra alguém.\nColocam o aparelho e não explicam nada sobre o tratamento, mas asseguram que terá que usar por três anos. Mas são três anos para todos, basta conversar com outro \"paciente\" na sala de espera.\nGarantem uma limpeza antes da colocação e passam uma pasta nos dentes que caracterizam como limpeza.\nPedi pra colocar o aparelho transparente e me disseram que não era meu caso.\nFui em outros especialistas sérios que me disseram que posso usar o transparente e no máximo por um ano e meio.\nEles não cobram o aparelho porque ao término ganham mais de cinco mil reias nos três anos que é ofertado para todos.\nAcreditem ou não, até para efetuar o pagamento é difícil, mandam um código que o pix não lê, mas o  carnê de três anos está disponível na recepção.\nSem contar que a cada retorno querem te ofertar algo que tem custo.\nComo no meu caso, fiz o tratamento dentário necessário antes de colocar o aparelho, eles já queriam me empurrar para uma avaliação com o dentista da clínica.\nEnquanto colocam o aparelho chega a dar medo da pressa e da falta de cuidado, até que salivo  muito a moça reclamou.\nPorque provavelmente a salivação atrapalha o atendimento de péssima qualidade que prestam.\nSe  você quer um tratamento sério, este não é o lugar!\nDefinitivamente!\nPassei mal um dia levantando da cadeira, minha pressão baixou e fiquei tonta estavam em três e só me disseram pra ficar sentada, afinal de contas o bate papo rola solto, elas não tem tempo a perder.\nNão indico!\nUm lugar horrível!\nSabe Deus o que fariam com os meus dentes.\nElas mostram numa máquina 3D o resultado, quando sentei pra colocar o aparelho  a moça disse que não sabia se a mordida cruzada ia ter muito resultado.\nUma farsa este lugar!\nNão perca seu tempo, sua saúde bucal e usando aparelho por  três anos sem necessidade.\nE são no mínimo três anos para todos. E isto é bem enfatizado.\nAinda bem que em algumas consultas bem mal feitas, percebi a furada.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-07-09",
+        "texto": "Uma tremenda de uma porcaria, marquei com eles, perguntei antes de ir sobre a manutenção, chego lá pra ter a manutenção tenho que esperar mais de uma hora, sendo que falei que tenho uma mãe acamada e não conseguiria ficar mt tempo fora de casa",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-04-22",
+        "texto": "Estava marcado uma consulta à princípio para as 14h45. Mas como sempre, não respeitam agendamentos prévio. Não me chamaram, pq havia uma parcela em a ver. Então depois de 15 min, fui perguntar para a recepcionista, aí que ela me disse que não seríamos atendidos, pq havia uma parcela em atraso. Questionei pq não falou nada em minha chegada, qua havia a parcela em atraso. Aí que ela me disse que deveria pagar para ser atendido. Ainda foi sarcástica, olhou pra cima e bufou. Uma empresa que se diz tão grande, e, tem um atendimento péssimo desse, não merece estar no mercado. Isso o atendimento presencial, pq o whatsapp nunca respondem e telefone não atendem. Enfim, gostaria de estar aqui escrevendo coisas boas, mas infelizmente, as atitudes e atendimento ruim, fazem com que essa empresa não mereça elogios.",
+        "tem_texto": true
+      },
+      {
+        "nota": 3,
+        "data": "2025-03-12",
+        "texto": "Bom trabalho",
+        "tem_texto": true
+      },
+      {
+        "nota": 2,
+        "data": "2025-01-13",
+        "texto": "O atendimento presencial é otimo, mas o atendimento online é horrivel!\nNunca atendem o telefone sendo que o mesmo fica atrás das recepcionistas, no whatsapp a mesma coisa!",
+        "tem_texto": true
+      },
+      {
+        "nota": 3,
+        "data": "2024-12-19",
+        "texto": "Nunca consigo contato via telefone e whatsapp.",
+        "tem_texto": true
+      },
+      {
+        "nota": 3,
+        "data": "2024-12-05",
+        "texto": "O atendimento orthodontico é maravilhoso a Dr q nos atende e super atenciosa\nMas em relação a horário sempre deixa a desejar\nSempre nos atende com atraso de no mínimo 30 min, Isso acontece a 2 anos se eu chegar atrasada me cobram como atraso\nAbsurdo",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2024-03-15",
+        "texto": "Não consigo gerar o boleto no aplicativo, então, não consigo efetuar o pagamento, o que acarreta juros na minha parcela. O contato com eles é impossível, já que não respondem as mensagens de watss e não atendem ao telefone. Chega a ser desrespeitoso com os clientes. Quando iniciamos o tratamento, o atendimento era bom, a equipe atendia ao telefone.e respondia Watts, sem falar na Dra Érica, que é ótima no que faz. Talvez agora com essa avaliação, alguém responda meu watts de terça feira, dia12/03/24.",
+        "tem_texto": true
+      },
+      {
+        "nota": 2,
+        "data": "2022-05-28",
+        "texto": null,
+        "tem_texto": false
       }
     ],
-    "itens_total": 4
+    "itens_total": 31
   },
   "voz_do_paciente": [
     {
       "o_que_e": "Explica o que vai fazer, antes de fazer",
-      "pct": 2.9
+      "pct": 2.4
     },
     {
       "o_que_e": "Atende na hora marcada",
-      "pct": 1.9
+      "pct": 2.6
     },
     {
       "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
-      "pct": 0.0
+      "pct": 1.5
     },
     {
       "o_que_e": "Cuida de quem tem medo de dentista",
-      "pct": 1.0
+      "pct": 0.6
     },
     {
       "o_que_e": "Resolve no mesmo dia",
-      "pct": 0.0
+      "pct": 0.7
     },
     {
       "o_que_e": "Sabe atender criança",
-      "pct": 0.0
+      "pct": 3.1
     },
     {
       "o_que_e": "Continua presente depois que vendeu",
-      "pct": 1.9
+      "pct": 5.0
     },
     {
       "o_que_e": "Tem profissional que o paciente chama pelo nome",
-      "pct": 5.8
+      "pct": 12.4
     }
   ],
   "rival": {
@@ -162,44 +349,52 @@
     ],
     "vantagens_deles": [
       {
-        "eixo": "gente_com_nome",
-        "o_que_e": "Tem profissional que o paciente chama pelo nome",
-        "quem": "Julio Cavichiolo | Ortodontia | Estética | Implante Dentário | Dentista em Novo Mundo | Curitiba PR",
-        "eles": 29.4,
-        "nos": 5.8,
-        "razao": 5.1
-      },
-      {
-        "eixo": "pos_venda",
-        "o_que_e": "Continua presente depois que vendeu",
-        "quem": "Julio Cavichiolo | Ortodontia | Estética | Implante Dentário | Dentista em Novo Mundo | Curitiba PR",
-        "eles": 9.4,
-        "nos": 1.9,
-        "razao": 4.9
-      },
-      {
         "eixo": "acolhimento_do_medo",
         "o_que_e": "Cuida de quem tem medo de dentista",
         "quem": "IORC Instituto de Ortodontia de Curitiba",
         "eles": 4.5,
-        "nos": 1.0,
-        "razao": 4.7
+        "nos": 0.6,
+        "razao": 8.1
       },
       {
-        "eixo": "hora_marcada_e_hora",
-        "o_que_e": "Atende na hora marcada",
-        "quem": "IORC Instituto de Ortodontia de Curitiba",
-        "eles": 5.6,
-        "nos": 1.9,
-        "razao": 2.9
+        "eixo": "preco_claro",
+        "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
+        "quem": "Julio Cavichiolo | Ortodontia | Estética | Implante Dentário | Dentista em Novo Mundo | Curitiba PR",
+        "eles": 4.7,
+        "nos": 1.5,
+        "razao": 3.2
       },
       {
         "eixo": "explica_o_tratamento",
         "o_que_e": "Explica o que vai fazer, antes de fazer",
         "quem": "REDEORTO Curitiba - Centro",
         "eles": 6.1,
-        "nos": 2.9,
-        "razao": 2.1
+        "nos": 2.4,
+        "razao": 2.5
+      },
+      {
+        "eixo": "gente_com_nome",
+        "o_que_e": "Tem profissional que o paciente chama pelo nome",
+        "quem": "Julio Cavichiolo | Ortodontia | Estética | Implante Dentário | Dentista em Novo Mundo | Curitiba PR",
+        "eles": 29.4,
+        "nos": 12.4,
+        "razao": 2.4
+      },
+      {
+        "eixo": "hora_marcada_e_hora",
+        "o_que_e": "Atende na hora marcada",
+        "quem": "IORC Instituto de Ortodontia de Curitiba",
+        "eles": 5.6,
+        "nos": 2.6,
+        "razao": 2.2
+      },
+      {
+        "eixo": "pos_venda",
+        "o_que_e": "Continua presente depois que vendeu",
+        "quem": "Julio Cavichiolo | Ortodontia | Estética | Implante Dentário | Dentista em Novo Mundo | Curitiba PR",
+        "eles": 9.4,
+        "nos": 5.0,
+        "razao": 1.9
       }
     ],
     "fora": [
@@ -414,8 +609,8 @@
     "local_id": "ortho_cwb_centro_2",
     "unidade": "OrthoDontic · Av. Mal. Floriano Peixoto",
     "rotulo": "PR · Curitiba",
-    "com_texto": 104,
-    "sem_estagio": 72,
+    "com_texto": 540,
+    "sem_estagio": 354,
     "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
     "estagios": [
       {
@@ -424,13 +619,29 @@
         "o_que_e": "como me acharam",
         "quem_resolve": "marketing e ficha do Google",
         "medido": true,
-        "avaliacoes": 13,
-        "dor": 0,
-        "elogio": 13,
-        "pct_dor": 0,
+        "avaliacoes": 64,
+        "dor": 9,
+        "elogio": 55,
+        "pct_dor": 14,
         "amostra_curta": false,
-        "exemplos": [],
-        "frase": "13 avaliações falam deste momento, nenhuma com nota baixa",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2021-08-19",
+            "texto": "Não recomendo... fiz um comentário de mais de um ano de empresa e apagaram... errado isto... péssimo tratamento"
+          },
+          {
+            "nota": 1,
+            "data": "2024-04-09",
+            "texto": "Atendimento no WhatsApp horrível, meninas grossas e falam de qualquer maneira. Quando você fala que não pode em um dia, falam que não pode mais. Sempre atrasa o horário da consulta, mas se você atrasar paga multa. Não recomendo a ninguém."
+          },
+          {
+            "nota": 1,
+            "data": "2024-05-08",
+            "texto": "Atendimento seletivo, deixam você uma hora esperando pra atender os que chegam bem após o seu horário de chegada, clínica desorganizada e não tem ao menos um controle de ordem de chegada! Não recomendo!"
+          }
+        ],
+        "frase": "64 avaliações falam deste momento, 9 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -439,19 +650,29 @@
         "o_que_e": "telefone e WhatsApp",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 1,
-        "dor": 1,
-        "elogio": 0,
-        "pct_dor": 100,
-        "amostra_curta": true,
+        "avaliacoes": 32,
+        "dor": 28,
+        "elogio": 2,
+        "pct_dor": 88,
+        "amostra_curta": false,
         "exemplos": [
           {
             "nota": 1,
-            "data": "2026-06-29",
-            "texto": "O atendimento desse lugar é horroroso, NUNCA atendem o telefone, a pessoa que responde no whatsapp nossa senhora, não sabe conduzir um atendimento descentemente.\n\nNÃO VEJO A HORA DO MEU TRATAMENTO ACABAR PRA SAIR CORRENDO E NUNCA MAIS VOLTAR."
+            "data": "2024-02-01",
+            "texto": "Sou paciente e estou tentando cancelar esse serviço, mas ninguém atende nos números disponíveis ou respondem no WhatsApp. Antes de começar o tratamento era respondido na hora, agora só aparece online e ninguém responde."
+          },
+          {
+            "nota": 1,
+            "data": "2024-02-07",
+            "texto": "O atendimento pelo WhatsAPP é horrível, não existe comunicação com eles"
+          },
+          {
+            "nota": 1,
+            "data": "2024-03-11",
+            "texto": "Não geraram meu boleto, não consigo pagar a fatura, e se não pagar em dia cobram taxa, oq é um absurdo sendo q o erro é deles. Disponibilizam o número de telefone mas não atendem ou desligam na tua cara. Maior falta de respeito com os pacientes isso. Um total descaso!"
           }
         ],
-        "frase": "1 avaliação fala deste momento, 1 com nota baixa",
+        "frase": "32 avaliações falam deste momento, 28 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -459,15 +680,31 @@
         "rotulo": "Agendamento",
         "o_que_e": "marcar e remarcar",
         "quem_resolve": "recepção",
-        "medido": false,
-        "avaliacoes": 0,
-        "dor": 0,
-        "elogio": 0,
-        "pct_dor": null,
+        "medido": true,
+        "avaliacoes": 16,
+        "dor": 11,
+        "elogio": 2,
+        "pct_dor": 69,
         "amostra_curta": false,
-        "exemplos": [],
-        "frase": null,
-        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2023-06-10",
+            "texto": "Pessimo!\nPrecisa ficar esperando o Dr que atende a gente estar disponível, se ele não estiver nenhum outro pode atender! E quando vc é agendado com outro te deixam 1 hora esperando e passam todos os atendimentos desse Dr na sua frente! Pessimo demais!"
+          },
+          {
+            "nota": 1,
+            "data": "2024-04-09",
+            "texto": "Atendimento no WhatsApp horrível, meninas grossas e falam de qualquer maneira. Quando você fala que não pode em um dia, falam que não pode mais. Sempre atrasa o horário da consulta, mas se você atrasar paga multa. Não recomendo a ninguém."
+          },
+          {
+            "nota": 1,
+            "data": "2024-05-08",
+            "texto": "Atendimento seletivo, deixam você uma hora esperando pra atender os que chegam bem após o seu horário de chegada, clínica desorganizada e não tem ao menos um controle de ordem de chegada! Não recomendo!"
+          }
+        ],
+        "frase": "16 avaliações falam deste momento, 11 com notas baixas",
+        "porque_vazio": null
       },
       {
         "estagio": "recepcao",
@@ -475,19 +712,29 @@
         "o_que_e": "chegar e esperar",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 4,
-        "dor": 1,
-        "elogio": 3,
-        "pct_dor": 25,
-        "amostra_curta": true,
+        "avaliacoes": 44,
+        "dor": 16,
+        "elogio": 26,
+        "pct_dor": 36,
+        "amostra_curta": false,
         "exemplos": [
           {
+            "nota": 2,
+            "data": "2025-01-13",
+            "texto": "O atendimento presencial é otimo, mas o atendimento online é horrivel!\nNunca atendem o telefone sendo que o mesmo fica atrás das recepcionistas, no whatsapp a mesma coisa!"
+          },
+          {
             "nota": 1,
-            "data": "2026-06-12",
-            "texto": "Péssimo atendimento da recepção dessa unidade. os valores mt alto td uma enrolação."
+            "data": "2025-12-20",
+            "texto": "Atendimento ruim, é sempre um tempo absurdo de espera mesmo com horário agendado. Minha filha foi sozinha um dia e ficou mais de 1 hora aguardando. Ninguém sabe explicar direito sobre o tratamento. Uma dentista inclusive falou que estava aguardando um “milagre” para evolução no tratamento. Um arrependimento imenso de ter feito contrato."
+          },
+          {
+            "nota": 1,
+            "data": "2026-02-10",
+            "texto": "Péssimo atendimento estou com duas faturas em aberto sendo que não existe a Maria Eduarda atendente pelo whatsapp se fazendo de desentendida."
           }
         ],
-        "frase": "4 avaliações falam deste momento, 1 com nota baixa",
+        "frase": "44 avaliações falam deste momento, 16 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -496,13 +743,13 @@
         "o_que_e": "a primeira consulta",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 7,
-        "dor": 0,
-        "elogio": 7,
-        "pct_dor": 0,
-        "amostra_curta": true,
+        "avaliacoes": 24,
+        "dor": 3,
+        "elogio": 21,
+        "pct_dor": 12,
+        "amostra_curta": false,
         "exemplos": [],
-        "frase": "7 avaliações falam deste momento, nenhuma com nota baixa",
+        "frase": "24 avaliações falam deste momento, 3 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -511,19 +758,29 @@
         "o_que_e": "preço, contrato e entrada",
         "quem_resolve": "franqueado",
         "medido": true,
-        "avaliacoes": 1,
-        "dor": 1,
-        "elogio": 0,
-        "pct_dor": 100,
-        "amostra_curta": true,
+        "avaliacoes": 20,
+        "dor": 13,
+        "elogio": 7,
+        "pct_dor": 65,
+        "amostra_curta": false,
         "exemplos": [
           {
             "nota": 1,
-            "data": "2026-06-12",
-            "texto": "Péssimo atendimento da recepção dessa unidade. os valores mt alto td uma enrolação."
+            "data": "2025-01-14",
+            "texto": "O atendimento telefônico é péssimo, no WhatsApp também, nunca consigo atendimento quando preciso falar. Sempre atrasam nos horários, e tudo extremamente ruim, já troquei tanto de dentista e cada uma falava alguma coisa sobre meu tratamento. E o pior pra cancelar o contrato a multa é extremamente abusiva."
+          },
+          {
+            "nota": 1,
+            "data": "2025-12-20",
+            "texto": "Atendimento ruim, é sempre um tempo absurdo de espera mesmo com horário agendado. Minha filha foi sozinha um dia e ficou mais de 1 hora aguardando. Ninguém sabe explicar direito sobre o tratamento. Uma dentista inclusive falou que estava aguardando um “milagre” para evolução no tratamento. Um arrependimento imenso de ter feito contrato."
+          },
+          {
+            "nota": 2,
+            "data": "2026-03-10",
+            "texto": "O trabalho é bom, mas não atendem ligações e demora mil anos pra responder o whatsapp! Nós pagamos caro no plano pra isso?"
           }
         ],
-        "frase": "1 avaliação fala deste momento, 1 com nota baixa",
+        "frase": "20 avaliações falam deste momento, 13 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -532,13 +789,29 @@
         "o_que_e": "a cadeira",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 7,
-        "dor": 0,
-        "elogio": 7,
-        "pct_dor": 0,
-        "amostra_curta": true,
-        "exemplos": [],
-        "frase": "7 avaliações falam deste momento, nenhuma com nota baixa",
+        "avaliacoes": 64,
+        "dor": 20,
+        "elogio": 44,
+        "pct_dor": 31,
+        "amostra_curta": false,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2025-01-14",
+            "texto": "O atendimento telefônico é péssimo, no WhatsApp também, nunca consigo atendimento quando preciso falar. Sempre atrasam nos horários, e tudo extremamente ruim, já troquei tanto de dentista e cada uma falava alguma coisa sobre meu tratamento. E o pior pra cancelar o contrato a multa é extremamente abusiva."
+          },
+          {
+            "nota": 1,
+            "data": "2025-03-09",
+            "texto": "Minha experiencia foi horrível, uma dentista mão bruta, fiquei com aboca dolorida no primeiro atendimento. Sem nenhum cuidado com paciente, se avental me molhando toda em um dia de chuva, se acessórios necessários funcionando para o atedimento e ainda me culpou de usar a cuba que estava sem funcionar. Boa lábia isso sim pra te convencer. Nunca mais volto lá, aff... Uma estrela por obrigação."
+          },
+          {
+            "nota": 1,
+            "data": "2025-12-20",
+            "texto": "Atendimento ruim, é sempre um tempo absurdo de espera mesmo com horário agendado. Minha filha foi sozinha um dia e ficou mais de 1 hora aguardando. Ninguém sabe explicar direito sobre o tratamento. Uma dentista inclusive falou que estava aguardando um “milagre” para evolução no tratamento. Um arrependimento imenso de ter feito contrato."
+          }
+        ],
+        "frase": "64 avaliações falam deste momento, 20 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -547,13 +820,29 @@
         "o_que_e": "as voltas de cada mês",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 1,
-        "dor": 0,
-        "elogio": 1,
-        "pct_dor": 0,
-        "amostra_curta": true,
-        "exemplos": [],
-        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "avaliacoes": 17,
+        "dor": 10,
+        "elogio": 6,
+        "pct_dor": 59,
+        "amostra_curta": false,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2025-07-09",
+            "texto": "Uma tremenda de uma porcaria, marquei com eles, perguntei antes de ir sobre a manutenção, chego lá pra ter a manutenção tenho que esperar mais de uma hora, sendo que falei que tenho uma mãe acamada e não conseguiria ficar mt tempo fora de casa"
+          },
+          {
+            "nota": 1,
+            "data": "2026-05-07",
+            "texto": "Horrível, tem 7 meses que estou com aparelho deles , no dia da manutenção o cara não tem a capacidade de nem passar um jato de água para higienizar nosso dente , além  de  : de vez em quando cai um bracket ele reclama de cola reina\nNão recomendo pago 100 reais pra mês pra  apenas ser trocado o fio ainda reclama quando  cai bracket"
+          },
+          {
+            "nota": 1,
+            "data": "2026-05-07",
+            "texto": "Ruim demais, desde atendimento, ao financeiro até os dentistas, péssima qualidade de atendimento pelo dentista ela faz minha manutenção em 2 minutos não tem a capacidade de  verificar mordida profundidade, não vê nada , tem 1 ano 3 meses que estou indo e e sempre o mesmo procedimento\nTô quase abandonado e procurando outro lugar"
+          }
+        ],
+        "frase": "17 avaliações falam deste momento, 10 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -561,15 +850,31 @@
         "rotulo": "Cobrança",
         "o_que_e": "mensalidade e multa",
         "quem_resolve": "franqueado",
-        "medido": false,
-        "avaliacoes": 0,
-        "dor": 0,
+        "medido": true,
+        "avaliacoes": 13,
+        "dor": 13,
         "elogio": 0,
-        "pct_dor": null,
+        "pct_dor": 100,
         "amostra_curta": false,
-        "exemplos": [],
-        "frase": null,
-        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2024-03-11",
+            "texto": "Não geraram meu boleto, não consigo pagar a fatura, e se não pagar em dia cobram taxa, oq é um absurdo sendo q o erro é deles. Disponibilizam o número de telefone mas não atendem ou desligam na tua cara. Maior falta de respeito com os pacientes isso. Um total descaso!"
+          },
+          {
+            "nota": 1,
+            "data": "2024-04-09",
+            "texto": "Atendimento no WhatsApp horrível, meninas grossas e falam de qualquer maneira. Quando você fala que não pode em um dia, falam que não pode mais. Sempre atrasa o horário da consulta, mas se você atrasar paga multa. Não recomendo a ninguém."
+          },
+          {
+            "nota": 1,
+            "data": "2025-01-14",
+            "texto": "O atendimento telefônico é péssimo, no WhatsApp também, nunca consigo atendimento quando preciso falar. Sempre atrasam nos horários, e tudo extremamente ruim, já troquei tanto de dentista e cada uma falava alguma coisa sobre meu tratamento. E o pior pra cancelar o contrato a multa é extremamente abusiva."
+          }
+        ],
+        "frase": "13 avaliações falam deste momento, 13 com notas baixas",
+        "porque_vazio": null
       },
       {
         "estagio": "suporte",
@@ -577,13 +882,29 @@
         "o_que_e": "quando algo dá errado",
         "quem_resolve": "franqueado",
         "medido": true,
-        "avaliacoes": 1,
-        "dor": 0,
-        "elogio": 1,
-        "pct_dor": 0,
-        "amostra_curta": true,
-        "exemplos": [],
-        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "avaliacoes": 11,
+        "dor": 9,
+        "elogio": 2,
+        "pct_dor": 82,
+        "amostra_curta": false,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2023-03-08",
+            "texto": "O atendimento é péssimo dos responsáveis da clínica se você tiver um problema eles não respondem e não resolvem"
+          },
+          {
+            "nota": 1,
+            "data": "2026-05-07",
+            "texto": "Horrível, tem 7 meses que estou com aparelho deles , no dia da manutenção o cara não tem a capacidade de nem passar um jato de água para higienizar nosso dente , além  de  : de vez em quando cai um bracket ele reclama de cola reina\nNão recomendo pago 100 reais pra mês pra  apenas ser trocado o fio ainda reclama quando  cai bracket"
+          },
+          {
+            "nota": 1,
+            "data": "2026-06-09",
+            "texto": "Péssimo atendimento, de todas as partes inclusive do profissional. Duas semanas pra conseguir concluir um atendimento via Whatsapp e ainda não resolveram."
+          }
+        ],
+        "frase": "11 avaliações falam deste momento, 9 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -591,32 +912,32 @@
         "rotulo": "Fim e contenção",
         "o_que_e": "alta e depois dela",
         "quem_resolve": "clínica",
-        "medido": false,
-        "avaliacoes": 0,
-        "dor": 0,
-        "elogio": 0,
-        "pct_dor": null,
-        "amostra_curta": false,
+        "medido": true,
+        "avaliacoes": 3,
+        "dor": 1,
+        "elogio": 2,
+        "pct_dor": 33,
+        "amostra_curta": true,
         "exemplos": [],
-        "frase": null,
-        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+        "frase": "3 avaliações falam deste momento, 1 com nota baixa",
+        "porque_vazio": null
       }
     ],
-    "manchete": "Nenhum momento da jornada concentra dor com amostra suficiente para virar manchete.",
-    "quem_resolve": null,
-    "e_clinico": null,
+    "manchete": "A dor pública desta unidade aparece em contato — 28 avaliações de 1 ou 2 estrelas de 32 que falam desse momento.",
+    "quem_resolve": "recepção",
+    "e_clinico": false,
     "confianca": {
       "natureza": "fato",
-      "confianca": "media",
+      "confianca": "alta",
       "medido": true,
-      "amostra": 104,
-      "janela_dias": null,
-      "medicoes": null,
+      "amostra": 540,
+      "janela_dias": 1,
+      "medicoes": 2,
       "fonte": "dados/serie/reviews.jsonl",
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": "mais avaliações com texto nesta loja",
-      "procedencia": "medido em 104 avaliações"
+      "procedencia": "medido em 540 avaliações, 2 medições, 1 dia de janela"
     }
   },
   "meu_territorio": {
@@ -700,7 +1021,75 @@
       "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
     }
   },
-  "execucao": null,
+  "execucao": {
+    "local_id": "ortho_cwb_centro_2",
+    "praca_id": "curitiba",
+    "rotulo": "PR · Curitiba",
+    "unidade": "OrthoDontic · Av. Mal. Floriano Peixoto",
+    "itens": [
+      {
+        "problema": "A dor pública desta unidade aparece em contato — 28 avaliações de 1 ou 2 estrelas de 32 que falam desse momento.",
+        "e_marketing": false,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "operacao",
+          "especialidade": "a própria unidade",
+          "porque_nao_e_marketing": "a dor pública está em telefone e WhatsApp sem resposta. Campanha não conserta isso — mais mídia sobre um gargalo de balcão só aumenta o número de pessoas irritadas.",
+          "quem_resolve": "recepção",
+          "metrica_de_validacao": "as mesmas avaliações, reclassificadas na próxima coleta",
+          "recoletar_em_dias": 30
+        },
+        "evidencias": [
+          "64 avaliações falam deste momento, 9 com notas baixas",
+          "32 avaliações falam deste momento, 28 com notas baixas",
+          "16 avaliações falam deste momento, 11 com notas baixas"
+        ],
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": null,
+          "janela_dias": null,
+          "medicoes": null,
+          "fonte": "dados/portal/jornada.json",
+          "a_favor": [
+            "A dor pública desta unidade aparece em contato — 28 avaliações de 1 ou 2 estrelas de 32 que falam desse momento."
+          ],
+          "contra": [],
+          "o_que_aumentaria": "a próxima medição da jornada",
+          "procedencia": "sem amostra declarada"
+        }
+      },
+      {
+        "problema": "31 avaliações negativas abertas sem resposta",
+        "e_marketing": false,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "reputacao",
+          "especialidade": "a própria unidade",
+          "porque_nao_e_marketing": "responder paciente é trabalho de quem atende. Agência escrevendo resposta em nome da clínica é o caminho mais curto para uma resposta que o paciente percebe como automática.",
+          "metrica_de_validacao": "quantas seguem sem resposta na próxima coleta",
+          "recoletar_em_dias": 15
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 31,
+          "janela_dias": null,
+          "medicoes": null,
+          "fonte": "dados/portal/caixa_de_respostas.json",
+          "a_favor": [],
+          "contra": [],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 31 avaliações"
+        }
+      }
+    ],
+    "de_marketing": 0,
+    "de_operacao": 2,
+    "descartados": 0
+  },
   "meu_bairro": {
     "bairro": "Centro",
     "clinicas": 74,
@@ -1355,6 +1744,27 @@
       "tipo": "avaliacao_negativa",
       "quem": "paciente",
       "texto": "avaliação de 1★ · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "data": "2026-06-09",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 1★: “Péssimo atendimento, de todas as partes inclusive do profissional. Duas semanas pra conseg…” · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "data": "2026-05-27",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 1★: ““Segunda vez que minha esposa vem até a clínica e pedem para remarcar para outro dia com a…” · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "data": "2026-05-21",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 3★ · SEM RESPOSTA",
       "fonte": "dados/serie/reviews.jsonl"
     }
   ]

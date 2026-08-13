@@ -164,9 +164,9 @@
    "praca_id": "caxias_do_sul",
    "rotulo": "RS · Caxias do Sul",
    "tipo": "rede",
-   "feitas": 24,
+   "feitas": 23,
    "de": 24,
-   "completa": true,
+   "completa": false,
    "etapas": [
     {
      "etapa": 0,
@@ -228,9 +228,9 @@
      "etapa": 6.5,
      "nome": "A voz da própria unidade",
      "quem": "auto",
-     "ok": true,
-     "estado": "3 unidades lidas até o fim · 331 avaliações próprias",
-     "comando": null
+     "ok": false,
+     "estado": "2 unidades lidas pela metade — 294 avaliações nunca lidas (OrthoDontic · R. Pinheiro Machado: 120 de 362; OrthoDontic · Av. Júlio de Castilhos: 120 de 172)",
+     "comando": "python3 coleta/coletores/google_reviews.py --praca caxias_do_sul --max-reviews 1200   (o padrão de 120 trunca a loja grande)"
     },
     {
      "etapa": 7,
@@ -811,7 +811,7 @@
      "nome": "Escutar a cidade",
      "quem": "auto",
      "ok": true,
-     "estado": "15801 vozes (mínimo 1000) — 1750 avaliações com texto, 547 posts",
+     "estado": "16623 vozes (mínimo 1000) — 2572 avaliações com texto, 547 posts",
      "comando": null
     },
     {
@@ -827,7 +827,7 @@
      "nome": "Ritmo e meses seguidos",
      "quem": "auto",
      "ok": true,
-     "estado": "2287 avaliações lidas (mínimo 800)",
+     "estado": "3413 avaliações lidas (mínimo 800)",
      "comando": null
     },
     {
@@ -835,7 +835,7 @@
      "nome": "A voz da própria unidade",
      "quem": "auto",
      "ok": false,
-     "estado": "4 unidades lidas pela metade — 2012 avaliações nunca lidas (OrthoDontic · R. XV de Novembro: 120 de 1012; OrthoDontic · Av. Mal. Floriano Peixoto: 120 de 719; OrthoDontic · Galeria Tijucas - Av. Luiz Xavier: 120 de 491)",
+     "estado": "1 unidade lida pela metade — 892 avaliações nunca lidas (OrthoDontic · R. XV de Novembro: 120 de 1012)",
      "comando": "python3 coleta/coletores/google_reviews.py --praca curitiba --max-reviews 1200   (o padrão de 120 trunca a loja grande)"
     },
     {
@@ -843,7 +843,7 @@
      "nome": "A unidade por dentro",
      "quem": "auto",
      "ok": true,
-     "estado": "600 avaliações da unidade · 87 anúncios da praça",
+     "estado": "1726 avaliações da unidade · 87 anúncios da praça",
      "comando": null
     },
     {
@@ -939,7 +939,7 @@
      "nome": "A jornada do paciente",
      "quem": "auto",
      "ok": true,
-     "estado": "5 lojas · nenhuma com dor concentrada",
+     "estado": "5 lojas · 1 com dor concentrada",
      "comando": null
     },
     {
@@ -963,7 +963,7 @@
      "nome": "O ciclo da ação",
      "quem": "auto",
      "ok": true,
-     "estado": "11 arcos no livro · nenhum com 21 dias ainda",
+     "estado": "12 arcos no livro · nenhum com 21 dias ainda",
      "comando": null
     }
    ]
@@ -1215,7 +1215,7 @@
      "nome": "Escutar a cidade",
      "quem": "auto",
      "ok": true,
-     "estado": "1415 vozes (mínimo 1000) — 1415 avaliações com texto, 0 posts",
+     "estado": "5684 vozes (mínimo 1000) — 5684 avaliações com texto, 0 posts",
      "comando": null
     },
     {
@@ -1231,7 +1231,7 @@
      "nome": "Ritmo e meses seguidos",
      "quem": "auto",
      "ok": true,
-     "estado": "2040 avaliações lidas (mínimo 800)",
+     "estado": "8583 avaliações lidas (mínimo 800)",
      "comando": null
     },
     {
@@ -1239,7 +1239,7 @@
      "nome": "A voz da própria unidade",
      "quem": "auto",
      "ok": false,
-     "estado": "3 unidades lidas pela metade — 485 avaliações nunca lidas (OrthoDontic · Rua Sete de Setembro: 120 de 310; OrthoDontic · R. Deodoro: 120 de 268; OrthoDontic · Ingleses do Rio Vermelho: 120 de 267)",
+     "estado": "1 unidade lida pela metade — 190 avaliações nunca lidas (OrthoDontic · Rua Sete de Setembro: 120 de 310)",
      "comando": "python3 coleta/coletores/google_reviews.py --praca florianopolis --max-reviews 1200   (o padrão de 120 trunca a loja grande)"
     },
     {
@@ -1247,7 +1247,7 @@
      "nome": "A unidade por dentro",
      "quem": "auto",
      "ok": true,
-     "estado": "360 avaliações da unidade · 116 anúncios da praça",
+     "estado": "655 avaliações da unidade · 116 anúncios da praça",
      "comando": null
     },
     {
@@ -1367,7 +1367,7 @@
      "nome": "O ciclo da ação",
      "quem": "auto",
      "ok": true,
-     "estado": "5 arcos no livro · nenhum com 21 dias ainda",
+     "estado": "8 arcos no livro · nenhum com 21 dias ainda",
      "comando": null
     }
    ]
@@ -1417,7 +1417,7 @@
      "nome": "Escutar a cidade",
      "quem": "auto",
      "ok": true,
-     "estado": "26381 vozes (mínimo 1000) — 1757 avaliações com texto, 555 posts",
+     "estado": "26533 vozes (mínimo 1000) — 1909 avaliações com texto, 555 posts",
      "comando": null
     },
     {
@@ -1433,7 +1433,7 @@
      "nome": "Ritmo e meses seguidos",
      "quem": "auto",
      "ok": true,
-     "estado": "2163 avaliações lidas (mínimo 800)",
+     "estado": "2343 avaliações lidas (mínimo 800)",
      "comando": null
     },
     {
@@ -1441,7 +1441,7 @@
      "nome": "A voz da própria unidade",
      "quem": "auto",
      "ok": false,
-     "estado": "2 unidades lidas pela metade — 298 avaliações nunca lidas (OrthoDontic · St. Oeste: 120 de 270; OrthoDontic · St. Central: 120 de 268)",
+     "estado": "1 unidade lida pela metade — 150 avaliações nunca lidas (OrthoDontic · St. Oeste: 120 de 270)",
      "comando": "python3 coleta/coletores/google_reviews.py --praca goiania --max-reviews 1200   (o padrão de 120 trunca a loja grande)"
     },
     {
@@ -1449,7 +1449,7 @@
      "nome": "A unidade por dentro",
      "quem": "auto",
      "ok": true,
-     "estado": "480 avaliações da unidade · 109 anúncios da praça",
+     "estado": "660 avaliações da unidade · 109 anúncios da praça",
      "comando": null
     },
     {
@@ -1716,9 +1716,9 @@
    "praca_id": "joinville",
    "rotulo": "SC · Joinville",
    "tipo": "rede",
-   "feitas": 23,
+   "feitas": 24,
    "de": 24,
-   "completa": false,
+   "completa": true,
    "etapas": [
     {
      "etapa": 0,
@@ -1757,7 +1757,7 @@
      "nome": "Escutar a cidade",
      "quem": "auto",
      "ok": true,
-     "estado": "53194 vozes (mínimo 1000) — 1562 avaliações com texto, 530 posts",
+     "estado": "56262 vozes (mínimo 1000) — 4630 avaliações com texto, 530 posts",
      "comando": null
     },
     {
@@ -1773,23 +1773,23 @@
      "nome": "Ritmo e meses seguidos",
      "quem": "auto",
      "ok": true,
-     "estado": "2042 avaliações lidas (mínimo 800)",
+     "estado": "6524 avaliações lidas (mínimo 800)",
      "comando": null
     },
     {
      "etapa": 6.5,
      "nome": "A voz da própria unidade",
      "quem": "auto",
-     "ok": false,
-     "estado": "2 unidades lidas pela metade — 650 avaliações nunca lidas (OrthoDontic · Centro: 120 de 513; OrthoDontic · América: 120 de 377)",
-     "comando": "python3 coleta/coletores/google_reviews.py --praca joinville --max-reviews 1200   (o padrão de 120 trunca a loja grande)"
+     "ok": true,
+     "estado": "3 unidades lidas até o fim · 1059 avaliações próprias",
+     "comando": null
     },
     {
      "etapa": 7,
      "nome": "A unidade por dentro",
      "quem": "auto",
      "ok": true,
-     "estado": "360 avaliações da unidade · 102 anúncios da praça",
+     "estado": "1059 avaliações da unidade · 102 anúncios da praça",
      "comando": null
     },
     {
@@ -1885,7 +1885,7 @@
      "nome": "A jornada do paciente",
      "quem": "auto",
      "ok": true,
-     "estado": "3 lojas · nenhuma com dor concentrada",
+     "estado": "3 lojas · 2 com dor concentrada",
      "comando": null
     },
     {
@@ -1909,7 +1909,7 @@
      "nome": "O ciclo da ação",
      "quem": "auto",
      "ok": true,
-     "estado": "6 arcos no livro · nenhum com 21 dias ainda",
+     "estado": "10 arcos no livro · nenhum com 21 dias ainda",
      "comando": null
     }
    ]
@@ -3076,9 +3076,9 @@
    "praca_id": "porto_alegre",
    "rotulo": "RS · Porto Alegre",
    "tipo": "rede",
-   "feitas": 23,
+   "feitas": 24,
    "de": 24,
-   "completa": false,
+   "completa": true,
    "etapas": [
     {
      "etapa": 0,
@@ -3117,7 +3117,7 @@
      "nome": "Escutar a cidade",
      "quem": "auto",
      "ok": true,
-     "estado": "11635 vozes (mínimo 1000) — 1733 avaliações com texto, 326 posts",
+     "estado": "15953 vozes (mínimo 1000) — 6051 avaliações com texto, 326 posts",
      "comando": null
     },
     {
@@ -3133,23 +3133,23 @@
      "nome": "Ritmo e meses seguidos",
      "quem": "auto",
      "ok": true,
-     "estado": "2433 avaliações lidas (mínimo 800)",
+     "estado": "8798 avaliações lidas (mínimo 800)",
      "comando": null
     },
     {
      "etapa": 6.5,
      "nome": "A voz da própria unidade",
      "quem": "auto",
-     "ok": false,
-     "estado": "5 unidades lidas pela metade — 670 avaliações nunca lidas (OrthoDontic · Av. Borges de Medeiros: 120 de 433; OrthoDontic · Cristo Redentor: 120 de 245; OrthoDontic · R. Vig. José Inácio: 120 de 209)",
-     "comando": "python3 coleta/coletores/google_reviews.py --praca porto_alegre --max-reviews 1200   (o padrão de 120 trunca a loja grande)"
+     "ok": true,
+     "estado": "7 unidades lidas até o fim · 1465 avaliações próprias",
+     "comando": null
     },
     {
      "etapa": 7,
      "nome": "A unidade por dentro",
      "quem": "auto",
      "ok": true,
-     "estado": "752 avaliações da unidade · 160 anúncios da praça",
+     "estado": "1465 avaliações da unidade · 160 anúncios da praça",
      "comando": null
     },
     {
@@ -3245,7 +3245,7 @@
      "nome": "A jornada do paciente",
      "quem": "auto",
      "ok": true,
-     "estado": "7 lojas · nenhuma com dor concentrada",
+     "estado": "7 lojas · 4 com dor concentrada",
      "comando": null
     },
     {
@@ -3269,7 +3269,7 @@
      "nome": "O ciclo da ação",
      "quem": "auto",
      "ok": true,
-     "estado": "7 arcos no livro · nenhum com 21 dias ainda",
+     "estado": "18 arcos no livro · nenhum com 21 dias ainda",
      "comando": null
     }
    ]
@@ -3618,9 +3618,9 @@
    "praca_id": "rio_de_janeiro",
    "rotulo": "RJ · Rio de Janeiro",
    "tipo": "rede",
-   "feitas": 24,
+   "feitas": 23,
    "de": 24,
-   "completa": true,
+   "completa": false,
    "etapas": [
     {
      "etapa": 0,
@@ -3682,9 +3682,9 @@
      "etapa": 6.5,
      "nome": "A voz da própria unidade",
      "quem": "auto",
-     "ok": true,
-     "estado": "1 unidade lida até o fim · 120 avaliações próprias",
-     "comando": null
+     "ok": false,
+     "estado": "1 unidade lida pela metade — 188 avaliações nunca lidas (OrthoDontic: 120 de 308)",
+     "comando": "python3 coleta/coletores/google_reviews.py --praca rio_de_janeiro --max-reviews 1200   (o padrão de 120 trunca a loja grande)"
     },
     {
      "etapa": 7,

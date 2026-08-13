@@ -26,26 +26,31 @@
   "cabecalho": {
     "nota": 5,
     "avaliacoes": 268,
-    "ritmo": 24.0,
+    "ritmo": 7.8,
     "meses_seguidos": 1,
-    "posicao": 7,
-    "de": 17
+    "posicao": 5,
+    "de": 10,
+    "amostra_lida": 268,
+    "amostra_dias": 1051,
+    "amostra_truncada": false,
+    "ritmo_comparavel": true,
+    "porque_fora_do_ranking": null
   },
-  "faixa": "verde",
-  "urgencia": 20,
+  "faixa": "amarela",
+  "urgencia": 30,
   "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
     "dias_aberta": 0,
-    "prazo_dias": 60,
-    "vence_em": "2026-10-12"
+    "prazo_dias": 14,
+    "vence_em": "2026-08-27"
   },
   "acao": {
-    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
-    "prazo": "60 dias",
-    "dono": "consultor de campo",
-    "custo": "verba de abertura",
-    "por_causa_de": "nao_engatou",
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada",
     "confianca": {
       "natureza": "recomendacao",
       "confianca": "baixa",
@@ -55,7 +60,7 @@
       "medicoes": null,
       "fonte": "scripts/fila.py",
       "a_favor": [
-        "a primeira avaliação é de 2026-03-13, há 5 meses, e o ritmo medido é 24.0/mês — a unidade ainda não engatou"
+        "apenas 1 mês seguido com movimento acima do típico da própria unidade; o ritmo medido é 7.8 avaliações/mês"
       ],
       "contra": [],
       "o_que_aumentaria": "o resultado medido na coleta seguinte (dados/serie/acoes.jsonl)",
@@ -64,10 +69,10 @@
   },
   "gatilhos": [
     {
-      "peso": 20,
-      "titulo": "Unidade nova que ainda não engatou",
-      "chave": "nao_engatou",
-      "fato": "a primeira avaliação é de 2026-03-13, há 5 meses, e o ritmo medido é 24.0/mês — a unidade ainda não engatou",
+      "peso": 30,
+      "titulo": "O contador de avaliações parou",
+      "chave": "parada",
+      "fato": "apenas 1 mês seguido com movimento acima do típico da própria unidade; o ritmo medido é 7.8 avaliações/mês",
       "fonte": "dados/serie/reviews.jsonl"
     }
   ],
@@ -90,11 +95,6 @@
         "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 64 avaliações citam aparelho"
       },
       {
-        "nome": "Oral Unic Implantes Florianópolis",
-        "fora": true,
-        "por_que_fora": "a voz do cliente é de implante: só 0 de 60 avaliações citam aparelho"
-      },
-      {
         "nome": "Sorriso Floripa Clínicas Odontológicas",
         "fora": true,
         "por_que_fora": "a voz do cliente é de implante: só 0 de 114 avaliações citam aparelho"
@@ -115,9 +115,14 @@
         "por_que_fora": "zona cinzenta: 5 de 110 avaliações citam aparelho (5%) — faz aparelho, mas não é o negócio principal"
       },
       {
-        "nome": "Odontoquality",
+        "nome": "Sorrifácil Ingleses | Implantes Dentários, Prótese Protocolo e Reabilitação Oral",
         "fora": true,
-        "por_que_fora": "a voz do cliente é de odontologia geral: só 2 de 81 avaliações citam aparelho"
+        "por_que_fora": "a voz do cliente é de implante: só 2 de 86 avaliações citam aparelho"
+      },
+      {
+        "nome": "Oral Unic Implantes Florianópolis",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 60 avaliações citam aparelho"
       },
       {
         "nome": "Innove Odonto Floripa",
@@ -125,19 +130,14 @@
         "por_que_fora": "zona cinzenta: 2 de 78 avaliações citam aparelho (3%) — faz aparelho, mas não é o negócio principal"
       },
       {
-        "nome": "✅POPdents Felipe Schmidt",
-        "fora": true,
-        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 68 avaliações citam aparelho"
-      },
-      {
-        "nome": "Confidents Clínica Odontológica",
-        "fora": true,
-        "por_que_fora": "zona cinzenta: 3 de 83 avaliações citam aparelho (4%) — faz aparelho, mas não é o negócio principal"
-      },
-      {
         "nome": "Dr. Diego Aguiar - Vivera Orofacial Avançada - Estética Bioregenerativa",
         "fora": true,
         "por_que_fora": "zona cinzenta: 2 de 79 avaliações citam aparelho (3%) — faz aparelho, mas não é o negócio principal"
+      },
+      {
+        "nome": "✅POPdents Felipe Schmidt",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 68 avaliações citam aparelho"
       },
       {
         "nome": "OralCenter Implantes",
@@ -145,14 +145,19 @@
         "por_que_fora": "a voz do cliente é de implante: só 0 de 93 avaliações citam aparelho"
       },
       {
+        "nome": "Confidents Clínica Odontológica",
+        "fora": true,
+        "por_que_fora": "zona cinzenta: 3 de 83 avaliações citam aparelho (4%) — faz aparelho, mas não é o negócio principal"
+      },
+      {
+        "nome": "Odontoquality",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 2 de 81 avaliações citam aparelho"
+      },
+      {
         "nome": "Dra. Luiza Guerra | Harmonização Facial | Dentista em Florianópolis",
         "fora": true,
         "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 115 avaliações citam aparelho"
-      },
-      {
-        "nome": "Sorrifácil Ingleses | Implantes Dentários, Prótese Protocolo e Reabilitação Oral",
-        "fora": true,
-        "por_que_fora": "a voz do cliente é de implante: só 2 de 86 avaliações citam aparelho"
       }
     ],
     "fora_total": 14,
@@ -310,8 +315,8 @@
     "local_id": "ortho_fln_centro_2",
     "unidade": "OrthoDontic · R. Deodoro",
     "rotulo": "SC · Florianópolis",
-    "com_texto": 99,
-    "sem_estagio": 71,
+    "com_texto": 229,
+    "sem_estagio": 174,
     "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
     "estagios": [
       {
@@ -320,13 +325,19 @@
         "o_que_e": "como me acharam",
         "quem_resolve": "marketing e ficha do Google",
         "medido": true,
-        "avaliacoes": 14,
-        "dor": 0,
-        "elogio": 14,
-        "pct_dor": 0,
+        "avaliacoes": 32,
+        "dor": 1,
+        "elogio": 31,
+        "pct_dor": 3,
         "amostra_curta": false,
-        "exemplos": [],
-        "frase": "14 avaliações falam deste momento, nenhuma com nota baixa",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2024-08-01",
+            "texto": "Péssimo!!! Péssimo atendimento no balcão, muito pior no WhatsApp! Estou a mais de 1 ano nesta clínica e me arrependo todo mês de ter feito contrato com esse lugar ! A gente te paga pra ser mal atendida!!\nEm fim , não recomendo a ninguém!"
+          }
+        ],
+        "frase": "32 avaliações falam deste momento, 1 com nota baixa",
         "porque_vazio": null
       },
       {
@@ -335,13 +346,19 @@
         "o_que_e": "telefone e WhatsApp",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 1,
-        "dor": 1,
+        "avaliacoes": 2,
+        "dor": 2,
         "elogio": 0,
         "pct_dor": 100,
         "amostra_curta": true,
-        "exemplos": [],
-        "frase": "1 avaliação fala deste momento, 1 com nota baixa",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2024-08-01",
+            "texto": "Péssimo!!! Péssimo atendimento no balcão, muito pior no WhatsApp! Estou a mais de 1 ano nesta clínica e me arrependo todo mês de ter feito contrato com esse lugar ! A gente te paga pra ser mal atendida!!\nEm fim , não recomendo a ninguém!"
+          }
+        ],
+        "frase": "2 avaliações falam deste momento, 2 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -365,13 +382,13 @@
         "o_que_e": "chegar e esperar",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 13,
+        "avaliacoes": 17,
         "dor": 1,
-        "elogio": 12,
-        "pct_dor": 8,
+        "elogio": 16,
+        "pct_dor": 6,
         "amostra_curta": false,
         "exemplos": [],
-        "frase": "13 avaliações falam deste momento, 1 com nota baixa",
+        "frase": "17 avaliações falam deste momento, 1 com nota baixa",
         "porque_vazio": null
       },
       {
@@ -379,15 +396,15 @@
         "rotulo": "Avaliação",
         "o_que_e": "a primeira consulta",
         "quem_resolve": "clínica",
-        "medido": false,
-        "avaliacoes": 0,
+        "medido": true,
+        "avaliacoes": 1,
         "dor": 0,
-        "elogio": 0,
-        "pct_dor": null,
-        "amostra_curta": false,
+        "elogio": 1,
+        "pct_dor": 0,
+        "amostra_curta": true,
         "exemplos": [],
-        "frase": null,
-        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
       },
       {
         "estagio": "contratacao",
@@ -395,13 +412,19 @@
         "o_que_e": "preço, contrato e entrada",
         "quem_resolve": "franqueado",
         "medido": true,
-        "avaliacoes": 2,
-        "dor": 1,
-        "elogio": 1,
+        "avaliacoes": 4,
+        "dor": 2,
+        "elogio": 2,
         "pct_dor": 50,
         "amostra_curta": true,
-        "exemplos": [],
-        "frase": "2 avaliações falam deste momento, 1 com nota baixa",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2024-08-01",
+            "texto": "Péssimo!!! Péssimo atendimento no balcão, muito pior no WhatsApp! Estou a mais de 1 ano nesta clínica e me arrependo todo mês de ter feito contrato com esse lugar ! A gente te paga pra ser mal atendida!!\nEm fim , não recomendo a ninguém!"
+          }
+        ],
+        "frase": "4 avaliações falam deste momento, 2 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -410,13 +433,13 @@
         "o_que_e": "a cadeira",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 6,
+        "avaliacoes": 11,
         "dor": 1,
-        "elogio": 5,
-        "pct_dor": 17,
-        "amostra_curta": true,
+        "elogio": 10,
+        "pct_dor": 9,
+        "amostra_curta": false,
         "exemplos": [],
-        "frase": "6 avaliações falam deste momento, 1 com nota baixa",
+        "frase": "11 avaliações falam deste momento, 1 com nota baixa",
         "porque_vazio": null
       },
       {
@@ -487,14 +510,14 @@
       "natureza": "fato",
       "confianca": "media",
       "medido": true,
-      "amostra": 99,
+      "amostra": 229,
       "janela_dias": null,
       "medicoes": null,
       "fonte": "dados/serie/reviews.jsonl",
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": "mais avaliações com texto nesta loja",
-      "procedencia": "medido em 99 avaliações"
+      "procedencia": "medido em 229 avaliações"
     }
   },
   "meu_territorio": {
@@ -605,6 +628,24 @@
   "acoes": {
     "arcos": [
       {
+        "arco_id": "ortho_fln_centro_2|parada",
+        "local_id": "ortho_fln_centro_2",
+        "praca_id": "florianopolis",
+        "gatilho": "parada",
+        "problema": "apenas 1 mês seguido com movimento acima do típico da própria unidade; o ritmo medido é 7.8 avaliações/mês",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": "ritmo",
+        "antes": 7.8,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      },
+      {
         "arco_id": "ortho_fln_centro_2|nao_engatou",
         "local_id": "ortho_fln_centro_2",
         "praca_id": "florianopolis",
@@ -623,7 +664,7 @@
         "dias": 0
       }
     ],
-    "total": 1,
+    "total": 2,
     "aviso": "O livro nasceu hoje. Nenhum arco completou 21 dias, então ainda não há veredito para ninguém — a primeira resposta vem na coleta seguinte."
   },
   "oferta_da_cidade": {
@@ -1022,6 +1063,13 @@
       "tipo": "alerta",
       "quem": "fila",
       "texto": "alerta aberto: Unidade nova que ainda não engatou",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-13",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: O contador de avaliações parou",
       "fonte": "dados/serie/fila_historico.jsonl"
     }
   ]

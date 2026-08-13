@@ -5,8 +5,8 @@
     "unidade": "OrthoDontic · América",
     "cidade": "SC · Joinville",
     "endereco": "R. Blumenau, 927 - América, Joinville - SC, 89204-251",
-    "desde": null,
-    "medicoes": null,
+    "desde": "12/ago",
+    "medicoes": 2,
     "posicao_na_cidade": null,
     "clinicas_na_cidade": null,
     "lojas_irmas": [
@@ -19,33 +19,38 @@
         "unidade": "OrthoDontic · Aventureiro"
       }
     ],
-    "frase": "OrthoDontic · América está entre as 21 clínicas mapeadas de América e divide Joinville com mais 2 lojas da rede."
+    "frase": "OrthoDontic · América é escutada desde 12/ago, em 2 medições e divide Joinville com mais 2 lojas da rede."
   },
   "rotulo": "SC · Joinville",
   "unidade": "OrthoDontic · América",
   "cabecalho": {
     "nota": 4.3,
     "avaliacoes": 377,
-    "ritmo": 19.2,
+    "ritmo": 3.0,
     "meses_seguidos": 2,
-    "posicao": 7,
-    "de": 17
+    "posicao": 13,
+    "de": 15,
+    "amostra_lida": 377,
+    "amostra_dias": 3851,
+    "amostra_truncada": false,
+    "ritmo_comparavel": true,
+    "porque_fora_do_ranking": null
   },
-  "faixa": "amarela",
-  "urgencia": 35,
+  "faixa": "vermelha",
+  "urgencia": 90,
   "tarefa": {
     "status": "aberta",
-    "aberta_em": "2026-08-12",
-    "dias_aberta": 1,
-    "prazo_dias": 60,
-    "vence_em": "2026-10-11"
+    "aberta_em": "2026-08-13",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-27"
   },
   "acao": {
-    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
-    "prazo": "60 dias",
-    "dono": "consultor de campo",
-    "custo": "verba de abertura",
-    "por_causa_de": "nao_engatou",
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada",
     "confianca": {
       "natureza": "recomendacao",
       "confianca": "baixa",
@@ -55,8 +60,9 @@
       "medicoes": null,
       "fonte": "scripts/fila.py",
       "a_favor": [
-        "a primeira avaliação é de 2026-02-02, há 6 meses, e o ritmo medido é 19.2/mês — a unidade ainda não engatou",
-        "nota 4.3 contra mediana 4.9 das 17 clínicas medidas na praça"
+        "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 3.0 avaliações/mês",
+        "Odonto e Você sustenta há 14 meses a 4.9/mês, contra 3.0/mês desta unidade",
+        "13º lugar de 15 clínicas medidas na praça"
       ],
       "contra": [],
       "o_que_aumentaria": "o resultado medido na coleta seguinte (dados/serie/acoes.jsonl)",
@@ -65,11 +71,25 @@
   },
   "gatilhos": [
     {
-      "peso": 20,
-      "titulo": "Unidade nova que ainda não engatou",
-      "chave": "nao_engatou",
-      "fato": "a primeira avaliação é de 2026-02-02, há 6 meses, e o ritmo medido é 19.2/mês — a unidade ainda não engatou",
+      "peso": 30,
+      "titulo": "O contador de avaliações parou",
+      "chave": "parada",
+      "fato": "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 3.0 avaliações/mês",
       "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "peso": 25,
+      "titulo": "Um rival de aparelho sustenta e corre mais",
+      "chave": "rival",
+      "fato": "Odonto e Você sustenta há 14 meses a 4.9/mês, contra 3.0/mês desta unidade",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "peso": 20,
+      "titulo": "Está na metade de baixo da própria praça",
+      "chave": "posicao",
+      "fato": "13º lugar de 15 clínicas medidas na praça",
+      "fonte": "dados/portal/rede_cruzamento.json"
     },
     {
       "peso": 15,
@@ -79,11 +99,45 @@
       "fonte": "dados/serie/places.jsonl"
     }
   ],
-  "quem_avanca": null,
-  "o_que_mudou": null,
+  "quem_avanca": {
+    "nome": "Odonto e Você",
+    "ritmo": 4.9,
+    "meses": 14,
+    "nota": 4.9,
+    "posicao": 5
+  },
+  "o_que_mudou": {
+    "local_id": "ortho_joi_america",
+    "nome": "OrthoDontic Sorria Sempre",
+    "proprio": true,
+    "aparelho": true,
+    "de": "2026-08-12",
+    "ate": "2026-08-13",
+    "dias": 1,
+    "antes": 377,
+    "agora": 377,
+    "delta": 0,
+    "nota_antes": 4.3,
+    "nota_agora": 4.3,
+    "ritmo_do_periodo": 0.0,
+    "historico": {
+      "desde": "2026-08-12",
+      "ate": "2026-08-13",
+      "dias": 1,
+      "medicoes": 2,
+      "antes": 377,
+      "agora": 377,
+      "delta": 0,
+      "ritmo_do_periodo": 0.0,
+      "nota_antes": 4.3,
+      "nota_agora": 4.3
+    },
+    "eventos": [],
+    "aviso": "a praça é medida há 1 dia (2 medições) — a leitura ainda diz pouco e engorda a cada coleta"
+  },
   "sem_resposta": {
-    "abertas": 2,
-    "com_texto": 0,
+    "abertas": 19,
+    "com_texto": 12,
     "itens": [
       {
         "nota": 1,
@@ -96,42 +150,144 @@
         "data": "2026-06-18",
         "texto": null,
         "tem_texto": false
+      },
+      {
+        "nota": 1,
+        "data": "2025-02-27",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 1,
+        "data": "2024-12-11",
+        "texto": "Horrível a experiência.\nDei início no tratamento em Abril de 2021, passou 1 ano e não visualizava avanço algum. Utilizei aparelho por todo esse período onde não adiantou de nada, pois eu tinha sisos que inclusive a Dr. sabia e foi me sinalizar depois de 1 ano. Os meus sisos estavam empurrando meus dentes, e deixando eles mais tortos. Ou seja, ela gastou tempo e eu, meu dinheiro.\nSem contar do que foi tratado na hora de fechar o contrato, o que prometeram e depois estavam vindo com outra conversa.\nAmbiente sim, bonito e agradável, mas não é só isso que compõe um lugar que presta um excelente trabalho. Minhas consultas em sua grande parte sempre demoravam para ser atendida mesmo chegando no horário.\nFoi uma falta de respeito por todo esse período, principalmente vindo da dentista que sabia a real situação dos meus dentes e mesmo assim quis prosseguir no caminho mais demorado e que teria gastos. Até por que chegou no momento no qual os meus sisos estavam tão deitados que dificultou muito a extração e o valor foi mais caro, o que com certeza ela pensou desta maneira. - “se deixar o siso por mais tempo, mais deitado ele fica é mais caro será”.\nPosteriormente a minha rescisão de contrato, iniciei em um clínica, onde, a primeira coisa que fiz foi a retirada do aparelho, e extração dos meus sisos. Foram transparentes e sempre explicando cada passo que seria do tratamento, hoje iniciei com o aparelho entrelaçado (está doendo um pouquinho….hehe), mas agora sim consigo ver o meu tratamento chegando ao fim, e estou muito feliz. E acrescento mais, completei 1 ano de tratamento agora em outubro nesta clínica, e já fiz todo esse processo. Extração, aparelho para separação e agora, aparelho para juntar os dentes e alinhar.\nSe dependesse da Orthodontic, passaria anos e nada mudaria, além do valor altíssimo que queriam cobrar de cada siso. E o contrato, nem se fala. Ninguém age com transparência e respeito aos clientes. Não adianta colocar Michel Teló, com certeza mesmo ele não precisando, não iria nunca nesta clínica, certo esta ele!",
+        "tem_texto": true
+      },
+      {
+        "nota": 2,
+        "data": "2024-07-20",
+        "texto": "Atendimento sempre fora do horário marcado . No início falam que atendem no sábado, mas quando precisa agendar, nunca tem horário e quererem forçar colocar no meio da semana",
+        "tem_texto": true
+      },
+      {
+        "nota": 3,
+        "data": "2019-06-18",
+        "texto": "OBS: Sobre a reclamação abaixo, um dia após a postagem da mesma, fui contactado pela gestora da unidade da rua Blumenau, que foi muito solicita e transparente. Ela resolveu o meu problema e informou que não vai medir esforços para que isso não ocorra com nenhum outro cliente. Agradeço pelo retorno prestado, espero que os Gap's sejam corrigidos e que o atendimento possa evoluir daqui para frente.\n\nFaz 2 meses que assinei o contrato e já estou arrependido. É uma empresa voltada a volume e não a qualidade no atendimento, na sexta dia 14/06 fui até a unidade da rua Blumenau e colei os braquetes nos dentes de baixo e fiz manutenção em cima, no final do dia percebi que um dos braquetes havia caído, entrei em contato via whatsapp informando a situação e me disseram para ir na segunda-feira no atendimento \"emergencial\" para verificar... Hoje, segunda-feira 17/06 eu fui até a unidade e para minha surpresa não quiseram repor o braquete que havia caído, a dentista que me atendeu disse que minha mordida é boa e por isso só vão repor na minha próxima consulta agendada que é só dia 12/07 (ficarei 1 mês sem uma das peças que compõem o aparelho ortodôntico!!!), acreditem terei que esperar praticamente 1 mês para colar um braquete, procedimento que levaria 5 minutos para ser feito... Esse é o tipo de empresa que está no mercado, que contrata cantor sertanejo para fazer propaganda e esquece de contratar bons profissionais para fazer um atendimento no mínimo razoável dentro da unidade. Eu estou extremamente insatisfeito e se não fosse pela morosidade judicial, entraria com uma medida para rescindir o contrato de 3 anos que sou obrigado a cumprir... Fica o alerta para todos que pensam em colocar aparelho odontológico, FUJAM de empresas assim, pague mais caro para aquele dentista que tem seu consultório próprio e um volume menor de clientes, você com certeza terá um atendimento muito mais pessoal e de maior qualidade, preço baixo no Brasil é sinônimo de atendimento ruim, se arrependimento matasse eu já estaria morto!",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2018-12-10",
+        "texto": "pessimo, tento ligar pra la, so chama",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2018-06-25",
+        "texto": "Deixam muito a desejar, quando venderam o plano, disseram que os horários eram super flexíveis e não é isso que acontece, tenho que fazer minha consulta quando eles querem, marco 30 dias antes e mesmo assim tem 2 opções de escolha, estão sempre com horários lotados, é impressionante. Enrolam demais no tratamento, com certeza estão visando só os lucros e não atendimento e serviços de qualidade! Tenho consulta p/ amanha 26/06 mas ocorreu um imprevisto e liquei para remarcar, a unica data disponível para eu remarcar é dia 24/07, da pra acreditar? ou me viro e vou amanha ou jogo 100 reais esse mês no lixo sendo obrigado a pagar por uma consulta a qual não aconteceu!!!",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2018-06-01",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 2,
+        "data": "2017-11-16",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 1,
+        "data": "2017-09-18",
+        "texto": "Pior clinica de dentista em Joinville, são trapaceiros e aproveitadores, cheio de clausulas abusivas no contrato,   sempre atrasam o atendimento, mas se você atrasa   você tem que pagar 10 reais. a mensalidade e um valor mas sempre cobram a mais. fazem a cada 6 meses raio x e não te entregam  mau olham, e só para ganhar dinheiro e pagar o salario da pessoa que faz o raio x. so dei uma estrela pq nao permite nao dar nenhuma.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2017-05-29",
+        "texto": "Pilantras safados administração sem vergonha!!! Falam que vão executar uma coisa e não cumprem minha filha com a boca toda machucada,a espera de uma coisa que ela pagou!!!! Ha mais o processo vai comer me aguardem!",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2016-10-25",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 1,
+        "data": "2016-10-18",
+        "texto": "Serviço de péssima qualidade, visam apenas o lucro :(",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2016-08-25",
+        "texto": "Ridículo cobrar por um serviço que não eu não recebi! Se não fui esse mês eu não deveria pagar!!",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2016-08-15",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 1,
+        "data": "2016-07-25",
+        "texto": "Quando fechei o contrato não precisava arrancar os cisos, após dois meses de tratamento trancaram o tratamento porque precisa arrancar, nem a manutenção estão fazendo correto, mais se atrasar dois dia de pagamento ja cobram multas, muito insatisfeita com o serviço, é necessário sinceridade para se conquistar clientes! Pena que assinei um contrato de 3 anos",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2016-05-17",
+        "texto": "nunca vi não ir pro dentista e ter que pagar mesmo assim KKKKKKK péssimo",
+        "tem_texto": true
+      },
+      {
+        "nota": 2,
+        "data": "2016-03-08",
+        "texto": "Falta de consideração e respeito pelo paciente que fica doente e não pode comparecer a consulta, mesmo ligando e avisando, ainda cobram multa.\nTem que avisar 12 horas de antecedência, quem é que vai saber o horário que fica doente??? E quando é de madrugada, pra onde eu ligo avisando, acho que a clínica é fechada, por favor né.",
+        "tem_texto": true
       }
     ],
-    "itens_total": 2
+    "itens_total": 19
   },
   "voz_do_paciente": [
     {
       "o_que_e": "Explica o que vai fazer, antes de fazer",
-      "pct": 1.1
+      "pct": 2.5
     },
     {
       "o_que_e": "Atende na hora marcada",
-      "pct": 4.5
+      "pct": 4.3
     },
     {
       "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
-      "pct": 0.0
+      "pct": 1.8
     },
     {
       "o_que_e": "Cuida de quem tem medo de dentista",
-      "pct": 0.0
+      "pct": 1.1
     },
     {
       "o_que_e": "Resolve no mesmo dia",
-      "pct": 0.0
+      "pct": 2.1
     },
     {
       "o_que_e": "Sabe atender criança",
-      "pct": 4.5
+      "pct": 3.6
     },
     {
       "o_que_e": "Continua presente depois que vendeu",
-      "pct": 3.4
+      "pct": 6.4
     },
     {
       "o_que_e": "Tem profissional que o paciente chama pelo nome",
-      "pct": 10.1
+      "pct": 12.9
     }
   ],
   "rival": {
@@ -141,36 +297,52 @@
     ],
     "vantagens_deles": [
       {
-        "eixo": "explica_o_tratamento",
-        "o_que_e": "Explica o que vai fazer, antes de fazer",
-        "quem": "Dr Fabiano Chaves - Clínica Integrada",
+        "eixo": "preco_claro",
+        "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
+        "quem": "Odonto e Você",
         "eles": 6.2,
-        "nos": 1.1,
-        "razao": 5.6
+        "nos": 1.8,
+        "razao": 3.5
       },
       {
         "eixo": "gente_com_nome",
         "o_que_e": "Tem profissional que o paciente chama pelo nome",
         "quem": "Dr Fabiano Chaves - Clínica Integrada",
-        "eles": 34.4,
-        "nos": 10.1,
-        "razao": 3.4
+        "eles": 35.3,
+        "nos": 12.9,
+        "razao": 2.7
+      },
+      {
+        "eixo": "explica_o_tratamento",
+        "o_que_e": "Explica o que vai fazer, antes de fazer",
+        "quem": "Dr Fabiano Chaves - Clínica Integrada",
+        "eles": 6.3,
+        "nos": 2.5,
+        "razao": 2.5
+      },
+      {
+        "eixo": "acolhimento_do_medo",
+        "o_que_e": "Cuida de quem tem medo de dentista",
+        "quem": "Dr Fabiano Chaves - Clínica Integrada",
+        "eles": 2.5,
+        "nos": 1.1,
+        "razao": 2.4
       },
       {
         "eixo": "pos_venda",
         "o_que_e": "Continua presente depois que vendeu",
         "quem": "Dr Fabiano Chaves - Clínica Integrada",
-        "eles": 10.4,
-        "nos": 3.4,
-        "razao": 3.1
+        "eles": 12.6,
+        "nos": 6.4,
+        "razao": 2.0
       },
       {
-        "eixo": "trata_crianca",
-        "o_que_e": "Sabe atender criança",
+        "eixo": "hora_marcada_e_hora",
+        "o_que_e": "Atende na hora marcada",
         "quem": "Dr Fabiano Chaves - Clínica Integrada",
-        "eles": 7.3,
-        "nos": 4.5,
-        "razao": 1.6
+        "eles": 6.3,
+        "nos": 4.3,
+        "razao": 1.5
       }
     ],
     "fora": [
@@ -185,9 +357,9 @@
         "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 74 avaliações citam aparelho"
       },
       {
-        "nome": "Uniclass Odontologia Estética",
+        "nome": "G7 Odontologia",
         "fora": true,
-        "por_que_fora": "zona cinzenta: 4 de 93 avaliações citam aparelho (4%) — faz aparelho, mas não é o negócio principal"
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 103 avaliações citam aparelho"
       },
       {
         "nome": "DoctorÁgape",
@@ -195,19 +367,14 @@
         "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 68 avaliações citam aparelho"
       },
       {
-        "nome": "ODONTOCOT",
-        "fora": true,
-        "por_que_fora": "a voz do cliente é de implante: só 0 de 72 avaliações citam aparelho"
-      },
-      {
-        "nome": "Via Odonto Floresta",
-        "fora": true,
-        "por_que_fora": "a voz do cliente é de implante: só 0 de 80 avaliações citam aparelho"
-      },
-      {
         "nome": "Sorria Studio Odontologia - Unidade Atiradores",
         "fora": true,
         "por_que_fora": "a voz do cliente é de implante: só 0 de 110 avaliações citam aparelho"
+      },
+      {
+        "nome": "Odontocompany",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 2 de 107 avaliações citam aparelho"
       },
       {
         "nome": "Duo Oral Care",
@@ -215,19 +382,24 @@
         "por_que_fora": "a voz do cliente é de implante: só 0 de 91 avaliações citam aparelho"
       },
       {
+        "nome": "ODONTOCOT",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 72 avaliações citam aparelho"
+      },
+      {
         "nome": "Dental Co",
         "fora": true,
         "por_que_fora": "a voz do cliente é de implante: só 1 de 96 avaliações citam aparelho"
       },
       {
-        "nome": "G7 Odontologia",
+        "nome": "Via Odonto Floresta",
         "fora": true,
-        "por_que_fora": "a voz do cliente é de implante: só 0 de 103 avaliações citam aparelho"
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 80 avaliações citam aparelho"
       },
       {
-        "nome": "Odontocompany",
+        "nome": "Uniclass Odontologia Estética",
         "fora": true,
-        "por_que_fora": "a voz do cliente é de odontologia geral: só 2 de 107 avaliações citam aparelho"
+        "por_que_fora": "zona cinzenta: 4 de 93 avaliações citam aparelho (4%) — faz aparelho, mas não é o negócio principal"
       },
       {
         "nome": "Tio Gui Odontopediatria",
@@ -380,8 +552,8 @@
     "local_id": "ortho_joi_america",
     "unidade": "OrthoDontic · América",
     "rotulo": "SC · Joinville",
-    "com_texto": 89,
-    "sem_estagio": 57,
+    "com_texto": 280,
+    "sem_estagio": 165,
     "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
     "estagios": [
       {
@@ -390,13 +562,29 @@
         "o_que_e": "como me acharam",
         "quem_resolve": "marketing e ficha do Google",
         "medido": true,
-        "avaliacoes": 11,
-        "dor": 0,
-        "elogio": 11,
-        "pct_dor": 0,
+        "avaliacoes": 32,
+        "dor": 8,
+        "elogio": 24,
+        "pct_dor": 25,
         "amostra_curta": false,
-        "exemplos": [],
-        "frase": "11 avaliações falam deste momento, nenhuma com nota baixa",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2024-04-08",
+            "texto": "Atendimento cada vez mais demorado, funcionárias mau educadas, rotatividade de dentistas…Fora o tempo de espera absurdo!\nSó pensam em captar clientes e não mantém qualidade nenhuma. Não recomendo."
+          },
+          {
+            "nota": 1,
+            "data": "2025-04-12",
+            "texto": "Só a dentista que é excelente!! O resto não recomendo!"
+          },
+          {
+            "nota": 1,
+            "data": "2025-09-16",
+            "texto": "não recomendo a ninguém, na hora de vc fazer o plano lhe promete mil maravilhas, depois deixa a desejar, atendimento nota zero."
+          }
+        ],
+        "frase": "32 avaliações falam deste momento, 8 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -405,13 +593,24 @@
         "o_que_e": "telefone e WhatsApp",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 1,
-        "dor": 1,
-        "elogio": 0,
-        "pct_dor": 100,
-        "amostra_curta": true,
-        "exemplos": [],
-        "frase": "1 avaliação fala deste momento, 1 com nota baixa",
+        "avaliacoes": 12,
+        "dor": 10,
+        "elogio": 1,
+        "pct_dor": 83,
+        "amostra_curta": false,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2022-01-20",
+            "texto": "Muito ruim não atender telefone clínico do América"
+          },
+          {
+            "nota": 1,
+            "data": "2024-07-27",
+            "texto": "Atendimento via whatsapp é horrível, mudam de recepcionista e mesmo assim o atendimento ruim não muda. Imagina chegar numa consulta e ser avisada no balcão que o doutor está ausente? Foi o que aconteceu comigo, sendo que um dia antes recebi mensagem pra confirmar a consulta, mas pra avisarem com antecedência da ausência do médico, que é bom, nada"
+          }
+        ],
+        "frase": "12 avaliações falam deste momento, 10 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -420,29 +619,29 @@
         "o_que_e": "marcar e remarcar",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 7,
-        "dor": 5,
-        "elogio": 2,
-        "pct_dor": 71,
-        "amostra_curta": true,
+        "avaliacoes": 24,
+        "dor": 20,
+        "elogio": 3,
+        "pct_dor": 83,
+        "amostra_curta": false,
         "exemplos": [
           {
-            "nota": 1,
-            "data": "2026-03-23",
-            "texto": "Falta de flexibilização da agenda."
+            "nota": 2,
+            "data": "2016-03-08",
+            "texto": "Falta de consideração e respeito pelo paciente que fica doente e não pode comparecer a consulta, mesmo ligando e avisando, ainda cobram multa.\nTem que avisar 12 horas de antecedência, quem é que vai saber o horário que fica doente??? E quando é de madrugada, pra onde eu ligo avisando, acho que a clínica é fechada, por favor né."
           },
           {
             "nota": 1,
-            "data": "2026-04-08",
-            "texto": "Como dizem aqui nos comentários, 1 estrela é muito. Fiquei 4 anos e pouco fazendo tratamento e ainda não terminei, eu que cancelei o plano porque não aguentava mais, fora o dinheiro perdido em restaurar dente e sempre quebrar e a dr falando que era porque eu comia algo errado, fui em outra clínica e eles falaram que era erro da própria dr, concertaram pra mim e nunca mais quebrou."
+            "data": "2020-08-06",
+            "texto": "Péssima sempre tenho problema com o atendimento dessa clínica. Muita rotatividade de funcionários na parte de recepção e financeiro.\nMuita confusão nas confirmações em horário e a falta de ética."
           },
           {
             "nota": 1,
-            "data": "2026-05-23",
-            "texto": "Problema com horários . Vc agenda um horário e eles atendem no mínimo 30 minutos depois que vc agendou isso acontece recorrente…."
+            "data": "2023-06-27",
+            "texto": "Marca horário chega na hora que foi marcado e ainda tem q esperar meia hora sentado as vzs de pé 😑"
           }
         ],
-        "frase": "7 avaliações falam deste momento, 5 com notas baixas",
+        "frase": "24 avaliações falam deste momento, 20 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -451,13 +650,29 @@
         "o_que_e": "chegar e esperar",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 13,
-        "dor": 2,
-        "elogio": 11,
-        "pct_dor": 15,
+        "avaliacoes": 49,
+        "dor": 18,
+        "elogio": 31,
+        "pct_dor": 37,
         "amostra_curta": false,
-        "exemplos": [],
-        "frase": "13 avaliações falam deste momento, 2 com notas baixas",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2017-05-29",
+            "texto": "Pilantras safados administração sem vergonha!!! Falam que vão executar uma coisa e não cumprem minha filha com a boca toda machucada,a espera de uma coisa que ela pagou!!!! Ha mais o processo vai comer me aguardem!"
+          },
+          {
+            "nota": 1,
+            "data": "2020-08-06",
+            "texto": "Péssima sempre tenho problema com o atendimento dessa clínica. Muita rotatividade de funcionários na parte de recepção e financeiro.\nMuita confusão nas confirmações em horário e a falta de ética."
+          },
+          {
+            "nota": 1,
+            "data": "2023-07-03",
+            "texto": "Marca horário chega no horário e espera mais meia hora pra ser atendido"
+          }
+        ],
+        "frase": "49 avaliações falam deste momento, 18 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -466,13 +681,13 @@
         "o_que_e": "a primeira consulta",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 1,
-        "dor": 1,
-        "elogio": 0,
-        "pct_dor": 100,
-        "amostra_curta": true,
+        "avaliacoes": 10,
+        "dor": 6,
+        "elogio": 4,
+        "pct_dor": 60,
+        "amostra_curta": false,
         "exemplos": [],
-        "frase": "1 avaliação fala deste momento, 1 com nota baixa",
+        "frase": "10 avaliações falam deste momento, 6 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -481,19 +696,29 @@
         "o_que_e": "preço, contrato e entrada",
         "quem_resolve": "franqueado",
         "medido": true,
-        "avaliacoes": 1,
-        "dor": 1,
+        "avaliacoes": 13,
+        "dor": 12,
         "elogio": 0,
-        "pct_dor": 100,
-        "amostra_curta": true,
+        "pct_dor": 92,
+        "amostra_curta": false,
         "exemplos": [
           {
             "nota": 1,
-            "data": "2026-02-02",
-            "texto": "Pessimo atendimento do financeiro estou a meses sem fazer tratamento e querem me cobrar sem usar o servico alegando que esta no contrato mas a lei do consumidor é bem clara sobre cobrar sem utilizar o serviço. Nao caiam nesse golpe ."
+            "data": "2016-07-25",
+            "texto": "Quando fechei o contrato não precisava arrancar os cisos, após dois meses de tratamento trancaram o tratamento porque precisa arrancar, nem a manutenção estão fazendo correto, mais se atrasar dois dia de pagamento ja cobram multas, muito insatisfeita com o serviço, é necessário sinceridade para se conquistar clientes! Pena que assinei um contrato de 3 anos"
+          },
+          {
+            "nota": 1,
+            "data": "2019-10-22",
+            "texto": "Péssimo atendimento!\nQueria forçar uma venda de uma maneira estranha. Valores que não condizem com as outras lojas Ortobom"
+          },
+          {
+            "nota": 1,
+            "data": "2019-11-13",
+            "texto": "Desorganizado do início ao fim, queriam me cobrar uma parcela afirmando que eu não tinha pago, a sorte que tinha como comprovar, e agora querem me cobrar 2X   como se minha filha tivesse faltado se essas 2x eu remarquei com antecedência.\nEMPRESA DESORGANIZADA.\nEstou vendo uma forma para quebrar esse contrato."
           }
         ],
-        "frase": "1 avaliação fala deste momento, 1 com nota baixa",
+        "frase": "13 avaliações falam deste momento, 12 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -502,13 +727,29 @@
         "o_que_e": "a cadeira",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 5,
-        "dor": 0,
-        "elogio": 5,
-        "pct_dor": 0,
-        "amostra_curta": true,
-        "exemplos": [],
-        "frase": "5 avaliações falam deste momento, nenhuma com nota baixa",
+        "avaliacoes": 42,
+        "dor": 19,
+        "elogio": 22,
+        "pct_dor": 45,
+        "amostra_curta": false,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2016-05-17",
+            "texto": "nunca vi não ir pro dentista e ter que pagar mesmo assim KKKKKKK péssimo"
+          },
+          {
+            "nota": 1,
+            "data": "2017-05-29",
+            "texto": "Pilantras safados administração sem vergonha!!! Falam que vão executar uma coisa e não cumprem minha filha com a boca toda machucada,a espera de uma coisa que ela pagou!!!! Ha mais o processo vai comer me aguardem!"
+          },
+          {
+            "nota": 1,
+            "data": "2020-02-20",
+            "texto": "A consulta do meu esposo Joilson hoje atrasou 30 minutos.\nSerá que a profissional que atrasa 30 minutos é profissional? 🤔"
+          }
+        ],
+        "frase": "42 avaliações falam deste momento, 19 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -517,13 +758,29 @@
         "o_que_e": "as voltas de cada mês",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 1,
-        "dor": 1,
-        "elogio": 0,
-        "pct_dor": 100,
-        "amostra_curta": true,
-        "exemplos": [],
-        "frase": "1 avaliação fala deste momento, 1 com nota baixa",
+        "avaliacoes": 10,
+        "dor": 8,
+        "elogio": 1,
+        "pct_dor": 80,
+        "amostra_curta": false,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2016-07-25",
+            "texto": "Quando fechei o contrato não precisava arrancar os cisos, após dois meses de tratamento trancaram o tratamento porque precisa arrancar, nem a manutenção estão fazendo correto, mais se atrasar dois dia de pagamento ja cobram multas, muito insatisfeita com o serviço, é necessário sinceridade para se conquistar clientes! Pena que assinei um contrato de 3 anos"
+          },
+          {
+            "nota": 1,
+            "data": "2020-11-17",
+            "texto": "Péssimo, só enrolam o cliente pra tirar dinheiro, 2 anos fazendo manutenção e nenhum resultado, e ainda cobram o mês que não vai, nunca vi isso"
+          },
+          {
+            "nota": 1,
+            "data": "2023-12-15",
+            "texto": "Marca horário pra manutenção e demora mais de meia hora após , pessimo atendimento sem compromisso com o cliente"
+          }
+        ],
+        "frase": "10 avaliações falam deste momento, 8 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -532,19 +789,29 @@
         "o_que_e": "mensalidade e multa",
         "quem_resolve": "franqueado",
         "medido": true,
-        "avaliacoes": 3,
-        "dor": 3,
+        "avaliacoes": 17,
+        "dor": 17,
         "elogio": 0,
         "pct_dor": 100,
-        "amostra_curta": true,
+        "amostra_curta": false,
         "exemplos": [
           {
+            "nota": 2,
+            "data": "2016-03-08",
+            "texto": "Falta de consideração e respeito pelo paciente que fica doente e não pode comparecer a consulta, mesmo ligando e avisando, ainda cobram multa.\nTem que avisar 12 horas de antecedência, quem é que vai saber o horário que fica doente??? E quando é de madrugada, pra onde eu ligo avisando, acho que a clínica é fechada, por favor né."
+          },
+          {
             "nota": 1,
-            "data": "2026-02-02",
-            "texto": "Pessimo atendimento do financeiro estou a meses sem fazer tratamento e querem me cobrar sem usar o servico alegando que esta no contrato mas a lei do consumidor é bem clara sobre cobrar sem utilizar o serviço. Nao caiam nesse golpe ."
+            "data": "2016-07-25",
+            "texto": "Quando fechei o contrato não precisava arrancar os cisos, após dois meses de tratamento trancaram o tratamento porque precisa arrancar, nem a manutenção estão fazendo correto, mais se atrasar dois dia de pagamento ja cobram multas, muito insatisfeita com o serviço, é necessário sinceridade para se conquistar clientes! Pena que assinei um contrato de 3 anos"
+          },
+          {
+            "nota": 1,
+            "data": "2016-08-25",
+            "texto": "Ridículo cobrar por um serviço que não eu não recebi! Se não fui esse mês eu não deveria pagar!!"
           }
         ],
-        "frase": "3 avaliações falam deste momento, 3 com notas baixas",
+        "frase": "17 avaliações falam deste momento, 17 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -553,12 +820,17 @@
         "o_que_e": "quando algo dá errado",
         "quem_resolve": "franqueado",
         "medido": true,
-        "avaliacoes": 3,
-        "dor": 2,
-        "elogio": 1,
+        "avaliacoes": 9,
+        "dor": 6,
+        "elogio": 2,
         "pct_dor": 67,
-        "amostra_curta": true,
+        "amostra_curta": false,
         "exemplos": [
+          {
+            "nota": 1,
+            "data": "2020-08-06",
+            "texto": "Péssima sempre tenho problema com o atendimento dessa clínica. Muita rotatividade de funcionários na parte de recepção e financeiro.\nMuita confusão nas confirmações em horário e a falta de ética."
+          },
           {
             "nota": 1,
             "data": "2026-04-08",
@@ -570,7 +842,7 @@
             "texto": "Problema com horários . Vc agenda um horário e eles atendem no mínimo 30 minutos depois que vc agendou isso acontece recorrente…."
           }
         ],
-        "frase": "3 avaliações falam deste momento, 2 com notas baixas",
+        "frase": "9 avaliações falam deste momento, 6 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -579,31 +851,31 @@
         "o_que_e": "alta e depois dela",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 1,
-        "dor": 0,
-        "elogio": 1,
-        "pct_dor": 0,
+        "avaliacoes": 6,
+        "dor": 4,
+        "elogio": 2,
+        "pct_dor": 67,
         "amostra_curta": true,
         "exemplos": [],
-        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "frase": "6 avaliações falam deste momento, 4 com notas baixas",
         "porque_vazio": null
       }
     ],
-    "manchete": "Nenhum momento da jornada concentra dor com amostra suficiente para virar manchete.",
-    "quem_resolve": null,
-    "e_clinico": null,
+    "manchete": "A dor pública desta unidade aparece em agendamento — 20 avaliações de 1 ou 2 estrelas de 24 que falam desse momento.",
+    "quem_resolve": "recepção",
+    "e_clinico": false,
     "confianca": {
       "natureza": "fato",
-      "confianca": "media",
+      "confianca": "alta",
       "medido": true,
-      "amostra": 89,
-      "janela_dias": null,
-      "medicoes": null,
+      "amostra": 280,
+      "janela_dias": 1,
+      "medicoes": 2,
       "fonte": "dados/serie/reviews.jsonl",
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": "mais avaliações com texto nesta loja",
-      "procedencia": "medido em 89 avaliações"
+      "procedencia": "medido em 280 avaliações, 2 medições, 1 dia de janela"
     }
   },
   "meu_territorio": {
@@ -687,7 +959,75 @@
       "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
     }
   },
-  "execucao": null,
+  "execucao": {
+    "local_id": "ortho_joi_america",
+    "praca_id": "joinville",
+    "rotulo": "SC · Joinville",
+    "unidade": "OrthoDontic · América",
+    "itens": [
+      {
+        "problema": "A dor pública desta unidade aparece em agendamento — 20 avaliações de 1 ou 2 estrelas de 24 que falam desse momento.",
+        "e_marketing": false,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "operacao",
+          "especialidade": "a própria unidade",
+          "porque_nao_e_marketing": "a dor pública está em marcar, remarcar e encaixar. Campanha não conserta isso — mais mídia sobre um gargalo de balcão só aumenta o número de pessoas irritadas.",
+          "quem_resolve": "recepção",
+          "metrica_de_validacao": "as mesmas avaliações, reclassificadas na próxima coleta",
+          "recoletar_em_dias": 30
+        },
+        "evidencias": [
+          "32 avaliações falam deste momento, 8 com notas baixas",
+          "12 avaliações falam deste momento, 10 com notas baixas",
+          "24 avaliações falam deste momento, 20 com notas baixas"
+        ],
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": null,
+          "janela_dias": null,
+          "medicoes": null,
+          "fonte": "dados/portal/jornada.json",
+          "a_favor": [
+            "A dor pública desta unidade aparece em agendamento — 20 avaliações de 1 ou 2 estrelas de 24 que falam desse momento."
+          ],
+          "contra": [],
+          "o_que_aumentaria": "a próxima medição da jornada",
+          "procedencia": "sem amostra declarada"
+        }
+      },
+      {
+        "problema": "19 avaliações negativas abertas sem resposta",
+        "e_marketing": false,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "reputacao",
+          "especialidade": "a própria unidade",
+          "porque_nao_e_marketing": "responder paciente é trabalho de quem atende. Agência escrevendo resposta em nome da clínica é o caminho mais curto para uma resposta que o paciente percebe como automática.",
+          "metrica_de_validacao": "quantas seguem sem resposta na próxima coleta",
+          "recoletar_em_dias": 15
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 19,
+          "janela_dias": null,
+          "medicoes": null,
+          "fonte": "dados/portal/caixa_de_respostas.json",
+          "a_favor": [],
+          "contra": [],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 19 avaliações"
+        }
+      }
+    ],
+    "de_marketing": 0,
+    "de_operacao": 2,
+    "descartados": 0
+  },
   "meu_bairro": {
     "bairro": "América",
     "clinicas": 21,
@@ -713,6 +1053,60 @@
   },
   "acoes": {
     "arcos": [
+      {
+        "arco_id": "ortho_joi_america|parada",
+        "local_id": "ortho_joi_america",
+        "praca_id": "joinville",
+        "gatilho": "parada",
+        "problema": "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 3.0 avaliações/mês",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": "ritmo",
+        "antes": 3.0,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      },
+      {
+        "arco_id": "ortho_joi_america|posicao",
+        "local_id": "ortho_joi_america",
+        "praca_id": "joinville",
+        "gatilho": "posicao",
+        "problema": "13º lugar de 15 clínicas medidas na praça",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": "posicao",
+        "antes": 13.0,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      },
+      {
+        "arco_id": "ortho_joi_america|rival",
+        "local_id": "ortho_joi_america",
+        "praca_id": "joinville",
+        "gatilho": "rival",
+        "problema": "Odonto e Você sustenta há 14 meses a 4.9/mês, contra 3.0/mês desta unidade",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": null,
+        "antes": null,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "sem ação padrão para este gatilho",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      },
       {
         "arco_id": "ortho_joi_america|nao_engatou",
         "local_id": "ortho_joi_america",
@@ -750,7 +1144,7 @@
         "dias": 1
       }
     ],
-    "total": 2,
+    "total": 5,
     "aviso": "O livro nasceu hoje. Nenhum arco completou 21 dias, então ainda não há veredito para ninguém — a primeira resposta vem na coleta seguinte."
   },
   "oferta_da_cidade": {
@@ -1177,6 +1571,35 @@
     "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
   },
   "eventos": [
+    {
+      "data": "2026-08-13",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: O contador de avaliações parou",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-13",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Um rival de aparelho sustenta e corre mais",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-13",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Está na metade de baixo da própria praça",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-13",
+      "tipo": "rival_contador",
+      "quem": "rival",
+      "nome": "Odonto e Você",
+      "texto": "Odonto e Você: ganhou 1 avaliação (695 → 696)",
+      "fonte": "dados/serie/places.jsonl"
+    },
     {
       "data": "2026-08-12",
       "tipo": "alerta",

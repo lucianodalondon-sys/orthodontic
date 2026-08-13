@@ -28,11 +28,16 @@
     "avaliacoes": 310,
     "ritmo": 8.4,
     "meses_seguidos": 1,
-    "posicao": 9,
-    "de": 17
+    "posicao": null,
+    "de": null,
+    "amostra_lida": 120,
+    "amostra_dias": 435,
+    "amostra_truncada": true,
+    "ritmo_comparavel": false,
+    "porque_fora_do_ranking": "lemos 120 das 310 avaliações desta clínica, e as mais novas: o ritmo aqui é o dos últimos 435 dias, não o do histórico. Comparar com quem foi lido por inteiro compararia janelas diferentes."
   },
-  "faixa": "vermelha",
-  "urgencia": 65,
+  "faixa": "amarela",
+  "urgencia": 45,
   "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
@@ -56,7 +61,6 @@
       "fonte": "scripts/fila.py",
       "a_favor": [
         "apenas 1 mês seguido com movimento acima do típico da própria unidade; o ritmo medido é 8.4 avaliações/mês",
-        "9º lugar de 17 clínicas medidas na praça",
         "nota 4.4 contra mediana 4.9 das 17 clínicas medidas na praça"
       ],
       "contra": [],
@@ -71,13 +75,6 @@
       "chave": "parada",
       "fato": "apenas 1 mês seguido com movimento acima do típico da própria unidade; o ritmo medido é 8.4 avaliações/mês",
       "fonte": "dados/serie/reviews.jsonl"
-    },
-    {
-      "peso": 20,
-      "titulo": "Está na metade de baixo da própria praça",
-      "chave": "posicao",
-      "fato": "9º lugar de 17 clínicas medidas na praça",
-      "fonte": "dados/portal/rede_cruzamento.json"
     },
     {
       "peso": 15,
@@ -106,11 +103,6 @@
         "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 64 avaliações citam aparelho"
       },
       {
-        "nome": "Oral Unic Implantes Florianópolis",
-        "fora": true,
-        "por_que_fora": "a voz do cliente é de implante: só 0 de 60 avaliações citam aparelho"
-      },
-      {
         "nome": "Sorriso Floripa Clínicas Odontológicas",
         "fora": true,
         "por_que_fora": "a voz do cliente é de implante: só 0 de 114 avaliações citam aparelho"
@@ -131,9 +123,14 @@
         "por_que_fora": "zona cinzenta: 5 de 110 avaliações citam aparelho (5%) — faz aparelho, mas não é o negócio principal"
       },
       {
-        "nome": "Odontoquality",
+        "nome": "Sorrifácil Ingleses | Implantes Dentários, Prótese Protocolo e Reabilitação Oral",
         "fora": true,
-        "por_que_fora": "a voz do cliente é de odontologia geral: só 2 de 81 avaliações citam aparelho"
+        "por_que_fora": "a voz do cliente é de implante: só 2 de 86 avaliações citam aparelho"
+      },
+      {
+        "nome": "Oral Unic Implantes Florianópolis",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 60 avaliações citam aparelho"
       },
       {
         "nome": "Innove Odonto Floripa",
@@ -141,19 +138,14 @@
         "por_que_fora": "zona cinzenta: 2 de 78 avaliações citam aparelho (3%) — faz aparelho, mas não é o negócio principal"
       },
       {
-        "nome": "✅POPdents Felipe Schmidt",
-        "fora": true,
-        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 68 avaliações citam aparelho"
-      },
-      {
-        "nome": "Confidents Clínica Odontológica",
-        "fora": true,
-        "por_que_fora": "zona cinzenta: 3 de 83 avaliações citam aparelho (4%) — faz aparelho, mas não é o negócio principal"
-      },
-      {
         "nome": "Dr. Diego Aguiar - Vivera Orofacial Avançada - Estética Bioregenerativa",
         "fora": true,
         "por_que_fora": "zona cinzenta: 2 de 79 avaliações citam aparelho (3%) — faz aparelho, mas não é o negócio principal"
+      },
+      {
+        "nome": "✅POPdents Felipe Schmidt",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 68 avaliações citam aparelho"
       },
       {
         "nome": "OralCenter Implantes",
@@ -161,14 +153,19 @@
         "por_que_fora": "a voz do cliente é de implante: só 0 de 93 avaliações citam aparelho"
       },
       {
+        "nome": "Confidents Clínica Odontológica",
+        "fora": true,
+        "por_que_fora": "zona cinzenta: 3 de 83 avaliações citam aparelho (4%) — faz aparelho, mas não é o negócio principal"
+      },
+      {
+        "nome": "Odontoquality",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 2 de 81 avaliações citam aparelho"
+      },
+      {
         "nome": "Dra. Luiza Guerra | Harmonização Facial | Dentista em Florianópolis",
         "fora": true,
         "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 115 avaliações citam aparelho"
-      },
-      {
-        "nome": "Sorrifácil Ingleses | Implantes Dentários, Prótese Protocolo e Reabilitação Oral",
-        "fora": true,
-        "por_que_fora": "a voz do cliente é de implante: só 2 de 86 avaliações citam aparelho"
       }
     ],
     "fora_total": 14,
@@ -710,7 +707,7 @@
         "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
         "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
         "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": 9.0,
+        "depois": null,
         "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
         "dias": 0

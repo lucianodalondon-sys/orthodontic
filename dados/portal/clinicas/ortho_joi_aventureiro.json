@@ -5,8 +5,8 @@
     "unidade": "OrthoDontic · Aventureiro",
     "cidade": "SC · Joinville",
     "endereco": "R. Tuiuti, 2236 - Aventureiro, Joinville - SC, 89226-000",
-    "desde": null,
-    "medicoes": null,
+    "desde": "12/ago",
+    "medicoes": 2,
     "posicao_na_cidade": null,
     "clinicas_na_cidade": null,
     "lojas_irmas": [
@@ -19,20 +19,25 @@
         "unidade": "OrthoDontic · América"
       }
     ],
-    "frase": "OrthoDontic · Aventureiro está entre as 3 clínicas mapeadas de Aventureiro e divide Joinville com mais 2 lojas da rede."
+    "frase": "OrthoDontic · Aventureiro é escutada desde 12/ago, em 2 medições e divide Joinville com mais 2 lojas da rede."
   },
   "rotulo": "SC · Joinville",
   "unidade": "OrthoDontic · Aventureiro",
   "cabecalho": {
     "nota": 4.9,
     "avaliacoes": 170,
-    "ritmo": 5.9,
+    "ritmo": 6.0,
     "meses_seguidos": 2,
-    "posicao": 13,
-    "de": 17
+    "posicao": 1,
+    "de": 15,
+    "amostra_lida": 170,
+    "amostra_dias": 863,
+    "amostra_truncada": false,
+    "ritmo_comparavel": true,
+    "porque_fora_do_ranking": null
   },
   "faixa": "amarela",
-  "urgencia": 50,
+  "urgencia": 30,
   "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
@@ -55,8 +60,7 @@
       "medicoes": null,
       "fonte": "scripts/fila.py",
       "a_favor": [
-        "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 5.9 avaliações/mês",
-        "13º lugar de 17 clínicas medidas na praça"
+        "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 6.0 avaliações/mês"
       ],
       "contra": [],
       "o_que_aumentaria": "o resultado medido na coleta seguinte (dados/serie/acoes.jsonl)",
@@ -68,19 +72,40 @@
       "peso": 30,
       "titulo": "O contador de avaliações parou",
       "chave": "parada",
-      "fato": "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 5.9 avaliações/mês",
+      "fato": "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 6.0 avaliações/mês",
       "fonte": "dados/serie/reviews.jsonl"
-    },
-    {
-      "peso": 20,
-      "titulo": "Está na metade de baixo da própria praça",
-      "chave": "posicao",
-      "fato": "13º lugar de 17 clínicas medidas na praça",
-      "fonte": "dados/portal/rede_cruzamento.json"
     }
   ],
   "quem_avanca": null,
-  "o_que_mudou": null,
+  "o_que_mudou": {
+    "local_id": "ortho_joi_aventureiro",
+    "nome": "OrthoDontic",
+    "proprio": true,
+    "aparelho": true,
+    "de": "2026-08-12",
+    "ate": "2026-08-13",
+    "dias": 1,
+    "antes": 170,
+    "agora": 170,
+    "delta": 0,
+    "nota_antes": 4.9,
+    "nota_agora": 4.9,
+    "ritmo_do_periodo": 0.0,
+    "historico": {
+      "desde": "2026-08-12",
+      "ate": "2026-08-13",
+      "dias": 1,
+      "medicoes": 2,
+      "antes": 170,
+      "agora": 170,
+      "delta": 0,
+      "ritmo_do_periodo": 0.0,
+      "nota_antes": 4.9,
+      "nota_agora": 4.9
+    },
+    "eventos": [],
+    "aviso": "a praça é medida há 1 dia (2 medições) — a leitura ainda diz pouco e engorda a cada coleta"
+  },
   "sem_resposta": {
     "abertas": null,
     "com_texto": null,
@@ -90,19 +115,19 @@
   "voz_do_paciente": [
     {
       "o_que_e": "Explica o que vai fazer, antes de fazer",
-      "pct": 3.2
+      "pct": 2.4
     },
     {
       "o_que_e": "Atende na hora marcada",
-      "pct": 1.1
+      "pct": 1.6
     },
     {
       "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
-      "pct": 2.1
+      "pct": 1.6
     },
     {
       "o_que_e": "Cuida de quem tem medo de dentista",
-      "pct": 1.1
+      "pct": 0.8
     },
     {
       "o_que_e": "Resolve no mesmo dia",
@@ -110,15 +135,15 @@
     },
     {
       "o_que_e": "Sabe atender criança",
-      "pct": 1.1
+      "pct": 1.6
     },
     {
       "o_que_e": "Continua presente depois que vendeu",
-      "pct": 1.1
+      "pct": 0.8
     },
     {
       "o_que_e": "Tem profissional que o paciente chama pelo nome",
-      "pct": 8.5
+      "pct": 7.2
     }
   ],
   "rival": {
@@ -131,57 +156,57 @@
         "eixo": "pos_venda",
         "o_que_e": "Continua presente depois que vendeu",
         "quem": "Dr Fabiano Chaves - Clínica Integrada",
-        "eles": 10.4,
-        "nos": 1.1,
-        "razao": 9.8
-      },
-      {
-        "eixo": "trata_crianca",
-        "o_que_e": "Sabe atender criança",
-        "quem": "Dr Fabiano Chaves - Clínica Integrada",
-        "eles": 7.3,
-        "nos": 1.1,
-        "razao": 6.9
-      },
-      {
-        "eixo": "hora_marcada_e_hora",
-        "o_que_e": "Atende na hora marcada",
-        "quem": "Dr Fabiano Chaves - Clínica Integrada",
-        "eles": 5.2,
-        "nos": 1.1,
-        "razao": 4.9
-      },
-      {
-        "eixo": "acolhimento_do_medo",
-        "o_que_e": "Cuida de quem tem medo de dentista",
-        "quem": "Dr Fabiano Chaves - Clínica Integrada",
-        "eles": 5.2,
-        "nos": 1.1,
-        "razao": 4.9
-      },
-      {
-        "eixo": "preco_claro",
-        "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
-        "quem": "Odonto e Você",
-        "eles": 8.8,
-        "nos": 2.1,
-        "razao": 4.1
+        "eles": 12.6,
+        "nos": 0.8,
+        "razao": 15.8
       },
       {
         "eixo": "gente_com_nome",
         "o_que_e": "Tem profissional que o paciente chama pelo nome",
         "quem": "Dr Fabiano Chaves - Clínica Integrada",
-        "eles": 34.4,
-        "nos": 8.5,
-        "razao": 4.0
+        "eles": 35.3,
+        "nos": 7.2,
+        "razao": 4.9
+      },
+      {
+        "eixo": "hora_marcada_e_hora",
+        "o_que_e": "Atende na hora marcada",
+        "quem": "Dr Fabiano Chaves - Clínica Integrada",
+        "eles": 6.3,
+        "nos": 1.6,
+        "razao": 3.9
+      },
+      {
+        "eixo": "preco_claro",
+        "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
+        "quem": "Odonto e Você",
+        "eles": 6.2,
+        "nos": 1.6,
+        "razao": 3.9
+      },
+      {
+        "eixo": "acolhimento_do_medo",
+        "o_que_e": "Cuida de quem tem medo de dentista",
+        "quem": "Dr Fabiano Chaves - Clínica Integrada",
+        "eles": 2.5,
+        "nos": 0.8,
+        "razao": 3.2
       },
       {
         "eixo": "explica_o_tratamento",
         "o_que_e": "Explica o que vai fazer, antes de fazer",
         "quem": "Dr Fabiano Chaves - Clínica Integrada",
-        "eles": 6.2,
-        "nos": 3.2,
-        "razao": 2.0
+        "eles": 6.3,
+        "nos": 2.4,
+        "razao": 2.6
+      },
+      {
+        "eixo": "trata_crianca",
+        "o_que_e": "Sabe atender criança",
+        "quem": "Dr Fabiano Chaves - Clínica Integrada",
+        "eles": 4.2,
+        "nos": 1.6,
+        "razao": 2.6
       }
     ],
     "fora": [
@@ -196,9 +221,9 @@
         "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 74 avaliações citam aparelho"
       },
       {
-        "nome": "Uniclass Odontologia Estética",
+        "nome": "G7 Odontologia",
         "fora": true,
-        "por_que_fora": "zona cinzenta: 4 de 93 avaliações citam aparelho (4%) — faz aparelho, mas não é o negócio principal"
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 103 avaliações citam aparelho"
       },
       {
         "nome": "DoctorÁgape",
@@ -206,19 +231,14 @@
         "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 68 avaliações citam aparelho"
       },
       {
-        "nome": "ODONTOCOT",
-        "fora": true,
-        "por_que_fora": "a voz do cliente é de implante: só 0 de 72 avaliações citam aparelho"
-      },
-      {
-        "nome": "Via Odonto Floresta",
-        "fora": true,
-        "por_que_fora": "a voz do cliente é de implante: só 0 de 80 avaliações citam aparelho"
-      },
-      {
         "nome": "Sorria Studio Odontologia - Unidade Atiradores",
         "fora": true,
         "por_que_fora": "a voz do cliente é de implante: só 0 de 110 avaliações citam aparelho"
+      },
+      {
+        "nome": "Odontocompany",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 2 de 107 avaliações citam aparelho"
       },
       {
         "nome": "Duo Oral Care",
@@ -226,19 +246,24 @@
         "por_que_fora": "a voz do cliente é de implante: só 0 de 91 avaliações citam aparelho"
       },
       {
+        "nome": "ODONTOCOT",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 72 avaliações citam aparelho"
+      },
+      {
         "nome": "Dental Co",
         "fora": true,
         "por_que_fora": "a voz do cliente é de implante: só 1 de 96 avaliações citam aparelho"
       },
       {
-        "nome": "G7 Odontologia",
+        "nome": "Via Odonto Floresta",
         "fora": true,
-        "por_que_fora": "a voz do cliente é de implante: só 0 de 103 avaliações citam aparelho"
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 80 avaliações citam aparelho"
       },
       {
-        "nome": "Odontocompany",
+        "nome": "Uniclass Odontologia Estética",
         "fora": true,
-        "por_que_fora": "a voz do cliente é de odontologia geral: só 2 de 107 avaliações citam aparelho"
+        "por_que_fora": "zona cinzenta: 4 de 93 avaliações citam aparelho (4%) — faz aparelho, mas não é o negócio principal"
       },
       {
         "nome": "Tio Gui Odontopediatria",
@@ -386,8 +411,8 @@
     "local_id": "ortho_joi_aventureiro",
     "unidade": "OrthoDontic · Aventureiro",
     "rotulo": "SC · Joinville",
-    "com_texto": 94,
-    "sem_estagio": 63,
+    "com_texto": 125,
+    "sem_estagio": 87,
     "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
     "estagios": [
       {
@@ -396,13 +421,13 @@
         "o_que_e": "como me acharam",
         "quem_resolve": "marketing e ficha do Google",
         "medido": true,
-        "avaliacoes": 9,
+        "avaliacoes": 13,
         "dor": 0,
-        "elogio": 9,
+        "elogio": 13,
         "pct_dor": 0,
         "amostra_curta": false,
         "exemplos": [],
-        "frase": "9 avaliações falam deste momento, nenhuma com nota baixa",
+        "frase": "13 avaliações falam deste momento, nenhuma com nota baixa",
         "porque_vazio": null
       },
       {
@@ -453,13 +478,19 @@
         "o_que_e": "chegar e esperar",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 8,
-        "dor": 1,
-        "elogio": 7,
-        "pct_dor": 12,
+        "avaliacoes": 10,
+        "dor": 2,
+        "elogio": 8,
+        "pct_dor": 20,
         "amostra_curta": false,
-        "exemplos": [],
-        "frase": "8 avaliações falam deste momento, 1 com nota baixa",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2024-05-16",
+            "texto": "Dia 15/05 tinha consulta marcada para as 18:45 cheguei as 18:49 e a dentista não quis atender porque estava atrasado. Já cheguei a esperar por 20 minutos em outras consultas, isso é um absurdo. Péssimo atendimento 😡 Isso aconteceu na clínica da rua Blumenau."
+          }
+        ],
+        "frase": "10 avaliações falam deste momento, 2 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -498,13 +529,19 @@
         "o_que_e": "a cadeira",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 11,
-        "dor": 0,
-        "elogio": 11,
-        "pct_dor": 0,
+        "avaliacoes": 13,
+        "dor": 1,
+        "elogio": 12,
+        "pct_dor": 8,
         "amostra_curta": false,
-        "exemplos": [],
-        "frase": "11 avaliações falam deste momento, nenhuma com nota baixa",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2024-05-16",
+            "texto": "Dia 15/05 tinha consulta marcada para as 18:45 cheguei as 18:49 e a dentista não quis atender porque estava atrasado. Já cheguei a esperar por 20 minutos em outras consultas, isso é um absurdo. Péssimo atendimento 😡 Isso aconteceu na clínica da rua Blumenau."
+          }
+        ],
+        "frase": "13 avaliações falam deste momento, 1 com nota baixa",
         "porque_vazio": null
       },
       {
@@ -573,16 +610,16 @@
     "e_clinico": null,
     "confianca": {
       "natureza": "fato",
-      "confianca": "media",
+      "confianca": "alta",
       "medido": true,
-      "amostra": 94,
-      "janela_dias": null,
-      "medicoes": null,
+      "amostra": 125,
+      "janela_dias": 1,
+      "medicoes": 2,
       "fonte": "dados/serie/reviews.jsonl",
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": "mais avaliações com texto nesta loja",
-      "procedencia": "medido em 94 avaliações"
+      "procedencia": "medido em 125 avaliações, 2 medições, 1 dia de janela"
     }
   },
   "meu_territorio": {
@@ -695,7 +732,7 @@
         "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
         "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
         "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": 5.9,
+        "depois": 6.0,
         "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
         "dias": 1
@@ -713,7 +750,7 @@
         "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
         "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
         "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": 13.0,
+        "depois": 1.0,
         "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
         "dias": 1
@@ -1146,6 +1183,14 @@
     "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
   },
   "eventos": [
+    {
+      "data": "2026-08-13",
+      "tipo": "rival_contador",
+      "quem": "rival",
+      "nome": "Odonto e Você",
+      "texto": "Odonto e Você: ganhou 1 avaliação (695 → 696)",
+      "fonte": "dados/serie/places.jsonl"
+    },
     {
       "data": "2026-08-12",
       "tipo": "alerta",

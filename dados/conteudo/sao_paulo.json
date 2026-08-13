@@ -1,67 +1,67 @@
 {
  "praca_id": "sao_paulo",
  "papel": "franquia",
- "eyebrow": "Praça · quatro unidades, quatro diagnósticos",
- "tese_titulo": "A pergunta “a rede aparece em São Paulo?” não tem resposta única",
- "tese": "A leitura do município diz que as quatro unidades de São Paulo aparecem em <b>0 de 193 buscas</b>. A frase é verdadeira e a conclusão que ela sugere é falsa: numa cidade de 11,9 milhões ninguém digita o nome do município — o paciente busca de onde está. Refazendo as mesmas frases <b>a partir do endereço de cada clínica</b>, o resultado se separa: a de São Miguel Paulista é o <b>primeiro resultado nas cinco</b>, a do Tatuapé aparece em uma, a da República em uma, a da Lapa em três. Quatro unidades, quatro diagnósticos, e a medida antiga mandaria as quatro fazerem a mesma coisa.",
+ "eyebrow": "Praça · quatro unidades, quatro mercados",
+ "tese_titulo": "Quatro unidades, quatro mercados, um diagnóstico só não serve",
+ "tese": "A leitura da cidade dizia que as quatro unidades de São Paulo não aparecem em NENHUMA das 193 buscas testadas. Medindo da porta de cada uma, o quadro se inverte e se separa: a de <b>São Miguel Paulista é o primeiro resultado nas cinco</b> buscas, a do Tatuapé aparece em 1, a da República em 1 e a da Lapa em 3. Numa cidade de 11,9 milhões ninguém disputa o nome do município — o paciente busca de onde está. No ritmo a separação é a mesma: São Miguel faz <b>29,0 avaliações por mês</b> e é a 1ª entre as 3 clínicas lidas por inteiro, de 18 medidas; a República faz <b>0,3</b> e tem nota 3,0.",
  "dna": [
   {
    "l": "A língua",
-   "t": "São Paulo não é uma praça, é um conjunto de praças. <b>49 bairros medidos</b> e a rede está em quatro; o mais cheio, Bela Vista, tem 39 clínicas e nenhuma unidade nossa."
+   "t": "Quatro unidades em quatro bairros que não conversam: Lapa, São Miguel Paulista, Tatuapé e República. <b>49 bairros medidos</b>, a rede em quatro deles."
   },
   {
    "l": "Temperamento",
-   "t": "Paciente de metrópole resolve perto de casa ou do trabalho. Por isso a busca por município não responde nada aqui, e a busca por endereço responde tudo."
+   "t": "Metrópole de deslocamento curto. Ninguém atravessa São Paulo para pôr aparelho, e é por isso que a busca do município inteiro não mede nada aqui."
   },
   {
    "l": "A alavanca",
-   "t": "São Miguel Paulista. <b>29,0 avaliações por mês</b>, nota 4,9, 3ª de 18 na praça e primeiro lugar nas cinco buscas do próprio bairro — com <b>zero concorrentes</b> num raio de 1 km."
+   "t": "São Miguel Paulista. <b>1º lugar nas cinco buscas</b> feitas da porta dela e 29,0 avaliações por mês — a maior da praça entre as lidas por inteiro. O que ela faz é observável de dentro da rede."
   },
   {
    "l": "A ferida",
-   "t": "A República. Nota <b>3,0</b>, 22 avaliações, 0,3 por mês, <b>11 negativas sem resposta</b> e a Sorridents Anhangabaú a 20 metros. É a pior combinação da rede inteira."
+   "t": "A República: <b>nota 3,0</b>, 22 avaliações e 0,3 por mês. É a pior nota das 45 unidades acompanhadas na rede inteira."
   },
   {
    "l": "Jamais",
-   "t": "Comparar as quatro entre si. São Miguel tem zero concorrentes em 1 km; a República tem 16, e quatro deles disputam aparelho. Cobrar o ritmo de uma da outra é cobrar o bairro, não a operação.",
+   "t": "Comparar as quatro pelo número da cidade. Elas estão em bairros com <b>0, 2, 2 e 16 clínicas num raio de 1 km</b>: são quatro mercados, e uma meta só para os quatro seria arbitrária.",
    "proibicao": true
   }
  ],
  "plano": [
   {
    "n": "01",
-   "t": "Tratar a República como emergência",
-   "d": "nota 3,0, 11 avaliações negativas abertas e a concorrente direta a 20 metros; é reputação e é balcão, não campanha",
-   "prazo": "15 dias",
-   "esforco": "alto"
-  },
-  {
-   "n": "02",
-   "t": "Copiar a ficha de São Miguel Paulista",
-   "d": "primeiro lugar nas cinco buscas do próprio bairro; o cadastro dela é o modelo para as outras três",
-   "prazo": "15 dias",
+   "t": "Levar a rotina de São Miguel Paulista para as outras três",
+   "d": "1º lugar nas cinco buscas de porta e 29,0 por mês contra 6,5, 1,0 e 0,3 — a diferença é rotina, e está dentro da própria rede",
+   "prazo": "30 dias",
    "esforco": "baixo"
   },
   {
-   "n": "03",
-   "t": "Revisar a ficha do Tatuapé e da República",
-   "d": "1 de 5 buscas de perto cada uma, com Sorridents a 470 e a 20 metros; aqui a encontrabilidade é problema real",
-   "prazo": "30 dias",
+   "n": "02",
+   "t": "Tratar a República como emergência de reputação",
+   "d": "nota 3,0 é a pior das 45 unidades acompanhadas; antes de qualquer mídia, é isso",
+   "prazo": "15 dias",
    "esforco": "médio"
+  },
+  {
+   "n": "03",
+   "t": "Parar de usar a busca da cidade como meta",
+   "d": "0 de 193 é verdade e não mede nada nesta escala; a medida desta praça é a busca feita da porta de cada unidade",
+   "prazo": "imediato",
+   "esforco": "baixo"
   },
   {
    "n": "04",
-   "t": "Consertar a contratação do Tatuapé",
-   "d": "5 de 9 avaliações que falam de preço e contrato são de 1 ou 2 estrelas, com troca de dentista citada",
-   "prazo": "30 dias",
-   "esforco": "médio"
+   "t": "Terminar de ler a Lapa",
+   "d": "189 avaliações no Google e 120 lidas; enquanto isso ela fica fora da classificação da praça",
+   "prazo": "7 dias",
+   "esforco": "baixo"
   },
   {
    "n": "05",
-   "t": "Entrar no leilão",
-   "d": "49 anunciantes compram aparelho em São Paulo e nenhum é da rede — é o maior mercado de mídia da amostra e a rede está fora dele",
-   "prazo": "60 dias",
-   "esforco": "alto"
+   "t": "Refazer as mesmas buscas de porta em 30 dias",
+   "d": "as mesmas 5 frases, os mesmos 4 endereços, o mesmo raio — é o único jeito de saber se mudou",
+   "prazo": "30 dias",
+   "esforco": "baixo"
   }
  ],
  "base": "2.050 avaliações medidas · 1.495 com texto · 188 clínicas varridas · 4 unidades da rede",

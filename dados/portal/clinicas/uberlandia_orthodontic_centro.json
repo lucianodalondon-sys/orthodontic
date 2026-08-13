@@ -24,11 +24,16 @@
     "avaliacoes": 61,
     "ritmo": 0.8,
     "meses_seguidos": 0,
-    "posicao": 16,
-    "de": 16
+    "posicao": 2,
+    "de": 2,
+    "amostra_lida": 61,
+    "amostra_dias": 2395,
+    "amostra_truncada": false,
+    "ritmo_comparavel": true,
+    "porque_fora_do_ranking": null
   },
   "faixa": "vermelha",
-  "urgencia": 80,
+  "urgencia": 60,
   "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
@@ -52,8 +57,8 @@
       "fonte": "scripts/fila.py",
       "a_favor": [
         "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 0.8 avaliações/mês",
-        "16º lugar de 16 clínicas medidas na praça",
-        "nota 4.2 contra mediana 4.8 das 16 clínicas medidas na praça"
+        "nota 4.2 contra mediana 4.8 das 16 clínicas medidas na praça",
+        "109 anúncios no ar de 44 anunciantes, e nenhum é da rede"
       ],
       "contra": [],
       "o_que_aumentaria": "o resultado medido na coleta seguinte (dados/serie/acoes.jsonl)",
@@ -67,13 +72,6 @@
       "chave": "parada",
       "fato": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 0.8 avaliações/mês",
       "fonte": "dados/serie/reviews.jsonl"
-    },
-    {
-      "peso": 20,
-      "titulo": "Está na metade de baixo da própria praça",
-      "chave": "posicao",
-      "fato": "16º lugar de 16 clínicas medidas na praça",
-      "fonte": "dados/portal/rede_cruzamento.json"
     },
     {
       "peso": 15,
@@ -834,24 +832,6 @@
         "dias": 0
       },
       {
-        "arco_id": "uberlandia_orthodontic_centro|silencio",
-        "local_id": "uberlandia_orthodontic_centro",
-        "praca_id": "uberlandia",
-        "gatilho": "silencio",
-        "problema": "109 anúncios no ar de 44 anunciantes, e nenhum é da rede",
-        "evidencia": "dados/serie/fila_historico.jsonl",
-        "aberto_em": "2026-08-13",
-        "metrica": null,
-        "antes": null,
-        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
-        "acao_recomendada": "sem ação padrão para este gatilho",
-        "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": null,
-        "medido_em": null,
-        "veredito": "aberto",
-        "dias": 0
-      },
-      {
         "arco_id": "uberlandia_orthodontic_centro|nota",
         "local_id": "uberlandia_orthodontic_centro",
         "praca_id": "uberlandia",
@@ -900,7 +880,25 @@
         "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
         "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
         "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": 16.0,
+        "depois": 2.0,
+        "medido_em": "2026-08-13",
+        "veredito": "cedo_demais",
+        "dias": 0
+      },
+      {
+        "arco_id": "uberlandia_orthodontic_centro|silencio",
+        "local_id": "uberlandia_orthodontic_centro",
+        "praca_id": "uberlandia",
+        "gatilho": "silencio",
+        "problema": "109 anúncios no ar de 44 anunciantes, e nenhum é da rede",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": null,
+        "antes": null,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "sem ação padrão para este gatilho",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
         "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
         "dias": 0

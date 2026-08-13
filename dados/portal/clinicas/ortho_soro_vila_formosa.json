@@ -28,11 +28,16 @@
     "avaliacoes": 161,
     "ritmo": 11.4,
     "meses_seguidos": 2,
-    "posicao": 10,
-    "de": 17
+    "posicao": 1,
+    "de": 3,
+    "amostra_lida": 120,
+    "amostra_dias": 320,
+    "amostra_truncada": false,
+    "ritmo_comparavel": true,
+    "porque_fora_do_ranking": null
   },
   "faixa": "amarela",
-  "urgencia": 55,
+  "urgencia": 35,
   "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
@@ -56,7 +61,6 @@
       "fonte": "scripts/fila.py",
       "a_favor": [
         "a primeira avaliação é de 2025-09-19, há 10 meses, e o ritmo medido é 11.4/mês — a unidade ainda não engatou",
-        "10º lugar de 17 clínicas medidas na praça",
         "125 anúncios no ar de 47 anunciantes, e nenhum é da rede"
       ],
       "contra": [],
@@ -71,13 +75,6 @@
       "chave": "nao_engatou",
       "fato": "a primeira avaliação é de 2025-09-19, há 10 meses, e o ritmo medido é 11.4/mês — a unidade ainda não engatou",
       "fonte": "dados/serie/reviews.jsonl"
-    },
-    {
-      "peso": 20,
-      "titulo": "Está na metade de baixo da própria praça",
-      "chave": "posicao",
-      "fato": "10º lugar de 17 clínicas medidas na praça",
-      "fonte": "dados/portal/rede_cruzamento.json"
     },
     {
       "peso": 15,
@@ -703,7 +700,7 @@
         "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
         "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
         "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": 10.0,
+        "depois": 1.0,
         "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
         "dias": 1
