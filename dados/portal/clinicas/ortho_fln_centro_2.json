@@ -615,14 +615,14 @@
           "natureza": "fato",
           "confianca": "media",
           "medido": true,
-          "amostra": 116,
+          "amostra": 236,
           "janela_dias": null,
           "medicoes": 1,
           "fonte": "dados/serie/anuncios_observados.jsonl",
           "a_favor": [],
           "contra": [],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 116 anúncios no ar, 1 medição"
+          "procedencia": "medido em 236 anúncios no ar, 1 medição"
         }
       }
     ],
@@ -704,30 +704,30 @@
   "oferta_da_cidade": {
     "praca_id": "florianopolis",
     "rotulo": "SC · Florianópolis",
-    "anuncios_de_aparelho": 35,
-    "anunciantes": 14,
-    "fora_do_produto": 81,
+    "anuncios_de_aparelho": 36,
+    "anunciantes": 15,
+    "fora_do_produto": 83,
     "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
     "sem_texto": 0,
     "amostra_curta": false,
-    "tese": "A disputa desta cidade é por avaliação grátis — 9 dos 35 anúncios de aparelho medidos falam disso, seguido de alinhador invisível.",
+    "tese": "A disputa desta cidade é por avaliação grátis — 10 dos 36 anúncios de aparelho medidos falam disso, seguido de alinhador invisível.",
     "posicao_vaga": "Ninguém está falando de preço na frente — a cidade disputa por número; entrar aqui é entrar na briga mais cara.",
     "eixos": [
       {
         "eixo": "avaliacao_gratis",
         "rotulo": "Avaliação grátis",
         "o_que_significa": "compra a visita, não a venda — é isca de agenda",
-        "anuncios": 9,
-        "pct": 26,
-        "frase": "9 anúncios de aparelho falam disso"
+        "anuncios": 10,
+        "pct": 28,
+        "frase": "10 anúncios de aparelho falam disso"
       },
       {
         "eixo": "alinhador",
         "rotulo": "Alinhador invisível",
         "o_que_significa": "produto de ticket alto e público adulto",
-        "anuncios": 6,
-        "pct": 17,
-        "frase": "6 anúncios de aparelho falam disso"
+        "anuncios": 7,
+        "pct": 19,
+        "frase": "7 anúncios de aparelho falam disso"
       },
       {
         "eixo": "autoridade",
@@ -872,9 +872,9 @@
   "anuncios_da_cidade": {
     "e_da_cidade": true,
     "rotulo": "SC · Florianópolis",
-    "manchete": "14 anunciantes compram aparelho em SC · Florianópolis, e nenhum é da rede.",
-    "anuncios_ativos": 35,
-    "anunciantes_total": 14,
+    "manchete": "15 anunciantes compram aparelho em SC · Florianópolis, e nenhum é da rede.",
+    "anuncios_ativos": 36,
+    "anunciantes_total": 15,
     "somos_um_deles": false,
     "anunciantes": [
       {
@@ -1028,6 +1028,21 @@
         "de_outra_unidade": null
       },
       {
+        "nome": "NK Campeche",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "116105961410674"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Muitas pessoas têm dúvida entre usar alinhadores invisíveis ou aparelho tradicional.\n\nA verdade é que não existe uma única resposta. Cada caso precisa ser avaliado com atenção para entender qual tratamento oferece mais eficiência, conforto e previsibilidade.\n\nA ortodontia evoluiu…",
+        "de_outra_unidade": null
+      },
+      {
         "nome": "Odonto Excellence Florianópolis - Agronômica",
         "nosso": false,
         "anuncios": 1,
@@ -1088,7 +1103,7 @@
         "de_outra_unidade": null
       }
     ],
-    "fora_do_produto": 81,
+    "fora_do_produto": 83,
     "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
   },
   "eventos": [

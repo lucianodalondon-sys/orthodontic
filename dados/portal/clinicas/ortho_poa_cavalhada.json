@@ -820,33 +820,178 @@
   "movimentos": {
     "eventos": [
       {
-        "evento_id": "porto_alegre|linha_de_base_anuncios|-",
+        "evento_id": "porto_alegre|anunciante_novo|Amor Saúde - Porto Alegre Norte",
         "data": "2026-08-13",
         "praca_id": "porto_alegre",
         "rotulo": "RS · Porto Alegre",
         "local_id": null,
-        "entidade_id": null,
-        "tipo": "linha_de_base_anuncios",
+        "entidade_id": "Amor Saúde - Porto Alegre Norte",
+        "tipo": "anunciante_novo",
         "natureza": "fato",
-        "severidade": "baixa",
-        "titulo": "Linha de base de anúncios criada",
-        "fato": "primeira medição de anúncios desta praça, em 2026-08-12",
-        "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-        "decisao": "recoletar na próxima rodada para abrir o delta",
+        "severidade": "media",
+        "titulo": "Anunciante novo: Amor Saúde - Porto Alegre Norte",
+        "fato": "1 anúncio no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+        "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+        "decisao": "ler a oferta dele antes de responder",
         "fonte": "dados/serie/anuncios_observados.jsonl",
-        "evidencia": {},
+        "evidencia": {
+          "anunciante": "Amor Saúde - Porto Alegre Norte",
+          "anuncios": 1
+        },
         "confianca": {
           "natureza": "fato",
-          "confianca": "media",
+          "confianca": "alta",
           "medido": true,
-          "amostra": 160,
+          "amostra": 112,
           "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/serie/anuncios_observados.jsonl",
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
           "a_favor": [],
-          "contra": [],
+          "contra": [
+            "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+          ],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 160 anúncios no ar, 1 medição"
+          "procedencia": "medido em 112 anúncios medidos, 2 medições"
+        }
+      },
+      {
+        "evento_id": "porto_alegre|anunciante_novo|Cartão Meu Dentista Poa RS",
+        "data": "2026-08-13",
+        "praca_id": "porto_alegre",
+        "rotulo": "RS · Porto Alegre",
+        "local_id": null,
+        "entidade_id": "Cartão Meu Dentista Poa RS",
+        "tipo": "anunciante_novo",
+        "natureza": "fato",
+        "severidade": "media",
+        "titulo": "Anunciante novo: Cartão Meu Dentista Poa RS",
+        "fato": "4 anúncios no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+        "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+        "decisao": "ler a oferta dele antes de responder",
+        "fonte": "dados/serie/anuncios_observados.jsonl",
+        "evidencia": {
+          "anunciante": "Cartão Meu Dentista Poa RS",
+          "anuncios": 4
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "alta",
+          "medido": true,
+          "amostra": 112,
+          "janela_dias": null,
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
+          "a_favor": [],
+          "contra": [
+            "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+          ],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 112 anúncios medidos, 2 medições"
+        }
+      },
+      {
+        "evento_id": "porto_alegre|anunciante_novo|Dr. Ricardo Scarparo",
+        "data": "2026-08-13",
+        "praca_id": "porto_alegre",
+        "rotulo": "RS · Porto Alegre",
+        "local_id": null,
+        "entidade_id": "Dr. Ricardo Scarparo",
+        "tipo": "anunciante_novo",
+        "natureza": "fato",
+        "severidade": "media",
+        "titulo": "Anunciante novo: Dr. Ricardo Scarparo",
+        "fato": "1 anúncio no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+        "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+        "decisao": "ler a oferta dele antes de responder",
+        "fonte": "dados/serie/anuncios_observados.jsonl",
+        "evidencia": {
+          "anunciante": "Dr. Ricardo Scarparo",
+          "anuncios": 1
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "alta",
+          "medido": true,
+          "amostra": 112,
+          "janela_dias": null,
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
+          "a_favor": [],
+          "contra": [
+            "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+          ],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 112 anúncios medidos, 2 medições"
+        }
+      },
+      {
+        "evento_id": "porto_alegre|anunciante_novo|Dra Marina Py",
+        "data": "2026-08-13",
+        "praca_id": "porto_alegre",
+        "rotulo": "RS · Porto Alegre",
+        "local_id": null,
+        "entidade_id": "Dra Marina Py",
+        "tipo": "anunciante_novo",
+        "natureza": "fato",
+        "severidade": "media",
+        "titulo": "Anunciante novo: Dra Marina Py",
+        "fato": "1 anúncio no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+        "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+        "decisao": "ler a oferta dele antes de responder",
+        "fonte": "dados/serie/anuncios_observados.jsonl",
+        "evidencia": {
+          "anunciante": "Dra Marina Py",
+          "anuncios": 1
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "alta",
+          "medido": true,
+          "amostra": 112,
+          "janela_dias": null,
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
+          "a_favor": [],
+          "contra": [
+            "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+          ],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 112 anúncios medidos, 2 medições"
+        }
+      },
+      {
+        "evento_id": "porto_alegre|anunciante_novo|Sitch Bonh Odontologia",
+        "data": "2026-08-13",
+        "praca_id": "porto_alegre",
+        "rotulo": "RS · Porto Alegre",
+        "local_id": null,
+        "entidade_id": "Sitch Bonh Odontologia",
+        "tipo": "anunciante_novo",
+        "natureza": "fato",
+        "severidade": "media",
+        "titulo": "Anunciante novo: Sitch Bonh Odontologia",
+        "fato": "2 anúncios no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+        "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+        "decisao": "ler a oferta dele antes de responder",
+        "fonte": "dados/serie/anuncios_observados.jsonl",
+        "evidencia": {
+          "anunciante": "Sitch Bonh Odontologia",
+          "anuncios": 2
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "alta",
+          "medido": true,
+          "amostra": 112,
+          "janela_dias": null,
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
+          "a_favor": [],
+          "contra": [
+            "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+          ],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 112 anúncios medidos, 2 medições"
         }
       }
     ],
@@ -854,7 +999,7 @@
     "resumo": {
       "praca_id": "porto_alegre",
       "rotulo": "RS · Porto Alegre",
-      "eventos": 1,
+      "eventos": 5,
       "estado": "medido",
       "janela": "2026-08-12 → 2026-08-13",
       "medicoes_da_praca": 2,
@@ -1028,62 +1173,70 @@
   "oferta_da_cidade": {
     "praca_id": "porto_alegre",
     "rotulo": "RS · Porto Alegre",
-    "anuncios_de_aparelho": 41,
-    "anunciantes": 14,
-    "fora_do_produto": 117,
+    "anuncios_de_aparelho": 52,
+    "anunciantes": 17,
+    "fora_do_produto": 136,
     "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
     "sem_texto": 2,
     "amostra_curta": false,
-    "tese": "A disputa desta cidade é por alinhador invisível — 19 dos 41 anúncios de aparelho medidos falam disso, seguido de avaliação grátis.",
+    "tese": "A disputa desta cidade é por alinhador invisível — 26 dos 52 anúncios de aparelho medidos falam disso, seguido de avaliação grátis.",
     "posicao_vaga": "Ninguém está falando de sem entrada — tira a barreira do primeiro pagamento — ataca quem não tem reserva.",
     "eixos": [
       {
         "eixo": "alinhador",
         "rotulo": "Alinhador invisível",
         "o_que_significa": "produto de ticket alto e público adulto",
-        "anuncios": 19,
-        "pct": 46,
-        "frase": "19 anúncios de aparelho falam disso"
+        "anuncios": 26,
+        "pct": 50,
+        "frase": "26 anúncios de aparelho falam disso"
       },
       {
         "eixo": "avaliacao_gratis",
         "rotulo": "Avaliação grátis",
         "o_que_significa": "compra a visita, não a venda — é isca de agenda",
-        "anuncios": 6,
-        "pct": 15,
-        "frase": "6 anúncios de aparelho falam disso"
+        "anuncios": 9,
+        "pct": 17,
+        "frase": "9 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "autoridade",
+        "rotulo": "Autoridade técnica",
+        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+        "anuncios": 7,
+        "pct": 13,
+        "frase": "7 anúncios de aparelho falam disso"
       },
       {
         "eixo": "urgencia",
         "rotulo": "Urgência e escassez",
         "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
         "anuncios": 5,
-        "pct": 12,
+        "pct": 10,
         "frase": "5 anúncios de aparelho falam disso"
       },
       {
-        "eixo": "autoridade",
-        "rotulo": "Autoridade técnica",
-        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
-        "anuncios": 5,
-        "pct": 12,
-        "frase": "5 anúncios de aparelho falam disso"
+        "eixo": "parcelamento",
+        "rotulo": "Parcelamento",
+        "o_que_significa": "vende a mensalidade, não o tratamento",
+        "anuncios": 4,
+        "pct": 8,
+        "frase": "4 anúncios de aparelho falam disso"
       },
       {
         "eixo": "preco",
         "rotulo": "Preço na frente",
         "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
         "anuncios": 3,
-        "pct": 7,
+        "pct": 6,
         "frase": "3 anúncios de aparelho falam disso"
       },
       {
-        "eixo": "parcelamento",
-        "rotulo": "Parcelamento",
-        "o_que_significa": "vende a mensalidade, não o tratamento",
-        "anuncios": 3,
-        "pct": 7,
-        "frase": "3 anúncios de aparelho falam disso"
+        "eixo": "estetico",
+        "rotulo": "Aparelho estético",
+        "o_que_significa": "vende discrição — público que trabalha de frente",
+        "anuncios": 1,
+        "pct": 2,
+        "frase": "1 anúncio de aparelho fala disso"
       },
       {
         "eixo": "publico_infantil",
@@ -1105,14 +1258,6 @@
         "eixo": "sem_entrada",
         "rotulo": "Sem entrada",
         "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "estetico",
-        "rotulo": "Aparelho estético",
-        "o_que_significa": "vende discrição — público que trabalha de frente",
         "anuncios": 0,
         "pct": 0,
         "frase": "nenhum anúncio de aparelho fala disso"
@@ -1159,6 +1304,13 @@
         ]
       },
       {
+        "anunciante": "Sitch Bonh Odontologia",
+        "eixos": [
+          "avaliacao_gratis",
+          "autoridade"
+        ]
+      },
+      {
         "anunciante": "Integrare - Clínicas Odontológicas",
         "eixos": [
           "avaliacao_gratis",
@@ -1185,12 +1337,6 @@
           "avaliacao_gratis",
           "alinhador"
         ]
-      },
-      {
-        "anunciante": "Clinica Geremia",
-        "eixos": [
-          "publico_infantil"
-        ]
       }
     ],
     "e_da_cidade": true
@@ -1199,19 +1345,19 @@
   "anuncios_da_cidade": {
     "e_da_cidade": true,
     "rotulo": "RS · Porto Alegre",
-    "manchete": "14 anunciantes disputam aparelho em RS · Porto Alegre, e a rede é 1 deles.",
-    "anuncios_ativos": 41,
-    "anunciantes_total": 14,
+    "manchete": "17 anunciantes disputam aparelho em RS · Porto Alegre, e a rede é 1 deles.",
+    "anuncios_ativos": 46,
+    "anunciantes_total": 17,
     "somos_um_deles": true,
     "anunciantes": [
       {
         "nome": "OrthoDontic Porto Alegre",
         "nosso": true,
-        "anuncios": 17,
+        "anuncios": 19,
         "paginas": [
           "106390259174920"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1226,7 +1372,7 @@
         "paginas": [
           "602060466320675"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1241,7 +1387,7 @@
         "paginas": [
           "142150759251617"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1256,7 +1402,7 @@
         "paginas": [
           "944211922118098"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1271,7 +1417,7 @@
         "paginas": [
           "103510302093820"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1280,18 +1426,33 @@
         "de_outra_unidade": null
       },
       {
-        "nome": "Hodos Odontologia Rio Grande do Sul",
+        "nome": "Sitch Bonh Odontologia",
         "nosso": false,
         "anuncios": 2,
         "paginas": [
-          "1443286005957979"
+          "109954882153951"
         ],
         "dias_no_ar_maior": null,
         "plataformas": [
           "Meta"
         ],
-        "desde": "2026-08-12",
-        "exemplo": "🎓 AGENDA DE ESPECIALIZAÇÕES | PÓS-GRADUAÇÃO HPG\n\nPorto Alegre já tem agenda definida para os próximos cursos de especialização! 📚🦷\n\nConfira as próximas datas:\n\n📌 Ortodontia — 20/08\n📌 Harmonização Orofacial — 09/09\n📌 Dupla Especialização: Implante + Prótese — 24/09\n📌 Endodontia — …",
+        "desde": "2026-08-13",
+        "exemplo": "PROTESE TOTAL Superior removível \n\nOlha só, quero te dizer uma coisa…\n“Você não nasceu para esconder o sorriso. ❤️\n\nMuitas pessoas acreditam que perder todos os dentes significa perder a alegria de sorrir. Mas a prótese total pode devolver muito mais do que dentes: ela devolve se…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Cartão Meu Dentista Poa RS",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "260515470476169"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Está procurando dentista no Centro de Porto Alegre?\nConheça as opções do Cartão Desconto Meu Dentista para:\n✅ Implante dentário\n✅ Prótese dentária\n✅ Facetas de resina\n✅ Aparelho dentário com instalação no mesmo dia\n\nParcelamento facilitado para aposentados INSS e cartão em até 18…",
         "de_outra_unidade": null
       },
       {
@@ -1301,7 +1462,7 @@
         "paginas": [
           "1167550926440951"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1316,12 +1477,27 @@
         "paginas": [
           "1045511338650185"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
         "desde": "2026-08-12",
         "exemplo": "✨ Seja paciente modelo em Porto Alegre! ✨\n\nQuer cuidar da sua saúde bucal ou estética facial com profissionais em formação supervisionados por especialistas? A HPG Pós-Graduação oferece atendimentos em todas as nossas especializações, incluindo:\n\n🦷 Ortodontia – correção e alinham…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Hodos Odontologia Rio Grande do Sul",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "1443286005957979"
+        ],
+        "dias_no_ar_maior": 1,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "🎓 AGENDA DE ESPECIALIZAÇÕES | PÓS-GRADUAÇÃO HPG\n\nPorto Alegre já tem agenda definida para os próximos cursos de especialização! 📚🦷\n\nConfira as próximas datas:\n\n📌 Ortodontia — 20/08\n📌 Harmonização Orofacial — 09/09\n📌 Dupla Especialização: Implante + Prótese — 24/09\n📌 Endodontia — …",
         "de_outra_unidade": null
       },
       {
@@ -1331,7 +1507,7 @@
         "paginas": [
           "220402174486910"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1346,12 +1522,27 @@
         "paginas": [
           "101571763038087"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
         "desde": "2026-08-12",
         "exemplo": "Você ainda faz manutenção de aparelho e paga tudo separado no dentista?\n\nTroca borrachinha, cola peça, faz limpeza…\ne quando precisa de algo a mais, lá vem custo extra.\n\nAgora imagina ter:\n✔️ Manutenção do aparelho\n✔️ Limpeza\n✔️ Restauração\n✔️ Extração\n✔️ Até tratamento de canal\n…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odonto Bites Tanabi",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "465521829968509"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Seu sorriso merece um cuidado completo, do preventivo aos tratamentos mais avançados!\n\nNa Odonto Bites, reunimos tecnologia, experiência e um atendimento humanizado para oferecer soluções personalizadas para cada paciente.\n\nNossos principais tratamentos:\n✔ Implantes\n✔ Aparelhos o…",
         "de_outra_unidade": null
       },
       {
@@ -1361,7 +1552,7 @@
         "paginas": [
           "260101824091739"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1376,7 +1567,7 @@
         "paginas": [
           "349814562178444"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1391,7 +1582,7 @@
         "paginas": [
           "103510302093820"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1406,7 +1597,7 @@
         "paginas": [
           "105854441779923"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1415,7 +1606,7 @@
         "de_outra_unidade": null
       }
     ],
-    "fora_do_produto": 119,
+    "fora_do_produto": 125,
     "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
   },
   "eventos": [

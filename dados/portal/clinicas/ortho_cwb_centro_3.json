@@ -773,33 +773,47 @@
         }
       },
       {
-        "evento_id": "curitiba|linha_de_base_anuncios|-",
+        "evento_id": "curitiba|rodadas_nao_comparaveis|-",
         "data": "2026-08-13",
         "praca_id": "curitiba",
         "rotulo": "PR · Curitiba",
         "local_id": null,
         "entidade_id": null,
-        "tipo": "linha_de_base_anuncios",
+        "tipo": "rodadas_nao_comparaveis",
         "natureza": "fato",
         "severidade": "baixa",
-        "titulo": "Linha de base de anúncios criada",
-        "fato": "primeira medição de anúncios desta praça, em 2026-08-12",
-        "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-        "decisao": "recoletar na próxima rodada para abrir o delta",
+        "titulo": "As duas rodadas de anúncio não se comparam",
+        "fato": "2026-08-12 perguntou 4 consultas e 2026-08-13 perguntou 3; 3 consultas em comum",
+        "por_que_importa": "conjuntos medidos com perguntas diferentes não dizem quem entrou nem quem saiu — a diferença é da coleta, não do mercado",
+        "decisao": "repetir a MESMA lista de consultas na próxima rodada",
         "fonte": "dados/serie/anuncios_observados.jsonl",
-        "evidencia": {},
+        "evidencia": {
+          "consultas_antes": [
+            "OrthoDontic Curitiba",
+            "aparelho ortodôntico Curitiba",
+            "dentista Curitiba",
+            "ortodontia Curitiba"
+          ],
+          "consultas_agora": [
+            "aparelho ortodôntico Curitiba",
+            "dentista Curitiba",
+            "ortodontia Curitiba"
+          ]
+        },
         "confianca": {
           "natureza": "fato",
-          "confianca": "media",
+          "confianca": "alta",
           "medido": true,
-          "amostra": 87,
+          "amostra": 91,
           "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/serie/anuncios_observados.jsonl",
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
           "a_favor": [],
-          "contra": [],
+          "contra": [
+            "as consultas mudaram entre as rodadas"
+          ],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 87 anúncios no ar, 1 medição"
+          "procedencia": "medido em 91 anúncios no ar, 2 medições"
         }
       }
     ],
@@ -923,29 +937,29 @@
   "oferta_da_cidade": {
     "praca_id": "curitiba",
     "rotulo": "PR · Curitiba",
-    "anuncios_de_aparelho": 38,
+    "anuncios_de_aparelho": 42,
     "anunciantes": 22,
-    "fora_do_produto": 47,
+    "fora_do_produto": 50,
     "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
     "sem_texto": 2,
     "amostra_curta": false,
-    "tese": "A disputa desta cidade é por avaliação grátis — 18 dos 38 anúncios de aparelho medidos falam disso, seguido de alinhador invisível.",
+    "tese": "A disputa desta cidade é por avaliação grátis — 19 dos 42 anúncios de aparelho medidos falam disso, seguido de alinhador invisível.",
     "posicao_vaga": "Ninguém está falando de sem entrada — tira a barreira do primeiro pagamento — ataca quem não tem reserva.",
     "eixos": [
       {
         "eixo": "avaliacao_gratis",
         "rotulo": "Avaliação grátis",
         "o_que_significa": "compra a visita, não a venda — é isca de agenda",
-        "anuncios": 18,
-        "pct": 47,
-        "frase": "18 anúncios de aparelho falam disso"
+        "anuncios": 19,
+        "pct": 45,
+        "frase": "19 anúncios de aparelho falam disso"
       },
       {
         "eixo": "alinhador",
         "rotulo": "Alinhador invisível",
         "o_que_significa": "produto de ticket alto e público adulto",
         "anuncios": 11,
-        "pct": 29,
+        "pct": 26,
         "frase": "11 anúncios de aparelho falam disso"
       },
       {
@@ -953,15 +967,23 @@
         "rotulo": "Preço na frente",
         "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
         "anuncios": 7,
-        "pct": 18,
+        "pct": 17,
         "frase": "7 anúncios de aparelho falam disso"
       },
       {
         "eixo": "autoridade",
         "rotulo": "Autoridade técnica",
         "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+        "anuncios": 6,
+        "pct": 14,
+        "frase": "6 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "publico_infantil",
+        "rotulo": "Falado para criança e adolescente",
+        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
         "anuncios": 5,
-        "pct": 13,
+        "pct": 12,
         "frase": "5 anúncios de aparelho falam disso"
       },
       {
@@ -969,7 +991,7 @@
         "rotulo": "Parcelamento",
         "o_que_significa": "vende a mensalidade, não o tratamento",
         "anuncios": 4,
-        "pct": 11,
+        "pct": 10,
         "frase": "4 anúncios de aparelho falam disso"
       },
       {
@@ -977,23 +999,15 @@
         "rotulo": "Aparelho estético",
         "o_que_significa": "vende discrição — público que trabalha de frente",
         "anuncios": 4,
-        "pct": 11,
+        "pct": 10,
         "frase": "4 anúncios de aparelho falam disso"
-      },
-      {
-        "eixo": "publico_infantil",
-        "rotulo": "Falado para criança e adolescente",
-        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
-        "anuncios": 3,
-        "pct": 8,
-        "frase": "3 anúncios de aparelho falam disso"
       },
       {
         "eixo": "publico_adulto",
         "rotulo": "Falado para adulto",
         "o_que_significa": "disputa o adulto que adiou o tratamento",
         "anuncios": 1,
-        "pct": 3,
+        "pct": 2,
         "frase": "1 anúncio de aparelho fala disso"
       },
       {
@@ -1001,7 +1015,7 @@
         "rotulo": "Urgência e escassez",
         "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
         "anuncios": 1,
-        "pct": 3,
+        "pct": 2,
         "frase": "1 anúncio de aparelho fala disso"
       },
       {
@@ -1009,7 +1023,7 @@
         "rotulo": "Rapidez do resultado",
         "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
         "anuncios": 1,
-        "pct": 3,
+        "pct": 2,
         "frase": "1 anúncio de aparelho fala disso"
       },
       {
@@ -1031,19 +1045,19 @@
     ],
     "por_anunciante": [
       {
-        "anunciante": "FCL Odontologia",
-        "eixos": [
-          "preco",
-          "avaliacao_gratis",
-          "alinhador"
-        ]
-      },
-      {
         "anunciante": "Odonto Excellence Apucarana - PR",
         "eixos": [
           "avaliacao_gratis",
           "autoridade",
           "parcelamento"
+        ]
+      },
+      {
+        "anunciante": "FCL Odontologia",
+        "eixos": [
+          "preco",
+          "avaliacao_gratis",
+          "alinhador"
         ]
       },
       {
@@ -1079,17 +1093,16 @@
         ]
       },
       {
+        "anunciante": "Odonto Baron",
+        "eixos": [
+          "publico_infantil"
+        ]
+      },
+      {
         "anunciante": "Prestes Odontologia & Ortodontia",
         "eixos": [
           "alinhador",
           "avaliacao_gratis"
-        ]
-      },
-      {
-        "anunciante": "Clínica Dream",
-        "eixos": [
-          "publico_adulto",
-          "publico_infantil"
         ]
       }
     ],
@@ -1100,7 +1113,7 @@
     "e_da_cidade": true,
     "rotulo": "PR · Curitiba",
     "manchete": "24 anunciantes compram aparelho em PR · Curitiba, e nenhum é da rede.",
-    "anuncios_ativos": 47,
+    "anuncios_ativos": 50,
     "anunciantes_total": 24,
     "somos_um_deles": false,
     "anunciantes": [
@@ -1111,12 +1124,27 @@
         "paginas": [
           "1753008324913272"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
         "desde": "2026-08-12",
         "exemplo": "Quanto custa o alinhador invisível? 👀🦷\n\n📍Atenção Curitiba e região!📍\n\nMuitas pessoas acham que um sorriso alinhado com placas transparentes é algo inacessível. \n\nA verdade é que o valor do alinhador inclui a economia do seu ativo mais precioso: o tempo. ⏰\n\nChega de consultas mens…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odonto Baron",
+        "nosso": false,
+        "anuncios": 5,
+        "paginas": [
+          "1586886148227349"
+        ],
+        "dias_no_ar_maior": 1,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Olá Papais e Mamães! Sabemos que uma das maiores dúvidas é qual dentista vai ser melhor para atender seu filho\n\nLembra daquela época em que criança indo ao dentista era sempre uma experiência traumatizante para ele? Por isso, nós da Odonto Baron temos o melhor atendimento especia…",
         "de_outra_unidade": null
       },
       {
@@ -1126,7 +1154,7 @@
         "paginas": [
           "332648849934160"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1141,7 +1169,7 @@
         "paginas": [
           "311839715342597"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1156,7 +1184,7 @@
         "paginas": [
           "108906650935786"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1171,7 +1199,7 @@
         "paginas": [
           "792216200649831"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1186,7 +1214,7 @@
         "paginas": [
           "230216154194092"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1201,7 +1229,7 @@
         "paginas": [
           "587141174478059"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1216,27 +1244,12 @@
         "paginas": [
           "1169881759545527"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
         "desde": "2026-08-12",
         "exemplo": "O verdadeiro procedimento de sucesso é aquele que ninguém diz que foi feito — apenas elogiam o seu sorriso! ✨\n\nA ortodontia valoriza os seus traços únicos, unindo estética e saúde para que o seu sorriso continue sendo a sua maior marca.\n\nAgende sua avaliação em Curitiba e venha c…",
-        "de_outra_unidade": null
-      },
-      {
-        "nome": "Odonto Baron",
-        "nosso": false,
-        "anuncios": 2,
-        "paginas": [
-          "1586886148227349"
-        ],
-        "dias_no_ar_maior": null,
-        "plataformas": [
-          "Meta"
-        ],
-        "desde": "2026-08-12",
-        "exemplo": "Olá Papais e Mamães! Sabemos que uma das maiores dúvidas é qual dentista vai ser melhor para atender seu filho\n\nLembra daquela época em que criança indo ao dentista era sempre uma experiência traumatizante para ele? Por isso, nós da Odonto Baron temos o melhor atendimento especia…",
         "de_outra_unidade": null
       },
       {
@@ -1246,7 +1259,7 @@
         "paginas": [
           "104486469246658"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1261,7 +1274,7 @@
         "paginas": [
           "1169936589532790"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1276,7 +1289,7 @@
         "paginas": [
           "101626436276508"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1291,7 +1304,7 @@
         "paginas": [
           "109571392082550"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1306,7 +1319,7 @@
         "paginas": [
           "962393817233385"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1321,7 +1334,7 @@
         "paginas": [
           "111543868045099"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1336,7 +1349,7 @@
         "paginas": [
           "555615887631128"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1351,7 +1364,7 @@
         "paginas": [
           "105627365112142"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1366,7 +1379,7 @@
         "paginas": [
           "646419652039310"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1381,7 +1394,7 @@
         "paginas": [
           "245644808916512"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1396,7 +1409,7 @@
         "paginas": [
           "587317351791883"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1411,7 +1424,7 @@
         "paginas": [
           "1138638462655934"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1426,7 +1439,7 @@
         "paginas": [
           "116168374799783"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1441,7 +1454,7 @@
         "paginas": [
           "1483602365232943"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1456,7 +1469,7 @@
         "paginas": [
           "881807951674133"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1465,7 +1478,7 @@
         "de_outra_unidade": null
       }
     ],
-    "fora_do_produto": 40,
+    "fora_do_produto": 41,
     "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
   },
   "eventos": [

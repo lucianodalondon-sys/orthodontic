@@ -981,33 +981,46 @@
   "movimentos": {
     "eventos": [
       {
-        "evento_id": "goiania|linha_de_base_anuncios|-",
+        "evento_id": "goiania|rodadas_nao_comparaveis|-",
         "data": "2026-08-13",
         "praca_id": "goiania",
         "rotulo": "GO · Goiânia",
         "local_id": null,
         "entidade_id": null,
-        "tipo": "linha_de_base_anuncios",
+        "tipo": "rodadas_nao_comparaveis",
         "natureza": "fato",
         "severidade": "baixa",
-        "titulo": "Linha de base de anúncios criada",
-        "fato": "primeira medição de anúncios desta praça, em 2026-08-12",
-        "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-        "decisao": "recoletar na próxima rodada para abrir o delta",
+        "titulo": "As duas rodadas de anúncio não se comparam",
+        "fato": "2026-08-12 perguntou 2 consultas e 2026-08-13 perguntou 4; 2 consultas em comum",
+        "por_que_importa": "conjuntos medidos com perguntas diferentes não dizem quem entrou nem quem saiu — a diferença é da coleta, não do mercado",
+        "decisao": "repetir a MESMA lista de consultas na próxima rodada",
         "fonte": "dados/serie/anuncios_observados.jsonl",
-        "evidencia": {},
+        "evidencia": {
+          "consultas_antes": [
+            "OrthoDontic Goiânia",
+            "dentista Goiânia"
+          ],
+          "consultas_agora": [
+            "OrthoDontic Goiânia",
+            "aparelho ortodôntico Goiânia",
+            "dentista Goiânia",
+            "ortodontia Goiânia"
+          ]
+        },
         "confianca": {
           "natureza": "fato",
-          "confianca": "media",
+          "confianca": "alta",
           "medido": true,
-          "amostra": 109,
+          "amostra": 96,
           "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/serie/anuncios_observados.jsonl",
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
           "a_favor": [],
-          "contra": [],
+          "contra": [
+            "as consultas mudaram entre as rodadas"
+          ],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 109 anúncios no ar, 1 medição"
+          "procedencia": "medido em 96 anúncios no ar, 2 medições"
         }
       }
     ],
@@ -1181,78 +1194,86 @@
   "oferta_da_cidade": {
     "praca_id": "goiania",
     "rotulo": "GO · Goiânia",
-    "anuncios_de_aparelho": 15,
-    "anunciantes": 7,
-    "fora_do_produto": 94,
+    "anuncios_de_aparelho": 44,
+    "anunciantes": 20,
+    "fora_do_produto": 116,
     "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
     "sem_texto": 0,
     "amostra_curta": false,
-    "tese": "A disputa desta cidade é por alinhador invisível — 11 dos 15 anúncios de aparelho medidos falam disso, seguido de avaliação grátis.",
+    "tese": "A disputa desta cidade é por avaliação grátis — 20 dos 44 anúncios de aparelho medidos falam disso, seguido de autoridade técnica.",
     "posicao_vaga": "Ninguém está falando de sem entrada — tira a barreira do primeiro pagamento — ataca quem não tem reserva.",
     "eixos": [
-      {
-        "eixo": "alinhador",
-        "rotulo": "Alinhador invisível",
-        "o_que_significa": "produto de ticket alto e público adulto",
-        "anuncios": 11,
-        "pct": 73,
-        "frase": "11 anúncios de aparelho falam disso"
-      },
       {
         "eixo": "avaliacao_gratis",
         "rotulo": "Avaliação grátis",
         "o_que_significa": "compra a visita, não a venda — é isca de agenda",
-        "anuncios": 10,
-        "pct": 67,
-        "frase": "10 anúncios de aparelho falam disso"
+        "anuncios": 20,
+        "pct": 45,
+        "frase": "20 anúncios de aparelho falam disso"
       },
       {
         "eixo": "autoridade",
         "rotulo": "Autoridade técnica",
         "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
-        "anuncios": 6,
-        "pct": 40,
-        "frase": "6 anúncios de aparelho falam disso"
+        "anuncios": 20,
+        "pct": 45,
+        "frase": "20 anúncios de aparelho falam disso"
       },
       {
-        "eixo": "rapidez",
-        "rotulo": "Rapidez do resultado",
-        "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
-        "anuncios": 3,
-        "pct": 20,
-        "frase": "3 anúncios de aparelho falam disso"
+        "eixo": "alinhador",
+        "rotulo": "Alinhador invisível",
+        "o_que_significa": "produto de ticket alto e público adulto",
+        "anuncios": 19,
+        "pct": 43,
+        "frase": "19 anúncios de aparelho falam disso"
       },
       {
         "eixo": "preco",
         "rotulo": "Preço na frente",
         "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
-        "anuncios": 2,
-        "pct": 13,
-        "frase": "2 anúncios de aparelho falam disso"
+        "anuncios": 9,
+        "pct": 20,
+        "frase": "9 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "rapidez",
+        "rotulo": "Rapidez do resultado",
+        "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+        "anuncios": 8,
+        "pct": 18,
+        "frase": "8 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "estetico",
+        "rotulo": "Aparelho estético",
+        "o_que_significa": "vende discrição — público que trabalha de frente",
+        "anuncios": 7,
+        "pct": 16,
+        "frase": "7 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "urgencia",
+        "rotulo": "Urgência e escassez",
+        "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+        "anuncios": 5,
+        "pct": 11,
+        "frase": "5 anúncios de aparelho falam disso"
       },
       {
         "eixo": "parcelamento",
         "rotulo": "Parcelamento",
         "o_que_significa": "vende a mensalidade, não o tratamento",
         "anuncios": 2,
-        "pct": 13,
+        "pct": 5,
         "frase": "2 anúncios de aparelho falam disso"
       },
       {
-        "eixo": "estetico",
-        "rotulo": "Aparelho estético",
-        "o_que_significa": "vende discrição — público que trabalha de frente",
-        "anuncios": 2,
-        "pct": 13,
-        "frase": "2 anúncios de aparelho falam disso"
-      },
-      {
-        "eixo": "urgencia",
-        "rotulo": "Urgência e escassez",
-        "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
-        "anuncios": 2,
-        "pct": 13,
-        "frase": "2 anúncios de aparelho falam disso"
+        "eixo": "publico_infantil",
+        "rotulo": "Falado para criança e adolescente",
+        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+        "anuncios": 1,
+        "pct": 2,
+        "frase": "1 anúncio de aparelho fala disso"
       },
       {
         "eixo": "sem_entrada",
@@ -1271,14 +1292,6 @@
         "frase": "nenhum anúncio de aparelho fala disso"
       },
       {
-        "eixo": "publico_infantil",
-        "rotulo": "Falado para criança e adolescente",
-        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
         "eixo": "prova_social",
         "rotulo": "Prova social",
         "o_que_significa": "vende confiança em vez de preço",
@@ -1289,13 +1302,6 @@
     ],
     "por_anunciante": [
       {
-        "anunciante": "Crool Centro Odontológico",
-        "eixos": [
-          "avaliacao_gratis",
-          "alinhador"
-        ]
-      },
-      {
         "anunciante": "Camargo Odontologia",
         "eixos": [
           "preco",
@@ -1304,10 +1310,38 @@
         ]
       },
       {
+        "anunciante": "Crool Centro Odontológico",
+        "eixos": [
+          "avaliacao_gratis",
+          "alinhador"
+        ]
+      },
+      {
+        "anunciante": "Odonto Excellence Aparecida de Goiânia",
+        "eixos": [
+          "avaliacao_gratis",
+          "autoridade"
+        ]
+      },
+      {
         "anunciante": "OrthoDontic",
         "eixos": [
           "parcelamento",
           "urgencia"
+        ]
+      },
+      {
+        "anunciante": "CIOG Cursos de pós graduação em odontologia",
+        "eixos": [
+          "urgencia",
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "Dra. Karina Alencar",
+        "eixos": [
+          "alinhador",
+          "autoridade"
         ]
       },
       {
@@ -1324,19 +1358,6 @@
           "alinhador",
           "autoridade"
         ]
-      },
-      {
-        "anunciante": "Odonto Excellence Aparecida de Goiânia",
-        "eixos": [
-          "avaliacao_gratis",
-          "autoridade"
-        ]
-      },
-      {
-        "anunciante": "SALUD Odontologia - Porto Ferreira",
-        "eixos": [
-          "autoridade"
-        ]
       }
     ],
     "e_da_cidade": true
@@ -1345,9 +1366,9 @@
   "anuncios_da_cidade": {
     "e_da_cidade": true,
     "rotulo": "GO · Goiânia",
-    "manchete": "7 anunciantes disputam aparelho em GO · Goiânia, e a rede é 1 deles.",
-    "anuncios_ativos": 15,
-    "anunciantes_total": 7,
+    "manchete": "21 anunciantes disputam aparelho em GO · Goiânia, e a rede é 1 deles.",
+    "anuncios_ativos": 45,
+    "anunciantes_total": 21,
     "somos_um_deles": true,
     "anunciantes": [
       {
@@ -1357,12 +1378,27 @@
         "paginas": [
           "676533102219286"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
         "desde": "2026-08-12",
         "exemplo": "Combos de aparelho ortodontico em Aparecida de Goiania.\n\nA OrthoDontic Buriti abriu um COMBO especial para você transformar seu sorriso:\n\n🦷 Aparelho ortodôntico incluso\n📄 Documentação completa\n⚡ Instalação rápida\n💳 Pague apenas a mensalidade!\n\nTudo com profissionais experientes e…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Camargo Odontologia",
+        "nosso": false,
+        "anuncios": 7,
+        "paginas": [
+          "111033664547426"
+        ],
+        "dias_no_ar_maior": 1,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-12",
+        "exemplo": "Na Camargo Odontologia, você transforma o seu sorriso com alinhadores invisíveis pagando até 45% ABAIXO do preço de mercado! \n\nDiga adeus aos aparelhos metálicos e descubra a evolução da ortodontia: \n\n✔️ Super discreto: Totalmente transparente. \n\n✔️ Conforto total: Feito sob medi…",
         "de_outra_unidade": null
       },
       {
@@ -1372,7 +1408,7 @@
         "paginas": [
           "1476054779285422"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1381,18 +1417,153 @@
         "de_outra_unidade": null
       },
       {
-        "nome": "Camargo Odontologia",
+        "nome": "ABOR Nacional",
         "nosso": false,
-        "anuncios": 2,
+        "anuncios": 6,
         "paginas": [
-          "111033664547426"
+          "1615953745346223"
         ],
         "dias_no_ar_maior": null,
         "plataformas": [
           "Meta"
         ],
+        "desde": "2026-08-13",
+        "exemplo": "Goiânia já se prepara para receber, de braços abertos, os ortodontistas em 2027.\n\nA Dra. Luciana Gonzaga, diretora de Comunicação do 15º Congresso Internacional da ABOR, passa por aqui para lembrar que as inscrições para o evento já estão abertas.\n\nSerá uma experiência imperdível…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "CIOG Cursos de pós graduação em odontologia",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "317067342370560"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Inscrições abertas para a Especialização em Ortodontia na CIOG! 🎓 Domine o diagnóstico, o planejamento e a biomecânica para tratar seus pacientes com total segurança e previsibilidade. Oferecemos uma formação completa, atualizada com o mercado e com intensa prática clínica.\nVAGAS…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dra. Karina Alencar",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "2310878755802069"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "O MELHOR ALINHADOR INVISÍVEL DE GOIÂNIA\n\n👉 São plaquinhas transparentes que você pode tirar para comer, ir a festas ou em qualquer ocasião especial.\n\n👉 Sem brackets, sem dor e sem aquela aparência de \"sorriso metálico\".\n\n👉 Tratamento eficaz com todo o conforto que você merece.\n\nI…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odonto Excellence Aparecida de Goiânia",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "105021882211434"
+        ],
+        "dias_no_ar_maior": 1,
+        "plataformas": [
+          "Meta"
+        ],
         "desde": "2026-08-12",
-        "exemplo": "Na Camargo Odontologia, você transforma o seu sorriso com alinhadores invisíveis pagando até 45% ABAIXO do preço de mercado! \n\nDiga adeus aos aparelhos metálicos e descubra a evolução da ortodontia: \n\n✔️ Super discreto: Totalmente transparente. \n\n✔️ Conforto total: Feito sob medi…",
+        "exemplo": "A restauração dental é indicada para reparar dentes danificados por cárie ou trauma, devolvendo a forma, a função e a estética do sorriso. Quanto mais cedo é feita, mais simples e conservador é o tratamento.\n\nIgnorar pequenas lesões pode levar à necessidade de procedimentos mais …",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "OdontoCompany Av. Mangalô - Goiânia",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "103371625316223"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Sonha com um sorriso alinhado, mas acha que não cabe no orçamento? \n\nAgora dá! Aparelhos ortodônticos a partir de R$79,90/mês, com instalação gratuita para novos pacientes. \n\nÉ a oportunidade que você esperava para começar seu tratamento. Consulte condições e dê o primeiro passo!…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "OdontoCompany Goiânia Portal Shopping",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "219472641251974"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "😁✨ Chegou a hora de alinhar seu sorriso! ✨😁\n\nCom o aparelho ortodôntico da OdontoCompany Goiânia Portal Shopping, você corrige o posicionamento dos dentes, melhora a mordida e conquista muito mais confiança para sorrir todos os dias. 🦷💙\n\n✅ Dentes alinhados e mais saudáveis\n✅ Melh…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Sorridents Clínicas Odontológicas",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "102066658741781"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Aparelho Ortodôntico em GOIÂNIA!  💙💚🤍❤️\n\nAgende a sua consulta\n\nClique e saiba mais.",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Atualle Odontologia Goiânia",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "106824738795853"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Hoje compartilho um caso especial: uma paciente que mora fora do país e veio até nós para transformar o sorriso. \n\nComo ela não tinha muita disponibilidade, optamos por um tratamento estratégico: primeiro usamos o Invisalign para alinhar os dentes e, depois, finalizamos com facet…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dental Sorridente - Goiana",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "1205785232840771"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "🦷✨ Sonha com um sorriso alinhado e saudável? Em Goiânia, nossa clínica oferece aparelhos ortodônticos de alta qualidade para corrigir o alinhamento dos seus dentes e transformar seu sorriso! Imagine-se com dentes perfeitos e a autoestima lá em cima. Nossos especialistas estão pro…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dr. Eduardo Vilela",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "105105788555602"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Simulação digital do seu sorriso já na primeira consulta.\n\nVocê consegue imaginar como seu sorriso poderá ficar antes mesmo de iniciar o tratamento?\n\nNa Clínica EduVilela realizamos um planejamento digital personalizado para que você visualize as possibilidades do seu caso logo n…",
         "de_outra_unidade": null
       },
       {
@@ -1402,7 +1573,7 @@
         "paginas": [
           "696208656917655"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1411,18 +1582,63 @@
         "de_outra_unidade": null
       },
       {
-        "nome": "Odonto Excellence Aparecida de Goiânia",
+        "nome": "ICO Cursos",
         "nosso": false,
         "anuncios": 1,
         "paginas": [
-          "105021882211434"
+          "834752423051031"
         ],
         "dias_no_ar_maior": null,
         "plataformas": [
           "Meta"
         ],
-        "desde": "2026-08-12",
-        "exemplo": "A restauração dental é indicada para reparar dentes danificados por cárie ou trauma, devolvendo a forma, a função e a estética do sorriso. Quanto mais cedo é feita, mais simples e conservador é o tratamento.\n\nIgnorar pequenas lesões pode levar à necessidade de procedimentos mais …",
+        "desde": "2026-08-13",
+        "exemplo": "✨ CONQUISTE O SORRISO ALINHADO QUE VOCÊ SEMPRE QUIS!\n\n📍 Local: Goiânia – GO.\n💎 Vantagem: Atendimento de alta qualidade com valor reduzido\n\n#Ortodontia #AparelhoDentario #sorrisoalinhado",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "IOA Goiânia",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "101139269205235"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "✨ SELEÇÃO DE PACIENTE – ORTODONTIA ✨\n\nQuer alinhar os dentes e cuidar melhor do seu sorriso?\n\nO IOA está selecionando pacientes para avaliação em Ortodontia, área que ajuda a corrigir o posicionamento dos dentes, melhorar a mordida e deixar o sorriso mais harmônico.\n\nCom especial…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Igor Almeida Martins",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "848823221654902"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Esse foi um caso muito especial para mim, realizado em minha esposa.\nEla já havia passado pelo tratamento ortodôntico, mas ainda desejava mudar a cor e o tamanho dos dentes, além de corrigir pequenos espaços que permaneciam no sorriso.\n\nCada caso exige uma análise cuidadosa, porq…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Lets Kids Odontopediatria",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "313839875140218"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Qual a melhor hora de iniciar o tratamento ortodôntico de uma criança? \n\n1) quando termina todas as trocas dos dentinhos?\n2) antes mesmo de trocar qualquer dente? \n3) no meio da coisa toda?\n\nVem ver esse reels que a Tia Lele te responde!\n\nLet’s Kids Odontopediatria \n(62) 9 8315-4…",
         "de_outra_unidade": null
       },
       {
@@ -1432,7 +1648,7 @@
         "paginas": [
           "102944177916741"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1447,16 +1663,31 @@
         "paginas": [
           "314210465648186"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
         "desde": "2026-08-12",
         "exemplo": "📢 ATENÇÃO MORADORES DE PORTO FERREIRA E REGIÃO\n\nVocê está adiando o seu tratamento ortodôntico? A hora de cuidar de você é agora! Nossa equipe de especialistas está pronta para cuidar do seu sorriso com as melhores condições e tecnologias do mercado.\n\n📲 WhatsApp: 19 99693-0658\n🏁 …",
         "de_outra_unidade": null
+      },
+      {
+        "nome": "SC Ortodontia",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "353569718039648"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Está há algum tempo sem visitar o dentista ou percebeu alguma alteração no seu sorriso? Uma avaliação é o primeiro passo para entender suas necessidades e receber as orientações adequadas.\n\nAgende seu atendimento em Rio das Pedras. Clique em “Converse Conosco” e fale com a nossa …",
+        "de_outra_unidade": null
       }
     ],
-    "fora_do_produto": 94,
+    "fora_do_produto": 109,
     "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
   },
   "eventos": [

@@ -645,14 +645,14 @@
           "natureza": "fato",
           "confianca": "media",
           "medido": true,
-          "amostra": 166,
+          "amostra": 365,
           "janela_dias": null,
           "medicoes": 1,
           "fonte": "dados/serie/anuncios_observados.jsonl",
           "a_favor": [],
           "contra": [],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 166 anúncios no ar, 1 medição"
+          "procedencia": "medido em 365 anúncios no ar, 1 medição"
         }
       }
     ],
@@ -734,29 +734,37 @@
   "oferta_da_cidade": {
     "praca_id": "caxias_do_sul",
     "rotulo": "RS · Caxias do Sul",
-    "anuncios_de_aparelho": 34,
-    "anunciantes": 16,
-    "fora_do_produto": 129,
+    "anuncios_de_aparelho": 35,
+    "anunciantes": 17,
+    "fora_do_produto": 144,
     "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
     "sem_texto": 3,
     "amostra_curta": false,
-    "tese": "A disputa desta cidade é por alinhador invisível — 12 dos 34 anúncios de aparelho medidos falam disso, seguido de avaliação grátis.",
+    "tese": "A disputa desta cidade é por avaliação grátis — 12 dos 35 anúncios de aparelho medidos falam disso, seguido de alinhador invisível.",
     "posicao_vaga": "Ninguém está falando de sem entrada — tira a barreira do primeiro pagamento — ataca quem não tem reserva.",
     "eixos": [
+      {
+        "eixo": "avaliacao_gratis",
+        "rotulo": "Avaliação grátis",
+        "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+        "anuncios": 12,
+        "pct": 34,
+        "frase": "12 anúncios de aparelho falam disso"
+      },
       {
         "eixo": "alinhador",
         "rotulo": "Alinhador invisível",
         "o_que_significa": "produto de ticket alto e público adulto",
         "anuncios": 12,
-        "pct": 35,
+        "pct": 34,
         "frase": "12 anúncios de aparelho falam disso"
       },
       {
-        "eixo": "avaliacao_gratis",
-        "rotulo": "Avaliação grátis",
-        "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+        "eixo": "autoridade",
+        "rotulo": "Autoridade técnica",
+        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
         "anuncios": 11,
-        "pct": 32,
+        "pct": 31,
         "frase": "11 anúncios de aparelho falam disso"
       },
       {
@@ -768,19 +776,11 @@
         "frase": "10 anúncios de aparelho falam disso"
       },
       {
-        "eixo": "autoridade",
-        "rotulo": "Autoridade técnica",
-        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
-        "anuncios": 10,
-        "pct": 29,
-        "frase": "10 anúncios de aparelho falam disso"
-      },
-      {
         "eixo": "parcelamento",
         "rotulo": "Parcelamento",
         "o_que_significa": "vende a mensalidade, não o tratamento",
         "anuncios": 4,
-        "pct": 12,
+        "pct": 11,
         "frase": "4 anúncios de aparelho falam disso"
       },
       {
@@ -788,7 +788,7 @@
         "rotulo": "Aparelho estético",
         "o_que_significa": "vende discrição — público que trabalha de frente",
         "anuncios": 4,
-        "pct": 12,
+        "pct": 11,
         "frase": "4 anúncios de aparelho falam disso"
       },
       {
@@ -796,7 +796,7 @@
         "rotulo": "Rapidez do resultado",
         "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
         "anuncios": 4,
-        "pct": 12,
+        "pct": 11,
         "frase": "4 anúncios de aparelho falam disso"
       },
       {
@@ -886,16 +886,17 @@
         ]
       },
       {
+        "anunciante": "Magic Odontologia & Implantes - Caxias do Sul",
+        "eixos": [
+          "avaliacao_gratis",
+          "autoridade"
+        ]
+      },
+      {
         "anunciante": "Orto.com Odontologia",
         "eixos": [
           "avaliacao_gratis",
           "alinhador"
-        ]
-      },
-      {
-        "anunciante": "DS Odontologia",
-        "eixos": [
-          "avaliacao_gratis"
         ]
       }
     ],
@@ -905,9 +906,9 @@
   "anuncios_da_cidade": {
     "e_da_cidade": true,
     "rotulo": "RS · Caxias do Sul",
-    "manchete": "16 anunciantes disputam aparelho em RS · Caxias do Sul, e a rede é 1 deles.",
-    "anuncios_ativos": 34,
-    "anunciantes_total": 16,
+    "manchete": "17 anunciantes disputam aparelho em RS · Caxias do Sul, e a rede é 1 deles.",
+    "anuncios_ativos": 35,
+    "anunciantes_total": 17,
     "somos_um_deles": true,
     "anunciantes": [
       {
@@ -1077,6 +1078,21 @@
         "de_outra_unidade": null
       },
       {
+        "nome": "Magic Odontologia & Implantes - Caxias do Sul",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "101587199609181"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "A transformação do seu sorriso começa agora!\n\nA Quinzena do Aparelho da Magic chegou com condições especiais para você iniciar seu tratamento ortodôntico.\n\n✨ Dê o primeiro passo para conquistar um sorriso mais alinhado, saudável e cheio de confiança.\n\n📲 Agende sua avaliação e apr…",
+        "de_outra_unidade": null
+      },
+      {
         "nome": "Orto Implante",
         "nosso": false,
         "anuncios": 1,
@@ -1152,7 +1168,7 @@
         "de_outra_unidade": null
       }
     ],
-    "fora_do_produto": 132,
+    "fora_do_produto": 147,
     "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
   },
   "eventos": [

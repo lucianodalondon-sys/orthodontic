@@ -185,29 +185,29 @@
   "oferta": {
     "praca_id": "curitiba",
     "rotulo": "PR · Curitiba",
-    "anuncios_de_aparelho": 38,
+    "anuncios_de_aparelho": 42,
     "anunciantes": 22,
-    "fora_do_produto": 47,
+    "fora_do_produto": 50,
     "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
     "sem_texto": 2,
     "amostra_curta": false,
-    "tese": "A disputa desta cidade é por avaliação grátis — 18 dos 38 anúncios de aparelho medidos falam disso, seguido de alinhador invisível.",
+    "tese": "A disputa desta cidade é por avaliação grátis — 19 dos 42 anúncios de aparelho medidos falam disso, seguido de alinhador invisível.",
     "posicao_vaga": "Ninguém está falando de sem entrada — tira a barreira do primeiro pagamento — ataca quem não tem reserva.",
     "eixos": [
       {
         "eixo": "avaliacao_gratis",
         "rotulo": "Avaliação grátis",
         "o_que_significa": "compra a visita, não a venda — é isca de agenda",
-        "anuncios": 18,
-        "pct": 47,
-        "frase": "18 anúncios de aparelho falam disso"
+        "anuncios": 19,
+        "pct": 45,
+        "frase": "19 anúncios de aparelho falam disso"
       },
       {
         "eixo": "alinhador",
         "rotulo": "Alinhador invisível",
         "o_que_significa": "produto de ticket alto e público adulto",
         "anuncios": 11,
-        "pct": 29,
+        "pct": 26,
         "frase": "11 anúncios de aparelho falam disso"
       },
       {
@@ -215,15 +215,23 @@
         "rotulo": "Preço na frente",
         "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
         "anuncios": 7,
-        "pct": 18,
+        "pct": 17,
         "frase": "7 anúncios de aparelho falam disso"
       },
       {
         "eixo": "autoridade",
         "rotulo": "Autoridade técnica",
         "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+        "anuncios": 6,
+        "pct": 14,
+        "frase": "6 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "publico_infantil",
+        "rotulo": "Falado para criança e adolescente",
+        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
         "anuncios": 5,
-        "pct": 13,
+        "pct": 12,
         "frase": "5 anúncios de aparelho falam disso"
       },
       {
@@ -231,7 +239,7 @@
         "rotulo": "Parcelamento",
         "o_que_significa": "vende a mensalidade, não o tratamento",
         "anuncios": 4,
-        "pct": 11,
+        "pct": 10,
         "frase": "4 anúncios de aparelho falam disso"
       },
       {
@@ -239,23 +247,15 @@
         "rotulo": "Aparelho estético",
         "o_que_significa": "vende discrição — público que trabalha de frente",
         "anuncios": 4,
-        "pct": 11,
+        "pct": 10,
         "frase": "4 anúncios de aparelho falam disso"
-      },
-      {
-        "eixo": "publico_infantil",
-        "rotulo": "Falado para criança e adolescente",
-        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
-        "anuncios": 3,
-        "pct": 8,
-        "frase": "3 anúncios de aparelho falam disso"
       },
       {
         "eixo": "publico_adulto",
         "rotulo": "Falado para adulto",
         "o_que_significa": "disputa o adulto que adiou o tratamento",
         "anuncios": 1,
-        "pct": 3,
+        "pct": 2,
         "frase": "1 anúncio de aparelho fala disso"
       },
       {
@@ -263,7 +263,7 @@
         "rotulo": "Urgência e escassez",
         "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
         "anuncios": 1,
-        "pct": 3,
+        "pct": 2,
         "frase": "1 anúncio de aparelho fala disso"
       },
       {
@@ -271,7 +271,7 @@
         "rotulo": "Rapidez do resultado",
         "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
         "anuncios": 1,
-        "pct": 3,
+        "pct": 2,
         "frase": "1 anúncio de aparelho fala disso"
       },
       {
@@ -293,19 +293,19 @@
     ],
     "por_anunciante": [
       {
-        "anunciante": "FCL Odontologia",
-        "eixos": [
-          "preco",
-          "avaliacao_gratis",
-          "alinhador"
-        ]
-      },
-      {
         "anunciante": "Odonto Excellence Apucarana - PR",
         "eixos": [
           "avaliacao_gratis",
           "autoridade",
           "parcelamento"
+        ]
+      },
+      {
+        "anunciante": "FCL Odontologia",
+        "eixos": [
+          "preco",
+          "avaliacao_gratis",
+          "alinhador"
         ]
       },
       {
@@ -341,17 +341,16 @@
         ]
       },
       {
+        "anunciante": "Odonto Baron",
+        "eixos": [
+          "publico_infantil"
+        ]
+      },
+      {
         "anunciante": "Prestes Odontologia & Ortodontia",
         "eixos": [
           "alinhador",
           "avaliacao_gratis"
-        ]
-      },
-      {
-        "anunciante": "Clínica Dream",
-        "eixos": [
-          "publico_adulto",
-          "publico_infantil"
         ]
       }
     ]
@@ -1491,33 +1490,47 @@
         }
       },
       {
-        "evento_id": "curitiba|linha_de_base_anuncios|-",
+        "evento_id": "curitiba|rodadas_nao_comparaveis|-",
         "data": "2026-08-13",
         "praca_id": "curitiba",
         "rotulo": "PR · Curitiba",
         "local_id": null,
         "entidade_id": null,
-        "tipo": "linha_de_base_anuncios",
+        "tipo": "rodadas_nao_comparaveis",
         "natureza": "fato",
         "severidade": "baixa",
-        "titulo": "Linha de base de anúncios criada",
-        "fato": "primeira medição de anúncios desta praça, em 2026-08-12",
-        "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-        "decisao": "recoletar na próxima rodada para abrir o delta",
+        "titulo": "As duas rodadas de anúncio não se comparam",
+        "fato": "2026-08-12 perguntou 4 consultas e 2026-08-13 perguntou 3; 3 consultas em comum",
+        "por_que_importa": "conjuntos medidos com perguntas diferentes não dizem quem entrou nem quem saiu — a diferença é da coleta, não do mercado",
+        "decisao": "repetir a MESMA lista de consultas na próxima rodada",
         "fonte": "dados/serie/anuncios_observados.jsonl",
-        "evidencia": {},
+        "evidencia": {
+          "consultas_antes": [
+            "OrthoDontic Curitiba",
+            "aparelho ortodôntico Curitiba",
+            "dentista Curitiba",
+            "ortodontia Curitiba"
+          ],
+          "consultas_agora": [
+            "aparelho ortodôntico Curitiba",
+            "dentista Curitiba",
+            "ortodontia Curitiba"
+          ]
+        },
         "confianca": {
           "natureza": "fato",
-          "confianca": "media",
+          "confianca": "alta",
           "medido": true,
-          "amostra": 87,
+          "amostra": 91,
           "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/serie/anuncios_observados.jsonl",
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
           "a_favor": [],
-          "contra": [],
+          "contra": [
+            "as consultas mudaram entre as rodadas"
+          ],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 87 anúncios no ar, 1 medição"
+          "procedencia": "medido em 91 anúncios no ar, 2 medições"
         }
       }
     ],

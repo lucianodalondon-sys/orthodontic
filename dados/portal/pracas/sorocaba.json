@@ -173,30 +173,30 @@
   "oferta": {
     "praca_id": "sorocaba",
     "rotulo": "SP · Sorocaba",
-    "anuncios_de_aparelho": 67,
-    "anunciantes": 19,
-    "fora_do_produto": 67,
+    "anuncios_de_aparelho": 70,
+    "anunciantes": 21,
+    "fora_do_produto": 73,
     "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
     "sem_texto": 1,
     "amostra_curta": false,
-    "tese": "A disputa desta cidade é por alinhador invisível — 21 dos 67 anúncios de aparelho medidos falam disso, seguido de avaliação grátis.",
+    "tese": "A disputa desta cidade é por alinhador invisível — 24 dos 70 anúncios de aparelho medidos falam disso, seguido de avaliação grátis.",
     "posicao_vaga": "Ninguém está falando de sem entrada — tira a barreira do primeiro pagamento — ataca quem não tem reserva.",
     "eixos": [
       {
         "eixo": "alinhador",
         "rotulo": "Alinhador invisível",
         "o_que_significa": "produto de ticket alto e público adulto",
-        "anuncios": 21,
-        "pct": 31,
-        "frase": "21 anúncios de aparelho falam disso"
+        "anuncios": 24,
+        "pct": 34,
+        "frase": "24 anúncios de aparelho falam disso"
       },
       {
         "eixo": "avaliacao_gratis",
         "rotulo": "Avaliação grátis",
         "o_que_significa": "compra a visita, não a venda — é isca de agenda",
-        "anuncios": 16,
-        "pct": 24,
-        "frase": "16 anúncios de aparelho falam disso"
+        "anuncios": 18,
+        "pct": 26,
+        "frase": "18 anúncios de aparelho falam disso"
       },
       {
         "eixo": "urgencia",
@@ -210,6 +210,14 @@
         "eixo": "autoridade",
         "rotulo": "Autoridade técnica",
         "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+        "anuncios": 8,
+        "pct": 11,
+        "frase": "8 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "estetico",
+        "rotulo": "Aparelho estético",
+        "o_que_significa": "vende discrição — público que trabalha de frente",
         "anuncios": 7,
         "pct": 10,
         "frase": "7 anúncios de aparelho falam disso"
@@ -218,14 +226,6 @@
         "eixo": "preco",
         "rotulo": "Preço na frente",
         "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
-        "anuncios": 5,
-        "pct": 7,
-        "frase": "5 anúncios de aparelho falam disso"
-      },
-      {
-        "eixo": "estetico",
-        "rotulo": "Aparelho estético",
-        "o_que_significa": "vende discrição — público que trabalha de frente",
         "anuncios": 5,
         "pct": 7,
         "frase": "5 anúncios de aparelho falam disso"
@@ -327,17 +327,19 @@
         ]
       },
       {
+        "anunciante": "Clínica Oroface",
+        "eixos": [
+          "avaliacao_gratis",
+          "alinhador",
+          "estetico"
+        ]
+      },
+      {
         "anunciante": "ABO Sorocaba Acadêmico",
         "eixos": [
           "estetico",
           "publico_infantil",
           "autoridade"
-        ]
-      },
-      {
-        "anunciante": "OdontoCompany Sorocaba - Parque São Bento ",
-        "eixos": [
-          "urgencia"
         ]
       }
     ]
@@ -1300,40 +1302,220 @@
   "movimentos_do_mercado": {
     "eventos": [
       {
-        "evento_id": "sorocaba|linha_de_base_anuncios|-",
+        "evento_id": "sorocaba|anunciante_novo|Athek",
         "data": "2026-08-13",
         "praca_id": "sorocaba",
         "rotulo": "SP · Sorocaba",
         "local_id": null,
-        "entidade_id": null,
-        "tipo": "linha_de_base_anuncios",
+        "entidade_id": "Athek",
+        "tipo": "anunciante_novo",
         "natureza": "fato",
-        "severidade": "baixa",
-        "titulo": "Linha de base de anúncios criada",
-        "fato": "primeira medição de anúncios desta praça, em 2026-08-12",
-        "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-        "decisao": "recoletar na próxima rodada para abrir o delta",
+        "severidade": "media",
+        "titulo": "Anunciante novo: Athek",
+        "fato": "1 anúncio no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+        "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+        "decisao": "ler a oferta dele antes de responder",
         "fonte": "dados/serie/anuncios_observados.jsonl",
-        "evidencia": {},
+        "evidencia": {
+          "anunciante": "Athek",
+          "anuncios": 1
+        },
         "confianca": {
           "natureza": "fato",
-          "confianca": "media",
+          "confianca": "alta",
           "medido": true,
-          "amostra": 135,
+          "amostra": 136,
           "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/serie/anuncios_observados.jsonl",
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
           "a_favor": [],
-          "contra": [],
+          "contra": [
+            "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+          ],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 135 anúncios no ar, 1 medição"
+          "procedencia": "medido em 136 anúncios medidos, 2 medições"
+        }
+      },
+      {
+        "evento_id": "sorocaba|anunciante_novo|Clínica Oroface",
+        "data": "2026-08-13",
+        "praca_id": "sorocaba",
+        "rotulo": "SP · Sorocaba",
+        "local_id": null,
+        "entidade_id": "Clínica Oroface",
+        "tipo": "anunciante_novo",
+        "natureza": "fato",
+        "severidade": "media",
+        "titulo": "Anunciante novo: Clínica Oroface",
+        "fato": "3 anúncios no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+        "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+        "decisao": "ler a oferta dele antes de responder",
+        "fonte": "dados/serie/anuncios_observados.jsonl",
+        "evidencia": {
+          "anunciante": "Clínica Oroface",
+          "anuncios": 3
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "alta",
+          "medido": true,
+          "amostra": 136,
+          "janela_dias": null,
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
+          "a_favor": [],
+          "contra": [
+            "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+          ],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 136 anúncios medidos, 2 medições"
+        }
+      },
+      {
+        "evento_id": "sorocaba|anunciante_novo|Dr. Cadu Crevelario • Sorocaba - SP",
+        "data": "2026-08-13",
+        "praca_id": "sorocaba",
+        "rotulo": "SP · Sorocaba",
+        "local_id": null,
+        "entidade_id": "Dr. Cadu Crevelario • Sorocaba - SP",
+        "tipo": "anunciante_novo",
+        "natureza": "fato",
+        "severidade": "media",
+        "titulo": "Anunciante novo: Dr. Cadu Crevelario • Sorocaba - SP",
+        "fato": "1 anúncio no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+        "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+        "decisao": "ler a oferta dele antes de responder",
+        "fonte": "dados/serie/anuncios_observados.jsonl",
+        "evidencia": {
+          "anunciante": "Dr. Cadu Crevelario • Sorocaba - SP",
+          "anuncios": 1
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "alta",
+          "medido": true,
+          "amostra": 136,
+          "janela_dias": null,
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
+          "a_favor": [],
+          "contra": [
+            "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+          ],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 136 anúncios medidos, 2 medições"
+        }
+      },
+      {
+        "evento_id": "sorocaba|anunciante_novo|Dr. Wellington Heleno",
+        "data": "2026-08-13",
+        "praca_id": "sorocaba",
+        "rotulo": "SP · Sorocaba",
+        "local_id": null,
+        "entidade_id": "Dr. Wellington Heleno",
+        "tipo": "anunciante_novo",
+        "natureza": "fato",
+        "severidade": "media",
+        "titulo": "Anunciante novo: Dr. Wellington Heleno",
+        "fato": "1 anúncio no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+        "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+        "decisao": "ler a oferta dele antes de responder",
+        "fonte": "dados/serie/anuncios_observados.jsonl",
+        "evidencia": {
+          "anunciante": "Dr. Wellington Heleno",
+          "anuncios": 1
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "alta",
+          "medido": true,
+          "amostra": 136,
+          "janela_dias": null,
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
+          "a_favor": [],
+          "contra": [
+            "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+          ],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 136 anúncios medidos, 2 medições"
+        }
+      },
+      {
+        "evento_id": "sorocaba|anunciante_novo|Dra Tainara Odontologia",
+        "data": "2026-08-13",
+        "praca_id": "sorocaba",
+        "rotulo": "SP · Sorocaba",
+        "local_id": null,
+        "entidade_id": "Dra Tainara Odontologia",
+        "tipo": "anunciante_novo",
+        "natureza": "fato",
+        "severidade": "media",
+        "titulo": "Anunciante novo: Dra Tainara Odontologia",
+        "fato": "1 anúncio no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+        "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+        "decisao": "ler a oferta dele antes de responder",
+        "fonte": "dados/serie/anuncios_observados.jsonl",
+        "evidencia": {
+          "anunciante": "Dra Tainara Odontologia",
+          "anuncios": 1
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "alta",
+          "medido": true,
+          "amostra": 136,
+          "janela_dias": null,
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
+          "a_favor": [],
+          "contra": [
+            "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+          ],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 136 anúncios medidos, 2 medições"
+        }
+      },
+      {
+        "evento_id": "sorocaba|anunciante_novo|Massari Odonto",
+        "data": "2026-08-13",
+        "praca_id": "sorocaba",
+        "rotulo": "SP · Sorocaba",
+        "local_id": null,
+        "entidade_id": "Massari Odonto",
+        "tipo": "anunciante_novo",
+        "natureza": "fato",
+        "severidade": "media",
+        "titulo": "Anunciante novo: Massari Odonto",
+        "fato": "2 anúncios no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+        "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+        "decisao": "ler a oferta dele antes de responder",
+        "fonte": "dados/serie/anuncios_observados.jsonl",
+        "evidencia": {
+          "anunciante": "Massari Odonto",
+          "anuncios": 2
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "alta",
+          "medido": true,
+          "amostra": 136,
+          "janela_dias": null,
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
+          "a_favor": [],
+          "contra": [
+            "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+          ],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 136 anúncios medidos, 2 medições"
         }
       }
     ],
     "resumo": {
       "praca_id": "sorocaba",
       "rotulo": "SP · Sorocaba",
-      "eventos": 1,
+      "eventos": 6,
       "estado": "medido",
       "janela": "2026-08-12 → 2026-08-13",
       "medicoes_da_praca": 2,

@@ -276,13 +276,13 @@
   "oferta": {
     "praca_id": "mafra",
     "rotulo": "SC · Mafra",
-    "anuncios_de_aparelho": 6,
-    "anunciantes": 4,
-    "fora_do_produto": 51,
+    "anuncios_de_aparelho": 8,
+    "anunciantes": 6,
+    "fora_do_produto": 96,
     "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
-    "sem_texto": 36,
+    "sem_texto": 37,
     "amostra_curta": false,
-    "tese": "A disputa desta cidade é por avaliação grátis — 5 dos 6 anúncios de aparelho medidos falam disso, seguido de rapidez do resultado.",
+    "tese": "A disputa desta cidade é por avaliação grátis — 5 dos 8 anúncios de aparelho medidos falam disso, seguido de alinhador invisível.",
     "posicao_vaga": "Ninguém está falando de preço na frente — a cidade disputa por número; entrar aqui é entrar na briga mais cara.",
     "eixos": [
       {
@@ -290,31 +290,31 @@
         "rotulo": "Avaliação grátis",
         "o_que_significa": "compra a visita, não a venda — é isca de agenda",
         "anuncios": 5,
-        "pct": 83,
+        "pct": 62,
         "frase": "5 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "alinhador",
+        "rotulo": "Alinhador invisível",
+        "o_que_significa": "produto de ticket alto e público adulto",
+        "anuncios": 3,
+        "pct": 38,
+        "frase": "3 anúncios de aparelho falam disso"
       },
       {
         "eixo": "rapidez",
         "rotulo": "Rapidez do resultado",
         "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
         "anuncios": 2,
-        "pct": 33,
+        "pct": 25,
         "frase": "2 anúncios de aparelho falam disso"
-      },
-      {
-        "eixo": "alinhador",
-        "rotulo": "Alinhador invisível",
-        "o_que_significa": "produto de ticket alto e público adulto",
-        "anuncios": 1,
-        "pct": 17,
-        "frase": "1 anúncio de aparelho fala disso"
       },
       {
         "eixo": "autoridade",
         "rotulo": "Autoridade técnica",
         "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
         "anuncios": 1,
-        "pct": 17,
+        "pct": 12,
         "frase": "1 anúncio de aparelho fala disso"
       },
       {
@@ -402,6 +402,18 @@
         "anunciante": "Mafra Odontologia ",
         "eixos": [
           "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "Clínica More",
+        "eixos": [
+          "alinhador"
+        ]
+      },
+      {
+        "anunciante": "Clínica Stocker",
+        "eixos": [
+          "alinhador"
         ]
       }
     ]
@@ -916,37 +928,34 @@
         "tipo": "rodadas_nao_comparaveis",
         "natureza": "fato",
         "severidade": "baixa",
-        "titulo": "As duas rodadas de anúncio não se comparam",
-        "fato": "2026-08-07 perguntou 4 consultas e 2026-08-08 perguntou 2; 0 consultas em comum",
-        "por_que_importa": "conjuntos medidos com perguntas diferentes não dizem quem entrou nem quem saiu — a diferença é da coleta, não do mercado",
-        "decisao": "repetir a MESMA lista de consultas na próxima rodada",
+        "titulo": "Não dá para comparar estas duas rodadas de anúncio",
+        "fato": "a medição de 2026-08-08 não registrou quais consultas foram feitas",
+        "por_que_importa": "sem saber o que foi perguntado, entrada e saída de anunciante são diferença de pergunta, não de mercado",
+        "decisao": "a partir de agora toda rodada grava a lista de consultas",
         "fonte": "dados/serie/anuncios_observados.jsonl",
         "evidencia": {
-          "consultas_antes": [
-            "Instituto Lumière",
-            "OdontoCompany Mafra",
-            "OrthoDontic Mafra",
-            "aparelho ortodôntico Mafra"
-          ],
+          "consultas_antes": [],
           "consultas_agora": [
-            "OdontoCompany",
-            "OrthoDontic"
+            "OrthoDontic Mafra",
+            "aparelho ortodôntico Mafra",
+            "dentista Mafra",
+            "ortodontia Mafra"
           ]
         },
         "confianca": {
           "natureza": "fato",
-          "confianca": "alta",
+          "confianca": "media",
           "medido": true,
-          "amostra": 35,
+          "amostra": 17,
           "janela_dias": null,
-          "medicoes": 2,
-          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-07 → 2026-08-08)",
+          "medicoes": 3,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-08 → 2026-08-13)",
           "a_favor": [],
           "contra": [
-            "as consultas mudaram entre as rodadas"
+            "uma das rodadas não registrou as consultas"
           ],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 35 anúncios no ar, 2 medições"
+          "procedencia": "medido em 17 anúncios no ar, 3 medições"
         }
       }
     ],

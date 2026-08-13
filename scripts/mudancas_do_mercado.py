@@ -41,6 +41,12 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from cruzamento import identidades, conta, confianca
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
+
+
+def _sem_acento(t):
+    import unicodedata
+    return "".join(c for c in unicodedata.normalize("NFD", str(t or ""))
+                   if unicodedata.category(c) != "Mn").lower().strip()
 SERIE = RAIZ/"dados"/"serie"
 SAIDA = RAIZ/"dados"/"portal"/"mudancas_do_mercado.json"
 
@@ -82,7 +88,8 @@ def evento(praca, rotulo, tipo, natureza, severidade, titulo, fato,
     }
 
 
-def eventos_de_anuncio(p, rot, obs, evento, confianca, conta, datas_da_praca):
+def eventos_de_anuncio(p, rot, obs, evento, confianca, conta, datas_da_praca,
+                       ident=None, _sem_acento=None):
     """O DELTA DE ANÚNCIO NÃO PODE DEPENDER DO DELTA DE CATEGORIA.
 
     Este bloco vivia depois de um `continue` que exigia duas medições da
@@ -111,10 +118,34 @@ def eventos_de_anuncio(p, rot, obs, evento, confianca, conta, datas_da_praca):
     if len(dsa) >= 2:
         aa, ab = dsa[-2], dsa[-1]
         _id = lambda r: r.get("chave") or f"{r.get('praca_id')}|{r.get('ad_id')}"
+
+        # "QUEM ANUNCIA NESTA CIDADE" SÓ SE MEDE COM CONSULTA DA CIDADE.
+        #
+        # A lista de consultas leva os três maiores concorrentes da praça, e
+        # concorrente costuma ser REDE: "Clínica Dentista do Povo" e "Oral
+        # Unic" devolvem anúncio do Brasil inteiro. Foi assim que Porto
+        # Alegre ganhou "Odonto Bites Tanabi" (SP) e "Odontoclin Quatiguá"
+        # (PR) como anunciantes novos, e Cuiabá ganhou clínicas de
+        # Taguatinga e de Mococa.
+        #
+        # É a mesma armadilha que já trouxe a "Orthodontic Braço do Norte",
+        # de SC, para dentro de Juazeiro do Norte, no CE: a busca casa por
+        # PALAVRA. As consultas por nome de rival continuam sendo coletadas
+        # — servem para ler o que aquele rival anuncia — mas ficam fora da
+        # conta de quem entrou e quem saiu da CIDADE.
+        _cidades = [_sem_acento(c.split("/")[0])
+                    for c in ((ident.get(p) or {}).get("cidades") or [])]
+
+        def _da_cidade(r):
+            q = _sem_acento(r.get("consulta") or "")
+            return any(c and c in q for c in _cidades)
+
         ant = {_id(r): r for r in obs
-               if r.get("praca_id") == p and r["snapshot_date"] == aa}
+               if r.get("praca_id") == p and r["snapshot_date"] == aa
+               and _da_cidade(r)}
         ago = {_id(r): r for r in obs
-               if r.get("praca_id") == p and r["snapshot_date"] == ab}
+               if r.get("praca_id") == p and r["snapshot_date"] == ab
+               and _da_cidade(r)}
         # DUAS RODADAS SÓ SE COMPARAM SE PERGUNTARAM A MESMA COISA.
         #
         # Mafra tem 58 anúncios em 07/ago e 35 em 08/ago, e o delta acusava
@@ -130,7 +161,34 @@ def eventos_de_anuncio(p, rot, obs, evento, confianca, conta, datas_da_praca):
         # não sabemos > não aconteceu > aconteceu.
         q_ant = {r.get("consulta") for r in ant.values() if r.get("consulta")}
         q_ago = {r.get("consulta") for r in ago.values() if r.get("consulta")}
-        if q_ant and q_ago and q_ant != q_ago:
+        # NÃO SABER O QUE FOI PERGUNTADO NÃO É TER PERGUNTADO O MESMO.
+        #
+        # O guarda pulava quando um dos lados não tinha `consulta` gravada —
+        # e o coletor antigo não gravava. Cuiabá comparou uma rodada de
+        # consulta desconhecida com outra de cinco consultas conhecidas e
+        # publicou 60 "anunciantes novos", entre eles clínicas de Taguatinga
+        # e de Mococa, que não ficam em Mato Grosso.
+        #
+        # Ausência de informação é o primeiro dos três estados, não o
+        # segundo: não sabemos > não aconteceu > aconteceu.
+        if not q_ant or not q_ago:
+            return [evento(
+                p, rot, "rodadas_nao_comparaveis", "fato", "baixa",
+                "Não dá para comparar estas duas rodadas de anúncio",
+                (f"a medição de {aa if not q_ant else ab} não registrou quais "
+                 f"consultas foram feitas"),
+                "sem saber o que foi perguntado, entrada e saída de "
+                "anunciante são diferença de pergunta, não de mercado",
+                "a partir de agora toda rodada grava a lista de consultas",
+                "dados/serie/anuncios_observados.jsonl",
+                {"consultas_antes": sorted(q_ant), "consultas_agora": sorted(q_ago)},
+                confianca("fato", amostra=len(ago),
+                          unidade_amostra=("anúncio no ar", "anúncios no ar"),
+                          medicoes=len(dsa),
+                          fonte=f"dados/serie/anuncios_observados.jsonl "
+                                f"({aa} → {ab})",
+                          contra=["uma das rodadas não registrou as consultas"]))]
+        if q_ant != q_ago:
             return [evento(
                 p, rot, "rodadas_nao_comparaveis", "fato", "baixa",
                 "As duas rodadas de anúncio não se comparam",
@@ -267,7 +325,8 @@ def main():
             # ela pode ter história de MÍDIA mesmo sem história de
             # categoria: são duas fontes, dois ritmos, dois custos
             de_midia = eventos_de_anuncio(p, rot, obs, evento, confianca,
-                                          conta, datas_da_praca)
+                                          conta, datas_da_praca,
+                                          ident, _sem_acento)
             if de_midia:
                 resumo[-1]["eventos"] = len(de_midia)
                 fora.extend(de_midia)
@@ -376,7 +435,7 @@ def main():
                 pass
 
         eventos += eventos_de_anuncio(p, rot, obs, evento, confianca, conta,
-                                      datas_da_praca)
+                                      datas_da_praca, ident, _sem_acento)
         ordem = {"critica": 0, "alta": 1, "media": 2, "baixa": 3}
         eventos.sort(key=lambda e: (ordem.get(e["severidade"], 9), e["titulo"]))
         fora.extend(eventos)

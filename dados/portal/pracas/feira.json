@@ -164,30 +164,70 @@
   "oferta": {
     "praca_id": "feira",
     "rotulo": "BA · Feira de Santana",
-    "anuncios_de_aparelho": 14,
-    "anunciantes": 5,
-    "fora_do_produto": 13,
+    "anuncios_de_aparelho": 21,
+    "anunciantes": 8,
+    "fora_do_produto": 47,
     "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
-    "sem_texto": 36,
+    "sem_texto": 44,
     "amostra_curta": false,
-    "tese": "A disputa desta cidade é por urgência e escassez — 4 dos 14 anúncios de aparelho medidos falam disso, seguido de autoridade técnica.",
+    "tese": "A disputa desta cidade é por autoridade técnica — 8 dos 21 anúncios de aparelho medidos falam disso, seguido de aparelho estético.",
     "posicao_vaga": "Ninguém está falando de preço na frente — a cidade disputa por número; entrar aqui é entrar na briga mais cara.",
     "eixos": [
+      {
+        "eixo": "autoridade",
+        "rotulo": "Autoridade técnica",
+        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+        "anuncios": 8,
+        "pct": 38,
+        "frase": "8 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "estetico",
+        "rotulo": "Aparelho estético",
+        "o_que_significa": "vende discrição — público que trabalha de frente",
+        "anuncios": 4,
+        "pct": 19,
+        "frase": "4 anúncios de aparelho falam disso"
+      },
       {
         "eixo": "urgencia",
         "rotulo": "Urgência e escassez",
         "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
         "anuncios": 4,
-        "pct": 29,
+        "pct": 19,
         "frase": "4 anúncios de aparelho falam disso"
       },
       {
-        "eixo": "autoridade",
-        "rotulo": "Autoridade técnica",
-        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+        "eixo": "alinhador",
+        "rotulo": "Alinhador invisível",
+        "o_que_significa": "produto de ticket alto e público adulto",
         "anuncios": 3,
-        "pct": 21,
+        "pct": 14,
         "frase": "3 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "publico_adulto",
+        "rotulo": "Falado para adulto",
+        "o_que_significa": "disputa o adulto que adiou o tratamento",
+        "anuncios": 2,
+        "pct": 10,
+        "frase": "2 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "avaliacao_gratis",
+        "rotulo": "Avaliação grátis",
+        "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+        "anuncios": 1,
+        "pct": 5,
+        "frase": "1 anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "publico_infantil",
+        "rotulo": "Falado para criança e adolescente",
+        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+        "anuncios": 1,
+        "pct": 5,
+        "frase": "1 anúncio de aparelho fala disso"
       },
       {
         "eixo": "preco",
@@ -214,46 +254,6 @@
         "frase": "nenhum anúncio de aparelho fala disso"
       },
       {
-        "eixo": "avaliacao_gratis",
-        "rotulo": "Avaliação grátis",
-        "o_que_significa": "compra a visita, não a venda — é isca de agenda",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "alinhador",
-        "rotulo": "Alinhador invisível",
-        "o_que_significa": "produto de ticket alto e público adulto",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "estetico",
-        "rotulo": "Aparelho estético",
-        "o_que_significa": "vende discrição — público que trabalha de frente",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "publico_adulto",
-        "rotulo": "Falado para adulto",
-        "o_que_significa": "disputa o adulto que adiou o tratamento",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "publico_infantil",
-        "rotulo": "Falado para criança e adolescente",
-        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
         "eixo": "prova_social",
         "rotulo": "Prova social",
         "o_que_significa": "vende confiança em vez de preço",
@@ -272,9 +272,24 @@
     ],
     "por_anunciante": [
       {
+        "anunciante": "COB Odontologia Integrada",
+        "eixos": [
+          "estetico",
+          "autoridade",
+          "alinhador"
+        ]
+      },
+      {
         "anunciante": "Clínica Vamos Sorrir",
         "eixos": [
           "urgencia",
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "Dra Juliana Mattos",
+        "eixos": [
+          "publico_infantil",
           "autoridade"
         ]
       },
@@ -909,33 +924,45 @@
   "movimentos_do_mercado": {
     "eventos": [
       {
-        "evento_id": "feira|linha_de_base_anuncios|-",
+        "evento_id": "feira|rodadas_nao_comparaveis|-",
         "data": "2026-08-13",
         "praca_id": "feira",
         "rotulo": "BA · Feira de Santana",
         "local_id": null,
         "entidade_id": null,
-        "tipo": "linha_de_base_anuncios",
+        "tipo": "rodadas_nao_comparaveis",
         "natureza": "fato",
         "severidade": "baixa",
-        "titulo": "Linha de base de anúncios criada",
-        "fato": "primeira medição de anúncios desta praça, em 2026-08-08",
-        "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-        "decisao": "recoletar na próxima rodada para abrir o delta",
+        "titulo": "As duas rodadas de anúncio não se comparam",
+        "fato": "2026-08-08 perguntou 1 consulta e 2026-08-13 perguntou 4; 1 consulta em comum",
+        "por_que_importa": "conjuntos medidos com perguntas diferentes não dizem quem entrou nem quem saiu — a diferença é da coleta, não do mercado",
+        "decisao": "repetir a MESMA lista de consultas na próxima rodada",
         "fonte": "dados/serie/anuncios_observados.jsonl",
-        "evidencia": {},
+        "evidencia": {
+          "consultas_antes": [
+            "aparelho ortodôntico Feira de Santana"
+          ],
+          "consultas_agora": [
+            "OrthoDontic Feira de Santana",
+            "aparelho ortodôntico Feira de Santana",
+            "dentista Feira de Santana",
+            "ortodontia Feira de Santana"
+          ]
+        },
         "confianca": {
           "natureza": "fato",
-          "confianca": "media",
+          "confianca": "alta",
           "medido": true,
-          "amostra": 63,
+          "amostra": 62,
           "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/serie/anuncios_observados.jsonl",
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-08 → 2026-08-13)",
           "a_favor": [],
-          "contra": [],
+          "contra": [
+            "as consultas mudaram entre as rodadas"
+          ],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 63 anúncios no ar, 1 medição"
+          "procedencia": "medido em 62 anúncios no ar, 2 medições"
         }
       }
     ],

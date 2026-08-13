@@ -197,62 +197,70 @@
   "oferta": {
     "praca_id": "porto_alegre",
     "rotulo": "RS · Porto Alegre",
-    "anuncios_de_aparelho": 41,
-    "anunciantes": 14,
-    "fora_do_produto": 117,
+    "anuncios_de_aparelho": 52,
+    "anunciantes": 17,
+    "fora_do_produto": 136,
     "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
     "sem_texto": 2,
     "amostra_curta": false,
-    "tese": "A disputa desta cidade é por alinhador invisível — 19 dos 41 anúncios de aparelho medidos falam disso, seguido de avaliação grátis.",
+    "tese": "A disputa desta cidade é por alinhador invisível — 26 dos 52 anúncios de aparelho medidos falam disso, seguido de avaliação grátis.",
     "posicao_vaga": "Ninguém está falando de sem entrada — tira a barreira do primeiro pagamento — ataca quem não tem reserva.",
     "eixos": [
       {
         "eixo": "alinhador",
         "rotulo": "Alinhador invisível",
         "o_que_significa": "produto de ticket alto e público adulto",
-        "anuncios": 19,
-        "pct": 46,
-        "frase": "19 anúncios de aparelho falam disso"
+        "anuncios": 26,
+        "pct": 50,
+        "frase": "26 anúncios de aparelho falam disso"
       },
       {
         "eixo": "avaliacao_gratis",
         "rotulo": "Avaliação grátis",
         "o_que_significa": "compra a visita, não a venda — é isca de agenda",
-        "anuncios": 6,
-        "pct": 15,
-        "frase": "6 anúncios de aparelho falam disso"
+        "anuncios": 9,
+        "pct": 17,
+        "frase": "9 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "autoridade",
+        "rotulo": "Autoridade técnica",
+        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+        "anuncios": 7,
+        "pct": 13,
+        "frase": "7 anúncios de aparelho falam disso"
       },
       {
         "eixo": "urgencia",
         "rotulo": "Urgência e escassez",
         "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
         "anuncios": 5,
-        "pct": 12,
+        "pct": 10,
         "frase": "5 anúncios de aparelho falam disso"
       },
       {
-        "eixo": "autoridade",
-        "rotulo": "Autoridade técnica",
-        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
-        "anuncios": 5,
-        "pct": 12,
-        "frase": "5 anúncios de aparelho falam disso"
+        "eixo": "parcelamento",
+        "rotulo": "Parcelamento",
+        "o_que_significa": "vende a mensalidade, não o tratamento",
+        "anuncios": 4,
+        "pct": 8,
+        "frase": "4 anúncios de aparelho falam disso"
       },
       {
         "eixo": "preco",
         "rotulo": "Preço na frente",
         "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
         "anuncios": 3,
-        "pct": 7,
+        "pct": 6,
         "frase": "3 anúncios de aparelho falam disso"
       },
       {
-        "eixo": "parcelamento",
-        "rotulo": "Parcelamento",
-        "o_que_significa": "vende a mensalidade, não o tratamento",
-        "anuncios": 3,
-        "pct": 7,
-        "frase": "3 anúncios de aparelho falam disso"
+        "eixo": "estetico",
+        "rotulo": "Aparelho estético",
+        "o_que_significa": "vende discrição — público que trabalha de frente",
+        "anuncios": 1,
+        "pct": 2,
+        "frase": "1 anúncio de aparelho fala disso"
       },
       {
         "eixo": "publico_infantil",
@@ -274,14 +282,6 @@
         "eixo": "sem_entrada",
         "rotulo": "Sem entrada",
         "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "estetico",
-        "rotulo": "Aparelho estético",
-        "o_que_significa": "vende discrição — público que trabalha de frente",
         "anuncios": 0,
         "pct": 0,
         "frase": "nenhum anúncio de aparelho fala disso"
@@ -328,6 +328,13 @@
         ]
       },
       {
+        "anunciante": "Sitch Bonh Odontologia",
+        "eixos": [
+          "avaliacao_gratis",
+          "autoridade"
+        ]
+      },
+      {
         "anunciante": "Integrare - Clínicas Odontológicas",
         "eixos": [
           "avaliacao_gratis",
@@ -353,12 +360,6 @@
         "eixos": [
           "avaliacao_gratis",
           "alinhador"
-        ]
-      },
-      {
-        "anunciante": "Clinica Geremia",
-        "eixos": [
-          "publico_infantil"
         ]
       }
     ]
@@ -1640,40 +1641,185 @@
   "movimentos_do_mercado": {
     "eventos": [
       {
-        "evento_id": "porto_alegre|linha_de_base_anuncios|-",
+        "evento_id": "porto_alegre|anunciante_novo|Amor Saúde - Porto Alegre Norte",
         "data": "2026-08-13",
         "praca_id": "porto_alegre",
         "rotulo": "RS · Porto Alegre",
         "local_id": null,
-        "entidade_id": null,
-        "tipo": "linha_de_base_anuncios",
+        "entidade_id": "Amor Saúde - Porto Alegre Norte",
+        "tipo": "anunciante_novo",
         "natureza": "fato",
-        "severidade": "baixa",
-        "titulo": "Linha de base de anúncios criada",
-        "fato": "primeira medição de anúncios desta praça, em 2026-08-12",
-        "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-        "decisao": "recoletar na próxima rodada para abrir o delta",
+        "severidade": "media",
+        "titulo": "Anunciante novo: Amor Saúde - Porto Alegre Norte",
+        "fato": "1 anúncio no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+        "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+        "decisao": "ler a oferta dele antes de responder",
         "fonte": "dados/serie/anuncios_observados.jsonl",
-        "evidencia": {},
+        "evidencia": {
+          "anunciante": "Amor Saúde - Porto Alegre Norte",
+          "anuncios": 1
+        },
         "confianca": {
           "natureza": "fato",
-          "confianca": "media",
+          "confianca": "alta",
           "medido": true,
-          "amostra": 160,
+          "amostra": 112,
           "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/serie/anuncios_observados.jsonl",
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
           "a_favor": [],
-          "contra": [],
+          "contra": [
+            "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+          ],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 160 anúncios no ar, 1 medição"
+          "procedencia": "medido em 112 anúncios medidos, 2 medições"
+        }
+      },
+      {
+        "evento_id": "porto_alegre|anunciante_novo|Cartão Meu Dentista Poa RS",
+        "data": "2026-08-13",
+        "praca_id": "porto_alegre",
+        "rotulo": "RS · Porto Alegre",
+        "local_id": null,
+        "entidade_id": "Cartão Meu Dentista Poa RS",
+        "tipo": "anunciante_novo",
+        "natureza": "fato",
+        "severidade": "media",
+        "titulo": "Anunciante novo: Cartão Meu Dentista Poa RS",
+        "fato": "4 anúncios no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+        "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+        "decisao": "ler a oferta dele antes de responder",
+        "fonte": "dados/serie/anuncios_observados.jsonl",
+        "evidencia": {
+          "anunciante": "Cartão Meu Dentista Poa RS",
+          "anuncios": 4
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "alta",
+          "medido": true,
+          "amostra": 112,
+          "janela_dias": null,
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
+          "a_favor": [],
+          "contra": [
+            "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+          ],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 112 anúncios medidos, 2 medições"
+        }
+      },
+      {
+        "evento_id": "porto_alegre|anunciante_novo|Dr. Ricardo Scarparo",
+        "data": "2026-08-13",
+        "praca_id": "porto_alegre",
+        "rotulo": "RS · Porto Alegre",
+        "local_id": null,
+        "entidade_id": "Dr. Ricardo Scarparo",
+        "tipo": "anunciante_novo",
+        "natureza": "fato",
+        "severidade": "media",
+        "titulo": "Anunciante novo: Dr. Ricardo Scarparo",
+        "fato": "1 anúncio no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+        "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+        "decisao": "ler a oferta dele antes de responder",
+        "fonte": "dados/serie/anuncios_observados.jsonl",
+        "evidencia": {
+          "anunciante": "Dr. Ricardo Scarparo",
+          "anuncios": 1
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "alta",
+          "medido": true,
+          "amostra": 112,
+          "janela_dias": null,
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
+          "a_favor": [],
+          "contra": [
+            "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+          ],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 112 anúncios medidos, 2 medições"
+        }
+      },
+      {
+        "evento_id": "porto_alegre|anunciante_novo|Dra Marina Py",
+        "data": "2026-08-13",
+        "praca_id": "porto_alegre",
+        "rotulo": "RS · Porto Alegre",
+        "local_id": null,
+        "entidade_id": "Dra Marina Py",
+        "tipo": "anunciante_novo",
+        "natureza": "fato",
+        "severidade": "media",
+        "titulo": "Anunciante novo: Dra Marina Py",
+        "fato": "1 anúncio no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+        "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+        "decisao": "ler a oferta dele antes de responder",
+        "fonte": "dados/serie/anuncios_observados.jsonl",
+        "evidencia": {
+          "anunciante": "Dra Marina Py",
+          "anuncios": 1
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "alta",
+          "medido": true,
+          "amostra": 112,
+          "janela_dias": null,
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
+          "a_favor": [],
+          "contra": [
+            "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+          ],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 112 anúncios medidos, 2 medições"
+        }
+      },
+      {
+        "evento_id": "porto_alegre|anunciante_novo|Sitch Bonh Odontologia",
+        "data": "2026-08-13",
+        "praca_id": "porto_alegre",
+        "rotulo": "RS · Porto Alegre",
+        "local_id": null,
+        "entidade_id": "Sitch Bonh Odontologia",
+        "tipo": "anunciante_novo",
+        "natureza": "fato",
+        "severidade": "media",
+        "titulo": "Anunciante novo: Sitch Bonh Odontologia",
+        "fato": "2 anúncios no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+        "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+        "decisao": "ler a oferta dele antes de responder",
+        "fonte": "dados/serie/anuncios_observados.jsonl",
+        "evidencia": {
+          "anunciante": "Sitch Bonh Odontologia",
+          "anuncios": 2
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "alta",
+          "medido": true,
+          "amostra": 112,
+          "janela_dias": null,
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
+          "a_favor": [],
+          "contra": [
+            "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+          ],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 112 anúncios medidos, 2 medições"
         }
       }
     ],
     "resumo": {
       "praca_id": "porto_alegre",
       "rotulo": "RS · Porto Alegre",
-      "eventos": 1,
+      "eventos": 5,
       "estado": "medido",
       "janela": "2026-08-12 → 2026-08-13",
       "medicoes_da_praca": 2,

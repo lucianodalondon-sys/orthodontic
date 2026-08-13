@@ -267,21 +267,77 @@
   "oferta": {
     "praca_id": "cuiaba",
     "rotulo": "MT · Cuiabá",
-    "anuncios_de_aparelho": 1,
-    "anunciantes": 1,
-    "fora_do_produto": 0,
+    "anuncios_de_aparelho": 32,
+    "anunciantes": 18,
+    "fora_do_produto": 82,
     "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
     "sem_texto": 0,
-    "amostra_curta": true,
-    "tese": "Ainda não dá para descrever a disputa desta cidade: só 1 anúncio de aparelho com texto medido.",
-    "posicao_vaga": null,
+    "amostra_curta": false,
+    "tese": "A disputa desta cidade é por avaliação grátis — 9 dos 32 anúncios de aparelho medidos falam disso, seguido de autoridade técnica.",
+    "posicao_vaga": "Ninguém está falando de preço na frente — a cidade disputa por número; entrar aqui é entrar na briga mais cara.",
     "eixos": [
+      {
+        "eixo": "avaliacao_gratis",
+        "rotulo": "Avaliação grátis",
+        "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+        "anuncios": 9,
+        "pct": 28,
+        "frase": "9 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "autoridade",
+        "rotulo": "Autoridade técnica",
+        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+        "anuncios": 8,
+        "pct": 25,
+        "frase": "8 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "alinhador",
+        "rotulo": "Alinhador invisível",
+        "o_que_significa": "produto de ticket alto e público adulto",
+        "anuncios": 3,
+        "pct": 9,
+        "frase": "3 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "estetico",
+        "rotulo": "Aparelho estético",
+        "o_que_significa": "vende discrição — público que trabalha de frente",
+        "anuncios": 3,
+        "pct": 9,
+        "frase": "3 anúncios de aparelho falam disso"
+      },
       {
         "eixo": "urgencia",
         "rotulo": "Urgência e escassez",
         "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+        "anuncios": 3,
+        "pct": 9,
+        "frase": "3 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "rapidez",
+        "rotulo": "Rapidez do resultado",
+        "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+        "anuncios": 3,
+        "pct": 9,
+        "frase": "3 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "publico_infantil",
+        "rotulo": "Falado para criança e adolescente",
+        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
         "anuncios": 1,
-        "pct": 100,
+        "pct": 3,
+        "frase": "1 anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "prova_social",
+        "rotulo": "Prova social",
+        "o_que_significa": "vende confiança em vez de preço",
+        "anuncios": 1,
+        "pct": 3,
         "frase": "1 anúncio de aparelho fala disso"
       },
       {
@@ -309,65 +365,9 @@
         "frase": "nenhum anúncio de aparelho fala disso"
       },
       {
-        "eixo": "avaliacao_gratis",
-        "rotulo": "Avaliação grátis",
-        "o_que_significa": "compra a visita, não a venda — é isca de agenda",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "alinhador",
-        "rotulo": "Alinhador invisível",
-        "o_que_significa": "produto de ticket alto e público adulto",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "estetico",
-        "rotulo": "Aparelho estético",
-        "o_que_significa": "vende discrição — público que trabalha de frente",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
         "eixo": "publico_adulto",
         "rotulo": "Falado para adulto",
         "o_que_significa": "disputa o adulto que adiou o tratamento",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "publico_infantil",
-        "rotulo": "Falado para criança e adolescente",
-        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "prova_social",
-        "rotulo": "Prova social",
-        "o_que_significa": "vende confiança em vez de preço",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "autoridade",
-        "rotulo": "Autoridade técnica",
-        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "rapidez",
-        "rotulo": "Rapidez do resultado",
-        "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
         "anuncios": 0,
         "pct": 0,
         "frase": "nenhum anúncio de aparelho fala disso"
@@ -375,8 +375,58 @@
     ],
     "por_anunciante": [
       {
-        "anunciante": "Závia Odontologia inteligente - Várzea Grande São Matheus",
+        "anunciante": "Oral Sin Cuiabá - Jardim Imperial",
         "eixos": [
+          "avaliacao_gratis",
+          "autoridade",
+          "estetico"
+        ]
+      },
+      {
+        "anunciante": "Betoni Odontologia Cuiabá",
+        "eixos": [
+          "alinhador",
+          "estetico",
+          "rapidez"
+        ]
+      },
+      {
+        "anunciante": "Sorrix Cuiabá",
+        "eixos": [
+          "avaliacao_gratis",
+          "alinhador",
+          "estetico"
+        ]
+      },
+      {
+        "anunciante": "Gou Odonto Ilha Solteira2",
+        "eixos": [
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "Odonto Cuiabá",
+        "eixos": [
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "OdontoCompany Jardim Imperial - Cuiabá/MT ",
+        "eixos": [
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "OrtoDoctor - Cuiabá ",
+        "eixos": [
+          "avaliacao_gratis",
+          "rapidez"
+        ]
+      },
+      {
+        "anunciante": "Zavia Odontologia Inteligente - CPA3",
+        "eixos": [
+          "avaliacao_gratis",
           "urgencia"
         ]
       }
@@ -1402,33 +1452,42 @@
   "movimentos_do_mercado": {
     "eventos": [
       {
-        "evento_id": "cuiaba|linha_de_base_anuncios|-",
+        "evento_id": "cuiaba|rodadas_nao_comparaveis|-",
         "data": "2026-08-13",
         "praca_id": "cuiaba",
         "rotulo": "MT · Cuiabá",
         "local_id": null,
         "entidade_id": null,
-        "tipo": "linha_de_base_anuncios",
+        "tipo": "rodadas_nao_comparaveis",
         "natureza": "fato",
         "severidade": "baixa",
-        "titulo": "Linha de base de anúncios criada",
-        "fato": "primeira medição de anúncios desta praça, em 2026-08-08",
-        "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-        "decisao": "recoletar na próxima rodada para abrir o delta",
+        "titulo": "Não dá para comparar estas duas rodadas de anúncio",
+        "fato": "a medição de 2026-08-08 não registrou quais consultas foram feitas",
+        "por_que_importa": "sem saber o que foi perguntado, entrada e saída de anunciante são diferença de pergunta, não de mercado",
+        "decisao": "a partir de agora toda rodada grava a lista de consultas",
         "fonte": "dados/serie/anuncios_observados.jsonl",
-        "evidencia": {},
+        "evidencia": {
+          "consultas_antes": [],
+          "consultas_agora": [
+            "aparelho ortodôntico Cuiabá",
+            "dentista Cuiabá",
+            "ortodontia Cuiabá"
+          ]
+        },
         "confianca": {
           "natureza": "fato",
-          "confianca": "media",
+          "confianca": "alta",
           "medido": true,
-          "amostra": 48,
+          "amostra": 79,
           "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/serie/anuncios_observados.jsonl",
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-08 → 2026-08-13)",
           "a_favor": [],
-          "contra": [],
+          "contra": [
+            "uma das rodadas não registrou as consultas"
+          ],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 48 anúncios no ar, 1 medição"
+          "procedencia": "medido em 79 anúncios no ar, 2 medições"
         }
       }
     ],

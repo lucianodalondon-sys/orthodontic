@@ -190,6 +190,22 @@ padrões → caixa → padrao → build. Períodos curtos são declarados na tel
   `python3 coleta/coletores/unidades_da_rede.py` baixa a lista oficial e
   compara com o número que o próprio site declara. Nenhuma frase sobre "a
   rede está / não está nessa cidade" sai sem essa lista do dia.
+- **NÃO SABER O QUE FOI PERGUNTADO NÃO É TER PERGUNTADO O MESMO.** O
+  guarda de comparabilidade do detector pulava quando um dos lados não
+  tinha `consulta` gravada — e o coletor antigo não gravava. Cuiabá
+  comparou uma rodada de consulta desconhecida com outra de cinco
+  conhecidas e publicou **60 "anunciantes novos"**, entre eles clínicas de
+  Taguatinga e de Mococa. Ausência de informação é o PRIMEIRO dos três
+  estados: não sabemos > não aconteceu > aconteceu.
+- **"QUEM ANUNCIA NESTA CIDADE" SÓ SE MEDE COM CONSULTA DA CIDADE.** A
+  lista de consultas leva os três maiores concorrentes da praça, e
+  concorrente costuma ser REDE: "Clínica Dentista do Povo" e "Oral Unic"
+  devolvem anúncio do Brasil inteiro. Porto Alegre ganhou "Odonto Bites
+  Tanabi" (SP) e "Odontoclin Quatiguá" (PR) como anunciantes novos. É a
+  mesma armadilha da "Orthodontic Braço do Norte" dentro de Juazeiro do
+  Norte. As consultas por nome de rival continuam sendo coletadas — servem
+  para ler o que aquele rival anuncia — mas ficam FORA da conta de quem
+  entrou e saiu da cidade. De 60 eventos sobraram 16, todos da praça certa.
 - **A CHAVE DO GOOGLE É CRÉDITO DE TESTE, E ELE TEM DATA.** R$ 1.385 de
   R$ 1.745 restantes em 13/ago/2026, e o teste **acaba em 7 de novembro de
   2026** — por prazo ou por consumo, o que vier primeiro. Custo calibrado

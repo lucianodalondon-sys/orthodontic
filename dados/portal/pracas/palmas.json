@@ -178,30 +178,30 @@
   "oferta": {
     "praca_id": "palmas",
     "rotulo": "TO · Palmas",
-    "anuncios_de_aparelho": 2,
-    "anunciantes": 2,
-    "fora_do_produto": 23,
+    "anuncios_de_aparelho": 3,
+    "anunciantes": 3,
+    "fora_do_produto": 34,
     "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
     "sem_texto": 1,
     "amostra_curta": true,
-    "tese": "Ainda não dá para descrever a disputa desta cidade: só 2 anúncios de aparelho com texto medido.",
+    "tese": "Ainda não dá para descrever a disputa desta cidade: só 3 anúncios de aparelho com texto medido.",
     "posicao_vaga": null,
     "eixos": [
       {
         "eixo": "avaliacao_gratis",
         "rotulo": "Avaliação grátis",
         "o_que_significa": "compra a visita, não a venda — é isca de agenda",
-        "anuncios": 1,
-        "pct": 50,
-        "frase": "1 anúncio de aparelho fala disso"
+        "anuncios": 2,
+        "pct": 67,
+        "frase": "2 anúncios de aparelho falam disso"
       },
       {
         "eixo": "alinhador",
         "rotulo": "Alinhador invisível",
         "o_que_significa": "produto de ticket alto e público adulto",
-        "anuncios": 1,
-        "pct": 50,
-        "frase": "1 anúncio de aparelho fala disso"
+        "anuncios": 2,
+        "pct": 67,
+        "frase": "2 anúncios de aparelho falam disso"
       },
       {
         "eixo": "preco",
@@ -287,6 +287,13 @@
     "por_anunciante": [
       {
         "anunciante": "drasorrisoperfeitto",
+        "eixos": [
+          "avaliacao_gratis",
+          "alinhador"
+        ]
+      },
+      {
+        "anunciante": "Arte Sorriso",
         "eixos": [
           "avaliacao_gratis",
           "alinhador"
@@ -761,40 +768,185 @@
   "movimentos_do_mercado": {
     "eventos": [
       {
-        "evento_id": "palmas|linha_de_base_anuncios|-",
+        "evento_id": "palmas|anunciante_novo|Arte Sorriso",
         "data": "2026-08-13",
         "praca_id": "palmas",
         "rotulo": "TO · Palmas",
         "local_id": null,
-        "entidade_id": null,
-        "tipo": "linha_de_base_anuncios",
+        "entidade_id": "Arte Sorriso",
+        "tipo": "anunciante_novo",
         "natureza": "fato",
-        "severidade": "baixa",
-        "titulo": "Linha de base de anúncios criada",
-        "fato": "primeira medição de anúncios desta praça, em 2026-08-08",
-        "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-        "decisao": "recoletar na próxima rodada para abrir o delta",
+        "severidade": "media",
+        "titulo": "Anunciante novo: Arte Sorriso",
+        "fato": "2 anúncios no ar em 2026-08-13, e nenhum na medição de 2026-08-08",
+        "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+        "decisao": "ler a oferta dele antes de responder",
         "fonte": "dados/serie/anuncios_observados.jsonl",
-        "evidencia": {},
+        "evidencia": {
+          "anunciante": "Arte Sorriso",
+          "anuncios": 2
+        },
         "confianca": {
           "natureza": "fato",
-          "confianca": "media",
+          "confianca": "alta",
           "medido": true,
-          "amostra": 26,
+          "amostra": 30,
           "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/serie/anuncios_observados.jsonl",
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-08 → 2026-08-13)",
           "a_favor": [],
-          "contra": [],
+          "contra": [
+            "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+          ],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 26 anúncios no ar, 1 medição"
+          "procedencia": "medido em 30 anúncios medidos, 2 medições"
+        }
+      },
+      {
+        "evento_id": "palmas|anunciante_novo|Clínica Odontológica - Te Ver Sorrir",
+        "data": "2026-08-13",
+        "praca_id": "palmas",
+        "rotulo": "TO · Palmas",
+        "local_id": null,
+        "entidade_id": "Clínica Odontológica - Te Ver Sorrir",
+        "tipo": "anunciante_novo",
+        "natureza": "fato",
+        "severidade": "media",
+        "titulo": "Anunciante novo: Clínica Odontológica - Te Ver Sorrir",
+        "fato": "2 anúncios no ar em 2026-08-13, e nenhum na medição de 2026-08-08",
+        "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+        "decisao": "ler a oferta dele antes de responder",
+        "fonte": "dados/serie/anuncios_observados.jsonl",
+        "evidencia": {
+          "anunciante": "Clínica Odontológica - Te Ver Sorrir",
+          "anuncios": 2
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "alta",
+          "medido": true,
+          "amostra": 30,
+          "janela_dias": null,
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-08 → 2026-08-13)",
+          "a_favor": [],
+          "contra": [
+            "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+          ],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 30 anúncios medidos, 2 medições"
+        }
+      },
+      {
+        "evento_id": "palmas|anunciante_novo|Dr Flavio Fregonesi Dentista",
+        "data": "2026-08-13",
+        "praca_id": "palmas",
+        "rotulo": "TO · Palmas",
+        "local_id": null,
+        "entidade_id": "Dr Flavio Fregonesi Dentista",
+        "tipo": "anunciante_novo",
+        "natureza": "fato",
+        "severidade": "media",
+        "titulo": "Anunciante novo: Dr Flavio Fregonesi Dentista",
+        "fato": "3 anúncios no ar em 2026-08-13, e nenhum na medição de 2026-08-08",
+        "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+        "decisao": "ler a oferta dele antes de responder",
+        "fonte": "dados/serie/anuncios_observados.jsonl",
+        "evidencia": {
+          "anunciante": "Dr Flavio Fregonesi Dentista",
+          "anuncios": 3
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "alta",
+          "medido": true,
+          "amostra": 30,
+          "janela_dias": null,
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-08 → 2026-08-13)",
+          "a_favor": [],
+          "contra": [
+            "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+          ],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 30 anúncios medidos, 2 medições"
+        }
+      },
+      {
+        "evento_id": "palmas|anunciante_novo|Dr. Alessandro Costa ",
+        "data": "2026-08-13",
+        "praca_id": "palmas",
+        "rotulo": "TO · Palmas",
+        "local_id": null,
+        "entidade_id": "Dr. Alessandro Costa ",
+        "tipo": "anunciante_novo",
+        "natureza": "fato",
+        "severidade": "media",
+        "titulo": "Anunciante novo: Dr. Alessandro Costa ",
+        "fato": "1 anúncio no ar em 2026-08-13, e nenhum na medição de 2026-08-08",
+        "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+        "decisao": "ler a oferta dele antes de responder",
+        "fonte": "dados/serie/anuncios_observados.jsonl",
+        "evidencia": {
+          "anunciante": "Dr. Alessandro Costa ",
+          "anuncios": 1
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "alta",
+          "medido": true,
+          "amostra": 30,
+          "janela_dias": null,
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-08 → 2026-08-13)",
+          "a_favor": [],
+          "contra": [
+            "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+          ],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 30 anúncios medidos, 2 medições"
+        }
+      },
+      {
+        "evento_id": "palmas|anunciante_novo|Eu Ramon Pessoa ",
+        "data": "2026-08-13",
+        "praca_id": "palmas",
+        "rotulo": "TO · Palmas",
+        "local_id": null,
+        "entidade_id": "Eu Ramon Pessoa ",
+        "tipo": "anunciante_novo",
+        "natureza": "fato",
+        "severidade": "media",
+        "titulo": "Anunciante novo: Eu Ramon Pessoa ",
+        "fato": "1 anúncio no ar em 2026-08-13, e nenhum na medição de 2026-08-08",
+        "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+        "decisao": "ler a oferta dele antes de responder",
+        "fonte": "dados/serie/anuncios_observados.jsonl",
+        "evidencia": {
+          "anunciante": "Eu Ramon Pessoa ",
+          "anuncios": 1
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "alta",
+          "medido": true,
+          "amostra": 30,
+          "janela_dias": null,
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-08 → 2026-08-13)",
+          "a_favor": [],
+          "contra": [
+            "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+          ],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 30 anúncios medidos, 2 medições"
         }
       }
     ],
     "resumo": {
       "praca_id": "palmas",
       "rotulo": "TO · Palmas",
-      "eventos": 1,
+      "eventos": 5,
       "estado": "medido",
       "janela": "2026-08-12 → 2026-08-13",
       "medicoes_da_praca": 4,

@@ -742,33 +742,45 @@
   "movimentos": {
     "eventos": [
       {
-        "evento_id": "prudente|linha_de_base_anuncios|-",
+        "evento_id": "prudente|rodadas_nao_comparaveis|-",
         "data": "2026-08-13",
         "praca_id": "prudente",
         "rotulo": "SP · Presidente Prudente",
         "local_id": null,
         "entidade_id": null,
-        "tipo": "linha_de_base_anuncios",
+        "tipo": "rodadas_nao_comparaveis",
         "natureza": "fato",
         "severidade": "baixa",
-        "titulo": "Linha de base de anúncios criada",
-        "fato": "primeira medição de anúncios desta praça, em 2026-08-08",
-        "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-        "decisao": "recoletar na próxima rodada para abrir o delta",
+        "titulo": "As duas rodadas de anúncio não se comparam",
+        "fato": "2026-08-08 perguntou 1 consulta e 2026-08-13 perguntou 4; 1 consulta em comum",
+        "por_que_importa": "conjuntos medidos com perguntas diferentes não dizem quem entrou nem quem saiu — a diferença é da coleta, não do mercado",
+        "decisao": "repetir a MESMA lista de consultas na próxima rodada",
         "fonte": "dados/serie/anuncios_observados.jsonl",
-        "evidencia": {},
+        "evidencia": {
+          "consultas_antes": [
+            "aparelho ortodôntico Presidente Prudente"
+          ],
+          "consultas_agora": [
+            "OrthoDontic Presidente Prudente",
+            "aparelho ortodôntico Presidente Prudente",
+            "dentista Presidente Prudente",
+            "ortodontia Presidente Prudente"
+          ]
+        },
         "confianca": {
           "natureza": "fato",
-          "confianca": "media",
+          "confianca": "alta",
           "medido": true,
-          "amostra": 20,
+          "amostra": 51,
           "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/serie/anuncios_observados.jsonl",
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-08 → 2026-08-13)",
           "a_favor": [],
-          "contra": [],
+          "contra": [
+            "as consultas mudaram entre as rodadas"
+          ],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 20 anúncios no ar, 1 medição"
+          "procedencia": "medido em 51 anúncios no ar, 2 medições"
         }
       }
     ],
@@ -854,15 +866,55 @@
   "oferta_da_cidade": {
     "praca_id": "prudente",
     "rotulo": "SP · Presidente Prudente",
-    "anuncios_de_aparelho": 1,
-    "anunciantes": 1,
-    "fora_do_produto": 3,
+    "anuncios_de_aparelho": 8,
+    "anunciantes": 4,
+    "fora_do_produto": 46,
     "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
     "sem_texto": 16,
-    "amostra_curta": true,
-    "tese": "Ainda não dá para descrever a disputa desta cidade: só 1 anúncio de aparelho com texto medido.",
-    "posicao_vaga": null,
+    "amostra_curta": false,
+    "tese": "A disputa desta cidade é por urgência e escassez — 6 dos 8 anúncios de aparelho medidos falam disso, seguido de autoridade técnica.",
+    "posicao_vaga": "Ninguém está falando de preço na frente — a cidade disputa por número; entrar aqui é entrar na briga mais cara.",
     "eixos": [
+      {
+        "eixo": "urgencia",
+        "rotulo": "Urgência e escassez",
+        "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+        "anuncios": 6,
+        "pct": 75,
+        "frase": "6 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "autoridade",
+        "rotulo": "Autoridade técnica",
+        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+        "anuncios": 6,
+        "pct": 75,
+        "frase": "6 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "avaliacao_gratis",
+        "rotulo": "Avaliação grátis",
+        "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+        "anuncios": 5,
+        "pct": 62,
+        "frase": "5 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "alinhador",
+        "rotulo": "Alinhador invisível",
+        "o_que_significa": "produto de ticket alto e público adulto",
+        "anuncios": 1,
+        "pct": 12,
+        "frase": "1 anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "publico_infantil",
+        "rotulo": "Falado para criança e adolescente",
+        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+        "anuncios": 1,
+        "pct": 12,
+        "frase": "1 anúncio de aparelho fala disso"
+      },
       {
         "eixo": "preco",
         "rotulo": "Preço na frente",
@@ -888,22 +940,6 @@
         "frase": "nenhum anúncio de aparelho fala disso"
       },
       {
-        "eixo": "avaliacao_gratis",
-        "rotulo": "Avaliação grátis",
-        "o_que_significa": "compra a visita, não a venda — é isca de agenda",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "alinhador",
-        "rotulo": "Alinhador invisível",
-        "o_que_significa": "produto de ticket alto e público adulto",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
         "eixo": "estetico",
         "rotulo": "Aparelho estético",
         "o_que_significa": "vende discrição — público que trabalha de frente",
@@ -920,33 +956,9 @@
         "frase": "nenhum anúncio de aparelho fala disso"
       },
       {
-        "eixo": "publico_infantil",
-        "rotulo": "Falado para criança e adolescente",
-        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "urgencia",
-        "rotulo": "Urgência e escassez",
-        "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
         "eixo": "prova_social",
         "rotulo": "Prova social",
         "o_que_significa": "vende confiança em vez de preço",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "autoridade",
-        "rotulo": "Autoridade técnica",
-        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
         "anuncios": 0,
         "pct": 0,
         "frase": "nenhum anúncio de aparelho fala disso"
@@ -960,18 +972,86 @@
         "frase": "nenhum anúncio de aparelho fala disso"
       }
     ],
-    "por_anunciante": [],
+    "por_anunciante": [
+      {
+        "anunciante": "OrthoDontic Presidente Prudente",
+        "eixos": [
+          "avaliacao_gratis",
+          "urgencia",
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "CEO - Trevisi",
+        "eixos": [
+          "alinhador",
+          "urgencia",
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "Equilíbrio Odontologia",
+        "eixos": [
+          "publico_infantil"
+        ]
+      }
+    ],
     "e_da_cidade": true
   },
   "plano": "planos/ortho_pp",
   "anuncios_da_cidade": {
     "e_da_cidade": true,
     "rotulo": "SP · Presidente Prudente",
-    "manchete": "1 anunciante compra aparelho em SP · Presidente Prudente, e ele não é da rede.",
-    "anuncios_ativos": 1,
-    "anunciantes_total": 1,
-    "somos_um_deles": false,
+    "manchete": "4 anunciantes disputam aparelho em SP · Presidente Prudente, e a rede é 1 deles.",
+    "anuncios_ativos": 8,
+    "anunciantes_total": 4,
+    "somos_um_deles": true,
     "anunciantes": [
+      {
+        "nome": "OrthoDontic Presidente Prudente",
+        "nosso": true,
+        "anuncios": 5,
+        "paginas": [
+          "102198772975513"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "🚨 SEMANA DO APARELHO 🚨\n\n🦷 Aproveite essa semana especial para iniciar o tratamento que vai transformar o seu sorriso!\n\n✅ Avaliação com especialista\n📸 Documentação para iniciar o tratamento\n⚡ Mais facilidade para começar\n\n⚠️ A campanha é válida por tempo limitado e as vagas podem …",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "CEO - Trevisi",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "1494680227467566"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Chegou ao CEO Trevisi um curso exclusivo para ortodontistas que desejam dominar o fluxo completo dos alinhadores In-Office e conquistar mais autonomia clínica.\n\nDurante três dias de imersão, você aprenderá a planejar, produzir e aplicar seus próprios alinhadores, reduzindo a depe…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Equilíbrio Odontologia",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "645361848874155"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "⚠️ ATENÇÃO MAMÃES E PAPAIS⚠️\n\nNão é preciso esperar todos os dentes permanentes nascerem para levar a criança ao Ortodontista.\n\nAlterações no crescimento da face e na mordida podem ser identificadas e acompanhadas ainda na infância. A primeira avaliação deve ser realizada entre o…",
+        "de_outra_unidade": null
+      },
       {
         "nome": "Tokape Odontologia",
         "nosso": false,
@@ -979,7 +1059,7 @@
         "paginas": [
           "106807357473640"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 5,
         "plataformas": [
           "Meta"
         ],
@@ -988,7 +1068,7 @@
         "de_outra_unidade": null
       }
     ],
-    "fora_do_produto": 19,
+    "fora_do_produto": 44,
     "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
   },
   "eventos": [

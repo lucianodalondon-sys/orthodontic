@@ -179,46 +179,54 @@
   "oferta": {
     "praca_id": "sao_paulo",
     "rotulo": "SP · São Paulo",
-    "anuncios_de_aparelho": 71,
-    "anunciantes": 49,
-    "fora_do_produto": 97,
+    "anuncios_de_aparelho": 77,
+    "anunciantes": 53,
+    "fora_do_produto": 102,
     "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
-    "sem_texto": 3,
+    "sem_texto": 4,
     "amostra_curta": false,
-    "tese": "A disputa desta cidade é por avaliação grátis — 20 dos 71 anúncios de aparelho medidos falam disso, seguido de alinhador invisível.",
+    "tese": "A disputa desta cidade é por avaliação grátis — 23 dos 77 anúncios de aparelho medidos falam disso, seguido de alinhador invisível.",
     "posicao_vaga": "Ninguém está falando de prova social — vende confiança em vez de preço.",
     "eixos": [
       {
         "eixo": "avaliacao_gratis",
         "rotulo": "Avaliação grátis",
         "o_que_significa": "compra a visita, não a venda — é isca de agenda",
-        "anuncios": 20,
-        "pct": 28,
-        "frase": "20 anúncios de aparelho falam disso"
+        "anuncios": 23,
+        "pct": 30,
+        "frase": "23 anúncios de aparelho falam disso"
       },
       {
         "eixo": "alinhador",
         "rotulo": "Alinhador invisível",
         "o_que_significa": "produto de ticket alto e público adulto",
-        "anuncios": 14,
-        "pct": 20,
-        "frase": "14 anúncios de aparelho falam disso"
+        "anuncios": 15,
+        "pct": 19,
+        "frase": "15 anúncios de aparelho falam disso"
       },
       {
         "eixo": "preco",
         "rotulo": "Preço na frente",
         "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
-        "anuncios": 11,
-        "pct": 15,
-        "frase": "11 anúncios de aparelho falam disso"
+        "anuncios": 13,
+        "pct": 17,
+        "frase": "13 anúncios de aparelho falam disso"
       },
       {
         "eixo": "autoridade",
         "rotulo": "Autoridade técnica",
         "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
-        "anuncios": 11,
-        "pct": 15,
-        "frase": "11 anúncios de aparelho falam disso"
+        "anuncios": 12,
+        "pct": 16,
+        "frase": "12 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "publico_infantil",
+        "rotulo": "Falado para criança e adolescente",
+        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+        "anuncios": 7,
+        "pct": 9,
+        "frase": "7 anúncios de aparelho falam disso"
       },
       {
         "eixo": "estetico",
@@ -229,19 +237,11 @@
         "frase": "6 anúncios de aparelho falam disso"
       },
       {
-        "eixo": "publico_infantil",
-        "rotulo": "Falado para criança e adolescente",
-        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
-        "anuncios": 6,
-        "pct": 8,
-        "frase": "6 anúncios de aparelho falam disso"
-      },
-      {
         "eixo": "publico_adulto",
         "rotulo": "Falado para adulto",
         "o_que_significa": "disputa o adulto que adiou o tratamento",
         "anuncios": 5,
-        "pct": 7,
+        "pct": 6,
         "frase": "5 anúncios de aparelho falam disso"
       },
       {
@@ -249,21 +249,21 @@
         "rotulo": "Parcelamento",
         "o_que_significa": "vende a mensalidade, não o tratamento",
         "anuncios": 4,
-        "pct": 6,
+        "pct": 5,
+        "frase": "4 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "rapidez",
+        "rotulo": "Rapidez do resultado",
+        "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+        "anuncios": 4,
+        "pct": 5,
         "frase": "4 anúncios de aparelho falam disso"
       },
       {
         "eixo": "urgencia",
         "rotulo": "Urgência e escassez",
         "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
-        "anuncios": 3,
-        "pct": 4,
-        "frase": "3 anúncios de aparelho falam disso"
-      },
-      {
-        "eixo": "rapidez",
-        "rotulo": "Rapidez do resultado",
-        "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
         "anuncios": 3,
         "pct": 4,
         "frase": "3 anúncios de aparelho falam disso"
@@ -311,6 +311,14 @@
         ]
       },
       {
+        "anunciante": "Buono Odontologia Especializada",
+        "eixos": [
+          "autoridade",
+          "alinhador",
+          "rapidez"
+        ]
+      },
+      {
         "anunciante": "Instituto jacqueline Poli - B",
         "eixos": [
           "alinhador",
@@ -326,24 +334,18 @@
         ]
       },
       {
+        "anunciante": "Odontoclinic",
+        "eixos": [
+          "avaliacao_gratis",
+          "alinhador"
+        ]
+      },
+      {
         "anunciante": "Dra. Grázia Esteves",
         "eixos": [
           "avaliacao_gratis",
           "alinhador",
           "autoridade"
-        ]
-      },
-      {
-        "anunciante": "OdontoCalles - Clínica Odontológica Avançada",
-        "eixos": [
-          "estetico"
-        ]
-      },
-      {
-        "anunciante": "Odontoclinic",
-        "eixos": [
-          "avaliacao_gratis",
-          "alinhador"
         ]
       }
     ]
@@ -1437,14 +1439,14 @@
           "natureza": "fato",
           "confianca": "media",
           "medido": true,
-          "amostra": 171,
+          "amostra": 353,
           "janela_dias": null,
           "medicoes": 1,
           "fonte": "dados/serie/anuncios_observados.jsonl",
           "a_favor": [],
           "contra": [],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 171 anúncios no ar, 1 medição"
+          "procedencia": "medido em 353 anúncios no ar, 1 medição"
         }
       }
     ],

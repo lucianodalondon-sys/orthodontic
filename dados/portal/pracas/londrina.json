@@ -169,53 +169,69 @@
   "oferta": {
     "praca_id": "londrina",
     "rotulo": "PR · Londrina",
-    "anuncios_de_aparelho": 45,
-    "anunciantes": 10,
-    "fora_do_produto": 13,
+    "anuncios_de_aparelho": 65,
+    "anunciantes": 16,
+    "fora_do_produto": 56,
     "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
     "sem_texto": 30,
     "amostra_curta": false,
-    "tese": "A disputa desta cidade é por urgência e escassez — 24 dos 45 anúncios de aparelho medidos falam disso, seguido de avaliação grátis.",
+    "tese": "A disputa desta cidade é por urgência e escassez — 28 dos 65 anúncios de aparelho medidos falam disso, seguido de avaliação grátis.",
     "posicao_vaga": "Ninguém está falando de sem entrada — tira a barreira do primeiro pagamento — ataca quem não tem reserva.",
     "eixos": [
       {
         "eixo": "urgencia",
         "rotulo": "Urgência e escassez",
         "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
-        "anuncios": 24,
-        "pct": 53,
-        "frase": "24 anúncios de aparelho falam disso"
+        "anuncios": 28,
+        "pct": 43,
+        "frase": "28 anúncios de aparelho falam disso"
       },
       {
         "eixo": "avaliacao_gratis",
         "rotulo": "Avaliação grátis",
         "o_que_significa": "compra a visita, não a venda — é isca de agenda",
-        "anuncios": 10,
-        "pct": 22,
-        "frase": "10 anúncios de aparelho falam disso"
+        "anuncios": 11,
+        "pct": 17,
+        "frase": "11 anúncios de aparelho falam disso"
       },
       {
         "eixo": "estetico",
         "rotulo": "Aparelho estético",
         "o_que_significa": "vende discrição — público que trabalha de frente",
-        "anuncios": 9,
-        "pct": 20,
-        "frase": "9 anúncios de aparelho falam disso"
+        "anuncios": 11,
+        "pct": 17,
+        "frase": "11 anúncios de aparelho falam disso"
       },
       {
         "eixo": "parcelamento",
         "rotulo": "Parcelamento",
         "o_que_significa": "vende a mensalidade, não o tratamento",
         "anuncios": 6,
-        "pct": 13,
+        "pct": 9,
         "frase": "6 anúncios de aparelho falam disso"
       },
       {
         "eixo": "autoridade",
         "rotulo": "Autoridade técnica",
         "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
-        "anuncios": 4,
+        "anuncios": 6,
         "pct": 9,
+        "frase": "6 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "publico_infantil",
+        "rotulo": "Falado para criança e adolescente",
+        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+        "anuncios": 5,
+        "pct": 8,
+        "frase": "5 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "alinhador",
+        "rotulo": "Alinhador invisível",
+        "o_que_significa": "produto de ticket alto e público adulto",
+        "anuncios": 4,
+        "pct": 6,
         "frase": "4 anúncios de aparelho falam disso"
       },
       {
@@ -223,13 +239,13 @@
         "rotulo": "Preço na frente",
         "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
         "anuncios": 3,
-        "pct": 7,
+        "pct": 5,
         "frase": "3 anúncios de aparelho falam disso"
       },
       {
-        "eixo": "publico_infantil",
-        "rotulo": "Falado para criança e adolescente",
-        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+        "eixo": "rapidez",
+        "rotulo": "Rapidez do resultado",
+        "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
         "anuncios": 1,
         "pct": 2,
         "frase": "1 anúncio de aparelho fala disso"
@@ -238,14 +254,6 @@
         "eixo": "sem_entrada",
         "rotulo": "Sem entrada",
         "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "alinhador",
-        "rotulo": "Alinhador invisível",
-        "o_que_significa": "produto de ticket alto e público adulto",
         "anuncios": 0,
         "pct": 0,
         "frase": "nenhum anúncio de aparelho fala disso"
@@ -265,20 +273,20 @@
         "anuncios": 0,
         "pct": 0,
         "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "rapidez",
-        "rotulo": "Rapidez do resultado",
-        "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
       }
     ],
     "por_anunciante": [
       {
         "anunciante": "Classdent",
         "eixos": [
+          "urgencia"
+        ]
+      },
+      {
+        "anunciante": "OrthoDontic",
+        "eixos": [
+          "avaliacao_gratis",
+          "autoridade",
           "urgencia"
         ]
       },
@@ -298,13 +306,6 @@
         ]
       },
       {
-        "anunciante": "OrthoDontic",
-        "eixos": [
-          "avaliacao_gratis",
-          "autoridade"
-        ]
-      },
-      {
         "anunciante": "Carretero Odontologia Especializada",
         "eixos": [
           "avaliacao_gratis",
@@ -320,9 +321,19 @@
         ]
       },
       {
-        "anunciante": "Clinica Dentista do Povo - Londrina",
+        "anunciante": "Dra Suéllen Priscilla - Odontopediatra e Ortodontia Infantil",
         "eixos": [
-          "avaliacao_gratis"
+          "publico_infantil",
+          "alinhador",
+          "estetico"
+        ]
+      },
+      {
+        "anunciante": "patriciareis_odontologia",
+        "eixos": [
+          "alinhador",
+          "estetico",
+          "autoridade"
         ]
       }
     ]
@@ -1150,33 +1161,48 @@
   "movimentos_do_mercado": {
     "eventos": [
       {
-        "evento_id": "londrina|linha_de_base_anuncios|-",
+        "evento_id": "londrina|rodadas_nao_comparaveis|-",
         "data": "2026-08-13",
         "praca_id": "londrina",
         "rotulo": "PR · Londrina",
         "local_id": null,
         "entidade_id": null,
-        "tipo": "linha_de_base_anuncios",
+        "tipo": "rodadas_nao_comparaveis",
         "natureza": "fato",
         "severidade": "baixa",
-        "titulo": "Linha de base de anúncios criada",
-        "fato": "primeira medição de anúncios desta praça, em 2026-08-08",
-        "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-        "decisao": "recoletar na próxima rodada para abrir o delta",
+        "titulo": "As duas rodadas de anúncio não se comparam",
+        "fato": "2026-08-08 perguntou 3 consultas e 2026-08-13 perguntou 5; 3 consultas em comum",
+        "por_que_importa": "conjuntos medidos com perguntas diferentes não dizem quem entrou nem quem saiu — a diferença é da coleta, não do mercado",
+        "decisao": "repetir a MESMA lista de consultas na próxima rodada",
         "fonte": "dados/serie/anuncios_observados.jsonl",
-        "evidencia": {},
+        "evidencia": {
+          "consultas_antes": [
+            "Odontoclinic Londrina",
+            "OrthoDontic Londrina",
+            "aparelho ortodôntico Londrina"
+          ],
+          "consultas_agora": [
+            "Odontoclinic Londrina",
+            "OrthoDontic Londrina",
+            "aparelho ortodôntico Londrina",
+            "dentista Londrina",
+            "ortodontia Londrina"
+          ]
+        },
         "confianca": {
           "natureza": "fato",
-          "confianca": "media",
+          "confianca": "alta",
           "medido": true,
-          "amostra": 88,
+          "amostra": 103,
           "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/serie/anuncios_observados.jsonl",
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-08 → 2026-08-13)",
           "a_favor": [],
-          "contra": [],
+          "contra": [
+            "as consultas mudaram entre as rodadas"
+          ],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 88 anúncios no ar, 1 medição"
+          "procedencia": "medido em 103 anúncios no ar, 2 medições"
         }
       }
     ],

@@ -8,11 +8,12 @@
   "salto_nota": 0.2,
   "base_minima": 20
  },
- "eventos_total": 24,
+ "eventos_total": 37,
  "por_tipo": {
-  "linha_de_base_anuncios": 22,
+  "linha_de_base_anuncios": 5,
+  "rodadas_nao_comparaveis": 15,
   "concorrente_acelerou": 1,
-  "rodadas_nao_comparaveis": 1
+  "anunciante_novo": 16
  },
  "por_praca": [
   {
@@ -188,7 +189,7 @@
   {
    "praca_id": "palmas",
    "rotulo": "TO · Palmas",
-   "eventos": 1,
+   "eventos": 5,
    "estado": "medido",
    "janela": "2026-08-12 → 2026-08-13",
    "medicoes_da_praca": 4,
@@ -214,7 +215,7 @@
   {
    "praca_id": "porto_alegre",
    "rotulo": "RS · Porto Alegre",
-   "eventos": 1,
+   "eventos": 5,
    "estado": "medido",
    "janela": "2026-08-12 → 2026-08-13",
    "medicoes_da_praca": 2,
@@ -267,7 +268,7 @@
   {
    "praca_id": "sorocaba",
    "rotulo": "SP · Sorocaba",
-   "eventos": 1,
+   "eventos": 6,
    "estado": "medido",
    "janela": "2026-08-12 → 2026-08-13",
    "medicoes_da_praca": 2,
@@ -306,74 +307,97 @@
     "natureza": "fato",
     "confianca": "media",
     "medido": true,
-    "amostra": 166,
+    "amostra": 365,
     "janela_dias": null,
     "medicoes": 1,
     "fonte": "dados/serie/anuncios_observados.jsonl",
     "a_favor": [],
     "contra": [],
     "o_que_aumentaria": null,
-    "procedencia": "medido em 166 anúncios no ar, 1 medição"
+    "procedencia": "medido em 365 anúncios no ar, 1 medição"
    }
   },
   {
-   "evento_id": "contagem|linha_de_base_anuncios|-",
+   "evento_id": "contagem|rodadas_nao_comparaveis|-",
    "data": "2026-08-13",
    "praca_id": "contagem",
    "rotulo": "MG · Contagem",
    "local_id": null,
    "entidade_id": null,
-   "tipo": "linha_de_base_anuncios",
+   "tipo": "rodadas_nao_comparaveis",
    "natureza": "fato",
    "severidade": "baixa",
-   "titulo": "Linha de base de anúncios criada",
-   "fato": "primeira medição de anúncios desta praça, em 2026-08-08",
-   "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-   "decisao": "recoletar na próxima rodada para abrir o delta",
+   "titulo": "As duas rodadas de anúncio não se comparam",
+   "fato": "2026-08-08 perguntou 4 consultas e 2026-08-13 perguntou 3; 3 consultas em comum",
+   "por_que_importa": "conjuntos medidos com perguntas diferentes não dizem quem entrou nem quem saiu — a diferença é da coleta, não do mercado",
+   "decisao": "repetir a MESMA lista de consultas na próxima rodada",
    "fonte": "dados/serie/anuncios_observados.jsonl",
-   "evidencia": {},
+   "evidencia": {
+    "consultas_antes": [
+     "OrthoDontic Contagem",
+     "aparelho ortodôntico Contagem",
+     "dentista Contagem",
+     "ortodontia Contagem"
+    ],
+    "consultas_agora": [
+     "aparelho ortodôntico Contagem",
+     "dentista Contagem",
+     "ortodontia Contagem"
+    ]
+   },
    "confianca": {
     "natureza": "fato",
-    "confianca": "media",
+    "confianca": "alta",
     "medido": true,
-    "amostra": 42,
+    "amostra": 47,
     "janela_dias": null,
-    "medicoes": 1,
-    "fonte": "dados/serie/anuncios_observados.jsonl",
+    "medicoes": 2,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-08 → 2026-08-13)",
     "a_favor": [],
-    "contra": [],
+    "contra": [
+     "as consultas mudaram entre as rodadas"
+    ],
     "o_que_aumentaria": null,
-    "procedencia": "medido em 42 anúncios no ar, 1 medição"
+    "procedencia": "medido em 47 anúncios no ar, 2 medições"
    }
   },
   {
-   "evento_id": "cuiaba|linha_de_base_anuncios|-",
+   "evento_id": "cuiaba|rodadas_nao_comparaveis|-",
    "data": "2026-08-13",
    "praca_id": "cuiaba",
    "rotulo": "MT · Cuiabá",
    "local_id": null,
    "entidade_id": null,
-   "tipo": "linha_de_base_anuncios",
+   "tipo": "rodadas_nao_comparaveis",
    "natureza": "fato",
    "severidade": "baixa",
-   "titulo": "Linha de base de anúncios criada",
-   "fato": "primeira medição de anúncios desta praça, em 2026-08-08",
-   "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-   "decisao": "recoletar na próxima rodada para abrir o delta",
+   "titulo": "Não dá para comparar estas duas rodadas de anúncio",
+   "fato": "a medição de 2026-08-08 não registrou quais consultas foram feitas",
+   "por_que_importa": "sem saber o que foi perguntado, entrada e saída de anunciante são diferença de pergunta, não de mercado",
+   "decisao": "a partir de agora toda rodada grava a lista de consultas",
    "fonte": "dados/serie/anuncios_observados.jsonl",
-   "evidencia": {},
+   "evidencia": {
+    "consultas_antes": [],
+    "consultas_agora": [
+     "aparelho ortodôntico Cuiabá",
+     "dentista Cuiabá",
+     "ortodontia Cuiabá"
+    ]
+   },
    "confianca": {
     "natureza": "fato",
-    "confianca": "media",
+    "confianca": "alta",
     "medido": true,
-    "amostra": 48,
+    "amostra": 79,
     "janela_dias": null,
-    "medicoes": 1,
-    "fonte": "dados/serie/anuncios_observados.jsonl",
+    "medicoes": 2,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-08 → 2026-08-13)",
     "a_favor": [],
-    "contra": [],
+    "contra": [
+     "uma das rodadas não registrou as consultas"
+    ],
     "o_que_aumentaria": null,
-    "procedencia": "medido em 48 anúncios no ar, 1 medição"
+    "procedencia": "medido em 79 anúncios no ar, 2 medições"
    }
   },
   {
@@ -413,63 +437,89 @@
    }
   },
   {
-   "evento_id": "curitiba|linha_de_base_anuncios|-",
+   "evento_id": "curitiba|rodadas_nao_comparaveis|-",
    "data": "2026-08-13",
    "praca_id": "curitiba",
    "rotulo": "PR · Curitiba",
    "local_id": null,
    "entidade_id": null,
-   "tipo": "linha_de_base_anuncios",
+   "tipo": "rodadas_nao_comparaveis",
    "natureza": "fato",
    "severidade": "baixa",
-   "titulo": "Linha de base de anúncios criada",
-   "fato": "primeira medição de anúncios desta praça, em 2026-08-12",
-   "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-   "decisao": "recoletar na próxima rodada para abrir o delta",
+   "titulo": "As duas rodadas de anúncio não se comparam",
+   "fato": "2026-08-12 perguntou 4 consultas e 2026-08-13 perguntou 3; 3 consultas em comum",
+   "por_que_importa": "conjuntos medidos com perguntas diferentes não dizem quem entrou nem quem saiu — a diferença é da coleta, não do mercado",
+   "decisao": "repetir a MESMA lista de consultas na próxima rodada",
    "fonte": "dados/serie/anuncios_observados.jsonl",
-   "evidencia": {},
+   "evidencia": {
+    "consultas_antes": [
+     "OrthoDontic Curitiba",
+     "aparelho ortodôntico Curitiba",
+     "dentista Curitiba",
+     "ortodontia Curitiba"
+    ],
+    "consultas_agora": [
+     "aparelho ortodôntico Curitiba",
+     "dentista Curitiba",
+     "ortodontia Curitiba"
+    ]
+   },
    "confianca": {
     "natureza": "fato",
-    "confianca": "media",
+    "confianca": "alta",
     "medido": true,
-    "amostra": 87,
+    "amostra": 91,
     "janela_dias": null,
-    "medicoes": 1,
-    "fonte": "dados/serie/anuncios_observados.jsonl",
+    "medicoes": 2,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
     "a_favor": [],
-    "contra": [],
+    "contra": [
+     "as consultas mudaram entre as rodadas"
+    ],
     "o_que_aumentaria": null,
-    "procedencia": "medido em 87 anúncios no ar, 1 medição"
+    "procedencia": "medido em 91 anúncios no ar, 2 medições"
    }
   },
   {
-   "evento_id": "feira|linha_de_base_anuncios|-",
+   "evento_id": "feira|rodadas_nao_comparaveis|-",
    "data": "2026-08-13",
    "praca_id": "feira",
    "rotulo": "BA · Feira de Santana",
    "local_id": null,
    "entidade_id": null,
-   "tipo": "linha_de_base_anuncios",
+   "tipo": "rodadas_nao_comparaveis",
    "natureza": "fato",
    "severidade": "baixa",
-   "titulo": "Linha de base de anúncios criada",
-   "fato": "primeira medição de anúncios desta praça, em 2026-08-08",
-   "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-   "decisao": "recoletar na próxima rodada para abrir o delta",
+   "titulo": "As duas rodadas de anúncio não se comparam",
+   "fato": "2026-08-08 perguntou 1 consulta e 2026-08-13 perguntou 4; 1 consulta em comum",
+   "por_que_importa": "conjuntos medidos com perguntas diferentes não dizem quem entrou nem quem saiu — a diferença é da coleta, não do mercado",
+   "decisao": "repetir a MESMA lista de consultas na próxima rodada",
    "fonte": "dados/serie/anuncios_observados.jsonl",
-   "evidencia": {},
+   "evidencia": {
+    "consultas_antes": [
+     "aparelho ortodôntico Feira de Santana"
+    ],
+    "consultas_agora": [
+     "OrthoDontic Feira de Santana",
+     "aparelho ortodôntico Feira de Santana",
+     "dentista Feira de Santana",
+     "ortodontia Feira de Santana"
+    ]
+   },
    "confianca": {
     "natureza": "fato",
-    "confianca": "media",
+    "confianca": "alta",
     "medido": true,
-    "amostra": 63,
+    "amostra": 62,
     "janela_dias": null,
-    "medicoes": 1,
-    "fonte": "dados/serie/anuncios_observados.jsonl",
+    "medicoes": 2,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-08 → 2026-08-13)",
     "a_favor": [],
-    "contra": [],
+    "contra": [
+     "as consultas mudaram entre as rodadas"
+    ],
     "o_que_aumentaria": null,
-    "procedencia": "medido em 63 anúncios no ar, 1 medição"
+    "procedencia": "medido em 62 anúncios no ar, 2 medições"
    }
   },
   {
@@ -492,194 +542,274 @@
     "natureza": "fato",
     "confianca": "media",
     "medido": true,
-    "amostra": 116,
+    "amostra": 236,
     "janela_dias": null,
     "medicoes": 1,
     "fonte": "dados/serie/anuncios_observados.jsonl",
     "a_favor": [],
     "contra": [],
     "o_que_aumentaria": null,
-    "procedencia": "medido em 116 anúncios no ar, 1 medição"
+    "procedencia": "medido em 236 anúncios no ar, 1 medição"
    }
   },
   {
-   "evento_id": "goiania|linha_de_base_anuncios|-",
+   "evento_id": "goiania|rodadas_nao_comparaveis|-",
    "data": "2026-08-13",
    "praca_id": "goiania",
    "rotulo": "GO · Goiânia",
    "local_id": null,
    "entidade_id": null,
-   "tipo": "linha_de_base_anuncios",
+   "tipo": "rodadas_nao_comparaveis",
    "natureza": "fato",
    "severidade": "baixa",
-   "titulo": "Linha de base de anúncios criada",
-   "fato": "primeira medição de anúncios desta praça, em 2026-08-12",
-   "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-   "decisao": "recoletar na próxima rodada para abrir o delta",
+   "titulo": "As duas rodadas de anúncio não se comparam",
+   "fato": "2026-08-12 perguntou 2 consultas e 2026-08-13 perguntou 4; 2 consultas em comum",
+   "por_que_importa": "conjuntos medidos com perguntas diferentes não dizem quem entrou nem quem saiu — a diferença é da coleta, não do mercado",
+   "decisao": "repetir a MESMA lista de consultas na próxima rodada",
    "fonte": "dados/serie/anuncios_observados.jsonl",
-   "evidencia": {},
+   "evidencia": {
+    "consultas_antes": [
+     "OrthoDontic Goiânia",
+     "dentista Goiânia"
+    ],
+    "consultas_agora": [
+     "OrthoDontic Goiânia",
+     "aparelho ortodôntico Goiânia",
+     "dentista Goiânia",
+     "ortodontia Goiânia"
+    ]
+   },
    "confianca": {
     "natureza": "fato",
-    "confianca": "media",
+    "confianca": "alta",
     "medido": true,
-    "amostra": 109,
+    "amostra": 96,
     "janela_dias": null,
-    "medicoes": 1,
-    "fonte": "dados/serie/anuncios_observados.jsonl",
+    "medicoes": 2,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
     "a_favor": [],
-    "contra": [],
+    "contra": [
+     "as consultas mudaram entre as rodadas"
+    ],
     "o_que_aumentaria": null,
-    "procedencia": "medido em 109 anúncios no ar, 1 medição"
+    "procedencia": "medido em 96 anúncios no ar, 2 medições"
    }
   },
   {
-   "evento_id": "imperatriz|linha_de_base_anuncios|-",
+   "evento_id": "imperatriz|rodadas_nao_comparaveis|-",
    "data": "2026-08-13",
    "praca_id": "imperatriz",
    "rotulo": "MA · Imperatriz",
    "local_id": null,
    "entidade_id": null,
-   "tipo": "linha_de_base_anuncios",
+   "tipo": "rodadas_nao_comparaveis",
    "natureza": "fato",
    "severidade": "baixa",
-   "titulo": "Linha de base de anúncios criada",
-   "fato": "primeira medição de anúncios desta praça, em 2026-08-09",
-   "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-   "decisao": "recoletar na próxima rodada para abrir o delta",
+   "titulo": "As duas rodadas de anúncio não se comparam",
+   "fato": "2026-08-09 perguntou 2 consultas e 2026-08-13 perguntou 3; 2 consultas em comum",
+   "por_que_importa": "conjuntos medidos com perguntas diferentes não dizem quem entrou nem quem saiu — a diferença é da coleta, não do mercado",
+   "decisao": "repetir a MESMA lista de consultas na próxima rodada",
    "fonte": "dados/serie/anuncios_observados.jsonl",
-   "evidencia": {},
+   "evidencia": {
+    "consultas_antes": [
+     "aparelho ortodôntico Imperatriz",
+     "dentista Imperatriz"
+    ],
+    "consultas_agora": [
+     "aparelho ortodôntico Imperatriz",
+     "dentista Imperatriz",
+     "ortodontia Imperatriz"
+    ]
+   },
    "confianca": {
     "natureza": "fato",
-    "confianca": "media",
+    "confianca": "alta",
     "medido": true,
-    "amostra": 75,
+    "amostra": 44,
     "janela_dias": null,
-    "medicoes": 1,
-    "fonte": "dados/serie/anuncios_observados.jsonl",
+    "medicoes": 2,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-09 → 2026-08-13)",
     "a_favor": [],
-    "contra": [],
+    "contra": [
+     "as consultas mudaram entre as rodadas"
+    ],
     "o_que_aumentaria": null,
-    "procedencia": "medido em 75 anúncios no ar, 1 medição"
+    "procedencia": "medido em 44 anúncios no ar, 2 medições"
    }
   },
   {
-   "evento_id": "joinville|linha_de_base_anuncios|-",
+   "evento_id": "joinville|rodadas_nao_comparaveis|-",
    "data": "2026-08-13",
    "praca_id": "joinville",
    "rotulo": "SC · Joinville",
    "local_id": null,
    "entidade_id": null,
-   "tipo": "linha_de_base_anuncios",
+   "tipo": "rodadas_nao_comparaveis",
    "natureza": "fato",
    "severidade": "baixa",
-   "titulo": "Linha de base de anúncios criada",
-   "fato": "primeira medição de anúncios desta praça, em 2026-08-12",
-   "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-   "decisao": "recoletar na próxima rodada para abrir o delta",
+   "titulo": "As duas rodadas de anúncio não se comparam",
+   "fato": "2026-08-12 perguntou 4 consultas e 2026-08-13 perguntou 3; 3 consultas em comum",
+   "por_que_importa": "conjuntos medidos com perguntas diferentes não dizem quem entrou nem quem saiu — a diferença é da coleta, não do mercado",
+   "decisao": "repetir a MESMA lista de consultas na próxima rodada",
    "fonte": "dados/serie/anuncios_observados.jsonl",
-   "evidencia": {},
+   "evidencia": {
+    "consultas_antes": [
+     "OrthoDontic Joinville",
+     "aparelho ortodôntico Joinville",
+     "dentista Joinville",
+     "ortodontia Joinville"
+    ],
+    "consultas_agora": [
+     "aparelho ortodôntico Joinville",
+     "dentista Joinville",
+     "ortodontia Joinville"
+    ]
+   },
    "confianca": {
     "natureza": "fato",
-    "confianca": "media",
+    "confianca": "alta",
     "medido": true,
-    "amostra": 102,
+    "amostra": 72,
     "janela_dias": null,
-    "medicoes": 1,
-    "fonte": "dados/serie/anuncios_observados.jsonl",
+    "medicoes": 2,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
     "a_favor": [],
-    "contra": [],
+    "contra": [
+     "as consultas mudaram entre as rodadas"
+    ],
     "o_que_aumentaria": null,
-    "procedencia": "medido em 102 anúncios no ar, 1 medição"
+    "procedencia": "medido em 72 anúncios no ar, 2 medições"
    }
   },
   {
-   "evento_id": "juazeiro_do_norte|linha_de_base_anuncios|-",
+   "evento_id": "juazeiro_do_norte|rodadas_nao_comparaveis|-",
    "data": "2026-08-13",
    "praca_id": "juazeiro_do_norte",
    "rotulo": "CE · Juazeiro do Norte",
    "local_id": null,
    "entidade_id": null,
-   "tipo": "linha_de_base_anuncios",
+   "tipo": "rodadas_nao_comparaveis",
    "natureza": "fato",
    "severidade": "baixa",
-   "titulo": "Linha de base de anúncios criada",
-   "fato": "primeira medição de anúncios desta praça, em 2026-08-09",
-   "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-   "decisao": "recoletar na próxima rodada para abrir o delta",
+   "titulo": "As duas rodadas de anúncio não se comparam",
+   "fato": "2026-08-09 perguntou 4 consultas e 2026-08-13 perguntou 3; 3 consultas em comum",
+   "por_que_importa": "conjuntos medidos com perguntas diferentes não dizem quem entrou nem quem saiu — a diferença é da coleta, não do mercado",
+   "decisao": "repetir a MESMA lista de consultas na próxima rodada",
    "fonte": "dados/serie/anuncios_observados.jsonl",
-   "evidencia": {},
+   "evidencia": {
+    "consultas_antes": [
+     "OrthoDontic Juazeiro do Norte",
+     "aparelho ortodôntico Juazeiro do Norte",
+     "dentista Juazeiro do Norte",
+     "ortodontia Juazeiro do Norte"
+    ],
+    "consultas_agora": [
+     "OrthoDontic Juazeiro do Norte",
+     "dentista Juazeiro do Norte",
+     "ortodontia Juazeiro do Norte"
+    ]
+   },
    "confianca": {
     "natureza": "fato",
-    "confianca": "media",
+    "confianca": "alta",
     "medido": true,
-    "amostra": 66,
+    "amostra": 56,
     "janela_dias": null,
-    "medicoes": 1,
-    "fonte": "dados/serie/anuncios_observados.jsonl",
+    "medicoes": 2,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-09 → 2026-08-13)",
     "a_favor": [],
-    "contra": [],
+    "contra": [
+     "as consultas mudaram entre as rodadas"
+    ],
     "o_que_aumentaria": null,
-    "procedencia": "medido em 66 anúncios no ar, 1 medição"
+    "procedencia": "medido em 56 anúncios no ar, 2 medições"
    }
   },
   {
-   "evento_id": "londrina|linha_de_base_anuncios|-",
+   "evento_id": "londrina|rodadas_nao_comparaveis|-",
    "data": "2026-08-13",
    "praca_id": "londrina",
    "rotulo": "PR · Londrina",
    "local_id": null,
    "entidade_id": null,
-   "tipo": "linha_de_base_anuncios",
+   "tipo": "rodadas_nao_comparaveis",
    "natureza": "fato",
    "severidade": "baixa",
-   "titulo": "Linha de base de anúncios criada",
-   "fato": "primeira medição de anúncios desta praça, em 2026-08-08",
-   "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-   "decisao": "recoletar na próxima rodada para abrir o delta",
+   "titulo": "As duas rodadas de anúncio não se comparam",
+   "fato": "2026-08-08 perguntou 3 consultas e 2026-08-13 perguntou 5; 3 consultas em comum",
+   "por_que_importa": "conjuntos medidos com perguntas diferentes não dizem quem entrou nem quem saiu — a diferença é da coleta, não do mercado",
+   "decisao": "repetir a MESMA lista de consultas na próxima rodada",
    "fonte": "dados/serie/anuncios_observados.jsonl",
-   "evidencia": {},
+   "evidencia": {
+    "consultas_antes": [
+     "Odontoclinic Londrina",
+     "OrthoDontic Londrina",
+     "aparelho ortodôntico Londrina"
+    ],
+    "consultas_agora": [
+     "Odontoclinic Londrina",
+     "OrthoDontic Londrina",
+     "aparelho ortodôntico Londrina",
+     "dentista Londrina",
+     "ortodontia Londrina"
+    ]
+   },
    "confianca": {
     "natureza": "fato",
-    "confianca": "media",
+    "confianca": "alta",
     "medido": true,
-    "amostra": 88,
+    "amostra": 103,
     "janela_dias": null,
-    "medicoes": 1,
-    "fonte": "dados/serie/anuncios_observados.jsonl",
+    "medicoes": 2,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-08 → 2026-08-13)",
     "a_favor": [],
-    "contra": [],
+    "contra": [
+     "as consultas mudaram entre as rodadas"
+    ],
     "o_que_aumentaria": null,
-    "procedencia": "medido em 88 anúncios no ar, 1 medição"
+    "procedencia": "medido em 103 anúncios no ar, 2 medições"
    }
   },
   {
-   "evento_id": "macapa|linha_de_base_anuncios|-",
+   "evento_id": "macapa|rodadas_nao_comparaveis|-",
    "data": "2026-08-13",
    "praca_id": "macapa",
    "rotulo": "AP · Macapá",
    "local_id": null,
    "entidade_id": null,
-   "tipo": "linha_de_base_anuncios",
+   "tipo": "rodadas_nao_comparaveis",
    "natureza": "fato",
    "severidade": "baixa",
-   "titulo": "Linha de base de anúncios criada",
-   "fato": "primeira medição de anúncios desta praça, em 2026-08-09",
-   "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-   "decisao": "recoletar na próxima rodada para abrir o delta",
+   "titulo": "As duas rodadas de anúncio não se comparam",
+   "fato": "2026-08-09 perguntou 2 consultas e 2026-08-13 perguntou 3; 2 consultas em comum",
+   "por_que_importa": "conjuntos medidos com perguntas diferentes não dizem quem entrou nem quem saiu — a diferença é da coleta, não do mercado",
+   "decisao": "repetir a MESMA lista de consultas na próxima rodada",
    "fonte": "dados/serie/anuncios_observados.jsonl",
-   "evidencia": {},
+   "evidencia": {
+    "consultas_antes": [
+     "aparelho ortodôntico Macapá",
+     "dentista Macapá"
+    ],
+    "consultas_agora": [
+     "aparelho ortodôntico Macapá",
+     "dentista Macapá",
+     "ortodontia Macapá"
+    ]
+   },
    "confianca": {
     "natureza": "fato",
-    "confianca": "media",
+    "confianca": "alta",
     "medido": true,
-    "amostra": 28,
+    "amostra": 45,
     "janela_dias": null,
-    "medicoes": 1,
-    "fonte": "dados/serie/anuncios_observados.jsonl",
+    "medicoes": 2,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-09 → 2026-08-13)",
     "a_favor": [],
-    "contra": [],
+    "contra": [
+     "as consultas mudaram entre as rodadas"
+    ],
     "o_que_aumentaria": null,
-    "procedencia": "medido em 28 anúncios no ar, 1 medição"
+    "procedencia": "medido em 45 anúncios no ar, 2 medições"
    }
   },
   {
@@ -692,217 +822,556 @@
    "tipo": "rodadas_nao_comparaveis",
    "natureza": "fato",
    "severidade": "baixa",
+   "titulo": "Não dá para comparar estas duas rodadas de anúncio",
+   "fato": "a medição de 2026-08-08 não registrou quais consultas foram feitas",
+   "por_que_importa": "sem saber o que foi perguntado, entrada e saída de anunciante são diferença de pergunta, não de mercado",
+   "decisao": "a partir de agora toda rodada grava a lista de consultas",
+   "fonte": "dados/serie/anuncios_observados.jsonl",
+   "evidencia": {
+    "consultas_antes": [],
+    "consultas_agora": [
+     "OrthoDontic Mafra",
+     "aparelho ortodôntico Mafra",
+     "dentista Mafra",
+     "ortodontia Mafra"
+    ]
+   },
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "media",
+    "medido": true,
+    "amostra": 17,
+    "janela_dias": null,
+    "medicoes": 3,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-08 → 2026-08-13)",
+    "a_favor": [],
+    "contra": [
+     "uma das rodadas não registrou as consultas"
+    ],
+    "o_que_aumentaria": null,
+    "procedencia": "medido em 17 anúncios no ar, 3 medições"
+   }
+  },
+  {
+   "evento_id": "maraba|rodadas_nao_comparaveis|-",
+   "data": "2026-08-13",
+   "praca_id": "maraba",
+   "rotulo": "PA · Marabá",
+   "local_id": null,
+   "entidade_id": null,
+   "tipo": "rodadas_nao_comparaveis",
+   "natureza": "fato",
+   "severidade": "baixa",
    "titulo": "As duas rodadas de anúncio não se comparam",
-   "fato": "2026-08-07 perguntou 4 consultas e 2026-08-08 perguntou 2; 0 consultas em comum",
+   "fato": "2026-08-09 perguntou 5 consultas e 2026-08-13 perguntou 4; 4 consultas em comum",
    "por_que_importa": "conjuntos medidos com perguntas diferentes não dizem quem entrou nem quem saiu — a diferença é da coleta, não do mercado",
    "decisao": "repetir a MESMA lista de consultas na próxima rodada",
    "fonte": "dados/serie/anuncios_observados.jsonl",
    "evidencia": {
     "consultas_antes": [
-     "Instituto Lumière",
-     "OdontoCompany Mafra",
-     "OrthoDontic Mafra",
-     "aparelho ortodôntico Mafra"
+     "Clínica Odonto Minas Marabá",
+     "Odonto Excellence - Marabá",
+     "aparelho ortodôntico Marabá",
+     "dentista Marabá",
+     "ortodontia Marabá"
     ],
     "consultas_agora": [
-     "OdontoCompany",
-     "OrthoDontic"
+     "Odonto Excellence - Marabá",
+     "aparelho ortodôntico Marabá",
+     "dentista Marabá",
+     "ortodontia Marabá"
     ]
    },
    "confianca": {
     "natureza": "fato",
     "confianca": "alta",
     "medido": true,
-    "amostra": 35,
+    "amostra": 51,
     "janela_dias": null,
     "medicoes": 2,
-    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-07 → 2026-08-08)",
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-09 → 2026-08-13)",
     "a_favor": [],
     "contra": [
      "as consultas mudaram entre as rodadas"
     ],
     "o_que_aumentaria": null,
-    "procedencia": "medido em 35 anúncios no ar, 2 medições"
+    "procedencia": "medido em 51 anúncios no ar, 2 medições"
    }
   },
   {
-   "evento_id": "maraba|linha_de_base_anuncios|-",
-   "data": "2026-08-13",
-   "praca_id": "maraba",
-   "rotulo": "PA · Marabá",
-   "local_id": null,
-   "entidade_id": null,
-   "tipo": "linha_de_base_anuncios",
-   "natureza": "fato",
-   "severidade": "baixa",
-   "titulo": "Linha de base de anúncios criada",
-   "fato": "primeira medição de anúncios desta praça, em 2026-08-09",
-   "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-   "decisao": "recoletar na próxima rodada para abrir o delta",
-   "fonte": "dados/serie/anuncios_observados.jsonl",
-   "evidencia": {},
-   "confianca": {
-    "natureza": "fato",
-    "confianca": "media",
-    "medido": true,
-    "amostra": 57,
-    "janela_dias": null,
-    "medicoes": 1,
-    "fonte": "dados/serie/anuncios_observados.jsonl",
-    "a_favor": [],
-    "contra": [],
-    "o_que_aumentaria": null,
-    "procedencia": "medido em 57 anúncios no ar, 1 medição"
-   }
-  },
-  {
-   "evento_id": "palmas|linha_de_base_anuncios|-",
+   "evento_id": "palmas|anunciante_novo|Arte Sorriso",
    "data": "2026-08-13",
    "praca_id": "palmas",
    "rotulo": "TO · Palmas",
    "local_id": null,
-   "entidade_id": null,
-   "tipo": "linha_de_base_anuncios",
+   "entidade_id": "Arte Sorriso",
+   "tipo": "anunciante_novo",
    "natureza": "fato",
-   "severidade": "baixa",
-   "titulo": "Linha de base de anúncios criada",
-   "fato": "primeira medição de anúncios desta praça, em 2026-08-08",
-   "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-   "decisao": "recoletar na próxima rodada para abrir o delta",
+   "severidade": "media",
+   "titulo": "Anunciante novo: Arte Sorriso",
+   "fato": "2 anúncios no ar em 2026-08-13, e nenhum na medição de 2026-08-08",
+   "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+   "decisao": "ler a oferta dele antes de responder",
    "fonte": "dados/serie/anuncios_observados.jsonl",
-   "evidencia": {},
+   "evidencia": {
+    "anunciante": "Arte Sorriso",
+    "anuncios": 2
+   },
    "confianca": {
     "natureza": "fato",
-    "confianca": "media",
+    "confianca": "alta",
     "medido": true,
-    "amostra": 26,
+    "amostra": 30,
     "janela_dias": null,
-    "medicoes": 1,
-    "fonte": "dados/serie/anuncios_observados.jsonl",
+    "medicoes": 2,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-08 → 2026-08-13)",
     "a_favor": [],
-    "contra": [],
+    "contra": [
+     "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+    ],
     "o_que_aumentaria": null,
-    "procedencia": "medido em 26 anúncios no ar, 1 medição"
+    "procedencia": "medido em 30 anúncios medidos, 2 medições"
    }
   },
   {
-   "evento_id": "parauapebas|linha_de_base_anuncios|-",
+   "evento_id": "palmas|anunciante_novo|Clínica Odontológica - Te Ver Sorrir",
+   "data": "2026-08-13",
+   "praca_id": "palmas",
+   "rotulo": "TO · Palmas",
+   "local_id": null,
+   "entidade_id": "Clínica Odontológica - Te Ver Sorrir",
+   "tipo": "anunciante_novo",
+   "natureza": "fato",
+   "severidade": "media",
+   "titulo": "Anunciante novo: Clínica Odontológica - Te Ver Sorrir",
+   "fato": "2 anúncios no ar em 2026-08-13, e nenhum na medição de 2026-08-08",
+   "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+   "decisao": "ler a oferta dele antes de responder",
+   "fonte": "dados/serie/anuncios_observados.jsonl",
+   "evidencia": {
+    "anunciante": "Clínica Odontológica - Te Ver Sorrir",
+    "anuncios": 2
+   },
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "alta",
+    "medido": true,
+    "amostra": 30,
+    "janela_dias": null,
+    "medicoes": 2,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-08 → 2026-08-13)",
+    "a_favor": [],
+    "contra": [
+     "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+    ],
+    "o_que_aumentaria": null,
+    "procedencia": "medido em 30 anúncios medidos, 2 medições"
+   }
+  },
+  {
+   "evento_id": "palmas|anunciante_novo|Dr Flavio Fregonesi Dentista",
+   "data": "2026-08-13",
+   "praca_id": "palmas",
+   "rotulo": "TO · Palmas",
+   "local_id": null,
+   "entidade_id": "Dr Flavio Fregonesi Dentista",
+   "tipo": "anunciante_novo",
+   "natureza": "fato",
+   "severidade": "media",
+   "titulo": "Anunciante novo: Dr Flavio Fregonesi Dentista",
+   "fato": "3 anúncios no ar em 2026-08-13, e nenhum na medição de 2026-08-08",
+   "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+   "decisao": "ler a oferta dele antes de responder",
+   "fonte": "dados/serie/anuncios_observados.jsonl",
+   "evidencia": {
+    "anunciante": "Dr Flavio Fregonesi Dentista",
+    "anuncios": 3
+   },
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "alta",
+    "medido": true,
+    "amostra": 30,
+    "janela_dias": null,
+    "medicoes": 2,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-08 → 2026-08-13)",
+    "a_favor": [],
+    "contra": [
+     "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+    ],
+    "o_que_aumentaria": null,
+    "procedencia": "medido em 30 anúncios medidos, 2 medições"
+   }
+  },
+  {
+   "evento_id": "palmas|anunciante_novo|Dr. Alessandro Costa ",
+   "data": "2026-08-13",
+   "praca_id": "palmas",
+   "rotulo": "TO · Palmas",
+   "local_id": null,
+   "entidade_id": "Dr. Alessandro Costa ",
+   "tipo": "anunciante_novo",
+   "natureza": "fato",
+   "severidade": "media",
+   "titulo": "Anunciante novo: Dr. Alessandro Costa ",
+   "fato": "1 anúncio no ar em 2026-08-13, e nenhum na medição de 2026-08-08",
+   "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+   "decisao": "ler a oferta dele antes de responder",
+   "fonte": "dados/serie/anuncios_observados.jsonl",
+   "evidencia": {
+    "anunciante": "Dr. Alessandro Costa ",
+    "anuncios": 1
+   },
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "alta",
+    "medido": true,
+    "amostra": 30,
+    "janela_dias": null,
+    "medicoes": 2,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-08 → 2026-08-13)",
+    "a_favor": [],
+    "contra": [
+     "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+    ],
+    "o_que_aumentaria": null,
+    "procedencia": "medido em 30 anúncios medidos, 2 medições"
+   }
+  },
+  {
+   "evento_id": "palmas|anunciante_novo|Eu Ramon Pessoa ",
+   "data": "2026-08-13",
+   "praca_id": "palmas",
+   "rotulo": "TO · Palmas",
+   "local_id": null,
+   "entidade_id": "Eu Ramon Pessoa ",
+   "tipo": "anunciante_novo",
+   "natureza": "fato",
+   "severidade": "media",
+   "titulo": "Anunciante novo: Eu Ramon Pessoa ",
+   "fato": "1 anúncio no ar em 2026-08-13, e nenhum na medição de 2026-08-08",
+   "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+   "decisao": "ler a oferta dele antes de responder",
+   "fonte": "dados/serie/anuncios_observados.jsonl",
+   "evidencia": {
+    "anunciante": "Eu Ramon Pessoa ",
+    "anuncios": 1
+   },
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "alta",
+    "medido": true,
+    "amostra": 30,
+    "janela_dias": null,
+    "medicoes": 2,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-08 → 2026-08-13)",
+    "a_favor": [],
+    "contra": [
+     "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+    ],
+    "o_que_aumentaria": null,
+    "procedencia": "medido em 30 anúncios medidos, 2 medições"
+   }
+  },
+  {
+   "evento_id": "parauapebas|rodadas_nao_comparaveis|-",
    "data": "2026-08-13",
    "praca_id": "parauapebas",
    "rotulo": "PA · Parauapebas",
    "local_id": null,
    "entidade_id": null,
-   "tipo": "linha_de_base_anuncios",
+   "tipo": "rodadas_nao_comparaveis",
    "natureza": "fato",
    "severidade": "baixa",
-   "titulo": "Linha de base de anúncios criada",
-   "fato": "primeira medição de anúncios desta praça, em 2026-08-09",
-   "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-   "decisao": "recoletar na próxima rodada para abrir o delta",
+   "titulo": "As duas rodadas de anúncio não se comparam",
+   "fato": "2026-08-09 perguntou 2 consultas e 2026-08-13 perguntou 3; 2 consultas em comum",
+   "por_que_importa": "conjuntos medidos com perguntas diferentes não dizem quem entrou nem quem saiu — a diferença é da coleta, não do mercado",
+   "decisao": "repetir a MESMA lista de consultas na próxima rodada",
    "fonte": "dados/serie/anuncios_observados.jsonl",
-   "evidencia": {},
+   "evidencia": {
+    "consultas_antes": [
+     "aparelho ortodôntico Parauapebas",
+     "dentista Parauapebas"
+    ],
+    "consultas_agora": [
+     "aparelho ortodôntico Parauapebas",
+     "dentista Parauapebas",
+     "ortodontia Parauapebas"
+    ]
+   },
    "confianca": {
     "natureza": "fato",
-    "confianca": "media",
+    "confianca": "alta",
     "medido": true,
-    "amostra": 81,
+    "amostra": 47,
     "janela_dias": null,
-    "medicoes": 1,
-    "fonte": "dados/serie/anuncios_observados.jsonl",
+    "medicoes": 2,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-09 → 2026-08-13)",
     "a_favor": [],
-    "contra": [],
+    "contra": [
+     "as consultas mudaram entre as rodadas"
+    ],
     "o_que_aumentaria": null,
-    "procedencia": "medido em 81 anúncios no ar, 1 medição"
+    "procedencia": "medido em 47 anúncios no ar, 2 medições"
    }
   },
   {
-   "evento_id": "porto_alegre|linha_de_base_anuncios|-",
+   "evento_id": "porto_alegre|anunciante_novo|Amor Saúde - Porto Alegre Norte",
    "data": "2026-08-13",
    "praca_id": "porto_alegre",
    "rotulo": "RS · Porto Alegre",
    "local_id": null,
-   "entidade_id": null,
-   "tipo": "linha_de_base_anuncios",
+   "entidade_id": "Amor Saúde - Porto Alegre Norte",
+   "tipo": "anunciante_novo",
    "natureza": "fato",
-   "severidade": "baixa",
-   "titulo": "Linha de base de anúncios criada",
-   "fato": "primeira medição de anúncios desta praça, em 2026-08-12",
-   "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-   "decisao": "recoletar na próxima rodada para abrir o delta",
+   "severidade": "media",
+   "titulo": "Anunciante novo: Amor Saúde - Porto Alegre Norte",
+   "fato": "1 anúncio no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+   "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+   "decisao": "ler a oferta dele antes de responder",
    "fonte": "dados/serie/anuncios_observados.jsonl",
-   "evidencia": {},
+   "evidencia": {
+    "anunciante": "Amor Saúde - Porto Alegre Norte",
+    "anuncios": 1
+   },
    "confianca": {
     "natureza": "fato",
-    "confianca": "media",
+    "confianca": "alta",
     "medido": true,
-    "amostra": 160,
+    "amostra": 112,
     "janela_dias": null,
-    "medicoes": 1,
-    "fonte": "dados/serie/anuncios_observados.jsonl",
+    "medicoes": 2,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
     "a_favor": [],
-    "contra": [],
+    "contra": [
+     "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+    ],
     "o_que_aumentaria": null,
-    "procedencia": "medido em 160 anúncios no ar, 1 medição"
+    "procedencia": "medido em 112 anúncios medidos, 2 medições"
    }
   },
   {
-   "evento_id": "prudente|linha_de_base_anuncios|-",
+   "evento_id": "porto_alegre|anunciante_novo|Cartão Meu Dentista Poa RS",
+   "data": "2026-08-13",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "local_id": null,
+   "entidade_id": "Cartão Meu Dentista Poa RS",
+   "tipo": "anunciante_novo",
+   "natureza": "fato",
+   "severidade": "media",
+   "titulo": "Anunciante novo: Cartão Meu Dentista Poa RS",
+   "fato": "4 anúncios no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+   "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+   "decisao": "ler a oferta dele antes de responder",
+   "fonte": "dados/serie/anuncios_observados.jsonl",
+   "evidencia": {
+    "anunciante": "Cartão Meu Dentista Poa RS",
+    "anuncios": 4
+   },
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "alta",
+    "medido": true,
+    "amostra": 112,
+    "janela_dias": null,
+    "medicoes": 2,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
+    "a_favor": [],
+    "contra": [
+     "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+    ],
+    "o_que_aumentaria": null,
+    "procedencia": "medido em 112 anúncios medidos, 2 medições"
+   }
+  },
+  {
+   "evento_id": "porto_alegre|anunciante_novo|Dr. Ricardo Scarparo",
+   "data": "2026-08-13",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "local_id": null,
+   "entidade_id": "Dr. Ricardo Scarparo",
+   "tipo": "anunciante_novo",
+   "natureza": "fato",
+   "severidade": "media",
+   "titulo": "Anunciante novo: Dr. Ricardo Scarparo",
+   "fato": "1 anúncio no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+   "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+   "decisao": "ler a oferta dele antes de responder",
+   "fonte": "dados/serie/anuncios_observados.jsonl",
+   "evidencia": {
+    "anunciante": "Dr. Ricardo Scarparo",
+    "anuncios": 1
+   },
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "alta",
+    "medido": true,
+    "amostra": 112,
+    "janela_dias": null,
+    "medicoes": 2,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
+    "a_favor": [],
+    "contra": [
+     "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+    ],
+    "o_que_aumentaria": null,
+    "procedencia": "medido em 112 anúncios medidos, 2 medições"
+   }
+  },
+  {
+   "evento_id": "porto_alegre|anunciante_novo|Dra Marina Py",
+   "data": "2026-08-13",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "local_id": null,
+   "entidade_id": "Dra Marina Py",
+   "tipo": "anunciante_novo",
+   "natureza": "fato",
+   "severidade": "media",
+   "titulo": "Anunciante novo: Dra Marina Py",
+   "fato": "1 anúncio no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+   "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+   "decisao": "ler a oferta dele antes de responder",
+   "fonte": "dados/serie/anuncios_observados.jsonl",
+   "evidencia": {
+    "anunciante": "Dra Marina Py",
+    "anuncios": 1
+   },
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "alta",
+    "medido": true,
+    "amostra": 112,
+    "janela_dias": null,
+    "medicoes": 2,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
+    "a_favor": [],
+    "contra": [
+     "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+    ],
+    "o_que_aumentaria": null,
+    "procedencia": "medido em 112 anúncios medidos, 2 medições"
+   }
+  },
+  {
+   "evento_id": "porto_alegre|anunciante_novo|Sitch Bonh Odontologia",
+   "data": "2026-08-13",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "local_id": null,
+   "entidade_id": "Sitch Bonh Odontologia",
+   "tipo": "anunciante_novo",
+   "natureza": "fato",
+   "severidade": "media",
+   "titulo": "Anunciante novo: Sitch Bonh Odontologia",
+   "fato": "2 anúncios no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+   "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+   "decisao": "ler a oferta dele antes de responder",
+   "fonte": "dados/serie/anuncios_observados.jsonl",
+   "evidencia": {
+    "anunciante": "Sitch Bonh Odontologia",
+    "anuncios": 2
+   },
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "alta",
+    "medido": true,
+    "amostra": 112,
+    "janela_dias": null,
+    "medicoes": 2,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
+    "a_favor": [],
+    "contra": [
+     "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+    ],
+    "o_que_aumentaria": null,
+    "procedencia": "medido em 112 anúncios medidos, 2 medições"
+   }
+  },
+  {
+   "evento_id": "prudente|rodadas_nao_comparaveis|-",
    "data": "2026-08-13",
    "praca_id": "prudente",
    "rotulo": "SP · Presidente Prudente",
    "local_id": null,
    "entidade_id": null,
-   "tipo": "linha_de_base_anuncios",
+   "tipo": "rodadas_nao_comparaveis",
    "natureza": "fato",
    "severidade": "baixa",
-   "titulo": "Linha de base de anúncios criada",
-   "fato": "primeira medição de anúncios desta praça, em 2026-08-08",
-   "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-   "decisao": "recoletar na próxima rodada para abrir o delta",
+   "titulo": "As duas rodadas de anúncio não se comparam",
+   "fato": "2026-08-08 perguntou 1 consulta e 2026-08-13 perguntou 4; 1 consulta em comum",
+   "por_que_importa": "conjuntos medidos com perguntas diferentes não dizem quem entrou nem quem saiu — a diferença é da coleta, não do mercado",
+   "decisao": "repetir a MESMA lista de consultas na próxima rodada",
    "fonte": "dados/serie/anuncios_observados.jsonl",
-   "evidencia": {},
+   "evidencia": {
+    "consultas_antes": [
+     "aparelho ortodôntico Presidente Prudente"
+    ],
+    "consultas_agora": [
+     "OrthoDontic Presidente Prudente",
+     "aparelho ortodôntico Presidente Prudente",
+     "dentista Presidente Prudente",
+     "ortodontia Presidente Prudente"
+    ]
+   },
    "confianca": {
     "natureza": "fato",
-    "confianca": "media",
+    "confianca": "alta",
     "medido": true,
-    "amostra": 20,
+    "amostra": 51,
     "janela_dias": null,
-    "medicoes": 1,
-    "fonte": "dados/serie/anuncios_observados.jsonl",
+    "medicoes": 2,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-08 → 2026-08-13)",
     "a_favor": [],
-    "contra": [],
+    "contra": [
+     "as consultas mudaram entre as rodadas"
+    ],
     "o_que_aumentaria": null,
-    "procedencia": "medido em 20 anúncios no ar, 1 medição"
+    "procedencia": "medido em 51 anúncios no ar, 2 medições"
    }
   },
   {
-   "evento_id": "rio_branco|linha_de_base_anuncios|-",
+   "evento_id": "rio_branco|rodadas_nao_comparaveis|-",
    "data": "2026-08-13",
    "praca_id": "rio_branco",
    "rotulo": "AC · Rio Branco",
    "local_id": null,
    "entidade_id": null,
-   "tipo": "linha_de_base_anuncios",
+   "tipo": "rodadas_nao_comparaveis",
    "natureza": "fato",
    "severidade": "baixa",
-   "titulo": "Linha de base de anúncios criada",
-   "fato": "primeira medição de anúncios desta praça, em 2026-08-09",
-   "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-   "decisao": "recoletar na próxima rodada para abrir o delta",
+   "titulo": "As duas rodadas de anúncio não se comparam",
+   "fato": "2026-08-09 perguntou 2 consultas e 2026-08-13 perguntou 3; 2 consultas em comum",
+   "por_que_importa": "conjuntos medidos com perguntas diferentes não dizem quem entrou nem quem saiu — a diferença é da coleta, não do mercado",
+   "decisao": "repetir a MESMA lista de consultas na próxima rodada",
    "fonte": "dados/serie/anuncios_observados.jsonl",
-   "evidencia": {},
+   "evidencia": {
+    "consultas_antes": [
+     "aparelho ortodôntico Rio Branco",
+     "dentista Rio Branco"
+    ],
+    "consultas_agora": [
+     "aparelho ortodôntico Rio Branco",
+     "dentista Rio Branco",
+     "ortodontia Rio Branco"
+    ]
+   },
    "confianca": {
     "natureza": "fato",
-    "confianca": "media",
+    "confianca": "alta",
     "medido": true,
-    "amostra": 48,
+    "amostra": 67,
     "janela_dias": null,
-    "medicoes": 1,
-    "fonte": "dados/serie/anuncios_observados.jsonl",
+    "medicoes": 2,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-09 → 2026-08-13)",
     "a_favor": [],
-    "contra": [],
+    "contra": [
+     "as consultas mudaram entre as rodadas"
+    ],
     "o_que_aumentaria": null,
-    "procedencia": "medido em 48 anúncios no ar, 1 medição"
+    "procedencia": "medido em 67 anúncios no ar, 2 medições"
    }
   },
   {
@@ -925,14 +1394,14 @@
     "natureza": "fato",
     "confianca": "media",
     "medido": true,
-    "amostra": 56,
+    "amostra": 144,
     "janela_dias": null,
     "medicoes": 1,
     "fonte": "dados/serie/anuncios_observados.jsonl",
     "a_favor": [],
     "contra": [],
     "o_que_aumentaria": null,
-    "procedencia": "medido em 56 anúncios no ar, 1 medição"
+    "procedencia": "medido em 144 anúncios no ar, 1 medição"
    }
   },
   {
@@ -955,44 +1424,224 @@
     "natureza": "fato",
     "confianca": "media",
     "medido": true,
-    "amostra": 171,
+    "amostra": 353,
     "janela_dias": null,
     "medicoes": 1,
     "fonte": "dados/serie/anuncios_observados.jsonl",
     "a_favor": [],
     "contra": [],
     "o_que_aumentaria": null,
-    "procedencia": "medido em 171 anúncios no ar, 1 medição"
+    "procedencia": "medido em 353 anúncios no ar, 1 medição"
    }
   },
   {
-   "evento_id": "sorocaba|linha_de_base_anuncios|-",
+   "evento_id": "sorocaba|anunciante_novo|Athek",
    "data": "2026-08-13",
    "praca_id": "sorocaba",
    "rotulo": "SP · Sorocaba",
    "local_id": null,
-   "entidade_id": null,
-   "tipo": "linha_de_base_anuncios",
+   "entidade_id": "Athek",
+   "tipo": "anunciante_novo",
    "natureza": "fato",
-   "severidade": "baixa",
-   "titulo": "Linha de base de anúncios criada",
-   "fato": "primeira medição de anúncios desta praça, em 2026-08-12",
-   "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-   "decisao": "recoletar na próxima rodada para abrir o delta",
+   "severidade": "media",
+   "titulo": "Anunciante novo: Athek",
+   "fato": "1 anúncio no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+   "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+   "decisao": "ler a oferta dele antes de responder",
    "fonte": "dados/serie/anuncios_observados.jsonl",
-   "evidencia": {},
+   "evidencia": {
+    "anunciante": "Athek",
+    "anuncios": 1
+   },
    "confianca": {
     "natureza": "fato",
-    "confianca": "media",
+    "confianca": "alta",
     "medido": true,
-    "amostra": 135,
+    "amostra": 136,
     "janela_dias": null,
-    "medicoes": 1,
-    "fonte": "dados/serie/anuncios_observados.jsonl",
+    "medicoes": 2,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
     "a_favor": [],
-    "contra": [],
+    "contra": [
+     "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+    ],
     "o_que_aumentaria": null,
-    "procedencia": "medido em 135 anúncios no ar, 1 medição"
+    "procedencia": "medido em 136 anúncios medidos, 2 medições"
+   }
+  },
+  {
+   "evento_id": "sorocaba|anunciante_novo|Clínica Oroface",
+   "data": "2026-08-13",
+   "praca_id": "sorocaba",
+   "rotulo": "SP · Sorocaba",
+   "local_id": null,
+   "entidade_id": "Clínica Oroface",
+   "tipo": "anunciante_novo",
+   "natureza": "fato",
+   "severidade": "media",
+   "titulo": "Anunciante novo: Clínica Oroface",
+   "fato": "3 anúncios no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+   "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+   "decisao": "ler a oferta dele antes de responder",
+   "fonte": "dados/serie/anuncios_observados.jsonl",
+   "evidencia": {
+    "anunciante": "Clínica Oroface",
+    "anuncios": 3
+   },
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "alta",
+    "medido": true,
+    "amostra": 136,
+    "janela_dias": null,
+    "medicoes": 2,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
+    "a_favor": [],
+    "contra": [
+     "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+    ],
+    "o_que_aumentaria": null,
+    "procedencia": "medido em 136 anúncios medidos, 2 medições"
+   }
+  },
+  {
+   "evento_id": "sorocaba|anunciante_novo|Dr. Cadu Crevelario • Sorocaba - SP",
+   "data": "2026-08-13",
+   "praca_id": "sorocaba",
+   "rotulo": "SP · Sorocaba",
+   "local_id": null,
+   "entidade_id": "Dr. Cadu Crevelario • Sorocaba - SP",
+   "tipo": "anunciante_novo",
+   "natureza": "fato",
+   "severidade": "media",
+   "titulo": "Anunciante novo: Dr. Cadu Crevelario • Sorocaba - SP",
+   "fato": "1 anúncio no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+   "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+   "decisao": "ler a oferta dele antes de responder",
+   "fonte": "dados/serie/anuncios_observados.jsonl",
+   "evidencia": {
+    "anunciante": "Dr. Cadu Crevelario • Sorocaba - SP",
+    "anuncios": 1
+   },
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "alta",
+    "medido": true,
+    "amostra": 136,
+    "janela_dias": null,
+    "medicoes": 2,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
+    "a_favor": [],
+    "contra": [
+     "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+    ],
+    "o_que_aumentaria": null,
+    "procedencia": "medido em 136 anúncios medidos, 2 medições"
+   }
+  },
+  {
+   "evento_id": "sorocaba|anunciante_novo|Dr. Wellington Heleno",
+   "data": "2026-08-13",
+   "praca_id": "sorocaba",
+   "rotulo": "SP · Sorocaba",
+   "local_id": null,
+   "entidade_id": "Dr. Wellington Heleno",
+   "tipo": "anunciante_novo",
+   "natureza": "fato",
+   "severidade": "media",
+   "titulo": "Anunciante novo: Dr. Wellington Heleno",
+   "fato": "1 anúncio no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+   "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+   "decisao": "ler a oferta dele antes de responder",
+   "fonte": "dados/serie/anuncios_observados.jsonl",
+   "evidencia": {
+    "anunciante": "Dr. Wellington Heleno",
+    "anuncios": 1
+   },
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "alta",
+    "medido": true,
+    "amostra": 136,
+    "janela_dias": null,
+    "medicoes": 2,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
+    "a_favor": [],
+    "contra": [
+     "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+    ],
+    "o_que_aumentaria": null,
+    "procedencia": "medido em 136 anúncios medidos, 2 medições"
+   }
+  },
+  {
+   "evento_id": "sorocaba|anunciante_novo|Dra Tainara Odontologia",
+   "data": "2026-08-13",
+   "praca_id": "sorocaba",
+   "rotulo": "SP · Sorocaba",
+   "local_id": null,
+   "entidade_id": "Dra Tainara Odontologia",
+   "tipo": "anunciante_novo",
+   "natureza": "fato",
+   "severidade": "media",
+   "titulo": "Anunciante novo: Dra Tainara Odontologia",
+   "fato": "1 anúncio no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+   "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+   "decisao": "ler a oferta dele antes de responder",
+   "fonte": "dados/serie/anuncios_observados.jsonl",
+   "evidencia": {
+    "anunciante": "Dra Tainara Odontologia",
+    "anuncios": 1
+   },
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "alta",
+    "medido": true,
+    "amostra": 136,
+    "janela_dias": null,
+    "medicoes": 2,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
+    "a_favor": [],
+    "contra": [
+     "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+    ],
+    "o_que_aumentaria": null,
+    "procedencia": "medido em 136 anúncios medidos, 2 medições"
+   }
+  },
+  {
+   "evento_id": "sorocaba|anunciante_novo|Massari Odonto",
+   "data": "2026-08-13",
+   "praca_id": "sorocaba",
+   "rotulo": "SP · Sorocaba",
+   "local_id": null,
+   "entidade_id": "Massari Odonto",
+   "tipo": "anunciante_novo",
+   "natureza": "fato",
+   "severidade": "media",
+   "titulo": "Anunciante novo: Massari Odonto",
+   "fato": "2 anúncios no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+   "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+   "decisao": "ler a oferta dele antes de responder",
+   "fonte": "dados/serie/anuncios_observados.jsonl",
+   "evidencia": {
+    "anunciante": "Massari Odonto",
+    "anuncios": 2
+   },
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "alta",
+    "medido": true,
+    "amostra": 136,
+    "janela_dias": null,
+    "medicoes": 2,
+    "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
+    "a_favor": [],
+    "contra": [
+     "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+    ],
+    "o_que_aumentaria": null,
+    "procedencia": "medido em 136 anúncios medidos, 2 medições"
    }
   },
   {
@@ -1015,14 +1664,14 @@
     "natureza": "fato",
     "confianca": "media",
     "medido": true,
-    "amostra": 118,
+    "amostra": 253,
     "janela_dias": null,
     "medicoes": 1,
     "fonte": "dados/serie/anuncios_observados.jsonl",
     "a_favor": [],
     "contra": [],
     "o_que_aumentaria": null,
-    "procedencia": "medido em 118 anúncios no ar, 1 medição"
+    "procedencia": "medido em 253 anúncios no ar, 1 medição"
    }
   }
  ]

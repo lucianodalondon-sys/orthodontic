@@ -690,14 +690,14 @@
           "natureza": "fato",
           "confianca": "media",
           "medido": true,
-          "amostra": 118,
+          "amostra": 253,
           "janela_dias": null,
           "medicoes": 1,
           "fonte": "dados/serie/anuncios_observados.jsonl",
           "a_favor": [],
           "contra": [],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 118 anúncios no ar, 1 medição"
+          "procedencia": "medido em 253 anúncios no ar, 1 medição"
         }
       }
     ],
@@ -944,45 +944,53 @@
   "oferta_da_cidade": {
     "praca_id": "uberlandia",
     "rotulo": "MG · Uberlândia",
-    "anuncios_de_aparelho": 18,
-    "anunciantes": 11,
-    "fora_do_produto": 96,
+    "anuncios_de_aparelho": 29,
+    "anunciantes": 19,
+    "fora_do_produto": 129,
     "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
-    "sem_texto": 4,
+    "sem_texto": 5,
     "amostra_curta": false,
-    "tese": "A disputa desta cidade é por avaliação grátis — 8 dos 18 anúncios de aparelho medidos falam disso, seguido de alinhador invisível.",
+    "tese": "A disputa desta cidade é por avaliação grátis — 10 dos 29 anúncios de aparelho medidos falam disso, seguido de alinhador invisível.",
     "posicao_vaga": "Ninguém está falando de sem entrada — tira a barreira do primeiro pagamento — ataca quem não tem reserva.",
     "eixos": [
       {
         "eixo": "avaliacao_gratis",
         "rotulo": "Avaliação grátis",
         "o_que_significa": "compra a visita, não a venda — é isca de agenda",
-        "anuncios": 8,
-        "pct": 44,
-        "frase": "8 anúncios de aparelho falam disso"
+        "anuncios": 10,
+        "pct": 34,
+        "frase": "10 anúncios de aparelho falam disso"
       },
       {
         "eixo": "alinhador",
         "rotulo": "Alinhador invisível",
         "o_que_significa": "produto de ticket alto e público adulto",
-        "anuncios": 5,
-        "pct": 28,
-        "frase": "5 anúncios de aparelho falam disso"
+        "anuncios": 6,
+        "pct": 21,
+        "frase": "6 anúncios de aparelho falam disso"
       },
       {
         "eixo": "parcelamento",
         "rotulo": "Parcelamento",
         "o_que_significa": "vende a mensalidade, não o tratamento",
         "anuncios": 4,
-        "pct": 22,
+        "pct": 14,
         "frase": "4 anúncios de aparelho falam disso"
       },
       {
         "eixo": "urgencia",
         "rotulo": "Urgência e escassez",
         "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+        "anuncios": 3,
+        "pct": 10,
+        "frase": "3 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "autoridade",
+        "rotulo": "Autoridade técnica",
+        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
         "anuncios": 2,
-        "pct": 11,
+        "pct": 7,
         "frase": "2 anúncios de aparelho falam disso"
       },
       {
@@ -990,15 +998,7 @@
         "rotulo": "Preço na frente",
         "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
         "anuncios": 1,
-        "pct": 6,
-        "frase": "1 anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "autoridade",
-        "rotulo": "Autoridade técnica",
-        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
-        "anuncios": 1,
-        "pct": 6,
+        "pct": 3,
         "frase": "1 anúncio de aparelho fala disso"
       },
       {
@@ -1006,7 +1006,7 @@
         "rotulo": "Rapidez do resultado",
         "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
         "anuncios": 1,
-        "pct": 6,
+        "pct": 3,
         "frase": "1 anúncio de aparelho fala disso"
       },
       {
@@ -1066,10 +1066,29 @@
         ]
       },
       {
+        "anunciante": "Clínica Invitta Odontologia ",
+        "eixos": [
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "Dentista Thayane Simões",
+        "eixos": [
+          "alinhador",
+          "autoridade"
+        ]
+      },
+      {
         "anunciante": "Instituto IQO",
         "eixos": [
           "autoridade",
           "rapidez"
+        ]
+      },
+      {
+        "anunciante": "OdontoCompany Uberlândia - Osvaldo Rezende/MG",
+        "eixos": [
+          "urgencia"
         ]
       },
       {
@@ -1085,25 +1104,6 @@
           "preco",
           "avaliacao_gratis"
         ]
-      },
-      {
-        "anunciante": "Sorria Roosevelt - Uberlândia",
-        "eixos": [
-          "avaliacao_gratis",
-          "urgencia"
-        ]
-      },
-      {
-        "anunciante": "Clínica Invitta Odontologia ",
-        "eixos": [
-          "avaliacao_gratis"
-        ]
-      },
-      {
-        "anunciante": "OdontoCompany Uberlândia - Osvaldo Rezende/MG",
-        "eixos": [
-          "urgencia"
-        ]
       }
     ],
     "e_da_cidade": true
@@ -1112,9 +1112,9 @@
   "anuncios_da_cidade": {
     "e_da_cidade": true,
     "rotulo": "MG · Uberlândia",
-    "manchete": "11 anunciantes compram aparelho em MG · Uberlândia, e nenhum é da rede.",
-    "anuncios_ativos": 18,
-    "anunciantes_total": 11,
+    "manchete": "19 anunciantes compram aparelho em MG · Uberlândia, e nenhum é da rede.",
+    "anuncios_ativos": 29,
+    "anunciantes_total": 19,
     "somos_um_deles": false,
     "anunciantes": [
       {
@@ -1133,6 +1133,21 @@
         "de_outra_unidade": null
       },
       {
+        "nome": "Clínica Invitta Odontologia ",
+        "nosso": false,
+        "anuncios": 3,
+        "paginas": [
+          "617939134746369"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Julho começou com condições especiais para você finalmente iniciar o seu tratamento ortodôntico ✨\n\nAqui na Invitta, cada avaliação é feita com atenção, planejamento e indicação personalizada para as necessidades de cada paciente.\n\nSe você deseja alinhar seu sorriso com segurança,…",
+        "de_outra_unidade": null
+      },
+      {
         "nome": "Clínica Odontológica",
         "nosso": false,
         "anuncios": 2,
@@ -1145,6 +1160,21 @@
         ],
         "desde": "2026-08-13",
         "exemplo": "🦷 Atenção, Uberlândia e região!\n\nEstá na hora de começar seu tratamento ortodôntico sem complicação.\n\nAqui, você paga apenas a mensalidade e já tem incluso:\n\n✔ Exames\n✔ Emergência\n✔ Limpeza\n✔ Aparelho\n✔ Instalação\n\nTudo pensado para você iniciar seu tratamento com mais tranquilid…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "OdontoCompany Uberlândia - Osvaldo Rezende/MG",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "106677600685337"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "ATENÇÃO, UBERLÂNDIA! 🚨\nA oportunidade de começar seu tratamento ortodôntico chegou! 🚨\n\nChegou a hora de conquistar o sorriso que você sempre quis, com uma condição que faz toda a diferença.\n\n✅ Instalação do aparelho no mesmo dia\n✅ Não paga nada para instalar\n✅ Documentação GRÁTIS…",
         "de_outra_unidade": null
       },
       {
@@ -1163,18 +1193,33 @@
         "de_outra_unidade": null
       },
       {
-        "nome": "Clínica Invitta Odontologia ",
+        "nome": "COI Centro de Odontologia Integrada",
         "nosso": false,
         "anuncios": 1,
         "paginas": [
-          "617939134746369"
+          "144702066175940"
         ],
         "dias_no_ar_maior": null,
         "plataformas": [
           "Meta"
         ],
         "desde": "2026-08-13",
-        "exemplo": "Julho começou com condições especiais para você finalmente iniciar o seu tratamento ortodôntico ✨\n\nAqui na Invitta, cada avaliação é feita com atenção, planejamento e indicação personalizada para as necessidades de cada paciente.\n\nSe você deseja alinhar seu sorriso com segurança,…",
+        "exemplo": "Uberlândia e Prata: Fernando dando um passo importante para o sorriso que sempre quis! ✨🦷\n\nFernando é um exemplo de coragem e transformação. Com agenesia do lateral superior, ele iniciou o tratamento com ortodontia para criar espaço ideal e, agora, com a fase ortodôntica finaliza…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dentista Thayane Simões",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "172222406447725"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Tratamentos complexos também podem ser realizados com os alinhadores, com a vantagem de serem mais discretos e muito mais confortáveis! 🤌✨ \n\nDivulgação de imagem autorizada por paciente/responsável \n\n................................................................................…",
         "de_outra_unidade": null
       },
       {
@@ -1193,6 +1238,36 @@
         "de_outra_unidade": null
       },
       {
+        "nome": "Fotografia Odontologica Ivan Yoshio",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "438422489531382"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Colega Dentista,\nVc já Imaginou uma Mentoria em Fotografia, Marketing em Odontologia Exclusivamente pra você e sua equipe?! 🤔\n\n⭕️ Pois bem, essa aqui foi em Uberlândia - MG. @cliniqueodontologiauberlandia \n⭕️ Um dia super agradável, no qual vou analisar as salas, iluminação, equi…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Grupo de Dicas Orto",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "1211766058692120"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Agenda cheia nem sempre significa bolso cheio... e agenda vazia é certeza de baixo faturamento. Qual é a sua realidade hoje? 😰\n\nMuitos ortodontistas sofrem com uma precificação errada ou falta de processos que engolem o lucro no final do mês. Para mudar isso, você não precisa de …",
+        "de_outra_unidade": null
+      },
+      {
         "nome": "Instituto IQO",
         "nosso": false,
         "anuncios": 1,
@@ -1208,21 +1283,6 @@
         "de_outra_unidade": null
       },
       {
-        "nome": "OdontoCompany Uberlândia - Osvaldo Rezende/MG",
-        "nosso": false,
-        "anuncios": 1,
-        "paginas": [
-          "106677600685337"
-        ],
-        "dias_no_ar_maior": null,
-        "plataformas": [
-          "Meta"
-        ],
-        "desde": "2026-08-13",
-        "exemplo": "ATENÇÃO, UBERLÂNDIA! 🚨\nA oportunidade de começar seu tratamento ortodôntico chegou! 🚨\n\nChegou a hora de conquistar o sorriso que você sempre quis, com uma condição que faz toda a diferença.\n\n✅ Instalação do aparelho no mesmo dia\n✅ Não paga nada para instalar\n✅ Documentação GRÁTIS…",
-        "de_outra_unidade": null
-      },
-      {
         "nome": "Orthopride Uberlândia",
         "nosso": false,
         "anuncios": 1,
@@ -1235,6 +1295,21 @@
         ],
         "desde": "2026-08-13",
         "exemplo": "✨ Você é de Uberlândia e ainda esconde o sorriso por causa do aparelho?\nChegou a hora de mudar isso!\n\nNa nossa clínica você só paga a mensalidade e já tem incluso:\n✔ Exames\n✔ Emergência\n✔ Limpeza\n✔ Aparelho\n✔ Instalação\n\nOu seja: sem taxas escondidas, sem surpresas.\nSó a mensalid…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Ortodicas",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "1140142495850136"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Ortodontista, a faculdade te ensinou a ser um excelente dentista, mas ela não te preparou para ser o dono do seu próprio negócio. E a verdade é que o mercado mudou. 🦷💼\n\nHoje, quem tem os melhores resultados não é quem acumula mais títulos, mas sim quem domina a gestão do consultó…",
         "de_outra_unidade": null
       },
       {
@@ -1281,9 +1356,54 @@
         "desde": "2026-08-13",
         "exemplo": "Seu sorriso alinhado está mais próximo do que você imagina! ✨ Na Clínica Sorria Roosevelt, utilizamos técnicas modernas e aparelhos ortodônticos de alta qualidade para transformar o seu sorriso de forma rápida e confortável. E o melhor: estamos aqui em Uberlândia, com uma equipe …",
         "de_outra_unidade": null
+      },
+      {
+        "nome": "Super Sorriso Odontologia",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "919065244631586"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "✨ Chegou a hora de dar um passo além: esqueça dentaduras e próteses antigas, seu novo sorriso começa aqui!\n\n🦷 O Dr. Arthur, referência em ortodontia, une experiência, tecnologia de ponta e cuidado humano para transformar seu bem-estar.\n\n💬 Quer entender melhor sobre o procedimento…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Templa Odontologia",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "477076268812560"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Ela chegou até nós em silêncio um sorriso tímido, escondido entre fotos evitadas e inseguranças que só quem já passou entende. Os espaços entre os dentes incomodavam, e mesmo após tentar diferentes caminhos, ainda não se sentia satisfeita.\n\nFoi então que decidiu confiar no nosso …",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "rizziodontologia_buritis",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "1185236258003714"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Seu sorriso merece mais do que cuidados. Merece um atendimento de excelência. 💙✨\n\nNa Rizzi Odontologia, você encontra uma equipe preparada para cuidar do seu sorriso de forma completa, desde a prevenção até procedimentos para transformar sua saúde e estética dental.\n\n🦷 Limpeza e …",
+        "de_outra_unidade": null
       }
     ],
-    "fora_do_produto": 100,
+    "fora_do_produto": 134,
     "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
   },
   "eventos": [

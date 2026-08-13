@@ -1025,33 +1025,47 @@
   "movimentos": {
     "eventos": [
       {
-        "evento_id": "contagem|linha_de_base_anuncios|-",
+        "evento_id": "contagem|rodadas_nao_comparaveis|-",
         "data": "2026-08-13",
         "praca_id": "contagem",
         "rotulo": "MG · Contagem",
         "local_id": null,
         "entidade_id": null,
-        "tipo": "linha_de_base_anuncios",
+        "tipo": "rodadas_nao_comparaveis",
         "natureza": "fato",
         "severidade": "baixa",
-        "titulo": "Linha de base de anúncios criada",
-        "fato": "primeira medição de anúncios desta praça, em 2026-08-08",
-        "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-        "decisao": "recoletar na próxima rodada para abrir o delta",
+        "titulo": "As duas rodadas de anúncio não se comparam",
+        "fato": "2026-08-08 perguntou 4 consultas e 2026-08-13 perguntou 3; 3 consultas em comum",
+        "por_que_importa": "conjuntos medidos com perguntas diferentes não dizem quem entrou nem quem saiu — a diferença é da coleta, não do mercado",
+        "decisao": "repetir a MESMA lista de consultas na próxima rodada",
         "fonte": "dados/serie/anuncios_observados.jsonl",
-        "evidencia": {},
+        "evidencia": {
+          "consultas_antes": [
+            "OrthoDontic Contagem",
+            "aparelho ortodôntico Contagem",
+            "dentista Contagem",
+            "ortodontia Contagem"
+          ],
+          "consultas_agora": [
+            "aparelho ortodôntico Contagem",
+            "dentista Contagem",
+            "ortodontia Contagem"
+          ]
+        },
         "confianca": {
           "natureza": "fato",
-          "confianca": "media",
+          "confianca": "alta",
           "medido": true,
-          "amostra": 42,
+          "amostra": 47,
           "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/serie/anuncios_observados.jsonl",
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-08 → 2026-08-13)",
           "a_favor": [],
-          "contra": [],
+          "contra": [
+            "as consultas mudaram entre as rodadas"
+          ],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 42 anúncios no ar, 1 medição"
+          "procedencia": "medido em 47 anúncios no ar, 2 medições"
         }
       }
     ],
@@ -1205,13 +1219,13 @@
   "oferta_da_cidade": {
     "praca_id": "contagem",
     "rotulo": "MG · Contagem",
-    "anuncios_de_aparelho": 8,
-    "anunciantes": 5,
-    "fora_do_produto": 33,
+    "anuncios_de_aparelho": 11,
+    "anunciantes": 6,
+    "fora_do_produto": 58,
     "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
-    "sem_texto": 1,
+    "sem_texto": 3,
     "amostra_curta": false,
-    "tese": "A disputa desta cidade é por avaliação grátis — 5 dos 8 anúncios de aparelho medidos falam disso, seguido de urgência e escassez.",
+    "tese": "A disputa desta cidade é por avaliação grátis — 5 dos 11 anúncios de aparelho medidos falam disso, seguido de aparelho estético.",
     "posicao_vaga": "Ninguém está falando de preço na frente — a cidade disputa por número; entrar aqui é entrar na briga mais cara.",
     "eixos": [
       {
@@ -1219,15 +1233,31 @@
         "rotulo": "Avaliação grátis",
         "o_que_significa": "compra a visita, não a venda — é isca de agenda",
         "anuncios": 5,
-        "pct": 62,
+        "pct": 45,
         "frase": "5 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "estetico",
+        "rotulo": "Aparelho estético",
+        "o_que_significa": "vende discrição — público que trabalha de frente",
+        "anuncios": 3,
+        "pct": 27,
+        "frase": "3 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "publico_infantil",
+        "rotulo": "Falado para criança e adolescente",
+        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+        "anuncios": 3,
+        "pct": 27,
+        "frase": "3 anúncios de aparelho falam disso"
       },
       {
         "eixo": "urgencia",
         "rotulo": "Urgência e escassez",
         "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
         "anuncios": 2,
-        "pct": 25,
+        "pct": 18,
         "frase": "2 anúncios de aparelho falam disso"
       },
       {
@@ -1263,25 +1293,9 @@
         "frase": "nenhum anúncio de aparelho fala disso"
       },
       {
-        "eixo": "estetico",
-        "rotulo": "Aparelho estético",
-        "o_que_significa": "vende discrição — público que trabalha de frente",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
         "eixo": "publico_adulto",
         "rotulo": "Falado para adulto",
         "o_que_significa": "disputa o adulto que adiou o tratamento",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "publico_infantil",
-        "rotulo": "Falado para criança e adolescente",
-        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
         "anuncios": 0,
         "pct": 0,
         "frase": "nenhum anúncio de aparelho fala disso"
@@ -1313,6 +1327,13 @@
     ],
     "por_anunciante": [
       {
+        "anunciante": "Clidecer Clínica Dentária Cecília Rabelo",
+        "eixos": [
+          "estetico",
+          "publico_infantil"
+        ]
+      },
+      {
         "anunciante": "Rirás Odontologia - Cidade Industrial",
         "eixos": [
           "avaliacao_gratis",
@@ -1338,24 +1359,39 @@
   "anuncios_da_cidade": {
     "e_da_cidade": true,
     "rotulo": "MG · Contagem",
-    "manchete": "5 anunciantes compram aparelho em MG · Contagem, e nenhum é da rede.",
+    "manchete": "4 anunciantes compram aparelho em MG · Contagem, e nenhum é da rede.",
     "anuncios_ativos": 9,
-    "anunciantes_total": 5,
+    "anunciantes_total": 4,
     "somos_um_deles": false,
     "anunciantes": [
       {
         "nome": "Aparelho Dental no mesmo dia",
         "nosso": false,
-        "anuncios": 4,
+        "anuncios": 3,
         "paginas": [
           "311839715342597"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 5,
         "plataformas": [
           "Meta"
         ],
         "desde": "2026-08-08",
         "exemplo": "😁 Está pensando em colocar aparelho ortodôntico?\nEsse pode ser o momento ideal para começar seu tratamento e conquistar o sorriso que você sempre quis!\n\n📍 Unidade Contagem\n\nFale com nossa equipe e agende sua avaliação. 🦷",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Clidecer Clínica Dentária Cecília Rabelo",
+        "nosso": false,
+        "anuncios": 3,
+        "paginas": [
+          "241221635730485"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "\"38 ANOS de dedicação à sua saúde bucal.\"\n\nConheça Nossos Tratamentos:\n\n1. IMPLANTES DENTÁRIOS: Substituem raízes ausentes usando implantes de titânio para restaurar a funcionalidade dos dentes.\n\n2. PRÓTESES DENTÁRIAS: Substituem dentes perdidos por meio de próteses fixas ou remo…",
         "de_outra_unidade": null
       },
       {
@@ -1365,7 +1401,7 @@
         "paginas": [
           "112376244437794"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 5,
         "plataformas": [
           "Meta"
         ],
@@ -1380,46 +1416,16 @@
         "paginas": [
           "181387961727056"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 5,
         "plataformas": [
           "Meta"
         ],
         "desde": "2026-08-08",
         "exemplo": "Na instalação ortodôntica, cada detalhe conta.\nA sutileza no manuseio, a remoção precisa do excesso de resina, a contagem e a angulação correta de cada peça… tudo pensado para garantir um tratamento eficaz e confortável.\n\n#Ortodontia #AparelhoOrtodontico #BioClean #DetalhesQueTra…",
         "de_outra_unidade": null
-      },
-      {
-        "nome": "Ellite Odontologia ",
-        "nosso": false,
-        "anuncios": 1,
-        "paginas": [
-          "579383768600015"
-        ],
-        "dias_no_ar_maior": null,
-        "plataformas": [
-          "Meta"
-        ],
-        "desde": "2026-08-08",
-        "exemplo": "🦷 Não coloque aparelho sem antes vir a Ellite Odontologia!\n\nEm parceria com o Instituto Martucheli tem as melhores condições para você!\n\n👉 Clique em Enviar Mensagem e agende sua consulta.\n\n📍 Rua Rio Hudson, 512 - Novo Riacho, Contagem/MG",
-        "de_outra_unidade": null
-      },
-      {
-        "nome": "OdontoCompany Contagem - Tropical",
-        "nosso": false,
-        "anuncios": 1,
-        "paginas": [
-          "106431551324428"
-        ],
-        "dias_no_ar_maior": null,
-        "plataformas": [
-          "Meta"
-        ],
-        "desde": "2026-08-08",
-        "exemplo": "Seu sorriso pode passar por uma transformação completa! ✨\n\nComece seu tratamento ortodôntico agora e, ao final, receba um clareamento dental para valorizar ainda mais o resultado.\n\n✔️ Alinhamento dos dentes\n✔️ Mais confiança para sorrir\n✔️ Clareamento profissional incluso\n\n📲 Cliq…",
-        "de_outra_unidade": null
       }
     ],
-    "fora_do_produto": 33,
+    "fora_do_produto": 42,
     "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
   },
   "eventos": [

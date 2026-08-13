@@ -1026,33 +1026,48 @@
   "movimentos": {
     "eventos": [
       {
-        "evento_id": "londrina|linha_de_base_anuncios|-",
+        "evento_id": "londrina|rodadas_nao_comparaveis|-",
         "data": "2026-08-13",
         "praca_id": "londrina",
         "rotulo": "PR · Londrina",
         "local_id": null,
         "entidade_id": null,
-        "tipo": "linha_de_base_anuncios",
+        "tipo": "rodadas_nao_comparaveis",
         "natureza": "fato",
         "severidade": "baixa",
-        "titulo": "Linha de base de anúncios criada",
-        "fato": "primeira medição de anúncios desta praça, em 2026-08-08",
-        "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-        "decisao": "recoletar na próxima rodada para abrir o delta",
+        "titulo": "As duas rodadas de anúncio não se comparam",
+        "fato": "2026-08-08 perguntou 3 consultas e 2026-08-13 perguntou 5; 3 consultas em comum",
+        "por_que_importa": "conjuntos medidos com perguntas diferentes não dizem quem entrou nem quem saiu — a diferença é da coleta, não do mercado",
+        "decisao": "repetir a MESMA lista de consultas na próxima rodada",
         "fonte": "dados/serie/anuncios_observados.jsonl",
-        "evidencia": {},
+        "evidencia": {
+          "consultas_antes": [
+            "Odontoclinic Londrina",
+            "OrthoDontic Londrina",
+            "aparelho ortodôntico Londrina"
+          ],
+          "consultas_agora": [
+            "Odontoclinic Londrina",
+            "OrthoDontic Londrina",
+            "aparelho ortodôntico Londrina",
+            "dentista Londrina",
+            "ortodontia Londrina"
+          ]
+        },
         "confianca": {
           "natureza": "fato",
-          "confianca": "media",
+          "confianca": "alta",
           "medido": true,
-          "amostra": 88,
+          "amostra": 103,
           "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/serie/anuncios_observados.jsonl",
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-08 → 2026-08-13)",
           "a_favor": [],
-          "contra": [],
+          "contra": [
+            "as consultas mudaram entre as rodadas"
+          ],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 88 anúncios no ar, 1 medição"
+          "procedencia": "medido em 103 anúncios no ar, 2 medições"
         }
       }
     ],
@@ -1206,53 +1221,69 @@
   "oferta_da_cidade": {
     "praca_id": "londrina",
     "rotulo": "PR · Londrina",
-    "anuncios_de_aparelho": 45,
-    "anunciantes": 10,
-    "fora_do_produto": 13,
+    "anuncios_de_aparelho": 65,
+    "anunciantes": 16,
+    "fora_do_produto": 56,
     "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
     "sem_texto": 30,
     "amostra_curta": false,
-    "tese": "A disputa desta cidade é por urgência e escassez — 24 dos 45 anúncios de aparelho medidos falam disso, seguido de avaliação grátis.",
+    "tese": "A disputa desta cidade é por urgência e escassez — 28 dos 65 anúncios de aparelho medidos falam disso, seguido de avaliação grátis.",
     "posicao_vaga": "Ninguém está falando de sem entrada — tira a barreira do primeiro pagamento — ataca quem não tem reserva.",
     "eixos": [
       {
         "eixo": "urgencia",
         "rotulo": "Urgência e escassez",
         "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
-        "anuncios": 24,
-        "pct": 53,
-        "frase": "24 anúncios de aparelho falam disso"
+        "anuncios": 28,
+        "pct": 43,
+        "frase": "28 anúncios de aparelho falam disso"
       },
       {
         "eixo": "avaliacao_gratis",
         "rotulo": "Avaliação grátis",
         "o_que_significa": "compra a visita, não a venda — é isca de agenda",
-        "anuncios": 10,
-        "pct": 22,
-        "frase": "10 anúncios de aparelho falam disso"
+        "anuncios": 11,
+        "pct": 17,
+        "frase": "11 anúncios de aparelho falam disso"
       },
       {
         "eixo": "estetico",
         "rotulo": "Aparelho estético",
         "o_que_significa": "vende discrição — público que trabalha de frente",
-        "anuncios": 9,
-        "pct": 20,
-        "frase": "9 anúncios de aparelho falam disso"
+        "anuncios": 11,
+        "pct": 17,
+        "frase": "11 anúncios de aparelho falam disso"
       },
       {
         "eixo": "parcelamento",
         "rotulo": "Parcelamento",
         "o_que_significa": "vende a mensalidade, não o tratamento",
         "anuncios": 6,
-        "pct": 13,
+        "pct": 9,
         "frase": "6 anúncios de aparelho falam disso"
       },
       {
         "eixo": "autoridade",
         "rotulo": "Autoridade técnica",
         "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
-        "anuncios": 4,
+        "anuncios": 6,
         "pct": 9,
+        "frase": "6 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "publico_infantil",
+        "rotulo": "Falado para criança e adolescente",
+        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+        "anuncios": 5,
+        "pct": 8,
+        "frase": "5 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "alinhador",
+        "rotulo": "Alinhador invisível",
+        "o_que_significa": "produto de ticket alto e público adulto",
+        "anuncios": 4,
+        "pct": 6,
         "frase": "4 anúncios de aparelho falam disso"
       },
       {
@@ -1260,13 +1291,13 @@
         "rotulo": "Preço na frente",
         "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
         "anuncios": 3,
-        "pct": 7,
+        "pct": 5,
         "frase": "3 anúncios de aparelho falam disso"
       },
       {
-        "eixo": "publico_infantil",
-        "rotulo": "Falado para criança e adolescente",
-        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+        "eixo": "rapidez",
+        "rotulo": "Rapidez do resultado",
+        "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
         "anuncios": 1,
         "pct": 2,
         "frase": "1 anúncio de aparelho fala disso"
@@ -1275,14 +1306,6 @@
         "eixo": "sem_entrada",
         "rotulo": "Sem entrada",
         "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "alinhador",
-        "rotulo": "Alinhador invisível",
-        "o_que_significa": "produto de ticket alto e público adulto",
         "anuncios": 0,
         "pct": 0,
         "frase": "nenhum anúncio de aparelho fala disso"
@@ -1302,20 +1325,20 @@
         "anuncios": 0,
         "pct": 0,
         "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "rapidez",
-        "rotulo": "Rapidez do resultado",
-        "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
       }
     ],
     "por_anunciante": [
       {
         "anunciante": "Classdent",
         "eixos": [
+          "urgencia"
+        ]
+      },
+      {
+        "anunciante": "OrthoDontic",
+        "eixos": [
+          "avaliacao_gratis",
+          "autoridade",
           "urgencia"
         ]
       },
@@ -1335,13 +1358,6 @@
         ]
       },
       {
-        "anunciante": "OrthoDontic",
-        "eixos": [
-          "avaliacao_gratis",
-          "autoridade"
-        ]
-      },
-      {
         "anunciante": "Carretero Odontologia Especializada",
         "eixos": [
           "avaliacao_gratis",
@@ -1357,9 +1373,19 @@
         ]
       },
       {
-        "anunciante": "Clinica Dentista do Povo - Londrina",
+        "anunciante": "Dra Suéllen Priscilla - Odontopediatra e Ortodontia Infantil",
         "eixos": [
-          "avaliacao_gratis"
+          "publico_infantil",
+          "alinhador",
+          "estetico"
+        ]
+      },
+      {
+        "anunciante": "patriciareis_odontologia",
+        "eixos": [
+          "alinhador",
+          "estetico",
+          "autoridade"
         ]
       }
     ],
@@ -1369,19 +1395,19 @@
   "anuncios_da_cidade": {
     "e_da_cidade": true,
     "rotulo": "PR · Londrina",
-    "manchete": "10 anunciantes disputam aparelho em PR · Londrina, e a rede é 1 deles.",
-    "anuncios_ativos": 45,
-    "anunciantes_total": 10,
+    "manchete": "14 anunciantes disputam aparelho em PR · Londrina, e a rede é 1 deles.",
+    "anuncios_ativos": 53,
+    "anunciantes_total": 14,
     "somos_um_deles": true,
     "anunciantes": [
       {
         "nome": "OrthoDontic",
         "nosso": true,
-        "anuncios": 4,
+        "anuncios": 8,
         "paginas": [
           "1662131950746380"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 5,
         "plataformas": [
           "Meta"
         ],
@@ -1392,11 +1418,11 @@
       {
         "nome": "Classdent",
         "nosso": false,
-        "anuncios": 19,
+        "anuncios": 14,
         "paginas": [
           "110411028441226"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 5,
         "plataformas": [
           "Meta"
         ],
@@ -1411,12 +1437,57 @@
         "paginas": [
           "1784454398446282"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 5,
         "plataformas": [
           "Meta"
         ],
         "desde": "2026-08-08",
         "exemplo": "⚠ Se você está procurando um aparelho ortodôntico discreto e confortável está aqui a solução.\n\nEstá na hora de transformar seu sorriso, e nós estamos aqui para ajudá-lo a escolher o melhor aparelho dental. \n\nTemos 2 opções de aparelho para o seu tratamento:\n📌 Aparelho de cerâmica…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dra Suéllen Priscilla - Odontopediatra e Ortodontia Infantil",
+        "nosso": false,
+        "anuncios": 4,
+        "paginas": [
+          "702771183193552"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "É uma realidade, a ortodontia evoluiu e não precisamos estar presos a um único tratamento em Orto infantil ✨\n\nCada vez mais tenho buscado o que há de melhor nos tratamentos de ortodontia para os meus mini sorrisos, existem casos e casos, é preciso individualizar e os tratamentos …",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Hodos Odontologia Paraná",
+        "nosso": false,
+        "anuncios": 4,
+        "paginas": [
+          "914452605295557"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Especialize-se. Atualize-se. Evolua na Odontologia.\n\nAs próximas turmas da HPG Hodos Pós-Graduação em Londrina já estão no calendário.\n\nFormação em Harmonização Orofacial, Implantodontia, Ortodontia, Prótese Dentária e Dupla Especialização (Implantodontia + Prótese).\n\nMais prátic…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Clínica Radio.com",
+        "nosso": false,
+        "anuncios": 3,
+        "paginas": [
+          "1610626725919121"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Porque o escaneamento digital é mais rápido, preciso e confortável para o paciente.\n\nCom imagens em 3D, ele elimina retrabalhos, reduz erros e melhora a previsibilidade dos tratamentos, desde ortodontia até reabilitações.\n\nTecnologia que eleva o padrão do atendimento e facilita c…",
         "de_outra_unidade": null
       },
       {
@@ -1426,42 +1497,12 @@
         "paginas": [
           "106013402582235"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 5,
         "plataformas": [
           "Meta"
         ],
         "desde": "2026-08-08",
         "exemplo": "Conquiste o sorriso alinhado que você sempre quis sem pesar no bolso! 😁✨\nChega de adiar o seu tratamento ortodôntico. \nNós preparamos uma oportunidade única para você começar o seu tratamento com aparelho convencional agora mesmo:\nÉ a sua chance de cuidar da sua saúde bucal e da …",
-        "de_outra_unidade": null
-      },
-      {
-        "nome": "Sorria Sempre - Londrina-PR",
-        "nosso": false,
-        "anuncios": 3,
-        "paginas": [
-          "572021426005383"
-        ],
-        "dias_no_ar_maior": null,
-        "plataformas": [
-          "Meta"
-        ],
-        "desde": "2026-08-08",
-        "exemplo": "⚠️Procuram-se pessoas de Londrina e região que desejam renovar o sorriso!\n\n✔️Temos 4 vagas disponíveis somente!\nAproveite a chance de receber em nossa clínica:\n\n✅ Avaliação Gratuita\n✅ Instalação do aparelho \n✅ Documentação Grátis\n✅ Clareamento Grátis\n\nVocê pagará apenas uma Peque…",
-        "de_outra_unidade": null
-      },
-      {
-        "nome": "Carretero Odontologia Especializada",
-        "nosso": false,
-        "anuncios": 2,
-        "paginas": [
-          "102958382296743"
-        ],
-        "dias_no_ar_maior": null,
-        "plataformas": [
-          "Meta"
-        ],
-        "desde": "2026-08-08",
-        "exemplo": "Atenção LONDRINA E REGIÃO🛑\nChegou a hora de RENOVAR o seu sorriso! 😍\n\nAqui na Carretero odontologia trabalhamos com todos os tipos de Aparelhos.\n\n✅ Aparelho Convencional\n✅ Aparelho estético de porcelana\n✅ Aparelho autoligado\n✅ Alinhados invisíveis \nNão perca mais tempo! 🕓\n\nEmbora…",
         "de_outra_unidade": null
       },
       {
@@ -1475,18 +1516,63 @@
         "plataformas": [
           "Meta"
         ],
-        "desde": "2026-08-08",
+        "desde": "2026-08-13",
         "exemplo": "ATENÇÃO, LONDRINA E REGIÃO 🚨\n\nDeseja ter um SORRISO ALINHADO?\n\n💜 Além de transformar seu sorriso, o tratamento ortodôntico melhora a saúde bucal e a funcionalidade dos dentes!\n\n✔️ Correção da mordida\n✔️ Dentes alinhados e harmoniosos\n✔️ Sorriso mais bonito e saudável\n\nSeu novo so…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Sorria Sempre - Londrina-PR",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "572021426005383"
+        ],
+        "dias_no_ar_maior": 5,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-08",
+        "exemplo": "⚠️Procuram-se pessoas de Londrina e região que desejam renovar o sorriso!\n\n✔️Temos 4 vagas disponíveis somente!\nAproveite a chance de receber em nossa clínica:\n\n✅ Avaliação Gratuita\n✅ Instalação do aparelho \n✅ Documentação Grátis\n✅ Clareamento Grátis\n\nVocê pagará apenas uma Peque…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Carretero Odontologia Especializada",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "102958382296743"
+        ],
+        "dias_no_ar_maior": 5,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-08",
+        "exemplo": "Atenção LONDRINA E REGIÃO🛑\nChegou a hora de RENOVAR o seu sorriso! 😍\n\nAqui na Carretero odontologia trabalhamos com todos os tipos de Aparelhos.\n\n✅ Aparelho Convencional\n✅ Aparelho estético de porcelana\n✅ Aparelho autoligado\n✅ Alinhados invisíveis \nNão perca mais tempo! 🕓\n\nEmbora…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "IOA Londrina",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "111441085103823"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Você sonha com um sorriso alinhado, mas não quer o desconforto dos aparelhos tradicionais? 🦷✨\n\nConheça os alinhadores transparentes! Uma solução discreta, confortável e removível para transformar o seu sorriso sem atrapalhar a sua rotina.\n\nUsamos tecnologia de ponta para planejar…",
         "de_outra_unidade": null
       },
       {
         "nome": "OdontoItaly Londrina",
         "nosso": false,
-        "anuncios": 2,
+        "anuncios": 1,
         "paginas": [
           "109719341532637"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 5,
         "plataformas": [
           "Meta"
         ],
@@ -1495,37 +1581,37 @@
         "de_outra_unidade": null
       },
       {
-        "nome": "Clinica Dentista do Povo - Londrina",
+        "nome": "drguilhermechueiri",
         "nosso": false,
         "anuncios": 1,
         "paginas": [
-          "875939072496130"
+          "1214956245029362"
         ],
         "dias_no_ar_maior": null,
         "plataformas": [
           "Meta"
         ],
-        "desde": "2026-08-08",
-        "exemplo": "Você também esconde o sorriso por causa dos dentes tortos? 🦷\n\nNeste caso, o aparelho ortodôntico interno corrigiu o alinhamento sem aparecer, devolvendo função, saúde bucal e autoestima para o paciente. Cada dente foi movimentado de forma planejada, respeitando a mordida e o temp…",
+        "desde": "2026-08-13",
+        "exemplo": "Você já se consultou com um ortodontista?…\n \nMuitas vezes o seu sorriso está bonito porém a mordida não está correta! \n\nA mordida desencaixada e não funcional pode levar a problemas muito sérios como desgastes prematuros dos dentes e até a fratura desse dente! Isto aconteceu com …",
         "de_outra_unidade": null
       },
       {
-        "nome": "Prisma Odontologia e Estética Orofacial",
+        "nome": "patriciareis_odontologia",
         "nosso": false,
         "anuncios": 1,
         "paginas": [
-          "101754957140253"
+          "103330567806482"
         ],
         "dias_no_ar_maior": null,
         "plataformas": [
           "Meta"
         ],
-        "desde": "2026-08-08",
-        "exemplo": "Seu novo sorriso começa aqui. Corrija o alinhamento dos dentes com tratamento ortodôntico personalizado.",
+        "desde": "2026-08-13",
+        "exemplo": "O Invisalign®️ é discreto, confortável e moderno… mas existe algo que faz toda a diferença no resultado: a sua disciplina.\n\nPara funcionar corretamente, o alinhador precisa ser usado de 20 a 22 horas por dia.\nE sim, é necessário retirar para comer e manter uma boa higiene antes d…",
         "de_outra_unidade": null
       }
     ],
-    "fora_do_produto": 43,
+    "fora_do_produto": 51,
     "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
   },
   "eventos": [

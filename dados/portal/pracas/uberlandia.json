@@ -140,45 +140,53 @@
   "oferta": {
     "praca_id": "uberlandia",
     "rotulo": "MG · Uberlândia",
-    "anuncios_de_aparelho": 18,
-    "anunciantes": 11,
-    "fora_do_produto": 96,
+    "anuncios_de_aparelho": 29,
+    "anunciantes": 19,
+    "fora_do_produto": 129,
     "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
-    "sem_texto": 4,
+    "sem_texto": 5,
     "amostra_curta": false,
-    "tese": "A disputa desta cidade é por avaliação grátis — 8 dos 18 anúncios de aparelho medidos falam disso, seguido de alinhador invisível.",
+    "tese": "A disputa desta cidade é por avaliação grátis — 10 dos 29 anúncios de aparelho medidos falam disso, seguido de alinhador invisível.",
     "posicao_vaga": "Ninguém está falando de sem entrada — tira a barreira do primeiro pagamento — ataca quem não tem reserva.",
     "eixos": [
       {
         "eixo": "avaliacao_gratis",
         "rotulo": "Avaliação grátis",
         "o_que_significa": "compra a visita, não a venda — é isca de agenda",
-        "anuncios": 8,
-        "pct": 44,
-        "frase": "8 anúncios de aparelho falam disso"
+        "anuncios": 10,
+        "pct": 34,
+        "frase": "10 anúncios de aparelho falam disso"
       },
       {
         "eixo": "alinhador",
         "rotulo": "Alinhador invisível",
         "o_que_significa": "produto de ticket alto e público adulto",
-        "anuncios": 5,
-        "pct": 28,
-        "frase": "5 anúncios de aparelho falam disso"
+        "anuncios": 6,
+        "pct": 21,
+        "frase": "6 anúncios de aparelho falam disso"
       },
       {
         "eixo": "parcelamento",
         "rotulo": "Parcelamento",
         "o_que_significa": "vende a mensalidade, não o tratamento",
         "anuncios": 4,
-        "pct": 22,
+        "pct": 14,
         "frase": "4 anúncios de aparelho falam disso"
       },
       {
         "eixo": "urgencia",
         "rotulo": "Urgência e escassez",
         "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+        "anuncios": 3,
+        "pct": 10,
+        "frase": "3 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "autoridade",
+        "rotulo": "Autoridade técnica",
+        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
         "anuncios": 2,
-        "pct": 11,
+        "pct": 7,
         "frase": "2 anúncios de aparelho falam disso"
       },
       {
@@ -186,15 +194,7 @@
         "rotulo": "Preço na frente",
         "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
         "anuncios": 1,
-        "pct": 6,
-        "frase": "1 anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "autoridade",
-        "rotulo": "Autoridade técnica",
-        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
-        "anuncios": 1,
-        "pct": 6,
+        "pct": 3,
         "frase": "1 anúncio de aparelho fala disso"
       },
       {
@@ -202,7 +202,7 @@
         "rotulo": "Rapidez do resultado",
         "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
         "anuncios": 1,
-        "pct": 6,
+        "pct": 3,
         "frase": "1 anúncio de aparelho fala disso"
       },
       {
@@ -262,10 +262,29 @@
         ]
       },
       {
+        "anunciante": "Clínica Invitta Odontologia ",
+        "eixos": [
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "Dentista Thayane Simões",
+        "eixos": [
+          "alinhador",
+          "autoridade"
+        ]
+      },
+      {
         "anunciante": "Instituto IQO",
         "eixos": [
           "autoridade",
           "rapidez"
+        ]
+      },
+      {
+        "anunciante": "OdontoCompany Uberlândia - Osvaldo Rezende/MG",
+        "eixos": [
+          "urgencia"
         ]
       },
       {
@@ -280,25 +299,6 @@
         "eixos": [
           "preco",
           "avaliacao_gratis"
-        ]
-      },
-      {
-        "anunciante": "Sorria Roosevelt - Uberlândia",
-        "eixos": [
-          "avaliacao_gratis",
-          "urgencia"
-        ]
-      },
-      {
-        "anunciante": "Clínica Invitta Odontologia ",
-        "eixos": [
-          "avaliacao_gratis"
-        ]
-      },
-      {
-        "anunciante": "OdontoCompany Uberlândia - Osvaldo Rezende/MG",
-        "eixos": [
-          "urgencia"
         ]
       }
     ]
@@ -1212,14 +1212,14 @@
           "natureza": "fato",
           "confianca": "media",
           "medido": true,
-          "amostra": 118,
+          "amostra": 253,
           "janela_dias": null,
           "medicoes": 1,
           "fonte": "dados/serie/anuncios_observados.jsonl",
           "a_favor": [],
           "contra": [],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 118 anúncios no ar, 1 medição"
+          "procedencia": "medido em 253 anúncios no ar, 1 medição"
         }
       }
     ],

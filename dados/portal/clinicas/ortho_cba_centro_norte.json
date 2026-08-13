@@ -722,33 +722,42 @@
   "movimentos": {
     "eventos": [
       {
-        "evento_id": "cuiaba|linha_de_base_anuncios|-",
+        "evento_id": "cuiaba|rodadas_nao_comparaveis|-",
         "data": "2026-08-13",
         "praca_id": "cuiaba",
         "rotulo": "MT · Cuiabá",
         "local_id": null,
         "entidade_id": null,
-        "tipo": "linha_de_base_anuncios",
+        "tipo": "rodadas_nao_comparaveis",
         "natureza": "fato",
         "severidade": "baixa",
-        "titulo": "Linha de base de anúncios criada",
-        "fato": "primeira medição de anúncios desta praça, em 2026-08-08",
-        "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-        "decisao": "recoletar na próxima rodada para abrir o delta",
+        "titulo": "Não dá para comparar estas duas rodadas de anúncio",
+        "fato": "a medição de 2026-08-08 não registrou quais consultas foram feitas",
+        "por_que_importa": "sem saber o que foi perguntado, entrada e saída de anunciante são diferença de pergunta, não de mercado",
+        "decisao": "a partir de agora toda rodada grava a lista de consultas",
         "fonte": "dados/serie/anuncios_observados.jsonl",
-        "evidencia": {},
+        "evidencia": {
+          "consultas_antes": [],
+          "consultas_agora": [
+            "aparelho ortodôntico Cuiabá",
+            "dentista Cuiabá",
+            "ortodontia Cuiabá"
+          ]
+        },
         "confianca": {
           "natureza": "fato",
-          "confianca": "media",
+          "confianca": "alta",
           "medido": true,
-          "amostra": 48,
+          "amostra": 79,
           "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/serie/anuncios_observados.jsonl",
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-08 → 2026-08-13)",
           "a_favor": [],
-          "contra": [],
+          "contra": [
+            "uma das rodadas não registrou as consultas"
+          ],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 48 anúncios no ar, 1 medição"
+          "procedencia": "medido em 79 anúncios no ar, 2 medições"
         }
       }
     ],
@@ -834,21 +843,77 @@
   "oferta_da_cidade": {
     "praca_id": "cuiaba",
     "rotulo": "MT · Cuiabá",
-    "anuncios_de_aparelho": 1,
-    "anunciantes": 1,
-    "fora_do_produto": 0,
+    "anuncios_de_aparelho": 32,
+    "anunciantes": 18,
+    "fora_do_produto": 82,
     "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
     "sem_texto": 0,
-    "amostra_curta": true,
-    "tese": "Ainda não dá para descrever a disputa desta cidade: só 1 anúncio de aparelho com texto medido.",
-    "posicao_vaga": null,
+    "amostra_curta": false,
+    "tese": "A disputa desta cidade é por avaliação grátis — 9 dos 32 anúncios de aparelho medidos falam disso, seguido de autoridade técnica.",
+    "posicao_vaga": "Ninguém está falando de preço na frente — a cidade disputa por número; entrar aqui é entrar na briga mais cara.",
     "eixos": [
+      {
+        "eixo": "avaliacao_gratis",
+        "rotulo": "Avaliação grátis",
+        "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+        "anuncios": 9,
+        "pct": 28,
+        "frase": "9 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "autoridade",
+        "rotulo": "Autoridade técnica",
+        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+        "anuncios": 8,
+        "pct": 25,
+        "frase": "8 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "alinhador",
+        "rotulo": "Alinhador invisível",
+        "o_que_significa": "produto de ticket alto e público adulto",
+        "anuncios": 3,
+        "pct": 9,
+        "frase": "3 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "estetico",
+        "rotulo": "Aparelho estético",
+        "o_que_significa": "vende discrição — público que trabalha de frente",
+        "anuncios": 3,
+        "pct": 9,
+        "frase": "3 anúncios de aparelho falam disso"
+      },
       {
         "eixo": "urgencia",
         "rotulo": "Urgência e escassez",
         "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+        "anuncios": 3,
+        "pct": 9,
+        "frase": "3 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "rapidez",
+        "rotulo": "Rapidez do resultado",
+        "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+        "anuncios": 3,
+        "pct": 9,
+        "frase": "3 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "publico_infantil",
+        "rotulo": "Falado para criança e adolescente",
+        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
         "anuncios": 1,
-        "pct": 100,
+        "pct": 3,
+        "frase": "1 anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "prova_social",
+        "rotulo": "Prova social",
+        "o_que_significa": "vende confiança em vez de preço",
+        "anuncios": 1,
+        "pct": 3,
         "frase": "1 anúncio de aparelho fala disso"
       },
       {
@@ -876,65 +941,9 @@
         "frase": "nenhum anúncio de aparelho fala disso"
       },
       {
-        "eixo": "avaliacao_gratis",
-        "rotulo": "Avaliação grátis",
-        "o_que_significa": "compra a visita, não a venda — é isca de agenda",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "alinhador",
-        "rotulo": "Alinhador invisível",
-        "o_que_significa": "produto de ticket alto e público adulto",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "estetico",
-        "rotulo": "Aparelho estético",
-        "o_que_significa": "vende discrição — público que trabalha de frente",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
         "eixo": "publico_adulto",
         "rotulo": "Falado para adulto",
         "o_que_significa": "disputa o adulto que adiou o tratamento",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "publico_infantil",
-        "rotulo": "Falado para criança e adolescente",
-        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "prova_social",
-        "rotulo": "Prova social",
-        "o_que_significa": "vende confiança em vez de preço",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "autoridade",
-        "rotulo": "Autoridade técnica",
-        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "rapidez",
-        "rotulo": "Rapidez do resultado",
-        "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
         "anuncios": 0,
         "pct": 0,
         "frase": "nenhum anúncio de aparelho fala disso"
@@ -942,8 +951,58 @@
     ],
     "por_anunciante": [
       {
-        "anunciante": "Závia Odontologia inteligente - Várzea Grande São Matheus",
+        "anunciante": "Oral Sin Cuiabá - Jardim Imperial",
         "eixos": [
+          "avaliacao_gratis",
+          "autoridade",
+          "estetico"
+        ]
+      },
+      {
+        "anunciante": "Betoni Odontologia Cuiabá",
+        "eixos": [
+          "alinhador",
+          "estetico",
+          "rapidez"
+        ]
+      },
+      {
+        "anunciante": "Sorrix Cuiabá",
+        "eixos": [
+          "avaliacao_gratis",
+          "alinhador",
+          "estetico"
+        ]
+      },
+      {
+        "anunciante": "Gou Odonto Ilha Solteira2",
+        "eixos": [
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "Odonto Cuiabá",
+        "eixos": [
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "OdontoCompany Jardim Imperial - Cuiabá/MT ",
+        "eixos": [
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "OrtoDoctor - Cuiabá ",
+        "eixos": [
+          "avaliacao_gratis",
+          "rapidez"
+        ]
+      },
+      {
+        "anunciante": "Zavia Odontologia Inteligente - CPA3",
+        "eixos": [
+          "avaliacao_gratis",
           "urgencia"
         ]
       }
@@ -954,143 +1013,268 @@
   "anuncios_da_cidade": {
     "e_da_cidade": true,
     "rotulo": "MT · Cuiabá",
-    "manchete": "10 anunciantes disputam aparelho em MT · Cuiabá, e a rede é 1 deles.",
-    "anuncios_ativos": 15,
-    "anunciantes_total": 10,
-    "somos_um_deles": true,
+    "manchete": "17 anunciantes compram aparelho em MT · Cuiabá, e nenhum é da rede.",
+    "anuncios_ativos": 31,
+    "anunciantes_total": 17,
+    "somos_um_deles": false,
     "anunciantes": [
       {
-        "nome": "OrthoDontic",
-        "nosso": true,
-        "anuncios": 1,
-        "paginas": [],
+        "nome": "Zavia Odontologia Inteligente - CPA3",
+        "nosso": false,
+        "anuncios": 4,
+        "paginas": [
+          "1133916693132744"
+        ],
         "dias_no_ar_maior": null,
         "plataformas": [
           "Meta"
         ],
-        "desde": "2026-08-08",
-        "exemplo": "🚨 PROCURAM-SE NOVOS PACIENTES\n\nEstamos selecionando pessoas que desejam transformar o sorriso e começar o tratamento ortodôntico.\n\n🦷 Avaliação com especialista\n📸 Documentação para iniciar o tratamento\n⭐ Condições especiais para novos pacientes\n\n⚠️ As vagas são limitadas e a seleç…",
+        "desde": "2026-08-13",
+        "exemplo": "O sorriso que você sempre quis está mais perto do que imagina.\n\nNa Závia Odontologia Inteligente, em Cuiabá, você instala o aparelho ortodôntico pagando somente o valor da manutenção — e ainda conta com tecnologia moderna e atendimento que olha pra cada detalhe do seu caso.\n\nVaga…",
         "de_outra_unidade": null
       },
       {
-        "nome": "LG Odonto",
+        "nome": "Betoni Odontologia Cuiabá",
+        "nosso": false,
+        "anuncios": 3,
+        "paginas": [
+          "112535765276613"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "🦷 DENTES TORTOS NUNCA MAIS! CORRIJA SEU SORRISO SEM USAR AQUELES FERRINHOS INCOMODOS.\n\nO vídeo acima mostra exatamente como é possível ter o sorriso perfeito usando o alinhador invisível. É a mais alta tecnologia trabalhando a favor da sua estética, conforto e bem-estar.\n\nDiga ad…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "FAIPE",
+        "nosso": false,
+        "anuncios": 3,
+        "paginas": [
+          "125147417626035"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Transforme sua carreira com a Especialização em Ortodontia em Cuiabá - MT.\n\nMinistrado pelo renomado Professor Dr. Marcus Crepaldi, esta especialização oferece uma formação de excelência com técnicas avançadas e práticas inovadoras que vão elevar sua atuação na odontologia ao pró…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Gou Odonto Ilha Solteira2",
+        "nosso": false,
+        "anuncios": 3,
+        "paginas": [
+          "2101588229931086"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "\"🚨 TEM VONTADE DE TER UM SORRISO ALINHADO E HARMÔNICO, MAS OS DENTES TORTOS TE INCOMODAM? 😬✨\nEstá na hora de conhecer o tratamento ortodôntico e como ele pode transformar não só o seu sorriso, mas também sua autoestima e qualidade de vida. ⬇️\n\n ✅ Corrigir dentes tortos e desalinh…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Eximiaodonto",
         "nosso": false,
         "anuncios": 2,
-        "paginas": [],
+        "paginas": [
+          "488251977712318"
+        ],
         "dias_no_ar_maior": null,
         "plataformas": [
           "Meta"
         ],
-        "desde": "2026-08-08",
-        "exemplo": "Perguntamos para o pessoal em Várzea Grande qual a melhor clínica para colocar aparelho ortodôntico, e a resposta é uma só! 🦷✨\n\nSe você quer conquistar um sorriso alinhado com quem é referência e conquistou a confiança da nossa região, a hora é agora.\n\nAproveite condições especia…",
+        "desde": "2026-08-13",
+        "exemplo": "O papo de hoje é com quem já transformou o sorriso com as facetas de resina! \n\n✅ Você sabia que o acompanhamento odontológico é essencial para manter seu sorriso perfeito por muito mais tempo.\n\nNeste vídeo, vamos te mostrar por que essas consultas fazem toda a diferença e como pe…",
         "de_outra_unidade": null
       },
       {
-        "nome": "Odonto Excellence Primavera do Leste",
+        "nome": "Odonto Cuiabá",
         "nosso": false,
         "anuncios": 2,
-        "paginas": [],
+        "paginas": [
+          "758479134012791"
+        ],
         "dias_no_ar_maior": null,
         "plataformas": [
           "Meta"
         ],
-        "desde": "2026-08-08",
-        "exemplo": "Muito além da estética: a importância de restaurar um dente quebrado. 🦷\n\nUm dente lascado ou quebrado não prejudica apenas a aparência. Ele pode:\n\n➡Causar sensibilidade e dor;\n➡Acumular mais placa bacteriana;\n➡Dificultar a mastigação correta.\n\nA boa notícia é que a restauração de…",
+        "desde": "2026-08-13",
+        "exemplo": "Na Odonto Cuiabá, oferecemos uma gama completa de tratamentos, desde implantes dentários e lentes de contato até ortodontia e canal, tudo com tecnologia de ponta e um planejamento financeiro que se adapta a você.\n\nFale conosco e saiba mais.\n\nResponsável Técnico: Dr. Fabrício Roch…",
         "de_outra_unidade": null
       },
       {
-        "nome": "REDEORTO Aparecida de Goiânia",
+        "nome": "OdontoCenter Cuiabá",
         "nosso": false,
         "anuncios": 2,
-        "paginas": [],
+        "paginas": [
+          "182103984976439"
+        ],
         "dias_no_ar_maior": null,
         "plataformas": [
           "Meta"
         ],
-        "desde": "2026-08-08",
-        "exemplo": "😁 ALINHE SEU SORRISO DE FORMA RÁPIDA E SEGURA! 😁\n\n📢 ATENÇÃO, GOIÂNIA! 📢\n\nSe você deseja corrigir o alinhamento dos dentes e conquistar um sorriso perfeito, esse recado é para você! 🦷✨\n\nNa Redeorto, oferecemos as melhores opções de aparelhos ortodônticos para cada necessidade:\n\n✅ …",
+        "desde": "2026-08-13",
+        "exemplo": "A OdontoCenter Cuiabá chegou com condições especiais de inauguração.\n\n🦷 Implantes\n🦷 Próteses\n🦷 Ortodontia\n🦷 Estética dental\n\n📅 Aproveite nossas condições especiais de inauguração.",
         "de_outra_unidade": null
       },
       {
-        "nome": "REDEORTO Várzea Grande",
+        "nome": "OdontoCompany Jardim Imperial - Cuiabá/MT ",
         "nosso": false,
         "anuncios": 2,
-        "paginas": [],
+        "paginas": [
+          "233469516525164"
+        ],
         "dias_no_ar_maior": null,
         "plataformas": [
           "Meta"
         ],
-        "desde": "2026-08-08",
-        "exemplo": "O sorriso que você quer. A discrição que sua rotina exige.\n\nO Invisalign revolucionou a ortodontia para quem busca alinhamento dental sem comprometer estética, conforto ou liberdade.\n\nNa RedeOrto , seu tratamento é planejado com tecnologia de ponta e acompanhamento especializado.…",
+        "desde": "2026-08-13",
+        "exemplo": "😁✨ Chegou a hora de alinhar seu sorriso! ✨😁\n\nCom o aparelho ortodôntico da OdontoCompany Jardim Imperial, você conquista dentes mais alinhados, melhora a mordida e ganha muito mais confiança para sorrir todos os dias. 🦷💙\n\nUm sorriso alinhado não é apenas questão de estética, mas …",
         "de_outra_unidade": null
       },
       {
-        "nome": "Závia Odontologia inteligente - Várzea Grande São Matheus",
+        "nome": "Oral Sin Cuiabá - Jardim Imperial",
         "nosso": false,
         "anuncios": 2,
-        "paginas": [],
+        "paginas": [
+          "599649779891275"
+        ],
         "dias_no_ar_maior": null,
         "plataformas": [
           "Meta"
         ],
-        "desde": "2026-08-08",
-        "exemplo": "Seu sorriso merece alinhamento, conforto e confiança todos os dias.\n\nNa Závia Odontologia Inteligente São Matheus, realizamos tratamentos ortodônticos personalizados com tecnologia moderna e acompanhamento especializado para transformar seu sorriso com segurança e excelência.\n\n✔ …",
+        "desde": "2026-08-13",
+        "exemplo": "🦷 Chegou a hora de deixar a dentadura no passado.\nCom a prótese protocolo, você conquista mais segurança para sorrir, falar e mastigar com conforto no dia a dia. 💚\n.\nSeu novo sorriso pode começar com a avaliação certa.\n.\n💎 Implantes • Facetas • Próteses • Ortodontia\n💚 Odontologia…",
         "de_outra_unidade": null
       },
       {
-        "nome": "REDEORTO Campo Grande",
+        "nome": "Alurien Odontologia",
         "nosso": false,
         "anuncios": 1,
-        "paginas": [],
+        "paginas": [
+          "109577101555949"
+        ],
         "dias_no_ar_maior": null,
         "plataformas": [
           "Meta"
         ],
-        "desde": "2026-08-08",
-        "exemplo": "✨ Alinhadores Invisíveis Redeorto 🦷\nCom condições especiais e descontos exclusivos para transformar o seu sorriso.\n\nSe você:\n⚠️ Evita sorrir por conta dos dentes tortos ou desalinhados\n⚠️ Tem vergonha da aparência do seu sorriso no dia a dia\n⚠️ Adia o tratamento por achar que ali…",
+        "desde": "2026-08-13",
+        "exemplo": "💎 Alinhe seus dentes com total discrição e o máximo de conforto!\n\n✨ Esqueça o incômodo dos aparelhos metálicos. Com os alinhadores invisíveis, você transforma o seu sorriso de forma rápida, tecnológica e praticamente imperceptível.\n\n📋 Por que escolher os alinhadores invisíveis?\n✔…",
         "de_outra_unidade": null
       },
       {
-        "nome": "REDEORTO Senador Canedo",
+        "nome": "Clínica Encanto Dental",
         "nosso": false,
         "anuncios": 1,
-        "paginas": [],
+        "paginas": [
+          "598567486681661"
+        ],
         "dias_no_ar_maior": null,
         "plataformas": [
           "Meta"
         ],
-        "desde": "2026-08-08",
-        "exemplo": "📢 ATENÇÃO, SENADOR CANEDO!\n\nA Redeorto está com uma oportunidade exclusiva para quem deseja iniciar o tratamento ortodôntico com mais facilidade.\n\nEstamos selecionando 5 pessoas para realizar aparelho + documentação no mesmo dia, com atendimento na unidade de Senador Canedo.\n\nSe …",
+        "desde": "2026-08-13",
+        "exemplo": "🟥⬛ ÚLTIMAS 7 VAGAS CUIABÁ⬛🟥 \nÚltimas vagas para quem quer o Aparelho Dental com documentação e limpeza gratuito!!!\n\nINCLUSO *\n✅ Documentação completa \n✅ Instalação do aparelho \n✅ Limpeza Profilaxia\n\nPague somente a entrada!!\nAproveite pois será a última oportunidade!!!",
         "de_outra_unidade": null
       },
       {
-        "nome": "REDEORTO Tijucas",
+        "nome": "Dr. Bruno Junqueira",
         "nosso": false,
         "anuncios": 1,
-        "paginas": [],
+        "paginas": [
+          "101790612054743"
+        ],
         "dias_no_ar_maior": null,
         "plataformas": [
           "Meta"
         ],
-        "desde": "2026-08-08",
-        "exemplo": "Aparelho Invisível: Seu Sorriso Alinhado em Poucos Meses, Livre de Metais e Borrachinhas Coloridas\n\nCom o uso de alinhadores, o tratamento costuma ser mais rápido porque eles são programados para a troca a cada 15 dias (dependendo de cada caso), sendo regidos por softwares que mo…",
+        "desde": "2026-08-13",
+        "exemplo": "Seu sorriso merece cuidado, planejamento e naturalidade. 😁✨\n\nO Dr. Bruno Junqueira oferece atendimento odontológico personalizado em Ortodontia, Lentes Naturais e Implantodontia, buscando sempre resultados harmoniosos e adequados para cada paciente.\n\n📍 Atendimento em Cuiabá – MT\n…",
         "de_outra_unidade": null
       },
       {
-        "nome": "Redeorto São Caetano do Sul",
+        "nome": "Dr. Marcos Pedroso Odontologia",
         "nosso": false,
         "anuncios": 1,
-        "paginas": [],
+        "paginas": [
+          "263695037399458"
+        ],
         "dias_no_ar_maior": null,
         "plataformas": [
           "Meta"
         ],
-        "desde": "2026-08-08",
-        "exemplo": "Aparelhos ortodônticos estéticos na Redeorto São Caetano do Sul",
+        "desde": "2026-08-13",
+        "exemplo": "🦷 **Você ainda acha que aparelho ortodôntico e tratamento odontológico precisam pesar no seu bolso?**\n\nConheça o **Pacote Sorriso Garantido** e descubra uma forma inteligente de cuidar do seu sorriso.\n\n✨ No pacote você conta com:\n✅ 2 limpezas preventivas anuais\n✅ Documentação ort…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dra Kelly Cristina Dalla Vecchia",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "105323605387471"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Você é de Cuiabá e sente que seus dentes amarelados ainda incomodam, mesmo depois do aparelho? \nUm sorriso mais branco pode transformar sua autoestima. \n\nClique em \"Enviar Mensagem\" e fale comigo no WhatsApp.",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "OrtoDoctor - Cuiabá ",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "890341334164163"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Daqui a alguns meses, você vai se agradecer ou se arrepender? ⏳\n\nA maioria das pessoas adia o sonho de ter um sorriso alinhado esperando o \"momento perfeito\". A verdade é que esse momento passa rápido.\n\nNesta semana, liberamos o Feirão de Aparelhos com condições de pagamento que …",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Sorrix Cuiabá",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "309802422208715"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "👉 Você já conhece os benefícios dos alinhadores invisíveis? 🤩 \nConfira três deles:\n\n✅ MAIS RÁPIDO: Em alguns casos, os alinhadores invisíveis podem ser até 50% mais rápidos do que os aparelhos convencionais.\n\n✅ MAIS DISCRETO: As placas são transparentes e quase imperceptíveis, as…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Unica Odontologia Cascavel-PR",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "1763486600559629"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "🚨Esse é o Aparelho Autoligado, também conhecido como Aparelho Autoligável 🤩\n✅ O Aparelho Autoligado permite mudanças no arco dentário mais rápidas e simples, pois seu mecanismo que não utiliza as “borracinhas coloridas” diminui o atrito, movimentando os dentes mais rapidamente e …",
         "de_outra_unidade": null
       }
     ],
-    "fora_do_produto": 33,
+    "fora_do_produto": 82,
     "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
   },
   "eventos": [

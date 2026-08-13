@@ -676,33 +676,213 @@
   "movimentos": {
     "eventos": [
       {
-        "evento_id": "sorocaba|linha_de_base_anuncios|-",
+        "evento_id": "sorocaba|anunciante_novo|Athek",
         "data": "2026-08-13",
         "praca_id": "sorocaba",
         "rotulo": "SP · Sorocaba",
         "local_id": null,
-        "entidade_id": null,
-        "tipo": "linha_de_base_anuncios",
+        "entidade_id": "Athek",
+        "tipo": "anunciante_novo",
         "natureza": "fato",
-        "severidade": "baixa",
-        "titulo": "Linha de base de anúncios criada",
-        "fato": "primeira medição de anúncios desta praça, em 2026-08-12",
-        "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-        "decisao": "recoletar na próxima rodada para abrir o delta",
+        "severidade": "media",
+        "titulo": "Anunciante novo: Athek",
+        "fato": "1 anúncio no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+        "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+        "decisao": "ler a oferta dele antes de responder",
         "fonte": "dados/serie/anuncios_observados.jsonl",
-        "evidencia": {},
+        "evidencia": {
+          "anunciante": "Athek",
+          "anuncios": 1
+        },
         "confianca": {
           "natureza": "fato",
-          "confianca": "media",
+          "confianca": "alta",
           "medido": true,
-          "amostra": 135,
+          "amostra": 136,
           "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/serie/anuncios_observados.jsonl",
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
           "a_favor": [],
-          "contra": [],
+          "contra": [
+            "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+          ],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 135 anúncios no ar, 1 medição"
+          "procedencia": "medido em 136 anúncios medidos, 2 medições"
+        }
+      },
+      {
+        "evento_id": "sorocaba|anunciante_novo|Clínica Oroface",
+        "data": "2026-08-13",
+        "praca_id": "sorocaba",
+        "rotulo": "SP · Sorocaba",
+        "local_id": null,
+        "entidade_id": "Clínica Oroface",
+        "tipo": "anunciante_novo",
+        "natureza": "fato",
+        "severidade": "media",
+        "titulo": "Anunciante novo: Clínica Oroface",
+        "fato": "3 anúncios no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+        "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+        "decisao": "ler a oferta dele antes de responder",
+        "fonte": "dados/serie/anuncios_observados.jsonl",
+        "evidencia": {
+          "anunciante": "Clínica Oroface",
+          "anuncios": 3
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "alta",
+          "medido": true,
+          "amostra": 136,
+          "janela_dias": null,
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
+          "a_favor": [],
+          "contra": [
+            "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+          ],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 136 anúncios medidos, 2 medições"
+        }
+      },
+      {
+        "evento_id": "sorocaba|anunciante_novo|Dr. Cadu Crevelario • Sorocaba - SP",
+        "data": "2026-08-13",
+        "praca_id": "sorocaba",
+        "rotulo": "SP · Sorocaba",
+        "local_id": null,
+        "entidade_id": "Dr. Cadu Crevelario • Sorocaba - SP",
+        "tipo": "anunciante_novo",
+        "natureza": "fato",
+        "severidade": "media",
+        "titulo": "Anunciante novo: Dr. Cadu Crevelario • Sorocaba - SP",
+        "fato": "1 anúncio no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+        "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+        "decisao": "ler a oferta dele antes de responder",
+        "fonte": "dados/serie/anuncios_observados.jsonl",
+        "evidencia": {
+          "anunciante": "Dr. Cadu Crevelario • Sorocaba - SP",
+          "anuncios": 1
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "alta",
+          "medido": true,
+          "amostra": 136,
+          "janela_dias": null,
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
+          "a_favor": [],
+          "contra": [
+            "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+          ],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 136 anúncios medidos, 2 medições"
+        }
+      },
+      {
+        "evento_id": "sorocaba|anunciante_novo|Dr. Wellington Heleno",
+        "data": "2026-08-13",
+        "praca_id": "sorocaba",
+        "rotulo": "SP · Sorocaba",
+        "local_id": null,
+        "entidade_id": "Dr. Wellington Heleno",
+        "tipo": "anunciante_novo",
+        "natureza": "fato",
+        "severidade": "media",
+        "titulo": "Anunciante novo: Dr. Wellington Heleno",
+        "fato": "1 anúncio no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+        "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+        "decisao": "ler a oferta dele antes de responder",
+        "fonte": "dados/serie/anuncios_observados.jsonl",
+        "evidencia": {
+          "anunciante": "Dr. Wellington Heleno",
+          "anuncios": 1
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "alta",
+          "medido": true,
+          "amostra": 136,
+          "janela_dias": null,
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
+          "a_favor": [],
+          "contra": [
+            "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+          ],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 136 anúncios medidos, 2 medições"
+        }
+      },
+      {
+        "evento_id": "sorocaba|anunciante_novo|Dra Tainara Odontologia",
+        "data": "2026-08-13",
+        "praca_id": "sorocaba",
+        "rotulo": "SP · Sorocaba",
+        "local_id": null,
+        "entidade_id": "Dra Tainara Odontologia",
+        "tipo": "anunciante_novo",
+        "natureza": "fato",
+        "severidade": "media",
+        "titulo": "Anunciante novo: Dra Tainara Odontologia",
+        "fato": "1 anúncio no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+        "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+        "decisao": "ler a oferta dele antes de responder",
+        "fonte": "dados/serie/anuncios_observados.jsonl",
+        "evidencia": {
+          "anunciante": "Dra Tainara Odontologia",
+          "anuncios": 1
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "alta",
+          "medido": true,
+          "amostra": 136,
+          "janela_dias": null,
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
+          "a_favor": [],
+          "contra": [
+            "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+          ],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 136 anúncios medidos, 2 medições"
+        }
+      },
+      {
+        "evento_id": "sorocaba|anunciante_novo|Massari Odonto",
+        "data": "2026-08-13",
+        "praca_id": "sorocaba",
+        "rotulo": "SP · Sorocaba",
+        "local_id": null,
+        "entidade_id": "Massari Odonto",
+        "tipo": "anunciante_novo",
+        "natureza": "fato",
+        "severidade": "media",
+        "titulo": "Anunciante novo: Massari Odonto",
+        "fato": "2 anúncios no ar em 2026-08-13, e nenhum na medição de 2026-08-12",
+        "por_que_importa": "entrou no leilão da cidade — muda a pressão de mídia",
+        "decisao": "ler a oferta dele antes de responder",
+        "fonte": "dados/serie/anuncios_observados.jsonl",
+        "evidencia": {
+          "anunciante": "Massari Odonto",
+          "anuncios": 2
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "alta",
+          "medido": true,
+          "amostra": 136,
+          "janela_dias": null,
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
+          "a_favor": [],
+          "contra": [
+            "a Biblioteca não publica verba: quantidade de anúncio não é investimento"
+          ],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 136 anúncios medidos, 2 medições"
         }
       }
     ],
@@ -710,7 +890,7 @@
     "resumo": {
       "praca_id": "sorocaba",
       "rotulo": "SP · Sorocaba",
-      "eventos": 1,
+      "eventos": 6,
       "estado": "medido",
       "janela": "2026-08-12 → 2026-08-13",
       "medicoes_da_praca": 2,
@@ -798,30 +978,30 @@
   "oferta_da_cidade": {
     "praca_id": "sorocaba",
     "rotulo": "SP · Sorocaba",
-    "anuncios_de_aparelho": 67,
-    "anunciantes": 19,
-    "fora_do_produto": 67,
+    "anuncios_de_aparelho": 70,
+    "anunciantes": 21,
+    "fora_do_produto": 73,
     "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
     "sem_texto": 1,
     "amostra_curta": false,
-    "tese": "A disputa desta cidade é por alinhador invisível — 21 dos 67 anúncios de aparelho medidos falam disso, seguido de avaliação grátis.",
+    "tese": "A disputa desta cidade é por alinhador invisível — 24 dos 70 anúncios de aparelho medidos falam disso, seguido de avaliação grátis.",
     "posicao_vaga": "Ninguém está falando de sem entrada — tira a barreira do primeiro pagamento — ataca quem não tem reserva.",
     "eixos": [
       {
         "eixo": "alinhador",
         "rotulo": "Alinhador invisível",
         "o_que_significa": "produto de ticket alto e público adulto",
-        "anuncios": 21,
-        "pct": 31,
-        "frase": "21 anúncios de aparelho falam disso"
+        "anuncios": 24,
+        "pct": 34,
+        "frase": "24 anúncios de aparelho falam disso"
       },
       {
         "eixo": "avaliacao_gratis",
         "rotulo": "Avaliação grátis",
         "o_que_significa": "compra a visita, não a venda — é isca de agenda",
-        "anuncios": 16,
-        "pct": 24,
-        "frase": "16 anúncios de aparelho falam disso"
+        "anuncios": 18,
+        "pct": 26,
+        "frase": "18 anúncios de aparelho falam disso"
       },
       {
         "eixo": "urgencia",
@@ -835,6 +1015,14 @@
         "eixo": "autoridade",
         "rotulo": "Autoridade técnica",
         "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+        "anuncios": 8,
+        "pct": 11,
+        "frase": "8 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "estetico",
+        "rotulo": "Aparelho estético",
+        "o_que_significa": "vende discrição — público que trabalha de frente",
         "anuncios": 7,
         "pct": 10,
         "frase": "7 anúncios de aparelho falam disso"
@@ -843,14 +1031,6 @@
         "eixo": "preco",
         "rotulo": "Preço na frente",
         "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
-        "anuncios": 5,
-        "pct": 7,
-        "frase": "5 anúncios de aparelho falam disso"
-      },
-      {
-        "eixo": "estetico",
-        "rotulo": "Aparelho estético",
-        "o_que_significa": "vende discrição — público que trabalha de frente",
         "anuncios": 5,
         "pct": 7,
         "frase": "5 anúncios de aparelho falam disso"
@@ -952,17 +1132,19 @@
         ]
       },
       {
+        "anunciante": "Clínica Oroface",
+        "eixos": [
+          "avaliacao_gratis",
+          "alinhador",
+          "estetico"
+        ]
+      },
+      {
         "anunciante": "ABO Sorocaba Acadêmico",
         "eixos": [
           "estetico",
           "publico_infantil",
           "autoridade"
-        ]
-      },
-      {
-        "anunciante": "OdontoCompany Sorocaba - Parque São Bento ",
-        "eixos": [
-          "urgencia"
         ]
       }
     ],
@@ -972,9 +1154,9 @@
   "anuncios_da_cidade": {
     "e_da_cidade": true,
     "rotulo": "SP · Sorocaba",
-    "manchete": "20 anunciantes compram aparelho em SP · Sorocaba, e nenhum é da rede.",
-    "anuncios_ativos": 68,
-    "anunciantes_total": 20,
+    "manchete": "21 anunciantes compram aparelho em SP · Sorocaba, e nenhum é da rede.",
+    "anuncios_ativos": 70,
+    "anunciantes_total": 21,
     "somos_um_deles": false,
     "anunciantes": [
       {
@@ -984,7 +1166,7 @@
         "paginas": [
           "1555298544749523"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -999,7 +1181,7 @@
         "paginas": [
           "691206417414732"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1014,7 +1196,7 @@
         "paginas": [
           "109035108628569"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1029,7 +1211,7 @@
         "paginas": [
           "191413011043615"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1044,7 +1226,7 @@
         "paginas": [
           "561313803730519"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1059,7 +1241,7 @@
         "paginas": [
           "691206417414732"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1074,7 +1256,7 @@
         "paginas": [
           "102370012167213"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1089,7 +1271,7 @@
         "paginas": [
           "312531045594254"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1104,7 +1286,7 @@
         "paginas": [
           "1511920399076213"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1119,7 +1301,7 @@
         "paginas": [
           "103532419171642"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1134,12 +1316,27 @@
         "paginas": [
           "733827463137851"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
         "desde": "2026-08-12",
         "exemplo": "Quer colocar aparelho, mas ainda está em dúvida entre o modelo comum ou o estético? \n\nAqui na OdontoClinic, além de facilidade no acesso, você conta com orientação especializada para fazer a melhor escolha pro seu sorriso! 😁\n\n🦷 Ortodontia com conforto, praticidade e condição aces…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Clínica Oroface",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "863292593528723"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Quem disse que alinhar o sorriso precisa ser sinônimo de desconforto?\n\nCom os alinhadores invisíveis, você tem um tratamento mais discreto, confortável e que se adapta muito melhor à sua rotina. E o melhor: ele pode ser mais acessível do que você imagina.\n\nQuer descobrir como fic…",
         "de_outra_unidade": null
       },
       {
@@ -1149,7 +1346,7 @@
         "paginas": [
           "184405561414479"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1164,7 +1361,7 @@
         "paginas": [
           "1057515330776356"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1179,12 +1376,27 @@
         "paginas": [
           "100387389624933"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
         "desde": "2026-08-12",
         "exemplo": "📍 Quer alinhar o sorriso, mas não se imagina usando aparelho metálico?\n\nOs alinhadores invisíveis podem ajudar a corrigir a posição dos dentes de forma mais discreta, confortável e prática.\n\nPor serem transparentes e removíveis, eles combinam melhor com a rotina de quem não quer …",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Massari Odonto",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "643701478817896"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Já imaginou alinhar o seu sorriso sem mudar muito a sua rotina e com toda a discrição que você deseja?\n\nMuita gente tem essa vontade, mas acaba adiando o tratamento porque não se identifica com o aparelho convencional ou simplesmente não conhece outras alternativas.\n\nHoje existem…",
         "de_outra_unidade": null
       },
       {
@@ -1194,7 +1406,7 @@
         "paginas": [
           "860955127092037"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1209,7 +1421,7 @@
         "paginas": [
           "104384471919728"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1224,7 +1436,7 @@
         "paginas": [
           "561063240934872"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1239,7 +1451,7 @@
         "paginas": [
           "333321087196346"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
@@ -1254,31 +1466,16 @@
         "paginas": [
           "102632898653351"
         ],
-        "dias_no_ar_maior": null,
+        "dias_no_ar_maior": 1,
         "plataformas": [
           "Meta"
         ],
         "desde": "2026-08-12",
         "exemplo": "Aparelho Ortodôntico em SOROCABA!  💙💚🤍❤️\n\nAgende a sua consulta\n\nClique e saiba mais.",
         "de_outra_unidade": null
-      },
-      {
-        "nome": "Sorrile Ortodontia",
-        "nosso": false,
-        "anuncios": 1,
-        "paginas": [
-          "732716190107558"
-        ],
-        "dias_no_ar_maior": null,
-        "plataformas": [
-          "Meta"
-        ],
-        "desde": "2026-08-12",
-        "exemplo": "🦷 Cuidar do seu sorriso começa com a informação certa.\n\nAqui você encontra dicas, transformações reais e conteúdos para manter a sua saúde bucal sempre em dia.\n\n✨ Clique em seguir e acompanhe a Sorrile!",
-        "de_outra_unidade": null
       }
     ],
-    "fora_do_produto": 67,
+    "fora_do_produto": 66,
     "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
   },
   "eventos": [

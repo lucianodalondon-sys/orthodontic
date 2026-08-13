@@ -690,14 +690,14 @@
           "natureza": "fato",
           "confianca": "media",
           "medido": true,
-          "amostra": 56,
+          "amostra": 144,
           "janela_dias": null,
           "medicoes": 1,
           "fonte": "dados/serie/anuncios_observados.jsonl",
           "a_favor": [],
           "contra": [],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 56 anúncios no ar, 1 medição"
+          "procedencia": "medido em 144 anúncios no ar, 1 medição"
         }
       }
     ],
@@ -814,91 +814,91 @@
   "oferta_da_cidade": {
     "praca_id": "rio_de_janeiro",
     "rotulo": "RJ · Rio de Janeiro",
-    "anuncios_de_aparelho": 13,
-    "anunciantes": 8,
-    "fora_do_produto": 42,
+    "anuncios_de_aparelho": 31,
+    "anunciantes": 19,
+    "fora_do_produto": 57,
     "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
-    "sem_texto": 1,
+    "sem_texto": 2,
     "amostra_curta": false,
-    "tese": "A disputa desta cidade é por autoridade técnica — 7 dos 13 anúncios de aparelho medidos falam disso, seguido de avaliação grátis.",
-    "posicao_vaga": "Ninguém está falando de preço na frente — a cidade disputa por número; entrar aqui é entrar na briga mais cara.",
+    "tese": "A disputa desta cidade é por alinhador invisível — 16 dos 31 anúncios de aparelho medidos falam disso, seguido de autoridade técnica.",
+    "posicao_vaga": "Ninguém está falando de sem entrada — tira a barreira do primeiro pagamento — ataca quem não tem reserva.",
     "eixos": [
+      {
+        "eixo": "alinhador",
+        "rotulo": "Alinhador invisível",
+        "o_que_significa": "produto de ticket alto e público adulto",
+        "anuncios": 16,
+        "pct": 52,
+        "frase": "16 anúncios de aparelho falam disso"
+      },
       {
         "eixo": "autoridade",
         "rotulo": "Autoridade técnica",
         "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
-        "anuncios": 7,
-        "pct": 54,
-        "frase": "7 anúncios de aparelho falam disso"
+        "anuncios": 15,
+        "pct": 48,
+        "frase": "15 anúncios de aparelho falam disso"
       },
       {
         "eixo": "avaliacao_gratis",
         "rotulo": "Avaliação grátis",
         "o_que_significa": "compra a visita, não a venda — é isca de agenda",
-        "anuncios": 4,
-        "pct": 31,
-        "frase": "4 anúncios de aparelho falam disso"
-      },
-      {
-        "eixo": "alinhador",
-        "rotulo": "Alinhador invisível",
-        "o_que_significa": "produto de ticket alto e público adulto",
-        "anuncios": 3,
-        "pct": 23,
-        "frase": "3 anúncios de aparelho falam disso"
+        "anuncios": 11,
+        "pct": 35,
+        "frase": "11 anúncios de aparelho falam disso"
       },
       {
         "eixo": "publico_infantil",
         "rotulo": "Falado para criança e adolescente",
         "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+        "anuncios": 4,
+        "pct": 13,
+        "frase": "4 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "urgencia",
+        "rotulo": "Urgência e escassez",
+        "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
         "anuncios": 3,
-        "pct": 23,
+        "pct": 10,
         "frase": "3 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "parcelamento",
+        "rotulo": "Parcelamento",
+        "o_que_significa": "vende a mensalidade, não o tratamento",
+        "anuncios": 2,
+        "pct": 6,
+        "frase": "2 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "preco",
+        "rotulo": "Preço na frente",
+        "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
+        "anuncios": 1,
+        "pct": 3,
+        "frase": "1 anúncio de aparelho fala disso"
       },
       {
         "eixo": "estetico",
         "rotulo": "Aparelho estético",
         "o_que_significa": "vende discrição — público que trabalha de frente",
         "anuncios": 1,
-        "pct": 8,
+        "pct": 3,
         "frase": "1 anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "preco",
-        "rotulo": "Preço na frente",
-        "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "sem_entrada",
-        "rotulo": "Sem entrada",
-        "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
-      },
-      {
-        "eixo": "parcelamento",
-        "rotulo": "Parcelamento",
-        "o_que_significa": "vende a mensalidade, não o tratamento",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
       },
       {
         "eixo": "publico_adulto",
         "rotulo": "Falado para adulto",
         "o_que_significa": "disputa o adulto que adiou o tratamento",
-        "anuncios": 0,
-        "pct": 0,
-        "frase": "nenhum anúncio de aparelho fala disso"
+        "anuncios": 1,
+        "pct": 3,
+        "frase": "1 anúncio de aparelho fala disso"
       },
       {
-        "eixo": "urgencia",
-        "rotulo": "Urgência e escassez",
-        "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+        "eixo": "sem_entrada",
+        "rotulo": "Sem entrada",
+        "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
         "anuncios": 0,
         "pct": 0,
         "frase": "nenhum anúncio de aparelho fala disso"
@@ -922,8 +922,18 @@
     ],
     "por_anunciante": [
       {
-        "anunciante": "Ortolook Tijuca",
+        "anunciante": "Dra. Marilia Di Giovanni",
         "eixos": [
+          "alinhador",
+          "autoridade",
+          "urgencia"
+        ]
+      },
+      {
+        "anunciante": "Dr Marcelo Segatto",
+        "eixos": [
+          "avaliacao_gratis",
+          "alinhador",
           "autoridade"
         ]
       },
@@ -932,6 +942,19 @@
         "eixos": [
           "avaliacao_gratis",
           "alinhador",
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "Dentotal Ipanema",
+        "eixos": [
+          "avaliacao_gratis",
+          "alinhador"
+        ]
+      },
+      {
+        "anunciante": "Ortolook Tijuca",
+        "eixos": [
           "autoridade"
         ]
       },
@@ -949,29 +972,10 @@
         ]
       },
       {
-        "anunciante": "OdontoCompany Rio de Janeiro - Vargem Shopping ",
+        "anunciante": "Odonto Bright - ParkShopping",
         "eixos": [
           "avaliacao_gratis",
-          "estetico"
-        ]
-      },
-      {
-        "anunciante": "Oral Concept Rio Implantes Dentários",
-        "eixos": [
-          "avaliacao_gratis",
-          "alinhador"
-        ]
-      },
-      {
-        "anunciante": "Inco25",
-        "eixos": [
-          "autoridade"
-        ]
-      },
-      {
-        "anunciante": "Orthopride Cascadura",
-        "eixos": [
-          "avaliacao_gratis"
+          "publico_infantil"
         ]
       }
     ],
@@ -981,11 +985,26 @@
   "anuncios_da_cidade": {
     "e_da_cidade": true,
     "rotulo": "RJ · Rio de Janeiro",
-    "manchete": "8 anunciantes compram aparelho em RJ · Rio de Janeiro, e nenhum é da rede.",
-    "anuncios_ativos": 13,
-    "anunciantes_total": 8,
+    "manchete": "19 anunciantes compram aparelho em RJ · Rio de Janeiro, e nenhum é da rede.",
+    "anuncios_ativos": 31,
+    "anunciantes_total": 19,
     "somos_um_deles": false,
     "anunciantes": [
+      {
+        "nome": "Dra. Marilia Di Giovanni",
+        "nosso": false,
+        "anuncios": 4,
+        "paginas": [
+          "456943374179114"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Você deseja alinhar os dentes com mais discrição, conforto e praticidade? 😁✨\n\nO Invisalign pode ser uma excelente opção para quem busca um sorriso mais alinhado sem abrir mão da estética. \n\nOs alinhadores são transparentes, removíveis e planejados de forma personalizada para acom…",
+        "de_outra_unidade": null
+      },
       {
         "nome": "Ortolook Tijuca",
         "nosso": false,
@@ -999,6 +1018,21 @@
         ],
         "desde": "2026-08-13",
         "exemplo": "A manutenção do seu aparelho está em dia? Manter seu aparelho ortodôntico bem ajustado é crucial para garantir os melhores resultados e evitar complicações. Se você não revisou o seu há algum tempo, agende uma consulta e mantenha seu sorriso no caminho certo.\n\nORTOLOOK TIJUCA 🌎\n\n…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dr Marcelo Segatto",
+        "nosso": false,
+        "anuncios": 3,
+        "paginas": [
+          "1054868861232719"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "A Segatto Clínica possui todos os tipos de aparelhos dentários para você realizar seu tratamento ortodôntico. \n\nTecnologia e conhecimento para devolver seu sorriso de forma leve e natural!\n\nO Dr. Marcelo Segatto atende pela convênio da Vittia.\n\nEntre em contato e agende sua avali…",
         "de_outra_unidade": null
       },
       {
@@ -1017,6 +1051,36 @@
         "de_outra_unidade": null
       },
       {
+        "nome": "Dentotal Ipanema",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "1110496088805681"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Seu sorriso merece tecnologia, conforto e discrição! 😁✨\n\nAgora contamos com alinhadores ortodônticos para transformar o seu sorriso de forma prática e quase imperceptível. O Dr. Juan está pronto para acompanhar você em cada etapa desse tratamento.\n\nAgende sua avaliação e descubra…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "LM Odontológica",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "127849310745659"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "🦷 ALINHADORES INVISÍVEIS TAMBÉM SÃO UMA OPÇÃO NA VIDA ADULTA\n\nA idade, por si só, não determina se um tratamento ortodôntico pode ou não ser realizado.\n\nO primeiro passo é uma avaliação completa para entender o posicionamento dos dentes, a mordida e qual abordagem pode ser indica…",
+        "de_outra_unidade": null
+      },
+      {
         "nome": "Dr. Daniel Pinheiro - Odonto Barra",
         "nosso": false,
         "anuncios": 1,
@@ -1029,6 +1093,36 @@
         ],
         "desde": "2026-08-13",
         "exemplo": "Quando o Doutor Daniel acordou querendo paz… ele esqueceu que trabalha com gente que só procura dentista quando já virou episódio 😅📉\n\n🦷 “Doutor, minha mordida tá estranha…”\n\n📸 “E eu queria ficar igual essa aqui…” (sim, lá vem o print do TikTok)\nE no meio do caos, entra a verdade …",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Gustavo Bonelli Ortodontia",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "253736591349452"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Ronco é normal ou pode indicar um problema de saúde?\n\nO ronco acontece quando há vibração dos tecidos da garganta durante a passagem do ar. Em algumas pessoas, ele pode ocorrer sem causar consequências importantes. Em outras, porém, pode ser um sinal de **apneia obstrutiva do son…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "IOA Rio de Janeiro",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "105538861690861"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Imersão Ortodontia - Alinhadores\n\nPlanejamento digital e controle \nclínico para evoluir sua prática\n\nGaranta sua vaga\n\nExclusivo para dentistas",
         "de_outra_unidade": null
       },
       {
@@ -1047,18 +1141,18 @@
         "de_outra_unidade": null
       },
       {
-        "nome": "LM Odontológica",
+        "nome": "Odonto Bright - ParkShopping",
         "nosso": false,
         "anuncios": 1,
         "paginas": [
-          "127849310745659"
+          "207990695730328"
         ],
         "dias_no_ar_maior": null,
         "plataformas": [
           "Meta"
         ],
         "desde": "2026-08-13",
-        "exemplo": "🦷 ALINHADORES INVISÍVEIS TAMBÉM SÃO UMA OPÇÃO NA VIDA ADULTA\n\nA idade, por si só, não determina se um tratamento ortodôntico pode ou não ser realizado.\n\nO primeiro passo é uma avaliação completa para entender o posicionamento dos dentes, a mordida e qual abordagem pode ser indica…",
+        "exemplo": "Sua clínica odontológica no ParkShopping Campo Grande.\n\nA Odonto Bright foi pensada para cuidar do seu sorriso com acolhimento, estrutura e praticidade.\n\nAqui, você encontra atendimento odontológico completo em diferentes especialidades:\n\nClínica Geral, para prevenção, avaliação …",
         "de_outra_unidade": null
       },
       {
@@ -1074,6 +1168,21 @@
         ],
         "desde": "2026-08-13",
         "exemplo": "Quer alinhar o seu sorriso de forma rápida e discreta? 😁✨\nNa OdontoCompany, oferecemos tratamentos ortodônticos modernos que transformam seu sorriso com conforto e eficiência. Seja com aparelhos invisíveis ou convencionais, nossa equipe está pronta para cuidar de você! 💚🦷\n\n✅ Alin…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odontovaz",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "105911135383812"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "🦷 MÊS DOS PAIS | PRÓTESES COM CONDIÇÕES ESPECIAIS\n\nNeste Mês dos Pais, presenteie quem sempre cuidou de você com mais saúde, conforto e autoestima.\n\nAs próteses dentárias devolvem muito mais do que um sorriso: restauram a mastigação, a confiança e a qualidade de vida.\n\n✨ Condiçõe…",
         "de_outra_unidade": null
       },
       {
@@ -1105,9 +1214,69 @@
         "desde": "2026-08-13",
         "exemplo": "Conheça a Orthopride Cascadura, uma clínica preparada para oferecer conforto, tecnologia e um atendimento de excelência para cuidar do seu sorriso.\n\nNossa equipe está pronta para receber você com carinho, profissionalismo e tratamentos modernos para transformar seu sorriso com se…",
         "de_outra_unidade": null
+      },
+      {
+        "nome": "Orthopride Curicica",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "933361149851769"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "**🚀 SUA PRÓXIMA GRANDE OPORTUNIDADE PODE COMEÇAR AGORA!**\n\nVocê é uma líder que gosta de desafios, sabe motivar equipes e tem paixão por resultados? Então essa vaga pode ser o próximo passo da sua carreira! 💼✨\n\nEstamos em busca de uma **Gerente de Clínica** para liderar uma opera…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Rede de Clínicas Odontológicas Oral 360 RJ",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "310010632193537"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Sua chance de ALINHAR SEUS DENTES e ter o sorriso que sempre sonhou. 😍 Parcelas de apenas 89,90 por mês!\n\n✅ APARELHOS ORTODÔNTICOS incluso Raio X , Documentação e Instalação no mesmo dia da consulta\n\n➡️ Clique em SAIBA MAIS para garantir sua avaliação! Corre, pois as VAGAS são LI…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "corretorevandro",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "320001124522990"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "🦷🔥 ASSIM ODONTOLÓGICO — 50% DE DESCONTO!\n\nIsso mesmo! 😱 Você pode contratar seu plano odontológico com 50% DE DESCONTO NAS 12 PRIMEIRAS PARCELAS! 💥\n\nE tem opções para diferentes necessidades! 👇\n\n✅ Consulta\n✅ Limpeza\n✅ Aplicação de flúor\n✅ Extração\n✅ Cirurgia geral\n✅ Urgência e em…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "qualitycursosdeodontologia",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "117129041484597"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "✨Inscrições abertas ✨\n🚀8ª Turma da Especialização em Ortodontia!\nInvista na sua carreira com uma formação completa, voltada para a prática clínica e para as técnicas mais atuais da Ortodontia.\nDurante o curso, você terá contato com:\n✅Ortodontia contemporânea\n✅Ortopedia dos Maxila…",
+        "de_outra_unidade": null
       }
     ],
-    "fora_do_produto": 43,
+    "fora_do_produto": 59,
     "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
   },
   "eventos": [

@@ -173,45 +173,45 @@
   "oferta": {
     "praca_id": "joinville",
     "rotulo": "SC · Joinville",
-    "anuncios_de_aparelho": 34,
-    "anunciantes": 16,
-    "fora_do_produto": 68,
+    "anuncios_de_aparelho": 36,
+    "anunciantes": 17,
+    "fora_do_produto": 72,
     "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
     "sem_texto": 0,
     "amostra_curta": false,
-    "tese": "A disputa desta cidade é por autoridade técnica — 23 dos 34 anúncios de aparelho medidos falam disso, seguido de avaliação grátis.",
+    "tese": "A disputa desta cidade é por autoridade técnica — 24 dos 36 anúncios de aparelho medidos falam disso, seguido de avaliação grátis.",
     "posicao_vaga": "Ninguém está falando de preço na frente — a cidade disputa por número; entrar aqui é entrar na briga mais cara.",
     "eixos": [
       {
         "eixo": "autoridade",
         "rotulo": "Autoridade técnica",
         "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
-        "anuncios": 23,
-        "pct": 68,
-        "frase": "23 anúncios de aparelho falam disso"
+        "anuncios": 24,
+        "pct": 67,
+        "frase": "24 anúncios de aparelho falam disso"
       },
       {
         "eixo": "avaliacao_gratis",
         "rotulo": "Avaliação grátis",
         "o_que_significa": "compra a visita, não a venda — é isca de agenda",
-        "anuncios": 9,
-        "pct": 26,
-        "frase": "9 anúncios de aparelho falam disso"
+        "anuncios": 10,
+        "pct": 28,
+        "frase": "10 anúncios de aparelho falam disso"
       },
       {
         "eixo": "alinhador",
         "rotulo": "Alinhador invisível",
         "o_que_significa": "produto de ticket alto e público adulto",
-        "anuncios": 5,
-        "pct": 15,
-        "frase": "5 anúncios de aparelho falam disso"
+        "anuncios": 6,
+        "pct": 17,
+        "frase": "6 anúncios de aparelho falam disso"
       },
       {
         "eixo": "estetico",
         "rotulo": "Aparelho estético",
         "o_que_significa": "vende discrição — público que trabalha de frente",
         "anuncios": 4,
-        "pct": 12,
+        "pct": 11,
         "frase": "4 anúncios de aparelho falam disso"
       },
       {
@@ -281,6 +281,14 @@
     ],
     "por_anunciante": [
       {
+        "anunciante": "Odonto Excellence Boa Vista",
+        "eixos": [
+          "avaliacao_gratis",
+          "autoridade",
+          "parcelamento"
+        ]
+      },
+      {
         "anunciante": "Odonto Excellence Joinville - Aventureiro",
         "eixos": [
           "autoridade",
@@ -298,14 +306,6 @@
         "anunciante": "Dra. Emanoela Volles de Souza",
         "eixos": [
           "autoridade"
-        ]
-      },
-      {
-        "anunciante": "Odonto Excellence Boa Vista",
-        "eixos": [
-          "avaliacao_gratis",
-          "autoridade",
-          "parcelamento"
         ]
       },
       {
@@ -1241,33 +1241,47 @@
   "movimentos_do_mercado": {
     "eventos": [
       {
-        "evento_id": "joinville|linha_de_base_anuncios|-",
+        "evento_id": "joinville|rodadas_nao_comparaveis|-",
         "data": "2026-08-13",
         "praca_id": "joinville",
         "rotulo": "SC · Joinville",
         "local_id": null,
         "entidade_id": null,
-        "tipo": "linha_de_base_anuncios",
+        "tipo": "rodadas_nao_comparaveis",
         "natureza": "fato",
         "severidade": "baixa",
-        "titulo": "Linha de base de anúncios criada",
-        "fato": "primeira medição de anúncios desta praça, em 2026-08-12",
-        "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
-        "decisao": "recoletar na próxima rodada para abrir o delta",
+        "titulo": "As duas rodadas de anúncio não se comparam",
+        "fato": "2026-08-12 perguntou 4 consultas e 2026-08-13 perguntou 3; 3 consultas em comum",
+        "por_que_importa": "conjuntos medidos com perguntas diferentes não dizem quem entrou nem quem saiu — a diferença é da coleta, não do mercado",
+        "decisao": "repetir a MESMA lista de consultas na próxima rodada",
         "fonte": "dados/serie/anuncios_observados.jsonl",
-        "evidencia": {},
+        "evidencia": {
+          "consultas_antes": [
+            "OrthoDontic Joinville",
+            "aparelho ortodôntico Joinville",
+            "dentista Joinville",
+            "ortodontia Joinville"
+          ],
+          "consultas_agora": [
+            "aparelho ortodôntico Joinville",
+            "dentista Joinville",
+            "ortodontia Joinville"
+          ]
+        },
         "confianca": {
           "natureza": "fato",
-          "confianca": "media",
+          "confianca": "alta",
           "medido": true,
-          "amostra": 102,
+          "amostra": 72,
           "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/serie/anuncios_observados.jsonl",
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-12 → 2026-08-13)",
           "a_favor": [],
-          "contra": [],
+          "contra": [
+            "as consultas mudaram entre as rodadas"
+          ],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 102 anúncios no ar, 1 medição"
+          "procedencia": "medido em 72 anúncios no ar, 2 medições"
         }
       }
     ],
