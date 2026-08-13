@@ -149,8 +149,12 @@ Na rede inteira:
 
 ## 6 · O QUE FICOU FALTANDO
 
-- **Canais de Florianópolis** abaixo do mínimo de 8 com handle. É etapa
-  `auto+humano`: o coletor achou o que havia, o resto é trabalho manual.
+- **Canais de Florianópolis: 4 de 8.** Duas execuções independentes do coletor
+  devolveram os mesmos quatro handles — `florianopolis`, `prefflorianopolis`,
+  `maestria.floripa` e `universidadeufsc` — e deixaram seis vagas vazias
+  (imprensa, preço, humor, gastronomia, esporte de base e uma de jovem). Não é
+  falha de execução: é o que a busca automática acha nesta cidade. A etapa é
+  `auto+humano` e o resto se acha na mão. **22 de 23 praças completas.**
 - **19 dos 23 praças têm uma medição só de categoria**, então o detector de
   mudança de mercado ainda registra linha de base em vez de movimento. Isso é
   tempo, não bug — e a tela diz exatamente isso.
