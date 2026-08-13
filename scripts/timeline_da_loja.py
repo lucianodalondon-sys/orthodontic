@@ -163,6 +163,12 @@ def monta():
             "cabecalho": {"nota": u.get("nota"), "avaliacoes": u.get("total"),
                           "ritmo": u.get("ritmo"), "meses_seguidos": u.get("meses"),
                           "posicao": u.get("posicao"), "de": u.get("de"),
+                          # "1ª de 3" sozinho lê-se como cidade pequena
+                          # quando a praça tem 17 clínicas medidas e só 3
+                          # foram lidas por inteiro. A frase vai pronta.
+                          "frase_da_posicao": u.get("frase_da_posicao"),
+                          "medidas_na_praca": u.get("medidas_na_praca"),
+                          "comparaveis_na_praca": u.get("comparaveis_na_praca"),
                           # A TELA PRECISA DIZER DE QUANTO SAIU O RITMO.
                           # Uma loja lida pela metade tem ritmo dos últimos
                           # dias, não do histórico, e não entra na

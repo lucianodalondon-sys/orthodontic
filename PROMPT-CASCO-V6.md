@@ -935,3 +935,20 @@ Como desenhar:
 Antes, uma loja lida pela metade aparecia como **1ª da praça** por ter o
 maior número — e o número maior era efeito da coleta, não da operação. A
 tela premiava quem tinha sido menos lido.
+
+### 13.3 · "1ª de 3" precisa dizer de que 3 se trata
+
+Quando quase toda a praça está lida pela metade, o grupo comparável
+encolhe: Caxias tem **1 clínica lida por inteiro de 17 medidas**, o Rio
+tem **0 de 15**. Nesse cenário, "1ª de 3" numa cidade onde medimos 17
+clínicas lê-se como cidade pequena — e é o oposto do que aconteceu.
+
+O cabeçalho traz `frase_da_posicao` pronta, e é ela que vai à tela:
+
+    "1ª em ritmo entre as 3 clínicas lidas por inteiro,
+     de 17 medidas nesta praça"
+
+Junto vão `medidas_na_praca` e `comparaveis_na_praca`, para quem quiser
+desenhar a proporção. Nunca componha "Nª de N" no casco a partir de
+`posicao` e `de` soltos: os dois existem, mas sozinhos eles mentem sobre
+o tamanho da praça.
