@@ -183,8 +183,37 @@ def coleta():
     for praca, d in ident.items():
         for l in d.get("locais", []):
             k = (praca, l["local_id"])
-            ritmo, meses = ritmo_e_meses(revs.get(k, []))
+            ds = revs.get(k, [])
+            ritmo, meses = ritmo_e_meses(ds)
             pl = places.get(k, {})
+            # AMOSTRA TRUNCADA NÃO ENTRA NO MESMO RANKING.
+            #
+            # O coletor profundo puxa as N mais NOVAS. Numa loja pequena,
+            # essas N cobrem a vida inteira dela; numa loja grande, cobrem
+            # poucas semanas. O ritmo sai das duas do mesmo jeito e os dois
+            # números não são a mesma coisa:
+            #
+            #   Curitiba · XV de Novembro   120 avaliações em    44 dias → 82,9/mês
+            #   Curitiba · Edifício Odin    120 avaliações em 2.324 dias →  1,6/mês
+            #
+            # Postos lado a lado dão "cinquenta vezes de diferença", e isso
+            # é artefato da coleta, não da operação. Pior: Florianópolis ·
+            # Ingleses tinha 120 avaliações em 14 dias e publicava
+            # 260,6/mês — numa loja com 267 avaliações no total.
+            #
+            # Enquanto a loja não for lida até o fim, o ritmo dela é um
+            # ritmo RECENTE, fica declarado como tal e sai da classificação.
+            total_google = (pl.get("avaliacoes", pl.get("avaliacoes_total"))
+                            or l.get("avaliacoes_google") or 0)
+            truncada = bool(total_google and len(ds)
+                            and len(ds) / total_google < 0.75
+                            and total_google - len(ds) > 50)
+            janela = 0
+            if len(ds) >= 2:
+                import datetime as _dt
+                _o = sorted(ds)
+                janela = (_dt.date.fromisoformat(_o[-1])
+                          - _dt.date.fromisoformat(_o[0])).days
             linhas.append({
                 "praca": praca, "rotulo": d.get("rotulo") or d.get("nome"),
                 "uf": (d.get("uf") or [None])[0],
@@ -200,10 +229,21 @@ def coleta():
                 "total": pl.get("avaliacoes", pl.get("avaliacoes_total")) or l.get("avaliacoes_google"),
                 "nota": pl.get("nota") or l.get("nota_google"),
                 "ritmo": ritmo, "meses": meses,
+                "amostra_lida": len(ds),
+                "amostra_dias": janela,
+                "amostra_truncada": truncada,
+                "ritmo_comparavel": bool(ritmo is not None and not truncada),
+                "porque_fora_do_ranking": (
+                    f"lemos {len(ds)} das {total_google} avaliações desta "
+                    f"clínica, e as mais novas: o ritmo aqui é o dos últimos "
+                    f"{janela} dias, não o do histórico. Comparar com quem foi "
+                    f"lido por inteiro compararia janelas diferentes."
+                    if truncada else None),
             })
-    # posição de cada um dentro da própria praça
+    # posição de cada um dentro da própria praça — SÓ ENTRE OS COMPARÁVEIS
     for praca in ident:
-        na_praca = sorted([x for x in linhas if x["praca"] == praca and x["ritmo"] is not None],
+        na_praca = sorted([x for x in linhas
+                           if x["praca"] == praca and x["ritmo_comparavel"]],
                           key=lambda x: -x["ritmo"])
         for i, x in enumerate(na_praca, 1):
             x["posicao"] = i

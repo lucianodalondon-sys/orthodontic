@@ -326,6 +326,21 @@ def main():
             if not itens:
                 print(f"  [VAZIO] {local_id} · '{query}'")
                 continue
+            # O ATOR NEM SEMPRE DEVOLVE LISTA. Quando ele devolve um dict —
+            # um lugar só, ou um objeto de erro — `itens[0]` estourava
+            # KeyError e derrubava a coleta INTEIRA na primeira unidade,
+            # depois de a conta já ter sido debitada. Uma unidade que não
+            # responde não pode levar as outras junto.
+            if isinstance(itens, dict):
+                itens = [itens] if itens.get("title") else []
+                if not itens:
+                    print(f"  [VAZIO] {local_id}: o ator devolveu objeto sem "
+                          f"'title' — provável erro do lado dele")
+                    continue
+            if not isinstance(itens, list):
+                print(f"  [VAZIO] {local_id}: resposta inesperada "
+                      f"({type(itens).__name__})")
+                continue
             lugar = itens[0]
             titulo = lugar.get("title") or ""
             if exigidos and not any(e in titulo.lower() for e in exigidos):
