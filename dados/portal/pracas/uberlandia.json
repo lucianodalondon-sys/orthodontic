@@ -1,0 +1,1511 @@
+{
+  "praca_id": "uberlandia",
+  "corte": "2026-08-13",
+  "rotulo": "MG · Uberlândia",
+  "uf": [
+    "MG"
+  ],
+  "cidades": [
+    "MG · Uberlândia"
+  ],
+  "identidade": {
+    "praca_id": "uberlandia",
+    "nome": "Uberlândia",
+    "cidades": [
+      "Uberlândia/MG"
+    ],
+    "uf": [
+      "MG"
+    ],
+    "rotulo": "MG · Uberlândia",
+    "cidades_rotulo": [
+      "MG · Uberlândia"
+    ],
+    "criada_em": "2026-08-13",
+    "por_que_esta_praca": "cidade onde a rede já tem unidade e que ainda não tinha estudo. As metrópoles entram agora porque o mapa de bairros passou a existir: sem ele, cinco unidades em São Paulo virariam um número só, e o número não diria nada a nenhum franqueado",
+    "ibge": [
+      {
+        "municipio": "Uberlândia",
+        "uf": "MG",
+        "ibge_id": 3170206,
+        "populacao_estimada": {
+          "ano": "2025",
+          "valor": "761835",
+          "unidade": "Pessoas"
+        },
+        "alvo_9_15": 62474,
+        "alvo_30_45": 176222,
+        "fonte": "ibge agregados 6579/5938/9514",
+        "de": "dados/serie/ibge_municipios.jsonl"
+      }
+    ]
+  },
+  "planos_das_lojas": [],
+  "oferta": null,
+  "bairros": {
+    "praca_id": "uberlandia",
+    "rotulo": "MG · Uberlândia",
+    "territorio": [
+      {
+        "local_id": "orthodontic",
+        "unidade": "OrthoDontic",
+        "medido": true,
+        "location": {
+          "lat": -18.9209326,
+          "lng": -48.282353
+        },
+        "bairro": "Centro",
+        "clinica_mais_proxima": {
+          "nome": "Dr. Danilo Cunha - Ortodontista",
+          "km": 0.12,
+          "avaliacoes": 126,
+          "nota": 5,
+          "bairro": "Centro"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Orthopride Uberlândia",
+          "km": 0.38,
+          "avaliacoes": 278,
+          "nota": 4.6,
+          "bairro": "Centro"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 0.54,
+          "avaliacoes": 61,
+          "nota": 4.2,
+          "bairro": "Centro"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 70,
+            "de_aparelho": 7,
+            "da_rede": 1
+          },
+          "2km": {
+            "clinicas": 109,
+            "de_aparelho": 7,
+            "da_rede": 1
+          },
+          "5km": {
+            "clinicas": 155,
+            "de_aparelho": 12,
+            "da_rede": 1
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.12 km",
+        "proximidade_entre_unidades": {
+          "km": 0.54,
+          "unidade": "OrthoDontic",
+          "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+          "natureza": "inferencia"
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 160,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 160 clínicas com coordenada, 1 medição"
+        }
+      },
+      {
+        "local_id": "orthodontic_centro",
+        "unidade": "OrthoDontic",
+        "medido": true,
+        "location": {
+          "lat": -18.9198549,
+          "lng": -48.277322600000005
+        },
+        "bairro": "Centro",
+        "clinica_mais_proxima": {
+          "nome": "Clínica Odontológica Dentistas do Trabalhador",
+          "km": 0.05,
+          "avaliacoes": 75,
+          "nota": 4.7,
+          "bairro": "Centro"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Clínica Dentista do Povo",
+          "km": 0.08,
+          "avaliacoes": 694,
+          "nota": 4.7,
+          "bairro": "Centro"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 0.54,
+          "avaliacoes": 127,
+          "nota": 3.7,
+          "bairro": "Centro"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 78,
+            "de_aparelho": 7,
+            "da_rede": 1
+          },
+          "2km": {
+            "clinicas": 118,
+            "de_aparelho": 8,
+            "da_rede": 1
+          },
+          "5km": {
+            "clinicas": 156,
+            "de_aparelho": 12,
+            "da_rede": 1
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.05 km",
+        "proximidade_entre_unidades": {
+          "km": 0.54,
+          "unidade": "OrthoDontic",
+          "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+          "natureza": "inferencia"
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 160,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 160 clínicas com coordenada, 1 medição"
+        }
+      }
+    ],
+    "clinicas_com_coordenada": 161,
+    "clinicas_sem_coordenada": 0,
+    "raios_declarados_km": [
+      1,
+      2,
+      5
+    ],
+    "bairros_medidos": 31,
+    "clinicas_medidas": 161,
+    "sem_bairro_no_endereco": 0,
+    "unidades_da_rede": 2,
+    "unidades_localizadas": 2,
+    "onde_estamos": [
+      {
+        "local_id": "orthodontic",
+        "bairro": "Centro",
+        "unidade": "OrthoDontic"
+      },
+      {
+        "local_id": "orthodontic_centro",
+        "bairro": "Centro",
+        "unidade": "OrthoDontic"
+      }
+    ],
+    "bairros": [
+      {
+        "bairro": "Centro",
+        "clinicas": 59,
+        "avaliacoes_somadas": 5761,
+        "temos_unidade": true,
+        "nossas": [
+          "orthodontic",
+          "orthodontic_centro"
+        ],
+        "vizinhos_fortes": [
+          {
+            "nome": "Clínica Dentista do Povo",
+            "nota": 4.7,
+            "avaliacoes": 694
+          },
+          {
+            "nome": "Sorridents Clínicas Odontológicas Centro Uberlândia",
+            "nota": 4.9,
+            "avaliacoes": 651
+          },
+          {
+            "nome": "Orthopride Uberlândia",
+            "nota": 4.6,
+            "avaliacoes": 278
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "59 clínicas varridas, e a unidade da rede está aqui"
+      },
+      {
+        "bairro": "Nossa Sra. Aparecida",
+        "clinicas": 15,
+        "avaliacoes_somadas": 682,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dra. Mariel Paschoal",
+            "nota": 5,
+            "avaliacoes": 184
+          },
+          {
+            "nome": "CIOR Clínica Odontológica | Dentista em Uberlândia",
+            "nota": 4.8,
+            "avaliacoes": 128
+          },
+          {
+            "nome": "Amani Odontologia Clínica Odontológica",
+            "nota": 4.8,
+            "avaliacoes": 107
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "15 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Santa Mônica",
+        "clinicas": 11,
+        "avaliacoes_somadas": 846,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dr. GLEISSON R. A. MARQUES",
+            "nota": 5,
+            "avaliacoes": 324
+          },
+          {
+            "nome": "Oral Sin Implantes Uberlândia",
+            "nota": 5,
+            "avaliacoes": 211
+          },
+          {
+            "nome": "Odonto Bliss / Invisalign e Implantes em Uberlândia",
+            "nota": 5,
+            "avaliacoes": 186
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "11 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Lídice",
+        "clinicas": 11,
+        "avaliacoes_somadas": 448,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dra. Juliana Guebara - Implantes e Gengivoplastia - Uberlândia",
+            "nota": 5,
+            "avaliacoes": 138
+          },
+          {
+            "nome": "Cosmos Clínica Odontológica",
+            "nota": 4.7,
+            "avaliacoes": 91
+          },
+          {
+            "nome": "Dr Gustavo Rezende",
+            "nota": 5,
+            "avaliacoes": 78
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "11 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Martins",
+        "clinicas": 7,
+        "avaliacoes_somadas": 1627,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Inove Odontologia e Saúde",
+            "nota": 5,
+            "avaliacoes": 763
+          },
+          {
+            "nome": "Oral Unic",
+            "nota": 4.8,
+            "avaliacoes": 705
+          },
+          {
+            "nome": "Ortodoctor - Unidade Martins Uberlândia",
+            "nota": 4.3,
+            "avaliacoes": 84
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "7 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Osvaldo Rezende",
+        "clinicas": 6,
+        "avaliacoes_somadas": 206,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Inovati Care Odontologia",
+            "nota": 4.9,
+            "avaliacoes": 107
+          },
+          {
+            "nome": "Dra Thayane Simões - Orthoface Odontologia",
+            "nota": 4.8,
+            "avaliacoes": 73
+          },
+          {
+            "nome": "Dra Camilla Costa Almeida",
+            "nota": 5,
+            "avaliacoes": 11
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "6 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Morada da Colina",
+        "clinicas": 5,
+        "avaliacoes_somadas": 382,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Be Clinic Odontologia",
+            "nota": 4.9,
+            "avaliacoes": 333
+          },
+          {
+            "nome": "Vieira Diniz Odontologia",
+            "nota": 5,
+            "avaliacoes": 35
+          },
+          {
+            "nome": "Consultório odontológico Dra Stella Dantas",
+            "nota": 5,
+            "avaliacoes": 8
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "5 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Tabajaras",
+        "clinicas": 5,
+        "avaliacoes_somadas": 277,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dr. Éverton Ribeiro Lelis - Ortodontista",
+            "nota": 5,
+            "avaliacoes": 123
+          },
+          {
+            "nome": "Dra. Amélia M. Vilela",
+            "nota": 5,
+            "avaliacoes": 107
+          },
+          {
+            "nome": "Dra. Letícia B. Qualhato - Dentista em Uberlândia",
+            "nota": 5,
+            "avaliacoes": 24
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "5 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Cidade Jardim",
+        "clinicas": 4,
+        "avaliacoes_somadas": 55,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dra. Gyovanna Rizza - Ortodontia e Invisalign Uberlândia",
+            "nota": 5,
+            "avaliacoes": 36
+          },
+          {
+            "nome": "Dra. Thais Lima Cherulli",
+            "nota": 4.7,
+            "avaliacoes": 12
+          },
+          {
+            "nome": "Dra Lidyane Siqueira - Odontologia Uberlândia",
+            "nota": 5,
+            "avaliacoes": 7
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "4 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Brasil",
+        "clinicas": 4,
+        "avaliacoes_somadas": 78,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Clínica Odontológica Center Odonto",
+            "nota": 4.4,
+            "avaliacoes": 29
+          },
+          {
+            "nome": "Dentista Prótese | Ronco | Apneia - Uberlândia MG - Dra Merielle Rezende",
+            "nota": 5,
+            "avaliacoes": 28
+          },
+          {
+            "nome": "Franciene Giordani Odontologia",
+            "nota": 5,
+            "avaliacoes": 14
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "4 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Jardim Karaíba",
+        "clinicas": 3,
+        "avaliacoes_somadas": 764,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Primer Odontocenter",
+            "nota": 5,
+            "avaliacoes": 677
+          },
+          {
+            "nome": "Dra. Nívia Higino | Invisalign em Uberlândia",
+            "nota": 5,
+            "avaliacoes": 59
+          },
+          {
+            "nome": "Consultório Dra. Isabella Ferolla - Ortodontia & Invisalign Uberlândia",
+            "nota": 5,
+            "avaliacoes": 28
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "3 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Fundinho",
+        "clinicas": 3,
+        "avaliacoes_somadas": 700,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Clínica Gathi Odontologia",
+            "nota": 5,
+            "avaliacoes": 644
+          },
+          {
+            "nome": "Dentista Drª Vania Teles Rocha",
+            "nota": 5,
+            "avaliacoes": 46
+          },
+          {
+            "nome": "Dra Yasmim Souza - Dentista em Uberlândia / alinhadores invisíveis / aparelho fixo",
+            "nota": 5,
+            "avaliacoes": 10
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "3 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Tibery",
+        "clinicas": 3,
+        "avaliacoes_somadas": 283,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "ATKA Clínica Odontológica - Dr. Clébio Domingues no Complexo Center Shopping",
+            "nota": 5,
+            "avaliacoes": 132
+          },
+          {
+            "nome": "Sorria Uberlândia - Unidade Tibery I",
+            "nota": 5,
+            "avaliacoes": 118
+          },
+          {
+            "nome": "Dental Studio-Dra Ana Paula",
+            "nota": 5,
+            "avaliacoes": 33
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "3 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Vigilato Pereira",
+        "clinicas": 3,
+        "avaliacoes_somadas": 105,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dra. Flávia Arantes - Especialista em Ortodontia & Invisalign",
+            "nota": 5,
+            "avaliacoes": 87
+          },
+          {
+            "nome": "Perfil Clínica Odontológica",
+            "nota": 4.4,
+            "avaliacoes": 14
+          },
+          {
+            "nome": "Dra. Ludmila Forti Jorge",
+            "nota": 5,
+            "avaliacoes": 4
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "3 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Pres. Roosevelt",
+        "clinicas": 2,
+        "avaliacoes_somadas": 320,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Sorria Roosevelt",
+            "nota": 4.6,
+            "avaliacoes": 276
+          },
+          {
+            "nome": "Consultório Odontológico Constelação 24H",
+            "nota": 4.8,
+            "avaliacoes": 44
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "2 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Santa Maria",
+        "clinicas": 2,
+        "avaliacoes_somadas": 439,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Centro Clínico 24h Uniodonto Minas",
+            "nota": 3.9,
+            "avaliacoes": 249
+          },
+          {
+            "nome": "Uniodonto Minas",
+            "nota": 3.5,
+            "avaliacoes": 190
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "2 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Saraiva",
+        "clinicas": 2,
+        "avaliacoes_somadas": 379,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Impla Odontologia | Implantes e Clínica Odontológica em Uberlândia",
+            "nota": 4.9,
+            "avaliacoes": 220
+          },
+          {
+            "nome": "Oral Fit Clínica Odontológica",
+            "nota": 4.9,
+            "avaliacoes": 159
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "2 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Santa Rosa",
+        "clinicas": 2,
+        "avaliacoes_somadas": 304,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "R&T Odontologia | Dentista em Uberlândia",
+            "nota": 5,
+            "avaliacoes": 201
+          },
+          {
+            "nome": "Clínica Odontológica DentClin | Dentista em Uberlândia - Especialista em Implantes, Aparelhos e Clareamento",
+            "nota": 4.6,
+            "avaliacoes": 103
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "2 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Tubalina",
+        "clinicas": 2,
+        "avaliacoes_somadas": 188,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Ortodoctor Uberlândia",
+            "nota": 4.9,
+            "avaliacoes": 129
+          },
+          {
+            "nome": "Pró-Sorriso Clínica Odontológica em Uberlândia",
+            "nota": 4.9,
+            "avaliacoes": 59
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "2 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Granada",
+        "clinicas": 1,
+        "avaliacoes_somadas": 463,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Classe A Odontologia Especializada",
+            "nota": 4.8,
+            "avaliacoes": 463
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Luizote de Freitas",
+        "clinicas": 1,
+        "avaliacoes_somadas": 431,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Vivadent - Dentista em Uberlândia",
+            "nota": 4.9,
+            "avaliacoes": 431
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Dona Zulmira",
+        "clinicas": 1,
+        "avaliacoes_somadas": 266,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Odontoclinic - Uberlândia - Jardim Patrícia",
+            "nota": 4.9,
+            "avaliacoes": 266
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Planalto",
+        "clinicas": 1,
+        "avaliacoes_somadas": 177,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "OdontoPlan - Odontologia Integrada",
+            "nota": 4.4,
+            "avaliacoes": 177
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Maracanã",
+        "clinicas": 1,
+        "avaliacoes_somadas": 130,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dra. Laíza Odontopediatra",
+            "nota": 5,
+            "avaliacoes": 130
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Alvorada",
+        "clinicas": 1,
+        "avaliacoes_somadas": 74,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Odontomed | Clínica Odontológica em Alvorada",
+            "nota": 4.9,
+            "avaliacoes": 74
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      }
+    ],
+    "bairros_sem_a_rede": [
+      {
+        "bairro": "Nossa Sra. Aparecida",
+        "clinicas": 15,
+        "avaliacoes_somadas": 682,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dra. Mariel Paschoal",
+            "nota": 5,
+            "avaliacoes": 184
+          },
+          {
+            "nome": "CIOR Clínica Odontológica | Dentista em Uberlândia",
+            "nota": 4.8,
+            "avaliacoes": 128
+          },
+          {
+            "nome": "Amani Odontologia Clínica Odontológica",
+            "nota": 4.8,
+            "avaliacoes": 107
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "15 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Santa Mônica",
+        "clinicas": 11,
+        "avaliacoes_somadas": 846,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dr. GLEISSON R. A. MARQUES",
+            "nota": 5,
+            "avaliacoes": 324
+          },
+          {
+            "nome": "Oral Sin Implantes Uberlândia",
+            "nota": 5,
+            "avaliacoes": 211
+          },
+          {
+            "nome": "Odonto Bliss / Invisalign e Implantes em Uberlândia",
+            "nota": 5,
+            "avaliacoes": 186
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "11 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Lídice",
+        "clinicas": 11,
+        "avaliacoes_somadas": 448,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dra. Juliana Guebara - Implantes e Gengivoplastia - Uberlândia",
+            "nota": 5,
+            "avaliacoes": 138
+          },
+          {
+            "nome": "Cosmos Clínica Odontológica",
+            "nota": 4.7,
+            "avaliacoes": 91
+          },
+          {
+            "nome": "Dr Gustavo Rezende",
+            "nota": 5,
+            "avaliacoes": 78
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "11 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Martins",
+        "clinicas": 7,
+        "avaliacoes_somadas": 1627,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Inove Odontologia e Saúde",
+            "nota": 5,
+            "avaliacoes": 763
+          },
+          {
+            "nome": "Oral Unic",
+            "nota": 4.8,
+            "avaliacoes": 705
+          },
+          {
+            "nome": "Ortodoctor - Unidade Martins Uberlândia",
+            "nota": 4.3,
+            "avaliacoes": 84
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "7 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Osvaldo Rezende",
+        "clinicas": 6,
+        "avaliacoes_somadas": 206,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Inovati Care Odontologia",
+            "nota": 4.9,
+            "avaliacoes": 107
+          },
+          {
+            "nome": "Dra Thayane Simões - Orthoface Odontologia",
+            "nota": 4.8,
+            "avaliacoes": 73
+          },
+          {
+            "nome": "Dra Camilla Costa Almeida",
+            "nota": 5,
+            "avaliacoes": 11
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "6 clínicas varridas, e a rede não está aqui"
+      }
+    ],
+    "manchete": "31 bairros medidos · a rede está em 1 deles",
+    "leitura": "O bairro com mais clínicas é Centro, com 59 clínicas varridas, e a rede está lá.",
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 161,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
+      "procedencia": "medido em 161 clínicas varridas, 1 medição"
+    }
+  },
+  "movimentos_do_mercado": {
+    "eventos": [],
+    "resumo": {
+      "praca_id": "uberlandia",
+      "rotulo": "MG · Uberlândia",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
+  "imprensa": {
+    "medido": true,
+    "total": 52,
+    "mostrando": 12,
+    "recentes_30d": 23,
+    "manchete": "23 matérias sobre a cidade nos últimos 30 dias, de 52 já lidas",
+    "porque_vazio": null,
+    "materias": [
+      {
+        "titulo": "Com apoio da torcida, Uberlândia embarca para a decisão na Serie D do Brasileiro - ge",
+        "veiculo": "ge",
+        "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQUmlCMXR4YjRWQ1VnUDRyQnBieWJmM0toUDFXcFB5N0RRQmR6SjMwa0FQczRoWV9pR2xtNFYwRVBlRHBDOWZyQ2tDTGp0eHhqT0lQYnFkVlkwaEZFSmRzUXJnUGNCbDJiTFVkTmxDQlloNXZ6T292VWtPRHBxSUprV2tycFBENGcwNEw5ZkhRY1NiWlZtOFNWN21jUmpkWDg1WWZKUjN2bko5aHhDcm8zZTB0MFBFa1BFZGFtWkZqclBPRW5zcnBSSUFJSk5QUUN6S0tYMHZqRXdRN0llSUZ2VkJDZG5uaTJCOXVyQWJsRUdDTXotXzRJMHd5TUI0a2xv0gGPAkFVX3lxTFBudlZMWEMzYVoydkZBclNXNDhHTGZ5RUNmNVV2NDBzdTJtRkFKcHhRTDdzcUpNZ3VrRkFmVE5XSDhFQ0FEeTN1dnhZbFYyR2dwNnRialFpeGhYUHlWMmJKMzdsYVNrYlVSRnJFVGVVQlRuTV92THhVSk1wTG5zYXBIZDU4MUhNTlMwV0pDRFBuT0wyVVlmdnVZR3lqV21UUmE5ZFo4YURTYmdmZ09fenVPU2p6eE1ZdHRwdWlZLWVFSHBuaGtpS3Rxc3kwckl4V1cxV0wtZnpCWUJocVNoQ2Fvc1pUdV9NYVFmTDJjbnJQTzRnYmo2bHNXb1F1RUQ0eFBCVzVLeG5qSUVZdVBncVE?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Projeto quer transformar Uberlândia na “cidade dos ipês” - Regionalzão",
+        "veiculo": "Regionalzão",
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPbWpVZUVnY2V3MWFMb0FOY1NFQlBwU25mdUMzb3hNaEV0aF9KNjBHSEZtUXNIdG0tRmlBZm43ZmVMaE1iSTB0UWhWYjhqNkFCYjduaE1GNlNRYkxSb0NJa1hMMmJqdjBrRlFUaDRSdXM3enVEdjhVNkl5TXp6LU1QejZpX3QzajNUUFdnTDM3TmFKZw?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Homem que invadiu área restrita de aeroporto de Uberlândia e ficou debaixo de aviões da Azul firma acordo com MPF - aeroin.net",
+        "veiculo": "aeroin.net",
+        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNWXV4eUtTNHFUU1g5RlNvd0RqR2RMVTV6b0N4UGcybW9TYmpnZ3loMXJiR05DMWY1ZlJXNy12TExhbjc4SG5kNXJPTlpSX25XMnZESEltYk1UYXlfaHQ3aXJvcEVEN1dlbFJ5R0F4dGZvLWtUSlVJNkFPV0Nob2lMcUc3VFp5b3BBVlg2aUtXWG1xNmY2ZUtXel9NQkd1NG5HUEhvLWhmeG5Tek51SXlwc0F4UlY1UUdlM1BFdEpoQlhqbnFvbFdDTnRrZEVtUdIBzgFBVV95cUxNWXV4eUtTNHFUU1g5RlNvd0RqR2RMVTV6b0N4UGcybW9TYmpnZ3loMXJiR05DMWY1ZlJXNy12TExhbjc4SG5kNXJPTlpSX25XMnZESEltYk1UYXlfaHQ3aXJvcEVEN1dlbFJ5R0F4dGZvLWtUSlVJNkFPV0Nob2lMcUc3VFp5b3BBVlg2aUtXWG1xNmY2ZUtXel9NQkd1NG5HUEhvLWhmeG5Tek51SXlwc0F4UlY1UUdlM1BFdEpoQlhqbnFvbFdDTnRrZEVtUQ?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "VÍDEO: Cascavel aparece em garagem de casa em condomínio e é capturada por morador em Uberlândia - G1",
+        "veiculo": "G1",
+        "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQSzJnbEpFVnk1aE1GVS1pLXVXaU1EaFpydjVkZUNUbXk2aVZSTDVmbWR5Z2hteTN0Z3BtdzMwSlYyRzlZV1JBYUJCRjRWNTY1TXRRQmVvU0FIUW50Rkh6S2w3RlVVTmhycEVHMkpYdmRLdWFlTGJROW9Sc3VHbE4tVWxwMk5ZbzhZakRaVmUyZUFQLXI4cGNFc0FWSnFoZHVsdFFaVVIwaTk0R3hOWEQzTjNnZWVjNXFjRFNrc0hvclpReENJbmRwaF8zeWQ3SlVkdnFZenRydm5kUnBWQkRpNUJ3TmJwdmdBTjIwUGg1bmhqWXFK0gGDAkFVX3lxTE5nZmM1WHJyWkUtWURLYzM0SnF3UTZOQnJ1d3NhVVhOWi05S2lwdDFCNUtnN05oaFp0MzdoZXBjeHE1SElpOHlPc093NFRFbzl4QWV2UnBXYlg5VVVmbm1IYTB5emRhdC1JSE5GS0ItcEQ4V1N2dFlZUkdnWHpiYTNHVXVIUXVJbGVhX1Q5X3FIa3NhbllyNkN2ZGFCdEdsMHR1T2loTFJHQ0gxMTd5WUZWdlhwU0V3SktVb2hQdmEzOElCWWJfcFdMVkpXczQ5STBqR3c0NlhVYms1RXAyN3A1OGhwZ0RMRDlXYXVRbWtYbmdsNHVESnRYdUEtMWwzTHZ4R1U?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Resultado Lotofácil 3759: veja cidades das apostas de MG premiadas no sorteio - Rádio Itatiaia",
+        "veiculo": "Rádio Itatiaia",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOWjdvZlE2X29rZW1TWkYxT2p2MHpHbTV2aFM1andXdk1ub1BkREYwU0xXenpYRnNtTmlla0VrQ19GX2Ztc3B3NTZUVDdPLTJFaDRSX2dGa0dqY19nZi11SUd2ekZhS25mTmZCQWZhWHkzUG16U1ZRZ2tObWk0SjJHZUFzYVRFTHl1UndRV0c5S2hpd2oxbFNXLVFTeVp4dE0yMktvcXEzYTlRa1d3X3Q2OUJQTW9Hb3JBT2NfLTZQWUs?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Jovem de 20 anos é morta a facadas pelo companheiro em Uberlândia, em MG - Rádio Itatiaia",
+        "veiculo": "Rádio Itatiaia",
+        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQZ2tJckt5M2xYS1hhVTVvby1WaVJPbjhlaFExVVRCbzlSZ0NLM1ZSU3lPRjhiM2k0NnFUeUxPQXN6cV8xQlBoS2xTNFpTdEdCTGNxaFBZemw5aWtOOU82NGpEMnVsRXI4QjZHYVR2QURZUzdhdkNGenVCNTFHenFFaklYZkh3TzZWV2VRdHRMMG84bE8wRUhrdFM0ZDV0djdQNlRvRW5RdUJ1UXZ6RE94RkRBY0FEMy10WEE?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Uberlândia volta a receber maior congresso do leite do Brasil após sete anos - Regionalzão",
+        "veiculo": "Regionalzão",
+        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE83b01yNk9jNWdEWEk4TEc0Ym41dWRCMUdRcDVYUXdON0xuNWRhUnRVenFvVnQwMVJJekMzZ2tGNlFuVW1rTVJ2RzkyMFVjTjRmY3diNzhmT2xBa0tDUHdxZmMxXzNxaEhTaEdTeXdILXVHa1Q3WU5GQjd5aGk?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Previsão do tempo em Uberlândia (MG) hoje: veja como fica o clima nesta terça-feira - Terra",
+        "veiculo": "Terra",
+        "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQY040ck1wZ0hGOEwwd0JTcVpaZVc3cGtSMFlRM1Nla2o1QmVJdmoxM3dMZzUyM3ZQeEJ1YzVHMGUxMnF0YUtrVktkcTBWRXVHSEdaaGE5NEFrWjF1WGgzMUZXSkNwUDg1V2F0SmdfVFZiV3VaUGRTRUJiSlgyZzNqWWJWVGxkdzMwaVVvcTI4LXlfM3RENi1HazlXY3NrS1JIVDltNjF1akFzTU9nTmV6d0ZtN0NXRGdtUUN2V21VWUxmeVBpN0hXajNlUGNSdVhpb1g2eERZMmYzd0wxcUZURFJZd0w3cGo1azB1M2dlcFkzYTZWOTk5VVZCekdpeVpzRGdWaDVR?oc=5",
+        "publicado": "2026-08-11",
+        "dias": 2
+      },
+      {
+        "titulo": "Jovem de 20 anos é morta pelo marido no bairro São Jorge, em Uberlândia - G1",
+        "veiculo": "G1",
+        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQR3lXaThVcFFtczZvZjVUR3lmNG9yY25GdFh5MXFRSDZWN3BtYnR6WEpIUGM2b0F3V04tTUMxYmItVzVaOGg0UE84SzA1eVhzNU04dllUc3FQTHZKZ28zRWVYeW5SWWxZT3ByUXpmS1lPSFQyODlXRkxGamxWR3FQdkVKU1dRRHN6UGZJcFgwQTlHc1VhdExaZWg2WWpUMWpWV2NDLS12MXZ3SF9jc1M5aHVaY2lqQlRGRElHSF9JRjlMbXNIUXB3VkRnUm1RcHhTTlJV0gHiAUFVX3lxTE9XVjZZY3FXWUdVU3RMX3VhRmdRZnlYMjhmQVplc1Iwa2d3VFFfd0lMRXc5dmhtdWFJeEVEU3NUYTl2clNrSkdPd2lQV01ZZjN6a1d5aG0tU280SjhkcEN4cnJMcGxnUkJPZFJfZ3lTalNyNWlMckczSHNFT0ZCaWE4enNwRFNMRlBrS2tadkYxbE1fWUVlWTFUU1I1WlNtNGZWTDFicURiaENnMlJ5dUtsSTltQnVNTllvNHQ3R1E3NHU1ZVdSeWFycldjLUhyRE5zazZhQ3kxbjdpSTQ2LXhkSnc?oc=5",
+        "publicado": "2026-08-11",
+        "dias": 2
+      },
+      {
+        "titulo": "Confira as vagas cadastradas no Sine Uberlândia nesta segunda-feira (10) - uberlandia.mg.gov.br",
+        "veiculo": "uberlandia.mg.gov.br",
+        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQeVVMRUtYVDhDMUc0V20tUXZrV1p0M3hPVXdsekRlRkMtVm1OckpfYVFsd09tWWVUZUZKWFNXRjlLWEstSnNpWGtxSUFEamNTR2RFSkc3cC1BUDNFQXItZDJQSE9kQkpmLUctX3cyQzg5RGlLMTFsU2VmdFk2ajlFYUtXd2pGODFEUVdKbTBpVEtqYXFpeEY4UEU4SDV1S282QXJFUUw3SWVRbFhPT3FuUDRWeHZ4eTNfVXc?oc=5",
+        "publicado": "2026-08-10",
+        "dias": 3
+      },
+      {
+        "titulo": "Previsão do tempo em Uberlândia (MG) hoje: veja como fica o clima nesta segunda-feira (2026) - Terra",
+        "veiculo": "Terra",
+        "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQOFNiQlJfb2hSUnM2WXpBci1VeGxyaEI4TkxiNmJNTmZQbnYxamlRQVpNV1lCUTUxSEFwTUJrMWd2SF9sbnhuczk1YkN2ai04a2pUUkVZaEhvbHR4ZHpFeWNCS0Z5NzQ0WlJyTWZrbFRoUnctRmJoWnA1TDZvTkY5dmQ0SE9IczNhWW01cDh3MWRWaXB4S2dYLTdfdVpsaldURTE1MW9FSmpET0dpZTJ4Y3NUYUdDQXZCaFM2dGhtWnBTV0pBU3YzTEtQTFdHYjFJd0ZNZmEtUUhUUHJsUUVjMlJsUWNEMExQc3h1R200ZW1fQmo2Qy1rZTBERVNkbzFsZ3BxLTF4bEFmcThycGtR?oc=5",
+        "publicado": "2026-08-10",
+        "dias": 3
+      },
+      {
+        "titulo": "ABC e Uberlândia saem na frente nas quartas da Série D do Brasileiro - progresso.com.br",
+        "veiculo": "progresso.com.br",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZHIzVG0wNWN3Rm95T2Y1c2MyZ0c1N3NselBRMTNkSk9uZDFRZEh3OVJlR19DNDg2WXV5T1VEZW1fRmF0WVNTZ08tOGRsZVdIRWJ3RFhQQXNjcVZUZTVLVks2aXR5TlN4NWQtNE1nekFyWjBFbzdlYmtvcW94SzBwQmdQVTc5VWZrR1k1d05DcXVyMFI2Q2NMQVk0QWgzV3R1bDA2OVJCbTZhWWl0VGtXNldYM0gtdw?oc=5",
+        "publicado": "2026-08-10",
+        "dias": 3
+      }
+    ]
+  },
+  "ritmo_de_publicacao": {
+    "medido": false,
+    "perfis": 0,
+    "vivos": 0,
+    "parados": 0,
+    "manchete": null,
+    "porque_vazio": "nenhum perfil medido nesta cidade",
+    "lista": []
+  },
+  "placar": [
+    {
+      "local_id": "inove_odontologia_e_saude",
+      "nome": "Inove Odontologia e Saúde",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": 763,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "oral_unic",
+      "nome": "Oral Unic",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.8,
+      "avaliacoes": 705,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "clinica_dentista_do_povo",
+      "nome": "Clínica Dentista do Povo",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.7,
+      "avaliacoes": 694,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "primer_odontocenter",
+      "nome": "Primer Odontocenter",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": 677,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "sorridents_clinicas_odonto",
+      "nome": "Sorridents Clínicas Odontológicas Centro Uberlândia",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.9,
+      "avaliacoes": 651,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "clinica_gathi_odontologia",
+      "nome": "Clínica Gathi Odontologia",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": 644,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "classe_a_odontologia_espec",
+      "nome": "Classe A Odontologia Especializada",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.8,
+      "avaliacoes": 463,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "vivadent_dentista_em_uberl",
+      "nome": "Vivadent - Dentista em Uberlândia",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.9,
+      "avaliacoes": 431,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "be_clinic_odontologia",
+      "nome": "Be Clinic Odontologia",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.9,
+      "avaliacoes": 333,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "dr_gleisson_r_a_marques",
+      "nome": "Dr. GLEISSON R. A. MARQUES",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": 324,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "orthodontic",
+      "nome": "OrthoDontic",
+      "tipo": "franquia",
+      "proprio": true,
+      "nota": 4.9,
+      "avaliacoes": 308,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "orthopride_uberlandia",
+      "nome": "Orthopride Uberlândia",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.6,
+      "avaliacoes": 278,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "sorria_roosevelt",
+      "nome": "Sorria Roosevelt",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.6,
+      "avaliacoes": 276,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "odontoclinic_uberlandia_ja",
+      "nome": "Odontoclinic - Uberlândia - Jardim Patrícia",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.9,
+      "avaliacoes": 266,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "clinica_dentista_do_povo_u",
+      "nome": "Clínica Dentista do Povo - Uberlândia (Floriano Peixoto)",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.2,
+      "avaliacoes": 257,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "orthodontic_centro",
+      "nome": "OrthoDontic",
+      "tipo": "franquia",
+      "proprio": true,
+      "nota": 4.2,
+      "avaliacoes": 61,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    }
+  ],
+  "funil": null,
+  "temas": [
+    {
+      "tema": "atendimento",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "uberlandia",
+      "pct": 0.6986,
+      "n": 1400,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "preco_custo",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "uberlandia",
+      "pct": 0.0257,
+      "n": 1400,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "agenda_espera",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "uberlandia",
+      "pct": 0.0307,
+      "n": 1400,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "comunicacao_resposta",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "uberlandia",
+      "pct": 0.0293,
+      "n": 1400,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "qualidade_resultado",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "uberlandia",
+      "pct": 0.5421,
+      "n": 1400,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "confianca_medo",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "uberlandia",
+      "pct": 0.0529,
+      "n": 1400,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "contrato_burocracia",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "uberlandia",
+      "pct": 0.0136,
+      "n": 1400,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "pessoas_nominais",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "uberlandia",
+      "pct": 0.08,
+      "n": 1400,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "localizacao_acesso",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "uberlandia",
+      "pct": 0.0564,
+      "n": 1400,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "recomendacao_lealdade",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "uberlandia",
+      "pct": 0.2807,
+      "n": 1400,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "dor_medo_dentista",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "uberlandia",
+      "pct": 0.1064,
+      "n": 1400,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "resultado_autoestima",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "uberlandia",
+      "pct": 0.1343,
+      "n": 1400,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "explicacao_clareza",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "uberlandia",
+      "pct": 0.0579,
+      "n": 1400,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "aparelho_tratamento",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "uberlandia",
+      "pct": 0.0286,
+      "n": 1400,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "familia_filhos",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "uberlandia",
+      "pct": 0.0329,
+      "n": 1400,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "tempo_relacao",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "uberlandia",
+      "pct": 0.025,
+      "n": 1400,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    }
+  ],
+  "sazonalidade": [],
+  "sazonalidade_estado": {
+    "tem": false,
+    "medimos": true,
+    "por_que": "o Trends não publica índice de cidade para este termo: das 124 cidades de SC, das 186 do PR e das 108 do PR com o termo mais largo 'ortodontista', NENHUMA teve volume — Londrina e Mafra incluídas, com valor 0",
+    "as_duas_travas": {
+      "volume": "pelo menos 55% das semanas com busca e 9 meses do ano",
+      "estabilidade": "o mês de pico repetido em pelo menos 3 dos anos medidos"
+    },
+    "veredito_por_uf": [
+      {
+        "regiao": "MG",
+        "porque": "pico_nao_repete",
+        "semanas_com_busca": 230,
+        "semanas": 261,
+        "pico_repete_em": 1,
+        "anos_medidos": 5
+      }
+    ],
+    "o_que_preenche": "nada que seja fonte externa: o Trends não publica índice para este termo nesta escala. Só dado interno da rede (agenda, contratos) diria quando a procura sobe — e isso é teto do produto",
+    "quem_responde": "só a rede, por dentro"
+  },
+  "o_que_mudou": {
+    "dias_medidos": 1,
+    "aviso": "a praça é medida há 5 dias (4 medições) — a leitura ainda diz pouco e engorda a cada coleta",
+    "nossas": [
+      {
+        "local_id": "orthodontic",
+        "nome": "OrthoDontic",
+        "proprio": true,
+        "aparelho": true,
+        "de": "2026-08-12",
+        "ate": "2026-08-13",
+        "dias": 1,
+        "antes": 32,
+        "agora": 308,
+        "delta": 276,
+        "nota_antes": 4.5,
+        "nota_agora": 4.9,
+        "ritmo_do_periodo": 8390.4,
+        "historico": {
+          "desde": "2026-08-12",
+          "ate": "2026-08-13",
+          "dias": 1,
+          "medicoes": 2,
+          "antes": 32,
+          "agora": 308,
+          "delta": 276,
+          "ritmo_do_periodo": 8390.4,
+          "nota_antes": 4.5,
+          "nota_agora": 4.9
+        },
+        "eventos": [
+          "ganhou 276 avaliações em 1 dia",
+          "nota foi de 4.5 para 4.9"
+        ]
+      }
+    ],
+    "quem_mais_ganhou": [
+      {
+        "local_id": "orthodontic",
+        "nome": "OrthoDontic",
+        "proprio": true,
+        "aparelho": true,
+        "de": "2026-08-12",
+        "ate": "2026-08-13",
+        "dias": 1,
+        "antes": 32,
+        "agora": 308,
+        "delta": 276,
+        "nota_antes": 4.5,
+        "nota_agora": 4.9,
+        "ritmo_do_periodo": 8390.4,
+        "historico": {
+          "desde": "2026-08-12",
+          "ate": "2026-08-13",
+          "dias": 1,
+          "medicoes": 2,
+          "antes": 32,
+          "agora": 308,
+          "delta": 276,
+          "ritmo_do_periodo": 8390.4,
+          "nota_antes": 4.5,
+          "nota_agora": 4.9
+        },
+        "eventos": [
+          "ganhou 276 avaliações em 1 dia",
+          "nota foi de 4.5 para 4.9"
+        ]
+      }
+    ],
+    "contador_caiu": [
+      {
+        "local_id": "clinica_dentista_do_povo_u",
+        "nome": "Clínica Dentista do Povo - Uberlândia (Floriano Peixoto)",
+        "proprio": false,
+        "aparelho": false,
+        "de": "2026-08-12",
+        "ate": "2026-08-13",
+        "dias": 1,
+        "antes": 959,
+        "agora": 257,
+        "delta": -702,
+        "nota_antes": 5,
+        "nota_agora": 4.2,
+        "ritmo_do_periodo": 0.0,
+        "historico": {
+          "desde": "2026-08-08",
+          "ate": "2026-08-13",
+          "dias": 5,
+          "medicoes": 4,
+          "antes": 946,
+          "agora": 257,
+          "delta": -689,
+          "ritmo_do_periodo": 0.0,
+          "nota_antes": 5,
+          "nota_agora": 4.2
+        },
+        "eventos": [
+          "o contador CAIU 702 — avaliação removida",
+          "nota foi de 5 para 4.2"
+        ]
+      }
+    ]
+  }
+}

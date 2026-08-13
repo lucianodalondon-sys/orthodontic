@@ -1,6 +1,6 @@
 {
   "praca_id": "sorocaba",
-  "corte": "2026-08-12",
+  "corte": "2026-08-13",
   "rotulo": "SP · Sorocaba",
   "uf": [
     "SP"
@@ -285,6 +285,220 @@
   "bairros": {
     "praca_id": "sorocaba",
     "rotulo": "SP · Sorocaba",
+    "territorio": [
+      {
+        "local_id": "ortho_soro_vila_formosa",
+        "unidade": "OrthoDontic Vila Formosa",
+        "medido": true,
+        "location": {
+          "lat": -23.463836,
+          "lng": -47.478368499999995
+        },
+        "bairro": "Vila Formosa",
+        "clinica_mais_proxima": {
+          "nome": "OdontoCompany Sorocaba - Zona Norte / Implantes e Ortodontia",
+          "km": 0.05,
+          "avaliacoes": 417,
+          "nota": 4.4,
+          "bairro": "Jardim Maria Eugenia"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Sorridents Clínicas Odontológicas Itavuvu Sorocaba",
+          "km": 0.08,
+          "avaliacoes": 454,
+          "nota": 4.9,
+          "bairro": "Vila Formosa"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 4.4,
+          "avaliacoes": 116,
+          "nota": 4.5,
+          "bairro": "Centro"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 4,
+            "de_aparelho": 1,
+            "da_rede": 0
+          },
+          "2km": {
+            "clinicas": 9,
+            "de_aparelho": 1,
+            "da_rede": 0
+          },
+          "5km": {
+            "clinicas": 78,
+            "de_aparelho": 11,
+            "da_rede": 1
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.05 km",
+        "proximidade_entre_unidades": null,
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 142,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 142 clínicas com coordenada, 1 medição"
+        }
+      },
+      {
+        "local_id": "ortho_soro_centro",
+        "unidade": "OrthoDontic Centro",
+        "medido": true,
+        "location": {
+          "lat": -23.498978500000003,
+          "lng": -47.458619
+        },
+        "bairro": "Centro",
+        "clinica_mais_proxima": {
+          "nome": "Melhor Sorriso Sorocaba",
+          "km": 0.06,
+          "avaliacoes": 46,
+          "nota": 4.5,
+          "bairro": "Centro"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Odontoclinic Centro Sorocaba",
+          "km": 0.19,
+          "avaliacoes": 489,
+          "nota": 4.9,
+          "bairro": "Centro"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 1.43,
+          "avaliacoes": 111,
+          "nota": 4.3,
+          "bairro": "Jardim Faculdade"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 47,
+            "de_aparelho": 7,
+            "da_rede": 0
+          },
+          "2km": {
+            "clinicas": 97,
+            "de_aparelho": 12,
+            "da_rede": 1
+          },
+          "5km": {
+            "clinicas": 132,
+            "de_aparelho": 14,
+            "da_rede": 2
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.06 km",
+        "proximidade_entre_unidades": {
+          "km": 1.43,
+          "unidade": "OrthoDontic",
+          "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+          "natureza": "inferencia"
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 142,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 142 clínicas com coordenada, 1 medição"
+        }
+      },
+      {
+        "local_id": "ortho_soro_jardim_faculdade",
+        "unidade": "OrthoDontic Jardim Faculdade",
+        "medido": true,
+        "location": {
+          "lat": -23.5113514,
+          "lng": -47.4626071
+        },
+        "bairro": "Jardim Faculdade",
+        "clinica_mais_proxima": {
+          "nome": "Uniodonto",
+          "km": 0.26,
+          "avaliacoes": 368,
+          "nota": 4.7,
+          "bairro": "Jardim Vergueiro"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "OR2U Dental Studio - Dentistas em Sorocaba",
+          "km": 0.35,
+          "avaliacoes": 746,
+          "nota": 4.9,
+          "bairro": "Jardim Faculdade"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 1.43,
+          "avaliacoes": 116,
+          "nota": 4.5,
+          "bairro": "Centro"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 51,
+            "de_aparelho": 4,
+            "da_rede": 0
+          },
+          "2km": {
+            "clinicas": 98,
+            "de_aparelho": 11,
+            "da_rede": 1
+          },
+          "5km": {
+            "clinicas": 126,
+            "de_aparelho": 13,
+            "da_rede": 1
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.26 km",
+        "proximidade_entre_unidades": {
+          "km": 1.43,
+          "unidade": "OrthoDontic",
+          "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+          "natureza": "inferencia"
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 142,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 142 clínicas com coordenada, 1 medição"
+        }
+      }
+    ],
+    "clinicas_com_coordenada": 143,
+    "clinicas_sem_coordenada": 0,
+    "raios_declarados_km": [
+      1,
+      2,
+      5
+    ],
     "bairros_medidos": 42,
     "clinicas_medidas": 143,
     "sem_bairro_no_endereco": 0,
@@ -1023,12 +1237,22 @@
       "procedencia": "medido em 143 clínicas varridas, 1 medição"
     }
   },
+  "movimentos_do_mercado": {
+    "eventos": [],
+    "resumo": {
+      "praca_id": "sorocaba",
+      "rotulo": "SP · Sorocaba",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
   "imprensa": {
     "medido": true,
     "total": 54,
     "mostrando": 12,
-    "recentes_30d": 14,
-    "manchete": "14 matérias sobre a cidade nos últimos 30 dias, de 54 já lidas",
+    "recentes_30d": 27,
+    "manchete": "27 matérias sobre a cidade nos últimos 30 dias, de 54 já lidas",
     "porque_vazio": null,
     "materias": [
       {
@@ -1036,84 +1260,84 @@
         "veiculo": "Prefeitura de Sorocaba",
         "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQR0J0X3E4MmpkNkp1MGp3QzViSm5vLTlYZmdUOWNLU0JKWXk1QUNCcWJSanpGSmVNUlJkN3Q4NXFyX1RGaFFsME9PdEJ1ZXhoT2Vfcm9rd2ppU2dsMW45d0NMU0RzcEtlS0xHcEUzdkxKVHVNZTN5N0JwR0FDWjgtZ0hVZ3daVHVoNGJVRVJUMC0wMXZTQ0xxZ0N5WmVfU3NiOWVoT0FLeVFIdVByQzBtSlhXMHI?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "MP aponta irregularidades no Conjunto Hospitalar de Sorocaba e vai cobrar estado e gestora quanto a melhorias - G1",
         "veiculo": "G1",
         "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQTFdKY0taY1BmYUJneU82X3VYMjdiWmc2UnhoWVZQNHNjMmRzZjNEYzNJLTZ5UVBpV0NkcWxKeVFuempWMy1XbTdWcGxDdzBiWlZSWG9uYl95Z3g4YXdYSUJvWVI5NWtCSWV4Z2FtWE11X1NnbllvaG9pbUdkaTVuc3VneFVvd2pWeU96eER0NXdBUdIBoAFBVV95cUxORWw2ZmpYYmZsVjVTSDNHOGtEZUR1MU1HaDMxeWs3NUFGX2dJNl96TEVRU19Za014QlFJMmk0a1pTTzI5cGlaWkJPZnltRVNqTUxWZmF2WGdOT1lTZl81bDdOM1lURFdNemt4Sm5zUENnTGJhdGxpWjA5eU9nbGR4R1hsWjRvRGliVElEMU05RTRIWDJXSDhFeDI4RHlPMEtI?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Homem condenado a 23 anos de prisão por estupro é preso em Sorocaba - G1",
         "veiculo": "G1",
         "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPalBEMzNkWnVjdlozWDMzMzg4WVVLRXA0dzhnb0VaeVN1ZWlYZHpyVEhWMDhTY1JxcnU3Nms1V0d0TGdyRnpjcGFlU1E5dDlRQms1TTlfaldGa3JTYzNSMFI0cTIzWW9ZY0NSa3FnRWF6aWdGNmpwSVp1ekU0UkZ1SHhkOTFsLTkxaGpvV3lvbXZ1eTg4TlN6WHBjTkFfTmho?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Sorocaba: Cras Móvel atende na UBS Vitória Régia - band.com.br",
         "veiculo": "band.com.br",
         "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNU2wxRjJxc05MSjU1V1pnWW5tWjlqWWx1bGs3Ml8tRnZYRUt0MGdock5kejVxS0JMc0MtTlA0WjdFZ2JqazJPdi1PX1UxcUNtLXhiY1JvN0U3SENyekhWNWxZZms3NzAyYzFDWkdyTGRoZUN0V2dqcDRPZ0hlanVxMk9UMXNtTGFCRmFXRmZPbWRGbG9QOW8zT0VpaWk3bU5LY1pjTE9BbFJ2dGZIVkV2XzQyYlVLem9HQ3dHb3dvNA?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Quais são os 'Sete Totens' de Sorocaba? Conheça parques, mirantes e cartões-postais da cidade - G1",
         "veiculo": "G1",
         "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQWndIbTFlMU4wM0lIRFk3ZlNwdGNLVFMtM3lCX0FBajlWWnVIN3FYbUdxb0VYUEc1czdHam8wVFpzS3NVbWp0OXRXTE1malg4NFJlUGZLYkIteXFYbXc0VUFYcnNGQWNxTEVhUElWdURWRV9TY3Y1MVByLTM5QWpJNXZ6ckJmVDNLOE5zZWpuYktlNFpSbndOb01DREszSmY5aVpxYnBJMGxYZDh1ZU5fRmdDd29rT05BVk4yd3JpWWtrSDNaN0RPQVZkcC1nM3VMVEVDazV2SVczYXdnaWdMWG1CLVNyYTAxeHc00gH6AUFVX3lxTE0wZkZrV1lzaWdsOXdCSFNwWDZVNTJFOEt6eG5kYm9VRkZuY3psdlRQanJRNWcyOTdYRExtbWFoNWltTHAxT2VDcWp5ZUR1ZE84QmFqMUV3VmV6TDJwWXZWdzBBZ2pFUGU5M0lHRnB3SFpRMThzZG5GbHluNG5QWEpjUFoxdTRiTU5BLXVYSHVFUTBUay1maEhZUUhpUXBZbkl2NVFxUjI3SzJudGRnOGJOWVVodVR3YUxwbVQzN2RaMUtjdjBlTWVadlNLOWNOcUtTa2h5NGNSaWJaS1ZJZXR6STdKbUxZeVUyMVdsT3lIT094X2JhR0phQVE?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Adolescente que estava desaparecido em Sorocaba é encontrado em Salto de Pirapora - G1",
         "veiculo": "G1",
         "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPX2VtNjBYYkZsbWtFaUpSVDFiU21LaXA3VE1NOWVnS0dSYVFrY3BSbTV3aUZSSGY2LUN5dTFlLUhsZ2JhMzNkc2Vyd0xnTDc5S0wzeVRoQkQ2Umg1alIyeHdmSU1xMTBqNHp2OHlCa05GMkR6YmpkS1djbUp0SDhtYzF6b29IcXR2STNtbFVidXl2b3RJZV9aMEhpSnNqbUp1U2wyOS1BemdfNFZyY051cEg0WElaUHFydlBxam9USXhtM1U0Z0FaakF2YkEyZjJrTWo5cU9zZDNQbXfSAeoBQVVfeXFMT1o1a2NUaEJIczhMM2N1ODN1YVgtd2NsaFZFd0toanFlbEZRU0w3WlpWYjhoX1ZtVThxSzRfSURyc1h4UXVqY3M4aTRWTWg1Y2xLeE1vYXZzUUVFN0ZVN196Z0dId25lbGYtZTJlTmhvWUkteFhMeTBsMmhCcmVMeWJybHIwVENsY2t2UTBPaU5TWXhjckdzNkZiQ1o2dkhvT1RRbmljMjlOa0ZibUN2T3lURlM5Z0ZUbW9JNml4eGs1Wi1HUmNzSVo4QUlUeE5Qa19reFZVTFJGU0tocGZQS3AtQTNGQzEza253?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "OAB Sorocaba oferece palestras gratuito sobre prevenção à violência contra a mulher - G1",
         "veiculo": "G1",
         "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOTzhzZGVYNlpCSkt5YVphUnZ0OF9uR29kMHJqNTVQZ2ZFazRHVnZONUpNVFFkd05RbmtIVHBtUVAzeERqVFZaT3B3TDhTZFYzaURVTjVJRURXYUxYMjY3bDF5NEIzR1ZuM0o4MkRzOFBuNWlYdGJyRU54VUJZSDhKSlR0RVF2YzFxZkg3Q3lheUwzaTNCcm9rT1MwZ0NXcnFwS0p2ck12cFN2NUJoRjg5RHlyZjFyS0M3TWpMMzVHRFp6SXlyZ1pIX3RnSG5mX0NhU2JycVpIMmxieFNzcW0wUkxFaHJVVDZReTlMY1BDaFYxc05YVlJoZGktT0VRNUhNRXM0c9IBkwJBVV95cUxQT2lOUFFBdVBib0hFN2Y1d3psNTM4c0wzY1d0am5oRU9Nell6azc2T1RzU01WM2Rmb1FQWk1vZ3pnQWZNa25zSk1RR3NocnMxX21jQTNZS0lCQzJRdVhsY2R4M2h0OF9OT2lTWFFvalVGbGNOQnpYR3VYazFZREFjTmoxRE1STnczRlVIbTR3UUpELUZZV0ZUS3RRTmI1M2lCUWNVUWltX2JWdVpnYWJSd0l3NkhobWdTS2REbXVvS0ZMZkpNU0dLbWFKTV9PZFAxd3VPMUFJejN6eXRPRGFqUlRBMEktZ3NBTWVGMm9tdDVjcy1EekFvaDJ2X2plTzBMUWNDV3lZQ05yNmNlWkx5RW5FOA?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Câmara Municipal de Sorocaba - Câmara Municipal de Sorocaba",
         "veiculo": "Câmara Municipal de Sorocaba",
         "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUll2YUhOMWlZV09CTTBOOWJ3MnR5bThIeDdiZlUxVVoyTzl1YTFuMzNvUVBRcVBScjZrdUhXaEUtbjI4RGszODVZSnRVSlYxeHR6cmF1ZGxCdTB3ZlNGTFVJNmhWTHRuSlNMbUpaSVBnSTNPc012YmNmcVB1TzU0ZnQ0RQ?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Conselheiros do Coren-SP visitam unidade AMHEMED em Sorocaba - Coren-SP",
         "veiculo": "Coren-SP",
         "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPM0FrOFlURXhCb2ZXTVpRRGdjendhdXV0Y1g3WkhWY3RPOW9ZRlR0eEFFY1RuTHZjMTJSczJuVUQyY3laOVFreUFQd3BOUVczSzY5X0ltZW9JTzFCNmVjX2Z1RjVhaDhDVWtoRGNHMDFkZXhXdHFibUJYLS1aQlJCYnczZm9ITnVyR01zcnlIVzVFVEp4U0xTdXB3alJ0VEZPRkhV?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Processo sobre taxa para movimentação de aviões no Aeroporto de Sorocaba-SP é extinto pela Justiça - AEROIN",
         "veiculo": "AEROIN",
         "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOQnFEd1d5N0pfT0p3LTJ0OXZZUzcybUxySDJQdV93R3hIYy02YXZsTFlIRkRtckZOLWpPdGpmNTZ3NG1haUV4aG9uWTY1b2QtcXprYl9hOUdFWjRXaXY1Y3dkQnJOYmZoUy1LMzJmdklhb1JGaWxxYzM5dGVxSks0UThMcEE1QVB1NEtzSG5iZi1qUTh3Rzg0azhGUVFGMWxfaUVZcEgzVW4zb0JWMVZJVjFCNGFaaExnT3fSAboBQVVfeXFMTkJxRHdXeTdKX09Kdy0ydDl2WVM3Mm1MckgyUHVfd0d4SGMtNmF2bExZSEZEbXJGTi1qT3RqZjU2dzRtYWlFeGhvblk2NW9kLXF6a2JfYTlHRVo0V2l2NWN3ZEJyTmJmaFMtSzMyZnZJYW9SRmlscWMzOXRlcUpLNFE4THBBNUFQdTRLc0huYmYtalE4d0c4NGs4RlFRRjFsX2lFWXBIM1VuM29CVjFWSVYxQjRhWmhMZ093?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Protetora dos animais tem seu trabalho reconhecido com o Título de Cidadã Sorocabana - Câmara Municipal de Sorocaba",
         "veiculo": "Câmara Municipal de Sorocaba",
         "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNU0NZZ3FwOUx1ajlMaFYwUUNVZlZkZ1pOR1FwZXRoMzM1S1N2emlGb2VwdU5VT3NKd0NmbVNMU0pvU19GTU5ITzVYclBDTzdFODRHQk93LTA1YXFyX2dVWndFZG9KVnVqY1RBWjZESXgwekNJZ1J6WWJTM2cxTWVWSUtLUQ?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Artista sorocabano transforma momentos do futebol em grafites - G1",
         "veiculo": "G1",
         "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOYS1paGltRlNlaXhZYV96RE96R0oxQWtrdzlpakFuWm4wbGxjajdDdUMxTFBMTG1yTGp4XzJsTTBvVXBwMnQxUTJvaFRsRGN5X2x4aXh5dVBvZDFIci1BdFhfV29lTkUzaTNZR0xoYTZ3Sk5sWldnWnNzVkhLT2Vkcnp0VHVZTEVTSGR1Q0JQaHI2dWpvU2lPckwyTHRTaGo5dmlRSmhWdjlLMmNGMXkwYndaMWJsa1dMZmFzaVBDSmRMRFVDVEx5dWh1d3V3RHdQUVB5b1VVOG4yMlF5Y0ZOb3p4bmVISk9odVhKZFZxVHg?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       }
     ]
   },
@@ -1129,136 +1353,136 @@
         "handle": "sorocabanices",
         "posts_medidos": 34,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 3625,
-        "frase": "34 posts medidos, último há 0 dias"
+        "frase": "34 posts medidos, último há 1 dia"
       },
       {
         "handle": "sorocaba",
         "posts_medidos": 11,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 5809,
-        "frase": "11 posts medidos, último há 0 dias"
+        "frase": "11 posts medidos, último há 1 dia"
       },
       {
         "handle": "bompreco.sorocaba",
         "posts_medidos": 40,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
-        "parado": false,
-        "curtidas_medianas": 3,
-        "frase": "40 posts medidos, último há 0 dias"
-      },
-      {
-        "handle": "fernandoesorocaba",
-        "posts_medidos": 50,
-        "ultimo_post": "2026-08-11",
-        "dias_sem_publicar": 1,
-        "parado": false,
-        "curtidas_medianas": 5554,
-        "frase": "50 posts medidos, último há 1 dia"
-      },
-      {
-        "handle": "ofertasorocabaoficial",
-        "posts_medidos": 40,
-        "ultimo_post": "2026-08-11",
         "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 3,
         "frase": "40 posts medidos, último há 1 dia"
       },
       {
+        "handle": "fernandoesorocaba",
+        "posts_medidos": 50,
+        "ultimo_post": "2026-08-11",
+        "dias_sem_publicar": 2,
+        "parado": false,
+        "curtidas_medianas": 5554,
+        "frase": "50 posts medidos, último há 2 dias"
+      },
+      {
+        "handle": "ofertasorocabaoficial",
+        "posts_medidos": 40,
+        "ultimo_post": "2026-08-11",
+        "dias_sem_publicar": 2,
+        "parado": false,
+        "curtidas_medianas": 3,
+        "frase": "40 posts medidos, último há 2 dias"
+      },
+      {
         "handle": "tvitapetininga",
         "posts_medidos": 4,
         "ultimo_post": "2026-08-10",
-        "dias_sem_publicar": 2,
+        "dias_sem_publicar": 3,
         "parado": false,
         "curtidas_medianas": 48,
-        "frase": "4 posts medidos, último há 2 dias"
+        "frase": "4 posts medidos, último há 3 dias"
       },
       {
         "handle": "churrascoonfire",
         "posts_medidos": 1,
         "ultimo_post": "2026-08-10",
-        "dias_sem_publicar": 2,
+        "dias_sem_publicar": 3,
         "parado": false,
         "curtidas_medianas": -1,
-        "frase": "1 post medido, último há 2 dias"
+        "frase": "1 post medido, último há 3 dias"
       },
       {
         "handle": "manchestersorocaba",
         "posts_medidos": 32,
         "ultimo_post": "2026-08-09",
-        "dias_sem_publicar": 3,
+        "dias_sem_publicar": 4,
         "parado": false,
         "curtidas_medianas": 19,
-        "frase": "32 posts medidos, último há 3 dias"
+        "frase": "32 posts medidos, último há 4 dias"
       },
       {
         "handle": "edir_caio_onzefutsal",
         "posts_medidos": 27,
         "ultimo_post": "2026-08-08",
-        "dias_sem_publicar": 4,
+        "dias_sem_publicar": 5,
         "parado": false,
         "curtidas_medianas": 54,
-        "frase": "27 posts medidos, último há 4 dias"
+        "frase": "27 posts medidos, último há 5 dias"
       },
       {
         "handle": "__caaiohenrique",
         "posts_medidos": 2,
         "ultimo_post": "2026-08-08",
-        "dias_sem_publicar": 4,
+        "dias_sem_publicar": 5,
         "parado": false,
         "curtidas_medianas": 108,
-        "frase": "2 posts medidos, último há 4 dias"
+        "frase": "2 posts medidos, último há 5 dias"
       },
       {
         "handle": "piunti",
         "posts_medidos": 1,
         "ultimo_post": "2026-08-02",
-        "dias_sem_publicar": 10,
+        "dias_sem_publicar": 11,
         "parado": false,
         "curtidas_medianas": -1,
-        "frase": "1 post medido, último há 10 dias"
+        "frase": "1 post medido, último há 11 dias"
       },
       {
         "handle": "biahrodriguesz",
         "posts_medidos": 3,
         "ultimo_post": "2026-08-01",
-        "dias_sem_publicar": 11,
+        "dias_sem_publicar": 12,
         "parado": false,
         "curtidas_medianas": 25064,
-        "frase": "3 posts medidos, último há 11 dias"
+        "frase": "3 posts medidos, último há 12 dias"
       },
       {
         "handle": "omarcelomesquita",
         "posts_medidos": 1,
         "ultimo_post": "2026-07-28",
-        "dias_sem_publicar": 15,
+        "dias_sem_publicar": 16,
         "parado": false,
         "curtidas_medianas": -1,
-        "frase": "1 post medido, último há 15 dias"
+        "frase": "1 post medido, último há 16 dias"
       },
       {
         "handle": "ligafutebolsorocaba",
         "posts_medidos": 1,
         "ultimo_post": "2026-07-18",
-        "dias_sem_publicar": 25,
+        "dias_sem_publicar": 26,
         "parado": false,
         "curtidas_medianas": 38,
-        "frase": "1 post medido, último há 25 dias"
+        "frase": "1 post medido, último há 26 dias"
       },
       {
         "handle": "prietoiam",
         "posts_medidos": 10,
         "ultimo_post": "2026-07-17",
-        "dias_sem_publicar": 26,
+        "dias_sem_publicar": 27,
         "parado": false,
         "curtidas_medianas": 24,
-        "frase": "10 posts medidos, último há 26 dias"
+        "frase": "10 posts medidos, último há 27 dias"
       }
     ]
   },
@@ -1334,6 +1558,16 @@
       "anuncios_ativos": null
     },
     {
+      "local_id": "sorridents_clinicas_odonto",
+      "nome": "Sorridents Clínicas Odontológicas Itavuvu Sorocaba",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.9,
+      "avaliacoes": 651,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
       "local_id": "croco_odontologia_sorocaba",
       "nome": "CROCO Odontologia Sorocaba",
       "tipo": "PREENCHER",
@@ -1370,16 +1604,6 @@
       "proprio": false,
       "nota": 4.9,
       "avaliacoes": 461,
-      "reviews_novos_mes": null,
-      "anuncios_ativos": null
-    },
-    {
-      "local_id": "sorridents_clinicas_odonto",
-      "nome": "Sorridents Clínicas Odontológicas Itavuvu Sorocaba",
-      "tipo": "PREENCHER",
-      "proprio": false,
-      "nota": 4.9,
-      "avaliacoes": 454,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -1438,7 +1662,7 @@
   "temas": [
     {
       "tema": "atendimento",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "sorocaba",
       "pct": 0.6537,
       "n": 1513,
@@ -1449,7 +1673,7 @@
     },
     {
       "tema": "preco_custo",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "sorocaba",
       "pct": 0.0364,
       "n": 1513,
@@ -1460,7 +1684,7 @@
     },
     {
       "tema": "agenda_espera",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "sorocaba",
       "pct": 0.0304,
       "n": 1513,
@@ -1471,7 +1695,7 @@
     },
     {
       "tema": "comunicacao_resposta",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "sorocaba",
       "pct": 0.0264,
       "n": 1513,
@@ -1482,7 +1706,7 @@
     },
     {
       "tema": "qualidade_resultado",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "sorocaba",
       "pct": 0.501,
       "n": 1513,
@@ -1493,7 +1717,7 @@
     },
     {
       "tema": "confianca_medo",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "sorocaba",
       "pct": 0.0317,
       "n": 1513,
@@ -1504,7 +1728,7 @@
     },
     {
       "tema": "contrato_burocracia",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "sorocaba",
       "pct": 0.0093,
       "n": 1513,
@@ -1515,7 +1739,7 @@
     },
     {
       "tema": "pessoas_nominais",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "sorocaba",
       "pct": 0.0694,
       "n": 1513,
@@ -1526,7 +1750,7 @@
     },
     {
       "tema": "localizacao_acesso",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "sorocaba",
       "pct": 0.0529,
       "n": 1513,
@@ -1537,7 +1761,7 @@
     },
     {
       "tema": "recomendacao_lealdade",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "sorocaba",
       "pct": 0.2736,
       "n": 1513,
@@ -1548,7 +1772,7 @@
     },
     {
       "tema": "dor_medo_dentista",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "sorocaba",
       "pct": 0.0588,
       "n": 1513,
@@ -1559,7 +1783,7 @@
     },
     {
       "tema": "resultado_autoestima",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "sorocaba",
       "pct": 0.1322,
       "n": 1513,
@@ -1570,7 +1794,7 @@
     },
     {
       "tema": "explicacao_clareza",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "sorocaba",
       "pct": 0.0383,
       "n": 1513,
@@ -1581,7 +1805,7 @@
     },
     {
       "tema": "aparelho_tratamento",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "sorocaba",
       "pct": 0.0178,
       "n": 1513,
@@ -1592,7 +1816,7 @@
     },
     {
       "tema": "familia_filhos",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "sorocaba",
       "pct": 0.0165,
       "n": 1513,
@@ -1603,7 +1827,7 @@
     },
     {
       "tema": "tempo_relacao",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "sorocaba",
       "pct": 0.0364,
       "n": 1513,

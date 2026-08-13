@@ -1,0 +1,170 @@
+{
+  "local_id": "orthodontic_tatuape",
+  "praca_id": "sao_paulo",
+  "apresentacao": {
+    "unidade": "OrthoDontic",
+    "cidade": "SP · São Paulo",
+    "endereco": "R. Tuiuti, 1971 - Tatuapé, São Paulo - SP, 03307-005",
+    "desde": null,
+    "medicoes": null,
+    "posicao_na_cidade": null,
+    "clinicas_na_cidade": null,
+    "lojas_irmas": [
+      {
+        "local_id": "orthodontic",
+        "unidade": "OrthoDontic"
+      },
+      {
+        "local_id": "orthodontic_sao_miguel_paulista",
+        "unidade": "OrthoDontic"
+      },
+      {
+        "local_id": "orthodontic_republica",
+        "unidade": "OrthoDontic"
+      }
+    ],
+    "frase": null
+  },
+  "rotulo": "SP · São Paulo",
+  "unidade": "OrthoDontic",
+  "cabecalho": {
+    "nota": 4.1,
+    "avaliacoes": 108,
+    "ritmo": null,
+    "meses_seguidos": 0,
+    "posicao": null,
+    "de": null
+  },
+  "faixa": null,
+  "urgencia": null,
+  "tarefa": null,
+  "acao": null,
+  "gatilhos": [],
+  "quem_avanca": null,
+  "o_que_mudou": null,
+  "sem_resposta": {
+    "abertas": null,
+    "com_texto": null,
+    "itens": [],
+    "itens_total": 0
+  },
+  "voz_do_paciente": null,
+  "rival": {
+    "comparados": [],
+    "vantagens_deles": [],
+    "fora": [],
+    "fora_total": 0,
+    "sem_comparacao_porque": null
+  },
+  "presenca_na_busca": null,
+  "jornada": null,
+  "meu_territorio": {
+    "local_id": "orthodontic_tatuape",
+    "unidade": "OrthoDontic",
+    "medido": true,
+    "location": {
+      "lat": -23.542748,
+      "lng": -46.5748943
+    },
+    "bairro": "Tatuapé",
+    "clinica_mais_proxima": {
+      "nome": "Sorridents Clínicas Odontológicas Tatuapé São Paulo",
+      "km": 0.47,
+      "avaliacoes": 1803,
+      "nota": 4.9,
+      "bairro": "Tatuapé"
+    },
+    "aparelho_mais_proximo": {
+      "nome": "Sorridents Clínicas Odontológicas Tatuapé São Paulo",
+      "km": 0.47,
+      "avaliacoes": 1803,
+      "nota": 4.9,
+      "bairro": "Tatuapé"
+    },
+    "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 6.64,
+      "avaliacoes": 22,
+      "nota": 3,
+      "bairro": "República"
+    },
+    "raios": {
+      "1km": {
+        "clinicas": 2,
+        "de_aparelho": 1,
+        "da_rede": 0
+      },
+      "2km": {
+        "clinicas": 5,
+        "de_aparelho": 1,
+        "da_rede": 0
+      },
+      "5km": {
+        "clinicas": 16,
+        "de_aparelho": 2,
+        "da_rede": 0
+      }
+    },
+    "frase_fato": "a clínica mais próxima está a 0.47 km",
+    "proximidade_entre_unidades": null,
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 184,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+        "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 184 clínicas com coordenada, 1 medição"
+    }
+  },
+  "movimentos": {
+    "eventos": [],
+    "e_da_cidade": true,
+    "resumo": {
+      "praca_id": "sao_paulo",
+      "rotulo": "SP · São Paulo",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
+  "execucao": null,
+  "meu_bairro": {
+    "bairro": "Tatuapé",
+    "clinicas": 4,
+    "vizinhos_fortes": [
+      {
+        "nome": "Sorridents Clínicas Odontológicas Tatuapé São Paulo",
+        "nota": 4.9,
+        "avaliacoes": 1803
+      },
+      {
+        "nome": "Dra. Carolina M. Ribeiro",
+        "nota": 4.9,
+        "avaliacoes": 155
+      },
+      {
+        "nome": "Alinhador Invisível",
+        "nota": null,
+        "avaliacoes": null
+      }
+    ],
+    "frase": "4 clínicas varridas, e a unidade da rede está aqui",
+    "e_da_cidade": false
+  },
+  "acoes": {
+    "arcos": [],
+    "total": 0,
+    "aviso": "O livro nasceu hoje. Nenhum arco completou 21 dias, então ainda não há veredito para ninguém — a primeira resposta vem na coleta seguinte."
+  },
+  "oferta_da_cidade": null,
+  "plano": null,
+  "anuncios_da_cidade": null,
+  "eventos": []
+}

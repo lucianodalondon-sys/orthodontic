@@ -1,0 +1,1265 @@
+{
+  "praca_id": "rio_de_janeiro",
+  "corte": "2026-08-13",
+  "rotulo": "RJ · Rio de Janeiro",
+  "uf": [
+    "RJ"
+  ],
+  "cidades": [
+    "RJ · Rio de Janeiro"
+  ],
+  "identidade": {
+    "praca_id": "rio_de_janeiro",
+    "nome": "Rio de Janeiro",
+    "cidades": [
+      "Rio de Janeiro/RJ"
+    ],
+    "uf": [
+      "RJ"
+    ],
+    "rotulo": "RJ · Rio de Janeiro",
+    "cidades_rotulo": [
+      "RJ · Rio de Janeiro"
+    ],
+    "criada_em": "2026-08-13",
+    "por_que_esta_praca": "cidade onde a rede já tem unidade e que ainda não tinha estudo. As metrópoles entram agora porque o mapa de bairros passou a existir: sem ele, cinco unidades em São Paulo virariam um número só, e o número não diria nada a nenhum franqueado",
+    "ibge": [
+      {
+        "municipio": "Rio de Janeiro",
+        "uf": "RJ",
+        "ibge_id": 3304557,
+        "populacao_estimada": {
+          "ano": "2025",
+          "valor": "6730729",
+          "unidade": "Pessoas"
+        },
+        "alvo_9_15": 502282,
+        "alvo_30_45": 1444456,
+        "fonte": "ibge agregados 6579/5938/9514",
+        "de": "dados/serie/ibge_municipios.jsonl"
+      }
+    ]
+  },
+  "planos_das_lojas": [],
+  "oferta": null,
+  "bairros": {
+    "praca_id": "rio_de_janeiro",
+    "rotulo": "RJ · Rio de Janeiro",
+    "territorio": [
+      {
+        "local_id": "orthodontic",
+        "unidade": "OrthoDontic",
+        "medido": true,
+        "location": {
+          "lat": -22.905994,
+          "lng": -43.5602357
+        },
+        "bairro": "Campo Grande",
+        "clinica_mais_proxima": {
+          "nome": "Dra Bianca Moreira | Dentista | Alinhador Invisível | SouSmile | Clareamento | Campo Grande - RJ",
+          "km": 0.07,
+          "avaliacoes": 16,
+          "nota": 5,
+          "bairro": "Campo Grande"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Odontoclínica Campo Grande",
+          "km": 0.23,
+          "avaliacoes": 973,
+          "nota": 4.8,
+          "bairro": "Campo Grande"
+        },
+        "unidade_da_rede_mais_proxima": null,
+        "raios": {
+          "1km": {
+            "clinicas": 6,
+            "de_aparelho": 2,
+            "da_rede": 0
+          },
+          "2km": {
+            "clinicas": 7,
+            "de_aparelho": 2,
+            "da_rede": 0
+          },
+          "5km": {
+            "clinicas": 7,
+            "de_aparelho": 2,
+            "da_rede": 0
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.07 km",
+        "proximidade_entre_unidades": null,
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 184,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 184 clínicas com coordenada, 1 medição"
+        }
+      }
+    ],
+    "clinicas_com_coordenada": 185,
+    "clinicas_sem_coordenada": 0,
+    "raios_declarados_km": [
+      1,
+      2,
+      5
+    ],
+    "bairros_medidos": 28,
+    "clinicas_medidas": 185,
+    "sem_bairro_no_endereco": 1,
+    "unidades_da_rede": 1,
+    "unidades_localizadas": 1,
+    "onde_estamos": [
+      {
+        "local_id": "orthodontic",
+        "bairro": "Campo Grande",
+        "unidade": "OrthoDontic"
+      }
+    ],
+    "bairros": [
+      {
+        "bairro": "Centro",
+        "clinicas": 75,
+        "avaliacoes_somadas": 6290,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Clínica Arcobelo",
+            "nota": 4.9,
+            "avaliacoes": 741
+          },
+          {
+            "nome": "Clínica Data X",
+            "nota": 4.8,
+            "avaliacoes": 716
+          },
+          {
+            "nome": "Penfold Odontologia de Excelência",
+            "nota": 5,
+            "avaliacoes": 504
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "75 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Catete",
+        "clinicas": 18,
+        "avaliacoes_somadas": 1421,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Levy Odontologia - Dentista no Catete",
+            "nota": 5,
+            "avaliacoes": 309
+          },
+          {
+            "nome": "Odontologia Siqueira (Catete)",
+            "nota": 5,
+            "avaliacoes": 213
+          },
+          {
+            "nome": "R7 Implantes Dentários e Prótese Protocolo | Dentista no Catete Rio de Janeiro - RJ",
+            "nota": 5,
+            "avaliacoes": 161
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "18 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Flamengo",
+        "clinicas": 14,
+        "avaliacoes_somadas": 971,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Odontopediatra Dra. Joseane Queiroz - RJ",
+            "nota": 5,
+            "avaliacoes": 221
+          },
+          {
+            "nome": "ESPAÇO ORAL ® Dentista Catete Flamengo",
+            "nota": 4.9,
+            "avaliacoes": 191
+          },
+          {
+            "nome": "Odonto Liuzzi | Lentes de Contato Dental | Prótese Protocolo | Ortodontia | Periodontia | Implante Dentário | Dental Tourism",
+            "nota": 4.9,
+            "avaliacoes": 189
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "14 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Tijuca",
+        "clinicas": 12,
+        "avaliacoes_somadas": 2657,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Clínica Odontológica Oral 360 Tijuca | Dentista Tijuca | Implantes Dentários",
+            "nota": 4.8,
+            "avaliacoes": 1512
+          },
+          {
+            "nome": "Emergência Dentista 24 horas RJ - Equipe Kruger",
+            "nota": 4.8,
+            "avaliacoes": 342
+          },
+          {
+            "nome": "Dra. Juliana Bendayan I Invisalign I Harmonização Facial Tijuca",
+            "nota": 5,
+            "avaliacoes": 224
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "12 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Barra da Tijuca",
+        "clinicas": 11,
+        "avaliacoes_somadas": 2937,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "IRio Odontologia - Clínica Odontológica na Barra da Tijuca",
+            "nota": 5,
+            "avaliacoes": 1173
+          },
+          {
+            "nome": "Pronto Oral - Emergência Odontológica, Dentista Emergência",
+            "nota": 4.8,
+            "avaliacoes": 455
+          },
+          {
+            "nome": "Odonto 21",
+            "nota": 5,
+            "avaliacoes": 373
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "11 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Campo Grande",
+        "clinicas": 8,
+        "avaliacoes_somadas": 2474,
+        "temos_unidade": true,
+        "nossas": [
+          "orthodontic"
+        ],
+        "vizinhos_fortes": [
+          {
+            "nome": "Odontoclínica Campo Grande",
+            "nota": 4.8,
+            "avaliacoes": 973
+          },
+          {
+            "nome": "OdontoCenter",
+            "nota": 4.1,
+            "avaliacoes": 487
+          },
+          {
+            "nome": "Click Odonto - Campo Grande",
+            "nota": 5,
+            "avaliacoes": 272
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "8 clínicas varridas, e a unidade da rede está aqui"
+      },
+      {
+        "bairro": "Copacabana",
+        "clinicas": 8,
+        "avaliacoes_somadas": 1457,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Clínica Odontológica Oral 360 Copacabana | Dentista",
+            "nota": 4.9,
+            "avaliacoes": 624
+          },
+          {
+            "nome": "Clínica Sorrio | Implante Dentário | Dentista de emergência | Clínica odontológica | Copacabana | Rio de Janeiro - RJ",
+            "nota": 4.9,
+            "avaliacoes": 472
+          },
+          {
+            "nome": "Orthopride Copacabana",
+            "nota": 4,
+            "avaliacoes": 197
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "8 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Botafogo",
+        "clinicas": 6,
+        "avaliacoes_somadas": 308,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Prime Dente Botafogo - Clínica Odontológica Implantes, Alinhadores Invisalign em Botafogo RJ",
+            "nota": 4.8,
+            "avaliacoes": 93
+          },
+          {
+            "nome": "Clinica Odontológica Botafogo",
+            "nota": 5,
+            "avaliacoes": 65
+          },
+          {
+            "nome": "🦷RP Odontoclínica - Clínica Odontológica em Botafogo | Dentista | Implante | Clareamento Dental | Alinhador Invisível",
+            "nota": 4.1,
+            "avaliacoes": 55
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "6 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Ipanema",
+        "clinicas": 5,
+        "avaliacoes_somadas": 618,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "SouSmile",
+            "nota": 4.8,
+            "avaliacoes": 316
+          },
+          {
+            "nome": "Guilherme Rothier",
+            "nota": 4.9,
+            "avaliacoes": 121
+          },
+          {
+            "nome": "Dr. Rowan Vilar",
+            "nota": 4.9,
+            "avaliacoes": 110
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "5 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Freguesia (Jacarepaguá)",
+        "clinicas": 4,
+        "avaliacoes_somadas": 386,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dra. Thayana Lopes • Odontologia Especializada",
+            "nota": 5,
+            "avaliacoes": 194
+          },
+          {
+            "nome": "Oral Unic Freguesia Jacarepaguá",
+            "nota": 4.9,
+            "avaliacoes": 140
+          },
+          {
+            "nome": "Faustini Odontologia - Dra. Renata Simões e Dr. Breno Faustini",
+            "nota": 5,
+            "avaliacoes": 43
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "4 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Recreio dos Bandeirantes",
+        "clinicas": 4,
+        "avaliacoes_somadas": 227,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Priscilla Coelho - Dentista - Alinhador invisível - Invisalign - Angel- SouSmile - Clareamento -Implante- Recreio",
+            "nota": 5,
+            "avaliacoes": 88
+          },
+          {
+            "nome": "Dra Stephanie Yone - Dentista | Bruxismo | Tratamento de canal | Clareamento Dental | Alinhadores Invisíveis | Recreio",
+            "nota": 5,
+            "avaliacoes": 88
+          },
+          {
+            "nome": "Dentista Manuela Oliveira | Invisalign, Alinhadores e Implantes - Recreio RJ",
+            "nota": 5,
+            "avaliacoes": 36
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "4 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Vila da Penha",
+        "clinicas": 2,
+        "avaliacoes_somadas": 1355,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "ApicalCenter Clinica Odontológica no Rio de Janeiro",
+            "nota": 4.9,
+            "avaliacoes": 785
+          },
+          {
+            "nome": "021 Dental | Dentista Carioca Shopping RJ | Amil Hapvida Metlife Primavida Sulamérica Unimed",
+            "nota": 4.3,
+            "avaliacoes": 570
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "2 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Méier",
+        "clinicas": 2,
+        "avaliacoes_somadas": 438,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dentista e Invisalign no Meier - Clinica Odontológica Prime Dente",
+            "nota": 5,
+            "avaliacoes": 386
+          },
+          {
+            "nome": "DENTISTA 24 HORAS ODONTO MÉIER RJ",
+            "nota": 3.3,
+            "avaliacoes": 52
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "2 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Cachambi",
+        "clinicas": 2,
+        "avaliacoes_somadas": 229,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Burman Odontologia Dentista | implantes | ortodontia | alinhador invisível | Torre Norte Shopping | cachambi",
+            "nota": 4.5,
+            "avaliacoes": 126
+          },
+          {
+            "nome": "Salim Odontologia | Dentista | Alinhador Invisível | SouSmile | Harmonização Orofacial | Torre Norte Shopping | Cachambi",
+            "nota": 5,
+            "avaliacoes": 103
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "2 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Vila Isabel",
+        "clinicas": 1,
+        "avaliacoes_somadas": 619,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "SempreSorrir Odontologia | Implante Dentário | Aparelho Dentário | Vila Isabel | Rio de Janeiro - RJ",
+            "nota": 4.9,
+            "avaliacoes": 619
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Barra Olímpica",
+        "clinicas": 1,
+        "avaliacoes_somadas": 372,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Barra Clínica Odontológica Urgência",
+            "nota": 4.9,
+            "avaliacoes": 372
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Vila Valqueire",
+        "clinicas": 1,
+        "avaliacoes_somadas": 180,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Prórir Clínica Odontológica",
+            "nota": 4.9,
+            "avaliacoes": 180
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Ramos",
+        "clinicas": 1,
+        "avaliacoes_somadas": 158,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Service Odonto Ramos",
+            "nota": 4.8,
+            "avaliacoes": 158
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Taquara",
+        "clinicas": 1,
+        "avaliacoes_somadas": 129,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "You Smile Odontologia Estética | Dentista Taquara RJ",
+            "nota": 4.9,
+            "avaliacoes": 129
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Bangu",
+        "clinicas": 1,
+        "avaliacoes_somadas": 120,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Smart Dentistas",
+            "nota": 4.8,
+            "avaliacoes": 120
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Ilha do Governador",
+        "clinicas": 1,
+        "avaliacoes_somadas": 97,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dra. Ponciana Barreto | Dentista | Alinhador Invisível | SouSmile | Ilha do Governador",
+            "nota": 5,
+            "avaliacoes": 97
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Largo Do Machado",
+        "clinicas": 1,
+        "avaliacoes_somadas": 65,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dra Sarita Guimarães Ortodontista - Ortodontia e Invisalign em Largo do Machado / RJ",
+            "nota": 5,
+            "avaliacoes": 65
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Leblon",
+        "clinicas": 1,
+        "avaliacoes_somadas": 41,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dr. André Moreira Ortodontia",
+            "nota": 5,
+            "avaliacoes": 41
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Metrô da Carioca",
+        "clinicas": 1,
+        "avaliacoes_somadas": 27,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dra. Daiane Paloschi - Cirurgiã Dentista / Especialista em Ronco & Apneia do Sono",
+            "nota": 5,
+            "avaliacoes": 27
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Laranjeiras",
+        "clinicas": 1,
+        "avaliacoes_somadas": 5,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dra. Mônica Casimiro Ortodontia Alinhadores Harmonização Facial",
+            "nota": 5,
+            "avaliacoes": 5
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      }
+    ],
+    "bairros_sem_a_rede": [
+      {
+        "bairro": "Centro",
+        "clinicas": 75,
+        "avaliacoes_somadas": 6290,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Clínica Arcobelo",
+            "nota": 4.9,
+            "avaliacoes": 741
+          },
+          {
+            "nome": "Clínica Data X",
+            "nota": 4.8,
+            "avaliacoes": 716
+          },
+          {
+            "nome": "Penfold Odontologia de Excelência",
+            "nota": 5,
+            "avaliacoes": 504
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "75 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Catete",
+        "clinicas": 18,
+        "avaliacoes_somadas": 1421,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Levy Odontologia - Dentista no Catete",
+            "nota": 5,
+            "avaliacoes": 309
+          },
+          {
+            "nome": "Odontologia Siqueira (Catete)",
+            "nota": 5,
+            "avaliacoes": 213
+          },
+          {
+            "nome": "R7 Implantes Dentários e Prótese Protocolo | Dentista no Catete Rio de Janeiro - RJ",
+            "nota": 5,
+            "avaliacoes": 161
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "18 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Flamengo",
+        "clinicas": 14,
+        "avaliacoes_somadas": 971,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Odontopediatra Dra. Joseane Queiroz - RJ",
+            "nota": 5,
+            "avaliacoes": 221
+          },
+          {
+            "nome": "ESPAÇO ORAL ® Dentista Catete Flamengo",
+            "nota": 4.9,
+            "avaliacoes": 191
+          },
+          {
+            "nome": "Odonto Liuzzi | Lentes de Contato Dental | Prótese Protocolo | Ortodontia | Periodontia | Implante Dentário | Dental Tourism",
+            "nota": 4.9,
+            "avaliacoes": 189
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "14 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Tijuca",
+        "clinicas": 12,
+        "avaliacoes_somadas": 2657,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Clínica Odontológica Oral 360 Tijuca | Dentista Tijuca | Implantes Dentários",
+            "nota": 4.8,
+            "avaliacoes": 1512
+          },
+          {
+            "nome": "Emergência Dentista 24 horas RJ - Equipe Kruger",
+            "nota": 4.8,
+            "avaliacoes": 342
+          },
+          {
+            "nome": "Dra. Juliana Bendayan I Invisalign I Harmonização Facial Tijuca",
+            "nota": 5,
+            "avaliacoes": 224
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "12 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Barra da Tijuca",
+        "clinicas": 11,
+        "avaliacoes_somadas": 2937,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "IRio Odontologia - Clínica Odontológica na Barra da Tijuca",
+            "nota": 5,
+            "avaliacoes": 1173
+          },
+          {
+            "nome": "Pronto Oral - Emergência Odontológica, Dentista Emergência",
+            "nota": 4.8,
+            "avaliacoes": 455
+          },
+          {
+            "nome": "Odonto 21",
+            "nota": 5,
+            "avaliacoes": 373
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "11 clínicas varridas, e a rede não está aqui"
+      }
+    ],
+    "manchete": "28 bairros medidos · a rede está em 1 deles",
+    "leitura": "O bairro com mais clínicas é Centro, com 75 clínicas varridas, e a rede NÃO está lá.",
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 185,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
+      "a_favor": [],
+      "contra": [
+        "1 endereços sem bairro legível"
+      ],
+      "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
+      "procedencia": "medido em 185 clínicas varridas, 1 medição"
+    }
+  },
+  "movimentos_do_mercado": {
+    "eventos": [],
+    "resumo": {
+      "praca_id": "rio_de_janeiro",
+      "rotulo": "RJ · Rio de Janeiro",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
+  "imprensa": {
+    "medido": true,
+    "total": 59,
+    "mostrando": 12,
+    "recentes_30d": 31,
+    "manchete": "31 matérias sobre a cidade nos últimos 30 dias, de 59 já lidas",
+    "porque_vazio": null,
+    "materias": [
+      {
+        "titulo": "Operação da PM no Complexo da Maré afeta 36 escolas e 2 unidades de saúde - G1",
+        "veiculo": "G1",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNazYxc3NwbmtiS3JUOGljLVh1dUF4WjJZbFg4MUdnTjlPX2VGM0tBLW11Rk9ULXNkQkx5NXdrVHNlZC1aQWUzazVORlp1ZlpmMXJhMmtDeFJPX1ZjeWpvQWVQQUx2ZFVkNTNWMUJfTnRDdFMtaUdCWGw5TjVJckZqSml3YjhZUmRSS2NLV0Roc3lTWXA3UzlqdU9QckZsWFlIMlVGZ9IBswFBVV95cUxNUWZoNzg2a3dfNHpzbm0teHRWU1Y0MldoYUg5azFqaTRLTHZ2Nk9tUTAyeVlVYVRRUWVmWmZZaFRBRjlnYVZJMDlZM0JLZ1FwQmxXZjJfT2VWT1hFQVIta08tQUZ3ZUhGbmdtb0NDVFprSmNNN2lVWTloaVRZbEV4Mk1fM1FZWGoyMUZGcUxsWGhtOFcxaXQ4emJZMnZyazRGcjExZ2UtSTNlOWZoWUNKQ2t6bw?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Eleições 2026: o que apontam as pesquisas de intenção de voto para o governo do RJ - Brasil de Fato",
+        "veiculo": "Brasil de Fato",
+        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQeWJzZjNtS3hYWnJqVW1JMWFJWUNudDVFNWd1LTdYYTBvSW9LdlhDbURsRTRtV01PU2hYTUFEN2Z5dlB2ZXE1c0FEbTZ4TWhXdDZEaDN1UmVldm9BaHBjSlExdFpQdXdkdXkxRVBHWDlRM19Td1pIRFh1NmRnWHpzZFVQUTZqOXpreVVKekhTWGdHLUVDd1JrZzBHQ01nXzc4cTViV3VTaERYdWJlcEtwQ0VSaXc3VnVHY3prbTlwRnBJazg?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Borda - Sesc São Paulo",
+        "veiculo": "Sesc São Paulo",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5UamFfN1JKWDIzTHhPcmc0Z0JQYjJtd084NjBCU0FOZTI4RHlCVXJrR2NMdE44UDlCMXYxZ1FIQU1Rekp0TF9Jb1h2XzE5alNHSFVqNS1PNGpfUQ?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "PF prende mulher com 2,8kg de cocaína líquida no Aeroporto do Galeão/RJ — Polícia Federal - www.gov.br",
+        "veiculo": "www.gov.br",
+        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOd044dER6cnFXZGtxRFRMcFppSkV1RFdwQ2lJMGFRc3k5REZlbVp1S3lmMmthSzUtdnphQ05aUERacjZPd1ZMU3dpdzVqUDVrcVp6Y1c2aTMteGhwNVVQUHI0MlZmMEIxLXhDNEtFVjlldGRXbFZ6RkNkLUFRckVDaldKenJCZUM4TDVlVU1JMW9MUlhCci1FQUVnZDgtekVYR0xSUHdwRWdvd1VrM2hfdmRBRjhiS293UVo4azZJdjEwUXM?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "AMAERJ esclarece que pagamentos a magistrados do Rio respeitam regime remuneratório definido pelo STF - AMAERJ",
+        "veiculo": "AMAERJ",
+        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxONnNCcXFCU1QwY3RLWVlhWWlaZHhBems0ZW5CRlloTGFTSUdMdTZvMGZIbjJfWnY1alVvWUNseGhycGNGLTBCRmd5b0ozbGI3V19MZGwzaDNBNTlSX29BMkxXNlJ2M0ZKdjVFUHVrZ3hSZWNrNF9tRDh5U0pSZllBaXd3OWNYam1pREFLdjZmSllweTRWUTFlZzhRY2JxYkdicjZWekdBZFpPTGFEa0p3bVNJVEI5Y1lCZ21vWVNGbGVlckZ6UmVXQlNUalMtUQ?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Previsão do tempo hoje para o Rio de Janeiro (RJ): sol com muitas nuvens durante o dia e períodos de céu nublado; noite com muitas nuvens - G1",
+        "veiculo": "G1",
+        "link": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxPWVQxNGRlOFowRmN6cWRxWGRsUWtKX0lwSnBsd0JneHJtTEoxWDA0NXItcDVVTzBnOU1Ka1BFMldVYmpYVzVWQ1BpSkpJdkppcmRaX3hvZjVUNFVvQnpqT1h4bU9HcGxiZlVnTmZMejZXWUZNeVBxLVE3MVB6a01ZT01xelFQQ3QyU1lWRV9CN1N5MExxMWMzUkNrcEZYVEJjcUlIZjRqUWJ3Z2dCeHVtS2tzN2ZVQlkyUkxEbzk1YWUxdl9jYmczQ245ZnVsUjJDdjJBYVc3S0VVbGRtSmRjU3BqZFVnalF2Rzd6ZVdKNGpSV3l2NkE3cTMzdzk4SGhyemUtTGg2THF2YWJxNXZ6WnZNcnRyTEJ5MmU2NUoxUmJYMFl1WFBXVjhoZDZMTGdXOGlseTdyS25DWG_SAcoCQVVfeXFMUFV2cEZEdTVzRm5MOXh5MC1fUWpoU0dHWEFKUWhBOWR3cndxQU5LbE9id1lhUVBLck5tc3pKVUlTYTlRc2Y5VzVMeUhHdWhWYkZGTkJsYm02T2RaTkRFcGx6SnV4LU5oRktnT1pHX05ZNGNkaUN5LVk5R1BJZlltWThkQnQya3B2RDJZOXJBZmxUdHlRcXVMNGNXN2RaSTl2VkVCNkZuNElPNTgtUW5tZWg2RnpLMzRGRHlCeTFMQVduZzNVVHk1cEh1S3ZFM3R2a0dzSi1BYnZDZ1RzcHhMRHg4R1RqQ0ZWaGt2SmV4RlRGVm5TNkYwM215TkJwRDFEZkNleGoxN3d5eVF5eEtxeEE0cUdWek1iUEFkZ3N3ZERmSndXVURUU3g5V3haOHh2SFJrNkM1dnlzRzJXdm9QQV9LYUs5dDNkWUZ3?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Justiça converte em preventiva prisão de falso veterinário flagrado operando gato em Duque de Caxias - G1",
+        "veiculo": "G1",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbGg4U2l1TUZCbHJYQ0JIWE9SdnZ3aGgxdGkwY3hYU05Lci1BVU9HazlVbkJKeHl3cE5KTEhReThVUjlxcTZHMmt5TXM1a0NxUjB1NmYyNlBZTDdpQUw3TTl5MTUydmJSM3YtTVZTQURyVEZxQV91UHpYZDFiRFpZQVpvYS1KTWtBSWVtdXFFS3lnUERCRWM4VXdsbHBGWG9QdXhIa3FqX0YxS2NkdDN4TGJkbVd2Z9IBxAFBVV95cUxPRllPcnZRek9aaHg2Z1RwTlZrbkY2eUpfenFKYnNhajM4bVdlaTdZVWFJLUxfTzNrQUJVR203MjYtdVNQZlR0X1ZPa01MQTRtZ1RaTmpuejNPU1A0WlZRaUpSbldKREpINXdwNTNsQV85MmFtaGtNYUI4SmFwcEJtM3NmeUR2RXhPSmdubDVzVTBZZ3J6dzVidVF1UjZzcm9ISHhqNW5IaGhZb05KbVU5NUdCT0ZnNGlYeUhoRldwb0ttZGwy?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Justiça suspende lei que criou o Rio Rotativo Digital; PGM diz que só fiscalização será afetada - G1",
+        "veiculo": "G1",
+        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNWFUyaUQwMUxXUDlZVkxxWFBlenJkS3IydGxmRnA4dzNmem1LdWlCenA5NmZsZnZDSmRoT0M0U1prU2MtdDJ2ZkZVNnZMUEs1dEhwNm1yVFA0UVVoWm1JVHpzWlV6WG13WlZkRW9idUZma3RvckladWlQQ0JBQng3U1FyYnlqQWU0OHJaVEZmY20zV1ZRT0JzcWpZbkoxeUlFaVhoUy04X3VXeUxtakRXMXpELXQ0ck1PZVVkbTI1MmF6UdIB0AFBVV95cUxQNzhvclZ3R3p0SXdfWENsRE1oOUEwdGVpa2V1a3ZqaWdZc20yQlNlYzZjdUhkd3c1U1RVdWVnRGZ6LUNiVzJVR3h0X3pZUHl0RVU4Qkt5UFFtQ0hBOE5qcXZTUnpnZ05BRngyTk9Qa3FyUWZBZWhQUDVNUW9uOVpaNUd4Q0RZeXduczY5X3VMcDFsNjZfTmk4dXZNZ1NRY3gzUTNzZTMtWDl1MWFkTksxNnRudjRYU2pwWHBJeFk3SGNFZFJIT0dkUW5XaV9OTXVf?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Fonoaudióloga é baleada no pescoço dentro de ônibus em tiroteio em Vicente de Carvalho, no Rio - G1",
+        "veiculo": "G1",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQY0lSY3d6b3BpZ0hUNWUxeXdRa3E0NmxMaVlkSTBxZGNBYmU4TjRqT3J3MXB0ZmJkbWJTZ1h4YllmYUhrMEJoLXYzQ19uZXNwZ0lFS01EUy1qcTBMajRjVGgtZmtXbWdaczJzeUlnSXYxX2VPZ3JvaEJNZFZjZ1NjdmpfQnhkYWtUU2VxMmZIVTUzRVZIdVd4ZEt4Y9IBqgFBVV95cUxPbzhCRWZteWExYlBqUVduUWU5WnlFMkpLSHJ0d09JYVREajJFRXhWNEh3ZHFmNHR0bUpfNUlZb2RFS3QtNHpWMFNfQTg1MUFhMVEtUkdtaDI5MExOQkpBOVdMSDl5bVNPZnhSaVQ5Qi1ybTVfYldwV0hKd3JnZTBQTmpERFRNT2tVdnJMUTRzelJJTXlKbS0wZGg2X2VYWDlQNTNZM05Rckt0QQ?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Tiroteio na Lapa assusta turistas e atinge van perto da Escadaria Selarón - G1",
+        "veiculo": "G1",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNdW8tbWw0SXZ3RVVXQkZEeFRvQVhIMUVkZ29yODdackQ4ZFFQbnJsQXczZGcyVFpfc09HUTZuYTk4WjlkeXBBS1JSMkF2T3JaX051STlwb2NyeEZiMG9HcWpEVUFma21qc2VaSG1lRF9abGRhdm14VndlLVNYRlFFQmJnU0E4eUZQc1RYVzd4TzZwOXd3UUHSAaQBQVVfeXFMT1JVN2ZHakZXVmhyNGVkWEpQcTd4RFhncmpsbWozREEwUC1YNEtZeTFTOHNzUUYzRXUtT2tKdmswSnJuaWtkMkFCdkxGVVpScUdsZHR5R3B1TDM3Nm9ZMS1XZlpITWo5TjAxOWhoVEl2RW1mOVBGOThMbGNET2JsOFdub1hzV1pRWFF3MGlRdm41Y3NWVm5KT1liaDNuSmNDWmVoeUo?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Após fonoaudióloga ser baleada no pescoço, passageiros de ônibus se abrigaram em escola; VÍDEO - G1",
+        "veiculo": "G1",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTFVLQ0JrT3FSbldmd2NHWmpFcXp4LWRkc2hwTWJReTFVbW9abWFfakg4SWd3Y2NGVlI2RDFBLVZHZWg4UTJpc19BdVFCSng2UU9XZ2FuVmQwQWhEOWhUS3FTUFBqNUtjZXhYa0E4LVozWm5vSkRseVpTc0ZKa0hnRDJLV3E5azZUc3MxbnRiZE52WS1rZHVGTHhQYWlpQ2ZoZkdIQWhtdFZJNXBQdjlz0gG-AUFVX3lxTE1TYWFUYjZPWXRBME8yOWtKRzJUVC1NbVBJYjVvX1ZuNmJ1ZVpsRGdzYlJyeHh3ejJ6blRLQ2p1U2FtbzRGdFpncldld1JtV2ZNd1NodnEtejZiRnNqYWxVNjJrbUpmb01WQ0ZoOVJYYk1HQVBib3J6YUFPb2xiZm1GenpEQzNNQ0tuVnhHekMweXM1Z0Ffd0Y0dGhjUWJxZWRFUHlyUUxGQzJLQklGdURBd0RMbm4tUWx1c3lXRUE?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Grupo fecha Rua São Francisco Xavier, na Mangueira, após operação policial; menino de 6 anos foi ferido - G1",
+        "veiculo": "G1",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQS1V0QWE2akQyeUlKQ1o5UFd2bXpiSjhqMFJ1Sy14aFRWRGQyb0ptVkdTVFpYT18tWXhsYXFLakVYVDdJQWJBZUNPSVNSeTk1MlVhSlR4bUlwdERwWUZCWUMtaV96WWxEemNaNURnUjBMZHJPVU5zSDV3NUJZTDhzNnNiNEtzQnA0cnpRbVRvWUlwZzJ50gGjAUFVX3lxTE51d1BBOGt1X0dleldZc3RlNVE1aTZlRE00Vkh6ci1UYk9XeGFicTFGd29tbWpnWVFjRXB3eXBHZEZFNnRMSkVGTFNZZnpKNU9lV1paT1Iwd2FJeWFWRDIzVTVyWERiQmJ0ZmZmZkktbkZLQkpNaDJ3RFUwRzRXUGJ0eDIwZFY4dUZLVWt6YlY2aU1HRnE3TnFxTGhON0ozRlNvdXM?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      }
+    ]
+  },
+  "ritmo_de_publicacao": {
+    "medido": false,
+    "perfis": 0,
+    "vivos": 0,
+    "parados": 0,
+    "manchete": null,
+    "porque_vazio": "nenhum perfil medido nesta cidade",
+    "lista": []
+  },
+  "placar": [
+    {
+      "local_id": "clinica_odontologica_oral_",
+      "nome": "Clínica Odontológica Oral 360 Tijuca | Dentista Tijuca | Implantes Dentários",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.8,
+      "avaliacoes": 1512,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "irio_odontologia_clinica_o",
+      "nome": "IRio Odontologia - Clínica Odontológica na Barra da Tijuca",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": 1173,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "odontoclinica_campo_grande",
+      "nome": "Odontoclínica Campo Grande",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.8,
+      "avaliacoes": 973,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "apicalcenter_clinica_odont",
+      "nome": "ApicalCenter Clinica Odontológica no Rio de Janeiro",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.9,
+      "avaliacoes": 785,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "clinica_arcobelo",
+      "nome": "Clínica Arcobelo",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.9,
+      "avaliacoes": 741,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "clinica_data_x",
+      "nome": "Clínica Data X",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.8,
+      "avaliacoes": 716,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "clinica_odontologica_oral__copacabana",
+      "nome": "Clínica Odontológica Oral 360 Copacabana | Dentista",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.9,
+      "avaliacoes": 624,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "sempresorrir_odontologia_i",
+      "nome": "SempreSorrir Odontologia | Implante Dentário | Aparelho Dentário | Vila Isabel | Rio de Janeiro - RJ",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.9,
+      "avaliacoes": 619,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "021_dental_dentista_carioc",
+      "nome": "021 Dental | Dentista Carioca Shopping RJ | Amil Hapvida Metlife Primavida Sulamérica Unimed",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.3,
+      "avaliacoes": 570,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "penfold_odontologia_de_exc",
+      "nome": "Penfold Odontologia de Excelência",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": 504,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "odontocenter",
+      "nome": "OdontoCenter",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.1,
+      "avaliacoes": 487,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "clinica_sorrio_implante_de",
+      "nome": "Clínica Sorrio | Implante Dentário | Dentista de emergência | Clínica odontológica | Copacabana | Rio de Janeiro - RJ",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.9,
+      "avaliacoes": 472,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "pronto_oral_emergencia_odo",
+      "nome": "Pronto Oral - Emergência Odontológica, Dentista Emergência",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.8,
+      "avaliacoes": 455,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "dentista_e_invisalign_no_m",
+      "nome": "Dentista e Invisalign no Meier - Clinica Odontológica Prime Dente",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": 386,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "orthodontic",
+      "nome": "OrthoDontic",
+      "tipo": "franquia",
+      "proprio": true,
+      "nota": 4.9,
+      "avaliacoes": 308,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    }
+  ],
+  "funil": null,
+  "temas": [
+    {
+      "tema": "atendimento",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "rio_de_janeiro",
+      "pct": 0.7157,
+      "n": 1379,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "preco_custo",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "rio_de_janeiro",
+      "pct": 0.0276,
+      "n": 1379,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "agenda_espera",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "rio_de_janeiro",
+      "pct": 0.0384,
+      "n": 1379,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "comunicacao_resposta",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "rio_de_janeiro",
+      "pct": 0.0457,
+      "n": 1379,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "qualidade_resultado",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "rio_de_janeiro",
+      "pct": 0.4764,
+      "n": 1379,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "confianca_medo",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "rio_de_janeiro",
+      "pct": 0.0479,
+      "n": 1379,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "contrato_burocracia",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "rio_de_janeiro",
+      "pct": 0.0087,
+      "n": 1379,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "pessoas_nominais",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "rio_de_janeiro",
+      "pct": 0.0812,
+      "n": 1379,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "localizacao_acesso",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "rio_de_janeiro",
+      "pct": 0.0566,
+      "n": 1379,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "recomendacao_lealdade",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "rio_de_janeiro",
+      "pct": 0.2553,
+      "n": 1379,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "dor_medo_dentista",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "rio_de_janeiro",
+      "pct": 0.0696,
+      "n": 1379,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "resultado_autoestima",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "rio_de_janeiro",
+      "pct": 0.1668,
+      "n": 1379,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "explicacao_clareza",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "rio_de_janeiro",
+      "pct": 0.058,
+      "n": 1379,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "aparelho_tratamento",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "rio_de_janeiro",
+      "pct": 0.0232,
+      "n": 1379,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "familia_filhos",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "rio_de_janeiro",
+      "pct": 0.0261,
+      "n": 1379,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "tempo_relacao",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "rio_de_janeiro",
+      "pct": 0.0421,
+      "n": 1379,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    }
+  ],
+  "sazonalidade": [],
+  "sazonalidade_estado": {
+    "tem": false,
+    "medimos": true,
+    "por_que": "o Trends não publica índice de cidade para este termo: das 124 cidades de SC, das 186 do PR e das 108 do PR com o termo mais largo 'ortodontista', NENHUMA teve volume — Londrina e Mafra incluídas, com valor 0",
+    "as_duas_travas": {
+      "volume": "pelo menos 55% das semanas com busca e 9 meses do ano",
+      "estabilidade": "o mês de pico repetido em pelo menos 3 dos anos medidos"
+    },
+    "veredito_por_uf": [],
+    "o_que_preenche": "nada que seja fonte externa: o Trends não publica índice para este termo nesta escala. Só dado interno da rede (agenda, contratos) diria quando a procura sobe — e isso é teto do produto",
+    "quem_responde": "só a rede, por dentro"
+  },
+  "o_que_mudou": null
+}

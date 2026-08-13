@@ -1,6 +1,6 @@
 {
-  "corte": "2026-08-12",
-  "gerado_em": "2026-08-12T22:27:34",
+  "corte": "2026-08-13",
+  "gerado_em": "2026-08-13T01:11:13",
   "rede": {
     "unidades": 373,
     "abertas": 350,
@@ -20,16 +20,16 @@
   "cobertura": {
     "_nota": "Este bloco NÃO é mais a fonte de 'ouvidas' e 'total'. Os dois saem do dado em build_portal.py (praças com avaliação lida, e unidades na lista oficial da rede). Ficaram escritos à mão aqui por quatro semanas dizendo 4 de 340, enquanto a mesma tela já mostrava 374 unidades ao lado. Não volte a escrever número aqui.",
     "unidades_total": 373,
-    "unidades_acompanhadas": 32,
-    "pracas_da_rede_estudadas": 12,
+    "unidades_acompanhadas": 45,
+    "pracas_da_rede_estudadas": 17,
     "cidades_de_oportunidade_estudadas": 6,
-    "aviso": "As leituras de rede valem para as 32 unidades acompanhadas, em 12 praças — não para as 373. As 6 cidades de oportunidade são estudo de expansão e não entram em nenhuma conta da rede."
+    "aviso": "As leituras de rede valem para as 45 unidades acompanhadas, em 17 praças — não para as 373. As 6 cidades de oportunidade são estudo de expansão e não entram em nenhuma conta da rede."
   },
   "abertura": {
     "sobrelinha": "SALA DE CONTROLE · REDE NACIONAL",
     "titulo": "A inteligência que faz cada clínica crescer.",
-    "sublinha": "32 unidades escutadas de perto, em 12 cidades estudadas por inteiro — e, para cada uma, o que fazer nesta semana.",
-    "escopo": "As leituras valem para estas 32 unidades, não para as 373 da rede. As 6 cidades de oportunidade são estudo de expansão e não entram em nenhuma conta da rede."
+    "sublinha": "45 unidades escutadas de perto, em 17 cidades estudadas por inteiro — e, para cada uma, o que fazer nesta semana.",
+    "escopo": "As leituras valem para estas 45 unidades, não para as 373 da rede. As 6 cidades de oportunidade são estudo de expansão e não entram em nenhuma conta da rede."
   },
   "mapa": [
     {
@@ -206,13 +206,13 @@
       "abertas": 34,
       "em_implantacao": 3,
       "cidades": 32,
-      "pracas_medidas": 1,
-      "acompanhadas": 1,
-      "em_faixa_vermelha": 0,
+      "pracas_medidas": 2,
+      "acompanhadas": 3,
+      "em_faixa_vermelha": 2,
       "em_faixa_amarela": 1,
       "alertas_graves": 1,
       "tom": "crit",
-      "motivo": "1 em faixa amarela · 1 alerta grave na ficha do Google"
+      "motivo": "2 em faixa vermelha · 1 em faixa amarela · 1 alerta grave na ficha do Google"
     },
     {
       "uf": "PA",
@@ -250,11 +250,11 @@
       "cidades": 43,
       "pracas_medidas": 3,
       "acompanhadas": 7,
-      "em_faixa_vermelha": 1,
-      "em_faixa_amarela": 2,
+      "em_faixa_vermelha": 2,
+      "em_faixa_amarela": 5,
       "alertas_graves": 0,
       "tom": "crit",
-      "motivo": "1 em faixa vermelha · 2 em faixa amarela"
+      "motivo": "2 em faixa vermelha · 5 em faixa amarela"
     },
     {
       "uf": "PE",
@@ -290,12 +290,12 @@
       "abertas": 5,
       "em_implantacao": 0,
       "cidades": 3,
-      "pracas_medidas": 0,
-      "acompanhadas": 0,
+      "pracas_medidas": 1,
+      "acompanhadas": 1,
       "em_faixa_vermelha": 0,
       "em_faixa_amarela": 0,
       "alertas_graves": 0,
-      "tom": "sem_escuta",
+      "tom": "ok",
       "motivo": "5 unidades · ainda sem escuta"
     },
     {
@@ -318,13 +318,13 @@
       "abertas": 49,
       "em_implantacao": 3,
       "cidades": 39,
-      "pracas_medidas": 1,
-      "acompanhadas": 7,
+      "pracas_medidas": 2,
+      "acompanhadas": 10,
       "em_faixa_vermelha": 0,
-      "em_faixa_amarela": 2,
+      "em_faixa_amarela": 4,
       "alertas_graves": 0,
       "tom": "warn",
-      "motivo": "2 em faixa amarela"
+      "motivo": "4 em faixa amarela"
     },
     {
       "uf": "RO",
@@ -360,13 +360,13 @@
       "abertas": 47,
       "em_implantacao": 3,
       "cidades": 43,
-      "pracas_medidas": 2,
-      "acompanhadas": 4,
-      "em_faixa_vermelha": 0,
+      "pracas_medidas": 3,
+      "acompanhadas": 7,
+      "em_faixa_vermelha": 1,
       "em_faixa_amarela": 4,
       "alertas_graves": 0,
-      "tom": "warn",
-      "motivo": "4 em faixa amarela"
+      "tom": "crit",
+      "motivo": "1 em faixa vermelha · 4 em faixa amarela"
     },
     {
       "uf": "SP",
@@ -374,7 +374,7 @@
       "abertas": 71,
       "em_implantacao": 7,
       "cidades": 65,
-      "pracas_medidas": 2,
+      "pracas_medidas": 3,
       "acompanhadas": 4,
       "em_faixa_vermelha": 1,
       "em_faixa_amarela": 2,
@@ -435,7 +435,7 @@
   ],
   "tiras_do_inicio": [
     {
-      "numero": 3,
+      "numero": 7,
       "tom": "crit",
       "rotulo": "unidades em faixa vermelha"
     },
@@ -457,13 +457,28 @@
   ],
   "agora": {
     "pergunta": "Em quais unidades a OrthoDontic está perdendo atenção local, para qual concorrente, e onde intervir primeiro neste mês?",
-    "manchete": "3 de 32 unidades medidas estão em faixa vermelha. A primeira é PR · Londrina.",
-    "em_risco": 3,
-    "unidades": 32,
+    "manchete": "7 de 41 unidades medidas estão em faixa vermelha. A primeira é SP · Sorocaba.",
+    "em_risco": 7,
+    "unidades": 41,
     "o_que_e_atencao": "participação observável em busca, avaliações, publicidade e atividade digital. Não é faturamento — nenhum número desta tela vem de dado interno da rede.",
     "primeiras": [
       {
         "pos": 1,
+        "rotulo": "SP · Sorocaba",
+        "unidade_curta": null,
+        "urgencia": 80,
+        "faixa": "vermelha",
+        "quem_avanca": null,
+        "acao": {
+          "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+          "prazo": "14 dias",
+          "dono": "franqueado",
+          "custo": "sem custo de mídia",
+          "por_causa_de": "parada"
+        }
+      },
+      {
+        "pos": 2,
         "rotulo": "PR · Londrina",
         "unidade_curta": "Centro",
         "urgencia": 65,
@@ -478,23 +493,8 @@
         }
       },
       {
-        "pos": 2,
-        "rotulo": "SP · Sorocaba",
-        "unidade_curta": null,
-        "urgencia": 65,
-        "faixa": "vermelha",
-        "quem_avanca": null,
-        "acao": {
-          "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
-          "prazo": "14 dias",
-          "dono": "franqueado",
-          "custo": "sem custo de mídia",
-          "por_causa_de": "parada"
-        }
-      },
-      {
         "pos": 3,
-        "rotulo": "GO · Goiânia",
+        "rotulo": "PR · Curitiba",
         "unidade_curta": null,
         "urgencia": 65,
         "faixa": "vermelha",
@@ -518,7 +518,7 @@
     },
     {
       "chave": "lojas",
-      "nome": "As 32 lojas acompanhadas",
+      "nome": "As 45 lojas acompanhadas",
       "explica": "as unidades medidas de perto, loja por loja"
     },
     {
@@ -570,8 +570,8 @@
       "chave": "mudou",
       "titulo": "O que mudou na semana",
       "pergunta": "O que aconteceu desde a última medição?",
-      "numero": 3,
-      "frase": "contadores de avaliação CAÍRAM — queda é avaliação apagada, evento raro. 13 praças medidas de novo; o período ainda é curto e engorda a cada semana.",
+      "numero": 4,
+      "frase": "contadores de avaliação CAÍRAM — queda é avaliação apagada, evento raro. 14 praças medidas de novo; o período ainda é curto e engorda a cada semana.",
       "tela": "mudou",
       "grupo": "lojas",
       "disponivel": true,
@@ -581,8 +581,8 @@
       "chave": "fila",
       "titulo": "Onde agir primeiro",
       "pergunta": "Qual loja precisa de ajuda neste mês?",
-      "numero": 3,
-      "frase": "3 de 32 unidades medidas estão em faixa vermelha. A primeira é PR · Londrina.",
+      "numero": 7,
+      "frase": "7 de 41 unidades medidas estão em faixa vermelha. A primeira é SP · Sorocaba.",
       "tela": "fila",
       "grupo": "lojas",
       "disponivel": true,
@@ -603,7 +603,7 @@
       "chave": "rival",
       "titulo": "Os concorrentes de ortodontia",
       "pergunta": "Quem disputa o paciente de aparelho, e o que fazem melhor?",
-      "numero": 21,
+      "numero": 44,
       "frase": "clínicas que vendem APARELHO nas praças acompanhadas. Clínica geral e implante não entram: é outro tratamento, outro paciente.",
       "tela": "rival",
       "grupo": "lojas",
@@ -636,7 +636,7 @@
       "chave": "timeline",
       "titulo": "A vida de cada loja",
       "pergunta": "O que aconteceu em cada loja, em ordem?",
-      "numero": 121,
+      "numero": 172,
       "frase": "eventos observáveis — avaliações, contadores, alertas e rivais de aparelho — numa linha do tempo por loja, com o estado da tarefa de cada uma.",
       "tela": "timeline",
       "grupo": "lojas",
@@ -680,7 +680,7 @@
       "chave": "pracas",
       "titulo": "As praças estudadas",
       "pergunta": "O que já sabemos de cada praça, em detalhe?",
-      "numero": 12,
+      "numero": 17,
       "frase": "cidades onde a rede está e que já foram estudadas por inteiro — concorrência, canais, imprensa, busca e avaliações.",
       "tela": "pracas",
       "grupo": "expansao",
@@ -713,7 +713,7 @@
       "chave": "fichas",
       "titulo": "O cadastro das unidades",
       "pergunta": "As fichas do Google estão certas?",
-      "numero": 32,
+      "numero": 45,
       "frase": "fichas conferidas · 0 sem site na ficha.",
       "tela": "fichas",
       "grupo": "arquivo",
@@ -884,10 +884,10 @@
     "criterio": "ortodontia = a rede se apresenta como rede de ortodontia/aparelho. odontologia_popular = rede de odontologia popular que vende aparelho junto com o resto, e disputa o mesmo paciente na mesma rua. implante = a venda principal é implante ou prótese; é outro tratamento, outro ticket, outra decisão."
   },
   "fichas_da_rede": {
-    "conferidas": 32,
+    "conferidas": 45,
     "por_categoria": {
-      "Clínica odontológica": 31,
-      "Dentista": 1
+      "Clínica odontológica": 39,
+      "Dentista": 6
     },
     "sem_site": 0
   },

@@ -1,16 +1,31 @@
 {
-  "gerado_em": "2026-08-12T22:27:34",
+  "gerado_em": "2026-08-13T01:11:13",
   "gerado_de": "dados/serie + dados/conteudo + dados/identidade",
-  "corte": "2026-08-12",
+  "corte": "2026-08-13",
   "taxonomia_versao": "1.1",
   "cobertura": {
     "_nota": "Este bloco NÃO é mais a fonte de 'ouvidas' e 'total'. Os dois saem do dado em build_portal.py (praças com avaliação lida, e unidades na lista oficial da rede). Ficaram escritos à mão aqui por quatro semanas dizendo 4 de 340, enquanto a mesma tela já mostrava 374 unidades ao lado. Não volte a escrever número aqui.",
     "unidades_total": 373,
-    "unidades_acompanhadas": 32,
-    "pracas_da_rede_estudadas": 12,
+    "unidades_acompanhadas": 45,
+    "pracas_da_rede_estudadas": 17,
     "cidades_de_oportunidade_estudadas": 6
   },
   "pracas": [
+    {
+      "praca_id": "caxias_do_sul",
+      "nome": "Caxias do Sul",
+      "rotulo": "RS · Caxias do Sul",
+      "uf": [
+        "RS"
+      ],
+      "cidades": [
+        "RS · Caxias do Sul"
+      ],
+      "tem": [
+        "praca"
+      ],
+      "estudos": 1
+    },
     {
       "praca_id": "contagem",
       "nome": "Contagem",
@@ -78,6 +93,21 @@
         "plano"
       ],
       "estudos": 3
+    },
+    {
+      "praca_id": "florianopolis",
+      "nome": "Florianópolis",
+      "rotulo": "SC · Florianópolis",
+      "uf": [
+        "SC"
+      ],
+      "cidades": [
+        "SC · Florianópolis"
+      ],
+      "tem": [
+        "praca"
+      ],
+      "estudos": 1
     },
     {
       "praca_id": "goiania",
@@ -200,6 +230,36 @@
       "estudos": 3
     },
     {
+      "praca_id": "rio_de_janeiro",
+      "nome": "Rio de Janeiro",
+      "rotulo": "RJ · Rio de Janeiro",
+      "uf": [
+        "RJ"
+      ],
+      "cidades": [
+        "RJ · Rio de Janeiro"
+      ],
+      "tem": [
+        "praca"
+      ],
+      "estudos": 1
+    },
+    {
+      "praca_id": "sao_paulo",
+      "nome": "São Paulo",
+      "rotulo": "SP · São Paulo",
+      "uf": [
+        "SP"
+      ],
+      "cidades": [
+        "SP · São Paulo"
+      ],
+      "tem": [
+        "praca"
+      ],
+      "estudos": 1
+    },
+    {
       "praca_id": "sorocaba",
       "nome": "Sorocaba",
       "rotulo": "SP · Sorocaba",
@@ -215,6 +275,21 @@
         "plano"
       ],
       "estudos": 3
+    },
+    {
+      "praca_id": "uberlandia",
+      "nome": "Uberlândia",
+      "rotulo": "MG · Uberlândia",
+      "uf": [
+        "MG"
+      ],
+      "cidades": [
+        "MG · Uberlândia"
+      ],
+      "tem": [
+        "praca"
+      ],
+      "estudos": 1
     }
   ],
   "arquivos": {
@@ -248,6 +323,9 @@
       "ortho_cwb_centro_3",
       "ortho_cwb_centro_4",
       "ortho_cwb_portao",
+      "ortho_fln_centro",
+      "ortho_fln_centro_2",
+      "ortho_fln_ingleses_do_rio_vermel",
       "ortho_fsa",
       "ortho_gyn_jardim_tropical",
       "ortho_gyn_st_central",
@@ -269,13 +347,21 @@
       "ortho_soro_centro",
       "ortho_soro_jardim_faculdade",
       "ortho_soro_vila_formosa",
-      "ortho_souza_naves"
+      "ortho_souza_naves",
+      "orthodontic",
+      "orthodontic_centro",
+      "orthodontic_kayser",
+      "orthodontic_republica",
+      "orthodontic_sao_miguel_paulista",
+      "orthodontic_tatuape"
     ],
     "pracas": [
+      "caxias_do_sul",
       "contagem",
       "cuiaba",
       "curitiba",
       "feira",
+      "florianopolis",
       "goiania",
       "joinville",
       "londrina",
@@ -283,7 +369,10 @@
       "palmas",
       "porto_alegre",
       "prudente",
-      "sorocaba"
+      "rio_de_janeiro",
+      "sao_paulo",
+      "sorocaba",
+      "uberlandia"
     ],
     "captacao": [
       "contagem",
@@ -378,6 +467,9 @@
     "clinicas/ortho_cwb_centro_3",
     "clinicas/ortho_cwb_centro_4",
     "clinicas/ortho_cwb_portao",
+    "clinicas/ortho_fln_centro",
+    "clinicas/ortho_fln_centro_2",
+    "clinicas/ortho_fln_ingleses_do_rio_vermel",
     "clinicas/ortho_fsa",
     "clinicas/ortho_gyn_jardim_tropical",
     "clinicas/ortho_gyn_st_central",
@@ -400,6 +492,16 @@
     "clinicas/ortho_soro_jardim_faculdade",
     "clinicas/ortho_soro_vila_formosa",
     "clinicas/ortho_souza_naves",
+    "clinicas/orthodontic",
+    "clinicas/orthodontic",
+    "clinicas/orthodontic",
+    "clinicas/orthodontic",
+    "clinicas/orthodontic_centro",
+    "clinicas/orthodontic_centro",
+    "clinicas/orthodontic_kayser",
+    "clinicas/orthodontic_republica",
+    "clinicas/orthodontic_sao_miguel_paulista",
+    "clinicas/orthodontic_tatuape",
     "clinicas_indice",
     "corretor",
     "evidencias",
@@ -442,10 +544,12 @@
     "planos/ortho_soro_jardim_faculdade",
     "planos/ortho_soro_vila_formosa",
     "planos/ortho_souza_naves",
+    "pracas/caxias_do_sul",
     "pracas/contagem",
     "pracas/cuiaba",
     "pracas/curitiba",
     "pracas/feira",
+    "pracas/florianopolis",
     "pracas/goiania",
     "pracas/joinville",
     "pracas/londrina",
@@ -453,7 +557,10 @@
     "pracas/palmas",
     "pracas/porto_alegre",
     "pracas/prudente",
+    "pracas/rio_de_janeiro",
+    "pracas/sao_paulo",
     "pracas/sorocaba",
+    "pracas/uberlandia",
     "radar",
     "rede"
   ],

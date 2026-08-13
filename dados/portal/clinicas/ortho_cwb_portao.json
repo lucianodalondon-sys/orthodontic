@@ -39,12 +39,12 @@
     "posicao": 12,
     "de": 19
   },
-  "faixa": "verde",
-  "urgencia": 20,
+  "faixa": "amarela",
+  "urgencia": 35,
   "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 7,
     "vence_em": "2026-08-19"
   },
@@ -63,7 +63,8 @@
       "medicoes": null,
       "fonte": "scripts/fila.py",
       "a_favor": [
-        "12º lugar de 19 clínicas medidas na praça"
+        "12º lugar de 19 clínicas medidas na praça",
+        "85 anúncios no ar de 52 anunciantes, e nenhum é da rede"
       ],
       "contra": [],
       "o_que_aumentaria": "o resultado medido na coleta seguinte (dados/serie/acoes.jsonl)",
@@ -77,6 +78,13 @@
       "chave": "posicao",
       "fato": "12º lugar de 19 clínicas medidas na praça",
       "fonte": "dados/portal/rede_cruzamento.json"
+    },
+    {
+      "peso": 15,
+      "titulo": "Silêncio publicitário com leilão cheio",
+      "chave": "silencio",
+      "fato": "85 anúncios no ar de 52 anunciantes, e nenhum é da rede",
+      "fonte": "dados/serie/captacao.jsonl"
     }
   ],
   "quem_avanca": null,
@@ -319,6 +327,132 @@
       "procedencia": "medido em 95 avaliações"
     }
   },
+  "meu_territorio": {
+    "local_id": "ortho_cwb_portao",
+    "unidade": "OrthoDontic Portão",
+    "medido": true,
+    "location": {
+      "lat": -25.4742182,
+      "lng": -49.2931549
+    },
+    "bairro": "Portão",
+    "clinica_mais_proxima": {
+      "nome": "ADEROSSO Odontologia e Estética",
+      "km": 0.21,
+      "avaliacoes": 173,
+      "nota": 4.9,
+      "bairro": "Portão"
+    },
+    "aparelho_mais_proximo": {
+      "nome": "Julio Cavichiolo | Ortodontia | Estética | Implante Dentário | Dentista em Novo Mundo | Curitiba PR",
+      "km": 1.6,
+      "avaliacoes": 1196,
+      "nota": 4.8,
+      "bairro": "Novo Mundo"
+    },
+    "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 5.04,
+      "avaliacoes": 718,
+      "nota": 4.7,
+      "bairro": "Centro"
+    },
+    "raios": {
+      "1km": {
+        "clinicas": 2,
+        "de_aparelho": 0,
+        "da_rede": 0
+      },
+      "2km": {
+        "clinicas": 5,
+        "de_aparelho": 1,
+        "da_rede": 0
+      },
+      "5km": {
+        "clinicas": 62,
+        "de_aparelho": 7,
+        "da_rede": 0
+      }
+    },
+    "frase_fato": "a clínica mais próxima está a 0.21 km",
+    "proximidade_entre_unidades": null,
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 178,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+        "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 178 clínicas com coordenada, 1 medição"
+    }
+  },
+  "movimentos": {
+    "eventos": [],
+    "e_da_cidade": true,
+    "resumo": {
+      "praca_id": "curitiba",
+      "rotulo": "PR · Curitiba",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
+  "execucao": {
+    "local_id": "ortho_cwb_portao",
+    "praca_id": "curitiba",
+    "rotulo": "PR · Curitiba",
+    "unidade": "OrthoDontic Portão",
+    "itens": [
+      {
+        "problema": "Esta loja aparece em **1 das 213 buscas** que testamos na cidade.",
+        "e_marketing": true,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "seo_local",
+          "especialidade": "marketing local e Google Business",
+          "problema": "a unidade aparece em 1 busca de 213 testadas na própria cidade",
+          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
+          "evidencias": [
+            "aparece em 1 de 213 buscas",
+            "aparece em: {'frase': 'aparelho ortodôntico curitiba preços', 'posicao': 3, 'intencao': 'PREÇO'}"
+          ],
+          "nao_fazer": [
+            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
+            "não prometer posição: o Google não vende ordem no mapa"
+          ],
+          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
+          "prazo": "30 dias",
+          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
+          "recoletar_em_dias": 30
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 213,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/portal/presenca_por_loja.json",
+          "a_favor": [
+            "Esta loja aparece em **1 das 213 buscas** que testamos na cidade."
+          ],
+          "contra": [
+            "uma medição só — a segunda dirá se é estrutural ou momento"
+          ],
+          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+          "procedencia": "medido em 213 buscas testadas, 1 medição"
+        }
+      }
+    ],
+    "de_marketing": 1,
+    "de_operacao": 0
+  },
   "meu_bairro": {
     "bairro": "Portão",
     "clinicas": 3,
@@ -340,6 +474,24 @@
   "acoes": {
     "arcos": [
       {
+        "arco_id": "ortho_cwb_portao|silencio",
+        "local_id": "ortho_cwb_portao",
+        "praca_id": "curitiba",
+        "gatilho": "silencio",
+        "problema": "85 anúncios no ar de 52 anunciantes, e nenhum é da rede",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": null,
+        "antes": null,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "sem ação padrão para este gatilho",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      },
+      {
         "arco_id": "ortho_cwb_portao|posicao",
         "local_id": "ortho_cwb_portao",
         "praca_id": "curitiba",
@@ -353,12 +505,12 @@
         "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": 12.0,
-        "medido_em": "2026-08-12",
+        "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
-        "dias": 0
+        "dias": 1
       }
     ],
-    "total": 1,
+    "total": 2,
     "aviso": "O livro nasceu hoje. Nenhum arco completou 21 dias, então ainda não há veredito para ninguém — a primeira resposta vem na coleta seguinte."
   },
   "oferta_da_cidade": {
@@ -910,6 +1062,13 @@
     "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
   },
   "eventos": [
+    {
+      "data": "2026-08-13",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Silêncio publicitário com leilão cheio",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
     {
       "data": "2026-08-12",
       "tipo": "alerta",

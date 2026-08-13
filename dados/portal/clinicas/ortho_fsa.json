@@ -27,7 +27,7 @@
   "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
-    "dias_aberta": 2,
+    "dias_aberta": 3,
     "prazo_dias": 14,
     "vence_em": "2026-08-24"
   },
@@ -603,6 +603,153 @@
       "procedencia": "medido em 110 avaliações, 4 medições, 28 dias de janela"
     }
   },
+  "meu_territorio": {
+    "local_id": "ortho_fsa",
+    "unidade": "OrthoDontic Feira de Santana",
+    "medido": true,
+    "location": {
+      "lat": -12.2572327,
+      "lng": -38.9662538
+    },
+    "bairro": "Centro",
+    "clinica_mais_proxima": {
+      "nome": "Aparelho Dental - Orthodontic Feira de Santana",
+      "km": 0.0,
+      "avaliacoes": null,
+      "nota": null,
+      "bairro": "Centro"
+    },
+    "aparelho_mais_proximo": {
+      "nome": "Clinica Meu Dente - Senhor dos Passos",
+      "km": 0.17,
+      "avaliacoes": 198,
+      "nota": 4.3,
+      "bairro": "Centro"
+    },
+    "unidade_da_rede_mais_proxima": null,
+    "raios": {
+      "1km": {
+        "clinicas": 73,
+        "de_aparelho": 12,
+        "da_rede": 0
+      },
+      "2km": {
+        "clinicas": 103,
+        "de_aparelho": 15,
+        "da_rede": 0
+      },
+      "5km": {
+        "clinicas": 139,
+        "de_aparelho": 20,
+        "da_rede": 0
+      }
+    },
+    "frase_fato": "a clínica mais próxima está a 0.0 km",
+    "proximidade_entre_unidades": null,
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 142,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+        "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 142 clínicas com coordenada, 1 medição"
+    }
+  },
+  "movimentos": {
+    "eventos": [],
+    "e_da_cidade": true,
+    "resumo": {
+      "praca_id": "feira",
+      "rotulo": "BA · Feira de Santana",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
+  "execucao": {
+    "local_id": "ortho_fsa",
+    "praca_id": "feira",
+    "rotulo": "BA · Feira de Santana",
+    "unidade": "OrthoDontic Feira de Santana",
+    "itens": [
+      {
+        "problema": "Esta loja aparece em **3 das 123 buscas** que testamos na cidade.",
+        "e_marketing": true,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "seo_local",
+          "especialidade": "marketing local e Google Business",
+          "problema": "a unidade aparece em 3 buscas de 123 testadas na própria cidade",
+          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
+          "evidencias": [
+            "aparece em 3 de 123 buscas",
+            "aparece em: {'frase': 'ortodontista feira de santana', 'posicao': 1, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'aparelho ortodôntico feira de santana', 'posicao': 2, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'ortodontista em feira de santana', 'posicao': 3, 'intencao': 'GENÉRICO'}"
+          ],
+          "nao_fazer": [
+            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
+            "não prometer posição: o Google não vende ordem no mapa"
+          ],
+          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
+          "prazo": "30 dias",
+          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
+          "recoletar_em_dias": 30
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 123,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/portal/presenca_por_loja.json",
+          "a_favor": [
+            "Esta loja aparece em **3 das 123 buscas** que testamos na cidade."
+          ],
+          "contra": [
+            "uma medição só — a segunda dirá se é estrutural ou momento"
+          ],
+          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+          "procedencia": "medido em 123 buscas testadas, 1 medição"
+        }
+      },
+      {
+        "problema": "10 avaliações negativas abertas sem resposta",
+        "e_marketing": false,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "reputacao",
+          "especialidade": "a própria unidade",
+          "porque_nao_e_marketing": "responder paciente é trabalho de quem atende. Agência escrevendo resposta em nome da clínica é o caminho mais curto para uma resposta que o paciente percebe como automática.",
+          "metrica_de_validacao": "quantas seguem sem resposta na próxima coleta",
+          "recoletar_em_dias": 15
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 10,
+          "janela_dias": null,
+          "medicoes": null,
+          "fonte": "dados/portal/caixa_de_respostas.json",
+          "a_favor": [],
+          "contra": [],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 10 avaliações"
+        }
+      }
+    ],
+    "de_marketing": 1,
+    "de_operacao": 1
+  },
   "meu_bairro": {
     "bairro": "Centro",
     "clinicas": 84,
@@ -641,9 +788,9 @@
         "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": 2.8,
-        "medido_em": "2026-08-12",
+        "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
-        "dias": 2
+        "dias": 3
       },
       {
         "arco_id": "ortho_fsa|posicao",
@@ -658,9 +805,9 @@
         "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": 17.0,
-        "medido_em": "2026-08-12",
+        "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
-        "dias": 2
+        "dias": 3
       }
     ],
     "total": 2,

@@ -2,7 +2,7 @@
  "o_que_e": "O ciclo inteiro de cada problema: o que a medição acusou, o que recomendamos, e o que a medição mostrou depois.",
  "o_que_nao_e": "Não é prova de causa. Não há grupo de controle e ninguém de dentro confirma o que foi executado — o livro registra o que fizemos e o que a medição mostrou em seguida.",
  "por_que_importa": "Qualquer concorrente coleta o Google. Nenhum tem o histórico do que a rede fez depois.",
- "medido_em": "2026-08-12",
+ "medido_em": "2026-08-13",
  "minimo_de_dias": 21,
  "margem_por_metrica": {
   "nota": 0.15,
@@ -10,14 +10,411 @@
   "avaliacoes": 3,
   "posicao": 1
  },
- "arcos_total": 51,
+ "arcos_total": 73,
  "o_que_falta_para_valer": "duas coisas: distância no tempo (a primeira resposta vem na coleta seguinte) e volume (com 16 arcos não se aprende padrão de rede; com 200 sim)",
  "por_veredito": {
+  "aberto": 22,
   "cedo_demais": 51
  },
- "manchete": "51 problemas acompanhados · 0 resolvidos, 0 melhoraram, 0 pioraram",
+ "manchete": "73 problemas acompanhados · 0 resolvidos, 0 melhoraram, 0 pioraram",
  "aviso_de_juventude": "O livro nasceu hoje. Nenhum arco completou 21 dias, então ainda não há veredito para ninguém — a primeira resposta vem na coleta seguinte.",
  "arcos": [
+  {
+   "arco_id": "ortho_cwb_centro_2|silencio",
+   "local_id": "ortho_cwb_centro_2",
+   "praca_id": "curitiba",
+   "gatilho": "silencio",
+   "problema": "85 anúncios no ar de 52 anunciantes, e nenhum é da rede",
+   "evidencia": "dados/serie/fila_historico.jsonl",
+   "aberto_em": "2026-08-13",
+   "metrica": null,
+   "antes": null,
+   "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+   "acao_recomendada": "sem ação padrão para este gatilho",
+   "execucao": "não sabemos — o portal não fala com a unidade",
+   "depois": null,
+   "medido_em": null,
+   "veredito": "aberto",
+   "dias": 0
+  },
+  {
+   "arco_id": "ortho_cwb_centro_3|silencio",
+   "local_id": "ortho_cwb_centro_3",
+   "praca_id": "curitiba",
+   "gatilho": "silencio",
+   "problema": "85 anúncios no ar de 52 anunciantes, e nenhum é da rede",
+   "evidencia": "dados/serie/fila_historico.jsonl",
+   "aberto_em": "2026-08-13",
+   "metrica": null,
+   "antes": null,
+   "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+   "acao_recomendada": "sem ação padrão para este gatilho",
+   "execucao": "não sabemos — o portal não fala com a unidade",
+   "depois": null,
+   "medido_em": null,
+   "veredito": "aberto",
+   "dias": 0
+  },
+  {
+   "arco_id": "ortho_cwb_centro_4|silencio",
+   "local_id": "ortho_cwb_centro_4",
+   "praca_id": "curitiba",
+   "gatilho": "silencio",
+   "problema": "85 anúncios no ar de 52 anunciantes, e nenhum é da rede",
+   "evidencia": "dados/serie/fila_historico.jsonl",
+   "aberto_em": "2026-08-13",
+   "metrica": null,
+   "antes": null,
+   "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+   "acao_recomendada": "sem ação padrão para este gatilho",
+   "execucao": "não sabemos — o portal não fala com a unidade",
+   "depois": null,
+   "medido_em": null,
+   "veredito": "aberto",
+   "dias": 0
+  },
+  {
+   "arco_id": "ortho_cwb_centro|silencio",
+   "local_id": "ortho_cwb_centro",
+   "praca_id": "curitiba",
+   "gatilho": "silencio",
+   "problema": "85 anúncios no ar de 52 anunciantes, e nenhum é da rede",
+   "evidencia": "dados/serie/fila_historico.jsonl",
+   "aberto_em": "2026-08-13",
+   "metrica": null,
+   "antes": null,
+   "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+   "acao_recomendada": "sem ação padrão para este gatilho",
+   "execucao": "não sabemos — o portal não fala com a unidade",
+   "depois": null,
+   "medido_em": null,
+   "veredito": "aberto",
+   "dias": 0
+  },
+  {
+   "arco_id": "ortho_cwb_portao|silencio",
+   "local_id": "ortho_cwb_portao",
+   "praca_id": "curitiba",
+   "gatilho": "silencio",
+   "problema": "85 anúncios no ar de 52 anunciantes, e nenhum é da rede",
+   "evidencia": "dados/serie/fila_historico.jsonl",
+   "aberto_em": "2026-08-13",
+   "metrica": null,
+   "antes": null,
+   "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+   "acao_recomendada": "sem ação padrão para este gatilho",
+   "execucao": "não sabemos — o portal não fala com a unidade",
+   "depois": null,
+   "medido_em": null,
+   "veredito": "aberto",
+   "dias": 0
+  },
+  {
+   "arco_id": "ortho_fln_centro_2|nao_engatou",
+   "local_id": "ortho_fln_centro_2",
+   "praca_id": "florianopolis",
+   "gatilho": "nao_engatou",
+   "problema": "a primeira avaliação é de 2026-03-13, há 5 meses, e o ritmo medido é 24.0/mês — a unidade ainda não engatou",
+   "evidencia": "dados/serie/fila_historico.jsonl",
+   "aberto_em": "2026-08-13",
+   "metrica": null,
+   "antes": null,
+   "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+   "acao_recomendada": "sem ação padrão para este gatilho",
+   "execucao": "não sabemos — o portal não fala com a unidade",
+   "depois": null,
+   "medido_em": null,
+   "veredito": "aberto",
+   "dias": 0
+  },
+  {
+   "arco_id": "ortho_fln_centro|nota",
+   "local_id": "ortho_fln_centro",
+   "praca_id": "florianopolis",
+   "gatilho": "nota",
+   "problema": "nota 4.4 contra mediana 4.9 das 17 clínicas medidas na praça",
+   "evidencia": "dados/serie/fila_historico.jsonl",
+   "aberto_em": "2026-08-13",
+   "metrica": "nota",
+   "antes": 4.4,
+   "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+   "acao_recomendada": "responder as avaliações abertas e tratar o motivo",
+   "execucao": "não sabemos — o portal não fala com a unidade",
+   "depois": null,
+   "medido_em": null,
+   "veredito": "aberto",
+   "dias": 0
+  },
+  {
+   "arco_id": "ortho_fln_centro|parada",
+   "local_id": "ortho_fln_centro",
+   "praca_id": "florianopolis",
+   "gatilho": "parada",
+   "problema": "apenas 1 mês seguido com movimento acima do típico da própria unidade; o ritmo medido é 8.4 avaliações/mês",
+   "evidencia": "dados/serie/fila_historico.jsonl",
+   "aberto_em": "2026-08-13",
+   "metrica": "ritmo",
+   "antes": 8.4,
+   "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+   "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
+   "execucao": "não sabemos — o portal não fala com a unidade",
+   "depois": null,
+   "medido_em": null,
+   "veredito": "aberto",
+   "dias": 0
+  },
+  {
+   "arco_id": "ortho_fln_centro|posicao",
+   "local_id": "ortho_fln_centro",
+   "praca_id": "florianopolis",
+   "gatilho": "posicao",
+   "problema": "9º lugar de 17 clínicas medidas na praça",
+   "evidencia": "dados/serie/fila_historico.jsonl",
+   "aberto_em": "2026-08-13",
+   "metrica": "posicao",
+   "antes": 9.0,
+   "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+   "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
+   "execucao": "não sabemos — o portal não fala com a unidade",
+   "depois": null,
+   "medido_em": null,
+   "veredito": "aberto",
+   "dias": 0
+  },
+  {
+   "arco_id": "ortho_fln_ingleses_do_rio_vermel|nao_engatou",
+   "local_id": "ortho_fln_ingleses_do_rio_vermel",
+   "praca_id": "florianopolis",
+   "gatilho": "nao_engatou",
+   "problema": "a primeira avaliação é de 2026-07-22, há 0 meses, e o ritmo medido é 260.6/mês — a unidade ainda não engatou",
+   "evidencia": "dados/serie/fila_historico.jsonl",
+   "aberto_em": "2026-08-13",
+   "metrica": null,
+   "antes": null,
+   "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+   "acao_recomendada": "sem ação padrão para este gatilho",
+   "execucao": "não sabemos — o portal não fala com a unidade",
+   "depois": null,
+   "medido_em": null,
+   "veredito": "aberto",
+   "dias": 0
+  },
+  {
+   "arco_id": "ortho_soro_centro|silencio",
+   "local_id": "ortho_soro_centro",
+   "praca_id": "sorocaba",
+   "gatilho": "silencio",
+   "problema": "125 anúncios no ar de 47 anunciantes, e nenhum é da rede",
+   "evidencia": "dados/serie/fila_historico.jsonl",
+   "aberto_em": "2026-08-13",
+   "metrica": null,
+   "antes": null,
+   "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+   "acao_recomendada": "sem ação padrão para este gatilho",
+   "execucao": "não sabemos — o portal não fala com a unidade",
+   "depois": null,
+   "medido_em": null,
+   "veredito": "aberto",
+   "dias": 0
+  },
+  {
+   "arco_id": "ortho_soro_jardim_faculdade|silencio",
+   "local_id": "ortho_soro_jardim_faculdade",
+   "praca_id": "sorocaba",
+   "gatilho": "silencio",
+   "problema": "125 anúncios no ar de 47 anunciantes, e nenhum é da rede",
+   "evidencia": "dados/serie/fila_historico.jsonl",
+   "aberto_em": "2026-08-13",
+   "metrica": null,
+   "antes": null,
+   "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+   "acao_recomendada": "sem ação padrão para este gatilho",
+   "execucao": "não sabemos — o portal não fala com a unidade",
+   "depois": null,
+   "medido_em": null,
+   "veredito": "aberto",
+   "dias": 0
+  },
+  {
+   "arco_id": "ortho_soro_vila_formosa|silencio",
+   "local_id": "ortho_soro_vila_formosa",
+   "praca_id": "sorocaba",
+   "gatilho": "silencio",
+   "problema": "125 anúncios no ar de 47 anunciantes, e nenhum é da rede",
+   "evidencia": "dados/serie/fila_historico.jsonl",
+   "aberto_em": "2026-08-13",
+   "metrica": null,
+   "antes": null,
+   "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+   "acao_recomendada": "sem ação padrão para este gatilho",
+   "execucao": "não sabemos — o portal não fala com a unidade",
+   "depois": null,
+   "medido_em": null,
+   "veredito": "aberto",
+   "dias": 0
+  },
+  {
+   "arco_id": "orthodontic_centro|nota",
+   "local_id": "orthodontic_centro",
+   "praca_id": "uberlandia",
+   "gatilho": "nota",
+   "problema": "nota 4.2 contra mediana 4.8 das 16 clínicas medidas na praça",
+   "evidencia": "dados/serie/fila_historico.jsonl",
+   "aberto_em": "2026-08-13",
+   "metrica": "nota",
+   "antes": 4.7,
+   "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+   "acao_recomendada": "responder as avaliações abertas e tratar o motivo",
+   "execucao": "não sabemos — o portal não fala com a unidade",
+   "depois": null,
+   "medido_em": null,
+   "veredito": "aberto",
+   "dias": 0
+  },
+  {
+   "arco_id": "orthodontic_centro|parada",
+   "local_id": "orthodontic_centro",
+   "praca_id": "uberlandia",
+   "gatilho": "parada",
+   "problema": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 0.8 avaliações/mês",
+   "evidencia": "dados/serie/fila_historico.jsonl",
+   "aberto_em": "2026-08-13",
+   "metrica": "ritmo",
+   "antes": 7.7,
+   "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+   "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
+   "execucao": "não sabemos — o portal não fala com a unidade",
+   "depois": null,
+   "medido_em": null,
+   "veredito": "aberto",
+   "dias": 0
+  },
+  {
+   "arco_id": "orthodontic_centro|posicao",
+   "local_id": "orthodontic_centro",
+   "praca_id": "uberlandia",
+   "gatilho": "posicao",
+   "problema": "16º lugar de 16 clínicas medidas na praça",
+   "evidencia": "dados/serie/fila_historico.jsonl",
+   "aberto_em": "2026-08-13",
+   "metrica": "posicao",
+   "antes": 15.0,
+   "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+   "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
+   "execucao": "não sabemos — o portal não fala com a unidade",
+   "depois": null,
+   "medido_em": null,
+   "veredito": "aberto",
+   "dias": 0
+  },
+  {
+   "arco_id": "orthodontic_kayser|parada",
+   "local_id": "orthodontic_kayser",
+   "praca_id": "caxias_do_sul",
+   "gatilho": "parada",
+   "problema": "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 3.2 avaliações/mês",
+   "evidencia": "dados/serie/fila_historico.jsonl",
+   "aberto_em": "2026-08-13",
+   "metrica": "ritmo",
+   "antes": 3.2,
+   "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+   "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
+   "execucao": "não sabemos — o portal não fala com a unidade",
+   "depois": null,
+   "medido_em": null,
+   "veredito": "aberto",
+   "dias": 0
+  },
+  {
+   "arco_id": "orthodontic_kayser|posicao",
+   "local_id": "orthodontic_kayser",
+   "praca_id": "caxias_do_sul",
+   "gatilho": "posicao",
+   "problema": "17º lugar de 17 clínicas medidas na praça",
+   "evidencia": "dados/serie/fila_historico.jsonl",
+   "aberto_em": "2026-08-13",
+   "metrica": "posicao",
+   "antes": 17.0,
+   "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+   "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
+   "execucao": "não sabemos — o portal não fala com a unidade",
+   "depois": null,
+   "medido_em": null,
+   "veredito": "aberto",
+   "dias": 0
+  },
+  {
+   "arco_id": "orthodontic|nao_engatou",
+   "local_id": "orthodontic",
+   "praca_id": "caxias_do_sul",
+   "gatilho": "nao_engatou",
+   "problema": "a primeira avaliação é de 2026-06-05, há 2 meses, e o ritmo medido é 55.3/mês — a unidade ainda não engatou",
+   "evidencia": "dados/serie/fila_historico.jsonl",
+   "aberto_em": "2026-08-13",
+   "metrica": null,
+   "antes": null,
+   "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+   "acao_recomendada": "sem ação padrão para este gatilho",
+   "execucao": "não sabemos — o portal não fala com a unidade",
+   "depois": null,
+   "medido_em": null,
+   "veredito": "aberto",
+   "dias": 0
+  },
+  {
+   "arco_id": "orthodontic|nota",
+   "local_id": "orthodontic",
+   "praca_id": "uberlandia",
+   "gatilho": "nota",
+   "problema": "nota 3.7 contra mediana 4.8 das 16 clínicas medidas na praça",
+   "evidencia": "dados/serie/fila_historico.jsonl",
+   "aberto_em": "2026-08-13",
+   "metrica": "nota",
+   "antes": 4.9,
+   "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+   "acao_recomendada": "responder as avaliações abertas e tratar o motivo",
+   "execucao": "não sabemos — o portal não fala com a unidade",
+   "depois": null,
+   "medido_em": null,
+   "veredito": "aberto",
+   "dias": 0
+  },
+  {
+   "arco_id": "orthodontic|parada",
+   "local_id": "orthodontic",
+   "praca_id": "uberlandia",
+   "gatilho": "parada",
+   "problema": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 1.1 avaliações/mês",
+   "evidencia": "dados/serie/fila_historico.jsonl",
+   "aberto_em": "2026-08-13",
+   "metrica": "ritmo",
+   "antes": 110.5,
+   "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+   "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
+   "execucao": "não sabemos — o portal não fala com a unidade",
+   "depois": null,
+   "medido_em": null,
+   "veredito": "aberto",
+   "dias": 0
+  },
+  {
+   "arco_id": "orthodontic|posicao",
+   "local_id": "orthodontic",
+   "praca_id": "uberlandia",
+   "gatilho": "posicao",
+   "problema": "15º lugar de 16 clínicas medidas na praça",
+   "evidencia": "dados/serie/fila_historico.jsonl",
+   "aberto_em": "2026-08-13",
+   "metrica": "posicao",
+   "antes": 1.0,
+   "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+   "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
+   "execucao": "não sabemos — o portal não fala com a unidade",
+   "depois": null,
+   "medido_em": null,
+   "veredito": "aberto",
+   "dias": 0
+  },
   {
    "arco_id": "ortho_cba_dom_bosco|parada",
    "local_id": "ortho_cba_dom_bosco",
@@ -31,9 +428,9 @@
    "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 0.7,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 2
+   "dias": 3
   },
   {
    "arco_id": "ortho_cba_dom_bosco|posicao",
@@ -48,9 +445,9 @@
    "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 27.0,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 2
+   "dias": 3
   },
   {
    "arco_id": "ortho_cba_fernando_correa|parada",
@@ -65,9 +462,9 @@
    "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 3.7,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 2
+   "dias": 3
   },
   {
    "arco_id": "ortho_cba_fernando_correa|posicao",
@@ -82,9 +479,9 @@
    "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 16.0,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 2
+   "dias": 3
   },
   {
    "arco_id": "ortho_centro_ldn|nota",
@@ -99,9 +496,9 @@
    "acao_recomendada": "responder as avaliações abertas e tratar o motivo",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 3.8,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 2
+   "dias": 3
   },
   {
    "arco_id": "ortho_centro_ldn|parada",
@@ -116,9 +513,9 @@
    "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 0.8,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 2
+   "dias": 3
   },
   {
    "arco_id": "ortho_centro_ldn|posicao",
@@ -133,9 +530,9 @@
    "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 23.0,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 2
+   "dias": 3
   },
   {
    "arco_id": "ortho_contagem|nota",
@@ -150,9 +547,9 @@
    "acao_recomendada": "responder as avaliações abertas e tratar o motivo",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 4.6,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 2
+   "dias": 3
   },
   {
    "arco_id": "ortho_contagem|posicao",
@@ -167,9 +564,9 @@
    "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 9.0,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 2
+   "dias": 3
   },
   {
    "arco_id": "ortho_cwb_centro_2|nao_engatou",
@@ -185,9 +582,9 @@
    "acao_recomendada": "sem ação padrão para este gatilho",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": null,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_cwb_centro_3|nao_engatou",
@@ -203,9 +600,9 @@
    "acao_recomendada": "sem ação padrão para este gatilho",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": null,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_cwb_centro_4|parada",
@@ -221,9 +618,9 @@
    "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 1.6,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_cwb_centro_4|posicao",
@@ -239,9 +636,9 @@
    "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 19.0,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_cwb_centro|nao_engatou",
@@ -257,9 +654,9 @@
    "acao_recomendada": "sem ação padrão para este gatilho",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": null,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_cwb_portao|posicao",
@@ -275,9 +672,9 @@
    "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 12.0,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_fsa|parada",
@@ -292,9 +689,9 @@
    "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 2.8,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 2
+   "dias": 3
   },
   {
    "arco_id": "ortho_fsa|posicao",
@@ -309,9 +706,9 @@
    "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 17.0,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 2
+   "dias": 3
   },
   {
    "arco_id": "ortho_gyn_jardim_tropical|parada",
@@ -327,9 +724,9 @@
    "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 6.8,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_gyn_jardim_tropical|posicao",
@@ -345,9 +742,9 @@
    "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 14.0,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_gyn_st_central|nota",
@@ -363,9 +760,9 @@
    "acao_recomendada": "responder as avaliações abertas e tratar o motivo",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 4.6,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_gyn_st_central|posicao",
@@ -381,9 +778,9 @@
    "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 13.0,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_gyn_st_morada_do_sol|parada",
@@ -399,9 +796,9 @@
    "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 4.4,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_gyn_st_morada_do_sol|posicao",
@@ -417,9 +814,9 @@
    "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 15.0,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_gyn_st_oeste|nota",
@@ -435,9 +832,9 @@
    "acao_recomendada": "responder as avaliações abertas e tratar o motivo",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 4.2,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_gyn_st_oeste|parada",
@@ -453,9 +850,9 @@
    "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 4.3,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_gyn_st_oeste|posicao",
@@ -471,9 +868,9 @@
    "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 16.0,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_joi_america|nao_engatou",
@@ -489,9 +886,9 @@
    "acao_recomendada": "sem ação padrão para este gatilho",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": null,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_joi_america|nota",
@@ -507,9 +904,9 @@
    "acao_recomendada": "responder as avaliações abertas e tratar o motivo",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 4.3,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_joi_aventureiro|parada",
@@ -525,9 +922,9 @@
    "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 5.9,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_joi_aventureiro|posicao",
@@ -543,9 +940,9 @@
    "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 13.0,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_joi_centro|nota",
@@ -561,9 +958,9 @@
    "acao_recomendada": "responder as avaliações abertas e tratar o motivo",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 4.6,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_joi_centro|posicao",
@@ -579,9 +976,9 @@
    "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 11.0,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_mafra|parada",
@@ -596,9 +993,9 @@
    "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 2.4,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 2
+   "dias": 3
   },
   {
    "arco_id": "ortho_mafra|posicao",
@@ -613,9 +1010,9 @@
    "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 7.0,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 2
+   "dias": 3
   },
   {
    "arco_id": "ortho_palmas|silencio",
@@ -630,9 +1027,9 @@
    "acao_recomendada": "sem ação padrão para este gatilho",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": null,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 2
+   "dias": 3
   },
   {
    "arco_id": "ortho_poa_cavalhada|nao_engatou",
@@ -648,9 +1045,9 @@
    "acao_recomendada": "sem ação padrão para este gatilho",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": null,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_poa_centro_historico_3|nota",
@@ -666,9 +1063,9 @@
    "acao_recomendada": "responder as avaliações abertas e tratar o motivo",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 4.4,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_poa_centro_historico_3|posicao",
@@ -684,9 +1081,9 @@
    "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 11.0,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_poa_centro_historico|nao_engatou",
@@ -702,9 +1099,9 @@
    "acao_recomendada": "sem ação padrão para este gatilho",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": null,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_poa_cristo_redentor|parada",
@@ -720,9 +1117,9 @@
    "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 7.5,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_poa_cristo_redentor|posicao",
@@ -738,9 +1135,9 @@
    "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 12.0,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_poa_rio_branco|posicao",
@@ -756,9 +1153,9 @@
    "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 21.0,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_soro_centro|nota",
@@ -774,9 +1171,9 @@
    "acao_recomendada": "responder as avaliações abertas e tratar o motivo",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 4.5,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_soro_centro|posicao",
@@ -792,9 +1189,9 @@
    "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 16.0,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_soro_jardim_faculdade|nota",
@@ -810,9 +1207,9 @@
    "acao_recomendada": "responder as avaliações abertas e tratar o motivo",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 4.3,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_soro_jardim_faculdade|parada",
@@ -828,9 +1225,9 @@
    "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 1.0,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_soro_jardim_faculdade|posicao",
@@ -846,9 +1243,9 @@
    "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 17.0,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_soro_vila_formosa|nao_engatou",
@@ -864,9 +1261,9 @@
    "acao_recomendada": "sem ação padrão para este gatilho",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": null,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_soro_vila_formosa|posicao",
@@ -882,9 +1279,9 @@
    "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 10.0,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 0
+   "dias": 1
   },
   {
    "arco_id": "ortho_souza_naves|nota",
@@ -899,9 +1296,9 @@
    "acao_recomendada": "responder as avaliações abertas e tratar o motivo",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 4.6,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 2
+   "dias": 3
   },
   {
    "arco_id": "ortho_souza_naves|posicao",
@@ -916,9 +1313,9 @@
    "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
    "execucao": "não sabemos — o portal não fala com a unidade",
    "depois": 13.0,
-   "medido_em": "2026-08-12",
+   "medido_em": "2026-08-13",
    "veredito": "cedo_demais",
-   "dias": 2
+   "dias": 3
   }
  ]
 }

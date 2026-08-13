@@ -39,12 +39,12 @@
     "posicao": 19,
     "de": 19
   },
-  "faixa": "amarela",
-  "urgencia": 50,
+  "faixa": "vermelha",
+  "urgencia": 65,
   "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 14,
     "vence_em": "2026-08-26"
   },
@@ -64,7 +64,8 @@
       "fonte": "scripts/fila.py",
       "a_favor": [
         "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 1.6 avaliações/mês",
-        "19º lugar de 19 clínicas medidas na praça"
+        "19º lugar de 19 clínicas medidas na praça",
+        "85 anúncios no ar de 52 anunciantes, e nenhum é da rede"
       ],
       "contra": [],
       "o_que_aumentaria": "o resultado medido na coleta seguinte (dados/serie/acoes.jsonl)",
@@ -85,6 +86,13 @@
       "chave": "posicao",
       "fato": "19º lugar de 19 clínicas medidas na praça",
       "fonte": "dados/portal/rede_cruzamento.json"
+    },
+    {
+      "peso": 15,
+      "titulo": "Silêncio publicitário com leilão cheio",
+      "chave": "silencio",
+      "fato": "85 anúncios no ar de 52 anunciantes, e nenhum é da rede",
+      "fonte": "dados/serie/captacao.jsonl"
     }
   ],
   "quem_avanca": null,
@@ -363,6 +371,137 @@
       "procedencia": "medido em 68 avaliações"
     }
   },
+  "meu_territorio": {
+    "local_id": "ortho_cwb_centro_4",
+    "unidade": "OrthoDontic Centro",
+    "medido": true,
+    "location": {
+      "lat": -25.431754899999998,
+      "lng": -49.270136199999996
+    },
+    "bairro": "Centro",
+    "clinica_mais_proxima": {
+      "nome": "Clinica Perfectta Odontologia",
+      "km": 0.04,
+      "avaliacoes": 161,
+      "nota": 4.7,
+      "bairro": "Centro"
+    },
+    "aparelho_mais_proximo": {
+      "nome": "Clínica Vita Sorriso Implantes - Especialista em Prótese Protocolo",
+      "km": 0.11,
+      "avaliacoes": 514,
+      "nota": 4.6,
+      "bairro": "Centro"
+    },
+    "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 0.19,
+      "avaliacoes": 1012,
+      "nota": 4.6,
+      "bairro": "Centro"
+    },
+    "raios": {
+      "1km": {
+        "clinicas": 75,
+        "de_aparelho": 4,
+        "da_rede": 3
+      },
+      "2km": {
+        "clinicas": 124,
+        "de_aparelho": 8,
+        "da_rede": 3
+      },
+      "5km": {
+        "clinicas": 167,
+        "de_aparelho": 12,
+        "da_rede": 3
+      }
+    },
+    "frase_fato": "a clínica mais próxima está a 0.04 km",
+    "proximidade_entre_unidades": {
+      "km": 0.19,
+      "unidade": "OrthoDontic",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+    },
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 178,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+        "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 178 clínicas com coordenada, 1 medição"
+    }
+  },
+  "movimentos": {
+    "eventos": [],
+    "e_da_cidade": true,
+    "resumo": {
+      "praca_id": "curitiba",
+      "rotulo": "PR · Curitiba",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
+  "execucao": {
+    "local_id": "ortho_cwb_centro_4",
+    "praca_id": "curitiba",
+    "rotulo": "PR · Curitiba",
+    "unidade": "OrthoDontic Centro",
+    "itens": [
+      {
+        "problema": "Esta loja aparece em **1 das 213 buscas** que testamos na cidade.",
+        "e_marketing": true,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "seo_local",
+          "especialidade": "marketing local e Google Business",
+          "problema": "a unidade aparece em 1 busca de 213 testadas na própria cidade",
+          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
+          "evidencias": [
+            "aparece em 1 de 213 buscas",
+            "aparece em: {'frase': 'aparelho ortodôntico curitiba preços', 'posicao': 4, 'intencao': 'PREÇO'}"
+          ],
+          "nao_fazer": [
+            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
+            "não prometer posição: o Google não vende ordem no mapa"
+          ],
+          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
+          "prazo": "30 dias",
+          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
+          "recoletar_em_dias": 30
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 213,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/portal/presenca_por_loja.json",
+          "a_favor": [
+            "Esta loja aparece em **1 das 213 buscas** que testamos na cidade."
+          ],
+          "contra": [
+            "uma medição só — a segunda dirá se é estrutural ou momento"
+          ],
+          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+          "procedencia": "medido em 213 buscas testadas, 1 medição"
+        }
+      }
+    ],
+    "de_marketing": 1,
+    "de_operacao": 0
+  },
   "meu_bairro": {
     "bairro": "Centro",
     "clinicas": 74,
@@ -389,6 +528,24 @@
   "acoes": {
     "arcos": [
       {
+        "arco_id": "ortho_cwb_centro_4|silencio",
+        "local_id": "ortho_cwb_centro_4",
+        "praca_id": "curitiba",
+        "gatilho": "silencio",
+        "problema": "85 anúncios no ar de 52 anunciantes, e nenhum é da rede",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": null,
+        "antes": null,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "sem ação padrão para este gatilho",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      },
+      {
         "arco_id": "ortho_cwb_centro_4|parada",
         "local_id": "ortho_cwb_centro_4",
         "praca_id": "curitiba",
@@ -402,9 +559,9 @@
         "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": 1.6,
-        "medido_em": "2026-08-12",
+        "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
-        "dias": 0
+        "dias": 1
       },
       {
         "arco_id": "ortho_cwb_centro_4|posicao",
@@ -420,12 +577,12 @@
         "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": 19.0,
-        "medido_em": "2026-08-12",
+        "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
-        "dias": 0
+        "dias": 1
       }
     ],
-    "total": 2,
+    "total": 3,
     "aviso": "O livro nasceu hoje. Nenhum arco completou 21 dias, então ainda não há veredito para ninguém — a primeira resposta vem na coleta seguinte."
   },
   "oferta_da_cidade": {
@@ -977,6 +1134,13 @@
     "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
   },
   "eventos": [
+    {
+      "data": "2026-08-13",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Silêncio publicitário com leilão cheio",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
     {
       "data": "2026-08-12",
       "tipo": "alerta",

@@ -1,0 +1,1317 @@
+{
+  "praca_id": "caxias_do_sul",
+  "corte": "2026-08-13",
+  "rotulo": "RS · Caxias do Sul",
+  "uf": [
+    "RS"
+  ],
+  "cidades": [
+    "RS · Caxias do Sul"
+  ],
+  "identidade": {
+    "praca_id": "caxias_do_sul",
+    "nome": "Caxias do Sul",
+    "cidades": [
+      "Caxias do Sul/RS"
+    ],
+    "uf": [
+      "RS"
+    ],
+    "rotulo": "RS · Caxias do Sul",
+    "cidades_rotulo": [
+      "RS · Caxias do Sul"
+    ],
+    "criada_em": "2026-08-13",
+    "por_que_esta_praca": "cidade onde a rede já tem unidade e que ainda não tinha estudo. As metrópoles entram agora porque o mapa de bairros passou a existir: sem ele, cinco unidades em São Paulo virariam um número só, e o número não diria nada a nenhum franqueado",
+    "ibge": [
+      {
+        "municipio": "Caxias do Sul",
+        "uf": "RS",
+        "ibge_id": 4305108,
+        "populacao_estimada": {
+          "ano": "2025",
+          "valor": "479599",
+          "unidade": "Pessoas"
+        },
+        "alvo_9_15": 37913,
+        "alvo_30_45": 115758,
+        "fonte": "ibge agregados 6579/5938/9514",
+        "de": "dados/serie/ibge_municipios.jsonl"
+      }
+    ]
+  },
+  "planos_das_lojas": [],
+  "oferta": null,
+  "bairros": {
+    "praca_id": "caxias_do_sul",
+    "rotulo": "RS · Caxias do Sul",
+    "territorio": [
+      {
+        "local_id": "orthodontic",
+        "unidade": "OrthoDontic",
+        "medido": true,
+        "location": {
+          "lat": -29.167090699999996,
+          "lng": -51.1807211
+        },
+        "bairro": "Centro",
+        "clinica_mais_proxima": {
+          "nome": "Clínica Odontológica Brasdente",
+          "km": 0.05,
+          "avaliacoes": 51,
+          "nota": 4.2,
+          "bairro": "Centro"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Revitalle Implantes | Dentista Caxias do Sul | Clínica Odontológica | Invisalign",
+          "km": 0.19,
+          "avaliacoes": 1887,
+          "nota": 5,
+          "bairro": "Centro"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 0.26,
+          "avaliacoes": 172,
+          "nota": 4.7,
+          "bairro": "Centro"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 83,
+            "de_aparelho": 8,
+            "da_rede": 1
+          },
+          "2km": {
+            "clinicas": 100,
+            "de_aparelho": 12,
+            "da_rede": 1
+          },
+          "5km": {
+            "clinicas": 111,
+            "de_aparelho": 13,
+            "da_rede": 2
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.05 km",
+        "proximidade_entre_unidades": {
+          "km": 0.26,
+          "unidade": "OrthoDontic",
+          "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+          "natureza": "inferencia"
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 114,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 114 clínicas com coordenada, 1 medição"
+        }
+      },
+      {
+        "local_id": "orthodontic_centro",
+        "unidade": "OrthoDontic",
+        "medido": true,
+        "location": {
+          "lat": -29.1680952,
+          "lng": -51.183084099999995
+        },
+        "bairro": "Centro",
+        "clinica_mais_proxima": {
+          "nome": "Center Ortodontia",
+          "km": 0.01,
+          "avaliacoes": 21,
+          "nota": 5,
+          "bairro": "Centro"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "CaxiasMed Clínica Médica e Odontológica",
+          "km": 0.16,
+          "avaliacoes": 794,
+          "nota": 4.5,
+          "bairro": "Centro"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 0.26,
+          "avaliacoes": 362,
+          "nota": 4.7,
+          "bairro": "Centro"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 87,
+            "de_aparelho": 9,
+            "da_rede": 1
+          },
+          "2km": {
+            "clinicas": 97,
+            "de_aparelho": 11,
+            "da_rede": 1
+          },
+          "5km": {
+            "clinicas": 111,
+            "de_aparelho": 13,
+            "da_rede": 2
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.01 km",
+        "proximidade_entre_unidades": {
+          "km": 0.26,
+          "unidade": "OrthoDontic",
+          "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+          "natureza": "inferencia"
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 114,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 114 clínicas com coordenada, 1 medição"
+        }
+      },
+      {
+        "local_id": "orthodontic_kayser",
+        "unidade": "OrthoDontic",
+        "medido": true,
+        "location": {
+          "lat": -29.188492699999998,
+          "lng": -51.199863900000004
+        },
+        "bairro": "Kayser",
+        "clinica_mais_proxima": {
+          "nome": "Brunetto Slovinscki Odontologia",
+          "km": 0.03,
+          "avaliacoes": 683,
+          "nota": 5,
+          "bairro": "Kayser"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Brunetto Slovinscki Odontologia",
+          "km": 0.03,
+          "avaliacoes": 683,
+          "nota": 5,
+          "bairro": "Kayser"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 2.79,
+          "avaliacoes": 172,
+          "nota": 4.7,
+          "bairro": "Centro"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 3,
+            "de_aparelho": 1,
+            "da_rede": 0
+          },
+          "2km": {
+            "clinicas": 4,
+            "de_aparelho": 1,
+            "da_rede": 0
+          },
+          "5km": {
+            "clinicas": 109,
+            "de_aparelho": 13,
+            "da_rede": 2
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.03 km",
+        "proximidade_entre_unidades": null,
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 114,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 114 clínicas com coordenada, 1 medição"
+        }
+      }
+    ],
+    "clinicas_com_coordenada": 115,
+    "clinicas_sem_coordenada": 0,
+    "raios_declarados_km": [
+      1,
+      2,
+      5
+    ],
+    "bairros_medidos": 23,
+    "clinicas_medidas": 115,
+    "sem_bairro_no_endereco": 0,
+    "unidades_da_rede": 3,
+    "unidades_localizadas": 3,
+    "onde_estamos": [
+      {
+        "local_id": "orthodontic",
+        "bairro": "Centro",
+        "unidade": "OrthoDontic"
+      },
+      {
+        "local_id": "orthodontic_centro",
+        "bairro": "Centro",
+        "unidade": "OrthoDontic"
+      },
+      {
+        "local_id": "orthodontic_kayser",
+        "bairro": "Kayser",
+        "unidade": "OrthoDontic"
+      }
+    ],
+    "bairros": [
+      {
+        "bairro": "Centro",
+        "clinicas": 51,
+        "avaliacoes_somadas": 8012,
+        "temos_unidade": true,
+        "nossas": [
+          "orthodontic",
+          "orthodontic_centro"
+        ],
+        "vizinhos_fortes": [
+          {
+            "nome": "Revitalle Implantes | Dentista Caxias do Sul | Clínica Odontológica | Invisalign",
+            "nota": 5,
+            "avaliacoes": 1887
+          },
+          {
+            "nome": "OrtoClínica",
+            "nota": 4.9,
+            "avaliacoes": 1423
+          },
+          {
+            "nome": "CaxiasMed Clínica Médica e Odontológica",
+            "nota": 4.5,
+            "avaliacoes": 794
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "51 clínicas varridas, e a unidade da rede está aqui"
+      },
+      {
+        "bairro": "São Pelegrino",
+        "clinicas": 23,
+        "avaliacoes_somadas": 1653,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Top Estética Bucal - Clínica Odontológica | Dentista em Caxias do Sul | Aparelhos Ortodônticos | Implantes Dentários",
+            "nota": 4.8,
+            "avaliacoes": 411
+          },
+          {
+            "nome": "Bonaviv Implantes - Implantes Dentários em Caxias do Sul",
+            "nota": 5,
+            "avaliacoes": 205
+          },
+          {
+            "nome": "Dental Arte Caxias",
+            "nota": 4.8,
+            "avaliacoes": 189
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "23 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Exposição",
+        "clinicas": 10,
+        "avaliacoes_somadas": 1297,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Oral Unic",
+            "nota": 4.9,
+            "avaliacoes": 937
+          },
+          {
+            "nome": "Clínica Furlan Odontologia Especializada",
+            "nota": 5,
+            "avaliacoes": 78
+          },
+          {
+            "nome": "Dra. Roberta Bento - Dentista Caxias do Sul",
+            "nota": 5,
+            "avaliacoes": 73
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "10 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Kayser",
+        "clinicas": 4,
+        "avaliacoes_somadas": 863,
+        "temos_unidade": true,
+        "nossas": [
+          "orthodontic_kayser"
+        ],
+        "vizinhos_fortes": [
+          {
+            "nome": "Brunetto Slovinscki Odontologia",
+            "nota": 5,
+            "avaliacoes": 683
+          },
+          {
+            "nome": "OrtoDoctor Kayser Odontologia Especializada",
+            "nota": 5,
+            "avaliacoes": 52
+          },
+          {
+            "nome": "OdontoCompany Kayser - Caxias do Sul",
+            "nota": 4.7,
+            "avaliacoes": 37
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "4 clínicas varridas, e a unidade da rede está aqui"
+      },
+      {
+        "bairro": "Nossa Sra. de Lourdes",
+        "clinicas": 4,
+        "avaliacoes_somadas": 1114,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Instituto Bordin - Odontologia Estética, Próteses e Implantes - CLÍNICA ODONTOLÓGICA",
+            "nota": 4.9,
+            "avaliacoes": 564
+          },
+          {
+            "nome": "Benne Odonto Clinica Odontológica Ltda",
+            "nota": 5,
+            "avaliacoes": 543
+          },
+          {
+            "nome": "Dentalshop Brasil - Filial Caxias do Sul",
+            "nota": 4,
+            "avaliacoes": 4
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "4 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Cristo Redentor",
+        "clinicas": 2,
+        "avaliacoes_somadas": 403,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dentista | Implante Dentário | OdontoPlus Centro Odontológico | Cristo Redentor | Caxias do Sul - RS",
+            "nota": 4.9,
+            "avaliacoes": 293
+          },
+          {
+            "nome": "Dra Nalva Fritzen",
+            "nota": 5,
+            "avaliacoes": 110
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "2 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Pio X",
+        "clinicas": 2,
+        "avaliacoes_somadas": 351,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Magic Odontologia e Implantes",
+            "nota": 4.8,
+            "avaliacoes": 241
+          },
+          {
+            "nome": "Arte Sorriso Clínica Odontológica",
+            "nota": 4.6,
+            "avaliacoes": 110
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "2 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Cruzeiro",
+        "clinicas": 2,
+        "avaliacoes_somadas": 354,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Andreola Odontologia Integrada | Dentista | Facetas de Resina | Lentes de Contato l Harmonização Facial | Implantes Dentários",
+            "nota": 5,
+            "avaliacoes": 214
+          },
+          {
+            "nome": "L&C ODONTOLOGIA | Dentista Caxias do Sul | Alinhadores Invisíveis | Ronco | Facetas | Implantes | Próteses | Clareamento",
+            "nota": 5,
+            "avaliacoes": 140
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "2 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Madureira",
+        "clinicas": 2,
+        "avaliacoes_somadas": 135,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Pró Implanto - Dentista Caxias do Sul",
+            "nota": 5,
+            "avaliacoes": 135
+          },
+          {
+            "nome": "Dr. Tiago Abreu - Ortodontia",
+            "nota": null,
+            "avaliacoes": null
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "2 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Panazzolo",
+        "clinicas": 2,
+        "avaliacoes_somadas": 11,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dra. Tássia Tonello",
+            "nota": 5,
+            "avaliacoes": 10
+          },
+          {
+            "nome": "Dentista Dra. Tatiana Thomé",
+            "nota": 5,
+            "avaliacoes": 1
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "2 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Ana Rech",
+        "clinicas": 1,
+        "avaliacoes_somadas": 909,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Massocatto Odontologia - Implantes Dentários",
+            "nota": 5,
+            "avaliacoes": 909
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Mal. Floriano",
+        "clinicas": 1,
+        "avaliacoes_somadas": 530,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Criardente Odontologia Integrada",
+            "nota": 5,
+            "avaliacoes": 530
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "N Sra Lourdes",
+        "clinicas": 1,
+        "avaliacoes_somadas": 307,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Odontopediatra Dra. Andressa Pimentel",
+            "nota": 5,
+            "avaliacoes": 307
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Jardim Eldorado",
+        "clinicas": 1,
+        "avaliacoes_somadas": 237,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Odonto Excellence | Dentista Caxias do Sul | Clínica Odontológica | Aparelho Ortodôntico",
+            "nota": 4.9,
+            "avaliacoes": 237
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "São José",
+        "clinicas": 1,
+        "avaliacoes_somadas": 126,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Odonto Excellence Caxias do Sul São José - Dentista",
+            "nota": 4.8,
+            "avaliacoes": 126
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Sanvitto",
+        "clinicas": 1,
+        "avaliacoes_somadas": 98,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Instituto Novva Odontologia - Implantes dentais e Lentes de contato dentais.",
+            "nota": 4.9,
+            "avaliacoes": 98
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Lourdes",
+        "clinicas": 1,
+        "avaliacoes_somadas": 56,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "IGPGO - Caxias do Sul",
+            "nota": 4.1,
+            "avaliacoes": 56
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Nossa Sra. de Fátima",
+        "clinicas": 1,
+        "avaliacoes_somadas": 28,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dra. Letícia Dall'Agnol Odontologia | Dentista em Caxias do Sul",
+            "nota": 5,
+            "avaliacoes": 28
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "N. Sra. De Lourdes",
+        "clinicas": 1,
+        "avaliacoes_somadas": 25,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dra. Bruna R. de Rossi | Dentista e Ortodontista em Caxias do Sul •Clareamento •Profilaxia •Estética Dental •Botóx",
+            "nota": 5,
+            "avaliacoes": 25
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Santa Catarina",
+        "clinicas": 1,
+        "avaliacoes_somadas": 23,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Orthoblanc Odontologia Clínica E Estética",
+            "nota": 4.8,
+            "avaliacoes": 23
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Bela Vista",
+        "clinicas": 1,
+        "avaliacoes_somadas": 11,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Odonto Excellence Caxias do Sul, Bela Vista - Dentista",
+            "nota": 4.3,
+            "avaliacoes": 11
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Serrano",
+        "clinicas": 1,
+        "avaliacoes_somadas": 2,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Clinica Odontologica",
+            "nota": 3,
+            "avaliacoes": 2
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Sagrada Família",
+        "clinicas": 1,
+        "avaliacoes_somadas": 0,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dra. Fernanda Boff | Dentista Caxias do Sul | Invisalign | Ortodontia | Escaneamento 3D",
+            "nota": null,
+            "avaliacoes": null
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      }
+    ],
+    "bairros_sem_a_rede": [
+      {
+        "bairro": "São Pelegrino",
+        "clinicas": 23,
+        "avaliacoes_somadas": 1653,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Top Estética Bucal - Clínica Odontológica | Dentista em Caxias do Sul | Aparelhos Ortodônticos | Implantes Dentários",
+            "nota": 4.8,
+            "avaliacoes": 411
+          },
+          {
+            "nome": "Bonaviv Implantes - Implantes Dentários em Caxias do Sul",
+            "nota": 5,
+            "avaliacoes": 205
+          },
+          {
+            "nome": "Dental Arte Caxias",
+            "nota": 4.8,
+            "avaliacoes": 189
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "23 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Exposição",
+        "clinicas": 10,
+        "avaliacoes_somadas": 1297,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Oral Unic",
+            "nota": 4.9,
+            "avaliacoes": 937
+          },
+          {
+            "nome": "Clínica Furlan Odontologia Especializada",
+            "nota": 5,
+            "avaliacoes": 78
+          },
+          {
+            "nome": "Dra. Roberta Bento - Dentista Caxias do Sul",
+            "nota": 5,
+            "avaliacoes": 73
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "10 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Nossa Sra. de Lourdes",
+        "clinicas": 4,
+        "avaliacoes_somadas": 1114,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Instituto Bordin - Odontologia Estética, Próteses e Implantes - CLÍNICA ODONTOLÓGICA",
+            "nota": 4.9,
+            "avaliacoes": 564
+          },
+          {
+            "nome": "Benne Odonto Clinica Odontológica Ltda",
+            "nota": 5,
+            "avaliacoes": 543
+          },
+          {
+            "nome": "Dentalshop Brasil - Filial Caxias do Sul",
+            "nota": 4,
+            "avaliacoes": 4
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "4 clínicas varridas, e a rede não está aqui"
+      }
+    ],
+    "manchete": "23 bairros medidos · a rede está em 2 deles",
+    "leitura": "O bairro com mais clínicas é Centro, com 51 clínicas varridas, e a rede está lá.",
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 115,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
+      "procedencia": "medido em 115 clínicas varridas, 1 medição"
+    }
+  },
+  "movimentos_do_mercado": {
+    "eventos": [],
+    "resumo": {
+      "praca_id": "caxias_do_sul",
+      "rotulo": "RS · Caxias do Sul",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
+  "imprensa": {
+    "medido": true,
+    "total": 50,
+    "mostrando": 12,
+    "recentes_30d": 23,
+    "manchete": "23 matérias sobre a cidade nos últimos 30 dias, de 50 já lidas",
+    "porque_vazio": null,
+    "materias": [
+      {
+        "titulo": "Federasul homenageia CIC Caxias pelos 125 anos de atuação - CIC Caxias",
+        "veiculo": "CIC Caxias",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQSWY4cVFvdUNWcUkzcUZuRENpWXh1Q0N1SFlJNzVEM0YtUHNscEZrbGt6Q3FnMmZXMHQ1YUtvZEFDczJCLUdIT0F0dVgzQVROZ2F1QWNlaHBnZDZwdnBmNWVuQm5kUzVaa0VKeEpIOWZ0aXEwOVZzZGlpUEhULU51R3J4YTVIcGZGOW4zVzBEUW1XUFR4M2s4dmowNlpXTGYxRWEwT2ZB?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Grupo Das Ruas e coreógrafo Juliano Vieira Dias unem música e dança no espetáculo “Fundamento” em Caxias do Sul - Sesc/RS",
+        "veiculo": "Sesc/RS",
+        "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOaHZSTW10aWtQaWo2ZVZjNEc0NFlZZ1JwVEZHdncwN2kzY3RkUzJtWkpvYjJuZUpYVXNyb3dkZUhDVWhoeGo3cVFZS0NmTkJXOGtVQTVyZWEyLTZOWlNLOVdiS3p2SGdMbHNxVDYxa0piTFB3NC1wbTdwalBWbXZtVHFNT3dyZlktU18waXk4NXJTRFZLakJ1NU45NVhwd0dwQU1JT3RuS19tWEJKbmhlZVNoTm12Y2hoNjYyR09kM0Exb1NLaUVtMzhjQ25LWXZVcGdoQjRGTkE0MDF2dkt3?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Mercopar 2026 abre inscrições para visitantes, em Caxias do Sul - GZH",
+        "veiculo": "GZH",
+        "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPVUNJRFRWd05KUFc0ODdHWjFlOU5wSVBESFRzbVZ3cUFHZmxLQk5XU0dhU0ZLclFEZ2tic2ZOX2pydG9qQ3hvWmROTXR2UlBhd3BYTTNPdjVzVkIxblZEaEpLbmwzMlhJU3pOelFmS3RidjFiWnhyc09KT1lsSERZOFNVeUlNcFEtNUpveDA2YWt4VThlZ2dqZS1hZHhzRFVSd2dqZW5QUUFSMkhnOGNVaDBEVHVsVXh0cTBBakRLV1gtUnRiYzlNVjZfSzF5dldmNUJQZW5GQ01HZVRmcUVSdGpwS2tLeC14QWE3QQ?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Tempestade com 50 mm e ventos de 60 km/h põe Caxias do Sul em alerta amarelo - O TEMPO",
+        "veiculo": "O TEMPO",
+        "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOTFdqb1hvWmtCRFhjLVQ2NnRyVXo1WTRXUEtvWlNCcmNmX1RrR3pQeks5aU02ZFNmR2g0X2x3UUlfQ1I0a1hYdGx4ZlNXVnJxcVhTVWNMcHhaZG1aYmhVNFNGbll4SFBreDNkS19WMTBVVjBGbHVEeVhHaFVEbGNkTnE3bnk0UGtzMm1VcDRNNi1lN3ZuVGRfc3hIWkVEUGdQVE14cVlMZUFtVDRJU2tYUmZBVlp0UHJIalY4Q0ZTQW9HZGhNSVN4MW92cXVlNGJESzRlcG82b3VIc21pRnZRSEZpZTdldzV5SzdiZ2Fwd0pSOHpqYW1nR2t2WUhsbk5vcEHSAb8BQVVfeXFMT05NQldpZm5IMzNfNlpfaEZjWldJR0hlRVlRaGxXb19JdHdyN2dQcjUwdG96ZE1HSG5WTWFxSGtXZUFpVHVYOGcyQ1g0UVJvX3NHejBMeTlpSmpiakVSNF9sbld6a0NVOHZ2cmlVRm1oM0tqcWR1eWdGZXZsVEw2NU1USHhmRE5lUWs4MjBJM3RxUHVqYzktYWYxeVI5STBaNVBBamNkVGRJQTFwVmE1bEptLU4wS3p5V0RhU2kybmc?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Previsão do tempo em Caxias do Sul (RS) hoje: veja como fica o clima nesta terça-feira - Terra",
+        "veiculo": "Terra",
+        "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxON2FFVnVIdUduNV9nR1RyZF9xRlh5ek56dWgxdXBWd3hmM21FNHhrT0E0RU9pWlZPbXVRY1p1QUpqd3BpT0V1MFdFMEROR0pfaWhtWko3dDZMR2E2bWpsdlVDSGpPYmVxZzBTU2lkUFdTZHI2U2o4VkQ2RGVFZ0k3RDh6a21TNjFnVU8xcGNHdzFIRjJUTVZReDU4N1BkMkpVTkdDS1U2ZXVKR0xHZUlmbzExczhqbHRSTGFPMlJqdlNRRHUtSHRhRmRqYU93UWxnMmNBRWFnSDNnUlowT1A3MHpFU3pVU1hCQTVBSjFIUkhwRk1zNVVQdUdUZ25IcW5RYWd6Z2lsTm9JUQ?oc=5",
+        "publicado": "2026-08-11",
+        "dias": 2
+      },
+      {
+        "titulo": "Exposição em Caxias do Sul propõe reflexão sobre os discursos que sustentam a violência contra as mulheres - GZH",
+        "veiculo": "GZH",
+        "link": "https://news.google.com/rss/articles/CBMipwJBVV95cUxOSHBMZVRUbUtMa0Zob3N5TVZjVmV1Z0ljdnhXTnJMWDQxcGRnV19sUjRzZDZMUTYyVlotWmFocUo2U2oxdThiYWN3TXZacnJMR2xwRU1yYS11UUJXTnJ4QlBOQ1RNYWwwMTBadHd3ZEQwYm9pOHlaNXc3cHJodG5JSmlvNVFxUGV2YnA4amYzU0xxcHRjRlZ6SmdmUDdZWHBiMF9fSXVFeTlLR1Z3eFFWc3RINUdYRWZhV0ZVQmFJNG0tWV95anVxXzV2VGJSLUxqd2lGbDF2VnJjZTVqMTNMUWVZR1hBQ3RFWWRmUGN2ZWkybDhmWUVhZXhZVDdxUFZyOElXVVhyYTdYSWpFVnpPVVZ1cHZrOHJSdmI0eGl5TzRoRGpvRzVv?oc=5",
+        "publicado": "2026-08-11",
+        "dias": 2
+      },
+      {
+        "titulo": "Previsão do tempo em Caxias do Sul (RS) hoje: veja como fica o clima nesta segunda-feira - Terra",
+        "veiculo": "Terra",
+        "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOVG1rVkc4Xy0yMktfVzdPU3QtaDNnMGlWZGRJb2dEbVBpSGRWZnE0UlVGUldRS3dBZl9BMTJESkZsWlRXb1NfTTdOWGxabGVfR0ljeHpDVmZMRkxsenpOYzlvWGxDQkRad1FxS01iVTBkNG5JLW8tdUNxeUZOSDdMVTY5WW1tajF1UGlXa254ZlhLZVhENkN5eW5rNUs0dmpKOGRNWmo2UHpiSUpOcHVaemllek5kT1IwV0pIRUk5Ui11Mk9aLWtMSFB6dktoVTFrMFVCdFpjaXFzam9maXRocHJqWFNQQ1kydUNJcW9OTFRQU1NOUzBpVG5MTmV2UmN5bmtqOGFYcXp3aFlz?oc=5",
+        "publicado": "2026-08-10",
+        "dias": 3
+      },
+      {
+        "titulo": "Campus Caxias do Sul conquista medalhas nos Jogos do IFRS em Porto Alegre. - ifrs.edu.br",
+        "veiculo": "ifrs.edu.br",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPQnhxajR6a09zS2dGS2JCTU5sQ2VaRU9idmZoSVFaamNDeWdvM2Q1RnlpanhqTFpJNkZGVlhpVzJpWmU1SUJ6cWQwNjZNTExkZ0NVSTQ0X0plc3hubGcxeHlvNlRaVW4zb1NXVnFuUHlYMlI3VG03VlVSY1BUdjNUbEtEVkxHY3E4UjF0X3ZwdzdaOEg4RVMtZUd4U0lLeXAxaV84?oc=5",
+        "publicado": "2026-08-10",
+        "dias": 3
+      },
+      {
+        "titulo": "Fórum em Caxias do Sul debate novas exigências da NR-1 sobre saúde mental no trabalho - Radio Caxias FM",
+        "veiculo": "Radio Caxias FM",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMFFoSHR4THZqekgzSmw0bWpUdWRkSTdWRnJ5YS1qaUxKWDhNZEdlRG9FWjh6bjFvVW5YY0FWWkU0U3lOeTl5bTB4d0tCU2JzazZZWjhQa0VoblBFSzAtb21ycVdDNGtnNURDWnU3T0RtMmNPQlVPRlhQVVM0VGItWDEwY2xPMVZHbFpzY2xXQ0xUQk85RlhKeldYU2k2bjEtNndhaDRzS0pXMU9VbDZkWEdpQTEzOXZq?oc=5",
+        "publicado": "2026-08-10",
+        "dias": 3
+      },
+      {
+        "titulo": "Acordos tributários ultrapassam R$ 5 bilhões no Rio Grande do Sul, diz procurador - Radio Caxias FM",
+        "veiculo": "Radio Caxias FM",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQYk5VMExwZFhiMUZldzVPX1NfQm1WUVRxSUlraWNSUndkRlVfV1JsYUhyZFp1ZEpOd3pCbTBoMUc0OHppR1kyQ0tjYUU1c3BHVlpSY2czWHNuWHlEdWl1STNyZGp3UWhjQTI3WEVQMlNMbWExZHlmYTNVaXFSWWVsVElJcnJDRlRkY0MzSXVJaFI4Q1RhOGkzTU5mSDROQ3A1TVpMcDJqU1V4OEZQUDIwWlFpUFhaMkFv?oc=5",
+        "publicado": "2026-08-10",
+        "dias": 3
+      },
+      {
+        "titulo": "Amcham RS reúne lideranças da Serra Gaúcha para debater o uso de IA na prática - CIC Caxias",
+        "veiculo": "CIC Caxias",
+        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOMUZrRExDMVhCWmZPbFV6bEJLWXlNaldXQjNxcTNJc0NDSWdpd0tsdVBLUGlpbV9xZXBQNzE2UEQ4SE9BQU5BVUU5UXdkQjV6V251LWNoR05HX1JNdm1MZE5QRDhfa2VUUEsxVlhheWZGMGIxOG1Wa1BiQmlpZ0U4SWlsRVpGckJjQkFmYU9jTHFwMFlTNnBsZFVweGJTVnRpVF8yUlpSV1A1bUNUTmkwZGt4bzhiVVVjYnlBaTJtUEV1QQ?oc=5",
+        "publicado": "2026-08-07",
+        "dias": 6
+      },
+      {
+        "titulo": "Previsão do tempo em Caxias do Sul (RS) hoje: veja como fica o clima nesta quarta-feira - Terra",
+        "veiculo": "Terra",
+        "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPcnc2TnFGdjZOVk5aaThBd2loTWNOOWRMbGM0VXJkTFFkLWhDcmVILXZRLUhOU0FxZjV1UThZeGlMdmdwbHB1NERESTJlT2VuWWJWS21UNVlvTHJ2akxpVk5EaUZ1QjBhWWF2S0x1TUxkV3RxbEdpLWh2YVpwM2RrY2lVOXJOR3l1MDVxalhDUHRBN0JSdmM2Z2tTc0lYMG5BakRWXzhteTd4ZTlhQndfWHhMOGdualoxdWVuZXdzbjdDakN1NW1hbDlaSEhoUE9aN3M4WDNWUG9BZ1hBX3NrY0JnVk9BelpKVlJmWEVqOUg5UWI2M3F5N3FsLThvYnI5TUQzZDFneGJwYmc?oc=5",
+        "publicado": "2026-08-05",
+        "dias": 8
+      }
+    ]
+  },
+  "ritmo_de_publicacao": {
+    "medido": false,
+    "perfis": 0,
+    "vivos": 0,
+    "parados": 0,
+    "manchete": null,
+    "porque_vazio": "nenhum perfil medido nesta cidade",
+    "lista": []
+  },
+  "placar": [
+    {
+      "local_id": "revitalle_implantes_dentis",
+      "nome": "Revitalle Implantes | Dentista Caxias do Sul | Clínica Odontológica | Invisalign",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": 1887,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "ortoclinica",
+      "nome": "OrtoClínica",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.9,
+      "avaliacoes": 1423,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "massocatto_odontologia_imp",
+      "nome": "Massocatto Odontologia - Implantes Dentários",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": 909,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "caxiasmed_clinica_medica_e",
+      "nome": "CaxiasMed Clínica Médica e Odontológica",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.5,
+      "avaliacoes": 794,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "oral_unic",
+      "nome": "Oral Unic",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.8,
+      "avaliacoes": 705,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "brunetto_slovinscki_odonto",
+      "nome": "Brunetto Slovinscki Odontologia",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": 683,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "instituto_bordin_odontolog",
+      "nome": "Instituto Bordin - Odontologia Estética, Próteses e Implantes - CLÍNICA ODONTOLÓGICA",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.9,
+      "avaliacoes": 564,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "benne_odonto_clinica_odont",
+      "nome": "Benne Odonto Clinica Odontológica Ltda",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": 543,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "criardente_odontologia_int",
+      "nome": "Criardente Odontologia Integrada",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": 530,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "alis_odontologia_avancada",
+      "nome": "ÁLIS - Odontologia Avançada",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": 465,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "top_estetica_bucal_clinica",
+      "nome": "Top Estética Bucal - Clínica Odontológica | Dentista em Caxias do Sul | Aparelhos Ortodônticos | Implantes Dentários",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.8,
+      "avaliacoes": 411,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "orthodontic",
+      "nome": "OrthoDontic",
+      "tipo": "franquia",
+      "proprio": true,
+      "nota": 4.9,
+      "avaliacoes": 308,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "odontopediatra_dra_andress",
+      "nome": "Odontopediatra Dra. Andressa Pimentel",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": 307,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "gaucha_odonto_clinica_odon",
+      "nome": "Gaúcha Odonto - Clínica odontológica - Implantes e Próteses",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": 301,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "dentista_implante_dentario",
+      "nome": "Dentista | Implante Dentário | OdontoPlus Centro Odontológico | Cristo Redentor | Caxias do Sul - RS",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.9,
+      "avaliacoes": 293,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "orthodontic_kayser",
+      "nome": "OrthoDontic",
+      "tipo": "franquia",
+      "proprio": true,
+      "nota": 4.8,
+      "avaliacoes": 91,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "orthodontic_centro",
+      "nome": "OrthoDontic",
+      "tipo": "franquia",
+      "proprio": true,
+      "nota": 4.2,
+      "avaliacoes": 61,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    }
+  ],
+  "funil": null,
+  "temas": [
+    {
+      "tema": "atendimento",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "caxias_do_sul",
+      "pct": 0.72,
+      "n": 1357,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "preco_custo",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "caxias_do_sul",
+      "pct": 0.0206,
+      "n": 1357,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "agenda_espera",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "caxias_do_sul",
+      "pct": 0.0184,
+      "n": 1357,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "comunicacao_resposta",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "caxias_do_sul",
+      "pct": 0.0103,
+      "n": 1357,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "qualidade_resultado",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "caxias_do_sul",
+      "pct": 0.4945,
+      "n": 1357,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "confianca_medo",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "caxias_do_sul",
+      "pct": 0.0302,
+      "n": 1357,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "contrato_burocracia",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "caxias_do_sul",
+      "pct": 0.0022,
+      "n": 1357,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "pessoas_nominais",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "caxias_do_sul",
+      "pct": 0.0383,
+      "n": 1357,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "localizacao_acesso",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "caxias_do_sul",
+      "pct": 0.0324,
+      "n": 1357,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "recomendacao_lealdade",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "caxias_do_sul",
+      "pct": 0.2903,
+      "n": 1357,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "dor_medo_dentista",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "caxias_do_sul",
+      "pct": 0.0479,
+      "n": 1357,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "resultado_autoestima",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "caxias_do_sul",
+      "pct": 0.1761,
+      "n": 1357,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "explicacao_clareza",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "caxias_do_sul",
+      "pct": 0.0391,
+      "n": 1357,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "aparelho_tratamento",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "caxias_do_sul",
+      "pct": 0.0199,
+      "n": 1357,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "familia_filhos",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "caxias_do_sul",
+      "pct": 0.0413,
+      "n": 1357,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "tempo_relacao",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "caxias_do_sul",
+      "pct": 0.0457,
+      "n": 1357,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    }
+  ],
+  "sazonalidade": [],
+  "sazonalidade_estado": {
+    "tem": false,
+    "medimos": true,
+    "por_que": "o Trends não publica índice de cidade para este termo: das 124 cidades de SC, das 186 do PR e das 108 do PR com o termo mais largo 'ortodontista', NENHUMA teve volume — Londrina e Mafra incluídas, com valor 0",
+    "as_duas_travas": {
+      "volume": "pelo menos 55% das semanas com busca e 9 meses do ano",
+      "estabilidade": "o mês de pico repetido em pelo menos 3 dos anos medidos"
+    },
+    "veredito_por_uf": [
+      {
+        "regiao": "RS",
+        "porque": "sem_volume",
+        "semanas_com_busca": 116,
+        "semanas": 261,
+        "pico_repete_em": 2,
+        "anos_medidos": 5
+      }
+    ],
+    "o_que_preenche": "nada que seja fonte externa: o Trends não publica índice para este termo nesta escala. Só dado interno da rede (agenda, contratos) diria quando a procura sobe — e isso é teto do produto",
+    "quem_responde": "só a rede, por dentro"
+  },
+  "o_que_mudou": null
+}

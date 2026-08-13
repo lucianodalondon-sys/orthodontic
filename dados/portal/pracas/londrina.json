@@ -1,6 +1,6 @@
 {
   "praca_id": "londrina",
-  "corte": "2026-08-12",
+  "corte": "2026-08-13",
   "rotulo": "PR · Londrina",
   "uf": [
     "PR"
@@ -330,6 +330,145 @@
   "bairros": {
     "praca_id": "londrina",
     "rotulo": "PR · Londrina",
+    "territorio": [
+      {
+        "local_id": "ortho_souza_naves",
+        "unidade": "OrthoDontic Souza Naves",
+        "medido": true,
+        "location": {
+          "lat": -23.3246649,
+          "lng": -51.1577616
+        },
+        "bairro": "Ipiranga",
+        "clinica_mais_proxima": {
+          "nome": "Dr. Paulo Rossato",
+          "km": 0.06,
+          "avaliacoes": 38,
+          "nota": 4.9,
+          "bairro": "Ipiranga"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Odontoclinic Londrina",
+          "km": 0.47,
+          "avaliacoes": 544,
+          "nota": 4.9,
+          "bairro": "Centro"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 1.67,
+          "avaliacoes": 76,
+          "nota": 3.8,
+          "bairro": "Centro"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 51,
+            "de_aparelho": 3,
+            "da_rede": 0
+          },
+          "2km": {
+            "clinicas": 107,
+            "de_aparelho": 14,
+            "da_rede": 1
+          },
+          "5km": {
+            "clinicas": 144,
+            "de_aparelho": 21,
+            "da_rede": 1
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.06 km",
+        "proximidade_entre_unidades": null,
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 150,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 150 clínicas com coordenada, 1 medição"
+        }
+      },
+      {
+        "local_id": "ortho_centro_ldn",
+        "unidade": "OrthoDontic Centro",
+        "medido": true,
+        "location": {
+          "lat": -23.309976,
+          "lng": -51.1609699
+        },
+        "bairro": "Centro",
+        "clinica_mais_proxima": {
+          "nome": "STAR CLIN SORRISOS",
+          "km": 0.07,
+          "avaliacoes": 462,
+          "nota": 4.6,
+          "bairro": "Centro"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "STAR CLIN SORRISOS",
+          "km": 0.07,
+          "avaliacoes": 462,
+          "nota": 4.6,
+          "bairro": "Centro"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 1.67,
+          "avaliacoes": 566,
+          "nota": 4.6,
+          "bairro": "Ipiranga"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 47,
+            "de_aparelho": 7,
+            "da_rede": 0
+          },
+          "2km": {
+            "clinicas": 99,
+            "de_aparelho": 11,
+            "da_rede": 1
+          },
+          "5km": {
+            "clinicas": 147,
+            "de_aparelho": 21,
+            "da_rede": 1
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.07 km",
+        "proximidade_entre_unidades": null,
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 150,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 150 clínicas com coordenada, 1 medição"
+        }
+      }
+    ],
+    "clinicas_com_coordenada": 151,
+    "clinicas_sem_coordenada": 0,
+    "raios_declarados_km": [
+      1,
+      2,
+      5
+    ],
     "bairros_medidos": 42,
     "clinicas_medidas": 151,
     "sem_bairro_no_endereco": 0,
@@ -1011,6 +1150,16 @@
       "procedencia": "medido em 151 clínicas varridas, 1 medição"
     }
   },
+  "movimentos_do_mercado": {
+    "eventos": [],
+    "resumo": {
+      "praca_id": "londrina",
+      "rotulo": "PR · Londrina",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
   "imprensa": {
     "medido": true,
     "total": 56,
@@ -1024,84 +1173,84 @@
         "veiculo": "Paraná Portal",
         "link": "https://news.google.com/rss/articles/CBMizwJBVV95cUxNd0FvRGlHQ0ZPdDB6OXIyOV9GZWNmSzNubUN5d3haTXluVnQxcHlUa0kwTnZRMWlBb0UzYTlYaE90WGJ6RUFYUnE0akF2SEdrdzZ0dmwwT0E1TkZWQ05GN1VCakQ2T2VRNEdWV1Zkejd5U04tVTBER3l5RV9xZVBBUGMtSFR0NDFSX2NNNUF0aGxwVXlQX3dKOGVvb3V6Uml2WFAzWUhGR3JMMHNkamNCQ3NHVTNSUDc2dktSOHNKYTkyVUlQak5zeVUxSWY1R0EweFI4enNodGQ4OXNORGFXS3ZTaWI5UkwxSzlISFBFN01mUl83WTZ3c1c4cDhwbld1ZjNMTHNmWGJxZ3FiaUhrTGdNZU5yaWRvMU9acEcxNVZqSUlBR0E0RXJ2Y1kzVE0wUTFzV3ZWcXpVaWVYMVdaaXV4ZXYzM2FWVzZVbzk2WQ?oc=5",
         "publicado": "2026-08-05",
-        "dias": 7
+        "dias": 8
       },
       {
         "titulo": "Professor da FOB-USP assume a presidência do Grupo Brasileiro de Professores de Ortodontia e Odontopediatria em evento que premia 3 trabalhos da USP » USP Campus Bauru - Universidade de São Paulo - bauru.usp.br",
         "veiculo": "bauru.usp.br",
         "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5YYkdjSGhzVWtzelhzRVpjSlp2M1NDaWRhOVNLdmNsSm44NTlOYUlkZU5pdWdiaGQtR0o1SUhUWVpuU0tvaVV5aQ?oc=5",
         "publicado": "2026-07-28",
-        "dias": 15
+        "dias": 16
       },
       {
         "titulo": "UEL divulga processo seletivo para Residências em Saúde - operobal.uel.br",
         "veiculo": "operobal.uel.br",
         "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOc0lFSF8yMWJZc1VVWm1qYzk2d2VLRnhVanloRGFIM2djNXV0ZXpPUTZDSnBIdTFfR0JRdXFMVGZ4d1AzcDZ1REVhMlAtaXR0dlJhbThxTnF1T1Fnbjc5ajl0NXludm5WU0ZmZ2RubW9XYUdYU1p1U0tFbzB0VXExZzBqVG9jdW9UazMzWjY1eFJpWllvMFY3VlNCcw?oc=5",
         "publicado": "2026-07-27",
-        "dias": 16
+        "dias": 17
       },
       {
         "titulo": "Paraná homologa resultado final do concurso da Sesa e avança para convocação de 641 aprovados - jornaluniao.com.br",
         "veiculo": "jornaluniao.com.br",
         "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOcEdVejFRMDNyMjN1Z0luZE9PeEwwU0JuTmJPbGVaajlwbTVpc2pMZGFVTHRTNjN1TmZkME1kbEVjZ3hhV2hkcDRzRllpVkhMYzZZa1dZZ2pKU21NbzNBZklDTWIxSzcyVUdxMzI1RmEyWjJhbmJSbF9kU2FCeG5pRnA5dGFVdC0yRWFlTGlzZmtrSkMtSXkydUxtdFJteWJVRE9TRVdQWEhwUmk5UGNjVjZ2SDlBa0I2bWxxd0pWSFRjdEx1YTJIYTJpTU5RT05JTHFHWjFVcWlBcHRT?oc=5",
         "publicado": "2026-06-24",
-        "dias": 49
+        "dias": 50
       },
       {
         "titulo": "Londrina recebe mais de R$ 5,5 milhões para construir duas novas UBSs - bemparana.com.br",
         "veiculo": "bemparana.com.br",
         "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOSzdlUkd6WW1xYVVuUTZhVTh0OFRGU2ZCamhMaXJxM3JXLXRNLWludGg0VVhmd0xWNlRoTDcwTzE2MjN2dmw4NkZlV01jb1M0NW9Ea0d4aVpncTFUYVZsNURRNkE4YjRLalgwWFU0MXJlYi10XzZXY1F1M0xJal9zQjhWMllUTERFVGlnbW5EMVNYVTZZeGxzZm1CTWlOOEh0c1RVLVVOMTVXMGNtVkl3T045LVdSX1hVRzRwQ1NlRVFjMjFodGkzcNIBzgFBVV95cUxNZXQ5aENYbnNUYVFjWTVvMlhYMWU5UGFCbkhNS01icUJjZ1I3X19IOTE3WFdPRHRRY2UxZnNEeEtod094OWRfd0dmaFBMSW1GX0R3cmZKWjlSTWJtdU5iUlF5Nnp4X3l5ZmJjdm1OUGdfMlhhYTZNSmtDRElPaXZzUmplTjA5bWJWYnlYekttVlFkd0Itc3QwcG5VSlJld0NvNWlvQjJLMFR3OGpNeGY1ZGtrQjhPSk5WQmNGcDFTc3E5TXlnSXY2aDc3V2FhZw?oc=5",
         "publicado": "2026-06-23",
-        "dias": 50
+        "dias": 51
       },
       {
         "titulo": "Médico preso no PR por montar 'apartamento' em hospital ameaçou torturar filha e matar marido de secretária de saúde, diz MP - G1",
         "veiculo": "G1",
         "link": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNcmVhQXZtdWpZYkYxYUhVZTI0dHVMeWxXWmVaZkI2M0EyZFpKLXpvSHpxbEQyUEJqWGFxSWV4VTZYUG5yNTZPcmE5djFyTllUc3dBU1J0cEozMU1sa3NmVmVPaVBGNFJRZ1FveG92M3g5aHZqTlNJUVV3aUV2Y1ZtSGxlcTFpcnpNOTUtTkJrQ2ExZzR3QnlFZkpPdnRuNmhWdk54aHNZLU1NX1hraGxaMmVPUFZ3RVlmZTZjckw0anhWbTV3dGRndmNRVS1LTks1MkV6eE1DNXpLUERsRjhQQXdtVXFrV2Rza1drY1dkQl9LbG5xY2Y4X3QzUldGRGZLSWFXVHpiQktBNmNLYVV1ekpmQdIBogJBVV95cUxNNk1XSW5WQnlVNGsyeDM0VWl6V0dfbjhqZkRMeDllaXhQQUc1NUk2NVpiYWVwOTVlSjBkYlNGd254SlE1RGxZMFdQaFF5OS1KSXJ6YnJLcjczM0NjNEZ2VVdzaUhNR3JKd2NsSEhpbWx4SmVmZml0Q29kamxrMk10dWN5QmU3cnlQSDQwNG02V3F2XzNEOGZ2SHh3bkNYRzczVnE5bWEyVEZDQXdsSk5nS1ZFNC1aci03c2hMOEd5NTdyWXpQRTVUVW1VZlc0YmZicUd6RVBnY1VGRjVQZWFYZDdjNlZJQzJPbmltWUhZSV9YT2VRdVlBRkNDdWx2VW10NVRKUVdSZVpLa3RXZ2ZBWmZZV2hWS0tLNS1KN01NVmo3dw?oc=5",
         "publicado": "2026-06-23",
-        "dias": 50
+        "dias": 51
       },
       {
         "titulo": "Vacinação contra gripe terá quatro pontos de atendimento em Londrina neste sábado - Banda B",
         "veiculo": "Banda B",
         "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOYUpvcGhELWV2S2VWWkFuNTRVV2R1eU1WbGVJNDVudjBVbmdIS3hMa2ZjaVNhN3pWaDgzeFZSUGVBbnAyODdkNmIwNVVYVm1nYkdySzlBSzFsV21GZVBad1htQjJId3ZTUWwzX2E2ZHRqNm9RYUlreVdzTmgzLVR5M3NwOWZVNDVMcnlsX21KNk1ENTJwaDRaYUFR0gGfAUFVX3lxTE5RWlpES0MxQ1hpTnRRcDBYMm50c29QektoNlVETW9kQWlNUk1sNjRIeld3Z2dOeWwyUV9ULVRIZVVKOEg5b2lVNnJOUWFTZHFHa3k4QnZxTDhMVkpXcncyai15cEFTaVVYQXpYcnZxTGRjMV9xeXh1Q3g2V0VjblJrZEstejBnNGhjcV9tRlNXaWhFeWpSdDk1cUxNSmU4TQ?oc=5",
         "publicado": "2026-06-19",
-        "dias": 54
+        "dias": 55
       },
       {
         "titulo": "Pesquisa da UEL usa música para ajudar pacientes com Alzheimer - Tribuna do Paraná",
         "veiculo": "Tribuna do Paraná",
         "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOcUFPWVlnc3daUHg5M2hnYUtSUFcwejhkandWR25ELThYQS1HN3ZhME5aSDZ3ZGM4Qjh6bWtiTjB2bVlEUzNkNzdsN0RxOXFONlJLMzBuaXZJRnVsejZkY1YxTXBiOHo4MUlkbGdvMXNwMm9KUFV6dTJfVloxRVREMlBRcXVYM1loZ1gyRlRBUDJ5XzjSAZgBQVVfeXFMUG5QYUh2b2k3M0JxQlZBeGtfYUwtSVByZ19GNHVHTzJqM1QwSVB0WWU0M3lzWFFTbnJJb1NJNVZSM0IxQThpYnR5RmI4ME54VFM4S24xQzMzRGR6V19ZUTljamRWcVpPblgzUEdVYnpXOGZjWnc5dUFnX015NHdGMVhTbjBqWU5IdXBySG91UEI0bnpMYzNCLTE?oc=5",
         "publicado": "2026-05-17",
-        "dias": 87
+        "dias": 88
       },
       {
         "titulo": "Londrina abre novos leitos do SUS e tenta reduzir lotação nas UPAs - bemparana.com.br",
         "veiculo": "bemparana.com.br",
         "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPd1hmczhiTFBfLWVCVkVYY1B0QW53ZndMckk3TDZyYjhFM3piYk94VUlkZUZZV0dQcGRlYVpXa2VpY1lnTDRHWWdZREhNRk52cnNFNUgzeXJiWkcyNVJoYndSVFJMUGZndExHRnN2TmxMR3pIbEhaVzg3MHpYbzJybDBQS2lWMW12V0plcXN1c1ZmaG1uSjFzN0xqRXZFWnQwR0xHNnQtVkdqcFJUTXNhTWUzM185T0ZraFctSElqb3JqT01RMGZJ0gHMAUFVX3lxTE5rX3FGLWdZVzRKdXM0UElVSXI2TU1QVGI0ZktPeklLY1lJYkc1MWNONzNEekRKR1JYZHEzRkNPZTEyZXFhSTFHd0h5SWZGRTRScGRFZ09oY3hTNHVXSUxJYzJYNUQyNnVVVjhJdmNvYklwdGkxU3pzMVVXX3V0eF9DeUhuVFFkMGItVEw0bVY2aUJ6WXNpMURTTjVUZVpmV1dyOUV6VzlZcElfdkNJM0hWbXNsQ3pwX0E0SkpvZUdTQWFNeXhEVXBwZ21DQw?oc=5",
         "publicado": "2026-05-12",
-        "dias": 92
+        "dias": 93
       },
       {
         "titulo": "Londrina terá novas UBSs com investimento de R$ 10 milhões - bemparana.com.br",
         "veiculo": "bemparana.com.br",
         "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVGF4Zi1kRmt5WHdrT2l0ZnhpcFVQbWdEYnZIOWJrSnNVcl8tWXhsRlI5QllyaUV1ZXlaWFM0M1BoR1FlWGFTVjV5djVMNi1uaTdKUG5SdXdrZWNXRUpzcU5ULXlHTkpPaU51YzBpcThLcEtOX08xRUNoVk8tSHdWWkF0T1ZOZUV1ZXNIWVpSOEptSHNOLS1FN3NMbDRPLVdlQjFDU21rT2REajVPMHhQcWg0dEQ2YUZyNHZr0gHAAUFVX3lxTE5oMFhGQzZYNlU0X2RGWlg4Y3VBUEJCNVF3dTNobjRDaWJpMlFOV25TQ2liRDBhLXNYTjgxcXpBaHMwNDNObTdVeUhHaEV1cGc5V2pKWlo0azE2dWdvc19vU3JOc1QyZnVnV0IzNlRNQ3RiVW03ZnlzZkQzUnA3bFQ3MHpQQzAtcGVVVzFIRXlkc2JtVnZSalVtYXhURkg1VHpBTlI2SXlMaGRuVzB6b2M5WGlhV1VSV1hiRUNpR201bA?oc=5",
         "publicado": "2026-04-30",
-        "dias": 104
+        "dias": 105
       },
       {
         "titulo": "Londrina entra em estado de atenção com onda de calor e umidade do ar abaixo dos 30% - Bonde",
         "veiculo": "Bonde",
         "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQYVJNdXRyc2VNMjBaZVlzV2NCc2o1R2wxcEpsMjhWYXBUVkdmSWVURTQ4U2puOHh6V2VDTzYyX3dTUkZ4NDRDMl9BTnJ6cGllQlUxaEtXMWI5RFh6aTN5R0lvTURieU5CR3NMdlo3azVsTVUxQUFWa2VVY08tSlNWVWFxWWU2RjBvcXFEN08zNC1kcVgyMGtZWHZsaVIxTnNNbk9hbk1MWHFaY0hPZzQ3Y005MUQ?oc=5",
         "publicado": "2026-04-22",
-        "dias": 112
+        "dias": 113
       },
       {
         "titulo": "Concurso SESA PR divulga gabarito preliminar; acesse! - Blog Gran Cursos Online",
         "veiculo": "Blog Gran Cursos Online",
         "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE11dDF0RGtJczZmSzEzakJNMU1lMElQRUEyRExEX1NNQUN1RXV3dVRtWEpzS2VyLU5IUG1IenlZUlNSallLYXgxZ1EtMmE5c2Jfa21PYnJ6UG9mVTA1NVNjQTRqOXQ?oc=5",
         "publicado": "2026-03-30",
-        "dias": 135
+        "dias": 136
       }
     ]
   },
@@ -1117,28 +1266,28 @@
         "handle": "odontocliniclondrina",
         "posts_medidos": 12,
         "ultimo_post": "2026-08-07",
-        "dias_sem_publicar": 5,
+        "dias_sem_publicar": 6,
         "parado": false,
         "curtidas_medianas": 15,
-        "frase": "12 posts medidos, último há 5 dias"
+        "frase": "12 posts medidos, último há 6 dias"
       },
       {
         "handle": "orthodontic.londrinasouzanaves",
         "posts_medidos": 15,
         "ultimo_post": "2026-08-07",
-        "dias_sem_publicar": 5,
+        "dias_sem_publicar": 6,
         "parado": false,
         "curtidas_medianas": 1,
-        "frase": "15 posts medidos, último há 5 dias"
+        "frase": "15 posts medidos, último há 6 dias"
       },
       {
         "handle": "orthodontic.londrinacentro",
         "posts_medidos": 15,
         "ultimo_post": "2026-03-08",
-        "dias_sem_publicar": 157,
+        "dias_sem_publicar": 158,
         "parado": true,
         "curtidas_medianas": 1,
-        "frase": "15 posts medidos, último há 157 dias"
+        "frase": "15 posts medidos, último há 158 dias"
       }
     ]
   },
@@ -1150,16 +1299,6 @@
       "proprio": false,
       "nota": 5,
       "avaliacoes": 1074,
-      "reviews_novos_mes": null,
-      "anuncios_ativos": null
-    },
-    {
-      "local_id": "clinica_dentista_do_povo_u",
-      "nome": "Clínica Dentista do Povo - Unidade Mais Sorriso - Londrina",
-      "tipo": "PREENCHER",
-      "proprio": false,
-      "nota": 5,
-      "avaliacoes": 959,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -1260,6 +1399,16 @@
       "proprio": false,
       "nota": 5,
       "avaliacoes": 263,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "clinica_dentista_do_povo_u",
+      "nome": "Clínica Dentista do Povo - Unidade Mais Sorriso - Londrina",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.2,
+      "avaliacoes": 257,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -1388,7 +1537,7 @@
   "temas": [
     {
       "tema": "atendimento",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "londrina",
       "pct": 0.6939,
       "n": 3280,
@@ -1399,7 +1548,7 @@
     },
     {
       "tema": "preco_custo",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "londrina",
       "pct": 0.0448,
       "n": 3280,
@@ -1410,7 +1559,7 @@
     },
     {
       "tema": "agenda_espera",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "londrina",
       "pct": 0.025,
       "n": 3280,
@@ -1421,7 +1570,7 @@
     },
     {
       "tema": "comunicacao_resposta",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "londrina",
       "pct": 0.0284,
       "n": 3280,
@@ -1432,7 +1581,7 @@
     },
     {
       "tema": "qualidade_resultado",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "londrina",
       "pct": 0.5162,
       "n": 3280,
@@ -1443,7 +1592,7 @@
     },
     {
       "tema": "confianca_medo",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "londrina",
       "pct": 0.0558,
       "n": 3280,
@@ -1454,7 +1603,7 @@
     },
     {
       "tema": "contrato_burocracia",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "londrina",
       "pct": 0.007,
       "n": 3280,
@@ -1465,7 +1614,7 @@
     },
     {
       "tema": "pessoas_nominais",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "londrina",
       "pct": 0.0503,
       "n": 3280,
@@ -1476,7 +1625,7 @@
     },
     {
       "tema": "localizacao_acesso",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "londrina",
       "pct": 0.0473,
       "n": 3280,
@@ -1487,7 +1636,7 @@
     },
     {
       "tema": "recomendacao_lealdade",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "londrina",
       "pct": 0.322,
       "n": 3280,
@@ -1498,7 +1647,7 @@
     },
     {
       "tema": "dor_medo_dentista",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "londrina",
       "pct": 0.0872,
       "n": 3280,
@@ -1509,7 +1658,7 @@
     },
     {
       "tema": "resultado_autoestima",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "londrina",
       "pct": 0.161,
       "n": 3280,
@@ -1520,7 +1669,7 @@
     },
     {
       "tema": "explicacao_clareza",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "londrina",
       "pct": 0.0555,
       "n": 3280,
@@ -1531,7 +1680,7 @@
     },
     {
       "tema": "aparelho_tratamento",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "londrina",
       "pct": 0.0174,
       "n": 3280,
@@ -1542,7 +1691,7 @@
     },
     {
       "tema": "familia_filhos",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "londrina",
       "pct": 0.0448,
       "n": 3280,
@@ -1553,7 +1702,7 @@
     },
     {
       "tema": "tempo_relacao",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "londrina",
       "pct": 0.0442,
       "n": 3280,

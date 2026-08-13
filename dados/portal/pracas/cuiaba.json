@@ -1,6 +1,6 @@
 {
   "praca_id": "cuiaba",
-  "corte": "2026-08-12",
+  "corte": "2026-08-13",
   "rotulo": "MT · Cuiabá",
   "uf": [
     "MT"
@@ -385,8 +385,222 @@
   "bairros": {
     "praca_id": "cuiaba",
     "rotulo": "MT · Cuiabá",
-    "bairros_medidos": 65,
-    "clinicas_medidas": 242,
+    "territorio": [
+      {
+        "local_id": "ortho_cba_centro_norte",
+        "unidade": "OrthoDontic Cuiabá Centro Norte",
+        "medido": true,
+        "location": {
+          "lat": -15.597351799999998,
+          "lng": -56.097935299999996
+        },
+        "bairro": "Centro Norte",
+        "clinica_mais_proxima": {
+          "nome": "Dra. Daniele Broch - Dentista em Cuiabá",
+          "km": 0.15,
+          "avaliacoes": 8,
+          "nota": 5,
+          "bairro": "Centro Norte"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "ODONTO MEDICINA 🦷",
+          "km": 0.17,
+          "avaliacoes": 1451,
+          "nota": 5,
+          "bairro": "Centro Norte"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 0.61,
+          "avaliacoes": 71,
+          "nota": 4.9,
+          "bairro": "Centro Sul"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 38,
+            "de_aparelho": 4,
+            "da_rede": 1
+          },
+          "2km": {
+            "clinicas": 89,
+            "de_aparelho": 9,
+            "da_rede": 1
+          },
+          "5km": {
+            "clinicas": 147,
+            "de_aparelho": 19,
+            "da_rede": 2
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.15 km",
+        "proximidade_entre_unidades": {
+          "km": 0.61,
+          "unidade": "OrthoDontic",
+          "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+          "natureza": "inferencia"
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 256,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 256 clínicas com coordenada, 1 medição"
+        }
+      },
+      {
+        "local_id": "ortho_cba_fernando_correa",
+        "unidade": "OrthoDontic Cuiabá Fernando Corrêa",
+        "medido": true,
+        "location": {
+          "lat": -15.610528100000002,
+          "lng": -56.0781529
+        },
+        "bairro": "Pico do Amor",
+        "clinica_mais_proxima": {
+          "nome": "Dentista em Cuiabá - Dra. Maria Elisa Rosa",
+          "km": 0.03,
+          "avaliacoes": 46,
+          "nota": 5,
+          "bairro": "Jardim Kennedy"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Guanabara Odontologia- Dra Ana Carolina Ribeiro",
+          "km": 0.82,
+          "avaliacoes": 335,
+          "nota": 5,
+          "bairro": "Jardim Guanabara"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 2.51,
+          "avaliacoes": 71,
+          "nota": 4.9,
+          "bairro": "Centro Sul"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 13,
+            "de_aparelho": 2,
+            "da_rede": 0
+          },
+          "2km": {
+            "clinicas": 27,
+            "de_aparelho": 7,
+            "da_rede": 0
+          },
+          "5km": {
+            "clinicas": 161,
+            "de_aparelho": 20,
+            "da_rede": 2
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.03 km",
+        "proximidade_entre_unidades": null,
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 256,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 256 clínicas com coordenada, 1 medição"
+        }
+      },
+      {
+        "local_id": "ortho_cba_dom_bosco",
+        "unidade": "OrthoDontic Cuiabá Dom Bosco (Centro Sul)",
+        "medido": true,
+        "location": {
+          "lat": -15.6024303,
+          "lng": -56.100078499999995
+        },
+        "bairro": "Centro Sul",
+        "clinica_mais_proxima": {
+          "nome": "Orto fácil",
+          "km": 0.03,
+          "avaliacoes": 9,
+          "nota": 4.9,
+          "bairro": "Centro Sul"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Sorridents Centro Norte",
+          "km": 0.42,
+          "avaliacoes": 264,
+          "nota": 4.9,
+          "bairro": "Centro Norte"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 0.61,
+          "avaliacoes": 1223,
+          "nota": 5,
+          "bairro": "Centro Norte"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 29,
+            "de_aparelho": 3,
+            "da_rede": 1
+          },
+          "2km": {
+            "clinicas": 82,
+            "de_aparelho": 8,
+            "da_rede": 1
+          },
+          "5km": {
+            "clinicas": 155,
+            "de_aparelho": 19,
+            "da_rede": 2
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.03 km",
+        "proximidade_entre_unidades": {
+          "km": 0.61,
+          "unidade": "OrthoDontic",
+          "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+          "natureza": "inferencia"
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 256,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 256 clínicas com coordenada, 1 medição"
+        }
+      }
+    ],
+    "clinicas_com_coordenada": 257,
+    "clinicas_sem_coordenada": 0,
+    "raios_declarados_km": [
+      1,
+      2,
+      5
+    ],
+    "bairros_medidos": 69,
+    "clinicas_medidas": 257,
     "sem_bairro_no_endereco": 1,
     "unidades_da_rede": 3,
     "unidades_localizadas": 3,
@@ -411,7 +625,7 @@
       {
         "bairro": "Centro Norte",
         "clinicas": 51,
-        "avaliacoes_somadas": 5919,
+        "avaliacoes_somadas": 5921,
         "temos_unidade": true,
         "nossas": [
           "ortho_cba_centro_norte"
@@ -466,8 +680,8 @@
       },
       {
         "bairro": "Jardim Cuiaba",
-        "clinicas": 24,
-        "avaliacoes_somadas": 773,
+        "clinicas": 26,
+        "avaliacoes_somadas": 820,
         "temos_unidade": false,
         "nossas": [],
         "vizinhos_fortes": [
@@ -477,18 +691,18 @@
             "avaliacoes": 170
           },
           {
+            "nome": "Odonto Alfa - Clínica Odontológica em Cuiabá",
+            "nota": 5,
+            "avaliacoes": 111
+          },
+          {
             "nome": "Instituto Macieski",
             "nota": 5,
             "avaliacoes": 101
-          },
-          {
-            "nome": "Dra Thalita Carvalho Odontopediatria",
-            "nota": 5,
-            "avaliacoes": 100
           }
         ],
         "pouca_amostra": false,
-        "frase": "24 clínicas varridas, e a rede não está aqui"
+        "frase": "26 clínicas varridas, e a rede não está aqui"
       },
       {
         "bairro": "Cristo Rei",
@@ -518,8 +732,8 @@
       },
       {
         "bairro": "Quilombo",
-        "clinicas": 9,
-        "avaliacoes_somadas": 240,
+        "clinicas": 11,
+        "avaliacoes_somadas": 314,
         "temos_unidade": false,
         "nossas": [],
         "vizinhos_fortes": [
@@ -529,18 +743,18 @@
             "avaliacoes": 111
           },
           {
+            "nome": "Joy Odonto | Implantes dentários",
+            "nota": 5,
+            "avaliacoes": 45
+          },
+          {
             "nome": "Dr. Breno Ferraz – Cirurgião Dentista em Cuiabá",
             "nota": 5,
             "avaliacoes": 41
-          },
-          {
-            "nome": "Dr. Fernando Martins - Invisalign Cuiabá - Aparelho Transparente",
-            "nota": 5,
-            "avaliacoes": 27
           }
         ],
         "pouca_amostra": false,
-        "frase": "9 clínicas varridas, e a rede não está aqui"
+        "frase": "11 clínicas varridas, e a rede não está aqui"
       },
       {
         "bairro": "Lixeira",
@@ -596,34 +810,34 @@
       },
       {
         "bairro": "Alvorada",
-        "clinicas": 5,
-        "avaliacoes_somadas": 845,
+        "clinicas": 6,
+        "avaliacoes_somadas": 872,
         "temos_unidade": false,
         "nossas": [],
         "vizinhos_fortes": [
           {
             "nome": "Enleva Odontologia Integrada",
             "nota": 5,
-            "avaliacoes": 796
+            "avaliacoes": 797
+          },
+          {
+            "nome": "INSTITUTO JUNQUEIRA | CLINICA ODONTOLOGICA EM CUIABÁ",
+            "nota": 5,
+            "avaliacoes": 26
           },
           {
             "nome": "Dr. Lucas Especialista em Implantes dentários, Tratamento de canal e Protese. Dentista Cuiabá",
             "nota": 5,
             "avaliacoes": 23
-          },
-          {
-            "nome": "Dra Daniela Giusti Parizzi - Dentista | Ortodontia Invisalign",
-            "nota": 5,
-            "avaliacoes": 17
           }
         ],
         "pouca_amostra": false,
-        "frase": "5 clínicas varridas, e a rede não está aqui"
+        "frase": "6 clínicas varridas, e a rede não está aqui"
       },
       {
         "bairro": "Goiabeiras",
-        "clinicas": 5,
-        "avaliacoes_somadas": 245,
+        "clinicas": 6,
+        "avaliacoes_somadas": 268,
         "temos_unidade": false,
         "nossas": [],
         "vizinhos_fortes": [
@@ -644,7 +858,7 @@
           }
         ],
         "pouca_amostra": false,
-        "frase": "5 clínicas varridas, e a rede não está aqui"
+        "frase": "6 clínicas varridas, e a rede não está aqui"
       },
       {
         "bairro": "Jardim Aeroporto",
@@ -701,7 +915,7 @@
       {
         "bairro": "Jardim Aclimacao",
         "clinicas": 3,
-        "avaliacoes_somadas": 1245,
+        "avaliacoes_somadas": 1252,
         "temos_unidade": false,
         "nossas": [],
         "vizinhos_fortes": [
@@ -713,12 +927,12 @@
           {
             "nome": "DRA. CAROLINE DE OLIVEIRA ARRUDA | ORTODONTISTA EM CUIABÁ - INVISALIGN |",
             "nota": 5,
-            "avaliacoes": 79
+            "avaliacoes": 80
           },
           {
             "nome": "Dr. Sorria Odontologia Cuiabá",
-            "nota": 4.2,
-            "avaliacoes": 49
+            "nota": 4.3,
+            "avaliacoes": 55
           }
         ],
         "pouca_amostra": false,
@@ -727,7 +941,7 @@
       {
         "bairro": "Bosque da Saude",
         "clinicas": 3,
-        "avaliacoes_somadas": 551,
+        "avaliacoes_somadas": 553,
         "temos_unidade": false,
         "nossas": [],
         "vizinhos_fortes": [
@@ -739,12 +953,38 @@
           {
             "nome": "Dentista em Cuiabá - Dra Mariana Lima Pereira",
             "nota": 5,
-            "avaliacoes": 189
+            "avaliacoes": 190
           },
           {
             "nome": "Clínica Odontológica Dra. Ruama Melo - Facetas em Resina, Aparelhos, Alinhadores, Implantes e Próteses | Dentista em Cuiabá",
             "nota": 5,
-            "avaliacoes": 112
+            "avaliacoes": 113
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "3 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Jardim Petropolis",
+        "clinicas": 3,
+        "avaliacoes_somadas": 202,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "OdontoCompany Boa Esperança",
+            "nota": 4.1,
+            "avaliacoes": 122
+          },
+          {
+            "nome": "Dra Luhara Carvalho - Dentista em Cuiabá",
+            "nota": 5,
+            "avaliacoes": 58
+          },
+          {
+            "nome": "Odontopediatra Dra Camila Mineiro",
+            "nota": 5,
+            "avaliacoes": 22
           }
         ],
         "pouca_amostra": false,
@@ -800,6 +1040,32 @@
         "frase": "3 clínicas varridas, e a unidade da rede está aqui"
       },
       {
+        "bairro": "Jardim das Américas",
+        "clinicas": 3,
+        "avaliacoes_somadas": 68,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dr Albem Thiago | Aparelho Invisível Invisalign em Cuiabá",
+            "nota": 4.8,
+            "avaliacoes": 47
+          },
+          {
+            "nome": "Dr Manoel Neto - Dentista em Cuiabá",
+            "nota": 5,
+            "avaliacoes": 12
+          },
+          {
+            "nome": "Dra. Ana Julia Graziani | Alinhador invisível - SouSmile | Clareamento dental",
+            "nota": 5,
+            "avaliacoes": 9
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "3 clínicas varridas, e a rede não está aqui"
+      },
+      {
         "bairro": "Mapim",
         "clinicas": 3,
         "avaliacoes_somadas": 62,
@@ -820,6 +1086,32 @@
             "nome": "Up Odontologia",
             "nota": 5,
             "avaliacoes": 3
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "3 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Morada da Serra",
+        "clinicas": 3,
+        "avaliacoes_somadas": 112,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "BKR ODONTOLOGIA l Ortodontia e Clínico geral - CPA",
+            "nota": 5,
+            "avaliacoes": 81
+          },
+          {
+            "nome": "OrthoEsthetics - Ortodontia e Estética Facial",
+            "nota": 5,
+            "avaliacoes": 26
+          },
+          {
+            "nome": "Sorrix Cuiabá",
+            "nota": 5,
+            "avaliacoes": 5
           }
         ],
         "pouca_amostra": false,
@@ -854,14 +1146,14 @@
       {
         "bairro": "Poção",
         "clinicas": 2,
-        "avaliacoes_somadas": 1000,
+        "avaliacoes_somadas": 1001,
         "temos_unidade": false,
         "nossas": [],
         "vizinhos_fortes": [
           {
             "nome": "IODONTO CENTRO - MIRANDA REIS",
             "nota": 4.9,
-            "avaliacoes": 778
+            "avaliacoes": 779
           },
           {
             "nome": "Dentista em Cuiabá MT | Myrelief | Clínica Odontológica | Implante Dentário | Faceta dentária",
@@ -875,14 +1167,14 @@
       {
         "bairro": "Baú",
         "clinicas": 2,
-        "avaliacoes_somadas": 499,
+        "avaliacoes_somadas": 503,
         "temos_unidade": false,
         "nossas": [],
         "vizinhos_fortes": [
           {
             "nome": "Odontologia Prado",
             "nota": 4.7,
-            "avaliacoes": 499
+            "avaliacoes": 503
           },
           {
             "nome": "Ortodontia Cuiabá",
@@ -896,14 +1188,14 @@
       {
         "bairro": "Jardim Leblon",
         "clinicas": 2,
-        "avaliacoes_somadas": 363,
+        "avaliacoes_somadas": 361,
         "temos_unidade": false,
         "nossas": [],
         "vizinhos_fortes": [
           {
             "nome": "Aube Odontologia Jardim Itália - Cuiabá",
             "nota": 4.9,
-            "avaliacoes": 199
+            "avaliacoes": 197
           },
           {
             "nome": "Odonto Light",
@@ -936,27 +1228,6 @@
         "frase": "2 clínicas varridas, e a rede não está aqui"
       },
       {
-        "bairro": "Jardim Petropolis",
-        "clinicas": 2,
-        "avaliacoes_somadas": 180,
-        "temos_unidade": false,
-        "nossas": [],
-        "vizinhos_fortes": [
-          {
-            "nome": "OdontoCompany Boa Esperança",
-            "nota": 4.1,
-            "avaliacoes": 122
-          },
-          {
-            "nome": "Dra Luhara Carvalho - Dentista em Cuiabá",
-            "nota": 5,
-            "avaliacoes": 58
-          }
-        ],
-        "pouca_amostra": true,
-        "frase": "2 clínicas varridas, e a rede não está aqui"
-      },
-      {
         "bairro": "Porto",
         "clinicas": 2,
         "avaliacoes_somadas": 122,
@@ -976,55 +1247,13 @@
         ],
         "pouca_amostra": true,
         "frase": "2 clínicas varridas, e a rede não está aqui"
-      },
-      {
-        "bairro": "Vila Ipase",
-        "clinicas": 2,
-        "avaliacoes_somadas": 111,
-        "temos_unidade": false,
-        "nossas": [],
-        "vizinhos_fortes": [
-          {
-            "nome": "Clínica de Nutrição e Odontologia Áurea Plenus",
-            "nota": 5,
-            "avaliacoes": 83
-          },
-          {
-            "nome": "Toledo Odontologia - Consultório Odontológico Dra. Waldirene Toledo",
-            "nota": 4.9,
-            "avaliacoes": 28
-          }
-        ],
-        "pouca_amostra": true,
-        "frase": "2 clínicas varridas, e a rede não está aqui"
-      },
-      {
-        "bairro": "Santa Marta",
-        "clinicas": 2,
-        "avaliacoes_somadas": 76,
-        "temos_unidade": false,
-        "nossas": [],
-        "vizinhos_fortes": [
-          {
-            "nome": "Espaço Living Cuiabá",
-            "nota": 4.4,
-            "avaliacoes": 76
-          },
-          {
-            "nome": "Dra Ana Paula Aguiar",
-            "nota": null,
-            "avaliacoes": null
-          }
-        ],
-        "pouca_amostra": true,
-        "frase": "2 clínicas varridas, e a rede não está aqui"
       }
     ],
     "bairros_sem_a_rede": [
       {
         "bairro": "Jardim Cuiaba",
-        "clinicas": 24,
-        "avaliacoes_somadas": 773,
+        "clinicas": 26,
+        "avaliacoes_somadas": 820,
         "temos_unidade": false,
         "nossas": [],
         "vizinhos_fortes": [
@@ -1034,18 +1263,18 @@
             "avaliacoes": 170
           },
           {
+            "nome": "Odonto Alfa - Clínica Odontológica em Cuiabá",
+            "nota": 5,
+            "avaliacoes": 111
+          },
+          {
             "nome": "Instituto Macieski",
             "nota": 5,
             "avaliacoes": 101
-          },
-          {
-            "nome": "Dra Thalita Carvalho Odontopediatria",
-            "nota": 5,
-            "avaliacoes": 100
           }
         ],
         "pouca_amostra": false,
-        "frase": "24 clínicas varridas, e a rede não está aqui"
+        "frase": "26 clínicas varridas, e a rede não está aqui"
       },
       {
         "bairro": "Cristo Rei",
@@ -1075,8 +1304,8 @@
       },
       {
         "bairro": "Quilombo",
-        "clinicas": 9,
-        "avaliacoes_somadas": 240,
+        "clinicas": 11,
+        "avaliacoes_somadas": 314,
         "temos_unidade": false,
         "nossas": [],
         "vizinhos_fortes": [
@@ -1086,18 +1315,18 @@
             "avaliacoes": 111
           },
           {
+            "nome": "Joy Odonto | Implantes dentários",
+            "nota": 5,
+            "avaliacoes": 45
+          },
+          {
             "nome": "Dr. Breno Ferraz – Cirurgião Dentista em Cuiabá",
             "nota": 5,
             "avaliacoes": 41
-          },
-          {
-            "nome": "Dr. Fernando Martins - Invisalign Cuiabá - Aparelho Transparente",
-            "nota": 5,
-            "avaliacoes": 27
           }
         ],
         "pouca_amostra": false,
-        "frase": "9 clínicas varridas, e a rede não está aqui"
+        "frase": "11 clínicas varridas, e a rede não está aqui"
       },
       {
         "bairro": "Lixeira",
@@ -1152,13 +1381,13 @@
         "frase": "7 clínicas varridas, e a rede não está aqui"
       }
     ],
-    "manchete": "65 bairros medidos · a rede está em 3 deles",
+    "manchete": "69 bairros medidos · a rede está em 3 deles",
     "leitura": "O bairro com mais clínicas é Centro Norte, com 51 clínicas varridas, e a rede está lá.",
     "confianca": {
       "natureza": "fato",
       "confianca": "media",
       "medido": true,
-      "amostra": 242,
+      "amostra": 257,
       "janela_dias": null,
       "medicoes": 1,
       "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
@@ -1167,7 +1396,88 @@
         "1 endereços sem bairro legível"
       ],
       "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
-      "procedencia": "medido em 242 clínicas varridas, 1 medição"
+      "procedencia": "medido em 257 clínicas varridas, 1 medição"
+    }
+  },
+  "movimentos_do_mercado": {
+    "eventos": [
+      {
+        "evento_id": "cuiaba|concorrente_acelerou|ChIJ69guJYixnZMRnsvy09GVFEg",
+        "data": "2026-08-13",
+        "praca_id": "cuiaba",
+        "rotulo": "MT · Cuiabá",
+        "local_id": null,
+        "entidade_id": "ChIJ69guJYixnZMRnsvy09GVFEg",
+        "tipo": "concorrente_acelerou",
+        "natureza": "fato",
+        "severidade": "media",
+        "titulo": "Odonto Alfa - Clínica Odontológica em Cuiabá acelerou",
+        "fato": "ganhou 36 avaliações entre 2026-08-08 e 2026-08-13 — de 75 para 111",
+        "por_que_importa": "clínica odontológica ganhando atenção; nem toda disputa aparelho",
+        "decisao": "ver o que ele está publicando e anunciando",
+        "fonte": "dados/serie/categoria.jsonl",
+        "evidencia": {
+          "place_id": "ChIJ69guJYixnZMRnsvy09GVFEg",
+          "antes": 75,
+          "agora": 111
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "alta",
+          "medido": true,
+          "amostra": 111,
+          "janela_dias": 5,
+          "medicoes": 2,
+          "fonte": "dados/serie/categoria.jsonl (2026-08-08 → 2026-08-13)",
+          "a_favor": [],
+          "contra": [],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 111 clínicas medidas, 2 medições, 5 dias de janela"
+        }
+      },
+      {
+        "evento_id": "cuiaba|linha_de_base_anuncios|-",
+        "data": "2026-08-13",
+        "praca_id": "cuiaba",
+        "rotulo": "MT · Cuiabá",
+        "local_id": null,
+        "entidade_id": null,
+        "tipo": "linha_de_base_anuncios",
+        "natureza": "fato",
+        "severidade": "baixa",
+        "titulo": "Linha de base de anúncios criada",
+        "fato": "primeira medição de anúncios desta praça, em 2026-08-08",
+        "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
+        "decisao": "recoletar na próxima rodada para abrir o delta",
+        "fonte": "dados/serie/anuncios.jsonl",
+        "evidencia": {},
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": null,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/anuncios.jsonl",
+          "a_favor": [],
+          "contra": [],
+          "o_que_aumentaria": null,
+          "procedencia": "sem amostra declarada, 1 medição"
+        }
+      }
+    ],
+    "resumo": {
+      "praca_id": "cuiaba",
+      "rotulo": "MT · Cuiabá",
+      "eventos": 2,
+      "estado": "medido",
+      "janela": "2026-08-08 → 2026-08-13",
+      "medicoes_da_praca": 2,
+      "clinicas_antes": 243,
+      "clinicas_agora": 145,
+      "comparaveis": 130,
+      "estabilidade_pct": 53,
+      "aviso_de_metodo": "a varredura devolveu 243 clínicas em 2026-08-08 e 145 em 2026-08-13, com 130 em comum (53%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
     }
   },
   "imprensa": {
@@ -1183,84 +1493,84 @@
         "veiculo": "Prefeitura de Cuiabá",
         "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPMmZzd0R0dXJSa0pRc3VvcFprNnhYTHI0N0ZfZHFQa0cweFpYZVFkOUJhcmQ1RzdhczM5ejRJenE5WDI1ZFVHZTJMMUs5cW1FRGU2MnRTbDFzeTVZdTQ0VG5GU1BCaV9QQnJYZ3diOVljT2VEVzE4Mm5jaVRmRkRGQmgxOFVqMzlRdF9fMDNYZVQ3dkN6LTdoajdKbDhwQWpuZ2xyM3RzZzljNzVIR2tKREV6VU9XWWlOVHJEUi14YmpiODA?oc=5",
         "publicado": "2026-08-09",
-        "dias": 3
+        "dias": 4
       },
       {
         "titulo": "Cuiabá x Fortaleza na Série B: onde assistir ao vivo, horário e escalação - Estadão",
         "veiculo": "Estadão",
         "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPdmZWVmtrUzJnNnlEWnhTTXVtVWZiQTNjMFFXVWxKZU5qV29oZW5adW1YZWdxRWkxSXVNY0V1bmV3cGZ1blZzRkxSaWNOZ1AyTHZ5V3pqc1pseWxYTnpDVHZVeGczR2h2VzB5QkZ0RU56ZGxkMGM4UVBQNnNtek1Ua0tySTQ4UDZTSVh4S181bDNGT3VnazVXQTlYY0Z6enQ1RVJyNGJYRHhyd0JfMVpGX05SSnQ3U0xs0gG-AUFVX3lxTE5zZkIxMzV5bG1WakZubVhmQzRTcjBSWlpaVVJaZ0pxMzVRNkVsQzJuMm80WVFDbk04cE12NnRRMmxVXzFCWDJDMkNZOGtPVnl4WXhmWXA5VXpyb0V6MGozQzF1WVk0dnZGa3dDS3lqMUNxcDI1VFZLNWhEcktlbF90MXJYZDlKUE1MUXZxaW9FTEpPdXpnUkZwNjJUOEF3eUR2MzZvNGtMRXNQYWloQUQxMFgwUEFFVkFIekJmN2c?oc=5",
         "publicado": "2026-08-09",
-        "dias": 3
+        "dias": 4
       },
       {
         "titulo": "Missa campal reúne caminhoneiros e marca momento de fé no Mato Grosso AgroFestival - Prefeitura de Cuiabá",
         "veiculo": "Prefeitura de Cuiabá",
         "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPUzhpanB2cC1yT2VJdXFKeFRsLXNpMG5HdEJSTGNRcmxIOEZaV3A2Y2FiTWt5Rjg3QXo5MnFJMmdiUnI3YkY3UTFraE5ocjNRTXhabklSNkc4XzdOcTEyTzBHX1hEZFJ2MlZURmxPblZyWHNYWVppc2lrazdIbmpCQW14eFE2cmZRNUdIdW5fQ0ZhUE1RVnpJOE4wY29mX2k1bVN3T2dHM1BSUmRYei1fb2hnTG8zVkw2WXlDVQ?oc=5",
         "publicado": "2026-08-09",
-        "dias": 3
+        "dias": 4
       },
       {
         "titulo": "Cavalgada e procissão de caminhoneiros marcam último dia do Mato Grosso AgroFestival - Prefeitura de Cuiabá",
         "veiculo": "Prefeitura de Cuiabá",
         "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPMjdzRHZlQnRNTkk0eVI5N2pGOW84SGlYNTh3UXFyZTdIdTZfc2M3d2FGal9ZTzROMjlHM1hpTVUzWS1BNGR0blJqUGxRcEkwNTVkMVpveEw3eVYzaGp2Z1lSVzJ4LUVNcnFOQTJ1eVZJdDdibEdLWVdsQzhHR0pCVkZrUjJ1cXFRUFY0dDI4WlhJaG9TMzE3RlprZlVOM3pOZEFkNnc3YURlMWc2T1pUZE00WU1NZ0pPT1JmTTNOMA?oc=5",
         "publicado": "2026-08-09",
-        "dias": 3
+        "dias": 4
       },
       {
         "titulo": "Projeto Escola da Comunidade ajuda moradores a vencer o sedentarismo, ansiedade e recuperar a autoestima - Prefeitura de Cuiabá",
         "veiculo": "Prefeitura de Cuiabá",
         "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOREcyS1RCU3lPODQ0dlUwZWc3cjljV19wWkVCSDZjdUFwbElIUzZncFdmSGRpRndnYS12YWlGc25FemVQc3VUVUdoZ05SSmJnTm5fRi1uVm9mUGdYeXRoWEVrQmVlbE5LOUZHQl9LajZsS2ZkQ0g0UC0yUDRXa3Jxb0RBeFhqUDV3emVyMi1lVzJyQTFqTlh2Q1R5ZlRha21wWFRwNk1jZlJtSEZYYk1ZZUdpWTVvZGo4STBIUmpRaF81Wlp0RmFha0Jsd0N2Zk9icDdnUnp4M3Y?oc=5",
         "publicado": "2026-08-09",
-        "dias": 3
+        "dias": 4
       },
       {
         "titulo": "Segundo dia do Mato Grosso AgroFestival reúne cerca de 70 mil pessoas no Parque Novo Mato Grosso - Prefeitura de Cuiabá",
         "veiculo": "Prefeitura de Cuiabá",
         "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQaWEzYjdMYmxUNnlaUmlsZFJ6dzdDaEZBVzVCVUp1cVZvMWtWaGxyMEptVkM2Qm1wZGJCeFc0X05LZEJsMnZjZV9ZT3FveVkwdkYwNFRWTGQ2Ulc0cS1FSmo0aHNCWXNHZlFWbExiQkZ0VFVvaldnV2VKdmNpbXdSemJyWjR3S1ZSaEx1WWJRREVSSHhLQXdINUZhQVNfVmdKNDRKUWNGWFBlUHd4OWdoWjBWTkp5aFlNbnhsdGNiNHNhUEZTbUszekpoOWdkYTg?oc=5",
         "publicado": "2026-08-09",
-        "dias": 3
+        "dias": 4
       },
       {
         "titulo": "“Será a primeira vez que o Praeirinho terá um espaço apropriado”, destaca prefeito sobre nova Feira do Peixe - Prefeitura de Cuiabá",
         "veiculo": "Prefeitura de Cuiabá",
         "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQVmgxZUhxWU9zeEliWFJVbUNTSmtveklFODJHWmJtakdrbEtmczBLal8zWkRkWWhKb3lRREF5Yzc5QTVyYlNlX1RsVEV2ZWEzZlZMcjJnY1VwQ0VPdlFvQXBjMjBqTkY3dktkcjVrRUFQN19nUktxd25sU2tlS3o3NWF5c245NXY5WmktcTNBUWptWjFNc2NuRll4eDVEc2s0QTRzT2VJLWVCS1ljLVdsQnJfdlpqN1ZyRC1FV1dOTHFlSTdXcmw2ZUY0R1VuMVVqM21mb0tEVVZVSjg?oc=5",
         "publicado": "2026-08-09",
-        "dias": 3
+        "dias": 4
       },
       {
         "titulo": "Exposição “Pantanal em Mim” reúne arte, memória e reflexão ambiental em Cuiabá - Prefeitura de Cuiabá",
         "veiculo": "Prefeitura de Cuiabá",
         "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQQnVLY3h0QWpGMmM5dnVMa2VHNHBaTlBIUm1JTEViYzFJMzBHMWN6Z0FJdzRZbE5EdTc4cmRGYjdYNWZWbzlCazJ0OC14OGo1dDFLU1JrUjhpTkxVVmpLeHFSVVFJNnVDVUpMWlp6NjJTd0thZWJRN3RrUm5kUk81Zm14eE9aZFpicUFPSnMxRF9XekQ5TFBnU0lFMmFYRnNoQXJkcXpHRVJzUEp4WTF4TU1zbTlGNGdXc3BlSFY1d3FBM2JRbXc?oc=5",
         "publicado": "2026-08-09",
-        "dias": 3
+        "dias": 4
       },
       {
         "titulo": "Semob instala novos bancos no Terminal do CPA 3 e prepara melhorias estruturais - Prefeitura de Cuiabá",
         "veiculo": "Prefeitura de Cuiabá",
         "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNQWtWWWFxdS1fRHRfMUZ1a2tEczlpN3JOcXlkMU1QR09DaFVuZy1idkdZVVp1dGdEd2VtM1pvaDg2OVd1U3JiZUdjUVRIZThjVWxPTTNmMUtCcWpIY0wtWVlMY3ItMllsU0xsZXhmUUZNMTRlT0RzRFRsRklhdDBjbWd1MTJXXzYxMlIteUZwUHJZem9Xcmh3NjVoWTFEVU9TeEV1OUE5YlF0X3lSd2lobWFZSTEweEtw?oc=5",
         "publicado": "2026-08-08",
-        "dias": 4
+        "dias": 5
       },
       {
         "titulo": "Prefeito Abilio defende solução técnica para estacionamento central Av. das Torres - Prefeitura de Cuiabá",
         "veiculo": "Prefeitura de Cuiabá",
         "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQYXFhbDZUUmFBVXcwLUEwNFlmb0xYaWNQYl94UWg3b1FsVktTbEQ5RjlKX0RrclR2UjVVVGh3LVk5dmFpSjlwZlR5TGRzTjllV0ZxS2h0b0hPQ0xJOWwxR01HYzRWLVhYdDZyX01ndHBUQUgyT01uWkxmWUp5Ylk4MWY2RU5ZMFYwMFB2eVg0RWZvMERjRmhRenZRZ3E5cGJMY3MtOEItUnc0RkZkVVk5M0JSOE5DRWc4SGc?oc=5",
         "publicado": "2026-08-08",
-        "dias": 4
+        "dias": 5
       },
       {
         "titulo": "Com apoio da Prefeitura de Cuiabá, Grupo Flor Serrana lança primeiro álbum - Prefeitura de Cuiabá",
         "veiculo": "Prefeitura de Cuiabá",
         "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPQ3RnYS1uYjlmVXVQUEh3NVpzVUVXT2FtZkNmb1VnWnFQWkwzYml4OHNOWlllcExpdkpJU2tJbXQ2ZmVrd0cyQjRtZDNPVlBCSUZpNUptUUVwYlQtTmJzbktNaDNMTnZjLXdZOXAxYk94ZEpKT2sxZ2NzdTF1U3dITFVIN3lQbE9mdmdxZEZqSmRERmwtT1FlUXhYR0tTbVJUV2huQklfQ2p2TjRwMjMxSw?oc=5",
         "publicado": "2026-08-08",
-        "dias": 4
+        "dias": 5
       },
       {
         "titulo": "Mato Grosso AgroFestival reúne 50 mil pessoas no primeiro dia com rodeio e shows em Cuiabá - Prefeitura de Cuiabá",
         "veiculo": "Prefeitura de Cuiabá",
         "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQTjdqNUtYcVBxMVJ5eU12SEJ0RTlwUmVoWVNROXpvM1g1UFVEcGFwWGVEVl94Yl9aOVFSWjNXZHlFOFNqR0xEYTUzUDlhbFlDanRza3FHMHg1Y1VMRDM4bE5VZGxjR0k0bHFndzJGNWFCX3dhMUlWSkkxWEl6VTZDazMyamQwLVNBVU5tTjdRVTVNWTlCUkQ0RDFGZmFBSGsyZWhXUTRFOHhWdWpQbzhhZWNUTG1QdTVTN1R3U1lDbjRfNF9fNDZF?oc=5",
         "publicado": "2026-08-08",
-        "dias": 4
+        "dias": 5
       }
     ]
   },
@@ -1276,19 +1586,19 @@
         "handle": "orthodontic.cbacentronorte",
         "posts_medidos": 120,
         "ultimo_post": "2026-07-16",
-        "dias_sem_publicar": 27,
+        "dias_sem_publicar": 28,
         "parado": false,
         "curtidas_medianas": 1,
-        "frase": "120 posts medidos, último há 27 dias"
+        "frase": "120 posts medidos, último há 28 dias"
       },
       {
         "handle": "orthodontic.cbafernandocorrea",
         "posts_medidos": 120,
         "ultimo_post": "2026-01-02",
-        "dias_sem_publicar": 222,
+        "dias_sem_publicar": 223,
         "parado": true,
         "curtidas_medianas": 3,
-        "frase": "120 posts medidos, último há 222 dias"
+        "frase": "120 posts medidos, último há 223 dias"
       }
     ]
   },
@@ -1568,7 +1878,7 @@
   "temas": [
     {
       "tema": "atendimento",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "cuiaba",
       "pct": 0.6539,
       "n": 5190,
@@ -1579,7 +1889,7 @@
     },
     {
       "tema": "preco_custo",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "cuiaba",
       "pct": 0.0318,
       "n": 5190,
@@ -1590,7 +1900,7 @@
     },
     {
       "tema": "agenda_espera",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "cuiaba",
       "pct": 0.0268,
       "n": 5190,
@@ -1601,7 +1911,7 @@
     },
     {
       "tema": "comunicacao_resposta",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "cuiaba",
       "pct": 0.0171,
       "n": 5190,
@@ -1612,7 +1922,7 @@
     },
     {
       "tema": "qualidade_resultado",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "cuiaba",
       "pct": 0.5293,
       "n": 5190,
@@ -1623,7 +1933,7 @@
     },
     {
       "tema": "confianca_medo",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "cuiaba",
       "pct": 0.0289,
       "n": 5190,
@@ -1634,7 +1944,7 @@
     },
     {
       "tema": "contrato_burocracia",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "cuiaba",
       "pct": 0.0021,
       "n": 5190,
@@ -1645,7 +1955,7 @@
     },
     {
       "tema": "pessoas_nominais",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "cuiaba",
       "pct": 0.0513,
       "n": 5190,
@@ -1656,7 +1966,7 @@
     },
     {
       "tema": "localizacao_acesso",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "cuiaba",
       "pct": 0.0426,
       "n": 5190,
@@ -1667,7 +1977,7 @@
     },
     {
       "tema": "recomendacao_lealdade",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "cuiaba",
       "pct": 0.2233,
       "n": 5190,
@@ -1678,7 +1988,7 @@
     },
     {
       "tema": "dor_medo_dentista",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "cuiaba",
       "pct": 0.037,
       "n": 5190,
@@ -1689,7 +1999,7 @@
     },
     {
       "tema": "resultado_autoestima",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "cuiaba",
       "pct": 0.121,
       "n": 5190,
@@ -1700,7 +2010,7 @@
     },
     {
       "tema": "explicacao_clareza",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "cuiaba",
       "pct": 0.0229,
       "n": 5190,
@@ -1711,7 +2021,7 @@
     },
     {
       "tema": "aparelho_tratamento",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "cuiaba",
       "pct": 0.0148,
       "n": 5190,
@@ -1722,7 +2032,7 @@
     },
     {
       "tema": "familia_filhos",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "cuiaba",
       "pct": 0.0281,
       "n": 5190,
@@ -1733,7 +2043,7 @@
     },
     {
       "tema": "tempo_relacao",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "cuiaba",
       "pct": 0.0252,
       "n": 5190,

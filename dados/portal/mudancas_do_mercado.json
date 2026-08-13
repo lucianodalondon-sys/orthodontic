@@ -1,0 +1,321 @@
+{
+ "o_que_e": "O que se moveu no mercado em volta das unidades, entre duas medições comparáveis da mesma praça.",
+ "o_que_nao_e": "Não é o delta da nossa loja (isso é o_que_mudou.py). E falta de coleta nunca vira evento: clínica que não apareceu não fechou, anúncio não consultado não saiu do ar.",
+ "medido_em": "2026-08-13",
+ "limiares": {
+  "salto_avaliacoes": 15,
+  "queda_avaliacoes": -5,
+  "salto_nota": 0.2,
+  "base_minima": 20
+ },
+ "eventos_total": 4,
+ "por_tipo": {
+  "concorrente_acelerou": 2,
+  "linha_de_base_anuncios": 2
+ },
+ "por_praca": [
+  {
+   "praca_id": "caxias_do_sul",
+   "rotulo": "RS · Caxias do Sul",
+   "eventos": 0,
+   "estado": "linha_de_base",
+   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+  },
+  {
+   "praca_id": "contagem",
+   "rotulo": "MG · Contagem",
+   "eventos": 2,
+   "estado": "medido",
+   "janela": "2026-08-08 → 2026-08-13",
+   "medicoes_da_praca": 2,
+   "clinicas_antes": 135,
+   "clinicas_agora": 135,
+   "comparaveis": 134,
+   "estabilidade_pct": 99,
+   "aviso_de_metodo": "a varredura devolveu 135 clínicas em 2026-08-08 e 135 em 2026-08-13, com 134 em comum (99%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
+  },
+  {
+   "praca_id": "cuiaba",
+   "rotulo": "MT · Cuiabá",
+   "eventos": 2,
+   "estado": "medido",
+   "janela": "2026-08-08 → 2026-08-13",
+   "medicoes_da_praca": 2,
+   "clinicas_antes": 243,
+   "clinicas_agora": 145,
+   "comparaveis": 130,
+   "estabilidade_pct": 53,
+   "aviso_de_metodo": "a varredura devolveu 243 clínicas em 2026-08-08 e 145 em 2026-08-13, com 130 em comum (53%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
+  },
+  {
+   "praca_id": "curitiba",
+   "rotulo": "PR · Curitiba",
+   "eventos": 0,
+   "estado": "linha_de_base",
+   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+  },
+  {
+   "praca_id": "feira",
+   "rotulo": "BA · Feira de Santana",
+   "eventos": 0,
+   "estado": "linha_de_base",
+   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+  },
+  {
+   "praca_id": "florianopolis",
+   "rotulo": "SC · Florianópolis",
+   "eventos": 0,
+   "estado": "linha_de_base",
+   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+  },
+  {
+   "praca_id": "goiania",
+   "rotulo": "GO · Goiânia",
+   "eventos": 0,
+   "estado": "linha_de_base",
+   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+  },
+  {
+   "praca_id": "imperatriz",
+   "rotulo": "MA · Imperatriz",
+   "eventos": 0,
+   "estado": "linha_de_base",
+   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+  },
+  {
+   "praca_id": "joinville",
+   "rotulo": "SC · Joinville",
+   "eventos": 0,
+   "estado": "linha_de_base",
+   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+  },
+  {
+   "praca_id": "juazeiro_do_norte",
+   "rotulo": "CE · Juazeiro do Norte",
+   "eventos": 0,
+   "estado": "linha_de_base",
+   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+  },
+  {
+   "praca_id": "londrina",
+   "rotulo": "PR · Londrina",
+   "eventos": 0,
+   "estado": "linha_de_base",
+   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+  },
+  {
+   "praca_id": "macapa",
+   "rotulo": "AP · Macapá",
+   "eventos": 0,
+   "estado": "linha_de_base",
+   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+  },
+  {
+   "praca_id": "mafra",
+   "rotulo": "SC · Mafra",
+   "eventos": 0,
+   "estado": "linha_de_base",
+   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+  },
+  {
+   "praca_id": "maraba",
+   "rotulo": "PA · Marabá",
+   "eventos": 0,
+   "estado": "linha_de_base",
+   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+  },
+  {
+   "praca_id": "palmas",
+   "rotulo": "TO · Palmas",
+   "eventos": 0,
+   "estado": "linha_de_base",
+   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+  },
+  {
+   "praca_id": "parauapebas",
+   "rotulo": "PA · Parauapebas",
+   "eventos": 0,
+   "estado": "linha_de_base",
+   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+  },
+  {
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "eventos": 0,
+   "estado": "linha_de_base",
+   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+  },
+  {
+   "praca_id": "prudente",
+   "rotulo": "SP · Presidente Prudente",
+   "eventos": 0,
+   "estado": "linha_de_base",
+   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+  },
+  {
+   "praca_id": "rio_branco",
+   "rotulo": "AC · Rio Branco",
+   "eventos": 0,
+   "estado": "linha_de_base",
+   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+  },
+  {
+   "praca_id": "rio_de_janeiro",
+   "rotulo": "RJ · Rio de Janeiro",
+   "eventos": 0,
+   "estado": "linha_de_base",
+   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+  },
+  {
+   "praca_id": "sao_paulo",
+   "rotulo": "SP · São Paulo",
+   "eventos": 0,
+   "estado": "linha_de_base",
+   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+  },
+  {
+   "praca_id": "sorocaba",
+   "rotulo": "SP · Sorocaba",
+   "eventos": 0,
+   "estado": "linha_de_base",
+   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+  },
+  {
+   "praca_id": "uberlandia",
+   "rotulo": "MG · Uberlândia",
+   "eventos": 0,
+   "estado": "linha_de_base",
+   "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+  }
+ ],
+ "eventos": [
+  {
+   "evento_id": "contagem|concorrente_acelerou|ChIJV6ERtJKVpgARt5eabTvQZ3Y",
+   "data": "2026-08-13",
+   "praca_id": "contagem",
+   "rotulo": "MG · Contagem",
+   "local_id": null,
+   "entidade_id": "ChIJV6ERtJKVpgARt5eabTvQZ3Y",
+   "tipo": "concorrente_acelerou",
+   "natureza": "fato",
+   "severidade": "alta",
+   "titulo": "Vitae Center Clínica Médica e Odontológica acelerou",
+   "fato": "ganhou 26 avaliações entre 2026-08-08 e 2026-08-13 — de 3837 para 3863",
+   "por_que_importa": "rival de aparelho ganhando atenção no mesmo mercado",
+   "decisao": "ver o que ele está publicando e anunciando",
+   "fonte": "dados/serie/categoria.jsonl",
+   "evidencia": {
+    "place_id": "ChIJV6ERtJKVpgARt5eabTvQZ3Y",
+    "antes": 3837,
+    "agora": 3863
+   },
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "alta",
+    "medido": true,
+    "amostra": 3863,
+    "janela_dias": 5,
+    "medicoes": 2,
+    "fonte": "dados/serie/categoria.jsonl (2026-08-08 → 2026-08-13)",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": null,
+    "procedencia": "medido em 3863 clínicas medidas, 2 medições, 5 dias de janela"
+   }
+  },
+  {
+   "evento_id": "contagem|linha_de_base_anuncios|-",
+   "data": "2026-08-13",
+   "praca_id": "contagem",
+   "rotulo": "MG · Contagem",
+   "local_id": null,
+   "entidade_id": null,
+   "tipo": "linha_de_base_anuncios",
+   "natureza": "fato",
+   "severidade": "baixa",
+   "titulo": "Linha de base de anúncios criada",
+   "fato": "primeira medição de anúncios desta praça, em 2026-08-08",
+   "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
+   "decisao": "recoletar na próxima rodada para abrir o delta",
+   "fonte": "dados/serie/anuncios.jsonl",
+   "evidencia": {},
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": null,
+    "janela_dias": null,
+    "medicoes": 1,
+    "fonte": "dados/serie/anuncios.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": null,
+    "procedencia": "sem amostra declarada, 1 medição"
+   }
+  },
+  {
+   "evento_id": "cuiaba|concorrente_acelerou|ChIJ69guJYixnZMRnsvy09GVFEg",
+   "data": "2026-08-13",
+   "praca_id": "cuiaba",
+   "rotulo": "MT · Cuiabá",
+   "local_id": null,
+   "entidade_id": "ChIJ69guJYixnZMRnsvy09GVFEg",
+   "tipo": "concorrente_acelerou",
+   "natureza": "fato",
+   "severidade": "media",
+   "titulo": "Odonto Alfa - Clínica Odontológica em Cuiabá acelerou",
+   "fato": "ganhou 36 avaliações entre 2026-08-08 e 2026-08-13 — de 75 para 111",
+   "por_que_importa": "clínica odontológica ganhando atenção; nem toda disputa aparelho",
+   "decisao": "ver o que ele está publicando e anunciando",
+   "fonte": "dados/serie/categoria.jsonl",
+   "evidencia": {
+    "place_id": "ChIJ69guJYixnZMRnsvy09GVFEg",
+    "antes": 75,
+    "agora": 111
+   },
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "alta",
+    "medido": true,
+    "amostra": 111,
+    "janela_dias": 5,
+    "medicoes": 2,
+    "fonte": "dados/serie/categoria.jsonl (2026-08-08 → 2026-08-13)",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": null,
+    "procedencia": "medido em 111 clínicas medidas, 2 medições, 5 dias de janela"
+   }
+  },
+  {
+   "evento_id": "cuiaba|linha_de_base_anuncios|-",
+   "data": "2026-08-13",
+   "praca_id": "cuiaba",
+   "rotulo": "MT · Cuiabá",
+   "local_id": null,
+   "entidade_id": null,
+   "tipo": "linha_de_base_anuncios",
+   "natureza": "fato",
+   "severidade": "baixa",
+   "titulo": "Linha de base de anúncios criada",
+   "fato": "primeira medição de anúncios desta praça, em 2026-08-08",
+   "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
+   "decisao": "recoletar na próxima rodada para abrir o delta",
+   "fonte": "dados/serie/anuncios.jsonl",
+   "evidencia": {},
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": null,
+    "janela_dias": null,
+    "medicoes": 1,
+    "fonte": "dados/serie/anuncios.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": null,
+    "procedencia": "sem amostra declarada, 1 medição"
+   }
+  }
+ ]
+}

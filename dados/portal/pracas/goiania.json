@@ -1,6 +1,6 @@
 {
   "praca_id": "goiania",
-  "corte": "2026-08-12",
+  "corte": "2026-08-13",
   "rotulo": "GO · Goiânia",
   "uf": [
     "GO"
@@ -281,6 +281,285 @@
   "bairros": {
     "praca_id": "goiania",
     "rotulo": "GO · Goiânia",
+    "territorio": [
+      {
+        "local_id": "ortho_gyn_st_oeste",
+        "unidade": "OrthoDontic St. Oeste",
+        "medido": true,
+        "location": {
+          "lat": -16.6797334,
+          "lng": -49.269754
+        },
+        "bairro": "St. Oeste",
+        "clinica_mais_proxima": {
+          "nome": "Dental Adelar",
+          "km": 0.35,
+          "avaliacoes": 240,
+          "nota": 4.8,
+          "bairro": "St. Aeroporto"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Iceokids | Odontopediatria",
+          "km": 0.84,
+          "avaliacoes": 865,
+          "nota": 4.9,
+          "bairro": "St. Oeste"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 1.08,
+          "avaliacoes": 268,
+          "nota": 4.6,
+          "bairro": "St. Central"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 14,
+            "de_aparelho": 1,
+            "da_rede": 0
+          },
+          "2km": {
+            "clinicas": 88,
+            "de_aparelho": 6,
+            "da_rede": 1
+          },
+          "5km": {
+            "clinicas": 145,
+            "de_aparelho": 12,
+            "da_rede": 1
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.35 km",
+        "proximidade_entre_unidades": {
+          "km": 1.08,
+          "unidade": "OrthoDontic",
+          "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+          "natureza": "inferencia"
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 160,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 160 clínicas com coordenada, 1 medição"
+        }
+      },
+      {
+        "local_id": "ortho_gyn_st_central",
+        "unidade": "OrthoDontic St. Central",
+        "medido": true,
+        "location": {
+          "lat": -16.6756922,
+          "lng": -49.260486099999994
+        },
+        "bairro": "St. Central",
+        "clinica_mais_proxima": {
+          "nome": "Sorridents Centro",
+          "km": 0.03,
+          "avaliacoes": 55,
+          "nota": 4.3,
+          "bairro": "St. Central"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "OdontoSin | Implantes Dentários | Dentista | Goiânia",
+          "km": 0.11,
+          "avaliacoes": 487,
+          "nota": 4.9,
+          "bairro": "St. Central"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 1.08,
+          "avaliacoes": 270,
+          "nota": 4.2,
+          "bairro": "St. Oeste"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 23,
+            "de_aparelho": 3,
+            "da_rede": 0
+          },
+          "2km": {
+            "clinicas": 60,
+            "de_aparelho": 6,
+            "da_rede": 1
+          },
+          "5km": {
+            "clinicas": 142,
+            "de_aparelho": 12,
+            "da_rede": 1
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.03 km",
+        "proximidade_entre_unidades": {
+          "km": 1.08,
+          "unidade": "OrthoDontic",
+          "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+          "natureza": "inferencia"
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 160,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 160 clínicas com coordenada, 1 medição"
+        }
+      },
+      {
+        "local_id": "ortho_gyn_jardim_tropical",
+        "unidade": "OrthoDontic Jardim Tropical",
+        "medido": true,
+        "location": {
+          "lat": -16.765591099999998,
+          "lng": -49.3486518
+        },
+        "bairro": "Jardim Tropical",
+        "clinica_mais_proxima": {
+          "nome": "OdontoCompany Av.Milão Assaí",
+          "km": 7.34,
+          "avaliacoes": 51,
+          "nota": 3.2,
+          "bairro": "Jardim Europa"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Vita Implantes - Clínica Odontológica",
+          "km": 8.41,
+          "avaliacoes": 881,
+          "nota": 4.9,
+          "bairro": "Parque Amazonia"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 12.72,
+          "avaliacoes": 270,
+          "nota": 4.2,
+          "bairro": "St. Oeste"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 0,
+            "de_aparelho": 0,
+            "da_rede": 0
+          },
+          "2km": {
+            "clinicas": 0,
+            "de_aparelho": 0,
+            "da_rede": 0
+          },
+          "5km": {
+            "clinicas": 0,
+            "de_aparelho": 0,
+            "da_rede": 0
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 7.34 km",
+        "proximidade_entre_unidades": null,
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 160,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 160 clínicas com coordenada, 1 medição"
+        }
+      },
+      {
+        "local_id": "ortho_gyn_st_morada_do_sol",
+        "unidade": "OrthoDontic St. Morada do Sol",
+        "medido": true,
+        "location": {
+          "lat": -16.6282842,
+          "lng": -49.327198
+        },
+        "bairro": "St. Morada do Sol",
+        "clinica_mais_proxima": {
+          "nome": "Clínica Odontológica - Instituto Correia",
+          "km": 1.58,
+          "avaliacoes": 55,
+          "nota": 4.7,
+          "bairro": "Jardim Nova Esperanca"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Camargo Odontologia",
+          "km": 5.86,
+          "avaliacoes": 1252,
+          "nota": 5,
+          "bairro": "Campinas"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 8.38,
+          "avaliacoes": 270,
+          "nota": 4.2,
+          "bairro": "St. Oeste"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 0,
+            "de_aparelho": 0,
+            "da_rede": 0
+          },
+          "2km": {
+            "clinicas": 2,
+            "de_aparelho": 0,
+            "da_rede": 0
+          },
+          "5km": {
+            "clinicas": 4,
+            "de_aparelho": 0,
+            "da_rede": 0
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 1.58 km",
+        "proximidade_entre_unidades": null,
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 160,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 160 clínicas com coordenada, 1 medição"
+        }
+      }
+    ],
+    "clinicas_com_coordenada": 161,
+    "clinicas_sem_coordenada": 0,
+    "raios_declarados_km": [
+      1,
+      2,
+      5
+    ],
     "bairros_medidos": 36,
     "clinicas_medidas": 161,
     "sem_bairro_no_endereco": 0,
@@ -1008,12 +1287,22 @@
       "procedencia": "medido em 161 clínicas varridas, 1 medição"
     }
   },
+  "movimentos_do_mercado": {
+    "eventos": [],
+    "resumo": {
+      "praca_id": "goiania",
+      "rotulo": "GO · Goiânia",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
   "imprensa": {
     "medido": true,
     "total": 64,
     "mostrando": 12,
-    "recentes_30d": 23,
-    "manchete": "23 matérias sobre a cidade nos últimos 30 dias, de 64 já lidas",
+    "recentes_30d": 29,
+    "manchete": "29 matérias sobre a cidade nos últimos 30 dias, de 64 já lidas",
     "porque_vazio": null,
     "materias": [
       {
@@ -1021,84 +1310,84 @@
         "veiculo": "maisgoias.com.br",
         "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOY0V0bFZBN2pYRkVxMkJmUGlDQWw5aWlUSHVudEg1VlVEYXBzS3BUWTN4cEZxNmFkaldjd0txaXZFbHFVY3ZCeVpPejlqNmVseXFEdUJFdFJTYmN2c0RYS0ozcWJGS2ZZR21YUVZJT2lQUW1sVzBnNGN3cWNpMFhlVWNCelBHa2Y1WWNsSHJxRlk0NnRLTVJWSnBlanlIclJqM3huRjRiUUlyNmJ5RjJld0hxNkpUbUV3YnlJQXhfZU5VVVoxQjhSc2lhZS1rU280cXEyZzRUd0dfYzQ3RV9QcXppVU9RVUV2aThkaF93?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Mansão onde Virginia Zé Felipe moraram está à venda por R$ 29 milhões - G1",
         "veiculo": "G1",
         "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOMVowMjY2NFNiWmplX1dnQ1JST3dRcVhRaWJNSzFVUGkyVHhHZFg3S3lTWnZNRk90VVcyWi1hOFJQVTlCajBxS0N0b0V6dG5ETGxfMlNsaDhRUzNnRVloRlpzQWlDd3EyOGxOQW1IRWN5TGJ0TW5CbWpJU240V1VDMDRIUVcyOGpDekFQdEV2TF9NRVBUN1pnREp6WC01V3RJcG9Td1FVXzJUTWhmYXNBMVB3T0JuSjd3cktFeTNzTEZhUkxsUGRkMXIzVHhQNVRJZWlrZjJSb2JlQWdRQXZ5Q3NoZVMxMFU?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Confira as vagas de empregos em Goiânia - G1",
         "veiculo": "G1",
         "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQeENnc1lZOFl1YVVveXhpdGVpYVdNUm1QWmdKU01lSUFpQU5KMjlWREFyaGQ2TzJjeXFYTjgwck5Nb3p1dzU4Mm5HLUhBXzZYNm5USllKb3BtWFFYemM2cGRGT3VrYTlnOWpBYWZUNXZTdU96aE9wOGhsT1RKak5Obk9RZmc3TWJFUHZwcGZZSGhvcGRNUzJLUVZINk9RRjJIOUZIVVFGQVB1bW9R0gG7AUFVX3lxTFBya0wyWVhncGFSZVVTWjVJbDZSX2JLLS1ieEx2UjF1Y1pBNFVzWGZta2VPX1lncGdGT19MWi13SVBmVW90RGYzU2lpZ3hpWUNrZlg3YUJuV1NLMWFkc2RBMXRlU3U1OXZWVmhOZXJGNUtUX1pBekVKZ2lmeDMwYWg0T0hDbzNzcFNYTXdGZWVYaWUxRTRuVHFSVDdQVjRuZFJkbXg4am1HT1lQVW1VQVh5Tkl2bDZpc01Fdk0?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Casa é destruída durante incêndio no Bairro São Carlos, em Goiânia - G1",
         "veiculo": "G1",
         "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNbWZNWC1ISXpjSXE4TlFqb3NmRWRRQzRVMHJIVHVhZ1lHc0tTYTYyWE9yY0Y4YTAzbmJBS3ZMYWszbDhuVDdudzZBWWhyWm80Rk9BeWhQVVdBMWZHdnl0cnhDRUMwWGRIUTFqeVEtWmJiMnFRRXZBUTcxZURIODBpWEVZb19NbFM2NkQzQnhTNEROZDRnZUlLUl82dEFISW5Hdzc3V1A2UWZ2MGp5Nnoya1N0b2dwazZMM2FnM3ZPNmdBMWVqM1dhcEsyalBiQWfSAd4BQVVfeXFMTk93RkpWLThsNENLelFBSS02ZW9YcERubEZVNFlDR0lheXBsVnltR2VqZlREcFB6V0FDSmVZb2NoWlJGVjFtY2MwVE1ZOFFuR2x0bnZBX1ZNR00xWmdkODJjbGZyV1o1SkttQWNQUTRVVzVkMGtyRk9BNG1OSHlKbjliT084ekZDNkhhX292a2RMZ0p2MnNobEFQNGxCdnNTR1dJRW0yMXVNcHR2NkZtS0lGUldMLXVnanZfcXVFd3pNTFlhR01MbFZBQkpHRm1jWEpUTmU3M25CSkVfcWVn?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Polícia investiga caso de carro roubado encontrado em chamas na GO-462, em Goiânia - G1",
         "veiculo": "G1",
         "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOOE55bTRqNTViMm5DbGJSczdmMWNIQ25SMUsxcHRPeF9LM0kxcTBfbFBUME1zelBtaXdBNXplMzJxQW5ZLVhrb0dEOGpvaDBjX09KNGI3QVFLVlRGVGgtQzBCR2RjTndBN1RsY25NU25peGdiYi16TWl3OUJLLWZlc3lCMWdldE5EdzQzYjA4WHNQZ0VhMC1GTHU1SHk2eE1BODJIak1XVGhuXy16bWh4dEZ6dThSNTVicUxWNUlKUTJMZS03NVRsZ2VjVi1qYng2N1M0MTYtQllPNm9sQmpFQmxRbFDSAfMBQVVfeXFMTTZzYlVrdVVoRWlrYWk4WWw5RVFOS05FeWRpWjQxTjk2c1BLUEZlSVBVdUt4bms4N3N0a3ZtSmVSNnF0Z0RJLUdudHBHcmptZXp5R1dJVElMTnI2ZEZWcXQxVDdrVTJHM19PM1NXbzdBc2JUMHE1MWlHNGo1TEFQdll6cHJUdDBfYzdRR2VLQjJQTmZJRGd3Q3REbGctc1psUm5uX1A4OGdaU3VoRFcyeFVDd1VzaV9jdkF0LUVQbDg4OXZLWDc3aldESDNOSWVBcDB5ei1ZaDMwNlhjSk81MVpETjZsU3h3QnE1RDhQWlVDVkVF?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Confira a programação completa do Festival Bananada 2026, em Goiânia, com datas e horários dos shows - Revista Factual",
         "veiculo": "Revista Factual",
         "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNT1pZUHRTTXZJRUF0Q21CWjBaQ2ZMeXd0OENnWUNhODR1UDNXcnFweE12Y185eXZMSHRfbTZhc1lWWDBoTy1kUHlySXA4WXJSMnNqTmR3Wmp4ZVZ3Rmc3a0o2Z1V0TEI2ZHd6bGNuMlhxSURFZ1FOX25RR2d5TEZaMW4yQUJEbXpyWFl4a0VyNEh0NlpRR1Fn?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Previsão do tempo em Goiânia (GO) hoje: veja como fica o clima nesta terça-feira - Terra",
         "veiculo": "Terra",
         "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQSDBMZjZ0NW1VZkVLMUtMSVN0dC02WEluYUx0YzVFaHB1Z0dLckMxUkNIbVpfN3o5Z0VvWlRoTFJLTDdSQTJDcWNjTUFYeWZkbnU1VjdoTGZGU1labGFTVjgzSTg5cmFsblAyT2tCTTRxRS1QREttX2hrWXlLckQ1OEV1ZlN2anl1SUlNWXlyejdOa1QzdHRnWWlHcWxBSzAzX05ZemJGZk1GWVhzVDduSXVUVFkwWi1VY2wwT280TkhkOEhTallhTzhhaWpaeFdDYlpMRGRwVFlLa2NTYm8wTG9VMmQ5cmVSU2thUGYteG5aMmNsTXh4dUI3OXgxZ1NEUmc?oc=5",
         "publicado": "2026-08-11",
-        "dias": 1
+        "dias": 2
       },
       {
         "titulo": "Adufg-Sindicato convoca usuários dos planos Unimed Goiânia e Uniodonto para Assembleia Extraordinária - ADUFG",
         "veiculo": "ADUFG",
         "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOc2Ric0t1TUhIaUVwXzNDU1l5RkNMVDM5NzFTMUFzS2VuVlUyQVhJUTMyMFFjTFBCLVlfZUJtekhXQmxvczJCZFNZLVd0VXYyNXo3akZCbGNkZ0E2TXZXYVNlSTc1OTVhQzhCRHREU2Z1TTdQUkNlenU0TWE1cXFHelJqNkk1M1NxVTJyVHNockVqSTgtcnE0WTNsaU1YeTVfcjJpUDdjMUNaNkQwMTBxZzFGUzNTZTR6TjN1ZmtWVHpabTlycURsTktmS1p5Y1ozZFRz?oc=5",
         "publicado": "2026-08-11",
-        "dias": 1
+        "dias": 2
       },
       {
         "titulo": "Mais quentes do Brasil: duas cidades de Goiás registram 41°C - G1",
         "veiculo": "G1",
         "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONTJiYS1BMDJxXy1ValRtUTBxUjlYQlpkaDZSTlNEbDU5bEFLT1ZsYXFGeGZOZHl1UXlJY2VIb1lFcjRrZmJSYl9jdFNjU1BxcWNqM09YWnZ1M05PY0dCTnRPSlVjLUpOSVlnbXIxZG5UdjhGVTY5LXhfOWlsdGJzWHhCa05ZRzBZZkhXbUdWdEIyZnF6dC1Jd0pjdlBWbnlWQjZ4WkxfVjdTOEhLdV9wZ0pQVdIBwgFBVV95cUxPWDBydlVuV0JlaXNKTFBXSnVVOHlkc2haSXpUMjByNGd5RG02Wml6TU1xa3pPS0N4R0l3TVkzOFJrdDM5bVFBakVWcl81NmNEeXNUZS00aVl0ekRhRm80bUlMcnhYS0wya25QYV9FWkU4ZEJlZXgwM1EyMGYxbjZ0UzZzczBTMWZuTkVSazVtaTFSbTFxdzZJcmV2QlA1T3NyNGVsRVpaRHh1WmtiMDlrSEJvYTRTVWZhTjcxR3hTY0xDQQ?oc=5",
         "publicado": "2026-08-11",
-        "dias": 1
+        "dias": 2
       },
       {
         "titulo": "Igreja com dívida de mais R$ 800 mil está há cerca de dois anos sem pagar aluguel, diz locadora - G1",
         "veiculo": "G1",
         "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOdXZCenFYeUdqWG5HUllpREJsV3hkdkdtYVprUUZzZzRab3hZM0hneTFzLUZDQlpYV0pHazJ0elBFR2stN1J6WllpR1lzcEZpXzBPc1JfbDNwVGtFU1lXeVFTNkttcE5HZ3o4Z0JmZHRyNEZwWWg5OHI2RzViTmVtNmI3MVJZWU5DN2Q3UG9HS0lrbnVrcDNWMzJkcDg5VDc2VDF2N0FJUjQzX1VRRGRHSTh4eXlYTFdOZVVqV2RvMXVZYmVnZDFVald4NjNIQnIxSGh3TUE4dGNlS09jUW5KeHFR0gHwAUFVX3lxTE5Ca28zQjJua1paY0U4amdKeUtlNW82c2tBRW0tNzRLcEdVVHBLVmIxRFZXb1A1eFdhTHVhcjlLSEVFQU5INzVQQ1NySDF1bXRVQTBtN2JNQUdETXFjUDRjZ3I0MzRkcDQ4cHlQcVJLQmJIUVA5OWVEY1IwVV94WkZRYThLbXpJeDk2dWwwX0hXZzJHQmtjOE9wMXRtSExMUnhlT2Q0Qi1zQ1d1b0tNM3B6eWZiVld5bTYyeG5Ma254N0NlbjM0eVV3LTJPZDFmR2toMnNtcjcteFk5cl9kSFVBV1daQTItLUxXNUF5amxtMw?oc=5",
         "publicado": "2026-08-11",
-        "dias": 1
+        "dias": 2
       },
       {
         "titulo": "Goiânia tem semana com previsão de máximas de 37ºC e sem chuvas - CNN Brasil",
         "veiculo": "CNN Brasil",
         "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOci1rUTBzTFZzOE56Z1U2YzQxam52NmkxcGxHWDRSY0RSS1pQWnFTczNBdnNEMXBuSzVOMXBpQjM5VUZ5VS1aQXJ0ekFBWFJWcDcyR3RaajYyZkRfdUdXUDVETnl6dDFNd0J3ajdiWWh0LV90U1JRRWluTENpZ0pBbEZKcDRoMUJmb19FRUZQMTVuMVBJRHRTLVUxOEhHOS1uWVRiVGJDNzdzLXRWRHZyRmV1dWhVSTc4RVE?oc=5",
         "publicado": "2026-08-10",
-        "dias": 2
+        "dias": 3
       },
       {
         "titulo": "Eduardo Bilemjian, o fotógrafo armênio ignorado por Pedro Ludovico que registrou o nascimento de Goiânia - maisgoias.com.br",
         "veiculo": "maisgoias.com.br",
         "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQblVGMFRoNlFXQ2czbl9HS21NSUtMRE41SllFRndiX19sYmtzeVJWMnY3am96VGxySGVxUFhub0kxMnZ4Q0diby05eDliNFdIaF9XeFlGU3REWjVLeE9vZmo1NmhVZzhBYVVVaGUzUWpWWnpkcloyOFZFZnhHMExPdTZxdW44bHRPdTdYZ3RNRGJJTHQwU00zV195VHdnOVFLNUM2R0pPd3pjbnRzRDFhNk5NVTlNT0k4cFZ6T0Zyek4tLS1zcXlKd3dLVGl4SFR2ZVE4WlVteTZTTHJ4Q2VwN0Zn?oc=5",
         "publicado": "2026-08-10",
-        "dias": 2
+        "dias": 3
       }
     ]
   },
@@ -1114,136 +1403,136 @@
         "handle": "prefeituradegoiania",
         "posts_medidos": 36,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 141,
-        "frase": "36 posts medidos, último há 0 dias"
+        "frase": "36 posts medidos, último há 1 dia"
       },
       {
         "handle": "sobregyn",
         "posts_medidos": 4,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": -1,
-        "frase": "4 posts medidos, último há 0 dias"
+        "frase": "4 posts medidos, último há 1 dia"
       },
       {
         "handle": "buriti.noticias",
         "posts_medidos": 9,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 187,
-        "frase": "9 posts medidos, último há 0 dias"
+        "frase": "9 posts medidos, último há 1 dia"
       },
       {
         "handle": "noticiasdeaparecida",
         "posts_medidos": 2,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 962,
-        "frase": "2 posts medidos, último há 0 dias"
+        "frase": "2 posts medidos, último há 1 dia"
       },
       {
         "handle": "invicta_motopecas062",
         "posts_medidos": 1,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 77,
-        "frase": "1 post medido, último há 0 dias"
+        "frase": "1 post medido, último há 1 dia"
       },
       {
         "handle": "agt.goiania",
         "posts_medidos": 6,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 119,
-        "frase": "6 posts medidos, último há 0 dias"
+        "frase": "6 posts medidos, último há 1 dia"
       },
       {
         "handle": "ignewsgo",
         "posts_medidos": 7,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": -1,
-        "frase": "7 posts medidos, último há 0 dias"
+        "frase": "7 posts medidos, último há 1 dia"
       },
       {
         "handle": "clubedemaesgoiania",
         "posts_medidos": 22,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 16,
-        "frase": "22 posts medidos, último há 0 dias"
+        "frase": "22 posts medidos, último há 1 dia"
       },
       {
         "handle": "smpdrones",
         "posts_medidos": 1,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 40,
-        "frase": "1 post medido, último há 0 dias"
+        "frase": "1 post medido, último há 1 dia"
       },
       {
         "handle": "goianiatop_",
         "posts_medidos": 14,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 317,
-        "frase": "14 posts medidos, último há 0 dias"
+        "frase": "14 posts medidos, último há 1 dia"
       },
       {
         "handle": "mylena_fmb",
         "posts_medidos": 1,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 100,
-        "frase": "1 post medido, último há 0 dias"
+        "frase": "1 post medido, último há 1 dia"
       },
       {
         "handle": "tais_g_m",
         "posts_medidos": 2,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 595,
-        "frase": "2 posts medidos, último há 0 dias"
+        "frase": "2 posts medidos, último há 1 dia"
       },
       {
         "handle": "leti.alves_",
         "posts_medidos": 1,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 133,
-        "frase": "1 post medido, último há 0 dias"
+        "frase": "1 post medido, último há 1 dia"
       },
       {
         "handle": "marialiviareiis",
         "posts_medidos": 1,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": -1,
-        "frase": "1 post medido, último há 0 dias"
+        "frase": "1 post medido, último há 1 dia"
       },
       {
         "handle": "gareiamotouber",
         "posts_medidos": 40,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 70,
-        "frase": "40 posts medidos, último há 0 dias"
+        "frase": "40 posts medidos, último há 1 dia"
       }
     ]
   },
@@ -1433,7 +1722,7 @@
   "temas": [
     {
       "tema": "atendimento",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "goiania",
       "pct": 0.6688,
       "n": 1757,
@@ -1444,7 +1733,7 @@
     },
     {
       "tema": "preco_custo",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "goiania",
       "pct": 0.033,
       "n": 1757,
@@ -1455,7 +1744,7 @@
     },
     {
       "tema": "agenda_espera",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "goiania",
       "pct": 0.0393,
       "n": 1757,
@@ -1466,7 +1755,7 @@
     },
     {
       "tema": "comunicacao_resposta",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "goiania",
       "pct": 0.0381,
       "n": 1757,
@@ -1477,7 +1766,7 @@
     },
     {
       "tema": "qualidade_resultado",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "goiania",
       "pct": 0.5054,
       "n": 1757,
@@ -1488,7 +1777,7 @@
     },
     {
       "tema": "confianca_medo",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "goiania",
       "pct": 0.0581,
       "n": 1757,
@@ -1499,7 +1788,7 @@
     },
     {
       "tema": "contrato_burocracia",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "goiania",
       "pct": 0.0108,
       "n": 1757,
@@ -1510,7 +1799,7 @@
     },
     {
       "tema": "pessoas_nominais",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "goiania",
       "pct": 0.0825,
       "n": 1757,
@@ -1521,7 +1810,7 @@
     },
     {
       "tema": "localizacao_acesso",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "goiania",
       "pct": 0.0433,
       "n": 1757,
@@ -1532,7 +1821,7 @@
     },
     {
       "tema": "recomendacao_lealdade",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "goiania",
       "pct": 0.2641,
       "n": 1757,
@@ -1543,7 +1832,7 @@
     },
     {
       "tema": "dor_medo_dentista",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "goiania",
       "pct": 0.0871,
       "n": 1757,
@@ -1554,7 +1843,7 @@
     },
     {
       "tema": "resultado_autoestima",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "goiania",
       "pct": 0.1901,
       "n": 1757,
@@ -1565,7 +1854,7 @@
     },
     {
       "tema": "explicacao_clareza",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "goiania",
       "pct": 0.0529,
       "n": 1757,
@@ -1576,7 +1865,7 @@
     },
     {
       "tema": "aparelho_tratamento",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "goiania",
       "pct": 0.0472,
       "n": 1757,
@@ -1587,7 +1876,7 @@
     },
     {
       "tema": "familia_filhos",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "goiania",
       "pct": 0.0774,
       "n": 1757,
@@ -1598,7 +1887,7 @@
     },
     {
       "tema": "tempo_relacao",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "goiania",
       "pct": 0.0364,
       "n": 1757,

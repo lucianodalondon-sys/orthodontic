@@ -32,11 +32,11 @@
     "de": 17
   },
   "faixa": "vermelha",
-  "urgencia": 65,
+  "urgencia": 80,
   "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 14,
     "vence_em": "2026-08-26"
   },
@@ -85,6 +85,13 @@
       "chave": "nota",
       "fato": "nota 4.3 contra mediana 4.9 das 17 clínicas medidas na praça",
       "fonte": "dados/serie/places.jsonl"
+    },
+    {
+      "peso": 15,
+      "titulo": "Silêncio publicitário com leilão cheio",
+      "chave": "silencio",
+      "fato": "125 anúncios no ar de 47 anunciantes, e nenhum é da rede",
+      "fonte": "dados/serie/captacao.jsonl"
     }
   ],
   "quem_avanca": null,
@@ -390,6 +397,172 @@
       "procedencia": "medido em 74 avaliações"
     }
   },
+  "meu_territorio": {
+    "local_id": "ortho_soro_jardim_faculdade",
+    "unidade": "OrthoDontic Jardim Faculdade",
+    "medido": true,
+    "location": {
+      "lat": -23.5113514,
+      "lng": -47.4626071
+    },
+    "bairro": "Jardim Faculdade",
+    "clinica_mais_proxima": {
+      "nome": "Uniodonto",
+      "km": 0.26,
+      "avaliacoes": 368,
+      "nota": 4.7,
+      "bairro": "Jardim Vergueiro"
+    },
+    "aparelho_mais_proximo": {
+      "nome": "OR2U Dental Studio - Dentistas em Sorocaba",
+      "km": 0.35,
+      "avaliacoes": 746,
+      "nota": 4.9,
+      "bairro": "Jardim Faculdade"
+    },
+    "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 1.43,
+      "avaliacoes": 116,
+      "nota": 4.5,
+      "bairro": "Centro"
+    },
+    "raios": {
+      "1km": {
+        "clinicas": 51,
+        "de_aparelho": 4,
+        "da_rede": 0
+      },
+      "2km": {
+        "clinicas": 98,
+        "de_aparelho": 11,
+        "da_rede": 1
+      },
+      "5km": {
+        "clinicas": 126,
+        "de_aparelho": 13,
+        "da_rede": 1
+      }
+    },
+    "frase_fato": "a clínica mais próxima está a 0.26 km",
+    "proximidade_entre_unidades": {
+      "km": 1.43,
+      "unidade": "OrthoDontic",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+    },
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 142,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+        "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 142 clínicas com coordenada, 1 medição"
+    }
+  },
+  "movimentos": {
+    "eventos": [],
+    "e_da_cidade": true,
+    "resumo": {
+      "praca_id": "sorocaba",
+      "rotulo": "SP · Sorocaba",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
+  "execucao": {
+    "local_id": "ortho_soro_jardim_faculdade",
+    "praca_id": "sorocaba",
+    "rotulo": "SP · Sorocaba",
+    "unidade": "OrthoDontic Jardim Faculdade",
+    "itens": [
+      {
+        "problema": "A dor pública desta unidade aparece em atendimento clínico — 7 avaliações de 1 ou 2 estrelas de 13 que falam desse momento.",
+        "e_marketing": false,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "operacao",
+          "especialidade": "a própria unidade",
+          "porque_nao_e_marketing": "a dor pública está em o atendimento na cadeira. Campanha não conserta isso — mais mídia sobre um gargalo de balcão só aumenta o número de pessoas irritadas.",
+          "quem_resolve": "clínica",
+          "metrica_de_validacao": "as mesmas avaliações, reclassificadas na próxima coleta",
+          "recoletar_em_dias": 30
+        },
+        "evidencias": [
+          "12 avaliações falam deste momento, 4 com notas baixas",
+          "2 avaliações falam deste momento, 1 com nota baixa",
+          "2 avaliações falam deste momento, 2 com notas baixas"
+        ],
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": null,
+          "janela_dias": null,
+          "medicoes": null,
+          "fonte": "dados/portal/jornada.json",
+          "a_favor": [
+            "A dor pública desta unidade aparece em atendimento clínico — 7 avaliações de 1 ou 2 estrelas de 13 que falam desse momento."
+          ],
+          "contra": [],
+          "o_que_aumentaria": "a próxima medição da jornada",
+          "procedencia": "sem amostra declarada"
+        }
+      },
+      {
+        "problema": "Esta loja aparece em **3 das 195 buscas** que testamos na cidade.",
+        "e_marketing": true,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "seo_local",
+          "especialidade": "marketing local e Google Business",
+          "problema": "a unidade aparece em 3 buscas de 195 testadas na própria cidade",
+          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
+          "evidencias": [
+            "aparece em 3 de 195 buscas",
+            "aparece em: {'frase': 'aparelho ortodôntico sorocaba', 'posicao': 3, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'dentista sorocaba aparelho', 'posicao': 3, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'aparelho ortodontico em sorocaba', 'posicao': 4, 'intencao': 'GENÉRICO'}"
+          ],
+          "nao_fazer": [
+            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
+            "não prometer posição: o Google não vende ordem no mapa"
+          ],
+          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
+          "prazo": "30 dias",
+          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
+          "recoletar_em_dias": 30
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 195,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/portal/presenca_por_loja.json",
+          "a_favor": [
+            "Esta loja aparece em **3 das 195 buscas** que testamos na cidade."
+          ],
+          "contra": [
+            "uma medição só — a segunda dirá se é estrutural ou momento"
+          ],
+          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+          "procedencia": "medido em 195 buscas testadas, 1 medição"
+        }
+      }
+    ],
+    "de_marketing": 1,
+    "de_operacao": 1
+  },
   "meu_bairro": {
     "bairro": "Jardim Faculdade",
     "clinicas": 5,
@@ -416,6 +589,24 @@
   "acoes": {
     "arcos": [
       {
+        "arco_id": "ortho_soro_jardim_faculdade|silencio",
+        "local_id": "ortho_soro_jardim_faculdade",
+        "praca_id": "sorocaba",
+        "gatilho": "silencio",
+        "problema": "125 anúncios no ar de 47 anunciantes, e nenhum é da rede",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": null,
+        "antes": null,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "sem ação padrão para este gatilho",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      },
+      {
         "arco_id": "ortho_soro_jardim_faculdade|nota",
         "local_id": "ortho_soro_jardim_faculdade",
         "praca_id": "sorocaba",
@@ -429,9 +620,9 @@
         "acao_recomendada": "responder as avaliações abertas e tratar o motivo",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": 4.3,
-        "medido_em": "2026-08-12",
+        "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
-        "dias": 0
+        "dias": 1
       },
       {
         "arco_id": "ortho_soro_jardim_faculdade|parada",
@@ -447,9 +638,9 @@
         "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": 1.0,
-        "medido_em": "2026-08-12",
+        "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
-        "dias": 0
+        "dias": 1
       },
       {
         "arco_id": "ortho_soro_jardim_faculdade|posicao",
@@ -465,12 +656,12 @@
         "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": 17.0,
-        "medido_em": "2026-08-12",
+        "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
-        "dias": 0
+        "dias": 1
       }
     ],
-    "total": 3,
+    "total": 4,
     "aviso": "O livro nasceu hoje. Nenhum arco completou 21 dias, então ainda não há veredito para ninguém — a primeira resposta vem na coleta seguinte."
   },
   "oferta_da_cidade": {
@@ -960,6 +1151,13 @@
     "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
   },
   "eventos": [
+    {
+      "data": "2026-08-13",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Silêncio publicitário com leilão cheio",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
     {
       "data": "2026-08-12",
       "tipo": "alerta",

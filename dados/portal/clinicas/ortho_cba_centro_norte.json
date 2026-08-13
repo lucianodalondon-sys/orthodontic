@@ -548,6 +548,236 @@
       "procedencia": "medido em 610 avaliações, 3 medições, 4 dias de janela"
     }
   },
+  "meu_territorio": {
+    "local_id": "ortho_cba_centro_norte",
+    "unidade": "OrthoDontic Cuiabá Centro Norte",
+    "medido": true,
+    "location": {
+      "lat": -15.597351799999998,
+      "lng": -56.097935299999996
+    },
+    "bairro": "Centro Norte",
+    "clinica_mais_proxima": {
+      "nome": "Dra. Daniele Broch - Dentista em Cuiabá",
+      "km": 0.15,
+      "avaliacoes": 8,
+      "nota": 5,
+      "bairro": "Centro Norte"
+    },
+    "aparelho_mais_proximo": {
+      "nome": "ODONTO MEDICINA 🦷",
+      "km": 0.17,
+      "avaliacoes": 1451,
+      "nota": 5,
+      "bairro": "Centro Norte"
+    },
+    "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 0.61,
+      "avaliacoes": 71,
+      "nota": 4.9,
+      "bairro": "Centro Sul"
+    },
+    "raios": {
+      "1km": {
+        "clinicas": 38,
+        "de_aparelho": 4,
+        "da_rede": 1
+      },
+      "2km": {
+        "clinicas": 89,
+        "de_aparelho": 9,
+        "da_rede": 1
+      },
+      "5km": {
+        "clinicas": 147,
+        "de_aparelho": 19,
+        "da_rede": 2
+      }
+    },
+    "frase_fato": "a clínica mais próxima está a 0.15 km",
+    "proximidade_entre_unidades": {
+      "km": 0.61,
+      "unidade": "OrthoDontic",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+    },
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 256,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+        "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 256 clínicas com coordenada, 1 medição"
+    }
+  },
+  "movimentos": {
+    "eventos": [
+      {
+        "evento_id": "cuiaba|concorrente_acelerou|ChIJ69guJYixnZMRnsvy09GVFEg",
+        "data": "2026-08-13",
+        "praca_id": "cuiaba",
+        "rotulo": "MT · Cuiabá",
+        "local_id": null,
+        "entidade_id": "ChIJ69guJYixnZMRnsvy09GVFEg",
+        "tipo": "concorrente_acelerou",
+        "natureza": "fato",
+        "severidade": "media",
+        "titulo": "Odonto Alfa - Clínica Odontológica em Cuiabá acelerou",
+        "fato": "ganhou 36 avaliações entre 2026-08-08 e 2026-08-13 — de 75 para 111",
+        "por_que_importa": "clínica odontológica ganhando atenção; nem toda disputa aparelho",
+        "decisao": "ver o que ele está publicando e anunciando",
+        "fonte": "dados/serie/categoria.jsonl",
+        "evidencia": {
+          "place_id": "ChIJ69guJYixnZMRnsvy09GVFEg",
+          "antes": 75,
+          "agora": 111
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "alta",
+          "medido": true,
+          "amostra": 111,
+          "janela_dias": 5,
+          "medicoes": 2,
+          "fonte": "dados/serie/categoria.jsonl (2026-08-08 → 2026-08-13)",
+          "a_favor": [],
+          "contra": [],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 111 clínicas medidas, 2 medições, 5 dias de janela"
+        }
+      },
+      {
+        "evento_id": "cuiaba|linha_de_base_anuncios|-",
+        "data": "2026-08-13",
+        "praca_id": "cuiaba",
+        "rotulo": "MT · Cuiabá",
+        "local_id": null,
+        "entidade_id": null,
+        "tipo": "linha_de_base_anuncios",
+        "natureza": "fato",
+        "severidade": "baixa",
+        "titulo": "Linha de base de anúncios criada",
+        "fato": "primeira medição de anúncios desta praça, em 2026-08-08",
+        "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
+        "decisao": "recoletar na próxima rodada para abrir o delta",
+        "fonte": "dados/serie/anuncios.jsonl",
+        "evidencia": {},
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": null,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/anuncios.jsonl",
+          "a_favor": [],
+          "contra": [],
+          "o_que_aumentaria": null,
+          "procedencia": "sem amostra declarada, 1 medição"
+        }
+      }
+    ],
+    "e_da_cidade": true,
+    "resumo": {
+      "praca_id": "cuiaba",
+      "rotulo": "MT · Cuiabá",
+      "eventos": 2,
+      "estado": "medido",
+      "janela": "2026-08-08 → 2026-08-13",
+      "medicoes_da_praca": 2,
+      "clinicas_antes": 243,
+      "clinicas_agora": 145,
+      "comparaveis": 130,
+      "estabilidade_pct": 53,
+      "aviso_de_metodo": "a varredura devolveu 243 clínicas em 2026-08-08 e 145 em 2026-08-13, com 130 em comum (53%). Só as em comum viram evento: aparecer e sumir, aqui, é variação da própria varredura, não movimento do mercado."
+    }
+  },
+  "execucao": {
+    "local_id": "ortho_cba_centro_norte",
+    "praca_id": "cuiaba",
+    "rotulo": "MT · Cuiabá",
+    "unidade": "OrthoDontic Cuiabá Centro Norte",
+    "itens": [
+      {
+        "problema": "Esta loja aparece em **4 das 151 buscas** que testamos na cidade.",
+        "e_marketing": true,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "seo_local",
+          "especialidade": "marketing local e Google Business",
+          "problema": "a unidade aparece em 4 buscas de 151 testadas na própria cidade",
+          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
+          "evidencias": [
+            "aparece em 4 de 151 buscas",
+            "aparece em: {'frase': 'aparelho ortodôntico cuiaba', 'posicao': 1, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'ortodontista cuiabá', 'posicao': 1, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'ortodontista em cuiabá', 'posicao': 1, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'ortodontista em cuiaba', 'posicao': 2, 'intencao': 'GENÉRICO'}"
+          ],
+          "nao_fazer": [
+            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
+            "não prometer posição: o Google não vende ordem no mapa"
+          ],
+          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
+          "prazo": "30 dias",
+          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
+          "recoletar_em_dias": 30
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 151,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/portal/presenca_por_loja.json",
+          "a_favor": [
+            "Esta loja aparece em **4 das 151 buscas** que testamos na cidade."
+          ],
+          "contra": [
+            "uma medição só — a segunda dirá se é estrutural ou momento"
+          ],
+          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+          "procedencia": "medido em 151 buscas testadas, 1 medição"
+        }
+      },
+      {
+        "problema": "6 avaliações negativas abertas sem resposta",
+        "e_marketing": false,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "reputacao",
+          "especialidade": "a própria unidade",
+          "porque_nao_e_marketing": "responder paciente é trabalho de quem atende. Agência escrevendo resposta em nome da clínica é o caminho mais curto para uma resposta que o paciente percebe como automática.",
+          "metrica_de_validacao": "quantas seguem sem resposta na próxima coleta",
+          "recoletar_em_dias": 15
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 6,
+          "janela_dias": null,
+          "medicoes": null,
+          "fonte": "dados/portal/caixa_de_respostas.json",
+          "a_favor": [],
+          "contra": [],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 6 avaliações"
+        }
+      }
+    ],
+    "de_marketing": 1,
+    "de_operacao": 1
+  },
   "meu_bairro": {
     "bairro": "Centro Norte",
     "clinicas": 51,

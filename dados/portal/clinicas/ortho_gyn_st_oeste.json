@@ -40,7 +40,7 @@
   "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 14,
     "vence_em": "2026-08-26"
   },
@@ -532,6 +532,199 @@
       "procedencia": "medido em 95 avaliações"
     }
   },
+  "meu_territorio": {
+    "local_id": "ortho_gyn_st_oeste",
+    "unidade": "OrthoDontic St. Oeste",
+    "medido": true,
+    "location": {
+      "lat": -16.6797334,
+      "lng": -49.269754
+    },
+    "bairro": "St. Oeste",
+    "clinica_mais_proxima": {
+      "nome": "Dental Adelar",
+      "km": 0.35,
+      "avaliacoes": 240,
+      "nota": 4.8,
+      "bairro": "St. Aeroporto"
+    },
+    "aparelho_mais_proximo": {
+      "nome": "Iceokids | Odontopediatria",
+      "km": 0.84,
+      "avaliacoes": 865,
+      "nota": 4.9,
+      "bairro": "St. Oeste"
+    },
+    "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 1.08,
+      "avaliacoes": 268,
+      "nota": 4.6,
+      "bairro": "St. Central"
+    },
+    "raios": {
+      "1km": {
+        "clinicas": 14,
+        "de_aparelho": 1,
+        "da_rede": 0
+      },
+      "2km": {
+        "clinicas": 88,
+        "de_aparelho": 6,
+        "da_rede": 1
+      },
+      "5km": {
+        "clinicas": 145,
+        "de_aparelho": 12,
+        "da_rede": 1
+      }
+    },
+    "frase_fato": "a clínica mais próxima está a 0.35 km",
+    "proximidade_entre_unidades": {
+      "km": 1.08,
+      "unidade": "OrthoDontic",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+    },
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 160,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+        "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 160 clínicas com coordenada, 1 medição"
+    }
+  },
+  "movimentos": {
+    "eventos": [],
+    "e_da_cidade": true,
+    "resumo": {
+      "praca_id": "goiania",
+      "rotulo": "GO · Goiânia",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
+  "execucao": {
+    "local_id": "ortho_gyn_st_oeste",
+    "praca_id": "goiania",
+    "rotulo": "GO · Goiânia",
+    "unidade": "OrthoDontic St. Oeste",
+    "itens": [
+      {
+        "problema": "A dor pública desta unidade aparece em agendamento — 12 avaliações de 1 ou 2 estrelas de 13 que falam desse momento.",
+        "e_marketing": false,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "operacao",
+          "especialidade": "a própria unidade",
+          "porque_nao_e_marketing": "a dor pública está em marcar, remarcar e encaixar. Campanha não conserta isso — mais mídia sobre um gargalo de balcão só aumenta o número de pessoas irritadas.",
+          "quem_resolve": "recepção",
+          "metrica_de_validacao": "as mesmas avaliações, reclassificadas na próxima coleta",
+          "recoletar_em_dias": 30
+        },
+        "evidencias": [
+          "6 avaliações falam deste momento, 4 com notas baixas",
+          "10 avaliações falam deste momento, 7 com notas baixas",
+          "13 avaliações falam deste momento, 12 com notas baixas"
+        ],
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": null,
+          "janela_dias": null,
+          "medicoes": null,
+          "fonte": "dados/portal/jornada.json",
+          "a_favor": [
+            "A dor pública desta unidade aparece em agendamento — 12 avaliações de 1 ou 2 estrelas de 13 que falam desse momento."
+          ],
+          "contra": [],
+          "o_que_aumentaria": "a próxima medição da jornada",
+          "procedencia": "sem amostra declarada"
+        }
+      },
+      {
+        "problema": "Esta loja aparece em **6 das 196 buscas** que testamos na cidade.",
+        "e_marketing": true,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "seo_local",
+          "especialidade": "marketing local e Google Business",
+          "problema": "a unidade aparece em 6 buscas de 196 testadas na própria cidade",
+          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
+          "evidencias": [
+            "aparece em 6 de 196 buscas",
+            "aparece em: {'frase': 'aparelho ortodôntico goiânia', 'posicao': 1, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'aparelho ortodôntico em goiania', 'posicao': 1, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'dentista goiania aparelho', 'posicao': 1, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'ortodontista em goiania', 'posicao': 2, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'ortodontista goiânia', 'posicao': 4, 'intencao': 'GENÉRICO'}"
+          ],
+          "nao_fazer": [
+            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
+            "não prometer posição: o Google não vende ordem no mapa"
+          ],
+          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
+          "prazo": "30 dias",
+          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
+          "recoletar_em_dias": 30
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 196,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/portal/presenca_por_loja.json",
+          "a_favor": [
+            "Esta loja aparece em **6 das 196 buscas** que testamos na cidade."
+          ],
+          "contra": [
+            "uma medição só — a segunda dirá se é estrutural ou momento"
+          ],
+          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+          "procedencia": "medido em 196 buscas testadas, 1 medição"
+        }
+      },
+      {
+        "problema": "10 avaliações negativas abertas sem resposta",
+        "e_marketing": false,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "reputacao",
+          "especialidade": "a própria unidade",
+          "porque_nao_e_marketing": "responder paciente é trabalho de quem atende. Agência escrevendo resposta em nome da clínica é o caminho mais curto para uma resposta que o paciente percebe como automática.",
+          "metrica_de_validacao": "quantas seguem sem resposta na próxima coleta",
+          "recoletar_em_dias": 15
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 10,
+          "janela_dias": null,
+          "medicoes": null,
+          "fonte": "dados/portal/caixa_de_respostas.json",
+          "a_favor": [],
+          "contra": [],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 10 avaliações"
+        }
+      }
+    ],
+    "de_marketing": 1,
+    "de_operacao": 2
+  },
   "meu_bairro": {
     "bairro": "St. Oeste",
     "clinicas": 25,
@@ -571,9 +764,9 @@
         "acao_recomendada": "responder as avaliações abertas e tratar o motivo",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": 4.2,
-        "medido_em": "2026-08-12",
+        "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
-        "dias": 0
+        "dias": 1
       },
       {
         "arco_id": "ortho_gyn_st_oeste|parada",
@@ -589,9 +782,9 @@
         "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": 4.3,
-        "medido_em": "2026-08-12",
+        "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
-        "dias": 0
+        "dias": 1
       },
       {
         "arco_id": "ortho_gyn_st_oeste|posicao",
@@ -607,9 +800,9 @@
         "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": 16.0,
-        "medido_em": "2026-08-12",
+        "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
-        "dias": 0
+        "dias": 1
       }
     ],
     "total": 3,

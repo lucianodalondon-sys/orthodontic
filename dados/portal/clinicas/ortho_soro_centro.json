@@ -32,11 +32,11 @@
     "de": 17
   },
   "faixa": "amarela",
-  "urgencia": 35,
+  "urgencia": 50,
   "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 7,
     "vence_em": "2026-08-19"
   },
@@ -56,7 +56,8 @@
       "fonte": "scripts/fila.py",
       "a_favor": [
         "16º lugar de 17 clínicas medidas na praça",
-        "nota 4.5 contra mediana 4.9 das 17 clínicas medidas na praça"
+        "nota 4.5 contra mediana 4.9 das 17 clínicas medidas na praça",
+        "125 anúncios no ar de 47 anunciantes, e nenhum é da rede"
       ],
       "contra": [],
       "o_que_aumentaria": "o resultado medido na coleta seguinte (dados/serie/acoes.jsonl)",
@@ -77,6 +78,13 @@
       "chave": "nota",
       "fato": "nota 4.5 contra mediana 4.9 das 17 clínicas medidas na praça",
       "fonte": "dados/serie/places.jsonl"
+    },
+    {
+      "peso": 15,
+      "titulo": "Silêncio publicitário com leilão cheio",
+      "chave": "silencio",
+      "fato": "125 anúncios no ar de 47 anunciantes, e nenhum é da rede",
+      "fonte": "dados/serie/captacao.jsonl"
     }
   ],
   "quem_avanca": null,
@@ -476,6 +484,163 @@
       "procedencia": "medido em 88 avaliações"
     }
   },
+  "meu_territorio": {
+    "local_id": "ortho_soro_centro",
+    "unidade": "OrthoDontic Centro",
+    "medido": true,
+    "location": {
+      "lat": -23.498978500000003,
+      "lng": -47.458619
+    },
+    "bairro": "Centro",
+    "clinica_mais_proxima": {
+      "nome": "Melhor Sorriso Sorocaba",
+      "km": 0.06,
+      "avaliacoes": 46,
+      "nota": 4.5,
+      "bairro": "Centro"
+    },
+    "aparelho_mais_proximo": {
+      "nome": "Odontoclinic Centro Sorocaba",
+      "km": 0.19,
+      "avaliacoes": 489,
+      "nota": 4.9,
+      "bairro": "Centro"
+    },
+    "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 1.43,
+      "avaliacoes": 111,
+      "nota": 4.3,
+      "bairro": "Jardim Faculdade"
+    },
+    "raios": {
+      "1km": {
+        "clinicas": 47,
+        "de_aparelho": 7,
+        "da_rede": 0
+      },
+      "2km": {
+        "clinicas": 97,
+        "de_aparelho": 12,
+        "da_rede": 1
+      },
+      "5km": {
+        "clinicas": 132,
+        "de_aparelho": 14,
+        "da_rede": 2
+      }
+    },
+    "frase_fato": "a clínica mais próxima está a 0.06 km",
+    "proximidade_entre_unidades": {
+      "km": 1.43,
+      "unidade": "OrthoDontic",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+    },
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 142,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+        "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 142 clínicas com coordenada, 1 medição"
+    }
+  },
+  "movimentos": {
+    "eventos": [],
+    "e_da_cidade": true,
+    "resumo": {
+      "praca_id": "sorocaba",
+      "rotulo": "SP · Sorocaba",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
+  "execucao": {
+    "local_id": "ortho_soro_centro",
+    "praca_id": "sorocaba",
+    "rotulo": "SP · Sorocaba",
+    "unidade": "OrthoDontic Centro",
+    "itens": [
+      {
+        "problema": "Esta loja aparece em **2 das 195 buscas** que testamos na cidade.",
+        "e_marketing": true,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "seo_local",
+          "especialidade": "marketing local e Google Business",
+          "problema": "a unidade aparece em 2 buscas de 195 testadas na própria cidade",
+          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
+          "evidencias": [
+            "aparece em 2 de 195 buscas",
+            "aparece em: {'frase': 'aparelho ortodontico em sorocaba', 'posicao': 3, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'aparelho ortodôntico sorocaba', 'posicao': 4, 'intencao': 'GENÉRICO'}"
+          ],
+          "nao_fazer": [
+            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
+            "não prometer posição: o Google não vende ordem no mapa"
+          ],
+          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
+          "prazo": "30 dias",
+          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
+          "recoletar_em_dias": 30
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 195,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/portal/presenca_por_loja.json",
+          "a_favor": [
+            "Esta loja aparece em **2 das 195 buscas** que testamos na cidade."
+          ],
+          "contra": [
+            "uma medição só — a segunda dirá se é estrutural ou momento"
+          ],
+          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+          "procedencia": "medido em 195 buscas testadas, 1 medição"
+        }
+      },
+      {
+        "problema": "5 avaliações negativas abertas sem resposta",
+        "e_marketing": false,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "reputacao",
+          "especialidade": "a própria unidade",
+          "porque_nao_e_marketing": "responder paciente é trabalho de quem atende. Agência escrevendo resposta em nome da clínica é o caminho mais curto para uma resposta que o paciente percebe como automática.",
+          "metrica_de_validacao": "quantas seguem sem resposta na próxima coleta",
+          "recoletar_em_dias": 15
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 5,
+          "janela_dias": null,
+          "medicoes": null,
+          "fonte": "dados/portal/caixa_de_respostas.json",
+          "a_favor": [],
+          "contra": [],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 5 avaliações"
+        }
+      }
+    ],
+    "de_marketing": 1,
+    "de_operacao": 1
+  },
   "meu_bairro": {
     "bairro": "Centro",
     "clinicas": 35,
@@ -502,6 +667,24 @@
   "acoes": {
     "arcos": [
       {
+        "arco_id": "ortho_soro_centro|silencio",
+        "local_id": "ortho_soro_centro",
+        "praca_id": "sorocaba",
+        "gatilho": "silencio",
+        "problema": "125 anúncios no ar de 47 anunciantes, e nenhum é da rede",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": null,
+        "antes": null,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "sem ação padrão para este gatilho",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      },
+      {
         "arco_id": "ortho_soro_centro|nota",
         "local_id": "ortho_soro_centro",
         "praca_id": "sorocaba",
@@ -515,9 +698,9 @@
         "acao_recomendada": "responder as avaliações abertas e tratar o motivo",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": 4.5,
-        "medido_em": "2026-08-12",
+        "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
-        "dias": 0
+        "dias": 1
       },
       {
         "arco_id": "ortho_soro_centro|posicao",
@@ -533,12 +716,12 @@
         "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": 16.0,
-        "medido_em": "2026-08-12",
+        "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
-        "dias": 0
+        "dias": 1
       }
     ],
-    "total": 2,
+    "total": 3,
     "aviso": "O livro nasceu hoje. Nenhum arco completou 21 dias, então ainda não há veredito para ninguém — a primeira resposta vem na coleta seguinte."
   },
   "oferta_da_cidade": {
@@ -1028,6 +1211,13 @@
     "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
   },
   "eventos": [
+    {
+      "data": "2026-08-13",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Silêncio publicitário com leilão cheio",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
     {
       "data": "2026-08-12",
       "tipo": "alerta",

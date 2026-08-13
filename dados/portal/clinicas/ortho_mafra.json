@@ -27,7 +27,7 @@
   "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
-    "dias_aberta": 2,
+    "dias_aberta": 3,
     "prazo_dias": 14,
     "vence_em": "2026-08-24"
   },
@@ -427,6 +427,130 @@
       "procedencia": "medido em 55 avaliações, 4 medições, 28 dias de janela"
     }
   },
+  "meu_territorio": {
+    "local_id": "ortho_mafra",
+    "unidade": "OrthoDontic Mafra",
+    "medido": true,
+    "location": {
+      "lat": -26.121302,
+      "lng": -49.8056354
+    },
+    "bairro": "Centro II Alto de Mafra",
+    "clinica_mais_proxima": {
+      "nome": "Instituto Lumière - Mafra",
+      "km": 0.07,
+      "avaliacoes": 230,
+      "nota": 5,
+      "bairro": "Centro II Alto de Mafra"
+    },
+    "aparelho_mais_proximo": {
+      "nome": "Instituto Lumière - Mafra",
+      "km": 0.07,
+      "avaliacoes": 230,
+      "nota": 5,
+      "bairro": "Centro II Alto de Mafra"
+    },
+    "unidade_da_rede_mais_proxima": null,
+    "raios": {
+      "1km": {
+        "clinicas": 33,
+        "de_aparelho": 9,
+        "da_rede": 0
+      },
+      "2km": {
+        "clinicas": 58,
+        "de_aparelho": 9,
+        "da_rede": 0
+      },
+      "5km": {
+        "clinicas": 73,
+        "de_aparelho": 11,
+        "da_rede": 0
+      }
+    },
+    "frase_fato": "a clínica mais próxima está a 0.07 km",
+    "proximidade_entre_unidades": null,
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 73,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+        "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 73 clínicas com coordenada, 1 medição"
+    }
+  },
+  "movimentos": {
+    "eventos": [],
+    "e_da_cidade": true,
+    "resumo": {
+      "praca_id": "mafra",
+      "rotulo": "SC · Mafra",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
+  "execucao": {
+    "local_id": "ortho_mafra",
+    "praca_id": "mafra",
+    "rotulo": "SC · Mafra",
+    "unidade": "OrthoDontic Mafra",
+    "itens": [
+      {
+        "problema": "Esta loja aparece em **5 das 64 buscas** que testamos na cidade.",
+        "e_marketing": true,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "seo_local",
+          "especialidade": "marketing local e Google Business",
+          "problema": "a unidade aparece em 5 buscas de 64 testadas na própria cidade",
+          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
+          "evidencias": [
+            "aparece em 5 de 64 buscas",
+            "aparece em: {'frase': 'dentista rio mafra', 'posicao': 2, 'intencao': 'BAIRRO'}",
+            "aparece em: {'frase': 'dentista em mafra', 'posicao': 2, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'melhor dentista em mafra', 'posicao': 2, 'intencao': 'REPUTAÇÃO'}",
+            "aparece em: {'frase': 'dentista infantil em mafra', 'posicao': 4, 'intencao': 'CRIANÇA'}",
+            "aparece em: {'frase': 'dentista infantil mafra', 'posicao': 5, 'intencao': 'CRIANÇA'}"
+          ],
+          "nao_fazer": [
+            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
+            "não prometer posição: o Google não vende ordem no mapa"
+          ],
+          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
+          "prazo": "30 dias",
+          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
+          "recoletar_em_dias": 30
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 64,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/portal/presenca_por_loja.json",
+          "a_favor": [
+            "Esta loja aparece em **5 das 64 buscas** que testamos na cidade."
+          ],
+          "contra": [
+            "uma medição só — a segunda dirá se é estrutural ou momento"
+          ],
+          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+          "procedencia": "medido em 64 buscas testadas, 1 medição"
+        }
+      }
+    ],
+    "de_marketing": 1,
+    "de_operacao": 0
+  },
   "meu_bairro": {
     "bairro": "Centro II Alto de Mafra",
     "clinicas": 12,
@@ -465,9 +589,9 @@
         "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": 2.4,
-        "medido_em": "2026-08-12",
+        "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
-        "dias": 2
+        "dias": 3
       },
       {
         "arco_id": "ortho_mafra|posicao",
@@ -482,9 +606,9 @@
         "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": 7.0,
-        "medido_em": "2026-08-12",
+        "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
-        "dias": 2
+        "dias": 3
       }
     ],
     "total": 2,

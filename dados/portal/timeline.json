@@ -18,7 +18,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
-    "dias_aberta": 2,
+    "dias_aberta": 3,
     "prazo_dias": 14,
     "vence_em": "2026-08-24"
    },
@@ -96,7 +96,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 14,
     "vence_em": "2026-08-26"
    },
@@ -108,7 +108,10 @@
     "por_causa_de": "parada"
    },
    "faixa": "amarela",
-   "sem_resposta": null,
+   "sem_resposta": {
+    "abertas": 8,
+    "com_texto": 6
+   },
    "eventos": [
     {
      "data": "2026-08-12",
@@ -150,7 +153,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 7,
     "vence_em": "2026-08-19"
    },
@@ -162,7 +165,10 @@
     "por_causa_de": "posicao"
    },
    "faixa": "amarela",
-   "sem_resposta": null,
+   "sem_resposta": {
+    "abertas": 14,
+    "com_texto": 12
+   },
    "eventos": [
     {
      "data": "2026-08-12",
@@ -197,7 +203,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 14,
     "vence_em": "2026-08-26"
    },
@@ -209,7 +215,10 @@
     "por_causa_de": "parada"
    },
    "faixa": "amarela",
-   "sem_resposta": null,
+   "sem_resposta": {
+    "abertas": 1,
+    "com_texto": 1
+   },
    "eventos": [
     {
      "data": "2026-08-12",
@@ -244,7 +253,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 14,
     "vence_em": "2026-08-26"
    },
@@ -256,7 +265,10 @@
     "por_causa_de": "parada"
    },
    "faixa": "vermelha",
-   "sem_resposta": null,
+   "sem_resposta": {
+    "abertas": 10,
+    "com_texto": 9
+   },
    "eventos": [
     {
      "data": "2026-08-12",
@@ -312,7 +324,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
-    "dias_aberta": 2,
+    "dias_aberta": 3,
     "prazo_dias": 7,
     "vence_em": "2026-08-17"
    },
@@ -448,6 +460,142 @@
    "eventos_alem_da_janela": 0
   },
   {
+   "local_id": "orthodontic",
+   "praca_id": "uberlandia",
+   "rotulo": "MG · Uberlândia",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 3.7,
+    "avaliacoes": 127,
+    "ritmo": 1.1,
+    "meses_seguidos": 0,
+    "posicao": 15,
+    "de": 16
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-13",
+    "dias_aberta": 0,
+    "prazo_dias": 60,
+    "vence_em": "2026-10-12"
+   },
+   "acao": {
+    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
+    "prazo": "60 dias",
+    "dono": "consultor de campo",
+    "custo": "verba de abertura",
+    "por_causa_de": "nao_engatou"
+   },
+   "faixa": "verde",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: O contador de avaliações parou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Nota abaixo da mediana da praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Unidade nova que ainda não engatou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-07-06",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 3★: “Péssimo atendimento pelo whatsapp demora uma eternidade para responder, as vezes nem respo…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-06-08",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Clínica já foi boa porém agora colocou uma secretaria pessima sai da clínica até chorando …” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-05-18",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 3★: “Tratamento demora demais mais do que deveria e a cada 3 meses +- ficam cobrando pra tirar …” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "orthodontic_centro",
+   "praca_id": "uberlandia",
+   "rotulo": "MG · Uberlândia",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 4.2,
+    "avaliacoes": 61,
+    "ritmo": 0.8,
+    "meses_seguidos": 0,
+    "posicao": 16,
+    "de": 16
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-13",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-27"
+   },
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "faixa": "amarela",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: O contador de avaliações parou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Nota abaixo da mediana da praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
    "local_id": "ortho_cba_centro_norte",
    "praca_id": "cuiaba",
    "rotulo": "MT · Cuiabá",
@@ -494,7 +642,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
-    "dias_aberta": 2,
+    "dias_aberta": 3,
     "prazo_dias": 14,
     "vence_em": "2026-08-24"
    },
@@ -544,7 +692,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
-    "dias_aberta": 2,
+    "dias_aberta": 3,
     "prazo_dias": 14,
     "vence_em": "2026-08-24"
    },
@@ -594,7 +742,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 60,
     "vence_em": "2026-10-11"
    },
@@ -605,9 +753,19 @@
     "custo": "verba de abertura",
     "por_causa_de": "nao_engatou"
    },
-   "faixa": "verde",
-   "sem_resposta": null,
+   "faixa": "amarela",
+   "sem_resposta": {
+    "abertas": 2,
+    "com_texto": 2
+   },
    "eventos": [
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Silêncio publicitário com leilão cheio",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
     {
      "data": "2026-08-12",
      "tipo": "alerta",
@@ -648,7 +806,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 60,
     "vence_em": "2026-10-11"
    },
@@ -659,9 +817,19 @@
     "custo": "verba de abertura",
     "por_causa_de": "nao_engatou"
    },
-   "faixa": "verde",
-   "sem_resposta": null,
+   "faixa": "amarela",
+   "sem_resposta": {
+    "abertas": 4,
+    "com_texto": 3
+   },
    "eventos": [
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Silêncio publicitário com leilão cheio",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
     {
      "data": "2026-08-12",
      "tipo": "alerta",
@@ -716,7 +884,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 60,
     "vence_em": "2026-10-11"
    },
@@ -727,9 +895,16 @@
     "custo": "verba de abertura",
     "por_causa_de": "nao_engatou"
    },
-   "faixa": "verde",
+   "faixa": "amarela",
    "sem_resposta": null,
    "eventos": [
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Silêncio publicitário com leilão cheio",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
     {
      "data": "2026-08-12",
      "tipo": "alerta",
@@ -763,7 +938,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 14,
     "vence_em": "2026-08-26"
    },
@@ -774,9 +949,19 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "faixa": "amarela",
-   "sem_resposta": null,
+   "faixa": "vermelha",
+   "sem_resposta": {
+    "abertas": 4,
+    "com_texto": 4
+   },
    "eventos": [
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Silêncio publicitário com leilão cheio",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
     {
      "data": "2026-08-12",
      "tipo": "alerta",
@@ -817,7 +1002,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 7,
     "vence_em": "2026-08-19"
    },
@@ -828,9 +1013,16 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "posicao"
    },
-   "faixa": "verde",
+   "faixa": "amarela",
    "sem_resposta": null,
    "eventos": [
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Silêncio publicitário com leilão cheio",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
     {
      "data": "2026-08-12",
      "tipo": "alerta",
@@ -857,7 +1049,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
-    "dias_aberta": 2,
+    "dias_aberta": 3,
     "prazo_dias": 14,
     "vence_em": "2026-08-24"
    },
@@ -928,7 +1120,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
-    "dias_aberta": 2,
+    "dias_aberta": 3,
     "prazo_dias": 7,
     "vence_em": "2026-08-17"
    },
@@ -1026,6 +1218,264 @@
    "eventos_alem_da_janela": 0
   },
   {
+   "local_id": "orthodontic",
+   "praca_id": "rio_de_janeiro",
+   "rotulo": "RJ · Rio de Janeiro",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 4.9,
+    "avaliacoes": 308,
+    "ritmo": 110.5,
+    "meses_seguidos": 1,
+    "posicao": 1,
+    "de": 15
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-13",
+    "dias_aberta": 0,
+    "prazo_dias": 60,
+    "vence_em": "2026-10-12"
+   },
+   "acao": {
+    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
+    "prazo": "60 dias",
+    "dono": "consultor de campo",
+    "custo": "verba de abertura",
+    "por_causa_de": "nao_engatou"
+   },
+   "faixa": "verde",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: O contador de avaliações parou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Nota abaixo da mediana da praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Unidade nova que ainda não engatou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "orthodontic",
+   "praca_id": "caxias_do_sul",
+   "rotulo": "RS · Caxias do Sul",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 4.7,
+    "avaliacoes": 362,
+    "ritmo": 55.3,
+    "meses_seguidos": 2,
+    "posicao": 4,
+    "de": 17
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-13",
+    "dias_aberta": 0,
+    "prazo_dias": 60,
+    "vence_em": "2026-10-12"
+   },
+   "acao": {
+    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
+    "prazo": "60 dias",
+    "dono": "consultor de campo",
+    "custo": "verba de abertura",
+    "por_causa_de": "nao_engatou"
+   },
+   "faixa": "verde",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: O contador de avaliações parou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Nota abaixo da mediana da praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Unidade nova que ainda não engatou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-06",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 2★: “Em geral, o serviço é de qualidade,  mas muitas doutoras não tem um bom tratamento com o c…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "orthodontic_centro",
+   "praca_id": "caxias_do_sul",
+   "rotulo": "RS · Caxias do Sul",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 4.7,
+    "avaliacoes": 172,
+    "ritmo": 7.7,
+    "meses_seguidos": 2,
+    "posicao": 15,
+    "de": 17
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-13",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-27"
+   },
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "faixa": "amarela",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: O contador de avaliações parou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Nota abaixo da mediana da praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-06",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Muita demora  no atendimento ,mais de uma hora esperando sempre, sendo que é horário e dat…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-07-14",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 3★: “Tirando o fato da demora mesmo com horário agendado, e o fato de que o meu dentista nunca …” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "orthodontic_kayser",
+   "praca_id": "caxias_do_sul",
+   "rotulo": "RS · Caxias do Sul",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 4.8,
+    "avaliacoes": 91,
+    "ritmo": 3.2,
+    "meses_seguidos": 2,
+    "posicao": 17,
+    "de": 17
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-13",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-27"
+   },
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "faixa": "amarela",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: O contador de avaliações parou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-07",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Péssima experiência. Meu marido tinha consulta marcada para 16h30 e foi atendido depois da…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-06-12",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 3★: “Boa,mas muito demorado para remoção” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
    "local_id": "ortho_poa_cavalhada",
    "praca_id": "porto_alegre",
    "rotulo": "RS · Porto Alegre",
@@ -1041,7 +1491,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 60,
     "vence_em": "2026-10-11"
    },
@@ -1053,7 +1503,10 @@
     "por_causa_de": "nao_engatou"
    },
    "faixa": "verde",
-   "sem_resposta": null,
+   "sem_resposta": {
+    "abertas": 4,
+    "com_texto": 3
+   },
    "eventos": [
     {
      "data": "2026-08-12",
@@ -1081,7 +1534,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 60,
     "vence_em": "2026-10-11"
    },
@@ -1093,7 +1546,10 @@
     "por_causa_de": "nao_engatou"
    },
    "faixa": "verde",
-   "sem_resposta": null,
+   "sem_resposta": {
+    "abertas": 3,
+    "com_texto": 2
+   },
    "eventos": [
     {
      "data": "2026-08-12",
@@ -1141,7 +1597,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 7,
     "vence_em": "2026-08-19"
    },
@@ -1153,7 +1609,10 @@
     "por_causa_de": "posicao"
    },
    "faixa": "amarela",
-   "sem_resposta": null,
+   "sem_resposta": {
+    "abertas": 7,
+    "com_texto": 7
+   },
    "eventos": [
     {
      "data": "2026-08-12",
@@ -1209,7 +1668,10 @@
    "tarefa": null,
    "acao": null,
    "faixa": "verde",
-   "sem_resposta": null,
+   "sem_resposta": {
+    "abertas": 2,
+    "com_texto": 2
+   },
    "eventos": [
     {
      "data": "2026-07-07",
@@ -1237,7 +1699,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 14,
     "vence_em": "2026-08-26"
    },
@@ -1249,7 +1711,10 @@
     "por_causa_de": "parada"
    },
    "faixa": "amarela",
-   "sem_resposta": null,
+   "sem_resposta": {
+    "abertas": 2,
+    "com_texto": 2
+   },
    "eventos": [
     {
      "data": "2026-08-12",
@@ -1284,7 +1749,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 7,
     "vence_em": "2026-08-19"
    },
@@ -1296,13 +1761,192 @@
     "por_causa_de": "posicao"
    },
    "faixa": "verde",
-   "sem_resposta": null,
+   "sem_resposta": {
+    "abertas": 4,
+    "com_texto": 4
+   },
    "eventos": [
     {
      "data": "2026-08-12",
      "tipo": "alerta",
      "quem": "fila",
      "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_fln_centro",
+   "praca_id": "florianopolis",
+   "rotulo": "SC · Florianópolis",
+   "unidade": "OrthoDontic Florianópolis - Rua 7 de Setembro",
+   "cabecalho": {
+    "nota": 4.4,
+    "avaliacoes": 310,
+    "ritmo": 8.4,
+    "meses_seguidos": 1,
+    "posicao": 9,
+    "de": 17
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-13",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-27"
+   },
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "faixa": "vermelha",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: O contador de avaliações parou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Nota abaixo da mediana da praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-07-17",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 3★: “A qualidade do atendimento varia de acordo com o profissional que lhe atende. Tive excelen…” · respondida",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-07-17",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 2★: “meu filho é paciente e atendido pela dentista Luana, que é excelente. porém tive péssimas …” · respondida",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-07-17",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 3★: “Atendimento  maravilhoso com o dentista Alan  ótimo  profissional” · respondida",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-07-17",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★ · respondida",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-06-08",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 2★: “Atendimento via whatsapp e telefone é totalmente escasso. É uma demora sem fim para conseg…” · respondida",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-05-15",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Experiência horrível! Estou a 6 anos de aparelho ortodôntico pq a PESSOA (que não dá pra c…” · respondida",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_fln_centro_2",
+   "praca_id": "florianopolis",
+   "rotulo": "SC · Florianópolis",
+   "unidade": "OrthoDontic Florianópolis - Rua Deodoro, Centro.",
+   "cabecalho": {
+    "nota": 5,
+    "avaliacoes": 268,
+    "ritmo": 24.0,
+    "meses_seguidos": 1,
+    "posicao": 7,
+    "de": 17
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-13",
+    "dias_aberta": 0,
+    "prazo_dias": 60,
+    "vence_em": "2026-10-12"
+   },
+   "acao": {
+    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
+    "prazo": "60 dias",
+    "dono": "consultor de campo",
+    "custo": "verba de abertura",
+    "por_causa_de": "nao_engatou"
+   },
+   "faixa": "verde",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Unidade nova que ainda não engatou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "ortho_fln_ingleses_do_rio_vermel",
+   "praca_id": "florianopolis",
+   "rotulo": "SC · Florianópolis",
+   "unidade": "OrthoDontic - Florianópolis Ingleses",
+   "cabecalho": {
+    "nota": 4.8,
+    "avaliacoes": 267,
+    "ritmo": 260.6,
+    "meses_seguidos": 1,
+    "posicao": 1,
+    "de": 17
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-13",
+    "dias_aberta": 0,
+    "prazo_dias": 60,
+    "vence_em": "2026-10-12"
+   },
+   "acao": {
+    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
+    "prazo": "60 dias",
+    "dono": "consultor de campo",
+    "custo": "verba de abertura",
+    "por_causa_de": "nao_engatou"
+   },
+   "faixa": "verde",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Unidade nova que ainda não engatou",
      "fonte": "dados/serie/fila_historico.jsonl"
     }
    ],
@@ -1324,7 +1968,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 60,
     "vence_em": "2026-10-11"
    },
@@ -1336,7 +1980,10 @@
     "por_causa_de": "nao_engatou"
    },
    "faixa": "amarela",
-   "sem_resposta": null,
+   "sem_resposta": {
+    "abertas": 2,
+    "com_texto": 0
+   },
    "eventos": [
     {
      "data": "2026-08-12",
@@ -1420,7 +2067,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 14,
     "vence_em": "2026-08-26"
    },
@@ -1474,7 +2121,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 7,
     "vence_em": "2026-08-19"
    },
@@ -1486,7 +2133,10 @@
     "por_causa_de": "posicao"
    },
    "faixa": "amarela",
-   "sem_resposta": null,
+   "sem_resposta": {
+    "abertas": 4,
+    "com_texto": 1
+   },
    "eventos": [
     {
      "data": "2026-08-12",
@@ -1563,7 +2213,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
-    "dias_aberta": 2,
+    "dias_aberta": 3,
     "prazo_dias": 14,
     "vence_em": "2026-08-24"
    },
@@ -1668,7 +2318,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 7,
     "vence_em": "2026-08-19"
    },
@@ -1680,8 +2330,18 @@
     "por_causa_de": "posicao"
    },
    "faixa": "amarela",
-   "sem_resposta": null,
+   "sem_resposta": {
+    "abertas": 5,
+    "com_texto": 5
+   },
    "eventos": [
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Silêncio publicitário com leilão cheio",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
     {
      "data": "2026-08-12",
      "tipo": "alerta",
@@ -1722,7 +2382,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 14,
     "vence_em": "2026-08-26"
    },
@@ -1734,8 +2394,18 @@
     "por_causa_de": "parada"
    },
    "faixa": "vermelha",
-   "sem_resposta": null,
+   "sem_resposta": {
+    "abertas": 3,
+    "com_texto": 3
+   },
    "eventos": [
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Silêncio publicitário com leilão cheio",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
     {
      "data": "2026-08-12",
      "tipo": "alerta",
@@ -1797,7 +2467,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 60,
     "vence_em": "2026-10-11"
    },
@@ -1809,8 +2479,18 @@
     "por_causa_de": "nao_engatou"
    },
    "faixa": "amarela",
-   "sem_resposta": null,
+   "sem_resposta": {
+    "abertas": 1,
+    "com_texto": 1
+   },
    "eventos": [
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Silêncio publicitário com leilão cheio",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
     {
      "data": "2026-08-12",
      "tipo": "alerta",
@@ -1829,6 +2509,127 @@
    "eventos_alem_da_janela": 0
   },
   {
+   "local_id": "orthodontic",
+   "praca_id": "sao_paulo",
+   "rotulo": "SP · São Paulo",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 4.7,
+    "avaliacoes": 189,
+    "ritmo": null,
+    "meses_seguidos": 0,
+    "posicao": null,
+    "de": null
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-13",
+    "dias_aberta": 0,
+    "prazo_dias": 60,
+    "vence_em": "2026-10-12"
+   },
+   "acao": {
+    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
+    "prazo": "60 dias",
+    "dono": "consultor de campo",
+    "custo": "verba de abertura",
+    "por_causa_de": "nao_engatou"
+   },
+   "faixa": "verde",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: O contador de avaliações parou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Nota abaixo da mediana da praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Unidade nova que ainda não engatou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "orthodontic_republica",
+   "praca_id": "sao_paulo",
+   "rotulo": "SP · São Paulo",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 3,
+    "avaliacoes": 22,
+    "ritmo": null,
+    "meses_seguidos": 0,
+    "posicao": null,
+    "de": null
+   },
+   "tarefa": null,
+   "acao": null,
+   "faixa": null,
+   "sem_resposta": null,
+   "eventos": [],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "orthodontic_sao_miguel_paulista",
+   "praca_id": "sao_paulo",
+   "rotulo": "SP · São Paulo",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 4.9,
+    "avaliacoes": 161,
+    "ritmo": null,
+    "meses_seguidos": 0,
+    "posicao": null,
+    "de": null
+   },
+   "tarefa": null,
+   "acao": null,
+   "faixa": null,
+   "sem_resposta": null,
+   "eventos": [],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "orthodontic_tatuape",
+   "praca_id": "sao_paulo",
+   "rotulo": "SP · São Paulo",
+   "unidade": "OrthoDontic",
+   "cabecalho": {
+    "nota": 4.1,
+    "avaliacoes": 108,
+    "ritmo": null,
+    "meses_seguidos": 0,
+    "posicao": null,
+    "de": null
+   },
+   "tarefa": null,
+   "acao": null,
+   "faixa": null,
+   "sem_resposta": null,
+   "eventos": [],
+   "eventos_alem_da_janela": 0
+  },
+  {
    "local_id": "ortho_palmas",
    "praca_id": "palmas",
    "rotulo": "TO · Palmas",
@@ -1844,7 +2645,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
-    "dias_aberta": 2,
+    "dias_aberta": 3,
     "prazo_dias": 30,
     "vence_em": "2026-09-09"
    },

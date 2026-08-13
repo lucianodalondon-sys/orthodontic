@@ -1,0 +1,413 @@
+{
+  "local_id": "ortho_fln_ingleses_do_rio_vermel",
+  "praca_id": "florianopolis",
+  "apresentacao": {
+    "unidade": "OrthoDontic - Florianópolis Ingleses",
+    "cidade": "SC · Florianópolis",
+    "endereco": "Rod. Armando Calil Bulos, 6288 - Sl 02 - Ingleses do Rio Vermelho, Florianópolis - SC, 88058-001",
+    "desde": null,
+    "medicoes": null,
+    "posicao_na_cidade": null,
+    "clinicas_na_cidade": null,
+    "lojas_irmas": [
+      {
+        "local_id": "ortho_fln_centro",
+        "unidade": "OrthoDontic Centro"
+      },
+      {
+        "local_id": "ortho_fln_centro_2",
+        "unidade": "OrthoDontic Centro"
+      }
+    ],
+    "frase": null
+  },
+  "rotulo": "SC · Florianópolis",
+  "unidade": "OrthoDontic - Florianópolis Ingleses",
+  "cabecalho": {
+    "nota": 4.8,
+    "avaliacoes": 267,
+    "ritmo": 260.6,
+    "meses_seguidos": 1,
+    "posicao": 1,
+    "de": 17
+  },
+  "faixa": "verde",
+  "urgencia": 20,
+  "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-13",
+    "dias_aberta": 0,
+    "prazo_dias": 60,
+    "vence_em": "2026-10-12"
+  },
+  "acao": {
+    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
+    "prazo": "60 dias",
+    "dono": "consultor de campo",
+    "custo": "verba de abertura",
+    "por_causa_de": "nao_engatou",
+    "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": null,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "scripts/fila.py",
+      "a_favor": [
+        "a primeira avaliação é de 2026-07-22, há 0 meses, e o ritmo medido é 260.6/mês — a unidade ainda não engatou"
+      ],
+      "contra": [],
+      "o_que_aumentaria": "o resultado medido na coleta seguinte (dados/serie/acoes.jsonl)",
+      "procedencia": "sem amostra declarada"
+    }
+  },
+  "gatilhos": [
+    {
+      "peso": 20,
+      "titulo": "Unidade nova que ainda não engatou",
+      "chave": "nao_engatou",
+      "fato": "a primeira avaliação é de 2026-07-22, há 0 meses, e o ritmo medido é 260.6/mês — a unidade ainda não engatou",
+      "fonte": "dados/serie/reviews.jsonl"
+    }
+  ],
+  "quem_avanca": null,
+  "o_que_mudou": null,
+  "sem_resposta": {
+    "abertas": null,
+    "com_texto": null,
+    "itens": [],
+    "itens_total": 0
+  },
+  "voz_do_paciente": null,
+  "rival": {
+    "comparados": [],
+    "vantagens_deles": [],
+    "fora": [],
+    "fora_total": 0,
+    "sem_comparacao_porque": null
+  },
+  "presenca_na_busca": null,
+  "jornada": {
+    "local_id": "ortho_fln_ingleses_do_rio_vermel",
+    "unidade": "OrthoDontic Ingleses do Rio Vermelho",
+    "rotulo": "SC · Florianópolis",
+    "com_texto": 65,
+    "sem_estagio": 35,
+    "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
+    "estagios": [
+      {
+        "estagio": "descoberta",
+        "rotulo": "Descoberta",
+        "o_que_e": "como me acharam",
+        "quem_resolve": "marketing e ficha do Google",
+        "medido": true,
+        "avaliacoes": 10,
+        "dor": 0,
+        "elogio": 10,
+        "pct_dor": 0,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": "10 avaliações falam deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "contato",
+        "rotulo": "Contato",
+        "o_que_e": "telefone e WhatsApp",
+        "quem_resolve": "recepção",
+        "medido": true,
+        "avaliacoes": 1,
+        "dor": 0,
+        "elogio": 1,
+        "pct_dor": 0,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "agendamento",
+        "rotulo": "Agendamento",
+        "o_que_e": "marcar e remarcar",
+        "quem_resolve": "recepção",
+        "medido": true,
+        "avaliacoes": 3,
+        "dor": 0,
+        "elogio": 3,
+        "pct_dor": 0,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "3 avaliações falam deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "recepcao",
+        "rotulo": "Recepção",
+        "o_que_e": "chegar e esperar",
+        "quem_resolve": "recepção",
+        "medido": true,
+        "avaliacoes": 10,
+        "dor": 0,
+        "elogio": 10,
+        "pct_dor": 0,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": "10 avaliações falam deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "avaliacao",
+        "rotulo": "Avaliação",
+        "o_que_e": "a primeira consulta",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 1,
+        "dor": 0,
+        "elogio": 1,
+        "pct_dor": 0,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "contratacao",
+        "rotulo": "Contratação",
+        "o_que_e": "preço, contrato e entrada",
+        "quem_resolve": "franqueado",
+        "medido": true,
+        "avaliacoes": 1,
+        "dor": 0,
+        "elogio": 1,
+        "pct_dor": 0,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "clinico",
+        "rotulo": "Atendimento clínico",
+        "o_que_e": "a cadeira",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 9,
+        "dor": 0,
+        "elogio": 9,
+        "pct_dor": 0,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": "9 avaliações falam deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "manutencao",
+        "rotulo": "Manutenção",
+        "o_que_e": "as voltas de cada mês",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 1,
+        "dor": 0,
+        "elogio": 1,
+        "pct_dor": 0,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "cobranca",
+        "rotulo": "Cobrança",
+        "o_que_e": "mensalidade e multa",
+        "quem_resolve": "franqueado",
+        "medido": false,
+        "avaliacoes": 0,
+        "dor": 0,
+        "elogio": 0,
+        "pct_dor": null,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": null,
+        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+      },
+      {
+        "estagio": "suporte",
+        "rotulo": "Suporte",
+        "o_que_e": "quando algo dá errado",
+        "quem_resolve": "franqueado",
+        "medido": true,
+        "avaliacoes": 1,
+        "dor": 0,
+        "elogio": 1,
+        "pct_dor": 0,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "contencao",
+        "rotulo": "Fim e contenção",
+        "o_que_e": "alta e depois dela",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 1,
+        "dor": 0,
+        "elogio": 1,
+        "pct_dor": 0,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      }
+    ],
+    "manchete": "Nenhum momento da jornada concentra dor com amostra suficiente para virar manchete.",
+    "quem_resolve": null,
+    "e_clinico": null,
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 65,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/serie/reviews.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "mais avaliações com texto nesta loja",
+      "procedencia": "medido em 65 avaliações"
+    }
+  },
+  "meu_territorio": {
+    "local_id": "ortho_fln_ingleses_do_rio_vermel",
+    "unidade": "OrthoDontic Ingleses do Rio Vermelho",
+    "medido": true,
+    "location": {
+      "lat": -27.4378352,
+      "lng": -48.398711999999996
+    },
+    "bairro": "Ingleses do Rio Vermelho",
+    "clinica_mais_proxima": {
+      "nome": "Sorrifácil Ingleses | Implantes Dentários, Prótese Protocolo e Reabilitação Oral",
+      "km": 0.03,
+      "avaliacoes": 582,
+      "nota": 4.8,
+      "bairro": "Ingleses Norte"
+    },
+    "aparelho_mais_proximo": {
+      "nome": "Sorrifácil Ingleses | Implantes Dentários, Prótese Protocolo e Reabilitação Oral",
+      "km": 0.03,
+      "avaliacoes": 582,
+      "nota": 4.8,
+      "bairro": "Ingleses Norte"
+    },
+    "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic Florianópolis - Rua Deodoro, Centro.",
+      "km": 23.22,
+      "avaliacoes": 268,
+      "nota": 5,
+      "bairro": "Centro"
+    },
+    "raios": {
+      "1km": {
+        "clinicas": 9,
+        "de_aparelho": 2,
+        "da_rede": 0
+      },
+      "2km": {
+        "clinicas": 9,
+        "de_aparelho": 2,
+        "da_rede": 0
+      },
+      "5km": {
+        "clinicas": 9,
+        "de_aparelho": 2,
+        "da_rede": 0
+      }
+    },
+    "frase_fato": "a clínica mais próxima está a 0.03 km",
+    "proximidade_entre_unidades": null,
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 143,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+        "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 143 clínicas com coordenada, 1 medição"
+    }
+  },
+  "movimentos": {
+    "eventos": [],
+    "e_da_cidade": true,
+    "resumo": {
+      "praca_id": "florianopolis",
+      "rotulo": "SC · Florianópolis",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
+  "execucao": null,
+  "meu_bairro": {
+    "bairro": "Ingleses do Rio Vermelho",
+    "clinicas": 3,
+    "vizinhos_fortes": [
+      {
+        "nome": "DentePró Ingleses Florianópolis",
+        "nota": 4.5,
+        "avaliacoes": 346
+      },
+      {
+        "nome": "Clinic Odontologia Avançada - Ingleses",
+        "nota": 5,
+        "avaliacoes": 49
+      }
+    ],
+    "frase": "3 clínicas varridas, e a unidade da rede está aqui",
+    "e_da_cidade": false
+  },
+  "acoes": {
+    "arcos": [
+      {
+        "arco_id": "ortho_fln_ingleses_do_rio_vermel|nao_engatou",
+        "local_id": "ortho_fln_ingleses_do_rio_vermel",
+        "praca_id": "florianopolis",
+        "gatilho": "nao_engatou",
+        "problema": "a primeira avaliação é de 2026-07-22, há 0 meses, e o ritmo medido é 260.6/mês — a unidade ainda não engatou",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": null,
+        "antes": null,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "sem ação padrão para este gatilho",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      }
+    ],
+    "total": 1,
+    "aviso": "O livro nasceu hoje. Nenhum arco completou 21 dias, então ainda não há veredito para ninguém — a primeira resposta vem na coleta seguinte."
+  },
+  "oferta_da_cidade": null,
+  "plano": null,
+  "anuncios_da_cidade": null,
+  "eventos": [
+    {
+      "data": "2026-08-13",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Unidade nova que ainda não engatou",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    }
+  ]
+}

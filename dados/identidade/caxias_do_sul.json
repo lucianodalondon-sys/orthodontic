@@ -1,306 +1,390 @@
 {
-  "praca_id": "caxias_do_sul",
-  "nome": "Caxias do Sul",
-  "cidades": [
-    "Caxias do Sul/RS"
-  ],
-  "uf": [
-    "RS"
-  ],
-  "rotulo": "RS · Caxias do Sul",
-  "cidades_rotulo": [
-    "RS · Caxias do Sul"
-  ],
-  "criada_em": "2026-08-13",
-  "por_que_esta_praca": "cidade onde a rede já tem unidade e que ainda não tinha estudo. As metrópoles entram agora porque o mapa de bairros passou a existir: sem ele, cinco unidades em São Paulo virariam um número só, e o número não diria nada a nenhum franqueado",
-  "ibge": [
-    {
-      "municipio": "Caxias do Sul",
-      "uf": "RS",
-      "ibge_id": 4305108,
-      "populacao_estimada": {
-        "ano": "2025",
-        "valor": "479599",
-        "unidade": "Pessoas"
-      },
-      "alvo_9_15": 37913,
-      "alvo_30_45": 115758,
-      "fonte": "ibge agregados 6579/5938/9514",
-      "de": "dados/serie/ibge_municipios.jsonl"
-    }
-  ],
-  "locais": [
-    {
-      "local_id": "orthodontic",
-      "papel": "proprio",
-      "tipo": "franquia",
-      "place_id": "ChIJezCNlyyjHpURq2qJCcTNOCA",
-      "nome": "OrthoDontic",
-      "avaliacoes_google": 362,
-      "nota_google": 4.7,
-      "endereco": "R. Pinheiro Machado, 1922 - Centro, Caxias do Sul - RS, 95020-172, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -29.167090699999996,
-        "lng": -51.1807211
-      }
-    },
-    {
-      "local_id": "orthodontic_centro",
-      "papel": "proprio",
-      "tipo": "franquia",
-      "place_id": "ChIJraYZlaCjHpURr0xKBm147yM",
-      "nome": "OrthoDontic",
-      "avaliacoes_google": 172,
-      "nota_google": 4.7,
-      "endereco": "Av. Júlio de Castilhos, 2112 - Sl 21 - Centro, Caxias do Sul - RS, 95010-002, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -29.1680952,
-        "lng": -51.183084099999995
-      }
-    },
-    {
-      "local_id": "orthodontic_kayser",
-      "papel": "proprio",
-      "tipo": "franquia",
-      "place_id": "ChIJdQTyZXqjHpURc29PanqVqXI",
-      "nome": "OrthoDontic",
-      "avaliacoes_google": 91,
-      "nota_google": 4.8,
-      "endereco": "Av. Bom Pastor, 738 - Lj 04 - Kayser, Caxias do Sul - RS, 95096-150, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -29.188492699999998,
-        "lng": -51.199863900000004
-      }
-    },
-    {
-      "local_id": "revitalle_implantes_dentis",
-      "papel": "concorrente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJORWcaSyjHpURiPiziohL3G8",
-      "nome": "Revitalle Implantes | Dentista Caxias do Sul | Clínica Odontológica | Invisalign",
-      "avaliacoes_google": 1887,
-      "nota_google": 5,
-      "endereco": "R. Pinheiro Machado, 1745 - Centro, Caxias do Sul - RS, 95020-171, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -29.166703799999997,
-        "lng": -51.178862099999996
-      }
-    },
-    {
-      "local_id": "ortoclinica",
-      "papel": "concorrente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJr_JtUF6jHpURovMtpKgQj9o",
-      "nome": "OrtoClínica",
-      "avaliacoes_google": 1423,
-      "nota_google": 4.9,
-      "endereco": "Odontoclínica 24h - Rua Pinheiro Machado, 2569 sala 21, 22 - OrtoClínica - R. Pinheiro Machado, 2569 - sala 23 - Centro, Caxias do Sul - RS, 95020-172, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -29.166666499999998,
-        "lng": -51.187399199999994
-      }
-    },
-    {
-      "local_id": "oral_unic",
-      "papel": "concorrente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJ72CNtVW9HpURtJOUeXoz3lw",
-      "nome": "Oral Unic",
-      "avaliacoes_google": 937,
-      "nota_google": 4.9,
-      "endereco": "R. Os Dezoito do Forte, 858 - Exposição, Caxias do Sul - RS, 95020-472, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -29.169858599999998,
-        "lng": -51.1699444
-      }
-    },
-    {
-      "local_id": "massocatto_odontologia_imp",
-      "papel": "concorrente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJ6UIsFDu9HpURkfEHDoQeZcw",
-      "nome": "Massocatto Odontologia - Implantes Dentários",
-      "avaliacoes_google": 909,
-      "nota_google": 5,
-      "endereco": "Av. Rio Branco, 4007 - Ana Rech, Caxias do Sul - RS, 95060-145, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -29.117017099999998,
-        "lng": -51.1028891
-      }
-    },
-    {
-      "local_id": "caxiasmed_clinica_medica_e",
-      "papel": "concorrente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJExwWsi2jHpURDefBIHXPUfI",
-      "nome": "CaxiasMed Clínica Médica e Odontológica",
-      "avaliacoes_google": 794,
-      "nota_google": 4.5,
-      "endereco": "R. Garibaldi, 917 - Centro, Caxias do Sul - RS, 95080-190, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -29.169495999999995,
-        "lng": -51.18288
-      }
-    },
-    {
-      "local_id": "brunetto_slovinscki_odonto",
-      "papel": "concorrente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJqRMLlUOjHpURU8zgUla56eI",
-      "nome": "Brunetto Slovinscki Odontologia",
-      "avaliacoes_google": 683,
-      "nota_google": 5,
-      "endereco": "Av. Bom Pastor, 743 - Térreo - Kayser, Caxias do Sul - RS, 95096-150, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -29.1883983,
-        "lng": -51.200098
-      }
-    },
-    {
-      "local_id": "instituto_bordin_odontolog",
-      "papel": "concorrente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJl-_kJc0fHJURg8oEkD2w_ZY",
-      "nome": "Instituto Bordin - Odontologia Estética, Próteses e Implantes - CLÍNICA ODONTOLÓGICA",
-      "avaliacoes_google": 564,
-      "nota_google": 4.9,
-      "endereco": "R. Vinte de Setembro, 2448 - Nossa Sra. de Lourdes, Caxias do Sul - RS, 95020-432, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -29.165192200000003,
-        "lng": -51.184990799999994
-      }
-    },
-    {
-      "local_id": "benne_odonto_clinica_odont",
-      "papel": "concorrente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJZ40PbzO9HpURqXsu6JYpHH8",
-      "nome": "Benne Odonto Clinica Odontológica Ltda",
-      "avaliacoes_google": 543,
-      "nota_google": 5,
-      "endereco": "R. Vinte de Setembro, 1566 - Sl.3 - Nossa Sra. de Lourdes, Caxias do Sul - RS, 95020-450, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -29.164904,
-        "lng": -51.175848699999996
-      }
-    },
-    {
-      "local_id": "criardente_odontologia_int",
-      "papel": "concorrente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJpXfquuCiHpURMGlCXSZmV8c",
-      "nome": "Criardente Odontologia Integrada",
-      "avaliacoes_google": 530,
-      "nota_google": 5,
-      "endereco": "R. Carlos Bianchini, 825 - Mal. Floriano, Caxias do Sul - RS, 95013-000, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -29.1596573,
-        "lng": -51.1980107
-      }
-    },
-    {
-      "local_id": "alis_odontologia_avancada",
-      "papel": "concorrente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJc3ecciujHpURHZuCNgwV3-8",
-      "nome": "ÁLIS - Odontologia Avançada",
-      "avaliacoes_google": 465,
-      "nota_google": 5,
-      "endereco": "R. Visc. de Pelotas, 471 - Centro, Caxias do Sul - RS, 95020-180, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -29.1654357,
-        "lng": -51.181668900000005
-      }
-    },
-    {
-      "local_id": "top_estetica_bucal_clinica",
-      "papel": "concorrente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJNXsUSCajHpURihsxdpsl0Aw",
-      "nome": "Top Estética Bucal - Clínica Odontológica | Dentista em Caxias do Sul | Aparelhos Ortodônticos | Implantes Dentários",
-      "avaliacoes_google": 411,
-      "nota_google": 4.8,
-      "endereco": "Av. Júlio de Castilhos, 2883 - São Pelegrino, Caxias do Sul - RS, 95020-035, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -29.1678806,
-        "lng": -51.1912841
-      }
-    },
-    {
-      "local_id": "odontopediatra_dra_andress",
-      "papel": "concorrente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJs3z6lm29HpUR35bQ4HFXbXE",
-      "nome": "Odontopediatra Dra. Andressa Pimentel",
-      "avaliacoes_google": 307,
-      "nota_google": 5,
-      "endereco": "R. Conselheiro Dantas, 2133 - N Sra Lourdes, Caxias do Sul - RS, 95054-000, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -29.1670761,
-        "lng": -51.1622361
-      }
-    },
-    {
-      "local_id": "gaucha_odonto_clinica_odon",
-      "papel": "concorrente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJNWiqC0e9HpURjlQcFgspStY",
-      "nome": "Gaúcha Odonto - Clínica odontológica - Implantes e Próteses",
-      "avaliacoes_google": 301,
-      "nota_google": 5,
-      "endereco": "R. Marquês do Herval, 1120 - Centro, Caxias do Sul - RS, 95020-260, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -29.166653,
-        "lng": -51.178582
-      }
-    },
-    {
-      "local_id": "dentista_implante_dentario",
-      "papel": "concorrente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJEdBkf9K8HpUR6DmQR5iv9-s",
-      "nome": "Dentista | Implante Dentário | OdontoPlus Centro Odontológico | Cristo Redentor | Caxias do Sul - RS",
-      "avaliacoes_google": 293,
-      "nota_google": 4.9,
-      "endereco": "Av. Independência, 2393 - Cristo Redentor, Caxias do Sul - RS, 95082-380, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -29.175724100000004,
-        "lng": -51.178752499999995
-      }
-    }
-  ]
+ "praca_id": "caxias_do_sul",
+ "nome": "Caxias do Sul",
+ "cidades": [
+  "Caxias do Sul/RS"
+ ],
+ "uf": [
+  "RS"
+ ],
+ "rotulo": "RS · Caxias do Sul",
+ "cidades_rotulo": [
+  "RS · Caxias do Sul"
+ ],
+ "criada_em": "2026-08-13",
+ "por_que_esta_praca": "cidade onde a rede já tem unidade e que ainda não tinha estudo. As metrópoles entram agora porque o mapa de bairros passou a existir: sem ele, cinco unidades em São Paulo virariam um número só, e o número não diria nada a nenhum franqueado",
+ "ibge": [
+  {
+   "municipio": "Caxias do Sul",
+   "uf": "RS",
+   "ibge_id": 4305108,
+   "populacao_estimada": {
+    "ano": "2025",
+    "valor": "479599",
+    "unidade": "Pessoas"
+   },
+   "alvo_9_15": 37913,
+   "alvo_30_45": 115758,
+   "fonte": "ibge agregados 6579/5938/9514",
+   "de": "dados/serie/ibge_municipios.jsonl"
+  }
+ ],
+ "locais": [
+  {
+   "local_id": "orthodontic",
+   "papel": "proprio",
+   "tipo": "franquia",
+   "place_id": "ChIJezCNlyyjHpURq2qJCcTNOCA",
+   "nome": "OrthoDontic",
+   "avaliacoes_google": 362,
+   "nota_google": 4.7,
+   "endereco": "R. Pinheiro Machado, 1922 - Centro, Caxias do Sul - RS, 95020-172, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -29.167090699999996,
+    "lng": -51.1807211
+   }
+  },
+  {
+   "local_id": "orthodontic_centro",
+   "papel": "proprio",
+   "tipo": "franquia",
+   "place_id": "ChIJraYZlaCjHpURr0xKBm147yM",
+   "nome": "OrthoDontic",
+   "avaliacoes_google": 172,
+   "nota_google": 4.7,
+   "endereco": "Av. Júlio de Castilhos, 2112 - Sl 21 - Centro, Caxias do Sul - RS, 95010-002, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -29.1680952,
+    "lng": -51.183084099999995
+   }
+  },
+  {
+   "local_id": "orthodontic_kayser",
+   "papel": "proprio",
+   "tipo": "franquia",
+   "place_id": "ChIJdQTyZXqjHpURc29PanqVqXI",
+   "nome": "OrthoDontic",
+   "avaliacoes_google": 91,
+   "nota_google": 4.8,
+   "endereco": "Av. Bom Pastor, 738 - Lj 04 - Kayser, Caxias do Sul - RS, 95096-150, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -29.188492699999998,
+    "lng": -51.199863900000004
+   }
+  },
+  {
+   "local_id": "revitalle_implantes_dentis",
+   "papel": "concorrente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJORWcaSyjHpURiPiziohL3G8",
+   "nome": "Revitalle Implantes | Dentista Caxias do Sul | Clínica Odontológica | Invisalign",
+   "avaliacoes_google": 1887,
+   "nota_google": 5,
+   "endereco": "R. Pinheiro Machado, 1745 - Centro, Caxias do Sul - RS, 95020-171, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -29.166703799999997,
+    "lng": -51.178862099999996
+   },
+   "produto": {
+    "disputa_aparelho": "sim",
+    "porque": "o nome declara aparelho/ortodontia",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 61
+   }
+  },
+  {
+   "local_id": "ortoclinica",
+   "papel": "concorrente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJr_JtUF6jHpURovMtpKgQj9o",
+   "nome": "OrtoClínica",
+   "avaliacoes_google": 1423,
+   "nota_google": 4.9,
+   "endereco": "Odontoclínica 24h - Rua Pinheiro Machado, 2569 sala 21, 22 - OrtoClínica - R. Pinheiro Machado, 2569 - sala 23 - Centro, Caxias do Sul - RS, 95020-172, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -29.166666499999998,
+    "lng": -51.187399199999994
+   },
+   "produto": {
+    "disputa_aparelho": "sim",
+    "porque": "o nome declara aparelho/ortodontia",
+    "menciona_aparelho": 6,
+    "avaliacoes_com_texto": 87
+   }
+  },
+  {
+   "local_id": "oral_unic",
+   "papel": "concorrente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJ72CNtVW9HpURtJOUeXoz3lw",
+   "nome": "Oral Unic",
+   "avaliacoes_google": 937,
+   "nota_google": 4.9,
+   "endereco": "R. Os Dezoito do Forte, 858 - Exposição, Caxias do Sul - RS, 95020-472, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -29.169858599999998,
+    "lng": -51.1699444
+   },
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 2 de 87 avaliações citam aparelho",
+    "menciona_aparelho": 2,
+    "avaliacoes_com_texto": 87
+   }
+  },
+  {
+   "local_id": "massocatto_odontologia_imp",
+   "papel": "concorrente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJ6UIsFDu9HpURkfEHDoQeZcw",
+   "nome": "Massocatto Odontologia - Implantes Dentários",
+   "avaliacoes_google": 909,
+   "nota_google": 5,
+   "endereco": "Av. Rio Branco, 4007 - Ana Rech, Caxias do Sul - RS, 95060-145, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -29.117017099999998,
+    "lng": -51.1028891
+   },
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de implante: só 0 de 50 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 50
+   }
+  },
+  {
+   "local_id": "caxiasmed_clinica_medica_e",
+   "papel": "concorrente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJExwWsi2jHpURDefBIHXPUfI",
+   "nome": "CaxiasMed Clínica Médica e Odontológica",
+   "avaliacoes_google": 794,
+   "nota_google": 4.5,
+   "endereco": "R. Garibaldi, 917 - Centro, Caxias do Sul - RS, 95080-190, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -29.169495999999995,
+    "lng": -51.18288
+   },
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 0 de 70 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 70
+   }
+  },
+  {
+   "local_id": "brunetto_slovinscki_odonto",
+   "papel": "concorrente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJqRMLlUOjHpURU8zgUla56eI",
+   "nome": "Brunetto Slovinscki Odontologia",
+   "avaliacoes_google": 683,
+   "nota_google": 5,
+   "endereco": "Av. Bom Pastor, 743 - Térreo - Kayser, Caxias do Sul - RS, 95096-150, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -29.1883983,
+    "lng": -51.200098
+   },
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 1 de 55 avaliações citam aparelho",
+    "menciona_aparelho": 1,
+    "avaliacoes_com_texto": 55
+   }
+  },
+  {
+   "local_id": "instituto_bordin_odontolog",
+   "papel": "concorrente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJl-_kJc0fHJURg8oEkD2w_ZY",
+   "nome": "Instituto Bordin - Odontologia Estética, Próteses e Implantes - CLÍNICA ODONTOLÓGICA",
+   "avaliacoes_google": 564,
+   "nota_google": 4.9,
+   "endereco": "R. Vinte de Setembro, 2448 - Nossa Sra. de Lourdes, Caxias do Sul - RS, 95020-432, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -29.165192200000003,
+    "lng": -51.184990799999994
+   },
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de implante: só 0 de 86 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 86
+   }
+  },
+  {
+   "local_id": "benne_odonto_clinica_odont",
+   "papel": "concorrente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJZ40PbzO9HpURqXsu6JYpHH8",
+   "nome": "Benne Odonto Clinica Odontológica Ltda",
+   "avaliacoes_google": 543,
+   "nota_google": 5,
+   "endereco": "R. Vinte de Setembro, 1566 - Sl.3 - Nossa Sra. de Lourdes, Caxias do Sul - RS, 95020-450, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -29.164904,
+    "lng": -51.175848699999996
+   },
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de implante: só 0 de 116 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 116
+   }
+  },
+  {
+   "local_id": "criardente_odontologia_int",
+   "papel": "concorrente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJpXfquuCiHpURMGlCXSZmV8c",
+   "nome": "Criardente Odontologia Integrada",
+   "avaliacoes_google": 530,
+   "nota_google": 5,
+   "endereco": "R. Carlos Bianchini, 825 - Mal. Floriano, Caxias do Sul - RS, 95013-000, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -29.1596573,
+    "lng": -51.1980107
+   },
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de implante: só 0 de 84 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 84
+   }
+  },
+  {
+   "local_id": "alis_odontologia_avancada",
+   "papel": "concorrente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJc3ecciujHpURHZuCNgwV3-8",
+   "nome": "ÁLIS - Odontologia Avançada",
+   "avaliacoes_google": 465,
+   "nota_google": 5,
+   "endereco": "R. Visc. de Pelotas, 471 - Centro, Caxias do Sul - RS, 95020-180, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -29.1654357,
+    "lng": -51.181668900000005
+   },
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de implante: só 0 de 102 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 102
+   }
+  },
+  {
+   "local_id": "top_estetica_bucal_clinica",
+   "papel": "concorrente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJNXsUSCajHpURihsxdpsl0Aw",
+   "nome": "Top Estética Bucal - Clínica Odontológica | Dentista em Caxias do Sul | Aparelhos Ortodônticos | Implantes Dentários",
+   "avaliacoes_google": 411,
+   "nota_google": 4.8,
+   "endereco": "Av. Júlio de Castilhos, 2883 - São Pelegrino, Caxias do Sul - RS, 95020-035, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -29.1678806,
+    "lng": -51.1912841
+   },
+   "produto": {
+    "disputa_aparelho": "sim",
+    "porque": "o nome declara aparelho/ortodontia",
+    "menciona_aparelho": 1,
+    "avaliacoes_com_texto": 67
+   }
+  },
+  {
+   "local_id": "odontopediatra_dra_andress",
+   "papel": "concorrente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJs3z6lm29HpUR35bQ4HFXbXE",
+   "nome": "Odontopediatra Dra. Andressa Pimentel",
+   "avaliacoes_google": 307,
+   "nota_google": 5,
+   "endereco": "R. Conselheiro Dantas, 2133 - N Sra Lourdes, Caxias do Sul - RS, 95054-000, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -29.1670761,
+    "lng": -51.1622361
+   },
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 1 de 92 avaliações citam aparelho",
+    "menciona_aparelho": 1,
+    "avaliacoes_com_texto": 92
+   }
+  },
+  {
+   "local_id": "gaucha_odonto_clinica_odon",
+   "papel": "concorrente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJNWiqC0e9HpURjlQcFgspStY",
+   "nome": "Gaúcha Odonto - Clínica odontológica - Implantes e Próteses",
+   "avaliacoes_google": 301,
+   "nota_google": 5,
+   "endereco": "R. Marquês do Herval, 1120 - Centro, Caxias do Sul - RS, 95020-260, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -29.166653,
+    "lng": -51.178582
+   },
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de implante: só 2 de 91 avaliações citam aparelho",
+    "menciona_aparelho": 2,
+    "avaliacoes_com_texto": 91
+   }
+  },
+  {
+   "local_id": "dentista_implante_dentario",
+   "papel": "concorrente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJEdBkf9K8HpUR6DmQR5iv9-s",
+   "nome": "Dentista | Implante Dentário | OdontoPlus Centro Odontológico | Cristo Redentor | Caxias do Sul - RS",
+   "avaliacoes_google": 293,
+   "nota_google": 4.9,
+   "endereco": "Av. Independência, 2393 - Cristo Redentor, Caxias do Sul - RS, 95082-380, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -29.175724100000004,
+    "lng": -51.178752499999995
+   },
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de implante: só 0 de 64 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 64
+   }
+  }
+ ]
 }

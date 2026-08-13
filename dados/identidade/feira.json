@@ -1,516 +1,516 @@
 {
-  "praca_id": "feira",
-  "nome": "Feira de Santana",
-  "cidades": [
-    "Feira de Santana/BA"
-  ],
-  "uf": [
-    "BA"
-  ],
-  "populacao": 616000,
-  "populacao_nota": "maior que 8 capitais; a Princesa do Sertão",
-  "renda_nota": "classe C/D dominante, renda em torno de 1,9 salário mínimo",
-  "locais": [
-    {
-      "local_id": "ortho_fsa",
-      "papel": "proprio",
-      "nome": "OrthoDontic Feira de Santana",
-      "tipo": "franquia",
-      "regiao": "calçadão do Centro",
-      "seguidores_ig": 3000,
-      "place_id": "ChIJCw5v0b43FAcR5yBtYSNFMqs",
-      "place_id_origem": "google places api 2026-08-08 (endereço)",
-      "avaliacoes_google": 170,
-      "nota_google": 4.7,
-      "location": {
-        "lat": -12.2572327,
-        "lng": -38.9662538
-      }
+ "praca_id": "feira",
+ "nome": "Feira de Santana",
+ "cidades": [
+  "Feira de Santana/BA"
+ ],
+ "uf": [
+  "BA"
+ ],
+ "populacao": 616000,
+ "populacao_nota": "maior que 8 capitais; a Princesa do Sertão",
+ "renda_nota": "classe C/D dominante, renda em torno de 1,9 salário mínimo",
+ "locais": [
+  {
+   "local_id": "ortho_fsa",
+   "papel": "proprio",
+   "nome": "OrthoDontic Feira de Santana",
+   "tipo": "franquia",
+   "regiao": "calçadão do Centro",
+   "seguidores_ig": 3000,
+   "place_id": "ChIJCw5v0b43FAcR5yBtYSNFMqs",
+   "place_id_origem": "google places api 2026-08-08 (endereço)",
+   "avaliacoes_google": 170,
+   "nota_google": 4.7,
+   "location": {
+    "lat": -12.2572327,
+    "lng": -38.9662538
+   }
+  },
+  {
+   "local_id": "gigante_fsa",
+   "papel": "concorrente",
+   "nome": "Moisés Suzart | Odontologia Especializada",
+   "tipo_concorrente": "doutor_pf",
+   "abertura": "~2012",
+   "nota_papel": "o líder da cidade; começou dentro de uma grande franquia",
+   "place_id": "ChIJp6Juy5M3FAcRzsL32WysFm4",
+   "chave_pendente": true,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de implante: só 1 de 95 avaliações citam aparelho",
+    "menciona_aparelho": 1,
+    "avaliacoes_com_texto": 95
+   },
+   "location": {
+    "lat": -12.2559843,
+    "lng": -38.9629282
+   }
+  },
+  {
+   "local_id": "oc_fsa",
+   "papel": "concorrente",
+   "nome": "OdontoCompany Feira",
+   "tipo_concorrente": "rede_popular",
+   "regiao": "a 400 m",
+   "place_id": "ChIJrQ_ElIg3FAcRDazpGJ799QE",
+   "place_id_origem": "google places api 2026-08-08 (nome)",
+   "avaliacoes_google": 59,
+   "nota_google": 4.3,
+   "produto": {
+    "disputa_aparelho": "sem_evidencia",
+    "porque": "amostra pequena (29 avaliações com texto) — não dá para afirmar o produto",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 29
+   },
+   "location": {
+    "lat": -12.255036299999999,
+    "lng": -38.9624653
+   }
+  },
+  {
+   "local_id": "uefs_fsa",
+   "papel": "concorrente",
+   "nome": "Clínica Odontológica da UEFS",
+   "tipo_concorrente": "escola",
+   "place_id": "ChIJScR8_T44FAcRlBRFN0GdjW0",
+   "avaliacoes_google": 1,
+   "nota_google": 5.0,
+   "place_id_origem": "google places api 2026-08-08 (nome literal) — CONFIANÇA BAIXA",
+   "chave_incerta": true,
+   "nota": "Duas fichas disputam: esta (1 avaliação) e 'Clínica Odontológica Universitária' (9 avaliações). Ambas minúsculas, então a escolha não muda placar nenhum — mas fica declarada como incerta em vez de silenciosamente resolvida.",
+   "produto": {
+    "disputa_aparelho": "sem_evidencia",
+    "porque": "amostra pequena (5 avaliações com texto) — não dá para afirmar o produto",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 5
+   }
+  },
+  {
+   "local_id": "odonto_marco_clinica_odont",
+   "papel": "concorrente",
+   "nome": "Odonto Marco - Clinica Odontológica, Dentista e Consultório Odontologico",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJTb5by0A3FAcRpXszDefe9mo",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places",
+   "avaliacoes_google": 1268,
+   "nota_google": 5,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 3 de 301 avaliações citam aparelho",
+    "menciona_aparelho": 3,
+    "avaliacoes_com_texto": 301
+   },
+   "location": {
+    "lat": -12.2550786,
+    "lng": -38.959917399999995
+   }
+  },
+  {
+   "local_id": "clinica_central_do_sorriso",
+   "papel": "concorrente",
+   "nome": "Clínica Central do Sorriso - Dentista Particular Feira de Santana",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJ8e8aMeE3FAcRFvTL0k1SBeA",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places",
+   "avaliacoes_google": 960,
+   "nota_google": 5,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de implante: só 0 de 315 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 315
+   },
+   "location": {
+    "lat": -12.2504872,
+    "lng": -38.9576689
+   }
+  },
+  {
+   "local_id": "vamos_sorrir_feira_de_sant",
+   "papel": "concorrente",
+   "nome": "Vamos Sorrir - Feira de Santana - Rio Branco",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJo1sZYJI3FAcR-1w82CGhG-E",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places",
+   "avaliacoes_google": 826,
+   "nota_google": 4.8,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 2 de 328 avaliações citam aparelho",
+    "menciona_aparelho": 2,
+    "avaliacoes_com_texto": 328
+   },
+   "location": {
+    "lat": -12.254481199999999,
+    "lng": -38.964159699999996
+   }
+  },
+  {
+   "local_id": "instituto_ortocentro_denti",
+   "papel": "concorrente",
+   "nome": "Instituto Ortocentro | Dentista | Implante Dentário | Santa Mônica | Feira de Santana - BA",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJZ6HuWIQ3FAcRBLJ4IB1rXwA",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places",
+   "avaliacoes_google": 1000,
+   "nota_google": 5,
+   "produto": {
+    "disputa_aparelho": "sim",
+    "porque": "o nome declara aparelho/ortodontia",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 384
+   },
+   "location": {
+    "lat": -12.256517599999999,
+    "lng": -38.9360232
+   }
+  },
+  {
+   "local_id": "you_odontologia",
+   "papel": "concorrente",
+   "nome": "You Odontologia",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJF2B8a5A3FAcRhZBZLMgRlyg",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 663,
+   "nota_google": 4.4,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 6 de 326 avaliações citam aparelho",
+    "menciona_aparelho": 6,
+    "avaliacoes_com_texto": 326
+   },
+   "location": {
+    "lat": -12.2551404,
+    "lng": -38.959149499999995
+   }
+  },
+  {
+   "local_id": "revittale_odontologia_orto",
+   "papel": "concorrente",
+   "nome": "Revittale Odontologia | Ortodontista | Implantes | Feira de Santana Ba",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJb0sqb8Q3FAcRMEfY_f4jfkE",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 413,
+   "nota_google": 5,
+   "produto": {
+    "disputa_aparelho": "sim",
+    "porque": "o nome declara aparelho/ortodontia",
+    "menciona_aparelho": 2,
+    "avaliacoes_com_texto": 89
+   },
+   "location": {
+    "lat": -12.2612405,
+    "lng": -38.9444879
+   }
+  },
+  {
+   "local_id": "vamos_sorrir_odontologia",
+   "papel": "concorrente",
+   "nome": "Vamos Sorrir Odontologia",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJUei8doY3FAcRMTu7mZyY3-Y",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 562,
+   "nota_google": 4.8,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 2 de 333 avaliações citam aparelho",
+    "menciona_aparelho": 2,
+    "avaliacoes_com_texto": 333
+   },
+   "location": {
+    "lat": -12.2549739,
+    "lng": -38.9630363
+   }
+  },
+  {
+   "local_id": "acesse_saude_dentista_e_me",
+   "papel": "concorrente",
+   "nome": "ACESSE SAUDE | Dentista e Médicos em feira de santana | Clinica Odontologica e Médica",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJp4fM2JE3FAcROp_a7l1VeS4",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 498,
+   "nota_google": 4.8,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 0 de 56 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 56
+   },
+   "location": {
+    "lat": -12.254099499999999,
+    "lng": -38.959949900000005
+   }
+  },
+  {
+   "local_id": "instituto_integrale_24_hor",
+   "papel": "concorrente",
+   "nome": "Instituto Integrale 24 Horas - Dentista 24 Horas",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJgzBIcJU3FAcRJ63qhiaz36g",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 375,
+   "nota_google": 4.9,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de implante: só 0 de 87 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 87
+   },
+   "location": {
+    "lat": -12.255815,
+    "lng": -38.9566527
+   }
+  },
+  {
+   "local_id": "dents_clinica_odontologica",
+   "papel": "concorrente",
+   "nome": "Dents clínica odontológica",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJq4liSZI3FAcR73md62I05zM",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 376,
+   "nota_google": 4.6,
+   "produto": {
+    "disputa_aparelho": "sem_evidencia",
+    "porque": "zona cinzenta: 4 de 78 avaliações citam aparelho (5%) — faz aparelho, mas não é o negócio principal",
+    "menciona_aparelho": 4,
+    "avaliacoes_com_texto": 78
+   },
+   "location": {
+    "lat": -12.255633,
+    "lng": -38.9630979
+   }
+  },
+  {
+   "local_id": "clinica_meu_dente_sampaio",
+   "papel": "concorrente",
+   "nome": "Clinica Meu Dente - Sampaio",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJW4Y7h5M3FAcRcs55cUI15cA",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 372,
+   "nota_google": 4,
+   "produto": {
+    "disputa_aparelho": "sem_evidencia",
+    "porque": "zona cinzenta: 4 de 77 avaliações citam aparelho (5%) — faz aparelho, mas não é o negócio principal",
+    "menciona_aparelho": 4,
+    "avaliacoes_com_texto": 77
+   },
+   "location": {
+    "lat": -12.258056499999999,
+    "lng": -38.963844099999996
+   }
+  },
+  {
+   "local_id": "vamos_sorrir_odontologia_b",
+   "papel": "concorrente",
+   "nome": "Vamos Sorrir Odontologia",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJP6vtTZw5FAcRBh-pxbXaKVE",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 364,
+   "nota_google": 4.8,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 0 de 94 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 94
+   },
+   "nota_separacao": "duas lojas da mesma rede dividiam um local_id; as avaliações de cada uma foram reatribuídas pelo place_id da chave",
+   "location": {
+    "lat": -12.2242816,
+    "lng": -38.963809999999995
+   }
+  },
+  {
+   "local_id": "cop_centro_odontologico_do",
+   "papel": "concorrente",
+   "nome": "COP - Centro Odontológico do Povo",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJ7REWHI03FAcR4E_zUOD06VI",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 302,
+   "nota_google": 4.7,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 0 de 174 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 174
+   },
+   "location": {
+    "lat": -12.251045399999999,
+    "lng": -38.9651513
+   }
+  },
+  {
+   "local_id": "diana_aranha_odontologia_e",
+   "papel": "concorrente",
+   "nome": "Diana Aranha | Odontologia Especializada em Feira de Santana - BA",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJxbukBTg3FAcR6-flvVNjYQA",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 306,
+   "nota_google": 4.8,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 0 de 73 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 73
+   },
+   "location": {
+    "lat": -12.256946899999999,
+    "lng": -38.9411208
+   }
+  },
+  {
+   "local_id": "oral_feira_odontologia_e_e",
+   "papel": "concorrente",
+   "nome": "Oral Feira | Odontologia e Estética avançada em Feira de Santana",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJGbIq2v83FAcRv08og2DbzCk",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 260,
+   "nota_google": 4.8,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de implante: só 1 de 94 avaliações citam aparelho",
+    "menciona_aparelho": 1,
+    "avaliacoes_com_texto": 94
+   },
+   "location": {
+    "lat": -12.253214499999999,
+    "lng": -38.956579399999995
+   }
+  },
+  {
+   "local_id": "cosb_centro_odontologico_s",
+   "papel": "concorrente",
+   "nome": "COSB - Centro Odontológico Sorriso Brasileiro",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJX2jeOO03FAcRVgXvMO9rQWw",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 251,
+   "nota_google": 4.7,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de implante: só 0 de 90 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 90
+   },
+   "location": {
+    "lat": -12.2540137,
+    "lng": -38.9677108
+   }
+  },
+  {
+   "local_id": "centro_odontologico_cop_to",
+   "papel": "concorrente",
+   "nome": "Centro Odontológico COP Tomba",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJfWVbsrI3FAcRBv4UDP9d-Jw",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 176,
+   "nota_google": 4.9,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 0 de 77 avaliações citam aparelho",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 77
+   },
+   "location": {
+    "lat": -12.282444199999999,
+    "lng": -38.9571417
+   }
+  },
+  {
+   "local_id": "clinica_meu_dente_senhor_d",
+   "papel": "concorrente",
+   "nome": "Clinica Meu Dente - Senhor dos Passos",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJS6ys9_v6awcRbM_We5ryA98",
+   "descoberto_em": "2026-08-08",
+   "descoberto_por": "varredura google places (2º escalão)",
+   "avaliacoes_google": 198,
+   "nota_google": 4.3,
+   "produto": {
+    "disputa_aparelho": "nao",
+    "porque": "a voz do cliente é de odontologia geral: só 1 de 84 avaliações citam aparelho",
+    "menciona_aparelho": 1,
+    "avaliacoes_com_texto": 84
+   },
+   "location": {
+    "lat": -12.2561102,
+    "lng": -38.9651354
+   }
+  }
+ ],
+ "rotulo": "BA · Feira de Santana",
+ "cidades_rotulo": [
+  "BA · Feira de Santana"
+ ],
+ "ibge": [
+  {
+   "municipio": "Feira de Santana",
+   "uf": "BA",
+   "uf_nome": "Bahia",
+   "ibge_id": 2910800,
+   "mesorregiao": "Centro Norte Baiano",
+   "populacao_estimada": {
+    "ano": "2025",
+    "valor": "660806",
+    "unidade": "Pessoas"
+   },
+   "populacao_censo_2022": {
+    "ano": "2022",
+    "valor": "616272",
+    "unidade": "Pessoas"
+   },
+   "massa_salarial_mil_reais": {
+    "ano": "2023",
+    "valor": "21846455",
+    "unidade": "Mil Reais"
+   },
+   "idades": {
+    "por_faixa": {
+     "0a4": 38381,
+     "5a9": 43104,
+     "10a14": 43647,
+     "15a19": 43729,
+     "20a24": 49790,
+     "25a29": 48882,
+     "30a34": 48435,
+     "35a39": 54187,
+     "40a44": 53520,
+     "45a49": 43272,
+     "50a54": 37829,
+     "55a59": 32051,
+     "60a64": 25502
     },
-    {
-      "local_id": "gigante_fsa",
-      "papel": "concorrente",
-      "nome": "Moisés Suzart | Odontologia Especializada",
-      "tipo_concorrente": "doutor_pf",
-      "abertura": "~2012",
-      "nota_papel": "o líder da cidade; começou dentro de uma grande franquia",
-      "place_id": "ChIJp6Juy5M3FAcRzsL32WysFm4",
-      "chave_pendente": true,
-      "produto": {
-        "disputa_aparelho": "nao",
-        "porque": "a voz do cliente é de implante: só 1 de 95 avaliações citam aparelho",
-        "menciona_aparelho": 1,
-        "avaliacoes_com_texto": 95
-      },
-      "location": {
-        "lat": -12.2559843,
-        "lng": -38.9629282
-      }
-    },
-    {
-      "local_id": "oc_fsa",
-      "papel": "concorrente",
-      "nome": "OdontoCompany Feira",
-      "tipo_concorrente": "rede_popular",
-      "regiao": "a 400 m",
-      "place_id": "ChIJrQ_ElIg3FAcRDazpGJ799QE",
-      "place_id_origem": "google places api 2026-08-08 (nome)",
-      "avaliacoes_google": 59,
-      "nota_google": 4.3,
-      "produto": {
-        "disputa_aparelho": "sem_evidencia",
-        "porque": "amostra pequena (29 avaliações com texto) — não dá para afirmar o produto",
-        "menciona_aparelho": 0,
-        "avaliacoes_com_texto": 29
-      },
-      "location": {
-        "lat": -12.255036299999999,
-        "lng": -38.9624653
-      }
-    },
-    {
-      "local_id": "uefs_fsa",
-      "papel": "concorrente",
-      "nome": "Clínica Odontológica da UEFS",
-      "tipo_concorrente": "escola",
-      "place_id": "ChIJScR8_T44FAcRlBRFN0GdjW0",
-      "avaliacoes_google": 1,
-      "nota_google": 5.0,
-      "place_id_origem": "google places api 2026-08-08 (nome literal) — CONFIANÇA BAIXA",
-      "chave_incerta": true,
-      "nota": "Duas fichas disputam: esta (1 avaliação) e 'Clínica Odontológica Universitária' (9 avaliações). Ambas minúsculas, então a escolha não muda placar nenhum — mas fica declarada como incerta em vez de silenciosamente resolvida.",
-      "produto": {
-        "disputa_aparelho": "sem_evidencia",
-        "porque": "amostra pequena (5 avaliações com texto) — não dá para afirmar o produto",
-        "menciona_aparelho": 0,
-        "avaliacoes_com_texto": 5
-      }
-    },
-    {
-      "local_id": "odonto_marco_clinica_odont",
-      "papel": "concorrente",
-      "nome": "Odonto Marco - Clinica Odontológica, Dentista e Consultório Odontologico",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJTb5by0A3FAcRpXszDefe9mo",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places",
-      "avaliacoes_google": 1268,
-      "nota_google": 5,
-      "produto": {
-        "disputa_aparelho": "nao",
-        "porque": "a voz do cliente é de odontologia geral: só 3 de 301 avaliações citam aparelho",
-        "menciona_aparelho": 3,
-        "avaliacoes_com_texto": 301
-      },
-      "location": {
-        "lat": -12.2550786,
-        "lng": -38.959917399999995
-      }
-    },
-    {
-      "local_id": "clinica_central_do_sorriso",
-      "papel": "concorrente",
-      "nome": "Clínica Central do Sorriso - Dentista Particular Feira de Santana",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJ8e8aMeE3FAcRFvTL0k1SBeA",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places",
-      "avaliacoes_google": 960,
-      "nota_google": 5,
-      "produto": {
-        "disputa_aparelho": "nao",
-        "porque": "a voz do cliente é de implante: só 0 de 315 avaliações citam aparelho",
-        "menciona_aparelho": 0,
-        "avaliacoes_com_texto": 315
-      },
-      "location": {
-        "lat": -12.2504872,
-        "lng": -38.9576689
-      }
-    },
-    {
-      "local_id": "vamos_sorrir_feira_de_sant",
-      "papel": "concorrente",
-      "nome": "Vamos Sorrir - Feira de Santana - Rio Branco",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJo1sZYJI3FAcR-1w82CGhG-E",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places",
-      "avaliacoes_google": 826,
-      "nota_google": 4.8,
-      "produto": {
-        "disputa_aparelho": "nao",
-        "porque": "a voz do cliente é de odontologia geral: só 2 de 328 avaliações citam aparelho",
-        "menciona_aparelho": 2,
-        "avaliacoes_com_texto": 328
-      },
-      "location": {
-        "lat": -12.254481199999999,
-        "lng": -38.964159699999996
-      }
-    },
-    {
-      "local_id": "instituto_ortocentro_denti",
-      "papel": "concorrente",
-      "nome": "Instituto Ortocentro | Dentista | Implante Dentário | Santa Mônica | Feira de Santana - BA",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJZ6HuWIQ3FAcRBLJ4IB1rXwA",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places",
-      "avaliacoes_google": 1000,
-      "nota_google": 5,
-      "produto": {
-        "disputa_aparelho": "sim",
-        "porque": "o nome declara aparelho/ortodontia",
-        "menciona_aparelho": 0,
-        "avaliacoes_com_texto": 384
-      },
-      "location": {
-        "lat": -12.256517599999999,
-        "lng": -38.9360232
-      }
-    },
-    {
-      "local_id": "you_odontologia",
-      "papel": "concorrente",
-      "nome": "You Odontologia",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJF2B8a5A3FAcRhZBZLMgRlyg",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 663,
-      "nota_google": 4.4,
-      "produto": {
-        "disputa_aparelho": "nao",
-        "porque": "a voz do cliente é de odontologia geral: só 6 de 326 avaliações citam aparelho",
-        "menciona_aparelho": 6,
-        "avaliacoes_com_texto": 326
-      },
-      "location": {
-        "lat": -12.2551404,
-        "lng": -38.959149499999995
-      }
-    },
-    {
-      "local_id": "revittale_odontologia_orto",
-      "papel": "concorrente",
-      "nome": "Revittale Odontologia | Ortodontista | Implantes | Feira de Santana Ba",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJb0sqb8Q3FAcRMEfY_f4jfkE",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 413,
-      "nota_google": 5,
-      "produto": {
-        "disputa_aparelho": "sim",
-        "porque": "o nome declara aparelho/ortodontia",
-        "menciona_aparelho": 2,
-        "avaliacoes_com_texto": 89
-      },
-      "location": {
-        "lat": -12.2612405,
-        "lng": -38.9444879
-      }
-    },
-    {
-      "local_id": "vamos_sorrir_odontologia",
-      "papel": "concorrente",
-      "nome": "Vamos Sorrir Odontologia",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJUei8doY3FAcRMTu7mZyY3-Y",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 562,
-      "nota_google": 4.8,
-      "produto": {
-        "disputa_aparelho": "nao",
-        "porque": "a voz do cliente é de odontologia geral: só 2 de 333 avaliações citam aparelho",
-        "menciona_aparelho": 2,
-        "avaliacoes_com_texto": 333
-      },
-      "location": {
-        "lat": -12.2549739,
-        "lng": -38.9630363
-      }
-    },
-    {
-      "local_id": "acesse_saude_dentista_e_me",
-      "papel": "concorrente",
-      "nome": "ACESSE SAUDE | Dentista e Médicos em feira de santana | Clinica Odontologica e Médica",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJp4fM2JE3FAcROp_a7l1VeS4",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 498,
-      "nota_google": 4.8,
-      "produto": {
-        "disputa_aparelho": "nao",
-        "porque": "a voz do cliente é de odontologia geral: só 0 de 56 avaliações citam aparelho",
-        "menciona_aparelho": 0,
-        "avaliacoes_com_texto": 56
-      },
-      "location": {
-        "lat": -12.254099499999999,
-        "lng": -38.959949900000005
-      }
-    },
-    {
-      "local_id": "instituto_integrale_24_hor",
-      "papel": "concorrente",
-      "nome": "Instituto Integrale 24 Horas - Dentista 24 Horas",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJgzBIcJU3FAcRJ63qhiaz36g",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 375,
-      "nota_google": 4.9,
-      "produto": {
-        "disputa_aparelho": "nao",
-        "porque": "a voz do cliente é de implante: só 0 de 87 avaliações citam aparelho",
-        "menciona_aparelho": 0,
-        "avaliacoes_com_texto": 87
-      },
-      "location": {
-        "lat": -12.255815,
-        "lng": -38.9566527
-      }
-    },
-    {
-      "local_id": "dents_clinica_odontologica",
-      "papel": "concorrente",
-      "nome": "Dents clínica odontológica",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJq4liSZI3FAcR73md62I05zM",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 376,
-      "nota_google": 4.6,
-      "produto": {
-        "disputa_aparelho": "sem_evidencia",
-        "porque": "zona cinzenta: 4 de 78 avaliações citam aparelho (5%) — faz aparelho, mas não é o negócio principal",
-        "menciona_aparelho": 4,
-        "avaliacoes_com_texto": 78
-      },
-      "location": {
-        "lat": -12.255633,
-        "lng": -38.9630979
-      }
-    },
-    {
-      "local_id": "clinica_meu_dente_sampaio",
-      "papel": "concorrente",
-      "nome": "Clinica Meu Dente - Sampaio",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJW4Y7h5M3FAcRcs55cUI15cA",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 372,
-      "nota_google": 4,
-      "produto": {
-        "disputa_aparelho": "sem_evidencia",
-        "porque": "zona cinzenta: 4 de 77 avaliações citam aparelho (5%) — faz aparelho, mas não é o negócio principal",
-        "menciona_aparelho": 4,
-        "avaliacoes_com_texto": 77
-      },
-      "location": {
-        "lat": -12.258056499999999,
-        "lng": -38.963844099999996
-      }
-    },
-    {
-      "local_id": "vamos_sorrir_odontologia_b",
-      "papel": "concorrente",
-      "nome": "Vamos Sorrir Odontologia",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJP6vtTZw5FAcRBh-pxbXaKVE",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 364,
-      "nota_google": 4.8,
-      "produto": {
-        "disputa_aparelho": "nao",
-        "porque": "a voz do cliente é de odontologia geral: só 0 de 94 avaliações citam aparelho",
-        "menciona_aparelho": 0,
-        "avaliacoes_com_texto": 94
-      },
-      "nota_separacao": "duas lojas da mesma rede dividiam um local_id; as avaliações de cada uma foram reatribuídas pelo place_id da chave",
-      "location": {
-        "lat": -12.2242816,
-        "lng": -38.963809999999995
-      }
-    },
-    {
-      "local_id": "cop_centro_odontologico_do",
-      "papel": "concorrente",
-      "nome": "COP - Centro Odontológico do Povo",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJ7REWHI03FAcR4E_zUOD06VI",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 302,
-      "nota_google": 4.7,
-      "produto": {
-        "disputa_aparelho": "nao",
-        "porque": "a voz do cliente é de odontologia geral: só 0 de 174 avaliações citam aparelho",
-        "menciona_aparelho": 0,
-        "avaliacoes_com_texto": 174
-      },
-      "location": {
-        "lat": -12.251045399999999,
-        "lng": -38.9651513
-      }
-    },
-    {
-      "local_id": "diana_aranha_odontologia_e",
-      "papel": "concorrente",
-      "nome": "Diana Aranha | Odontologia Especializada em Feira de Santana - BA",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJxbukBTg3FAcR6-flvVNjYQA",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 306,
-      "nota_google": 4.8,
-      "produto": {
-        "disputa_aparelho": "nao",
-        "porque": "a voz do cliente é de odontologia geral: só 0 de 73 avaliações citam aparelho",
-        "menciona_aparelho": 0,
-        "avaliacoes_com_texto": 73
-      },
-      "location": {
-        "lat": -12.256946899999999,
-        "lng": -38.9411208
-      }
-    },
-    {
-      "local_id": "oral_feira_odontologia_e_e",
-      "papel": "concorrente",
-      "nome": "Oral Feira | Odontologia e Estética avançada em Feira de Santana",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJGbIq2v83FAcRv08og2DbzCk",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 260,
-      "nota_google": 4.8,
-      "produto": {
-        "disputa_aparelho": "nao",
-        "porque": "a voz do cliente é de implante: só 1 de 94 avaliações citam aparelho",
-        "menciona_aparelho": 1,
-        "avaliacoes_com_texto": 94
-      },
-      "location": {
-        "lat": -12.253214499999999,
-        "lng": -38.956579399999995
-      }
-    },
-    {
-      "local_id": "cosb_centro_odontologico_s",
-      "papel": "concorrente",
-      "nome": "COSB - Centro Odontológico Sorriso Brasileiro",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJX2jeOO03FAcRVgXvMO9rQWw",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 251,
-      "nota_google": 4.7,
-      "produto": {
-        "disputa_aparelho": "nao",
-        "porque": "a voz do cliente é de implante: só 0 de 90 avaliações citam aparelho",
-        "menciona_aparelho": 0,
-        "avaliacoes_com_texto": 90
-      },
-      "location": {
-        "lat": -12.2540137,
-        "lng": -38.9677108
-      }
-    },
-    {
-      "local_id": "centro_odontologico_cop_to",
-      "papel": "concorrente",
-      "nome": "Centro Odontológico COP Tomba",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJfWVbsrI3FAcRBv4UDP9d-Jw",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 176,
-      "nota_google": 4.9,
-      "produto": {
-        "disputa_aparelho": "nao",
-        "porque": "a voz do cliente é de odontologia geral: só 0 de 77 avaliações citam aparelho",
-        "menciona_aparelho": 0,
-        "avaliacoes_com_texto": 77
-      },
-      "location": {
-        "lat": -12.282444199999999,
-        "lng": -38.9571417
-      }
-    },
-    {
-      "local_id": "clinica_meu_dente_senhor_d",
-      "papel": "concorrente",
-      "nome": "Clinica Meu Dente - Senhor dos Passos",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJS6ys9_v6awcRbM_We5ryA98",
-      "descoberto_em": "2026-08-08",
-      "descoberto_por": "varredura google places (2º escalão)",
-      "avaliacoes_google": 198,
-      "nota_google": 4.3,
-      "produto": {
-        "disputa_aparelho": "nao",
-        "porque": "a voz do cliente é de odontologia geral: só 1 de 84 avaliações citam aparelho",
-        "menciona_aparelho": 1,
-        "avaliacoes_com_texto": 84
-      },
-      "location": {
-        "lat": -12.2561102,
-        "lng": -38.9651354
-      }
-    }
-  ],
-  "rotulo": "BA · Feira de Santana",
-  "cidades_rotulo": [
-    "BA · Feira de Santana"
-  ],
-  "ibge": [
-    {
-      "municipio": "Feira de Santana",
-      "uf": "BA",
-      "uf_nome": "Bahia",
-      "ibge_id": 2910800,
-      "mesorregiao": "Centro Norte Baiano",
-      "populacao_estimada": {
-        "ano": "2025",
-        "valor": "660806",
-        "unidade": "Pessoas"
-      },
-      "populacao_censo_2022": {
-        "ano": "2022",
-        "valor": "616272",
-        "unidade": "Pessoas"
-      },
-      "massa_salarial_mil_reais": {
-        "ano": "2023",
-        "valor": "21846455",
-        "unidade": "Mil Reais"
-      },
-      "idades": {
-        "por_faixa": {
-          "0a4": 38381,
-          "5a9": 43104,
-          "10a14": 43647,
-          "15a19": 43729,
-          "20a24": 49790,
-          "25a29": 48882,
-          "30a34": 48435,
-          "35a39": 54187,
-          "40a44": 53520,
-          "45a49": 43272,
-          "50a54": 37829,
-          "55a59": 32051,
-          "60a64": 25502
-        },
-        "alvo_9_15": 61014,
-        "alvo_30_45": 156142
-      }
-    }
-  ]
+    "alvo_9_15": 61014,
+    "alvo_30_45": 156142
+   }
+  }
+ ]
 }

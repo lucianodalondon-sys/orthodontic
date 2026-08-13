@@ -1,6 +1,6 @@
 {
   "praca_id": "joinville",
-  "corte": "2026-08-12",
+  "corte": "2026-08-13",
   "rotulo": "SC · Joinville",
   "uf": [
     "SC"
@@ -282,6 +282,220 @@
   "bairros": {
     "praca_id": "joinville",
     "rotulo": "SC · Joinville",
+    "territorio": [
+      {
+        "local_id": "ortho_joi_centro",
+        "unidade": "OrthoDontic Centro",
+        "medido": true,
+        "location": {
+          "lat": -26.3028017,
+          "lng": -48.8461606
+        },
+        "bairro": "Centro",
+        "clinica_mais_proxima": {
+          "nome": "Oral Max",
+          "km": 0.05,
+          "avaliacoes": 38,
+          "nota": 4.9,
+          "bairro": "Centro"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Odonto e Você",
+          "km": 0.17,
+          "avaliacoes": 695,
+          "nota": 4.9,
+          "bairro": "Centro"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic Sorria Sempre",
+          "km": 1.26,
+          "avaliacoes": 377,
+          "nota": 4.3,
+          "bairro": "América"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 56,
+            "de_aparelho": 8,
+            "da_rede": 0
+          },
+          "2km": {
+            "clinicas": 92,
+            "de_aparelho": 11,
+            "da_rede": 1
+          },
+          "5km": {
+            "clinicas": 138,
+            "de_aparelho": 13,
+            "da_rede": 1
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.05 km",
+        "proximidade_entre_unidades": {
+          "km": 1.26,
+          "unidade": "OrthoDontic Sorria Sempre",
+          "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+          "natureza": "inferencia"
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 147,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 147 clínicas com coordenada, 1 medição"
+        }
+      },
+      {
+        "local_id": "ortho_joi_america",
+        "unidade": "OrthoDontic América",
+        "medido": true,
+        "location": {
+          "lat": -26.2921165,
+          "lng": -48.8502161
+        },
+        "bairro": "América",
+        "clinica_mais_proxima": {
+          "nome": "HA Odontologia",
+          "km": 0.29,
+          "avaliacoes": 72,
+          "nota": 4.7,
+          "bairro": "América"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "DoctorÁgape",
+          "km": 0.4,
+          "avaliacoes": 686,
+          "nota": 4.7,
+          "bairro": "Centro"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 1.26,
+          "avaliacoes": 513,
+          "nota": 4.6,
+          "bairro": "Centro"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 35,
+            "de_aparelho": 4,
+            "da_rede": 0
+          },
+          "2km": {
+            "clinicas": 83,
+            "de_aparelho": 9,
+            "da_rede": 1
+          },
+          "5km": {
+            "clinicas": 136,
+            "de_aparelho": 13,
+            "da_rede": 1
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.29 km",
+        "proximidade_entre_unidades": {
+          "km": 1.26,
+          "unidade": "OrthoDontic",
+          "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+          "natureza": "inferencia"
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 147,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 147 clínicas com coordenada, 1 medição"
+        }
+      },
+      {
+        "local_id": "ortho_joi_aventureiro",
+        "unidade": "OrthoDontic Aventureiro",
+        "medido": true,
+        "location": {
+          "lat": -26.252177999999997,
+          "lng": -48.8193872
+        },
+        "bairro": "Aventureiro",
+        "clinica_mais_proxima": {
+          "nome": "ODONTOCOT",
+          "km": 0.22,
+          "avaliacoes": 493,
+          "nota": 4.8,
+          "bairro": "Aventureiro"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "ODONTOCOT",
+          "km": 0.22,
+          "avaliacoes": 493,
+          "nota": 4.8,
+          "bairro": "Aventureiro"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic Sorria Sempre",
+          "km": 5.4,
+          "avaliacoes": 377,
+          "nota": 4.3,
+          "bairro": "América"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 2,
+            "de_aparelho": 1,
+            "da_rede": 0
+          },
+          "2km": {
+            "clinicas": 2,
+            "de_aparelho": 1,
+            "da_rede": 0
+          },
+          "5km": {
+            "clinicas": 31,
+            "de_aparelho": 2,
+            "da_rede": 0
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.22 km",
+        "proximidade_entre_unidades": null,
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 147,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 147 clínicas com coordenada, 1 medição"
+        }
+      }
+    ],
+    "clinicas_com_coordenada": 148,
+    "clinicas_sem_coordenada": 0,
+    "raios_declarados_km": [
+      1,
+      2,
+      5
+    ],
     "bairros_medidos": 24,
     "clinicas_medidas": 148,
     "sem_bairro_no_endereco": 0,
@@ -964,12 +1178,22 @@
       "procedencia": "medido em 148 clínicas varridas, 1 medição"
     }
   },
+  "movimentos_do_mercado": {
+    "eventos": [],
+    "resumo": {
+      "praca_id": "joinville",
+      "rotulo": "SC · Joinville",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
   "imprensa": {
     "medido": true,
     "total": 53,
     "mostrando": 12,
-    "recentes_30d": 12,
-    "manchete": "12 matérias sobre a cidade nos últimos 30 dias, de 53 já lidas",
+    "recentes_30d": 25,
+    "manchete": "25 matérias sobre a cidade nos últimos 30 dias, de 53 já lidas",
     "porque_vazio": null,
     "materias": [
       {
@@ -977,84 +1201,84 @@
         "veiculo": "ndmais.com.br",
         "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5QN1pEMjZ1YmhIZkt3SEZwTDAzMnlWbmh4X2EtZmp1N2hkSUhzLTd6Y2taVUpoM204b244Wm9rVkVQMXJHTzF6d21WXzNyVEM3RW95UnNTbTBwSzJKdHE4cnV5S1BLMDFydFMwMHQ4bDNHNjVUeDJIRWZR?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Terreno em Joinville vira peça-chave em denúncia envolvendo porto bilionário no litoral de SC - NSC Total",
         "veiculo": "NSC Total",
         "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPaHpFWndWeWpSVWltWjRTYzhXYVJHWklVNkEzTEFJcXl3NVpERElTRXZwVnNsMWl2cXljRTFCUEp3SGJhVW53UlktcVRLSUNDY21zSXlOWWZ5N1RJQ3hueE5MT2Ita2hqaFBVQ1hnQndQVTNzQXlndmlkd0VfMVN5djRHY0F2ZUdReS01MjlvWWNQTFM3T280WlI2dVBmMl9oYjZsbEVma2JWUnBhOHVtcmdXSTJqQ2tELVZpX2p2VjFISjVVUmo5TQ?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Joinville e Jaraguá vão se enfrentar pela quarta vez em 2026 - ge.globo.com",
         "veiculo": "ge.globo.com",
         "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPMUh0Y3JIVW5JQ0xGaV9GRkRTRC1aRjB4bUJ5Q3d5OWZKZzdERlFyOWhtRFkzd0R6Qkg2STU4elRoaU41V3FLdk5nZXV5QW5EMkJlNXhzT3dkTkkyVFlxNlBuaXBENlp0N2tWbkJERVNaZS00Q1lQcnA2bHNqcDlzWm9JMFJmUVFCZ2dCb2N2Q2VpeUE3S2lHTUxFZjhzRWtfd1MyZU9ESGJVRkhHYU9VUGFYVHZ2T0HSAcYBQVVfeXFMUEotcUpkaXNGQVFRSy1pOEtaT05vU2RhLWNsSFpIM1NXOGRNd0EzR2RhcnhRSWppTFE1V01rR25BdXpsdTgyMm5KRkxvSl9nMGZuSVpBUDVtVWxJZXF6Z1RGd3MzOURIeWliU1BxeGQyZVhqNXl6V1JkbE1pUXpEYTJBYl9HU2pCMGtCM1poU2RUWXZ4d3NqMEotM2VleVVJbHpTVlFNOU55bkdZaDExS1lqeTR2cmswOHJ0OUwxclV6QTVPNUhR?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Gigante global de auditoria e consultoria expande operação para Joinville - Economia SC",
         "veiculo": "Economia SC",
         "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQRHRYa0VaaXN2WXVoRWhkc3R6VDVuTnhNcDlxOGJ2OUVTNGFQdDBubkNPLWd2MkNuRzFNZHBOTXI4Si01N3BhaHh2MTQtVFJoNGFBUm1wYVVWVG9pRjBsRnVic0xKWWhLaG90VG9jTERmYklvSWR0VENzT3luUG8wUEF5aXpwNVdIM1NKdHNEZ1pKbTdVV0g4QXpaSldwUXAwWXZpZXlweWVQLTNP?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Gigante da indústria de SC prepara novo destino para moinho histórico de Joinville - ndmais.com.br",
         "veiculo": "ndmais.com.br",
         "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOYVVaV0FVYnhzd2xxaHpTLXNxSWdicktMbGVTV1B3YXhKV3hhWEx2MnptRHRELTUzT3hXZDNzd2Z3WjBULWdvOHRpTGxfa2FzUF80RGxWSzhVb1NUT3FZOWUyN1JwcHI1YXZxWHRXaGliWXc2d0hRRFFvazNVRWtLdmQxd05rWUs0QnBVV09ZUTdWSFlzemIyV2Z3?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Megaobra para duplicar avenida ‘problema’ no trânsito de Joinville chega a 60% de execução - ndmais.com.br",
         "veiculo": "ndmais.com.br",
         "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdmZmOXd4Uk1Nc2tobktrVGZDcnNRbXJmNDh4N1RqMThJTHBpX1BEdE1FQVg3YU5mQkx1MzNiVUpBRFNJNFJxSm9EbnhHdXIwX0xnc3lLNUVlY2pUeHZnTXNwc2JveUEyUXpKdGs2ZnpEa3M4cjZoWWU5SzJvaWVOU0RnUV9IbU5tbnBOakx4ZnpXVWI2bXB3?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Joinville goleia Traipu e avança para a final da Copa do Brasil de Futsal - ge.globo.com",
         "veiculo": "ge.globo.com",
         "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOE5MRHdkSEtvY0M4VVBsWWpycndzNjRnT2FKVEQ5REJrQXppbzJGWnRlQUUyU3ZTVFdiTWtUZkhPakNmMU4tX0o0V2QyaHdDY2NwSXU1ZS1QTEZTLVJqMDd0U3pzNEd1R0JPWXl5WWhDSHFsZjY3MklnSzlYUEl4NzdZbjRqUV9YUnFCM25JS29rVXhTWmwyaGZ6VWtYWDBtWVZMSC1JNkdka1NWZ3VEWGZLMlNnSmJ0WlRjTmI1bFpBYmtYS2hYSdIB1wFBVV95cUxNdVRtcl8tYzNHckFpVXNQTUlVZmFZeE1Genh3T0dGemtMUzhBcEc2azFZekxqQjJidTZQZTUtMk82bGhyTl9UdnV3MGFwd2Yyem5COEZzbHZjX0JFS3ZDR2hSbGxyMzlBQWY0TURxRjhRcnhxU1pOQXVpcFhkYURNQkMtd3ppMjYwYS1fZTc3TE02SVdreGJVQmEwcFBJRFFsTFZfQ2xncEVaY1I0MGN6N2hkZm9XSnVNU1pNeklhenBmZnpRVExWVF9nV3hFTjhiLXktcTdnSQ?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Joinville se destaca na WorldSkills SC e nova biblioteca no Instituto Juarez Machado - Ponto Norte",
         "veiculo": "Ponto Norte",
         "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPdl9KRFNOMFJGZ1NROWdnOFZ6eENDZGlNd2Z5MThBZmhScTJjaDlldFRVbmZxV2RNdDZGNnJJVWR2YTJDa1dBZmlWQjRRSklBa2MxaHFaLTNzS2M3c21VaTVqcWExajNVbmVOeGJxZ1M1UktRTlJWZTJ1aWRPQ2FhancxNUVRNEJvTHBVYjEwU3ZHdzFUV29peHFydTQ2Q1VaMmU2YTVHbnZrUGdHeldCODU4R2l2Wmh3SDF0SDBOWTRzTEpsa2hzZEt3?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Expansão urbana de Joinville vai avançar na área que já foi a maior indústria de Joinville - Santa Catarina em Pauta",
         "veiculo": "Santa Catarina em Pauta",
         "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOeHZOUUZ5MllLUmZmWHBCX1dsNTBpWTloNzlWZHhiZnZQQkRXbEc2d0NId0F2V0dQaTdaMl9GamN3Zl9mVWxGSmxqY0RHdGhLMU1TQi05WXIzNERERzBpOHQta2N2dHE0cUt2VE1JUkRPWm5FY3FjUlZMbDlkdzhNbHRPMjlsN2VNeHRLMm1qQ0RkUEctdWNtWm9FVTJlbk1ZTnFlTXdHQXFoWnFITS1EdWRoX2wyWHBNU1Y5SGxZWllHN2xjMi01Z1NwanJHcF80SWpkbTctYzdlZw?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Trânsito parado: BR-101 é bloqueada em vias nos dois sentidos após colisão em SC - ndmais.com.br",
         "veiculo": "ndmais.com.br",
         "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB1VVNrckRlLXlEcU5UWDlUaE9XdHpvcUt5NDJveldHYUhSaFlOSW0xMTZxUkx0Q3REZ0k2QkJwZHlSbWZ4Yk4zU3U1emFVS1BZT1MwOXhGUF9rQVM4d3dsc0NyOEhrNm4tbGRJUWx5VXdDOGtfcnJqcDlqN2Y2czg?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Porsche e GreenV abrem novo posto de recarga rápida em Joinville e fortalecem corredor elétrico no Sul do país - bra1.com.br",
         "veiculo": "bra1.com.br",
         "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPcUxfYWVRVWYtdDVPWmdPVXZURXkwa2VpMVZYdDBSY3kxdnNMTXYwQWE5MUl6NGt0YXhhU0NBR2JLQUpFZDBjd3FYdEpEdllIdkFsak9iVVprYWZyRXpiWDVsdUR5SDQtXzJEa2ZVSTJBdWRBRE9aSDNxQ0x3MmlqTXdLR1JBaGtYMjlVM0xJckZwQUhlY2hYSnlWX3NiWm5mMXU3TmdzMXNLcXc5dnN3VWhLY21wVVR6S2otM2FlRTJyc1FpRncxbk9zZU91UGpDQi0xOGRHZmc1S1A5dTRTLU9kNWJ2TnNP?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Escola municipal de Joinville alcança maior nota do Ideb entre unidades de SC - Santa Catarina em Pauta",
         "veiculo": "Santa Catarina em Pauta",
         "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOdkdnTThnLUI5OWtnMTc0VGxDc3E4VjhIN1Z6NEdaU0pELXhWR2wtUE9rT1N2MVNnaVZIcHFLczVhYl9JaC00Z2pfRWZCLU13NXhNN1VHWVBqb2ZLeFJzTkhZcnIzTE5STGtqX2NFOXh3S0ZuVVVZNTZIanZJS3NFenlQenhOUjlHSjJLVnhUeGlacFNHY091bVZzN3QzZ3p0RXgybmVQeFZ1OEhEWGxkNmZVenFkSlNvRERGbjR6TjZ2U3ZWcklWTA?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       }
     ]
   },
@@ -1070,136 +1294,136 @@
         "handle": "orthodontic.joinville",
         "posts_medidos": 15,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 1,
-        "frase": "15 posts medidos, último há 0 dias"
+        "frase": "15 posts medidos, último há 1 dia"
       },
       {
         "handle": "alinefernandeshahn",
         "posts_medidos": 38,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 596,
-        "frase": "38 posts medidos, último há 0 dias"
+        "frase": "38 posts medidos, último há 1 dia"
       },
       {
         "handle": "catolicasc",
         "posts_medidos": 40,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 199,
-        "frase": "40 posts medidos, último há 0 dias"
+        "frase": "40 posts medidos, último há 1 dia"
       },
       {
         "handle": "vizinhao.atacarejo",
         "posts_medidos": 30,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 57,
-        "frase": "30 posts medidos, último há 0 dias"
+        "frase": "30 posts medidos, último há 1 dia"
       },
       {
         "handle": "explorejlle",
         "posts_medidos": 40,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 3370,
-        "frase": "40 posts medidos, último há 0 dias"
+        "frase": "40 posts medidos, último há 1 dia"
       },
       {
         "handle": "olajoinville",
         "posts_medidos": 40,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 320,
-        "frase": "40 posts medidos, último há 0 dias"
+        "frase": "40 posts medidos, último há 1 dia"
       },
       {
         "handle": "rhbrasil.joinville",
         "posts_medidos": 40,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 7,
-        "frase": "40 posts medidos, último há 0 dias"
+        "frase": "40 posts medidos, último há 1 dia"
       },
       {
         "handle": "prefeituradejoinvilleoficial",
         "posts_medidos": 40,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 377,
-        "frase": "40 posts medidos, último há 0 dias"
+        "frase": "40 posts medidos, último há 1 dia"
       },
       {
         "handle": "spacomaeebebe",
         "posts_medidos": 19,
         "ultimo_post": "2026-08-11",
-        "dias_sem_publicar": 1,
+        "dias_sem_publicar": 2,
         "parado": false,
         "curtidas_medianas": -1,
-        "frase": "19 posts medidos, último há 1 dia"
+        "frase": "19 posts medidos, último há 2 dias"
       },
       {
         "handle": "unisociesc.joinville",
         "posts_medidos": 13,
         "ultimo_post": "2026-08-11",
-        "dias_sem_publicar": 1,
+        "dias_sem_publicar": 2,
         "parado": false,
         "curtidas_medianas": -1,
-        "frase": "13 posts medidos, último há 1 dia"
+        "frase": "13 posts medidos, último há 2 dias"
       },
       {
         "handle": "unisociesc",
         "posts_medidos": 18,
         "ultimo_post": "2026-08-11",
-        "dias_sem_publicar": 1,
+        "dias_sem_publicar": 2,
         "parado": false,
         "curtidas_medianas": 38,
-        "frase": "18 posts medidos, último há 1 dia"
+        "frase": "18 posts medidos, último há 2 dias"
       },
       {
         "handle": "karinasanyy",
         "posts_medidos": 12,
         "ultimo_post": "2026-08-09",
-        "dias_sem_publicar": 3,
+        "dias_sem_publicar": 4,
         "parado": false,
         "curtidas_medianas": 310,
-        "frase": "12 posts medidos, último há 3 dias"
+        "frase": "12 posts medidos, último há 4 dias"
       },
       {
         "handle": "pedunisociesc",
         "posts_medidos": 1,
         "ultimo_post": "2026-08-09",
-        "dias_sem_publicar": 3,
+        "dias_sem_publicar": 4,
         "parado": false,
         "curtidas_medianas": 47,
-        "frase": "1 post medido, último há 3 dias"
+        "frase": "1 post medido, último há 4 dias"
       },
       {
         "handle": "psi_unisociesc",
         "posts_medidos": 2,
         "ultimo_post": "2026-08-09",
-        "dias_sem_publicar": 3,
+        "dias_sem_publicar": 4,
         "parado": false,
         "curtidas_medianas": 95,
-        "frase": "2 posts medidos, último há 3 dias"
+        "frase": "2 posts medidos, último há 4 dias"
       },
       {
         "handle": "dra.veridiana.freitas",
         "posts_medidos": 1,
         "ultimo_post": "2026-08-07",
-        "dias_sem_publicar": 5,
+        "dias_sem_publicar": 6,
         "parado": false,
         "curtidas_medianas": 41,
-        "frase": "1 post medido, último há 5 dias"
+        "frase": "1 post medido, último há 6 dias"
       }
     ]
   },
@@ -1369,7 +1593,7 @@
   "temas": [
     {
       "tema": "atendimento",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "joinville",
       "pct": 0.7036,
       "n": 1562,
@@ -1380,7 +1604,7 @@
     },
     {
       "tema": "preco_custo",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "joinville",
       "pct": 0.0359,
       "n": 1562,
@@ -1391,7 +1615,7 @@
     },
     {
       "tema": "agenda_espera",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "joinville",
       "pct": 0.0288,
       "n": 1562,
@@ -1402,7 +1626,7 @@
     },
     {
       "tema": "comunicacao_resposta",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "joinville",
       "pct": 0.032,
       "n": 1562,
@@ -1413,7 +1637,7 @@
     },
     {
       "tema": "qualidade_resultado",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "joinville",
       "pct": 0.5352,
       "n": 1562,
@@ -1424,7 +1648,7 @@
     },
     {
       "tema": "confianca_medo",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "joinville",
       "pct": 0.057,
       "n": 1562,
@@ -1435,7 +1659,7 @@
     },
     {
       "tema": "contrato_burocracia",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "joinville",
       "pct": 0.0051,
       "n": 1562,
@@ -1446,7 +1670,7 @@
     },
     {
       "tema": "pessoas_nominais",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "joinville",
       "pct": 0.064,
       "n": 1562,
@@ -1457,7 +1681,7 @@
     },
     {
       "tema": "localizacao_acesso",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "joinville",
       "pct": 0.0448,
       "n": 1562,
@@ -1468,7 +1692,7 @@
     },
     {
       "tema": "recomendacao_lealdade",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "joinville",
       "pct": 0.3195,
       "n": 1562,
@@ -1479,7 +1703,7 @@
     },
     {
       "tema": "dor_medo_dentista",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "joinville",
       "pct": 0.0679,
       "n": 1562,
@@ -1490,7 +1714,7 @@
     },
     {
       "tema": "resultado_autoestima",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "joinville",
       "pct": 0.1652,
       "n": 1562,
@@ -1501,7 +1725,7 @@
     },
     {
       "tema": "explicacao_clareza",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "joinville",
       "pct": 0.0448,
       "n": 1562,
@@ -1512,7 +1736,7 @@
     },
     {
       "tema": "aparelho_tratamento",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "joinville",
       "pct": 0.0275,
       "n": 1562,
@@ -1523,7 +1747,7 @@
     },
     {
       "tema": "familia_filhos",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "joinville",
       "pct": 0.073,
       "n": 1562,
@@ -1534,7 +1758,7 @@
     },
     {
       "tema": "tempo_relacao",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "joinville",
       "pct": 0.0403,
       "n": 1562,

@@ -52,7 +52,7 @@
   "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 60,
     "vence_em": "2026-10-11"
   },
@@ -386,6 +386,133 @@
       "procedencia": "medido em 71 avaliações"
     }
   },
+  "meu_territorio": {
+    "local_id": "ortho_poa_cavalhada",
+    "unidade": "OrthoDontic Cavalhada",
+    "medido": true,
+    "location": {
+      "lat": -30.102399,
+      "lng": -51.2326252
+    },
+    "bairro": "Cavalhada",
+    "clinica_mais_proxima": {
+      "nome": "Odonto Clin",
+      "km": 0.35,
+      "avaliacoes": 893,
+      "nota": 5,
+      "bairro": "Cavalhada"
+    },
+    "aparelho_mais_proximo": {
+      "nome": "Odonto Clin",
+      "km": 0.35,
+      "avaliacoes": 893,
+      "nota": 5,
+      "bairro": "Cavalhada"
+    },
+    "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 7.71,
+      "avaliacoes": 32,
+      "nota": 4.5,
+      "bairro": "Rio Branco"
+    },
+    "raios": {
+      "1km": {
+        "clinicas": 1,
+        "de_aparelho": 1,
+        "da_rede": 0
+      },
+      "2km": {
+        "clinicas": 3,
+        "de_aparelho": 1,
+        "da_rede": 0
+      },
+      "5km": {
+        "clinicas": 10,
+        "de_aparelho": 3,
+        "da_rede": 0
+      }
+    },
+    "frase_fato": "a clínica mais próxima está a 0.35 km",
+    "proximidade_entre_unidades": null,
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 183,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+        "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 183 clínicas com coordenada, 1 medição"
+    }
+  },
+  "movimentos": {
+    "eventos": [],
+    "e_da_cidade": true,
+    "resumo": {
+      "praca_id": "porto_alegre",
+      "rotulo": "RS · Porto Alegre",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
+  "execucao": {
+    "local_id": "ortho_poa_cavalhada",
+    "praca_id": "porto_alegre",
+    "rotulo": "RS · Porto Alegre",
+    "unidade": "OrthoDontic Cavalhada",
+    "itens": [
+      {
+        "problema": "Esta loja aparece em **2 das 196 buscas** que testamos na cidade.",
+        "e_marketing": true,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "seo_local",
+          "especialidade": "marketing local e Google Business",
+          "problema": "a unidade aparece em 2 buscas de 196 testadas na própria cidade",
+          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
+          "evidencias": [
+            "aparece em 2 de 196 buscas",
+            "aparece em: {'frase': 'ortodontista zona sul porto alegre', 'posicao': 2, 'intencao': 'BAIRRO'}",
+            "aparece em: {'frase': 'dentista porto alegre zona sul cavalhada', 'posicao': 4, 'intencao': 'BAIRRO'}"
+          ],
+          "nao_fazer": [
+            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
+            "não prometer posição: o Google não vende ordem no mapa"
+          ],
+          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
+          "prazo": "30 dias",
+          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
+          "recoletar_em_dias": 30
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 196,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/portal/presenca_por_loja.json",
+          "a_favor": [
+            "Esta loja aparece em **2 das 196 buscas** que testamos na cidade."
+          ],
+          "contra": [
+            "uma medição só — a segunda dirá se é estrutural ou momento"
+          ],
+          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+          "procedencia": "medido em 196 buscas testadas, 1 medição"
+        }
+      }
+    ],
+    "de_marketing": 1,
+    "de_operacao": 0
+  },
   "meu_bairro": {
     "bairro": "Cavalhada",
     "clinicas": 2,
@@ -415,9 +542,9 @@
         "acao_recomendada": "sem ação padrão para este gatilho",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": null,
-        "medido_em": "2026-08-12",
+        "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
-        "dias": 0
+        "dias": 1
       }
     ],
     "total": 1,

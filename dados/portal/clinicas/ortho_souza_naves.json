@@ -32,7 +32,7 @@
   "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
-    "dias_aberta": 2,
+    "dias_aberta": 3,
     "prazo_dias": 7,
     "vence_em": "2026-08-17"
   },
@@ -863,6 +863,194 @@
       "procedencia": "medido em 381 avaliações, 4 medições, 28 dias de janela"
     }
   },
+  "meu_territorio": {
+    "local_id": "ortho_souza_naves",
+    "unidade": "OrthoDontic Souza Naves",
+    "medido": true,
+    "location": {
+      "lat": -23.3246649,
+      "lng": -51.1577616
+    },
+    "bairro": "Ipiranga",
+    "clinica_mais_proxima": {
+      "nome": "Dr. Paulo Rossato",
+      "km": 0.06,
+      "avaliacoes": 38,
+      "nota": 4.9,
+      "bairro": "Ipiranga"
+    },
+    "aparelho_mais_proximo": {
+      "nome": "Odontoclinic Londrina",
+      "km": 0.47,
+      "avaliacoes": 544,
+      "nota": 4.9,
+      "bairro": "Centro"
+    },
+    "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 1.67,
+      "avaliacoes": 76,
+      "nota": 3.8,
+      "bairro": "Centro"
+    },
+    "raios": {
+      "1km": {
+        "clinicas": 51,
+        "de_aparelho": 3,
+        "da_rede": 0
+      },
+      "2km": {
+        "clinicas": 107,
+        "de_aparelho": 14,
+        "da_rede": 1
+      },
+      "5km": {
+        "clinicas": 144,
+        "de_aparelho": 21,
+        "da_rede": 1
+      }
+    },
+    "frase_fato": "a clínica mais próxima está a 0.06 km",
+    "proximidade_entre_unidades": null,
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 150,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+        "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 150 clínicas com coordenada, 1 medição"
+    }
+  },
+  "movimentos": {
+    "eventos": [],
+    "e_da_cidade": true,
+    "resumo": {
+      "praca_id": "londrina",
+      "rotulo": "PR · Londrina",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
+  "execucao": {
+    "local_id": "ortho_souza_naves",
+    "praca_id": "londrina",
+    "rotulo": "PR · Londrina",
+    "unidade": "OrthoDontic Souza Naves",
+    "itens": [
+      {
+        "problema": "A dor pública desta unidade aparece em contato — 12 avaliações de 1 ou 2 estrelas de 16 que falam desse momento.",
+        "e_marketing": false,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "operacao",
+          "especialidade": "a própria unidade",
+          "porque_nao_e_marketing": "a dor pública está em telefone e WhatsApp sem resposta. Campanha não conserta isso — mais mídia sobre um gargalo de balcão só aumenta o número de pessoas irritadas.",
+          "quem_resolve": "recepção",
+          "metrica_de_validacao": "as mesmas avaliações, reclassificadas na próxima coleta",
+          "recoletar_em_dias": 30
+        },
+        "evidencias": [
+          "40 avaliações falam deste momento, 8 com notas baixas",
+          "16 avaliações falam deste momento, 12 com notas baixas",
+          "17 avaliações falam deste momento, 9 com notas baixas"
+        ],
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": null,
+          "janela_dias": null,
+          "medicoes": null,
+          "fonte": "dados/portal/jornada.json",
+          "a_favor": [
+            "A dor pública desta unidade aparece em contato — 12 avaliações de 1 ou 2 estrelas de 16 que falam desse momento."
+          ],
+          "contra": [],
+          "o_que_aumentaria": "a próxima medição da jornada",
+          "procedencia": "sem amostra declarada"
+        }
+      },
+      {
+        "problema": "Esta loja aparece em **5 das 176 buscas** que testamos na cidade.",
+        "e_marketing": true,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "seo_local",
+          "especialidade": "marketing local e Google Business",
+          "problema": "a unidade aparece em 5 buscas de 176 testadas na própria cidade",
+          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
+          "evidencias": [
+            "aparece em 5 de 176 buscas",
+            "aparece em: {'frase': 'aparelho ortodôntico londrina', 'posicao': 1, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'aparelho ortodôntico em londrina', 'posicao': 1, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'ortodontista londrina', 'posicao': 2, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'ortodontista em londrina', 'posicao': 2, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'melhor ortodontista de londrina', 'posicao': 2, 'intencao': 'REPUTAÇÃO'}"
+          ],
+          "nao_fazer": [
+            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
+            "não prometer posição: o Google não vende ordem no mapa"
+          ],
+          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
+          "prazo": "30 dias",
+          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
+          "recoletar_em_dias": 30
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 176,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/portal/presenca_por_loja.json",
+          "a_favor": [
+            "Esta loja aparece em **5 das 176 buscas** que testamos na cidade."
+          ],
+          "contra": [
+            "uma medição só — a segunda dirá se é estrutural ou momento"
+          ],
+          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+          "procedencia": "medido em 176 buscas testadas, 1 medição"
+        }
+      },
+      {
+        "problema": "35 avaliações negativas abertas sem resposta",
+        "e_marketing": false,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "reputacao",
+          "especialidade": "a própria unidade",
+          "porque_nao_e_marketing": "responder paciente é trabalho de quem atende. Agência escrevendo resposta em nome da clínica é o caminho mais curto para uma resposta que o paciente percebe como automática.",
+          "metrica_de_validacao": "quantas seguem sem resposta na próxima coleta",
+          "recoletar_em_dias": 15
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 35,
+          "janela_dias": null,
+          "medicoes": null,
+          "fonte": "dados/portal/caixa_de_respostas.json",
+          "a_favor": [],
+          "contra": [],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 35 avaliações"
+        }
+      }
+    ],
+    "de_marketing": 1,
+    "de_operacao": 2
+  },
   "meu_bairro": {
     "bairro": "Ipiranga",
     "clinicas": 10,
@@ -901,9 +1089,9 @@
         "acao_recomendada": "responder as avaliações abertas e tratar o motivo",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": 4.6,
-        "medido_em": "2026-08-12",
+        "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
-        "dias": 2
+        "dias": 3
       },
       {
         "arco_id": "ortho_souza_naves|posicao",
@@ -918,9 +1106,9 @@
         "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": 13.0,
-        "medido_em": "2026-08-12",
+        "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
-        "dias": 2
+        "dias": 3
       }
     ],
     "total": 2,

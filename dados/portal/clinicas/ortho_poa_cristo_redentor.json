@@ -52,7 +52,7 @@
   "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 14,
     "vence_em": "2026-08-26"
   },
@@ -396,6 +396,136 @@
       "procedencia": "medido em 85 avaliações"
     }
   },
+  "meu_territorio": {
+    "local_id": "ortho_poa_cristo_redentor",
+    "unidade": "OrthoDontic Cristo Redentor",
+    "medido": true,
+    "location": {
+      "lat": -30.011128699999997,
+      "lng": -51.1617727
+    },
+    "bairro": "Cristo Redentor",
+    "clinica_mais_proxima": {
+      "nome": "Dra. Rafaela Hainzenreder - Ortodontista Infantil",
+      "km": 0.28,
+      "avaliacoes": 24,
+      "nota": 5,
+      "bairro": "Passo d'Areia"
+    },
+    "aparelho_mais_proximo": {
+      "nome": "Integrar Odontologia",
+      "km": 0.38,
+      "avaliacoes": 364,
+      "nota": 4.9,
+      "bairro": "Passo d'Areia"
+    },
+    "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 5.11,
+      "avaliacoes": 32,
+      "nota": 4.5,
+      "bairro": "Rio Branco"
+    },
+    "raios": {
+      "1km": {
+        "clinicas": 3,
+        "de_aparelho": 1,
+        "da_rede": 0
+      },
+      "2km": {
+        "clinicas": 5,
+        "de_aparelho": 1,
+        "da_rede": 0
+      },
+      "5km": {
+        "clinicas": 89,
+        "de_aparelho": 4,
+        "da_rede": 0
+      }
+    },
+    "frase_fato": "a clínica mais próxima está a 0.28 km",
+    "proximidade_entre_unidades": null,
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 183,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+        "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 183 clínicas com coordenada, 1 medição"
+    }
+  },
+  "movimentos": {
+    "eventos": [],
+    "e_da_cidade": true,
+    "resumo": {
+      "praca_id": "porto_alegre",
+      "rotulo": "RS · Porto Alegre",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
+  "execucao": {
+    "local_id": "ortho_poa_cristo_redentor",
+    "praca_id": "porto_alegre",
+    "rotulo": "RS · Porto Alegre",
+    "unidade": "OrthoDontic Cristo Redentor",
+    "itens": [
+      {
+        "problema": "Esta loja aparece em **7 das 196 buscas** que testamos na cidade.",
+        "e_marketing": true,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "seo_local",
+          "especialidade": "marketing local e Google Business",
+          "problema": "a unidade aparece em 7 buscas de 196 testadas na própria cidade",
+          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
+          "evidencias": [
+            "aparece em 7 de 196 buscas",
+            "aparece em: {'frase': 'aparelho ortodôntico porto alegre', 'posicao': 2, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'aparelho ortodôntico porto alegre preço', 'posicao': 2, 'intencao': 'PREÇO'}",
+            "aparece em: {'frase': 'aparelho ortodôntico em porto alegre', 'posicao': 2, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'dentista porto alegre aparelho', 'posicao': 3, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'dentista porto alegre assis brasil', 'posicao': 4, 'intencao': 'BAIRRO'}"
+          ],
+          "nao_fazer": [
+            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
+            "não prometer posição: o Google não vende ordem no mapa"
+          ],
+          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
+          "prazo": "30 dias",
+          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
+          "recoletar_em_dias": 30
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 196,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/portal/presenca_por_loja.json",
+          "a_favor": [
+            "Esta loja aparece em **7 das 196 buscas** que testamos na cidade."
+          ],
+          "contra": [
+            "uma medição só — a segunda dirá se é estrutural ou momento"
+          ],
+          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+          "procedencia": "medido em 196 buscas testadas, 1 medição"
+        }
+      }
+    ],
+    "de_marketing": 1,
+    "de_operacao": 0
+  },
   "meu_bairro": {
     "bairro": "Cristo Redentor",
     "clinicas": 1,
@@ -419,9 +549,9 @@
         "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": 7.5,
-        "medido_em": "2026-08-12",
+        "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
-        "dias": 0
+        "dias": 1
       },
       {
         "arco_id": "ortho_poa_cristo_redentor|posicao",
@@ -437,9 +567,9 @@
         "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": 12.0,
-        "medido_em": "2026-08-12",
+        "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
-        "dias": 0
+        "dias": 1
       }
     ],
     "total": 2,

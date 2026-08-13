@@ -1,6 +1,6 @@
 {
   "praca_id": "mafra",
-  "corte": "2026-08-12",
+  "corte": "2026-08-13",
   "rotulo": "SC · Mafra",
   "uf": [
     "SC",
@@ -409,6 +409,74 @@
   "bairros": {
     "praca_id": "mafra",
     "rotulo": "SC · Mafra",
+    "territorio": [
+      {
+        "local_id": "ortho_mafra",
+        "unidade": "OrthoDontic Mafra",
+        "medido": true,
+        "location": {
+          "lat": -26.121302,
+          "lng": -49.8056354
+        },
+        "bairro": "Centro II Alto de Mafra",
+        "clinica_mais_proxima": {
+          "nome": "Instituto Lumière - Mafra",
+          "km": 0.07,
+          "avaliacoes": 230,
+          "nota": 5,
+          "bairro": "Centro II Alto de Mafra"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Instituto Lumière - Mafra",
+          "km": 0.07,
+          "avaliacoes": 230,
+          "nota": 5,
+          "bairro": "Centro II Alto de Mafra"
+        },
+        "unidade_da_rede_mais_proxima": null,
+        "raios": {
+          "1km": {
+            "clinicas": 33,
+            "de_aparelho": 9,
+            "da_rede": 0
+          },
+          "2km": {
+            "clinicas": 58,
+            "de_aparelho": 9,
+            "da_rede": 0
+          },
+          "5km": {
+            "clinicas": 73,
+            "de_aparelho": 11,
+            "da_rede": 0
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.07 km",
+        "proximidade_entre_unidades": null,
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 73,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 73 clínicas com coordenada, 1 medição"
+        }
+      }
+    ],
+    "clinicas_com_coordenada": 74,
+    "clinicas_sem_coordenada": 0,
+    "raios_declarados_km": [
+      1,
+      2,
+      5
+    ],
     "bairros_medidos": 18,
     "clinicas_medidas": 74,
     "sem_bairro_no_endereco": 13,
@@ -938,6 +1006,16 @@
       "procedencia": "medido em 74 clínicas varridas, 1 medição"
     }
   },
+  "movimentos_do_mercado": {
+    "eventos": [],
+    "resumo": {
+      "praca_id": "mafra",
+      "rotulo": "SC · Mafra",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
   "imprensa": {
     "medido": true,
     "total": 44,
@@ -951,84 +1029,84 @@
         "veiculo": "Única News",
         "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOS3dTOUw3YmR6R3lNUjNqYW5CdEFZZjh3M1Q1dmo5UnhNeWF2X040QW5FZzlXdXdhVGdfRmdOLU02WlMxd0R3VVZvVVB4UVlVRmlkcTJfRF91RDJvNGIzZ0hMYWhvdkZoaTJHV0pSZFQ4aXdGUUxhTzhod0RVUHVfOUloY0lqZ3M1bEdfT1FjYkVlZmY3TWhpUmJRN0lFenBkYWpjSUdrSWdOOHU1Ym9JSEd1Yy1rdk1nVDRIUnRrbDVvMFAzM2FRVUhFTnBxQzdMS0NicHNRNEZ2UW1acVpOWW02MA?oc=5",
         "publicado": "2026-08-05",
-        "dias": 7
+        "dias": 8
       },
       {
         "titulo": "Mafra instala nova ponte de concreto e prevê outras sete estruturas no interior - Santa Catarina em Pauta",
         "veiculo": "Santa Catarina em Pauta",
         "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPdEt5VWUzNUhEOVB6SkR2LTVZY1Qwcko2OXFKdGRKc0RucVpvbzNCRWlENmswOFVjVWwtLXE2RUt6UXhDTE1ZWXV5SWFSalMtUEtDWGRZQ1ZHRVJGOUxuTzY3SUVRVEUwU3VUVVpqVFAybmNLd0FwLUEyaHc0ZHlMb3BSY3JCaGlQdVlyNVVXWDNIbmJzdXd3aHMtZGUtTFBvdDZOemlnZzZIeTIyMTBYeXFZeTEyaGpVdi1RTW5GRWk1S1RTdUNMWDVuWQ?oc=5",
         "publicado": "2026-08-04",
-        "dias": 8
+        "dias": 9
       },
       {
         "titulo": "Ferrovia entre Mafra e Caçador pode ser reativada em SC - Jornal Correio do Norte",
         "veiculo": "Jornal Correio do Norte",
         "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNOWVGdE85NW9HMkhTUnZzVUNGUEtTQ0hpdjg3TUotTURmb0cwYl80NEZyM1JVLTFRU2k5aEFZeEh5V2lEanZrUU5wSS1XTGNjUkctMWpMR1dnaVRJMjE2WWFCMWlNZTB0MWI1RVVZQVBueHRWY0RJeVdtMkpmNVozTDU3N0QzOHhlMmEwcEs5eHJMenQ0dEVYZFFlVW1wT2dIajY1ZXBtandjcGhkNFJjY0M5a3otUTBsSW1BT2IwLWJhVVJ4MlHSAcsBQVVfeXFMTWNTaHNFNFpRUWgydjFlT1J6WGd4eGlnUllsN05RSmM0dHUwSEtGZThtaDRuekppWlA2WWlsWUZ2dnBEeW5ILXlxdVVCWGt5Z2dyM1BMNGJmb00tRjhra25JNHhxcXNlRUE2MnRId2c3dE5kNWRIcGtEemQ1NjZmeUM4M05GYU5aa3VDR0VkRW5idTlxakVScXBIS0xFdGw5bnNPUDlGUjdOaTM2N3JJWmZETDBxSDVrdlJCZXhqaHJ0dFQ0RW1WbW5wRXc?oc=5",
         "publicado": "2026-08-04",
-        "dias": 8
+        "dias": 9
       },
       {
         "titulo": "Mafra passa a integrar o Mapa do Turismo Brasileiro - Santa Catarina em Pauta",
         "veiculo": "Santa Catarina em Pauta",
         "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMmlldzlLbTVmZmFuOGo2c2pNaGlzZElDaUt4T3p4VTFYYWpqLWRuTEt6Ym1tRzI2UlJZMXQ3RzVKZW5TdXZfcS1SclZEUU9IVExHcWdYVVJyRjhJbTVPN0ZaMGFLallmenNQLU10aXZJU053THFSRF84UVplb2I1Q0I1X2MwaHN5Rm9NNUgtUE1iM2dLYmE1eUQ0SWdnM1lGTWlMR1RR?oc=5",
         "publicado": "2026-08-03",
-        "dias": 9
+        "dias": 10
       },
       {
         "titulo": "Convenção confirma candidatura de Serginho Severino a deputado federal pelo PP - Mafra Mix",
         "veiculo": "Mafra Mix",
         "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNbDlMbk1BazdIN01pNUZZTGU5UExpelgtNUFsVUtiNFR0S0dJVlRVOTZqVVotVllTeW5BSXlka1VKSTBLeHNGQkc3aGV5cEZnY2ZjUTVOSWE1bVJvQ1owNUdjelR6RU0wdXlPdnl4YU9WdDZJUUQtUnRaNmNGNjhVZDFyekxwbm9XZ25nQ0ZXbVVuZDJXcXRPS0s2SVp0M2VYdlJsNHlGSXlRRG1WSlpIeXh5OHdqS0VzZnFHSUZaUFk0dw?oc=5",
         "publicado": "2026-08-01",
-        "dias": 11
+        "dias": 12
       },
       {
         "titulo": "Abrigo de R$ 622 mil é inaugurado em SC mas nunca foi usado para receber animais - ND Mais",
         "veiculo": "ND Mais",
         "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNdXJLX1JKZVh2WUR0aG85dndhX2hvVVluUnVMX0l4T0RSNTFVWW9XNklCVjNHR3VwVjloY1JpeExmSVJ5N1dvWllMdDFvaTZ6eVF1VTdtTFk4NkRfN1AyRVVwaEJzLXQ5M2JkZUQ2NmlDN0ZXVHc2LS1rd1hVY2FtT2FvUUFSQQ?oc=5",
         "publicado": "2026-07-30",
-        "dias": 13
+        "dias": 14
       },
       {
         "titulo": "Mulher é suspeita de envenenar e tentar cortar mangueira de oxigênio de companheiro em UTI de SC - ND Mais",
         "veiculo": "ND Mais",
         "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQM2FGcW51UDZ6aExPbG53WkVka1FDXzA5NV9Ic05CeEV2aGxHSkVWdDRjNVFzUV9CYW1vNXN1VERJRHJZeGR6Y3JKLThaQlZlRWlnV0FEdFgxTmVjcF9xZmgtSDBiME50TUl5aDFQMmxWV0FQTjdyMndHb2RmTENtd2VkcDAwN0xpV2VQR2J5THVVcWpCdnc?oc=5",
         "publicado": "2026-07-29",
-        "dias": 14
+        "dias": 15
       },
       {
         "titulo": "Mulher é investigada após cortar mangueira de oxigênio do marido em Mafra - ND Mais",
         "veiculo": "ND Mais",
         "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQR1dLTWFraF9SelZyZldocWw3czdSSzBqcUZXZ2JuYzYyWWs5QTZaSi1yNDZ4MFFSQkhKcGE0ZjJadEdWLURXUml5MFg2enhhbk9uMDV2WWVnckFUaHl3TXdoZk9mQjBfLW1vQ3ZrNGRBMmNSNDAxWTBkczdJaENqUFBPY3FTWEZqR0llZ25udTdscHBzRzF0VGFZcDFhWDhubUt5WA?oc=5",
         "publicado": "2026-07-28",
-        "dias": 15
+        "dias": 16
       },
       {
         "titulo": "Ponte \"se mexe\" e preocupa moradores na divisa entre SC e PR; VÍDEO - NSC Total",
         "veiculo": "NSC Total",
         "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQzAydVVnanRYdXdmR2lXS1I3RkdHeldnaEU3MFRrWEFVVFZZNGNMNjNZbFFXN2t3TFdQeDV5VG9taW1VUTdfN245SHpuWnRkSTJCb1hRdVk2dXlPUk5fRERuQk1BeThlTDZpdnAtTGRFU2VWbFl4NklrWE1Gbl9iRkRlbW9hZ05JM0tzNFoxQkc2Um0zZmEyTndWTjh5dXE2b0k1VE9nZ080M00?oc=5",
         "publicado": "2026-07-22",
-        "dias": 21
+        "dias": 22
       },
       {
         "titulo": "Mafra à Mesa 2026 será realizado em setembro com participação de 17 restaurantes - Santa Catarina em Pauta",
         "veiculo": "Santa Catarina em Pauta",
         "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNbVU2SGRUQXlkdmhkVmZqeGo1bmpFS3lORTJ6YmdpX1pndWhQMXhYOXFpQmswdHU3QUlxazBHYXhQNHIwLUE2WnhEdmc2WUdaTXdNcnJTejdBaFRHeHpfSHJhVG9wVUEyLUhGYUtIRndROUZMWEhJMDVveGVYQkxseWRqMHFBUVRLR1RPVk9PRGsxNl9lRGduX2FiVGkxYWVtekRONmZfenBDNURPUWt0NVhFbDVfcndQamFFX05hZXNOQ0JKSHhjbDQ4MlhoMlBn?oc=5",
         "publicado": "2026-07-22",
-        "dias": 21
+        "dias": 22
       },
       {
         "titulo": "Operação do GAECO em Mafra: veja o que diz a Prefeitura - Mafra Mix",
         "veiculo": "Mafra Mix",
         "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQbmFoWEpYbUFfVXRuV2NacEQ4T2pGWTJQaHp6cWlPNGw4b0liY2d5WlZkRmFiRU0wS1VNV3NpZmktaXZfWGw5aGhhdU9HUmp4c1RuT21BY2czYVFyVnlTeUdSakR0RjRsU1MtUXpjeTZzcWg3RktORDZWdUVCNWRjYlZrbmZKLW40MlNBZzFjYU1qSm5sc2lfS0pteHpyalFaUHc?oc=5",
         "publicado": "2026-07-07",
-        "dias": 36
+        "dias": 37
       },
       {
         "titulo": "Mafra e Itaiópolis são alvos de operação do GAECO contra fraudes em licitações de shows - Mafra Mix",
         "veiculo": "Mafra Mix",
         "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNNHBrdjFIV2prSkVvLXVIelg3bVFoelhCNjkxdjRpV1V1RWZ0OU5Ua29CZWlsMWJGOFp6ejFGbVU5OElxOGEyUEJ5d2oya0RyLXhFdDg1TU45THJrYm9ObTVOZkIzMVlqeldCc2NJNlBKek0yTXhPRFhoZWROT1gydTUtMElYc2dxaUFSdU5WQ09aMmJsdklqeHJCUHNUejRMUGhaeWdPbzdDT3hySVZzWm52TVZ0MmQtcm01bEtkeVQ3R0JVNFVCQTRFbGJidw?oc=5",
         "publicado": "2026-07-07",
-        "dias": 36
+        "dias": 37
       }
     ]
   },
@@ -1044,19 +1122,19 @@
         "handle": "odontocompanyriomafra",
         "posts_medidos": 15,
         "ultimo_post": "2026-08-07",
-        "dias_sem_publicar": 5,
+        "dias_sem_publicar": 6,
         "parado": false,
         "curtidas_medianas": 3,
-        "frase": "15 posts medidos, último há 5 dias"
+        "frase": "15 posts medidos, último há 6 dias"
       },
       {
         "handle": "orthodontic.mafra",
         "posts_medidos": 11,
         "ultimo_post": "2026-08-07",
-        "dias_sem_publicar": 5,
+        "dias_sem_publicar": 6,
         "parado": false,
         "curtidas_medianas": 7,
-        "frase": "11 posts medidos, último há 5 dias"
+        "frase": "11 posts medidos, último há 6 dias"
       }
     ]
   },
@@ -1235,7 +1313,7 @@
   "temas": [
     {
       "tema": "atendimento",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "mafra",
       "pct": 0.7205,
       "n": 991,
@@ -1246,7 +1324,7 @@
     },
     {
       "tema": "qualidade_resultado",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "mafra",
       "pct": 0.555,
       "n": 991,
@@ -1275,7 +1353,7 @@
     },
     {
       "tema": "preco_custo",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "mafra",
       "pct": 0.0303,
       "n": 991,
@@ -1286,7 +1364,7 @@
     },
     {
       "tema": "agenda_espera",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "mafra",
       "pct": 0.0222,
       "n": 991,
@@ -1297,7 +1375,7 @@
     },
     {
       "tema": "comunicacao_resposta",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "mafra",
       "pct": 0.0151,
       "n": 991,
@@ -1308,7 +1386,7 @@
     },
     {
       "tema": "confianca_medo",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "mafra",
       "pct": 0.0424,
       "n": 991,
@@ -1319,7 +1397,7 @@
     },
     {
       "tema": "contrato_burocracia",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "mafra",
       "pct": 0.002,
       "n": 991,
@@ -1330,7 +1408,7 @@
     },
     {
       "tema": "pessoas_nominais",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "mafra",
       "pct": 0.0343,
       "n": 991,
@@ -1341,7 +1419,7 @@
     },
     {
       "tema": "localizacao_acesso",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "mafra",
       "pct": 0.0323,
       "n": 991,
@@ -1352,7 +1430,7 @@
     },
     {
       "tema": "recomendacao_lealdade",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "mafra",
       "pct": 0.333,
       "n": 991,
@@ -1363,7 +1441,7 @@
     },
     {
       "tema": "dor_medo_dentista",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "mafra",
       "pct": 0.0484,
       "n": 991,
@@ -1374,7 +1452,7 @@
     },
     {
       "tema": "resultado_autoestima",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "mafra",
       "pct": 0.1332,
       "n": 991,
@@ -1385,7 +1463,7 @@
     },
     {
       "tema": "explicacao_clareza",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "mafra",
       "pct": 0.0414,
       "n": 991,
@@ -1396,7 +1474,7 @@
     },
     {
       "tema": "aparelho_tratamento",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "mafra",
       "pct": 0.0151,
       "n": 991,
@@ -1407,7 +1485,7 @@
     },
     {
       "tema": "familia_filhos",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "mafra",
       "pct": 0.0838,
       "n": 991,
@@ -1418,7 +1496,7 @@
     },
     {
       "tema": "tempo_relacao",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "mafra",
       "pct": 0.0252,
       "n": 991,

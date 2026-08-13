@@ -1,0 +1,1272 @@
+{
+  "praca_id": "sao_paulo",
+  "corte": "2026-08-13",
+  "rotulo": "SP · São Paulo",
+  "uf": [
+    "SP"
+  ],
+  "cidades": [
+    "SP · São Paulo"
+  ],
+  "identidade": {
+    "praca_id": "sao_paulo",
+    "nome": "São Paulo",
+    "cidades": [
+      "São Paulo/SP"
+    ],
+    "uf": [
+      "SP"
+    ],
+    "rotulo": "SP · São Paulo",
+    "cidades_rotulo": [
+      "SP · São Paulo"
+    ],
+    "criada_em": "2026-08-13",
+    "por_que_esta_praca": "cidade onde a rede já tem unidade e que ainda não tinha estudo. As metrópoles entram agora porque o mapa de bairros passou a existir: sem ele, cinco unidades em São Paulo virariam um número só, e o número não diria nada a nenhum franqueado",
+    "ibge": [
+      {
+        "municipio": "São Paulo",
+        "uf": "SP",
+        "ibge_id": 3550308,
+        "populacao_estimada": {
+          "ano": "2025",
+          "valor": "11904961",
+          "unidade": "Pessoas"
+        },
+        "alvo_9_15": 951577,
+        "alvo_30_45": 2778697,
+        "fonte": "ibge agregados 6579/5938/9514",
+        "de": "dados/serie/ibge_municipios.jsonl"
+      }
+    ]
+  },
+  "planos_das_lojas": [],
+  "oferta": null,
+  "bairros": {
+    "praca_id": "sao_paulo",
+    "rotulo": "SP · São Paulo",
+    "territorio": [
+      {
+        "local_id": "orthodontic",
+        "unidade": "OrthoDontic",
+        "medido": true,
+        "location": {
+          "lat": -23.521436299999998,
+          "lng": -46.7046912
+        },
+        "bairro": "Lapa",
+        "clinica_mais_proxima": {
+          "nome": "Orto Clube",
+          "km": 0.08,
+          "avaliacoes": 168,
+          "nota": 4.6,
+          "bairro": "Lapa"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Dentar Odontologia",
+          "km": 5.39,
+          "avaliacoes": 674,
+          "nota": 5,
+          "bairro": "Pinheiros"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 7.17,
+          "avaliacoes": 22,
+          "nota": 3,
+          "bairro": "República"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 2,
+            "de_aparelho": 0,
+            "da_rede": 0
+          },
+          "2km": {
+            "clinicas": 2,
+            "de_aparelho": 0,
+            "da_rede": 0
+          },
+          "5km": {
+            "clinicas": 6,
+            "de_aparelho": 0,
+            "da_rede": 0
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.08 km",
+        "proximidade_entre_unidades": null,
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 184,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 184 clínicas com coordenada, 1 medição"
+        }
+      },
+      {
+        "local_id": "orthodontic_sao_miguel_paulista",
+        "unidade": "OrthoDontic",
+        "medido": true,
+        "location": {
+          "lat": -23.4923745,
+          "lng": -46.4425454
+        },
+        "bairro": "São Miguel Paulista",
+        "clinica_mais_proxima": {
+          "nome": "Clínica Odonto Brasil Implantes",
+          "km": 4.17,
+          "avaliacoes": 253,
+          "nota": 4.8,
+          "bairro": "Itaim Paulista"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Sorridents Clínicas Odontológicas Tatuapé São Paulo",
+          "km": 14.7,
+          "avaliacoes": 1803,
+          "nota": 4.9,
+          "bairro": "Tatuapé"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 14.61,
+          "avaliacoes": 108,
+          "nota": 4.1,
+          "bairro": "Tatuapé"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 0,
+            "de_aparelho": 0,
+            "da_rede": 0
+          },
+          "2km": {
+            "clinicas": 0,
+            "de_aparelho": 0,
+            "da_rede": 0
+          },
+          "5km": {
+            "clinicas": 1,
+            "de_aparelho": 0,
+            "da_rede": 0
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 4.17 km",
+        "proximidade_entre_unidades": null,
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 184,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 184 clínicas com coordenada, 1 medição"
+        }
+      },
+      {
+        "local_id": "orthodontic_tatuape",
+        "unidade": "OrthoDontic",
+        "medido": true,
+        "location": {
+          "lat": -23.542748,
+          "lng": -46.5748943
+        },
+        "bairro": "Tatuapé",
+        "clinica_mais_proxima": {
+          "nome": "Sorridents Clínicas Odontológicas Tatuapé São Paulo",
+          "km": 0.47,
+          "avaliacoes": 1803,
+          "nota": 4.9,
+          "bairro": "Tatuapé"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Sorridents Clínicas Odontológicas Tatuapé São Paulo",
+          "km": 0.47,
+          "avaliacoes": 1803,
+          "nota": 4.9,
+          "bairro": "Tatuapé"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 6.64,
+          "avaliacoes": 22,
+          "nota": 3,
+          "bairro": "República"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 2,
+            "de_aparelho": 1,
+            "da_rede": 0
+          },
+          "2km": {
+            "clinicas": 5,
+            "de_aparelho": 1,
+            "da_rede": 0
+          },
+          "5km": {
+            "clinicas": 16,
+            "de_aparelho": 2,
+            "da_rede": 0
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.47 km",
+        "proximidade_entre_unidades": null,
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 184,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 184 clínicas com coordenada, 1 medição"
+        }
+      },
+      {
+        "local_id": "orthodontic_republica",
+        "unidade": "OrthoDontic",
+        "medido": true,
+        "location": {
+          "lat": -23.546505000000003,
+          "lng": -46.6398698
+        },
+        "bairro": "República",
+        "clinica_mais_proxima": {
+          "nome": "Sorridents Anhangabaú",
+          "km": 0.02,
+          "avaliacoes": 540,
+          "nota": 4.8,
+          "bairro": "República"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Sorridents Anhangabaú",
+          "km": 0.02,
+          "avaliacoes": 540,
+          "nota": 4.8,
+          "bairro": "República"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 6.64,
+          "avaliacoes": 108,
+          "nota": 4.1,
+          "bairro": "Tatuapé"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 16,
+            "de_aparelho": 4,
+            "da_rede": 0
+          },
+          "2km": {
+            "clinicas": 43,
+            "de_aparelho": 5,
+            "da_rede": 0
+          },
+          "5km": {
+            "clinicas": 137,
+            "de_aparelho": 10,
+            "da_rede": 0
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.02 km",
+        "proximidade_entre_unidades": null,
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 184,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 184 clínicas com coordenada, 1 medição"
+        }
+      }
+    ],
+    "clinicas_com_coordenada": 185,
+    "clinicas_sem_coordenada": 0,
+    "raios_declarados_km": [
+      1,
+      2,
+      5
+    ],
+    "bairros_medidos": 49,
+    "clinicas_medidas": 185,
+    "sem_bairro_no_endereco": 3,
+    "unidades_da_rede": 4,
+    "unidades_localizadas": 4,
+    "onde_estamos": [
+      {
+        "local_id": "orthodontic",
+        "bairro": "Lapa",
+        "unidade": "OrthoDontic"
+      },
+      {
+        "local_id": "orthodontic_republica",
+        "bairro": "República",
+        "unidade": "OrthoDontic"
+      },
+      {
+        "local_id": "orthodontic_sao_miguel_paulista",
+        "bairro": "São Miguel Paulista",
+        "unidade": "OrthoDontic"
+      },
+      {
+        "local_id": "orthodontic_tatuape",
+        "bairro": "Tatuapé",
+        "unidade": "OrthoDontic"
+      }
+    ],
+    "bairros": [
+      {
+        "bairro": "Bela Vista",
+        "clinicas": 39,
+        "avaliacoes_somadas": 4683,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Simioni Odontologia - Implante e Lente de Contato Dental",
+            "nota": 5,
+            "avaliacoes": 653
+          },
+          {
+            "nome": "Prado Odontologia e Medicina",
+            "nota": 4.9,
+            "avaliacoes": 430
+          },
+          {
+            "nome": "Benatti Odontologia",
+            "nota": 4.9,
+            "avaliacoes": 426
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "39 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Vila Mariana",
+        "clinicas": 15,
+        "avaliacoes_somadas": 2403,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Odontoclinic",
+            "nota": 5,
+            "avaliacoes": 950
+          },
+          {
+            "nome": "Clínica Antonioli",
+            "nota": 4.9,
+            "avaliacoes": 427
+          },
+          {
+            "nome": "Dental Ortho-Lipe",
+            "nota": 5,
+            "avaliacoes": 254
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "15 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Jardim Paulista",
+        "clinicas": 12,
+        "avaliacoes_somadas": 1148,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Sorridents Clínicas Odontológicas Oscar Freire São Paulo",
+            "nota": 4.6,
+            "avaliacoes": 243
+          },
+          {
+            "nome": "Mishima Odontologia",
+            "nota": 5,
+            "avaliacoes": 229
+          },
+          {
+            "nome": "Guerreiro Clinic",
+            "nota": 4.9,
+            "avaliacoes": 190
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "12 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "República",
+        "clinicas": 10,
+        "avaliacoes_somadas": 2878,
+        "temos_unidade": true,
+        "nossas": [
+          "orthodontic_republica"
+        ],
+        "vizinhos_fortes": [
+          {
+            "nome": "DRB Odonto | Implantes, Próteses, Ortodontia e Estética no Centro de São Paulo - SP",
+            "nota": 4.9,
+            "avaliacoes": 680
+          },
+          {
+            "nome": "Setimplan Centro Odontológico",
+            "nota": 4.8,
+            "avaliacoes": 542
+          },
+          {
+            "nome": "Sorridents Anhangabaú",
+            "nota": 4.8,
+            "avaliacoes": 540
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "10 clínicas varridas, e a unidade da rede está aqui"
+      },
+      {
+        "bairro": "Liberdade",
+        "clinicas": 9,
+        "avaliacoes_somadas": 512,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dental Excellence Matriz",
+            "nota": 4,
+            "avaliacoes": 220
+          },
+          {
+            "nome": "Dentika Clínicas Odontológicas Liberdade",
+            "nota": 4.6,
+            "avaliacoes": 160
+          },
+          {
+            "nome": "R&P Odontologia | Dentista | Liberdade | Vila Mariana | Aclimação",
+            "nota": 5,
+            "avaliacoes": 47
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "9 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Cerqueira César",
+        "clinicas": 8,
+        "avaliacoes_somadas": 925,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Clopi - Clínica Odontológica Pinheiros",
+            "nota": 4.5,
+            "avaliacoes": 343
+          },
+          {
+            "nome": "Clinica Odontológica COFA Odontologia",
+            "nota": 4.8,
+            "avaliacoes": 265
+          },
+          {
+            "nome": "Dra. Joyce Campbell",
+            "nota": 5,
+            "avaliacoes": 197
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "8 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Consolação",
+        "clinicas": 7,
+        "avaliacoes_somadas": 1005,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Sorridents Clínicas Odontológicas Augusta São Paulo",
+            "nota": 4.8,
+            "avaliacoes": 415
+          },
+          {
+            "nome": "Medical Dental Advance Produtos Médicos e Odontológicos",
+            "nota": 5,
+            "avaliacoes": 244
+          },
+          {
+            "nome": "Sorridents Clínicas Odontológicas Higienópolis São Paulo",
+            "nota": 4.8,
+            "avaliacoes": 217
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "7 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Pinheiros",
+        "clinicas": 6,
+        "avaliacoes_somadas": 2098,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "SouSmile | Pinheiros | Unidade Oficial",
+            "nota": 4.9,
+            "avaliacoes": 836
+          },
+          {
+            "nome": "Dentar Odontologia",
+            "nota": 5,
+            "avaliacoes": 674
+          },
+          {
+            "nome": "Clínica OdontoFares",
+            "nota": 4.9,
+            "avaliacoes": 305
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "6 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Cambuci",
+        "clinicas": 6,
+        "avaliacoes_somadas": 1619,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Odontoclinic - Cambuci",
+            "nota": 4.9,
+            "avaliacoes": 608
+          },
+          {
+            "nome": "Risoarte Odontologia Cambuci",
+            "nota": 4.9,
+            "avaliacoes": 384
+          },
+          {
+            "nome": "Odonto Company - Lins de Vasconcelos",
+            "nota": 4.9,
+            "avaliacoes": 273
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "6 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Paraíso",
+        "clinicas": 5,
+        "avaliacoes_somadas": 637,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Clínica Miki Odontologia Familiar",
+            "nota": 4.9,
+            "avaliacoes": 272
+          },
+          {
+            "nome": "W Odonto",
+            "nota": 5,
+            "avaliacoes": 137
+          },
+          {
+            "nome": "Clínica Jin Odontologia",
+            "nota": 4.6,
+            "avaliacoes": 127
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "5 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Aclimação",
+        "clinicas": 5,
+        "avaliacoes_somadas": 721,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Prevent Ser Odontologia",
+            "nota": 5,
+            "avaliacoes": 239
+          },
+          {
+            "nome": "Sorridents Clínicas Odontológicas Aclimação São Paulo",
+            "nota": 4.8,
+            "avaliacoes": 200
+          },
+          {
+            "nome": "Clinica Odontológica e Estética Facial - LR",
+            "nota": 4.9,
+            "avaliacoes": 179
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "5 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Tatuapé",
+        "clinicas": 4,
+        "avaliacoes_somadas": 2066,
+        "temos_unidade": true,
+        "nossas": [
+          "orthodontic_tatuape"
+        ],
+        "vizinhos_fortes": [
+          {
+            "nome": "Sorridents Clínicas Odontológicas Tatuapé São Paulo",
+            "nota": 4.9,
+            "avaliacoes": 1803
+          },
+          {
+            "nome": "Dra. Carolina M. Ribeiro",
+            "nota": 4.9,
+            "avaliacoes": 155
+          },
+          {
+            "nome": "Alinhador Invisível",
+            "nota": null,
+            "avaliacoes": null
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "4 clínicas varridas, e a unidade da rede está aqui"
+      },
+      {
+        "bairro": "Mooca",
+        "clinicas": 4,
+        "avaliacoes_somadas": 756,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Sorridents Clínicas Odontológicas Mooca São Paulo",
+            "nota": 4.8,
+            "avaliacoes": 649
+          },
+          {
+            "nome": "Odontologia do Esporte, Sono e especialidades.Dra Márcia Yamashita e Equipe",
+            "nota": 5,
+            "avaliacoes": 86
+          },
+          {
+            "nome": "Dra. Layla Corrêa - Mooca ,SP - Clareamento Dental, Lentes em Resina, Ortodontia, Limpeza, Botox, Preenchimento labial",
+            "nota": 5,
+            "avaliacoes": 11
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "4 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Vila Clementino",
+        "clinicas": 4,
+        "avaliacoes_somadas": 97,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "BASE Odontologia Inteligente",
+            "nota": 5,
+            "avaliacoes": 87
+          },
+          {
+            "nome": "Ortodontia - Dra Érika Madid & Dra. Maria Teresa Romero",
+            "nota": 5,
+            "avaliacoes": 5
+          },
+          {
+            "nome": "Dra. Denise N. Shaffer Dentista Ortodontista",
+            "nota": 5,
+            "avaliacoes": 4
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "4 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Itaim Bibi",
+        "clinicas": 4,
+        "avaliacoes_somadas": 143,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Rittes Odontologia | Aparelho Ortodôntico | Invisalign",
+            "nota": 4.8,
+            "avaliacoes": 72
+          },
+          {
+            "nome": "Invisalign",
+            "nota": 3.3,
+            "avaliacoes": 47
+          },
+          {
+            "nome": "Dra. Elaine Nanci - Ortodontia SP (Top Doctor Invisalign)",
+            "nota": 5,
+            "avaliacoes": 17
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "4 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Centro Histórico de São Paulo",
+        "clinicas": 3,
+        "avaliacoes_somadas": 806,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Ultra Fácil Odontologia São Bento",
+            "nota": 4.5,
+            "avaliacoes": 656
+          },
+          {
+            "nome": "Ultra Fácil - Clínica Odontológica",
+            "nota": 2.3,
+            "avaliacoes": 78
+          },
+          {
+            "nome": "Clínica Odontológica Dra. Mayara Vianna | Dentista no Centro de São Paulo",
+            "nota": 5,
+            "avaliacoes": 72
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "3 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Moema",
+        "clinicas": 3,
+        "avaliacoes_somadas": 544,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "One Odontologia Moema - Invisalign em Moema",
+            "nota": 5,
+            "avaliacoes": 340
+          },
+          {
+            "nome": "Invisa Clinic | Invisalign | Alinhadores Invisíveis",
+            "nota": 5,
+            "avaliacoes": 191
+          },
+          {
+            "nome": "Dr. Fábio Segawa | Ortodontista em SP",
+            "nota": 5,
+            "avaliacoes": 13
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "3 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Brás",
+        "clinicas": 3,
+        "avaliacoes_somadas": 442,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "COB - Clínica Odontológica do Brás",
+            "nota": 4.9,
+            "avaliacoes": 236
+          },
+          {
+            "nome": "Odonto Company - Brás",
+            "nota": 4.2,
+            "avaliacoes": 150
+          },
+          {
+            "nome": "Oral Brás",
+            "nota": 4.7,
+            "avaliacoes": 56
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "3 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Higienópolis",
+        "clinicas": 3,
+        "avaliacoes_somadas": 334,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Clínica São Paulo Dental Studio",
+            "nota": 5,
+            "avaliacoes": 207
+          },
+          {
+            "nome": "Dentista e Invisalign Higienópolis - Clínica Odontológica GEN",
+            "nota": 5,
+            "avaliacoes": 122
+          },
+          {
+            "nome": "Dra. Márcia Farina - Farina Ortodontia e Odontologia Especializada",
+            "nota": 5,
+            "avaliacoes": 5
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "3 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Lapa",
+        "clinicas": 3,
+        "avaliacoes_somadas": 532,
+        "temos_unidade": true,
+        "nossas": [
+          "orthodontic"
+        ],
+        "vizinhos_fortes": [
+          {
+            "nome": "Odontolapa | Lapa | Próximo a 12 de Outubro",
+            "nota": 4.9,
+            "avaliacoes": 175
+          },
+          {
+            "nome": "Orto Clube",
+            "nota": 4.6,
+            "avaliacoes": 168
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "3 clínicas varridas, e a unidade da rede está aqui"
+      },
+      {
+        "bairro": "Vila Buarque",
+        "clinicas": 2,
+        "avaliacoes_somadas": 958,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Sorridents Clínicas Odontológicas Santa Cecília São Paulo",
+            "nota": 4.7,
+            "avaliacoes": 797
+          },
+          {
+            "nome": "Clínica Ede",
+            "nota": 4.9,
+            "avaliacoes": 161
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "2 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Penha de França",
+        "clinicas": 2,
+        "avaliacoes_somadas": 375,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Sorriso Kids - Clínica especializada em Crianças",
+            "nota": 4.9,
+            "avaliacoes": 318
+          },
+          {
+            "nome": "Dra. Vivianne Sato | Ortodontista Especializada",
+            "nota": 5,
+            "avaliacoes": 57
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "2 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Santana",
+        "clinicas": 2,
+        "avaliacoes_somadas": 32,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dentista em Santana SP – Dra. Martha Cyrillo | Ortodontia",
+            "nota": 5,
+            "avaliacoes": 28
+          },
+          {
+            "nome": "Dental São Paulo Comércio de Produtos Ortodonticos",
+            "nota": 5,
+            "avaliacoes": 4
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "2 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Santo Amaro",
+        "clinicas": 1,
+        "avaliacoes_somadas": 1181,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Seu Sorriso Odontologia",
+            "nota": 4.6,
+            "avaliacoes": 1181
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Paulista",
+        "clinicas": 1,
+        "avaliacoes_somadas": 607,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "SouSmile",
+            "nota": 4.8,
+            "avaliacoes": 607
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      }
+    ],
+    "bairros_sem_a_rede": [
+      {
+        "bairro": "Bela Vista",
+        "clinicas": 39,
+        "avaliacoes_somadas": 4683,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Simioni Odontologia - Implante e Lente de Contato Dental",
+            "nota": 5,
+            "avaliacoes": 653
+          },
+          {
+            "nome": "Prado Odontologia e Medicina",
+            "nota": 4.9,
+            "avaliacoes": 430
+          },
+          {
+            "nome": "Benatti Odontologia",
+            "nota": 4.9,
+            "avaliacoes": 426
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "39 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Vila Mariana",
+        "clinicas": 15,
+        "avaliacoes_somadas": 2403,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Odontoclinic",
+            "nota": 5,
+            "avaliacoes": 950
+          },
+          {
+            "nome": "Clínica Antonioli",
+            "nota": 4.9,
+            "avaliacoes": 427
+          },
+          {
+            "nome": "Dental Ortho-Lipe",
+            "nota": 5,
+            "avaliacoes": 254
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "15 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Jardim Paulista",
+        "clinicas": 12,
+        "avaliacoes_somadas": 1148,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Sorridents Clínicas Odontológicas Oscar Freire São Paulo",
+            "nota": 4.6,
+            "avaliacoes": 243
+          },
+          {
+            "nome": "Mishima Odontologia",
+            "nota": 5,
+            "avaliacoes": 229
+          },
+          {
+            "nome": "Guerreiro Clinic",
+            "nota": 4.9,
+            "avaliacoes": 190
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "12 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Liberdade",
+        "clinicas": 9,
+        "avaliacoes_somadas": 512,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dental Excellence Matriz",
+            "nota": 4,
+            "avaliacoes": 220
+          },
+          {
+            "nome": "Dentika Clínicas Odontológicas Liberdade",
+            "nota": 4.6,
+            "avaliacoes": 160
+          },
+          {
+            "nome": "R&P Odontologia | Dentista | Liberdade | Vila Mariana | Aclimação",
+            "nota": 5,
+            "avaliacoes": 47
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "9 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Cerqueira César",
+        "clinicas": 8,
+        "avaliacoes_somadas": 925,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Clopi - Clínica Odontológica Pinheiros",
+            "nota": 4.5,
+            "avaliacoes": 343
+          },
+          {
+            "nome": "Clinica Odontológica COFA Odontologia",
+            "nota": 4.8,
+            "avaliacoes": 265
+          },
+          {
+            "nome": "Dra. Joyce Campbell",
+            "nota": 5,
+            "avaliacoes": 197
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "8 clínicas varridas, e a rede não está aqui"
+      }
+    ],
+    "manchete": "49 bairros medidos · a rede está em 4 deles",
+    "leitura": "O bairro com mais clínicas é Bela Vista, com 39 clínicas varridas, e a rede NÃO está lá.",
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 185,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
+      "a_favor": [],
+      "contra": [
+        "3 endereços sem bairro legível"
+      ],
+      "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
+      "procedencia": "medido em 185 clínicas varridas, 1 medição"
+    }
+  },
+  "movimentos_do_mercado": {
+    "eventos": [],
+    "resumo": {
+      "praca_id": "sao_paulo",
+      "rotulo": "SP · São Paulo",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
+  "imprensa": {
+    "medido": true,
+    "total": 68,
+    "mostrando": 12,
+    "recentes_30d": 31,
+    "manchete": "31 matérias sobre a cidade nos últimos 30 dias, de 68 já lidas",
+    "porque_vazio": null,
+    "materias": [
+      {
+        "titulo": "Entidades lançam Frente em Defesa da Educação e contra privatizações de Tarcísio e Nunes em SP - Hora do Povo",
+        "veiculo": "Hora do Povo",
+        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQdFpPU0ttcWliMS0xcVdNdUNHekd1ZDVjM3FXQmZaRS15NGxDak44U2pCUHFoS1Jvd1EtX1pBSzZyWjJxWWs0U3haV2NCLU00YndHVFF2YXVGczdvaTRtaUs5ZEFhMG5ldDBqRzNFV0Y0VjBzNkp6NTZoMEk0d0lDMWRVeXJ0Mng2NTJpSXktUFV6VmRveHoxZmNfQmdETTlPVy1qbDVod3JnSkRJX21vb1EzLUc0elRlUVV6Nzd5MG02cHFmakVz?oc=5",
+        "publicado": "2026-08-13",
+        "dias": 0
+      },
+      {
+        "titulo": "Haddad diz que motorista foi abordado por PMs após deixá-lo em casa em SP: 'estava abalado, tinham 3 fuzis na viatura' - G1",
+        "veiculo": "G1",
+        "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNVXpuS1VjOUJWbmswY0lKdmZWNnFlOEpEeUFGSWdOanN1RnJUaDE4RjJTWEtfN2dRdmRGbWJvV05YMnVLYklUa1JQd1VmbDJBT01TQkpjNEVxcHJFY2lmS0Jma2hnLUdMei00TXVwRkcwS2djLUkxa2JfbWZndUp2bXNmWjFHVGRGUnJmVm1ZUzhsZ3RZbDhGV1RaM2VFQWZ2aEJuWTVZT241cGlFRmxRMW1LaHp3a3hsLTE3SzQ2Tnh4MUlsOGc5REt6Q0RjYk5Ec3VQWnNmX21ydEhra1BGMFM0QTJQb2pNbkliYtIB-wFBVV95cUxPanZXaDlkR0Rnek5hbUZRbUNkOFR2SEV2anhoVUpwNG9RYW9WMy1FU19HUjEtUW92Q091Y2FhLXY3aDJEVlNsQnUyNVlXYVFKMVRwZV9wS0RXdTZVN0hQNm1VUWlBdlYycXZVNTBUNzhzb0k3dmhlbHZNZV8wWklVRzZ6dzdyVDlSczJEZWFjSDROb0RjSTNtQWRRR2NUclpWZlcyTThpeDFJTzFSXzlldm1IX0szbjNXM3hQRm5XM2hwOFBlem5HZ09EVk91S25zTFBZOG83aUVVX2x1UGk3dncxTDhfZDNldURiem0zYXBCM1NoemNmN29JMA?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Governo de SP aciona STF para liberação de R$ 5,4 bilhões em empréstimos - Metrópoles",
+        "veiculo": "Metrópoles",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQempqVVBQSlZqTjZicnA3YTNSdHpHR3BQOV95VlVqcWYxcl9McGRPSjN4V3VkN200NTBzd0FFczFQeW1LYWV4WlhhYm52TDBfZW82Skh3bEVMaUZ6TVV4NGI3THJLTGxuVWVSTlJqaDJ6ZTM1bTlSbmN2NnlWZlVaT2lNN21NeHhLam56TF9qQmNyT2otSC0wVFdaTTcxbHhValhSRjNMQWlReXc?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Tuberculose passa de 3,4 mil casos na capital de SP até junho; adultos jovens são os mais afetados - G1",
+        "veiculo": "G1",
+        "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPRVFMU2VwMHB6T2pNZzgzQTFzU0RSMnhqc0E5MGFFTHJZMEdib1RMUndfOVRGY0JIU3ZNS3ctR1ZsY2pnMEdkWFRoemVFTFZNQnh4QWhEaTUtSWE1NFNKWm5RcGlZVzBzWnZrdUtwYnZicmgxUXVFaEF4YVBJMW5qeUx3MGhUaGZVTWdjTnNoSzlISkc5STZtT2FTTFlJaXBqVU85YVhDazBHenB3dl9yMHBxdGdrczV1eFU4UFp6eFRvVEpPOElHQjlGblNyMDlZSjE4RkRLdTdEOTI0NlpUajR3djgtUTd1WmQ40gH6AUFVX3lxTE9RbXhPUDJoYlFFMmZQWXc4ZEszYVJ0bE10WHFiaGZEelFEc0FIUzV1NFczLTRpaG1FUWZYSDJydnZlYlR4Q1FGV2QtUDlRcm01UHE2RWtCbHhLUGFHM1d5V3B3Sno2NXZ1X3g2Sm1pQzdEekxIa0QzUmdwWUtiSGREdEFoZE5rdVVRXzNsRFZ1dnhwTjNlWDllLXdoXzRuUjZERzJreEJ4X04yYjBlcjhhbFA4V2JwM3JfcU42MnA4VGdpeXJzbHZQdjJCU1VVS29ib1FDQlBUYW9ydDlJV3VUakdRcEVTQ25NODIzMDQ5Ni0zUjRYMTJNWHc?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Previsão do tempo hoje para São Paulo (SP): sol com muitas nuvens durante o dia e períodos de céu nublado; noite com muitas nuvens - G1",
+        "veiculo": "G1",
+        "link": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxOVnMtb09QTFEtUEJhWmNJLVJYVElwUXN4MVJGbHVna2R3RGFHa1JTRXhQLW1ob0JMSGpUR2RiS1hiYzk1NW9XMVFsWmFDdUpYQzFiXzVnLWROd3lpM1BBMy1nVlQ4TnM2NUlkV1ZkVHZMVlRfZE11bE9SdU8yYXFCbXRJWkt0c25Mb2hTQ0ozT0dVQXRkaWQtR25sWmx4N1dzU0xqbk9VSmVRb3YwTXp4VW5uNW5MNTVxS2wzckNiNWhNcnhaUW1ROHZDTnVtVklDclJRX3NoMFJMSGRfZjBCZXdkSjFHRXBOdjh3ZXNBTXp4RkZpX3lKSzM3WU1lOGM4RXhCZ0F5UmhEcXpxdzc0WUdhRTdGMkthc1R2X01aZ0RIYVBLNmxfeDRMY9IBugJBVV95cUxNWlJzRjVlM0xnZG5jdjVuaVhGWFo4bkdCZGdqYmRieW5qVHRwNlV6cXV4bzZxZnhDQ0Y0MnVPZG40V3J0MDlVdXhRamtwekZ0aENmMkVoVE9QOXFDMGptUTU2c2cyQzhZWGVqMHk2VFRudHFNbGhOMThjSFF1enl1aXJ5RWJLWHBEU2NCaHh4aVBNMDBmMmRQRmRBUnF6YWJhS1Q3RVRwbUR4M3FhZEFwVkZpNnNKZWQ0WFY4b08tZ0JvU2pqX1JfcVo1UG4wb05VTTJ3M3RMYXlvcnI1V2lmSG5aWUlYaDMyTGxTNTQ3MEtrMXVJaHRHLUI2QzNHQXhUcFc2X2xkbUVxMUFDeW5GR3VqeDIxUGVoRTZqYjRyc1U1R1J5c1ZEX2R0VWdPN3ZDMEJrdUFBZUJBQQ?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "'Nenhum grande artista está disponível', diz Nunes sobre megashow na Avenida Paulista neste ano - G1",
+        "veiculo": "G1",
+        "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNRnFzTHFLTURtdEVkd2tuWVJCUVRnMnhlMTgtNFlDc2s1ajZFMlBNZ3FZM1lPTkZQenQxQzAyVWV3OUZfVjBYaVRlaS1OdFRrVXdHb2JOSEVicjVZX3k3c3N3SlBidUktWHJqSkQ5dTJvcEVEbHh0eDk5YnFZQXlBc1MyTDM5RkdNSkQxaXJRWFhWM3RhVkUyYUlyV3RrdDdfaDRVdUdJU0FwNW5yd24yTmdfeS0zbmVFRDMyaTE1eElueml0cUdTaWluS1BfTEdWbkpxZHAydFB4REJRX252bk9oRGVzd9IB9AFBVV95cUxPS3N1R0IwYThsUXhsVjRDZFhJUUtrSnc1QS1XdHBVbXcxbDVNamtKT3lzYm9EX3VfUC1zTjF3S3JtelBVcFMyZU9HODhaQWN5dWdjYlZwM1BCYzc4b1UzaWJpM1NLcm9RUVBTLUc3MFZzSHhEenMwZGt4V05MLWRjRnF3d1JGZTUyRFQ0azhmaFVOaVhLTzBZWUdqb2xJSnZNN1QxVXYtR1dPM2FwM1ktLXJickpUYWVqZG52QkgzQ1VjUHB4NWpLWGlmcm9yUmFrNERaQzNYMW5mNXlOZFlHOEhDYXdpQUUyUUlueDlpRThsWUl5?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "A convite do vice-prefeito de Moscou, Prefeitura de São Paulo desembarca na Rússia - Prefeitura de São Paulo",
+        "veiculo": "Prefeitura de São Paulo",
+        "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPaF9OTmlnZTVSaVZpY2JPVTZENWo0bUtLYlBJU01Nc1p5UTNvaEJYYkxYNGxOeGE3TFNFV0Y5cE5fcHBMVkZwNjRQRXY0QUxPZDlDb2J3NFliWFVkM3RYQzNEUWhJXzUtRTlnVTRWMWFIOWdnX2dlYlJ4LU43RmZNUzJiaDRtTEZhYkszbVVfYURUcmJJbXM0SnZiYUVZU3l4bkhZWEtxTkY0TVZzYUtkaDRkSUk1T1BIVnpNbEF4OTQ1NDd4ZlJHTjVGVVd1V3d4el94OGVYV3NrNXRSMzVtWlpuOFA?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Defesa Civil alerta para onda de calor e riscos de incêndios florestais no Estado de São Paulo - agenciasp.sp.gov.br",
+        "veiculo": "agenciasp.sp.gov.br",
+        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQZXpXOThWLXptYU9KSlV6ZGRQREJ1THZoMGdpV0ZqVXNwTUgzUFM4OENTRkl6UGZKWFg4QlNteUdiS2tJNnVvM2xYWkZnQWJJUmZ1UnRwQldHd0xQbWxzc3NFai1Jbmg4V2JrX3BBeTFRbndHR1RzTEpLOERXNVBqSFpIT25DNjNNZjR0bDA3Y25hbmJJVjFwMWRrSVVNVm02MmZWbnpJUmw2cW9NdmNINzNnMVhFenBSUDRfWXFLVTFUSHhiR3c?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "CGIBS avança na estruturação e elege diretores e órgãos de controle em reunião em São Paulo - Confederação Nacional de Municípios (CNM)",
+        "veiculo": "Confederação Nacional de Municípios (CNM)",
+        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQaEp1cmtFRWhydTZHRGhmLWdONmE3TU16eDlaVF9nUTUwNXhDNDdXZTNlcjNPU2NzRGJiLU9RT2ZGVWFuTFJSVDQ2MkJCV0FxVmhobDhjYzlxMzBIUC1DbFg4WnpXVjhlakg1VVlLSlA1Nm5fNXhCUEpPdklaQlZ0ZGRuaXZ3RmRwOFBqbDB2eE9iR0MzSVFfTUN1ZkthbThpQ2szdzZ6cW1tNXZ6VGZ3MUJnMW94clFkYmtTdTRRbnhndmpNRW0zN3lrVQ?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "New Order | São Paulo | 23/11/2026 (Data Extra) - Ticketmaster Brasil",
+        "veiculo": "Ticketmaster Brasil",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1oTG0wNkQtM1phQk1wVkZ5dEN1Ql9fM2FqWWxCU2pIeVlNQ2JKdVNHeXQxUXZtZnpiOGJYQmhDUlFmMkVBT0NVY2FBTnVWbVFoWVMyTkp0dHc0bVFHZERndDZ6UUYtMVZnZnc?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "1926: Cientista Marie Curie sai do Rio e vem a São Paulo dar conferência - 12/08/2026 - Banco de Dados - Folha de S.Paulo",
+        "veiculo": "Folha de S.Paulo",
+        "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQYlVuaUlrNjNWZ2luTW1VV3VrWjdQNTlsd3Jsbk5mVzFFUWJGSU9yNm9qOGhpbnFwNmtaeU1JamlFaEdOeXRvUkRpbFJPUExCUUxwd29qbFVyalBQLUpDMm9LMERHV2JjWEpvX3Vnd2RjbVR5M3dzeF9nc2xveEVRVDl4aWs2VXM1Mm83QXliUm9GWjh4QXFuT2hqNVFYZUsyXzhjaFRMV1JPckVSOUFGeEE2b3lXMzl2YUVDMTRIQm9IR3EyRVpPdUh3?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Reparação pelos 'crimes de maio' de 2006 é imprescritível, decide STJ - Consultor Jurídico",
+        "veiculo": "Consultor Jurídico",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPOGRFWkY5bG51N2FkV2sya1FLT1lMV2phMFJua0V2RThvLXVCVzdDMWNOY2VqenQ1U2h6dm1GN0ZCZTVZTnpMT09mVkVJMDY3Y240UFYzcFlPN21wLWI1VElPMGVTWlh2VFdGWDViT3Y4Y2ZSYkx2T2w2Q2VpdmlzbVpsN0cweEdLNkdJQ0dDQUNYOUtLLWN3QWNxOVNtSjZVYzlJ?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      }
+    ]
+  },
+  "ritmo_de_publicacao": {
+    "medido": false,
+    "perfis": 0,
+    "vivos": 0,
+    "parados": 0,
+    "manchete": null,
+    "porque_vazio": "nenhum perfil medido nesta cidade",
+    "lista": []
+  },
+  "placar": [
+    {
+      "local_id": "sorridents_clinicas_odonto",
+      "nome": "Sorridents Clínicas Odontológicas Tatuapé São Paulo",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.9,
+      "avaliacoes": 651,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "orthodontic",
+      "nome": "OrthoDontic",
+      "tipo": "franquia",
+      "proprio": true,
+      "nota": 4.9,
+      "avaliacoes": 308,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    }
+  ],
+  "funil": null,
+  "temas": [],
+  "sazonalidade": [],
+  "sazonalidade_estado": {
+    "tem": false,
+    "medimos": true,
+    "por_que": "o Trends não publica índice de cidade para este termo: das 124 cidades de SC, das 186 do PR e das 108 do PR com o termo mais largo 'ortodontista', NENHUMA teve volume — Londrina e Mafra incluídas, com valor 0",
+    "as_duas_travas": {
+      "volume": "pelo menos 55% das semanas com busca e 9 meses do ano",
+      "estabilidade": "o mês de pico repetido em pelo menos 3 dos anos medidos"
+    },
+    "veredito_por_uf": [
+      {
+        "regiao": "SP",
+        "porque": "pico_nao_repete",
+        "semanas_com_busca": 261,
+        "semanas": 261,
+        "pico_repete_em": 2,
+        "anos_medidos": 5
+      }
+    ],
+    "o_que_preenche": "nada que seja fonte externa: o Trends não publica índice para este termo nesta escala. Só dado interno da rede (agenda, contratos) diria quando a procura sobe — e isso é teto do produto",
+    "quem_responde": "só a rede, por dentro"
+  },
+  "o_que_mudou": null
+}

@@ -1,15 +1,15 @@
 {
   "o_que_e": "Todas as unidades da lista oficial da rede, por estado e cidade. As que já têm estudo abrem a página da clínica; as outras aparecem para que o tamanho do que falta seja visível.",
-  "corte": "2026-08-12",
+  "corte": "2026-08-13",
   "cadastro_lido_em": "2026-08-12",
   "fichas_medidas_em": "2026-08-10",
   "porque_duas_datas": "o cadastro vem do site da rede e é lido todo dia; nota e avaliações vêm de uma varredura do Google que custa cota e roda de vez em quando",
   "unidades_total": 373,
-  "com_estudo": 32,
-  "sem_escuta": 341,
+  "com_estudo": 44,
+  "sem_escuta": 329,
   "ufs_total": 23,
   "cidades_total": 303,
-  "manchete": "32 de 373 unidades com estudo — as outras 341 ainda não foram escutadas",
+  "manchete": "44 de 373 unidades com estudo — as outras 329 ainda não foram escutadas",
   "com_estudo_sem_linha_oficial": 5,
   "cidades_com_mais_de_uma_loja": 44,
   "ufs": [
@@ -2687,11 +2687,11 @@
               "avaliacoes": 127,
               "ficha_medida_em": "2026-08-10",
               "confirmada": true,
-              "com_estudo": false,
-              "local_id": null,
-              "arquivo": null,
-              "faixa": null,
-              "urgencia": null,
+              "com_estudo": true,
+              "local_id": "orthodontic",
+              "arquivo": "clinicas/orthodontic",
+              "faixa": "verde",
+              "urgencia": 20,
               "tarefa": null
             },
             {
@@ -2703,11 +2703,11 @@
               "avaliacoes": 61,
               "ficha_medida_em": "2026-08-10",
               "confirmada": true,
-              "com_estudo": false,
-              "local_id": null,
-              "arquivo": null,
-              "faixa": null,
-              "urgencia": null,
+              "com_estudo": true,
+              "local_id": "orthodontic_centro",
+              "arquivo": "clinicas/orthodontic_centro",
+              "faixa": "amarela",
+              "urgencia": 50,
               "tarefa": null
             },
             {
@@ -2728,7 +2728,7 @@
             }
           ],
           "unidades_total": 3,
-          "com_estudo": 0,
+          "com_estudo": 2,
           "estudos_sem_linha_oficial": [],
           "porque_sem_linha": null,
           "mais_de_uma_loja": true,
@@ -2821,9 +2821,9 @@
       ],
       "cidades_total": 32,
       "unidades_total": 37,
-      "com_estudo": 1,
-      "sem_escuta": 36,
-      "frase": "37 unidades em 32 cidades · 1 com estudo"
+      "com_estudo": 3,
+      "sem_escuta": 34,
+      "frase": "37 unidades em 32 cidades · 3 com estudo"
     },
     {
       "uf": "MS",
@@ -3831,8 +3831,8 @@
               "com_estudo": true,
               "local_id": "ortho_cwb_centro",
               "arquivo": "clinicas/ortho_cwb_centro",
-              "faixa": "verde",
-              "urgencia": 20,
+              "faixa": "amarela",
+              "urgencia": 35,
               "tarefa": null
             },
             {
@@ -3847,8 +3847,8 @@
               "com_estudo": true,
               "local_id": "ortho_cwb_portao",
               "arquivo": "clinicas/ortho_cwb_portao",
-              "faixa": "verde",
-              "urgencia": 20,
+              "faixa": "amarela",
+              "urgencia": 35,
               "tarefa": null
             },
             {
@@ -3863,8 +3863,8 @@
               "com_estudo": true,
               "local_id": "ortho_cwb_centro_3",
               "arquivo": "clinicas/ortho_cwb_centro_3",
-              "faixa": "verde",
-              "urgencia": 20,
+              "faixa": "amarela",
+              "urgencia": 35,
               "tarefa": null
             },
             {
@@ -3879,8 +3879,8 @@
               "com_estudo": true,
               "local_id": "ortho_cwb_centro_4",
               "arquivo": "clinicas/ortho_cwb_centro_4",
-              "faixa": "amarela",
-              "urgencia": 50,
+              "faixa": "vermelha",
+              "urgencia": 65,
               "tarefa": null
             },
             {
@@ -3895,8 +3895,8 @@
               "com_estudo": true,
               "local_id": "ortho_cwb_centro_2",
               "arquivo": "clinicas/ortho_cwb_centro_2",
-              "faixa": "verde",
-              "urgencia": 20,
+              "faixa": "amarela",
+              "urgencia": 35,
               "tarefa": null
             },
             {
@@ -4954,11 +4954,11 @@
               "avaliacoes": 297,
               "ficha_medida_em": "2026-08-10",
               "confirmada": true,
-              "com_estudo": false,
-              "local_id": null,
-              "arquivo": null,
-              "faixa": null,
-              "urgencia": null,
+              "com_estudo": true,
+              "local_id": "orthodontic",
+              "arquivo": "clinicas/orthodontic",
+              "faixa": "verde",
+              "urgencia": 20,
               "tarefa": null
             },
             {
@@ -4995,7 +4995,7 @@
             }
           ],
           "unidades_total": 3,
-          "com_estudo": 0,
+          "com_estudo": 1,
           "estudos_sem_linha_oficial": [],
           "porque_sem_linha": null,
           "mais_de_uma_loja": true,
@@ -5004,9 +5004,9 @@
       ],
       "cidades_total": 3,
       "unidades_total": 5,
-      "com_estudo": 0,
-      "sem_escuta": 5,
-      "frase": "5 unidades em 3 cidades · nenhuma escutada"
+      "com_estudo": 1,
+      "sem_escuta": 4,
+      "frase": "5 unidades em 3 cidades · 1 com estudo"
     },
     {
       "uf": "RO",
@@ -5408,11 +5408,11 @@
               "avaliacoes": 357,
               "ficha_medida_em": "2026-08-10",
               "confirmada": true,
-              "com_estudo": false,
-              "local_id": null,
-              "arquivo": null,
-              "faixa": null,
-              "urgencia": null,
+              "com_estudo": true,
+              "local_id": "orthodontic",
+              "arquivo": "clinicas/orthodontic",
+              "faixa": "verde",
+              "urgencia": 20,
               "tarefa": null
             },
             {
@@ -5424,11 +5424,11 @@
               "avaliacoes": 171,
               "ficha_medida_em": "2026-08-10",
               "confirmada": true,
-              "com_estudo": false,
-              "local_id": null,
-              "arquivo": null,
-              "faixa": null,
-              "urgencia": null,
+              "com_estudo": true,
+              "local_id": "orthodontic_centro",
+              "arquivo": "clinicas/orthodontic_centro",
+              "faixa": "amarela",
+              "urgencia": 50,
               "tarefa": null
             },
             {
@@ -5440,16 +5440,16 @@
               "avaliacoes": 89,
               "ficha_medida_em": "2026-08-10",
               "confirmada": true,
-              "com_estudo": false,
-              "local_id": null,
-              "arquivo": null,
-              "faixa": null,
-              "urgencia": null,
+              "com_estudo": true,
+              "local_id": "orthodontic_kayser",
+              "arquivo": "clinicas/orthodontic_kayser",
+              "faixa": "amarela",
+              "urgencia": 50,
               "tarefa": null
             }
           ],
           "unidades_total": 3,
-          "com_estudo": 0,
+          "com_estudo": 3,
           "estudos_sem_linha_oficial": [],
           "porque_sem_linha": null,
           "mais_de_uma_loja": true,
@@ -6426,9 +6426,9 @@
       ],
       "cidades_total": 39,
       "unidades_total": 52,
-      "com_estudo": 7,
-      "sem_escuta": 45,
-      "frase": "52 unidades em 39 cidades · 7 com estudo"
+      "com_estudo": 10,
+      "sem_escuta": 42,
+      "frase": "52 unidades em 39 cidades · 10 com estudo"
     },
     {
       "uf": "SC",
@@ -6858,8 +6858,8 @@
           "frase": "1 unidade nesta cidade"
         },
         {
-          "cidade": "Florianopolis",
-          "rotulo": "SC · Florianopolis",
+          "cidade": "Florianópolis",
+          "rotulo": "SC · Florianópolis",
           "unidades": [
             {
               "unidade": "Florianopolis - Rua Sete de Setembro",
@@ -6870,11 +6870,11 @@
               "avaliacoes": 311,
               "ficha_medida_em": "2026-08-10",
               "confirmada": true,
-              "com_estudo": false,
-              "local_id": null,
-              "arquivo": null,
-              "faixa": null,
-              "urgencia": null,
+              "com_estudo": true,
+              "local_id": "ortho_fln_centro",
+              "arquivo": "clinicas/ortho_fln_centro",
+              "faixa": "vermelha",
+              "urgencia": 65,
               "tarefa": null
             },
             {
@@ -6886,11 +6886,11 @@
               "avaliacoes": 259,
               "ficha_medida_em": "2026-08-10",
               "confirmada": true,
-              "com_estudo": false,
-              "local_id": null,
-              "arquivo": null,
-              "faixa": null,
-              "urgencia": null,
+              "com_estudo": true,
+              "local_id": "ortho_fln_centro_2",
+              "arquivo": "clinicas/ortho_fln_centro_2",
+              "faixa": "verde",
+              "urgencia": 20,
               "tarefa": null
             },
             {
@@ -6902,16 +6902,16 @@
               "avaliacoes": 267,
               "ficha_medida_em": "2026-08-10",
               "confirmada": true,
-              "com_estudo": false,
-              "local_id": null,
-              "arquivo": null,
-              "faixa": null,
-              "urgencia": null,
+              "com_estudo": true,
+              "local_id": "ortho_fln_ingleses_do_rio_vermel",
+              "arquivo": "clinicas/ortho_fln_ingleses_do_rio_vermel",
+              "faixa": "verde",
+              "urgencia": 20,
               "tarefa": null
             }
           ],
           "unidades_total": 3,
-          "com_estudo": 0,
+          "com_estudo": 3,
           "estudos_sem_linha_oficial": [],
           "porque_sem_linha": null,
           "mais_de_uma_loja": true,
@@ -7752,9 +7752,9 @@
       ],
       "cidades_total": 43,
       "unidades_total": 50,
-      "com_estudo": 4,
-      "sem_escuta": 46,
-      "frase": "50 unidades em 43 cidades · 4 com estudo"
+      "com_estudo": 7,
+      "sem_escuta": 43,
+      "frase": "50 unidades em 43 cidades · 7 com estudo"
     },
     {
       "uf": "SE",
@@ -9246,7 +9246,7 @@
               "local_id": "ortho_soro_jardim_faculdade",
               "arquivo": "clinicas/ortho_soro_jardim_faculdade",
               "faixa": "vermelha",
-              "urgencia": 65,
+              "urgencia": 80,
               "tarefa": null
             },
             {
@@ -9262,7 +9262,7 @@
               "local_id": "ortho_soro_centro",
               "arquivo": "clinicas/ortho_soro_centro",
               "faixa": "amarela",
-              "urgencia": 35,
+              "urgencia": 50,
               "tarefa": null
             },
             {
@@ -9538,9 +9538,9 @@
               "avaliacoes": 108,
               "ficha_medida_em": "2026-08-10",
               "confirmada": true,
-              "com_estudo": false,
-              "local_id": null,
-              "arquivo": null,
+              "com_estudo": true,
+              "local_id": "orthodontic_tatuape",
+              "arquivo": "clinicas/orthodontic_tatuape",
               "faixa": null,
               "urgencia": null,
               "tarefa": null
@@ -9570,11 +9570,11 @@
               "avaliacoes": 189,
               "ficha_medida_em": "2026-08-10",
               "confirmada": true,
-              "com_estudo": false,
-              "local_id": null,
-              "arquivo": null,
-              "faixa": null,
-              "urgencia": null,
+              "com_estudo": true,
+              "local_id": "orthodontic",
+              "arquivo": "clinicas/orthodontic",
+              "faixa": "verde",
+              "urgencia": 20,
               "tarefa": null
             },
             {
@@ -9602,16 +9602,16 @@
               "avaliacoes": 152,
               "ficha_medida_em": "2026-08-10",
               "confirmada": true,
-              "com_estudo": false,
-              "local_id": null,
-              "arquivo": null,
+              "com_estudo": true,
+              "local_id": "orthodontic_sao_miguel_paulista",
+              "arquivo": "clinicas/orthodontic_sao_miguel_paulista",
               "faixa": null,
               "urgencia": null,
               "tarefa": null
             }
           ],
           "unidades_total": 5,
-          "com_estudo": 0,
+          "com_estudo": 3,
           "estudos_sem_linha_oficial": [],
           "porque_sem_linha": null,
           "mais_de_uma_loja": true,
@@ -9844,9 +9844,9 @@
       ],
       "cidades_total": 65,
       "unidades_total": 78,
-      "com_estudo": 4,
-      "sem_escuta": 74,
-      "frase": "78 unidades em 65 cidades · 4 com estudo"
+      "com_estudo": 7,
+      "sem_escuta": 71,
+      "frase": "78 unidades em 65 cidades · 7 com estudo"
     },
     {
       "uf": "TO",

@@ -1,322 +1,406 @@
 {
-  "praca_id": "sao_paulo",
-  "nome": "São Paulo",
-  "cidades": [
-    "São Paulo/SP"
-  ],
-  "uf": [
-    "SP"
-  ],
-  "rotulo": "SP · São Paulo",
-  "cidades_rotulo": [
-    "SP · São Paulo"
-  ],
-  "criada_em": "2026-08-13",
-  "por_que_esta_praca": "cidade onde a rede já tem unidade e que ainda não tinha estudo. As metrópoles entram agora porque o mapa de bairros passou a existir: sem ele, cinco unidades em São Paulo virariam um número só, e o número não diria nada a nenhum franqueado",
-  "ibge": [
-    {
-      "municipio": "São Paulo",
-      "uf": "SP",
-      "ibge_id": 3550308,
-      "populacao_estimada": {
-        "ano": "2025",
-        "valor": "11904961",
-        "unidade": "Pessoas"
-      },
-      "alvo_9_15": 951577,
-      "alvo_30_45": 2778697,
-      "fonte": "ibge agregados 6579/5938/9514",
-      "de": "dados/serie/ibge_municipios.jsonl"
-    }
-  ],
-  "locais": [
-    {
-      "local_id": "orthodontic",
-      "papel": "proprio",
-      "tipo": "franquia",
-      "place_id": "ChIJAZQiOQn5zpQRPF5_Vb7t9ZU",
-      "nome": "OrthoDontic",
-      "avaliacoes_google": 189,
-      "nota_google": 4.7,
-      "endereco": "Rua Doze de Outubro, 385 Conj: 32 - Lapa, São Paulo - SP, 05073-001, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -23.521436299999998,
-        "lng": -46.7046912
-      }
-    },
-    {
-      "local_id": "orthodontic_sao_miguel_paulista",
-      "papel": "proprio",
-      "tipo": "franquia",
-      "place_id": "ChIJm6_XVIBhzpQRsA8cPj_TDgY",
-      "nome": "OrthoDontic",
-      "avaliacoes_google": 161,
-      "nota_google": 4.9,
-      "endereco": "R. Arlindo Colaço, 169 - São Miguel Paulista, São Paulo - SP, 08010-010, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -23.4923745,
-        "lng": -46.4425454
-      }
-    },
-    {
-      "local_id": "orthodontic_tatuape",
-      "papel": "proprio",
-      "tipo": "franquia",
-      "place_id": "ChIJa8Xh68FezpQRoL00kNnZk5I",
-      "nome": "OrthoDontic",
-      "avaliacoes_google": 108,
-      "nota_google": 4.1,
-      "endereco": "R. Tuiuti, 1971 - Tatuapé, São Paulo - SP, 03307-005, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -23.542748,
-        "lng": -46.5748943
-      }
-    },
-    {
-      "local_id": "orthodontic_republica",
-      "papel": "proprio",
-      "tipo": "franquia",
-      "place_id": "ChIJWT-VR1JYzpQROhYY6Z4x8QY",
-      "nome": "OrthoDontic",
-      "avaliacoes_google": 22,
-      "nota_google": 3,
-      "endereco": "R. Conselheiro Crispiniano, 72 - Salas 41 e 42 - República, São Paulo - SP, 01037-905, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -23.546505000000003,
-        "lng": -46.6398698
-      }
-    },
-    {
-      "local_id": "sorridents_clinicas_odonto",
-      "papel": "concorrente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJvYQyJFNYzpQRs_wmN45h0h0",
-      "nome": "Sorridents Clínicas Odontológicas Tatuapé São Paulo",
-      "avaliacoes_google": 1803,
-      "nota_google": 4.9,
-      "endereco": "R. Tuiuti, 2421 - Tatuapé, São Paulo - SP, 03307-000, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -23.5468439,
-        "lng": -46.5739124
-      }
-    },
-    {
-      "local_id": "seu_sorriso_odontologia",
-      "papel": "concorrente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJO54ejVZQzpQRlDAhT8wF4KQ",
-      "nome": "Seu Sorriso Odontologia",
-      "avaliacoes_google": 1181,
-      "nota_google": 4.6,
-      "endereco": "Rua Isabel Schmidt, 360 - Santo Amaro, São Paulo - SP, 04743-030, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -23.6517868,
-        "lng": -46.7029243
-      }
-    },
-    {
-      "local_id": "odontoclinic",
-      "papel": "concorrente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJEWkbN4RZzpQRnN3HYg0Bjgs",
-      "nome": "Odontoclinic",
-      "avaliacoes_google": 950,
-      "nota_google": 5,
-      "endereco": "R. Domingos de Morais, 725 - Vila Mariana, São Paulo - SP, 04009-000, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -23.582945,
-        "lng": -46.6379478
-      }
-    },
-    {
-      "local_id": "sousmile_pinheiros_unidade",
-      "papel": "concorrente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJ1VNvrQ1XzpQRU5eggzaOBlA",
-      "nome": "SouSmile | Pinheiros | Unidade Oficial",
-      "avaliacoes_google": 836,
-      "nota_google": 4.9,
-      "endereco": "Av. Rebouças, 3941 - Pinheiros, São Paulo - SP, 05401-450, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -23.5742957,
-        "lng": -46.69625
-      }
-    },
-    {
-      "local_id": "sorridents_clinicas_odonto_vila_buarque",
-      "papel": "concorrente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJESIKQyhZzpQRumBnxJikR4E",
-      "nome": "Sorridents Clínicas Odontológicas Santa Cecília São Paulo",
-      "avaliacoes_google": 797,
-      "nota_google": 4.7,
-      "endereco": "R. das Palmeiras, 248 - Vila Buarque, São Paulo - SP, 01226-010, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -23.5371576,
-        "lng": -46.6513269
-      }
-    },
-    {
-      "local_id": "drb_odonto_implantes_prote",
-      "papel": "concorrente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJu8K0EVJYzpQRAsynTZsld7s",
-      "nome": "DRB Odonto | Implantes, Próteses, Ortodontia e Estética no Centro de São Paulo - SP",
-      "avaliacoes_google": 680,
-      "nota_google": 4.9,
-      "endereco": "Rua 7 de Abril, 154 - Bloco IV - Bloco IV - R. Br. de Itapetininga, 37 - Sl 501 - República, São Paulo - SP, 01044-000, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -23.5462915,
-        "lng": -46.6408439
-      }
-    },
-    {
-      "local_id": "dentar_odontologia",
-      "papel": "concorrente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJ3dtOMpdXzpQRtogKUNrlnVg",
-      "nome": "Dentar Odontologia",
-      "avaliacoes_google": 674,
-      "nota_google": 5,
-      "endereco": "Av. Brig. Faria Lima, 1227 - Sl 05 - Pinheiros, São Paulo - SP, 01452-002, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -23.5685498,
-        "lng": -46.6920548
-      }
-    },
-    {
-      "local_id": "ultra_facil_odontologia_sa",
-      "papel": "concorrente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJq55UYnVZzpQRnKw8-Zy1EUU",
-      "nome": "Ultra Fácil Odontologia São Bento",
-      "avaliacoes_google": 656,
-      "nota_google": 4.5,
-      "endereco": "R. São Bento, 220 - Centro Histórico de São Paulo, São Paulo - SP, 01011-000, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -23.547237,
-        "lng": -46.6357271
-      }
-    },
-    {
-      "local_id": "simioni_odontologia_implan",
-      "papel": "concorrente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJ81MorF1ZzpQRjzSdv-4DoRg",
-      "nome": "Simioni Odontologia - Implante e Lente de Contato Dental",
-      "avaliacoes_google": 653,
-      "nota_google": 5,
-      "endereco": "R. Itapeva, 518 - conj. 210 - Bela Vista, São Paulo - SP, 01332-020, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -23.5604502,
-        "lng": -46.6536885
-      }
-    },
-    {
-      "local_id": "sorridents_clinicas_odonto_mooca",
-      "papel": "concorrente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJOYNIHTlZzpQRef_BnS7LTrM",
-      "nome": "Sorridents Clínicas Odontológicas Mooca São Paulo",
-      "avaliacoes_google": 649,
-      "nota_google": 4.8,
-      "endereco": "R. da Mooca, 2051 - Mooca, São Paulo - SP, 03103-003, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -23.5549312,
-        "lng": -46.6052665
-      }
-    },
-    {
-      "local_id": "odontoclinic_cambuci",
-      "papel": "concorrente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJgzvblm1ZzpQR5kwlRrIqkFY",
-      "nome": "Odontoclinic - Cambuci",
-      "avaliacoes_google": 608,
-      "nota_google": 4.9,
-      "endereco": "Av. Lins de Vasconcelos, 297 - Cambuci, São Paulo - SP, 01537-000, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -23.5658948,
-        "lng": -46.6212424
-      }
-    },
-    {
-      "local_id": "sousmile",
-      "papel": "concorrente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJm6dtw41ZzpQR-r4gBlqDe64",
-      "nome": "SouSmile",
-      "avaliacoes_google": 607,
-      "nota_google": 4.8,
-      "endereco": "R. Mário Amaral, 172 - Paulista, São Paulo - SP, 04002-020, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -23.5721992,
-        "lng": -46.6501309
-      }
-    },
-    {
-      "local_id": "setimplan_centro_odontolog",
-      "papel": "concorrente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJtSpy_FFYzpQRBD0lAzLz4_0",
-      "nome": "Setimplan Centro Odontológico",
-      "avaliacoes_google": 542,
-      "nota_google": 4.8,
-      "endereco": "R. Sete de Abril, 277 - 1º Andar - República, São Paulo - SP, 01044-000, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -23.545507000000004,
-        "lng": -46.641634599999996
-      }
-    },
-    {
-      "local_id": "sorridents_anhangabau",
-      "papel": "concorrente",
-      "tipo_concorrente": "PREENCHER",
-      "place_id": "ChIJP4GFMt1ZzpQRjVaWxoWxj-U",
-      "nome": "Sorridents Anhangabaú",
-      "avaliacoes_google": 540,
-      "nota_google": 4.8,
-      "endereco": "R. Conselheiro Crispiniano, 68 - República, São Paulo - SP, 01037-000, Brasil",
-      "place_id_origem": "varredura google places 2026-08-13",
-      "descoberto_em": "2026-08-13",
-      "location": {
-        "lat": -23.5464421,
-        "lng": -46.6400285
-      }
-    }
-  ]
+ "praca_id": "sao_paulo",
+ "nome": "São Paulo",
+ "cidades": [
+  "São Paulo/SP"
+ ],
+ "uf": [
+  "SP"
+ ],
+ "rotulo": "SP · São Paulo",
+ "cidades_rotulo": [
+  "SP · São Paulo"
+ ],
+ "criada_em": "2026-08-13",
+ "por_que_esta_praca": "cidade onde a rede já tem unidade e que ainda não tinha estudo. As metrópoles entram agora porque o mapa de bairros passou a existir: sem ele, cinco unidades em São Paulo virariam um número só, e o número não diria nada a nenhum franqueado",
+ "ibge": [
+  {
+   "municipio": "São Paulo",
+   "uf": "SP",
+   "ibge_id": 3550308,
+   "populacao_estimada": {
+    "ano": "2025",
+    "valor": "11904961",
+    "unidade": "Pessoas"
+   },
+   "alvo_9_15": 951577,
+   "alvo_30_45": 2778697,
+   "fonte": "ibge agregados 6579/5938/9514",
+   "de": "dados/serie/ibge_municipios.jsonl"
+  }
+ ],
+ "locais": [
+  {
+   "local_id": "orthodontic",
+   "papel": "proprio",
+   "tipo": "franquia",
+   "place_id": "ChIJAZQiOQn5zpQRPF5_Vb7t9ZU",
+   "nome": "OrthoDontic",
+   "avaliacoes_google": 189,
+   "nota_google": 4.7,
+   "endereco": "Rua Doze de Outubro, 385 Conj: 32 - Lapa, São Paulo - SP, 05073-001, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -23.521436299999998,
+    "lng": -46.7046912
+   }
+  },
+  {
+   "local_id": "orthodontic_sao_miguel_paulista",
+   "papel": "proprio",
+   "tipo": "franquia",
+   "place_id": "ChIJm6_XVIBhzpQRsA8cPj_TDgY",
+   "nome": "OrthoDontic",
+   "avaliacoes_google": 161,
+   "nota_google": 4.9,
+   "endereco": "R. Arlindo Colaço, 169 - São Miguel Paulista, São Paulo - SP, 08010-010, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -23.4923745,
+    "lng": -46.4425454
+   }
+  },
+  {
+   "local_id": "orthodontic_tatuape",
+   "papel": "proprio",
+   "tipo": "franquia",
+   "place_id": "ChIJa8Xh68FezpQRoL00kNnZk5I",
+   "nome": "OrthoDontic",
+   "avaliacoes_google": 108,
+   "nota_google": 4.1,
+   "endereco": "R. Tuiuti, 1971 - Tatuapé, São Paulo - SP, 03307-005, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -23.542748,
+    "lng": -46.5748943
+   }
+  },
+  {
+   "local_id": "orthodontic_republica",
+   "papel": "proprio",
+   "tipo": "franquia",
+   "place_id": "ChIJWT-VR1JYzpQROhYY6Z4x8QY",
+   "nome": "OrthoDontic",
+   "avaliacoes_google": 22,
+   "nota_google": 3,
+   "endereco": "R. Conselheiro Crispiniano, 72 - Salas 41 e 42 - República, São Paulo - SP, 01037-905, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -23.546505000000003,
+    "lng": -46.6398698
+   }
+  },
+  {
+   "local_id": "sorridents_clinicas_odonto",
+   "papel": "concorrente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJvYQyJFNYzpQRs_wmN45h0h0",
+   "nome": "Sorridents Clínicas Odontológicas Tatuapé São Paulo",
+   "avaliacoes_google": 1803,
+   "nota_google": 4.9,
+   "endereco": "R. Tuiuti, 2421 - Tatuapé, São Paulo - SP, 03307-000, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -23.5468439,
+    "lng": -46.5739124
+   },
+   "produto": {
+    "disputa_aparelho": "sem_evidencia",
+    "porque": "amostra pequena (0 avaliações com texto) — não dá para afirmar o produto",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 0
+   }
+  },
+  {
+   "local_id": "seu_sorriso_odontologia",
+   "papel": "concorrente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJO54ejVZQzpQRlDAhT8wF4KQ",
+   "nome": "Seu Sorriso Odontologia",
+   "avaliacoes_google": 1181,
+   "nota_google": 4.6,
+   "endereco": "Rua Isabel Schmidt, 360 - Santo Amaro, São Paulo - SP, 04743-030, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -23.6517868,
+    "lng": -46.7029243
+   },
+   "produto": {
+    "disputa_aparelho": "sem_evidencia",
+    "porque": "amostra pequena (0 avaliações com texto) — não dá para afirmar o produto",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 0
+   }
+  },
+  {
+   "local_id": "odontoclinic",
+   "papel": "concorrente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJEWkbN4RZzpQRnN3HYg0Bjgs",
+   "nome": "Odontoclinic",
+   "avaliacoes_google": 950,
+   "nota_google": 5,
+   "endereco": "R. Domingos de Morais, 725 - Vila Mariana, São Paulo - SP, 04009-000, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -23.582945,
+    "lng": -46.6379478
+   },
+   "produto": {
+    "disputa_aparelho": "sem_evidencia",
+    "porque": "amostra pequena (0 avaliações com texto) — não dá para afirmar o produto",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 0
+   }
+  },
+  {
+   "local_id": "sousmile_pinheiros_unidade",
+   "papel": "concorrente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJ1VNvrQ1XzpQRU5eggzaOBlA",
+   "nome": "SouSmile | Pinheiros | Unidade Oficial",
+   "avaliacoes_google": 836,
+   "nota_google": 4.9,
+   "endereco": "Av. Rebouças, 3941 - Pinheiros, São Paulo - SP, 05401-450, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -23.5742957,
+    "lng": -46.69625
+   },
+   "produto": {
+    "disputa_aparelho": "sem_evidencia",
+    "porque": "amostra pequena (0 avaliações com texto) — não dá para afirmar o produto",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 0
+   }
+  },
+  {
+   "local_id": "sorridents_clinicas_odonto_vila_buarque",
+   "papel": "concorrente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJESIKQyhZzpQRumBnxJikR4E",
+   "nome": "Sorridents Clínicas Odontológicas Santa Cecília São Paulo",
+   "avaliacoes_google": 797,
+   "nota_google": 4.7,
+   "endereco": "R. das Palmeiras, 248 - Vila Buarque, São Paulo - SP, 01226-010, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -23.5371576,
+    "lng": -46.6513269
+   },
+   "produto": {
+    "disputa_aparelho": "sem_evidencia",
+    "porque": "amostra pequena (0 avaliações com texto) — não dá para afirmar o produto",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 0
+   }
+  },
+  {
+   "local_id": "drb_odonto_implantes_prote",
+   "papel": "concorrente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJu8K0EVJYzpQRAsynTZsld7s",
+   "nome": "DRB Odonto | Implantes, Próteses, Ortodontia e Estética no Centro de São Paulo - SP",
+   "avaliacoes_google": 680,
+   "nota_google": 4.9,
+   "endereco": "Rua 7 de Abril, 154 - Bloco IV - Bloco IV - R. Br. de Itapetininga, 37 - Sl 501 - República, São Paulo - SP, 01044-000, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -23.5462915,
+    "lng": -46.6408439
+   },
+   "produto": {
+    "disputa_aparelho": "sim",
+    "porque": "o nome declara aparelho/ortodontia",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 0
+   }
+  },
+  {
+   "local_id": "dentar_odontologia",
+   "papel": "concorrente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJ3dtOMpdXzpQRtogKUNrlnVg",
+   "nome": "Dentar Odontologia",
+   "avaliacoes_google": 674,
+   "nota_google": 5,
+   "endereco": "Av. Brig. Faria Lima, 1227 - Sl 05 - Pinheiros, São Paulo - SP, 01452-002, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -23.5685498,
+    "lng": -46.6920548
+   },
+   "produto": {
+    "disputa_aparelho": "sem_evidencia",
+    "porque": "amostra pequena (0 avaliações com texto) — não dá para afirmar o produto",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 0
+   }
+  },
+  {
+   "local_id": "ultra_facil_odontologia_sa",
+   "papel": "concorrente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJq55UYnVZzpQRnKw8-Zy1EUU",
+   "nome": "Ultra Fácil Odontologia São Bento",
+   "avaliacoes_google": 656,
+   "nota_google": 4.5,
+   "endereco": "R. São Bento, 220 - Centro Histórico de São Paulo, São Paulo - SP, 01011-000, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -23.547237,
+    "lng": -46.6357271
+   },
+   "produto": {
+    "disputa_aparelho": "sem_evidencia",
+    "porque": "amostra pequena (0 avaliações com texto) — não dá para afirmar o produto",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 0
+   }
+  },
+  {
+   "local_id": "simioni_odontologia_implan",
+   "papel": "concorrente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJ81MorF1ZzpQRjzSdv-4DoRg",
+   "nome": "Simioni Odontologia - Implante e Lente de Contato Dental",
+   "avaliacoes_google": 653,
+   "nota_google": 5,
+   "endereco": "R. Itapeva, 518 - conj. 210 - Bela Vista, São Paulo - SP, 01332-020, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -23.5604502,
+    "lng": -46.6536885
+   },
+   "produto": {
+    "disputa_aparelho": "sem_evidencia",
+    "porque": "amostra pequena (0 avaliações com texto) — não dá para afirmar o produto",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 0
+   }
+  },
+  {
+   "local_id": "sorridents_clinicas_odonto_mooca",
+   "papel": "concorrente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJOYNIHTlZzpQRef_BnS7LTrM",
+   "nome": "Sorridents Clínicas Odontológicas Mooca São Paulo",
+   "avaliacoes_google": 649,
+   "nota_google": 4.8,
+   "endereco": "R. da Mooca, 2051 - Mooca, São Paulo - SP, 03103-003, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -23.5549312,
+    "lng": -46.6052665
+   },
+   "produto": {
+    "disputa_aparelho": "sem_evidencia",
+    "porque": "amostra pequena (0 avaliações com texto) — não dá para afirmar o produto",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 0
+   }
+  },
+  {
+   "local_id": "odontoclinic_cambuci",
+   "papel": "concorrente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJgzvblm1ZzpQR5kwlRrIqkFY",
+   "nome": "Odontoclinic - Cambuci",
+   "avaliacoes_google": 608,
+   "nota_google": 4.9,
+   "endereco": "Av. Lins de Vasconcelos, 297 - Cambuci, São Paulo - SP, 01537-000, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -23.5658948,
+    "lng": -46.6212424
+   },
+   "produto": {
+    "disputa_aparelho": "sem_evidencia",
+    "porque": "amostra pequena (0 avaliações com texto) — não dá para afirmar o produto",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 0
+   }
+  },
+  {
+   "local_id": "sousmile",
+   "papel": "concorrente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJm6dtw41ZzpQR-r4gBlqDe64",
+   "nome": "SouSmile",
+   "avaliacoes_google": 607,
+   "nota_google": 4.8,
+   "endereco": "R. Mário Amaral, 172 - Paulista, São Paulo - SP, 04002-020, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -23.5721992,
+    "lng": -46.6501309
+   },
+   "produto": {
+    "disputa_aparelho": "sem_evidencia",
+    "porque": "amostra pequena (0 avaliações com texto) — não dá para afirmar o produto",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 0
+   }
+  },
+  {
+   "local_id": "setimplan_centro_odontolog",
+   "papel": "concorrente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJtSpy_FFYzpQRBD0lAzLz4_0",
+   "nome": "Setimplan Centro Odontológico",
+   "avaliacoes_google": 542,
+   "nota_google": 4.8,
+   "endereco": "R. Sete de Abril, 277 - 1º Andar - República, São Paulo - SP, 01044-000, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -23.545507000000004,
+    "lng": -46.641634599999996
+   },
+   "produto": {
+    "disputa_aparelho": "sem_evidencia",
+    "porque": "amostra pequena (0 avaliações com texto) — não dá para afirmar o produto",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 0
+   }
+  },
+  {
+   "local_id": "sorridents_anhangabau",
+   "papel": "concorrente",
+   "tipo_concorrente": "PREENCHER",
+   "place_id": "ChIJP4GFMt1ZzpQRjVaWxoWxj-U",
+   "nome": "Sorridents Anhangabaú",
+   "avaliacoes_google": 540,
+   "nota_google": 4.8,
+   "endereco": "R. Conselheiro Crispiniano, 68 - República, São Paulo - SP, 01037-000, Brasil",
+   "place_id_origem": "varredura google places 2026-08-13",
+   "descoberto_em": "2026-08-13",
+   "location": {
+    "lat": -23.5464421,
+    "lng": -46.6400285
+   },
+   "produto": {
+    "disputa_aparelho": "sem_evidencia",
+    "porque": "amostra pequena (0 avaliações com texto) — não dá para afirmar o produto",
+    "menciona_aparelho": 0,
+    "avaliacoes_com_texto": 0
+   }
+  }
+ ]
 }

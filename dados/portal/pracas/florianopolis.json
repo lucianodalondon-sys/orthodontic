@@ -1,0 +1,1149 @@
+{
+  "praca_id": "florianopolis",
+  "corte": "2026-08-13",
+  "rotulo": "SC · Florianópolis",
+  "uf": [
+    "SC"
+  ],
+  "cidades": [
+    "SC · Florianópolis"
+  ],
+  "identidade": {
+    "praca_id": "florianopolis",
+    "nome": "Florianópolis",
+    "cidades": [
+      "Florianópolis/SC"
+    ],
+    "uf": [
+      "SC"
+    ],
+    "rotulo": "SC · Florianópolis",
+    "cidades_rotulo": [
+      "SC · Florianópolis"
+    ],
+    "criada_em": "2026-08-13",
+    "por_que_esta_praca": "cidade onde a rede já tem unidade e que ainda não tinha estudo. As metrópoles entram agora porque o mapa de bairros passou a existir: sem ele, cinco unidades em São Paulo virariam um número só, e o número não diria nada a nenhum franqueado",
+    "ibge": [
+      {
+        "municipio": "Florianópolis",
+        "uf": "SC",
+        "ibge_id": 4205407,
+        "populacao_estimada": {
+          "ano": "2025",
+          "valor": "587486",
+          "unidade": "Pessoas"
+        },
+        "alvo_9_15": 39488,
+        "alvo_30_45": 144371,
+        "fonte": "ibge agregados 6579/5938/9514",
+        "de": "dados/serie/ibge_municipios.jsonl"
+      }
+    ]
+  },
+  "planos_das_lojas": [],
+  "oferta": null,
+  "bairros": {
+    "praca_id": "florianopolis",
+    "rotulo": "SC · Florianópolis",
+    "territorio": [
+      {
+        "local_id": "ortho_fln_centro",
+        "unidade": "OrthoDontic Centro",
+        "medido": true,
+        "location": {
+          "lat": -27.5954685,
+          "lng": -48.554623899999996
+        },
+        "bairro": "Centro",
+        "clinica_mais_proxima": {
+          "nome": "Consultório Odontologico Dra.Daysa Veiga",
+          "km": 0.12,
+          "avaliacoes": null,
+          "nota": null,
+          "bairro": "Centro"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Blanc Odontologia",
+          "km": 0.15,
+          "avaliacoes": 759,
+          "nota": 4.6,
+          "bairro": "Centro"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic Florianópolis - Rua Deodoro, Centro.",
+          "km": 0.3,
+          "avaliacoes": 268,
+          "nota": 5,
+          "bairro": "Centro"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 101,
+            "de_aparelho": 11,
+            "da_rede": 1
+          },
+          "2km": {
+            "clinicas": 114,
+            "de_aparelho": 11,
+            "da_rede": 1
+          },
+          "5km": {
+            "clinicas": 131,
+            "de_aparelho": 12,
+            "da_rede": 1
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.12 km",
+        "proximidade_entre_unidades": {
+          "km": 0.3,
+          "unidade": "OrthoDontic Florianópolis - Rua Deodoro, Centro.",
+          "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+          "natureza": "inferencia"
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 143,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 143 clínicas com coordenada, 1 medição"
+        }
+      },
+      {
+        "local_id": "ortho_fln_centro_2",
+        "unidade": "OrthoDontic Centro",
+        "medido": true,
+        "location": {
+          "lat": -27.596536,
+          "lng": -48.5518
+        },
+        "bairro": "Centro",
+        "clinica_mais_proxima": {
+          "nome": "Dr. João Pedro Cabral Olivier - Dentista",
+          "km": 0.05,
+          "avaliacoes": 9,
+          "nota": 5,
+          "bairro": "Centro"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Innove Odonto Floripa",
+          "km": 0.07,
+          "avaliacoes": 757,
+          "nota": 4.9,
+          "bairro": "Centro"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic Florianópolis - Rua 7 de Setembro",
+          "km": 0.3,
+          "avaliacoes": 310,
+          "nota": 4.4,
+          "bairro": "Centro"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 102,
+            "de_aparelho": 11,
+            "da_rede": 1
+          },
+          "2km": {
+            "clinicas": 114,
+            "de_aparelho": 11,
+            "da_rede": 1
+          },
+          "5km": {
+            "clinicas": 131,
+            "de_aparelho": 12,
+            "da_rede": 1
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.05 km",
+        "proximidade_entre_unidades": {
+          "km": 0.3,
+          "unidade": "OrthoDontic Florianópolis - Rua 7 de Setembro",
+          "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+          "natureza": "inferencia"
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 143,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 143 clínicas com coordenada, 1 medição"
+        }
+      },
+      {
+        "local_id": "ortho_fln_ingleses_do_rio_vermel",
+        "unidade": "OrthoDontic Ingleses do Rio Vermelho",
+        "medido": true,
+        "location": {
+          "lat": -27.4378352,
+          "lng": -48.398711999999996
+        },
+        "bairro": "Ingleses do Rio Vermelho",
+        "clinica_mais_proxima": {
+          "nome": "Sorrifácil Ingleses | Implantes Dentários, Prótese Protocolo e Reabilitação Oral",
+          "km": 0.03,
+          "avaliacoes": 582,
+          "nota": 4.8,
+          "bairro": "Ingleses Norte"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Sorrifácil Ingleses | Implantes Dentários, Prótese Protocolo e Reabilitação Oral",
+          "km": 0.03,
+          "avaliacoes": 582,
+          "nota": 4.8,
+          "bairro": "Ingleses Norte"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic Florianópolis - Rua Deodoro, Centro.",
+          "km": 23.22,
+          "avaliacoes": 268,
+          "nota": 5,
+          "bairro": "Centro"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 9,
+            "de_aparelho": 2,
+            "da_rede": 0
+          },
+          "2km": {
+            "clinicas": 9,
+            "de_aparelho": 2,
+            "da_rede": 0
+          },
+          "5km": {
+            "clinicas": 9,
+            "de_aparelho": 2,
+            "da_rede": 0
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.03 km",
+        "proximidade_entre_unidades": null,
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 143,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 143 clínicas com coordenada, 1 medição"
+        }
+      }
+    ],
+    "clinicas_com_coordenada": 144,
+    "clinicas_sem_coordenada": 0,
+    "raios_declarados_km": [
+      1,
+      2,
+      5
+    ],
+    "bairros_medidos": 13,
+    "clinicas_medidas": 144,
+    "sem_bairro_no_endereco": 0,
+    "unidades_da_rede": 3,
+    "unidades_localizadas": 3,
+    "onde_estamos": [
+      {
+        "local_id": "ortho_fln_centro",
+        "bairro": "Centro",
+        "unidade": "OrthoDontic Centro"
+      },
+      {
+        "local_id": "ortho_fln_centro_2",
+        "bairro": "Centro",
+        "unidade": "OrthoDontic Centro"
+      },
+      {
+        "local_id": "ortho_fln_ingleses_do_rio_vermel",
+        "bairro": "Ingleses do Rio Vermelho",
+        "unidade": "OrthoDontic Ingleses do Rio Vermelho"
+      }
+    ],
+    "bairros": [
+      {
+        "bairro": "Centro",
+        "clinicas": 115,
+        "avaliacoes_somadas": 18067,
+        "temos_unidade": true,
+        "nossas": [
+          "ortho_fln_centro",
+          "ortho_fln_centro_2"
+        ],
+        "vizinhos_fortes": [
+          {
+            "nome": "Foco X Radiologia Odontológica - Florianópolis",
+            "nota": 4.9,
+            "avaliacoes": 3297
+          },
+          {
+            "nome": "Odontoclinic Florianópolis",
+            "nota": 5,
+            "avaliacoes": 1121
+          },
+          {
+            "nome": "Oral Unic Implantes Florianópolis",
+            "nota": 4.9,
+            "avaliacoes": 915
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "115 clínicas varridas, e a unidade da rede está aqui"
+      },
+      {
+        "bairro": "Trindade",
+        "clinicas": 8,
+        "avaliacoes_somadas": 985,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dra. Luiza Guerra | Harmonização Facial | Dentista em Florianópolis",
+            "nota": 5,
+            "avaliacoes": 572
+          },
+          {
+            "nome": "Yours Odontologia Integrada - Florianópolis",
+            "nota": 5,
+            "avaliacoes": 146
+          },
+          {
+            "nome": "Trindade Odontologia - Dentista em Florianópolis",
+            "nota": 4.9,
+            "avaliacoes": 121
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "8 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Ingleses Norte",
+        "clinicas": 6,
+        "avaliacoes_somadas": 1265,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Sorrifácil Ingleses | Implantes Dentários, Prótese Protocolo e Reabilitação Oral",
+            "nota": 4.8,
+            "avaliacoes": 582
+          },
+          {
+            "nome": "Arte Sorriso | Aparelhos ortodônticos | Alinhadores invisíveis | Dentista em Florianópolis",
+            "nota": 5,
+            "avaliacoes": 347
+          },
+          {
+            "nome": "Dentista Ingleses Espaço do Sorriso Odontologia",
+            "nota": 4.8,
+            "avaliacoes": 149
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "6 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Ingleses do Rio Vermelho",
+        "clinicas": 3,
+        "avaliacoes_somadas": 662,
+        "temos_unidade": true,
+        "nossas": [
+          "ortho_fln_ingleses_do_rio_vermel"
+        ],
+        "vizinhos_fortes": [
+          {
+            "nome": "DentePró Ingleses Florianópolis",
+            "nota": 4.5,
+            "avaliacoes": 346
+          },
+          {
+            "nome": "Clinic Odontologia Avançada - Ingleses",
+            "nota": 5,
+            "avaliacoes": 49
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "3 clínicas varridas, e a unidade da rede está aqui"
+      },
+      {
+        "bairro": "Santa Monica",
+        "clinicas": 3,
+        "avaliacoes_somadas": 484,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Bucal Care Odontologia",
+            "nota": 4.8,
+            "avaliacoes": 169
+          },
+          {
+            "nome": "Clinica Thiesen Odontologia",
+            "nota": 4.9,
+            "avaliacoes": 160
+          },
+          {
+            "nome": "Vitaclass Clínica | Dentista, odontopediatra, ortodontista, fonoaudióloga e psicóloga",
+            "nota": 4.9,
+            "avaliacoes": 155
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "3 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Estreito",
+        "clinicas": 2,
+        "avaliacoes_somadas": 123,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Odontoclinic Estreito - Florianópolis",
+            "nota": 4,
+            "avaliacoes": 103
+          },
+          {
+            "nome": "Dentista no Estreito Florianopolis - Clínica Vivace Floripa Odontologia Avançada",
+            "nota": 5,
+            "avaliacoes": 20
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "2 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Ingleses",
+        "clinicas": 1,
+        "avaliacoes_somadas": 518,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Odonto X",
+            "nota": 4.9,
+            "avaliacoes": 518
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Saco dos Limões",
+        "clinicas": 1,
+        "avaliacoes_somadas": 219,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dra. Géssika Reis | Dentista em Florianópolis",
+            "nota": 5,
+            "avaliacoes": 219
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Rio Tavares",
+        "clinicas": 1,
+        "avaliacoes_somadas": 134,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dra Gabriela Adams | Invisalign e Facetas em Florianópolis",
+            "nota": 5,
+            "avaliacoes": 134
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Córrego Grande",
+        "clinicas": 1,
+        "avaliacoes_somadas": 83,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Córrego Grande Odontologia",
+            "nota": 5,
+            "avaliacoes": 83
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Itacorubi",
+        "clinicas": 1,
+        "avaliacoes_somadas": 57,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Vieira Santos Odontologia - Itacorubi",
+            "nota": 5,
+            "avaliacoes": 57
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Capoeiras",
+        "clinicas": 1,
+        "avaliacoes_somadas": 44,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dra Manuela Zasso⎮Ortodontista⎮Invisalign",
+            "nota": 5,
+            "avaliacoes": 44
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "São João do Rio Vermelho",
+        "clinicas": 1,
+        "avaliacoes_somadas": 32,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Clinica Odontológica Oral-A",
+            "nota": 4.6,
+            "avaliacoes": 32
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      }
+    ],
+    "bairros_sem_a_rede": [
+      {
+        "bairro": "Trindade",
+        "clinicas": 8,
+        "avaliacoes_somadas": 985,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dra. Luiza Guerra | Harmonização Facial | Dentista em Florianópolis",
+            "nota": 5,
+            "avaliacoes": 572
+          },
+          {
+            "nome": "Yours Odontologia Integrada - Florianópolis",
+            "nota": 5,
+            "avaliacoes": 146
+          },
+          {
+            "nome": "Trindade Odontologia - Dentista em Florianópolis",
+            "nota": 4.9,
+            "avaliacoes": 121
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "8 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Ingleses Norte",
+        "clinicas": 6,
+        "avaliacoes_somadas": 1265,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Sorrifácil Ingleses | Implantes Dentários, Prótese Protocolo e Reabilitação Oral",
+            "nota": 4.8,
+            "avaliacoes": 582
+          },
+          {
+            "nome": "Arte Sorriso | Aparelhos ortodônticos | Alinhadores invisíveis | Dentista em Florianópolis",
+            "nota": 5,
+            "avaliacoes": 347
+          },
+          {
+            "nome": "Dentista Ingleses Espaço do Sorriso Odontologia",
+            "nota": 4.8,
+            "avaliacoes": 149
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "6 clínicas varridas, e a rede não está aqui"
+      },
+      {
+        "bairro": "Santa Monica",
+        "clinicas": 3,
+        "avaliacoes_somadas": 484,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Bucal Care Odontologia",
+            "nota": 4.8,
+            "avaliacoes": 169
+          },
+          {
+            "nome": "Clinica Thiesen Odontologia",
+            "nota": 4.9,
+            "avaliacoes": 160
+          },
+          {
+            "nome": "Vitaclass Clínica | Dentista, odontopediatra, ortodontista, fonoaudióloga e psicóloga",
+            "nota": 4.9,
+            "avaliacoes": 155
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "3 clínicas varridas, e a rede não está aqui"
+      }
+    ],
+    "manchete": "13 bairros medidos · a rede está em 2 deles",
+    "leitura": "O bairro com mais clínicas é Centro, com 115 clínicas varridas, e a rede está lá.",
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 144,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
+      "procedencia": "medido em 144 clínicas varridas, 1 medição"
+    }
+  },
+  "movimentos_do_mercado": {
+    "eventos": [],
+    "resumo": {
+      "praca_id": "florianopolis",
+      "rotulo": "SC · Florianópolis",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
+  "imprensa": {
+    "medido": true,
+    "total": 55,
+    "mostrando": 12,
+    "recentes_30d": 27,
+    "manchete": "27 matérias sobre a cidade nos últimos 30 dias, de 55 já lidas",
+    "porque_vazio": null,
+    "materias": [
+      {
+        "titulo": "Parada de ônibus 'ignorada' em Florianópolis - G1",
+        "veiculo": "G1",
+        "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPaGNTWFVsX2w0TER3Ukp1RnU3YldDcmRKRUxSSEJva19GTHFzZmlOT2RSTS1UY0tTT1h0c2hPLWRXaEZjT09YMXBOa2k1SEh4d2ZmVEVrRWk5MFB6dVZMX1RSS0ViSW5HdE1HRy1jdndUaXhmaHlQeXJhc0ZnTE8weWhsNmRrdGJXcHR0bk1VaG9ZUEYxVk0zSlNIOHhvUlAwN21kSUNQWUNuQU81a25ZSWVXT2xvbEN6MXZyclVTWTl0QmZKYU1xUXJpTWjSAdsBQVVfeXFMUFk4Mjh2a1RjeTZzczdUNnpjVmZBbjJNTTVWekhERmdUTDQtSmUxYWFlM3VhS2JWT2tka2xIT25yQkptY1NwbEl1R0FxTFRPVTNibFp3dk84TUx3bVJGYjhqeXJDNk1HSGhucW9WblMtRWNEY1FkYTVxQ2dORVQ3M180Z2pvTy1TbmV6VjBnd3VnOVcwUjIzZm11andKRWRTejVrSksyMW92a3IzNnJIX0x3QWd3QTlBNUFweklVeHBOa0d3a2FxeFVIalp1c3RjQ3FGXzJFMkpvOV9R?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Imóvel de R$ 3,8 milhões às margens de rodovia em Florianópolis tem leilão barrado pelo TCE; entenda - ND Mais",
+        "veiculo": "ND Mais",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPanJXejRyWldIWUJNdWE2d1hGUFJ5S2g5cDQtNmFzbnJqVXlBOTBqYk9JT29VMjRieUhPT0NDSzJTbUpQeElLbThET2ZZQ2VsZDhnMEg4ZXFMRXVYalU4LVZ3Qkx2UE0wT1p2dm16SG42Z3ZuTHZpTUtUQnBjcTc4d0ktZEt2LS1rV3lkUjQwLTJ1azdKUTFUdzdWNzcwRjV1M1NPWExlSUN6RGs?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "COMCAP Florianópolis - SC abre seleção com vagas para garis e motoristas - PCI Concursos",
+        "veiculo": "PCI Concursos",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPcWt6N2JYbkZCcGc4MkZfTXViU0JrMnh4QmJTbV9ISzVXamFRZ183bTFHcXNHeVZ4RE95TTQ5cUhPOHQzTks0TklxaDdxeEp3Wk1TNTFJTlBwb1VYY0wwRU1na1BBdllZM2h3RVVBRTdtY0Jqempma0tnUzl1cWltWF8yWmVPd2VrNHdaY2R5eFFCUnk2RHVwRGlSUEhIcnRPZ0tzM1lRcEY1RWp4RkFqUA?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Projeto inédito do TCE/SC e do Todos Pela Educação, desenvolvido com a prefeitura de Florianópolis, se consolida como referência educacional no Estado e no Brasil | O Tribunal da Governança Pública Catarinense - TCE-SC",
+        "veiculo": "TCE-SC",
+        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNbHNobld4RjhDYzFCWjAyb1psZy1faHlzN0taejRTZGNXREEzb2d0c29KM1hIZmNZcWxwekpZLW9EU0pqcmF2Y1lJZi1IUXBUSDZOTURXUy1hMzZiS0U2U0ptYU10V2tuSEU5RzJ1SDZ6QUhpdlZjdEY0WjJKQWJrNXVXZEh4MUYxMjk3UVFuMGpuWW9xVERFbV9jNU56N1E4TS1wQUU4NlF3V0t5TWlmcHNjZVhCYTRUak1lOWFn?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Defesa Civil de SC alerta para temporais em Florianópolis até sexta-feira - Portal do Holanda",
+        "veiculo": "Portal do Holanda",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNV1dRV0FubGpsbVR4M00zV0t2VElzVUxFTExLVGlKazZobm94ZVVPQnpzX0pSS2pyem40bjBNUUZqeE5jX2F5ZzczYlRmOFUtWjcya2c4NXhJVE5XOUlhNFprekVLSUlmZ0N2ZmZuNTJmTG1HQjNrX3o4c2N0SE9hQnhwS1kxTzV0V2dsMHRYZU10NjhKcy1zdmNnZjZ6UzJzeEI4VXBUWHBqcGFxbEVRdjFVWFF5YWk4dm4yU3k1RQ?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Previsão 5 dias - Epagri/Ciram",
+        "veiculo": "Epagri/Ciram",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBmV1RHRWQ5UjEwSlhFSTB3d1hOU21tb2dZSHpZMnFwWmVzNVFMd1N3VElCdmx5VzQ0R2I5ak9mS1pnYnJ5MWRQOENTODN5RUxtV2FtTTZzelZETmxlemJXc0xZcEt6dDd2ZUJnSHZkeXJ1N3dWeVFz?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Quem são os candidatos a governador de Santa Catarina (SC) nas eleições 2026 - JOTA Info",
+        "veiculo": "JOTA Info",
+        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNb2lyWUdZeVJ5YVZmRVpvalI1TWlqTVo3enptZWpDUFJNS0JqeTQwU2w2RTdrRFV5b1FBYzJHS3hCMGtNY1U1UnhaRjl3a256ZmE1LUp6NERNLWw5OGhyS2RwUlgxNE9sMndqeTZxR1V6dWhfRTNUYWdfZDlfekpLcWRBbzZsSkR3czFaTk1iLWxSN2c1Qkp3VkFXWHRGUkx3UmNpR2kySlRIYTFsWVVFQWpZd0k5VjRSYzlQOQ?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Triplicação da SC-401 pode ter prazo de obras prorrogado em Florianópolis - FloripAmanhã",
+        "veiculo": "FloripAmanhã",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQR2tQOHRURVk0bnhVWWE5Y1hFNWtudkJfRzVRdnJVSW5TVlNYbHhDNEZqSUhIbUY2aWZkWU1IRkhEczJEU0tkemxmcVVNNW1kZXVCUE1DcnNldWQ3Z3pjbG1XYjlJRFJ0dFRfSjVhZGJ4bkxEcU5NRFRZZFRSLVJpN3BINzlnYkVVY0dMVVVjdmxFYlJsNXZJRDRBaFM5YnllQlVqVmIzbTZPWjA?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Operação contra PCC cumpre mandados em SP e SC por sequestro, tortura e extorsão de advogado - G1",
+        "veiculo": "G1",
+        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNc3VwSE1LX1lTZDlTQmJBZk9JSkpudmZzU2c1RTJPSlZycTFHd294YUNQd1ZmemhNdzNqYkIxSTAtLWYyZU5FTTlZU1dKZ085YVhOMzlxTHYtdXlSZFNuaklaOXFJM2RRbDl1aTA0eFFsLTgtbDNCcnEyVFZkZVA5SHowWEUxbmVDOGFBaXRzemx2RWUwd3VUaE1FdGNucjNjNUM1d0o5YlZtX3g1V1pJN0Y2SW5pcUFjUmJIbmZBSzRaQkxEQXVaek11ZlpVMzROeE9ScnRzbEg2LXfSAeoBQVVfeXFMT1FzM1VGcUlDa081YTFDRUJfZHBqUEdQZHl1ZlhwYXNKemo0U1NPMTlhZkhCaTFvYS0wRDB3Wk5BOUoteUxwR0dWTlBvRlUxTmtLalpRTzlTVGt4VzE1LU9JOU1wbGRmckUtRmctTmNFa0hTRXlNWnhGeUFVcWtaclRDNExKSHU3eFozNElIZnpPXzUyVzI2WDBpeHduR2FUZzZxZFhJVk1RT2lDUllwVkRWWG9PVzBESlc4REhWYTQtYUgyaXJlcC1LUFFvT0hwdzdkUkEyQjVzNlZDLVdBaVBhamhZMVpTYlNR?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Atriz de Florianópolis representa Santa Catarina no Festival de Cinema de Gramado - Portal Making Of",
+        "veiculo": "Portal Making Of",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPd3RhSHN3TnIwdFJyWnl5MThyajRsX0EzcXRHQTNTTERvdDN2ZFQ3YXdmbmpvQy15UndURldrTndTX1BiVGRjdDZHSy16X18xSHZwU2liOC1ZQkU4MlFQNmlLd3hxVWJ2N1dPMG1NRjlTamNoc3ViTmZBMk54dEhRVldSTU41Y2tVNmxoTXh2Y2xhX2t3bG42TDYwbU5xei16eXc?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Atriz de Florianópolis representa Santa Catarina no Festival de Cinema de Gramado - TVBV ONLINE",
+        "veiculo": "TVBV ONLINE",
+        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdVA4cHVzQmtGY1NGaHJUTkdzSDRqYWlqZFZJMFdUWDRGLW5ocHVQWGZCanVWS3lER0duRkpHTFJyOHdoQk1YSWRKaXpGcVQwdmJmMjBudnlWcVVUTVZic0p3MUZzeFFWVXJUcG0xZ2VMeU0tbjRXOXVnR1h0YTQ3TXVwODRzdnYzay1mdjVZUzc5YTZkTVpUYWczckZpTHNWVm5lMHQ5MW9pdw?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      },
+      {
+        "titulo": "Raul Sartori apresenta mix de notícias políticas de SC - 12/08 - Imagem da Ilha",
+        "veiculo": "Imagem da Ilha",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQUjRfdmE3cGdUTkRXY1g4UGdRaC1mNHNrOWhSRnlRZW5IQkxtVGREUDlYeHRfdXllZldHeG5KTmYyNHZMUlhUVkktRjRSYUdVM0ZhUkRwR3l6ZnRHc2JaWmtDODhmYnhnV200c21vRF8tQ0djQ3I1eVVGQjFZLTZyYWtPTEFqdmxpeS1iTUxNUUNVTnZkRmFHYnZweExOSjh0Tm1VV0Jha2lIM0dxLUh4X0p3?oc=5",
+        "publicado": "2026-08-12",
+        "dias": 1
+      }
+    ]
+  },
+  "ritmo_de_publicacao": {
+    "medido": false,
+    "perfis": 0,
+    "vivos": 0,
+    "parados": 0,
+    "manchete": null,
+    "porque_vazio": "nenhum perfil medido nesta cidade",
+    "lista": []
+  },
+  "placar": [
+    {
+      "local_id": "foco_x_radiologia_odontolo",
+      "nome": "Foco X Radiologia Odontológica - Florianópolis",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.9,
+      "avaliacoes": 3297,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "odontoclinic_florianopolis",
+      "nome": "Odontoclinic Florianópolis",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": 1121,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "oral_unic_implantes_floria",
+      "nome": "Oral Unic Implantes Florianópolis",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.9,
+      "avaliacoes": 915,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "blanc_odontologia",
+      "nome": "Blanc Odontologia",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.6,
+      "avaliacoes": 759,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "innove_odonto_floripa",
+      "nome": "Innove Odonto Floripa",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.9,
+      "avaliacoes": 757,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "odontoquality",
+      "nome": "Odontoquality",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": 705,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "oralcenter_implantes",
+      "nome": "OralCenter Implantes",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.9,
+      "avaliacoes": 664,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "dr_diego_aguiar_vivera_oro",
+      "nome": "Dr. Diego Aguiar - Vivera Orofacial Avançada - Estética Bioregenerativa",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.9,
+      "avaliacoes": 627,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "sorrifacil_ingleses_implan",
+      "nome": "Sorrifácil Ingleses | Implantes Dentários, Prótese Protocolo e Reabilitação Oral",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.8,
+      "avaliacoes": 582,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "dra_luiza_guerra_harmoniza",
+      "nome": "Dra. Luiza Guerra | Harmonização Facial | Dentista em Florianópolis",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": 572,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "confidents_clinica_odontol",
+      "nome": "Confidents Clínica Odontológica",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.9,
+      "avaliacoes": 556,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "odonto_x",
+      "nome": "Odonto X",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.9,
+      "avaliacoes": 518,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "sorriso_floripa_clinicas_o",
+      "nome": "Sorriso Floripa Clínicas Odontológicas",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.8,
+      "avaliacoes": 488,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "popdents_felipe_schmidt",
+      "nome": "✅POPdents Felipe Schmidt",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.7,
+      "avaliacoes": 459,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "ortho_fln_centro",
+      "nome": "OrthoDontic Florianópolis - Rua 7 de Setembro",
+      "tipo": "franquia",
+      "proprio": true,
+      "nota": 4.4,
+      "avaliacoes": 310,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "ortho_fln_centro_2",
+      "nome": "OrthoDontic Florianópolis - Rua Deodoro, Centro.",
+      "tipo": "franquia",
+      "proprio": true,
+      "nota": 5,
+      "avaliacoes": 268,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "ortho_fln_ingleses_do_rio_vermel",
+      "nome": "OrthoDontic - Florianópolis Ingleses",
+      "tipo": "franquia",
+      "proprio": true,
+      "nota": 4.8,
+      "avaliacoes": 267,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    }
+  ],
+  "funil": null,
+  "temas": [
+    {
+      "tema": "atendimento",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "florianopolis",
+      "pct": 0.7145,
+      "n": 1415,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "preco_custo",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "florianopolis",
+      "pct": 0.041,
+      "n": 1415,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "agenda_espera",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "florianopolis",
+      "pct": 0.0269,
+      "n": 1415,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "comunicacao_resposta",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "florianopolis",
+      "pct": 0.0417,
+      "n": 1415,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "qualidade_resultado",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "florianopolis",
+      "pct": 0.5279,
+      "n": 1415,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "confianca_medo",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "florianopolis",
+      "pct": 0.0502,
+      "n": 1415,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "contrato_burocracia",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "florianopolis",
+      "pct": 0.0085,
+      "n": 1415,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "pessoas_nominais",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "florianopolis",
+      "pct": 0.0629,
+      "n": 1415,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "localizacao_acesso",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "florianopolis",
+      "pct": 0.0523,
+      "n": 1415,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "recomendacao_lealdade",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "florianopolis",
+      "pct": 0.3279,
+      "n": 1415,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "dor_medo_dentista",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "florianopolis",
+      "pct": 0.0572,
+      "n": 1415,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "resultado_autoestima",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "florianopolis",
+      "pct": 0.1477,
+      "n": 1415,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "explicacao_clareza",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "florianopolis",
+      "pct": 0.036,
+      "n": 1415,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "aparelho_tratamento",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "florianopolis",
+      "pct": 0.0254,
+      "n": 1415,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "familia_filhos",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "florianopolis",
+      "pct": 0.0219,
+      "n": 1415,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "tempo_relacao",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "florianopolis",
+      "pct": 0.0375,
+      "n": 1415,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    }
+  ],
+  "sazonalidade": [
+    {
+      "snapshot_date": "2026-07-15",
+      "regiao": "SC",
+      "serie_anos": 5,
+      "mes": "JUL",
+      "indice": 34,
+      "pico": true
+    },
+    {
+      "snapshot_date": "2026-07-15",
+      "regiao": "SC",
+      "serie_anos": 5,
+      "mes": "AGO",
+      "indice": 23
+    },
+    {
+      "snapshot_date": "2026-07-15",
+      "regiao": "SC",
+      "serie_anos": 5,
+      "mes": "SET",
+      "indice": 22
+    },
+    {
+      "snapshot_date": "2026-07-15",
+      "regiao": "SC",
+      "serie_anos": 5,
+      "mes": "DEZ/JAN",
+      "indice_min": 2.5,
+      "indice_max": 7.9,
+      "vale": true
+    }
+  ],
+  "sazonalidade_estado": {
+    "tem": true,
+    "regiao": "SC",
+    "pontos": 4,
+    "anos_da_serie": 5
+  },
+  "o_que_mudou": null
+}

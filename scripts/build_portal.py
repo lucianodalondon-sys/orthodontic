@@ -99,6 +99,16 @@ def main():
     # só: Porto Alegre tem 9 unidades, Curitiba 8. O bairro é a menor conta
     # de MERCADO, como a loja é a menor conta de operação.
     _ba_por = {x["praca_id"]: x for x in carrega(OUT, "bairros").get("pracas", [])}
+    # o território de cada unidade e os movimentos do mercado da praça
+    _terr = {t["local_id"]: t
+             for x in _ba_por.values() for t in (x.get("territorio") or [])}
+    _mud = carrega(OUT, "mudancas_do_mercado")
+    _mv_por = defaultdict(list)
+    for _e in _mud.get("eventos", []):
+        _mv_por[_e["praca_id"]].append(_e)
+    _mv_resumo = {x["praca_id"]: x for x in _mud.get("por_praca", [])}
+    _ex_por = {x["local_id"]: x
+               for x in carrega(OUT, "execucao").get("unidades", [])}
     _pub_por = {x["praca_id"]: x
                 for x in carrega(OUT, "o_que_a_cidade_publica").get("pracas", [])}
     ult_place = ultimo_por([r for r in places if r["snapshot_date"] <= corte],
@@ -384,6 +394,9 @@ def main():
                 and (RAIZ/"dados"/"planos"/f"{l['local_id']}.json").exists()],
             "oferta": _of_por.get(p),
             "bairros": _ba_por.get(p),
+            "movimentos_do_mercado": {
+                "eventos": _mv_por.get(p, []),
+                "resumo": _mv_resumo.get(p)},
             "imprensa": (_pub_por.get(p) or {}).get("imprensa"),
             "ritmo_de_publicacao": (_pub_por.get(p) or {}).get("ritmo"),
             "placar": placar, "funil": funil, "temas": temas_p,
@@ -1216,6 +1229,11 @@ def main():
                 fonte="dados/serie/reviews.jsonl",
                 o_que_aumentaria="mais avaliações com texto nesta loja"))
                 if lid in _jor_por else None),
+            "meu_territorio": _terr.get(lid),
+            "movimentos": {"eventos": _mv_por.get(l.get("praca_id"), [])[:8],
+                           "e_da_cidade": True,
+                           "resumo": _mv_resumo.get(l.get("praca_id"))},
+            "execucao": _ex_por.get(lid),
             "meu_bairro": next(
                 ({"bairro": b["bairro"], "clinicas": b["clinicas"],
                   "vizinhos_fortes": b["vizinhos_fortes"],

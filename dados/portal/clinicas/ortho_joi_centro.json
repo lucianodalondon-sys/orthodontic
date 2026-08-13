@@ -36,7 +36,7 @@
   "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 7,
     "vence_em": "2026-08-19"
   },
@@ -409,6 +409,140 @@
       "procedencia": "medido em 88 avaliações"
     }
   },
+  "meu_territorio": {
+    "local_id": "ortho_joi_centro",
+    "unidade": "OrthoDontic Centro",
+    "medido": true,
+    "location": {
+      "lat": -26.3028017,
+      "lng": -48.8461606
+    },
+    "bairro": "Centro",
+    "clinica_mais_proxima": {
+      "nome": "Oral Max",
+      "km": 0.05,
+      "avaliacoes": 38,
+      "nota": 4.9,
+      "bairro": "Centro"
+    },
+    "aparelho_mais_proximo": {
+      "nome": "Odonto e Você",
+      "km": 0.17,
+      "avaliacoes": 695,
+      "nota": 4.9,
+      "bairro": "Centro"
+    },
+    "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic Sorria Sempre",
+      "km": 1.26,
+      "avaliacoes": 377,
+      "nota": 4.3,
+      "bairro": "América"
+    },
+    "raios": {
+      "1km": {
+        "clinicas": 56,
+        "de_aparelho": 8,
+        "da_rede": 0
+      },
+      "2km": {
+        "clinicas": 92,
+        "de_aparelho": 11,
+        "da_rede": 1
+      },
+      "5km": {
+        "clinicas": 138,
+        "de_aparelho": 13,
+        "da_rede": 1
+      }
+    },
+    "frase_fato": "a clínica mais próxima está a 0.05 km",
+    "proximidade_entre_unidades": {
+      "km": 1.26,
+      "unidade": "OrthoDontic Sorria Sempre",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+    },
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 147,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+        "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 147 clínicas com coordenada, 1 medição"
+    }
+  },
+  "movimentos": {
+    "eventos": [],
+    "e_da_cidade": true,
+    "resumo": {
+      "praca_id": "joinville",
+      "rotulo": "SC · Joinville",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
+  "execucao": {
+    "local_id": "ortho_joi_centro",
+    "praca_id": "joinville",
+    "rotulo": "SC · Joinville",
+    "unidade": "OrthoDontic Centro",
+    "itens": [
+      {
+        "problema": "Esta loja aparece em **4 das 157 buscas** que testamos na cidade.",
+        "e_marketing": true,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "seo_local",
+          "especialidade": "marketing local e Google Business",
+          "problema": "a unidade aparece em 4 buscas de 157 testadas na própria cidade",
+          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
+          "evidencias": [
+            "aparece em 4 de 157 buscas",
+            "aparece em: {'frase': 'aparelho ortodontico joinville', 'posicao': 1, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'dentista joinville aparelho', 'posicao': 1, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'ortodontista joinville', 'posicao': 3, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'ortodontista em joinville', 'posicao': 4, 'intencao': 'GENÉRICO'}"
+          ],
+          "nao_fazer": [
+            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
+            "não prometer posição: o Google não vende ordem no mapa"
+          ],
+          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
+          "prazo": "30 dias",
+          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
+          "recoletar_em_dias": 30
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 157,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/portal/presenca_por_loja.json",
+          "a_favor": [
+            "Esta loja aparece em **4 das 157 buscas** que testamos na cidade."
+          ],
+          "contra": [
+            "uma medição só — a segunda dirá se é estrutural ou momento"
+          ],
+          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+          "procedencia": "medido em 157 buscas testadas, 1 medição"
+        }
+      }
+    ],
+    "de_marketing": 1,
+    "de_operacao": 0
+  },
   "meu_bairro": {
     "bairro": "Centro",
     "clinicas": 48,
@@ -448,9 +582,9 @@
         "acao_recomendada": "responder as avaliações abertas e tratar o motivo",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": 4.6,
-        "medido_em": "2026-08-12",
+        "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
-        "dias": 0
+        "dias": 1
       },
       {
         "arco_id": "ortho_joi_centro|posicao",
@@ -466,9 +600,9 @@
         "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": 11.0,
-        "medido_em": "2026-08-12",
+        "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
-        "dias": 0
+        "dias": 1
       }
     ],
     "total": 2,

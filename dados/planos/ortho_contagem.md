@@ -41,11 +41,11 @@ Quem aparece no seu lugar: ODONTO ART DENTISTA 24 HORAS CONTAGEM (1.728 avaliaç
 
 Encontramos outro cadastro no mesmo endereço ou com o nome da marca:
 
-· ODONTO ART DENTISTA 24 HORAS CONTAGEM — 1.727 avaliação
+· ODONTO ART DENTISTA 24 HORAS CONTAGEM — 1.729 avaliação
 
-· Clínica Elevata - Rede Odonto Eldorado — 1.292 avaliação
+· Clínica Elevata - Rede Odonto Eldorado — 1.294 avaliação
 
-· Orthopride Contagem — 875 avaliação
+· Orthopride Contagem — 876 avaliação
 
 Cadastro repetido **divide a avaliação e a nota**. O paciente que avalia no perfil errado some do perfil certo.
 

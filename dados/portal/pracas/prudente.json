@@ -1,6 +1,6 @@
 {
   "praca_id": "prudente",
-  "corte": "2026-08-12",
+  "corte": "2026-08-13",
   "rotulo": "SP · Presidente Prudente",
   "uf": [
     "SP"
@@ -276,6 +276,74 @@
   "bairros": {
     "praca_id": "prudente",
     "rotulo": "SP · Presidente Prudente",
+    "territorio": [
+      {
+        "local_id": "ortho_pp",
+        "unidade": "OrthoDontic Presidente Prudente",
+        "medido": true,
+        "location": {
+          "lat": -22.1218909,
+          "lng": -51.3903289
+        },
+        "bairro": "Centro",
+        "clinica_mais_proxima": {
+          "nome": "Instituto Fernandes Martins Odontologia",
+          "km": 0.13,
+          "avaliacoes": 16,
+          "nota": 4.8,
+          "bairro": "Centro"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Clínica Oral Vida",
+          "km": 0.21,
+          "avaliacoes": 216,
+          "nota": 5,
+          "bairro": "Centro"
+        },
+        "unidade_da_rede_mais_proxima": null,
+        "raios": {
+          "1km": {
+            "clinicas": 76,
+            "de_aparelho": 13,
+            "da_rede": 0
+          },
+          "2km": {
+            "clinicas": 98,
+            "de_aparelho": 19,
+            "da_rede": 0
+          },
+          "5km": {
+            "clinicas": 114,
+            "de_aparelho": 24,
+            "da_rede": 0
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.13 km",
+        "proximidade_entre_unidades": null,
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 119,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 119 clínicas com coordenada, 1 medição"
+        }
+      }
+    ],
+    "clinicas_com_coordenada": 120,
+    "clinicas_sem_coordenada": 0,
+    "raios_declarados_km": [
+      1,
+      2,
+      5
+    ],
     "bairros_medidos": 46,
     "clinicas_medidas": 120,
     "sem_bairro_no_endereco": 1,
@@ -992,6 +1060,16 @@
       "procedencia": "medido em 120 clínicas varridas, 1 medição"
     }
   },
+  "movimentos_do_mercado": {
+    "eventos": [],
+    "resumo": {
+      "praca_id": "prudente",
+      "rotulo": "SP · Presidente Prudente",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
   "imprensa": {
     "medido": true,
     "total": 51,
@@ -1005,84 +1083,84 @@
         "veiculo": "G1",
         "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQeFUzWGpZTDd2b3phYzRhbmxKSFY2S2t1ZkJnbmVTeHdKSmthb1VlcHJic1NwV2R0UjRUU0lEdGItcnBLZnVmTW9YSlZnSmxLTTVvUlFHLTdqX0szUElyeWtVSEl2VXo3YTdlWGpKcW96dU55UEtKcGxOS2ctQ21Kc2NpTDFjR05DcXJJdnc3S3hhX3FEWkFzSEc0TFRFTnQzVnpzTWRYREstOUFQaW9GLWEtTFl1OUMxNFRiQjhrY2l6N2xBOV91anZoc1pNYzI1NC1abldiTXZhVUV6M2hzRHE5N0hiVG5wdDZ1eGlTWkI4WnEwWjc5c1cwdW85amdOTjBCeHFaX3N0RWllbk5OZdIBnwJBVV95cUxOci04aE1GYzdxb0JYdUN1dWJTb2FsZ0wwTUdTMVdVVWJqVC1waFJVR1FpTDg2WkEwdTZzX2xXMkExenJTcHpna3gzaWRuTjZ1UHJ5VDZvcnVWWndOX1V0R0hFLUdDV1RuUjVmMzh1TVFEajRxM3NndGRFTjJTTkZKWmdHMVRqYXdvX25rd0p1cXhsNFJRc0hYSXpYa1Qyems5c28yQ3dRbDN3djFpNk4waDJuR0NtaEE5dUlqblJ3LUpaazNsMkVvREwyX0pObEd4MHlJMDdMM1BoN2dsdlU3OWNBLXhSMFhoRmZ5U2hvZENwNlBIWkd3UXdIeTMxQzBKVTl1Ui1UYnVXSXYyRnIzR0JjRGNMWHdGQWo3U1MzVQ?oc=5",
         "publicado": "2026-08-07",
-        "dias": 5
+        "dias": 6
       },
       {
         "titulo": "Passageiros relatam medo após sequência de crimes no Terminal Urbano de Presidente Prudente - G1",
         "veiculo": "G1",
         "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNWnJyZDhLMl83alhZaHZXYXdqVHl6LXZQSTFKU2xkaVM3Mzk2TlhhRjY1MEZ0QWZHSVNoZzZVenpiYU5mMTJ5RnpFXzZyVnM2MGdiWjNPOXdnWG9YT0w0bWFCV1RxQzhyalFNcXZvS0FNYkJxZm9BV0hrYjgzZUNlYV9IQ3dGaTNsZUFiVl9xcjA4SENOYkMtNmxXc0FRVUZGNzFrUHpBSlpPNHVjbl9rbUFhclUzWk4wbml3X2l1eGp5YUZRazNlU01HS2poTy1nU2tRSDBOcHhGUGNFT2NqVFUxNXJGNzIyWnJlYUVjdGZ1SzF3azdhNWJDc0pYQdIBjAJBVV95cUxOQXV6ZkdNUUFYcHFIdUZDM2owUVJCLUNadFNpTjN0VnFtVUY0azJNZUxnTXhlY19hM1pCM19XQnlZQ2tGc0I4d0o3bm8yaV8xTklRYThQTnFvc2s2OUNPUlp3LTZPeENqa1NYakR0WGduNDBWOGlFM1VRNEM2ZHVic1ZnN280XzExSm5GUnlWLTJNWEEtdzByZTNDVXVPTzZ4NUFsVGV1enYxcmdFYjMxOG9mTFA2aC1haUotbm5QelNIWGpSZEJWYlZKYnh2V3lFVGhtOHk2MjE2emdBRVZkVzRKU1owbzNwbFUzQ2k3RnFuXzVzT2p3VG9jOGRyOVhiTFpqeXpvUXRCaDRC?oc=5",
         "publicado": "2026-08-07",
-        "dias": 5
+        "dias": 6
       },
       {
         "titulo": "Presidente Prudente tem alta de 8,4% na concessão de medidas protetivas nos primeiros sete meses de 2026 - Ifronteira",
         "veiculo": "Ifronteira",
         "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOTzVNaGJCYmdQWkJocjRBYWRXLWV4bWxqXzJUWWpKYWRoSDVJWTBoVmhpQUE4dS15bnJzbkVpMFNjeGNwRGgtSXBQcEpncExucTI1d2UtYVZ6bWZhNk1Bc3hXeGFoX245WEl2Snc3R1NWR3NvR1Yxekl4bW5CbldlUUt4TGxHY0pFdW5UVURuTVBUSjRueTlKanFRSEswSmswLVhJTEVDUG5vMmF2ZE1Xa1lhRnpCT3lVdEdlWlQ2elhpWldEa0d0VU05bzM4clJ1ZEd3?oc=5",
         "publicado": "2026-08-07",
-        "dias": 5
+        "dias": 6
       },
       {
         "titulo": "Ciclone-bomba: veja os municípios de SP com maiores rajadas de vento - CNN Brasil",
         "veiculo": "CNN Brasil",
         "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWWl6N2hNUFJEWDh1R1JEb1hZOENpMGRDOWxMWmRidmpzaXJLOHRRSFZTSHNXT3o4Z2VFRUJpajJ2U1I0ZU5FMnlFMzRrMVJvdjgxaml2eUh2X2F1OXdmemdVekl5RE5WTE40eEl0emU4V2xmZXE4RE90Q2RKMFlvTkk0S1JQMXprcWFTX1N1TXdQaGEwb2xZNURXZmtrMGZCOVc3QkVldlhldw?oc=5",
         "publicado": "2026-08-07",
-        "dias": 5
+        "dias": 6
       },
       {
         "titulo": "Galpão da Lua participa da Jornada do Patrimônio 2026 com atividade sobre a memória ferroviária de Presidente Prudente - Ifronteira",
         "veiculo": "Ifronteira",
         "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQbXVyNWJ2MGJwT3MtTS00RnpIUHlxZXE4ZTBFX2Rjbm5SWG9ncjJuYVNTUDZWZWs4TUhyWnU3aF9BRW13eEd6eVJNczFPOWR4dlZsSmJFNUlZU3pDTVVWeXhrODVSeFRkaXNnajBNczU5cFRVRkVSeWJtZ0E0TDE4QzFLSVNTQjdQZHZjVFlqUkNtOEpXT1YySnJCWVlhSHlLQkEzRFRKYlJadnJ4TENGeE45a0x0clp1N0tRX3M0bmlpMmlSelJuRFRQOGVyV0ttSW52WEFfMHhtUHM1akg3Q043aDZ5NFZfdlF5QXJLOElwWENfRWVrbTZ3?oc=5",
         "publicado": "2026-08-07",
-        "dias": 5
+        "dias": 6
       },
       {
         "titulo": "Mulher é presa suspeita de usar Pix falso para comprar doces e salgados em lanchonete no interior de SP - G1",
         "veiculo": "G1",
         "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOU2dRT3RNYWw4bUQ3S2hwS2hkNmIwY0NuM09ibnZDUDVyMGg0OW9XMUVGVDhGQk1UNWU3VFBrVW1zVThxNU5KOTRUXzE5cHNCdzlPMXVCbXRHd19Ubk5yVXFRV3NmOGFNWWdfRUpGX3pWbS1vNUR2OEZJMGs0V2RPWkR6cjdpU21JZUxHNUhPUkxoenpPc1pYOFY2MlBPZ1FQZFNOQkI2RTZSQVdrVDJ0Z0diRHc5QWFDV0RYbjhWUGdoa0RZd2hFdWJmalRIdUR0Vks3eXhlNXloV2NoMGpHLW03ZU16MnNoX2ZrVDdydW5VS1NqSlZCUWtuQjBaRmNsWkk3alpYMWNvZl9KUUHSAZwCQVVfeXFMTmVpcnR3bmNLaFh1TE9UbkVwaFVnTlFFbmlqektyZkJ3Y01kRzBmOU1QM2VMa3pfV3hOTlFFUHpfMlkzcEc5b0poVDN0eVI4SHNjZURyYjh2MGhaYlQzY2lsWGpkLXVvbHJZY2FKeEFDN1d2SmM0bjFlNkgwZDFYNl9nNDRPM1E4SlVSVUtIMDhUbWpzeG4tQWh1X1k1eGtfdzYyMWRRb2ZkTlhkaExPWHFjRWQ4MlJvNGhYWmRMd2RrZlN5eXdpN1hIdU1iTm5qckxHVVJyOHZGWlJydjdoaVlVRHdmR3JQS2dRZnF6R3ZHNUlWMU8xVmhZUHBFeGF2Rk5aQS1Xd2RyZGcxMk1HaHZLbE5SN1RMcl9IcG8?oc=5",
         "publicado": "2026-08-07",
-        "dias": 5
+        "dias": 6
       },
       {
         "titulo": "Justiça manda Estado zerar fila de espera para tratamento multidisciplinar de crianças com TEA na região de Presidente Prudente - Ifronteira",
         "veiculo": "Ifronteira",
         "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPanVjdHFGMFB1TXRpOEpTdXFDYllKVkViLXpGV1lOQmU3Z1dwOW5ZV1R6UEFsLTd0b1VmQ054dGJHeUMwOW5RTkdzOHVCZ2RxNWM3c3ZaT2g3cHpWdVo2cHBvVC1JOUhjX3U5dEZ0YUUtV2NIb1pCOUVuOFZhLWtrV2FaY1ZHVzNYTjZwTzk3VTZ6c2hDRGMyQzN4SFN5eHJFRThFSnl3LTJwLTlHYXFlWXFFZExoV0dSSWI2MzdicTV1dC02enhYbXNZdWw4WEJST2QyLUhYaklMUnphQ0piRlVBdmlfRVRTWkpIYmxabDdra1NS?oc=5",
         "publicado": "2026-08-07",
-        "dias": 5
+        "dias": 6
       },
       {
         "titulo": "Mais do que cerveja: bancário transforma lembranças da família em marca artesanal no interior de SP - G1",
         "veiculo": "G1",
         "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNeWt6N19qcjh4Qlh0NjN1VlgyRTkxLU5QeE5sMUpzdmNQRDZSVWNqNTg2Y193dDdaSXgydVdJZk5ZTHVCVklDeGhMdGJIenZXTGpDQ2Flek9EYWY3WjU5WUJNakFQSWZTM2pvN3B2V3RqUjFrN0NndTI3bTUwZWFsdWZPNmR5dnJYZGRuelAwd2pXT3kyTFVsSnFHYWhGY2p0bVd4eTJhRXNHaWU2aGFGdUJLMVhWM0pIbmlQaFlsTjhDbFJTNUM2WG9uWDl0endjRFRWWmtTOGFrWWJ6dFd6dnFiUXRmeE1JOVYyZ1BHWXBiRXdNOGM5TE01Um1OWVo5MzhONFczWdIBlgJBVV95cUxPYURZOEF2TUNQeWlWR1p5cTB5cURlck9kSVkxT0RlQUhMTnAza3FzTlZ0QVZONFkwT3A2eVJwMlhibnV1RGZEZEVPUU1wT21HOHkxSXoxaHdKNXZDUXhNQUc0NEhqS3VYSXAwUWtWeWxodzdtamNUaHJOaXNQZ3FXZkhIbEQxSm5icXZwdUNDSGNHX252OGRycThDdFAzZzRIV2xxZjIxamRMSGFXNmRkT3RSbl8zME9SbHpYeWp5MHlDa3Q5RG5xOW9QTGdqdGVEYkd4TUgzUThKREV6YnhsX0VDMnoxbzc2WDhMYzh0UUdyVXhTcFZrMkZFbnlRazY4bWJhNFh6R0VaZ1FDQVpwYTJzYmR2QQ?oc=5",
         "publicado": "2026-08-07",
-        "dias": 5
+        "dias": 6
       },
       {
         "titulo": "Prefeitura abre quase 630 vagas para oficinas de ritmos, skate e capoeira em Presidente Prudente; confira - G1",
         "veiculo": "G1",
         "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNUkdJNkxHSVV6akRWc1NHemI5WmJ3akNHak1OMWxPYVktUjNTVGV1NjlvWlNmckFZVWh0dG1NdDBXWlM4NnQzZkJkcFN6TFdzSTIwTWZPNG13RWdHTUY2Tkl4VXRITHdYZS1La2tkR3FsaV9HeFFQd25pWnR0R1AyaGNxWnN3czY2SlJUUVBTclV4N0dTd3lQWUpXbHlEWXYwNlF6VG9MOXUtQ29QTjlkZktwUTVUQmtyd3pyaXhNazlOUjlJa0NJLXJJWVhBampESG9RTWNKS2h5dm0ta3dMMl9iZDh2Y3Q3QjhrUW9jUnlmWnJWbkJERmxMaUNFUnY1SnlYYWFRWjRPWUVLQlHSAZwCQVVfeXFMUEtsNFlKSmZqZFA5ekZMUGMxd2ZXM21sMGRBQXgxbDU3X2tLWU5DQTZvM0NIOTM3ZDFKN3dnMjlydlJFVmk5VGFlbEl6cURSQldfU3F1bkFzRUJuZnJZaXJJSlZyNm1QUDhxS19CTzNxQW96WFNtVU0wZUI3RG85RGQ5cFU3a0taM0R6OTJlNEg0cVJpUTJrUzhfM0VUTjJJYzlTNGMteTd6RFBhMnVfaHM4dlJsVEYtajlEeWlMUWV5ZmRUeDNBdHl2bnZMcHd6ZVlXSTZLbndUUnNuYTVDYlJ1N2k0RmpGaDEyb04wUkJpSHA5alo1T3FlOGFXVXZlcVJvTUlKYWRMR1QxbUtFMEpDRG15NVlOTFBzdmI?oc=5",
         "publicado": "2026-08-06",
-        "dias": 6
+        "dias": 7
       },
       {
         "titulo": "Limpeza de túmulos para o Dia dos Pais pode ser feita até sábado em Presidente Prudente - G1",
         "veiculo": "G1",
         "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxObWtWaG1oQUJESlY3X3hCY0UzWTk4NmJpOEtkc1dkVHZuOW9vaFFOTGhONjZod0M5X3Vhb1p5OC1nc3FIV3RHUE9Sdi1XbVRTUzE3ZzZVekx3ZndhYkpkeU1ra1lPRFhEWjh2YkdYNHNTS0hmWi05NFNmelRkd0tEUVRVNWJaZG9Ncng0Q2w0OWREYmJlVHEwcWVsWHR6ZWxFOXd5U2VLTWt4VVVkQ2ZVSVlYcEo0QXdpQWpnX0tuQ2R2U0kzbC1kMy1oY2d2ZTB6aGxRTDFQSEN1Z2k4YzhTYktSM1VpZmJZVTNBTmlWYTB1eU9ndXBmRtIBhwJBVV95cUxPVHRWQ3lCOVpfNUdaQVlOaGlzaC1PX2MxM3pMTXowM3ZtRDNOak5NY0wyZEQ5YTJsTzd4d3hEa0s0NTBsV2ZnbEtWQ0RROFJia3FDellnNHo5NFlfTzNtMzJVOVVjVjNTcUdrOU5tV1NwelVrWFNieU9rbVVKMjFMV0VzZWR3UDBKY1M4Rkk1NnBCb0E2NDdZNzNHd21mQWFfZlRkeEVSTkRhSVN0QWdzbnNlNnYyeU5vTEhTMlJIZFJTeU1aaUpGXzFXT0tiMzBNVXZFNUdualFyQ0pZeHp4RldBN1I4OFl0NV8wLUlGaXJXV2p6NWVEMFB5czJCWjNFdFhVQ1B3Zw?oc=5",
         "publicado": "2026-08-06",
-        "dias": 6
+        "dias": 7
       },
       {
         "titulo": "Ideb 2025 revela as escolas com melhor desempenho na região de Presidente Prudente; veja o ranking - G1",
         "veiculo": "G1",
         "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNTmItMjFGcXV4X0hJQ1FGN05BMTk5OXUzMzJpMlJXT1ZWYzgwMkJBdFlxWjdWZ3piOWplalV5RVFhRGVmT1plRk9zMXZFLXpFaHowQ1oybktNbzVKbkV4cjJyT05fQVpKNGxuUnlVRnhjRVBnc0FkeDZZM1RrNlZUUE1Wd0pPTWpDWElMNFBKUDc2REVYNGJQM0l5S0UyWjAtZXR3NXI4dlFEU0t0NUNSZGU4emsxeXRIb2VuZ1NOTWtINWllbXY0LUt5cnhNV2UwX3E5VTNXRVYxWXk2OWR5V2d5TXZmQTRwT1hNek1sVF9jdHBnNE5FaHU5OUVERFdzUExGUm5B0gGUAkFVX3lxTE4yakFqQjhzWHdPNk93M0RpMFhLOFhYel9jVVdRd0lZMUhMdG1PcmVsWUlhNmdjMWNhMF9UbjN6RkhZdlo4ZkFpeUlwakpTS09VS3lXQ3QzM2xfbXNrY1ZIODRjSXhGSWs3eXNodFowcXZQZWRCc2c1ZVgwbE5Qd21mRGtMajR0cVRnaWwzbGd4aksxUXVaQlNKX0toX2pjQnBaQ2tWc0JVcmV4WVhCZEtLdVloM3B6eXV2M0t2Q1dpa3JWU2Z3NUtrNTVXdUxydm50VjlLaXVrb2VSaU9WaTJfckdyeHFkMjZKZkFRWFMtUGFrSWQ0RENTdUhvUkliWEZpTG5nRzdSX0ZhMC1YR1ltQ1lHdQ?oc=5",
         "publicado": "2026-08-06",
-        "dias": 6
+        "dias": 7
       },
       {
         "titulo": "Revelando SP chega a Prudente em 10 dias; confira programação - THMais",
         "veiculo": "THMais",
         "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNR04xNHgwMUxYc1dEcVJUMXhmT3ZiLXVud0d1d0tjMHNwMEZTdlIwZVpHaDhXYzJwdDl0QzFTVFdDaVEyOXcwSHp0QnRzU0l2ZG1XR0JlaGZqNmdOeWhHcElOUTc4QnhnaFN5TXduWDVoY252azR5cFEzNGNUSWJCd3R4RHFIOHNRODI5R1BablRHdURNeTJvaDNPMUJyTDFzTG1TeFd6TGRxcTlaVHV5cDlFVVAwRDVsLTc4Q1JSNVcyS09WNjdaTA?oc=5",
         "publicado": "2026-08-06",
-        "dias": 6
+        "dias": 7
       }
     ]
   },
@@ -1098,10 +1176,10 @@
         "handle": "orthodontic.presidenteprudente",
         "posts_medidos": 14,
         "ultimo_post": "2026-08-04",
-        "dias_sem_publicar": 8,
+        "dias_sem_publicar": 9,
         "parado": false,
         "curtidas_medianas": 2,
-        "frase": "14 posts medidos, último há 8 dias"
+        "frase": "14 posts medidos, último há 9 dias"
       }
     ]
   },
@@ -1361,7 +1439,7 @@
   "temas": [
     {
       "tema": "atendimento",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "prudente",
       "pct": 0.6881,
       "n": 2613,
@@ -1372,7 +1450,7 @@
     },
     {
       "tema": "preco_custo",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "prudente",
       "pct": 0.0249,
       "n": 2613,
@@ -1383,7 +1461,7 @@
     },
     {
       "tema": "agenda_espera",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "prudente",
       "pct": 0.0149,
       "n": 2613,
@@ -1394,7 +1472,7 @@
     },
     {
       "tema": "comunicacao_resposta",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "prudente",
       "pct": 0.0149,
       "n": 2613,
@@ -1405,7 +1483,7 @@
     },
     {
       "tema": "qualidade_resultado",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "prudente",
       "pct": 0.5144,
       "n": 2613,
@@ -1416,7 +1494,7 @@
     },
     {
       "tema": "confianca_medo",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "prudente",
       "pct": 0.0501,
       "n": 2613,
@@ -1427,7 +1505,7 @@
     },
     {
       "tema": "contrato_burocracia",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "prudente",
       "pct": 0.0034,
       "n": 2613,
@@ -1438,7 +1516,7 @@
     },
     {
       "tema": "pessoas_nominais",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "prudente",
       "pct": 0.0379,
       "n": 2613,
@@ -1449,7 +1527,7 @@
     },
     {
       "tema": "localizacao_acesso",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "prudente",
       "pct": 0.0425,
       "n": 2613,
@@ -1460,7 +1538,7 @@
     },
     {
       "tema": "recomendacao_lealdade",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "prudente",
       "pct": 0.2553,
       "n": 2613,
@@ -1471,7 +1549,7 @@
     },
     {
       "tema": "dor_medo_dentista",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "prudente",
       "pct": 0.0505,
       "n": 2613,
@@ -1482,7 +1560,7 @@
     },
     {
       "tema": "resultado_autoestima",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "prudente",
       "pct": 0.1485,
       "n": 2613,
@@ -1493,7 +1571,7 @@
     },
     {
       "tema": "explicacao_clareza",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "prudente",
       "pct": 0.0421,
       "n": 2613,
@@ -1504,7 +1582,7 @@
     },
     {
       "tema": "aparelho_tratamento",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "prudente",
       "pct": 0.0119,
       "n": 2613,
@@ -1515,7 +1593,7 @@
     },
     {
       "tema": "familia_filhos",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "prudente",
       "pct": 0.0471,
       "n": 2613,
@@ -1526,7 +1604,7 @@
     },
     {
       "tema": "tempo_relacao",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "prudente",
       "pct": 0.0352,
       "n": 2613,

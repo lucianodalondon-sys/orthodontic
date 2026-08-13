@@ -40,7 +40,7 @@
   "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 14,
     "vence_em": "2026-08-26"
   },
@@ -324,6 +324,131 @@
       "procedencia": "medido em 104 avaliações"
     }
   },
+  "meu_territorio": {
+    "local_id": "ortho_gyn_st_morada_do_sol",
+    "unidade": "OrthoDontic St. Morada do Sol",
+    "medido": true,
+    "location": {
+      "lat": -16.6282842,
+      "lng": -49.327198
+    },
+    "bairro": "St. Morada do Sol",
+    "clinica_mais_proxima": {
+      "nome": "Clínica Odontológica - Instituto Correia",
+      "km": 1.58,
+      "avaliacoes": 55,
+      "nota": 4.7,
+      "bairro": "Jardim Nova Esperanca"
+    },
+    "aparelho_mais_proximo": {
+      "nome": "Camargo Odontologia",
+      "km": 5.86,
+      "avaliacoes": 1252,
+      "nota": 5,
+      "bairro": "Campinas"
+    },
+    "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 8.38,
+      "avaliacoes": 270,
+      "nota": 4.2,
+      "bairro": "St. Oeste"
+    },
+    "raios": {
+      "1km": {
+        "clinicas": 0,
+        "de_aparelho": 0,
+        "da_rede": 0
+      },
+      "2km": {
+        "clinicas": 2,
+        "de_aparelho": 0,
+        "da_rede": 0
+      },
+      "5km": {
+        "clinicas": 4,
+        "de_aparelho": 0,
+        "da_rede": 0
+      }
+    },
+    "frase_fato": "a clínica mais próxima está a 1.58 km",
+    "proximidade_entre_unidades": null,
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 160,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+        "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 160 clínicas com coordenada, 1 medição"
+    }
+  },
+  "movimentos": {
+    "eventos": [],
+    "e_da_cidade": true,
+    "resumo": {
+      "praca_id": "goiania",
+      "rotulo": "GO · Goiânia",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
+  "execucao": {
+    "local_id": "ortho_gyn_st_morada_do_sol",
+    "praca_id": "goiania",
+    "rotulo": "GO · Goiânia",
+    "unidade": "OrthoDontic St. Morada do Sol",
+    "itens": [
+      {
+        "problema": "Esta loja **não aparece em nenhuma** das 196 buscas que testamos na cidade.",
+        "e_marketing": true,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "seo_local",
+          "especialidade": "marketing local e Google Business",
+          "problema": "a unidade aparece em 0 buscas de 196 testadas na própria cidade",
+          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
+          "evidencias": [
+            "aparece em 0 de 196 buscas"
+          ],
+          "nao_fazer": [
+            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
+            "não prometer posição: o Google não vende ordem no mapa"
+          ],
+          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
+          "prazo": "30 dias",
+          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
+          "recoletar_em_dias": 30
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 196,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/portal/presenca_por_loja.json",
+          "a_favor": [
+            "Esta loja **não aparece em nenhuma** das 196 buscas que testamos na cidade."
+          ],
+          "contra": [
+            "uma medição só — a segunda dirá se é estrutural ou momento"
+          ],
+          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+          "procedencia": "medido em 196 buscas testadas, 1 medição"
+        }
+      }
+    ],
+    "de_marketing": 1,
+    "de_operacao": 0
+  },
   "meu_bairro": null,
   "acoes": {
     "arcos": [
@@ -341,9 +466,9 @@
         "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": 4.4,
-        "medido_em": "2026-08-12",
+        "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
-        "dias": 0
+        "dias": 1
       },
       {
         "arco_id": "ortho_gyn_st_morada_do_sol|posicao",
@@ -359,9 +484,9 @@
         "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": 15.0,
-        "medido_em": "2026-08-12",
+        "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
-        "dias": 0
+        "dias": 1
       }
     ],
     "total": 2,

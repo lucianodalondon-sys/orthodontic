@@ -40,7 +40,7 @@
   "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 14,
     "vence_em": "2026-08-26"
   },
@@ -378,6 +378,157 @@
       "procedencia": "medido em 89 avaliações"
     }
   },
+  "meu_territorio": {
+    "local_id": "ortho_gyn_jardim_tropical",
+    "unidade": "OrthoDontic Jardim Tropical",
+    "medido": true,
+    "location": {
+      "lat": -16.765591099999998,
+      "lng": -49.3486518
+    },
+    "bairro": "Jardim Tropical",
+    "clinica_mais_proxima": {
+      "nome": "OdontoCompany Av.Milão Assaí",
+      "km": 7.34,
+      "avaliacoes": 51,
+      "nota": 3.2,
+      "bairro": "Jardim Europa"
+    },
+    "aparelho_mais_proximo": {
+      "nome": "Vita Implantes - Clínica Odontológica",
+      "km": 8.41,
+      "avaliacoes": 881,
+      "nota": 4.9,
+      "bairro": "Parque Amazonia"
+    },
+    "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 12.72,
+      "avaliacoes": 270,
+      "nota": 4.2,
+      "bairro": "St. Oeste"
+    },
+    "raios": {
+      "1km": {
+        "clinicas": 0,
+        "de_aparelho": 0,
+        "da_rede": 0
+      },
+      "2km": {
+        "clinicas": 0,
+        "de_aparelho": 0,
+        "da_rede": 0
+      },
+      "5km": {
+        "clinicas": 0,
+        "de_aparelho": 0,
+        "da_rede": 0
+      }
+    },
+    "frase_fato": "a clínica mais próxima está a 7.34 km",
+    "proximidade_entre_unidades": null,
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 160,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+        "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 160 clínicas com coordenada, 1 medição"
+    }
+  },
+  "movimentos": {
+    "eventos": [],
+    "e_da_cidade": true,
+    "resumo": {
+      "praca_id": "goiania",
+      "rotulo": "GO · Goiânia",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
+  "execucao": {
+    "local_id": "ortho_gyn_jardim_tropical",
+    "praca_id": "goiania",
+    "rotulo": "GO · Goiânia",
+    "unidade": "OrthoDontic Jardim Tropical",
+    "itens": [
+      {
+        "problema": "Esta loja aparece em **1 das 196 buscas** que testamos na cidade.",
+        "e_marketing": true,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "seo_local",
+          "especialidade": "marketing local e Google Business",
+          "problema": "a unidade aparece em 1 busca de 196 testadas na própria cidade",
+          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
+          "evidencias": [
+            "aparece em 1 de 196 buscas",
+            "aparece em: {'frase': 'ortodontista aparecida de goiania', 'posicao': 1, 'intencao': 'BAIRRO'}"
+          ],
+          "nao_fazer": [
+            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
+            "não prometer posição: o Google não vende ordem no mapa"
+          ],
+          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
+          "prazo": "30 dias",
+          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
+          "recoletar_em_dias": 30
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 196,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/portal/presenca_por_loja.json",
+          "a_favor": [
+            "Esta loja aparece em **1 das 196 buscas** que testamos na cidade."
+          ],
+          "contra": [
+            "uma medição só — a segunda dirá se é estrutural ou momento"
+          ],
+          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+          "procedencia": "medido em 196 buscas testadas, 1 medição"
+        }
+      },
+      {
+        "problema": "8 avaliações negativas abertas sem resposta",
+        "e_marketing": false,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "reputacao",
+          "especialidade": "a própria unidade",
+          "porque_nao_e_marketing": "responder paciente é trabalho de quem atende. Agência escrevendo resposta em nome da clínica é o caminho mais curto para uma resposta que o paciente percebe como automática.",
+          "metrica_de_validacao": "quantas seguem sem resposta na próxima coleta",
+          "recoletar_em_dias": 15
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 8,
+          "janela_dias": null,
+          "medicoes": null,
+          "fonte": "dados/portal/caixa_de_respostas.json",
+          "a_favor": [],
+          "contra": [],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 8 avaliações"
+        }
+      }
+    ],
+    "de_marketing": 1,
+    "de_operacao": 1
+  },
   "meu_bairro": {
     "bairro": "Jardim Tropical",
     "clinicas": 1,
@@ -401,9 +552,9 @@
         "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": 6.8,
-        "medido_em": "2026-08-12",
+        "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
-        "dias": 0
+        "dias": 1
       },
       {
         "arco_id": "ortho_gyn_jardim_tropical|posicao",
@@ -419,9 +570,9 @@
         "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": 14.0,
-        "medido_em": "2026-08-12",
+        "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
-        "dias": 0
+        "dias": 1
       }
     ],
     "total": 2,

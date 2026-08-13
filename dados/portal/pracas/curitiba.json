@@ -1,6 +1,6 @@
 {
   "praca_id": "curitiba",
-  "corte": "2026-08-12",
+  "corte": "2026-08-13",
   "rotulo": "PR · Curitiba",
   "uf": [
     "PR"
@@ -299,6 +299,360 @@
   "bairros": {
     "praca_id": "curitiba",
     "rotulo": "PR · Curitiba",
+    "territorio": [
+      {
+        "local_id": "ortho_cwb_centro",
+        "unidade": "OrthoDontic Centro",
+        "medido": true,
+        "location": {
+          "lat": -25.4301288,
+          "lng": -49.2694366
+        },
+        "bairro": "Centro",
+        "clinica_mais_proxima": {
+          "nome": "Dentista no Centro de Curitiba Dra Rafaela Rosa Bento Odontologia",
+          "km": 0.1,
+          "avaliacoes": 15,
+          "nota": 5,
+          "bairro": "Centro"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Clínica Vita Sorriso Implantes - Especialista em Prótese Protocolo",
+          "km": 0.29,
+          "avaliacoes": 514,
+          "nota": 4.6,
+          "bairro": "Centro"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 0.19,
+          "avaliacoes": 126,
+          "nota": 4.7,
+          "bairro": "Centro"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 69,
+            "de_aparelho": 4,
+            "da_rede": 3
+          },
+          "2km": {
+            "clinicas": 122,
+            "de_aparelho": 7,
+            "da_rede": 3
+          },
+          "5km": {
+            "clinicas": 167,
+            "de_aparelho": 12,
+            "da_rede": 3
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.1 km",
+        "proximidade_entre_unidades": {
+          "km": 0.19,
+          "unidade": "OrthoDontic",
+          "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+          "natureza": "inferencia"
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 178,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 178 clínicas com coordenada, 1 medição"
+        }
+      },
+      {
+        "local_id": "ortho_cwb_centro_2",
+        "unidade": "OrthoDontic Centro",
+        "medido": true,
+        "location": {
+          "lat": -25.4336171,
+          "lng": -49.2708466
+        },
+        "bairro": "Centro",
+        "clinica_mais_proxima": {
+          "nome": "Clínica Odontológica BioCenter",
+          "km": 0.04,
+          "avaliacoes": 64,
+          "nota": 4.4,
+          "bairro": "Centro"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Clínica Vita Sorriso Implantes - Especialista em Prótese Protocolo",
+          "km": 0.14,
+          "avaliacoes": 514,
+          "nota": 4.6,
+          "bairro": "Centro"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 0.22,
+          "avaliacoes": 126,
+          "nota": 4.7,
+          "bairro": "Centro"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 75,
+            "de_aparelho": 5,
+            "da_rede": 3
+          },
+          "2km": {
+            "clinicas": 124,
+            "de_aparelho": 9,
+            "da_rede": 3
+          },
+          "5km": {
+            "clinicas": 167,
+            "de_aparelho": 12,
+            "da_rede": 3
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.04 km",
+        "proximidade_entre_unidades": {
+          "km": 0.22,
+          "unidade": "OrthoDontic",
+          "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+          "natureza": "inferencia"
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 178,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 178 clínicas com coordenada, 1 medição"
+        }
+      },
+      {
+        "local_id": "ortho_cwb_centro_3",
+        "unidade": "OrthoDontic Centro",
+        "medido": true,
+        "location": {
+          "lat": -25.4319955,
+          "lng": -49.2743849
+        },
+        "bairro": "Centro",
+        "clinica_mais_proxima": {
+          "nome": "Orthopride Curitiba",
+          "km": 0.05,
+          "avaliacoes": 110,
+          "nota": 3.5,
+          "bairro": "Centro"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "REDEORTO Curitiba - Centro",
+          "km": 0.24,
+          "avaliacoes": 515,
+          "nota": 4.9,
+          "bairro": "Centro"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 0.4,
+          "avaliacoes": 718,
+          "nota": 4.7,
+          "bairro": "Centro"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 68,
+            "de_aparelho": 4,
+            "da_rede": 3
+          },
+          "2km": {
+            "clinicas": 120,
+            "de_aparelho": 8,
+            "da_rede": 3
+          },
+          "5km": {
+            "clinicas": 167,
+            "de_aparelho": 12,
+            "da_rede": 3
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.05 km",
+        "proximidade_entre_unidades": {
+          "km": 0.4,
+          "unidade": "OrthoDontic",
+          "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+          "natureza": "inferencia"
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 178,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 178 clínicas com coordenada, 1 medição"
+        }
+      },
+      {
+        "local_id": "ortho_cwb_portao",
+        "unidade": "OrthoDontic Portão",
+        "medido": true,
+        "location": {
+          "lat": -25.4742182,
+          "lng": -49.2931549
+        },
+        "bairro": "Portão",
+        "clinica_mais_proxima": {
+          "nome": "ADEROSSO Odontologia e Estética",
+          "km": 0.21,
+          "avaliacoes": 173,
+          "nota": 4.9,
+          "bairro": "Portão"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Julio Cavichiolo | Ortodontia | Estética | Implante Dentário | Dentista em Novo Mundo | Curitiba PR",
+          "km": 1.6,
+          "avaliacoes": 1196,
+          "nota": 4.8,
+          "bairro": "Novo Mundo"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 5.04,
+          "avaliacoes": 718,
+          "nota": 4.7,
+          "bairro": "Centro"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 2,
+            "de_aparelho": 0,
+            "da_rede": 0
+          },
+          "2km": {
+            "clinicas": 5,
+            "de_aparelho": 1,
+            "da_rede": 0
+          },
+          "5km": {
+            "clinicas": 62,
+            "de_aparelho": 7,
+            "da_rede": 0
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.21 km",
+        "proximidade_entre_unidades": null,
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 178,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 178 clínicas com coordenada, 1 medição"
+        }
+      },
+      {
+        "local_id": "ortho_cwb_centro_4",
+        "unidade": "OrthoDontic Centro",
+        "medido": true,
+        "location": {
+          "lat": -25.431754899999998,
+          "lng": -49.270136199999996
+        },
+        "bairro": "Centro",
+        "clinica_mais_proxima": {
+          "nome": "Clinica Perfectta Odontologia",
+          "km": 0.04,
+          "avaliacoes": 161,
+          "nota": 4.7,
+          "bairro": "Centro"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Clínica Vita Sorriso Implantes - Especialista em Prótese Protocolo",
+          "km": 0.11,
+          "avaliacoes": 514,
+          "nota": 4.6,
+          "bairro": "Centro"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 0.19,
+          "avaliacoes": 1012,
+          "nota": 4.6,
+          "bairro": "Centro"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 75,
+            "de_aparelho": 4,
+            "da_rede": 3
+          },
+          "2km": {
+            "clinicas": 124,
+            "de_aparelho": 8,
+            "da_rede": 3
+          },
+          "5km": {
+            "clinicas": 167,
+            "de_aparelho": 12,
+            "da_rede": 3
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.04 km",
+        "proximidade_entre_unidades": {
+          "km": 0.19,
+          "unidade": "OrthoDontic",
+          "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+          "natureza": "inferencia"
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 178,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 178 clínicas com coordenada, 1 medição"
+        }
+      }
+    ],
+    "clinicas_com_coordenada": 179,
+    "clinicas_sem_coordenada": 0,
+    "raios_declarados_km": [
+      1,
+      2,
+      5
+    ],
     "bairros_medidos": 27,
     "clinicas_medidas": 179,
     "sem_bairro_no_endereco": 0,
@@ -1038,12 +1392,22 @@
       "procedencia": "medido em 179 clínicas varridas, 1 medição"
     }
   },
+  "movimentos_do_mercado": {
+    "eventos": [],
+    "resumo": {
+      "praca_id": "curitiba",
+      "rotulo": "PR · Curitiba",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
   "imprensa": {
     "medido": true,
     "total": 57,
     "mostrando": 12,
-    "recentes_30d": 14,
-    "manchete": "14 matérias sobre a cidade nos últimos 30 dias, de 57 já lidas",
+    "recentes_30d": 28,
+    "manchete": "28 matérias sobre a cidade nos últimos 30 dias, de 57 já lidas",
     "porque_vazio": null,
     "materias": [
       {
@@ -1051,229 +1415,229 @@
         "veiculo": "G1",
         "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNYWpfQi02c0s4emVJRUR2aGVZang0VGxFcVBvZDBSSGNIYkNwVGpERFd6LVgyTEdpSFFwN1BfOVNrZ0dwSlFqNmU4T0dpY2E1alN6SnRyazJiRzNiT1Rsc05Rd29OdFIzTW9rbG5STmVCYjVGbGROMmFMOVZkck5IQVlweHI5cExmc2RpUk1qVzhRaXo4MHpZaC1hTks2VUNkQTBjVFhvQkoxRklTOEU2ZTBJc2pKWTU5LWJNcFlkYXFOQdIB0AFBVV95cUxQM2VvRDJkSnV3UE8xcE9SellSNEw4TnNMamx2NFdnUEJCNXlmenQ5YWQ0MFprbWRtTm5rQ0UzQjJqLTZpNlpzRWxXUkl4czlJSXpKVGJUTzN4Y3JwR25tYUt5RnRyQnM1RjU3ZGxRZ2JIR2VMVGVWdXBLVHIxdzdLRWpQZVBCckFsTzBnSjB6ZFA1Q05sUXBCSXEyblBOQ2pfUWRmblRKbHFVVTNnbHJaSzdPMTVtcGo3TWRTMHJKWlYtbTFXUnRzV1RtdWtOREE0?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Guarda Municipal de Curitiba vai ganhar museu para preservar a memória da instituição - Prefeitura de Curitiba",
         "veiculo": "Prefeitura de Curitiba",
         "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPWVFFbUgxbHlSRHVnOTRvVm5WeGNsWGFPbGJ4UHFqQ190QU91Z0tXWGI0eXZEVEVCdGZEeGNmazBob3AxQTVtSzhVWElHS2Zvb2V1OHJKcERYbFZjX0dZUkJ4MUlhQTVkeWFNTDd5RFlHVWs1cjl2TnNFbHFMVFN4ZElxY0ZTN2QtY2RDYll3aXF2TmVPZHNxcGlQMWlNa3ZfNjBwcGNfbUxncXhFenNqWGhnYm41QkFrdllzNUdHSDRMRktKczU5cmdMVQ?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Disney Celebra chega a Curitiba em dezembro com ingressos a partir de R$ 25; vendas começam em agosto - G1",
         "veiculo": "G1",
         "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQzBELXBveVEyV0lWTDR2blJLZHFLM3ZRYm1Uc29VWUFjaWx4Z2tfLTg0UDVTYWFWbF9QOHFIQWozMVdJaWhNVFJJMTNhNkdnV2tMT3dFUVdXbEZ1MHRabUlndEZtbHFoT0ZYVklOZk55YTZPTEx5cjJGOXBicDh6WVh3UVhFaFBNV05YZHRjYWJqNGtTZml4NWxGYjN5aFFjXzJJekttdUgzS3PSAboBQVVfeXFMTlZMTUE2SDR4bVhla0h2bDZoQV9nTk9pYng4T2NCcndmT0hjLXItYjZ1WWJ6NFg2NkRUcWJ4V2JHQjJPTGVTc1F2YjFMNkdjdFdXYXRBMTVfc0ZqeFBwcjFMS1Y4UThIWngyVC1aV2YzaEVGSjdSR2t0TXpaNk9HQnk1ajRlMUtMMWRWTkpMYjdabFVKWXVKUlJCaEJkS1N4MVRaRzdBTWtjMF9NZFdsTHNEQWJ4NFp0U1VR?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Justiça aceita denúncia, e vereadora de Curitiba vira ré por xenofobia contra colega nascida no Ceará - G1",
         "veiculo": "G1",
         "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPOXBjcW9KOUJZZjJUeTFSQVVfeV8wOHpVejAtZkJsSU01SmN5enAzV2ZfY1otT2xhX1BNQjlZVU03bFhSZS1sUnRwa1V4UkI0Wl9UNUNWTVJNaFRJQ2lrS1VRSFJ2ZGhNVEVpN1BiS0dIenJ2Z25yRGx2azdQcFZRUjFWUDVjSy1NdFF5cXVpY2ZXTUd2Y3huNTlwYURwSy1MXzhUWmoyNmhxZTF40gG7AUFVX3lxTE8zRFRKWExZVXRyU3p5RC1tRzdqTjlhSzVsaGdUQVppSnM5Z0NaR2IxclZaSTlKcHpoVmVkcC1qM19SRUJKNXh6ZUJ1cnVWM2U2aWd0Y2VFMDU0NW1GVlZ3b2UySkxzcEs0eFNvc01mR0ZXSXZ1RkdLcWExX1J6d0tjdW0xQlp0dkVLTFhDbGJMNWloblIwbHRMeW83UmdkNWpXV2hkTFZnUzQ0Z0NUblpwVXI4bUJ4ckJqTFk?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Com investimento de R$ 50 milhões, supermercado é inaugurado em Curitiba e amplia geração de empregos - Prefeitura de Curitiba",
         "veiculo": "Prefeitura de Curitiba",
         "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQRHRfYV9lRzRtMWppQ1JnUHROYkQwcXAyU3UteWpqRjlWVVRHUHBJdnpyMzJwSVlXWG1MZ2V6eVYtNUNBa0pEWkY5cURzN29OcjB0WVVhSU5VSFhvZE9WcTh6SWtBeTJvUlhuUDgzbDNsWjI2cnRPMWY3M3pYTDM1aldsbjFHYlFRLXdtcEFrYkMyVlZ2RDBpNndrZkRaNEpBNWc1Njc2Z1ZTdS1zLUVjSUpIcHhRVHctaFFYaHQzNUdwSFFKdGVPXzB1OGdLSlJlLU5GOHhNOVU1d20tSWc?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Polícia prende suspeito de homicídio após agressão com madeira em Curitiba - G1",
         "veiculo": "G1",
         "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOWnNieHVhcm9LbHhXWV8zdDNLT0FqOG85TzVkYnAxYlRDd3VORC0tendvYlMzb0lvcWJ2d1JFYUdtbHJVRlBOVGFHd0h0SlZkTTZRRVZZVmIwZHhSbDdNVUFSU1k2YnRYZVh6VmlGUzRhek5QWVhRR2NmYmJhdnlsRWpnXzRXUC1EX0xTWl9Zenk2SWpodEdhcTFJdXBZWDJQRGVNaE1yYXY2aWFfclplZzg5WDdmcXhnV1V2MEVJS21tZkNCbUI1M3RqV0JqR0lDR3BDRzFPaHRiNE1FQjdFdE10NNIB8gFBVV95cUxQZExOc291Ry1RdGFLdjZObWVqUl9kRW5HR09ya3RLQ240b3RxN05iaU5HUVQyaWw1bG03Z1Frc3VNR0VqLTRxQzNkTFQ5eGZwWEpzNU53dC1uMFg0U0NHY3hUNy1BTjNaOXQzUlc0azB2RjNvYV9yZ1UwQ3RkcTkxUmcwOXYwd3JZOXRjZzVRMFNWa3VRWXNMS3ZYQzgyYW5YYmpaaXpMLXNwLUxNU2FBWXlLS0dqejhoT3hfREVIUzIzOEZHYU1KOXdjelVZTXBDNUkzQ2UyME9pNXQ0WE9SYVZlckkzeEpXQ00yc0NjM3h4QQ?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Câmara de Curitiba empossa a 8ª “legislatura” do Parlamento Jovem - Câmara de Curitiba",
         "veiculo": "Câmara de Curitiba",
         "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOVzEtMzlUamtIX1VpcFhsbG5KWlRPNmlOdjY1SjhkUTl2TVNHM3ljNGh1ZmxvUW1TTHBFMnVyOEdiVnJRM0phZ2hseDNGTzl6QVlVeWxEcHhiVGRQQ3k3bzRrVjBkQ2trcTZrYmZIVUw4aHZqcjlsUlNZN3dRUVZGTVg0b3o2VHlnSjJPNzl5MjVkUU1rZ05wTnZMbS1wYW5KY1hSVTJkS2hDNXgybjNUc09YU1RnWXhYUmc?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Prefeitura de Curitiba amplia forma de agendamento da aplicação de ferro endovenoso - Prefeitura de Curitiba",
         "veiculo": "Prefeitura de Curitiba",
         "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQNFh1Zk9aaWpUOVVBS0RlOWNRZ3JvNV9CdjNYWE5xN0RFdVRrOG9JZ1JocFhZNkdSa3VPWjhSN2V2dmVMbHYtNU1hYXVOSVU2YVhnZ3JjYVUxcXIweHNrSHhHbFlVVXl1UEpKRTdVTGtmanROaUh3RGljRlMxWDZWZ05vTDBlLVo1V3FTRHRCeExXVUd5MWlBTFVDSnQyWGotU1U0U3NtRHhTejBaVFJxclRwMUpmbGd6TE9wMGJ4RlE4c1BpMVF4WQ?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Quem são os candidatos ao Senado pelo Paraná (PR) nas eleições de 2026 - JOTA Info",
         "veiculo": "JOTA Info",
         "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQTFJIbS1wTjVCdVlhWUhKU0V5ZjFQUnMtSmJVRDZjMnFNWVZfdmwxSWwwZU1YaGotUXJSdGM1bFNFNF9PeU1QUzl1Y0hBdlh0NkJKUWMzZnJUSXlWMkpmM2E0MkRXdWNjazI2cC1ldDczdHNaLWxpYllPdmV4aHh5cnB0Uko2Vklad3g1WXZXWlFVOGM3UXl4dVh6bjNQZnYxVm9DMk83LWtoSGtJdEh3aWIyZGJ6S1JjV1BYOQ?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Trânsito em Curitiba hoje: Portão tem rua interditada por 60 dias e mais 3 bairros com obras - Tribuna do Paraná",
         "veiculo": "Tribuna do Paraná",
         "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQeFp3R0dkVTNCbWpkN3RvNXRQOWpZRWFVUjV1bVF0VWtYMTNXcHhaRzcycG53QTJIaDBna0NFR1FvM3ZuMlBDMHczNElVOTE2cERITXJHbnVLbjN4bDNEYkNnYW9tYy1mY0NBalkxU08tT1pZVWxYSUZFeURmQWxnc1MtY054Yk5zWDVFTGNZSXJzOW52c00wMDJ6X2JxQ3FTNEJ0WkRaNVVjSENtTVZOVGtTWjVyQ0oyZENwTnZNQWkwVFZ4QzF3U05R0gHPAUFVX3lxTE53V3J1cTJKWkpDVjJGR0VjNTM1MWFBUjdJU2V0WWUxYUZsSkZWSFRHUW1QSEt3ZzFRalkyUHhzSWxOX0d0NGsyT2JXT2xJQXBSdnNWZl8yR3ZwVDJhLTNvTU5ham1lc1pvaTlyM2VKTHptdzNtUEZNRE5vZG1HaUlJWks4VV9Yb2N4eTJ6dS1JcVJpRW44MllxN2pLQWhRWEZ3b1RjMUotbUxyUzNrWDNIWVJGdWdrSnVWVEFqcE9GUW1WQmJGNVFmblljbW5RUQ?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Semana Literária Sesc começa em Curitiba e no PR - O Paraná",
         "veiculo": "O Paraná",
         "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNQnJEZWVnMnVXMmsyQ3ZBdEJWV0tMaTB0RXlLUVlhQTJBd1ZJZHBETS15RmZpeXd1aU9MRFIyRGpyS0RxMFVjSTJhS0tER2xaNEJXc0luVzBzY2hqbkpwQktpRkR4QU5MVllTN19feEpwdHlSSVM4TVhlZTJZa3dZVlRwem9nRUMwSnZVNEdzV0NHV3E1RzBpd253TQ?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Megaoperação da PM mira tráfico e roubos no Centro de Curitiba - Tribuna do Paraná",
         "veiculo": "Tribuna do Paraná",
         "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOOEt0OVZIaFhFaGhFM1VxVXFtLXZYMVlvTGlEUHhJZ09QcFBPOVBKSjZDQVBlcE82bk5JcU9ROVlma3VYOXpvVFRCNzB6S1ZSRFFNVFowcTRqXzlUdFVHRzNWM3Q0dkhLZFg0Z1ZsZng4dVlGM2xQbXlzemtLQjBOMFNSVHQ3bVlYbTNYV3M5VGlpNTDSAZgBQVVfeXFMTy1nSzd6RC01XzFhdDNHSy1WN0RXYjhscDBlSnJZdUtKRDdNTUl5cXRzblNIcTlzMUdEUmhBbF9Bc0FQT3d1bndfSXhzblZqaENMWVdIenluUlZwTFBHcnZYcDZmOEVuNGFNZHBDelQzR1c2dWNweFNvSk9qVE1jRDRiQk5ycDU1dDFuV0d4aHc4ejBPUHZaOTA?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       }
     ]
   },
   "ritmo_de_publicacao": {
     "medido": true,
     "perfis": 61,
-    "vivos": 47,
-    "parados": 14,
-    "manchete": "47 perfis publicando nos últimos 60 dias, 14 parados",
+    "vivos": 46,
+    "parados": 15,
+    "manchete": "46 perfis publicando nos últimos 60 dias, 15 parados",
     "porque_vazio": null,
     "lista": [
       {
         "handle": "plantao190",
         "posts_medidos": 38,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 879,
-        "frase": "38 posts medidos, último há 0 dias"
+        "frase": "38 posts medidos, último há 1 dia"
       },
       {
         "handle": "curitibacomedy",
         "posts_medidos": 39,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 14,
-        "frase": "39 posts medidos, último há 0 dias"
+        "frase": "39 posts medidos, último há 1 dia"
       },
       {
         "handle": "sou_curitiba",
         "posts_medidos": 40,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 76,
-        "frase": "40 posts medidos, último há 0 dias"
+        "frase": "40 posts medidos, último há 1 dia"
       },
       {
         "handle": "jansenserra",
         "posts_medidos": 1,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 136,
-        "frase": "1 post medido, último há 0 dias"
+        "frase": "1 post medido, último há 1 dia"
       },
       {
         "handle": "empregocuritibapr",
         "posts_medidos": 36,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 87,
-        "frase": "36 posts medidos, último há 0 dias"
+        "frase": "36 posts medidos, último há 1 dia"
       },
       {
         "handle": "reitoria.ufpr",
         "posts_medidos": 4,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 239,
-        "frase": "4 posts medidos, último há 0 dias"
+        "frase": "4 posts medidos, último há 1 dia"
       },
       {
         "handle": "smeljpmc",
         "posts_medidos": 17,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 63,
-        "frase": "17 posts medidos, último há 0 dias"
+        "frase": "17 posts medidos, último há 1 dia"
       },
       {
         "handle": "ufpr_oficial",
         "posts_medidos": 11,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 333,
-        "frase": "11 posts medidos, último há 0 dias"
+        "frase": "11 posts medidos, último há 1 dia"
       },
       {
         "handle": "cbncuritiba",
         "posts_medidos": 28,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 22,
-        "frase": "28 posts medidos, último há 0 dias"
+        "frase": "28 posts medidos, último há 1 dia"
       },
       {
         "handle": "saboresdecuritiba",
         "posts_medidos": 25,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 471,
-        "frase": "25 posts medidos, último há 0 dias"
+        "frase": "25 posts medidos, último há 1 dia"
       },
       {
         "handle": "petroleoufpr",
         "posts_medidos": 1,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 144,
-        "frase": "1 post medido, último há 0 dias"
+        "frase": "1 post medido, último há 1 dia"
       },
       {
         "handle": "utfpr.curitiba",
         "posts_medidos": 18,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 143,
-        "frase": "18 posts medidos, último há 0 dias"
+        "frase": "18 posts medidos, último há 1 dia"
       },
       {
         "handle": "culturaufpr",
         "posts_medidos": 3,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 127,
-        "frase": "3 posts medidos, último há 0 dias"
+        "frase": "3 posts medidos, último há 1 dia"
       },
       {
         "handle": "clubedemaes_merces",
         "posts_medidos": 40,
         "ultimo_post": "2026-08-11",
-        "dias_sem_publicar": 1,
+        "dias_sem_publicar": 2,
         "parado": false,
         "curtidas_medianas": 12,
-        "frase": "40 posts medidos, último há 1 dia"
+        "frase": "40 posts medidos, último há 2 dias"
       },
       {
         "handle": "supermercado.curitiba",
         "posts_medidos": 35,
         "ultimo_post": "2026-08-11",
-        "dias_sem_publicar": 1,
+        "dias_sem_publicar": 2,
         "parado": false,
         "curtidas_medianas": 3,
-        "frase": "35 posts medidos, último há 1 dia"
+        "frase": "35 posts medidos, último há 2 dias"
       }
     ]
   },
@@ -1473,7 +1837,7 @@
   "temas": [
     {
       "tema": "atendimento",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "curitiba",
       "pct": 0.6886,
       "n": 1750,
@@ -1484,7 +1848,7 @@
     },
     {
       "tema": "preco_custo",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "curitiba",
       "pct": 0.0291,
       "n": 1750,
@@ -1495,7 +1859,7 @@
     },
     {
       "tema": "agenda_espera",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "curitiba",
       "pct": 0.028,
       "n": 1750,
@@ -1506,7 +1870,7 @@
     },
     {
       "tema": "comunicacao_resposta",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "curitiba",
       "pct": 0.0263,
       "n": 1750,
@@ -1517,7 +1881,7 @@
     },
     {
       "tema": "qualidade_resultado",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "curitiba",
       "pct": 0.4983,
       "n": 1750,
@@ -1528,7 +1892,7 @@
     },
     {
       "tema": "confianca_medo",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "curitiba",
       "pct": 0.04,
       "n": 1750,
@@ -1539,7 +1903,7 @@
     },
     {
       "tema": "contrato_burocracia",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "curitiba",
       "pct": 0.0029,
       "n": 1750,
@@ -1550,7 +1914,7 @@
     },
     {
       "tema": "pessoas_nominais",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "curitiba",
       "pct": 0.0749,
       "n": 1750,
@@ -1561,7 +1925,7 @@
     },
     {
       "tema": "localizacao_acesso",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "curitiba",
       "pct": 0.0446,
       "n": 1750,
@@ -1572,7 +1936,7 @@
     },
     {
       "tema": "recomendacao_lealdade",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "curitiba",
       "pct": 0.2554,
       "n": 1750,
@@ -1583,7 +1947,7 @@
     },
     {
       "tema": "dor_medo_dentista",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "curitiba",
       "pct": 0.0543,
       "n": 1750,
@@ -1594,7 +1958,7 @@
     },
     {
       "tema": "resultado_autoestima",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "curitiba",
       "pct": 0.1463,
       "n": 1750,
@@ -1605,7 +1969,7 @@
     },
     {
       "tema": "explicacao_clareza",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "curitiba",
       "pct": 0.0469,
       "n": 1750,
@@ -1616,7 +1980,7 @@
     },
     {
       "tema": "aparelho_tratamento",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "curitiba",
       "pct": 0.0423,
       "n": 1750,
@@ -1627,7 +1991,7 @@
     },
     {
       "tema": "familia_filhos",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "curitiba",
       "pct": 0.024,
       "n": 1750,
@@ -1638,7 +2002,7 @@
     },
     {
       "tema": "tempo_relacao",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "curitiba",
       "pct": 0.0343,
       "n": 1750,

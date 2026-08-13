@@ -27,7 +27,7 @@
   "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
-    "dias_aberta": 2,
+    "dias_aberta": 3,
     "prazo_dias": 30,
     "vence_em": "2026-09-09"
   },
@@ -466,6 +466,128 @@
       "procedencia": "medido em 228 avaliações, 3 medições, 4 dias de janela"
     }
   },
+  "meu_territorio": {
+    "local_id": "ortho_palmas",
+    "unidade": "OrthoDontic",
+    "medido": true,
+    "location": {
+      "lat": -10.1837006,
+      "lng": -48.3277262
+    },
+    "bairro": "Plano Diretor Norte",
+    "clinica_mais_proxima": {
+      "nome": "Alinhare Odontologia Integrada",
+      "km": 0.07,
+      "avaliacoes": 5,
+      "nota": 4.8,
+      "bairro": "Plano Diretor Norte"
+    },
+    "aparelho_mais_proximo": {
+      "nome": "DenteClin - Clínicas Odontológicas - JK | Palmas",
+      "km": 0.17,
+      "avaliacoes": 288,
+      "nota": 4.9,
+      "bairro": "Plano Diretor Sul"
+    },
+    "unidade_da_rede_mais_proxima": null,
+    "raios": {
+      "1km": {
+        "clinicas": 34,
+        "de_aparelho": 2,
+        "da_rede": 0
+      },
+      "2km": {
+        "clinicas": 64,
+        "de_aparelho": 6,
+        "da_rede": 0
+      },
+      "5km": {
+        "clinicas": 108,
+        "de_aparelho": 12,
+        "da_rede": 0
+      }
+    },
+    "frase_fato": "a clínica mais próxima está a 0.07 km",
+    "proximidade_entre_unidades": null,
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 132,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+        "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 132 clínicas com coordenada, 1 medição"
+    }
+  },
+  "movimentos": {
+    "eventos": [],
+    "e_da_cidade": true,
+    "resumo": {
+      "praca_id": "palmas",
+      "rotulo": "TO · Palmas",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
+  "execucao": {
+    "local_id": "ortho_palmas",
+    "praca_id": "palmas",
+    "rotulo": "TO · Palmas",
+    "unidade": "OrthoDontic",
+    "itens": [
+      {
+        "problema": "Esta loja aparece em **3 das 120 buscas** que testamos na cidade.",
+        "e_marketing": true,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "seo_local",
+          "especialidade": "marketing local e Google Business",
+          "problema": "a unidade aparece em 3 buscas de 120 testadas na própria cidade",
+          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
+          "evidencias": [
+            "aparece em 3 de 120 buscas",
+            "aparece em: {'frase': 'aparelho ortodôntico palmas', 'posicao': 1, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'ortodontista palmas', 'posicao': 1, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'ortodontista em palmas', 'posicao': 1, 'intencao': 'GENÉRICO'}"
+          ],
+          "nao_fazer": [
+            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
+            "não prometer posição: o Google não vende ordem no mapa"
+          ],
+          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
+          "prazo": "30 dias",
+          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
+          "recoletar_em_dias": 30
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 120,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/portal/presenca_por_loja.json",
+          "a_favor": [
+            "Esta loja aparece em **3 das 120 buscas** que testamos na cidade."
+          ],
+          "contra": [
+            "uma medição só — a segunda dirá se é estrutural ou momento"
+          ],
+          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+          "procedencia": "medido em 120 buscas testadas, 1 medição"
+        }
+      }
+    ],
+    "de_marketing": 1,
+    "de_operacao": 0
+  },
   "meu_bairro": {
     "bairro": "Plano Diretor Norte",
     "clinicas": 21,
@@ -504,9 +626,9 @@
         "acao_recomendada": "sem ação padrão para este gatilho",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": null,
-        "medido_em": "2026-08-12",
+        "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
-        "dias": 2
+        "dias": 3
       }
     ],
     "total": 1,

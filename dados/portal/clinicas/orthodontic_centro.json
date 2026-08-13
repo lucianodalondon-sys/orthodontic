@@ -1,0 +1,573 @@
+{
+  "local_id": "orthodontic_centro",
+  "praca_id": "caxias_do_sul",
+  "apresentacao": {
+    "unidade": "OrthoDontic",
+    "cidade": "RS · Caxias do Sul",
+    "endereco": "Av. Floriano Peixoto, 341 - Lj A - Centro, Uberlândia - MG, 38400-100",
+    "desde": null,
+    "medicoes": null,
+    "posicao_na_cidade": null,
+    "clinicas_na_cidade": null,
+    "lojas_irmas": [
+      {
+        "local_id": "orthodontic",
+        "unidade": "OrthoDontic"
+      },
+      {
+        "local_id": "orthodontic_kayser",
+        "unidade": "OrthoDontic"
+      }
+    ],
+    "frase": null
+  },
+  "rotulo": "RS · Caxias do Sul",
+  "unidade": "OrthoDontic",
+  "cabecalho": {
+    "nota": 4.7,
+    "avaliacoes": 172,
+    "ritmo": 7.7,
+    "meses_seguidos": 2,
+    "posicao": 15,
+    "de": 17
+  },
+  "faixa": "amarela",
+  "urgencia": 50,
+  "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-13",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-27"
+  },
+  "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada",
+    "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": null,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "scripts/fila.py",
+      "a_favor": [
+        "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 7.7 avaliações/mês",
+        "15º lugar de 17 clínicas medidas na praça"
+      ],
+      "contra": [],
+      "o_que_aumentaria": "o resultado medido na coleta seguinte (dados/serie/acoes.jsonl)",
+      "procedencia": "sem amostra declarada"
+    }
+  },
+  "gatilhos": [
+    {
+      "peso": 30,
+      "titulo": "O contador de avaliações parou",
+      "chave": "parada",
+      "fato": "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 7.7 avaliações/mês",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "peso": 20,
+      "titulo": "Está na metade de baixo da própria praça",
+      "chave": "posicao",
+      "fato": "15º lugar de 17 clínicas medidas na praça",
+      "fonte": "dados/portal/rede_cruzamento.json"
+    }
+  ],
+  "quem_avanca": null,
+  "o_que_mudou": null,
+  "sem_resposta": {
+    "abertas": null,
+    "com_texto": null,
+    "itens": [],
+    "itens_total": 0
+  },
+  "voz_do_paciente": null,
+  "rival": {
+    "comparados": [],
+    "vantagens_deles": [],
+    "fora": [],
+    "fora_total": 0,
+    "sem_comparacao_porque": null
+  },
+  "presenca_na_busca": null,
+  "jornada": {
+    "local_id": "orthodontic_centro",
+    "unidade": "OrthoDontic",
+    "rotulo": "MG · Uberlândia",
+    "com_texto": 130,
+    "sem_estagio": 72,
+    "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
+    "estagios": [
+      {
+        "estagio": "descoberta",
+        "rotulo": "Descoberta",
+        "o_que_e": "como me acharam",
+        "quem_resolve": "marketing e ficha do Google",
+        "medido": true,
+        "avaliacoes": 20,
+        "dor": 1,
+        "elogio": 19,
+        "pct_dor": 5,
+        "amostra_curta": false,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2024-04-25",
+            "texto": "Atendimento horrível, um descaso absurdo com os clientes. As recepcionistas não tem um pingo de empatia e profissionalismo. O atendimento com os dentistas são bons mas em compensação o atendimento é péssimo. Não recomendo a clínica para ninguém, evitem frustrações e humilhações por um serviço que você está pagando."
+          }
+        ],
+        "frase": "20 avaliações falam deste momento, 1 com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "contato",
+        "rotulo": "Contato",
+        "o_que_e": "telefone e WhatsApp",
+        "quem_resolve": "recepção",
+        "medido": true,
+        "avaliacoes": 4,
+        "dor": 4,
+        "elogio": 0,
+        "pct_dor": 100,
+        "amostra_curta": true,
+        "exemplos": [
+          {
+            "nota": 2,
+            "data": "2023-02-24",
+            "texto": "Sem suporte no whatsapp! 4 dias tentando falar e não consigo."
+          },
+          {
+            "nota": 1,
+            "data": "2023-11-01",
+            "texto": "Telefone só de enfeite"
+          },
+          {
+            "nota": 1,
+            "data": "2026-05-08",
+            "texto": "Realmente, telefone é só de enfeite. Pq tento falar lá pra ver sobre meu orçamento e ninguém responde, em qualquer dia ou horário... Depois perdem clientes e não sabem pq."
+          }
+        ],
+        "frase": "4 avaliações falam deste momento, 4 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "agendamento",
+        "rotulo": "Agendamento",
+        "o_que_e": "marcar e remarcar",
+        "quem_resolve": "recepção",
+        "medido": true,
+        "avaliacoes": 7,
+        "dor": 5,
+        "elogio": 1,
+        "pct_dor": 71,
+        "amostra_curta": true,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2025-12-10",
+            "texto": "a profissional  que me atende é ótima , porém quando preciso de um suporte para esclarecer dúvidas ou remarcações sempre tem um problema , ninguém responde eu sempre tenho que ficar enchendo de msg . Só respondem quando querem ."
+          },
+          {
+            "nota": 1,
+            "data": "2025-12-29",
+            "texto": "Chego no horário marcado fico esperando uma hora e meia, e eles passam o pessoal que veio bem depois de mim, é muita falta de respeito com os clientes..."
+          },
+          {
+            "nota": 1,
+            "data": "2026-05-08",
+            "texto": "Realmente, telefone é só de enfeite. Pq tento falar lá pra ver sobre meu orçamento e ninguém responde, em qualquer dia ou horário... Depois perdem clientes e não sabem pq."
+          }
+        ],
+        "frase": "7 avaliações falam deste momento, 5 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "recepcao",
+        "rotulo": "Recepção",
+        "o_que_e": "chegar e esperar",
+        "quem_resolve": "recepção",
+        "medido": true,
+        "avaliacoes": 21,
+        "dor": 3,
+        "elogio": 18,
+        "pct_dor": 14,
+        "amostra_curta": false,
+        "exemplos": [
+          {
+            "nota": 2,
+            "data": "2022-01-18",
+            "texto": "Prazo de espera é sempre muito demorado !\nEm torno de 50 minutos a 1hr e meia !\nA empresa foca em quantidade de clientes e não na satisfação !"
+          },
+          {
+            "nota": 1,
+            "data": "2024-04-25",
+            "texto": "Atendimento horrível, um descaso absurdo com os clientes. As recepcionistas não tem um pingo de empatia e profissionalismo. O atendimento com os dentistas são bons mas em compensação o atendimento é péssimo. Não recomendo a clínica para ninguém, evitem frustrações e humilhações por um serviço que você está pagando."
+          },
+          {
+            "nota": 1,
+            "data": "2026-02-28",
+            "texto": "Falta de respeito com o cliente mais de uma hora de atraso para um simples consulta falta de organização e profissionalismo!"
+          }
+        ],
+        "frase": "21 avaliações falam deste momento, 3 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "avaliacao",
+        "rotulo": "Avaliação",
+        "o_que_e": "a primeira consulta",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 6,
+        "dor": 2,
+        "elogio": 4,
+        "pct_dor": 33,
+        "amostra_curta": true,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2026-05-08",
+            "texto": "Realmente, telefone é só de enfeite. Pq tento falar lá pra ver sobre meu orçamento e ninguém responde, em qualquer dia ou horário... Depois perdem clientes e não sabem pq."
+          }
+        ],
+        "frase": "6 avaliações falam deste momento, 2 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "contratacao",
+        "rotulo": "Contratação",
+        "o_que_e": "preço, contrato e entrada",
+        "quem_resolve": "franqueado",
+        "medido": true,
+        "avaliacoes": 2,
+        "dor": 1,
+        "elogio": 1,
+        "pct_dor": 50,
+        "amostra_curta": true,
+        "exemplos": [
+          {
+            "nota": 2,
+            "data": "2025-04-15",
+            "texto": "O atendimento de modo geral é bom, porém a vendedora não sabe dar explicações claras sobre o contrato."
+          }
+        ],
+        "frase": "2 avaliações falam deste momento, 1 com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "clinico",
+        "rotulo": "Atendimento clínico",
+        "o_que_e": "a cadeira",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 19,
+        "dor": 3,
+        "elogio": 15,
+        "pct_dor": 16,
+        "amostra_curta": false,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2025-12-10",
+            "texto": "a profissional  que me atende é ótima , porém quando preciso de um suporte para esclarecer dúvidas ou remarcações sempre tem um problema , ninguém responde eu sempre tenho que ficar enchendo de msg . Só respondem quando querem ."
+          }
+        ],
+        "frase": "19 avaliações falam deste momento, 3 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "manutencao",
+        "rotulo": "Manutenção",
+        "o_que_e": "as voltas de cada mês",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 2,
+        "dor": 1,
+        "elogio": 1,
+        "pct_dor": 50,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "2 avaliações falam deste momento, 1 com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "cobranca",
+        "rotulo": "Cobrança",
+        "o_que_e": "mensalidade e multa",
+        "quem_resolve": "franqueado",
+        "medido": true,
+        "avaliacoes": 1,
+        "dor": 1,
+        "elogio": 0,
+        "pct_dor": 100,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "1 avaliação fala deste momento, 1 com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "suporte",
+        "rotulo": "Suporte",
+        "o_que_e": "quando algo dá errado",
+        "quem_resolve": "franqueado",
+        "medido": true,
+        "avaliacoes": 7,
+        "dor": 1,
+        "elogio": 6,
+        "pct_dor": 14,
+        "amostra_curta": true,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2025-12-10",
+            "texto": "a profissional  que me atende é ótima , porém quando preciso de um suporte para esclarecer dúvidas ou remarcações sempre tem um problema , ninguém responde eu sempre tenho que ficar enchendo de msg . Só respondem quando querem ."
+          }
+        ],
+        "frase": "7 avaliações falam deste momento, 1 com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "contencao",
+        "rotulo": "Fim e contenção",
+        "o_que_e": "alta e depois dela",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 1,
+        "dor": 0,
+        "elogio": 1,
+        "pct_dor": 0,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      }
+    ],
+    "manchete": "Nenhum momento da jornada concentra dor com amostra suficiente para virar manchete.",
+    "quem_resolve": null,
+    "e_clinico": null,
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 130,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/serie/reviews.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "mais avaliações com texto nesta loja",
+      "procedencia": "medido em 130 avaliações"
+    }
+  },
+  "meu_territorio": {
+    "local_id": "orthodontic_centro",
+    "unidade": "OrthoDontic",
+    "medido": true,
+    "location": {
+      "lat": -18.9198549,
+      "lng": -48.277322600000005
+    },
+    "bairro": "Centro",
+    "clinica_mais_proxima": {
+      "nome": "Clínica Odontológica Dentistas do Trabalhador",
+      "km": 0.05,
+      "avaliacoes": 75,
+      "nota": 4.7,
+      "bairro": "Centro"
+    },
+    "aparelho_mais_proximo": {
+      "nome": "Clínica Dentista do Povo",
+      "km": 0.08,
+      "avaliacoes": 694,
+      "nota": 4.7,
+      "bairro": "Centro"
+    },
+    "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 0.54,
+      "avaliacoes": 127,
+      "nota": 3.7,
+      "bairro": "Centro"
+    },
+    "raios": {
+      "1km": {
+        "clinicas": 78,
+        "de_aparelho": 7,
+        "da_rede": 1
+      },
+      "2km": {
+        "clinicas": 118,
+        "de_aparelho": 8,
+        "da_rede": 1
+      },
+      "5km": {
+        "clinicas": 156,
+        "de_aparelho": 12,
+        "da_rede": 1
+      }
+    },
+    "frase_fato": "a clínica mais próxima está a 0.05 km",
+    "proximidade_entre_unidades": {
+      "km": 0.54,
+      "unidade": "OrthoDontic",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+    },
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 160,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+        "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 160 clínicas com coordenada, 1 medição"
+    }
+  },
+  "movimentos": {
+    "eventos": [],
+    "e_da_cidade": true,
+    "resumo": {
+      "praca_id": "caxias_do_sul",
+      "rotulo": "RS · Caxias do Sul",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
+  "execucao": null,
+  "meu_bairro": {
+    "bairro": "Centro",
+    "clinicas": 51,
+    "vizinhos_fortes": [
+      {
+        "nome": "Revitalle Implantes | Dentista Caxias do Sul | Clínica Odontológica | Invisalign",
+        "nota": 5,
+        "avaliacoes": 1887
+      },
+      {
+        "nome": "OrtoClínica",
+        "nota": 4.9,
+        "avaliacoes": 1423
+      },
+      {
+        "nome": "CaxiasMed Clínica Médica e Odontológica",
+        "nota": 4.5,
+        "avaliacoes": 794
+      }
+    ],
+    "frase": "51 clínicas varridas, e a unidade da rede está aqui",
+    "e_da_cidade": false
+  },
+  "acoes": {
+    "arcos": [
+      {
+        "arco_id": "orthodontic_centro|nota",
+        "local_id": "orthodontic_centro",
+        "praca_id": "uberlandia",
+        "gatilho": "nota",
+        "problema": "nota 4.2 contra mediana 4.8 das 16 clínicas medidas na praça",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": "nota",
+        "antes": 4.7,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "responder as avaliações abertas e tratar o motivo",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      },
+      {
+        "arco_id": "orthodontic_centro|parada",
+        "local_id": "orthodontic_centro",
+        "praca_id": "uberlandia",
+        "gatilho": "parada",
+        "problema": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 0.8 avaliações/mês",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": "ritmo",
+        "antes": 7.7,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      },
+      {
+        "arco_id": "orthodontic_centro|posicao",
+        "local_id": "orthodontic_centro",
+        "praca_id": "uberlandia",
+        "gatilho": "posicao",
+        "problema": "16º lugar de 16 clínicas medidas na praça",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": "posicao",
+        "antes": 15.0,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      }
+    ],
+    "total": 3,
+    "aviso": "O livro nasceu hoje. Nenhum arco completou 21 dias, então ainda não há veredito para ninguém — a primeira resposta vem na coleta seguinte."
+  },
+  "oferta_da_cidade": null,
+  "plano": null,
+  "anuncios_da_cidade": null,
+  "eventos": [
+    {
+      "data": "2026-08-13",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: O contador de avaliações parou",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-13",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Está na metade de baixo da própria praça",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-13",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Nota abaixo da mediana da praça",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-06",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 1★: “Muita demora  no atendimento ,mais de uma hora esperando sempre, sendo que é horário e dat…” · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "data": "2026-07-14",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 3★: “Tirando o fato da demora mesmo com horário agendado, e o fato de que o meu dentista nunca …” · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    }
+  ]
+}

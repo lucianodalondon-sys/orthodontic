@@ -39,12 +39,12 @@
     "posicao": 2,
     "de": 19
   },
-  "faixa": "verde",
-  "urgencia": 20,
+  "faixa": "amarela",
+  "urgencia": 35,
   "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 60,
     "vence_em": "2026-10-11"
   },
@@ -63,7 +63,8 @@
       "medicoes": null,
       "fonte": "scripts/fila.py",
       "a_favor": [
-        "a primeira avaliação é de 2026-06-23, há 1 meses, e o ritmo medido é 82.9/mês — a unidade ainda não engatou"
+        "a primeira avaliação é de 2026-06-23, há 1 meses, e o ritmo medido é 82.9/mês — a unidade ainda não engatou",
+        "85 anúncios no ar de 52 anunciantes, e nenhum é da rede"
       ],
       "contra": [],
       "o_que_aumentaria": "o resultado medido na coleta seguinte (dados/serie/acoes.jsonl)",
@@ -77,6 +78,13 @@
       "chave": "nao_engatou",
       "fato": "a primeira avaliação é de 2026-06-23, há 1 meses, e o ritmo medido é 82.9/mês — a unidade ainda não engatou",
       "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "peso": 15,
+      "titulo": "Silêncio publicitário com leilão cheio",
+      "chave": "silencio",
+      "fato": "85 anúncios no ar de 52 anunciantes, e nenhum é da rede",
+      "fonte": "dados/serie/captacao.jsonl"
     }
   ],
   "quem_avanca": null,
@@ -394,6 +402,141 @@
       "procedencia": "medido em 73 avaliações"
     }
   },
+  "meu_territorio": {
+    "local_id": "ortho_cwb_centro",
+    "unidade": "OrthoDontic Centro",
+    "medido": true,
+    "location": {
+      "lat": -25.4301288,
+      "lng": -49.2694366
+    },
+    "bairro": "Centro",
+    "clinica_mais_proxima": {
+      "nome": "Dentista no Centro de Curitiba Dra Rafaela Rosa Bento Odontologia",
+      "km": 0.1,
+      "avaliacoes": 15,
+      "nota": 5,
+      "bairro": "Centro"
+    },
+    "aparelho_mais_proximo": {
+      "nome": "Clínica Vita Sorriso Implantes - Especialista em Prótese Protocolo",
+      "km": 0.29,
+      "avaliacoes": 514,
+      "nota": 4.6,
+      "bairro": "Centro"
+    },
+    "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 0.19,
+      "avaliacoes": 126,
+      "nota": 4.7,
+      "bairro": "Centro"
+    },
+    "raios": {
+      "1km": {
+        "clinicas": 69,
+        "de_aparelho": 4,
+        "da_rede": 3
+      },
+      "2km": {
+        "clinicas": 122,
+        "de_aparelho": 7,
+        "da_rede": 3
+      },
+      "5km": {
+        "clinicas": 167,
+        "de_aparelho": 12,
+        "da_rede": 3
+      }
+    },
+    "frase_fato": "a clínica mais próxima está a 0.1 km",
+    "proximidade_entre_unidades": {
+      "km": 0.19,
+      "unidade": "OrthoDontic",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+    },
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 178,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+        "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 178 clínicas com coordenada, 1 medição"
+    }
+  },
+  "movimentos": {
+    "eventos": [],
+    "e_da_cidade": true,
+    "resumo": {
+      "praca_id": "curitiba",
+      "rotulo": "PR · Curitiba",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
+  "execucao": {
+    "local_id": "ortho_cwb_centro",
+    "praca_id": "curitiba",
+    "rotulo": "PR · Curitiba",
+    "unidade": "OrthoDontic Centro",
+    "itens": [
+      {
+        "problema": "Esta loja aparece em **11 das 213 buscas** que testamos na cidade.",
+        "e_marketing": true,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "seo_local",
+          "especialidade": "marketing local e Google Business",
+          "problema": "a unidade aparece em 11 buscas de 213 testadas na própria cidade",
+          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
+          "evidencias": [
+            "aparece em 11 de 213 buscas",
+            "aparece em: {'frase': 'aparelho ortodôntico curitiba', 'posicao': 1, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'aparelho ortodôntico curitiba preços', 'posicao': 1, 'intencao': 'PREÇO'}",
+            "aparece em: {'frase': 'aparelho ortodôntico em curitiba', 'posicao': 1, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'ortodontista curitiba bem avaliados', 'posicao': 1, 'intencao': 'REPUTAÇÃO'}",
+            "aparece em: {'frase': 'ortodontista centro curitiba', 'posicao': 1, 'intencao': 'BAIRRO'}"
+          ],
+          "nao_fazer": [
+            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
+            "não prometer posição: o Google não vende ordem no mapa"
+          ],
+          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
+          "prazo": "30 dias",
+          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
+          "recoletar_em_dias": 30
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 213,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/portal/presenca_por_loja.json",
+          "a_favor": [
+            "Esta loja aparece em **11 das 213 buscas** que testamos na cidade."
+          ],
+          "contra": [
+            "uma medição só — a segunda dirá se é estrutural ou momento"
+          ],
+          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+          "procedencia": "medido em 213 buscas testadas, 1 medição"
+        }
+      }
+    ],
+    "de_marketing": 1,
+    "de_operacao": 0
+  },
   "meu_bairro": {
     "bairro": "Centro",
     "clinicas": 74,
@@ -420,6 +563,24 @@
   "acoes": {
     "arcos": [
       {
+        "arco_id": "ortho_cwb_centro|silencio",
+        "local_id": "ortho_cwb_centro",
+        "praca_id": "curitiba",
+        "gatilho": "silencio",
+        "problema": "85 anúncios no ar de 52 anunciantes, e nenhum é da rede",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": null,
+        "antes": null,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "sem ação padrão para este gatilho",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      },
+      {
         "arco_id": "ortho_cwb_centro|nao_engatou",
         "local_id": "ortho_cwb_centro",
         "praca_id": "curitiba",
@@ -433,12 +594,12 @@
         "acao_recomendada": "sem ação padrão para este gatilho",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": null,
-        "medido_em": "2026-08-12",
+        "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
-        "dias": 0
+        "dias": 1
       }
     ],
-    "total": 1,
+    "total": 2,
     "aviso": "O livro nasceu hoje. Nenhum arco completou 21 dias, então ainda não há veredito para ninguém — a primeira resposta vem na coleta seguinte."
   },
   "oferta_da_cidade": {
@@ -990,6 +1151,13 @@
     "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
   },
   "eventos": [
+    {
+      "data": "2026-08-13",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Silêncio publicitário com leilão cheio",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
     {
       "data": "2026-08-12",
       "tipo": "alerta",

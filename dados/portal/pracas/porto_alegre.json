@@ -1,6 +1,6 @@
 {
   "praca_id": "porto_alegre",
-  "corte": "2026-08-12",
+  "corte": "2026-08-13",
   "rotulo": "RS · Porto Alegre",
   "uf": [
     "RS"
@@ -306,6 +306,490 @@
   "bairros": {
     "praca_id": "porto_alegre",
     "rotulo": "RS · Porto Alegre",
+    "territorio": [
+      {
+        "local_id": "ortho_poa_centro_historico",
+        "unidade": "OrthoDontic Centro Histórico",
+        "medido": true,
+        "location": {
+          "lat": -30.029218399999998,
+          "lng": -51.2277452
+        },
+        "bairro": "Centro Histórico",
+        "clinica_mais_proxima": {
+          "nome": "Clinica Odontológica | Dentista | Próteses | Implantes | Clareamento | Clinodente Porto Alegre",
+          "km": 0.07,
+          "avaliacoes": 336,
+          "nota": 4,
+          "bairro": "Centro Histórico"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Clinica Odontológica | Dentista | Próteses | Implantes | Clareamento | Clinodente Porto Alegre",
+          "km": 0.07,
+          "avaliacoes": 336,
+          "nota": 4,
+          "bairro": "Centro Histórico"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 0.19,
+          "avaliacoes": 209,
+          "nota": 4.9,
+          "bairro": "Centro Histórico"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 34,
+            "de_aparelho": 5,
+            "da_rede": 3
+          },
+          "2km": {
+            "clinicas": 69,
+            "de_aparelho": 7,
+            "da_rede": 3
+          },
+          "5km": {
+            "clinicas": 161,
+            "de_aparelho": 11,
+            "da_rede": 4
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.07 km",
+        "proximidade_entre_unidades": {
+          "km": 0.19,
+          "unidade": "OrthoDontic",
+          "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+          "natureza": "inferencia"
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 183,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 183 clínicas com coordenada, 1 medição"
+        }
+      },
+      {
+        "local_id": "ortho_poa_cristo_redentor",
+        "unidade": "OrthoDontic Cristo Redentor",
+        "medido": true,
+        "location": {
+          "lat": -30.011128699999997,
+          "lng": -51.1617727
+        },
+        "bairro": "Cristo Redentor",
+        "clinica_mais_proxima": {
+          "nome": "Dra. Rafaela Hainzenreder - Ortodontista Infantil",
+          "km": 0.28,
+          "avaliacoes": 24,
+          "nota": 5,
+          "bairro": "Passo d'Areia"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Integrar Odontologia",
+          "km": 0.38,
+          "avaliacoes": 364,
+          "nota": 4.9,
+          "bairro": "Passo d'Areia"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 5.11,
+          "avaliacoes": 32,
+          "nota": 4.5,
+          "bairro": "Rio Branco"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 3,
+            "de_aparelho": 1,
+            "da_rede": 0
+          },
+          "2km": {
+            "clinicas": 5,
+            "de_aparelho": 1,
+            "da_rede": 0
+          },
+          "5km": {
+            "clinicas": 89,
+            "de_aparelho": 4,
+            "da_rede": 0
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.28 km",
+        "proximidade_entre_unidades": null,
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 183,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 183 clínicas com coordenada, 1 medição"
+        }
+      },
+      {
+        "local_id": "ortho_poa_centro_historico_2",
+        "unidade": "OrthoDontic Centro Histórico",
+        "medido": true,
+        "location": {
+          "lat": -30.029240899999998,
+          "lng": -51.2258159
+        },
+        "bairro": "Centro Histórico",
+        "clinica_mais_proxima": {
+          "nome": "DentalSocial Clínica odontológica popular Centro de Porto Alegre",
+          "km": 0.03,
+          "avaliacoes": 5,
+          "nota": 1.8,
+          "bairro": "Centro Histórico"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Clínica Bela Vista Odontologia",
+          "km": 0.11,
+          "avaliacoes": 702,
+          "nota": 5,
+          "bairro": "Centro Histórico"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic - Clínica Odontológica Centro Porto Alegre - Tratamento de Canal - Periodontia - Restauração Dental - Prótese - Clareamento e Limpeza Dental - Aparelho Ortodôntico Metálico e Estético - Emergência - Extração do Siso - Faceta de Porcelana",
+          "km": 0.13,
+          "avaliacoes": 162,
+          "nota": 4.6,
+          "bairro": "Centro Histórico"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 34,
+            "de_aparelho": 5,
+            "da_rede": 3
+          },
+          "2km": {
+            "clinicas": 80,
+            "de_aparelho": 8,
+            "da_rede": 3
+          },
+          "5km": {
+            "clinicas": 162,
+            "de_aparelho": 11,
+            "da_rede": 4
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.03 km",
+        "proximidade_entre_unidades": {
+          "km": 0.13,
+          "unidade": "OrthoDontic - Clínica Odontológica Centro Porto Alegre - Tratamento de Canal - Periodontia - Restauração Dental - Prótese - Clareamento e Limpeza Dental - Aparelho Ortodôntico Metálico e Estético - Emergência - Extração do Siso - Faceta de Porcelana",
+          "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+          "natureza": "inferencia"
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 183,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 183 clínicas com coordenada, 1 medição"
+        }
+      },
+      {
+        "local_id": "ortho_poa_cavalhada",
+        "unidade": "OrthoDontic Cavalhada",
+        "medido": true,
+        "location": {
+          "lat": -30.102399,
+          "lng": -51.2326252
+        },
+        "bairro": "Cavalhada",
+        "clinica_mais_proxima": {
+          "nome": "Odonto Clin",
+          "km": 0.35,
+          "avaliacoes": 893,
+          "nota": 5,
+          "bairro": "Cavalhada"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Odonto Clin",
+          "km": 0.35,
+          "avaliacoes": 893,
+          "nota": 5,
+          "bairro": "Cavalhada"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 7.71,
+          "avaliacoes": 32,
+          "nota": 4.5,
+          "bairro": "Rio Branco"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 1,
+            "de_aparelho": 1,
+            "da_rede": 0
+          },
+          "2km": {
+            "clinicas": 3,
+            "de_aparelho": 1,
+            "da_rede": 0
+          },
+          "5km": {
+            "clinicas": 10,
+            "de_aparelho": 3,
+            "da_rede": 0
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.35 km",
+        "proximidade_entre_unidades": null,
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 183,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 183 clínicas com coordenada, 1 medição"
+        }
+      },
+      {
+        "local_id": "ortho_poa_centro_historico_3",
+        "unidade": "OrthoDontic Centro Histórico",
+        "medido": true,
+        "location": {
+          "lat": -30.0301614,
+          "lng": -51.2301083
+        },
+        "bairro": "Centro Histórico",
+        "clinica_mais_proxima": {
+          "nome": "Doctor - Clínica Odontológica",
+          "km": 0.01,
+          "avaliacoes": 64,
+          "nota": 4.6,
+          "bairro": "Centro Histórico"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Clinica Odontológica | Dentista | Próteses | Implantes | Clareamento | Clinodente Porto Alegre",
+          "km": 0.18,
+          "avaliacoes": 336,
+          "nota": 4,
+          "bairro": "Centro Histórico"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 0.25,
+          "avaliacoes": 433,
+          "nota": 4.8,
+          "bairro": "Centro Histórico"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 34,
+            "de_aparelho": 5,
+            "da_rede": 3
+          },
+          "2km": {
+            "clinicas": 55,
+            "de_aparelho": 6,
+            "da_rede": 3
+          },
+          "5km": {
+            "clinicas": 156,
+            "de_aparelho": 10,
+            "da_rede": 4
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.01 km",
+        "proximidade_entre_unidades": {
+          "km": 0.25,
+          "unidade": "OrthoDontic",
+          "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+          "natureza": "inferencia"
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 183,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 183 clínicas com coordenada, 1 medição"
+        }
+      },
+      {
+        "local_id": "ortho_poa_centro_historico_4",
+        "unidade": "OrthoDontic Centro Histórico",
+        "medido": true,
+        "location": {
+          "lat": -30.030367199999997,
+          "lng": -51.2262627
+        },
+        "bairro": "Centro Histórico",
+        "clinica_mais_proxima": {
+          "nome": "Dental Arte Andradas",
+          "km": 0.11,
+          "avaliacoes": 250,
+          "nota": 4.7,
+          "bairro": "Centro Histórico"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Sorrir Bem Clínica Odontológica",
+          "km": 0.14,
+          "avaliacoes": 350,
+          "nota": 4.8,
+          "bairro": "Centro Histórico"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 0.13,
+          "avaliacoes": 209,
+          "nota": 4.9,
+          "bairro": "Centro Histórico"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 36,
+            "de_aparelho": 5,
+            "da_rede": 3
+          },
+          "2km": {
+            "clinicas": 80,
+            "de_aparelho": 8,
+            "da_rede": 3
+          },
+          "5km": {
+            "clinicas": 162,
+            "de_aparelho": 11,
+            "da_rede": 4
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.11 km",
+        "proximidade_entre_unidades": {
+          "km": 0.13,
+          "unidade": "OrthoDontic",
+          "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+          "natureza": "inferencia"
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 183,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 183 clínicas com coordenada, 1 medição"
+        }
+      },
+      {
+        "local_id": "ortho_poa_rio_branco",
+        "unidade": "OrthoDontic Rio Branco",
+        "medido": true,
+        "location": {
+          "lat": -30.037105899999997,
+          "lng": -51.205602
+        },
+        "bairro": "Rio Branco",
+        "clinica_mais_proxima": {
+          "nome": "Sorrifácil Porto Alegre I Dentista em Rio Branco - Av. Mariante I Implantes, Prótese Protocolo e Clínico geral",
+          "km": 0.25,
+          "avaliacoes": 176,
+          "nota": 4.4,
+          "bairro": "Rio Branco"
+        },
+        "aparelho_mais_proximo": {
+          "nome": "Pronto Socorro Dentário - Clínica Odontológica 24 Horas",
+          "km": 0.41,
+          "avaliacoes": 323,
+          "nota": 4.5,
+          "bairro": "Farroupilha"
+        },
+        "unidade_da_rede_mais_proxima": {
+          "nome": "OrthoDontic",
+          "km": 2.13,
+          "avaliacoes": 209,
+          "nota": 4.9,
+          "bairro": "Centro Histórico"
+        },
+        "raios": {
+          "1km": {
+            "clinicas": 48,
+            "de_aparelho": 1,
+            "da_rede": 0
+          },
+          "2km": {
+            "clinicas": 100,
+            "de_aparelho": 6,
+            "da_rede": 0
+          },
+          "5km": {
+            "clinicas": 170,
+            "de_aparelho": 12,
+            "da_rede": 4
+          }
+        },
+        "frase_fato": "a clínica mais próxima está a 0.25 km",
+        "proximidade_entre_unidades": null,
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 183,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+          "a_favor": [],
+          "contra": [
+            "distância é linha reta, não tempo de deslocamento"
+          ],
+          "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+          "procedencia": "medido em 183 clínicas com coordenada, 1 medição"
+        }
+      }
+    ],
+    "clinicas_com_coordenada": 184,
+    "clinicas_sem_coordenada": 0,
+    "raios_declarados_km": [
+      1,
+      2,
+      5
+    ],
     "bairros_medidos": 33,
     "clinicas_medidas": 184,
     "sem_bairro_no_endereco": 0,
@@ -1093,12 +1577,22 @@
       "procedencia": "medido em 184 clínicas varridas, 1 medição"
     }
   },
+  "movimentos_do_mercado": {
+    "eventos": [],
+    "resumo": {
+      "praca_id": "porto_alegre",
+      "rotulo": "RS · Porto Alegre",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
   "imprensa": {
     "medido": true,
     "total": 54,
     "mostrando": 12,
-    "recentes_30d": 19,
-    "manchete": "19 matérias sobre a cidade nos últimos 30 dias, de 54 já lidas",
+    "recentes_30d": 27,
+    "manchete": "27 matérias sobre a cidade nos últimos 30 dias, de 54 já lidas",
     "porque_vazio": null,
     "materias": [
       {
@@ -1106,84 +1600,84 @@
         "veiculo": "G1",
         "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQTVibGlPVTVEN0JlamQ3MVF2MlN5MzRXcWU5OUtucEYwMm9hel9Gd3FTT25tYXdReWl1VW1sOWFoSnZxNkZwODAzUWlrZ05vb01xZjRsVUZXcWtrYzVGUlQ5NXluT0VrajVzNTNQZWdGaXRTbWRIN05xdng0eXI1bVFPdnRJZ1BpLUstUVIyS1U0R2pjeVNydC0yeGFJZU84QkJFUkxlSnVnQTFLVTE2c290TlBxeE56ems00gHKAUFVX3lxTFBEU0Y4OG9mM0I3UGozWmozZUdEVW5wN2wwQlRCbDFPR1JMYWNpUnQwR29wVENFQ25BZDBtU1RtSGM2R3hEOGhyQWZ0X1BZeWp5ZjRKRDkxaFlENTJ1OGNtNjE1QnQzb2pVR0NfaDNEOEFlelc3eGozTEE0blZWYnFNM29GS2tKY0E5bGQ0V0s1dHlDazFyNzFvdzAxcVlaVkE1bnk3RUFvMUo0dW1ZMl9wT3VzdUlOdXdMOVZfVG1zSEdSZmVXclBkeHc?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Dia do Patrimônio movimenta instituições culturais do Estado no fim de semana - cultura.rs.gov.br",
         "veiculo": "cultura.rs.gov.br",
         "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOX19FaXU2WlVuWHo0Y1dXMkZQTloxeW1wX1RaV21tbTJkMWI4UzlUMmhmRVY1YkpqWUgzdDZfSldTNlg5a1JUXy1XQ055dEwzMThxc3JpYzNVVnFuaGRna2Uzei1CWDlja1FzZl9waWhlTkpGcjROd2J0dC04TkpXeXRjRllBXzdWSEJ6SU1VaHdqaGFYOUxVajJGMGRtMmo1YUNSb2VB?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Defensoria Pública promove mutirão de atendimentos voltado a famílias atípicas - defensoria.rs.def.br",
         "veiculo": "defensoria.rs.def.br",
         "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWk5RcWpWXzZ1Z21TR3VEb212ZzFBb0huTElVcGRaM1BVcVNZSFU3YklXbDg4aVcxdE9zM2hSeEl1Q3VhdlNONGFFNFRhMjd1SmVfQkVDbVlkWnhNTkotLWdKYkcxN0RiYWJXOWJHYjlUZ3ZQUF9ZTkQ2MjBfNXJMbUhCV1NyVnc0b0JOa2RQbXlyZ2xqT3RmZkVxZVliVWpHUl9Idm45TlJIZDIzUGlCWA?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Porto Alegre: moradores relatam alteração na cor da água no Centro e na Zona Sul - Agora RS",
         "veiculo": "Agora RS",
         "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOUmZXOVFvZF96dGxCVUxNdmZiYXlnelJRZkZ3dWE0cmlvS2o2NVM2N2pMYVRkTENIV0twbFdadTFtSGdBWTZGY2NsanRDZVFuUVZwYVkzeFktLUFUTERteGNoUS1KUTd3aXBKbTJURGJVM3NkX3pUd3gxOVlQWHV6SHhka3I2eHlX?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Tarifas de embarque internacional sobem em Fortaleza e Porto Alegre - Portal BE News",
         "veiculo": "Portal BE News",
         "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNYlYzZlVPc3NzMFFJTU03eGZBcHh6d3gxeEVDWkEzSHFLVWlpRG5GaExMTWd4WGEtQUlZUGFTcFl2bEhjSHJtM3JGdFhyR1Vld091U2E1UlM4Y0FZMlFkN3RPR21XdFpDdmFTVXFLYlJCc1JWN2lTczE3SWJBbE9DbnJybWFmSFRRNHAyVnQzVWVreDh0TDc1amNmTFA?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Quem são os candidatos a governador do Rio Grande do Sul (RS) nas eleições 2026 - JOTA Info",
         "veiculo": "JOTA Info",
         "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOS0dPdkE1V204bVkwb1pDX1dHUm1vVjhtdlNwcmdpb05qQ0ZJaGU2YldqZktuSnd3Y3JsMWltYlJEbXJMcjV4Qjc3ZlRMZjdOVTdqYlFUVVhDTy10Q2gyZVFSMFdwVEJPS0E4NWFEa2JZU29sTEhKT2N5d1Z6ZU9URk51QzRxQVpZdy1fam5OdjBDdWtXZGlLaGNXQnlYTTFVRmdRVFVtNEVZMEltSXMxTEgyenk4bjdvcEs5bVlfNllkQ28?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Grupo Press desiste de abrir loja no Mercado Público de Porto Alegre - Jornal do Comércio",
         "veiculo": "Jornal do Comércio",
         "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPdEdncy1PWTNIckJHUDVFVXRVNnhtb2p2c2xBMnlZUjdmUXRIXzZ5OWhUX21Gc0hUeFF2UTZrWlc0ZEg2TkctSFNIYkNJNHhkc1VNQjlidXZvMVo1Q1dLN2laZlF5c3BJZlRFenB1VjB0d2JhNXhEZFowM0xWaW5CNEJ1RHQ0UlFEU25GMU9rSDhKTTBkcFZfbWlLVUtRUTNqejY4ODNPSklpOEhwT1BYNTNHOHUtV1FhVXhQQ3RESHgzYlA1UTRKU2RHSQ?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Prefeitura homologa empresa para gerir Usina do Gasômetro por 20 anos - Agora RS",
         "veiculo": "Agora RS",
         "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPaVFmZXJfaXhSV05fWWlRLVg3UjBFb1pyTlJGQ3RNX2wydjdrOXdYMHBSRkpWbVRBdUhhanphOWRZd2c0T0JBZTRUVWtBZ0dWaF9naDRfd3MwN0Y2ZTBxaGNaS25GLTdmbHc1S0xWOHFrZTVlMFo1SHc1aGdfWE81Y1BZNW40OWtVNE02VA?oc=5",
         "publicado": "2026-08-12",
-        "dias": 0
+        "dias": 1
       },
       {
         "titulo": "Justiça manda vereador de Porto Alegre remover vídeo em que acusa governo do RS de chantagem eleitoral - GZH",
         "veiculo": "GZH",
         "link": "https://news.google.com/rss/articles/CBMitgJBVV95cUxPYzAxUEt3ZGpJbDNqaWF6YlZmdTd5ei02WEtYTld3WkliV09jUlhFc0pBakJ3TTRjaGd1Q1ZTcDViek4xSVE0UXlhNHFrN2lJMG5IYjQzTVYzVG5UOUJteTVFN1dPOC1JS1JvVFZ5X1NsSE5DbG8zT0NwYmRpa0hOZHRCSzZXbXN1ay1tM1B2NnF1WE55eFAtVUJwa3FWb1JILU1saGlCSElXQU1iNTdJWUMtMmJWRUVGMmJ4b2lrVlZYR05EMDBpajBrQXRXUHZLWkkweHZfT1oybDFVdWxmWVAwX3ZJVGRNZ2JObHhqcjBSYWpLSHUzbjZtUk9qVllMWExrQVdOeUJmZHJaY0RDbVJHbWdYeGYzeFRmOTIxMU4xU1RpZzNTTFFxYnN6LUxfY0szUFJR?oc=5",
         "publicado": "2026-08-11",
-        "dias": 1
+        "dias": 2
       },
       {
         "titulo": "Previsão do tempo em Porto Alegre (RS) hoje: veja como fica o clima nesta terça-feira - Terra",
         "veiculo": "Terra",
         "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQYVgyelFLa2dnRmxDd1l2al9zejVDRXJtSmM2bTQ2YUdCQ1MxTDZ0QWRLTi1ERS1Ldjg3TVpRYW1BQU1ZOEpVZjRYeEkxMFgtTzFKZFpnRk5IU29BLWFoU1UtMHVXTlhPRFRMQzNpd3pCUVkzd3BDcEpIalBMRWZBR0xfNmJlZDNTOUYxYzAzVlhfNTZyZkRVU2EwS2REOXBsalNyTl9mYzlrdVphU0V1aWl6SjRjMGdBdEFBdXVrWlpaNllGQjJDR2RiRkMtVHNTa2l4b0F2Z18tMFRFQnp4WUZFRFJzaGtTaGpacF84X2VXaEJaZ3IyMVRQT3dIWldwWDRHSUUtOXM?oc=5",
         "publicado": "2026-08-11",
-        "dias": 1
+        "dias": 2
       },
       {
         "titulo": "Porto Alegre registra a terceira temperatura mais baixa do RS nesta terça - CNN Brasil",
         "veiculo": "CNN Brasil",
         "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZjJHVTlYWFRzbUFBSjFzZmo0NFljbllFRXJ2QTl3V1pZaC1WNWFPbnJSWV9TTjFSOFJ1UHpkdXJxYWxMM05qX2FJTXJuNTlfTWloUVFheTBjV2VqUktKek1lVHBDMVhydXVVRTZjWHVZQ3N1WnFZVUVnMWdrMnVVRktuZndnMnpQTmFmYnM4MHRpYnF5cnozSmh2TzM4Q3Nndl9WendnSWgtMkxhbHdETTVzRVJYREdvb1Vj?oc=5",
         "publicado": "2026-08-11",
-        "dias": 1
+        "dias": 2
       },
       {
         "titulo": "Após sugestão de músico, Fabio Porchat registra tour gastronômico por Porto Alegre: 'Tive que desenvolver um novo estômago' - G1",
         "veiculo": "G1",
         "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPVmJUX0F3ZFR3TWtQUW5PU29QamQxaXVObG1ESjlDVHlGRnVoRnNBdG56dk5mbTc3N25CUDZ6NVg1bGxJeGpTdlJ5eTRKNm1TNHRnNkNVVUVnakFoeVpsQnB5LVFkWGRLd2xySnZJWHNiNmhTbldyT1RmODJiY0FTS0l2VDJHQWNDZkJoMzdveUxHa2xPN0h3dGJaY2paRlZpdnFhUGlQaVduS0tXaGhrMUtJVHVLRWJlb2lz0gHKAUFVX3lxTE1NS203MlMtN1R1STFjaGFaWXdGU1NhU2tsYXRqc1FKallPdThabjdmTksxbWV4elgtRUhpeWVQdTA2X2RndWVUSGc4ZkZEWm52RkdjU0FIa3NmZ1pIM0FhOGNIa0xSUlJnWEpaU3Q3bG8yZXFlRG83VmFxWkV3ZEVzQ0NkbUJveExSMktlNnd5NFA1YjhUX09UVEh2eUttMHhrT0FXRkJEMXBtd3pYODVUay1PR1FDNXZpX2FoNDcxTUVsQk4tT244TEE?oc=5",
         "publicado": "2026-08-10",
-        "dias": 2
+        "dias": 3
       }
     ]
   },
@@ -1199,136 +1693,136 @@
         "handle": "orthodontic.portoalegre",
         "posts_medidos": 15,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 2,
-        "frase": "15 posts medidos, último há 0 dias"
+        "frase": "15 posts medidos, último há 1 dia"
       },
       {
         "handle": "portoalegre",
         "posts_medidos": 9,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 81,
-        "frase": "9 posts medidos, último há 0 dias"
+        "frase": "9 posts medidos, último há 1 dia"
       },
       {
         "handle": "riograndedosul",
         "posts_medidos": 29,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 278,
-        "frase": "29 posts medidos, último há 0 dias"
+        "frase": "29 posts medidos, último há 1 dia"
       },
       {
         "handle": "prefpoa",
         "posts_medidos": 35,
         "ultimo_post": "2026-08-12",
-        "dias_sem_publicar": 0,
+        "dias_sem_publicar": 1,
         "parado": false,
         "curtidas_medianas": 433,
-        "frase": "35 posts medidos, último há 0 dias"
+        "frase": "35 posts medidos, último há 1 dia"
       },
       {
         "handle": "matheusjungesrs",
         "posts_medidos": 1,
         "ultimo_post": "2026-08-11",
-        "dias_sem_publicar": 1,
+        "dias_sem_publicar": 2,
         "parado": false,
         "curtidas_medianas": 46,
-        "frase": "1 post medido, último há 1 dia"
+        "frase": "1 post medido, último há 2 dias"
       },
       {
         "handle": "saudepoa",
         "posts_medidos": 4,
         "ultimo_post": "2026-08-10",
-        "dias_sem_publicar": 2,
+        "dias_sem_publicar": 3,
         "parado": false,
         "curtidas_medianas": 678,
-        "frase": "4 posts medidos, último há 2 dias"
+        "frase": "4 posts medidos, último há 3 dias"
       },
       {
         "handle": "servicosurbanos.poa",
         "posts_medidos": 1,
         "ultimo_post": "2026-08-10",
-        "dias_sem_publicar": 2,
+        "dias_sem_publicar": 3,
         "parado": false,
         "curtidas_medianas": 69,
-        "frase": "1 post medido, último há 2 dias"
+        "frase": "1 post medido, último há 3 dias"
       },
       {
         "handle": "realgauchofutsal",
         "posts_medidos": 28,
         "ultimo_post": "2026-08-09",
-        "dias_sem_publicar": 3,
+        "dias_sem_publicar": 4,
         "parado": false,
         "curtidas_medianas": 91,
-        "frase": "28 posts medidos, último há 3 dias"
+        "frase": "28 posts medidos, último há 4 dias"
       },
       {
         "handle": "dmaepoa",
         "posts_medidos": 2,
         "ultimo_post": "2026-08-07",
-        "dias_sem_publicar": 5,
+        "dias_sem_publicar": 6,
         "parado": false,
         "curtidas_medianas": -1,
-        "frase": "2 posts medidos, último há 5 dias"
+        "frase": "2 posts medidos, último há 6 dias"
       },
       {
         "handle": "demhabpoa",
         "posts_medidos": 1,
         "ultimo_post": "2026-08-07",
-        "dias_sem_publicar": 5,
+        "dias_sem_publicar": 6,
         "parado": false,
         "curtidas_medianas": 241,
-        "frase": "1 post medido, último há 5 dias"
+        "frase": "1 post medido, último há 6 dias"
       },
       {
         "handle": "eptc_poa",
         "posts_medidos": 2,
         "ultimo_post": "2026-08-06",
-        "dias_sem_publicar": 6,
+        "dias_sem_publicar": 7,
         "parado": false,
         "curtidas_medianas": 1039,
-        "frase": "2 posts medidos, último há 6 dias"
+        "frase": "2 posts medidos, último há 7 dias"
       },
       {
         "handle": "acampamentofarroupilhaoficial",
         "posts_medidos": 1,
         "ultimo_post": "2026-08-05",
-        "dias_sem_publicar": 7,
+        "dias_sem_publicar": 8,
         "parado": false,
         "curtidas_medianas": 738,
-        "frase": "1 post medido, último há 7 dias"
+        "frase": "1 post medido, último há 8 dias"
       },
       {
         "handle": "_nathanbaptista",
         "posts_medidos": 1,
         "ultimo_post": "2026-08-04",
-        "dias_sem_publicar": 8,
+        "dias_sem_publicar": 9,
         "parado": false,
         "curtidas_medianas": 130,
-        "frase": "1 post medido, último há 8 dias"
+        "frase": "1 post medido, último há 9 dias"
       },
       {
         "handle": "superesporte10",
         "posts_medidos": 1,
         "ultimo_post": "2026-08-01",
-        "dias_sem_publicar": 11,
+        "dias_sem_publicar": 12,
         "parado": false,
         "curtidas_medianas": 224,
-        "frase": "1 post medido, último há 11 dias"
+        "frase": "1 post medido, último há 12 dias"
       },
       {
         "handle": "poanoticiasagora",
         "posts_medidos": 37,
         "ultimo_post": "2026-07-31",
-        "dias_sem_publicar": 12,
+        "dias_sem_publicar": 13,
         "parado": false,
         "curtidas_medianas": 48,
-        "frase": "37 posts medidos, último há 12 dias"
+        "frase": "37 posts medidos, último há 13 dias"
       }
     ]
   },
@@ -1548,7 +2042,7 @@
   "temas": [
     {
       "tema": "atendimento",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "porto_alegre",
       "pct": 0.7455,
       "n": 1733,
@@ -1559,7 +2053,7 @@
     },
     {
       "tema": "preco_custo",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "porto_alegre",
       "pct": 0.03,
       "n": 1733,
@@ -1570,7 +2064,7 @@
     },
     {
       "tema": "agenda_espera",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "porto_alegre",
       "pct": 0.0225,
       "n": 1733,
@@ -1581,7 +2075,7 @@
     },
     {
       "tema": "comunicacao_resposta",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "porto_alegre",
       "pct": 0.0271,
       "n": 1733,
@@ -1592,7 +2086,7 @@
     },
     {
       "tema": "qualidade_resultado",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "porto_alegre",
       "pct": 0.5095,
       "n": 1733,
@@ -1603,7 +2097,7 @@
     },
     {
       "tema": "confianca_medo",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "porto_alegre",
       "pct": 0.0352,
       "n": 1733,
@@ -1614,7 +2108,7 @@
     },
     {
       "tema": "contrato_burocracia",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "porto_alegre",
       "pct": 0.0046,
       "n": 1733,
@@ -1625,7 +2119,7 @@
     },
     {
       "tema": "pessoas_nominais",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "porto_alegre",
       "pct": 0.1073,
       "n": 1733,
@@ -1636,7 +2130,7 @@
     },
     {
       "tema": "localizacao_acesso",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "porto_alegre",
       "pct": 0.0571,
       "n": 1733,
@@ -1647,7 +2141,7 @@
     },
     {
       "tema": "recomendacao_lealdade",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "porto_alegre",
       "pct": 0.2822,
       "n": 1733,
@@ -1658,7 +2152,7 @@
     },
     {
       "tema": "dor_medo_dentista",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "porto_alegre",
       "pct": 0.0814,
       "n": 1733,
@@ -1669,7 +2163,7 @@
     },
     {
       "tema": "resultado_autoestima",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "porto_alegre",
       "pct": 0.1662,
       "n": 1733,
@@ -1680,7 +2174,7 @@
     },
     {
       "tema": "explicacao_clareza",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "porto_alegre",
       "pct": 0.049,
       "n": 1733,
@@ -1691,7 +2185,7 @@
     },
     {
       "tema": "aparelho_tratamento",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "porto_alegre",
       "pct": 0.0231,
       "n": 1733,
@@ -1702,7 +2196,7 @@
     },
     {
       "tema": "familia_filhos",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "porto_alegre",
       "pct": 0.0485,
       "n": 1733,
@@ -1713,7 +2207,7 @@
     },
     {
       "tema": "tempo_relacao",
-      "snapshot_date": "2026-08-12",
+      "snapshot_date": "2026-08-13",
       "praca_id": "porto_alegre",
       "pct": 0.0456,
       "n": 1733,

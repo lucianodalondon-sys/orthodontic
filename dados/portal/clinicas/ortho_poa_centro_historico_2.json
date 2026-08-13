@@ -312,6 +312,141 @@
       "procedencia": "medido em 106 avaliações"
     }
   },
+  "meu_territorio": {
+    "local_id": "ortho_poa_centro_historico_2",
+    "unidade": "OrthoDontic Centro Histórico",
+    "medido": true,
+    "location": {
+      "lat": -30.029240899999998,
+      "lng": -51.2258159
+    },
+    "bairro": "Centro Histórico",
+    "clinica_mais_proxima": {
+      "nome": "DentalSocial Clínica odontológica popular Centro de Porto Alegre",
+      "km": 0.03,
+      "avaliacoes": 5,
+      "nota": 1.8,
+      "bairro": "Centro Histórico"
+    },
+    "aparelho_mais_proximo": {
+      "nome": "Clínica Bela Vista Odontologia",
+      "km": 0.11,
+      "avaliacoes": 702,
+      "nota": 5,
+      "bairro": "Centro Histórico"
+    },
+    "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic - Clínica Odontológica Centro Porto Alegre - Tratamento de Canal - Periodontia - Restauração Dental - Prótese - Clareamento e Limpeza Dental - Aparelho Ortodôntico Metálico e Estético - Emergência - Extração do Siso - Faceta de Porcelana",
+      "km": 0.13,
+      "avaliacoes": 162,
+      "nota": 4.6,
+      "bairro": "Centro Histórico"
+    },
+    "raios": {
+      "1km": {
+        "clinicas": 34,
+        "de_aparelho": 5,
+        "da_rede": 3
+      },
+      "2km": {
+        "clinicas": 80,
+        "de_aparelho": 8,
+        "da_rede": 3
+      },
+      "5km": {
+        "clinicas": 162,
+        "de_aparelho": 11,
+        "da_rede": 4
+      }
+    },
+    "frase_fato": "a clínica mais próxima está a 0.03 km",
+    "proximidade_entre_unidades": {
+      "km": 0.13,
+      "unidade": "OrthoDontic - Clínica Odontológica Centro Porto Alegre - Tratamento de Canal - Periodontia - Restauração Dental - Prótese - Clareamento e Limpeza Dental - Aparelho Ortodôntico Metálico e Estético - Emergência - Extração do Siso - Faceta de Porcelana",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+    },
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 183,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+        "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 183 clínicas com coordenada, 1 medição"
+    }
+  },
+  "movimentos": {
+    "eventos": [],
+    "e_da_cidade": true,
+    "resumo": {
+      "praca_id": "porto_alegre",
+      "rotulo": "RS · Porto Alegre",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
+  "execucao": {
+    "local_id": "ortho_poa_centro_historico_2",
+    "praca_id": "porto_alegre",
+    "rotulo": "RS · Porto Alegre",
+    "unidade": "OrthoDontic Centro Histórico",
+    "itens": [
+      {
+        "problema": "Esta loja aparece em **5 das 196 buscas** que testamos na cidade.",
+        "e_marketing": true,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "seo_local",
+          "especialidade": "marketing local e Google Business",
+          "problema": "a unidade aparece em 5 buscas de 196 testadas na própria cidade",
+          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
+          "evidencias": [
+            "aparece em 5 de 196 buscas",
+            "aparece em: {'frase': 'ortodontista em porto alegre', 'posicao': 2, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'aparelho ortodôntico porto alegre preço', 'posicao': 3, 'intencao': 'PREÇO'}",
+            "aparece em: {'frase': 'aparelho ortodôntico no centro de porto alegre', 'posicao': 3, 'intencao': 'BAIRRO'}",
+            "aparece em: {'frase': 'aparelho ortodôntico porto alegre', 'posicao': 5, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'aparelho ortodôntico em porto alegre', 'posicao': 5, 'intencao': 'GENÉRICO'}"
+          ],
+          "nao_fazer": [
+            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
+            "não prometer posição: o Google não vende ordem no mapa"
+          ],
+          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
+          "prazo": "30 dias",
+          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
+          "recoletar_em_dias": 30
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 196,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/portal/presenca_por_loja.json",
+          "a_favor": [
+            "Esta loja aparece em **5 das 196 buscas** que testamos na cidade."
+          ],
+          "contra": [
+            "uma medição só — a segunda dirá se é estrutural ou momento"
+          ],
+          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+          "procedencia": "medido em 196 buscas testadas, 1 medição"
+        }
+      }
+    ],
+    "de_marketing": 1,
+    "de_operacao": 0
+  },
   "meu_bairro": {
     "bairro": "Centro Histórico",
     "clinicas": 32,
