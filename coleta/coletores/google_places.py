@@ -193,15 +193,23 @@ def ancora(praca, achados, quantos=14):
         s = "".join(c for c in s if not unicodedata.combining(c)).lower()
         return re.sub(r"[^a-z0-9]+", "_", s).strip("_")[:26]
 
-    # Reconhecer a unidade pelo NOME é armadilha: "You Align Orthodontics",
-    # em Contagem, entrou como unidade da rede porque 'orthodontics' contém
-    # 'orthodontic'. O site é exato — a rede toda usa orthodonticbrasil.com.br.
+    # DUAS PROVAS, E O NOME EXATO BASTA.
+    #
+    # A regra antiga era: site igual ao nacional = nossa; site diferente =
+    # NÃO É NOSSA. Ela nasceu certa — "You Align Orthodontics", em Contagem,
+    # tinha entrado como unidade da rede. Mas produziu falso NEGATIVO em
+    # Florianópolis: as três lojas de lá usam `orthodonticsc.com.br`, um
+    # site regional da própria rede, e as três foram descartadas. A praça
+    # ficou com zero unidades enquanto a lista oficial dizia três.
+    #
+    # O nome exato já resolve o falso positivo que motivou a regra:
+    # `\borthodontic\b` NÃO casa com "Orthodontics" (o 's' encosta na
+    # borda de palavra) nem com "Ortho Mais". Então o nome basta, e o
+    # domínio nacional entra como prova adicional, não como veto.
     def e_da_rede(p):
         site = (p.get("websiteUri") or "").lower()
         if "orthodonticbrasil.com.br" in site:
             return True
-        if site:                       # tem site e não é o da rede: não é nossa
-            return False
         nome = (p.get("displayName", {}).get("text") or "").lower()
         return re.search(r"\borthodontic\b", nome) is not None
 
@@ -219,6 +227,10 @@ def ancora(praca, achados, quantos=14):
                       if l.get("papel") == "proprio" and not l.get("place_id")), None)
         alvo = vazio if (eh_nosso and vazio) else None
         dados = {"place_id": pid, "nome": nome,
+                 "location": ({"lat": (p.get("location") or {}).get("latitude"),
+                               "lng": (p.get("location") or {}).get("longitude")}
+                              if (p.get("location") or {}).get("latitude") is not None
+                              else None),
                  "avaliacoes_google": p.get("userRatingCount"),
                  "nota_google": p.get("rating"),
                  "endereco": p.get("formattedAddress"),
@@ -286,6 +298,15 @@ def main():
                     "endereco": p.get("formattedAddress"), "site": p.get("websiteUri"),
                     "telefone": p.get("nationalPhoneNumber"),
                     "situacao": p.get("businessStatus"),
+                    # A COORDENADA JÁ ERA PAGA E ERA JOGADA FORA. O
+                    # FieldMask pede `places.location` desde sempre, o bruto
+                    # guardava as 3.304, e categoria.jsonl gravava zero. Sem
+                    # ela não há distância, não há vizinhança real, não há
+                    # grade de busca — e a conta do Google já tinha sido paga.
+                    "location": ({"lat": (p.get("location") or {}).get("latitude"),
+                                  "lng": (p.get("location") or {}).get("longitude")}
+                                 if (p.get("location") or {}).get("latitude") is not None
+                                 else None),
                     "na_nossa_lista": p.get("id") in conhecidos,
                     "fonte": "google places api (new) searchText",
                     "filtro": "|".join(TERMOS), "first_seen_snapshot": hoje},

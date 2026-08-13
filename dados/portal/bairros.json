@@ -2,12 +2,454 @@
  "o_que_e": "A cidade por dentro: em que bairro cada unidade está, contra quem ela disputa ali, e onde a categoria se concentra sem a rede.",
  "o_que_nao_e": "Não é distância nem deslocamento — não temos coordenada, temos texto de endereço. E concentração de clínicas é oferta, não demanda medida.",
  "por_que_existe": "cidade com mais de uma unidade não pode ser lida como um mercado só: Porto Alegre tem 9 unidades, Curitiba 8, e elas podem ter donos diferentes",
- "medido_em": "2026-08-12",
+ "medido_em": "2026-08-13",
  "minimo_por_bairro": 3,
  "pracas": [
   {
    "praca_id": "porto_alegre",
    "rotulo": "RS · Porto Alegre",
+   "territorio": [
+    {
+     "local_id": "ortho_poa_centro_historico",
+     "unidade": "OrthoDontic Centro Histórico",
+     "medido": true,
+     "location": {
+      "lat": -30.029218399999998,
+      "lng": -51.2277452
+     },
+     "bairro": "Centro Histórico",
+     "clinica_mais_proxima": {
+      "nome": "Clinica Odontológica | Dentista | Próteses | Implantes | Clareamento | Clinodente Porto Alegre",
+      "km": 0.07,
+      "avaliacoes": 336,
+      "nota": 4,
+      "bairro": "Centro Histórico"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 0.19,
+      "avaliacoes": 209,
+      "nota": 4.9,
+      "bairro": "Centro Histórico"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 34,
+       "de_aparelho": 0,
+       "da_rede": 3
+      },
+      "2km": {
+       "clinicas": 69,
+       "de_aparelho": 0,
+       "da_rede": 3
+      },
+      "5km": {
+       "clinicas": 161,
+       "de_aparelho": 0,
+       "da_rede": 4
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.07 km",
+     "proximidade_entre_unidades": {
+      "km": 0.19,
+      "unidade": "OrthoDontic",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+     },
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 183,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 183 clínicas com coordenada, 1 medição"
+     }
+    },
+    {
+     "local_id": "ortho_poa_cristo_redentor",
+     "unidade": "OrthoDontic Cristo Redentor",
+     "medido": true,
+     "location": {
+      "lat": -30.011128699999997,
+      "lng": -51.1617727
+     },
+     "bairro": "Cristo Redentor",
+     "clinica_mais_proxima": {
+      "nome": "Dra. Rafaela Hainzenreder - Ortodontista Infantil",
+      "km": 0.28,
+      "avaliacoes": 24,
+      "nota": 5,
+      "bairro": "Passo d'Areia"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 5.11,
+      "avaliacoes": 32,
+      "nota": 4.5,
+      "bairro": "Rio Branco"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 3,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "2km": {
+       "clinicas": 5,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "5km": {
+       "clinicas": 89,
+       "de_aparelho": 0,
+       "da_rede": 0
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.28 km",
+     "proximidade_entre_unidades": null,
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 183,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 183 clínicas com coordenada, 1 medição"
+     }
+    },
+    {
+     "local_id": "ortho_poa_centro_historico_2",
+     "unidade": "OrthoDontic Centro Histórico",
+     "medido": true,
+     "location": {
+      "lat": -30.029240899999998,
+      "lng": -51.2258159
+     },
+     "bairro": "Centro Histórico",
+     "clinica_mais_proxima": {
+      "nome": "DentalSocial Clínica odontológica popular Centro de Porto Alegre",
+      "km": 0.03,
+      "avaliacoes": 5,
+      "nota": 1.8,
+      "bairro": "Centro Histórico"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic - Clínica Odontológica Centro Porto Alegre - Tratamento de Canal - Periodontia - Restauração Dental - Prótese - Clareamento e Limpeza Dental - Aparelho Ortodôntico Metálico e Estético - Emergência - Extração do Siso - Faceta de Porcelana",
+      "km": 0.13,
+      "avaliacoes": 162,
+      "nota": 4.6,
+      "bairro": "Centro Histórico"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 34,
+       "de_aparelho": 0,
+       "da_rede": 3
+      },
+      "2km": {
+       "clinicas": 80,
+       "de_aparelho": 0,
+       "da_rede": 3
+      },
+      "5km": {
+       "clinicas": 162,
+       "de_aparelho": 0,
+       "da_rede": 4
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.03 km",
+     "proximidade_entre_unidades": {
+      "km": 0.13,
+      "unidade": "OrthoDontic - Clínica Odontológica Centro Porto Alegre - Tratamento de Canal - Periodontia - Restauração Dental - Prótese - Clareamento e Limpeza Dental - Aparelho Ortodôntico Metálico e Estético - Emergência - Extração do Siso - Faceta de Porcelana",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+     },
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 183,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 183 clínicas com coordenada, 1 medição"
+     }
+    },
+    {
+     "local_id": "ortho_poa_cavalhada",
+     "unidade": "OrthoDontic Cavalhada",
+     "medido": true,
+     "location": {
+      "lat": -30.102399,
+      "lng": -51.2326252
+     },
+     "bairro": "Cavalhada",
+     "clinica_mais_proxima": {
+      "nome": "Odonto Clin",
+      "km": 0.35,
+      "avaliacoes": 893,
+      "nota": 5,
+      "bairro": "Cavalhada"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 7.71,
+      "avaliacoes": 32,
+      "nota": 4.5,
+      "bairro": "Rio Branco"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 1,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "2km": {
+       "clinicas": 3,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "5km": {
+       "clinicas": 10,
+       "de_aparelho": 0,
+       "da_rede": 0
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.35 km",
+     "proximidade_entre_unidades": null,
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 183,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 183 clínicas com coordenada, 1 medição"
+     }
+    },
+    {
+     "local_id": "ortho_poa_centro_historico_3",
+     "unidade": "OrthoDontic Centro Histórico",
+     "medido": true,
+     "location": {
+      "lat": -30.0301614,
+      "lng": -51.2301083
+     },
+     "bairro": "Centro Histórico",
+     "clinica_mais_proxima": {
+      "nome": "Doctor - Clínica Odontológica",
+      "km": 0.01,
+      "avaliacoes": 64,
+      "nota": 4.6,
+      "bairro": "Centro Histórico"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 0.25,
+      "avaliacoes": 433,
+      "nota": 4.8,
+      "bairro": "Centro Histórico"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 34,
+       "de_aparelho": 0,
+       "da_rede": 3
+      },
+      "2km": {
+       "clinicas": 55,
+       "de_aparelho": 0,
+       "da_rede": 3
+      },
+      "5km": {
+       "clinicas": 156,
+       "de_aparelho": 0,
+       "da_rede": 4
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.01 km",
+     "proximidade_entre_unidades": {
+      "km": 0.25,
+      "unidade": "OrthoDontic",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+     },
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 183,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 183 clínicas com coordenada, 1 medição"
+     }
+    },
+    {
+     "local_id": "ortho_poa_centro_historico_4",
+     "unidade": "OrthoDontic Centro Histórico",
+     "medido": true,
+     "location": {
+      "lat": -30.030367199999997,
+      "lng": -51.2262627
+     },
+     "bairro": "Centro Histórico",
+     "clinica_mais_proxima": {
+      "nome": "Dental Arte Andradas",
+      "km": 0.11,
+      "avaliacoes": 250,
+      "nota": 4.7,
+      "bairro": "Centro Histórico"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 0.13,
+      "avaliacoes": 209,
+      "nota": 4.9,
+      "bairro": "Centro Histórico"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 36,
+       "de_aparelho": 0,
+       "da_rede": 3
+      },
+      "2km": {
+       "clinicas": 80,
+       "de_aparelho": 0,
+       "da_rede": 3
+      },
+      "5km": {
+       "clinicas": 162,
+       "de_aparelho": 0,
+       "da_rede": 4
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.11 km",
+     "proximidade_entre_unidades": {
+      "km": 0.13,
+      "unidade": "OrthoDontic",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+     },
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 183,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 183 clínicas com coordenada, 1 medição"
+     }
+    },
+    {
+     "local_id": "ortho_poa_rio_branco",
+     "unidade": "OrthoDontic Rio Branco",
+     "medido": true,
+     "location": {
+      "lat": -30.037105899999997,
+      "lng": -51.205602
+     },
+     "bairro": "Rio Branco",
+     "clinica_mais_proxima": {
+      "nome": "Sorrifácil Porto Alegre I Dentista em Rio Branco - Av. Mariante I Implantes, Prótese Protocolo e Clínico geral",
+      "km": 0.25,
+      "avaliacoes": 176,
+      "nota": 4.4,
+      "bairro": "Rio Branco"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 2.13,
+      "avaliacoes": 209,
+      "nota": 4.9,
+      "bairro": "Centro Histórico"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 48,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "2km": {
+       "clinicas": 100,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "5km": {
+       "clinicas": 170,
+       "de_aparelho": 0,
+       "da_rede": 4
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.25 km",
+     "proximidade_entre_unidades": null,
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 183,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 183 clínicas com coordenada, 1 medição"
+     }
+    }
+   ],
+   "clinicas_com_coordenada": 184,
+   "clinicas_sem_coordenada": 0,
+   "raios_declarados_km": [
+    1,
+    2,
+    5
+   ],
    "bairros_medidos": 33,
    "clinicas_medidas": 184,
    "sem_bairro_no_endereco": 0,
@@ -798,6 +1240,330 @@
   {
    "praca_id": "curitiba",
    "rotulo": "PR · Curitiba",
+   "territorio": [
+    {
+     "local_id": "ortho_cwb_centro",
+     "unidade": "OrthoDontic Centro",
+     "medido": true,
+     "location": {
+      "lat": -25.4301288,
+      "lng": -49.2694366
+     },
+     "bairro": "Centro",
+     "clinica_mais_proxima": {
+      "nome": "Dentista no Centro de Curitiba Dra Rafaela Rosa Bento Odontologia",
+      "km": 0.1,
+      "avaliacoes": 15,
+      "nota": 5,
+      "bairro": "Centro"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 0.19,
+      "avaliacoes": 126,
+      "nota": 4.7,
+      "bairro": "Centro"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 69,
+       "de_aparelho": 0,
+       "da_rede": 3
+      },
+      "2km": {
+       "clinicas": 122,
+       "de_aparelho": 0,
+       "da_rede": 3
+      },
+      "5km": {
+       "clinicas": 167,
+       "de_aparelho": 0,
+       "da_rede": 3
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.1 km",
+     "proximidade_entre_unidades": {
+      "km": 0.19,
+      "unidade": "OrthoDontic",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+     },
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 178,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 178 clínicas com coordenada, 1 medição"
+     }
+    },
+    {
+     "local_id": "ortho_cwb_centro_2",
+     "unidade": "OrthoDontic Centro",
+     "medido": true,
+     "location": {
+      "lat": -25.4336171,
+      "lng": -49.2708466
+     },
+     "bairro": "Centro",
+     "clinica_mais_proxima": {
+      "nome": "Clínica Odontológica BioCenter",
+      "km": 0.04,
+      "avaliacoes": 64,
+      "nota": 4.4,
+      "bairro": "Centro"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 0.22,
+      "avaliacoes": 126,
+      "nota": 4.7,
+      "bairro": "Centro"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 75,
+       "de_aparelho": 0,
+       "da_rede": 3
+      },
+      "2km": {
+       "clinicas": 124,
+       "de_aparelho": 0,
+       "da_rede": 3
+      },
+      "5km": {
+       "clinicas": 167,
+       "de_aparelho": 0,
+       "da_rede": 3
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.04 km",
+     "proximidade_entre_unidades": {
+      "km": 0.22,
+      "unidade": "OrthoDontic",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+     },
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 178,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 178 clínicas com coordenada, 1 medição"
+     }
+    },
+    {
+     "local_id": "ortho_cwb_centro_3",
+     "unidade": "OrthoDontic Centro",
+     "medido": true,
+     "location": {
+      "lat": -25.4319955,
+      "lng": -49.2743849
+     },
+     "bairro": "Centro",
+     "clinica_mais_proxima": {
+      "nome": "Orthopride Curitiba",
+      "km": 0.05,
+      "avaliacoes": 110,
+      "nota": 3.5,
+      "bairro": "Centro"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 0.4,
+      "avaliacoes": 718,
+      "nota": 4.7,
+      "bairro": "Centro"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 68,
+       "de_aparelho": 0,
+       "da_rede": 3
+      },
+      "2km": {
+       "clinicas": 120,
+       "de_aparelho": 0,
+       "da_rede": 3
+      },
+      "5km": {
+       "clinicas": 167,
+       "de_aparelho": 0,
+       "da_rede": 3
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.05 km",
+     "proximidade_entre_unidades": {
+      "km": 0.4,
+      "unidade": "OrthoDontic",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+     },
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 178,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 178 clínicas com coordenada, 1 medição"
+     }
+    },
+    {
+     "local_id": "ortho_cwb_portao",
+     "unidade": "OrthoDontic Portão",
+     "medido": true,
+     "location": {
+      "lat": -25.4742182,
+      "lng": -49.2931549
+     },
+     "bairro": "Portão",
+     "clinica_mais_proxima": {
+      "nome": "ADEROSSO Odontologia e Estética",
+      "km": 0.21,
+      "avaliacoes": 173,
+      "nota": 4.9,
+      "bairro": "Portão"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 5.04,
+      "avaliacoes": 718,
+      "nota": 4.7,
+      "bairro": "Centro"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 2,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "2km": {
+       "clinicas": 5,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "5km": {
+       "clinicas": 62,
+       "de_aparelho": 0,
+       "da_rede": 0
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.21 km",
+     "proximidade_entre_unidades": null,
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 178,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 178 clínicas com coordenada, 1 medição"
+     }
+    },
+    {
+     "local_id": "ortho_cwb_centro_4",
+     "unidade": "OrthoDontic Centro",
+     "medido": true,
+     "location": {
+      "lat": -25.431754899999998,
+      "lng": -49.270136199999996
+     },
+     "bairro": "Centro",
+     "clinica_mais_proxima": {
+      "nome": "Clinica Perfectta Odontologia",
+      "km": 0.04,
+      "avaliacoes": 161,
+      "nota": 4.7,
+      "bairro": "Centro"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 0.19,
+      "avaliacoes": 1012,
+      "nota": 4.6,
+      "bairro": "Centro"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 75,
+       "de_aparelho": 0,
+       "da_rede": 3
+      },
+      "2km": {
+       "clinicas": 124,
+       "de_aparelho": 0,
+       "da_rede": 3
+      },
+      "5km": {
+       "clinicas": 167,
+       "de_aparelho": 0,
+       "da_rede": 3
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.04 km",
+     "proximidade_entre_unidades": {
+      "km": 0.19,
+      "unidade": "OrthoDontic",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+     },
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 178,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 178 clínicas com coordenada, 1 medição"
+     }
+    }
+   ],
+   "clinicas_com_coordenada": 179,
+   "clinicas_sem_coordenada": 0,
+   "raios_declarados_km": [
+    1,
+    2,
+    5
+   ],
    "bairros_medidos": 27,
    "clinicas_medidas": 179,
    "sem_bairro_no_endereco": 0,
@@ -1540,6 +2306,261 @@
   {
    "praca_id": "goiania",
    "rotulo": "GO · Goiânia",
+   "territorio": [
+    {
+     "local_id": "ortho_gyn_st_oeste",
+     "unidade": "OrthoDontic St. Oeste",
+     "medido": true,
+     "location": {
+      "lat": -16.6797334,
+      "lng": -49.269754
+     },
+     "bairro": "St. Oeste",
+     "clinica_mais_proxima": {
+      "nome": "Dental Adelar",
+      "km": 0.35,
+      "avaliacoes": 240,
+      "nota": 4.8,
+      "bairro": "St. Aeroporto"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 1.08,
+      "avaliacoes": 268,
+      "nota": 4.6,
+      "bairro": "St. Central"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 14,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "2km": {
+       "clinicas": 88,
+       "de_aparelho": 0,
+       "da_rede": 1
+      },
+      "5km": {
+       "clinicas": 145,
+       "de_aparelho": 0,
+       "da_rede": 1
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.35 km",
+     "proximidade_entre_unidades": {
+      "km": 1.08,
+      "unidade": "OrthoDontic",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+     },
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 160,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 160 clínicas com coordenada, 1 medição"
+     }
+    },
+    {
+     "local_id": "ortho_gyn_st_central",
+     "unidade": "OrthoDontic St. Central",
+     "medido": true,
+     "location": {
+      "lat": -16.6756922,
+      "lng": -49.260486099999994
+     },
+     "bairro": "St. Central",
+     "clinica_mais_proxima": {
+      "nome": "Sorridents Centro",
+      "km": 0.03,
+      "avaliacoes": 55,
+      "nota": 4.3,
+      "bairro": "St. Central"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 1.08,
+      "avaliacoes": 270,
+      "nota": 4.2,
+      "bairro": "St. Oeste"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 23,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "2km": {
+       "clinicas": 60,
+       "de_aparelho": 0,
+       "da_rede": 1
+      },
+      "5km": {
+       "clinicas": 142,
+       "de_aparelho": 0,
+       "da_rede": 1
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.03 km",
+     "proximidade_entre_unidades": {
+      "km": 1.08,
+      "unidade": "OrthoDontic",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+     },
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 160,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 160 clínicas com coordenada, 1 medição"
+     }
+    },
+    {
+     "local_id": "ortho_gyn_jardim_tropical",
+     "unidade": "OrthoDontic Jardim Tropical",
+     "medido": true,
+     "location": {
+      "lat": -16.765591099999998,
+      "lng": -49.3486518
+     },
+     "bairro": "Jardim Tropical",
+     "clinica_mais_proxima": {
+      "nome": "OdontoCompany Av.Milão Assaí",
+      "km": 7.34,
+      "avaliacoes": 51,
+      "nota": 3.2,
+      "bairro": "Jardim Europa"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 12.72,
+      "avaliacoes": 270,
+      "nota": 4.2,
+      "bairro": "St. Oeste"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 0,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "2km": {
+       "clinicas": 0,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "5km": {
+       "clinicas": 0,
+       "de_aparelho": 0,
+       "da_rede": 0
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 7.34 km",
+     "proximidade_entre_unidades": null,
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 160,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 160 clínicas com coordenada, 1 medição"
+     }
+    },
+    {
+     "local_id": "ortho_gyn_st_morada_do_sol",
+     "unidade": "OrthoDontic St. Morada do Sol",
+     "medido": true,
+     "location": {
+      "lat": -16.6282842,
+      "lng": -49.327198
+     },
+     "bairro": "St. Morada do Sol",
+     "clinica_mais_proxima": {
+      "nome": "Clínica Odontológica - Instituto Correia",
+      "km": 1.58,
+      "avaliacoes": 55,
+      "nota": 4.7,
+      "bairro": "Jardim Nova Esperanca"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 8.38,
+      "avaliacoes": 270,
+      "nota": 4.2,
+      "bairro": "St. Oeste"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 0,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "2km": {
+       "clinicas": 2,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "5km": {
+       "clinicas": 4,
+       "de_aparelho": 0,
+       "da_rede": 0
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 1.58 km",
+     "proximidade_entre_unidades": null,
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 160,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 160 clínicas com coordenada, 1 medição"
+     }
+    }
+   ],
+   "clinicas_com_coordenada": 161,
+   "clinicas_sem_coordenada": 0,
+   "raios_declarados_km": [
+    1,
+    2,
+    5
+   ],
    "bairros_medidos": 36,
    "clinicas_medidas": 161,
    "sem_bairro_no_endereco": 0,
@@ -2268,8 +3289,2032 @@
    }
   },
   {
+   "praca_id": "sao_paulo",
+   "rotulo": "SP · São Paulo",
+   "territorio": [
+    {
+     "local_id": "orthodontic",
+     "unidade": "OrthoDontic",
+     "medido": true,
+     "location": {
+      "lat": -23.521436299999998,
+      "lng": -46.7046912
+     },
+     "bairro": "Lapa",
+     "clinica_mais_proxima": {
+      "nome": "Orto Clube",
+      "km": 0.08,
+      "avaliacoes": 168,
+      "nota": 4.6,
+      "bairro": "Lapa"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 7.17,
+      "avaliacoes": 22,
+      "nota": 3,
+      "bairro": "República"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 2,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "2km": {
+       "clinicas": 2,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "5km": {
+       "clinicas": 6,
+       "de_aparelho": 0,
+       "da_rede": 0
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.08 km",
+     "proximidade_entre_unidades": null,
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 184,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 184 clínicas com coordenada, 1 medição"
+     }
+    },
+    {
+     "local_id": "orthodontic_sao_miguel_paulista",
+     "unidade": "OrthoDontic",
+     "medido": true,
+     "location": {
+      "lat": -23.4923745,
+      "lng": -46.4425454
+     },
+     "bairro": "São Miguel Paulista",
+     "clinica_mais_proxima": {
+      "nome": "Clínica Odonto Brasil Implantes",
+      "km": 4.17,
+      "avaliacoes": 253,
+      "nota": 4.8,
+      "bairro": "Itaim Paulista"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 14.61,
+      "avaliacoes": 108,
+      "nota": 4.1,
+      "bairro": "Tatuapé"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 0,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "2km": {
+       "clinicas": 0,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "5km": {
+       "clinicas": 1,
+       "de_aparelho": 0,
+       "da_rede": 0
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 4.17 km",
+     "proximidade_entre_unidades": null,
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 184,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 184 clínicas com coordenada, 1 medição"
+     }
+    },
+    {
+     "local_id": "orthodontic_tatuape",
+     "unidade": "OrthoDontic",
+     "medido": true,
+     "location": {
+      "lat": -23.542748,
+      "lng": -46.5748943
+     },
+     "bairro": "Tatuapé",
+     "clinica_mais_proxima": {
+      "nome": "Sorridents Clínicas Odontológicas Tatuapé São Paulo",
+      "km": 0.47,
+      "avaliacoes": 1803,
+      "nota": 4.9,
+      "bairro": "Tatuapé"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 6.64,
+      "avaliacoes": 22,
+      "nota": 3,
+      "bairro": "República"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 2,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "2km": {
+       "clinicas": 5,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "5km": {
+       "clinicas": 16,
+       "de_aparelho": 0,
+       "da_rede": 0
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.47 km",
+     "proximidade_entre_unidades": null,
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 184,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 184 clínicas com coordenada, 1 medição"
+     }
+    },
+    {
+     "local_id": "orthodontic_republica",
+     "unidade": "OrthoDontic",
+     "medido": true,
+     "location": {
+      "lat": -23.546505000000003,
+      "lng": -46.6398698
+     },
+     "bairro": "República",
+     "clinica_mais_proxima": {
+      "nome": "Sorridents Anhangabaú",
+      "km": 0.02,
+      "avaliacoes": 540,
+      "nota": 4.8,
+      "bairro": "República"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 6.64,
+      "avaliacoes": 108,
+      "nota": 4.1,
+      "bairro": "Tatuapé"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 16,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "2km": {
+       "clinicas": 43,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "5km": {
+       "clinicas": 137,
+       "de_aparelho": 0,
+       "da_rede": 0
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.02 km",
+     "proximidade_entre_unidades": null,
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 184,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 184 clínicas com coordenada, 1 medição"
+     }
+    }
+   ],
+   "clinicas_com_coordenada": 185,
+   "clinicas_sem_coordenada": 0,
+   "raios_declarados_km": [
+    1,
+    2,
+    5
+   ],
+   "bairros_medidos": 49,
+   "clinicas_medidas": 185,
+   "sem_bairro_no_endereco": 3,
+   "unidades_da_rede": 4,
+   "unidades_localizadas": 4,
+   "onde_estamos": [
+    {
+     "local_id": "orthodontic",
+     "bairro": "Lapa",
+     "unidade": "OrthoDontic"
+    },
+    {
+     "local_id": "orthodontic_republica",
+     "bairro": "República",
+     "unidade": "OrthoDontic"
+    },
+    {
+     "local_id": "orthodontic_sao_miguel_paulista",
+     "bairro": "São Miguel Paulista",
+     "unidade": "OrthoDontic"
+    },
+    {
+     "local_id": "orthodontic_tatuape",
+     "bairro": "Tatuapé",
+     "unidade": "OrthoDontic"
+    }
+   ],
+   "bairros": [
+    {
+     "bairro": "Bela Vista",
+     "clinicas": 39,
+     "avaliacoes_somadas": 4683,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Simioni Odontologia - Implante e Lente de Contato Dental",
+       "nota": 5,
+       "avaliacoes": 653
+      },
+      {
+       "nome": "Prado Odontologia e Medicina",
+       "nota": 4.9,
+       "avaliacoes": 430
+      },
+      {
+       "nome": "Benatti Odontologia",
+       "nota": 4.9,
+       "avaliacoes": 426
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "39 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Vila Mariana",
+     "clinicas": 15,
+     "avaliacoes_somadas": 2403,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odontoclinic",
+       "nota": 5,
+       "avaliacoes": 950
+      },
+      {
+       "nome": "Clínica Antonioli",
+       "nota": 4.9,
+       "avaliacoes": 427
+      },
+      {
+       "nome": "Dental Ortho-Lipe",
+       "nota": 5,
+       "avaliacoes": 254
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "15 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Jardim Paulista",
+     "clinicas": 12,
+     "avaliacoes_somadas": 1148,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Sorridents Clínicas Odontológicas Oscar Freire São Paulo",
+       "nota": 4.6,
+       "avaliacoes": 243
+      },
+      {
+       "nome": "Mishima Odontologia",
+       "nota": 5,
+       "avaliacoes": 229
+      },
+      {
+       "nome": "Guerreiro Clinic",
+       "nota": 4.9,
+       "avaliacoes": 190
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "12 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "República",
+     "clinicas": 10,
+     "avaliacoes_somadas": 2878,
+     "temos_unidade": true,
+     "nossas": [
+      "orthodontic_republica"
+     ],
+     "vizinhos_fortes": [
+      {
+       "nome": "DRB Odonto | Implantes, Próteses, Ortodontia e Estética no Centro de São Paulo - SP",
+       "nota": 4.9,
+       "avaliacoes": 680
+      },
+      {
+       "nome": "Setimplan Centro Odontológico",
+       "nota": 4.8,
+       "avaliacoes": 542
+      },
+      {
+       "nome": "Sorridents Anhangabaú",
+       "nota": 4.8,
+       "avaliacoes": 540
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "10 clínicas varridas, e a unidade da rede está aqui"
+    },
+    {
+     "bairro": "Liberdade",
+     "clinicas": 9,
+     "avaliacoes_somadas": 512,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dental Excellence Matriz",
+       "nota": 4,
+       "avaliacoes": 220
+      },
+      {
+       "nome": "Dentika Clínicas Odontológicas Liberdade",
+       "nota": 4.6,
+       "avaliacoes": 160
+      },
+      {
+       "nome": "R&P Odontologia | Dentista | Liberdade | Vila Mariana | Aclimação",
+       "nota": 5,
+       "avaliacoes": 47
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "9 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Cerqueira César",
+     "clinicas": 8,
+     "avaliacoes_somadas": 925,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clopi - Clínica Odontológica Pinheiros",
+       "nota": 4.5,
+       "avaliacoes": 343
+      },
+      {
+       "nome": "Clinica Odontológica COFA Odontologia",
+       "nota": 4.8,
+       "avaliacoes": 265
+      },
+      {
+       "nome": "Dra. Joyce Campbell",
+       "nota": 5,
+       "avaliacoes": 197
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "8 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Consolação",
+     "clinicas": 7,
+     "avaliacoes_somadas": 1005,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Sorridents Clínicas Odontológicas Augusta São Paulo",
+       "nota": 4.8,
+       "avaliacoes": 415
+      },
+      {
+       "nome": "Medical Dental Advance Produtos Médicos e Odontológicos",
+       "nota": 5,
+       "avaliacoes": 244
+      },
+      {
+       "nome": "Sorridents Clínicas Odontológicas Higienópolis São Paulo",
+       "nota": 4.8,
+       "avaliacoes": 217
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "7 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Pinheiros",
+     "clinicas": 6,
+     "avaliacoes_somadas": 2098,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "SouSmile | Pinheiros | Unidade Oficial",
+       "nota": 4.9,
+       "avaliacoes": 836
+      },
+      {
+       "nome": "Dentar Odontologia",
+       "nota": 5,
+       "avaliacoes": 674
+      },
+      {
+       "nome": "Clínica OdontoFares",
+       "nota": 4.9,
+       "avaliacoes": 305
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "6 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Cambuci",
+     "clinicas": 6,
+     "avaliacoes_somadas": 1619,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odontoclinic - Cambuci",
+       "nota": 4.9,
+       "avaliacoes": 608
+      },
+      {
+       "nome": "Risoarte Odontologia Cambuci",
+       "nota": 4.9,
+       "avaliacoes": 384
+      },
+      {
+       "nome": "Odonto Company - Lins de Vasconcelos",
+       "nota": 4.9,
+       "avaliacoes": 273
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "6 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Paraíso",
+     "clinicas": 5,
+     "avaliacoes_somadas": 637,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clínica Miki Odontologia Familiar",
+       "nota": 4.9,
+       "avaliacoes": 272
+      },
+      {
+       "nome": "W Odonto",
+       "nota": 5,
+       "avaliacoes": 137
+      },
+      {
+       "nome": "Clínica Jin Odontologia",
+       "nota": 4.6,
+       "avaliacoes": 127
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "5 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Aclimação",
+     "clinicas": 5,
+     "avaliacoes_somadas": 721,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Prevent Ser Odontologia",
+       "nota": 5,
+       "avaliacoes": 239
+      },
+      {
+       "nome": "Sorridents Clínicas Odontológicas Aclimação São Paulo",
+       "nota": 4.8,
+       "avaliacoes": 200
+      },
+      {
+       "nome": "Clinica Odontológica e Estética Facial - LR",
+       "nota": 4.9,
+       "avaliacoes": 179
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "5 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Tatuapé",
+     "clinicas": 4,
+     "avaliacoes_somadas": 2066,
+     "temos_unidade": true,
+     "nossas": [
+      "orthodontic_tatuape"
+     ],
+     "vizinhos_fortes": [
+      {
+       "nome": "Sorridents Clínicas Odontológicas Tatuapé São Paulo",
+       "nota": 4.9,
+       "avaliacoes": 1803
+      },
+      {
+       "nome": "Dra. Carolina M. Ribeiro",
+       "nota": 4.9,
+       "avaliacoes": 155
+      },
+      {
+       "nome": "Alinhador Invisível",
+       "nota": null,
+       "avaliacoes": null
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "4 clínicas varridas, e a unidade da rede está aqui"
+    },
+    {
+     "bairro": "Mooca",
+     "clinicas": 4,
+     "avaliacoes_somadas": 756,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Sorridents Clínicas Odontológicas Mooca São Paulo",
+       "nota": 4.8,
+       "avaliacoes": 649
+      },
+      {
+       "nome": "Odontologia do Esporte, Sono e especialidades.Dra Márcia Yamashita e Equipe",
+       "nota": 5,
+       "avaliacoes": 86
+      },
+      {
+       "nome": "Dra. Layla Corrêa - Mooca ,SP - Clareamento Dental, Lentes em Resina, Ortodontia, Limpeza, Botox, Preenchimento labial",
+       "nota": 5,
+       "avaliacoes": 11
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "4 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Vila Clementino",
+     "clinicas": 4,
+     "avaliacoes_somadas": 97,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "BASE Odontologia Inteligente",
+       "nota": 5,
+       "avaliacoes": 87
+      },
+      {
+       "nome": "Ortodontia - Dra Érika Madid & Dra. Maria Teresa Romero",
+       "nota": 5,
+       "avaliacoes": 5
+      },
+      {
+       "nome": "Dra. Denise N. Shaffer Dentista Ortodontista",
+       "nota": 5,
+       "avaliacoes": 4
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "4 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Itaim Bibi",
+     "clinicas": 4,
+     "avaliacoes_somadas": 143,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Rittes Odontologia | Aparelho Ortodôntico | Invisalign",
+       "nota": 4.8,
+       "avaliacoes": 72
+      },
+      {
+       "nome": "Invisalign",
+       "nota": 3.3,
+       "avaliacoes": 47
+      },
+      {
+       "nome": "Dra. Elaine Nanci - Ortodontia SP (Top Doctor Invisalign)",
+       "nota": 5,
+       "avaliacoes": 17
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "4 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Centro Histórico de São Paulo",
+     "clinicas": 3,
+     "avaliacoes_somadas": 806,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Ultra Fácil Odontologia São Bento",
+       "nota": 4.5,
+       "avaliacoes": 656
+      },
+      {
+       "nome": "Ultra Fácil - Clínica Odontológica",
+       "nota": 2.3,
+       "avaliacoes": 78
+      },
+      {
+       "nome": "Clínica Odontológica Dra. Mayara Vianna | Dentista no Centro de São Paulo",
+       "nota": 5,
+       "avaliacoes": 72
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "3 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Moema",
+     "clinicas": 3,
+     "avaliacoes_somadas": 544,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "One Odontologia Moema - Invisalign em Moema",
+       "nota": 5,
+       "avaliacoes": 340
+      },
+      {
+       "nome": "Invisa Clinic | Invisalign | Alinhadores Invisíveis",
+       "nota": 5,
+       "avaliacoes": 191
+      },
+      {
+       "nome": "Dr. Fábio Segawa | Ortodontista em SP",
+       "nota": 5,
+       "avaliacoes": 13
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "3 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Brás",
+     "clinicas": 3,
+     "avaliacoes_somadas": 442,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "COB - Clínica Odontológica do Brás",
+       "nota": 4.9,
+       "avaliacoes": 236
+      },
+      {
+       "nome": "Odonto Company - Brás",
+       "nota": 4.2,
+       "avaliacoes": 150
+      },
+      {
+       "nome": "Oral Brás",
+       "nota": 4.7,
+       "avaliacoes": 56
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "3 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Higienópolis",
+     "clinicas": 3,
+     "avaliacoes_somadas": 334,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clínica São Paulo Dental Studio",
+       "nota": 5,
+       "avaliacoes": 207
+      },
+      {
+       "nome": "Dentista e Invisalign Higienópolis - Clínica Odontológica GEN",
+       "nota": 5,
+       "avaliacoes": 122
+      },
+      {
+       "nome": "Dra. Márcia Farina - Farina Ortodontia e Odontologia Especializada",
+       "nota": 5,
+       "avaliacoes": 5
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "3 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Lapa",
+     "clinicas": 3,
+     "avaliacoes_somadas": 532,
+     "temos_unidade": true,
+     "nossas": [
+      "orthodontic"
+     ],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odontolapa | Lapa | Próximo a 12 de Outubro",
+       "nota": 4.9,
+       "avaliacoes": 175
+      },
+      {
+       "nome": "Orto Clube",
+       "nota": 4.6,
+       "avaliacoes": 168
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "3 clínicas varridas, e a unidade da rede está aqui"
+    },
+    {
+     "bairro": "Vila Buarque",
+     "clinicas": 2,
+     "avaliacoes_somadas": 958,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Sorridents Clínicas Odontológicas Santa Cecília São Paulo",
+       "nota": 4.7,
+       "avaliacoes": 797
+      },
+      {
+       "nome": "Clínica Ede",
+       "nota": 4.9,
+       "avaliacoes": 161
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Penha de França",
+     "clinicas": 2,
+     "avaliacoes_somadas": 375,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Sorriso Kids - Clínica especializada em Crianças",
+       "nota": 4.9,
+       "avaliacoes": 318
+      },
+      {
+       "nome": "Dra. Vivianne Sato | Ortodontista Especializada",
+       "nota": 5,
+       "avaliacoes": 57
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Santana",
+     "clinicas": 2,
+     "avaliacoes_somadas": 32,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dentista em Santana SP – Dra. Martha Cyrillo | Ortodontia",
+       "nota": 5,
+       "avaliacoes": 28
+      },
+      {
+       "nome": "Dental São Paulo Comércio de Produtos Ortodonticos",
+       "nota": 5,
+       "avaliacoes": 4
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Santo Amaro",
+     "clinicas": 1,
+     "avaliacoes_somadas": 1181,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Seu Sorriso Odontologia",
+       "nota": 4.6,
+       "avaliacoes": 1181
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Paulista",
+     "clinicas": 1,
+     "avaliacoes_somadas": 607,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "SouSmile",
+       "nota": 4.8,
+       "avaliacoes": 607
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    }
+   ],
+   "bairros_sem_a_rede": [
+    {
+     "bairro": "Bela Vista",
+     "clinicas": 39,
+     "avaliacoes_somadas": 4683,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Simioni Odontologia - Implante e Lente de Contato Dental",
+       "nota": 5,
+       "avaliacoes": 653
+      },
+      {
+       "nome": "Prado Odontologia e Medicina",
+       "nota": 4.9,
+       "avaliacoes": 430
+      },
+      {
+       "nome": "Benatti Odontologia",
+       "nota": 4.9,
+       "avaliacoes": 426
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "39 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Vila Mariana",
+     "clinicas": 15,
+     "avaliacoes_somadas": 2403,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odontoclinic",
+       "nota": 5,
+       "avaliacoes": 950
+      },
+      {
+       "nome": "Clínica Antonioli",
+       "nota": 4.9,
+       "avaliacoes": 427
+      },
+      {
+       "nome": "Dental Ortho-Lipe",
+       "nota": 5,
+       "avaliacoes": 254
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "15 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Jardim Paulista",
+     "clinicas": 12,
+     "avaliacoes_somadas": 1148,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Sorridents Clínicas Odontológicas Oscar Freire São Paulo",
+       "nota": 4.6,
+       "avaliacoes": 243
+      },
+      {
+       "nome": "Mishima Odontologia",
+       "nota": 5,
+       "avaliacoes": 229
+      },
+      {
+       "nome": "Guerreiro Clinic",
+       "nota": 4.9,
+       "avaliacoes": 190
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "12 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Liberdade",
+     "clinicas": 9,
+     "avaliacoes_somadas": 512,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dental Excellence Matriz",
+       "nota": 4,
+       "avaliacoes": 220
+      },
+      {
+       "nome": "Dentika Clínicas Odontológicas Liberdade",
+       "nota": 4.6,
+       "avaliacoes": 160
+      },
+      {
+       "nome": "R&P Odontologia | Dentista | Liberdade | Vila Mariana | Aclimação",
+       "nota": 5,
+       "avaliacoes": 47
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "9 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Cerqueira César",
+     "clinicas": 8,
+     "avaliacoes_somadas": 925,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clopi - Clínica Odontológica Pinheiros",
+       "nota": 4.5,
+       "avaliacoes": 343
+      },
+      {
+       "nome": "Clinica Odontológica COFA Odontologia",
+       "nota": 4.8,
+       "avaliacoes": 265
+      },
+      {
+       "nome": "Dra. Joyce Campbell",
+       "nota": 5,
+       "avaliacoes": 197
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "8 clínicas varridas, e a rede não está aqui"
+    }
+   ],
+   "manchete": "49 bairros medidos · a rede está em 4 deles",
+   "leitura": "O bairro com mais clínicas é Bela Vista, com 39 clínicas varridas, e a rede NÃO está lá.",
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "media",
+    "medido": true,
+    "amostra": 185,
+    "janela_dias": null,
+    "medicoes": 1,
+    "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
+    "a_favor": [],
+    "contra": [
+     "3 endereços sem bairro legível"
+    ],
+    "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
+    "procedencia": "medido em 185 clínicas varridas, 1 medição"
+   }
+  },
+  {
+   "praca_id": "caxias_do_sul",
+   "rotulo": "RS · Caxias do Sul",
+   "territorio": [
+    {
+     "local_id": "orthodontic",
+     "unidade": "OrthoDontic",
+     "medido": true,
+     "location": {
+      "lat": -29.167090699999996,
+      "lng": -51.1807211
+     },
+     "bairro": "Centro",
+     "clinica_mais_proxima": {
+      "nome": "Clínica Odontológica Brasdente",
+      "km": 0.05,
+      "avaliacoes": 51,
+      "nota": 4.2,
+      "bairro": "Centro"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 0.26,
+      "avaliacoes": 172,
+      "nota": 4.7,
+      "bairro": "Centro"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 83,
+       "de_aparelho": 0,
+       "da_rede": 1
+      },
+      "2km": {
+       "clinicas": 100,
+       "de_aparelho": 0,
+       "da_rede": 1
+      },
+      "5km": {
+       "clinicas": 111,
+       "de_aparelho": 0,
+       "da_rede": 2
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.05 km",
+     "proximidade_entre_unidades": {
+      "km": 0.26,
+      "unidade": "OrthoDontic",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+     },
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 114,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 114 clínicas com coordenada, 1 medição"
+     }
+    },
+    {
+     "local_id": "orthodontic_centro",
+     "unidade": "OrthoDontic",
+     "medido": true,
+     "location": {
+      "lat": -29.1680952,
+      "lng": -51.183084099999995
+     },
+     "bairro": "Centro",
+     "clinica_mais_proxima": {
+      "nome": "Center Ortodontia",
+      "km": 0.01,
+      "avaliacoes": 21,
+      "nota": 5,
+      "bairro": "Centro"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 0.26,
+      "avaliacoes": 362,
+      "nota": 4.7,
+      "bairro": "Centro"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 87,
+       "de_aparelho": 0,
+       "da_rede": 1
+      },
+      "2km": {
+       "clinicas": 97,
+       "de_aparelho": 0,
+       "da_rede": 1
+      },
+      "5km": {
+       "clinicas": 111,
+       "de_aparelho": 0,
+       "da_rede": 2
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.01 km",
+     "proximidade_entre_unidades": {
+      "km": 0.26,
+      "unidade": "OrthoDontic",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+     },
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 114,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 114 clínicas com coordenada, 1 medição"
+     }
+    },
+    {
+     "local_id": "orthodontic_kayser",
+     "unidade": "OrthoDontic",
+     "medido": true,
+     "location": {
+      "lat": -29.188492699999998,
+      "lng": -51.199863900000004
+     },
+     "bairro": "Kayser",
+     "clinica_mais_proxima": {
+      "nome": "Brunetto Slovinscki Odontologia",
+      "km": 0.03,
+      "avaliacoes": 683,
+      "nota": 5,
+      "bairro": "Kayser"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 2.79,
+      "avaliacoes": 172,
+      "nota": 4.7,
+      "bairro": "Centro"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 3,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "2km": {
+       "clinicas": 4,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "5km": {
+       "clinicas": 109,
+       "de_aparelho": 0,
+       "da_rede": 2
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.03 km",
+     "proximidade_entre_unidades": null,
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 114,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 114 clínicas com coordenada, 1 medição"
+     }
+    }
+   ],
+   "clinicas_com_coordenada": 115,
+   "clinicas_sem_coordenada": 0,
+   "raios_declarados_km": [
+    1,
+    2,
+    5
+   ],
+   "bairros_medidos": 23,
+   "clinicas_medidas": 115,
+   "sem_bairro_no_endereco": 0,
+   "unidades_da_rede": 3,
+   "unidades_localizadas": 3,
+   "onde_estamos": [
+    {
+     "local_id": "orthodontic",
+     "bairro": "Centro",
+     "unidade": "OrthoDontic"
+    },
+    {
+     "local_id": "orthodontic_centro",
+     "bairro": "Centro",
+     "unidade": "OrthoDontic"
+    },
+    {
+     "local_id": "orthodontic_kayser",
+     "bairro": "Kayser",
+     "unidade": "OrthoDontic"
+    }
+   ],
+   "bairros": [
+    {
+     "bairro": "Centro",
+     "clinicas": 51,
+     "avaliacoes_somadas": 8012,
+     "temos_unidade": true,
+     "nossas": [
+      "orthodontic",
+      "orthodontic_centro"
+     ],
+     "vizinhos_fortes": [
+      {
+       "nome": "Revitalle Implantes | Dentista Caxias do Sul | Clínica Odontológica | Invisalign",
+       "nota": 5,
+       "avaliacoes": 1887
+      },
+      {
+       "nome": "OrtoClínica",
+       "nota": 4.9,
+       "avaliacoes": 1423
+      },
+      {
+       "nome": "CaxiasMed Clínica Médica e Odontológica",
+       "nota": 4.5,
+       "avaliacoes": 794
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "51 clínicas varridas, e a unidade da rede está aqui"
+    },
+    {
+     "bairro": "São Pelegrino",
+     "clinicas": 23,
+     "avaliacoes_somadas": 1653,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Top Estética Bucal - Clínica Odontológica | Dentista em Caxias do Sul | Aparelhos Ortodônticos | Implantes Dentários",
+       "nota": 4.8,
+       "avaliacoes": 411
+      },
+      {
+       "nome": "Bonaviv Implantes - Implantes Dentários em Caxias do Sul",
+       "nota": 5,
+       "avaliacoes": 205
+      },
+      {
+       "nome": "Dental Arte Caxias",
+       "nota": 4.8,
+       "avaliacoes": 189
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "23 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Exposição",
+     "clinicas": 10,
+     "avaliacoes_somadas": 1297,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Oral Unic",
+       "nota": 4.9,
+       "avaliacoes": 937
+      },
+      {
+       "nome": "Clínica Furlan Odontologia Especializada",
+       "nota": 5,
+       "avaliacoes": 78
+      },
+      {
+       "nome": "Dra. Roberta Bento - Dentista Caxias do Sul",
+       "nota": 5,
+       "avaliacoes": 73
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "10 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Kayser",
+     "clinicas": 4,
+     "avaliacoes_somadas": 863,
+     "temos_unidade": true,
+     "nossas": [
+      "orthodontic_kayser"
+     ],
+     "vizinhos_fortes": [
+      {
+       "nome": "Brunetto Slovinscki Odontologia",
+       "nota": 5,
+       "avaliacoes": 683
+      },
+      {
+       "nome": "OrtoDoctor Kayser Odontologia Especializada",
+       "nota": 5,
+       "avaliacoes": 52
+      },
+      {
+       "nome": "OdontoCompany Kayser - Caxias do Sul",
+       "nota": 4.7,
+       "avaliacoes": 37
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "4 clínicas varridas, e a unidade da rede está aqui"
+    },
+    {
+     "bairro": "Nossa Sra. de Lourdes",
+     "clinicas": 4,
+     "avaliacoes_somadas": 1114,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Instituto Bordin - Odontologia Estética, Próteses e Implantes - CLÍNICA ODONTOLÓGICA",
+       "nota": 4.9,
+       "avaliacoes": 564
+      },
+      {
+       "nome": "Benne Odonto Clinica Odontológica Ltda",
+       "nota": 5,
+       "avaliacoes": 543
+      },
+      {
+       "nome": "Dentalshop Brasil - Filial Caxias do Sul",
+       "nota": 4,
+       "avaliacoes": 4
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "4 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Cristo Redentor",
+     "clinicas": 2,
+     "avaliacoes_somadas": 403,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dentista | Implante Dentário | OdontoPlus Centro Odontológico | Cristo Redentor | Caxias do Sul - RS",
+       "nota": 4.9,
+       "avaliacoes": 293
+      },
+      {
+       "nome": "Dra Nalva Fritzen",
+       "nota": 5,
+       "avaliacoes": 110
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Pio X",
+     "clinicas": 2,
+     "avaliacoes_somadas": 351,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Magic Odontologia e Implantes",
+       "nota": 4.8,
+       "avaliacoes": 241
+      },
+      {
+       "nome": "Arte Sorriso Clínica Odontológica",
+       "nota": 4.6,
+       "avaliacoes": 110
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Cruzeiro",
+     "clinicas": 2,
+     "avaliacoes_somadas": 354,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Andreola Odontologia Integrada | Dentista | Facetas de Resina | Lentes de Contato l Harmonização Facial | Implantes Dentários",
+       "nota": 5,
+       "avaliacoes": 214
+      },
+      {
+       "nome": "L&C ODONTOLOGIA | Dentista Caxias do Sul | Alinhadores Invisíveis | Ronco | Facetas | Implantes | Próteses | Clareamento",
+       "nota": 5,
+       "avaliacoes": 140
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Madureira",
+     "clinicas": 2,
+     "avaliacoes_somadas": 135,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Pró Implanto - Dentista Caxias do Sul",
+       "nota": 5,
+       "avaliacoes": 135
+      },
+      {
+       "nome": "Dr. Tiago Abreu - Ortodontia",
+       "nota": null,
+       "avaliacoes": null
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Panazzolo",
+     "clinicas": 2,
+     "avaliacoes_somadas": 11,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra. Tássia Tonello",
+       "nota": 5,
+       "avaliacoes": 10
+      },
+      {
+       "nome": "Dentista Dra. Tatiana Thomé",
+       "nota": 5,
+       "avaliacoes": 1
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Ana Rech",
+     "clinicas": 1,
+     "avaliacoes_somadas": 909,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Massocatto Odontologia - Implantes Dentários",
+       "nota": 5,
+       "avaliacoes": 909
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Mal. Floriano",
+     "clinicas": 1,
+     "avaliacoes_somadas": 530,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Criardente Odontologia Integrada",
+       "nota": 5,
+       "avaliacoes": 530
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "N Sra Lourdes",
+     "clinicas": 1,
+     "avaliacoes_somadas": 307,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odontopediatra Dra. Andressa Pimentel",
+       "nota": 5,
+       "avaliacoes": 307
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Jardim Eldorado",
+     "clinicas": 1,
+     "avaliacoes_somadas": 237,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odonto Excellence | Dentista Caxias do Sul | Clínica Odontológica | Aparelho Ortodôntico",
+       "nota": 4.9,
+       "avaliacoes": 237
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "São José",
+     "clinicas": 1,
+     "avaliacoes_somadas": 126,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odonto Excellence Caxias do Sul São José - Dentista",
+       "nota": 4.8,
+       "avaliacoes": 126
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Sanvitto",
+     "clinicas": 1,
+     "avaliacoes_somadas": 98,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Instituto Novva Odontologia - Implantes dentais e Lentes de contato dentais.",
+       "nota": 4.9,
+       "avaliacoes": 98
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Lourdes",
+     "clinicas": 1,
+     "avaliacoes_somadas": 56,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "IGPGO - Caxias do Sul",
+       "nota": 4.1,
+       "avaliacoes": 56
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Nossa Sra. de Fátima",
+     "clinicas": 1,
+     "avaliacoes_somadas": 28,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra. Letícia Dall'Agnol Odontologia | Dentista em Caxias do Sul",
+       "nota": 5,
+       "avaliacoes": 28
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "N. Sra. De Lourdes",
+     "clinicas": 1,
+     "avaliacoes_somadas": 25,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra. Bruna R. de Rossi | Dentista e Ortodontista em Caxias do Sul •Clareamento •Profilaxia •Estética Dental •Botóx",
+       "nota": 5,
+       "avaliacoes": 25
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Santa Catarina",
+     "clinicas": 1,
+     "avaliacoes_somadas": 23,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Orthoblanc Odontologia Clínica E Estética",
+       "nota": 4.8,
+       "avaliacoes": 23
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Bela Vista",
+     "clinicas": 1,
+     "avaliacoes_somadas": 11,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odonto Excellence Caxias do Sul, Bela Vista - Dentista",
+       "nota": 4.3,
+       "avaliacoes": 11
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Serrano",
+     "clinicas": 1,
+     "avaliacoes_somadas": 2,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clinica Odontologica",
+       "nota": 3,
+       "avaliacoes": 2
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Sagrada Família",
+     "clinicas": 1,
+     "avaliacoes_somadas": 0,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra. Fernanda Boff | Dentista Caxias do Sul | Invisalign | Ortodontia | Escaneamento 3D",
+       "nota": null,
+       "avaliacoes": null
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    }
+   ],
+   "bairros_sem_a_rede": [
+    {
+     "bairro": "São Pelegrino",
+     "clinicas": 23,
+     "avaliacoes_somadas": 1653,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Top Estética Bucal - Clínica Odontológica | Dentista em Caxias do Sul | Aparelhos Ortodônticos | Implantes Dentários",
+       "nota": 4.8,
+       "avaliacoes": 411
+      },
+      {
+       "nome": "Bonaviv Implantes - Implantes Dentários em Caxias do Sul",
+       "nota": 5,
+       "avaliacoes": 205
+      },
+      {
+       "nome": "Dental Arte Caxias",
+       "nota": 4.8,
+       "avaliacoes": 189
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "23 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Exposição",
+     "clinicas": 10,
+     "avaliacoes_somadas": 1297,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Oral Unic",
+       "nota": 4.9,
+       "avaliacoes": 937
+      },
+      {
+       "nome": "Clínica Furlan Odontologia Especializada",
+       "nota": 5,
+       "avaliacoes": 78
+      },
+      {
+       "nome": "Dra. Roberta Bento - Dentista Caxias do Sul",
+       "nota": 5,
+       "avaliacoes": 73
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "10 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Nossa Sra. de Lourdes",
+     "clinicas": 4,
+     "avaliacoes_somadas": 1114,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Instituto Bordin - Odontologia Estética, Próteses e Implantes - CLÍNICA ODONTOLÓGICA",
+       "nota": 4.9,
+       "avaliacoes": 564
+      },
+      {
+       "nome": "Benne Odonto Clinica Odontológica Ltda",
+       "nota": 5,
+       "avaliacoes": 543
+      },
+      {
+       "nome": "Dentalshop Brasil - Filial Caxias do Sul",
+       "nota": 4,
+       "avaliacoes": 4
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "4 clínicas varridas, e a rede não está aqui"
+    }
+   ],
+   "manchete": "23 bairros medidos · a rede está em 2 deles",
+   "leitura": "O bairro com mais clínicas é Centro, com 51 clínicas varridas, e a rede está lá.",
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "media",
+    "medido": true,
+    "amostra": 115,
+    "janela_dias": null,
+    "medicoes": 1,
+    "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
+    "procedencia": "medido em 115 clínicas varridas, 1 medição"
+   }
+  },
+  {
    "praca_id": "cuiaba",
    "rotulo": "MT · Cuiabá",
+   "territorio": [
+    {
+     "local_id": "ortho_cba_centro_norte",
+     "unidade": "OrthoDontic Cuiabá Centro Norte",
+     "medido": true,
+     "location": {
+      "lat": -15.597351799999998,
+      "lng": -56.097935299999996
+     },
+     "bairro": "Centro Norte",
+     "clinica_mais_proxima": {
+      "nome": "Dra. Daniele Broch - Dentista em Cuiabá",
+      "km": 0.15,
+      "avaliacoes": 8,
+      "nota": 5,
+      "bairro": "Centro Norte"
+     },
+     "aparelho_mais_proximo": {
+      "nome": "ODONTO MEDICINA 🦷",
+      "km": 0.17,
+      "avaliacoes": 1451,
+      "nota": 5,
+      "bairro": "Centro Norte"
+     },
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 0.61,
+      "avaliacoes": 71,
+      "nota": 4.9,
+      "bairro": "Centro Sul"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 36,
+       "de_aparelho": 4,
+       "da_rede": 1
+      },
+      "2km": {
+       "clinicas": 83,
+       "de_aparelho": 9,
+       "da_rede": 1
+      },
+      "5km": {
+       "clinicas": 135,
+       "de_aparelho": 19,
+       "da_rede": 2
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.15 km",
+     "proximidade_entre_unidades": {
+      "km": 0.61,
+      "unidade": "OrthoDontic",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+     },
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 241,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 241 clínicas com coordenada, 1 medição"
+     }
+    },
+    {
+     "local_id": "ortho_cba_fernando_correa",
+     "unidade": "OrthoDontic Cuiabá Fernando Corrêa",
+     "medido": true,
+     "location": {
+      "lat": -15.610528100000002,
+      "lng": -56.0781529
+     },
+     "bairro": "Pico do Amor",
+     "clinica_mais_proxima": {
+      "nome": "Dentista em Cuiabá - Dra. Maria Elisa Rosa",
+      "km": 0.03,
+      "avaliacoes": 45,
+      "nota": 5,
+      "bairro": "Jardim Kennedy"
+     },
+     "aparelho_mais_proximo": {
+      "nome": "Guanabara Odontologia- Dra Ana Carolina Ribeiro",
+      "km": 0.82,
+      "avaliacoes": 335,
+      "nota": 5,
+      "bairro": "Jardim Guanabara"
+     },
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 2.51,
+      "avaliacoes": 71,
+      "nota": 4.9,
+      "bairro": "Centro Sul"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 11,
+       "de_aparelho": 2,
+       "da_rede": 0
+      },
+      "2km": {
+       "clinicas": 24,
+       "de_aparelho": 7,
+       "da_rede": 0
+      },
+      "5km": {
+       "clinicas": 148,
+       "de_aparelho": 20,
+       "da_rede": 2
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.03 km",
+     "proximidade_entre_unidades": null,
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 241,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 241 clínicas com coordenada, 1 medição"
+     }
+    },
+    {
+     "local_id": "ortho_cba_dom_bosco",
+     "unidade": "OrthoDontic Cuiabá Dom Bosco (Centro Sul)",
+     "medido": true,
+     "location": {
+      "lat": -15.6024303,
+      "lng": -56.100078499999995
+     },
+     "bairro": "Centro Sul",
+     "clinica_mais_proxima": {
+      "nome": "Orto fácil",
+      "km": 0.03,
+      "avaliacoes": 9,
+      "nota": 4.9,
+      "bairro": "Centro Sul"
+     },
+     "aparelho_mais_proximo": {
+      "nome": "Sorridents Centro Norte",
+      "km": 0.42,
+      "avaliacoes": 263,
+      "nota": 4.9,
+      "bairro": "Centro Norte"
+     },
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 0.61,
+      "avaliacoes": 1222,
+      "nota": 5,
+      "bairro": "Centro Norte"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 28,
+       "de_aparelho": 3,
+       "da_rede": 1
+      },
+      "2km": {
+       "clinicas": 76,
+       "de_aparelho": 8,
+       "da_rede": 1
+      },
+      "5km": {
+       "clinicas": 143,
+       "de_aparelho": 19,
+       "da_rede": 2
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.03 km",
+     "proximidade_entre_unidades": {
+      "km": 0.61,
+      "unidade": "OrthoDontic",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+     },
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 241,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 241 clínicas com coordenada, 1 medição"
+     }
+    }
+   ],
+   "clinicas_com_coordenada": 242,
+   "clinicas_sem_coordenada": 0,
+   "raios_declarados_km": [
+    1,
+    2,
+    5
+   ],
    "bairros_medidos": 65,
    "clinicas_medidas": 242,
    "sem_bairro_no_endereco": 1,
@@ -3056,8 +6101,786 @@
    }
   },
   {
+   "praca_id": "florianopolis",
+   "rotulo": "SC · Florianópolis",
+   "territorio": [
+    {
+     "local_id": "ortho_fln_centro",
+     "unidade": "OrthoDontic Centro",
+     "medido": true,
+     "location": {
+      "lat": -27.5954685,
+      "lng": -48.554623899999996
+     },
+     "bairro": "Centro",
+     "clinica_mais_proxima": {
+      "nome": "Consultório Odontologico Dra.Daysa Veiga",
+      "km": 0.12,
+      "avaliacoes": null,
+      "nota": null,
+      "bairro": "Centro"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic Florianópolis - Rua Deodoro, Centro.",
+      "km": 0.3,
+      "avaliacoes": 268,
+      "nota": 5,
+      "bairro": "Centro"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 101,
+       "de_aparelho": 0,
+       "da_rede": 1
+      },
+      "2km": {
+       "clinicas": 114,
+       "de_aparelho": 0,
+       "da_rede": 1
+      },
+      "5km": {
+       "clinicas": 131,
+       "de_aparelho": 0,
+       "da_rede": 1
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.12 km",
+     "proximidade_entre_unidades": {
+      "km": 0.3,
+      "unidade": "OrthoDontic Florianópolis - Rua Deodoro, Centro.",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+     },
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 143,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 143 clínicas com coordenada, 1 medição"
+     }
+    },
+    {
+     "local_id": "ortho_fln_centro_2",
+     "unidade": "OrthoDontic Centro",
+     "medido": true,
+     "location": {
+      "lat": -27.596536,
+      "lng": -48.5518
+     },
+     "bairro": "Centro",
+     "clinica_mais_proxima": {
+      "nome": "Dr. João Pedro Cabral Olivier - Dentista",
+      "km": 0.05,
+      "avaliacoes": 9,
+      "nota": 5,
+      "bairro": "Centro"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic Florianópolis - Rua 7 de Setembro",
+      "km": 0.3,
+      "avaliacoes": 310,
+      "nota": 4.4,
+      "bairro": "Centro"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 102,
+       "de_aparelho": 0,
+       "da_rede": 1
+      },
+      "2km": {
+       "clinicas": 114,
+       "de_aparelho": 0,
+       "da_rede": 1
+      },
+      "5km": {
+       "clinicas": 131,
+       "de_aparelho": 0,
+       "da_rede": 1
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.05 km",
+     "proximidade_entre_unidades": {
+      "km": 0.3,
+      "unidade": "OrthoDontic Florianópolis - Rua 7 de Setembro",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+     },
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 143,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 143 clínicas com coordenada, 1 medição"
+     }
+    },
+    {
+     "local_id": "ortho_fln_ingleses_do_rio_vermel",
+     "unidade": "OrthoDontic Ingleses do Rio Vermelho",
+     "medido": true,
+     "location": {
+      "lat": -27.4378352,
+      "lng": -48.398711999999996
+     },
+     "bairro": "Ingleses do Rio Vermelho",
+     "clinica_mais_proxima": {
+      "nome": "Sorrifácil Ingleses | Implantes Dentários, Prótese Protocolo e Reabilitação Oral",
+      "km": 0.03,
+      "avaliacoes": 582,
+      "nota": 4.8,
+      "bairro": "Ingleses Norte"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic Florianópolis - Rua Deodoro, Centro.",
+      "km": 23.22,
+      "avaliacoes": 268,
+      "nota": 5,
+      "bairro": "Centro"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 9,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "2km": {
+       "clinicas": 9,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "5km": {
+       "clinicas": 9,
+       "de_aparelho": 0,
+       "da_rede": 0
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.03 km",
+     "proximidade_entre_unidades": null,
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 143,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 143 clínicas com coordenada, 1 medição"
+     }
+    }
+   ],
+   "clinicas_com_coordenada": 144,
+   "clinicas_sem_coordenada": 0,
+   "raios_declarados_km": [
+    1,
+    2,
+    5
+   ],
+   "bairros_medidos": 13,
+   "clinicas_medidas": 144,
+   "sem_bairro_no_endereco": 0,
+   "unidades_da_rede": 3,
+   "unidades_localizadas": 3,
+   "onde_estamos": [
+    {
+     "local_id": "ortho_fln_centro",
+     "bairro": "Centro",
+     "unidade": "OrthoDontic Centro"
+    },
+    {
+     "local_id": "ortho_fln_centro_2",
+     "bairro": "Centro",
+     "unidade": "OrthoDontic Centro"
+    },
+    {
+     "local_id": "ortho_fln_ingleses_do_rio_vermel",
+     "bairro": "Ingleses do Rio Vermelho",
+     "unidade": "OrthoDontic Ingleses do Rio Vermelho"
+    }
+   ],
+   "bairros": [
+    {
+     "bairro": "Centro",
+     "clinicas": 115,
+     "avaliacoes_somadas": 18067,
+     "temos_unidade": true,
+     "nossas": [
+      "ortho_fln_centro",
+      "ortho_fln_centro_2"
+     ],
+     "vizinhos_fortes": [
+      {
+       "nome": "Foco X Radiologia Odontológica - Florianópolis",
+       "nota": 4.9,
+       "avaliacoes": 3297
+      },
+      {
+       "nome": "Odontoclinic Florianópolis",
+       "nota": 5,
+       "avaliacoes": 1121
+      },
+      {
+       "nome": "Oral Unic Implantes Florianópolis",
+       "nota": 4.9,
+       "avaliacoes": 915
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "115 clínicas varridas, e a unidade da rede está aqui"
+    },
+    {
+     "bairro": "Trindade",
+     "clinicas": 8,
+     "avaliacoes_somadas": 985,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra. Luiza Guerra | Harmonização Facial | Dentista em Florianópolis",
+       "nota": 5,
+       "avaliacoes": 572
+      },
+      {
+       "nome": "Yours Odontologia Integrada - Florianópolis",
+       "nota": 5,
+       "avaliacoes": 146
+      },
+      {
+       "nome": "Trindade Odontologia - Dentista em Florianópolis",
+       "nota": 4.9,
+       "avaliacoes": 121
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "8 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Ingleses Norte",
+     "clinicas": 6,
+     "avaliacoes_somadas": 1265,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Sorrifácil Ingleses | Implantes Dentários, Prótese Protocolo e Reabilitação Oral",
+       "nota": 4.8,
+       "avaliacoes": 582
+      },
+      {
+       "nome": "Arte Sorriso | Aparelhos ortodônticos | Alinhadores invisíveis | Dentista em Florianópolis",
+       "nota": 5,
+       "avaliacoes": 347
+      },
+      {
+       "nome": "Dentista Ingleses Espaço do Sorriso Odontologia",
+       "nota": 4.8,
+       "avaliacoes": 149
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "6 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Ingleses do Rio Vermelho",
+     "clinicas": 3,
+     "avaliacoes_somadas": 662,
+     "temos_unidade": true,
+     "nossas": [
+      "ortho_fln_ingleses_do_rio_vermel"
+     ],
+     "vizinhos_fortes": [
+      {
+       "nome": "DentePró Ingleses Florianópolis",
+       "nota": 4.5,
+       "avaliacoes": 346
+      },
+      {
+       "nome": "Clinic Odontologia Avançada - Ingleses",
+       "nota": 5,
+       "avaliacoes": 49
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "3 clínicas varridas, e a unidade da rede está aqui"
+    },
+    {
+     "bairro": "Santa Monica",
+     "clinicas": 3,
+     "avaliacoes_somadas": 484,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Bucal Care Odontologia",
+       "nota": 4.8,
+       "avaliacoes": 169
+      },
+      {
+       "nome": "Clinica Thiesen Odontologia",
+       "nota": 4.9,
+       "avaliacoes": 160
+      },
+      {
+       "nome": "Vitaclass Clínica | Dentista, odontopediatra, ortodontista, fonoaudióloga e psicóloga",
+       "nota": 4.9,
+       "avaliacoes": 155
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "3 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Estreito",
+     "clinicas": 2,
+     "avaliacoes_somadas": 123,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odontoclinic Estreito - Florianópolis",
+       "nota": 4,
+       "avaliacoes": 103
+      },
+      {
+       "nome": "Dentista no Estreito Florianopolis - Clínica Vivace Floripa Odontologia Avançada",
+       "nota": 5,
+       "avaliacoes": 20
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Ingleses",
+     "clinicas": 1,
+     "avaliacoes_somadas": 518,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odonto X",
+       "nota": 4.9,
+       "avaliacoes": 518
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Saco dos Limões",
+     "clinicas": 1,
+     "avaliacoes_somadas": 219,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra. Géssika Reis | Dentista em Florianópolis",
+       "nota": 5,
+       "avaliacoes": 219
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Rio Tavares",
+     "clinicas": 1,
+     "avaliacoes_somadas": 134,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra Gabriela Adams | Invisalign e Facetas em Florianópolis",
+       "nota": 5,
+       "avaliacoes": 134
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Córrego Grande",
+     "clinicas": 1,
+     "avaliacoes_somadas": 83,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Córrego Grande Odontologia",
+       "nota": 5,
+       "avaliacoes": 83
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Itacorubi",
+     "clinicas": 1,
+     "avaliacoes_somadas": 57,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Vieira Santos Odontologia - Itacorubi",
+       "nota": 5,
+       "avaliacoes": 57
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Capoeiras",
+     "clinicas": 1,
+     "avaliacoes_somadas": 44,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra Manuela Zasso⎮Ortodontista⎮Invisalign",
+       "nota": 5,
+       "avaliacoes": 44
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "São João do Rio Vermelho",
+     "clinicas": 1,
+     "avaliacoes_somadas": 32,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clinica Odontológica Oral-A",
+       "nota": 4.6,
+       "avaliacoes": 32
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    }
+   ],
+   "bairros_sem_a_rede": [
+    {
+     "bairro": "Trindade",
+     "clinicas": 8,
+     "avaliacoes_somadas": 985,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra. Luiza Guerra | Harmonização Facial | Dentista em Florianópolis",
+       "nota": 5,
+       "avaliacoes": 572
+      },
+      {
+       "nome": "Yours Odontologia Integrada - Florianópolis",
+       "nota": 5,
+       "avaliacoes": 146
+      },
+      {
+       "nome": "Trindade Odontologia - Dentista em Florianópolis",
+       "nota": 4.9,
+       "avaliacoes": 121
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "8 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Ingleses Norte",
+     "clinicas": 6,
+     "avaliacoes_somadas": 1265,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Sorrifácil Ingleses | Implantes Dentários, Prótese Protocolo e Reabilitação Oral",
+       "nota": 4.8,
+       "avaliacoes": 582
+      },
+      {
+       "nome": "Arte Sorriso | Aparelhos ortodônticos | Alinhadores invisíveis | Dentista em Florianópolis",
+       "nota": 5,
+       "avaliacoes": 347
+      },
+      {
+       "nome": "Dentista Ingleses Espaço do Sorriso Odontologia",
+       "nota": 4.8,
+       "avaliacoes": 149
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "6 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Santa Monica",
+     "clinicas": 3,
+     "avaliacoes_somadas": 484,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Bucal Care Odontologia",
+       "nota": 4.8,
+       "avaliacoes": 169
+      },
+      {
+       "nome": "Clinica Thiesen Odontologia",
+       "nota": 4.9,
+       "avaliacoes": 160
+      },
+      {
+       "nome": "Vitaclass Clínica | Dentista, odontopediatra, ortodontista, fonoaudióloga e psicóloga",
+       "nota": 4.9,
+       "avaliacoes": 155
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "3 clínicas varridas, e a rede não está aqui"
+    }
+   ],
+   "manchete": "13 bairros medidos · a rede está em 2 deles",
+   "leitura": "O bairro com mais clínicas é Centro, com 115 clínicas varridas, e a rede está lá.",
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "media",
+    "medido": true,
+    "amostra": 144,
+    "janela_dias": null,
+    "medicoes": 1,
+    "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
+    "procedencia": "medido em 144 clínicas varridas, 1 medição"
+   }
+  },
+  {
    "praca_id": "joinville",
    "rotulo": "SC · Joinville",
+   "territorio": [
+    {
+     "local_id": "ortho_joi_centro",
+     "unidade": "OrthoDontic Centro",
+     "medido": true,
+     "location": {
+      "lat": -26.3028017,
+      "lng": -48.8461606
+     },
+     "bairro": "Centro",
+     "clinica_mais_proxima": {
+      "nome": "Oral Max",
+      "km": 0.05,
+      "avaliacoes": 38,
+      "nota": 4.9,
+      "bairro": "Centro"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic Sorria Sempre",
+      "km": 1.26,
+      "avaliacoes": 377,
+      "nota": 4.3,
+      "bairro": "América"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 56,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "2km": {
+       "clinicas": 92,
+       "de_aparelho": 0,
+       "da_rede": 1
+      },
+      "5km": {
+       "clinicas": 138,
+       "de_aparelho": 0,
+       "da_rede": 1
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.05 km",
+     "proximidade_entre_unidades": {
+      "km": 1.26,
+      "unidade": "OrthoDontic Sorria Sempre",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+     },
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 147,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 147 clínicas com coordenada, 1 medição"
+     }
+    },
+    {
+     "local_id": "ortho_joi_america",
+     "unidade": "OrthoDontic América",
+     "medido": true,
+     "location": {
+      "lat": -26.2921165,
+      "lng": -48.8502161
+     },
+     "bairro": "América",
+     "clinica_mais_proxima": {
+      "nome": "HA Odontologia",
+      "km": 0.29,
+      "avaliacoes": 72,
+      "nota": 4.7,
+      "bairro": "América"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 1.26,
+      "avaliacoes": 513,
+      "nota": 4.6,
+      "bairro": "Centro"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 35,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "2km": {
+       "clinicas": 83,
+       "de_aparelho": 0,
+       "da_rede": 1
+      },
+      "5km": {
+       "clinicas": 136,
+       "de_aparelho": 0,
+       "da_rede": 1
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.29 km",
+     "proximidade_entre_unidades": {
+      "km": 1.26,
+      "unidade": "OrthoDontic",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+     },
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 147,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 147 clínicas com coordenada, 1 medição"
+     }
+    },
+    {
+     "local_id": "ortho_joi_aventureiro",
+     "unidade": "OrthoDontic Aventureiro",
+     "medido": true,
+     "location": {
+      "lat": -26.252177999999997,
+      "lng": -48.8193872
+     },
+     "bairro": "Aventureiro",
+     "clinica_mais_proxima": {
+      "nome": "ODONTOCOT",
+      "km": 0.22,
+      "avaliacoes": 493,
+      "nota": 4.8,
+      "bairro": "Aventureiro"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic Sorria Sempre",
+      "km": 5.4,
+      "avaliacoes": 377,
+      "nota": 4.3,
+      "bairro": "América"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 2,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "2km": {
+       "clinicas": 2,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "5km": {
+       "clinicas": 31,
+       "de_aparelho": 0,
+       "da_rede": 0
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.22 km",
+     "proximidade_entre_unidades": null,
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 147,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 147 clínicas com coordenada, 1 medição"
+     }
+    }
+   ],
+   "clinicas_com_coordenada": 148,
+   "clinicas_sem_coordenada": 0,
+   "raios_declarados_km": [
+    1,
+    2,
+    5
+   ],
    "bairros_medidos": 24,
    "clinicas_medidas": 148,
    "sem_bairro_no_endereco": 0,
@@ -3743,6 +7566,202 @@
   {
    "praca_id": "sorocaba",
    "rotulo": "SP · Sorocaba",
+   "territorio": [
+    {
+     "local_id": "ortho_soro_vila_formosa",
+     "unidade": "OrthoDontic Vila Formosa",
+     "medido": true,
+     "location": {
+      "lat": -23.463836,
+      "lng": -47.478368499999995
+     },
+     "bairro": "Vila Formosa",
+     "clinica_mais_proxima": {
+      "nome": "OdontoCompany Sorocaba - Zona Norte / Implantes e Ortodontia",
+      "km": 0.05,
+      "avaliacoes": 417,
+      "nota": 4.4,
+      "bairro": "Jardim Maria Eugenia"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 4.4,
+      "avaliacoes": 116,
+      "nota": 4.5,
+      "bairro": "Centro"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 4,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "2km": {
+       "clinicas": 9,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "5km": {
+       "clinicas": 78,
+       "de_aparelho": 0,
+       "da_rede": 1
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.05 km",
+     "proximidade_entre_unidades": null,
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 142,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 142 clínicas com coordenada, 1 medição"
+     }
+    },
+    {
+     "local_id": "ortho_soro_centro",
+     "unidade": "OrthoDontic Centro",
+     "medido": true,
+     "location": {
+      "lat": -23.498978500000003,
+      "lng": -47.458619
+     },
+     "bairro": "Centro",
+     "clinica_mais_proxima": {
+      "nome": "Melhor Sorriso Sorocaba",
+      "km": 0.06,
+      "avaliacoes": 46,
+      "nota": 4.5,
+      "bairro": "Centro"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 1.43,
+      "avaliacoes": 111,
+      "nota": 4.3,
+      "bairro": "Jardim Faculdade"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 47,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "2km": {
+       "clinicas": 97,
+       "de_aparelho": 0,
+       "da_rede": 1
+      },
+      "5km": {
+       "clinicas": 132,
+       "de_aparelho": 0,
+       "da_rede": 2
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.06 km",
+     "proximidade_entre_unidades": {
+      "km": 1.43,
+      "unidade": "OrthoDontic",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+     },
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 142,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 142 clínicas com coordenada, 1 medição"
+     }
+    },
+    {
+     "local_id": "ortho_soro_jardim_faculdade",
+     "unidade": "OrthoDontic Jardim Faculdade",
+     "medido": true,
+     "location": {
+      "lat": -23.5113514,
+      "lng": -47.4626071
+     },
+     "bairro": "Jardim Faculdade",
+     "clinica_mais_proxima": {
+      "nome": "Uniodonto",
+      "km": 0.26,
+      "avaliacoes": 368,
+      "nota": 4.7,
+      "bairro": "Jardim Vergueiro"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 1.43,
+      "avaliacoes": 116,
+      "nota": 4.5,
+      "bairro": "Centro"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 51,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "2km": {
+       "clinicas": 98,
+       "de_aparelho": 0,
+       "da_rede": 1
+      },
+      "5km": {
+       "clinicas": 126,
+       "de_aparelho": 0,
+       "da_rede": 1
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.26 km",
+     "proximidade_entre_unidades": {
+      "km": 1.43,
+      "unidade": "OrthoDontic",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+     },
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 142,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 142 clínicas com coordenada, 1 medição"
+     }
+    }
+   ],
+   "clinicas_com_coordenada": 143,
+   "clinicas_sem_coordenada": 0,
+   "raios_declarados_km": [
+    1,
+    2,
+    5
+   ],
    "bairros_medidos": 42,
    "clinicas_medidas": 143,
    "sem_bairro_no_endereco": 0,
@@ -4484,6 +8503,145 @@
   {
    "praca_id": "londrina",
    "rotulo": "PR · Londrina",
+   "territorio": [
+    {
+     "local_id": "ortho_souza_naves",
+     "unidade": "OrthoDontic Souza Naves",
+     "medido": true,
+     "location": {
+      "lat": -23.3246649,
+      "lng": -51.1577616
+     },
+     "bairro": "Ipiranga",
+     "clinica_mais_proxima": {
+      "nome": "Dr. Paulo Rossato",
+      "km": 0.06,
+      "avaliacoes": 38,
+      "nota": 4.9,
+      "bairro": "Ipiranga"
+     },
+     "aparelho_mais_proximo": {
+      "nome": "Odontoclinic Londrina",
+      "km": 0.47,
+      "avaliacoes": 544,
+      "nota": 4.9,
+      "bairro": "Centro"
+     },
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 1.67,
+      "avaliacoes": 76,
+      "nota": 3.8,
+      "bairro": "Centro"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 51,
+       "de_aparelho": 3,
+       "da_rede": 0
+      },
+      "2km": {
+       "clinicas": 107,
+       "de_aparelho": 14,
+       "da_rede": 1
+      },
+      "5km": {
+       "clinicas": 144,
+       "de_aparelho": 21,
+       "da_rede": 1
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.06 km",
+     "proximidade_entre_unidades": null,
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 150,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 150 clínicas com coordenada, 1 medição"
+     }
+    },
+    {
+     "local_id": "ortho_centro_ldn",
+     "unidade": "OrthoDontic Centro",
+     "medido": true,
+     "location": {
+      "lat": -23.309976,
+      "lng": -51.1609699
+     },
+     "bairro": "Centro",
+     "clinica_mais_proxima": {
+      "nome": "STAR CLIN SORRISOS",
+      "km": 0.07,
+      "avaliacoes": 462,
+      "nota": 4.6,
+      "bairro": "Centro"
+     },
+     "aparelho_mais_proximo": {
+      "nome": "STAR CLIN SORRISOS",
+      "km": 0.07,
+      "avaliacoes": 462,
+      "nota": 4.6,
+      "bairro": "Centro"
+     },
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 1.67,
+      "avaliacoes": 566,
+      "nota": 4.6,
+      "bairro": "Ipiranga"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 47,
+       "de_aparelho": 7,
+       "da_rede": 0
+      },
+      "2km": {
+       "clinicas": 99,
+       "de_aparelho": 11,
+       "da_rede": 1
+      },
+      "5km": {
+       "clinicas": 147,
+       "de_aparelho": 21,
+       "da_rede": 1
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.07 km",
+     "proximidade_entre_unidades": null,
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 150,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 150 clínicas com coordenada, 1 medição"
+     }
+    }
+   ],
+   "clinicas_com_coordenada": 151,
+   "clinicas_sem_coordenada": 0,
+   "raios_declarados_km": [
+    1,
+    2,
+    5
+   ],
    "bairros_medidos": 42,
    "clinicas_medidas": 151,
    "sem_bairro_no_endereco": 0,
@@ -5166,8 +9324,951 @@
    }
   },
   {
+   "praca_id": "uberlandia",
+   "rotulo": "MG · Uberlândia",
+   "territorio": [
+    {
+     "local_id": "orthodontic",
+     "unidade": "OrthoDontic",
+     "medido": true,
+     "location": {
+      "lat": -18.9209326,
+      "lng": -48.282353
+     },
+     "bairro": "Centro",
+     "clinica_mais_proxima": {
+      "nome": "Dr. Danilo Cunha - Ortodontista",
+      "km": 0.12,
+      "avaliacoes": 126,
+      "nota": 5,
+      "bairro": "Centro"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 0.54,
+      "avaliacoes": 61,
+      "nota": 4.2,
+      "bairro": "Centro"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 70,
+       "de_aparelho": 0,
+       "da_rede": 1
+      },
+      "2km": {
+       "clinicas": 109,
+       "de_aparelho": 0,
+       "da_rede": 1
+      },
+      "5km": {
+       "clinicas": 155,
+       "de_aparelho": 0,
+       "da_rede": 1
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.12 km",
+     "proximidade_entre_unidades": {
+      "km": 0.54,
+      "unidade": "OrthoDontic",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+     },
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 160,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 160 clínicas com coordenada, 1 medição"
+     }
+    },
+    {
+     "local_id": "orthodontic_centro",
+     "unidade": "OrthoDontic",
+     "medido": true,
+     "location": {
+      "lat": -18.9198549,
+      "lng": -48.277322600000005
+     },
+     "bairro": "Centro",
+     "clinica_mais_proxima": {
+      "nome": "Clínica Odontológica Dentistas do Trabalhador",
+      "km": 0.05,
+      "avaliacoes": 75,
+      "nota": 4.7,
+      "bairro": "Centro"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 0.54,
+      "avaliacoes": 127,
+      "nota": 3.7,
+      "bairro": "Centro"
+     },
+     "raios": {
+      "1km": {
+       "clinicas": 78,
+       "de_aparelho": 0,
+       "da_rede": 1
+      },
+      "2km": {
+       "clinicas": 118,
+       "de_aparelho": 0,
+       "da_rede": 1
+      },
+      "5km": {
+       "clinicas": 156,
+       "de_aparelho": 0,
+       "da_rede": 1
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.05 km",
+     "proximidade_entre_unidades": {
+      "km": 0.54,
+      "unidade": "OrthoDontic",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+     },
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 160,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 160 clínicas com coordenada, 1 medição"
+     }
+    }
+   ],
+   "clinicas_com_coordenada": 161,
+   "clinicas_sem_coordenada": 0,
+   "raios_declarados_km": [
+    1,
+    2,
+    5
+   ],
+   "bairros_medidos": 31,
+   "clinicas_medidas": 161,
+   "sem_bairro_no_endereco": 0,
+   "unidades_da_rede": 2,
+   "unidades_localizadas": 2,
+   "onde_estamos": [
+    {
+     "local_id": "orthodontic",
+     "bairro": "Centro",
+     "unidade": "OrthoDontic"
+    },
+    {
+     "local_id": "orthodontic_centro",
+     "bairro": "Centro",
+     "unidade": "OrthoDontic"
+    }
+   ],
+   "bairros": [
+    {
+     "bairro": "Centro",
+     "clinicas": 59,
+     "avaliacoes_somadas": 5761,
+     "temos_unidade": true,
+     "nossas": [
+      "orthodontic",
+      "orthodontic_centro"
+     ],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clínica Dentista do Povo",
+       "nota": 4.7,
+       "avaliacoes": 694
+      },
+      {
+       "nome": "Sorridents Clínicas Odontológicas Centro Uberlândia",
+       "nota": 4.9,
+       "avaliacoes": 651
+      },
+      {
+       "nome": "Orthopride Uberlândia",
+       "nota": 4.6,
+       "avaliacoes": 278
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "59 clínicas varridas, e a unidade da rede está aqui"
+    },
+    {
+     "bairro": "Nossa Sra. Aparecida",
+     "clinicas": 15,
+     "avaliacoes_somadas": 682,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra. Mariel Paschoal",
+       "nota": 5,
+       "avaliacoes": 184
+      },
+      {
+       "nome": "CIOR Clínica Odontológica | Dentista em Uberlândia",
+       "nota": 4.8,
+       "avaliacoes": 128
+      },
+      {
+       "nome": "Amani Odontologia Clínica Odontológica",
+       "nota": 4.8,
+       "avaliacoes": 107
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "15 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Santa Mônica",
+     "clinicas": 11,
+     "avaliacoes_somadas": 846,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dr. GLEISSON R. A. MARQUES",
+       "nota": 5,
+       "avaliacoes": 324
+      },
+      {
+       "nome": "Oral Sin Implantes Uberlândia",
+       "nota": 5,
+       "avaliacoes": 211
+      },
+      {
+       "nome": "Odonto Bliss / Invisalign e Implantes em Uberlândia",
+       "nota": 5,
+       "avaliacoes": 186
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "11 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Lídice",
+     "clinicas": 11,
+     "avaliacoes_somadas": 448,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra. Juliana Guebara - Implantes e Gengivoplastia - Uberlândia",
+       "nota": 5,
+       "avaliacoes": 138
+      },
+      {
+       "nome": "Cosmos Clínica Odontológica",
+       "nota": 4.7,
+       "avaliacoes": 91
+      },
+      {
+       "nome": "Dr Gustavo Rezende",
+       "nota": 5,
+       "avaliacoes": 78
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "11 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Martins",
+     "clinicas": 7,
+     "avaliacoes_somadas": 1627,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Inove Odontologia e Saúde",
+       "nota": 5,
+       "avaliacoes": 763
+      },
+      {
+       "nome": "Oral Unic",
+       "nota": 4.8,
+       "avaliacoes": 705
+      },
+      {
+       "nome": "Ortodoctor - Unidade Martins Uberlândia",
+       "nota": 4.3,
+       "avaliacoes": 84
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "7 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Osvaldo Rezende",
+     "clinicas": 6,
+     "avaliacoes_somadas": 206,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Inovati Care Odontologia",
+       "nota": 4.9,
+       "avaliacoes": 107
+      },
+      {
+       "nome": "Dra Thayane Simões - Orthoface Odontologia",
+       "nota": 4.8,
+       "avaliacoes": 73
+      },
+      {
+       "nome": "Dra Camilla Costa Almeida",
+       "nota": 5,
+       "avaliacoes": 11
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "6 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Morada da Colina",
+     "clinicas": 5,
+     "avaliacoes_somadas": 382,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Be Clinic Odontologia",
+       "nota": 4.9,
+       "avaliacoes": 333
+      },
+      {
+       "nome": "Vieira Diniz Odontologia",
+       "nota": 5,
+       "avaliacoes": 35
+      },
+      {
+       "nome": "Consultório odontológico Dra Stella Dantas",
+       "nota": 5,
+       "avaliacoes": 8
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "5 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Tabajaras",
+     "clinicas": 5,
+     "avaliacoes_somadas": 277,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dr. Éverton Ribeiro Lelis - Ortodontista",
+       "nota": 5,
+       "avaliacoes": 123
+      },
+      {
+       "nome": "Dra. Amélia M. Vilela",
+       "nota": 5,
+       "avaliacoes": 107
+      },
+      {
+       "nome": "Dra. Letícia B. Qualhato - Dentista em Uberlândia",
+       "nota": 5,
+       "avaliacoes": 24
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "5 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Cidade Jardim",
+     "clinicas": 4,
+     "avaliacoes_somadas": 55,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra. Gyovanna Rizza - Ortodontia e Invisalign Uberlândia",
+       "nota": 5,
+       "avaliacoes": 36
+      },
+      {
+       "nome": "Dra. Thais Lima Cherulli",
+       "nota": 4.7,
+       "avaliacoes": 12
+      },
+      {
+       "nome": "Dra Lidyane Siqueira - Odontologia Uberlândia",
+       "nota": 5,
+       "avaliacoes": 7
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "4 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Brasil",
+     "clinicas": 4,
+     "avaliacoes_somadas": 78,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clínica Odontológica Center Odonto",
+       "nota": 4.4,
+       "avaliacoes": 29
+      },
+      {
+       "nome": "Dentista Prótese | Ronco | Apneia - Uberlândia MG - Dra Merielle Rezende",
+       "nota": 5,
+       "avaliacoes": 28
+      },
+      {
+       "nome": "Franciene Giordani Odontologia",
+       "nota": 5,
+       "avaliacoes": 14
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "4 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Jardim Karaíba",
+     "clinicas": 3,
+     "avaliacoes_somadas": 764,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Primer Odontocenter",
+       "nota": 5,
+       "avaliacoes": 677
+      },
+      {
+       "nome": "Dra. Nívia Higino | Invisalign em Uberlândia",
+       "nota": 5,
+       "avaliacoes": 59
+      },
+      {
+       "nome": "Consultório Dra. Isabella Ferolla - Ortodontia & Invisalign Uberlândia",
+       "nota": 5,
+       "avaliacoes": 28
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "3 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Fundinho",
+     "clinicas": 3,
+     "avaliacoes_somadas": 700,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clínica Gathi Odontologia",
+       "nota": 5,
+       "avaliacoes": 644
+      },
+      {
+       "nome": "Dentista Drª Vania Teles Rocha",
+       "nota": 5,
+       "avaliacoes": 46
+      },
+      {
+       "nome": "Dra Yasmim Souza - Dentista em Uberlândia / alinhadores invisíveis / aparelho fixo",
+       "nota": 5,
+       "avaliacoes": 10
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "3 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Tibery",
+     "clinicas": 3,
+     "avaliacoes_somadas": 283,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "ATKA Clínica Odontológica - Dr. Clébio Domingues no Complexo Center Shopping",
+       "nota": 5,
+       "avaliacoes": 132
+      },
+      {
+       "nome": "Sorria Uberlândia - Unidade Tibery I",
+       "nota": 5,
+       "avaliacoes": 118
+      },
+      {
+       "nome": "Dental Studio-Dra Ana Paula",
+       "nota": 5,
+       "avaliacoes": 33
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "3 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Vigilato Pereira",
+     "clinicas": 3,
+     "avaliacoes_somadas": 105,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra. Flávia Arantes - Especialista em Ortodontia & Invisalign",
+       "nota": 5,
+       "avaliacoes": 87
+      },
+      {
+       "nome": "Perfil Clínica Odontológica",
+       "nota": 4.4,
+       "avaliacoes": 14
+      },
+      {
+       "nome": "Dra. Ludmila Forti Jorge",
+       "nota": 5,
+       "avaliacoes": 4
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "3 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Pres. Roosevelt",
+     "clinicas": 2,
+     "avaliacoes_somadas": 320,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Sorria Roosevelt",
+       "nota": 4.6,
+       "avaliacoes": 276
+      },
+      {
+       "nome": "Consultório Odontológico Constelação 24H",
+       "nota": 4.8,
+       "avaliacoes": 44
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Santa Maria",
+     "clinicas": 2,
+     "avaliacoes_somadas": 439,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Centro Clínico 24h Uniodonto Minas",
+       "nota": 3.9,
+       "avaliacoes": 249
+      },
+      {
+       "nome": "Uniodonto Minas",
+       "nota": 3.5,
+       "avaliacoes": 190
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Saraiva",
+     "clinicas": 2,
+     "avaliacoes_somadas": 379,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Impla Odontologia | Implantes e Clínica Odontológica em Uberlândia",
+       "nota": 4.9,
+       "avaliacoes": 220
+      },
+      {
+       "nome": "Oral Fit Clínica Odontológica",
+       "nota": 4.9,
+       "avaliacoes": 159
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Santa Rosa",
+     "clinicas": 2,
+     "avaliacoes_somadas": 304,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "R&T Odontologia | Dentista em Uberlândia",
+       "nota": 5,
+       "avaliacoes": 201
+      },
+      {
+       "nome": "Clínica Odontológica DentClin | Dentista em Uberlândia - Especialista em Implantes, Aparelhos e Clareamento",
+       "nota": 4.6,
+       "avaliacoes": 103
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Tubalina",
+     "clinicas": 2,
+     "avaliacoes_somadas": 188,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Ortodoctor Uberlândia",
+       "nota": 4.9,
+       "avaliacoes": 129
+      },
+      {
+       "nome": "Pró-Sorriso Clínica Odontológica em Uberlândia",
+       "nota": 4.9,
+       "avaliacoes": 59
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Granada",
+     "clinicas": 1,
+     "avaliacoes_somadas": 463,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Classe A Odontologia Especializada",
+       "nota": 4.8,
+       "avaliacoes": 463
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Luizote de Freitas",
+     "clinicas": 1,
+     "avaliacoes_somadas": 431,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Vivadent - Dentista em Uberlândia",
+       "nota": 4.9,
+       "avaliacoes": 431
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Dona Zulmira",
+     "clinicas": 1,
+     "avaliacoes_somadas": 266,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odontoclinic - Uberlândia - Jardim Patrícia",
+       "nota": 4.9,
+       "avaliacoes": 266
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Planalto",
+     "clinicas": 1,
+     "avaliacoes_somadas": 177,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "OdontoPlan - Odontologia Integrada",
+       "nota": 4.4,
+       "avaliacoes": 177
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Maracanã",
+     "clinicas": 1,
+     "avaliacoes_somadas": 130,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra. Laíza Odontopediatra",
+       "nota": 5,
+       "avaliacoes": 130
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Alvorada",
+     "clinicas": 1,
+     "avaliacoes_somadas": 74,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odontomed | Clínica Odontológica em Alvorada",
+       "nota": 4.9,
+       "avaliacoes": 74
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    }
+   ],
+   "bairros_sem_a_rede": [
+    {
+     "bairro": "Nossa Sra. Aparecida",
+     "clinicas": 15,
+     "avaliacoes_somadas": 682,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra. Mariel Paschoal",
+       "nota": 5,
+       "avaliacoes": 184
+      },
+      {
+       "nome": "CIOR Clínica Odontológica | Dentista em Uberlândia",
+       "nota": 4.8,
+       "avaliacoes": 128
+      },
+      {
+       "nome": "Amani Odontologia Clínica Odontológica",
+       "nota": 4.8,
+       "avaliacoes": 107
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "15 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Santa Mônica",
+     "clinicas": 11,
+     "avaliacoes_somadas": 846,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dr. GLEISSON R. A. MARQUES",
+       "nota": 5,
+       "avaliacoes": 324
+      },
+      {
+       "nome": "Oral Sin Implantes Uberlândia",
+       "nota": 5,
+       "avaliacoes": 211
+      },
+      {
+       "nome": "Odonto Bliss / Invisalign e Implantes em Uberlândia",
+       "nota": 5,
+       "avaliacoes": 186
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "11 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Lídice",
+     "clinicas": 11,
+     "avaliacoes_somadas": 448,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra. Juliana Guebara - Implantes e Gengivoplastia - Uberlândia",
+       "nota": 5,
+       "avaliacoes": 138
+      },
+      {
+       "nome": "Cosmos Clínica Odontológica",
+       "nota": 4.7,
+       "avaliacoes": 91
+      },
+      {
+       "nome": "Dr Gustavo Rezende",
+       "nota": 5,
+       "avaliacoes": 78
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "11 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Martins",
+     "clinicas": 7,
+     "avaliacoes_somadas": 1627,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Inove Odontologia e Saúde",
+       "nota": 5,
+       "avaliacoes": 763
+      },
+      {
+       "nome": "Oral Unic",
+       "nota": 4.8,
+       "avaliacoes": 705
+      },
+      {
+       "nome": "Ortodoctor - Unidade Martins Uberlândia",
+       "nota": 4.3,
+       "avaliacoes": 84
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "7 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Osvaldo Rezende",
+     "clinicas": 6,
+     "avaliacoes_somadas": 206,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Inovati Care Odontologia",
+       "nota": 4.9,
+       "avaliacoes": 107
+      },
+      {
+       "nome": "Dra Thayane Simões - Orthoface Odontologia",
+       "nota": 4.8,
+       "avaliacoes": 73
+      },
+      {
+       "nome": "Dra Camilla Costa Almeida",
+       "nota": 5,
+       "avaliacoes": 11
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "6 clínicas varridas, e a rede não está aqui"
+    }
+   ],
+   "manchete": "31 bairros medidos · a rede está em 1 deles",
+   "leitura": "O bairro com mais clínicas é Centro, com 59 clínicas varridas, e a rede está lá.",
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "media",
+    "medido": true,
+    "amostra": 161,
+    "janela_dias": null,
+    "medicoes": 1,
+    "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
+    "procedencia": "medido em 161 clínicas varridas, 1 medição"
+   }
+  },
+  {
    "praca_id": "contagem",
    "rotulo": "MG · Contagem",
+   "territorio": [
+    {
+     "local_id": "ortho_contagem",
+     "unidade": "OrthoDontic",
+     "medido": true,
+     "location": {
+      "lat": -19.9385171,
+      "lng": -44.0496991
+     },
+     "bairro": "Eldorado",
+     "clinica_mais_proxima": {
+      "nome": "Clínica Odontológica Vital Sorriso",
+      "km": 0.06,
+      "avaliacoes": 33,
+      "nota": 5,
+      "bairro": "Bairro da Glória"
+     },
+     "aparelho_mais_proximo": {
+      "nome": "ODONTO ART DENTISTA 24 HORAS CONTAGEM",
+      "km": 0.07,
+      "avaliacoes": 1727,
+      "nota": 4.8,
+      "bairro": "Bairro da Glória"
+     },
+     "unidade_da_rede_mais_proxima": null,
+     "raios": {
+      "1km": {
+       "clinicas": 54,
+       "de_aparelho": 6,
+       "da_rede": 0
+      },
+      "2km": {
+       "clinicas": 77,
+       "de_aparelho": 9,
+       "da_rede": 0
+      },
+      "5km": {
+       "clinicas": 120,
+       "de_aparelho": 13,
+       "da_rede": 0
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.06 km",
+     "proximidade_entre_unidades": null,
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 134,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 134 clínicas com coordenada, 1 medição"
+     }
+    }
+   ],
+   "clinicas_com_coordenada": 135,
+   "clinicas_sem_coordenada": 0,
+   "raios_declarados_km": [
+    1,
+    2,
+    5
+   ],
    "bairros_medidos": 31,
    "clinicas_medidas": 135,
    "sem_bairro_no_endereco": 0,
@@ -5840,6 +10941,74 @@
   {
    "praca_id": "feira",
    "rotulo": "BA · Feira de Santana",
+   "territorio": [
+    {
+     "local_id": "ortho_fsa",
+     "unidade": "OrthoDontic Feira de Santana",
+     "medido": true,
+     "location": {
+      "lat": -12.2572327,
+      "lng": -38.9662538
+     },
+     "bairro": "Centro",
+     "clinica_mais_proxima": {
+      "nome": "Aparelho Dental - Orthodontic Feira de Santana",
+      "km": 0.0,
+      "avaliacoes": null,
+      "nota": null,
+      "bairro": "Centro"
+     },
+     "aparelho_mais_proximo": {
+      "nome": "Clinica Meu Dente - Senhor dos Passos",
+      "km": 0.17,
+      "avaliacoes": 198,
+      "nota": 4.3,
+      "bairro": "Centro"
+     },
+     "unidade_da_rede_mais_proxima": null,
+     "raios": {
+      "1km": {
+       "clinicas": 73,
+       "de_aparelho": 12,
+       "da_rede": 0
+      },
+      "2km": {
+       "clinicas": 103,
+       "de_aparelho": 15,
+       "da_rede": 0
+      },
+      "5km": {
+       "clinicas": 139,
+       "de_aparelho": 20,
+       "da_rede": 0
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.0 km",
+     "proximidade_entre_unidades": null,
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 142,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 142 clínicas com coordenada, 1 medição"
+     }
+    }
+   ],
+   "clinicas_com_coordenada": 143,
+   "clinicas_sem_coordenada": 0,
+   "raios_declarados_km": [
+    1,
+    2,
+    5
+   ],
    "bairros_medidos": 21,
    "clinicas_medidas": 143,
    "sem_bairro_no_endereco": 2,
@@ -6450,6 +11619,74 @@
   {
    "praca_id": "mafra",
    "rotulo": "SC · Mafra",
+   "territorio": [
+    {
+     "local_id": "ortho_mafra",
+     "unidade": "OrthoDontic Mafra",
+     "medido": true,
+     "location": {
+      "lat": -26.121302,
+      "lng": -49.8056354
+     },
+     "bairro": "Centro II Alto de Mafra",
+     "clinica_mais_proxima": {
+      "nome": "Instituto Lumière - Mafra",
+      "km": 0.07,
+      "avaliacoes": 230,
+      "nota": 5,
+      "bairro": "Centro II Alto de Mafra"
+     },
+     "aparelho_mais_proximo": {
+      "nome": "Instituto Lumière - Mafra",
+      "km": 0.07,
+      "avaliacoes": 230,
+      "nota": 5,
+      "bairro": "Centro II Alto de Mafra"
+     },
+     "unidade_da_rede_mais_proxima": null,
+     "raios": {
+      "1km": {
+       "clinicas": 33,
+       "de_aparelho": 9,
+       "da_rede": 0
+      },
+      "2km": {
+       "clinicas": 58,
+       "de_aparelho": 9,
+       "da_rede": 0
+      },
+      "5km": {
+       "clinicas": 73,
+       "de_aparelho": 11,
+       "da_rede": 0
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.07 km",
+     "proximidade_entre_unidades": null,
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 73,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 73 clínicas com coordenada, 1 medição"
+     }
+    }
+   ],
+   "clinicas_com_coordenada": 74,
+   "clinicas_sem_coordenada": 0,
+   "raios_declarados_km": [
+    1,
+    2,
+    5
+   ],
    "bairros_medidos": 18,
    "clinicas_medidas": 74,
    "sem_bairro_no_endereco": 13,
@@ -6982,6 +12219,74 @@
   {
    "praca_id": "palmas",
    "rotulo": "TO · Palmas",
+   "territorio": [
+    {
+     "local_id": "ortho_palmas",
+     "unidade": "OrthoDontic",
+     "medido": true,
+     "location": {
+      "lat": -10.1837006,
+      "lng": -48.3277262
+     },
+     "bairro": "Plano Diretor Norte",
+     "clinica_mais_proxima": {
+      "nome": "Alinhare Odontologia Integrada",
+      "km": 0.07,
+      "avaliacoes": 5,
+      "nota": 4.8,
+      "bairro": "Plano Diretor Norte"
+     },
+     "aparelho_mais_proximo": {
+      "nome": "DenteClin - Clínicas Odontológicas - JK | Palmas",
+      "km": 0.17,
+      "avaliacoes": 288,
+      "nota": 4.9,
+      "bairro": "Plano Diretor Sul"
+     },
+     "unidade_da_rede_mais_proxima": null,
+     "raios": {
+      "1km": {
+       "clinicas": 34,
+       "de_aparelho": 2,
+       "da_rede": 0
+      },
+      "2km": {
+       "clinicas": 64,
+       "de_aparelho": 6,
+       "da_rede": 0
+      },
+      "5km": {
+       "clinicas": 108,
+       "de_aparelho": 12,
+       "da_rede": 0
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.07 km",
+     "proximidade_entre_unidades": null,
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 132,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 132 clínicas com coordenada, 1 medição"
+     }
+    }
+   ],
+   "clinicas_com_coordenada": 133,
+   "clinicas_sem_coordenada": 0,
+   "raios_declarados_km": [
+    1,
+    2,
+    5
+   ],
    "bairros_medidos": 17,
    "clinicas_medidas": 133,
    "sem_bairro_no_endereco": 4,
@@ -7467,6 +12772,74 @@
   {
    "praca_id": "prudente",
    "rotulo": "SP · Presidente Prudente",
+   "territorio": [
+    {
+     "local_id": "ortho_pp",
+     "unidade": "OrthoDontic Presidente Prudente",
+     "medido": true,
+     "location": {
+      "lat": -22.1218909,
+      "lng": -51.3903289
+     },
+     "bairro": "Centro",
+     "clinica_mais_proxima": {
+      "nome": "Instituto Fernandes Martins Odontologia",
+      "km": 0.13,
+      "avaliacoes": 16,
+      "nota": 4.8,
+      "bairro": "Centro"
+     },
+     "aparelho_mais_proximo": {
+      "nome": "Clínica Oral Vida",
+      "km": 0.21,
+      "avaliacoes": 216,
+      "nota": 5,
+      "bairro": "Centro"
+     },
+     "unidade_da_rede_mais_proxima": null,
+     "raios": {
+      "1km": {
+       "clinicas": 76,
+       "de_aparelho": 13,
+       "da_rede": 0
+      },
+      "2km": {
+       "clinicas": 98,
+       "de_aparelho": 19,
+       "da_rede": 0
+      },
+      "5km": {
+       "clinicas": 114,
+       "de_aparelho": 24,
+       "da_rede": 0
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.13 km",
+     "proximidade_entre_unidades": null,
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 119,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 119 clínicas com coordenada, 1 medição"
+     }
+    }
+   ],
+   "clinicas_com_coordenada": 120,
+   "clinicas_sem_coordenada": 0,
+   "raios_declarados_km": [
+    1,
+    2,
+    5
+   ],
    "bairros_medidos": 46,
    "clinicas_medidas": 120,
    "sem_bairro_no_endereco": 1,
@@ -8184,8 +13557,772 @@
    }
   },
   {
+   "praca_id": "rio_de_janeiro",
+   "rotulo": "RJ · Rio de Janeiro",
+   "territorio": [
+    {
+     "local_id": "orthodontic",
+     "unidade": "OrthoDontic",
+     "medido": true,
+     "location": {
+      "lat": -22.905994,
+      "lng": -43.5602357
+     },
+     "bairro": "Campo Grande",
+     "clinica_mais_proxima": {
+      "nome": "Dra Bianca Moreira | Dentista | Alinhador Invisível | SouSmile | Clareamento | Campo Grande - RJ",
+      "km": 0.07,
+      "avaliacoes": 16,
+      "nota": 5,
+      "bairro": "Campo Grande"
+     },
+     "aparelho_mais_proximo": null,
+     "unidade_da_rede_mais_proxima": null,
+     "raios": {
+      "1km": {
+       "clinicas": 6,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "2km": {
+       "clinicas": 7,
+       "de_aparelho": 0,
+       "da_rede": 0
+      },
+      "5km": {
+       "clinicas": 7,
+       "de_aparelho": 0,
+       "da_rede": 0
+      }
+     },
+     "frase_fato": "a clínica mais próxima está a 0.07 km",
+     "proximidade_entre_unidades": null,
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 184,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+       "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 184 clínicas com coordenada, 1 medição"
+     }
+    }
+   ],
+   "clinicas_com_coordenada": 185,
+   "clinicas_sem_coordenada": 0,
+   "raios_declarados_km": [
+    1,
+    2,
+    5
+   ],
+   "bairros_medidos": 28,
+   "clinicas_medidas": 185,
+   "sem_bairro_no_endereco": 1,
+   "unidades_da_rede": 1,
+   "unidades_localizadas": 1,
+   "onde_estamos": [
+    {
+     "local_id": "orthodontic",
+     "bairro": "Campo Grande",
+     "unidade": "OrthoDontic"
+    }
+   ],
+   "bairros": [
+    {
+     "bairro": "Centro",
+     "clinicas": 75,
+     "avaliacoes_somadas": 6290,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clínica Arcobelo",
+       "nota": 4.9,
+       "avaliacoes": 741
+      },
+      {
+       "nome": "Clínica Data X",
+       "nota": 4.8,
+       "avaliacoes": 716
+      },
+      {
+       "nome": "Penfold Odontologia de Excelência",
+       "nota": 5,
+       "avaliacoes": 504
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "75 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Catete",
+     "clinicas": 18,
+     "avaliacoes_somadas": 1421,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Levy Odontologia - Dentista no Catete",
+       "nota": 5,
+       "avaliacoes": 309
+      },
+      {
+       "nome": "Odontologia Siqueira (Catete)",
+       "nota": 5,
+       "avaliacoes": 213
+      },
+      {
+       "nome": "R7 Implantes Dentários e Prótese Protocolo | Dentista no Catete Rio de Janeiro - RJ",
+       "nota": 5,
+       "avaliacoes": 161
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "18 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Flamengo",
+     "clinicas": 14,
+     "avaliacoes_somadas": 971,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odontopediatra Dra. Joseane Queiroz - RJ",
+       "nota": 5,
+       "avaliacoes": 221
+      },
+      {
+       "nome": "ESPAÇO ORAL ® Dentista Catete Flamengo",
+       "nota": 4.9,
+       "avaliacoes": 191
+      },
+      {
+       "nome": "Odonto Liuzzi | Lentes de Contato Dental | Prótese Protocolo | Ortodontia | Periodontia | Implante Dentário | Dental Tourism",
+       "nota": 4.9,
+       "avaliacoes": 189
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "14 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Tijuca",
+     "clinicas": 12,
+     "avaliacoes_somadas": 2657,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clínica Odontológica Oral 360 Tijuca | Dentista Tijuca | Implantes Dentários",
+       "nota": 4.8,
+       "avaliacoes": 1512
+      },
+      {
+       "nome": "Emergência Dentista 24 horas RJ - Equipe Kruger",
+       "nota": 4.8,
+       "avaliacoes": 342
+      },
+      {
+       "nome": "Dra. Juliana Bendayan I Invisalign I Harmonização Facial Tijuca",
+       "nota": 5,
+       "avaliacoes": 224
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "12 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Barra da Tijuca",
+     "clinicas": 11,
+     "avaliacoes_somadas": 2937,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "IRio Odontologia - Clínica Odontológica na Barra da Tijuca",
+       "nota": 5,
+       "avaliacoes": 1173
+      },
+      {
+       "nome": "Pronto Oral - Emergência Odontológica, Dentista Emergência",
+       "nota": 4.8,
+       "avaliacoes": 455
+      },
+      {
+       "nome": "Odonto 21",
+       "nota": 5,
+       "avaliacoes": 373
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "11 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Campo Grande",
+     "clinicas": 8,
+     "avaliacoes_somadas": 2474,
+     "temos_unidade": true,
+     "nossas": [
+      "orthodontic"
+     ],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odontoclínica Campo Grande",
+       "nota": 4.8,
+       "avaliacoes": 973
+      },
+      {
+       "nome": "OdontoCenter",
+       "nota": 4.1,
+       "avaliacoes": 487
+      },
+      {
+       "nome": "Click Odonto - Campo Grande",
+       "nota": 5,
+       "avaliacoes": 272
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "8 clínicas varridas, e a unidade da rede está aqui"
+    },
+    {
+     "bairro": "Copacabana",
+     "clinicas": 8,
+     "avaliacoes_somadas": 1457,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clínica Odontológica Oral 360 Copacabana | Dentista",
+       "nota": 4.9,
+       "avaliacoes": 624
+      },
+      {
+       "nome": "Clínica Sorrio | Implante Dentário | Dentista de emergência | Clínica odontológica | Copacabana | Rio de Janeiro - RJ",
+       "nota": 4.9,
+       "avaliacoes": 472
+      },
+      {
+       "nome": "Orthopride Copacabana",
+       "nota": 4,
+       "avaliacoes": 197
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "8 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Botafogo",
+     "clinicas": 6,
+     "avaliacoes_somadas": 308,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Prime Dente Botafogo - Clínica Odontológica Implantes, Alinhadores Invisalign em Botafogo RJ",
+       "nota": 4.8,
+       "avaliacoes": 93
+      },
+      {
+       "nome": "Clinica Odontológica Botafogo",
+       "nota": 5,
+       "avaliacoes": 65
+      },
+      {
+       "nome": "🦷RP Odontoclínica - Clínica Odontológica em Botafogo | Dentista | Implante | Clareamento Dental | Alinhador Invisível",
+       "nota": 4.1,
+       "avaliacoes": 55
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "6 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Ipanema",
+     "clinicas": 5,
+     "avaliacoes_somadas": 618,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "SouSmile",
+       "nota": 4.8,
+       "avaliacoes": 316
+      },
+      {
+       "nome": "Guilherme Rothier",
+       "nota": 4.9,
+       "avaliacoes": 121
+      },
+      {
+       "nome": "Dr. Rowan Vilar",
+       "nota": 4.9,
+       "avaliacoes": 110
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "5 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Freguesia (Jacarepaguá)",
+     "clinicas": 4,
+     "avaliacoes_somadas": 386,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra. Thayana Lopes • Odontologia Especializada",
+       "nota": 5,
+       "avaliacoes": 194
+      },
+      {
+       "nome": "Oral Unic Freguesia Jacarepaguá",
+       "nota": 4.9,
+       "avaliacoes": 140
+      },
+      {
+       "nome": "Faustini Odontologia - Dra. Renata Simões e Dr. Breno Faustini",
+       "nota": 5,
+       "avaliacoes": 43
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "4 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Recreio dos Bandeirantes",
+     "clinicas": 4,
+     "avaliacoes_somadas": 227,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Priscilla Coelho - Dentista - Alinhador invisível - Invisalign - Angel- SouSmile - Clareamento -Implante- Recreio",
+       "nota": 5,
+       "avaliacoes": 88
+      },
+      {
+       "nome": "Dra Stephanie Yone - Dentista | Bruxismo | Tratamento de canal | Clareamento Dental | Alinhadores Invisíveis | Recreio",
+       "nota": 5,
+       "avaliacoes": 88
+      },
+      {
+       "nome": "Dentista Manuela Oliveira | Invisalign, Alinhadores e Implantes - Recreio RJ",
+       "nota": 5,
+       "avaliacoes": 36
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "4 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Vila da Penha",
+     "clinicas": 2,
+     "avaliacoes_somadas": 1355,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "ApicalCenter Clinica Odontológica no Rio de Janeiro",
+       "nota": 4.9,
+       "avaliacoes": 785
+      },
+      {
+       "nome": "021 Dental | Dentista Carioca Shopping RJ | Amil Hapvida Metlife Primavida Sulamérica Unimed",
+       "nota": 4.3,
+       "avaliacoes": 570
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Méier",
+     "clinicas": 2,
+     "avaliacoes_somadas": 438,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dentista e Invisalign no Meier - Clinica Odontológica Prime Dente",
+       "nota": 5,
+       "avaliacoes": 386
+      },
+      {
+       "nome": "DENTISTA 24 HORAS ODONTO MÉIER RJ",
+       "nota": 3.3,
+       "avaliacoes": 52
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Cachambi",
+     "clinicas": 2,
+     "avaliacoes_somadas": 229,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Burman Odontologia Dentista | implantes | ortodontia | alinhador invisível | Torre Norte Shopping | cachambi",
+       "nota": 4.5,
+       "avaliacoes": 126
+      },
+      {
+       "nome": "Salim Odontologia | Dentista | Alinhador Invisível | SouSmile | Harmonização Orofacial | Torre Norte Shopping | Cachambi",
+       "nota": 5,
+       "avaliacoes": 103
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Vila Isabel",
+     "clinicas": 1,
+     "avaliacoes_somadas": 619,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "SempreSorrir Odontologia | Implante Dentário | Aparelho Dentário | Vila Isabel | Rio de Janeiro - RJ",
+       "nota": 4.9,
+       "avaliacoes": 619
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Barra Olímpica",
+     "clinicas": 1,
+     "avaliacoes_somadas": 372,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Barra Clínica Odontológica Urgência",
+       "nota": 4.9,
+       "avaliacoes": 372
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Vila Valqueire",
+     "clinicas": 1,
+     "avaliacoes_somadas": 180,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Prórir Clínica Odontológica",
+       "nota": 4.9,
+       "avaliacoes": 180
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Ramos",
+     "clinicas": 1,
+     "avaliacoes_somadas": 158,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Service Odonto Ramos",
+       "nota": 4.8,
+       "avaliacoes": 158
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Taquara",
+     "clinicas": 1,
+     "avaliacoes_somadas": 129,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "You Smile Odontologia Estética | Dentista Taquara RJ",
+       "nota": 4.9,
+       "avaliacoes": 129
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Bangu",
+     "clinicas": 1,
+     "avaliacoes_somadas": 120,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Smart Dentistas",
+       "nota": 4.8,
+       "avaliacoes": 120
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Ilha do Governador",
+     "clinicas": 1,
+     "avaliacoes_somadas": 97,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra. Ponciana Barreto | Dentista | Alinhador Invisível | SouSmile | Ilha do Governador",
+       "nota": 5,
+       "avaliacoes": 97
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Largo Do Machado",
+     "clinicas": 1,
+     "avaliacoes_somadas": 65,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra Sarita Guimarães Ortodontista - Ortodontia e Invisalign em Largo do Machado / RJ",
+       "nota": 5,
+       "avaliacoes": 65
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Leblon",
+     "clinicas": 1,
+     "avaliacoes_somadas": 41,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dr. André Moreira Ortodontia",
+       "nota": 5,
+       "avaliacoes": 41
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Metrô da Carioca",
+     "clinicas": 1,
+     "avaliacoes_somadas": 27,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra. Daiane Paloschi - Cirurgiã Dentista / Especialista em Ronco & Apneia do Sono",
+       "nota": 5,
+       "avaliacoes": 27
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Laranjeiras",
+     "clinicas": 1,
+     "avaliacoes_somadas": 5,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra. Mônica Casimiro Ortodontia Alinhadores Harmonização Facial",
+       "nota": 5,
+       "avaliacoes": 5
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    }
+   ],
+   "bairros_sem_a_rede": [
+    {
+     "bairro": "Centro",
+     "clinicas": 75,
+     "avaliacoes_somadas": 6290,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clínica Arcobelo",
+       "nota": 4.9,
+       "avaliacoes": 741
+      },
+      {
+       "nome": "Clínica Data X",
+       "nota": 4.8,
+       "avaliacoes": 716
+      },
+      {
+       "nome": "Penfold Odontologia de Excelência",
+       "nota": 5,
+       "avaliacoes": 504
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "75 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Catete",
+     "clinicas": 18,
+     "avaliacoes_somadas": 1421,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Levy Odontologia - Dentista no Catete",
+       "nota": 5,
+       "avaliacoes": 309
+      },
+      {
+       "nome": "Odontologia Siqueira (Catete)",
+       "nota": 5,
+       "avaliacoes": 213
+      },
+      {
+       "nome": "R7 Implantes Dentários e Prótese Protocolo | Dentista no Catete Rio de Janeiro - RJ",
+       "nota": 5,
+       "avaliacoes": 161
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "18 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Flamengo",
+     "clinicas": 14,
+     "avaliacoes_somadas": 971,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odontopediatra Dra. Joseane Queiroz - RJ",
+       "nota": 5,
+       "avaliacoes": 221
+      },
+      {
+       "nome": "ESPAÇO ORAL ® Dentista Catete Flamengo",
+       "nota": 4.9,
+       "avaliacoes": 191
+      },
+      {
+       "nome": "Odonto Liuzzi | Lentes de Contato Dental | Prótese Protocolo | Ortodontia | Periodontia | Implante Dentário | Dental Tourism",
+       "nota": 4.9,
+       "avaliacoes": 189
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "14 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Tijuca",
+     "clinicas": 12,
+     "avaliacoes_somadas": 2657,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Clínica Odontológica Oral 360 Tijuca | Dentista Tijuca | Implantes Dentários",
+       "nota": 4.8,
+       "avaliacoes": 1512
+      },
+      {
+       "nome": "Emergência Dentista 24 horas RJ - Equipe Kruger",
+       "nota": 4.8,
+       "avaliacoes": 342
+      },
+      {
+       "nome": "Dra. Juliana Bendayan I Invisalign I Harmonização Facial Tijuca",
+       "nota": 5,
+       "avaliacoes": 224
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "12 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Barra da Tijuca",
+     "clinicas": 11,
+     "avaliacoes_somadas": 2937,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "IRio Odontologia - Clínica Odontológica na Barra da Tijuca",
+       "nota": 5,
+       "avaliacoes": 1173
+      },
+      {
+       "nome": "Pronto Oral - Emergência Odontológica, Dentista Emergência",
+       "nota": 4.8,
+       "avaliacoes": 455
+      },
+      {
+       "nome": "Odonto 21",
+       "nota": 5,
+       "avaliacoes": 373
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "11 clínicas varridas, e a rede não está aqui"
+    }
+   ],
+   "manchete": "28 bairros medidos · a rede está em 1 deles",
+   "leitura": "O bairro com mais clínicas é Centro, com 75 clínicas varridas, e a rede NÃO está lá.",
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "media",
+    "medido": true,
+    "amostra": 185,
+    "janela_dias": null,
+    "medicoes": 1,
+    "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
+    "a_favor": [],
+    "contra": [
+     "1 endereços sem bairro legível"
+    ],
+    "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
+    "procedencia": "medido em 185 clínicas varridas, 1 medição"
+   }
+  },
+  {
    "praca_id": "imperatriz",
    "rotulo": "MA · Imperatriz",
+   "territorio": [],
+   "clinicas_com_coordenada": 116,
+   "clinicas_sem_coordenada": 0,
+   "raios_declarados_km": [
+    1,
+    2,
+    5
+   ],
    "bairros_medidos": 15,
    "clinicas_medidas": 116,
    "sem_bairro_no_endereco": 0,
@@ -8655,6 +14792,14 @@
   {
    "praca_id": "juazeiro_do_norte",
    "rotulo": "CE · Juazeiro do Norte",
+   "territorio": [],
+   "clinicas_com_coordenada": 124,
+   "clinicas_sem_coordenada": 0,
+   "raios_declarados_km": [
+    1,
+    2,
+    5
+   ],
    "bairros_medidos": 18,
    "clinicas_medidas": 124,
    "sem_bairro_no_endereco": 0,
@@ -9187,6 +15332,14 @@
   {
    "praca_id": "macapa",
    "rotulo": "AP · Macapá",
+   "territorio": [],
+   "clinicas_com_coordenada": 135,
+   "clinicas_sem_coordenada": 0,
+   "raios_declarados_km": [
+    1,
+    2,
+    5
+   ],
    "bairros_medidos": 22,
    "clinicas_medidas": 135,
    "sem_bairro_no_endereco": 0,
@@ -9783,6 +15936,14 @@
   {
    "praca_id": "maraba",
    "rotulo": "PA · Marabá",
+   "territorio": [],
+   "clinicas_com_coordenada": 90,
+   "clinicas_sem_coordenada": 0,
+   "raios_declarados_km": [
+    1,
+    2,
+    5
+   ],
    "bairros_medidos": 21,
    "clinicas_medidas": 90,
    "sem_bairro_no_endereco": 0,
@@ -10368,6 +16529,14 @@
   {
    "praca_id": "parauapebas",
    "rotulo": "PA · Parauapebas",
+   "territorio": [],
+   "clinicas_com_coordenada": 93,
+   "clinicas_sem_coordenada": 0,
+   "raios_declarados_km": [
+    1,
+    2,
+    5
+   ],
    "bairros_medidos": 16,
    "clinicas_medidas": 93,
    "sem_bairro_no_endereco": 0,
@@ -10858,6 +17027,14 @@
   {
    "praca_id": "rio_branco",
    "rotulo": "AC · Rio Branco",
+   "territorio": [],
+   "clinicas_com_coordenada": 117,
+   "clinicas_sem_coordenada": 0,
+   "raios_declarados_km": [
+    1,
+    2,
+    5
+   ],
    "bairros_medidos": 35,
    "clinicas_medidas": 117,
    "sem_bairro_no_endereco": 1,

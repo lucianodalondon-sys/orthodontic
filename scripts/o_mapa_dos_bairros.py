@@ -36,7 +36,7 @@ Uso:
     python3 scripts/o_mapa_dos_bairros.py --salvar
     python3 scripts/o_mapa_dos_bairros.py --praca porto_alegre
 """
-import argparse, json, pathlib, re, sys, unicodedata
+import argparse, json, math, pathlib, re, sys, unicodedata
 import datetime as dt
 from collections import defaultdict
 
@@ -88,6 +88,37 @@ def bairro_de(endereco):
     return b
 
 
+# ────────────────────────── distância ──────────────────────────
+#
+# O QUE A DISTÂNCIA É: a linha reta entre dois pinos do Google, em
+# quilômetros. É FATO — sai de duas coordenadas medidas.
+#
+# O QUE ELA NÃO É, e a tela precisa dizer:
+# · não é tempo de deslocamento (rio, morro, viaduto e ônibus não entram);
+# · não é canibalização (duas lojas perto podem atender públicos distintos);
+# · não é área de influência (isso exige origem de paciente, que é dado
+#   interno e este produto não tem).
+#
+# Os raios são declarados e redondos de propósito: 1, 2 e 5 km. Raio
+# "otimizado" sugere precisão que a linha reta não tem.
+RAIOS_KM = (1, 2, 5)
+
+
+def distancia_km(a, b):
+    """Linha reta entre duas coordenadas, em km (Haversine)."""
+    if not a or not b:
+        return None
+    try:
+        lat1, lon1 = math.radians(a["lat"]), math.radians(a["lng"])
+        lat2, lon2 = math.radians(b["lat"]), math.radians(b["lng"])
+    except (KeyError, TypeError):
+        return None
+    dlat, dlon = lat2 - lat1, lon2 - lon1
+    h = (math.sin(dlat/2)**2
+         + math.cos(lat1)*math.cos(lat2)*math.sin(dlon/2)**2)
+    return round(2 * 6371 * math.asin(min(1, math.sqrt(h))), 2)
+
+
 def linhas(nome):
     a = SERIE/f"{nome}.jsonl"
     if not a.exists():
@@ -110,6 +141,15 @@ def main():
     ult = {}
     for r in sorted(linhas("categoria"), key=lambda r: r.get("snapshot_date", "")):
         ult[(r.get("praca_id"), r.get("place_id"))] = r
+
+    # quem disputa APARELHO — a régua do produto vale aqui também:
+    # concentração de dentista não é concentração de rival de ortodontia
+    disputam = set()
+    for pid, pr in ident.items():
+        for l in pr.get("locais", []):
+            prod = (l.get("produto") or {})
+            if prod.get("disputa_aparelho") and l.get("place_id"):
+                disputam.add(l["place_id"])
 
     # onde ESTÃO as nossas unidades (pelo place_id da identidade)
     nossos_place = {}
@@ -170,9 +210,94 @@ def main():
                   if not x["temos_unidade"] and not x["pouca_amostra"]][:5]
         cobertos = [x for x in linhas_b if x["temos_unidade"]]
 
+        # ─────────── O TERRITÓRIO DE CADA UNIDADE ───────────
+        # Bairro é texto; território é geografia. Duas lojas podem estar em
+        # bairros de nome diferente e a 700 metros uma da outra.
+        todas = [c for cs in bairros.values() for c in cs]
+        com_coord = [c for c in todas if (c.get("location") or {}).get("lat")]
+        territorio = []
+        for l in lojas:
+            eu = l.get("location")
+            if not eu:
+                territorio.append({
+                    "local_id": l["local_id"],
+                    "unidade": l.get("unidade") or l.get("nome"),
+                    "medido": False,
+                    "porque": "esta unidade não tem coordenada na varredura",
+                })
+                continue
+            vizinhos = []
+            for c in com_coord:
+                if c.get("place_id") == l.get("place_id"):
+                    continue
+                d = distancia_km(eu, c.get("location"))
+                if d is None:
+                    continue
+                vizinhos.append((d, c))
+            vizinhos.sort(key=lambda x: x[0])
+            e_nosso = lambda c: c.get("place_id") in nossos_place
+            aparelho = lambda c: c.get("place_id") in disputam
+            prox = lambda f: next(({"nome": c.get("nome"), "km": d,
+                                    "avaliacoes": c.get("avaliacoes"),
+                                    "nota": c.get("nota"),
+                                    "bairro": bairro_de(c.get("endereco"))}
+                                   for d, c in vizinhos if f(c)), None)
+            raios = {}
+            for r in RAIOS_KM:
+                dentro = [c for d, c in vizinhos if d <= r]
+                raios[f"{r}km"] = {
+                    "clinicas": len(dentro),
+                    "de_aparelho": sum(1 for c in dentro if aparelho(c)),
+                    "da_rede": sum(1 for c in dentro if e_nosso(c)),
+                }
+            mais_perto_nosso = prox(e_nosso)
+            territorio.append({
+                "local_id": l["local_id"],
+                "unidade": l.get("unidade") or l.get("nome"),
+                "medido": True,
+                "location": eu,
+                "bairro": onde_estamos.get(l["local_id"]),
+                "clinica_mais_proxima": prox(lambda c: True),
+                "aparelho_mais_proximo": prox(aparelho),
+                "unidade_da_rede_mais_proxima": mais_perto_nosso,
+                "raios": raios,
+                # FATO — sai de duas coordenadas medidas
+                "frase_fato": (
+                    f"a clínica mais próxima está a "
+                    f"{prox(lambda c: True)['km']} km"
+                    if prox(lambda c: True) else
+                    "nenhuma outra clínica com coordenada nesta praça"),
+                # INFERÊNCIA — proximidade alta entre unidades da MESMA rede.
+                # Não é canibalização: pode ser cobertura deliberada.
+                "proximidade_entre_unidades": (
+                    {"km": mais_perto_nosso["km"],
+                     "unidade": mais_perto_nosso["nome"],
+                     "leitura": ("alta proximidade entre unidades da rede — "
+                                 "vale entender se atendem públicos "
+                                 "diferentes ou disputam o mesmo"),
+                     "natureza": "inferencia"}
+                    if mais_perto_nosso and mais_perto_nosso["km"] <= 1.5
+                    else None),
+                "confianca": confianca(
+                    "fato",
+                    amostra=len(vizinhos),
+                    unidade_amostra=("clínica com coordenada",
+                                     "clínicas com coordenada"),
+                    medicoes=1,
+                    fonte="dados/serie/categoria.jsonl (location da varredura)",
+                    contra=["distância é linha reta, não tempo de "
+                            "deslocamento"],
+                    o_que_aumentaria="origem real dos pacientes, que é dado "
+                                     "interno e este produto não tem"),
+            })
+
         fora.append({
             "praca_id": p,
             "rotulo": pr.get("rotulo") or pr.get("nome") or p,
+            "territorio": territorio,
+            "clinicas_com_coordenada": len(com_coord),
+            "clinicas_sem_coordenada": len(todas) - len(com_coord),
+            "raios_declarados_km": list(RAIOS_KM),
             "bairros_medidos": len(linhas_b),
             "clinicas_medidas": sum(x["clinicas"] for x in linhas_b),
             "sem_bairro_no_endereco": sem_bairro.get(p, 0),

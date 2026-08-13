@@ -1,640 +1,748 @@
 {
- "praca_id": "cuiaba",
- "nome": "Cuiabá",
- "cidades": [
-  "Cuiabá/MT"
- ],
- "uf": [
-  "MT"
- ],
- "criada_em": "2026-08-08",
- "nota_geografia": "Cuiabá e Várzea Grande são conurbadas, separadas pelo rio Cuiabá, com transporte e mercado de trabalho integrados. Mesma praça, como Mafra. Somadas dão 1.010.797 habitantes — a maior praça da amostra.",
- "ibge": [
-  {
-   "municipio": "Cuiabá",
-   "uf": "MT",
-   "uf_nome": "Mato Grosso",
-   "ibge_id": 5103403,
-   "mesorregiao": "Centro-Sul Mato-grossense",
-   "populacao_estimada": {
-    "ano": "2025",
-    "valor": "691875",
-    "unidade": "Pessoas"
-   },
-   "populacao_censo_2022": {
-    "ano": "2022",
-    "valor": "650877",
-    "unidade": "Pessoas"
-   },
-   "massa_salarial_mil_reais": {
-    "ano": "2023",
-    "valor": "39050753",
-    "unidade": "Mil Reais"
-   },
-   "idades": {
-    "por_faixa": {
-     "0a4": 43647,
-     "5a9": 46681,
-     "10a14": 44306,
-     "15a19": 45271,
-     "20a24": 49212,
-     "25a29": 52286,
-     "30a34": 54411,
-     "35a39": 56378,
-     "40a44": 54982,
-     "45a49": 44522,
-     "50a54": 39634,
-     "55a59": 34066,
-     "60a64": 29223
+  "praca_id": "cuiaba",
+  "nome": "Cuiabá",
+  "cidades": [
+    "Cuiabá/MT"
+  ],
+  "uf": [
+    "MT"
+  ],
+  "criada_em": "2026-08-08",
+  "nota_geografia": "Cuiabá e Várzea Grande são conurbadas, separadas pelo rio Cuiabá, com transporte e mercado de trabalho integrados. Mesma praça, como Mafra. Somadas dão 1.010.797 habitantes — a maior praça da amostra.",
+  "ibge": [
+    {
+      "municipio": "Cuiabá",
+      "uf": "MT",
+      "uf_nome": "Mato Grosso",
+      "ibge_id": 5103403,
+      "mesorregiao": "Centro-Sul Mato-grossense",
+      "populacao_estimada": {
+        "ano": "2025",
+        "valor": "691875",
+        "unidade": "Pessoas"
+      },
+      "populacao_censo_2022": {
+        "ano": "2022",
+        "valor": "650877",
+        "unidade": "Pessoas"
+      },
+      "massa_salarial_mil_reais": {
+        "ano": "2023",
+        "valor": "39050753",
+        "unidade": "Mil Reais"
+      },
+      "idades": {
+        "por_faixa": {
+          "0a4": 43647,
+          "5a9": 46681,
+          "10a14": 44306,
+          "15a19": 45271,
+          "20a24": 49212,
+          "25a29": 52286,
+          "30a34": 54411,
+          "35a39": 56378,
+          "40a44": 54982,
+          "45a49": 44522,
+          "50a54": 39634,
+          "55a59": 34066,
+          "60a64": 29223
+        },
+        "alvo_9_15": 62696,
+        "alvo_30_45": 165771
+      }
     },
-    "alvo_9_15": 62696,
-    "alvo_30_45": 165771
-   }
-  },
-  {
-   "municipio": "Várzea Grande",
-   "uf": "MT",
-   "uf_nome": "Mato Grosso",
-   "ibge_id": 5108402,
-   "mesorregiao": "Centro-Sul Mato-grossense",
-   "populacao_estimada": {
-    "ano": "2025",
-    "valor": "318922",
-    "unidade": "Pessoas"
-   },
-   "populacao_censo_2022": {
-    "ano": "2022",
-    "valor": "300078",
-    "unidade": "Pessoas"
-   },
-   "massa_salarial_mil_reais": {
-    "ano": "2023",
-    "valor": "13984218",
-    "unidade": "Mil Reais"
-   },
-   "idades": {
-    "por_faixa": {
-     "0a4": 23069,
-     "5a9": 23934,
-     "10a14": 21813,
-     "15a19": 22626,
-     "20a24": 23551,
-     "25a29": 24427,
-     "30a34": 24768,
-     "35a39": 25102,
-     "40a44": 24561,
-     "45a49": 20411,
-     "50a54": 17489,
-     "55a59": 14583,
-     "60a64": 11650
+    {
+      "municipio": "Várzea Grande",
+      "uf": "MT",
+      "uf_nome": "Mato Grosso",
+      "ibge_id": 5108402,
+      "mesorregiao": "Centro-Sul Mato-grossense",
+      "populacao_estimada": {
+        "ano": "2025",
+        "valor": "318922",
+        "unidade": "Pessoas"
+      },
+      "populacao_censo_2022": {
+        "ano": "2022",
+        "valor": "300078",
+        "unidade": "Pessoas"
+      },
+      "massa_salarial_mil_reais": {
+        "ano": "2023",
+        "valor": "13984218",
+        "unidade": "Mil Reais"
+      },
+      "idades": {
+        "por_faixa": {
+          "0a4": 23069,
+          "5a9": 23934,
+          "10a14": 21813,
+          "15a19": 22626,
+          "20a24": 23551,
+          "25a29": 24427,
+          "30a34": 24768,
+          "35a39": 25102,
+          "40a44": 24561,
+          "45a49": 20411,
+          "50a54": 17489,
+          "55a59": 14583,
+          "60a64": 11650
+        },
+        "alvo_9_15": 31125,
+        "alvo_30_45": 74431
+      }
+    }
+  ],
+  "por_que_esta_praca": "Preenche quatro buracos de uma vez: Centro-Oeste, capital, praça com mais de um milhão, e — o mais importante — a primeira unidade da amostra que está GANHANDO. E traz três unidades da mesma marca na mesma cidade, o que controla mercado, preço e marca de uma vez só.",
+  "locais": [
+    {
+      "place_id": "ChIJl5fnBxOxnZMREz0LjheHYX8",
+      "nome": "OrthoDontic Cuiabá Centro Norte",
+      "cidade": "Cuiabá",
+      "endereco": "R. Barão de Melgaço, 3429 - Centro Norte, Cuiabá - MT, 78005-300, Brasil",
+      "categoria": "Dentista",
+      "avaliacoes": 1222,
+      "nota": 5,
+      "ritmo_mes": 45.6,
+      "responde_pct": 0,
+      "local_id": "ortho_cba_centro_norte",
+      "papel": "proprio",
+      "codigo_unidade": 478,
+      "tipo": "franquia",
+      "location": {
+        "lat": -15.597351799999998,
+        "lng": -56.097935299999996
+      }
     },
-    "alvo_9_15": 31125,
-    "alvo_30_45": 74431
-   }
-  }
- ],
- "por_que_esta_praca": "Preenche quatro buracos de uma vez: Centro-Oeste, capital, praça com mais de um milhão, e — o mais importante — a primeira unidade da amostra que está GANHANDO. E traz três unidades da mesma marca na mesma cidade, o que controla mercado, preço e marca de uma vez só.",
- "locais": [
-  {
-   "place_id": "ChIJl5fnBxOxnZMREz0LjheHYX8",
-   "nome": "OrthoDontic Cuiabá Centro Norte",
-   "cidade": "Cuiabá",
-   "endereco": "R. Barão de Melgaço, 3429 - Centro Norte, Cuiabá - MT, 78005-300, Brasil",
-   "categoria": "Dentista",
-   "avaliacoes": 1222,
-   "nota": 5,
-   "ritmo_mes": 45.6,
-   "responde_pct": 0,
-   "local_id": "ortho_cba_centro_norte",
-   "papel": "proprio",
-   "codigo_unidade": 478,
-   "tipo": "franquia"
-  },
-  {
-   "place_id": "ChIJ01-tKGuxnZMRCpDuAPr87jI",
-   "nome": "OrthoDontic Cuiabá Fernando Corrêa",
-   "cidade": "Cuiabá",
-   "endereco": "Av. Fernando Corrêa da Costa, 1476 - Pico do Amor, Cuiabá - MT, 78065-000, Brasil",
-   "categoria": "Dentista",
-   "avaliacoes": 78,
-   "nota": 4.9,
-   "ritmo_mes": 3.7,
-   "responde_pct": 0,
-   "local_id": "ortho_cba_fernando_correa",
-   "papel": "proprio",
-   "codigo_unidade": 490,
-   "tipo": "franquia"
-  },
-  {
-   "place_id": "ChIJcX9Xl5KxnZMRg5aHXnxTyV4",
-   "nome": "OrthoDontic Cuiabá Dom Bosco (Centro Sul)",
-   "cidade": "Cuiabá",
-   "endereco": "Av. Dom Bosco, 930 - Centro Sul, Cuiabá - MT, 78020-050, Brasil",
-   "categoria": "Dentista",
-   "avaliacoes": 71,
-   "nota": 4.9,
-   "ritmo_mes": 0.7,
-   "responde_pct": 0,
-   "local_id": "ortho_cba_dom_bosco",
-   "papel": "proprio",
-   "codigo_unidade": 151,
-   "tipo": "franquia"
-  },
-  {
-   "place_id": "ChIJnSIud5OxnZMREC7mF4Sf3HM",
-   "nome": "ODONTO MEDICINA 🦷",
-   "cidade": "Cuiabá",
-   "endereco": "Av. Isaac Póvoas, 254 - Centro Norte, Cuiabá - MT, 78005-340, Brasil",
-   "categoria": "Dentista",
-   "avaliacoes": 1451,
-   "nota": 5,
-   "ritmo_mes": 27.1,
-   "responde_pct": 3,
-   "local_id": "odonto_medicina",
-   "papel": "concorrente",
-   "tipo_concorrente": "PREENCHER",
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de odontologia geral: só 3 de 579 avaliações citam aparelho",
-    "menciona_aparelho": 3,
-    "avaliacoes_com_texto": 579
-   }
-  },
-  {
-   "place_id": "ChIJWYxZu9GtnZMRnufDc8_YZX4",
-   "nome": "Clínica Prime Odontologia Integrada",
-   "cidade": "Várzea Grande",
-   "endereco": "Av. Presidente Artur Bernardes, 855 - Sl 5 e 6 - Jardim Aeroporto, Várzea Grande - MT, 78125-185, Brasil",
-   "categoria": "Dentista",
-   "avaliacoes": 362,
-   "nota": 5,
-   "ritmo_mes": 25.2,
-   "responde_pct": 100,
-   "local_id": "clinica_prime_odontologia_in",
-   "papel": "concorrente",
-   "tipo_concorrente": "PREENCHER",
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de odontologia geral: só 2 de 283 avaliações citam aparelho",
-    "menciona_aparelho": 2,
-    "avaliacoes_com_texto": 283
-   }
-  },
-  {
-   "place_id": "ChIJY6y3W5CxnZMR2dQevFq0cfg",
-   "nome": "Clínica Goya",
-   "cidade": "Cuiabá",
-   "endereco": "R. Cândido Mariano, 909 - Centro Norte, Cuiabá - MT, 78043-415, Brasil",
-   "categoria": "Dentista",
-   "avaliacoes": 1352,
-   "nota": 5,
-   "ritmo_mes": 23.9,
-   "responde_pct": 0,
-   "local_id": "clinica_goya",
-   "papel": "concorrente",
-   "tipo_concorrente": "PREENCHER",
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de odontologia geral: só 1 de 366 avaliações citam aparelho",
-    "menciona_aparelho": 1,
-    "avaliacoes_com_texto": 366
-   }
-  },
-  {
-   "place_id": "ChIJ5TKg3GKxnZMRPYaNrQYhVSk",
-   "nome": "Aube Odontologia Jardim Itália - Cuiabá",
-   "cidade": "Cuiabá",
-   "endereco": "Av. Gov. Dante Martins de Oliveira, n° 1295 - Jardim Leblon, Cuiabá - MT, 78060-003, Brasil",
-   "categoria": "Clínica odontológica",
-   "avaliacoes": 199,
-   "nota": 4.9,
-   "ritmo_mes": 10.5,
-   "responde_pct": 0,
-   "local_id": "aube_odontologia_jardim_ital",
-   "papel": "concorrente",
-   "tipo_concorrente": "PREENCHER",
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de odontologia geral: só 3 de 128 avaliações citam aparelho",
-    "menciona_aparelho": 3,
-    "avaliacoes_com_texto": 128
-   }
-  },
-  {
-   "place_id": "ChIJAQAAAK2xnZMR1-vVd4wlZqU",
-   "nome": "Clínica Odontológica Betoni Odontologia | Implantes | Ortodontia | Próteses | Dentistas em Cuiabá",
-   "cidade": "Cuiabá",
-   "endereco": "Av. Historiador Rubens de Mendonça, 1894 - Jardim Aclimacao, Cuiabá - MT, 78050-000, Brasil",
-   "categoria": "Clínica odontológica",
-   "avaliacoes": 1117,
-   "nota": 4.9,
-   "ritmo_mes": 9.4,
-   "responde_pct": 1,
-   "local_id": "clinica_odontologica_betoni_",
-   "papel": "concorrente",
-   "tipo_concorrente": "PREENCHER",
-   "produto": {
-    "disputa_aparelho": "sim",
-    "porque": "o nome declara aparelho/ortodontia",
-    "menciona_aparelho": 1,
-    "avaliacoes_com_texto": 107
-   }
-  },
-  {
-   "place_id": "ChIJvTkutOuxnZMRDK6mquo5a_c",
-   "nome": "Open Odonto",
-   "cidade": "Cuiabá",
-   "endereco": "Edifício Cuiabá Office - Av. Historiador Rubens de Mendonça, 1856 - Tower, Térreo - Bosque da Saude, Cuiabá - MT, 78050-000, Brasil",
-   "categoria": "Clínica odontológica",
-   "avaliacoes": 250,
-   "nota": 4.9,
-   "ritmo_mes": 6.6,
-   "responde_pct": 95,
-   "local_id": "open_odonto",
-   "papel": "concorrente",
-   "tipo_concorrente": "PREENCHER",
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de odontologia geral: só 1 de 121 avaliações citam aparelho",
-    "menciona_aparelho": 1,
-    "avaliacoes_com_texto": 121
-   }
-  },
-  {
-   "place_id": "ChIJgS3RBSKxnZMRCGYoZ4DmWYY",
-   "nome": "Dentista em Cuiabá - Dra Mariana Lima Pereira",
-   "cidade": "Cuiabá",
-   "endereco": "R. Topázio, 136 - Bosque da Saude, Cuiabá - MT, 78050-080, Brasil",
-   "categoria": "Dentista",
-   "avaliacoes": 189,
-   "nota": 5,
-   "ritmo_mes": 5.9,
-   "responde_pct": 83,
-   "local_id": "dentista_em_cuiaba_dra_maria",
-   "papel": "concorrente",
-   "tipo_concorrente": "PREENCHER",
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de implante: só 0 de 138 avaliações citam aparelho",
-    "menciona_aparelho": 0,
-    "avaliacoes_com_texto": 138
-   }
-  },
-  {
-   "place_id": "ChIJR-3jQ7SxnZMR9xjkmazw6HU",
-   "nome": "Sorrize Clínicas Odontológicas | Dentista CPA IV",
-   "cidade": "Cuiabá",
-   "endereco": "Av Tuiuiú, 9 - Cpa IV, Cuiabá - MT, 78056-812, Brasil",
-   "categoria": "Clínica odontológica",
-   "avaliacoes": 283,
-   "nota": 5,
-   "ritmo_mes": 4.9,
-   "responde_pct": 0,
-   "local_id": "sorrize_clinicas_odontologic",
-   "papel": "concorrente",
-   "tipo_concorrente": "PREENCHER",
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de odontologia geral: só 1 de 96 avaliações citam aparelho",
-    "menciona_aparelho": 1,
-    "avaliacoes_com_texto": 96
-   }
-  },
-  {
-   "place_id": "ChIJK1TqXLSxnZMRs23J3ZVjGNc",
-   "nome": "Clínica Sorritá",
-   "cidade": "Cuiabá",
-   "endereco": "Av. Gov. Dante Martins de Oliveira, 376 - Santo Antonio do Pedregal, Cuiabá - MT, 78060-287, Brasil",
-   "categoria": "Clínica odontológica",
-   "avaliacoes": 389,
-   "nota": 5,
-   "ritmo_mes": 4.5,
-   "responde_pct": 48,
-   "local_id": "clinica_sorrita",
-   "papel": "concorrente",
-   "tipo_concorrente": "PREENCHER",
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de implante: só 0 de 92 avaliações citam aparelho",
-    "menciona_aparelho": 0,
-    "avaliacoes_com_texto": 92
-   }
-  },
-  {
-   "place_id": "ChIJpfHRfeuxnZMRTDyDdNGvIPE",
-   "nome": "Sorridents Centro Norte",
-   "cidade": "Cuiabá",
-   "endereco": "Av. Generoso Ponce, 162 - Centro Norte, Cuiabá - MT, 78005-430, Brasil",
-   "categoria": "Clínica odontológica",
-   "avaliacoes": 263,
-   "nota": 4.9,
-   "ritmo_mes": 3.6,
-   "responde_pct": 15,
-   "local_id": "sorridents_centro_norte",
-   "papel": "concorrente",
-   "tipo_concorrente": "PREENCHER",
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de implante: só 0 de 129 avaliações citam aparelho",
-    "menciona_aparelho": 0,
-    "avaliacoes_com_texto": 129
-   }
-  },
-  {
-   "place_id": "ChIJTwrqC2WxnZMR8hVQBzrL7FI",
-   "nome": "Dentista em Cuiabá MT | Myrelief | Clínica Odontológica | Implante Dentário | Faceta dentária",
-   "cidade": "Cuiabá",
-   "endereco": "Galeria Estação Alvorada - R. Miranda Reis, 529 - Poção, Cuiabá - MT, 78015-640, Brasil",
-   "categoria": "Clínica odontológica",
-   "avaliacoes": 222,
-   "nota": 5,
-   "ritmo_mes": 2.7,
-   "responde_pct": 52,
-   "local_id": "dentista_em_cuiaba_mt_myreli",
-   "papel": "concorrente",
-   "tipo_concorrente": "PREENCHER",
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de implante: só 1 de 99 avaliações citam aparelho",
-    "menciona_aparelho": 1,
-    "avaliacoes_com_texto": 99
-   }
-  },
-  {
-   "local_id": "clinica_ligie_saude_acupun",
-   "papel": "concorrente",
-   "nome": "Clínica Ligie - Saúde, Acupuntura e Odontologia",
-   "tipo_concorrente": "PREENCHER",
-   "place_id": "ChIJt21QfJSxnZMRYzPO15z4dL0",
-   "descoberto_em": "2026-08-08",
-   "descoberto_por": "varredura google places (2º escalão)",
-   "avaliacoes_google": 170,
-   "nota_google": 5,
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de implante: só 0 de 61 avaliações citam aparelho",
-    "menciona_aparelho": 0,
-    "avaliacoes_com_texto": 61
-   }
-  },
-  {
-   "local_id": "ortho_b",
-   "papel": "concorrente",
-   "nome": "Ortho.b",
-   "tipo_concorrente": "PREENCHER",
-   "place_id": "ChIJ37EKTTStnZMRNFCnrZwX2Q0",
-   "descoberto_em": "2026-08-08",
-   "descoberto_por": "varredura google places (2º escalão)",
-   "avaliacoes_google": 182,
-   "nota_google": 4.9,
-   "produto": {
-    "disputa_aparelho": "sim",
-    "porque": "o nome declara aparelho/ortodontia",
-    "menciona_aparelho": 2,
-    "avaliacoes_com_texto": 128
-   }
-  },
-  {
-   "local_id": "coife_clinica_odontologica",
-   "papel": "concorrente",
-   "nome": "COIFE Clinica Odontológica",
-   "tipo_concorrente": "PREENCHER",
-   "place_id": "ChIJccvYTZWtnZMRcJDg7zWyyro",
-   "descoberto_em": "2026-08-08",
-   "descoberto_por": "varredura google places (2º escalão)",
-   "avaliacoes_google": 171,
-   "nota_google": 4.6,
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de implante: só 0 de 75 avaliações citam aparelho",
-    "menciona_aparelho": 0,
-    "avaliacoes_com_texto": 75
-   }
-  },
-  {
-   "local_id": "imo_odonto_cuiaba",
-   "papel": "concorrente",
-   "nome": "IMO Odonto - Cuiabá",
-   "tipo_concorrente": "PREENCHER",
-   "place_id": "ChIJMZiLwimxnZMR_m-eLSuXozQ",
-   "descoberto_em": "2026-08-08",
-   "descoberto_por": "varredura google places (2º escalão)",
-   "avaliacoes_google": 175,
-   "nota_google": 4.8,
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de implante: só 0 de 69 avaliações citam aparelho",
-    "menciona_aparelho": 0,
-    "avaliacoes_com_texto": 69
-   }
-  },
-  {
-   "local_id": "dra_caroline_amorim_odonto",
-   "papel": "concorrente",
-   "nome": "Dra Caroline Amorim-Odontopediatria e Ortopedia Funcional em Cuiabá-Dentista infantil-Aparelho infantil-Aparelho de criança",
-   "tipo_concorrente": "PREENCHER",
-   "place_id": "ChIJLb94C1-xnZMRzvD1C3h_FGA",
-   "descoberto_em": "2026-08-08",
-   "descoberto_por": "varredura google places (2º escalão)",
-   "avaliacoes_google": 153,
-   "nota_google": 5,
-   "produto": {
-    "disputa_aparelho": "sim",
-    "porque": "o nome declara aparelho/ortodontia",
-    "menciona_aparelho": 1,
-    "avaliacoes_com_texto": 90
-   }
-  },
-  {
-   "local_id": "odonto_light",
-   "papel": "concorrente",
-   "nome": "Odonto Light",
-   "tipo_concorrente": "PREENCHER",
-   "place_id": "ChIJg2whaLaxnZMR-E8VlrrahCM",
-   "descoberto_em": "2026-08-08",
-   "descoberto_por": "varredura google places (2º escalão)",
-   "avaliacoes_google": 164,
-   "nota_google": 4.8,
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de odontologia geral: só 0 de 53 avaliações citam aparelho",
-    "menciona_aparelho": 0,
-    "avaliacoes_com_texto": 53
-   }
-  },
-  {
-   "local_id": "centro_odontologico_person",
-   "papel": "concorrente",
-   "nome": "Centro odontológico Personal",
-   "tipo_concorrente": "PREENCHER",
-   "place_id": "ChIJCzT_DSiunZMRkRAKP6bnuVQ",
-   "descoberto_em": "2026-08-08",
-   "descoberto_por": "varredura google places (2º escalão)",
-   "avaliacoes_google": 147,
-   "nota_google": 3.7,
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de odontologia geral: só 1 de 91 avaliações citam aparelho",
-    "menciona_aparelho": 1,
-    "avaliacoes_com_texto": 91
-   }
-  },
-  {
-   "local_id": "clinica_midori_odontologia",
-   "papel": "concorrente",
-   "nome": "Clinica Midori Odontologia",
-   "tipo_concorrente": "PREENCHER",
-   "place_id": "ChIJr5-2EZKxnZMRxtjPt4Aa0BI",
-   "descoberto_em": "2026-08-08",
-   "descoberto_por": "varredura google places (2º escalão)",
-   "avaliacoes_google": 136,
-   "nota_google": 5,
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de implante: só 0 de 86 avaliações citam aparelho",
-    "menciona_aparelho": 0,
-    "avaliacoes_com_texto": 86
-   }
-  },
-  {
-   "local_id": "clinica_odontologica_total",
-   "papel": "concorrente",
-   "nome": "Clínica Odontológica Totality",
-   "tipo_concorrente": "PREENCHER",
-   "place_id": "ChIJ-ensanKunZMRWiy5kKXITU0",
-   "descoberto_em": "2026-08-08",
-   "descoberto_por": "varredura google places (2º escalão)",
-   "avaliacoes_google": 148,
-   "nota_google": 4.8,
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de odontologia geral: só 0 de 50 avaliações citam aparelho",
-    "menciona_aparelho": 0,
-    "avaliacoes_com_texto": 50
-   }
-  },
-  {
-   "local_id": "enleva_odontologia_integra",
-   "papel": "concorrente",
-   "nome": "Enleva Odontologia Integrada",
-   "tipo_concorrente": "PREENCHER",
-   "place_id": "ChIJT3mSKe6xnZMREM6V2fuftbM",
-   "descoberto_em": "2026-08-08",
-   "descoberto_por": "varredura google places (2º escalão)",
-   "avaliacoes_google": 796,
-   "nota_google": 5,
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de implante: só 0 de 290 avaliações citam aparelho",
-    "menciona_aparelho": 0,
-    "avaliacoes_com_texto": 290
-   }
-  },
-  {
-   "local_id": "odontologia_prado",
-   "papel": "concorrente",
-   "nome": "Odontologia Prado",
-   "tipo_concorrente": "PREENCHER",
-   "place_id": "ChIJp21EUrqxnZMR1OMXUXewANU",
-   "descoberto_em": "2026-08-08",
-   "descoberto_por": "varredura google places (2º escalão)",
-   "avaliacoes_google": 499,
-   "nota_google": 4.7,
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de odontologia geral: só 9 de 361 avaliações citam aparelho",
-    "menciona_aparelho": 9,
-    "avaliacoes_com_texto": 361
-   }
-  },
-  {
-   "local_id": "iodonto_centro_miranda_rei",
-   "papel": "concorrente",
-   "nome": "IODONTO CENTRO - MIRANDA REIS",
-   "tipo_concorrente": "PREENCHER",
-   "place_id": "ChIJs1CmSUyxnZMReYLDejD67bA",
-   "descoberto_em": "2026-08-08",
-   "descoberto_por": "varredura google places (2º escalão)",
-   "avaliacoes_google": 778,
-   "nota_google": 4.9,
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de odontologia geral: só 3 de 213 avaliações citam aparelho",
-    "menciona_aparelho": 3,
-    "avaliacoes_com_texto": 213
-   }
-  },
-  {
-   "local_id": "guanabara_odontologia_dra_",
-   "papel": "concorrente",
-   "nome": "Guanabara Odontologia- Dra Ana Carolina Ribeiro",
-   "tipo_concorrente": "PREENCHER",
-   "place_id": "ChIJST6pUc-xnZMRR8VvTT7uNjY",
-   "descoberto_em": "2026-08-08",
-   "descoberto_por": "varredura google places (2º escalão)",
-   "avaliacoes_google": 335,
-   "nota_google": 5,
-   "produto": {
-    "disputa_aparelho": "sem_evidencia",
-    "porque": "zona cinzenta: 3 de 79 avaliações citam aparelho (4%) — faz aparelho, mas não é o negócio principal",
-    "menciona_aparelho": 3,
-    "avaliacoes_com_texto": 79
-   }
-  }
- ],
- "rotulo": "MT · Cuiabá",
- "cidades_rotulo": [
-  "MT · Cuiabá"
- ],
- "vizinhos": [
-  {
-   "place_id": "ChIJw5GGvOmtnZMREVt1LELUQHw",
-   "nome": "REDEORTO Várzea Grande",
-   "cidade": "Várzea Grande/MT",
-   "endereco": "R. Salim Nadaf, 525 - Centro Norte, Várzea Grande - MT, 78110-430, Brasil",
-   "categoria": "Clínica odontológica",
-   "avaliacoes": 290,
-   "nota": 4.8,
-   "ritmo_mes": 36.8,
-   "responde_pct": 1,
-   "local_id": "redeorto_varzea_grande",
-   "papel": "concorrente",
-   "tipo_concorrente": "PREENCHER",
-   "produto": {
-    "disputa_aparelho": "sim",
-    "porque": "o nome declara aparelho/ortodontia",
-    "menciona_aparelho": 7,
-    "avaliacoes_com_texto": 226
-   }
-  },
-  {
-   "local_id": "amorsaude_varzea_grande",
-   "papel": "concorrente",
-   "nome": "AmorSaúde Várzea Grande",
-   "tipo_concorrente": "PREENCHER",
-   "place_id": "ChIJn2qhljqtnZMR2X_ExrCxOKc",
-   "descoberto_em": "2026-08-08",
-   "descoberto_por": "varredura google places (2º escalão)",
-   "avaliacoes_google": 160,
-   "nota_google": 2.5,
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de odontologia geral: só 0 de 82 avaliações citam aparelho",
-    "menciona_aparelho": 0,
-    "avaliacoes_com_texto": 82
-   },
-   "cidade": "Várzea Grande/MT"
-  }
- ],
- "vizinhas_medidas": [
-  {
-   "rotulo": "MT · Várzea Grande",
-   "por_que": "cidade conurbada com Cuiabá; medida porque disputa atenção na região, mas praça não mistura cidade — os locais de lá ficam em `vizinhos` e fora de toda conta da praça",
-   "concorrentes_medidos": [
-    "REDEORTO Várzea Grande",
-    "AmorSaúde Várzea Grande"
-   ],
-   "se_abrir_unidade_la": "vira praça própria (praca_id varzea_grande); esta praça não muda"
-  }
- ]
+    {
+      "place_id": "ChIJ01-tKGuxnZMRCpDuAPr87jI",
+      "nome": "OrthoDontic Cuiabá Fernando Corrêa",
+      "cidade": "Cuiabá",
+      "endereco": "Av. Fernando Corrêa da Costa, 1476 - Pico do Amor, Cuiabá - MT, 78065-000, Brasil",
+      "categoria": "Dentista",
+      "avaliacoes": 78,
+      "nota": 4.9,
+      "ritmo_mes": 3.7,
+      "responde_pct": 0,
+      "local_id": "ortho_cba_fernando_correa",
+      "papel": "proprio",
+      "codigo_unidade": 490,
+      "tipo": "franquia",
+      "location": {
+        "lat": -15.610528100000002,
+        "lng": -56.0781529
+      }
+    },
+    {
+      "place_id": "ChIJcX9Xl5KxnZMRg5aHXnxTyV4",
+      "nome": "OrthoDontic Cuiabá Dom Bosco (Centro Sul)",
+      "cidade": "Cuiabá",
+      "endereco": "Av. Dom Bosco, 930 - Centro Sul, Cuiabá - MT, 78020-050, Brasil",
+      "categoria": "Dentista",
+      "avaliacoes": 71,
+      "nota": 4.9,
+      "ritmo_mes": 0.7,
+      "responde_pct": 0,
+      "local_id": "ortho_cba_dom_bosco",
+      "papel": "proprio",
+      "codigo_unidade": 151,
+      "tipo": "franquia",
+      "location": {
+        "lat": -15.6024303,
+        "lng": -56.100078499999995
+      }
+    },
+    {
+      "place_id": "ChIJnSIud5OxnZMREC7mF4Sf3HM",
+      "nome": "ODONTO MEDICINA 🦷",
+      "cidade": "Cuiabá",
+      "endereco": "Av. Isaac Póvoas, 254 - Centro Norte, Cuiabá - MT, 78005-340, Brasil",
+      "categoria": "Dentista",
+      "avaliacoes": 1451,
+      "nota": 5,
+      "ritmo_mes": 27.1,
+      "responde_pct": 3,
+      "local_id": "odonto_medicina",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "produto": {
+        "disputa_aparelho": "nao",
+        "porque": "a voz do cliente é de odontologia geral: só 3 de 579 avaliações citam aparelho",
+        "menciona_aparelho": 3,
+        "avaliacoes_com_texto": 579
+      },
+      "location": {
+        "lat": -15.598837399999997,
+        "lng": -56.0983852
+      }
+    },
+    {
+      "place_id": "ChIJWYxZu9GtnZMRnufDc8_YZX4",
+      "nome": "Clínica Prime Odontologia Integrada",
+      "cidade": "Várzea Grande",
+      "endereco": "Av. Presidente Artur Bernardes, 855 - Sl 5 e 6 - Jardim Aeroporto, Várzea Grande - MT, 78125-185, Brasil",
+      "categoria": "Dentista",
+      "avaliacoes": 362,
+      "nota": 5,
+      "ritmo_mes": 25.2,
+      "responde_pct": 100,
+      "local_id": "clinica_prime_odontologia_in",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "produto": {
+        "disputa_aparelho": "nao",
+        "porque": "a voz do cliente é de odontologia geral: só 2 de 283 avaliações citam aparelho",
+        "menciona_aparelho": 2,
+        "avaliacoes_com_texto": 283
+      },
+      "location": {
+        "lat": -15.6594467,
+        "lng": -56.1231862
+      }
+    },
+    {
+      "place_id": "ChIJY6y3W5CxnZMR2dQevFq0cfg",
+      "nome": "Clínica Goya",
+      "cidade": "Cuiabá",
+      "endereco": "R. Cândido Mariano, 909 - Centro Norte, Cuiabá - MT, 78043-415, Brasil",
+      "categoria": "Dentista",
+      "avaliacoes": 1352,
+      "nota": 5,
+      "ritmo_mes": 23.9,
+      "responde_pct": 0,
+      "local_id": "clinica_goya",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "produto": {
+        "disputa_aparelho": "nao",
+        "porque": "a voz do cliente é de odontologia geral: só 1 de 366 avaliações citam aparelho",
+        "menciona_aparelho": 1,
+        "avaliacoes_com_texto": 366
+      },
+      "location": {
+        "lat": -15.5931249,
+        "lng": -56.1007593
+      }
+    },
+    {
+      "place_id": "ChIJ5TKg3GKxnZMRPYaNrQYhVSk",
+      "nome": "Aube Odontologia Jardim Itália - Cuiabá",
+      "cidade": "Cuiabá",
+      "endereco": "Av. Gov. Dante Martins de Oliveira, n° 1295 - Jardim Leblon, Cuiabá - MT, 78060-003, Brasil",
+      "categoria": "Clínica odontológica",
+      "avaliacoes": 199,
+      "nota": 4.9,
+      "ritmo_mes": 10.5,
+      "responde_pct": 0,
+      "local_id": "aube_odontologia_jardim_ital",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "produto": {
+        "disputa_aparelho": "nao",
+        "porque": "a voz do cliente é de odontologia geral: só 3 de 128 avaliações citam aparelho",
+        "menciona_aparelho": 3,
+        "avaliacoes_com_texto": 128
+      },
+      "location": {
+        "lat": -15.595133899999997,
+        "lng": -56.077313
+      }
+    },
+    {
+      "place_id": "ChIJAQAAAK2xnZMR1-vVd4wlZqU",
+      "nome": "Clínica Odontológica Betoni Odontologia | Implantes | Ortodontia | Próteses | Dentistas em Cuiabá",
+      "cidade": "Cuiabá",
+      "endereco": "Av. Historiador Rubens de Mendonça, 1894 - Jardim Aclimacao, Cuiabá - MT, 78050-000, Brasil",
+      "categoria": "Clínica odontológica",
+      "avaliacoes": 1117,
+      "nota": 4.9,
+      "ritmo_mes": 9.4,
+      "responde_pct": 1,
+      "local_id": "clinica_odontologica_betoni_",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "produto": {
+        "disputa_aparelho": "sim",
+        "porque": "o nome declara aparelho/ortodontia",
+        "menciona_aparelho": 1,
+        "avaliacoes_com_texto": 107
+      },
+      "location": {
+        "lat": -15.5840943,
+        "lng": -56.0787882
+      }
+    },
+    {
+      "place_id": "ChIJvTkutOuxnZMRDK6mquo5a_c",
+      "nome": "Open Odonto",
+      "cidade": "Cuiabá",
+      "endereco": "Edifício Cuiabá Office - Av. Historiador Rubens de Mendonça, 1856 - Tower, Térreo - Bosque da Saude, Cuiabá - MT, 78050-000, Brasil",
+      "categoria": "Clínica odontológica",
+      "avaliacoes": 250,
+      "nota": 4.9,
+      "ritmo_mes": 6.6,
+      "responde_pct": 95,
+      "local_id": "open_odonto",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "produto": {
+        "disputa_aparelho": "nao",
+        "porque": "a voz do cliente é de odontologia geral: só 1 de 121 avaliações citam aparelho",
+        "menciona_aparelho": 1,
+        "avaliacoes_com_texto": 121
+      },
+      "location": {
+        "lat": -15.584936200000001,
+        "lng": -56.07964390000001
+      }
+    },
+    {
+      "place_id": "ChIJgS3RBSKxnZMRCGYoZ4DmWYY",
+      "nome": "Dentista em Cuiabá - Dra Mariana Lima Pereira",
+      "cidade": "Cuiabá",
+      "endereco": "R. Topázio, 136 - Bosque da Saude, Cuiabá - MT, 78050-080, Brasil",
+      "categoria": "Dentista",
+      "avaliacoes": 189,
+      "nota": 5,
+      "ritmo_mes": 5.9,
+      "responde_pct": 83,
+      "local_id": "dentista_em_cuiaba_dra_maria",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "produto": {
+        "disputa_aparelho": "nao",
+        "porque": "a voz do cliente é de implante: só 0 de 138 avaliações citam aparelho",
+        "menciona_aparelho": 0,
+        "avaliacoes_com_texto": 138
+      },
+      "location": {
+        "lat": -15.590743,
+        "lng": -56.079459
+      }
+    },
+    {
+      "place_id": "ChIJR-3jQ7SxnZMR9xjkmazw6HU",
+      "nome": "Sorrize Clínicas Odontológicas | Dentista CPA IV",
+      "cidade": "Cuiabá",
+      "endereco": "Av Tuiuiú, 9 - Cpa IV, Cuiabá - MT, 78056-812, Brasil",
+      "categoria": "Clínica odontológica",
+      "avaliacoes": 283,
+      "nota": 5,
+      "ritmo_mes": 4.9,
+      "responde_pct": 0,
+      "local_id": "sorrize_clinicas_odontologic",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "produto": {
+        "disputa_aparelho": "nao",
+        "porque": "a voz do cliente é de odontologia geral: só 1 de 96 avaliações citam aparelho",
+        "menciona_aparelho": 1,
+        "avaliacoes_com_texto": 96
+      },
+      "location": {
+        "lat": -15.5621264,
+        "lng": -56.0384129
+      }
+    },
+    {
+      "place_id": "ChIJK1TqXLSxnZMRs23J3ZVjGNc",
+      "nome": "Clínica Sorritá",
+      "cidade": "Cuiabá",
+      "endereco": "Av. Gov. Dante Martins de Oliveira, 376 - Santo Antonio do Pedregal, Cuiabá - MT, 78060-287, Brasil",
+      "categoria": "Clínica odontológica",
+      "avaliacoes": 389,
+      "nota": 5,
+      "ritmo_mes": 4.5,
+      "responde_pct": 48,
+      "local_id": "clinica_sorrita",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "produto": {
+        "disputa_aparelho": "nao",
+        "porque": "a voz do cliente é de implante: só 0 de 92 avaliações citam aparelho",
+        "menciona_aparelho": 0,
+        "avaliacoes_com_texto": 92
+      },
+      "location": {
+        "lat": -15.5939947,
+        "lng": -56.073620700000006
+      }
+    },
+    {
+      "place_id": "ChIJpfHRfeuxnZMRTDyDdNGvIPE",
+      "nome": "Sorridents Centro Norte",
+      "cidade": "Cuiabá",
+      "endereco": "Av. Generoso Ponce, 162 - Centro Norte, Cuiabá - MT, 78005-430, Brasil",
+      "categoria": "Clínica odontológica",
+      "avaliacoes": 263,
+      "nota": 4.9,
+      "ritmo_mes": 3.6,
+      "responde_pct": 15,
+      "local_id": "sorridents_centro_norte",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "produto": {
+        "disputa_aparelho": "nao",
+        "porque": "a voz do cliente é de implante: só 0 de 129 avaliações citam aparelho",
+        "menciona_aparelho": 0,
+        "avaliacoes_com_texto": 129
+      },
+      "location": {
+        "lat": -15.5994178,
+        "lng": -56.0977544
+      }
+    },
+    {
+      "place_id": "ChIJTwrqC2WxnZMR8hVQBzrL7FI",
+      "nome": "Dentista em Cuiabá MT | Myrelief | Clínica Odontológica | Implante Dentário | Faceta dentária",
+      "cidade": "Cuiabá",
+      "endereco": "Galeria Estação Alvorada - R. Miranda Reis, 529 - Poção, Cuiabá - MT, 78015-640, Brasil",
+      "categoria": "Clínica odontológica",
+      "avaliacoes": 222,
+      "nota": 5,
+      "ritmo_mes": 2.7,
+      "responde_pct": 52,
+      "local_id": "dentista_em_cuiaba_mt_myreli",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "produto": {
+        "disputa_aparelho": "nao",
+        "porque": "a voz do cliente é de implante: só 1 de 99 avaliações citam aparelho",
+        "menciona_aparelho": 1,
+        "avaliacoes_com_texto": 99
+      },
+      "location": {
+        "lat": -15.6030273,
+        "lng": -56.089355999999995
+      }
+    },
+    {
+      "local_id": "clinica_ligie_saude_acupun",
+      "papel": "concorrente",
+      "nome": "Clínica Ligie - Saúde, Acupuntura e Odontologia",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJt21QfJSxnZMRYzPO15z4dL0",
+      "descoberto_em": "2026-08-08",
+      "descoberto_por": "varredura google places (2º escalão)",
+      "avaliacoes_google": 170,
+      "nota_google": 5,
+      "produto": {
+        "disputa_aparelho": "nao",
+        "porque": "a voz do cliente é de implante: só 0 de 61 avaliações citam aparelho",
+        "menciona_aparelho": 0,
+        "avaliacoes_com_texto": 61
+      },
+      "location": {
+        "lat": -15.593156200000001,
+        "lng": -56.114781300000004
+      }
+    },
+    {
+      "local_id": "ortho_b",
+      "papel": "concorrente",
+      "nome": "Ortho.b",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJ37EKTTStnZMRNFCnrZwX2Q0",
+      "descoberto_em": "2026-08-08",
+      "descoberto_por": "varredura google places (2º escalão)",
+      "avaliacoes_google": 182,
+      "nota_google": 4.9,
+      "produto": {
+        "disputa_aparelho": "sim",
+        "porque": "o nome declara aparelho/ortodontia",
+        "menciona_aparelho": 2,
+        "avaliacoes_com_texto": 128
+      },
+      "location": {
+        "lat": -15.646975000000001,
+        "lng": -56.1310532
+      }
+    },
+    {
+      "local_id": "coife_clinica_odontologica",
+      "papel": "concorrente",
+      "nome": "COIFE Clinica Odontológica",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJccvYTZWtnZMRcJDg7zWyyro",
+      "descoberto_em": "2026-08-08",
+      "descoberto_por": "varredura google places (2º escalão)",
+      "avaliacoes_google": 171,
+      "nota_google": 4.6,
+      "produto": {
+        "disputa_aparelho": "nao",
+        "porque": "a voz do cliente é de implante: só 0 de 75 avaliações citam aparelho",
+        "menciona_aparelho": 0,
+        "avaliacoes_com_texto": 75
+      },
+      "location": {
+        "lat": -15.6475688,
+        "lng": -56.136962700000005
+      }
+    },
+    {
+      "local_id": "imo_odonto_cuiaba",
+      "papel": "concorrente",
+      "nome": "IMO Odonto - Cuiabá",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJMZiLwimxnZMR_m-eLSuXozQ",
+      "descoberto_em": "2026-08-08",
+      "descoberto_por": "varredura google places (2º escalão)",
+      "avaliacoes_google": 175,
+      "nota_google": 4.8,
+      "produto": {
+        "disputa_aparelho": "nao",
+        "porque": "a voz do cliente é de implante: só 0 de 69 avaliações citam aparelho",
+        "menciona_aparelho": 0,
+        "avaliacoes_com_texto": 69
+      },
+      "location": {
+        "lat": -15.595609199999998,
+        "lng": -56.1107478
+      }
+    },
+    {
+      "local_id": "dra_caroline_amorim_odonto",
+      "papel": "concorrente",
+      "nome": "Dra Caroline Amorim-Odontopediatria e Ortopedia Funcional em Cuiabá-Dentista infantil-Aparelho infantil-Aparelho de criança",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJLb94C1-xnZMRzvD1C3h_FGA",
+      "descoberto_em": "2026-08-08",
+      "descoberto_por": "varredura google places (2º escalão)",
+      "avaliacoes_google": 153,
+      "nota_google": 5,
+      "produto": {
+        "disputa_aparelho": "sim",
+        "porque": "o nome declara aparelho/ortodontia",
+        "menciona_aparelho": 1,
+        "avaliacoes_com_texto": 90
+      },
+      "location": {
+        "lat": -15.586041000000002,
+        "lng": -56.115140999999994
+      }
+    },
+    {
+      "local_id": "odonto_light",
+      "papel": "concorrente",
+      "nome": "Odonto Light",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJg2whaLaxnZMR-E8VlrrahCM",
+      "descoberto_em": "2026-08-08",
+      "descoberto_por": "varredura google places (2º escalão)",
+      "avaliacoes_google": 164,
+      "nota_google": 4.8,
+      "produto": {
+        "disputa_aparelho": "nao",
+        "porque": "a voz do cliente é de odontologia geral: só 0 de 53 avaliações citam aparelho",
+        "menciona_aparelho": 0,
+        "avaliacoes_com_texto": 53
+      },
+      "location": {
+        "lat": -15.595388900000001,
+        "lng": -56.0766281
+      }
+    },
+    {
+      "local_id": "centro_odontologico_person",
+      "papel": "concorrente",
+      "nome": "Centro odontológico Personal",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJCzT_DSiunZMRkRAKP6bnuVQ",
+      "descoberto_em": "2026-08-08",
+      "descoberto_por": "varredura google places (2º escalão)",
+      "avaliacoes_google": 147,
+      "nota_google": 3.7,
+      "produto": {
+        "disputa_aparelho": "nao",
+        "porque": "a voz do cliente é de odontologia geral: só 1 de 91 avaliações citam aparelho",
+        "menciona_aparelho": 1,
+        "avaliacoes_com_texto": 91
+      },
+      "location": {
+        "lat": -15.6191947,
+        "lng": -56.0800646
+      }
+    },
+    {
+      "local_id": "clinica_midori_odontologia",
+      "papel": "concorrente",
+      "nome": "Clinica Midori Odontologia",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJr5-2EZKxnZMRxtjPt4Aa0BI",
+      "descoberto_em": "2026-08-08",
+      "descoberto_por": "varredura google places (2º escalão)",
+      "avaliacoes_google": 136,
+      "nota_google": 5,
+      "produto": {
+        "disputa_aparelho": "nao",
+        "porque": "a voz do cliente é de implante: só 0 de 86 avaliações citam aparelho",
+        "menciona_aparelho": 0,
+        "avaliacoes_com_texto": 86
+      },
+      "location": {
+        "lat": -15.5974485,
+        "lng": -56.1022584
+      }
+    },
+    {
+      "local_id": "clinica_odontologica_total",
+      "papel": "concorrente",
+      "nome": "Clínica Odontológica Totality",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJ-ensanKunZMRWiy5kKXITU0",
+      "descoberto_em": "2026-08-08",
+      "descoberto_por": "varredura google places (2º escalão)",
+      "avaliacoes_google": 148,
+      "nota_google": 4.8,
+      "produto": {
+        "disputa_aparelho": "nao",
+        "porque": "a voz do cliente é de odontologia geral: só 0 de 50 avaliações citam aparelho",
+        "menciona_aparelho": 0,
+        "avaliacoes_com_texto": 50
+      },
+      "location": {
+        "lat": -15.6484527,
+        "lng": -56.1011677
+      }
+    },
+    {
+      "local_id": "enleva_odontologia_integra",
+      "papel": "concorrente",
+      "nome": "Enleva Odontologia Integrada",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJT3mSKe6xnZMREM6V2fuftbM",
+      "descoberto_em": "2026-08-08",
+      "descoberto_por": "varredura google places (2º escalão)",
+      "avaliacoes_google": 796,
+      "nota_google": 5,
+      "produto": {
+        "disputa_aparelho": "nao",
+        "porque": "a voz do cliente é de implante: só 0 de 290 avaliações citam aparelho",
+        "menciona_aparelho": 0,
+        "avaliacoes_com_texto": 290
+      },
+      "location": {
+        "lat": -15.583392999999997,
+        "lng": -56.0807114
+      }
+    },
+    {
+      "local_id": "odontologia_prado",
+      "papel": "concorrente",
+      "nome": "Odontologia Prado",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJp21EUrqxnZMR1OMXUXewANU",
+      "descoberto_em": "2026-08-08",
+      "descoberto_por": "varredura google places (2º escalão)",
+      "avaliacoes_google": 499,
+      "nota_google": 4.7,
+      "produto": {
+        "disputa_aparelho": "nao",
+        "porque": "a voz do cliente é de odontologia geral: só 9 de 361 avaliações citam aparelho",
+        "menciona_aparelho": 9,
+        "avaliacoes_com_texto": 361
+      },
+      "location": {
+        "lat": -15.591196100000001,
+        "lng": -56.0833707
+      }
+    },
+    {
+      "local_id": "iodonto_centro_miranda_rei",
+      "papel": "concorrente",
+      "nome": "IODONTO CENTRO - MIRANDA REIS",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJs1CmSUyxnZMReYLDejD67bA",
+      "descoberto_em": "2026-08-08",
+      "descoberto_por": "varredura google places (2º escalão)",
+      "avaliacoes_google": 778,
+      "nota_google": 4.9,
+      "produto": {
+        "disputa_aparelho": "nao",
+        "porque": "a voz do cliente é de odontologia geral: só 3 de 213 avaliações citam aparelho",
+        "menciona_aparelho": 3,
+        "avaliacoes_com_texto": 213
+      },
+      "location": {
+        "lat": -15.6030273,
+        "lng": -56.089355999999995
+      }
+    },
+    {
+      "local_id": "guanabara_odontologia_dra_",
+      "papel": "concorrente",
+      "nome": "Guanabara Odontologia- Dra Ana Carolina Ribeiro",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJST6pUc-xnZMRR8VvTT7uNjY",
+      "descoberto_em": "2026-08-08",
+      "descoberto_por": "varredura google places (2º escalão)",
+      "avaliacoes_google": 335,
+      "nota_google": 5,
+      "produto": {
+        "disputa_aparelho": "sem_evidencia",
+        "porque": "zona cinzenta: 3 de 79 avaliações citam aparelho (4%) — faz aparelho, mas não é o negócio principal",
+        "menciona_aparelho": 3,
+        "avaliacoes_com_texto": 79
+      },
+      "location": {
+        "lat": -15.6033689,
+        "lng": -56.0801393
+      }
+    }
+  ],
+  "rotulo": "MT · Cuiabá",
+  "cidades_rotulo": [
+    "MT · Cuiabá"
+  ],
+  "vizinhos": [
+    {
+      "place_id": "ChIJw5GGvOmtnZMREVt1LELUQHw",
+      "nome": "REDEORTO Várzea Grande",
+      "cidade": "Várzea Grande/MT",
+      "endereco": "R. Salim Nadaf, 525 - Centro Norte, Várzea Grande - MT, 78110-430, Brasil",
+      "categoria": "Clínica odontológica",
+      "avaliacoes": 290,
+      "nota": 4.8,
+      "ritmo_mes": 36.8,
+      "responde_pct": 1,
+      "local_id": "redeorto_varzea_grande",
+      "papel": "concorrente",
+      "tipo_concorrente": "PREENCHER",
+      "produto": {
+        "disputa_aparelho": "sim",
+        "porque": "o nome declara aparelho/ortodontia",
+        "menciona_aparelho": 7,
+        "avaliacoes_com_texto": 226
+      }
+    },
+    {
+      "local_id": "amorsaude_varzea_grande",
+      "papel": "concorrente",
+      "nome": "AmorSaúde Várzea Grande",
+      "tipo_concorrente": "PREENCHER",
+      "place_id": "ChIJn2qhljqtnZMR2X_ExrCxOKc",
+      "descoberto_em": "2026-08-08",
+      "descoberto_por": "varredura google places (2º escalão)",
+      "avaliacoes_google": 160,
+      "nota_google": 2.5,
+      "produto": {
+        "disputa_aparelho": "nao",
+        "porque": "a voz do cliente é de odontologia geral: só 0 de 82 avaliações citam aparelho",
+        "menciona_aparelho": 0,
+        "avaliacoes_com_texto": 82
+      },
+      "cidade": "Várzea Grande/MT"
+    }
+  ],
+  "vizinhas_medidas": [
+    {
+      "rotulo": "MT · Várzea Grande",
+      "por_que": "cidade conurbada com Cuiabá; medida porque disputa atenção na região, mas praça não mistura cidade — os locais de lá ficam em `vizinhos` e fora de toda conta da praça",
+      "concorrentes_medidos": [
+        "REDEORTO Várzea Grande",
+        "AmorSaúde Várzea Grande"
+      ],
+      "se_abrir_unidade_la": "vira praça própria (praca_id varzea_grande); esta praça não muda"
+    }
+  ]
 }
