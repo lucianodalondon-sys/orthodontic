@@ -190,6 +190,14 @@ padrões → caixa → padrao → build. Períodos curtos são declarados na tel
   `python3 coleta/coletores/unidades_da_rede.py` baixa a lista oficial e
   compara com o número que o próprio site declara. Nenhuma frase sobre "a
   rede está / não está nessa cidade" sai sem essa lista do dia.
+- **A CHAVE DO GOOGLE É CRÉDITO DE TESTE, E ELE TEM DATA.** R$ 1.385 de
+  R$ 1.745 restantes em 13/ago/2026, e o teste **acaba em 7 de novembro de
+  2026** — por prazo ou por consumo, o que vier primeiro. Custo calibrado
+  contra o console: **R$ 0,159 por chamada** (R$ 360 ÷ 2.259 chamadas).
+  Sobram ~8.700 chamadas. O ciclo semanal enxuto (ponta + perto ≈ 630
+  chamadas ≈ R$ 100) atravessa o prazo; rodar a varredura completa toda
+  semana não. Quando acabar, TODA coleta do Google para de uma vez, porque
+  usam a mesma chave — o que fazer está em `coleta/CREDITO-GOOGLE.md`.
 - **MEDIR DE NOVO NO MESMO DIA NÃO É SEGUNDA MEDIÇÃO — É REPETIÇÃO PAGA.**
   A grade de busca perto da loja foi rodada duas vezes em 13/ago. As 80
   linhas da segunda rodada tinham a mesma (praça + data + loja + frase +

@@ -33,8 +33,10 @@ O QUE ISTO NÃO É, E PRECISA ESTAR DITO
   resultado de fora do círculo, e devolve. Por isso a distância de cada
   resultado ao centro vai gravada — quando dá para calcular.
 
-CUSTO. Cada consulta é uma chamada paga de Places Text Search (US$ 0,032 na
-faixa usada pelo projeto). O script IMPRIME a conta antes e só gasta com
+CUSTO. Cada consulta é uma chamada paga de Places Text Search — R$ 0,159,
+calibrado contra o console do Google em 13/ago/2026, não copiado da tabela.
+O crédito e o prazo estão em `coleta/CREDITO-GOOGLE.md`. O script IMPRIME a
+conta antes e só gasta com
 `--executar`. Sem a flag ele não chama a API nenhuma vez.
 
 Uso:
@@ -52,7 +54,13 @@ BRUTO = RAIZ/"dados"/"bruto"
 API = "https://places.googleapis.com/v1/places:searchText"
 CAMPOS = ("places.id,places.displayName,places.userRatingCount,places.rating,"
           "places.formattedAddress,places.location")
-CUSTO_POR_CONSULTA = 0.032
+# CALIBRADO CONTRA O CONSOLE, não copiado da tabela de preços.
+# Em 13/ago/2026 o Billing mostrava R$ 360 consumidos, e o disco registrava
+# ~2.259 chamadas no mesmo período: R$ 0,159 por chamada. O valor antigo
+# (US$ 0,032) era preço de tabela que eu havia digitado — a conta impressa
+# antes de gastar precisa ser a NOSSA conta, não a pública.
+CUSTO_POR_CONSULTA = 0.159      # R$, calibrado em 13/ago/2026
+MOEDA = "R$"
 RAIO_PADRAO = 3000        # metros — bairro e vizinhos, não a cidade
 
 # As frases valem por serem de APARELHO. "clínica odontológica" e
@@ -197,8 +205,9 @@ def main():
     print(f"    frases por loja ..... {a.frases}")
     print(f"    raio do viés ........ {a.raio} m")
     print(f"    consultas ........... {consultas}")
-    print(f"    custo estimado ...... US$ {consultas*CUSTO_POR_CONSULTA:.2f}"
-          f"  (US$ {CUSTO_POR_CONSULTA:.3f} por consulta)")
+    print(f"    custo estimado ...... {MOEDA} {consultas*CUSTO_POR_CONSULTA:.2f}"
+          f"  ({MOEDA} {CUSTO_POR_CONSULTA:.3f} por consulta, calibrado "
+          f"em 13/ago/2026)")
     if not a.executar:
         print("\n  (nenhuma chamada foi feita — --executar para gastar)\n")
         return
