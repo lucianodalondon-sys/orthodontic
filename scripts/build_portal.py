@@ -533,7 +533,11 @@ def main():
         _ba_radar = {}
         for _p in (carrega(OUT, "bairros").get("pracas") or []):
             _pid = _p.get("praca_id")
-            _cidades = (ident.get(_pid) or {}).get("cidades") or []
+            # `ident` só tem praça da REDE; o Radar fala justamente das
+            # outras, então a identidade da cidade de oportunidade se lê de
+            # `_TODAS` — senão o território aparece só onde já há unidade,
+            # que é exatamente onde ele menos importa para expansão
+            _cidades = (ident.get(_pid) or _TODAS.get(_pid) or {}).get("cidades") or []
             _bs = [b for b in (_p.get("bairros") or []) if b.get("clinicas")]
             if not _bs or not _cidades:
                 continue
@@ -555,9 +559,23 @@ def main():
                         "não necessariamente onde o paciente mora"),
                     "estudo": f"pracas/{_pid}",
                 }
+        # É A ÚLTIMA MEDIÇÃO DE CADA CIDADE, NÃO A ÚLTIMA DATA DO ARQUIVO.
+        #
+        # Cortar pela data global apagou o Radar inteiro: as seis cidades
+        # de oportunidade foram medidas em 09/ago, e em 12/ago o arquivo
+        # recebeu só as seis metrópoles que a conferência mostrou OCUPADAS.
+        # A tela passou a dizer "0 cidades prontas para receber uma
+        # unidade" com seis estudos completos no disco ao lado. É a mesma
+        # armadilha que já apagou dez lojas de `onde_cada_loja_aparece` e
+        # doze telas de captação — e ela volta em toda leitura nova que
+        # esquecer que a última medição é POR ENTIDADE.
         corte_op = max(r["snapshot_date"] for r in op)
-        atual = ultimo_por([r for r in op if r["snapshot_date"] == corte_op],
-                           lambda r: r.get("cidade"))
+        _ult = {}
+        for r in op:
+            c = r.get("cidade")
+            if c not in _ult or r["snapshot_date"] >= _ult[c]["snapshot_date"]:
+                _ult[c] = r
+        atual = _ult
         cidades_radar, ocupadas, nao_conferidas = [], [], []
         for r in atual.values():
             if r.get("erro"):

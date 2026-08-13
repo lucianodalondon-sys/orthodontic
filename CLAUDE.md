@@ -226,6 +226,18 @@ padrões → caixa → padrao → build. Períodos curtos são declarados na tel
   dizia "sem medição" para quem tinha. É sempre a última medição DE CADA
   praça. O mesmo vale para arquivo de veredito: `sazonalidade.json`
   acumula, senão medir uma UF apaga as outras doze.
+- **E ela voltou no RADAR.** O Radar cortava pela data global de
+  `oportunidade.jsonl`. As seis cidades de oportunidade foram medidas em
+  09/ago; em 12/ago o arquivo recebeu só as seis metrópoles que a
+  conferência mostrou OCUPADAS. Resultado: a tela do time de expansão
+  dizia **"0 cidades prontas para receber uma unidade"** com seis estudos
+  completos no disco ao lado, e o cartão do painel repetia o zero. Toda
+  leitura nova nasce com essa armadilha; a última medição é POR ENTIDADE.
+- **`ident` no build é só praça da REDE.** `PRACAS` exclui quem tem
+  `sem_unidade`, então `ident.get(praca)` devolve vazio para as seis do
+  Radar — e o território delas sumiu da tela de expansão, que é
+  exatamente onde ele importa. Para cidade de oportunidade, leia
+  `_TODAS`.
 - **Build que não reproduz é build quebrado.** A captação era escrita só para
   a praça medida na última data do arquivo — 1 de 13. As outras 12 telas eram
   sobra de um build anterior: apagar a pasta fazia doze sumirem sem erro. É
