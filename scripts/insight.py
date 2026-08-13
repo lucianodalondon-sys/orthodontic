@@ -135,11 +135,26 @@ def monta(*, fonte, chave, titulo, fato, por_que_importa, acao,
         "medido_em": medido_em,
         "link": link,
         "carimbo": carimbo,
+        # O TEXTO NÃO SE GUARDA SEIS VEZES.
+        #
+        # A primeira versão gravava a mensagem inteira uma vez por
+        # destinatário. Como o corpo é o MESMO — muda só a linha de
+        # abertura —, 62% do payload da home e 53% do da agenda eram
+        # cópias da mesma frase. Agora vai o corpo uma vez, as seis
+        # aberturas, e o texto pronto do destinatário recomendado.
+        #
+        # Juntar `abertura + corpo` na tela não é o casco calculando: as
+        # duas metades são texto autorado e vêm prontas. Está declarado
+        # aqui para ninguém "consertar" isso montando frase na tela.
         "encaminhamento": {
-            "para": [{"chave": k, "rotulo": v} for k, v in PUBLICOS.items()],
+            "para": [{"chave": k, "rotulo": v, "abertura": ABERTURA[k]}
+                     for k, v in PUBLICOS.items()],
             "recomendado": publico,
-            "texto": {k: _limpa(ABERTURA[k]) + "\n\n" + corpo
-                      for k in PUBLICOS},
+            "corpo": corpo,
+            "texto_pronto": _limpa(ABERTURA[publico]) + "\n\n" + corpo,
+            "como_montar": ("abertura do destinatário escolhido + linha em "
+                            "branco + `corpo`. O texto do destinatário "
+                            "recomendado já vem pronto em `texto_pronto`"),
             "como_usar": ("copiar e colar. O portal não guarda para quem "
                           "foi mandado nem se alguém executou — quem "
                           "responde isso é a próxima medição"),

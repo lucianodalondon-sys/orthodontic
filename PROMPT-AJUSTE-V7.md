@@ -429,10 +429,17 @@ Existe em todo cartão de insight. Ao clicar, abre:
     ─────────────────────────────────────────────────────
     [ copiar ]   [ WhatsApp ]   [ e-mail ]   [ copiar link ]
 
-**O texto já vem pronto no payload**, um por destinatário, em
-`encaminhamento.texto.<publico>`. Não gere texto na tela, não chame API
-nenhuma. O destinatário sugerido vem em `encaminhamento.recomendado` —
-deixe-o pré-selecionado.
+**O texto já vem pronto no payload.** O destinatário sugerido vem em
+`encaminhamento.recomendado`, pré-selecionado, e a mensagem dele está
+inteira em `encaminhamento.texto_pronto` — copie e pronto.
+
+Se a pessoa trocar de destinatário, junte duas metades que também já vêm
+escritas: `para[].abertura` do escolhido + linha em branco +
+`encaminhamento.corpo`. É concatenação de texto autorado, não conta na
+tela — está declarado assim de propósito, porque guardar a mensagem
+inteira seis vezes fazia 62% do payload da home ser cópia da mesma frase.
+
+Não gere texto na tela e não chame API nenhuma.
 
 O mesmo insight muda de abertura conforme o destinatário: *"Padrão
 observado na rede:"* para a diretoria, *"Para a próxima visita:"* para o
