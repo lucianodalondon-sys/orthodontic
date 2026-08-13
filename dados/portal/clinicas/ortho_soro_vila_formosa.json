@@ -102,12 +102,138 @@
     ],
     "itens_total": 1
   },
-  "voz_do_paciente": null,
+  "voz_do_paciente": [
+    {
+      "o_que_e": "Explica o que vai fazer, antes de fazer",
+      "pct": 0.0
+    },
+    {
+      "o_que_e": "Atende na hora marcada",
+      "pct": 2.3
+    },
+    {
+      "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
+      "pct": 0.0
+    },
+    {
+      "o_que_e": "Cuida de quem tem medo de dentista",
+      "pct": 1.1
+    },
+    {
+      "o_que_e": "Resolve no mesmo dia",
+      "pct": 0.0
+    },
+    {
+      "o_que_e": "Sabe atender criança",
+      "pct": 2.3
+    },
+    {
+      "o_que_e": "Continua presente depois que vendeu",
+      "pct": 1.1
+    },
+    {
+      "o_que_e": "Tem profissional que o paciente chama pelo nome",
+      "pct": 20.7
+    }
+  ],
   "rival": {
-    "comparados": [],
-    "vantagens_deles": [],
-    "fora": [],
-    "fora_total": 0,
+    "comparados": [
+      "OdontoCompany - Sorocaba Centro / Implantes e Ortodontia"
+    ],
+    "vantagens_deles": [
+      {
+        "eixo": "pos_venda",
+        "o_que_e": "Continua presente depois que vendeu",
+        "quem": "OdontoCompany - Sorocaba Centro / Implantes e Ortodontia",
+        "eles": 13.2,
+        "nos": 1.1,
+        "razao": 11.4
+      },
+      {
+        "eixo": "acolhimento_do_medo",
+        "o_que_e": "Cuida de quem tem medo de dentista",
+        "quem": "OdontoCompany - Sorocaba Centro / Implantes e Ortodontia",
+        "eles": 3.9,
+        "nos": 1.1,
+        "razao": 3.4
+      },
+      {
+        "eixo": "hora_marcada_e_hora",
+        "o_que_e": "Atende na hora marcada",
+        "quem": "OdontoCompany - Sorocaba Centro / Implantes e Ortodontia",
+        "eles": 5.3,
+        "nos": 2.3,
+        "razao": 2.3
+      }
+    ],
+    "fora": [
+      {
+        "nome": "OdontoHills - Dentistas de Urgência",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 94 avaliações citam aparelho"
+      },
+      {
+        "nome": "CROCO Odontologia Sorocaba",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 105 avaliações citam aparelho"
+      },
+      {
+        "nome": "Pró Clínica Sorocaba",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 73 avaliações citam aparelho"
+      },
+      {
+        "nome": "Oral Unic Implantes Sorocaba",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 95 avaliações citam aparelho"
+      },
+      {
+        "nome": "Cois-Clínica Odontológica Integrada de Sorocaba",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 2 de 101 avaliações citam aparelho"
+      },
+      {
+        "nome": "ABO Sorocaba - Clínica Odontológica e Cursos Profissionalizantes",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 84 avaliações citam aparelho"
+      },
+      {
+        "nome": "HARMODONT Clínica Orofacial",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 112 avaliações citam aparelho"
+      },
+      {
+        "nome": "Emergência Odontológica Sorocaba - Consultório de Dentista 24hs",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 99 avaliações citam aparelho"
+      },
+      {
+        "nome": "Dental Passaro",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 55 avaliações citam aparelho"
+      },
+      {
+        "nome": "Sorridents Clínicas Odontológicas Itavuvu Sorocaba",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 106 avaliações citam aparelho"
+      },
+      {
+        "nome": "Odontoclinic Centro Sorocaba",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 95 avaliações citam aparelho"
+      },
+      {
+        "nome": "Life Sorrisos",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 93 avaliações citam aparelho"
+      },
+      {
+        "nome": "OR2U Dental Studio - Dentistas em Sorocaba",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 76 avaliações citam aparelho"
+      }
+    ],
+    "fora_total": 13,
     "sem_comparacao_porque": null
   },
   "presenca_na_busca": {
@@ -172,7 +298,7 @@
     "local_id": "ortho_soro_vila_formosa",
     "praca_id": "sorocaba",
     "rotulo": "SP · Sorocaba",
-    "unidade": "OrthoDontic Vila Formosa",
+    "unidade": "OrthoDontic · Vila Formosa",
     "medido_em": "2026-08-13",
     "raio_m": 3000,
     "de": 5,
@@ -265,7 +391,7 @@
   },
   "jornada": {
     "local_id": "ortho_soro_vila_formosa",
-    "unidade": "OrthoDontic Vila Formosa",
+    "unidade": "OrthoDontic · Vila Formosa",
     "rotulo": "SP · Sorocaba",
     "com_texto": 87,
     "sem_estagio": 59,
@@ -456,7 +582,7 @@
   },
   "meu_territorio": {
     "local_id": "ortho_soro_vila_formosa",
-    "unidade": "OrthoDontic Vila Formosa",
+    "unidade": "OrthoDontic · Vila Formosa",
     "medido": true,
     "location": {
       "lat": -23.463836,
@@ -530,60 +656,7 @@
       "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
     }
   },
-  "execucao": {
-    "local_id": "ortho_soro_vila_formosa",
-    "praca_id": "sorocaba",
-    "rotulo": "SP · Sorocaba",
-    "unidade": "OrthoDontic Vila Formosa",
-    "itens": [
-      {
-        "problema": "Esta loja aparece em **6 das 195 buscas** que testamos na cidade.",
-        "e_marketing": true,
-        "execucao": {
-          "necessaria": true,
-          "tipo": "seo_local",
-          "especialidade": "marketing local e Google Business",
-          "problema": "a unidade aparece em 6 buscas de 195 testadas na própria cidade",
-          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-          "evidencias": [
-            "aparece em 6 de 195 buscas",
-            "aparece em: {'frase': 'aparelho ortodôntico sorocaba', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-            "aparece em: {'frase': 'aparelho ortodontico em sorocaba', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-            "aparece em: {'frase': 'ortodontista sorocaba sp', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-            "aparece em: {'frase': 'dentista ortodontista sorocaba', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-            "aparece em: {'frase': 'ortodontista sorocaba', 'posicao': 2, 'intencao': 'GENÉRICO'}"
-          ],
-          "nao_fazer": [
-            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-            "não prometer posição: o Google não vende ordem no mapa"
-          ],
-          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-          "prazo": "30 dias",
-          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-          "recoletar_em_dias": 30
-        },
-        "confianca": {
-          "natureza": "recomendacao",
-          "confianca": "baixa",
-          "medido": true,
-          "amostra": 195,
-          "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/portal/presenca_por_loja.json",
-          "a_favor": [
-            "Esta loja aparece em **6 das 195 buscas** que testamos na cidade."
-          ],
-          "contra": [
-            "uma medição só — a segunda dirá se é estrutural ou momento"
-          ],
-          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-          "procedencia": "medido em 195 buscas testadas, 1 medição"
-        }
-      }
-    ],
-    "de_marketing": 1,
-    "de_operacao": 0
-  },
+  "execucao": null,
   "meu_bairro": {
     "bairro": "Vila Formosa",
     "clinicas": 2,

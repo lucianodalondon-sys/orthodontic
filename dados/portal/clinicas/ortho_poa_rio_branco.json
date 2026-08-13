@@ -124,9 +124,50 @@
   "rival": {
     "comparados": [],
     "vantagens_deles": [],
-    "fora": [],
-    "fora_total": 0,
-    "sem_comparacao_porque": null
+    "fora": [
+      {
+        "nome": "Clinica Koelsch",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 116 avaliações citam aparelho"
+      },
+      {
+        "nome": "Sorrir Bem Clínica Odontológica",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 93 avaliações citam aparelho"
+      },
+      {
+        "nome": "Integrare Odontologia",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 87 avaliações citam aparelho"
+      },
+      {
+        "nome": "Clínica Bela Vista Odontologia",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 94 avaliações citam aparelho"
+      },
+      {
+        "nome": "Odonto Clin",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 68 avaliações citam aparelho"
+      },
+      {
+        "nome": "Integrar Odontologia",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 1 de 94 avaliações citam aparelho"
+      },
+      {
+        "nome": "Da Vinci Odontologia",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 2 de 97 avaliações citam aparelho"
+      },
+      {
+        "nome": "Dentista Legal",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 85 avaliações citam aparelho"
+      }
+    ],
+    "fora_total": 8,
+    "sem_comparacao_porque": "só 30 avaliações com texto — abaixo do mínimo de 60"
   },
   "presenca_na_busca": {
     "local_id": "ortho_poa_rio_branco",
@@ -159,7 +200,7 @@
     "local_id": "ortho_poa_rio_branco",
     "praca_id": "porto_alegre",
     "rotulo": "RS · Porto Alegre",
-    "unidade": "OrthoDontic Rio Branco",
+    "unidade": "OrthoDontic · Rio Branco",
     "medido_em": "2026-08-13",
     "raio_m": 3000,
     "de": 5,
@@ -252,7 +293,7 @@
   },
   "jornada": {
     "local_id": "ortho_poa_rio_branco",
-    "unidade": "OrthoDontic Rio Branco",
+    "unidade": "OrthoDontic · Rio Branco",
     "rotulo": "RS · Porto Alegre",
     "com_texto": 30,
     "sem_estagio": 16,
@@ -455,7 +496,7 @@
   },
   "meu_territorio": {
     "local_id": "ortho_poa_rio_branco",
-    "unidade": "OrthoDontic Rio Branco",
+    "unidade": "OrthoDontic · Rio Branco",
     "medido": true,
     "location": {
       "lat": -30.037105899999997,
@@ -533,7 +574,7 @@
     "local_id": "ortho_poa_rio_branco",
     "praca_id": "porto_alegre",
     "rotulo": "RS · Porto Alegre",
-    "unidade": "OrthoDontic Rio Branco",
+    "unidade": "OrthoDontic · Rio Branco",
     "itens": [
       {
         "problema": "Esta loja **não aparece em nenhuma** das 196 buscas que testamos na cidade.",
@@ -576,7 +617,8 @@
       }
     ],
     "de_marketing": 1,
-    "de_operacao": 0
+    "de_operacao": 0,
+    "descartados": 0
   },
   "meu_bairro": {
     "bairro": "Rio Branco",

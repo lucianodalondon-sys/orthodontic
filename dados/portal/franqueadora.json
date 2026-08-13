@@ -1,6 +1,6 @@
 {
   "corte": "2026-08-13",
-  "gerado_em": "2026-08-13T02:29:16",
+  "gerado_em": "2026-08-13T02:36:30",
   "rede": {
     "unidades": 373,
     "abertas": 350,
@@ -509,7 +509,7 @@
       "rotulo": "tarefas fora do prazo"
     },
     {
-      "numero": 198,
+      "numero": 262,
       "tom": "marca",
       "rotulo": "avaliações esperando resposta"
     },
@@ -529,7 +529,7 @@
       {
         "pos": 1,
         "rotulo": "SP · São Paulo",
-        "unidade_curta": null,
+        "unidade_curta": "· República",
         "urgencia": 80,
         "faixa": "vermelha",
         "quem_avanca": null,
@@ -544,7 +544,7 @@
       {
         "pos": 2,
         "rotulo": "SP · Sorocaba",
-        "unidade_curta": null,
+        "unidade_curta": "· Jardim Faculdade",
         "urgencia": 80,
         "faixa": "vermelha",
         "quem_avanca": null,
@@ -559,7 +559,7 @@
       {
         "pos": 3,
         "rotulo": "MG · Uberlândia",
-        "unidade_curta": null,
+        "unidade_curta": "· Av. Floriano Peixoto",
         "urgencia": 80,
         "faixa": "vermelha",
         "quem_avanca": null,
@@ -653,11 +653,22 @@
       "indisponivel_porque": null
     },
     {
+      "chave": "perto",
+      "titulo": "A busca perto da clínica",
+      "pergunta": "A clínica aparece para quem está perto dela?",
+      "numero": 2,
+      "frase": "de 45 lojas medidas a partir do próprio endereço, essas não aparecem nem para quem está a 3 km. Outras 9 lojas pareciam invisíveis pela busca da cidade inteira e aparecem aqui: numa cidade grande ninguém disputa o nome do município.",
+      "tela": "perto",
+      "grupo": "lojas",
+      "disponivel": true,
+      "indisponivel_porque": null
+    },
+    {
       "chave": "caixa",
       "titulo": "Avaliações sem resposta",
       "pergunta": "Quantos pacientes reclamaram e ninguém respondeu?",
-      "numero": 198,
-      "frase": "154 delas com o paciente explicando o motivo, loja por loja. Responder é higiene da marca.",
+      "numero": 262,
+      "frase": "206 delas com o paciente explicando o motivo, loja por loja. Responder é higiene da marca.",
       "tela": "caixa",
       "grupo": "lojas",
       "disponivel": true,

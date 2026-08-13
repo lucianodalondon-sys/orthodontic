@@ -825,6 +825,8 @@ def main():
                  if a.get("gravidade") == "vermelha"]
     caixa = _json("caixa_de_respostas")
     voz = _json("voz_da_cidade")
+    # a busca medida a partir do endereço de cada loja — a outra escala
+    _perto = _json("perto_da_loja")
 
     # ---------- o mapa PINTADO POR PROBLEMA ----------
     # O mapa vinha só com a contagem de unidades, e mapa de contagem responde
@@ -928,6 +930,24 @@ def main():
              fila.get("em_risco"),
              fila.get("manchete", ""),
              "fila", "lojas", bool(fila.get("fila"))),
+        # A ESCALA DA MEDIÇÃO É NOTÍCIA DE PAINEL, e por isso ela vem
+        # antes da caixa: onze lojas estavam marcadas como invisíveis por
+        # uma medida do tamanho do município, e nove delas aparecem quando
+        # a busca sai da porta da própria clínica. O número que sobe aqui é
+        # o das que continuam sem aparecer nem no quarteirão delas — essas
+        # são problema de verdade.
+        card("perto", "A busca perto da clínica",
+             "A clínica aparece para quem está perto dela?",
+             (_perto or {}).get("invisiveis_perto"),
+             ((f"de {_perto['lojas_total']} lojas medidas a partir do próprio "
+               f"endereço, essas não aparecem nem para quem está a "
+               f"{(_perto['lojas'][0].get('raio_m') or 3000)//1000} km. Outras "
+               + conta(len(_perto.get('viradas_pela_leitura_de_perto') or []),
+                       "loja parecia invisível", "lojas pareciam invisíveis")
+               + " pela busca da cidade inteira e aparecem aqui: numa cidade "
+                 "grande ninguém disputa o nome do município.")
+              if _perto.get("lojas") else "sem medição"),
+             "perto", "lojas", bool(_perto.get("lojas"))),
         card("caixa", "Avaliações sem resposta",
              "Quantos pacientes reclamaram e ninguém respondeu?",
              caixa.get("total_abertas"),

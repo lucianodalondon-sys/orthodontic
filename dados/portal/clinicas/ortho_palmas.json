@@ -631,58 +631,7 @@
       "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
     }
   },
-  "execucao": {
-    "local_id": "ortho_palmas",
-    "praca_id": "palmas",
-    "rotulo": "TO · Palmas",
-    "unidade": "OrthoDontic",
-    "itens": [
-      {
-        "problema": "Esta loja aparece em **3 das 120 buscas** que testamos na cidade.",
-        "e_marketing": true,
-        "execucao": {
-          "necessaria": true,
-          "tipo": "seo_local",
-          "especialidade": "marketing local e Google Business",
-          "problema": "a unidade aparece em 3 buscas de 120 testadas na própria cidade",
-          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-          "evidencias": [
-            "aparece em 3 de 120 buscas",
-            "aparece em: {'frase': 'aparelho ortodôntico palmas', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-            "aparece em: {'frase': 'ortodontista palmas', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-            "aparece em: {'frase': 'ortodontista em palmas', 'posicao': 1, 'intencao': 'GENÉRICO'}"
-          ],
-          "nao_fazer": [
-            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-            "não prometer posição: o Google não vende ordem no mapa"
-          ],
-          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-          "prazo": "30 dias",
-          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-          "recoletar_em_dias": 30
-        },
-        "confianca": {
-          "natureza": "recomendacao",
-          "confianca": "baixa",
-          "medido": true,
-          "amostra": 120,
-          "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/portal/presenca_por_loja.json",
-          "a_favor": [
-            "Esta loja aparece em **3 das 120 buscas** que testamos na cidade."
-          ],
-          "contra": [
-            "uma medição só — a segunda dirá se é estrutural ou momento"
-          ],
-          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-          "procedencia": "medido em 120 buscas testadas, 1 medição"
-        }
-      }
-    ],
-    "de_marketing": 1,
-    "de_operacao": 0
-  },
+  "execucao": null,
   "meu_bairro": {
     "bairro": "Plano Diretor Norte",
     "clinicas": 21,

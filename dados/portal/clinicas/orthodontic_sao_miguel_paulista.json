@@ -78,17 +78,176 @@
   "quem_avanca": null,
   "o_que_mudou": null,
   "sem_resposta": {
-    "abertas": null,
-    "com_texto": null,
-    "itens": [],
-    "itens_total": 0
+    "abertas": 4,
+    "com_texto": 1,
+    "itens": [
+      {
+        "nota": 1,
+        "data": "2026-07-30",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 1,
+        "data": "2026-07-28",
+        "texto": "Pior clínica que já vi , pessoal faz contrato não cumpre e não devolve o dinheiro, não indico",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-07-22",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 1,
+        "data": "2026-04-13",
+        "texto": null,
+        "tem_texto": false
+      }
+    ],
+    "itens_total": 4
   },
-  "voz_do_paciente": null,
+  "voz_do_paciente": [
+    {
+      "o_que_e": "Explica o que vai fazer, antes de fazer",
+      "pct": 8.9
+    },
+    {
+      "o_que_e": "Atende na hora marcada",
+      "pct": 0.9
+    },
+    {
+      "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
+      "pct": 0.9
+    },
+    {
+      "o_que_e": "Cuida de quem tem medo de dentista",
+      "pct": 0.9
+    },
+    {
+      "o_que_e": "Resolve no mesmo dia",
+      "pct": 0.9
+    },
+    {
+      "o_que_e": "Sabe atender criança",
+      "pct": 4.5
+    },
+    {
+      "o_que_e": "Continua presente depois que vendeu",
+      "pct": 1.8
+    },
+    {
+      "o_que_e": "Tem profissional que o paciente chama pelo nome",
+      "pct": 28.6
+    }
+  ],
   "rival": {
-    "comparados": [],
-    "vantagens_deles": [],
-    "fora": [],
-    "fora_total": 0,
+    "comparados": [
+      "SouSmile",
+      "DRB Odonto | Implantes, Próteses, Ortodontia e Estética no Centro de São Paulo - SP",
+      "SouSmile | Pinheiros | Unidade Oficial"
+    ],
+    "vantagens_deles": [
+      {
+        "eixo": "hora_marcada_e_hora",
+        "o_que_e": "Atende na hora marcada",
+        "quem": "SouSmile",
+        "eles": 10.3,
+        "nos": 0.9,
+        "razao": 11.5
+      },
+      {
+        "eixo": "pos_venda",
+        "o_que_e": "Continua presente depois que vendeu",
+        "quem": "SouSmile",
+        "eles": 19.6,
+        "nos": 1.8,
+        "razao": 11.0
+      },
+      {
+        "eixo": "preco_claro",
+        "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
+        "quem": "SouSmile | Pinheiros | Unidade Oficial",
+        "eles": 6.7,
+        "nos": 0.9,
+        "razao": 7.5
+      },
+      {
+        "eixo": "resolve_no_mesmo_dia",
+        "o_que_e": "Resolve no mesmo dia",
+        "quem": "SouSmile",
+        "eles": 5.6,
+        "nos": 0.9,
+        "razao": 6.3
+      },
+      {
+        "eixo": "acolhimento_do_medo",
+        "o_que_e": "Cuida de quem tem medo de dentista",
+        "quem": "DRB Odonto | Implantes, Próteses, Ortodontia e Estética no Centro de São Paulo - SP",
+        "eles": 3.0,
+        "nos": 0.9,
+        "razao": 3.4
+      }
+    ],
+    "fora": [
+      {
+        "nome": "Sorridents Clínicas Odontológicas Tatuapé São Paulo",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 81 avaliações citam aparelho"
+      },
+      {
+        "nome": "Simioni Odontologia - Implante e Lente de Contato Dental",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 2 de 111 avaliações citam aparelho"
+      },
+      {
+        "nome": "Ultra Fácil Odontologia São Bento",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 63 avaliações citam aparelho"
+      },
+      {
+        "nome": "Odontoclinic",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 2 de 92 avaliações citam aparelho"
+      },
+      {
+        "nome": "Dentar Odontologia",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 79 avaliações citam aparelho"
+      },
+      {
+        "nome": "Odontoclinic - Cambuci",
+        "fora": true,
+        "por_que_fora": "zona cinzenta: 2 de 59 avaliações citam aparelho (3%) — faz aparelho, mas não é o negócio principal"
+      },
+      {
+        "nome": "Sorridents Clínicas Odontológicas Santa Cecília São Paulo",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 1 de 86 avaliações citam aparelho"
+      },
+      {
+        "nome": "Sorridents Clínicas Odontológicas Mooca São Paulo",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 2 de 86 avaliações citam aparelho"
+      },
+      {
+        "nome": "Setimplan Centro Odontológico",
+        "fora": true,
+        "por_que_fora": "zona cinzenta: 2 de 66 avaliações citam aparelho (3%) — faz aparelho, mas não é o negócio principal"
+      },
+      {
+        "nome": "Seu Sorriso Odontologia",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 100 avaliações citam aparelho"
+      },
+      {
+        "nome": "Sorridents Anhangabaú",
+        "fora": true,
+        "por_que_fora": "zona cinzenta: 3 de 104 avaliações citam aparelho (3%) — faz aparelho, mas não é o negócio principal"
+      }
+    ],
+    "fora_total": 11,
     "sem_comparacao_porque": null
   },
   "presenca_na_busca": {
@@ -472,47 +631,33 @@
     "unidade": "OrthoDontic · São Miguel Paulista",
     "itens": [
       {
-        "problema": "Esta loja **não aparece em nenhuma** das 193 buscas que testamos na cidade.",
+        "problema": "a leitura da cidade diz 0 de 193, e ela não vale nesta escala",
         "e_marketing": true,
         "execucao": {
-          "necessaria": true,
+          "necessaria": false,
           "tipo": "seo_local",
-          "especialidade": "marketing local e Google Business",
-          "problema": "a unidade aparece em 0 buscas de 193 testadas na própria cidade",
-          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-          "evidencias": [
-            "aparece em 0 de 193 buscas"
-          ],
-          "nao_fazer": [
-            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-            "não prometer posição: o Google não vende ordem no mapa"
-          ],
-          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-          "prazo": "30 dias",
-          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-          "recoletar_em_dias": 30
+          "porque_nao": "medida a partir do endereço da própria clínica, ela aparece em 5 buscas de 5, em 5 vezes em 1º lugar. Ninguém disputa o nome do município inteiro numa cidade deste tamanho: o paciente busca de onde está.",
+          "metrica_de_validacao": "a mesma grade de buscas, a partir do mesmo endereço",
+          "recoletar_em_dias": 60
         },
         "confianca": {
-          "natureza": "recomendacao",
+          "natureza": "fato",
           "confianca": "baixa",
           "medido": true,
-          "amostra": 193,
+          "amostra": 5,
           "janela_dias": null,
           "medicoes": 1,
-          "fonte": "dados/portal/presenca_por_loja.json",
-          "a_favor": [
-            "Esta loja **não aparece em nenhuma** das 193 buscas que testamos na cidade."
-          ],
-          "contra": [
-            "uma medição só — a segunda dirá se é estrutural ou momento"
-          ],
-          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-          "procedencia": "medido em 193 buscas testadas, 1 medição"
+          "fonte": "dados/serie/perto_da_loja.jsonl",
+          "a_favor": [],
+          "contra": [],
+          "o_que_aumentaria": "mais frases por loja na próxima grade",
+          "procedencia": "medido em 5 buscas testadas, 1 medição"
         }
       }
     ],
-    "de_marketing": 1,
-    "de_operacao": 0
+    "de_marketing": 0,
+    "de_operacao": 0,
+    "descartados": 1
   },
   "meu_bairro": null,
   "acoes": {

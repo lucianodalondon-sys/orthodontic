@@ -11,47 +11,33 @@
    "unidade": "OrthoDontic · R. Pinheiro Machado",
    "itens": [
     {
-     "problema": "Esta loja **não aparece em nenhuma** das 167 buscas que testamos na cidade.",
+     "problema": "a leitura da cidade diz 0 de 167, e ela não vale nesta escala",
      "e_marketing": true,
      "execucao": {
-      "necessaria": true,
+      "necessaria": false,
       "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 0 buscas de 167 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 0 de 167 buscas"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
+      "porque_nao": "medida a partir do endereço da própria clínica, ela aparece em 3 buscas de 5, em 2 vezes em 1º lugar. Ninguém disputa o nome do município inteiro numa cidade deste tamanho: o paciente busca de onde está.",
+      "metrica_de_validacao": "a mesma grade de buscas, a partir do mesmo endereço",
+      "recoletar_em_dias": 60
      },
      "confianca": {
-      "natureza": "recomendacao",
+      "natureza": "fato",
       "confianca": "baixa",
       "medido": true,
-      "amostra": 167,
+      "amostra": 5,
       "janela_dias": null,
       "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja **não aparece em nenhuma** das 167 buscas que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 167 buscas testadas, 1 medição"
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "mais frases por loja na próxima grade",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
      }
     }
    ],
-   "de_marketing": 1,
-   "de_operacao": 0
+   "de_marketing": 0,
+   "de_operacao": 0,
+   "descartados": 1
   },
   {
    "local_id": "caxias_do_su_orthodontic_centro",
@@ -60,97 +46,58 @@
    "unidade": "OrthoDontic · Av. Júlio de Castilhos",
    "itens": [
     {
-     "problema": "Esta loja **não aparece em nenhuma** das 167 buscas que testamos na cidade.",
+     "problema": "a leitura da cidade diz 0 de 167, e ela não vale nesta escala",
      "e_marketing": true,
      "execucao": {
-      "necessaria": true,
+      "necessaria": false,
       "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 0 buscas de 167 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 0 de 167 buscas"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
+      "porque_nao": "medida a partir do endereço da própria clínica, ela aparece em 3 buscas de 5. Ninguém disputa o nome do município inteiro numa cidade deste tamanho: o paciente busca de onde está.",
+      "metrica_de_validacao": "a mesma grade de buscas, a partir do mesmo endereço",
+      "recoletar_em_dias": 60
      },
      "confianca": {
-      "natureza": "recomendacao",
+      "natureza": "fato",
       "confianca": "baixa",
       "medido": true,
-      "amostra": 167,
+      "amostra": 5,
       "janela_dias": null,
       "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja **não aparece em nenhuma** das 167 buscas que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 167 buscas testadas, 1 medição"
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "mais frases por loja na próxima grade",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
      }
-    }
-   ],
-   "de_marketing": 1,
-   "de_operacao": 0
-  },
-  {
-   "local_id": "orthodontic_kayser",
-   "praca_id": "caxias_do_sul",
-   "rotulo": "RS · Caxias do Sul",
-   "unidade": "OrthoDontic · Kayser",
-   "itens": [
+    },
     {
-     "problema": "Esta loja aparece em **1 das 167 buscas** que testamos na cidade.",
-     "e_marketing": true,
+     "problema": "5 avaliações negativas abertas sem resposta",
+     "e_marketing": false,
      "execucao": {
       "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 1 busca de 167 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 1 de 167 buscas",
-       "aparece em: {'frase': 'aparelho ortodontico caxias do sul', 'posicao': 5, 'intencao': 'GENÉRICO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
+      "tipo": "reputacao",
+      "especialidade": "a própria unidade",
+      "porque_nao_e_marketing": "responder paciente é trabalho de quem atende. Agência escrevendo resposta em nome da clínica é o caminho mais curto para uma resposta que o paciente percebe como automática.",
+      "metrica_de_validacao": "quantas seguem sem resposta na próxima coleta",
+      "recoletar_em_dias": 15
      },
      "confianca": {
       "natureza": "recomendacao",
       "confianca": "baixa",
       "medido": true,
-      "amostra": 167,
+      "amostra": 5,
       "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **1 das 167 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 167 buscas testadas, 1 medição"
+      "medicoes": null,
+      "fonte": "dados/portal/caixa_de_respostas.json",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": null,
+      "procedencia": "medido em 5 avaliações"
      }
     }
    ],
-   "de_marketing": 1,
-   "de_operacao": 0
+   "de_marketing": 0,
+   "de_operacao": 1,
+   "descartados": 1
   },
   {
    "local_id": "ortho_contagem",
@@ -192,48 +139,6 @@
      }
     },
     {
-     "problema": "Esta loja aparece em **3 das 140 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 3 buscas de 140 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 3 de 140 buscas",
-       "aparece em: {'frase': 'aparelho ortodôntico contagem', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'ortodontista contagem', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'ortodontista em contagem', 'posicao': 1, 'intencao': 'GENÉRICO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 140,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **3 das 140 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 140 buscas testadas, 1 medição"
-     }
-    },
-    {
      "problema": "40 avaliações negativas abertas sem resposta",
      "e_marketing": false,
      "execucao": {
@@ -259,8 +164,9 @@
      }
     }
    ],
-   "de_marketing": 1,
-   "de_operacao": 2
+   "de_marketing": 0,
+   "de_operacao": 2,
+   "descartados": 0
   },
   {
    "local_id": "ortho_cba_centro_norte",
@@ -268,49 +174,6 @@
    "rotulo": "MT · Cuiabá",
    "unidade": "OrthoDontic · Centro Norte",
    "itens": [
-    {
-     "problema": "Esta loja aparece em **4 das 151 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 4 buscas de 151 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 4 de 151 buscas",
-       "aparece em: {'frase': 'aparelho ortodôntico cuiaba', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'ortodontista cuiabá', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'ortodontista em cuiabá', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'ortodontista em cuiaba', 'posicao': 2, 'intencao': 'GENÉRICO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 151,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **4 das 151 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 151 buscas testadas, 1 medição"
-     }
-    },
     {
      "problema": "6 avaliações negativas abertas sem resposta",
      "e_marketing": false,
@@ -337,58 +200,9 @@
      }
     }
    ],
-   "de_marketing": 1,
-   "de_operacao": 1
-  },
-  {
-   "local_id": "ortho_cba_fernando_correa",
-   "praca_id": "cuiaba",
-   "rotulo": "MT · Cuiabá",
-   "unidade": "OrthoDontic · Pico do Amor",
-   "itens": [
-    {
-     "problema": "Esta loja aparece em **1 das 151 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 1 busca de 151 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 1 de 151 buscas",
-       "aparece em: {'frase': 'aparelho ortodôntico cuiaba', 'posicao': 3, 'intencao': 'GENÉRICO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 151,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **1 das 151 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 151 buscas testadas, 1 medição"
-     }
-    }
-   ],
-   "de_marketing": 1,
-   "de_operacao": 0
+   "de_marketing": 0,
+   "de_operacao": 1,
+   "descartados": 0
   },
   {
    "local_id": "ortho_cba_dom_bosco",
@@ -397,307 +211,33 @@
    "unidade": "OrthoDontic · Centro Sul",
    "itens": [
     {
-     "problema": "Esta loja **não aparece em nenhuma** das 151 buscas que testamos na cidade.",
+     "problema": "a leitura da cidade diz 0 de 151, e ela não vale nesta escala",
      "e_marketing": true,
      "execucao": {
-      "necessaria": true,
+      "necessaria": false,
       "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 0 buscas de 151 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 0 de 151 buscas"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
+      "porque_nao": "medida a partir do endereço da própria clínica, ela aparece em 3 buscas de 5. Ninguém disputa o nome do município inteiro numa cidade deste tamanho: o paciente busca de onde está.",
+      "metrica_de_validacao": "a mesma grade de buscas, a partir do mesmo endereço",
+      "recoletar_em_dias": 60
      },
      "confianca": {
-      "natureza": "recomendacao",
+      "natureza": "fato",
       "confianca": "baixa",
       "medido": true,
-      "amostra": 151,
+      "amostra": 5,
       "janela_dias": null,
       "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja **não aparece em nenhuma** das 151 buscas que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 151 buscas testadas, 1 medição"
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "mais frases por loja na próxima grade",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
      }
     }
    ],
-   "de_marketing": 1,
-   "de_operacao": 0
-  },
-  {
-   "local_id": "ortho_cwb_centro",
-   "praca_id": "curitiba",
-   "rotulo": "PR · Curitiba",
-   "unidade": "OrthoDontic · R. XV de Novembro",
-   "itens": [
-    {
-     "problema": "Esta loja aparece em **11 das 213 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 11 buscas de 213 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 11 de 213 buscas",
-       "aparece em: {'frase': 'aparelho ortodôntico curitiba', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'aparelho ortodôntico curitiba preços', 'posicao': 1, 'intencao': 'PREÇO'}",
-       "aparece em: {'frase': 'aparelho ortodôntico em curitiba', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'ortodontista curitiba bem avaliados', 'posicao': 1, 'intencao': 'REPUTAÇÃO'}",
-       "aparece em: {'frase': 'ortodontista centro curitiba', 'posicao': 1, 'intencao': 'BAIRRO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 213,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **11 das 213 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 213 buscas testadas, 1 medição"
-     }
-    }
-   ],
-   "de_marketing": 1,
-   "de_operacao": 0
-  },
-  {
-   "local_id": "ortho_cwb_centro_2",
-   "praca_id": "curitiba",
-   "rotulo": "PR · Curitiba",
-   "unidade": "OrthoDontic · Av. Mal. Floriano Peixoto",
-   "itens": [
-    {
-     "problema": "Esta loja aparece em **7 das 213 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 7 buscas de 213 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 7 de 213 buscas",
-       "aparece em: {'frase': 'aparelho ortodôntico curitiba', 'posicao': 2, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'aparelho ortodôntico curitiba preços', 'posicao': 2, 'intencao': 'PREÇO'}",
-       "aparece em: {'frase': 'aparelho ortodôntico em curitiba', 'posicao': 2, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'ortodontista curitiba bem avaliados', 'posicao': 2, 'intencao': 'REPUTAÇÃO'}",
-       "aparece em: {'frase': 'ortodontista centro curitiba', 'posicao': 2, 'intencao': 'BAIRRO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 213,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **7 das 213 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 213 buscas testadas, 1 medição"
-     }
-    }
-   ],
-   "de_marketing": 1,
-   "de_operacao": 0
-  },
-  {
-   "local_id": "ortho_cwb_centro_3",
-   "praca_id": "curitiba",
-   "rotulo": "PR · Curitiba",
-   "unidade": "OrthoDontic · Galeria Tijucas - Av. Luiz Xavier",
-   "itens": [
-    {
-     "problema": "Esta loja aparece em **3 das 213 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 3 buscas de 213 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 3 de 213 buscas",
-       "aparece em: {'frase': 'aparelho ortodôntico curitiba', 'posicao': 4, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'ortodontista centro curitiba', 'posicao': 4, 'intencao': 'BAIRRO'}",
-       "aparece em: {'frase': 'aparelho ortodôntico curitiba preços', 'posicao': 5, 'intencao': 'PREÇO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 213,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **3 das 213 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 213 buscas testadas, 1 medição"
-     }
-    }
-   ],
-   "de_marketing": 1,
-   "de_operacao": 0
-  },
-  {
-   "local_id": "ortho_cwb_portao",
-   "praca_id": "curitiba",
-   "rotulo": "PR · Curitiba",
-   "unidade": "OrthoDontic · Portão",
-   "itens": [
-    {
-     "problema": "Esta loja aparece em **1 das 213 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 1 busca de 213 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 1 de 213 buscas",
-       "aparece em: {'frase': 'aparelho ortodôntico curitiba preços', 'posicao': 3, 'intencao': 'PREÇO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 213,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **1 das 213 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 213 buscas testadas, 1 medição"
-     }
-    }
-   ],
-   "de_marketing": 1,
-   "de_operacao": 0
-  },
-  {
-   "local_id": "ortho_cwb_centro_4",
-   "praca_id": "curitiba",
-   "rotulo": "PR · Curitiba",
-   "unidade": "OrthoDontic · Edifício Odin do Amaral - R. Mal. Deodoro",
-   "itens": [
-    {
-     "problema": "Esta loja aparece em **1 das 213 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 1 busca de 213 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 1 de 213 buscas",
-       "aparece em: {'frase': 'aparelho ortodôntico curitiba preços', 'posicao': 4, 'intencao': 'PREÇO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 213,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **1 das 213 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 213 buscas testadas, 1 medição"
-     }
-    }
-   ],
-   "de_marketing": 1,
-   "de_operacao": 0
+   "de_marketing": 0,
+   "de_operacao": 0,
+   "descartados": 1
   },
   {
    "local_id": "ortho_fsa",
@@ -705,48 +245,6 @@
    "rotulo": "BA · Feira de Santana",
    "unidade": "OrthoDontic",
    "itens": [
-    {
-     "problema": "Esta loja aparece em **3 das 123 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 3 buscas de 123 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 3 de 123 buscas",
-       "aparece em: {'frase': 'ortodontista feira de santana', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'aparelho ortodôntico feira de santana', 'posicao': 2, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'ortodontista em feira de santana', 'posicao': 3, 'intencao': 'GENÉRICO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 123,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **3 das 123 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 123 buscas testadas, 1 medição"
-     }
-    },
     {
      "problema": "10 avaliações negativas abertas sem resposta",
      "e_marketing": false,
@@ -773,164 +271,9 @@
      }
     }
    ],
-   "de_marketing": 1,
-   "de_operacao": 1
-  },
-  {
-   "local_id": "ortho_fln_centro",
-   "praca_id": "florianopolis",
-   "rotulo": "SC · Florianópolis",
-   "unidade": "OrthoDontic · Rua Sete de Setembro",
-   "itens": [
-    {
-     "problema": "Esta loja aparece em **3 das 130 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 3 buscas de 130 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 3 de 130 buscas",
-       "aparece em: {'frase': 'aparelho ortodôntico florianópolis', 'posicao': 2, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'dentista florianopolis aparelho', 'posicao': 2, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'ortodontista centro florianopolis', 'posicao': 4, 'intencao': 'BAIRRO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 130,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **3 das 130 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 130 buscas testadas, 1 medição"
-     }
-    }
-   ],
-   "de_marketing": 1,
-   "de_operacao": 0
-  },
-  {
-   "local_id": "ortho_fln_centro_2",
-   "praca_id": "florianopolis",
-   "rotulo": "SC · Florianópolis",
-   "unidade": "OrthoDontic · R. Deodoro",
-   "itens": [
-    {
-     "problema": "Esta loja aparece em **5 das 130 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 5 buscas de 130 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 5 de 130 buscas",
-       "aparece em: {'frase': 'ortodontista florianópolis', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'ortodontista em florianópolis', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'ortodontista centro florianopolis', 'posicao': 1, 'intencao': 'BAIRRO'}",
-       "aparece em: {'frase': 'ortodontista em florianopolis', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'aparelho ortodôntico florianópolis', 'posicao': 3, 'intencao': 'GENÉRICO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 130,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **5 das 130 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 130 buscas testadas, 1 medição"
-     }
-    }
-   ],
-   "de_marketing": 1,
-   "de_operacao": 0
-  },
-  {
-   "local_id": "ortho_fln_ingleses_do_rio_vermel",
-   "praca_id": "florianopolis",
-   "rotulo": "SC · Florianópolis",
-   "unidade": "OrthoDontic · Ingleses do Rio Vermelho",
-   "itens": [
-    {
-     "problema": "Esta loja aparece em **1 das 130 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 1 busca de 130 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 1 de 130 buscas",
-       "aparece em: {'frase': 'ortodontista ingleses florianopolis', 'posicao': 2, 'intencao': 'BAIRRO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 130,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **1 das 130 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 130 buscas testadas, 1 medição"
-     }
-    }
-   ],
-   "de_marketing": 1,
-   "de_operacao": 0
+   "de_marketing": 0,
+   "de_operacao": 1,
+   "descartados": 0
   },
   {
    "local_id": "ortho_gyn_st_oeste",
@@ -972,50 +315,6 @@
      }
     },
     {
-     "problema": "Esta loja aparece em **6 das 196 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 6 buscas de 196 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 6 de 196 buscas",
-       "aparece em: {'frase': 'aparelho ortodôntico goiânia', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'aparelho ortodôntico em goiania', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'dentista goiania aparelho', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'ortodontista em goiania', 'posicao': 2, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'ortodontista goiânia', 'posicao': 4, 'intencao': 'GENÉRICO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 196,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **6 das 196 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 196 buscas testadas, 1 medição"
-     }
-    },
-    {
      "problema": "10 avaliações negativas abertas sem resposta",
      "e_marketing": false,
      "execucao": {
@@ -1041,8 +340,9 @@
      }
     }
    ],
-   "de_marketing": 1,
-   "de_operacao": 2
+   "de_marketing": 0,
+   "de_operacao": 2,
+   "descartados": 0
   },
   {
    "local_id": "ortho_gyn_st_central",
@@ -1084,50 +384,6 @@
      }
     },
     {
-     "problema": "Esta loja aparece em **6 das 196 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 6 buscas de 196 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 6 de 196 buscas",
-       "aparece em: {'frase': 'aparelho ortodôntico em goiania', 'posicao': 2, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'aparelho ortodôntico goiânia', 'posicao': 3, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'ortodontista goiânia', 'posicao': 3, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'ortodontista em goiânia', 'posicao': 3, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'ortodontista em goiania', 'posicao': 3, 'intencao': 'GENÉRICO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 196,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **6 das 196 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 196 buscas testadas, 1 medição"
-     }
-    },
-    {
      "problema": "14 avaliações negativas abertas sem resposta",
      "e_marketing": false,
      "execucao": {
@@ -1153,8 +409,9 @@
      }
     }
    ],
-   "de_marketing": 1,
-   "de_operacao": 2
+   "de_marketing": 0,
+   "de_operacao": 2,
+   "descartados": 0
   },
   {
    "local_id": "ortho_gyn_jardim_tropical",
@@ -1162,46 +419,6 @@
    "rotulo": "GO · Goiânia",
    "unidade": "OrthoDontic · Jardim Tropical",
    "itens": [
-    {
-     "problema": "Esta loja aparece em **1 das 196 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 1 busca de 196 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 1 de 196 buscas",
-       "aparece em: {'frase': 'ortodontista aparecida de goiania', 'posicao': 1, 'intencao': 'BAIRRO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 196,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **1 das 196 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 196 buscas testadas, 1 medição"
-     }
-    },
     {
      "problema": "8 avaliações negativas abertas sem resposta",
      "e_marketing": false,
@@ -1228,8 +445,9 @@
      }
     }
    ],
-   "de_marketing": 1,
-   "de_operacao": 1
+   "de_marketing": 0,
+   "de_operacao": 1,
+   "descartados": 0
   },
   {
    "local_id": "ortho_gyn_st_morada_do_sol",
@@ -1238,203 +456,33 @@
    "unidade": "OrthoDontic · St. Morada do Sol",
    "itens": [
     {
-     "problema": "Esta loja **não aparece em nenhuma** das 196 buscas que testamos na cidade.",
+     "problema": "a leitura da cidade diz 0 de 196, e ela não vale nesta escala",
      "e_marketing": true,
      "execucao": {
-      "necessaria": true,
+      "necessaria": false,
       "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 0 buscas de 196 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 0 de 196 buscas"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
+      "porque_nao": "medida a partir do endereço da própria clínica, ela aparece em 4 buscas de 5, em 4 vezes em 1º lugar. Ninguém disputa o nome do município inteiro numa cidade deste tamanho: o paciente busca de onde está.",
+      "metrica_de_validacao": "a mesma grade de buscas, a partir do mesmo endereço",
+      "recoletar_em_dias": 60
      },
      "confianca": {
-      "natureza": "recomendacao",
+      "natureza": "fato",
       "confianca": "baixa",
       "medido": true,
-      "amostra": 196,
+      "amostra": 5,
       "janela_dias": null,
       "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja **não aparece em nenhuma** das 196 buscas que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 196 buscas testadas, 1 medição"
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "mais frases por loja na próxima grade",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
      }
     }
    ],
-   "de_marketing": 1,
-   "de_operacao": 0
-  },
-  {
-   "local_id": "ortho_joi_centro",
-   "praca_id": "joinville",
-   "rotulo": "SC · Joinville",
-   "unidade": "OrthoDontic · Centro",
-   "itens": [
-    {
-     "problema": "Esta loja aparece em **4 das 157 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 4 buscas de 157 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 4 de 157 buscas",
-       "aparece em: {'frase': 'aparelho ortodontico joinville', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'dentista joinville aparelho', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'ortodontista joinville', 'posicao': 3, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'ortodontista em joinville', 'posicao': 4, 'intencao': 'GENÉRICO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 157,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **4 das 157 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 157 buscas testadas, 1 medição"
-     }
-    }
-   ],
-   "de_marketing": 1,
-   "de_operacao": 0
-  },
-  {
-   "local_id": "ortho_joi_america",
-   "praca_id": "joinville",
-   "rotulo": "SC · Joinville",
-   "unidade": "OrthoDontic · América",
-   "itens": [
-    {
-     "problema": "Esta loja aparece em **3 das 157 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 3 buscas de 157 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 3 de 157 buscas",
-       "aparece em: {'frase': 'dentista joinville aparelho', 'posicao': 3, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'dentista joinville america', 'posicao': 3, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'aparelho ortodontico joinville', 'posicao': 4, 'intencao': 'GENÉRICO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 157,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **3 das 157 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 157 buscas testadas, 1 medição"
-     }
-    }
-   ],
-   "de_marketing": 1,
-   "de_operacao": 0
-  },
-  {
-   "local_id": "ortho_joi_aventureiro",
-   "praca_id": "joinville",
-   "rotulo": "SC · Joinville",
-   "unidade": "OrthoDontic · Aventureiro",
-   "itens": [
-    {
-     "problema": "Esta loja aparece em **2 das 157 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 2 buscas de 157 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 2 de 157 buscas",
-       "aparece em: {'frase': 'dentista joinville aventureiro', 'posicao': 4, 'intencao': 'BAIRRO'}",
-       "aparece em: {'frase': 'ortodontista em joinville', 'posicao': 5, 'intencao': 'GENÉRICO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 157,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **2 das 157 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 157 buscas testadas, 1 medição"
-     }
-    }
-   ],
-   "de_marketing": 1,
-   "de_operacao": 0
+   "de_marketing": 0,
+   "de_operacao": 0,
+   "descartados": 1
   },
   {
    "local_id": "ortho_souza_naves",
@@ -1476,50 +524,6 @@
      }
     },
     {
-     "problema": "Esta loja aparece em **5 das 176 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 5 buscas de 176 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 5 de 176 buscas",
-       "aparece em: {'frase': 'aparelho ortodôntico londrina', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'aparelho ortodôntico em londrina', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'ortodontista londrina', 'posicao': 2, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'ortodontista em londrina', 'posicao': 2, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'melhor ortodontista de londrina', 'posicao': 2, 'intencao': 'REPUTAÇÃO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 176,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **5 das 176 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 176 buscas testadas, 1 medição"
-     }
-    },
-    {
      "problema": "35 avaliações negativas abertas sem resposta",
      "e_marketing": false,
      "execucao": {
@@ -1545,8 +549,9 @@
      }
     }
    ],
-   "de_marketing": 1,
-   "de_operacao": 2
+   "de_marketing": 0,
+   "de_operacao": 2,
+   "descartados": 0
   },
   {
    "local_id": "ortho_centro_ldn",
@@ -1588,49 +593,6 @@
      }
     },
     {
-     "problema": "Esta loja aparece em **4 das 176 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 4 buscas de 176 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 4 de 176 buscas",
-       "aparece em: {'frase': 'aparelho ortodôntico londrina', 'posicao': 2, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'aparelho ortodôntico em londrina', 'posicao': 2, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'ortodontista londrina', 'posicao': 3, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'ortodontista em londrina', 'posicao': 4, 'intencao': 'GENÉRICO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 176,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **4 das 176 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 176 buscas testadas, 1 medição"
-     }
-    },
-    {
      "problema": "10 avaliações negativas abertas sem resposta",
      "e_marketing": false,
      "execucao": {
@@ -1656,327 +618,9 @@
      }
     }
    ],
-   "de_marketing": 1,
-   "de_operacao": 2
-  },
-  {
-   "local_id": "ortho_mafra",
-   "praca_id": "mafra",
-   "rotulo": "SC · Mafra",
-   "unidade": "OrthoDontic",
-   "itens": [
-    {
-     "problema": "Esta loja aparece em **5 das 64 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 5 buscas de 64 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 5 de 64 buscas",
-       "aparece em: {'frase': 'dentista rio mafra', 'posicao': 2, 'intencao': 'BAIRRO'}",
-       "aparece em: {'frase': 'dentista em mafra', 'posicao': 2, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'melhor dentista em mafra', 'posicao': 2, 'intencao': 'REPUTAÇÃO'}",
-       "aparece em: {'frase': 'dentista infantil em mafra', 'posicao': 4, 'intencao': 'CRIANÇA'}",
-       "aparece em: {'frase': 'dentista infantil mafra', 'posicao': 5, 'intencao': 'CRIANÇA'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 64,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **5 das 64 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 64 buscas testadas, 1 medição"
-     }
-    }
-   ],
-   "de_marketing": 1,
-   "de_operacao": 0
-  },
-  {
-   "local_id": "ortho_palmas",
-   "praca_id": "palmas",
-   "rotulo": "TO · Palmas",
-   "unidade": "OrthoDontic",
-   "itens": [
-    {
-     "problema": "Esta loja aparece em **3 das 120 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 3 buscas de 120 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 3 de 120 buscas",
-       "aparece em: {'frase': 'aparelho ortodôntico palmas', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'ortodontista palmas', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'ortodontista em palmas', 'posicao': 1, 'intencao': 'GENÉRICO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 120,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **3 das 120 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 120 buscas testadas, 1 medição"
-     }
-    }
-   ],
-   "de_marketing": 1,
-   "de_operacao": 0
-  },
-  {
-   "local_id": "ortho_poa_centro_historico",
-   "praca_id": "porto_alegre",
-   "rotulo": "RS · Porto Alegre",
-   "unidade": "OrthoDontic · Av. Borges de Medeiros",
-   "itens": [
-    {
-     "problema": "Esta loja aparece em **10 das 196 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 10 buscas de 196 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 10 de 196 buscas",
-       "aparece em: {'frase': 'aparelho ortodôntico porto alegre', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'aparelho ortodôntico porto alegre preço', 'posicao': 1, 'intencao': 'PREÇO'}",
-       "aparece em: {'frase': 'aparelho ortodôntico no centro de porto alegre', 'posicao': 1, 'intencao': 'BAIRRO'}",
-       "aparece em: {'frase': 'aparelho ortodôntico em porto alegre', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'ortodontista porto alegre', 'posicao': 1, 'intencao': 'GENÉRICO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 196,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **10 das 196 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 196 buscas testadas, 1 medição"
-     }
-    }
-   ],
-   "de_marketing": 1,
-   "de_operacao": 0
-  },
-  {
-   "local_id": "ortho_poa_cristo_redentor",
-   "praca_id": "porto_alegre",
-   "rotulo": "RS · Porto Alegre",
-   "unidade": "OrthoDontic · Cristo Redentor",
-   "itens": [
-    {
-     "problema": "Esta loja aparece em **7 das 196 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 7 buscas de 196 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 7 de 196 buscas",
-       "aparece em: {'frase': 'aparelho ortodôntico porto alegre', 'posicao': 2, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'aparelho ortodôntico porto alegre preço', 'posicao': 2, 'intencao': 'PREÇO'}",
-       "aparece em: {'frase': 'aparelho ortodôntico em porto alegre', 'posicao': 2, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'dentista porto alegre aparelho', 'posicao': 3, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'dentista porto alegre assis brasil', 'posicao': 4, 'intencao': 'BAIRRO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 196,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **7 das 196 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 196 buscas testadas, 1 medição"
-     }
-    }
-   ],
-   "de_marketing": 1,
-   "de_operacao": 0
-  },
-  {
-   "local_id": "ortho_poa_centro_historico_2",
-   "praca_id": "porto_alegre",
-   "rotulo": "RS · Porto Alegre",
-   "unidade": "OrthoDontic · R. Vig. José Inácio",
-   "itens": [
-    {
-     "problema": "Esta loja aparece em **5 das 196 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 5 buscas de 196 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 5 de 196 buscas",
-       "aparece em: {'frase': 'ortodontista em porto alegre', 'posicao': 2, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'aparelho ortodôntico porto alegre preço', 'posicao': 3, 'intencao': 'PREÇO'}",
-       "aparece em: {'frase': 'aparelho ortodôntico no centro de porto alegre', 'posicao': 3, 'intencao': 'BAIRRO'}",
-       "aparece em: {'frase': 'aparelho ortodôntico porto alegre', 'posicao': 5, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'aparelho ortodôntico em porto alegre', 'posicao': 5, 'intencao': 'GENÉRICO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 196,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **5 das 196 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 196 buscas testadas, 1 medição"
-     }
-    }
-   ],
-   "de_marketing": 1,
-   "de_operacao": 0
-  },
-  {
-   "local_id": "ortho_poa_cavalhada",
-   "praca_id": "porto_alegre",
-   "rotulo": "RS · Porto Alegre",
-   "unidade": "OrthoDontic · Cavalhada",
-   "itens": [
-    {
-     "problema": "Esta loja aparece em **2 das 196 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 2 buscas de 196 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 2 de 196 buscas",
-       "aparece em: {'frase': 'ortodontista zona sul porto alegre', 'posicao': 2, 'intencao': 'BAIRRO'}",
-       "aparece em: {'frase': 'dentista porto alegre zona sul cavalhada', 'posicao': 4, 'intencao': 'BAIRRO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 196,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **2 das 196 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 196 buscas testadas, 1 medição"
-     }
-    }
-   ],
-   "de_marketing": 1,
-   "de_operacao": 0
+   "de_marketing": 0,
+   "de_operacao": 2,
+   "descartados": 0
   },
   {
    "local_id": "ortho_poa_centro_historico_3",
@@ -1984,47 +628,6 @@
    "rotulo": "RS · Porto Alegre",
    "unidade": "OrthoDontic · R. dos Andradas",
    "itens": [
-    {
-     "problema": "Esta loja aparece em **2 das 196 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 2 buscas de 196 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 2 de 196 buscas",
-       "aparece em: {'frase': 'dentista porto alegre andradas', 'posicao': 3, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'aparelho ortodôntico no centro de porto alegre', 'posicao': 4, 'intencao': 'BAIRRO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 196,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **2 das 196 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 196 buscas testadas, 1 medição"
-     }
-    },
     {
      "problema": "7 avaliações negativas abertas sem resposta",
      "e_marketing": false,
@@ -2051,62 +654,9 @@
      }
     }
    ],
-   "de_marketing": 1,
-   "de_operacao": 1
-  },
-  {
-   "local_id": "ortho_poa_centro_historico_4",
-   "praca_id": "porto_alegre",
-   "rotulo": "RS · Porto Alegre",
-   "unidade": "OrthoDontic · R. Gen. Vitorino",
-   "itens": [
-    {
-     "problema": "Esta loja aparece em **5 das 196 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 5 buscas de 196 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 5 de 196 buscas",
-       "aparece em: {'frase': 'aparelho ortodôntico no centro de porto alegre', 'posicao': 2, 'intencao': 'BAIRRO'}",
-       "aparece em: {'frase': 'aparelho ortodôntico porto alegre', 'posicao': 4, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'aparelho ortodôntico em porto alegre', 'posicao': 4, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'aparelho ortodôntico porto alegre preço', 'posicao': 5, 'intencao': 'PREÇO'}",
-       "aparece em: {'frase': 'dentista porto alegre aparelho', 'posicao': 5, 'intencao': 'GENÉRICO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 196,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **5 das 196 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 196 buscas testadas, 1 medição"
-     }
-    }
-   ],
-   "de_marketing": 1,
-   "de_operacao": 0
+   "de_marketing": 0,
+   "de_operacao": 1,
+   "descartados": 0
   },
   {
    "local_id": "ortho_poa_rio_branco",
@@ -2155,7 +705,8 @@
     }
    ],
    "de_marketing": 1,
-   "de_operacao": 0
+   "de_operacao": 0,
+   "descartados": 0
   },
   {
    "local_id": "ortho_pp",
@@ -2163,47 +714,6 @@
    "rotulo": "SP · Presidente Prudente",
    "unidade": "OrthoDontic",
    "itens": [
-    {
-     "problema": "Esta loja aparece em **2 das 106 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 2 buscas de 106 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 2 de 106 buscas",
-       "aparece em: {'frase': 'ortodontista presidente prudente', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'ortodontista em presidente prudente', 'posicao': 2, 'intencao': 'GENÉRICO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 106,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **2 das 106 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 106 buscas testadas, 1 medição"
-     }
-    },
     {
      "problema": "10 avaliações negativas abertas sem resposta",
      "e_marketing": false,
@@ -2230,8 +740,9 @@
      }
     }
    ],
-   "de_marketing": 1,
-   "de_operacao": 1
+   "de_marketing": 0,
+   "de_operacao": 1,
+   "descartados": 0
   },
   {
    "local_id": "rio_de_janei_orthodontic",
@@ -2240,47 +751,33 @@
    "unidade": "OrthoDontic",
    "itens": [
     {
-     "problema": "Esta loja **não aparece em nenhuma** das 197 buscas que testamos na cidade.",
+     "problema": "a leitura da cidade diz 0 de 197, e ela não vale nesta escala",
      "e_marketing": true,
      "execucao": {
-      "necessaria": true,
+      "necessaria": false,
       "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 0 buscas de 197 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 0 de 197 buscas"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
+      "porque_nao": "medida a partir do endereço da própria clínica, ela aparece em 4 buscas de 5, em 1 vez em 1º lugar. Ninguém disputa o nome do município inteiro numa cidade deste tamanho: o paciente busca de onde está.",
+      "metrica_de_validacao": "a mesma grade de buscas, a partir do mesmo endereço",
+      "recoletar_em_dias": 60
      },
      "confianca": {
-      "natureza": "recomendacao",
+      "natureza": "fato",
       "confianca": "baixa",
       "medido": true,
-      "amostra": 197,
+      "amostra": 5,
       "janela_dias": null,
       "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja **não aparece em nenhuma** das 197 buscas que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 197 buscas testadas, 1 medição"
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "mais frases por loja na próxima grade",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
      }
     }
    ],
-   "de_marketing": 1,
-   "de_operacao": 0
+   "de_marketing": 0,
+   "de_operacao": 0,
+   "descartados": 1
   },
   {
    "local_id": "sao_paulo_orthodontic",
@@ -2289,47 +786,58 @@
    "unidade": "OrthoDontic · Lapa",
    "itens": [
     {
-     "problema": "Esta loja **não aparece em nenhuma** das 193 buscas que testamos na cidade.",
+     "problema": "a leitura da cidade diz 0 de 193, e ela não vale nesta escala",
      "e_marketing": true,
      "execucao": {
-      "necessaria": true,
+      "necessaria": false,
       "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 0 buscas de 193 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 0 de 193 buscas"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
+      "porque_nao": "medida a partir do endereço da própria clínica, ela aparece em 3 buscas de 5. Ninguém disputa o nome do município inteiro numa cidade deste tamanho: o paciente busca de onde está.",
+      "metrica_de_validacao": "a mesma grade de buscas, a partir do mesmo endereço",
+      "recoletar_em_dias": 60
+     },
+     "confianca": {
+      "natureza": "fato",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 5,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "mais frases por loja na próxima grade",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
+     }
+    },
+    {
+     "problema": "5 avaliações negativas abertas sem resposta",
+     "e_marketing": false,
+     "execucao": {
+      "necessaria": true,
+      "tipo": "reputacao",
+      "especialidade": "a própria unidade",
+      "porque_nao_e_marketing": "responder paciente é trabalho de quem atende. Agência escrevendo resposta em nome da clínica é o caminho mais curto para uma resposta que o paciente percebe como automática.",
+      "metrica_de_validacao": "quantas seguem sem resposta na próxima coleta",
+      "recoletar_em_dias": 15
      },
      "confianca": {
       "natureza": "recomendacao",
       "confianca": "baixa",
       "medido": true,
-      "amostra": 193,
+      "amostra": 5,
       "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja **não aparece em nenhuma** das 193 buscas que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 193 buscas testadas, 1 medição"
+      "medicoes": null,
+      "fonte": "dados/portal/caixa_de_respostas.json",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": null,
+      "procedencia": "medido em 5 avaliações"
      }
     }
    ],
-   "de_marketing": 1,
-   "de_operacao": 0
+   "de_marketing": 0,
+   "de_operacao": 1,
+   "descartados": 1
   },
   {
    "local_id": "orthodontic_sao_miguel_paulista",
@@ -2338,47 +846,33 @@
    "unidade": "OrthoDontic · São Miguel Paulista",
    "itens": [
     {
-     "problema": "Esta loja **não aparece em nenhuma** das 193 buscas que testamos na cidade.",
+     "problema": "a leitura da cidade diz 0 de 193, e ela não vale nesta escala",
      "e_marketing": true,
      "execucao": {
-      "necessaria": true,
+      "necessaria": false,
       "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 0 buscas de 193 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 0 de 193 buscas"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
+      "porque_nao": "medida a partir do endereço da própria clínica, ela aparece em 5 buscas de 5, em 5 vezes em 1º lugar. Ninguém disputa o nome do município inteiro numa cidade deste tamanho: o paciente busca de onde está.",
+      "metrica_de_validacao": "a mesma grade de buscas, a partir do mesmo endereço",
+      "recoletar_em_dias": 60
      },
      "confianca": {
-      "natureza": "recomendacao",
+      "natureza": "fato",
       "confianca": "baixa",
       "medido": true,
-      "amostra": 193,
+      "amostra": 5,
       "janela_dias": null,
       "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja **não aparece em nenhuma** das 193 buscas que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 193 buscas testadas, 1 medição"
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "mais frases por loja na próxima grade",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
      }
     }
    ],
-   "de_marketing": 1,
-   "de_operacao": 0
+   "de_marketing": 0,
+   "de_operacao": 0,
+   "descartados": 1
   },
   {
    "local_id": "orthodontic_tatuape",
@@ -2424,10 +918,36 @@
       "o_que_aumentaria": "repetir a varredura de buscas noutra data",
       "procedencia": "medido em 193 buscas testadas, 1 medição"
      }
+    },
+    {
+     "problema": "13 avaliações negativas abertas sem resposta",
+     "e_marketing": false,
+     "execucao": {
+      "necessaria": true,
+      "tipo": "reputacao",
+      "especialidade": "a própria unidade",
+      "porque_nao_e_marketing": "responder paciente é trabalho de quem atende. Agência escrevendo resposta em nome da clínica é o caminho mais curto para uma resposta que o paciente percebe como automática.",
+      "metrica_de_validacao": "quantas seguem sem resposta na próxima coleta",
+      "recoletar_em_dias": 15
+     },
+     "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 13,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/portal/caixa_de_respostas.json",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": null,
+      "procedencia": "medido em 13 avaliações"
+     }
     }
    ],
    "de_marketing": 1,
-   "de_operacao": 0
+   "de_operacao": 1,
+   "descartados": 0
   },
   {
    "local_id": "orthodontic_republica",
@@ -2473,64 +993,36 @@
       "o_que_aumentaria": "repetir a varredura de buscas noutra data",
       "procedencia": "medido em 193 buscas testadas, 1 medição"
      }
-    }
-   ],
-   "de_marketing": 1,
-   "de_operacao": 0
-  },
-  {
-   "local_id": "ortho_soro_vila_formosa",
-   "praca_id": "sorocaba",
-   "rotulo": "SP · Sorocaba",
-   "unidade": "OrthoDontic · Vila Formosa",
-   "itens": [
+    },
     {
-     "problema": "Esta loja aparece em **6 das 195 buscas** que testamos na cidade.",
-     "e_marketing": true,
+     "problema": "11 avaliações negativas abertas sem resposta",
+     "e_marketing": false,
      "execucao": {
       "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 6 buscas de 195 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 6 de 195 buscas",
-       "aparece em: {'frase': 'aparelho ortodôntico sorocaba', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'aparelho ortodontico em sorocaba', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'ortodontista sorocaba sp', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'dentista ortodontista sorocaba', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'ortodontista sorocaba', 'posicao': 2, 'intencao': 'GENÉRICO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
+      "tipo": "reputacao",
+      "especialidade": "a própria unidade",
+      "porque_nao_e_marketing": "responder paciente é trabalho de quem atende. Agência escrevendo resposta em nome da clínica é o caminho mais curto para uma resposta que o paciente percebe como automática.",
+      "metrica_de_validacao": "quantas seguem sem resposta na próxima coleta",
+      "recoletar_em_dias": 15
      },
      "confianca": {
       "natureza": "recomendacao",
       "confianca": "baixa",
       "medido": true,
-      "amostra": 195,
+      "amostra": 11,
       "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **6 das 195 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 195 buscas testadas, 1 medição"
+      "medicoes": null,
+      "fonte": "dados/portal/caixa_de_respostas.json",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": null,
+      "procedencia": "medido em 11 avaliações"
      }
     }
    ],
    "de_marketing": 1,
-   "de_operacao": 0
+   "de_operacao": 1,
+   "descartados": 0
   },
   {
    "local_id": "ortho_soro_centro",
@@ -2538,47 +1030,6 @@
    "rotulo": "SP · Sorocaba",
    "unidade": "OrthoDontic · Centro",
    "itens": [
-    {
-     "problema": "Esta loja aparece em **2 das 195 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 2 buscas de 195 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 2 de 195 buscas",
-       "aparece em: {'frase': 'aparelho ortodontico em sorocaba', 'posicao': 3, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'aparelho ortodôntico sorocaba', 'posicao': 4, 'intencao': 'GENÉRICO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 195,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **2 das 195 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 195 buscas testadas, 1 medição"
-     }
-    },
     {
      "problema": "5 avaliações negativas abertas sem resposta",
      "e_marketing": false,
@@ -2605,8 +1056,9 @@
      }
     }
    ],
-   "de_marketing": 1,
-   "de_operacao": 1
+   "de_marketing": 0,
+   "de_operacao": 1,
+   "descartados": 0
   },
   {
    "local_id": "ortho_soro_jardim_faculdade",
@@ -2646,52 +1098,11 @@
       "o_que_aumentaria": "a próxima medição da jornada",
       "procedencia": "sem amostra declarada"
      }
-    },
-    {
-     "problema": "Esta loja aparece em **3 das 195 buscas** que testamos na cidade.",
-     "e_marketing": true,
-     "execucao": {
-      "necessaria": true,
-      "tipo": "seo_local",
-      "especialidade": "marketing local e Google Business",
-      "problema": "a unidade aparece em 3 buscas de 195 testadas na própria cidade",
-      "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-      "evidencias": [
-       "aparece em 3 de 195 buscas",
-       "aparece em: {'frase': 'aparelho ortodôntico sorocaba', 'posicao': 3, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'dentista sorocaba aparelho', 'posicao': 3, 'intencao': 'GENÉRICO'}",
-       "aparece em: {'frase': 'aparelho ortodontico em sorocaba', 'posicao': 4, 'intencao': 'GENÉRICO'}"
-      ],
-      "nao_fazer": [
-       "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-       "não prometer posição: o Google não vende ordem no mapa"
-      ],
-      "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-      "prazo": "30 dias",
-      "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-      "recoletar_em_dias": 30
-     },
-     "confianca": {
-      "natureza": "recomendacao",
-      "confianca": "baixa",
-      "medido": true,
-      "amostra": 195,
-      "janela_dias": null,
-      "medicoes": 1,
-      "fonte": "dados/portal/presenca_por_loja.json",
-      "a_favor": [
-       "Esta loja aparece em **3 das 195 buscas** que testamos na cidade."
-      ],
-      "contra": [
-       "uma medição só — a segunda dirá se é estrutural ou momento"
-      ],
-      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-      "procedencia": "medido em 195 buscas testadas, 1 medição"
-     }
     }
    ],
-   "de_marketing": 1,
-   "de_operacao": 1
+   "de_marketing": 0,
+   "de_operacao": 1,
+   "descartados": 0
   },
   {
    "local_id": "uberlandia_orthodontic",
@@ -2770,10 +1181,36 @@
       "o_que_aumentaria": "repetir a varredura de buscas noutra data",
       "procedencia": "medido em 164 buscas testadas, 1 medição"
      }
+    },
+    {
+     "problema": "14 avaliações negativas abertas sem resposta",
+     "e_marketing": false,
+     "execucao": {
+      "necessaria": true,
+      "tipo": "reputacao",
+      "especialidade": "a própria unidade",
+      "porque_nao_e_marketing": "responder paciente é trabalho de quem atende. Agência escrevendo resposta em nome da clínica é o caminho mais curto para uma resposta que o paciente percebe como automática.",
+      "metrica_de_validacao": "quantas seguem sem resposta na próxima coleta",
+      "recoletar_em_dias": 15
+     },
+     "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 14,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/portal/caixa_de_respostas.json",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": null,
+      "procedencia": "medido em 14 avaliações"
+     }
     }
    ],
    "de_marketing": 1,
-   "de_operacao": 1
+   "de_operacao": 2,
+   "descartados": 0
   },
   {
    "local_id": "uberlandia_orthodontic_centro",
@@ -2820,12 +1257,38 @@
       "o_que_aumentaria": "repetir a varredura de buscas noutra data",
       "procedencia": "medido em 164 buscas testadas, 1 medição"
      }
+    },
+    {
+     "problema": "7 avaliações negativas abertas sem resposta",
+     "e_marketing": false,
+     "execucao": {
+      "necessaria": true,
+      "tipo": "reputacao",
+      "especialidade": "a própria unidade",
+      "porque_nao_e_marketing": "responder paciente é trabalho de quem atende. Agência escrevendo resposta em nome da clínica é o caminho mais curto para uma resposta que o paciente percebe como automática.",
+      "metrica_de_validacao": "quantas seguem sem resposta na próxima coleta",
+      "recoletar_em_dias": 15
+     },
+     "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 7,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/portal/caixa_de_respostas.json",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": null,
+      "procedencia": "medido em 7 avaliações"
+     }
     }
    ],
    "de_marketing": 1,
-   "de_operacao": 0
+   "de_operacao": 1,
+   "descartados": 0
   }
  ],
- "de_marketing": 45,
- "de_operacao": 18
+ "de_marketing": 5,
+ "de_operacao": 24
 }

@@ -121,12 +121,146 @@
     ],
     "itens_total": 3
   },
-  "voz_do_paciente": null,
+  "voz_do_paciente": [
+    {
+      "o_que_e": "Explica o que vai fazer, antes de fazer",
+      "pct": 4.1
+    },
+    {
+      "o_que_e": "Atende na hora marcada",
+      "pct": 5.4
+    },
+    {
+      "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
+      "pct": 1.4
+    },
+    {
+      "o_que_e": "Cuida de quem tem medo de dentista",
+      "pct": 1.4
+    },
+    {
+      "o_que_e": "Resolve no mesmo dia",
+      "pct": 1.4
+    },
+    {
+      "o_que_e": "Sabe atender criança",
+      "pct": 4.1
+    },
+    {
+      "o_que_e": "Continua presente depois que vendeu",
+      "pct": 4.1
+    },
+    {
+      "o_que_e": "Tem profissional que o paciente chama pelo nome",
+      "pct": 14.9
+    }
+  ],
   "rival": {
-    "comparados": [],
-    "vantagens_deles": [],
-    "fora": [],
-    "fora_total": 0,
+    "comparados": [
+      "OdontoCompany - Sorocaba Centro / Implantes e Ortodontia"
+    ],
+    "vantagens_deles": [
+      {
+        "eixo": "resolve_no_mesmo_dia",
+        "o_que_e": "Resolve no mesmo dia",
+        "quem": "OdontoCompany - Sorocaba Centro / Implantes e Ortodontia",
+        "eles": 5.3,
+        "nos": 1.4,
+        "razao": 3.9
+      },
+      {
+        "eixo": "pos_venda",
+        "o_que_e": "Continua presente depois que vendeu",
+        "quem": "OdontoCompany - Sorocaba Centro / Implantes e Ortodontia",
+        "eles": 13.2,
+        "nos": 4.1,
+        "razao": 3.2
+      },
+      {
+        "eixo": "acolhimento_do_medo",
+        "o_que_e": "Cuida de quem tem medo de dentista",
+        "quem": "OdontoCompany - Sorocaba Centro / Implantes e Ortodontia",
+        "eles": 3.9,
+        "nos": 1.4,
+        "razao": 2.9
+      },
+      {
+        "eixo": "gente_com_nome",
+        "o_que_e": "Tem profissional que o paciente chama pelo nome",
+        "quem": "OdontoCompany - Sorocaba Centro / Implantes e Ortodontia",
+        "eles": 22.4,
+        "nos": 14.9,
+        "razao": 1.5
+      }
+    ],
+    "fora": [
+      {
+        "nome": "OdontoHills - Dentistas de Urgência",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 94 avaliações citam aparelho"
+      },
+      {
+        "nome": "CROCO Odontologia Sorocaba",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 105 avaliações citam aparelho"
+      },
+      {
+        "nome": "Pró Clínica Sorocaba",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 73 avaliações citam aparelho"
+      },
+      {
+        "nome": "Oral Unic Implantes Sorocaba",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 95 avaliações citam aparelho"
+      },
+      {
+        "nome": "Cois-Clínica Odontológica Integrada de Sorocaba",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 2 de 101 avaliações citam aparelho"
+      },
+      {
+        "nome": "ABO Sorocaba - Clínica Odontológica e Cursos Profissionalizantes",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 84 avaliações citam aparelho"
+      },
+      {
+        "nome": "HARMODONT Clínica Orofacial",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 112 avaliações citam aparelho"
+      },
+      {
+        "nome": "Emergência Odontológica Sorocaba - Consultório de Dentista 24hs",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 99 avaliações citam aparelho"
+      },
+      {
+        "nome": "Dental Passaro",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 55 avaliações citam aparelho"
+      },
+      {
+        "nome": "Sorridents Clínicas Odontológicas Itavuvu Sorocaba",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 106 avaliações citam aparelho"
+      },
+      {
+        "nome": "Odontoclinic Centro Sorocaba",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 95 avaliações citam aparelho"
+      },
+      {
+        "nome": "Life Sorrisos",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 93 avaliações citam aparelho"
+      },
+      {
+        "nome": "OR2U Dental Studio - Dentistas em Sorocaba",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 76 avaliações citam aparelho"
+      }
+    ],
+    "fora_total": 13,
     "sem_comparacao_porque": null
   },
   "presenca_na_busca": {
@@ -176,7 +310,7 @@
     "local_id": "ortho_soro_jardim_faculdade",
     "praca_id": "sorocaba",
     "rotulo": "SP · Sorocaba",
-    "unidade": "OrthoDontic Jardim Faculdade",
+    "unidade": "OrthoDontic · Jardim Faculdade",
     "medido_em": "2026-08-13",
     "raio_m": 3000,
     "de": 5,
@@ -269,7 +403,7 @@
   },
   "jornada": {
     "local_id": "ortho_soro_jardim_faculdade",
-    "unidade": "OrthoDontic Jardim Faculdade",
+    "unidade": "OrthoDontic · Jardim Faculdade",
     "rotulo": "SP · Sorocaba",
     "com_texto": 74,
     "sem_estagio": 45,
@@ -494,7 +628,7 @@
   },
   "meu_territorio": {
     "local_id": "ortho_soro_jardim_faculdade",
-    "unidade": "OrthoDontic Jardim Faculdade",
+    "unidade": "OrthoDontic · Jardim Faculdade",
     "medido": true,
     "location": {
       "lat": -23.5113514,
@@ -577,7 +711,7 @@
     "local_id": "ortho_soro_jardim_faculdade",
     "praca_id": "sorocaba",
     "rotulo": "SP · Sorocaba",
-    "unidade": "OrthoDontic Jardim Faculdade",
+    "unidade": "OrthoDontic · Jardim Faculdade",
     "itens": [
       {
         "problema": "A dor pública desta unidade aparece em atendimento clínico — 7 avaliações de 1 ou 2 estrelas de 13 que falam desse momento.",
@@ -611,52 +745,11 @@
           "o_que_aumentaria": "a próxima medição da jornada",
           "procedencia": "sem amostra declarada"
         }
-      },
-      {
-        "problema": "Esta loja aparece em **3 das 195 buscas** que testamos na cidade.",
-        "e_marketing": true,
-        "execucao": {
-          "necessaria": true,
-          "tipo": "seo_local",
-          "especialidade": "marketing local e Google Business",
-          "problema": "a unidade aparece em 3 buscas de 195 testadas na própria cidade",
-          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-          "evidencias": [
-            "aparece em 3 de 195 buscas",
-            "aparece em: {'frase': 'aparelho ortodôntico sorocaba', 'posicao': 3, 'intencao': 'GENÉRICO'}",
-            "aparece em: {'frase': 'dentista sorocaba aparelho', 'posicao': 3, 'intencao': 'GENÉRICO'}",
-            "aparece em: {'frase': 'aparelho ortodontico em sorocaba', 'posicao': 4, 'intencao': 'GENÉRICO'}"
-          ],
-          "nao_fazer": [
-            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-            "não prometer posição: o Google não vende ordem no mapa"
-          ],
-          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-          "prazo": "30 dias",
-          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-          "recoletar_em_dias": 30
-        },
-        "confianca": {
-          "natureza": "recomendacao",
-          "confianca": "baixa",
-          "medido": true,
-          "amostra": 195,
-          "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/portal/presenca_por_loja.json",
-          "a_favor": [
-            "Esta loja aparece em **3 das 195 buscas** que testamos na cidade."
-          ],
-          "contra": [
-            "uma medição só — a segunda dirá se é estrutural ou momento"
-          ],
-          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-          "procedencia": "medido em 195 buscas testadas, 1 medição"
-        }
       }
     ],
-    "de_marketing": 1,
-    "de_operacao": 1
+    "de_marketing": 0,
+    "de_operacao": 1,
+    "descartados": 0
   },
   "meu_bairro": {
     "bairro": "Jardim Faculdade",

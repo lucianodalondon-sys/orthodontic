@@ -73,12 +73,123 @@
     ],
     "itens_total": 2
   },
-  "voz_do_paciente": null,
+  "voz_do_paciente": [
+    {
+      "o_que_e": "Explica o que vai fazer, antes de fazer",
+      "pct": 1.0
+    },
+    {
+      "o_que_e": "Atende na hora marcada",
+      "pct": 3.0
+    },
+    {
+      "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
+      "pct": 0.0
+    },
+    {
+      "o_que_e": "Cuida de quem tem medo de dentista",
+      "pct": 1.0
+    },
+    {
+      "o_que_e": "Resolve no mesmo dia",
+      "pct": 0.0
+    },
+    {
+      "o_que_e": "Sabe atender criança",
+      "pct": 4.0
+    },
+    {
+      "o_que_e": "Continua presente depois que vendeu",
+      "pct": 4.0
+    },
+    {
+      "o_que_e": "Tem profissional que o paciente chama pelo nome",
+      "pct": 16.0
+    }
+  ],
   "rival": {
-    "comparados": [],
-    "vantagens_deles": [],
-    "fora": [],
-    "fora_total": 0,
+    "comparados": [
+      "Sorridents Porto Alegre Clinica Odontológica / Dentista",
+      "Clinica Odontológica | Dentista | Próteses | Implantes | Clareamento | Clinodente Porto Alegre",
+      "Dentista Porto Alegre | Clínica Dental Center"
+    ],
+    "vantagens_deles": [
+      {
+        "eixo": "explica_o_tratamento",
+        "o_que_e": "Explica o que vai fazer, antes de fazer",
+        "quem": "Sorridents Porto Alegre Clinica Odontológica / Dentista",
+        "eles": 4.8,
+        "nos": 1.0,
+        "razao": 4.8
+      },
+      {
+        "eixo": "hora_marcada_e_hora",
+        "o_que_e": "Atende na hora marcada",
+        "quem": "Clinica Odontológica | Dentista | Próteses | Implantes | Clareamento | Clinodente Porto Alegre",
+        "eles": 13.6,
+        "nos": 3.0,
+        "razao": 4.5
+      },
+      {
+        "eixo": "acolhimento_do_medo",
+        "o_que_e": "Cuida de quem tem medo de dentista",
+        "quem": "Dentista Porto Alegre | Clínica Dental Center",
+        "eles": 3.4,
+        "nos": 1.0,
+        "razao": 3.4
+      },
+      {
+        "eixo": "pos_venda",
+        "o_que_e": "Continua presente depois que vendeu",
+        "quem": "Dentista Porto Alegre | Clínica Dental Center",
+        "eles": 9.2,
+        "nos": 4.0,
+        "razao": 2.3
+      }
+    ],
+    "fora": [
+      {
+        "nome": "Clinica Koelsch",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 116 avaliações citam aparelho"
+      },
+      {
+        "nome": "Sorrir Bem Clínica Odontológica",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 93 avaliações citam aparelho"
+      },
+      {
+        "nome": "Integrare Odontologia",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 87 avaliações citam aparelho"
+      },
+      {
+        "nome": "Clínica Bela Vista Odontologia",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 94 avaliações citam aparelho"
+      },
+      {
+        "nome": "Odonto Clin",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 68 avaliações citam aparelho"
+      },
+      {
+        "nome": "Integrar Odontologia",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 1 de 94 avaliações citam aparelho"
+      },
+      {
+        "nome": "Da Vinci Odontologia",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 2 de 97 avaliações citam aparelho"
+      },
+      {
+        "nome": "Dentista Legal",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 85 avaliações citam aparelho"
+      }
+    ],
+    "fora_total": 8,
     "sem_comparacao_porque": null
   },
   "presenca_na_busca": {
@@ -138,7 +249,7 @@
     "local_id": "ortho_poa_centro_historico_4",
     "praca_id": "porto_alegre",
     "rotulo": "RS · Porto Alegre",
-    "unidade": "OrthoDontic Centro Histórico · R. Gen. Vitorino",
+    "unidade": "OrthoDontic · R. Gen. Vitorino",
     "medido_em": "2026-08-13",
     "raio_m": 3000,
     "de": 5,
@@ -223,7 +334,7 @@
   },
   "jornada": {
     "local_id": "ortho_poa_centro_historico_4",
-    "unidade": "OrthoDontic Centro Histórico · R. Gen. Vitorino",
+    "unidade": "OrthoDontic · R. Gen. Vitorino",
     "rotulo": "RS · Porto Alegre",
     "com_texto": 100,
     "sem_estagio": 48,
@@ -426,7 +537,7 @@
   },
   "meu_territorio": {
     "local_id": "ortho_poa_centro_historico_4",
-    "unidade": "OrthoDontic Centro Histórico · R. Gen. Vitorino",
+    "unidade": "OrthoDontic · R. Gen. Vitorino",
     "medido": true,
     "location": {
       "lat": -30.030367199999997,
@@ -505,60 +616,7 @@
       "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
     }
   },
-  "execucao": {
-    "local_id": "ortho_poa_centro_historico_4",
-    "praca_id": "porto_alegre",
-    "rotulo": "RS · Porto Alegre",
-    "unidade": "OrthoDontic Centro Histórico · R. Gen. Vitorino",
-    "itens": [
-      {
-        "problema": "Esta loja aparece em **5 das 196 buscas** que testamos na cidade.",
-        "e_marketing": true,
-        "execucao": {
-          "necessaria": true,
-          "tipo": "seo_local",
-          "especialidade": "marketing local e Google Business",
-          "problema": "a unidade aparece em 5 buscas de 196 testadas na própria cidade",
-          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-          "evidencias": [
-            "aparece em 5 de 196 buscas",
-            "aparece em: {'frase': 'aparelho ortodôntico no centro de porto alegre', 'posicao': 2, 'intencao': 'BAIRRO'}",
-            "aparece em: {'frase': 'aparelho ortodôntico porto alegre', 'posicao': 4, 'intencao': 'GENÉRICO'}",
-            "aparece em: {'frase': 'aparelho ortodôntico em porto alegre', 'posicao': 4, 'intencao': 'GENÉRICO'}",
-            "aparece em: {'frase': 'aparelho ortodôntico porto alegre preço', 'posicao': 5, 'intencao': 'PREÇO'}",
-            "aparece em: {'frase': 'dentista porto alegre aparelho', 'posicao': 5, 'intencao': 'GENÉRICO'}"
-          ],
-          "nao_fazer": [
-            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-            "não prometer posição: o Google não vende ordem no mapa"
-          ],
-          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-          "prazo": "30 dias",
-          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-          "recoletar_em_dias": 30
-        },
-        "confianca": {
-          "natureza": "recomendacao",
-          "confianca": "baixa",
-          "medido": true,
-          "amostra": 196,
-          "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/portal/presenca_por_loja.json",
-          "a_favor": [
-            "Esta loja aparece em **5 das 196 buscas** que testamos na cidade."
-          ],
-          "contra": [
-            "uma medição só — a segunda dirá se é estrutural ou momento"
-          ],
-          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-          "procedencia": "medido em 196 buscas testadas, 1 medição"
-        }
-      }
-    ],
-    "de_marketing": 1,
-    "de_operacao": 0
-  },
+  "execucao": null,
   "meu_bairro": {
     "bairro": "Centro Histórico",
     "clinicas": 32,

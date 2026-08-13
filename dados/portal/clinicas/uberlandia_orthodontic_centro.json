@@ -93,18 +93,122 @@
   "quem_avanca": null,
   "o_que_mudou": null,
   "sem_resposta": {
-    "abertas": null,
-    "com_texto": null,
-    "itens": [],
-    "itens_total": 0
+    "abertas": 7,
+    "com_texto": 5,
+    "itens": [
+      {
+        "nota": 1,
+        "data": "2026-05-08",
+        "texto": "Realmente, telefone é só de enfeite. Pq tento falar lá pra ver sobre meu orçamento e ninguém responde, em qualquer dia ou horário... Depois perdem clientes e não sabem pq.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-12-10",
+        "texto": "a profissional  que me atende é ótima , porém quando preciso de um suporte para esclarecer dúvidas ou remarcações sempre tem um problema , ninguém responde eu sempre tenho que ficar enchendo de msg . Só respondem quando querem .",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-10-10",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 1,
+        "data": "2025-06-12",
+        "texto": null,
+        "tem_texto": false
+      },
+      {
+        "nota": 2,
+        "data": "2025-04-15",
+        "texto": "O atendimento de modo geral é bom, porém a vendedora não sabe dar explicações claras sobre o contrato.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2024-02-15",
+        "texto": "Estou muito chateada . Pelo tratamento dentista.  E uma falta paciência. Pra explicar . Coloquei ontem aparelho móvel .  Ela explicou tudo correndo o mais rápido possível fui perguntar de novo uma dúvida que eu tive ela simplesmente falou eu acabei de fala, Então achei uma grosseria. A pessoa tem que ter  educação .   . Eu como cliente deveria ser atendida com educação e paciência . Eu sempre fui uma pessoa educada .sempre cheguei na hora certa . Sempre paguei no dia certo ...",
+        "tem_texto": true
+      },
+      {
+        "nota": 2,
+        "data": "2022-01-18",
+        "texto": "Prazo de espera é sempre muito demorado !\nEm torno de 50 minutos a 1hr e meia !\nA empresa foca em quantidade de clientes e não na satisfação !",
+        "tem_texto": true
+      }
+    ],
+    "itens_total": 7
   },
   "voz_do_paciente": null,
   "rival": {
     "comparados": [],
     "vantagens_deles": [],
-    "fora": [],
-    "fora_total": 0,
-    "sem_comparacao_porque": null
+    "fora": [
+      {
+        "nome": "Clínica Gathi Odontologia",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 2 de 113 avaliações citam aparelho"
+      },
+      {
+        "nome": "Inove Odontologia e Saúde",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 111 avaliações citam aparelho"
+      },
+      {
+        "nome": "Vivadent - Dentista em Uberlândia",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 77 avaliações citam aparelho"
+      },
+      {
+        "nome": "Sorridents Clínicas Odontológicas Centro Uberlândia",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 102 avaliações citam aparelho"
+      },
+      {
+        "nome": "Be Clinic Odontologia",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 50 avaliações citam aparelho"
+      },
+      {
+        "nome": "Oral Unic",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 80 avaliações citam aparelho"
+      },
+      {
+        "nome": "Clínica Dentista do Povo",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 76 avaliações citam aparelho"
+      },
+      {
+        "nome": "Sorria Roosevelt",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 83 avaliações citam aparelho"
+      },
+      {
+        "nome": "Odontoclinic - Uberlândia - Jardim Patrícia",
+        "fora": true,
+        "por_que_fora": "zona cinzenta: 4 de 70 avaliações citam aparelho (6%) — faz aparelho, mas não é o negócio principal"
+      },
+      {
+        "nome": "Primer Odontocenter",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 97 avaliações citam aparelho"
+      },
+      {
+        "nome": "Clínica Dentista do Povo - Uberlândia (Floriano Peixoto)",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 1 de 81 avaliações citam aparelho"
+      },
+      {
+        "nome": "Dr. GLEISSON R. A. MARQUES",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 111 avaliações citam aparelho"
+      }
+    ],
+    "fora_total": 12,
+    "sem_comparacao_porque": "só 42 avaliações com texto — abaixo do mínimo de 60"
   },
   "presenca_na_busca": {
     "local_id": "uberlandia_orthodontic_centro",
@@ -619,10 +723,36 @@
           "o_que_aumentaria": "repetir a varredura de buscas noutra data",
           "procedencia": "medido em 164 buscas testadas, 1 medição"
         }
+      },
+      {
+        "problema": "7 avaliações negativas abertas sem resposta",
+        "e_marketing": false,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "reputacao",
+          "especialidade": "a própria unidade",
+          "porque_nao_e_marketing": "responder paciente é trabalho de quem atende. Agência escrevendo resposta em nome da clínica é o caminho mais curto para uma resposta que o paciente percebe como automática.",
+          "metrica_de_validacao": "quantas seguem sem resposta na próxima coleta",
+          "recoletar_em_dias": 15
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 7,
+          "janela_dias": null,
+          "medicoes": null,
+          "fonte": "dados/portal/caixa_de_respostas.json",
+          "a_favor": [],
+          "contra": [],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 7 avaliações"
+        }
       }
     ],
     "de_marketing": 1,
-    "de_operacao": 0
+    "de_operacao": 1,
+    "descartados": 0
   },
   "meu_bairro": {
     "bairro": "Centro",

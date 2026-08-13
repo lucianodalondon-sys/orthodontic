@@ -108,12 +108,128 @@
     ],
     "itens_total": 2
   },
-  "voz_do_paciente": null,
+  "voz_do_paciente": [
+    {
+      "o_que_e": "Explica o que vai fazer, antes de fazer",
+      "pct": 2.7
+    },
+    {
+      "o_que_e": "Atende na hora marcada",
+      "pct": 1.4
+    },
+    {
+      "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
+      "pct": 0.0
+    },
+    {
+      "o_que_e": "Cuida de quem tem medo de dentista",
+      "pct": 0.0
+    },
+    {
+      "o_que_e": "Resolve no mesmo dia",
+      "pct": 0.0
+    },
+    {
+      "o_que_e": "Sabe atender criança",
+      "pct": 2.7
+    },
+    {
+      "o_que_e": "Continua presente depois que vendeu",
+      "pct": 2.7
+    },
+    {
+      "o_que_e": "Tem profissional que o paciente chama pelo nome",
+      "pct": 12.3
+    }
+  ],
   "rival": {
-    "comparados": [],
-    "vantagens_deles": [],
-    "fora": [],
-    "fora_total": 0,
+    "comparados": [
+      "REDEORTO Curitiba - Centro",
+      "Julio Cavichiolo | Ortodontia | Estética | Implante Dentário | Dentista em Novo Mundo | Curitiba PR",
+      "IORC Instituto de Ortodontia de Curitiba"
+    ],
+    "vantagens_deles": [
+      {
+        "eixo": "hora_marcada_e_hora",
+        "o_que_e": "Atende na hora marcada",
+        "quem": "IORC Instituto de Ortodontia de Curitiba",
+        "eles": 5.6,
+        "nos": 1.4,
+        "razao": 4.1
+      },
+      {
+        "eixo": "pos_venda",
+        "o_que_e": "Continua presente depois que vendeu",
+        "quem": "Julio Cavichiolo | Ortodontia | Estética | Implante Dentário | Dentista em Novo Mundo | Curitiba PR",
+        "eles": 9.4,
+        "nos": 2.7,
+        "razao": 3.4
+      },
+      {
+        "eixo": "gente_com_nome",
+        "o_que_e": "Tem profissional que o paciente chama pelo nome",
+        "quem": "Julio Cavichiolo | Ortodontia | Estética | Implante Dentário | Dentista em Novo Mundo | Curitiba PR",
+        "eles": 29.4,
+        "nos": 12.3,
+        "razao": 2.4
+      },
+      {
+        "eixo": "explica_o_tratamento",
+        "o_que_e": "Explica o que vai fazer, antes de fazer",
+        "quem": "REDEORTO Curitiba - Centro",
+        "eles": 6.1,
+        "nos": 2.7,
+        "razao": 2.2
+      }
+    ],
+    "fora": [
+      {
+        "nome": "Dental Uni - Clínica de Urgência Odontológica",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 104 avaliações citam aparelho"
+      },
+      {
+        "nome": "Clínica Castell",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 80 avaliações citam aparelho"
+      },
+      {
+        "nome": "Centro Odontológico Pio XII - Dentista 24h",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 95 avaliações citam aparelho"
+      },
+      {
+        "nome": "Instituto Mass Odontologia",
+        "fora": true,
+        "por_que_fora": "zona cinzenta: 3 de 86 avaliações citam aparelho (3%) — faz aparelho, mas não é o negócio principal"
+      },
+      {
+        "nome": "Clínica You Odonto",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 106 avaliações citam aparelho"
+      },
+      {
+        "nome": "Clifame",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 113 avaliações citam aparelho"
+      },
+      {
+        "nome": "Dra. Vladja Torno | Facetas em Resina Composta em Curitiba",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 91 avaliações citam aparelho"
+      },
+      {
+        "nome": "Clínica Physalis",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 92 avaliações citam aparelho"
+      },
+      {
+        "nome": "Clínica Premium Curitiba",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 116 avaliações citam aparelho"
+      }
+    ],
+    "fora_total": 9,
     "sem_comparacao_porque": null
   },
   "presenca_na_busca": {
@@ -203,7 +319,7 @@
     "local_id": "ortho_cwb_centro",
     "praca_id": "curitiba",
     "rotulo": "PR · Curitiba",
-    "unidade": "OrthoDontic Centro · R. XV de Novembro",
+    "unidade": "OrthoDontic · R. XV de Novembro",
     "medido_em": "2026-08-13",
     "raio_m": 3000,
     "de": 5,
@@ -288,7 +404,7 @@
   },
   "jornada": {
     "local_id": "ortho_cwb_centro",
-    "unidade": "OrthoDontic Centro · R. XV de Novembro",
+    "unidade": "OrthoDontic · R. XV de Novembro",
     "rotulo": "PR · Curitiba",
     "com_texto": 73,
     "sem_estagio": 49,
@@ -491,7 +607,7 @@
   },
   "meu_territorio": {
     "local_id": "ortho_cwb_centro",
-    "unidade": "OrthoDontic Centro · R. XV de Novembro",
+    "unidade": "OrthoDontic · R. XV de Novembro",
     "medido": true,
     "location": {
       "lat": -25.4301288,
@@ -570,60 +686,7 @@
       "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
     }
   },
-  "execucao": {
-    "local_id": "ortho_cwb_centro",
-    "praca_id": "curitiba",
-    "rotulo": "PR · Curitiba",
-    "unidade": "OrthoDontic Centro · R. XV de Novembro",
-    "itens": [
-      {
-        "problema": "Esta loja aparece em **11 das 213 buscas** que testamos na cidade.",
-        "e_marketing": true,
-        "execucao": {
-          "necessaria": true,
-          "tipo": "seo_local",
-          "especialidade": "marketing local e Google Business",
-          "problema": "a unidade aparece em 11 buscas de 213 testadas na própria cidade",
-          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-          "evidencias": [
-            "aparece em 11 de 213 buscas",
-            "aparece em: {'frase': 'aparelho ortodôntico curitiba', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-            "aparece em: {'frase': 'aparelho ortodôntico curitiba preços', 'posicao': 1, 'intencao': 'PREÇO'}",
-            "aparece em: {'frase': 'aparelho ortodôntico em curitiba', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-            "aparece em: {'frase': 'ortodontista curitiba bem avaliados', 'posicao': 1, 'intencao': 'REPUTAÇÃO'}",
-            "aparece em: {'frase': 'ortodontista centro curitiba', 'posicao': 1, 'intencao': 'BAIRRO'}"
-          ],
-          "nao_fazer": [
-            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-            "não prometer posição: o Google não vende ordem no mapa"
-          ],
-          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-          "prazo": "30 dias",
-          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-          "recoletar_em_dias": 30
-        },
-        "confianca": {
-          "natureza": "recomendacao",
-          "confianca": "baixa",
-          "medido": true,
-          "amostra": 213,
-          "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/portal/presenca_por_loja.json",
-          "a_favor": [
-            "Esta loja aparece em **11 das 213 buscas** que testamos na cidade."
-          ],
-          "contra": [
-            "uma medição só — a segunda dirá se é estrutural ou momento"
-          ],
-          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-          "procedencia": "medido em 213 buscas testadas, 1 medição"
-        }
-      }
-    ],
-    "de_marketing": 1,
-    "de_operacao": 0
-  },
+  "execucao": null,
   "meu_bairro": {
     "bairro": "Centro",
     "clinicas": 74,

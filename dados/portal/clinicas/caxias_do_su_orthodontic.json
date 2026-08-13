@@ -74,17 +74,109 @@
   "quem_avanca": null,
   "o_que_mudou": null,
   "sem_resposta": {
-    "abertas": null,
-    "com_texto": null,
-    "itens": [],
-    "itens_total": 0
+    "abertas": 1,
+    "com_texto": 1,
+    "itens": [
+      {
+        "nota": 2,
+        "data": "2026-08-06",
+        "texto": "Em geral, o serviço é de qualidade,  mas muitas doutoras não tem um bom tratamento com o cliente.  Muitas vezes que fiz manutenção, a doutora sempre corta as pontinhas do \"arame\" e deixa na boca da gente, então por precaução, sempre vou ao banheiro depois da manutenção pra fazer bochechos na pia do banheiro pra garantir que não vou engolir os resquícios que ficam.",
+        "tem_texto": true
+      }
+    ],
+    "itens_total": 1
   },
-  "voz_do_paciente": null,
+  "voz_do_paciente": [
+    {
+      "o_que_e": "Explica o que vai fazer, antes de fazer",
+      "pct": 0.0
+    },
+    {
+      "o_que_e": "Atende na hora marcada",
+      "pct": 3.2
+    },
+    {
+      "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
+      "pct": 2.1
+    },
+    {
+      "o_que_e": "Cuida de quem tem medo de dentista",
+      "pct": 0.0
+    },
+    {
+      "o_que_e": "Resolve no mesmo dia",
+      "pct": 0.0
+    },
+    {
+      "o_que_e": "Sabe atender criança",
+      "pct": 1.1
+    },
+    {
+      "o_que_e": "Continua presente depois que vendeu",
+      "pct": 3.2
+    },
+    {
+      "o_que_e": "Tem profissional que o paciente chama pelo nome",
+      "pct": 10.6
+    }
+  ],
   "rival": {
-    "comparados": [],
-    "vantagens_deles": [],
-    "fora": [],
-    "fora_total": 0,
+    "comparados": [
+      "Revitalle Implantes | Dentista Caxias do Sul | Clínica Odontológica | Invisalign",
+      "OrtoClínica",
+      "Top Estética Bucal - Clínica Odontológica | Dentista em Caxias do Sul | Aparelhos Ortodônticos | Implantes Dentários"
+    ],
+    "vantagens_deles": [
+      {
+        "eixo": "trata_crianca",
+        "o_que_e": "Sabe atender criança",
+        "quem": "OrtoClínica",
+        "eles": 4.6,
+        "nos": 1.1,
+        "razao": 4.3
+      },
+      {
+        "eixo": "gente_com_nome",
+        "o_que_e": "Tem profissional que o paciente chama pelo nome",
+        "quem": "OrtoClínica",
+        "eles": 18.4,
+        "nos": 10.6,
+        "razao": 1.7
+      }
+    ],
+    "fora": [
+      {
+        "nome": "CaxiasMed Clínica Médica e Odontológica",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 70 avaliações citam aparelho"
+      },
+      {
+        "nome": "Dentista | Implante Dentário | OdontoPlus Centro Odontológico | Cristo Redentor | Caxias do Sul - RS",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 64 avaliações citam aparelho"
+      },
+      {
+        "nome": "Brunetto Slovinscki Odontologia",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 55 avaliações citam aparelho"
+      },
+      {
+        "nome": "Massocatto Odontologia - Implantes Dentários",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 50 avaliações citam aparelho"
+      },
+      {
+        "nome": "ÁLIS - Odontologia Avançada",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 102 avaliações citam aparelho"
+      },
+      {
+        "nome": "Benne Odonto Clinica Odontológica Ltda",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 116 avaliações citam aparelho"
+      }
+    ],
+    "fora_total": 6,
     "sem_comparacao_porque": null
   },
   "presenca_na_busca": {
@@ -492,47 +584,33 @@
     "unidade": "OrthoDontic · R. Pinheiro Machado",
     "itens": [
       {
-        "problema": "Esta loja **não aparece em nenhuma** das 167 buscas que testamos na cidade.",
+        "problema": "a leitura da cidade diz 0 de 167, e ela não vale nesta escala",
         "e_marketing": true,
         "execucao": {
-          "necessaria": true,
+          "necessaria": false,
           "tipo": "seo_local",
-          "especialidade": "marketing local e Google Business",
-          "problema": "a unidade aparece em 0 buscas de 167 testadas na própria cidade",
-          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-          "evidencias": [
-            "aparece em 0 de 167 buscas"
-          ],
-          "nao_fazer": [
-            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-            "não prometer posição: o Google não vende ordem no mapa"
-          ],
-          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-          "prazo": "30 dias",
-          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-          "recoletar_em_dias": 30
+          "porque_nao": "medida a partir do endereço da própria clínica, ela aparece em 3 buscas de 5, em 2 vezes em 1º lugar. Ninguém disputa o nome do município inteiro numa cidade deste tamanho: o paciente busca de onde está.",
+          "metrica_de_validacao": "a mesma grade de buscas, a partir do mesmo endereço",
+          "recoletar_em_dias": 60
         },
         "confianca": {
-          "natureza": "recomendacao",
+          "natureza": "fato",
           "confianca": "baixa",
           "medido": true,
-          "amostra": 167,
+          "amostra": 5,
           "janela_dias": null,
           "medicoes": 1,
-          "fonte": "dados/portal/presenca_por_loja.json",
-          "a_favor": [
-            "Esta loja **não aparece em nenhuma** das 167 buscas que testamos na cidade."
-          ],
-          "contra": [
-            "uma medição só — a segunda dirá se é estrutural ou momento"
-          ],
-          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-          "procedencia": "medido em 167 buscas testadas, 1 medição"
+          "fonte": "dados/serie/perto_da_loja.jsonl",
+          "a_favor": [],
+          "contra": [],
+          "o_que_aumentaria": "mais frases por loja na próxima grade",
+          "procedencia": "medido em 5 buscas testadas, 1 medição"
         }
       }
     ],
-    "de_marketing": 1,
-    "de_operacao": 0
+    "de_marketing": 0,
+    "de_operacao": 0,
+    "descartados": 1
   },
   "meu_bairro": {
     "bairro": "Centro",

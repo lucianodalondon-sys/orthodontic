@@ -343,7 +343,7 @@
     "local_id": "ortho_cba_centro_norte",
     "praca_id": "cuiaba",
     "rotulo": "MT · Cuiabá",
-    "unidade": "OrthoDontic Cuiabá Centro Norte",
+    "unidade": "OrthoDontic · Centro Norte",
     "medido_em": "2026-08-13",
     "raio_m": 3000,
     "de": 5,
@@ -436,7 +436,7 @@
   },
   "jornada": {
     "local_id": "ortho_cba_centro_norte",
-    "unidade": "OrthoDontic Cuiabá Centro Norte",
+    "unidade": "OrthoDontic · Centro Norte",
     "rotulo": "MT · Cuiabá",
     "com_texto": 610,
     "sem_estagio": 485,
@@ -645,7 +645,7 @@
   },
   "meu_territorio": {
     "local_id": "ortho_cba_centro_norte",
-    "unidade": "OrthoDontic Cuiabá Centro Norte",
+    "unidade": "OrthoDontic · Centro Norte",
     "medido": true,
     "location": {
       "lat": -15.597351799999998,
@@ -799,51 +799,8 @@
     "local_id": "ortho_cba_centro_norte",
     "praca_id": "cuiaba",
     "rotulo": "MT · Cuiabá",
-    "unidade": "OrthoDontic Cuiabá Centro Norte",
+    "unidade": "OrthoDontic · Centro Norte",
     "itens": [
-      {
-        "problema": "Esta loja aparece em **4 das 151 buscas** que testamos na cidade.",
-        "e_marketing": true,
-        "execucao": {
-          "necessaria": true,
-          "tipo": "seo_local",
-          "especialidade": "marketing local e Google Business",
-          "problema": "a unidade aparece em 4 buscas de 151 testadas na própria cidade",
-          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-          "evidencias": [
-            "aparece em 4 de 151 buscas",
-            "aparece em: {'frase': 'aparelho ortodôntico cuiaba', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-            "aparece em: {'frase': 'ortodontista cuiabá', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-            "aparece em: {'frase': 'ortodontista em cuiabá', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-            "aparece em: {'frase': 'ortodontista em cuiaba', 'posicao': 2, 'intencao': 'GENÉRICO'}"
-          ],
-          "nao_fazer": [
-            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-            "não prometer posição: o Google não vende ordem no mapa"
-          ],
-          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-          "prazo": "30 dias",
-          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-          "recoletar_em_dias": 30
-        },
-        "confianca": {
-          "natureza": "recomendacao",
-          "confianca": "baixa",
-          "medido": true,
-          "amostra": 151,
-          "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/portal/presenca_por_loja.json",
-          "a_favor": [
-            "Esta loja aparece em **4 das 151 buscas** que testamos na cidade."
-          ],
-          "contra": [
-            "uma medição só — a segunda dirá se é estrutural ou momento"
-          ],
-          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-          "procedencia": "medido em 151 buscas testadas, 1 medição"
-        }
-      },
       {
         "problema": "6 avaliações negativas abertas sem resposta",
         "e_marketing": false,
@@ -870,8 +827,9 @@
         }
       }
     ],
-    "de_marketing": 1,
-    "de_operacao": 1
+    "de_marketing": 0,
+    "de_operacao": 1,
+    "descartados": 0
   },
   "meu_bairro": {
     "bairro": "Centro Norte",

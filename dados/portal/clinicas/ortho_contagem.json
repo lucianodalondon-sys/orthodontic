@@ -1144,48 +1144,6 @@
         }
       },
       {
-        "problema": "Esta loja aparece em **3 das 140 buscas** que testamos na cidade.",
-        "e_marketing": true,
-        "execucao": {
-          "necessaria": true,
-          "tipo": "seo_local",
-          "especialidade": "marketing local e Google Business",
-          "problema": "a unidade aparece em 3 buscas de 140 testadas na própria cidade",
-          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-          "evidencias": [
-            "aparece em 3 de 140 buscas",
-            "aparece em: {'frase': 'aparelho ortodôntico contagem', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-            "aparece em: {'frase': 'ortodontista contagem', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-            "aparece em: {'frase': 'ortodontista em contagem', 'posicao': 1, 'intencao': 'GENÉRICO'}"
-          ],
-          "nao_fazer": [
-            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-            "não prometer posição: o Google não vende ordem no mapa"
-          ],
-          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-          "prazo": "30 dias",
-          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-          "recoletar_em_dias": 30
-        },
-        "confianca": {
-          "natureza": "recomendacao",
-          "confianca": "baixa",
-          "medido": true,
-          "amostra": 140,
-          "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/portal/presenca_por_loja.json",
-          "a_favor": [
-            "Esta loja aparece em **3 das 140 buscas** que testamos na cidade."
-          ],
-          "contra": [
-            "uma medição só — a segunda dirá se é estrutural ou momento"
-          ],
-          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-          "procedencia": "medido em 140 buscas testadas, 1 medição"
-        }
-      },
-      {
         "problema": "40 avaliações negativas abertas sem resposta",
         "e_marketing": false,
         "execucao": {
@@ -1211,8 +1169,9 @@
         }
       }
     ],
-    "de_marketing": 1,
-    "de_operacao": 2
+    "de_marketing": 0,
+    "de_operacao": 2,
+    "descartados": 0
   },
   "meu_bairro": {
     "bairro": "Eldorado",

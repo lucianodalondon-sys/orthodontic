@@ -128,12 +128,112 @@
     ],
     "itens_total": 4
   },
-  "voz_do_paciente": null,
+  "voz_do_paciente": [
+    {
+      "o_que_e": "Explica o que vai fazer, antes de fazer",
+      "pct": 2.9
+    },
+    {
+      "o_que_e": "Atende na hora marcada",
+      "pct": 2.9
+    },
+    {
+      "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
+      "pct": 0.0
+    },
+    {
+      "o_que_e": "Cuida de quem tem medo de dentista",
+      "pct": 0.0
+    },
+    {
+      "o_que_e": "Resolve no mesmo dia",
+      "pct": 0.0
+    },
+    {
+      "o_que_e": "Sabe atender criança",
+      "pct": 2.9
+    },
+    {
+      "o_que_e": "Continua presente depois que vendeu",
+      "pct": 7.4
+    },
+    {
+      "o_que_e": "Tem profissional que o paciente chama pelo nome",
+      "pct": 26.5
+    }
+  ],
   "rival": {
-    "comparados": [],
-    "vantagens_deles": [],
-    "fora": [],
-    "fora_total": 0,
+    "comparados": [
+      "REDEORTO Curitiba - Centro",
+      "Julio Cavichiolo | Ortodontia | Estética | Implante Dentário | Dentista em Novo Mundo | Curitiba PR",
+      "IORC Instituto de Ortodontia de Curitiba"
+    ],
+    "vantagens_deles": [
+      {
+        "eixo": "explica_o_tratamento",
+        "o_que_e": "Explica o que vai fazer, antes de fazer",
+        "quem": "REDEORTO Curitiba - Centro",
+        "eles": 6.1,
+        "nos": 2.9,
+        "razao": 2.1
+      },
+      {
+        "eixo": "hora_marcada_e_hora",
+        "o_que_e": "Atende na hora marcada",
+        "quem": "IORC Instituto de Ortodontia de Curitiba",
+        "eles": 5.6,
+        "nos": 2.9,
+        "razao": 1.9
+      }
+    ],
+    "fora": [
+      {
+        "nome": "Dental Uni - Clínica de Urgência Odontológica",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 104 avaliações citam aparelho"
+      },
+      {
+        "nome": "Clínica Castell",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 80 avaliações citam aparelho"
+      },
+      {
+        "nome": "Centro Odontológico Pio XII - Dentista 24h",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 95 avaliações citam aparelho"
+      },
+      {
+        "nome": "Instituto Mass Odontologia",
+        "fora": true,
+        "por_que_fora": "zona cinzenta: 3 de 86 avaliações citam aparelho (3%) — faz aparelho, mas não é o negócio principal"
+      },
+      {
+        "nome": "Clínica You Odonto",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 106 avaliações citam aparelho"
+      },
+      {
+        "nome": "Clifame",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 113 avaliações citam aparelho"
+      },
+      {
+        "nome": "Dra. Vladja Torno | Facetas em Resina Composta em Curitiba",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 91 avaliações citam aparelho"
+      },
+      {
+        "nome": "Clínica Physalis",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 92 avaliações citam aparelho"
+      },
+      {
+        "nome": "Clínica Premium Curitiba",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 116 avaliações citam aparelho"
+      }
+    ],
+    "fora_total": 9,
     "sem_comparacao_porque": null
   },
   "presenca_na_busca": {
@@ -173,7 +273,7 @@
     "local_id": "ortho_cwb_centro_4",
     "praca_id": "curitiba",
     "rotulo": "PR · Curitiba",
-    "unidade": "OrthoDontic Centro · Edifício Odin do Amaral - R. Mal. Deodoro",
+    "unidade": "OrthoDontic · Edifício Odin do Amaral - R. Mal. Deodoro",
     "medido_em": "2026-08-13",
     "raio_m": 3000,
     "de": 5,
@@ -266,7 +366,7 @@
   },
   "jornada": {
     "local_id": "ortho_cwb_centro_4",
-    "unidade": "OrthoDontic Centro · Edifício Odin do Amaral - R. Mal. Deodoro",
+    "unidade": "OrthoDontic · Edifício Odin do Amaral - R. Mal. Deodoro",
     "rotulo": "PR · Curitiba",
     "com_texto": 68,
     "sem_estagio": 38,
@@ -468,7 +568,7 @@
   },
   "meu_territorio": {
     "local_id": "ortho_cwb_centro_4",
-    "unidade": "OrthoDontic Centro · Edifício Odin do Amaral - R. Mal. Deodoro",
+    "unidade": "OrthoDontic · Edifício Odin do Amaral - R. Mal. Deodoro",
     "medido": true,
     "location": {
       "lat": -25.431754899999998,
@@ -547,56 +647,7 @@
       "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
     }
   },
-  "execucao": {
-    "local_id": "ortho_cwb_centro_4",
-    "praca_id": "curitiba",
-    "rotulo": "PR · Curitiba",
-    "unidade": "OrthoDontic Centro · Edifício Odin do Amaral - R. Mal. Deodoro",
-    "itens": [
-      {
-        "problema": "Esta loja aparece em **1 das 213 buscas** que testamos na cidade.",
-        "e_marketing": true,
-        "execucao": {
-          "necessaria": true,
-          "tipo": "seo_local",
-          "especialidade": "marketing local e Google Business",
-          "problema": "a unidade aparece em 1 busca de 213 testadas na própria cidade",
-          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-          "evidencias": [
-            "aparece em 1 de 213 buscas",
-            "aparece em: {'frase': 'aparelho ortodôntico curitiba preços', 'posicao': 4, 'intencao': 'PREÇO'}"
-          ],
-          "nao_fazer": [
-            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-            "não prometer posição: o Google não vende ordem no mapa"
-          ],
-          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-          "prazo": "30 dias",
-          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-          "recoletar_em_dias": 30
-        },
-        "confianca": {
-          "natureza": "recomendacao",
-          "confianca": "baixa",
-          "medido": true,
-          "amostra": 213,
-          "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/portal/presenca_por_loja.json",
-          "a_favor": [
-            "Esta loja aparece em **1 das 213 buscas** que testamos na cidade."
-          ],
-          "contra": [
-            "uma medição só — a segunda dirá se é estrutural ou momento"
-          ],
-          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-          "procedencia": "medido em 213 buscas testadas, 1 medição"
-        }
-      }
-    ],
-    "de_marketing": 1,
-    "de_operacao": 0
-  },
+  "execucao": null,
   "meu_bairro": {
     "bairro": "Centro",
     "clinicas": 74,

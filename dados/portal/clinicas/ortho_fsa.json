@@ -366,7 +366,7 @@
     "local_id": "ortho_fsa",
     "praca_id": "feira",
     "rotulo": "BA · Feira de Santana",
-    "unidade": "OrthoDontic Feira de Santana",
+    "unidade": "OrthoDontic",
     "medido_em": "2026-08-13",
     "raio_m": 3000,
     "de": 5,
@@ -459,7 +459,7 @@
   },
   "jornada": {
     "local_id": "ortho_fsa",
-    "unidade": "OrthoDontic Feira de Santana",
+    "unidade": "OrthoDontic",
     "rotulo": "BA · Feira de Santana",
     "com_texto": 110,
     "sem_estagio": 79,
@@ -700,7 +700,7 @@
   },
   "meu_territorio": {
     "local_id": "ortho_fsa",
-    "unidade": "OrthoDontic Feira de Santana",
+    "unidade": "OrthoDontic",
     "medido": true,
     "location": {
       "lat": -12.2572327,
@@ -772,50 +772,8 @@
     "local_id": "ortho_fsa",
     "praca_id": "feira",
     "rotulo": "BA · Feira de Santana",
-    "unidade": "OrthoDontic Feira de Santana",
+    "unidade": "OrthoDontic",
     "itens": [
-      {
-        "problema": "Esta loja aparece em **3 das 123 buscas** que testamos na cidade.",
-        "e_marketing": true,
-        "execucao": {
-          "necessaria": true,
-          "tipo": "seo_local",
-          "especialidade": "marketing local e Google Business",
-          "problema": "a unidade aparece em 3 buscas de 123 testadas na própria cidade",
-          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-          "evidencias": [
-            "aparece em 3 de 123 buscas",
-            "aparece em: {'frase': 'ortodontista feira de santana', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-            "aparece em: {'frase': 'aparelho ortodôntico feira de santana', 'posicao': 2, 'intencao': 'GENÉRICO'}",
-            "aparece em: {'frase': 'ortodontista em feira de santana', 'posicao': 3, 'intencao': 'GENÉRICO'}"
-          ],
-          "nao_fazer": [
-            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-            "não prometer posição: o Google não vende ordem no mapa"
-          ],
-          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-          "prazo": "30 dias",
-          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-          "recoletar_em_dias": 30
-        },
-        "confianca": {
-          "natureza": "recomendacao",
-          "confianca": "baixa",
-          "medido": true,
-          "amostra": 123,
-          "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/portal/presenca_por_loja.json",
-          "a_favor": [
-            "Esta loja aparece em **3 das 123 buscas** que testamos na cidade."
-          ],
-          "contra": [
-            "uma medição só — a segunda dirá se é estrutural ou momento"
-          ],
-          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-          "procedencia": "medido em 123 buscas testadas, 1 medição"
-        }
-      },
       {
         "problema": "10 avaliações negativas abertas sem resposta",
         "e_marketing": false,
@@ -842,8 +800,9 @@
         }
       }
     ],
-    "de_marketing": 1,
-    "de_operacao": 1
+    "de_marketing": 0,
+    "de_operacao": 1,
+    "descartados": 0
   },
   "meu_bairro": {
     "bairro": "Centro",

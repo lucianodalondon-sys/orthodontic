@@ -877,3 +877,26 @@ noutra empilhadas numa rua só.
 O campo `e_concentracao_nao_demanda` existe para ser **exibido**, não
 escondido: bairro cheio de clínica é onde as clínicas abrem, não
 necessariamente onde o paciente mora.
+
+### 12.5 · A ferramenta nova no painel — `perto`
+
+**Não é item de menu.** O menu continua com sete seções. Isto é mais um
+cartão dentro do PAINEL DE CONTROLE, grupo **lojas**, com a mesma anatomia
+dos outros: pergunta, número, frase.
+
+    pergunta  "A clínica aparece para quem está perto dela?"
+    número    2        (lojas que não aparecem nem no próprio quarteirão)
+    frase     "de 45 lojas medidas a partir do próprio endereço, essas não
+               aparecem nem para quem está a 3 km. Outras 9 lojas pareciam
+               invisíveis pela busca da cidade inteira e aparecem aqui:
+               numa cidade grande ninguém disputa o nome do município."
+
+A tela `perto` lê `dados/portal/perto_da_loja.json`. Ela é uma **lista de
+lojas**, ordenada da pior para a melhor, e cada linha traz: rótulo da praça,
+nome da unidade, `aparece_em`/`de`, `em_primeiro`, e a comparação
+`na_cidade`. O cabeçalho da tela usa `o_que_e`, `por_que_existe` e
+`o_que_nao_e`, que já vêm escritos no payload.
+
+O número do cartão é o das lojas **realmente** invisíveis. Não use
+`invisivel` da leitura de cidade para esse cartão: é o número que estava
+errado e que esta tela existe para corrigir.

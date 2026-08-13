@@ -331,7 +331,7 @@
     },
     {
       "o_que_e": "Atende na hora marcada",
-      "pct": 4.0
+      "pct": 3.9
     },
     {
       "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
@@ -355,7 +355,7 @@
     },
     {
       "o_que_e": "Tem profissional que o paciente chama pelo nome",
-      "pct": 9.5
+      "pct": 9.4
     }
   ],
   "rival": {
@@ -371,7 +371,7 @@
         "quem": "Dra. Suéllen Priscilla - Odontopediatria e Ortodontia",
         "eles": 16.9,
         "nos": 0.8,
-        "razao": 21.3
+        "razao": 21.4
       },
       {
         "eixo": "trata_crianca",
@@ -379,7 +379,7 @@
         "quem": "Dra. Suéllen Priscilla - Odontopediatria e Ortodontia",
         "eles": 71.4,
         "nos": 6.6,
-        "razao": 10.8
+        "razao": 10.9
       },
       {
         "eixo": "explica_o_tratamento",
@@ -394,7 +394,7 @@
         "o_que_e": "Tem profissional que o paciente chama pelo nome",
         "quem": "Dra. Suéllen Priscilla - Odontopediatria e Ortodontia",
         "eles": 41.6,
-        "nos": 9.5,
+        "nos": 9.4,
         "razao": 4.4
       },
       {
@@ -556,7 +556,7 @@
     "local_id": "ortho_souza_naves",
     "praca_id": "londrina",
     "rotulo": "PR · Londrina",
-    "unidade": "OrthoDontic Souza Naves",
+    "unidade": "OrthoDontic · Souza Naves",
     "medido_em": "2026-08-13",
     "raio_m": 3000,
     "de": 5,
@@ -649,7 +649,7 @@
   },
   "jornada": {
     "local_id": "ortho_souza_naves",
-    "unidade": "OrthoDontic Souza Naves",
+    "unidade": "OrthoDontic · Souza Naves",
     "rotulo": "PR · Londrina",
     "com_texto": 381,
     "sem_estagio": 243,
@@ -960,7 +960,7 @@
   },
   "meu_territorio": {
     "local_id": "ortho_souza_naves",
-    "unidade": "OrthoDontic Souza Naves",
+    "unidade": "OrthoDontic · Souza Naves",
     "medido": true,
     "location": {
       "lat": -23.3246649,
@@ -1038,7 +1038,7 @@
     "local_id": "ortho_souza_naves",
     "praca_id": "londrina",
     "rotulo": "PR · Londrina",
-    "unidade": "OrthoDontic Souza Naves",
+    "unidade": "OrthoDontic · Souza Naves",
     "itens": [
       {
         "problema": "A dor pública desta unidade aparece em contato — 12 avaliações de 1 ou 2 estrelas de 16 que falam desse momento.",
@@ -1074,50 +1074,6 @@
         }
       },
       {
-        "problema": "Esta loja aparece em **5 das 176 buscas** que testamos na cidade.",
-        "e_marketing": true,
-        "execucao": {
-          "necessaria": true,
-          "tipo": "seo_local",
-          "especialidade": "marketing local e Google Business",
-          "problema": "a unidade aparece em 5 buscas de 176 testadas na própria cidade",
-          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-          "evidencias": [
-            "aparece em 5 de 176 buscas",
-            "aparece em: {'frase': 'aparelho ortodôntico londrina', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-            "aparece em: {'frase': 'aparelho ortodôntico em londrina', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-            "aparece em: {'frase': 'ortodontista londrina', 'posicao': 2, 'intencao': 'GENÉRICO'}",
-            "aparece em: {'frase': 'ortodontista em londrina', 'posicao': 2, 'intencao': 'GENÉRICO'}",
-            "aparece em: {'frase': 'melhor ortodontista de londrina', 'posicao': 2, 'intencao': 'REPUTAÇÃO'}"
-          ],
-          "nao_fazer": [
-            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-            "não prometer posição: o Google não vende ordem no mapa"
-          ],
-          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-          "prazo": "30 dias",
-          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-          "recoletar_em_dias": 30
-        },
-        "confianca": {
-          "natureza": "recomendacao",
-          "confianca": "baixa",
-          "medido": true,
-          "amostra": 176,
-          "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/portal/presenca_por_loja.json",
-          "a_favor": [
-            "Esta loja aparece em **5 das 176 buscas** que testamos na cidade."
-          ],
-          "contra": [
-            "uma medição só — a segunda dirá se é estrutural ou momento"
-          ],
-          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-          "procedencia": "medido em 176 buscas testadas, 1 medição"
-        }
-      },
-      {
         "problema": "35 avaliações negativas abertas sem resposta",
         "e_marketing": false,
         "execucao": {
@@ -1143,8 +1099,9 @@
         }
       }
     ],
-    "de_marketing": 1,
-    "de_operacao": 2
+    "de_marketing": 0,
+    "de_operacao": 2,
+    "descartados": 0
   },
   "meu_bairro": {
     "bairro": "Ipiranga",

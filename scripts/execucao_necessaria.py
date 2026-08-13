@@ -79,6 +79,14 @@ def main():
 
     ident = identidades()
     pres = {x["local_id"]: x for x in carrega("presenca_por_loja").get("lojas", [])}
+    # A ESCALA DA MEDIÇÃO DECIDE SE EXISTE PROBLEMA.
+    #
+    # "aparece em 0 de 193 buscas da cidade" gerava briefing de SEO local
+    # para as quatro unidades de São Paulo. Uma delas é o PRIMEIRO
+    # resultado nas cinco buscas feitas da porta dela. Mandar essa para a
+    # agência é gastar dinheiro num problema que não existe — e é a mesma
+    # família de erro que mandar problema de balcão para campanha.
+    perto = {x["local_id"]: x for x in carrega("perto_da_loja").get("lojas", [])}
     jor = {x["local_id"]: x for x in carrega("jornada").get("lojas", [])}
     cx = {x.get("local_id"): x for x in carrega("caixa_de_respostas").get("unidades", [])}
     ba = {x["praca_id"]: x for x in carrega("bairros").get("pracas", [])}
@@ -129,7 +137,12 @@ def main():
 
             # ── 2 · invisível na busca é MARKETING, e tem briefing ─────
             pb = pres.get(lid) or {}
-            if pb and pb.get("de"):
+            pe = perto.get(lid) or {}
+            # a loja se defende no próprio quarteirão? então o número da
+            # cidade é escala, não gargalo, e não gera briefing
+            defende_se = bool(pe.get("de")) and (
+                (pe.get("aparece_em") or 0) / pe["de"] >= 0.4)
+            if pb and pb.get("de") and not defende_se:
                 ap_ = pb.get("aparece_em") or 0
                 if pb.get("invisivel") or (pb["de"] and ap_ / pb["de"] < 0.08):
                     frases = (pb.get("frases_onde_aparece") or [])[:5]
@@ -180,6 +193,42 @@ def main():
                                              "noutra data"),
                     })
 
+            # ── 2b · e quando NÃO precisa, isso também se declara ──────
+            #
+            # Estado vazio é conteúdo. Se a leitura da cidade acusou e a
+            # leitura de perto inocentou, esconder o caso faria a unidade
+            # sumir da tela — e amanhã alguém abriria o número da cidade e
+            # pediria a campanha de novo.
+            if pb and pb.get("de") and defende_se and not (pb.get("aparece_em") or 0):
+                itens.append({
+                    "problema": (f"a leitura da cidade diz 0 de {pb['de']}, "
+                                 f"e ela não vale nesta escala"),
+                    "e_marketing": True,
+                    "execucao": {
+                        "necessaria": False,
+                        "tipo": "seo_local",
+                        "porque_nao": (
+                            f"medida a partir do endereço da própria "
+                            f"clínica, ela aparece em "
+                            f"{conta(pe['aparece_em'], 'busca', 'buscas')} "
+                            f"de {pe['de']}"
+                            + (f", em {conta(pe['em_primeiro'], 'vez', 'vezes')} "
+                               f"em 1º lugar" if pe.get("em_primeiro") else "")
+                            + ". Ninguém disputa o nome do município inteiro "
+                              "numa cidade deste tamanho: o paciente busca de "
+                              "onde está."),
+                        "metrica_de_validacao": "a mesma grade de buscas, "
+                                                "a partir do mesmo endereço",
+                        "recoletar_em_dias": 60,
+                    },
+                    "confianca": confianca(
+                        "fato", amostra=pe.get("de"),
+                        unidade_amostra=("busca testada", "buscas testadas"),
+                        medicoes=1,
+                        fonte="dados/serie/perto_da_loja.jsonl",
+                        o_que_aumentaria="mais frases por loja na próxima grade"),
+                })
+
             # ── 3 · avaliação negativa aberta é OPERAÇÃO ───────────────
             c = cx.get(lid) or {}
             if (c.get("abertas") or 0) >= 5:
@@ -211,20 +260,35 @@ def main():
                     "local_id": lid, "praca_id": pid,
                     "rotulo": pr.get("rotulo"), "unidade": unidade,
                     "itens": itens,
-                    "de_marketing": sum(1 for i in itens if i["e_marketing"]),
-                    "de_operacao": sum(1 for i in itens if not i["e_marketing"]),
+                    # só conta quem GERA trabalho: o caso declarado como
+                    # "não precisa" aparece na tela e fica fora da conta
+                    "de_marketing": sum(
+                        1 for i in itens
+                        if i["e_marketing"] and i["execucao"].get("necessaria")),
+                    "de_operacao": sum(
+                        1 for i in itens
+                        if not i["e_marketing"] and i["execucao"].get("necessaria")),
+                    "descartados": sum(
+                        1 for i in itens if not i["execucao"].get("necessaria")),
                 })
 
     mkt = sum(x["de_marketing"] for x in fora)
     ope = sum(x["de_operacao"] for x in fora)
-    print(f"  {conta(len(fora), 'unidade')} com execução a recomendar")
+    desc = sum(x["descartados"] for x in fora)
+    # unidade que só recebeu declaração de "não precisa" não é unidade com
+    # execução a recomendar — ela aparece na tela, e fora desta conta
+    com_trabalho = [x for x in fora if x["de_marketing"] or x["de_operacao"]]
+    print(f"  {conta(len(com_trabalho), 'unidade')} com execução a recomendar")
     print(f"    {ope} de OPERAÇÃO — ficam com a unidade")
     print(f"    {mkt} de MARKETING — geram briefing")
+    print("    " + conta(desc, "caso medido e declarado como NÃO necessário",
+                         "casos medidos e declarados como NÃO necessários"))
     for x in fora[:6]:
         print(f"\n  {x['rotulo']} · {x['unidade'][:34]}")
         for i in x["itens"]:
-            marca = "MKT" if i["e_marketing"] else "OPE"
-            print(f"    [{marca}] {(i['problema'] or '')[:78]}")
+            marca = ("MKT" if i["e_marketing"] else "OPE") \
+                if i["execucao"].get("necessaria") else "—"
+            print(f"    [{marca:>3s}] {(i['problema'] or '')[:78]}")
 
     if not a.salvar:
         print("\n  (--salvar para gravar)")

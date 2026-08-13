@@ -112,12 +112,158 @@
     ],
     "itens_total": 4
   },
-  "voz_do_paciente": null,
+  "voz_do_paciente": [
+    {
+      "o_que_e": "Explica o que vai fazer, antes de fazer",
+      "pct": 1.1
+    },
+    {
+      "o_que_e": "Atende na hora marcada",
+      "pct": 1.1
+    },
+    {
+      "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
+      "pct": 1.1
+    },
+    {
+      "o_que_e": "Cuida de quem tem medo de dentista",
+      "pct": 0.0
+    },
+    {
+      "o_que_e": "Resolve no mesmo dia",
+      "pct": 0.0
+    },
+    {
+      "o_que_e": "Sabe atender criança",
+      "pct": 3.4
+    },
+    {
+      "o_que_e": "Continua presente depois que vendeu",
+      "pct": 4.5
+    },
+    {
+      "o_que_e": "Tem profissional que o paciente chama pelo nome",
+      "pct": 8.0
+    }
+  ],
   "rival": {
-    "comparados": [],
-    "vantagens_deles": [],
-    "fora": [],
-    "fora_total": 0,
+    "comparados": [
+      "Odonto e Você",
+      "Dr Fabiano Chaves - Clínica Integrada"
+    ],
+    "vantagens_deles": [
+      {
+        "eixo": "preco_claro",
+        "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
+        "quem": "Odonto e Você",
+        "eles": 8.8,
+        "nos": 1.1,
+        "razao": 7.7
+      },
+      {
+        "eixo": "explica_o_tratamento",
+        "o_que_e": "Explica o que vai fazer, antes de fazer",
+        "quem": "Dr Fabiano Chaves - Clínica Integrada",
+        "eles": 6.2,
+        "nos": 1.1,
+        "razao": 5.5
+      },
+      {
+        "eixo": "hora_marcada_e_hora",
+        "o_que_e": "Atende na hora marcada",
+        "quem": "Dr Fabiano Chaves - Clínica Integrada",
+        "eles": 5.2,
+        "nos": 1.1,
+        "razao": 4.6
+      },
+      {
+        "eixo": "gente_com_nome",
+        "o_que_e": "Tem profissional que o paciente chama pelo nome",
+        "quem": "Dr Fabiano Chaves - Clínica Integrada",
+        "eles": 34.4,
+        "nos": 8.0,
+        "razao": 4.3
+      },
+      {
+        "eixo": "pos_venda",
+        "o_que_e": "Continua presente depois que vendeu",
+        "quem": "Dr Fabiano Chaves - Clínica Integrada",
+        "eles": 10.4,
+        "nos": 4.5,
+        "razao": 2.3
+      },
+      {
+        "eixo": "trata_crianca",
+        "o_que_e": "Sabe atender criança",
+        "quem": "Dr Fabiano Chaves - Clínica Integrada",
+        "eles": 7.3,
+        "nos": 3.4,
+        "razao": 2.1
+      }
+    ],
+    "fora": [
+      {
+        "nome": "Contraste Radiologia Odontológica | Joinville Centro",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 77 avaliações citam aparelho"
+      },
+      {
+        "nome": "Sorrisus Joinville",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 74 avaliações citam aparelho"
+      },
+      {
+        "nome": "Uniclass Odontologia Estética",
+        "fora": true,
+        "por_que_fora": "zona cinzenta: 4 de 93 avaliações citam aparelho (4%) — faz aparelho, mas não é o negócio principal"
+      },
+      {
+        "nome": "DoctorÁgape",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 68 avaliações citam aparelho"
+      },
+      {
+        "nome": "ODONTOCOT",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 72 avaliações citam aparelho"
+      },
+      {
+        "nome": "Via Odonto Floresta",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 80 avaliações citam aparelho"
+      },
+      {
+        "nome": "Sorria Studio Odontologia - Unidade Atiradores",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 110 avaliações citam aparelho"
+      },
+      {
+        "nome": "Duo Oral Care",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 91 avaliações citam aparelho"
+      },
+      {
+        "nome": "Dental Co",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 1 de 96 avaliações citam aparelho"
+      },
+      {
+        "nome": "G7 Odontologia",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 103 avaliações citam aparelho"
+      },
+      {
+        "nome": "Odontocompany",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 2 de 107 avaliações citam aparelho"
+      },
+      {
+        "nome": "Tio Gui Odontopediatria",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 2 de 110 avaliações citam aparelho"
+      }
+    ],
+    "fora_total": 12,
     "sem_comparacao_porque": null
   },
   "presenca_na_busca": {
@@ -172,7 +318,7 @@
     "local_id": "ortho_joi_centro",
     "praca_id": "joinville",
     "rotulo": "SC · Joinville",
-    "unidade": "OrthoDontic Centro",
+    "unidade": "OrthoDontic · Centro",
     "medido_em": "2026-08-13",
     "raio_m": 3000,
     "de": 5,
@@ -265,7 +411,7 @@
   },
   "jornada": {
     "local_id": "ortho_joi_centro",
-    "unidade": "OrthoDontic Centro",
+    "unidade": "OrthoDontic · Centro",
     "rotulo": "SC · Joinville",
     "com_texto": 88,
     "sem_estagio": 55,
@@ -506,7 +652,7 @@
   },
   "meu_territorio": {
     "local_id": "ortho_joi_centro",
-    "unidade": "OrthoDontic Centro",
+    "unidade": "OrthoDontic · Centro",
     "medido": true,
     "location": {
       "lat": -26.3028017,
@@ -585,59 +731,7 @@
       "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
     }
   },
-  "execucao": {
-    "local_id": "ortho_joi_centro",
-    "praca_id": "joinville",
-    "rotulo": "SC · Joinville",
-    "unidade": "OrthoDontic Centro",
-    "itens": [
-      {
-        "problema": "Esta loja aparece em **4 das 157 buscas** que testamos na cidade.",
-        "e_marketing": true,
-        "execucao": {
-          "necessaria": true,
-          "tipo": "seo_local",
-          "especialidade": "marketing local e Google Business",
-          "problema": "a unidade aparece em 4 buscas de 157 testadas na própria cidade",
-          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-          "evidencias": [
-            "aparece em 4 de 157 buscas",
-            "aparece em: {'frase': 'aparelho ortodontico joinville', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-            "aparece em: {'frase': 'dentista joinville aparelho', 'posicao': 1, 'intencao': 'GENÉRICO'}",
-            "aparece em: {'frase': 'ortodontista joinville', 'posicao': 3, 'intencao': 'GENÉRICO'}",
-            "aparece em: {'frase': 'ortodontista em joinville', 'posicao': 4, 'intencao': 'GENÉRICO'}"
-          ],
-          "nao_fazer": [
-            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-            "não prometer posição: o Google não vende ordem no mapa"
-          ],
-          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-          "prazo": "30 dias",
-          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-          "recoletar_em_dias": 30
-        },
-        "confianca": {
-          "natureza": "recomendacao",
-          "confianca": "baixa",
-          "medido": true,
-          "amostra": 157,
-          "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/portal/presenca_por_loja.json",
-          "a_favor": [
-            "Esta loja aparece em **4 das 157 buscas** que testamos na cidade."
-          ],
-          "contra": [
-            "uma medição só — a segunda dirá se é estrutural ou momento"
-          ],
-          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-          "procedencia": "medido em 157 buscas testadas, 1 medição"
-        }
-      }
-    ],
-    "de_marketing": 1,
-    "de_operacao": 0
-  },
+  "execucao": null,
   "meu_bairro": {
     "bairro": "Centro",
     "clinicas": 48,

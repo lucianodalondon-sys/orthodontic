@@ -98,12 +98,158 @@
     ],
     "itens_total": 1
   },
-  "voz_do_paciente": null,
+  "voz_do_paciente": [
+    {
+      "o_que_e": "Explica o que vai fazer, antes de fazer",
+      "pct": 5.8
+    },
+    {
+      "o_que_e": "Atende na hora marcada",
+      "pct": 1.9
+    },
+    {
+      "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
+      "pct": 1.0
+    },
+    {
+      "o_que_e": "Cuida de quem tem medo de dentista",
+      "pct": 0.0
+    },
+    {
+      "o_que_e": "Resolve no mesmo dia",
+      "pct": 0.0
+    },
+    {
+      "o_que_e": "Sabe atender criança",
+      "pct": 1.9
+    },
+    {
+      "o_que_e": "Continua presente depois que vendeu",
+      "pct": 1.9
+    },
+    {
+      "o_que_e": "Tem profissional que o paciente chama pelo nome",
+      "pct": 14.4
+    }
+  ],
   "rival": {
-    "comparados": [],
-    "vantagens_deles": [],
-    "fora": [],
-    "fora_total": 0,
+    "comparados": [
+      "Condé Clínica",
+      "Afeto Odontologia Goiânia"
+    ],
+    "vantagens_deles": [
+      {
+        "eixo": "pos_venda",
+        "o_que_e": "Continua presente depois que vendeu",
+        "quem": "Afeto Odontologia Goiânia",
+        "eles": 16.2,
+        "nos": 1.9,
+        "razao": 8.4
+      },
+      {
+        "eixo": "trata_crianca",
+        "o_que_e": "Sabe atender criança",
+        "quem": "Afeto Odontologia Goiânia",
+        "eles": 8.6,
+        "nos": 1.9,
+        "razao": 4.5
+      },
+      {
+        "eixo": "hora_marcada_e_hora",
+        "o_que_e": "Atende na hora marcada",
+        "quem": "Afeto Odontologia Goiânia",
+        "eles": 5.7,
+        "nos": 1.9,
+        "razao": 3.0
+      },
+      {
+        "eixo": "preco_claro",
+        "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
+        "quem": "Afeto Odontologia Goiânia",
+        "eles": 2.9,
+        "nos": 1.0,
+        "razao": 3.0
+      },
+      {
+        "eixo": "gente_com_nome",
+        "o_que_e": "Tem profissional que o paciente chama pelo nome",
+        "quem": "Condé Clínica",
+        "eles": 35.5,
+        "nos": 14.4,
+        "razao": 2.5
+      },
+      {
+        "eixo": "explica_o_tratamento",
+        "o_que_e": "Explica o que vai fazer, antes de fazer",
+        "quem": "Afeto Odontologia Goiânia",
+        "eles": 9.5,
+        "nos": 5.8,
+        "razao": 1.7
+      }
+    ],
+    "fora": [
+      {
+        "nome": "Centro Odontológico Dra. Renata Taborda",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 106 avaliações citam aparelho"
+      },
+      {
+        "nome": "Iceokids | Odontopediatria",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 91 avaliações citam aparelho"
+      },
+      {
+        "nome": "Camargo Odontologia",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 76 avaliações citam aparelho"
+      },
+      {
+        "nome": "CGO - Centro Goiano de Odontologia",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 110 avaliações citam aparelho"
+      },
+      {
+        "nome": "Vita Implantes - Clínica Odontológica",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 1 de 106 avaliações citam aparelho"
+      },
+      {
+        "nome": "Vintage Odontologia",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 2 de 80 avaliações citam aparelho"
+      },
+      {
+        "nome": "Crool Centro Odontológico",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 2 de 105 avaliações citam aparelho"
+      },
+      {
+        "nome": "Dra. Letícia Candini e equipe | Lev Odontologia",
+        "fora": true,
+        "por_que_fora": "zona cinzenta: 3 de 113 avaliações citam aparelho (3%) — faz aparelho, mas não é o negócio principal"
+      },
+      {
+        "nome": "OdontoCompany",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 2 de 115 avaliações citam aparelho"
+      },
+      {
+        "nome": "OdontoSin | Implantes Dentários | Dentista | Goiânia",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 80 avaliações citam aparelho"
+      },
+      {
+        "nome": "Expodonto Odontologia",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 102 avaliações citam aparelho"
+      },
+      {
+        "nome": "Odontto Centro - Odontologia Especializada",
+        "fora": true,
+        "por_que_fora": "zona cinzenta: 3 de 85 avaliações citam aparelho (4%) — faz aparelho, mas não é o negócio principal"
+      }
+    ],
+    "fora_total": 12,
     "sem_comparacao_porque": null
   },
   "presenca_na_busca": {
@@ -137,7 +283,7 @@
     "local_id": "ortho_gyn_st_morada_do_sol",
     "praca_id": "goiania",
     "rotulo": "GO · Goiânia",
-    "unidade": "OrthoDontic St. Morada do Sol",
+    "unidade": "OrthoDontic · St. Morada do Sol",
     "medido_em": "2026-08-13",
     "raio_m": 3000,
     "de": 5,
@@ -230,7 +376,7 @@
   },
   "jornada": {
     "local_id": "ortho_gyn_st_morada_do_sol",
-    "unidade": "OrthoDontic St. Morada do Sol",
+    "unidade": "OrthoDontic · St. Morada do Sol",
     "rotulo": "GO · Goiânia",
     "com_texto": 104,
     "sem_estagio": 71,
@@ -421,7 +567,7 @@
   },
   "meu_territorio": {
     "local_id": "ortho_gyn_st_morada_do_sol",
-    "unidade": "OrthoDontic St. Morada do Sol",
+    "unidade": "OrthoDontic · St. Morada do Sol",
     "medido": true,
     "location": {
       "lat": -16.6282842,
@@ -499,50 +645,36 @@
     "local_id": "ortho_gyn_st_morada_do_sol",
     "praca_id": "goiania",
     "rotulo": "GO · Goiânia",
-    "unidade": "OrthoDontic St. Morada do Sol",
+    "unidade": "OrthoDontic · St. Morada do Sol",
     "itens": [
       {
-        "problema": "Esta loja **não aparece em nenhuma** das 196 buscas que testamos na cidade.",
+        "problema": "a leitura da cidade diz 0 de 196, e ela não vale nesta escala",
         "e_marketing": true,
         "execucao": {
-          "necessaria": true,
+          "necessaria": false,
           "tipo": "seo_local",
-          "especialidade": "marketing local e Google Business",
-          "problema": "a unidade aparece em 0 buscas de 196 testadas na própria cidade",
-          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-          "evidencias": [
-            "aparece em 0 de 196 buscas"
-          ],
-          "nao_fazer": [
-            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-            "não prometer posição: o Google não vende ordem no mapa"
-          ],
-          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-          "prazo": "30 dias",
-          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-          "recoletar_em_dias": 30
+          "porque_nao": "medida a partir do endereço da própria clínica, ela aparece em 4 buscas de 5, em 4 vezes em 1º lugar. Ninguém disputa o nome do município inteiro numa cidade deste tamanho: o paciente busca de onde está.",
+          "metrica_de_validacao": "a mesma grade de buscas, a partir do mesmo endereço",
+          "recoletar_em_dias": 60
         },
         "confianca": {
-          "natureza": "recomendacao",
+          "natureza": "fato",
           "confianca": "baixa",
           "medido": true,
-          "amostra": 196,
+          "amostra": 5,
           "janela_dias": null,
           "medicoes": 1,
-          "fonte": "dados/portal/presenca_por_loja.json",
-          "a_favor": [
-            "Esta loja **não aparece em nenhuma** das 196 buscas que testamos na cidade."
-          ],
-          "contra": [
-            "uma medição só — a segunda dirá se é estrutural ou momento"
-          ],
-          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-          "procedencia": "medido em 196 buscas testadas, 1 medição"
+          "fonte": "dados/serie/perto_da_loja.jsonl",
+          "a_favor": [],
+          "contra": [],
+          "o_que_aumentaria": "mais frases por loja na próxima grade",
+          "procedencia": "medido em 5 buscas testadas, 1 medição"
         }
       }
     ],
-    "de_marketing": 1,
-    "de_operacao": 0
+    "de_marketing": 0,
+    "de_operacao": 0,
+    "descartados": 1
   },
   "meu_bairro": null,
   "acoes": {

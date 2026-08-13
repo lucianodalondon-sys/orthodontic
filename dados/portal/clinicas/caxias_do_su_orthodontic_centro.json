@@ -82,17 +82,133 @@
   "quem_avanca": null,
   "o_que_mudou": null,
   "sem_resposta": {
-    "abertas": null,
-    "com_texto": null,
-    "itens": [],
-    "itens_total": 0
+    "abertas": 5,
+    "com_texto": 5,
+    "itens": [
+      {
+        "nota": 1,
+        "data": "2026-08-06",
+        "texto": "Muita demora  no atendimento ,mais de uma hora esperando sempre, sendo que é horário e data agendada",
+        "tem_texto": true
+      },
+      {
+        "nota": 3,
+        "data": "2026-07-14",
+        "texto": "Tirando o fato da demora mesmo com horário agendado, e o fato de que o meu dentista nunca está lá, é um bom lugar.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-02-28",
+        "texto": "Falta de respeito com o cliente mais de uma hora de atraso para um simples consulta falta de organização e profissionalismo!",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-12-29",
+        "texto": "Chego no horário marcado fico esperando uma hora e meia, e eles passam o pessoal que veio bem depois de mim, é muita falta de respeito com os clientes...",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-05-26",
+        "texto": "Que bom",
+        "tem_texto": true
+      }
+    ],
+    "itens_total": 5
   },
-  "voz_do_paciente": null,
+  "voz_do_paciente": [
+    {
+      "o_que_e": "Explica o que vai fazer, antes de fazer",
+      "pct": 3.4
+    },
+    {
+      "o_que_e": "Atende na hora marcada",
+      "pct": 5.7
+    },
+    {
+      "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
+      "pct": 0.0
+    },
+    {
+      "o_que_e": "Cuida de quem tem medo de dentista",
+      "pct": 0.0
+    },
+    {
+      "o_que_e": "Resolve no mesmo dia",
+      "pct": 0.0
+    },
+    {
+      "o_que_e": "Sabe atender criança",
+      "pct": 3.4
+    },
+    {
+      "o_que_e": "Continua presente depois que vendeu",
+      "pct": 1.1
+    },
+    {
+      "o_que_e": "Tem profissional que o paciente chama pelo nome",
+      "pct": 4.5
+    }
+  ],
   "rival": {
-    "comparados": [],
-    "vantagens_deles": [],
-    "fora": [],
-    "fora_total": 0,
+    "comparados": [
+      "Revitalle Implantes | Dentista Caxias do Sul | Clínica Odontológica | Invisalign",
+      "OrtoClínica",
+      "Top Estética Bucal - Clínica Odontológica | Dentista em Caxias do Sul | Aparelhos Ortodônticos | Implantes Dentários"
+    ],
+    "vantagens_deles": [
+      {
+        "eixo": "gente_com_nome",
+        "o_que_e": "Tem profissional que o paciente chama pelo nome",
+        "quem": "OrtoClínica",
+        "eles": 18.4,
+        "nos": 4.5,
+        "razao": 4.0
+      },
+      {
+        "eixo": "pos_venda",
+        "o_que_e": "Continua presente depois que vendeu",
+        "quem": "Revitalle Implantes | Dentista Caxias do Sul | Clínica Odontológica | Invisalign",
+        "eles": 3.3,
+        "nos": 1.1,
+        "razao": 2.9
+      }
+    ],
+    "fora": [
+      {
+        "nome": "CaxiasMed Clínica Médica e Odontológica",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 70 avaliações citam aparelho"
+      },
+      {
+        "nome": "Dentista | Implante Dentário | OdontoPlus Centro Odontológico | Cristo Redentor | Caxias do Sul - RS",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 64 avaliações citam aparelho"
+      },
+      {
+        "nome": "Brunetto Slovinscki Odontologia",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 1 de 55 avaliações citam aparelho"
+      },
+      {
+        "nome": "Massocatto Odontologia - Implantes Dentários",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 50 avaliações citam aparelho"
+      },
+      {
+        "nome": "ÁLIS - Odontologia Avançada",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 102 avaliações citam aparelho"
+      },
+      {
+        "nome": "Benne Odonto Clinica Odontológica Ltda",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 116 avaliações citam aparelho"
+      }
+    ],
+    "fora_total": 6,
     "sem_comparacao_porque": null
   },
   "presenca_na_busca": {
@@ -505,47 +621,58 @@
     "unidade": "OrthoDontic · Av. Júlio de Castilhos",
     "itens": [
       {
-        "problema": "Esta loja **não aparece em nenhuma** das 167 buscas que testamos na cidade.",
+        "problema": "a leitura da cidade diz 0 de 167, e ela não vale nesta escala",
         "e_marketing": true,
         "execucao": {
-          "necessaria": true,
+          "necessaria": false,
           "tipo": "seo_local",
-          "especialidade": "marketing local e Google Business",
-          "problema": "a unidade aparece em 0 buscas de 167 testadas na própria cidade",
-          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-          "evidencias": [
-            "aparece em 0 de 167 buscas"
-          ],
-          "nao_fazer": [
-            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-            "não prometer posição: o Google não vende ordem no mapa"
-          ],
-          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-          "prazo": "30 dias",
-          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-          "recoletar_em_dias": 30
+          "porque_nao": "medida a partir do endereço da própria clínica, ela aparece em 3 buscas de 5. Ninguém disputa o nome do município inteiro numa cidade deste tamanho: o paciente busca de onde está.",
+          "metrica_de_validacao": "a mesma grade de buscas, a partir do mesmo endereço",
+          "recoletar_em_dias": 60
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 5,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/perto_da_loja.jsonl",
+          "a_favor": [],
+          "contra": [],
+          "o_que_aumentaria": "mais frases por loja na próxima grade",
+          "procedencia": "medido em 5 buscas testadas, 1 medição"
+        }
+      },
+      {
+        "problema": "5 avaliações negativas abertas sem resposta",
+        "e_marketing": false,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "reputacao",
+          "especialidade": "a própria unidade",
+          "porque_nao_e_marketing": "responder paciente é trabalho de quem atende. Agência escrevendo resposta em nome da clínica é o caminho mais curto para uma resposta que o paciente percebe como automática.",
+          "metrica_de_validacao": "quantas seguem sem resposta na próxima coleta",
+          "recoletar_em_dias": 15
         },
         "confianca": {
           "natureza": "recomendacao",
           "confianca": "baixa",
           "medido": true,
-          "amostra": 167,
+          "amostra": 5,
           "janela_dias": null,
-          "medicoes": 1,
-          "fonte": "dados/portal/presenca_por_loja.json",
-          "a_favor": [
-            "Esta loja **não aparece em nenhuma** das 167 buscas que testamos na cidade."
-          ],
-          "contra": [
-            "uma medição só — a segunda dirá se é estrutural ou momento"
-          ],
-          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-          "procedencia": "medido em 167 buscas testadas, 1 medição"
+          "medicoes": null,
+          "fonte": "dados/portal/caixa_de_respostas.json",
+          "a_favor": [],
+          "contra": [],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 5 avaliações"
         }
       }
     ],
-    "de_marketing": 1,
-    "de_operacao": 0
+    "de_marketing": 0,
+    "de_operacao": 1,
+    "descartados": 1
   },
   "meu_bairro": {
     "bairro": "Centro",

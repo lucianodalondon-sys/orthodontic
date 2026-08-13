@@ -78,12 +78,97 @@
     "itens": [],
     "itens_total": 0
   },
-  "voz_do_paciente": null,
+  "voz_do_paciente": [
+    {
+      "o_que_e": "Explica o que vai fazer, antes de fazer",
+      "pct": 12.7
+    },
+    {
+      "o_que_e": "Atende na hora marcada",
+      "pct": 1.8
+    },
+    {
+      "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
+      "pct": 0.0
+    },
+    {
+      "o_que_e": "Cuida de quem tem medo de dentista",
+      "pct": 0.0
+    },
+    {
+      "o_que_e": "Resolve no mesmo dia",
+      "pct": 0.0
+    },
+    {
+      "o_que_e": "Sabe atender criança",
+      "pct": 0.0
+    },
+    {
+      "o_que_e": "Continua presente depois que vendeu",
+      "pct": 0.0
+    },
+    {
+      "o_que_e": "Tem profissional que o paciente chama pelo nome",
+      "pct": 7.3
+    }
+  ],
   "rival": {
-    "comparados": [],
-    "vantagens_deles": [],
-    "fora": [],
-    "fora_total": 0,
+    "comparados": [
+      "ApicalCenter Clinica Odontológica no Rio de Janeiro",
+      "SempreSorrir Odontologia | Implante Dentário | Aparelho Dentário | Vila Isabel | Rio de Janeiro - RJ",
+      "Dentista e Invisalign no Meier - Clinica Odontológica Prime Dente"
+    ],
+    "vantagens_deles": [
+      {
+        "eixo": "gente_com_nome",
+        "o_que_e": "Tem profissional que o paciente chama pelo nome",
+        "quem": "ApicalCenter Clinica Odontológica no Rio de Janeiro",
+        "eles": 29.5,
+        "nos": 7.3,
+        "razao": 4.1
+      },
+      {
+        "eixo": "hora_marcada_e_hora",
+        "o_que_e": "Atende na hora marcada",
+        "quem": "SempreSorrir Odontologia | Implante Dentário | Aparelho Dentário | Vila Isabel | Rio de Janeiro - RJ",
+        "eles": 3.9,
+        "nos": 1.8,
+        "razao": 2.2
+      }
+    ],
+    "fora": [
+      {
+        "nome": "Clínica Odontológica Oral 360 Tijuca | Dentista Tijuca | Implantes Dentários",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 2 de 101 avaliações citam aparelho"
+      },
+      {
+        "nome": "Pronto Oral - Emergência Odontológica, Dentista Emergência",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 90 avaliações citam aparelho"
+      },
+      {
+        "nome": "IRio Odontologia - Clínica Odontológica na Barra da Tijuca",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 87 avaliações citam aparelho"
+      },
+      {
+        "nome": "Penfold Odontologia de Excelência",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de implante: só 0 de 85 avaliações citam aparelho"
+      },
+      {
+        "nome": "Clínica Arcobelo",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 60 avaliações citam aparelho"
+      },
+      {
+        "nome": "Clínica Data X",
+        "fora": true,
+        "por_que_fora": "a voz do cliente é de odontologia geral: só 0 de 48 avaliações citam aparelho"
+      }
+    ],
+    "fora_total": 6,
     "sem_comparacao_porque": null
   },
   "presenca_na_busca": {
@@ -476,47 +561,33 @@
     "unidade": "OrthoDontic",
     "itens": [
       {
-        "problema": "Esta loja **não aparece em nenhuma** das 197 buscas que testamos na cidade.",
+        "problema": "a leitura da cidade diz 0 de 197, e ela não vale nesta escala",
         "e_marketing": true,
         "execucao": {
-          "necessaria": true,
+          "necessaria": false,
           "tipo": "seo_local",
-          "especialidade": "marketing local e Google Business",
-          "problema": "a unidade aparece em 0 buscas de 197 testadas na própria cidade",
-          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
-          "evidencias": [
-            "aparece em 0 de 197 buscas"
-          ],
-          "nao_fazer": [
-            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
-            "não prometer posição: o Google não vende ordem no mapa"
-          ],
-          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
-          "prazo": "30 dias",
-          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
-          "recoletar_em_dias": 30
+          "porque_nao": "medida a partir do endereço da própria clínica, ela aparece em 4 buscas de 5, em 1 vez em 1º lugar. Ninguém disputa o nome do município inteiro numa cidade deste tamanho: o paciente busca de onde está.",
+          "metrica_de_validacao": "a mesma grade de buscas, a partir do mesmo endereço",
+          "recoletar_em_dias": 60
         },
         "confianca": {
-          "natureza": "recomendacao",
+          "natureza": "fato",
           "confianca": "baixa",
           "medido": true,
-          "amostra": 197,
+          "amostra": 5,
           "janela_dias": null,
           "medicoes": 1,
-          "fonte": "dados/portal/presenca_por_loja.json",
-          "a_favor": [
-            "Esta loja **não aparece em nenhuma** das 197 buscas que testamos na cidade."
-          ],
-          "contra": [
-            "uma medição só — a segunda dirá se é estrutural ou momento"
-          ],
-          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
-          "procedencia": "medido em 197 buscas testadas, 1 medição"
+          "fonte": "dados/serie/perto_da_loja.jsonl",
+          "a_favor": [],
+          "contra": [],
+          "o_que_aumentaria": "mais frases por loja na próxima grade",
+          "procedencia": "medido em 5 buscas testadas, 1 medição"
         }
       }
     ],
-    "de_marketing": 1,
-    "de_operacao": 0
+    "de_marketing": 0,
+    "de_operacao": 0,
+    "descartados": 1
   },
   "meu_bairro": {
     "bairro": "Campo Grande",
