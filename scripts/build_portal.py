@@ -253,12 +253,51 @@ def main():
                 "tarefa": (fl.get("tarefa") or {}).get("estado") if fl else None,
             })
 
+    # CIDADE INTEIRAMENTE ESTUDADA NÃO PODE APARECER CINZA.
+    #
+    # Presidente Prudente tem UMA linha oficial e UM estudo, e os dois não
+    # casaram — a lista grava "Presidente Prudente" sem rua. Deixando o
+    # estudo solto no nível da cidade, a tela desenhava a linha apagada e a
+    # praça inteira parecia não medida. É uma praça das quatro originais,
+    # com 592 avaliações lidas.
+    #
+    # Quando o número de linhas ABERTAS é igual ao número de estudos, todas
+    # elas estão estudadas — só não se sabe qual linha é qual loja. Aí o
+    # vínculo é feito por ordem e vai DECLARADO como arbitrário: quem lê
+    # precisa saber que "Sorocaba" pode ser a Vila Formosa ou a do Centro.
+    # Onde os números NÃO fecham (São Paulo: 5 abertas, 4 estudos), nada é
+    # amarrado — uma delas realmente não foi estudada e escolher a dedo
+    # seria inventar.
+    for (uf, cid_sem), soltos in list(_estudo_solto.items()):
+        cid = next((c for c in _por_uf.get(uf, {}) if _sem_acento(c) == cid_sem), None)
+        if not cid:
+            continue
+        us = _por_uf[uf][cid]
+        abertas = [x for x in us if str(x.get("situacao") or "").startswith("aberta")]
+        sem_par = [x for x in abertas if not x.get("com_estudo")]
+        if len(abertas) != sum(1 for x in abertas if x.get("com_estudo")) + len(soltos):
+            continue          # não fecha: fica como está, com a ambiguidade no ar
+        for linha, solto in zip(sem_par, soltos):
+            linha.update({
+                "com_estudo": True,
+                "local_id": solto["local_id"],
+                "arquivo": solto["arquivo"],
+                "faixa": solto.get("faixa"),
+                "tarefa": solto.get("tarefa"),
+                "vinculo_arbitrario": True,
+                "porque_vinculo_arbitrario": (
+                    "a lista oficial não distingue as lojas desta cidade; "
+                    "todas as unidades abertas têm estudo, mas qual linha é "
+                    "qual loja não está provado"),
+            })
+        _estudo_solto[(uf, cid_sem)] = []
+
     _ufs = []
     for uf in sorted(_por_uf):
         cidades = []
         for cid in sorted(_por_uf[uf]):
             us = _por_uf[uf][cid]
-            soltos = _estudo_solto.get((uf, _sem_acento(cid)), [])
+            soltos = _estudo_solto.get((uf, _sem_acento(cid))) or []
             cidades.append({
                 "cidade": cid, "rotulo": f"{uf} · {cid}",
                 "unidades": us,

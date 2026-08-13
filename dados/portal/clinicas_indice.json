@@ -10,7 +10,7 @@
   "ufs_total": 23,
   "cidades_total": 303,
   "manchete": "45 de 373 unidades com estudo — as outras 328 ainda não foram escutadas",
-  "com_estudo_sem_linha_oficial": 6,
+  "com_estudo_sem_linha_oficial": 1,
   "cidades_com_mais_de_uma_loja": 44,
   "ufs": [
     {
@@ -3151,12 +3151,14 @@
               "avaliacoes": 1222,
               "ficha_medida_em": "2026-08-10",
               "confirmada": false,
-              "com_estudo": false,
-              "local_id": null,
-              "arquivo": null,
-              "faixa": null,
+              "com_estudo": true,
+              "local_id": "ortho_cba_fernando_correa",
+              "arquivo": "clinicas/ortho_cba_fernando_correa",
+              "faixa": "amarela",
               "urgencia": null,
-              "tarefa": null
+              "tarefa": null,
+              "vinculo_arbitrario": true,
+              "porque_vinculo_arbitrario": "a lista oficial não distingue as lojas desta cidade; todas as unidades abertas têm estudo, mas qual linha é qual loja não está provado"
             },
             {
               "unidade": "Cuiaba - Centro",
@@ -3167,35 +3169,22 @@
               "avaliacoes": 1222,
               "ficha_medida_em": "2026-08-10",
               "confirmada": false,
-              "com_estudo": false,
-              "local_id": null,
-              "arquivo": null,
-              "faixa": null,
+              "com_estudo": true,
+              "local_id": "ortho_cba_dom_bosco",
+              "arquivo": "clinicas/ortho_cba_dom_bosco",
+              "faixa": "amarela",
               "urgencia": null,
-              "tarefa": null
+              "tarefa": null,
+              "vinculo_arbitrario": true,
+              "porque_vinculo_arbitrario": "a lista oficial não distingue as lojas desta cidade; todas as unidades abertas têm estudo, mas qual linha é qual loja não está provado"
             }
           ],
           "unidades_total": 3,
           "com_estudo": 3,
           "sem_estudo": 0,
-          "linha_identifica_a_loja": false,
-          "estudos_sem_linha_oficial": [
-            {
-              "local_id": "ortho_cba_fernando_correa",
-              "unidade": "OrthoDontic · Pico do Amor",
-              "arquivo": "clinicas/ortho_cba_fernando_correa",
-              "faixa": "amarela",
-              "tarefa": null
-            },
-            {
-              "local_id": "ortho_cba_dom_bosco",
-              "unidade": "OrthoDontic · Centro Sul",
-              "arquivo": "clinicas/ortho_cba_dom_bosco",
-              "faixa": "amarela",
-              "tarefa": null
-            }
-          ],
-          "porque_sem_linha": "a lista oficial não confirmou a linha destas lojas, e como a cidade tem mais de uma não dá para dizer qual é qual",
+          "linha_identifica_a_loja": true,
+          "estudos_sem_linha_oficial": [],
+          "porque_sem_linha": null,
           "mais_de_uma_loja": true,
           "frase": "3 unidades nesta cidade"
         },
@@ -6392,12 +6381,14 @@
               "avaliacoes": 432,
               "ficha_medida_em": "2026-08-10",
               "confirmada": false,
-              "com_estudo": false,
-              "local_id": null,
-              "arquivo": null,
-              "faixa": null,
+              "com_estudo": true,
+              "local_id": "ortho_poa_rio_branco",
+              "arquivo": "clinicas/ortho_poa_rio_branco",
+              "faixa": "amarela",
               "urgencia": null,
-              "tarefa": null
+              "tarefa": null,
+              "vinculo_arbitrario": true,
+              "porque_vinculo_arbitrario": "a lista oficial não distingue as lojas desta cidade; todas as unidades abertas têm estudo, mas qual linha é qual loja não está provado"
             },
             {
               "unidade": "Unidade em Implantação",
@@ -6435,17 +6426,9 @@
           "unidades_total": 9,
           "com_estudo": 7,
           "sem_estudo": 2,
-          "linha_identifica_a_loja": false,
-          "estudos_sem_linha_oficial": [
-            {
-              "local_id": "ortho_poa_rio_branco",
-              "unidade": "OrthoDontic · Rio Branco",
-              "arquivo": "clinicas/ortho_poa_rio_branco",
-              "faixa": "amarela",
-              "tarefa": null
-            }
-          ],
-          "porque_sem_linha": "a lista oficial não confirmou a linha destas lojas, e como a cidade tem mais de uma não dá para dizer qual é qual",
+          "linha_identifica_a_loja": true,
+          "estudos_sem_linha_oficial": [],
+          "porque_sem_linha": null,
           "mais_de_uma_loja": true,
           "frase": "9 unidades nesta cidade"
         },
@@ -9608,28 +9591,22 @@
               "avaliacoes": null,
               "ficha_medida_em": "2026-08-10",
               "confirmada": false,
-              "com_estudo": false,
-              "local_id": null,
-              "arquivo": null,
-              "faixa": null,
+              "com_estudo": true,
+              "local_id": "ortho_pp",
+              "arquivo": "clinicas/ortho_pp",
+              "faixa": "verde",
               "urgencia": null,
-              "tarefa": null
+              "tarefa": null,
+              "vinculo_arbitrario": true,
+              "porque_vinculo_arbitrario": "a lista oficial não distingue as lojas desta cidade; todas as unidades abertas têm estudo, mas qual linha é qual loja não está provado"
             }
           ],
           "unidades_total": 1,
           "com_estudo": 1,
           "sem_estudo": 0,
-          "linha_identifica_a_loja": false,
-          "estudos_sem_linha_oficial": [
-            {
-              "local_id": "ortho_pp",
-              "unidade": "OrthoDontic",
-              "arquivo": "clinicas/ortho_pp",
-              "faixa": "verde",
-              "tarefa": null
-            }
-          ],
-          "porque_sem_linha": "a lista oficial não confirmou a linha destas lojas, e como a cidade tem mais de uma não dá para dizer qual é qual",
+          "linha_identifica_a_loja": true,
+          "estudos_sem_linha_oficial": [],
+          "porque_sem_linha": null,
           "mais_de_uma_loja": false,
           "frase": "1 unidade nesta cidade"
         },
@@ -9844,28 +9821,22 @@
               "avaliacoes": 109,
               "ficha_medida_em": "2026-08-10",
               "confirmada": false,
-              "com_estudo": false,
-              "local_id": null,
-              "arquivo": null,
-              "faixa": null,
+              "com_estudo": true,
+              "local_id": "ortho_soro_vila_formosa",
+              "arquivo": "clinicas/ortho_soro_vila_formosa",
+              "faixa": "amarela",
               "urgencia": null,
-              "tarefa": null
+              "tarefa": null,
+              "vinculo_arbitrario": true,
+              "porque_vinculo_arbitrario": "a lista oficial não distingue as lojas desta cidade; todas as unidades abertas têm estudo, mas qual linha é qual loja não está provado"
             }
           ],
           "unidades_total": 3,
           "com_estudo": 3,
           "sem_estudo": 0,
-          "linha_identifica_a_loja": false,
-          "estudos_sem_linha_oficial": [
-            {
-              "local_id": "ortho_soro_vila_formosa",
-              "unidade": "OrthoDontic · Vila Formosa",
-              "arquivo": "clinicas/ortho_soro_vila_formosa",
-              "faixa": "amarela",
-              "tarefa": null
-            }
-          ],
-          "porque_sem_linha": "a lista oficial não confirmou a linha destas lojas, e como a cidade tem mais de uma não dá para dizer qual é qual",
+          "linha_identifica_a_loja": true,
+          "estudos_sem_linha_oficial": [],
+          "porque_sem_linha": null,
           "mais_de_uma_loja": true,
           "frase": "3 unidades nesta cidade"
         },
