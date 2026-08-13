@@ -190,6 +190,13 @@ padrões → caixa → padrao → build. Períodos curtos são declarados na tel
   `python3 coleta/coletores/unidades_da_rede.py` baixa a lista oficial e
   compara com o número que o próprio site declara. Nenhuma frase sobre "a
   rede está / não está nessa cidade" sai sem essa lista do dia.
+- **MEDIR DE NOVO NO MESMO DIA NÃO É SEGUNDA MEDIÇÃO — É REPETIÇÃO PAGA.**
+  A grade de busca perto da loja foi rodada duas vezes em 13/ago. As 80
+  linhas da segunda rodada tinham a mesma (praça + data + loja + frase +
+  raio) e o `dedup_serie.py` as removeu, como deve. Foram ~US$ 2,56 em
+  consultas que não acrescentaram nada. Toda série é chaveada por
+  `snapshot_date`: o delta nasce da PRÓXIMA data, não da próxima execução.
+  Antes de repetir coleta cara, veja se a série já tem a data de hoje.
 - **BAIRRO É TEXTO DE ENDEREÇO, E TEXTO REPETE.** Mafra tinha 18
   "bairros" onde existem 11: `Bairro Bom Jesus`, `Bom Jesus` e
   `bom jesus` contados três vezes, `Jardim do Moinho` e `Jardim

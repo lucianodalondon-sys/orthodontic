@@ -114,7 +114,11 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--praca"); ap.add_argument("--todas", action="store_true")
     args = ap.parse_args()
-    pracas = list(BUSCAS) if args.todas else ([args.praca] if args.praca else [])
+    # `--todas` iterava `BUSCAS`, um dicionário escrito à mão com QUATRO
+    # praças. As outras 19 nunca eram coletadas por ele — e a rede tem 23.
+    # A lista das praças é a pasta de identidade, como em todo o resto.
+    todas_ident = sorted(x.stem for x in (RAIZ/"dados"/"identidade").glob("*.json"))
+    pracas = todas_ident if args.todas else ([args.praca] if args.praca else [])
     if not pracas:
         sys.exit("use --praca <id> ou --todas")
 
@@ -125,7 +129,23 @@ def main():
 
     for praca in pracas:
         print(f"\n=== {praca} · corte {hoje} ===")
-        buscas = BUSCAS.get(praca) or buscas_da_identidade(praca)
+        # A LISTA DE CONSULTAS TEM DE SER A MESMA TODA RODADA.
+        #
+        # Duas rodadas de anúncio só se comparam se perguntaram a mesma
+        # coisa — e Mafra provou o contrário: uma rodada com quatro
+        # consultas com o nome da cidade e outra com duas sem, que trazem
+        # anúncio da rede inteira. O detector acusou 14 anunciantes novos
+        # em um dia, e nenhum havia entrado.
+        #
+        # Por isso a lista sai SEMPRE da identidade, que é determinística:
+        # as quatro frases da cidade mais os três maiores concorrentes
+        # dela. `BUSCAS`, escrito à mão para quatro praças, entra só como
+        # acréscimo — nunca substituindo, para a lista não encolher.
+        buscas = buscas_da_identidade(praca)
+        vistas = {q for q, _ in buscas}
+        for q, n in BUSCAS.get(praca) or []:
+            if q not in vistas:
+                buscas.append((q, n))
         if not buscas:
             print(f"  [SEM BUSCA] {praca}: nem no dicionário nem na identidade.")
             continue
