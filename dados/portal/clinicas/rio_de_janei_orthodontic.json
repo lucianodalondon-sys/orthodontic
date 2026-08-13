@@ -17,31 +17,34 @@
   "cabecalho": {
     "nota": 4.9,
     "avaliacoes": 308,
-    "ritmo": 110.5,
-    "meses_seguidos": 1,
-    "posicao": null,
-    "de": null,
-    "amostra_lida": 120,
-    "amostra_dias": 33,
-    "amostra_truncada": true,
-    "ritmo_comparavel": false,
-    "porque_fora_do_ranking": "lemos 120 das 308 avaliações desta clínica, e as mais novas: o ritmo aqui é o dos últimos 33 dias, não o do histórico. Comparar com quem foi lido por inteiro compararia janelas diferentes."
+    "ritmo": 6.8,
+    "meses_seguidos": 7,
+    "posicao": 1,
+    "de": 1,
+    "frase_da_posicao": "1ª em ritmo entre as 1 clínica lida por inteiro, de 15 medidas nesta praça",
+    "medidas_na_praca": 15,
+    "comparaveis_na_praca": 1,
+    "amostra_lida": 308,
+    "amostra_dias": 1375,
+    "amostra_truncada": false,
+    "ritmo_comparavel": true,
+    "porque_fora_do_ranking": null
   },
-  "faixa": "amarela",
-  "urgencia": 35,
+  "faixa": "verde",
+  "urgencia": 15,
   "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
     "dias_aberta": 0,
-    "prazo_dias": 60,
-    "vence_em": "2026-10-12"
+    "prazo_dias": 30,
+    "vence_em": "2026-09-12"
   },
   "acao": {
-    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
-    "prazo": "60 dias",
-    "dono": "consultor de campo",
-    "custo": "verba de abertura",
-    "por_causa_de": "nao_engatou",
+    "o_que": "Entrar no leilão com as frases que a cidade digita — a lista está na praça",
+    "prazo": "30 dias",
+    "dono": "franqueado",
+    "custo": "verba de mídia",
+    "por_causa_de": "silencio",
     "confianca": {
       "natureza": "recomendacao",
       "confianca": "baixa",
@@ -51,7 +54,6 @@
       "medicoes": null,
       "fonte": "scripts/fila.py",
       "a_favor": [
-        "a primeira avaliação é de 2026-07-10, há 1 meses, e o ritmo medido é 110.5/mês — a unidade ainda não engatou",
         "47 anúncios no ar de 30 anunciantes, e nenhum é da rede"
       ],
       "contra": [],
@@ -60,13 +62,6 @@
     }
   },
   "gatilhos": [
-    {
-      "peso": 20,
-      "titulo": "Unidade nova que ainda não engatou",
-      "chave": "nao_engatou",
-      "fato": "a primeira avaliação é de 2026-07-10, há 1 meses, e o ritmo medido é 110.5/mês — a unidade ainda não engatou",
-      "fonte": "dados/serie/reviews.jsonl"
-    },
     {
       "peso": 15,
       "titulo": "Silêncio publicitário com leilão cheio",
@@ -78,23 +73,72 @@
   "quem_avanca": null,
   "o_que_mudou": null,
   "sem_resposta": {
-    "abertas": null,
-    "com_texto": null,
-    "itens": [],
-    "itens_total": 0
+    "abertas": 8,
+    "com_texto": 8,
+    "itens": [
+      {
+        "nota": 1,
+        "data": "2026-06-09",
+        "texto": "Muito bom",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-05-25",
+        "texto": "Atendimento Horroso, funcionários sem educação. Principalmente Fernanda responsável pelo setor do contrato. Orthodontic Campo Grande",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-04-15",
+        "texto": "Deus me livre eles querem ficar com você vários anos nunca acaba o tratamento, e você sai eles continuam emitindo boletos no seu nome te cobrando e horrível liga pra lá eles te obriga a voltar na clínica pra vê se você volta pra continuar com o aparelho",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-03-31",
+        "texto": "Precisa de mais limpeza nas salas ,atendentes super arrogantes na hora de fazer o plano são super simpáticas mais depois só jesus",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-01-24",
+        "texto": "A dentista é ótima\nMas o atendimento pelo WhatsApp é horrível meu deus.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-01-13",
+        "texto": "Quando vc vai fazer um contrato te colocam até no colo,mas depois te tratam como NADa. O som do lugar é um absurdo de alto.\nAs atendentes ficam te oferecendo raspagem fora da época (paga). A limpeza q eles prometem ficam enrolando,te obrigando a fazer a raspagem paga . Sinceramente tem q melhorar isso. NÃO RECOMENDO PRA NINGUÉM 😡 A única coisa q presta é a Odonto.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-11-12",
+        "texto": "Atendimento demorado vc fica horas esperando só pra troca uma borracha, fiz transferência do Orthodontic de Bangu para Campo Grande e me arrependi.",
+        "tem_texto": true
+      },
+      {
+        "nota": 3,
+        "data": "2025-05-10",
+        "texto": "tem whatssap ? preciso entrar em cntt",
+        "tem_texto": true
+      }
+    ],
+    "itens_total": 8
   },
   "voz_do_paciente": [
     {
       "o_que_e": "Explica o que vai fazer, antes de fazer",
-      "pct": 12.7
+      "pct": 8.3
     },
     {
       "o_que_e": "Atende na hora marcada",
-      "pct": 1.8
+      "pct": 3.0
     },
     {
       "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
-      "pct": 0.0
+      "pct": 0.4
     },
     {
       "o_que_e": "Cuida de quem tem medo de dentista",
@@ -102,19 +146,19 @@
     },
     {
       "o_que_e": "Resolve no mesmo dia",
-      "pct": 0.0
+      "pct": 0.4
     },
     {
       "o_que_e": "Sabe atender criança",
-      "pct": 0.0
+      "pct": 0.9
     },
     {
       "o_que_e": "Continua presente depois que vendeu",
-      "pct": 0.0
+      "pct": 2.2
     },
     {
       "o_que_e": "Tem profissional que o paciente chama pelo nome",
-      "pct": 7.3
+      "pct": 5.7
     }
   ],
   "rival": {
@@ -125,20 +169,44 @@
     ],
     "vantagens_deles": [
       {
+        "eixo": "trata_crianca",
+        "o_que_e": "Sabe atender criança",
+        "quem": "ApicalCenter Clinica Odontológica no Rio de Janeiro",
+        "eles": 5.3,
+        "nos": 0.9,
+        "razao": 6.1
+      },
+      {
         "eixo": "gente_com_nome",
         "o_que_e": "Tem profissional que o paciente chama pelo nome",
         "quem": "ApicalCenter Clinica Odontológica no Rio de Janeiro",
         "eles": 29.5,
-        "nos": 7.3,
-        "razao": 4.1
+        "nos": 5.7,
+        "razao": 5.2
       },
       {
-        "eixo": "hora_marcada_e_hora",
-        "o_que_e": "Atende na hora marcada",
+        "eixo": "resolve_no_mesmo_dia",
+        "o_que_e": "Resolve no mesmo dia",
         "quem": "SempreSorrir Odontologia | Implante Dentário | Aparelho Dentário | Vila Isabel | Rio de Janeiro - RJ",
-        "eles": 3.9,
-        "nos": 1.8,
-        "razao": 2.2
+        "eles": 2.0,
+        "nos": 0.4,
+        "razao": 4.5
+      },
+      {
+        "eixo": "preco_claro",
+        "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
+        "quem": "Dentista e Invisalign no Meier - Clinica Odontológica Prime Dente",
+        "eles": 1.9,
+        "nos": 0.4,
+        "razao": 4.3
+      },
+      {
+        "eixo": "pos_venda",
+        "o_que_e": "Continua presente depois que vendeu",
+        "quem": "Dentista e Invisalign no Meier - Clinica Odontológica Prime Dente",
+        "eles": 6.6,
+        "nos": 2.2,
+        "razao": 3.0
       }
     ],
     "fora": [
@@ -302,8 +370,8 @@
     "local_id": "rio_de_janei_orthodontic",
     "unidade": "OrthoDontic",
     "rotulo": "RJ · Rio de Janeiro",
-    "com_texto": 110,
-    "sem_estagio": 91,
+    "com_texto": 230,
+    "sem_estagio": 182,
     "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
     "estagios": [
       {
@@ -312,13 +380,19 @@
         "o_que_e": "como me acharam",
         "quem_resolve": "marketing e ficha do Google",
         "medido": true,
-        "avaliacoes": 1,
-        "dor": 0,
-        "elogio": 1,
-        "pct_dor": 0,
-        "amostra_curta": true,
-        "exemplos": [],
-        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "avaliacoes": 11,
+        "dor": 2,
+        "elogio": 9,
+        "pct_dor": 18,
+        "amostra_curta": false,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2026-01-13",
+            "texto": "Quando vc vai fazer um contrato te colocam até no colo,mas depois te tratam como NADa. O som do lugar é um absurdo de alto.\nAs atendentes ficam te oferecendo raspagem fora da época (paga). A limpeza q eles prometem ficam enrolando,te obrigando a fazer a raspagem paga . Sinceramente tem q melhorar isso. NÃO RECOMENDO PRA NINGUÉM 😡 A única coisa q presta é a Odonto."
+          }
+        ],
+        "frase": "11 avaliações falam deste momento, 2 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -326,15 +400,26 @@
         "rotulo": "Contato",
         "o_que_e": "telefone e WhatsApp",
         "quem_resolve": "recepção",
-        "medido": false,
-        "avaliacoes": 0,
-        "dor": 0,
+        "medido": true,
+        "avaliacoes": 3,
+        "dor": 2,
         "elogio": 0,
-        "pct_dor": null,
-        "amostra_curta": false,
-        "exemplos": [],
-        "frase": null,
-        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+        "pct_dor": 67,
+        "amostra_curta": true,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2023-07-05",
+            "texto": "retorno ao cliente por péssimo."
+          },
+          {
+            "nota": 1,
+            "data": "2026-01-24",
+            "texto": "A dentista é ótima\nMas o atendimento pelo WhatsApp é horrível meu deus."
+          }
+        ],
+        "frase": "3 avaliações falam deste momento, 2 com notas baixas",
+        "porque_vazio": null
       },
       {
         "estagio": "agendamento",
@@ -357,13 +442,13 @@
         "o_que_e": "chegar e esperar",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 5,
-        "dor": 0,
-        "elogio": 5,
-        "pct_dor": 0,
-        "amostra_curta": true,
+        "avaliacoes": 14,
+        "dor": 1,
+        "elogio": 13,
+        "pct_dor": 7,
+        "amostra_curta": false,
         "exemplos": [],
-        "frase": "5 avaliações falam deste momento, nenhuma com nota baixa",
+        "frase": "14 avaliações falam deste momento, 1 com nota baixa",
         "porque_vazio": null
       },
       {
@@ -372,13 +457,13 @@
         "o_que_e": "a primeira consulta",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 9,
+        "avaliacoes": 11,
         "dor": 0,
-        "elogio": 9,
+        "elogio": 11,
         "pct_dor": 0,
         "amostra_curta": false,
         "exemplos": [],
-        "frase": "9 avaliações falam deste momento, nenhuma com nota baixa",
+        "frase": "11 avaliações falam deste momento, nenhuma com nota baixa",
         "porque_vazio": null
       },
       {
@@ -387,13 +472,24 @@
         "o_que_e": "preço, contrato e entrada",
         "quem_resolve": "franqueado",
         "medido": true,
-        "avaliacoes": 5,
-        "dor": 0,
-        "elogio": 5,
-        "pct_dor": 0,
-        "amostra_curta": true,
-        "exemplos": [],
-        "frase": "5 avaliações falam deste momento, nenhuma com nota baixa",
+        "avaliacoes": 12,
+        "dor": 3,
+        "elogio": 9,
+        "pct_dor": 25,
+        "amostra_curta": false,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2026-01-13",
+            "texto": "Quando vc vai fazer um contrato te colocam até no colo,mas depois te tratam como NADa. O som do lugar é um absurdo de alto.\nAs atendentes ficam te oferecendo raspagem fora da época (paga). A limpeza q eles prometem ficam enrolando,te obrigando a fazer a raspagem paga . Sinceramente tem q melhorar isso. NÃO RECOMENDO PRA NINGUÉM 😡 A única coisa q presta é a Odonto."
+          },
+          {
+            "nota": 1,
+            "data": "2026-05-25",
+            "texto": "Atendimento Horroso, funcionários sem educação. Principalmente Fernanda responsável pelo setor do contrato. Orthodontic Campo Grande"
+          }
+        ],
+        "frase": "12 avaliações falam deste momento, 3 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -402,13 +498,19 @@
         "o_que_e": "a cadeira",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 3,
-        "dor": 0,
-        "elogio": 3,
-        "pct_dor": 0,
-        "amostra_curta": true,
-        "exemplos": [],
-        "frase": "3 avaliações falam deste momento, nenhuma com nota baixa",
+        "avaliacoes": 9,
+        "dor": 1,
+        "elogio": 8,
+        "pct_dor": 11,
+        "amostra_curta": false,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2026-01-24",
+            "texto": "A dentista é ótima\nMas o atendimento pelo WhatsApp é horrível meu deus."
+          }
+        ],
+        "frase": "9 avaliações falam deste momento, 1 com nota baixa",
         "porque_vazio": null
       },
       {
@@ -416,60 +518,72 @@
         "rotulo": "Manutenção",
         "o_que_e": "as voltas de cada mês",
         "quem_resolve": "clínica",
-        "medido": false,
-        "avaliacoes": 0,
-        "dor": 0,
+        "medido": true,
+        "avaliacoes": 2,
+        "dor": 2,
         "elogio": 0,
-        "pct_dor": null,
-        "amostra_curta": false,
-        "exemplos": [],
-        "frase": null,
-        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+        "pct_dor": 100,
+        "amostra_curta": true,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2023-07-05",
+            "texto": "retorno ao cliente por péssimo."
+          }
+        ],
+        "frase": "2 avaliações falam deste momento, 2 com notas baixas",
+        "porque_vazio": null
       },
       {
         "estagio": "cobranca",
         "rotulo": "Cobrança",
         "o_que_e": "mensalidade e multa",
         "quem_resolve": "franqueado",
-        "medido": false,
-        "avaliacoes": 0,
-        "dor": 0,
+        "medido": true,
+        "avaliacoes": 1,
+        "dor": 1,
         "elogio": 0,
-        "pct_dor": null,
-        "amostra_curta": false,
-        "exemplos": [],
-        "frase": null,
-        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+        "pct_dor": 100,
+        "amostra_curta": true,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2026-04-15",
+            "texto": "Deus me livre eles querem ficar com você vários anos nunca acaba o tratamento, e você sai eles continuam emitindo boletos no seu nome te cobrando e horrível liga pra lá eles te obriga a voltar na clínica pra vê se você volta pra continuar com o aparelho"
+          }
+        ],
+        "frase": "1 avaliação fala deste momento, 1 com nota baixa",
+        "porque_vazio": null
       },
       {
         "estagio": "suporte",
         "rotulo": "Suporte",
         "o_que_e": "quando algo dá errado",
         "quem_resolve": "franqueado",
-        "medido": false,
-        "avaliacoes": 0,
-        "dor": 0,
+        "medido": true,
+        "avaliacoes": 1,
+        "dor": 1,
         "elogio": 0,
-        "pct_dor": null,
-        "amostra_curta": false,
+        "pct_dor": 100,
+        "amostra_curta": true,
         "exemplos": [],
-        "frase": null,
-        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+        "frase": "1 avaliação fala deste momento, 1 com nota baixa",
+        "porque_vazio": null
       },
       {
         "estagio": "contencao",
         "rotulo": "Fim e contenção",
         "o_que_e": "alta e depois dela",
         "quem_resolve": "clínica",
-        "medido": false,
-        "avaliacoes": 0,
+        "medido": true,
+        "avaliacoes": 1,
         "dor": 0,
-        "elogio": 0,
-        "pct_dor": null,
-        "amostra_curta": false,
+        "elogio": 1,
+        "pct_dor": 0,
+        "amostra_curta": true,
         "exemplos": [],
-        "frase": null,
-        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
       }
     ],
     "manchete": "Nenhum momento da jornada concentra dor com amostra suficiente para virar manchete.",
@@ -479,14 +593,14 @@
       "natureza": "fato",
       "confianca": "media",
       "medido": true,
-      "amostra": 110,
+      "amostra": 230,
       "janela_dias": null,
       "medicoes": null,
       "fonte": "dados/serie/reviews.jsonl",
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": "mais avaliações com texto nesta loja",
-      "procedencia": "medido em 110 avaliações"
+      "procedencia": "medido em 230 avaliações"
     }
   },
   "meu_territorio": {
@@ -588,10 +702,35 @@
           "o_que_aumentaria": "mais frases por loja na próxima grade",
           "procedencia": "medido em 5 buscas testadas, 1 medição"
         }
+      },
+      {
+        "problema": "8 avaliações negativas abertas sem resposta",
+        "e_marketing": false,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "reputacao",
+          "especialidade": "a própria unidade",
+          "porque_nao_e_marketing": "responder paciente é trabalho de quem atende. Agência escrevendo resposta em nome da clínica é o caminho mais curto para uma resposta que o paciente percebe como automática.",
+          "metrica_de_validacao": "quantas seguem sem resposta na próxima coleta",
+          "recoletar_em_dias": 15
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 8,
+          "janela_dias": null,
+          "medicoes": null,
+          "fonte": "dados/portal/caixa_de_respostas.json",
+          "a_favor": [],
+          "contra": [],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 8 avaliações"
+        }
       }
     ],
     "de_marketing": 0,
-    "de_operacao": 0,
+    "de_operacao": 1,
     "descartados": 1
   },
   "meu_bairro": {
@@ -972,6 +1111,20 @@
       "quem": "fila",
       "texto": "alerta aberto: Silêncio publicitário com leilão cheio",
       "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-06-09",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 1★: “Muito bom” · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "data": "2026-05-25",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 1★: “Atendimento Horroso, funcionários sem educação. Principalmente Fernanda responsável pelo s…” · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
     }
   ]
 }

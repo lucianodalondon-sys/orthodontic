@@ -1,6 +1,6 @@
 {
   "corte": "2026-08-13",
-  "gerado_em": "2026-08-13T11:10:03",
+  "gerado_em": "2026-08-13T12:31:06",
   "rede": {
     "unidades": 373,
     "abertas": 350,
@@ -216,11 +216,11 @@
       "cidades": 17,
       "pracas_medidas": 1,
       "acompanhadas": 4,
-      "em_faixa_vermelha": 0,
-      "em_faixa_amarela": 3,
+      "em_faixa_vermelha": 1,
+      "em_faixa_amarela": 2,
       "alertas_graves": 0,
-      "tom": "warn",
-      "motivo": "3 em faixa amarela"
+      "tom": "crit",
+      "motivo": "1 em faixa vermelha · 2 em faixa amarela"
     },
     {
       "uf": "MA",
@@ -314,11 +314,11 @@
       "cidades": 43,
       "pracas_medidas": 3,
       "acompanhadas": 7,
-      "em_faixa_vermelha": 2,
-      "em_faixa_amarela": 3,
+      "em_faixa_vermelha": 3,
+      "em_faixa_amarela": 1,
       "alertas_graves": 0,
       "tom": "crit",
-      "motivo": "2 em faixa vermelha · 3 em faixa amarela"
+      "motivo": "3 em faixa vermelha · 1 em faixa amarela"
     },
     {
       "uf": "PE",
@@ -357,10 +357,10 @@
       "pracas_medidas": 1,
       "acompanhadas": 1,
       "em_faixa_vermelha": 0,
-      "em_faixa_amarela": 1,
+      "em_faixa_amarela": 0,
       "alertas_graves": 0,
-      "tom": "warn",
-      "motivo": "1 em faixa amarela"
+      "tom": "ok",
+      "motivo": "5 unidades · ainda sem escuta"
     },
     {
       "uf": "RN",
@@ -426,11 +426,11 @@
       "cidades": 43,
       "pracas_medidas": 3,
       "acompanhadas": 7,
-      "em_faixa_vermelha": 1,
-      "em_faixa_amarela": 6,
+      "em_faixa_vermelha": 2,
+      "em_faixa_amarela": 5,
       "alertas_graves": 0,
       "tom": "crit",
-      "motivo": "1 em faixa vermelha · 6 em faixa amarela"
+      "motivo": "2 em faixa vermelha · 5 em faixa amarela"
     },
     {
       "uf": "SP",
@@ -499,7 +499,7 @@
   ],
   "tiras_do_inicio": [
     {
-      "numero": 10,
+      "numero": 13,
       "tom": "crit",
       "rotulo": "unidades em faixa vermelha"
     },
@@ -509,7 +509,7 @@
       "rotulo": "tarefas fora do prazo"
     },
     {
-      "numero": 346,
+      "numero": 399,
       "tom": "marca",
       "rotulo": "avaliações esperando resposta"
     },
@@ -521,8 +521,8 @@
   ],
   "agora": {
     "pergunta": "Em quais unidades a OrthoDontic está perdendo atenção local, para qual concorrente, e onde intervir primeiro neste mês?",
-    "manchete": "10 de 45 unidades medidas estão em faixa vermelha. A primeira é SC · Joinville.",
-    "em_risco": 10,
+    "manchete": "13 de 45 unidades medidas estão em faixa vermelha. A primeira é SC · Joinville.",
+    "em_risco": 13,
     "unidades": 45,
     "o_que_e_atencao": "participação observável em busca, avaliações, publicidade e atividade digital. Não é faturamento — nenhum número desta tela vem de dado interno da rede.",
     "primeiras": [
@@ -651,8 +651,8 @@
       "chave": "fila",
       "titulo": "Onde agir primeiro",
       "pergunta": "Qual loja precisa de ajuda neste mês?",
-      "numero": 10,
-      "frase": "10 de 45 unidades medidas estão em faixa vermelha. A primeira é SC · Joinville.",
+      "numero": 13,
+      "frase": "13 de 45 unidades medidas estão em faixa vermelha. A primeira é SC · Joinville.",
       "tela": "fila",
       "grupo": "lojas",
       "disponivel": true,
@@ -673,8 +673,8 @@
       "chave": "caixa",
       "titulo": "Avaliações sem resposta",
       "pergunta": "Quantos pacientes reclamaram e ninguém respondeu?",
-      "numero": 346,
-      "frase": "274 delas com o paciente explicando o motivo, loja por loja. Responder é higiene da marca.",
+      "numero": 399,
+      "frase": "321 delas com o paciente explicando o motivo, loja por loja. Responder é higiene da marca.",
       "tela": "caixa",
       "grupo": "lojas",
       "disponivel": true,
@@ -717,7 +717,7 @@
       "chave": "timeline",
       "titulo": "A vida de cada loja",
       "pergunta": "O que aconteceu em cada loja, em ordem?",
-      "numero": 208,
+      "numero": 217,
       "frase": "eventos observáveis — avaliações, contadores, alertas e rivais de aparelho — numa linha do tempo por loja, com o estado da tarefa de cada uma.",
       "tela": "timeline",
       "grupo": "lojas",

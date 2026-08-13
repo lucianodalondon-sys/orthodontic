@@ -33,7 +33,10 @@
     "ritmo": 4.4,
     "meses_seguidos": 1,
     "posicao": 2,
-    "de": 3,
+    "de": 4,
+    "frase_da_posicao": "2ª em ritmo entre as 4 clínicas lidas por inteiro, de 18 medidas nesta praça",
+    "medidas_na_praca": 18,
+    "comparaveis_na_praca": 4,
     "amostra_lida": 120,
     "amostra_dias": 829,
     "amostra_truncada": false,
@@ -41,7 +44,7 @@
     "porque_fora_do_ranking": null
   },
   "faixa": "amarela",
-  "urgencia": 50,
+  "urgencia": 30,
   "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
@@ -64,8 +67,7 @@
       "medicoes": null,
       "fonte": "scripts/fila.py",
       "a_favor": [
-        "apenas 1 mês seguido com movimento acima do típico da própria unidade; o ritmo medido é 4.4 avaliações/mês",
-        "2º lugar de 3 clínicas medidas na praça"
+        "apenas 1 mês seguido com movimento acima do típico da própria unidade; o ritmo medido é 4.4 avaliações/mês"
       ],
       "contra": [],
       "o_que_aumentaria": "o resultado medido na coleta seguinte (dados/serie/acoes.jsonl)",
@@ -79,13 +81,6 @@
       "chave": "parada",
       "fato": "apenas 1 mês seguido com movimento acima do típico da própria unidade; o ritmo medido é 4.4 avaliações/mês",
       "fonte": "dados/serie/reviews.jsonl"
-    },
-    {
-      "peso": 20,
-      "titulo": "Está na metade de baixo da própria praça",
-      "chave": "posicao",
-      "fato": "2º lugar de 3 clínicas medidas na praça",
-      "fonte": "dados/portal/rede_cruzamento.json"
     }
   ],
   "quem_avanca": null,

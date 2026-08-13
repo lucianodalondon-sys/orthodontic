@@ -4,8 +4,8 @@
  "pergunta": "Em quais unidades a OrthoDontic está perdendo atenção local, para qual concorrente, e onde intervir primeiro neste mês?",
  "o_que_e_atencao": "participação observável em busca, avaliações, publicidade e atividade digital. Não é faturamento — nenhum número desta tela vem de dado interno da rede.",
  "unidades": 45,
- "em_risco": 10,
- "manchete": "10 de 45 unidades medidas estão em faixa vermelha. A primeira é SC · Joinville.",
+ "em_risco": 13,
+ "manchete": "13 de 45 unidades medidas estão em faixa vermelha. A primeira é SC · Joinville.",
  "criterio": [
   {
    "chave": "parada",
@@ -134,8 +134,8 @@
    "meses": 0,
    "nota": 3,
    "avaliacoes": 22,
-   "posicao": 3,
-   "de": 3,
+   "posicao": 4,
+   "de": 4,
    "quem_avanca": null,
    "gatilhos": [
     {
@@ -149,7 +149,7 @@
      "peso": 20,
      "titulo": "Está na metade de baixo da própria praça",
      "chave": "posicao",
-     "fato": "3º lugar de 3 clínicas medidas na praça",
+     "fato": "4º lugar de 4 clínicas medidas na praça",
      "fonte": "dados/portal/rede_cruzamento.json"
     },
     {
@@ -368,6 +368,61 @@
    }
   },
   {
+   "local_id": "ortho_fln_centro",
+   "praca_id": "florianopolis",
+   "rotulo": "SC · Florianópolis",
+   "unidade": "OrthoDontic · Rua Sete de Setembro",
+   "unidade_curta": "· Rua Sete de Setembro",
+   "idade_meses": 88,
+   "urgencia": 65,
+   "faixa": "vermelha",
+   "ritmo": 3.6,
+   "meses": 1,
+   "nota": 4.4,
+   "avaliacoes": 310,
+   "posicao": 11,
+   "de": 11,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 30,
+     "titulo": "O contador de avaliações parou",
+     "chave": "parada",
+     "fato": "apenas 1 mês seguido com movimento acima do típico da própria unidade; o ritmo medido é 3.6 avaliações/mês",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "peso": 20,
+     "titulo": "Está na metade de baixo da própria praça",
+     "chave": "posicao",
+     "fato": "11º lugar de 11 clínicas medidas na praça",
+     "fonte": "dados/portal/rede_cruzamento.json"
+    },
+    {
+     "peso": 15,
+     "titulo": "Nota abaixo da mediana da praça",
+     "chave": "nota",
+     "fato": "nota 4.4 contra mediana 4.9 das 17 clínicas medidas na praça",
+     "fonte": "dados/serie/places.jsonl"
+    }
+   ],
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "pos": 6,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-13",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-27"
+   }
+  },
+  {
    "local_id": "ortho_centro_ldn",
    "praca_id": "londrina",
    "rotulo": "PR · Londrina",
@@ -413,7 +468,7 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 6,
+   "pos": 7,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
@@ -435,8 +490,8 @@
    "meses": 0,
    "nota": 4.7,
    "avaliacoes": 126,
-   "posicao": 4,
-   "de": 4,
+   "posicao": 5,
+   "de": 5,
    "quem_avanca": null,
    "gatilhos": [
     {
@@ -450,7 +505,7 @@
      "peso": 20,
      "titulo": "Está na metade de baixo da própria praça",
      "chave": "posicao",
-     "fato": "4º lugar de 4 clínicas medidas na praça",
+     "fato": "5º lugar de 5 clínicas medidas na praça",
      "fonte": "dados/portal/rede_cruzamento.json"
     },
     {
@@ -468,13 +523,123 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 7,
+   "pos": 8,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
     "dias_aberta": 1,
     "prazo_dias": 14,
     "vence_em": "2026-08-26"
+   }
+  },
+  {
+   "local_id": "ortho_gyn_st_oeste",
+   "praca_id": "goiania",
+   "rotulo": "GO · Goiânia",
+   "unidade": "OrthoDontic · St. Oeste",
+   "unidade_curta": "· St. Oeste",
+   "idade_meses": 128,
+   "urgencia": 65,
+   "faixa": "vermelha",
+   "ritmo": 2.2,
+   "meses": 0,
+   "nota": 4.2,
+   "avaliacoes": 270,
+   "posicao": 4,
+   "de": 4,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 30,
+     "titulo": "O contador de avaliações parou",
+     "chave": "parada",
+     "fato": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 2.2 avaliações/mês",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "peso": 20,
+     "titulo": "Está na metade de baixo da própria praça",
+     "chave": "posicao",
+     "fato": "4º lugar de 4 clínicas medidas na praça",
+     "fonte": "dados/portal/rede_cruzamento.json"
+    },
+    {
+     "peso": 15,
+     "titulo": "Nota abaixo da mediana da praça",
+     "chave": "nota",
+     "fato": "nota 4.2 contra mediana 4.9 das 18 clínicas medidas na praça",
+     "fonte": "dados/serie/places.jsonl"
+    }
+   ],
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "pos": 9,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 1,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-26"
+   }
+  },
+  {
+   "local_id": "ortho_cwb_centro_3",
+   "praca_id": "curitiba",
+   "rotulo": "PR · Curitiba",
+   "unidade": "OrthoDontic · Galeria Tijucas - Av. Luiz Xavier",
+   "unidade_curta": "· Galeria Tijucas - Av. Luiz Xavier",
+   "idade_meses": 93,
+   "urgencia": 65,
+   "faixa": "vermelha",
+   "ritmo": 5.3,
+   "meses": 0,
+   "nota": 4.9,
+   "avaliacoes": 491,
+   "posicao": 3,
+   "de": 5,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 30,
+     "titulo": "O contador de avaliações parou",
+     "chave": "parada",
+     "fato": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 5.3 avaliações/mês",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "peso": 20,
+     "titulo": "Está na metade de baixo da própria praça",
+     "chave": "posicao",
+     "fato": "3º lugar de 5 clínicas medidas na praça",
+     "fonte": "dados/portal/rede_cruzamento.json"
+    },
+    {
+     "peso": 15,
+     "titulo": "Silêncio publicitário com leilão cheio",
+     "chave": "silencio",
+     "fato": "85 anúncios no ar de 52 anunciantes, e nenhum é da rede",
+     "fonte": "dados/serie/captacao.jsonl"
+    }
+   ],
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "pos": 10,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-13",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-27"
    }
   },
   {
@@ -529,7 +694,7 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "rival"
    },
-   "pos": 8,
+   "pos": 11,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
@@ -584,7 +749,7 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 9,
+   "pos": 12,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
@@ -639,7 +804,7 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 10,
+   "pos": 13,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
@@ -687,7 +852,7 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 11,
+   "pos": 14,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
@@ -710,7 +875,7 @@
    "nota": 4.8,
    "avaliacoes": 267,
    "posicao": 7,
-   "de": 10,
+   "de": 11,
    "quem_avanca": null,
    "gatilhos": [
     {
@@ -724,7 +889,7 @@
      "peso": 20,
      "titulo": "Está na metade de baixo da própria praça",
      "chave": "posicao",
-     "fato": "7º lugar de 10 clínicas medidas na praça",
+     "fato": "7º lugar de 11 clínicas medidas na praça",
      "fonte": "dados/portal/rede_cruzamento.json"
     }
    ],
@@ -735,7 +900,7 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 12,
+   "pos": 15,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
@@ -783,7 +948,7 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 13,
+   "pos": 16,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
@@ -831,7 +996,7 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 14,
+   "pos": 17,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
@@ -841,18 +1006,18 @@
    }
   },
   {
-   "local_id": "ortho_gyn_jardim_tropical",
-   "praca_id": "goiania",
-   "rotulo": "GO · Goiânia",
-   "unidade": "OrthoDontic · Jardim Tropical",
-   "unidade_curta": "· Jardim Tropical",
-   "idade_meses": 50,
+   "local_id": "caxias_do_su_orthodontic_centro",
+   "praca_id": "caxias_do_sul",
+   "rotulo": "RS · Caxias do Sul",
+   "unidade": "OrthoDontic · Av. Júlio de Castilhos",
+   "unidade_curta": "· Av. Júlio de Castilhos",
+   "idade_meses": 67,
    "urgencia": 50,
    "faixa": "amarela",
-   "ritmo": 3.1,
-   "meses": 0,
+   "ritmo": 2.6,
+   "meses": 2,
    "nota": 4.7,
-   "avaliacoes": 152,
+   "avaliacoes": 172,
    "posicao": 3,
    "de": 3,
    "quem_avanca": null,
@@ -861,7 +1026,7 @@
      "peso": 30,
      "titulo": "O contador de avaliações parou",
      "chave": "parada",
-     "fato": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 3.1 avaliações/mês",
+     "fato": "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 2.6 avaliações/mês",
      "fonte": "dados/serie/reviews.jsonl"
     },
     {
@@ -879,44 +1044,44 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 15,
+   "pos": 18,
    "tarefa": {
     "status": "aberta",
-    "aberta_em": "2026-08-12",
-    "dias_aberta": 1,
+    "aberta_em": "2026-08-13",
+    "dias_aberta": 0,
     "prazo_dias": 14,
-    "vence_em": "2026-08-26"
+    "vence_em": "2026-08-27"
    }
   },
   {
-   "local_id": "ortho_gyn_st_morada_do_sol",
+   "local_id": "ortho_gyn_jardim_tropical",
    "praca_id": "goiania",
    "rotulo": "GO · Goiânia",
-   "unidade": "OrthoDontic · St. Morada do Sol",
-   "unidade_curta": "· St. Morada do Sol",
-   "idade_meses": 27,
+   "unidade": "OrthoDontic · Jardim Tropical",
+   "unidade_curta": "· Jardim Tropical",
+   "idade_meses": 50,
    "urgencia": 50,
    "faixa": "amarela",
-   "ritmo": 4.4,
-   "meses": 1,
-   "nota": 5,
-   "avaliacoes": 124,
-   "posicao": 2,
-   "de": 3,
+   "ritmo": 3.1,
+   "meses": 0,
+   "nota": 4.7,
+   "avaliacoes": 152,
+   "posicao": 3,
+   "de": 4,
    "quem_avanca": null,
    "gatilhos": [
     {
      "peso": 30,
      "titulo": "O contador de avaliações parou",
      "chave": "parada",
-     "fato": "apenas 1 mês seguido com movimento acima do típico da própria unidade; o ritmo medido é 4.4 avaliações/mês",
+     "fato": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 3.1 avaliações/mês",
      "fonte": "dados/serie/reviews.jsonl"
     },
     {
      "peso": 20,
      "titulo": "Está na metade de baixo da própria praça",
      "chave": "posicao",
-     "fato": "2º lugar de 3 clínicas medidas na praça",
+     "fato": "3º lugar de 4 clínicas medidas na praça",
      "fonte": "dados/portal/rede_cruzamento.json"
     }
    ],
@@ -927,7 +1092,7 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 16,
+   "pos": 19,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
@@ -949,15 +1114,15 @@
    "meses": 5,
    "nota": 4.1,
    "avaliacoes": 108,
-   "posicao": 2,
-   "de": 3,
+   "posicao": 3,
+   "de": 4,
    "quem_avanca": null,
    "gatilhos": [
     {
      "peso": 20,
      "titulo": "Está na metade de baixo da própria praça",
      "chave": "posicao",
-     "fato": "2º lugar de 3 clínicas medidas na praça",
+     "fato": "3º lugar de 4 clínicas medidas na praça",
      "fonte": "dados/portal/rede_cruzamento.json"
     },
     {
@@ -982,7 +1147,7 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "posicao"
    },
-   "pos": 17,
+   "pos": 20,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
@@ -1037,7 +1202,7 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "posicao"
    },
-   "pos": 18,
+   "pos": 21,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
@@ -1091,7 +1256,7 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "rival"
    },
-   "pos": 19,
+   "pos": 22,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
@@ -1145,7 +1310,7 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "rival"
    },
-   "pos": 20,
+   "pos": 23,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
@@ -1199,7 +1364,7 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "rival"
    },
-   "pos": 21,
+   "pos": 24,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
@@ -1209,18 +1374,18 @@
    }
   },
   {
-   "local_id": "ortho_cwb_centro_3",
-   "praca_id": "curitiba",
-   "rotulo": "PR · Curitiba",
-   "unidade": "OrthoDontic · Galeria Tijucas - Av. Luiz Xavier",
-   "unidade_curta": "· Galeria Tijucas - Av. Luiz Xavier",
-   "idade_meses": 93,
+   "local_id": "sao_paulo_orthodontic",
+   "praca_id": "sao_paulo",
+   "rotulo": "SP · São Paulo",
+   "unidade": "OrthoDontic · Lapa",
+   "unidade_curta": "· Lapa",
+   "idade_meses": 78,
    "urgencia": 45,
    "faixa": "amarela",
-   "ritmo": 5.3,
+   "ritmo": 2.4,
    "meses": 0,
-   "nota": 4.9,
-   "avaliacoes": 491,
+   "nota": 4.7,
+   "avaliacoes": 189,
    "posicao": 2,
    "de": 4,
    "quem_avanca": null,
@@ -1229,151 +1394,7 @@
      "peso": 30,
      "titulo": "O contador de avaliações parou",
      "chave": "parada",
-     "fato": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 5.3 avaliações/mês",
-     "fonte": "dados/serie/reviews.jsonl"
-    },
-    {
-     "peso": 15,
-     "titulo": "Silêncio publicitário com leilão cheio",
-     "chave": "silencio",
-     "fato": "85 anúncios no ar de 52 anunciantes, e nenhum é da rede",
-     "fonte": "dados/serie/captacao.jsonl"
-    }
-   ],
-   "acao": {
-    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
-    "prazo": "14 dias",
-    "dono": "franqueado",
-    "custo": "sem custo de mídia",
-    "por_causa_de": "parada"
-   },
-   "pos": 22,
-   "tarefa": {
-    "status": "aberta",
-    "aberta_em": "2026-08-13",
-    "dias_aberta": 0,
-    "prazo_dias": 14,
-    "vence_em": "2026-08-27"
-   }
-  },
-  {
-   "local_id": "ortho_fln_centro",
-   "praca_id": "florianopolis",
-   "rotulo": "SC · Florianópolis",
-   "unidade": "OrthoDontic · Rua Sete de Setembro",
-   "unidade_curta": "· Rua Sete de Setembro",
-   "idade_meses": 14,
-   "urgencia": 45,
-   "faixa": "amarela",
-   "ritmo": 8.4,
-   "meses": 1,
-   "nota": 4.4,
-   "avaliacoes": 310,
-   "posicao": null,
-   "de": null,
-   "quem_avanca": null,
-   "gatilhos": [
-    {
-     "peso": 30,
-     "titulo": "O contador de avaliações parou",
-     "chave": "parada",
-     "fato": "apenas 1 mês seguido com movimento acima do típico da própria unidade; o ritmo medido é 8.4 avaliações/mês",
-     "fonte": "dados/serie/reviews.jsonl"
-    },
-    {
-     "peso": 15,
-     "titulo": "Nota abaixo da mediana da praça",
-     "chave": "nota",
-     "fato": "nota 4.4 contra mediana 4.9 das 17 clínicas medidas na praça",
-     "fonte": "dados/serie/places.jsonl"
-    }
-   ],
-   "acao": {
-    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
-    "prazo": "14 dias",
-    "dono": "franqueado",
-    "custo": "sem custo de mídia",
-    "por_causa_de": "parada"
-   },
-   "pos": 23,
-   "tarefa": {
-    "status": "aberta",
-    "aberta_em": "2026-08-13",
-    "dias_aberta": 0,
-    "prazo_dias": 14,
-    "vence_em": "2026-08-27"
-   }
-  },
-  {
-   "local_id": "ortho_gyn_st_oeste",
-   "praca_id": "goiania",
-   "rotulo": "GO · Goiânia",
-   "unidade": "OrthoDontic · St. Oeste",
-   "unidade_curta": "· St. Oeste",
-   "idade_meses": 30,
-   "urgencia": 45,
-   "faixa": "amarela",
-   "ritmo": 4.3,
-   "meses": 0,
-   "nota": 4.2,
-   "avaliacoes": 270,
-   "posicao": null,
-   "de": null,
-   "quem_avanca": null,
-   "gatilhos": [
-    {
-     "peso": 30,
-     "titulo": "O contador de avaliações parou",
-     "chave": "parada",
-     "fato": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 4.3 avaliações/mês",
-     "fonte": "dados/serie/reviews.jsonl"
-    },
-    {
-     "peso": 15,
-     "titulo": "Nota abaixo da mediana da praça",
-     "chave": "nota",
-     "fato": "nota 4.2 contra mediana 4.9 das 18 clínicas medidas na praça",
-     "fonte": "dados/serie/places.jsonl"
-    }
-   ],
-   "acao": {
-    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
-    "prazo": "14 dias",
-    "dono": "franqueado",
-    "custo": "sem custo de mídia",
-    "por_causa_de": "parada"
-   },
-   "pos": 24,
-   "tarefa": {
-    "status": "aberta",
-    "aberta_em": "2026-08-12",
-    "dias_aberta": 1,
-    "prazo_dias": 14,
-    "vence_em": "2026-08-26"
-   }
-  },
-  {
-   "local_id": "sao_paulo_orthodontic",
-   "praca_id": "sao_paulo",
-   "rotulo": "SP · São Paulo",
-   "unidade": "OrthoDontic · Lapa",
-   "unidade_curta": "· Lapa",
-   "idade_meses": 19,
-   "urgencia": 45,
-   "faixa": "amarela",
-   "ritmo": 6.5,
-   "meses": 0,
-   "nota": 4.7,
-   "avaliacoes": 189,
-   "posicao": null,
-   "de": null,
-   "quem_avanca": null,
-   "gatilhos": [
-    {
-     "peso": 30,
-     "titulo": "O contador de avaliações parou",
-     "chave": "parada",
-     "fato": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 6.5 avaliações/mês",
+     "fato": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 2.4 avaliações/mês",
      "fonte": "dados/serie/reviews.jsonl"
     },
     {
@@ -1467,15 +1488,15 @@
    "meses": 7,
    "nota": 4.8,
    "avaliacoes": 270,
-   "posicao": 3,
-   "de": 4,
+   "posicao": 4,
+   "de": 5,
    "quem_avanca": null,
    "gatilhos": [
     {
      "peso": 20,
      "titulo": "Está na metade de baixo da própria praça",
      "chave": "posicao",
-     "fato": "3º lugar de 4 clínicas medidas na praça",
+     "fato": "4º lugar de 5 clínicas medidas na praça",
      "fonte": "dados/portal/rede_cruzamento.json"
     },
     {
@@ -1551,102 +1572,6 @@
    }
   },
   {
-   "local_id": "ortho_cwb_centro",
-   "praca_id": "curitiba",
-   "rotulo": "PR · Curitiba",
-   "unidade": "OrthoDontic · R. XV de Novembro",
-   "unidade_curta": "· R. XV de Novembro",
-   "idade_meses": 1,
-   "urgencia": 35,
-   "faixa": "amarela",
-   "ritmo": 82.9,
-   "meses": 2,
-   "nota": 4.6,
-   "avaliacoes": 1012,
-   "posicao": null,
-   "de": null,
-   "quem_avanca": null,
-   "gatilhos": [
-    {
-     "peso": 20,
-     "titulo": "Unidade nova que ainda não engatou",
-     "chave": "nao_engatou",
-     "fato": "a primeira avaliação é de 2026-06-23, há 1 meses, e o ritmo medido é 82.9/mês — a unidade ainda não engatou",
-     "fonte": "dados/serie/reviews.jsonl"
-    },
-    {
-     "peso": 15,
-     "titulo": "Silêncio publicitário com leilão cheio",
-     "chave": "silencio",
-     "fato": "85 anúncios no ar de 52 anunciantes, e nenhum é da rede",
-     "fonte": "dados/serie/captacao.jsonl"
-    }
-   ],
-   "acao": {
-    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
-    "prazo": "60 dias",
-    "dono": "consultor de campo",
-    "custo": "verba de abertura",
-    "por_causa_de": "nao_engatou"
-   },
-   "pos": 29,
-   "tarefa": {
-    "status": "aberta",
-    "aberta_em": "2026-08-12",
-    "dias_aberta": 1,
-    "prazo_dias": 60,
-    "vence_em": "2026-10-11"
-   }
-  },
-  {
-   "local_id": "rio_de_janei_orthodontic",
-   "praca_id": "rio_de_janeiro",
-   "rotulo": "RJ · Rio de Janeiro",
-   "unidade": "OrthoDontic",
-   "unidade_curta": null,
-   "idade_meses": 1,
-   "urgencia": 35,
-   "faixa": "amarela",
-   "ritmo": 110.5,
-   "meses": 1,
-   "nota": 4.9,
-   "avaliacoes": 308,
-   "posicao": null,
-   "de": null,
-   "quem_avanca": null,
-   "gatilhos": [
-    {
-     "peso": 20,
-     "titulo": "Unidade nova que ainda não engatou",
-     "chave": "nao_engatou",
-     "fato": "a primeira avaliação é de 2026-07-10, há 1 meses, e o ritmo medido é 110.5/mês — a unidade ainda não engatou",
-     "fonte": "dados/serie/reviews.jsonl"
-    },
-    {
-     "peso": 15,
-     "titulo": "Silêncio publicitário com leilão cheio",
-     "chave": "silencio",
-     "fato": "47 anúncios no ar de 30 anunciantes, e nenhum é da rede",
-     "fonte": "dados/serie/captacao.jsonl"
-    }
-   ],
-   "acao": {
-    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
-    "prazo": "60 dias",
-    "dono": "consultor de campo",
-    "custo": "verba de abertura",
-    "por_causa_de": "nao_engatou"
-   },
-   "pos": 30,
-   "tarefa": {
-    "status": "aberta",
-    "aberta_em": "2026-08-13",
-    "dias_aberta": 0,
-    "prazo_dias": 60,
-    "vence_em": "2026-10-12"
-   }
-  },
-  {
    "local_id": "ortho_fln_centro_2",
    "praca_id": "florianopolis",
    "rotulo": "SC · Florianópolis",
@@ -1660,7 +1585,7 @@
    "nota": 5,
    "avaliacoes": 268,
    "posicao": 5,
-   "de": 10,
+   "de": 11,
    "quem_avanca": null,
    "gatilhos": [
     {
@@ -1678,13 +1603,54 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 31,
+   "pos": 29,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
     "dias_aberta": 0,
     "prazo_dias": 14,
     "vence_em": "2026-08-27"
+   }
+  },
+  {
+   "local_id": "ortho_gyn_st_morada_do_sol",
+   "praca_id": "goiania",
+   "rotulo": "GO · Goiânia",
+   "unidade": "OrthoDontic · St. Morada do Sol",
+   "unidade_curta": "· St. Morada do Sol",
+   "idade_meses": 27,
+   "urgencia": 30,
+   "faixa": "amarela",
+   "ritmo": 4.4,
+   "meses": 1,
+   "nota": 5,
+   "avaliacoes": 124,
+   "posicao": 2,
+   "de": 4,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 30,
+     "titulo": "O contador de avaliações parou",
+     "chave": "parada",
+     "fato": "apenas 1 mês seguido com movimento acima do típico da própria unidade; o ritmo medido é 4.4 avaliações/mês",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "pos": 30,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 1,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-26"
    }
   },
   {
@@ -1701,7 +1667,7 @@
    "nota": 4.8,
    "avaliacoes": 91,
    "posicao": 1,
-   "de": 1,
+   "de": 3,
    "quem_avanca": null,
    "gatilhos": [
     {
@@ -1719,7 +1685,7 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 32,
+   "pos": 31,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
@@ -1760,7 +1726,7 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 33,
+   "pos": 32,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
@@ -1801,54 +1767,13 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 34,
+   "pos": 33,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
     "dias_aberta": 1,
     "prazo_dias": 14,
     "vence_em": "2026-08-26"
-   }
-  },
-  {
-   "local_id": "caxias_do_su_orthodontic_centro",
-   "praca_id": "caxias_do_sul",
-   "rotulo": "RS · Caxias do Sul",
-   "unidade": "OrthoDontic · Av. Júlio de Castilhos",
-   "unidade_curta": "· Av. Júlio de Castilhos",
-   "idade_meses": 15,
-   "urgencia": 30,
-   "faixa": "amarela",
-   "ritmo": 7.7,
-   "meses": 2,
-   "nota": 4.7,
-   "avaliacoes": 172,
-   "posicao": null,
-   "de": null,
-   "quem_avanca": null,
-   "gatilhos": [
-    {
-     "peso": 30,
-     "titulo": "O contador de avaliações parou",
-     "chave": "parada",
-     "fato": "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 7.7 avaliações/mês",
-     "fonte": "dados/serie/reviews.jsonl"
-    }
-   ],
-   "acao": {
-    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
-    "prazo": "14 dias",
-    "dono": "franqueado",
-    "custo": "sem custo de mídia",
-    "por_causa_de": "parada"
-   },
-   "pos": 35,
-   "tarefa": {
-    "status": "aberta",
-    "aberta_em": "2026-08-13",
-    "dias_aberta": 0,
-    "prazo_dias": 14,
-    "vence_em": "2026-08-27"
    }
   },
   {
@@ -1889,7 +1814,7 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "rival"
    },
-   "pos": 36,
+   "pos": 34,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
@@ -1904,39 +1829,39 @@
    "rotulo": "RS · Caxias do Sul",
    "unidade": "OrthoDontic · R. Pinheiro Machado",
    "unidade_curta": "· R. Pinheiro Machado",
-   "idade_meses": 2,
+   "idade_meses": 124,
    "urgencia": 20,
    "faixa": "verde",
-   "ritmo": 55.3,
-   "meses": 2,
+   "ritmo": 3.0,
+   "meses": 8,
    "nota": 4.7,
    "avaliacoes": 362,
-   "posicao": null,
-   "de": null,
+   "posicao": 2,
+   "de": 3,
    "quem_avanca": null,
    "gatilhos": [
     {
      "peso": 20,
-     "titulo": "Unidade nova que ainda não engatou",
-     "chave": "nao_engatou",
-     "fato": "a primeira avaliação é de 2026-06-05, há 2 meses, e o ritmo medido é 55.3/mês — a unidade ainda não engatou",
-     "fonte": "dados/serie/reviews.jsonl"
+     "titulo": "Está na metade de baixo da própria praça",
+     "chave": "posicao",
+     "fato": "2º lugar de 3 clínicas medidas na praça",
+     "fonte": "dados/portal/rede_cruzamento.json"
     }
    ],
    "acao": {
-    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
-    "prazo": "60 dias",
-    "dono": "consultor de campo",
-    "custo": "verba de abertura",
-    "por_causa_de": "nao_engatou"
+    "o_que": "Auditar a ficha do Google — foto, horário, serviços, resposta a avaliação",
+    "prazo": "7 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "posicao"
    },
-   "pos": 37,
+   "pos": 35,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
     "dias_aberta": 0,
-    "prazo_dias": 60,
-    "vence_em": "2026-10-12"
+    "prazo_dias": 7,
+    "vence_em": "2026-08-20"
    }
   },
   {
@@ -1971,13 +1896,54 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "nota"
    },
-   "pos": 38,
+   "pos": 36,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
     "dias_aberta": 3,
     "prazo_dias": 10,
     "vence_em": "2026-08-20"
+   }
+  },
+  {
+   "local_id": "ortho_cwb_centro",
+   "praca_id": "curitiba",
+   "rotulo": "PR · Curitiba",
+   "unidade": "OrthoDontic · R. XV de Novembro",
+   "unidade_curta": "· R. XV de Novembro",
+   "idade_meses": 114,
+   "urgencia": 15,
+   "faixa": "verde",
+   "ritmo": 9.0,
+   "meses": 5,
+   "nota": 4.6,
+   "avaliacoes": 1012,
+   "posicao": 2,
+   "de": 5,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 15,
+     "titulo": "Silêncio publicitário com leilão cheio",
+     "chave": "silencio",
+     "fato": "85 anúncios no ar de 52 anunciantes, e nenhum é da rede",
+     "fonte": "dados/serie/captacao.jsonl"
+    }
+   ],
+   "acao": {
+    "o_que": "Entrar no leilão com as frases que a cidade digita — a lista está na praça",
+    "prazo": "30 dias",
+    "dono": "franqueado",
+    "custo": "verba de mídia",
+    "por_causa_de": "silencio"
+   },
+   "pos": 37,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-13",
+    "dias_aberta": 0,
+    "prazo_dias": 30,
+    "vence_em": "2026-09-12"
    }
   },
   {
@@ -2012,7 +1978,7 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "nota"
    },
-   "pos": 39,
+   "pos": 38,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
@@ -2035,7 +2001,7 @@
    "nota": 4.7,
    "avaliacoes": 719,
    "posicao": 1,
-   "de": 4,
+   "de": 5,
    "quem_avanca": null,
    "gatilhos": [
     {
@@ -2053,7 +2019,7 @@
     "custo": "verba de mídia",
     "por_causa_de": "silencio"
    },
-   "pos": 40,
+   "pos": 39,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
@@ -2076,7 +2042,7 @@
    "nota": 4.6,
    "avaliacoes": 268,
    "posicao": 1,
-   "de": 3,
+   "de": 4,
    "quem_avanca": null,
    "gatilhos": [
     {
@@ -2094,7 +2060,7 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "nota"
    },
-   "pos": 41,
+   "pos": 40,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
@@ -2135,13 +2101,54 @@
     "custo": "verba de mídia",
     "por_causa_de": "silencio"
    },
-   "pos": 42,
+   "pos": 41,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
     "dias_aberta": 3,
     "prazo_dias": 30,
     "vence_em": "2026-09-09"
+   }
+  },
+  {
+   "local_id": "rio_de_janei_orthodontic",
+   "praca_id": "rio_de_janeiro",
+   "rotulo": "RJ · Rio de Janeiro",
+   "unidade": "OrthoDontic",
+   "unidade_curta": null,
+   "idade_meses": 45,
+   "urgencia": 15,
+   "faixa": "verde",
+   "ritmo": 6.8,
+   "meses": 7,
+   "nota": 4.9,
+   "avaliacoes": 308,
+   "posicao": 1,
+   "de": 1,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 15,
+     "titulo": "Silêncio publicitário com leilão cheio",
+     "chave": "silencio",
+     "fato": "47 anúncios no ar de 30 anunciantes, e nenhum é da rede",
+     "fonte": "dados/serie/captacao.jsonl"
+    }
+   ],
+   "acao": {
+    "o_que": "Entrar no leilão com as frases que a cidade digita — a lista está na praça",
+    "prazo": "30 dias",
+    "dono": "franqueado",
+    "custo": "verba de mídia",
+    "por_causa_de": "silencio"
+   },
+   "pos": 42,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-13",
+    "dias_aberta": 0,
+    "prazo_dias": 30,
+    "vence_em": "2026-09-12"
    }
   },
   {
@@ -2158,7 +2165,7 @@
    "nota": 4.9,
    "avaliacoes": 161,
    "posicao": 1,
-   "de": 3,
+   "de": 4,
    "quem_avanca": null,
    "gatilhos": [
     {
@@ -2231,10 +2238,10 @@
  "tarefas_vencidas": 0,
  "tarefas_resolvidas": [
   {
-   "local_id": "caxias_do_su_orthodontic_centro",
+   "local_id": "caxias_do_su_orthodontic",
    "rotulo": "RS · Caxias do Sul",
-   "gatilho": "posicao",
-   "titulo": "Está na metade de baixo da própria praça",
+   "gatilho": "nao_engatou",
+   "titulo": "Unidade nova que ainda não engatou",
    "aberta_em": "2026-08-13",
    "ultima_vez_ativa": "2026-08-13",
    "leitura": "o gatilho não voltou na medição de 2026-08-13 — o dado externo fechou o loop"
@@ -2245,6 +2252,15 @@
    "gatilho": "posicao",
    "titulo": "Está na metade de baixo da própria praça",
    "aberta_em": "2026-08-10",
+   "ultima_vez_ativa": "2026-08-13",
+   "leitura": "o gatilho não voltou na medição de 2026-08-13 — o dado externo fechou o loop"
+  },
+  {
+   "local_id": "ortho_cwb_centro",
+   "rotulo": "PR · Curitiba",
+   "gatilho": "nao_engatou",
+   "titulo": "Unidade nova que ainda não engatou",
+   "aberta_em": "2026-08-12",
    "ultima_vez_ativa": "2026-08-13",
    "leitura": "o gatilho não voltou na medição de 2026-08-13 — o dado externo fechou o loop"
   },
@@ -2263,15 +2279,6 @@
    "gatilho": "nao_engatou",
    "titulo": "Unidade nova que ainda não engatou",
    "aberta_em": "2026-08-12",
-   "ultima_vez_ativa": "2026-08-13",
-   "leitura": "o gatilho não voltou na medição de 2026-08-13 — o dado externo fechou o loop"
-  },
-  {
-   "local_id": "ortho_fln_centro",
-   "rotulo": "SC · Florianópolis",
-   "gatilho": "posicao",
-   "titulo": "Está na metade de baixo da própria praça",
-   "aberta_em": "2026-08-13",
    "ultima_vez_ativa": "2026-08-13",
    "leitura": "o gatilho não voltou na medição de 2026-08-13 — o dado externo fechou o loop"
   },
@@ -2312,7 +2319,7 @@
    "leitura": "o gatilho não voltou na medição de 2026-08-13 — o dado externo fechou o loop"
   },
   {
-   "local_id": "ortho_gyn_st_oeste",
+   "local_id": "ortho_gyn_st_morada_do_sol",
    "rotulo": "GO · Goiânia",
    "gatilho": "posicao",
    "titulo": "Está na metade de baixo da própria praça",
@@ -2388,6 +2395,15 @@
    "rotulo": "RS · Caxias do Sul",
    "gatilho": "posicao",
    "titulo": "Está na metade de baixo da própria praça",
+   "aberta_em": "2026-08-13",
+   "ultima_vez_ativa": "2026-08-13",
+   "leitura": "o gatilho não voltou na medição de 2026-08-13 — o dado externo fechou o loop"
+  },
+  {
+   "local_id": "rio_de_janei_orthodontic",
+   "rotulo": "RJ · Rio de Janeiro",
+   "gatilho": "nao_engatou",
+   "titulo": "Unidade nova que ainda não engatou",
    "aberta_em": "2026-08-13",
    "ultima_vez_ativa": "2026-08-13",
    "leitura": "o gatilho não voltou na medição de 2026-08-13 — o dado externo fechou o loop"

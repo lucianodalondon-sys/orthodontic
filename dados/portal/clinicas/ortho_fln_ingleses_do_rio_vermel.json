@@ -29,7 +29,10 @@
     "ritmo": 6.1,
     "meses_seguidos": 1,
     "posicao": 7,
-    "de": 10,
+    "de": 11,
+    "frase_da_posicao": "7ª em ritmo entre as 11 clínicas lidas por inteiro, de 17 medidas nesta praça",
+    "medidas_na_praca": 17,
+    "comparaveis_na_praca": 11,
     "amostra_lida": 267,
     "amostra_dias": 1330,
     "amostra_truncada": false,
@@ -61,7 +64,7 @@
       "fonte": "scripts/fila.py",
       "a_favor": [
         "apenas 1 mês seguido com movimento acima do típico da própria unidade; o ritmo medido é 6.1 avaliações/mês",
-        "7º lugar de 10 clínicas medidas na praça"
+        "7º lugar de 11 clínicas medidas na praça"
       ],
       "contra": [],
       "o_que_aumentaria": "o resultado medido na coleta seguinte (dados/serie/acoes.jsonl)",
@@ -80,7 +83,7 @@
       "peso": 20,
       "titulo": "Está na metade de baixo da própria praça",
       "chave": "posicao",
-      "fato": "7º lugar de 10 clínicas medidas na praça",
+      "fato": "7º lugar de 11 clínicas medidas na praça",
       "fonte": "dados/portal/rede_cruzamento.json"
     }
   ],
@@ -633,6 +636,24 @@
   "acoes": {
     "arcos": [
       {
+        "arco_id": "ortho_fln_ingleses_do_rio_vermel|nao_engatou",
+        "local_id": "ortho_fln_ingleses_do_rio_vermel",
+        "praca_id": "florianopolis",
+        "gatilho": "nao_engatou",
+        "problema": "a primeira avaliação é de 2026-07-22, há 0 meses, e o ritmo medido é 260.6/mês — a unidade ainda não engatou",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": null,
+        "antes": null,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "sem ação padrão para este gatilho",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": "2026-08-13",
+        "veredito": "cedo_demais",
+        "dias": 0
+      },
+      {
         "arco_id": "ortho_fln_ingleses_do_rio_vermel|parada",
         "local_id": "ortho_fln_ingleses_do_rio_vermel",
         "praca_id": "florianopolis",
@@ -645,9 +666,9 @@
         "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
         "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
         "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": null,
-        "medido_em": null,
-        "veredito": "aberto",
+        "depois": 6.1,
+        "medido_em": "2026-08-13",
+        "veredito": "cedo_demais",
         "dias": 0
       },
       {
@@ -663,25 +684,7 @@
         "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
         "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
         "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": null,
-        "medido_em": null,
-        "veredito": "aberto",
-        "dias": 0
-      },
-      {
-        "arco_id": "ortho_fln_ingleses_do_rio_vermel|nao_engatou",
-        "local_id": "ortho_fln_ingleses_do_rio_vermel",
-        "praca_id": "florianopolis",
-        "gatilho": "nao_engatou",
-        "problema": "a primeira avaliação é de 2026-07-22, há 0 meses, e o ritmo medido é 260.6/mês — a unidade ainda não engatou",
-        "evidencia": "dados/serie/fila_historico.jsonl",
-        "aberto_em": "2026-08-13",
-        "metrica": null,
-        "antes": null,
-        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
-        "acao_recomendada": "sem ação padrão para este gatilho",
-        "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": null,
+        "depois": 7.0,
         "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
         "dias": 0

@@ -46,6 +46,9 @@
     "meses_seguidos": 3,
     "posicao": 20,
     "de": 21,
+    "frase_da_posicao": "20ª em ritmo entre as 21 clínicas lidas por inteiro",
+    "medidas_na_praca": 21,
+    "comparaveis_na_praca": 21,
     "amostra_lida": 176,
     "amostra_dias": 3493,
     "amostra_truncada": false,
@@ -973,24 +976,6 @@
   "acoes": {
     "arcos": [
       {
-        "arco_id": "ortho_poa_centro_historico_3|rival",
-        "local_id": "ortho_poa_centro_historico_3",
-        "praca_id": "porto_alegre",
-        "gatilho": "rival",
-        "problema": "Sorridents Porto Alegre Clinica Odontológica / Dentista sustenta há 20 meses a 19.2/mês, contra 1.5/mês desta unidade",
-        "evidencia": "dados/serie/fila_historico.jsonl",
-        "aberto_em": "2026-08-13",
-        "metrica": null,
-        "antes": null,
-        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
-        "acao_recomendada": "sem ação padrão para este gatilho",
-        "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": null,
-        "medido_em": null,
-        "veredito": "aberto",
-        "dias": 0
-      },
-      {
         "arco_id": "ortho_poa_centro_historico_3|nota",
         "local_id": "ortho_poa_centro_historico_3",
         "praca_id": "porto_alegre",
@@ -1025,6 +1010,24 @@
         "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
         "dias": 1
+      },
+      {
+        "arco_id": "ortho_poa_centro_historico_3|rival",
+        "local_id": "ortho_poa_centro_historico_3",
+        "praca_id": "porto_alegre",
+        "gatilho": "rival",
+        "problema": "Sorridents Porto Alegre Clinica Odontológica / Dentista sustenta há 20 meses a 19.2/mês, contra 1.5/mês desta unidade",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": null,
+        "antes": null,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "sem ação padrão para este gatilho",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": "2026-08-13",
+        "veredito": "cedo_demais",
+        "dias": 0
       }
     ],
     "total": 3,

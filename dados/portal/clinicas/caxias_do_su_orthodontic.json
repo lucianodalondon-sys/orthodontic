@@ -26,15 +26,18 @@
   "cabecalho": {
     "nota": 4.7,
     "avaliacoes": 362,
-    "ritmo": 55.3,
-    "meses_seguidos": 2,
-    "posicao": null,
-    "de": null,
-    "amostra_lida": 120,
-    "amostra_dias": 66,
-    "amostra_truncada": true,
-    "ritmo_comparavel": false,
-    "porque_fora_do_ranking": "lemos 120 das 362 avaliações desta clínica, e as mais novas: o ritmo aqui é o dos últimos 66 dias, não o do histórico. Comparar com quem foi lido por inteiro compararia janelas diferentes."
+    "ritmo": 3.0,
+    "meses_seguidos": 8,
+    "posicao": 2,
+    "de": 3,
+    "frase_da_posicao": "2ª em ritmo entre as 3 clínicas lidas por inteiro, de 17 medidas nesta praça",
+    "medidas_na_praca": 17,
+    "comparaveis_na_praca": 3,
+    "amostra_lida": 362,
+    "amostra_dias": 3730,
+    "amostra_truncada": false,
+    "ritmo_comparavel": true,
+    "porque_fora_do_ranking": null
   },
   "faixa": "verde",
   "urgencia": 20,
@@ -42,15 +45,15 @@
     "status": "aberta",
     "aberta_em": "2026-08-13",
     "dias_aberta": 0,
-    "prazo_dias": 60,
-    "vence_em": "2026-10-12"
+    "prazo_dias": 7,
+    "vence_em": "2026-08-20"
   },
   "acao": {
-    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
-    "prazo": "60 dias",
-    "dono": "consultor de campo",
-    "custo": "verba de abertura",
-    "por_causa_de": "nao_engatou",
+    "o_que": "Auditar a ficha do Google — foto, horário, serviços, resposta a avaliação",
+    "prazo": "7 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "posicao",
     "confianca": {
       "natureza": "recomendacao",
       "confianca": "baixa",
@@ -60,7 +63,7 @@
       "medicoes": null,
       "fonte": "scripts/fila.py",
       "a_favor": [
-        "a primeira avaliação é de 2026-06-05, há 2 meses, e o ritmo medido é 55.3/mês — a unidade ainda não engatou"
+        "2º lugar de 3 clínicas medidas na praça"
       ],
       "contra": [],
       "o_que_aumentaria": "o resultado medido na coleta seguinte (dados/serie/acoes.jsonl)",
@@ -70,39 +73,81 @@
   "gatilhos": [
     {
       "peso": 20,
-      "titulo": "Unidade nova que ainda não engatou",
-      "chave": "nao_engatou",
-      "fato": "a primeira avaliação é de 2026-06-05, há 2 meses, e o ritmo medido é 55.3/mês — a unidade ainda não engatou",
-      "fonte": "dados/serie/reviews.jsonl"
+      "titulo": "Está na metade de baixo da própria praça",
+      "chave": "posicao",
+      "fato": "2º lugar de 3 clínicas medidas na praça",
+      "fonte": "dados/portal/rede_cruzamento.json"
     }
   ],
   "quem_avanca": null,
   "o_que_mudou": null,
   "sem_resposta": {
-    "abertas": 1,
-    "com_texto": 1,
+    "abertas": 8,
+    "com_texto": 7,
     "itens": [
       {
         "nota": 2,
         "data": "2026-08-06",
         "texto": "Em geral, o serviço é de qualidade,  mas muitas doutoras não tem um bom tratamento com o cliente.  Muitas vezes que fiz manutenção, a doutora sempre corta as pontinhas do \"arame\" e deixa na boca da gente, então por precaução, sempre vou ao banheiro depois da manutenção pra fazer bochechos na pia do banheiro pra garantir que não vou engolir os resquícios que ficam.",
         "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-05-21",
+        "texto": "Minha experiência foi muito ruim, porque prometeram que eu tiraria o aparelho em 6 meses, e o tratamento acabou demorando muito mais do que o combinado! Não recomendo",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2026-01-23",
+        "texto": "Antes de assinar o contrato atendem na hora , após assinar contrato com eles , começam as demora, fui atendida após 1 hora do meu horário",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2025-10-25",
+        "texto": "Péssimo!meu filho passou 6 anos\nCom aparelho e todos meses só trocavam as borrachas agora tirei minha esposa de lá e depois de4 anos tive que pagar mais 390 da contenção e ela foi 3 vezes e a contenção sempre errado",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2022-05-06",
+        "texto": "Considero um descaso com o cliente o atraso para atender de exatamente uma hora. Consulta agendada para às 14:50 e ser chamado as 15:50. Muitas vezes causando atraso nos compromissos do cliente… Além de que em alguns momentos, tanto em meu tratamento, como do meu namorado e da minha irmã, considerei que o período de uso do aparelho foi estendido sem necessidade.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2022-02-08",
+        "texto": "Não consegui obter informações claras sobre os serviços da clinica, e ja estava preocupado pois li aqui avaliações pesadas",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2021-07-12",
+        "texto": "Fiquei 24 meses com aparelho nesta clinica e me deixaram com os dentes piores do que quando botei , mandei tirar , botou uma contenção groceira na parte inferior que 3 dias depois caiu , comecei sentir dores na boxa e fui em outro dentista e ele se apavorou  com oque fizeram , meu deu até um laudo e vou ter que botar patalho novamente ,mas agora em uma clinica responsável em realmente atender bem e resolver o problema do paciente . Não se iludam com preco e promecas porque o barato me  sai muito caro .....",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2018-03-09",
+        "texto": null,
+        "tem_texto": false
       }
     ],
-    "itens_total": 1
+    "itens_total": 8
   },
   "voz_do_paciente": [
     {
       "o_que_e": "Explica o que vai fazer, antes de fazer",
-      "pct": 0.0
+      "pct": 1.3
     },
     {
       "o_que_e": "Atende na hora marcada",
-      "pct": 3.2
+      "pct": 5.5
     },
     {
       "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
-      "pct": 2.1
+      "pct": 1.3
     },
     {
       "o_que_e": "Cuida de quem tem medo de dentista",
@@ -110,19 +155,19 @@
     },
     {
       "o_que_e": "Resolve no mesmo dia",
-      "pct": 0.0
+      "pct": 0.4
     },
     {
       "o_que_e": "Sabe atender criança",
-      "pct": 1.1
+      "pct": 1.7
     },
     {
       "o_que_e": "Continua presente depois que vendeu",
-      "pct": 3.2
+      "pct": 5.0
     },
     {
       "o_que_e": "Tem profissional que o paciente chama pelo nome",
-      "pct": 10.6
+      "pct": 8.8
     }
   ],
   "rival": {
@@ -133,20 +178,36 @@
     ],
     "vantagens_deles": [
       {
+        "eixo": "resolve_no_mesmo_dia",
+        "o_que_e": "Resolve no mesmo dia",
+        "quem": "OrtoClínica",
+        "eles": 2.3,
+        "nos": 0.4,
+        "razao": 5.5
+      },
+      {
+        "eixo": "explica_o_tratamento",
+        "o_que_e": "Explica o que vai fazer, antes de fazer",
+        "quem": "OrtoClínica",
+        "eles": 4.6,
+        "nos": 1.3,
+        "razao": 3.6
+      },
+      {
         "eixo": "trata_crianca",
         "o_que_e": "Sabe atender criança",
         "quem": "OrtoClínica",
         "eles": 4.6,
-        "nos": 1.1,
-        "razao": 4.3
+        "nos": 1.7,
+        "razao": 2.7
       },
       {
         "eixo": "gente_com_nome",
         "o_que_e": "Tem profissional que o paciente chama pelo nome",
         "quem": "OrtoClínica",
         "eles": 18.4,
-        "nos": 10.6,
-        "razao": 1.7
+        "nos": 8.8,
+        "razao": 2.1
       }
     ],
     "fora": [
@@ -302,8 +363,8 @@
     "local_id": "caxias_do_su_orthodontic",
     "unidade": "OrthoDontic · R. Pinheiro Machado",
     "rotulo": "RS · Caxias do Sul",
-    "com_texto": 94,
-    "sem_estagio": 56,
+    "com_texto": 238,
+    "sem_estagio": 151,
     "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
     "estagios": [
       {
@@ -312,13 +373,29 @@
         "o_que_e": "como me acharam",
         "quem_resolve": "marketing e ficha do Google",
         "medido": true,
-        "avaliacoes": 17,
-        "dor": 0,
-        "elogio": 17,
-        "pct_dor": 0,
+        "avaliacoes": 38,
+        "dor": 5,
+        "elogio": 33,
+        "pct_dor": 13,
         "amostra_curta": false,
-        "exemplos": [],
-        "frase": "17 avaliações falam deste momento, nenhuma com nota baixa",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2022-11-10",
+            "texto": "Nossa péssimo\nFui muito mal atendida\nEu agendei uma avaliação\nMe passaram um dentista mal humorado mal educado. Olha sem explicação.nao recomendo"
+          },
+          {
+            "nota": 1,
+            "data": "2023-01-24",
+            "texto": "Péssima clínica. Agendei uma extração de dente a mais de 15 dias fiz pagamento assinei o termo confirmei via whatsapp a consulta cheguei na clinica me fizeram espera meia Hora a mais do meu horário para falar que o médico tinha ido embora que não iam fazer a extraçao, um descaso toda vez que tenho manutenção a espera e absurda péssimo não recomendo."
+          },
+          {
+            "nota": 1,
+            "data": "2023-03-08",
+            "texto": "Ortodontic sempre com problemas de horário. VC marca e atrasa demais. Até parece que não temos o que fazer. Não recomendo!!!!"
+          }
+        ],
+        "frase": "38 avaliações falam deste momento, 5 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -326,30 +403,62 @@
         "rotulo": "Contato",
         "o_que_e": "telefone e WhatsApp",
         "quem_resolve": "recepção",
-        "medido": false,
-        "avaliacoes": 0,
-        "dor": 0,
+        "medido": true,
+        "avaliacoes": 3,
+        "dor": 3,
         "elogio": 0,
-        "pct_dor": null,
-        "amostra_curta": false,
-        "exemplos": [],
-        "frase": null,
-        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+        "pct_dor": 100,
+        "amostra_curta": true,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2023-01-24",
+            "texto": "Péssima clínica. Agendei uma extração de dente a mais de 15 dias fiz pagamento assinei o termo confirmei via whatsapp a consulta cheguei na clinica me fizeram espera meia Hora a mais do meu horário para falar que o médico tinha ido embora que não iam fazer a extraçao, um descaso toda vez que tenho manutenção a espera e absurda péssimo não recomendo."
+          },
+          {
+            "nota": 1,
+            "data": "2023-12-09",
+            "texto": "Muito mal organizado, marcam um horário, e não atendem passam as pessoas que chegam depois na frente de quem tá esperando."
+          },
+          {
+            "nota": 1,
+            "data": "2025-01-06",
+            "texto": "Horrível marcam um horário mas nunca atendem no horário marcado\nA gente fica uma hora esperando o atendimento"
+          }
+        ],
+        "frase": "3 avaliações falam deste momento, 3 com notas baixas",
+        "porque_vazio": null
       },
       {
         "estagio": "agendamento",
         "rotulo": "Agendamento",
         "o_que_e": "marcar e remarcar",
         "quem_resolve": "recepção",
-        "medido": false,
-        "avaliacoes": 0,
-        "dor": 0,
-        "elogio": 0,
-        "pct_dor": null,
+        "medido": true,
+        "avaliacoes": 9,
+        "dor": 8,
+        "elogio": 1,
+        "pct_dor": 89,
         "amostra_curta": false,
-        "exemplos": [],
-        "frase": null,
-        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2020-10-14",
+            "texto": "Marquei horário um dia antes. Cheguei la no horário marcado, ainda esperei quase 40min para ser informado que iria ter que esperar mais uns 15 a 20min para ser atendido.\nPra que marcar hora se é necessário esperar 1h?!"
+          },
+          {
+            "nota": 1,
+            "data": "2022-05-06",
+            "texto": "Considero um descaso com o cliente o atraso para atender de exatamente uma hora. Consulta agendada para às 14:50 e ser chamado as 15:50. Muitas vezes causando atraso nos compromissos do cliente… Além de que em alguns momentos, tanto em meu tratamento, como do meu namorado e da minha irmã, considerei que o período de uso do aparelho foi estendido sem necessidade."
+          },
+          {
+            "nota": 1,
+            "data": "2022-11-10",
+            "texto": "Nossa péssimo\nFui muito mal atendida\nEu agendei uma avaliação\nMe passaram um dentista mal humorado mal educado. Olha sem explicação.nao recomendo"
+          }
+        ],
+        "frase": "9 avaliações falam deste momento, 8 com notas baixas",
+        "porque_vazio": null
       },
       {
         "estagio": "recepcao",
@@ -357,13 +466,29 @@
         "o_que_e": "chegar e esperar",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 12,
-        "dor": 0,
-        "elogio": 12,
-        "pct_dor": 0,
+        "avaliacoes": 28,
+        "dor": 5,
+        "elogio": 23,
+        "pct_dor": 18,
         "amostra_curta": false,
-        "exemplos": [],
-        "frase": "12 avaliações falam deste momento, nenhuma com nota baixa",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2020-10-14",
+            "texto": "Marquei horário um dia antes. Cheguei la no horário marcado, ainda esperei quase 40min para ser informado que iria ter que esperar mais uns 15 a 20min para ser atendido.\nPra que marcar hora se é necessário esperar 1h?!"
+          },
+          {
+            "nota": 1,
+            "data": "2022-05-06",
+            "texto": "Considero um descaso com o cliente o atraso para atender de exatamente uma hora. Consulta agendada para às 14:50 e ser chamado as 15:50. Muitas vezes causando atraso nos compromissos do cliente… Além de que em alguns momentos, tanto em meu tratamento, como do meu namorado e da minha irmã, considerei que o período de uso do aparelho foi estendido sem necessidade."
+          },
+          {
+            "nota": 1,
+            "data": "2023-01-24",
+            "texto": "Péssima clínica. Agendei uma extração de dente a mais de 15 dias fiz pagamento assinei o termo confirmei via whatsapp a consulta cheguei na clinica me fizeram espera meia Hora a mais do meu horário para falar que o médico tinha ido embora que não iam fazer a extraçao, um descaso toda vez que tenho manutenção a espera e absurda péssimo não recomendo."
+          }
+        ],
+        "frase": "28 avaliações falam deste momento, 5 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -372,13 +497,24 @@
         "o_que_e": "a primeira consulta",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 1,
-        "dor": 0,
-        "elogio": 1,
-        "pct_dor": 0,
+        "avaliacoes": 4,
+        "dor": 2,
+        "elogio": 2,
+        "pct_dor": 50,
         "amostra_curta": true,
-        "exemplos": [],
-        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2022-02-08",
+            "texto": "Não consegui obter informações claras sobre os serviços da clinica, e ja estava preocupado pois li aqui avaliações pesadas"
+          },
+          {
+            "nota": 1,
+            "data": "2022-11-10",
+            "texto": "Nossa péssimo\nFui muito mal atendida\nEu agendei uma avaliação\nMe passaram um dentista mal humorado mal educado. Olha sem explicação.nao recomendo"
+          }
+        ],
+        "frase": "4 avaliações falam deste momento, 2 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -387,13 +523,19 @@
         "o_que_e": "preço, contrato e entrada",
         "quem_resolve": "franqueado",
         "medido": true,
-        "avaliacoes": 4,
-        "dor": 0,
-        "elogio": 4,
-        "pct_dor": 0,
+        "avaliacoes": 7,
+        "dor": 2,
+        "elogio": 5,
+        "pct_dor": 29,
         "amostra_curta": true,
-        "exemplos": [],
-        "frase": "4 avaliações falam deste momento, nenhuma com nota baixa",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2026-01-23",
+            "texto": "Antes de assinar o contrato atendem na hora , após assinar contrato com eles , começam as demora, fui atendida após 1 hora do meu horário"
+          }
+        ],
+        "frase": "7 avaliações falam deste momento, 2 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -402,19 +544,29 @@
         "o_que_e": "a cadeira",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 14,
-        "dor": 1,
-        "elogio": 13,
-        "pct_dor": 7,
+        "avaliacoes": 28,
+        "dor": 9,
+        "elogio": 19,
+        "pct_dor": 32,
         "amostra_curta": false,
         "exemplos": [
           {
+            "nota": 1,
+            "data": "2022-11-10",
+            "texto": "Nossa péssimo\nFui muito mal atendida\nEu agendei uma avaliação\nMe passaram um dentista mal humorado mal educado. Olha sem explicação.nao recomendo"
+          },
+          {
             "nota": 2,
-            "data": "2026-08-06",
-            "texto": "Em geral, o serviço é de qualidade,  mas muitas doutoras não tem um bom tratamento com o cliente.  Muitas vezes que fiz manutenção, a doutora sempre corta as pontinhas do \"arame\" e deixa na boca da gente, então por precaução, sempre vou ao banheiro depois da manutenção pra fazer bochechos na pia do banheiro pra garantir que não vou engolir os resquícios que ficam."
+            "data": "2022-11-30",
+            "texto": "Não gostei do atendimento,sábado fui colocar o aparelho e falei que estava com um dente doendo elas nem se deram mais trabalho de examinar,colocaram o aparelho nos dentes da frente e eu fiquei com dor,falta organização da parte delas,só querem meter aparelho e nem revisam a boca dos pacientes"
+          },
+          {
+            "nota": 1,
+            "data": "2023-01-24",
+            "texto": "Péssima clínica. Agendei uma extração de dente a mais de 15 dias fiz pagamento assinei o termo confirmei via whatsapp a consulta cheguei na clinica me fizeram espera meia Hora a mais do meu horário para falar que o médico tinha ido embora que não iam fazer a extraçao, um descaso toda vez que tenho manutenção a espera e absurda péssimo não recomendo."
           }
         ],
-        "frase": "14 avaliações falam deste momento, 1 com nota baixa",
+        "frase": "28 avaliações falam deste momento, 9 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -423,19 +575,24 @@
         "o_que_e": "as voltas de cada mês",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 2,
-        "dor": 1,
+        "avaliacoes": 4,
+        "dor": 3,
         "elogio": 1,
-        "pct_dor": 50,
+        "pct_dor": 75,
         "amostra_curta": true,
         "exemplos": [
+          {
+            "nota": 1,
+            "data": "2023-01-24",
+            "texto": "Péssima clínica. Agendei uma extração de dente a mais de 15 dias fiz pagamento assinei o termo confirmei via whatsapp a consulta cheguei na clinica me fizeram espera meia Hora a mais do meu horário para falar que o médico tinha ido embora que não iam fazer a extraçao, um descaso toda vez que tenho manutenção a espera e absurda péssimo não recomendo."
+          },
           {
             "nota": 2,
             "data": "2026-08-06",
             "texto": "Em geral, o serviço é de qualidade,  mas muitas doutoras não tem um bom tratamento com o cliente.  Muitas vezes que fiz manutenção, a doutora sempre corta as pontinhas do \"arame\" e deixa na boca da gente, então por precaução, sempre vou ao banheiro depois da manutenção pra fazer bochechos na pia do banheiro pra garantir que não vou engolir os resquícios que ficam."
           }
         ],
-        "frase": "2 avaliações falam deste momento, 1 com nota baixa",
+        "frase": "4 avaliações falam deste momento, 3 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -443,15 +600,26 @@
         "rotulo": "Cobrança",
         "o_que_e": "mensalidade e multa",
         "quem_resolve": "franqueado",
-        "medido": false,
-        "avaliacoes": 0,
-        "dor": 0,
+        "medido": true,
+        "avaliacoes": 3,
+        "dor": 3,
         "elogio": 0,
-        "pct_dor": null,
-        "amostra_curta": false,
-        "exemplos": [],
-        "frase": null,
-        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+        "pct_dor": 100,
+        "amostra_curta": true,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2023-01-24",
+            "texto": "Péssima clínica. Agendei uma extração de dente a mais de 15 dias fiz pagamento assinei o termo confirmei via whatsapp a consulta cheguei na clinica me fizeram espera meia Hora a mais do meu horário para falar que o médico tinha ido embora que não iam fazer a extraçao, um descaso toda vez que tenho manutenção a espera e absurda péssimo não recomendo."
+          },
+          {
+            "nota": 1,
+            "data": "2024-06-18",
+            "texto": "Clínica não confiável, o meu sobrinho  está a mais de 3 anos com aparelho, os dentes não  está alinhado, não fez o canal que era pra fazer,não fez a extração dos sisos.\nPrimeiro vocês aprendem a trabalhar, pra depois cobrar."
+          }
+        ],
+        "frase": "3 avaliações falam deste momento, 3 com notas baixas",
+        "porque_vazio": null
       },
       {
         "estagio": "suporte",
@@ -459,13 +627,13 @@
         "o_que_e": "quando algo dá errado",
         "quem_resolve": "franqueado",
         "medido": true,
-        "avaliacoes": 2,
-        "dor": 0,
+        "avaliacoes": 3,
+        "dor": 1,
         "elogio": 2,
-        "pct_dor": 0,
+        "pct_dor": 33,
         "amostra_curta": true,
         "exemplos": [],
-        "frase": "2 avaliações falam deste momento, nenhuma com nota baixa",
+        "frase": "3 avaliações falam deste momento, 1 com nota baixa",
         "porque_vazio": null
       },
       {
@@ -473,32 +641,38 @@
         "rotulo": "Fim e contenção",
         "o_que_e": "alta e depois dela",
         "quem_resolve": "clínica",
-        "medido": false,
-        "avaliacoes": 0,
-        "dor": 0,
-        "elogio": 0,
-        "pct_dor": null,
-        "amostra_curta": false,
-        "exemplos": [],
-        "frase": null,
-        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+        "medido": true,
+        "avaliacoes": 5,
+        "dor": 4,
+        "elogio": 1,
+        "pct_dor": 80,
+        "amostra_curta": true,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2025-10-25",
+            "texto": "Péssimo!meu filho passou 6 anos\nCom aparelho e todos meses só trocavam as borrachas agora tirei minha esposa de lá e depois de4 anos tive que pagar mais 390 da contenção e ela foi 3 vezes e a contenção sempre errado"
+          }
+        ],
+        "frase": "5 avaliações falam deste momento, 4 com notas baixas",
+        "porque_vazio": null
       }
     ],
-    "manchete": "Nenhum momento da jornada concentra dor com amostra suficiente para virar manchete.",
-    "quem_resolve": null,
-    "e_clinico": null,
+    "manchete": "A dor pública desta unidade aparece em atendimento clínico — 9 avaliações de 1 ou 2 estrelas de 28 que falam desse momento.",
+    "quem_resolve": "clínica",
+    "e_clinico": true,
     "confianca": {
       "natureza": "fato",
       "confianca": "media",
       "medido": true,
-      "amostra": 94,
+      "amostra": 238,
       "janela_dias": null,
       "medicoes": null,
       "fonte": "dados/serie/reviews.jsonl",
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": "mais avaliações com texto nesta loja",
-      "procedencia": "medido em 94 avaliações"
+      "procedencia": "medido em 238 avaliações"
     }
   },
   "meu_territorio": {
@@ -589,6 +763,39 @@
     "unidade": "OrthoDontic · R. Pinheiro Machado",
     "itens": [
       {
+        "problema": "A dor pública desta unidade aparece em atendimento clínico — 9 avaliações de 1 ou 2 estrelas de 28 que falam desse momento.",
+        "e_marketing": false,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "operacao",
+          "especialidade": "a própria unidade",
+          "porque_nao_e_marketing": "a dor pública está em o atendimento na cadeira. Campanha não conserta isso — mais mídia sobre um gargalo de balcão só aumenta o número de pessoas irritadas.",
+          "quem_resolve": "clínica",
+          "metrica_de_validacao": "as mesmas avaliações, reclassificadas na próxima coleta",
+          "recoletar_em_dias": 30
+        },
+        "evidencias": [
+          "38 avaliações falam deste momento, 5 com notas baixas",
+          "3 avaliações falam deste momento, 3 com notas baixas",
+          "9 avaliações falam deste momento, 8 com notas baixas"
+        ],
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": null,
+          "janela_dias": null,
+          "medicoes": null,
+          "fonte": "dados/portal/jornada.json",
+          "a_favor": [
+            "A dor pública desta unidade aparece em atendimento clínico — 9 avaliações de 1 ou 2 estrelas de 28 que falam desse momento."
+          ],
+          "contra": [],
+          "o_que_aumentaria": "a próxima medição da jornada",
+          "procedencia": "sem amostra declarada"
+        }
+      },
+      {
         "problema": "a leitura da cidade diz 0 de 167, e ela não vale nesta escala",
         "e_marketing": true,
         "execucao": {
@@ -611,10 +818,35 @@
           "o_que_aumentaria": "mais frases por loja na próxima grade",
           "procedencia": "medido em 5 buscas testadas, 1 medição"
         }
+      },
+      {
+        "problema": "8 avaliações negativas abertas sem resposta",
+        "e_marketing": false,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "reputacao",
+          "especialidade": "a própria unidade",
+          "porque_nao_e_marketing": "responder paciente é trabalho de quem atende. Agência escrevendo resposta em nome da clínica é o caminho mais curto para uma resposta que o paciente percebe como automática.",
+          "metrica_de_validacao": "quantas seguem sem resposta na próxima coleta",
+          "recoletar_em_dias": 15
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 8,
+          "janela_dias": null,
+          "medicoes": null,
+          "fonte": "dados/portal/caixa_de_respostas.json",
+          "a_favor": [],
+          "contra": [],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 8 avaliações"
+        }
       }
     ],
     "de_marketing": 0,
-    "de_operacao": 0,
+    "de_operacao": 2,
     "descartados": 1
   },
   "meu_bairro": {
@@ -642,6 +874,24 @@
   },
   "acoes": {
     "arcos": [
+      {
+        "arco_id": "caxias_do_su_orthodontic|posicao",
+        "local_id": "caxias_do_su_orthodontic",
+        "praca_id": "caxias_do_sul",
+        "gatilho": "posicao",
+        "problema": "2º lugar de 3 clínicas medidas na praça",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": "posicao",
+        "antes": 2.0,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      },
       {
         "arco_id": "orthodontic|nao_engatou",
         "local_id": "caxias_do_su_orthodontic",
@@ -679,7 +929,7 @@
         "dias": 0
       }
     ],
-    "total": 2,
+    "total": 3,
     "aviso": "O livro nasceu hoje. Nenhum arco completou 21 dias, então ainda não há veredito para ninguém — a primeira resposta vem na coleta seguinte."
   },
   "oferta_da_cidade": {
@@ -1115,10 +1365,24 @@
       "fonte": "dados/serie/fila_historico.jsonl"
     },
     {
+      "data": "2026-08-13",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Está na metade de baixo da própria praça",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
       "data": "2026-08-06",
       "tipo": "avaliacao_negativa",
       "quem": "paciente",
       "texto": "avaliação de 2★: “Em geral, o serviço é de qualidade,  mas muitas doutoras não tem um bom tratamento com o c…” · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "data": "2026-05-21",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 1★: “Minha experiência foi muito ruim, porque prometeram que eu tiraria o aparelho em 6 meses, …” · SEM RESPOSTA",
       "fonte": "dados/serie/reviews.jsonl"
     }
   ]

@@ -11,6 +11,39 @@
    "unidade": "OrthoDontic · R. Pinheiro Machado",
    "itens": [
     {
+     "problema": "A dor pública desta unidade aparece em atendimento clínico — 9 avaliações de 1 ou 2 estrelas de 28 que falam desse momento.",
+     "e_marketing": false,
+     "execucao": {
+      "necessaria": true,
+      "tipo": "operacao",
+      "especialidade": "a própria unidade",
+      "porque_nao_e_marketing": "a dor pública está em o atendimento na cadeira. Campanha não conserta isso — mais mídia sobre um gargalo de balcão só aumenta o número de pessoas irritadas.",
+      "quem_resolve": "clínica",
+      "metrica_de_validacao": "as mesmas avaliações, reclassificadas na próxima coleta",
+      "recoletar_em_dias": 30
+     },
+     "evidencias": [
+      "38 avaliações falam deste momento, 5 com notas baixas",
+      "3 avaliações falam deste momento, 3 com notas baixas",
+      "9 avaliações falam deste momento, 8 com notas baixas"
+     ],
+     "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": null,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/portal/jornada.json",
+      "a_favor": [
+       "A dor pública desta unidade aparece em atendimento clínico — 9 avaliações de 1 ou 2 estrelas de 28 que falam desse momento."
+      ],
+      "contra": [],
+      "o_que_aumentaria": "a próxima medição da jornada",
+      "procedencia": "sem amostra declarada"
+     }
+    },
+    {
      "problema": "a leitura da cidade diz 0 de 167, e ela não vale nesta escala",
      "e_marketing": true,
      "execucao": {
@@ -33,10 +66,35 @@
       "o_que_aumentaria": "mais frases por loja na próxima grade",
       "procedencia": "medido em 5 buscas testadas, 1 medição"
      }
+    },
+    {
+     "problema": "8 avaliações negativas abertas sem resposta",
+     "e_marketing": false,
+     "execucao": {
+      "necessaria": true,
+      "tipo": "reputacao",
+      "especialidade": "a própria unidade",
+      "porque_nao_e_marketing": "responder paciente é trabalho de quem atende. Agência escrevendo resposta em nome da clínica é o caminho mais curto para uma resposta que o paciente percebe como automática.",
+      "metrica_de_validacao": "quantas seguem sem resposta na próxima coleta",
+      "recoletar_em_dias": 15
+     },
+     "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 8,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/portal/caixa_de_respostas.json",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": null,
+      "procedencia": "medido em 8 avaliações"
+     }
     }
    ],
    "de_marketing": 0,
-   "de_operacao": 0,
+   "de_operacao": 2,
    "descartados": 1
   },
   {
@@ -70,7 +128,7 @@
      }
     },
     {
-     "problema": "5 avaliações negativas abertas sem resposta",
+     "problema": "6 avaliações negativas abertas sem resposta",
      "e_marketing": false,
      "execucao": {
       "necessaria": true,
@@ -84,14 +142,14 @@
       "natureza": "recomendacao",
       "confianca": "baixa",
       "medido": true,
-      "amostra": 5,
+      "amostra": 6,
       "janela_dias": null,
       "medicoes": null,
       "fonte": "dados/portal/caixa_de_respostas.json",
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": null,
-      "procedencia": "medido em 5 avaliações"
+      "procedencia": "medido em 6 avaliações"
      }
     }
    ],
@@ -240,6 +298,75 @@
    "descartados": 1
   },
   {
+   "local_id": "ortho_cwb_centro",
+   "praca_id": "curitiba",
+   "rotulo": "PR · Curitiba",
+   "unidade": "OrthoDontic · R. XV de Novembro",
+   "itens": [
+    {
+     "problema": "A dor pública desta unidade aparece em contato — 30 avaliações de 1 ou 2 estrelas de 37 que falam desse momento.",
+     "e_marketing": false,
+     "execucao": {
+      "necessaria": true,
+      "tipo": "operacao",
+      "especialidade": "a própria unidade",
+      "porque_nao_e_marketing": "a dor pública está em telefone e WhatsApp sem resposta. Campanha não conserta isso — mais mídia sobre um gargalo de balcão só aumenta o número de pessoas irritadas.",
+      "quem_resolve": "recepção",
+      "metrica_de_validacao": "as mesmas avaliações, reclassificadas na próxima coleta",
+      "recoletar_em_dias": 30
+     },
+     "evidencias": [
+      "110 avaliações falam deste momento, 17 com notas baixas",
+      "37 avaliações falam deste momento, 30 com notas baixas",
+      "26 avaliações falam deste momento, 15 com notas baixas"
+     ],
+     "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": null,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/portal/jornada.json",
+      "a_favor": [
+       "A dor pública desta unidade aparece em contato — 30 avaliações de 1 ou 2 estrelas de 37 que falam desse momento."
+      ],
+      "contra": [],
+      "o_que_aumentaria": "a próxima medição da jornada",
+      "procedencia": "sem amostra declarada"
+     }
+    },
+    {
+     "problema": "23 avaliações negativas abertas sem resposta",
+     "e_marketing": false,
+     "execucao": {
+      "necessaria": true,
+      "tipo": "reputacao",
+      "especialidade": "a própria unidade",
+      "porque_nao_e_marketing": "responder paciente é trabalho de quem atende. Agência escrevendo resposta em nome da clínica é o caminho mais curto para uma resposta que o paciente percebe como automática.",
+      "metrica_de_validacao": "quantas seguem sem resposta na próxima coleta",
+      "recoletar_em_dias": 15
+     },
+     "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 23,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/portal/caixa_de_respostas.json",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": null,
+      "procedencia": "medido em 23 avaliações"
+     }
+    }
+   ],
+   "de_marketing": 0,
+   "de_operacao": 2,
+   "descartados": 0
+  },
+  {
    "local_id": "ortho_cwb_centro_2",
    "praca_id": "curitiba",
    "rotulo": "PR · Curitiba",
@@ -345,13 +472,13 @@
    "descartados": 0
   },
   {
-   "local_id": "ortho_gyn_st_oeste",
-   "praca_id": "goiania",
-   "rotulo": "GO · Goiânia",
-   "unidade": "OrthoDontic · St. Oeste",
+   "local_id": "ortho_fln_centro",
+   "praca_id": "florianopolis",
+   "rotulo": "SC · Florianópolis",
+   "unidade": "OrthoDontic · Rua Sete de Setembro",
    "itens": [
     {
-     "problema": "A dor pública desta unidade aparece em agendamento — 12 avaliações de 1 ou 2 estrelas de 13 que falam desse momento.",
+     "problema": "A dor pública desta unidade aparece em agendamento — 17 avaliações de 1 ou 2 estrelas de 19 que falam desse momento.",
      "e_marketing": false,
      "execucao": {
       "necessaria": true,
@@ -363,9 +490,9 @@
       "recoletar_em_dias": 30
      },
      "evidencias": [
-      "6 avaliações falam deste momento, 4 com notas baixas",
-      "10 avaliações falam deste momento, 7 com notas baixas",
-      "13 avaliações falam deste momento, 12 com notas baixas"
+      "35 avaliações falam deste momento, 8 com notas baixas",
+      "16 avaliações falam deste momento, 13 com notas baixas",
+      "19 avaliações falam deste momento, 17 com notas baixas"
      ],
      "confianca": {
       "natureza": "recomendacao",
@@ -376,7 +503,51 @@
       "medicoes": null,
       "fonte": "dados/portal/jornada.json",
       "a_favor": [
-       "A dor pública desta unidade aparece em agendamento — 12 avaliações de 1 ou 2 estrelas de 13 que falam desse momento."
+       "A dor pública desta unidade aparece em agendamento — 17 avaliações de 1 ou 2 estrelas de 19 que falam desse momento."
+      ],
+      "contra": [],
+      "o_que_aumentaria": "a próxima medição da jornada",
+      "procedencia": "sem amostra declarada"
+     }
+    }
+   ],
+   "de_marketing": 0,
+   "de_operacao": 1,
+   "descartados": 0
+  },
+  {
+   "local_id": "ortho_gyn_st_oeste",
+   "praca_id": "goiania",
+   "rotulo": "GO · Goiânia",
+   "unidade": "OrthoDontic · St. Oeste",
+   "itens": [
+    {
+     "problema": "A dor pública desta unidade aparece em agendamento — 19 avaliações de 1 ou 2 estrelas de 20 que falam desse momento.",
+     "e_marketing": false,
+     "execucao": {
+      "necessaria": true,
+      "tipo": "operacao",
+      "especialidade": "a própria unidade",
+      "porque_nao_e_marketing": "a dor pública está em marcar, remarcar e encaixar. Campanha não conserta isso — mais mídia sobre um gargalo de balcão só aumenta o número de pessoas irritadas.",
+      "quem_resolve": "recepção",
+      "metrica_de_validacao": "as mesmas avaliações, reclassificadas na próxima coleta",
+      "recoletar_em_dias": 30
+     },
+     "evidencias": [
+      "16 avaliações falam deste momento, 8 com notas baixas",
+      "15 avaliações falam deste momento, 11 com notas baixas",
+      "20 avaliações falam deste momento, 19 com notas baixas"
+     ],
+     "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": null,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/portal/jornada.json",
+      "a_favor": [
+       "A dor pública desta unidade aparece em agendamento — 19 avaliações de 1 ou 2 estrelas de 20 que falam desse momento."
       ],
       "contra": [],
       "o_que_aumentaria": "a próxima medição da jornada",
@@ -384,7 +555,7 @@
      }
     },
     {
-     "problema": "10 avaliações negativas abertas sem resposta",
+     "problema": "21 avaliações negativas abertas sem resposta",
      "e_marketing": false,
      "execucao": {
       "necessaria": true,
@@ -398,14 +569,14 @@
       "natureza": "recomendacao",
       "confianca": "baixa",
       "medido": true,
-      "amostra": 10,
+      "amostra": 21,
       "janela_dias": null,
       "medicoes": null,
       "fonte": "dados/portal/caixa_de_respostas.json",
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": null,
-      "procedencia": "medido em 10 avaliações"
+      "procedencia": "medido em 21 avaliações"
      }
     }
    ],
@@ -1187,10 +1358,35 @@
       "o_que_aumentaria": "mais frases por loja na próxima grade",
       "procedencia": "medido em 5 buscas testadas, 1 medição"
      }
+    },
+    {
+     "problema": "8 avaliações negativas abertas sem resposta",
+     "e_marketing": false,
+     "execucao": {
+      "necessaria": true,
+      "tipo": "reputacao",
+      "especialidade": "a própria unidade",
+      "porque_nao_e_marketing": "responder paciente é trabalho de quem atende. Agência escrevendo resposta em nome da clínica é o caminho mais curto para uma resposta que o paciente percebe como automática.",
+      "metrica_de_validacao": "quantas seguem sem resposta na próxima coleta",
+      "recoletar_em_dias": 15
+     },
+     "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 8,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/portal/caixa_de_respostas.json",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": null,
+      "procedencia": "medido em 8 avaliações"
+     }
     }
    ],
    "de_marketing": 0,
-   "de_operacao": 0,
+   "de_operacao": 1,
    "descartados": 1
   },
   {
@@ -1224,7 +1420,7 @@
      }
     },
     {
-     "problema": "5 avaliações negativas abertas sem resposta",
+     "problema": "10 avaliações negativas abertas sem resposta",
      "e_marketing": false,
      "execucao": {
       "necessaria": true,
@@ -1238,14 +1434,14 @@
       "natureza": "recomendacao",
       "confianca": "baixa",
       "medido": true,
-      "amostra": 5,
+      "amostra": 10,
       "janela_dias": null,
       "medicoes": null,
       "fonte": "dados/portal/caixa_de_respostas.json",
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": null,
-      "procedencia": "medido em 5 avaliações"
+      "procedencia": "medido em 10 avaliações"
      }
     }
    ],
@@ -1704,5 +1900,5 @@
   }
  ],
  "de_marketing": 5,
- "de_operacao": 36
+ "de_operacao": 42
 }

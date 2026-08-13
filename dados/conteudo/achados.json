@@ -679,14 +679,191 @@
    ]
   },
   {
+   "t": "A ferida é sempre operação — nunca o produto",
+   "n": "17/17",
+   "estado": "constante",
+   "como_se_mede": "compara, nas avaliações de 1 a 3 estrelas, quantas citam operação (atendimento, agenda, comunicação, contrato) contra quantas citam produto (resultado, aparelho). Uma avaliação pode citar as duas — por isso os dois somam mais de 100%.",
+   "ev": [
+    [
+     "RS · Caxias do Sul",
+     "operação 65% contra produto 51% em 49 negativas"
+    ],
+    [
+     "MG · Contagem",
+     "operação 77% contra produto 56% em 178 negativas"
+    ],
+    [
+     "MT · Cuiabá",
+     "operação 72% contra produto 52% em 197 negativas"
+    ],
+    [
+     "PR · Curitiba",
+     "operação 82% contra produto 61% em 243 negativas"
+    ],
+    [
+     "BA · Feira de Santana",
+     "operação 70% contra produto 40% em 168 negativas"
+    ],
+    [
+     "SC · Florianópolis",
+     "operação 77% contra produto 54% em 225 negativas"
+    ],
+    [
+     "GO · Goiânia",
+     "operação 80% contra produto 50% em 158 negativas"
+    ],
+    [
+     "SC · Joinville",
+     "operação 74% contra produto 50% em 331 negativas"
+    ]
+   ],
+   "excecoes": [],
+   "sem_amostra": [
+    "MA · Imperatriz",
+    "CE · Juazeiro do Norte",
+    "SC · Mafra",
+    "PA · Marabá",
+    "PA · Parauapebas",
+    "AC · Rio Branco"
+   ]
+  },
+  {
+   "t": "A confiança é em gente com nome, não em marca",
+   "n": "23/23",
+   "estado": "constante",
+   "como_se_mede": "mede quanto das avaliações cita uma pessoa pelo nome próprio.",
+   "ev": [
+    [
+     "RS · Caxias do Sul",
+     "4% das avaliações citam alguém pelo nome"
+    ],
+    [
+     "MG · Contagem",
+     "10% das avaliações citam alguém pelo nome"
+    ],
+    [
+     "MT · Cuiabá",
+     "5% das avaliações citam alguém pelo nome"
+    ],
+    [
+     "PR · Curitiba",
+     "7% das avaliações citam alguém pelo nome"
+    ],
+    [
+     "BA · Feira de Santana",
+     "5% das avaliações citam alguém pelo nome"
+    ],
+    [
+     "SC · Florianópolis",
+     "6% das avaliações citam alguém pelo nome"
+    ],
+    [
+     "GO · Goiânia",
+     "8% das avaliações citam alguém pelo nome"
+    ],
+    [
+     "MA · Imperatriz",
+     "3% das avaliações citam alguém pelo nome"
+    ]
+   ],
+   "excecoes": [],
+   "sem_amostra": []
+  },
+  {
+   "t": "A porta de entrada é 'dentista', não 'aparelho'",
+   "n": "23/23",
+   "estado": "constante",
+   "como_se_mede": "compara quantas frases que a cidade digita são da família 'dentista' contra a família 'aparelho'. Quem digita 'dentista' é quem marca a avaliação e sai com aparelho.",
+   "ev": [
+    [
+     "RS · Caxias do Sul",
+     "porta 'dentista' 33 frases contra 'aparelho' 2"
+    ],
+    [
+     "MG · Contagem",
+     "porta 'dentista' 17 frases contra 'aparelho' 1"
+    ],
+    [
+     "MT · Cuiabá",
+     "porta 'dentista' 16 frases contra 'aparelho' 1"
+    ],
+    [
+     "PR · Curitiba",
+     "porta 'dentista' 26 frases contra 'aparelho' 5"
+    ],
+    [
+     "BA · Feira de Santana",
+     "porta 'dentista' 17 frases contra 'aparelho' 1"
+    ],
+    [
+     "SC · Florianópolis",
+     "porta 'dentista' 31 frases contra 'aparelho' 3"
+    ],
+    [
+     "GO · Goiânia",
+     "porta 'dentista' 27 frases contra 'aparelho' 3"
+    ],
+    [
+     "MA · Imperatriz",
+     "porta 'dentista' 17 frases contra 'aparelho' 0"
+    ]
+   ],
+   "excecoes": [],
+   "sem_amostra": []
+  },
+  {
+   "t": "O adulto 30+ é dinheiro na mesa e nenhuma praça fala com ele",
+   "n": "22/22",
+   "estado": "constante",
+   "como_se_mede": "compara a população de 30 a 45 anos com a de 9 a 15, pelo IBGE.",
+   "ev": [
+    [
+     "RS · Caxias do Sul",
+     "115.758 adultos de 30-45 contra 37.913 de 9-15 — 3.1x"
+    ],
+    [
+     "MG · Contagem",
+     "155.079 adultos de 30-45 contra 52.795 de 9-15 — 2.9x"
+    ],
+    [
+     "MT · Cuiabá",
+     "240.202 adultos de 30-45 contra 93.821 de 9-15 — 2.6x"
+    ],
+    [
+     "PR · Curitiba",
+     "427.841 adultos de 30-45 contra 143.327 de 9-15 — 3.0x"
+    ],
+    [
+     "BA · Feira de Santana",
+     "156.142 adultos de 30-45 contra 61.014 de 9-15 — 2.6x"
+    ],
+    [
+     "SC · Florianópolis",
+     "144.371 adultos de 30-45 contra 39.488 de 9-15 — 3.7x"
+    ],
+    [
+     "GO · Goiânia",
+     "362.030 adultos de 30-45 contra 122.711 de 9-15 — 3.0x"
+    ],
+    [
+     "MA · Imperatriz",
+     "67.291 adultos de 30-45 contra 28.561 de 9-15 — 2.4x"
+    ]
+   ],
+   "excecoes": [],
+   "sem_amostra": [
+    "MG · Uberlândia"
+   ]
+  },
+  {
    "t": "Em toda praça com mais de uma unidade, a mais lenta fica abaixo da mediana da cidade",
-   "n": "14/17",
+   "n": "15/17",
    "estado": "vale_para_a_rede",
    "como_se_mede": "compara o ritmo da nossa unidade mais lenta com a mediana das clínicas da própria praça.",
    "ev": [
     [
      "RS · Caxias do Sul",
-     "a mais lenta das nossas faz 3.2/mês contra mediana 25.1 da praça"
+     "a mais lenta das nossas faz 2.6/mês contra mediana 25.1 da praça"
     ],
     [
      "MG · Contagem",
@@ -706,11 +883,11 @@
     ],
     [
      "SC · Florianópolis",
-     "a mais lenta das nossas faz 6.1/mês contra mediana 7.5 da praça"
+     "a mais lenta das nossas faz 3.6/mês contra mediana 7.5 da praça"
     ],
     [
      "GO · Goiânia",
-     "a mais lenta das nossas faz 3.1/mês contra mediana 15.1 da praça"
+     "a mais lenta das nossas faz 2.2/mês contra mediana 15.1 da praça"
     ],
     [
      "SC · Joinville",
@@ -725,10 +902,6 @@
     {
      "praca": "SP · Presidente Prudente",
      "valor": "a mais lenta das nossas faz 3.6/mês contra mediana 2.8 da praça"
-    },
-    {
-     "praca": "RJ · Rio de Janeiro",
-     "valor": "a mais lenta das nossas faz 110.5/mês contra mediana 11.3 da praça"
     }
    ],
    "sem_amostra": [
@@ -827,7 +1000,7 @@
    "ev": [
     [
      "RS · Caxias do Sul",
-     "29% recomendam explicitamente"
+     "28% recomendam explicitamente"
     ],
     [
      "MG · Contagem",

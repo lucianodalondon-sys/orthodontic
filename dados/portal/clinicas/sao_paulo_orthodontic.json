@@ -30,15 +30,18 @@
   "cabecalho": {
     "nota": 4.7,
     "avaliacoes": 189,
-    "ritmo": 6.5,
+    "ritmo": 2.4,
     "meses_seguidos": 0,
-    "posicao": null,
-    "de": null,
-    "amostra_lida": 120,
-    "amostra_dias": 563,
-    "amostra_truncada": true,
-    "ritmo_comparavel": false,
-    "porque_fora_do_ranking": "lemos 120 das 189 avaliações desta clínica, e as mais novas: o ritmo aqui é o dos últimos 563 dias, não o do histórico. Comparar com quem foi lido por inteiro compararia janelas diferentes."
+    "posicao": 2,
+    "de": 4,
+    "frase_da_posicao": "2ª em ritmo entre as 4 clínicas lidas por inteiro, de 18 medidas nesta praça",
+    "medidas_na_praca": 18,
+    "comparaveis_na_praca": 4,
+    "amostra_lida": 189,
+    "amostra_dias": 2346,
+    "amostra_truncada": false,
+    "ritmo_comparavel": true,
+    "porque_fora_do_ranking": null
   },
   "faixa": "amarela",
   "urgencia": 45,
@@ -64,7 +67,7 @@
       "medicoes": null,
       "fonte": "scripts/fila.py",
       "a_favor": [
-        "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 6.5 avaliações/mês",
+        "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 2.4 avaliações/mês",
         "155 anúncios no ar de 115 anunciantes, e nenhum é da rede"
       ],
       "contra": [],
@@ -77,7 +80,7 @@
       "peso": 30,
       "titulo": "O contador de avaliações parou",
       "chave": "parada",
-      "fato": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 6.5 avaliações/mês",
+      "fato": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 2.4 avaliações/mês",
       "fonte": "dados/serie/reviews.jsonl"
     },
     {
@@ -91,8 +94,8 @@
   "quem_avanca": null,
   "o_que_mudou": null,
   "sem_resposta": {
-    "abertas": 5,
-    "com_texto": 4,
+    "abertas": 10,
+    "com_texto": 9,
     "itens": [
       {
         "nota": 3,
@@ -123,18 +126,48 @@
         "data": "2025-07-07",
         "texto": "Vocês trocaram de contato? preciso falar com vocês!",
         "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2024-07-06",
+        "texto": "Não gostei do atendimento",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2024-07-02",
+        "texto": "Tive péssima recomendação dai",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2024-07-01",
+        "texto": "Meu amigo fez um tratamento com vocês e se sentiu extremamente lesado, ao reclamar e reinventar seus direitos a Clínica não foi ética e honesta!",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2024-07-01",
+        "texto": "Não tem ética profissional. Nossa saude bucal e muito importante, se tiver possibilidade de fazer tratamento com medicos de confiança muito melhor que OrthoDontic, que ficam se aproveitando da ingenuidade das pessoas.",
+        "tem_texto": true
+      },
+      {
+        "nota": 1,
+        "data": "2022-02-11",
+        "texto": "Horrível a experiência. A dentista só me enrola pra tirar o aparelho e a Michele da administração é super mal educada e grossa.\nMe arrependo amargamente por ter fechado contrato com eles, me segura há meses e não quer tirar meu aparelho, se eu quiser tenho que fazer quebra de contrato que a perca financeira é grande. Nunca mais! Não indico! É enganação! Só querem te segurar",
+        "tem_texto": true
       }
     ],
-    "itens_total": 5
+    "itens_total": 10
   },
   "voz_do_paciente": [
     {
       "o_que_e": "Explica o que vai fazer, antes de fazer",
-      "pct": 0.0
+      "pct": 0.8
     },
     {
       "o_que_e": "Atende na hora marcada",
-      "pct": 1.2
+      "pct": 2.3
     },
     {
       "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
@@ -150,15 +183,15 @@
     },
     {
       "o_que_e": "Sabe atender criança",
-      "pct": 6.0
+      "pct": 3.8
     },
     {
       "o_que_e": "Continua presente depois que vendeu",
-      "pct": 1.2
+      "pct": 3.0
     },
     {
       "o_que_e": "Tem profissional que o paciente chama pelo nome",
-      "pct": 1.2
+      "pct": 4.5
     }
   ],
   "rival": {
@@ -169,28 +202,36 @@
     ],
     "vantagens_deles": [
       {
+        "eixo": "explica_o_tratamento",
+        "o_que_e": "Explica o que vai fazer, antes de fazer",
+        "quem": "SouSmile",
+        "eles": 12.1,
+        "nos": 0.8,
+        "razao": 16.2
+      },
+      {
         "eixo": "gente_com_nome",
         "o_que_e": "Tem profissional que o paciente chama pelo nome",
         "quem": "DRB Odonto | Implantes, Próteses, Ortodontia e Estética no Centro de São Paulo - SP",
         "eles": 39.0,
-        "nos": 1.2,
-        "razao": 32.4
+        "nos": 4.5,
+        "razao": 8.6
       },
       {
         "eixo": "pos_venda",
         "o_que_e": "Continua presente depois que vendeu",
         "quem": "SouSmile",
         "eles": 19.6,
-        "nos": 1.2,
-        "razao": 16.3
+        "nos": 3.0,
+        "razao": 6.5
       },
       {
         "eixo": "hora_marcada_e_hora",
         "o_que_e": "Atende na hora marcada",
         "quem": "SouSmile",
         "eles": 10.3,
-        "nos": 1.2,
-        "razao": 8.5
+        "nos": 2.3,
+        "razao": 4.6
       }
     ],
     "fora": [
@@ -379,8 +420,8 @@
     "local_id": "sao_paulo_orthodontic",
     "unidade": "OrthoDontic · Lapa",
     "rotulo": "SP · São Paulo",
-    "com_texto": 83,
-    "sem_estagio": 65,
+    "com_texto": 133,
+    "sem_estagio": 95,
     "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
     "estagios": [
       {
@@ -389,13 +430,19 @@
         "o_que_e": "como me acharam",
         "quem_resolve": "marketing e ficha do Google",
         "medido": true,
-        "avaliacoes": 4,
-        "dor": 0,
-        "elogio": 4,
-        "pct_dor": 0,
-        "amostra_curta": true,
-        "exemplos": [],
-        "frase": "4 avaliações falam deste momento, nenhuma com nota baixa",
+        "avaliacoes": 13,
+        "dor": 1,
+        "elogio": 12,
+        "pct_dor": 8,
+        "amostra_curta": false,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2024-07-02",
+            "texto": "Tive péssima recomendação dai"
+          }
+        ],
+        "frase": "13 avaliações falam deste momento, 1 com nota baixa",
         "porque_vazio": null
       },
       {
@@ -404,12 +451,17 @@
         "o_que_e": "telefone e WhatsApp",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 3,
-        "dor": 2,
+        "avaliacoes": 4,
+        "dor": 3,
         "elogio": 0,
-        "pct_dor": 67,
+        "pct_dor": 75,
         "amostra_curta": true,
         "exemplos": [
+          {
+            "nota": 1,
+            "data": "2024-11-27",
+            "texto": "Estou no terceiro dia tentando contato na recepção e não mim atender deixe um monte de mensagem sem retorno imagina se fosse um emergência que clínica é esta"
+          },
           {
             "nota": 1,
             "data": "2025-07-07",
@@ -421,7 +473,7 @@
             "texto": "Gostaria do no número do WhatsApp de vocês por favor."
           }
         ],
-        "frase": "3 avaliações falam deste momento, 2 com notas baixas",
+        "frase": "4 avaliações falam deste momento, 3 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -429,15 +481,21 @@
         "rotulo": "Agendamento",
         "o_que_e": "marcar e remarcar",
         "quem_resolve": "recepção",
-        "medido": false,
-        "avaliacoes": 0,
-        "dor": 0,
+        "medido": true,
+        "avaliacoes": 1,
+        "dor": 1,
         "elogio": 0,
-        "pct_dor": null,
-        "amostra_curta": false,
-        "exemplos": [],
-        "frase": null,
-        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+        "pct_dor": 100,
+        "amostra_curta": true,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2024-11-12",
+            "texto": "Atendimento péssimo dessa nova gestão, eles não querem me agendar aos sábados, sendo que quando comecei meu tratamento lá avisei que só poderia aos sábados. A recepcionista fica debochando da cara dos clientes, uma verdadeira falta de respeito"
+          }
+        ],
+        "frase": "1 avaliação fala deste momento, 1 com nota baixa",
+        "porque_vazio": null
       },
       {
         "estagio": "recepcao",
@@ -445,13 +503,24 @@
         "o_que_e": "chegar e esperar",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 2,
-        "dor": 0,
-        "elogio": 2,
-        "pct_dor": 0,
+        "avaliacoes": 6,
+        "dor": 2,
+        "elogio": 4,
+        "pct_dor": 33,
         "amostra_curta": true,
-        "exemplos": [],
-        "frase": "2 avaliações falam deste momento, nenhuma com nota baixa",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2024-11-12",
+            "texto": "Atendimento péssimo dessa nova gestão, eles não querem me agendar aos sábados, sendo que quando comecei meu tratamento lá avisei que só poderia aos sábados. A recepcionista fica debochando da cara dos clientes, uma verdadeira falta de respeito"
+          },
+          {
+            "nota": 1,
+            "data": "2024-11-27",
+            "texto": "Estou no terceiro dia tentando contato na recepção e não mim atender deixe um monte de mensagem sem retorno imagina se fosse um emergência que clínica é esta"
+          }
+        ],
+        "frase": "6 avaliações falam deste momento, 2 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -475,13 +544,19 @@
         "o_que_e": "preço, contrato e entrada",
         "quem_resolve": "franqueado",
         "medido": true,
-        "avaliacoes": 1,
-        "dor": 0,
+        "avaliacoes": 2,
+        "dor": 1,
         "elogio": 0,
-        "pct_dor": 0,
+        "pct_dor": 50,
         "amostra_curta": true,
-        "exemplos": [],
-        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2022-02-11",
+            "texto": "Horrível a experiência. A dentista só me enrola pra tirar o aparelho e a Michele da administração é super mal educada e grossa.\nMe arrependo amargamente por ter fechado contrato com eles, me segura há meses e não quer tirar meu aparelho, se eu quiser tenho que fazer quebra de contrato que a perca financeira é grande. Nunca mais! Não indico! É enganação! Só querem te segurar"
+          }
+        ],
+        "frase": "2 avaliações falam deste momento, 1 com nota baixa",
         "porque_vazio": null
       },
       {
@@ -490,13 +565,24 @@
         "o_que_e": "a cadeira",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 8,
-        "dor": 0,
-        "elogio": 7,
-        "pct_dor": 0,
+        "avaliacoes": 15,
+        "dor": 2,
+        "elogio": 12,
+        "pct_dor": 13,
         "amostra_curta": false,
-        "exemplos": [],
-        "frase": "8 avaliações falam deste momento, nenhuma com nota baixa",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2022-02-11",
+            "texto": "Horrível a experiência. A dentista só me enrola pra tirar o aparelho e a Michele da administração é super mal educada e grossa.\nMe arrependo amargamente por ter fechado contrato com eles, me segura há meses e não quer tirar meu aparelho, se eu quiser tenho que fazer quebra de contrato que a perca financeira é grande. Nunca mais! Não indico! É enganação! Só querem te segurar"
+          },
+          {
+            "nota": 1,
+            "data": "2024-07-01",
+            "texto": "Não tem ética profissional. Nossa saude bucal e muito importante, se tiver possibilidade de fazer tratamento com medicos de confiança muito melhor que OrthoDontic, que ficam se aproveitando da ingenuidade das pessoas."
+          }
+        ],
+        "frase": "15 avaliações falam deste momento, 2 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -504,15 +590,21 @@
         "rotulo": "Manutenção",
         "o_que_e": "as voltas de cada mês",
         "quem_resolve": "clínica",
-        "medido": false,
-        "avaliacoes": 0,
-        "dor": 0,
+        "medido": true,
+        "avaliacoes": 1,
+        "dor": 1,
         "elogio": 0,
-        "pct_dor": null,
-        "amostra_curta": false,
-        "exemplos": [],
-        "frase": null,
-        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+        "pct_dor": 100,
+        "amostra_curta": true,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2024-11-27",
+            "texto": "Estou no terceiro dia tentando contato na recepção e não mim atender deixe um monte de mensagem sem retorno imagina se fosse um emergência que clínica é esta"
+          }
+        ],
+        "frase": "1 avaliação fala deste momento, 1 com nota baixa",
+        "porque_vazio": null
       },
       {
         "estagio": "cobranca",
@@ -534,15 +626,26 @@
         "rotulo": "Suporte",
         "o_que_e": "quando algo dá errado",
         "quem_resolve": "franqueado",
-        "medido": false,
-        "avaliacoes": 0,
-        "dor": 0,
-        "elogio": 0,
-        "pct_dor": null,
-        "amostra_curta": false,
-        "exemplos": [],
-        "frase": null,
-        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+        "medido": true,
+        "avaliacoes": 3,
+        "dor": 2,
+        "elogio": 1,
+        "pct_dor": 67,
+        "amostra_curta": true,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2024-07-01",
+            "texto": "Meu amigo fez um tratamento com vocês e se sentiu extremamente lesado, ao reclamar e reinventar seus direitos a Clínica não foi ética e honesta!"
+          },
+          {
+            "nota": 1,
+            "data": "2024-11-27",
+            "texto": "Estou no terceiro dia tentando contato na recepção e não mim atender deixe um monte de mensagem sem retorno imagina se fosse um emergência que clínica é esta"
+          }
+        ],
+        "frase": "3 avaliações falam deste momento, 2 com notas baixas",
+        "porque_vazio": null
       },
       {
         "estagio": "contencao",
@@ -567,14 +670,14 @@
       "natureza": "fato",
       "confianca": "media",
       "medido": true,
-      "amostra": 83,
+      "amostra": 133,
       "janela_dias": null,
       "medicoes": null,
       "fonte": "dados/serie/reviews.jsonl",
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": "mais avaliações com texto nesta loja",
-      "procedencia": "medido em 83 avaliações"
+      "procedencia": "medido em 133 avaliações"
     }
   },
   "meu_territorio": {
@@ -684,7 +787,7 @@
         }
       },
       {
-        "problema": "5 avaliações negativas abertas sem resposta",
+        "problema": "10 avaliações negativas abertas sem resposta",
         "e_marketing": false,
         "execucao": {
           "necessaria": true,
@@ -698,14 +801,14 @@
           "natureza": "recomendacao",
           "confianca": "baixa",
           "medido": true,
-          "amostra": 5,
+          "amostra": 10,
           "janela_dias": null,
           "medicoes": null,
           "fonte": "dados/portal/caixa_de_respostas.json",
           "a_favor": [],
           "contra": [],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 5 avaliações"
+          "procedencia": "medido em 10 avaliações"
         }
       }
     ],
@@ -746,7 +849,7 @@
         "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
         "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
         "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": 6.5,
+        "depois": 2.4,
         "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
         "dias": 0
@@ -764,7 +867,7 @@
         "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
         "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
         "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": null,
+        "depois": 2.0,
         "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
         "dias": 0

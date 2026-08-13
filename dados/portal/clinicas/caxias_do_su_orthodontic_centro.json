@@ -26,18 +26,21 @@
   "cabecalho": {
     "nota": 4.7,
     "avaliacoes": 172,
-    "ritmo": 7.7,
+    "ritmo": 2.6,
     "meses_seguidos": 2,
-    "posicao": null,
-    "de": null,
-    "amostra_lida": 120,
-    "amostra_dias": 473,
-    "amostra_truncada": true,
-    "ritmo_comparavel": false,
-    "porque_fora_do_ranking": "lemos 120 das 172 avaliações desta clínica, e as mais novas: o ritmo aqui é o dos últimos 473 dias, não o do histórico. Comparar com quem foi lido por inteiro compararia janelas diferentes."
+    "posicao": 3,
+    "de": 3,
+    "frase_da_posicao": "3ª em ritmo entre as 3 clínicas lidas por inteiro, de 17 medidas nesta praça",
+    "medidas_na_praca": 17,
+    "comparaveis_na_praca": 3,
+    "amostra_lida": 172,
+    "amostra_dias": 2025,
+    "amostra_truncada": false,
+    "ritmo_comparavel": true,
+    "porque_fora_do_ranking": null
   },
   "faixa": "amarela",
-  "urgencia": 30,
+  "urgencia": 50,
   "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
@@ -60,7 +63,8 @@
       "medicoes": null,
       "fonte": "scripts/fila.py",
       "a_favor": [
-        "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 7.7 avaliações/mês"
+        "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 2.6 avaliações/mês",
+        "3º lugar de 3 clínicas medidas na praça"
       ],
       "contra": [],
       "o_que_aumentaria": "o resultado medido na coleta seguinte (dados/serie/acoes.jsonl)",
@@ -72,14 +76,21 @@
       "peso": 30,
       "titulo": "O contador de avaliações parou",
       "chave": "parada",
-      "fato": "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 7.7 avaliações/mês",
+      "fato": "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 2.6 avaliações/mês",
       "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "peso": 20,
+      "titulo": "Está na metade de baixo da própria praça",
+      "chave": "posicao",
+      "fato": "3º lugar de 3 clínicas medidas na praça",
+      "fonte": "dados/portal/rede_cruzamento.json"
     }
   ],
   "quem_avanca": null,
   "o_que_mudou": null,
   "sem_resposta": {
-    "abertas": 5,
+    "abertas": 6,
     "com_texto": 5,
     "itens": [
       {
@@ -111,26 +122,32 @@
         "data": "2025-05-26",
         "texto": "Que bom",
         "tem_texto": true
+      },
+      {
+        "nota": 3,
+        "data": "2025-04-17",
+        "texto": null,
+        "tem_texto": false
       }
     ],
-    "itens_total": 5
+    "itens_total": 6
   },
   "voz_do_paciente": [
     {
       "o_que_e": "Explica o que vai fazer, antes de fazer",
-      "pct": 3.4
+      "pct": 4.3
     },
     {
       "o_que_e": "Atende na hora marcada",
-      "pct": 5.7
+      "pct": 6.8
     },
     {
       "o_que_e": "Diz o preço de forma clara, e cabe no bolso",
-      "pct": 0.0
+      "pct": 1.7
     },
     {
       "o_que_e": "Cuida de quem tem medo de dentista",
-      "pct": 0.0
+      "pct": 0.9
     },
     {
       "o_que_e": "Resolve no mesmo dia",
@@ -138,15 +155,15 @@
     },
     {
       "o_que_e": "Sabe atender criança",
-      "pct": 3.4
+      "pct": 5.1
     },
     {
       "o_que_e": "Continua presente depois que vendeu",
-      "pct": 1.1
+      "pct": 4.3
     },
     {
       "o_que_e": "Tem profissional que o paciente chama pelo nome",
-      "pct": 4.5
+      "pct": 5.1
     }
   ],
   "rival": {
@@ -157,20 +174,20 @@
     ],
     "vantagens_deles": [
       {
+        "eixo": "acolhimento_do_medo",
+        "o_que_e": "Cuida de quem tem medo de dentista",
+        "quem": "Revitalle Implantes | Dentista Caxias do Sul | Clínica Odontológica | Invisalign",
+        "eles": 3.3,
+        "nos": 0.9,
+        "razao": 3.8
+      },
+      {
         "eixo": "gente_com_nome",
         "o_que_e": "Tem profissional que o paciente chama pelo nome",
         "quem": "OrtoClínica",
         "eles": 18.4,
-        "nos": 4.5,
-        "razao": 4.0
-      },
-      {
-        "eixo": "pos_venda",
-        "o_que_e": "Continua presente depois que vendeu",
-        "quem": "Revitalle Implantes | Dentista Caxias do Sul | Clínica Odontológica | Invisalign",
-        "eles": 3.3,
-        "nos": 1.1,
-        "razao": 2.9
+        "nos": 5.1,
+        "razao": 3.6
       }
     ],
     "fora": [
@@ -326,8 +343,8 @@
     "local_id": "caxias_do_su_orthodontic_centro",
     "unidade": "OrthoDontic · Av. Júlio de Castilhos",
     "rotulo": "RS · Caxias do Sul",
-    "com_texto": 88,
-    "sem_estagio": 53,
+    "com_texto": 117,
+    "sem_estagio": 71,
     "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
     "estagios": [
       {
@@ -336,13 +353,13 @@
         "o_que_e": "como me acharam",
         "quem_resolve": "marketing e ficha do Google",
         "medido": true,
-        "avaliacoes": 14,
-        "dor": 0,
-        "elogio": 14,
-        "pct_dor": 0,
+        "avaliacoes": 17,
+        "dor": 1,
+        "elogio": 16,
+        "pct_dor": 6,
         "amostra_curta": false,
         "exemplos": [],
-        "frase": "14 avaliações falam deste momento, nenhuma com nota baixa",
+        "frase": "17 avaliações falam deste momento, 1 com nota baixa",
         "porque_vazio": null
       },
       {
@@ -366,10 +383,10 @@
         "o_que_e": "marcar e remarcar",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 4,
-        "dor": 2,
+        "avaliacoes": 6,
+        "dor": 4,
         "elogio": 1,
-        "pct_dor": 50,
+        "pct_dor": 67,
         "amostra_curta": true,
         "exemplos": [
           {
@@ -383,7 +400,7 @@
             "texto": "Muita demora  no atendimento ,mais de uma hora esperando sempre, sendo que é horário e data agendada"
           }
         ],
-        "frase": "4 avaliações falam deste momento, 2 com notas baixas",
+        "frase": "6 avaliações falam deste momento, 4 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -392,10 +409,10 @@
         "o_que_e": "chegar e esperar",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 16,
-        "dor": 1,
-        "elogio": 15,
-        "pct_dor": 6,
+        "avaliacoes": 20,
+        "dor": 2,
+        "elogio": 18,
+        "pct_dor": 10,
         "amostra_curta": false,
         "exemplos": [
           {
@@ -404,7 +421,7 @@
             "texto": "Falta de respeito com o cliente mais de uma hora de atraso para um simples consulta falta de organização e profissionalismo!"
           }
         ],
-        "frase": "16 avaliações falam deste momento, 1 com nota baixa",
+        "frase": "20 avaliações falam deste momento, 2 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -413,13 +430,13 @@
         "o_que_e": "a primeira consulta",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 2,
-        "dor": 0,
-        "elogio": 2,
-        "pct_dor": 0,
+        "avaliacoes": 4,
+        "dor": 1,
+        "elogio": 3,
+        "pct_dor": 25,
         "amostra_curta": true,
         "exemplos": [],
-        "frase": "2 avaliações falam deste momento, nenhuma com nota baixa",
+        "frase": "4 avaliações falam deste momento, 1 com nota baixa",
         "porque_vazio": null
       },
       {
@@ -428,13 +445,13 @@
         "o_que_e": "preço, contrato e entrada",
         "quem_resolve": "franqueado",
         "medido": true,
-        "avaliacoes": 1,
-        "dor": 0,
-        "elogio": 1,
-        "pct_dor": 0,
+        "avaliacoes": 4,
+        "dor": 2,
+        "elogio": 2,
+        "pct_dor": 50,
         "amostra_curta": true,
         "exemplos": [],
-        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "frase": "4 avaliações falam deste momento, 2 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -443,13 +460,13 @@
         "o_que_e": "a cadeira",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 10,
-        "dor": 0,
-        "elogio": 9,
-        "pct_dor": 0,
+        "avaliacoes": 19,
+        "dor": 3,
+        "elogio": 15,
+        "pct_dor": 16,
         "amostra_curta": false,
         "exemplos": [],
-        "frase": "10 avaliações falam deste momento, nenhuma com nota baixa",
+        "frase": "19 avaliações falam deste momento, 3 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -458,13 +475,13 @@
         "o_que_e": "as voltas de cada mês",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 1,
-        "dor": 0,
-        "elogio": 1,
-        "pct_dor": 0,
+        "avaliacoes": 4,
+        "dor": 2,
+        "elogio": 2,
+        "pct_dor": 50,
         "amostra_curta": true,
         "exemplos": [],
-        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "frase": "4 avaliações falam deste momento, 2 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -488,13 +505,13 @@
         "o_que_e": "quando algo dá errado",
         "quem_resolve": "franqueado",
         "medido": true,
-        "avaliacoes": 2,
+        "avaliacoes": 3,
         "dor": 0,
-        "elogio": 2,
+        "elogio": 3,
         "pct_dor": 0,
         "amostra_curta": true,
         "exemplos": [],
-        "frase": "2 avaliações falam deste momento, nenhuma com nota baixa",
+        "frase": "3 avaliações falam deste momento, nenhuma com nota baixa",
         "porque_vazio": null
       },
       {
@@ -502,15 +519,15 @@
         "rotulo": "Fim e contenção",
         "o_que_e": "alta e depois dela",
         "quem_resolve": "clínica",
-        "medido": false,
-        "avaliacoes": 0,
-        "dor": 0,
+        "medido": true,
+        "avaliacoes": 1,
+        "dor": 1,
         "elogio": 0,
-        "pct_dor": null,
-        "amostra_curta": false,
+        "pct_dor": 100,
+        "amostra_curta": true,
         "exemplos": [],
-        "frase": null,
-        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+        "frase": "1 avaliação fala deste momento, 1 com nota baixa",
+        "porque_vazio": null
       }
     ],
     "manchete": "Nenhum momento da jornada concentra dor com amostra suficiente para virar manchete.",
@@ -520,14 +537,14 @@
       "natureza": "fato",
       "confianca": "media",
       "medido": true,
-      "amostra": 88,
+      "amostra": 117,
       "janela_dias": null,
       "medicoes": null,
       "fonte": "dados/serie/reviews.jsonl",
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": "mais avaliações com texto nesta loja",
-      "procedencia": "medido em 88 avaliações"
+      "procedencia": "medido em 117 avaliações"
     }
   },
   "meu_territorio": {
@@ -642,7 +659,7 @@
         }
       },
       {
-        "problema": "5 avaliações negativas abertas sem resposta",
+        "problema": "6 avaliações negativas abertas sem resposta",
         "e_marketing": false,
         "execucao": {
           "necessaria": true,
@@ -656,14 +673,14 @@
           "natureza": "recomendacao",
           "confianca": "baixa",
           "medido": true,
-          "amostra": 5,
+          "amostra": 6,
           "janela_dias": null,
           "medicoes": null,
           "fonte": "dados/portal/caixa_de_respostas.json",
           "a_favor": [],
           "contra": [],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 5 avaliações"
+          "procedencia": "medido em 6 avaliações"
         }
       }
     ],
@@ -709,7 +726,7 @@
         "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
         "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
         "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": 7.7,
+        "depois": 2.6,
         "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
         "dias": 0
@@ -727,7 +744,7 @@
         "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
         "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
         "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": null,
+        "depois": 3.0,
         "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
         "dias": 0

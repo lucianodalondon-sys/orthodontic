@@ -26,18 +26,21 @@
   "cabecalho": {
     "nota": 4.4,
     "avaliacoes": 310,
-    "ritmo": 8.4,
+    "ritmo": 3.6,
     "meses_seguidos": 1,
-    "posicao": null,
-    "de": null,
-    "amostra_lida": 120,
-    "amostra_dias": 435,
-    "amostra_truncada": true,
-    "ritmo_comparavel": false,
-    "porque_fora_do_ranking": "lemos 120 das 310 avaliações desta clínica, e as mais novas: o ritmo aqui é o dos últimos 435 dias, não o do histórico. Comparar com quem foi lido por inteiro compararia janelas diferentes."
+    "posicao": 11,
+    "de": 11,
+    "frase_da_posicao": "11ª em ritmo entre as 11 clínicas lidas por inteiro, de 17 medidas nesta praça",
+    "medidas_na_praca": 17,
+    "comparaveis_na_praca": 11,
+    "amostra_lida": 311,
+    "amostra_dias": 2644,
+    "amostra_truncada": false,
+    "ritmo_comparavel": true,
+    "porque_fora_do_ranking": null
   },
-  "faixa": "amarela",
-  "urgencia": 45,
+  "faixa": "vermelha",
+  "urgencia": 65,
   "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
@@ -60,7 +63,8 @@
       "medicoes": null,
       "fonte": "scripts/fila.py",
       "a_favor": [
-        "apenas 1 mês seguido com movimento acima do típico da própria unidade; o ritmo medido é 8.4 avaliações/mês",
+        "apenas 1 mês seguido com movimento acima do típico da própria unidade; o ritmo medido é 3.6 avaliações/mês",
+        "11º lugar de 11 clínicas medidas na praça",
         "nota 4.4 contra mediana 4.9 das 17 clínicas medidas na praça"
       ],
       "contra": [],
@@ -73,8 +77,15 @@
       "peso": 30,
       "titulo": "O contador de avaliações parou",
       "chave": "parada",
-      "fato": "apenas 1 mês seguido com movimento acima do típico da própria unidade; o ritmo medido é 8.4 avaliações/mês",
+      "fato": "apenas 1 mês seguido com movimento acima do típico da própria unidade; o ritmo medido é 3.6 avaliações/mês",
       "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "peso": 20,
+      "titulo": "Está na metade de baixo da própria praça",
+      "chave": "posicao",
+      "fato": "11º lugar de 11 clínicas medidas na praça",
+      "fonte": "dados/portal/rede_cruzamento.json"
     },
     {
       "peso": 15,
@@ -313,8 +324,8 @@
     "local_id": "ortho_fln_centro",
     "unidade": "OrthoDontic · Rua Sete de Setembro",
     "rotulo": "SC · Florianópolis",
-    "com_texto": 81,
-    "sem_estagio": 50,
+    "com_texto": 241,
+    "sem_estagio": 133,
     "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
     "estagios": [
       {
@@ -323,13 +334,29 @@
         "o_que_e": "como me acharam",
         "quem_resolve": "marketing e ficha do Google",
         "medido": true,
-        "avaliacoes": 10,
-        "dor": 2,
-        "elogio": 8,
-        "pct_dor": 20,
+        "avaliacoes": 35,
+        "dor": 8,
+        "elogio": 27,
+        "pct_dor": 23,
         "amostra_curta": false,
-        "exemplos": [],
-        "frase": "10 avaliações falam deste momento, 2 com notas baixas",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2021-12-04",
+            "texto": "Fui por indicação e deixei claro que não quero por aparelho ainda sim pediram pra fazer um raio x até aí fiz sem problemas, pedi pra marcarem uma limpeza e passou quase 2 meses e nada além disso ficam se apegando pra passar o valor de uma limpeza !!"
+          },
+          {
+            "nota": 1,
+            "data": "2021-12-19",
+            "texto": "Pior lugar! Não recomendo.\nFaz mais de messes que espero uma resposta só gastei dinheiro. Não adianta chamar em telefone nenhum as atendentes que são péssimas não sabem de nada e ainda mandam a gente esperar eternamente. Vou procurar meus direitos porq não achei meu dinheiro no lixo!"
+          },
+          {
+            "nota": 1,
+            "data": "2022-08-12",
+            "texto": "Muito ruim não recomendo não já estou a três anos aqui é só enrolam já estava pra retirar o aparelho e só estão enrolando pra tirar dinheiro dos outros"
+          }
+        ],
+        "frase": "35 avaliações falam deste momento, 8 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -338,24 +365,29 @@
         "o_que_e": "telefone e WhatsApp",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 2,
-        "dor": 2,
-        "elogio": 0,
-        "pct_dor": 100,
-        "amostra_curta": true,
+        "avaliacoes": 16,
+        "dor": 13,
+        "elogio": 3,
+        "pct_dor": 81,
+        "amostra_curta": false,
         "exemplos": [
           {
             "nota": 1,
-            "data": "2025-07-22",
-            "texto": "Me arrependo até hoje de ir fazer tratamento nesta clínica, WhatsApp nunca funciona é uma demora para marca ou para troca o horário da consulta, o WhatsApp sempre mudando e nunca dão uma satisfação para o cliente."
+            "data": "2021-10-13",
+            "texto": "Mandei várias mensagens no WhatsApp e não me respondem , liguei para a clínica a recepcionista Bruna atendeu e me disse que já ia me dar um retorno e até agora nada. Apenas  quero a minha documentação sendo que é um direito meu ."
           },
           {
-            "nota": 2,
-            "data": "2026-06-08",
-            "texto": "Atendimento via whatsapp e telefone é totalmente escasso. É uma demora sem fim para conseguir trocar horário ou para resolver questões financeiras. Embora minha dentista Ticiane seja ótima e super querida"
+            "nota": 1,
+            "data": "2021-12-19",
+            "texto": "Pior lugar! Não recomendo.\nFaz mais de messes que espero uma resposta só gastei dinheiro. Não adianta chamar em telefone nenhum as atendentes que são péssimas não sabem de nada e ainda mandam a gente esperar eternamente. Vou procurar meus direitos porq não achei meu dinheiro no lixo!"
+          },
+          {
+            "nota": 1,
+            "data": "2022-11-16",
+            "texto": "Sempre estressante, não atendem o telefone, não respondem mensagens!!! Porém para te lembrarem do vencimento das parcelas é diferente"
           }
         ],
-        "frase": "2 avaliações falam deste momento, 2 com notas baixas",
+        "frase": "16 avaliações falam deste momento, 13 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -364,29 +396,29 @@
         "o_que_e": "marcar e remarcar",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 4,
-        "dor": 3,
-        "elogio": 1,
-        "pct_dor": 75,
-        "amostra_curta": true,
+        "avaliacoes": 19,
+        "dor": 17,
+        "elogio": 2,
+        "pct_dor": 89,
+        "amostra_curta": false,
         "exemplos": [
           {
             "nota": 1,
-            "data": "2025-07-22",
-            "texto": "Me arrependo até hoje de ir fazer tratamento nesta clínica, WhatsApp nunca funciona é uma demora para marca ou para troca o horário da consulta, o WhatsApp sempre mudando e nunca dão uma satisfação para o cliente."
+            "data": "2020-08-19",
+            "texto": "a principio achei legal , mas tenho uma amiga que os dois filhos estavam fazendo  tratamento nessa clinica , e devido a pandemia ,ela quis cancelar .não cancelaram e continuaram cobrando . por mais 6 meses . e quando ela disse que procuraria o direito dela ,mandaram os boletos . mas com deboche."
           },
           {
             "nota": 1,
-            "data": "2026-04-02",
-            "texto": "Não sei pra que fazem a gente marcar horários, é a segunda vez que venho aqui para fazer a documentação e sempre atrasam em pelo menos uma meia hora. É uma total falta de responsabilidade com as pessoas que tem compromissos quando saírem daqui, pois chegará atrasada em outro compromissos !!!"
+            "data": "2022-07-20",
+            "texto": "Boa tarde, é um descaso enorme com os pacientes, mesmo com agendamento o tempo de espera perdura de 40/60 min.\nTodo mês é isso, e não é só com um, é com todos os paciente."
           },
           {
             "nota": 2,
-            "data": "2026-06-08",
-            "texto": "Atendimento via whatsapp e telefone é totalmente escasso. É uma demora sem fim para conseguir trocar horário ou para resolver questões financeiras. Embora minha dentista Ticiane seja ótima e super querida"
+            "data": "2022-12-05",
+            "texto": "quero aqui deixar minhas últimas experiências na clínica não tem cido boas uma estrutura show d bola mais uma organização péssima. muito atraso pro atendimento erros nas agendas. ultimamente nao indico pra niguem ainda bem que estou acabando meu tratamento."
           }
         ],
-        "frase": "4 avaliações falam deste momento, 3 com notas baixas",
+        "frase": "19 avaliações falam deste momento, 17 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -395,19 +427,29 @@
         "o_que_e": "chegar e esperar",
         "quem_resolve": "recepção",
         "medido": true,
-        "avaliacoes": 5,
-        "dor": 2,
-        "elogio": 3,
-        "pct_dor": 40,
-        "amostra_curta": true,
+        "avaliacoes": 33,
+        "dor": 10,
+        "elogio": 23,
+        "pct_dor": 30,
+        "amostra_curta": false,
         "exemplos": [
           {
             "nota": 1,
-            "data": "2026-04-02",
-            "texto": "Não sei pra que fazem a gente marcar horários, é a segunda vez que venho aqui para fazer a documentação e sempre atrasam em pelo menos uma meia hora. É uma total falta de responsabilidade com as pessoas que tem compromissos quando saírem daqui, pois chegará atrasada em outro compromissos !!!"
+            "data": "2021-10-13",
+            "texto": "Mandei várias mensagens no WhatsApp e não me respondem , liguei para a clínica a recepcionista Bruna atendeu e me disse que já ia me dar um retorno e até agora nada. Apenas  quero a minha documentação sendo que é um direito meu ."
+          },
+          {
+            "nota": 1,
+            "data": "2022-07-20",
+            "texto": "Boa tarde, é um descaso enorme com os pacientes, mesmo com agendamento o tempo de espera perdura de 40/60 min.\nTodo mês é isso, e não é só com um, é com todos os paciente."
+          },
+          {
+            "nota": 2,
+            "data": "2022-12-05",
+            "texto": "quero aqui deixar minhas últimas experiências na clínica não tem cido boas uma estrutura show d bola mais uma organização péssima. muito atraso pro atendimento erros nas agendas. ultimamente nao indico pra niguem ainda bem que estou acabando meu tratamento."
           }
         ],
-        "frase": "5 avaliações falam deste momento, 2 com notas baixas",
+        "frase": "33 avaliações falam deste momento, 10 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -416,19 +458,29 @@
         "o_que_e": "a primeira consulta",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 5,
-        "dor": 3,
-        "elogio": 2,
-        "pct_dor": 60,
-        "amostra_curta": true,
+        "avaliacoes": 16,
+        "dor": 9,
+        "elogio": 7,
+        "pct_dor": 56,
+        "amostra_curta": false,
         "exemplos": [
           {
             "nota": 1,
-            "data": "2026-04-02",
-            "texto": "Não sei pra que fazem a gente marcar horários, é a segunda vez que venho aqui para fazer a documentação e sempre atrasam em pelo menos uma meia hora. É uma total falta de responsabilidade com as pessoas que tem compromissos quando saírem daqui, pois chegará atrasada em outro compromissos !!!"
+            "data": "2021-10-13",
+            "texto": "Mandei várias mensagens no WhatsApp e não me respondem , liguei para a clínica a recepcionista Bruna atendeu e me disse que já ia me dar um retorno e até agora nada. Apenas  quero a minha documentação sendo que é um direito meu ."
+          },
+          {
+            "nota": 1,
+            "data": "2021-12-04",
+            "texto": "Fui por indicação e deixei claro que não quero por aparelho ainda sim pediram pra fazer um raio x até aí fiz sem problemas, pedi pra marcarem uma limpeza e passou quase 2 meses e nada além disso ficam se apegando pra passar o valor de uma limpeza !!"
+          },
+          {
+            "nota": 1,
+            "data": "2023-04-25",
+            "texto": "Eles são expert em enrolação e tirar dinheiro da gente. Meus dentes estão muito pior do que quando comecei tratamento a anos atrás, a limpeza q eles cobram mensalmente você faz de 6 em 6 meses a mulher passa um fio dental na sua boca e pronto. Raio x com sombra. Dois anos só trocando borrachinha Dr. Não te fala uma palavra só te manda voltar no próximo mês. Não recomendo"
           }
         ],
-        "frase": "5 avaliações falam deste momento, 3 com notas baixas",
+        "frase": "16 avaliações falam deste momento, 9 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -436,15 +488,26 @@
         "rotulo": "Contratação",
         "o_que_e": "preço, contrato e entrada",
         "quem_resolve": "franqueado",
-        "medido": false,
-        "avaliacoes": 0,
-        "dor": 0,
-        "elogio": 0,
-        "pct_dor": null,
+        "medido": true,
+        "avaliacoes": 11,
+        "dor": 6,
+        "elogio": 5,
+        "pct_dor": 55,
         "amostra_curta": false,
-        "exemplos": [],
-        "frase": null,
-        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2021-12-04",
+            "texto": "Fui por indicação e deixei claro que não quero por aparelho ainda sim pediram pra fazer um raio x até aí fiz sem problemas, pedi pra marcarem uma limpeza e passou quase 2 meses e nada além disso ficam se apegando pra passar o valor de uma limpeza !!"
+          },
+          {
+            "nota": 1,
+            "data": "2022-11-16",
+            "texto": "Sempre estressante, não atendem o telefone, não respondem mensagens!!! Porém para te lembrarem do vencimento das parcelas é diferente"
+          }
+        ],
+        "frase": "11 avaliações falam deste momento, 6 com notas baixas",
+        "porque_vazio": null
       },
       {
         "estagio": "clinico",
@@ -452,10 +515,10 @@
         "o_que_e": "a cadeira",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 17,
-        "dor": 3,
-        "elogio": 12,
-        "pct_dor": 18,
+        "avaliacoes": 40,
+        "dor": 10,
+        "elogio": 28,
+        "pct_dor": 25,
         "amostra_curta": false,
         "exemplos": [
           {
@@ -464,7 +527,7 @@
             "texto": "Atendimento via whatsapp e telefone é totalmente escasso. É uma demora sem fim para conseguir trocar horário ou para resolver questões financeiras. Embora minha dentista Ticiane seja ótima e super querida"
           }
         ],
-        "frase": "17 avaliações falam deste momento, 3 com notas baixas",
+        "frase": "40 avaliações falam deste momento, 10 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -473,13 +536,29 @@
         "o_que_e": "as voltas de cada mês",
         "quem_resolve": "clínica",
         "medido": true,
-        "avaliacoes": 4,
-        "dor": 2,
-        "elogio": 2,
-        "pct_dor": 50,
-        "amostra_curta": true,
-        "exemplos": [],
-        "frase": "4 avaliações falam deste momento, 2 com notas baixas",
+        "avaliacoes": 12,
+        "dor": 9,
+        "elogio": 3,
+        "pct_dor": 75,
+        "amostra_curta": false,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2021-10-13",
+            "texto": "Mandei várias mensagens no WhatsApp e não me respondem , liguei para a clínica a recepcionista Bruna atendeu e me disse que já ia me dar um retorno e até agora nada. Apenas  quero a minha documentação sendo que é um direito meu ."
+          },
+          {
+            "nota": 1,
+            "data": "2023-04-25",
+            "texto": "Eles são expert em enrolação e tirar dinheiro da gente. Meus dentes estão muito pior do que quando comecei tratamento a anos atrás, a limpeza q eles cobram mensalmente você faz de 6 em 6 meses a mulher passa um fio dental na sua boca e pronto. Raio x com sombra. Dois anos só trocando borrachinha Dr. Não te fala uma palavra só te manda voltar no próximo mês. Não recomendo"
+          },
+          {
+            "nota": 1,
+            "data": "2023-09-08",
+            "texto": "Atendimento péssimo por telefone a pessoa passa o dia inteiro tentando ligar e ninguém atende nada de retorno WhatsApp da clínica o mesmo transtorno"
+          }
+        ],
+        "frase": "12 avaliações falam deste momento, 9 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -488,13 +567,19 @@
         "o_que_e": "mensalidade e multa",
         "quem_resolve": "franqueado",
         "medido": true,
-        "avaliacoes": 1,
-        "dor": 1,
-        "elogio": 0,
-        "pct_dor": 100,
+        "avaliacoes": 5,
+        "dor": 4,
+        "elogio": 1,
+        "pct_dor": 80,
         "amostra_curta": true,
-        "exemplos": [],
-        "frase": "1 avaliação fala deste momento, 1 com nota baixa",
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2020-08-19",
+            "texto": "a principio achei legal , mas tenho uma amiga que os dois filhos estavam fazendo  tratamento nessa clinica , e devido a pandemia ,ela quis cancelar .não cancelaram e continuaram cobrando . por mais 6 meses . e quando ela disse que procuraria o direito dela ,mandaram os boletos . mas com deboche."
+          }
+        ],
+        "frase": "5 avaliações falam deste momento, 4 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -503,19 +588,24 @@
         "o_que_e": "quando algo dá errado",
         "quem_resolve": "franqueado",
         "medido": true,
-        "avaliacoes": 2,
-        "dor": 1,
-        "elogio": 1,
-        "pct_dor": 50,
-        "amostra_curta": true,
+        "avaliacoes": 14,
+        "dor": 8,
+        "elogio": 6,
+        "pct_dor": 57,
+        "amostra_curta": false,
         "exemplos": [
+          {
+            "nota": 1,
+            "data": "2023-04-25",
+            "texto": "Eles são expert em enrolação e tirar dinheiro da gente. Meus dentes estão muito pior do que quando comecei tratamento a anos atrás, a limpeza q eles cobram mensalmente você faz de 6 em 6 meses a mulher passa um fio dental na sua boca e pronto. Raio x com sombra. Dois anos só trocando borrachinha Dr. Não te fala uma palavra só te manda voltar no próximo mês. Não recomendo"
+          },
           {
             "nota": 2,
             "data": "2026-06-08",
             "texto": "Atendimento via whatsapp e telefone é totalmente escasso. É uma demora sem fim para conseguir trocar horário ou para resolver questões financeiras. Embora minha dentista Ticiane seja ótima e super querida"
           }
         ],
-        "frase": "2 avaliações falam deste momento, 1 com nota baixa",
+        "frase": "14 avaliações falam deste momento, 8 com notas baixas",
         "porque_vazio": null
       },
       {
@@ -534,21 +624,21 @@
         "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
       }
     ],
-    "manchete": "Nenhum momento da jornada concentra dor com amostra suficiente para virar manchete.",
-    "quem_resolve": null,
-    "e_clinico": null,
+    "manchete": "A dor pública desta unidade aparece em agendamento — 17 avaliações de 1 ou 2 estrelas de 19 que falam desse momento.",
+    "quem_resolve": "recepção",
+    "e_clinico": false,
     "confianca": {
       "natureza": "fato",
       "confianca": "media",
       "medido": true,
-      "amostra": 81,
+      "amostra": 241,
       "janela_dias": null,
       "medicoes": null,
       "fonte": "dados/serie/reviews.jsonl",
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": "mais avaliações com texto nesta loja",
-      "procedencia": "medido em 81 avaliações"
+      "procedencia": "medido em 241 avaliações"
     }
   },
   "meu_territorio": {
@@ -632,7 +722,50 @@
       "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
     }
   },
-  "execucao": null,
+  "execucao": {
+    "local_id": "ortho_fln_centro",
+    "praca_id": "florianopolis",
+    "rotulo": "SC · Florianópolis",
+    "unidade": "OrthoDontic · Rua Sete de Setembro",
+    "itens": [
+      {
+        "problema": "A dor pública desta unidade aparece em agendamento — 17 avaliações de 1 ou 2 estrelas de 19 que falam desse momento.",
+        "e_marketing": false,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "operacao",
+          "especialidade": "a própria unidade",
+          "porque_nao_e_marketing": "a dor pública está em marcar, remarcar e encaixar. Campanha não conserta isso — mais mídia sobre um gargalo de balcão só aumenta o número de pessoas irritadas.",
+          "quem_resolve": "recepção",
+          "metrica_de_validacao": "as mesmas avaliações, reclassificadas na próxima coleta",
+          "recoletar_em_dias": 30
+        },
+        "evidencias": [
+          "35 avaliações falam deste momento, 8 com notas baixas",
+          "16 avaliações falam deste momento, 13 com notas baixas",
+          "19 avaliações falam deste momento, 17 com notas baixas"
+        ],
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": null,
+          "janela_dias": null,
+          "medicoes": null,
+          "fonte": "dados/portal/jornada.json",
+          "a_favor": [
+            "A dor pública desta unidade aparece em agendamento — 17 avaliações de 1 ou 2 estrelas de 19 que falam desse momento."
+          ],
+          "contra": [],
+          "o_que_aumentaria": "a próxima medição da jornada",
+          "procedencia": "sem amostra declarada"
+        }
+      }
+    ],
+    "de_marketing": 0,
+    "de_operacao": 1,
+    "descartados": 0
+  },
   "meu_bairro": {
     "bairro": "Centro",
     "clinicas": 115,
@@ -689,7 +822,7 @@
         "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
         "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
         "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": 8.4,
+        "depois": 3.6,
         "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
         "dias": 0
@@ -707,7 +840,7 @@
         "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
         "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
         "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": null,
+        "depois": 11.0,
         "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
         "dias": 0

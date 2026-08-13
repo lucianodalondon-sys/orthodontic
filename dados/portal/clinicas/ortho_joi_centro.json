@@ -30,6 +30,9 @@
     "meses_seguidos": 3,
     "posicao": 7,
     "de": 15,
+    "frase_da_posicao": "7ª em ritmo entre as 15 clínicas lidas por inteiro, de 17 medidas nesta praça",
+    "medidas_na_praca": 17,
+    "comparaveis_na_praca": 15,
     "amostra_lida": 512,
     "amostra_dias": 3453,
     "amostra_truncada": false,
@@ -962,24 +965,6 @@
   "acoes": {
     "arcos": [
       {
-        "arco_id": "ortho_joi_centro|rival",
-        "local_id": "ortho_joi_centro",
-        "praca_id": "joinville",
-        "gatilho": "rival",
-        "problema": "Odonto e Você sustenta há 14 meses a 4.9/mês, contra 4.5/mês desta unidade",
-        "evidencia": "dados/serie/fila_historico.jsonl",
-        "aberto_em": "2026-08-13",
-        "metrica": null,
-        "antes": null,
-        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
-        "acao_recomendada": "sem ação padrão para este gatilho",
-        "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": null,
-        "medido_em": null,
-        "veredito": "aberto",
-        "dias": 0
-      },
-      {
         "arco_id": "ortho_joi_centro|nota",
         "local_id": "ortho_joi_centro",
         "praca_id": "joinville",
@@ -1014,6 +999,24 @@
         "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
         "dias": 1
+      },
+      {
+        "arco_id": "ortho_joi_centro|rival",
+        "local_id": "ortho_joi_centro",
+        "praca_id": "joinville",
+        "gatilho": "rival",
+        "problema": "Odonto e Você sustenta há 14 meses a 4.9/mês, contra 4.5/mês desta unidade",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": null,
+        "antes": null,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "sem ação padrão para este gatilho",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": "2026-08-13",
+        "veredito": "cedo_demais",
+        "dias": 0
       }
     ],
     "total": 3,
