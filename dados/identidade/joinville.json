@@ -381,10 +381,17 @@
     {
       "municipio": "Joinville",
       "uf": "SC",
+      "uf_nome": "Santa Catarina",
       "ibge_id": 4209102,
+      "mesorregiao": "Norte Catarinense",
       "populacao_estimada": {
         "ano": "2025",
         "valor": "664541",
+        "unidade": "Pessoas"
+      },
+      "populacao_censo_2022": {
+        "ano": "2022",
+        "valor": "616317",
         "unidade": "Pessoas"
       },
       "massa_salarial_mil_reais": {
@@ -392,10 +399,25 @@
         "valor": "49815877",
         "unidade": "Mil Reais"
       },
-      "alvo_9_15": 54468,
-      "alvo_30_45": 155859,
-      "fonte": "ibge agregados 6579/5938/9514",
-      "de": "dados/serie/ibge_municipios.jsonl"
+      "idades": {
+        "por_faixa": {
+          "0a4": 36846,
+          "5a9": 40028,
+          "10a14": 38596,
+          "15a19": 39331,
+          "20a24": 49448,
+          "25a29": 53220,
+          "30a34": 52831,
+          "35a39": 51985,
+          "40a44": 51043,
+          "45a49": 42553,
+          "50a54": 39073,
+          "55a59": 35437,
+          "60a64": 28845
+        },
+        "alvo_9_15": 54468,
+        "alvo_30_45": 155859
+      }
     }
   ]
 }

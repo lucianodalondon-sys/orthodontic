@@ -17,16 +17,43 @@
     {
       "municipio": "Florianópolis",
       "uf": "SC",
+      "uf_nome": "Santa Catarina",
       "ibge_id": 4205407,
+      "mesorregiao": "Grande Florianópolis",
       "populacao_estimada": {
         "ano": "2025",
         "valor": "587486",
         "unidade": "Pessoas"
       },
-      "alvo_9_15": 39488,
-      "alvo_30_45": 144371,
-      "fonte": "ibge agregados 6579/5938/9514",
-      "de": "dados/serie/ibge_municipios.jsonl"
+      "populacao_censo_2022": {
+        "ano": "2022",
+        "valor": "537211",
+        "unidade": "Pessoas"
+      },
+      "massa_salarial_mil_reais": {
+        "ano": "2023",
+        "valor": "31190132",
+        "unidade": "Mil Reais"
+      },
+      "idades": {
+        "por_faixa": {
+          "0a4": 25973,
+          "5a9": 29092,
+          "10a14": 27856,
+          "15a19": 29070,
+          "20a24": 41329,
+          "25a29": 47102,
+          "30a34": 48512,
+          "35a39": 49003,
+          "40a44": 46856,
+          "45a49": 36598,
+          "50a54": 32470,
+          "55a59": 31672,
+          "60a64": 28531
+        },
+        "alvo_9_15": 39488,
+        "alvo_30_45": 144371
+      }
     }
   ],
   "locais": [

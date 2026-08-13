@@ -417,10 +417,17 @@
     {
       "municipio": "Curitiba",
       "uf": "PR",
+      "uf_nome": "Paraná",
       "ibge_id": 4106902,
+      "mesorregiao": "Metropolitana de Curitiba",
       "populacao_estimada": {
         "ano": "2025",
         "valor": "1830795",
+        "unidade": "Pessoas"
+      },
+      "populacao_censo_2022": {
+        "ano": "2022",
+        "valor": "1773718",
         "unidade": "Pessoas"
       },
       "massa_salarial_mil_reais": {
@@ -428,10 +435,25 @@
         "valor": "120065276",
         "unidade": "Mil Reais"
       },
-      "alvo_9_15": 143327,
-      "alvo_30_45": 427841,
-      "fonte": "ibge agregados 6579/5938/9514",
-      "de": "dados/serie/ibge_municipios.jsonl"
+      "idades": {
+        "por_faixa": {
+          "0a4": 85003,
+          "5a9": 100444,
+          "10a14": 101958,
+          "15a19": 106401,
+          "20a24": 131613,
+          "25a29": 138949,
+          "30a34": 138214,
+          "35a39": 142224,
+          "40a44": 147403,
+          "45a49": 127287,
+          "50a54": 120887,
+          "55a59": 111658,
+          "60a64": 97950
+        },
+        "alvo_9_15": 143327,
+        "alvo_30_45": 427841
+      }
     }
   ]
 }

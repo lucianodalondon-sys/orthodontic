@@ -27,10 +27,17 @@
       {
         "municipio": "Porto Alegre",
         "uf": "RS",
+        "uf_nome": "Rio Grande do Sul",
         "ibge_id": 4314902,
+        "mesorregiao": "Metropolitana de Porto Alegre",
         "populacao_estimada": {
           "ano": "2025",
           "valor": "1388794",
+          "unidade": "Pessoas"
+        },
+        "populacao_censo_2022": {
+          "ano": "2022",
+          "valor": "1332845",
           "unidade": "Pessoas"
         },
         "massa_salarial_mil_reais": {
@@ -38,56 +45,109 @@
           "valor": "104743272",
           "unidade": "Mil Reais"
         },
-        "alvo_9_15": 103302,
-        "alvo_30_45": 304982,
-        "fonte": "ibge agregados 6579/5938/9514",
-        "de": "dados/serie/ibge_municipios.jsonl"
+        "idades": {
+          "por_faixa": {
+            "0a4": 64258,
+            "5a9": 76417,
+            "10a14": 72898,
+            "15a19": 75603,
+            "20a24": 93432,
+            "25a29": 99223,
+            "30a34": 97365,
+            "35a39": 101607,
+            "40a44": 106010,
+            "45a49": 88289,
+            "50a54": 81321,
+            "55a59": 84162,
+            "60a64": 82145
+          },
+          "alvo_9_15": 103302,
+          "alvo_30_45": 304982
+        }
       }
     ]
   },
   "papel": "franquia",
-  "eyebrow": "Praça · sete unidades, e a cidade quase não as vê",
-  "tese_titulo": "Sete lojas, 5% das buscas",
-  "tese": "Porto Alegre tem sete unidades da rede — a maior concentração medida. Quatro delas estão no mesmo bairro, o Centro Histórico, onde também está a maior concentração de clínicas da cidade: 32. E, das 196 buscas testadas, a melhor unidade aparece em 10. Uma não aparece em nenhuma. O problema desta praça não é reputação — as notas vão de 4,4 a 4,9 — é presença: sete lojas disputando a mesma vitrine, e a vitrine mal as mostra.",
+  "eyebrow": "Praça · sete unidades, quatro num quarteirão",
+  "tese_titulo": "Sete unidades, e a única invisível está no bairro com 48 clínicas em volta",
+  "tese": "Porto Alegre é a maior praça da rede em número de unidades: <b>sete</b>, quatro delas no Centro Histórico. Seis aparecem na busca feita da própria porta — três a quatro de cada cinco frases. A sétima, a do Rio Branco, <b>não aparece em nenhuma das cinco</b>, e nem na leitura da cidade. Ela é a única das sete nessa situação, tem 32 avaliações contra 433 da maior, e divide o bairro com <b>48 clínicas num raio de 1 km</b>. É a única unidade da rede inteira que combina invisibilidade nas duas escalas com vizinhança cheia.",
   "dna": [
-    "Quatro das sete unidades no Centro Histórico — mesmo bairro, mesma busca",
-    "A melhor unidade aparece em 10 de 196 buscas medidas; a pior, em nenhuma",
-    "Notas entre 4,4 e 4,9: a reputação não é o gargalo",
-    "A disputa comercial da cidade é por alinhador invisível — 19 dos 41 anúncios de aparelho",
-    "33 bairros medidos, e a rede ocupa quatro deles"
+    {
+      "l": "A língua",
+      "t": "Capital gaúcha de centro histórico vertical e bairros bem marcados. <b>33 bairros medidos</b>; o Centro Histórico concentra 32 clínicas e quatro unidades nossas."
+    },
+    {
+      "l": "Temperamento",
+      "t": "Direto e exigente. As negativas daqui citam nome e hora — “fiquei 50 min hoje esperando na recepção” — e as positivas também citam nome de quem atendeu."
+    },
+    {
+      "l": "A alavanca",
+      "t": "A Borges de Medeiros: <b>4 de 5 buscas, todas em 1º lugar</b>, com 34 clínicas num raio de 1 km. Aparecer primeiro em bairro cheio é o resultado mais difícil da praça, e ele já existe aqui dentro."
+    },
+    {
+      "l": "A ferida",
+      "t": "Espera na recepção. <b>“Fico de 20 a 40 minutos esperando atendimento na recepção todo mês… Fiquei 50 min hoje.”</b> Aparece na Cavalhada, na Borges e na Andradas — três unidades, mesma queixa."
+    },
+    {
+      "l": "Jamais",
+      "t": "Ler as sete pela média da cidade. A leitura de município diz 31 aparições em 196 buscas para o conjunto; ela esconde que <b>uma unidade está em zero e outra em quatro primeiros lugares</b>.",
+      "proibicao": true
+    }
   ],
   "plano": [
-    "Conferir se as quatro fichas do Centro Histórico estão com endereço e categoria distintos entre si",
-    "Tratar a unidade do Rio Branco como caso à parte: zero aparições em 196 buscas",
-    "Testar posicionamento em alinhador, que é a guerra da cidade e onde a rede não aparece nos anúncios",
-    "Medir de novo em 30 dias para saber se a presença mudou ou se é estrutural",
-    "Levar a leitura de canibalização do Centro Histórico para a expansão antes de aprovar unidade nova"
+    {
+      "n": "01",
+      "t": "Tratar a Rio Branco como abertura",
+      "d": "0 de 5 buscas de perto, 0 de 196 na cidade, 32 avaliações e 48 clínicas num raio de 1 km — é a única das sete invisível nas duas escalas",
+      "prazo": "30 dias",
+      "esforco": "alto"
+    },
+    {
+      "n": "02",
+      "t": "Copiar a ficha da Borges de Medeiros",
+      "d": "4 primeiros lugares em 5 buscas num bairro com 34 clínicas em 1 km; o que está certo no cadastro dela é o modelo da praça",
+      "prazo": "15 dias",
+      "esforco": "baixo"
+    },
+    {
+      "n": "03",
+      "t": "Consertar a recepção",
+      "d": "a espera aparece nas negativas de Cavalhada, Borges e Andradas; é a queixa que mais se repete nas sete",
+      "prazo": "30 dias",
+      "esforco": "médio"
+    },
+    {
+      "n": "04",
+      "t": "Responder as 22 avaliações abertas",
+      "d": "espalhadas pelas sete, com a Andradas em 7; é o que o próximo paciente lê antes de ligar",
+      "prazo": "15 dias",
+      "esforco": "baixo"
+    },
+    {
+      "n": "05",
+      "t": "Ler as unidades grandes até o fim",
+      "d": "Borges tem 433 avaliações no Google e 120 lidas; Cristo Redentor 245 e 120 — o ritmo publicado sai de uma fatia",
+      "prazo": "7 dias",
+      "esforco": "baixo"
+    }
   ],
-  "base": "2433 avaliações medidas · 1733 com texto · 7 unidades da rede",
+  "base": "2.433 avaliações medidas · 1.733 com texto · 184 clínicas varridas · 7 unidades da rede",
   "citacoes": [
     {
-      "texto": "Nao recomendo para atendimentos com Odontoprev (que foi o que usei). Fiz duas renovações de restauração e ambas foram mal feitas e estão cariando devido ao mau acabamento.",
-      "nota": 2,
-      "data": "2026-05-15",
-      "fonte": "avaliação pública no Google"
+      "t": "Fico de 20 a 40 minutos esperando atendimento na recepção todo mês. Corrigindo… fiquei 50 min hoje",
+      "c": "paciente da Cavalhada — a ferida da praça, corrigida pelo próprio paciente"
     },
     {
-      "texto": "Atendente muito antipática, não soube explicar e desligou a chamada na minha cara, antes de tirar minhas dúvidas.",
-      "nota": 1,
-      "data": "2026-06-23",
-      "fonte": "avaliação pública no Google"
+      "t": "Nunca respondem whatsapp e nem atendem ligações, somente quando é dia de cobrar o plano",
+      "c": "paciente da Borges de Medeiros — a que mais aparece na busca também some no contato"
     },
     {
-      "texto": "Consultorio top! Atendimento excelente, materiais de primeira qualidade e profissionais de alto escalao. Preços que cabem no seu bolso.",
-      "nota": 5,
-      "data": "2026-01-08",
-      "fonte": "avaliação pública no Google"
+      "t": "Atendendo Danielly uma mal educada! Estava tirando dúvidas e ela gritou comigo por áudio",
+      "c": "paciente da Rio Branco — a unidade invisível nas duas escalas"
     },
     {
-      "texto": "Parabenisar a doutora casia  pelo patrao de limpesa efetuada otimo padrao obrigada",
-      "nota": 5,
-      "data": "2026-01-28",
-      "fonte": "avaliação pública no Google"
+      "t": "Excelente atendimento! Profissionais muito atenciosos, cuidadosos e competentes.",
+      "c": "paciente do Cristo Redentor — 3 primeiros lugares em 5 buscas"
     }
   ],
   "planos_das_lojas": [

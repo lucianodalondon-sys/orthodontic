@@ -27,62 +27,127 @@
       {
         "municipio": "Florianópolis",
         "uf": "SC",
+        "uf_nome": "Santa Catarina",
         "ibge_id": 4205407,
+        "mesorregiao": "Grande Florianópolis",
         "populacao_estimada": {
           "ano": "2025",
           "valor": "587486",
           "unidade": "Pessoas"
         },
-        "alvo_9_15": 39488,
-        "alvo_30_45": 144371,
-        "fonte": "ibge agregados 6579/5938/9514",
-        "de": "dados/serie/ibge_municipios.jsonl"
+        "populacao_censo_2022": {
+          "ano": "2022",
+          "valor": "537211",
+          "unidade": "Pessoas"
+        },
+        "massa_salarial_mil_reais": {
+          "ano": "2023",
+          "valor": "31190132",
+          "unidade": "Mil Reais"
+        },
+        "idades": {
+          "por_faixa": {
+            "0a4": 25973,
+            "5a9": 29092,
+            "10a14": 27856,
+            "15a19": 29070,
+            "20a24": 41329,
+            "25a29": 47102,
+            "30a34": 48512,
+            "35a39": 49003,
+            "40a44": 46856,
+            "45a49": 36598,
+            "50a54": 32470,
+            "55a59": 31672,
+            "60a64": 28531
+          },
+          "alvo_9_15": 39488,
+          "alvo_30_45": 144371
+        }
       }
     ]
   },
   "papel": "franquia",
-  "eyebrow": "Praça · a melhor presença das cinco metrópoles",
-  "tese_titulo": "Duas no Centro, uma na praia, e a única que aparece",
-  "tese": "Florianópolis é a única das cinco metrópoles onde a rede aparece na busca: 5, 3 e 1 de 130 frases testadas. Ainda é pouco, mas é diferente de zero. A geografia da cidade está no dado: duas unidades no Centro, com 101 e 102 clínicas num raio de 1 km, e uma nos Ingleses, com 9. São dois mercados, não um.",
+  "eyebrow": "Praça · duas no Centro, uma na praia",
+  "tese_titulo": "Duas dividem 102 concorrentes; a terceira tem nove",
+  "tese": "Florianópolis é a ilha partida em dois mercados. As duas unidades do Centro têm <b>101 e 102 clínicas num raio de 1 km</b>; a dos Ingleses tem <b>9</b>. E as três aparecem bem quando a busca sai da própria porta: 2, 4 e 4 de cinco frases, com sete primeiros lugares somados. A diferença aparece no ritmo: a dos Ingleses é <b>1ª de 17</b> na praça, a da R. Deodoro é 7ª com nota 5,0, e a da Sete de Setembro é 9ª com nota 4,4 e a única dor pública das três — espera e WhatsApp.",
   "dna": [
-    "A única das cinco metrópoles com presença medida: 5, 3 e 1 de 130",
-    "Duas unidades no Centro com 101 e 102 clínicas em 1 km",
-    "Uma nos Ingleses com 9 clínicas em 1 km — outro mercado",
-    "As três usam site regional próprio (orthodonticsc.com.br)",
-    "13 bairros medidos, a rede em três"
+    {
+      "l": "A língua",
+      "t": "Ilha e continente, Centro e praia. Só <b>13 bairros</b> reúnem clínica suficiente para medir, e o Centro sozinho tem <b>115 das 144</b> clínicas mapeadas — a maior concentração da amostra."
+    },
+    {
+      "l": "Temperamento",
+      "t": "Cidade de duas populações: a que trabalha no Centro e a que mora no norte da ilha. A unidade dos Ingleses tem nota 4,8 e todas as avaliações recentes com texto são de 5 estrelas."
+    },
+    {
+      "l": "A alavanca",
+      "t": "Os Ingleses. <b>1ª de 17</b> em ritmo, com 9 clínicas num raio de 1 km e 4 de 5 buscas respondidas. Bairro de praia com pouca disputa e operação limpa."
+    },
+    {
+      "l": "A ferida",
+      "t": "A Sete de Setembro. <b>“WhatsApp nunca funciona, é uma demora para marcar ou trocar o horário”</b> — e a segunda queixa fala de atraso de uma hora na documentação. Nota 4,4, a menor das três."
+    },
+    {
+      "l": "Jamais",
+      "t": "Somar as duas do Centro numa conta só. Elas estão a poucos quarteirões, mas uma tem nota 5,0 e 24 avaliações por mês e a outra 4,4 e 8,4 — mesma rua, resultados diferentes.",
+      "proibicao": true
+    }
   ],
   "plano": [
-    "Entender o que a unidade de 5 aparições faz e as outras não",
-    "Tratar Centro e Ingleses como praças diferentes dentro da cidade",
-    "Não diluir a comunicação das duas do Centro na mesma frase",
-    "Remedir as mesmas 130 buscas em 30 dias",
-    "Usar Florianópolis como referência para as outras quatro metrópoles"
+    {
+      "n": "01",
+      "t": "Consertar o WhatsApp da Sete de Setembro",
+      "d": "as negativas dela falam de mensagem sem resposta e de atraso na documentação; é a única das três com dor pública",
+      "prazo": "14 dias",
+      "esforco": "baixo"
+    },
+    {
+      "n": "02",
+      "t": "Levar a rotina da R. Deodoro para a Sete de Setembro",
+      "d": "mesmo bairro, mesma concorrência, nota 5,0 contra 4,4 e 24 contra 8,4 avaliações por mês",
+      "prazo": "30 dias",
+      "esforco": "baixo"
+    },
+    {
+      "n": "03",
+      "t": "Entrar no leilão",
+      "d": "14 anunciantes compram aparelho na cidade e nenhum é da rede",
+      "prazo": "30 dias",
+      "esforco": "médio"
+    },
+    {
+      "n": "04",
+      "t": "Achar os quatro canais que faltam",
+      "d": "a praça tem 4 perfis de cidade com handle contra os 8 do padrão; imprensa, gastronomia, humor e esporte de base seguem vazios",
+      "prazo": "15 dias",
+      "esforco": "baixo"
+    },
+    {
+      "n": "05",
+      "t": "Ler as três até o fim",
+      "d": "310, 268 e 267 avaliações no Google e 120 lidas em cada — a comparação entre as duas do Centro sai de menos da metade da voz",
+      "prazo": "7 dias",
+      "esforco": "baixo"
+    }
   ],
-  "base": "2040 avaliações medidas · 1415 com texto · 3 unidades da rede alcançadas pela varredura",
+  "base": "2.040 avaliações medidas · 1.415 com texto · 144 clínicas varridas · 3 unidades da rede",
   "citacoes": [
     {
-      "texto": "Um descaso total pelo whatsapp. Nenhuma consideração pelas pessoas. Demoram dias para responder. Desisti",
-      "nota": 1,
-      "data": "2026-03-02",
-      "fonte": "avaliação pública no Google"
+      "t": "WhatsApp nunca funciona, é uma demora para marcar ou trocar o horário da consulta",
+      "c": "paciente da Sete de Setembro — a ferida, e é de balcão"
     },
     {
-      "texto": "Péssimo atendimento! Não atendem o telefone e não respondem via whatsapp. Estou solicitando uma nota fiscal de outubro desde fevereiro e até agora nada.",
-      "nota": 1,
-      "data": "2026-04-30",
-      "fonte": "avaliação pública no Google"
+      "t": "É a segunda vez que venho aqui para fazer a documentação e sempre atrasam em pelo menos uma hora",
+      "c": "paciente da Sete de Setembro — a mesma unidade, outro momento"
     },
     {
-      "texto": "Excelente atendimento! A Dra.  Lessandra é muito atenciosa e cuidadosa. Gostei do resultado e recomendo!",
-      "nota": 5,
-      "data": "2025-12-11",
-      "fonte": "avaliação pública no Google"
+      "t": "Muito bom, atendimento maravilhoso!!! Qualidade do serviço ótima também!!",
+      "c": "paciente da R. Deodoro — nota 5,0, no mesmo bairro"
     },
     {
-      "texto": "Ótimo atendimento, a recepção, todos os funcionários extremamente queridos com seu atendimento. Minha dentista Dr Iara muito querida.",
-      "nota": 5,
-      "data": "2025-12-12",
-      "fonte": "avaliação pública no Google"
+      "t": "Lugar que eu amo e cuida do meu sorriso",
+      "c": "paciente dos Ingleses — 1ª de 17 em ritmo na praça"
     }
   ],
   "planos_das_lojas": [

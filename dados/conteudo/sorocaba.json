@@ -1,48 +1,86 @@
 {
  "praca_id": "sorocaba",
  "papel": "franquia",
- "eyebrow": "Praça · três unidades e a cidade mais anunciada das cinco",
- "tese_titulo": "67 anúncios de aparelho, e a rede em três bairros",
- "tese": "Sorocaba tem a disputa publicitária mais intensa das cinco praças novas: 67 anúncios de aparelho medidos, contra 41 em Porto Alegre e 15 em Goiânia. A guerra é por alinhador invisível. As três unidades estão em bairros diferentes, com notas de 4,3 a 4,9, e duas têm dor pública concentrada.",
+ "eyebrow": "Praça · três unidades, e a mais nova é a que anda",
+ "tese_titulo": "A cidade tem 20 anunciantes de aparelho, e nenhum é a rede",
+ "tese": "Sorocaba tem <b>20 anunciantes comprando mídia de aparelho</b> e a OrthoDontic não é nenhum deles — a praça inteira está fora do leilão da própria categoria. Dentro da rede, as três unidades andam em velocidades diferentes: a Vila Formosa faz <b>11,4 avaliações por mês</b> e é 10ª de 17; a Centro faz 1,3 e a Jardim Faculdade faz 1,0 — 16ª e 17ª, as duas últimas da praça. E as duas paradas são justamente as que têm mais concorrente ao redor: 47 e 51 clínicas num raio de 1 km, contra 4 da Vila Formosa.",
  "dna": [
-  "67 anúncios de aparelho — a cidade mais disputada das cinco",
-  "A guerra é por alinhador invisível: 21 dos 67",
-  "Três unidades em três bairros: Centro, Vila Formosa e Jardim Faculdade",
-  "Notas de 4,3 a 4,9 — a diferença entre as lojas é real",
-  "42 bairros medidos, a rede em três"
+  {
+   "l": "A língua",
+   "t": "Cidade média paulista, industrial e espalhada: <b>42 bairros medidos</b>, o maior com 35 clínicas. Não há um centro que concentre tudo."
+  },
+  {
+   "l": "Temperamento",
+   "t": "Paciente de cidade média compara preço e cobra contrato. A dor pública da unidade do Centro é <b>contratação</b>: 6 de 8 avaliações que falam de preço e contrato são de 1 ou 2 estrelas."
+  },
+  {
+   "l": "A alavanca",
+   "t": "A Vila Formosa. <b>4 de 5 buscas, todas em 1º lugar</b>, nota 4,9 e o maior ritmo da praça, com apenas 4 clínicas num raio de 1 km."
+  },
+  {
+   "l": "A ferida",
+   "t": "Cobrança e cancelamento. <b>“Não assumem os erros e não estão corretos nas cobranças, estou tentando fazer o cancelamento e querem…”</b> — a queixa é de contrato, não de tratamento."
+  },
+  {
+   "l": "Jamais",
+   "t": "Levar as três para a agência juntas. A Vila Formosa é 1ª em quatro de cinco buscas do próprio bairro; ela não tem problema de encontrabilidade, tem <b>o mesmo problema de mídia que a praça toda</b>: a rede não anuncia aqui.",
+   "proibicao": true
+  }
  ],
  "plano": [
-  "Olhar a unidade de nota 4,3 antes das outras duas",
-  "Decidir posição diante do alinhador: entrar, ou ocupar o que ninguém fala",
-  "Conferir se as três fichas estão completas, já que a cidade é muito anunciada",
-  "Responder a caixa de avaliações abertas",
-  "Remedir em 30 dias para separar ruído de tendência"
+  {
+   "n": "01",
+   "t": "Entrar no leilão de aparelho",
+   "d": "20 anunciantes compram aparelho em Sorocaba e nenhum é da rede; é a lacuna mais nítida da praça",
+   "prazo": "30 dias",
+   "esforco": "médio"
+  },
+  {
+   "n": "02",
+   "t": "Destravar Centro e Jardim Faculdade",
+   "d": "1,3 e 1,0 avaliação por mês, 16ª e 17ª de 17; o problema não é base — as duas somam 227 avaliações — é movimento",
+   "prazo": "60 dias",
+   "esforco": "alto"
+  },
+  {
+   "n": "03",
+   "t": "Consertar a cobrança do Centro",
+   "d": "6 de 8 avaliações sobre contrato e preço são negativas; é a dor pública mais concentrada da praça",
+   "prazo": "30 dias",
+   "esforco": "médio"
+  },
+  {
+   "n": "04",
+   "t": "Olhar o clínico da Jardim Faculdade",
+   "d": "7 de 13 avaliações que falam de atendimento na cadeira são de 1 ou 2 estrelas, com troca de dentista citada",
+   "prazo": "30 dias",
+   "esforco": "médio"
+  },
+  {
+   "n": "05",
+   "t": "Copiar a ficha da Vila Formosa",
+   "d": "4 primeiros lugares em 5 buscas; o cadastro dela é o que as outras duas precisam",
+   "prazo": "15 dias",
+   "esforco": "baixo"
+  }
  ],
- "base": "2027 avaliações medidas · 1513 com texto · 3 unidades da rede",
+ "base": "2.027 avaliações medidas · 1.513 com texto · 143 clínicas varridas · 3 unidades da rede",
  "citacoes": [
   {
-   "texto": "Pessimo atendimento pelo WhatsApp, chega ser inútil.",
-   "nota": 1,
-   "data": "2026-03-31",
-   "fonte": "avaliação pública no Google"
+   "t": "Não assumem os erros e não estão corretos nas cobranças, estou tentando fazer o cancelamento do meu tratamento",
+   "c": "paciente do Centro — a ferida é contrato"
   },
   {
-   "texto": "Marquei consulta pelo convênio e quando cheguei não fui atendido pelo convênio",
-   "nota": 1,
-   "data": "2026-05-22",
-   "fonte": "avaliação pública no Google"
+   "t": "Vai fazer 3 anos que estou com o aparelho e mudou várias vezes a Dra. que me atende",
+   "c": "paciente da Jardim Faculdade — troca de dentista, dor clínica"
   },
   {
-   "texto": "Minha experiência foi ótima. Fui atendida pelo Dr. Rodolfo que resolveu minhas queixas com atenção e profissionalismo.\nRecomendo!",
-   "nota": 5,
-   "data": "2026-04-01",
-   "fonte": "avaliação pública no Google"
+   "t": "Passei uma vez! O atendimento foi impecável.",
+   "c": "paciente da Vila Formosa — nota 4,9, a maior das três"
   },
   {
-   "texto": "Cheguei com dor e  fui muito bem atendida pelo Dr. Rodolfo que me acalmou e realizou um ótimo trabalho e orientação. Toda a equipe realizou um ótimo atendimento e recepção.",
-   "nota": 5,
-   "data": "2026-04-01",
-   "fonte": "avaliação pública no Google"
+   "t": "Dentistas extremamente capacitados, tratamento excelente em todos os sentidos",
+   "c": "paciente do Centro — a unidade parada tem nota 4,5"
   }
  ]
 }

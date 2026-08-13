@@ -453,10 +453,17 @@
     {
       "municipio": "Porto Alegre",
       "uf": "RS",
+      "uf_nome": "Rio Grande do Sul",
       "ibge_id": 4314902,
+      "mesorregiao": "Metropolitana de Porto Alegre",
       "populacao_estimada": {
         "ano": "2025",
         "valor": "1388794",
+        "unidade": "Pessoas"
+      },
+      "populacao_censo_2022": {
+        "ano": "2022",
+        "valor": "1332845",
         "unidade": "Pessoas"
       },
       "massa_salarial_mil_reais": {
@@ -464,10 +471,25 @@
         "valor": "104743272",
         "unidade": "Mil Reais"
       },
-      "alvo_9_15": 103302,
-      "alvo_30_45": 304982,
-      "fonte": "ibge agregados 6579/5938/9514",
-      "de": "dados/serie/ibge_municipios.jsonl"
+      "idades": {
+        "por_faixa": {
+          "0a4": 64258,
+          "5a9": 76417,
+          "10a14": 72898,
+          "15a19": 75603,
+          "20a24": 93432,
+          "25a29": 99223,
+          "30a34": 97365,
+          "35a39": 101607,
+          "40a44": 106010,
+          "45a49": 88289,
+          "50a54": 81321,
+          "55a59": 84162,
+          "60a64": 82145
+        },
+        "alvo_9_15": 103302,
+        "alvo_30_45": 304982
+      }
     }
   ]
 }

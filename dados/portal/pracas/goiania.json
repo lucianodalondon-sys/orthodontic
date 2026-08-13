@@ -27,10 +27,17 @@
       {
         "municipio": "Goiânia",
         "uf": "GO",
+        "uf_nome": "Goiás",
         "ibge_id": 5208707,
+        "mesorregiao": "Centro Goiano",
         "populacao_estimada": {
           "ano": "2025",
           "valor": "1503256",
+          "unidade": "Pessoas"
+        },
+        "populacao_censo_2022": {
+          "ano": "2022",
+          "valor": "1437366",
           "unidade": "Pessoas"
         },
         "massa_salarial_mil_reais": {
@@ -38,56 +45,109 @@
           "valor": "75780846",
           "unidade": "Mil Reais"
         },
-        "alvo_9_15": 122711,
-        "alvo_30_45": 362030,
-        "fonte": "ibge agregados 6579/5938/9514",
-        "de": "dados/serie/ibge_municipios.jsonl"
+        "idades": {
+          "por_faixa": {
+            "0a4": 83676,
+            "5a9": 89501,
+            "10a14": 85964,
+            "15a19": 94233,
+            "20a24": 113359,
+            "25a29": 120411,
+            "30a34": 118931,
+            "35a39": 122169,
+            "40a44": 120930,
+            "45a49": 101125,
+            "50a54": 90684,
+            "55a59": 79870,
+            "60a64": 68785
+          },
+          "alvo_9_15": 122711,
+          "alvo_30_45": 362030
+        }
       }
     ]
   },
   "papel": "franquia",
-  "eyebrow": "Praça · quatro unidades espalhadas, e um vazio no meio",
-  "tese_titulo": "O bairro mais disputado não tem unidade da rede",
-  "tese": "Goiânia é a única das cinco praças novas em que a rede se espalhou: quatro unidades em quatro bairros diferentes. Mas o bairro com mais clínicas medidas — St. Marista, com 25 — não tem nenhuma. Duas das quatro unidades têm dor pública concentrada, e ela não é clínica: é agendamento numa, contato na outra. A cidade compra alinhador, com 11 dos 15 anúncios de aparelho.",
+  "eyebrow": "Praça · quatro unidades, quatro setores diferentes",
+  "tese_titulo": "A única praça nova em que a rede compra mídia — e a que mais deixa paciente sem resposta",
+  "tese": "Goiânia é uma das poucas praças onde a rede <b>já está no leilão</b>: dos 7 anunciantes de aparelho da cidade, um é nosso. E é também onde a caixa de respostas está mais cheia: <b>33 avaliações negativas sem resposta</b> nas quatro unidades, com a St. Central sozinha em 14. As quatro estão em setores de densidade oposta — a St. Central tem 23 clínicas num raio de 1 km, a Morada do Sol tem zero. Na busca feita da porta de cada uma, as quatro aparecem em 15 de 20 frases, e duas delas em 1º lugar nas quatro que respondem.",
   "dna": [
-    "Quatro unidades em quatro bairros — a rede espalhada, não concentrada",
-    "St. Marista tem 25 clínicas e nenhuma unidade da rede",
-    "Duas unidades com dor concentrada em agendamento e contato",
-    "Nota mais baixa da praça: 4,2 no Setor Oeste",
-    "36 bairros medidos, a rede em quatro"
+    {
+      "l": "A língua",
+      "t": "Cidade de setores, não de bairros. Endereço em Goiânia se diz por setor — <b>St. Marista, St. Oeste, St. Central</b> — e cada um tem densidade e renda próprias."
+    },
+    {
+      "l": "Temperamento",
+      "t": "Capital de crescimento rápido e mercado pulverizado: <b>36 setores medidos</b>, e o maior concentra só 17% das clínicas. É o oposto de Curitiba."
+    },
+    {
+      "l": "A alavanca",
+      "t": "A rede já anuncia aqui. É a única praça nova em que a marca aparece na Biblioteca de Anúncios do Meta comprando aparelho — a base existe, falta escala."
+    },
+    {
+      "l": "A ferida",
+      "t": "Hora marcada que não é hora marcada. <b>“Minha manutenção estava marcada para as 13:40, cheguei às 13:30 para não atrasar.”</b> A dor pública da St. Oeste está em agendamento: 12 das 13 avaliações que falam desse momento são de 1 ou 2 estrelas."
+    },
+    {
+      "l": "Jamais",
+      "t": "Deixar a caixa encher. São <b>33 avaliações negativas abertas</b>, 14 só na St. Central. Responder paciente é trabalho de quem atende — agência escrevendo em nome da clínica é o caminho mais curto para uma resposta que soa automática.",
+      "proibicao": true
+    }
   ],
   "plano": [
-    "Tratar agendamento e contato como problema de balcão, não de cadeira",
-    "Estudar St. Marista como praça de expansão dentro da própria cidade",
-    "Olhar a unidade do Setor Oeste primeiro: menor nota e dor em agendamento",
-    "Responder as avaliações abertas antes de mexer em mídia",
-    "Remedir em 30 dias e registrar no livro de ações"
+    {
+      "n": "01",
+      "t": "Esvaziar a caixa da St. Central e da St. Oeste",
+      "d": "14 e 10 avaliações negativas abertas; começar pelas que têm texto, que são as que o próximo paciente lê",
+      "prazo": "15 dias",
+      "esforco": "baixo"
+    },
+    {
+      "n": "02",
+      "t": "Consertar o agendamento da St. Oeste",
+      "d": "12 de 13 avaliações que falam de agendamento são de 1 ou 2 estrelas — é o pior sinal de momento único das quatro",
+      "prazo": "30 dias",
+      "esforco": "médio"
+    },
+    {
+      "n": "03",
+      "t": "Escalar a mídia que já existe",
+      "d": "a rede é 1 dos 7 anunciantes de aparelho da cidade; o inventário está montado, falta cobertura por setor",
+      "prazo": "30 dias",
+      "esforco": "médio"
+    },
+    {
+      "n": "04",
+      "t": "Tratar Jardim Tropical e Morada do Sol como praça isolada",
+      "d": "zero clínicas num raio de 1 km nas duas; a concorrência delas não está no mapa, e a conversa é de captação, não de disputa",
+      "prazo": "60 dias",
+      "esforco": "baixo"
+    },
+    {
+      "n": "05",
+      "t": "Ler St. Oeste e St. Central até o fim",
+      "d": "270 e 268 avaliações no Google, 120 lidas em cada — a leitura de agendamento sai de menos da metade da voz",
+      "prazo": "7 dias",
+      "esforco": "baixo"
+    }
   ],
-  "base": "2163 avaliações medidas · 1757 com texto · 4 unidades da rede",
+  "base": "2.163 avaliações medidas · 1.757 com texto · 161 clínicas varridas · 4 unidades da rede",
   "citacoes": [
     {
-      "texto": "Clinica sem um pingo de humanidade, pra prosperar tem q começar pelos grandes ser pessoas melhores , um pouco mais de harmonia já seria o suficiente",
-      "nota": 1,
-      "data": "2023-10-10",
-      "fonte": "avaliação pública no Google"
+      "t": "Minha manutenção estava marcada para as 13:40, cheguei às 13:30 para não atrasar",
+      "c": "paciente da St. Oeste — a dor é hora marcada"
     },
     {
-      "texto": "O atendimento é muito bom, porém o início do tratamento é para 30 dias, se o seu caso for urgente é melhor avaliar esse detalhe.",
-      "nota": 1,
-      "data": "2026-08-10",
-      "fonte": "avaliação pública no Google"
+      "t": "Você agenda no horário de almoço AGENDADO! E a Dra não está",
+      "c": "paciente da St. Oeste — mesma ferida, outro paciente"
     },
     {
-      "texto": "Experiência incrível e completa. Desde o agendamento até o procedimento, equipe muito bem preparada e profissionais especializados! Agradeço muito a doutora Patrícia e toda sua equipe.",
-      "nota": 5,
-      "data": "2023-03-11",
-      "fonte": "avaliação pública no Google"
+      "t": "Clínica não atende, nem recebe ligações. Alguém sabe como posso entrar em contato com essa unidade?",
+      "c": "paciente da St. Central — a dor dela é contato"
     },
     {
-      "texto": "Clínica 5 estrelas aqui no setor oeste. Fiquei encantada com a afeto odontologia, tudo muito limpo, muito lindo. Amei o cuidado com meu sorriso e vou voltar sempre que precisar",
-      "nota": 5,
-      "data": "2023-03-11",
-      "fonte": "avaliação pública no Google"
+      "t": "Simplesmente a melhor clínica odontológica de Goiânia!",
+      "c": "paciente da St. Morada do Sol — nota 5,0, a maior das quatro"
     }
   ],
   "planos_das_lojas": [

@@ -17,16 +17,43 @@
     {
       "municipio": "Rio de Janeiro",
       "uf": "RJ",
+      "uf_nome": "Rio de Janeiro",
       "ibge_id": 3304557,
+      "mesorregiao": "Metropolitana do Rio de Janeiro",
       "populacao_estimada": {
         "ano": "2025",
         "valor": "6730729",
         "unidade": "Pessoas"
       },
-      "alvo_9_15": 502282,
-      "alvo_30_45": 1444456,
-      "fonte": "ibge agregados 6579/5938/9514",
-      "de": "dados/serie/ibge_municipios.jsonl"
+      "populacao_censo_2022": {
+        "ano": "2022",
+        "valor": "6211223",
+        "unidade": "Pessoas"
+      },
+      "massa_salarial_mil_reais": {
+        "ano": "2023",
+        "valor": "418462360",
+        "unidade": "Mil Reais"
+      },
+      "idades": {
+        "por_faixa": {
+          "0a4": 310648,
+          "5a9": 367196,
+          "10a14": 354457,
+          "15a19": 371931,
+          "20a24": 439660,
+          "25a29": 454428,
+          "30a34": 460448,
+          "35a39": 479813,
+          "40a44": 504195,
+          "45a49": 426864,
+          "50a54": 402001,
+          "55a59": 386411,
+          "60a64": 360818
+        },
+        "alvo_9_15": 502282,
+        "alvo_30_45": 1444456
+      }
     }
   ],
   "locais": [

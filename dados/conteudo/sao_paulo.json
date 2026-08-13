@@ -1,48 +1,86 @@
 {
  "praca_id": "sao_paulo",
  "papel": "franquia",
- "eyebrow": "Praça · quatro unidades, zero aparições",
- "tese_titulo": "Invisível na maior cidade do país",
- "tese": "As quatro unidades de São Paulo não aparecem em NENHUMA das 193 buscas testadas na cidade. Não é uma delas: são as quatro. E o território explica parte disso — elas estão espalhadas, com 0, 2, 2 e 16 clínicas num raio de 1 km, ou seja, em bairros de densidade muito diferente. Numa cidade de 11,9 milhões, quatro unidades invisíveis na busca competem por indicação e passagem, não por quem procura no Google.",
+ "eyebrow": "Praça · quatro unidades, quatro diagnósticos",
+ "tese_titulo": "A pergunta “a rede aparece em São Paulo?” não tem resposta única",
+ "tese": "A leitura do município diz que as quatro unidades de São Paulo aparecem em <b>0 de 193 buscas</b>. A frase é verdadeira e a conclusão que ela sugere é falsa: numa cidade de 11,9 milhões ninguém digita o nome do município — o paciente busca de onde está. Refazendo as mesmas frases <b>a partir do endereço de cada clínica</b>, o resultado se separa: a de São Miguel Paulista é o <b>primeiro resultado nas cinco</b>, a do Tatuapé aparece em uma, a da República em uma, a da Lapa em três. Quatro unidades, quatro diagnósticos, e a medida antiga mandaria as quatro fazerem a mesma coisa.",
  "dna": [
-  "Quatro unidades, zero aparições em 193 buscas medidas",
-  "As quatro estão em bairros de densidade muito diferente: 0, 2, 2 e 16 clínicas em 1 km",
-  "49 bairros medidos, a rede em quatro deles",
-  "11,9 milhões de habitantes — a varredura alcança uma fração da cidade",
-  "188 clínicas varridas, todas com coordenada"
+  {
+   "l": "A língua",
+   "t": "São Paulo não é uma praça, é um conjunto de praças. <b>49 bairros medidos</b> e a rede está em quatro; o mais cheio, Bela Vista, tem 39 clínicas e nenhuma unidade nossa."
+  },
+  {
+   "l": "Temperamento",
+   "t": "Paciente de metrópole resolve perto de casa ou do trabalho. Por isso a busca por município não responde nada aqui, e a busca por endereço responde tudo."
+  },
+  {
+   "l": "A alavanca",
+   "t": "São Miguel Paulista. <b>29,0 avaliações por mês</b>, nota 4,9, 3ª de 18 na praça e primeiro lugar nas cinco buscas do próprio bairro — com <b>zero concorrentes</b> num raio de 1 km."
+  },
+  {
+   "l": "A ferida",
+   "t": "A República. Nota <b>3,0</b>, 22 avaliações, 0,3 por mês, <b>11 negativas sem resposta</b> e a Sorridents Anhangabaú a 20 metros. É a pior combinação da rede inteira."
+  },
+  {
+   "l": "Jamais",
+   "t": "Comparar as quatro entre si. São Miguel tem zero concorrentes em 1 km; a República tem 16, e quatro deles disputam aparelho. Cobrar o ritmo de uma da outra é cobrar o bairro, não a operação.",
+   "proibicao": true
+  }
  ],
  "plano": [
-  "Tratar encontrabilidade como o problema número um desta praça",
-  "Conferir ficha, categoria e endereço das quatro antes de qualquer mídia",
-  "Medir de novo em 30 dias com as MESMAS 193 buscas",
-  "Não comparar as quatro entre si: os bairros têm densidades incomparáveis",
-  "Estudar a cidade por região antes de discutir unidade nova"
+  {
+   "n": "01",
+   "t": "Tratar a República como emergência",
+   "d": "nota 3,0, 11 avaliações negativas abertas e a concorrente direta a 20 metros; é reputação e é balcão, não campanha",
+   "prazo": "15 dias",
+   "esforco": "alto"
+  },
+  {
+   "n": "02",
+   "t": "Copiar a ficha de São Miguel Paulista",
+   "d": "primeiro lugar nas cinco buscas do próprio bairro; o cadastro dela é o modelo para as outras três",
+   "prazo": "15 dias",
+   "esforco": "baixo"
+  },
+  {
+   "n": "03",
+   "t": "Revisar a ficha do Tatuapé e da República",
+   "d": "1 de 5 buscas de perto cada uma, com Sorridents a 470 e a 20 metros; aqui a encontrabilidade é problema real",
+   "prazo": "30 dias",
+   "esforco": "médio"
+  },
+  {
+   "n": "04",
+   "t": "Consertar a contratação do Tatuapé",
+   "d": "5 de 9 avaliações que falam de preço e contrato são de 1 ou 2 estrelas, com troca de dentista citada",
+   "prazo": "30 dias",
+   "esforco": "médio"
+  },
+  {
+   "n": "05",
+   "t": "Entrar no leilão",
+   "d": "49 anunciantes compram aparelho em São Paulo e nenhum é da rede — é o maior mercado de mídia da amostra e a rede está fora dele",
+   "prazo": "60 dias",
+   "esforco": "alto"
+  }
  ],
- "base": "2050 avaliações medidas · 1495 com texto · 4 unidades da rede alcançadas pela varredura",
+ "base": "2.050 avaliações medidas · 1.495 com texto · 188 clínicas varridas · 4 unidades da rede",
  "citacoes": [
   {
-   "texto": "Fui bem atendida pelas pessoas sim. Mas todo o procedimento teve que ser refeito pela minha dentista anterior em menos de seis meses.",
-   "nota": 1,
-   "data": "2025-12-05",
-   "fonte": "avaliação pública no Google"
+   "t": "Pior atendimento do mundo… Dr. Morand excelente dentista, agora as recepcionistas uma pior que a outra",
+   "c": "paciente da República — nota 3,0, a menor da rede"
   },
   {
-   "texto": "Vocês trocaram de contato? preciso falar com vocês!",
-   "nota": 1,
-   "data": "2025-07-07",
-   "fonte": "avaliação pública no Google"
+   "t": "Em um ano de tratamento passei por 3 dentistas diferentes, isso foi muito ruim",
+   "c": "paciente do Tatuapé — a dor é contratação e continuidade"
   },
   {
-   "texto": "Uma experiência única\nTodos muito maravilhoso",
-   "nota": 5,
-   "data": "2025-12-15",
-   "fonte": "avaliação pública no Google"
+   "t": "A clínica é boa, eu recomendo o atendimento, o ambiente… faz com que nos sintamos em casa",
+   "c": "paciente de São Miguel Paulista — 1ª nas cinco buscas do bairro"
   },
   {
-   "texto": "Ótimo atendimento, melhores profissionais",
-   "nota": 5,
-   "data": "2025-12-15",
-   "fonte": "avaliação pública no Google"
+   "t": "Vocês trocaram de contato? Preciso falar com vocês!",
+   "c": "paciente da Lapa — avaliação de 1 estrela que é, na verdade, um pedido de telefone"
   }
  ]
 }

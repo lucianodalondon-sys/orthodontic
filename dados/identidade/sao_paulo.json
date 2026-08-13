@@ -17,16 +17,43 @@
     {
       "municipio": "São Paulo",
       "uf": "SP",
+      "uf_nome": "São Paulo",
       "ibge_id": 3550308,
+      "mesorregiao": "Metropolitana de São Paulo",
       "populacao_estimada": {
         "ano": "2025",
         "valor": "11904961",
         "unidade": "Pessoas"
       },
-      "alvo_9_15": 951577,
-      "alvo_30_45": 2778697,
-      "fonte": "ibge agregados 6579/5938/9514",
-      "de": "dados/serie/ibge_municipios.jsonl"
+      "populacao_censo_2022": {
+        "ano": "2022",
+        "valor": "11451999",
+        "unidade": "Pessoas"
+      },
+      "massa_salarial_mil_reais": {
+        "ano": "2023",
+        "valor": "1066825105",
+        "unidade": "Mil Reais"
+      },
+      "idades": {
+        "por_faixa": {
+          "0a4": 599931,
+          "5a9": 682444,
+          "10a14": 670931,
+          "15a19": 720787,
+          "20a24": 845139,
+          "25a29": 882865,
+          "30a34": 888568,
+          "35a39": 942674,
+          "40a44": 947455,
+          "45a49": 812857,
+          "50a54": 752842,
+          "55a59": 682446,
+          "60a64": 606419
+        },
+        "alvo_9_15": 951577,
+        "alvo_30_45": 2778697
+      }
     }
   ],
   "locais": [

@@ -27,10 +27,17 @@
       {
         "municipio": "Curitiba",
         "uf": "PR",
+        "uf_nome": "Paraná",
         "ibge_id": 4106902,
+        "mesorregiao": "Metropolitana de Curitiba",
         "populacao_estimada": {
           "ano": "2025",
           "valor": "1830795",
+          "unidade": "Pessoas"
+        },
+        "populacao_censo_2022": {
+          "ano": "2022",
+          "valor": "1773718",
           "unidade": "Pessoas"
         },
         "massa_salarial_mil_reais": {
@@ -38,56 +45,109 @@
           "valor": "120065276",
           "unidade": "Mil Reais"
         },
-        "alvo_9_15": 143327,
-        "alvo_30_45": 427841,
-        "fonte": "ibge agregados 6579/5938/9514",
-        "de": "dados/serie/ibge_municipios.jsonl"
+        "idades": {
+          "por_faixa": {
+            "0a4": 85003,
+            "5a9": 100444,
+            "10a14": 101958,
+            "15a19": 106401,
+            "20a24": 131613,
+            "25a29": 138949,
+            "30a34": 138214,
+            "35a39": 142224,
+            "40a44": 147403,
+            "45a49": 127287,
+            "50a54": 120887,
+            "55a59": 111658,
+            "60a64": 97950
+          },
+          "alvo_9_15": 143327,
+          "alvo_30_45": 427841
+        }
       }
     ]
   },
   "papel": "franquia",
-  "eyebrow": "Praça · quatro das cinco no mesmo bairro",
-  "tese_titulo": "Curitiba é o Centro, e o Centro é disputado",
-  "tese": "Quatro das cinco unidades de Curitiba estão no Centro, o bairro com mais clínicas medidas da cidade: 74. A quinta está no Portão. As notas são altas e parelhas — de 4,6 a 4,9 — e a cidade compra atenção com avaliação grátis: 18 dos 38 anúncios de aparelho falam disso. Quem entrar aqui por preço entra na briga errada.",
+  "eyebrow": "Praça · cinco unidades, quatro no mesmo Centro",
+  "tese_titulo": "Quatro no mesmo Centro, e cinquenta vezes de diferença entre elas",
+  "tese": "Curitiba tem cinco unidades OrthoDontic, e <b>quatro delas dividem o Centro</b> — o mesmo bairro, os mesmos 74 concorrentes mapeados, a mesma marca e a mesma tabela. A da R. XV de Novembro faz <b>82,9 avaliações por mês</b> e é a 2ª de 19 clínicas acompanhadas na praça. A do Edifício Odin do Amaral, a poucos quarteirões, faz <b>1,6</b> e é a 19ª — o último lugar. Cinquenta vezes de diferença sem mudar de bairro, de marca ou de preço: o que sobra é operação. E a leitura da cidade inteira não mostra nada disso — ela diz que as cinco somam 23 aparições em 213 buscas. Medindo da porta de cada uma, as cinco aparecem em 23 de 25.",
   "dna": [
-    "Quatro unidades no Centro, uma no Portão",
-    "74 clínicas medidas no Centro — a maior concentração da cidade",
-    "Notas de 4,6 a 4,9, sem loja fraca",
-    "A cidade disputa por avaliação grátis, não por preço",
-    "27 bairros medidos, e a rede está em dois"
+    {
+      "l": "A língua",
+      "t": "Capital fria e formal, de calçadão e galeria. O Centro concentra <b>74 das 177 clínicas mapeadas</b> — 42% da concorrência da cidade num bairro só."
+    },
+    {
+      "l": "Temperamento",
+      "t": "Curitibano decide devagar e compara. A cidade recompensa constância e desconfia de novidade barulhenta — a unidade que sustenta há sete meses é a do Portão, longe do Centro."
+    },
+    {
+      "l": "A alavanca",
+      "t": "A diferença entre a XV de Novembro e o Edifício Odin. Mesma marca, mesmo bairro, <b>82,9 contra 1,6 avaliações por mês</b>. A resposta está dentro da própria rede, a quinze minutos a pé."
+    },
+    {
+      "l": "A ferida",
+      "t": "Telefone e recepção. <b>“O atendimento desse lugar é horroroso, NUNCA atendem o telefone.”</b> Aparece na Floriano Peixoto, que tem 4 avaliações negativas sem resposta."
+    },
+    {
+      "l": "Jamais",
+      "t": "Tratar as cinco como uma praça só. A do Portão tem <b>2 clínicas num raio de 1 km</b>; as do Centro têm 69, 75 e 75. São mercados incomparáveis, e comparar mete meta de uma na outra.",
+      "proibicao": true
+    }
   ],
   "plano": [
-    "Separar a comunicação das quatro unidades do Centro para não competirem pela mesma frase",
-    "Checar se as quatro fichas do Centro têm ponto de referência distinto no Google",
-    "Ler a oferta de avaliação grátis dos rivais antes de responder com desconto",
-    "Levar a unidade do Portão como referência de bairro fora do centro",
-    "Remedir presença em 30 dias, agora que existe linha de base"
+    {
+      "n": "01",
+      "t": "Levar a rotina da XV de Novembro para o Edifício Odin",
+      "d": "mesmo bairro, mesma marca, 82,9 contra 1,6 por mês — a diferença é rotina, e ela é observável de dentro da própria rede",
+      "prazo": "30 dias",
+      "esforco": "baixo"
+    },
+    {
+      "n": "02",
+      "t": "Consertar o telefone da Floriano Peixoto",
+      "d": "as negativas dela falam de recepção e telefone que não atende; são 4 sem resposta, e nenhuma campanha conserta isso",
+      "prazo": "14 dias",
+      "esforco": "baixo"
+    },
+    {
+      "n": "03",
+      "t": "Entrar na mídia de aparelho",
+      "d": "24 anunciantes compram aparelho em Curitiba e nenhum é da rede; a praça inteira está fora do leilão",
+      "prazo": "30 dias",
+      "esforco": "médio"
+    },
+    {
+      "n": "04",
+      "t": "Separar a conversa do Centro da conversa do Portão",
+      "d": "2 clínicas em 1 km contra 75 — meta, oferta e mídia não podem ser as mesmas",
+      "prazo": "30 dias",
+      "esforco": "baixo"
+    },
+    {
+      "n": "05",
+      "t": "Ler as unidades grandes até o fim",
+      "d": "a XV tem 1.012 avaliações no Google e 120 lidas; o ritmo de 82,9/mês sai de uma fatia, não do histórico",
+      "prazo": "7 dias",
+      "esforco": "baixo"
+    }
   ],
-  "base": "2287 avaliações medidas · 1750 com texto · 5 unidades da rede",
+  "base": "2.287 avaliações medidas · 1.750 com texto · 179 clínicas varridas · 5 unidades da rede",
   "citacoes": [
     {
-      "texto": "Péssimo,  serviço de péssima qualidade, Péssimo atendimento.  Precisei fazer uma abituraçao e não durou nem 1 mês.",
-      "nota": 1,
-      "data": "2026-05-09",
-      "fonte": "avaliação pública no Google"
+      "t": "O atendimento desse lugar é horroroso, NUNCA atendem o telefone, a pessoa que responde no whatsapp nossa senhora, não sabe conduzir um atendimento",
+      "c": "paciente da Floriano Peixoto — a ferida, e é de balcão"
     },
     {
-      "texto": "Atendimento ruim, Dentista Daniela extremamente arrogante e faz comentários desnecessários deixando o paciente desconfortável no meio da consulta.",
-      "nota": 1,
-      "data": "2026-05-27",
-      "fonte": "avaliação pública no Google"
+      "t": "Ficam enrolando para retirar o aparelho, sem falar no dentista que usou o mesmo arco",
+      "c": "paciente da XV de Novembro — a unidade que mais cresce também acumula queixa clínica"
     },
     {
-      "texto": "Fomos MUITO bem atendidos pela doutora Daniela. :)",
-      "nota": 5,
-      "data": "2026-03-17",
-      "fonte": "avaliação pública no Google"
+      "t": "Gosto muito da OrthoDontic, preços acessíveis e atendimento rápidos",
+      "c": "paciente do Portão — a única fora do Centro, e a que sustenta há 7 meses"
     },
     {
-      "texto": "Minha esposa foi muito bem atendida pelo Dr Helyton Figueira. Parabéns a todos",
-      "nota": 5,
-      "data": "2026-04-11",
-      "fonte": "avaliação pública no Google"
+      "t": "Melhor atendimento de Curitiba, todos tem um cuidado e uma atenção de outro nível",
+      "c": "paciente do Edifício Odin — a última em ritmo tem nota 4,7"
     }
   ],
   "planos_das_lojas": [

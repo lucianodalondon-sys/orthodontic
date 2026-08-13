@@ -381,10 +381,17 @@
     {
       "municipio": "Sorocaba",
       "uf": "SP",
+      "uf_nome": "São Paulo",
       "ibge_id": 3552205,
+      "mesorregiao": "Macro Metropolitana Paulista",
       "populacao_estimada": {
         "ano": "2025",
         "valor": "762172",
+        "unidade": "Pessoas"
+      },
+      "populacao_censo_2022": {
+        "ano": "2022",
+        "valor": "723682",
         "unidade": "Pessoas"
       },
       "massa_salarial_mil_reais": {
@@ -392,10 +399,25 @@
         "valor": "58816286",
         "unidade": "Mil Reais"
       },
-      "alvo_9_15": 62365,
-      "alvo_30_45": 183072,
-      "fonte": "ibge agregados 6579/5938/9514",
-      "de": "dados/serie/ibge_municipios.jsonl"
+      "idades": {
+        "por_faixa": {
+          "0a4": 42358,
+          "5a9": 45600,
+          "10a14": 44045,
+          "15a19": 46001,
+          "20a24": 53234,
+          "25a29": 56508,
+          "30a34": 59451,
+          "35a39": 62059,
+          "40a44": 61562,
+          "45a49": 50432,
+          "50a54": 45753,
+          "55a59": 41910,
+          "60a64": 36960
+        },
+        "alvo_9_15": 62365,
+        "alvo_30_45": 183072
+      }
     }
   ]
 }

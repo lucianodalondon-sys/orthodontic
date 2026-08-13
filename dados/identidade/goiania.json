@@ -399,10 +399,17 @@
     {
       "municipio": "Goiânia",
       "uf": "GO",
+      "uf_nome": "Goiás",
       "ibge_id": 5208707,
+      "mesorregiao": "Centro Goiano",
       "populacao_estimada": {
         "ano": "2025",
         "valor": "1503256",
+        "unidade": "Pessoas"
+      },
+      "populacao_censo_2022": {
+        "ano": "2022",
+        "valor": "1437366",
         "unidade": "Pessoas"
       },
       "massa_salarial_mil_reais": {
@@ -410,10 +417,25 @@
         "valor": "75780846",
         "unidade": "Mil Reais"
       },
-      "alvo_9_15": 122711,
-      "alvo_30_45": 362030,
-      "fonte": "ibge agregados 6579/5938/9514",
-      "de": "dados/serie/ibge_municipios.jsonl"
+      "idades": {
+        "por_faixa": {
+          "0a4": 83676,
+          "5a9": 89501,
+          "10a14": 85964,
+          "15a19": 94233,
+          "20a24": 113359,
+          "25a29": 120411,
+          "30a34": 118931,
+          "35a39": 122169,
+          "40a44": 120930,
+          "45a49": 101125,
+          "50a54": 90684,
+          "55a59": 79870,
+          "60a64": 68785
+        },
+        "alvo_9_15": 122711,
+        "alvo_30_45": 362030
+      }
     }
   ]
 }

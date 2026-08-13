@@ -1,48 +1,86 @@
 {
  "praca_id": "caxias_do_sul",
  "papel": "franquia",
- "eyebrow": "Praça · duas no centro denso, uma isolada",
- "tese_titulo": "Oitenta clínicas em volta de duas, três em volta da outra",
- "tese": "Caxias do Sul mostra dentro de uma cidade só o contraste que o mapa de bairros existe para revelar: duas unidades com 83 e 87 clínicas num raio de 1 km, e uma terceira com 3. São mercados incomparáveis. Nas buscas, as três aparecem em 0, 0 e 1 de 167 frases testadas.",
+ "eyebrow": "Praça · duas no Centro, uma no Kayser",
+ "tese_titulo": "Oitenta e três clínicas em volta de duas, três em volta da outra",
+ "tese": "Caxias do Sul mostra dentro de uma cidade só o contraste que o mapa de bairros existe para revelar: as duas unidades do Centro têm <b>83 e 87 clínicas num raio de 1 km</b>; a do Kayser tem <b>3</b>. A leitura do município dizia que as três aparecem em 0, 0 e 1 de 167 buscas — e a busca feita da porta de cada uma devolve <b>3, 3 e 2 de cinco</b>, com quatro primeiros lugares somados. Duas das três estavam marcadas como invisíveis e não estão. Dentro da praça, a da R. Pinheiro Machado faz <b>55,3 avaliações por mês</b> e é 4ª de 17; as outras duas fazem 7,7 e 3,2.",
  "dna": [
-  "83, 87 e 3 clínicas em 1 km — três realidades na mesma cidade",
-  "0, 0 e 1 aparição em 167 buscas medidas",
-  "As duas do centro estão a 10 e 50 metros da clínica mais próxima",
-  "23 bairros medidos, a rede em três",
-  "115 clínicas varridas, todas com coordenada"
+  {
+   "l": "A língua",
+   "t": "Serra gaúcha, colônia italiana, cidade de indústria e de centro comercial denso. <b>23 bairros medidos</b>, o Centro com 51 clínicas."
+  },
+  {
+   "l": "Temperamento",
+   "t": "Serrano cobra pontualidade. <b>“Chego no horário marcado, fico esperando uma hora e meia, e eles passam o pessoal que veio bem depois de mim.”</b> A mesma queixa aparece nas três unidades."
+  },
+  {
+   "l": "A alavanca",
+   "t": "A R. Pinheiro Machado: <b>55,3 avaliações por mês</b> e 4ª de 17, com 83 clínicas num raio de 1 km. É a prova de que bairro cheio não impede ritmo."
+  },
+  {
+   "l": "A ferida",
+   "t": "A fila que não respeita a ordem. Aparece na Júlio de Castilhos e no Kayser, com o mesmo desenho: hora marcada, espera longa e alguém passando na frente."
+  },
+  {
+   "l": "Jamais",
+   "t": "Cobrar do Kayser o volume do Centro. Ele tem <b>3 clínicas num raio de 1 km</b> contra 83 e 87 — e mesmo assim entrega 2 primeiros lugares em 5 buscas. São mercados incomparáveis.",
+   "proibicao": true
+  }
  ],
  "plano": [
-  "Nunca comparar a unidade isolada com as duas do centro",
-  "Encontrabilidade primeiro nas três",
-  "Conferir ficha e categoria antes de qualquer mídia",
-  "Remedir as mesmas 167 buscas em 30 dias",
-  "Levar o contraste de densidade para a conversa de expansão"
+  {
+   "n": "01",
+   "t": "Consertar a ordem da fila",
+   "d": "a mesma queixa aparece na Júlio de Castilhos e no Kayser: hora marcada, espera longa e gente passando na frente",
+   "prazo": "14 dias",
+   "esforco": "baixo"
+  },
+  {
+   "n": "02",
+   "t": "Levar a rotina da Pinheiro Machado para a Júlio de Castilhos",
+   "d": "mesmo Centro, mesma concorrência, 55,3 contra 7,7 avaliações por mês",
+   "prazo": "30 dias",
+   "esforco": "baixo"
+  },
+  {
+   "n": "03",
+   "t": "Escalar a mídia que já existe",
+   "d": "16 anunciantes disputam aparelho em Caxias e a rede é 1 deles; a base está montada, a cobertura é estreita",
+   "prazo": "30 dias",
+   "esforco": "médio"
+  },
+  {
+   "n": "04",
+   "t": "Responder as 10 avaliações abertas",
+   "d": "5 na Júlio de Castilhos, 4 no Kayser e 1 na Pinheiro Machado",
+   "prazo": "15 dias",
+   "esforco": "baixo"
+  },
+  {
+   "n": "05",
+   "t": "Separar a conversa do Kayser",
+   "d": "3 concorrentes em 1 km contra 83; meta, oferta e mídia não podem ser as mesmas do Centro",
+   "prazo": "30 dias",
+   "esforco": "baixo"
+  }
  ],
- "base": "2011 avaliações medidas · 1357 com texto · 3 unidades da rede alcançadas pela varredura",
+ "base": "2.011 avaliações medidas · 1.357 com texto · 115 clínicas varridas · 3 unidades da rede",
  "citacoes": [
   {
-   "texto": "Foi marcado consulta, e a médica não estava e não foi avisado.",
-   "nota": 1,
-   "data": "2026-08-03",
-   "fonte": "avaliação pública no Google"
+   "t": "Chego no horário marcado, fico esperando uma hora e meia, e eles passam o pessoal que veio bem depois de mim",
+   "c": "paciente da Júlio de Castilhos — a ferida da praça"
   },
   {
-   "texto": "Clínica popular?\nSinceramente não sei aonde!\nNão indico a clínica,mas a Dr foi muito querida e profissional!",
-   "nota": 1,
-   "data": "2026-08-10",
-   "fonte": "avaliação pública no Google"
+   "t": "Vão passando as pessoas na frente da gente que tem horário marcado, já aconteceu 3 vezes comigo",
+   "c": "paciente do Kayser — a mesma ferida, outro bairro"
   },
   {
-   "texto": "As meninas da recepção são extremamente gentis! Atendimento maravilhoso",
-   "nota": 5,
-   "data": "2026-03-09",
-   "fonte": "avaliação pública no Google"
+   "t": "Ótimo! Faz 3 anos que me atendo aqui e é sempre bom",
+   "c": "paciente da Júlio de Castilhos — a mesma unidade sustenta relação longa"
   },
   {
-   "texto": "Fui muito bem atendido pela recepção. Local organizado e atendimento bom.",
-   "nota": 5,
-   "data": "2026-03-10",
-   "fonte": "avaliação pública no Google"
+   "t": "Ótimo atendimento, valor justo, ótimos profissionais.",
+   "c": "paciente da Pinheiro Machado — 4ª de 17 em ritmo na praça"
   }
  ]
 }

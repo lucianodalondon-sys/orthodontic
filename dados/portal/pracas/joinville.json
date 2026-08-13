@@ -27,10 +27,17 @@
       {
         "municipio": "Joinville",
         "uf": "SC",
+        "uf_nome": "Santa Catarina",
         "ibge_id": 4209102,
+        "mesorregiao": "Norte Catarinense",
         "populacao_estimada": {
           "ano": "2025",
           "valor": "664541",
+          "unidade": "Pessoas"
+        },
+        "populacao_censo_2022": {
+          "ano": "2022",
+          "valor": "616317",
           "unidade": "Pessoas"
         },
         "massa_salarial_mil_reais": {
@@ -38,56 +45,109 @@
           "valor": "49815877",
           "unidade": "Mil Reais"
         },
-        "alvo_9_15": 54468,
-        "alvo_30_45": 155859,
-        "fonte": "ibge agregados 6579/5938/9514",
-        "de": "dados/serie/ibge_municipios.jsonl"
+        "idades": {
+          "por_faixa": {
+            "0a4": 36846,
+            "5a9": 40028,
+            "10a14": 38596,
+            "15a19": 39331,
+            "20a24": 49448,
+            "25a29": 53220,
+            "30a34": 52831,
+            "35a39": 51985,
+            "40a44": 51043,
+            "45a49": 42553,
+            "50a54": 39073,
+            "55a59": 35437,
+            "60a64": 28845
+          },
+          "alvo_9_15": 54468,
+          "alvo_30_45": 155859
+        }
       }
     ]
   },
   "papel": "franquia",
-  "eyebrow": "Praça · a cidade que vende autoridade",
-  "tese_titulo": "Aqui não se disputa preço, se disputa nome",
-  "tese": "Joinville é a única das cinco praças novas onde a disputa comercial é por autoridade técnica: 23 dos 34 anúncios de aparelho falam de especialista, CRO ou anos de experiência — não de preço nem de parcela. As três unidades estão em bairros diferentes, com notas de 4,3 a 4,9, e aparecem em 4, 3 e 2 das 157 buscas medidas.",
+  "eyebrow": "Praça · três unidades, três densidades",
+  "tese_titulo": "A que tem menos concorrente ao lado é a que mais aparece",
+  "tese": "Joinville tem três unidades e elas estão em mundos diferentes. A do Centro divide o bairro com <b>48 clínicas</b> e tem 56 num raio de 1 km; a do Aventureiro tem <b>2</b>. Na busca feita da porta de cada uma, a do Aventureiro aparece em <b>5 de 5, quatro delas em 1º lugar</b> — e é a que menos avaliações tem. A do Centro, com 513 avaliações e o quádruplo de histórico, aparece em 4 de 5 e em 1º só uma vez. Densidade de concorrente não é demanda, mas mexe em quem o mapa mostra primeiro.",
   "dna": [
-    "A disputa é por autoridade técnica: 23 dos 34 anúncios de aparelho",
-    "Três unidades em Centro, América e Aventureiro",
-    "Presença fraca e parelha: 4, 3 e 2 aparições de 157 buscas",
-    "Notas de 4,3 a 4,9",
-    "24 bairros medidos, a rede em três"
+    {
+      "l": "A língua",
+      "t": "Cidade industrial e alemã do norte catarinense. O Centro concentra <b>48 das 148 clínicas mapeadas</b>; o resto se espalha por bairro de fábrica e de moradia."
+    },
+    {
+      "l": "Temperamento",
+      "t": "Prático e direto. As avaliações boas das três unidades são curtas — “Excelente atendimento” aparece nas três. Elogio aqui não é discurso."
+    },
+    {
+      "l": "A alavanca",
+      "t": "O Aventureiro. <b>5 de 5 buscas, 4 em 1º lugar</b>, com 2 clínicas num raio de 1 km. É a prova de que bairro sem disputa entrega posição — e de que a rede tem onde repetir isso."
+    },
+    {
+      "l": "A ferida",
+      "t": "Telefone e espera. <b>“Telefone não sei pra que, não atendem, não respondem.”</b> Aparece no Centro e no Aventureiro, que é onde o paciente já achou a clínica e não consegue falar com ela."
+    },
+    {
+      "l": "Jamais",
+      "t": "Cobrar do Aventureiro o volume do Centro. Um tem 2 concorrentes em 1 km e 170 avaliações; o outro tem 56 e 513. Meta igual em praça desigual é meta inventada.",
+      "proibicao": true
+    }
   ],
   "plano": [
-    "Trabalhar prova de especialidade na ficha, que é a moeda desta cidade",
-    "Olhar a unidade de nota 4,3 primeiro",
-    "Testar presença: nenhuma das três passa de 4 aparições em 157 buscas",
-    "Responder as avaliações negativas abertas",
-    "Remedir em 30 dias"
+    {
+      "n": "01",
+      "t": "Atender o telefone",
+      "d": "as negativas das três falam de ligação e WhatsApp sem resposta; é operação, e nenhuma mídia conserta",
+      "prazo": "14 dias",
+      "esforco": "baixo"
+    },
+    {
+      "n": "02",
+      "t": "Copiar a ficha do Aventureiro",
+      "d": "5 de 5 buscas e 4 primeiros lugares com o menor volume da praça — o que está certo no cadastro dela vale para as outras duas",
+      "prazo": "30 dias",
+      "esforco": "baixo"
+    },
+    {
+      "n": "03",
+      "t": "Defender o Centro na busca",
+      "d": "56 clínicas num raio de 1 km e só 1 primeiro lugar em 5 buscas; é o bairro mais disputado da cidade",
+      "prazo": "30 dias",
+      "esforco": "médio"
+    },
+    {
+      "n": "04",
+      "t": "Ampliar a presença no leilão",
+      "d": "16 anunciantes disputam aparelho e a rede é 1 deles — a base existe e a cobertura é estreita",
+      "prazo": "30 dias",
+      "esforco": "médio"
+    },
+    {
+      "n": "05",
+      "t": "Ler Centro e América até o fim",
+      "d": "513 e 377 avaliações no Google, 120 lidas em cada; a jornada das duas sai de um terço da voz",
+      "prazo": "7 dias",
+      "esforco": "baixo"
+    }
   ],
-  "base": "2042 avaliações medidas · 1562 com texto · 3 unidades da rede",
+  "base": "2.042 avaliações medidas · 1.562 com texto · 148 clínicas varridas · 3 unidades da rede",
   "citacoes": [
     {
-      "texto": "Transfere meu caso! Estou aguardando desde quinta 25/05!",
-      "nota": 1,
-      "data": "2023-05-30",
-      "fonte": "avaliação pública no Google"
+      "t": "Telefone não sei pra que, não atendem, não respondem, não prestam nenhum tipo de auxílio",
+      "c": "paciente do Centro — a ferida, e é de balcão"
     },
     {
-      "texto": "Atendimento péssimo, são horríveis em retornar mensagens ou atender o telefone",
-      "nota": 1,
-      "data": "2023-11-22",
-      "fonte": "avaliação pública no Google"
+      "t": "Meu horário era 15:30 e não fui atendida até agora e já são 16:05",
+      "c": "paciente do Centro — espera na hora marcada"
     },
     {
-      "texto": "Atendimento ótimo com profissionais excelentes",
-      "nota": 5,
-      "data": "2026-06-25",
-      "fonte": "avaliação pública no Google"
+      "t": "Pessimo atendimento do financeiro, estou a meses sem fazer tratamento e querem me cobrar",
+      "c": "paciente do América — cobrança, outro dono do problema"
     },
     {
-      "texto": "Muito bom, colaboradores muito atenciosos",
-      "nota": 5,
-      "data": "2026-06-27",
-      "fonte": "avaliação pública no Google"
+      "t": "Excelente atendimento, ambiente muito bom.",
+      "c": "paciente do Aventureiro — nota 4,9, a maior das três"
     }
   ],
   "planos_das_lojas": [

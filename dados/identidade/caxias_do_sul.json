@@ -17,16 +17,43 @@
     {
       "municipio": "Caxias do Sul",
       "uf": "RS",
+      "uf_nome": "Rio Grande do Sul",
       "ibge_id": 4305108,
+      "mesorregiao": "Nordeste Rio-grandense",
       "populacao_estimada": {
         "ano": "2025",
         "valor": "479599",
         "unidade": "Pessoas"
       },
-      "alvo_9_15": 37913,
-      "alvo_30_45": 115758,
-      "fonte": "ibge agregados 6579/5938/9514",
-      "de": "dados/serie/ibge_municipios.jsonl"
+      "populacao_censo_2022": {
+        "ano": "2022",
+        "valor": "463501",
+        "unidade": "Pessoas"
+      },
+      "massa_salarial_mil_reais": {
+        "ano": "2023",
+        "valor": "37860602",
+        "unidade": "Mil Reais"
+      },
+      "idades": {
+        "por_faixa": {
+          "0a4": 25245,
+          "5a9": 27445,
+          "10a14": 26846,
+          "15a19": 27890,
+          "20a24": 32182,
+          "25a29": 34684,
+          "30a34": 37410,
+          "35a39": 39379,
+          "40a44": 38969,
+          "45a49": 31611,
+          "50a54": 29516,
+          "55a59": 29110,
+          "60a64": 26651
+        },
+        "alvo_9_15": 37913,
+        "alvo_30_45": 115758
+      }
     }
   ],
   "locais": [

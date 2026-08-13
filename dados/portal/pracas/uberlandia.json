@@ -41,48 +41,86 @@
     ]
   },
   "papel": "franquia",
-  "eyebrow": "Praça · duas unidades no meio da maior densidade medida",
-  "tese_titulo": "Setenta clínicas num raio de um quilômetro",
-  "tese": "As duas unidades de Uberlândia têm 70 e 78 clínicas num raio de 1 km — a maior densidade de concorrência medida em todas as praças do projeto. E aparecem em 0 e 1 das 164 buscas testadas. Estar no meio de onde a categoria se concentra é vantagem de passagem e desvantagem de disputa: quem procura no Google encontra dezenas antes de encontrar a rede.",
+  "eyebrow": "Praça · duas unidades, as duas paradas",
+  "tese_titulo": "As duas últimas da praça, e uma não aparece nem no próprio quarteirão",
+  "tese": "Uberlândia é a praça em pior estado da rede. As duas unidades são a <b>15ª e a 16ª de 16</b> clínicas acompanhadas em ritmo — 1,1 e 0,8 avaliação por mês. As duas ficam no Centro, dividindo o bairro com <b>59 clínicas</b>, e a da Praça Adolfo Fonseca tem <b>70 num raio de 1 km</b>. Ela é a única unidade da rede que não aparece em nenhuma das cinco buscas feitas da própria porta, tem nota <b>3,7</b> — a segunda menor da rede — e <b>14 avaliações negativas sem resposta</b>. A dor pública dela é contato: 14 das 17 avaliações que falam de telefone e WhatsApp são de 1 ou 2 estrelas.",
   "dna": [
-    "70 e 78 clínicas em 1 km — a maior densidade medida no projeto",
-    "0 e 1 aparição em 164 buscas testadas",
-    "As duas unidades a 0,05 e 0,12 km da clínica mais próxima",
-    "31 bairros medidos, a rede em dois",
-    "Três unidades na lista oficial, duas alcançadas"
+    {
+      "l": "A língua",
+      "t": "Cidade do Triângulo, de comércio forte e centro adensado. <b>31 bairros medidos</b>, o Centro com 59 clínicas e as duas unidades nossas dentro dele."
+    },
+    {
+      "l": "Temperamento",
+      "t": "Paciente daqui cobra retorno e prazo. As negativas das duas unidades falam de contato e de conserto que não vem — “o aparelho quebra, eles pedem um prazo”."
+    },
+    {
+      "l": "A alavanca",
+      "t": "Não há alavanca dentro da praça. As duas unidades estão paradas e a comparação útil está fora dela — é a única das dez praças novas em que nenhuma unidade puxa a outra."
+    },
+    {
+      "l": "A ferida",
+      "t": "O telefone. <b>“Telefone só de enfeite”</b>, escreveu um paciente da Floriano Peixoto. Na Adolfo Fonseca, 14 das 17 avaliações que falam de contato são de 1 ou 2 estrelas — a dor mais concentrada da rede."
+    },
+    {
+      "l": "Jamais",
+      "t": "Mandar isto para campanha. A unidade não aparece nem para quem está a 3 km dela, mas o que o paciente escreve é sobre <b>telefone que não atende</b>. Mais mídia sobre um contato quebrado só aumenta o número de pessoas irritadas.",
+      "proibicao": true
+    }
   ],
   "plano": [
-    "Encontrabilidade primeiro: densidade alta e presença zero é a pior combinação",
-    "Conferir se as duas fichas estão distintas entre si no Google",
-    "Ler a oferta dos vizinhos antes de responder com preço",
-    "Remedir as mesmas 164 buscas em 30 dias",
-    "Levar a densidade para a conversa de expansão da cidade"
+    {
+      "n": "01",
+      "t": "Atender o telefone da Adolfo Fonseca",
+      "d": "14 de 17 avaliações sobre contato são negativas; é a dor pública mais concentrada da rede e é de balcão",
+      "prazo": "7 dias",
+      "esforco": "baixo"
+    },
+    {
+      "n": "02",
+      "t": "Responder as 21 avaliações abertas",
+      "d": "14 numa unidade e 7 na outra, com nota 3,7 na maior; é o que o próximo paciente lê antes de ligar",
+      "prazo": "15 dias",
+      "esforco": "baixo"
+    },
+    {
+      "n": "03",
+      "t": "Revisar a ficha das duas",
+      "d": "0 de 5 e 1 de 5 buscas feitas da própria porta; junto com Porto Alegre · Rio Branco, são as únicas invisíveis nas duas escalas",
+      "prazo": "30 dias",
+      "esforco": "médio"
+    },
+    {
+      "n": "04",
+      "t": "Tratar as duas como reabertura",
+      "d": "15ª e 16ª de 16 em ritmo, com 188 avaliações somadas; o problema não é base, é movimento",
+      "prazo": "60 dias",
+      "esforco": "alto"
+    },
+    {
+      "n": "05",
+      "t": "Entrar no leilão depois — não antes",
+      "d": "11 anunciantes compram aparelho na cidade e nenhum é da rede, mas pagar para levar gente a um telefone que não atende é pior do que não pagar",
+      "prazo": "90 dias",
+      "esforco": "médio"
+    }
   ],
-  "base": "1801 avaliações medidas · 1400 com texto · 2 unidades da rede alcançadas pela varredura",
+  "base": "1.801 avaliações medidas · 1.400 com texto · 161 clínicas varridas · 2 unidades da rede",
   "citacoes": [
     {
-      "texto": "Queria apenas fazer uma avaliação e demoraram horrores, acabei indo embora pela demora sem a minha avaliação 🥲",
-      "nota": 1,
-      "data": "2026-06-30",
-      "fonte": "avaliação pública no Google"
+      "t": "Telefone só de enfeite",
+      "c": "paciente da Floriano Peixoto — quatro palavras, e é a tese da praça"
     },
     {
-      "texto": "Pessima experiência!! Uma das piores clínicas que já fui na minha vida. Não recomendo, preço um absurdo, sem contar no atendimento.",
-      "nota": 1,
-      "data": "2024-04-01",
-      "fonte": "avaliação pública no Google"
+      "t": "O atendimento presencial é bom, mas se você precisa entrar em contato via telefone pode desistir",
+      "c": "paciente da Adolfo Fonseca — o balcão funciona, o contato não"
     },
     {
-      "texto": "Muito boa, a recepcionista Andrieli é muito educada!\n\nServiços são de altíssima qualidade.",
-      "nota": 5,
-      "data": "2026-02-26",
-      "fonte": "avaliação pública no Google"
+      "t": "Estou há mais de dois meses pagando um serviço de aparelho para minha irmã que não está sendo prestado",
+      "c": "paciente da Floriano Peixoto — cobrança sem serviço"
     },
     {
-      "texto": "Foi maravilhoso são excelentes  profissionais com muita dedicação e sabem como tratar um cliente!",
-      "nota": 5,
-      "data": "2026-02-26",
-      "fonte": "avaliação pública no Google"
+      "t": "O atendimento é muito bom, pessoas sempre carismáticas e sempre alegrando seus pacientes",
+      "c": "paciente da Floriano Peixoto — o elogio existe, e é sobre quem atende de perto"
     }
   ],
   "planos_das_lojas": [
