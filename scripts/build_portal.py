@@ -218,7 +218,9 @@ def main():
             "local_id": lid,
             "arquivo": f"clinicas/{lid}" if lid else None,
             "faixa": fl.get("faixa"), "urgencia": fl.get("urgencia"),
-            "tarefa": (fl.get("tarefa") or {}).get("estado") if fl else None,
+            # a fila grava `status` (aberta/vencida); ler `estado` devolvia
+            # None em todas as 374 linhas e a tela nunca via tarefa nenhuma
+            "tarefa": (fl.get("tarefa") or {}).get("status") if fl else None,
         })
 
     # A LOJA QUE MEDIMOS E A LISTA OFICIAL NÃO CONFIRMOU. Das 374 linhas, 326
@@ -335,6 +337,109 @@ def main():
         })
     _n_tot = sum(u["unidades_total"] for u in _ufs)
     _n_est = sum(u["com_estudo"] for u in _ufs)
+
+    # ---------------------------------------------- a rede inteira em CARDS
+    #
+    # UMA LISTA VERTICAL DE LOJAS NÃO SOBREVIVE À REDE. Com 45 unidades ela
+    # já ocupava a lateral inteira; com 373 ela é uma coluna de rolagem que
+    # ninguém lê e onde ninguém acha a própria loja. A árvore UF → cidade →
+    # unidade continua existindo (é ela que mostra o tamanho do que falta),
+    # mas quem abre CLÍNICAS precisa de UMA porta e uma grade ordenada por
+    # ALERTA — a loja que pega fogo primeiro, não a que começa com A.
+    #
+    # O casco não ordena nem conta: a lista já vem ordenada, os grupos já
+    # vêm contados e cada card traz a frase pronta.
+    _ESTADOS = [
+        ("com_estudo",     "Com estudo",
+         "abre a página da clínica: presença na busca, plano, fila e rival"),
+        ("ficha_medida",   "Ficha medida, sem estudo",
+         "nota e número de avaliações do Google — ninguém leu o que dizem"),
+        ("so_na_lista",    "Só na lista oficial",
+         "a rede declara a unidade e a varredura ainda não achou a ficha"),
+        ("em_implantacao", "Em implantação",
+         "a unidade ainda não abriu"),
+    ]
+    _cards = []
+    for uf in sorted(_por_uf):
+        for cid in sorted(_por_uf[uf]):
+            for x in _por_uf[uf][cid]:
+                aberta = str(x.get("situacao") or "").startswith("aberta")
+                if x.get("com_estudo"):
+                    estado = "com_estudo"
+                elif not aberta:
+                    estado = "em_implantacao"
+                elif x.get("confirmada"):
+                    estado = "ficha_medida"
+                else:
+                    estado = "so_na_lista"
+                fl = _fl_ix.get(x.get("local_id")) or {}
+                gat = (fl.get("gatilhos") or [{}])[0]
+                _cards.append({
+                    "chave": x.get("local_id") or f"{uf}|{cid}|{x.get('unidade')}",
+                    "uf": uf, "cidade": cid,
+                    # o rótulo da linha oficial vem sem acento ("Florianopolis");
+                    # `cid` já passou pelo nome bonito da identidade
+                    "rotulo": f"{uf} · {cid}",
+                    # o nome próprio da loja, quando ele existe: na lista
+                    # oficial as 373 se chamam igual
+                    "unidade": (_nome_da_loja(x["local_id"], x.get("unidade"))
+                                if x.get("local_id") else x.get("unidade")),
+                    "estado": estado,
+                    "endereco": x.get("endereco"),
+                    "nota": x.get("nota"), "avaliacoes": x.get("avaliacoes"),
+                    "faixa": x.get("faixa"), "urgencia": x.get("urgencia"),
+                    "tarefa": x.get("tarefa"),
+                    "alerta": gat.get("titulo"),
+                    "alerta_fato": gat.get("fato"),
+                    "acao": (fl.get("acao") or {}).get("o_que"),
+                    "arquivo": x.get("arquivo"),
+                })
+    # O ESTUDO QUE A LISTA OFICIAL NÃO CONFIRMOU TAMBÉM É UM CARD. Sem isto
+    # a grade mostrava 44 estudos e o contador ao lado dizia 45 — e a loja
+    # que sobra é justamente a que não casou com nenhuma linha, ou seja, a
+    # que mais precisa aparecer.
+    for (uf, _cs), soltos in _estudo_solto.items():
+        for s in soltos:
+            cid = next((c for c in _por_uf.get(uf, {}) if _sem_acento(c) == _cs), _cs)
+            fl = _fl_ix.get(s["local_id"]) or {}
+            gat = (fl.get("gatilhos") or [{}])[0]
+            _cards.append({
+                "chave": s["local_id"], "uf": uf, "cidade": cid,
+                "rotulo": f"{uf} · {cid}",
+                "unidade": _nome_da_loja(s["local_id"], s.get("unidade")),
+                "estado": "com_estudo", "endereco": None,
+                "nota": None, "avaliacoes": None,
+                "faixa": fl.get("faixa"), "urgencia": fl.get("urgencia"),
+                "tarefa": (fl.get("tarefa") or {}).get("status"),
+                "alerta": gat.get("titulo"), "alerta_fato": gat.get("fato"),
+                "acao": (fl.get("acao") or {}).get("o_que"),
+                "arquivo": s["arquivo"],
+                "sem_linha_oficial": True,
+                "porque_sem_linha": ("a lista oficial da rede não confirmou "
+                                     "qual linha é esta loja"),
+            })
+
+    # ordem: quem tem alerta primeiro, e dentro disso a urgência. Depois as
+    # medidas sem estudo (as maiores primeiro — são as que mais pesam), e por
+    # fim as que ainda não têm número nenhum.
+    _peso_estado = {e[0]: i for i, e in enumerate(_ESTADOS)}
+    _cards.sort(key=lambda c: (_peso_estado[c["estado"]],
+                               -(c["urgencia"] or 0),
+                               -(c["avaliacoes"] or 0),
+                               c["rotulo"]))
+    for i, c in enumerate(_cards, 1):
+        c["ordem"] = i
+    _grupos = [{
+        "chave": k, "titulo": t, "o_que_e": d,
+        "quantas": sum(1 for c in _cards if c["estado"] == k),
+    } for k, t, d in _ESTADOS]
+    for g in _grupos:
+        g["frase"] = conta(g["quantas"], "unidade")
+    _por_faixa = [{
+        "faixa": f,
+        "quantas": sum(1 for c in _cards if c.get("faixa") == f),
+    } for f in ("vermelha", "amarela", "verde")]
+
     escritos.append(escreve("clinicas_indice", {
         "o_que_e": "Todas as unidades da lista oficial da rede, por estado e "
                    "cidade. As que já têm estudo abrem a página da clínica; "
@@ -363,6 +468,29 @@ def main():
             for u in _ufs for c in u["cidades"]),
         "cidades_com_mais_de_uma_loja": sum(
             1 for u in _ufs for c in u["cidades"] if c["mais_de_uma_loja"]),
+        # a grade: uma porta só, ordenada por alerta
+        "cards": _cards,
+        "cards_total": len(_cards),
+        "grupos": _grupos,
+        "por_faixa": _por_faixa,
+        "ordem": ("alerta primeiro: faixa e urgência da fila. Depois as "
+                  "unidades com ficha medida mas sem estudo, as maiores "
+                  "primeiro. Por último as que ainda não têm número."),
+        # O CARD A MAIS NÃO É UNIDADE A MAIS. São Paulo · República tem
+        # estudo e não tem linha na lista oficial: ou a lista está atrasada,
+        # ou uma das linhas de São Paulo é ela com outro nome. Somar ao
+        # total inflaria a rede; escondê-la apagaria um estudo inteiro da
+        # tela. Então ela é card, com a ambiguidade escrita no próprio card.
+        "cards_sem_linha_oficial": sum(1 for c in _cards
+                                       if c.get("sem_linha_oficial")),
+        "porque_um_card_a_mais": (
+            "a lista oficial tem 373 linhas; um estudo não casou com "
+            "nenhuma delas e aparece como card próprio, marcado. Ele não "
+            "entra no total da rede."),
+        "frase_da_grade": (
+            conta(_n_tot, "unidade") + " na lista oficial · "
+            + conta(sum(1 for c in _cards if c.get("alerta")),
+                    "com alerta aberto", "com alerta aberto")),
         "ufs": _ufs,
     }))
 
@@ -1182,11 +1310,18 @@ def main():
             "eventos": [e for e in _mud.get("eventos", [])
                         if e.get("severidade") in ("critica", "alta")][:8],
             "total_no_periodo": len(_mud.get("eventos", [])),
+            # PRAÇA SEM DELTA NÃO É PRAÇA SEM DADO. Cinco cidades entraram
+            # no estudo depois da rodada anterior: elas têm UMA medição, e
+            # movimento precisa de duas. A tela dizia só "praças sem base de
+            # comparação", que qualquer leitor entende como falha.
             "pracas_sem_delta": [r["rotulo"] for r in _mud.get("por_praca", [])
                                  if r.get("estado") == "linha_de_base"],
+            "titulo_sem_delta": "Ainda não dá para comparar",
             "porque_algumas_nao_aparecem": (
-                "praça com uma medição só não tem movimento a declarar — "
-                "tem linha de base criada, que é diferente de 'não mudou'"),
+                "estas praças foram medidas pela primeira vez nesta rodada. "
+                "Movimento precisa de duas medições — a primeira só cria a "
+                "linha de base. Elas aparecem no próximo ciclo, e isso é "
+                "diferente de 'não mudou'."),
         },
         "abertura": {
             "sobrelinha": "SALA DE CONTROLE · REDE NACIONAL",
@@ -1496,6 +1631,10 @@ def main():
     # aqui", ele sai contado daqui, ao lado da lista. Foi assim que "estudos
     # nesta praça" virou len() na tela — e len() na tela é conta na tela.
     def _ficha_praca(p):
+        _n_est_praca = sum(
+            1 for l in ident[p].get("locais", [])
+            if l.get("papel") == "proprio"
+            and (OUT/f"clinicas/{l['local_id']}.json").exists())
         tem = [k for k, v in (("praca", f"pracas/{p}"),
                               ("captacao", f"captacao/{p}"))
                if (OUT/f"{v}.json").exists()]
@@ -1508,7 +1647,22 @@ def main():
                 "uf": ident[p].get("uf", []),
                 "cidades": (ident[p].get("cidades_rotulo")
                             or ident[p].get("cidades", [])),
-                "tem": tem, "estudos": len(tem)}
+                "tem": tem,
+                # "ESTUDOS" ERA O NÚMERO DE FERRAMENTAS, NÃO DE ESTUDOS.
+                #
+                # `len(tem)` conta quantos ARTEFATOS a praça tem — página de
+                # praça, captação e plano — e dá 3 para toda praça completa.
+                # A tela mostrava "3 estudos nesta praça" nas dezessete, o
+                # que faz Mafra (1 loja) parecer igual a Porto Alegre (7).
+                # O estudo é da CLÍNICA: o número é quantas unidades desta
+                # praça têm página própria.
+                "estudos": _n_est_praca,
+                # e a frase sai PRONTA: o casco não conjuga. Com o número
+                # certo mas sem isto, Mafra diria "1 estudos nesta praça".
+                "frase_estudos": (
+                    conta(_n_est_praca, "clínica estudada", "clínicas estudadas")
+                    + " nesta praça"),
+                "ferramentas": len(tem)}
 
     escreve("manifest", {
         "gerado_em": dt.datetime.now().isoformat(timespec="seconds"),

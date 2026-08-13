@@ -85,14 +85,18 @@
       "titulo": "Está na metade de baixo da própria praça",
       "chave": "posicao",
       "fato": "4º lugar de 5 clínicas medidas na praça",
-      "fonte": "dados/portal/rede_cruzamento.json"
+      "fonte": "dados/portal/rede_cruzamento.json",
+      "valor": 4,
+      "base": 5
     },
     {
       "peso": 15,
       "titulo": "Silêncio publicitário com leilão cheio",
       "chave": "silencio",
       "fato": "85 anúncios no ar de 52 anunciantes, e nenhum é da rede",
-      "fonte": "dados/serie/captacao.jsonl"
+      "fonte": "dados/serie/captacao.jsonl",
+      "valor": 0,
+      "base": 52
     }
   ],
   "quem_avanca": null,

@@ -78,28 +78,36 @@
       "titulo": "O contador de avaliações parou",
       "chave": "parada",
       "fato": "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 3.0 avaliações/mês",
-      "fonte": "dados/serie/reviews.jsonl"
+      "fonte": "dados/serie/reviews.jsonl",
+      "valor": 377,
+      "base": 2
     },
     {
       "peso": 25,
       "titulo": "Um rival de aparelho sustenta e corre mais",
       "chave": "rival",
       "fato": "Odonto e Você sustenta há 14 meses a 4.9/mês, contra 3.0/mês desta unidade",
-      "fonte": "dados/serie/reviews.jsonl"
+      "fonte": "dados/serie/reviews.jsonl",
+      "valor": 3.0,
+      "base": 4.9
     },
     {
       "peso": 20,
       "titulo": "Está na metade de baixo da própria praça",
       "chave": "posicao",
       "fato": "13º lugar de 15 clínicas medidas na praça",
-      "fonte": "dados/portal/rede_cruzamento.json"
+      "fonte": "dados/portal/rede_cruzamento.json",
+      "valor": 13,
+      "base": 15
     },
     {
       "peso": 15,
       "titulo": "Nota abaixo da mediana da praça",
       "chave": "nota",
       "fato": "nota 4.3 contra mediana 4.9 das 17 clínicas medidas na praça",
-      "fonte": "dados/serie/places.jsonl"
+      "fonte": "dados/serie/places.jsonl",
+      "valor": 4.3,
+      "base": 4.9
     }
   ],
   "quem_avanca": {

@@ -36,7 +36,7 @@ Uso:
 """
 import argparse, datetime as dt, json, pathlib, re, statistics as st
 import unicodedata
-from collections import defaultdict
+from collections import defaultdict, Counter
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 SERIE = RAIZ/"dados"/"serie"
@@ -135,6 +135,61 @@ ACAO = {
 }
 
 
+# Como cada gatilho prova que foi resolvido. `valor` é o número que o abriu,
+# `base` é contra o que ele foi comparado. Se a base mudou, a comparação não
+# existe — e isso é diferente de o problema ter voltado ou continuado.
+def julga_resolucao(gatilho, antes, agora, dias):
+    """(resolveu?, leitura). Só devolve True quando dá para provar."""
+    if dias <= 0:
+        return False, ("abriu e saiu na mesma data — é releitura da mesma "
+                       "rodada, não resultado")
+    v0, b0 = antes.get("valor"), antes.get("base")
+    if v0 is None or b0 is None:
+        return False, ("o alerta é anterior ao registro do número que o abriu "
+                       "— não dá para comparar")
+    if not agora:
+        return False, "a unidade não foi medida nesta rodada"
+    v1, b1 = agora
+    if v1 is None or b1 is None:
+        return False, ("o número que abriu o alerta não foi medido nesta "
+                       "rodada — deixou de ser visível, não de existir")
+
+    if gatilho == "posicao":
+        if b1 != b0:
+            return False, (f"o ranking mudou de tamanho ({b0} → {b1} clínicas "
+                           f"medidas) — a posição de hoje não se compara com a "
+                           f"de antes")
+        return (v1 < v0), (f"subiu de {v0}º para {v1}º entre as mesmas {b1} "
+                           f"clínicas medidas" if v1 < v0 else
+                           f"saiu da metade de baixo sem subir ({v0}º → {v1}º)")
+    if gatilho in ("nao_engatou", "parada"):
+        if b1 < b0:
+            return False, ("a amostra lida encolheu — o contador de meses com "
+                           "movimento não se compara")
+        if b1 > b0 and v1 == v0:
+            return False, ("o contador de avaliações não andou; o que cresceu "
+                           "foi o quanto lemos dele")
+        return (v1 > v0), (f"o contador saiu de {v0} para {v1} avaliações"
+                           if v1 > v0 else
+                           "o contador não andou")
+    if gatilho == "nota":
+        return (v1 > v0), (f"a nota subiu de {v0} para {v1}" if v1 > v0 else
+                           "a nota não subiu — quem se moveu foi a mediana "
+                           "da praça")
+    if gatilho == "silencio":
+        if b1 < LEILAO_CHEIO:
+            return False, (f"o leilão esvaziou ({b0} → {b1} anunciantes) — "
+                           f"não estar nele deixou de ser silêncio")
+        return bool(v1), ("a rede entrou no leilão da cidade" if v1 else
+                          "continua fora do leilão")
+    if gatilho == "rival":
+        return (v1 > v0), (f"o ritmo da unidade subiu de {v0:.1f} para "
+                           f"{v1:.1f}/mês" if v1 > v0 else
+                           "quem parou de correr foi o rival, não quem "
+                           "acelerou foi a unidade")
+    return False, "gatilho sem régua de resolução"
+
+
 def monta():
     ident, linhas = coleta()
     nossas = [x for x in linhas if x["papel"] == "proprio" and x["ritmo"] is not None]
@@ -156,6 +211,7 @@ def monta():
                 primeira[k] = d10
 
     fila = []
+    medidas_hoje = {}
 
     for u in nossas:
         vizinhos = por_praca[u["praca"]]
@@ -184,14 +240,16 @@ def monta():
                 marca("nao_engatou",
                       f"a primeira avaliação é de {p1}, há {idade} meses, e o ritmo "
                       f"medido é {u['ritmo']:.1f}/mês — a unidade ainda não engatou",
-                      "dados/serie/reviews.jsonl")
+                      "dados/serie/reviews.jsonl",
+                      {"valor": u.get("total"), "base": u["meses"]})
             else:
                 marca("parada",
                       f"apenas {conta(u['meses'], 'mês', 'meses')} "
                       f"{'seguido' if u['meses'] == 1 else 'seguidos'} com "
                       f"movimento acima do típico da própria unidade; o ritmo "
                       f"medido é {u['ritmo']:.1f} avaliações/mês",
-                      "dados/serie/reviews.jsonl")
+                      "dados/serie/reviews.jsonl",
+                      {"valor": u.get("total"), "base": u["meses"]})
 
         # 2 · o rival que avança, nomeado
         mediana = st.median([x["ritmo"] for x in nossas]) if nossas else 0
@@ -203,7 +261,8 @@ def monta():
             marca("rival",
                   f"{rival['nome']} sustenta há {rival['meses']} meses a "
                   f"{rival['ritmo']:.1f}/mês, contra {u['ritmo']:.1f}/mês desta unidade",
-                  "dados/serie/reviews.jsonl")
+                  "dados/serie/reviews.jsonl",
+                  {"valor": u["ritmo"], "base": rival["ritmo"]})
 
         # 3 · a metade de baixo da própria praça
         #
@@ -214,7 +273,8 @@ def monta():
         if u["de"] and u["posicao"] and u["de"] > 2 and u["posicao"] > u["de"]/2:
             marca("posicao",
                   f"{u['posicao']}º lugar de {u['de']} clínicas medidas na praça",
-                  "dados/portal/rede_cruzamento.json")
+                  "dados/portal/rede_cruzamento.json",
+                  {"valor": u["posicao"], "base": u["de"]})
 
         # 4 · a nota
         notas = [x["nota"] for x in vizinhos if x.get("nota")]
@@ -223,7 +283,8 @@ def monta():
             marca("nota",
                   f"nota {u['nota']} contra mediana {med_nota:.1f} das "
                   f"{len(notas)} clínicas medidas na praça",
-                  "dados/serie/places.jsonl")
+                  "dados/serie/places.jsonl",
+                  {"valor": u["nota"], "base": round(med_nota, 2)})
 
         # 5 · o silêncio publicitário — só quando o leilão está cheio
         c = cap.get(u["praca"]) or {}
@@ -232,7 +293,8 @@ def monta():
             marca("silencio",
                   f"{c.get('anuncios_ativos')} anúncios no ar de {len(anun)} "
                   f"anunciantes, e nenhum é da rede",
-                  "dados/serie/captacao.jsonl")
+                  "dados/serie/captacao.jsonl",
+                  {"valor": 0, "base": len(anun)})
 
         gat.sort(key=lambda g: -g["peso"])
         urg = min(urg, 100)
@@ -251,6 +313,17 @@ def monta():
             nome_curto = ""
         elif nome_curto.lower().startswith(cidade.lower() + " "):
             nome_curto = nome_curto[len(cidade):].strip(" -–—")
+        # o número de HOJE de cada gatilho, na mesma escala em que ele foi
+        # aberto. É o que permite dizer se um alerta que sumiu foi resolvido
+        # ou apenas deixou de ser medido do mesmo jeito.
+        medidas_hoje[u["local_id"]] = {
+            "nao_engatou": (u.get("total"), u["meses"]),
+            "parada":      (u.get("total"), u["meses"]),
+            "rival":       (u["ritmo"], rival["ritmo"] if rival else None),
+            "posicao":     (u.get("posicao"), u.get("de")),
+            "nota":        (u.get("nota"), round(med_nota, 2) if med_nota else None),
+            "silencio":    (1 if any(nosso(a) for a in anun) else 0, len(anun)),
+        }
         fila.append({
             "local_id": u["local_id"],
             "praca_id": u["praca"],
@@ -289,9 +362,9 @@ def monta():
     #   resolvida  o gatilho sumiu numa medição nova — o dado EXTERNO
     #              fechou o loop, sem depender de ninguém confirmar
     hist = jsonl("fila_historico")
-    visto = defaultdict(list)              # (local_id, gatilho) -> [datas]
+    visto = defaultdict(list)          # (local_id, gatilho) -> [registros]
     for h in hist:
-        visto[(h["local_id"], h["gatilho"])].append(h["snapshot_date"])
+        visto[(h["local_id"], h["gatilho"])].append(h)
 
     abertos_hoje = set()
     for x in fila:
@@ -301,7 +374,7 @@ def monta():
         if not dom:
             x["tarefa"] = None
             continue
-        datas = visto.get((x["local_id"], dom), [])
+        datas = [r["snapshot_date"] for r in visto.get((x["local_id"], dom), [])]
         aberta_em = min(datas) if datas else hoje
         dias = (dt.date.fromisoformat(hoje) - dt.date.fromisoformat(aberta_em)).days
         prazo = PRAZO_DIAS.get(dom)
@@ -313,20 +386,48 @@ def monta():
                          if prazo is not None else None),
         }
 
-    # resolvidas: estavam no histórico e não voltaram nesta rodada. É a única
-    # prova de resultado que dado público consegue dar — e é a que vale.
+    # resolvidas: estavam no histórico e não voltaram nesta rodada.
+    #
+    # E "não voltou" NÃO É "resolveu". A primeira versão desta lista publicou
+    # 22 vitórias num dia em que nada foi resolvido:
+    #
+    #   · nove abriram e fecharam na MESMA data — releitura da mesma rodada;
+    #   · sete de "posição" sumiram porque o ranking mudou de tamanho quando
+    #     a amostra truncada saiu da comparação: Joinville · Aventureiro
+    #     saltou da metade de baixo para 1º de 15 em um dia;
+    #   · seis de "não engatou" sumiram porque a varredura leu mais avaliações
+    #     e o contador de meses com movimento cresceu sozinho.
+    #
+    # Nenhuma dessas é resultado. São mudança de método e de amostra, e
+    # publicá-las como vitória é o pior defeito possível num produto cujo
+    # único ativo é o ciclo alerta → ação → resultado.
+    #
+    # A régua agora: o gatilho só é RESOLVIDO quando (a) esteve ativo num dia
+    # anterior a este, (b) a base de comparação é a mesma, e (c) o número que
+    # o abriu se moveu na direção certa. Tudo o mais é descartado COM MOTIVO
+    # NA TELA — "não sabemos" nunca vira "aconteceu".
     rotulos = {x["local_id"]: x["rotulo"] for x in fila}
-    resolvidas = []
-    for (lid, g), datas in sorted(visto.items()):
+    nomes = {x["local_id"]: x.get("unidade_curta") for x in fila}
+    resolvidas, descartadas = [], []
+    for (lid, g), regs in sorted(visto.items()):
+        datas = [r["snapshot_date"] for r in regs]
         if (lid, g) in abertos_hoje or lid not in rotulos:
             continue
-        resolvidas.append({
-            "local_id": lid, "rotulo": rotulos[lid], "gatilho": g,
+        ult = max(regs, key=lambda r: r["snapshot_date"])
+        item = {
+            "local_id": lid, "rotulo": rotulos[lid],
+            "unidade_curta": nomes.get(lid), "gatilho": g,
             "titulo": GATILHOS.get(g, {}).get("titulo", g),
             "aberta_em": min(datas), "ultima_vez_ativa": max(datas),
-            "leitura": f"o gatilho não voltou na medição de {hoje} — "
-                       f"o dado externo fechou o loop",
-        })
+            "dias": (dt.date.fromisoformat(hoje)
+                     - dt.date.fromisoformat(max(datas))).days,
+        }
+        ok, leitura = julga_resolucao(
+            g, ult, medidas_hoje.get(lid, {}).get(g), item["dias"])
+        item["leitura"] = leitura
+        (resolvidas if ok else descartadas).append(item)
+
+    motivos = Counter(x["leitura"] for x in descartadas)
 
     vermelhas = [x for x in fila if x["faixa"] == "vermelha"]
     return {
@@ -351,6 +452,21 @@ def monta():
         "tarefas_vencidas": sum(1 for x in fila
                                 if (x.get("tarefa") or {}).get("status") == "vencida"),
         "tarefas_resolvidas": resolvidas,
+        "resolvidas_total": len(resolvidas),
+        # O DESCARTE É A PARTE QUE SE PUBLICA. Esconder que 22 alertas
+        # sumiram sem prova é o mesmo que publicá-los como vitória.
+        "resolucoes_descartadas": len(descartadas),
+        "porque_descartadas": [{"motivo": m, "quantas": q}
+                               for m, q in motivos.most_common()],
+        "frase_resolvidas": (
+            f"{conta(len(resolvidas), 'alerta fechado com prova', 'alertas fechados com prova')}"
+            + (f" · {conta(len(descartadas), 'sumiu', 'sumiram')} sem prova "
+               f"de resultado" if descartadas else "")),
+        "o_que_conta_como_resolvido": (
+            "o alerta esteve ativo num dia anterior, a base de comparação é a "
+            "mesma, e o número que o abriu se moveu na direção certa. Sumir "
+            "da lista não basta — ranking que muda de tamanho e amostra que "
+            "engorda fazem alerta sumir sem nada ter melhorado."),
         "o_que_isso_nao_ve": [
             f"A rede tem 374 unidades e esta fila mede {len(fila)}. É "
             f"{100*len(fila)//374}% da rede.",
@@ -408,7 +524,11 @@ def main():
                     f.write(json.dumps(
                         {"snapshot_date": d["gerado_em"],
                          "local_id": x["local_id"], "praca_id": x["praca_id"],
-                         "gatilho": g["chave"], "fato": g["fato"]},
+                         "gatilho": g["chave"], "fato": g["fato"],
+                         # o número que abriu o alerta e a base contra a qual
+                         # ele foi comparado — sem os dois, "resolveu" é
+                         # palpite (ver julga_resolucao)
+                         "valor": g.get("valor"), "base": g.get("base")},
                         ensure_ascii=False) + "\n")
                     n += 1
         print(f"  → dados/serie/fila_historico.jsonl (+{n})\n")

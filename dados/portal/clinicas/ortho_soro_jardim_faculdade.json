@@ -78,28 +78,36 @@
       "titulo": "O contador de avaliações parou",
       "chave": "parada",
       "fato": "apenas 1 mês seguido com movimento acima do típico da própria unidade; o ritmo medido é 1.0 avaliações/mês",
-      "fonte": "dados/serie/reviews.jsonl"
+      "fonte": "dados/serie/reviews.jsonl",
+      "valor": 111,
+      "base": 1
     },
     {
       "peso": 20,
       "titulo": "Está na metade de baixo da própria praça",
       "chave": "posicao",
       "fato": "3º lugar de 3 clínicas medidas na praça",
-      "fonte": "dados/portal/rede_cruzamento.json"
+      "fonte": "dados/portal/rede_cruzamento.json",
+      "valor": 3,
+      "base": 3
     },
     {
       "peso": 15,
       "titulo": "Nota abaixo da mediana da praça",
       "chave": "nota",
       "fato": "nota 4.3 contra mediana 4.9 das 17 clínicas medidas na praça",
-      "fonte": "dados/serie/places.jsonl"
+      "fonte": "dados/serie/places.jsonl",
+      "valor": 4.3,
+      "base": 4.9
     },
     {
       "peso": 15,
       "titulo": "Silêncio publicitário com leilão cheio",
       "chave": "silencio",
       "fato": "125 anúncios no ar de 47 anunciantes, e nenhum é da rede",
-      "fonte": "dados/serie/captacao.jsonl"
+      "fonte": "dados/serie/captacao.jsonl",
+      "valor": 0,
+      "base": 47
     }
   ],
   "quem_avanca": null,

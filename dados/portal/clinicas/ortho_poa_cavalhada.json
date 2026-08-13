@@ -94,21 +94,27 @@
       "titulo": "O contador de avaliações parou",
       "chave": "parada",
       "fato": "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 2.6 avaliações/mês",
-      "fonte": "dados/serie/reviews.jsonl"
+      "fonte": "dados/serie/reviews.jsonl",
+      "valor": 208,
+      "base": 2
     },
     {
       "peso": 25,
       "titulo": "Um rival de aparelho sustenta e corre mais",
       "chave": "rival",
       "fato": "Sorridents Porto Alegre Clinica Odontológica / Dentista sustenta há 20 meses a 19.2/mês, contra 2.6/mês desta unidade",
-      "fonte": "dados/serie/reviews.jsonl"
+      "fonte": "dados/serie/reviews.jsonl",
+      "valor": 2.6,
+      "base": 19.2
     },
     {
       "peso": 20,
       "titulo": "Está na metade de baixo da própria praça",
       "chave": "posicao",
       "fato": "16º lugar de 21 clínicas medidas na praça",
-      "fonte": "dados/portal/rede_cruzamento.json"
+      "fonte": "dados/portal/rede_cruzamento.json",
+      "valor": 16,
+      "base": 21
     }
   ],
   "quem_avanca": {

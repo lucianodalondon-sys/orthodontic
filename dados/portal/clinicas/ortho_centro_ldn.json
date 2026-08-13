@@ -74,21 +74,27 @@
       "titulo": "O contador de avaliações parou",
       "chave": "parada",
       "fato": "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 0.8 avaliações/mês",
-      "fonte": "dados/serie/reviews.jsonl"
+      "fonte": "dados/serie/reviews.jsonl",
+      "valor": 77,
+      "base": 2
     },
     {
       "peso": 20,
       "titulo": "Está na metade de baixo da própria praça",
       "chave": "posicao",
       "fato": "10º lugar de 11 clínicas medidas na praça",
-      "fonte": "dados/portal/rede_cruzamento.json"
+      "fonte": "dados/portal/rede_cruzamento.json",
+      "valor": 10,
+      "base": 11
     },
     {
       "peso": 15,
       "titulo": "Nota abaixo da mediana da praça",
       "chave": "nota",
       "fato": "nota 3.8 contra mediana 5.0 das 24 clínicas medidas na praça",
-      "fonte": "dados/serie/places.jsonl"
+      "fonte": "dados/serie/places.jsonl",
+      "valor": 3.8,
+      "base": 4.95
     }
   ],
   "quem_avanca": null,

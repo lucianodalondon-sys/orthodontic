@@ -24,7 +24,7 @@ import datetime as dt
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RAIZ/"scripts"))
-from cruzamento import reviews_unicos, coleta, jsonl
+from cruzamento import reviews_unicos, coleta, jsonl, conta
 
 PORTAL = RAIZ/"dados"/"portal"
 NOME = re.compile(r"\bdr[a]?\.?\s+[a-z]|doutor|doutora", re.I)
@@ -101,7 +101,9 @@ def monta():
     ]
 
     conclusao = {
-        "t": "A satisfação é igual nas dez lojas; a constância não é",
+        "t": (f"A satisfação é igual nas "
+              + conta(len(lojas), "loja acompanhada", "lojas acompanhadas")
+              + "; a constância não é"),
         "leitura": "Quatro explicações confortáveis foram testadas e nenhuma "
                    "separa quem sustenta de quem para: satisfação, idade, resposta "
                    "e nome citado são iguais nos dois grupos. A praça-controle é "
@@ -120,8 +122,12 @@ def monta():
     }
 
     return {
-        "o_que_e": "O que as dez lojas ensinam quando lidas juntas — inclusive "
-                   "as explicações que o dado derrubou.",
+        # "as dez lojas" ficou escrito quando a rede tinha dez estudadas.
+        # Hoje são 45, e número escrito à mão apodrece — a regra do projeto
+        # é que todo número da tela sai do build.
+        "o_que_e": (f"O que as {conta(len(lojas), 'loja', 'lojas')} "
+                    f"acompanhadas ensinam quando lidas juntas — inclusive "
+                    f"as explicações que o dado derrubou."),
         "metodo": "eliminação sobre histórico completo de avaliações, POR LOJA. "
                   "Cuiabá é a praça-controle: três lojas idênticas no papel, "
                   "resultados opostos.",

@@ -41,12 +41,13 @@ from collections import defaultdict, Counter
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RAIZ/"scripts"))
-from cruzamento import jsonl, reviews_unicos, identidades, coleta
+from cruzamento import jsonl, reviews_unicos, identidades, coleta, conta
 
 PORTAL = RAIZ/"dados"/"portal"
 
 MIN_AVALIACOES = 60      # abaixo disso a clínica não define padrão
 MIN_DIFERENCA = 1.4      # razão mínima para chamar de vantagem, não de ruído
+TETO_NA_REDE = 6         # quantas lojas a leitura de REDE lista por eixo
 
 # Categorias do Google que NÃO disputam paciente de aparelho.
 FORA = re.compile(r"centro m[ée]dico|m[ée]dico|hospital|laborat[óo]rio|"
@@ -91,6 +92,17 @@ EIXOS = {
         r"\bdr[a]?\.?\s+[a-z]|doutor|doutora|a\s+[A-Z][a-z]+\s+(me|foi|explic)"),
 }
 RX = {k: re.compile(v[1], re.I) for k, v in EIXOS.items()}
+
+
+def rotulo_da_loja(x):
+    """'RS · Caxias do Sul · Kayser'. Sem a marca, que é igual em todas."""
+    nome = (x.get("unidade") or "").replace("OrthoDontic", "").strip(" ·-–—")
+    cidade = (x.get("rotulo") or "").split("·")[-1].strip()
+    if nome.lower() == cidade.lower():
+        nome = ""
+    elif nome.lower().startswith(cidade.lower() + " "):
+        nome = nome[len(cidade):].strip(" ·-–—")
+    return x["rotulo"] + (f" · {nome}" if nome else "")
 
 
 def perfil(revs):
@@ -170,7 +182,7 @@ def main():
             # não some da tela — ela diz isso, que é leitura por si só.
             for lid, l in proprias:
                 saida.append({"praca_id": p, "rotulo": d.get("rotulo"),
-                              "local_id": lid, "unidade": l.get("nome"),
+                              "local_id": lid, "unidade": l.get("unidade") or l.get("nome"),
                               "sem_comparacao_porque":
                                   "nenhum rival de APARELHO com amostra "
                                   "suficiente na praça — as clínicas medidas "
@@ -186,7 +198,7 @@ def main():
             if not meu or meu_n < MIN_AVALIACOES:
                 if meu_n:
                     saida.append({"praca_id": p, "rotulo": d.get("rotulo"),
-                                  "local_id": lid, "unidade": l.get("nome"),
+                                  "local_id": lid, "unidade": l.get("unidade") or l.get("nome"),
                                   "sem_comparacao_porque":
                                       f"só {meu_n} avaliações com texto — abaixo "
                                       f"do mínimo de {MIN_AVALIACOES}",
@@ -208,7 +220,7 @@ def main():
                         "nos": round(100*meu[k], 1), "razao": round(razao, 1)})
             vantagens.sort(key=lambda x: -x["razao"])
             saida.append({"praca_id": p, "rotulo": d.get("rotulo"),
-                          "local_id": lid, "unidade": l.get("nome"),
+                          "local_id": lid, "unidade": l.get("unidade") or l.get("nome"),
                           "nossas_avaliacoes_lidas": meu_n,
                           "rivais_comparados": [r["nome"] for r in dentro],
                           "rivais_fora": [r for r in rivais if r["fora"]],
@@ -242,19 +254,34 @@ def main():
     # treinamento, roteiro de atendimento, protocolo — não visita.
     rede = []
     for k, (nome, _) in EIXOS.items():
-        onde = [((x["rotulo"] + " · " + (x.get("unidade") or "")), v)
+        # todas as linhas aqui são nossas, e todas se chamam OrthoDontic:
+        # repetir a marca 373 vezes na mesma coluna é ruído. Fica o que
+        # distingue a loja — e, quando a praça tem uma só, fica o rótulo.
+        onde = [(rotulo_da_loja(x), v)
                 for x in saida for v in x.get("vantagens_deles", [])
                 if v["eixo"] == k]
         if not onde:
             continue
         nossos = [x["nosso_perfil"][k] for x in saida if x.get("nosso_perfil")]
+        # UMA LINHA POR LOJA NÃO SOBREVIVE À REDE. São 45 lojas hoje e 373
+        # quando a medição alcançar a rede inteira: oito eixos × 373 linhas
+        # é uma tela que ninguém rola. O que decide é o TAMANHO do buraco e
+        # onde ele é pior — então a lista publicada é a das piores, com o
+        # total pronto ao lado. O resto não some: está em `pracas` de cada
+        # praça, na tela da unidade, que é onde o franqueado abre.
+        piores = sorted(onde, key=lambda rv: -rv[1]["razao"])[:TETO_NA_REDE]
         rede.append({
             "eixo": k, "o_que_e": nome,
             "perde_em": len(onde), "de": len(saida),
+            "frase": (conta(len(onde), "loja", "lojas") + " de "
+                      + conta(len(saida), "medida", "medidas")),
             "pior_razao": max(v["razao"] for _, v in onde),
             "nosso_pior": min(nossos), "nosso_melhor": max(nossos),
-            "pracas": [{"rotulo": r, "razao": v["razao"], "quem": v["quem"]}
-                       for r, v in onde],
+            "piores": [{"rotulo": r, "razao": v["razao"], "quem": v["quem"]}
+                       for r, v in piores],
+            "piores_total": len(onde),
+            "frase_ver_todas": (f"ver as {len(onde)} lojas"
+                                if len(onde) > len(piores) else None),
             "de_quem_e_a_decisao": ("franqueadora" if len(onde) >= len(saida)-1
                                     else "unidade"),
         })

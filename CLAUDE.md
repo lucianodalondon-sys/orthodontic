@@ -415,3 +415,21 @@ padrões → caixa → padrao → build. Períodos curtos são declarados na tel
 - **Todo arquivo criado ou mudado vai para o chat, sempre.** Commit e push
   não bastam: o arquivo tem de chegar na mão, na conversa, no mesmo turno.
   Isso vale para prompt, payload, relatório e captura de tela.
+
+- **ALERTA QUE SUMIU NÃO É ALERTA RESOLVIDO.** A fila publicou 22 vitórias
+  num dia em que nada foi resolvido: nove abriram e sumiram na MESMA data
+  (releitura da mesma rodada), sete de "posição" sumiram porque o ranking
+  mudou de tamanho quando a amostra truncada saiu da comparação — Joinville
+  · Aventureiro "saltou" da metade de baixo para 1º de 15 em um dia — e seis
+  sumiram porque a varredura leu mais avaliações e o contador de meses com
+  movimento cresceu sozinho. `fila_historico.jsonl` agora grava `valor` e
+  `base` de cada gatilho, e `julga_resolucao()` só carimba resolvido quando
+  o alerta esteve ativo num dia ANTERIOR, a base é a mesma e o número se
+  moveu na direção certa. O descarte vai para a tela com o motivo.
+- **LISTA COM UMA LINHA POR LOJA MORRE NA REDE INTEIRA.** São 45 lojas
+  medidas e 373 unidades. A leitura de rede do rival despejava 45 linhas por
+  eixo × 8 eixos, e a lateral de CLÍNICAS era uma coluna de 45 nomes iguais.
+  Toda lista de tela tem teto (`piores`, 6) mais total pronto
+  (`piores_total`, `frase_ver_todas`), ou é grade de cards com filtro
+  contado no build (`clinicas_indice.cards`, ordenada por alerta). O casco
+  continua proibido de contar e de ordenar.
