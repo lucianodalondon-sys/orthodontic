@@ -82,6 +82,119 @@ def evento(praca, rotulo, tipo, natureza, severidade, titulo, fato,
     }
 
 
+def eventos_de_anuncio(p, rot, obs, evento, confianca, conta, datas_da_praca):
+    """O DELTA DE ANÚNCIO NÃO PODE DEPENDER DO DELTA DE CATEGORIA.
+
+    Este bloco vivia depois de um `continue` que exigia duas medições da
+    CATEGORIA. São fontes diferentes, com ritmos diferentes e custos
+    diferentes: a varredura de clínicas é cara e mensal, a biblioteca de
+    anúncios é barata e pode ser semanal. Uma praça com duas rodadas de
+    anúncio e uma de categoria ficava sem nenhuma leitura de mídia — e
+    era o caso de Mafra, a régua.
+    """
+    eventos = []
+    # ─────────── anúncios: quem entrou e quem saiu do ar ───────────
+    #
+    # A FONTE MUDOU, E ERA PRECISO. `anuncios.jsonl` é um ledger: uma
+    # linha por anúncio, reescrita a cada coleta, com first_seen e
+    # last_seen. Ele responde "há quantos dias está no ar" e NÃO
+    # responde "o que estava no ar no dia 8" — e era a segunda pergunta
+    # que este bloco fazia. Comparar `snapshot_date` no ledger comparava
+    # a data em que o anúncio ENTROU na base, não o conjunto do dia.
+    #
+    # `anuncios_observados.jsonl` é append-only e diz uma frase por
+    # linha: "em D a praça foi consultada e este anúncio estava
+    # presente". `anuncios_rodadas.jsonl` diz quais praças foram
+    # consultadas em D — sem ele, "não tem linha" fica ambíguo entre
+    # "não consultamos" e "consultamos e não havia nada".
+    dsa = datas_da_praca(obs, p)
+    if len(dsa) >= 2:
+        aa, ab = dsa[-2], dsa[-1]
+        _id = lambda r: r.get("chave") or f"{r.get('praca_id')}|{r.get('ad_id')}"
+        ant = {_id(r): r for r in obs
+               if r.get("praca_id") == p and r["snapshot_date"] == aa}
+        ago = {_id(r): r for r in obs
+               if r.get("praca_id") == p and r["snapshot_date"] == ab}
+        # DUAS RODADAS SÓ SE COMPARAM SE PERGUNTARAM A MESMA COISA.
+        #
+        # Mafra tem 58 anúncios em 07/ago e 35 em 08/ago, e o delta acusava
+        # 14 ANUNCIANTES NOVOS num intervalo de um dia. Não entrou ninguém:
+        # a rodada de 07 usou quatro consultas ("aparelho ortodôntico
+        # Mafra", "Instituto Lumière", "OdontoCompany Mafra", "OrthoDontic
+        # Mafra") e a de 08 usou duas, sem a cidade ("OdontoCompany",
+        # "OrthoDontic") — que trazem anúncio da rede inteira, de qualquer
+        # praça. Os conjuntos mediram universos diferentes.
+        #
+        # É a mesma falha que a varredura de categoria já tinha mostrado em
+        # Cuiabá, com 53% de estabilidade. A regra vale para toda fonte:
+        # não sabemos > não aconteceu > aconteceu.
+        q_ant = {r.get("consulta") for r in ant.values() if r.get("consulta")}
+        q_ago = {r.get("consulta") for r in ago.values() if r.get("consulta")}
+        if q_ant and q_ago and q_ant != q_ago:
+            return [evento(
+                p, rot, "rodadas_nao_comparaveis", "fato", "baixa",
+                "As duas rodadas de anúncio não se comparam",
+                f"{aa} perguntou {conta(len(q_ant), 'consulta', 'consultas')} "
+                f"e {ab} perguntou {len(q_ago)}; "
+                + conta(len(q_ant & q_ago), "consulta em comum",
+                        "consultas em comum"),
+                "conjuntos medidos com perguntas diferentes não dizem quem "
+                "entrou nem quem saiu — a diferença é da coleta, não do "
+                "mercado",
+                "repetir a MESMA lista de consultas na próxima rodada",
+                "dados/serie/anuncios_observados.jsonl",
+                {"consultas_antes": sorted(q_ant), "consultas_agora": sorted(q_ago)},
+                confianca("fato", amostra=len(ago),
+                          unidade_amostra=("anúncio no ar", "anúncios no ar"),
+                          medicoes=len(dsa),
+                          fonte=f"dados/serie/anuncios_observados.jsonl "
+                                f"({aa} → {ab})",
+                          contra=["as consultas mudaram entre as rodadas"]))]
+
+        novos_anunciantes = ({r.get("anunciante") for r in ago.values()}
+                             - {r.get("anunciante") for r in ant.values()})
+        for anunciante in sorted(x for x in novos_anunciantes if x):
+            quantos = sum(1 for r in ago.values()
+                          if r.get("anunciante") == anunciante)
+            eventos.append(evento(
+                p, rot, "anunciante_novo", "fato", "media",
+                f"Anunciante novo: {anunciante}",
+                f"{conta(quantos, 'anúncio', 'anúncios')} no ar em {ab}, "
+                f"e nenhum na medição de {aa}",
+                "entrou no leilão da cidade — muda a pressão de mídia",
+                "ler a oferta dele antes de responder",
+                "dados/serie/anuncios_observados.jsonl",
+                {"anunciante": anunciante, "anuncios": quantos},
+                confianca("fato", amostra=len(ago),
+                          unidade_amostra=("anúncio medido",
+                                           "anúncios medidos"),
+                          medicoes=len(dsa),
+                          fonte=f"dados/serie/anuncios_observados.jsonl ({aa} → {ab})",
+                          contra=["a Biblioteca não publica verba: "
+                                  "quantidade de anúncio não é "
+                                  "investimento"]),
+                entidade=anunciante))
+    elif dsa:
+        eventos.append(evento(
+            p, rot, "linha_de_base_anuncios", "fato", "baixa",
+            "Linha de base de anúncios criada",
+            f"primeira medição de anúncios desta praça, em {dsa[-1]}",
+            "movimento de campanha só existe a partir da segunda medição",
+            "recoletar na próxima rodada para abrir o delta",
+            "dados/serie/anuncios_observados.jsonl", {},
+            # linha de base tem amostra: quantos anúncios estavam no ar na
+            # única rodada que esta praça tem
+            confianca("fato",
+                      amostra=sum(1 for r in obs
+                                  if r.get("praca_id") == p
+                                  and r["snapshot_date"] == dsa[-1]),
+                      unidade_amostra=("anúncio no ar", "anúncios no ar"),
+                      medido=True, medicoes=1,
+                      fonte="dados/serie/anuncios_observados.jsonl")))
+
+    return eventos
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--praca")
@@ -94,6 +207,7 @@ def main():
 
     cat = linhas("categoria")
     ads = linhas("anuncios")
+    obs = linhas("anuncios_observados")
     nossos_place, disputam = set(), set()
     for pid, pr in ident.items():
         for l in pr.get("locais", []):
@@ -121,6 +235,13 @@ def main():
                            " da categoria — movimento só existe com duas "
                            "observações comparáveis"),
             })
+            # ela pode ter história de MÍDIA mesmo sem história de
+            # categoria: são duas fontes, dois ritmos, dois custos
+            de_midia = eventos_de_anuncio(p, rot, obs, evento, confianca,
+                                          conta, datas_da_praca)
+            if de_midia:
+                resumo[-1]["eventos"] = len(de_midia)
+                fora.extend(de_midia)
             continue
         antes_d, agora_d = ds[-2], ds[-1]
         antes = {r["place_id"]: r for r in cat
@@ -225,54 +346,8 @@ def main():
             except (TypeError, ValueError):
                 pass
 
-        # ─────────── anúncios: quem entrou e quem saiu do ar ───────────
-        dsa = datas_da_praca(ads, p)
-        if len(dsa) >= 2:
-            aa, ab = dsa[-2], dsa[-1]
-            ant = {r["ad_id"]: r for r in ads
-                   if r.get("praca_id") == p and r["snapshot_date"] == aa}
-            ago = {r["ad_id"]: r for r in ads
-                   if r.get("praca_id") == p and r["snapshot_date"] == ab}
-            novos_anunciantes = ({r.get("anunciante") for r in ago.values()}
-                                 - {r.get("anunciante") for r in ant.values()})
-            for anunciante in sorted(x for x in novos_anunciantes if x):
-                quantos = sum(1 for r in ago.values()
-                              if r.get("anunciante") == anunciante)
-                eventos.append(evento(
-                    p, rot, "anunciante_novo", "fato", "media",
-                    f"Anunciante novo: {anunciante}",
-                    f"{conta(quantos, 'anúncio', 'anúncios')} no ar em {ab}, "
-                    f"e nenhum na medição de {aa}",
-                    "entrou no leilão da cidade — muda a pressão de mídia",
-                    "ler a oferta dele antes de responder",
-                    "dados/serie/anuncios.jsonl",
-                    {"anunciante": anunciante, "anuncios": quantos},
-                    confianca("fato", amostra=len(ago),
-                              unidade_amostra=("anúncio medido",
-                                               "anúncios medidos"),
-                              medicoes=len(dsa),
-                              fonte=f"dados/serie/anuncios.jsonl ({aa} → {ab})",
-                              contra=["a Biblioteca não publica verba: "
-                                      "quantidade de anúncio não é "
-                                      "investimento"]),
-                    entidade=anunciante))
-        elif dsa:
-            eventos.append(evento(
-                p, rot, "linha_de_base_anuncios", "fato", "baixa",
-                "Linha de base de anúncios criada",
-                f"primeira medição de anúncios desta praça, em {dsa[-1]}",
-                "movimento de campanha só existe a partir da segunda medição",
-                "recoletar na próxima rodada para abrir o delta",
-                "dados/serie/anuncios.jsonl", {},
-                # linha de base tem amostra: é quantos anúncios estavam no
-                # ar quando a praça foi consultada pela primeira vez
-                confianca("fato", amostra=sum(1 for r in ads
-                                        if r.get("praca_id") == p
-                                        and r.get("ativo")),
-                          unidade_amostra=("anúncio no ar", "anúncios no ar"),
-                          medido=True, medicoes=1,
-                          fonte="dados/serie/anuncios.jsonl")))
-
+        eventos += eventos_de_anuncio(p, rot, obs, evento, confianca, conta,
+                                      datas_da_praca)
         ordem = {"critica": 0, "alta": 1, "media": 2, "baixa": 3}
         eventos.sort(key=lambda e: (ordem.get(e["severidade"], 9), e["titulo"]))
         fora.extend(eventos)

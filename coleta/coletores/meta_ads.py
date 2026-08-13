@@ -121,6 +121,7 @@ def main():
     hoje = dt.date.today().isoformat()
     tok = token()
     ads = {r["chave"]: r for r in jsonl_le(SERIE/"anuncios.jsonl")}
+    vistos = []          # as observações desta rodada, append-only
 
     for praca in pracas:
         print(f"\n=== {praca} · corte {hoje} ===")
@@ -151,6 +152,26 @@ def main():
                 txt = (txt or a.get("ad_creative_body") or sn.get("caption") or "").strip()
                 chave = f"{praca}|{aid}"
                 anunciantes[pagina] = anunciantes.get(pagina, 0) + 1
+                # A OBSERVAÇÃO É OUTRA COISA QUE O REGISTRO DO ANÚNCIO.
+                #
+                # `anuncios.jsonl` é um LEDGER: uma linha por anúncio, com
+                # first_seen e last_seen, reescrita a cada rodada. Ele
+                # responde "há quantos dias este anúncio está no ar" e não
+                # responde "o que estava no ar no dia 13". Sem a segunda
+                # resposta não existe "entrou", "saiu", "voltou" nem
+                # "aumentou a pressão" — o detector de mercado comparava
+                # conjuntos que o arquivo nunca guardou.
+                #
+                # Esta série é append-only e diz uma frase só, por linha:
+                # "em <data> a praça X foi consultada e este anúncio estava
+                # presente". Praça não consultada não tem linha — e ausência
+                # de linha NÃO é anúncio derrubado, é praça não verificada.
+                vistos.append({
+                    "snapshot_date": hoje, "praca_id": praca, "ad_id": aid,
+                    "chave": chave, "anunciante": pagina,
+                    "page_id": str(a.get("page_id") or ""),
+                    "consulta": q, "fonte": "meta_ad_library",
+                })
                 if chave in ads:
                     ads[chave]["last_seen_snapshot"] = hoje
                     continue
@@ -188,6 +209,26 @@ def main():
         for r in sorted(ads.values(), key=lambda r: (r["praca_id"], r["anunciante"])):
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
     print(f"\nanuncios.jsonl: {len(ads)} linhas · {sum(1 for r in ads.values() if r['ativo'])} ativos")
+
+    # A SÉRIE DE OBSERVAÇÕES, append-only e nunca reescrita.
+    if vistos:
+        with (SERIE/"anuncios_observados.jsonl").open("a", encoding="utf-8") as f:
+            for r in vistos:
+                f.write(json.dumps(r, ensure_ascii=False) + "\n")
+        # e a rodada em si vira registro: quais praças foram consultadas
+        # hoje. Sem isto, "esta praça não tem linha" fica ambíguo entre
+        # "não foi consultada" e "foi consultada e não havia nada".
+        with (SERIE/"anuncios_rodadas.jsonl").open("a", encoding="utf-8") as f:
+            for pr in sorted(set(pracas)):
+                f.write(json.dumps({
+                    "snapshot_date": hoje, "praca_id": pr,
+                    "anuncios_vistos": sum(1 for v in vistos if v["praca_id"] == pr),
+                    "consultas": sorted({v["consulta"] for v in vistos
+                                         if v["praca_id"] == pr}),
+                    "fonte": "meta_ad_library",
+                }, ensure_ascii=False) + "\n")
+        print(f"anuncios_observados.jsonl: +{len(vistos)} observações · "
+              f"anuncios_rodadas.jsonl: +{len(set(pracas))} praças consultadas")
 
 
 if __name__ == "__main__":

@@ -905,11 +905,55 @@
     }
   },
   "movimentos_do_mercado": {
-    "eventos": [],
+    "eventos": [
+      {
+        "evento_id": "mafra|rodadas_nao_comparaveis|-",
+        "data": "2026-08-13",
+        "praca_id": "mafra",
+        "rotulo": "SC · Mafra",
+        "local_id": null,
+        "entidade_id": null,
+        "tipo": "rodadas_nao_comparaveis",
+        "natureza": "fato",
+        "severidade": "baixa",
+        "titulo": "As duas rodadas de anúncio não se comparam",
+        "fato": "2026-08-07 perguntou 4 consultas e 2026-08-08 perguntou 2; 0 consultas em comum",
+        "por_que_importa": "conjuntos medidos com perguntas diferentes não dizem quem entrou nem quem saiu — a diferença é da coleta, não do mercado",
+        "decisao": "repetir a MESMA lista de consultas na próxima rodada",
+        "fonte": "dados/serie/anuncios_observados.jsonl",
+        "evidencia": {
+          "consultas_antes": [
+            "Instituto Lumière",
+            "OdontoCompany Mafra",
+            "OrthoDontic Mafra",
+            "aparelho ortodôntico Mafra"
+          ],
+          "consultas_agora": [
+            "OdontoCompany",
+            "OrthoDontic"
+          ]
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "alta",
+          "medido": true,
+          "amostra": 35,
+          "janela_dias": null,
+          "medicoes": 2,
+          "fonte": "dados/serie/anuncios_observados.jsonl (2026-08-07 → 2026-08-08)",
+          "a_favor": [],
+          "contra": [
+            "as consultas mudaram entre as rodadas"
+          ],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 35 anúncios no ar, 2 medições"
+        }
+      }
+    ],
     "resumo": {
       "praca_id": "mafra",
       "rotulo": "SC · Mafra",
-      "eventos": 0,
+      "eventos": 1,
       "estado": "linha_de_base",
       "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
     }

@@ -881,12 +881,43 @@
     }
   },
   "movimentos": {
-    "eventos": [],
+    "eventos": [
+      {
+        "evento_id": "porto_alegre|linha_de_base_anuncios|-",
+        "data": "2026-08-13",
+        "praca_id": "porto_alegre",
+        "rotulo": "RS · Porto Alegre",
+        "local_id": null,
+        "entidade_id": null,
+        "tipo": "linha_de_base_anuncios",
+        "natureza": "fato",
+        "severidade": "baixa",
+        "titulo": "Linha de base de anúncios criada",
+        "fato": "primeira medição de anúncios desta praça, em 2026-08-12",
+        "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
+        "decisao": "recoletar na próxima rodada para abrir o delta",
+        "fonte": "dados/serie/anuncios_observados.jsonl",
+        "evidencia": {},
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 160,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/anuncios_observados.jsonl",
+          "a_favor": [],
+          "contra": [],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 160 anúncios no ar, 1 medição"
+        }
+      }
+    ],
     "e_da_cidade": true,
     "resumo": {
       "praca_id": "porto_alegre",
       "rotulo": "RS · Porto Alegre",
-      "eventos": 0,
+      "eventos": 1,
       "estado": "linha_de_base",
       "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
     }

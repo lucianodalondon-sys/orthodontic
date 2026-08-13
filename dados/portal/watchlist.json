@@ -1,0 +1,685 @@
+{
+ "o_que_e": "Os concorrentes que disputam APARELHO e são medidos toda semana por place_id, mais as unidades da rede.",
+ "por_que_existe": "a varredura completa da categoria não devolve o mesmo universo duas vezes — em Cuiabá só 53% das clínicas apareceram nas duas rodadas — e comparar conjunto instável inventa entrada e saída de concorrente",
+ "o_que_nao_e": "não é o mercado inteiro da cidade: é a lista estável que dá para acompanhar de semana em semana, e o que ficou de fora está declarado ao lado",
+ "o_teto_de_verdade": {
+  "candidatas_classificadas": 355,
+  "clinicas_medidas": 3206,
+  "porque": "`produto_do_concorrente.py` carimba os concorrentes que estão na identidade da praça, e a identidade não tem as 140 clínicas da varredura",
+  "o_que_aumentaria": "classificar por produto as clínicas de `categoria.jsonl` que ainda não estão na identidade, começando pelas de maior volume"
+ },
+ "as_duas_velocidades": {
+  "descobrir": "varredura completa da categoria, mensal — acha entrante e reconstrói esta lista",
+  "acompanhar": "esta watchlist, semanal, por place_id"
+ },
+ "medido_em": "2026-08-13",
+ "teto_por_praca": 15,
+ "minimo_de_avaliacoes": 20,
+ "fichas_total": 94,
+ "nossas": 45,
+ "rivais": 49,
+ "pracas": [
+  {
+   "praca_id": "caxias_do_sul",
+   "rotulo": "RS · Caxias do Sul",
+   "nossas": 3,
+   "rivais": 3,
+   "medidas_na_praca": 115,
+   "disputam_aparelho": 3,
+   "cortados_por_teto": [],
+   "fora_por_nao_disputar": [
+    {
+     "nome": "Oral Unic",
+     "avaliacoes": 937
+    },
+    {
+     "nome": "Massocatto Odontologia - Implantes Dentários",
+     "avaliacoes": 909
+    },
+    {
+     "nome": "CaxiasMed Clínica Médica e Odontológica",
+     "avaliacoes": 794
+    },
+    {
+     "nome": "Brunetto Slovinscki Odontologia",
+     "avaliacoes": 683
+    },
+    {
+     "nome": "Instituto Bordin - Odontologia Estética, Próteses e Implantes - CLÍNICA ODONTOLÓGICA",
+     "avaliacoes": 564
+    }
+   ],
+   "porque_fora": "odontologia não é ortodontia: clínica geral, implante e universidade dividem a rua, não o paciente de aparelho"
+  },
+  {
+   "praca_id": "contagem",
+   "rotulo": "MG · Contagem",
+   "nossas": 1,
+   "rivais": 5,
+   "medidas_na_praca": 135,
+   "disputam_aparelho": 6,
+   "cortados_por_teto": [],
+   "fora_por_nao_disputar": [
+    {
+     "nome": "Vitae Center Clínica Médica e Odontológica",
+     "avaliacoes": 3863
+    },
+    {
+     "nome": "ODONTO ART DENTISTA 24 HORAS CONTAGEM",
+     "avaliacoes": 1729
+    },
+    {
+     "nome": "Clínica Elevata - Rede Odonto Eldorado",
+     "avaliacoes": 1294
+    },
+    {
+     "nome": "Odonto Prime São Caetano",
+     "avaliacoes": 940
+    },
+    {
+     "nome": "In Siso",
+     "avaliacoes": 687
+    }
+   ],
+   "porque_fora": "odontologia não é ortodontia: clínica geral, implante e universidade dividem a rua, não o paciente de aparelho"
+  },
+  {
+   "praca_id": "cuiaba",
+   "rotulo": "MT · Cuiabá",
+   "nossas": 3,
+   "rivais": 2,
+   "medidas_na_praca": 145,
+   "disputam_aparelho": 3,
+   "cortados_por_teto": [],
+   "fora_por_nao_disputar": [
+    {
+     "nome": "ODONTO MEDICINA 🦷",
+     "avaliacoes": 1451
+    },
+    {
+     "nome": "Clínica Goya",
+     "avaliacoes": 1352
+    },
+    {
+     "nome": "Enleva Odontologia Integrada",
+     "avaliacoes": 797
+    },
+    {
+     "nome": "IODONTO CENTRO - MIRANDA REIS",
+     "avaliacoes": 779
+    },
+    {
+     "nome": "Odontologia Prado",
+     "avaliacoes": 503
+    }
+   ],
+   "porque_fora": "odontologia não é ortodontia: clínica geral, implante e universidade dividem a rua, não o paciente de aparelho"
+  },
+  {
+   "praca_id": "curitiba",
+   "rotulo": "PR · Curitiba",
+   "nossas": 5,
+   "rivais": 4,
+   "medidas_na_praca": 179,
+   "disputam_aparelho": 4,
+   "cortados_por_teto": [],
+   "fora_por_nao_disputar": [
+    {
+     "nome": "Centro Odontológico Pio XII - Dentista 24h",
+     "avaliacoes": 1843
+    },
+    {
+     "nome": "Dental Curitibana",
+     "avaliacoes": 1097
+    },
+    {
+     "nome": "Clínica Castell",
+     "avaliacoes": 1070
+    },
+    {
+     "nome": "Clínica You Odonto",
+     "avaliacoes": 1012
+    },
+    {
+     "nome": "Dra. Vladja Torno | Facetas em Resina Composta em Curitiba",
+     "avaliacoes": 661
+    }
+   ],
+   "porque_fora": "odontologia não é ortodontia: clínica geral, implante e universidade dividem a rua, não o paciente de aparelho"
+  },
+  {
+   "praca_id": "feira",
+   "rotulo": "BA · Feira de Santana",
+   "nossas": 1,
+   "rivais": 2,
+   "medidas_na_praca": 145,
+   "disputam_aparelho": 2,
+   "cortados_por_teto": [],
+   "fora_por_nao_disputar": [
+    {
+     "nome": "Moisés Suzart | Odontologia Especializada",
+     "avaliacoes": 1298
+    },
+    {
+     "nome": "Odonto Marco - Clinica Odontológica, Dentista e Consultório Odontologico",
+     "avaliacoes": 1268
+    },
+    {
+     "nome": "Clínica Central do Sorriso - Dentista Particular Feira de Santana",
+     "avaliacoes": 960
+    },
+    {
+     "nome": "Vamos Sorrir - Feira de Santana - Rio Branco",
+     "avaliacoes": 826
+    },
+    {
+     "nome": "You Odontologia",
+     "avaliacoes": 663
+    }
+   ],
+   "porque_fora": "odontologia não é ortodontia: clínica geral, implante e universidade dividem a rua, não o paciente de aparelho"
+  },
+  {
+   "praca_id": "florianopolis",
+   "rotulo": "SC · Florianópolis",
+   "nossas": 3,
+   "rivais": 0,
+   "medidas_na_praca": 144,
+   "disputam_aparelho": 0,
+   "cortados_por_teto": [],
+   "fora_por_nao_disputar": [
+    {
+     "nome": "Foco X Radiologia Odontológica - Florianópolis",
+     "avaliacoes": 3297
+    },
+    {
+     "nome": "Odontoclinic Florianópolis",
+     "avaliacoes": 1121
+    },
+    {
+     "nome": "Oral Unic Implantes Florianópolis",
+     "avaliacoes": 915
+    },
+    {
+     "nome": "Blanc Odontologia",
+     "avaliacoes": 759
+    },
+    {
+     "nome": "Innove Odonto Floripa",
+     "avaliacoes": 757
+    }
+   ],
+   "porque_fora": "odontologia não é ortodontia: clínica geral, implante e universidade dividem a rua, não o paciente de aparelho"
+  },
+  {
+   "praca_id": "goiania",
+   "rotulo": "GO · Goiânia",
+   "nossas": 4,
+   "rivais": 2,
+   "medidas_na_praca": 161,
+   "disputam_aparelho": 2,
+   "cortados_por_teto": [],
+   "fora_por_nao_disputar": [
+    {
+     "nome": "Crool Centro Odontológico",
+     "avaliacoes": 4915
+    },
+    {
+     "nome": "Camargo Odontologia",
+     "avaliacoes": 1252
+    },
+    {
+     "nome": "Dra. Letícia Candini e equipe | Lev Odontologia",
+     "avaliacoes": 1145
+    },
+    {
+     "nome": "Vita Implantes - Clínica Odontológica",
+     "avaliacoes": 881
+    },
+    {
+     "nome": "Iceokids | Odontopediatria",
+     "avaliacoes": 865
+    }
+   ],
+   "porque_fora": "odontologia não é ortodontia: clínica geral, implante e universidade dividem a rua, não o paciente de aparelho"
+  },
+  {
+   "praca_id": "imperatriz",
+   "rotulo": "MA · Imperatriz",
+   "nossas": 0,
+   "rivais": 1,
+   "medidas_na_praca": 116,
+   "disputam_aparelho": 1,
+   "cortados_por_teto": [],
+   "fora_por_nao_disputar": [],
+   "porque_fora": "odontologia não é ortodontia: clínica geral, implante e universidade dividem a rua, não o paciente de aparelho"
+  },
+  {
+   "praca_id": "joinville",
+   "rotulo": "SC · Joinville",
+   "nossas": 3,
+   "rivais": 2,
+   "medidas_na_praca": 148,
+   "disputam_aparelho": 2,
+   "cortados_por_teto": [],
+   "fora_por_nao_disputar": [
+    {
+     "nome": "Contraste Radiologia Odontológica | Joinville Centro",
+     "avaliacoes": 2298
+    },
+    {
+     "nome": "DoctorÁgape",
+     "avaliacoes": 686
+    },
+    {
+     "nome": "Odontocompany",
+     "avaliacoes": 568
+    },
+    {
+     "nome": "ODONTOCOT",
+     "avaliacoes": 493
+    },
+    {
+     "nome": "Sorrisus Joinville",
+     "avaliacoes": 432
+    }
+   ],
+   "porque_fora": "odontologia não é ortodontia: clínica geral, implante e universidade dividem a rua, não o paciente de aparelho"
+  },
+  {
+   "praca_id": "juazeiro_do_norte",
+   "rotulo": "CE · Juazeiro do Norte",
+   "nossas": 0,
+   "rivais": 1,
+   "medidas_na_praca": 124,
+   "disputam_aparelho": 1,
+   "cortados_por_teto": [],
+   "fora_por_nao_disputar": [
+    {
+     "nome": "Clínica Dentista Para Todos - Dentista Popular - Tratamento Acessível",
+     "avaliacoes": 356
+    }
+   ],
+   "porque_fora": "odontologia não é ortodontia: clínica geral, implante e universidade dividem a rua, não o paciente de aparelho"
+  },
+  {
+   "praca_id": "londrina",
+   "rotulo": "PR · Londrina",
+   "nossas": 2,
+   "rivais": 3,
+   "medidas_na_praca": 151,
+   "disputam_aparelho": 3,
+   "cortados_por_teto": [],
+   "fora_por_nao_disputar": [
+    {
+     "nome": "Vittallon Odontologia",
+     "avaliacoes": 1073
+    },
+    {
+     "nome": "Clínica Dentista do Povo - Unidade Mais Sorriso - Londrina",
+     "avaliacoes": 946
+    },
+    {
+     "nome": "Clínica Dentária Central Norte",
+     "avaliacoes": 732
+    },
+    {
+     "nome": "Odontoclinic Londrina",
+     "avaliacoes": 544
+    },
+    {
+     "nome": "STAR CLIN SORRISOS",
+     "avaliacoes": 462
+    }
+   ],
+   "porque_fora": "odontologia não é ortodontia: clínica geral, implante e universidade dividem a rua, não o paciente de aparelho"
+  },
+  {
+   "praca_id": "macapa",
+   "rotulo": "AP · Macapá",
+   "nossas": 0,
+   "rivais": 0,
+   "medidas_na_praca": 135,
+   "disputam_aparelho": 0,
+   "cortados_por_teto": [],
+   "fora_por_nao_disputar": [
+    {
+     "nome": "Vamos Sorrir - Odontologia, Dentista em Macapá",
+     "avaliacoes": 427
+    },
+    {
+     "nome": "Odonto Advance - Dr Decio Bisognin e Equipe",
+     "avaliacoes": 249
+    },
+    {
+     "nome": "Clínica Odontológica DENTEBRAS Macapá Centro",
+     "avaliacoes": 226
+    },
+    {
+     "nome": "AmorSaúde Macapá",
+     "avaliacoes": 166
+    },
+    {
+     "nome": "Clinica Perfetha Odontologia Especializada",
+     "avaliacoes": 150
+    }
+   ],
+   "porque_fora": "odontologia não é ortodontia: clínica geral, implante e universidade dividem a rua, não o paciente de aparelho"
+  },
+  {
+   "praca_id": "mafra",
+   "rotulo": "SC · Mafra",
+   "nossas": 1,
+   "rivais": 1,
+   "medidas_na_praca": 87,
+   "disputam_aparelho": 1,
+   "cortados_por_teto": [],
+   "fora_por_nao_disputar": [
+    {
+     "nome": "Susin Odontologia | Dentista Mafra | Lente de contato | Implante | Periodontia | Tratamento de canal",
+     "avaliacoes": 441
+    },
+    {
+     "nome": "OdontoCompany Mafra",
+     "avaliacoes": 339
+    },
+    {
+     "nome": "Clínica Viver Bem",
+     "avaliacoes": 246
+    },
+    {
+     "nome": "Instituto Lumière - Mafra",
+     "avaliacoes": 230
+    },
+    {
+     "nome": "Odontocompany Rio Negro",
+     "avaliacoes": 188
+    }
+   ],
+   "porque_fora": "odontologia não é ortodontia: clínica geral, implante e universidade dividem a rua, não o paciente de aparelho"
+  },
+  {
+   "praca_id": "maraba",
+   "rotulo": "PA · Marabá",
+   "nossas": 0,
+   "rivais": 1,
+   "medidas_na_praca": 90,
+   "disputam_aparelho": 1,
+   "cortados_por_teto": [],
+   "fora_por_nao_disputar": [
+    {
+     "nome": "Odonto Excellence - Marabá",
+     "avaliacoes": 583
+    },
+    {
+     "nome": "Instituto Barros e Bosi Odontologia | Marabá",
+     "avaliacoes": 342
+    },
+    {
+     "nome": "Clínica Odonto Minas Marabá",
+     "avaliacoes": 309
+    },
+    {
+     "nome": "Ryso Odonto Premium",
+     "avaliacoes": 177
+    }
+   ],
+   "porque_fora": "odontologia não é ortodontia: clínica geral, implante e universidade dividem a rua, não o paciente de aparelho"
+  },
+  {
+   "praca_id": "palmas",
+   "rotulo": "TO · Palmas",
+   "nossas": 1,
+   "rivais": 2,
+   "medidas_na_praca": 137,
+   "disputam_aparelho": 2,
+   "cortados_por_teto": [],
+   "fora_por_nao_disputar": [
+    {
+     "nome": "Centro Integrado de Odontologia - CIOT",
+     "avaliacoes": 368
+    },
+    {
+     "nome": "DenteClin - Clínicas Odontológicas - JK | Palmas",
+     "avaliacoes": 288
+    },
+    {
+     "nome": "AmorSaúde Palmas",
+     "avaliacoes": 230
+    },
+    {
+     "nome": "CLIO - Clínica de Imagem Odontológica",
+     "avaliacoes": 220
+    },
+    {
+     "nome": "Clínicas Zanetti - Odontologia Estética e Reabilitação Oral | Palmas | Tocantins TO |",
+     "avaliacoes": 213
+    }
+   ],
+   "porque_fora": "odontologia não é ortodontia: clínica geral, implante e universidade dividem a rua, não o paciente de aparelho"
+  },
+  {
+   "praca_id": "parauapebas",
+   "rotulo": "PA · Parauapebas",
+   "nossas": 0,
+   "rivais": 1,
+   "medidas_na_praca": 93,
+   "disputam_aparelho": 1,
+   "cortados_por_teto": [],
+   "fora_por_nao_disputar": [
+    {
+     "nome": "Brink Dentista",
+     "avaliacoes": 1055
+    },
+    {
+     "nome": "Odonto Minas Parauapebas - Unidade Bairro da Paz",
+     "avaliacoes": 438
+    },
+    {
+     "nome": "Clínica Volte a Sorrir",
+     "avaliacoes": 428
+    },
+    {
+     "nome": "Odonto Minas Cidade Nova",
+     "avaliacoes": 353
+    },
+    {
+     "nome": "Odonto Minas Parauapebas - Unidade Rio Verde",
+     "avaliacoes": 243
+    }
+   ],
+   "porque_fora": "odontologia não é ortodontia: clínica geral, implante e universidade dividem a rua, não o paciente de aparelho"
+  },
+  {
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "nossas": 7,
+   "rivais": 4,
+   "medidas_na_praca": 184,
+   "disputam_aparelho": 4,
+   "cortados_por_teto": [],
+   "fora_por_nao_disputar": [
+    {
+     "nome": "Odonto Clin",
+     "avaliacoes": 893
+    },
+    {
+     "nome": "Integrare Odontologia",
+     "avaliacoes": 769
+    },
+    {
+     "nome": "Dentista Legal",
+     "avaliacoes": 736
+    },
+    {
+     "nome": "Clínica Bela Vista Odontologia",
+     "avaliacoes": 702
+    },
+    {
+     "nome": "Clinica Koelsch",
+     "avaliacoes": 419
+    }
+   ],
+   "porque_fora": "odontologia não é ortodontia: clínica geral, implante e universidade dividem a rua, não o paciente de aparelho"
+  },
+  {
+   "praca_id": "prudente",
+   "rotulo": "SP · Presidente Prudente",
+   "nossas": 1,
+   "rivais": 4,
+   "medidas_na_praca": 121,
+   "disputam_aparelho": 4,
+   "cortados_por_teto": [],
+   "fora_por_nao_disputar": [
+    {
+     "nome": "Bongiovanni Odontologia | Implante Dentário | Dentista | Bairro do Bosque | Presidente Prudente - SP",
+     "avaliacoes": 1071
+    },
+    {
+     "nome": "NEXA Odonto",
+     "avaliacoes": 619
+    },
+    {
+     "nome": "CORE Odontologia Presidente Prudente",
+     "avaliacoes": 291
+    },
+    {
+     "nome": "Clínica Oral Vida",
+     "avaliacoes": 216
+    },
+    {
+     "nome": "Dia Do Sorriso",
+     "avaliacoes": 212
+    }
+   ],
+   "porque_fora": "odontologia não é ortodontia: clínica geral, implante e universidade dividem a rua, não o paciente de aparelho"
+  },
+  {
+   "praca_id": "rio_branco",
+   "rotulo": "AC · Rio Branco",
+   "nossas": 0,
+   "rivais": 1,
+   "medidas_na_praca": 118,
+   "disputam_aparelho": 1,
+   "cortados_por_teto": [],
+   "fora_por_nao_disputar": [],
+   "porque_fora": "odontologia não é ortodontia: clínica geral, implante e universidade dividem a rua, não o paciente de aparelho"
+  },
+  {
+   "praca_id": "rio_de_janeiro",
+   "rotulo": "RJ · Rio de Janeiro",
+   "nossas": 1,
+   "rivais": 4,
+   "medidas_na_praca": 186,
+   "disputam_aparelho": 4,
+   "cortados_por_teto": [],
+   "fora_por_nao_disputar": [
+    {
+     "nome": "Clínica Odontológica Oral 360 Tijuca | Dentista Tijuca | Implantes Dentários",
+     "avaliacoes": 1512
+    },
+    {
+     "nome": "IRio Odontologia - Clínica Odontológica na Barra da Tijuca",
+     "avaliacoes": 1173
+    },
+    {
+     "nome": "Odontoclínica Campo Grande",
+     "avaliacoes": 973
+    },
+    {
+     "nome": "Clínica Arcobelo",
+     "avaliacoes": 741
+    },
+    {
+     "nome": "Clínica Data X",
+     "avaliacoes": 716
+    }
+   ],
+   "porque_fora": "odontologia não é ortodontia: clínica geral, implante e universidade dividem a rua, não o paciente de aparelho"
+  },
+  {
+   "praca_id": "sao_paulo",
+   "rotulo": "SP · São Paulo",
+   "nossas": 4,
+   "rivais": 3,
+   "medidas_na_praca": 188,
+   "disputam_aparelho": 3,
+   "cortados_por_teto": [],
+   "fora_por_nao_disputar": [
+    {
+     "nome": "Sorridents Clínicas Odontológicas Tatuapé São Paulo",
+     "avaliacoes": 1803
+    },
+    {
+     "nome": "Seu Sorriso Odontologia",
+     "avaliacoes": 1181
+    },
+    {
+     "nome": "Odontoclinic",
+     "avaliacoes": 950
+    },
+    {
+     "nome": "Sorridents Clínicas Odontológicas Santa Cecília São Paulo",
+     "avaliacoes": 797
+    },
+    {
+     "nome": "Dentar Odontologia",
+     "avaliacoes": 674
+    }
+   ],
+   "porque_fora": "odontologia não é ortodontia: clínica geral, implante e universidade dividem a rua, não o paciente de aparelho"
+  },
+  {
+   "praca_id": "sorocaba",
+   "rotulo": "SP · Sorocaba",
+   "nossas": 3,
+   "rivais": 1,
+   "medidas_na_praca": 143,
+   "disputam_aparelho": 1,
+   "cortados_por_teto": [],
+   "fora_por_nao_disputar": [
+    {
+     "nome": "OdontoHills - Dentistas de Urgência",
+     "avaliacoes": 1408
+    },
+    {
+     "nome": "Pró Clínica Sorocaba",
+     "avaliacoes": 1055
+    }
+   ],
+   "porque_fora": "odontologia não é ortodontia: clínica geral, implante e universidade dividem a rua, não o paciente de aparelho"
+  },
+  {
+   "praca_id": "uberlandia",
+   "rotulo": "MG · Uberlândia",
+   "nossas": 2,
+   "rivais": 2,
+   "medidas_na_praca": 161,
+   "disputam_aparelho": 2,
+   "cortados_por_teto": [],
+   "fora_por_nao_disputar": [
+    {
+     "nome": "Inove Odontologia e Saúde",
+     "avaliacoes": 763
+    },
+    {
+     "nome": "Oral Unic",
+     "avaliacoes": 705
+    },
+    {
+     "nome": "Clínica Dentista do Povo",
+     "avaliacoes": 694
+    },
+    {
+     "nome": "Primer Odontocenter",
+     "avaliacoes": 677
+    },
+    {
+     "nome": "Sorridents Clínicas Odontológicas Centro Uberlândia",
+     "avaliacoes": 651
+    }
+   ],
+   "porque_fora": "odontologia não é ortodontia: clínica geral, implante e universidade dividem a rua, não o paciente de aparelho"
+  }
+ ]
+}

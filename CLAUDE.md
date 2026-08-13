@@ -128,6 +128,14 @@ python3 scripts/lint_semantico.py                 # frase que a medição já ne
 python3 scripts/build_portal.py
 ```
 
+**A varredura completa DESCOBRE; a watchlist ACOMPANHA.** A varredura da
+categoria não devolve o mesmo universo duas vezes — Cuiabá teve 53% de
+estabilidade entre duas rodadas — então ela roda **por mês**, para achar
+entrante e reconstruir a lista, e nunca serve de base para delta semanal.
+O acompanhamento semanal é sobre `scripts/watchlist.py`: 49 rivais que
+disputam aparelho + as 45 unidades, chaveados por `place_id`, que não
+dependem de o Google repetir a resposta.
+
 A varredura profunda (texto das avaliações, Apify) roda **por mês** e só nas
 lojas onde a ponta acusou movimento — o contador barato decide onde gastar o
 caro. Depois dela: classificar → cruzamento → fila → reteste → rival →

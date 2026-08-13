@@ -746,12 +746,43 @@
     }
   },
   "movimentos": {
-    "eventos": [],
+    "eventos": [
+      {
+        "evento_id": "sao_paulo|linha_de_base_anuncios|-",
+        "data": "2026-08-13",
+        "praca_id": "sao_paulo",
+        "rotulo": "SP · São Paulo",
+        "local_id": null,
+        "entidade_id": null,
+        "tipo": "linha_de_base_anuncios",
+        "natureza": "fato",
+        "severidade": "baixa",
+        "titulo": "Linha de base de anúncios criada",
+        "fato": "primeira medição de anúncios desta praça, em 2026-08-13",
+        "por_que_importa": "movimento de campanha só existe a partir da segunda medição",
+        "decisao": "recoletar na próxima rodada para abrir o delta",
+        "fonte": "dados/serie/anuncios_observados.jsonl",
+        "evidencia": {},
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "media",
+          "medido": true,
+          "amostra": 171,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/serie/anuncios_observados.jsonl",
+          "a_favor": [],
+          "contra": [],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 171 anúncios no ar, 1 medição"
+        }
+      }
+    ],
     "e_da_cidade": true,
     "resumo": {
       "praca_id": "sao_paulo",
       "rotulo": "SP · São Paulo",
-      "eventos": 0,
+      "eventos": 1,
       "estado": "linha_de_base",
       "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
     }
