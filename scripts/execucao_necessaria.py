@@ -128,8 +128,15 @@ def main():
                     },
                     "evidencias": [e["frase"] for e in (j.get("estagios") or [])
                                    if e.get("frase") and e.get("dor")][:3],
+                    # A AMOSTRA ESTAVA NO TEXTO E FORA DO CARIMBO. O item
+                    # dizia "14 de 17 avaliações são de 1 ou 2 estrelas" e o
+                    # carimbo saía com "sem amostra declarada" — o número
+                    # existia, só não estava onde a procedência o lê.
                     "confianca": confianca(
                         "recomendacao",
+                        amostra=(pior or {}).get("avaliacoes"),
+                        unidade_amostra=("avaliação neste momento da jornada",
+                                         "avaliações neste momento da jornada"),
                         fonte="dados/portal/jornada.json",
                         a_favor=[j.get("manchete")] if j.get("manchete") else [],
                         o_que_aumentaria="a próxima medição da jornada"),

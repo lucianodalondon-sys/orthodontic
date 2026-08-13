@@ -324,7 +324,7 @@
           "natureza": "fato",
           "confianca": "media",
           "medido": true,
-          "amostra": 119,
+          "amostra": 117,
           "janela_dias": null,
           "medicoes": 1,
           "fonte": "dados/serie/categoria.jsonl (location da varredura)",
@@ -333,20 +333,20 @@
             "distância é linha reta, não tempo de deslocamento"
           ],
           "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
-          "procedencia": "medido em 119 clínicas com coordenada, 1 medição"
+          "procedencia": "medido em 117 clínicas com coordenada, 1 medição"
         }
       }
     ],
-    "clinicas_com_coordenada": 120,
+    "clinicas_com_coordenada": 118,
     "clinicas_sem_coordenada": 0,
     "raios_declarados_km": [
       1,
       2,
       5
     ],
-    "bairros_medidos": 46,
-    "clinicas_medidas": 120,
-    "sem_bairro_no_endereco": 1,
+    "bairros_medidos": 44,
+    "clinicas_medidas": 118,
+    "sem_bairro_no_endereco": 3,
     "unidades_da_rede": 1,
     "unidades_localizadas": 1,
     "onde_estamos": [
@@ -438,6 +438,32 @@
         "frase": "8 clínicas varridas, e a rede não está aqui"
       },
       {
+        "bairro": "do Bosque",
+        "clinicas": 6,
+        "avaliacoes_somadas": 1309,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Bongiovanni Odontologia | Implante Dentário | Dentista | Bairro do Bosque | Presidente Prudente - SP",
+            "nota": 4.9,
+            "avaliacoes": 1071
+          },
+          {
+            "nome": "CROP - Radiologia Odontológica Presidente Prudente",
+            "nota": 4.9,
+            "avaliacoes": 167
+          },
+          {
+            "nome": "Gou Odonto Presidente Prudente",
+            "nota": 4.7,
+            "avaliacoes": 30
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "6 clínicas varridas, e a rede não está aqui"
+      },
+      {
         "bairro": "Vila Sao Jorge",
         "clinicas": 5,
         "avaliacoes_somadas": 430,
@@ -462,32 +488,6 @@
         ],
         "pouca_amostra": false,
         "frase": "5 clínicas varridas, e a rede não está aqui"
-      },
-      {
-        "bairro": "Bairro do Bosque",
-        "clinicas": 4,
-        "avaliacoes_somadas": 1258,
-        "temos_unidade": false,
-        "nossas": [],
-        "vizinhos_fortes": [
-          {
-            "nome": "Bongiovanni Odontologia | Implante Dentário | Dentista | Bairro do Bosque | Presidente Prudente - SP",
-            "nota": 4.9,
-            "avaliacoes": 1071
-          },
-          {
-            "nome": "CROP - Radiologia Odontológica Presidente Prudente",
-            "nota": 4.9,
-            "avaliacoes": 167
-          },
-          {
-            "nome": "Centro Odontológico Premium COP",
-            "nota": 4.4,
-            "avaliacoes": 19
-          }
-        ],
-        "pouca_amostra": false,
-        "frase": "4 clínicas varridas, e a rede não está aqui"
       },
       {
         "bairro": "Vila do Estadio",
@@ -730,27 +730,6 @@
         "frase": "2 clínicas varridas, e a rede não está aqui"
       },
       {
-        "bairro": "Bosque",
-        "clinicas": 2,
-        "avaliacoes_somadas": 51,
-        "temos_unidade": false,
-        "nossas": [],
-        "vizinhos_fortes": [
-          {
-            "nome": "Gou Odonto Presidente Prudente",
-            "nota": 4.7,
-            "avaliacoes": 30
-          },
-          {
-            "nome": "Dental Odonthomaz",
-            "nota": 5,
-            "avaliacoes": 21
-          }
-        ],
-        "pouca_amostra": true,
-        "frase": "2 clínicas varridas, e a rede não está aqui"
-      },
-      {
         "bairro": "Uep1-S.1",
         "clinicas": 2,
         "avaliacoes_somadas": 23,
@@ -766,27 +745,6 @@
             "nome": "Centro Médico e Odontológico",
             "nota": 4.5,
             "avaliacoes": 10
-          }
-        ],
-        "pouca_amostra": true,
-        "frase": "2 clínicas varridas, e a rede não está aqui"
-      },
-      {
-        "bairro": "Conj. Hab. Ana Jacinta",
-        "clinicas": 2,
-        "avaliacoes_somadas": 4,
-        "temos_unidade": false,
-        "nossas": [],
-        "vizinhos_fortes": [
-          {
-            "nome": "Consultório Odontológico Dr. Itamur - Dra. Gilma Zanin",
-            "nota": 5,
-            "avaliacoes": 3
-          },
-          {
-            "nome": "Harmony Odontologia",
-            "nota": 5,
-            "avaliacoes": 1
           }
         ],
         "pouca_amostra": true,
@@ -908,6 +866,38 @@
         ],
         "pouca_amostra": true,
         "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Jardim Alto da Boa Vista",
+        "clinicas": 1,
+        "avaliacoes_somadas": 41,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "M. MATOS - Cirurgia de Implantes Dentários l Prótese Protocolo l Lentes de Contato Dental l Aparelho Invisalign",
+            "nota": 5,
+            "avaliacoes": 41
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Vila Machadinho",
+        "clinicas": 1,
+        "avaliacoes_somadas": 40,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Visage Beaute - Odontologia Avançada - Dr Fábio L. Pedro & Dra Elisabeth Isoppo",
+            "nota": 5,
+            "avaliacoes": 40
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
       }
     ],
     "bairros_sem_a_rede": [
@@ -964,6 +954,32 @@
         "frase": "8 clínicas varridas, e a rede não está aqui"
       },
       {
+        "bairro": "do Bosque",
+        "clinicas": 6,
+        "avaliacoes_somadas": 1309,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Bongiovanni Odontologia | Implante Dentário | Dentista | Bairro do Bosque | Presidente Prudente - SP",
+            "nota": 4.9,
+            "avaliacoes": 1071
+          },
+          {
+            "nome": "CROP - Radiologia Odontológica Presidente Prudente",
+            "nota": 4.9,
+            "avaliacoes": 167
+          },
+          {
+            "nome": "Gou Odonto Presidente Prudente",
+            "nota": 4.7,
+            "avaliacoes": 30
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "6 clínicas varridas, e a rede não está aqui"
+      },
+      {
         "bairro": "Vila Sao Jorge",
         "clinicas": 5,
         "avaliacoes_somadas": 430,
@@ -988,32 +1004,6 @@
         ],
         "pouca_amostra": false,
         "frase": "5 clínicas varridas, e a rede não está aqui"
-      },
-      {
-        "bairro": "Bairro do Bosque",
-        "clinicas": 4,
-        "avaliacoes_somadas": 1258,
-        "temos_unidade": false,
-        "nossas": [],
-        "vizinhos_fortes": [
-          {
-            "nome": "Bongiovanni Odontologia | Implante Dentário | Dentista | Bairro do Bosque | Presidente Prudente - SP",
-            "nota": 4.9,
-            "avaliacoes": 1071
-          },
-          {
-            "nome": "CROP - Radiologia Odontológica Presidente Prudente",
-            "nota": 4.9,
-            "avaliacoes": 167
-          },
-          {
-            "nome": "Centro Odontológico Premium COP",
-            "nota": 4.4,
-            "avaliacoes": 19
-          }
-        ],
-        "pouca_amostra": false,
-        "frase": "4 clínicas varridas, e a rede não está aqui"
       },
       {
         "bairro": "Vila do Estadio",
@@ -1042,22 +1032,22 @@
         "frase": "4 clínicas varridas, e a rede não está aqui"
       }
     ],
-    "manchete": "46 bairros medidos · a rede está em 1 deles",
+    "manchete": "44 bairros medidos · a rede está em 1 deles",
     "leitura": "O bairro com mais clínicas é Centro, com 31 clínicas varridas, e a rede está lá.",
     "confianca": {
       "natureza": "fato",
       "confianca": "media",
       "medido": true,
-      "amostra": 120,
+      "amostra": 118,
       "janela_dias": null,
       "medicoes": 1,
       "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
       "a_favor": [],
       "contra": [
-        "1 endereços sem bairro legível"
+        "3 endereços sem bairro legível"
       ],
       "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
-      "procedencia": "medido em 120 clínicas varridas, 1 medição"
+      "procedencia": "medido em 118 clínicas varridas, 1 medição"
     }
   },
   "movimentos_do_mercado": {

@@ -384,7 +384,7 @@
           "natureza": "fato",
           "confianca": "media",
           "medido": true,
-          "amostra": 150,
+          "amostra": 148,
           "janela_dias": null,
           "medicoes": 1,
           "fonte": "dados/serie/categoria.jsonl (location da varredura)",
@@ -393,7 +393,7 @@
             "distância é linha reta, não tempo de deslocamento"
           ],
           "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
-          "procedencia": "medido em 150 clínicas com coordenada, 1 medição"
+          "procedencia": "medido em 148 clínicas com coordenada, 1 medição"
         }
       },
       {
@@ -449,7 +449,7 @@
           "natureza": "fato",
           "confianca": "media",
           "medido": true,
-          "amostra": 150,
+          "amostra": 148,
           "janela_dias": null,
           "medicoes": 1,
           "fonte": "dados/serie/categoria.jsonl (location da varredura)",
@@ -458,20 +458,20 @@
             "distância é linha reta, não tempo de deslocamento"
           ],
           "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
-          "procedencia": "medido em 150 clínicas com coordenada, 1 medição"
+          "procedencia": "medido em 148 clínicas com coordenada, 1 medição"
         }
       }
     ],
-    "clinicas_com_coordenada": 151,
+    "clinicas_com_coordenada": 149,
     "clinicas_sem_coordenada": 0,
     "raios_declarados_km": [
       1,
       2,
       5
     ],
-    "bairros_medidos": 42,
-    "clinicas_medidas": 151,
-    "sem_bairro_no_endereco": 0,
+    "bairros_medidos": 41,
+    "clinicas_medidas": 149,
+    "sem_bairro_no_endereco": 2,
     "unidades_da_rede": 2,
     "unidades_localizadas": 2,
     "onde_estamos": [
@@ -672,27 +672,6 @@
         ],
         "pouca_amostra": false,
         "frase": "3 clínicas varridas, e a rede não está aqui"
-      },
-      {
-        "bairro": "Conj. Hab. Violim",
-        "clinicas": 2,
-        "avaliacoes_somadas": 740,
-        "temos_unidade": false,
-        "nossas": [],
-        "vizinhos_fortes": [
-          {
-            "nome": "Clínica Dentária Central Norte",
-            "nota": 4.9,
-            "avaliacoes": 732
-          },
-          {
-            "nome": "Clinics Odontologia Premium Saul Elkind - Dentistas em Londrina | Implantes - Facetas - Próteses - Aparelho Dentário",
-            "nota": 3.5,
-            "avaliacoes": 8
-          }
-        ],
-        "pouca_amostra": true,
-        "frase": "2 clínicas varridas, e a rede não está aqui"
       },
       {
         "bairro": "Antares",
@@ -1000,6 +979,22 @@
         ],
         "pouca_amostra": true,
         "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Vivi Xavier",
+        "clinicas": 1,
+        "avaliacoes_somadas": 83,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "OdontoCompany Saul Elkind",
+            "nota": 3.6,
+            "avaliacoes": 83
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
       }
     ],
     "bairros_sem_a_rede": [
@@ -1134,20 +1129,22 @@
         "frase": "3 clínicas varridas, e a rede não está aqui"
       }
     ],
-    "manchete": "42 bairros medidos · a rede está em 2 deles",
+    "manchete": "41 bairros medidos · a rede está em 2 deles",
     "leitura": "O bairro com mais clínicas é Centro, com 69 clínicas varridas, e a rede está lá.",
     "confianca": {
       "natureza": "fato",
       "confianca": "media",
       "medido": true,
-      "amostra": 151,
+      "amostra": 149,
       "janela_dias": null,
       "medicoes": 1,
       "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
       "a_favor": [],
-      "contra": [],
+      "contra": [
+        "2 endereços sem bairro legível"
+      ],
       "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
-      "procedencia": "medido em 151 clínicas varridas, 1 medição"
+      "procedencia": "medido em 149 clínicas varridas, 1 medição"
     }
   },
   "movimentos_do_mercado": {

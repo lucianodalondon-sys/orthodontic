@@ -1429,10 +1429,12 @@
           "janela_dias": 5,
           "medicoes": 2,
           "fonte": "dados/serie/categoria.jsonl (2026-08-08 → 2026-08-13)",
-          "a_favor": [],
+          "a_favor": [
+            "145 clínicas medidas nas duas rodadas"
+          ],
           "contra": [],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 111 clínicas medidas, 2 medições, 5 dias de janela"
+          "procedencia": "medido em 111 avaliações nesta clínica, 2 medições, 5 dias de janela"
         }
       },
       {
@@ -1453,16 +1455,16 @@
         "evidencia": {},
         "confianca": {
           "natureza": "fato",
-          "confianca": "baixa",
+          "confianca": "media",
           "medido": true,
-          "amostra": null,
+          "amostra": 48,
           "janela_dias": null,
           "medicoes": 1,
           "fonte": "dados/serie/anuncios.jsonl",
           "a_favor": [],
           "contra": [],
           "o_que_aumentaria": null,
-          "procedencia": "sem amostra declarada, 1 medição"
+          "procedencia": "medido em 48 anúncios no ar, 1 medição"
         }
       }
     ],

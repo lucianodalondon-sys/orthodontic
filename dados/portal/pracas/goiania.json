@@ -400,7 +400,7 @@
           "natureza": "fato",
           "confianca": "media",
           "medido": true,
-          "amostra": 160,
+          "amostra": 159,
           "janela_dias": null,
           "medicoes": 1,
           "fonte": "dados/serie/categoria.jsonl (location da varredura)",
@@ -409,7 +409,7 @@
             "distância é linha reta, não tempo de deslocamento"
           ],
           "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
-          "procedencia": "medido em 160 clínicas com coordenada, 1 medição"
+          "procedencia": "medido em 159 clínicas com coordenada, 1 medição"
         }
       },
       {
@@ -470,7 +470,7 @@
           "natureza": "fato",
           "confianca": "media",
           "medido": true,
-          "amostra": 160,
+          "amostra": 159,
           "janela_dias": null,
           "medicoes": 1,
           "fonte": "dados/serie/categoria.jsonl (location da varredura)",
@@ -479,7 +479,7 @@
             "distância é linha reta, não tempo de deslocamento"
           ],
           "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
-          "procedencia": "medido em 160 clínicas com coordenada, 1 medição"
+          "procedencia": "medido em 159 clínicas com coordenada, 1 medição"
         }
       },
       {
@@ -535,7 +535,7 @@
           "natureza": "fato",
           "confianca": "media",
           "medido": true,
-          "amostra": 160,
+          "amostra": 159,
           "janela_dias": null,
           "medicoes": 1,
           "fonte": "dados/serie/categoria.jsonl (location da varredura)",
@@ -544,7 +544,7 @@
             "distância é linha reta, não tempo de deslocamento"
           ],
           "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
-          "procedencia": "medido em 160 clínicas com coordenada, 1 medição"
+          "procedencia": "medido em 159 clínicas com coordenada, 1 medição"
         }
       },
       {
@@ -600,7 +600,7 @@
           "natureza": "fato",
           "confianca": "media",
           "medido": true,
-          "amostra": 160,
+          "amostra": 159,
           "janela_dias": null,
           "medicoes": 1,
           "fonte": "dados/serie/categoria.jsonl (location da varredura)",
@@ -609,20 +609,20 @@
             "distância é linha reta, não tempo de deslocamento"
           ],
           "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
-          "procedencia": "medido em 160 clínicas com coordenada, 1 medição"
+          "procedencia": "medido em 159 clínicas com coordenada, 1 medição"
         }
       }
     ],
-    "clinicas_com_coordenada": 161,
+    "clinicas_com_coordenada": 160,
     "clinicas_sem_coordenada": 0,
     "raios_declarados_km": [
       1,
       2,
       5
     ],
-    "bairros_medidos": 36,
-    "clinicas_medidas": 161,
-    "sem_bairro_no_endereco": 0,
+    "bairros_medidos": 34,
+    "clinicas_medidas": 160,
+    "sem_bairro_no_endereco": 1,
     "unidades_da_rede": 4,
     "unidades_localizadas": 4,
     "onde_estamos": [
@@ -887,6 +887,32 @@
         "frase": "4 clínicas varridas, e a rede não está aqui"
       },
       {
+        "bairro": "Centro",
+        "clinicas": 4,
+        "avaliacoes_somadas": 299,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Novo Sorriso - Odontologia",
+            "nota": 4.9,
+            "avaliacoes": 136
+          },
+          {
+            "nome": "Odontoclinic - Goiânia Centro",
+            "nota": 4.9,
+            "avaliacoes": 119
+          },
+          {
+            "nome": "Dra Ingrid Vilela | Dentista |Clinico Geral | Aparelho Ortodôntico",
+            "nota": 5,
+            "avaliacoes": 37
+          }
+        ],
+        "pouca_amostra": false,
+        "frase": "4 clínicas varridas, e a rede não está aqui"
+      },
+      {
         "bairro": "St. Coimbra",
         "clinicas": 4,
         "avaliacoes_somadas": 79,
@@ -933,32 +959,6 @@
             "nome": "CORUS Odontologia - Implante, Aparelho Ortodontico, Harmonizacao Facial, Dentista, Facetas",
             "nota": 4.8,
             "avaliacoes": 26
-          }
-        ],
-        "pouca_amostra": false,
-        "frase": "3 clínicas varridas, e a rede não está aqui"
-      },
-      {
-        "bairro": "Centro",
-        "clinicas": 3,
-        "avaliacoes_somadas": 262,
-        "temos_unidade": false,
-        "nossas": [],
-        "vizinhos_fortes": [
-          {
-            "nome": "Novo Sorriso - Odontologia",
-            "nota": 4.9,
-            "avaliacoes": 136
-          },
-          {
-            "nome": "Odontoclinic - Goiânia Centro",
-            "nota": 4.9,
-            "avaliacoes": 119
-          },
-          {
-            "nome": "Dra. Tatiana Vieira - Ortodontia",
-            "nota": 5,
-            "avaliacoes": 7
           }
         ],
         "pouca_amostra": false,
@@ -1107,22 +1107,6 @@
         "frase": "1 clínica varrida, e a rede não está aqui"
       },
       {
-        "bairro": "Conj. Vera Cruz",
-        "clinicas": 1,
-        "avaliacoes_somadas": 465,
-        "temos_unidade": false,
-        "nossas": [],
-        "vizinhos_fortes": [
-          {
-            "nome": "Amo Odontologia - Unid. Vera Cruz II",
-            "nota": 4.9,
-            "avaliacoes": 465
-          }
-        ],
-        "pouca_amostra": true,
-        "frase": "1 clínica varrida, e a rede não está aqui"
-      },
-      {
         "bairro": "Capuava",
         "clinicas": 1,
         "avaliacoes_somadas": 244,
@@ -1197,6 +1181,22 @@
         "vizinhos_fortes": [],
         "pouca_amostra": true,
         "frase": "1 clínica varrida, e a unidade da rede está aqui"
+      },
+      {
+        "bairro": "St. Centro Oeste",
+        "clinicas": 1,
+        "avaliacoes_somadas": 128,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "OdontoCompany Marechal Rondon Goiania",
+            "nota": 4.8,
+            "avaliacoes": 128
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
       }
     ],
     "bairros_sem_a_rede": [
@@ -1331,20 +1331,22 @@
         "frase": "5 clínicas varridas, e a rede não está aqui"
       }
     ],
-    "manchete": "36 bairros medidos · a rede está em 4 deles",
+    "manchete": "34 bairros medidos · a rede está em 4 deles",
     "leitura": "O bairro com mais clínicas é St. Marista, com 25 clínicas varridas, e a rede NÃO está lá.",
     "confianca": {
       "natureza": "fato",
       "confianca": "media",
       "medido": true,
-      "amostra": 161,
+      "amostra": 160,
       "janela_dias": null,
       "medicoes": 1,
       "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
       "a_favor": [],
-      "contra": [],
+      "contra": [
+        "1 endereços sem bairro legível"
+      ],
       "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
-      "procedencia": "medido em 161 clínicas varridas, 1 medição"
+      "procedencia": "medido em 160 clínicas varridas, 1 medição"
     }
   },
   "movimentos_do_mercado": {

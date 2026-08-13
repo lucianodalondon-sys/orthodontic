@@ -34,8 +34,11 @@ Uso:
     python3 scripts/nome_da_loja.py
     python3 scripts/nome_da_loja.py --salvar
 """
-import argparse, json, pathlib, re
+import argparse, json, pathlib, re, sys
 from collections import Counter
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from cruzamento import normaliza_bairro
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 IDENT = RAIZ/"dados"/"identidade"
@@ -53,7 +56,10 @@ def bairro_do_endereco(e):
     for i, x in enumerate(partes):
         if re.fullmatch(r".+ - [A-Z]{2}", x) and i > 0:
             b = partes[i-1].split(" - ")[-1].strip()
-            return b if len(b) >= 3 and not re.fullmatch(r"[\d\s\-]+", b) else ""
+            # o mesmo normalizador do mapa de bairros: o nome da loja e a
+            # concentração do bairro têm de falar do mesmo lugar
+            rotulo, _ = normaliza_bairro(b)
+            return rotulo or ""
     return ""
 
 

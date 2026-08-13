@@ -99,10 +99,20 @@ def main():
         vizinhos = [{"nome": k, "vezes_na_frente": v}
                     for k, v in sorted(antes.items(), key=lambda x: -x[1])[:5]]
 
+        # A FRASE NÃO PODE PROMETER MAIS DO QUE A MEDIÇÃO ENTREGA.
+        #
+        # Ela dizia "nem para quem está a 3 km dela". Não foi isso que
+        # medimos: fizemos CINCO buscas com o centro no endereço da clínica
+        # e um viés de 3 km. Não testamos os consumidores dentro do raio, e
+        # o próprio `locationBias` é uma preferência, não uma barreira — o
+        # Google devolve resultado de fora do círculo e devolve. Dizer "nem
+        # para quem está a 3 km" transforma cinco consultas em cobertura
+        # geográfica, que é exatamente o tipo de salto que este projeto
+        # existe para não dar.
         if not aparece:
-            frase = (f"em nenhuma das {conta(de, 'busca testada', 'buscas testadas')} "
-                     f"feitas a partir do próprio endereço a clínica apareceu no "
-                     f"mapa — nem para quem está a {km:g} km dela")
+            frase = (f"não apareceu no mapa em nenhuma das "
+                     f"{conta(de, 'busca testada', 'buscas testadas')} feitas "
+                     f"a partir do próprio endereço")
         elif len(primeiro) == de:
             frase = (f"a clínica é o primeiro resultado nas "
                      f"{conta(de, 'busca testada', 'buscas testadas')} feitas "
@@ -190,7 +200,10 @@ def main():
                           "Paulo apareciam em 0 de 193 buscas da capital e "
                           "aparecem em 10 de 20 quando a busca sai da porta "
                           "de cada uma",
-        "o_que_nao_e": "não é volume de busca; o raio não é área de captação, "
+        "o_que_nao_e": "são cinco buscas por loja, não a cobertura de um "
+                       "raio: o viés de local é uma preferência que damos ao "
+                       "Google, não uma barreira geográfica. Não é volume de "
+                       "busca; o raio não é área de captação, "
                        "porque distância no mapa não é tempo de deslocamento; "
                        "e ficar atrás de um vizinho não é perder paciente "
                        "para ele",

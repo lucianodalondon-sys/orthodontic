@@ -1,6 +1,6 @@
 {
  "o_que_e": "A cidade por dentro: em que bairro cada unidade está, contra quem ela disputa ali, e onde a categoria se concentra sem a rede.",
- "o_que_nao_e": "Não é distância nem deslocamento — não temos coordenada, temos texto de endereço. E concentração de clínicas é oferta, não demanda medida.",
+ "o_que_nao_e": "O bairro sai do TEXTO do endereço: ele agrupa o que a cidade escreve, e não é recorte oficial. A distância está medida — o bloco de território usa as coordenadas reais — mas distância em linha reta não é tempo de deslocamento. E concentração de clínicas é oferta, não demanda.",
  "por_que_existe": "cidade com mais de uma unidade não pode ser lida como um mercado só: Porto Alegre tem 9 unidades, Curitiba 8, e elas podem ter donos diferentes",
  "medido_em": "2026-08-13",
  "minimo_por_bairro": 3,
@@ -93,14 +93,14 @@
       "km": 0.28,
       "avaliacoes": 24,
       "nota": 5,
-      "bairro": "Passo d'Areia"
+      "bairro": "Passo D'Areia"
      },
      "aparelho_mais_proximo": {
       "nome": "Integrar Odontologia",
       "km": 0.38,
       "avaliacoes": 364,
       "nota": 4.9,
-      "bairro": "Passo d'Areia"
+      "bairro": "Passo D'Areia"
      },
      "unidade_da_rede_mais_proxima": {
       "nome": "OrthoDontic",
@@ -1003,7 +1003,7 @@
      "frase": "2 clínicas varridas, e a unidade da rede está aqui"
     },
     {
-     "bairro": "Passo d'Areia",
+     "bairro": "Passo D'Areia",
      "clinicas": 2,
      "avaliacoes_somadas": 388,
      "temos_unidade": false,
@@ -2437,7 +2437,7 @@
       "natureza": "fato",
       "confianca": "media",
       "medido": true,
-      "amostra": 160,
+      "amostra": 159,
       "janela_dias": null,
       "medicoes": 1,
       "fonte": "dados/serie/categoria.jsonl (location da varredura)",
@@ -2446,7 +2446,7 @@
        "distância é linha reta, não tempo de deslocamento"
       ],
       "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
-      "procedencia": "medido em 160 clínicas com coordenada, 1 medição"
+      "procedencia": "medido em 159 clínicas com coordenada, 1 medição"
      }
     },
     {
@@ -2507,7 +2507,7 @@
       "natureza": "fato",
       "confianca": "media",
       "medido": true,
-      "amostra": 160,
+      "amostra": 159,
       "janela_dias": null,
       "medicoes": 1,
       "fonte": "dados/serie/categoria.jsonl (location da varredura)",
@@ -2516,7 +2516,7 @@
        "distância é linha reta, não tempo de deslocamento"
       ],
       "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
-      "procedencia": "medido em 160 clínicas com coordenada, 1 medição"
+      "procedencia": "medido em 159 clínicas com coordenada, 1 medição"
      }
     },
     {
@@ -2572,7 +2572,7 @@
       "natureza": "fato",
       "confianca": "media",
       "medido": true,
-      "amostra": 160,
+      "amostra": 159,
       "janela_dias": null,
       "medicoes": 1,
       "fonte": "dados/serie/categoria.jsonl (location da varredura)",
@@ -2581,7 +2581,7 @@
        "distância é linha reta, não tempo de deslocamento"
       ],
       "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
-      "procedencia": "medido em 160 clínicas com coordenada, 1 medição"
+      "procedencia": "medido em 159 clínicas com coordenada, 1 medição"
      }
     },
     {
@@ -2637,7 +2637,7 @@
       "natureza": "fato",
       "confianca": "media",
       "medido": true,
-      "amostra": 160,
+      "amostra": 159,
       "janela_dias": null,
       "medicoes": 1,
       "fonte": "dados/serie/categoria.jsonl (location da varredura)",
@@ -2646,20 +2646,20 @@
        "distância é linha reta, não tempo de deslocamento"
       ],
       "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
-      "procedencia": "medido em 160 clínicas com coordenada, 1 medição"
+      "procedencia": "medido em 159 clínicas com coordenada, 1 medição"
      }
     }
    ],
-   "clinicas_com_coordenada": 161,
+   "clinicas_com_coordenada": 160,
    "clinicas_sem_coordenada": 0,
    "raios_declarados_km": [
     1,
     2,
     5
    ],
-   "bairros_medidos": 36,
-   "clinicas_medidas": 161,
-   "sem_bairro_no_endereco": 0,
+   "bairros_medidos": 34,
+   "clinicas_medidas": 160,
+   "sem_bairro_no_endereco": 1,
    "unidades_da_rede": 4,
    "unidades_localizadas": 4,
    "onde_estamos": [
@@ -2924,6 +2924,32 @@
      "frase": "4 clínicas varridas, e a rede não está aqui"
     },
     {
+     "bairro": "Centro",
+     "clinicas": 4,
+     "avaliacoes_somadas": 299,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Novo Sorriso - Odontologia",
+       "nota": 4.9,
+       "avaliacoes": 136
+      },
+      {
+       "nome": "Odontoclinic - Goiânia Centro",
+       "nota": 4.9,
+       "avaliacoes": 119
+      },
+      {
+       "nome": "Dra Ingrid Vilela | Dentista |Clinico Geral | Aparelho Ortodôntico",
+       "nota": 5,
+       "avaliacoes": 37
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "4 clínicas varridas, e a rede não está aqui"
+    },
+    {
      "bairro": "St. Coimbra",
      "clinicas": 4,
      "avaliacoes_somadas": 79,
@@ -2970,32 +2996,6 @@
        "nome": "CORUS Odontologia - Implante, Aparelho Ortodontico, Harmonizacao Facial, Dentista, Facetas",
        "nota": 4.8,
        "avaliacoes": 26
-      }
-     ],
-     "pouca_amostra": false,
-     "frase": "3 clínicas varridas, e a rede não está aqui"
-    },
-    {
-     "bairro": "Centro",
-     "clinicas": 3,
-     "avaliacoes_somadas": 262,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Novo Sorriso - Odontologia",
-       "nota": 4.9,
-       "avaliacoes": 136
-      },
-      {
-       "nome": "Odontoclinic - Goiânia Centro",
-       "nota": 4.9,
-       "avaliacoes": 119
-      },
-      {
-       "nome": "Dra. Tatiana Vieira - Ortodontia",
-       "nota": 5,
-       "avaliacoes": 7
       }
      ],
      "pouca_amostra": false,
@@ -3144,22 +3144,6 @@
      "frase": "1 clínica varrida, e a rede não está aqui"
     },
     {
-     "bairro": "Conj. Vera Cruz",
-     "clinicas": 1,
-     "avaliacoes_somadas": 465,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Amo Odontologia - Unid. Vera Cruz II",
-       "nota": 4.9,
-       "avaliacoes": 465
-      }
-     ],
-     "pouca_amostra": true,
-     "frase": "1 clínica varrida, e a rede não está aqui"
-    },
-    {
      "bairro": "Capuava",
      "clinicas": 1,
      "avaliacoes_somadas": 244,
@@ -3234,6 +3218,22 @@
      "vizinhos_fortes": [],
      "pouca_amostra": true,
      "frase": "1 clínica varrida, e a unidade da rede está aqui"
+    },
+    {
+     "bairro": "St. Centro Oeste",
+     "clinicas": 1,
+     "avaliacoes_somadas": 128,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "OdontoCompany Marechal Rondon Goiania",
+       "nota": 4.8,
+       "avaliacoes": 128
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
     }
    ],
    "bairros_sem_a_rede": [
@@ -3368,20 +3368,22 @@
      "frase": "5 clínicas varridas, e a rede não está aqui"
     }
    ],
-   "manchete": "36 bairros medidos · a rede está em 4 deles",
+   "manchete": "34 bairros medidos · a rede está em 4 deles",
    "leitura": "O bairro com mais clínicas é St. Marista, com 25 clínicas varridas, e a rede NÃO está lá.",
    "confianca": {
     "natureza": "fato",
     "confianca": "media",
     "medido": true,
-    "amostra": 161,
+    "amostra": 160,
     "janela_dias": null,
     "medicoes": 1,
     "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
     "a_favor": [],
-    "contra": [],
+    "contra": [
+     "1 endereços sem bairro legível"
+    ],
     "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
-    "procedencia": "medido em 161 clínicas varridas, 1 medição"
+    "procedencia": "medido em 160 clínicas varridas, 1 medição"
    }
   },
   {
@@ -8764,7 +8766,7 @@
       "natureza": "fato",
       "confianca": "media",
       "medido": true,
-      "amostra": 150,
+      "amostra": 148,
       "janela_dias": null,
       "medicoes": 1,
       "fonte": "dados/serie/categoria.jsonl (location da varredura)",
@@ -8773,7 +8775,7 @@
        "distância é linha reta, não tempo de deslocamento"
       ],
       "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
-      "procedencia": "medido em 150 clínicas com coordenada, 1 medição"
+      "procedencia": "medido em 148 clínicas com coordenada, 1 medição"
      }
     },
     {
@@ -8829,7 +8831,7 @@
       "natureza": "fato",
       "confianca": "media",
       "medido": true,
-      "amostra": 150,
+      "amostra": 148,
       "janela_dias": null,
       "medicoes": 1,
       "fonte": "dados/serie/categoria.jsonl (location da varredura)",
@@ -8838,20 +8840,20 @@
        "distância é linha reta, não tempo de deslocamento"
       ],
       "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
-      "procedencia": "medido em 150 clínicas com coordenada, 1 medição"
+      "procedencia": "medido em 148 clínicas com coordenada, 1 medição"
      }
     }
    ],
-   "clinicas_com_coordenada": 151,
+   "clinicas_com_coordenada": 149,
    "clinicas_sem_coordenada": 0,
    "raios_declarados_km": [
     1,
     2,
     5
    ],
-   "bairros_medidos": 42,
-   "clinicas_medidas": 151,
-   "sem_bairro_no_endereco": 0,
+   "bairros_medidos": 41,
+   "clinicas_medidas": 149,
+   "sem_bairro_no_endereco": 2,
    "unidades_da_rede": 2,
    "unidades_localizadas": 2,
    "onde_estamos": [
@@ -9052,27 +9054,6 @@
      ],
      "pouca_amostra": false,
      "frase": "3 clínicas varridas, e a rede não está aqui"
-    },
-    {
-     "bairro": "Conj. Hab. Violim",
-     "clinicas": 2,
-     "avaliacoes_somadas": 740,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Clínica Dentária Central Norte",
-       "nota": 4.9,
-       "avaliacoes": 732
-      },
-      {
-       "nome": "Clinics Odontologia Premium Saul Elkind - Dentistas em Londrina | Implantes - Facetas - Próteses - Aparelho Dentário",
-       "nota": 3.5,
-       "avaliacoes": 8
-      }
-     ],
-     "pouca_amostra": true,
-     "frase": "2 clínicas varridas, e a rede não está aqui"
     },
     {
      "bairro": "Antares",
@@ -9380,6 +9361,22 @@
      ],
      "pouca_amostra": true,
      "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Vivi Xavier",
+     "clinicas": 1,
+     "avaliacoes_somadas": 83,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "OdontoCompany Saul Elkind",
+       "nota": 3.6,
+       "avaliacoes": 83
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
     }
    ],
    "bairros_sem_a_rede": [
@@ -9514,20 +9511,22 @@
      "frase": "3 clínicas varridas, e a rede não está aqui"
     }
    ],
-   "manchete": "42 bairros medidos · a rede está em 2 deles",
+   "manchete": "41 bairros medidos · a rede está em 2 deles",
    "leitura": "O bairro com mais clínicas é Centro, com 69 clínicas varridas, e a rede está lá.",
    "confianca": {
     "natureza": "fato",
     "confianca": "media",
     "medido": true,
-    "amostra": 151,
+    "amostra": 149,
     "janela_dias": null,
     "medicoes": 1,
     "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
     "a_favor": [],
-    "contra": [],
+    "contra": [
+     "2 endereços sem bairro legível"
+    ],
     "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
-    "procedencia": "medido em 151 clínicas varridas, 1 medição"
+    "procedencia": "medido em 149 clínicas varridas, 1 medição"
    }
   },
   {
@@ -10435,14 +10434,14 @@
       "km": 0.06,
       "avaliacoes": 34,
       "nota": 5,
-      "bairro": "Bairro da Glória"
+      "bairro": "da Glória"
      },
      "aparelho_mais_proximo": {
       "nome": "ODONTO ART DENTISTA 24 HORAS CONTAGEM",
       "km": 0.07,
       "avaliacoes": 1729,
       "nota": 4.8,
-      "bairro": "Bairro da Glória"
+      "bairro": "da Glória"
      },
      "unidade_da_rede_mais_proxima": null,
      "raios": {
@@ -10530,7 +10529,7 @@
      "frase": "53 clínicas varridas, e a unidade da rede está aqui"
     },
     {
-     "bairro": "Bairro da Glória",
+     "bairro": "da Glória",
      "clinicas": 13,
      "avaliacoes_somadas": 3558,
      "temos_unidade": false,
@@ -11011,7 +11010,7 @@
    ],
    "bairros_sem_a_rede": [
     {
-     "bairro": "Bairro da Glória",
+     "bairro": "da Glória",
      "clinicas": 13,
      "avaliacoes_somadas": 3558,
      "temos_unidade": false,
@@ -11192,12 +11191,12 @@
        "da_rede": 0
       },
       "2km": {
-       "clinicas": 103,
+       "clinicas": 102,
        "de_aparelho": 15,
        "da_rede": 0
       },
       "5km": {
-       "clinicas": 139,
+       "clinicas": 138,
        "de_aparelho": 20,
        "da_rede": 0
       }
@@ -11208,7 +11207,7 @@
       "natureza": "fato",
       "confianca": "media",
       "medido": true,
-      "amostra": 142,
+      "amostra": 141,
       "janela_dias": null,
       "medicoes": 1,
       "fonte": "dados/serie/categoria.jsonl (location da varredura)",
@@ -11217,20 +11216,20 @@
        "distância é linha reta, não tempo de deslocamento"
       ],
       "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
-      "procedencia": "medido em 142 clínicas com coordenada, 1 medição"
+      "procedencia": "medido em 141 clínicas com coordenada, 1 medição"
      }
     }
    ],
-   "clinicas_com_coordenada": 143,
+   "clinicas_com_coordenada": 142,
    "clinicas_sem_coordenada": 0,
    "raios_declarados_km": [
     1,
     2,
     5
    ],
-   "bairros_medidos": 21,
-   "clinicas_medidas": 143,
-   "sem_bairro_no_endereco": 2,
+   "bairros_medidos": 18,
+   "clinicas_medidas": 142,
+   "sem_bairro_no_endereco": 3,
    "unidades_da_rede": 1,
    "unidades_localizadas": 1,
    "onde_estamos": [
@@ -11297,8 +11296,8 @@
     },
     {
      "bairro": "Kalilândia",
-     "clinicas": 8,
-     "avaliacoes_somadas": 1206,
+     "clinicas": 12,
+     "avaliacoes_somadas": 1401,
      "temos_unidade": false,
      "nossas": [],
      "vizinhos_fortes": [
@@ -11308,18 +11307,18 @@
        "avaliacoes": 960
       },
       {
+       "nome": "Odonto Riso - Clínica Odontológica",
+       "nota": 3.9,
+       "avaliacoes": 168
+      },
+      {
        "nome": "Lumière Instituto de Odontologia",
        "nota": 5,
        "avaliacoes": 157
-      },
-      {
-       "nome": "Clínica Odontológica NEOCENTER- Drº Arilson Silva Pereira",
-       "nota": 5,
-       "avaliacoes": 31
       }
      ],
      "pouca_amostra": false,
-     "frase": "8 clínicas varridas, e a rede não está aqui"
+     "frase": "12 clínicas varridas, e a rede não está aqui"
     },
     {
      "bairro": "São JOÃO",
@@ -11372,32 +11371,6 @@
      ],
      "pouca_amostra": false,
      "frase": "4 clínicas varridas, e a rede não está aqui"
-    },
-    {
-     "bairro": "Kalilandia",
-     "clinicas": 3,
-     "avaliacoes_somadas": 193,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Odonto Riso - Clínica Odontológica",
-       "nota": 3.9,
-       "avaliacoes": 168
-      },
-      {
-       "nome": "Inovare Odontologia Especializada",
-       "nota": 4.8,
-       "avaliacoes": 25
-      },
-      {
-       "nome": "Dra. Ana Karina Britto Guimarães",
-       "nota": null,
-       "avaliacoes": null
-      }
-     ],
-     "pouca_amostra": false,
-     "frase": "3 clínicas varridas, e a rede não está aqui"
     },
     {
      "bairro": "Ponto Central",
@@ -11573,22 +11546,6 @@
      "frase": "1 clínica varrida, e a rede não está aqui"
     },
     {
-     "bairro": "Rua Nova",
-     "clinicas": 1,
-     "avaliacoes_somadas": 48,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Clidentes Clínica Odontológica",
-       "nota": 5,
-       "avaliacoes": 48
-      }
-     ],
-     "pouca_amostra": true,
-     "frase": "1 clínica varrida, e a rede não está aqui"
-    },
-    {
      "bairro": "Serraria Brasil",
      "clinicas": 1,
      "avaliacoes_somadas": 26,
@@ -11667,22 +11624,6 @@
      ],
      "pouca_amostra": true,
      "frase": "1 clínica varrida, e a rede não está aqui"
-    },
-    {
-     "bairro": "kalilandia",
-     "clinicas": 1,
-     "avaliacoes_somadas": 2,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Dra.Jamile Brito Ribeiro",
-       "nota": 5,
-       "avaliacoes": 2
-      }
-     ],
-     "pouca_amostra": true,
-     "frase": "1 clínica varrida, e a rede não está aqui"
     }
    ],
    "bairros_sem_a_rede": [
@@ -11714,8 +11655,8 @@
     },
     {
      "bairro": "Kalilândia",
-     "clinicas": 8,
-     "avaliacoes_somadas": 1206,
+     "clinicas": 12,
+     "avaliacoes_somadas": 1401,
      "temos_unidade": false,
      "nossas": [],
      "vizinhos_fortes": [
@@ -11725,18 +11666,18 @@
        "avaliacoes": 960
       },
       {
+       "nome": "Odonto Riso - Clínica Odontológica",
+       "nota": 3.9,
+       "avaliacoes": 168
+      },
+      {
        "nome": "Lumière Instituto de Odontologia",
        "nota": 5,
        "avaliacoes": 157
-      },
-      {
-       "nome": "Clínica Odontológica NEOCENTER- Drº Arilson Silva Pereira",
-       "nota": 5,
-       "avaliacoes": 31
       }
      ],
      "pouca_amostra": false,
-     "frase": "8 clínicas varridas, e a rede não está aqui"
+     "frase": "12 clínicas varridas, e a rede não está aqui"
     },
     {
      "bairro": "São JOÃO",
@@ -11791,48 +11732,48 @@
      "frase": "4 clínicas varridas, e a rede não está aqui"
     },
     {
-     "bairro": "Kalilandia",
+     "bairro": "Ponto Central",
      "clinicas": 3,
-     "avaliacoes_somadas": 193,
+     "avaliacoes_somadas": 170,
      "temos_unidade": false,
      "nossas": [],
      "vizinhos_fortes": [
       {
-       "nome": "Odonto Riso - Clínica Odontológica",
-       "nota": 3.9,
-       "avaliacoes": 168
+       "nome": "COB Odontologia Integrada | Implante Dentário | Invisalign | Ponto Central | Feira de Santana - BA",
+       "nota": 5,
+       "avaliacoes": 137
       },
       {
-       "nome": "Inovare Odontologia Especializada",
-       "nota": 4.8,
-       "avaliacoes": 25
+       "nome": "Dra Caroline Lima Odontologia - Dentista em Feira de Santana",
+       "nota": 5,
+       "avaliacoes": 30
       },
       {
-       "nome": "Dra. Ana Karina Britto Guimarães",
-       "nota": null,
-       "avaliacoes": null
+       "nome": "Dentista em Feira de Santana - Clínica Priorize - Medicina e Odontologia",
+       "nota": 5,
+       "avaliacoes": 3
       }
      ],
      "pouca_amostra": false,
      "frase": "3 clínicas varridas, e a rede não está aqui"
     }
    ],
-   "manchete": "21 bairros medidos · a rede está em 1 deles",
+   "manchete": "18 bairros medidos · a rede está em 1 deles",
    "leitura": "O bairro com mais clínicas é Centro, com 84 clínicas varridas, e a rede está lá.",
    "confianca": {
     "natureza": "fato",
     "confianca": "media",
     "medido": true,
-    "amostra": 143,
+    "amostra": 142,
     "janela_dias": null,
     "medicoes": 1,
     "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
     "a_favor": [],
     "contra": [
-     "2 endereços sem bairro legível"
+     "3 endereços sem bairro legível"
     ],
     "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
-    "procedencia": "medido em 143 clínicas varridas, 1 medição"
+    "procedencia": "medido em 142 clínicas varridas, 1 medição"
    }
   },
   {
@@ -11870,12 +11811,12 @@
        "da_rede": 0
       },
       "2km": {
-       "clinicas": 58,
+       "clinicas": 56,
        "de_aparelho": 9,
        "da_rede": 0
       },
       "5km": {
-       "clinicas": 73,
+       "clinicas": 70,
        "de_aparelho": 11,
        "da_rede": 0
       }
@@ -11886,7 +11827,7 @@
       "natureza": "fato",
       "confianca": "media",
       "medido": true,
-      "amostra": 73,
+      "amostra": 70,
       "janela_dias": null,
       "medicoes": 1,
       "fonte": "dados/serie/categoria.jsonl (location da varredura)",
@@ -11895,20 +11836,20 @@
        "distância é linha reta, não tempo de deslocamento"
       ],
       "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
-      "procedencia": "medido em 73 clínicas com coordenada, 1 medição"
+      "procedencia": "medido em 70 clínicas com coordenada, 1 medição"
      }
     }
    ],
-   "clinicas_com_coordenada": 74,
+   "clinicas_com_coordenada": 71,
    "clinicas_sem_coordenada": 0,
    "raios_declarados_km": [
     1,
     2,
     5
    ],
-   "bairros_medidos": 18,
-   "clinicas_medidas": 74,
-   "sem_bairro_no_endereco": 13,
+   "bairros_medidos": 11,
+   "clinicas_medidas": 71,
+   "sem_bairro_no_endereco": 16,
    "unidades_da_rede": 1,
    "unidades_localizadas": 1,
    "onde_estamos": [
@@ -12000,6 +11941,32 @@
      "frase": "12 clínicas varridas, e a unidade da rede está aqui"
     },
     {
+     "bairro": "Bom Jesus",
+     "clinicas": 5,
+     "avaliacoes_somadas": 215,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odontocompany Rio Negro",
+       "nota": 4.7,
+       "avaliacoes": 188
+      },
+      {
+       "nome": "Inove Dental",
+       "nota": 5,
+       "avaliacoes": 16
+      },
+      {
+       "nome": "Dra Suellen Ningelski",
+       "nota": 5,
+       "avaliacoes": 11
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "5 clínicas varridas, e a rede não está aqui"
+    },
+    {
      "bairro": "Vila Buenos Aires",
      "clinicas": 4,
      "avaliacoes_somadas": 22,
@@ -12024,32 +11991,6 @@
      ],
      "pouca_amostra": false,
      "frase": "4 clínicas varridas, e a rede não está aqui"
-    },
-    {
-     "bairro": "Bairro Bom Jesus",
-     "clinicas": 3,
-     "avaliacoes_somadas": 188,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Odontocompany Rio Negro",
-       "nota": 4.7,
-       "avaliacoes": 188
-      },
-      {
-       "nome": "Dr Fernando Eduardo Wielewski",
-       "nota": null,
-       "avaliacoes": null
-      },
-      {
-       "nome": "Francine Malluta Valério",
-       "nota": null,
-       "avaliacoes": null
-      }
-     ],
-     "pouca_amostra": false,
-     "frase": "3 clínicas varridas, e a rede não está aqui"
     },
     {
      "bairro": "Campo do Gado",
@@ -12120,6 +12061,48 @@
      "frase": "2 clínicas varridas, e a rede não está aqui"
     },
     {
+     "bairro": "Jardim do Moinho",
+     "clinicas": 2,
+     "avaliacoes_somadas": 5,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odontologia Dra. Ana Maria Bauer",
+       "nota": 5,
+       "avaliacoes": 3
+      },
+      {
+       "nome": "Odontologia Dra Aline Aparecido Schafaschek",
+       "nota": 5,
+       "avaliacoes": 2
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
+     "bairro": "Alto",
+     "clinicas": 2,
+     "avaliacoes_somadas": 3,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odontologia Dr. Marcelo Werner",
+       "nota": 5,
+       "avaliacoes": 2
+      },
+      {
+       "nome": "Odontologia Meister",
+       "nota": 1,
+       "avaliacoes": 1
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "2 clínicas varridas, e a rede não está aqui"
+    },
+    {
      "bairro": "Jardim América",
      "clinicas": 2,
      "avaliacoes_somadas": 0,
@@ -12139,150 +12122,6 @@
      ],
      "pouca_amostra": true,
      "frase": "2 clínicas varridas, e a rede não está aqui"
-    },
-    {
-     "bairro": "Bom Jesus",
-     "clinicas": 1,
-     "avaliacoes_somadas": 16,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Inove Dental",
-       "nota": 5,
-       "avaliacoes": 16
-      }
-     ],
-     "pouca_amostra": true,
-     "frase": "1 clínica varrida, e a rede não está aqui"
-    },
-    {
-     "bairro": "bom jesus",
-     "clinicas": 1,
-     "avaliacoes_somadas": 11,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Dra Suellen Ningelski",
-       "nota": 5,
-       "avaliacoes": 11
-      }
-     ],
-     "pouca_amostra": true,
-     "frase": "1 clínica varrida, e a rede não está aqui"
-    },
-    {
-     "bairro": "sala 6",
-     "clinicas": 1,
-     "avaliacoes_somadas": 9,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "RF ODONTOLOGIA E HARMONIZAÇÃO OROFACIAL",
-       "nota": 5,
-       "avaliacoes": 9
-      }
-     ],
-     "pouca_amostra": true,
-     "frase": "1 clínica varrida, e a rede não está aqui"
-    },
-    {
-     "bairro": "Jardim do Moinho",
-     "clinicas": 1,
-     "avaliacoes_somadas": 3,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Odontologia Dra. Ana Maria Bauer",
-       "nota": 5,
-       "avaliacoes": 3
-      }
-     ],
-     "pouca_amostra": true,
-     "frase": "1 clínica varrida, e a rede não está aqui"
-    },
-    {
-     "bairro": "Jardim Moinho",
-     "clinicas": 1,
-     "avaliacoes_somadas": 2,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Odontologia Dra Aline Aparecido Schafaschek",
-       "nota": 5,
-       "avaliacoes": 2
-      }
-     ],
-     "pouca_amostra": true,
-     "frase": "1 clínica varrida, e a rede não está aqui"
-    },
-    {
-     "bairro": "Alto",
-     "clinicas": 1,
-     "avaliacoes_somadas": 2,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Odontologia Dr. Marcelo Werner",
-       "nota": 5,
-       "avaliacoes": 2
-      }
-     ],
-     "pouca_amostra": true,
-     "frase": "1 clínica varrida, e a rede não está aqui"
-    },
-    {
-     "bairro": "alto",
-     "clinicas": 1,
-     "avaliacoes_somadas": 1,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Odontologia Meister",
-       "nota": 1,
-       "avaliacoes": 1
-      }
-     ],
-     "pouca_amostra": true,
-     "frase": "1 clínica varrida, e a rede não está aqui"
-    },
-    {
-     "bairro": "numero 352",
-     "clinicas": 1,
-     "avaliacoes_somadas": 1,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Odontologia",
-       "nota": 5,
-       "avaliacoes": 1
-      }
-     ],
-     "pouca_amostra": true,
-     "frase": "1 clínica varrida, e a rede não está aqui"
-    },
-    {
-     "bairro": "R. Cel. Joaquim Teixeira Sabóia",
-     "clinicas": 1,
-     "avaliacoes_somadas": 0,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Dra.Fernanda Tschoeke",
-       "nota": null,
-       "avaliacoes": null
-      }
-     ],
-     "pouca_amostra": true,
-     "frase": "1 clínica varrida, e a rede não está aqui"
     }
    ],
    "bairros_sem_a_rede": [
@@ -12339,6 +12178,32 @@
      "frase": "14 clínicas varridas, e a rede não está aqui"
     },
     {
+     "bairro": "Bom Jesus",
+     "clinicas": 5,
+     "avaliacoes_somadas": 215,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odontocompany Rio Negro",
+       "nota": 4.7,
+       "avaliacoes": 188
+      },
+      {
+       "nome": "Inove Dental",
+       "nota": 5,
+       "avaliacoes": 16
+      },
+      {
+       "nome": "Dra Suellen Ningelski",
+       "nota": 5,
+       "avaliacoes": 11
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "5 clínicas varridas, e a rede não está aqui"
+    },
+    {
      "bairro": "Vila Buenos Aires",
      "clinicas": 4,
      "avaliacoes_somadas": 22,
@@ -12363,32 +12228,6 @@
      ],
      "pouca_amostra": false,
      "frase": "4 clínicas varridas, e a rede não está aqui"
-    },
-    {
-     "bairro": "Bairro Bom Jesus",
-     "clinicas": 3,
-     "avaliacoes_somadas": 188,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Odontocompany Rio Negro",
-       "nota": 4.7,
-       "avaliacoes": 188
-      },
-      {
-       "nome": "Dr Fernando Eduardo Wielewski",
-       "nota": null,
-       "avaliacoes": null
-      },
-      {
-       "nome": "Francine Malluta Valério",
-       "nota": null,
-       "avaliacoes": null
-      }
-     ],
-     "pouca_amostra": false,
-     "frase": "3 clínicas varridas, e a rede não está aqui"
     },
     {
      "bairro": "Campo do Gado",
@@ -12417,22 +12256,22 @@
      "frase": "3 clínicas varridas, e a rede não está aqui"
     }
    ],
-   "manchete": "18 bairros medidos · a rede está em 1 deles",
+   "manchete": "11 bairros medidos · a rede está em 1 deles",
    "leitura": "O bairro com mais clínicas é Centro, com 23 clínicas varridas, e a rede NÃO está lá.",
    "confianca": {
     "natureza": "fato",
     "confianca": "media",
     "medido": true,
-    "amostra": 74,
+    "amostra": 71,
     "janela_dias": null,
     "medicoes": 1,
     "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
     "a_favor": [],
     "contra": [
-     "13 endereços sem bairro legível"
+     "16 endereços sem bairro legível"
     ],
     "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
-    "procedencia": "medido em 74 clínicas varridas, 1 medição"
+    "procedencia": "medido em 71 clínicas varridas, 1 medição"
    }
   },
   {
@@ -12465,17 +12304,17 @@
      "unidade_da_rede_mais_proxima": null,
      "raios": {
       "1km": {
-       "clinicas": 34,
+       "clinicas": 30,
        "de_aparelho": 2,
        "da_rede": 0
       },
       "2km": {
-       "clinicas": 64,
+       "clinicas": 59,
        "de_aparelho": 6,
        "da_rede": 0
       },
       "5km": {
-       "clinicas": 108,
+       "clinicas": 103,
        "de_aparelho": 12,
        "da_rede": 0
       }
@@ -12486,7 +12325,7 @@
       "natureza": "fato",
       "confianca": "media",
       "medido": true,
-      "amostra": 132,
+      "amostra": 127,
       "janela_dias": null,
       "medicoes": 1,
       "fonte": "dados/serie/categoria.jsonl (location da varredura)",
@@ -12495,20 +12334,20 @@
        "distância é linha reta, não tempo de deslocamento"
       ],
       "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
-      "procedencia": "medido em 132 clínicas com coordenada, 1 medição"
+      "procedencia": "medido em 127 clínicas com coordenada, 1 medição"
      }
     }
    ],
-   "clinicas_com_coordenada": 133,
+   "clinicas_com_coordenada": 128,
    "clinicas_sem_coordenada": 0,
    "raios_declarados_km": [
     1,
     2,
     5
    ],
-   "bairros_medidos": 17,
-   "clinicas_medidas": 133,
-   "sem_bairro_no_endereco": 4,
+   "bairros_medidos": 14,
+   "clinicas_medidas": 128,
+   "sem_bairro_no_endereco": 9,
    "unidades_da_rede": 1,
    "unidades_localizadas": 1,
    "onde_estamos": [
@@ -12575,8 +12414,8 @@
     },
     {
      "bairro": "Centro",
-     "clinicas": 5,
-     "avaliacoes_somadas": 279,
+     "clinicas": 7,
+     "avaliacoes_somadas": 373,
      "temos_unidade": false,
      "nossas": [],
      "vizinhos_fortes": [
@@ -12586,18 +12425,18 @@
        "avaliacoes": 230
       },
       {
+       "nome": "Aline Pires Odontologia Especializada",
+       "nota": 5,
+       "avaliacoes": 82
+      },
+      {
        "nome": "Dr. Eklésio Otoni – Dentista em Palmas",
        "nota": 4.7,
        "avaliacoes": 20
-      },
-      {
-       "nome": "Leani Odontologia",
-       "nota": 5,
-       "avaliacoes": 16
       }
      ],
      "pouca_amostra": false,
-     "frase": "5 clínicas varridas, e a rede não está aqui"
+     "frase": "7 clínicas varridas, e a rede não está aqui"
     },
     {
      "bairro": "Jardim Aureny III (Taquaralto)",
@@ -12624,53 +12463,6 @@
      ],
      "pouca_amostra": false,
      "frase": "4 clínicas varridas, e a rede não está aqui"
-    },
-    {
-     "bairro": "104 Sul",
-     "clinicas": 4,
-     "avaliacoes_somadas": 124,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Odonto Fama Implante",
-       "nota": 4.8,
-       "avaliacoes": 111
-      },
-      {
-       "nome": "CR orto & implante especializada",
-       "nota": 5,
-       "avaliacoes": 9
-      },
-      {
-       "nome": "Dente Palmas",
-       "nota": 3,
-       "avaliacoes": 2
-      }
-     ],
-     "pouca_amostra": false,
-     "frase": "4 clínicas varridas, e a rede não está aqui"
-    },
-    {
-     "bairro": "centro",
-     "clinicas": 2,
-     "avaliacoes_somadas": 94,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Aline Pires Odontologia Especializada",
-       "nota": 5,
-       "avaliacoes": 82
-      },
-      {
-       "nome": "Medici Odontologia",
-       "nota": 5,
-       "avaliacoes": 12
-      }
-     ],
-     "pouca_amostra": true,
-     "frase": "2 clínicas varridas, e a rede não está aqui"
     },
     {
      "bairro": "Centro (Taquaralto)",
@@ -12762,22 +12554,6 @@
        "nome": "Lemos Pelissari - Clinica Odontologica",
        "nota": 4.8,
        "avaliacoes": 64
-      }
-     ],
-     "pouca_amostra": true,
-     "frase": "1 clínica varrida, e a rede não está aqui"
-    },
-    {
-     "bairro": "103 Sul",
-     "clinicas": 1,
-     "avaliacoes_somadas": 47,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Dr. Henrique Arimatéa | Dentista em Palmas",
-       "nota": 4.9,
-       "avaliacoes": 47
       }
      ],
      "pouca_amostra": true,
@@ -12893,8 +12669,8 @@
     },
     {
      "bairro": "Centro",
-     "clinicas": 5,
-     "avaliacoes_somadas": 279,
+     "clinicas": 7,
+     "avaliacoes_somadas": 373,
      "temos_unidade": false,
      "nossas": [],
      "vizinhos_fortes": [
@@ -12904,18 +12680,18 @@
        "avaliacoes": 230
       },
       {
+       "nome": "Aline Pires Odontologia Especializada",
+       "nota": 5,
+       "avaliacoes": 82
+      },
+      {
        "nome": "Dr. Eklésio Otoni – Dentista em Palmas",
        "nota": 4.7,
        "avaliacoes": 20
-      },
-      {
-       "nome": "Leani Odontologia",
-       "nota": 5,
-       "avaliacoes": 16
       }
      ],
      "pouca_amostra": false,
-     "frase": "5 clínicas varridas, e a rede não está aqui"
+     "frase": "7 clínicas varridas, e a rede não está aqui"
     },
     {
      "bairro": "Jardim Aureny III (Taquaralto)",
@@ -12942,50 +12718,24 @@
      ],
      "pouca_amostra": false,
      "frase": "4 clínicas varridas, e a rede não está aqui"
-    },
-    {
-     "bairro": "104 Sul",
-     "clinicas": 4,
-     "avaliacoes_somadas": 124,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Odonto Fama Implante",
-       "nota": 4.8,
-       "avaliacoes": 111
-      },
-      {
-       "nome": "CR orto & implante especializada",
-       "nota": 5,
-       "avaliacoes": 9
-      },
-      {
-       "nome": "Dente Palmas",
-       "nota": 3,
-       "avaliacoes": 2
-      }
-     ],
-     "pouca_amostra": false,
-     "frase": "4 clínicas varridas, e a rede não está aqui"
     }
    ],
-   "manchete": "17 bairros medidos · a rede está em 1 deles",
+   "manchete": "14 bairros medidos · a rede está em 1 deles",
    "leitura": "O bairro com mais clínicas é Plano Diretor Sul, com 83 clínicas varridas, e a rede NÃO está lá.",
    "confianca": {
     "natureza": "fato",
     "confianca": "media",
     "medido": true,
-    "amostra": 133,
+    "amostra": 128,
     "janela_dias": null,
     "medicoes": 1,
     "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
     "a_favor": [],
     "contra": [
-     "4 endereços sem bairro legível"
+     "9 endereços sem bairro legível"
     ],
     "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
-    "procedencia": "medido em 133 clínicas varridas, 1 medição"
+    "procedencia": "medido em 128 clínicas varridas, 1 medição"
    }
   },
   {
@@ -13039,7 +12789,7 @@
       "natureza": "fato",
       "confianca": "media",
       "medido": true,
-      "amostra": 119,
+      "amostra": 117,
       "janela_dias": null,
       "medicoes": 1,
       "fonte": "dados/serie/categoria.jsonl (location da varredura)",
@@ -13048,20 +12798,20 @@
        "distância é linha reta, não tempo de deslocamento"
       ],
       "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
-      "procedencia": "medido em 119 clínicas com coordenada, 1 medição"
+      "procedencia": "medido em 117 clínicas com coordenada, 1 medição"
      }
     }
    ],
-   "clinicas_com_coordenada": 120,
+   "clinicas_com_coordenada": 118,
    "clinicas_sem_coordenada": 0,
    "raios_declarados_km": [
     1,
     2,
     5
    ],
-   "bairros_medidos": 46,
-   "clinicas_medidas": 120,
-   "sem_bairro_no_endereco": 1,
+   "bairros_medidos": 44,
+   "clinicas_medidas": 118,
+   "sem_bairro_no_endereco": 3,
    "unidades_da_rede": 1,
    "unidades_localizadas": 1,
    "onde_estamos": [
@@ -13153,6 +12903,32 @@
      "frase": "8 clínicas varridas, e a rede não está aqui"
     },
     {
+     "bairro": "do Bosque",
+     "clinicas": 6,
+     "avaliacoes_somadas": 1309,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Bongiovanni Odontologia | Implante Dentário | Dentista | Bairro do Bosque | Presidente Prudente - SP",
+       "nota": 4.9,
+       "avaliacoes": 1071
+      },
+      {
+       "nome": "CROP - Radiologia Odontológica Presidente Prudente",
+       "nota": 4.9,
+       "avaliacoes": 167
+      },
+      {
+       "nome": "Gou Odonto Presidente Prudente",
+       "nota": 4.7,
+       "avaliacoes": 30
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "6 clínicas varridas, e a rede não está aqui"
+    },
+    {
      "bairro": "Vila Sao Jorge",
      "clinicas": 5,
      "avaliacoes_somadas": 430,
@@ -13177,32 +12953,6 @@
      ],
      "pouca_amostra": false,
      "frase": "5 clínicas varridas, e a rede não está aqui"
-    },
-    {
-     "bairro": "Bairro do Bosque",
-     "clinicas": 4,
-     "avaliacoes_somadas": 1258,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Bongiovanni Odontologia | Implante Dentário | Dentista | Bairro do Bosque | Presidente Prudente - SP",
-       "nota": 4.9,
-       "avaliacoes": 1071
-      },
-      {
-       "nome": "CROP - Radiologia Odontológica Presidente Prudente",
-       "nota": 4.9,
-       "avaliacoes": 167
-      },
-      {
-       "nome": "Centro Odontológico Premium COP",
-       "nota": 4.4,
-       "avaliacoes": 19
-      }
-     ],
-     "pouca_amostra": false,
-     "frase": "4 clínicas varridas, e a rede não está aqui"
     },
     {
      "bairro": "Vila do Estadio",
@@ -13445,27 +13195,6 @@
      "frase": "2 clínicas varridas, e a rede não está aqui"
     },
     {
-     "bairro": "Bosque",
-     "clinicas": 2,
-     "avaliacoes_somadas": 51,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Gou Odonto Presidente Prudente",
-       "nota": 4.7,
-       "avaliacoes": 30
-      },
-      {
-       "nome": "Dental Odonthomaz",
-       "nota": 5,
-       "avaliacoes": 21
-      }
-     ],
-     "pouca_amostra": true,
-     "frase": "2 clínicas varridas, e a rede não está aqui"
-    },
-    {
      "bairro": "Uep1-S.1",
      "clinicas": 2,
      "avaliacoes_somadas": 23,
@@ -13481,27 +13210,6 @@
        "nome": "Centro Médico e Odontológico",
        "nota": 4.5,
        "avaliacoes": 10
-      }
-     ],
-     "pouca_amostra": true,
-     "frase": "2 clínicas varridas, e a rede não está aqui"
-    },
-    {
-     "bairro": "Conj. Hab. Ana Jacinta",
-     "clinicas": 2,
-     "avaliacoes_somadas": 4,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Consultório Odontológico Dr. Itamur - Dra. Gilma Zanin",
-       "nota": 5,
-       "avaliacoes": 3
-      },
-      {
-       "nome": "Harmony Odontologia",
-       "nota": 5,
-       "avaliacoes": 1
       }
      ],
      "pouca_amostra": true,
@@ -13623,6 +13331,38 @@
      ],
      "pouca_amostra": true,
      "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Jardim Alto da Boa Vista",
+     "clinicas": 1,
+     "avaliacoes_somadas": 41,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "M. MATOS - Cirurgia de Implantes Dentários l Prótese Protocolo l Lentes de Contato Dental l Aparelho Invisalign",
+       "nota": 5,
+       "avaliacoes": 41
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Vila Machadinho",
+     "clinicas": 1,
+     "avaliacoes_somadas": 40,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Visage Beaute - Odontologia Avançada - Dr Fábio L. Pedro & Dra Elisabeth Isoppo",
+       "nota": 5,
+       "avaliacoes": 40
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
     }
    ],
    "bairros_sem_a_rede": [
@@ -13679,6 +13419,32 @@
      "frase": "8 clínicas varridas, e a rede não está aqui"
     },
     {
+     "bairro": "do Bosque",
+     "clinicas": 6,
+     "avaliacoes_somadas": 1309,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Bongiovanni Odontologia | Implante Dentário | Dentista | Bairro do Bosque | Presidente Prudente - SP",
+       "nota": 4.9,
+       "avaliacoes": 1071
+      },
+      {
+       "nome": "CROP - Radiologia Odontológica Presidente Prudente",
+       "nota": 4.9,
+       "avaliacoes": 167
+      },
+      {
+       "nome": "Gou Odonto Presidente Prudente",
+       "nota": 4.7,
+       "avaliacoes": 30
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "6 clínicas varridas, e a rede não está aqui"
+    },
+    {
      "bairro": "Vila Sao Jorge",
      "clinicas": 5,
      "avaliacoes_somadas": 430,
@@ -13703,32 +13469,6 @@
      ],
      "pouca_amostra": false,
      "frase": "5 clínicas varridas, e a rede não está aqui"
-    },
-    {
-     "bairro": "Bairro do Bosque",
-     "clinicas": 4,
-     "avaliacoes_somadas": 1258,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Bongiovanni Odontologia | Implante Dentário | Dentista | Bairro do Bosque | Presidente Prudente - SP",
-       "nota": 4.9,
-       "avaliacoes": 1071
-      },
-      {
-       "nome": "CROP - Radiologia Odontológica Presidente Prudente",
-       "nota": 4.9,
-       "avaliacoes": 167
-      },
-      {
-       "nome": "Centro Odontológico Premium COP",
-       "nota": 4.4,
-       "avaliacoes": 19
-      }
-     ],
-     "pouca_amostra": false,
-     "frase": "4 clínicas varridas, e a rede não está aqui"
     },
     {
      "bairro": "Vila do Estadio",
@@ -13757,22 +13497,22 @@
      "frase": "4 clínicas varridas, e a rede não está aqui"
     }
    ],
-   "manchete": "46 bairros medidos · a rede está em 1 deles",
+   "manchete": "44 bairros medidos · a rede está em 1 deles",
    "leitura": "O bairro com mais clínicas é Centro, com 31 clínicas varridas, e a rede está lá.",
    "confianca": {
     "natureza": "fato",
     "confianca": "media",
     "medido": true,
-    "amostra": 120,
+    "amostra": 118,
     "janela_dias": null,
     "medicoes": 1,
     "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
     "a_favor": [],
     "contra": [
-     "1 endereços sem bairro legível"
+     "3 endereços sem bairro legível"
     ],
     "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
-    "procedencia": "medido em 120 clínicas varridas, 1 medição"
+    "procedencia": "medido em 118 clínicas varridas, 1 medição"
    }
   },
   {
@@ -13826,7 +13566,7 @@
       "natureza": "fato",
       "confianca": "media",
       "medido": true,
-      "amostra": 184,
+      "amostra": 183,
       "janela_dias": null,
       "medicoes": 1,
       "fonte": "dados/serie/categoria.jsonl (location da varredura)",
@@ -13835,20 +13575,20 @@
        "distância é linha reta, não tempo de deslocamento"
       ],
       "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
-      "procedencia": "medido em 184 clínicas com coordenada, 1 medição"
+      "procedencia": "medido em 183 clínicas com coordenada, 1 medição"
      }
     }
    ],
-   "clinicas_com_coordenada": 185,
+   "clinicas_com_coordenada": 184,
    "clinicas_sem_coordenada": 0,
    "raios_declarados_km": [
     1,
     2,
     5
    ],
-   "bairros_medidos": 28,
-   "clinicas_medidas": 185,
-   "sem_bairro_no_endereco": 1,
+   "bairros_medidos": 27,
+   "clinicas_medidas": 184,
+   "sem_bairro_no_endereco": 2,
    "unidades_da_rede": 1,
    "unidades_localizadas": 1,
    "onde_estamos": [
@@ -14323,22 +14063,6 @@
      "frase": "1 clínica varrida, e a rede não está aqui"
     },
     {
-     "bairro": "Largo Do Machado",
-     "clinicas": 1,
-     "avaliacoes_somadas": 65,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Dra Sarita Guimarães Ortodontista - Ortodontia e Invisalign em Largo do Machado / RJ",
-       "nota": 5,
-       "avaliacoes": 65
-      }
-     ],
-     "pouca_amostra": true,
-     "frase": "1 clínica varrida, e a rede não está aqui"
-    },
-    {
      "bairro": "Leblon",
      "clinicas": 1,
      "avaliacoes_somadas": 41,
@@ -14381,6 +14105,22 @@
        "nome": "Dra. Mônica Casimiro Ortodontia Alinhadores Harmonização Facial",
        "nota": 5,
        "avaliacoes": 5
+      }
+     ],
+     "pouca_amostra": true,
+     "frase": "1 clínica varrida, e a rede não está aqui"
+    },
+    {
+     "bairro": "Brás de Pina",
+     "clinicas": 1,
+     "avaliacoes_somadas": 3,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Dra. Cláudia Mercês de Mendonça, Dentista",
+       "nota": 5,
+       "avaliacoes": 3
       }
      ],
      "pouca_amostra": true,
@@ -14519,22 +14259,22 @@
      "frase": "11 clínicas varridas, e a rede não está aqui"
     }
    ],
-   "manchete": "28 bairros medidos · a rede está em 1 deles",
+   "manchete": "27 bairros medidos · a rede está em 1 deles",
    "leitura": "O bairro com mais clínicas é Centro, com 75 clínicas varridas, e a rede NÃO está lá.",
    "confianca": {
     "natureza": "fato",
     "confianca": "media",
     "medido": true,
-    "amostra": 185,
+    "amostra": 184,
     "janela_dias": null,
     "medicoes": 1,
     "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
     "a_favor": [],
     "contra": [
-     "1 endereços sem bairro legível"
+     "2 endereços sem bairro legível"
     ],
     "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
-    "procedencia": "medido em 185 clínicas varridas, 1 medição"
+    "procedencia": "medido em 184 clínicas varridas, 1 medição"
    }
   },
   {
@@ -15565,7 +15305,7 @@
     2,
     5
    ],
-   "bairros_medidos": 22,
+   "bairros_medidos": 21,
    "clinicas_medidas": 135,
    "sem_bairro_no_endereco": 0,
    "unidades_da_rede": 0,
@@ -15599,6 +15339,32 @@
      "frase": "47 clínicas varridas, e a rede não está aqui"
     },
     {
+     "bairro": "Centro",
+     "clinicas": 23,
+     "avaliacoes_somadas": 837,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odonto Advance - Dr Decio Bisognin e Equipe",
+       "nota": 4.9,
+       "avaliacoes": 249
+      },
+      {
+       "nome": "Dra Adriana Gato Implantes",
+       "nota": 5,
+       "avaliacoes": 135
+      },
+      {
+       "nome": "Clínica Odontológica Centerclin",
+       "nota": 4.8,
+       "avaliacoes": 105
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "23 clínicas varridas, e a rede não está aqui"
+    },
+    {
      "bairro": "Santa Rita",
      "clinicas": 23,
      "avaliacoes_somadas": 783,
@@ -15623,32 +15389,6 @@
      ],
      "pouca_amostra": false,
      "frase": "23 clínicas varridas, e a rede não está aqui"
-    },
-    {
-     "bairro": "Centro",
-     "clinicas": 21,
-     "avaliacoes_somadas": 804,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Odonto Advance - Dr Decio Bisognin e Equipe",
-       "nota": 4.9,
-       "avaliacoes": 249
-      },
-      {
-       "nome": "Dra Adriana Gato Implantes",
-       "nota": 5,
-       "avaliacoes": 135
-      },
-      {
-       "nome": "Clínica Odontológica Centerclin",
-       "nota": 4.8,
-       "avaliacoes": 105
-      }
-     ],
-     "pouca_amostra": false,
-     "frase": "21 clínicas varridas, e a rede não está aqui"
     },
     {
      "bairro": "Trem",
@@ -15753,27 +15493,6 @@
      ],
      "pouca_amostra": false,
      "frase": "3 clínicas varridas, e a rede não está aqui"
-    },
-    {
-     "bairro": "centro",
-     "clinicas": 2,
-     "avaliacoes_somadas": 33,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "DR ANDERSON MENDES—Cirurgião Dentista-AP",
-       "nota": 5,
-       "avaliacoes": 33
-      },
-      {
-       "nome": "Prime Odonto - Clínica Dr. Eliel Pantoja",
-       "nota": null,
-       "avaliacoes": null
-      }
-     ],
-     "pouca_amostra": true,
-     "frase": "2 clínicas varridas, e a rede não está aqui"
     },
     {
      "bairro": "Beirol",
@@ -16038,6 +15757,32 @@
      "frase": "47 clínicas varridas, e a rede não está aqui"
     },
     {
+     "bairro": "Centro",
+     "clinicas": 23,
+     "avaliacoes_somadas": 837,
+     "temos_unidade": false,
+     "nossas": [],
+     "vizinhos_fortes": [
+      {
+       "nome": "Odonto Advance - Dr Decio Bisognin e Equipe",
+       "nota": 4.9,
+       "avaliacoes": 249
+      },
+      {
+       "nome": "Dra Adriana Gato Implantes",
+       "nota": 5,
+       "avaliacoes": 135
+      },
+      {
+       "nome": "Clínica Odontológica Centerclin",
+       "nota": 4.8,
+       "avaliacoes": 105
+      }
+     ],
+     "pouca_amostra": false,
+     "frase": "23 clínicas varridas, e a rede não está aqui"
+    },
+    {
      "bairro": "Santa Rita",
      "clinicas": 23,
      "avaliacoes_somadas": 783,
@@ -16062,32 +15807,6 @@
      ],
      "pouca_amostra": false,
      "frase": "23 clínicas varridas, e a rede não está aqui"
-    },
-    {
-     "bairro": "Centro",
-     "clinicas": 21,
-     "avaliacoes_somadas": 804,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Odonto Advance - Dr Decio Bisognin e Equipe",
-       "nota": 4.9,
-       "avaliacoes": 249
-      },
-      {
-       "nome": "Dra Adriana Gato Implantes",
-       "nota": 5,
-       "avaliacoes": 135
-      },
-      {
-       "nome": "Clínica Odontológica Centerclin",
-       "nota": 4.8,
-       "avaliacoes": 105
-      }
-     ],
-     "pouca_amostra": false,
-     "frase": "21 clínicas varridas, e a rede não está aqui"
     },
     {
      "bairro": "Trem",
@@ -16142,7 +15861,7 @@
      "frase": "9 clínicas varridas, e a rede não está aqui"
     }
    ],
-   "manchete": "22 bairros medidos · a rede está em 0 deles",
+   "manchete": "21 bairros medidos · a rede está em 0 deles",
    "leitura": "O bairro com mais clínicas é Central, com 47 clínicas varridas, e a rede NÃO está lá.",
    "confianca": {
     "natureza": "fato",
@@ -16169,7 +15888,7 @@
     2,
     5
    ],
-   "bairros_medidos": 21,
+   "bairros_medidos": 19,
    "clinicas_medidas": 90,
    "sem_bairro_no_endereco": 0,
    "unidades_da_rede": 0,
@@ -16178,8 +15897,8 @@
    "bairros": [
     {
      "bairro": "Nova Marabá",
-     "clinicas": 29,
-     "avaliacoes_somadas": 630,
+     "clinicas": 31,
+     "avaliacoes_somadas": 633,
      "temos_unidade": false,
      "nossas": [],
      "vizinhos_fortes": [
@@ -16200,7 +15919,7 @@
       }
      ],
      "pouca_amostra": false,
-     "frase": "29 clínicas varridas, e a rede não está aqui"
+     "frase": "31 clínicas varridas, e a rede não está aqui"
     },
     {
      "bairro": "Novo Horizonte",
@@ -16539,22 +16258,6 @@
      "frase": "1 clínica varrida, e a rede não está aqui"
     },
     {
-     "bairro": "- Nova Marabá",
-     "clinicas": 1,
-     "avaliacoes_somadas": 3,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Consultório Plena Odontologia",
-       "nota": 4.7,
-       "avaliacoes": 3
-      }
-     ],
-     "pouca_amostra": true,
-     "frase": "1 clínica varrida, e a rede não está aqui"
-    },
-    {
      "bairro": "KM7",
      "clinicas": 1,
      "avaliacoes_somadas": 1,
@@ -16565,22 +16268,6 @@
        "nome": "Odonto7 IMPERIAL",
        "nota": 5,
        "avaliacoes": 1
-      }
-     ],
-     "pouca_amostra": true,
-     "frase": "1 clínica varrida, e a rede não está aqui"
-    },
-    {
-     "bairro": "Nova marabá",
-     "clinicas": 1,
-     "avaliacoes_somadas": 0,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Elevare odontologia especializada - Nova Marabá",
-       "nota": null,
-       "avaliacoes": null
       }
      ],
      "pouca_amostra": true,
@@ -16606,8 +16293,8 @@
    "bairros_sem_a_rede": [
     {
      "bairro": "Nova Marabá",
-     "clinicas": 29,
-     "avaliacoes_somadas": 630,
+     "clinicas": 31,
+     "avaliacoes_somadas": 633,
      "temos_unidade": false,
      "nossas": [],
      "vizinhos_fortes": [
@@ -16628,7 +16315,7 @@
       }
      ],
      "pouca_amostra": false,
-     "frase": "29 clínicas varridas, e a rede não está aqui"
+     "frase": "31 clínicas varridas, e a rede não está aqui"
     },
     {
      "bairro": "Novo Horizonte",
@@ -16735,8 +16422,8 @@
      "frase": "3 clínicas varridas, e a rede não está aqui"
     }
    ],
-   "manchete": "21 bairros medidos · a rede está em 0 deles",
-   "leitura": "O bairro com mais clínicas é Nova Marabá, com 29 clínicas varridas, e a rede NÃO está lá.",
+   "manchete": "19 bairros medidos · a rede está em 0 deles",
+   "leitura": "O bairro com mais clínicas é Nova Marabá, com 31 clínicas varridas, e a rede NÃO está lá.",
    "confianca": {
     "natureza": "fato",
     "confianca": "media",
@@ -16755,16 +16442,16 @@
    "praca_id": "parauapebas",
    "rotulo": "PA · Parauapebas",
    "territorio": [],
-   "clinicas_com_coordenada": 93,
+   "clinicas_com_coordenada": 91,
    "clinicas_sem_coordenada": 0,
    "raios_declarados_km": [
     1,
     2,
     5
    ],
-   "bairros_medidos": 16,
-   "clinicas_medidas": 93,
-   "sem_bairro_no_endereco": 0,
+   "bairros_medidos": 14,
+   "clinicas_medidas": 91,
+   "sem_bairro_no_endereco": 2,
    "unidades_da_rede": 0,
    "unidades_localizadas": 0,
    "onde_estamos": [],
@@ -17021,22 +16708,6 @@
      "frase": "1 clínica varrida, e a rede não está aqui"
     },
     {
-     "bairro": "Lote 01",
-     "clinicas": 1,
-     "avaliacoes_somadas": 6,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Dra. Lois Lene Marques Odontologia Avançada",
-       "nota": 5,
-       "avaliacoes": 6
-      }
-     ],
-     "pouca_amostra": true,
-     "frase": "1 clínica varrida, e a rede não está aqui"
-    },
-    {
      "bairro": "Guanabara",
      "clinicas": 1,
      "avaliacoes_somadas": 4,
@@ -17079,22 +16750,6 @@
        "nome": "Clinica odontológica Ortomedic Center",
        "nota": 3,
        "avaliacoes": 3
-      }
-     ],
-     "pouca_amostra": true,
-     "frase": "1 clínica varrida, e a rede não está aqui"
-    },
-    {
-     "bairro": "Av. Inglaterra",
-     "clinicas": 1,
-     "avaliacoes_somadas": 1,
-     "temos_unidade": false,
-     "nossas": [],
-     "vizinhos_fortes": [
-      {
-       "nome": "Clinica odontológico Odontomais",
-       "nota": 5,
-       "avaliacoes": 1
       }
      ],
      "pouca_amostra": true,
@@ -17233,36 +16888,38 @@
      "frase": "9 clínicas varridas, e a rede não está aqui"
     }
    ],
-   "manchete": "16 bairros medidos · a rede está em 0 deles",
+   "manchete": "14 bairros medidos · a rede está em 0 deles",
    "leitura": "O bairro com mais clínicas é Cidade Nova, com 21 clínicas varridas, e a rede NÃO está lá.",
    "confianca": {
     "natureza": "fato",
     "confianca": "media",
     "medido": true,
-    "amostra": 93,
+    "amostra": 91,
     "janela_dias": null,
     "medicoes": 1,
     "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
     "a_favor": [],
-    "contra": [],
+    "contra": [
+     "2 endereços sem bairro legível"
+    ],
     "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
-    "procedencia": "medido em 93 clínicas varridas, 1 medição"
+    "procedencia": "medido em 91 clínicas varridas, 1 medição"
    }
   },
   {
    "praca_id": "rio_branco",
    "rotulo": "AC · Rio Branco",
    "territorio": [],
-   "clinicas_com_coordenada": 117,
+   "clinicas_com_coordenada": 115,
    "clinicas_sem_coordenada": 0,
    "raios_declarados_km": [
     1,
     2,
     5
    ],
-   "bairros_medidos": 35,
-   "clinicas_medidas": 117,
-   "sem_bairro_no_endereco": 1,
+   "bairros_medidos": 33,
+   "clinicas_medidas": 115,
+   "sem_bairro_no_endereco": 3,
    "unidades_da_rede": 0,
    "unidades_localizadas": 0,
    "onde_estamos": [],
@@ -17930,22 +17587,22 @@
      "frase": "5 clínicas varridas, e a rede não está aqui"
     }
    ],
-   "manchete": "35 bairros medidos · a rede está em 0 deles",
+   "manchete": "33 bairros medidos · a rede está em 0 deles",
    "leitura": "O bairro com mais clínicas é Bosque, com 31 clínicas varridas, e a rede NÃO está lá.",
    "confianca": {
     "natureza": "fato",
     "confianca": "media",
     "medido": true,
-    "amostra": 117,
+    "amostra": 115,
     "janela_dias": null,
     "medicoes": 1,
     "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
     "a_favor": [],
     "contra": [
-     "1 endereços sem bairro legível"
+     "3 endereços sem bairro legível"
     ],
     "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
-    "procedencia": "medido em 117 clínicas varridas, 1 medição"
+    "procedencia": "medido em 115 clínicas varridas, 1 medição"
    }
   }
  ]

@@ -321,12 +321,12 @@
             "da_rede": 0
           },
           "2km": {
-            "clinicas": 103,
+            "clinicas": 102,
             "de_aparelho": 15,
             "da_rede": 0
           },
           "5km": {
-            "clinicas": 139,
+            "clinicas": 138,
             "de_aparelho": 20,
             "da_rede": 0
           }
@@ -337,7 +337,7 @@
           "natureza": "fato",
           "confianca": "media",
           "medido": true,
-          "amostra": 142,
+          "amostra": 141,
           "janela_dias": null,
           "medicoes": 1,
           "fonte": "dados/serie/categoria.jsonl (location da varredura)",
@@ -346,20 +346,20 @@
             "distância é linha reta, não tempo de deslocamento"
           ],
           "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
-          "procedencia": "medido em 142 clínicas com coordenada, 1 medição"
+          "procedencia": "medido em 141 clínicas com coordenada, 1 medição"
         }
       }
     ],
-    "clinicas_com_coordenada": 143,
+    "clinicas_com_coordenada": 142,
     "clinicas_sem_coordenada": 0,
     "raios_declarados_km": [
       1,
       2,
       5
     ],
-    "bairros_medidos": 21,
-    "clinicas_medidas": 143,
-    "sem_bairro_no_endereco": 2,
+    "bairros_medidos": 18,
+    "clinicas_medidas": 142,
+    "sem_bairro_no_endereco": 3,
     "unidades_da_rede": 1,
     "unidades_localizadas": 1,
     "onde_estamos": [
@@ -426,8 +426,8 @@
       },
       {
         "bairro": "Kalilândia",
-        "clinicas": 8,
-        "avaliacoes_somadas": 1206,
+        "clinicas": 12,
+        "avaliacoes_somadas": 1401,
         "temos_unidade": false,
         "nossas": [],
         "vizinhos_fortes": [
@@ -437,18 +437,18 @@
             "avaliacoes": 960
           },
           {
+            "nome": "Odonto Riso - Clínica Odontológica",
+            "nota": 3.9,
+            "avaliacoes": 168
+          },
+          {
             "nome": "Lumière Instituto de Odontologia",
             "nota": 5,
             "avaliacoes": 157
-          },
-          {
-            "nome": "Clínica Odontológica NEOCENTER- Drº Arilson Silva Pereira",
-            "nota": 5,
-            "avaliacoes": 31
           }
         ],
         "pouca_amostra": false,
-        "frase": "8 clínicas varridas, e a rede não está aqui"
+        "frase": "12 clínicas varridas, e a rede não está aqui"
       },
       {
         "bairro": "São JOÃO",
@@ -501,32 +501,6 @@
         ],
         "pouca_amostra": false,
         "frase": "4 clínicas varridas, e a rede não está aqui"
-      },
-      {
-        "bairro": "Kalilandia",
-        "clinicas": 3,
-        "avaliacoes_somadas": 193,
-        "temos_unidade": false,
-        "nossas": [],
-        "vizinhos_fortes": [
-          {
-            "nome": "Odonto Riso - Clínica Odontológica",
-            "nota": 3.9,
-            "avaliacoes": 168
-          },
-          {
-            "nome": "Inovare Odontologia Especializada",
-            "nota": 4.8,
-            "avaliacoes": 25
-          },
-          {
-            "nome": "Dra. Ana Karina Britto Guimarães",
-            "nota": null,
-            "avaliacoes": null
-          }
-        ],
-        "pouca_amostra": false,
-        "frase": "3 clínicas varridas, e a rede não está aqui"
       },
       {
         "bairro": "Ponto Central",
@@ -702,22 +676,6 @@
         "frase": "1 clínica varrida, e a rede não está aqui"
       },
       {
-        "bairro": "Rua Nova",
-        "clinicas": 1,
-        "avaliacoes_somadas": 48,
-        "temos_unidade": false,
-        "nossas": [],
-        "vizinhos_fortes": [
-          {
-            "nome": "Clidentes Clínica Odontológica",
-            "nota": 5,
-            "avaliacoes": 48
-          }
-        ],
-        "pouca_amostra": true,
-        "frase": "1 clínica varrida, e a rede não está aqui"
-      },
-      {
         "bairro": "Serraria Brasil",
         "clinicas": 1,
         "avaliacoes_somadas": 26,
@@ -796,22 +754,6 @@
         ],
         "pouca_amostra": true,
         "frase": "1 clínica varrida, e a rede não está aqui"
-      },
-      {
-        "bairro": "kalilandia",
-        "clinicas": 1,
-        "avaliacoes_somadas": 2,
-        "temos_unidade": false,
-        "nossas": [],
-        "vizinhos_fortes": [
-          {
-            "nome": "Dra.Jamile Brito Ribeiro",
-            "nota": 5,
-            "avaliacoes": 2
-          }
-        ],
-        "pouca_amostra": true,
-        "frase": "1 clínica varrida, e a rede não está aqui"
       }
     ],
     "bairros_sem_a_rede": [
@@ -843,8 +785,8 @@
       },
       {
         "bairro": "Kalilândia",
-        "clinicas": 8,
-        "avaliacoes_somadas": 1206,
+        "clinicas": 12,
+        "avaliacoes_somadas": 1401,
         "temos_unidade": false,
         "nossas": [],
         "vizinhos_fortes": [
@@ -854,18 +796,18 @@
             "avaliacoes": 960
           },
           {
+            "nome": "Odonto Riso - Clínica Odontológica",
+            "nota": 3.9,
+            "avaliacoes": 168
+          },
+          {
             "nome": "Lumière Instituto de Odontologia",
             "nota": 5,
             "avaliacoes": 157
-          },
-          {
-            "nome": "Clínica Odontológica NEOCENTER- Drº Arilson Silva Pereira",
-            "nota": 5,
-            "avaliacoes": 31
           }
         ],
         "pouca_amostra": false,
-        "frase": "8 clínicas varridas, e a rede não está aqui"
+        "frase": "12 clínicas varridas, e a rede não está aqui"
       },
       {
         "bairro": "São JOÃO",
@@ -920,48 +862,48 @@
         "frase": "4 clínicas varridas, e a rede não está aqui"
       },
       {
-        "bairro": "Kalilandia",
+        "bairro": "Ponto Central",
         "clinicas": 3,
-        "avaliacoes_somadas": 193,
+        "avaliacoes_somadas": 170,
         "temos_unidade": false,
         "nossas": [],
         "vizinhos_fortes": [
           {
-            "nome": "Odonto Riso - Clínica Odontológica",
-            "nota": 3.9,
-            "avaliacoes": 168
+            "nome": "COB Odontologia Integrada | Implante Dentário | Invisalign | Ponto Central | Feira de Santana - BA",
+            "nota": 5,
+            "avaliacoes": 137
           },
           {
-            "nome": "Inovare Odontologia Especializada",
-            "nota": 4.8,
-            "avaliacoes": 25
+            "nome": "Dra Caroline Lima Odontologia - Dentista em Feira de Santana",
+            "nota": 5,
+            "avaliacoes": 30
           },
           {
-            "nome": "Dra. Ana Karina Britto Guimarães",
-            "nota": null,
-            "avaliacoes": null
+            "nome": "Dentista em Feira de Santana - Clínica Priorize - Medicina e Odontologia",
+            "nota": 5,
+            "avaliacoes": 3
           }
         ],
         "pouca_amostra": false,
         "frase": "3 clínicas varridas, e a rede não está aqui"
       }
     ],
-    "manchete": "21 bairros medidos · a rede está em 1 deles",
+    "manchete": "18 bairros medidos · a rede está em 1 deles",
     "leitura": "O bairro com mais clínicas é Centro, com 84 clínicas varridas, e a rede está lá.",
     "confianca": {
       "natureza": "fato",
       "confianca": "media",
       "medido": true,
-      "amostra": 143,
+      "amostra": 142,
       "janela_dias": null,
       "medicoes": 1,
       "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
       "a_favor": [],
       "contra": [
-        "2 endereços sem bairro legível"
+        "3 endereços sem bairro legível"
       ],
       "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
-      "procedencia": "medido em 143 clínicas varridas, 1 medição"
+      "procedencia": "medido em 142 clínicas varridas, 1 medição"
     }
   },
   "movimentos_do_mercado": {

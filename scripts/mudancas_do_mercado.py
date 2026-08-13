@@ -128,13 +128,34 @@ def main():
         agora = {r["place_id"]: r for r in cat
                  if r.get("praca_id") == p and r["snapshot_date"] == agora_d}
 
-        base_conf = lambda n=None: confianca(
-            "fato", amostra=n or len(agora),
-            unidade_amostra=("clínica medida", "clínicas medidas"),
-            medicoes=len(ds),
-            janela_dias=(dt.date.fromisoformat(agora_d)
-                         - dt.date.fromisoformat(antes_d)).days,
-            fonte=f"dados/serie/categoria.jsonl ({antes_d} → {agora_d})")
+        # AMOSTRA E UNIDADE TÊM DE FALAR DA MESMA COISA.
+        #
+        # Este carimbo recebia o número de AVALIAÇÕES da clínica e o rotulava
+        # como "clínicas medidas": o evento do Vitae Center saía com "medido
+        # em 3863 clínicas medidas" — 3.863 é a base de avaliações daquela
+        # ficha, e a praça inteira tem 27 clínicas. Metadado errado é pior
+        # que metadado ausente, porque ele parece rigor.
+        _dias = (dt.date.fromisoformat(agora_d)
+                 - dt.date.fromisoformat(antes_d)).days
+        _fonte = f"dados/serie/categoria.jsonl ({antes_d} → {agora_d})"
+
+        def base_conf(avaliacoes=None):
+            """Evento de UMA clínica: a amostra é a base de avaliações dela.
+
+            Sem número de avaliações (evento da praça inteira), a amostra é
+            quantas clínicas entraram nas duas medições.
+            """
+            if avaliacoes is None:
+                return confianca(
+                    "fato", amostra=len(agora),
+                    unidade_amostra=("clínica medida", "clínicas medidas"),
+                    medicoes=len(ds), janela_dias=_dias, fonte=_fonte)
+            return confianca(
+                "fato", amostra=avaliacoes,
+                unidade_amostra=("avaliação nesta clínica",
+                                 "avaliações nesta clínica"),
+                medicoes=len(ds), janela_dias=_dias, fonte=_fonte,
+                a_favor=[f"{len(agora)} clínicas medidas nas duas rodadas"])
 
         # ─────────── A VARREDURA NÃO É ESTÁVEL, E ISSO FOI MEDIDO ───────────
         #
@@ -243,7 +264,13 @@ def main():
                 "movimento de campanha só existe a partir da segunda medição",
                 "recoletar na próxima rodada para abrir o delta",
                 "dados/serie/anuncios.jsonl", {},
-                confianca("fato", medido=True, medicoes=1,
+                # linha de base tem amostra: é quantos anúncios estavam no
+                # ar quando a praça foi consultada pela primeira vez
+                confianca("fato", amostra=sum(1 for r in ads
+                                        if r.get("praca_id") == p
+                                        and r.get("ativo")),
+                          unidade_amostra=("anúncio no ar", "anúncios no ar"),
+                          medido=True, medicoes=1,
                           fonte="dados/serie/anuncios.jsonl")))
 
         ordem = {"critica": 0, "alta": 1, "media": 2, "baixa": 3}

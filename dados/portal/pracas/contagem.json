@@ -344,14 +344,14 @@
           "km": 0.06,
           "avaliacoes": 34,
           "nota": 5,
-          "bairro": "Bairro da Glória"
+          "bairro": "da Glória"
         },
         "aparelho_mais_proximo": {
           "nome": "ODONTO ART DENTISTA 24 HORAS CONTAGEM",
           "km": 0.07,
           "avaliacoes": 1729,
           "nota": 4.8,
-          "bairro": "Bairro da Glória"
+          "bairro": "da Glória"
         },
         "unidade_da_rede_mais_proxima": null,
         "raios": {
@@ -439,7 +439,7 @@
         "frase": "53 clínicas varridas, e a unidade da rede está aqui"
       },
       {
-        "bairro": "Bairro da Glória",
+        "bairro": "da Glória",
         "clinicas": 13,
         "avaliacoes_somadas": 3558,
         "temos_unidade": false,
@@ -920,7 +920,7 @@
     ],
     "bairros_sem_a_rede": [
       {
-        "bairro": "Bairro da Glória",
+        "bairro": "da Glória",
         "clinicas": 13,
         "avaliacoes_somadas": 3558,
         "temos_unidade": false,
@@ -1096,10 +1096,12 @@
           "janela_dias": 5,
           "medicoes": 2,
           "fonte": "dados/serie/categoria.jsonl (2026-08-08 → 2026-08-13)",
-          "a_favor": [],
+          "a_favor": [
+            "135 clínicas medidas nas duas rodadas"
+          ],
           "contra": [],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 3863 clínicas medidas, 2 medições, 5 dias de janela"
+          "procedencia": "medido em 3863 avaliações nesta clínica, 2 medições, 5 dias de janela"
         }
       },
       {
@@ -1120,16 +1122,16 @@
         "evidencia": {},
         "confianca": {
           "natureza": "fato",
-          "confianca": "baixa",
+          "confianca": "media",
           "medido": true,
-          "amostra": null,
+          "amostra": 42,
           "janela_dias": null,
           "medicoes": 1,
           "fonte": "dados/serie/anuncios.jsonl",
           "a_favor": [],
           "contra": [],
           "o_que_aumentaria": null,
-          "procedencia": "sem amostra declarada, 1 medição"
+          "procedencia": "medido em 42 anúncios no ar, 1 medição"
         }
       }
     ],

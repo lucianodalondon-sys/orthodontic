@@ -324,17 +324,17 @@
         "unidade_da_rede_mais_proxima": null,
         "raios": {
           "1km": {
-            "clinicas": 34,
+            "clinicas": 30,
             "de_aparelho": 2,
             "da_rede": 0
           },
           "2km": {
-            "clinicas": 64,
+            "clinicas": 59,
             "de_aparelho": 6,
             "da_rede": 0
           },
           "5km": {
-            "clinicas": 108,
+            "clinicas": 103,
             "de_aparelho": 12,
             "da_rede": 0
           }
@@ -345,7 +345,7 @@
           "natureza": "fato",
           "confianca": "media",
           "medido": true,
-          "amostra": 132,
+          "amostra": 127,
           "janela_dias": null,
           "medicoes": 1,
           "fonte": "dados/serie/categoria.jsonl (location da varredura)",
@@ -354,20 +354,20 @@
             "distância é linha reta, não tempo de deslocamento"
           ],
           "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
-          "procedencia": "medido em 132 clínicas com coordenada, 1 medição"
+          "procedencia": "medido em 127 clínicas com coordenada, 1 medição"
         }
       }
     ],
-    "clinicas_com_coordenada": 133,
+    "clinicas_com_coordenada": 128,
     "clinicas_sem_coordenada": 0,
     "raios_declarados_km": [
       1,
       2,
       5
     ],
-    "bairros_medidos": 17,
-    "clinicas_medidas": 133,
-    "sem_bairro_no_endereco": 4,
+    "bairros_medidos": 14,
+    "clinicas_medidas": 128,
+    "sem_bairro_no_endereco": 9,
     "unidades_da_rede": 1,
     "unidades_localizadas": 1,
     "onde_estamos": [
@@ -434,8 +434,8 @@
       },
       {
         "bairro": "Centro",
-        "clinicas": 5,
-        "avaliacoes_somadas": 279,
+        "clinicas": 7,
+        "avaliacoes_somadas": 373,
         "temos_unidade": false,
         "nossas": [],
         "vizinhos_fortes": [
@@ -445,18 +445,18 @@
             "avaliacoes": 230
           },
           {
+            "nome": "Aline Pires Odontologia Especializada",
+            "nota": 5,
+            "avaliacoes": 82
+          },
+          {
             "nome": "Dr. Eklésio Otoni – Dentista em Palmas",
             "nota": 4.7,
             "avaliacoes": 20
-          },
-          {
-            "nome": "Leani Odontologia",
-            "nota": 5,
-            "avaliacoes": 16
           }
         ],
         "pouca_amostra": false,
-        "frase": "5 clínicas varridas, e a rede não está aqui"
+        "frase": "7 clínicas varridas, e a rede não está aqui"
       },
       {
         "bairro": "Jardim Aureny III (Taquaralto)",
@@ -483,53 +483,6 @@
         ],
         "pouca_amostra": false,
         "frase": "4 clínicas varridas, e a rede não está aqui"
-      },
-      {
-        "bairro": "104 Sul",
-        "clinicas": 4,
-        "avaliacoes_somadas": 124,
-        "temos_unidade": false,
-        "nossas": [],
-        "vizinhos_fortes": [
-          {
-            "nome": "Odonto Fama Implante",
-            "nota": 4.8,
-            "avaliacoes": 111
-          },
-          {
-            "nome": "CR orto & implante especializada",
-            "nota": 5,
-            "avaliacoes": 9
-          },
-          {
-            "nome": "Dente Palmas",
-            "nota": 3,
-            "avaliacoes": 2
-          }
-        ],
-        "pouca_amostra": false,
-        "frase": "4 clínicas varridas, e a rede não está aqui"
-      },
-      {
-        "bairro": "centro",
-        "clinicas": 2,
-        "avaliacoes_somadas": 94,
-        "temos_unidade": false,
-        "nossas": [],
-        "vizinhos_fortes": [
-          {
-            "nome": "Aline Pires Odontologia Especializada",
-            "nota": 5,
-            "avaliacoes": 82
-          },
-          {
-            "nome": "Medici Odontologia",
-            "nota": 5,
-            "avaliacoes": 12
-          }
-        ],
-        "pouca_amostra": true,
-        "frase": "2 clínicas varridas, e a rede não está aqui"
       },
       {
         "bairro": "Centro (Taquaralto)",
@@ -621,22 +574,6 @@
             "nome": "Lemos Pelissari - Clinica Odontologica",
             "nota": 4.8,
             "avaliacoes": 64
-          }
-        ],
-        "pouca_amostra": true,
-        "frase": "1 clínica varrida, e a rede não está aqui"
-      },
-      {
-        "bairro": "103 Sul",
-        "clinicas": 1,
-        "avaliacoes_somadas": 47,
-        "temos_unidade": false,
-        "nossas": [],
-        "vizinhos_fortes": [
-          {
-            "nome": "Dr. Henrique Arimatéa | Dentista em Palmas",
-            "nota": 4.9,
-            "avaliacoes": 47
           }
         ],
         "pouca_amostra": true,
@@ -752,8 +689,8 @@
       },
       {
         "bairro": "Centro",
-        "clinicas": 5,
-        "avaliacoes_somadas": 279,
+        "clinicas": 7,
+        "avaliacoes_somadas": 373,
         "temos_unidade": false,
         "nossas": [],
         "vizinhos_fortes": [
@@ -763,18 +700,18 @@
             "avaliacoes": 230
           },
           {
+            "nome": "Aline Pires Odontologia Especializada",
+            "nota": 5,
+            "avaliacoes": 82
+          },
+          {
             "nome": "Dr. Eklésio Otoni – Dentista em Palmas",
             "nota": 4.7,
             "avaliacoes": 20
-          },
-          {
-            "nome": "Leani Odontologia",
-            "nota": 5,
-            "avaliacoes": 16
           }
         ],
         "pouca_amostra": false,
-        "frase": "5 clínicas varridas, e a rede não está aqui"
+        "frase": "7 clínicas varridas, e a rede não está aqui"
       },
       {
         "bairro": "Jardim Aureny III (Taquaralto)",
@@ -801,50 +738,24 @@
         ],
         "pouca_amostra": false,
         "frase": "4 clínicas varridas, e a rede não está aqui"
-      },
-      {
-        "bairro": "104 Sul",
-        "clinicas": 4,
-        "avaliacoes_somadas": 124,
-        "temos_unidade": false,
-        "nossas": [],
-        "vizinhos_fortes": [
-          {
-            "nome": "Odonto Fama Implante",
-            "nota": 4.8,
-            "avaliacoes": 111
-          },
-          {
-            "nome": "CR orto & implante especializada",
-            "nota": 5,
-            "avaliacoes": 9
-          },
-          {
-            "nome": "Dente Palmas",
-            "nota": 3,
-            "avaliacoes": 2
-          }
-        ],
-        "pouca_amostra": false,
-        "frase": "4 clínicas varridas, e a rede não está aqui"
       }
     ],
-    "manchete": "17 bairros medidos · a rede está em 1 deles",
+    "manchete": "14 bairros medidos · a rede está em 1 deles",
     "leitura": "O bairro com mais clínicas é Plano Diretor Sul, com 83 clínicas varridas, e a rede NÃO está lá.",
     "confianca": {
       "natureza": "fato",
       "confianca": "media",
       "medido": true,
-      "amostra": 133,
+      "amostra": 128,
       "janela_dias": null,
       "medicoes": 1,
       "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
       "a_favor": [],
       "contra": [
-        "4 endereços sem bairro legível"
+        "9 endereços sem bairro legível"
       ],
       "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
-      "procedencia": "medido em 133 clínicas varridas, 1 medição"
+      "procedencia": "medido em 128 clínicas varridas, 1 medição"
     }
   },
   "movimentos_do_mercado": {

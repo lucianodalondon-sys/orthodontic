@@ -71,8 +71,6 @@ def main():
     args = ap.parse_args()
 
     places = jsonl("places")
-    funis = jsonl("funil")
-    regua = (jsonl("regua") or [{}])[-1]
     sazon = jsonl("sazonalidade")
     _saz_med = carrega(OUT, "sazonalidade")     # o veredito da medição
     temas = jsonl("temas")
@@ -146,8 +144,6 @@ def main():
         return f"{int(d)}/{_MES[int(m)-1]}"
     ult_tema = ultimo_por([r for r in temas if r["snapshot_date"] <= corte],
                           lambda r: (r["praca_id"], r["tema"]))
-    ult_funil = ultimo_por([r for r in funis if r["snapshot_date"] <= corte],
-                           lambda r: r["local_id"])
 
     escritos = []
 
@@ -421,21 +417,19 @@ def main():
             })
         placar.sort(key=lambda r: -(r.get("avaliacoes") or 0))
 
-        f = ult_funil.get(next((l["local_id"] for l in locais if l.get("papel") == "proprio"), None))
+        # O FUNIL SAIU DAQUI, E NÃO VOLTA.
+        #
+        # Este bloco montava interessados, agendamentos, comparecimentos,
+        # fechados, pagos, base ativa, contratos do mês e meta da rede — tudo
+        # do Conecta, tudo interno. Uma praça só tinha (Mafra), e ela abria
+        # com "única com dado interno".
+        #
+        # O produto é vendido como inteligência 100% externa, e uma exceção
+        # escondida no pipeline destrói isso inteiro: quando a diretoria
+        # pergunta de onde vem o número, a resposta não pode ser "de um lugar
+        # que nós dizemos que não usamos". O histórico está em
+        # legacy/dado_interno/, e `cruzamento.jsonl()` recusa-se a lê-lo.
         funil = None
-        if f:
-            funil = {
-                "estagios": [
-                    {"l": "Interessados", "v": f["interessados"], "pct": None, "regua": None},
-                    {"l": "Agendamentos", "v": f["agendamentos"], "pct": f["taxa_agendamento"], "regua": regua.get("agendamento")},
-                    {"l": "Comparecimentos", "v": f["comparecimentos"], "pct": f["taxa_comparecimento"], "regua": regua.get("comparecimento")},
-                    {"l": "Fechados", "v": f["fechados"], "pct": f["taxa_fechamento"], "regua": regua.get("fechamento")},
-                    {"l": "Pagos", "v": f["pagos"], "pct": f["taxa_pagamento"], "regua": regua.get("pagamento")},
-                ],
-                "base_ativa": f.get("base_ativa"), "base_ativa_anterior": f.get("base_ativa_anterior"),
-                "contratos_mes": f.get("contratos_mes_2026"), "contratos_mes_anterior": f.get("contratos_mes_2025"),
-                "meta_rede": f.get("meta_rede_contratos_mes"), "ressalva": f.get("ressalva"),
-            }
 
         temas_p = [{"tema": k[1], **v} for k, v in ult_tema.items() if k[0] == p]
         saz = [r for r in sazon if r.get("regiao") in ident[p].get("uf", [])]
@@ -1430,6 +1424,7 @@ def main():
             "jornada": (dict(_jor_por[lid], confianca=confianca(
                 "fato",
                 amostra=_jor_por[lid].get("com_texto"),
+                unidade_amostra=("avaliação com texto", "avaliações com texto"),
                 medicoes=_hist.get("medicoes"),
                 janela_dias=_hist.get("dias"),
                 fonte="dados/serie/reviews.jsonl",

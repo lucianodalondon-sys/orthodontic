@@ -38,10 +38,10 @@ Uso:
 """
 import argparse, json, math, pathlib, re, sys, unicodedata
 import datetime as dt
-from collections import defaultdict
+from collections import defaultdict, Counter
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-from cruzamento import identidades, conta, confianca
+from cruzamento import normaliza_bairro, identidades, conta, confianca
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 SERIE = RAIZ/"dados"/"serie"
@@ -82,10 +82,13 @@ def bairro_de(endereco):
         return None
     # dentro dele, o bairro é o pedaço depois do último " - "
     b = alvo.split(" - ")[-1].strip()
-    if (re.fullmatch(r"[\d\-\s]+", b) or len(b) < 3
-            or re.match(r"^\d+$", b)):
-        return None
-    return b
+    # E O TEXTO PASSA PELO NORMALIZADOR. Sem ele, Mafra chegava com dezoito
+    # "bairros" onde existem dez: `Bairro Bom Jesus`, `Bom Jesus` e
+    # `bom jesus` contados três vezes, `Jardim do Moinho` e `Jardim Moinho`
+    # duas, mais `sala 6`, `numero 352` e uma rua inteira. Bairro repetido
+    # divide a concentração e inventa espaço vago onde a rede já está.
+    rotulo, _ = normaliza_bairro(b)
+    return rotulo
 
 
 # ────────────────────────── distância ──────────────────────────
@@ -160,15 +163,23 @@ def main():
 
     por_praca = defaultdict(lambda: defaultdict(list))
     sem_bairro = defaultdict(int)
+    rotulo_de = defaultdict(Counter)
     for r in ult.values():
         p = r.get("praca_id")
         if a.praca and p != a.praca:
             continue
-        b = bairro_de(r.get("endereco"))
-        if not b:
+        # AGRUPA PELA CHAVE, EXIBE O RÓTULO MAIS COMUM.
+        #
+        # Normalizar o texto não basta: "Jardim do Moinho" e "Jardim Moinho"
+        # continuam dois rótulos diferentes e viravam dois bairros. A chave
+        # é que decide quem é o mesmo lugar; o rótulo mais frequente é o que
+        # a cidade escreve, e é ele que vai à tela.
+        rotulo, chave = normaliza_bairro(bairro_de(r.get("endereco")))
+        if not chave:
             sem_bairro[p] += 1
             continue
-        por_praca[p][b].append(r)
+        por_praca[p][chave].append(r)
+        rotulo_de[(p, chave)][rotulo] += 1
 
     fora = []
     for p, bairros in sorted(por_praca.items()):
@@ -179,18 +190,22 @@ def main():
         for l in lojas:
             for b, cs in bairros.items():
                 if any(c.get("place_id") == l.get("place_id") for c in cs):
-                    onde_estamos[l["local_id"]] = b
+                    onde_estamos[l["local_id"]] = (
+                        rotulo_de[(p, b)].most_common(1) or [(b, 0)])[0][0]
         nossos_bairros = set(onde_estamos.values())
 
         linhas_b = []
         for b, cs in bairros.items():
             aval = sum(c.get("avaliacoes") or 0 for c in cs)
-            nossas_aqui = [lid for lid, bb in onde_estamos.items() if bb == b]
+            _rot = (rotulo_de[(p, b)].most_common(1) or [(b, 0)])[0][0]
+            nossas_aqui = [lid for lid, bb in onde_estamos.items() if bb == _rot]
             # o rival mais forte do bairro, pelo volume de avaliação
             top = sorted(cs, key=lambda c: -(c.get("avaliacoes") or 0))
             top = [c for c in top if c.get("place_id") not in nossos_place][:3]
             linhas_b.append({
-                "bairro": b,
+                # a chave agrupa; o rótulo que a cidade mais escreve é o
+                # que aparece na tela
+                "bairro": (rotulo_de[(p, b)].most_common(1) or [(b, 0)])[0][0],
                 "clinicas": len(cs),
                 "avaliacoes_somadas": aval,
                 "temos_unidade": bool(nossas_aqui),
@@ -352,9 +367,16 @@ def main():
         "o_que_e": "A cidade por dentro: em que bairro cada unidade está, "
                    "contra quem ela disputa ali, e onde a categoria se "
                    "concentra sem a rede.",
-        "o_que_nao_e": "Não é distância nem deslocamento — não temos "
-                       "coordenada, temos texto de endereço. E concentração "
-                       "de clínicas é oferta, não demanda medida.",
+        # A frase antiga dizia "não temos coordenada" — e o arquivo abaixo
+        # dela traz latitude, longitude e raios de 1, 2 e 5 km desde que o
+        # backfill recuperou 3.304 coordenadas do bruto. Ressalva que
+        # envelheceu vira desinformação com cara de honestidade.
+        "o_que_nao_e": "O bairro sai do TEXTO do endereço: ele agrupa o que a "
+                       "cidade escreve, e não é recorte oficial. A distância "
+                       "está medida — o bloco de território usa as "
+                       "coordenadas reais — mas distância em linha reta não é "
+                       "tempo de deslocamento. E concentração de clínicas é "
+                       "oferta, não demanda.",
         "por_que_existe": "cidade com mais de uma unidade não pode ser lida "
                           "como um mercado só: Porto Alegre tem 9 unidades, "
                           "Curitiba 8, e elas podem ter donos diferentes",

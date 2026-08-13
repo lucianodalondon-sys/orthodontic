@@ -374,7 +374,7 @@
           "natureza": "fato",
           "confianca": "media",
           "medido": true,
-          "amostra": 184,
+          "amostra": 183,
           "janela_dias": null,
           "medicoes": 1,
           "fonte": "dados/serie/categoria.jsonl (location da varredura)",
@@ -383,20 +383,20 @@
             "distância é linha reta, não tempo de deslocamento"
           ],
           "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
-          "procedencia": "medido em 184 clínicas com coordenada, 1 medição"
+          "procedencia": "medido em 183 clínicas com coordenada, 1 medição"
         }
       }
     ],
-    "clinicas_com_coordenada": 185,
+    "clinicas_com_coordenada": 184,
     "clinicas_sem_coordenada": 0,
     "raios_declarados_km": [
       1,
       2,
       5
     ],
-    "bairros_medidos": 28,
-    "clinicas_medidas": 185,
-    "sem_bairro_no_endereco": 1,
+    "bairros_medidos": 27,
+    "clinicas_medidas": 184,
+    "sem_bairro_no_endereco": 2,
     "unidades_da_rede": 1,
     "unidades_localizadas": 1,
     "onde_estamos": [
@@ -871,22 +871,6 @@
         "frase": "1 clínica varrida, e a rede não está aqui"
       },
       {
-        "bairro": "Largo Do Machado",
-        "clinicas": 1,
-        "avaliacoes_somadas": 65,
-        "temos_unidade": false,
-        "nossas": [],
-        "vizinhos_fortes": [
-          {
-            "nome": "Dra Sarita Guimarães Ortodontista - Ortodontia e Invisalign em Largo do Machado / RJ",
-            "nota": 5,
-            "avaliacoes": 65
-          }
-        ],
-        "pouca_amostra": true,
-        "frase": "1 clínica varrida, e a rede não está aqui"
-      },
-      {
         "bairro": "Leblon",
         "clinicas": 1,
         "avaliacoes_somadas": 41,
@@ -929,6 +913,22 @@
             "nome": "Dra. Mônica Casimiro Ortodontia Alinhadores Harmonização Facial",
             "nota": 5,
             "avaliacoes": 5
+          }
+        ],
+        "pouca_amostra": true,
+        "frase": "1 clínica varrida, e a rede não está aqui"
+      },
+      {
+        "bairro": "Brás de Pina",
+        "clinicas": 1,
+        "avaliacoes_somadas": 3,
+        "temos_unidade": false,
+        "nossas": [],
+        "vizinhos_fortes": [
+          {
+            "nome": "Dra. Cláudia Mercês de Mendonça, Dentista",
+            "nota": 5,
+            "avaliacoes": 3
           }
         ],
         "pouca_amostra": true,
@@ -1067,22 +1067,22 @@
         "frase": "11 clínicas varridas, e a rede não está aqui"
       }
     ],
-    "manchete": "28 bairros medidos · a rede está em 1 deles",
+    "manchete": "27 bairros medidos · a rede está em 1 deles",
     "leitura": "O bairro com mais clínicas é Centro, com 75 clínicas varridas, e a rede NÃO está lá.",
     "confianca": {
       "natureza": "fato",
       "confianca": "media",
       "medido": true,
-      "amostra": 185,
+      "amostra": 184,
       "janela_dias": null,
       "medicoes": 1,
       "fonte": "dados/serie/categoria.jsonl (endereço da varredura)",
       "a_favor": [],
       "contra": [
-        "1 endereços sem bairro legível"
+        "2 endereços sem bairro legível"
       ],
       "o_que_aumentaria": "busca por coordenada, que diria em que parte da cidade a loja APARECE, e não só onde ela fica",
-      "procedencia": "medido em 185 clínicas varridas, 1 medição"
+      "procedencia": "medido em 184 clínicas varridas, 1 medição"
     }
   },
   "movimentos_do_mercado": {

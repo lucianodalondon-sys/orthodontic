@@ -43,7 +43,28 @@ SERIE = RAIZ/"dados"/"serie"
 IDENT = RAIZ/"dados"/"identidade"
 
 
+# Séries de DADO INTERNO. O produto é vendido como inteligência 100%
+# externa, e essa regra é permanente. Enquanto `funil.jsonl` vivia em
+# dados/serie/, o build montava interessados, agendamentos, fechados e meta
+# da rede para Mafra — uma exceção escondida no pipeline, num produto cujo
+# posicionamento inteiro depende de não ter exceção. O histórico está em
+# legacy/dado_interno/; se alguém devolver o arquivo, o guarda grita em vez
+# de deixar o número voltar calado para a tela.
+PROIBIDAS = {
+    "funil": "funil de vendas do Conecta — interno. legacy/dado_interno/",
+    "regua": "régua de conversão da rede — interna. legacy/dado_interno/",
+    "contratos": "contrato é dado interno",
+    "faturamento": "faturamento é dado interno",
+    "leads": "lead é dado interno",
+}
+
+
 def jsonl(nome):
+    if nome in PROIBIDAS:
+        raise ValueError(
+            f"série proibida: '{nome}' é DADO INTERNO ({PROIBIDAS[nome]}). "
+            f"O portal é feito inteiramente com informação externa — leia a "
+            f"regra em CLAUDE.md antes de mexer nisto.")
     p = SERIE/f"{nome}.jsonl"
     return [json.loads(l) for l in p.read_text(encoding="utf-8").split("\n") if l.strip()] \
         if p.exists() else []
@@ -307,8 +328,7 @@ def conta(n, singular, plural=None):
 NATUREZAS = ("fato", "inferencia", "hipotese", "recomendacao")
 
 
-def confianca(natureza, *, amostra=None, unidade_amostra=("avaliação",
-                                                          "avaliações"),
+def confianca(natureza, *, amostra=None, unidade_amostra=None,
               janela_dias=None, medicoes=None,
               fonte=None, a_favor=None, contra=None, o_que_aumentaria=None,
               medido=True):
@@ -323,6 +343,24 @@ def confianca(natureza, *, amostra=None, unidade_amostra=("avaliação",
         média   fato com amostra curta, ou inferência bem sustentada
         baixa   hipótese, ou qualquer coisa com uma medição só
     """
+    # QUEM CONTA TEM DE DIZER O QUE CONTOU.
+    #
+    # `unidade_amostra` tinha ("avaliação","avaliações") como padrão, e o
+    # padrão é que produziu o metadado errado: o mapa de bairros passou 184
+    # CLÍNICAS e o carimbo publicou "medido em 184 avaliações"; o detector
+    # de mercado passou 3.863 avaliações de uma ficha e publicou "3863
+    # clínicas medidas". Nos dois casos o número estava certo e o
+    # substantivo, errado — e metadado errado é pior que ausente, porque
+    # parece rigor.
+    #
+    # Agora não há padrão: quem declara amostra declara a unidade dela.
+    if amostra is not None and not unidade_amostra:
+        raise ValueError(
+            "confianca(): amostra sem `unidade_amostra`. Diga o que foi "
+            "contado — ('clínica','clínicas'), ('busca testada','buscas "
+            "testadas'), ('avaliação','avaliações')… O padrão foi removido "
+            "porque ele publicava o substantivo errado em silêncio.")
+
     if natureza not in NATUREZAS:
         raise ValueError(f"natureza desconhecida: {natureza!r} "
                          f"— use uma de {NATUREZAS}")
@@ -521,3 +559,62 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# ------------------------------------------------------------------ bairro
+#
+# O TEXTO DO ENDEREÇO NÃO É UM CAMPO DE BAIRRO. O Google devolve o que o
+# dono da ficha digitou, e Mafra chegou com dezoito "bairros" onde existem
+# uns dez: `Bairro Bom Jesus`, `Bom Jesus` e `bom jesus` eram o mesmo lugar
+# contado três vezes; `Jardim do Moinho` e `Jardim Moinho` idem; e entraram
+# na lista `sala 6`, `numero 352` e uma rua inteira.
+#
+# Isso não é cosmética: bairro repetido divide a concentração e inventa
+# "espaço vago" onde a rede já está. A normalização é conservadora — junta
+# o que é o mesmo escrito diferente, e NÃO junta o que pode ser diferente.
+# `Centro`, `Centro I Baixada` e `Centro II Alto de Mafra` continuam
+# separados: são sub-bairros oficiais de Mafra, e fundi-los seria inventar.
+
+_BAIRRO_LIXO = re.compile(
+    r"^(sala|sl|apto?|ap|andar|conj(unto)?|bloco|bl|loja|lj|quadra|qd|lote|"
+    r"lt|km|cep|caixa postal|s/?n)\b", re.I)
+# O `\b` depois de "r\." nunca casa: ponto e espaço são os dois não-palavra,
+# então não há fronteira ali. Com o \b, "R. Cel. Joaquim Teixeira Sabóia" e
+# "Av. Brasil" passavam como bairro. O ponto entra como opcional na própria
+# alternativa, e a exigência vira o espaço que separa o tipo de via do nome.
+_BAIRRO_VIA = re.compile(
+    r"^(r|rua|av|avenida|trav|travessa|rod|rodovia|estrada|est|alameda|al|"
+    r"marginal|via|servid[aã]o|beco|largo|pra[cç]a|pç)\.?\s+\S", re.I)
+_BAIRRO_PREFIXO = re.compile(r"^(bairro|b\.|b°|bº|jd\.)\s+", re.I)
+_BAIRRO_STOP = {"do", "da", "de", "dos", "das", "e"}
+
+
+def _sem_acento(t):
+    import unicodedata
+    return "".join(c for c in unicodedata.normalize("NFD", str(t or ""))
+                   if unicodedata.category(c) != "Mn").lower().strip()
+
+
+def normaliza_bairro(b):
+    """Devolve (rotulo, chave) ou (None, None) quando não é bairro.
+
+    `rotulo` é o que vai à tela, em Título. `chave` é o que agrupa: sem
+    acento, sem caixa e sem as preposições que fazem "Jardim do Moinho" e
+    "Jardim Moinho" parecerem dois lugares.
+    """
+    b = re.sub(r"\s+", " ", str(b or "")).strip(" -–,.")
+    if not b:
+        return None, None
+    b = _BAIRRO_PREFIXO.sub("", b).strip()
+    if len(b) < 3 or _BAIRRO_LIXO.match(b) or _BAIRRO_VIA.match(b):
+        return None, None
+    if re.fullmatch(r"[\d\W]+", b) or re.search(r"\d{3}", b):
+        return None, None       # "numero 352", CEP solto, quadra numerada
+    palavras = [w for w in _sem_acento(b).split() if w not in _BAIRRO_STOP]
+    if not palavras:
+        return None, None
+    chave = " ".join(palavras)
+    # Título, mas preservando as preposições minúsculas do rótulo original
+    rotulo = " ".join(w if w.lower() in _BAIRRO_STOP else w[:1].upper() + w[1:]
+                      for w in b.split())
+    return rotulo, chave

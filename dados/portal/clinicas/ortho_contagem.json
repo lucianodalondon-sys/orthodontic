@@ -960,7 +960,7 @@
       "a_favor": [],
       "contra": [],
       "o_que_aumentaria": "mais avaliações com texto nesta loja",
-      "procedencia": "medido em 621 avaliações, 3 medições, 4 dias de janela"
+      "procedencia": "medido em 621 avaliações com texto, 3 medições, 4 dias de janela"
     }
   },
   "meu_territorio": {
@@ -977,14 +977,14 @@
       "km": 0.06,
       "avaliacoes": 34,
       "nota": 5,
-      "bairro": "Bairro da Glória"
+      "bairro": "da Glória"
     },
     "aparelho_mais_proximo": {
       "nome": "ODONTO ART DENTISTA 24 HORAS CONTAGEM",
       "km": 0.07,
       "avaliacoes": 1729,
       "nota": 4.8,
-      "bairro": "Bairro da Glória"
+      "bairro": "da Glória"
     },
     "unidade_da_rede_mais_proxima": null,
     "raios": {
@@ -1052,10 +1052,12 @@
           "janela_dias": 5,
           "medicoes": 2,
           "fonte": "dados/serie/categoria.jsonl (2026-08-08 → 2026-08-13)",
-          "a_favor": [],
+          "a_favor": [
+            "135 clínicas medidas nas duas rodadas"
+          ],
           "contra": [],
           "o_que_aumentaria": null,
-          "procedencia": "medido em 3863 clínicas medidas, 2 medições, 5 dias de janela"
+          "procedencia": "medido em 3863 avaliações nesta clínica, 2 medições, 5 dias de janela"
         }
       },
       {
@@ -1076,16 +1078,16 @@
         "evidencia": {},
         "confianca": {
           "natureza": "fato",
-          "confianca": "baixa",
+          "confianca": "media",
           "medido": true,
-          "amostra": null,
+          "amostra": 42,
           "janela_dias": null,
           "medicoes": 1,
           "fonte": "dados/serie/anuncios.jsonl",
           "a_favor": [],
           "contra": [],
           "o_que_aumentaria": null,
-          "procedencia": "sem amostra declarada, 1 medição"
+          "procedencia": "medido em 42 anúncios no ar, 1 medição"
         }
       }
     ],
@@ -1131,7 +1133,7 @@
           "natureza": "recomendacao",
           "confianca": "baixa",
           "medido": true,
-          "amostra": null,
+          "amostra": 57,
           "janela_dias": null,
           "medicoes": null,
           "fonte": "dados/portal/jornada.json",
@@ -1140,7 +1142,7 @@
           ],
           "contra": [],
           "o_que_aumentaria": "a próxima medição da jornada",
-          "procedencia": "sem amostra declarada"
+          "procedencia": "medido em 57 avaliações neste momento da jornada"
         }
       },
       {
