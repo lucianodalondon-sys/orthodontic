@@ -1,443 +1,445 @@
 {
- "praca_id": "contagem",
- "nome": "Contagem",
- "cidades": [
-  "Contagem/MG"
- ],
- "uf": [
-  "MG"
- ],
- "criada_em": "2026-08-08",
- "ibge": [
-  {
-   "municipio": "Contagem",
-   "uf": "MG",
-   "uf_nome": "Minas Gerais",
-   "ibge_id": 3118601,
-   "mesorregiao": "Metropolitana de Belo Horizonte",
-   "populacao_estimada": {
-    "ano": "2025",
-    "valor": "651718",
-    "unidade": "Pessoas"
-   },
-   "populacao_censo_2022": {
-    "ano": "2022",
-    "valor": "621863",
-    "unidade": "Pessoas"
-   },
-   "massa_salarial_mil_reais": {
-    "ano": "2023",
-    "valor": "45092393",
-    "unidade": "Mil Reais"
-   },
-   "idades": {
-    "por_faixa": {
-     "0a4": 34870,
-     "5a9": 38036,
-     "10a14": 37325,
-     "15a19": 39312,
-     "20a24": 47095,
-     "25a29": 49009,
-     "30a34": 49083,
-     "35a39": 51259,
-     "40a44": 54737,
-     "45a49": 44942,
-     "50a54": 41503,
-     "55a59": 37143,
-     "60a64": 31781
+  "praca_id": "contagem",
+  "nome": "Contagem",
+  "cidades": [
+    "Contagem/MG"
+  ],
+  "uf": [
+    "MG"
+  ],
+  "criada_em": "2026-08-08",
+  "ibge": [
+    {
+      "municipio": "Contagem",
+      "uf": "MG",
+      "uf_nome": "Minas Gerais",
+      "ibge_id": 3118601,
+      "mesorregiao": "Metropolitana de Belo Horizonte",
+      "populacao_estimada": {
+        "ano": "2025",
+        "valor": "651718",
+        "unidade": "Pessoas"
+      },
+      "populacao_censo_2022": {
+        "ano": "2022",
+        "valor": "621863",
+        "unidade": "Pessoas"
+      },
+      "massa_salarial_mil_reais": {
+        "ano": "2023",
+        "valor": "45092393",
+        "unidade": "Mil Reais"
+      },
+      "idades": {
+        "por_faixa": {
+          "0a4": 34870,
+          "5a9": 38036,
+          "10a14": 37325,
+          "15a19": 39312,
+          "20a24": 47095,
+          "25a29": 49009,
+          "30a34": 49083,
+          "35a39": 51259,
+          "40a44": 54737,
+          "45a49": 44942,
+          "50a54": 41503,
+          "55a59": 37143,
+          "60a64": 31781
+        },
+        "alvo_9_15": 52795,
+        "alvo_30_45": 155079
+      }
+    }
+  ],
+  "nota_geografia": "Contagem/MG é praça própria dentro da região metropolitana de Belo Horizonte: 651.718 habitantes, segunda maior cidade do estado. Faz divisa com BH, Betim e Ibirité, e o paciente atravessa — mas a cidade tem imprensa, prefeitura e identidade próprias, com página de memes de 164 mil seguidores. Tratar como bairro de BH seria o erro do forasteiro; tratar como isolada também.",
+  "locais": [
+    {
+      "local_id": "ortho_contagem",
+      "papel": "proprio",
+      "nome": "OrthoDontic",
+      "tipo": "franquia",
+      "place_id": "ChIJwTBhj0iVpgARR4lnwAkLt4E",
+      "avaliacoes_google": 855,
+      "nota_google": 4.6,
+      "endereco": "Av. João César de Oliveira, 3239 - Eldorado, Contagem - MG, 32340-001, Brasil",
+      "place_id_origem": "varredura google places 2026-08-08",
+      "location": {
+        "lat": -19.9385171,
+        "lng": -44.0496991
+      },
+      "bairro": "Eldorado",
+      "unidade": "OrthoDontic"
     },
-    "alvo_9_15": 52795,
-    "alvo_30_45": 155079
-   }
-  }
- ],
- "nota_geografia": "Contagem/MG é praça própria dentro da região metropolitana de Belo Horizonte: 651.718 habitantes, segunda maior cidade do estado. Faz divisa com BH, Betim e Ibirité, e o paciente atravessa — mas a cidade tem imprensa, prefeitura e identidade próprias, com página de memes de 164 mil seguidores. Tratar como bairro de BH seria o erro do forasteiro; tratar como isolada também.",
- "locais": [
-  {
-   "local_id": "ortho_contagem",
-   "papel": "proprio",
-   "nome": "OrthoDontic",
-   "tipo": "franquia",
-   "place_id": "ChIJwTBhj0iVpgARR4lnwAkLt4E",
-   "avaliacoes_google": 855,
-   "nota_google": 4.6,
-   "endereco": "Av. João César de Oliveira, 3239 - Eldorado, Contagem - MG, 32340-001, Brasil",
-   "place_id_origem": "varredura google places 2026-08-08",
-   "location": {
-    "lat": -19.9385171,
-    "lng": -44.0496991
-   }
-  },
-  {
-   "local_id": "you_align_orthodontics",
-   "papel": "concorrente",
-   "place_id": "ChIJ0SST_jrrpgAR0bwV8UFDxa4",
-   "nome": "You Align Orthodontics",
-   "avaliacoes_google": 1,
-   "nota_google": 5,
-   "endereco": "R. Refinária Duque de Caxias, 485 - Lj 5 - Petrolândia, Contagem - MG, 32072-170, Brasil",
-   "place_id_origem": "varredura google places 2026-08-08",
-   "descoberto_em": "2026-08-08",
-   "tipo_concorrente": "especialista de nicho (alinhador) — NÃO é da rede, apesar do nome",
-   "produto": {
-    "disputa_aparelho": "sim",
-    "porque": "o nome declara aparelho/ortodontia",
-    "menciona_aparelho": 0,
-    "avaliacoes_com_texto": 1
-   },
-   "location": {
-    "lat": -19.930197099999997,
-    "lng": -44.116210599999995
-   }
-  },
-  {
-   "local_id": "vitae_center_clinica_medic",
-   "papel": "concorrente",
-   "tipo_concorrente": "clínica odontológica (a classificar em visita)",
-   "place_id": "ChIJV6ERtJKVpgARt5eabTvQZ3Y",
-   "nome": "Vitae Center Clínica Médica e Odontológica",
-   "avaliacoes_google": 3837,
-   "nota_google": 4.4,
-   "endereco": "R. dos Ingás, 43 - Eldorado, Contagem - MG, 32315-120, Brasil",
-   "place_id_origem": "varredura google places 2026-08-08",
-   "descoberto_em": "2026-08-08",
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de odontologia geral: só 0 de 376 avaliações citam aparelho",
-    "menciona_aparelho": 0,
-    "avaliacoes_com_texto": 376
-   },
-   "location": {
-    "lat": -19.9440848,
-    "lng": -44.0388862
-   }
-  },
-  {
-   "local_id": "odonto_art_dentista_24_hor",
-   "papel": "concorrente",
-   "tipo_concorrente": "clínica odontológica (a classificar em visita)",
-   "place_id": "ChIJ18oR3ZyVpgARYmlLpsj_yJ8",
-   "nome": "ODONTO ART DENTISTA 24 HORAS CONTAGEM",
-   "avaliacoes_google": 1727,
-   "nota_google": 4.8,
-   "endereco": "Av. João César de Oliveira, 3339 - CJ2 - Bairro da Glória, Contagem - MG, 32340-001, Brasil",
-   "place_id_origem": "varredura google places 2026-08-08",
-   "descoberto_em": "2026-08-08",
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de odontologia geral: só 0 de 384 avaliações citam aparelho",
-    "menciona_aparelho": 0,
-    "avaliacoes_com_texto": 384
-   },
-   "location": {
-    "lat": -19.938507599999998,
-    "lng": -44.0503374
-   }
-  },
-  {
-   "local_id": "clinica_elevata_rede_odont",
-   "papel": "concorrente",
-   "tipo_concorrente": "clínica odontológica (a classificar em visita)",
-   "place_id": "ChIJX0Gq_pKVpgAR1zkMWkp4SmE",
-   "nome": "Clínica Elevata - Rede Odonto Eldorado",
-   "avaliacoes_google": 1292,
-   "nota_google": 4.9,
-   "endereco": "Av. João César de Oliveira, 2792 - SL 218 - Eldorado, Contagem - MG, 32310-000, Brasil",
-   "place_id_origem": "varredura google places 2026-08-08",
-   "descoberto_em": "2026-08-08",
-   "produto": {
-    "disputa_aparelho": "sem_evidencia",
-    "porque": "zona cinzenta: 3 de 49 avaliações citam aparelho (6%) — faz aparelho, mas não é o negócio principal",
-    "menciona_aparelho": 3,
-    "avaliacoes_com_texto": 49
-   },
-   "location": {
-    "lat": -19.938126099999998,
-    "lng": -44.048573999999995
-   }
-  },
-  {
-   "local_id": "odonto_prime_sao_caetano",
-   "papel": "concorrente",
-   "tipo_concorrente": "clínica de bairro",
-   "place_id": "ChIJvxpBKvDBpgARduMvC1yGCYU",
-   "nome": "Odonto Prime São Caetano",
-   "avaliacoes_google": 940,
-   "nota_google": 4.9,
-   "endereco": "Av. Tapajós, 539 - Industrial São Luiz, Contagem - MG, 32073-740, Brasil",
-   "place_id_origem": "varredura google places 2026-08-08",
-   "descoberto_em": "2026-08-08",
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de odontologia geral: só 2 de 245 avaliações citam aparelho",
-    "menciona_aparelho": 2,
-    "avaliacoes_com_texto": 245
-   },
-   "location": {
-    "lat": -19.9348772,
-    "lng": -44.1189512
-   }
-  },
-  {
-   "local_id": "orthopride_contagem",
-   "papel": "concorrente",
-   "tipo_concorrente": "rede franqueada concorrente",
-   "place_id": "ChIJ79oUrZOVpgARXO57EMyPPEM",
-   "nome": "Orthopride Contagem",
-   "avaliacoes_google": 875,
-   "nota_google": 4.4,
-   "endereco": "Av. João César de Oliveira, 2415 - Lj 4 - Eldorado, Contagem - MG, 32315-000, Brasil",
-   "place_id_origem": "varredura google places 2026-08-08",
-   "descoberto_em": "2026-08-08",
-   "produto": {
-    "disputa_aparelho": "sim",
-    "porque": "o nome declara aparelho/ortodontia",
-    "menciona_aparelho": 15,
-    "avaliacoes_com_texto": 139
-   },
-   "location": {
-    "lat": -19.9419213,
-    "lng": -44.0426662
-   }
-  },
-  {
-   "local_id": "in_siso",
-   "papel": "concorrente",
-   "tipo_concorrente": "especialista de nicho (siso)",
-   "place_id": "ChIJ4wH3O5OVpgAR7pEyIv4RmvY",
-   "nome": "In Siso",
-   "avaliacoes_google": 681,
-   "nota_google": 4.9,
-   "endereco": "Av. José Faria da Rocha, 4435 - Eldorado, Contagem - MG, 32310-210, Brasil",
-   "place_id_origem": "varredura google places 2026-08-08",
-   "descoberto_em": "2026-08-08",
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de odontologia geral: só 2 de 133 avaliações citam aparelho",
-    "menciona_aparelho": 2,
-    "avaliacoes_com_texto": 133
-   },
-   "location": {
-    "lat": -19.941780899999998,
-    "lng": -44.0398353
-   }
-  },
-  {
-   "local_id": "oral_clin_odontologia_dent",
-   "papel": "concorrente",
-   "tipo_concorrente": "clínica odontológica (a classificar em visita)",
-   "place_id": "ChIJn9PwTJqVpgARk8ABaeAm5rA",
-   "nome": "Oral Clin Odontologia - Dentista em Contagem | Alinhador Invisível | DTM e Bruxismo | Implantes | Canal com Microscópio",
-   "avaliacoes_google": 661,
-   "nota_google": 5,
-   "endereco": "Av. João César de Oliveira, 3359 - Sala211 - Eldorado, Contagem - MG, 32315-000, Brasil",
-   "place_id_origem": "varredura google places 2026-08-08",
-   "descoberto_em": "2026-08-08",
-   "produto": {
-    "disputa_aparelho": "sim",
-    "porque": "o nome declara aparelho/ortodontia",
-    "menciona_aparelho": 1,
-    "avaliacoes_com_texto": 85
-   },
-   "location": {
-    "lat": -19.938693999999998,
-    "lng": -44.050611
-   }
-  },
-  {
-   "local_id": "ippo_odontologia_integrada",
-   "papel": "concorrente",
-   "tipo_concorrente": "clínica odontológica (a classificar em visita)",
-   "place_id": "ChIJWXZch6OVpgARRFGyc6LIt3U",
-   "nome": "IPPO Odontologia Integrada",
-   "avaliacoes_google": 596,
-   "nota_google": 5,
-   "endereco": "Rua Portugal, 490 - Sl 202 - Eldorado, Contagem - MG, 32340-010, Brasil",
-   "place_id_origem": "varredura google places 2026-08-08",
-   "descoberto_em": "2026-08-08",
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de odontologia geral: só 1 de 111 avaliações citam aparelho",
-    "menciona_aparelho": 1,
-    "avaliacoes_com_texto": 111
-   },
-   "location": {
-    "lat": -19.9386728,
-    "lng": -44.046372399999996
-   }
-  },
-  {
-   "local_id": "odontomax_nathalia_duarte_b",
-   "papel": "concorrente",
-   "tipo_concorrente": "clínica odontológica (a classificar em visita)",
-   "place_id": "ChIJybwo2mSVpgAR8NCtJLaM2Q4",
-   "nome": "ODONTOMAX - Nathália Duarte (CRO-40548) - Implante, Aparelho, Clareamento, Prótese",
-   "avaliacoes_google": 582,
-   "nota_google": 5,
-   "endereco": "R. Monsenhor João Martins, 1745 - Novo Progresso, Contagem - MG, 32140-540, Brasil",
-   "place_id_origem": "varredura google places 2026-08-08",
-   "descoberto_em": "2026-08-08",
-   "produto": {
-    "disputa_aparelho": "sim",
-    "porque": "o nome declara aparelho/ortodontia",
-    "menciona_aparelho": 0,
-    "avaliacoes_com_texto": 0
-   },
-   "nota_separacao": "duas lojas da mesma clínica dividiam um local_id; o histórico de avaliações (coleta 08/08) é da loja ChIJj6d5..., que ficou com o id original",
-   "location": {
-    "lat": -19.901475599999998,
-    "lng": -44.026925999999996
-   }
-  },
-  {
-   "local_id": "odontomax_nathalia_duarte_",
-   "papel": "concorrente",
-   "tipo_concorrente": "clínica odontológica (a classificar em visita)",
-   "place_id": "ChIJj6d5Hz-VpgAR34sJSSvl2Gc",
-   "nome": "ODONTOMAX - Nathália Duarte (CRO-40548) - Implante, Aparelho, Clareamento, Prótese",
-   "avaliacoes_google": 526,
-   "nota_google": 4.9,
-   "endereco": "Av. João Gomes Cardoso, 2010 - Oitis, Contagem - MG, 32141-119, Brasil",
-   "place_id_origem": "varredura google places 2026-08-08",
-   "descoberto_em": "2026-08-08",
-   "produto": {
-    "disputa_aparelho": "sim",
-    "porque": "o nome declara aparelho/ortodontia",
-    "menciona_aparelho": 0,
-    "avaliacoes_com_texto": 67
-   },
-   "location": {
-    "lat": -19.9052589,
-    "lng": -44.0353302
-   }
-  },
-  {
-   "local_id": "dra_samila_resende_invisal",
-   "papel": "concorrente",
-   "tipo_concorrente": "clínica odontológica (a classificar em visita)",
-   "place_id": "ChIJOdnVQuiVpgARy8teQyQKypw",
-   "nome": "Dra. Samila Resende - Invisalign Doctor",
-   "avaliacoes_google": 515,
-   "nota_google": 5,
-   "endereco": "Av. João César de Oliveira, 2792 - Sala: 220 - Eldorado, Contagem - MG, 32315-000, Brasil",
-   "place_id_origem": "varredura google places 2026-08-08",
-   "descoberto_em": "2026-08-08",
-   "produto": {
-    "disputa_aparelho": "sim",
-    "porque": "o nome declara aparelho/ortodontia",
-    "menciona_aparelho": 0,
-    "avaliacoes_com_texto": 36
-   },
-   "location": {
-    "lat": -19.9383724,
-    "lng": -44.0486514
-   }
-  },
-  {
-   "local_id": "multiodonto_contagem",
-   "papel": "concorrente",
-   "tipo_concorrente": "rede regional",
-   "place_id": "ChIJidcAGDqVpgARdB6ynzBY840",
-   "nome": "Multiodonto Contagem",
-   "avaliacoes_google": 481,
-   "nota_google": 4.9,
-   "endereco": "Av. Pref. Gil Diniz, 1201 - Lj 01 - Fonte Grande, Contagem - MG, 32013-650, Brasil",
-   "place_id_origem": "varredura google places 2026-08-08",
-   "descoberto_em": "2026-08-08",
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de odontologia geral: só 0 de 99 avaliações citam aparelho",
-    "menciona_aparelho": 0,
-    "avaliacoes_com_texto": 99
-   },
-   "location": {
-    "lat": -19.9190521,
-    "lng": -44.0834884
-   }
-  },
-  {
-   "local_id": "oral_unic_implantes_contag",
-   "papel": "concorrente",
-   "tipo_concorrente": "clínica odontológica (a classificar em visita)",
-   "place_id": "ChIJzWroRvOVpgARLI8J6YHDieI",
-   "nome": "Oral Unic Implantes Contagem",
-   "avaliacoes_google": 436,
-   "nota_google": 4.8,
-   "endereco": "R. Cap. Antônio Joaquim da Paixão, 51 - Fonte Grande, Contagem - MG, 32041-230, Brasil",
-   "place_id_origem": "varredura google places 2026-08-08",
-   "descoberto_em": "2026-08-08",
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de implante: só 0 de 86 avaliações citam aparelho",
-    "menciona_aparelho": 0,
-    "avaliacoes_com_texto": 86
-   },
-   "location": {
-    "lat": -19.9154373,
-    "lng": -44.0810327
-   }
-  },
-  {
-   "local_id": "consultorio_dr_gustavo_esp",
-   "papel": "concorrente",
-   "tipo_concorrente": "clínica odontológica (a classificar em visita)",
-   "place_id": "ChIJA5nG1fiVpgARjLdRKD4IceQ",
-   "nome": "Consultório Dr. Gustavo Espíndola | Odontopediatra",
-   "avaliacoes_google": 411,
-   "nota_google": 5,
-   "endereco": "Av. Olímpio García, 472 - Sl 511 - Eldorado, Contagem - MG, 32315-140, Brasil",
-   "place_id_origem": "varredura google places 2026-08-08",
-   "descoberto_em": "2026-08-08",
-   "produto": {
-    "disputa_aparelho": "nao",
-    "porque": "a voz do cliente é de odontologia geral: só 1 de 122 avaliações citam aparelho",
-    "menciona_aparelho": 1,
-    "avaliacoes_com_texto": 122
-   },
-   "location": {
-    "lat": -19.9448054,
-    "lng": -44.0394821
-   }
-  }
- ],
- "por_que_esta_praca": "Preenche dois buracos de uma vez: primeira REGIÃO METROPOLITANA da amostra e primeira praça de Minas Gerais. A unidade tem 855 avaliações, a segunda maior que já medimos.",
- "joia_enterrada": {
-  "da_unidade": "nenhuma identificada — como em Feira e Palmas, muda de 'desenterrar' para 'construir'",
-  "da_praca": "a página de memes @contagemmemes tem 164 mil seguidores e É a voz da cidade. Em nenhuma outra praça o humor e a voz principal foram a mesma coisa.",
-  "status": "confirmado pela coleta de canais"
- },
- "clinica_escola": {
-  "existe": true,
-  "quais": [
-   "Centro Universitário Una Contagem — inaugurou clínica odontológica com atendimento gratuito (imprensa de abril)",
-   "Prefeitura — tratamento dentário gratuito para moradores (Jornal Diário de Contagem)"
+    {
+      "local_id": "you_align_orthodontics",
+      "papel": "concorrente",
+      "place_id": "ChIJ0SST_jrrpgAR0bwV8UFDxa4",
+      "nome": "You Align Orthodontics",
+      "avaliacoes_google": 1,
+      "nota_google": 5,
+      "endereco": "R. Refinária Duque de Caxias, 485 - Lj 5 - Petrolândia, Contagem - MG, 32072-170, Brasil",
+      "place_id_origem": "varredura google places 2026-08-08",
+      "descoberto_em": "2026-08-08",
+      "tipo_concorrente": "especialista de nicho (alinhador) — NÃO é da rede, apesar do nome",
+      "produto": {
+        "disputa_aparelho": "sim",
+        "porque": "o nome declara aparelho/ortodontia",
+        "menciona_aparelho": 0,
+        "avaliacoes_com_texto": 1
+      },
+      "location": {
+        "lat": -19.930197099999997,
+        "lng": -44.116210599999995
+      }
+    },
+    {
+      "local_id": "vitae_center_clinica_medic",
+      "papel": "concorrente",
+      "tipo_concorrente": "clínica odontológica (a classificar em visita)",
+      "place_id": "ChIJV6ERtJKVpgARt5eabTvQZ3Y",
+      "nome": "Vitae Center Clínica Médica e Odontológica",
+      "avaliacoes_google": 3837,
+      "nota_google": 4.4,
+      "endereco": "R. dos Ingás, 43 - Eldorado, Contagem - MG, 32315-120, Brasil",
+      "place_id_origem": "varredura google places 2026-08-08",
+      "descoberto_em": "2026-08-08",
+      "produto": {
+        "disputa_aparelho": "nao",
+        "porque": "a voz do cliente é de odontologia geral: só 0 de 376 avaliações citam aparelho",
+        "menciona_aparelho": 0,
+        "avaliacoes_com_texto": 376
+      },
+      "location": {
+        "lat": -19.9440848,
+        "lng": -44.0388862
+      }
+    },
+    {
+      "local_id": "odonto_art_dentista_24_hor",
+      "papel": "concorrente",
+      "tipo_concorrente": "clínica odontológica (a classificar em visita)",
+      "place_id": "ChIJ18oR3ZyVpgARYmlLpsj_yJ8",
+      "nome": "ODONTO ART DENTISTA 24 HORAS CONTAGEM",
+      "avaliacoes_google": 1727,
+      "nota_google": 4.8,
+      "endereco": "Av. João César de Oliveira, 3339 - CJ2 - Bairro da Glória, Contagem - MG, 32340-001, Brasil",
+      "place_id_origem": "varredura google places 2026-08-08",
+      "descoberto_em": "2026-08-08",
+      "produto": {
+        "disputa_aparelho": "nao",
+        "porque": "a voz do cliente é de odontologia geral: só 0 de 384 avaliações citam aparelho",
+        "menciona_aparelho": 0,
+        "avaliacoes_com_texto": 384
+      },
+      "location": {
+        "lat": -19.938507599999998,
+        "lng": -44.0503374
+      }
+    },
+    {
+      "local_id": "clinica_elevata_rede_odont",
+      "papel": "concorrente",
+      "tipo_concorrente": "clínica odontológica (a classificar em visita)",
+      "place_id": "ChIJX0Gq_pKVpgAR1zkMWkp4SmE",
+      "nome": "Clínica Elevata - Rede Odonto Eldorado",
+      "avaliacoes_google": 1292,
+      "nota_google": 4.9,
+      "endereco": "Av. João César de Oliveira, 2792 - SL 218 - Eldorado, Contagem - MG, 32310-000, Brasil",
+      "place_id_origem": "varredura google places 2026-08-08",
+      "descoberto_em": "2026-08-08",
+      "produto": {
+        "disputa_aparelho": "sem_evidencia",
+        "porque": "zona cinzenta: 3 de 49 avaliações citam aparelho (6%) — faz aparelho, mas não é o negócio principal",
+        "menciona_aparelho": 3,
+        "avaliacoes_com_texto": 49
+      },
+      "location": {
+        "lat": -19.938126099999998,
+        "lng": -44.048573999999995
+      }
+    },
+    {
+      "local_id": "odonto_prime_sao_caetano",
+      "papel": "concorrente",
+      "tipo_concorrente": "clínica de bairro",
+      "place_id": "ChIJvxpBKvDBpgARduMvC1yGCYU",
+      "nome": "Odonto Prime São Caetano",
+      "avaliacoes_google": 940,
+      "nota_google": 4.9,
+      "endereco": "Av. Tapajós, 539 - Industrial São Luiz, Contagem - MG, 32073-740, Brasil",
+      "place_id_origem": "varredura google places 2026-08-08",
+      "descoberto_em": "2026-08-08",
+      "produto": {
+        "disputa_aparelho": "nao",
+        "porque": "a voz do cliente é de odontologia geral: só 2 de 245 avaliações citam aparelho",
+        "menciona_aparelho": 2,
+        "avaliacoes_com_texto": 245
+      },
+      "location": {
+        "lat": -19.9348772,
+        "lng": -44.1189512
+      }
+    },
+    {
+      "local_id": "orthopride_contagem",
+      "papel": "concorrente",
+      "tipo_concorrente": "rede franqueada concorrente",
+      "place_id": "ChIJ79oUrZOVpgARXO57EMyPPEM",
+      "nome": "Orthopride Contagem",
+      "avaliacoes_google": 875,
+      "nota_google": 4.4,
+      "endereco": "Av. João César de Oliveira, 2415 - Lj 4 - Eldorado, Contagem - MG, 32315-000, Brasil",
+      "place_id_origem": "varredura google places 2026-08-08",
+      "descoberto_em": "2026-08-08",
+      "produto": {
+        "disputa_aparelho": "sim",
+        "porque": "o nome declara aparelho/ortodontia",
+        "menciona_aparelho": 15,
+        "avaliacoes_com_texto": 139
+      },
+      "location": {
+        "lat": -19.9419213,
+        "lng": -44.0426662
+      }
+    },
+    {
+      "local_id": "in_siso",
+      "papel": "concorrente",
+      "tipo_concorrente": "especialista de nicho (siso)",
+      "place_id": "ChIJ4wH3O5OVpgAR7pEyIv4RmvY",
+      "nome": "In Siso",
+      "avaliacoes_google": 681,
+      "nota_google": 4.9,
+      "endereco": "Av. José Faria da Rocha, 4435 - Eldorado, Contagem - MG, 32310-210, Brasil",
+      "place_id_origem": "varredura google places 2026-08-08",
+      "descoberto_em": "2026-08-08",
+      "produto": {
+        "disputa_aparelho": "nao",
+        "porque": "a voz do cliente é de odontologia geral: só 2 de 133 avaliações citam aparelho",
+        "menciona_aparelho": 2,
+        "avaliacoes_com_texto": 133
+      },
+      "location": {
+        "lat": -19.941780899999998,
+        "lng": -44.0398353
+      }
+    },
+    {
+      "local_id": "oral_clin_odontologia_dent",
+      "papel": "concorrente",
+      "tipo_concorrente": "clínica odontológica (a classificar em visita)",
+      "place_id": "ChIJn9PwTJqVpgARk8ABaeAm5rA",
+      "nome": "Oral Clin Odontologia - Dentista em Contagem | Alinhador Invisível | DTM e Bruxismo | Implantes | Canal com Microscópio",
+      "avaliacoes_google": 661,
+      "nota_google": 5,
+      "endereco": "Av. João César de Oliveira, 3359 - Sala211 - Eldorado, Contagem - MG, 32315-000, Brasil",
+      "place_id_origem": "varredura google places 2026-08-08",
+      "descoberto_em": "2026-08-08",
+      "produto": {
+        "disputa_aparelho": "sim",
+        "porque": "o nome declara aparelho/ortodontia",
+        "menciona_aparelho": 1,
+        "avaliacoes_com_texto": 85
+      },
+      "location": {
+        "lat": -19.938693999999998,
+        "lng": -44.050611
+      }
+    },
+    {
+      "local_id": "ippo_odontologia_integrada",
+      "papel": "concorrente",
+      "tipo_concorrente": "clínica odontológica (a classificar em visita)",
+      "place_id": "ChIJWXZch6OVpgARRFGyc6LIt3U",
+      "nome": "IPPO Odontologia Integrada",
+      "avaliacoes_google": 596,
+      "nota_google": 5,
+      "endereco": "Rua Portugal, 490 - Sl 202 - Eldorado, Contagem - MG, 32340-010, Brasil",
+      "place_id_origem": "varredura google places 2026-08-08",
+      "descoberto_em": "2026-08-08",
+      "produto": {
+        "disputa_aparelho": "nao",
+        "porque": "a voz do cliente é de odontologia geral: só 1 de 111 avaliações citam aparelho",
+        "menciona_aparelho": 1,
+        "avaliacoes_com_texto": 111
+      },
+      "location": {
+        "lat": -19.9386728,
+        "lng": -44.046372399999996
+      }
+    },
+    {
+      "local_id": "odontomax_nathalia_duarte_b",
+      "papel": "concorrente",
+      "tipo_concorrente": "clínica odontológica (a classificar em visita)",
+      "place_id": "ChIJybwo2mSVpgAR8NCtJLaM2Q4",
+      "nome": "ODONTOMAX - Nathália Duarte (CRO-40548) - Implante, Aparelho, Clareamento, Prótese",
+      "avaliacoes_google": 582,
+      "nota_google": 5,
+      "endereco": "R. Monsenhor João Martins, 1745 - Novo Progresso, Contagem - MG, 32140-540, Brasil",
+      "place_id_origem": "varredura google places 2026-08-08",
+      "descoberto_em": "2026-08-08",
+      "produto": {
+        "disputa_aparelho": "sim",
+        "porque": "o nome declara aparelho/ortodontia",
+        "menciona_aparelho": 0,
+        "avaliacoes_com_texto": 0
+      },
+      "nota_separacao": "duas lojas da mesma clínica dividiam um local_id; o histórico de avaliações (coleta 08/08) é da loja ChIJj6d5..., que ficou com o id original",
+      "location": {
+        "lat": -19.901475599999998,
+        "lng": -44.026925999999996
+      }
+    },
+    {
+      "local_id": "odontomax_nathalia_duarte_",
+      "papel": "concorrente",
+      "tipo_concorrente": "clínica odontológica (a classificar em visita)",
+      "place_id": "ChIJj6d5Hz-VpgAR34sJSSvl2Gc",
+      "nome": "ODONTOMAX - Nathália Duarte (CRO-40548) - Implante, Aparelho, Clareamento, Prótese",
+      "avaliacoes_google": 526,
+      "nota_google": 4.9,
+      "endereco": "Av. João Gomes Cardoso, 2010 - Oitis, Contagem - MG, 32141-119, Brasil",
+      "place_id_origem": "varredura google places 2026-08-08",
+      "descoberto_em": "2026-08-08",
+      "produto": {
+        "disputa_aparelho": "sim",
+        "porque": "o nome declara aparelho/ortodontia",
+        "menciona_aparelho": 0,
+        "avaliacoes_com_texto": 67
+      },
+      "location": {
+        "lat": -19.9052589,
+        "lng": -44.0353302
+      }
+    },
+    {
+      "local_id": "dra_samila_resende_invisal",
+      "papel": "concorrente",
+      "tipo_concorrente": "clínica odontológica (a classificar em visita)",
+      "place_id": "ChIJOdnVQuiVpgARy8teQyQKypw",
+      "nome": "Dra. Samila Resende - Invisalign Doctor",
+      "avaliacoes_google": 515,
+      "nota_google": 5,
+      "endereco": "Av. João César de Oliveira, 2792 - Sala: 220 - Eldorado, Contagem - MG, 32315-000, Brasil",
+      "place_id_origem": "varredura google places 2026-08-08",
+      "descoberto_em": "2026-08-08",
+      "produto": {
+        "disputa_aparelho": "sim",
+        "porque": "o nome declara aparelho/ortodontia",
+        "menciona_aparelho": 0,
+        "avaliacoes_com_texto": 36
+      },
+      "location": {
+        "lat": -19.9383724,
+        "lng": -44.0486514
+      }
+    },
+    {
+      "local_id": "multiodonto_contagem",
+      "papel": "concorrente",
+      "tipo_concorrente": "rede regional",
+      "place_id": "ChIJidcAGDqVpgARdB6ynzBY840",
+      "nome": "Multiodonto Contagem",
+      "avaliacoes_google": 481,
+      "nota_google": 4.9,
+      "endereco": "Av. Pref. Gil Diniz, 1201 - Lj 01 - Fonte Grande, Contagem - MG, 32013-650, Brasil",
+      "place_id_origem": "varredura google places 2026-08-08",
+      "descoberto_em": "2026-08-08",
+      "produto": {
+        "disputa_aparelho": "nao",
+        "porque": "a voz do cliente é de odontologia geral: só 0 de 99 avaliações citam aparelho",
+        "menciona_aparelho": 0,
+        "avaliacoes_com_texto": 99
+      },
+      "location": {
+        "lat": -19.9190521,
+        "lng": -44.0834884
+      }
+    },
+    {
+      "local_id": "oral_unic_implantes_contag",
+      "papel": "concorrente",
+      "tipo_concorrente": "clínica odontológica (a classificar em visita)",
+      "place_id": "ChIJzWroRvOVpgARLI8J6YHDieI",
+      "nome": "Oral Unic Implantes Contagem",
+      "avaliacoes_google": 436,
+      "nota_google": 4.8,
+      "endereco": "R. Cap. Antônio Joaquim da Paixão, 51 - Fonte Grande, Contagem - MG, 32041-230, Brasil",
+      "place_id_origem": "varredura google places 2026-08-08",
+      "descoberto_em": "2026-08-08",
+      "produto": {
+        "disputa_aparelho": "nao",
+        "porque": "a voz do cliente é de implante: só 0 de 86 avaliações citam aparelho",
+        "menciona_aparelho": 0,
+        "avaliacoes_com_texto": 86
+      },
+      "location": {
+        "lat": -19.9154373,
+        "lng": -44.0810327
+      }
+    },
+    {
+      "local_id": "consultorio_dr_gustavo_esp",
+      "papel": "concorrente",
+      "tipo_concorrente": "clínica odontológica (a classificar em visita)",
+      "place_id": "ChIJA5nG1fiVpgARjLdRKD4IceQ",
+      "nome": "Consultório Dr. Gustavo Espíndola | Odontopediatra",
+      "avaliacoes_google": 411,
+      "nota_google": 5,
+      "endereco": "Av. Olímpio García, 472 - Sl 511 - Eldorado, Contagem - MG, 32315-140, Brasil",
+      "place_id_origem": "varredura google places 2026-08-08",
+      "descoberto_em": "2026-08-08",
+      "produto": {
+        "disputa_aparelho": "nao",
+        "porque": "a voz do cliente é de odontologia geral: só 1 de 122 avaliações citam aparelho",
+        "menciona_aparelho": 1,
+        "avaliacoes_com_texto": 122
+      },
+      "location": {
+        "lat": -19.9448054,
+        "lng": -44.0394821
+      }
+    }
   ],
-  "brecha": "a de sempre: clínica-escola quase nunca faz aparelho de adolescente e adulto. Confirmar por telefone antes de usar como argumento."
- },
- "contexto_critico": {
-  "o_que": "A categoria odontológica de Contagem tem DOIS episódios graves na memória recente da cidade.",
-  "episodios": [
-   {
-    "fato": "Homem morreu durante tratamento de canal em clínica odontológica de Contagem",
-    "cobertura": "Rádio Itatiaia, CNN Brasil, Portal UAI — cobertura nacional",
-    "peso": "o paciente da cidade tem medo fresco e documentado"
-   },
-   {
-    "fato": "Dentista suspeito de abusar de adolescente foi preso e solto em Contagem",
-    "cobertura": "R7",
-    "peso": "envolve ADOLESCENTE, que é exatamente o paciente de aparelho. A mãe que decide leu essa notícia."
-   }
+  "por_que_esta_praca": "Preenche dois buracos de uma vez: primeira REGIÃO METROPOLITANA da amostra e primeira praça de Minas Gerais. A unidade tem 855 avaliações, a segunda maior que já medimos.",
+  "joia_enterrada": {
+    "da_unidade": "nenhuma identificada — como em Feira e Palmas, muda de 'desenterrar' para 'construir'",
+    "da_praca": "a página de memes @contagemmemes tem 164 mil seguidores e É a voz da cidade. Em nenhuma outra praça o humor e a voz principal foram a mesma coisa.",
+    "status": "confirmado pela coleta de canais"
+  },
+  "clinica_escola": {
+    "existe": true,
+    "quais": [
+      "Centro Universitário Una Contagem — inaugurou clínica odontológica com atendimento gratuito (imprensa de abril)",
+      "Prefeitura — tratamento dentário gratuito para moradores (Jornal Diário de Contagem)"
+    ],
+    "brecha": "a de sempre: clínica-escola quase nunca faz aparelho de adolescente e adulto. Confirmar por telefone antes de usar como argumento."
+  },
+  "contexto_critico": {
+    "o_que": "A categoria odontológica de Contagem tem DOIS episódios graves na memória recente da cidade.",
+    "episodios": [
+      {
+        "fato": "Homem morreu durante tratamento de canal em clínica odontológica de Contagem",
+        "cobertura": "Rádio Itatiaia, CNN Brasil, Portal UAI — cobertura nacional",
+        "peso": "o paciente da cidade tem medo fresco e documentado"
+      },
+      {
+        "fato": "Dentista suspeito de abusar de adolescente foi preso e solto em Contagem",
+        "cobertura": "R7",
+        "peso": "envolve ADOLESCENTE, que é exatamente o paciente de aparelho. A mãe que decide leu essa notícia."
+      }
+    ],
+    "o_que_isso_mudaria": "Em praça com esse histórico, comunicação de preço e de volume soa pior que em qualquer outra. O que a cidade precisa ouvir é segurança, nome do profissional, registro no CRO e rosto. É o oposto do 'PROCURAM-SE NOVOS PACIENTES'.",
+    "status": "achado de imprensa — vale confirmar data e desfecho antes de usar com o franqueado"
+  },
+  "o_que_nunca_dizer": [
+    "nada que soe a promoção agressiva ou urgência de venda",
+    "nada que trate aparelho como produto de prateleira",
+    "nada sem nome e registro do profissional visível"
   ],
-  "o_que_isso_mudaria": "Em praça com esse histórico, comunicação de preço e de volume soa pior que em qualquer outra. O que a cidade precisa ouvir é segurança, nome do profissional, registro no CRO e rosto. É o oposto do 'PROCURAM-SE NOVOS PACIENTES'.",
-  "status": "achado de imprensa — vale confirmar data e desfecho antes de usar com o franqueado"
- },
- "o_que_nunca_dizer": [
-  "nada que soe a promoção agressiva ou urgência de venda",
-  "nada que trate aparelho como produto de prateleira",
-  "nada sem nome e registro do profissional visível"
- ],
- "rotulo": "MG · Contagem",
- "cidades_rotulo": [
-  "MG · Contagem"
- ]
+  "rotulo": "MG · Contagem",
+  "cidades_rotulo": [
+    "MG · Contagem"
+  ]
 }

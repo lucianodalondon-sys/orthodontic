@@ -2,7 +2,7 @@
   "local_id": "ortho_cba_centro_norte",
   "praca_id": "cuiaba",
   "apresentacao": {
-    "unidade": "OrthoDontic Cuiabá Centro Norte",
+    "unidade": "OrthoDontic · Centro Norte",
     "cidade": "MT · Cuiabá",
     "endereco": "R. Barão de Melgaço, 3429 - Centro Norte, Cuiabá - MT, 78005-300",
     "desde": "8/ago",
@@ -12,17 +12,17 @@
     "lojas_irmas": [
       {
         "local_id": "ortho_cba_fernando_correa",
-        "unidade": "OrthoDontic Cuiabá Fernando Corrêa"
+        "unidade": "OrthoDontic · Pico do Amor"
       },
       {
         "local_id": "ortho_cba_dom_bosco",
-        "unidade": "OrthoDontic Cuiabá Dom Bosco (Centro Sul)"
+        "unidade": "OrthoDontic · Centro Sul"
       }
     ],
-    "frase": "OrthoDontic Cuiabá Centro Norte é escutada desde 8/ago, em 3 medições, e divide Cuiabá com mais 2 lojas da rede."
+    "frase": "OrthoDontic · Centro Norte é escutada desde 8/ago, em 3 medições, e divide Cuiabá com mais 2 lojas da rede."
   },
   "rotulo": "MT · Cuiabá",
-  "unidade": "OrthoDontic Cuiabá Centro Norte",
+  "unidade": "OrthoDontic · Centro Norte",
   "cabecalho": {
     "nota": 5,
     "avaliacoes": 1223,
@@ -337,6 +337,101 @@
       "contra": [],
       "o_que_aumentaria": "repetir a varredura de buscas noutra data",
       "procedencia": "medido em 151 buscas testadas, 1 medição"
+    }
+  },
+  "perto_da_clinica": {
+    "local_id": "ortho_cba_centro_norte",
+    "praca_id": "cuiaba",
+    "rotulo": "MT · Cuiabá",
+    "unidade": "OrthoDontic Cuiabá Centro Norte",
+    "medido_em": "2026-08-13",
+    "raio_m": 3000,
+    "de": 5,
+    "aparece_em": 5,
+    "em_primeiro": 3,
+    "melhor_posicao": 1,
+    "invisivel_perto": false,
+    "frase": "aparece em 5 de 5 buscas feitas a partir do próprio endereço, em 3 vezes em 1º lugar",
+    "buscas": [
+      {
+        "frase": "aparelho ortodôntico cuiaba",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 1223,
+        "topo_metros": 0
+      },
+      {
+        "frase": "dentista cuiabá centro",
+        "intencao": "BAIRRO",
+        "posicao": 9,
+        "topo": "Consultório Odontológico Dra Michelly Ramos. Atendimento de Urgência e Emergência",
+        "topo_avaliacoes": 14,
+        "topo_metros": 407
+      },
+      {
+        "frase": "ortodontista cuiabá",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 1223,
+        "topo_metros": 0
+      },
+      {
+        "frase": "ortodontista em cuiabá",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 1223,
+        "topo_metros": 0
+      },
+      {
+        "frase": "vaga ortodontista cuiaba",
+        "intencao": "RUÍDO",
+        "posicao": 2,
+        "topo": "Dra. Paula Viana | Dentista | Bairro Lixeira - Cuiabá",
+        "topo_avaliacoes": 62,
+        "topo_metros": 1456
+      }
+    ],
+    "quem_aparece_na_frente": [
+      {
+        "nome": "Consultório Odontológico Dra Michelly Ramos. Atendimento de Urgência e Emergência",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Dr. Eduardo Nascimento - Cirurgião Dentista",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Odonto Cuiabá",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "ODONTO MEDICINA 🦷",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Sorridents Centro Norte",
+        "vezes_na_frente": 1
+      }
+    ],
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 5,
+      "janela_dias": 0,
+      "medicoes": 1,
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
+    },
+    "na_cidade": {
+      "aparece_em": 4,
+      "de": 151
     }
   },
   "jornada": {

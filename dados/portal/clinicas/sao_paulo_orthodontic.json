@@ -1,0 +1,1589 @@
+{
+  "local_id": "sao_paulo_orthodontic",
+  "praca_id": "sao_paulo",
+  "apresentacao": {
+    "unidade": "OrthoDontic · Lapa",
+    "cidade": "SP · São Paulo",
+    "endereco": "Rua Doze de Outubro, 385 Conj: 32 - Lapa, São Paulo - SP, 05073-001",
+    "desde": null,
+    "medicoes": null,
+    "posicao_na_cidade": null,
+    "clinicas_na_cidade": null,
+    "lojas_irmas": [
+      {
+        "local_id": "orthodontic_sao_miguel_paulista",
+        "unidade": "OrthoDontic · São Miguel Paulista"
+      },
+      {
+        "local_id": "orthodontic_tatuape",
+        "unidade": "OrthoDontic · Tatuapé"
+      },
+      {
+        "local_id": "orthodontic_republica",
+        "unidade": "OrthoDontic · República"
+      }
+    ],
+    "frase": null
+  },
+  "rotulo": "SP · São Paulo",
+  "unidade": "OrthoDontic · Lapa",
+  "cabecalho": {
+    "nota": 4.7,
+    "avaliacoes": 189,
+    "ritmo": 6.5,
+    "meses_seguidos": 0,
+    "posicao": 11,
+    "de": 18
+  },
+  "faixa": "vermelha",
+  "urgencia": 65,
+  "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-13",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-27"
+  },
+  "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada",
+    "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": null,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "scripts/fila.py",
+      "a_favor": [
+        "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 6.5 avaliações/mês",
+        "11º lugar de 18 clínicas medidas na praça",
+        "155 anúncios no ar de 115 anunciantes, e nenhum é da rede"
+      ],
+      "contra": [],
+      "o_que_aumentaria": "o resultado medido na coleta seguinte (dados/serie/acoes.jsonl)",
+      "procedencia": "sem amostra declarada"
+    }
+  },
+  "gatilhos": [
+    {
+      "peso": 30,
+      "titulo": "O contador de avaliações parou",
+      "chave": "parada",
+      "fato": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 6.5 avaliações/mês",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "peso": 20,
+      "titulo": "Está na metade de baixo da própria praça",
+      "chave": "posicao",
+      "fato": "11º lugar de 18 clínicas medidas na praça",
+      "fonte": "dados/portal/rede_cruzamento.json"
+    },
+    {
+      "peso": 15,
+      "titulo": "Silêncio publicitário com leilão cheio",
+      "chave": "silencio",
+      "fato": "155 anúncios no ar de 115 anunciantes, e nenhum é da rede",
+      "fonte": "dados/serie/captacao.jsonl"
+    }
+  ],
+  "quem_avanca": null,
+  "o_que_mudou": null,
+  "sem_resposta": {
+    "abertas": null,
+    "com_texto": null,
+    "itens": [],
+    "itens_total": 0
+  },
+  "voz_do_paciente": null,
+  "rival": {
+    "comparados": [],
+    "vantagens_deles": [],
+    "fora": [],
+    "fora_total": 0,
+    "sem_comparacao_porque": null
+  },
+  "presenca_na_busca": {
+    "local_id": "sao_paulo_orthodontic",
+    "praca_id": "sao_paulo",
+    "rotulo": "SP · São Paulo",
+    "unidade": "OrthoDontic",
+    "avaliacoes_da_ficha": 189,
+    "aparece_em": 0,
+    "de": 193,
+    "pct": 0,
+    "melhor_posicao": null,
+    "frases_onde_aparece": [],
+    "invisivel": true,
+    "frase_do_topo": "Esta loja **não aparece em nenhuma** das 193 buscas que testamos na cidade.",
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 193,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/portas.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+      "procedencia": "medido em 193 buscas testadas, 1 medição"
+    }
+  },
+  "perto_da_clinica": {
+    "local_id": "sao_paulo_orthodontic",
+    "praca_id": "sao_paulo",
+    "rotulo": "SP · São Paulo",
+    "unidade": "OrthoDontic · Lapa",
+    "medido_em": "2026-08-13",
+    "raio_m": 3000,
+    "de": 5,
+    "aparece_em": 3,
+    "em_primeiro": 0,
+    "melhor_posicao": 2,
+    "invisivel_perto": false,
+    "frase": "aparece em 3 de 5 buscas feitas a partir do próprio endereço, melhor posição: 2º",
+    "buscas": [
+      {
+        "frase": "aparelho ortodontico sao paulo",
+        "intencao": "GENÉRICO",
+        "posicao": 2,
+        "topo": "Ana Karla de Souza",
+        "topo_avaliacoes": 290,
+        "topo_metros": 455
+      },
+      {
+        "frase": "melhor ortodontista de são paulo",
+        "intencao": "REPUTAÇÃO",
+        "posicao": null,
+        "topo": "Ana Karla de Souza",
+        "topo_avaliacoes": 290,
+        "topo_metros": 455
+      },
+      {
+        "frase": "ortodontista em sao paulo",
+        "intencao": "GENÉRICO",
+        "posicao": null,
+        "topo": "Dra. Myrna Biondo",
+        "topo_avaliacoes": 204,
+        "topo_metros": 5022
+      },
+      {
+        "frase": "ortodontista são paulo",
+        "intencao": "GENÉRICO",
+        "posicao": 6,
+        "topo": "Ana Karla de Souza",
+        "topo_avaliacoes": 290,
+        "topo_metros": 455
+      },
+      {
+        "frase": "vaga ortodontista sao paulo",
+        "intencao": "RUÍDO",
+        "posicao": 7,
+        "topo": "Dra Giuliana Rodrigues",
+        "topo_avaliacoes": 81,
+        "topo_metros": 171
+      }
+    ],
+    "quem_aparece_na_frente": [
+      {
+        "nome": "Ana Karla de Souza",
+        "vezes_na_frente": 4
+      },
+      {
+        "nome": "Dra. Cristina Wakamatsu",
+        "vezes_na_frente": 3
+      },
+      {
+        "nome": "Dra. ARIANE RAMOS - Disfunção ATM - DTM e Dor Orofacial.",
+        "vezes_na_frente": 3
+      },
+      {
+        "nome": "Dra. Myrna Biondo",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "Dra. Nadja Offa",
+        "vezes_na_frente": 2
+      }
+    ],
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 5,
+      "janela_dias": 0,
+      "medicoes": 1,
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
+    },
+    "na_cidade": {
+      "aparece_em": 0,
+      "de": 193
+    }
+  },
+  "jornada": {
+    "local_id": "sao_paulo_orthodontic",
+    "unidade": "OrthoDontic · Lapa",
+    "rotulo": "SP · São Paulo",
+    "com_texto": 83,
+    "sem_estagio": 65,
+    "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
+    "estagios": [
+      {
+        "estagio": "descoberta",
+        "rotulo": "Descoberta",
+        "o_que_e": "como me acharam",
+        "quem_resolve": "marketing e ficha do Google",
+        "medido": true,
+        "avaliacoes": 4,
+        "dor": 0,
+        "elogio": 4,
+        "pct_dor": 0,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "4 avaliações falam deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "contato",
+        "rotulo": "Contato",
+        "o_que_e": "telefone e WhatsApp",
+        "quem_resolve": "recepção",
+        "medido": true,
+        "avaliacoes": 3,
+        "dor": 2,
+        "elogio": 0,
+        "pct_dor": 67,
+        "amostra_curta": true,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2025-07-07",
+            "texto": "Vocês trocaram de contato? preciso falar com vocês!"
+          },
+          {
+            "nota": 1,
+            "data": "2025-10-23",
+            "texto": "Gostaria do no número do WhatsApp de vocês por favor."
+          }
+        ],
+        "frase": "3 avaliações falam deste momento, 2 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "agendamento",
+        "rotulo": "Agendamento",
+        "o_que_e": "marcar e remarcar",
+        "quem_resolve": "recepção",
+        "medido": false,
+        "avaliacoes": 0,
+        "dor": 0,
+        "elogio": 0,
+        "pct_dor": null,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": null,
+        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+      },
+      {
+        "estagio": "recepcao",
+        "rotulo": "Recepção",
+        "o_que_e": "chegar e esperar",
+        "quem_resolve": "recepção",
+        "medido": true,
+        "avaliacoes": 2,
+        "dor": 0,
+        "elogio": 2,
+        "pct_dor": 0,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "2 avaliações falam deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "avaliacao",
+        "rotulo": "Avaliação",
+        "o_que_e": "a primeira consulta",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 1,
+        "dor": 0,
+        "elogio": 1,
+        "pct_dor": 0,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "contratacao",
+        "rotulo": "Contratação",
+        "o_que_e": "preço, contrato e entrada",
+        "quem_resolve": "franqueado",
+        "medido": true,
+        "avaliacoes": 1,
+        "dor": 0,
+        "elogio": 0,
+        "pct_dor": 0,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "clinico",
+        "rotulo": "Atendimento clínico",
+        "o_que_e": "a cadeira",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 8,
+        "dor": 0,
+        "elogio": 7,
+        "pct_dor": 0,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": "8 avaliações falam deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "manutencao",
+        "rotulo": "Manutenção",
+        "o_que_e": "as voltas de cada mês",
+        "quem_resolve": "clínica",
+        "medido": false,
+        "avaliacoes": 0,
+        "dor": 0,
+        "elogio": 0,
+        "pct_dor": null,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": null,
+        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+      },
+      {
+        "estagio": "cobranca",
+        "rotulo": "Cobrança",
+        "o_que_e": "mensalidade e multa",
+        "quem_resolve": "franqueado",
+        "medido": false,
+        "avaliacoes": 0,
+        "dor": 0,
+        "elogio": 0,
+        "pct_dor": null,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": null,
+        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+      },
+      {
+        "estagio": "suporte",
+        "rotulo": "Suporte",
+        "o_que_e": "quando algo dá errado",
+        "quem_resolve": "franqueado",
+        "medido": false,
+        "avaliacoes": 0,
+        "dor": 0,
+        "elogio": 0,
+        "pct_dor": null,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": null,
+        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+      },
+      {
+        "estagio": "contencao",
+        "rotulo": "Fim e contenção",
+        "o_que_e": "alta e depois dela",
+        "quem_resolve": "clínica",
+        "medido": false,
+        "avaliacoes": 0,
+        "dor": 0,
+        "elogio": 0,
+        "pct_dor": null,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": null,
+        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+      }
+    ],
+    "manchete": "Nenhum momento da jornada concentra dor com amostra suficiente para virar manchete.",
+    "quem_resolve": null,
+    "e_clinico": null,
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 83,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/serie/reviews.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "mais avaliações com texto nesta loja",
+      "procedencia": "medido em 83 avaliações"
+    }
+  },
+  "meu_territorio": {
+    "local_id": "sao_paulo_orthodontic",
+    "unidade": "OrthoDontic · Lapa",
+    "medido": true,
+    "location": {
+      "lat": -23.521436299999998,
+      "lng": -46.7046912
+    },
+    "bairro": "Lapa",
+    "clinica_mais_proxima": {
+      "nome": "Orto Clube",
+      "km": 0.08,
+      "avaliacoes": 168,
+      "nota": 4.6,
+      "bairro": "Lapa"
+    },
+    "aparelho_mais_proximo": {
+      "nome": "Dentar Odontologia",
+      "km": 5.39,
+      "avaliacoes": 674,
+      "nota": 5,
+      "bairro": "Pinheiros"
+    },
+    "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 7.17,
+      "avaliacoes": 22,
+      "nota": 3,
+      "bairro": "República"
+    },
+    "raios": {
+      "1km": {
+        "clinicas": 2,
+        "de_aparelho": 0,
+        "da_rede": 0
+      },
+      "2km": {
+        "clinicas": 2,
+        "de_aparelho": 0,
+        "da_rede": 0
+      },
+      "5km": {
+        "clinicas": 6,
+        "de_aparelho": 0,
+        "da_rede": 0
+      }
+    },
+    "frase_fato": "a clínica mais próxima está a 0.08 km",
+    "proximidade_entre_unidades": null,
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 184,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+        "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 184 clínicas com coordenada, 1 medição"
+    }
+  },
+  "movimentos": {
+    "eventos": [],
+    "e_da_cidade": true,
+    "resumo": {
+      "praca_id": "sao_paulo",
+      "rotulo": "SP · São Paulo",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
+  "execucao": {
+    "local_id": "sao_paulo_orthodontic",
+    "praca_id": "sao_paulo",
+    "rotulo": "SP · São Paulo",
+    "unidade": "OrthoDontic · Lapa",
+    "itens": [
+      {
+        "problema": "Esta loja **não aparece em nenhuma** das 193 buscas que testamos na cidade.",
+        "e_marketing": true,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "seo_local",
+          "especialidade": "marketing local e Google Business",
+          "problema": "a unidade aparece em 0 buscas de 193 testadas na própria cidade",
+          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
+          "evidencias": [
+            "aparece em 0 de 193 buscas"
+          ],
+          "nao_fazer": [
+            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
+            "não prometer posição: o Google não vende ordem no mapa"
+          ],
+          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
+          "prazo": "30 dias",
+          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
+          "recoletar_em_dias": 30
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 193,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/portal/presenca_por_loja.json",
+          "a_favor": [
+            "Esta loja **não aparece em nenhuma** das 193 buscas que testamos na cidade."
+          ],
+          "contra": [
+            "uma medição só — a segunda dirá se é estrutural ou momento"
+          ],
+          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+          "procedencia": "medido em 193 buscas testadas, 1 medição"
+        }
+      }
+    ],
+    "de_marketing": 1,
+    "de_operacao": 0
+  },
+  "meu_bairro": {
+    "bairro": "Lapa",
+    "clinicas": 3,
+    "vizinhos_fortes": [
+      {
+        "nome": "Odontolapa | Lapa | Próximo a 12 de Outubro",
+        "nota": 4.9,
+        "avaliacoes": 175
+      },
+      {
+        "nome": "Orto Clube",
+        "nota": 4.6,
+        "avaliacoes": 168
+      }
+    ],
+    "frase": "3 clínicas varridas, e a unidade da rede está aqui",
+    "e_da_cidade": false
+  },
+  "acoes": {
+    "arcos": [
+      {
+        "arco_id": "sao_paulo_orthodontic|silencio",
+        "local_id": "sao_paulo_orthodontic",
+        "praca_id": "sao_paulo",
+        "gatilho": "silencio",
+        "problema": "155 anúncios no ar de 115 anunciantes, e nenhum é da rede",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": null,
+        "antes": null,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "sem ação padrão para este gatilho",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      },
+      {
+        "arco_id": "sao_paulo_orthodontic|parada",
+        "local_id": "sao_paulo_orthodontic",
+        "praca_id": "sao_paulo",
+        "gatilho": "parada",
+        "problema": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 6.5 avaliações/mês",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": "ritmo",
+        "antes": 6.5,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": 6.5,
+        "medido_em": "2026-08-13",
+        "veredito": "cedo_demais",
+        "dias": 0
+      },
+      {
+        "arco_id": "sao_paulo_orthodontic|posicao",
+        "local_id": "sao_paulo_orthodontic",
+        "praca_id": "sao_paulo",
+        "gatilho": "posicao",
+        "problema": "11º lugar de 18 clínicas medidas na praça",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": "posicao",
+        "antes": 11.0,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": 11.0,
+        "medido_em": "2026-08-13",
+        "veredito": "cedo_demais",
+        "dias": 0
+      }
+    ],
+    "total": 3,
+    "aviso": "O livro nasceu hoje. Nenhum arco completou 21 dias, então ainda não há veredito para ninguém — a primeira resposta vem na coleta seguinte."
+  },
+  "oferta_da_cidade": {
+    "praca_id": "sao_paulo",
+    "rotulo": "SP · São Paulo",
+    "anuncios_de_aparelho": 71,
+    "anunciantes": 49,
+    "fora_do_produto": 97,
+    "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
+    "sem_texto": 3,
+    "amostra_curta": false,
+    "tese": "A disputa desta cidade é por avaliação grátis — 20 dos 71 anúncios de aparelho medidos falam disso, seguido de alinhador invisível.",
+    "posicao_vaga": "Ninguém está falando de prova social — vende confiança em vez de preço.",
+    "eixos": [
+      {
+        "eixo": "avaliacao_gratis",
+        "rotulo": "Avaliação grátis",
+        "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+        "anuncios": 20,
+        "pct": 28,
+        "frase": "20 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "alinhador",
+        "rotulo": "Alinhador invisível",
+        "o_que_significa": "produto de ticket alto e público adulto",
+        "anuncios": 14,
+        "pct": 20,
+        "frase": "14 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "preco",
+        "rotulo": "Preço na frente",
+        "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
+        "anuncios": 11,
+        "pct": 15,
+        "frase": "11 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "autoridade",
+        "rotulo": "Autoridade técnica",
+        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+        "anuncios": 11,
+        "pct": 15,
+        "frase": "11 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "estetico",
+        "rotulo": "Aparelho estético",
+        "o_que_significa": "vende discrição — público que trabalha de frente",
+        "anuncios": 6,
+        "pct": 8,
+        "frase": "6 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "publico_infantil",
+        "rotulo": "Falado para criança e adolescente",
+        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+        "anuncios": 6,
+        "pct": 8,
+        "frase": "6 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "publico_adulto",
+        "rotulo": "Falado para adulto",
+        "o_que_significa": "disputa o adulto que adiou o tratamento",
+        "anuncios": 5,
+        "pct": 7,
+        "frase": "5 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "parcelamento",
+        "rotulo": "Parcelamento",
+        "o_que_significa": "vende a mensalidade, não o tratamento",
+        "anuncios": 4,
+        "pct": 6,
+        "frase": "4 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "urgencia",
+        "rotulo": "Urgência e escassez",
+        "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+        "anuncios": 3,
+        "pct": 4,
+        "frase": "3 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "rapidez",
+        "rotulo": "Rapidez do resultado",
+        "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+        "anuncios": 3,
+        "pct": 4,
+        "frase": "3 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "sem_entrada",
+        "rotulo": "Sem entrada",
+        "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
+        "anuncios": 1,
+        "pct": 1,
+        "frase": "1 anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "prova_social",
+        "rotulo": "Prova social",
+        "o_que_significa": "vende confiança em vez de preço",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      }
+    ],
+    "por_anunciante": [
+      {
+        "anunciante": "Funorte SP",
+        "eixos": [
+          "publico_adulto",
+          "publico_infantil",
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "Ortodontia Campinas ",
+        "eixos": [
+          "preco",
+          "parcelamento",
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "Bom Para Todos",
+        "eixos": [
+          "preco",
+          "sem_entrada",
+          "urgencia"
+        ]
+      },
+      {
+        "anunciante": "Instituto jacqueline Poli - B",
+        "eixos": [
+          "alinhador",
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "Odonto Special Vila Leopoldina",
+        "eixos": [
+          "alinhador",
+          "estetico",
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "Dra. Grázia Esteves",
+        "eixos": [
+          "avaliacao_gratis",
+          "alinhador",
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "OdontoCalles - Clínica Odontológica Avançada",
+        "eixos": [
+          "estetico"
+        ]
+      },
+      {
+        "anunciante": "Odontoclinic",
+        "eixos": [
+          "avaliacao_gratis",
+          "alinhador"
+        ]
+      }
+    ],
+    "e_da_cidade": true
+  },
+  "plano": "planos/sao_paulo_orthodontic",
+  "anuncios_da_cidade": {
+    "e_da_cidade": true,
+    "rotulo": "SP · São Paulo",
+    "manchete": "49 anunciantes compram aparelho em SP · São Paulo, e nenhum é da rede.",
+    "anuncios_ativos": 71,
+    "anunciantes_total": 49,
+    "somos_um_deles": false,
+    "anunciantes": [
+      {
+        "nome": "Bom Para Todos",
+        "nosso": false,
+        "anuncios": 4,
+        "paginas": [
+          "160339250507113"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Atenção REGIÃO DE SÃO PAULO!\n\nA oportunidade do Aparelho Ortodôntico também chegou na nossa clínica.\n\nVocê que possui os dentes tortos ou encavalados, vergonha ao sorrir quando vai tirar fotos... Essa é a oportunidade pelo qual você estava esperando!\n\nPor apenas R$99,90, com 0 ta…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Funorte SP",
+        "nosso": false,
+        "anuncios": 4,
+        "paginas": [
+          "773408879182405"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Paciente Modelo em Ortodontia na Funorte Santana. Vagas para crianças e adultos com condições especiais para tratamento ortodôntico.\n\nEstamos ao lado do metrô Portuguesa-Tietê e do Terminal Rodoviário do Tietê. Clique e fale no WhatsApp.",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dr. Wanderley M Moralejo",
+        "nosso": false,
+        "anuncios": 3,
+        "paginas": [
+          "615426048641259"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "🌟 Recupere seu Sorriso em Apenas 1 Dia!\nImplante Dentário no Grajaú com o Dr. Wanderley.\nAgende agora e volte a sorrir com confiança! \n.\n🌐 Clique no link da BIO ou acesse: wa.me/5511960636264\n.\n☎ Telefone (11) 5934-3584 | Whats: (11) 9 6063-6264\n😷 Dr. Wanderley – CROSP 75.741\n📍 E…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "OdontoCalles - Clínica Odontológica Avançada",
+        "nosso": false,
+        "anuncios": 3,
+        "paginas": [
+          "323276877841447"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "O Giovanne veio até a gente com uma dúvida, e saiu com um sorriso transformado. 😄\n\nO Spark é o aparelho ortodôntico estético que une discrição, conforto e resultado sem abrir mão de nada.\n\nQuer saber se o Spark é para você?\n👇 Fala com a gente!\n📲 (11) 99326-8500\n📍 Campo Belo, São …",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Ortodontia Campinas ",
+        "nosso": false,
+        "anuncios": 3,
+        "paginas": [
+          "240830062448915"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Coloque seu aparelho ortodôntico na clínica que é referência em Ortodontia em Campinas⭐⭐⭐⭐⭐\n\n🛑Condição especial para os 100 primeiros pacientes apenas R$70,00 reais a mensalidade!\n\n✅Alinhamento total \n✅Melhoria na fala e na satisfação pessoal\n✅Evita dores de cabeça por falta de o…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Campograndedc",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "663420316852112"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Prevenir é melhor que remediar! Faça seu tratamento odontológico aproveite cada sorriso em 2026 😁\n\nAqui na Odontoclinic você tem profissionais de todas as áreas. Se você precisa de uma clínica completa e que te atenda com eficiência nessa reta final de ano, você achou!\n\n👉 Implant…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dr João Pedro Mazzon Ortognática Mentoplastia em São Paulo",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "105944468231588"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "💎 Cirurgia Ortognática I Cirurgia da ATM 💎\n\n👉🏻 O @vini.ribeirao tinha processos degenerativos significativos em suas ATM’s levando a um importante retrognatismo que afetava diretamente sua qualidade de vida:\n\n✔️ Sono fragmentado e não reparador\n✔️ Cansaço diurno\n✔️ Dores articula…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Flex sorriso",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "194925477035596"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "✨ Conheça a clínica que vai mudar o seu sorriso\n\n🦷 Flex Sorriso Odontologia é o lugar certo para quem busca cuidado, estética e bem-estar em um só lugar. Com atendimento humanizado e foco em resultados naturais, a clínica oferece tratamentos pensados para cada tipo de sorriso.\n\n📍…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Instituto Vellini",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "132885380070287"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Especialização em Ortodontia em São Paulo: forme-se especialista com domínio em alinhadores e fluxo digital. 🦷\n\nA Especialização em Ortodontia do Instituto Vellini prepara o cirurgião-dentista para diagnóstico, planejamento e prática clínica real, com certificação reconhecida pel…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Instituto jacqueline Poli - B",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "103818822635399"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Parece plástico no começo, mas o resultado final é o mesmo de um aparelho fixo, só que o caminho até lá é bem mais tranquilo.\n\nSem fios, sem peças mexendo na boca, sem aquele desconforto que tanta gente tem medo de sentir.\n\nJá pensou em experimentar os alinhadores? Ou conhece alg…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odontoclinic",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "105086005586126",
+          "268954159645527"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "✨ O futuro dos sorrisos alinhados chegou!\nJá pensou em alinhar seus dentes sem o incômodo do aparelho tradicional? 🤔\n\nCom os alinhadores estéticos, você conquista um sorriso perfeito de forma discreta, confortável e rápida, sem fios, sem metal e com resultados surpreendentes. 😍\n\n…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odontoclinic - Santo Amaro",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "105938511915361"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "😁 Seu sorriso alinhado muda tudo\n\nDentes tortos, desalinhados ou mordida errada afetam não só o sorriso, mas também a autoestima, a mastigação e até a saúde bucal.\n\nCom o tratamento ortodôntico, você conquista um sorriso mais bonito, funcional e saudável, com acompanhamento profi…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odontoclinic Artur Alvim",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "395152487315983"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "🚨ATENÇÃO VOCÊ DE ARTUR ALVIM E REGIÃO🚨\n\nTemos o aparelho ideal para você.�⬇️\n\nAqui na clínica:\n🚫Não tem filas de espera.\n🚫Não tem burocracia.\n🚫Não tem enrolação.\n\n➔ Envie sua mensagem para o nosso 𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 tocando no Botão SAIBA MAIS e fale conosco.",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Ortoestética Tangará da Serra",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "100196879494605"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Não deixe que dentes tortos ou desalinhados tirem seu sorriso! Com a ajuda do Aparelho Ortodôntico, podemos corrigir essas imperfeições e dar a você um sorriso radiante e confiante. \n\n🎯 Descubra como podemos transformar seu sorriso, clicando no botão abaixo para agendar sua consu…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Vamos Sorrir São Paulo",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "100130306462569"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Um sorriso alinhado vai muito além da estética. ✨🦷\n\nCuidar do posicionamento dos dentes é investir na sua saúde, no seu conforto e na sua autoestima. Hoje, existem diferentes opções de tratamento para atender às necessidades e ao estilo de vida de cada paciente.\n\nSe você vem adia…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "ABO Regional Guarulhos",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "104187845627689"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Dentista, você sente que está na hora de evoluir na prática clínica?\n\nA teoria é importante, mas é na vivência clínica que você ganha segurança para atender melhor, lidar com casos reais e se posicionar com mais confiança no mercado.\n\nA Escola Clínica da ABO Guarulhos está com in…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "ABO Sorocaba Acadêmico",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "109035108628569"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Conheça o Curso de Especialização em Ortodontia, ministrado pelos renomados Dr. Weber Nogueira e Dr. Gustavo Vilasboas, aqui na ABO Sorocaba.\n\nSe você busca aprimorar suas habilidades e se destacar na área, essa é a oportunidade perfeita para dar o próximo passo rumo ao sucesso e…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Amiga Odontologia Resende",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "706059559249875"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "📍Pensando em colocar aparelho nos dentes, mas ainda não sabe onde iniciar seu tratamento ortodôntico?\nNa Amiga Odontologia, você encontra tecnologia, conforto e os melhores tipos de aparelhos para transformar o seu sorriso! 😁\n\nSomos clínica 5 estrelas no Google, referência em tra…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "André Bim -  Bucomaxilofacial",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "1842244889405695"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Ortodontia e Resultados\n\n Um bom preparo ortodôntico é essencial para atingir resultados estáveis, previsíveis e de excelência. O planejamento das movimentações dentárias deve ser definido antes mesmo da colocação do aparelho. A melhor forma, é através da simulação 2D.�� Paciente…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Buono Odontologia Especializada",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "265351830550491"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "⚠️ EXCLUSIVO para moradores da VILA GUSTAVO e região ⚠️\n\nTRATAMENTO ORTODÔNTICO: UPGRADE IDEAL PARA UM SORRISO BEM-CUIDADO! 😁\n\n➡ Os tratamentos ortodônticos com aparelhos convencionais são um dos procedimentos mais procurados por quem quer um sorriso alinhado e protegido para tod…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Clínica Barreto",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "1459237774307755"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Não existe nada melhor do que começar o mês com mensagens assim…\nCada feedback que recebemos é a prova de que um atendimento humanizado, aliado à odontologia estética de excelência, transforma não só sorrisos, mas também histórias de vida.\n\nAqui na Clínica Barreto, unimos tecnolo…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Consultório Dra. Rebeca Cabral",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "105577508914092"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "✨ Invisalign Day | Agosto ✨\n\nSeu sorriso merece mais do que um aparelho comum.\n\nDurante o Invisalign Day da RC Smile Odontologia, você terá condições exclusivas para iniciar seu tratamento com alinhadores transparentes Invisalign e conquistar o sorriso que sempre desejou com mais…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Cris Castro",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "2090106697966156"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Medo de dor e de “machucar a boca” é exatamente o que faz muita gente desistir do aparelho.\nEm Moema — São Paulo, eu trabalho com Invisalign: alinhadores transparentes, confortáveis e com um tratamento planejado e previsível.\n\nNa avaliação eu te mostro seu plano, as etapas e o qu…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dental Orto Line",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "596896537089533"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Se você procura economia, aqui é o lugar certo…🤩\n\n📦 Nas compras feitas em nosso site acima de R$ 99,00 o frete é GRÁTIS para todo o Estado de São Paulo.\n\n🗓️ Promoção válida de 20/07/2026 até 31/08/2026.\n\nAproveite para garantir seus produtos odontológicos com praticidade, rapidez…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dra. Caroline Guedes - Odontologia Integral",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "103853999154518"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "🦷 Você sonha com um sorriso perfeito, mas a ideia de aparelhos dentários o preocupa? Não deixe suas preocupações impedirem você de alcançar o sorriso dos seus sonhos. \n\nNossa equipe de especialistas em ortodontia está aqui para tornar sua jornada fácil e confortável. \n\n👉 Marque u…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dra. Grázia Esteves",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "816264298562987"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "📍 É do Jardim Paulista ou região?\nTransforme o seu sorriso com quem é referência em Invisalign em São Paulo!\n\n✅ Estrutura de ponta\n✅ Atendimento humanizado\n✅ Profissional com anos de experiência e especializações\n\nAgende sua avaliação e descubra como alinhar seus dentes de forma …",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dra. Isabella Fonseca",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "100788036172545"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Ao longo da criação desses textos, me veio à mente o agradecimento há alguns mestres que me guiaram na Odontologia e portanto, na minha vida profissional, @marcilio.endo @erick_thssousa @liviolages @gracielasipauba.odonto @thiagomonte_ortodontia @marcelodontus @marcelyachrystian …",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dra. Renata Vela ",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "941916292342182"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Sorriso bonito não acontece por acaso.\n\nEle é construído com diagnóstico certo, planejamento e tecnologia.\n\nOs alinhadores invisíveis corrigem os dentes de forma progressiva, confortável e quase imperceptível.\n\nO resultado vai muito além da estética: muda a confiança, a postura e…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Essenza Maxilofacial",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "494309357092743"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "✨ Harmonia facial, melhora na mastigação e mais qualidade de vida!\nA cirurgia ortognática vai muito além da estética — ela corrige a posição dos ossos da face, melhora a respiração, a fala e até as dores na ATM.\nSe você sofre com desalinhamento da mordida ou desconfortos funciona…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Eternità Clínica Odontológica",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "100475995458877"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Clínico Geral, Alinhador, Ortodontia, Odontopediatria, Implante, Prótese, Estética e mais! RT Dra Monique Vieira. CROSP-129884 EROM Odontologia Ltda CROSP-CL 023965 Rua Herval,1028 - Belenzinho",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Galle Schmidt - Odontologia além do Sorriso",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "333566107082012"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "❣️ Nós somos Dr Luiz Flavio Schmidt e Dra Shayene Galle Schmidt 🤍✨\n\n❣️ Juntos, buscamos levar O MELHOR da Odontologia, COM MUITO AMOR para os nossos pacientes!!! 😍\n\n❣️ AMAMOS poder participar da vida de vocês… amamos poder TRANSFORMAR SORRISOS E VIDAS!!! \n\n✨ Atendemos em SÃO JOSÉ…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Infinitty Odontologia & Estética",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "958772233996301"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Todo grande sorriso começa em um lugar especial. Seja bem-vindo à Infinitty Odontologia e Estética.\n\nOferecemos diversos tratamentos para cuidar da saúde e da beleza do seu sorriso, como tratamento de canal, colocação de implantes dentários, aparelho ortodôntico, clareamento dent…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Kore Odontologia",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "454311007771920"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "🦷✨ Seu sorriso merece um cuidado especial!\n\nNa Kóre Odontologia, você encontra tratamento ortodôntico com acompanhamento personalizado, segurança e preço justo para conquistar um sorriso mais bonito e saudável. 💖\n\n👉 Está na hora de colocar seu aparelho ou fazer a manutenção? Agen…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "M. Odonto",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "431605716881648"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "✨ Cada sorriso tem uma história, e este resultado mostra o quanto um diagnóstico preciso faz toda a diferença.\n\nNeste caso, além da mordida aberta anterior, a paciente apresentava um dente incluso, identificado por meio da radiografia. Com um planejamento ortodôntico cuidadoso, r…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Mais Sorriso Menininha",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "810359252162613"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "🦷 Seu novo sorriso está mais perto do que você imagina!\n\nNa Mais Sorriso Menininha, você inicia seu tratamento ortodôntico com condições especiais:\n\n✅ Instalação do aparelho + Raio-X Panorâmico + Limpeza por apenas R$ 69,90*\n✅ Manutenção mensal por apenas R$ 69,90*\n\nChegou a hora…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Mais Sorriso Parelheiros",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "871365452725359"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "🦷 Seu novo sorriso está mais perto do que você imagina!\n\nNa Mais Sorriso Parelheiros, você inicia seu tratamento ortodôntico com condições especiais:\n\n✅ Instalação do aparelho + Raio-X Panorâmico + Limpeza por apenas R$ 69,90*\n✅ Manutenção mensal por apenas R$ 69,90*\n\nChegou a ho…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Mundo Odonto",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "149951628543986"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "📍 Atendimento em Mauá\n\nVocê que é de Mauá  São Paulo e não está satisfeito com o seu sorriso…\n\nJá pensou em alinhar seus dentes de forma discreta e confortável?\n\nNa Mundo Odonto, trabalhamos com tratamento ortodôntico e alinhadores invisíveis, ideais para quem quer corrigir o sor…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odonto Blue Cubatão",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "939485795922162"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Hoje eu fui conhecer a @odontoblue.casqueiro e o que mais me chamou atenção foi o padrão deles: é uma franquia que veio de São Paulo, com uma equipe super preparada… e o atendimento? Sério, é outro nível. Totalmente humanizado, acolhedor e profissional!\n\nEntão, se você estava pro…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odonto Excellence Americana - Jd da Glória",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "1311934635328499"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Na Odonto Excellence, cuidamos do seu sorriso do início ao fim! 😁🦷\n\n Oferecemos tratamentos completos como:\n ✨ Limpeza e prevenção\n 😬 Ortodontia (aparelhos)\n 🦷 Prótese fixa e removível\n 😁 Implantes dentários\n 💎 Clareamento dental\n 🔧 Restaurações e estética dental\n❤️ Avaliação cor…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odonto Special Vila Leopoldina",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "1166620923196293"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Com o Aparelho Invisível seu tratamento é mais rápido, previsível e totalmente discreto! 😁\n\nConhecido também como aparelho invisível, o tratamento ortodôntico estudado por mais de 25 anos está fazendo um GRANDE SUCESSO para quem tem problemas com seu sorriso! \n\nVenha você também …",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odontoclinic Indaiatuba",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "810901202279287"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "🎯 Atenção Indaiatuba e Região! 🌟\n\nSeu sorriso pode (e deve) ser motivo de orgulho! 😁✨\n\nSe você tem dentes desalinhados, mordida cruzada, apinhamento ou qualquer outro desconforto com o seu sorriso, a Odontoclinic Indaiatuba  tem a solução ideal para você!\n\n🔹 Aparelhos Ortodôntico…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odontoclinic Iririú",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "424570144077093"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "ATENÇÃO VOCÊ QUE PRECISA DE APARELHO EM JOINVILLE E REGIÃO🚨\n\nAqui na Odontoclinic temos ⬇️\n\n✅ Os melhores preços da REGIÃO!\n\n✅ Qualidade no serviço e atendimento\n\n✅ Aparelhos, implantes, clareamentos e muito mais...\n\n🔥 Não perca mais TEMPO, clique no botão abaixo e agende sua ava…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Oral Unic Lapa SP",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "101676332296159"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Você sabia que o aparelho ortodôntico metálico continua sendo um dos tratamentos mais utilizados e confiáveis em todo o mundo?\n\nCom a evolução da ortodontia, os modelos atuais estão muito melhores: são menores, mais confortáveis e altamente eficientes. Ele é a escolha ideal para …",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Pinheiro Odontologia Araçoiaba",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "571464896384441"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Novidade na área!\n\nAo indicar um amigo para um tratamento ortodôntico conosco, você ganha vantagens exclusivas.\nNão perca tempo! Se tem alguém para indicar, entre em contato pelo nosso WhatsApp e aproveite.\n\n#sorria #sorriso #amigo #indicação\n#vantagens #pinheiroodontologia\n#dent…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Signal Clínica Odontológica",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "104303769056630"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Você adia colocar aparelho porque acha que vai doer, incomodar ou demorar muito?\n\nA ortodontia fixa continua sendo o tratamento mais eficaz pra alinhar os dentes de vez — e hoje, com acompanhamento certo, é mais confortável do que você imagina.\n\n✨ Conheça o tratamento ortodôntico…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Sorriso Reality",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "208752962323628"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Sorria com Confiança no Nosso Consultório Odontológico! \n\nDescubra o segredo para um sorriso saudável e radiante conosco! 😁🦷\n\n✨ Serviços Premium:\n\nCheck-ups Odontológicos\nTratamentos de Canal\nClareamento Dental\nImplantes Dentários\nOrtodontia Moderna\n\n📆 Agende Agora e Faça Seu Pro…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Templa Odontologia",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "477076268812560"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Ela chegou até nós em silêncio um sorriso tímido, escondido entre fotos evitadas e inseguranças que só quem já passou entende. Os espaços entre os dentes incomodavam, e mesmo após tentar diferentes caminhos, ainda não se sentia satisfeita.\n\nFoi então que decidiu confiar no nosso …",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Ultra Sorriso Clínica Odontológica Ltda",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "2115826155356582"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Eu sei por que você evita sorrir nas fotos…\n\nDentes tortos, apinhados ou com espaços que te incomodam cada vez mais, não é?\n\nMas você não precisa mais conviver com isso. Existe uma tecnologia moderna, mais confortável e rápida para alinhar seu sorriso sem aqueles elásticos do apa…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Unorte - Centro Universitário do Norte de São Paulo",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "437616349611964"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "A Especialização em Ortodontia da UNORTE oferece uma formação baseada na Filosofia MBT, uma das mais utilizadas no mundo, aliando evidências científicas atualizadas, prática clínica e integração entre Biologia, Biomecânica e Tecnologia para formar especialistas preparados para os…",
+        "de_outra_unidade": null
+      }
+    ],
+    "fora_do_produto": 100,
+    "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
+  },
+  "eventos": [
+    {
+      "data": "2026-08-13",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: O contador de avaliações parou",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-13",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Está na metade de baixo da própria praça",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-13",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Silêncio publicitário com leilão cheio",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-01",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 3★: “Boa localização. Bons valores dos serviços. Tratamento odontológico do filho faço aqui. Go…” · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    }
+  ]
+}

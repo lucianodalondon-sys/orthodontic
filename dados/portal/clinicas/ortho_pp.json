@@ -2,7 +2,7 @@
   "local_id": "ortho_pp",
   "praca_id": "prudente",
   "apresentacao": {
-    "unidade": "OrthoDontic Presidente Prudente",
+    "unidade": "OrthoDontic",
     "cidade": "SP · Presidente Prudente",
     "endereco": null,
     "desde": "15/jul",
@@ -10,10 +10,10 @@
     "posicao_na_cidade": null,
     "clinicas_na_cidade": null,
     "lojas_irmas": [],
-    "frase": "OrthoDontic Presidente Prudente é escutada desde 15/jul, em 4 medições."
+    "frase": "OrthoDontic é escutada desde 15/jul, em 4 medições."
   },
   "rotulo": "SP · Presidente Prudente",
-  "unidade": "OrthoDontic Presidente Prudente",
+  "unidade": "OrthoDontic",
   "cabecalho": {
     "nota": 4.9,
     "avaliacoes": 592,
@@ -338,6 +338,101 @@
       "contra": [],
       "o_que_aumentaria": "repetir a varredura de buscas noutra data",
       "procedencia": "medido em 106 buscas testadas, 1 medição"
+    }
+  },
+  "perto_da_clinica": {
+    "local_id": "ortho_pp",
+    "praca_id": "prudente",
+    "rotulo": "SP · Presidente Prudente",
+    "unidade": "OrthoDontic Presidente Prudente",
+    "medido_em": "2026-08-13",
+    "raio_m": 3000,
+    "de": 5,
+    "aparece_em": 2,
+    "em_primeiro": 1,
+    "melhor_posicao": 1,
+    "invisivel_perto": false,
+    "frase": "aparece em 2 de 5 buscas feitas a partir do próprio endereço, em 1 vez em 1º lugar",
+    "buscas": [
+      {
+        "frase": "dentista presidente prudente",
+        "intencao": "GENÉRICO",
+        "posicao": null,
+        "topo": "Dentista 24 Horas !!! Odontologia Santé Bucco - Dentaire",
+        "topo_avaliacoes": 47,
+        "topo_metros": 978
+      },
+      {
+        "frase": "dentista presidente prudente centro",
+        "intencao": "BAIRRO",
+        "posicao": null,
+        "topo": "Dia Do Sorriso",
+        "topo_avaliacoes": 212,
+        "topo_metros": 598
+      },
+      {
+        "frase": "dentista presidente prudente unimed",
+        "intencao": "CONVÊNIO",
+        "posicao": null,
+        "topo": "Dentista 24 Horas !!! Odontologia Santé Bucco - Dentaire",
+        "topo_avaliacoes": 47,
+        "topo_metros": 978
+      },
+      {
+        "frase": "ortodontista em presidente prudente",
+        "intencao": "GENÉRICO",
+        "posicao": 3,
+        "topo": "Dra. Ana Cláudia Balizardo - Ortodontia e Ortopedia Facial em Presidente Prudente",
+        "topo_avaliacoes": 1,
+        "topo_metros": 664
+      },
+      {
+        "frase": "ortodontista presidente prudente",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 592,
+        "topo_metros": 0
+      }
+    ],
+    "quem_aparece_na_frente": [
+      {
+        "nome": "Dra. Letícia Ribas - Dentista",
+        "vezes_na_frente": 3
+      },
+      {
+        "nome": "Dentista 24 Horas !!! Odontologia Santé Bucco - Dentaire",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "Dra. Carine Muniz",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "Heaven Odontologia - Dra Sandra Brito",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "Bongiovanni Odontologia | Implante Dentário | Dentista | Bairro do Bosque | Presidente Prudente - SP",
+        "vezes_na_frente": 1
+      }
+    ],
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 5,
+      "janela_dias": 0,
+      "medicoes": 1,
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
+    },
+    "na_cidade": {
+      "aparece_em": 2,
+      "de": 106
     }
   },
   "jornada": {

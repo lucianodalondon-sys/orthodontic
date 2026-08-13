@@ -527,6 +527,101 @@
       "procedencia": "medido em 140 buscas testadas, 1 medição"
     }
   },
+  "perto_da_clinica": {
+    "local_id": "ortho_contagem",
+    "praca_id": "contagem",
+    "rotulo": "MG · Contagem",
+    "unidade": "OrthoDontic",
+    "medido_em": "2026-08-13",
+    "raio_m": 3000,
+    "de": 5,
+    "aparece_em": 3,
+    "em_primeiro": 2,
+    "melhor_posicao": 1,
+    "invisivel_perto": false,
+    "frase": "aparece em 3 de 5 buscas feitas a partir do próprio endereço, em 2 vezes em 1º lugar",
+    "buscas": [
+      {
+        "frase": "aparelho ortodôntico contagem",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 858,
+        "topo_metros": 0
+      },
+      {
+        "frase": "dentista contagem",
+        "intencao": "GENÉRICO",
+        "posicao": null,
+        "topo": "ODONTO ART DENTISTA 24 HORAS CONTAGEM",
+        "topo_avaliacoes": 1729,
+        "topo_metros": 67
+      },
+      {
+        "frase": "dentista contagem perto de mim",
+        "intencao": "GENÉRICO",
+        "posicao": null,
+        "topo": "ODONTO ART DENTISTA 24 HORAS CONTAGEM",
+        "topo_avaliacoes": 1729,
+        "topo_metros": 67
+      },
+      {
+        "frase": "ortodontista contagem",
+        "intencao": "GENÉRICO",
+        "posicao": 2,
+        "topo": "Dra. Samila Resende - Invisalign Doctor",
+        "topo_avaliacoes": 516,
+        "topo_metros": 111
+      },
+      {
+        "frase": "ortodontista em contagem",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 858,
+        "topo_metros": 0
+      }
+    ],
+    "quem_aparece_na_frente": [
+      {
+        "nome": "ODONTO ART DENTISTA 24 HORAS CONTAGEM",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "Dr. Daniel Paixão | Canal e Urgência em Contagem",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "Oral Clin Odontologia - Dentista em Contagem | Alinhador Invisível | DTM e Bruxismo | Implantes | Canal com Microscópio",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "Inova Odontologia Integrada - Dentista em Contagem",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "Dra. Samila Resende - Invisalign Doctor",
+        "vezes_na_frente": 2
+      }
+    ],
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 5,
+      "janela_dias": 0,
+      "medicoes": 1,
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
+    },
+    "na_cidade": {
+      "aparece_em": 3,
+      "de": 140
+    }
+  },
   "jornada": {
     "local_id": "ortho_contagem",
     "unidade": "OrthoDontic",

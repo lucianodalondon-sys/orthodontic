@@ -2,7 +2,7 @@
   "local_id": "ortho_soro_jardim_faculdade",
   "praca_id": "sorocaba",
   "apresentacao": {
-    "unidade": "OrthoDontic",
+    "unidade": "OrthoDontic · Jardim Faculdade",
     "cidade": "SP · Sorocaba",
     "endereco": "R. Eulália Silva, 53 - Jardim Faculdade, Sorocaba - SP, 18030-230",
     "desde": null,
@@ -12,17 +12,17 @@
     "lojas_irmas": [
       {
         "local_id": "ortho_soro_vila_formosa",
-        "unidade": "OrthoDontic Vila Formosa"
+        "unidade": "OrthoDontic · Vila Formosa"
       },
       {
         "local_id": "ortho_soro_centro",
-        "unidade": "OrthoDontic Centro"
+        "unidade": "OrthoDontic · Centro"
       }
     ],
     "frase": null
   },
   "rotulo": "SP · Sorocaba",
-  "unidade": "OrthoDontic",
+  "unidade": "OrthoDontic · Jardim Faculdade",
   "cabecalho": {
     "nota": 4.3,
     "avaliacoes": 111,
@@ -170,6 +170,101 @@
       "contra": [],
       "o_que_aumentaria": "repetir a varredura de buscas noutra data",
       "procedencia": "medido em 195 buscas testadas, 1 medição"
+    }
+  },
+  "perto_da_clinica": {
+    "local_id": "ortho_soro_jardim_faculdade",
+    "praca_id": "sorocaba",
+    "rotulo": "SP · Sorocaba",
+    "unidade": "OrthoDontic Jardim Faculdade",
+    "medido_em": "2026-08-13",
+    "raio_m": 3000,
+    "de": 5,
+    "aparece_em": 2,
+    "em_primeiro": 0,
+    "melhor_posicao": 3,
+    "invisivel_perto": false,
+    "frase": "aparece em 2 de 5 buscas feitas a partir do próprio endereço, melhor posição: 3º",
+    "buscas": [
+      {
+        "frase": "aparelho ortodontico em sorocaba",
+        "intencao": "GENÉRICO",
+        "posicao": 5,
+        "topo": "Clínica Figueiredo - Invisalign Sorocaba - Ortodontia Digital - Dr. Márcio Figueiredo e Dr. Gustavo Figueiredo",
+        "topo_avaliacoes": 275,
+        "topo_metros": 524
+      },
+      {
+        "frase": "aparelho ortodôntico sorocaba",
+        "intencao": "GENÉRICO",
+        "posicao": 3,
+        "topo": "Clínica Figueiredo - Invisalign Sorocaba - Ortodontia Digital - Dr. Márcio Figueiredo e Dr. Gustavo Figueiredo",
+        "topo_avaliacoes": 275,
+        "topo_metros": 524
+      },
+      {
+        "frase": "ortodontista infantil sorocaba",
+        "intencao": "CRIANÇA",
+        "posicao": null,
+        "topo": "Dra. Meri Cleis R. Cordeiro - Odontopediatra | Dentista Infantil",
+        "topo_avaliacoes": 32,
+        "topo_metros": 362
+      },
+      {
+        "frase": "ortodontista sorocaba",
+        "intencao": "GENÉRICO",
+        "posicao": null,
+        "topo": "Clínica Figueiredo - Invisalign Sorocaba - Ortodontia Digital - Dr. Márcio Figueiredo e Dr. Gustavo Figueiredo",
+        "topo_avaliacoes": 275,
+        "topo_metros": 524
+      },
+      {
+        "frase": "ortodontista sorocaba sp",
+        "intencao": "GENÉRICO",
+        "posicao": null,
+        "topo": "Clínica Figueiredo - Invisalign Sorocaba - Ortodontia Digital - Dr. Márcio Figueiredo e Dr. Gustavo Figueiredo",
+        "topo_avaliacoes": 275,
+        "topo_metros": 524
+      }
+    ],
+    "quem_aparece_na_frente": [
+      {
+        "nome": "Clínica Figueiredo - Invisalign Sorocaba - Ortodontia Digital - Dr. Márcio Figueiredo e Dr. Gustavo Figueiredo",
+        "vezes_na_frente": 4
+      },
+      {
+        "nome": "Dra Cristiane Muscari - Invisalign - Tratamento de Ronco e Apneia - Sorocaba SP",
+        "vezes_na_frente": 4
+      },
+      {
+        "nome": "Dra. Míriam Scarpanti | Especialista em Canal, Consulta de Urgência 24 horas e Clínica Geral (somente particular)",
+        "vezes_na_frente": 3
+      },
+      {
+        "nome": "Dra. Daniela Rodrigues - Odontologia",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "Dra Daniela Pellegrini - Ortodontia e Invisalign Sorocaba",
+        "vezes_na_frente": 1
+      }
+    ],
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 5,
+      "janela_dias": 0,
+      "medicoes": 1,
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
+    },
+    "na_cidade": {
+      "aparece_em": 3,
+      "de": 195
     }
   },
   "jornada": {
@@ -589,24 +684,6 @@
   "acoes": {
     "arcos": [
       {
-        "arco_id": "ortho_soro_jardim_faculdade|silencio",
-        "local_id": "ortho_soro_jardim_faculdade",
-        "praca_id": "sorocaba",
-        "gatilho": "silencio",
-        "problema": "125 anúncios no ar de 47 anunciantes, e nenhum é da rede",
-        "evidencia": "dados/serie/fila_historico.jsonl",
-        "aberto_em": "2026-08-13",
-        "metrica": null,
-        "antes": null,
-        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
-        "acao_recomendada": "sem ação padrão para este gatilho",
-        "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": null,
-        "medido_em": null,
-        "veredito": "aberto",
-        "dias": 0
-      },
-      {
         "arco_id": "ortho_soro_jardim_faculdade|nota",
         "local_id": "ortho_soro_jardim_faculdade",
         "praca_id": "sorocaba",
@@ -659,6 +736,24 @@
         "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
         "dias": 1
+      },
+      {
+        "arco_id": "ortho_soro_jardim_faculdade|silencio",
+        "local_id": "ortho_soro_jardim_faculdade",
+        "praca_id": "sorocaba",
+        "gatilho": "silencio",
+        "problema": "125 anúncios no ar de 47 anunciantes, e nenhum é da rede",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": null,
+        "antes": null,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "sem ação padrão para este gatilho",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": "2026-08-13",
+        "veredito": "cedo_demais",
+        "dias": 0
       }
     ],
     "total": 4,

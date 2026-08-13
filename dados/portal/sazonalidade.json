@@ -1,6 +1,6 @@
 {
  "o_que_e": "A curva de procura por aparelho, medida no Google Trends por UF, 5 anos.",
- "medido_em": "2026-08-12",
+ "medido_em": "2026-08-13",
  "termo": "aparelho ortodôntico",
  "janela": "today 5-y",
  "granularidade_tentada": "estado (BR-UF)",
@@ -9,7 +9,7 @@
   "volume": "pelo menos 55% das semanas com busca e 9 meses do ano",
   "estabilidade": "o mês de pico repetido em pelo menos 3 dos anos medidos"
  },
- "regioes_medidas": 14,
+ "regioes_medidas": 15,
  "regioes_publicaveis": 0,
  "veredito": [
   {
@@ -199,6 +199,26 @@
    "estavel": true,
    "publicavel": false,
    "porque": "sem_volume"
+  },
+  {
+   "regiao": "RJ",
+   "semanas": 261,
+   "semanas_com_busca": 193,
+   "meses_com_busca": 12,
+   "volume_ok": true,
+   "anos": {
+    "2022": "MAI",
+    "2023": "ABR",
+    "2024": "AGO",
+    "2025": "SET",
+    "2026": "MAR"
+   },
+   "pico_mais_comum": "MAI",
+   "anos_medidos": 5,
+   "pico_repete_em": 1,
+   "estavel": false,
+   "publicavel": false,
+   "porque": "pico_nao_repete"
   },
   {
    "regiao": "RS",

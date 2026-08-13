@@ -40,14 +40,230 @@
       }
     ]
   },
-  "planos_das_lojas": [],
-  "oferta": null,
+  "papel": "franquia",
+  "eyebrow": "Praça · uma unidade medida de três na lista",
+  "tese_titulo": "A rede está no Rio e o Rio não a encontra",
+  "tese": "A lista oficial traz três unidades no Rio — Campo Grande, Bangu e Madureira — e a varredura alcançou uma. Essa única aparece em zero das 197 buscas testadas. Os três endereços são de subúrbio, longe do centro, e é isso que a varredura não alcança: ela não é um censo da cidade, é uma busca a partir de um ponto.",
+  "dna": [
+    "Três unidades na lista oficial, uma alcançada pela varredura",
+    "Zero aparições em 197 buscas medidas",
+    "Campo Grande, Bangu e Madureira — as três em subúrbio",
+    "28 bairros medidos numa cidade de 6,7 milhões",
+    "6 clínicas num raio de 1 km da unidade medida"
+  ],
+  "plano": [
+    "Localizar as duas unidades que a varredura não alcançou",
+    "Não concluir nada sobre elas: não foram medidas, o que é diferente de estarem mal",
+    "Conferir a ficha da unidade medida — zero de 197 é encontrabilidade, não reputação",
+    "Repetir a varredura a partir de outro ponto da cidade",
+    "Remedir em 30 dias"
+  ],
+  "base": "1800 avaliações medidas · 1379 com texto · 1 unidades da rede alcançadas pela varredura",
+  "citacoes": [
+    {
+      "texto": "Péssima experiência, atendente sem nenhuma vocação para lidar com público",
+      "nota": 1,
+      "data": "2023-03-14",
+      "fonte": "avaliação pública no Google"
+    },
+    {
+      "texto": "Dizem que aceitam plano vc coloca o plano no aplicativo ao chegar .Dizem que o plano foi descredenciado.",
+      "nota": 1,
+      "data": "2023-07-26",
+      "fonte": "avaliação pública no Google"
+    },
+    {
+      "texto": "Adorei o atendimento nota mil super atenciosos prestativos então de parabéns amei de mais",
+      "nota": 5,
+      "data": "2023-03-02",
+      "fonte": "avaliação pública no Google"
+    },
+    {
+      "texto": "Ótimo atendimento, profissionais e local, tudo bem higienizado e organizado; Demanda de paciente elevada, mas todos os funcionários deram conta do recado.",
+      "nota": 5,
+      "data": "2023-03-03",
+      "fonte": "avaliação pública no Google"
+    }
+  ],
+  "planos_das_lojas": [
+    {
+      "local_id": "rio_de_janei_orthodontic",
+      "unidade": "OrthoDontic",
+      "rotulo": "RJ · Rio de Janeiro",
+      "arquivo": "planos/rio_de_janei_orthodontic"
+    }
+  ],
+  "oferta": {
+    "praca_id": "rio_de_janeiro",
+    "rotulo": "RJ · Rio de Janeiro",
+    "anuncios_de_aparelho": 13,
+    "anunciantes": 8,
+    "fora_do_produto": 42,
+    "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
+    "sem_texto": 1,
+    "amostra_curta": false,
+    "tese": "A disputa desta cidade é por autoridade técnica — 7 dos 13 anúncios de aparelho medidos falam disso, seguido de avaliação grátis.",
+    "posicao_vaga": "Ninguém está falando de preço na frente — a cidade disputa por número; entrar aqui é entrar na briga mais cara.",
+    "eixos": [
+      {
+        "eixo": "autoridade",
+        "rotulo": "Autoridade técnica",
+        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+        "anuncios": 7,
+        "pct": 54,
+        "frase": "7 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "avaliacao_gratis",
+        "rotulo": "Avaliação grátis",
+        "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+        "anuncios": 4,
+        "pct": 31,
+        "frase": "4 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "alinhador",
+        "rotulo": "Alinhador invisível",
+        "o_que_significa": "produto de ticket alto e público adulto",
+        "anuncios": 3,
+        "pct": 23,
+        "frase": "3 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "publico_infantil",
+        "rotulo": "Falado para criança e adolescente",
+        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+        "anuncios": 3,
+        "pct": 23,
+        "frase": "3 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "estetico",
+        "rotulo": "Aparelho estético",
+        "o_que_significa": "vende discrição — público que trabalha de frente",
+        "anuncios": 1,
+        "pct": 8,
+        "frase": "1 anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "preco",
+        "rotulo": "Preço na frente",
+        "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "sem_entrada",
+        "rotulo": "Sem entrada",
+        "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "parcelamento",
+        "rotulo": "Parcelamento",
+        "o_que_significa": "vende a mensalidade, não o tratamento",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "publico_adulto",
+        "rotulo": "Falado para adulto",
+        "o_que_significa": "disputa o adulto que adiou o tratamento",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "urgencia",
+        "rotulo": "Urgência e escassez",
+        "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "prova_social",
+        "rotulo": "Prova social",
+        "o_que_significa": "vende confiança em vez de preço",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "rapidez",
+        "rotulo": "Rapidez do resultado",
+        "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      }
+    ],
+    "por_anunciante": [
+      {
+        "anunciante": "Ortolook Tijuca",
+        "eixos": [
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "LM Odontológica",
+        "eixos": [
+          "avaliacao_gratis",
+          "alinhador",
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "Versage Odontologia",
+        "eixos": [
+          "publico_infantil"
+        ]
+      },
+      {
+        "anunciante": "Dr. Daniel Pinheiro - Odonto Barra",
+        "eixos": [
+          "alinhador",
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "OdontoCompany Rio de Janeiro - Vargem Shopping ",
+        "eixos": [
+          "avaliacao_gratis",
+          "estetico"
+        ]
+      },
+      {
+        "anunciante": "Oral Concept Rio Implantes Dentários",
+        "eixos": [
+          "avaliacao_gratis",
+          "alinhador"
+        ]
+      },
+      {
+        "anunciante": "Inco25",
+        "eixos": [
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "Orthopride Cascadura",
+        "eixos": [
+          "avaliacao_gratis"
+        ]
+      }
+    ]
+  },
   "bairros": {
     "praca_id": "rio_de_janeiro",
     "rotulo": "RJ · Rio de Janeiro",
     "territorio": [
       {
-        "local_id": "orthodontic",
+        "local_id": "rio_de_janei_orthodontic",
         "unidade": "OrthoDontic",
         "medido": true,
         "location": {
@@ -120,7 +336,7 @@
     "unidades_localizadas": 1,
     "onde_estamos": [
       {
-        "local_id": "orthodontic",
+        "local_id": "rio_de_janei_orthodontic",
         "bairro": "Campo Grande",
         "unidade": "OrthoDontic"
       }
@@ -262,7 +478,7 @@
         "avaliacoes_somadas": 2474,
         "temos_unidade": true,
         "nossas": [
-          "orthodontic"
+          "rio_de_janei_orthodontic"
         ],
         "vizinhos_fortes": [
           {
@@ -1057,16 +1273,6 @@
       "avaliacoes": 386,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
-    },
-    {
-      "local_id": "orthodontic",
-      "nome": "OrthoDontic",
-      "tipo": "franquia",
-      "proprio": true,
-      "nota": 4.9,
-      "avaliacoes": 308,
-      "reviews_novos_mes": null,
-      "anuncios_ativos": null
     }
   ],
   "funil": null,
@@ -1257,7 +1463,16 @@
       "volume": "pelo menos 55% das semanas com busca e 9 meses do ano",
       "estabilidade": "o mês de pico repetido em pelo menos 3 dos anos medidos"
     },
-    "veredito_por_uf": [],
+    "veredito_por_uf": [
+      {
+        "regiao": "RJ",
+        "porque": "pico_nao_repete",
+        "semanas_com_busca": 193,
+        "semanas": 261,
+        "pico_repete_em": 1,
+        "anos_medidos": 5
+      }
+    ],
     "o_que_preenche": "nada que seja fonte externa: o Trends não publica índice para este termo nesta escala. Só dado interno da rede (agenda, contratos) diria quando a procura sobe — e isso é teto do produto",
     "quem_responde": "só a rede, por dentro"
   },

@@ -723,3 +723,157 @@ está pronto:**
    Mostre as duas datas no cabeçalho da tela de Clínicas: foi a
    divergência entre elas que fez o portal dizer 374 numa tela e 373
    noutra.
+
+## 11 · OS BLOCOS DE TERRITÓRIO E MOVIMENTO (payload já pronto)
+
+Nenhum item de menu novo. Tudo entra como capítulo dentro do que existe.
+
+### 11.1 · Na clínica — "Seu território"
+
+`meu_territorio` traz, por unidade: `location` (lat/lng), `bairro`,
+`clinica_mais_proxima`, `aparelho_mais_proximo`,
+`unidade_da_rede_mais_proxima` e `raios` em 1, 2 e 5 km — cada raio com
+`clinicas`, `de_aparelho` e `da_rede`.
+
+**A hierarquia semântica é obrigatória aqui**, e é o exemplo mais claro
+do carimbo de confiança:
+
+| o que a tela diz | natureza | como desenhar |
+|---|---|---|
+| "a clínica mais próxima está a 0,07 km" | **fato** | número grande, sólido |
+| "alta proximidade entre unidades da rede" | **inferência** | cor mais fria, rótulo em mono |
+| "pode haver sobreposição de mercado" | **hipótese** | texto, sem número gigante |
+| "estudar antes de abrir outra unidade aqui" | **recomendação** | cartão de ação, nunca com cara de medição |
+
+Escreva **"alta proximidade entre unidades"**, nunca "canibalização". E
+sempre que aparecer distância, o pé de bloco diz o que ela não é: linha
+reta não é tempo de deslocamento.
+
+Em Porto Alegre há quatro unidades a 130–250 metros umas das outras, e
+uma a 12 km delas com uma única clínica no raio de 1 km. Essas duas
+realidades na mesma cidade precisam parecer diferentes na tela.
+
+### 11.2 · Na clínica — "O que mudou ao seu redor"
+
+`movimentos.eventos[]`, com `titulo`, `fato`, `por_que_importa`,
+`decisao`, `severidade` e `confianca`. Vem marcado `e_da_cidade: true`.
+`movimentos.resumo.aviso_de_metodo` explica quantas clínicas entraram em
+cada medição e quantas eram comparáveis — mostre essa frase, é ela que
+impede o leitor de achar que sumiu clínica quando foi a varredura que
+variou.
+
+### 11.3 · Na clínica — "O que fazer"
+
+`execucao.itens[]`. Cada item tem `e_marketing` (booleano) e um bloco
+`execucao`. **Desenhe os dois de formas diferentes:**
+
+- `e_marketing: false` → é da unidade. Mostre `porque_nao_e_marketing`,
+  que explica por que campanha não resolve aquilo.
+- `e_marketing: true` → é briefing. Tem `problema`, `objetivo`,
+  `evidencias[]`, `nao_fazer[]`, `entregavel_sugerido`, `prazo`,
+  `metrica_de_validacao` e `recoletar_em_dias`.
+
+Não há orçamento e não há promessa de retorno. Se a tela inventar
+qualquer um dos dois, o produto perde a credibilidade inteira.
+
+### 11.4 · Na praça — "A cidade por dentro"
+
+`bairros` (com `territorio[]` de cada unidade),
+`movimentos_do_mercado`, `clinicas_com_coordenada` e
+`raios_declarados_km`. Cidade com várias unidades **não pode** parecer um
+mercado homogêneo: Porto Alegre tem 33 bairros medidos e a rede em
+quatro, com quatro lojas num só.
+
+### 11.5 · No painel — só o que mudou
+
+`franqueadora.json → movimentos_prioritarios`. Só entram eventos de
+severidade **alta ou crítica**; `total_no_periodo` diz quantos existem ao
+todo, e `pracas_sem_delta` lista as que têm uma medição só. Essa última
+lista importa: praça sem segunda medição **não é praça sem movimento**, é
+praça sem base de comparação, e a tela precisa dizer isso.
+
+---
+
+## 12 · A BUSCA TEM DUAS ESCALAS, E A TELA PRECISA MOSTRAR AS DUAS
+
+Este é o bloco mais importante desta rodada, porque ele **corrige uma
+conclusão errada que o portal já estava exibindo**.
+
+Até agora existia uma medida só: `presenca_na_busca` — "a clínica aparece
+em N de M buscas da cidade". Para Mafra, isso responde. Para São Paulo, o
+portal dizia **"aparece em 0 de 193 buscas"** para as quatro unidades da
+capital, e qualquer pessoa lendo aquilo concluiria que as quatro estão
+invisíveis e precisam da mesma coisa.
+
+A medição nova refez a mesma pergunta a partir do **endereço de cada
+clínica**, com viés circular de 3 km, e o resultado foi outro:
+
+| unidade | na cidade | perto dela |
+|---|---|---|
+| OrthoDontic · São Miguel Paulista | 0 de 193 | **5 de 5, todas em 1º** |
+| OrthoDontic · Tatuapé | 0 de 193 | 3 de 5 |
+| OrthoDontic · Lapa | 0 de 193 | 1 de 5 |
+| OrthoDontic · República | 0 de 193 | 1 de 5 |
+
+Quatro lojas da mesma cidade, dois diagnósticos opostos. Uma não precisa
+de nada; outra precisa de ficha revisada. A tela antiga mandava as quatro
+fazerem a mesma coisa.
+
+### 12.1 · O bloco novo na clínica — `perto_da_clinica`
+
+Campos prontos: `de`, `aparece_em`, `em_primeiro`, `melhor_posicao`,
+`invisivel_perto`, `raio_m`, `frase`, `buscas[]` (cada uma com `frase`,
+`posicao`, `topo`, `topo_avaliacoes`, `topo_metros`),
+`quem_aparece_na_frente[]` e `na_cidade` (`aparece_em`/`de` da leitura
+antiga, para a comparação lado a lado).
+
+Como desenhar:
+
+- As duas leituras aparecem **juntas e rotuladas**, nunca fundidas num
+  número só. Sugestão de rótulo de balcão: **"na cidade inteira"** e
+  **"perto da clínica"**. Nunca "local" e "global" — ninguém no balcão
+  fala assim.
+- Quando `na_cidade.aparece_em == 0` e `aparece_em > 0`, a tela precisa
+  dizer, com todas as letras, que a leitura de cidade **não vale nesta
+  escala**. Essa é a informação, não um detalhe de rodapé.
+- `buscas[]` é uma lista curta (5 itens). Mostre a frase, a posição
+  (ou "fora") e quem apareceu em primeiro. `topo_metros` é a distância em
+  metros entre o primeiro colocado e a porta da clínica — é o que torna a
+  linha concreta.
+- `quem_aparece_na_frente[]` é **posição, não roubo de paciente**. O texto
+  não pode sugerir canibalização: isso não está medido.
+
+### 12.2 · O que a tela NÃO pode dizer
+
+- Que o raio de 3 km é a área de captação. Não é: distância no mapa não é
+  tempo de deslocamento.
+- Que a clínica "perdeu" para quem está na frente. Ela está atrás na
+  ordem do mapa. Só isso.
+- Que a medição é volume de busca. Continua sem volume.
+
+### 12.3 · Cada unidade agora tem nome próprio
+
+As quatro linhas idênticas "SP · São Paulo · OrthoDontic" acabaram. O
+campo `unidade` chega desambiguado por bairro e, quando o bairro não
+basta (Porto Alegre tem quatro unidades no Centro Histórico, Curitiba
+quatro no Centro), por rua:
+
+    OrthoDontic · Tatuapé
+    OrthoDontic Centro Histórico · R. dos Andradas
+
+O casco **não monta** esse nome — ele chega pronto, como todo rótulo.
+Onde a tela hoje mostra `rotulo` sozinho e repete a cidade, use
+`rotulo` + `unidade`.
+
+### 12.4 · No Radar — `territorio`
+
+Cada linha do Radar (`oportunidades[]`, `ja_tem_unidade[]`,
+`nao_conferidas[]`) agora carrega `territorio`, com `bairros_medidos`,
+`clinicas_mapeadas`, `bairro_do_topo`, `clinicas_no_topo`, `pct_no_topo`,
+`frase` e `estudo` (link para a página da praça). Serve para diferenciar
+duas cidades com o mesmo total de clínicas: numa elas estão espalhadas,
+noutra empilhadas numa rua só.
+
+O campo `e_concentracao_nao_demanda` existe para ser **exibido**, não
+escondido: bairro cheio de clínica é onde as clínicas abrem, não
+necessariamente onde o paciente mora.

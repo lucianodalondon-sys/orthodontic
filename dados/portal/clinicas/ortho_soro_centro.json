@@ -2,7 +2,7 @@
   "local_id": "ortho_soro_centro",
   "praca_id": "sorocaba",
   "apresentacao": {
-    "unidade": "OrthoDontic",
+    "unidade": "OrthoDontic · Centro",
     "cidade": "SP · Sorocaba",
     "endereco": "R. da Penha, 426 - Apto 12 - Centro, Sorocaba - SP, 18010-000",
     "desde": null,
@@ -12,17 +12,17 @@
     "lojas_irmas": [
       {
         "local_id": "ortho_soro_vila_formosa",
-        "unidade": "OrthoDontic Vila Formosa"
+        "unidade": "OrthoDontic · Vila Formosa"
       },
       {
         "local_id": "ortho_soro_jardim_faculdade",
-        "unidade": "OrthoDontic Jardim Faculdade"
+        "unidade": "OrthoDontic · Jardim Faculdade"
       }
     ],
     "frase": null
   },
   "rotulo": "SP · Sorocaba",
-  "unidade": "OrthoDontic",
+  "unidade": "OrthoDontic · Centro",
   "cabecalho": {
     "nota": 4.5,
     "avaliacoes": 116,
@@ -170,6 +170,101 @@
       "contra": [],
       "o_que_aumentaria": "repetir a varredura de buscas noutra data",
       "procedencia": "medido em 195 buscas testadas, 1 medição"
+    }
+  },
+  "perto_da_clinica": {
+    "local_id": "ortho_soro_centro",
+    "praca_id": "sorocaba",
+    "rotulo": "SP · Sorocaba",
+    "unidade": "OrthoDontic Centro",
+    "medido_em": "2026-08-13",
+    "raio_m": 3000,
+    "de": 5,
+    "aparece_em": 4,
+    "em_primeiro": 1,
+    "melhor_posicao": 1,
+    "invisivel_perto": false,
+    "frase": "aparece em 4 de 5 buscas feitas a partir do próprio endereço, em 1 vez em 1º lugar",
+    "buscas": [
+      {
+        "frase": "aparelho ortodontico em sorocaba",
+        "intencao": "GENÉRICO",
+        "posicao": 2,
+        "topo": "Clínica Figueiredo - Invisalign Sorocaba - Ortodontia Digital - Dr. Márcio Figueiredo e Dr. Gustavo Figueiredo",
+        "topo_avaliacoes": 275,
+        "topo_metros": 920
+      },
+      {
+        "frase": "aparelho ortodôntico sorocaba",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 116,
+        "topo_metros": 0
+      },
+      {
+        "frase": "ortodontista infantil sorocaba",
+        "intencao": "CRIANÇA",
+        "posicao": null,
+        "topo": "Dra. Giovanna Loratto - Odontopediatra Sorocaba",
+        "topo_avaliacoes": 80,
+        "topo_metros": 932
+      },
+      {
+        "frase": "ortodontista sorocaba",
+        "intencao": "GENÉRICO",
+        "posicao": 5,
+        "topo": "Dentista Dra. Ana Lúcia Domingues",
+        "topo_avaliacoes": 224,
+        "topo_metros": 1293
+      },
+      {
+        "frase": "ortodontista sorocaba sp",
+        "intencao": "GENÉRICO",
+        "posicao": 8,
+        "topo": "Dentista Dra. Ana Lúcia Domingues",
+        "topo_avaliacoes": 224,
+        "topo_metros": 1293
+      }
+    ],
+    "quem_aparece_na_frente": [
+      {
+        "nome": "Clínica Figueiredo - Invisalign Sorocaba - Ortodontia Digital - Dr. Márcio Figueiredo e Dr. Gustavo Figueiredo",
+        "vezes_na_frente": 3
+      },
+      {
+        "nome": "Dentista Dra. Ana Lúcia Domingues",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "Dra. Daniela Rodrigues - Odontologia",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "Dra.Giovana Geretti",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "Dra. Giovanna Loratto - Odontopediatra Sorocaba",
+        "vezes_na_frente": 1
+      }
+    ],
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 5,
+      "janela_dias": 0,
+      "medicoes": 1,
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
+    },
+    "na_cidade": {
+      "aparece_em": 2,
+      "de": 195
     }
   },
   "jornada": {
@@ -667,24 +762,6 @@
   "acoes": {
     "arcos": [
       {
-        "arco_id": "ortho_soro_centro|silencio",
-        "local_id": "ortho_soro_centro",
-        "praca_id": "sorocaba",
-        "gatilho": "silencio",
-        "problema": "125 anúncios no ar de 47 anunciantes, e nenhum é da rede",
-        "evidencia": "dados/serie/fila_historico.jsonl",
-        "aberto_em": "2026-08-13",
-        "metrica": null,
-        "antes": null,
-        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
-        "acao_recomendada": "sem ação padrão para este gatilho",
-        "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": null,
-        "medido_em": null,
-        "veredito": "aberto",
-        "dias": 0
-      },
-      {
         "arco_id": "ortho_soro_centro|nota",
         "local_id": "ortho_soro_centro",
         "praca_id": "sorocaba",
@@ -719,6 +796,24 @@
         "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
         "dias": 1
+      },
+      {
+        "arco_id": "ortho_soro_centro|silencio",
+        "local_id": "ortho_soro_centro",
+        "praca_id": "sorocaba",
+        "gatilho": "silencio",
+        "problema": "125 anúncios no ar de 47 anunciantes, e nenhum é da rede",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": null,
+        "antes": null,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "sem ação padrão para este gatilho",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": "2026-08-13",
+        "veredito": "cedo_demais",
+        "dias": 0
       }
     ],
     "total": 3,

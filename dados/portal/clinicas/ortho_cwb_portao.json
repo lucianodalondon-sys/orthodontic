@@ -2,7 +2,7 @@
   "local_id": "ortho_cwb_portao",
   "praca_id": "curitiba",
   "apresentacao": {
-    "unidade": "OrthoDontic",
+    "unidade": "OrthoDontic · Portão",
     "cidade": "PR · Curitiba",
     "endereco": "R. Maranhão, 2286 - Portão, Curitiba - PR, 80610-001",
     "desde": null,
@@ -12,25 +12,25 @@
     "lojas_irmas": [
       {
         "local_id": "ortho_cwb_centro",
-        "unidade": "OrthoDontic Centro"
+        "unidade": "OrthoDontic · R. XV de Novembro"
       },
       {
         "local_id": "ortho_cwb_centro_2",
-        "unidade": "OrthoDontic Centro"
+        "unidade": "OrthoDontic · Av. Mal. Floriano Peixoto"
       },
       {
         "local_id": "ortho_cwb_centro_3",
-        "unidade": "OrthoDontic Centro"
+        "unidade": "OrthoDontic · Galeria Tijucas - Av. Luiz Xavier"
       },
       {
         "local_id": "ortho_cwb_centro_4",
-        "unidade": "OrthoDontic Centro"
+        "unidade": "OrthoDontic · Edifício Odin do Amaral - R. Mal. Deodoro"
       }
     ],
     "frase": null
   },
   "rotulo": "PR · Curitiba",
-  "unidade": "OrthoDontic",
+  "unidade": "OrthoDontic · Portão",
   "cabecalho": {
     "nota": 4.8,
     "avaliacoes": 270,
@@ -134,6 +134,85 @@
       "contra": [],
       "o_que_aumentaria": "repetir a varredura de buscas noutra data",
       "procedencia": "medido em 213 buscas testadas, 1 medição"
+    }
+  },
+  "perto_da_clinica": {
+    "local_id": "ortho_cwb_portao",
+    "praca_id": "curitiba",
+    "rotulo": "PR · Curitiba",
+    "unidade": "OrthoDontic Portão",
+    "medido_em": "2026-08-13",
+    "raio_m": 3000,
+    "de": 5,
+    "aparece_em": 5,
+    "em_primeiro": 4,
+    "melhor_posicao": 1,
+    "invisivel_perto": false,
+    "frase": "aparece em 5 de 5 buscas feitas a partir do próprio endereço, em 4 vezes em 1º lugar",
+    "buscas": [
+      {
+        "frase": "aparelho ortodôntico curitiba",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 270,
+        "topo_metros": 0
+      },
+      {
+        "frase": "aparelho ortodôntico curitiba preços",
+        "intencao": "PREÇO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 270,
+        "topo_metros": 0
+      },
+      {
+        "frase": "aparelho ortodôntico em curitiba",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 270,
+        "topo_metros": 0
+      },
+      {
+        "frase": "aparelho ortodôntico invisível curitiba",
+        "intencao": "TIPO DE APARELHO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 270,
+        "topo_metros": 0
+      },
+      {
+        "frase": "ortodontista curitiba",
+        "intencao": "GENÉRICO",
+        "posicao": 2,
+        "topo": "Dra. Barbara Lima| Ortodontia",
+        "topo_avaliacoes": 28,
+        "topo_metros": 1675
+      }
+    ],
+    "quem_aparece_na_frente": [
+      {
+        "nome": "Dra. Barbara Lima| Ortodontia",
+        "vezes_na_frente": 1
+      }
+    ],
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 5,
+      "janela_dias": 0,
+      "medicoes": 1,
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
+    },
+    "na_cidade": {
+      "aparece_em": 1,
+      "de": 213
     }
   },
   "jornada": {
@@ -474,24 +553,6 @@
   "acoes": {
     "arcos": [
       {
-        "arco_id": "ortho_cwb_portao|silencio",
-        "local_id": "ortho_cwb_portao",
-        "praca_id": "curitiba",
-        "gatilho": "silencio",
-        "problema": "85 anúncios no ar de 52 anunciantes, e nenhum é da rede",
-        "evidencia": "dados/serie/fila_historico.jsonl",
-        "aberto_em": "2026-08-13",
-        "metrica": null,
-        "antes": null,
-        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
-        "acao_recomendada": "sem ação padrão para este gatilho",
-        "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": null,
-        "medido_em": null,
-        "veredito": "aberto",
-        "dias": 0
-      },
-      {
         "arco_id": "ortho_cwb_portao|posicao",
         "local_id": "ortho_cwb_portao",
         "praca_id": "curitiba",
@@ -508,6 +569,24 @@
         "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
         "dias": 1
+      },
+      {
+        "arco_id": "ortho_cwb_portao|silencio",
+        "local_id": "ortho_cwb_portao",
+        "praca_id": "curitiba",
+        "gatilho": "silencio",
+        "problema": "85 anúncios no ar de 52 anunciantes, e nenhum é da rede",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": null,
+        "antes": null,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "sem ação padrão para este gatilho",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": "2026-08-13",
+        "veredito": "cedo_demais",
+        "dias": 0
       }
     ],
     "total": 2,

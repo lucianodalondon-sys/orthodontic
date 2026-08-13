@@ -180,8 +180,10 @@ def main():
               f"{str(x['pct']) + '%':>5}{marca}")
     print(f"\n  {d['manchete']}")
     for av in d["avisos"]:
-        print(f"  aviso · {av['rotulo']}: {av['aparicoes_sem_dono']} aparições "
-              f"sem dono ({av['por_que'][:60]}…)")
+        print(f"  aviso · {av['rotulo']}: "
+              + conta(av["aparicoes_sem_dono"], "aparição sem dono",
+                      "aparições sem dono")
+              + f" ({av['por_que'][:60]}…)")
     if a.salvar:
         PORTAL.mkdir(parents=True, exist_ok=True)
         (PORTAL/"presenca_por_loja.json").write_text(

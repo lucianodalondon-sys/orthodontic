@@ -40,15 +40,238 @@
       }
     ]
   },
-  "planos_das_lojas": [],
-  "oferta": null,
+  "papel": "franquia",
+  "eyebrow": "Praça · duas unidades no meio da maior densidade medida",
+  "tese_titulo": "Setenta clínicas num raio de um quilômetro",
+  "tese": "As duas unidades de Uberlândia têm 70 e 78 clínicas num raio de 1 km — a maior densidade de concorrência medida em todas as praças do projeto. E aparecem em 0 e 1 das 164 buscas testadas. Estar no meio de onde a categoria se concentra é vantagem de passagem e desvantagem de disputa: quem procura no Google encontra dezenas antes de encontrar a rede.",
+  "dna": [
+    "70 e 78 clínicas em 1 km — a maior densidade medida no projeto",
+    "0 e 1 aparição em 164 buscas testadas",
+    "As duas unidades a 0,05 e 0,12 km da clínica mais próxima",
+    "31 bairros medidos, a rede em dois",
+    "Três unidades na lista oficial, duas alcançadas"
+  ],
+  "plano": [
+    "Encontrabilidade primeiro: densidade alta e presença zero é a pior combinação",
+    "Conferir se as duas fichas estão distintas entre si no Google",
+    "Ler a oferta dos vizinhos antes de responder com preço",
+    "Remedir as mesmas 164 buscas em 30 dias",
+    "Levar a densidade para a conversa de expansão da cidade"
+  ],
+  "base": "1801 avaliações medidas · 1400 com texto · 2 unidades da rede alcançadas pela varredura",
+  "citacoes": [
+    {
+      "texto": "Queria apenas fazer uma avaliação e demoraram horrores, acabei indo embora pela demora sem a minha avaliação 🥲",
+      "nota": 1,
+      "data": "2026-06-30",
+      "fonte": "avaliação pública no Google"
+    },
+    {
+      "texto": "Pessima experiência!! Uma das piores clínicas que já fui na minha vida. Não recomendo, preço um absurdo, sem contar no atendimento.",
+      "nota": 1,
+      "data": "2024-04-01",
+      "fonte": "avaliação pública no Google"
+    },
+    {
+      "texto": "Muito boa, a recepcionista Andrieli é muito educada!\n\nServiços são de altíssima qualidade.",
+      "nota": 5,
+      "data": "2026-02-26",
+      "fonte": "avaliação pública no Google"
+    },
+    {
+      "texto": "Foi maravilhoso são excelentes  profissionais com muita dedicação e sabem como tratar um cliente!",
+      "nota": 5,
+      "data": "2026-02-26",
+      "fonte": "avaliação pública no Google"
+    }
+  ],
+  "planos_das_lojas": [
+    {
+      "local_id": "uberlandia_orthodontic",
+      "unidade": "OrthoDontic · Praça Adolfo Fonseca",
+      "rotulo": "MG · Uberlândia",
+      "arquivo": "planos/uberlandia_orthodontic"
+    },
+    {
+      "local_id": "uberlandia_orthodontic_centro",
+      "unidade": "OrthoDontic · Av. Floriano Peixoto",
+      "rotulo": "MG · Uberlândia",
+      "arquivo": "planos/uberlandia_orthodontic_centro"
+    }
+  ],
+  "oferta": {
+    "praca_id": "uberlandia",
+    "rotulo": "MG · Uberlândia",
+    "anuncios_de_aparelho": 18,
+    "anunciantes": 11,
+    "fora_do_produto": 96,
+    "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
+    "sem_texto": 4,
+    "amostra_curta": false,
+    "tese": "A disputa desta cidade é por avaliação grátis — 8 dos 18 anúncios de aparelho medidos falam disso, seguido de alinhador invisível.",
+    "posicao_vaga": "Ninguém está falando de sem entrada — tira a barreira do primeiro pagamento — ataca quem não tem reserva.",
+    "eixos": [
+      {
+        "eixo": "avaliacao_gratis",
+        "rotulo": "Avaliação grátis",
+        "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+        "anuncios": 8,
+        "pct": 44,
+        "frase": "8 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "alinhador",
+        "rotulo": "Alinhador invisível",
+        "o_que_significa": "produto de ticket alto e público adulto",
+        "anuncios": 5,
+        "pct": 28,
+        "frase": "5 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "parcelamento",
+        "rotulo": "Parcelamento",
+        "o_que_significa": "vende a mensalidade, não o tratamento",
+        "anuncios": 4,
+        "pct": 22,
+        "frase": "4 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "urgencia",
+        "rotulo": "Urgência e escassez",
+        "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+        "anuncios": 2,
+        "pct": 11,
+        "frase": "2 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "preco",
+        "rotulo": "Preço na frente",
+        "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
+        "anuncios": 1,
+        "pct": 6,
+        "frase": "1 anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "autoridade",
+        "rotulo": "Autoridade técnica",
+        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+        "anuncios": 1,
+        "pct": 6,
+        "frase": "1 anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "rapidez",
+        "rotulo": "Rapidez do resultado",
+        "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+        "anuncios": 1,
+        "pct": 6,
+        "frase": "1 anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "sem_entrada",
+        "rotulo": "Sem entrada",
+        "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "estetico",
+        "rotulo": "Aparelho estético",
+        "o_que_significa": "vende discrição — público que trabalha de frente",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "publico_adulto",
+        "rotulo": "Falado para adulto",
+        "o_que_significa": "disputa o adulto que adiou o tratamento",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "publico_infantil",
+        "rotulo": "Falado para criança e adolescente",
+        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "prova_social",
+        "rotulo": "Prova social",
+        "o_que_significa": "vende confiança em vez de preço",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      }
+    ],
+    "por_anunciante": [
+      {
+        "anunciante": "Inove Odontologia e Saúde",
+        "eixos": [
+          "alinhador",
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "Clínica Odontológica",
+        "eixos": [
+          "parcelamento",
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "Instituto IQO",
+        "eixos": [
+          "autoridade",
+          "rapidez"
+        ]
+      },
+      {
+        "anunciante": "Salud Odontologia",
+        "eixos": [
+          "parcelamento",
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "SorriLeve Uberlândia",
+        "eixos": [
+          "preco",
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "Sorria Roosevelt - Uberlândia",
+        "eixos": [
+          "avaliacao_gratis",
+          "urgencia"
+        ]
+      },
+      {
+        "anunciante": "Clínica Invitta Odontologia ",
+        "eixos": [
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "OdontoCompany Uberlândia - Osvaldo Rezende/MG",
+        "eixos": [
+          "urgencia"
+        ]
+      }
+    ]
+  },
   "bairros": {
     "praca_id": "uberlandia",
     "rotulo": "MG · Uberlândia",
     "territorio": [
       {
-        "local_id": "orthodontic",
-        "unidade": "OrthoDontic",
+        "local_id": "uberlandia_orthodontic",
+        "unidade": "OrthoDontic · Praça Adolfo Fonseca",
         "medido": true,
         "location": {
           "lat": -18.9209326,
@@ -117,8 +340,8 @@
         }
       },
       {
-        "local_id": "orthodontic_centro",
-        "unidade": "OrthoDontic",
+        "local_id": "uberlandia_orthodontic_centro",
+        "unidade": "OrthoDontic · Av. Floriano Peixoto",
         "medido": true,
         "location": {
           "lat": -18.9198549,
@@ -201,14 +424,14 @@
     "unidades_localizadas": 2,
     "onde_estamos": [
       {
-        "local_id": "orthodontic",
+        "local_id": "uberlandia_orthodontic",
         "bairro": "Centro",
-        "unidade": "OrthoDontic"
+        "unidade": "OrthoDontic · Praça Adolfo Fonseca"
       },
       {
-        "local_id": "orthodontic_centro",
+        "local_id": "uberlandia_orthodontic_centro",
         "bairro": "Centro",
-        "unidade": "OrthoDontic"
+        "unidade": "OrthoDontic · Av. Floriano Peixoto"
       }
     ],
     "bairros": [
@@ -218,8 +441,8 @@
         "avaliacoes_somadas": 5761,
         "temos_unidade": true,
         "nossas": [
-          "orthodontic",
-          "orthodontic_centro"
+          "uberlandia_orthodontic",
+          "uberlandia_orthodontic_centro"
         ],
         "vizinhos_fortes": [
           {
@@ -1054,7 +1277,7 @@
       "anuncios_ativos": null
     },
     {
-      "local_id": "oral_unic",
+      "local_id": "uberlandia_oral_unic",
       "nome": "Oral Unic",
       "tipo": "PREENCHER",
       "proprio": false,
@@ -1080,16 +1303,6 @@
       "proprio": false,
       "nota": 5,
       "avaliacoes": 677,
-      "reviews_novos_mes": null,
-      "anuncios_ativos": null
-    },
-    {
-      "local_id": "sorridents_clinicas_odonto",
-      "nome": "Sorridents Clínicas Odontológicas Centro Uberlândia",
-      "tipo": "PREENCHER",
-      "proprio": false,
-      "nota": 4.9,
-      "avaliacoes": 651,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
@@ -1144,16 +1357,6 @@
       "anuncios_ativos": null
     },
     {
-      "local_id": "orthodontic",
-      "nome": "OrthoDontic",
-      "tipo": "franquia",
-      "proprio": true,
-      "nota": 4.9,
-      "avaliacoes": 308,
-      "reviews_novos_mes": null,
-      "anuncios_ativos": null
-    },
-    {
       "local_id": "orthopride_uberlandia",
       "nome": "Orthopride Uberlândia",
       "tipo": "PREENCHER",
@@ -1184,7 +1387,7 @@
       "anuncios_ativos": null
     },
     {
-      "local_id": "clinica_dentista_do_povo_u",
+      "local_id": "uberlandia_clinica_dentista_do_povo_u",
       "nome": "Clínica Dentista do Povo - Uberlândia (Floriano Peixoto)",
       "tipo": "PREENCHER",
       "proprio": false,
@@ -1194,7 +1397,7 @@
       "anuncios_ativos": null
     },
     {
-      "local_id": "orthodontic_centro",
+      "local_id": "uberlandia_orthodontic_centro",
       "nome": "OrthoDontic",
       "tipo": "franquia",
       "proprio": true,
@@ -1405,107 +1608,5 @@
     "o_que_preenche": "nada que seja fonte externa: o Trends não publica índice para este termo nesta escala. Só dado interno da rede (agenda, contratos) diria quando a procura sobe — e isso é teto do produto",
     "quem_responde": "só a rede, por dentro"
   },
-  "o_que_mudou": {
-    "dias_medidos": 1,
-    "aviso": "a praça é medida há 5 dias (4 medições) — a leitura ainda diz pouco e engorda a cada coleta",
-    "nossas": [
-      {
-        "local_id": "orthodontic",
-        "nome": "OrthoDontic",
-        "proprio": true,
-        "aparelho": true,
-        "de": "2026-08-12",
-        "ate": "2026-08-13",
-        "dias": 1,
-        "antes": 32,
-        "agora": 308,
-        "delta": 276,
-        "nota_antes": 4.5,
-        "nota_agora": 4.9,
-        "ritmo_do_periodo": 8390.4,
-        "historico": {
-          "desde": "2026-08-12",
-          "ate": "2026-08-13",
-          "dias": 1,
-          "medicoes": 2,
-          "antes": 32,
-          "agora": 308,
-          "delta": 276,
-          "ritmo_do_periodo": 8390.4,
-          "nota_antes": 4.5,
-          "nota_agora": 4.9
-        },
-        "eventos": [
-          "ganhou 276 avaliações em 1 dia",
-          "nota foi de 4.5 para 4.9"
-        ]
-      }
-    ],
-    "quem_mais_ganhou": [
-      {
-        "local_id": "orthodontic",
-        "nome": "OrthoDontic",
-        "proprio": true,
-        "aparelho": true,
-        "de": "2026-08-12",
-        "ate": "2026-08-13",
-        "dias": 1,
-        "antes": 32,
-        "agora": 308,
-        "delta": 276,
-        "nota_antes": 4.5,
-        "nota_agora": 4.9,
-        "ritmo_do_periodo": 8390.4,
-        "historico": {
-          "desde": "2026-08-12",
-          "ate": "2026-08-13",
-          "dias": 1,
-          "medicoes": 2,
-          "antes": 32,
-          "agora": 308,
-          "delta": 276,
-          "ritmo_do_periodo": 8390.4,
-          "nota_antes": 4.5,
-          "nota_agora": 4.9
-        },
-        "eventos": [
-          "ganhou 276 avaliações em 1 dia",
-          "nota foi de 4.5 para 4.9"
-        ]
-      }
-    ],
-    "contador_caiu": [
-      {
-        "local_id": "clinica_dentista_do_povo_u",
-        "nome": "Clínica Dentista do Povo - Uberlândia (Floriano Peixoto)",
-        "proprio": false,
-        "aparelho": false,
-        "de": "2026-08-12",
-        "ate": "2026-08-13",
-        "dias": 1,
-        "antes": 959,
-        "agora": 257,
-        "delta": -702,
-        "nota_antes": 5,
-        "nota_agora": 4.2,
-        "ritmo_do_periodo": 0.0,
-        "historico": {
-          "desde": "2026-08-08",
-          "ate": "2026-08-13",
-          "dias": 5,
-          "medicoes": 4,
-          "antes": 946,
-          "agora": 257,
-          "delta": -689,
-          "ritmo_do_periodo": 0.0,
-          "nota_antes": 5,
-          "nota_agora": 4.2
-        },
-        "eventos": [
-          "o contador CAIU 702 — avaliação removida",
-          "nota foi de 5 para 4.2"
-        ]
-      }
-    ]
-  }
+  "o_que_mudou": null
 }

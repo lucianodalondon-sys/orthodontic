@@ -2,7 +2,7 @@
   "local_id": "ortho_poa_rio_branco",
   "praca_id": "porto_alegre",
   "apresentacao": {
-    "unidade": "OrthoDontic",
+    "unidade": "OrthoDontic · Rio Branco",
     "cidade": "RS · Porto Alegre",
     "endereco": null,
     "desde": null,
@@ -12,33 +12,33 @@
     "lojas_irmas": [
       {
         "local_id": "ortho_poa_centro_historico",
-        "unidade": "OrthoDontic Centro Histórico"
+        "unidade": "OrthoDontic · Av. Borges de Medeiros"
       },
       {
         "local_id": "ortho_poa_cristo_redentor",
-        "unidade": "OrthoDontic Cristo Redentor"
+        "unidade": "OrthoDontic · Cristo Redentor"
       },
       {
         "local_id": "ortho_poa_centro_historico_2",
-        "unidade": "OrthoDontic Centro Histórico"
+        "unidade": "OrthoDontic · R. Vig. José Inácio"
       },
       {
         "local_id": "ortho_poa_cavalhada",
-        "unidade": "OrthoDontic Cavalhada"
+        "unidade": "OrthoDontic · Cavalhada"
       },
       {
         "local_id": "ortho_poa_centro_historico_3",
-        "unidade": "OrthoDontic Centro Histórico"
+        "unidade": "OrthoDontic · R. dos Andradas"
       },
       {
         "local_id": "ortho_poa_centro_historico_4",
-        "unidade": "OrthoDontic Centro Histórico"
+        "unidade": "OrthoDontic · R. Gen. Vitorino"
       }
     ],
     "frase": null
   },
   "rotulo": "RS · Porto Alegre",
-  "unidade": "OrthoDontic",
+  "unidade": "OrthoDontic · Rio Branco",
   "cabecalho": {
     "nota": 4.5,
     "avaliacoes": 32,
@@ -153,6 +153,101 @@
       "contra": [],
       "o_que_aumentaria": "repetir a varredura de buscas noutra data",
       "procedencia": "medido em 196 buscas testadas, 1 medição"
+    }
+  },
+  "perto_da_clinica": {
+    "local_id": "ortho_poa_rio_branco",
+    "praca_id": "porto_alegre",
+    "rotulo": "RS · Porto Alegre",
+    "unidade": "OrthoDontic Rio Branco",
+    "medido_em": "2026-08-13",
+    "raio_m": 3000,
+    "de": 5,
+    "aparece_em": 0,
+    "em_primeiro": 0,
+    "melhor_posicao": null,
+    "invisivel_perto": true,
+    "frase": "em nenhuma das 5 buscas testadas feitas a partir do próprio endereço a clínica apareceu no mapa — nem para quem está a 3 km dela",
+    "buscas": [
+      {
+        "frase": "aparelho ortodôntico em porto alegre",
+        "intencao": "GENÉRICO",
+        "posicao": null,
+        "topo": "Dr. Vicente Piccoli",
+        "topo_avaliacoes": 140,
+        "topo_metros": 909
+      },
+      {
+        "frase": "aparelho ortodôntico no centro de porto alegre",
+        "intencao": "BAIRRO",
+        "posicao": null,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 433,
+        "topo_metros": 2305
+      },
+      {
+        "frase": "aparelho ortodôntico porto alegre",
+        "intencao": "GENÉRICO",
+        "posicao": null,
+        "topo": "Dr. Vicente Piccoli",
+        "topo_avaliacoes": 140,
+        "topo_metros": 909
+      },
+      {
+        "frase": "aparelho ortodôntico porto alegre preço",
+        "intencao": "PREÇO",
+        "posicao": null,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 433,
+        "topo_metros": 2305
+      },
+      {
+        "frase": "orthopride aparelho ortodôntico em porto alegre clareamento dental fotos",
+        "intencao": "BAIRRO",
+        "posicao": null,
+        "topo": "Orthopride | Aparelho Ortodôntico em Porto Alegre | Clareamento Dental",
+        "topo_avaliacoes": 32,
+        "topo_metros": 2390
+      }
+    ],
+    "quem_aparece_na_frente": [
+      {
+        "nome": "OrthoDontic",
+        "vezes_na_frente": 6
+      },
+      {
+        "nome": "Dr. Vicente Piccoli",
+        "vezes_na_frente": 3
+      },
+      {
+        "nome": "Dra Carina Cigolini - Cirurgiã-dentista",
+        "vezes_na_frente": 3
+      },
+      {
+        "nome": "Dra Jéssica Soares | Consulta | Bruxismo | Facetas | Clareamento | Restauração | Revisão | Periodontia DENTISTA PORTO ALEGRE",
+        "vezes_na_frente": 3
+      },
+      {
+        "nome": "Dra. Marcela Bastiani | Aparelho Dentário | Implante Dentário",
+        "vezes_na_frente": 2
+      }
+    ],
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 5,
+      "janela_dias": 0,
+      "medicoes": 1,
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
+    },
+    "na_cidade": {
+      "aparece_em": 0,
+      "de": 196
     }
   },
   "jornada": {

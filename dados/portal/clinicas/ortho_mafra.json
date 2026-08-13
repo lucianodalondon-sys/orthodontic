@@ -2,7 +2,7 @@
   "local_id": "ortho_mafra",
   "praca_id": "mafra",
   "apresentacao": {
-    "unidade": "OrthoDontic Mafra",
+    "unidade": "OrthoDontic",
     "cidade": "SC · Mafra",
     "endereco": "Centro II - R. Felipe Schmidt, 1136 - Centro II Alto de Mafra, Mafra - SC, 89300-074",
     "desde": "15/jul",
@@ -10,10 +10,10 @@
     "posicao_na_cidade": null,
     "clinicas_na_cidade": null,
     "lojas_irmas": [],
-    "frase": "OrthoDontic Mafra é escutada desde 15/jul, em 4 medições."
+    "frase": "OrthoDontic é escutada desde 15/jul, em 4 medições."
   },
   "rotulo": "SC · Mafra",
-  "unidade": "OrthoDontic Mafra",
+  "unidade": "OrthoDontic",
   "cabecalho": {
     "nota": 4.9,
     "avaliacoes": 155,
@@ -234,6 +234,101 @@
       "contra": [],
       "o_que_aumentaria": "repetir a varredura de buscas noutra data",
       "procedencia": "medido em 64 buscas testadas, 1 medição"
+    }
+  },
+  "perto_da_clinica": {
+    "local_id": "ortho_mafra",
+    "praca_id": "mafra",
+    "rotulo": "SC · Mafra",
+    "unidade": "OrthoDontic Mafra",
+    "medido_em": "2026-08-13",
+    "raio_m": 3000,
+    "de": 5,
+    "aparece_em": 3,
+    "em_primeiro": 0,
+    "melhor_posicao": 4,
+    "invisivel_perto": false,
+    "frase": "aparece em 3 de 5 buscas feitas a partir do próprio endereço, melhor posição: 4º",
+    "buscas": [
+      {
+        "frase": "dentista fabiano mafra sc",
+        "intencao": "BAIRRO",
+        "posicao": null,
+        "topo": "Centro Odontológico Dr. Fabiano Grahl de Souza",
+        "topo_avaliacoes": 69,
+        "topo_metros": 73
+      },
+      {
+        "frase": "dentista mafra",
+        "intencao": "GENÉRICO",
+        "posicao": 7,
+        "topo": "Susin Odontologia | Dentista Mafra | Lente de contato | Implante | Periodontia | Tratamento de canal",
+        "topo_avaliacoes": 447,
+        "topo_metros": 630
+      },
+      {
+        "frase": "dentista mafra abertos agora",
+        "intencao": "URGÊNCIA",
+        "posicao": null,
+        "topo": "Farmácia Santa Catarina / ACFARMA",
+        "topo_avaliacoes": 97,
+        "topo_metros": 930
+      },
+      {
+        "frase": "dentista mafra adse",
+        "intencao": "GENÉRICO",
+        "posicao": 4,
+        "topo": "OdontoCompany Mafra",
+        "topo_avaliacoes": 339,
+        "topo_metros": 609
+      },
+      {
+        "frase": "dentista mafra sc",
+        "intencao": "GENÉRICO",
+        "posicao": 8,
+        "topo": "Dra Camila Clemente - Endodontia e Clínica Geral",
+        "topo_avaliacoes": 28,
+        "topo_metros": 392
+      }
+    ],
+    "quem_aparece_na_frente": [
+      {
+        "nome": "OdontoCompany Mafra",
+        "vezes_na_frente": 3
+      },
+      {
+        "nome": "Susin Odontologia | Dentista Mafra | Lente de contato | Implante | Periodontia | Tratamento de canal",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "Dra Camila Clemente - Endodontia e Clínica Geral",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "Instituto Lumière - Mafra",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "Dra Jéssica Marcondes",
+        "vezes_na_frente": 2
+      }
+    ],
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 5,
+      "janela_dias": 0,
+      "medicoes": 1,
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
+    },
+    "na_cidade": {
+      "aparece_em": 5,
+      "de": 64
     }
   },
   "jornada": {

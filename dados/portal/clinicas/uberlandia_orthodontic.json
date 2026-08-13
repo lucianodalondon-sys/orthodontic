@@ -1,0 +1,1260 @@
+{
+  "local_id": "uberlandia_orthodontic",
+  "praca_id": "uberlandia",
+  "apresentacao": {
+    "unidade": "OrthoDontic · Praça Adolfo Fonseca",
+    "cidade": "MG · Uberlândia",
+    "endereco": "Praça Adolfo Fonseca, 138 - Centro, Uberlândia - MG, 38400-152",
+    "desde": null,
+    "medicoes": null,
+    "posicao_na_cidade": null,
+    "clinicas_na_cidade": null,
+    "lojas_irmas": [
+      {
+        "local_id": "uberlandia_orthodontic_centro",
+        "unidade": "OrthoDontic · Av. Floriano Peixoto"
+      }
+    ],
+    "frase": null
+  },
+  "rotulo": "MG · Uberlândia",
+  "unidade": "OrthoDontic · Praça Adolfo Fonseca",
+  "cabecalho": {
+    "nota": 3.7,
+    "avaliacoes": 127,
+    "ritmo": 1.1,
+    "meses_seguidos": 0,
+    "posicao": 15,
+    "de": 16
+  },
+  "faixa": "vermelha",
+  "urgencia": 80,
+  "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-13",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-27"
+  },
+  "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada",
+    "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": null,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "scripts/fila.py",
+      "a_favor": [
+        "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 1.1 avaliações/mês",
+        "15º lugar de 16 clínicas medidas na praça",
+        "nota 3.7 contra mediana 4.8 das 16 clínicas medidas na praça"
+      ],
+      "contra": [],
+      "o_que_aumentaria": "o resultado medido na coleta seguinte (dados/serie/acoes.jsonl)",
+      "procedencia": "sem amostra declarada"
+    }
+  },
+  "gatilhos": [
+    {
+      "peso": 30,
+      "titulo": "O contador de avaliações parou",
+      "chave": "parada",
+      "fato": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 1.1 avaliações/mês",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "peso": 20,
+      "titulo": "Está na metade de baixo da própria praça",
+      "chave": "posicao",
+      "fato": "15º lugar de 16 clínicas medidas na praça",
+      "fonte": "dados/portal/rede_cruzamento.json"
+    },
+    {
+      "peso": 15,
+      "titulo": "Nota abaixo da mediana da praça",
+      "chave": "nota",
+      "fato": "nota 3.7 contra mediana 4.8 das 16 clínicas medidas na praça",
+      "fonte": "dados/serie/places.jsonl"
+    },
+    {
+      "peso": 15,
+      "titulo": "Silêncio publicitário com leilão cheio",
+      "chave": "silencio",
+      "fato": "109 anúncios no ar de 44 anunciantes, e nenhum é da rede",
+      "fonte": "dados/serie/captacao.jsonl"
+    }
+  ],
+  "quem_avanca": null,
+  "o_que_mudou": null,
+  "sem_resposta": {
+    "abertas": null,
+    "com_texto": null,
+    "itens": [],
+    "itens_total": 0
+  },
+  "voz_do_paciente": null,
+  "rival": {
+    "comparados": [],
+    "vantagens_deles": [],
+    "fora": [],
+    "fora_total": 0,
+    "sem_comparacao_porque": null
+  },
+  "presenca_na_busca": {
+    "local_id": "uberlandia_orthodontic",
+    "praca_id": "uberlandia",
+    "rotulo": "MG · Uberlândia",
+    "unidade": "OrthoDontic",
+    "avaliacoes_da_ficha": null,
+    "aparece_em": 0,
+    "de": 164,
+    "pct": 0,
+    "melhor_posicao": null,
+    "frases_onde_aparece": [],
+    "invisivel": true,
+    "frase_do_topo": "Esta loja **não aparece em nenhuma** das 164 buscas que testamos na cidade.",
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 164,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/portas.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+      "procedencia": "medido em 164 buscas testadas, 1 medição"
+    }
+  },
+  "perto_da_clinica": {
+    "local_id": "uberlandia_orthodontic",
+    "praca_id": "uberlandia",
+    "rotulo": "MG · Uberlândia",
+    "unidade": "OrthoDontic · Praça Adolfo Fonseca",
+    "medido_em": "2026-08-13",
+    "raio_m": 3000,
+    "de": 5,
+    "aparece_em": 0,
+    "em_primeiro": 0,
+    "melhor_posicao": null,
+    "invisivel_perto": true,
+    "frase": "em nenhuma das 5 buscas testadas feitas a partir do próprio endereço a clínica apareceu no mapa — nem para quem está a 3 km dela",
+    "buscas": [
+      {
+        "frase": "aparelho ortodontico uberlandia",
+        "intencao": "GENÉRICO",
+        "posicao": null,
+        "topo": "Dr. Danilo Cunha - Ortodontista",
+        "topo_avaliacoes": 126,
+        "topo_metros": 124
+      },
+      {
+        "frase": "guilherme ortodontista uberlandia",
+        "intencao": "BAIRRO",
+        "posicao": null,
+        "topo": "Dr. Guilherme Almeida - Ortodontista",
+        "topo_avaliacoes": 4,
+        "topo_metros": 786
+      },
+      {
+        "frase": "melhor ortodontista de uberlandia",
+        "intencao": "REPUTAÇÃO",
+        "posicao": null,
+        "topo": "Dra. Mariel Paschoal",
+        "topo_avaliacoes": 184,
+        "topo_metros": 1216
+      },
+      {
+        "frase": "ortodontista em uberlândia",
+        "intencao": "GENÉRICO",
+        "posicao": null,
+        "topo": "Dra. Mariel Paschoal",
+        "topo_avaliacoes": 184,
+        "topo_metros": 1216
+      },
+      {
+        "frase": "ortodontista uberlândia",
+        "intencao": "GENÉRICO",
+        "posicao": null,
+        "topo": "Dr. Danilo Cunha - Ortodontista",
+        "topo_avaliacoes": 126,
+        "topo_metros": 124
+      }
+    ],
+    "quem_aparece_na_frente": [
+      {
+        "nome": "Dr. Danilo Cunha - Ortodontista",
+        "vezes_na_frente": 4
+      },
+      {
+        "nome": "Dra. Mariel Paschoal",
+        "vezes_na_frente": 4
+      },
+      {
+        "nome": "Dra Mariana Pimenta Dentista - Martins Clinic",
+        "vezes_na_frente": 4
+      },
+      {
+        "nome": "Dra. Michelle Panacioni",
+        "vezes_na_frente": 3
+      },
+      {
+        "nome": "Dr. Éverton Ribeiro Lelis - Ortodontista",
+        "vezes_na_frente": 3
+      }
+    ],
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 5,
+      "janela_dias": 0,
+      "medicoes": 1,
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
+    },
+    "na_cidade": {
+      "aparece_em": 0,
+      "de": 164
+    }
+  },
+  "jornada": {
+    "local_id": "uberlandia_orthodontic",
+    "unidade": "OrthoDontic · Praça Adolfo Fonseca",
+    "rotulo": "MG · Uberlândia",
+    "com_texto": 91,
+    "sem_estagio": 40,
+    "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
+    "estagios": [
+      {
+        "estagio": "descoberta",
+        "rotulo": "Descoberta",
+        "o_que_e": "como me acharam",
+        "quem_resolve": "marketing e ficha do Google",
+        "medido": true,
+        "avaliacoes": 15,
+        "dor": 7,
+        "elogio": 8,
+        "pct_dor": 47,
+        "amostra_curta": false,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2021-02-18",
+            "texto": "Atendimento ruim, demora muito, paciente espera muito tempo e quando questiona,  aatendente é  mal educada. Todos querem ser bem tratados, afinal estamos pagando! Não recomendo!"
+          },
+          {
+            "nota": 1,
+            "data": "2021-06-23",
+            "texto": "Não gostei dessa clínica, fiquei 1 ano e meio fazendo tratamento com aparelho fixo, toda vez que queria perguntar algo sobre o aparelho o profissional não tinha respeito não me explicava sobre os procedimentos e não tirava minhas dúvidas e não tinha educação. Tirei esse ano mas foi com uma multa altíssima e nem fizeram  a limpeza. Não recomendo para ninguém essa clínica."
+          },
+          {
+            "nota": 1,
+            "data": "2022-08-09",
+            "texto": "Não recomendo, tenho dois filhos que já estão a 4 anos tratando lá e ainda não teve nenhuma melhora, sem contar com o péssimo atendimento por telefone elas não conseguem nem mandar um boleto afff estou muito insatisfeita."
+          }
+        ],
+        "frase": "15 avaliações falam deste momento, 7 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "contato",
+        "rotulo": "Contato",
+        "o_que_e": "telefone e WhatsApp",
+        "quem_resolve": "recepção",
+        "medido": true,
+        "avaliacoes": 17,
+        "dor": 14,
+        "elogio": 2,
+        "pct_dor": 82,
+        "amostra_curta": false,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2020-11-10",
+            "texto": "O atendimento presencial é bom, mas se vc precisa por algum motivo entrar em contato via telefone seja através de chamada ou mensagem pode desistir pq não vai acontecer."
+          },
+          {
+            "nota": 1,
+            "data": "2020-11-11",
+            "texto": "Não atende telefone  nota 0"
+          },
+          {
+            "nota": 1,
+            "data": "2020-12-07",
+            "texto": "Pior atendimento via telefone e zap que existe quer estragar seu dia tentar falar com eles.\nOu faça igual pare seu trabalho perca seu e vá na clínica."
+          }
+        ],
+        "frase": "17 avaliações falam deste momento, 14 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "agendamento",
+        "rotulo": "Agendamento",
+        "o_que_e": "marcar e remarcar",
+        "quem_resolve": "recepção",
+        "medido": true,
+        "avaliacoes": 8,
+        "dor": 7,
+        "elogio": 1,
+        "pct_dor": 88,
+        "amostra_curta": false,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2021-06-09",
+            "texto": "Nunca somos atendidos no horário marcado , profissionais sempre atrasados , difícil de atender telefone , péssimo atendimento."
+          },
+          {
+            "nota": 1,
+            "data": "2022-03-04",
+            "texto": "Somente atraso e sem resultado visível após 1 ano de tratamento. Falando em atraso segue print da msg com a hr marcada e horário que tô na recepção esperando pra ser atendida. Só atrasam! Deixa muito a desejar"
+          },
+          {
+            "nota": 1,
+            "data": "2022-12-12",
+            "texto": "PÉSSIMO atendimento! Demoram horrores pra te atender, não cumprem com horário, todas as vezes é uma enrolação para ser chamado. Que arrependimento!\nOBS: NÃO FAÇAM CONTRATO, CASO VOCÊ NÃO ESTEJA SATISFEITO COM O TRATAMENTO ELES VÃO COBRAR MULTA DE MAIS DE R$300,00 REAIS!!! NÃO VALE A PENA!"
+          }
+        ],
+        "frase": "8 avaliações falam deste momento, 7 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "recepcao",
+        "rotulo": "Recepção",
+        "o_que_e": "chegar e esperar",
+        "quem_resolve": "recepção",
+        "medido": true,
+        "avaliacoes": 15,
+        "dor": 8,
+        "elogio": 7,
+        "pct_dor": 53,
+        "amostra_curta": false,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2021-02-18",
+            "texto": "Atendimento ruim, demora muito, paciente espera muito tempo e quando questiona,  aatendente é  mal educada. Todos querem ser bem tratados, afinal estamos pagando! Não recomendo!"
+          },
+          {
+            "nota": 1,
+            "data": "2021-06-09",
+            "texto": "Nunca somos atendidos no horário marcado , profissionais sempre atrasados , difícil de atender telefone , péssimo atendimento."
+          },
+          {
+            "nota": 1,
+            "data": "2022-01-24",
+            "texto": "Péssimo atendimento !!\nSempre demoram em torno de 50 minutos para nos atender !\nAlém da cara de *** da recepcionista !"
+          }
+        ],
+        "frase": "15 avaliações falam deste momento, 8 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "avaliacao",
+        "rotulo": "Avaliação",
+        "o_que_e": "a primeira consulta",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 3,
+        "dor": 2,
+        "elogio": 1,
+        "pct_dor": 67,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "3 avaliações falam deste momento, 2 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "contratacao",
+        "rotulo": "Contratação",
+        "o_que_e": "preço, contrato e entrada",
+        "quem_resolve": "franqueado",
+        "medido": true,
+        "avaliacoes": 5,
+        "dor": 4,
+        "elogio": 1,
+        "pct_dor": 80,
+        "amostra_curta": true,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2022-12-12",
+            "texto": "PÉSSIMO atendimento! Demoram horrores pra te atender, não cumprem com horário, todas as vezes é uma enrolação para ser chamado. Que arrependimento!\nOBS: NÃO FAÇAM CONTRATO, CASO VOCÊ NÃO ESTEJA SATISFEITO COM O TRATAMENTO ELES VÃO COBRAR MULTA DE MAIS DE R$300,00 REAIS!!! NÃO VALE A PENA!"
+          },
+          {
+            "nota": 1,
+            "data": "2025-05-20",
+            "texto": "Até a conclusão do meu aparelho, o atendimento foi ótimo, querem me cobrar para ganhar alta sendo que o próprio dentista já tinha dado, agora ninguém marcou para eu poder fazer meu clareamento dental que foi me dado do início desde a assinatura do contrato e que tenho aqui. Infelizmente só promessas."
+          }
+        ],
+        "frase": "5 avaliações falam deste momento, 4 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "clinico",
+        "rotulo": "Atendimento clínico",
+        "o_que_e": "a cadeira",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 16,
+        "dor": 11,
+        "elogio": 4,
+        "pct_dor": 69,
+        "amostra_curta": false,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2021-03-14",
+            "texto": "Estou muito decepcionada com a dentista, tomem cuidado com quem vocês irão se consultar."
+          },
+          {
+            "nota": 1,
+            "data": "2021-06-23",
+            "texto": "Não gostei dessa clínica, fiquei 1 ano e meio fazendo tratamento com aparelho fixo, toda vez que queria perguntar algo sobre o aparelho o profissional não tinha respeito não me explicava sobre os procedimentos e não tirava minhas dúvidas e não tinha educação. Tirei esse ano mas foi com uma multa altíssima e nem fizeram  a limpeza. Não recomendo para ninguém essa clínica."
+          },
+          {
+            "nota": 1,
+            "data": "2023-02-27",
+            "texto": "O atendimento é péssimo,enrolado e demorado sem falar as vezes que vc vai com o horário marcado e chegando lá o dentista teve algum imprevisto e eles não tem a coragem de ligar para reagendar o atendimento ou simplismente avisar ......sem falar que eles ficam postergando o seu tratamento por um loooonnnnnngo tempo.E si você quiser cancelar tem uma multa de 300,00 ...e fria."
+          }
+        ],
+        "frase": "16 avaliações falam deste momento, 11 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "manutencao",
+        "rotulo": "Manutenção",
+        "o_que_e": "as voltas de cada mês",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 7,
+        "dor": 7,
+        "elogio": 0,
+        "pct_dor": 100,
+        "amostra_curta": true,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2023-03-23",
+            "texto": "o atendimento é horrível, tanto em whatsapp como eu ligação, simplesmente não te atendem e nem te dão retorno sobre o que você precisa, dei uma estrela por que o Dr. Ítalo é ótimo e não tem culpa, de resto nota 0"
+          },
+          {
+            "nota": 1,
+            "data": "2024-02-29",
+            "texto": "Péssima empresa, péssimo atendimento, nunca atendem no horário marcado. Ficam enrolando o tratamento para continuar pagando a mensalidade e inventando desculpas esfarrapadas.\nSe arrependimento matasse estava morto.\nNÃO RECOMENDO A NINGUÉM!"
+          }
+        ],
+        "frase": "7 avaliações falam deste momento, 7 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "cobranca",
+        "rotulo": "Cobrança",
+        "o_que_e": "mensalidade e multa",
+        "quem_resolve": "franqueado",
+        "medido": true,
+        "avaliacoes": 9,
+        "dor": 8,
+        "elogio": 0,
+        "pct_dor": 89,
+        "amostra_curta": false,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2021-06-23",
+            "texto": "Não gostei dessa clínica, fiquei 1 ano e meio fazendo tratamento com aparelho fixo, toda vez que queria perguntar algo sobre o aparelho o profissional não tinha respeito não me explicava sobre os procedimentos e não tirava minhas dúvidas e não tinha educação. Tirei esse ano mas foi com uma multa altíssima e nem fizeram  a limpeza. Não recomendo para ninguém essa clínica."
+          },
+          {
+            "nota": 1,
+            "data": "2022-08-09",
+            "texto": "Não recomendo, tenho dois filhos que já estão a 4 anos tratando lá e ainda não teve nenhuma melhora, sem contar com o péssimo atendimento por telefone elas não conseguem nem mandar um boleto afff estou muito insatisfeita."
+          },
+          {
+            "nota": 1,
+            "data": "2022-12-12",
+            "texto": "PÉSSIMO atendimento! Demoram horrores pra te atender, não cumprem com horário, todas as vezes é uma enrolação para ser chamado. Que arrependimento!\nOBS: NÃO FAÇAM CONTRATO, CASO VOCÊ NÃO ESTEJA SATISFEITO COM O TRATAMENTO ELES VÃO COBRAR MULTA DE MAIS DE R$300,00 REAIS!!! NÃO VALE A PENA!"
+          }
+        ],
+        "frase": "9 avaliações falam deste momento, 8 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "suporte",
+        "rotulo": "Suporte",
+        "o_que_e": "quando algo dá errado",
+        "quem_resolve": "franqueado",
+        "medido": true,
+        "avaliacoes": 8,
+        "dor": 4,
+        "elogio": 4,
+        "pct_dor": 50,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": "8 avaliações falam deste momento, 4 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "contencao",
+        "rotulo": "Fim e contenção",
+        "o_que_e": "alta e depois dela",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 3,
+        "dor": 2,
+        "elogio": 1,
+        "pct_dor": 67,
+        "amostra_curta": true,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2025-05-20",
+            "texto": "Até a conclusão do meu aparelho, o atendimento foi ótimo, querem me cobrar para ganhar alta sendo que o próprio dentista já tinha dado, agora ninguém marcou para eu poder fazer meu clareamento dental que foi me dado do início desde a assinatura do contrato e que tenho aqui. Infelizmente só promessas."
+          }
+        ],
+        "frase": "3 avaliações falam deste momento, 2 com notas baixas",
+        "porque_vazio": null
+      }
+    ],
+    "manchete": "A dor pública desta unidade aparece em contato — 14 avaliações de 1 ou 2 estrelas de 17 que falam desse momento.",
+    "quem_resolve": "recepção",
+    "e_clinico": false,
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 91,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/serie/reviews.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "mais avaliações com texto nesta loja",
+      "procedencia": "medido em 91 avaliações"
+    }
+  },
+  "meu_territorio": {
+    "local_id": "uberlandia_orthodontic",
+    "unidade": "OrthoDontic · Praça Adolfo Fonseca",
+    "medido": true,
+    "location": {
+      "lat": -18.9209326,
+      "lng": -48.282353
+    },
+    "bairro": "Centro",
+    "clinica_mais_proxima": {
+      "nome": "Dr. Danilo Cunha - Ortodontista",
+      "km": 0.12,
+      "avaliacoes": 126,
+      "nota": 5,
+      "bairro": "Centro"
+    },
+    "aparelho_mais_proximo": {
+      "nome": "Orthopride Uberlândia",
+      "km": 0.38,
+      "avaliacoes": 278,
+      "nota": 4.6,
+      "bairro": "Centro"
+    },
+    "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 0.54,
+      "avaliacoes": 61,
+      "nota": 4.2,
+      "bairro": "Centro"
+    },
+    "raios": {
+      "1km": {
+        "clinicas": 70,
+        "de_aparelho": 7,
+        "da_rede": 1
+      },
+      "2km": {
+        "clinicas": 109,
+        "de_aparelho": 7,
+        "da_rede": 1
+      },
+      "5km": {
+        "clinicas": 155,
+        "de_aparelho": 12,
+        "da_rede": 1
+      }
+    },
+    "frase_fato": "a clínica mais próxima está a 0.12 km",
+    "proximidade_entre_unidades": {
+      "km": 0.54,
+      "unidade": "OrthoDontic",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+    },
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 160,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+        "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 160 clínicas com coordenada, 1 medição"
+    }
+  },
+  "movimentos": {
+    "eventos": [],
+    "e_da_cidade": true,
+    "resumo": {
+      "praca_id": "uberlandia",
+      "rotulo": "MG · Uberlândia",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
+  "execucao": {
+    "local_id": "uberlandia_orthodontic",
+    "praca_id": "uberlandia",
+    "rotulo": "MG · Uberlândia",
+    "unidade": "OrthoDontic · Praça Adolfo Fonseca",
+    "itens": [
+      {
+        "problema": "A dor pública desta unidade aparece em contato — 14 avaliações de 1 ou 2 estrelas de 17 que falam desse momento.",
+        "e_marketing": false,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "operacao",
+          "especialidade": "a própria unidade",
+          "porque_nao_e_marketing": "a dor pública está em telefone e WhatsApp sem resposta. Campanha não conserta isso — mais mídia sobre um gargalo de balcão só aumenta o número de pessoas irritadas.",
+          "quem_resolve": "recepção",
+          "metrica_de_validacao": "as mesmas avaliações, reclassificadas na próxima coleta",
+          "recoletar_em_dias": 30
+        },
+        "evidencias": [
+          "15 avaliações falam deste momento, 7 com notas baixas",
+          "17 avaliações falam deste momento, 14 com notas baixas",
+          "8 avaliações falam deste momento, 7 com notas baixas"
+        ],
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": null,
+          "janela_dias": null,
+          "medicoes": null,
+          "fonte": "dados/portal/jornada.json",
+          "a_favor": [
+            "A dor pública desta unidade aparece em contato — 14 avaliações de 1 ou 2 estrelas de 17 que falam desse momento."
+          ],
+          "contra": [],
+          "o_que_aumentaria": "a próxima medição da jornada",
+          "procedencia": "sem amostra declarada"
+        }
+      },
+      {
+        "problema": "Esta loja **não aparece em nenhuma** das 164 buscas que testamos na cidade.",
+        "e_marketing": true,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "seo_local",
+          "especialidade": "marketing local e Google Business",
+          "problema": "a unidade aparece em 0 buscas de 164 testadas na própria cidade",
+          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
+          "evidencias": [
+            "aparece em 0 de 164 buscas"
+          ],
+          "nao_fazer": [
+            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
+            "não prometer posição: o Google não vende ordem no mapa"
+          ],
+          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
+          "prazo": "30 dias",
+          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
+          "recoletar_em_dias": 30
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 164,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/portal/presenca_por_loja.json",
+          "a_favor": [
+            "Esta loja **não aparece em nenhuma** das 164 buscas que testamos na cidade."
+          ],
+          "contra": [
+            "uma medição só — a segunda dirá se é estrutural ou momento"
+          ],
+          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+          "procedencia": "medido em 164 buscas testadas, 1 medição"
+        }
+      }
+    ],
+    "de_marketing": 1,
+    "de_operacao": 1
+  },
+  "meu_bairro": {
+    "bairro": "Centro",
+    "clinicas": 59,
+    "vizinhos_fortes": [
+      {
+        "nome": "Clínica Dentista do Povo",
+        "nota": 4.7,
+        "avaliacoes": 694
+      },
+      {
+        "nome": "Sorridents Clínicas Odontológicas Centro Uberlândia",
+        "nota": 4.9,
+        "avaliacoes": 651
+      },
+      {
+        "nome": "Orthopride Uberlândia",
+        "nota": 4.6,
+        "avaliacoes": 278
+      }
+    ],
+    "frase": "59 clínicas varridas, e a unidade da rede está aqui",
+    "e_da_cidade": false
+  },
+  "acoes": {
+    "arcos": [
+      {
+        "arco_id": "orthodontic|nota",
+        "local_id": "uberlandia_orthodontic",
+        "praca_id": "uberlandia",
+        "gatilho": "nota",
+        "problema": "nota 3.7 contra mediana 4.8 das 16 clínicas medidas na praça",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": "nota",
+        "antes": 4.9,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "responder as avaliações abertas e tratar o motivo",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      },
+      {
+        "arco_id": "orthodontic|parada",
+        "local_id": "uberlandia_orthodontic",
+        "praca_id": "uberlandia",
+        "gatilho": "parada",
+        "problema": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 1.1 avaliações/mês",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": "ritmo",
+        "antes": 110.5,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      },
+      {
+        "arco_id": "orthodontic|posicao",
+        "local_id": "uberlandia_orthodontic",
+        "praca_id": "uberlandia",
+        "gatilho": "posicao",
+        "problema": "15º lugar de 16 clínicas medidas na praça",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": "posicao",
+        "antes": 1.0,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      },
+      {
+        "arco_id": "uberlandia_orthodontic|silencio",
+        "local_id": "uberlandia_orthodontic",
+        "praca_id": "uberlandia",
+        "gatilho": "silencio",
+        "problema": "109 anúncios no ar de 44 anunciantes, e nenhum é da rede",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": null,
+        "antes": null,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "sem ação padrão para este gatilho",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": null,
+        "veredito": "aberto",
+        "dias": 0
+      },
+      {
+        "arco_id": "uberlandia_orthodontic|nota",
+        "local_id": "uberlandia_orthodontic",
+        "praca_id": "uberlandia",
+        "gatilho": "nota",
+        "problema": "nota 3.7 contra mediana 4.8 das 16 clínicas medidas na praça",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": "nota",
+        "antes": 3.7,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "responder as avaliações abertas e tratar o motivo",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": 3.7,
+        "medido_em": "2026-08-13",
+        "veredito": "cedo_demais",
+        "dias": 0
+      },
+      {
+        "arco_id": "uberlandia_orthodontic|parada",
+        "local_id": "uberlandia_orthodontic",
+        "praca_id": "uberlandia",
+        "gatilho": "parada",
+        "problema": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 1.1 avaliações/mês",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": "ritmo",
+        "antes": 1.1,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": 1.1,
+        "medido_em": "2026-08-13",
+        "veredito": "cedo_demais",
+        "dias": 0
+      },
+      {
+        "arco_id": "uberlandia_orthodontic|posicao",
+        "local_id": "uberlandia_orthodontic",
+        "praca_id": "uberlandia",
+        "gatilho": "posicao",
+        "problema": "15º lugar de 16 clínicas medidas na praça",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": "posicao",
+        "antes": 15.0,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": 15.0,
+        "medido_em": "2026-08-13",
+        "veredito": "cedo_demais",
+        "dias": 0
+      }
+    ],
+    "total": 7,
+    "aviso": "O livro nasceu hoje. Nenhum arco completou 21 dias, então ainda não há veredito para ninguém — a primeira resposta vem na coleta seguinte."
+  },
+  "oferta_da_cidade": {
+    "praca_id": "uberlandia",
+    "rotulo": "MG · Uberlândia",
+    "anuncios_de_aparelho": 18,
+    "anunciantes": 11,
+    "fora_do_produto": 96,
+    "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
+    "sem_texto": 4,
+    "amostra_curta": false,
+    "tese": "A disputa desta cidade é por avaliação grátis — 8 dos 18 anúncios de aparelho medidos falam disso, seguido de alinhador invisível.",
+    "posicao_vaga": "Ninguém está falando de sem entrada — tira a barreira do primeiro pagamento — ataca quem não tem reserva.",
+    "eixos": [
+      {
+        "eixo": "avaliacao_gratis",
+        "rotulo": "Avaliação grátis",
+        "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+        "anuncios": 8,
+        "pct": 44,
+        "frase": "8 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "alinhador",
+        "rotulo": "Alinhador invisível",
+        "o_que_significa": "produto de ticket alto e público adulto",
+        "anuncios": 5,
+        "pct": 28,
+        "frase": "5 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "parcelamento",
+        "rotulo": "Parcelamento",
+        "o_que_significa": "vende a mensalidade, não o tratamento",
+        "anuncios": 4,
+        "pct": 22,
+        "frase": "4 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "urgencia",
+        "rotulo": "Urgência e escassez",
+        "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+        "anuncios": 2,
+        "pct": 11,
+        "frase": "2 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "preco",
+        "rotulo": "Preço na frente",
+        "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
+        "anuncios": 1,
+        "pct": 6,
+        "frase": "1 anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "autoridade",
+        "rotulo": "Autoridade técnica",
+        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+        "anuncios": 1,
+        "pct": 6,
+        "frase": "1 anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "rapidez",
+        "rotulo": "Rapidez do resultado",
+        "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+        "anuncios": 1,
+        "pct": 6,
+        "frase": "1 anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "sem_entrada",
+        "rotulo": "Sem entrada",
+        "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "estetico",
+        "rotulo": "Aparelho estético",
+        "o_que_significa": "vende discrição — público que trabalha de frente",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "publico_adulto",
+        "rotulo": "Falado para adulto",
+        "o_que_significa": "disputa o adulto que adiou o tratamento",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "publico_infantil",
+        "rotulo": "Falado para criança e adolescente",
+        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "prova_social",
+        "rotulo": "Prova social",
+        "o_que_significa": "vende confiança em vez de preço",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      }
+    ],
+    "por_anunciante": [
+      {
+        "anunciante": "Inove Odontologia e Saúde",
+        "eixos": [
+          "alinhador",
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "Clínica Odontológica",
+        "eixos": [
+          "parcelamento",
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "Instituto IQO",
+        "eixos": [
+          "autoridade",
+          "rapidez"
+        ]
+      },
+      {
+        "anunciante": "Salud Odontologia",
+        "eixos": [
+          "parcelamento",
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "SorriLeve Uberlândia",
+        "eixos": [
+          "preco",
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "Sorria Roosevelt - Uberlândia",
+        "eixos": [
+          "avaliacao_gratis",
+          "urgencia"
+        ]
+      },
+      {
+        "anunciante": "Clínica Invitta Odontologia ",
+        "eixos": [
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "OdontoCompany Uberlândia - Osvaldo Rezende/MG",
+        "eixos": [
+          "urgencia"
+        ]
+      }
+    ],
+    "e_da_cidade": true
+  },
+  "plano": "planos/uberlandia_orthodontic",
+  "anuncios_da_cidade": {
+    "e_da_cidade": true,
+    "rotulo": "MG · Uberlândia",
+    "manchete": "11 anunciantes compram aparelho em MG · Uberlândia, e nenhum é da rede.",
+    "anuncios_ativos": 18,
+    "anunciantes_total": 11,
+    "somos_um_deles": false,
+    "anunciantes": [
+      {
+        "nome": "Inove Odontologia e Saúde",
+        "nosso": false,
+        "anuncios": 6,
+        "paginas": [
+          "101560259358288"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Acredite: esse resultado aconteceu em apenas 2 meses!\n\nEsse é o caso do nosso paciente querido, Diego, que escolheu o Invisalign para transformar o sorriso com mais discrição, conforto e praticidade. 🦷✨\n\nE olha só essa evolução… 😱\nSe em apenas 2 meses já temos esse resultado, ima…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Clínica Odontológica",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "1133245423213186"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "🦷 Atenção, Uberlândia e região!\n\nEstá na hora de começar seu tratamento ortodôntico sem complicação.\n\nAqui, você paga apenas a mensalidade e já tem incluso:\n\n✔ Exames\n✔ Emergência\n✔ Limpeza\n✔ Aparelho\n✔ Instalação\n\nTudo pensado para você iniciar seu tratamento com mais tranquilid…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Oralmedic_udi",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "108844031255867"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "O aparelho ortodôntico vai muito além de alinhar os dentes.\n\nO tratamento ortodôntico também pode contribuir para melhorar a mordida, a função mastigatória e o equilíbrio do sorriso.\n\nCada caso é único e precisa de uma avaliação profissional para entender qual é o tratamento mais…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Clínica Invitta Odontologia ",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "617939134746369"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Julho começou com condições especiais para você finalmente iniciar o seu tratamento ortodôntico ✨\n\nAqui na Invitta, cada avaliação é feita com atenção, planejamento e indicação personalizada para as necessidades de cada paciente.\n\nSe você deseja alinhar seu sorriso com segurança,…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dr. Fabrício Veloso",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "922792104245246"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Você está adiando colocar aparelho por causa do valor da instalação?\n\nO Dr. Fabrício preparou uma condição especial para os primeiros pacientes que iniciarem o tratamento com aparelho convencional.\n\n📍 Atendimentos no bairro Santa Mônica\n\nClique no botão do WhatsApp para saber com…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Instituto IQO",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "197317807139744"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "O sorriso dos seus sonhos começa hoje. 🦷✨\n\nVocê não precisa esperar meses para começar o tratamento ortodôntico.\n\nNa IQO, a instalação do aparelho pode acontecer na mesma consulta — mediante avaliação do especialista.\n\nRápido, prático e com todo o cuidado que você merece.\n\n📲 Cliq…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "OdontoCompany Uberlândia - Osvaldo Rezende/MG",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "106677600685337"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "ATENÇÃO, UBERLÂNDIA! 🚨\nA oportunidade de começar seu tratamento ortodôntico chegou! 🚨\n\nChegou a hora de conquistar o sorriso que você sempre quis, com uma condição que faz toda a diferença.\n\n✅ Instalação do aparelho no mesmo dia\n✅ Não paga nada para instalar\n✅ Documentação GRÁTIS…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Orthopride Uberlândia",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "874649845741904"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "✨ Você é de Uberlândia e ainda esconde o sorriso por causa do aparelho?\nChegou a hora de mudar isso!\n\nNa nossa clínica você só paga a mensalidade e já tem incluso:\n✔ Exames\n✔ Emergência\n✔ Limpeza\n✔ Aparelho\n✔ Instalação\n\nOu seja: sem taxas escondidas, sem surpresas.\nSó a mensalid…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Salud Odontologia",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "101231489334526"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "🦷✨ Seu sorriso merece uma clínica completa, moderna e preparada para cuidar de você do início ao fim.\n\nChega de procurar um profissional para cada tratamento. Na Salud Odontologia, você encontra todas as especialidades em um só lugar, com praticidade, tecnologia e um atendimento …",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "SorriLeve Uberlândia",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "108128822284776"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "APARELHO ORTODÔNTICO COM CONDIÇÃO ESPECIAL! 😁\n\nTransforme o seu sorriso com um tratamento completo e uma condição que cabe no seu bolso.\n\n✅ Apenas R$ 120 mensais\n✅ Limpeza + instalação + clareamento inclusos\n✅ Pague somente as mensalidades\n\nEssa é a oportunidade ideal para começa…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Sorria Roosevelt - Uberlândia",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "345264935346010"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Seu sorriso alinhado está mais próximo do que você imagina! ✨ Na Clínica Sorria Roosevelt, utilizamos técnicas modernas e aparelhos ortodônticos de alta qualidade para transformar o seu sorriso de forma rápida e confortável. E o melhor: estamos aqui em Uberlândia, com uma equipe …",
+        "de_outra_unidade": null
+      }
+    ],
+    "fora_do_produto": 100,
+    "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
+  },
+  "eventos": [
+    {
+      "data": "2026-08-13",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: O contador de avaliações parou",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-13",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Está na metade de baixo da própria praça",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-13",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Nota abaixo da mediana da praça",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-13",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Silêncio publicitário com leilão cheio",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-07-06",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 3★: “Péssimo atendimento pelo whatsapp demora uma eternidade para responder, as vezes nem respo…” · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "data": "2026-06-08",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 1★: “Clínica já foi boa porém agora colocou uma secretaria pessima sai da clínica até chorando …” · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "data": "2026-05-18",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 3★: “Tratamento demora demais mais do que deveria e a cada 3 meses +- ficam cobrando pra tirar …” · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    }
+  ]
+}

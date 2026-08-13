@@ -97,6 +97,27 @@ def identidades(com_unidade=True):
     # local_id repetido dentro da praça funde loja com loja — foi assim que
     # duas ODONTOMAX de Contagem viraram uma só e a série misturou os
     # contadores. Corromper calado é pior que parar: falha alto.
+    # E O GUARDA OLHA O PROJETO INTEIRO, não uma praça de cada vez.
+    # Checar só dentro da praça deixou passar `orthodontic` em São Paulo,
+    # Rio, Caxias e Uberlândia ao mesmo tempo: quatro lojas, um id. A série
+    # é chaveada por local_id globalmente, então a colisão entre cidades
+    # funde exatamente como a colisão dentro da cidade.
+    de_quem = {}
+    entre_pracas = {}
+    for k, v in todas.items():
+        for l in v.get("locais", []):
+            lid = l.get("local_id")
+            if lid in de_quem and de_quem[lid] != k:
+                entre_pracas.setdefault(lid, {de_quem[lid]}).add(k)
+            de_quem[lid] = k
+    if entre_pracas:
+        raise ValueError(
+            "local_id repetido ENTRE praças: "
+            + "; ".join(f"{i} em {sorted(ps)}" for i, ps in
+                        sorted(entre_pracas.items())[:6])
+            + " — a série é chaveada por local_id no projeto inteiro, "
+              "duas lojas não dividem identidade")
+
     for k, v in todas.items():
         ids = [l["local_id"] for l in v.get("locais", [])]
         rep = {i for i in ids if ids.count(i) > 1}
@@ -167,7 +188,13 @@ def coleta():
             linhas.append({
                 "praca": praca, "rotulo": d.get("rotulo") or d.get("nome"),
                 "uf": (d.get("uf") or [None])[0],
-                "local_id": l["local_id"], "nome": l.get("nome"),
+                # O NOME QUE VAI PARA A TELA É `unidade`, e `nome` é o
+                # cadastro cru. Toda unidade da rede se chama OrthoDontic:
+                # sem esta linha, as quatro de São Paulo voltam a aparecer
+                # como quatro linhas idênticas em toda leitura que passa
+                # por aqui. Concorrente não tem `unidade` e cai no `nome`.
+                "local_id": l["local_id"],
+                "nome": l.get("unidade") or l.get("nome"),
                 "papel": l.get("papel"),
                 "aparelho": disputa_aparelho(l),
                 "total": pl.get("avaliacoes", pl.get("avaliacoes_total")) or l.get("avaliacoes_google"),

@@ -2,7 +2,7 @@
   "local_id": "ortho_gyn_st_oeste",
   "praca_id": "goiania",
   "apresentacao": {
-    "unidade": "OrthoDontic",
+    "unidade": "OrthoDontic · St. Oeste",
     "cidade": "GO · Goiânia",
     "endereco": "atrás do HGG - Av. B, 585 - St. Oeste, Goiânia - GO, 74110-030",
     "desde": null,
@@ -12,21 +12,21 @@
     "lojas_irmas": [
       {
         "local_id": "ortho_gyn_st_central",
-        "unidade": "OrthoDontic St. Central"
+        "unidade": "OrthoDontic · St. Central"
       },
       {
         "local_id": "ortho_gyn_jardim_tropical",
-        "unidade": "OrthoDontic Jardim Tropical"
+        "unidade": "OrthoDontic · Jardim Tropical"
       },
       {
         "local_id": "ortho_gyn_st_morada_do_sol",
-        "unidade": "OrthoDontic St. Morada do Sol"
+        "unidade": "OrthoDontic · St. Morada do Sol"
       }
     ],
     "frase": null
   },
   "rotulo": "GO · Goiânia",
-  "unidade": "OrthoDontic",
+  "unidade": "OrthoDontic · St. Oeste",
   "cabecalho": {
     "nota": 4.2,
     "avaliacoes": 270,
@@ -224,6 +224,101 @@
       "contra": [],
       "o_que_aumentaria": "repetir a varredura de buscas noutra data",
       "procedencia": "medido em 196 buscas testadas, 1 medição"
+    }
+  },
+  "perto_da_clinica": {
+    "local_id": "ortho_gyn_st_oeste",
+    "praca_id": "goiania",
+    "rotulo": "GO · Goiânia",
+    "unidade": "OrthoDontic St. Oeste",
+    "medido_em": "2026-08-13",
+    "raio_m": 3000,
+    "de": 5,
+    "aparece_em": 3,
+    "em_primeiro": 0,
+    "melhor_posicao": 2,
+    "invisivel_perto": false,
+    "frase": "aparece em 3 de 5 buscas feitas a partir do próprio endereço, melhor posição: 2º",
+    "buscas": [
+      {
+        "frase": "aparelho ortodôntico em goiania",
+        "intencao": "GENÉRICO",
+        "posicao": 4,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 268,
+        "topo_metros": 1085
+      },
+      {
+        "frase": "aparelho ortodôntico goiânia",
+        "intencao": "GENÉRICO",
+        "posicao": 2,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 268,
+        "topo_metros": 1085
+      },
+      {
+        "frase": "ortodontista em goiânia",
+        "intencao": "GENÉRICO",
+        "posicao": null,
+        "topo": "Dra Ana Karoline Vilela Porto / Invisalign Goiânia",
+        "topo_avaliacoes": 27,
+        "topo_metros": 1586
+      },
+      {
+        "frase": "ortodontista goiania ipasgo",
+        "intencao": "BAIRRO",
+        "posicao": null,
+        "topo": "Pronto Socorro em Odontologia 24h",
+        "topo_avaliacoes": 244,
+        "topo_metros": 2397
+      },
+      {
+        "frase": "ortodontista goiânia",
+        "intencao": "GENÉRICO",
+        "posicao": 8,
+        "topo": "Dra. Aline Carneiro - Ortodontista - Especialista em Pacientes Especiais",
+        "topo_avaliacoes": 8,
+        "topo_metros": 1262
+      }
+    ],
+    "quem_aparece_na_frente": [
+      {
+        "nome": "OrthoDontic",
+        "vezes_na_frente": 4
+      },
+      {
+        "nome": "Dra. Aline Carneiro - Ortodontista - Especialista em Pacientes Especiais",
+        "vezes_na_frente": 3
+      },
+      {
+        "nome": "Dra. Elen Juliana Lemes",
+        "vezes_na_frente": 3
+      },
+      {
+        "nome": "Dra Ana Karoline Vilela Porto / Invisalign Goiânia",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "Dra Laura - Ortodontia Infantil ,Teens e Ronco Adultos",
+        "vezes_na_frente": 1
+      }
+    ],
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 5,
+      "janela_dias": 0,
+      "medicoes": 1,
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
+    },
+    "na_cidade": {
+      "aparece_em": 6,
+      "de": 196
     }
   },
   "jornada": {

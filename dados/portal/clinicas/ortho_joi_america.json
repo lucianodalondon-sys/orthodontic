@@ -2,7 +2,7 @@
   "local_id": "ortho_joi_america",
   "praca_id": "joinville",
   "apresentacao": {
-    "unidade": "OrthoDontic Sorria Sempre",
+    "unidade": "OrthoDontic · América",
     "cidade": "SC · Joinville",
     "endereco": "R. Blumenau, 927 - América, Joinville - SC, 89204-251",
     "desde": null,
@@ -12,17 +12,17 @@
     "lojas_irmas": [
       {
         "local_id": "ortho_joi_centro",
-        "unidade": "OrthoDontic Centro"
+        "unidade": "OrthoDontic · Centro"
       },
       {
         "local_id": "ortho_joi_aventureiro",
-        "unidade": "OrthoDontic Aventureiro"
+        "unidade": "OrthoDontic · Aventureiro"
       }
     ],
     "frase": null
   },
   "rotulo": "SC · Joinville",
-  "unidade": "OrthoDontic Sorria Sempre",
+  "unidade": "OrthoDontic · América",
   "cabecalho": {
     "nota": 4.3,
     "avaliacoes": 377,
@@ -149,6 +149,101 @@
       "contra": [],
       "o_que_aumentaria": "repetir a varredura de buscas noutra data",
       "procedencia": "medido em 157 buscas testadas, 1 medição"
+    }
+  },
+  "perto_da_clinica": {
+    "local_id": "ortho_joi_america",
+    "praca_id": "joinville",
+    "rotulo": "SC · Joinville",
+    "unidade": "OrthoDontic América",
+    "medido_em": "2026-08-13",
+    "raio_m": 3000,
+    "de": 5,
+    "aparece_em": 3,
+    "em_primeiro": 0,
+    "melhor_posicao": 3,
+    "invisivel_perto": false,
+    "frase": "aparece em 3 de 5 buscas feitas a partir do próprio endereço, melhor posição: 3º",
+    "buscas": [
+      {
+        "frase": "aparelho ortodontico joinville",
+        "intencao": "GENÉRICO",
+        "posicao": 3,
+        "topo": "Dra. Gizelle Valentim",
+        "topo_avaliacoes": 87,
+        "topo_metros": 480
+      },
+      {
+        "frase": "ortodontista em joinville",
+        "intencao": "GENÉRICO",
+        "posicao": null,
+        "topo": "Dra. Gizelle Valentim",
+        "topo_avaliacoes": 87,
+        "topo_metros": 480
+      },
+      {
+        "frase": "ortodontista infantil joinville",
+        "intencao": "CRIANÇA",
+        "posicao": null,
+        "topo": "Dra. Gabriela Machado",
+        "topo_avaliacoes": 93,
+        "topo_metros": 1865
+      },
+      {
+        "frase": "ortodontista joinville",
+        "intencao": "GENÉRICO",
+        "posicao": 8,
+        "topo": "Dra. Gizelle Valentim",
+        "topo_avaliacoes": 87,
+        "topo_metros": 480
+      },
+      {
+        "frase": "vaga ortodontista joinville",
+        "intencao": "RUÍDO",
+        "posicao": 7,
+        "topo": "Dra. Camila Mendes, Cirurgiã-Dentista em Joinville",
+        "topo_avaliacoes": 18,
+        "topo_metros": 583
+      }
+    ],
+    "quem_aparece_na_frente": [
+      {
+        "nome": "Dra. Gizelle Valentim",
+        "vezes_na_frente": 4
+      },
+      {
+        "nome": "Dra. Camila Mendes, Cirurgiã-Dentista em Joinville",
+        "vezes_na_frente": 3
+      },
+      {
+        "nome": "Dra. Larissa Floriano | Dentista",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "Dra. Luíza Koerber",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "Dra. Suelyn Henklein",
+        "vezes_na_frente": 2
+      }
+    ],
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 5,
+      "janela_dias": 0,
+      "medicoes": 1,
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
+    },
+    "na_cidade": {
+      "aparece_em": 3,
+      "de": 157
     }
   },
   "jornada": {

@@ -2,7 +2,7 @@
   "local_id": "ortho_gyn_st_central",
   "praca_id": "goiania",
   "apresentacao": {
-    "unidade": "OrthoDontic",
+    "unidade": "OrthoDontic · St. Central",
     "cidade": "GO · Goiânia",
     "endereco": "Av. Anhanguera, 5317 - Quadra 21, lote 38 - E - St. Central, Goiânia - GO, 74043-012",
     "desde": null,
@@ -12,21 +12,21 @@
     "lojas_irmas": [
       {
         "local_id": "ortho_gyn_st_oeste",
-        "unidade": "OrthoDontic St. Oeste"
+        "unidade": "OrthoDontic · St. Oeste"
       },
       {
         "local_id": "ortho_gyn_jardim_tropical",
-        "unidade": "OrthoDontic Jardim Tropical"
+        "unidade": "OrthoDontic · Jardim Tropical"
       },
       {
         "local_id": "ortho_gyn_st_morada_do_sol",
-        "unidade": "OrthoDontic St. Morada do Sol"
+        "unidade": "OrthoDontic · St. Morada do Sol"
       }
     ],
     "frase": null
   },
   "rotulo": "GO · Goiânia",
-  "unidade": "OrthoDontic",
+  "unidade": "OrthoDontic · St. Central",
   "cabecalho": {
     "nota": 4.6,
     "avaliacoes": 268,
@@ -240,6 +240,101 @@
       "contra": [],
       "o_que_aumentaria": "repetir a varredura de buscas noutra data",
       "procedencia": "medido em 196 buscas testadas, 1 medição"
+    }
+  },
+  "perto_da_clinica": {
+    "local_id": "ortho_gyn_st_central",
+    "praca_id": "goiania",
+    "rotulo": "GO · Goiânia",
+    "unidade": "OrthoDontic St. Central",
+    "medido_em": "2026-08-13",
+    "raio_m": 3000,
+    "de": 5,
+    "aparece_em": 4,
+    "em_primeiro": 1,
+    "melhor_posicao": 1,
+    "invisivel_perto": false,
+    "frase": "aparece em 4 de 5 buscas feitas a partir do próprio endereço, em 1 vez em 1º lugar",
+    "buscas": [
+      {
+        "frase": "aparelho ortodôntico em goiania",
+        "intencao": "GENÉRICO",
+        "posicao": 2,
+        "topo": "Dra Ana Karoline Vilela Porto / Invisalign Goiânia",
+        "topo_avaliacoes": 27,
+        "topo_metros": 695
+      },
+      {
+        "frase": "aparelho ortodôntico goiânia",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 268,
+        "topo_metros": 0
+      },
+      {
+        "frase": "ortodontista em goiânia",
+        "intencao": "GENÉRICO",
+        "posicao": 2,
+        "topo": "Dra Ana Karoline Vilela Porto / Invisalign Goiânia",
+        "topo_avaliacoes": 27,
+        "topo_metros": 695
+      },
+      {
+        "frase": "ortodontista goiania ipasgo",
+        "intencao": "BAIRRO",
+        "posicao": null,
+        "topo": "Pronto Socorro em Odontologia 24h",
+        "topo_avaliacoes": 244,
+        "topo_metros": 1806
+      },
+      {
+        "frase": "ortodontista goiânia",
+        "intencao": "GENÉRICO",
+        "posicao": 2,
+        "topo": "Dra Ana Karoline Vilela Porto / Invisalign Goiânia",
+        "topo_avaliacoes": 27,
+        "topo_metros": 695
+      }
+    ],
+    "quem_aparece_na_frente": [
+      {
+        "nome": "Dra Ana Karoline Vilela Porto / Invisalign Goiânia",
+        "vezes_na_frente": 3
+      },
+      {
+        "nome": "Pronto Socorro em Odontologia 24h",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Dra. Ana Caroline Farias",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Dra. Daniela T. Pantoja",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Instituto Odontológico Marista",
+        "vezes_na_frente": 1
+      }
+    ],
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 5,
+      "janela_dias": 0,
+      "medicoes": 1,
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
+    },
+    "na_cidade": {
+      "aparece_em": 6,
+      "de": 196
     }
   },
   "jornada": {

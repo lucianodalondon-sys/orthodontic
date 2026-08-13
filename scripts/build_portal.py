@@ -85,6 +85,18 @@ def main():
     ident = {p: carrega(IDENT, p) for p in PRACAS}
     nome_local = {l["local_id"]: l for p in PRACAS for l in ident[p].get("locais", [])}
 
+    # O NOME QUE VAI PARA A TELA SAI DA IDENTIDADE, E DE MAIS NENHUM LUGAR.
+    #
+    # Cada leitura carregava o nome que tinha no dia em que mediu, e no dia
+    # em que São Paulo foi medida as quatro unidades ainda se chamavam
+    # "OrthoDontic". Resultado: quatro linhas idênticas na tela, e nenhum
+    # dos quatro franqueados achando a sua. `nome_da_loja.py` desambigua na
+    # identidade; aqui o build resolve por cima do que vier da série, para
+    # que uma leitura antiga nunca ressuscite o nome repetido.
+    def _nome_da_loja(lid, cair_para=None):
+        l = nome_local.get(lid) or {}
+        return l.get("unidade") or l.get("nome") or cair_para or lid
+
     # O QUE O RIVAL VENDE é leitura de CIDADE — três lojas de Cuiabá
     # disputam o mesmo leilão e leem a mesma guerra comercial. Carregado
     # aqui em cima porque a praça é montada antes da clínica.
@@ -313,7 +325,10 @@ def main():
     for p in PRACAS:
         proprios = [l for l in ident[p].get("locais", []) if l.get("papel") == "proprio"]
         principal = proprios[0] if proprios else None
-        pl = ult_place.get(principal["local_id"]) if principal else {}
+        # loja recém-aberta na base ainda não tem ficha medida: os campos
+        # saem vazios e a tela declara "sem medição" — o que é diferente
+        # de zero, e o casco já sabe desenhar essa diferença
+        pl = (ult_place.get(principal["local_id"]) or {}) if principal else {}
         tema = ult_tema.get((p, "atendimento"), {})
         linhas.append({
             "praca_id": p,
@@ -504,6 +519,42 @@ def main():
     # quebraria a confiança na ferramenta inteira.
     op = jsonl("oportunidade")
     if op:
+        # ONDE O MERCADO DA CIDADE SE CONCENTRA — também no Radar.
+        #
+        # O Radar respondia "quantas clínicas tem" e "quantas são fortes",
+        # que é a cidade inteira num número só. Quem vai abrir unidade
+        # precisa da linha seguinte: a concorrência está espalhada ou
+        # empilhada num bairro? As duas cidades com 40 clínicas não são a
+        # mesma cidade se numa delas 18 estão na mesma rua.
+        #
+        # Isto é CONCENTRAÇÃO, e concentração não é demanda: bairro cheio
+        # de clínica pode ser o centro comercial onde todo mundo abre, não
+        # onde o paciente mora. A frase diz onde estão, e para de dizer.
+        _ba_radar = {}
+        for _p in (carrega(OUT, "bairros").get("pracas") or []):
+            _pid = _p.get("praca_id")
+            _cidades = (ident.get(_pid) or {}).get("cidades") or []
+            _bs = [b for b in (_p.get("bairros") or []) if b.get("clinicas")]
+            if not _bs or not _cidades:
+                continue
+            _top = _bs[0]
+            _tot = sum(b["clinicas"] for b in _bs)
+            _pct = round(100 * _top["clinicas"] / _tot) if _tot else 0
+            for _c in _cidades:
+                _ba_radar[_c] = {
+                    "bairros_medidos": len(_bs),
+                    "clinicas_mapeadas": _tot,
+                    "bairro_do_topo": _top.get("bairro"),
+                    "clinicas_no_topo": _top.get("clinicas"),
+                    "pct_no_topo": _pct,
+                    "frase": (f"das {_tot} clínicas com endereço legível, "
+                              f"{_top['clinicas']} estão em {_top['bairro']} "
+                              f"— {_pct}% num bairro só"),
+                    "e_concentracao_nao_demanda": (
+                        "bairro cheio de clínica é onde as clínicas abrem, "
+                        "não necessariamente onde o paciente mora"),
+                    "estudo": f"pracas/{_pid}",
+                }
         corte_op = max(r["snapshot_date"] for r in op)
         atual = ultimo_por([r for r in op if r["snapshot_date"] == corte_op],
                            lambda r: r.get("cidade"))
@@ -526,6 +577,7 @@ def main():
                 "fontes": ["lista oficial orthodonticbrasil.com.br",
                            "busca por nome no Google Places"],
             }
+            linha["territorio"] = _ba_radar.get(r.get("cidade"))
             if not pres.get("conferida"):
                 nao_conferidas.append(linha)
             elif not pres.get("livre"):
@@ -1036,6 +1088,23 @@ def main():
         # produto pela derrota. O portal existe para a rede crescer; o que
         # está ruim tem tela própria, logo abaixo, e não precisa ser a
         # primeira frase. Os números da sublinha vêm da medição.
+        # O PAINEL RECEBE MOVIMENTO, NÃO MAIS NÚMERO. A home já tem a tira
+        # de números e os cartões de problema; o que faltava era o que
+        # MUDOU desde a última medição. Só sobe evento de severidade alta
+        # ou crítica — o resto vive dentro da clínica ou da praça, que é
+        # onde alguém vai agir sobre ele.
+        "movimentos_prioritarios": {
+            "o_que_e": "o que se moveu no mercado desde a última medição "
+                       "comparável, só o que muda decisão",
+            "eventos": [e for e in _mud.get("eventos", [])
+                        if e.get("severidade") in ("critica", "alta")][:8],
+            "total_no_periodo": len(_mud.get("eventos", [])),
+            "pracas_sem_delta": [r["rotulo"] for r in _mud.get("por_praca", [])
+                                 if r.get("estado") == "linha_de_base"],
+            "porque_algumas_nao_aparecem": (
+                "praça com uma medição só não tem movimento a declarar — "
+                "tem linha de base criada, que é diferente de 'não mudou'"),
+        },
         "abertura": {
             "sobrelinha": "SALA DE CONTROLE · REDE NACIONAL",
             "titulo": "A inteligência que faz cada clínica crescer.",
@@ -1132,6 +1201,13 @@ def main():
                 for x in carrega(OUT, "jornada").get("lojas", [])}
     _pres_por = {x["local_id"]: x
                  for x in carrega(OUT, "presenca_por_loja").get("lojas", [])}
+    # A MESMA PERGUNTA, DE OUTRO PONTO DE PARTIDA. A leitura de cidade diz
+    # se a loja disputa o município inteiro — o que faz sentido em Mafra e
+    # não faz em São Paulo, onde as quatro unidades apareciam em 0 de 193
+    # e aparecem em 10 de 20 quando a busca sai da porta de cada uma. As
+    # duas convivem na tela, cada uma dizendo o que mede.
+    _perto_por = {x["local_id"]: x
+                  for x in carrega(OUT, "perto_da_loja").get("lojas", [])}
     _md_por = {}
     for _pd in _md.get("pracas", {}).values():
         for _ln in _pd.get("nossas", []):
@@ -1157,7 +1233,8 @@ def main():
             if l.get("praca_id") in ident else []
         _hist = (_mud.get("historico") or {})
         _apresentacao = {
-            "unidade": l.get("unidade"),
+            # da identidade, nunca da linha do tempo: ver `_nome_da_loja`
+            "unidade": _nome_da_loja(lid, l.get("unidade")),
             "cidade": l.get("rotulo"),
             # o place_id mora na IDENTIDADE, não na série de places — foi a
             # identidade que virou a chave depois que local_id truncado fundiu
@@ -1177,7 +1254,7 @@ def main():
         }
         if _apresentacao["desde"]:
             _apresentacao["frase"] = (
-                f"{l.get('unidade') or l.get('rotulo')} é escutada desde "
+                f"{_nome_da_loja(lid, l.get('rotulo'))} é escutada desde "
                 f"{_data(_hist.get('desde'))}, em "
                 + conta(_apresentacao["medicoes"] or 0, "medição", "medições")
                 + (f", e divide {l.get('rotulo','a cidade').split(' · ')[-1]} "
@@ -1187,7 +1264,7 @@ def main():
         escritos.append(escreve(f"clinicas/{lid}", {
             "local_id": lid, "praca_id": l.get("praca_id"),
             "apresentacao": _apresentacao,
-            "rotulo": l.get("rotulo"), "unidade": l.get("unidade"),
+            "rotulo": l.get("rotulo"), "unidade": _nome_da_loja(lid, l.get("unidade")),
             "cabecalho": l.get("cabecalho"),
             "faixa": fl.get("faixa"), "urgencia": fl.get("urgencia"),
             "tarefa": fl.get("tarefa"),
@@ -1220,6 +1297,9 @@ def main():
                 fonte="dados/serie/portas.jsonl",
                 o_que_aumentaria="repetir a varredura de buscas noutra data"))
                 if lid in _pres_por else None),
+            # e a MESMA pergunta feita da porta da clínica, não do centro
+            # da cidade — em metrópole é a única das duas que responde
+            "perto_da_clinica": _perto_por.get(lid),
             # em QUE MOMENTO da jornada esta loja dói — capítulo, não tela
             "jornada": (dict(_jor_por[lid], confianca=confianca(
                 "fato",
@@ -1261,6 +1341,28 @@ def main():
         }))
         n_cli += 1
 
+    # ---------- clínica que deixou de existir sai da pasta ----------
+    #
+    # A pasta é ESCRITA, nunca zerada — apagar tudo e reescrever faria a
+    # praça não medida hoje sumir sem erro (armadilha já paga). O efeito
+    # colateral é que id renomeado deixa fantasma: depois de separar as
+    # lojas que dividiam `orthodontic`, ficaram `orthodontic.json` e
+    # `orthodontic_centro.json` na pasta, abrindo página de clínica que
+    # não existe em identidade nenhuma. Aqui a remoção é cirúrgica: só o
+    # que NÃO está em nenhuma identidade, e o que sai é declarado.
+    _vivos = {l["local_id"] for p in ident.values()
+              for l in p.get("locais", []) if l.get("papel") == "proprio"}
+    _fantasmas = sorted(a for a in (OUT/"clinicas").glob("*.json")
+                        if a.stem not in _vivos)
+    for a in _fantasmas:
+        a.unlink()
+        for outra in (OUT/"planos"/f"{a.stem}.json", OUT/"planos"/f"{a.stem}.md"):
+            if outra.exists():
+                outra.unlink()
+    if _fantasmas:
+        print("  clínicas removidas (id não existe em identidade nenhuma): "
+              + ", ".join(a.stem for a in _fantasmas))
+
     # ---------- manifest, POR ÚLTIMO ----------
     # Ele é o índice que o casco lê antes de qualquer outra coisa: diz quais
     # telas existem e onde estão. Escrever no começo era mentira — listava
@@ -1299,7 +1401,7 @@ def main():
         "pracas": [_ficha_praca(p) for p in PRACAS],
         # o índice de verdade: o que existe, agora, nesta pasta
         "arquivos": {
-            "rede": [x for x in ("fila", "timeline", "caixa_de_respostas", "padroes", "o_que_mudou", "rede_inteira", "rival", "anuncios", "presenca_por_loja", "voz_da_cidade", "rede", "rede_cruzamento", "achados",
+            "rede": [x for x in ("fila", "timeline", "caixa_de_respostas", "padroes", "o_que_mudou", "rede_inteira", "rival", "anuncios", "presenca_por_loja", "perto_da_loja", "voz_da_cidade", "rede", "rede_cruzamento", "achados",
                                  "corretor", "evidencias", "radar", "funil_nacional")
                      if (OUT/f"{x}.json").exists()],
             "clinicas": presentes("clinicas"),

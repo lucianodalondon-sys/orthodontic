@@ -2,7 +2,7 @@
   "local_id": "ortho_soro_vila_formosa",
   "praca_id": "sorocaba",
   "apresentacao": {
-    "unidade": "OrthoDontic",
+    "unidade": "OrthoDontic · Vila Formosa",
     "cidade": "SP · Sorocaba",
     "endereco": null,
     "desde": null,
@@ -12,17 +12,17 @@
     "lojas_irmas": [
       {
         "local_id": "ortho_soro_centro",
-        "unidade": "OrthoDontic Centro"
+        "unidade": "OrthoDontic · Centro"
       },
       {
         "local_id": "ortho_soro_jardim_faculdade",
-        "unidade": "OrthoDontic Jardim Faculdade"
+        "unidade": "OrthoDontic · Jardim Faculdade"
       }
     ],
     "frase": null
   },
   "rotulo": "SP · Sorocaba",
-  "unidade": "OrthoDontic",
+  "unidade": "OrthoDontic · Vila Formosa",
   "cabecalho": {
     "nota": 4.9,
     "avaliacoes": 161,
@@ -166,6 +166,101 @@
       "contra": [],
       "o_que_aumentaria": "repetir a varredura de buscas noutra data",
       "procedencia": "medido em 195 buscas testadas, 1 medição"
+    }
+  },
+  "perto_da_clinica": {
+    "local_id": "ortho_soro_vila_formosa",
+    "praca_id": "sorocaba",
+    "rotulo": "SP · Sorocaba",
+    "unidade": "OrthoDontic Vila Formosa",
+    "medido_em": "2026-08-13",
+    "raio_m": 3000,
+    "de": 5,
+    "aparece_em": 4,
+    "em_primeiro": 4,
+    "melhor_posicao": 1,
+    "invisivel_perto": false,
+    "frase": "aparece em 4 de 5 buscas feitas a partir do próprio endereço, em 4 vezes em 1º lugar",
+    "buscas": [
+      {
+        "frase": "aparelho ortodontico em sorocaba",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 161,
+        "topo_metros": 0
+      },
+      {
+        "frase": "aparelho ortodôntico sorocaba",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 161,
+        "topo_metros": 0
+      },
+      {
+        "frase": "ortodontista infantil sorocaba",
+        "intencao": "CRIANÇA",
+        "posicao": null,
+        "topo": "Dra. Giovanna Loratto - Odontopediatra Sorocaba",
+        "topo_avaliacoes": 80,
+        "topo_metros": 3511
+      },
+      {
+        "frase": "ortodontista sorocaba",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 161,
+        "topo_metros": 0
+      },
+      {
+        "frase": "ortodontista sorocaba sp",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 161,
+        "topo_metros": 0
+      }
+    ],
+    "quem_aparece_na_frente": [
+      {
+        "nome": "Dra. Giovanna Loratto - Odontopediatra Sorocaba",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Odontopediatra - Dra. Daniela Katayama",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Dra Fernanda Leite",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Dra. Carolina Rodrigues Moraes - Odontopediatra / Dentista Infantil",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Dra. Jaqueline Manão - Odontopediatra em Sorocaba",
+        "vezes_na_frente": 1
+      }
+    ],
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 5,
+      "janela_dias": 0,
+      "medicoes": 1,
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
+    },
+    "na_cidade": {
+      "aparece_em": 6,
+      "de": 195
     }
   },
   "jornada": {
@@ -505,24 +600,6 @@
   "acoes": {
     "arcos": [
       {
-        "arco_id": "ortho_soro_vila_formosa|silencio",
-        "local_id": "ortho_soro_vila_formosa",
-        "praca_id": "sorocaba",
-        "gatilho": "silencio",
-        "problema": "125 anúncios no ar de 47 anunciantes, e nenhum é da rede",
-        "evidencia": "dados/serie/fila_historico.jsonl",
-        "aberto_em": "2026-08-13",
-        "metrica": null,
-        "antes": null,
-        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
-        "acao_recomendada": "sem ação padrão para este gatilho",
-        "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": null,
-        "medido_em": null,
-        "veredito": "aberto",
-        "dias": 0
-      },
-      {
         "arco_id": "ortho_soro_vila_formosa|nao_engatou",
         "local_id": "ortho_soro_vila_formosa",
         "praca_id": "sorocaba",
@@ -557,6 +634,24 @@
         "medido_em": "2026-08-13",
         "veredito": "cedo_demais",
         "dias": 1
+      },
+      {
+        "arco_id": "ortho_soro_vila_formosa|silencio",
+        "local_id": "ortho_soro_vila_formosa",
+        "praca_id": "sorocaba",
+        "gatilho": "silencio",
+        "problema": "125 anúncios no ar de 47 anunciantes, e nenhum é da rede",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": null,
+        "antes": null,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "sem ação padrão para este gatilho",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": null,
+        "medido_em": "2026-08-13",
+        "veredito": "cedo_demais",
+        "dias": 0
       }
     ],
     "total": 3,

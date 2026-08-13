@@ -1,6 +1,6 @@
 {
   "corte": "2026-08-13",
-  "gerado_em": "2026-08-13T01:11:13",
+  "gerado_em": "2026-08-13T02:29:16",
   "rede": {
     "unidades": 373,
     "abertas": 350,
@@ -24,6 +24,70 @@
     "pracas_da_rede_estudadas": 17,
     "cidades_de_oportunidade_estudadas": 6,
     "aviso": "As leituras de rede valem para as 45 unidades acompanhadas, em 17 praças — não para as 373. As 6 cidades de oportunidade são estudo de expansão e não entram em nenhuma conta da rede."
+  },
+  "movimentos_prioritarios": {
+    "o_que_e": "o que se moveu no mercado desde a última medição comparável, só o que muda decisão",
+    "eventos": [
+      {
+        "evento_id": "contagem|concorrente_acelerou|ChIJV6ERtJKVpgARt5eabTvQZ3Y",
+        "data": "2026-08-13",
+        "praca_id": "contagem",
+        "rotulo": "MG · Contagem",
+        "local_id": null,
+        "entidade_id": "ChIJV6ERtJKVpgARt5eabTvQZ3Y",
+        "tipo": "concorrente_acelerou",
+        "natureza": "fato",
+        "severidade": "alta",
+        "titulo": "Vitae Center Clínica Médica e Odontológica acelerou",
+        "fato": "ganhou 26 avaliações entre 2026-08-08 e 2026-08-13 — de 3837 para 3863",
+        "por_que_importa": "rival de aparelho ganhando atenção no mesmo mercado",
+        "decisao": "ver o que ele está publicando e anunciando",
+        "fonte": "dados/serie/categoria.jsonl",
+        "evidencia": {
+          "place_id": "ChIJV6ERtJKVpgARt5eabTvQZ3Y",
+          "antes": 3837,
+          "agora": 3863
+        },
+        "confianca": {
+          "natureza": "fato",
+          "confianca": "alta",
+          "medido": true,
+          "amostra": 3863,
+          "janela_dias": 5,
+          "medicoes": 2,
+          "fonte": "dados/serie/categoria.jsonl (2026-08-08 → 2026-08-13)",
+          "a_favor": [],
+          "contra": [],
+          "o_que_aumentaria": null,
+          "procedencia": "medido em 3863 clínicas medidas, 2 medições, 5 dias de janela"
+        }
+      }
+    ],
+    "total_no_periodo": 4,
+    "pracas_sem_delta": [
+      "RS · Caxias do Sul",
+      "PR · Curitiba",
+      "BA · Feira de Santana",
+      "SC · Florianópolis",
+      "GO · Goiânia",
+      "MA · Imperatriz",
+      "SC · Joinville",
+      "CE · Juazeiro do Norte",
+      "PR · Londrina",
+      "AP · Macapá",
+      "SC · Mafra",
+      "PA · Marabá",
+      "TO · Palmas",
+      "PA · Parauapebas",
+      "RS · Porto Alegre",
+      "SP · Presidente Prudente",
+      "AC · Rio Branco",
+      "RJ · Rio de Janeiro",
+      "SP · São Paulo",
+      "SP · Sorocaba",
+      "MG · Uberlândia"
+    ],
+    "porque_algumas_nao_aparecem": "praça com uma medição só não tem movimento a declarar — tem linha de base criada, que é diferente de 'não mudou'"
   },
   "abertura": {
     "sobrelinha": "SALA DE CONTROLE · REDE NACIONAL",
@@ -293,10 +357,10 @@
       "pracas_medidas": 1,
       "acompanhadas": 1,
       "em_faixa_vermelha": 0,
-      "em_faixa_amarela": 0,
+      "em_faixa_amarela": 1,
       "alertas_graves": 0,
-      "tom": "ok",
-      "motivo": "5 unidades · ainda sem escuta"
+      "tom": "warn",
+      "motivo": "1 em faixa amarela"
     },
     {
       "uf": "RN",
@@ -375,12 +439,12 @@
       "em_implantacao": 7,
       "cidades": 65,
       "pracas_medidas": 3,
-      "acompanhadas": 4,
-      "em_faixa_vermelha": 1,
-      "em_faixa_amarela": 2,
+      "acompanhadas": 8,
+      "em_faixa_vermelha": 3,
+      "em_faixa_amarela": 3,
       "alertas_graves": 5,
       "tom": "crit",
-      "motivo": "1 em faixa vermelha · 2 em faixa amarela · 5 alertas graves na ficha do Google"
+      "motivo": "3 em faixa vermelha · 3 em faixa amarela · 5 alertas graves na ficha do Google"
     },
     {
       "uf": "SE",
@@ -435,7 +499,7 @@
   ],
   "tiras_do_inicio": [
     {
-      "numero": 7,
+      "numero": 9,
       "tom": "crit",
       "rotulo": "unidades em faixa vermelha"
     },
@@ -457,14 +521,14 @@
   ],
   "agora": {
     "pergunta": "Em quais unidades a OrthoDontic está perdendo atenção local, para qual concorrente, e onde intervir primeiro neste mês?",
-    "manchete": "7 de 41 unidades medidas estão em faixa vermelha. A primeira é SP · Sorocaba.",
-    "em_risco": 7,
-    "unidades": 41,
+    "manchete": "9 de 45 unidades medidas estão em faixa vermelha. A primeira é SP · São Paulo.",
+    "em_risco": 9,
+    "unidades": 45,
     "o_que_e_atencao": "participação observável em busca, avaliações, publicidade e atividade digital. Não é faturamento — nenhum número desta tela vem de dado interno da rede.",
     "primeiras": [
       {
         "pos": 1,
-        "rotulo": "SP · Sorocaba",
+        "rotulo": "SP · São Paulo",
         "unidade_curta": null,
         "urgencia": 80,
         "faixa": "vermelha",
@@ -479,9 +543,9 @@
       },
       {
         "pos": 2,
-        "rotulo": "PR · Londrina",
-        "unidade_curta": "Centro",
-        "urgencia": 65,
+        "rotulo": "SP · Sorocaba",
+        "unidade_curta": null,
+        "urgencia": 80,
         "faixa": "vermelha",
         "quem_avanca": null,
         "acao": {
@@ -494,9 +558,9 @@
       },
       {
         "pos": 3,
-        "rotulo": "PR · Curitiba",
+        "rotulo": "MG · Uberlândia",
         "unidade_curta": null,
-        "urgencia": 65,
+        "urgencia": 80,
         "faixa": "vermelha",
         "quem_avanca": null,
         "acao": {
@@ -570,8 +634,8 @@
       "chave": "mudou",
       "titulo": "O que mudou na semana",
       "pergunta": "O que aconteceu desde a última medição?",
-      "numero": 4,
-      "frase": "contadores de avaliação CAÍRAM — queda é avaliação apagada, evento raro. 14 praças medidas de novo; o período ainda é curto e engorda a cada semana.",
+      "numero": 3,
+      "frase": "contadores de avaliação CAÍRAM — queda é avaliação apagada, evento raro. 13 praças medidas de novo; o período ainda é curto e engorda a cada semana.",
       "tela": "mudou",
       "grupo": "lojas",
       "disponivel": true,
@@ -581,8 +645,8 @@
       "chave": "fila",
       "titulo": "Onde agir primeiro",
       "pergunta": "Qual loja precisa de ajuda neste mês?",
-      "numero": 7,
-      "frase": "7 de 41 unidades medidas estão em faixa vermelha. A primeira é SP · Sorocaba.",
+      "numero": 9,
+      "frase": "9 de 45 unidades medidas estão em faixa vermelha. A primeira é SP · São Paulo.",
       "tela": "fila",
       "grupo": "lojas",
       "disponivel": true,
@@ -603,7 +667,7 @@
       "chave": "rival",
       "titulo": "Os concorrentes de ortodontia",
       "pergunta": "Quem disputa o paciente de aparelho, e o que fazem melhor?",
-      "numero": 44,
+      "numero": 46,
       "frase": "clínicas que vendem APARELHO nas praças acompanhadas. Clínica geral e implante não entram: é outro tratamento, outro paciente.",
       "tela": "rival",
       "grupo": "lojas",
@@ -614,8 +678,8 @@
       "chave": "anuncios",
       "titulo": "Quem anuncia aparelho na cidade",
       "pergunta": "Quem está comprando mídia de aparelho na praça, agora?",
-      "numero": 339,
-      "frase": "anúncios de aparelho no ar, de 140 anunciantes nas praças medidas — e ninguém anuncia em SC · Mafra.",
+      "numero": 510,
+      "frase": "anúncios de aparelho no ar, de 238 anunciantes nas praças medidas — e ninguém anuncia em SC · Mafra.",
       "tela": "anuncios",
       "grupo": "lojas",
       "disponivel": true,
@@ -636,7 +700,7 @@
       "chave": "timeline",
       "titulo": "A vida de cada loja",
       "pergunta": "O que aconteceu em cada loja, em ordem?",
-      "numero": 172,
+      "numero": 180,
       "frase": "eventos observáveis — avaliações, contadores, alertas e rivais de aparelho — numa linha do tempo por loja, com o estado da tarefa de cada uma.",
       "tela": "timeline",
       "grupo": "lojas",
@@ -702,8 +766,8 @@
       "chave": "busca",
       "titulo": "A rede aparece na busca?",
       "pergunta": "Quando a cidade procura 'dentista', a OrthoDontic aparece?",
-      "numero": 31,
-      "frase": "aparições contra 324 ausências na busca por 'dentista' — é essa palavra que traz o paciente de aparelho.",
+      "numero": 34,
+      "frase": "aparições contra 476 ausências na busca por 'dentista' — é essa palavra que traz o paciente de aparelho.",
       "tela": "busca",
       "grupo": "arquivo",
       "disponivel": true,
@@ -746,7 +810,7 @@
       "chave": "planos",
       "titulo": "O plano de cada loja",
       "pergunta": "O que cada franqueado tem para fazer nesta semana?",
-      "numero": 32,
+      "numero": 45,
       "frase": "planos escritos, um por loja — só para praça com unidade.",
       "tela": "planos",
       "grupo": "arquivo",
@@ -893,16 +957,16 @@
   },
   "presenca_na_busca": {
     "aparelho": {
-      "dentro": 23,
-      "fora": 10
+      "dentro": 29,
+      "fora": 14
     },
     "ortodontia": {
-      "dentro": 35,
-      "fora": 29
+      "dentro": 43,
+      "fora": 54
     },
     "dentista": {
-      "dentro": 31,
-      "fora": 324
+      "dentro": 34,
+      "fora": 476
     }
   }
 }

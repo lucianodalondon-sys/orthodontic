@@ -2,7 +2,7 @@
   "local_id": "ortho_poa_centro_historico",
   "praca_id": "porto_alegre",
   "apresentacao": {
-    "unidade": "OrthoDontic",
+    "unidade": "OrthoDontic · Av. Borges de Medeiros",
     "cidade": "RS · Porto Alegre",
     "endereco": "Av. Borges de Medeiros, 308 - Sl 11 - Centro Histórico, Porto Alegre - RS, 90020-020",
     "desde": null,
@@ -12,33 +12,33 @@
     "lojas_irmas": [
       {
         "local_id": "ortho_poa_cristo_redentor",
-        "unidade": "OrthoDontic Cristo Redentor"
+        "unidade": "OrthoDontic · Cristo Redentor"
       },
       {
         "local_id": "ortho_poa_centro_historico_2",
-        "unidade": "OrthoDontic Centro Histórico"
+        "unidade": "OrthoDontic · R. Vig. José Inácio"
       },
       {
         "local_id": "ortho_poa_cavalhada",
-        "unidade": "OrthoDontic Cavalhada"
+        "unidade": "OrthoDontic · Cavalhada"
       },
       {
         "local_id": "ortho_poa_centro_historico_3",
-        "unidade": "OrthoDontic Centro Histórico"
+        "unidade": "OrthoDontic · R. dos Andradas"
       },
       {
         "local_id": "ortho_poa_centro_historico_4",
-        "unidade": "OrthoDontic Centro Histórico"
+        "unidade": "OrthoDontic · R. Gen. Vitorino"
       },
       {
         "local_id": "ortho_poa_rio_branco",
-        "unidade": "OrthoDontic Rio Branco"
+        "unidade": "OrthoDontic · Rio Branco"
       }
     ],
     "frase": null
   },
   "rotulo": "RS · Porto Alegre",
-  "unidade": "OrthoDontic",
+  "unidade": "OrthoDontic · Av. Borges de Medeiros",
   "cabecalho": {
     "nota": 4.8,
     "avaliacoes": 433,
@@ -200,9 +200,88 @@
       "procedencia": "medido em 196 buscas testadas, 1 medição"
     }
   },
+  "perto_da_clinica": {
+    "local_id": "ortho_poa_centro_historico",
+    "praca_id": "porto_alegre",
+    "rotulo": "RS · Porto Alegre",
+    "unidade": "OrthoDontic Centro Histórico · Av. Borges de Medeiros",
+    "medido_em": "2026-08-13",
+    "raio_m": 3000,
+    "de": 5,
+    "aparece_em": 4,
+    "em_primeiro": 4,
+    "melhor_posicao": 1,
+    "invisivel_perto": false,
+    "frase": "aparece em 4 de 5 buscas feitas a partir do próprio endereço, em 4 vezes em 1º lugar",
+    "buscas": [
+      {
+        "frase": "aparelho ortodôntico em porto alegre",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 433,
+        "topo_metros": 0
+      },
+      {
+        "frase": "aparelho ortodôntico no centro de porto alegre",
+        "intencao": "BAIRRO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 433,
+        "topo_metros": 0
+      },
+      {
+        "frase": "aparelho ortodôntico porto alegre",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 433,
+        "topo_metros": 0
+      },
+      {
+        "frase": "aparelho ortodôntico porto alegre preço",
+        "intencao": "PREÇO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 433,
+        "topo_metros": 0
+      },
+      {
+        "frase": "orthopride aparelho ortodôntico em porto alegre clareamento dental fotos",
+        "intencao": "BAIRRO",
+        "posicao": null,
+        "topo": "Orthopride | Aparelho Ortodôntico em Porto Alegre | Clareamento Dental",
+        "topo_avaliacoes": 32,
+        "topo_metros": 102
+      }
+    ],
+    "quem_aparece_na_frente": [
+      {
+        "nome": "Orthopride | Aparelho Ortodôntico em Porto Alegre | Clareamento Dental",
+        "vezes_na_frente": 1
+      }
+    ],
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 5,
+      "janela_dias": 0,
+      "medicoes": 1,
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
+    },
+    "na_cidade": {
+      "aparece_em": 10,
+      "de": 196
+    }
+  },
   "jornada": {
     "local_id": "ortho_poa_centro_historico",
-    "unidade": "OrthoDontic Centro Histórico",
+    "unidade": "OrthoDontic Centro Histórico · Av. Borges de Medeiros",
     "rotulo": "RS · Porto Alegre",
     "com_texto": 52,
     "sem_estagio": 32,
@@ -417,7 +496,7 @@
   },
   "meu_territorio": {
     "local_id": "ortho_poa_centro_historico",
-    "unidade": "OrthoDontic Centro Histórico",
+    "unidade": "OrthoDontic Centro Histórico · Av. Borges de Medeiros",
     "medido": true,
     "location": {
       "lat": -30.029218399999998,
@@ -500,7 +579,7 @@
     "local_id": "ortho_poa_centro_historico",
     "praca_id": "porto_alegre",
     "rotulo": "RS · Porto Alegre",
-    "unidade": "OrthoDontic Centro Histórico",
+    "unidade": "OrthoDontic Centro Histórico · Av. Borges de Medeiros",
     "itens": [
       {
         "problema": "Esta loja aparece em **10 das 196 buscas** que testamos na cidade.",

@@ -40,15 +40,256 @@
       }
     ]
   },
-  "planos_das_lojas": [],
-  "oferta": null,
+  "papel": "franquia",
+  "eyebrow": "Praça · quatro unidades, zero aparições",
+  "tese_titulo": "Invisível na maior cidade do país",
+  "tese": "As quatro unidades de São Paulo não aparecem em NENHUMA das 193 buscas testadas na cidade. Não é uma delas: são as quatro. E o território explica parte disso — elas estão espalhadas, com 0, 2, 2 e 16 clínicas num raio de 1 km, ou seja, em bairros de densidade muito diferente. Numa cidade de 11,9 milhões, quatro unidades invisíveis na busca competem por indicação e passagem, não por quem procura no Google.",
+  "dna": [
+    "Quatro unidades, zero aparições em 193 buscas medidas",
+    "As quatro estão em bairros de densidade muito diferente: 0, 2, 2 e 16 clínicas em 1 km",
+    "49 bairros medidos, a rede em quatro deles",
+    "11,9 milhões de habitantes — a varredura alcança uma fração da cidade",
+    "188 clínicas varridas, todas com coordenada"
+  ],
+  "plano": [
+    "Tratar encontrabilidade como o problema número um desta praça",
+    "Conferir ficha, categoria e endereço das quatro antes de qualquer mídia",
+    "Medir de novo em 30 dias com as MESMAS 193 buscas",
+    "Não comparar as quatro entre si: os bairros têm densidades incomparáveis",
+    "Estudar a cidade por região antes de discutir unidade nova"
+  ],
+  "base": "2050 avaliações medidas · 1495 com texto · 4 unidades da rede alcançadas pela varredura",
+  "citacoes": [
+    {
+      "texto": "Fui bem atendida pelas pessoas sim. Mas todo o procedimento teve que ser refeito pela minha dentista anterior em menos de seis meses.",
+      "nota": 1,
+      "data": "2025-12-05",
+      "fonte": "avaliação pública no Google"
+    },
+    {
+      "texto": "Vocês trocaram de contato? preciso falar com vocês!",
+      "nota": 1,
+      "data": "2025-07-07",
+      "fonte": "avaliação pública no Google"
+    },
+    {
+      "texto": "Uma experiência única\nTodos muito maravilhoso",
+      "nota": 5,
+      "data": "2025-12-15",
+      "fonte": "avaliação pública no Google"
+    },
+    {
+      "texto": "Ótimo atendimento, melhores profissionais",
+      "nota": 5,
+      "data": "2025-12-15",
+      "fonte": "avaliação pública no Google"
+    }
+  ],
+  "planos_das_lojas": [
+    {
+      "local_id": "sao_paulo_orthodontic",
+      "unidade": "OrthoDontic · Lapa",
+      "rotulo": "SP · São Paulo",
+      "arquivo": "planos/sao_paulo_orthodontic"
+    },
+    {
+      "local_id": "orthodontic_sao_miguel_paulista",
+      "unidade": "OrthoDontic · São Miguel Paulista",
+      "rotulo": "SP · São Paulo",
+      "arquivo": "planos/orthodontic_sao_miguel_paulista"
+    },
+    {
+      "local_id": "orthodontic_tatuape",
+      "unidade": "OrthoDontic · Tatuapé",
+      "rotulo": "SP · São Paulo",
+      "arquivo": "planos/orthodontic_tatuape"
+    },
+    {
+      "local_id": "orthodontic_republica",
+      "unidade": "OrthoDontic · República",
+      "rotulo": "SP · São Paulo",
+      "arquivo": "planos/orthodontic_republica"
+    }
+  ],
+  "oferta": {
+    "praca_id": "sao_paulo",
+    "rotulo": "SP · São Paulo",
+    "anuncios_de_aparelho": 71,
+    "anunciantes": 49,
+    "fora_do_produto": 97,
+    "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
+    "sem_texto": 3,
+    "amostra_curta": false,
+    "tese": "A disputa desta cidade é por avaliação grátis — 20 dos 71 anúncios de aparelho medidos falam disso, seguido de alinhador invisível.",
+    "posicao_vaga": "Ninguém está falando de prova social — vende confiança em vez de preço.",
+    "eixos": [
+      {
+        "eixo": "avaliacao_gratis",
+        "rotulo": "Avaliação grátis",
+        "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+        "anuncios": 20,
+        "pct": 28,
+        "frase": "20 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "alinhador",
+        "rotulo": "Alinhador invisível",
+        "o_que_significa": "produto de ticket alto e público adulto",
+        "anuncios": 14,
+        "pct": 20,
+        "frase": "14 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "preco",
+        "rotulo": "Preço na frente",
+        "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
+        "anuncios": 11,
+        "pct": 15,
+        "frase": "11 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "autoridade",
+        "rotulo": "Autoridade técnica",
+        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+        "anuncios": 11,
+        "pct": 15,
+        "frase": "11 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "estetico",
+        "rotulo": "Aparelho estético",
+        "o_que_significa": "vende discrição — público que trabalha de frente",
+        "anuncios": 6,
+        "pct": 8,
+        "frase": "6 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "publico_infantil",
+        "rotulo": "Falado para criança e adolescente",
+        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+        "anuncios": 6,
+        "pct": 8,
+        "frase": "6 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "publico_adulto",
+        "rotulo": "Falado para adulto",
+        "o_que_significa": "disputa o adulto que adiou o tratamento",
+        "anuncios": 5,
+        "pct": 7,
+        "frase": "5 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "parcelamento",
+        "rotulo": "Parcelamento",
+        "o_que_significa": "vende a mensalidade, não o tratamento",
+        "anuncios": 4,
+        "pct": 6,
+        "frase": "4 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "urgencia",
+        "rotulo": "Urgência e escassez",
+        "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+        "anuncios": 3,
+        "pct": 4,
+        "frase": "3 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "rapidez",
+        "rotulo": "Rapidez do resultado",
+        "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+        "anuncios": 3,
+        "pct": 4,
+        "frase": "3 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "sem_entrada",
+        "rotulo": "Sem entrada",
+        "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
+        "anuncios": 1,
+        "pct": 1,
+        "frase": "1 anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "prova_social",
+        "rotulo": "Prova social",
+        "o_que_significa": "vende confiança em vez de preço",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      }
+    ],
+    "por_anunciante": [
+      {
+        "anunciante": "Funorte SP",
+        "eixos": [
+          "publico_adulto",
+          "publico_infantil",
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "Ortodontia Campinas ",
+        "eixos": [
+          "preco",
+          "parcelamento",
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "Bom Para Todos",
+        "eixos": [
+          "preco",
+          "sem_entrada",
+          "urgencia"
+        ]
+      },
+      {
+        "anunciante": "Instituto jacqueline Poli - B",
+        "eixos": [
+          "alinhador",
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "Odonto Special Vila Leopoldina",
+        "eixos": [
+          "alinhador",
+          "estetico",
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "Dra. Grázia Esteves",
+        "eixos": [
+          "avaliacao_gratis",
+          "alinhador",
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "OdontoCalles - Clínica Odontológica Avançada",
+        "eixos": [
+          "estetico"
+        ]
+      },
+      {
+        "anunciante": "Odontoclinic",
+        "eixos": [
+          "avaliacao_gratis",
+          "alinhador"
+        ]
+      }
+    ]
+  },
   "bairros": {
     "praca_id": "sao_paulo",
     "rotulo": "SP · São Paulo",
     "territorio": [
       {
-        "local_id": "orthodontic",
-        "unidade": "OrthoDontic",
+        "local_id": "sao_paulo_orthodontic",
+        "unidade": "OrthoDontic · Lapa",
         "medido": true,
         "location": {
           "lat": -23.521436299999998,
@@ -113,7 +354,7 @@
       },
       {
         "local_id": "orthodontic_sao_miguel_paulista",
-        "unidade": "OrthoDontic",
+        "unidade": "OrthoDontic · São Miguel Paulista",
         "medido": true,
         "location": {
           "lat": -23.4923745,
@@ -178,7 +419,7 @@
       },
       {
         "local_id": "orthodontic_tatuape",
-        "unidade": "OrthoDontic",
+        "unidade": "OrthoDontic · Tatuapé",
         "medido": true,
         "location": {
           "lat": -23.542748,
@@ -243,7 +484,7 @@
       },
       {
         "local_id": "orthodontic_republica",
-        "unidade": "OrthoDontic",
+        "unidade": "OrthoDontic · República",
         "medido": true,
         "location": {
           "lat": -23.546505000000003,
@@ -321,24 +562,24 @@
     "unidades_localizadas": 4,
     "onde_estamos": [
       {
-        "local_id": "orthodontic",
-        "bairro": "Lapa",
-        "unidade": "OrthoDontic"
-      },
-      {
         "local_id": "orthodontic_republica",
         "bairro": "República",
-        "unidade": "OrthoDontic"
+        "unidade": "OrthoDontic · República"
       },
       {
         "local_id": "orthodontic_sao_miguel_paulista",
         "bairro": "São Miguel Paulista",
-        "unidade": "OrthoDontic"
+        "unidade": "OrthoDontic · São Miguel Paulista"
       },
       {
         "local_id": "orthodontic_tatuape",
         "bairro": "Tatuapé",
-        "unidade": "OrthoDontic"
+        "unidade": "OrthoDontic · Tatuapé"
+      },
+      {
+        "local_id": "sao_paulo_orthodontic",
+        "bairro": "Lapa",
+        "unidade": "OrthoDontic · Lapa"
       }
     ],
     "bairros": [
@@ -846,7 +1087,7 @@
         "avaliacoes_somadas": 532,
         "temos_unidade": true,
         "nossas": [
-          "orthodontic"
+          "sao_paulo_orthodontic"
         ],
         "vizinhos_fortes": [
           {
@@ -1224,28 +1465,365 @@
   },
   "placar": [
     {
-      "local_id": "sorridents_clinicas_odonto",
+      "local_id": "sao_paulo_sorridents_clinicas_odonto",
       "nome": "Sorridents Clínicas Odontológicas Tatuapé São Paulo",
       "tipo": "PREENCHER",
       "proprio": false,
       "nota": 4.9,
-      "avaliacoes": 651,
+      "avaliacoes": 1803,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     },
     {
-      "local_id": "orthodontic",
+      "local_id": "seu_sorriso_odontologia",
+      "nome": "Seu Sorriso Odontologia",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.6,
+      "avaliacoes": 1181,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "odontoclinic",
+      "nome": "Odontoclinic",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": 950,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "sousmile_pinheiros_unidade",
+      "nome": "SouSmile | Pinheiros | Unidade Oficial",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.9,
+      "avaliacoes": 836,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "sorridents_clinicas_odonto_vila_buarque",
+      "nome": "Sorridents Clínicas Odontológicas Santa Cecília São Paulo",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.7,
+      "avaliacoes": 797,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "drb_odonto_implantes_prote",
+      "nome": "DRB Odonto | Implantes, Próteses, Ortodontia e Estética no Centro de São Paulo - SP",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.9,
+      "avaliacoes": 680,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "dentar_odontologia",
+      "nome": "Dentar Odontologia",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": 674,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "ultra_facil_odontologia_sa",
+      "nome": "Ultra Fácil Odontologia São Bento",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.5,
+      "avaliacoes": 656,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "simioni_odontologia_implan",
+      "nome": "Simioni Odontologia - Implante e Lente de Contato Dental",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 5,
+      "avaliacoes": 653,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "sorridents_clinicas_odonto_mooca",
+      "nome": "Sorridents Clínicas Odontológicas Mooca São Paulo",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.8,
+      "avaliacoes": 649,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "odontoclinic_cambuci",
+      "nome": "Odontoclinic - Cambuci",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.9,
+      "avaliacoes": 608,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "sousmile",
+      "nome": "SouSmile",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.8,
+      "avaliacoes": 607,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "setimplan_centro_odontolog",
+      "nome": "Setimplan Centro Odontológico",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.8,
+      "avaliacoes": 542,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "sorridents_anhangabau",
+      "nome": "Sorridents Anhangabaú",
+      "tipo": "PREENCHER",
+      "proprio": false,
+      "nota": 4.8,
+      "avaliacoes": 540,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "sao_paulo_orthodontic",
+      "nome": "OrthoDontic",
+      "tipo": "franquia",
+      "proprio": true,
+      "nota": 4.7,
+      "avaliacoes": 189,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "orthodontic_sao_miguel_paulista",
       "nome": "OrthoDontic",
       "tipo": "franquia",
       "proprio": true,
       "nota": 4.9,
-      "avaliacoes": 308,
+      "avaliacoes": 161,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "orthodontic_tatuape",
+      "nome": "OrthoDontic",
+      "tipo": "franquia",
+      "proprio": true,
+      "nota": 4.1,
+      "avaliacoes": 108,
+      "reviews_novos_mes": null,
+      "anuncios_ativos": null
+    },
+    {
+      "local_id": "orthodontic_republica",
+      "nome": "OrthoDontic",
+      "tipo": "franquia",
+      "proprio": true,
+      "nota": 3,
+      "avaliacoes": 22,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     }
   ],
   "funil": null,
-  "temas": [],
+  "temas": [
+    {
+      "tema": "atendimento",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "sao_paulo",
+      "pct": 0.689,
+      "n": 1495,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "preco_custo",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "sao_paulo",
+      "pct": 0.0455,
+      "n": 1495,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "agenda_espera",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "sao_paulo",
+      "pct": 0.0348,
+      "n": 1495,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "comunicacao_resposta",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "sao_paulo",
+      "pct": 0.0428,
+      "n": 1495,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "qualidade_resultado",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "sao_paulo",
+      "pct": 0.5157,
+      "n": 1495,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "confianca_medo",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "sao_paulo",
+      "pct": 0.0682,
+      "n": 1495,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "contrato_burocracia",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "sao_paulo",
+      "pct": 0.014,
+      "n": 1495,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "pessoas_nominais",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "sao_paulo",
+      "pct": 0.1017,
+      "n": 1495,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "localizacao_acesso",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "sao_paulo",
+      "pct": 0.0943,
+      "n": 1495,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "recomendacao_lealdade",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "sao_paulo",
+      "pct": 0.2977,
+      "n": 1495,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "dor_medo_dentista",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "sao_paulo",
+      "pct": 0.0742,
+      "n": 1495,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "resultado_autoestima",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "sao_paulo",
+      "pct": 0.1605,
+      "n": 1495,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "explicacao_clareza",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "sao_paulo",
+      "pct": 0.0756,
+      "n": 1495,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "aparelho_tratamento",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "sao_paulo",
+      "pct": 0.0515,
+      "n": 1495,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "familia_filhos",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "sao_paulo",
+      "pct": 0.0207,
+      "n": 1495,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "tema": "tempo_relacao",
+      "snapshot_date": "2026-08-13",
+      "praca_id": "sao_paulo",
+      "pct": 0.0515,
+      "n": 1495,
+      "base": "reviews_com_texto",
+      "taxonomia_versao": "taxonomia.yaml v1.0 + lexico_orthodontic.yaml v1.1",
+      "taxonomia_hash": "bd67982156e8",
+      "fonte": "dados/serie/reviews.jsonl"
+    }
+  ],
   "sazonalidade": [],
   "sazonalidade_estado": {
     "tem": false,

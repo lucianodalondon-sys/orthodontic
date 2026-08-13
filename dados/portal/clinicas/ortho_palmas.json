@@ -275,6 +275,101 @@
       "procedencia": "medido em 120 buscas testadas, 1 medição"
     }
   },
+  "perto_da_clinica": {
+    "local_id": "ortho_palmas",
+    "praca_id": "palmas",
+    "rotulo": "TO · Palmas",
+    "unidade": "OrthoDontic",
+    "medido_em": "2026-08-13",
+    "raio_m": 3000,
+    "de": 5,
+    "aparece_em": 3,
+    "em_primeiro": 3,
+    "melhor_posicao": 1,
+    "invisivel_perto": false,
+    "frase": "aparece em 3 de 5 buscas feitas a partir do próprio endereço, em 3 vezes em 1º lugar",
+    "buscas": [
+      {
+        "frase": "aparelho ortodôntico palmas",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 306,
+        "topo_metros": 0
+      },
+      {
+        "frase": "dentista palmas",
+        "intencao": "GENÉRICO",
+        "posicao": null,
+        "topo": "Dentista 24hs Dra. Renata Sardinha",
+        "topo_avaliacoes": 64,
+        "topo_metros": 1650
+      },
+      {
+        "frase": "dentista palmas pr",
+        "intencao": "GENÉRICO",
+        "posicao": null,
+        "topo": "Dentista 24hs Dra. Renata Sardinha",
+        "topo_avaliacoes": 64,
+        "topo_metros": 1650
+      },
+      {
+        "frase": "ortodontista em palmas",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 306,
+        "topo_metros": 0
+      },
+      {
+        "frase": "ortodontista palmas",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 306,
+        "topo_metros": 0
+      }
+    ],
+    "quem_aparece_na_frente": [
+      {
+        "nome": "Dentista 24hs Dra. Renata Sardinha",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "Clínica Dra Michelly Gonzaga | Especialista em Tratamento de Canal, Restaurações, Facetas e Clareamento | Palmas - TO",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "Clínica Hardencor Odontologia",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "Dra. Alinne Antunes | Cirurgiã Dentista | Especialista em Dentística | Facetas de Resina| Clínica Odontológica em Palmas",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Dra. Aline Rodrigues - Odontologia Estética",
+        "vezes_na_frente": 1
+      }
+    ],
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 5,
+      "janela_dias": 0,
+      "medicoes": 1,
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
+    },
+    "na_cidade": {
+      "aparece_em": 3,
+      "de": 120
+    }
+  },
   "jornada": {
     "local_id": "ortho_palmas",
     "unidade": "OrthoDontic",

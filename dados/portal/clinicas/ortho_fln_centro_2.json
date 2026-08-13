@@ -2,7 +2,7 @@
   "local_id": "ortho_fln_centro_2",
   "praca_id": "florianopolis",
   "apresentacao": {
-    "unidade": "OrthoDontic Florianópolis - Rua Deodoro, Centro.",
+    "unidade": "OrthoDontic · R. Deodoro",
     "cidade": "SC · Florianópolis",
     "endereco": "R. Deodoro, 157 - Centro, Florianópolis - SC, 88010-020",
     "desde": null,
@@ -12,17 +12,17 @@
     "lojas_irmas": [
       {
         "local_id": "ortho_fln_centro",
-        "unidade": "OrthoDontic Centro"
+        "unidade": "OrthoDontic · Rua Sete de Setembro"
       },
       {
         "local_id": "ortho_fln_ingleses_do_rio_vermel",
-        "unidade": "OrthoDontic Ingleses do Rio Vermelho"
+        "unidade": "OrthoDontic · Ingleses do Rio Vermelho"
       }
     ],
     "frase": null
   },
   "rotulo": "SC · Florianópolis",
-  "unidade": "OrthoDontic Florianópolis - Rua Deodoro, Centro.",
+  "unidade": "OrthoDontic · R. Deodoro",
   "cabecalho": {
     "nota": 5,
     "avaliacoes": 268,
@@ -87,10 +87,157 @@
     "fora_total": 0,
     "sem_comparacao_porque": null
   },
-  "presenca_na_busca": null,
+  "presenca_na_busca": {
+    "local_id": "ortho_fln_centro_2",
+    "praca_id": "florianopolis",
+    "rotulo": "SC · Florianópolis",
+    "unidade": "OrthoDontic Florianópolis - Rua Deodoro, Centro.",
+    "avaliacoes_da_ficha": 268,
+    "aparece_em": 5,
+    "de": 130,
+    "pct": 4,
+    "melhor_posicao": 1,
+    "frases_onde_aparece": [
+      {
+        "frase": "ortodontista florianópolis",
+        "posicao": 1,
+        "intencao": "GENÉRICO"
+      },
+      {
+        "frase": "ortodontista em florianópolis",
+        "posicao": 1,
+        "intencao": "GENÉRICO"
+      },
+      {
+        "frase": "ortodontista centro florianopolis",
+        "posicao": 1,
+        "intencao": "BAIRRO"
+      },
+      {
+        "frase": "ortodontista em florianopolis",
+        "posicao": 1,
+        "intencao": "GENÉRICO"
+      },
+      {
+        "frase": "aparelho ortodôntico florianópolis",
+        "posicao": 3,
+        "intencao": "GENÉRICO"
+      }
+    ],
+    "invisivel": false,
+    "frase_do_topo": "Esta loja aparece em **5 das 130 buscas** que testamos na cidade.",
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 130,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/portas.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+      "procedencia": "medido em 130 buscas testadas, 1 medição"
+    }
+  },
+  "perto_da_clinica": {
+    "local_id": "ortho_fln_centro_2",
+    "praca_id": "florianopolis",
+    "rotulo": "SC · Florianópolis",
+    "unidade": "OrthoDontic Centro · R. Deodoro",
+    "medido_em": "2026-08-13",
+    "raio_m": 3000,
+    "de": 5,
+    "aparece_em": 4,
+    "em_primeiro": 3,
+    "melhor_posicao": 1,
+    "invisivel_perto": false,
+    "frase": "aparece em 4 de 5 buscas feitas a partir do próprio endereço, em 3 vezes em 1º lugar",
+    "buscas": [
+      {
+        "frase": "aparelho ortodôntico florianópolis",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic Florianópolis - Rua Deodoro, Centro.",
+        "topo_avaliacoes": 268,
+        "topo_metros": 0
+      },
+      {
+        "frase": "ortodontista centro florianopolis",
+        "intencao": "BAIRRO",
+        "posicao": 1,
+        "topo": "OrthoDontic Florianópolis - Rua Deodoro, Centro.",
+        "topo_avaliacoes": 268,
+        "topo_metros": 0
+      },
+      {
+        "frase": "ortodontista em florianópolis",
+        "intencao": "GENÉRICO",
+        "posicao": 2,
+        "topo": "Dra. Priscila Andrade",
+        "topo_avaliacoes": 66,
+        "topo_metros": 546
+      },
+      {
+        "frase": "ortodontista florianópolis",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic Florianópolis - Rua Deodoro, Centro.",
+        "topo_avaliacoes": 268,
+        "topo_metros": 0
+      },
+      {
+        "frase": "vaga ortodontista florianópolis",
+        "intencao": "RUÍDO",
+        "posicao": null,
+        "topo": "Dra Bruna Vargas Luz",
+        "topo_avaliacoes": 6,
+        "topo_metros": 512
+      }
+    ],
+    "quem_aparece_na_frente": [
+      {
+        "nome": "Dra. Priscila Andrade",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Dra Bruna Vargas Luz",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Dra. Cinara Duarte | Invisalign Florianópolis",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Dentista 24h - Letícia P. Gomes em Florianópolis",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Dra. Isadora Bianchet - Dentista em Florianópolis",
+        "vezes_na_frente": 1
+      }
+    ],
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 5,
+      "janela_dias": 0,
+      "medicoes": 1,
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
+    },
+    "na_cidade": {
+      "aparece_em": 5,
+      "de": 130
+    }
+  },
   "jornada": {
     "local_id": "ortho_fln_centro_2",
-    "unidade": "OrthoDontic Centro",
+    "unidade": "OrthoDontic Centro · R. Deodoro",
     "rotulo": "SC · Florianópolis",
     "com_texto": 99,
     "sem_estagio": 71,
@@ -281,7 +428,7 @@
   },
   "meu_territorio": {
     "local_id": "ortho_fln_centro_2",
-    "unidade": "OrthoDontic Centro",
+    "unidade": "OrthoDontic Centro · R. Deodoro",
     "medido": true,
     "location": {
       "lat": -27.596536,
@@ -360,7 +507,60 @@
       "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
     }
   },
-  "execucao": null,
+  "execucao": {
+    "local_id": "ortho_fln_centro_2",
+    "praca_id": "florianopolis",
+    "rotulo": "SC · Florianópolis",
+    "unidade": "OrthoDontic Centro · R. Deodoro",
+    "itens": [
+      {
+        "problema": "Esta loja aparece em **5 das 130 buscas** que testamos na cidade.",
+        "e_marketing": true,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "seo_local",
+          "especialidade": "marketing local e Google Business",
+          "problema": "a unidade aparece em 5 buscas de 130 testadas na própria cidade",
+          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
+          "evidencias": [
+            "aparece em 5 de 130 buscas",
+            "aparece em: {'frase': 'ortodontista florianópolis', 'posicao': 1, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'ortodontista em florianópolis', 'posicao': 1, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'ortodontista centro florianopolis', 'posicao': 1, 'intencao': 'BAIRRO'}",
+            "aparece em: {'frase': 'ortodontista em florianopolis', 'posicao': 1, 'intencao': 'GENÉRICO'}",
+            "aparece em: {'frase': 'aparelho ortodôntico florianópolis', 'posicao': 3, 'intencao': 'GENÉRICO'}"
+          ],
+          "nao_fazer": [
+            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
+            "não prometer posição: o Google não vende ordem no mapa"
+          ],
+          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
+          "prazo": "30 dias",
+          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
+          "recoletar_em_dias": 30
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 130,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/portal/presenca_por_loja.json",
+          "a_favor": [
+            "Esta loja aparece em **5 das 130 buscas** que testamos na cidade."
+          ],
+          "contra": [
+            "uma medição só — a segunda dirá se é estrutural ou momento"
+          ],
+          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+          "procedencia": "medido em 130 buscas testadas, 1 medição"
+        }
+      }
+    ],
+    "de_marketing": 1,
+    "de_operacao": 0
+  },
   "meu_bairro": {
     "bairro": "Centro",
     "clinicas": 115,
@@ -400,17 +600,404 @@
         "acao_recomendada": "sem ação padrão para este gatilho",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": null,
-        "medido_em": null,
-        "veredito": "aberto",
+        "medido_em": "2026-08-13",
+        "veredito": "cedo_demais",
         "dias": 0
       }
     ],
     "total": 1,
     "aviso": "O livro nasceu hoje. Nenhum arco completou 21 dias, então ainda não há veredito para ninguém — a primeira resposta vem na coleta seguinte."
   },
-  "oferta_da_cidade": null,
-  "plano": null,
-  "anuncios_da_cidade": null,
+  "oferta_da_cidade": {
+    "praca_id": "florianopolis",
+    "rotulo": "SC · Florianópolis",
+    "anuncios_de_aparelho": 35,
+    "anunciantes": 14,
+    "fora_do_produto": 81,
+    "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
+    "sem_texto": 0,
+    "amostra_curta": false,
+    "tese": "A disputa desta cidade é por avaliação grátis — 9 dos 35 anúncios de aparelho medidos falam disso, seguido de alinhador invisível.",
+    "posicao_vaga": "Ninguém está falando de preço na frente — a cidade disputa por número; entrar aqui é entrar na briga mais cara.",
+    "eixos": [
+      {
+        "eixo": "avaliacao_gratis",
+        "rotulo": "Avaliação grátis",
+        "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+        "anuncios": 9,
+        "pct": 26,
+        "frase": "9 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "alinhador",
+        "rotulo": "Alinhador invisível",
+        "o_que_significa": "produto de ticket alto e público adulto",
+        "anuncios": 6,
+        "pct": 17,
+        "frase": "6 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "autoridade",
+        "rotulo": "Autoridade técnica",
+        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+        "anuncios": 6,
+        "pct": 17,
+        "frase": "6 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "estetico",
+        "rotulo": "Aparelho estético",
+        "o_que_significa": "vende discrição — público que trabalha de frente",
+        "anuncios": 4,
+        "pct": 11,
+        "frase": "4 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "rapidez",
+        "rotulo": "Rapidez do resultado",
+        "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+        "anuncios": 2,
+        "pct": 6,
+        "frase": "2 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "publico_infantil",
+        "rotulo": "Falado para criança e adolescente",
+        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+        "anuncios": 1,
+        "pct": 3,
+        "frase": "1 anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "preco",
+        "rotulo": "Preço na frente",
+        "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "sem_entrada",
+        "rotulo": "Sem entrada",
+        "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "parcelamento",
+        "rotulo": "Parcelamento",
+        "o_que_significa": "vende a mensalidade, não o tratamento",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "publico_adulto",
+        "rotulo": "Falado para adulto",
+        "o_que_significa": "disputa o adulto que adiou o tratamento",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "urgencia",
+        "rotulo": "Urgência e escassez",
+        "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "prova_social",
+        "rotulo": "Prova social",
+        "o_que_significa": "vende confiança em vez de preço",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      }
+    ],
+    "por_anunciante": [
+      {
+        "anunciante": "Odontoclinic Florianópolis",
+        "eixos": [
+          "alinhador",
+          "estetico"
+        ]
+      },
+      {
+        "anunciante": "Dental Vitta - Ingleses",
+        "eixos": [
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "Odonto Excellence  Canasvieiras - Florianópolis - SC",
+        "eixos": [
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "OralClic Jd. São João - Guarulhos/SP",
+        "eixos": [
+          "avaliacao_gratis",
+          "autoridade",
+          "rapidez"
+        ]
+      },
+      {
+        "anunciante": "Orthopride Florianopolis",
+        "eixos": [
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "profcarloseduardowerneck",
+        "eixos": [
+          "avaliacao_gratis",
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "Dra Gabriela Adams Florianópolis",
+        "eixos": [
+          "alinhador",
+          "rapidez"
+        ]
+      },
+      {
+        "anunciante": "Floripa Mil Grau",
+        "eixos": [
+          "alinhador",
+          "autoridade"
+        ]
+      }
+    ],
+    "e_da_cidade": true
+  },
+  "plano": "planos/ortho_fln_centro_2",
+  "anuncios_da_cidade": {
+    "e_da_cidade": true,
+    "rotulo": "SC · Florianópolis",
+    "manchete": "14 anunciantes compram aparelho em SC · Florianópolis, e nenhum é da rede.",
+    "anuncios_ativos": 35,
+    "anunciantes_total": 14,
+    "somos_um_deles": false,
+    "anunciantes": [
+      {
+        "nome": "Odontoclinic Florianópolis",
+        "nosso": false,
+        "anuncios": 7,
+        "paginas": [
+          "764298743725748"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Transforme Seu Sorriso: Ortodontia Moderna e Personalizada na Odontoclinic!\n\nTemos uma Equipe Capacitada para:\n- Aparelhos Metálicos;\n- Aparelhos em Porcelana;\n- Aparelhos Autoligados;\n- Alinhadores Invisíveis;\n\n⭐ Sorria com Confiança e Satisfação.\n🕐 Horários Flexíveis para Avali…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Orthopride Florianopolis",
+        "nosso": false,
+        "anuncios": 6,
+        "paginas": [
+          "103690004680061"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Se quiser, já sabe né? 😉\n\nEntramos na trend trazendo um pouco da nossa rotina e dos passos envolvidos em um avaliação, com o tom de brincadeira mas com toda seriedade na prestação de serviço.\n\nSe você ainda não conhece nossa unidade e nossos serviços, agende já sua avaliação e ap…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odonto Excellence Florianópolis - Coqueiros",
+        "nosso": false,
+        "anuncios": 4,
+        "paginas": [
+          "105430291974440"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Agende agora mesmo a sua avaliação clicando em \"CADASTRE-SE\"!\n\n🦷 Na Odonto Excellence você encontra os melhores especialistas 🦷\n\n✅ Ortodontia\n✅ Implante\n✅ Prótese\n✅ Clínico Geral\n\nE muito mais...\n\nDados técnicos vide perfil.",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dental Vitta - Ingleses",
+        "nosso": false,
+        "anuncios": 3,
+        "paginas": [
+          "870583679468949"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "🦷 Seu sorriso não precisa mais esperar para mudar!\n\n😁 Estamos com condições especiais para quem quer colocar aparelho ortodôntico e alinhar os dentes com acompanhamento profissional.\n\n📲 Clique e agende sua avaliação no WhatsApp.\n\n📍 Rua Intendente João Nunes Vieira, 1335 - Inglese…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odonto Excellence  Canasvieiras - Florianópolis - SC",
+        "nosso": false,
+        "anuncios": 3,
+        "paginas": [
+          "110851444855475"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "📢 FLORIANÓPOLIS 📢\n\nNa Odonto Excellence, entendemos o impacto profundo que um sorriso pode ter em sua vida. Não é apenas sobre estética; é sobre recuperar a confiança perdida e a qualidade de não sentir dores! ⚜️\n\nAqui você encontra:\n\n✅ Soluções completas em Ortodontia, Implantes…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dr. Rodrigo de Faria Correa",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "249419488244426"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Atualmente uma das formas de se alterar a aparência do sorriso é com laminados cerâmicos / lentes de contato dentais. Essas finas estruturas de porcelana/cerâmica quando bem indicadas servem para corrigir forma, cor e restaurar o dente com um perfil mais agradável dentro de conce…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Zenith Educação Continuada",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "107934074467733"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Uma carreira sólida na especialização em ortodontia é construída sobre pilares inegociáveis que garantem previsibilidade. \n\nDominar biomecânica, decisões clínicas pautadas em evidências científicas e protocolos de diagnóstico minimizam erros e otimizam o tempo de tratamento. Tend…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "profcarloseduardowerneck",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "113201896781154"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "✨ Seu sorriso merece um cuidado à altura.\n\nOdontologia estética, implantes e ortodontia com planejamento personalizado, tecnologia e atenção a cada detalhe.\n\n📍 Novo endereço no Centro de Florianópolis\n📲 Agende sua avaliação com o Dr. Carlos Eduardo Werneck – CRO/SC 8933.\n\nClique …",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dra Gabriela Adams Florianópolis",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "804663232726710"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "EP. 1 | Coisas que você precisa saber antes de melhorar o seu sorriso. 💛\n\nSe existe uma coisa que aprendi nesses mais de 16 anos de odontologia, é que nenhum procedimento deveria ser a resposta para todos os casos.\n\nE talvez esse seja um dos maiores erros que vejo hoje.\nAchar que…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Floripa Mil Grau",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "319739671441859"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Ô raça, não é medo de dentista. É que nunca sobra horário.\n\nO Centro Odontológico da Ilha abriu o Momento Implante, que acontece uma vez por ano, nos dias 12, 13 e 14 de agosto.\n\nE apesar do nome, dá pra começar implante, prótese, faceta, aparelho ortodôntico, alinhador, clareame…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odonto Excellence Florianópolis - Agronômica",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "107466247461897"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Imagina você que precisa ir ao dentista, encontrar uma clínica onde você pode escolher o valor que vai pagar por mês, o melhor dia para o seu pagamento, ganhar descontos exclusivos e tudo isso com um carnê próprio, SEM precisar de cartão?\n\nAqui você encontra tudo isso e muito mai…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Ondula Estúdio Dental",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "476990182171242"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Você tem dentes tortos, separados, mordida abertaou fechada? \n\nOs alinhadores são usados nos casos de dentes tortos, separados e também para quem já usou aparelho e os dentes voltaram a entortar. 😁\n\nA Ortodontista Monique está com agenda aberta para consultas de avaliação ⬅️\n\nNes…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "OralClic Jd. São João - Guarulhos/SP",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "939342239272280"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Quem disse que começar um tratamento ortodôntico precisa ser demorado? Na OralClic, você faz a avaliação, a documentação digital e já pode instalar o aparelho no mesmo dia*. Tudo no mesmo lugar, com rapidez, conforto e atendimento especializado.\n\n✅ Documentação digital na clínica…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "RJ Mentoria & Workshop",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "1191869897331901"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "A Ortodontia e a Odontopediatria nunca estiveram tão conectadas.\n\nEm setembro de 2027, o Costão do Santinho será palco de um encontro único: Summit Ortopedi, reunindo 6 grandes nomes da Odontologia brasileira para 3 dias de imersão, conhecimento e integração.",
+        "de_outra_unidade": null
+      }
+    ],
+    "fora_do_produto": 81,
+    "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
+  },
   "eventos": [
     {
       "data": "2026-08-13",

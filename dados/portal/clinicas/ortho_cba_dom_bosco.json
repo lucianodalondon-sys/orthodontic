@@ -2,7 +2,7 @@
   "local_id": "ortho_cba_dom_bosco",
   "praca_id": "cuiaba",
   "apresentacao": {
-    "unidade": "OrthoDontic Cuiabá Dom Bosco (Centro Sul)",
+    "unidade": "OrthoDontic · Centro Sul",
     "cidade": "MT · Cuiabá",
     "endereco": null,
     "desde": "8/ago",
@@ -12,17 +12,17 @@
     "lojas_irmas": [
       {
         "local_id": "ortho_cba_centro_norte",
-        "unidade": "OrthoDontic Cuiabá Centro Norte"
+        "unidade": "OrthoDontic · Centro Norte"
       },
       {
         "local_id": "ortho_cba_fernando_correa",
-        "unidade": "OrthoDontic Cuiabá Fernando Corrêa"
+        "unidade": "OrthoDontic · Pico do Amor"
       }
     ],
-    "frase": "OrthoDontic Cuiabá Dom Bosco (Centro Sul) é escutada desde 8/ago, em 3 medições, e divide Cuiabá com mais 2 lojas da rede."
+    "frase": "OrthoDontic · Centro Sul é escutada desde 8/ago, em 3 medições, e divide Cuiabá com mais 2 lojas da rede."
   },
   "rotulo": "MT · Cuiabá",
-  "unidade": "OrthoDontic Cuiabá Dom Bosco (Centro Sul)",
+  "unidade": "OrthoDontic · Centro Sul",
   "cabecalho": {
     "nota": 4.9,
     "avaliacoes": 71,
@@ -247,6 +247,101 @@
       "contra": [],
       "o_que_aumentaria": "repetir a varredura de buscas noutra data",
       "procedencia": "medido em 151 buscas testadas, 1 medição"
+    }
+  },
+  "perto_da_clinica": {
+    "local_id": "ortho_cba_dom_bosco",
+    "praca_id": "cuiaba",
+    "rotulo": "MT · Cuiabá",
+    "unidade": "OrthoDontic Cuiabá Dom Bosco (Centro Sul)",
+    "medido_em": "2026-08-13",
+    "raio_m": 3000,
+    "de": 5,
+    "aparece_em": 3,
+    "em_primeiro": 0,
+    "melhor_posicao": 2,
+    "invisivel_perto": false,
+    "frase": "aparece em 3 de 5 buscas feitas a partir do próprio endereço, melhor posição: 2º",
+    "buscas": [
+      {
+        "frase": "aparelho ortodôntico cuiaba",
+        "intencao": "GENÉRICO",
+        "posicao": 2,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 1223,
+        "topo_metros": 610
+      },
+      {
+        "frase": "dentista cuiabá centro",
+        "intencao": "BAIRRO",
+        "posicao": null,
+        "topo": "Consultório Odontológico Dra Michelly Ramos. Atendimento de Urgência e Emergência",
+        "topo_avaliacoes": 14,
+        "topo_metros": 418
+      },
+      {
+        "frase": "ortodontista cuiabá",
+        "intencao": "GENÉRICO",
+        "posicao": 5,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 1223,
+        "topo_metros": 610
+      },
+      {
+        "frase": "ortodontista em cuiabá",
+        "intencao": "GENÉRICO",
+        "posicao": 8,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 1223,
+        "topo_metros": 610
+      },
+      {
+        "frase": "vaga ortodontista cuiaba",
+        "intencao": "RUÍDO",
+        "posicao": null,
+        "topo": "Dra. Paula Viana | Dentista | Bairro Lixeira - Cuiabá",
+        "topo_avaliacoes": 62,
+        "topo_metros": 1928
+      }
+    ],
+    "quem_aparece_na_frente": [
+      {
+        "nome": "OrthoDontic",
+        "vezes_na_frente": 4
+      },
+      {
+        "nome": "ODONTO MEDICINA 🦷",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "Aparelho invisível SOUSMILE Cuiabá - Dra. Laura Damo",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "Dra. Noelani Lew - Ortodontista em Cuiabá",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "Dra. Iara Marcon",
+        "vezes_na_frente": 2
+      }
+    ],
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 5,
+      "janela_dias": 0,
+      "medicoes": 1,
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
+    },
+    "na_cidade": {
+      "aparece_em": 0,
+      "de": 151
     }
   },
   "jornada": {

@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-08-13T01:11:13",
+  "gerado_em": "2026-08-13T02:29:16",
   "gerado_de": "dados/serie + dados/conteudo + dados/identidade",
   "corte": "2026-08-13",
   "taxonomia_versao": "1.1",
@@ -22,9 +22,11 @@
         "RS · Caxias do Sul"
       ],
       "tem": [
-        "praca"
+        "praca",
+        "captacao",
+        "plano"
       ],
-      "estudos": 1
+      "estudos": 3
     },
     {
       "praca_id": "contagem",
@@ -105,9 +107,11 @@
         "SC · Florianópolis"
       ],
       "tem": [
-        "praca"
+        "praca",
+        "captacao",
+        "plano"
       ],
-      "estudos": 1
+      "estudos": 3
     },
     {
       "praca_id": "goiania",
@@ -240,9 +244,11 @@
         "RJ · Rio de Janeiro"
       ],
       "tem": [
-        "praca"
+        "praca",
+        "captacao",
+        "plano"
       ],
-      "estudos": 1
+      "estudos": 3
     },
     {
       "praca_id": "sao_paulo",
@@ -255,9 +261,11 @@
         "SP · São Paulo"
       ],
       "tem": [
-        "praca"
+        "praca",
+        "captacao",
+        "plano"
       ],
-      "estudos": 1
+      "estudos": 3
     },
     {
       "praca_id": "sorocaba",
@@ -287,9 +295,11 @@
         "MG · Uberlândia"
       ],
       "tem": [
-        "praca"
+        "praca",
+        "captacao",
+        "plano"
       ],
-      "estudos": 1
+      "estudos": 3
     }
   ],
   "arquivos": {
@@ -303,6 +313,7 @@
       "rival",
       "anuncios",
       "presenca_por_loja",
+      "perto_da_loja",
       "voz_da_cidade",
       "rede",
       "rede_cruzamento",
@@ -313,6 +324,8 @@
       "funil_nacional"
     ],
     "clinicas": [
+      "caxias_do_su_orthodontic",
+      "caxias_do_su_orthodontic_centro",
       "ortho_cba_centro_norte",
       "ortho_cba_dom_bosco",
       "ortho_cba_fernando_correa",
@@ -348,12 +361,14 @@
       "ortho_soro_jardim_faculdade",
       "ortho_soro_vila_formosa",
       "ortho_souza_naves",
-      "orthodontic",
-      "orthodontic_centro",
       "orthodontic_kayser",
       "orthodontic_republica",
       "orthodontic_sao_miguel_paulista",
-      "orthodontic_tatuape"
+      "orthodontic_tatuape",
+      "rio_de_janei_orthodontic",
+      "sao_paulo_orthodontic",
+      "uberlandia_orthodontic",
+      "uberlandia_orthodontic_centro"
     ],
     "pracas": [
       "caxias_do_sul",
@@ -375,10 +390,12 @@
       "uberlandia"
     ],
     "captacao": [
+      "caxias_do_sul",
       "contagem",
       "cuiaba",
       "curitiba",
       "feira",
+      "florianopolis",
       "goiania",
       "imperatriz",
       "joinville",
@@ -392,9 +409,14 @@
       "porto_alegre",
       "prudente",
       "rio_branco",
-      "sorocaba"
+      "rio_de_janeiro",
+      "sao_paulo",
+      "sorocaba",
+      "uberlandia"
     ],
     "planos": [
+      "caxias_do_su_orthodontic",
+      "caxias_do_su_orthodontic_centro",
       "ortho_cba_centro_norte",
       "ortho_cba_dom_bosco",
       "ortho_cba_fernando_correa",
@@ -405,6 +427,9 @@
       "ortho_cwb_centro_3",
       "ortho_cwb_centro_4",
       "ortho_cwb_portao",
+      "ortho_fln_centro",
+      "ortho_fln_centro_2",
+      "ortho_fln_ingleses_do_rio_vermel",
       "ortho_fsa",
       "ortho_gyn_jardim_tropical",
       "ortho_gyn_st_central",
@@ -426,7 +451,15 @@
       "ortho_soro_centro",
       "ortho_soro_jardim_faculdade",
       "ortho_soro_vila_formosa",
-      "ortho_souza_naves"
+      "ortho_souza_naves",
+      "orthodontic_kayser",
+      "orthodontic_republica",
+      "orthodontic_sao_miguel_paulista",
+      "orthodontic_tatuape",
+      "rio_de_janei_orthodontic",
+      "sao_paulo_orthodontic",
+      "uberlandia_orthodontic",
+      "uberlandia_orthodontic_centro"
     ],
     "oportunidade": [
       "imperatriz",
@@ -439,10 +472,12 @@
   },
   "telas": [
     "achados",
+    "captacao/caxias_do_sul",
     "captacao/contagem",
     "captacao/cuiaba",
     "captacao/curitiba",
     "captacao/feira",
+    "captacao/florianopolis",
     "captacao/goiania",
     "captacao/imperatriz",
     "captacao/joinville",
@@ -456,7 +491,12 @@
     "captacao/porto_alegre",
     "captacao/prudente",
     "captacao/rio_branco",
+    "captacao/rio_de_janeiro",
+    "captacao/sao_paulo",
     "captacao/sorocaba",
+    "captacao/uberlandia",
+    "clinicas/caxias_do_su_orthodontic",
+    "clinicas/caxias_do_su_orthodontic_centro",
     "clinicas/ortho_cba_centro_norte",
     "clinicas/ortho_cba_dom_bosco",
     "clinicas/ortho_cba_fernando_correa",
@@ -492,16 +532,14 @@
     "clinicas/ortho_soro_jardim_faculdade",
     "clinicas/ortho_soro_vila_formosa",
     "clinicas/ortho_souza_naves",
-    "clinicas/orthodontic",
-    "clinicas/orthodontic",
-    "clinicas/orthodontic",
-    "clinicas/orthodontic",
-    "clinicas/orthodontic_centro",
-    "clinicas/orthodontic_centro",
     "clinicas/orthodontic_kayser",
     "clinicas/orthodontic_republica",
     "clinicas/orthodontic_sao_miguel_paulista",
     "clinicas/orthodontic_tatuape",
+    "clinicas/rio_de_janei_orthodontic",
+    "clinicas/sao_paulo_orthodontic",
+    "clinicas/uberlandia_orthodontic",
+    "clinicas/uberlandia_orthodontic_centro",
     "clinicas_indice",
     "corretor",
     "evidencias",
@@ -512,6 +550,8 @@
     "oportunidade/maraba",
     "oportunidade/parauapebas",
     "oportunidade/rio_branco",
+    "planos/caxias_do_su_orthodontic",
+    "planos/caxias_do_su_orthodontic_centro",
     "planos/ortho_cba_centro_norte",
     "planos/ortho_cba_dom_bosco",
     "planos/ortho_cba_fernando_correa",
@@ -522,6 +562,9 @@
     "planos/ortho_cwb_centro_3",
     "planos/ortho_cwb_centro_4",
     "planos/ortho_cwb_portao",
+    "planos/ortho_fln_centro",
+    "planos/ortho_fln_centro_2",
+    "planos/ortho_fln_ingleses_do_rio_vermel",
     "planos/ortho_fsa",
     "planos/ortho_gyn_jardim_tropical",
     "planos/ortho_gyn_st_central",
@@ -544,6 +587,14 @@
     "planos/ortho_soro_jardim_faculdade",
     "planos/ortho_soro_vila_formosa",
     "planos/ortho_souza_naves",
+    "planos/orthodontic_kayser",
+    "planos/orthodontic_republica",
+    "planos/orthodontic_sao_miguel_paulista",
+    "planos/orthodontic_tatuape",
+    "planos/rio_de_janei_orthodontic",
+    "planos/sao_paulo_orthodontic",
+    "planos/uberlandia_orthodontic",
+    "planos/uberlandia_orthodontic_centro",
     "pracas/caxias_do_sul",
     "pracas/contagem",
     "pracas/cuiaba",

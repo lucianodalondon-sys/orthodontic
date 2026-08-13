@@ -40,15 +40,244 @@
       }
     ]
   },
-  "planos_das_lojas": [],
-  "oferta": null,
+  "papel": "franquia",
+  "eyebrow": "Praça · a melhor presença das cinco metrópoles",
+  "tese_titulo": "Duas no Centro, uma na praia, e a única que aparece",
+  "tese": "Florianópolis é a única das cinco metrópoles onde a rede aparece na busca: 5, 3 e 1 de 130 frases testadas. Ainda é pouco, mas é diferente de zero. A geografia da cidade está no dado: duas unidades no Centro, com 101 e 102 clínicas num raio de 1 km, e uma nos Ingleses, com 9. São dois mercados, não um.",
+  "dna": [
+    "A única das cinco metrópoles com presença medida: 5, 3 e 1 de 130",
+    "Duas unidades no Centro com 101 e 102 clínicas em 1 km",
+    "Uma nos Ingleses com 9 clínicas em 1 km — outro mercado",
+    "As três usam site regional próprio (orthodonticsc.com.br)",
+    "13 bairros medidos, a rede em três"
+  ],
+  "plano": [
+    "Entender o que a unidade de 5 aparições faz e as outras não",
+    "Tratar Centro e Ingleses como praças diferentes dentro da cidade",
+    "Não diluir a comunicação das duas do Centro na mesma frase",
+    "Remedir as mesmas 130 buscas em 30 dias",
+    "Usar Florianópolis como referência para as outras quatro metrópoles"
+  ],
+  "base": "2040 avaliações medidas · 1415 com texto · 3 unidades da rede alcançadas pela varredura",
+  "citacoes": [
+    {
+      "texto": "Um descaso total pelo whatsapp. Nenhuma consideração pelas pessoas. Demoram dias para responder. Desisti",
+      "nota": 1,
+      "data": "2026-03-02",
+      "fonte": "avaliação pública no Google"
+    },
+    {
+      "texto": "Péssimo atendimento! Não atendem o telefone e não respondem via whatsapp. Estou solicitando uma nota fiscal de outubro desde fevereiro e até agora nada.",
+      "nota": 1,
+      "data": "2026-04-30",
+      "fonte": "avaliação pública no Google"
+    },
+    {
+      "texto": "Excelente atendimento! A Dra.  Lessandra é muito atenciosa e cuidadosa. Gostei do resultado e recomendo!",
+      "nota": 5,
+      "data": "2025-12-11",
+      "fonte": "avaliação pública no Google"
+    },
+    {
+      "texto": "Ótimo atendimento, a recepção, todos os funcionários extremamente queridos com seu atendimento. Minha dentista Dr Iara muito querida.",
+      "nota": 5,
+      "data": "2025-12-12",
+      "fonte": "avaliação pública no Google"
+    }
+  ],
+  "planos_das_lojas": [
+    {
+      "local_id": "ortho_fln_centro",
+      "unidade": "OrthoDontic · Rua Sete de Setembro",
+      "rotulo": "SC · Florianópolis",
+      "arquivo": "planos/ortho_fln_centro"
+    },
+    {
+      "local_id": "ortho_fln_centro_2",
+      "unidade": "OrthoDontic · R. Deodoro",
+      "rotulo": "SC · Florianópolis",
+      "arquivo": "planos/ortho_fln_centro_2"
+    },
+    {
+      "local_id": "ortho_fln_ingleses_do_rio_vermel",
+      "unidade": "OrthoDontic · Ingleses do Rio Vermelho",
+      "rotulo": "SC · Florianópolis",
+      "arquivo": "planos/ortho_fln_ingleses_do_rio_vermel"
+    }
+  ],
+  "oferta": {
+    "praca_id": "florianopolis",
+    "rotulo": "SC · Florianópolis",
+    "anuncios_de_aparelho": 35,
+    "anunciantes": 14,
+    "fora_do_produto": 81,
+    "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
+    "sem_texto": 0,
+    "amostra_curta": false,
+    "tese": "A disputa desta cidade é por avaliação grátis — 9 dos 35 anúncios de aparelho medidos falam disso, seguido de alinhador invisível.",
+    "posicao_vaga": "Ninguém está falando de preço na frente — a cidade disputa por número; entrar aqui é entrar na briga mais cara.",
+    "eixos": [
+      {
+        "eixo": "avaliacao_gratis",
+        "rotulo": "Avaliação grátis",
+        "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+        "anuncios": 9,
+        "pct": 26,
+        "frase": "9 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "alinhador",
+        "rotulo": "Alinhador invisível",
+        "o_que_significa": "produto de ticket alto e público adulto",
+        "anuncios": 6,
+        "pct": 17,
+        "frase": "6 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "autoridade",
+        "rotulo": "Autoridade técnica",
+        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+        "anuncios": 6,
+        "pct": 17,
+        "frase": "6 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "estetico",
+        "rotulo": "Aparelho estético",
+        "o_que_significa": "vende discrição — público que trabalha de frente",
+        "anuncios": 4,
+        "pct": 11,
+        "frase": "4 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "rapidez",
+        "rotulo": "Rapidez do resultado",
+        "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+        "anuncios": 2,
+        "pct": 6,
+        "frase": "2 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "publico_infantil",
+        "rotulo": "Falado para criança e adolescente",
+        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+        "anuncios": 1,
+        "pct": 3,
+        "frase": "1 anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "preco",
+        "rotulo": "Preço na frente",
+        "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "sem_entrada",
+        "rotulo": "Sem entrada",
+        "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "parcelamento",
+        "rotulo": "Parcelamento",
+        "o_que_significa": "vende a mensalidade, não o tratamento",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "publico_adulto",
+        "rotulo": "Falado para adulto",
+        "o_que_significa": "disputa o adulto que adiou o tratamento",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "urgencia",
+        "rotulo": "Urgência e escassez",
+        "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "prova_social",
+        "rotulo": "Prova social",
+        "o_que_significa": "vende confiança em vez de preço",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      }
+    ],
+    "por_anunciante": [
+      {
+        "anunciante": "Odontoclinic Florianópolis",
+        "eixos": [
+          "alinhador",
+          "estetico"
+        ]
+      },
+      {
+        "anunciante": "Dental Vitta - Ingleses",
+        "eixos": [
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "Odonto Excellence  Canasvieiras - Florianópolis - SC",
+        "eixos": [
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "OralClic Jd. São João - Guarulhos/SP",
+        "eixos": [
+          "avaliacao_gratis",
+          "autoridade",
+          "rapidez"
+        ]
+      },
+      {
+        "anunciante": "Orthopride Florianopolis",
+        "eixos": [
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "profcarloseduardowerneck",
+        "eixos": [
+          "avaliacao_gratis",
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "Dra Gabriela Adams Florianópolis",
+        "eixos": [
+          "alinhador",
+          "rapidez"
+        ]
+      },
+      {
+        "anunciante": "Floripa Mil Grau",
+        "eixos": [
+          "alinhador",
+          "autoridade"
+        ]
+      }
+    ]
+  },
   "bairros": {
     "praca_id": "florianopolis",
     "rotulo": "SC · Florianópolis",
     "territorio": [
       {
         "local_id": "ortho_fln_centro",
-        "unidade": "OrthoDontic Centro",
+        "unidade": "OrthoDontic Centro · Rua Sete de Setembro",
         "medido": true,
         "location": {
           "lat": -27.5954685,
@@ -118,7 +347,7 @@
       },
       {
         "local_id": "ortho_fln_centro_2",
-        "unidade": "OrthoDontic Centro",
+        "unidade": "OrthoDontic Centro · R. Deodoro",
         "medido": true,
         "location": {
           "lat": -27.596536,
@@ -268,12 +497,12 @@
       {
         "local_id": "ortho_fln_centro",
         "bairro": "Centro",
-        "unidade": "OrthoDontic Centro"
+        "unidade": "OrthoDontic Centro · Rua Sete de Setembro"
       },
       {
         "local_id": "ortho_fln_centro_2",
         "bairro": "Centro",
-        "unidade": "OrthoDontic Centro"
+        "unidade": "OrthoDontic Centro · R. Deodoro"
       },
       {
         "local_id": "ortho_fln_ingleses_do_rio_vermel",

@@ -73,8 +73,393 @@
  "minimo_para_falar": 8,
  "lojas": [
   {
+   "local_id": "caxias_do_su_orthodontic",
+   "unidade": "OrthoDontic · R. Pinheiro Machado",
+   "rotulo": "RS · Caxias do Sul",
+   "com_texto": 94,
+   "sem_estagio": 56,
+   "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
+   "estagios": [
+    {
+     "estagio": "descoberta",
+     "rotulo": "Descoberta",
+     "o_que_e": "como me acharam",
+     "quem_resolve": "marketing e ficha do Google",
+     "medido": true,
+     "avaliacoes": 17,
+     "dor": 0,
+     "elogio": 17,
+     "pct_dor": 0,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": "17 avaliações falam deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "contato",
+     "rotulo": "Contato",
+     "o_que_e": "telefone e WhatsApp",
+     "quem_resolve": "recepção",
+     "medido": false,
+     "avaliacoes": 0,
+     "dor": 0,
+     "elogio": 0,
+     "pct_dor": null,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": null,
+     "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+    },
+    {
+     "estagio": "agendamento",
+     "rotulo": "Agendamento",
+     "o_que_e": "marcar e remarcar",
+     "quem_resolve": "recepção",
+     "medido": false,
+     "avaliacoes": 0,
+     "dor": 0,
+     "elogio": 0,
+     "pct_dor": null,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": null,
+     "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+    },
+    {
+     "estagio": "recepcao",
+     "rotulo": "Recepção",
+     "o_que_e": "chegar e esperar",
+     "quem_resolve": "recepção",
+     "medido": true,
+     "avaliacoes": 12,
+     "dor": 0,
+     "elogio": 12,
+     "pct_dor": 0,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": "12 avaliações falam deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "avaliacao",
+     "rotulo": "Avaliação",
+     "o_que_e": "a primeira consulta",
+     "quem_resolve": "clínica",
+     "medido": true,
+     "avaliacoes": 1,
+     "dor": 0,
+     "elogio": 1,
+     "pct_dor": 0,
+     "amostra_curta": true,
+     "exemplos": [],
+     "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "contratacao",
+     "rotulo": "Contratação",
+     "o_que_e": "preço, contrato e entrada",
+     "quem_resolve": "franqueado",
+     "medido": true,
+     "avaliacoes": 4,
+     "dor": 0,
+     "elogio": 4,
+     "pct_dor": 0,
+     "amostra_curta": true,
+     "exemplos": [],
+     "frase": "4 avaliações falam deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "clinico",
+     "rotulo": "Atendimento clínico",
+     "o_que_e": "a cadeira",
+     "quem_resolve": "clínica",
+     "medido": true,
+     "avaliacoes": 14,
+     "dor": 1,
+     "elogio": 13,
+     "pct_dor": 7,
+     "amostra_curta": false,
+     "exemplos": [
+      {
+       "nota": 2,
+       "data": "2026-08-06",
+       "texto": "Em geral, o serviço é de qualidade,  mas muitas doutoras não tem um bom tratamento com o cliente.  Muitas vezes que fiz manutenção, a doutora sempre corta as pontinhas do \"arame\" e deixa na boca da gente, então por precaução, sempre vou ao banheiro depois da manutenção pra fazer bochechos na pia do banheiro pra garantir que não vou engolir os resquícios que ficam."
+      }
+     ],
+     "frase": "14 avaliações falam deste momento, 1 com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "manutencao",
+     "rotulo": "Manutenção",
+     "o_que_e": "as voltas de cada mês",
+     "quem_resolve": "clínica",
+     "medido": true,
+     "avaliacoes": 2,
+     "dor": 1,
+     "elogio": 1,
+     "pct_dor": 50,
+     "amostra_curta": true,
+     "exemplos": [
+      {
+       "nota": 2,
+       "data": "2026-08-06",
+       "texto": "Em geral, o serviço é de qualidade,  mas muitas doutoras não tem um bom tratamento com o cliente.  Muitas vezes que fiz manutenção, a doutora sempre corta as pontinhas do \"arame\" e deixa na boca da gente, então por precaução, sempre vou ao banheiro depois da manutenção pra fazer bochechos na pia do banheiro pra garantir que não vou engolir os resquícios que ficam."
+      }
+     ],
+     "frase": "2 avaliações falam deste momento, 1 com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "cobranca",
+     "rotulo": "Cobrança",
+     "o_que_e": "mensalidade e multa",
+     "quem_resolve": "franqueado",
+     "medido": false,
+     "avaliacoes": 0,
+     "dor": 0,
+     "elogio": 0,
+     "pct_dor": null,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": null,
+     "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+    },
+    {
+     "estagio": "suporte",
+     "rotulo": "Suporte",
+     "o_que_e": "quando algo dá errado",
+     "quem_resolve": "franqueado",
+     "medido": true,
+     "avaliacoes": 2,
+     "dor": 0,
+     "elogio": 2,
+     "pct_dor": 0,
+     "amostra_curta": true,
+     "exemplos": [],
+     "frase": "2 avaliações falam deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "contencao",
+     "rotulo": "Fim e contenção",
+     "o_que_e": "alta e depois dela",
+     "quem_resolve": "clínica",
+     "medido": false,
+     "avaliacoes": 0,
+     "dor": 0,
+     "elogio": 0,
+     "pct_dor": null,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": null,
+     "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+    }
+   ],
+   "manchete": "Nenhum momento da jornada concentra dor com amostra suficiente para virar manchete.",
+   "quem_resolve": null,
+   "e_clinico": null
+  },
+  {
+   "local_id": "caxias_do_su_orthodontic_centro",
+   "unidade": "OrthoDontic · Av. Júlio de Castilhos",
+   "rotulo": "RS · Caxias do Sul",
+   "com_texto": 88,
+   "sem_estagio": 53,
+   "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
+   "estagios": [
+    {
+     "estagio": "descoberta",
+     "rotulo": "Descoberta",
+     "o_que_e": "como me acharam",
+     "quem_resolve": "marketing e ficha do Google",
+     "medido": true,
+     "avaliacoes": 14,
+     "dor": 0,
+     "elogio": 14,
+     "pct_dor": 0,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": "14 avaliações falam deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "contato",
+     "rotulo": "Contato",
+     "o_que_e": "telefone e WhatsApp",
+     "quem_resolve": "recepção",
+     "medido": false,
+     "avaliacoes": 0,
+     "dor": 0,
+     "elogio": 0,
+     "pct_dor": null,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": null,
+     "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+    },
+    {
+     "estagio": "agendamento",
+     "rotulo": "Agendamento",
+     "o_que_e": "marcar e remarcar",
+     "quem_resolve": "recepção",
+     "medido": true,
+     "avaliacoes": 4,
+     "dor": 2,
+     "elogio": 1,
+     "pct_dor": 50,
+     "amostra_curta": true,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2025-12-29",
+       "texto": "Chego no horário marcado fico esperando uma hora e meia, e eles passam o pessoal que veio bem depois de mim, é muita falta de respeito com os clientes..."
+      },
+      {
+       "nota": 1,
+       "data": "2026-08-06",
+       "texto": "Muita demora  no atendimento ,mais de uma hora esperando sempre, sendo que é horário e data agendada"
+      }
+     ],
+     "frase": "4 avaliações falam deste momento, 2 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "recepcao",
+     "rotulo": "Recepção",
+     "o_que_e": "chegar e esperar",
+     "quem_resolve": "recepção",
+     "medido": true,
+     "avaliacoes": 16,
+     "dor": 1,
+     "elogio": 15,
+     "pct_dor": 6,
+     "amostra_curta": false,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2026-02-28",
+       "texto": "Falta de respeito com o cliente mais de uma hora de atraso para um simples consulta falta de organização e profissionalismo!"
+      }
+     ],
+     "frase": "16 avaliações falam deste momento, 1 com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "avaliacao",
+     "rotulo": "Avaliação",
+     "o_que_e": "a primeira consulta",
+     "quem_resolve": "clínica",
+     "medido": true,
+     "avaliacoes": 2,
+     "dor": 0,
+     "elogio": 2,
+     "pct_dor": 0,
+     "amostra_curta": true,
+     "exemplos": [],
+     "frase": "2 avaliações falam deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "contratacao",
+     "rotulo": "Contratação",
+     "o_que_e": "preço, contrato e entrada",
+     "quem_resolve": "franqueado",
+     "medido": true,
+     "avaliacoes": 1,
+     "dor": 0,
+     "elogio": 1,
+     "pct_dor": 0,
+     "amostra_curta": true,
+     "exemplos": [],
+     "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "clinico",
+     "rotulo": "Atendimento clínico",
+     "o_que_e": "a cadeira",
+     "quem_resolve": "clínica",
+     "medido": true,
+     "avaliacoes": 10,
+     "dor": 0,
+     "elogio": 9,
+     "pct_dor": 0,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": "10 avaliações falam deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "manutencao",
+     "rotulo": "Manutenção",
+     "o_que_e": "as voltas de cada mês",
+     "quem_resolve": "clínica",
+     "medido": true,
+     "avaliacoes": 1,
+     "dor": 0,
+     "elogio": 1,
+     "pct_dor": 0,
+     "amostra_curta": true,
+     "exemplos": [],
+     "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "cobranca",
+     "rotulo": "Cobrança",
+     "o_que_e": "mensalidade e multa",
+     "quem_resolve": "franqueado",
+     "medido": false,
+     "avaliacoes": 0,
+     "dor": 0,
+     "elogio": 0,
+     "pct_dor": null,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": null,
+     "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+    },
+    {
+     "estagio": "suporte",
+     "rotulo": "Suporte",
+     "o_que_e": "quando algo dá errado",
+     "quem_resolve": "franqueado",
+     "medido": true,
+     "avaliacoes": 2,
+     "dor": 0,
+     "elogio": 2,
+     "pct_dor": 0,
+     "amostra_curta": true,
+     "exemplos": [],
+     "frase": "2 avaliações falam deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "contencao",
+     "rotulo": "Fim e contenção",
+     "o_que_e": "alta e depois dela",
+     "quem_resolve": "clínica",
+     "medido": false,
+     "avaliacoes": 0,
+     "dor": 0,
+     "elogio": 0,
+     "pct_dor": null,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": null,
+     "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+    }
+   ],
+   "manchete": "Nenhum momento da jornada concentra dor com amostra suficiente para virar manchete.",
+   "quem_resolve": null,
+   "e_clinico": null
+  },
+  {
    "local_id": "ortho_cba_centro_norte",
-   "unidade": "OrthoDontic Cuiabá Centro Norte",
+   "unidade": "OrthoDontic · Centro Norte",
    "rotulo": "MT · Cuiabá",
    "com_texto": 610,
    "sem_estagio": 485,
@@ -270,7 +655,7 @@
   },
   {
    "local_id": "ortho_cba_dom_bosco",
-   "unidade": "OrthoDontic Cuiabá Dom Bosco (Centro Sul)",
+   "unidade": "OrthoDontic · Centro Sul",
    "rotulo": "MT · Cuiabá",
    "com_texto": 38,
    "sem_estagio": 31,
@@ -460,7 +845,7 @@
   },
   {
    "local_id": "ortho_cba_fernando_correa",
-   "unidade": "OrthoDontic Cuiabá Fernando Corrêa",
+   "unidade": "OrthoDontic · Pico do Amor",
    "rotulo": "MT · Cuiabá",
    "com_texto": 56,
    "sem_estagio": 32,
@@ -661,7 +1046,7 @@
   },
   {
    "local_id": "ortho_centro_ldn",
-   "unidade": "OrthoDontic Centro",
+   "unidade": "OrthoDontic · Centro",
    "rotulo": "PR · Londrina",
    "com_texto": 60,
    "sem_estagio": 27,
@@ -1271,7 +1656,7 @@
   },
   {
    "local_id": "ortho_cwb_centro",
-   "unidade": "OrthoDontic Centro",
+   "unidade": "OrthoDontic · R. XV de Novembro",
    "rotulo": "PR · Curitiba",
    "com_texto": 73,
    "sem_estagio": 49,
@@ -1461,7 +1846,7 @@
   },
   {
    "local_id": "ortho_cwb_centro_2",
-   "unidade": "OrthoDontic Centro",
+   "unidade": "OrthoDontic · Av. Mal. Floriano Peixoto",
    "rotulo": "PR · Curitiba",
    "com_texto": 104,
    "sem_estagio": 72,
@@ -1657,7 +2042,7 @@
   },
   {
    "local_id": "ortho_cwb_centro_3",
-   "unidade": "OrthoDontic Centro",
+   "unidade": "OrthoDontic · Galeria Tijucas - Av. Luiz Xavier",
    "rotulo": "PR · Curitiba",
    "com_texto": 83,
    "sem_estagio": 51,
@@ -1835,7 +2220,7 @@
   },
   {
    "local_id": "ortho_cwb_centro_4",
-   "unidade": "OrthoDontic Centro",
+   "unidade": "OrthoDontic · Edifício Odin do Amaral - R. Mal. Deodoro",
    "rotulo": "PR · Curitiba",
    "com_texto": 68,
    "sem_estagio": 38,
@@ -2024,7 +2409,7 @@
   },
   {
    "local_id": "ortho_cwb_portao",
-   "unidade": "OrthoDontic Portão",
+   "unidade": "OrthoDontic · Portão",
    "rotulo": "PR · Curitiba",
    "com_texto": 95,
    "sem_estagio": 55,
@@ -2202,7 +2587,7 @@
   },
   {
    "local_id": "ortho_fln_centro",
-   "unidade": "OrthoDontic Centro",
+   "unidade": "OrthoDontic · Rua Sete de Setembro",
    "rotulo": "SC · Florianópolis",
    "com_texto": 81,
    "sem_estagio": 50,
@@ -2431,7 +2816,7 @@
   },
   {
    "local_id": "ortho_fln_centro_2",
-   "unidade": "OrthoDontic Centro",
+   "unidade": "OrthoDontic · R. Deodoro",
    "rotulo": "SC · Florianópolis",
    "com_texto": 99,
    "sem_estagio": 71,
@@ -2609,7 +2994,7 @@
   },
   {
    "local_id": "ortho_fln_ingleses_do_rio_vermel",
-   "unidade": "OrthoDontic Ingleses do Rio Vermelho",
+   "unidade": "OrthoDontic · Ingleses do Rio Vermelho",
    "rotulo": "SC · Florianópolis",
    "com_texto": 65,
    "sem_estagio": 35,
@@ -2787,7 +3172,7 @@
   },
   {
    "local_id": "ortho_fsa",
-   "unidade": "OrthoDontic Feira de Santana",
+   "unidade": "OrthoDontic",
    "rotulo": "BA · Feira de Santana",
    "com_texto": 110,
    "sem_estagio": 79,
@@ -3015,7 +3400,7 @@
   },
   {
    "local_id": "ortho_gyn_jardim_tropical",
-   "unidade": "OrthoDontic Jardim Tropical",
+   "unidade": "OrthoDontic · Jardim Tropical",
    "rotulo": "GO · Goiânia",
    "com_texto": 89,
    "sem_estagio": 47,
@@ -3199,7 +3584,7 @@
   },
   {
    "local_id": "ortho_gyn_st_central",
-   "unidade": "OrthoDontic St. Central",
+   "unidade": "OrthoDontic · St. Central",
    "rotulo": "GO · Goiânia",
    "com_texto": 88,
    "sem_estagio": 38,
@@ -3433,7 +3818,7 @@
   },
   {
    "local_id": "ortho_gyn_st_morada_do_sol",
-   "unidade": "OrthoDontic St. Morada do Sol",
+   "unidade": "OrthoDontic · St. Morada do Sol",
    "rotulo": "GO · Goiânia",
    "com_texto": 104,
    "sem_estagio": 71,
@@ -3611,7 +3996,7 @@
   },
   {
    "local_id": "ortho_gyn_st_oeste",
-   "unidade": "OrthoDontic St. Oeste",
+   "unidade": "OrthoDontic · St. Oeste",
    "rotulo": "GO · Goiânia",
    "com_texto": 95,
    "sem_estagio": 56,
@@ -3904,7 +4289,7 @@
   },
   {
    "local_id": "ortho_joi_america",
-   "unidade": "OrthoDontic América",
+   "unidade": "OrthoDontic · América",
    "rotulo": "SC · Joinville",
    "com_texto": 89,
    "sem_estagio": 57,
@@ -4121,7 +4506,7 @@
   },
   {
    "local_id": "ortho_joi_aventureiro",
-   "unidade": "OrthoDontic Aventureiro",
+   "unidade": "OrthoDontic · Aventureiro",
    "rotulo": "SC · Joinville",
    "com_texto": 94,
    "sem_estagio": 63,
@@ -4311,7 +4696,7 @@
   },
   {
    "local_id": "ortho_joi_centro",
-   "unidade": "OrthoDontic Centro",
+   "unidade": "OrthoDontic · Centro",
    "rotulo": "SC · Joinville",
    "com_texto": 88,
    "sem_estagio": 55,
@@ -4539,7 +4924,7 @@
   },
   {
    "local_id": "ortho_mafra",
-   "unidade": "OrthoDontic Mafra",
+   "unidade": "OrthoDontic",
    "rotulo": "SC · Mafra",
    "com_texto": 55,
    "sem_estagio": 34,
@@ -4895,7 +5280,7 @@
   },
   {
    "local_id": "ortho_poa_cavalhada",
-   "unidade": "OrthoDontic Cavalhada",
+   "unidade": "OrthoDontic · Cavalhada",
    "rotulo": "RS · Porto Alegre",
    "com_texto": 71,
    "sem_estagio": 40,
@@ -5102,7 +5487,7 @@
   },
   {
    "local_id": "ortho_poa_centro_historico",
-   "unidade": "OrthoDontic Centro Histórico",
+   "unidade": "OrthoDontic · Av. Borges de Medeiros",
    "rotulo": "RS · Porto Alegre",
    "com_texto": 52,
    "sem_estagio": 32,
@@ -5304,7 +5689,7 @@
   },
   {
    "local_id": "ortho_poa_centro_historico_2",
-   "unidade": "OrthoDontic Centro Histórico",
+   "unidade": "OrthoDontic · R. Vig. José Inácio",
    "rotulo": "RS · Porto Alegre",
    "com_texto": 106,
    "sem_estagio": 42,
@@ -5482,7 +5867,7 @@
   },
   {
    "local_id": "ortho_poa_centro_historico_3",
-   "unidade": "OrthoDontic Centro Histórico",
+   "unidade": "OrthoDontic · R. dos Andradas",
    "rotulo": "RS · Porto Alegre",
    "com_texto": 93,
    "sem_estagio": 39,
@@ -5678,7 +6063,7 @@
   },
   {
    "local_id": "ortho_poa_centro_historico_4",
-   "unidade": "OrthoDontic Centro Histórico",
+   "unidade": "OrthoDontic · R. Gen. Vitorino",
    "rotulo": "RS · Porto Alegre",
    "com_texto": 100,
    "sem_estagio": 48,
@@ -5868,7 +6253,7 @@
   },
   {
    "local_id": "ortho_poa_cristo_redentor",
-   "unidade": "OrthoDontic Cristo Redentor",
+   "unidade": "OrthoDontic · Cristo Redentor",
    "rotulo": "RS · Porto Alegre",
    "com_texto": 85,
    "sem_estagio": 44,
@@ -6064,7 +6449,7 @@
   },
   {
    "local_id": "ortho_poa_rio_branco",
-   "unidade": "OrthoDontic Rio Branco",
+   "unidade": "OrthoDontic · Rio Branco",
    "rotulo": "RS · Porto Alegre",
    "com_texto": 30,
    "sem_estagio": 16,
@@ -6254,7 +6639,7 @@
   },
   {
    "local_id": "ortho_pp",
-   "unidade": "OrthoDontic Presidente Prudente",
+   "unidade": "OrthoDontic",
    "rotulo": "SP · Presidente Prudente",
    "com_texto": 523,
    "sem_estagio": 388,
@@ -6478,7 +6863,7 @@
   },
   {
    "local_id": "ortho_soro_centro",
-   "unidade": "OrthoDontic Centro",
+   "unidade": "OrthoDontic · Centro",
    "rotulo": "SP · Sorocaba",
    "com_texto": 88,
    "sem_estagio": 54,
@@ -6777,7 +7162,7 @@
   },
   {
    "local_id": "ortho_soro_jardim_faculdade",
-   "unidade": "OrthoDontic Jardim Faculdade",
+   "unidade": "OrthoDontic · Jardim Faculdade",
    "rotulo": "SP · Sorocaba",
    "com_texto": 74,
    "sem_estagio": 45,
@@ -6989,7 +7374,7 @@
   },
   {
    "local_id": "ortho_soro_vila_formosa",
-   "unidade": "OrthoDontic Vila Formosa",
+   "unidade": "OrthoDontic · Vila Formosa",
    "rotulo": "SP · Sorocaba",
    "com_texto": 87,
    "sem_estagio": 59,
@@ -7167,7 +7552,7 @@
   },
   {
    "local_id": "ortho_souza_naves",
-   "unidade": "OrthoDontic Souza Naves",
+   "unidade": "OrthoDontic · Souza Naves",
    "rotulo": "PR · Londrina",
    "com_texto": 381,
    "sem_estagio": 243,
@@ -7464,571 +7849,8 @@
    "e_clinico": false
   },
   {
-   "local_id": "orthodontic",
-   "unidade": "OrthoDontic",
-   "rotulo": "MG · Uberlândia",
-   "com_texto": 295,
-   "sem_estagio": 187,
-   "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
-   "estagios": [
-    {
-     "estagio": "descoberta",
-     "rotulo": "Descoberta",
-     "o_que_e": "como me acharam",
-     "quem_resolve": "marketing e ficha do Google",
-     "medido": true,
-     "avaliacoes": 33,
-     "dor": 7,
-     "elogio": 26,
-     "pct_dor": 21,
-     "amostra_curta": false,
-     "exemplos": [
-      {
-       "nota": 1,
-       "data": "2021-02-18",
-       "texto": "Atendimento ruim, demora muito, paciente espera muito tempo e quando questiona,  aatendente é  mal educada. Todos querem ser bem tratados, afinal estamos pagando! Não recomendo!"
-      },
-      {
-       "nota": 1,
-       "data": "2021-06-23",
-       "texto": "Não gostei dessa clínica, fiquei 1 ano e meio fazendo tratamento com aparelho fixo, toda vez que queria perguntar algo sobre o aparelho o profissional não tinha respeito não me explicava sobre os procedimentos e não tirava minhas dúvidas e não tinha educação. Tirei esse ano mas foi com uma multa altíssima e nem fizeram  a limpeza. Não recomendo para ninguém essa clínica."
-      },
-      {
-       "nota": 1,
-       "data": "2022-08-09",
-       "texto": "Não recomendo, tenho dois filhos que já estão a 4 anos tratando lá e ainda não teve nenhuma melhora, sem contar com o péssimo atendimento por telefone elas não conseguem nem mandar um boleto afff estou muito insatisfeita."
-      }
-     ],
-     "frase": "33 avaliações falam deste momento, 7 com notas baixas",
-     "porque_vazio": null
-    },
-    {
-     "estagio": "contato",
-     "rotulo": "Contato",
-     "o_que_e": "telefone e WhatsApp",
-     "quem_resolve": "recepção",
-     "medido": true,
-     "avaliacoes": 17,
-     "dor": 14,
-     "elogio": 2,
-     "pct_dor": 82,
-     "amostra_curta": false,
-     "exemplos": [
-      {
-       "nota": 1,
-       "data": "2020-11-10",
-       "texto": "O atendimento presencial é bom, mas se vc precisa por algum motivo entrar em contato via telefone seja através de chamada ou mensagem pode desistir pq não vai acontecer."
-      },
-      {
-       "nota": 1,
-       "data": "2020-11-11",
-       "texto": "Não atende telefone  nota 0"
-      },
-      {
-       "nota": 1,
-       "data": "2020-12-07",
-       "texto": "Pior atendimento via telefone e zap que existe quer estragar seu dia tentar falar com eles.\nOu faça igual pare seu trabalho perca seu e vá na clínica."
-      }
-     ],
-     "frase": "17 avaliações falam deste momento, 14 com notas baixas",
-     "porque_vazio": null
-    },
-    {
-     "estagio": "agendamento",
-     "rotulo": "Agendamento",
-     "o_que_e": "marcar e remarcar",
-     "quem_resolve": "recepção",
-     "medido": true,
-     "avaliacoes": 8,
-     "dor": 7,
-     "elogio": 1,
-     "pct_dor": 88,
-     "amostra_curta": false,
-     "exemplos": [
-      {
-       "nota": 1,
-       "data": "2021-06-09",
-       "texto": "Nunca somos atendidos no horário marcado , profissionais sempre atrasados , difícil de atender telefone , péssimo atendimento."
-      },
-      {
-       "nota": 1,
-       "data": "2022-03-04",
-       "texto": "Somente atraso e sem resultado visível após 1 ano de tratamento. Falando em atraso segue print da msg com a hr marcada e horário que tô na recepção esperando pra ser atendida. Só atrasam! Deixa muito a desejar"
-      },
-      {
-       "nota": 1,
-       "data": "2022-12-12",
-       "texto": "PÉSSIMO atendimento! Demoram horrores pra te atender, não cumprem com horário, todas as vezes é uma enrolação para ser chamado. Que arrependimento!\nOBS: NÃO FAÇAM CONTRATO, CASO VOCÊ NÃO ESTEJA SATISFEITO COM O TRATAMENTO ELES VÃO COBRAR MULTA DE MAIS DE R$300,00 REAIS!!! NÃO VALE A PENA!"
-      }
-     ],
-     "frase": "8 avaliações falam deste momento, 7 com notas baixas",
-     "porque_vazio": null
-    },
-    {
-     "estagio": "recepcao",
-     "rotulo": "Recepção",
-     "o_que_e": "chegar e esperar",
-     "quem_resolve": "recepção",
-     "medido": true,
-     "avaliacoes": 32,
-     "dor": 8,
-     "elogio": 24,
-     "pct_dor": 25,
-     "amostra_curta": false,
-     "exemplos": [
-      {
-       "nota": 1,
-       "data": "2021-02-18",
-       "texto": "Atendimento ruim, demora muito, paciente espera muito tempo e quando questiona,  aatendente é  mal educada. Todos querem ser bem tratados, afinal estamos pagando! Não recomendo!"
-      },
-      {
-       "nota": 1,
-       "data": "2021-06-09",
-       "texto": "Nunca somos atendidos no horário marcado , profissionais sempre atrasados , difícil de atender telefone , péssimo atendimento."
-      },
-      {
-       "nota": 1,
-       "data": "2022-01-24",
-       "texto": "Péssimo atendimento !!\nSempre demoram em torno de 50 minutos para nos atender !\nAlém da cara de *** da recepcionista !"
-      }
-     ],
-     "frase": "32 avaliações falam deste momento, 8 com notas baixas",
-     "porque_vazio": null
-    },
-    {
-     "estagio": "avaliacao",
-     "rotulo": "Avaliação",
-     "o_que_e": "a primeira consulta",
-     "quem_resolve": "clínica",
-     "medido": true,
-     "avaliacoes": 13,
-     "dor": 2,
-     "elogio": 11,
-     "pct_dor": 15,
-     "amostra_curta": false,
-     "exemplos": [],
-     "frase": "13 avaliações falam deste momento, 2 com notas baixas",
-     "porque_vazio": null
-    },
-    {
-     "estagio": "contratacao",
-     "rotulo": "Contratação",
-     "o_que_e": "preço, contrato e entrada",
-     "quem_resolve": "franqueado",
-     "medido": true,
-     "avaliacoes": 14,
-     "dor": 4,
-     "elogio": 10,
-     "pct_dor": 29,
-     "amostra_curta": false,
-     "exemplos": [
-      {
-       "nota": 1,
-       "data": "2022-12-12",
-       "texto": "PÉSSIMO atendimento! Demoram horrores pra te atender, não cumprem com horário, todas as vezes é uma enrolação para ser chamado. Que arrependimento!\nOBS: NÃO FAÇAM CONTRATO, CASO VOCÊ NÃO ESTEJA SATISFEITO COM O TRATAMENTO ELES VÃO COBRAR MULTA DE MAIS DE R$300,00 REAIS!!! NÃO VALE A PENA!"
-      },
-      {
-       "nota": 1,
-       "data": "2025-05-20",
-       "texto": "Até a conclusão do meu aparelho, o atendimento foi ótimo, querem me cobrar para ganhar alta sendo que o próprio dentista já tinha dado, agora ninguém marcou para eu poder fazer meu clareamento dental que foi me dado do início desde a assinatura do contrato e que tenho aqui. Infelizmente só promessas."
-      }
-     ],
-     "frase": "14 avaliações falam deste momento, 4 com notas baixas",
-     "porque_vazio": null
-    },
-    {
-     "estagio": "clinico",
-     "rotulo": "Atendimento clínico",
-     "o_que_e": "a cadeira",
-     "quem_resolve": "clínica",
-     "medido": true,
-     "avaliacoes": 33,
-     "dor": 12,
-     "elogio": 20,
-     "pct_dor": 36,
-     "amostra_curta": false,
-     "exemplos": [
-      {
-       "nota": 1,
-       "data": "2021-03-14",
-       "texto": "Estou muito decepcionada com a dentista, tomem cuidado com quem vocês irão se consultar."
-      },
-      {
-       "nota": 1,
-       "data": "2021-06-23",
-       "texto": "Não gostei dessa clínica, fiquei 1 ano e meio fazendo tratamento com aparelho fixo, toda vez que queria perguntar algo sobre o aparelho o profissional não tinha respeito não me explicava sobre os procedimentos e não tirava minhas dúvidas e não tinha educação. Tirei esse ano mas foi com uma multa altíssima e nem fizeram  a limpeza. Não recomendo para ninguém essa clínica."
-      },
-      {
-       "nota": 1,
-       "data": "2023-02-27",
-       "texto": "O atendimento é péssimo,enrolado e demorado sem falar as vezes que vc vai com o horário marcado e chegando lá o dentista teve algum imprevisto e eles não tem a coragem de ligar para reagendar o atendimento ou simplismente avisar ......sem falar que eles ficam postergando o seu tratamento por um loooonnnnnngo tempo.E si você quiser cancelar tem uma multa de 300,00 ...e fria."
-      }
-     ],
-     "frase": "33 avaliações falam deste momento, 12 com notas baixas",
-     "porque_vazio": null
-    },
-    {
-     "estagio": "manutencao",
-     "rotulo": "Manutenção",
-     "o_que_e": "as voltas de cada mês",
-     "quem_resolve": "clínica",
-     "medido": true,
-     "avaliacoes": 9,
-     "dor": 8,
-     "elogio": 1,
-     "pct_dor": 89,
-     "amostra_curta": false,
-     "exemplos": [
-      {
-       "nota": 1,
-       "data": "2023-03-23",
-       "texto": "o atendimento é horrível, tanto em whatsapp como eu ligação, simplesmente não te atendem e nem te dão retorno sobre o que você precisa, dei uma estrela por que o Dr. Ítalo é ótimo e não tem culpa, de resto nota 0"
-      },
-      {
-       "nota": 1,
-       "data": "2024-02-29",
-       "texto": "Péssima empresa, péssimo atendimento, nunca atendem no horário marcado. Ficam enrolando o tratamento para continuar pagando a mensalidade e inventando desculpas esfarrapadas.\nSe arrependimento matasse estava morto.\nNÃO RECOMENDO A NINGUÉM!"
-      },
-      {
-       "nota": 2,
-       "data": "2026-08-06",
-       "texto": "Em geral, o serviço é de qualidade,  mas muitas doutoras não tem um bom tratamento com o cliente.  Muitas vezes que fiz manutenção, a doutora sempre corta as pontinhas do \"arame\" e deixa na boca da gente, então por precaução, sempre vou ao banheiro depois da manutenção pra fazer bochechos na pia do banheiro pra garantir que não vou engolir os resquícios que ficam."
-      }
-     ],
-     "frase": "9 avaliações falam deste momento, 8 com notas baixas",
-     "porque_vazio": null
-    },
-    {
-     "estagio": "cobranca",
-     "rotulo": "Cobrança",
-     "o_que_e": "mensalidade e multa",
-     "quem_resolve": "franqueado",
-     "medido": true,
-     "avaliacoes": 9,
-     "dor": 8,
-     "elogio": 0,
-     "pct_dor": 89,
-     "amostra_curta": false,
-     "exemplos": [
-      {
-       "nota": 1,
-       "data": "2021-06-23",
-       "texto": "Não gostei dessa clínica, fiquei 1 ano e meio fazendo tratamento com aparelho fixo, toda vez que queria perguntar algo sobre o aparelho o profissional não tinha respeito não me explicava sobre os procedimentos e não tirava minhas dúvidas e não tinha educação. Tirei esse ano mas foi com uma multa altíssima e nem fizeram  a limpeza. Não recomendo para ninguém essa clínica."
-      },
-      {
-       "nota": 1,
-       "data": "2022-08-09",
-       "texto": "Não recomendo, tenho dois filhos que já estão a 4 anos tratando lá e ainda não teve nenhuma melhora, sem contar com o péssimo atendimento por telefone elas não conseguem nem mandar um boleto afff estou muito insatisfeita."
-      },
-      {
-       "nota": 1,
-       "data": "2022-12-12",
-       "texto": "PÉSSIMO atendimento! Demoram horrores pra te atender, não cumprem com horário, todas as vezes é uma enrolação para ser chamado. Que arrependimento!\nOBS: NÃO FAÇAM CONTRATO, CASO VOCÊ NÃO ESTEJA SATISFEITO COM O TRATAMENTO ELES VÃO COBRAR MULTA DE MAIS DE R$300,00 REAIS!!! NÃO VALE A PENA!"
-      }
-     ],
-     "frase": "9 avaliações falam deste momento, 8 com notas baixas",
-     "porque_vazio": null
-    },
-    {
-     "estagio": "suporte",
-     "rotulo": "Suporte",
-     "o_que_e": "quando algo dá errado",
-     "quem_resolve": "franqueado",
-     "medido": true,
-     "avaliacoes": 10,
-     "dor": 4,
-     "elogio": 6,
-     "pct_dor": 40,
-     "amostra_curta": false,
-     "exemplos": [],
-     "frase": "10 avaliações falam deste momento, 4 com notas baixas",
-     "porque_vazio": null
-    },
-    {
-     "estagio": "contencao",
-     "rotulo": "Fim e contenção",
-     "o_que_e": "alta e depois dela",
-     "quem_resolve": "clínica",
-     "medido": true,
-     "avaliacoes": 3,
-     "dor": 2,
-     "elogio": 1,
-     "pct_dor": 67,
-     "amostra_curta": true,
-     "exemplos": [
-      {
-       "nota": 1,
-       "data": "2025-05-20",
-       "texto": "Até a conclusão do meu aparelho, o atendimento foi ótimo, querem me cobrar para ganhar alta sendo que o próprio dentista já tinha dado, agora ninguém marcou para eu poder fazer meu clareamento dental que foi me dado do início desde a assinatura do contrato e que tenho aqui. Infelizmente só promessas."
-      }
-     ],
-     "frase": "3 avaliações falam deste momento, 2 com notas baixas",
-     "porque_vazio": null
-    }
-   ],
-   "manchete": "A dor pública desta unidade aparece em contato — 14 avaliações de 1 ou 2 estrelas de 17 que falam desse momento.",
-   "quem_resolve": "recepção",
-   "e_clinico": false
-  },
-  {
-   "local_id": "orthodontic_centro",
-   "unidade": "OrthoDontic",
-   "rotulo": "MG · Uberlândia",
-   "com_texto": 130,
-   "sem_estagio": 72,
-   "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
-   "estagios": [
-    {
-     "estagio": "descoberta",
-     "rotulo": "Descoberta",
-     "o_que_e": "como me acharam",
-     "quem_resolve": "marketing e ficha do Google",
-     "medido": true,
-     "avaliacoes": 20,
-     "dor": 1,
-     "elogio": 19,
-     "pct_dor": 5,
-     "amostra_curta": false,
-     "exemplos": [
-      {
-       "nota": 1,
-       "data": "2024-04-25",
-       "texto": "Atendimento horrível, um descaso absurdo com os clientes. As recepcionistas não tem um pingo de empatia e profissionalismo. O atendimento com os dentistas são bons mas em compensação o atendimento é péssimo. Não recomendo a clínica para ninguém, evitem frustrações e humilhações por um serviço que você está pagando."
-      }
-     ],
-     "frase": "20 avaliações falam deste momento, 1 com nota baixa",
-     "porque_vazio": null
-    },
-    {
-     "estagio": "contato",
-     "rotulo": "Contato",
-     "o_que_e": "telefone e WhatsApp",
-     "quem_resolve": "recepção",
-     "medido": true,
-     "avaliacoes": 4,
-     "dor": 4,
-     "elogio": 0,
-     "pct_dor": 100,
-     "amostra_curta": true,
-     "exemplos": [
-      {
-       "nota": 2,
-       "data": "2023-02-24",
-       "texto": "Sem suporte no whatsapp! 4 dias tentando falar e não consigo."
-      },
-      {
-       "nota": 1,
-       "data": "2023-11-01",
-       "texto": "Telefone só de enfeite"
-      },
-      {
-       "nota": 1,
-       "data": "2026-05-08",
-       "texto": "Realmente, telefone é só de enfeite. Pq tento falar lá pra ver sobre meu orçamento e ninguém responde, em qualquer dia ou horário... Depois perdem clientes e não sabem pq."
-      }
-     ],
-     "frase": "4 avaliações falam deste momento, 4 com notas baixas",
-     "porque_vazio": null
-    },
-    {
-     "estagio": "agendamento",
-     "rotulo": "Agendamento",
-     "o_que_e": "marcar e remarcar",
-     "quem_resolve": "recepção",
-     "medido": true,
-     "avaliacoes": 7,
-     "dor": 5,
-     "elogio": 1,
-     "pct_dor": 71,
-     "amostra_curta": true,
-     "exemplos": [
-      {
-       "nota": 1,
-       "data": "2025-12-10",
-       "texto": "a profissional  que me atende é ótima , porém quando preciso de um suporte para esclarecer dúvidas ou remarcações sempre tem um problema , ninguém responde eu sempre tenho que ficar enchendo de msg . Só respondem quando querem ."
-      },
-      {
-       "nota": 1,
-       "data": "2025-12-29",
-       "texto": "Chego no horário marcado fico esperando uma hora e meia, e eles passam o pessoal que veio bem depois de mim, é muita falta de respeito com os clientes..."
-      },
-      {
-       "nota": 1,
-       "data": "2026-05-08",
-       "texto": "Realmente, telefone é só de enfeite. Pq tento falar lá pra ver sobre meu orçamento e ninguém responde, em qualquer dia ou horário... Depois perdem clientes e não sabem pq."
-      }
-     ],
-     "frase": "7 avaliações falam deste momento, 5 com notas baixas",
-     "porque_vazio": null
-    },
-    {
-     "estagio": "recepcao",
-     "rotulo": "Recepção",
-     "o_que_e": "chegar e esperar",
-     "quem_resolve": "recepção",
-     "medido": true,
-     "avaliacoes": 21,
-     "dor": 3,
-     "elogio": 18,
-     "pct_dor": 14,
-     "amostra_curta": false,
-     "exemplos": [
-      {
-       "nota": 2,
-       "data": "2022-01-18",
-       "texto": "Prazo de espera é sempre muito demorado !\nEm torno de 50 minutos a 1hr e meia !\nA empresa foca em quantidade de clientes e não na satisfação !"
-      },
-      {
-       "nota": 1,
-       "data": "2024-04-25",
-       "texto": "Atendimento horrível, um descaso absurdo com os clientes. As recepcionistas não tem um pingo de empatia e profissionalismo. O atendimento com os dentistas são bons mas em compensação o atendimento é péssimo. Não recomendo a clínica para ninguém, evitem frustrações e humilhações por um serviço que você está pagando."
-      },
-      {
-       "nota": 1,
-       "data": "2026-02-28",
-       "texto": "Falta de respeito com o cliente mais de uma hora de atraso para um simples consulta falta de organização e profissionalismo!"
-      }
-     ],
-     "frase": "21 avaliações falam deste momento, 3 com notas baixas",
-     "porque_vazio": null
-    },
-    {
-     "estagio": "avaliacao",
-     "rotulo": "Avaliação",
-     "o_que_e": "a primeira consulta",
-     "quem_resolve": "clínica",
-     "medido": true,
-     "avaliacoes": 6,
-     "dor": 2,
-     "elogio": 4,
-     "pct_dor": 33,
-     "amostra_curta": true,
-     "exemplos": [
-      {
-       "nota": 1,
-       "data": "2026-05-08",
-       "texto": "Realmente, telefone é só de enfeite. Pq tento falar lá pra ver sobre meu orçamento e ninguém responde, em qualquer dia ou horário... Depois perdem clientes e não sabem pq."
-      }
-     ],
-     "frase": "6 avaliações falam deste momento, 2 com notas baixas",
-     "porque_vazio": null
-    },
-    {
-     "estagio": "contratacao",
-     "rotulo": "Contratação",
-     "o_que_e": "preço, contrato e entrada",
-     "quem_resolve": "franqueado",
-     "medido": true,
-     "avaliacoes": 2,
-     "dor": 1,
-     "elogio": 1,
-     "pct_dor": 50,
-     "amostra_curta": true,
-     "exemplos": [
-      {
-       "nota": 2,
-       "data": "2025-04-15",
-       "texto": "O atendimento de modo geral é bom, porém a vendedora não sabe dar explicações claras sobre o contrato."
-      }
-     ],
-     "frase": "2 avaliações falam deste momento, 1 com nota baixa",
-     "porque_vazio": null
-    },
-    {
-     "estagio": "clinico",
-     "rotulo": "Atendimento clínico",
-     "o_que_e": "a cadeira",
-     "quem_resolve": "clínica",
-     "medido": true,
-     "avaliacoes": 19,
-     "dor": 3,
-     "elogio": 15,
-     "pct_dor": 16,
-     "amostra_curta": false,
-     "exemplos": [
-      {
-       "nota": 1,
-       "data": "2025-12-10",
-       "texto": "a profissional  que me atende é ótima , porém quando preciso de um suporte para esclarecer dúvidas ou remarcações sempre tem um problema , ninguém responde eu sempre tenho que ficar enchendo de msg . Só respondem quando querem ."
-      }
-     ],
-     "frase": "19 avaliações falam deste momento, 3 com notas baixas",
-     "porque_vazio": null
-    },
-    {
-     "estagio": "manutencao",
-     "rotulo": "Manutenção",
-     "o_que_e": "as voltas de cada mês",
-     "quem_resolve": "clínica",
-     "medido": true,
-     "avaliacoes": 2,
-     "dor": 1,
-     "elogio": 1,
-     "pct_dor": 50,
-     "amostra_curta": true,
-     "exemplos": [],
-     "frase": "2 avaliações falam deste momento, 1 com nota baixa",
-     "porque_vazio": null
-    },
-    {
-     "estagio": "cobranca",
-     "rotulo": "Cobrança",
-     "o_que_e": "mensalidade e multa",
-     "quem_resolve": "franqueado",
-     "medido": true,
-     "avaliacoes": 1,
-     "dor": 1,
-     "elogio": 0,
-     "pct_dor": 100,
-     "amostra_curta": true,
-     "exemplos": [],
-     "frase": "1 avaliação fala deste momento, 1 com nota baixa",
-     "porque_vazio": null
-    },
-    {
-     "estagio": "suporte",
-     "rotulo": "Suporte",
-     "o_que_e": "quando algo dá errado",
-     "quem_resolve": "franqueado",
-     "medido": true,
-     "avaliacoes": 7,
-     "dor": 1,
-     "elogio": 6,
-     "pct_dor": 14,
-     "amostra_curta": true,
-     "exemplos": [
-      {
-       "nota": 1,
-       "data": "2025-12-10",
-       "texto": "a profissional  que me atende é ótima , porém quando preciso de um suporte para esclarecer dúvidas ou remarcações sempre tem um problema , ninguém responde eu sempre tenho que ficar enchendo de msg . Só respondem quando querem ."
-      }
-     ],
-     "frase": "7 avaliações falam deste momento, 1 com nota baixa",
-     "porque_vazio": null
-    },
-    {
-     "estagio": "contencao",
-     "rotulo": "Fim e contenção",
-     "o_que_e": "alta e depois dela",
-     "quem_resolve": "clínica",
-     "medido": true,
-     "avaliacoes": 1,
-     "dor": 0,
-     "elogio": 1,
-     "pct_dor": 0,
-     "amostra_curta": true,
-     "exemplos": [],
-     "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
-     "porque_vazio": null
-    }
-   ],
-   "manchete": "Nenhum momento da jornada concentra dor com amostra suficiente para virar manchete.",
-   "quem_resolve": null,
-   "e_clinico": null
-  },
-  {
    "local_id": "orthodontic_kayser",
-   "unidade": "OrthoDontic",
+   "unidade": "OrthoDontic · Kayser",
    "rotulo": "RS · Caxias do Sul",
    "com_texto": 63,
    "sem_estagio": 47,
@@ -8216,6 +8038,1666 @@
      "exemplos": [],
      "frase": null,
      "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+    }
+   ],
+   "manchete": "Nenhum momento da jornada concentra dor com amostra suficiente para virar manchete.",
+   "quem_resolve": null,
+   "e_clinico": null
+  },
+  {
+   "local_id": "orthodontic_republica",
+   "unidade": "OrthoDontic · República",
+   "rotulo": "SP · São Paulo",
+   "com_texto": 16,
+   "sem_estagio": 3,
+   "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
+   "estagios": [
+    {
+     "estagio": "descoberta",
+     "rotulo": "Descoberta",
+     "o_que_e": "como me acharam",
+     "quem_resolve": "marketing e ficha do Google",
+     "medido": true,
+     "avaliacoes": 3,
+     "dor": 1,
+     "elogio": 2,
+     "pct_dor": 33,
+     "amostra_curta": true,
+     "exemplos": [],
+     "frase": "3 avaliações falam deste momento, 1 com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "contato",
+     "rotulo": "Contato",
+     "o_que_e": "telefone e WhatsApp",
+     "quem_resolve": "recepção",
+     "medido": true,
+     "avaliacoes": 1,
+     "dor": 1,
+     "elogio": 0,
+     "pct_dor": 100,
+     "amostra_curta": true,
+     "exemplos": [],
+     "frase": "1 avaliação fala deste momento, 1 com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "agendamento",
+     "rotulo": "Agendamento",
+     "o_que_e": "marcar e remarcar",
+     "quem_resolve": "recepção",
+     "medido": true,
+     "avaliacoes": 4,
+     "dor": 4,
+     "elogio": 0,
+     "pct_dor": 100,
+     "amostra_curta": true,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2019-06-08",
+       "texto": "Se quer um motivo para se estressar é só vim neste consultório odontológico. Chegando antes do horário marcado ou não, vc só será atendido 20-30 minutos depois ou até 1 hora depois. Eles marcam hora pra vim, mas não adianta, a desorganização é grande. Além de pagarmos 100 reais pro dentista trocar a borrachinha do aparelho. Lamentável!"
+      },
+      {
+       "nota": 2,
+       "data": "2020-02-04",
+       "texto": "Se possível escolha outra clínica, essa só gerará stress. Você marca um horário e só é atendido depois de 30 minutos a 1 hora esperando. Recepcionistas completamente desorganizadas. Único ponto positivo são os dentistas, que são ótimos."
+      }
+     ],
+     "frase": "4 avaliações falam deste momento, 4 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "recepcao",
+     "rotulo": "Recepção",
+     "o_que_e": "chegar e esperar",
+     "quem_resolve": "recepção",
+     "medido": true,
+     "avaliacoes": 7,
+     "dor": 7,
+     "elogio": 0,
+     "pct_dor": 100,
+     "amostra_curta": true,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2019-02-12",
+       "texto": "Pior atendimento do mundo... Dr Morand excelente dentista, agora as recepcionistas uma pior que a outra. Uma loira que trabalha lá,  só pelo amor de Deus, não presta atenção nos pagamentos e faz a gente pagar uma coisa que ja foi paga... só ainda continuo com meu tratamento por causa adoro meu atendimento com o Morand"
+      },
+      {
+       "nota": 2,
+       "data": "2020-02-04",
+       "texto": "Se possível escolha outra clínica, essa só gerará stress. Você marca um horário e só é atendido depois de 30 minutos a 1 hora esperando. Recepcionistas completamente desorganizadas. Único ponto positivo são os dentistas, que são ótimos."
+      },
+      {
+       "nota": 1,
+       "data": "2020-11-24",
+       "texto": "Em plena pandemia, a moça da recepção não usa a máscara."
+      }
+     ],
+     "frase": "7 avaliações falam deste momento, 7 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "avaliacao",
+     "rotulo": "Avaliação",
+     "o_que_e": "a primeira consulta",
+     "quem_resolve": "clínica",
+     "medido": false,
+     "avaliacoes": 0,
+     "dor": 0,
+     "elogio": 0,
+     "pct_dor": null,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": null,
+     "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+    },
+    {
+     "estagio": "contratacao",
+     "rotulo": "Contratação",
+     "o_que_e": "preço, contrato e entrada",
+     "quem_resolve": "franqueado",
+     "medido": true,
+     "avaliacoes": 2,
+     "dor": 2,
+     "elogio": 0,
+     "pct_dor": 100,
+     "amostra_curta": true,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2020-02-28",
+       "texto": "FUJAM DESSA CLÍNICA!!!\n\nPago 90,00 e ultimamente estou indo apenas para trocar borrachinha. Trocavam de dentista a cada semana, quis cancelar, mas tem uma multa de 350,00. O tempo mínimo de contrato são 3 anos.\n\nSério, se arrependimento matasse, eu tava mortinha. Não vejo a hora de cancelar e ficar livre."
+      }
+     ],
+     "frase": "2 avaliações falam deste momento, 2 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "clinico",
+     "rotulo": "Atendimento clínico",
+     "o_que_e": "a cadeira",
+     "quem_resolve": "clínica",
+     "medido": true,
+     "avaliacoes": 6,
+     "dor": 6,
+     "elogio": 0,
+     "pct_dor": 100,
+     "amostra_curta": true,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2019-02-12",
+       "texto": "Pior atendimento do mundo... Dr Morand excelente dentista, agora as recepcionistas uma pior que a outra. Uma loira que trabalha lá,  só pelo amor de Deus, não presta atenção nos pagamentos e faz a gente pagar uma coisa que ja foi paga... só ainda continuo com meu tratamento por causa adoro meu atendimento com o Morand"
+      },
+      {
+       "nota": 1,
+       "data": "2019-06-08",
+       "texto": "Se quer um motivo para se estressar é só vim neste consultório odontológico. Chegando antes do horário marcado ou não, vc só será atendido 20-30 minutos depois ou até 1 hora depois. Eles marcam hora pra vim, mas não adianta, a desorganização é grande. Além de pagarmos 100 reais pro dentista trocar a borrachinha do aparelho. Lamentável!"
+      },
+      {
+       "nota": 1,
+       "data": "2020-02-28",
+       "texto": "FUJAM DESSA CLÍNICA!!!\n\nPago 90,00 e ultimamente estou indo apenas para trocar borrachinha. Trocavam de dentista a cada semana, quis cancelar, mas tem uma multa de 350,00. O tempo mínimo de contrato são 3 anos.\n\nSério, se arrependimento matasse, eu tava mortinha. Não vejo a hora de cancelar e ficar livre."
+      }
+     ],
+     "frase": "6 avaliações falam deste momento, 6 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "manutencao",
+     "rotulo": "Manutenção",
+     "o_que_e": "as voltas de cada mês",
+     "quem_resolve": "clínica",
+     "medido": true,
+     "avaliacoes": 4,
+     "dor": 4,
+     "elogio": 0,
+     "pct_dor": 100,
+     "amostra_curta": true,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2019-06-08",
+       "texto": "Se quer um motivo para se estressar é só vim neste consultório odontológico. Chegando antes do horário marcado ou não, vc só será atendido 20-30 minutos depois ou até 1 hora depois. Eles marcam hora pra vim, mas não adianta, a desorganização é grande. Além de pagarmos 100 reais pro dentista trocar a borrachinha do aparelho. Lamentável!"
+      },
+      {
+       "nota": 1,
+       "data": "2020-02-28",
+       "texto": "FUJAM DESSA CLÍNICA!!!\n\nPago 90,00 e ultimamente estou indo apenas para trocar borrachinha. Trocavam de dentista a cada semana, quis cancelar, mas tem uma multa de 350,00. O tempo mínimo de contrato são 3 anos.\n\nSério, se arrependimento matasse, eu tava mortinha. Não vejo a hora de cancelar e ficar livre."
+      },
+      {
+       "nota": 1,
+       "data": "2020-10-19",
+       "texto": "Não merece nenhuma estrela!\nNessa clínica a única coisa que fazem é trocar borrachinha. Péssima, pessima!\nPéssima em tudoo!!!\nFujam."
+      }
+     ],
+     "frase": "4 avaliações falam deste momento, 4 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "cobranca",
+     "rotulo": "Cobrança",
+     "o_que_e": "mensalidade e multa",
+     "quem_resolve": "franqueado",
+     "medido": true,
+     "avaliacoes": 2,
+     "dor": 2,
+     "elogio": 0,
+     "pct_dor": 100,
+     "amostra_curta": true,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2020-02-28",
+       "texto": "FUJAM DESSA CLÍNICA!!!\n\nPago 90,00 e ultimamente estou indo apenas para trocar borrachinha. Trocavam de dentista a cada semana, quis cancelar, mas tem uma multa de 350,00. O tempo mínimo de contrato são 3 anos.\n\nSério, se arrependimento matasse, eu tava mortinha. Não vejo a hora de cancelar e ficar livre."
+      }
+     ],
+     "frase": "2 avaliações falam deste momento, 2 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "suporte",
+     "rotulo": "Suporte",
+     "o_que_e": "quando algo dá errado",
+     "quem_resolve": "franqueado",
+     "medido": false,
+     "avaliacoes": 0,
+     "dor": 0,
+     "elogio": 0,
+     "pct_dor": null,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": null,
+     "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+    },
+    {
+     "estagio": "contencao",
+     "rotulo": "Fim e contenção",
+     "o_que_e": "alta e depois dela",
+     "quem_resolve": "clínica",
+     "medido": false,
+     "avaliacoes": 0,
+     "dor": 0,
+     "elogio": 0,
+     "pct_dor": null,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": null,
+     "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+    }
+   ],
+   "manchete": "Nenhum momento da jornada concentra dor com amostra suficiente para virar manchete.",
+   "quem_resolve": null,
+   "e_clinico": null
+  },
+  {
+   "local_id": "orthodontic_sao_miguel_paulista",
+   "unidade": "OrthoDontic · São Miguel Paulista",
+   "rotulo": "SP · São Paulo",
+   "com_texto": 112,
+   "sem_estagio": 49,
+   "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
+   "estagios": [
+    {
+     "estagio": "descoberta",
+     "rotulo": "Descoberta",
+     "o_que_e": "como me acharam",
+     "quem_resolve": "marketing e ficha do Google",
+     "medido": true,
+     "avaliacoes": 10,
+     "dor": 0,
+     "elogio": 10,
+     "pct_dor": 0,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": "10 avaliações falam deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "contato",
+     "rotulo": "Contato",
+     "o_que_e": "telefone e WhatsApp",
+     "quem_resolve": "recepção",
+     "medido": false,
+     "avaliacoes": 0,
+     "dor": 0,
+     "elogio": 0,
+     "pct_dor": null,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": null,
+     "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+    },
+    {
+     "estagio": "agendamento",
+     "rotulo": "Agendamento",
+     "o_que_e": "marcar e remarcar",
+     "quem_resolve": "recepção",
+     "medido": false,
+     "avaliacoes": 0,
+     "dor": 0,
+     "elogio": 0,
+     "pct_dor": null,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": null,
+     "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+    },
+    {
+     "estagio": "recepcao",
+     "rotulo": "Recepção",
+     "o_que_e": "chegar e esperar",
+     "quem_resolve": "recepção",
+     "medido": true,
+     "avaliacoes": 33,
+     "dor": 0,
+     "elogio": 33,
+     "pct_dor": 0,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": "33 avaliações falam deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "avaliacao",
+     "rotulo": "Avaliação",
+     "o_que_e": "a primeira consulta",
+     "quem_resolve": "clínica",
+     "medido": true,
+     "avaliacoes": 18,
+     "dor": 0,
+     "elogio": 18,
+     "pct_dor": 0,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": "18 avaliações falam deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "contratacao",
+     "rotulo": "Contratação",
+     "o_que_e": "preço, contrato e entrada",
+     "quem_resolve": "franqueado",
+     "medido": true,
+     "avaliacoes": 5,
+     "dor": 1,
+     "elogio": 4,
+     "pct_dor": 20,
+     "amostra_curta": true,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2026-07-28",
+       "texto": "Pior clínica que já vi , pessoal faz contrato não cumpre e não devolve o dinheiro, não indico"
+      }
+     ],
+     "frase": "5 avaliações falam deste momento, 1 com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "clinico",
+     "rotulo": "Atendimento clínico",
+     "o_que_e": "a cadeira",
+     "quem_resolve": "clínica",
+     "medido": true,
+     "avaliacoes": 30,
+     "dor": 0,
+     "elogio": 30,
+     "pct_dor": 0,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": "30 avaliações falam deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "manutencao",
+     "rotulo": "Manutenção",
+     "o_que_e": "as voltas de cada mês",
+     "quem_resolve": "clínica",
+     "medido": false,
+     "avaliacoes": 0,
+     "dor": 0,
+     "elogio": 0,
+     "pct_dor": null,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": null,
+     "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+    },
+    {
+     "estagio": "cobranca",
+     "rotulo": "Cobrança",
+     "o_que_e": "mensalidade e multa",
+     "quem_resolve": "franqueado",
+     "medido": false,
+     "avaliacoes": 0,
+     "dor": 0,
+     "elogio": 0,
+     "pct_dor": null,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": null,
+     "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+    },
+    {
+     "estagio": "suporte",
+     "rotulo": "Suporte",
+     "o_que_e": "quando algo dá errado",
+     "quem_resolve": "franqueado",
+     "medido": true,
+     "avaliacoes": 2,
+     "dor": 0,
+     "elogio": 2,
+     "pct_dor": 0,
+     "amostra_curta": true,
+     "exemplos": [],
+     "frase": "2 avaliações falam deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "contencao",
+     "rotulo": "Fim e contenção",
+     "o_que_e": "alta e depois dela",
+     "quem_resolve": "clínica",
+     "medido": true,
+     "avaliacoes": 1,
+     "dor": 0,
+     "elogio": 1,
+     "pct_dor": 0,
+     "amostra_curta": true,
+     "exemplos": [],
+     "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
+    }
+   ],
+   "manchete": "Nenhum momento da jornada concentra dor com amostra suficiente para virar manchete.",
+   "quem_resolve": null,
+   "e_clinico": null
+  },
+  {
+   "local_id": "orthodontic_tatuape",
+   "unidade": "OrthoDontic · Tatuapé",
+   "rotulo": "SP · São Paulo",
+   "com_texto": 75,
+   "sem_estagio": 34,
+   "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
+   "estagios": [
+    {
+     "estagio": "descoberta",
+     "rotulo": "Descoberta",
+     "o_que_e": "como me acharam",
+     "quem_resolve": "marketing e ficha do Google",
+     "medido": true,
+     "avaliacoes": 11,
+     "dor": 2,
+     "elogio": 9,
+     "pct_dor": 18,
+     "amostra_curta": false,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2023-12-08",
+       "texto": "Faço tratamento a 1 ano la e ja irei cancelar primeiro vc começa cm 100 rs a mensalidade pagando antes fica 90 rs se vc fica 1 mes sem fazer manutenção vc paga da mesma forma e se vc quebrar o contrato é 350 rs e Mais 100 da consulta achei um absurdo esse local n recomendo a ngm a e Quero elogiar o recepcionista muito educado"
+      },
+      {
+       "nota": 1,
+       "data": "2024-06-10",
+       "texto": "Clinica bonita porém a dentista apertou tanto o aparelho na boca da minha filha que quebrou o dente ,não recomendo"
+      }
+     ],
+     "frase": "11 avaliações falam deste momento, 2 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "contato",
+     "rotulo": "Contato",
+     "o_que_e": "telefone e WhatsApp",
+     "quem_resolve": "recepção",
+     "medido": true,
+     "avaliacoes": 4,
+     "dor": 3,
+     "elogio": 1,
+     "pct_dor": 75,
+     "amostra_curta": true,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2022-12-23",
+       "texto": "Estou extremamente insatisfeita com atendimento da unidade, estou a uma semana tentando remarca uma consulta e não tenho retorno nenhum, porém se o boleto atrasar um dia tenho mil ligações, péssima empatia com os pacientes, graças a Deus pelo menos a Doutora que atende é ótima para tentar salvar o nome da clínica!"
+      },
+      {
+       "nota": 1,
+       "data": "2025-02-17",
+       "texto": "O telefone deixado no site está pedindo para verificar o número chamado, tentei atendimento online pelo whatsapp e nada. Difícil assim sem conseguir contactar."
+      },
+      {
+       "nota": 1,
+       "data": "2026-03-06",
+       "texto": "Estou precisando cancelar , mandei msg 25/02, retorno de verificar após 3 dias e já se passaram mais 2 e nada . Telefones não atendem.. daqui a pouco chega novo vencimento sem nenhuma atenção.Dificil"
+      }
+     ],
+     "frase": "4 avaliações falam deste momento, 3 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "agendamento",
+     "rotulo": "Agendamento",
+     "o_que_e": "marcar e remarcar",
+     "quem_resolve": "recepção",
+     "medido": true,
+     "avaliacoes": 4,
+     "dor": 3,
+     "elogio": 1,
+     "pct_dor": 75,
+     "amostra_curta": true,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2022-12-23",
+       "texto": "Estou extremamente insatisfeita com atendimento da unidade, estou a uma semana tentando remarca uma consulta e não tenho retorno nenhum, porém se o boleto atrasar um dia tenho mil ligações, péssima empatia com os pacientes, graças a Deus pelo menos a Doutora que atende é ótima para tentar salvar o nome da clínica!"
+      },
+      {
+       "nota": 2,
+       "data": "2026-06-30",
+       "texto": "Infelizmente não tenho conseguido bom atendimento na marcação de consultas estou a 2 dias esperando marcar uma consulta."
+      }
+     ],
+     "frase": "4 avaliações falam deste momento, 3 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "recepcao",
+     "rotulo": "Recepção",
+     "o_que_e": "chegar e esperar",
+     "quem_resolve": "recepção",
+     "medido": true,
+     "avaliacoes": 10,
+     "dor": 3,
+     "elogio": 7,
+     "pct_dor": 30,
+     "amostra_curta": false,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2021-08-31",
+       "texto": "Atendimento horrível pessoas sem educação na recepção que ficam conversando enquanto você espera para ser atendido, não são profissionais."
+      },
+      {
+       "nota": 1,
+       "data": "2022-04-14",
+       "texto": "Atendente rose maravilhosaa❤️ e todos da equipe !!"
+      },
+      {
+       "nota": 1,
+       "data": "2023-12-08",
+       "texto": "Faço tratamento a 1 ano la e ja irei cancelar primeiro vc começa cm 100 rs a mensalidade pagando antes fica 90 rs se vc fica 1 mes sem fazer manutenção vc paga da mesma forma e se vc quebrar o contrato é 350 rs e Mais 100 da consulta achei um absurdo esse local n recomendo a ngm a e Quero elogiar o recepcionista muito educado"
+      }
+     ],
+     "frase": "10 avaliações falam deste momento, 3 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "avaliacao",
+     "rotulo": "Avaliação",
+     "o_que_e": "a primeira consulta",
+     "quem_resolve": "clínica",
+     "medido": true,
+     "avaliacoes": 3,
+     "dor": 0,
+     "elogio": 3,
+     "pct_dor": 0,
+     "amostra_curta": true,
+     "exemplos": [],
+     "frase": "3 avaliações falam deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "contratacao",
+     "rotulo": "Contratação",
+     "o_que_e": "preço, contrato e entrada",
+     "quem_resolve": "franqueado",
+     "medido": true,
+     "avaliacoes": 9,
+     "dor": 5,
+     "elogio": 4,
+     "pct_dor": 56,
+     "amostra_curta": false,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2021-12-07",
+       "texto": "Péssimos, alem de nao fazer direito o tratamento da minha irmã e querer ganhar em cima. Negativou minha mae assim que ela viu o descaso trocando de clinica por conta da multa contratual, mesmo nao fazendo o que deveria ter sido feito no contrato."
+      },
+      {
+       "nota": 1,
+       "data": "2023-12-08",
+       "texto": "Faço tratamento a 1 ano la e ja irei cancelar primeiro vc começa cm 100 rs a mensalidade pagando antes fica 90 rs se vc fica 1 mes sem fazer manutenção vc paga da mesma forma e se vc quebrar o contrato é 350 rs e Mais 100 da consulta achei um absurdo esse local n recomendo a ngm a e Quero elogiar o recepcionista muito educado"
+      },
+      {
+       "nota": 1,
+       "data": "2026-03-22",
+       "texto": "Pior dentista que você entra eles enfia um contrato pra vc ser obrigado a continuar lá, sem contar q faço tratamento lá há um ano e n vejo resultado meus dentes estão piores até problema no dente dei tive q procurar outros profissionais aí n presta como dentista tem q tá vendo essas coisas ai"
+      }
+     ],
+     "frase": "9 avaliações falam deste momento, 5 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "clinico",
+     "rotulo": "Atendimento clínico",
+     "o_que_e": "a cadeira",
+     "quem_resolve": "clínica",
+     "medido": true,
+     "avaliacoes": 7,
+     "dor": 5,
+     "elogio": 2,
+     "pct_dor": 71,
+     "amostra_curta": true,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2022-12-23",
+       "texto": "Estou extremamente insatisfeita com atendimento da unidade, estou a uma semana tentando remarca uma consulta e não tenho retorno nenhum, porém se o boleto atrasar um dia tenho mil ligações, péssima empatia com os pacientes, graças a Deus pelo menos a Doutora que atende é ótima para tentar salvar o nome da clínica!"
+      },
+      {
+       "nota": 1,
+       "data": "2024-06-10",
+       "texto": "Clinica bonita porém a dentista apertou tanto o aparelho na boca da minha filha que quebrou o dente ,não recomendo"
+      },
+      {
+       "nota": 1,
+       "data": "2026-03-11",
+       "texto": "Um lixo de clínica te vendem uma coisa e fazem outra NAO CONTRATEM para evitar dor de cabeça esse é o conselho que eu deixo . Atendimento péssimo doutores sem qualificação para atender . Realmente decepcionada"
+      }
+     ],
+     "frase": "7 avaliações falam deste momento, 5 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "manutencao",
+     "rotulo": "Manutenção",
+     "o_que_e": "as voltas de cada mês",
+     "quem_resolve": "clínica",
+     "medido": true,
+     "avaliacoes": 3,
+     "dor": 3,
+     "elogio": 0,
+     "pct_dor": 100,
+     "amostra_curta": true,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2022-12-23",
+       "texto": "Estou extremamente insatisfeita com atendimento da unidade, estou a uma semana tentando remarca uma consulta e não tenho retorno nenhum, porém se o boleto atrasar um dia tenho mil ligações, péssima empatia com os pacientes, graças a Deus pelo menos a Doutora que atende é ótima para tentar salvar o nome da clínica!"
+      },
+      {
+       "nota": 1,
+       "data": "2023-12-08",
+       "texto": "Faço tratamento a 1 ano la e ja irei cancelar primeiro vc começa cm 100 rs a mensalidade pagando antes fica 90 rs se vc fica 1 mes sem fazer manutenção vc paga da mesma forma e se vc quebrar o contrato é 350 rs e Mais 100 da consulta achei um absurdo esse local n recomendo a ngm a e Quero elogiar o recepcionista muito educado"
+      },
+      {
+       "nota": 1,
+       "data": "2026-03-06",
+       "texto": "Estou precisando cancelar , mandei msg 25/02, retorno de verificar após 3 dias e já se passaram mais 2 e nada . Telefones não atendem.. daqui a pouco chega novo vencimento sem nenhuma atenção.Dificil"
+      }
+     ],
+     "frase": "3 avaliações falam deste momento, 3 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "cobranca",
+     "rotulo": "Cobrança",
+     "o_que_e": "mensalidade e multa",
+     "quem_resolve": "franqueado",
+     "medido": true,
+     "avaliacoes": 7,
+     "dor": 7,
+     "elogio": 0,
+     "pct_dor": 100,
+     "amostra_curta": true,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2021-12-07",
+       "texto": "Péssimos, alem de nao fazer direito o tratamento da minha irmã e querer ganhar em cima. Negativou minha mae assim que ela viu o descaso trocando de clinica por conta da multa contratual, mesmo nao fazendo o que deveria ter sido feito no contrato."
+      },
+      {
+       "nota": 1,
+       "data": "2022-12-23",
+       "texto": "Estou extremamente insatisfeita com atendimento da unidade, estou a uma semana tentando remarca uma consulta e não tenho retorno nenhum, porém se o boleto atrasar um dia tenho mil ligações, péssima empatia com os pacientes, graças a Deus pelo menos a Doutora que atende é ótima para tentar salvar o nome da clínica!"
+      },
+      {
+       "nota": 1,
+       "data": "2023-12-08",
+       "texto": "Faço tratamento a 1 ano la e ja irei cancelar primeiro vc começa cm 100 rs a mensalidade pagando antes fica 90 rs se vc fica 1 mes sem fazer manutenção vc paga da mesma forma e se vc quebrar o contrato é 350 rs e Mais 100 da consulta achei um absurdo esse local n recomendo a ngm a e Quero elogiar o recepcionista muito educado"
+      }
+     ],
+     "frase": "7 avaliações falam deste momento, 7 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "suporte",
+     "rotulo": "Suporte",
+     "o_que_e": "quando algo dá errado",
+     "quem_resolve": "franqueado",
+     "medido": true,
+     "avaliacoes": 4,
+     "dor": 3,
+     "elogio": 1,
+     "pct_dor": 75,
+     "amostra_curta": true,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2024-06-10",
+       "texto": "Clinica bonita porém a dentista apertou tanto o aparelho na boca da minha filha que quebrou o dente ,não recomendo"
+      },
+      {
+       "nota": 1,
+       "data": "2026-03-22",
+       "texto": "Pior dentista que você entra eles enfia um contrato pra vc ser obrigado a continuar lá, sem contar q faço tratamento lá há um ano e n vejo resultado meus dentes estão piores até problema no dente dei tive q procurar outros profissionais aí n presta como dentista tem q tá vendo essas coisas ai"
+      },
+      {
+       "nota": 1,
+       "data": "2026-04-23",
+       "texto": "Minha mãe contratou o serviço dessa empresa e foi extremamente prejudicado fisicamente (falta de profissionalismo no procedimento exercido), e ainda querem cobrar o cancelamento de um serviço que ela só desistiu por estar com dores e vários problemas não informados no ato da contratação, não fechem olha o reclame eles são péssimos em tudo, arrependimento garantido na contratação"
+      }
+     ],
+     "frase": "4 avaliações falam deste momento, 3 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "contencao",
+     "rotulo": "Fim e contenção",
+     "o_que_e": "alta e depois dela",
+     "quem_resolve": "clínica",
+     "medido": true,
+     "avaliacoes": 4,
+     "dor": 0,
+     "elogio": 4,
+     "pct_dor": 0,
+     "amostra_curta": true,
+     "exemplos": [],
+     "frase": "4 avaliações falam deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
+    }
+   ],
+   "manchete": "A dor pública desta unidade aparece em contratação — 5 avaliações de 1 ou 2 estrelas de 9 que falam desse momento.",
+   "quem_resolve": "franqueado",
+   "e_clinico": false
+  },
+  {
+   "local_id": "rio_de_janei_orthodontic",
+   "unidade": "OrthoDontic",
+   "rotulo": "RJ · Rio de Janeiro",
+   "com_texto": 110,
+   "sem_estagio": 91,
+   "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
+   "estagios": [
+    {
+     "estagio": "descoberta",
+     "rotulo": "Descoberta",
+     "o_que_e": "como me acharam",
+     "quem_resolve": "marketing e ficha do Google",
+     "medido": true,
+     "avaliacoes": 1,
+     "dor": 0,
+     "elogio": 1,
+     "pct_dor": 0,
+     "amostra_curta": true,
+     "exemplos": [],
+     "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "contato",
+     "rotulo": "Contato",
+     "o_que_e": "telefone e WhatsApp",
+     "quem_resolve": "recepção",
+     "medido": false,
+     "avaliacoes": 0,
+     "dor": 0,
+     "elogio": 0,
+     "pct_dor": null,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": null,
+     "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+    },
+    {
+     "estagio": "agendamento",
+     "rotulo": "Agendamento",
+     "o_que_e": "marcar e remarcar",
+     "quem_resolve": "recepção",
+     "medido": false,
+     "avaliacoes": 0,
+     "dor": 0,
+     "elogio": 0,
+     "pct_dor": null,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": null,
+     "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+    },
+    {
+     "estagio": "recepcao",
+     "rotulo": "Recepção",
+     "o_que_e": "chegar e esperar",
+     "quem_resolve": "recepção",
+     "medido": true,
+     "avaliacoes": 5,
+     "dor": 0,
+     "elogio": 5,
+     "pct_dor": 0,
+     "amostra_curta": true,
+     "exemplos": [],
+     "frase": "5 avaliações falam deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "avaliacao",
+     "rotulo": "Avaliação",
+     "o_que_e": "a primeira consulta",
+     "quem_resolve": "clínica",
+     "medido": true,
+     "avaliacoes": 9,
+     "dor": 0,
+     "elogio": 9,
+     "pct_dor": 0,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": "9 avaliações falam deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "contratacao",
+     "rotulo": "Contratação",
+     "o_que_e": "preço, contrato e entrada",
+     "quem_resolve": "franqueado",
+     "medido": true,
+     "avaliacoes": 5,
+     "dor": 0,
+     "elogio": 5,
+     "pct_dor": 0,
+     "amostra_curta": true,
+     "exemplos": [],
+     "frase": "5 avaliações falam deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "clinico",
+     "rotulo": "Atendimento clínico",
+     "o_que_e": "a cadeira",
+     "quem_resolve": "clínica",
+     "medido": true,
+     "avaliacoes": 3,
+     "dor": 0,
+     "elogio": 3,
+     "pct_dor": 0,
+     "amostra_curta": true,
+     "exemplos": [],
+     "frase": "3 avaliações falam deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "manutencao",
+     "rotulo": "Manutenção",
+     "o_que_e": "as voltas de cada mês",
+     "quem_resolve": "clínica",
+     "medido": false,
+     "avaliacoes": 0,
+     "dor": 0,
+     "elogio": 0,
+     "pct_dor": null,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": null,
+     "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+    },
+    {
+     "estagio": "cobranca",
+     "rotulo": "Cobrança",
+     "o_que_e": "mensalidade e multa",
+     "quem_resolve": "franqueado",
+     "medido": false,
+     "avaliacoes": 0,
+     "dor": 0,
+     "elogio": 0,
+     "pct_dor": null,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": null,
+     "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+    },
+    {
+     "estagio": "suporte",
+     "rotulo": "Suporte",
+     "o_que_e": "quando algo dá errado",
+     "quem_resolve": "franqueado",
+     "medido": false,
+     "avaliacoes": 0,
+     "dor": 0,
+     "elogio": 0,
+     "pct_dor": null,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": null,
+     "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+    },
+    {
+     "estagio": "contencao",
+     "rotulo": "Fim e contenção",
+     "o_que_e": "alta e depois dela",
+     "quem_resolve": "clínica",
+     "medido": false,
+     "avaliacoes": 0,
+     "dor": 0,
+     "elogio": 0,
+     "pct_dor": null,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": null,
+     "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+    }
+   ],
+   "manchete": "Nenhum momento da jornada concentra dor com amostra suficiente para virar manchete.",
+   "quem_resolve": null,
+   "e_clinico": null
+  },
+  {
+   "local_id": "sao_paulo_orthodontic",
+   "unidade": "OrthoDontic · Lapa",
+   "rotulo": "SP · São Paulo",
+   "com_texto": 83,
+   "sem_estagio": 65,
+   "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
+   "estagios": [
+    {
+     "estagio": "descoberta",
+     "rotulo": "Descoberta",
+     "o_que_e": "como me acharam",
+     "quem_resolve": "marketing e ficha do Google",
+     "medido": true,
+     "avaliacoes": 4,
+     "dor": 0,
+     "elogio": 4,
+     "pct_dor": 0,
+     "amostra_curta": true,
+     "exemplos": [],
+     "frase": "4 avaliações falam deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "contato",
+     "rotulo": "Contato",
+     "o_que_e": "telefone e WhatsApp",
+     "quem_resolve": "recepção",
+     "medido": true,
+     "avaliacoes": 3,
+     "dor": 2,
+     "elogio": 0,
+     "pct_dor": 67,
+     "amostra_curta": true,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2025-07-07",
+       "texto": "Vocês trocaram de contato? preciso falar com vocês!"
+      },
+      {
+       "nota": 1,
+       "data": "2025-10-23",
+       "texto": "Gostaria do no número do WhatsApp de vocês por favor."
+      }
+     ],
+     "frase": "3 avaliações falam deste momento, 2 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "agendamento",
+     "rotulo": "Agendamento",
+     "o_que_e": "marcar e remarcar",
+     "quem_resolve": "recepção",
+     "medido": false,
+     "avaliacoes": 0,
+     "dor": 0,
+     "elogio": 0,
+     "pct_dor": null,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": null,
+     "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+    },
+    {
+     "estagio": "recepcao",
+     "rotulo": "Recepção",
+     "o_que_e": "chegar e esperar",
+     "quem_resolve": "recepção",
+     "medido": true,
+     "avaliacoes": 2,
+     "dor": 0,
+     "elogio": 2,
+     "pct_dor": 0,
+     "amostra_curta": true,
+     "exemplos": [],
+     "frase": "2 avaliações falam deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "avaliacao",
+     "rotulo": "Avaliação",
+     "o_que_e": "a primeira consulta",
+     "quem_resolve": "clínica",
+     "medido": true,
+     "avaliacoes": 1,
+     "dor": 0,
+     "elogio": 1,
+     "pct_dor": 0,
+     "amostra_curta": true,
+     "exemplos": [],
+     "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "contratacao",
+     "rotulo": "Contratação",
+     "o_que_e": "preço, contrato e entrada",
+     "quem_resolve": "franqueado",
+     "medido": true,
+     "avaliacoes": 1,
+     "dor": 0,
+     "elogio": 0,
+     "pct_dor": 0,
+     "amostra_curta": true,
+     "exemplos": [],
+     "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "clinico",
+     "rotulo": "Atendimento clínico",
+     "o_que_e": "a cadeira",
+     "quem_resolve": "clínica",
+     "medido": true,
+     "avaliacoes": 8,
+     "dor": 0,
+     "elogio": 7,
+     "pct_dor": 0,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": "8 avaliações falam deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "manutencao",
+     "rotulo": "Manutenção",
+     "o_que_e": "as voltas de cada mês",
+     "quem_resolve": "clínica",
+     "medido": false,
+     "avaliacoes": 0,
+     "dor": 0,
+     "elogio": 0,
+     "pct_dor": null,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": null,
+     "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+    },
+    {
+     "estagio": "cobranca",
+     "rotulo": "Cobrança",
+     "o_que_e": "mensalidade e multa",
+     "quem_resolve": "franqueado",
+     "medido": false,
+     "avaliacoes": 0,
+     "dor": 0,
+     "elogio": 0,
+     "pct_dor": null,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": null,
+     "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+    },
+    {
+     "estagio": "suporte",
+     "rotulo": "Suporte",
+     "o_que_e": "quando algo dá errado",
+     "quem_resolve": "franqueado",
+     "medido": false,
+     "avaliacoes": 0,
+     "dor": 0,
+     "elogio": 0,
+     "pct_dor": null,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": null,
+     "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+    },
+    {
+     "estagio": "contencao",
+     "rotulo": "Fim e contenção",
+     "o_que_e": "alta e depois dela",
+     "quem_resolve": "clínica",
+     "medido": false,
+     "avaliacoes": 0,
+     "dor": 0,
+     "elogio": 0,
+     "pct_dor": null,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": null,
+     "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+    }
+   ],
+   "manchete": "Nenhum momento da jornada concentra dor com amostra suficiente para virar manchete.",
+   "quem_resolve": null,
+   "e_clinico": null
+  },
+  {
+   "local_id": "uberlandia_orthodontic",
+   "unidade": "OrthoDontic · Praça Adolfo Fonseca",
+   "rotulo": "MG · Uberlândia",
+   "com_texto": 91,
+   "sem_estagio": 40,
+   "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
+   "estagios": [
+    {
+     "estagio": "descoberta",
+     "rotulo": "Descoberta",
+     "o_que_e": "como me acharam",
+     "quem_resolve": "marketing e ficha do Google",
+     "medido": true,
+     "avaliacoes": 15,
+     "dor": 7,
+     "elogio": 8,
+     "pct_dor": 47,
+     "amostra_curta": false,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2021-02-18",
+       "texto": "Atendimento ruim, demora muito, paciente espera muito tempo e quando questiona,  aatendente é  mal educada. Todos querem ser bem tratados, afinal estamos pagando! Não recomendo!"
+      },
+      {
+       "nota": 1,
+       "data": "2021-06-23",
+       "texto": "Não gostei dessa clínica, fiquei 1 ano e meio fazendo tratamento com aparelho fixo, toda vez que queria perguntar algo sobre o aparelho o profissional não tinha respeito não me explicava sobre os procedimentos e não tirava minhas dúvidas e não tinha educação. Tirei esse ano mas foi com uma multa altíssima e nem fizeram  a limpeza. Não recomendo para ninguém essa clínica."
+      },
+      {
+       "nota": 1,
+       "data": "2022-08-09",
+       "texto": "Não recomendo, tenho dois filhos que já estão a 4 anos tratando lá e ainda não teve nenhuma melhora, sem contar com o péssimo atendimento por telefone elas não conseguem nem mandar um boleto afff estou muito insatisfeita."
+      }
+     ],
+     "frase": "15 avaliações falam deste momento, 7 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "contato",
+     "rotulo": "Contato",
+     "o_que_e": "telefone e WhatsApp",
+     "quem_resolve": "recepção",
+     "medido": true,
+     "avaliacoes": 17,
+     "dor": 14,
+     "elogio": 2,
+     "pct_dor": 82,
+     "amostra_curta": false,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2020-11-10",
+       "texto": "O atendimento presencial é bom, mas se vc precisa por algum motivo entrar em contato via telefone seja através de chamada ou mensagem pode desistir pq não vai acontecer."
+      },
+      {
+       "nota": 1,
+       "data": "2020-11-11",
+       "texto": "Não atende telefone  nota 0"
+      },
+      {
+       "nota": 1,
+       "data": "2020-12-07",
+       "texto": "Pior atendimento via telefone e zap que existe quer estragar seu dia tentar falar com eles.\nOu faça igual pare seu trabalho perca seu e vá na clínica."
+      }
+     ],
+     "frase": "17 avaliações falam deste momento, 14 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "agendamento",
+     "rotulo": "Agendamento",
+     "o_que_e": "marcar e remarcar",
+     "quem_resolve": "recepção",
+     "medido": true,
+     "avaliacoes": 8,
+     "dor": 7,
+     "elogio": 1,
+     "pct_dor": 88,
+     "amostra_curta": false,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2021-06-09",
+       "texto": "Nunca somos atendidos no horário marcado , profissionais sempre atrasados , difícil de atender telefone , péssimo atendimento."
+      },
+      {
+       "nota": 1,
+       "data": "2022-03-04",
+       "texto": "Somente atraso e sem resultado visível após 1 ano de tratamento. Falando em atraso segue print da msg com a hr marcada e horário que tô na recepção esperando pra ser atendida. Só atrasam! Deixa muito a desejar"
+      },
+      {
+       "nota": 1,
+       "data": "2022-12-12",
+       "texto": "PÉSSIMO atendimento! Demoram horrores pra te atender, não cumprem com horário, todas as vezes é uma enrolação para ser chamado. Que arrependimento!\nOBS: NÃO FAÇAM CONTRATO, CASO VOCÊ NÃO ESTEJA SATISFEITO COM O TRATAMENTO ELES VÃO COBRAR MULTA DE MAIS DE R$300,00 REAIS!!! NÃO VALE A PENA!"
+      }
+     ],
+     "frase": "8 avaliações falam deste momento, 7 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "recepcao",
+     "rotulo": "Recepção",
+     "o_que_e": "chegar e esperar",
+     "quem_resolve": "recepção",
+     "medido": true,
+     "avaliacoes": 15,
+     "dor": 8,
+     "elogio": 7,
+     "pct_dor": 53,
+     "amostra_curta": false,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2021-02-18",
+       "texto": "Atendimento ruim, demora muito, paciente espera muito tempo e quando questiona,  aatendente é  mal educada. Todos querem ser bem tratados, afinal estamos pagando! Não recomendo!"
+      },
+      {
+       "nota": 1,
+       "data": "2021-06-09",
+       "texto": "Nunca somos atendidos no horário marcado , profissionais sempre atrasados , difícil de atender telefone , péssimo atendimento."
+      },
+      {
+       "nota": 1,
+       "data": "2022-01-24",
+       "texto": "Péssimo atendimento !!\nSempre demoram em torno de 50 minutos para nos atender !\nAlém da cara de *** da recepcionista !"
+      }
+     ],
+     "frase": "15 avaliações falam deste momento, 8 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "avaliacao",
+     "rotulo": "Avaliação",
+     "o_que_e": "a primeira consulta",
+     "quem_resolve": "clínica",
+     "medido": true,
+     "avaliacoes": 3,
+     "dor": 2,
+     "elogio": 1,
+     "pct_dor": 67,
+     "amostra_curta": true,
+     "exemplos": [],
+     "frase": "3 avaliações falam deste momento, 2 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "contratacao",
+     "rotulo": "Contratação",
+     "o_que_e": "preço, contrato e entrada",
+     "quem_resolve": "franqueado",
+     "medido": true,
+     "avaliacoes": 5,
+     "dor": 4,
+     "elogio": 1,
+     "pct_dor": 80,
+     "amostra_curta": true,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2022-12-12",
+       "texto": "PÉSSIMO atendimento! Demoram horrores pra te atender, não cumprem com horário, todas as vezes é uma enrolação para ser chamado. Que arrependimento!\nOBS: NÃO FAÇAM CONTRATO, CASO VOCÊ NÃO ESTEJA SATISFEITO COM O TRATAMENTO ELES VÃO COBRAR MULTA DE MAIS DE R$300,00 REAIS!!! NÃO VALE A PENA!"
+      },
+      {
+       "nota": 1,
+       "data": "2025-05-20",
+       "texto": "Até a conclusão do meu aparelho, o atendimento foi ótimo, querem me cobrar para ganhar alta sendo que o próprio dentista já tinha dado, agora ninguém marcou para eu poder fazer meu clareamento dental que foi me dado do início desde a assinatura do contrato e que tenho aqui. Infelizmente só promessas."
+      }
+     ],
+     "frase": "5 avaliações falam deste momento, 4 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "clinico",
+     "rotulo": "Atendimento clínico",
+     "o_que_e": "a cadeira",
+     "quem_resolve": "clínica",
+     "medido": true,
+     "avaliacoes": 16,
+     "dor": 11,
+     "elogio": 4,
+     "pct_dor": 69,
+     "amostra_curta": false,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2021-03-14",
+       "texto": "Estou muito decepcionada com a dentista, tomem cuidado com quem vocês irão se consultar."
+      },
+      {
+       "nota": 1,
+       "data": "2021-06-23",
+       "texto": "Não gostei dessa clínica, fiquei 1 ano e meio fazendo tratamento com aparelho fixo, toda vez que queria perguntar algo sobre o aparelho o profissional não tinha respeito não me explicava sobre os procedimentos e não tirava minhas dúvidas e não tinha educação. Tirei esse ano mas foi com uma multa altíssima e nem fizeram  a limpeza. Não recomendo para ninguém essa clínica."
+      },
+      {
+       "nota": 1,
+       "data": "2023-02-27",
+       "texto": "O atendimento é péssimo,enrolado e demorado sem falar as vezes que vc vai com o horário marcado e chegando lá o dentista teve algum imprevisto e eles não tem a coragem de ligar para reagendar o atendimento ou simplismente avisar ......sem falar que eles ficam postergando o seu tratamento por um loooonnnnnngo tempo.E si você quiser cancelar tem uma multa de 300,00 ...e fria."
+      }
+     ],
+     "frase": "16 avaliações falam deste momento, 11 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "manutencao",
+     "rotulo": "Manutenção",
+     "o_que_e": "as voltas de cada mês",
+     "quem_resolve": "clínica",
+     "medido": true,
+     "avaliacoes": 7,
+     "dor": 7,
+     "elogio": 0,
+     "pct_dor": 100,
+     "amostra_curta": true,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2023-03-23",
+       "texto": "o atendimento é horrível, tanto em whatsapp como eu ligação, simplesmente não te atendem e nem te dão retorno sobre o que você precisa, dei uma estrela por que o Dr. Ítalo é ótimo e não tem culpa, de resto nota 0"
+      },
+      {
+       "nota": 1,
+       "data": "2024-02-29",
+       "texto": "Péssima empresa, péssimo atendimento, nunca atendem no horário marcado. Ficam enrolando o tratamento para continuar pagando a mensalidade e inventando desculpas esfarrapadas.\nSe arrependimento matasse estava morto.\nNÃO RECOMENDO A NINGUÉM!"
+      }
+     ],
+     "frase": "7 avaliações falam deste momento, 7 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "cobranca",
+     "rotulo": "Cobrança",
+     "o_que_e": "mensalidade e multa",
+     "quem_resolve": "franqueado",
+     "medido": true,
+     "avaliacoes": 9,
+     "dor": 8,
+     "elogio": 0,
+     "pct_dor": 89,
+     "amostra_curta": false,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2021-06-23",
+       "texto": "Não gostei dessa clínica, fiquei 1 ano e meio fazendo tratamento com aparelho fixo, toda vez que queria perguntar algo sobre o aparelho o profissional não tinha respeito não me explicava sobre os procedimentos e não tirava minhas dúvidas e não tinha educação. Tirei esse ano mas foi com uma multa altíssima e nem fizeram  a limpeza. Não recomendo para ninguém essa clínica."
+      },
+      {
+       "nota": 1,
+       "data": "2022-08-09",
+       "texto": "Não recomendo, tenho dois filhos que já estão a 4 anos tratando lá e ainda não teve nenhuma melhora, sem contar com o péssimo atendimento por telefone elas não conseguem nem mandar um boleto afff estou muito insatisfeita."
+      },
+      {
+       "nota": 1,
+       "data": "2022-12-12",
+       "texto": "PÉSSIMO atendimento! Demoram horrores pra te atender, não cumprem com horário, todas as vezes é uma enrolação para ser chamado. Que arrependimento!\nOBS: NÃO FAÇAM CONTRATO, CASO VOCÊ NÃO ESTEJA SATISFEITO COM O TRATAMENTO ELES VÃO COBRAR MULTA DE MAIS DE R$300,00 REAIS!!! NÃO VALE A PENA!"
+      }
+     ],
+     "frase": "9 avaliações falam deste momento, 8 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "suporte",
+     "rotulo": "Suporte",
+     "o_que_e": "quando algo dá errado",
+     "quem_resolve": "franqueado",
+     "medido": true,
+     "avaliacoes": 8,
+     "dor": 4,
+     "elogio": 4,
+     "pct_dor": 50,
+     "amostra_curta": false,
+     "exemplos": [],
+     "frase": "8 avaliações falam deste momento, 4 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "contencao",
+     "rotulo": "Fim e contenção",
+     "o_que_e": "alta e depois dela",
+     "quem_resolve": "clínica",
+     "medido": true,
+     "avaliacoes": 3,
+     "dor": 2,
+     "elogio": 1,
+     "pct_dor": 67,
+     "amostra_curta": true,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2025-05-20",
+       "texto": "Até a conclusão do meu aparelho, o atendimento foi ótimo, querem me cobrar para ganhar alta sendo que o próprio dentista já tinha dado, agora ninguém marcou para eu poder fazer meu clareamento dental que foi me dado do início desde a assinatura do contrato e que tenho aqui. Infelizmente só promessas."
+      }
+     ],
+     "frase": "3 avaliações falam deste momento, 2 com notas baixas",
+     "porque_vazio": null
+    }
+   ],
+   "manchete": "A dor pública desta unidade aparece em contato — 14 avaliações de 1 ou 2 estrelas de 17 que falam desse momento.",
+   "quem_resolve": "recepção",
+   "e_clinico": false
+  },
+  {
+   "local_id": "uberlandia_orthodontic_centro",
+   "unidade": "OrthoDontic · Av. Floriano Peixoto",
+   "rotulo": "MG · Uberlândia",
+   "com_texto": 42,
+   "sem_estagio": 19,
+   "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
+   "estagios": [
+    {
+     "estagio": "descoberta",
+     "rotulo": "Descoberta",
+     "o_que_e": "como me acharam",
+     "quem_resolve": "marketing e ficha do Google",
+     "medido": true,
+     "avaliacoes": 6,
+     "dor": 1,
+     "elogio": 5,
+     "pct_dor": 17,
+     "amostra_curta": true,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2024-04-25",
+       "texto": "Atendimento horrível, um descaso absurdo com os clientes. As recepcionistas não tem um pingo de empatia e profissionalismo. O atendimento com os dentistas são bons mas em compensação o atendimento é péssimo. Não recomendo a clínica para ninguém, evitem frustrações e humilhações por um serviço que você está pagando."
+      }
+     ],
+     "frase": "6 avaliações falam deste momento, 1 com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "contato",
+     "rotulo": "Contato",
+     "o_que_e": "telefone e WhatsApp",
+     "quem_resolve": "recepção",
+     "medido": true,
+     "avaliacoes": 4,
+     "dor": 4,
+     "elogio": 0,
+     "pct_dor": 100,
+     "amostra_curta": true,
+     "exemplos": [
+      {
+       "nota": 2,
+       "data": "2023-02-24",
+       "texto": "Sem suporte no whatsapp! 4 dias tentando falar e não consigo."
+      },
+      {
+       "nota": 1,
+       "data": "2023-11-01",
+       "texto": "Telefone só de enfeite"
+      },
+      {
+       "nota": 1,
+       "data": "2026-05-08",
+       "texto": "Realmente, telefone é só de enfeite. Pq tento falar lá pra ver sobre meu orçamento e ninguém responde, em qualquer dia ou horário... Depois perdem clientes e não sabem pq."
+      }
+     ],
+     "frase": "4 avaliações falam deste momento, 4 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "agendamento",
+     "rotulo": "Agendamento",
+     "o_que_e": "marcar e remarcar",
+     "quem_resolve": "recepção",
+     "medido": true,
+     "avaliacoes": 3,
+     "dor": 3,
+     "elogio": 0,
+     "pct_dor": 100,
+     "amostra_curta": true,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2025-12-10",
+       "texto": "a profissional  que me atende é ótima , porém quando preciso de um suporte para esclarecer dúvidas ou remarcações sempre tem um problema , ninguém responde eu sempre tenho que ficar enchendo de msg . Só respondem quando querem ."
+      },
+      {
+       "nota": 1,
+       "data": "2026-05-08",
+       "texto": "Realmente, telefone é só de enfeite. Pq tento falar lá pra ver sobre meu orçamento e ninguém responde, em qualquer dia ou horário... Depois perdem clientes e não sabem pq."
+      }
+     ],
+     "frase": "3 avaliações falam deste momento, 3 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "recepcao",
+     "rotulo": "Recepção",
+     "o_que_e": "chegar e esperar",
+     "quem_resolve": "recepção",
+     "medido": true,
+     "avaliacoes": 5,
+     "dor": 2,
+     "elogio": 3,
+     "pct_dor": 40,
+     "amostra_curta": true,
+     "exemplos": [
+      {
+       "nota": 2,
+       "data": "2022-01-18",
+       "texto": "Prazo de espera é sempre muito demorado !\nEm torno de 50 minutos a 1hr e meia !\nA empresa foca em quantidade de clientes e não na satisfação !"
+      },
+      {
+       "nota": 1,
+       "data": "2024-04-25",
+       "texto": "Atendimento horrível, um descaso absurdo com os clientes. As recepcionistas não tem um pingo de empatia e profissionalismo. O atendimento com os dentistas são bons mas em compensação o atendimento é péssimo. Não recomendo a clínica para ninguém, evitem frustrações e humilhações por um serviço que você está pagando."
+      }
+     ],
+     "frase": "5 avaliações falam deste momento, 2 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "avaliacao",
+     "rotulo": "Avaliação",
+     "o_que_e": "a primeira consulta",
+     "quem_resolve": "clínica",
+     "medido": true,
+     "avaliacoes": 4,
+     "dor": 2,
+     "elogio": 2,
+     "pct_dor": 50,
+     "amostra_curta": true,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2026-05-08",
+       "texto": "Realmente, telefone é só de enfeite. Pq tento falar lá pra ver sobre meu orçamento e ninguém responde, em qualquer dia ou horário... Depois perdem clientes e não sabem pq."
+      }
+     ],
+     "frase": "4 avaliações falam deste momento, 2 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "contratacao",
+     "rotulo": "Contratação",
+     "o_que_e": "preço, contrato e entrada",
+     "quem_resolve": "franqueado",
+     "medido": true,
+     "avaliacoes": 1,
+     "dor": 1,
+     "elogio": 0,
+     "pct_dor": 100,
+     "amostra_curta": true,
+     "exemplos": [
+      {
+       "nota": 2,
+       "data": "2025-04-15",
+       "texto": "O atendimento de modo geral é bom, porém a vendedora não sabe dar explicações claras sobre o contrato."
+      }
+     ],
+     "frase": "1 avaliação fala deste momento, 1 com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "clinico",
+     "rotulo": "Atendimento clínico",
+     "o_que_e": "a cadeira",
+     "quem_resolve": "clínica",
+     "medido": true,
+     "avaliacoes": 9,
+     "dor": 3,
+     "elogio": 6,
+     "pct_dor": 33,
+     "amostra_curta": false,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2025-12-10",
+       "texto": "a profissional  que me atende é ótima , porém quando preciso de um suporte para esclarecer dúvidas ou remarcações sempre tem um problema , ninguém responde eu sempre tenho que ficar enchendo de msg . Só respondem quando querem ."
+      }
+     ],
+     "frase": "9 avaliações falam deste momento, 3 com notas baixas",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "manutencao",
+     "rotulo": "Manutenção",
+     "o_que_e": "as voltas de cada mês",
+     "quem_resolve": "clínica",
+     "medido": true,
+     "avaliacoes": 1,
+     "dor": 1,
+     "elogio": 0,
+     "pct_dor": 100,
+     "amostra_curta": true,
+     "exemplos": [],
+     "frase": "1 avaliação fala deste momento, 1 com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "cobranca",
+     "rotulo": "Cobrança",
+     "o_que_e": "mensalidade e multa",
+     "quem_resolve": "franqueado",
+     "medido": true,
+     "avaliacoes": 1,
+     "dor": 1,
+     "elogio": 0,
+     "pct_dor": 100,
+     "amostra_curta": true,
+     "exemplos": [],
+     "frase": "1 avaliação fala deste momento, 1 com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "suporte",
+     "rotulo": "Suporte",
+     "o_que_e": "quando algo dá errado",
+     "quem_resolve": "franqueado",
+     "medido": true,
+     "avaliacoes": 5,
+     "dor": 1,
+     "elogio": 4,
+     "pct_dor": 20,
+     "amostra_curta": true,
+     "exemplos": [
+      {
+       "nota": 1,
+       "data": "2025-12-10",
+       "texto": "a profissional  que me atende é ótima , porém quando preciso de um suporte para esclarecer dúvidas ou remarcações sempre tem um problema , ninguém responde eu sempre tenho que ficar enchendo de msg . Só respondem quando querem ."
+      }
+     ],
+     "frase": "5 avaliações falam deste momento, 1 com nota baixa",
+     "porque_vazio": null
+    },
+    {
+     "estagio": "contencao",
+     "rotulo": "Fim e contenção",
+     "o_que_e": "alta e depois dela",
+     "quem_resolve": "clínica",
+     "medido": true,
+     "avaliacoes": 1,
+     "dor": 0,
+     "elogio": 1,
+     "pct_dor": 0,
+     "amostra_curta": true,
+     "exemplos": [],
+     "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+     "porque_vazio": null
     }
    ],
    "manchete": "Nenhum momento da jornada concentra dor com amostra suficiente para virar manchete.",

@@ -40,15 +40,247 @@
       }
     ]
   },
-  "planos_das_lojas": [],
-  "oferta": null,
+  "papel": "franquia",
+  "eyebrow": "Praça · duas no centro denso, uma isolada",
+  "tese_titulo": "Oitenta clínicas em volta de duas, três em volta da outra",
+  "tese": "Caxias do Sul mostra dentro de uma cidade só o contraste que o mapa de bairros existe para revelar: duas unidades com 83 e 87 clínicas num raio de 1 km, e uma terceira com 3. São mercados incomparáveis. Nas buscas, as três aparecem em 0, 0 e 1 de 167 frases testadas.",
+  "dna": [
+    "83, 87 e 3 clínicas em 1 km — três realidades na mesma cidade",
+    "0, 0 e 1 aparição em 167 buscas medidas",
+    "As duas do centro estão a 10 e 50 metros da clínica mais próxima",
+    "23 bairros medidos, a rede em três",
+    "115 clínicas varridas, todas com coordenada"
+  ],
+  "plano": [
+    "Nunca comparar a unidade isolada com as duas do centro",
+    "Encontrabilidade primeiro nas três",
+    "Conferir ficha e categoria antes de qualquer mídia",
+    "Remedir as mesmas 167 buscas em 30 dias",
+    "Levar o contraste de densidade para a conversa de expansão"
+  ],
+  "base": "2011 avaliações medidas · 1357 com texto · 3 unidades da rede alcançadas pela varredura",
+  "citacoes": [
+    {
+      "texto": "Foi marcado consulta, e a médica não estava e não foi avisado.",
+      "nota": 1,
+      "data": "2026-08-03",
+      "fonte": "avaliação pública no Google"
+    },
+    {
+      "texto": "Clínica popular?\nSinceramente não sei aonde!\nNão indico a clínica,mas a Dr foi muito querida e profissional!",
+      "nota": 1,
+      "data": "2026-08-10",
+      "fonte": "avaliação pública no Google"
+    },
+    {
+      "texto": "As meninas da recepção são extremamente gentis! Atendimento maravilhoso",
+      "nota": 5,
+      "data": "2026-03-09",
+      "fonte": "avaliação pública no Google"
+    },
+    {
+      "texto": "Fui muito bem atendido pela recepção. Local organizado e atendimento bom.",
+      "nota": 5,
+      "data": "2026-03-10",
+      "fonte": "avaliação pública no Google"
+    }
+  ],
+  "planos_das_lojas": [
+    {
+      "local_id": "caxias_do_su_orthodontic",
+      "unidade": "OrthoDontic · R. Pinheiro Machado",
+      "rotulo": "RS · Caxias do Sul",
+      "arquivo": "planos/caxias_do_su_orthodontic"
+    },
+    {
+      "local_id": "caxias_do_su_orthodontic_centro",
+      "unidade": "OrthoDontic · Av. Júlio de Castilhos",
+      "rotulo": "RS · Caxias do Sul",
+      "arquivo": "planos/caxias_do_su_orthodontic_centro"
+    },
+    {
+      "local_id": "orthodontic_kayser",
+      "unidade": "OrthoDontic · Kayser",
+      "rotulo": "RS · Caxias do Sul",
+      "arquivo": "planos/orthodontic_kayser"
+    }
+  ],
+  "oferta": {
+    "praca_id": "caxias_do_sul",
+    "rotulo": "RS · Caxias do Sul",
+    "anuncios_de_aparelho": 34,
+    "anunciantes": 16,
+    "fora_do_produto": 129,
+    "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
+    "sem_texto": 3,
+    "amostra_curta": false,
+    "tese": "A disputa desta cidade é por alinhador invisível — 12 dos 34 anúncios de aparelho medidos falam disso, seguido de avaliação grátis.",
+    "posicao_vaga": "Ninguém está falando de sem entrada — tira a barreira do primeiro pagamento — ataca quem não tem reserva.",
+    "eixos": [
+      {
+        "eixo": "alinhador",
+        "rotulo": "Alinhador invisível",
+        "o_que_significa": "produto de ticket alto e público adulto",
+        "anuncios": 12,
+        "pct": 35,
+        "frase": "12 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "avaliacao_gratis",
+        "rotulo": "Avaliação grátis",
+        "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+        "anuncios": 11,
+        "pct": 32,
+        "frase": "11 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "preco",
+        "rotulo": "Preço na frente",
+        "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
+        "anuncios": 10,
+        "pct": 29,
+        "frase": "10 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "autoridade",
+        "rotulo": "Autoridade técnica",
+        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+        "anuncios": 10,
+        "pct": 29,
+        "frase": "10 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "parcelamento",
+        "rotulo": "Parcelamento",
+        "o_que_significa": "vende a mensalidade, não o tratamento",
+        "anuncios": 4,
+        "pct": 12,
+        "frase": "4 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "estetico",
+        "rotulo": "Aparelho estético",
+        "o_que_significa": "vende discrição — público que trabalha de frente",
+        "anuncios": 4,
+        "pct": 12,
+        "frase": "4 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "rapidez",
+        "rotulo": "Rapidez do resultado",
+        "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+        "anuncios": 4,
+        "pct": 12,
+        "frase": "4 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "urgencia",
+        "rotulo": "Urgência e escassez",
+        "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+        "anuncios": 1,
+        "pct": 3,
+        "frase": "1 anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "sem_entrada",
+        "rotulo": "Sem entrada",
+        "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "publico_adulto",
+        "rotulo": "Falado para adulto",
+        "o_que_significa": "disputa o adulto que adiou o tratamento",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "publico_infantil",
+        "rotulo": "Falado para criança e adolescente",
+        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "prova_social",
+        "rotulo": "Prova social",
+        "o_que_significa": "vende confiança em vez de preço",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      }
+    ],
+    "por_anunciante": [
+      {
+        "anunciante": "Dra. Taise Ceron",
+        "eixos": [
+          "avaliacao_gratis",
+          "alinhador",
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "Centro Odontológico Caxias - RS",
+        "eixos": [
+          "preco",
+          "parcelamento",
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "OdontoPlus Caxias",
+        "eixos": [
+          "alinhador",
+          "autoridade",
+          "estetico"
+        ]
+      },
+      {
+        "anunciante": "OrthoDontic",
+        "eixos": [
+          "preco"
+        ]
+      },
+      {
+        "anunciante": "Le Michelin",
+        "eixos": [
+          "alinhador",
+          "estetico"
+        ]
+      },
+      {
+        "anunciante": "Déborah Júlia Odontologia Integrada",
+        "eixos": [
+          "avaliacao_gratis",
+          "alinhador"
+        ]
+      },
+      {
+        "anunciante": "Orto.com Odontologia",
+        "eixos": [
+          "avaliacao_gratis",
+          "alinhador"
+        ]
+      },
+      {
+        "anunciante": "DS Odontologia",
+        "eixos": [
+          "avaliacao_gratis"
+        ]
+      }
+    ]
+  },
   "bairros": {
     "praca_id": "caxias_do_sul",
     "rotulo": "RS · Caxias do Sul",
     "territorio": [
       {
-        "local_id": "orthodontic",
-        "unidade": "OrthoDontic",
+        "local_id": "caxias_do_su_orthodontic",
+        "unidade": "OrthoDontic · R. Pinheiro Machado",
         "medido": true,
         "location": {
           "lat": -29.167090699999996,
@@ -117,8 +349,8 @@
         }
       },
       {
-        "local_id": "orthodontic_centro",
-        "unidade": "OrthoDontic",
+        "local_id": "caxias_do_su_orthodontic_centro",
+        "unidade": "OrthoDontic · Av. Júlio de Castilhos",
         "medido": true,
         "location": {
           "lat": -29.1680952,
@@ -188,7 +420,7 @@
       },
       {
         "local_id": "orthodontic_kayser",
-        "unidade": "OrthoDontic",
+        "unidade": "OrthoDontic · Kayser",
         "medido": true,
         "location": {
           "lat": -29.188492699999998,
@@ -266,19 +498,19 @@
     "unidades_localizadas": 3,
     "onde_estamos": [
       {
-        "local_id": "orthodontic",
+        "local_id": "caxias_do_su_orthodontic",
         "bairro": "Centro",
-        "unidade": "OrthoDontic"
+        "unidade": "OrthoDontic · R. Pinheiro Machado"
       },
       {
-        "local_id": "orthodontic_centro",
+        "local_id": "caxias_do_su_orthodontic_centro",
         "bairro": "Centro",
-        "unidade": "OrthoDontic"
+        "unidade": "OrthoDontic · Av. Júlio de Castilhos"
       },
       {
         "local_id": "orthodontic_kayser",
         "bairro": "Kayser",
-        "unidade": "OrthoDontic"
+        "unidade": "OrthoDontic · Kayser"
       }
     ],
     "bairros": [
@@ -288,8 +520,8 @@
         "avaliacoes_somadas": 8012,
         "temos_unidade": true,
         "nossas": [
-          "orthodontic",
-          "orthodontic_centro"
+          "caxias_do_su_orthodontic",
+          "caxias_do_su_orthodontic_centro"
         ],
         "vizinhos_fortes": [
           {
@@ -982,16 +1214,6 @@
       "anuncios_ativos": null
     },
     {
-      "local_id": "oral_unic",
-      "nome": "Oral Unic",
-      "tipo": "PREENCHER",
-      "proprio": false,
-      "nota": 4.8,
-      "avaliacoes": 705,
-      "reviews_novos_mes": null,
-      "anuncios_ativos": null
-    },
-    {
       "local_id": "brunetto_slovinscki_odonto",
       "nome": "Brunetto Slovinscki Odontologia",
       "tipo": "PREENCHER",
@@ -1052,16 +1274,6 @@
       "anuncios_ativos": null
     },
     {
-      "local_id": "orthodontic",
-      "nome": "OrthoDontic",
-      "tipo": "franquia",
-      "proprio": true,
-      "nota": 4.9,
-      "avaliacoes": 308,
-      "reviews_novos_mes": null,
-      "anuncios_ativos": null
-    },
-    {
       "local_id": "odontopediatra_dra_andress",
       "nome": "Odontopediatra Dra. Andressa Pimentel",
       "tipo": "PREENCHER",
@@ -1098,16 +1310,6 @@
       "proprio": true,
       "nota": 4.8,
       "avaliacoes": 91,
-      "reviews_novos_mes": null,
-      "anuncios_ativos": null
-    },
-    {
-      "local_id": "orthodontic_centro",
-      "nome": "OrthoDontic",
-      "tipo": "franquia",
-      "proprio": true,
-      "nota": 4.2,
-      "avaliacoes": 61,
       "reviews_novos_mes": null,
       "anuncios_ativos": null
     }

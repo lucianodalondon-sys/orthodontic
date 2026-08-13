@@ -1,0 +1,1069 @@
+{
+  "local_id": "caxias_do_su_orthodontic_centro",
+  "praca_id": "caxias_do_sul",
+  "apresentacao": {
+    "unidade": "OrthoDontic · Av. Júlio de Castilhos",
+    "cidade": "RS · Caxias do Sul",
+    "endereco": "Av. Júlio de Castilhos, 2112 - Sl 21 - Centro, Caxias do Sul - RS, 95010-002",
+    "desde": null,
+    "medicoes": null,
+    "posicao_na_cidade": null,
+    "clinicas_na_cidade": null,
+    "lojas_irmas": [
+      {
+        "local_id": "caxias_do_su_orthodontic",
+        "unidade": "OrthoDontic · R. Pinheiro Machado"
+      },
+      {
+        "local_id": "orthodontic_kayser",
+        "unidade": "OrthoDontic · Kayser"
+      }
+    ],
+    "frase": null
+  },
+  "rotulo": "RS · Caxias do Sul",
+  "unidade": "OrthoDontic · Av. Júlio de Castilhos",
+  "cabecalho": {
+    "nota": 4.7,
+    "avaliacoes": 172,
+    "ritmo": 7.7,
+    "meses_seguidos": 2,
+    "posicao": 15,
+    "de": 17
+  },
+  "faixa": "amarela",
+  "urgencia": 50,
+  "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-13",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-27"
+  },
+  "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada",
+    "confianca": {
+      "natureza": "recomendacao",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": null,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "scripts/fila.py",
+      "a_favor": [
+        "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 7.7 avaliações/mês",
+        "15º lugar de 17 clínicas medidas na praça"
+      ],
+      "contra": [],
+      "o_que_aumentaria": "o resultado medido na coleta seguinte (dados/serie/acoes.jsonl)",
+      "procedencia": "sem amostra declarada"
+    }
+  },
+  "gatilhos": [
+    {
+      "peso": 30,
+      "titulo": "O contador de avaliações parou",
+      "chave": "parada",
+      "fato": "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 7.7 avaliações/mês",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "peso": 20,
+      "titulo": "Está na metade de baixo da própria praça",
+      "chave": "posicao",
+      "fato": "15º lugar de 17 clínicas medidas na praça",
+      "fonte": "dados/portal/rede_cruzamento.json"
+    }
+  ],
+  "quem_avanca": null,
+  "o_que_mudou": null,
+  "sem_resposta": {
+    "abertas": null,
+    "com_texto": null,
+    "itens": [],
+    "itens_total": 0
+  },
+  "voz_do_paciente": null,
+  "rival": {
+    "comparados": [],
+    "vantagens_deles": [],
+    "fora": [],
+    "fora_total": 0,
+    "sem_comparacao_porque": null
+  },
+  "presenca_na_busca": {
+    "local_id": "caxias_do_su_orthodontic_centro",
+    "praca_id": "caxias_do_sul",
+    "rotulo": "RS · Caxias do Sul",
+    "unidade": "OrthoDontic",
+    "avaliacoes_da_ficha": null,
+    "aparece_em": 0,
+    "de": 167,
+    "pct": 0,
+    "melhor_posicao": null,
+    "frases_onde_aparece": [],
+    "invisivel": true,
+    "frase_do_topo": "Esta loja **não aparece em nenhuma** das 167 buscas que testamos na cidade.",
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 167,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/portas.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+      "procedencia": "medido em 167 buscas testadas, 1 medição"
+    }
+  },
+  "perto_da_clinica": {
+    "local_id": "caxias_do_su_orthodontic_centro",
+    "praca_id": "caxias_do_sul",
+    "rotulo": "RS · Caxias do Sul",
+    "unidade": "OrthoDontic · Av. Júlio de Castilhos",
+    "medido_em": "2026-08-13",
+    "raio_m": 3000,
+    "de": 5,
+    "aparece_em": 3,
+    "em_primeiro": 0,
+    "melhor_posicao": 2,
+    "invisivel_perto": false,
+    "frase": "aparece em 3 de 5 buscas feitas a partir do próprio endereço, melhor posição: 2º",
+    "buscas": [
+      {
+        "frase": "aparelho ortodontico caxias do sul",
+        "intencao": "GENÉRICO",
+        "posicao": 2,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 362,
+        "topo_metros": 255
+      },
+      {
+        "frase": "avaliações sobre marcos guerra ortodontista caxias do sul",
+        "intencao": "BAIRRO",
+        "posicao": null,
+        "topo": "Marcos Guerra ORTODONTISTA",
+        "topo_avaliacoes": 2,
+        "topo_metros": 674
+      },
+      {
+        "frase": "marcos guerra ortodontista caxias do sul",
+        "intencao": "BAIRRO",
+        "posicao": null,
+        "topo": "Marcos Guerra ORTODONTISTA",
+        "topo_avaliacoes": 2,
+        "topo_metros": 674
+      },
+      {
+        "frase": "ortodontista caxias do sul",
+        "intencao": "GENÉRICO",
+        "posicao": 2,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 362,
+        "topo_metros": 255
+      },
+      {
+        "frase": "vaga ortodontista caxias do sul",
+        "intencao": "RUÍDO",
+        "posicao": 2,
+        "topo": "Dra.Andréa Letti",
+        "topo_avaliacoes": 71,
+        "topo_metros": 59
+      }
+    ],
+    "quem_aparece_na_frente": [
+      {
+        "nome": "OrthoDontic",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "Marcos Guerra ORTODONTISTA",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "Dra.Andréa Letti",
+        "vezes_na_frente": 1
+      }
+    ],
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 5,
+      "janela_dias": 0,
+      "medicoes": 1,
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
+    },
+    "na_cidade": {
+      "aparece_em": 0,
+      "de": 167
+    }
+  },
+  "jornada": {
+    "local_id": "caxias_do_su_orthodontic_centro",
+    "unidade": "OrthoDontic · Av. Júlio de Castilhos",
+    "rotulo": "RS · Caxias do Sul",
+    "com_texto": 88,
+    "sem_estagio": 53,
+    "porque_sem_estagio": "avaliações curtas do tipo 'ótimo' e 'recomendo', que não dizem em que momento a pessoa estava",
+    "estagios": [
+      {
+        "estagio": "descoberta",
+        "rotulo": "Descoberta",
+        "o_que_e": "como me acharam",
+        "quem_resolve": "marketing e ficha do Google",
+        "medido": true,
+        "avaliacoes": 14,
+        "dor": 0,
+        "elogio": 14,
+        "pct_dor": 0,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": "14 avaliações falam deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "contato",
+        "rotulo": "Contato",
+        "o_que_e": "telefone e WhatsApp",
+        "quem_resolve": "recepção",
+        "medido": false,
+        "avaliacoes": 0,
+        "dor": 0,
+        "elogio": 0,
+        "pct_dor": null,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": null,
+        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+      },
+      {
+        "estagio": "agendamento",
+        "rotulo": "Agendamento",
+        "o_que_e": "marcar e remarcar",
+        "quem_resolve": "recepção",
+        "medido": true,
+        "avaliacoes": 4,
+        "dor": 2,
+        "elogio": 1,
+        "pct_dor": 50,
+        "amostra_curta": true,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2025-12-29",
+            "texto": "Chego no horário marcado fico esperando uma hora e meia, e eles passam o pessoal que veio bem depois de mim, é muita falta de respeito com os clientes..."
+          },
+          {
+            "nota": 1,
+            "data": "2026-08-06",
+            "texto": "Muita demora  no atendimento ,mais de uma hora esperando sempre, sendo que é horário e data agendada"
+          }
+        ],
+        "frase": "4 avaliações falam deste momento, 2 com notas baixas",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "recepcao",
+        "rotulo": "Recepção",
+        "o_que_e": "chegar e esperar",
+        "quem_resolve": "recepção",
+        "medido": true,
+        "avaliacoes": 16,
+        "dor": 1,
+        "elogio": 15,
+        "pct_dor": 6,
+        "amostra_curta": false,
+        "exemplos": [
+          {
+            "nota": 1,
+            "data": "2026-02-28",
+            "texto": "Falta de respeito com o cliente mais de uma hora de atraso para um simples consulta falta de organização e profissionalismo!"
+          }
+        ],
+        "frase": "16 avaliações falam deste momento, 1 com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "avaliacao",
+        "rotulo": "Avaliação",
+        "o_que_e": "a primeira consulta",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 2,
+        "dor": 0,
+        "elogio": 2,
+        "pct_dor": 0,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "2 avaliações falam deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "contratacao",
+        "rotulo": "Contratação",
+        "o_que_e": "preço, contrato e entrada",
+        "quem_resolve": "franqueado",
+        "medido": true,
+        "avaliacoes": 1,
+        "dor": 0,
+        "elogio": 1,
+        "pct_dor": 0,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "clinico",
+        "rotulo": "Atendimento clínico",
+        "o_que_e": "a cadeira",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 10,
+        "dor": 0,
+        "elogio": 9,
+        "pct_dor": 0,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": "10 avaliações falam deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "manutencao",
+        "rotulo": "Manutenção",
+        "o_que_e": "as voltas de cada mês",
+        "quem_resolve": "clínica",
+        "medido": true,
+        "avaliacoes": 1,
+        "dor": 0,
+        "elogio": 1,
+        "pct_dor": 0,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "1 avaliação fala deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "cobranca",
+        "rotulo": "Cobrança",
+        "o_que_e": "mensalidade e multa",
+        "quem_resolve": "franqueado",
+        "medido": false,
+        "avaliacoes": 0,
+        "dor": 0,
+        "elogio": 0,
+        "pct_dor": null,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": null,
+        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+      },
+      {
+        "estagio": "suporte",
+        "rotulo": "Suporte",
+        "o_que_e": "quando algo dá errado",
+        "quem_resolve": "franqueado",
+        "medido": true,
+        "avaliacoes": 2,
+        "dor": 0,
+        "elogio": 2,
+        "pct_dor": 0,
+        "amostra_curta": true,
+        "exemplos": [],
+        "frase": "2 avaliações falam deste momento, nenhuma com nota baixa",
+        "porque_vazio": null
+      },
+      {
+        "estagio": "contencao",
+        "rotulo": "Fim e contenção",
+        "o_que_e": "alta e depois dela",
+        "quem_resolve": "clínica",
+        "medido": false,
+        "avaliacoes": 0,
+        "dor": 0,
+        "elogio": 0,
+        "pct_dor": null,
+        "amostra_curta": false,
+        "exemplos": [],
+        "frase": null,
+        "porque_vazio": "nenhuma avaliação desta loja fala deste momento — é ausência de medição, não ausência de problema"
+      }
+    ],
+    "manchete": "Nenhum momento da jornada concentra dor com amostra suficiente para virar manchete.",
+    "quem_resolve": null,
+    "e_clinico": null,
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 88,
+      "janela_dias": null,
+      "medicoes": null,
+      "fonte": "dados/serie/reviews.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "mais avaliações com texto nesta loja",
+      "procedencia": "medido em 88 avaliações"
+    }
+  },
+  "meu_territorio": {
+    "local_id": "caxias_do_su_orthodontic_centro",
+    "unidade": "OrthoDontic · Av. Júlio de Castilhos",
+    "medido": true,
+    "location": {
+      "lat": -29.1680952,
+      "lng": -51.183084099999995
+    },
+    "bairro": "Centro",
+    "clinica_mais_proxima": {
+      "nome": "Center Ortodontia",
+      "km": 0.01,
+      "avaliacoes": 21,
+      "nota": 5,
+      "bairro": "Centro"
+    },
+    "aparelho_mais_proximo": {
+      "nome": "CaxiasMed Clínica Médica e Odontológica",
+      "km": 0.16,
+      "avaliacoes": 794,
+      "nota": 4.5,
+      "bairro": "Centro"
+    },
+    "unidade_da_rede_mais_proxima": {
+      "nome": "OrthoDontic",
+      "km": 0.26,
+      "avaliacoes": 362,
+      "nota": 4.7,
+      "bairro": "Centro"
+    },
+    "raios": {
+      "1km": {
+        "clinicas": 87,
+        "de_aparelho": 9,
+        "da_rede": 1
+      },
+      "2km": {
+        "clinicas": 97,
+        "de_aparelho": 11,
+        "da_rede": 1
+      },
+      "5km": {
+        "clinicas": 111,
+        "de_aparelho": 13,
+        "da_rede": 2
+      }
+    },
+    "frase_fato": "a clínica mais próxima está a 0.01 km",
+    "proximidade_entre_unidades": {
+      "km": 0.26,
+      "unidade": "OrthoDontic",
+      "leitura": "alta proximidade entre unidades da rede — vale entender se atendem públicos diferentes ou disputam o mesmo",
+      "natureza": "inferencia"
+    },
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "media",
+      "medido": true,
+      "amostra": 114,
+      "janela_dias": null,
+      "medicoes": 1,
+      "fonte": "dados/serie/categoria.jsonl (location da varredura)",
+      "a_favor": [],
+      "contra": [
+        "distância é linha reta, não tempo de deslocamento"
+      ],
+      "o_que_aumentaria": "origem real dos pacientes, que é dado interno e este produto não tem",
+      "procedencia": "medido em 114 clínicas com coordenada, 1 medição"
+    }
+  },
+  "movimentos": {
+    "eventos": [],
+    "e_da_cidade": true,
+    "resumo": {
+      "praca_id": "caxias_do_sul",
+      "rotulo": "RS · Caxias do Sul",
+      "eventos": 0,
+      "estado": "linha_de_base",
+      "porque": "esta praça tem 1 medição da categoria — movimento só existe com duas observações comparáveis"
+    }
+  },
+  "execucao": {
+    "local_id": "caxias_do_su_orthodontic_centro",
+    "praca_id": "caxias_do_sul",
+    "rotulo": "RS · Caxias do Sul",
+    "unidade": "OrthoDontic · Av. Júlio de Castilhos",
+    "itens": [
+      {
+        "problema": "Esta loja **não aparece em nenhuma** das 167 buscas que testamos na cidade.",
+        "e_marketing": true,
+        "execucao": {
+          "necessaria": true,
+          "tipo": "seo_local",
+          "especialidade": "marketing local e Google Business",
+          "problema": "a unidade aparece em 0 buscas de 167 testadas na própria cidade",
+          "objetivo": "ser encontrada nas frases que a cidade digita para procurar aparelho",
+          "evidencias": [
+            "aparece em 0 de 167 buscas"
+          ],
+          "nao_fazer": [
+            "não comprar mídia antes de a ficha estar correta — pagar para levar gente a um cadastro errado é pior do que não pagar",
+            "não prometer posição: o Google não vende ordem no mapa"
+          ],
+          "entregavel_sugerido": "ficha do Google revisada — categoria primária, endereço, horário, fotos e serviços — e as frases da cidade cobertas na descrição e nas publicações",
+          "prazo": "30 dias",
+          "metrica_de_validacao": "refazer EXATAMENTE as mesmas buscas desta medição e comparar quantas passam a mostrar a unidade",
+          "recoletar_em_dias": 30
+        },
+        "confianca": {
+          "natureza": "recomendacao",
+          "confianca": "baixa",
+          "medido": true,
+          "amostra": 167,
+          "janela_dias": null,
+          "medicoes": 1,
+          "fonte": "dados/portal/presenca_por_loja.json",
+          "a_favor": [
+            "Esta loja **não aparece em nenhuma** das 167 buscas que testamos na cidade."
+          ],
+          "contra": [
+            "uma medição só — a segunda dirá se é estrutural ou momento"
+          ],
+          "o_que_aumentaria": "repetir a varredura de buscas noutra data",
+          "procedencia": "medido em 167 buscas testadas, 1 medição"
+        }
+      }
+    ],
+    "de_marketing": 1,
+    "de_operacao": 0
+  },
+  "meu_bairro": {
+    "bairro": "Centro",
+    "clinicas": 51,
+    "vizinhos_fortes": [
+      {
+        "nome": "Revitalle Implantes | Dentista Caxias do Sul | Clínica Odontológica | Invisalign",
+        "nota": 5,
+        "avaliacoes": 1887
+      },
+      {
+        "nome": "OrtoClínica",
+        "nota": 4.9,
+        "avaliacoes": 1423
+      },
+      {
+        "nome": "CaxiasMed Clínica Médica e Odontológica",
+        "nota": 4.5,
+        "avaliacoes": 794
+      }
+    ],
+    "frase": "51 clínicas varridas, e a unidade da rede está aqui",
+    "e_da_cidade": false
+  },
+  "acoes": {
+    "arcos": [
+      {
+        "arco_id": "caxias_do_su_orthodontic_centro|parada",
+        "local_id": "caxias_do_su_orthodontic_centro",
+        "praca_id": "caxias_do_sul",
+        "gatilho": "parada",
+        "problema": "apenas 2 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 7.7 avaliações/mês",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": "ritmo",
+        "antes": 7.7,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": 7.7,
+        "medido_em": "2026-08-13",
+        "veredito": "cedo_demais",
+        "dias": 0
+      },
+      {
+        "arco_id": "caxias_do_su_orthodontic_centro|posicao",
+        "local_id": "caxias_do_su_orthodontic_centro",
+        "praca_id": "caxias_do_sul",
+        "gatilho": "posicao",
+        "problema": "15º lugar de 17 clínicas medidas na praça",
+        "evidencia": "dados/serie/fila_historico.jsonl",
+        "aberto_em": "2026-08-13",
+        "metrica": "posicao",
+        "antes": 15.0,
+        "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
+        "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
+        "execucao": "não sabemos — o portal não fala com a unidade",
+        "depois": 15.0,
+        "medido_em": "2026-08-13",
+        "veredito": "cedo_demais",
+        "dias": 0
+      }
+    ],
+    "total": 2,
+    "aviso": "O livro nasceu hoje. Nenhum arco completou 21 dias, então ainda não há veredito para ninguém — a primeira resposta vem na coleta seguinte."
+  },
+  "oferta_da_cidade": {
+    "praca_id": "caxias_do_sul",
+    "rotulo": "RS · Caxias do Sul",
+    "anuncios_de_aparelho": 34,
+    "anunciantes": 16,
+    "fora_do_produto": 129,
+    "porque_fora": "falam de implante, clareamento, lente, harmonização — e um advogado tributarista. Outro tratamento, outro ticket, outra decisão.",
+    "sem_texto": 3,
+    "amostra_curta": false,
+    "tese": "A disputa desta cidade é por alinhador invisível — 12 dos 34 anúncios de aparelho medidos falam disso, seguido de avaliação grátis.",
+    "posicao_vaga": "Ninguém está falando de sem entrada — tira a barreira do primeiro pagamento — ataca quem não tem reserva.",
+    "eixos": [
+      {
+        "eixo": "alinhador",
+        "rotulo": "Alinhador invisível",
+        "o_que_significa": "produto de ticket alto e público adulto",
+        "anuncios": 12,
+        "pct": 35,
+        "frase": "12 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "avaliacao_gratis",
+        "rotulo": "Avaliação grátis",
+        "o_que_significa": "compra a visita, não a venda — é isca de agenda",
+        "anuncios": 11,
+        "pct": 32,
+        "frase": "11 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "preco",
+        "rotulo": "Preço na frente",
+        "o_que_significa": "a cidade disputa por número; entrar aqui é entrar na briga mais cara",
+        "anuncios": 10,
+        "pct": 29,
+        "frase": "10 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "autoridade",
+        "rotulo": "Autoridade técnica",
+        "o_que_significa": "vende o profissional — difícil de copiar, caro de construir",
+        "anuncios": 10,
+        "pct": 29,
+        "frase": "10 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "parcelamento",
+        "rotulo": "Parcelamento",
+        "o_que_significa": "vende a mensalidade, não o tratamento",
+        "anuncios": 4,
+        "pct": 12,
+        "frase": "4 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "estetico",
+        "rotulo": "Aparelho estético",
+        "o_que_significa": "vende discrição — público que trabalha de frente",
+        "anuncios": 4,
+        "pct": 12,
+        "frase": "4 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "rapidez",
+        "rotulo": "Rapidez do resultado",
+        "o_que_significa": "vende tempo, e tempo é a objeção número um do aparelho",
+        "anuncios": 4,
+        "pct": 12,
+        "frase": "4 anúncios de aparelho falam disso"
+      },
+      {
+        "eixo": "urgencia",
+        "rotulo": "Urgência e escassez",
+        "o_que_significa": "empurra a decisão para hoje — sinal de campanha de rajada",
+        "anuncios": 1,
+        "pct": 3,
+        "frase": "1 anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "sem_entrada",
+        "rotulo": "Sem entrada",
+        "o_que_significa": "tira a barreira do primeiro pagamento — ataca quem não tem reserva",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "publico_adulto",
+        "rotulo": "Falado para adulto",
+        "o_que_significa": "disputa o adulto que adiou o tratamento",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "publico_infantil",
+        "rotulo": "Falado para criança e adolescente",
+        "o_que_significa": "disputa a decisão da mãe, não a do paciente",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      },
+      {
+        "eixo": "prova_social",
+        "rotulo": "Prova social",
+        "o_que_significa": "vende confiança em vez de preço",
+        "anuncios": 0,
+        "pct": 0,
+        "frase": "nenhum anúncio de aparelho fala disso"
+      }
+    ],
+    "por_anunciante": [
+      {
+        "anunciante": "Dra. Taise Ceron",
+        "eixos": [
+          "avaliacao_gratis",
+          "alinhador",
+          "autoridade"
+        ]
+      },
+      {
+        "anunciante": "Centro Odontológico Caxias - RS",
+        "eixos": [
+          "preco",
+          "parcelamento",
+          "avaliacao_gratis"
+        ]
+      },
+      {
+        "anunciante": "OdontoPlus Caxias",
+        "eixos": [
+          "alinhador",
+          "autoridade",
+          "estetico"
+        ]
+      },
+      {
+        "anunciante": "OrthoDontic",
+        "eixos": [
+          "preco"
+        ]
+      },
+      {
+        "anunciante": "Le Michelin",
+        "eixos": [
+          "alinhador",
+          "estetico"
+        ]
+      },
+      {
+        "anunciante": "Déborah Júlia Odontologia Integrada",
+        "eixos": [
+          "avaliacao_gratis",
+          "alinhador"
+        ]
+      },
+      {
+        "anunciante": "Orto.com Odontologia",
+        "eixos": [
+          "avaliacao_gratis",
+          "alinhador"
+        ]
+      },
+      {
+        "anunciante": "DS Odontologia",
+        "eixos": [
+          "avaliacao_gratis"
+        ]
+      }
+    ],
+    "e_da_cidade": true
+  },
+  "plano": "planos/caxias_do_su_orthodontic_centro",
+  "anuncios_da_cidade": {
+    "e_da_cidade": true,
+    "rotulo": "RS · Caxias do Sul",
+    "manchete": "16 anunciantes disputam aparelho em RS · Caxias do Sul, e a rede é 1 deles.",
+    "anuncios_ativos": 34,
+    "anunciantes_total": 16,
+    "somos_um_deles": true,
+    "anunciantes": [
+      {
+        "nome": "OrthoDontic",
+        "nosso": true,
+        "anuncios": 7,
+        "paginas": [
+          "1071168069406584",
+          "2341622319205801"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Chegou a hora de alinhar e clarear o seu sorriso! ✨\n \nExclusivo para Caxias do Sul, a Orthodontic está com uma oferta imbatível: você paga somente R$ 99,90 por mês e já recebe o aparelho, o clareamento e a documentação inclusos! Sem surpresas, sem custos escondidos. \n\nVenha para …",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Centro Odontológico Caxias - RS",
+        "nosso": false,
+        "anuncios": 4,
+        "paginas": [
+          "156462124220196"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "🦷 APARELHO DENTAL METÁLICO COM MENSALIDADE DE R$79\n\nComece seu tratamento ortodôntico com uma condição facilitada e vários benefícios inclusos.\n\n✅ Colagem do aparelho grátis\n✅ Consulta grátis\n✅ Documentação ortodôntica grátis\n✅ Clareamento grátis ao final do tratamento\n✅ Mensalid…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dra. Taise Ceron",
+        "nosso": false,
+        "anuncios": 4,
+        "paginas": [
+          "103340602655147"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Com os aparelhos invisíveis, seu tratamento ortodôntico será\n\n✅ Mais prático \n✅ E imperceptível! \n\n➡ O ALINHADOR são feitos em material transparente, o que permite mínima alteração no visual, além de proporcionar maior praticidade de limpeza, por se tratar de um aparelho que pode…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "OdontoPlus Caxias",
+        "nosso": false,
+        "anuncios": 3,
+        "paginas": [
+          "281495245304503"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "😍 ALINHADORES INVISÍVEIS: APRIMORANDO SORRISOS COM MÁXIMA DISCRIÇÃO!! 😉😃\n\n➡ Os alinhadores invisíveis são um verdadeiro marco para a odontologia moderna, pois:\n\n✅ São transparentes e permitem o tratamento ortodôntico mais discreto possível!! 🤩🤩\n\n✅ Isso significa que pessoas do co…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Center Ortodontia",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "281029405613992"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Há 10 anos, a Center Ortodontia nasceu de um sonho: começar uma nova história em Caxias do Sul e transformar vidas através do sorriso.\n\nO que começou com coragem, dedicação e muito amor pela odontologia, foi crescendo junto com cada paciente que passou por aqui. Com o tempo, vier…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "IOA  Caxias do Sul",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "430409503711773"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "⚠️ATENÇÃO! Estamos selecionando pacientes modelo para a realização de tratamentos na área de ORTODONTIA.\n\nSe ficou interessado, venha para o IOA Caxias do Sul e dê o primeiro passo para transformar sua vida!\n\n👉Toque no botão abaixo para saber mais!\n\n📍IOA Caxias do Sul - Rua Olavo…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Le Michelin",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "951818148296672"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "A Le Michelin reúne em um só lugar diferentes especialidades odontológicas para oferecer um atendimento completo, integrado e planejado.\n\nAlém da harmonização facial e das lentes de contato em porcelana, contamos com profissionais especializados em diversas áreas da odontologia, …",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Odonto Excellence Caxias do Sul - Bela Vista",
+        "nosso": false,
+        "anuncios": 2,
+        "paginas": [
+          "102704552531909"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Imagina você que precisa ir ao dentista, encontrar uma clínica onde você pode escolher o valor que vai pagar por mês, o melhor dia para o seu pagamento, ganhar descontos exclusivos e tudo isso com um carnê próprio, SEM precisar de cartão?\n\nAqui você encontra tudo isso e muito mai…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "DS Odontologia",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "105835831105931"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "✨ Um novo capítulo da nossa história começa aqui!\n\nÉ com muita alegria que apresentamos o nosso novo espaço: um ambiente planejado nos mínimos detalhes para oferecer ainda mais conforto, tecnologia e acolhimento a cada paciente.\n\nCada escolha foi feita pensando em proporcionar um…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Dental Arte",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "712604138919551"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "APARELHO NO CENTRO DE CAXIAS DO SUL 🤩\n\nEstá esperando o que para conquistar aquele sorriso dos sonhos? 😍\n\nAgende já a sua avaliação. Conquiste um sorriso 100% alinhado com a Dental Arte. 😁\n\n✅ Dentistas Especialistas\n✅ Conforto e Segurança\n✅ Atendimento aos Sábados\n\nAgende agora m…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Déborah Júlia Odontologia Integrada",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "808685695654505"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Na DJ Odontologia Integrada, cuidamos do seu sorriso com carinho, tecnologia e profissionais altamente qualificados. Nosso objetivo é oferecer um atendimento humanizado, unindo saúde, estética e bem-estar.\n🦷 Serviços oferecidos:\n✔️ Limpeza e prevenção\n✔️ Clareamento dental\n✔️ Imp…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Orto Implante",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "592334857640121"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "A Clínica Orto Implante atende diversas especialidade odontológicas: Implantes, Ortodontia, Harmon",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Orto.com Odontologia",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "250351965105562"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "⚠️Moradores de Medianeira e Região, nosso foco é você!\n \nSorria sem metal!\n\nCom Invisalign, você alinha seus dentes de forma discreta, confortável e muito mais rápida do que com aparelhos tradicionais. \n\nNa Orto.com Odontologia, em Medianeira-PR, oferecemos o que há de mais moder…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "OrtoDoctor Marechal Cândido Rondon",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "587096091155487"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Tá pensando em colocar aparelho esse mês?�Calma e escuta essa novidade.\nComeçou a Semana do Aparelho na OrtoDoctor.\n\nVocê vem pra avaliação e já sai com tudo pronto pra iniciar o seu tratamento.\nTudo isso com a segurança de uma clínica de alta qualidade e, claro, aquele valor que…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "Ortoestética Tangará da Serra",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "100196879494605"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Não deixe que dentes tortos ou desalinhados tirem seu sorriso! Com a ajuda do Aparelho Ortodôntico, podemos corrigir essas imperfeições e dar a você um sorriso radiante e confiante. \n\n🎯 Descubra como podemos transformar seu sorriso, clicando no botão abaixo para agendar sua consu…",
+        "de_outra_unidade": null
+      },
+      {
+        "nome": "PJ OrtoImplantes",
+        "nosso": false,
+        "anuncios": 1,
+        "paginas": [
+          "1715854228635945"
+        ],
+        "dias_no_ar_maior": null,
+        "plataformas": [
+          "Meta"
+        ],
+        "desde": "2026-08-13",
+        "exemplo": "Cansado de ter vergonha de sorrir ou de problemas ao mastigar? Na Orto Implantes, transformamos a saúde bucal em qualidade de vida!\n\nSomos especialistas em Implantes Dentários e Ortodontia em Conde e região. Com 12 anos de experiência e um time de excelência, oferecemos tratament…",
+        "de_outra_unidade": null
+      }
+    ],
+    "fora_do_produto": 132,
+    "fora_do_produto_porque": "anúncio ativo na cidade que não fala de aparelho, ortodontia, bráquete, alinhador nem contenção — outro produto, outro paciente"
+  },
+  "eventos": [
+    {
+      "data": "2026-08-13",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: O contador de avaliações parou",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-13",
+      "tipo": "alerta",
+      "quem": "fila",
+      "texto": "alerta aberto: Está na metade de baixo da própria praça",
+      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+      "data": "2026-08-06",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 1★: “Muita demora  no atendimento ,mais de uma hora esperando sempre, sendo que é horário e dat…” · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+      "data": "2026-07-14",
+      "tipo": "avaliacao_negativa",
+      "quem": "paciente",
+      "texto": "avaliação de 3★: “Tirando o fato da demora mesmo com horário agendado, e o fato de que o meu dentista nunca …” · SEM RESPOSTA",
+      "fonte": "dados/serie/reviews.jsonl"
+    }
+  ]
+}

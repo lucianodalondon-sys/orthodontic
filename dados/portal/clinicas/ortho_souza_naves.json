@@ -2,7 +2,7 @@
   "local_id": "ortho_souza_naves",
   "praca_id": "londrina",
   "apresentacao": {
-    "unidade": "OrthoDontic Souza Naves",
+    "unidade": "OrthoDontic · Souza Naves",
     "cidade": "PR · Londrina",
     "endereco": "R. Sen. Souza Naves, 1370 - Ipiranga, Londrina - PR, 86010-160",
     "desde": "15/jul",
@@ -12,13 +12,13 @@
     "lojas_irmas": [
       {
         "local_id": "ortho_centro_ldn",
-        "unidade": "OrthoDontic Centro"
+        "unidade": "OrthoDontic · Centro"
       }
     ],
-    "frase": "OrthoDontic Souza Naves é escutada desde 15/jul, em 4 medições, e divide Londrina com mais 1 loja da rede."
+    "frase": "OrthoDontic · Souza Naves é escutada desde 15/jul, em 4 medições, e divide Londrina com mais 1 loja da rede."
   },
   "rotulo": "PR · Londrina",
-  "unidade": "OrthoDontic Souza Naves",
+  "unidade": "OrthoDontic · Souza Naves",
   "cabecalho": {
     "nota": 4.6,
     "avaliacoes": 568,
@@ -550,6 +550,101 @@
       "contra": [],
       "o_que_aumentaria": "repetir a varredura de buscas noutra data",
       "procedencia": "medido em 176 buscas testadas, 1 medição"
+    }
+  },
+  "perto_da_clinica": {
+    "local_id": "ortho_souza_naves",
+    "praca_id": "londrina",
+    "rotulo": "PR · Londrina",
+    "unidade": "OrthoDontic Souza Naves",
+    "medido_em": "2026-08-13",
+    "raio_m": 3000,
+    "de": 5,
+    "aparece_em": 4,
+    "em_primeiro": 2,
+    "melhor_posicao": 1,
+    "invisivel_perto": false,
+    "frase": "aparece em 4 de 5 buscas feitas a partir do próprio endereço, em 2 vezes em 1º lugar",
+    "buscas": [
+      {
+        "frase": "aparelho ortodôntico em londrina",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 569,
+        "topo_metros": 0
+      },
+      {
+        "frase": "aparelho ortodôntico londrina",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 569,
+        "topo_metros": 0
+      },
+      {
+        "frase": "ortodontista infantil londrina",
+        "intencao": "CRIANÇA",
+        "posicao": null,
+        "topo": "Nakui Odontologia - Odontopediatra e Ortodontista Infantil em Londrina",
+        "topo_avaliacoes": 27,
+        "topo_metros": 439
+      },
+      {
+        "frase": "ortodontista londrina",
+        "intencao": "GENÉRICO",
+        "posicao": 2,
+        "topo": "Dr. Paulo Rossato",
+        "topo_avaliacoes": 39,
+        "topo_metros": 64
+      },
+      {
+        "frase": "vaga ortodontista londrina",
+        "intencao": "RUÍDO",
+        "posicao": 2,
+        "topo": "Dentista 24 horas Londrina - Dr. Alessandro Morais",
+        "topo_avaliacoes": 456,
+        "topo_metros": 2219
+      }
+    ],
+    "quem_aparece_na_frente": [
+      {
+        "nome": "Nakui Odontologia - Odontopediatra e Ortodontista Infantil em Londrina",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Dra. Suéllen Priscilla - Odontopediatria e Ortodontia",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Dra. Rafaella Sidronio Odontopediatria",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Dra. Patrícia Reis | Dentista para Crianças e Ortodontia Invisalign em Londrina",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Dra Ana Lúcia Morais (Odontopediatria)",
+        "vezes_na_frente": 1
+      }
+    ],
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 5,
+      "janela_dias": 0,
+      "medicoes": 1,
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
+    },
+    "na_cidade": {
+      "aparece_em": 5,
+      "de": 176
     }
   },
   "jornada": {

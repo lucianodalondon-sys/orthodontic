@@ -104,10 +104,13 @@ A ponta barata roda **toda semana** e é o que alimenta "O que mudou":
 ```bash
 python3 coleta/coletores/unidades_da_rede.py      # a fonte madrinha, primeiro
 python3 coleta/coletores/ponta.py --salvar        # 229 fichas, API do Google
+python3 scripts/dedup_serie.py --salvar            # antes de contar qualquer coisa
 python3 scripts/o_que_mudou.py --salvar
 python3 scripts/fila.py --salvar                  # grava o histórico → status
 python3 scripts/timeline_da_loja.py --salvar      # a vida de cada loja
-python3 scripts/onde_cada_loja_aparece.py --salvar        # presença POR LOJA
+python3 scripts/onde_cada_loja_aparece.py --salvar        # presença na CIDADE
+python3 scripts/aparece_perto_da_loja.py --salvar         # presença PERTO da loja
+python3 scripts/nome_da_loja.py --salvar          # nome próprio por unidade
 python3 scripts/plano_do_franqueado.py --todas --salvar --md   # 1 por local_id
 python3 scripts/quem_anuncia_aparelho.py --salvar # quem compra mídia de aparelho
 python3 scripts/jornada_do_paciente.py --salvar   # onde a loja dói
@@ -241,6 +244,49 @@ padrões → caixa → padrao → build. Períodos curtos são declarados na tel
   todos de SC, e foi Mafra que derrubou a tese nacional de "dezembro e
   janeiro são pico" — lá é vale. Enquanto não houver coleta por cidade, cada
   praça publica `sazonalidade_estado` com o motivo. Herdar curva é inventar.
+- **DOIS COLETORES IGUAIS RODANDO JUNTOS GRAVAM TUDO EM DOBRO — e a régua
+  passa a ser cumprida por duplicata.** Florianópolis ficou com 18 linhas
+  de canal onde existem 10, porque duas execuções de `canais.py`
+  coincidiram. `dedup_serie.py` remove só (praça + data + entidade)
+  repetida. **E a chave de dedup se confere ANTES de apagar:** a primeira
+  versão dele procurou `anuncio_id`, `id`, `pagina` e `texto` em
+  `anuncios.jsonl` — nenhum desses campos existe lá (é `chave` e `ad_id`)
+  — então a chave inteira virou `None` e 610 anúncios DIFERENTES entraram
+  como repetidos, 36 do mesmo anunciante de uma vez. Campo de chave que
+  não existe na série agora faz o script recusar-se a mexer.
+- **A LEITURA DE CIDADE MENTE EM METRÓPOLE.** `onde_cada_loja_aparece` manda
+  a frase com o nome do município e vê quem o mapa devolve. Funciona em
+  Mafra. Em São Paulo devolveu "as quatro unidades aparecem em 0 de 193
+  buscas" — verdadeiro, e a conclusão que ele sugere é falsa: ninguém
+  disputa "dentista São Paulo", o paciente busca de onde está. Medindo com
+  `locationBias` circular no endereço de cada loja
+  (`coleta/coletores/perto_da_loja.py` → `scripts/aparece_perto_da_loja.py`),
+  a mesma São Paulo deu **10 de 20**, com uma unidade em 1º nas cinco frases
+  e outra fora em quatro — diagnósticos opostos para lojas da mesma cidade.
+  As duas leituras convivem na tela e cada uma diz o que mede. O raio NÃO é
+  área de captação, e ficar atrás de um vizinho NÃO é perder paciente para
+  ele.
+- **A coordenada de toda clínica varrida já estava paga e no disco.** O
+  `FieldMask` pedia `places.location` desde a primeira coleta, o bruto
+  guardou tudo e `categoria.jsonl` gravava zero — o campo era descartado na
+  escrita da série. `backfill_coordenadas.py` recuperou 3.304 sem uma única
+  chamada nova. Antes de coletar qualquer coisa, procure no bruto.
+- **TODA UNIDADE SE CHAMA "ORTHODONTIC" — e isso quebra a TELA, não só o
+  id.** Resolver o `local_id` não resolveu a leitura: as quatro unidades de
+  São Paulo apareciam como quatro linhas idênticas ("SP · São Paulo ·
+  OrthoDontic") e o franqueado da Lapa não tinha como achar a dele.
+  `nome_da_loja.py` desambigua por bairro, depois rua, depois rua+número —
+  **e cada loja sobe só o degrau que precisa**: em Caxias, duas estão no
+  Centro e uma no Kayser; exigir que o degrau separasse as três de uma vez
+  empurrava a do Kayser para "Av. Bom Pastor". Em Porto Alegre e Curitiba
+  quatro unidades dividem o mesmo bairro, então lá o bairro nunca basta.
+- **Pasta escrita e nunca zerada guarda fantasma quando um id é
+  renomeado.** Depois de separar as lojas que dividiam `orthodontic`,
+  `dados/portal/clinicas/` ficou com `orthodontic.json` e
+  `orthodontic_centro.json` — páginas de clínica que não existem em
+  identidade nenhuma. O build agora remove o que não está em nenhuma
+  identidade, e declara o que removeu. Zerar a pasta continua proibido:
+  era isso que fazia doze praças sumirem sem erro.
 - **Cidade de oportunidade também tem leitura escrita.** As seis do Radar
   abriam com vinte campos de número e nenhuma manchete, e o `padrao.py` dizia
   "completa" porque a régua só cobrava tese de praça com unidade. Etapa 15.5,

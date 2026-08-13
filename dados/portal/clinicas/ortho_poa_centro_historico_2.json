@@ -2,7 +2,7 @@
   "local_id": "ortho_poa_centro_historico_2",
   "praca_id": "porto_alegre",
   "apresentacao": {
-    "unidade": "OrthoDontic",
+    "unidade": "OrthoDontic · R. Vig. José Inácio",
     "cidade": "RS · Porto Alegre",
     "endereco": "R. Vig. José Inácio, 399 - Sl 506 - Centro Histórico, Porto Alegre - RS, 90020-110",
     "desde": null,
@@ -12,33 +12,33 @@
     "lojas_irmas": [
       {
         "local_id": "ortho_poa_centro_historico",
-        "unidade": "OrthoDontic Centro Histórico"
+        "unidade": "OrthoDontic · Av. Borges de Medeiros"
       },
       {
         "local_id": "ortho_poa_cristo_redentor",
-        "unidade": "OrthoDontic Cristo Redentor"
+        "unidade": "OrthoDontic · Cristo Redentor"
       },
       {
         "local_id": "ortho_poa_cavalhada",
-        "unidade": "OrthoDontic Cavalhada"
+        "unidade": "OrthoDontic · Cavalhada"
       },
       {
         "local_id": "ortho_poa_centro_historico_3",
-        "unidade": "OrthoDontic Centro Histórico"
+        "unidade": "OrthoDontic · R. dos Andradas"
       },
       {
         "local_id": "ortho_poa_centro_historico_4",
-        "unidade": "OrthoDontic Centro Histórico"
+        "unidade": "OrthoDontic · R. Gen. Vitorino"
       },
       {
         "local_id": "ortho_poa_rio_branco",
-        "unidade": "OrthoDontic Rio Branco"
+        "unidade": "OrthoDontic · Rio Branco"
       }
     ],
     "frase": null
   },
   "rotulo": "RS · Porto Alegre",
-  "unidade": "OrthoDontic",
+  "unidade": "OrthoDontic · R. Vig. José Inácio",
   "cabecalho": {
     "nota": 4.9,
     "avaliacoes": 209,
@@ -121,9 +121,100 @@
       "procedencia": "medido em 196 buscas testadas, 1 medição"
     }
   },
+  "perto_da_clinica": {
+    "local_id": "ortho_poa_centro_historico_2",
+    "praca_id": "porto_alegre",
+    "rotulo": "RS · Porto Alegre",
+    "unidade": "OrthoDontic Centro Histórico · R. Vig. José Inácio",
+    "medido_em": "2026-08-13",
+    "raio_m": 3000,
+    "de": 5,
+    "aparece_em": 4,
+    "em_primeiro": 0,
+    "melhor_posicao": 2,
+    "invisivel_perto": false,
+    "frase": "aparece em 4 de 5 buscas feitas a partir do próprio endereço, melhor posição: 2º",
+    "buscas": [
+      {
+        "frase": "aparelho ortodôntico em porto alegre",
+        "intencao": "GENÉRICO",
+        "posicao": 2,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 433,
+        "topo_metros": 186
+      },
+      {
+        "frase": "aparelho ortodôntico no centro de porto alegre",
+        "intencao": "BAIRRO",
+        "posicao": 3,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 433,
+        "topo_metros": 186
+      },
+      {
+        "frase": "aparelho ortodôntico porto alegre",
+        "intencao": "GENÉRICO",
+        "posicao": 2,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 433,
+        "topo_metros": 186
+      },
+      {
+        "frase": "aparelho ortodôntico porto alegre preço",
+        "intencao": "PREÇO",
+        "posicao": 5,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 433,
+        "topo_metros": 186
+      },
+      {
+        "frase": "orthopride aparelho ortodôntico em porto alegre clareamento dental fotos",
+        "intencao": "BAIRRO",
+        "posicao": null,
+        "topo": "Orthopride | Aparelho Ortodôntico em Porto Alegre | Clareamento Dental",
+        "topo_avaliacoes": 32,
+        "topo_metros": 286
+      }
+    ],
+    "quem_aparece_na_frente": [
+      {
+        "nome": "OrthoDontic",
+        "vezes_na_frente": 5
+      },
+      {
+        "nome": "OrthoDontic - Clínica Odontológica Centro Porto Alegre - Tratamento de Canal - Periodontia - Restauração Dental - Prótese - Clareamento e Limpeza Dental - Aparelho Ortodôntico Metálico e Estético - Emergência - Extração do Siso - Faceta de Porcelana",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "Sorridents Porto Alegre Clinica Odontológica / Dentista",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Orthopride | Aparelho Ortodôntico em Porto Alegre | Clareamento Dental",
+        "vezes_na_frente": 1
+      }
+    ],
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 5,
+      "janela_dias": 0,
+      "medicoes": 1,
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
+    },
+    "na_cidade": {
+      "aparece_em": 5,
+      "de": 196
+    }
+  },
   "jornada": {
     "local_id": "ortho_poa_centro_historico_2",
-    "unidade": "OrthoDontic Centro Histórico",
+    "unidade": "OrthoDontic Centro Histórico · R. Vig. José Inácio",
     "rotulo": "RS · Porto Alegre",
     "com_texto": 106,
     "sem_estagio": 42,
@@ -314,7 +405,7 @@
   },
   "meu_territorio": {
     "local_id": "ortho_poa_centro_historico_2",
-    "unidade": "OrthoDontic Centro Histórico",
+    "unidade": "OrthoDontic Centro Histórico · R. Vig. José Inácio",
     "medido": true,
     "location": {
       "lat": -30.029240899999998,
@@ -397,7 +488,7 @@
     "local_id": "ortho_poa_centro_historico_2",
     "praca_id": "porto_alegre",
     "rotulo": "RS · Porto Alegre",
-    "unidade": "OrthoDontic Centro Histórico",
+    "unidade": "OrthoDontic Centro Histórico · R. Vig. José Inácio",
     "itens": [
       {
         "problema": "Esta loja aparece em **5 das 196 buscas** que testamos na cidade.",

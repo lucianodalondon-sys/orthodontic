@@ -118,6 +118,18 @@ def _e0(b, p):
         return False, f"identidade sem {', '.join(faltam)}"
     if not d.get("rotulo", "").split(" · ")[0] in (d.get("uf") or []):
         return False, f"rótulo '{d['rotulo']}' não começa pela UF da praça"
+    # DUAS LOJAS COM O MESMO NOME NA TELA É O MESMO ERRO DO ID FUNDIDO, um
+    # andar acima. O `local_id` já não colide; a LEITURA colidia: as quatro
+    # unidades de São Paulo apareciam como quatro linhas "SP · São Paulo ·
+    # OrthoDontic", e nenhum dos quatro franqueados achava a sua. O
+    # conserto é `nome_da_loja.py`, e a régua cobra o resultado dele.
+    nomes = [(l.get("unidade") or l.get("nome") or "").strip()
+             for l in d.get("locais", []) if l.get("papel") == "proprio"]
+    rep = sorted({n for n in nomes if nomes.count(n) > 1})
+    if rep:
+        return False, ("duas lojas com o mesmo nome na tela: "
+                       + ", ".join(rep[:3])
+                       + " — python3 scripts/nome_da_loja.py --salvar")
     return True, f"{d['rotulo']} · {len(d.get('locais') or [])} locais"
 
 
@@ -317,9 +329,40 @@ def _e17(b, p):
                   if x.get("local_id") in medidas - set(faltam)
                   and x.get("local_id") in {l["local_id"] for l in lojas}
                   and not x.get("aparece_em")]
-    return True, (conta(len(lojas), "loja") + " medida"
+    return True, (conta(len(lojas), "loja medida", "lojas medidas")
                   + (f" · {conta(len(invisiveis), 'invisível', 'invisíveis')}"
                      if invisiveis else ""))
+
+
+def _e17b(b, p):
+    """E a loja aparece para quem busca PERTO DELA?
+
+    A etapa 17 mede a cidade a partir de um ponto só. Isso responde em
+    Mafra e mente em São Paulo: as quatro unidades da capital apareciam em
+    0 de 193 buscas do município, e em 10 de 20 quando a busca sai da
+    porta de cada uma — uma delas em 1º nas cinco frases. Sem esta etapa,
+    a rede mandaria quatro franqueados fazer a mesma coisa por causa de
+    uma medida que não vale na escala deles.
+    """
+    a = RAIZ/"dados"/"portal"/"perto_da_loja.json"
+    if not a.exists():
+        return False, "nunca medimos a busca a partir do endereço da loja"
+    d = json.loads(a.read_text(encoding="utf-8"))
+    medidas = {x.get("local_id") for x in (d.get("lojas") or [])}
+    ident = json.loads((IDENT/f"{p}.json").read_text(encoding="utf-8"))
+    lojas = [l for l in ident.get("locais", []) if l.get("papel") == "proprio"]
+    faltam = [l["local_id"] for l in lojas if l["local_id"] not in medidas]
+    if faltam:
+        return False, "sem medição em " + ", ".join(faltam)
+    minhas = [x for x in d["lojas"]
+              if x["local_id"] in {l["local_id"] for l in lojas}]
+    # zero aqui é MEDIDO: a busca saiu da porta da clínica e o mapa não a
+    # mostrou. É achado, e dos graves.
+    cegas = [x for x in minhas if x.get("invisivel_perto")]
+    return True, (conta(len(minhas), "loja medida", "lojas medidas")
+                  + " perto de si"
+                  + (f" · {len(cegas)} não aparecem nem no próprio quarteirão"
+                     if cegas else ""))
 
 
 def _e18(b, p):
@@ -501,6 +544,9 @@ ETAPAS = [
      "python3 scripts/plano_do_franqueado.py --praca <praça> --salvar"),
     (17, "Onde cada loja aparece",    "auto",   "rede",        _e17,
      "python3 scripts/onde_cada_loja_aparece.py --salvar"),
+    (17.5, "E perto da própria loja?", "auto",  "rede",        _e17b,
+     "python3 coleta/coletores/perto_da_loja.py --praca <praça> --executar "
+     "--salvar && python3 scripts/aparece_perto_da_loja.py --salvar"),
     (18, "Quem anuncia aparelho",     "auto",   None,          _e18,
      "python3 scripts/quem_anuncia_aparelho.py --salvar"),
     (19, "O histórico, não só o delta", "auto", "rede",        _e19,
@@ -586,7 +632,7 @@ def imprime(res, so_faltas=False, uma=None):
             f = [l for l in r["etapas"] if not l["ok"]]
             if not f:
                 continue
-            print(f"\n  {r['rotulo']}  ({len(f)} etapa(s))")
+            print(f"\n  {r['rotulo']}  ({conta(len(f), 'etapa')})")
             for l in f:
                 print(f"    ✗ {str(l['etapa']):>4s} · {l['nome']}: {l['estado']}")
                 print(f"         {l['comando']}")
@@ -621,7 +667,7 @@ def main():
 
     if a.exigir and any(not r["completa"] for r in res.values()):
         incompletas = [r["praca_id"] for r in res.values() if not r["completa"]]
-        sys.exit(f"\n  ✗ {len(incompletas)} praça(s) fora do padrão: "
+        sys.exit("\n  ✗ " + conta(len(incompletas), "praça") + " fora do padrão: "
                  f"{', '.join(incompletas)}\n")
 
 

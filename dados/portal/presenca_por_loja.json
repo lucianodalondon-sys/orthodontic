@@ -2,11 +2,17 @@
  "o_que_e": "Em quantas buscas da cidade CADA LOJA aparece no mapa do Google — separado por unidade, porque loja não se funde com loja.",
  "como_separa": "O mapa devolve o contador de avaliações de cada resultado, e o contador é a impressão digital da loja. Casando com a ficha, a aparição vira de uma unidade.",
  "o_que_nao_e": "Não é volume de busca. É em quantas das frases testadas a loja apareceu no mapa.",
- "corte": "2026-08-12",
- "lojas_medidas": 32,
- "lojas_invisiveis": 3,
- "manchete": "3 lojas não aparecem em nenhuma busca da própria cidade.",
+ "corte": "2026-08-13",
+ "lojas_medidas": 45,
+ "lojas_invisiveis": 11,
+ "manchete": "11 lojas não aparecem em nenhuma busca da própria cidade.",
  "avisos": [
+  {
+   "praca_id": "caxias_do_sul",
+   "rotulo": "RS · Caxias do Sul",
+   "aparicoes_sem_dono": 9,
+   "por_que": "resultado com nome OrthoDontic cujo contador de avaliações não casa com nenhuma ficha da praça — pode ser loja fora da nossa lista, ou ficha lida em outro dia"
+  },
   {
    "praca_id": "feira",
    "rotulo": "BA · Feira de Santana",
@@ -18,9 +24,43 @@
    "rotulo": "GO · Goiânia",
    "aparicoes_sem_dono": 1,
    "por_que": "resultado com nome OrthoDontic cujo contador de avaliações não casa com nenhuma ficha da praça — pode ser loja fora da nossa lista, ou ficha lida em outro dia"
+  },
+  {
+   "praca_id": "rio_de_janeiro",
+   "rotulo": "RJ · Rio de Janeiro",
+   "aparicoes_sem_dono": 1,
+   "por_que": "resultado com nome OrthoDontic cujo contador de avaliações não casa com nenhuma ficha da praça — pode ser loja fora da nossa lista, ou ficha lida em outro dia"
   }
  ],
  "lojas": [
+  {
+   "local_id": "caxias_do_su_orthodontic",
+   "praca_id": "caxias_do_sul",
+   "rotulo": "RS · Caxias do Sul",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": null,
+   "aparece_em": 0,
+   "de": 167,
+   "pct": 0,
+   "melhor_posicao": null,
+   "frases_onde_aparece": [],
+   "invisivel": true,
+   "frase_do_topo": "Esta loja **não aparece em nenhuma** das 167 buscas que testamos na cidade."
+  },
+  {
+   "local_id": "caxias_do_su_orthodontic_centro",
+   "praca_id": "caxias_do_sul",
+   "rotulo": "RS · Caxias do Sul",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": null,
+   "aparece_em": 0,
+   "de": 167,
+   "pct": 0,
+   "melhor_posicao": null,
+   "frases_onde_aparece": [],
+   "invisivel": true,
+   "frase_do_topo": "Esta loja **não aparece em nenhuma** das 167 buscas que testamos na cidade."
+  },
   {
    "local_id": "ortho_cba_dom_bosco",
    "praca_id": "cuiaba",
@@ -104,6 +144,110 @@
    "frase_do_topo": "Esta loja **não aparece em nenhuma** das 196 buscas que testamos na cidade."
   },
   {
+   "local_id": "rio_de_janei_orthodontic",
+   "praca_id": "rio_de_janeiro",
+   "rotulo": "RJ · Rio de Janeiro",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": null,
+   "aparece_em": 0,
+   "de": 197,
+   "pct": 0,
+   "melhor_posicao": null,
+   "frases_onde_aparece": [],
+   "invisivel": true,
+   "frase_do_topo": "Esta loja **não aparece em nenhuma** das 197 buscas que testamos na cidade."
+  },
+  {
+   "local_id": "sao_paulo_orthodontic",
+   "praca_id": "sao_paulo",
+   "rotulo": "SP · São Paulo",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": 189,
+   "aparece_em": 0,
+   "de": 193,
+   "pct": 0,
+   "melhor_posicao": null,
+   "frases_onde_aparece": [],
+   "invisivel": true,
+   "frase_do_topo": "Esta loja **não aparece em nenhuma** das 193 buscas que testamos na cidade."
+  },
+  {
+   "local_id": "orthodontic_sao_miguel_paulista",
+   "praca_id": "sao_paulo",
+   "rotulo": "SP · São Paulo",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": 161,
+   "aparece_em": 0,
+   "de": 193,
+   "pct": 0,
+   "melhor_posicao": null,
+   "frases_onde_aparece": [],
+   "invisivel": true,
+   "frase_do_topo": "Esta loja **não aparece em nenhuma** das 193 buscas que testamos na cidade."
+  },
+  {
+   "local_id": "orthodontic_tatuape",
+   "praca_id": "sao_paulo",
+   "rotulo": "SP · São Paulo",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": 108,
+   "aparece_em": 0,
+   "de": 193,
+   "pct": 0,
+   "melhor_posicao": null,
+   "frases_onde_aparece": [],
+   "invisivel": true,
+   "frase_do_topo": "Esta loja **não aparece em nenhuma** das 193 buscas que testamos na cidade."
+  },
+  {
+   "local_id": "orthodontic_republica",
+   "praca_id": "sao_paulo",
+   "rotulo": "SP · São Paulo",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": 22,
+   "aparece_em": 0,
+   "de": 193,
+   "pct": 0,
+   "melhor_posicao": null,
+   "frases_onde_aparece": [],
+   "invisivel": true,
+   "frase_do_topo": "Esta loja **não aparece em nenhuma** das 193 buscas que testamos na cidade."
+  },
+  {
+   "local_id": "uberlandia_orthodontic",
+   "praca_id": "uberlandia",
+   "rotulo": "MG · Uberlândia",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": null,
+   "aparece_em": 0,
+   "de": 164,
+   "pct": 0,
+   "melhor_posicao": null,
+   "frases_onde_aparece": [],
+   "invisivel": true,
+   "frase_do_topo": "Esta loja **não aparece em nenhuma** das 164 buscas que testamos na cidade."
+  },
+  {
+   "local_id": "orthodontic_kayser",
+   "praca_id": "caxias_do_sul",
+   "rotulo": "RS · Caxias do Sul",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": 91,
+   "aparece_em": 1,
+   "de": 167,
+   "pct": 1,
+   "melhor_posicao": 5,
+   "frases_onde_aparece": [
+    {
+     "frase": "aparelho ortodontico caxias do sul",
+     "posicao": 5,
+     "intencao": "GENÉRICO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **1 das 167 buscas** que testamos na cidade."
+  },
+  {
    "local_id": "ortho_cba_fernando_correa",
    "praca_id": "cuiaba",
    "rotulo": "MT · Cuiabá",
@@ -152,6 +296,26 @@
    ],
    "invisivel": false,
    "frase_do_topo": "Esta loja aparece em **3 das 213 buscas** que testamos na cidade."
+  },
+  {
+   "local_id": "ortho_fln_ingleses_do_rio_vermel",
+   "praca_id": "florianopolis",
+   "rotulo": "SC · Florianópolis",
+   "unidade": "OrthoDontic - Florianópolis Ingleses",
+   "avaliacoes_da_ficha": 267,
+   "aparece_em": 1,
+   "de": 130,
+   "pct": 1,
+   "melhor_posicao": 2,
+   "frases_onde_aparece": [
+    {
+     "frase": "ortodontista ingleses florianopolis",
+     "posicao": 2,
+     "intencao": "BAIRRO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **1 das 130 buscas** que testamos na cidade."
   },
   {
    "local_id": "ortho_gyn_jardim_tropical",
@@ -274,6 +438,26 @@
    "frase_do_topo": "Esta loja aparece em **2 das 195 buscas** que testamos na cidade."
   },
   {
+   "local_id": "uberlandia_orthodontic_centro",
+   "praca_id": "uberlandia",
+   "rotulo": "MG · Uberlândia",
+   "unidade": "OrthoDontic",
+   "avaliacoes_da_ficha": 61,
+   "aparece_em": 1,
+   "de": 164,
+   "pct": 1,
+   "melhor_posicao": 4,
+   "frases_onde_aparece": [
+    {
+     "frase": "aparelho ortodontico uberlandia",
+     "posicao": 4,
+     "intencao": "GENÉRICO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **1 das 164 buscas** que testamos na cidade."
+  },
+  {
    "local_id": "ortho_contagem",
    "praca_id": "contagem",
    "rotulo": "MG · Contagem",
@@ -332,6 +516,36 @@
    ],
    "invisivel": false,
    "frase_do_topo": "Esta loja aparece em **3 das 123 buscas** que testamos na cidade."
+  },
+  {
+   "local_id": "ortho_fln_centro",
+   "praca_id": "florianopolis",
+   "rotulo": "SC · Florianópolis",
+   "unidade": "OrthoDontic Florianópolis - Rua 7 de Setembro",
+   "avaliacoes_da_ficha": 310,
+   "aparece_em": 3,
+   "de": 130,
+   "pct": 2,
+   "melhor_posicao": 2,
+   "frases_onde_aparece": [
+    {
+     "frase": "aparelho ortodôntico florianópolis",
+     "posicao": 2,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "dentista florianopolis aparelho",
+     "posicao": 2,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista centro florianopolis",
+     "posicao": 4,
+     "intencao": "BAIRRO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **3 das 130 buscas** que testamos na cidade."
   },
   {
    "local_id": "ortho_joi_america",
@@ -857,6 +1071,46 @@
    ],
    "invisivel": false,
    "frase_do_topo": "Esta loja aparece em **6 das 195 buscas** que testamos na cidade."
+  },
+  {
+   "local_id": "ortho_fln_centro_2",
+   "praca_id": "florianopolis",
+   "rotulo": "SC · Florianópolis",
+   "unidade": "OrthoDontic Florianópolis - Rua Deodoro, Centro.",
+   "avaliacoes_da_ficha": 268,
+   "aparece_em": 5,
+   "de": 130,
+   "pct": 4,
+   "melhor_posicao": 1,
+   "frases_onde_aparece": [
+    {
+     "frase": "ortodontista florianópolis",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista em florianópolis",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "ortodontista centro florianopolis",
+     "posicao": 1,
+     "intencao": "BAIRRO"
+    },
+    {
+     "frase": "ortodontista em florianopolis",
+     "posicao": 1,
+     "intencao": "GENÉRICO"
+    },
+    {
+     "frase": "aparelho ortodôntico florianópolis",
+     "posicao": 3,
+     "intencao": "GENÉRICO"
+    }
+   ],
+   "invisivel": false,
+   "frase_do_topo": "Esta loja aparece em **5 das 130 buscas** que testamos na cidade."
   },
   {
    "local_id": "ortho_poa_cristo_redentor",

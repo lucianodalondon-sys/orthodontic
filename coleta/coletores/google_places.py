@@ -179,14 +179,27 @@ def ancora(praca, achados, quantos=14):
         lê a tela), e por último um pedaço do place_id, que é único por
         definição.
         """
+        # A PRAÇA ENTRA SEMPRE, NÃO SÓ QUANDO DÁ CONFLITO LOCAL.
+        #
+        # A versão anterior só desempatava DENTRO da identidade sendo
+        # escrita, e por isso `orthodontic` nasceu em São Paulo, Rio,
+        # Caxias e Uberlândia ao mesmo tempo — quatro lojas diferentes com
+        # o mesmo id. Redes de concorrente fazem igual: `sorridents` existe
+        # em três cidades, `oral_unic` em duas.
+        #
+        # A série é chaveada por `local_id` no projeto INTEIRO. Se o id não
+        # carrega a praça, duas lojas de cidades diferentes se fundem — e a
+        # coleta de avaliações mede uma só, como já aconteceu com as sete
+        # de Porto Alegre.
+        pref = slug(praca)[:12]
         usados = {l.get("local_id") for l in ident.get("locais", [])}
-        base = slug(nome) or f"local_{len(ident.get('locais', []))}"
+        base = f"{pref}_{slug(nome)}"[:44] if nome else f"{pref}_local"
         if base not in usados:
             return base
         b = slug(bairro_do_endereco(endereco))
-        if b and f"{base}_{b}"[:40] not in usados:
-            return f"{base}_{b}"[:40]
-        return f"{base}_{slug(place_id)[-6:]}"[:40]
+        if b and f"{base}_{b}"[:56] not in usados:
+            return f"{base}_{b}"[:56]
+        return f"{base}_{slug(place_id)[-6:]}"[:56]
 
     def slug(s):
         s = unicodedata.normalize("NFKD", s or "")

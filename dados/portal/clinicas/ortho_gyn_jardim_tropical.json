@@ -2,7 +2,7 @@
   "local_id": "ortho_gyn_jardim_tropical",
   "praca_id": "goiania",
   "apresentacao": {
-    "unidade": "OrthoDontic",
+    "unidade": "OrthoDontic · Jardim Tropical",
     "cidade": "GO · Goiânia",
     "endereco": "Avenida Tropical - Esquina com - Av. Lago das Rosas, Q. 25 - LT 01 - Jardim Tropical, Aparecida de Goiânia - GO, 74946-500",
     "desde": null,
@@ -12,21 +12,21 @@
     "lojas_irmas": [
       {
         "local_id": "ortho_gyn_st_oeste",
-        "unidade": "OrthoDontic St. Oeste"
+        "unidade": "OrthoDontic · St. Oeste"
       },
       {
         "local_id": "ortho_gyn_st_central",
-        "unidade": "OrthoDontic St. Central"
+        "unidade": "OrthoDontic · St. Central"
       },
       {
         "local_id": "ortho_gyn_st_morada_do_sol",
-        "unidade": "OrthoDontic St. Morada do Sol"
+        "unidade": "OrthoDontic · St. Morada do Sol"
       }
     ],
     "frase": null
   },
   "rotulo": "GO · Goiânia",
-  "unidade": "OrthoDontic",
+  "unidade": "OrthoDontic · Jardim Tropical",
   "cabecalho": {
     "nota": 4.7,
     "avaliacoes": 152,
@@ -179,6 +179,101 @@
       "contra": [],
       "o_que_aumentaria": "repetir a varredura de buscas noutra data",
       "procedencia": "medido em 196 buscas testadas, 1 medição"
+    }
+  },
+  "perto_da_clinica": {
+    "local_id": "ortho_gyn_jardim_tropical",
+    "praca_id": "goiania",
+    "rotulo": "GO · Goiânia",
+    "unidade": "OrthoDontic Jardim Tropical",
+    "medido_em": "2026-08-13",
+    "raio_m": 3000,
+    "de": 5,
+    "aparece_em": 4,
+    "em_primeiro": 4,
+    "melhor_posicao": 1,
+    "invisivel_perto": false,
+    "frase": "aparece em 4 de 5 buscas feitas a partir do próprio endereço, em 4 vezes em 1º lugar",
+    "buscas": [
+      {
+        "frase": "aparelho ortodôntico em goiania",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 152,
+        "topo_metros": 0
+      },
+      {
+        "frase": "aparelho ortodôntico goiânia",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 152,
+        "topo_metros": 0
+      },
+      {
+        "frase": "ortodontista em goiânia",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 152,
+        "topo_metros": 0
+      },
+      {
+        "frase": "ortodontista goiania ipasgo",
+        "intencao": "BAIRRO",
+        "posicao": null,
+        "topo": "Pronto Socorro em Odontologia 24h",
+        "topo_avaliacoes": 244,
+        "topo_metros": 13742
+      },
+      {
+        "frase": "ortodontista goiânia",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 152,
+        "topo_metros": 0
+      }
+    ],
+    "quem_aparece_na_frente": [
+      {
+        "nome": "Pronto Socorro em Odontologia 24h",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Instituto Odontológico Marista",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Dra. Ana Caroline Farias",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Perfil Espaço Odontológico",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Dra. Daniela T. Pantoja",
+        "vezes_na_frente": 1
+      }
+    ],
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 5,
+      "janela_dias": 0,
+      "medicoes": 1,
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
+    },
+    "na_cidade": {
+      "aparece_em": 1,
+      "de": 196
     }
   },
   "jornada": {

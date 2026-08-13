@@ -6,7 +6,7 @@
    "local_id": "ortho_fsa",
    "praca_id": "feira",
    "rotulo": "BA · Feira de Santana",
-   "unidade": "OrthoDontic Feira de Santana",
+   "unidade": "OrthoDontic",
    "cabecalho": {
     "nota": 4.7,
     "avaliacoes": 170,
@@ -84,7 +84,7 @@
    "local_id": "ortho_gyn_jardim_tropical",
    "praca_id": "goiania",
    "rotulo": "GO · Goiânia",
-   "unidade": "OrthoDontic",
+   "unidade": "OrthoDontic · Jardim Tropical",
    "cabecalho": {
     "nota": 4.7,
     "avaliacoes": 152,
@@ -141,7 +141,7 @@
    "local_id": "ortho_gyn_st_central",
    "praca_id": "goiania",
    "rotulo": "GO · Goiânia",
-   "unidade": "OrthoDontic",
+   "unidade": "OrthoDontic · St. Central",
    "cabecalho": {
     "nota": 4.6,
     "avaliacoes": 268,
@@ -191,7 +191,7 @@
    "local_id": "ortho_gyn_st_morada_do_sol",
    "praca_id": "goiania",
    "rotulo": "GO · Goiânia",
-   "unidade": "OrthoDontic Mangalô",
+   "unidade": "OrthoDontic · St. Morada do Sol",
    "cabecalho": {
     "nota": 5,
     "avaliacoes": 124,
@@ -241,7 +241,7 @@
    "local_id": "ortho_gyn_st_oeste",
    "praca_id": "goiania",
    "rotulo": "GO · Goiânia",
-   "unidade": "OrthoDontic",
+   "unidade": "OrthoDontic · St. Oeste",
    "cabecalho": {
     "nota": 4.2,
     "avaliacoes": 270,
@@ -460,10 +460,10 @@
    "eventos_alem_da_janela": 0
   },
   {
-   "local_id": "orthodontic",
+   "local_id": "uberlandia_orthodontic",
    "praca_id": "uberlandia",
    "rotulo": "MG · Uberlândia",
-   "unidade": "OrthoDontic",
+   "unidade": "OrthoDontic · Praça Adolfo Fonseca",
    "cabecalho": {
     "nota": 3.7,
     "avaliacoes": 127,
@@ -476,17 +476,17 @@
     "status": "aberta",
     "aberta_em": "2026-08-13",
     "dias_aberta": 0,
-    "prazo_dias": 60,
-    "vence_em": "2026-10-12"
+    "prazo_dias": 14,
+    "vence_em": "2026-08-27"
    },
    "acao": {
-    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
-    "prazo": "60 dias",
-    "dono": "consultor de campo",
-    "custo": "verba de abertura",
-    "por_causa_de": "nao_engatou"
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
    },
-   "faixa": "verde",
+   "faixa": "vermelha",
    "sem_resposta": null,
    "eventos": [
     {
@@ -514,7 +514,7 @@
      "data": "2026-08-13",
      "tipo": "alerta",
      "quem": "fila",
-     "texto": "alerta aberto: Unidade nova que ainda não engatou",
+     "texto": "alerta aberto: Silêncio publicitário com leilão cheio",
      "fonte": "dados/serie/fila_historico.jsonl"
     },
     {
@@ -542,10 +542,10 @@
    "eventos_alem_da_janela": 0
   },
   {
-   "local_id": "orthodontic_centro",
+   "local_id": "uberlandia_orthodontic_centro",
    "praca_id": "uberlandia",
    "rotulo": "MG · Uberlândia",
-   "unidade": "OrthoDontic",
+   "unidade": "OrthoDontic · Av. Floriano Peixoto",
    "cabecalho": {
     "nota": 4.2,
     "avaliacoes": 61,
@@ -568,7 +568,7 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "faixa": "amarela",
+   "faixa": "vermelha",
    "sem_resposta": null,
    "eventos": [
     {
@@ -591,6 +591,13 @@
      "quem": "fila",
      "texto": "alerta aberto: Nota abaixo da mediana da praça",
      "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Silêncio publicitário com leilão cheio",
+     "fonte": "dados/serie/fila_historico.jsonl"
     }
    ],
    "eventos_alem_da_janela": 0
@@ -599,7 +606,7 @@
    "local_id": "ortho_cba_centro_norte",
    "praca_id": "cuiaba",
    "rotulo": "MT · Cuiabá",
-   "unidade": "OrthoDontic Cuiabá Centro Norte",
+   "unidade": "OrthoDontic · Centro Norte",
    "cabecalho": {
     "nota": 5,
     "avaliacoes": 1223,
@@ -630,7 +637,7 @@
    "local_id": "ortho_cba_dom_bosco",
    "praca_id": "cuiaba",
    "rotulo": "MT · Cuiabá",
-   "unidade": "OrthoDontic Cuiabá Dom Bosco (Centro Sul)",
+   "unidade": "OrthoDontic · Centro Sul",
    "cabecalho": {
     "nota": 4.9,
     "avaliacoes": 71,
@@ -680,7 +687,7 @@
    "local_id": "ortho_cba_fernando_correa",
    "praca_id": "cuiaba",
    "rotulo": "MT · Cuiabá",
-   "unidade": "OrthoDontic Cuiabá Fernando Corrêa",
+   "unidade": "OrthoDontic · Pico do Amor",
    "cabecalho": {
     "nota": 4.9,
     "avaliacoes": 78,
@@ -730,7 +737,7 @@
    "local_id": "ortho_cwb_centro",
    "praca_id": "curitiba",
    "rotulo": "PR · Curitiba",
-   "unidade": "OrthoDontic",
+   "unidade": "OrthoDontic · R. XV de Novembro",
    "cabecalho": {
     "nota": 4.6,
     "avaliacoes": 1012,
@@ -794,7 +801,7 @@
    "local_id": "ortho_cwb_centro_2",
    "praca_id": "curitiba",
    "rotulo": "PR · Curitiba",
-   "unidade": "OrthoDontic",
+   "unidade": "OrthoDontic · Av. Mal. Floriano Peixoto",
    "cabecalho": {
     "nota": 4.7,
     "avaliacoes": 719,
@@ -872,7 +879,7 @@
    "local_id": "ortho_cwb_centro_3",
    "praca_id": "curitiba",
    "rotulo": "PR · Curitiba",
-   "unidade": "OrthoDontic",
+   "unidade": "OrthoDontic · Galeria Tijucas - Av. Luiz Xavier",
    "cabecalho": {
     "nota": 4.9,
     "avaliacoes": 491,
@@ -926,7 +933,7 @@
    "local_id": "ortho_cwb_centro_4",
    "praca_id": "curitiba",
    "rotulo": "PR · Curitiba",
-   "unidade": "OrthoDontic",
+   "unidade": "OrthoDontic · Edifício Odin do Amaral - R. Mal. Deodoro",
    "cabecalho": {
     "nota": 4.7,
     "avaliacoes": 126,
@@ -990,7 +997,7 @@
    "local_id": "ortho_cwb_portao",
    "praca_id": "curitiba",
    "rotulo": "PR · Curitiba",
-   "unidade": "OrthoDontic",
+   "unidade": "OrthoDontic · Portão",
    "cabecalho": {
     "nota": 4.8,
     "avaliacoes": 270,
@@ -1037,7 +1044,7 @@
    "local_id": "ortho_centro_ldn",
    "praca_id": "londrina",
    "rotulo": "PR · Londrina",
-   "unidade": "OrthoDontic Centro",
+   "unidade": "OrthoDontic · Centro",
    "cabecalho": {
     "nota": 3.8,
     "avaliacoes": 77,
@@ -1108,7 +1115,7 @@
    "local_id": "ortho_souza_naves",
    "praca_id": "londrina",
    "rotulo": "PR · Londrina",
-   "unidade": "OrthoDontic Souza Naves",
+   "unidade": "OrthoDontic · Souza Naves",
    "cabecalho": {
     "nota": 4.6,
     "avaliacoes": 568,
@@ -1218,7 +1225,7 @@
    "eventos_alem_da_janela": 0
   },
   {
-   "local_id": "orthodontic",
+   "local_id": "rio_de_janei_orthodontic",
    "praca_id": "rio_de_janeiro",
    "rotulo": "RJ · Rio de Janeiro",
    "unidade": "OrthoDontic",
@@ -1244,45 +1251,31 @@
     "custo": "verba de abertura",
     "por_causa_de": "nao_engatou"
    },
-   "faixa": "verde",
+   "faixa": "amarela",
    "sem_resposta": null,
    "eventos": [
     {
      "data": "2026-08-13",
      "tipo": "alerta",
      "quem": "fila",
-     "texto": "alerta aberto: O contador de avaliações parou",
-     "fonte": "dados/serie/fila_historico.jsonl"
-    },
-    {
-     "data": "2026-08-13",
-     "tipo": "alerta",
-     "quem": "fila",
-     "texto": "alerta aberto: Está na metade de baixo da própria praça",
-     "fonte": "dados/serie/fila_historico.jsonl"
-    },
-    {
-     "data": "2026-08-13",
-     "tipo": "alerta",
-     "quem": "fila",
-     "texto": "alerta aberto: Nota abaixo da mediana da praça",
-     "fonte": "dados/serie/fila_historico.jsonl"
-    },
-    {
-     "data": "2026-08-13",
-     "tipo": "alerta",
-     "quem": "fila",
      "texto": "alerta aberto: Unidade nova que ainda não engatou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Silêncio publicitário com leilão cheio",
      "fonte": "dados/serie/fila_historico.jsonl"
     }
    ],
    "eventos_alem_da_janela": 0
   },
   {
-   "local_id": "orthodontic",
+   "local_id": "caxias_do_su_orthodontic",
    "praca_id": "caxias_do_sul",
    "rotulo": "RS · Caxias do Sul",
-   "unidade": "OrthoDontic",
+   "unidade": "OrthoDontic · R. Pinheiro Machado",
    "cabecalho": {
     "nota": 4.7,
     "avaliacoes": 362,
@@ -1312,27 +1305,6 @@
      "data": "2026-08-13",
      "tipo": "alerta",
      "quem": "fila",
-     "texto": "alerta aberto: O contador de avaliações parou",
-     "fonte": "dados/serie/fila_historico.jsonl"
-    },
-    {
-     "data": "2026-08-13",
-     "tipo": "alerta",
-     "quem": "fila",
-     "texto": "alerta aberto: Está na metade de baixo da própria praça",
-     "fonte": "dados/serie/fila_historico.jsonl"
-    },
-    {
-     "data": "2026-08-13",
-     "tipo": "alerta",
-     "quem": "fila",
-     "texto": "alerta aberto: Nota abaixo da mediana da praça",
-     "fonte": "dados/serie/fila_historico.jsonl"
-    },
-    {
-     "data": "2026-08-13",
-     "tipo": "alerta",
-     "quem": "fila",
      "texto": "alerta aberto: Unidade nova que ainda não engatou",
      "fonte": "dados/serie/fila_historico.jsonl"
     },
@@ -1347,10 +1319,10 @@
    "eventos_alem_da_janela": 0
   },
   {
-   "local_id": "orthodontic_centro",
+   "local_id": "caxias_do_su_orthodontic_centro",
    "praca_id": "caxias_do_sul",
    "rotulo": "RS · Caxias do Sul",
-   "unidade": "OrthoDontic",
+   "unidade": "OrthoDontic · Av. Júlio de Castilhos",
    "cabecalho": {
     "nota": 4.7,
     "avaliacoes": 172,
@@ -1391,13 +1363,6 @@
      "fonte": "dados/serie/fila_historico.jsonl"
     },
     {
-     "data": "2026-08-13",
-     "tipo": "alerta",
-     "quem": "fila",
-     "texto": "alerta aberto: Nota abaixo da mediana da praça",
-     "fonte": "dados/serie/fila_historico.jsonl"
-    },
-    {
      "data": "2026-08-06",
      "tipo": "avaliacao_negativa",
      "quem": "paciente",
@@ -1418,7 +1383,7 @@
    "local_id": "orthodontic_kayser",
    "praca_id": "caxias_do_sul",
    "rotulo": "RS · Caxias do Sul",
-   "unidade": "OrthoDontic",
+   "unidade": "OrthoDontic · Kayser",
    "cabecalho": {
     "nota": 4.8,
     "avaliacoes": 91,
@@ -1479,7 +1444,7 @@
    "local_id": "ortho_poa_cavalhada",
    "praca_id": "porto_alegre",
    "rotulo": "RS · Porto Alegre",
-   "unidade": "OrthoDontic Clínica Odontológica em Porto Alegre RS",
+   "unidade": "OrthoDontic · Cavalhada",
    "cabecalho": {
     "nota": 4.6,
     "avaliacoes": 207,
@@ -1522,7 +1487,7 @@
    "local_id": "ortho_poa_centro_historico",
    "praca_id": "porto_alegre",
    "rotulo": "RS · Porto Alegre",
-   "unidade": "OrthoDontic",
+   "unidade": "OrthoDontic · Av. Borges de Medeiros",
    "cabecalho": {
     "nota": 4.8,
     "avaliacoes": 433,
@@ -1565,7 +1530,7 @@
    "local_id": "ortho_poa_centro_historico_2",
    "praca_id": "porto_alegre",
    "rotulo": "RS · Porto Alegre",
-   "unidade": "OrthoDontic",
+   "unidade": "OrthoDontic · R. Vig. José Inácio",
    "cabecalho": {
     "nota": 4.9,
     "avaliacoes": 209,
@@ -1585,7 +1550,7 @@
    "local_id": "ortho_poa_centro_historico_3",
    "praca_id": "porto_alegre",
    "rotulo": "RS · Porto Alegre",
-   "unidade": "OrthoDontic",
+   "unidade": "OrthoDontic · R. dos Andradas",
    "cabecalho": {
     "nota": 4.4,
     "avaliacoes": 176,
@@ -1656,7 +1621,7 @@
    "local_id": "ortho_poa_centro_historico_4",
    "praca_id": "porto_alegre",
    "rotulo": "RS · Porto Alegre",
-   "unidade": "OrthoDontic - Clínica Odontológica Centro Porto Alegre - Tratamento de Canal - Periodontia - Restauração Dental - Prótese - Clareamento e Limpeza Dental - Aparelho Ortodôntico Metálico e Estético - Emergência - Extração do Siso - Faceta de Porcelana",
+   "unidade": "OrthoDontic · R. Gen. Vitorino",
    "cabecalho": {
     "nota": 4.6,
     "avaliacoes": 162,
@@ -1687,7 +1652,7 @@
    "local_id": "ortho_poa_cristo_redentor",
    "praca_id": "porto_alegre",
    "rotulo": "RS · Porto Alegre",
-   "unidade": "OrthoDontic",
+   "unidade": "OrthoDontic · Cristo Redentor",
    "cabecalho": {
     "nota": 4.7,
     "avaliacoes": 245,
@@ -1737,7 +1702,7 @@
    "local_id": "ortho_poa_rio_branco",
    "praca_id": "porto_alegre",
    "rotulo": "RS · Porto Alegre",
-   "unidade": "OrthoDontic",
+   "unidade": "OrthoDontic · Rio Branco",
    "cabecalho": {
     "nota": 4.5,
     "avaliacoes": 32,
@@ -1780,7 +1745,7 @@
    "local_id": "ortho_fln_centro",
    "praca_id": "florianopolis",
    "rotulo": "SC · Florianópolis",
-   "unidade": "OrthoDontic Florianópolis - Rua 7 de Setembro",
+   "unidade": "OrthoDontic · Rua Sete de Setembro",
    "cabecalho": {
     "nota": 4.4,
     "avaliacoes": 310,
@@ -1876,7 +1841,7 @@
    "local_id": "ortho_fln_centro_2",
    "praca_id": "florianopolis",
    "rotulo": "SC · Florianópolis",
-   "unidade": "OrthoDontic Florianópolis - Rua Deodoro, Centro.",
+   "unidade": "OrthoDontic · R. Deodoro",
    "cabecalho": {
     "nota": 5,
     "avaliacoes": 268,
@@ -1916,7 +1881,7 @@
    "local_id": "ortho_fln_ingleses_do_rio_vermel",
    "praca_id": "florianopolis",
    "rotulo": "SC · Florianópolis",
-   "unidade": "OrthoDontic - Florianópolis Ingleses",
+   "unidade": "OrthoDontic · Ingleses do Rio Vermelho",
    "cabecalho": {
     "nota": 4.8,
     "avaliacoes": 267,
@@ -1956,7 +1921,7 @@
    "local_id": "ortho_joi_america",
    "praca_id": "joinville",
    "rotulo": "SC · Joinville",
-   "unidade": "OrthoDontic Sorria Sempre",
+   "unidade": "OrthoDontic · América",
    "cabecalho": {
     "nota": 4.3,
     "avaliacoes": 377,
@@ -2055,7 +2020,7 @@
    "local_id": "ortho_joi_aventureiro",
    "praca_id": "joinville",
    "rotulo": "SC · Joinville",
-   "unidade": "OrthoDontic",
+   "unidade": "OrthoDontic · Aventureiro",
    "cabecalho": {
     "nota": 4.9,
     "avaliacoes": 170,
@@ -2109,7 +2074,7 @@
    "local_id": "ortho_joi_centro",
    "praca_id": "joinville",
    "rotulo": "SC · Joinville",
-   "unidade": "OrthoDontic",
+   "unidade": "OrthoDontic · Centro",
    "cabecalho": {
     "nota": 4.6,
     "avaliacoes": 513,
@@ -2201,7 +2166,7 @@
    "local_id": "ortho_mafra",
    "praca_id": "mafra",
    "rotulo": "SC · Mafra",
-   "unidade": "OrthoDontic Mafra",
+   "unidade": "OrthoDontic",
    "cabecalho": {
     "nota": 4.9,
     "avaliacoes": 155,
@@ -2251,7 +2216,7 @@
    "local_id": "ortho_pp",
    "praca_id": "prudente",
    "rotulo": "SP · Presidente Prudente",
-   "unidade": "OrthoDontic Presidente Prudente",
+   "unidade": "OrthoDontic",
    "cabecalho": {
     "nota": 4.9,
     "avaliacoes": 592,
@@ -2306,7 +2271,7 @@
    "local_id": "ortho_soro_centro",
    "praca_id": "sorocaba",
    "rotulo": "SP · Sorocaba",
-   "unidade": "OrthoDontic",
+   "unidade": "OrthoDontic · Centro",
    "cabecalho": {
     "nota": 4.5,
     "avaliacoes": 116,
@@ -2370,7 +2335,7 @@
    "local_id": "ortho_soro_jardim_faculdade",
    "praca_id": "sorocaba",
    "rotulo": "SP · Sorocaba",
-   "unidade": "OrthoDontic",
+   "unidade": "OrthoDontic · Jardim Faculdade",
    "cabecalho": {
     "nota": 4.3,
     "avaliacoes": 111,
@@ -2455,7 +2420,7 @@
    "local_id": "ortho_soro_vila_formosa",
    "praca_id": "sorocaba",
    "rotulo": "SP · Sorocaba",
-   "unidade": "OrthoDontic",
+   "unidade": "OrthoDontic · Vila Formosa",
    "cabecalho": {
     "nota": 4.9,
     "avaliacoes": 161,
@@ -2509,33 +2474,33 @@
    "eventos_alem_da_janela": 0
   },
   {
-   "local_id": "orthodontic",
+   "local_id": "orthodontic_republica",
    "praca_id": "sao_paulo",
    "rotulo": "SP · São Paulo",
-   "unidade": "OrthoDontic",
+   "unidade": "OrthoDontic · República",
    "cabecalho": {
-    "nota": 4.7,
-    "avaliacoes": 189,
-    "ritmo": null,
+    "nota": 3,
+    "avaliacoes": 22,
+    "ritmo": 0.3,
     "meses_seguidos": 0,
-    "posicao": null,
-    "de": null
+    "posicao": 18,
+    "de": 18
    },
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
     "dias_aberta": 0,
-    "prazo_dias": 60,
-    "vence_em": "2026-10-12"
+    "prazo_dias": 14,
+    "vence_em": "2026-08-27"
    },
    "acao": {
-    "o_que": "Rodar o pacote de abertura — ficha completa, primeiras 50 avaliações, frases da cidade no leilão",
-    "prazo": "60 dias",
-    "dono": "consultor de campo",
-    "custo": "verba de abertura",
-    "por_causa_de": "nao_engatou"
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
    },
-   "faixa": "verde",
+   "faixa": "vermelha",
    "sem_resposta": null,
    "eventos": [
     {
@@ -2563,70 +2528,200 @@
      "data": "2026-08-13",
      "tipo": "alerta",
      "quem": "fila",
-     "texto": "alerta aberto: Unidade nova que ainda não engatou",
+     "texto": "alerta aberto: Silêncio publicitário com leilão cheio",
      "fonte": "dados/serie/fila_historico.jsonl"
     }
    ],
    "eventos_alem_da_janela": 0
   },
   {
-   "local_id": "orthodontic_republica",
-   "praca_id": "sao_paulo",
-   "rotulo": "SP · São Paulo",
-   "unidade": "OrthoDontic",
-   "cabecalho": {
-    "nota": 3,
-    "avaliacoes": 22,
-    "ritmo": null,
-    "meses_seguidos": 0,
-    "posicao": null,
-    "de": null
-   },
-   "tarefa": null,
-   "acao": null,
-   "faixa": null,
-   "sem_resposta": null,
-   "eventos": [],
-   "eventos_alem_da_janela": 0
-  },
-  {
    "local_id": "orthodontic_sao_miguel_paulista",
    "praca_id": "sao_paulo",
    "rotulo": "SP · São Paulo",
-   "unidade": "OrthoDontic",
+   "unidade": "OrthoDontic · São Miguel Paulista",
    "cabecalho": {
     "nota": 4.9,
     "avaliacoes": 161,
-    "ritmo": null,
-    "meses_seguidos": 0,
-    "posicao": null,
-    "de": null
+    "ritmo": 29.0,
+    "meses_seguidos": 4,
+    "posicao": 3,
+    "de": 18
    },
-   "tarefa": null,
-   "acao": null,
-   "faixa": null,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-13",
+    "dias_aberta": 0,
+    "prazo_dias": 30,
+    "vence_em": "2026-09-12"
+   },
+   "acao": {
+    "o_que": "Entrar no leilão com as frases que a cidade digita — a lista está na praça",
+    "prazo": "30 dias",
+    "dono": "franqueado",
+    "custo": "verba de mídia",
+    "por_causa_de": "silencio"
+   },
+   "faixa": "verde",
    "sem_resposta": null,
-   "eventos": [],
+   "eventos": [
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Silêncio publicitário com leilão cheio",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-07-30",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★ · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-07-28",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Pior clínica que já vi , pessoal faz contrato não cumpre e não devolve o dinheiro, não ind…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-07-22",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★ · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
    "eventos_alem_da_janela": 0
   },
   {
    "local_id": "orthodontic_tatuape",
    "praca_id": "sao_paulo",
    "rotulo": "SP · São Paulo",
-   "unidade": "OrthoDontic",
+   "unidade": "OrthoDontic · Tatuapé",
    "cabecalho": {
     "nota": 4.1,
     "avaliacoes": 108,
-    "ritmo": null,
-    "meses_seguidos": 0,
-    "posicao": null,
-    "de": null
+    "ritmo": 1.0,
+    "meses_seguidos": 5,
+    "posicao": 17,
+    "de": 18
    },
-   "tarefa": null,
-   "acao": null,
-   "faixa": null,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-13",
+    "dias_aberta": 0,
+    "prazo_dias": 7,
+    "vence_em": "2026-08-20"
+   },
+   "acao": {
+    "o_que": "Auditar a ficha do Google — foto, horário, serviços, resposta a avaliação",
+    "prazo": "7 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "posicao"
+   },
+   "faixa": "amarela",
    "sem_resposta": null,
-   "eventos": [],
+   "eventos": [
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Nota abaixo da mediana da praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Silêncio publicitário com leilão cheio",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-07-10",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 1★: “Péssimo, agora até pra pagar tá difícil só pra não dar o desconto. Até o ano passado o ate…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    },
+    {
+     "data": "2026-06-30",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 2★: “Infelizmente não tenho conseguido bom atendimento na marcação de consultas estou a 2 dias …” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
+   "eventos_alem_da_janela": 0
+  },
+  {
+   "local_id": "sao_paulo_orthodontic",
+   "praca_id": "sao_paulo",
+   "rotulo": "SP · São Paulo",
+   "unidade": "OrthoDontic · Lapa",
+   "cabecalho": {
+    "nota": 4.7,
+    "avaliacoes": 189,
+    "ritmo": 6.5,
+    "meses_seguidos": 0,
+    "posicao": 11,
+    "de": 18
+   },
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-13",
+    "dias_aberta": 0,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-27"
+   },
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "faixa": "vermelha",
+   "sem_resposta": null,
+   "eventos": [
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: O contador de avaliações parou",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Está na metade de baixo da própria praça",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-13",
+     "tipo": "alerta",
+     "quem": "fila",
+     "texto": "alerta aberto: Silêncio publicitário com leilão cheio",
+     "fonte": "dados/serie/fila_historico.jsonl"
+    },
+    {
+     "data": "2026-08-01",
+     "tipo": "avaliacao_negativa",
+     "quem": "paciente",
+     "texto": "avaliação de 3★: “Boa localização. Bons valores dos serviços. Tratamento odontológico do filho faço aqui. Go…” · SEM RESPOSTA",
+     "fonte": "dados/serie/reviews.jsonl"
+    }
+   ],
    "eventos_alem_da_janela": 0
   },
   {

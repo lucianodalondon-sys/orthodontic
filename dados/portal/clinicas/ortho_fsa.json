@@ -2,7 +2,7 @@
   "local_id": "ortho_fsa",
   "praca_id": "feira",
   "apresentacao": {
-    "unidade": "OrthoDontic Feira de Santana",
+    "unidade": "OrthoDontic",
     "cidade": "BA · Feira de Santana",
     "endereco": "R. Mal. Deodoro, 208 - 1º Andar - Centro, Feira de Santana - BA, 44002-064",
     "desde": "15/jul",
@@ -10,10 +10,10 @@
     "posicao_na_cidade": null,
     "clinicas_na_cidade": null,
     "lojas_irmas": [],
-    "frase": "OrthoDontic Feira de Santana é escutada desde 15/jul, em 4 medições."
+    "frase": "OrthoDontic é escutada desde 15/jul, em 4 medições."
   },
   "rotulo": "BA · Feira de Santana",
-  "unidade": "OrthoDontic Feira de Santana",
+  "unidade": "OrthoDontic",
   "cabecalho": {
     "nota": 4.7,
     "avaliacoes": 170,
@@ -360,6 +360,101 @@
       "contra": [],
       "o_que_aumentaria": "repetir a varredura de buscas noutra data",
       "procedencia": "medido em 123 buscas testadas, 1 medição"
+    }
+  },
+  "perto_da_clinica": {
+    "local_id": "ortho_fsa",
+    "praca_id": "feira",
+    "rotulo": "BA · Feira de Santana",
+    "unidade": "OrthoDontic Feira de Santana",
+    "medido_em": "2026-08-13",
+    "raio_m": 3000,
+    "de": 5,
+    "aparece_em": 4,
+    "em_primeiro": 2,
+    "melhor_posicao": 1,
+    "invisivel_perto": false,
+    "frase": "aparece em 4 de 5 buscas feitas a partir do próprio endereço, em 2 vezes em 1º lugar",
+    "buscas": [
+      {
+        "frase": "aparelho ortodôntico feira de santana",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 170,
+        "topo_metros": 0
+      },
+      {
+        "frase": "dentista feira de santana",
+        "intencao": "GENÉRICO",
+        "posicao": null,
+        "topo": "Instituto Integrale 24 Horas - Dentista 24 Horas",
+        "topo_avaliacoes": 375,
+        "topo_metros": 1055
+      },
+      {
+        "frase": "ortodontista em feira de santana",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 170,
+        "topo_metros": 0
+      },
+      {
+        "frase": "ortodontista feira de santana",
+        "intencao": "GENÉRICO",
+        "posicao": 2,
+        "topo": "Dra. Ana Bastos - Cirurgiã-Dentista - ADAMANT",
+        "topo_avaliacoes": 10,
+        "topo_metros": 1173
+      },
+      {
+        "frase": "vaga ortodontista feira de santana",
+        "intencao": "RUÍDO",
+        "posicao": 3,
+        "topo": "Instituto Integrale 24 Horas - Dentista 24 Horas",
+        "topo_avaliacoes": 375,
+        "topo_metros": 1055
+      }
+    ],
+    "quem_aparece_na_frente": [
+      {
+        "nome": "Instituto Integrale 24 Horas - Dentista 24 Horas",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "COAF | Dentista 24 horas",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Clínica Central do Sorriso - Dentista Particular Feira de Santana",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Dr. Daniel freitas dentista 24 horas",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Dr. Rodrigo Queiroz | Dentista 24h | Prótese Dentária",
+        "vezes_na_frente": 1
+      }
+    ],
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 5,
+      "janela_dias": 0,
+      "medicoes": 1,
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
+    },
+    "na_cidade": {
+      "aparece_em": 3,
+      "de": 123
     }
   },
   "jornada": {

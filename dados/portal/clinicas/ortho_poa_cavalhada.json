@@ -2,7 +2,7 @@
   "local_id": "ortho_poa_cavalhada",
   "praca_id": "porto_alegre",
   "apresentacao": {
-    "unidade": "OrthoDontic Clínica Odontológica em Porto Alegre RS",
+    "unidade": "OrthoDontic · Cavalhada",
     "cidade": "RS · Porto Alegre",
     "endereco": "Av. Otto Niemeyer, 2700 - Sl 201 - Cavalhada, Porto Alegre - RS, 91910-200",
     "desde": null,
@@ -12,33 +12,33 @@
     "lojas_irmas": [
       {
         "local_id": "ortho_poa_centro_historico",
-        "unidade": "OrthoDontic Centro Histórico"
+        "unidade": "OrthoDontic · Av. Borges de Medeiros"
       },
       {
         "local_id": "ortho_poa_cristo_redentor",
-        "unidade": "OrthoDontic Cristo Redentor"
+        "unidade": "OrthoDontic · Cristo Redentor"
       },
       {
         "local_id": "ortho_poa_centro_historico_2",
-        "unidade": "OrthoDontic Centro Histórico"
+        "unidade": "OrthoDontic · R. Vig. José Inácio"
       },
       {
         "local_id": "ortho_poa_centro_historico_3",
-        "unidade": "OrthoDontic Centro Histórico"
+        "unidade": "OrthoDontic · R. dos Andradas"
       },
       {
         "local_id": "ortho_poa_centro_historico_4",
-        "unidade": "OrthoDontic Centro Histórico"
+        "unidade": "OrthoDontic · R. Gen. Vitorino"
       },
       {
         "local_id": "ortho_poa_rio_branco",
-        "unidade": "OrthoDontic Rio Branco"
+        "unidade": "OrthoDontic · Rio Branco"
       }
     ],
     "frase": null
   },
   "rotulo": "RS · Porto Alegre",
-  "unidade": "OrthoDontic Clínica Odontológica em Porto Alegre RS",
+  "unidade": "OrthoDontic · Cavalhada",
   "cabecalho": {
     "nota": 4.6,
     "avaliacoes": 207,
@@ -164,6 +164,97 @@
       "contra": [],
       "o_que_aumentaria": "repetir a varredura de buscas noutra data",
       "procedencia": "medido em 196 buscas testadas, 1 medição"
+    }
+  },
+  "perto_da_clinica": {
+    "local_id": "ortho_poa_cavalhada",
+    "praca_id": "porto_alegre",
+    "rotulo": "RS · Porto Alegre",
+    "unidade": "OrthoDontic Cavalhada",
+    "medido_em": "2026-08-13",
+    "raio_m": 3000,
+    "de": 5,
+    "aparece_em": 3,
+    "em_primeiro": 3,
+    "melhor_posicao": 1,
+    "invisivel_perto": false,
+    "frase": "aparece em 3 de 5 buscas feitas a partir do próprio endereço, em 3 vezes em 1º lugar",
+    "buscas": [
+      {
+        "frase": "aparelho ortodôntico em porto alegre",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic Clínica Odontológica em Porto Alegre RS",
+        "topo_avaliacoes": 208,
+        "topo_metros": 0
+      },
+      {
+        "frase": "aparelho ortodôntico no centro de porto alegre",
+        "intencao": "BAIRRO",
+        "posicao": null,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 433,
+        "topo_metros": 8151
+      },
+      {
+        "frase": "aparelho ortodôntico porto alegre",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic Clínica Odontológica em Porto Alegre RS",
+        "topo_avaliacoes": 208,
+        "topo_metros": 0
+      },
+      {
+        "frase": "aparelho ortodôntico porto alegre preço",
+        "intencao": "PREÇO",
+        "posicao": 1,
+        "topo": "OrthoDontic Clínica Odontológica em Porto Alegre RS",
+        "topo_avaliacoes": 208,
+        "topo_metros": 0
+      },
+      {
+        "frase": "orthopride aparelho ortodôntico em porto alegre clareamento dental fotos",
+        "intencao": "BAIRRO",
+        "posicao": null,
+        "topo": "Orthopride | Aparelho Ortodôntico em Porto Alegre | Clareamento Dental",
+        "topo_avaliacoes": 32,
+        "topo_metros": 8126
+      }
+    ],
+    "quem_aparece_na_frente": [
+      {
+        "nome": "OrthoDontic",
+        "vezes_na_frente": 3
+      },
+      {
+        "nome": "OrthoDontic - Clínica Odontológica Centro Porto Alegre - Tratamento de Canal - Periodontia - Restauração Dental - Prótese - Clareamento e Limpeza Dental - Aparelho Ortodôntico Metálico e Estético - Emergência - Extração do Siso - Faceta de Porcelana",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Dentista Porto Alegre | Clínica Dental Center",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Orthopride | Aparelho Ortodôntico em Porto Alegre | Clareamento Dental",
+        "vezes_na_frente": 1
+      }
+    ],
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 5,
+      "janela_dias": 0,
+      "medicoes": 1,
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
+    },
+    "na_cidade": {
+      "aparece_em": 2,
+      "de": 196
     }
   },
   "jornada": {

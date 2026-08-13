@@ -2,7 +2,7 @@
   "local_id": "ortho_joi_centro",
   "praca_id": "joinville",
   "apresentacao": {
-    "unidade": "OrthoDontic",
+    "unidade": "OrthoDontic · Centro",
     "cidade": "SC · Joinville",
     "endereco": "R. São Joaquim, 120 - Salas 13 e 15 1º Andar 2º Pavimento - Centro, Joinville - SC, 89201-160",
     "desde": null,
@@ -12,17 +12,17 @@
     "lojas_irmas": [
       {
         "local_id": "ortho_joi_america",
-        "unidade": "OrthoDontic América"
+        "unidade": "OrthoDontic · América"
       },
       {
         "local_id": "ortho_joi_aventureiro",
-        "unidade": "OrthoDontic Aventureiro"
+        "unidade": "OrthoDontic · Aventureiro"
       }
     ],
     "frase": null
   },
   "rotulo": "SC · Joinville",
-  "unidade": "OrthoDontic",
+  "unidade": "OrthoDontic · Centro",
   "cabecalho": {
     "nota": 4.6,
     "avaliacoes": 513,
@@ -166,6 +166,101 @@
       "contra": [],
       "o_que_aumentaria": "repetir a varredura de buscas noutra data",
       "procedencia": "medido em 157 buscas testadas, 1 medição"
+    }
+  },
+  "perto_da_clinica": {
+    "local_id": "ortho_joi_centro",
+    "praca_id": "joinville",
+    "rotulo": "SC · Joinville",
+    "unidade": "OrthoDontic Centro",
+    "medido_em": "2026-08-13",
+    "raio_m": 3000,
+    "de": 5,
+    "aparece_em": 4,
+    "em_primeiro": 1,
+    "melhor_posicao": 1,
+    "invisivel_perto": false,
+    "frase": "aparece em 4 de 5 buscas feitas a partir do próprio endereço, em 1 vez em 1º lugar",
+    "buscas": [
+      {
+        "frase": "aparelho ortodontico joinville",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 513,
+        "topo_metros": 0
+      },
+      {
+        "frase": "ortodontista em joinville",
+        "intencao": "GENÉRICO",
+        "posicao": 10,
+        "topo": "Dra. Gizelle Valentim",
+        "topo_avaliacoes": 87,
+        "topo_metros": 1123
+      },
+      {
+        "frase": "ortodontista infantil joinville",
+        "intencao": "CRIANÇA",
+        "posicao": null,
+        "topo": "Dra Ivne Barbosa",
+        "topo_avaliacoes": 80,
+        "topo_metros": 923
+      },
+      {
+        "frase": "ortodontista joinville",
+        "intencao": "GENÉRICO",
+        "posicao": 6,
+        "topo": "Dr Fabiano Chaves - Clínica Integrada",
+        "topo_avaliacoes": 310,
+        "topo_metros": 287
+      },
+      {
+        "frase": "vaga ortodontista joinville",
+        "intencao": "RUÍDO",
+        "posicao": 4,
+        "topo": "Dr Fabiano Chaves - Clínica Integrada",
+        "topo_avaliacoes": 310,
+        "topo_metros": 287
+      }
+    ],
+    "quem_aparece_na_frente": [
+      {
+        "nome": "Dr Fabiano Chaves - Clínica Integrada",
+        "vezes_na_frente": 3
+      },
+      {
+        "nome": "Dra. Camila Mendes, Cirurgiã-Dentista em Joinville",
+        "vezes_na_frente": 3
+      },
+      {
+        "nome": "Dra. Gizelle Valentim",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "Dra. Taciane Petronilio l Ortodontista em Joinville",
+        "vezes_na_frente": 2
+      },
+      {
+        "nome": "Dra. Luíza Koerber",
+        "vezes_na_frente": 2
+      }
+    ],
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 5,
+      "janela_dias": 0,
+      "medicoes": 1,
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
+    },
+    "na_cidade": {
+      "aparece_em": 4,
+      "de": 157
     }
   },
   "jornada": {

@@ -1,0 +1,4214 @@
+{
+ "o_que_e": "Se a clínica aparece no mapa do Google para quem busca a poucos quarteirões dela — a busca é feita a partir do endereço da própria clínica, não do centro da cidade.",
+ "por_que_existe": "a leitura de cidade responde bem em cidade pequena e mente em metrópole: as quatro unidades de São Paulo apareciam em 0 de 193 buscas da capital e aparecem em 10 de 20 quando a busca sai da porta de cada uma",
+ "o_que_nao_e": "não é volume de busca; o raio não é área de captação, porque distância no mapa não é tempo de deslocamento; e ficar atrás de um vizinho não é perder paciente para ele",
+ "medido_em": "2026-08-13",
+ "corte_por_praca": {
+  "sao_paulo": "2026-08-13",
+  "caxias_do_sul": "2026-08-13",
+  "contagem": "2026-08-13",
+  "cuiaba": "2026-08-13",
+  "curitiba": "2026-08-13",
+  "feira": "2026-08-13",
+  "florianopolis": "2026-08-13",
+  "goiania": "2026-08-13",
+  "joinville": "2026-08-13",
+  "londrina": "2026-08-13",
+  "mafra": "2026-08-13",
+  "palmas": "2026-08-13",
+  "porto_alegre": "2026-08-13",
+  "prudente": "2026-08-13",
+  "rio_de_janeiro": "2026-08-13",
+  "sorocaba": "2026-08-13",
+  "uberlandia": "2026-08-13"
+ },
+ "lojas": [
+  {
+   "local_id": "ortho_poa_rio_branco",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic · Rio Branco",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 0,
+   "em_primeiro": 0,
+   "melhor_posicao": null,
+   "invisivel_perto": true,
+   "frase": "em nenhuma das 5 buscas testadas feitas a partir do próprio endereço a clínica apareceu no mapa — nem para quem está a 3 km dela",
+   "buscas": [
+    {
+     "frase": "aparelho ortodôntico em porto alegre",
+     "intencao": "GENÉRICO",
+     "posicao": null,
+     "topo": "Dr. Vicente Piccoli",
+     "topo_avaliacoes": 140,
+     "topo_metros": 909
+    },
+    {
+     "frase": "aparelho ortodôntico no centro de porto alegre",
+     "intencao": "BAIRRO",
+     "posicao": null,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 433,
+     "topo_metros": 2305
+    },
+    {
+     "frase": "aparelho ortodôntico porto alegre",
+     "intencao": "GENÉRICO",
+     "posicao": null,
+     "topo": "Dr. Vicente Piccoli",
+     "topo_avaliacoes": 140,
+     "topo_metros": 909
+    },
+    {
+     "frase": "aparelho ortodôntico porto alegre preço",
+     "intencao": "PREÇO",
+     "posicao": null,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 433,
+     "topo_metros": 2305
+    },
+    {
+     "frase": "orthopride aparelho ortodôntico em porto alegre clareamento dental fotos",
+     "intencao": "BAIRRO",
+     "posicao": null,
+     "topo": "Orthopride | Aparelho Ortodôntico em Porto Alegre | Clareamento Dental",
+     "topo_avaliacoes": 32,
+     "topo_metros": 2390
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "OrthoDontic",
+     "vezes_na_frente": 6
+    },
+    {
+     "nome": "Dr. Vicente Piccoli",
+     "vezes_na_frente": 3
+    },
+    {
+     "nome": "Dra Carina Cigolini - Cirurgiã-dentista",
+     "vezes_na_frente": 3
+    },
+    {
+     "nome": "Dra Jéssica Soares | Consulta | Bruxismo | Facetas | Clareamento | Restauração | Revisão | Periodontia DENTISTA PORTO ALEGRE",
+     "vezes_na_frente": 3
+    },
+    {
+     "nome": "Dra. Marcela Bastiani | Aparelho Dentário | Implante Dentário",
+     "vezes_na_frente": 2
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 0,
+    "de": 196
+   }
+  },
+  {
+   "local_id": "uberlandia_orthodontic",
+   "praca_id": "uberlandia",
+   "rotulo": "MG · Uberlândia",
+   "unidade": "OrthoDontic · Praça Adolfo Fonseca",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 0,
+   "em_primeiro": 0,
+   "melhor_posicao": null,
+   "invisivel_perto": true,
+   "frase": "em nenhuma das 5 buscas testadas feitas a partir do próprio endereço a clínica apareceu no mapa — nem para quem está a 3 km dela",
+   "buscas": [
+    {
+     "frase": "aparelho ortodontico uberlandia",
+     "intencao": "GENÉRICO",
+     "posicao": null,
+     "topo": "Dr. Danilo Cunha - Ortodontista",
+     "topo_avaliacoes": 126,
+     "topo_metros": 124
+    },
+    {
+     "frase": "guilherme ortodontista uberlandia",
+     "intencao": "BAIRRO",
+     "posicao": null,
+     "topo": "Dr. Guilherme Almeida - Ortodontista",
+     "topo_avaliacoes": 4,
+     "topo_metros": 786
+    },
+    {
+     "frase": "melhor ortodontista de uberlandia",
+     "intencao": "REPUTAÇÃO",
+     "posicao": null,
+     "topo": "Dra. Mariel Paschoal",
+     "topo_avaliacoes": 184,
+     "topo_metros": 1216
+    },
+    {
+     "frase": "ortodontista em uberlândia",
+     "intencao": "GENÉRICO",
+     "posicao": null,
+     "topo": "Dra. Mariel Paschoal",
+     "topo_avaliacoes": 184,
+     "topo_metros": 1216
+    },
+    {
+     "frase": "ortodontista uberlândia",
+     "intencao": "GENÉRICO",
+     "posicao": null,
+     "topo": "Dr. Danilo Cunha - Ortodontista",
+     "topo_avaliacoes": 126,
+     "topo_metros": 124
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Dr. Danilo Cunha - Ortodontista",
+     "vezes_na_frente": 4
+    },
+    {
+     "nome": "Dra. Mariel Paschoal",
+     "vezes_na_frente": 4
+    },
+    {
+     "nome": "Dra Mariana Pimenta Dentista - Martins Clinic",
+     "vezes_na_frente": 4
+    },
+    {
+     "nome": "Dra. Michelle Panacioni",
+     "vezes_na_frente": 3
+    },
+    {
+     "nome": "Dr. Éverton Ribeiro Lelis - Ortodontista",
+     "vezes_na_frente": 3
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 0,
+    "de": 164
+   }
+  },
+  {
+   "local_id": "orthodontic_tatuape",
+   "praca_id": "sao_paulo",
+   "rotulo": "SP · São Paulo",
+   "unidade": "OrthoDontic · Tatuapé",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 1,
+   "em_primeiro": 0,
+   "melhor_posicao": 3,
+   "invisivel_perto": false,
+   "frase": "aparece em 1 de 5 buscas feitas a partir do próprio endereço, melhor posição: 3º",
+   "buscas": [
+    {
+     "frase": "aparelho ortodontico sao paulo",
+     "intencao": "GENÉRICO",
+     "posicao": 3,
+     "topo": "Dentista no Tatuapé | Dra. Mouriel Alves - Implantes, Lentes de Resina, Grillz e Clínico Geral",
+     "topo_avaliacoes": 60,
+     "topo_metros": 307
+    },
+    {
+     "frase": "melhor ortodontista de são paulo",
+     "intencao": "REPUTAÇÃO",
+     "posicao": null,
+     "topo": "Dra. Jéssica Haddad",
+     "topo_avaliacoes": 76,
+     "topo_metros": 830
+    },
+    {
+     "frase": "ortodontista em sao paulo",
+     "intencao": "GENÉRICO",
+     "posicao": null,
+     "topo": "Dentista no Tatuapé | Dra. Mouriel Alves - Implantes, Lentes de Resina, Grillz e Clínico Geral",
+     "topo_avaliacoes": 60,
+     "topo_metros": 307
+    },
+    {
+     "frase": "ortodontista são paulo",
+     "intencao": "GENÉRICO",
+     "posicao": null,
+     "topo": "Dra Juliana Furtado Gaia -Ortodontista-Aparelho Invisível Sousmile- Invisalign -Tatuapé",
+     "topo_avaliacoes": 8,
+     "topo_metros": 1008
+    },
+    {
+     "frase": "vaga ortodontista sao paulo",
+     "intencao": "RUÍDO",
+     "posicao": null,
+     "topo": "Dentista no Tatuapé | Dra. Mouriel Alves - Implantes, Lentes de Resina, Grillz e Clínico Geral",
+     "topo_avaliacoes": 60,
+     "topo_metros": 307
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Dentista no Tatuapé | Dra. Mouriel Alves - Implantes, Lentes de Resina, Grillz e Clínico Geral",
+     "vezes_na_frente": 4
+    },
+    {
+     "nome": "Dra Juliana Furtado Gaia -Ortodontista-Aparelho Invisível Sousmile- Invisalign -Tatuapé",
+     "vezes_na_frente": 3
+    },
+    {
+     "nome": "Dra Caroline Guedes - Dentista Tatuapé | Ortodontia | Facetas Dentais | Endodontia",
+     "vezes_na_frente": 3
+    },
+    {
+     "nome": "Dra. Jéssica Haddad",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Sorridents Clínicas Odontológicas Tatuapé São Paulo",
+     "vezes_na_frente": 2
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 0,
+    "de": 193
+   }
+  },
+  {
+   "local_id": "orthodontic_republica",
+   "praca_id": "sao_paulo",
+   "rotulo": "SP · São Paulo",
+   "unidade": "OrthoDontic · República",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 1,
+   "em_primeiro": 0,
+   "melhor_posicao": 3,
+   "invisivel_perto": false,
+   "frase": "aparece em 1 de 5 buscas feitas a partir do próprio endereço, melhor posição: 3º",
+   "buscas": [
+    {
+     "frase": "aparelho ortodontico sao paulo",
+     "intencao": "GENÉRICO",
+     "posicao": 3,
+     "topo": "Dra Kátia Rie",
+     "topo_avaliacoes": 59,
+     "topo_metros": 2110
+    },
+    {
+     "frase": "melhor ortodontista de são paulo",
+     "intencao": "REPUTAÇÃO",
+     "posicao": null,
+     "topo": "Clínica Odontológica Dra. Mayara Vianna | Dentista no Centro de São Paulo",
+     "topo_avaliacoes": 72,
+     "topo_metros": 454
+    },
+    {
+     "frase": "ortodontista em sao paulo",
+     "intencao": "GENÉRICO",
+     "posicao": null,
+     "topo": "Clínica Odontológica Dra. Mayara Vianna | Dentista no Centro de São Paulo",
+     "topo_avaliacoes": 72,
+     "topo_metros": 454
+    },
+    {
+     "frase": "ortodontista são paulo",
+     "intencao": "GENÉRICO",
+     "posicao": null,
+     "topo": "Clínica Odontológica Dra. Mayara Vianna | Dentista no Centro de São Paulo",
+     "topo_avaliacoes": 72,
+     "topo_metros": 454
+    },
+    {
+     "frase": "vaga ortodontista sao paulo",
+     "intencao": "RUÍDO",
+     "posicao": null,
+     "topo": "Clínica Odontológica Dra. Mayara Vianna | Dentista no Centro de São Paulo",
+     "topo_avaliacoes": 72,
+     "topo_metros": 454
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Dra Kátia Rie",
+     "vezes_na_frente": 4
+    },
+    {
+     "nome": "Clínica Odontológica Dra. Mayara Vianna | Dentista no Centro de São Paulo",
+     "vezes_na_frente": 4
+    },
+    {
+     "nome": "Dra. Myrna Biondo",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "DRB Odonto | Implantes, Próteses, Ortodontia e Estética no Centro de São Paulo - SP",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Dra. Mônica Macedo",
+     "vezes_na_frente": 2
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 0,
+    "de": 193
+   }
+  },
+  {
+   "local_id": "uberlandia_orthodontic_centro",
+   "praca_id": "uberlandia",
+   "rotulo": "MG · Uberlândia",
+   "unidade": "OrthoDontic · Av. Floriano Peixoto",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 1,
+   "em_primeiro": 0,
+   "melhor_posicao": 4,
+   "invisivel_perto": false,
+   "frase": "aparece em 1 de 5 buscas feitas a partir do próprio endereço, melhor posição: 4º",
+   "buscas": [
+    {
+     "frase": "aparelho ortodontico uberlandia",
+     "intencao": "GENÉRICO",
+     "posicao": 4,
+     "topo": "Dra. Mariel Paschoal",
+     "topo_avaliacoes": 184,
+     "topo_metros": 868
+    },
+    {
+     "frase": "guilherme ortodontista uberlandia",
+     "intencao": "BAIRRO",
+     "posicao": null,
+     "topo": "Dr. Guilherme Almeida - Ortodontista",
+     "topo_avaliacoes": 4,
+     "topo_metros": 544
+    },
+    {
+     "frase": "melhor ortodontista de uberlandia",
+     "intencao": "REPUTAÇÃO",
+     "posicao": null,
+     "topo": "Dra. Mariel Paschoal",
+     "topo_avaliacoes": 184,
+     "topo_metros": 868
+    },
+    {
+     "frase": "ortodontista em uberlândia",
+     "intencao": "GENÉRICO",
+     "posicao": null,
+     "topo": "Dra. Mariel Paschoal",
+     "topo_avaliacoes": 184,
+     "topo_metros": 868
+    },
+    {
+     "frase": "ortodontista uberlândia",
+     "intencao": "GENÉRICO",
+     "posicao": null,
+     "topo": "Dra. Mariel Paschoal",
+     "topo_avaliacoes": 184,
+     "topo_metros": 868
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Dra. Mariel Paschoal",
+     "vezes_na_frente": 4
+    },
+    {
+     "nome": "Dr. Danilo Cunha - Ortodontista",
+     "vezes_na_frente": 4
+    },
+    {
+     "nome": "Dra Mariana Pimenta Dentista - Martins Clinic",
+     "vezes_na_frente": 3
+    },
+    {
+     "nome": "Dr Gustavo Rezende",
+     "vezes_na_frente": 3
+    },
+    {
+     "nome": "Dra. Michelle Panacioni",
+     "vezes_na_frente": 2
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 1,
+    "de": 164
+   }
+  },
+  {
+   "local_id": "ortho_fln_centro",
+   "praca_id": "florianopolis",
+   "rotulo": "SC · Florianópolis",
+   "unidade": "OrthoDontic · Rua Sete de Setembro",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 2,
+   "em_primeiro": 0,
+   "melhor_posicao": 4,
+   "invisivel_perto": false,
+   "frase": "aparece em 2 de 5 buscas feitas a partir do próprio endereço, melhor posição: 4º",
+   "buscas": [
+    {
+     "frase": "aparelho ortodôntico florianópolis",
+     "intencao": "GENÉRICO",
+     "posicao": 4,
+     "topo": "OrthoDontic Florianópolis - Rua Deodoro, Centro.",
+     "topo_avaliacoes": 268,
+     "topo_metros": 303
+    },
+    {
+     "frase": "ortodontista centro florianopolis",
+     "intencao": "BAIRRO",
+     "posicao": 5,
+     "topo": "OrthoDontic Florianópolis - Rua Deodoro, Centro.",
+     "topo_avaliacoes": 268,
+     "topo_metros": 303
+    },
+    {
+     "frase": "ortodontista em florianópolis",
+     "intencao": "GENÉRICO",
+     "posicao": null,
+     "topo": "Dra. Priscila Andrade",
+     "topo_avaliacoes": 66,
+     "topo_metros": 328
+    },
+    {
+     "frase": "ortodontista florianópolis",
+     "intencao": "GENÉRICO",
+     "posicao": null,
+     "topo": "OrthoDontic Florianópolis - Rua Deodoro, Centro.",
+     "topo_avaliacoes": 268,
+     "topo_metros": 303
+    },
+    {
+     "frase": "vaga ortodontista florianópolis",
+     "intencao": "RUÍDO",
+     "posicao": null,
+     "topo": "Dra. Cinara Duarte | Invisalign Florianópolis",
+     "topo_avaliacoes": 44,
+     "topo_metros": 328
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Dra. Priscila Andrade",
+     "vezes_na_frente": 5
+    },
+    {
+     "nome": "OrthoDontic Florianópolis - Rua Deodoro, Centro.",
+     "vezes_na_frente": 4
+    },
+    {
+     "nome": "Dra Cristhiane Danielli Ortodontista",
+     "vezes_na_frente": 3
+    },
+    {
+     "nome": "Dra. Cinara Duarte | Invisalign Florianópolis",
+     "vezes_na_frente": 3
+    },
+    {
+     "nome": "Dra. Letícia Sobreiro Ortodontia Especializada Florianópolis",
+     "vezes_na_frente": 2
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 3,
+    "de": 130
+   }
+  },
+  {
+   "local_id": "ortho_soro_jardim_faculdade",
+   "praca_id": "sorocaba",
+   "rotulo": "SP · Sorocaba",
+   "unidade": "OrthoDontic · Jardim Faculdade",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 2,
+   "em_primeiro": 0,
+   "melhor_posicao": 3,
+   "invisivel_perto": false,
+   "frase": "aparece em 2 de 5 buscas feitas a partir do próprio endereço, melhor posição: 3º",
+   "buscas": [
+    {
+     "frase": "aparelho ortodontico em sorocaba",
+     "intencao": "GENÉRICO",
+     "posicao": 5,
+     "topo": "Clínica Figueiredo - Invisalign Sorocaba - Ortodontia Digital - Dr. Márcio Figueiredo e Dr. Gustavo Figueiredo",
+     "topo_avaliacoes": 275,
+     "topo_metros": 524
+    },
+    {
+     "frase": "aparelho ortodôntico sorocaba",
+     "intencao": "GENÉRICO",
+     "posicao": 3,
+     "topo": "Clínica Figueiredo - Invisalign Sorocaba - Ortodontia Digital - Dr. Márcio Figueiredo e Dr. Gustavo Figueiredo",
+     "topo_avaliacoes": 275,
+     "topo_metros": 524
+    },
+    {
+     "frase": "ortodontista infantil sorocaba",
+     "intencao": "CRIANÇA",
+     "posicao": null,
+     "topo": "Dra. Meri Cleis R. Cordeiro - Odontopediatra | Dentista Infantil",
+     "topo_avaliacoes": 32,
+     "topo_metros": 362
+    },
+    {
+     "frase": "ortodontista sorocaba",
+     "intencao": "GENÉRICO",
+     "posicao": null,
+     "topo": "Clínica Figueiredo - Invisalign Sorocaba - Ortodontia Digital - Dr. Márcio Figueiredo e Dr. Gustavo Figueiredo",
+     "topo_avaliacoes": 275,
+     "topo_metros": 524
+    },
+    {
+     "frase": "ortodontista sorocaba sp",
+     "intencao": "GENÉRICO",
+     "posicao": null,
+     "topo": "Clínica Figueiredo - Invisalign Sorocaba - Ortodontia Digital - Dr. Márcio Figueiredo e Dr. Gustavo Figueiredo",
+     "topo_avaliacoes": 275,
+     "topo_metros": 524
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Clínica Figueiredo - Invisalign Sorocaba - Ortodontia Digital - Dr. Márcio Figueiredo e Dr. Gustavo Figueiredo",
+     "vezes_na_frente": 4
+    },
+    {
+     "nome": "Dra Cristiane Muscari - Invisalign - Tratamento de Ronco e Apneia - Sorocaba SP",
+     "vezes_na_frente": 4
+    },
+    {
+     "nome": "Dra. Míriam Scarpanti | Especialista em Canal, Consulta de Urgência 24 horas e Clínica Geral (somente particular)",
+     "vezes_na_frente": 3
+    },
+    {
+     "nome": "Dra. Daniela Rodrigues - Odontologia",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Dra Daniela Pellegrini - Ortodontia e Invisalign Sorocaba",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 3,
+    "de": 195
+   }
+  },
+  {
+   "local_id": "ortho_pp",
+   "praca_id": "prudente",
+   "rotulo": "SP · Presidente Prudente",
+   "unidade": "OrthoDontic",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 2,
+   "em_primeiro": 1,
+   "melhor_posicao": 1,
+   "invisivel_perto": false,
+   "frase": "aparece em 2 de 5 buscas feitas a partir do próprio endereço, em 1 vez em 1º lugar",
+   "buscas": [
+    {
+     "frase": "dentista presidente prudente",
+     "intencao": "GENÉRICO",
+     "posicao": null,
+     "topo": "Dentista 24 Horas !!! Odontologia Santé Bucco - Dentaire",
+     "topo_avaliacoes": 47,
+     "topo_metros": 978
+    },
+    {
+     "frase": "dentista presidente prudente centro",
+     "intencao": "BAIRRO",
+     "posicao": null,
+     "topo": "Dia Do Sorriso",
+     "topo_avaliacoes": 212,
+     "topo_metros": 598
+    },
+    {
+     "frase": "dentista presidente prudente unimed",
+     "intencao": "CONVÊNIO",
+     "posicao": null,
+     "topo": "Dentista 24 Horas !!! Odontologia Santé Bucco - Dentaire",
+     "topo_avaliacoes": 47,
+     "topo_metros": 978
+    },
+    {
+     "frase": "ortodontista em presidente prudente",
+     "intencao": "GENÉRICO",
+     "posicao": 3,
+     "topo": "Dra. Ana Cláudia Balizardo - Ortodontia e Ortopedia Facial em Presidente Prudente",
+     "topo_avaliacoes": 1,
+     "topo_metros": 664
+    },
+    {
+     "frase": "ortodontista presidente prudente",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 592,
+     "topo_metros": 0
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Dra. Letícia Ribas - Dentista",
+     "vezes_na_frente": 3
+    },
+    {
+     "nome": "Dentista 24 Horas !!! Odontologia Santé Bucco - Dentaire",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Dra. Carine Muniz",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Heaven Odontologia - Dra Sandra Brito",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Bongiovanni Odontologia | Implante Dentário | Dentista | Bairro do Bosque | Presidente Prudente - SP",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 2,
+    "de": 106
+   }
+  },
+  {
+   "local_id": "orthodontic_kayser",
+   "praca_id": "caxias_do_sul",
+   "rotulo": "RS · Caxias do Sul",
+   "unidade": "OrthoDontic · Kayser",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 2,
+   "em_primeiro": 2,
+   "melhor_posicao": 1,
+   "invisivel_perto": false,
+   "frase": "aparece em 2 de 5 buscas feitas a partir do próprio endereço, em 2 vezes em 1º lugar",
+   "buscas": [
+    {
+     "frase": "aparelho ortodontico caxias do sul",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 91,
+     "topo_metros": 0
+    },
+    {
+     "frase": "avaliações sobre marcos guerra ortodontista caxias do sul",
+     "intencao": "BAIRRO",
+     "posicao": null,
+     "topo": "Marcos Guerra ORTODONTISTA",
+     "topo_avaliacoes": 2,
+     "topo_metros": 2496
+    },
+    {
+     "frase": "marcos guerra ortodontista caxias do sul",
+     "intencao": "BAIRRO",
+     "posicao": null,
+     "topo": "Marcos Guerra ORTODONTISTA",
+     "topo_avaliacoes": 2,
+     "topo_metros": 2496
+    },
+    {
+     "frase": "ortodontista caxias do sul",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 91,
+     "topo_metros": 0
+    },
+    {
+     "frase": "vaga ortodontista caxias do sul",
+     "intencao": "RUÍDO",
+     "posicao": null,
+     "topo": "Dra. Marcela de Barros - Invisalign em Caxias do Sul - Lentes de Contato Dental - Clareamento Dental",
+     "topo_avaliacoes": 12,
+     "topo_metros": 2332
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Marcos Guerra ORTODONTISTA",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "OrthoDontic",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Dra. Marcela de Barros - Invisalign em Caxias do Sul - Lentes de Contato Dental - Clareamento Dental",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "OrtoClínica",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Von Dentz Odontologia",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 1,
+    "de": 167
+   }
+  },
+  {
+   "local_id": "sao_paulo_orthodontic",
+   "praca_id": "sao_paulo",
+   "rotulo": "SP · São Paulo",
+   "unidade": "OrthoDontic · Lapa",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 3,
+   "em_primeiro": 0,
+   "melhor_posicao": 2,
+   "invisivel_perto": false,
+   "frase": "aparece em 3 de 5 buscas feitas a partir do próprio endereço, melhor posição: 2º",
+   "buscas": [
+    {
+     "frase": "aparelho ortodontico sao paulo",
+     "intencao": "GENÉRICO",
+     "posicao": 2,
+     "topo": "Ana Karla de Souza",
+     "topo_avaliacoes": 290,
+     "topo_metros": 455
+    },
+    {
+     "frase": "melhor ortodontista de são paulo",
+     "intencao": "REPUTAÇÃO",
+     "posicao": null,
+     "topo": "Ana Karla de Souza",
+     "topo_avaliacoes": 290,
+     "topo_metros": 455
+    },
+    {
+     "frase": "ortodontista em sao paulo",
+     "intencao": "GENÉRICO",
+     "posicao": null,
+     "topo": "Dra. Myrna Biondo",
+     "topo_avaliacoes": 204,
+     "topo_metros": 5022
+    },
+    {
+     "frase": "ortodontista são paulo",
+     "intencao": "GENÉRICO",
+     "posicao": 6,
+     "topo": "Ana Karla de Souza",
+     "topo_avaliacoes": 290,
+     "topo_metros": 455
+    },
+    {
+     "frase": "vaga ortodontista sao paulo",
+     "intencao": "RUÍDO",
+     "posicao": 7,
+     "topo": "Dra Giuliana Rodrigues",
+     "topo_avaliacoes": 81,
+     "topo_metros": 171
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Ana Karla de Souza",
+     "vezes_na_frente": 4
+    },
+    {
+     "nome": "Dra. Cristina Wakamatsu",
+     "vezes_na_frente": 3
+    },
+    {
+     "nome": "Dra. ARIANE RAMOS - Disfunção ATM - DTM e Dor Orofacial.",
+     "vezes_na_frente": 3
+    },
+    {
+     "nome": "Dra. Myrna Biondo",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Dra. Nadja Offa",
+     "vezes_na_frente": 2
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 0,
+    "de": 193
+   }
+  },
+  {
+   "local_id": "caxias_do_su_orthodontic_centro",
+   "praca_id": "caxias_do_sul",
+   "rotulo": "RS · Caxias do Sul",
+   "unidade": "OrthoDontic · Av. Júlio de Castilhos",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 3,
+   "em_primeiro": 0,
+   "melhor_posicao": 2,
+   "invisivel_perto": false,
+   "frase": "aparece em 3 de 5 buscas feitas a partir do próprio endereço, melhor posição: 2º",
+   "buscas": [
+    {
+     "frase": "aparelho ortodontico caxias do sul",
+     "intencao": "GENÉRICO",
+     "posicao": 2,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 362,
+     "topo_metros": 255
+    },
+    {
+     "frase": "avaliações sobre marcos guerra ortodontista caxias do sul",
+     "intencao": "BAIRRO",
+     "posicao": null,
+     "topo": "Marcos Guerra ORTODONTISTA",
+     "topo_avaliacoes": 2,
+     "topo_metros": 674
+    },
+    {
+     "frase": "marcos guerra ortodontista caxias do sul",
+     "intencao": "BAIRRO",
+     "posicao": null,
+     "topo": "Marcos Guerra ORTODONTISTA",
+     "topo_avaliacoes": 2,
+     "topo_metros": 674
+    },
+    {
+     "frase": "ortodontista caxias do sul",
+     "intencao": "GENÉRICO",
+     "posicao": 2,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 362,
+     "topo_metros": 255
+    },
+    {
+     "frase": "vaga ortodontista caxias do sul",
+     "intencao": "RUÍDO",
+     "posicao": 2,
+     "topo": "Dra.Andréa Letti",
+     "topo_avaliacoes": 71,
+     "topo_metros": 59
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "OrthoDontic",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Marcos Guerra ORTODONTISTA",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Dra.Andréa Letti",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 0,
+    "de": 167
+   }
+  },
+  {
+   "local_id": "ortho_cba_dom_bosco",
+   "praca_id": "cuiaba",
+   "rotulo": "MT · Cuiabá",
+   "unidade": "OrthoDontic · Centro Sul",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 3,
+   "em_primeiro": 0,
+   "melhor_posicao": 2,
+   "invisivel_perto": false,
+   "frase": "aparece em 3 de 5 buscas feitas a partir do próprio endereço, melhor posição: 2º",
+   "buscas": [
+    {
+     "frase": "aparelho ortodôntico cuiaba",
+     "intencao": "GENÉRICO",
+     "posicao": 2,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 1223,
+     "topo_metros": 610
+    },
+    {
+     "frase": "dentista cuiabá centro",
+     "intencao": "BAIRRO",
+     "posicao": null,
+     "topo": "Consultório Odontológico Dra Michelly Ramos. Atendimento de Urgência e Emergência",
+     "topo_avaliacoes": 14,
+     "topo_metros": 418
+    },
+    {
+     "frase": "ortodontista cuiabá",
+     "intencao": "GENÉRICO",
+     "posicao": 5,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 1223,
+     "topo_metros": 610
+    },
+    {
+     "frase": "ortodontista em cuiabá",
+     "intencao": "GENÉRICO",
+     "posicao": 8,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 1223,
+     "topo_metros": 610
+    },
+    {
+     "frase": "vaga ortodontista cuiaba",
+     "intencao": "RUÍDO",
+     "posicao": null,
+     "topo": "Dra. Paula Viana | Dentista | Bairro Lixeira - Cuiabá",
+     "topo_avaliacoes": 62,
+     "topo_metros": 1928
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "OrthoDontic",
+     "vezes_na_frente": 4
+    },
+    {
+     "nome": "ODONTO MEDICINA 🦷",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Aparelho invisível SOUSMILE Cuiabá - Dra. Laura Damo",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Dra. Noelani Lew - Ortodontista em Cuiabá",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Dra. Iara Marcon",
+     "vezes_na_frente": 2
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 0,
+    "de": 151
+   }
+  },
+  {
+   "local_id": "ortho_gyn_st_oeste",
+   "praca_id": "goiania",
+   "rotulo": "GO · Goiânia",
+   "unidade": "OrthoDontic · St. Oeste",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 3,
+   "em_primeiro": 0,
+   "melhor_posicao": 2,
+   "invisivel_perto": false,
+   "frase": "aparece em 3 de 5 buscas feitas a partir do próprio endereço, melhor posição: 2º",
+   "buscas": [
+    {
+     "frase": "aparelho ortodôntico em goiania",
+     "intencao": "GENÉRICO",
+     "posicao": 4,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 268,
+     "topo_metros": 1085
+    },
+    {
+     "frase": "aparelho ortodôntico goiânia",
+     "intencao": "GENÉRICO",
+     "posicao": 2,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 268,
+     "topo_metros": 1085
+    },
+    {
+     "frase": "ortodontista em goiânia",
+     "intencao": "GENÉRICO",
+     "posicao": null,
+     "topo": "Dra Ana Karoline Vilela Porto / Invisalign Goiânia",
+     "topo_avaliacoes": 27,
+     "topo_metros": 1586
+    },
+    {
+     "frase": "ortodontista goiania ipasgo",
+     "intencao": "BAIRRO",
+     "posicao": null,
+     "topo": "Pronto Socorro em Odontologia 24h",
+     "topo_avaliacoes": 244,
+     "topo_metros": 2397
+    },
+    {
+     "frase": "ortodontista goiânia",
+     "intencao": "GENÉRICO",
+     "posicao": 8,
+     "topo": "Dra. Aline Carneiro - Ortodontista - Especialista em Pacientes Especiais",
+     "topo_avaliacoes": 8,
+     "topo_metros": 1262
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "OrthoDontic",
+     "vezes_na_frente": 4
+    },
+    {
+     "nome": "Dra. Aline Carneiro - Ortodontista - Especialista em Pacientes Especiais",
+     "vezes_na_frente": 3
+    },
+    {
+     "nome": "Dra. Elen Juliana Lemes",
+     "vezes_na_frente": 3
+    },
+    {
+     "nome": "Dra Ana Karoline Vilela Porto / Invisalign Goiânia",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Dra Laura - Ortodontia Infantil ,Teens e Ronco Adultos",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 6,
+    "de": 196
+   }
+  },
+  {
+   "local_id": "ortho_joi_america",
+   "praca_id": "joinville",
+   "rotulo": "SC · Joinville",
+   "unidade": "OrthoDontic · América",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 3,
+   "em_primeiro": 0,
+   "melhor_posicao": 3,
+   "invisivel_perto": false,
+   "frase": "aparece em 3 de 5 buscas feitas a partir do próprio endereço, melhor posição: 3º",
+   "buscas": [
+    {
+     "frase": "aparelho ortodontico joinville",
+     "intencao": "GENÉRICO",
+     "posicao": 3,
+     "topo": "Dra. Gizelle Valentim",
+     "topo_avaliacoes": 87,
+     "topo_metros": 480
+    },
+    {
+     "frase": "ortodontista em joinville",
+     "intencao": "GENÉRICO",
+     "posicao": null,
+     "topo": "Dra. Gizelle Valentim",
+     "topo_avaliacoes": 87,
+     "topo_metros": 480
+    },
+    {
+     "frase": "ortodontista infantil joinville",
+     "intencao": "CRIANÇA",
+     "posicao": null,
+     "topo": "Dra. Gabriela Machado",
+     "topo_avaliacoes": 93,
+     "topo_metros": 1865
+    },
+    {
+     "frase": "ortodontista joinville",
+     "intencao": "GENÉRICO",
+     "posicao": 8,
+     "topo": "Dra. Gizelle Valentim",
+     "topo_avaliacoes": 87,
+     "topo_metros": 480
+    },
+    {
+     "frase": "vaga ortodontista joinville",
+     "intencao": "RUÍDO",
+     "posicao": 7,
+     "topo": "Dra. Camila Mendes, Cirurgiã-Dentista em Joinville",
+     "topo_avaliacoes": 18,
+     "topo_metros": 583
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Dra. Gizelle Valentim",
+     "vezes_na_frente": 4
+    },
+    {
+     "nome": "Dra. Camila Mendes, Cirurgiã-Dentista em Joinville",
+     "vezes_na_frente": 3
+    },
+    {
+     "nome": "Dra. Larissa Floriano | Dentista",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Dra. Luíza Koerber",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Dra. Suelyn Henklein",
+     "vezes_na_frente": 2
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 3,
+    "de": 157
+   }
+  },
+  {
+   "local_id": "ortho_mafra",
+   "praca_id": "mafra",
+   "rotulo": "SC · Mafra",
+   "unidade": "OrthoDontic",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 3,
+   "em_primeiro": 0,
+   "melhor_posicao": 4,
+   "invisivel_perto": false,
+   "frase": "aparece em 3 de 5 buscas feitas a partir do próprio endereço, melhor posição: 4º",
+   "buscas": [
+    {
+     "frase": "dentista fabiano mafra sc",
+     "intencao": "BAIRRO",
+     "posicao": null,
+     "topo": "Centro Odontológico Dr. Fabiano Grahl de Souza",
+     "topo_avaliacoes": 69,
+     "topo_metros": 73
+    },
+    {
+     "frase": "dentista mafra",
+     "intencao": "GENÉRICO",
+     "posicao": 7,
+     "topo": "Susin Odontologia | Dentista Mafra | Lente de contato | Implante | Periodontia | Tratamento de canal",
+     "topo_avaliacoes": 447,
+     "topo_metros": 630
+    },
+    {
+     "frase": "dentista mafra abertos agora",
+     "intencao": "URGÊNCIA",
+     "posicao": null,
+     "topo": "Farmácia Santa Catarina / ACFARMA",
+     "topo_avaliacoes": 97,
+     "topo_metros": 930
+    },
+    {
+     "frase": "dentista mafra adse",
+     "intencao": "GENÉRICO",
+     "posicao": 4,
+     "topo": "OdontoCompany Mafra",
+     "topo_avaliacoes": 339,
+     "topo_metros": 609
+    },
+    {
+     "frase": "dentista mafra sc",
+     "intencao": "GENÉRICO",
+     "posicao": 8,
+     "topo": "Dra Camila Clemente - Endodontia e Clínica Geral",
+     "topo_avaliacoes": 28,
+     "topo_metros": 392
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "OdontoCompany Mafra",
+     "vezes_na_frente": 3
+    },
+    {
+     "nome": "Susin Odontologia | Dentista Mafra | Lente de contato | Implante | Periodontia | Tratamento de canal",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Dra Camila Clemente - Endodontia e Clínica Geral",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Instituto Lumière - Mafra",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Dra Jéssica Marcondes",
+     "vezes_na_frente": 2
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 5,
+    "de": 64
+   }
+  },
+  {
+   "local_id": "caxias_do_su_orthodontic",
+   "praca_id": "caxias_do_sul",
+   "rotulo": "RS · Caxias do Sul",
+   "unidade": "OrthoDontic · R. Pinheiro Machado",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 3,
+   "em_primeiro": 2,
+   "melhor_posicao": 1,
+   "invisivel_perto": false,
+   "frase": "aparece em 3 de 5 buscas feitas a partir do próprio endereço, em 2 vezes em 1º lugar",
+   "buscas": [
+    {
+     "frase": "aparelho ortodontico caxias do sul",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 362,
+     "topo_metros": 0
+    },
+    {
+     "frase": "avaliações sobre marcos guerra ortodontista caxias do sul",
+     "intencao": "BAIRRO",
+     "posicao": null,
+     "topo": "Marcos Guerra ORTODONTISTA",
+     "topo_avaliacoes": 2,
+     "topo_metros": 905
+    },
+    {
+     "frase": "marcos guerra ortodontista caxias do sul",
+     "intencao": "BAIRRO",
+     "posicao": null,
+     "topo": "Marcos Guerra ORTODONTISTA",
+     "topo_avaliacoes": 2,
+     "topo_metros": 905
+    },
+    {
+     "frase": "ortodontista caxias do sul",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 362,
+     "topo_metros": 0
+    },
+    {
+     "frase": "vaga ortodontista caxias do sul",
+     "intencao": "RUÍDO",
+     "posicao": 3,
+     "topo": "Dra.Andréa Letti",
+     "topo_avaliacoes": 71,
+     "topo_metros": 234
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Marcos Guerra ORTODONTISTA",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Dra.Andréa Letti",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "OrthoDontic",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 0,
+    "de": 167
+   }
+  },
+  {
+   "local_id": "ortho_contagem",
+   "praca_id": "contagem",
+   "rotulo": "MG · Contagem",
+   "unidade": "OrthoDontic",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 3,
+   "em_primeiro": 2,
+   "melhor_posicao": 1,
+   "invisivel_perto": false,
+   "frase": "aparece em 3 de 5 buscas feitas a partir do próprio endereço, em 2 vezes em 1º lugar",
+   "buscas": [
+    {
+     "frase": "aparelho ortodôntico contagem",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 858,
+     "topo_metros": 0
+    },
+    {
+     "frase": "dentista contagem",
+     "intencao": "GENÉRICO",
+     "posicao": null,
+     "topo": "ODONTO ART DENTISTA 24 HORAS CONTAGEM",
+     "topo_avaliacoes": 1729,
+     "topo_metros": 67
+    },
+    {
+     "frase": "dentista contagem perto de mim",
+     "intencao": "GENÉRICO",
+     "posicao": null,
+     "topo": "ODONTO ART DENTISTA 24 HORAS CONTAGEM",
+     "topo_avaliacoes": 1729,
+     "topo_metros": 67
+    },
+    {
+     "frase": "ortodontista contagem",
+     "intencao": "GENÉRICO",
+     "posicao": 2,
+     "topo": "Dra. Samila Resende - Invisalign Doctor",
+     "topo_avaliacoes": 516,
+     "topo_metros": 111
+    },
+    {
+     "frase": "ortodontista em contagem",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 858,
+     "topo_metros": 0
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "ODONTO ART DENTISTA 24 HORAS CONTAGEM",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Dr. Daniel Paixão | Canal e Urgência em Contagem",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Oral Clin Odontologia - Dentista em Contagem | Alinhador Invisível | DTM e Bruxismo | Implantes | Canal com Microscópio",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Inova Odontologia Integrada - Dentista em Contagem",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Dra. Samila Resende - Invisalign Doctor",
+     "vezes_na_frente": 2
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 3,
+    "de": 140
+   }
+  },
+  {
+   "local_id": "ortho_palmas",
+   "praca_id": "palmas",
+   "rotulo": "TO · Palmas",
+   "unidade": "OrthoDontic",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 3,
+   "em_primeiro": 3,
+   "melhor_posicao": 1,
+   "invisivel_perto": false,
+   "frase": "aparece em 3 de 5 buscas feitas a partir do próprio endereço, em 3 vezes em 1º lugar",
+   "buscas": [
+    {
+     "frase": "aparelho ortodôntico palmas",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 306,
+     "topo_metros": 0
+    },
+    {
+     "frase": "dentista palmas",
+     "intencao": "GENÉRICO",
+     "posicao": null,
+     "topo": "Dentista 24hs Dra. Renata Sardinha",
+     "topo_avaliacoes": 64,
+     "topo_metros": 1650
+    },
+    {
+     "frase": "dentista palmas pr",
+     "intencao": "GENÉRICO",
+     "posicao": null,
+     "topo": "Dentista 24hs Dra. Renata Sardinha",
+     "topo_avaliacoes": 64,
+     "topo_metros": 1650
+    },
+    {
+     "frase": "ortodontista em palmas",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 306,
+     "topo_metros": 0
+    },
+    {
+     "frase": "ortodontista palmas",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 306,
+     "topo_metros": 0
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Dentista 24hs Dra. Renata Sardinha",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Clínica Dra Michelly Gonzaga | Especialista em Tratamento de Canal, Restaurações, Facetas e Clareamento | Palmas - TO",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Clínica Hardencor Odontologia",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Dra. Alinne Antunes | Cirurgiã Dentista | Especialista em Dentística | Facetas de Resina| Clínica Odontológica em Palmas",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra. Aline Rodrigues - Odontologia Estética",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 3,
+    "de": 120
+   }
+  },
+  {
+   "local_id": "ortho_poa_cristo_redentor",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic · Cristo Redentor",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 3,
+   "em_primeiro": 3,
+   "melhor_posicao": 1,
+   "invisivel_perto": false,
+   "frase": "aparece em 3 de 5 buscas feitas a partir do próprio endereço, em 3 vezes em 1º lugar",
+   "buscas": [
+    {
+     "frase": "aparelho ortodôntico em porto alegre",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 245,
+     "topo_metros": 0
+    },
+    {
+     "frase": "aparelho ortodôntico no centro de porto alegre",
+     "intencao": "BAIRRO",
+     "posicao": null,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 433,
+     "topo_metros": 6663
+    },
+    {
+     "frase": "aparelho ortodôntico porto alegre",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 245,
+     "topo_metros": 0
+    },
+    {
+     "frase": "aparelho ortodôntico porto alegre preço",
+     "intencao": "PREÇO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 245,
+     "topo_metros": 0
+    },
+    {
+     "frase": "orthopride aparelho ortodôntico em porto alegre clareamento dental fotos",
+     "intencao": "BAIRRO",
+     "posicao": null,
+     "topo": "Orthopride | Aparelho Ortodôntico em Porto Alegre | Clareamento Dental",
+     "topo_avaliacoes": 32,
+     "topo_metros": 6764
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "OrthoDontic",
+     "vezes_na_frente": 3
+    },
+    {
+     "nome": "OrthoDontic - Clínica Odontológica Centro Porto Alegre - Tratamento de Canal - Periodontia - Restauração Dental - Prótese - Clareamento e Limpeza Dental - Aparelho Ortodôntico Metálico e Estético - Emergência - Extração do Siso - Faceta de Porcelana",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dentista Porto Alegre | Clínica Dental Center",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Orthopride | Aparelho Ortodôntico em Porto Alegre | Clareamento Dental",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 7,
+    "de": 196
+   }
+  },
+  {
+   "local_id": "ortho_poa_cavalhada",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic · Cavalhada",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 3,
+   "em_primeiro": 3,
+   "melhor_posicao": 1,
+   "invisivel_perto": false,
+   "frase": "aparece em 3 de 5 buscas feitas a partir do próprio endereço, em 3 vezes em 1º lugar",
+   "buscas": [
+    {
+     "frase": "aparelho ortodôntico em porto alegre",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic Clínica Odontológica em Porto Alegre RS",
+     "topo_avaliacoes": 208,
+     "topo_metros": 0
+    },
+    {
+     "frase": "aparelho ortodôntico no centro de porto alegre",
+     "intencao": "BAIRRO",
+     "posicao": null,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 433,
+     "topo_metros": 8151
+    },
+    {
+     "frase": "aparelho ortodôntico porto alegre",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic Clínica Odontológica em Porto Alegre RS",
+     "topo_avaliacoes": 208,
+     "topo_metros": 0
+    },
+    {
+     "frase": "aparelho ortodôntico porto alegre preço",
+     "intencao": "PREÇO",
+     "posicao": 1,
+     "topo": "OrthoDontic Clínica Odontológica em Porto Alegre RS",
+     "topo_avaliacoes": 208,
+     "topo_metros": 0
+    },
+    {
+     "frase": "orthopride aparelho ortodôntico em porto alegre clareamento dental fotos",
+     "intencao": "BAIRRO",
+     "posicao": null,
+     "topo": "Orthopride | Aparelho Ortodôntico em Porto Alegre | Clareamento Dental",
+     "topo_avaliacoes": 32,
+     "topo_metros": 8126
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "OrthoDontic",
+     "vezes_na_frente": 3
+    },
+    {
+     "nome": "OrthoDontic - Clínica Odontológica Centro Porto Alegre - Tratamento de Canal - Periodontia - Restauração Dental - Prótese - Clareamento e Limpeza Dental - Aparelho Ortodôntico Metálico e Estético - Emergência - Extração do Siso - Faceta de Porcelana",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dentista Porto Alegre | Clínica Dental Center",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Orthopride | Aparelho Ortodôntico em Porto Alegre | Clareamento Dental",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 2,
+    "de": 196
+   }
+  },
+  {
+   "local_id": "ortho_cwb_centro_2",
+   "praca_id": "curitiba",
+   "rotulo": "PR · Curitiba",
+   "unidade": "OrthoDontic · Av. Mal. Floriano Peixoto",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 4,
+   "em_primeiro": 0,
+   "melhor_posicao": 3,
+   "invisivel_perto": false,
+   "frase": "aparece em 4 de 5 buscas feitas a partir do próprio endereço, melhor posição: 3º",
+   "buscas": [
+    {
+     "frase": "aparelho ortodôntico curitiba",
+     "intencao": "GENÉRICO",
+     "posicao": 3,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 1012,
+     "topo_metros": 413
+    },
+    {
+     "frase": "aparelho ortodôntico curitiba preços",
+     "intencao": "PREÇO",
+     "posicao": 3,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 1012,
+     "topo_metros": 413
+    },
+    {
+     "frase": "aparelho ortodôntico em curitiba",
+     "intencao": "GENÉRICO",
+     "posicao": 4,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 1012,
+     "topo_metros": 413
+    },
+    {
+     "frase": "aparelho ortodôntico invisível curitiba",
+     "intencao": "TIPO DE APARELHO",
+     "posicao": null,
+     "topo": "Dra Juliana Fauri",
+     "topo_avaliacoes": 87,
+     "topo_metros": 1671
+    },
+    {
+     "frase": "ortodontista curitiba",
+     "intencao": "GENÉRICO",
+     "posicao": 6,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 1012,
+     "topo_metros": 413
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "OrthoDontic",
+     "vezes_na_frente": 9
+    },
+    {
+     "nome": "Dra Manuela Flores Coimbra - Ortodontista - Alinhadores Invisiveis - Invisalign Doctor- Sousmile - Curitiba",
+     "vezes_na_frente": 3
+    },
+    {
+     "nome": "Dra Juliana Fauri",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra. Letícia Zimermann | Invisalign & Tratamentos Ortodônticos",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra. Rubia Rutz | Harmonização Facial e Alinhadores Curitiba Centro",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 7,
+    "de": 213
+   }
+  },
+  {
+   "local_id": "ortho_cwb_centro_4",
+   "praca_id": "curitiba",
+   "rotulo": "PR · Curitiba",
+   "unidade": "OrthoDontic · Edifício Odin do Amaral - R. Mal. Deodoro",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 4,
+   "em_primeiro": 0,
+   "melhor_posicao": 4,
+   "invisivel_perto": false,
+   "frase": "aparece em 4 de 5 buscas feitas a partir do próprio endereço, melhor posição: 4º",
+   "buscas": [
+    {
+     "frase": "aparelho ortodôntico curitiba",
+     "intencao": "GENÉRICO",
+     "posicao": 4,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 1012,
+     "topo_metros": 194
+    },
+    {
+     "frase": "aparelho ortodôntico curitiba preços",
+     "intencao": "PREÇO",
+     "posicao": 4,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 1012,
+     "topo_metros": 194
+    },
+    {
+     "frase": "aparelho ortodôntico em curitiba",
+     "intencao": "GENÉRICO",
+     "posicao": 5,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 1012,
+     "topo_metros": 194
+    },
+    {
+     "frase": "aparelho ortodôntico invisível curitiba",
+     "intencao": "TIPO DE APARELHO",
+     "posicao": null,
+     "topo": "Dra. Letícia Zimermann | Invisalign & Tratamentos Ortodônticos",
+     "topo_avaliacoes": 23,
+     "topo_metros": 955
+    },
+    {
+     "frase": "ortodontista curitiba",
+     "intencao": "GENÉRICO",
+     "posicao": 9,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 1012,
+     "topo_metros": 194
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "OrthoDontic",
+     "vezes_na_frente": 13
+    },
+    {
+     "nome": "Dra Manuela Flores Coimbra - Ortodontista - Alinhadores Invisiveis - Invisalign Doctor- Sousmile - Curitiba",
+     "vezes_na_frente": 3
+    },
+    {
+     "nome": "Dra. Letícia Zimermann | Invisalign & Tratamentos Ortodônticos",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra Juliana Fauri",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra Ana Carolina Mastriani",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 1,
+    "de": 213
+   }
+  },
+  {
+   "local_id": "ortho_poa_centro_historico_2",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic · R. Vig. José Inácio",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 4,
+   "em_primeiro": 0,
+   "melhor_posicao": 2,
+   "invisivel_perto": false,
+   "frase": "aparece em 4 de 5 buscas feitas a partir do próprio endereço, melhor posição: 2º",
+   "buscas": [
+    {
+     "frase": "aparelho ortodôntico em porto alegre",
+     "intencao": "GENÉRICO",
+     "posicao": 2,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 433,
+     "topo_metros": 186
+    },
+    {
+     "frase": "aparelho ortodôntico no centro de porto alegre",
+     "intencao": "BAIRRO",
+     "posicao": 3,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 433,
+     "topo_metros": 186
+    },
+    {
+     "frase": "aparelho ortodôntico porto alegre",
+     "intencao": "GENÉRICO",
+     "posicao": 2,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 433,
+     "topo_metros": 186
+    },
+    {
+     "frase": "aparelho ortodôntico porto alegre preço",
+     "intencao": "PREÇO",
+     "posicao": 5,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 433,
+     "topo_metros": 186
+    },
+    {
+     "frase": "orthopride aparelho ortodôntico em porto alegre clareamento dental fotos",
+     "intencao": "BAIRRO",
+     "posicao": null,
+     "topo": "Orthopride | Aparelho Ortodôntico em Porto Alegre | Clareamento Dental",
+     "topo_avaliacoes": 32,
+     "topo_metros": 286
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "OrthoDontic",
+     "vezes_na_frente": 5
+    },
+    {
+     "nome": "OrthoDontic - Clínica Odontológica Centro Porto Alegre - Tratamento de Canal - Periodontia - Restauração Dental - Prótese - Clareamento e Limpeza Dental - Aparelho Ortodôntico Metálico e Estético - Emergência - Extração do Siso - Faceta de Porcelana",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Sorridents Porto Alegre Clinica Odontológica / Dentista",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Orthopride | Aparelho Ortodôntico em Porto Alegre | Clareamento Dental",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 5,
+    "de": 196
+   }
+  },
+  {
+   "local_id": "ortho_poa_centro_historico_3",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic · R. dos Andradas",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 4,
+   "em_primeiro": 0,
+   "melhor_posicao": 4,
+   "invisivel_perto": false,
+   "frase": "aparece em 4 de 5 buscas feitas a partir do próprio endereço, melhor posição: 4º",
+   "buscas": [
+    {
+     "frase": "aparelho ortodôntico em porto alegre",
+     "intencao": "GENÉRICO",
+     "posicao": 5,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 433,
+     "topo_metros": 250
+    },
+    {
+     "frase": "aparelho ortodôntico no centro de porto alegre",
+     "intencao": "BAIRRO",
+     "posicao": 4,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 433,
+     "topo_metros": 250
+    },
+    {
+     "frase": "aparelho ortodôntico porto alegre",
+     "intencao": "GENÉRICO",
+     "posicao": 5,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 433,
+     "topo_metros": 250
+    },
+    {
+     "frase": "aparelho ortodôntico porto alegre preço",
+     "intencao": "PREÇO",
+     "posicao": 5,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 433,
+     "topo_metros": 250
+    },
+    {
+     "frase": "orthopride aparelho ortodôntico em porto alegre clareamento dental fotos",
+     "intencao": "BAIRRO",
+     "posicao": null,
+     "topo": "Orthopride | Aparelho Ortodôntico em Porto Alegre | Clareamento Dental",
+     "topo_avaliacoes": 32,
+     "topo_metros": 153
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "OrthoDontic",
+     "vezes_na_frente": 8
+    },
+    {
+     "nome": "OrthoDontic - Clínica Odontológica Centro Porto Alegre - Tratamento de Canal - Periodontia - Restauração Dental - Prótese - Clareamento e Limpeza Dental - Aparelho Ortodôntico Metálico e Estético - Emergência - Extração do Siso - Faceta de Porcelana",
+     "vezes_na_frente": 4
+    },
+    {
+     "nome": "Sorridents Porto Alegre Clinica Odontológica / Dentista",
+     "vezes_na_frente": 3
+    },
+    {
+     "nome": "Orthopride | Aparelho Ortodôntico em Porto Alegre | Clareamento Dental",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 2,
+    "de": 196
+   }
+  },
+  {
+   "local_id": "ortho_poa_centro_historico_4",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic · R. Gen. Vitorino",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 4,
+   "em_primeiro": 0,
+   "melhor_posicao": 2,
+   "invisivel_perto": false,
+   "frase": "aparece em 4 de 5 buscas feitas a partir do próprio endereço, melhor posição: 2º",
+   "buscas": [
+    {
+     "frase": "aparelho ortodôntico em porto alegre",
+     "intencao": "GENÉRICO",
+     "posicao": 3,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 433,
+     "topo_metros": 192
+    },
+    {
+     "frase": "aparelho ortodôntico no centro de porto alegre",
+     "intencao": "BAIRRO",
+     "posicao": 2,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 433,
+     "topo_metros": 192
+    },
+    {
+     "frase": "aparelho ortodôntico porto alegre",
+     "intencao": "GENÉRICO",
+     "posicao": 3,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 433,
+     "topo_metros": 192
+    },
+    {
+     "frase": "aparelho ortodôntico porto alegre preço",
+     "intencao": "PREÇO",
+     "posicao": 5,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 433,
+     "topo_metros": 192
+    },
+    {
+     "frase": "orthopride aparelho ortodôntico em porto alegre clareamento dental fotos",
+     "intencao": "BAIRRO",
+     "posicao": null,
+     "topo": "Orthopride | Aparelho Ortodôntico em Porto Alegre | Clareamento Dental",
+     "topo_avaliacoes": 32,
+     "topo_metros": 265
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "OrthoDontic",
+     "vezes_na_frente": 8
+    },
+    {
+     "nome": "Sorridents Porto Alegre Clinica Odontológica / Dentista",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Orthopride | Aparelho Ortodôntico em Porto Alegre | Clareamento Dental",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 5,
+    "de": 196
+   }
+  },
+  {
+   "local_id": "ortho_gyn_st_central",
+   "praca_id": "goiania",
+   "rotulo": "GO · Goiânia",
+   "unidade": "OrthoDontic · St. Central",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 4,
+   "em_primeiro": 1,
+   "melhor_posicao": 1,
+   "invisivel_perto": false,
+   "frase": "aparece em 4 de 5 buscas feitas a partir do próprio endereço, em 1 vez em 1º lugar",
+   "buscas": [
+    {
+     "frase": "aparelho ortodôntico em goiania",
+     "intencao": "GENÉRICO",
+     "posicao": 2,
+     "topo": "Dra Ana Karoline Vilela Porto / Invisalign Goiânia",
+     "topo_avaliacoes": 27,
+     "topo_metros": 695
+    },
+    {
+     "frase": "aparelho ortodôntico goiânia",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 268,
+     "topo_metros": 0
+    },
+    {
+     "frase": "ortodontista em goiânia",
+     "intencao": "GENÉRICO",
+     "posicao": 2,
+     "topo": "Dra Ana Karoline Vilela Porto / Invisalign Goiânia",
+     "topo_avaliacoes": 27,
+     "topo_metros": 695
+    },
+    {
+     "frase": "ortodontista goiania ipasgo",
+     "intencao": "BAIRRO",
+     "posicao": null,
+     "topo": "Pronto Socorro em Odontologia 24h",
+     "topo_avaliacoes": 244,
+     "topo_metros": 1806
+    },
+    {
+     "frase": "ortodontista goiânia",
+     "intencao": "GENÉRICO",
+     "posicao": 2,
+     "topo": "Dra Ana Karoline Vilela Porto / Invisalign Goiânia",
+     "topo_avaliacoes": 27,
+     "topo_metros": 695
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Dra Ana Karoline Vilela Porto / Invisalign Goiânia",
+     "vezes_na_frente": 3
+    },
+    {
+     "nome": "Pronto Socorro em Odontologia 24h",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra. Ana Caroline Farias",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra. Daniela T. Pantoja",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Instituto Odontológico Marista",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 6,
+    "de": 196
+   }
+  },
+  {
+   "local_id": "ortho_joi_centro",
+   "praca_id": "joinville",
+   "rotulo": "SC · Joinville",
+   "unidade": "OrthoDontic · Centro",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 4,
+   "em_primeiro": 1,
+   "melhor_posicao": 1,
+   "invisivel_perto": false,
+   "frase": "aparece em 4 de 5 buscas feitas a partir do próprio endereço, em 1 vez em 1º lugar",
+   "buscas": [
+    {
+     "frase": "aparelho ortodontico joinville",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 513,
+     "topo_metros": 0
+    },
+    {
+     "frase": "ortodontista em joinville",
+     "intencao": "GENÉRICO",
+     "posicao": 10,
+     "topo": "Dra. Gizelle Valentim",
+     "topo_avaliacoes": 87,
+     "topo_metros": 1123
+    },
+    {
+     "frase": "ortodontista infantil joinville",
+     "intencao": "CRIANÇA",
+     "posicao": null,
+     "topo": "Dra Ivne Barbosa",
+     "topo_avaliacoes": 80,
+     "topo_metros": 923
+    },
+    {
+     "frase": "ortodontista joinville",
+     "intencao": "GENÉRICO",
+     "posicao": 6,
+     "topo": "Dr Fabiano Chaves - Clínica Integrada",
+     "topo_avaliacoes": 310,
+     "topo_metros": 287
+    },
+    {
+     "frase": "vaga ortodontista joinville",
+     "intencao": "RUÍDO",
+     "posicao": 4,
+     "topo": "Dr Fabiano Chaves - Clínica Integrada",
+     "topo_avaliacoes": 310,
+     "topo_metros": 287
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Dr Fabiano Chaves - Clínica Integrada",
+     "vezes_na_frente": 3
+    },
+    {
+     "nome": "Dra. Camila Mendes, Cirurgiã-Dentista em Joinville",
+     "vezes_na_frente": 3
+    },
+    {
+     "nome": "Dra. Gizelle Valentim",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Dra. Taciane Petronilio l Ortodontista em Joinville",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Dra. Luíza Koerber",
+     "vezes_na_frente": 2
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 4,
+    "de": 157
+   }
+  },
+  {
+   "local_id": "rio_de_janei_orthodontic",
+   "praca_id": "rio_de_janeiro",
+   "rotulo": "RJ · Rio de Janeiro",
+   "unidade": "OrthoDontic",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 4,
+   "em_primeiro": 1,
+   "melhor_posicao": 1,
+   "invisivel_perto": false,
+   "frase": "aparece em 4 de 5 buscas feitas a partir do próprio endereço, em 1 vez em 1º lugar",
+   "buscas": [
+    {
+     "frase": "aparelho ortodôntico rio de janeiro",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 308,
+     "topo_metros": 0
+    },
+    {
+     "frase": "melhor ortodontista do rio de janeiro",
+     "intencao": "REPUTAÇÃO",
+     "posicao": 3,
+     "topo": "Dra. Adma Gomes | Dentista Campo Grande RJ | Clínica Odontológica",
+     "topo_avaliacoes": 89,
+     "topo_metros": 226
+    },
+    {
+     "frase": "ortodontista campo grande rio de janeiro",
+     "intencao": "BAIRRO",
+     "posicao": 3,
+     "topo": "Dra Bianca Moreira | Dentista | Alinhador Invisível | SouSmile | Clareamento | Campo Grande - RJ",
+     "topo_avaliacoes": 16,
+     "topo_metros": 66
+    },
+    {
+     "frase": "ortodontista rio de janeiro",
+     "intencao": "GENÉRICO",
+     "posicao": 3,
+     "topo": "Dra Bianca Moreira | Dentista | Alinhador Invisível | SouSmile | Clareamento | Campo Grande - RJ",
+     "topo_avaliacoes": 16,
+     "topo_metros": 66
+    },
+    {
+     "frase": "vaga ortodontista rio de janeiro",
+     "intencao": "RUÍDO",
+     "posicao": null,
+     "topo": "Dra. Adma Gomes | Dentista Campo Grande RJ | Clínica Odontológica",
+     "topo_avaliacoes": 89,
+     "topo_metros": 226
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Dra. Adma Gomes | Dentista Campo Grande RJ | Clínica Odontológica",
+     "vezes_na_frente": 3
+    },
+    {
+     "nome": "Dra Bianca Moreira | Dentista | Alinhador Invisível | SouSmile | Clareamento | Campo Grande - RJ",
+     "vezes_na_frente": 3
+    },
+    {
+     "nome": "Dr. Fábio Valladares Ortodontia - Aparelhos e Alinhadores Invisalign - Campo Grande",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Odontoclínica Campo Grande",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dentista Zona Oeste RJ | Dra. Jaqueline Gil - A2 Odontologia",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 0,
+    "de": 197
+   }
+  },
+  {
+   "local_id": "ortho_soro_centro",
+   "praca_id": "sorocaba",
+   "rotulo": "SP · Sorocaba",
+   "unidade": "OrthoDontic · Centro",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 4,
+   "em_primeiro": 1,
+   "melhor_posicao": 1,
+   "invisivel_perto": false,
+   "frase": "aparece em 4 de 5 buscas feitas a partir do próprio endereço, em 1 vez em 1º lugar",
+   "buscas": [
+    {
+     "frase": "aparelho ortodontico em sorocaba",
+     "intencao": "GENÉRICO",
+     "posicao": 2,
+     "topo": "Clínica Figueiredo - Invisalign Sorocaba - Ortodontia Digital - Dr. Márcio Figueiredo e Dr. Gustavo Figueiredo",
+     "topo_avaliacoes": 275,
+     "topo_metros": 920
+    },
+    {
+     "frase": "aparelho ortodôntico sorocaba",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 116,
+     "topo_metros": 0
+    },
+    {
+     "frase": "ortodontista infantil sorocaba",
+     "intencao": "CRIANÇA",
+     "posicao": null,
+     "topo": "Dra. Giovanna Loratto - Odontopediatra Sorocaba",
+     "topo_avaliacoes": 80,
+     "topo_metros": 932
+    },
+    {
+     "frase": "ortodontista sorocaba",
+     "intencao": "GENÉRICO",
+     "posicao": 5,
+     "topo": "Dentista Dra. Ana Lúcia Domingues",
+     "topo_avaliacoes": 224,
+     "topo_metros": 1293
+    },
+    {
+     "frase": "ortodontista sorocaba sp",
+     "intencao": "GENÉRICO",
+     "posicao": 8,
+     "topo": "Dentista Dra. Ana Lúcia Domingues",
+     "topo_avaliacoes": 224,
+     "topo_metros": 1293
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Clínica Figueiredo - Invisalign Sorocaba - Ortodontia Digital - Dr. Márcio Figueiredo e Dr. Gustavo Figueiredo",
+     "vezes_na_frente": 3
+    },
+    {
+     "nome": "Dentista Dra. Ana Lúcia Domingues",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Dra. Daniela Rodrigues - Odontologia",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Dra.Giovana Geretti",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Dra. Giovanna Loratto - Odontopediatra Sorocaba",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 2,
+    "de": 195
+   }
+  },
+  {
+   "local_id": "ortho_fsa",
+   "praca_id": "feira",
+   "rotulo": "BA · Feira de Santana",
+   "unidade": "OrthoDontic",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 4,
+   "em_primeiro": 2,
+   "melhor_posicao": 1,
+   "invisivel_perto": false,
+   "frase": "aparece em 4 de 5 buscas feitas a partir do próprio endereço, em 2 vezes em 1º lugar",
+   "buscas": [
+    {
+     "frase": "aparelho ortodôntico feira de santana",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 170,
+     "topo_metros": 0
+    },
+    {
+     "frase": "dentista feira de santana",
+     "intencao": "GENÉRICO",
+     "posicao": null,
+     "topo": "Instituto Integrale 24 Horas - Dentista 24 Horas",
+     "topo_avaliacoes": 375,
+     "topo_metros": 1055
+    },
+    {
+     "frase": "ortodontista em feira de santana",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 170,
+     "topo_metros": 0
+    },
+    {
+     "frase": "ortodontista feira de santana",
+     "intencao": "GENÉRICO",
+     "posicao": 2,
+     "topo": "Dra. Ana Bastos - Cirurgiã-Dentista - ADAMANT",
+     "topo_avaliacoes": 10,
+     "topo_metros": 1173
+    },
+    {
+     "frase": "vaga ortodontista feira de santana",
+     "intencao": "RUÍDO",
+     "posicao": 3,
+     "topo": "Instituto Integrale 24 Horas - Dentista 24 Horas",
+     "topo_avaliacoes": 375,
+     "topo_metros": 1055
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Instituto Integrale 24 Horas - Dentista 24 Horas",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "COAF | Dentista 24 horas",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Clínica Central do Sorriso - Dentista Particular Feira de Santana",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dr. Daniel freitas dentista 24 horas",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dr. Rodrigo Queiroz | Dentista 24h | Prótese Dentária",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 3,
+    "de": 123
+   }
+  },
+  {
+   "local_id": "ortho_fln_ingleses_do_rio_vermel",
+   "praca_id": "florianopolis",
+   "rotulo": "SC · Florianópolis",
+   "unidade": "OrthoDontic · Ingleses do Rio Vermelho",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 4,
+   "em_primeiro": 2,
+   "melhor_posicao": 1,
+   "invisivel_perto": false,
+   "frase": "aparece em 4 de 5 buscas feitas a partir do próprio endereço, em 2 vezes em 1º lugar",
+   "buscas": [
+    {
+     "frase": "aparelho ortodôntico florianópolis",
+     "intencao": "GENÉRICO",
+     "posicao": 2,
+     "topo": "Arte Sorriso | Aparelhos ortodônticos | Alinhadores invisíveis | Dentista em Florianópolis",
+     "topo_avaliacoes": 347,
+     "topo_metros": 196
+    },
+    {
+     "frase": "ortodontista centro florianopolis",
+     "intencao": "BAIRRO",
+     "posicao": 3,
+     "topo": "Dra Cristhiane Danielli Ortodontista",
+     "topo_avaliacoes": 76,
+     "topo_metros": 22985
+    },
+    {
+     "frase": "ortodontista em florianópolis",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic - Florianópolis Ingleses",
+     "topo_avaliacoes": 267,
+     "topo_metros": 0
+    },
+    {
+     "frase": "ortodontista florianópolis",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic - Florianópolis Ingleses",
+     "topo_avaliacoes": 267,
+     "topo_metros": 0
+    },
+    {
+     "frase": "vaga ortodontista florianópolis",
+     "intencao": "RUÍDO",
+     "posicao": null,
+     "topo": "Arte Sorriso | Aparelhos ortodônticos | Alinhadores invisíveis | Dentista em Florianópolis",
+     "topo_avaliacoes": 347,
+     "topo_metros": 196
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Arte Sorriso | Aparelhos ortodônticos | Alinhadores invisíveis | Dentista em Florianópolis",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Dra Cristhiane Danielli Ortodontista",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "OrthoDontic Florianópolis - Rua Deodoro, Centro.",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Ateliê da Saúde Odontologia Integrada",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dentista nos Ingleses | DR Odontologia - Dra Delma Rego",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 1,
+    "de": 130
+   }
+  },
+  {
+   "local_id": "ortho_souza_naves",
+   "praca_id": "londrina",
+   "rotulo": "PR · Londrina",
+   "unidade": "OrthoDontic · Souza Naves",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 4,
+   "em_primeiro": 2,
+   "melhor_posicao": 1,
+   "invisivel_perto": false,
+   "frase": "aparece em 4 de 5 buscas feitas a partir do próprio endereço, em 2 vezes em 1º lugar",
+   "buscas": [
+    {
+     "frase": "aparelho ortodôntico em londrina",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 569,
+     "topo_metros": 0
+    },
+    {
+     "frase": "aparelho ortodôntico londrina",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 569,
+     "topo_metros": 0
+    },
+    {
+     "frase": "ortodontista infantil londrina",
+     "intencao": "CRIANÇA",
+     "posicao": null,
+     "topo": "Nakui Odontologia - Odontopediatra e Ortodontista Infantil em Londrina",
+     "topo_avaliacoes": 27,
+     "topo_metros": 439
+    },
+    {
+     "frase": "ortodontista londrina",
+     "intencao": "GENÉRICO",
+     "posicao": 2,
+     "topo": "Dr. Paulo Rossato",
+     "topo_avaliacoes": 39,
+     "topo_metros": 64
+    },
+    {
+     "frase": "vaga ortodontista londrina",
+     "intencao": "RUÍDO",
+     "posicao": 2,
+     "topo": "Dentista 24 horas Londrina - Dr. Alessandro Morais",
+     "topo_avaliacoes": 456,
+     "topo_metros": 2219
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Nakui Odontologia - Odontopediatra e Ortodontista Infantil em Londrina",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra. Suéllen Priscilla - Odontopediatria e Ortodontia",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra. Rafaella Sidronio Odontopediatria",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra. Patrícia Reis | Dentista para Crianças e Ortodontia Invisalign em Londrina",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra Ana Lúcia Morais (Odontopediatria)",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 5,
+    "de": 176
+   }
+  },
+  {
+   "local_id": "ortho_centro_ldn",
+   "praca_id": "londrina",
+   "rotulo": "PR · Londrina",
+   "unidade": "OrthoDontic · Centro",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 4,
+   "em_primeiro": 2,
+   "melhor_posicao": 1,
+   "invisivel_perto": false,
+   "frase": "aparece em 4 de 5 buscas feitas a partir do próprio endereço, em 2 vezes em 1º lugar",
+   "buscas": [
+    {
+     "frase": "aparelho ortodôntico em londrina",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 77,
+     "topo_metros": 0
+    },
+    {
+     "frase": "aparelho ortodôntico londrina",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 77,
+     "topo_metros": 0
+    },
+    {
+     "frase": "ortodontista infantil londrina",
+     "intencao": "CRIANÇA",
+     "posicao": null,
+     "topo": "Dra. Rafaella Sidronio Odontopediatria",
+     "topo_avaliacoes": 14,
+     "topo_metros": 500
+    },
+    {
+     "frase": "ortodontista londrina",
+     "intencao": "GENÉRICO",
+     "posicao": 2,
+     "topo": "Dr. Paulo Rossato",
+     "topo_avaliacoes": 39,
+     "topo_metros": 1663
+    },
+    {
+     "frase": "vaga ortodontista londrina",
+     "intencao": "RUÍDO",
+     "posicao": 7,
+     "topo": "Plenitá Odontologia e Saúde Integrada",
+     "topo_avaliacoes": 227,
+     "topo_metros": 492
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Plenitá Odontologia e Saúde Integrada",
+     "vezes_na_frente": 2
+    },
+    {
+     "nome": "Dra. Rafaella Sidronio Odontopediatria",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra. Suéllen Priscilla - Odontopediatria e Ortodontia",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Nakui Odontologia - Odontopediatra e Ortodontista Infantil em Londrina",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra Ana Lúcia Morais (Odontopediatria)",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 4,
+    "de": 176
+   }
+  },
+  {
+   "local_id": "ortho_cba_fernando_correa",
+   "praca_id": "cuiaba",
+   "rotulo": "MT · Cuiabá",
+   "unidade": "OrthoDontic · Pico do Amor",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 4,
+   "em_primeiro": 3,
+   "melhor_posicao": 1,
+   "invisivel_perto": false,
+   "frase": "aparece em 4 de 5 buscas feitas a partir do próprio endereço, em 3 vezes em 1º lugar",
+   "buscas": [
+    {
+     "frase": "aparelho ortodôntico cuiaba",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 78,
+     "topo_metros": 0
+    },
+    {
+     "frase": "dentista cuiabá centro",
+     "intencao": "BAIRRO",
+     "posicao": null,
+     "topo": "Consultório Odontológico Dra Michelly Ramos. Atendimento de Urgência e Emergência",
+     "topo_avaliacoes": 14,
+     "topo_metros": 2804
+    },
+    {
+     "frase": "ortodontista cuiabá",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 78,
+     "topo_metros": 0
+    },
+    {
+     "frase": "ortodontista em cuiabá",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 78,
+     "topo_metros": 0
+    },
+    {
+     "frase": "vaga ortodontista cuiaba",
+     "intencao": "RUÍDO",
+     "posicao": 3,
+     "topo": "Dra. Paula Viana | Dentista | Bairro Lixeira - Cuiabá",
+     "topo_avaliacoes": 62,
+     "topo_metros": 2140
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Consultório Odontológico Dra Michelly Ramos. Atendimento de Urgência e Emergência",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Sorridents Centro Norte",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Odonto Cuiabá",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "ODONTO MEDICINA 🦷",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Centro Odontológico Mato Grosso",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 1,
+    "de": 151
+   }
+  },
+  {
+   "local_id": "ortho_fln_centro_2",
+   "praca_id": "florianopolis",
+   "rotulo": "SC · Florianópolis",
+   "unidade": "OrthoDontic · R. Deodoro",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 4,
+   "em_primeiro": 3,
+   "melhor_posicao": 1,
+   "invisivel_perto": false,
+   "frase": "aparece em 4 de 5 buscas feitas a partir do próprio endereço, em 3 vezes em 1º lugar",
+   "buscas": [
+    {
+     "frase": "aparelho ortodôntico florianópolis",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic Florianópolis - Rua Deodoro, Centro.",
+     "topo_avaliacoes": 268,
+     "topo_metros": 0
+    },
+    {
+     "frase": "ortodontista centro florianopolis",
+     "intencao": "BAIRRO",
+     "posicao": 1,
+     "topo": "OrthoDontic Florianópolis - Rua Deodoro, Centro.",
+     "topo_avaliacoes": 268,
+     "topo_metros": 0
+    },
+    {
+     "frase": "ortodontista em florianópolis",
+     "intencao": "GENÉRICO",
+     "posicao": 2,
+     "topo": "Dra. Priscila Andrade",
+     "topo_avaliacoes": 66,
+     "topo_metros": 546
+    },
+    {
+     "frase": "ortodontista florianópolis",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic Florianópolis - Rua Deodoro, Centro.",
+     "topo_avaliacoes": 268,
+     "topo_metros": 0
+    },
+    {
+     "frase": "vaga ortodontista florianópolis",
+     "intencao": "RUÍDO",
+     "posicao": null,
+     "topo": "Dra Bruna Vargas Luz",
+     "topo_avaliacoes": 6,
+     "topo_metros": 512
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Dra. Priscila Andrade",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra Bruna Vargas Luz",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra. Cinara Duarte | Invisalign Florianópolis",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dentista 24h - Letícia P. Gomes em Florianópolis",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra. Isadora Bianchet - Dentista em Florianópolis",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 5,
+    "de": 130
+   }
+  },
+  {
+   "local_id": "ortho_gyn_jardim_tropical",
+   "praca_id": "goiania",
+   "rotulo": "GO · Goiânia",
+   "unidade": "OrthoDontic · Jardim Tropical",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 4,
+   "em_primeiro": 4,
+   "melhor_posicao": 1,
+   "invisivel_perto": false,
+   "frase": "aparece em 4 de 5 buscas feitas a partir do próprio endereço, em 4 vezes em 1º lugar",
+   "buscas": [
+    {
+     "frase": "aparelho ortodôntico em goiania",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 152,
+     "topo_metros": 0
+    },
+    {
+     "frase": "aparelho ortodôntico goiânia",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 152,
+     "topo_metros": 0
+    },
+    {
+     "frase": "ortodontista em goiânia",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 152,
+     "topo_metros": 0
+    },
+    {
+     "frase": "ortodontista goiania ipasgo",
+     "intencao": "BAIRRO",
+     "posicao": null,
+     "topo": "Pronto Socorro em Odontologia 24h",
+     "topo_avaliacoes": 244,
+     "topo_metros": 13742
+    },
+    {
+     "frase": "ortodontista goiânia",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 152,
+     "topo_metros": 0
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Pronto Socorro em Odontologia 24h",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Instituto Odontológico Marista",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra. Ana Caroline Farias",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Perfil Espaço Odontológico",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra. Daniela T. Pantoja",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 1,
+    "de": 196
+   }
+  },
+  {
+   "local_id": "ortho_gyn_st_morada_do_sol",
+   "praca_id": "goiania",
+   "rotulo": "GO · Goiânia",
+   "unidade": "OrthoDontic · St. Morada do Sol",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 4,
+   "em_primeiro": 4,
+   "melhor_posicao": 1,
+   "invisivel_perto": false,
+   "frase": "aparece em 4 de 5 buscas feitas a partir do próprio endereço, em 4 vezes em 1º lugar",
+   "buscas": [
+    {
+     "frase": "aparelho ortodôntico em goiania",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic Mangalô",
+     "topo_avaliacoes": 124,
+     "topo_metros": 0
+    },
+    {
+     "frase": "aparelho ortodôntico goiânia",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic Mangalô",
+     "topo_avaliacoes": 124,
+     "topo_metros": 0
+    },
+    {
+     "frase": "ortodontista em goiânia",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic Mangalô",
+     "topo_avaliacoes": 124,
+     "topo_metros": 0
+    },
+    {
+     "frase": "ortodontista goiania ipasgo",
+     "intencao": "BAIRRO",
+     "posicao": null,
+     "topo": "Pronto Socorro em Odontologia 24h",
+     "topo_avaliacoes": 244,
+     "topo_metros": 10634
+    },
+    {
+     "frase": "ortodontista goiânia",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic Mangalô",
+     "topo_avaliacoes": 124,
+     "topo_metros": 0
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Pronto Socorro em Odontologia 24h",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Instituto Odontológico Marista",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra. Ana Caroline Farias",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Ipasgo Saúde | IClin Pediatria 24h - Goiânia",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra. Daniela T. Pantoja",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 0,
+    "de": 196
+   }
+  },
+  {
+   "local_id": "ortho_poa_centro_historico",
+   "praca_id": "porto_alegre",
+   "rotulo": "RS · Porto Alegre",
+   "unidade": "OrthoDontic · Av. Borges de Medeiros",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 4,
+   "em_primeiro": 4,
+   "melhor_posicao": 1,
+   "invisivel_perto": false,
+   "frase": "aparece em 4 de 5 buscas feitas a partir do próprio endereço, em 4 vezes em 1º lugar",
+   "buscas": [
+    {
+     "frase": "aparelho ortodôntico em porto alegre",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 433,
+     "topo_metros": 0
+    },
+    {
+     "frase": "aparelho ortodôntico no centro de porto alegre",
+     "intencao": "BAIRRO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 433,
+     "topo_metros": 0
+    },
+    {
+     "frase": "aparelho ortodôntico porto alegre",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 433,
+     "topo_metros": 0
+    },
+    {
+     "frase": "aparelho ortodôntico porto alegre preço",
+     "intencao": "PREÇO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 433,
+     "topo_metros": 0
+    },
+    {
+     "frase": "orthopride aparelho ortodôntico em porto alegre clareamento dental fotos",
+     "intencao": "BAIRRO",
+     "posicao": null,
+     "topo": "Orthopride | Aparelho Ortodôntico em Porto Alegre | Clareamento Dental",
+     "topo_avaliacoes": 32,
+     "topo_metros": 102
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Orthopride | Aparelho Ortodôntico em Porto Alegre | Clareamento Dental",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 10,
+    "de": 196
+   }
+  },
+  {
+   "local_id": "ortho_soro_vila_formosa",
+   "praca_id": "sorocaba",
+   "rotulo": "SP · Sorocaba",
+   "unidade": "OrthoDontic · Vila Formosa",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 4,
+   "em_primeiro": 4,
+   "melhor_posicao": 1,
+   "invisivel_perto": false,
+   "frase": "aparece em 4 de 5 buscas feitas a partir do próprio endereço, em 4 vezes em 1º lugar",
+   "buscas": [
+    {
+     "frase": "aparelho ortodontico em sorocaba",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 161,
+     "topo_metros": 0
+    },
+    {
+     "frase": "aparelho ortodôntico sorocaba",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 161,
+     "topo_metros": 0
+    },
+    {
+     "frase": "ortodontista infantil sorocaba",
+     "intencao": "CRIANÇA",
+     "posicao": null,
+     "topo": "Dra. Giovanna Loratto - Odontopediatra Sorocaba",
+     "topo_avaliacoes": 80,
+     "topo_metros": 3511
+    },
+    {
+     "frase": "ortodontista sorocaba",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 161,
+     "topo_metros": 0
+    },
+    {
+     "frase": "ortodontista sorocaba sp",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 161,
+     "topo_metros": 0
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Dra. Giovanna Loratto - Odontopediatra Sorocaba",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Odontopediatra - Dra. Daniela Katayama",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra Fernanda Leite",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra. Carolina Rodrigues Moraes - Odontopediatra / Dentista Infantil",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra. Jaqueline Manão - Odontopediatra em Sorocaba",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 6,
+    "de": 195
+   }
+  },
+  {
+   "local_id": "ortho_cwb_centro_3",
+   "praca_id": "curitiba",
+   "rotulo": "PR · Curitiba",
+   "unidade": "OrthoDontic · Galeria Tijucas - Av. Luiz Xavier",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 5,
+   "em_primeiro": 0,
+   "melhor_posicao": 2,
+   "invisivel_perto": false,
+   "frase": "aparece em 5 de 5 buscas feitas a partir do próprio endereço, melhor posição: 2º",
+   "buscas": [
+    {
+     "frase": "aparelho ortodôntico curitiba",
+     "intencao": "GENÉRICO",
+     "posicao": 2,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 1012,
+     "topo_metros": 539
+    },
+    {
+     "frase": "aparelho ortodôntico curitiba preços",
+     "intencao": "PREÇO",
+     "posicao": 3,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 1012,
+     "topo_metros": 539
+    },
+    {
+     "frase": "aparelho ortodôntico em curitiba",
+     "intencao": "GENÉRICO",
+     "posicao": 2,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 1012,
+     "topo_metros": 539
+    },
+    {
+     "frase": "aparelho ortodôntico invisível curitiba",
+     "intencao": "TIPO DE APARELHO",
+     "posicao": 3,
+     "topo": "Dra Juliana Fauri",
+     "topo_avaliacoes": 87,
+     "topo_metros": 1489
+    },
+    {
+     "frase": "ortodontista curitiba",
+     "intencao": "GENÉRICO",
+     "posicao": 4,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 1012,
+     "topo_metros": 539
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "OrthoDontic",
+     "vezes_na_frente": 5
+    },
+    {
+     "nome": "Dra Juliana Fauri",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra. Letícia Zimermann | Invisalign & Tratamentos Ortodônticos",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra Ana Carolina Mastriani",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra Manuela Flores Coimbra - Ortodontista - Alinhadores Invisiveis - Invisalign Doctor- Sousmile - Curitiba",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 3,
+    "de": 213
+   }
+  },
+  {
+   "local_id": "ortho_cba_centro_norte",
+   "praca_id": "cuiaba",
+   "rotulo": "MT · Cuiabá",
+   "unidade": "OrthoDontic · Centro Norte",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 5,
+   "em_primeiro": 3,
+   "melhor_posicao": 1,
+   "invisivel_perto": false,
+   "frase": "aparece em 5 de 5 buscas feitas a partir do próprio endereço, em 3 vezes em 1º lugar",
+   "buscas": [
+    {
+     "frase": "aparelho ortodôntico cuiaba",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 1223,
+     "topo_metros": 0
+    },
+    {
+     "frase": "dentista cuiabá centro",
+     "intencao": "BAIRRO",
+     "posicao": 9,
+     "topo": "Consultório Odontológico Dra Michelly Ramos. Atendimento de Urgência e Emergência",
+     "topo_avaliacoes": 14,
+     "topo_metros": 407
+    },
+    {
+     "frase": "ortodontista cuiabá",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 1223,
+     "topo_metros": 0
+    },
+    {
+     "frase": "ortodontista em cuiabá",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 1223,
+     "topo_metros": 0
+    },
+    {
+     "frase": "vaga ortodontista cuiaba",
+     "intencao": "RUÍDO",
+     "posicao": 2,
+     "topo": "Dra. Paula Viana | Dentista | Bairro Lixeira - Cuiabá",
+     "topo_avaliacoes": 62,
+     "topo_metros": 1456
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Consultório Odontológico Dra Michelly Ramos. Atendimento de Urgência e Emergência",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dr. Eduardo Nascimento - Cirurgião Dentista",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Odonto Cuiabá",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "ODONTO MEDICINA 🦷",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Sorridents Centro Norte",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 4,
+    "de": 151
+   }
+  },
+  {
+   "local_id": "ortho_cwb_centro",
+   "praca_id": "curitiba",
+   "rotulo": "PR · Curitiba",
+   "unidade": "OrthoDontic · R. XV de Novembro",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 5,
+   "em_primeiro": 4,
+   "melhor_posicao": 1,
+   "invisivel_perto": false,
+   "frase": "aparece em 5 de 5 buscas feitas a partir do próprio endereço, em 4 vezes em 1º lugar",
+   "buscas": [
+    {
+     "frase": "aparelho ortodôntico curitiba",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 1012,
+     "topo_metros": 0
+    },
+    {
+     "frase": "aparelho ortodôntico curitiba preços",
+     "intencao": "PREÇO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 1012,
+     "topo_metros": 0
+    },
+    {
+     "frase": "aparelho ortodôntico em curitiba",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 1012,
+     "topo_metros": 0
+    },
+    {
+     "frase": "aparelho ortodôntico invisível curitiba",
+     "intencao": "TIPO DE APARELHO",
+     "posicao": 4,
+     "topo": "Dra. Letícia Zimermann | Invisalign & Tratamentos Ortodônticos",
+     "topo_avaliacoes": 23,
+     "topo_metros": 771
+    },
+    {
+     "frase": "ortodontista curitiba",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 1012,
+     "topo_metros": 0
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Dra. Letícia Zimermann | Invisalign & Tratamentos Ortodônticos",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "OrthoDontic",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra Juliana Fauri",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 11,
+    "de": 213
+   }
+  },
+  {
+   "local_id": "ortho_cwb_portao",
+   "praca_id": "curitiba",
+   "rotulo": "PR · Curitiba",
+   "unidade": "OrthoDontic · Portão",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 5,
+   "em_primeiro": 4,
+   "melhor_posicao": 1,
+   "invisivel_perto": false,
+   "frase": "aparece em 5 de 5 buscas feitas a partir do próprio endereço, em 4 vezes em 1º lugar",
+   "buscas": [
+    {
+     "frase": "aparelho ortodôntico curitiba",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 270,
+     "topo_metros": 0
+    },
+    {
+     "frase": "aparelho ortodôntico curitiba preços",
+     "intencao": "PREÇO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 270,
+     "topo_metros": 0
+    },
+    {
+     "frase": "aparelho ortodôntico em curitiba",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 270,
+     "topo_metros": 0
+    },
+    {
+     "frase": "aparelho ortodôntico invisível curitiba",
+     "intencao": "TIPO DE APARELHO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 270,
+     "topo_metros": 0
+    },
+    {
+     "frase": "ortodontista curitiba",
+     "intencao": "GENÉRICO",
+     "posicao": 2,
+     "topo": "Dra. Barbara Lima| Ortodontia",
+     "topo_avaliacoes": 28,
+     "topo_metros": 1675
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Dra. Barbara Lima| Ortodontia",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 1,
+    "de": 213
+   }
+  },
+  {
+   "local_id": "ortho_joi_aventureiro",
+   "praca_id": "joinville",
+   "rotulo": "SC · Joinville",
+   "unidade": "OrthoDontic · Aventureiro",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 5,
+   "em_primeiro": 4,
+   "melhor_posicao": 1,
+   "invisivel_perto": false,
+   "frase": "aparece em 5 de 5 buscas feitas a partir do próprio endereço, em 4 vezes em 1º lugar",
+   "buscas": [
+    {
+     "frase": "aparelho ortodontico joinville",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 170,
+     "topo_metros": 0
+    },
+    {
+     "frase": "ortodontista em joinville",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 170,
+     "topo_metros": 0
+    },
+    {
+     "frase": "ortodontista infantil joinville",
+     "intencao": "CRIANÇA",
+     "posicao": 7,
+     "topo": "Dra. Gabriela Machado",
+     "topo_avaliacoes": 93,
+     "topo_metros": 3917
+    },
+    {
+     "frase": "ortodontista joinville",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 170,
+     "topo_metros": 0
+    },
+    {
+     "frase": "vaga ortodontista joinville",
+     "intencao": "RUÍDO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 170,
+     "topo_metros": 0
+    }
+   ],
+   "quem_aparece_na_frente": [
+    {
+     "nome": "Dra. Gabriela Machado",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra Ivne Barbosa",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra Michella C de Miranda",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra Alice Rossetto Fonseca",
+     "vezes_na_frente": 1
+    },
+    {
+     "nome": "Dra. Débora Campos - Odontopediatria",
+     "vezes_na_frente": 1
+    }
+   ],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 2,
+    "de": 157
+   }
+  },
+  {
+   "local_id": "orthodontic_sao_miguel_paulista",
+   "praca_id": "sao_paulo",
+   "rotulo": "SP · São Paulo",
+   "unidade": "OrthoDontic · São Miguel Paulista",
+   "medido_em": "2026-08-13",
+   "raio_m": 3000,
+   "de": 5,
+   "aparece_em": 5,
+   "em_primeiro": 5,
+   "melhor_posicao": 1,
+   "invisivel_perto": false,
+   "frase": "a clínica é o primeiro resultado nas 5 buscas testadas feitas a partir do próprio endereço",
+   "buscas": [
+    {
+     "frase": "aparelho ortodontico sao paulo",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 161,
+     "topo_metros": 0
+    },
+    {
+     "frase": "melhor ortodontista de são paulo",
+     "intencao": "REPUTAÇÃO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 161,
+     "topo_metros": 0
+    },
+    {
+     "frase": "ortodontista em sao paulo",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 161,
+     "topo_metros": 0
+    },
+    {
+     "frase": "ortodontista são paulo",
+     "intencao": "GENÉRICO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 161,
+     "topo_metros": 0
+    },
+    {
+     "frase": "vaga ortodontista sao paulo",
+     "intencao": "RUÍDO",
+     "posicao": 1,
+     "topo": "OrthoDontic",
+     "topo_avaliacoes": 161,
+     "topo_metros": 0
+    }
+   ],
+   "quem_aparece_na_frente": [],
+   "confianca": {
+    "natureza": "fato",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 5,
+    "janela_dias": 0,
+    "medicoes": 1,
+    "fonte": "dados/serie/perto_da_loja.jsonl",
+    "a_favor": [],
+    "contra": [],
+    "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+    "procedencia": "medido em 5 buscas testadas, 1 medição"
+   },
+   "na_cidade": {
+    "aparece_em": 0,
+    "de": 193
+   }
+  }
+ ],
+ "lojas_total": 45,
+ "invisiveis_perto": 2,
+ "viradas_pela_leitura_de_perto": [
+  "orthodontic_tatuape",
+  "orthodontic_republica",
+  "sao_paulo_orthodontic",
+  "caxias_do_su_orthodontic_centro",
+  "ortho_cba_dom_bosco",
+  "caxias_do_su_orthodontic",
+  "rio_de_janei_orthodontic",
+  "ortho_gyn_st_morada_do_sol",
+  "orthodontic_sao_miguel_paulista"
+ ]
+}

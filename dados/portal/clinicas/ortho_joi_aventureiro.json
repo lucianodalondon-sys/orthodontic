@@ -2,7 +2,7 @@
   "local_id": "ortho_joi_aventureiro",
   "praca_id": "joinville",
   "apresentacao": {
-    "unidade": "OrthoDontic",
+    "unidade": "OrthoDontic · Aventureiro",
     "cidade": "SC · Joinville",
     "endereco": "R. Tuiuti, 2236 - Aventureiro, Joinville - SC, 89226-000",
     "desde": null,
@@ -12,17 +12,17 @@
     "lojas_irmas": [
       {
         "local_id": "ortho_joi_centro",
-        "unidade": "OrthoDontic Centro"
+        "unidade": "OrthoDontic · Centro"
       },
       {
         "local_id": "ortho_joi_america",
-        "unidade": "OrthoDontic América"
+        "unidade": "OrthoDontic · América"
       }
     ],
     "frase": null
   },
   "rotulo": "SC · Joinville",
-  "unidade": "OrthoDontic",
+  "unidade": "OrthoDontic · Aventureiro",
   "cabecalho": {
     "nota": 4.9,
     "avaliacoes": 170,
@@ -131,6 +131,101 @@
       "contra": [],
       "o_que_aumentaria": "repetir a varredura de buscas noutra data",
       "procedencia": "medido em 157 buscas testadas, 1 medição"
+    }
+  },
+  "perto_da_clinica": {
+    "local_id": "ortho_joi_aventureiro",
+    "praca_id": "joinville",
+    "rotulo": "SC · Joinville",
+    "unidade": "OrthoDontic Aventureiro",
+    "medido_em": "2026-08-13",
+    "raio_m": 3000,
+    "de": 5,
+    "aparece_em": 5,
+    "em_primeiro": 4,
+    "melhor_posicao": 1,
+    "invisivel_perto": false,
+    "frase": "aparece em 5 de 5 buscas feitas a partir do próprio endereço, em 4 vezes em 1º lugar",
+    "buscas": [
+      {
+        "frase": "aparelho ortodontico joinville",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 170,
+        "topo_metros": 0
+      },
+      {
+        "frase": "ortodontista em joinville",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 170,
+        "topo_metros": 0
+      },
+      {
+        "frase": "ortodontista infantil joinville",
+        "intencao": "CRIANÇA",
+        "posicao": 7,
+        "topo": "Dra. Gabriela Machado",
+        "topo_avaliacoes": 93,
+        "topo_metros": 3917
+      },
+      {
+        "frase": "ortodontista joinville",
+        "intencao": "GENÉRICO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 170,
+        "topo_metros": 0
+      },
+      {
+        "frase": "vaga ortodontista joinville",
+        "intencao": "RUÍDO",
+        "posicao": 1,
+        "topo": "OrthoDontic",
+        "topo_avaliacoes": 170,
+        "topo_metros": 0
+      }
+    ],
+    "quem_aparece_na_frente": [
+      {
+        "nome": "Dra. Gabriela Machado",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Dra Ivne Barbosa",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Dra Michella C de Miranda",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Dra Alice Rossetto Fonseca",
+        "vezes_na_frente": 1
+      },
+      {
+        "nome": "Dra. Débora Campos - Odontopediatria",
+        "vezes_na_frente": 1
+      }
+    ],
+    "confianca": {
+      "natureza": "fato",
+      "confianca": "baixa",
+      "medido": true,
+      "amostra": 5,
+      "janela_dias": 0,
+      "medicoes": 1,
+      "fonte": "dados/serie/perto_da_loja.jsonl",
+      "a_favor": [],
+      "contra": [],
+      "o_que_aumentaria": "repetir a mesma grade noutra data, ou aumentar o número de frases por loja",
+      "procedencia": "medido em 5 buscas testadas, 1 medição"
+    },
+    "na_cidade": {
+      "aparece_em": 2,
+      "de": 157
     }
   },
   "jornada": {
