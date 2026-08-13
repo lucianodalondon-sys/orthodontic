@@ -26,6 +26,7 @@ Uso:
     python3 scripts/padrao.py --exigir        # sai com erro se alguma incompleta
 """
 import argparse, json, pathlib, sys
+from collections import Counter
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RAIZ/"scripts"))
@@ -216,6 +217,52 @@ def _e5(b, p):
 def _e6(b, p):
     n = len(b.reviews.get(p, []))
     return n >= MIN_REVIEWS, f"{n} avaliações lidas (mínimo {MIN_REVIEWS})"
+
+
+def _e6b(b, p):
+    """A VOZ DA PRÓPRIA UNIDADE FOI LIDA ATÉ O FIM?
+
+    A etapa 6 conta as avaliações da PRAÇA — todas as clínicas, nossas e
+    dos outros. Ela passa com folga numa praça onde a nossa loja foi lida
+    pela metade, e foi o que aconteceu: o coletor profundo tem
+    `--max-reviews 120` por padrão, e as praças abertas em agosto ficaram
+    todas em 120 exatos. Curitiba · R. XV de Novembro tem 1.012 avaliações
+    no Google e 120 lidas: a jornada, a caixa de respostas e o plano
+    daquele franqueado saem de 12% da voz dele.
+
+    As praças da régua (Mafra, Londrina, Feira, Prudente, Contagem,
+    Cuiabá, Palmas) foram lidas até o fim. O padrão é esse, e é isto que
+    esta etapa cobra.
+    """
+    nossos = [l for l in b.ident[p].get("locais", []) if l.get("papel") == "proprio"]
+    if not nossos:
+        return True, "praça sem unidade própria"
+    ult = {}
+    for r in b.serie.get("places", {}).get(p, []):
+        k = r.get("local_id")
+        if k not in ult or r["snapshot_date"] >= ult[k]["snapshot_date"]:
+            ult[k] = r
+    lidas = Counter(r.get("local_id") for r in b.reviews.get(p, []))
+    truncadas, falta_total = [], 0
+    for l in nossos:
+        lid = l["local_id"]
+        g = (ult.get(lid) or {}).get("avaliacoes_total") \
+            or (ult.get(lid) or {}).get("avaliacoes") or 0
+        if not g:
+            continue          # sem ficha medida ainda: é a etapa 0.5 que cobra
+        falta = g - lidas[lid]
+        if falta > 50 and lidas[lid] / g < 0.75:
+            truncadas.append((l.get("unidade") or lid, lidas[lid], g))
+            falta_total += falta
+    if truncadas:
+        return False, (conta(len(truncadas), "unidade lida pela metade",
+                             "unidades lidas pela metade")
+                       + f" — {falta_total} avaliações nunca lidas ("
+                       + "; ".join(f"{n}: {t} de {g}" for n, t, g in truncadas[:3])
+                       + ")")
+    total = sum(lidas[l["local_id"]] for l in nossos)
+    return True, (conta(len(nossos), "unidade lida", "unidades lidas")
+                  + f" até o fim · {total} avaliações próprias")
 
 
 def _e7(b, p):
@@ -523,6 +570,9 @@ ETAPAS = [
      "python3 coleta/coletores/google_places.py --praca <praça> --varrer"),
     (6,  "Ritmo e meses seguidos",    "auto",   None,          _e6,
      "python3 coleta/coletores/google_reviews.py --praca <praça>"),
+    (6.5, "A voz da própria unidade",  "auto",   "rede",        _e6b,
+     "python3 coleta/coletores/google_reviews.py --praca <praça> "
+     "--max-reviews 1200   (o padrão de 120 trunca a loja grande)"),
     (7,  "A unidade por dentro",      "auto",   "rede",        _e7,
      "python3 coleta/coletores/meta_ads.py --praca <praça>"),
     (9,  "A joia enterrada",          "auto+humano", None,     _e9,
