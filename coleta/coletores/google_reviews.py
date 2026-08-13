@@ -160,12 +160,22 @@ def roda_lote(alvos, max_reviews, tok):
     # token=<__main__.Cota object> → InvalidURL. O lote falhava SEMPRE, caía
     # para o um-a-um, e enquanto o um-a-um era síncrono morria no proxy —
     # dupla falha que rendeu "+0 registros" sem nenhum erro legível no tail.
-    t = tok.atual() if hasattr(tok, "atual") else tok
-    return roda_async({
+    corpo = {
         "startUrls": urls, "maxCrawledPlacesPerSearch": 1, "language": "pt-BR",
         "reviewsSort": "newest", "maxReviews": max_reviews,
         "scrapeReviewsPersonalData": False, "onlyDataFromSearchPage": False,
-    }, t, espera=2400)
+    }
+    # O LOTE TAMBÉM GIRA O TOKEN. Sem isto ele usava sempre o primeiro da
+    # fila — inclusive um com US$ 0,08 sobrando — estourava, caía para o
+    # um-a-um e o um-a-um parava a praça inteira dizendo "a conta acabou"
+    # com US$ 25 livres nos outros oito tokens. Duas corridas assim
+    # gastaram US$ 8,59 e trouxeram zero avaliações.
+    if hasattr(tok, "atual"):
+        while True:
+            d = roda_async(corpo, tok.atual(), espera=2400)
+            if isinstance(d, list) or not sem_cota(d) or not tok.queimou():
+                return d
+    return roda_async(corpo, tok, espera=2400)
 
 
 def roda(alvo, max_reviews, tok):
@@ -281,8 +291,17 @@ def main():
         if lote and not args.dry_run:
             print(f"  [lote] {len(lote)} clínicas numa corrida só...")
             try:
-                for it in roda_lote(list(lote.values()), args.max_reviews, tok):
-                    if it.get("placeId"):
+                _lote = roda_lote(list(lote.values()), args.max_reviews, tok)
+                # QUANDO O LOTE FALHA, `roda_async` devolve {"error": ...} —
+                # e iterar um dict entrega as CHAVES, que são strings. Era
+                # daí que vinha "'str' object has no attribute 'get'": o
+                # erro do ator aparecia disfarçado de bug do nosso laço, e a
+                # mensagem dele nunca chegava à tela.
+                if isinstance(_lote, dict):
+                    print(f"  [lote FALHOU] {str(_lote.get('error') or _lote)[:140]}")
+                    _lote = []
+                for it in (_lote if isinstance(_lote, list) else []):
+                    if isinstance(it, dict) and it.get("placeId"):
                         colhido[it["placeId"]] = it
                 print(f"  [lote] voltaram {len(colhido)}")
             except Exception as e:
@@ -310,7 +329,19 @@ def main():
                 # Crédito acabado não melhora na próxima clínica. Parar e dizer
                 # vale mais que repetir o mesmo 402 catorze vezes.
                 if e.code == 402 or "not-enough-usage" in corpo:
-                    print(f"\n  [PAROU] a conta da Apify acabou.")
+                    # ANTES DE PARAR, TROCA DE TOKEN. Um token quase zerado
+                    # fazia o script anunciar "a conta acabou" com dezenas de
+                    # dólares livres nos outros — e a praça inteira ficava sem
+                    # coleta por causa de oito centavos.
+                    if hasattr(tok, "queimou") and tok.queimou():
+                        try:
+                            itens = roda(alvo, args.max_reviews, tok)
+                        except Exception as e2:
+                            print(f"  [ERRO] {local_id}: {type(e2).__name__} · "
+                                  f"{str(e2)[:120]}")
+                            continue
+                    else:
+                        print(f"\n  [PAROU] a conta da Apify acabou.")
                     print(f"  {corpo[corpo.find('message'):][:150]}")
                     print("  Troque APIFY_TOKEN em _pipeline/.env e rode de novo:")
                     print(f"    python3 coleta/coletores/google_reviews.py --praca {praca}")

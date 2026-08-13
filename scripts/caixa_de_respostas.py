@@ -35,7 +35,11 @@ def monta():
         for l in d.get("locais", []):
             if l.get("papel") == "proprio":
                 nossos[l["local_id"]] = {"praca_id": p, "rotulo": d.get("rotulo"),
-                                         "unidade": l.get("nome")}
+                                         # `unidade` é o nome de tela, desambiguado por
+                                         # `nome_da_loja.py`; `nome` é o
+                                         # cadastro cru, e sete unidades de
+                                         # Porto Alegre se chamam OrthoDontic
+                                         "unidade": l.get("unidade") or l.get("nome")}
 
     caixa = defaultdict(list)
     respondidas = defaultdict(int)
