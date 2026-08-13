@@ -54,7 +54,31 @@ esconder faria alguém reabrir o número da cidade e pedir a campanha de novo.
 Cada linha do Radar leva `territorio`: bairro do topo, concentração e o aviso
 de que **concentração não é demanda**.
 
-### 2.5 · Higiene que impedia o resto de ser confiável
+### 2.5 · O Radar voltou a existir
+
+A tela do time de expansão dizia **"0 cidades prontas para receber uma
+unidade"** — com seis estudos completos no disco ao lado. O Radar cortava pela
+última data global de `oportunidade.jsonl`: as seis cidades de oportunidade
+foram medidas em 09/ago e, em 12/ago, o arquivo recebeu só as seis metrópoles
+que a conferência mostrou **ocupadas**. As seis reais foram apagadas por não
+terem sido remedidas naquele dia.
+
+É a mesma armadilha que já apagou dez lojas de `onde_cada_loja_aparece` e doze
+telas de captação. A última medição é **por entidade**, nunca a última data do
+arquivo.
+
+O território também não chegava nelas — `ident` no build só carrega praça da
+rede. Agora chega, e **Imperatriz declara 59% das clínicas mapeadas num bairro
+só**, com o aviso de que concentração não é demanda.
+
+### 2.6 · A clínica se apresenta mesmo sem histórico
+
+A frase de abertura dependia de `desde`, e só 10 das 45 lojas têm histórico —
+as outras 35 abriam a página sem nenhuma frase. Agora ela se monta do que
+existe: bairro, clínicas mapeadas nele, posição na cidade e lojas irmãs. **45
+de 45.**
+
+### 2.7 · Higiene que impedia o resto de ser confiável
 
 - `scripts/dedup_serie.py` — duas execuções simultâneas do mesmo coletor
   gravavam tudo em dobro.
@@ -101,9 +125,11 @@ Na rede inteira:
 | casos de operação | 18 | 24 |
 | casos medidos e declarados NÃO necessários | 0 | 7 |
 | unidades com nome único na tela | 26 de 45 | **45 de 45** |
+| clínicas com frase de apresentação | 10 de 45 | **45 de 45** |
+| cidades no Radar de expansão | **0** | **6**, com território |
 | páginas de clínica órfãs | 2 | 0 |
-| linhas duplicadas em série | 8 | 0 |
-| praças fora do padrão | 5 | 2 |
+| linhas duplicadas em série | 18 | 0 |
+| praças fora do padrão | 5 | **1** |
 
 ---
 
