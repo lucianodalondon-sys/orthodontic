@@ -424,9 +424,12 @@ padrões → caixa → padrao → build. Períodos curtos são declarados na tel
   aqui. Quando o zip voltar do Design, o trabalho é conferir a fiação dos
   dados — nunca o visual.
 
-- **Todo arquivo criado ou mudado vai para o chat, sempre.** Commit e push
-  não bastam: o arquivo tem de chegar na mão, na conversa, no mesmo turno.
-  Isso vale para prompt, payload, relatório e captura de tela.
+- **No chat vai SÓ o que vai para o Design.** Ou seja: o prompt, o zip do
+  pacote e, quando for o caso, um relatório ou captura pedida. Script
+  `.py` NUNCA — ele é o build, roda deste lado e produz o payload. Mandar
+  `insight.py` junto fez o Design tentar interpretar Python e dar erro. O
+  pacote é exatamente `PROMPT-AJUSTE-*.md` + `PROMPT-CASCO-*.md` +
+  `dados/portal/`, e nada mais. O resto se acompanha por commit e push.
 
 - **ALERTA QUE SUMIU NÃO É ALERTA RESOLVIDO.** A fila publicou 22 vitórias
   num dia em que nada foi resolvido: nove abriram e sumiram na MESMA data
