@@ -162,7 +162,17 @@ def monta():
             "unidade": u["nome"],
             "cabecalho": {"nota": u.get("nota"), "avaliacoes": u.get("total"),
                           "ritmo": u.get("ritmo"), "meses_seguidos": u.get("meses"),
-                          "posicao": u.get("posicao"), "de": u.get("de")},
+                          "posicao": u.get("posicao"), "de": u.get("de"),
+                          # A TELA PRECISA DIZER DE QUANTO SAIU O RITMO.
+                          # Uma loja lida pela metade tem ritmo dos últimos
+                          # dias, não do histórico, e não entra na
+                          # classificação da praça — mas o número continua
+                          # aparecendo, então ele vai acompanhado do que é.
+                          "amostra_lida": u.get("amostra_lida"),
+                          "amostra_dias": u.get("amostra_dias"),
+                          "amostra_truncada": u.get("amostra_truncada"),
+                          "ritmo_comparavel": u.get("ritmo_comparavel"),
+                          "porque_fora_do_ranking": u.get("porque_fora_do_ranking")},
             "tarefa": fp.get("tarefa"),
             "acao": fp.get("acao"),
             "faixa": fp.get("faixa"),

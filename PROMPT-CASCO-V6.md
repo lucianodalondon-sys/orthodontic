@@ -900,3 +900,38 @@ nome da unidade, `aparece_em`/`de`, `em_primeiro`, e a comparação
 O número do cartão é o das lojas **realmente** invisíveis. Não use
 `invisivel` da leitura de cidade para esse cartão: é o número que estava
 errado e que esta tela existe para corrigir.
+
+---
+
+## 13 · O RITMO NEM SEMPRE É COMPARÁVEL, E A TELA PRECISA DIZER
+
+O cabeçalho da clínica mostra "N avaliações por mês". Esse número sai de
+uma amostra, e a amostra nem sempre cobre a vida da loja: o coletor puxa
+as mais **novas**, e numa loja grande as mais novas cobrem poucas semanas.
+
+    Florianópolis · Ingleses    120 avaliações lidas em 14 dias  →  260,6/mês
+    (a loja tem 267 avaliações no total)
+
+Publicar 260,6 sem contexto é publicar um número impossível.
+
+### 13.1 · Os campos novos em `cabecalho`
+
+`amostra_lida`, `amostra_dias`, `amostra_truncada`, `ritmo_comparavel` e
+`porque_fora_do_ranking`.
+
+Como desenhar:
+
+- Quando `amostra_truncada` é **false**, nada muda: ritmo e posição na
+  praça aparecem como hoje.
+- Quando é **true**, `posicao` e `de` chegam **nulos** — a loja saiu da
+  classificação de propósito. Não invente "—" mudo: mostre
+  `porque_fora_do_ranking`, que já vem escrito em língua de balcão
+  ("lemos 120 das 267 avaliações desta clínica, e as mais novas…").
+- O ritmo continua na tela, e ao lado dele a janela:
+  **"260,6 por mês nos últimos 14 dias"**. Nunca o número sozinho.
+
+### 13.2 · Por que isso importa
+
+Antes, uma loja lida pela metade aparecia como **1ª da praça** por ter o
+maior número — e o número maior era efeito da coleta, não da operação. A
+tela premiava quem tinha sido menos lido.
