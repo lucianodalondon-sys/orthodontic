@@ -18,14 +18,57 @@ Uso:
     python3 scripts/caixa_de_respostas.py
     python3 scripts/caixa_de_respostas.py --salvar
 """
-import argparse, json, pathlib, sys
+import argparse, datetime as dt, json, pathlib, re, sys
 from collections import defaultdict
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RAIZ/"scripts"))
-from cruzamento import reviews_unicos, identidades
+from cruzamento import reviews_unicos, identidades, conta, confianca
+from insight import monta as monta_insight
 
 PORTAL = RAIZ/"dados"/"portal"
+
+# A janela que decide a prioridade. Fora dela a reclamação continua aberta
+# e continua contada — só não é urgência: ninguém escolhe clínica lendo
+# uma avaliação de 2015.
+JANELA_QUE_PESA = 180
+
+
+# O ASSUNTO DA RECLAMAÇÃO, quando o texto diz. Não é análise de
+# sentimento — é procurar a palavra que nomeia o momento, para o
+# franqueado saber do que se trata antes de abrir uma a uma.
+ASSUNTOS = [
+    ("cobrança", r"cobr|pagamento|boleto|multa|parcel|financeir"),
+    ("contato", r"telefone|liga(r|ção)|whats|n[ãa]o atende|responde"),
+    ("agendamento", r"agenda|remarc|desmarc|hor[áa]rio|atras"),
+    ("recepção", r"recep|atendente|secret|balc[ãa]o|mal educad"),
+    ("atendimento clínico", r"dentist|doutor|dr[a]?\.|procedimento|"
+                            r"machuc|dor|aparelho"),
+]
+
+
+def _assuntos(itens):
+    achados = []
+    for rotulo, rx in ASSUNTOS:
+        n = sum(1 for x in itens
+                if x.get("texto") and re.search(rx, x["texto"], re.I))
+        if n:
+            achados.append({"assunto": rotulo, "quantas": n,
+                            "frase": conta(n, "avaliação", "avaliações")})
+    achados.sort(key=lambda a: -a["quantas"])
+    return achados[:3]
+
+
+def lid_de(u):
+    return u["local_id"]
+
+
+def _nota(x):
+    """A nota vem como texto na série ('1'); comparar com número explode."""
+    try:
+        return int(str(x.get("nota")))
+    except (TypeError, ValueError):
+        return 5
 
 
 def monta():
@@ -69,7 +112,80 @@ def monta():
             "ja_respondidas": respondidas.get(lid, 0),
             "itens": itens,
         })
-    unidades.sort(key=lambda x: -x["abertas"])
+    # ------------------------------------------------ de acervo para TRABALHO
+    #
+    # "399 avaliações esperando resposta" impressiona e não ajuda: ninguém
+    # responde 399. O que resolve trabalho é PRIORIDADE — qual unidade tem
+    # crítica de 1 estrela parada há mais tempo, e o que dizer sobre ela.
+    #
+    # A ordem é por gravidade: quantas de uma estrela, e há quantos dias a
+    # mais antiga está aberta. Volume puro colocaria na frente a loja
+    # grande, que tem mais de tudo só por ser grande.
+    hoje = dt.date.today()
+    limite = (hoje - dt.timedelta(days=JANELA_QUE_PESA)).isoformat()
+    for u in unidades:
+        criticas = [x for x in u["itens"] if _nota(x) <= 2]
+        # RECLAMAÇÃO DE ONZE ANOS NÃO É URGÊNCIA. A primeira ordenação usou
+        # "há quantos dias a mais antiga espera" e pôs na frente uma de
+        # 4.172 dias — verdade, e inútil: ninguém lê 2015 na ficha. As 40
+        # unidades saíram todas em vermelho, ou seja, a régua não separava
+        # nada. O que pesa é a crítica RECENTE, que é a que o próximo
+        # paciente encontra no topo.
+        recentes = [x for x in criticas if (x["data"] or "") >= limite]
+        datas = [x["data"] for x in u["itens"] if x["data"]]
+        mais_antiga = min(datas) if datas else None
+        dias = ((hoje - dt.date.fromisoformat(mais_antiga)).days
+                if mais_antiga else None)
+        u["criticas"] = len(criticas)
+        u["criticas_recentes"] = len(recentes)
+        u["janela_que_pesa_dias"] = JANELA_QUE_PESA
+        u["mais_antiga_em"] = mais_antiga
+        u["dias_da_mais_antiga"] = dias
+        # o que o paciente estava reclamando, quando o texto diz
+        u["assuntos"] = _assuntos(recentes or u["itens"])
+        u["frase"] = (
+            conta(len(recentes), "crítica sem resposta", "críticas sem resposta")
+            + f" nos últimos {JANELA_QUE_PESA} dias"
+            + (f" · {conta(u['criticas'], 'aberta', 'abertas')} no total"
+               if u["criticas"] > len(recentes) else ""))
+        u["gravidade"] = ("alta" if len(recentes) >= 2
+                          else "media" if recentes else "baixa")
+        u["insight"] = monta_insight(
+            fonte="respostas", chave=lid_de(u),
+            titulo="Avaliações críticas esperando resposta",
+            onde=u["rotulo"] + (f" · {u['unidade']}" if u.get("unidade") else ""),
+            fato=u["frase"],
+            o_que_perguntar=("quem responde as avaliações hoje, e com que "
+                             "frequência?"),
+            por_que_importa=("a reclamação sem resposta é a versão do "
+                             "paciente dos fatos, e é ela que o próximo "
+                             "lê antes de escolher"),
+            acao=("responder as críticas com texto em 48 horas, começando "
+                  "pela mais antiga"),
+            publico="franqueado",
+            gravidade=u["gravidade"],
+            evidencias=[{"o_que": f"{x['nota']}★ · {x['data']}",
+                         "texto": (x["texto"] or "")[:180]}
+                        for x in u["itens"] if x["tem_texto"]][:3],
+            nao_faca=("não pedir para apagar avaliação: responder muda o "
+                      "que o próximo paciente lê, apagar não"),
+            revisar_em=14,
+            link=f"clinicas/{lid_de(u)}",
+            carimbo=confianca(
+                natureza="fato",
+                amostra=u["abertas"],
+                unidade_amostra=("avaliação aberta", "avaliações abertas"),
+                fonte="dados/serie/reviews.jsonl",
+                a_favor=["cada item tem nota, data e texto do próprio "
+                         "paciente"],
+                contra=["o portal vê a resposta pública; conversa por "
+                        "telefone ou no balcão ele não vê"]),
+        )
+    # gravidade primeiro, depois quanto tempo a mais antiga está parada
+    _peso = {"alta": 0, "media": 1, "baixa": 2}
+    unidades.sort(key=lambda u: (_peso[u["gravidade"]],
+                                 -u["criticas_recentes"],
+                                 -u["criticas"], -u["abertas"]))
 
     total = sum(u["abertas"] for u in unidades)
     com_texto = sum(u["com_texto"] for u in unidades)
@@ -85,8 +201,21 @@ def monta():
         "dono": "franqueado; o consultor cobra na visita",
         "total_abertas": total,
         "com_texto": com_texto,
-        "manchete": (f"{total} avaliações negativas sem resposta na rede medida — "
-                     f"{com_texto} delas com o paciente explicando o motivo."),
+        "manchete": (
+            conta(sum(1 for u in unidades if u["gravidade"] == "alta"),
+                  "unidade precisa responder agora",
+                  "unidades precisam responder agora")
+            + f" — {total} avaliações negativas abertas na rede medida, "
+            + f"{com_texto} com o paciente explicando o motivo."),
+        "ordem": (f"gravidade primeiro: críticas de 1 ou 2 estrelas sem "
+                  f"resposta nos últimos {JANELA_QUE_PESA} dias. O acervo "
+                  f"antigo continua contado, mas não é urgência — ninguém "
+                  f"escolhe clínica lendo uma avaliação de 2015."),
+        "janela_que_pesa_dias": JANELA_QUE_PESA,
+        "precisam_agora": [u["local_id"] for u in unidades
+                           if u["gravidade"] == "alta"],
+        "precisam_agora_total": sum(1 for u in unidades
+                                    if u["gravidade"] == "alta"),
         # a tela não conta lista: "lojas com fila" e o tamanho de cada fila
         # saem contados daqui
         "lojas_com_fila": len(unidades),
@@ -101,12 +230,14 @@ def main():
     a = ap.parse_args()
     d = monta()
     print(f"\n  {d['manchete']}\n")
-    for u in d["unidades"]:
-        print(f"  {u['abertas']:>3d} abertas ({u['com_texto']} com texto) · "
-              f"{u['rotulo']} · {u['unidade']}")
-        for x in u["itens"][:2]:
-            if x["texto"]:
-                print(f"        [{x['nota']}★ {x['data']}] “{x['texto'][:76]}”")
+    for u in d["unidades"][:10]:
+        cor = {"alta": "🔴", "media": "🟡", "baixa": "🟢"}[u["gravidade"]]
+        print(f"  {cor} {u['rotulo']} · {u['unidade']}")
+        print(f"       {u['frase']}")
+        if u["assuntos"]:
+            print("       assuntos: "
+                  + ", ".join(f"{a['assunto']} ({a['quantas']})"
+                              for a in u["assuntos"]))
     if a.salvar:
         (PORTAL/"caixa_de_respostas.json").write_text(
             json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")

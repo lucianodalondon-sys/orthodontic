@@ -38,7 +38,45 @@ from collections import Counter, defaultdict
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RAIZ/"scripts"))
-from cruzamento import jsonl
+from cruzamento import jsonl, conta, confianca
+from insight import monta as monta_insight
+
+# O QUE FAZER COM CADA ALERTA. Sem isto a tela é um painel de sistema:
+# quatro números grandes e nenhuma instrução.
+CONSERTO = {
+    "fechada_no_google": dict(
+        titulo="A ficha está marcada como fechada no Google",
+        acao="pedir a reativação da ficha no Google Meu Negócio — a "
+             "unidade está aberta na lista oficial da rede",
+        importa="ficha fechada some do mapa: quem procura não encontra, e "
+                "quem encontra acha que a clínica não existe mais",
+        custo="sem custo de mídia", prazo=7,
+        nao_faca="não criar ficha nova por cima: duplicar perde as "
+                 "avaliações já acumuladas"),
+    "sem_nenhuma_avaliacao": dict(
+        titulo="Unidade aberta e sem nenhuma avaliação",
+        acao="rodar o pacote de abertura — ficha completa e as primeiras "
+             "avaliações pedidas no fim do atendimento",
+        importa="existe no papel e não existe para quem procura: sem "
+                "avaliação a ficha não aparece na busca do bairro",
+        custo="sem custo de mídia", prazo=60),
+    "nota_baixa": dict(
+        titulo="Nota abaixo do que a rede pratica",
+        acao="ler as avaliações negativas com a equipe e responder todas, "
+             "começando pelas com texto",
+        importa="a nota é a primeira coisa que o paciente vê, antes do "
+                "endereço e antes do preço",
+        custo="sem custo de mídia", prazo=14,
+        nao_faca="não pedir para apagar avaliação: responder muda o que o "
+                 "próximo lê, apagar não"),
+    "categoria_divergente": dict(
+        titulo="Categoria da ficha diferente do resto da rede",
+        acao="trocar a categoria principal da ficha para a que o resto da "
+             "rede usa",
+        importa="a categoria decide em que busca a ficha entra: errada, a "
+                "unidade some das buscas que trazem paciente de aparelho",
+        custo="sem custo de mídia", prazo=7),
+}
 
 PORTAL = RAIZ/"dados"/"portal"
 
@@ -109,6 +147,42 @@ def monta():
 
     ordem = {"vermelha": 0, "amarela": 1}
     alertas.sort(key=lambda x: (ordem.get(x["gravidade"], 9), x.get("nota") or 9))
+
+    # ALERTA SEM AÇÃO É BOLETIM. Cada um destes é conserto de vitrine, e
+    # quase todos são de graça — mas ninguém conserta o que não diz o que
+    # fazer nem para quem mandar.
+    for x in alertas:
+        c = CONSERTO[x["chave"]]
+        x["o_que_fazer"] = c["acao"]
+        x["custo"] = c["custo"]
+        x["prazo_dias"] = c["prazo"]
+        x["insight"] = monta_insight(
+            fonte="ficha", chave=f"{x['uf']}|{x['cidade']}|{x['chave']}",
+            titulo=c["titulo"],
+            onde=f"{x['uf']} · {x['cidade']}"
+                 + (f" · {x['unidade']}" if x.get("unidade") else ""),
+            fato=x["por_que"],
+            por_que_importa=c["importa"],
+            acao=c["acao"],
+            # "franqueadora" é o dono do problema; o público que recebe é
+            # a diretoria — os dois vocabulários existem e não se misturam
+            publico=("diretoria" if x["de_quem_e"] == "franqueadora"
+                     else "franqueado"),
+            gravidade="alta" if x["gravidade"] == "vermelha" else "media",
+            nao_faca=c.get("nao_faca"),
+            revisar_em=c["prazo"],
+            evidencias=([{"o_que": "ficha no mapa", "texto": x["mapa"]}]
+                        if x.get("mapa") else []),
+            link=x.get("mapa"),
+            carimbo=confianca(
+                natureza="fato",
+                amostra=x.get("avaliacoes"),
+                unidade_amostra=("avaliação", "avaliações"),
+                fonte="ficha pública do Google",
+                a_favor=["é o que qualquer paciente vê ao procurar a "
+                         "unidade"],
+                contra=["a ficha é retrato do dia da coleta; se alguém "
+                        "corrigiu ontem, o portal só vê na próxima"]))
 
     por_uf = defaultdict(lambda: {"unidades": 0, "notas": []})
     for x in ok:

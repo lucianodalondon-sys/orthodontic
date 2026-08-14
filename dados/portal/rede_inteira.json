@@ -26,7 +26,90 @@
    "por_que": "nota 2.7 na ficha pública, e com base fina, o que ainda dá conserto rápido",
    "gravidade": "vermelha",
    "chave": "nota_baixa",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "ler as avaliações negativas com a equipe e responder todas, começando pelas com texto",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 14,
+   "insight": {
+    "insight_id": "ficha-d6c6e510",
+    "fonte": "ficha",
+    "titulo": "Nota abaixo do que a rede pratica",
+    "onde": "SP · São Paulo · São Paulo - Santana",
+    "fato": "nota 2.7 na ficha pública, e com base fina, o que ainda dá conserto rápido",
+    "por_que_importa": "a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "ler as avaliações negativas com a equipe e responder todas, começando pelas com texto",
+    "o_que_perguntar": null,
+    "nao_faca": "não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não",
+    "revisar_em_dias": 14,
+    "gravidade": "alta",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=7104306993321834883&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=7104306993321834883&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 12,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 12 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*SP · São Paulo · São Paulo - Santana*\nnota 2.7 na ficha pública, e com base fina, o que ainda dá conserto rápido\nPor que importa: a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço\n· https://maps.google.com/?cid=7104306993321834883&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: ler as avaliações negativas com a equipe e responder todas, começando pelas com texto\nO que NÃO fazer: não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não\nNova medição sugerida: 14 dias.\nAnálise completa: https://maps.google.com/?cid=7104306993321834883&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*SP · São Paulo · São Paulo - Santana*\nnota 2.7 na ficha pública, e com base fina, o que ainda dá conserto rápido\nPor que importa: a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço\n· https://maps.google.com/?cid=7104306993321834883&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: ler as avaliações negativas com a equipe e responder todas, começando pelas com texto\nO que NÃO fazer: não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não\nNova medição sugerida: 14 dias.\nAnálise completa: https://maps.google.com/?cid=7104306993321834883&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Ribeirão Preto",
@@ -42,7 +125,90 @@
    "por_que": "nota 3 na ficha pública, e com base fina, o que ainda dá conserto rápido",
    "gravidade": "vermelha",
    "chave": "nota_baixa",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "ler as avaliações negativas com a equipe e responder todas, começando pelas com texto",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 14,
+   "insight": {
+    "insight_id": "ficha-c5939395",
+    "fonte": "ficha",
+    "titulo": "Nota abaixo do que a rede pratica",
+    "onde": "SP · Ribeirão Preto · Ribeirão Preto (Centro)",
+    "fato": "nota 3 na ficha pública, e com base fina, o que ainda dá conserto rápido",
+    "por_que_importa": "a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "ler as avaliações negativas com a equipe e responder todas, começando pelas com texto",
+    "o_que_perguntar": null,
+    "nao_faca": "não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não",
+    "revisar_em_dias": 14,
+    "gravidade": "alta",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=11480576223313131991&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=11480576223313131991&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 14,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 14 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*SP · Ribeirão Preto · Ribeirão Preto (Centro)*\nnota 3 na ficha pública, e com base fina, o que ainda dá conserto rápido\nPor que importa: a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço\n· https://maps.google.com/?cid=11480576223313131991&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: ler as avaliações negativas com a equipe e responder todas, começando pelas com texto\nO que NÃO fazer: não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não\nNova medição sugerida: 14 dias.\nAnálise completa: https://maps.google.com/?cid=11480576223313131991&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*SP · Ribeirão Preto · Ribeirão Preto (Centro)*\nnota 3 na ficha pública, e com base fina, o que ainda dá conserto rápido\nPor que importa: a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço\n· https://maps.google.com/?cid=11480576223313131991&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: ler as avaliações negativas com a equipe e responder todas, começando pelas com texto\nO que NÃO fazer: não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não\nNova medição sugerida: 14 dias.\nAnálise completa: https://maps.google.com/?cid=11480576223313131991&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Salvador",
@@ -58,7 +224,90 @@
    "por_que": "nota 3.1 na ficha pública, sobre 158 avaliações, o que já é reputação firmada",
    "gravidade": "vermelha",
    "chave": "nota_baixa",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "ler as avaliações negativas com a equipe e responder todas, começando pelas com texto",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 14,
+   "insight": {
+    "insight_id": "ficha-756ce0e5",
+    "fonte": "ficha",
+    "titulo": "Nota abaixo do que a rede pratica",
+    "onde": "BA · Salvador · Salvador - Centro",
+    "fato": "nota 3.1 na ficha pública, sobre 158 avaliações, o que já é reputação firmada",
+    "por_que_importa": "a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "ler as avaliações negativas com a equipe e responder todas, começando pelas com texto",
+    "o_que_perguntar": null,
+    "nao_faca": "não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não",
+    "revisar_em_dias": 14,
+    "gravidade": "alta",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=14367931975217138847&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=14367931975217138847&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 158,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 158 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*BA · Salvador · Salvador - Centro*\nnota 3.1 na ficha pública, sobre 158 avaliações, o que já é reputação firmada\nPor que importa: a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço\n· https://maps.google.com/?cid=14367931975217138847&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: ler as avaliações negativas com a equipe e responder todas, começando pelas com texto\nO que NÃO fazer: não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não\nNova medição sugerida: 14 dias.\nAnálise completa: https://maps.google.com/?cid=14367931975217138847&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*BA · Salvador · Salvador - Centro*\nnota 3.1 na ficha pública, sobre 158 avaliações, o que já é reputação firmada\nPor que importa: a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço\n· https://maps.google.com/?cid=14367931975217138847&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: ler as avaliações negativas com a equipe e responder todas, começando pelas com texto\nO que NÃO fazer: não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não\nNova medição sugerida: 14 dias.\nAnálise completa: https://maps.google.com/?cid=14367931975217138847&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Dourados",
@@ -74,7 +323,90 @@
    "por_que": "nota 3.3 na ficha pública, e com base fina, o que ainda dá conserto rápido",
    "gravidade": "vermelha",
    "chave": "nota_baixa",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "ler as avaliações negativas com a equipe e responder todas, começando pelas com texto",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 14,
+   "insight": {
+    "insight_id": "ficha-5aeebfd8",
+    "fonte": "ficha",
+    "titulo": "Nota abaixo do que a rede pratica",
+    "onde": "MS · Dourados · Dourados",
+    "fato": "nota 3.3 na ficha pública, e com base fina, o que ainda dá conserto rápido",
+    "por_que_importa": "a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "ler as avaliações negativas com a equipe e responder todas, começando pelas com texto",
+    "o_que_perguntar": null,
+    "nao_faca": "não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não",
+    "revisar_em_dias": 14,
+    "gravidade": "alta",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=15064777602769435759&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=15064777602769435759&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 9,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 9 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*MS · Dourados · Dourados*\nnota 3.3 na ficha pública, e com base fina, o que ainda dá conserto rápido\nPor que importa: a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço\n· https://maps.google.com/?cid=15064777602769435759&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: ler as avaliações negativas com a equipe e responder todas, começando pelas com texto\nO que NÃO fazer: não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não\nNova medição sugerida: 14 dias.\nAnálise completa: https://maps.google.com/?cid=15064777602769435759&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*MS · Dourados · Dourados*\nnota 3.3 na ficha pública, e com base fina, o que ainda dá conserto rápido\nPor que importa: a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço\n· https://maps.google.com/?cid=15064777602769435759&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: ler as avaliações negativas com a equipe e responder todas, começando pelas com texto\nO que NÃO fazer: não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não\nNova medição sugerida: 14 dias.\nAnálise completa: https://maps.google.com/?cid=15064777602769435759&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Patrocinio",
@@ -90,7 +422,90 @@
    "por_que": "o Google marca esta ficha como FECHADA PERMANENTEMENTE, e a lista oficial da rede diz que a unidade está aberta",
    "gravidade": "vermelha",
    "chave": "fechada_no_google",
-   "de_quem_e": "franqueadora"
+   "de_quem_e": "franqueadora",
+   "o_que_fazer": "pedir a reativação da ficha no Google Meu Negócio — a unidade está aberta na lista oficial da rede",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 7,
+   "insight": {
+    "insight_id": "ficha-a2fea869",
+    "fonte": "ficha",
+    "titulo": "A ficha está marcada como fechada no Google",
+    "onde": "MG · Patrocinio · Patrocinio",
+    "fato": "o Google marca esta ficha como FECHADA PERMANENTEMENTE, e a lista oficial da rede diz que a unidade está aberta",
+    "por_que_importa": "ficha fechada some do mapa: quem procura não encontra, e quem encontra acha que a clínica não existe mais",
+    "quem_age": "diretoria",
+    "quem_age_rotulo": "Franqueadora · diretoria",
+    "acao": "pedir a reativação da ficha no Google Meu Negócio — a unidade está aberta na lista oficial da rede",
+    "o_que_perguntar": null,
+    "nao_faca": "não criar ficha nova por cima: duplicar perde as avaliações já acumuladas",
+    "revisar_em_dias": 7,
+    "gravidade": "alta",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=14775674156183168691&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=14775674156183168691&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 62,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 62 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "diretoria",
+     "corpo": "*MG · Patrocinio · Patrocinio*\no Google marca esta ficha como FECHADA PERMANENTEMENTE, e a lista oficial da rede diz que a unidade está aberta\nPor que importa: ficha fechada some do mapa: quem procura não encontra, e quem encontra acha que a clínica não existe mais\n· https://maps.google.com/?cid=14775674156183168691&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: pedir a reativação da ficha no Google Meu Negócio — a unidade está aberta na lista oficial da rede\nO que NÃO fazer: não criar ficha nova por cima: duplicar perde as avaliações já acumuladas\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=14775674156183168691&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Padrão observado na rede:\n\n*MG · Patrocinio · Patrocinio*\no Google marca esta ficha como FECHADA PERMANENTEMENTE, e a lista oficial da rede diz que a unidade está aberta\nPor que importa: ficha fechada some do mapa: quem procura não encontra, e quem encontra acha que a clínica não existe mais\n· https://maps.google.com/?cid=14775674156183168691&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: pedir a reativação da ficha no Google Meu Negócio — a unidade está aberta na lista oficial da rede\nO que NÃO fazer: não criar ficha nova por cima: duplicar perde as avaliações já acumuladas\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=14775674156183168691&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Piraju",
@@ -106,7 +521,90 @@
    "por_que": "unidade aberta sem NENHUMA avaliação: existe no papel e não existe para quem procura",
    "gravidade": "vermelha",
    "chave": "sem_nenhuma_avaliacao",
-   "de_quem_e": "franqueadora"
+   "de_quem_e": "franqueadora",
+   "o_que_fazer": "rodar o pacote de abertura — ficha completa e as primeiras avaliações pedidas no fim do atendimento",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 60,
+   "insight": {
+    "insight_id": "ficha-002c1245",
+    "fonte": "ficha",
+    "titulo": "Unidade aberta e sem nenhuma avaliação",
+    "onde": "SP · Piraju · Piraju",
+    "fato": "unidade aberta sem NENHUMA avaliação: existe no papel e não existe para quem procura",
+    "por_que_importa": "existe no papel e não existe para quem procura: sem avaliação a ficha não aparece na busca do bairro",
+    "quem_age": "diretoria",
+    "quem_age_rotulo": "Franqueadora · diretoria",
+    "acao": "rodar o pacote de abertura — ficha completa e as primeiras avaliações pedidas no fim do atendimento",
+    "o_que_perguntar": null,
+    "nao_faca": null,
+    "revisar_em_dias": 60,
+    "gravidade": "alta",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=2903097433523700722&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=2903097433523700722&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "baixa",
+     "medido": true,
+     "amostra": null,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "sem amostra declarada"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "diretoria",
+     "corpo": "*SP · Piraju · Piraju*\nunidade aberta sem NENHUMA avaliação: existe no papel e não existe para quem procura\nPor que importa: existe no papel e não existe para quem procura: sem avaliação a ficha não aparece na busca do bairro\n· https://maps.google.com/?cid=2903097433523700722&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: rodar o pacote de abertura — ficha completa e as primeiras avaliações pedidas no fim do atendimento\nNova medição sugerida: 60 dias.\nAnálise completa: https://maps.google.com/?cid=2903097433523700722&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Padrão observado na rede:\n\n*SP · Piraju · Piraju*\nunidade aberta sem NENHUMA avaliação: existe no papel e não existe para quem procura\nPor que importa: existe no papel e não existe para quem procura: sem avaliação a ficha não aparece na busca do bairro\n· https://maps.google.com/?cid=2903097433523700722&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: rodar o pacote de abertura — ficha completa e as primeiras avaliações pedidas no fim do atendimento\nNova medição sugerida: 60 dias.\nAnálise completa: https://maps.google.com/?cid=2903097433523700722&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Alagoinhas",
@@ -122,7 +620,90 @@
    "por_que": "unidade aberta sem NENHUMA avaliação: existe no papel e não existe para quem procura",
    "gravidade": "vermelha",
    "chave": "sem_nenhuma_avaliacao",
-   "de_quem_e": "franqueadora"
+   "de_quem_e": "franqueadora",
+   "o_que_fazer": "rodar o pacote de abertura — ficha completa e as primeiras avaliações pedidas no fim do atendimento",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 60,
+   "insight": {
+    "insight_id": "ficha-8c8d56d2",
+    "fonte": "ficha",
+    "titulo": "Unidade aberta e sem nenhuma avaliação",
+    "onde": "BA · Alagoinhas · Alagoinhas",
+    "fato": "unidade aberta sem NENHUMA avaliação: existe no papel e não existe para quem procura",
+    "por_que_importa": "existe no papel e não existe para quem procura: sem avaliação a ficha não aparece na busca do bairro",
+    "quem_age": "diretoria",
+    "quem_age_rotulo": "Franqueadora · diretoria",
+    "acao": "rodar o pacote de abertura — ficha completa e as primeiras avaliações pedidas no fim do atendimento",
+    "o_que_perguntar": null,
+    "nao_faca": null,
+    "revisar_em_dias": 60,
+    "gravidade": "alta",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=10704924771698697267&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=10704924771698697267&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "baixa",
+     "medido": true,
+     "amostra": null,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "sem amostra declarada"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "diretoria",
+     "corpo": "*BA · Alagoinhas · Alagoinhas*\nunidade aberta sem NENHUMA avaliação: existe no papel e não existe para quem procura\nPor que importa: existe no papel e não existe para quem procura: sem avaliação a ficha não aparece na busca do bairro\n· https://maps.google.com/?cid=10704924771698697267&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: rodar o pacote de abertura — ficha completa e as primeiras avaliações pedidas no fim do atendimento\nNova medição sugerida: 60 dias.\nAnálise completa: https://maps.google.com/?cid=10704924771698697267&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Padrão observado na rede:\n\n*BA · Alagoinhas · Alagoinhas*\nunidade aberta sem NENHUMA avaliação: existe no papel e não existe para quem procura\nPor que importa: existe no papel e não existe para quem procura: sem avaliação a ficha não aparece na busca do bairro\n· https://maps.google.com/?cid=10704924771698697267&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: rodar o pacote de abertura — ficha completa e as primeiras avaliações pedidas no fim do atendimento\nNova medição sugerida: 60 dias.\nAnálise completa: https://maps.google.com/?cid=10704924771698697267&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Birigui",
@@ -138,7 +719,90 @@
    "por_que": "unidade aberta sem NENHUMA avaliação: existe no papel e não existe para quem procura",
    "gravidade": "vermelha",
    "chave": "sem_nenhuma_avaliacao",
-   "de_quem_e": "franqueadora"
+   "de_quem_e": "franqueadora",
+   "o_que_fazer": "rodar o pacote de abertura — ficha completa e as primeiras avaliações pedidas no fim do atendimento",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 60,
+   "insight": {
+    "insight_id": "ficha-5b0f32e9",
+    "fonte": "ficha",
+    "titulo": "Unidade aberta e sem nenhuma avaliação",
+    "onde": "SP · Birigui · Birigui",
+    "fato": "unidade aberta sem NENHUMA avaliação: existe no papel e não existe para quem procura",
+    "por_que_importa": "existe no papel e não existe para quem procura: sem avaliação a ficha não aparece na busca do bairro",
+    "quem_age": "diretoria",
+    "quem_age_rotulo": "Franqueadora · diretoria",
+    "acao": "rodar o pacote de abertura — ficha completa e as primeiras avaliações pedidas no fim do atendimento",
+    "o_que_perguntar": null,
+    "nao_faca": null,
+    "revisar_em_dias": 60,
+    "gravidade": "alta",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=11742842241597025105&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=11742842241597025105&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "baixa",
+     "medido": true,
+     "amostra": null,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "sem amostra declarada"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "diretoria",
+     "corpo": "*SP · Birigui · Birigui*\nunidade aberta sem NENHUMA avaliação: existe no papel e não existe para quem procura\nPor que importa: existe no papel e não existe para quem procura: sem avaliação a ficha não aparece na busca do bairro\n· https://maps.google.com/?cid=11742842241597025105&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: rodar o pacote de abertura — ficha completa e as primeiras avaliações pedidas no fim do atendimento\nNova medição sugerida: 60 dias.\nAnálise completa: https://maps.google.com/?cid=11742842241597025105&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Padrão observado na rede:\n\n*SP · Birigui · Birigui*\nunidade aberta sem NENHUMA avaliação: existe no papel e não existe para quem procura\nPor que importa: existe no papel e não existe para quem procura: sem avaliação a ficha não aparece na busca do bairro\n· https://maps.google.com/?cid=11742842241597025105&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: rodar o pacote de abertura — ficha completa e as primeiras avaliações pedidas no fim do atendimento\nNova medição sugerida: 60 dias.\nAnálise completa: https://maps.google.com/?cid=11742842241597025105&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Pindamonhangaba",
@@ -154,7 +818,90 @@
    "por_que": "unidade aberta sem NENHUMA avaliação: existe no papel e não existe para quem procura",
    "gravidade": "vermelha",
    "chave": "sem_nenhuma_avaliacao",
-   "de_quem_e": "franqueadora"
+   "de_quem_e": "franqueadora",
+   "o_que_fazer": "rodar o pacote de abertura — ficha completa e as primeiras avaliações pedidas no fim do atendimento",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 60,
+   "insight": {
+    "insight_id": "ficha-746c761c",
+    "fonte": "ficha",
+    "titulo": "Unidade aberta e sem nenhuma avaliação",
+    "onde": "SP · Pindamonhangaba · Pindamonhangaba",
+    "fato": "unidade aberta sem NENHUMA avaliação: existe no papel e não existe para quem procura",
+    "por_que_importa": "existe no papel e não existe para quem procura: sem avaliação a ficha não aparece na busca do bairro",
+    "quem_age": "diretoria",
+    "quem_age_rotulo": "Franqueadora · diretoria",
+    "acao": "rodar o pacote de abertura — ficha completa e as primeiras avaliações pedidas no fim do atendimento",
+    "o_que_perguntar": null,
+    "nao_faca": null,
+    "revisar_em_dias": 60,
+    "gravidade": "alta",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=6994308186073042750&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=6994308186073042750&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "baixa",
+     "medido": true,
+     "amostra": null,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "sem amostra declarada"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "diretoria",
+     "corpo": "*SP · Pindamonhangaba · Pindamonhangaba*\nunidade aberta sem NENHUMA avaliação: existe no papel e não existe para quem procura\nPor que importa: existe no papel e não existe para quem procura: sem avaliação a ficha não aparece na busca do bairro\n· https://maps.google.com/?cid=6994308186073042750&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: rodar o pacote de abertura — ficha completa e as primeiras avaliações pedidas no fim do atendimento\nNova medição sugerida: 60 dias.\nAnálise completa: https://maps.google.com/?cid=6994308186073042750&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Padrão observado na rede:\n\n*SP · Pindamonhangaba · Pindamonhangaba*\nunidade aberta sem NENHUMA avaliação: existe no papel e não existe para quem procura\nPor que importa: existe no papel e não existe para quem procura: sem avaliação a ficha não aparece na busca do bairro\n· https://maps.google.com/?cid=6994308186073042750&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: rodar o pacote de abertura — ficha completa e as primeiras avaliações pedidas no fim do atendimento\nNova medição sugerida: 60 dias.\nAnálise completa: https://maps.google.com/?cid=6994308186073042750&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Cascavel",
@@ -170,7 +917,90 @@
    "por_que": "nota 3.5 na ficha pública, sobre 29 avaliações, o que já é reputação firmada",
    "gravidade": "amarela",
    "chave": "nota_baixa",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "ler as avaliações negativas com a equipe e responder todas, começando pelas com texto",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 14,
+   "insight": {
+    "insight_id": "ficha-87f2d2ef",
+    "fonte": "ficha",
+    "titulo": "Nota abaixo do que a rede pratica",
+    "onde": "PR · Cascavel · Cascavel - Rua Sete de Setembro",
+    "fato": "nota 3.5 na ficha pública, sobre 29 avaliações, o que já é reputação firmada",
+    "por_que_importa": "a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "ler as avaliações negativas com a equipe e responder todas, começando pelas com texto",
+    "o_que_perguntar": null,
+    "nao_faca": "não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não",
+    "revisar_em_dias": 14,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=5517252131252367754&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=5517252131252367754&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 29,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 29 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*PR · Cascavel · Cascavel - Rua Sete de Setembro*\nnota 3.5 na ficha pública, sobre 29 avaliações, o que já é reputação firmada\nPor que importa: a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço\n· https://maps.google.com/?cid=5517252131252367754&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: ler as avaliações negativas com a equipe e responder todas, começando pelas com texto\nO que NÃO fazer: não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não\nNova medição sugerida: 14 dias.\nAnálise completa: https://maps.google.com/?cid=5517252131252367754&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*PR · Cascavel · Cascavel - Rua Sete de Setembro*\nnota 3.5 na ficha pública, sobre 29 avaliações, o que já é reputação firmada\nPor que importa: a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço\n· https://maps.google.com/?cid=5517252131252367754&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: ler as avaliações negativas com a equipe e responder todas, começando pelas com texto\nO que NÃO fazer: não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não\nNova medição sugerida: 14 dias.\nAnálise completa: https://maps.google.com/?cid=5517252131252367754&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Itapema",
@@ -186,7 +1016,90 @@
    "por_que": "nota 3.6 na ficha pública, sobre 34 avaliações, o que já é reputação firmada",
    "gravidade": "amarela",
    "chave": "nota_baixa",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "ler as avaliações negativas com a equipe e responder todas, começando pelas com texto",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 14,
+   "insight": {
+    "insight_id": "ficha-7c3d69c6",
+    "fonte": "ficha",
+    "titulo": "Nota abaixo do que a rede pratica",
+    "onde": "SC · Itapema · Itapema",
+    "fato": "nota 3.6 na ficha pública, sobre 34 avaliações, o que já é reputação firmada",
+    "por_que_importa": "a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "ler as avaliações negativas com a equipe e responder todas, começando pelas com texto",
+    "o_que_perguntar": null,
+    "nao_faca": "não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não",
+    "revisar_em_dias": 14,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=6834537592968015773&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=6834537592968015773&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 34,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 34 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*SC · Itapema · Itapema*\nnota 3.6 na ficha pública, sobre 34 avaliações, o que já é reputação firmada\nPor que importa: a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço\n· https://maps.google.com/?cid=6834537592968015773&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: ler as avaliações negativas com a equipe e responder todas, começando pelas com texto\nO que NÃO fazer: não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não\nNova medição sugerida: 14 dias.\nAnálise completa: https://maps.google.com/?cid=6834537592968015773&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*SC · Itapema · Itapema*\nnota 3.6 na ficha pública, sobre 34 avaliações, o que já é reputação firmada\nPor que importa: a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço\n· https://maps.google.com/?cid=6834537592968015773&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: ler as avaliações negativas com a equipe e responder todas, começando pelas com texto\nO que NÃO fazer: não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não\nNova medição sugerida: 14 dias.\nAnálise completa: https://maps.google.com/?cid=6834537592968015773&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Uberlândia",
@@ -202,7 +1115,90 @@
    "por_que": "nota 3.7 na ficha pública, sobre 127 avaliações, o que já é reputação firmada",
    "gravidade": "amarela",
    "chave": "nota_baixa",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "ler as avaliações negativas com a equipe e responder todas, começando pelas com texto",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 14,
+   "insight": {
+    "insight_id": "ficha-df869532",
+    "fonte": "ficha",
+    "titulo": "Nota abaixo do que a rede pratica",
+    "onde": "MG · Uberlândia · Uberlândia - Praca Adolfo Fonseca",
+    "fato": "nota 3.7 na ficha pública, sobre 127 avaliações, o que já é reputação firmada",
+    "por_que_importa": "a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "ler as avaliações negativas com a equipe e responder todas, começando pelas com texto",
+    "o_que_perguntar": null,
+    "nao_faca": "não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não",
+    "revisar_em_dias": 14,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=7697359775053120296&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=7697359775053120296&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 127,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 127 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*MG · Uberlândia · Uberlândia - Praca Adolfo Fonseca*\nnota 3.7 na ficha pública, sobre 127 avaliações, o que já é reputação firmada\nPor que importa: a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço\n· https://maps.google.com/?cid=7697359775053120296&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: ler as avaliações negativas com a equipe e responder todas, começando pelas com texto\nO que NÃO fazer: não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não\nNova medição sugerida: 14 dias.\nAnálise completa: https://maps.google.com/?cid=7697359775053120296&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*MG · Uberlândia · Uberlândia - Praca Adolfo Fonseca*\nnota 3.7 na ficha pública, sobre 127 avaliações, o que já é reputação firmada\nPor que importa: a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço\n· https://maps.google.com/?cid=7697359775053120296&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: ler as avaliações negativas com a equipe e responder todas, começando pelas com texto\nO que NÃO fazer: não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não\nNova medição sugerida: 14 dias.\nAnálise completa: https://maps.google.com/?cid=7697359775053120296&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Osasco",
@@ -218,7 +1214,90 @@
    "por_que": "nota 3.7 na ficha pública, sobre 35 avaliações, o que já é reputação firmada",
    "gravidade": "amarela",
    "chave": "nota_baixa",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "ler as avaliações negativas com a equipe e responder todas, começando pelas com texto",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 14,
+   "insight": {
+    "insight_id": "ficha-655dd088",
+    "fonte": "ficha",
+    "titulo": "Nota abaixo do que a rede pratica",
+    "onde": "SP · Osasco · Osasco",
+    "fato": "nota 3.7 na ficha pública, sobre 35 avaliações, o que já é reputação firmada",
+    "por_que_importa": "a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "ler as avaliações negativas com a equipe e responder todas, começando pelas com texto",
+    "o_que_perguntar": null,
+    "nao_faca": "não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não",
+    "revisar_em_dias": 14,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=9064532303500290543&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=9064532303500290543&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 35,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 35 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*SP · Osasco · Osasco*\nnota 3.7 na ficha pública, sobre 35 avaliações, o que já é reputação firmada\nPor que importa: a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço\n· https://maps.google.com/?cid=9064532303500290543&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: ler as avaliações negativas com a equipe e responder todas, começando pelas com texto\nO que NÃO fazer: não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não\nNova medição sugerida: 14 dias.\nAnálise completa: https://maps.google.com/?cid=9064532303500290543&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*SP · Osasco · Osasco*\nnota 3.7 na ficha pública, sobre 35 avaliações, o que já é reputação firmada\nPor que importa: a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço\n· https://maps.google.com/?cid=9064532303500290543&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: ler as avaliações negativas com a equipe e responder todas, começando pelas com texto\nO que NÃO fazer: não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não\nNova medição sugerida: 14 dias.\nAnálise completa: https://maps.google.com/?cid=9064532303500290543&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Londrina",
@@ -234,7 +1313,90 @@
    "por_que": "nota 3.8 na ficha pública, sobre 76 avaliações, o que já é reputação firmada",
    "gravidade": "amarela",
    "chave": "nota_baixa",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "ler as avaliações negativas com a equipe e responder todas, começando pelas com texto",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 14,
+   "insight": {
+    "insight_id": "ficha-c5a3adb7",
+    "fonte": "ficha",
+    "titulo": "Nota abaixo do que a rede pratica",
+    "onde": "PR · Londrina · Londrina - Rua Sergipe",
+    "fato": "nota 3.8 na ficha pública, sobre 76 avaliações, o que já é reputação firmada",
+    "por_que_importa": "a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "ler as avaliações negativas com a equipe e responder todas, começando pelas com texto",
+    "o_que_perguntar": null,
+    "nao_faca": "não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não",
+    "revisar_em_dias": 14,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=3557878793132619267&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=3557878793132619267&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 76,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 76 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*PR · Londrina · Londrina - Rua Sergipe*\nnota 3.8 na ficha pública, sobre 76 avaliações, o que já é reputação firmada\nPor que importa: a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço\n· https://maps.google.com/?cid=3557878793132619267&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: ler as avaliações negativas com a equipe e responder todas, começando pelas com texto\nO que NÃO fazer: não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não\nNova medição sugerida: 14 dias.\nAnálise completa: https://maps.google.com/?cid=3557878793132619267&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*PR · Londrina · Londrina - Rua Sergipe*\nnota 3.8 na ficha pública, sobre 76 avaliações, o que já é reputação firmada\nPor que importa: a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço\n· https://maps.google.com/?cid=3557878793132619267&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: ler as avaliações negativas com a equipe e responder todas, começando pelas com texto\nO que NÃO fazer: não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não\nNova medição sugerida: 14 dias.\nAnálise completa: https://maps.google.com/?cid=3557878793132619267&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Limeira",
@@ -250,7 +1412,90 @@
    "por_que": "nota 3.8 na ficha pública, sobre 32 avaliações, o que já é reputação firmada",
    "gravidade": "amarela",
    "chave": "nota_baixa",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "ler as avaliações negativas com a equipe e responder todas, começando pelas com texto",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 14,
+   "insight": {
+    "insight_id": "ficha-29cd2d6d",
+    "fonte": "ficha",
+    "titulo": "Nota abaixo do que a rede pratica",
+    "onde": "SP · Limeira · Limeira",
+    "fato": "nota 3.8 na ficha pública, sobre 32 avaliações, o que já é reputação firmada",
+    "por_que_importa": "a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "ler as avaliações negativas com a equipe e responder todas, começando pelas com texto",
+    "o_que_perguntar": null,
+    "nao_faca": "não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não",
+    "revisar_em_dias": 14,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=15199467633524469894&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=15199467633524469894&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 32,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 32 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*SP · Limeira · Limeira*\nnota 3.8 na ficha pública, sobre 32 avaliações, o que já é reputação firmada\nPor que importa: a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço\n· https://maps.google.com/?cid=15199467633524469894&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: ler as avaliações negativas com a equipe e responder todas, começando pelas com texto\nO que NÃO fazer: não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não\nNova medição sugerida: 14 dias.\nAnálise completa: https://maps.google.com/?cid=15199467633524469894&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*SP · Limeira · Limeira*\nnota 3.8 na ficha pública, sobre 32 avaliações, o que já é reputação firmada\nPor que importa: a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço\n· https://maps.google.com/?cid=15199467633524469894&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: ler as avaliações negativas com a equipe e responder todas, começando pelas com texto\nO que NÃO fazer: não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não\nNova medição sugerida: 14 dias.\nAnálise completa: https://maps.google.com/?cid=15199467633524469894&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Ribeirão Preto",
@@ -266,7 +1511,90 @@
    "por_que": "nota 3.8 na ficha pública, sobre 52 avaliações, o que já é reputação firmada",
    "gravidade": "amarela",
    "chave": "nota_baixa",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "ler as avaliações negativas com a equipe e responder todas, começando pelas com texto",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 14,
+   "insight": {
+    "insight_id": "ficha-c5939395",
+    "fonte": "ficha",
+    "titulo": "Nota abaixo do que a rede pratica",
+    "onde": "SP · Ribeirão Preto · Ribeirão Preto (Alto da Boa Vista)",
+    "fato": "nota 3.8 na ficha pública, sobre 52 avaliações, o que já é reputação firmada",
+    "por_que_importa": "a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "ler as avaliações negativas com a equipe e responder todas, começando pelas com texto",
+    "o_que_perguntar": null,
+    "nao_faca": "não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não",
+    "revisar_em_dias": 14,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=14918022739974469400&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=14918022739974469400&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 52,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 52 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*SP · Ribeirão Preto · Ribeirão Preto (Alto da Boa Vista)*\nnota 3.8 na ficha pública, sobre 52 avaliações, o que já é reputação firmada\nPor que importa: a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço\n· https://maps.google.com/?cid=14918022739974469400&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: ler as avaliações negativas com a equipe e responder todas, começando pelas com texto\nO que NÃO fazer: não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não\nNova medição sugerida: 14 dias.\nAnálise completa: https://maps.google.com/?cid=14918022739974469400&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*SP · Ribeirão Preto · Ribeirão Preto (Alto da Boa Vista)*\nnota 3.8 na ficha pública, sobre 52 avaliações, o que já é reputação firmada\nPor que importa: a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço\n· https://maps.google.com/?cid=14918022739974469400&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: ler as avaliações negativas com a equipe e responder todas, começando pelas com texto\nO que NÃO fazer: não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não\nNova medição sugerida: 14 dias.\nAnálise completa: https://maps.google.com/?cid=14918022739974469400&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Araucaria",
@@ -282,7 +1610,90 @@
    "por_que": "nota 3.8 na ficha pública, sobre 23 avaliações, o que já é reputação firmada",
    "gravidade": "amarela",
    "chave": "nota_baixa",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "ler as avaliações negativas com a equipe e responder todas, começando pelas com texto",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 14,
+   "insight": {
+    "insight_id": "ficha-f2975f4d",
+    "fonte": "ficha",
+    "titulo": "Nota abaixo do que a rede pratica",
+    "onde": "PR · Araucaria · Araucaria",
+    "fato": "nota 3.8 na ficha pública, sobre 23 avaliações, o que já é reputação firmada",
+    "por_que_importa": "a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "ler as avaliações negativas com a equipe e responder todas, começando pelas com texto",
+    "o_que_perguntar": null,
+    "nao_faca": "não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não",
+    "revisar_em_dias": 14,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=14365242878770529557&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=14365242878770529557&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 23,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 23 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*PR · Araucaria · Araucaria*\nnota 3.8 na ficha pública, sobre 23 avaliações, o que já é reputação firmada\nPor que importa: a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço\n· https://maps.google.com/?cid=14365242878770529557&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: ler as avaliações negativas com a equipe e responder todas, começando pelas com texto\nO que NÃO fazer: não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não\nNova medição sugerida: 14 dias.\nAnálise completa: https://maps.google.com/?cid=14365242878770529557&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*PR · Araucaria · Araucaria*\nnota 3.8 na ficha pública, sobre 23 avaliações, o que já é reputação firmada\nPor que importa: a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço\n· https://maps.google.com/?cid=14365242878770529557&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: ler as avaliações negativas com a equipe e responder todas, começando pelas com texto\nO que NÃO fazer: não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não\nNova medição sugerida: 14 dias.\nAnálise completa: https://maps.google.com/?cid=14365242878770529557&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Tramandai",
@@ -298,7 +1709,90 @@
    "por_que": "nota 3.9 na ficha pública, e com base fina, o que ainda dá conserto rápido",
    "gravidade": "amarela",
    "chave": "nota_baixa",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "ler as avaliações negativas com a equipe e responder todas, começando pelas com texto",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 14,
+   "insight": {
+    "insight_id": "ficha-a9099ecc",
+    "fonte": "ficha",
+    "titulo": "Nota abaixo do que a rede pratica",
+    "onde": "RS · Tramandai · Tramandai",
+    "fato": "nota 3.9 na ficha pública, e com base fina, o que ainda dá conserto rápido",
+    "por_que_importa": "a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "ler as avaliações negativas com a equipe e responder todas, começando pelas com texto",
+    "o_que_perguntar": null,
+    "nao_faca": "não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não",
+    "revisar_em_dias": 14,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=5072253577807617390&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=5072253577807617390&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 18,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 18 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*RS · Tramandai · Tramandai*\nnota 3.9 na ficha pública, e com base fina, o que ainda dá conserto rápido\nPor que importa: a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço\n· https://maps.google.com/?cid=5072253577807617390&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: ler as avaliações negativas com a equipe e responder todas, começando pelas com texto\nO que NÃO fazer: não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não\nNova medição sugerida: 14 dias.\nAnálise completa: https://maps.google.com/?cid=5072253577807617390&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*RS · Tramandai · Tramandai*\nnota 3.9 na ficha pública, e com base fina, o que ainda dá conserto rápido\nPor que importa: a nota é a primeira coisa que o paciente vê, antes do endereço e antes do preço\n· https://maps.google.com/?cid=5072253577807617390&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: ler as avaliações negativas com a equipe e responder todas, começando pelas com texto\nO que NÃO fazer: não pedir para apagar avaliação: responder muda o que o próximo lê, apagar não\nNova medição sugerida: 14 dias.\nAnálise completa: https://maps.google.com/?cid=5072253577807617390&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Carazinho",
@@ -314,7 +1808,90 @@
    "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
    "gravidade": "amarela",
    "chave": "categoria_divergente",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "trocar a categoria principal da ficha para a que o resto da rede usa",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 7,
+   "insight": {
+    "insight_id": "ficha-8114a91f",
+    "fonte": "ficha",
+    "titulo": "Categoria da ficha diferente do resto da rede",
+    "onde": "RS · Carazinho · Carazinho",
+    "fato": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+    "por_que_importa": "a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "trocar a categoria principal da ficha para a que o resto da rede usa",
+    "o_que_perguntar": null,
+    "nao_faca": null,
+    "revisar_em_dias": 7,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=12388072300665860048&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=12388072300665860048&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 57,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 57 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*RS · Carazinho · Carazinho*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=12388072300665860048&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=12388072300665860048&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*RS · Carazinho · Carazinho*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=12388072300665860048&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=12388072300665860048&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Vicente Pires",
@@ -330,7 +1907,90 @@
    "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
    "gravidade": "amarela",
    "chave": "categoria_divergente",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "trocar a categoria principal da ficha para a que o resto da rede usa",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 7,
+   "insight": {
+    "insight_id": "ficha-48de25d7",
+    "fonte": "ficha",
+    "titulo": "Categoria da ficha diferente do resto da rede",
+    "onde": "DF · Vicente Pires · Vicente Pires",
+    "fato": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+    "por_que_importa": "a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "trocar a categoria principal da ficha para a que o resto da rede usa",
+    "o_que_perguntar": null,
+    "nao_faca": null,
+    "revisar_em_dias": 7,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=2004332728131553780&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=2004332728131553780&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 252,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 252 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*DF · Vicente Pires · Vicente Pires*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=2004332728131553780&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=2004332728131553780&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*DF · Vicente Pires · Vicente Pires*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=2004332728131553780&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=2004332728131553780&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Sapucaia do Sul",
@@ -346,7 +2006,90 @@
    "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
    "gravidade": "amarela",
    "chave": "categoria_divergente",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "trocar a categoria principal da ficha para a que o resto da rede usa",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 7,
+   "insight": {
+    "insight_id": "ficha-dc1869db",
+    "fonte": "ficha",
+    "titulo": "Categoria da ficha diferente do resto da rede",
+    "onde": "RS · Sapucaia do Sul · Sapucaia do Sul",
+    "fato": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+    "por_que_importa": "a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "trocar a categoria principal da ficha para a que o resto da rede usa",
+    "o_que_perguntar": null,
+    "nao_faca": null,
+    "revisar_em_dias": 7,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=8937044645851495857&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=8937044645851495857&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 413,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 413 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*RS · Sapucaia do Sul · Sapucaia do Sul*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=8937044645851495857&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=8937044645851495857&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*RS · Sapucaia do Sul · Sapucaia do Sul*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=8937044645851495857&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=8937044645851495857&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Barbacena",
@@ -362,7 +2105,90 @@
    "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
    "gravidade": "amarela",
    "chave": "categoria_divergente",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "trocar a categoria principal da ficha para a que o resto da rede usa",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 7,
+   "insight": {
+    "insight_id": "ficha-b768e5df",
+    "fonte": "ficha",
+    "titulo": "Categoria da ficha diferente do resto da rede",
+    "onde": "MG · Barbacena · Barbacena",
+    "fato": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+    "por_que_importa": "a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "trocar a categoria principal da ficha para a que o resto da rede usa",
+    "o_que_perguntar": null,
+    "nao_faca": null,
+    "revisar_em_dias": 7,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=81832231979047175&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=81832231979047175&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 53,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 53 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*MG · Barbacena · Barbacena*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=81832231979047175&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=81832231979047175&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*MG · Barbacena · Barbacena*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=81832231979047175&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=81832231979047175&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Bom Jesus da Lapa",
@@ -378,7 +2204,90 @@
    "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
    "gravidade": "amarela",
    "chave": "categoria_divergente",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "trocar a categoria principal da ficha para a que o resto da rede usa",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 7,
+   "insight": {
+    "insight_id": "ficha-b7e4b031",
+    "fonte": "ficha",
+    "titulo": "Categoria da ficha diferente do resto da rede",
+    "onde": "BA · Bom Jesus da Lapa · Bom Jesus da Lapa",
+    "fato": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+    "por_que_importa": "a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "trocar a categoria principal da ficha para a que o resto da rede usa",
+    "o_que_perguntar": null,
+    "nao_faca": null,
+    "revisar_em_dias": 7,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=7079204760418957645&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=7079204760418957645&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 30,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 30 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*BA · Bom Jesus da Lapa · Bom Jesus da Lapa*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=7079204760418957645&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=7079204760418957645&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*BA · Bom Jesus da Lapa · Bom Jesus da Lapa*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=7079204760418957645&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=7079204760418957645&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Caxias do Sul",
@@ -394,7 +2303,90 @@
    "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
    "gravidade": "amarela",
    "chave": "categoria_divergente",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "trocar a categoria principal da ficha para a que o resto da rede usa",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 7,
+   "insight": {
+    "insight_id": "ficha-1e84e5bd",
+    "fonte": "ficha",
+    "titulo": "Categoria da ficha diferente do resto da rede",
+    "onde": "RS · Caxias do Sul · Caxias do Sul - Kayser",
+    "fato": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+    "por_que_importa": "a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "trocar a categoria principal da ficha para a que o resto da rede usa",
+    "o_que_perguntar": null,
+    "nao_faca": null,
+    "revisar_em_dias": 7,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=8262299344390025075&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=8262299344390025075&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 89,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 89 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*RS · Caxias do Sul · Caxias do Sul - Kayser*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=8262299344390025075&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=8262299344390025075&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*RS · Caxias do Sul · Caxias do Sul - Kayser*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=8262299344390025075&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=8262299344390025075&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Rio de Janeiro",
@@ -410,7 +2402,90 @@
    "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
    "gravidade": "amarela",
    "chave": "categoria_divergente",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "trocar a categoria principal da ficha para a que o resto da rede usa",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 7,
+   "insight": {
+    "insight_id": "ficha-0f11fa0d",
+    "fonte": "ficha",
+    "titulo": "Categoria da ficha diferente do resto da rede",
+    "onde": "RJ · Rio de Janeiro · Rio de Janeiro - Campo Grande",
+    "fato": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+    "por_que_importa": "a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "trocar a categoria principal da ficha para a que o resto da rede usa",
+    "o_que_perguntar": null,
+    "nao_faca": null,
+    "revisar_em_dias": 7,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=5604463345343337018&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=5604463345343337018&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 297,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 297 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*RJ · Rio de Janeiro · Rio de Janeiro - Campo Grande*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=5604463345343337018&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=5604463345343337018&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*RJ · Rio de Janeiro · Rio de Janeiro - Campo Grande*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=5604463345343337018&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=5604463345343337018&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Florianopolis",
@@ -426,7 +2501,90 @@
    "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
    "gravidade": "amarela",
    "chave": "categoria_divergente",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "trocar a categoria principal da ficha para a que o resto da rede usa",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 7,
+   "insight": {
+    "insight_id": "ficha-0b2fe4c2",
+    "fonte": "ficha",
+    "titulo": "Categoria da ficha diferente do resto da rede",
+    "onde": "SC · Florianopolis · Florianopolis - Ingleses",
+    "fato": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+    "por_que_importa": "a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "trocar a categoria principal da ficha para a que o resto da rede usa",
+    "o_que_perguntar": null,
+    "nao_faca": null,
+    "revisar_em_dias": 7,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=6905470614701923863&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=6905470614701923863&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 267,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 267 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*SC · Florianopolis · Florianopolis - Ingleses*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=6905470614701923863&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=6905470614701923863&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*SC · Florianopolis · Florianopolis - Ingleses*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=6905470614701923863&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=6905470614701923863&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Paranavai",
@@ -442,7 +2600,90 @@
    "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
    "gravidade": "amarela",
    "chave": "categoria_divergente",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "trocar a categoria principal da ficha para a que o resto da rede usa",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 7,
+   "insight": {
+    "insight_id": "ficha-1e586e7f",
+    "fonte": "ficha",
+    "titulo": "Categoria da ficha diferente do resto da rede",
+    "onde": "PR · Paranavai · Paranavai",
+    "fato": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+    "por_que_importa": "a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "trocar a categoria principal da ficha para a que o resto da rede usa",
+    "o_que_perguntar": null,
+    "nao_faca": null,
+    "revisar_em_dias": 7,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=9895150379897010304&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=9895150379897010304&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "baixa",
+     "medido": true,
+     "amostra": 7,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 7 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*PR · Paranavai · Paranavai*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=9895150379897010304&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=9895150379897010304&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*PR · Paranavai · Paranavai*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=9895150379897010304&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=9895150379897010304&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Sete Lagoas",
@@ -458,7 +2699,90 @@
    "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
    "gravidade": "amarela",
    "chave": "categoria_divergente",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "trocar a categoria principal da ficha para a que o resto da rede usa",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 7,
+   "insight": {
+    "insight_id": "ficha-ac72c718",
+    "fonte": "ficha",
+    "titulo": "Categoria da ficha diferente do resto da rede",
+    "onde": "MG · Sete Lagoas · Sete Lagoas",
+    "fato": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+    "por_que_importa": "a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "trocar a categoria principal da ficha para a que o resto da rede usa",
+    "o_que_perguntar": null,
+    "nao_faca": null,
+    "revisar_em_dias": 7,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=6314520714977829414&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=6314520714977829414&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 895,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 895 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*MG · Sete Lagoas · Sete Lagoas*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=6314520714977829414&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=6314520714977829414&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*MG · Sete Lagoas · Sete Lagoas*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=6314520714977829414&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=6314520714977829414&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Florianopolis",
@@ -474,7 +2798,90 @@
    "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
    "gravidade": "amarela",
    "chave": "categoria_divergente",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "trocar a categoria principal da ficha para a que o resto da rede usa",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 7,
+   "insight": {
+    "insight_id": "ficha-0b2fe4c2",
+    "fonte": "ficha",
+    "titulo": "Categoria da ficha diferente do resto da rede",
+    "onde": "SC · Florianopolis · Florianopolis - Rua Deodoro",
+    "fato": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+    "por_que_importa": "a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "trocar a categoria principal da ficha para a que o resto da rede usa",
+    "o_que_perguntar": null,
+    "nao_faca": null,
+    "revisar_em_dias": 7,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=8919295141871047659&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=8919295141871047659&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 259,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 259 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*SC · Florianopolis · Florianopolis - Rua Deodoro*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=8919295141871047659&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=8919295141871047659&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*SC · Florianopolis · Florianopolis - Rua Deodoro*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=8919295141871047659&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=8919295141871047659&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Gama",
@@ -490,7 +2897,90 @@
    "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
    "gravidade": "amarela",
    "chave": "categoria_divergente",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "trocar a categoria principal da ficha para a que o resto da rede usa",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 7,
+   "insight": {
+    "insight_id": "ficha-fc1c453f",
+    "fonte": "ficha",
+    "titulo": "Categoria da ficha diferente do resto da rede",
+    "onde": "DF · Gama · Gama",
+    "fato": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+    "por_que_importa": "a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "trocar a categoria principal da ficha para a que o resto da rede usa",
+    "o_que_perguntar": null,
+    "nao_faca": null,
+    "revisar_em_dias": 7,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=13961686551889486388&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=13961686551889486388&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 316,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 316 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*DF · Gama · Gama*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=13961686551889486388&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=13961686551889486388&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*DF · Gama · Gama*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=13961686551889486388&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=13961686551889486388&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Mafra",
@@ -506,7 +2996,90 @@
    "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
    "gravidade": "amarela",
    "chave": "categoria_divergente",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "trocar a categoria principal da ficha para a que o resto da rede usa",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 7,
+   "insight": {
+    "insight_id": "ficha-a828fd03",
+    "fonte": "ficha",
+    "titulo": "Categoria da ficha diferente do resto da rede",
+    "onde": "SC · Mafra · Mafra",
+    "fato": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+    "por_que_importa": "a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "trocar a categoria principal da ficha para a que o resto da rede usa",
+    "o_que_perguntar": null,
+    "nao_faca": null,
+    "revisar_em_dias": 7,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=6161719758715199259&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=6161719758715199259&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 155,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 155 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*SC · Mafra · Mafra*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=6161719758715199259&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=6161719758715199259&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*SC · Mafra · Mafra*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=6161719758715199259&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=6161719758715199259&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Concordia",
@@ -522,7 +3095,90 @@
    "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
    "gravidade": "amarela",
    "chave": "categoria_divergente",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "trocar a categoria principal da ficha para a que o resto da rede usa",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 7,
+   "insight": {
+    "insight_id": "ficha-b65cb4cc",
+    "fonte": "ficha",
+    "titulo": "Categoria da ficha diferente do resto da rede",
+    "onde": "SC · Concordia · Concordia",
+    "fato": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+    "por_que_importa": "a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "trocar a categoria principal da ficha para a que o resto da rede usa",
+    "o_que_perguntar": null,
+    "nao_faca": null,
+    "revisar_em_dias": 7,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=5110849242355265547&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=5110849242355265547&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 203,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 203 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*SC · Concordia · Concordia*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=5110849242355265547&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=5110849242355265547&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*SC · Concordia · Concordia*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=5110849242355265547&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=5110849242355265547&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Campina Grande",
@@ -538,7 +3194,90 @@
    "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
    "gravidade": "amarela",
    "chave": "categoria_divergente",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "trocar a categoria principal da ficha para a que o resto da rede usa",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 7,
+   "insight": {
+    "insight_id": "ficha-09ffb6c2",
+    "fonte": "ficha",
+    "titulo": "Categoria da ficha diferente do resto da rede",
+    "onde": "PB · Campina Grande · Campina Grande",
+    "fato": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+    "por_que_importa": "a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "trocar a categoria principal da ficha para a que o resto da rede usa",
+    "o_que_perguntar": null,
+    "nao_faca": null,
+    "revisar_em_dias": 7,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=12717806731402305322&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=12717806731402305322&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 400,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 400 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*PB · Campina Grande · Campina Grande*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=12717806731402305322&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=12717806731402305322&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*PB · Campina Grande · Campina Grande*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=12717806731402305322&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=12717806731402305322&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Teixeira de Freitas",
@@ -554,7 +3293,90 @@
    "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
    "gravidade": "amarela",
    "chave": "categoria_divergente",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "trocar a categoria principal da ficha para a que o resto da rede usa",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 7,
+   "insight": {
+    "insight_id": "ficha-9c0f16ad",
+    "fonte": "ficha",
+    "titulo": "Categoria da ficha diferente do resto da rede",
+    "onde": "BA · Teixeira de Freitas · Teixeira de Freitas",
+    "fato": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+    "por_que_importa": "a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "trocar a categoria principal da ficha para a que o resto da rede usa",
+    "o_que_perguntar": null,
+    "nao_faca": null,
+    "revisar_em_dias": 7,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=6959471329166258927&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=6959471329166258927&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 455,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 455 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*BA · Teixeira de Freitas · Teixeira de Freitas*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=6959471329166258927&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=6959471329166258927&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*BA · Teixeira de Freitas · Teixeira de Freitas*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=6959471329166258927&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=6959471329166258927&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Santa Maria",
@@ -570,7 +3392,90 @@
    "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
    "gravidade": "amarela",
    "chave": "categoria_divergente",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "trocar a categoria principal da ficha para a que o resto da rede usa",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 7,
+   "insight": {
+    "insight_id": "ficha-eea2f451",
+    "fonte": "ficha",
+    "titulo": "Categoria da ficha diferente do resto da rede",
+    "onde": "RS · Santa Maria · Santa Maria/RS",
+    "fato": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+    "por_que_importa": "a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "trocar a categoria principal da ficha para a que o resto da rede usa",
+    "o_que_perguntar": null,
+    "nao_faca": null,
+    "revisar_em_dias": 7,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=6758002855844809232&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=6758002855844809232&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 338,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 338 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*RS · Santa Maria · Santa Maria/RS*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=6758002855844809232&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=6758002855844809232&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*RS · Santa Maria · Santa Maria/RS*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=6758002855844809232&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=6758002855844809232&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Boituva",
@@ -586,7 +3491,90 @@
    "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
    "gravidade": "amarela",
    "chave": "categoria_divergente",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "trocar a categoria principal da ficha para a que o resto da rede usa",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 7,
+   "insight": {
+    "insight_id": "ficha-30e166ed",
+    "fonte": "ficha",
+    "titulo": "Categoria da ficha diferente do resto da rede",
+    "onde": "SP · Boituva · Boituva",
+    "fato": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+    "por_que_importa": "a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "trocar a categoria principal da ficha para a que o resto da rede usa",
+    "o_que_perguntar": null,
+    "nao_faca": null,
+    "revisar_em_dias": 7,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=18125132579521352759&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=18125132579521352759&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 40,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 40 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*SP · Boituva · Boituva*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=18125132579521352759&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=18125132579521352759&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*SP · Boituva · Boituva*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=18125132579521352759&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=18125132579521352759&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Bauru",
@@ -602,7 +3590,90 @@
    "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
    "gravidade": "amarela",
    "chave": "categoria_divergente",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "trocar a categoria principal da ficha para a que o resto da rede usa",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 7,
+   "insight": {
+    "insight_id": "ficha-1ddc0201",
+    "fonte": "ficha",
+    "titulo": "Categoria da ficha diferente do resto da rede",
+    "onde": "SP · Bauru · Bauru Mary Dota",
+    "fato": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+    "por_que_importa": "a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "trocar a categoria principal da ficha para a que o resto da rede usa",
+    "o_que_perguntar": null,
+    "nao_faca": null,
+    "revisar_em_dias": 7,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=15628629950310938274&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=15628629950310938274&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 325,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 325 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*SP · Bauru · Bauru Mary Dota*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=15628629950310938274&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=15628629950310938274&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*SP · Bauru · Bauru Mary Dota*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=15628629950310938274&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=15628629950310938274&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Passos",
@@ -618,7 +3689,90 @@
    "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
    "gravidade": "amarela",
    "chave": "categoria_divergente",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "trocar a categoria principal da ficha para a que o resto da rede usa",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 7,
+   "insight": {
+    "insight_id": "ficha-8a86fb3f",
+    "fonte": "ficha",
+    "titulo": "Categoria da ficha diferente do resto da rede",
+    "onde": "MG · Passos · Passos",
+    "fato": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+    "por_que_importa": "a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "trocar a categoria principal da ficha para a que o resto da rede usa",
+    "o_que_perguntar": null,
+    "nao_faca": null,
+    "revisar_em_dias": 7,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=14646603457829635697&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=14646603457829635697&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "media",
+     "medido": true,
+     "amostra": 293,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 293 avaliações"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*MG · Passos · Passos*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=14646603457829635697&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=14646603457829635697&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*MG · Passos · Passos*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=14646603457829635697&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=14646603457829635697&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   },
   {
    "cidade": "Venancio Aires",
@@ -634,7 +3788,90 @@
    "por_que": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
    "gravidade": "amarela",
    "chave": "categoria_divergente",
-   "de_quem_e": "unidade"
+   "de_quem_e": "unidade",
+   "o_que_fazer": "trocar a categoria principal da ficha para a que o resto da rede usa",
+   "custo": "sem custo de mídia",
+   "prazo_dias": 7,
+   "insight": {
+    "insight_id": "ficha-812259f8",
+    "fonte": "ficha",
+    "titulo": "Categoria da ficha diferente do resto da rede",
+    "onde": "RS · Venancio Aires · Venancio Aires",
+    "fato": "ficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'",
+    "por_que_importa": "a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho",
+    "quem_age": "franqueado",
+    "quem_age_rotulo": "Franqueado da unidade",
+    "acao": "trocar a categoria principal da ficha para a que o resto da rede usa",
+    "o_que_perguntar": null,
+    "nao_faca": null,
+    "revisar_em_dias": 7,
+    "gravidade": "media",
+    "evidencias": [
+     {
+      "o_que": "ficha no mapa",
+      "texto": "https://maps.google.com/?cid=11098926575928285384&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+     }
+    ],
+    "evidencias_total": 1,
+    "medido_em": null,
+    "link": "https://maps.google.com/?cid=11098926575928285384&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "carimbo": {
+     "natureza": "fato",
+     "confianca": "baixa",
+     "medido": true,
+     "amostra": 1,
+     "janela_dias": null,
+     "medicoes": null,
+     "fonte": "ficha pública do Google",
+     "a_favor": [
+      "é o que qualquer paciente vê ao procurar a unidade"
+     ],
+     "contra": [
+      "a ficha é retrato do dia da coleta; se alguém corrigiu ontem, o portal só vê na próxima"
+     ],
+     "o_que_aumentaria": null,
+     "procedencia": "medido em 1 avaliação"
+    },
+    "encaminhamento": {
+     "para": [
+      {
+       "chave": "diretoria",
+       "rotulo": "Franqueadora · diretoria",
+       "abertura": "Padrão observado na rede:"
+      },
+      {
+       "chave": "consultor",
+       "rotulo": "Consultor de campo",
+       "abertura": "Para a próxima visita:"
+      },
+      {
+       "chave": "franqueado",
+       "rotulo": "Franqueado da unidade",
+       "abertura": "Ponto de atenção na presença pública da sua unidade:"
+      },
+      {
+       "chave": "marketing",
+       "rotulo": "Marketing e agência",
+       "abertura": "Oportunidade de execução, com o sinal que a sustenta:"
+      },
+      {
+       "chave": "operacoes",
+       "rotulo": "Operações",
+       "abertura": "Ponto recorrente de operação:"
+      },
+      {
+       "chave": "expansao",
+       "rotulo": "Expansão e comercial",
+       "abertura": "Movimento no radar de expansão:"
+      }
+     ],
+     "recomendado": "franqueado",
+     "corpo": "*RS · Venancio Aires · Venancio Aires*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=11098926575928285384&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=11098926575928285384&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "texto_pronto": "Ponto de atenção na presença pública da sua unidade:\n\n*RS · Venancio Aires · Venancio Aires*\nficha cadastrada como 'Dentista' enquanto 305 unidades da rede usam 'Clínica odontológica'\nPor que importa: a categoria decide em que busca a ficha entra: errada, a unidade some das buscas que trazem paciente de aparelho\n· https://maps.google.com/?cid=11098926575928285384&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\nRecomendação: trocar a categoria principal da ficha para a que o resto da rede usa\nNova medição sugerida: 7 dias.\nAnálise completa: https://maps.google.com/?cid=11098926575928285384&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA\n— OrthoDontic Intelligence · leitura de fontes públicas, sem dado interno da rede",
+     "como_montar": "abertura do destinatário escolhido + linha em branco + `corpo`. O texto do destinatário recomendado já vem pronto em `texto_pronto`",
+     "como_usar": "copiar e colar. O portal não guarda para quem foi mandado nem se alguém executou — quem responde isso é a próxima medição"
+    }
+   }
   }
  ],
  "alertas_total": 39,

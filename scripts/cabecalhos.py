@@ -138,6 +138,21 @@ C = {
     metodo="ritmo de avaliações da loja contra a mediana dos semelhantes, "
            "só entre as leituras comparáveis."),
 
+"pipeline_expansao": dict(
+    sobrelinha="PARA CRESCER A REDE",
+    titulo="Dos 5.570 municípios até a conversa comercial",
+    pergunta="Que cidade merece o próximo passo — e por que as outras "
+             "caíram?",
+    para_quem=["expansão", "franqueadora"],
+    como_ler="Cada degrau mostra quantas passaram e quantas caíram, com o "
+             "motivo. Sem o funil, '6 cidades estudadas' parece pouco; com "
+             "ele, é o que sobrou de 5.570.",
+    o_que_nao_e="Não é projeção de faturamento nem garantia de que abrir "
+                "ali funciona. A saída é 'esta cidade merece o próximo "
+                "passo', e o passo está escrito.",
+    metodo="triagem demográfica do IBGE, varredura da categoria na cidade, "
+           "conferência da ausência da rede em duas fontes independentes."),
+
 "playbook": dict(
     sobrelinha="DA REDE INTEIRA",
     titulo="O que os concorrentes que avançam fazem — e o que testamos "

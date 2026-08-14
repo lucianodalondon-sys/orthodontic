@@ -130,6 +130,7 @@ python3 scripts/rede_aprende.py --salvar          # o que a rede descobriu
 python3 scripts/comparador_de_lojas.py --salvar   # os gêmeos
 python3 scripts/anomalias_da_rede.py --salvar     # depende dos gêmeos
 python3 scripts/playbook_do_concorrente.py --salvar
+python3 scripts/pipeline_expansao.py --salvar     # funil + radar na mesma linha
 python3 scripts/agenda_do_consultor.py --salvar   # depende de fila + gêmeos
 python3 scripts/resumo_executivo.py --salvar      # a home; por último dos motores
 python3 scripts/build_portal.py
@@ -490,3 +491,15 @@ padrões → caixa → padrao → build. Períodos curtos são declarados na tel
   escolha do par torna a conta circular: as que crescem parecem com as que
   crescem. Os eixos são população, público adulto, densidade da categoria e
   meses desde a PRIMEIRA avaliação.
+- **PRIORIDADE NÃO É VOLUME, E RECLAMAÇÃO DE 2015 NÃO É URGÊNCIA.** A caixa
+  de respostas dizia "399 avaliações esperando" — ninguém responde 399. A
+  primeira ordenação por "há quantos dias a mais antiga espera" pôs na
+  frente uma de **4.172 dias** e carimbou as 40 unidades de vermelho, ou
+  seja, não separava nada. O que pesa é a crítica de 1 ou 2 estrelas dos
+  últimos 180 dias, que é a que o próximo paciente encontra no topo da
+  ficha. O acervo antigo continua contado, declarado como acervo.
+- **FUNIL DE EXPANSÃO NÃO É FILA ÚNICA.** Das 13 cidades estudadas, só 5
+  vieram das 50 candidatas da régua demográfica; as outras 8 entraram por
+  praça onde a rede já está ou por pedido direto. Escrever "50 → 13"
+  sugeriria subconjunto, e não é: `pipeline_expansao.py` declara os dois
+  caminhos.
