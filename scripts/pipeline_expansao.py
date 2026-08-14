@@ -48,6 +48,27 @@ def carrega(nome):
     return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
 
 
+def radar_esta_velho():
+    """radar.json é escrito pelo BUILD, e o ciclo roda este script ANTES dele.
+
+    Resultado silencioso: a defesa das cidades saía sempre uma rodada
+    atrasada. Quando a régua de "habitantes por clínica forte" deixou de ser
+    dicionário fixo e passou a sair do disco, o radar já dizia a frase nova e
+    esta tela ainda dizia "Nas sete praças onde a rede já opera" — a mesma
+    cidade com dois textos diferentes em duas telas do mesmo portal.
+
+    Texto velho é pior que tela vazia, porque parece atual. Então aqui se
+    compara o `corte` que o radar declara com a última medição da série: se a
+    série andou, o build tem de rodar antes."""
+    rd = carrega("radar")
+    arq = RAIZ/"dados"/"serie"/"oportunidade.jsonl"
+    if not rd.get("corte") or not arq.exists():
+        return None
+    datas = [json.loads(l)["snapshot_date"]
+             for l in arq.read_text(encoding="utf-8").split("\n") if l.strip()]
+    return (max(datas), rd["corte"]) if datas and max(datas) > rd["corte"] else None
+
+
 def monta():
     fn = carrega("funil_nacional")
     rd = carrega("radar")
@@ -55,6 +76,15 @@ def monta():
         print("  ✗ FALHA: funil_nacional.json ou radar.json vazio.\n"
               "  rode antes: python3 scripts/funil_nacional.py --salvar e "
               "python3 scripts/radar_oportunidade.py --salvar")
+        sys.exit(1)
+
+    velho = radar_esta_velho()
+    if velho:
+        serie, corte = velho
+        print(f"  ✗ FALHA: a série de oportunidade tem medição de {serie} e o "
+              f"radar.json publicado ainda é de {corte}.\n"
+              f"  Esta tela copiaria o texto velho e ele pareceria atual.\n"
+              f"  rode antes: python3 scripts/build_portal.py")
         sys.exit(1)
 
     candidatas = fn["candidatas"]

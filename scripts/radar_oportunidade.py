@@ -49,6 +49,8 @@ import datetime as dt
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 SERIE = RAIZ/"dados"/"serie"
+sys.path.insert(0, str(RAIZ/"scripts"))
+from cruzamento import conta             # noqa: E402  número e nome concordam
 sys.path.insert(0, str(RAIZ/"coleta"/"coletores"))
 import unidades_da_rede as rede          # noqa: E402  a lista oficial
 IBGE = "https://servicodados.ibge.gov.br"
@@ -64,15 +66,17 @@ TERMOS = ["ortodontia", "aparelho ortodôntico", "clínica odontológica",
 PAGINAS = 3
 FORTE = 300          # avaliações que definem uma clínica "forte" na praça
 
-# Habitantes por clínica forte nas sete praças que a rede opera e nós medimos.
-# É a régua do argumento: dizer "uma clínica forte para cada 489 mil habitantes"
+# Habitantes por clínica forte nas praças que a rede opera e nós medimos. É a
+# régua do argumento: dizer "uma clínica forte para cada 489 mil habitantes"
 # não significa nada sozinho; ao lado de Contagem, que tem uma para cada 34 mil,
-# vira frase de reunião. População do IBGE (6579) em 09/08/2026, clínicas fortes
-# da varredura registrada em dados/serie/categoria.jsonl.
-REF_HAB = {"MG · Contagem": 34_300, "BA · Feira de Santana": 44_053,
-           "SC · Mafra + Rio Negro": 44_606, "SP · Presidente Prudente": 58_676,
-           "PR · Londrina": 58_138, "MT · Cuiabá + Várzea Grande": 101_079,
-           "TO · Palmas": 164_249}
+# vira frase de reunião.
+#
+# ⚠ Esta régua já foi um dicionário escrito à mão, com sete praças e a data da
+# medição no comentário. A rede passou a ter dezessete e o dicionário não —
+# então a tela publicava "Palmas, a mais folgada, 164.249" quando São Paulo já
+# estava medida com 410.515, e Rio Branco (389.001) saía carimbado como "mais
+# folgada que qualquer praça da rede" sendo que está dentro da faixa. Número
+# escrito à mão apodrece; agora ele sai de referencias(), do disco.
 
 # Faixas do Censo 2022 (agregado 9514) — o alvo real
 FAIXAS = {"93084": "5a9", "93085": "10a14", "93086": "15a19",
@@ -246,13 +250,30 @@ def referencias():
     arq = SERIE/"categoria.jsonl"
     if not arq.exists():
         return {}
-    da_rede = set()
+    da_rede = {}
     for a in sorted((RAIZ/"dados"/"identidade").glob("*.json")):
         try:
-            if not json.loads(a.read_text(encoding="utf-8")).get("sem_unidade"):
-                da_rede.add(a.stem)
+            d = json.loads(a.read_text(encoding="utf-8"))
         except Exception:
-            pass
+            continue
+        if d.get("sem_unidade"):
+            continue
+        # A praça pode somar mais de um município — Mafra soma Rio Negro,
+        # Cuiabá soma Várzea Grande. Se a população soma os dois, o RÓTULO
+        # tem de somar também, senão "SC · Mafra, uma clínica forte para cada
+        # 44.606" atribui a Mafra sozinha uma conta que é das duas cidades.
+        cid = [str(m.get("municipio") or "").strip()
+               for m in (d.get("ibge") or []) if m.get("municipio")]
+        rot = rotulo_da_praca(a.stem)
+        if len(cid) > 1:
+            rot += " + " + " + ".join(cid[1:])
+        pop = 0
+        for m in (d.get("ibge") or []):
+            try:
+                pop += int((m.get("populacao_estimada") or {}).get("valor") or 0)
+            except (TypeError, ValueError):
+                pass
+        da_rede[a.stem] = (rot, pop)
     por = {}
     for l in arq.read_text(encoding="utf-8").split("\n"):
         if not l.strip():
@@ -266,10 +287,16 @@ def referencias():
         u = max(x["snapshot_date"] for x in rs)
         vis = {x.get("place_id"): x for x in rs if x["snapshot_date"] == u}
         av = [(x.get("avaliacoes") or 0) for x in vis.values()]
-        if av:
-            fora[rotulo_da_praca(p)] = {
-                "lider": max(av), "fortes": sum(1 for a in av if a >= FORTE),
-                "clinicas": len(av), "hab_por_forte": None}
+        if not av:
+            continue
+        rot, pop = da_rede[p]
+        fortes = sum(1 for a in av if a >= FORTE)
+        fora[rot] = {
+            "lider": max(av), "fortes": fortes, "clinicas": len(av),
+            "populacao": pop, "medida_em": u,
+            # Praça sem nenhuma clínica forte não entra na régua: dividir por
+            # zero não dá "folga infinita", dá conta que não existe.
+            "hab_por_forte": (pop//fortes if pop and fortes else None)}
     return fora
 
 
@@ -377,8 +404,12 @@ def defesa(r, ref):
                       f"{num(a915)} na faixa de 9 a 15 — em toda praça que medimos "
                       f"o adulto é 2 a 3 vezes maior, e é ele que decide sozinho.")
 
-    if ref and lider:
-        alvo, dados = max(ref.items(), key=lambda kv: kv[1]["lider"])
+    # A praça da rede com o maior líder — serve de escala nas duas frases
+    # abaixo, e some junto quando não há referência nenhuma no disco.
+    alvo_lider = (max(ref.items(), key=lambda kv: kv[1]["lider"]) if ref else None)
+
+    if alvo_lider and lider:
+        alvo, dados = alvo_lider
         linhas.append(
             f"**A categoria é fraca, e dá para medir.** O líder da cidade tem "
             f"{num(lider)} avaliações. O líder de {alvo}, varrido do mesmo jeito e "
@@ -386,23 +417,36 @@ def defesa(r, ref):
             f"{dados['lider']/lider:.0f} vezes mais. Ninguém aqui construiu "
             f"reputação de escala ainda, e reputação é o que a rede sabe montar.")
 
-    cheia = min(REF_HAB.items(), key=lambda kv: kv[1])
-    vazia = max(REF_HAB.items(), key=lambda kv: kv[1])
-    faixa = (f"Nas sete praças onde a rede já opera esse número vai de "
-             f"{num(cheia[1])} ({cheia[0]}, a mais disputada) a {num(vazia[1])} "
-             f"({vazia[0]}, a mais folgada).")
+    # A régua sai do disco, praça por praça. Só entram as que têm clínica
+    # forte: sem denominador não há "habitantes por clínica forte".
+    regua = {k: v["hab_por_forte"] for k, v in (ref or {}).items()
+             if v.get("hab_por_forte")}
+    cheia = min(regua.items(), key=lambda kv: kv[1]) if regua else None
+    vazia = max(regua.items(), key=lambda kv: kv[1]) if regua else None
+    faixa = ((f"Entre as {conta(len(regua), 'praça medida', 'praças medidas')} "
+              f"onde a rede já opera, esse número vai de {num(cheia[1])} "
+              f"({cheia[0]}, a mais disputada) a {num(vazia[1])} "
+              f"({vazia[0]}, a mais folgada).") if regua else "")
     if hab and pop:
-        aperto = ("mais folgada que qualquer praça da rede"
-                  if hab > vazia[1] else "dentro da faixa que a rede já opera")
+        aperto = ((", mais folgada que qualquer praça da rede" if hab > vazia[1]
+                   else ", dentro da faixa que a rede já opera") if regua else "")
         n = r["clinicas_fortes"]
-        conta = (f"{n} clínica passa" if n == 1 else f"{n} clínicas passam")
-        linhas.append(f"**Tem espaço.** Só {conta} de {FORTE} avaliações — uma "
-                      f"para cada {num(hab)} habitantes, {aperto}. {faixa}")
+        passa = (f"{n} clínica passa" if n == 1 else f"{n} clínicas passam")
+        linhas.append(f"**Tem espaço.** Só {passa} de {FORTE} avaliações — uma "
+                      f"para cada {num(hab)} habitantes{aperto}. {faixa}".strip())
     elif r["clinicas_fortes"] == 0:
+        # Aqui NÃO entra a faixa de habitantes por clínica forte: sem clínica
+        # forte a conta não existe, e colar a régua depois de "nenhuma clínica
+        # passa" deixava um "esse número" sem nada a que se referir na tela.
+        soma = r["avaliacoes_somadas"]
+        maior = ((f" — menos do que a maior clínica de {alvo_lider[0]} sozinha, "
+                  f"que tem {num(alvo_lider[1]['lider'])}")
+                 if alvo_lider and soma < alvo_lider[1]["lider"] else "")
         linhas.append(f"**Tem espaço, e é o caso extremo.** Nenhuma clínica da "
                       f"cidade passa de {FORTE} avaliações. A categoria inteira "
-                      f"soma {num(r['avaliacoes_somadas'])} avaliações — menos do "
-                      f"que a maior clínica de MG · Contagem sozinha. {faixa}")
+                      f"soma {num(soma)} avaliações{maior}. Não dá para dizer "
+                      f"quantos habitantes há por clínica forte, porque não há "
+                      f"nenhuma — e é esse o argumento.")
 
     if r["maiores"]:
         quem = " · ".join(f"{m['nome']} ({m['avaliacoes']}, nota {m['nota']})"
@@ -430,23 +474,34 @@ def refazer_texto(salvar):
 
     Existe porque corrigir uma frase custava US$ 5 de varredura. O número não
     muda — só o texto que ele sustenta. Grava uma linha nova na série, com a
-    medição original preservada e a data de hoje."""
+    medição original preservada e a data de hoje.
+
+    ⚠ A última medição é POR CIDADE, nunca a última data do arquivo. Cortar
+    pelo máximo global reescrevia só as cinco metrópoles conferidas em 12/ago
+    e deixava intactas as SEIS cidades de oportunidade, medidas em 09/ago —
+    ou seja, exatamente as cidades que este arquivo existe para defender. É a
+    mesma armadilha que já tinha feito o Radar publicar "0 cidades prontas"
+    com seis estudos completos no disco."""
     arq = SERIE/"oportunidade.jsonl"
     rows = [json.loads(l) for l in arq.read_text(encoding="utf-8").split("\n") if l.strip()]
     rows = [r for r in rows if r.get("presenca")]
     if not rows:
         sys.exit("nenhuma medição com conferência de unidade na série — rode o "
                  "radar de verdade antes")
-    corte = max(r["snapshot_date"] for r in rows)
-    atual = ultimo_por([r for r in rows if r["snapshot_date"] == corte], "cidade")
+    ult = {}
+    for r in rows:
+        c = r.get("cidade")
+        if c not in ult or r["snapshot_date"] >= ult[c]["snapshot_date"]:
+            ult[c] = r
     ref = referencias()
     fora = []
-    for r in atual.values():
+    for r in ult.values():
         r["leitura"] = leitura(r)
         r["defesa"] = defesa(r, ref)
         fora.append(r)
-    print(f"\n  refeito o texto de {len(fora)} cidades sobre a medição de {corte}, "
-          f"sem coletar nada")
+    datas = sorted({r["snapshot_date"] for r in fora})
+    print(f"\n  refeito o texto de {conta(len(fora), 'cidade')}, cada uma sobre a "
+          f"PRÓPRIA última medição ({' e '.join(datas)}), sem coletar nada")
     op = [r for r in fora if str(r.get("leitura", "")).startswith("OPORTUNIDADE")]
     if op:
         mostra_defesas(op)
@@ -454,8 +509,11 @@ def refazer_texto(salvar):
         hoje = dt.date.today().isoformat()
         with arq.open("a", encoding="utf-8") as f:
             for r in fora:
+                # `medido_em` guarda a coleta ORIGINAL. Sem o `or`, recalcular
+                # duas vezes faria a segunda rodada apontar para a primeira
+                # rodada de texto, e a data da medição de verdade se perdia.
                 f.write(json.dumps({**r, "snapshot_date": hoje,
-                                    "medido_em": corte,
+                                    "medido_em": r.get("medido_em") or r["snapshot_date"],
                                     "recalculo": "texto refeito, medição original"},
                                    ensure_ascii=False)+"\n")
         print(f"  → dados/serie/oportunidade.jsonl +{len(fora)}\n")
