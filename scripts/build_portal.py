@@ -182,10 +182,48 @@ def main():
                 _sem_acento(str(cidade or "").split("/")[0]),
                 _sem_acento(unidade))
 
-    _ficha_por_chave = {
-        _chave_un(r.get("uf"), r.get("cidade"),
-                  r.get("unidade_na_lista") or r.get("nome")): r
-        for r in _fichas_hoje}
+    # CHAVE QUE COLIDE PUBLICA A FICHA DA VIZINHA.
+    #
+    # A chave é (UF, cidade, nome), e TODA UNIDADE DA REDE SE CHAMA
+    # "ORTHODONTIC". Em Cuiabá as três lojas colapsaram numa chave só e a
+    # grade publicou **nota 5 e 1.222 avaliações nas três** — os números da
+    # Centro Norte carimbados na Pico do Amor (78) e na Centro Sul (71).
+    # Eram 29 cards em 13 cidades. É a armadilha do "id vindo do nome"
+    # reaparecida na fiação da ficha, e ela apareceu justamente na porta por
+    # onde o consultor escolhe a unidade.
+    #
+    # Onde a chave colide, nenhuma ficha é atribuída: o número vem da
+    # medição por `local_id`, que é chaveada por `place_id` e não colide, e
+    # quando não há nem isso a linha sai sem número, com o motivo.
+    # E O PROBLEMA COMEÇA ANTES DA CHAVE: A PRÓPRIA COLETA REPETIU A FICHA.
+    #
+    # As três linhas de Cuiabá voltaram da varredura com **nota 5 e 1.222
+    # avaliações**, idênticas, e duas delas SEM `place_id` — o coletor
+    # buscou "Orthodontic Cuiaba …" três vezes e recebeu a mesma ficha, a da
+    # Centro Norte. A grade publicou os 1.222 nas três, quando a medição por
+    # loja diz 1.223 · 78 · 71.
+    #
+    # Duas travas, então:
+    #   1. ficha SEM `place_id` não é ficha confirmada — não empresta número;
+    #   2. um `place_id` serve UMA linha. Se duas linhas o reivindicam,
+    #      nenhuma fica com ele.
+    _ficha_por_chave, _chaves_ambiguas = {}, set()
+    _dono_do_place = defaultdict(list)
+    for r in _fichas_hoje:
+        k = _chave_un(r.get("uf"), r.get("cidade"),
+                      r.get("unidade_na_lista") or r.get("nome"))
+        if not r.get("place_id"):
+            _chaves_ambiguas.add(k)          # sem place_id não confirma
+            continue
+        _dono_do_place[r["place_id"]].append(k)
+        if k in _ficha_por_chave:
+            _chaves_ambiguas.add(k)
+        _ficha_por_chave[k] = r
+    for pid, ks in _dono_do_place.items():
+        if len(set(ks)) > 1:
+            _chaves_ambiguas.update(ks)      # a mesma ficha em duas linhas
+    for k in _chaves_ambiguas:
+        _ficha_por_chave.pop(k, None)
 
     # O SITE OFICIAL GRAVA SEM ACENTO ("Cuiaba", "Braco do Norte"). Onde
     # temos identidade da praça, o rótulo bonito é o nosso; onde não temos,
@@ -211,7 +249,21 @@ def main():
             "rotulo": r.get("rotulo") or f"{uf} · {cidade}",
             "situacao": r.get("situacao"),
             "endereco": r.get("endereco"),
-            "nota": f.get("nota"), "avaliacoes": f.get("avaliacoes"),
+            # a medição por local_id manda: ela é chaveada por place_id.
+            # A ficha casada por nome só entra onde não há medição.
+            "nota": fl.get("nota", f.get("nota")) if fl else f.get("nota"),
+            "avaliacoes": (fl.get("avaliacoes", f.get("avaliacoes")) if fl
+                           else f.get("avaliacoes")),
+            "numero_de": ("medição desta loja" if fl else
+                          "ficha do Google" if f else None),
+            "sem_numero_porque": (
+                None if (fl or f) else
+                ("mais de uma unidade desta cidade tem o mesmo nome na "
+                 "lista oficial, e a ficha do Google não distingue qual é "
+                 "qual — publicar o número de uma delas nas outras seria "
+                 "pior que não publicar"
+                 if _chave_un(uf, cidade, r.get("unidade")) in _chaves_ambiguas
+                 else "a varredura do Google ainda não confirmou esta ficha")),
             "ficha_medida_em": _dia_ficha if f else None,
             "confirmada": bool(f.get("place_id")),
             "com_estudo": bool(lid),
@@ -276,12 +328,21 @@ def main():
         if len(abertas) != sum(1 for x in abertas if x.get("com_estudo")) + len(soltos):
             continue          # não fecha: fica como está, com a ambiguidade no ar
         for linha, solto in zip(sem_par, soltos):
+            _flx = _fl_ix.get(solto["local_id"]) or {}
             linha.update({
                 "com_estudo": True,
                 "local_id": solto["local_id"],
                 "arquivo": solto["arquivo"],
                 "faixa": solto.get("faixa"),
                 "tarefa": solto.get("tarefa"),
+                # a loja tem medição própria: ela vale mais que a ficha que
+                # não casou. Sem isto a Pico do Amor ficava sem número
+                # nenhum, quando o portal mede 78 avaliações nela.
+                "nota": _flx.get("nota", linha.get("nota")),
+                "avaliacoes": _flx.get("avaliacoes", linha.get("avaliacoes")),
+                "numero_de": "medição desta loja" if _flx else linha.get("numero_de"),
+                "sem_numero_porque": None if _flx else linha.get("sem_numero_porque"),
+                "urgencia": _flx.get("urgencia", linha.get("urgencia")),
                 "vinculo_arbitrario": True,
                 "porque_vinculo_arbitrario": (
                     "a lista oficial não distingue as lojas desta cidade; "
@@ -387,6 +448,8 @@ def main():
                     "estado": estado,
                     "endereco": x.get("endereco"),
                     "nota": x.get("nota"), "avaliacoes": x.get("avaliacoes"),
+                    "numero_de": x.get("numero_de"),
+                    "sem_numero_porque": x.get("sem_numero_porque"),
                     "faixa": x.get("faixa"), "urgencia": x.get("urgencia"),
                     "tarefa": x.get("tarefa"),
                     "alerta": gat.get("titulo"),

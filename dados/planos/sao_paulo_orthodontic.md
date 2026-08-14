@@ -35,28 +35,7 @@ Quem aparece no seu lugar: Dentista 24 horas Centro SP - Dr. Erick Andrade CRO 1
 
 ---
 
-## 2. Existe mais de um cadastro da sua clínica no Google
-
-`R$ 0` · `15 minutos + a espera do Google` · `você`
-
-Encontramos outro cadastro no mesmo endereço ou com o nome da marca:
-
-· Sorridents Clínicas Odontológicas Tatuapé São Paulo — 1.803 avaliação
-
-· Sorridents Anhangabaú — 540 avaliação
-
-Cadastro repetido **divide a avaliação e a nota**. O paciente que avalia no perfil errado some do perfil certo.
-
-**O que fazer:**
-
-1. Entre no perfil do Google e peça a fusão dos cadastros duplicados.
-2. Se o cadastro extra não for seu, marque como duplicado mesmo assim — o Google avalia.
-
-**Como saber que funcionou:** Na próxima medição os dois viram um só, e a contagem de avaliações soma em vez de dividir.
-
----
-
-## 3. A sua cidade procura dentista por bairro — e o seu bairro não está escrito em lugar nenhum
+## 2. A sua cidade procura dentista por bairro — e o seu bairro não está escrito em lugar nenhum
 
 `R$ 0` · `1 hora` · `você ou quem cuida do site`
 
@@ -76,7 +55,7 @@ Isso quer dizer que o paciente da sua cidade procura por perto de casa, não pel
 
 ---
 
-## 4. Tem busca importante onde o primeiro colocado é fraco
+## 3. Tem busca importante onde o primeiro colocado é fraco
 
 `R$ 0` · `junto com a primeira tarefa` · `você`
 
@@ -101,7 +80,7 @@ Passar essas não é questão de verba. É questão de aparecer.
 
 ---
 
-## 5. A cidade procura dentista por nome de convênio
+## 4. A cidade procura dentista por nome de convênio
 
 `R$ 0` · `15 minutos` · `você`
 
@@ -116,6 +95,34 @@ O Google completa a busca da sua cidade com nome de plano: Amil, Bradesco, Hapvi
 3. Se não aceita nenhum, isso também é informação: a conversa passa a ser sobre parcelamento, não sobre plano.
 
 **Como saber que funcionou:** Não é medição de posição: é a pergunta que a recepção passa a ouvir menos, porque a resposta já está escrita.
+
+---
+
+## 5. O que o paciente da sua cidade diz que foi buscar
+
+`R$ 0` · `meia hora, uma vez` · `você e quem escreve`
+
+Lemos **1.209 avaliações escritas por pacientes das clínicas concorrentes** da sua cidade. Eles contam o que foram fazer:
+
+· aparelho — 57 menções
+
+· implante — 56 menções
+
+· limpeza / profilaxia — 42 menções
+
+· estética / lentes — 40 menções
+
+E as palavras que eles usam para elogiar são sempre as mesmas: tratamento, recepção, experiência, atenciosos, atenciosa, cuidado e mais 2.
+
+**Ninguém elogia equipamento. Todo mundo elogia gente.** Anúncio e post que falam de tecnologia estão falando sozinhos.
+
+**O que fazer:**
+
+1. Escreva com as palavras que eles usam, não com as suas.
+2. Mostre pessoas: quem atende, quem recebe, o nome de cada um.
+3. Se dor e criança estão no topo, é por ali que o paciente entra — e o aparelho vem na conversa depois, não no anúncio.
+
+**Como saber que funcionou:** Não tem número de posição. O sinal é a avaliação nova começar a repetir as mesmas palavras.
 
 ---
 

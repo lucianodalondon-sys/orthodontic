@@ -38,7 +38,7 @@ import datetime as dt
 from collections import defaultdict
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-from cruzamento import identidades, conta, confianca
+from cruzamento import identidades, conta, confianca, disputa_aparelho
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 
@@ -300,7 +300,7 @@ def main():
         for l in pr.get("locais", []):
             if l.get("papel") == "proprio" and l.get("place_id"):
                 nossos_place.add(l["place_id"])
-            if (l.get("produto") or {}).get("disputa_aparelho") and l.get("place_id"):
+            if disputa_aparelho(l) and l.get("place_id"):
                 disputam.add(l["place_id"])
 
     pracas = sorted({r.get("praca_id") for r in cat if r.get("praca_id")})

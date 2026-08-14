@@ -41,7 +41,7 @@ import datetime as dt
 from collections import defaultdict, Counter
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-from cruzamento import normaliza_bairro, identidades, conta, confianca
+from cruzamento import normaliza_bairro, identidades, conta, confianca, disputa_aparelho
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 SERIE = RAIZ/"dados"/"serie"
@@ -151,7 +151,7 @@ def main():
     for pid, pr in ident.items():
         for l in pr.get("locais", []):
             prod = (l.get("produto") or {})
-            if prod.get("disputa_aparelho") and l.get("place_id"):
+            if disputa_aparelho(l) and l.get("place_id"):
                 disputam.add(l["place_id"])
 
     # onde ESTÃO as nossas unidades (pelo place_id da identidade)

@@ -357,43 +357,85 @@ def tarefa_palavras(c):
     }
 
 
-def tarefa_ficha_dobrada(praca, ident):
-    """A ficha repetida da PRÓPRIA clínica. Divide avaliação e nota ao meio."""
+def tarefa_ficha_dobrada(praca, ident, local=None):
+    """A ficha repetida da PRÓPRIA clínica. Divide avaliação e nota ao meio.
+
+    A PRIMEIRA VERSÃO DESTA TAREFA MANDAVA O FRANQUEADO DENUNCIAR O
+    CONCORRENTE DA ESQUINA — e isso saiu impresso em 40 dos 45 planos.
+
+    Dois defeitos somados. O casamento era por `endereco.split(",")[0][:38]`,
+    ou seja, o NOME DA RUA sem número: qualquer clínica da mesma rua entrava.
+    Em Cuiabá listou "OdontoCompany Boa Esperança", "OdontoCenter Coxipó" e
+    "Dentizy"; em Caxias, "Revitalle Implantes"; em Joinville, "Contraste
+    Radiologia". Dos 112 nomes listados na rede, 111 eram de terceiros.
+
+    E o texto dizia: *"Se o cadastro extra não for seu, marque como duplicado
+    mesmo assim — o Google avalia."* Isso é instruir o franqueado a pedir a
+    remoção da ficha de um concorrente. É risco de sanção para a unidade, é
+    desleal, e estava num papel que o consultor deixa em cima da mesa.
+
+    A régua agora: só entra ficha que tenha o nome da MARCA e o endereço da
+    PRÓPRIA loja (rua + número), e o texto só fala de fundir o que é nosso.
+    Sem prova de que é a mesma clínica, a tarefa não existe.
+    """
     nossos = {l.get("place_id") for l in ident.get("locais", [])
               if l.get("papel") == "proprio" and l.get("place_id")}
-    ends = {sem_acento(l.get("endereco")).split(",")[0][:38]
-            for l in ident.get("locais", []) if l.get("papel") == "proprio"
-            and l.get("endereco")}
+    # o endereço DESTA loja, com número — não o de todas as lojas da cidade
+    alvo = [local] if local else [l for l in ident.get("locais", [])
+                                  if l.get("papel") == "proprio"]
+    ends = {_rua_e_numero(l.get("endereco")) for l in alvo if l.get("endereco")}
+    ends.discard("")
     suspeitas = []
     for r in ultimo(jsonl("categoria"), praca):
         if r.get("place_id") in nossos:
             continue
         nome = sem_acento(r.get("nome"))
-        end = sem_acento(r.get("endereco")).split(",")[0][:38]
-        if re.search(r"\borthodontic\b(?!s)", nome) or (end and end in ends):
-            suspeitas.append({"nome": r.get("nome"), "avaliacoes": r.get("avaliacoes"),
-                              "endereco": r.get("endereco")})
+        # NOME DA MARCA **E** MESMO ENDEREÇO. Um só dos dois não prova nada:
+        # "Clínica Ortho Mais" não é nossa, e dividir rua com alguém é o
+        # normal numa avenida de clínicas.
+        if not re.search(r"\borthodontic\b(?!s)", nome):
+            continue
+        if _rua_e_numero(r.get("endereco")) not in ends:
+            continue
+        suspeitas.append({"nome": r.get("nome"), "avaliacoes": r.get("avaliacoes"),
+                          "endereco": r.get("endereco"),
+                          "place_id": r.get("place_id")})
     if not suspeitas:
         return None
     return {
-        "titulo": "Existe mais de um cadastro da sua clínica no Google",
+        "titulo": "Parece haver dois cadastros da SUA clínica no Google",
         "custo": "R$ 0", "tempo": "15 minutos + a espera do Google", "quem": "você",
         "o_que_esta_acontecendo": [
-            "Encontramos outro cadastro no mesmo endereço ou com o nome da marca:",
+            "No mesmo endereço da sua unidade, e com o nome da marca, "
+            "aparece mais de um cadastro:",
             *[f"· {s['nome']} — {n(s['avaliacoes']) if s['avaliacoes'] else 'nenhuma'} "
-              f"avaliação" for s in suspeitas[:3]],
+              f"avaliação · {s['endereco']}" for s in suspeitas[:3]],
             "Cadastro repetido **divide a avaliação e a nota**. O paciente que "
             "avalia no perfil errado some do perfil certo.",
         ],
         "o_que_fazer": [
-            "Entre no perfil do Google e peça a fusão dos cadastros duplicados.",
-            "Se o cadastro extra não for seu, marque como duplicado mesmo assim — "
-            "o Google avalia.",
+            "Confira se os dois cadastros são mesmo da sua clínica — abra os "
+            "dois no mapa antes de qualquer coisa.",
+            "Sendo os dois seus, entre no perfil do Google e peça a fusão.",
+            "Se um deles NÃO for seu, não mexa: pedir remoção de ficha de "
+            "terceiro é problema para a sua unidade, não para a dele.",
         ],
         "como_saber": "Na próxima medição os dois viram um só, e a contagem de "
                       "avaliações soma em vez de dividir.",
         "peso": 90,
     }
+
+
+def _rua_e_numero(end):
+    """'R. Barão, 42 - Centro, Cuiabá' → 'r. barao 42'.
+
+    Só a rua fazia toda clínica da mesma via virar 'cadastro duplicado'."""
+    if not end:
+        return ""
+    p = sem_acento(end).split(",")
+    rua = p[0].strip()
+    num = re.sub(r"\D", "", p[1]) if len(p) > 1 else ""
+    return f"{rua} {num}".strip()
 
 
 def tarefa_anuncio(c):
@@ -448,7 +490,12 @@ def monta(praca, local_id=None, unidade=None):
     portas = [d for d in ultimo(jsonl("portas"), praca)
               if d.get("intencao") != "RUÍDO"
               and frase_util(d["frase"], ufs, ident.get("cidades"))]
-    tarefas = [t for t in (tarefa_dentista(c), tarefa_ficha_dobrada(praca, ident),
+    # a ficha dobrada é da LOJA, não da praça: passar só a praça fazia as
+    # cinco lojas de Curitiba receberem a mesma lista de "duplicatas"
+    _meu = next((l for l in ident.get("locais", [])
+                 if l.get("local_id") == local_id), None) if local_id else None
+    tarefas = [t for t in (tarefa_dentista(c),
+                           tarefa_ficha_dobrada(praca, ident, _meu),
                            tarefa_bairros(c, portas, praca), tarefa_sem_dono(c),
                            tarefa_convenios(c), tarefa_palavras(c),
                            tarefa_anuncio(c)) if t]

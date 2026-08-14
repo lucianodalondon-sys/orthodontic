@@ -4,7 +4,7 @@
 
 > ## A sua clínica aparece em 3 das 140 buscas que testamos na sua cidade.
 
-São **5 tarefas**, e **5 delas custam R$ 0**. A ordem é de propósito: o que é grátis vem antes do que custa.
+São **5 tarefas**, e **4 delas custam R$ 0**. A ordem é de propósito: o que é grátis vem antes do que custa.
 
 ---
 
@@ -35,30 +35,7 @@ Quem aparece no seu lugar: ODONTO ART DENTISTA 24 HORAS CONTAGEM (1.728 avaliaç
 
 ---
 
-## 2. Existe mais de um cadastro da sua clínica no Google
-
-`R$ 0` · `15 minutos + a espera do Google` · `você`
-
-Encontramos outro cadastro no mesmo endereço ou com o nome da marca:
-
-· ODONTO ART DENTISTA 24 HORAS CONTAGEM — 1.729 avaliação
-
-· Clínica Elevata - Rede Odonto Eldorado — 1.294 avaliação
-
-· Orthopride Contagem — 876 avaliação
-
-Cadastro repetido **divide a avaliação e a nota**. O paciente que avalia no perfil errado some do perfil certo.
-
-**O que fazer:**
-
-1. Entre no perfil do Google e peça a fusão dos cadastros duplicados.
-2. Se o cadastro extra não for seu, marque como duplicado mesmo assim — o Google avalia.
-
-**Como saber que funcionou:** Na próxima medição os dois viram um só, e a contagem de avaliações soma em vez de dividir.
-
----
-
-## 3. A sua cidade procura dentista por bairro — e o seu bairro não está escrito em lugar nenhum
+## 2. A sua cidade procura dentista por bairro — e o seu bairro não está escrito em lugar nenhum
 
 `R$ 0` · `1 hora` · `você ou quem cuida do site`
 
@@ -78,7 +55,7 @@ Isso quer dizer que o paciente da sua cidade procura por perto de casa, não pel
 
 ---
 
-## 4. A cidade procura dentista por nome de convênio
+## 3. A cidade procura dentista por nome de convênio
 
 `R$ 0` · `15 minutos` · `você`
 
@@ -96,7 +73,7 @@ O Google completa a busca da sua cidade com nome de plano: Amil, Bradesco, Hapvi
 
 ---
 
-## 5. O que o paciente da sua cidade diz que foi buscar
+## 4. O que o paciente da sua cidade diz que foi buscar
 
 `R$ 0` · `meia hora, uma vez` · `você e quem escreve`
 
@@ -121,6 +98,23 @@ E as palavras que eles usam para elogiar são sempre as mesmas: recepção, cent
 3. Se dor e criança estão no topo, é por ali que o paciente entra — e o aparelho vem na conversa depois, não no anúncio.
 
 **Como saber que funcionou:** Não tem número de posição. O sinal é a avaliação nova começar a repetir as mesmas palavras.
+
+---
+
+## 5. Quem está anunciando na sua praça agora
+
+`depende` · `—` · `você e a agência`
+
+**34 anúncios ativos** de Alexandre Ercolani Advocacia Tributária e Patrimonial, Ana Almeida Advogada, Aparelho Dental no mesmo dia, Bio Clean, Clínica Ortho Mais - Betim e mais 12.
+
+Anúncio é a última coisa da lista de propósito. As tarefas de cima custam zero e resolvem a maior parte. Verba de anúncio antes disso é pagar por um clique que o perfil daria de graça.
+
+**O que fazer:**
+
+1. Faça primeiro as tarefas grátis desta lista.
+2. Só depois, se quiser anunciar, comece pelas buscas onde o concorrente é forte e a intenção é de compra.
+
+**Como saber que funcionou:** A gente acompanha quem liga e quem desliga campanha, mês a mês.
 
 ---
 
