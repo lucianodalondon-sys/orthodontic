@@ -584,3 +584,118 @@ evidências` bastam.
 - **Não** invente orçamento, retorno financeiro ou prazo que não esteja no
   payload.
 - **Não** conte nada na tela. Todo número, plural e frase vêm prontos.
+
+---
+
+# Parte 4 — a conferência do build (portal 6) e o que falta ligar
+
+Rodei o portal que você entregou num navegador, contra o payload de hoje.
+**Nenhum erro de console, nenhum 404, nada quebrado.** O que segue é
+fiação que falta, não conserto de visual.
+
+## O que já está certo — não mexa
+
+- A home é **Inteligência da rede**: cinco blocos, 14 cartões, com a
+  pergunta de cada bloco e o estado vazio explicado.
+- O cabeçalho está em 14 telas cheias e em 15 blocos reduzidos, com
+  `como ler` entre o cabeçalho e o conteúdo e o **método no rodapé**.
+- CLÍNICAS é a grade ordenada por alerta, com os quatro estados e os
+  filtros contados do payload.
+- ENCAMINHAR está implementado exatamente como pedido: `abertura + corpo`,
+  com `texto_pronto` de reserva. Não mude isso.
+- **Zero `.length` impresso na tela e zero `.sort()`.** A única conta que
+  sobrou é largura de barra e geometria de mapa, que é desenho, não número
+  publicado. Está certo.
+
+## 12 · O que falta ligar
+
+### 12.1 · `pipeline_expansao.json` não está sendo lido
+
+Payload novo. Ele funde o funil nacional e o radar numa tela só, que é o
+que o time comercial usa:
+
+```
+  5.570  municípios brasileiros
+     50  candidatas pela régua demográfica
+         ↓ 5.520 caíram: cidade pequena demais para sustentar uma unidade
+     13  estudadas a fundo
+         · 5 vieram da régua, 8 por outro caminho
+      6  com a praça livre
+         ↓ 7 caíram: a rede já tem unidade lá
+      6  recomendadas para avançar
+```
+
+Campos: `degraus[]` (com `quantos`, `cairam`, `porque_caem`), `cidades[]`
+(com `por_que[]`, **`riscos[]`**, `proximo_passo`, `insight`),
+`onde_cabem_mais[]`.
+
+O bloco `vieram_da_regua` / `vieram_por_outro_caminho` **tem de aparecer**:
+o funil não é fila única, e escrever "50 → 13" sugeriria subconjunto.
+
+Os **riscos** também não são opcionais. Um candidato a franqueado que sabe
+fazer conta desconfia de dossiê sem risco.
+
+A rota `radar` passa a abrir esta tela; `funil` vira âncora dentro dela.
+
+### 12.2 · A agenda do consultor merece rota própria
+
+Hoje `#agenda` abre a tela da fila. O bloco dentro da home está perfeito —
+mas a agenda é uma das seis capacidades e tem cabeçalho próprio no
+payload (`cabecalhos.json → agenda`). Faça `#agenda` abrir `agenda.json`
+em tela cheia: `esta_semana[]` com `frase_ver_todas`, e o mesmo
+`linhaAgenda` que você já escreveu.
+
+### 12.3 · Seis telas ainda sem cabeçalho
+
+`cabecalhoTela()` cobre 14. Faltam, e todas já têm texto pronto em
+`cabecalhos.json`:
+
+    agenda · funil_nacional · sazonalidade · voz_da_cidade · pipeline_expansao
+
+(`franqueadora` é a home antiga e pode ficar sem — a home agora é
+`inteligencia_da_rede`.)
+
+### 12.4 · A caixa de respostas mudou de forma
+
+A tela ainda abre com **399** e a lista crua. O payload agora prioriza:
+
+| campo | o que é |
+|---|---|
+| `manchete` | "20 unidades precisam responder agora — 399 abertas…" |
+| `precisam_agora_total` | quantas estão em vermelho |
+| `janela_que_pesa_dias` | 180 |
+| `unidades[].frase` | "14 críticas sem resposta nos últimos 180 dias · 36 abertas no total" |
+| `unidades[].criticas_recentes` | o número que ordena |
+| `unidades[].gravidade` | alta · media · baixa |
+| `unidades[].assuntos[]` | do que reclamam: `{assunto, quantas, frase}` |
+| `unidades[].insight` | com ENCAMINHAR pronto |
+
+Desenhe como fila de trabalho:
+
+```
+  🔴 MG · Contagem · OrthoDontic
+     14 críticas sem resposta nos últimos 180 dias · 36 abertas no total
+     agendamento (6) · atendimento clínico (3) · contato (2)
+     [ ver as 36 ]                                  [ ENCAMINHAR ▾ ]
+```
+
+O 399 continua na tela, como acervo, embaixo — não como manchete. Ninguém
+responde 399.
+
+**Por que mudou:** a ordenação anterior era "há quantos dias a mais antiga
+espera", e ela pôs na frente uma reclamação de **4.172 dias** e pintou as
+40 unidades de vermelho. Não separava nada.
+
+### 12.5 · Os alertas de ficha ganharam ação
+
+`rede_inteira.json → alertas[]` agora traz `o_que_fazer`, `custo`,
+`prazo_dias` e `insight`. Cada alerta vira cartão com ação e ENCAMINHAR,
+não só diagnóstico. E quase todos são "sem custo de mídia" — isso merece
+aparecer.
+
+### 12.6 · `gravidade_rotulo`
+
+Era defeito nosso: a tela escrevia `media`, sem acento, porque recebia a
+chave de código. Agora todo insight traz `gravidade_rotulo` ("alta
+prioridade", "média prioridade"). Use ele nos rótulos e nas tiras —
+`gravidade` continua servindo para a cor.
