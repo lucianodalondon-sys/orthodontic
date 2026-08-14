@@ -148,10 +148,37 @@ def placar(n):
     return (int(m.group(1)), int(m.group(2))) if m else (None, None)
 
 
+def so_o_score(n):
+    """O selo do placar é um SCORE, e cabe em cinco caracteres.
+
+    Os itens derrubados traziam `n` como frase — "4/4 em julho · não se
+    sustentou em 13" e "derrubada" — e a tela põe isso na mesma coluna
+    estreita onde os outros dizem "23/23". A frase quebrava em cinco linhas
+    dentro do selo. Aqui sai só o score; a frase inteira vai para o motivo,
+    que é onde ela cabe e onde ela é lida."""
+    m = re.match(r"^\s*(\d+\s*/\s*\d+)", str(n or ""))
+    return re.sub(r"\s+", "", m.group(1)) if m else None
+
+
+def titulo_limpo(t):
+    """O bloco já se chama 'Derrubado pelo dado'; o título não repete.
+
+    '❌ CAIU — a proporção subia…' era o único título da tela com emoji e
+    com o veredito colado, dentro do bloco que já diz o veredito."""
+    t = re.sub(r"^\s*[^\w\s]*\s*(CAIU|DERRUBAD[AO])\s*[—:-]\s*", "", str(t or ""))
+    return t[:1].upper() + t[1:] if t else t
+
+
 def nivel(a):
     """O nível sai do placar, nunca do rótulo antigo."""
     if a.get("estado") == "derrubada":
-        return "derrubado", "a medição contradisse a explicação"
+        # o texto original de `n` costuma trazer POR QUE caiu; sem isto o
+        # motivo era sempre a mesma frase genérica para todos os derrubados
+        extra = str(a.get("n") or "").strip()
+        return "derrubado", ("a medição contradisse a explicação"
+                             + (f" — {extra}" if extra
+                                and not re.fullmatch(r"derrubad[ao]", extra, re.I)
+                                else ""))
     passou, base = placar(a.get("n"))
     if base is None:
         return "em_teste", (a.get("por_que_nao")
@@ -193,9 +220,17 @@ def monta():
         chave = a.get("t")
         dec = DECISAO.get(chave)
         itens.append({
-            "titulo": chave,
+            # `chave` continua sendo a identidade (é ela que casa com DECISAO
+            # e é ela que o guarda de repetição confere); o título é o que a
+            # tela mostra, e ele não repete o nome do bloco
+            "titulo": titulo_limpo(chave),
             "nivel": niv,
-            "placar": a.get("n"),
+            # DERRUBADO NÃO EXIBE SCORE. "4/4" num selo dentro do bloco
+            # vermelho lê como evidência a favor, e aquele 4/4 é de julho:
+            # é exatamente o placar que a medição de agosto desmentiu. A
+            # história inteira ("4/4 em julho · não se sustentou em 13") fica
+            # no motivo, que é frase e comporta o "em julho".
+            "placar": None if niv == "derrubado" else so_o_score(a.get("n")),
             "passou": passou, "base": base,
             "porque_neste_nivel": porque,
             "leitura": a.get("leitura"),

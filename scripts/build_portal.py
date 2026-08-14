@@ -12,7 +12,7 @@ Regra: todo número carrega procedência. Sem procedência, não entra.
 
 Uso:  python3 scripts/build_portal.py [--corte AAAA-MM-DD]
 """
-import json, argparse, pathlib, sys, unicodedata
+import json, argparse, pathlib, re, sys, unicodedata
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import datetime as dt
 from collections import defaultdict, Counter
@@ -481,6 +481,70 @@ def main():
                 "porque_sem_linha": ("a lista oficial da rede não confirmou "
                                      "qual linha é esta loja"),
             })
+
+    # NA LISTA OFICIAL DUAS LOJAS DA MESMA CIDADE PODEM TER O MESMO NOME.
+    #
+    # `nome_da_loja.py` desambigua quem tem estudo, por bairro/rua. Quem só
+    # existe na lista não passa por ele, e a grade publicava dois cartões
+    # gêmeos: "Vitoria da Conquista" duas vezes na BA (endereços diferentes),
+    # "Guaiba" duas vezes no RS (Rua São José 810 e Rua São José 810, 2º
+    # pavimento) e duas "Unidade em Implantação" em Porto Alegre, as duas
+    # sem endereço nenhum. Cartão que não se distingue do vizinho não é
+    # cartão — e o caso do endereço IGUAL é mais grave, porque então nem nós
+    # sabemos se são duas lojas ou uma linha repetida no site, e o total de
+    # 373 depende disso. Os dois casos são declarados, cada um pelo que é.
+    def _rua_num(e):
+        """Rua e número normalizados — é o que decide se são dois endereços.
+
+        Comparar 'pedaço do endereço' solto INVENTA distinção: em Guaíba as
+        duas linhas são 'Rua São José, 810. Bairro: Centro' e 'Rua São José,
+        810 2o pavimento', e tirar o bairro de uma e a rua da outra fazia a
+        grade publicar 'Guaiba · Centro' ao lado de 'Guaiba · Rua São José,
+        810 2o pavimento' — dois lugares diferentes, que é justamente o que
+        o dado não diz. Mesma rua e mesmo número: ambíguo, e ponto."""
+        e = _sem_acento(str(e or "")).split("bairro:")[0]
+        m = re.match(r"\s*(.+?)[,\s]+(\d+)", e)
+        return f"{m.group(1).strip(' .,')} {m.group(2)}" if m else None
+
+    def _bairro(e):
+        m = re.search(r"Bairro:\s*(.+?)\s*$", str(e or ""))
+        return m.group(1).strip(" .") if m else None
+
+    def _rua_num_exibe(e):
+        """A mesma rua e número, com acento e maiúscula, para aparecer na tela.
+
+        Cortar no primeiro ponto não serve: 'Av. Otavio Santos, 91' virava
+        'Av'."""
+        e = str(e or "").split("Bairro:")[0]
+        m = re.match(r"\s*(.+?)[,\s]+(\d+)", e)
+        return f"{m.group(1).strip(' .,')}, {m.group(2)}" if m else e.strip(" .,")
+
+    _iguais = defaultdict(list)
+    for c in _cards:
+        _iguais[(c["rotulo"], c["unidade"])].append(c)
+    for (rot, _nome), gemeos in _iguais.items():
+        if len(gemeos) < 2:
+            continue
+        ruas = [_rua_num(c.get("endereco")) for c in gemeos]
+        if all(ruas) and len(set(ruas)) == len(ruas):
+            # endereços de verdade diferentes: o bairro nomeia quando existe
+            # nos dois, senão a própria rua com número
+            bairros = [_bairro(c.get("endereco")) for c in gemeos]
+            usa = (bairros if all(bairros) and len(set(bairros)) == len(bairros)
+                   else [_rua_num_exibe(c.get("endereco")) for c in gemeos])
+            for c, p in zip(gemeos, usa):
+                c["unidade"] = f"{c['unidade']} · {p}"
+                c["nome_veio_de"] = "endereço da lista oficial"
+            continue
+        for c in gemeos:
+            c["nome_ambiguo"] = True
+            c["porque_ambiguo"] = (
+                f"a lista oficial traz {conta(len(gemeos), 'linha')} com este "
+                f"mesmo nome em {rot}" + (
+                    " e sem endereço que as separe" if not any(ruas)
+                    else " na mesma rua e no mesmo número") +
+                " — não dá para dizer daqui se são lojas diferentes ou a "
+                "mesma linha repetida no site")
 
     # ordem: quem tem alerta primeiro, e dentro disso a urgência. Depois as
     # medidas sem estudo (as maiores primeiro — são as que mais pesam), e por

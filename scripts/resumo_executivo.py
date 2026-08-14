@@ -168,11 +168,16 @@ def _anomalias():
     an = carrega("anomalias")
     out = []
     for x in (an.get("anomalias_negativas") or [])[:2]:
+        # O TÍTULO TEM DE DIZER QUAL. Dois cartões vizinhos na home diziam
+        # "Deveria estar melhor do que está" — São Paulo · República e
+        # Uberlândia · Floriano Peixoto — e só o `onde`, em letra menor,
+        # separava um do outro. Cartão que se encaminha viaja sozinho: o
+        # título é a única linha que chega inteira do outro lado.
+        _loja = str(x.get("unidade") or "").replace("OrthoDontic", "").strip(" ·")
         out.append(monta_insight(
             fonte="anomalia", chave=x["local_id"],
-            titulo="Deveria estar melhor do que está",
-            onde=x["rotulo"] + " · " + str(x.get("unidade") or "").replace(
-                "OrthoDontic", "").strip(" ·"),
+            titulo=f"{x['rotulo']} · {_loja} deveria estar melhor do que está",
+            onde=x["rotulo"] + " · " + _loja,
             fato=x["leitura"],
             por_que_importa=("a fila ordena por gatilho; esta leitura é "
                              "contra lojas de mercado parecido, e mostra "
@@ -187,11 +192,11 @@ def _anomalias():
                       "concluir"),
             carimbo=x.get("carimbo"), link=f"clinicas/{x['local_id']}"))
     for x in (an.get("fora_da_curva") or [])[:1]:
+        _loja = str(x.get("unidade") or "").replace("OrthoDontic", "").strip(" ·")
         out.append(monta_insight(
             fonte="anomalia", chave=f"positiva|{x['local_id']}",
-            titulo="Está fazendo algo que precisamos entender",
-            onde=x["rotulo"] + " · " + str(x.get("unidade") or "").replace(
-                "OrthoDontic", "").strip(" ·"),
+            titulo=f"{x['rotulo']} · {_loja} faz algo que precisamos entender",
+            onde=x["rotulo"] + " · " + _loja,
             fato=x["leitura"],
             por_que_importa=("boa prática escondida na rede é a única coisa "
                              "que a franqueadora não consegue comprar de "
@@ -240,9 +245,20 @@ def _testar():
     for v in pb.get("posicoes_vagas", [])[:2]:
         if v["pracas"] < 3:
             continue
+        # QUAL posição está vaga é a informação inteira, e ela estava só no
+        # corpo. A home publicava dois cartões com o MESMO título — "Posição
+        # vaga no discurso do mercado", um de 12 praças e outro de 9 — e nem
+        # o `onde` ajudava, porque "12 praças" e "9 praças" não dizem qual
+        # assunto ninguém ocupa. O texto vem como "Ninguém está falando de
+        # <assunto> — <porquê>"; o assunto é o título.
+        _assunto = v["posicao"].split(" — ")[0].strip()
+        for _p in ("Ninguém está falando de ", "Ninguém está falando "):
+            if _assunto.startswith(_p):
+                _assunto = _assunto[len(_p):]
+                break
         out.append(monta_insight(
             fonte="playbook", chave=v["posicao"],
-            titulo="Posição vaga no discurso do mercado",
+            titulo=f"Posição vaga: ninguém fala de {_assunto.rstrip('.')}",
             onde=conta(v["pracas"], "praça", "praças"),
             fato=(f"{v['posicao']} Isso se repete em "
                   f"{conta(v['pracas'], 'praça medida', 'praças medidas')}."),
@@ -304,9 +320,14 @@ def _cidades():
         conf = c.get("conferencia") or {}
         if conf.get("estado") not in (None, "livre", "conferida"):
             continue
+        # `leitura` é o VEREDITO, e ele se repete de propósito — cinco
+        # cidades saem como "OPORTUNIDADE — cidade grande com categoria
+        # fraca". Título é nome, não categoria: a cidade vai na frente.
+        _ver = (c.get("leitura") or "Cidade para estudar")
+        _ver = _ver.split("—", 1)[1].strip() if "—" in _ver else _ver
         out.append(monta_insight(
             fonte="radar", chave=c["rotulo"],
-            titulo=c.get("leitura") or "Cidade para estudar",
+            titulo=f"{c['rotulo']}: {_ver}",
             onde=c["rotulo"],
             fato=(f"{c['populacao']:,} habitantes".replace(",", ".")
                   + f" · {conta(c.get('clinicas_fortes') or 0, 'clínica forte', 'clínicas fortes')}"
