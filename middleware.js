@@ -27,10 +27,15 @@
 import { abreCookie } from "./api/_porta.js";
 
 export const config = {
-  /* Tudo é protegido, menos o necessário para a própria tela de login
-     desenhar (fonte, logo) e os dois endpoints da porta. Sem excluir
-     `/assets`, a tela de login apareceria sem marca e sem tipografia. */
-  matcher: ["/((?!api/entrar|api/pedir-codigo|entrar|assets/|favicon).*)"],
+  /* Tudo é protegido, menos o que a própria tela de login precisa para
+     desenhar e os dois endpoints da porta.
+     ⚠ A primeira versão liberava `assets/` INTEIRA, e com isso
+     `/assets/portal.js` — 176 KB com a lógica do casco e o nome de todos
+     os payloads — saía sem login. A tela de login usa só as fontes e os
+     dois logos (o CSS dela é embutido), então é só isso que passa. */
+  matcher: [
+    "/((?!api/entrar|api/pedir-codigo|entrar|assets/fonts/|assets/logo-|favicon).*)",
+  ],
 };
 
 export default async function middleware(req) {
