@@ -150,7 +150,7 @@ def monta():
                if u["criticas"] > len(recentes) else ""))
         u["gravidade"] = ("alta" if len(recentes) >= 2
                           else "media" if recentes else "baixa")
-        u["insight"] = monta_insight(
+        u["insight"] = None if u["gravidade"] == "baixa" else monta_insight(
             fonte="respostas", chave=lid_de(u),
             titulo="Avaliações críticas esperando resposta",
             onde=u["rotulo"] + (f" · {u['unidade']}" if u.get("unidade") else ""),
@@ -212,8 +212,21 @@ def monta():
                   f"antigo continua contado, mas não é urgência — ninguém "
                   f"escolhe clínica lendo uma avaliação de 2015."),
         "janela_que_pesa_dias": JANELA_QUE_PESA,
-        "precisam_agora": [u["local_id"] for u in unidades
-                           if u["gravidade"] == "alta"],
+        # LISTA DE ID NÃO DESENHA LINHA. A primeira versão mandava só os
+        # `local_id` daqui, e a tela desenhou 20 linhas VAZIAS: o casco não
+        # pode ir buscar o resto, porque procurar registro por id é
+        # trabalho de banco, não de tela. Quem publica uma lista publica os
+        # registros dela.
+        # E A LISTA DE PRIORIDADE NÃO CARREGA O ACERVO INTEIRO. Mandar as
+        # unidades com TODAS as avaliações abertas dobrou o arquivo para
+        # 592 KB. Aqui vão as críticas da janela que pesa — que são as que
+        # a tela desenha — com o total ao lado para o "ver todas".
+        "precisam_agora": [
+            dict(u, itens=[x for x in u["itens"]
+                           if _nota(x) <= 2 and (x["data"] or "") >= limite][:12],
+                 itens_total=len(u["itens"]),
+                 frase_ver_todas=f"ver as {len(u['itens'])} abertas desta unidade")
+            for u in unidades if u["gravidade"] == "alta"],
         "precisam_agora_total": sum(1 for u in unidades
                                     if u["gravidade"] == "alta"),
         # a tela não conta lista: "lojas com fila" e o tamanho de cada fila
