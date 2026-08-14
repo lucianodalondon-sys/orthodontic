@@ -75,6 +75,11 @@ ABERTURA = {
 }
 
 GRAVIDADE = ("alta", "media", "baixa")
+# A CHAVE NÃO É O RÓTULO. `gravidade` é chave de código e foi para a tela
+# escrita "media", sem acento, num cartão de diretoria. Quem tem rótulo
+# manda o rótulo pronto.
+GRAVIDADE_ROTULO = {"alta": "alta prioridade", "media": "média prioridade",
+                    "baixa": "baixa prioridade"}
 
 
 def _id(fonte, chave):
@@ -130,6 +135,7 @@ def monta(*, fonte, chave, titulo, fato, por_que_importa, acao,
         "nao_faca": _limpa(nao_faca) or None,
         "revisar_em_dias": revisar_em,
         "gravidade": gravidade,
+        "gravidade_rotulo": GRAVIDADE_ROTULO[gravidade],
         "evidencias": ev,
         "evidencias_total": len(ev),
         "medido_em": medido_em,
@@ -195,7 +201,8 @@ def resumo(insights):
         "total": len(insights),
         "por_publico": [{"chave": k, "rotulo": PUBLICOS[k],
                          "quantos": por_pub.get(k, 0)} for k in PUBLICOS],
-        "por_gravidade": [{"gravidade": g, "quantos": por_grav.get(g, 0)}
+        "por_gravidade": [{"gravidade": g, "rotulo": GRAVIDADE_ROTULO[g],
+                           "quantos": por_grav.get(g, 0)}
                           for g in GRAVIDADE],
     }
 

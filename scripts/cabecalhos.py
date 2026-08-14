@@ -263,8 +263,10 @@ C = {
     pergunta="Quais pacientes escreveram e não foram respondidos — e há "
              "quanto tempo?",
     para_quem=["franqueado"],
-    como_ler="A lista está ordenada pelo que dói mais: nota baixa e "
-             "esperando há mais tempo.",
+    como_ler="A ordem é por urgência real: crítica de 1 ou 2 estrelas "
+             "aberta nos últimos 180 dias, que é a que o próximo paciente "
+             "encontra no topo da ficha. O acervo antigo continua contado "
+             "ao lado, como acervo.",
     o_que_nao_e="Responder não apaga a nota. Muda o que o próximo "
                 "paciente lê quando chega na ficha.",
     metodo="avaliações públicas do Google, com e sem resposta do dono, "
