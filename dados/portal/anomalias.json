@@ -8,7 +8,7 @@
   "muito_acima": 2.0,
   "minimo_de_gemeos": 2
  },
- "manchete": "6 unidades que deveriam estar melhor · 10 fora da curva para cima",
+ "manchete": "7 unidades que deveriam estar melhor · 8 fora da curva para cima",
  "anomalias_negativas": [
   {
    "local_id": "orthodontic_republica",
@@ -68,6 +68,62 @@
      "aqui": 0.0,
      "nas_semelhantes": 48.0,
      "texto": "0% aqui contra 48% nas semelhantes"
+    }
+   ]
+  },
+  {
+   "local_id": "uberlandia_orthodontic_centro",
+   "praca_id": "uberlandia",
+   "rotulo": "MG · Uberlândia",
+   "unidade": "OrthoDontic · Av. Floriano Peixoto",
+   "ritmo": 0.8,
+   "ritmo_dos_semelhantes": 6.0,
+   "razao": 0.13,
+   "nota": 4.2,
+   "avaliacoes": 61,
+   "gemeos": [
+    {
+     "rotulo": "MG · Contagem",
+     "unidade": "OrthoDontic",
+     "ritmo": 10.6
+    },
+    {
+     "rotulo": "SP · Sorocaba",
+     "unidade": "OrthoDontic · Centro",
+     "ritmo": 1.3
+    }
+   ],
+   "carimbo": {
+    "natureza": "inferencia",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 2,
+    "janela_dias": null,
+    "medicoes": null,
+    "fonte": null,
+    "a_favor": [
+     "a comparação é contra lojas de mercado parecido, não contra a mediana da rede"
+    ],
+    "contra": [
+     "2 pontos de comparação não são significância estatística — isto aponta onde olhar, não o que concluir"
+    ],
+    "o_que_aumentaria": "medir mais unidades da rede, para que cada loja tenha mais semelhantes",
+    "procedencia": "medido em 2 lojas semelhantes"
+   },
+   "leitura": "ganha 0.8 avaliações por mês onde as semelhantes ganham 6.0",
+   "o_que_perguntar": "o que mudou na rotina de pedir avaliação no fim do atendimento? As semelhantes fazem o dobro com o mesmo tamanho de cidade.",
+   "diferencas_visiveis": [
+    {
+     "o_que": "aparece nas buscas perto da loja",
+     "aqui": 1,
+     "nas_semelhantes": 3.5,
+     "texto": "1 aqui contra 4 nas semelhantes"
+    },
+    {
+     "o_que": "avaliações já respondidas",
+     "aqui": 46.2,
+     "nas_semelhantes": 60.0,
+     "texto": "46% aqui contra 60% nas semelhantes"
     }
    ]
   },
@@ -243,6 +299,62 @@
    ]
   },
   {
+   "local_id": "ortho_soro_jardim_faculdade",
+   "praca_id": "sorocaba",
+   "rotulo": "SP · Sorocaba",
+   "unidade": "OrthoDontic · Jardim Faculdade",
+   "ritmo": 1.0,
+   "ritmo_dos_semelhantes": 2.9,
+   "razao": 0.34,
+   "nota": 4.3,
+   "avaliacoes": 111,
+   "gemeos": [
+    {
+     "rotulo": "SP · Sorocaba",
+     "unidade": "OrthoDontic · Centro",
+     "ritmo": 1.3
+    },
+    {
+     "rotulo": "SC · Joinville",
+     "unidade": "OrthoDontic · Centro",
+     "ritmo": 4.5
+    }
+   ],
+   "carimbo": {
+    "natureza": "inferencia",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 2,
+    "janela_dias": null,
+    "medicoes": null,
+    "fonte": null,
+    "a_favor": [
+     "a comparação é contra lojas de mercado parecido, não contra a mediana da rede"
+    ],
+    "contra": [
+     "2 pontos de comparação não são significância estatística — isto aponta onde olhar, não o que concluir"
+    ],
+    "o_que_aumentaria": "medir mais unidades da rede, para que cada loja tenha mais semelhantes",
+    "procedencia": "medido em 2 lojas semelhantes"
+   },
+   "leitura": "ganha 1.0 avaliações por mês onde as semelhantes ganham 2.9",
+   "o_que_perguntar": "o que mudou na rotina de pedir avaliação no fim do atendimento? As semelhantes fazem o dobro com o mesmo tamanho de cidade.",
+   "diferencas_visiveis": [
+    {
+     "o_que": "aparece nas buscas perto da loja",
+     "aqui": 2,
+     "nas_semelhantes": 4.0,
+     "texto": "2 aqui contra 4 nas semelhantes"
+    },
+    {
+     "o_que": "avaliações já respondidas",
+     "aqui": 85.0,
+     "nas_semelhantes": 70.8,
+     "texto": "85% aqui contra 71% nas semelhantes"
+    }
+   ]
+  },
+  {
    "local_id": "orthodontic_tatuape",
    "praca_id": "sao_paulo",
    "rotulo": "SP · São Paulo",
@@ -302,144 +414,10 @@
      "texto": "48% aqui contra 29% nas semelhantes"
     }
    ]
-  },
-  {
-   "local_id": "ortho_poa_rio_branco",
-   "praca_id": "porto_alegre",
-   "rotulo": "RS · Porto Alegre",
-   "unidade": "OrthoDontic · Rio Branco",
-   "ritmo": 3.0,
-   "ritmo_dos_semelhantes": 6.3,
-   "razao": 0.48,
-   "nota": 4.5,
-   "avaliacoes": 32,
-   "gemeos": [
-    {
-     "rotulo": "SP · Sorocaba",
-     "unidade": "OrthoDontic · Vila Formosa",
-     "ritmo": 11.4
-    },
-    {
-     "rotulo": "RS · Porto Alegre",
-     "unidade": "OrthoDontic · Av. Borges de Medeiros",
-     "ritmo": 6.3
-    },
-    {
-     "rotulo": "RS · Porto Alegre",
-     "unidade": "OrthoDontic · Cavalhada",
-     "ritmo": 2.6
-    }
-   ],
-   "carimbo": {
-    "natureza": "inferencia",
-    "confianca": "baixa",
-    "medido": true,
-    "amostra": 3,
-    "janela_dias": null,
-    "medicoes": null,
-    "fonte": null,
-    "a_favor": [
-     "a comparação é contra lojas de mercado parecido, não contra a mediana da rede"
-    ],
-    "contra": [
-     "3 pontos de comparação não são significância estatística — isto aponta onde olhar, não o que concluir"
-    ],
-    "o_que_aumentaria": "medir mais unidades da rede, para que cada loja tenha mais semelhantes",
-    "procedencia": "medido em 3 lojas semelhantes"
-   },
-   "leitura": "ganha 3.0 avaliações por mês onde as semelhantes ganham 6.3, e ainda assim tem nota 4.5",
-   "o_que_perguntar": "o que mudou na rotina de pedir avaliação no fim do atendimento? As semelhantes fazem o dobro com o mesmo tamanho de cidade.",
-   "diferencas_visiveis": [
-    {
-     "o_que": "aparece nas buscas da cidade",
-     "aqui": 0,
-     "nas_semelhantes": 6,
-     "texto": "0 aqui contra 6 nas semelhantes"
-    },
-    {
-     "o_que": "aparece nas buscas perto da loja",
-     "aqui": 0,
-     "nas_semelhantes": 4,
-     "texto": "0 aqui contra 4 nas semelhantes"
-    },
-    {
-     "o_que": "avaliações já respondidas",
-     "aqui": 0.0,
-     "nas_semelhantes": 44.4,
-     "texto": "0% aqui contra 44% nas semelhantes"
-    }
-   ]
   }
  ],
- "anomalias_negativas_total": 6,
+ "anomalias_negativas_total": 7,
  "fora_da_curva": [
-  {
-   "local_id": "orthodontic_sao_miguel_paulista",
-   "praca_id": "sao_paulo",
-   "rotulo": "SP · São Paulo",
-   "unidade": "OrthoDontic · São Miguel Paulista",
-   "ritmo": 29.0,
-   "ritmo_dos_semelhantes": 1.0,
-   "razao": 29.0,
-   "nota": 4.9,
-   "avaliacoes": 161,
-   "gemeos": [
-    {
-     "rotulo": "SP · São Paulo",
-     "unidade": "OrthoDontic · Lapa",
-     "ritmo": 2.4
-    },
-    {
-     "rotulo": "SP · São Paulo",
-     "unidade": "OrthoDontic · República",
-     "ritmo": 0.3
-    },
-    {
-     "rotulo": "SP · São Paulo",
-     "unidade": "OrthoDontic · Tatuapé",
-     "ritmo": 1.0
-    }
-   ],
-   "carimbo": {
-    "natureza": "inferencia",
-    "confianca": "baixa",
-    "medido": true,
-    "amostra": 3,
-    "janela_dias": null,
-    "medicoes": null,
-    "fonte": null,
-    "a_favor": [
-     "a comparação é contra lojas de mercado parecido, não contra a mediana da rede"
-    ],
-    "contra": [
-     "3 pontos de comparação não são significância estatística — isto aponta onde olhar, não o que concluir"
-    ],
-    "o_que_aumentaria": "medir mais unidades da rede, para que cada loja tenha mais semelhantes",
-    "procedencia": "medido em 3 lojas semelhantes"
-   },
-   "leitura": "ganha 29.0 avaliações por mês onde as semelhantes ganham 1.0",
-   "o_que_perguntar": "o que esta unidade faz que as semelhantes não fazem? Vale entender antes de virar recomendação de rede.",
-   "diferencas_visiveis": [
-    {
-     "o_que": "aparece nas buscas perto da loja",
-     "aqui": 5,
-     "nas_semelhantes": 1,
-     "texto": "5 aqui contra 1 nas semelhantes"
-    },
-    {
-     "o_que": "avaliações já respondidas",
-     "aqui": 0.0,
-     "nas_semelhantes": 28.6,
-     "texto": "0% aqui contra 29% nas semelhantes"
-    },
-    {
-     "o_que": "avaliações que citam profissional pelo nome",
-     "aqui": 23.2,
-     "nas_semelhantes": 2.5,
-     "texto": "23% aqui contra 2% nas semelhantes"
-    }
-   ]
-  },
   {
    "local_id": "ortho_cba_centro_norte",
    "praca_id": "cuiaba",
@@ -548,128 +526,6 @@
    "leitura": "ganha 10.6 avaliações por mês onde as semelhantes ganham 1.3",
    "o_que_perguntar": "o que esta unidade faz que as semelhantes não fazem? Vale entender antes de virar recomendação de rede.",
    "diferencas_visiveis": []
-  },
-  {
-   "local_id": "ortho_joi_centro",
-   "praca_id": "joinville",
-   "rotulo": "SC · Joinville",
-   "unidade": "OrthoDontic · Centro",
-   "ritmo": 4.5,
-   "ritmo_dos_semelhantes": 1.1,
-   "razao": 4.09,
-   "nota": 4.6,
-   "avaliacoes": 513,
-   "gemeos": [
-    {
-     "rotulo": "SC · Joinville",
-     "unidade": "OrthoDontic · América",
-     "ritmo": 3.0
-    },
-    {
-     "rotulo": "SP · Sorocaba",
-     "unidade": "OrthoDontic · Jardim Faculdade",
-     "ritmo": 1.0
-    },
-    {
-     "rotulo": "MG · Uberlândia",
-     "unidade": "OrthoDontic · Praça Adolfo Fonseca",
-     "ritmo": 1.1
-    }
-   ],
-   "carimbo": {
-    "natureza": "inferencia",
-    "confianca": "baixa",
-    "medido": true,
-    "amostra": 3,
-    "janela_dias": null,
-    "medicoes": null,
-    "fonte": null,
-    "a_favor": [
-     "a comparação é contra lojas de mercado parecido, não contra a mediana da rede"
-    ],
-    "contra": [
-     "3 pontos de comparação não são significância estatística — isto aponta onde olhar, não o que concluir"
-    ],
-    "o_que_aumentaria": "medir mais unidades da rede, para que cada loja tenha mais semelhantes",
-    "procedencia": "medido em 3 lojas semelhantes"
-   },
-   "leitura": "ganha 4.5 avaliações por mês onde as semelhantes ganham 1.1",
-   "o_que_perguntar": "o que esta unidade faz que as semelhantes não fazem? Vale entender antes de virar recomendação de rede.",
-   "diferencas_visiveis": [
-    {
-     "o_que": "aparece nas buscas perto da loja",
-     "aqui": 4,
-     "nas_semelhantes": 2,
-     "texto": "4 aqui contra 2 nas semelhantes"
-    }
-   ]
-  },
-  {
-   "local_id": "ortho_soro_vila_formosa",
-   "praca_id": "sorocaba",
-   "rotulo": "SP · Sorocaba",
-   "unidade": "OrthoDontic · Vila Formosa",
-   "ritmo": 11.4,
-   "ritmo_dos_semelhantes": 3.0,
-   "razao": 3.8,
-   "nota": 4.9,
-   "avaliacoes": 161,
-   "gemeos": [
-    {
-     "rotulo": "RS · Porto Alegre",
-     "unidade": "OrthoDontic · Rio Branco",
-     "ritmo": 3.0
-    },
-    {
-     "rotulo": "SC · Joinville",
-     "unidade": "OrthoDontic · Aventureiro",
-     "ritmo": 6.0
-    },
-    {
-     "rotulo": "SP · Sorocaba",
-     "unidade": "OrthoDontic · Centro",
-     "ritmo": 1.3
-    }
-   ],
-   "carimbo": {
-    "natureza": "inferencia",
-    "confianca": "baixa",
-    "medido": true,
-    "amostra": 3,
-    "janela_dias": null,
-    "medicoes": null,
-    "fonte": null,
-    "a_favor": [
-     "a comparação é contra lojas de mercado parecido, não contra a mediana da rede"
-    ],
-    "contra": [
-     "3 pontos de comparação não são significância estatística — isto aponta onde olhar, não o que concluir"
-    ],
-    "o_que_aumentaria": "medir mais unidades da rede, para que cada loja tenha mais semelhantes",
-    "procedencia": "medido em 3 lojas semelhantes"
-   },
-   "leitura": "ganha 11.4 avaliações por mês onde as semelhantes ganham 3.0",
-   "o_que_perguntar": "o que esta unidade faz que as semelhantes não fazem? Vale entender antes de virar recomendação de rede.",
-   "diferencas_visiveis": [
-    {
-     "o_que": "aparece nas buscas da cidade",
-     "aqui": 6,
-     "nas_semelhantes": 2,
-     "texto": "6 aqui contra 2 nas semelhantes"
-    },
-    {
-     "o_que": "avaliações já respondidas",
-     "aqui": 0.0,
-     "nas_semelhantes": 34.4,
-     "texto": "0% aqui contra 34% nas semelhantes"
-    },
-    {
-     "o_que": "avaliações que citam profissional pelo nome",
-     "aqui": 17.2,
-     "nas_semelhantes": 4.8,
-     "texto": "17% aqui contra 5% nas semelhantes"
-    }
-   ]
   },
   {
    "local_id": "ortho_cwb_centro_2",
@@ -922,6 +778,49 @@
    ]
   },
   {
+   "local_id": "ortho_joi_centro",
+   "praca_id": "joinville",
+   "rotulo": "SC · Joinville",
+   "unidade": "OrthoDontic · Centro",
+   "ritmo": 4.5,
+   "ritmo_dos_semelhantes": 2.0,
+   "razao": 2.25,
+   "nota": 4.6,
+   "avaliacoes": 513,
+   "gemeos": [
+    {
+     "rotulo": "SC · Joinville",
+     "unidade": "OrthoDontic · América",
+     "ritmo": 3.0
+    },
+    {
+     "rotulo": "SP · Sorocaba",
+     "unidade": "OrthoDontic · Jardim Faculdade",
+     "ritmo": 1.0
+    }
+   ],
+   "carimbo": {
+    "natureza": "inferencia",
+    "confianca": "baixa",
+    "medido": true,
+    "amostra": 2,
+    "janela_dias": null,
+    "medicoes": null,
+    "fonte": null,
+    "a_favor": [
+     "a comparação é contra lojas de mercado parecido, não contra a mediana da rede"
+    ],
+    "contra": [
+     "2 pontos de comparação não são significância estatística — isto aponta onde olhar, não o que concluir"
+    ],
+    "o_que_aumentaria": "medir mais unidades da rede, para que cada loja tenha mais semelhantes",
+    "procedencia": "medido em 2 lojas semelhantes"
+   },
+   "leitura": "ganha 4.5 avaliações por mês onde as semelhantes ganham 2.0",
+   "o_que_perguntar": "o que esta unidade faz que as semelhantes não fazem? Vale entender antes de virar recomendação de rede.",
+   "diferencas_visiveis": []
+  },
+  {
    "local_id": "rio_de_janei_orthodontic",
    "praca_id": "rio_de_janeiro",
    "rotulo": "RJ · Rio de Janeiro",
@@ -970,9 +869,34 @@
    "diferencas_visiveis": []
   }
  ],
- "fora_da_curva_total": 10,
- "sem_base_de_comparacao": [],
- "sem_base_total": 0,
+ "fora_da_curva_total": 8,
+ "sem_base_de_comparacao": [
+  {
+   "local_id": "ortho_gyn_st_morada_do_sol",
+   "rotulo": "GO · Goiânia",
+   "unidade": "OrthoDontic · St. Morada do Sol",
+   "porque": "o ritmo desta loja não é comparável: a leitura de avaliações foi truncada"
+  },
+  {
+   "local_id": "uberlandia_orthodontic",
+   "rotulo": "MG · Uberlândia",
+   "unidade": "OrthoDontic · Praça Adolfo Fonseca",
+   "porque": "o ritmo desta loja não é comparável: a leitura de avaliações foi truncada"
+  },
+  {
+   "local_id": "ortho_soro_vila_formosa",
+   "rotulo": "SP · Sorocaba",
+   "unidade": "OrthoDontic · Vila Formosa",
+   "porque": "o ritmo desta loja não é comparável: a leitura de avaliações foi truncada"
+  },
+  {
+   "local_id": "orthodontic_sao_miguel_paulista",
+   "rotulo": "SP · São Paulo",
+   "unidade": "OrthoDontic · São Miguel Paulista",
+   "porque": "o ritmo desta loja não é comparável: a leitura de avaliações foi truncada"
+  }
+ ],
+ "sem_base_total": 4,
  "cabecalho": {
   "sobrelinha": "DA REDE INTEIRA",
   "titulo": "Quem está muito longe do que os semelhantes conseguem",

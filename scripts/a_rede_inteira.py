@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 """
-a_rede_inteira.py — as 374 unidades, não as 10 medidas.
+a_rede_inteira.py — a rede inteira, não só as unidades medidas.
 
 Por que existe
 --------------
 A crítica mais dura que o produto recebeu foi justa: "uma fila que ignora
 97,3% da rede não prioriza a rede". Toda tela falava de 10 unidades.
 
-A varredura completa continua sendo 13 praças — é ela que dá voz do paciente,
-concorrência e portas de busca. Mas a ficha pública das 374 saiu por uma
+A varredura completa cobre só parte das praças — é ela que dá voz do
+paciente, concorrência e portas de busca. Mas a ficha pública de TODAS saiu
+por uma
 chamada por unidade na API do Google, e ela responde o que a franqueadora
 pergunta primeiro: **onde a marca está mal na rua, agora.**
 
@@ -184,6 +185,16 @@ def monta():
                 contra=["a ficha é retrato do dia da coleta; se alguém "
                         "corrigiu ontem, o portal só vê na próxima"]))
 
+    # QUANTAS PRAÇAS A VARREDURA COMPLETA COBRE — contado, não escrito.
+    # Estava "13 praças" no texto enquanto a identidade já tinha 17.
+    _of = jsonl("unidades_rede")
+    _dia_of = max((r.get("snapshot_date") or "" for r in _of), default=None)
+    _na_lista_oficial = sum(1 for r in _of if r.get("snapshot_date") == _dia_of)
+
+    _pracas_varridas = {r.get("praca_id") for r in jsonl("categoria")
+                        if r.get("praca_id")}
+    _n_varridas = conta(len(_pracas_varridas), "praça", "praças")
+
     por_uf = defaultdict(lambda: {"unidades": 0, "notas": []})
     for x in ok:
         d = por_uf[x["uf"]]
@@ -196,9 +207,19 @@ def monta():
         "o_que_e": "A ficha pública de cada unidade da rede, pela API do Google. "
                    "Uma chamada por unidade.",
         "o_que_nao_e": "Não é ritmo nem voz do paciente — para isso é a varredura "
-                       "completa, que hoje cobre 13 praças. Aqui é retrato: como a "
+                       f"completa, que hoje cobre {_n_varridas}. Aqui é retrato: como a "
                        "unidade aparece agora para quem procura.",
-        "na_lista_oficial": len(F),
+        # O TAMANHO DA REDE SAI DA LISTA OFICIAL, NÃO DA VARREDURA.
+        # Aqui dizia 374 — o número de FICHAS lidas — enquanto a lista
+        # oficial do site tem 373 e as outras duas telas diziam 373. A
+        # varredura de fichas repete linha (Guaíba e Vitória da Conquista
+        # aparecem duas vezes), então contar ficha não conta unidade.
+        "na_lista_oficial": _na_lista_oficial,
+        "fichas_lidas": len(F),
+        "porque_duas_contagens": (
+            "a lista oficial do site é o cadastro; a varredura de fichas é o "
+            "enriquecimento, e ela pode repetir ou faltar linha. Quando os "
+            "dois números divergem, o cadastro manda."),
         "confirmadas": len(ok),
         "nao_confirmadas": len(nao),
         "por_que_nao_confirma": "a busca só aceita ficha cujo NOME contenha "

@@ -703,13 +703,39 @@
  "hipoteses_testadas_total": 4,
  "conclusao": {
   "t": "A satisfação é igual nas 45 lojas acompanhadas; a constância não é",
-  "leitura": "Quatro explicações confortáveis foram testadas e nenhuma separa quem sustenta de quem para: satisfação, idade, resposta e nome citado são iguais nos dois grupos. A praça-controle é Cuiabá: três lojas com a mesma marca, o mesmo material e a mesma tabela na mesma cidade — uma sustenta há 26 meses, duas estão paradas. O que sobra, por eliminação, é a rotina de balcão: pedir ou não pedir a avaliação ao paciente satisfeito. É a variável que nenhuma fonte pública mede diretamente — e a única que explica o padrão.",
+  "leitura": "Quatro explicações confortáveis foram testadas e nenhuma separa quem sustenta de quem para: satisfação, idade, resposta e nome citado são iguais nos dois grupos. A praça-controle é Cuiabá: três lojas com a mesma marca, o mesmo material e a mesma tabela na mesma cidade — uma sustenta há 26 meses, duas estão paradas. O que sobra entre as explicações TESTADAS é a rotina de balcão: pedir ou não pedir a avaliação ao paciente satisfeito. Nenhuma fonte pública mede essa rotina diretamente, e a eliminação não cobre tudo — veja ao lado o que não foi testado.",
+  "o_que_nao_foi_testado": [
+   "ponto comercial: rua, fluxo de pedestre, estacionamento",
+   "verba de mídia local, que cada franqueado decide sozinho",
+   "rotatividade de ortodontista e tamanho da equipe",
+   "preço praticado e política de parcelamento da unidade"
+  ],
+  "porque_nao_foi_testado": "nenhuma fonte pública mede nenhuma destas — são o teto do produto, não pendência de coleta",
+  "carimbo": {
+   "natureza": "inferencia",
+   "confianca": "baixa",
+   "medido": true,
+   "amostra": 45,
+   "janela_dias": null,
+   "medicoes": null,
+   "fonte": null,
+   "a_favor": [
+    "quatro explicações alternativas foram testadas e caíram",
+    "Cuiabá é praça-controle: três lojas iguais no papel, resultados opostos"
+   ],
+   "contra": [
+    "eliminação não prova o que sobra: quatro explicações não testadas continuam de pé",
+    "a rotina de balcão não é medida por nenhuma fonte pública"
+   ],
+   "o_que_aumentaria": "acompanhar uma loja que MUDE a rotina e ver se o ritmo muda depois — é o que o livro de ações faz",
+   "procedencia": "medido em 45 lojas acompanhadas"
+  },
   "consequencia": "A intervenção mais barata do portal: a rotina de pedido é copiável de loja para loja da MESMA cidade, sem verba, sem agência e sem depender de praça. O manual está a uma visita de distância — na loja irmã.",
-  "controle": "MT · Cuiabá: Centro Norte 26 meses · Fernando Corrêa 0 · Dom Bosco 2. PR · Londrina: Souza Naves 9 · Centro 2."
+  "controle": "MT · Cuiabá: Centro Norte 26 · Centro Sul 2 · Pico do Amor 0. PR · Curitiba: Av. Mal. Floriano Peixoto 22 · Portão 7 · R. XV de Novembro 5 · Galeria Tijucas - Av. Luiz Xavier 0 · Edifício Odin do Amaral - R. Mal. Deodoro 0. RS · Porto Alegre: Av. Borges de Medeiros 16 · R. Vig. José Inácio 3 · R. dos Andradas 3 · R. Gen. Vitorino 3 · Rio Branco 3 · Cristo Redentor 2 · Cavalhada 2."
  },
  "o_que_isso_nao_ve": [
   "A rotina de balcão em si — nenhuma fonte pública grava se a recepção pede avaliação. A conclusão é por eliminação, não por observação direta.",
-  "Dez lojas é comparação controlada, não estatística. O padrão vale como hipótese forte para as 374, não como lei."
+  "45 lojas acompanhadas são comparação controlada, não estatística. O padrão vale como hipótese forte para as 373 unidades da rede, não como lei."
  ],
  "cabecalho": {
   "sobrelinha": "DA REDE INTEIRA",

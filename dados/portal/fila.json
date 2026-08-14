@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-13",
+ "gerado_em": "2026-08-14",
  "corte": "2026-08-13",
  "pergunta": "Em quais unidades a OrthoDontic está perdendo atenção local, para qual concorrente, e onde intervir primeiro neste mês?",
  "o_que_e_atencao": "participação observável em busca, avaliações, publicidade e atividade digital. Não é faturamento — nenhum número desta tela vem de dado interno da rede.",
@@ -124,7 +124,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 14,
     "vence_em": "2026-08-27"
    }
@@ -142,8 +142,8 @@
    "meses": 0,
    "nota": 3,
    "avaliacoes": 22,
-   "posicao": 4,
-   "de": 4,
+   "posicao": 3,
+   "de": 3,
    "quem_avanca": null,
    "gatilhos": [
     {
@@ -159,10 +159,10 @@
      "peso": 20,
      "titulo": "Está na metade de baixo da própria praça",
      "chave": "posicao",
-     "fato": "4º lugar de 4 clínicas medidas na praça",
+     "fato": "3º lugar de 3 clínicas medidas na praça",
      "fonte": "dados/portal/rede_cruzamento.json",
-     "valor": 4,
-     "base": 4
+     "valor": 3,
+     "base": 3
     },
     {
      "peso": 15,
@@ -194,79 +194,9 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
-    "dias_aberta": 0,
-    "prazo_dias": 14,
-    "vence_em": "2026-08-27"
-   }
-  },
-  {
-   "local_id": "ortho_soro_jardim_faculdade",
-   "praca_id": "sorocaba",
-   "rotulo": "SP · Sorocaba",
-   "unidade": "OrthoDontic · Jardim Faculdade",
-   "unidade_curta": "Jardim Faculdade",
-   "idade_meses": 108,
-   "urgencia": 80,
-   "faixa": "vermelha",
-   "ritmo": 1.0,
-   "meses": 1,
-   "nota": 4.3,
-   "avaliacoes": 111,
-   "posicao": 3,
-   "de": 3,
-   "quem_avanca": null,
-   "gatilhos": [
-    {
-     "peso": 30,
-     "titulo": "O contador de avaliações parou",
-     "chave": "parada",
-     "fato": "apenas 1 mês seguido com movimento acima do típico da própria unidade; o ritmo medido é 1.0 avaliações/mês",
-     "fonte": "dados/serie/reviews.jsonl",
-     "valor": 111,
-     "base": 1
-    },
-    {
-     "peso": 20,
-     "titulo": "Está na metade de baixo da própria praça",
-     "chave": "posicao",
-     "fato": "3º lugar de 3 clínicas medidas na praça",
-     "fonte": "dados/portal/rede_cruzamento.json",
-     "valor": 3,
-     "base": 3
-    },
-    {
-     "peso": 15,
-     "titulo": "Nota abaixo da mediana da praça",
-     "chave": "nota",
-     "fato": "nota 4.3 contra mediana 4.9 das 17 clínicas medidas na praça",
-     "fonte": "dados/serie/places.jsonl",
-     "valor": 4.3,
-     "base": 4.9
-    },
-    {
-     "peso": 15,
-     "titulo": "Silêncio publicitário com leilão cheio",
-     "chave": "silencio",
-     "fato": "125 anúncios no ar de 47 anunciantes, e nenhum é da rede",
-     "fonte": "dados/serie/captacao.jsonl",
-     "valor": 0,
-     "base": 47
-    }
-   ],
-   "acao": {
-    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
-    "prazo": "14 dias",
-    "dono": "franqueado",
-    "custo": "sem custo de mídia",
-    "por_causa_de": "parada"
-   },
-   "pos": 3,
-   "tarefa": {
-    "status": "aberta",
-    "aberta_em": "2026-08-12",
     "dias_aberta": 1,
     "prazo_dias": 14,
-    "vence_em": "2026-08-26"
+    "vence_em": "2026-08-27"
    }
   },
   {
@@ -327,11 +257,11 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 4,
+   "pos": 3,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 14,
     "vence_em": "2026-08-27"
    }
@@ -394,11 +324,11 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 5,
+   "pos": 4,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 1,
+    "dias_aberta": 2,
     "prazo_dias": 14,
     "vence_em": "2026-08-26"
    }
@@ -455,11 +385,11 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 6,
+   "pos": 5,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 14,
     "vence_em": "2026-08-27"
    }
@@ -516,11 +446,11 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 7,
+   "pos": 6,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
-    "dias_aberta": 3,
+    "dias_aberta": 4,
     "prazo_dias": 14,
     "vence_em": "2026-08-24"
    }
@@ -577,72 +507,11 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 8,
+   "pos": 7,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 1,
-    "prazo_dias": 14,
-    "vence_em": "2026-08-26"
-   }
-  },
-  {
-   "local_id": "ortho_gyn_st_oeste",
-   "praca_id": "goiania",
-   "rotulo": "GO · Goiânia",
-   "unidade": "OrthoDontic · St. Oeste",
-   "unidade_curta": "St. Oeste",
-   "idade_meses": 128,
-   "urgencia": 65,
-   "faixa": "vermelha",
-   "ritmo": 2.2,
-   "meses": 0,
-   "nota": 4.2,
-   "avaliacoes": 270,
-   "posicao": 4,
-   "de": 4,
-   "quem_avanca": null,
-   "gatilhos": [
-    {
-     "peso": 30,
-     "titulo": "O contador de avaliações parou",
-     "chave": "parada",
-     "fato": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 2.2 avaliações/mês",
-     "fonte": "dados/serie/reviews.jsonl",
-     "valor": 270,
-     "base": 0
-    },
-    {
-     "peso": 20,
-     "titulo": "Está na metade de baixo da própria praça",
-     "chave": "posicao",
-     "fato": "4º lugar de 4 clínicas medidas na praça",
-     "fonte": "dados/portal/rede_cruzamento.json",
-     "valor": 4,
-     "base": 4
-    },
-    {
-     "peso": 15,
-     "titulo": "Nota abaixo da mediana da praça",
-     "chave": "nota",
-     "fato": "nota 4.2 contra mediana 4.9 das 18 clínicas medidas na praça",
-     "fonte": "dados/serie/places.jsonl",
-     "valor": 4.2,
-     "base": 4.9
-    }
-   ],
-   "acao": {
-    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
-    "prazo": "14 dias",
-    "dono": "franqueado",
-    "custo": "sem custo de mídia",
-    "por_causa_de": "parada"
-   },
-   "pos": 9,
-   "tarefa": {
-    "status": "aberta",
-    "aberta_em": "2026-08-12",
-    "dias_aberta": 1,
+    "dias_aberta": 2,
     "prazo_dias": 14,
     "vence_em": "2026-08-26"
    }
@@ -699,13 +568,74 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 10,
+   "pos": 8,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 14,
     "vence_em": "2026-08-27"
+   }
+  },
+  {
+   "local_id": "ortho_gyn_st_oeste",
+   "praca_id": "goiania",
+   "rotulo": "GO · Goiânia",
+   "unidade": "OrthoDontic · St. Oeste",
+   "unidade_curta": "St. Oeste",
+   "idade_meses": 128,
+   "urgencia": 65,
+   "faixa": "vermelha",
+   "ritmo": 2.2,
+   "meses": 0,
+   "nota": 4.2,
+   "avaliacoes": 270,
+   "posicao": 3,
+   "de": 3,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 30,
+     "titulo": "O contador de avaliações parou",
+     "chave": "parada",
+     "fato": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 2.2 avaliações/mês",
+     "fonte": "dados/serie/reviews.jsonl",
+     "valor": 270,
+     "base": 0
+    },
+    {
+     "peso": 20,
+     "titulo": "Está na metade de baixo da própria praça",
+     "chave": "posicao",
+     "fato": "3º lugar de 3 clínicas medidas na praça",
+     "fonte": "dados/portal/rede_cruzamento.json",
+     "valor": 3,
+     "base": 3
+    },
+    {
+     "peso": 15,
+     "titulo": "Nota abaixo da mediana da praça",
+     "chave": "nota",
+     "fato": "nota 4.2 contra mediana 4.9 das 18 clínicas medidas na praça",
+     "fonte": "dados/serie/places.jsonl",
+     "valor": 4.2,
+     "base": 4.9
+    }
+   ],
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "pos": 9,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 2,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-26"
    }
   },
   {
@@ -766,13 +696,74 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "rival"
    },
-   "pos": 11,
+   "pos": 10,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": null,
     "vence_em": null
+   }
+  },
+  {
+   "local_id": "ortho_soro_jardim_faculdade",
+   "praca_id": "sorocaba",
+   "rotulo": "SP · Sorocaba",
+   "unidade": "OrthoDontic · Jardim Faculdade",
+   "unidade_curta": "Jardim Faculdade",
+   "idade_meses": 108,
+   "urgencia": 60,
+   "faixa": "vermelha",
+   "ritmo": 1.0,
+   "meses": 1,
+   "nota": 4.3,
+   "avaliacoes": 111,
+   "posicao": 2,
+   "de": 2,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 30,
+     "titulo": "O contador de avaliações parou",
+     "chave": "parada",
+     "fato": "apenas 1 mês seguido com movimento acima do típico da própria unidade; o ritmo medido é 1.0 avaliações/mês",
+     "fonte": "dados/serie/reviews.jsonl",
+     "valor": 111,
+     "base": 1
+    },
+    {
+     "peso": 15,
+     "titulo": "Nota abaixo da mediana da praça",
+     "chave": "nota",
+     "fato": "nota 4.3 contra mediana 4.9 das 17 clínicas medidas na praça",
+     "fonte": "dados/serie/places.jsonl",
+     "valor": 4.3,
+     "base": 4.9
+    },
+    {
+     "peso": 15,
+     "titulo": "Silêncio publicitário com leilão cheio",
+     "chave": "silencio",
+     "fato": "125 anúncios no ar de 47 anunciantes, e nenhum é da rede",
+     "fonte": "dados/serie/captacao.jsonl",
+     "valor": 0,
+     "base": 47
+    }
+   ],
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
+   "pos": 11,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 2,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-26"
    }
   },
   {
@@ -788,8 +779,8 @@
    "meses": 0,
    "nota": 4.2,
    "avaliacoes": 61,
-   "posicao": 2,
-   "de": 2,
+   "posicao": 1,
+   "de": 1,
    "quem_avanca": null,
    "gatilhos": [
     {
@@ -831,7 +822,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 14,
     "vence_em": "2026-08-27"
    }
@@ -849,8 +840,8 @@
    "meses": 0,
    "nota": 3.7,
    "avaliacoes": 127,
-   "posicao": 1,
-   "de": 2,
+   "posicao": null,
+   "de": null,
    "quem_avanca": null,
    "gatilhos": [
     {
@@ -892,7 +883,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 14,
     "vence_em": "2026-08-27"
    }
@@ -944,7 +935,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
-    "dias_aberta": 3,
+    "dias_aberta": 4,
     "prazo_dias": 14,
     "vence_em": "2026-08-24"
    }
@@ -996,7 +987,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 14,
     "vence_em": "2026-08-27"
    }
@@ -1048,59 +1039,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
-    "dias_aberta": 3,
-    "prazo_dias": 14,
-    "vence_em": "2026-08-24"
-   }
-  },
-  {
-   "local_id": "ortho_mafra",
-   "praca_id": "mafra",
-   "rotulo": "SC · Mafra",
-   "unidade": "OrthoDontic",
-   "unidade_curta": null,
-   "idade_meses": 67,
-   "urgencia": 50,
-   "faixa": "amarela",
-   "ritmo": 2.4,
-   "meses": 0,
-   "nota": 4.9,
-   "avaliacoes": 155,
-   "posicao": 6,
-   "de": 11,
-   "quem_avanca": null,
-   "gatilhos": [
-    {
-     "peso": 30,
-     "titulo": "O contador de avaliações parou",
-     "chave": "parada",
-     "fato": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 2.4 avaliações/mês",
-     "fonte": "dados/serie/reviews.jsonl",
-     "valor": 155,
-     "base": 0
-    },
-    {
-     "peso": 20,
-     "titulo": "Está na metade de baixo da própria praça",
-     "chave": "posicao",
-     "fato": "6º lugar de 11 clínicas medidas na praça",
-     "fonte": "dados/portal/rede_cruzamento.json",
-     "valor": 6,
-     "base": 11
-    }
-   ],
-   "acao": {
-    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
-    "prazo": "14 dias",
-    "dono": "franqueado",
-    "custo": "sem custo de mídia",
-    "por_causa_de": "parada"
-   },
-   "pos": 17,
-   "tarefa": {
-    "status": "aberta",
-    "aberta_em": "2026-08-10",
-    "dias_aberta": 3,
+    "dias_aberta": 4,
     "prazo_dias": 14,
     "vence_em": "2026-08-24"
    }
@@ -1148,11 +1087,11 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 18,
+   "pos": 17,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 14,
     "vence_em": "2026-08-27"
    }
@@ -1170,8 +1109,8 @@
    "meses": 0,
    "nota": 4.7,
    "avaliacoes": 152,
-   "posicao": 3,
-   "de": 4,
+   "posicao": 2,
+   "de": 3,
    "quem_avanca": null,
    "gatilhos": [
     {
@@ -1187,10 +1126,10 @@
      "peso": 20,
      "titulo": "Está na metade de baixo da própria praça",
      "chave": "posicao",
-     "fato": "3º lugar de 4 clínicas medidas na praça",
+     "fato": "2º lugar de 3 clínicas medidas na praça",
      "fonte": "dados/portal/rede_cruzamento.json",
-     "valor": 3,
-     "base": 4
+     "valor": 2,
+     "base": 3
     }
    ],
    "acao": {
@@ -1200,11 +1139,11 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 19,
+   "pos": 18,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 1,
+    "dias_aberta": 2,
     "prazo_dias": 14,
     "vence_em": "2026-08-26"
    }
@@ -1222,18 +1161,18 @@
    "meses": 5,
    "nota": 4.1,
    "avaliacoes": 108,
-   "posicao": 3,
-   "de": 4,
+   "posicao": 2,
+   "de": 3,
    "quem_avanca": null,
    "gatilhos": [
     {
      "peso": 20,
      "titulo": "Está na metade de baixo da própria praça",
      "chave": "posicao",
-     "fato": "3º lugar de 4 clínicas medidas na praça",
+     "fato": "2º lugar de 3 clínicas medidas na praça",
      "fonte": "dados/portal/rede_cruzamento.json",
-     "valor": 3,
-     "base": 4
+     "valor": 2,
+     "base": 3
     },
     {
      "peso": 15,
@@ -1261,74 +1200,13 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "posicao"
    },
-   "pos": 20,
+   "pos": 19,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
-    "dias_aberta": 0,
-    "prazo_dias": 7,
-    "vence_em": "2026-08-20"
-   }
-  },
-  {
-   "local_id": "ortho_soro_centro",
-   "praca_id": "sorocaba",
-   "rotulo": "SP · Sorocaba",
-   "unidade": "OrthoDontic · Centro",
-   "unidade_curta": "Centro",
-   "idade_meses": 92,
-   "urgencia": 50,
-   "faixa": "amarela",
-   "ritmo": 1.3,
-   "meses": 3,
-   "nota": 4.5,
-   "avaliacoes": 116,
-   "posicao": 2,
-   "de": 3,
-   "quem_avanca": null,
-   "gatilhos": [
-    {
-     "peso": 20,
-     "titulo": "Está na metade de baixo da própria praça",
-     "chave": "posicao",
-     "fato": "2º lugar de 3 clínicas medidas na praça",
-     "fonte": "dados/portal/rede_cruzamento.json",
-     "valor": 2,
-     "base": 3
-    },
-    {
-     "peso": 15,
-     "titulo": "Nota abaixo da mediana da praça",
-     "chave": "nota",
-     "fato": "nota 4.5 contra mediana 4.9 das 17 clínicas medidas na praça",
-     "fonte": "dados/serie/places.jsonl",
-     "valor": 4.5,
-     "base": 4.9
-    },
-    {
-     "peso": 15,
-     "titulo": "Silêncio publicitário com leilão cheio",
-     "chave": "silencio",
-     "fato": "125 anúncios no ar de 47 anunciantes, e nenhum é da rede",
-     "fonte": "dados/serie/captacao.jsonl",
-     "valor": 0,
-     "base": 47
-    }
-   ],
-   "acao": {
-    "o_que": "Auditar a ficha do Google — foto, horário, serviços, resposta a avaliação",
-    "prazo": "7 dias",
-    "dono": "franqueado",
-    "custo": "sem custo de mídia",
-    "por_causa_de": "posicao"
-   },
-   "pos": 21,
-   "tarefa": {
-    "status": "aberta",
-    "aberta_em": "2026-08-12",
     "dias_aberta": 1,
     "prazo_dias": 7,
-    "vence_em": "2026-08-19"
+    "vence_em": "2026-08-20"
    }
   },
   {
@@ -1380,11 +1258,11 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "rival"
    },
-   "pos": 22,
+   "pos": 20,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": null,
     "vence_em": null
    }
@@ -1438,11 +1316,11 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "rival"
    },
-   "pos": 23,
+   "pos": 21,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": null,
     "vence_em": null
    }
@@ -1496,11 +1374,11 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "rival"
    },
-   "pos": 24,
+   "pos": 22,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": null,
     "vence_em": null
    }
@@ -1518,8 +1396,8 @@
    "meses": 0,
    "nota": 4.7,
    "avaliacoes": 189,
-   "posicao": 2,
-   "de": 4,
+   "posicao": 1,
+   "de": 3,
    "quem_avanca": null,
    "gatilhos": [
     {
@@ -1548,11 +1426,11 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 25,
+   "pos": 23,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 14,
     "vence_em": "2026-08-27"
    }
@@ -1606,11 +1484,11 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "rival"
    },
-   "pos": 26,
+   "pos": 24,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": null,
     "vence_em": null
    }
@@ -1658,11 +1536,11 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "posicao"
    },
-   "pos": 27,
+   "pos": 25,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 1,
+    "dias_aberta": 2,
     "prazo_dias": 7,
     "vence_em": "2026-08-19"
    }
@@ -1680,8 +1558,8 @@
    "meses": 2,
    "nota": 4.9,
    "avaliacoes": 161,
-   "posicao": 1,
-   "de": 3,
+   "posicao": null,
+   "de": null,
    "quem_avanca": null,
    "gatilhos": [
     {
@@ -1710,11 +1588,11 @@
     "custo": "verba de abertura",
     "por_causa_de": "nao_engatou"
    },
-   "pos": 28,
+   "pos": 26,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 1,
+    "dias_aberta": 2,
     "prazo_dias": 60,
     "vence_em": "2026-10-11"
    }
@@ -1753,40 +1631,40 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 29,
+   "pos": 27,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 14,
     "vence_em": "2026-08-27"
    }
   },
   {
-   "local_id": "ortho_gyn_st_morada_do_sol",
-   "praca_id": "goiania",
-   "rotulo": "GO · Goiânia",
-   "unidade": "OrthoDontic · St. Morada do Sol",
-   "unidade_curta": "St. Morada do Sol",
-   "idade_meses": 27,
+   "local_id": "ortho_mafra",
+   "praca_id": "mafra",
+   "rotulo": "SC · Mafra",
+   "unidade": "OrthoDontic",
+   "unidade_curta": null,
+   "idade_meses": 67,
    "urgencia": 30,
    "faixa": "amarela",
-   "ritmo": 4.4,
-   "meses": 1,
-   "nota": 5,
-   "avaliacoes": 124,
-   "posicao": 2,
-   "de": 4,
+   "ritmo": 2.4,
+   "meses": 0,
+   "nota": 4.9,
+   "avaliacoes": 155,
+   "posicao": 5,
+   "de": 10,
    "quem_avanca": null,
    "gatilhos": [
     {
      "peso": 30,
      "titulo": "O contador de avaliações parou",
      "chave": "parada",
-     "fato": "apenas 1 mês seguido com movimento acima do típico da própria unidade; o ritmo medido é 4.4 avaliações/mês",
+     "fato": "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 2.4 avaliações/mês",
      "fonte": "dados/serie/reviews.jsonl",
-     "valor": 124,
-     "base": 1
+     "valor": 155,
+     "base": 0
     }
    ],
    "acao": {
@@ -1796,13 +1674,13 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 30,
+   "pos": 28,
    "tarefa": {
     "status": "aberta",
-    "aberta_em": "2026-08-12",
-    "dias_aberta": 1,
+    "aberta_em": "2026-08-10",
+    "dias_aberta": 4,
     "prazo_dias": 14,
-    "vence_em": "2026-08-26"
+    "vence_em": "2026-08-24"
    }
   },
   {
@@ -1839,11 +1717,11 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 31,
+   "pos": 29,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 14,
     "vence_em": "2026-08-27"
    }
@@ -1882,11 +1760,11 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
-   "pos": 32,
+   "pos": 30,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
-    "dias_aberta": 3,
+    "dias_aberta": 4,
     "prazo_dias": 14,
     "vence_em": "2026-08-24"
    }
@@ -1897,7 +1775,7 @@
    "rotulo": "SC · Joinville",
    "unidade": "OrthoDontic · Aventureiro",
    "unidade_curta": "Aventureiro",
-   "idade_meses": 28,
+   "idade_meses": 29,
    "urgencia": 30,
    "faixa": "amarela",
    "ritmo": 6.0,
@@ -1925,11 +1803,106 @@
     "custo": "sem custo de mídia",
     "por_causa_de": "parada"
    },
+   "pos": 31,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 2,
+    "prazo_dias": 14,
+    "vence_em": "2026-08-26"
+   }
+  },
+  {
+   "local_id": "ortho_soro_centro",
+   "praca_id": "sorocaba",
+   "rotulo": "SP · Sorocaba",
+   "unidade": "OrthoDontic · Centro",
+   "unidade_curta": "Centro",
+   "idade_meses": 92,
+   "urgencia": 30,
+   "faixa": "amarela",
+   "ritmo": 1.3,
+   "meses": 3,
+   "nota": 4.5,
+   "avaliacoes": 116,
+   "posicao": 1,
+   "de": 2,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 15,
+     "titulo": "Nota abaixo da mediana da praça",
+     "chave": "nota",
+     "fato": "nota 4.5 contra mediana 4.9 das 17 clínicas medidas na praça",
+     "fonte": "dados/serie/places.jsonl",
+     "valor": 4.5,
+     "base": 4.9
+    },
+    {
+     "peso": 15,
+     "titulo": "Silêncio publicitário com leilão cheio",
+     "chave": "silencio",
+     "fato": "125 anúncios no ar de 47 anunciantes, e nenhum é da rede",
+     "fonte": "dados/serie/captacao.jsonl",
+     "valor": 0,
+     "base": 47
+    }
+   ],
+   "acao": {
+    "o_que": "Ler as avaliações negativas do trimestre com o franqueado e responder todas",
+    "prazo": "10 dias",
+    "dono": "consultor de campo",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "nota"
+   },
+   "pos": 32,
+   "tarefa": {
+    "status": "aberta",
+    "aberta_em": "2026-08-12",
+    "dias_aberta": 2,
+    "prazo_dias": 10,
+    "vence_em": "2026-08-22"
+   }
+  },
+  {
+   "local_id": "ortho_gyn_st_morada_do_sol",
+   "praca_id": "goiania",
+   "rotulo": "GO · Goiânia",
+   "unidade": "OrthoDontic · St. Morada do Sol",
+   "unidade_curta": "St. Morada do Sol",
+   "idade_meses": 27,
+   "urgencia": 30,
+   "faixa": "amarela",
+   "ritmo": 4.4,
+   "meses": 1,
+   "nota": 5,
+   "avaliacoes": 124,
+   "posicao": null,
+   "de": null,
+   "quem_avanca": null,
+   "gatilhos": [
+    {
+     "peso": 30,
+     "titulo": "O contador de avaliações parou",
+     "chave": "parada",
+     "fato": "apenas 1 mês seguido com movimento acima do típico da própria unidade; o ritmo medido é 4.4 avaliações/mês",
+     "fonte": "dados/serie/reviews.jsonl",
+     "valor": 124,
+     "base": 1
+    }
+   ],
+   "acao": {
+    "o_que": "Religar a rotina de pedido de avaliação no fim do atendimento",
+    "prazo": "14 dias",
+    "dono": "franqueado",
+    "custo": "sem custo de mídia",
+    "por_causa_de": "parada"
+   },
    "pos": 33,
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 1,
+    "dias_aberta": 2,
     "prazo_dias": 14,
     "vence_em": "2026-08-26"
    }
@@ -1978,7 +1951,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": null,
     "vence_em": null
    }
@@ -2021,7 +1994,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 7,
     "vence_em": "2026-08-20"
    }
@@ -2064,7 +2037,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
-    "dias_aberta": 3,
+    "dias_aberta": 4,
     "prazo_dias": 10,
     "vence_em": "2026-08-20"
    }
@@ -2107,7 +2080,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 30,
     "vence_em": "2026-09-12"
    }
@@ -2150,7 +2123,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
-    "dias_aberta": 3,
+    "dias_aberta": 4,
     "prazo_dias": 10,
     "vence_em": "2026-08-20"
    }
@@ -2193,7 +2166,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 30,
     "vence_em": "2026-09-12"
    }
@@ -2212,7 +2185,7 @@
    "nota": 4.6,
    "avaliacoes": 268,
    "posicao": 1,
-   "de": 4,
+   "de": 3,
    "quem_avanca": null,
    "gatilhos": [
     {
@@ -2236,7 +2209,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 1,
+    "dias_aberta": 2,
     "prazo_dias": 10,
     "vence_em": "2026-08-22"
    }
@@ -2247,7 +2220,7 @@
    "rotulo": "TO · Palmas",
    "unidade": "OrthoDontic",
    "unidade_curta": null,
-   "idade_meses": 39,
+   "idade_meses": 40,
    "urgencia": 15,
    "faixa": "verde",
    "ritmo": 7.8,
@@ -2279,7 +2252,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-10",
-    "dias_aberta": 3,
+    "dias_aberta": 4,
     "prazo_dias": 30,
     "vence_em": "2026-09-09"
    }
@@ -2322,7 +2295,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 30,
     "vence_em": "2026-09-12"
    }
@@ -2340,8 +2313,8 @@
    "meses": 4,
    "nota": 4.9,
    "avaliacoes": 161,
-   "posicao": 1,
-   "de": 4,
+   "posicao": null,
+   "de": null,
    "quem_avanca": null,
    "gatilhos": [
     {
@@ -2365,7 +2338,7 @@
    "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-13",
-    "dias_aberta": 0,
+    "dias_aberta": 1,
     "prazo_dias": 30,
     "vence_em": "2026-09-12"
    }
@@ -2397,7 +2370,7 @@
    "rotulo": "MT · Cuiabá",
    "unidade": "OrthoDontic · Centro Norte",
    "unidade_curta": "Centro Norte",
-   "idade_meses": 25,
+   "idade_meses": 26,
    "urgencia": 0,
    "faixa": "verde",
    "ritmo": 47.8,
@@ -2416,17 +2389,17 @@
  "tarefas_vencidas": 0,
  "tarefas_resolvidas": [],
  "resolvidas_total": 0,
- "resolucoes_descartadas": 22,
+ "resolucoes_descartadas": 25,
  "porque_descartadas": [
   {
-   "motivo": "abriu e saiu na mesma data — é releitura da mesma rodada, não resultado",
-   "quantas": 22
+   "motivo": "o alerta é anterior ao registro do número que o abriu — não dá para comparar",
+   "quantas": 25
   }
  ],
- "frase_resolvidas": "0 alertas fechados com prova · 22 sumiram sem prova de resultado",
+ "frase_resolvidas": "0 alertas fechados com prova · 25 sumiram sem prova de resultado",
  "o_que_conta_como_resolvido": "o alerta esteve ativo num dia anterior, a base de comparação é a mesma, e o número que o abriu se moveu na direção certa. Sumir da lista não basta — ranking que muda de tamanho e amostra que engorda fazem alerta sumir sem nada ter melhorado.",
  "o_que_isso_nao_ve": [
-  "A rede tem 374 unidades e esta fila mede 45. É 12% da rede.",
+  "A rede tem 373 unidades e esta fila mede 45. É 12% da rede.",
   "Nenhum contrato, lead, agendamento ou receita entra aqui. A fila diz onde a atenção está escorrendo, não quanto isso custou.",
   "O status da tarefa (aberta → vencida → resolvida) vem do próprio dado: 'resolvida' é gatilho que sumiu na medição seguinte. Ninguém de dentro confirma nada — e é por isso que vale."
  ],

@@ -503,3 +503,29 @@ padrões → caixa → padrao → build. Períodos curtos são declarados na tel
   praça onde a rede já está ou por pedido direto. Escrever "50 → 13"
   sugeriria subconjunto, e não é: `pipeline_expansao.py` declara os dois
   caminhos.
+- **LER EXATAMENTE O TETO DO COLETOR É TRUNCAGEM, E O GUARDA NÃO VIA.** A
+  regra pedia razão < 0,75 **E** buraco > 50 avaliações. São Miguel Paulista
+  leu 120 de 161 — 120 é o `--max-reviews` — em 126 dias, e saiu publicada
+  como **a maior anomalia positiva da rede**: 29,0 avaliações/mês contra 1,0
+  das semelhantes, com a recomendação de virar prática. 120/161 = 0,745
+  passava no primeiro corte; 161−120 = 41 não passava no segundo. Agora
+  `cruzamento.TETOS_DO_COLETOR` marca truncada quem bate no teto com o
+  Google mostrando mais — bater no teto é o coletor parando por limite, não
+  a loja acabando de ser lida.
+- **LIMIAR QUE NUNCA DISPARA É CÓDIGO MORTO COM CARA DE MÉTODO.**
+  `de_quem_e_a_decisao` exigia perder em 44 das 45 lojas; o pior eixo perde
+  em 32, então os oito eixos saíam "unidade" — enquanto a home dizia, sobre
+  o MESMO eixo, "unidade nenhuma escolhe isso sozinha". O corte agora é
+  proporção (60%) e vai PUBLICADO ao lado do veredito.
+- **A HOME NÃO PODE SER A AGENDA COPIADA.** Cinco dos catorze cartões eram
+  os cinco primeiros itens da agenda, com título, ação e destinatário
+  idênticos — enquanto o `o_que_nao_e` da própria tela dizia "nada aqui se
+  repete lá dentro". O que sobe para a home é o PADRÃO (quantas lojas, em
+  quantos estados) mais os cruzamentos que só existem lá: anomalia contra
+  os gêmeos, posição vaga repetida em várias praças.
+- **ELIMINAÇÃO NÃO PROVA O QUE SOBRA.** `padroes` dizia que a rotina de
+  balcão "é a única que explica o padrão", e o card da home repetia como
+  fato. Quatro hipóteses caíram; ponto comercial, verba local, rotatividade
+  e preço nunca foram testados — e nenhuma fonte pública os mede. A
+  conclusão agora é carimbada como inferência, com a lista do que NÃO foi
+  eliminado ao lado.

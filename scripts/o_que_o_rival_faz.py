@@ -48,6 +48,10 @@ PORTAL = RAIZ/"dados"/"portal"
 MIN_AVALIACOES = 60      # abaixo disso a clínica não define padrão
 MIN_DIFERENCA = 1.4      # razão mínima para chamar de vantagem, não de ruído
 TETO_NA_REDE = 6         # quantas lojas a leitura de REDE lista por eixo
+# A partir de que proporção de lojas o buraco deixa de ser da unidade e
+# passa a ser da franqueadora. É a frase que faz a diretoria virar
+# treinamento em vez de visita, e ela precisa de um corte publicável.
+ESCALA_PARA_A_REDE = 0.6
 
 # Categorias do Google que NÃO disputam paciente de aparelho.
 FORA = re.compile(r"centro m[ée]dico|m[ée]dico|hospital|laborat[óo]rio|"
@@ -282,8 +286,24 @@ def main():
             "piores_total": len(onde),
             "frase_ver_todas": (f"ver as {len(onde)} lojas"
                                 if len(onde) > len(piores) else None),
-            "de_quem_e_a_decisao": ("franqueadora" if len(onde) >= len(saida)-1
+            # O DEGRAU QUE ESCALA PARA A FRANQUEADORA ERA CÓDIGO MORTO.
+            #
+            # A regra era `len(onde) >= len(saida)-1` — perder em 44 das 45
+            # lojas medidas. O pior eixo perde em 32; os oito saíam
+            # "unidade", enquanto a home dizia sobre o MESMO eixo que
+            # "unidade nenhuma escolhe isso sozinha, é decisão de rede".
+            # Duas telas, dois donos, sobre o mesmo número.
+            #
+            # A régua agora é proporção, publicada ao lado do veredito:
+            # buraco que aparece em mais de 60% das lojas medidas não se
+            # conserta loja a loja — vira treinamento, roteiro, protocolo.
+            "de_quem_e_a_decisao": ("franqueadora"
+                                    if len(onde) >= ESCALA_PARA_A_REDE*len(saida)
                                     else "unidade"),
+            "porque_esse_dono": (
+                f"aparece em {len(onde)} de {len(saida)} lojas medidas "
+                f"({100*len(onde)//max(len(saida), 1)}%); o corte para virar "
+                f"decisão de rede é {int(ESCALA_PARA_A_REDE*100)}%"),
         })
     rede.sort(key=lambda x: (-x["perde_em"], -x["pior_razao"]))
 

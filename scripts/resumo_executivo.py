@@ -46,7 +46,9 @@ import argparse, json, pathlib, sys
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RAIZ/"scripts"))
-from cruzamento import conta
+from collections import Counter, defaultdict
+
+from cruzamento import conta, confianca
 from insight import monta as monta_insight, resumo as resumo_insights
 
 PORTAL = RAIZ/"dados"/"portal"
@@ -89,9 +91,118 @@ def _descobertas():
 
 
 def _unidades():
-    """Onde intervir — a agenda já vem pronta e ordenada."""
-    d = carrega("agenda")
-    return [x["insight"] for x in d.get("esta_semana", [])][:TETO["unidades"]]
+    """Onde intervir — mas a home NÃO É A AGENDA COPIADA.
+
+    A primeira versão trazia os cinco primeiros itens da agenda para cá. Os
+    cinco cartões saíam com título, ação e destinatário IDÊNTICOS —
+    "Religar a rotina de pedido de avaliação", "Franqueado da unidade" —,
+    variando só o nome da loja. E o `o_que_nao_e` desta mesma tela afirma:
+    *"Nada aqui se repete lá dentro: cada cartão é um cruzamento."* Era a
+    frase que a própria medição negava.
+
+    A home responde o que a diretoria não veria olhando loja por loja.
+    Então o que sobe é o PADRÃO: quantas lojas dispararam o mesmo gatilho,
+    em quantos estados. A lista loja a loja continua existindo — na agenda,
+    que é onde o consultor trabalha.
+    """
+    ag = carrega("agenda")
+    fila = carrega("fila")
+    itens = ag.get("esta_semana", [])
+    if not itens:
+        return []
+
+    # o mesmo gatilho, contado na rede inteira
+    por_gatilho = Counter()
+    ufs = defaultdict(set)
+    for u in fila.get("fila", []):
+        dom = (u.get("acao") or {}).get("por_causa_de")
+        if dom:
+            por_gatilho[dom] += 1
+            ufs[dom].add(str(u.get("rotulo", ""))[:2])
+    if not por_gatilho:
+        return []
+    dom, quantas = por_gatilho.most_common(1)[0]
+    titulo = next((g["titulo"] for u in fila.get("fila", [])
+                   for g in u.get("gatilhos", []) if g["chave"] == dom), dom)
+    n_ufs = len(ufs[dom])
+
+    fora = [x for x in itens
+            if (x.get("insight") or {}).get("fonte") and
+            (x.get("acao") or {}).get("por_causa_de") != dom]
+    return [monta_insight(
+        fonte="rede", chave=f"gatilho|{dom}",
+        titulo=f"{titulo} — em toda a rede medida",
+        onde="rede inteira",
+        fato=(conta(quantas, "unidade medida", "unidades medidas")
+              + f" têm este como o problema que mais pesa, em "
+              + conta(n_ufs, "estado", "estados")),
+        por_que_importa=("o mesmo gatilho em dezenas de lojas de vários "
+                         "estados deixa de ser caso isolado de franqueado: "
+                         "vira pauta de rede"),
+        acao=("tratar como programa, não como visita — e usar a agenda do "
+              "consultor para a ordem das conversas"),
+        publico="diretoria", gravidade="alta",
+        evidencias=[{"o_que": x["rotulo"], "texto": x["o_que_vimos"]}
+                    for x in itens[:3]],
+        link="agenda",
+        medido_em=fila.get("corte"),
+        carimbo=confianca(
+            natureza="fato",
+            amostra=len(fila.get("fila", [])),
+            unidade_amostra=("unidade medida", "unidades medidas"),
+            fonte="dados/portal/fila.json",
+            a_favor=["cada gatilho tem um número que está num arquivo"],
+            contra=["a rede tem 373 unidades e a fila mede as que têm "
+                    "leitura completa"]),
+    )] + [x["insight"] for x in fora][:2] + _anomalias()
+
+
+def _anomalias():
+    """A loja que está longe do que o MERCADO dela comporta.
+
+    Este é o cruzamento que a fila não faz: ela ordena por gatilho, e uma
+    unidade pode não ter gatilho nenhum e mesmo assim estar muito abaixo do
+    que as semelhantes conseguem. É o oposto de "ranking da rede" — a
+    comparação é contra os gêmeos, escolhidos por mercado.
+    """
+    an = carrega("anomalias")
+    out = []
+    for x in (an.get("anomalias_negativas") or [])[:2]:
+        out.append(monta_insight(
+            fonte="anomalia", chave=x["local_id"],
+            titulo="Deveria estar melhor do que está",
+            onde=x["rotulo"] + " · " + str(x.get("unidade") or "").replace(
+                "OrthoDontic", "").strip(" ·"),
+            fato=x["leitura"],
+            por_que_importa=("a fila ordena por gatilho; esta leitura é "
+                             "contra lojas de mercado parecido, e mostra "
+                             "quem está longe do que a praça comporta"),
+            acao=(x.get("o_que_perguntar")
+                  or "levar a comparação com as semelhantes para a visita"),
+            publico="consultor", gravidade="media",
+            evidencias=[{"o_que": d["o_que"], "texto": d["texto"]}
+                        for d in (x.get("diferencas_visiveis") or [])[:3]],
+            nao_faca=("não tratar como ranking: são poucos pontos de "
+                      "comparação, e isto aponta onde olhar, não o que "
+                      "concluir"),
+            carimbo=x.get("carimbo"), link=f"clinicas/{x['local_id']}"))
+    for x in (an.get("fora_da_curva") or [])[:1]:
+        out.append(monta_insight(
+            fonte="anomalia", chave=f"positiva|{x['local_id']}",
+            titulo="Está fazendo algo que precisamos entender",
+            onde=x["rotulo"] + " · " + str(x.get("unidade") or "").replace(
+                "OrthoDontic", "").strip(" ·"),
+            fato=x["leitura"],
+            por_que_importa=("boa prática escondida na rede é a única coisa "
+                             "que a franqueadora não consegue comprar de "
+                             "fora"),
+            acao=("mandar alguém perguntar o que esta unidade faz, antes de "
+                  "virar recomendação de rede"),
+            publico="consultor", gravidade="media",
+            evidencias=[{"o_que": d["o_que"], "texto": d["texto"]}
+                        for d in (x.get("diferencas_visiveis") or [])[:3]],
+            carimbo=x.get("carimbo"), link=f"clinicas/{x['local_id']}"))
+    return out
 
 
 def _movimentos():
@@ -140,7 +251,24 @@ def _testar():
             acao=("testar esta mensagem em duas praças e remedir as "
                   "mesmas frases de busca depois"),
             publico="marketing", gravidade="media",
-            link="playbook"))
+            link="playbook",
+            nao_faca=("não trocar a mensagem de todas as praças de uma vez: "
+                      "sem duas praças de controle não se sabe se foi a "
+                      "mensagem ou a estação"),
+            # AFIRMAÇÃO DE AUSÊNCIA É A QUE MAIS PRECISA DE CARIMBO. "Ninguém
+            # está falando disso" só vale com o tamanho da amostra ao lado.
+            carimbo=confianca(
+                natureza="inferencia",
+                amostra=pb.get("pracas_com_anuncio"),
+                unidade_amostra=("praça com anúncio medido",
+                                 "praças com anúncio medido"),
+                fonte="dados/portal/oferta.json",
+                a_favor=["a leitura é do TEXTO de cada anúncio ativo, não "
+                         "da contagem deles"],
+                contra=["a biblioteca de anúncios mostra o que está no ar, "
+                        "não o que o concorrente gasta nem o que funciona"],
+                o_que_aumentaria="medir as mesmas praças na próxima rodada "
+                                 "e ver se a posição continua vaga")))
     ap = carrega("rede_aprende")
     for x in ap.get("descobertas", []):
         if x["nivel"] != "ganhando_forca" or not x.get("decisao_sugerida"):
@@ -158,6 +286,14 @@ def _testar():
                         for e in x.get("evidencias", [])],
             carimbo=x.get("carimbo"), link="rede_aprende"))
     return out[:TETO["testar"]]
+
+
+def _ins_do_pipeline(rotulo):
+    """O insight que o pipeline de expansão já montou para esta cidade."""
+    for c in carrega("pipeline_expansao").get("cidades", []):
+        if c.get("rotulo") == rotulo:
+            return c.get("insight")
+    return None
 
 
 def _cidades():
@@ -182,7 +318,14 @@ def _cidades():
                   "dentro da cidade antes de qualquer conversa comercial"),
             publico="expansao", gravidade="media",
             evidencias=[{"texto": t} for t in (c.get("defesa") or [])[:3]],
-            link=f"radar/{c.get('cidade')}"))
+            link=f"radar/{c.get('cidade')}",
+            # O CARIMBO E A RESSALVA JÁ EXISTIAM NA ORIGEM E SE PERDIAM NA
+            # CÓPIA. `pipeline_expansao` monta o insight desta cidade com
+            # carimbo de fato e com "não apresentar isto como projeção de
+            # faturamento"; remontar aqui um segundo insight jogava os dois
+            # fora, e era justamente o texto que circula por encaminhamento.
+            nao_faca=(_ins_do_pipeline(c["rotulo"]) or {}).get("nao_faca"),
+            carimbo=(_ins_do_pipeline(c["rotulo"]) or {}).get("carimbo")))
     return out[:TETO["cidades"]]
 
 

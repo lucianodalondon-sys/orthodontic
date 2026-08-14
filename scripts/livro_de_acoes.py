@@ -220,7 +220,8 @@ def main():
         "arcos_total": len(arcos),
         "o_que_falta_para_valer": (
             "duas coisas: distância no tempo (a primeira resposta vem na "
-            "coleta seguinte) e volume (com 16 arcos não se aprende padrão "
+            f"coleta seguinte) e volume (com {len(arcos)} arcos ainda não se "
+            f"aprende padrão "
             "de rede; com 200 sim)"),
         "por_veredito": dict(por_veredito),
         "manchete": (

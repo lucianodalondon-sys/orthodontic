@@ -1229,9 +1229,14 @@ def main():
         card("padroes", "O que faz uma loja crescer",
              "Por que umas lojas crescem e outras param?",
              len(_json("padroes").get("hipoteses_testadas", [])),
-             "explicações confortáveis foram testadas e caíram. O que separa "
-             "as lojas que crescem é manter viva a rotina de pedir avaliação "
-             "no balcão — e isso é treinável.",
+             # O CARD IA MAIS LONGE QUE O PRÓPRIO ARQUIVO. Ele afirmava que
+             # a rotina de balcão "é o que separa as lojas que crescem",
+             # como fato, quando o payload diz que as quatro hipóteses
+             # testadas caíram e o que sobra é inferência por eliminação —
+             # com quatro explicações ainda não testadas de pé.
+             "explicações confortáveis foram testadas e caíram. A que sobra "
+             "entre as testadas é a rotina de pedir avaliação no balcão — "
+             "e nenhuma fonte pública mede essa rotina.",
              "padroes", "lojas", (OUT/"padroes.json").exists()),
         card("timeline", "A vida de cada loja",
              "O que aconteceu em cada loja, em ordem?",

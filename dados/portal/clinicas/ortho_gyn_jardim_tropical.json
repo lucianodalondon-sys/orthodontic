@@ -48,7 +48,7 @@
   "tarefa": {
     "status": "aberta",
     "aberta_em": "2026-08-12",
-    "dias_aberta": 1,
+    "dias_aberta": 2,
     "prazo_dias": 14,
     "vence_em": "2026-08-26"
   },
@@ -68,7 +68,7 @@
       "fonte": "scripts/fila.py",
       "a_favor": [
         "apenas 0 meses seguidos com movimento acima do típico da própria unidade; o ritmo medido é 3.1 avaliações/mês",
-        "3º lugar de 4 clínicas medidas na praça"
+        "2º lugar de 3 clínicas medidas na praça"
       ],
       "contra": [],
       "o_que_aumentaria": "o resultado medido na coleta seguinte (dados/serie/acoes.jsonl)",
@@ -89,10 +89,10 @@
       "peso": 20,
       "titulo": "Está na metade de baixo da própria praça",
       "chave": "posicao",
-      "fato": "3º lugar de 4 clínicas medidas na praça",
+      "fato": "2º lugar de 3 clínicas medidas na praça",
       "fonte": "dados/portal/rede_cruzamento.json",
-      "valor": 3,
-      "base": 4
+      "valor": 2,
+      "base": 3
     }
   ],
   "quem_avanca": null,
@@ -867,9 +867,9 @@
         "acao_recomendada": "retomar o pedido de avaliação ao fim do atendimento",
         "execucao": "não sabemos — o portal não fala com a unidade",
         "depois": 3.1,
-        "medido_em": "2026-08-13",
+        "medido_em": "2026-08-14",
         "veredito": "cedo_demais",
-        "dias": 1
+        "dias": 2
       },
       {
         "arco_id": "ortho_gyn_jardim_tropical|posicao",
@@ -884,10 +884,10 @@
         "antes_ressalva": "medido no dia em que o arco foi criado, não no dia em que o problema começou",
         "acao_recomendada": "trabalhar ficha e presença na busca da cidade",
         "execucao": "não sabemos — o portal não fala com a unidade",
-        "depois": 3.0,
-        "medido_em": "2026-08-13",
+        "depois": 2.0,
+        "medido_em": "2026-08-14",
         "veredito": "cedo_demais",
-        "dias": 1
+        "dias": 2
       }
     ],
     "total": 2,

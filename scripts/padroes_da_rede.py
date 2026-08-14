@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-padroes_da_rede.py — o que as dez lojas ensinam quando lidas juntas.
+padroes_da_rede.py — o que as lojas acompanhadas ensinam lidas juntas.
 
 Esta é a síntese que a franqueadora compra: não a ficha de cada loja, mas o
 que se repete entre elas — e, mais valioso, o que se ESPERAVA que separasse
@@ -24,7 +24,7 @@ import datetime as dt
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RAIZ/"scripts"))
-from cruzamento import reviews_unicos, coleta, jsonl, conta
+from cruzamento import reviews_unicos, coleta, jsonl, conta, confianca
 
 PORTAL = RAIZ/"dados"/"portal"
 NOME = re.compile(r"\bdr[a]?\.?\s+[a-z]|doutor|doutora", re.I)
@@ -35,7 +35,40 @@ def sa(s):
                    if unicodedata.category(c) != "Mn").lower()
 
 
+def _controle(lojas):
+    """As cidades onde MAIS DE UMA loja da rede é medida: mesma marca, mesmo
+    material, mesma tabela, resultados diferentes. É o desenho mais próximo
+    de um experimento que o dado externo permite — e os nomes saem do
+    payload, nunca da memória de quem escreveu."""
+    from collections import defaultdict as _dd
+    por = _dd(list)
+    for l in lojas:
+        por[l["rotulo"]].append(l)
+    # a cidade que mais CONTRASTA vem primeiro: controle sem contraste não
+    # controla nada. Ordem alfabética punha Goiânia (3·1·0·0) na frente de
+    # Cuiabá (26·2·0), que é o caso que sustenta a leitura.
+    fora = []
+    for rot, ls in sorted(por.items(),
+                          key=lambda kv: -(max((x.get("meses_seguidos") or 0)
+                                               for x in kv[1])
+                                           - min((x.get("meses_seguidos") or 0)
+                                                 for x in kv[1]))):
+        if len(ls) < 2:
+            continue
+        ls.sort(key=lambda x: -(x.get("meses_seguidos") or 0))
+        fora.append(rot + ": " + " · ".join(
+            f"{str(x.get('unidade') or '').replace('OrthoDontic', '').strip(' ·')} "
+            f"{x.get('meses_seguidos')}" for x in ls))
+    return ". ".join(fora[:3]) + "." if fora else None
+
+
 def monta():
+    # quantas unidades a rede tem hoje, lido da lista oficial do site —
+    # nunca escrito no texto (já ficou 374 aqui e 373 na tela ao lado)
+    _of = jsonl("unidades_rede")
+    _dia_of = max((r.get("snapshot_date") or "" for r in _of), default=None)
+    _na_rede = sum(1 for r in _of if r.get("snapshot_date") == _dia_of)
+
     ident, linhas = coleta()
     R = defaultdict(list)
     for r in reviews_unicos():
@@ -104,21 +137,54 @@ def monta():
         "t": (f"A satisfação é igual nas "
               + conta(len(lojas), "loja acompanhada", "lojas acompanhadas")
               + "; a constância não é"),
+        # A ELIMINAÇÃO NÃO PROVA O QUE SOBRA — E ISTO VIRA PROGRAMA DE REDE.
+        #
+        # A frase dizia que a rotina de balcão "é a única que explica o
+        # padrão". Não é: quatro explicações caíram, e a lista do que NÃO
+        # foi testado é grande — ponto comercial, verba local, rotatividade
+        # de ortodontista, preço, tamanho da equipe. Nenhuma fonte pública
+        # mede nenhuma delas. Se a rede vai investir em cima disto, a tela
+        # tem de dizer que está apostando numa inferência por eliminação.
         "leitura": "Quatro explicações confortáveis foram testadas e nenhuma "
                    "separa quem sustenta de quem para: satisfação, idade, resposta "
                    "e nome citado são iguais nos dois grupos. A praça-controle é "
                    "Cuiabá: três lojas com a mesma marca, o mesmo material e a "
                    "mesma tabela na mesma cidade — uma sustenta há 26 meses, duas "
-                   "estão paradas. O que sobra, por eliminação, é a rotina de "
-                   "balcão: pedir ou não pedir a avaliação ao paciente satisfeito. "
-                   "É a variável que nenhuma fonte pública mede diretamente — e a "
-                   "única que explica o padrão.",
+                   "estão paradas. O que sobra entre as explicações TESTADAS é a "
+                   "rotina de balcão: pedir ou não pedir a avaliação ao paciente "
+                   "satisfeito. Nenhuma fonte pública mede essa rotina "
+                   "diretamente, e a eliminação não cobre tudo — veja ao lado o "
+                   "que não foi testado.",
+        "o_que_nao_foi_testado": [
+            "ponto comercial: rua, fluxo de pedestre, estacionamento",
+            "verba de mídia local, que cada franqueado decide sozinho",
+            "rotatividade de ortodontista e tamanho da equipe",
+            "preço praticado e política de parcelamento da unidade",
+        ],
+        "porque_nao_foi_testado": ("nenhuma fonte pública mede nenhuma "
+                                   "destas — são o teto do produto, não "
+                                   "pendência de coleta"),
+        "carimbo": confianca(
+            natureza="inferencia",
+            amostra=len(lojas), unidade_amostra=("loja acompanhada",
+                                                 "lojas acompanhadas"),
+            a_favor=["quatro explicações alternativas foram testadas e "
+                     "caíram", "Cuiabá é praça-controle: três lojas iguais "
+                     "no papel, resultados opostos"],
+            contra=["eliminação não prova o que sobra: quatro explicações "
+                    "não testadas continuam de pé",
+                    "a rotina de balcão não é medida por nenhuma fonte "
+                    "pública"],
+            o_que_aumentaria="acompanhar uma loja que MUDE a rotina e ver "
+                             "se o ritmo muda depois — é o que o livro de "
+                             "ações faz"),
         "consequencia": "A intervenção mais barata do portal: a rotina de pedido "
                         "é copiável de loja para loja da MESMA cidade, sem verba, "
                         "sem agência e sem depender de praça. O manual está a uma "
                         "visita de distância — na loja irmã.",
-        "controle": "MT · Cuiabá: Centro Norte 26 meses · Fernando Corrêa 0 · "
-                    "Dom Bosco 2. PR · Londrina: Souza Naves 9 · Centro 2.",
+        # os nomes saem do payload, não da memória: "Fernando Corrêa" e
+        # "Dom Bosco" eram como as lojas se chamavam antes de nome_da_loja.py
+        "controle": _controle(lojas),
     }
 
     return {
@@ -139,8 +205,10 @@ def monta():
             "A rotina de balcão em si — nenhuma fonte pública grava se a "
             "recepção pede avaliação. A conclusão é por eliminação, não por "
             "observação direta.",
-            "Dez lojas é comparação controlada, não estatística. O padrão vale "
-            "como hipótese forte para as 374, não como lei.",
+            conta(len(lojas), "loja acompanhada é", "lojas acompanhadas são")
+            + " comparação controlada, não estatística. O padrão vale "
+            f"como hipótese forte para as {conta(_na_rede, 'unidade')} da rede, "
+            "não como lei.",
         ],
     }
 

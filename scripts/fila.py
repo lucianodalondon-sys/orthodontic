@@ -429,6 +429,11 @@ def monta():
 
     motivos = Counter(x["leitura"] for x in descartadas)
 
+    # quantas unidades a rede tem HOJE, lido da lista oficial do site
+    _of = jsonl("unidades_rede")
+    _dia = max((r.get("snapshot_date") or "" for r in _of), default=None)
+    _na_rede = sum(1 for r in _of if r.get("snapshot_date") == _dia)
+
     vermelhas = [x for x in fila if x["faixa"] == "vermelha"]
     return {
         "gerado_em": hoje,
@@ -468,8 +473,12 @@ def monta():
             "da lista não basta — ranking que muda de tamanho e amostra que "
             "engorda fazem alerta sumir sem nada ter melhorado."),
         "o_que_isso_nao_ve": [
-            f"A rede tem 374 unidades e esta fila mede {len(fila)}. É "
-            f"{100*len(fila)//374}% da rede.",
+            # NÚMERO ESCRITO À MÃO APODRECE — INCLUSIVE DENTRO DA RESSALVA.
+            # Estava 374 aqui e 373 na lista oficial, e o divisor era o
+            # literal. Ressalva errada é pior que ressalva ausente, porque
+            # parece rigor.
+            f"A rede tem {conta(_na_rede, 'unidade')} e esta fila mede "
+            f"{len(fila)}. É {100*len(fila)//max(_na_rede, 1)}% da rede.",
             "Nenhum contrato, lead, agendamento ou receita entra aqui. A fila diz "
             "onde a atenção está escorrendo, não quanto isso custou.",
             "O status da tarefa (aberta → vencida → resolvida) vem do próprio "

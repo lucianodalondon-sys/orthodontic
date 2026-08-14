@@ -59,6 +59,12 @@ PROIBIDAS = {
 }
 
 
+# Os tetos que o coletor de avaliações usa (`--max-reviews`). Ler exatamente
+# um destes números, com o Google mostrando mais, quer dizer que a leitura
+# parou no limite — não que acabaram as avaliações.
+TETOS_DO_COLETOR = {120}
+
+
 def jsonl(nome):
     if nome in PROIBIDAS:
         raise ValueError(
@@ -226,9 +232,24 @@ def coleta():
             # ritmo RECENTE, fica declarado como tal e sai da classificação.
             total_google = (pl.get("avaliacoes", pl.get("avaliacoes_total"))
                             or l.get("avaliacoes_google") or 0)
+            # LER EXATAMENTE O TETO DO COLETOR É, POR SI SÓ, TRUNCAGEM.
+            #
+            # A regra pedia razão < 0,75 **E** buraco > 50, e as duas juntas
+            # deixaram passar o caso mais óbvio: São Miguel Paulista leu
+            # 120 de 161 — 120 é o `--max-reviews` — em 126 dias, e saiu
+            # publicada como **a maior anomalia positiva da rede**, 29,0
+            # avaliações/mês contra 1,0 das semelhantes, com a recomendação
+            # de "entender o que ela faz para virar prática de rede".
+            # 120/161 = 0,745 passava no primeiro corte; 161−120 = 41 não
+            # passava no segundo. Vila Formosa tem a mesma assinatura.
+            #
+            # Bater no teto significa que o coletor parou por limite, não
+            # porque acabaram as avaliações. Isso basta.
+            no_teto = len(ds) in TETOS_DO_COLETOR and total_google > len(ds)
             truncada = bool(total_google and len(ds)
-                            and len(ds) / total_google < 0.75
-                            and total_google - len(ds) > 50)
+                            and (no_teto
+                                 or (len(ds) / total_google < 0.75
+                                     and total_google - len(ds) > 50)))
             janela = 0
             if len(ds) >= 2:
                 import datetime as _dt
