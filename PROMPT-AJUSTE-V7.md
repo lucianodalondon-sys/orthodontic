@@ -699,3 +699,81 @@ Era defeito nosso: a tela escrevia `media`, sem acento, porque recebia a
 chave de código. Agora todo insight traz `gravidade_rotulo` ("alta
 prioridade", "média prioridade"). Use ele nos rótulos e nas tiras —
 `gravidade` continua servindo para a cor.
+
+---
+
+# Parte 5 — o que a auditoria mudou no payload
+
+Nove auditorias independentes percorreram o produto como franqueadora,
+consultor, marketing, expansão e franqueado. Oito defeitos foram
+confirmados contra o disco e consertados **do nosso lado**. Nada aqui pede
+tela nova — mas cinco coisas mudaram de forma no payload, e a tela precisa
+acompanhar.
+
+## 13.1 · `gravidade_rotulo` nas tiras
+
+As tiras da home ainda escrevem `alta`, `media`, `baixa` — a chave de
+código, sem acento. Todo insight agora traz `gravidade_rotulo` ("alta
+prioridade", "média prioridade"), e `resumo.por_gravidade[]` traz `rotulo`.
+Use o rótulo no texto; `gravidade` continua servindo para a cor. Nos
+cartões você já faz certo.
+
+## 13.2 · A grade de clínicas ganhou a procedência do número
+
+Os três cards de Cuiabá mostravam **nota 5 e 1.222 avaliações**, os três —
+a varredura devolveu a mesma ficha para as três linhas oficiais. Agora cada
+card traz:
+
+    "nota": 4.9, "avaliacoes": 78,
+    "numero_de": "medição desta loja",        // ou "ficha do Google"
+    "sem_numero_porque": null                  // ou o motivo, escrito
+
+Desenhe `numero_de` como nota de rodapé do card, discreta. E quando
+`avaliacoes` for `null`, mostre `sem_numero_porque` no lugar do número —
+47 cards estão nessa situação, e o motivo é conteúdo: *"mais de uma unidade
+desta cidade tem o mesmo nome na lista oficial, e a ficha do Google não
+distingue qual é qual"*.
+
+## 13.3 · O confronto com o rival agora diz de quem é a decisão, e por quê
+
+`rival.json → padrao_da_rede[]` ganhou `porque_esse_dono`:
+
+    Tem profissional que o paciente chama pelo nome
+    ████████████████░░░░░  32 de 45 lojas · até 11,5×
+    DECISÃO DE FRANQUEADORA
+    aparece em 32 de 45 lojas medidas (71%); o corte para virar
+    decisão de rede é 60%
+
+Três eixos passam a ser decisão de franqueadora; cinco continuam da
+unidade. O corte publicado ao lado do veredito é obrigatório — antes o
+limiar exigia perder em 44 de 45 lojas e nunca disparava.
+
+## 13.4 · A home encolheu, e é isso que se quer
+
+De 14 para 12 cartões, e **nenhum deles repete a agenda**. Os cinco que
+eram os cinco primeiros itens da agenda viraram um só, de rede:
+
+    O contador de avaliações parou — em toda a rede medida
+    24 unidades medidas têm este como o problema que mais pesa, em 12 estados
+
+No lugar liberado entraram as **anomalias** (`anomalias.json`), que são
+cruzamento de verdade e não existiam na home: duas unidades que deveriam
+estar melhor do que estão, e uma que está fazendo algo que ninguém foi
+perguntar o quê.
+
+**Zero cartões sem carimbo.** As duas cidades de expansão voltaram a levar
+o carimbo e o `nao_faca` ("não apresentar isto como projeção de
+faturamento") que se perdiam na cópia — e é justamente esse texto que
+circula quando alguém encaminha.
+
+## 13.5 · A conclusão dos padrões deixou de ser fato
+
+`padroes.json → conclusao` agora tem `carimbo` (inferência, confiança
+baixa) e **`o_que_nao_foi_testado[]`**. A tela precisa mostrar os dois: a
+frase diz que quatro explicações caíram e que o que sobra é a rotina de
+balcão, mas ponto comercial, verba local, rotatividade de ortodontista e
+preço nunca foram testados — e nenhuma fonte pública os mede.
+
+Se a rede vai virar isso em programa nacional, a tela tem de dizer que está
+apostando numa inferência por eliminação. O card da home foi reescrito no
+mesmo espírito.
