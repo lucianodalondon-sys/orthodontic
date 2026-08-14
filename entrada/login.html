@@ -115,6 +115,15 @@ button:disabled { opacity: .55; cursor: default; }
 }
 .erro[data-mostra] { display: block; }
 
+.dica { margin: 10px 0 0; font-size: 12.5px; line-height: 1.5; color: var(--t3); }
+.voltar {
+  width: auto; margin: 14px auto 0; padding: 6px 2px; display: block;
+  background: none; color: var(--t3); font-family: var(--mono);
+  font-size: 10.5px; letter-spacing: .06em; text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.voltar:hover { color: var(--t2); filter: none; }
+
 .rodape {
   margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--hair);
   font-family: var(--mono); font-size: 10.5px; line-height: 1.65; color: var(--t3);
@@ -134,16 +143,28 @@ button:disabled { opacity: .55; cursor: default; }
   </div>
 
   <h1>O portal de inteligência da rede</h1>
-  <p class="sub">O acesso é individual. Use o código que a franqueadora
-    enviou para você — ele não deve ser repassado.</p>
+  <p class="sub" id="sub">O acesso é individual. Informe seu e-mail e
+    enviamos um código de seis dígitos.</p>
 
   <form id="forma" autocomplete="off">
-    <label for="codigo">Código de acesso</label>
-    <input id="codigo" name="codigo" class="codigo" type="password"
-           inputmode="text" autocomplete="one-time-code" required
-           aria-describedby="erro">
-    <button id="botao" type="submit">Entrar</button>
+    <div id="passo-email">
+      <label for="email">Seu e-mail</label>
+      <input id="email" name="email" type="email" inputmode="email"
+             autocomplete="email" placeholder="nome@empresa.com.br" required
+             aria-describedby="erro">
+    </div>
+
+    <div id="passo-codigo" hidden>
+      <label for="codigo">Código de seis dígitos</label>
+      <input id="codigo" name="codigo" class="codigo" type="text"
+             inputmode="numeric" pattern="[0-9]*" maxlength="6"
+             autocomplete="one-time-code" aria-describedby="erro">
+      <p class="dica" id="dica"></p>
+    </div>
+
+    <button id="botao" type="submit">Enviar código</button>
     <div class="erro" id="erro" role="alert"></div>
+    <button type="button" class="voltar" id="voltar" hidden>usar outro e-mail</button>
   </form>
 
   <div class="rodape">
@@ -156,51 +177,140 @@ button:disabled { opacity: .55; cursor: default; }
 </div>
 
 <script>
+/* ESTA TELA NÃO DECIDE NADA, e é por isso que ela pode existir.
+   Login conferido no navegador seria enfeite: o segredo estaria neste
+   arquivo, e os dados/portal/*.json continuariam abertos por URL direta.
+   Aqui o formulário só entrega o que foi digitado; quem julga é
+   /api/pedir-codigo e /api/entrar, e quem barra tudo o que não tem cookie
+   é o middleware, antes de qualquer arquivo sair do servidor. */
 (function () {
   var f = document.getElementById("forma");
-  var campo = document.getElementById("codigo");
+  var passoEmail = document.getElementById("passo-email");
+  var passoCodigo = document.getElementById("passo-codigo");
+  var email = document.getElementById("email");
+  var codigo = document.getElementById("codigo");
   var botao = document.getElementById("botao");
   var erro = document.getElementById("erro");
+  var sub = document.getElementById("sub");
+  var dica = document.getElementById("dica");
+  var voltar = document.getElementById("voltar");
+  var etapa = "email";
 
-  function falha(msg) {
+  function mostraErro(msg) {
     erro.textContent = msg;
     erro.setAttribute("data-mostra", "");
+  }
+  function libera(rotulo) {
     botao.disabled = false;
-    botao.textContent = "Entrar";
-    campo.value = "";
-    campo.focus();
+    botao.textContent = rotulo;
+  }
+
+  function vaiParaCodigo(paraQuem) {
+    etapa = "codigo";
+    passoEmail.hidden = true;
+    passoCodigo.hidden = false;
+    voltar.hidden = false;
+    sub.textContent = "Enviamos um código de seis dígitos.";
+    dica.textContent = "Para " + paraQuem + ". Ele vale por 10 minutos e só "
+      + "funciona neste navegador.";
+    codigo.required = true;
+    email.required = false;
+    libera("Entrar");
+    codigo.focus();
+  }
+
+  voltar.addEventListener("click", function () {
+    etapa = "email";
+    passoCodigo.hidden = true;
+    passoEmail.hidden = false;
+    voltar.hidden = true;
+    erro.removeAttribute("data-mostra");
+    sub.textContent = "O acesso é individual. Informe seu e-mail e enviamos "
+      + "um código de seis dígitos.";
+    codigo.value = "";
+    codigo.required = false;
+    email.required = true;
+    libera("Enviar código");
+    email.focus();
+  });
+
+  codigo.addEventListener("input", function () {
+    codigo.value = codigo.value.replace(/\D/g, "").slice(0, 6);
+  });
+
+  function pedeCodigo() {
+    botao.disabled = true;
+    botao.textContent = "Enviando…";
+    fetch("/api/pedir-codigo", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email: email.value.trim() })
+    }).then(function (r) {
+      if (r.ok) return vaiParaCodigo(email.value.trim());
+      libera("Enviar código");
+      if (r.status === 403) {
+        return mostraErro("Este e-mail não está liberado. Fale com a "
+          + "franqueadora para pedir acesso.");
+      }
+      if (r.status === 429) {
+        return mostraErro("Muitos pedidos para este e-mail. Espere alguns "
+          + "minutos.");
+      }
+      if (r.status === 503) {
+        return mostraErro("O portal ainda não está configurado para receber "
+          + "acessos. Avise quem cuida da publicação.");
+      }
+      mostraErro("Não deu para enviar o código agora. Tente de novo em "
+        + "instantes.");
+    }).catch(function () {
+      libera("Enviar código");
+      mostraErro("Sem conexão com o servidor. Tente de novo em instantes.");
+    });
+  }
+
+  function confereCodigo() {
+    botao.disabled = true;
+    botao.textContent = "Verificando…";
+    fetch("/api/entrar", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ codigo: codigo.value })
+    }).then(function (r) {
+      if (r.ok) {
+        /* só caminho que começa com uma barra, e sem barra dupla: sem isto,
+           `?de=//outro-site.com` viraria um redirecionamento para fora */
+        var d = new URLSearchParams(location.search).get("de");
+        var ok = d && d.charAt(0) === "/" && d.charAt(1) !== "/";
+        location.href = ok ? d : "/";
+        return;
+      }
+      libera("Entrar");
+      codigo.value = "";
+      codigo.focus();
+      if (r.status === 429) {
+        return mostraErro("Muitas tentativas. Espere um minuto e tente de novo.");
+      }
+      if (r.status === 401) {
+        return mostraErro("Código não confere, ou já passou dos 10 minutos. "
+          + "Peça um novo.");
+      }
+      if (r.status === 403) {
+        return mostraErro("Este e-mail não está mais liberado.");
+      }
+      mostraErro("Não deu para verificar agora. Tente de novo em instantes.");
+    }).catch(function () {
+      libera("Entrar");
+      mostraErro("Sem conexão com o servidor. Tente de novo em instantes.");
+    });
   }
 
   f.addEventListener("submit", function (ev) {
     ev.preventDefault();
     erro.removeAttribute("data-mostra");
-    botao.disabled = true;
-    botao.textContent = "Verificando…";
-
-    /* A CONFERÊNCIA É NO SERVIDOR, e é isso que faz esta tela valer algo.
-       Login conferido no navegador é enfeite: o código estaria neste
-       arquivo, e os dados/portal/*.json continuariam abertos por URL
-       direta. Aqui o formulário só entrega o código; quem julga é
-       /api/entrar, e quem barra tudo o que não tem cookie é o
-       middleware, antes de qualquer arquivo sair do servidor. */
-    fetch("/api/entrar", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ codigo: campo.value })
-    }).then(function (r) {
-      if (r.ok) {
-        var destino = new URLSearchParams(location.search).get("de");
-        location.href = (destino && destino.charAt(0) === "/") ? destino : "/";
-        return;
-      }
-      if (r.status === 429) return falha("Muitas tentativas. Espere um minuto e tente de novo.");
-      return falha("Código não confere. Confira com quem enviou o acesso.");
-    }).catch(function () {
-      falha("Não deu para verificar agora. Tente novamente em instantes.");
-    });
+    if (etapa === "email") pedeCodigo(); else confereCodigo();
   });
 
-  campo.focus();
+  email.focus();
 })();
 </script>
 </body>

@@ -1,91 +1,97 @@
 /**
- * api/entrar.js — quem confere o código, e o único lugar que o conhece.
+ * api/entrar.js — confere o código digitado e abre a sessão.
  *
- * O código vive em variável de ambiente da Vercel, nunca no repositório e
- * nunca no que vai para o navegador. A tela de login manda o que foi
- * digitado; a resposta é só "entra" ou "não entra".
+ * O código não está guardado em lugar nenhum. O que existe é o cookie de
+ * desafio, que traz o e-mail, a validade e a ASSINATURA do código. Aqui se
+ * recalcula a assinatura com o que a pessoa digitou: se bate, era o código.
  *
- * O cookie é HttpOnly: o JavaScript da página não lê. Isso não é preciosismo
- * — é o que impede que um script de terceiro (ou uma extensão) leve a
- * sessão embora.
+ * Só então nasce o cookie de sessão, que é o que o middleware confere em
+ * toda requisição — e ele carrega o e-mail, para o dia em que a
+ * franqueadora perguntar quem abriu o portal.
  */
+import {
+  abreCookie, assina, fazCookie, igualEmTempoConstante, ipDe,
+  passouDoLimite, paraB64, autorizados,
+} from "./_porta.js";
+
 export const config = { runtime: "edge" };
 
-const COOKIE = "od_sessao";
+const DESAFIO = "od_desafio";
+const SESSAO = "od_sessao";
 const DIAS = 7;
 
-/* Freio de tentativa POR IP, na memória da instância.
- *
- * É de propósito simples, e o limite disso está escrito aqui para ninguém
- * confundir com proteção séria: a Vercel roda várias instâncias, cada uma
- * com o próprio contador, e elas reciclam. Segura a digitação insistente e
- * o script preguiçoso; NÃO segura ataque distribuído. Contra isso, o que
- * vale é o código ser longo — e o passo seguinte, identidade por e-mail. */
-const tentativas = new Map();
-const JANELA = 60_000;
-const TETO = 8;
-
-function passouDoLimite(ip) {
-  const agora = Date.now();
-  const t = (tentativas.get(ip) || []).filter((x) => agora - x < JANELA);
-  t.push(agora);
-  tentativas.set(ip, t);
-  if (tentativas.size > 5000) tentativas.clear();   // teto de memória
-  return t.length > TETO;
+function json(obj, status, extra = {}) {
+  return new Response(JSON.stringify(obj), {
+    status,
+    headers: { "content-type": "application/json; charset=utf-8", ...extra },
+  });
 }
 
-function igualEmTempoConstante(a, b) {
-  const A = new TextEncoder().encode(a);
-  const B = new TextEncoder().encode(b);
-  if (A.length !== B.length) return false;
-  let dif = 0;
-  for (let i = 0; i < A.length; i++) dif |= A[i] ^ B[i];
-  return dif === 0;
-}
+const limpaDesafio =
+  `${DESAFIO}=; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=0`;
 
 export default async function handler(req) {
-  if (req.method !== "POST") return new Response("Método não permitido", { status: 405 });
+  if (req.method !== "POST") return json({ erro: "método" }, 405);
 
-  const codigoCerto = process.env.CODIGO_DE_ACESSO;
   const segredo = process.env.SEGREDO_DA_SESSAO;
-  if (!codigoCerto || !segredo) {
-    return new Response("Portal não configurado", { status: 503 });
-  }
+  if (!segredo) return json({ erro: "portal não configurado" }, 503);
 
-  const ip = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "sem-ip";
-  if (passouDoLimite(ip)) return new Response("Muitas tentativas", { status: 429 });
+  if (passouDoLimite(`entrar:${ipDe(req)}`, 10, 300_000)) {
+    return json({ erro: "muitas tentativas" }, 429);
+  }
 
   let digitado = "";
   try {
-    digitado = String((await req.json())?.codigo || "");
+    digitado = String((await req.json())?.codigo || "").replace(/\D/g, "");
   } catch {
-    return new Response("Pedido inválido", { status: 400 });
+    return json({ erro: "pedido inválido" }, 400);
   }
 
-  if (!igualEmTempoConstante(digitado, codigoCerto)) {
-    /* atraso pequeno e fixo: encarece a tentativa em massa sem punir quem
-       só errou de digitação */
+  const cru = req.headers.get("cookie") || "";
+  const achado = cru.split(/;\s*/).find((c) => c.startsWith(`${DESAFIO}=`));
+  if (!achado) return json({ erro: "expirou" }, 401, { "Set-Cookie": limpaDesafio });
+
+  const [valor, trava] = decodeURIComponent(achado.slice(DESAFIO.length + 1)).split("~");
+  const email = await abreCookie(valor, segredo, "desafio");
+  if (!email || !trava) {
+    return json({ erro: "expirou" }, 401, { "Set-Cookie": limpaDesafio });
+  }
+
+  /* A LISTA SE CONFERE DE NOVO AQUI, e não é redundância inútil: entre
+     pedir o código e digitá-lo a pessoa pode ter sido removida da lista, e
+     um desafio de dez minutos não pode sobreviver à revogação. */
+  if (!autorizados().includes(email)) {
+    return json({ erro: "sem_acesso" }, 403, { "Set-Cookie": limpaDesafio });
+  }
+
+  const expira = valor.split(".")[0];
+  const esperada = await assina(
+    `codigo|${expira}|${paraB64(email)}|${digitado}`, segredo
+  );
+  if (!igualEmTempoConstante(trava, esperada)) {
     await new Promise((r) => setTimeout(r, 400));
-    return new Response("Código não confere", { status: 401 });
+    return json({ erro: "codigo_errado" }, 401);
   }
 
-  const expira = Date.now() + DIAS * 86_400_000;
-  const chave = await crypto.subtle.importKey(
-    "raw", new TextEncoder().encode(segredo),
-    { name: "HMAC", hash: "SHA-256" }, false, ["sign"]
-  );
-  const bruto = await crypto.subtle.sign(
-    "HMAC", chave, new TextEncoder().encode(String(expira))
-  );
-  const assinatura = [...new Uint8Array(bruto)]
-    .map((b) => b.toString(16).padStart(2, "0")).join("");
+  const sessao = await fazCookie(email, segredo, "sessao", DIAS * 86_400_000);
 
-  return new Response(null, {
-    status: 204,
-    headers: {
-      "Set-Cookie":
-        `${COOKIE}=${expira}.${assinatura}; Path=/; HttpOnly; Secure; ` +
-        `SameSite=Lax; Max-Age=${DIAS * 86_400}`,
-    },
+  /* DOIS COOKIES PEDEM DUAS LINHAS DE CABEÇALHO, e `append` é o único
+     jeito. Juntar os dois numa string separada por vírgula parece
+     funcionar — a vírgula é o separador na especificação antiga — mas
+     `Expires` também tem vírgula dentro, e navegador nenhum garante o
+     desempate. O sintoma seria a sessão abrir e o desafio não queimar,
+     deixando o mesmo código valer de novo. */
+  const cabecalhos = new Headers({
+    "content-type": "application/json; charset=utf-8",
+  });
+  cabecalhos.append(
+    "Set-Cookie",
+    `${SESSAO}=${sessao.valor}; Path=/; HttpOnly; Secure; ` +
+    `SameSite=Lax; Max-Age=${DIAS * 86_400}`
+  );
+  cabecalhos.append("Set-Cookie", limpaDesafio);
+
+  return new Response(JSON.stringify({ ok: true }), {
+    status: 200, headers: cabecalhos,
   });
 }

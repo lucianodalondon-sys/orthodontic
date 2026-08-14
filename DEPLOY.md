@@ -22,19 +22,48 @@ Ele **falha alto** quando falta peça — inclusive quando o casco pede um
 payload que o build não escreveu, que é o erro que sairia como tela em
 branco no navegador do cliente sem nenhum aviso no terminal.
 
+## ⚠ Projeto separado, sempre
+
+Este portal é de um cliente. **Nada aqui se mistura com outro projeto do
+time na Vercel** — projeto próprio, domínio próprio, variáveis próprias.
+
+Este repositório não tem `.vercel/` justamente para não carregar vínculo
+com projeto nenhum. Ao rodar `vercel` pela primeira vez, ele pergunta se é
+para ligar a um projeto existente: **a resposta é criar um novo.** Ligar ao
+projeto errado publica um cliente dentro do endereço do outro, e o
+`.vercel/project.json` que ele grava depois faz todo deploy seguinte repetir
+o erro calado.
+
 ## A porta
 
-Login conferido no navegador não protege nada: a senha ficaria dentro do
+Login conferido no navegador não protege nada: o segredo ficaria dentro do
 arquivo que qualquer um baixa, e `dados/portal/*.json` continuaria aberto
 por URL direta. Por isso a conferência é no servidor:
 
 ```
 navegador → middleware.js  (roda ANTES de qualquer arquivo sair)
-              ├── tem cookie assinado?  → entrega o portal
-              └── não tem              → /entrar
-                                           └── api/entrar.js confere o
-                                               código e assina o cookie
+              ├── tem cookie de sessão assinado?  → entrega o portal
+              └── não tem                        → /entrar
+                                                     │
+     1 · e-mail  → api/pedir-codigo.js ────────────────┘
+                     confere a lista, sorteia 6 dígitos, manda por e-mail
+                     e devolve um cookie de DESAFIO — que leva a
+                     assinatura do código, nunca o código
+
+     2 · código → api/entrar.js
+                     recalcula a assinatura com o que foi digitado; se
+                     bate, abre o cookie de SESSÃO com o e-mail dentro
 ```
+
+**Não há banco de dados**, e é de propósito: o código não fica guardado em
+lugar nenhum. Efeito colateral bom — o código só funciona **no mesmo
+navegador que pediu**, então código repassado por WhatsApp não abre nada do
+outro lado.
+
+Rodar `node testes/porta.test.mjs` confere a criptografia dos dois cookies:
+assinatura adulterada, e-mail trocado, desafio tentando passar por sessão,
+prazo vencido. Um erro aí tranca todo mundo para fora, e só apareceria em
+produção.
 
 O `matcher` do middleware cobre tudo menos `/assets` (para a própria tela
 de login ter marca e tipografia) e `/api/entrar`. **Os JSON estão dentro
@@ -55,13 +84,15 @@ proteção na Vercel adianta.
 **2 · Criar o projeto na Vercel** apontando para este repositório. O
 `vercel.json` já traz `buildCommand`, `outputDirectory` e os cabeçalhos.
 
-**3 · As duas variáveis de ambiente** (Settings → Environment Variables),
-em Production e Preview:
+**3 · As variáveis de ambiente** (Settings → Environment Variables), em
+Production e Preview:
 
 | variável | o que é |
 |---|---|
-| `CODIGO_DE_ACESSO` | o que o cliente digita. Longo — frase com 4 palavras é melhor que 8 caracteres |
 | `SEGREDO_DA_SESSAO` | string longa e aleatória, **só do servidor**. Trocar derruba todas as sessões |
+| `EMAILS_AUTORIZADOS` | quem pode entrar, separado por vírgula. **Tirar alguém é tirar daqui** |
+| `RESEND_API_KEY` | a chave do provedor que envia o e-mail do código |
+| `REMETENTE` | opcional — `OrthoDontic Intelligence <portal@seudominio.com.br>` |
 
 Para gerar o segredo:
 
@@ -69,8 +100,15 @@ Para gerar o segredo:
 python3 -c "import secrets; print(secrets.token_urlsafe(48))"
 ```
 
-**Nenhuma das duas entra no repositório.** É a mesma regra do
+**Nenhuma delas entra no repositório.** É a mesma regra do
 `_pipeline/.env`, e vale mais ainda aqui.
+
+Sobre o `RESEND_API_KEY`: é conta no [resend.com](https://resend.com),
+gratuita até 3.000 e-mails por mês — muito acima do que um portal de
+franqueadora consome. Sem verificar um domínio, o remetente fica
+`onboarding@resend.dev` e **só entrega para o e-mail dono da conta**, o que
+serve para testar mas não para a diretoria. Para valer, verifique o domínio
+da OrthoDontic no Resend e ponha o `REMETENTE` com ele.
 
 **4 · Deployment Protection: desligar.** Em Settings → Deployment
 Protection, a Vercel vem com `Vercel Authentication` em
@@ -92,14 +130,20 @@ fechando e o resto não importa.
 - **Quem entrou pode baixar todos os payloads.** É inerente a portal
   estático. O controle é saber quem entrou e poder cortar, não impedir a
   cópia.
-- **Código único quer dizer que "quem" é o grupo.** Não dá para saber qual
-  pessoa abriu, e quando alguém sai da empresa a troca é para todos. Para
-  identidade por pessoa, o passo seguinte é **Cloudflare Access** (grátis
-  até 50 pessoas, entra com código por e-mail, registra quem abriu o quê) na
-  frente da Vercel — exige o DNS do domínio na Cloudflare.
-- **O freio de tentativas é por instância.** Segura digitação insistente e
-  script preguiçoso; não segura ataque distribuído. Contra isso vale o
-  código ser longo.
+- **Saber quem entrou não é registrar quem entrou.** A sessão carrega o
+  e-mail, mas nada grava um histórico de acessos — não há onde. Para ter
+  registro de verdade seria preciso um destino de log, e isso é obra à
+  parte.
+- **Revogar tem atraso.** Tirar um e-mail de `EMAILS_AUTORIZADOS` impede
+  novos acessos na hora, mas a sessão já aberta vale até 7 dias. Para
+  derrubar todo mundo agora, troque o `SEGREDO_DA_SESSAO`.
+- **O freio de tentativas é por instância.** A Vercel roda várias, cada uma
+  com o próprio contador. Segura digitação insistente e script preguiçoso;
+  não segura ataque distribuído. Contra isso valem o código de seis dígitos
+  com dez minutos de validade e a lista fechada de e-mails.
+- **A caixa de e-mail vira a chave.** Quem tiver acesso ao e-mail de alguém
+  da lista entra no portal. É o mesmo risco de qualquer "esqueci a senha" —
+  vale saber que existe, não vale fingir que não.
 
 ## Quando virar rotina semanal
 
