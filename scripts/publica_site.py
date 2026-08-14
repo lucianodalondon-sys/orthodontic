@@ -121,10 +121,13 @@ def main():
     print(f"  casco: {len(list(SITE.glob('assets/*')))} peças em assets/")
     print(f"  payload: {telas} telas + subpastas")
     print(f"  login: site/entrar.html\n")
-    print("  para publicar:  vercel --prod")
-    print("  antes disso, as variáveis na Vercel:")
-    print("     CODIGO_DE_ACESSO    o código que o cliente digita")
-    print("     SEGREDO_DA_SESSAO   string longa e aleatória, só do servidor\n")
+    # este texto aparece no LOG DE BUILD da Vercel, que é onde alguém olha
+    # quando o portal responde 503 — então ele nomeia as variáveis certas
+    print("  a porta precisa destas variáveis na Vercel (ver DEPLOY.md):")
+    print("     SEGREDO_DA_SESSAO    string longa e aleatória, só do servidor")
+    print("     EMAILS_AUTORIZADOS   quem pode entrar, separado por vírgula")
+    print("     RESEND_API_KEY       provedor que envia o código por e-mail")
+    print("  sem elas o middleware devolve 503 e não deixa passar — de propósito.\n")
 
 
 if __name__ == "__main__":

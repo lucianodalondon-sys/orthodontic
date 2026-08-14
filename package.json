@@ -1,0 +1,9 @@
+{
+  "name": "orthodontic-portal",
+  "private": true,
+  "type": "module",
+  "description": "A porta do portal. O portal em si é estático: casco/ + dados/portal/, montados por scripts/publica_site.py. Aqui só vivem o middleware e os dois endpoints de acesso — e nenhuma dependência, de propósito.",
+  "scripts": {
+    "test": "node testes/porta.test.mjs"
+  }
+}
