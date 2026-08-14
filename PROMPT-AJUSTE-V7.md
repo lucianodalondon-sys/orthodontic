@@ -1,5 +1,27 @@
 # Ajuste V7 — o portal precisa caber em 373 clínicas, não em 45
 
+> ## Como devolver o portal — vale para todas as rodadas
+>
+> No zip de volta vai **só o casco**: `index.html`, `assets/` e nada mais.
+>
+> **Não inclua a pasta `uploads/`.** Ela é o histórico de arquivos que
+> subiram para o projeto — na última entrega eram 73 MB, com imagens
+> antigas e até outro projeto dentro, num portal que tem 650 KB. O zip
+> passou de 40 MB e não coube no chat.
+>
+> **Não devolva `dados/portal/`.** O payload sai do nosso build e vai
+> sempre no zip de ida; devolver a cópia só cria uma versão para
+> divergir da outra.
+>
+> O que precisamos de volta é exatamente isto:
+>
+>     portal-casco/
+>       index.html
+>       assets/  (portal.js, portal.css, fontes, logos)
+>
+> Foi assim que veio o portal 6, e funcionou: 684 KB.
+
+
 Este é um **ajuste** sobre o portal que você já entregou. Nada de refazer:
 quatro telas mudam, o resto fica como está.
 
