@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Entrar — OrthoDontic Intelligence</title>
+<link rel="icon" href="/assets/logo-horizontal.png">
+<style>
+/* Os mesmos tokens do casco (assets/portal.css). Se o Design mudar a
+   paleta lá, esta tela tem de ser atualizada junto — ou ela vira a única
+   coisa do produto fora da identidade. */
+@font-face { font-family: "Gotham"; src: url("/assets/fonts/gotham-400.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Gotham"; src: url("/assets/fonts/gotham-500.ttf") format("truetype"); font-weight: 500; font-display: swap; }
+@font-face { font-family: "Gotham"; src: url("/assets/fonts/gotham-700.otf") format("opentype"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "Gotham"; src: url("/assets/fonts/gotham-900.otf") format("opentype"); font-weight: 900; font-display: swap; }
+@font-face { font-family: "IBM Plex Mono"; src: url("/assets/fonts/ibm-plex-mono-400-latin.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "IBM Plex Mono"; src: url("/assets/fonts/ibm-plex-mono-500-latin.woff2") format("woff2"); font-weight: 500; font-display: swap; }
+
+:root {
+  --plane: #001433; --panel: #001A5C; --panel-2: #02205F;
+  --hair: rgba(255,255,255,.10); --hair-lit: rgba(0,185,255,.28);
+  --t1: #FFFFFF; --t2: rgba(255,255,255,.72); --t3: rgba(255,255,255,.58);
+  --cyan: #00B9FF; --crit: #FF5C5C; --sobre-cyan: #001433;
+  --sans: "Gotham", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  --r: 14px;
+  --elev: 0 1px 2px rgba(0,0,0,.30), 0 8px 24px rgba(0,0,0,.18);
+  --entra: cubic-bezier(0.23, 1, 0.32, 1);
+}
+[data-theme="light"] {
+  --plane: #F2F6FC; --panel: #FFFFFF; --panel-2: #EDF2FA;
+  --hair: rgba(0,30,120,.13); --hair-lit: rgba(0,145,200,.34);
+  --t1: #001433; --t2: #33406B; --t3: #56617A;
+  --cyan: #00658C; --crit: #A5293A; --sobre-cyan: #FFFFFF;
+  --elev: 0 1px 2px rgba(0,30,120,.07), 0 8px 24px rgba(0,30,120,.06);
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0; background: var(--plane); color: var(--t1);
+  font-family: var(--sans); -webkit-font-smoothing: antialiased;
+  display: grid; place-items: center; padding: 24px;
+}
+
+/* o fundo não é decoração: é o mesmo azul do portal, com um halo que
+   marca onde está o cartão sem competir com ele */
+body::before {
+  content: ""; position: fixed; inset: 0; pointer-events: none;
+  background: radial-gradient(60% 50% at 50% 38%, rgba(0,185,255,.10), transparent 70%);
+}
+
+/* cartão e assinatura são UMA coluna centrada, não dois itens soltos do
+   grid — separados, a linha "uso restrito" flutuava a 150px do cartão e
+   lia como sobra de página */
+.centro { position: relative; width: 100%; max-width: 408px; }
+
+.cartao {
+  position: relative; width: 100%;
+  background: var(--panel); border: 1px solid var(--hair);
+  border-radius: var(--r); box-shadow: var(--elev);
+  padding: 34px 32px 28px;
+  animation: sobe .5s var(--entra) both;
+}
+@keyframes sobe { from { opacity: 0; transform: translateY(10px); } }
+@media (prefers-reduced-motion: reduce) { .cartao { animation: none; } }
+
+.marca { display: flex; align-items: center; gap: 11px; margin-bottom: 28px; }
+.marca img { height: 21px; width: auto; display: block; }
+.filete { width: 1px; height: 17px; background: var(--hair); }
+.marca .nome {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--t3);
+}
+[data-theme="dark"] .logo-claro, :root:not([data-theme="light"]) .logo-claro { display: none; }
+[data-theme="light"] .logo-escuro { display: none; }
+
+h1 { font-size: 21px; line-height: 1.28; font-weight: 700; margin: 0 0 8px; letter-spacing: -.01em; }
+.sub { font-size: 13.5px; line-height: 1.5; color: var(--t2); margin: 0 0 26px; }
+
+label {
+  display: block; font-family: var(--mono); font-size: 10.5px;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--t3);
+  margin-bottom: 8px;
+}
+input {
+  width: 100%; padding: 12px 14px; font-family: var(--sans); font-size: 15px;
+  color: var(--t1); background: var(--panel-2);
+  border: 1px solid var(--hair); border-radius: 10px;
+  transition: border-color .16s ease, box-shadow .16s ease;
+}
+input::placeholder { color: var(--t3); }
+input:focus {
+  outline: none; border-color: var(--hair-lit);
+  box-shadow: 0 0 0 3px rgba(0,185,255,.16);
+}
+.codigo { font-family: var(--mono); letter-spacing: .34em; font-size: 19px; text-align: center; }
+
+button {
+  width: 100%; margin-top: 18px; padding: 12px 16px;
+  font-family: var(--sans); font-size: 14.5px; font-weight: 700;
+  color: var(--sobre-cyan); background: var(--cyan);
+  border: 0; border-radius: 10px; cursor: pointer;
+  transition: filter .16s ease, transform .16s var(--entra);
+}
+button:hover:not(:disabled) { filter: brightness(1.08); }
+button:active:not(:disabled) { transform: translateY(1px); }
+button:disabled { opacity: .55; cursor: default; }
+
+.erro {
+  display: none; margin-top: 14px; padding: 10px 12px;
+  background: rgba(255,92,92,.10); border: 1px solid rgba(255,92,92,.30);
+  border-radius: 9px; color: var(--crit); font-size: 13px; line-height: 1.45;
+}
+.erro[data-mostra] { display: block; }
+
+.rodape {
+  margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--hair);
+  font-family: var(--mono); font-size: 10.5px; line-height: 1.65; color: var(--t3);
+}
+.fora { text-align: center; margin: 16px 0 0; font-family: var(--mono); font-size: 10.5px; color: var(--t3); }
+</style>
+</head>
+<body>
+
+<div class="centro">
+<main class="cartao">
+  <div class="marca">
+    <img class="logo-claro" src="/assets/logo-horizontal.png" alt="OrthoDontic">
+    <img class="logo-escuro" src="/assets/logo-horizontal-white.png" alt="OrthoDontic">
+    <span class="filete"></span>
+    <span class="nome">Intelligence</span>
+  </div>
+
+  <h1>O portal de inteligência da rede</h1>
+  <p class="sub">O acesso é individual. Use o código que a franqueadora
+    enviou para você — ele não deve ser repassado.</p>
+
+  <form id="forma" autocomplete="off">
+    <label for="codigo">Código de acesso</label>
+    <input id="codigo" name="codigo" class="codigo" type="password"
+           inputmode="text" autocomplete="one-time-code" required
+           aria-describedby="erro">
+    <button id="botao" type="submit">Entrar</button>
+    <div class="erro" id="erro" role="alert"></div>
+  </form>
+
+  <div class="rodape">
+    dados públicos — ficha do Google, avaliação de paciente, busca local e IBGE<br>
+    nenhum número deste portal vem do sistema interno da rede
+  </div>
+</main>
+
+<p class="fora">uso restrito · franqueadora OrthoDontic</p>
+</div>
+
+<script>
+(function () {
+  var f = document.getElementById("forma");
+  var campo = document.getElementById("codigo");
+  var botao = document.getElementById("botao");
+  var erro = document.getElementById("erro");
+
+  function falha(msg) {
+    erro.textContent = msg;
+    erro.setAttribute("data-mostra", "");
+    botao.disabled = false;
+    botao.textContent = "Entrar";
+    campo.value = "";
+    campo.focus();
+  }
+
+  f.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    erro.removeAttribute("data-mostra");
+    botao.disabled = true;
+    botao.textContent = "Verificando…";
+
+    /* A CONFERÊNCIA É NO SERVIDOR, e é isso que faz esta tela valer algo.
+       Login conferido no navegador é enfeite: o código estaria neste
+       arquivo, e os dados/portal/*.json continuariam abertos por URL
+       direta. Aqui o formulário só entrega o código; quem julga é
+       /api/entrar, e quem barra tudo o que não tem cookie é o
+       middleware, antes de qualquer arquivo sair do servidor. */
+    fetch("/api/entrar", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ codigo: campo.value })
+    }).then(function (r) {
+      if (r.ok) {
+        var destino = new URLSearchParams(location.search).get("de");
+        location.href = (destino && destino.charAt(0) === "/") ? destino : "/";
+        return;
+      }
+      if (r.status === 429) return falha("Muitas tentativas. Espere um minuto e tente de novo.");
+      return falha("Código não confere. Confira com quem enviou o acesso.");
+    }).catch(function () {
+      falha("Não deu para verificar agora. Tente novamente em instantes.");
+    });
+  });
+
+  campo.focus();
+})();
+</script>
+</body>
+</html>

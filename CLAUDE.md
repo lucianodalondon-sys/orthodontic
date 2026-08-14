@@ -166,6 +166,10 @@ padrões → caixa → padrao → build. Períodos curtos são declarados na tel
 | `dados/planos/` | plano do franqueado, **um por `local_id`**, só de loja da rede |
 | `coleta/coletores/` | um coletor por fonte |
 | `scripts/` | a inteligência e o build |
+| `casco/` | o que o Design entregou — **nunca editar aqui**, só substituir |
+| `entrada/` | a tela de login (esta é nossa) |
+| `api/` + `middleware.js` | a porta: quem confere o código, no servidor |
+| `site/` | montado por `publica_site.py`, fora do git, descartável |
 
 ## Armadilhas já pagas — não repita
 
@@ -418,6 +422,17 @@ padrões → caixa → padrao → build. Períodos curtos são declarados na tel
   677 anúncios ativos coletados, 134 falam de aparelho; os outros 543 são
   implante, clareamento, lente — e um advogado tributarista. Os
   descartados aparecem contados, com o motivo.
+
+- **LOGIN CONFERIDO NO NAVEGADOR NÃO PROTEGE NADA, e o portal é estático.**
+  A senha ficaria dentro do arquivo que qualquer um baixa, e mesmo passando
+  por ela bastaria pedir `/dados/portal/clinicas_indice.json` na barra do
+  endereço para levar a inteligência inteira. Quem confere é
+  `middleware.js`, no servidor, antes de qualquer arquivo sair — e ele
+  **falha FECHADO** quando as variáveis não estão configuradas, porque um
+  middleware que libera sem configuração publica o portal no primeiro
+  deploy distraído e o site continua funcionando, então ninguém percebe.
+  O passo a passo está em `DEPLOY.md`. O que ele NÃO resolve também está
+  escrito lá: quem entrou baixa tudo, e com código único "quem" é o grupo.
 
 - **Design se faz no Claude Design — aqui não.** Este repositório guarda a
   referência aprovada (`referencia-aprovada/OrthoDontic Intelligence.dc.html`,

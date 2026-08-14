@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portal de Inteligência — OrthoDontic</title>
+<meta name="description" content="Portal de inteligência de mercado da rede OrthoDontic. O portal lê os arquivos da coleta e desenha.">
+<link rel="stylesheet" href="assets/portal.css">
+</head>
+<body>
+
+<header class="topo">
+  <div class="topo-marca">
+    <img class="logo-claro" src="assets/logo-horizontal.png" alt="OrthoDontic">
+    <img class="logo-escuro" src="assets/logo-horizontal-white.png" alt="OrthoDontic">
+    <span class="filete"></span>
+    <span class="nome">Intelligence</span>
+  </div>
+
+  <button type="button" class="busca-botao" id="busca">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.6-3.6"></path></svg>
+    <span class="rot">Buscar cidade, clínica, concorrente…</span>
+    <kbd>⌘K</kbd>
+  </button>
+
+  <div class="cobertura-pilula" id="cobertura"></div>
+  <span class="topo-corte" id="corte"></span>
+
+  <div class="perfil">Franqueadora <span class="seta">▾</span></div>
+
+  <button type="button" class="topo-botao" id="tema" title="Alternar tema claro e escuro" aria-label="Alternar tema claro e escuro">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="8"></circle><path d="M12 4a8 8 0 010 16z" fill="currentColor" stroke="none"></path></svg>
+  </button>
+
+  <div class="avatar" aria-hidden="true">OD</div>
+</header>
+
+<div class="casca">
+  <nav class="rail" id="rail" aria-label="Seções do portal"></nav>
+  <main class="palco" id="app" aria-live="polite" aria-busy="true">
+    <div class="dentro"><p class="carregando">carregando…</p></div>
+  </main>
+</div>
+
+<script src="assets/brasil-ufs.js"></script>
+<script src="assets/portal.js"></script>
+</body>
+</html>
